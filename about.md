@@ -4,8 +4,13 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I'm an undergrad at UC Berkeley majoring in computer science. However, I'm
+secretly a math major, so I'm more interested in theoretical computer
+science. My technical interests are some mix of algorithms, machine learning,
+probability, complexity theory, and recreational math.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+My non-technical interests are all over the place, but usually involve
+getting very deep into a few fandoms at a time.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+For side projects, see my github repo. I'll try to make posts for new projects,
+but suspect I won't have time to do all of them.
