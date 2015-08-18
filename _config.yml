@@ -1,6 +1,5 @@
 # Site settings
 title: Kinda Sorta Insightful
-email: TODO
 description: > # this means to ignore newlines until "baseurl:"
   In a world where everyone has opinions, one man...also has opinions
 baseurl: "" # the subpath of your site, e.g. /blog/
