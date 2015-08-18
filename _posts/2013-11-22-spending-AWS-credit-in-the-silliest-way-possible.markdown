@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Spending AWS Credit In the Silliest Way Possible
+title:  "Spending AWS Credit In the Silliest Way Possible"
 date:   2013-11-22 03:27:00
 categories: jekyll update
 ---
