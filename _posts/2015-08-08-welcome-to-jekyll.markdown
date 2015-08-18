@@ -1,25 +1,38 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Hello world, again"
 date:   2015-08-08 18:15:00
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Let's start with a story.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+A long, long time ago (around 1 year, 3 months ago to be exact), some dude registered
+a personal domain and set up a blog using Blogger. (TODO add link.) He did this with
+the express purpose of learning to write better, because his writing was terrible
+and it wasn't going to get any better without having a place to share it. He then
+proceeded to write two technical, dry posts about using Amazon Web Services
+credit to mine Litecoins, and never posted anything again.
 
-Jekyll also offers powerful support for code snippets:
+That dude was obviously me. Let's take it to the present day. I've got things
+I want to say, and although my default of using Facebook as a blogging platform
+works surprisingly well, it's harder to do formatting, and some posts require more
+permanence.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+If that was the only consideration, I could have used Facebook Notes, but I've
+also been looking for an opportunity to move my personal site off the default Blogger
+template. After looking around a bit, I've settled on using Jekyll (TODO also add this link)
+and Github Pages. There's a couple of reasons I'm doing this
+    - Blogger felt too heavyweight for what I wanted. All I'm looking for is the
+    bare minimum in framework and styling
+    - Although it isn't fluent, I'm getting to the point where I can read
+    unrendered Markdown, so losing a WYSIWYG editor is fine.
+    - With Github Pages, I don't need to worry about paying for web hosting.
+    - The site is backed by a git repo (ADD LINK). I get backups for free. I get
+    branches for free. I get edit history for free. If I want to, I can literally
+    go through my commits and get insights into my writing process. This is what
+    sold me on Jekyll; having complete draft history is beautiful for writing
+    retrospectives. To be honest, I suspect I'll never use it, but it's good
+    to have the option.
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+In short, Jekyll lets me write blog posts like a programmer, with little overhead
+and simple functionality.
