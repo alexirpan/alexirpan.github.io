@@ -91,6 +91,7 @@
     color: $grey-color;
     float: left;
     margin-bottom: 0;
+    @extend %clearfix;
 }
 
 
@@ -240,4 +241,15 @@
             font-size: 18px;
         }
     }
+}
+
+/**
+ * Post navigation
+ */
+.older-posts {
+    float: left;
+}
+
+.newer-posts {
+    float: right;
 }

@@ -7,6 +7,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://alexirpan.com" # the base hostname & protocol for your site
 github_username:  alexirpan
 
+paginate: 3
+
 # Get around Jekyll default ordering and requirement to have
 # a page for all header links. Hardcoded + repeated but not
 # worth doing it right at this time
