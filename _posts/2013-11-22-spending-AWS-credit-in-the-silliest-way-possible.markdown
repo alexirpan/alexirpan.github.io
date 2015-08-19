@@ -2,7 +2,6 @@
 layout: post
 title:  "Spending AWS Credit In the Silliest Way Possible"
 date:   2013-11-22 03:27:00
-categories: jekyll update
 ---
 *This is a post from the old blog, which I have not edited in any way.
 Your results may vary - the conclusions here came from prices circa 2013.*

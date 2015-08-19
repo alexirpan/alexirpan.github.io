@@ -2,7 +2,6 @@
 layout: post
 title:  "Mining on AWS: A small update"
 date:   2013-11-27 00:05:00
-categories: jekyll update
 ---
 *This is a post from the old blog, which I have not edited in any way.
 Your results may vary - the conclusions here came from prices circa 2013.*
