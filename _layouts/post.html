@@ -12,4 +12,13 @@ layout: default
     {{ content }}
   </article>
 
+  <!--- Post links -->
+  <div class="post-nav">
+    {% if page.previous %}
+    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="older-posts">&larr; {{ page.previous.title }}</a>
+    {% endif %}
+    {% if page.next %}
+    <a href="{{ page.next.url | prepend: site.baseurl }}" class="newer-posts">{{ page.next.title }} &rarr;</a>
+    {% endif %}
+  </div>
 </div>
