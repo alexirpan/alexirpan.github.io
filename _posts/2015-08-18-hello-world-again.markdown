@@ -48,6 +48,6 @@ and the other involves a webcomic. They should be going up shortly. There may be
 a third about biased and unbiased coins, but that one will come out later.
 
 As for the title - although I still don't know what I'm doing with my life,
-one of my goals is to be an interesting, insightful person. Unfortunately, I'm not.
+one of my goals is to be an interesting, insightful person. Unfortunately, I'm not one yet.
 But if I try, maybe I can get there.
 
