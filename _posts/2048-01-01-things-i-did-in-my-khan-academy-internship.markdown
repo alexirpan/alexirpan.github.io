@@ -7,7 +7,9 @@ date:   2048-01-01 00:00:00
 - Met some really cool people, both interns and full-timers.
 - Got to discuss Lockhart's Lament, the zone of proximal development, and
 other metacognitive techniques.
-- Ate some freshly baked bread with self-churned butter.
+- Participated in acroyoga! Succesfully got off the ground and didn't fall,
+which was awesome.
+- Ate freshly baked bread with self-churned butter.
 - Met a software developer who has played Hatoful Boyfriend, the pigeon
 dating simulator. Pigeons forever! Okosan is best bird!
 - Built an automated backup system for Khan Academy's mailing list data.
@@ -28,8 +30,10 @@ Catan, and Tzol'kin.
 - Also, gained a new appreciation for the Coup metagame. (I got to pretend to be
 a Captain that was pretending to be an Ambassador! And I almost got away with it too.)
 - Added some easter eggs, including ASCII art of an Arcanine.
-- Failed to solve a Rubik's Cube blindfolded (but I did get it after the talent
-show.)
+- For the talent show,`failed to solve a Rubik's Cube blindfolded. It's okay, I still won a heat pack
+in the shape of a heart. And I did get it the night after the talent show.
+(Yes, I know you're not supposed to use paper when memorizing, but I need all the
+advantages I can get.)
 - Did some real, honest to God machine learning for the annual Healthy Hackathon.
 It involved computing similarities between columns in a sparse user-video matrix.
 Yes, we were trying to be like Netflix. No, we did not replicate Netflix in a week.
