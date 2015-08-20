@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="{{ "/public/katex/katex.min.css" | prepend: site.baseurl }}">
+<script src="{{ "/public/katex/katex.min.js" | prepend: site.baseurl }}"></script>
+<style>
+/* We want previews included so at least the TeX source is visible to clients
+     without Javascript, or without network connection
+     (new option in kramdown 1.6, enabled in _config.yml)
+     but we hide them if math rendering completes sucessfully. */
+  .MathJax_Preview { color: #888 }
+  .math_finished .MathJax_Preview { display: none }
+</style>
+
