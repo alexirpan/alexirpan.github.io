@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Things I Did In My Khan Academy Internship"
-date:   2048-01-01 00:00:01
+date:   2015-08-20 18:01:00
 ---
 
 - Met some really cool people, both interns and full-timers.
