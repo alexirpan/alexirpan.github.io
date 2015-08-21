@@ -9,3 +9,10 @@
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+<meta property="og:url" content="{% if page.url %}{{ page.url | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.baseurl | prepend: site.url }}{% endif %}" />
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 50 }}{% else %}{{ site.description }}{% endif %}" />
+<meta property="og:sitename" content="{{ site.title }}" />
+<meta property="og:locale" content="en_US" />
+
