@@ -253,3 +253,19 @@
 .newer-posts {
     float: right;
 }
+
+// Strong tag doesn't work properly in Firefox/Iceweasel, override
+
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Markdown doesn't support centering, use this CSS instead
+ */
+
+.centered {
+    display: block;
+    text-align: center;
+}
+

@@ -87,4 +87,61 @@ coin to land heads. Thus, any biased coin can be simulated in $$2$$ expected fli
 of a fair coin. Moreover, you can compute the bits $$b_i$$ lazily, so this is
 implementable in code if you have a bit stream representing $$p$$.
 
+This idea may have been obvious to you, but it certainly wasn't to me. However,
+getting to $$2$$ expected flips is entirely reasonable to get to on your own,
+and the way to get there is related to one of the most important algorithms in computer
+science.
 
+The CS Perspective
+--------------------
+Consider the following algorithm for solving the problem.
+
+1. Construct a real number in $$[0,1]$$ by flipping an infinite number of coins,
+generating a random decimal $$0.b_1b_2b_3\ldots$$, where $$b_i$$ is the outcome
+of coin flip $$i$$. Let this number be $$x$$.
+2. Report success if $$x \le p$$ and failure otherwise.
+
+This algorithm is correct as long as the decimals generated follow a
+uniform distribution over $$[0, 1]$$. I won't prove this because I do not
+trust my formal understanding of continuous probability distributions. As an
+appeal to intuition: any two finite bit strings of the same length $$k$$ are
+generated with the same probabiilty ($$1/2^k$$), and the numbers these
+represent are evenly distributed over the interval $$[0, 1]$$. As $$k \to\infty$$
+this approaches a uniform distribution.)
+
+Assuming this all sounds reasonable, this algorithm works! Only, there is the
+small problem of flipping $$\infty$$ coins. However, similarly to the $$p = 1/4$$
+case, we do not actually need to flip infinitely many coins. We can stop as soon
+as it is impossible for the generated decimal to fall in $$[0, p]$$.
+
+For now, limit to the case where $$p$$ has an infinite binary expansion.
+For the sake of an example, suppose $$p = 0.1010010001\ldots$$, and suppose
+we have generated $$0.10$$ so far. There are 2 cases.
+
+1. The next coin lands $$1$$. It is still possible to fall under $$p$$ if a very
+large number of subsequent bits land $$0$$, so the algorithm must keep going.
+2. The next coin lands $$0$$. It is now impossible to exceed $$p$$. Even if
+every subsequent bit turns up $$1$$, $$0.100111\ldots_2 = 0.101_2 < 0.101001\ldots_2$$.
+(This is why $$p$$ having infinitely many decimal places is important - it ensures there
+will be another $$1$$ at some point in the sequence.)
+
+So, the algorithm halts unless the coin flip matches the $$1$$ that follows in $$p$$'s expansion.
+Similarly, if
+the algorithm had generated $$0.101$$ so far, we can show that if the next flip
+does not match the following $$0$$, then the number is guaranteed to be larger than $$p$$.
+This gives the following algorithm
+
+1. Flip a coin until the $$n$$th coin fails to match $$b_n$$
+2. Report success if $$b_n = 1$$ and failure otherwise.
+
+Note this is essentially the same algorithm as mentioned above! The only difference
+is the ending condition - instead of halting on heads, the algorithm halts
+if the random bit does not match the "true" bit. Both happen $$1/2$$ the time,
+so the two algorithms are equivalent.
+
+Here's a sample run of the algorithm told in pictures. The green region represents
+the possible values of $$x$$ as bits are generated.
+
+
+![Test](/public/biased-coin-imgs/interval_first.png)
+{: .centered }
