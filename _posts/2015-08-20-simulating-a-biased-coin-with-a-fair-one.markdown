@@ -18,12 +18,13 @@ of halting, giving $$8/3$$ expected coin flips. (Add proof of this?)
 
 Now, suppose you needed to simulate the probability $$1/10^{100}$$.
 
-Well, if we followed the same scheme, we would need $$\lceil\log_2(10^{100})\rceil = 333$$
-coin flips. That's before considering the process retries in
-$$2^{333} - 10^{100}$$ of the $$2^{333}$$ cases. The probability of halting
-is $$> 1/2$$ since the scheme chooses the smallest power of $$2$$ such that
-it is bigger than $$10^{100}$$, so the expected number of flips is at least less than $$666$$.
-Yes, that is a lot of flips, but things could be worse.
+For now, suppose we use the same scheme. We need $$\lceil\log_2(10^{100})\rceil = 333$$
+coin flips to get enouch outcomes. Then, succeed in 1 case, fail in $$10^{100} - 1$$ cases,
+and retry in
+$$2^{333} - 10^{100}$$ cases. By construction, the probability of halting
+is $$> 1/2$$ since the scheme chooses the smallest power of $$2$$ that gives enough outcomes.
+So, the expected number of flips is at least less than $$666$$.
+Yes, that is... (•\_•) ( •\_•)>⌐■-■ (⌐■\_■) devilishly many flips, but things could be worse.
 
 Now, suppose you needed to simulate $$p = 1 / \pi$$.
 
@@ -36,7 +37,7 @@ We'll get back to the irrational case later. First, we can try to optimize our
 current scheme.
 
 The current scheme simulates $$p=1/4$$ by flipping two coins all the time.
-Recall that the scheme reports success only on HH, So, if the first flip lands
+Recall that the scheme reports success only on HH. So, if the first flip lands
 tails, we can halt immediately, since TH and TT both fail. The revised scheme
 becomes
 1. Flip a coin. If tails, report failure.
@@ -55,7 +56,8 @@ If we were solving $$p = 1/5$$ instead, there would be
 
 which would let us report failure immediately if the first coin is tails.
 
-This gives some improvment for the $$p = 1/10^{100}$$ case, but it does not
+Making the outcomes arranged as prefix-free as possible gives some improvement,
+but it does not
 solve the $$p = 1/\pi$$ case. It turns out this is solvable, once you find
 the right coin flipping paradigm.
 
@@ -75,14 +77,14 @@ otherwise
 
 First, verify this works. The probability the process stops after $$n$$ flips
 is $$1/2^n$$. The probability of success is
+
 $$
-    \sum_{n: b_n = 1}^\infty \frac{1}{2^n}
+    P[success] = \sum_{n: b_n = 1}^\infty \frac{1}{2^n} = p
 $$
-which works out to $$p$$ by definition.
 
 Next, find the expected number of flips. It takes $$2$$ expected flips for the
 coin to land heads. Thus, any biased coin can be simulated in $$2$$ expected flips
-of a fair coin. Moreover, you can compute the bits $$b_i$$ lazily, so you can
-implement this in actual code to simulate irrational probabilities.
+of a fair coin. Moreover, you can compute the bits $$b_i$$ lazily, so this is
+implementable in code if you have a bit stream representing $$p$$.
 
 
