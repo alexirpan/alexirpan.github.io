@@ -54,7 +54,7 @@ tails, we can halt immediately. The revised algorithm is
 
 This gives $$3/2$$ expected flips instead of $$2$$ flips.
 
-Unfortunately, this optimization doesn't work as well for some values of $$p$4.
+Unfortunately, this optimization doesn't work as well for some values of $$p$$.
 Suppose we used the current scheme for $$p = 1/5$$. First, divide the 8 outcomes
 from 3 flips into 1 success case, 4 failure cases, and 3 retry cases.
 These can be distributed as
@@ -130,21 +130,29 @@ small problem of flipping $$\infty$$-ly many coins. However, similarly to the
 $$p = 1/4$$ case, we can stop coin flipping as soon as
 as it is impossible for the generated decimal to fall in $$[0, p]$$.
 
-For now, limit to the case where $$p$$ has an infinite binary expansion.
-For the sake of an example, suppose $$p = 0.1010010001\ldots$$, and suppose
-we have generated $$0.10$$ so far. There are 2 cases.
+When does this occur? For now, limit to the case where $$p$$ has an infinite
+binary expansion.
+For the sake of an example, suppose $$p = 0.1010101\ldots$$.
+There are 2 cases for the first flip.
 
-1. The next coin lands $$1$$. It is still possible to fall under $$p$$ if a very
-large number of subsequent bits land $$0$$, so the algorithm must keep going.
-2. The next coin lands $$0$$. It is now impossible to exceed $$p$$. Even if
-every subsequent bit turns up $$1$$, $$0.100111\ldots = 0.101 < p$$.
-(This is why $$p$$ having infinitely many decimal places is important - it ensures there
-will be another $$1$$ at some point in the sequence.)
+1. The next coin lands $$1$$. Starting from $$0.1$$, it is possible to fall
+inside or outside $$[0,p]$$, depending on how the next flips go. The algorithm
+must continue.
 
-So, the algorithm halts unless the coin flip matches the $$1$$ that follows in $$p$$'s expansion.
-Similarly, if
-the algorithm had generated $$0.101$$ so far, we can show that if the next flip
-does not match the following $$0$$, then the number is guaranteed to be larger than $$p$$.
+2. The next coin lands $$0$$. Starting from $$0.0$$, it is impossible to fall
+outside $$[0,p]$$. Even if every coin lands $$1$$, $$0.0111\ldots_2 = 0.1_2 < p$$.
+(This is why $$p$$ having an infinite binary expansion is important - it ensures
+there will be another $$1$$ down the line.) The algorithm can halt and report success.
+
+So, the algorithm halts unless the coin flip matches the $$1$$ in $$p$$'s expansion.
+Consider what happens next. Starting from $$0.1$$, there are 2 cases.
+
+1. Next coin lands $$1$$. We for sure have exceeded $$p = 0.1010\ldots$$. Report
+failure.
+2. Next coin lands $$0$$. Similarly to before, the decimal may or may not
+end in $$[0,p]$$, so the algorithm must continue.
+
+
 This gives the following algorithm
 
 1. Flip a coin until the $$n$$th coin fails to match $$b_n$$
@@ -155,8 +163,8 @@ is the ending condition - instead of halting on heads, the algorithm halts
 if the random bit does not match the "true" bit. Both happen $$1/2$$ the time,
 so the two algorithms are equivalent.
 
-(You can easily extend this reasoning to $$p$$ with finite binary decimal expansions.
-Consider that $$0.1 = 0.0111\ldots$$.)
+(If you wish, you can extend this reasoning to $$p$$ with finite binary expansions.
+Just make the expansion infinite instead - recall that $$0.1_2 = 0.0111\ldots_2$$.)
 
 Here's a sample run of the algorithm told in pictures. The green region represents
 the possible values of $$x$$ as bits are generated. Initially, any $$x$$ is possible.
@@ -164,17 +172,17 @@ the possible values of $$x$$ as bits are generated. Initially, any $$x$$ is poss
 ![0 to 1](/public/biased-coin-imgs/interval_start.png)
 {: .centered }
 
-The first generated bit is $$0$$ , reducing the valid region to
+The first generated bit is $$0$$, reducing the valid region to
 
 ![0 to 0.5](/public/biased-coin-imgs/interval_first.png)
 {: .centered }
 
-This still overlaps $$[0,p]$$, so continue.
+This still overlaps $$[0,p]$$, so continue. The second bit is $$1$$, giving
 
 ![0.25 to 0.5](/public/biased-coin-imgs/interval_second.png)
 {: .centered }
 
-The third generated bit is $$1$$, giving
+This still overlaps, so continue. The third bit is $$1$$, giving
 
 ![0.375 to 0.5](/public/biased-coin-imgs/interval_final.png)
 {: .centered }
@@ -189,14 +197,15 @@ the feasible region is a subset of $$[0,p]$$ or disjoint from $$[0,p]$$.
 Proving Optimality
 --------------------
 
-This scheme is very, very efficient. Is there an algorithm that does
-better than $$2$$ expected flips for any $$p$$?
+This scheme is very, very efficient. But, is it the best we can do?
+Is there an algorithm that does
+better than $$2$$ expected flips for general $$p$$?
 
-It turns out that no, $$2$$ expected flips is optimal, and more suprisingly
-the proof for this is pretty short.
+It turns out that no, $$2$$ expected flips is optimal. More surprisingly,
+the proof is not too bad.
 
 For a given $$p$$, any algorithm can be represented by a computation tree.
-That tree encodes whether the algorithm succeeds, fails, or continues
+That tree encodes whether the algorithm succeeds, fails, or continues,
 based on the next bit and all previously generated bits.
 
 ![Computation trees](/public/biased-coin-imgs/3-4.png)
@@ -206,28 +215,30 @@ Two sample computation trees for $$p = 3/4$$.
 {: .centered }
 
 With the convention that the root is level $$0$$, children of the root are
-level $$1$$, and so on down, let the *weight* of a node be $$1/2^{\text{level}}$$.
+level $$1$$, and so on, let the *weight* of a node be $$1/2^{\text{level}}$$.
 Equivalently, the *weight* is the probability the algorithm reaches that
 node.
 
 For a given algorithm and $$p$$, the expected number of flips is the expected
-number of edges traversed in the computation tree, which is the expected
-number of vertices visited ignoring the root.
+number of edges traversed in the algorithm's computation tree.
+On a given run, the number of edges traversed
+is the number of vertices visited, ignoring the root.
 By linearity of expectation,
 
 $$
 E[flips] = \sum_{v \in T, v \neq root} \text{weight}(v)
 $$
 
-For the algorithm to be correct, the sum of weights for all leaf nodes labeled
-success must be $$p$$. For $$p$$ with infinitely long binary decimal expansions,
-any correct algorithm we must have an infinitely deep computation tree. If the tree
+To be correct, an algorithm must end at a success node with probability $$p$$.
+Thus, the sum of weights for success nodes must be $$p$$.
+For $$p$$ with infinitely long binary expansions,
+we must have an infinitely deep computation tree. If the tree
 had finite depth $$d$$, any leaf node weight would be a multiple of $$2^{-d}$$,
-and it would be impossible to have the success weights sum to $$p$$.
+and the sum of success node weights would be a finitely long decimal.
 
 Thus, the computation tree must be infinitely deep. To be infinitely deep, every
 level of the tree (except the root) must have at least 2 nodes. Thus, a lower
-bound on the expected number of fliips is
+bound on the expected number of flips is
 
 $$
 E[flips] \ge \sum_{k=1}^\infty 2 \cdot \frac{1}{2^k} = 2
@@ -240,11 +251,20 @@ binary decimal expansions, which I'll leave as an exercise.)
 
 The Takeaway
 -----------------
-From a very general perspective - although it is okay to use a quick and easy
-solution, it is worth at least thinking about whether it can be improved.
+This is one of my favorite results of all time. It turns all the coins
+in your wallet into efficent arbitrarily biased bit generating machines.
 
-From a math perspective - most results can be explained in many ways, and
-framing a problem correctly can make proving things about it straightforward.
+From a broader perspective, my goal with this post was to walk people
+through the mathematical thinking process. 
 
-From a cool stuff perspective - this is one of my favorite results of all time,
-since it turns all your coins into efficient arbitrarily biased coins.
+Although I understand why,
+it bothers me that almost all math textbooks are based around showing you the
+definitions and showing the properties you can prove from them, since that
+neatly tucks away all the effort that goes into
+proving things at all, and helps foster an illusion that proofs appear
+out of thin air. This applies outside of math as well - so much work goes
+into every research paper, every essay and experiment, and the standard is to
+show the final product and tuck away everything else, as if it is shameful
+to get something wrong the first time.
+
+But I digress, and that topic deserves a post of its own.
