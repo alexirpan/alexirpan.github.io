@@ -4,16 +4,13 @@ title:  "Simulating a Biased Coin With a Fair One"
 date:   2015-08-20  01:10:00
 ---
 
-Suppose you need a coin that lands heads with $$p = 1/4$$, and all you have is a
+Suppose you need to simulate something happening $$p = 1/4$$ of the time, and all you have is a
 fair coin. Well, that's easy enough. Flip the coin twice. Report success if
 you get 2 heads, and report failure otherwise. Two coin flips, not so bad.
 
-Suppose you need a coin for $$p = 1/3$$. That may not
+Suppose $$p = 1/3$$ instead. That may not
 be a power of 2, but there is still a simple solution. Flip the fair coin twice.
 Report success on HH, report failure on HT or TH, and try again on TT.
-Conditioned on the process halting this iteration, we report success in
-1 out of 3 events, all equally likely. Again, we're interested in the computation
-time.
 Each iteration takes $$2$$ coin flips. There is a $$3/4$$ probability
 of halting, giving $$8/3$$ expected coin flips.
 
@@ -36,9 +33,10 @@ a devilish upper bound, but things could be worse.
 
 (I'm not sorry.)
 
-Now, suppose you needed to simulate $$p = 1 / \pi$$.
+Things are going good! Only, now you're crossing a bridge, and a troll gets in
+your way. He demands you simulate $$p = 1 / \pi$$, or else you shall not pass.
 
-Uhhhh....
+Well, uhhhh....
 
 Easy Optimizations
 --------------------
@@ -47,16 +45,16 @@ We'll get back to the irrational case later.
 
 Recall how we simulated $$p=1/4$$.
 The scheme reports success only on HH. So, if the first flip lands
-tails, we can halt immediately. The revised algorithm is
+tails, we can halt immediately, since whatever way the second coin lands,
+we will report failure anyways. The revised algorithm is
 
-1. Flip a coin. If tails, report failure.
-2. Flip a coin. Report success on heads and failure on tails.
+- Flip a coin. If tails, report failure.
+- Flip a coin. Report success on heads and failure on tails.
 
 This gives $$3/2$$ expected flips instead of $$2$$ flips.
 
-Unfortunately, this optimization doesn't work as well for some values of $$p$$.
-Suppose we used the current scheme for $$p = 1/5$$. First, divide the 8 outcomes
-from 3 flips into 1 success case, 4 failure cases, and 3 retry cases.
+As another example, consider $$p = 1/5$$. First, plan to flip 3 coins.
+Divide the 8 outcomes into 1 success case, 4 failure cases, and 3 retry cases.
 These can be distributed as
 
 - accept: HHH
@@ -67,7 +65,7 @@ If the first coin is T, we can stop immediately. If the first two coins are HT,
 we can retry immediately. The only case left is HH, for which we need to see
 the third flip before deciding what to do.
 
-(This may give some of you flashbacks to prefix-free codes. If you haven't seen
+(Some of you may be getting flashbacks to prefix-free codes. If you haven't seen
 those, don't worry, they won't show up in this post.)
 
 With clever rearrangement, we can bundle outcomes of a given type under as few
@@ -78,10 +76,10 @@ For this, we need to switch to a new framework.
 A New Paradigm
 --------------------
 
-I did not come up with this method - I discovered it from (LINK). I wish I
-had come up with it, because the math works out so elegantly.
+I did not come up with this method - I discovered it from
+[here](https://amakelov.wordpress.com/2013/10/10/arbitrarily-biasing-a-coin-in-2-expected-tosses/).
+I wish I had come up with it, for reasons that will become clear.
 
-Suppose we need to simulate a coin that lands heads with probability $$p$$.
 Let $$p = 0.b_1b_2b_3b_4b_5\ldots$$ be the binary expansion of $$p$$.
 Proceed as follows.
 
@@ -90,40 +88,40 @@ Proceed as follows.
 otherwise
 
 The probability the process stops after $$n$$ flips
-is $$1/2^n$$. The probability of success is
+is $$1/2^n$$, so the probability of success is
 
 $$
     P[success] = \sum_{n: b_n = 1}^\infty \frac{1}{2^n} = p
 $$
 
-Now, figure out efficiency. It takes $$2$$ expected flips for the
+Regardless of $$p$$, it takes $$2$$ expected flips for the
 coin to land heads. Thus, any biased coin can be simulated in $$2$$ expected flips.
-This works for any $$p$$, including irrational ones.
-Additionally, you can compute the bits $$b_i$$ lazily, making this implementable
-in real life.
+This beats out the other scheme, works for all $$p$$ instead of only rational $$p$$,
+and best of all you can compute bits $$b_i$$ lazily, making this implementable
+in real life and not just in theory.
 
 Slick, right? This idea may have been obvious to you, but it certainly wasn't to me.
 After thinking about the problem more, I eventually recreated a potential chain
 of reasoning to reach the same result.
 
-Discrete Considerations of a Continuous Problem
+Bits and Pieces
 --------------------
 (Starting now, I will use $$1$$ interchangeably with heads and $$0$$ interchangeably
 with tails.)
 
 Consider the following algorithm.
 
-1. Construct a real number in $$[0,1]$$ by flipping an infinite number of coins,
+- Construct a real number in $$[0,1]$$ by flipping an infinite number of coins,
 generating a random decimal $$0.b_1b_2b_3\ldots$$, where $$b_i$$ is the outcome
 of coin flip $$i$$. Let this number be $$x$$.
-2. Report success if $$x \le p$$ and failure otherwise.
+- Report success if $$x \le p$$ and failure otherwise.
 
 This algorithm is correct as long as the decimals generated follow a
 uniform distribution over $$[0, 1]$$. I won't prove this, but for an
 appeal to intuition: any two bit strings of length $$k$$ are
 generated with the same probabiilty $$1/2^k$$, and the numbers these
 represent are evenly distributed over the interval $$[0, 1]$$. As $$k \to\infty$$
-this approaches a uniform distribution.)
+this approaches a uniform distribution.
 
 Assuming this all sounds reasonable, this algorithm works! Only, there is the
 small problem of flipping $$\infty$$-ly many coins. However, similarly to the
@@ -155,8 +153,8 @@ end in $$[0,p]$$, so the algorithm must continue.
 
 This gives the following algorithm
 
-1. Flip a coin until the $$n$$th coin fails to match $$b_n$$
-2. Report success if $$b_n = 1$$ and failure otherwise.
+- Flip a coin until the $$n$$th coin fails to match $$b_n$$
+- Report success if $$b_n = 1$$ and failure otherwise.
 
 Note this is essentially the same algorithm as mentioned above! The only difference
 is the ending condition - instead of halting on heads, the algorithm halts
@@ -249,22 +247,10 @@ and as we have shown earlier, this lower bound is acheivable. $$\blacksquare$$
 (You can adapt this to prove optimality bounds for $$p$$ with finite
 binary decimal expansions, which I'll leave as an exercise.)
 
-The Takeaway
+In Conclusion...
 -----------------
-This is one of my favorite results of all time. It turns all the coins
-in your wallet into efficent arbitrarily biased bit generating machines.
+Every coin in your wallet is now an arbitrarily biased bit generating machine
+that runs at proven-optimal efficiency. Now. if you run into a bridge troll
+who demands you simulate several flips of a biased coin with $$p = 1/\pi$$,
+you'll be ready.
 
-From a broader perspective, my goal with this post was to walk people
-through the mathematical thinking process. 
-
-Although I understand why,
-it bothers me that almost all math textbooks are based around showing you the
-definitions and showing the properties you can prove from them, since that
-neatly tucks away all the effort that goes into
-proving things at all, and helps foster an illusion that proofs appear
-out of thin air. This applies outside of math as well - so much work goes
-into every research paper, every essay and experiment, and the standard is to
-show the final product and tuck away everything else, as if it is shameful
-to get something wrong the first time.
-
-But I digress, and that topic deserves a post of its own.
