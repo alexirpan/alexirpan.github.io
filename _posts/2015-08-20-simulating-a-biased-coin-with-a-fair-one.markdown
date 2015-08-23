@@ -4,97 +4,114 @@ title:  "Simulating a Biased Coin With a Fair One"
 date:   2015-08-20  01:10:00
 ---
 
-Suppose you needed to simulate a coin with $$p = 1/4$$, and all you had was a
-fair coin. Well, that's easy enough. Flip the coin twice. Report a success if
+Suppose you need a coin that lands heads with $$p = 1/4$$, and all you have is a
+fair coin. Well, that's easy enough. Flip the coin twice. Report success if
 you get 2 heads, and report failure otherwise. Two coin flips, not so bad.
 
-Now, suppose you needed to simulate $$p = 1/3$$. Well, that may not
-be a power of 2, but the solution is still simple. Flip the fair coin twice.
-Report a success on HH, report a failure on HT or TH, and try again on TT.
-That way, conditioned on the process halting this iteration, we report success in
-1 out of 3 events, all equally likely.
-Each iteration takes $$2$$ coin flips, and there is a $$3/4$$ probability
-of halting, giving $$8/3$$ expected coin flips. (Add proof of this?)
+Suppose you need a coin for $$p = 1/3$$. That may not
+be a power of 2, but there is still a simple solution. Flip the fair coin twice.
+Report success on HH, report failure on HT or TH, and try again on TT.
+Conditioned on the process halting this iteration, we report success in
+1 out of 3 events, all equally likely. Again, we're interested in the computation
+time.
+Each iteration takes $$2$$ coin flips. There is a $$3/4$$ probability
+of halting, giving $$8/3$$ expected coin flips.
 
 Now, suppose you needed to simulate the probability $$1/10^{100}$$.
 
-For now, suppose we use the same scheme. We need $$\lceil\log_2(10^{100})\rceil = 333$$
-coin flips to get enouch outcomes. Then, succeed in 1 case, fail in $$10^{100} - 1$$ cases,
-and retry in
-$$2^{333} - 10^{100}$$ cases. By construction, the probability of halting
+Well, nothing is especially wrong with the current scheme, so let's see how it does.
+We need $$\lceil\log_2(10^{100})\rceil = 333$$
+coin flips to get enouch outcomes. Then, label 1 case as success, $$10^{100} - 1$$ as failure,
+and the rest as retries. These numbers are getting messy, but we can at least
+ballpark the expected number of flips.
+By construction, the probability of halting
 is $$> 1/2$$ since the scheme chooses the smallest power of $$2$$ that gives enough outcomes.
-So, the expected number of flips is at least less than $$666$$.
-Yes, that is... (•\_•) ( •\_•)>⌐■-■ (⌐■\_■) devilishly many flips, but things could be worse.
+So, the expected number of flips is less than $$666$$.
+Yes, that is...
+
+(•\_•) ( •\_•)>⌐■-■ (⌐■\_■)
+{: .centered }
+
+a devilish upper bound, but things could be worse.
+
+(I'm not sorry.)
 
 Now, suppose you needed to simulate $$p = 1 / \pi$$.
 
 Uhhhh....
 
-HORIZONTAL LINE HERE
+Easy Optimizations
 --------------------
 
-We'll get back to the irrational case later. First, we can try to optimize our
-current scheme.
+We'll get back to the irrational case later.
 
-The current scheme simulates $$p=1/4$$ by flipping two coins all the time.
-Recall that the scheme reports success only on HH. So, if the first flip lands
-tails, we can halt immediately, since TH and TT both fail. The revised scheme
-becomes
+Recall how we simulated $$p=1/4$$.
+The scheme reports success only on HH. So, if the first flip lands
+tails, we can halt immediately. The revised algorithm is
+
 1. Flip a coin. If tails, report failure.
 2. Flip a coin. Report success on heads and failure on tails.
 
-This gives $$3/2$$ expected flips instead of $$2$$ flips. Now, unfortunately
-this does not let us improve the $$p = 1/3$$ problem. H is a prefix for both
-success (HH) and failure (HT). T is a prefix for both failure (TH) andd
-retry (TT). However, this can help for other values of $$p$$.
-If we were solving $$p = 1/5$$ instead, there would be
-1 accept case, 4 failing cases, and 3 retry cases. These can be distributed as
+This gives $$3/2$$ expected flips instead of $$2$$ flips.
+
+Unfortunately, this optimization doesn't work as well for some values of $$p$4.
+Suppose we used the current scheme for $$p = 1/5$$. First, divide the 8 outcomes
+from 3 flips into 1 success case, 4 failure cases, and 3 retry cases.
+These can be distributed as
 
 - accept: HHH
 - failing: THH, THT, TTH, TTT
 - retry: HHT, HTH, HTT
 
-which would let us report failure immediately if the first coin is tails.
+If the first coin is T, we can stop immediately. If the first two coins are HT,
+we can retry immediately. The only case left is HH, for which we need to see
+the third flip before deciding what to do.
 
-Making the outcomes arranged as prefix-free as possible gives some improvement,
-but it does not
-solve the $$p = 1/\pi$$ case. It turns out this is solvable, once you find
-the right coin flipping paradigm.
+(This may give some of you flashbacks to prefix-free codes. If you haven't seen
+those, don't worry, they won't show up in this post.)
 
-HORIZONTAL LINE HERE
+With clever rearrangement, we can bundle outcomes of a given type under as few
+unique prefixes as possible. This gives some improvement
+for rational $$p$$, but still does not let us simulate irrational $$p$$.
+For this, we need to switch to a new framework.
+
+A New Paradigm
 --------------------
 
 I did not come up with this method - I discovered it from (LINK). I wish I
 had come up with it, because the math works out so elegantly.
 
-Suppose we need to simulate a biased coin that lands on heads with probabiilty $$p$$.
-Let $$p = 0.b_1b_2b_3b_4b_5\ldots$$ be the binary expansion of $$p$$. Use the following
-algorithm
+Suppose we need to simulate a coin that lands heads with probability $$p$$.
+Let $$p = 0.b_1b_2b_3b_4b_5\ldots$$ be the binary expansion of $$p$$.
+Proceed as follows.
 
-- Flip a coin until it lands on heads
+- Flip a coin until it lands on heads.
 - Let $$n$$ be the number of coins flipped. Report success if $$b_n = 1$$ and report failure
 otherwise
 
-First, verify this works. The probability the process stops after $$n$$ flips
+The probability the process stops after $$n$$ flips
 is $$1/2^n$$. The probability of success is
 
 $$
     P[success] = \sum_{n: b_n = 1}^\infty \frac{1}{2^n} = p
 $$
 
-Next, find the expected number of flips. It takes $$2$$ expected flips for the
-coin to land heads. Thus, any biased coin can be simulated in $$2$$ expected flips
-of a fair coin. Moreover, you can compute the bits $$b_i$$ lazily, so this is
-implementable in code if you have a bit stream representing $$p$$.
+Now, figure out efficiency. It takes $$2$$ expected flips for the
+coin to land heads. Thus, any biased coin can be simulated in $$2$$ expected flips.
+This works for any $$p$$, including irrational ones.
+Additionally, you can compute the bits $$b_i$$ lazily, making this implementable
+in real life.
 
-This idea may have been obvious to you, but it certainly wasn't to me. However,
-getting to $$2$$ expected flips is entirely reasonable to get to on your own,
-and the way to get there is related to one of the most important algorithms in computer
-science.
+Slick, right? This idea may have been obvious to you, but it certainly wasn't to me.
+After thinking about the problem more, I eventually recreated a potential chain
+of reasoning to reach the same result.
 
-The CS Perspective
+Discrete Considerations of a Continuous Problem
 --------------------
-Consider the following algorithm for solving the problem.
+(Starting now, I will use $$1$$ interchangeably with heads and $$0$$ interchangeably
+with tails.)
+
+Consider the following algorithm.
 
 1. Construct a real number in $$[0,1]$$ by flipping an infinite number of coins,
 generating a random decimal $$0.b_1b_2b_3\ldots$$, where $$b_i$$ is the outcome
@@ -102,16 +119,15 @@ of coin flip $$i$$. Let this number be $$x$$.
 2. Report success if $$x \le p$$ and failure otherwise.
 
 This algorithm is correct as long as the decimals generated follow a
-uniform distribution over $$[0, 1]$$. I won't prove this because I do not
-trust my formal understanding of continuous probability distributions. As an
-appeal to intuition: any two finite bit strings of the same length $$k$$ are
-generated with the same probabiilty ($$1/2^k$$), and the numbers these
+uniform distribution over $$[0, 1]$$. I won't prove this, but for an
+appeal to intuition: any two bit strings of length $$k$$ are
+generated with the same probabiilty $$1/2^k$$, and the numbers these
 represent are evenly distributed over the interval $$[0, 1]$$. As $$k \to\infty$$
 this approaches a uniform distribution.)
 
 Assuming this all sounds reasonable, this algorithm works! Only, there is the
-small problem of flipping $$\infty$$ coins. However, similarly to the $$p = 1/4$$
-case, we do not actually need to flip infinitely many coins. We can stop as soon
+small problem of flipping $$\infty$$-ly many coins. However, similarly to the
+$$p = 1/4$$ case, we can stop coin flipping as soon as
 as it is impossible for the generated decimal to fall in $$[0, p]$$.
 
 For now, limit to the case where $$p$$ has an infinite binary expansion.
