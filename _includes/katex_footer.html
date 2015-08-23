@@ -5,6 +5,12 @@
     var script = scripts[i];
     if (script.type.match(/^math\/tex/)) {
       var text = script.text === "" ? script.innerHTML : script.text;
+      // Manually enable % as LaTeX comments. Remove when KaTeX supports
+      // this. (Not sure if this approach handles all cases, have not fully tested.)
+      while (text !== (text = text.replace(/^(([^\\%]|\\.)*)%(.*)/, '$1'))) {
+        continue;
+      }
+
       var options = script.type.match(/mode\s*=\s*display/) ?
                     {displayMode: true} : {};
       script.insertAdjacentHTML("beforebegin",
