@@ -121,7 +121,7 @@ we have generated $$0.10$$ so far. There are 2 cases.
 1. The next coin lands $$1$$. It is still possible to fall under $$p$$ if a very
 large number of subsequent bits land $$0$$, so the algorithm must keep going.
 2. The next coin lands $$0$$. It is now impossible to exceed $$p$$. Even if
-every subsequent bit turns up $$1$$, $$0.100111\ldots_2 = 0.101_2 < 0.101001\ldots_2$$.
+every subsequent bit turns up $$1$$, $$0.100111\ldots = 0.101 < p$$.
 (This is why $$p$$ having infinitely many decimal places is important - it ensures there
 will be another $$1$$ at some point in the sequence.)
 
@@ -140,8 +140,23 @@ if the random bit does not match the "true" bit. Both happen $$1/2$$ the time,
 so the two algorithms are equivalent.
 
 Here's a sample run of the algorithm told in pictures. The green region represents
-the possible values of $$x$$ as bits are generated.
+the possible values of $$x$$ as bits are generated. Initially, any $$x$$ is possible.
 
+![Test](/public/biased-coin-imgs/interval_start.png)
+{: .centered }
+
+The first generated bit is $$0$$ , reducing the valid region to
 
 ![Test](/public/biased-coin-imgs/interval_first.png)
 {: .centered }
+
+This still overlaps $$[0,p]$$, so continue.
+
+![Test](/public/biased-coin-imgs/interval_second.png)
+{: .centered }
+
+The third generated bit is $$1$$, giving
+
+![Test](/public/biased-coin-imgs/interval_final.png)
+{: .centered }
+
