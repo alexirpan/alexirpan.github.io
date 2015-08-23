@@ -139,24 +139,96 @@ is the ending condition - instead of halting on heads, the algorithm halts
 if the random bit does not match the "true" bit. Both happen $$1/2$$ the time,
 so the two algorithms are equivalent.
 
+(You can easily extend this reasoning to $$p$$ with finite binary decimal expansions.
+Consider that $$0.1 = 0.0111\ldots$$.)
+
 Here's a sample run of the algorithm told in pictures. The green region represents
 the possible values of $$x$$ as bits are generated. Initially, any $$x$$ is possible.
 
-![Test](/public/biased-coin-imgs/interval_start.png)
+![0 to 1](/public/biased-coin-imgs/interval_start.png)
 {: .centered }
 
 The first generated bit is $$0$$ , reducing the valid region to
 
-![Test](/public/biased-coin-imgs/interval_first.png)
+![0 to 0.5](/public/biased-coin-imgs/interval_first.png)
 {: .centered }
 
 This still overlaps $$[0,p]$$, so continue.
 
-![Test](/public/biased-coin-imgs/interval_second.png)
+![0.25 to 0.5](/public/biased-coin-imgs/interval_second.png)
 {: .centered }
 
 The third generated bit is $$1$$, giving
 
-![Test](/public/biased-coin-imgs/interval_final.png)
+![0.375 to 0.5](/public/biased-coin-imgs/interval_final.png)
 {: .centered }
 
+The feasible region for $$x$$ no longer intersects $$[0,p]$$, so the algorithm
+reports failure.
+
+CS-minded people may see similarities to binary search. Each bit chooses which
+half of the feasible region we move to, and the halving continues until
+the feasible region is a subset of $$[0,p]$$ or disjoint from $$[0,p]$$.
+
+Proving Optimality
+--------------------
+
+This scheme is very, very efficient. Is there an algorithm that does
+better than $$2$$ expected flips for any $$p$$?
+
+It turns out that no, $$2$$ expected flips is optimal, and more suprisingly
+the proof for this is pretty short.
+
+For a given $$p$$, any algorithm can be represented by a computation tree.
+That tree encodes whether the algorithm succeeds, fails, or continues
+based on the next bit and all previously generated bits.
+
+![Computation trees](/public/biased-coin-imgs/3-4.png)
+{: .centered }
+
+Two sample computation trees for $$p = 3/4$$.
+{: .centered }
+
+With the convention that the root is level $$0$$, children of the root are
+level $$1$$, and so on down, let the *weight* of a node be $$1/2^{\text{level}}$$.
+Equivalently, the *weight* is the probability the algorithm reaches that
+node.
+
+For a given algorithm and $$p$$, the expected number of flips is the expected
+number of edges traversed in the computation tree, which is the expected
+number of vertices visited ignoring the root.
+By linearity of expectation,
+
+$$
+E[flips] = \sum_{v \in T, v \neq root} \text{weight}(v)
+$$
+
+For the algorithm to be correct, the sum of weights for all leaf nodes labeled
+success must be $$p$$. For $$p$$ with infinitely long binary decimal expansions,
+any correct algorithm we must have an infinitely deep computation tree. If the tree
+had finite depth $$d$$, any leaf node weight would be a multiple of $$2^{-d}$$,
+and it would be impossible to have the success weights sum to $$p$$.
+
+Thus, the computation tree must be infinitely deep. To be infinitely deep, every
+level of the tree (except the root) must have at least 2 nodes. Thus, a lower
+bound on the expected number of fliips is
+
+$$
+E[flips] \ge \sum_{k=1}^\infty 2 \cdot \frac{1}{2^k} = 2
+$$
+
+and as we have shown earlier, this lower bound is acheivable. $$\blacksquare$$
+
+(You can adapt this to prove optimality bounds for $$p$$ with finite
+binary decimal expansions, which I'll leave as an exercise.)
+
+The Takeaway
+-----------------
+From a very general perspective - although it is okay to use a quick and easy
+solution, it is worth at least thinking about whether it can be improved.
+
+From a math perspective - most results can be explained in many ways, and
+framing a problem correctly can make proving things about it straightforward.
+
+From a cool stuff perspective - this is one of my favorite results of all time,
+since it turns all your coins into efficient arbitrarily biased coins.
