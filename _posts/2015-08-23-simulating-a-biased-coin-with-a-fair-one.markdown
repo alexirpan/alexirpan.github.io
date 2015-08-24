@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Simulating a Biased Coin With a Fair One"
-date:   2015-08-20  01:10:00
+date:   2015-08-23  18:00:00
 ---
 
 Suppose you need to simulate an event that happens $$p = 1/4$$ of the time, and all you have is a
@@ -22,7 +22,8 @@ and the rest as retries. For analyzing runtime, these numbers
 are starting to get messy, but we can at least
 ballpark the expected number of flips.
 The probability of halting
-is $$> 1/2$$, since by construction $$2^{332} < 10^{100} < 2^{333}$$.
+is $$> 1/2$$, since by construction $$2^{332} < 10^{100} < 2^{333}$$,
+meaning the number of retry cases is less than half of all cases.
 Thus, the expected number of flips is at most $$666$$.
 Yes, that is...
 
@@ -253,5 +254,6 @@ In Conclusion...
 Every coin in your wallet is now an arbitrarily biased bit generating machine
 that runs at proven-optimal efficiency. If you run into a bridge troll
 who demands you simulate several flips of a coin that lands heads
-$$1/\pi$$ of the time, you'll be ready.
+$$1/\pi$$ of the time, you'll be ready. If you don't, at least you know
+one more interesting thing.
 
