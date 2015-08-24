@@ -4,26 +4,26 @@ title:  "Simulating a Biased Coin With a Fair One"
 date:   2015-08-20  01:10:00
 ---
 
-Suppose you need to simulate something happening $$p = 1/4$$ of the time, and all you have is a
+Suppose you need to simulate an event that happens $$p = 1/4$$ of the time, and all you have is a
 fair coin. Well, that's easy enough. Flip the coin twice. Report success if
-you get 2 heads, and report failure otherwise. Two coin flips, not so bad.
+you get 2 heads, and report failure otherwise.
 
 Suppose $$p = 1/3$$ instead. That may not
 be a power of 2, but there is still a simple solution. Flip the fair coin twice.
 Report success on HH, report failure on HT or TH, and try again on TT.
-Each iteration takes $$2$$ coin flips. There is a $$3/4$$ probability
+Each iteration takes $$2$$ coin flips, and there is a $$3/4$$ probability
 of halting, giving $$8/3$$ expected coin flips.
 
-Now, suppose you needed to simulate the probability $$1/10^{100}$$.
-
-Well, nothing is especially wrong with the current scheme, so let's see how it does.
+Now, suppose you need to simulate $$p = 1/10^{100}$$.
+Well, nothing is especially wrong with the current scheme.
 We need $$\lceil\log_2(10^{100})\rceil = 333$$
-coin flips to get enouch outcomes. Then, label 1 case as success, $$10^{100} - 1$$ as failure,
-and the rest as retries. These numbers are getting messy, but we can at least
+coin flips to get enough outcomes. Then, label $$1$$ case as success, $$10^{100} - 1$$ as failure,
+and the rest as retries. For analyzing runtime, these numbers
+are starting to get messy, but we can at least
 ballpark the expected number of flips.
-By construction, the probability of halting
-is $$> 1/2$$ since the scheme chooses the smallest power of $$2$$ that gives enough outcomes.
-So, the expected number of flips is less than $$666$$.
+The probability of halting
+is $$> 1/2$$, since by construction $$2^{332} < 10^{100} < 2^{333}$$.
+Thus, the expected number of flips is at most $$666$$.
 Yes, that is...
 
 (•\_•) ( •\_•)>⌐■-■ (⌐■\_■)
@@ -33,10 +33,10 @@ a devilish upper bound, but things could be worse.
 
 (I'm not sorry.)
 
-Things are going good! Only, now you're crossing a bridge, and a troll gets in
-your way. He demands you simulate $$p = 1 / \pi$$, or else you shall not pass.
-
-Well, uhhhh....
+But, what if you need to simulate $$p = 1 / 10^{10^{100}}$$?
+Or simulate $$p = 1/\pi$$? In the first case, the number of flips needed
+is enormous. In the second, the scheme fails completely - there is no
+way to simulate irrational probabilities.
 
 Easy Optimizations
 --------------------
@@ -112,57 +112,58 @@ with tails.)
 Consider the following algorithm.
 
 - Construct a real number in $$[0,1]$$ by flipping an infinite number of coins,
-generating a random decimal $$0.b_1b_2b_3\ldots$$, where $$b_i$$ is the outcome
+generating a random number $$0.b_1b_2b_3\ldots$$, where $$b_i$$ is the outcome
 of coin flip $$i$$. Let this number be $$x$$.
 - Report success if $$x \le p$$ and failure otherwise.
 
 This algorithm is correct as long as the decimals generated follow a
 uniform distribution over $$[0, 1]$$. I won't prove this, but for an
 appeal to intuition: any two bit strings of length $$k$$ are
-generated with the same probabiilty $$1/2^k$$, and the numbers these
+generated with the same probability $$1/2^k$$, and the numbers these
 represent are evenly distributed over the interval $$[0, 1]$$. As $$k \to\infty$$
 this approaches a uniform distribution.
 
-Assuming this all sounds reasonable, this algorithm works! Only, there is the
+Assuming this all sounds reasonable, the algorithm works! Only, there is the
 small problem of flipping $$\infty$$-ly many coins. However, similarly to the
 $$p = 1/4$$ case, we can stop coin flipping as soon as
-as it is impossible for the generated decimal to fall in $$[0, p]$$.
+as it is guaranteed the number will fall in or out of $$[0, p]$$.
 
 When does this occur? For now, limit to the case where $$p$$ has an infinite
 binary expansion.
 For the sake of an example, suppose $$p = 0.1010101\ldots$$.
 There are 2 cases for the first flip.
 
-1. The next coin lands $$1$$. Starting from $$0.1$$, it is possible to fall
+1. The coin lands $$1$$. Starting from $$0.1$$, it is possible to fall
 inside or outside $$[0,p]$$, depending on how the next flips go. The algorithm
 must continue.
 
-2. The next coin lands $$0$$. Starting from $$0.0$$, it is impossible to fall
+2. The coin lands $$0$$. Starting from $$0.0$$, it is impossible to fall
 outside $$[0,p]$$. Even if every coin lands $$1$$, $$0.0111\ldots_2 = 0.1_2 < p$$.
 (This is why $$p$$ having an infinite binary expansion is important - it ensures
 there will be another $$1$$ down the line.) The algorithm can halt and report success.
 
-So, the algorithm halts unless the coin flip matches the $$1$$ in $$p$$'s expansion.
+So, the algorithm halts unless the coin flip matches the $$1$$ in $$p$$'s expansion. If it does not match, it succeeds.
 Consider what happens next. Starting from $$0.1$$, there are 2 cases.
 
-1. Next coin lands $$1$$. We for sure have exceeded $$p = 0.1010\ldots$$. Report
+1. Next coin lands $$1$$. Since $$0.11 > p$$, we can immediately report
 failure.
-2. Next coin lands $$0$$. Similarly to before, the decimal may or may not
+2. Next coin lands $$0$$. Similarly to before, the number may or may not
 end in $$[0,p]$$, so the algorithm must continue.
 
-
-This gives the following algorithm
+So, the algorithm halts unless the coin flip matches the $$0$$ in $$p$$'s expansion. If it does not match, it fails.
+This gives the following algorithm.
 
 - Flip a coin until the $$n$$th coin fails to match $$b_n$$
 - Report success if $$b_n = 1$$ and failure otherwise.
 
 Note this is essentially the same algorithm as mentioned above! The only difference
-is the ending condition - instead of halting on heads, the algorithm halts
+is the ending condition. Instead of halting on heads, the algorithm halts
 if the random bit does not match the "true" bit. Both happen $$1/2$$ the time,
 so the two algorithms are equivalent.
 
 (If you wish, you can extend this reasoning to $$p$$ with finite binary expansions.
-Just make the expansion infinite instead - recall that $$0.1_2 = 0.0111\ldots_2$$.)
+Just make the expansion infinite by expanding the trailing $$1$$ into
+$$0.1_2 = 0.0111\ldots_2$$.)
 
 Here's a sample run of the algorithm told in pictures. The green region represents
 the possible values of $$x$$ as bits are generated. Initially, any $$x$$ is possible.
@@ -232,7 +233,7 @@ Thus, the sum of weights for success nodes must be $$p$$.
 For $$p$$ with infinitely long binary expansions,
 we must have an infinitely deep computation tree. If the tree
 had finite depth $$d$$, any leaf node weight would be a multiple of $$2^{-d}$$,
-and the sum of success node weights would be a finitely long decimal.
+and the sum of success node weights would have at most $$d$$ decimal places.
 
 Thus, the computation tree must be infinitely deep. To be infinitely deep, every
 level of the tree (except the root) must have at least 2 nodes. Thus, a lower
@@ -242,15 +243,15 @@ $$
 E[flips] \ge \sum_{k=1}^\infty 2 \cdot \frac{1}{2^k} = 2
 $$
 
-and as we have shown earlier, this lower bound is acheivable. $$\blacksquare$$
+and as we have shown earlier, this lower bound is achievable. $$\blacksquare$$
 
-(You can adapt this to prove optimality bounds for $$p$$ with finite
-binary decimal expansions, which I'll leave as an exercise.)
+(For $$p$$ with finite binary expansions, you can do better than $$2$$ expected
+flips. Proving the optimal bound for that is left as an exercise.)
 
 In Conclusion...
 -----------------
 Every coin in your wallet is now an arbitrarily biased bit generating machine
-that runs at proven-optimal efficiency. Now. if you run into a bridge troll
-who demands you simulate several flips of a biased coin with $$p = 1/\pi$$,
-you'll be ready.
+that runs at proven-optimal efficiency. If you run into a bridge troll
+who demands you simulate several flips of a coin that lands heads
+$$1/\pi$$ of the time, you'll be ready.
 
