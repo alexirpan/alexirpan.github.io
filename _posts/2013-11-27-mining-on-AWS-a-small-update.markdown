@@ -16,7 +16,7 @@ Given this more efficient mining, and the current Litecoin price of roughly $20/
 
 
 **$0.815 in AWS costs <-> $1 in LTC**
-{: style="text-align: center;"}
+{: .centered }
 
 
 

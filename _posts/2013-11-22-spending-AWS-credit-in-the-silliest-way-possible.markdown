@@ -37,7 +37,7 @@ Update: I also downloaded cpuminer, to take advantage of the two Intel X5570s on
 With both cpuminer and cudaminer running, one cg1 instance performs at roughly 340 kH/s. Given the current exchange rate, and assuming spot instances stay at $0.346/hr, the final AWS credit -> LTC exchange rate is
 
 **$3.977 in AWS credit <--> $1 worth of LTC**
-{: style="text-align: center;"}
+{: .centered }
 
 
 All in all, this is a surprisingly decent exchange rate. It's nowhere near profitable, but suddenly all those AWS credit codes seem a lot better.
