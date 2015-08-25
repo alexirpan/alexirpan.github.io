@@ -81,10 +81,61 @@ which point the game is over anyways.)
 Under this scheme, town wins half the time when the number of mafia is
 order $$\sqrt{N}$$. There is a decent amount of math to prove this is correct,
 but we can easily write some simulations to see if we can trust that result.
+Here is a sample script to do this in Python.
+
+{% highlight python %}
+import random
+
+Ns = [1000, 4000, 9000]
+
+def simulate_game(n, m):
+    # Simulate n players with m mafia, return True on win
+    while n > 2 * m:
+        # Lynch random player
+        if random.randint(0, n-1) < m:
+            # Mafia lynched
+            m -= 1
+        if m == 0:
+            return True
+        # Mafia lynches random player as well. Two total deaths
+        n -= 2
+
+    return False
+
+
+def get_win_odds(n, m):
+    TRIALS = 10000
+    return sum(simulate_game(n,m) for _ in xrange(TRIALS)) / float(TRIALS)
+
+
+def find_5050(n):
+    threshold = 0.005
+    # Binary search to find m since probability of winning strictly increases with m
+    low = 1
+    high = n
+    while True:
+        mid = (low + high) // 2
+        per = get_win_odds(n, mid)
+        print 'low = %d, high = %d, mid = %d, win chance = %f' % (low, high, mid, per)
+        if per < 0.5 - threshold:
+            high = mid
+        elif per > 0.5 + threshold:
+            low = mid
+        else:
+            return mid
+
+
+for N in Ns:
+    print 'N = %d' % N
+    print find_5050(N)
+
+{% endhighlight %}
 
 When $$N = 1000$$, the 50/50 win chance is at 11 mafia. When $$N = 4000$$, the
 50/50 win chance is at 21-22 mafia. When $$N = 9000$$, the 50/50 win chance is at
-32-34 mafia. This matches expectations.
+32-34 mafia. This falls in line with growing with $$\sqrt{N}$$.
+(If you run the code for yourself, you may want
+to increase the threshold, since the variability is more than 0.5%)
 
 
 One Cop To Rule Them All
@@ -156,4 +207,124 @@ hits mafia.
 
 For $$\eta < 1/49$$, this strategy works around half the time. Again, there is
 quite a bit of math to show the cop lives and the cabal stays large enough,
-but we can sidestep all of that by doing more simulations.
+but we can sidestep all of that by doing more simulations. Again, here is a
+Python implemntation.
+
+{% highlight python %}
+import random
+
+N = 1000
+
+def simulate_game(n, eta):
+    # Simulate n players with eta * n mafia, return True on win
+    m = int(round(eta * n))
+    mafia_left = m
+    t = int(round(eta ** 0.5 * n))
+    players = set(xrange(n))
+    town = set(xrange(m, n))
+    mafia = set(xrange(m))
+    investigated = set()
+    investigated.add(n-1) # Hack to avoid investigating self
+
+    # Phase 1
+    for _ in xrange(t):
+        if len(mafia) >= len(town):
+            return False
+        # Lynch random player
+        ra = random.choice(tuple(players))
+        if ra == n-1:
+            # Detective lynched
+            return False
+        elif ra < m:
+            # Mafia lynched
+            mafia.remove(ra)
+        else:
+            town.remove(ra)
+        players.remove(ra)
+        # Detective investigation
+        investigated.add(
+            random.choice(tuple(players - investigated))
+        )
+        # Mafia kill. Must happen after detective investigates
+        # since detective can investigated player that gets killed same night.
+        ki = random.choice(tuple(town))
+        if ki == n-1:
+            # Detective killed
+            return False
+        town.remove(ki)
+        players.remove(ki)
+
+    # Phase 2
+    investigated.remove(n-1) # Undo investigation hack
+    cabal = investigated - mafia
+    town.remove(n-1)
+
+    # Phase 3
+    while len(cabal) > len(mafia):
+        if len(mafia) == 0:
+            return True
+        if len(town) == 0:
+            return True  # Caught by case above but this speeds up the endgame.
+        if len(mafia) >= len(town):
+            return False
+        # Cabal lynch
+        lyn = random.choice(tuple(town | mafia - cabal))
+        if lyn < m:
+            mafia.remove(lyn)
+        else:
+            town.remove(lyn)
+        # Mafia kill
+        ki = random.choice(tuple(town))
+        town.remove(ki)
+        if ki in cabal:
+            cabal.remove(ki)
+    # Cabal too small while mafia live, failed.
+    return False
+
+
+def get_win_odds(n, eta):
+    TRIALS = 10000
+    return sum(simulate_game(n,eta) for _ in xrange(TRIALS)) / float(TRIALS)
+
+
+def find_5050(n):
+    threshold = 0.005
+    # Binary search to find m since probability of winning strictly increases with m
+    low = 0
+    high = 0.99
+    while True:
+        mid = (low + high) / 2.0
+        per = get_win_odds(n, mid)
+        print 'low = %f, high = %f, mid = %f, win chance = %f' % (low, high, mid, per)
+        if per < 0.5 - threshold:
+            high = mid
+        elif per > 0.5 + threshold:
+            low = mid
+        else:
+            return mid
+
+print find_5050(N)
+{% endhighlight %}
+
+This code is much more complicated, because we need to account for the detective
+investigating no person twice and the mafia killing a cabal member before the
+detective reveals themselves. The output in one run ended up being
+
+    low = 0.000000, high = 0.990000, mid = 0.495000, win chance = 0.000000
+    low = 0.000000, high = 0.495000, mid = 0.247500, win chance = 0.000000
+    low = 0.000000, high = 0.247500, mid = 0.123750, win chance = 0.000000
+    low = 0.000000, high = 0.123750, mid = 0.061875, win chance = 0.024000
+    low = 0.000000, high = 0.061875, mid = 0.030937, win chance = 0.253700
+    low = 0.000000, high = 0.030937, mid = 0.015469, win chance = 0.587000
+    low = 0.015469, high = 0.030937, mid = 0.023203, win chance = 0.398300
+    low = 0.015469, high = 0.023203, mid = 0.019336, win chance = 0.497000
+
+giving $$\eta \approx 0.019336$$, which is below the $$1/49 = 0.0204$$ claimed.
+
+This strategy can be easily improved. In the implementation above, I did not
+let the cabal lynch mafia members investigated by the detective. I also did
+not the the game continue when the detective dies or when the cabal becomes
+too small, even though it is strictly better for town to keep playing because
+there is still a small chance of winning.
+
+
