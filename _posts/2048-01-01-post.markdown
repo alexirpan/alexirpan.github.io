@@ -4,45 +4,60 @@ title:  "Perfectly Intelligent Mafia"
 date:   2048-01-01 00:00:00
 ---
 
-Recently, I've found a paper by Braverman, Etasami and Mossel (LINK) about
+*This is an experiment I set for myself to see how quickly I could summarize the
+results of an interesting paper I had read. I had the advantage of knowing the paper
+was very approachable. Still, I need to clarify that this was written to optimize
+writing time. Not clarity, not length, not style, and certainly not correctness (although
+it looks correct when I look at it.)*
+
+*Before writing this post, I had read the paper and written a few Facebook posts
+about the strategy, but nothing formal. This post, including all code, was written
+in 3 hours, 15 minutes.*
+
+Recently, I found a paper by Braverman, Etasami and Mossel ([open access here](http://projecteuclid.org/euclid.aoap/1211819786)) about
 strategies in the game of Mafia. As with many other games, assuming perfect
-play turns it from a game to a math problem, which ruins a lot of the fun,
+play turns it into a math problem, and acting out the strategy in real life
+ruins a lot of the fun,
 but at least the math is interesting.
 
-First, let's lay down some ground rules for Mafia.
+First, let's lay down some ground rules for Mafia, since there are many house
+variations.
 
-- There are $$N$$ players, where $$M$$ members are Mafia. Mafia members
-know who each other are. Town members do not know if other people are town
-or mafia.
+- There are $$N$$ players, where $$M$$ players are Mafia. Mafia members
+know who each other are. Town members do not know who each other are.
     - Some town members are power roles. Common power roles are the cop
-    (can investigate people) and the doctor (can save people from the mafia.)
-    The paper only analyzes the game with the cop.
+    (can investigate people) and the doctor (can save people from the mafia), but
+    the paper only analyzes the game with the cop.
 - The game starts in day, and alternates between day and night.
-    - Each day, town chooses someone to lynch by a plurality vote. These votes
-    are public. A strict majority to lynch someone.
+    - Each day, all players have a discussion, then choose someone to lynch by a plurality vote. These votes
+    are public. A strict majority is required to lynch someone.
     - Each night, mafia chooses someone to kill. The cop can choose to investigate
     a player, and the moderator will tell the cop whether he or she is town
     or mafia. No one else knows who the cop investigated.
 - Whenever someone dies in day or night, the moderator announces whether they
 were vanilla town, cop, or mafia.
 - Town wins if all mafia members get lynched. Mafia wins if mafia are a majority
-of the town (since at that point, mafia control the vote and can kill whoever
+of the town (since at that point, mafia control the lynch and can kill whomever
 they want in the day.)
 
-For the perfectly intelligent version of Mafia, we also assume the following
+For the perfectly intelligent version of Mafia, we also assume the following.
+
 - Players get a fixed amount of computation time to choose who to lynch and who
 to kill. This ensures the game eventually ends.
 - Players are allowed to call for an informal secret vote. Every player makes
 a vote in secret. The moderator announces how many votes each player got.
 This does not form a binding contract - the lynching is still done through
 the open vote, and people can vote differently in the final vote.
+    - Presumably all players can hand a note to the trusted moderator, or a cryptographic
+    voting scheme is set up beforehand.
 - Players can send hidden messages to other players. The only public information
 is that a player has sent or received a message from another player, and the message
-contents remain hidden. The assumption is that people can either send other
-players pieces of paper, or players set up public key crypto to allow sending
-messages that only the intended recipient can decrypt.
+contents remain hidden.
+    - Players can either send other
+    players pieces of paper, or players set up public key crypto to allow sending
+    messages that only the intended recipient can decrypt.
     - In the public key implementation, it is assumed the computation time
-    to choose who to lynch is not long enough to break the public key.
+    to choose who to lynch and kill is not long enough to break the public key.
 
 The paper considers two different games. In the first game, there are no
 power roles. In the second game, there is exactly one cop.
@@ -55,14 +70,17 @@ No Power Roles
 In real life mafia, the winner comes down to whether mafia can act convincingly like a townie,
 and whether town can determine who is lying.
 
-In perfectly intelligent mafia, a mafia member can act exactly like a townie. So,
+In perfectly intelligent mafia, a mafia member leaks no information and acts exactly
+like how a townie would act. So,
 it is impossible for town to gain any information on who is mafia and who isn't.
-Thus, the best town can do is lynch randomly. Additionally, since no town members
-are special, the best mafia can do is lynch people randomly. (In perfectly
+Thus, the best town can do is lynch randomly. Since no town members
+are special, the best mafia can do is kill people randomly. (In perfectly
 intelligent mafia, there is no leader of discussion, and there is no person
-who avoids talking, so no one is more special than any one else.)
+who avoids talking, so no one is more special than any one else. It's all
+very egalitarian.)
 
-This is a disappointing optimal strategy, but it still needs to be implementable.
+This is a disappointingly boring optimal strategy, but it still needs to be
+implementable despite malicious parties.
 This can be done as follows.
 
 1. Assign each player a number from $$0$$ to $$R-1$$, where $$R$$ is the number
@@ -73,14 +91,15 @@ the sum of numbers mod $$R$$.
 
 This generates a random number as long as one townie is still alive. Even if everyone
 else is mafia, no matter what numbers they choose, the resulting sum will be
-uniformly distributed. And the only people who have incentives to defect are
-mafia, so anyone who defects is immediately slated for execution the next day.
-(Defection also only changes the vote if a majority of players are mafia, at
+uniformly distributed. The only people who have incentives to not match the
+town vote are
+mafia, and anyone who defects is immediately slated for execution the next day.
+(Defection also only changes the final vote if a majority of players are mafia, at
 which point the game is over anyways.)
 
 Under this scheme, town wins half the time when the number of mafia is
 order $$\sqrt{N}$$. There is a decent amount of math to prove this is correct,
-but we can easily write some simulations to see if we can trust that result.
+but we can easily write some simulations to see if we can trust their result.
 Here is a sample script to do this in Python.
 
 {% highlight python %}
@@ -142,18 +161,18 @@ One Cop To Rule Them All
 ------------------------
 
 It turns out the addition of a single cop radically changes the number of
-mafia neded to make the game fair. The game is fair if the number of mafia
-is proportional to $$N$$.
+mafia needed to make the game fair. In the one-cop game, the number of mafia
+needs to be proportional to $$N$$ instead of $$\sqrt{N}$$
 
-This may be surprising, but there is a reasonable explanation for it.
-Remember that a perfectly intelligent player can act exactly like
-a vanilla townie. This means the mafia's best strategy is still to lynch
-randomly. This has a small chance of hitting the cop, giving the cop
-several rounds of investigation.
+This may be surprising, but remember that a perfectly intelligent player can act exactly like
+a vanilla townie. The cop can hide perfectly, and means the mafia's best strategy is still to lynch
+randomly. Because the odds of hitting the cop are so small, the cop has several rounds
+to collect intel. More interestingly, the power of the cop is not in finding
+mafia members. It is in verifying players are town.
 
 The strategy from the paper is not guaranteed to be optimal, but
-it is optimal asymptotically - there may be slightly different constant
-factors. The strategy is split into three phases.
+it is optimal asymptotically - there may be different constant
+factors with optimizations. The strategy is split into three phases.
 
 Phase 1
 ========
@@ -167,15 +186,15 @@ Phase 2
 The cop sends a hidden message to every investigated player that turned up
 town, containing all investigation results so far. In the note passing
 implementation of this, the cop also sends a note to every other player,
-but that note is blank. In the public key crypto implentation,
-this is not necessary because all messages are sent publically (but only
+but that note is blank. In the public key crypto implementation,
+this is not necessary because all messages are sent in public (but only
 investigated town can decrypt them.)
 
-The cop then immediately asks to be lynched. This seems unintuitive, since
+The cop then immediately asks to be lynched. This seems unintuitive;
 why would the cop want to die? However, once again recall that players
 are perfectly intelligent. On this round, another player could claim to
 be cop, send the same messages, and it would be impossible to tell who
-is genunine. The key is that when a player dies, their role and
+is genuine. The key is that when a player dies, their role and
 alignment is announced. So, the announcement that town has lynched
 the cop is the authentication for the list sent. If multiple
 people claim cop, they are lynched in order of the claim, since only
@@ -208,7 +227,7 @@ hits mafia.
 For $$\eta < 1/49$$, this strategy works around half the time. Again, there is
 quite a bit of math to show the cop lives and the cabal stays large enough,
 but we can sidestep all of that by doing more simulations. Again, here is a
-Python implemntation.
+Python implementation.
 
 {% highlight python %}
 import random
@@ -323,8 +342,22 @@ giving $$\eta \approx 0.019336$$, which is below the $$1/49 = 0.0204$$ claimed.
 
 This strategy can be easily improved. In the implementation above, I did not
 let the cabal lynch mafia members investigated by the detective. I also did
-not the the game continue when the detective dies or when the cabal becomes
+not let the game continue when the detective dies or when the cabal becomes
 too small, even though it is strictly better for town to keep playing because
 there is still a small chance of winning.
 
+Potential Followups
+-------------------
+The obvious place to go from here is to analyze the doctor, or analyze a multi-cop
+game. Some of this is done in the original paper, and I recommend reading it if
+you are interested in these results. There are also plenty of other roles to use.
+Vigilantes, roleblockers, serial killers...if you try, you might find something
+interesting falls out.
 
+*
+{: .centered }
+
+The most important part of this paper is not the strategies, it's the existence
+of the paper itself.
+Much like the paper showing [Nintendo games are NP-hard](http://arxiv.org/abs/1203.1895),
+it shows that if you look hard enough, you can find interesting problems everywhere.
