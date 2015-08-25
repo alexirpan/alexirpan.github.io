@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Perfectly Intelligent Mafia"
-date:   2048-01-01 00:00:00
+date:   2015-08-25 03:43:00 -0800
 ---
 
 *This is an experiment I set for myself to see how quickly I could summarize the
