@@ -1,0 +1,159 @@
+---
+layout: post
+title:  "Perfectly Intelligent Mafia"
+date:   2048-01-01 00:00:00
+---
+
+Recently, I've found a paper by Braverman, Etasami and Mossel (LINK) about
+strategies in the game of Mafia. As with many other games, assuming perfect
+play turns it from a game to a math problem, which ruins a lot of the fun,
+but at least the math is interesting.
+
+First, let's lay down some ground rules for Mafia.
+
+- There are $$N$$ players, where $$M$$ members are Mafia. Mafia members
+know who each other are. Town members do not know if other people are town
+or mafia.
+    - Some town members are power roles. Common power roles are the cop
+    (can investigate people) and the doctor (can save people from the mafia.)
+    The paper only analyzes the game with the cop.
+- The game starts in day, and alternates between day and night.
+    - Each day, town chooses someone to lynch by a plurality vote. These votes
+    are public. A strict majority to lynch someone.
+    - Each night, mafia chooses someone to kill. The cop can choose to investigate
+    a player, and the moderator will tell the cop whether he or she is town
+    or mafia. No one else knows who the cop investigated.
+- Whenever someone dies in day or night, the moderator announces whether they
+were vanilla town, cop, or mafia.
+- Town wins if all mafia members get lynched. Mafia wins if mafia are a majority
+of the town (since at that point, mafia control the vote and can kill whoever
+they want in the day.)
+
+For the perfectly intelligent version of Mafia, we also assume the following
+- Players get a fixed amount of computation time to choose who to lynch and who
+to kill. This ensures the game eventually ends.
+- Players are allowed to call for an informal secret vote. Every player makes
+a vote in secret. The moderator announces how many votes each player got.
+This does not form a binding contract - the lynching is still done through
+the open vote, and people can vote differently in the final vote.
+- Players can send hidden messages to other players. The only public information
+is that a player has sent or received a message from another player, and the message
+contents remain hidden. The assumption is that people can either send other
+players pieces of paper, or players set up public key crypto to allow sending
+messages that only the intended recipient can decrypt.
+    - In the public key implementation, it is assumed the computation time
+    to choose who to lynch is not long enough to break the public key.
+
+The paper considers two different games. In the first game, there are no
+power roles. In the second game, there is exactly one cop.
+In both cases, we are
+interested in how many mafia members there need to be for town to win 50% of the time.
+
+No Power Roles
+----------------
+
+In real life mafia, the winner comes down to whether mafia can act convincingly like a townie,
+and whether town can determine who is lying.
+
+In perfectly intelligent mafia, a mafia member can act exactly like a townie. So,
+it is impossible for town to gain any information on who is mafia and who isn't.
+Thus, the best town can do is lynch randomly. Additionally, since no town members
+are special, the best mafia can do is lynch people randomly. (In perfectly
+intelligent mafia, there is no leader of discussion, and there is no person
+who avoids talking, so no one is more special than any one else.)
+
+This is a disappointing optimal strategy, but it still needs to be implementable.
+This can be done as follows.
+
+1. Assign each player a number from $$0$$ to $$R-1$$, where $$R$$ is the number
+of players still alive.
+2. Every player generates a random number from $$0$$ to $$R-1$$.
+3. Every player announces their number simultaneously. Town unanimously lynches
+the sum of numbers mod $$R$$.
+
+This generates a random number as long as one townie is still alive. Even if everyone
+else is mafia, no matter what numbers they choose, the resulting sum will be
+uniformly distributed. And the only people who have incentives to defect are
+mafia, so anyone who defects is immediately slated for execution the next day.
+(Defection also only changes the vote if a majority of players are mafia, at
+which point the game is over anyways.)
+
+Under this scheme, town wins half the time when the number of mafia is
+order $$\sqrt{N}$$. There is a decent amount of math to prove this is correct,
+but we can easily write some simulations to see if we can trust that result.
+
+When $$N = 1000$$, the 50/50 win chance is at 11 mafia. When $$N = 4000$$, the
+50/50 win chance is at 21-22 mafia. When $$N = 9000$$, the 50/50 win chance is at
+32-34 mafia. This matches expectations.
+
+
+One Cop To Rule Them All
+------------------------
+
+It turns out the addition of a single cop radically changes the number of
+mafia neded to make the game fair. The game is fair if the number of mafia
+is proportional to $$N$$.
+
+This may be surprising, but there is a reasonable explanation for it.
+Remember that a perfectly intelligent player can act exactly like
+a vanilla townie. This means the mafia's best strategy is still to lynch
+randomly. This has a small chance of hitting the cop, giving the cop
+several rounds of investigation.
+
+The strategy from the paper is not guaranteed to be optimal, but
+it is optimal asymptotically - there may be slightly different constant
+factors. The strategy is split into three phases.
+
+Phase 1
+========
+Assume there are $$\eta N$$ mafia, where $$0 < \eta < 1$$.
+For $$\sqrt{eta}N$$ rounds, the cop investigates random players,
+town randomly lynches, and mafia randomly kills. If the cop is killed
+in phase 1, town immediately forfeits.
+
+Phase 2
+========
+The cop sends a hidden message to every investigated player that turned up
+town, containing all investigation results so far. In the note passing
+implementation of this, the cop also sends a note to every other player,
+but that note is blank. In the public key crypto implentation,
+this is not necessary because all messages are sent publically (but only
+investigated town can decrypt them.)
+
+The cop then immediately asks to be lynched. This seems unintuitive, since
+why would the cop want to die? However, once again recall that players
+are perfectly intelligent. On this round, another player could claim to
+be cop, send the same messages, and it would be impossible to tell who
+is genunine. The key is that when a player dies, their role and
+alignment is announced. So, the announcement that town has lynched
+the cop is the authentication for the list sent. If multiple
+people claim cop, they are lynched in order of the claim, since only
+mafia has motivation to claim cop.
+
+Phase 3
+==========
+At this phase, there exists a cabal of townies who knows all members
+of the cabal, and knows all those members are town. Additionally, there
+are more cabal members than mafia, since $$\sqrt{\eta}N > \eta N$$ for
+$$\eta < 1$$.
+
+On each day, players call for a secret vote. One member of the cabal chooses a person
+$$p$$ that is not in the cabal, and sends a hidden note to everyone in the
+cabal, in the same way the cop sent the initial investigation list.
+Everyone in the cabal votes $$p$$ in the secret vote, and all town members
+abstain. In the open vote, every player votes for the winner of the secret
+vote. Since there are more cabal than mafia, it is impossible for mafia to
+hijack the secret vote, and thus every lynch avoids the cabal, improving
+the successful lynch probability massively.
+
+Overall, the game ends when either
+- Cabal size $$\le$$ mafia size, in which case town forfeits immediately because
+mafia can hijack the secret vote.
+- Every citizen outside the cabal dies, in which case town wins - there
+are more cabal members than mafia members, and every lynch made by the cabal
+hits mafia.
+- All mafia members die, in which case town wins.
+
+For $$\eta < 1/49$$, this strategy works around half the time. Again, there is
+quite a bit of math to show the cop lives and the cabal stays large enough,
+but we can sidestep all of that by doing more simulations.
