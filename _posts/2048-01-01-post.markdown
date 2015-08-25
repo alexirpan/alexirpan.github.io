@@ -10,9 +10,9 @@ was very approachable. Still, I need to clarify that this was written to optimiz
 writing time. Not clarity, not length, not style, and certainly not correctness (although
 it looks correct when I look at it.)*
 
-*Before writing this post, I had read the paper and written a few Facebook posts
-about the strategy, but nothing formal. This post, including all code, was written
-in 3 hours, 15 minutes.*
+*Before writing this entry, I had read the paper and written a few Facebook posts
+about the strategy, but nothing formal. This entry, including all code, was written
+in 3 hours, 40 minutes.*
 
 Recently, I found a paper by Braverman, Etasami and Mossel ([open access here](http://projecteuclid.org/euclid.aoap/1211819786)) about
 strategies in the game of Mafia. As with many other games, assuming perfect
@@ -53,10 +53,9 @@ the open vote, and people can vote differently in the final vote.
 - Players can send hidden messages to other players. The only public information
 is that a player has sent or received a message from another player, and the message
 contents remain hidden.
-    - Players can either send other
-    players pieces of paper, or players set up public key crypto to allow sending
+    - This is done through public key crypto, to allow sending
     messages that only the intended recipient can decrypt.
-    - In the public key implementation, it is assumed the computation time
+    - It is assumed the computation time
     to choose who to lynch and kill is not long enough to break the public key.
 
 The paper considers two different games. In the first game, there are no
@@ -177,16 +176,17 @@ factors with optimizations. The strategy is split into three phases.
 Phase 1
 ========
 Assume there are $$\eta N$$ mafia, where $$0 < \eta < 1$$.
-For $$\sqrt{eta}N$$ rounds, the cop investigates random players,
+For $$\sqrt{\eta}N$$ rounds, the cop randomly investigates,
 town randomly lynches, and mafia randomly kills. If the cop is killed
 in phase 1, town immediately forfeits.
 
 Phase 2
 ========
 The cop sends a hidden message to every investigated player that turned up
-town, containing all investigation results so far. In the note passing
+town, containing an ordered list of all investigation results. In the note passing
 implementation of this, the cop also sends a note to every other player,
-but that note is blank. In the public key crypto implementation,
+but that note is blank, to disguise who the investigated players were.
+In the public key crypto implementation,
 this is not necessary because all messages are sent in public (but only
 investigated town can decrypt them.)
 
@@ -207,9 +207,10 @@ of the cabal, and knows all those members are town. Additionally, there
 are more cabal members than mafia, since $$\sqrt{\eta}N > \eta N$$ for
 $$\eta < 1$$.
 
-On each day, players call for a secret vote. One member of the cabal chooses a person
-$$p$$ that is not in the cabal, and sends a hidden note to everyone in the
-cabal, in the same way the cop sent the initial investigation list.
+On each day, players call for a secret vote. The *leader* of the cabal
+is defined as the townie highest up the investigation list. (If the leader dies,
+the second highest townie is the new leader.) One member of the cabal chooses a person
+$$p$$ that is not in the cabal, and sends that message to every other cabal member.
 Everyone in the cabal votes $$p$$ in the secret vote, and all town members
 abstain. In the open vote, every player votes for the winner of the secret
 vote. Since there are more cabal than mafia, it is impossible for mafia to
@@ -340,11 +341,23 @@ detective reveals themselves. The output in one run ended up being
 
 giving $$\eta \approx 0.019336$$, which is below the $$1/49 = 0.0204$$ claimed.
 
+Remarks
+==========
 This strategy can be easily improved. In the implementation above, I did not
 let the cabal lynch mafia members investigated by the detective. I also did
 not let the game continue when the detective dies or when the cabal becomes
 too small, even though it is strictly better for town to keep playing because
 there is still a small chance of winning.
+
+All this reasoning relies on the existence of secret message passing.
+If that doesn't sit well with you, the cop can also choose to not reveal
+themselves until a majority of alive players are verified town. At this point, the
+cop reveals themselves and gets lynched. In this case, the cabal is public
+knowledge. Each day, the cabal lynches a random person not in the cabal, and mafia
+kills a person in the cabal. By
+construction, the cabal will always be a majority of living players, so eventually all mafia members
+will be killed. This is proved to work for a smaller $$\eta$$, but is still
+only fair if the number of mafia is proportional to $$N$$.
 
 Potential Followups
 -------------------
@@ -354,10 +367,13 @@ you are interested in these results. There are also plenty of other roles to use
 Vigilantes, roleblockers, serial killers...if you try, you might find something
 interesting falls out.
 
-*
-{: .centered }
 
-The most important part of this paper is not the strategies, it's the existence
-of the paper itself.
+Practically Perfect In Every Way...
+-----------------------------------
+
+The most important part of this paper is not learning how to play Mafia given perfect
+intelligence.
+
+it's the existence of the paper itself.
 Much like the paper showing [Nintendo games are NP-hard](http://arxiv.org/abs/1203.1895),
 it shows that if you look hard enough, you can find interesting problems everywhere.
