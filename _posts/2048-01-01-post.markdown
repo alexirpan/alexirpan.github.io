@@ -30,17 +30,47 @@ the more extensive rules.
 allowed.
 - After removing a card, the partner must deal all 4 remaining cards.
 
-Since this is a puzzle, 
+This is meant to be a puzzle, so before I spoil the solution, you may want to
+spend some time figuring it out yourself.
 
-> Spoiler test
->
-> Spoilers?
-> Spoilers?
+Hint 1:
+
+> It's important that 5 cards are chosen - the scheme does not work if there are
+> fewer than 5 cards picked.
 {: .spoiler }
 
+Hint 2:
 
-> Spoiler test 2
->
-> Spoilers?
-> Spoilers?
+> Assign a canonical ordering 1 to 52 on the deck of cards. You have no control
+> over what cards you get, so the scheme should only rely on the different permutations
+> of the remaining cards.
 {: .spoiler }
+
+Hint 3:
+
+> You do have control over which card to remove. In any given 5 cards, there is
+> exactly 1 card you can remove to make the scheme work.
+{: .spoiler }
+
+Now, the solution.
+
+Although not stricly necessary, we can first verify this is doable. There are
+$$\binom{52}{5}$$ ways to pick $$5$$ cards. The $$4$$ cards seen have order,
+so there are $$52 \cdot 51 \cdot 50 \cdot 49$$ outputs.
+
+(Relevant picture)
+
+If we can predict the missing card, then we know all 5 initial cards.
+If $$52\cdot 51\cdot 50 \cdot 49 < \binom{52}{5}$$, then by Pigeonhole Principle
+there would be some output that corresponds to at least 2 different inputs,
+and no such scheme would exist. This isn't true, which is good. (This setup
+isn't exact, because an input of 5 cards can only end at a subset of the range.
+But these subsets intersect, which makes counting the possibilities difficult, and this
+really isn't the focus.)
+
+TODO do the counts.
+
+First observation, 2 cards of same suit by pigeonhole, use 1 to denote the suit.
+Under ordering, $$3! = 6$$ options.
+Note that two numbers from 1 to 13 separated by at most 6 if you allow counting over,
+pick lower.
