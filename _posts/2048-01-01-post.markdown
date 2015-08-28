@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "Some Clever Pun Involving Poker And Math And Magic"
+date:   2020-08-25 03:43:00 -0800
+---
+
+Here's a neat magic trick that involves no magic, only math.
+
+The setup: you and a partner invite a volunteer to the stage. You present
+the volunteer with a standard 52 card deck of playing cards. You close your eyes,
+while your partner asks the volunteer to pick 5 arbitrary cards from the deck.
+Your partner places one of the 5 cards into his or her pocket, then deals the
+4 remaining cards in some order.
+
+You then open your eyes, look at the 4 cards dealt, and name the missing card to
+much fanfare. To show there is no trickery, you ask someone else to come up and
+pick 5 cards, and again you succeed. And again, and again...
+
+The puzzle: devise a scheme that makes this trick possible.
+
+\*\*\*
+{: .centered }
+
+As with most limited information puzzles, the first reaction of most people is to
+find creative ways to communicate more information than intended, so here are
+the more extensive rules.
+
+- The scheme must work with any choice of 5 cards from the deck.
+- The predictor sees 4 of the cards, and their ordering. No other information is
+allowed.
+- After removing a card, the partner must deal all 4 remaining cards.
+
+Since this is a puzzle, 
+
+> Spoiler test
+>
+> Spoilers?
+> Spoilers?
+{: .spoiler }
+
+
+> Spoiler test 2
+>
+> Spoilers?
+> Spoilers?
+{: .spoiler }

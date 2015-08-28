@@ -27,3 +27,15 @@
   ga('send', 'pageview');
 
 </script>
+
+<!-- Spoiler implemenation -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".spoiler").click(function() {
+            $(this).toggleClass("spoiler-clicked");
+            $(this).toggleClass("spoiler");
+        });
+    });
+</script>
+

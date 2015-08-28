@@ -268,3 +268,26 @@ strong {
     text-align: center;
 }
 
+
+.spoiler {
+    color: #fff9e3;
+}
+
+.spoiler-clicked {
+    color: $grey-color;
+}
+/**
+.spoiler{
+        -webkit-transition:color .5s ease-in;
+            -moz-transition:color .5s ease-in;
+                transition:color .5s ease-in;
+                    color:#fff9e3
+                }
+
+.spoiler:hover{
+        color: $grey-color;
+            -webkit-transition:color .5s ease-in;
+                -moz-transition:color .5s ease-in;
+                    transition:color .5s ease-in
+                }
+                */
