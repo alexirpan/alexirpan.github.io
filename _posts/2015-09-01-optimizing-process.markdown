@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why Aren't I Optimizing My Process?"
-date:   2015-09-01 03:43:00 -0800
+date:   2015-09-01 01:24:00 -0800
 ---
 
 While finding ways to spend time that didn't involve studying for an entrance exam,
@@ -58,7 +58,6 @@ It means knowing where to look when you need something, whether
 you need a textbook or a bag of flour. It means having a system for note taking
 that is conducive to learning the material, both while taking the course and
 when you need to review it two years later.
-It means never disappointing someone by forgetting about an appointment.
 Although there are obviously other factors, the organized and well-regimented
 are the ones who are going to make the biggest impact in the world.
 
