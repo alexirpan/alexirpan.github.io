@@ -135,8 +135,7 @@ swap, we should pick an alternative envelope at random.
 
 This leaves showing the improvement chance is higher than the worsening chance.
 If the algorithm does not swap, the utility is unchanged, so it suffices to analyze
-only situations where we switch envelopes. (If it is clear why this is true, you can
-skip to the next section, since this proof is mostly algebra manipulation.)
+only situations where we switch envelopes.
 
 For envelope $$i$$, the chance of switching is $$P[Y \ge A_i]$$.
 The reward rises for $$n-i$$ envelopes and drops for $$i-1$$
@@ -155,22 +154,25 @@ $$
 Now, take the difference and pair up terms with matching $$P[Y \ge A_i]$$ to get
 
 $$
-    P[improves] - P[worsens] = \frac{1}{n}\sum_{i=1}^n \frac{n-2i+1}{n-1} P[Y \ge A_i]
+    P[\text{improves}] - P[\text{worsens}] = \frac{1}{n}\sum_{i=1}^n \frac{n-2i+1}{n-1} P[Y \ge A_i]
 $$
 
-The coefficients go from $$\frac{n-1}{n-1}, \frac{n-3}{n-1}, \ldots, \frac{-(n-3)}{n-1}, \frac{-(n-1)}{n-1}$$.
+The coefficients of the terms are $$\frac{n-1}{n-1}, \frac{n-3}{n-1}, \ldots, \frac{-(n-3)}{n-1}, \frac{-(n-1)}{n-1}$$.
 Since we only care about whether the difference is positive, multiply by $$2$$ to get
-two of each term, then pair terms by matching each coefficient with its negative.
+two copies of the terms, then pair terms by coefficient, matching each coefficient with its negative.
 
 $$
-    2(P[improves] - P[worsens]) = \frac{1}{n}\sum_{i=1}^n \frac{n-2i+1}{n-1} (P[Y \ge A_i] - P[Y \ge A_{n-i+1}])
+    2(P[\text{improves}] - P[\text{worsens}]) = \frac{1}{n}\sum_{i=1}^n \frac{n-2i+1}{n-1} (P[Y \ge A_i] - P[Y \ge A_{n+1-i}])
 $$
 
-Consider each term of this summation. For $$i < \frac{n+1}{2}$$, the coefficient
-is positivem and $$A_i < A_{n-i+1}$$. Thus,
-$$P[Y \ge A_i] - P[Y \ge A_{n-i+1}]$$ is also positive.
-For $$i = \frac{n+1}{2}$$, the coefficent is $$0$$. For $$i > \frac{n+1}{2}$$, the
-coefficient is negative, and $$A_i > A_{n-i_1}$$, so $$P[Y \ge A_i] - P[Y \ge A_{n-i+1}]$$
+Consider each term of this summation.
+
+- For $$i < \frac{n+1}{2}$$, the coefficient
+is positive and $$A_i < A_{n+1-i}$$. Thus,
+$$P[Y \ge A_i] - P[Y \ge A_{n+1-i}]$$ is also positive.
+- For $$i = \frac{n+1}{2}$$, the coefficent is $$0$$.
+- For $$i > \frac{n+1}{2}$$, the
+coefficient is negative, and $$A_i > A_{n+1-i}$$, so $$P[Y \ge A_i] - P[Y \ge A_{n+1-i}]$$
 is also negative.
 
 Every term in the summation is positive or zero, so the entire sum is positive, and
