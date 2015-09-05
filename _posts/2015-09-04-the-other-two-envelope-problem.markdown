@@ -7,27 +7,27 @@ date:   2015-09-04  18:00:00
 There are at least 2 two envelope problems. The first I know of is considerably
 more famous; it has
 [its own Wikipedia page](https://en.wikipedia.org/wiki/Two_envelopes_problem).
-If you haven't seen it before, it's worth reading, but this is about the other
-two envelope problem.
+It's an interesting problem and worth reading, but this is about that problem's
+litte brother, who deserves his own time to shine.
 
 Here is the formulation.
 
 > There are two envelopes, one with $$A$$ and one with $$B$$ dollars, $$A \neq B$$.
 > $$A$$ and $$B$$ are
-> unknown distinct positive integers. You are randomly given an envelope.
-> You are allowed to look inside, then must choose whether to switch envelopes
-> or not.
+> unknown distinct positive integers. You are randomly given an envelope,
+> can look inside, then must choose whether to switch envelopes or not.
 >
-> Does there exists a switching strategy that ends with the larger envelope more than
+> Does there exists a switching strategy which ends with the larger envelope more than
 > half the time?
 
 At first glance, the answer should be no.
 Although we know the contents
-of one envelope, we have no information on how much the other envelope might have,
-so how can any decision we make be meaningful?
-As it turns out, the small amount of information we have (the amount in the current
-envelope) is enough to make a better
-decision, even when the alternative is unkown.
+of one envelope, we have no information on how much the other envelope might have.
+When the other envelope is a black box, how can we make a meaningful decision?
+
+As it turns out, such a strategy does exist, and
+the small amount of information we have (the amount in the current
+envelope) is enough to improve our standing, even when the alternative has unknown value.
 
 The Power of Randomness
 --------------------------
@@ -65,34 +65,48 @@ Extending to the Reals
 --------------------------
 
 This coin flip strategy works when $$A$$ and $$B$$ are integers, but fails when
-they are arbitrary reals.
+$$A,B$$ are arbitrary reals. The problem is that the number of flips comes
+from a discrete distribution, so it does not have the granularity to distinguish
+between values like $$A = 2.3, B = 2.4$$.
 
-So, how is this strategy extendable? The intuition behind why the coin flipping
-strategy worked is that the amount in the current envelope gives a decision boundary
-for our random process. In the coin flip strategy (REPHARSE to avoid using coin
-flip twice), the random process is a sample from the geometric distribution
-with parameter $$p=1/2$$. This distribution is discrete, but nothing stops us
-from using a continuous probability distribution instead.
-(Technically, we need to sample
-a distribution with a probability density function that is positive over $$(-\infty, \infty)$$,
-but most common distributions satisfy this.)
+So, how is this strategy extendable? The way the current strategy works is by creating
+a decision boundary based on the amount in the seen envelope.
+The boundary is then applied to the geometric distribution
+with parameter $$p=1/2$$.
 
-For simplicity, sample from the normal distribution $$N(0,1)$$. The final scheme is
+IMAGINE A BEAUTIFUL PICTURE
+
+To handle arbitrary reals, we should use a continious probability distribution
+instead. Nothing in the previous logic relies on the distribution being discrete,
+so we can simply drop in a distribution of our choice. The only requirement we
+need is a strictly positive probability density function over $$(-\infty, \infty)$$
+(we'll explain why we need this later.)
+The standard normal distribution $$N(0, 1)$$ will do fine.
+
+The modified strategy is
 
 - Inspect amount $$X$$ inside the envelope.
 - Sample $$Y$$ from $$N(0,1)$$.
-- Switch if $$Y \ge X$$. Otherwise, do not switch.
+- If $$Y \ge X$$. switch. Otherwise, do not switch.
 
-Again, to argue it works, for $$A < B$$, $$P(N(0,1) \ge A) \ge P(N(0,1) \ge B)$$,
-so this switches envelopes more often when the first envelope is $$A$$, giving a
-better than half chance of ending with the larger envelope.
+The proof is also similar.
+For $$A < B$$, $$P(Y \ge A) > P(Y \ge B)$$. This is why the p.d.f. needs to be
+positive everywhere. If the p.d.f. is zero over some interval $$[a,b]$$, it is
+possible that both $$A, B \in [a,b]$$, which gives $$P(Y \ge A) = P(Y \ge B)$$.
+The chance of ending with the larger envelope is
+
+$$
+    \frac{1}{2}P(Y \ge A) + \frac{1}{2}\left(1 - P(Y \ge B)\right) = \frac{1}{2} + \frac{1}{2}\left(P(Y \ge A) - P(Y \ge B)\right) > \frac{1}{2}
+$$
+
+and this strategy generalizes to real valued envelopes. $$\blacksquare$$
 
 Extending to Multiple Envelopes
 ---------------------------------
 
 At this point, it's worth considering whether we can take any lessons from this problem.
-The result suggests that even with no information on alternative choices, we can
-potentially use a random action to improve our current standing. However, in real
+The result suggests that even with no information on alternative choices, we could
+use a random action to improve our current standing. However, in real
 life there are usually much more than two possible actions, so this strategy does
 not apply.
 
