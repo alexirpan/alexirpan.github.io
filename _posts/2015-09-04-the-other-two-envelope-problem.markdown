@@ -106,44 +106,50 @@ Extending to Multiple Envelopes
 
 At this point, it's worth considering whether we can take any lessons from this problem.
 The result suggests that even with no information on alternative choices, we could
-use a random action to improve our current standing. However, in real
-life there are usually much more than two possible actions, so this strategy does
-not apply.
+use a random action to improve our current standing. It would be really, really nice
+if this was applicable to real life decisions, since we often have very little
+information on the outcomes of different choices.
+However, in real life there are usually much more than two possible actions, so
+we should first consider whether this two envelope framework is even valid.
 
-This raises an interesting question: what if there are more than $$2$$ envelopes?
-Consider the following formulation.
+When there are $$n$$ envelopes instead of $$2$$ envelopes, we can no longer
+aim for only the best envelope. The switch could slightly help us, slightly hurt us,
+especially help us, or especially hurt us. Because of this, we need to modify the
+criteria of a good strategy.
 
 > There are $$n$$ envelopes, which give utilities $$A_1 < A_2 < A_3 < \cdots < A_n$$.
 > The $$A_i$$ are unknown real numbers.
-> You are randomly given an envelope, can look inside, then choose to switch
-> with any other envelope.
+> You are randomly given an envelope, can look inside, then must choose whether to switch
+> with another envelope.
 >
 > Does there exist a switching strategy that improves your utility more often
 > than it worsens your utility?
 
-Given how similar this problem is to the two envelope problem, we should first
-try adapting the current strategy.
-It turns out this strategy still works once modified.
-We still choose whether to swap by sampling from $$N(0,1)$$.
+Once again, it turns out the real valued two envelope strategy still works with appropriate
+modifications.
+We still choose whether to swap by seeing if sample $$Y$$ is greater than
+seen utility $$X$$.
 The only difference is choosing which envelope to switch to. From the opener's
-perspective, every other envelope appears identical. So, if the opener decides to
-swap, he or she should do so at random.
+perspective, every other envelope appears identical. Thus, if the strategy says to
+swap, we should pick an alternative envelope at random.
 
 This leaves showing the improvement chance is higher than the worsening chance.
 If the algorithm does not swap, the utility is unchanged, so it suffices to analyze
-only situations where we switch envelopes.
+only situations where we switch envelopes. (If it is clear why this is true, you can
+skip to the next section, since this proof is mostly algebra manipulation.)
+
 For envelope $$i$$, the chance of switching is $$P[Y \ge A_i]$$.
-The reward drops for $$i-1$$ envelopes, and increases for $$n - i$$
-envelopes. Thus, the chance of improving utility
+The reward rises for $$n-i$$ envelopes and drops for $$i-1$$
+envelopes. Thus, the chance of improving utility is
 
 $$
     P[\text{utility rises}] = \sum_{i=1}^n \frac{1}{n} P[Y \ge A_i]\cdot \frac{n-i}{n-1}
 $$
 
-and the chance of decreasing utility is
+and the chance of worsening utility is
 
 $$
-    P[\text{utility decreases}] = \sum_{i=1}^n \frac{1}{n} P[Y \ge A_i]\cdot \frac{i-1}{n-1}
+    P[\text{utility drops}] = \sum_{i=1}^n \frac{1}{n} P[Y \ge A_i]\cdot \frac{i-1}{n-1}
 $$
 
 Now, take the difference and pair up terms with matching $$P[Y \ge A_i]$$ to get
