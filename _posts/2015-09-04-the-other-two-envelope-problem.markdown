@@ -58,8 +58,10 @@ $$
 So, the chance to end with $$B$$ is
 
 $$
-\frac{1}{2^{A+1}} + \frac{1}{2} - \frac{1}{2^{B+1}} = \frac{1}{2} + \frac{2^{B-A} - 1}{2^{B+1}} > \frac{1}{2}
+    \frac{1}{2} + \frac{1}{2^{A+1}} - \frac{1}{2^{B+1}}
 $$
+
+which is indeed larger than $$1/2$$ for $$A < B$$. $$\blacksquare$$
 
 Extending to the Reals
 --------------------------
@@ -92,7 +94,69 @@ For simplicity, sample from the normal distribution $$N(0,1)$$. The final scheme
 - Switch if $$Y \ge X$$. Otherwise, do not switch.
 
 Again, to argue it works, for $$A < B$$, $$P(N(0,1) \ge A) \ge P(N(0,1) \ge B)$$,
-so this switches envelopes more often when the first envelope is $$A$$.
+so this switches envelopes more often when the first envelope is $$A$$, giving a
+better than half chance of ending with the larger envelope.
+
+Extending to Multiple Envelopes
+---------------------------------
+
+One natural extension to the problem is to assume there are more than 2 envelopes.
+Consider the following formulation.
+
+> There are $$n$$ envelopes, which contain $$A_1 < A_2 < A_3 < \cdots < A_n$$ dollars.
+> The $$A_i$$ are unknown positive real numbers.
+> You are randomly given an envelope, can look inside, then choose to switch
+> with any other envelope.
+>
+> Give a switching strategy that is more likely to improve your situation than
+> it is to worsen it. (CHECK GRAMMAR)
+
+(ADD INTUITION EXPLAINING THIS FORMUULATION HERE)
+
+It turns out the previous strategy still works here, even when all other envelopes
+have unknown value. The only difference is which envelope to switch to. By symmetry,
+every other envelope appears identical, so we should choose an envelope to switch with
+by random. The following is an argument to show the improvement chance is higher. (REPHRASE)
+
+For envelope $$i$$, the chance of switching is $$P[Y \ge A_i]$$.
+The reward drops for $$i-1$$ envelopes, and increases for $$n - i$$
+envelopes. Thus, the chance of improving utility is SWITCH ORDER
+
+$$
+    P[\text{utility rises}] = \sum_{i=1}^n \frac{1}{n} P[Y \ge A_i]\cdot \frac{n-i}{n-1}
+$$
+
+and the chance of decreasing utility is
+
+$$
+    P[\text{utility decreases}] = \sum_{i=1}^n \frac{1}{n} P[Y \ge A_i]\cdot \frac{i-1}{n-1}
+$$
+
+Now, take the difference and pair up terms with matching $$P[Y \ge A_i]$$ to get
+
+$$
+    P[improves] - P[worsens] = \frac{1}{n}\sum_{i=1}^n \frac{n-2i+1}{n-1} P[Y \ge A_i]
+$$
+
+The coefficients (CHECK) go from $$\frac{n-1}{n-1}, \frac{n-3}{n-1}, \ldots, \frac{-(n-3)}{n-1}, \frac{-(n-1)}{n-1}$$.
+Since we only care about whether the difference is positive, multiply by $$2$$ to get
+two of each term, then pair terms by matching each coefficient with its negative.
+
+$$
+    2(P[improves] - P[worsens]) = \frac{1}{n}\sum_{i=1}^n \frac{n-2i+1}{n-1} (P[Y \ge A_i] - P[Y \ge A_{n-i+1}])
+$$
+
+Consider each term of this summation. When $$i < \frac{n+1}{2}$$, the coefficient
+is positivem and $$A_i < A_{n-i+1}$$. Thus,
+$$P[Y \ge A_i] - P[Y \ge A_{n-i+1}]$$ is also positive, and the entire term is positive.
+When $$i = \frac{n+1}{2}$$, the coefficent is $$0$$. When $$i > \frac{n+1}{2}$$, the
+coefficient is negative, and $$A_i > A_{n-i_1}$$, so $$P[Y \ge A_i] - P[Y \ge A_{n-i+1}]$$
+is also negative.
+
+Every term in the summation is positive or zero, so the entire sum is positive, and
+the probability of increasing utility is higher than the probability of decreasing
+it. $$\blacksquare$$
+
 
 Implications
 ---------------------------
