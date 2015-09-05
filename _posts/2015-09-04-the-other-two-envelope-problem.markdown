@@ -4,32 +4,30 @@ title:  "The Other Two Envelope Problem"
 date:   2015-09-04  18:00:00
 ---
 
-There are two two envelope problems.
-
-The first is well known, and has
+There are at least 2 two envelope problems. The first I know of is considerably
+more famous; it has
 [its own Wikipedia page](https://en.wikipedia.org/wiki/Two_envelopes_problem).
-That problem is interesting, but this is about the other two envelope problem.
-(BAD WORDING, FIX). Here is the setup:
+If you haven't seen it before, it's worth reading, but this is about the other
+two envelope problem.
 
-> There are two envelopes, one with A and one with B dollars, $$A \neq B$$.
-> A and B are
+Here is the formulation.
+
+> There are two envelopes, one with $$A$$ and one with $$B$$ dollars, $$A \neq B$$.
+> $$A$$ and $$B$$ are
 > unknown distinct positive integers. You are randomly given an envelope.
 > You are allowed to look inside, then must choose whether to switch envelopes
 > or not.
 >
-> Give a strategy where you walk away with the larger envelope more than
-> half the time.
->
-> Harder variation: do the same, except A and B are arbitrary positive real numbers.
+> Does there exists a switching strategy that ends with the larger envelope more than
+> half the time?
 
-At first glance, it should be very strange to see how you can guarantee getting
-the larger envelope more than half the time.
+At first glance, the answer should be no.
 Although we know the contents
-of one envelope, we have no information on how much the other envelope might have.
-So, it is not clear how we can make a meaningful decision at all. The only
-information we have to inform our decision is the money in the current envelope.
-As it turns out, that small amount of information is enough to make a better
-decision, even when the other envelope's contents are a complete mystery.
+of one envelope, we have no information on how much the other envelope might have,
+so how can any decision we make be meaningful?
+As it turns out, the small amount of information we have (the amount in the current
+envelope) is enough to make a better
+decision, even when the alternative is unkown.
 
 The Power of Randomness
 --------------------------
@@ -37,7 +35,7 @@ The Power of Randomness
 The trick is to make the switching decision randomly, in a way that biases outcomes
 to end with the larger envelope. The strategy is as follows:
 
-- See amount $$X$$ inside the envelope.
+- Inspect amount $$X$$ inside the envelope.
 - Flip a fair coin until it lands tails.
 - If there were at least $$X$$ flips, switch envelopes. Otherwise, do not switch.
 
@@ -67,24 +65,16 @@ Extending to the Reals
 --------------------------
 
 This coin flip strategy works when $$A$$ and $$B$$ are integers, but fails when
-they are arbitrary reals. For instance, when $$A = 1.3, B = 1.4$$, the coin flip
-strategy would switch on $$\ge 2$$ flips for both envelopes $$A$$ and $$B$$.
+they are arbitrary reals.
 
 So, how is this strategy extendable? The intuition behind why the coin flipping
-strategy worked is that even though we assume nothing about the other envelope,
-we can act in a way that is less likely to switch while on the greater envelope.
-(AGAIN BAD WORDING)
-
-Formalizing the switching strategy gives
-
-- Inspect amount $$X$$ inside the envelope.
-- Sample a $$Y$$ from the geometric distribution with $$p = 1/2$$.
-- Switch if $$Y \ge X$$. Otherwise, do not switch.
-
-The only reason this fails for some envelope values $$A, B$$ is because the
-geometric distribution is discrete. If we sampled from a continous distribution
-instead, the scheme should extend to all reals. (Technically, we need to sample
-a distribution with a probability density function that is positive over $$[0, \infty)$$,
+strategy worked is that the amount in the current envelope gives a decision boundary
+for our random process. In the coin flip strategy (REPHARSE to avoid using coin
+flip twice), the random process is a sample from the geometric distribution
+with parameter $$p=1/2$$. This distribution is discrete, but nothing stops us
+from using a continuous probability distribution instead.
+(Technically, we need to sample
+a distribution with a probability density function that is positive over $$(-\infty, \infty)$$,
 but most common distributions satisfy this.)
 
 For simplicity, sample from the normal distribution $$N(0,1)$$. The final scheme is
@@ -100,27 +90,37 @@ better than half chance of ending with the larger envelope.
 Extending to Multiple Envelopes
 ---------------------------------
 
-One natural extension to the problem is to assume there are more than 2 envelopes.
+At this point, it's worth considering whether we can take any lessons from this problem.
+The result suggests that even with no information on alternative choices, we can
+potentially use a random action to improve our current standing. However, in real
+life there are usually much more than two possible actions, so this strategy does
+not apply.
+
+This raises an interesting question: what if there are more than $$2$$ envelopes?
 Consider the following formulation.
 
-> There are $$n$$ envelopes, which contain $$A_1 < A_2 < A_3 < \cdots < A_n$$ dollars.
-> The $$A_i$$ are unknown positive real numbers.
+> There are $$n$$ envelopes, which give utilities $$A_1 < A_2 < A_3 < \cdots < A_n$$.
+> The $$A_i$$ are unknown real numbers.
 > You are randomly given an envelope, can look inside, then choose to switch
 > with any other envelope.
 >
-> Give a switching strategy that is more likely to improve your situation than
-> it is to worsen it. (CHECK GRAMMAR)
+> Does there exist a switching strategy that improves your utility more often
+> than it worsens your utility?
 
-(ADD INTUITION EXPLAINING THIS FORMUULATION HERE)
+Given how similar this problem is to the two envelope problem, we should first
+try adapting the current strategy.
+It turns out this strategy still works once modified.
+We still choose whether to swap by sampling from $$N(0,1)$$.
+The only difference is choosing which envelope to switch to. From the opener's
+perspective, every other envelope appears identical. So, if the opener decides to
+swap, he or she should do so at random.
 
-It turns out the previous strategy still works here, even when all other envelopes
-have unknown value. The only difference is which envelope to switch to. By symmetry,
-every other envelope appears identical, so we should choose an envelope to switch with
-by random. The following is an argument to show the improvement chance is higher. (REPHRASE)
-
+This leaves showing the improvement chance is higher than the worsening chance.
+If the algorithm does not swap, the utility is unchanged, so it suffices to analyze
+only situations where we switch envelopes.
 For envelope $$i$$, the chance of switching is $$P[Y \ge A_i]$$.
 The reward drops for $$i-1$$ envelopes, and increases for $$n - i$$
-envelopes. Thus, the chance of improving utility is SWITCH ORDER
+envelopes. Thus, the chance of improving utility
 
 $$
     P[\text{utility rises}] = \sum_{i=1}^n \frac{1}{n} P[Y \ge A_i]\cdot \frac{n-i}{n-1}
@@ -138,7 +138,7 @@ $$
     P[improves] - P[worsens] = \frac{1}{n}\sum_{i=1}^n \frac{n-2i+1}{n-1} P[Y \ge A_i]
 $$
 
-The coefficients (CHECK) go from $$\frac{n-1}{n-1}, \frac{n-3}{n-1}, \ldots, \frac{-(n-3)}{n-1}, \frac{-(n-1)}{n-1}$$.
+The coefficients go from $$\frac{n-1}{n-1}, \frac{n-3}{n-1}, \ldots, \frac{-(n-3)}{n-1}, \frac{-(n-1)}{n-1}$$.
 Since we only care about whether the difference is positive, multiply by $$2$$ to get
 two of each term, then pair terms by matching each coefficient with its negative.
 
@@ -146,10 +146,10 @@ $$
     2(P[improves] - P[worsens]) = \frac{1}{n}\sum_{i=1}^n \frac{n-2i+1}{n-1} (P[Y \ge A_i] - P[Y \ge A_{n-i+1}])
 $$
 
-Consider each term of this summation. When $$i < \frac{n+1}{2}$$, the coefficient
+Consider each term of this summation. For $$i < \frac{n+1}{2}$$, the coefficient
 is positivem and $$A_i < A_{n-i+1}$$. Thus,
-$$P[Y \ge A_i] - P[Y \ge A_{n-i+1}]$$ is also positive, and the entire term is positive.
-When $$i = \frac{n+1}{2}$$, the coefficent is $$0$$. When $$i > \frac{n+1}{2}$$, the
+$$P[Y \ge A_i] - P[Y \ge A_{n-i+1}]$$ is also positive.
+For $$i = \frac{n+1}{2}$$, the coefficent is $$0$$. For $$i > \frac{n+1}{2}$$, the
 coefficient is negative, and $$A_i > A_{n-i_1}$$, so $$P[Y \ge A_i] - P[Y \ge A_{n-i+1}]$$
 is also negative.
 
