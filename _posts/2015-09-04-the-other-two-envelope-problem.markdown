@@ -72,9 +72,12 @@ between values like $$A = 2.3, B = 2.4$$.
 So, how is this strategy extendable? The way the current strategy works is by creating
 a decision boundary based on the amount in the seen envelope.
 The boundary is then applied to the geometric distribution
-with parameter $$p=1/2$$.
+with parameter $$p=1/2$$. Below is an example where the envelope has $$4$$ dollars.
 
-IMAGINE A BEAUTIFUL PICTURE
+<img src="/public/envelope-imgs/geometric.png"
+     alt="Geometric pmf with decision boundary"
+     width="550">
+{: .centered }
 
 To handle arbitrary reals, we should use a continuous probability distribution
 instead. Nothing in the previous logic relies on the distribution being discrete,
@@ -89,7 +92,13 @@ The modified strategy is
 - Sample $$Y$$ from $$N(0,1)$$.
 - If $$Y \ge X$$. switch. Otherwise, do not switch.
 
-IMAGINE ANOTHER BEAUTIFUL PICTURE
+<img src="/public/envelope-imgs/normal.png"
+     alt="Normal pdf with decision boundary"
+     width="550">
+{: .centered }
+
+One possible decision boundary. Here the opened envelope has $$X = 1$$.
+{: .centered }
 
 The proof is also similar.
 For $$A < B$$, $$P(Y \ge A) > P(Y \ge B)$$. This is why the p.d.f. needs to be
