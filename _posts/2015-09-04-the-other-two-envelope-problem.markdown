@@ -4,11 +4,11 @@ title:  "The Other Two Envelope Problem"
 date:   2015-09-04  18:00:00
 ---
 
-There are at least 2 two envelope problems. The first I know of is considerably
-more famous; it has
+The two envelope problem is a famous problem from decision theory, at least
+famous enough to have
 [its own Wikipedia page](https://en.wikipedia.org/wiki/Two_envelopes_problem).
-It's an interesting problem and worth reading, but this is about that problem's
-litte brother, who deserves his own time to shine.
+It's an interesting problem and worth reading, but this post is about that
+problem's litte brother, who deserves his own time to shine.
 
 Here is the formulation.
 
@@ -105,12 +105,14 @@ Extending to Multiple Envelopes
 ---------------------------------
 
 At this point, it's worth considering whether we can take any lessons from this problem.
-The result suggests that even with no information on alternative choices, we could
-use a random action to improve our current standing. It would be really, really nice
-if this was applicable to real life decisions, since we often have very little
-information on the outcomes of different choices.
+If we substitute "given an envelope" with "given an action", and "dollars" with "utility",
+this result suggests that even with no information on alternative choices, we could
+use a random action to improve our current standing.
+In real life, we often have very little
+information on how different actions will play out, so this power to bias
+towards improvement is appealing.
 However, in real life there are usually much more than two possible actions, so
-we should first consider whether this two envelope framework is even valid.
+we should first consider whether the two envelope framework is even valid.
 
 When there are $$n$$ envelopes instead of $$2$$ envelopes, we can no longer
 aim for only the best envelope. The switch could slightly help us, slightly hurt us,
@@ -168,12 +170,12 @@ $$
 Consider each term of this summation.
 
 - For $$i < \frac{n+1}{2}$$, the coefficient
-is positive and $$A_i < A_{n+1-i}$$. Thus,
-$$P[Y \ge A_i] - P[Y \ge A_{n+1-i}]$$ is also positive.
+is positive, and $$A_i < A_{n+1-i}$$, so
+$$P[Y \ge A_i] - P[Y \ge A_{n+1-i}]$$ is positive. The entire term is positive.
 - For $$i = \frac{n+1}{2}$$, the coefficent is $$0$$.
 - For $$i > \frac{n+1}{2}$$, the
 coefficient is negative, and $$A_i > A_{n+1-i}$$, so $$P[Y \ge A_i] - P[Y \ge A_{n+1-i}]$$
-is also negative.
+is negative. The entire term is positive.
 
 Every term in the summation is positive or zero, so the entire sum is positive, and
 the probability of increasing utility is higher than the probability of decreasing
@@ -183,26 +185,26 @@ it. $$\blacksquare$$
 Implications
 ---------------------------
 
-One of the incredibly neat consequences of this puzzle is to show how insiduous
-information leakage can be. Knowing only the value of keeping the current envelope,
-we can still have better than even chances of getting the larger envelope.
+So, now we have a strategy that is very slightly biased towards increasing utility.
+But before trying to implement this in real life, it's worth thinking through
+all the complications.
 
-Unforunately, we cannot argue how much better this performs than random chance
-because $$A$$ and $$B$$ are still chosen through some unknown process. Without
-knownig how $$A$$ and $$B$$ are generated, it is impossible to quantify how well
-this strategy does. (If we knew the distributions $$A$$ and $$B$$ came from, we
-could design our switching scheme to use that information, but that turns the puzzle
-into a plain expected value question.)
+- The values $$A_i$$ are chosen through some unknown process. Although this strategy
+is more likely to end on a larger $$A_j$$, it is impossible to quantify how much
+better your utility will be after the swap. The utility might even go down in expectation.
+Although the chance of improving utility is higher, the potential utility increase
+may be small while the potential utility decrease is large.
+If we had more information about how
+$$A_j$$ are generated, then we could argue this in more detail, but at that point
+this information independent scheme is probably no longer useful.
+- The analysis relies on having a value on the initial action. It is incredibly likely
+that we are just as confused about the value of our current action as we are about
+the values of other actions, which renders the strategy moot.
+- The analysis also relies on starting with an action picked uniformly
+at random out of a pool of possible actions. In reality, this is almost never the case.
+We usually have reasons to choose to act in one way or another, which places a
+non-uniform prior on the initial action. Intuitively, if we are already good at
+making decisions, it is far less likely we can switch to an even better one.
 
-As for real life implications, I unfotunately don't see ways this can help you
-make decisions in real life. It's very tempting to try to fit this into a
-decision theory framework, because the ability to slightly improve
-outcomes given a total information blackout is very appealing. The problem is that
-such a scheme assumes you can quantify your current utility. The more structural
-problem is that the envelope problem relies on having a $$1/2$$ chance of starting
-in a given decision $$A$$. Consider what happens to the analysis when the default decision
-is $$A$$ with probability $$p$$.
-
-$$
-Pr(improve) = somethign
-$$
+So overall, there are no life hacks here, and all we have are surprising, unintuitive results.
+Still, that's
