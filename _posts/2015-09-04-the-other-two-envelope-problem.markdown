@@ -206,5 +206,8 @@ We usually have reasons to choose to act in one way or another, which places a
 non-uniform prior on the initial action. Intuitively, if we are already good at
 making decisions, it is far less likely we can switch to an even better one.
 
-So overall, there are no life hacks here, and all we have are surprising, unintuitive results.
-Still, that's
+So overall, this is not a life hack. All we have is a surprising decision theory
+result, and that's fine too.
+
+(If interested, you can read a paper on this problem [here](http://rspa.royalsocietypublishing.org/content/465/2111/3309).
+I have not read it, so I can't vouch for whether it's a good paper.)
