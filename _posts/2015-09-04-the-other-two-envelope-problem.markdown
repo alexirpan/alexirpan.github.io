@@ -7,14 +7,14 @@ date:   2015-09-04  18:00:00
 The two envelope problem is a famous problem from decision theory, at least
 famous enough to have
 [its own Wikipedia page](https://en.wikipedia.org/wiki/Two_envelopes_problem).
-It's an interesting problem and worth reading, but this post is about that
-problem's litte brother, who deserves his own time to shine.
+It's an interesting problem, but this post is about its less well known
+variation.
 
 Here is the formulation.
 
 > There are two envelopes, one with $$A$$ and one with $$B$$ dollars, $$A \neq B$$.
 > $$A$$ and $$B$$ are
-> unknown distinct positive integers. You are randomly given an envelope,
+> unknown positive integers. You are randomly given an envelope,
 > can look inside, then must choose whether to switch envelopes or not.
 >
 > Does there exists a switching strategy which ends with the larger envelope more than
@@ -76,7 +76,7 @@ with parameter $$p=1/2$$.
 
 IMAGINE A BEAUTIFUL PICTURE
 
-To handle arbitrary reals, we should use a continious probability distribution
+To handle arbitrary reals, we should use a continuous probability distribution
 instead. Nothing in the previous logic relies on the distribution being discrete,
 so we can simply drop in a distribution of our choice. The only requirement we
 need is a strictly positive probability density function over $$(-\infty, \infty)$$
@@ -88,6 +88,8 @@ The modified strategy is
 - Inspect amount $$X$$ inside the envelope.
 - Sample $$Y$$ from $$N(0,1)$$.
 - If $$Y \ge X$$. switch. Otherwise, do not switch.
+
+IMAGINE ANOTHER BEAUTIFUL PICTURE
 
 The proof is also similar.
 For $$A < B$$, $$P(Y \ge A) > P(Y \ge B)$$. This is why the p.d.f. needs to be
@@ -209,5 +211,3 @@ making decisions, it is far less likely we can switch to an even better one.
 So overall, this is not a life hack. All we have is a surprising decision theory
 result, and that's fine too.
 
-(If interested, you can read a paper on this problem [here](http://rspa.royalsocietypublishing.org/content/465/2111/3309).
-I have not read it, so I can't vouch for whether it's a good paper.)
