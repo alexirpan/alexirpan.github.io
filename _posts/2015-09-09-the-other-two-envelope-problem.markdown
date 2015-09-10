@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Other Two Envelope Problem"
-date:   2015-09-04  18:00:00
+date:   2015-09-09  21:44:00
 ---
 
 The two envelope problem is a famous problem from decision theory, at least
@@ -230,3 +230,4 @@ making decisions, it is far less likely we can switch to an even better one.
 So overall, this is not a life hack. All we have is a surprising decision theory
 result, and that's fine too.
 
+(Thanks to the people who helped review earlier drafts.)
