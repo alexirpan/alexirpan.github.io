@@ -72,11 +72,15 @@ between values like $$A = 2.3, B = 2.4$$.
 So, how is this strategy extendable? The way the current strategy works is by creating
 a decision boundary based on the amount in the seen envelope.
 The boundary is then applied to the geometric distribution
-with parameter $$p=1/2$$. Below is an example where the envelope has $$4$$ dollars.
+with parameter $$p=1/2$$.
 
 <img src="/public/envelope-imgs/geometric.png"
      alt="Geometric pmf with decision boundary"
      width="550">
+{: .centered }
+
+Decision boundaries when $$A = 2, B = 4$$. The switching strategy gets an
+advantage when the sampled $$Y$$ lies between the two boundaries.
 {: .centered }
 
 To handle arbitrary reals, we should use a continuous probability distribution
@@ -97,7 +101,8 @@ The modified strategy is
      width="550">
 {: .centered }
 
-One possible decision boundary. Here the opened envelope has $$X = 1$$.
+Decision boundaries when $$A=0.5, B=1.5$$. Again, the switching strategy
+gets an advantage when $$Y$$ falls between $$A$$ and $$B$$.
 {: .centered }
 
 The proof is also similar.
@@ -164,7 +169,12 @@ $$
     P[\text{utility drops}] = \sum_{i=1}^n \frac{1}{n} P[Y \ge A_i]\cdot \frac{i-1}{n-1}
 $$
 
-Now, take the difference and pair up terms with matching $$P[Y \ge A_i]$$ to get
+Envelope $$i$$ has $$n-i$$ envelopes that are better, and envelope $$n-i+1$$ has $$n-i$$ envelopes that are worse.
+Intuitively, every improving term for $$A_i$$ should cancel with a worsening term for $$A_{n-i+1}$$,
+but the improving terms have more weight because the switching probability after
+observing $$A_i$$ is higher. This is formalized below.
+
+Take the difference and pair up terms with matching $$P[Y \ge A_i]$$ to get
 
 $$
     P[\text{improves}] - P[\text{worsens}] = \frac{1}{n}\sum_{i=1}^n \frac{n-2i+1}{n-1} P[Y \ge A_i]

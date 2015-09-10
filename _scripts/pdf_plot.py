@@ -27,11 +27,16 @@ def geometric(p):
     plt.xticks(np.arange(11))
     plt.xlim((-width / 2, 10 + width / 2))
     plt.ylim((0, 0.55))
-    # Decision boundary
+    # Decision boundaries
     plt.axvline(x=4-width/2, color='r')
-    plt.text(4-width/2+0.1, 0.4, r'$Y \,\geq\, 4$', fontsize=16)
-    probs = probs[4:]
-    plt.bar(np.arange(4*width, 11 * width, width), probs, width, align='center', alpha=0.3, color='red')
+    plt.text(4-width/2+0.1, 0.35, r'$Y \,\geq\, 4$', fontsize=16)
+    probs2 = probs[4:]
+    plt.bar(np.arange(4*width, 11 * width, width), probs2, width, align='center', alpha=0.3, color='red')
+
+    plt.axvline(x=2-width/2, color='r')
+    plt.text(2-width/2+0.1, 0.4, r'$Y \,\geq\, 2$', fontsize=16)
+    probs2 = probs[2:]
+    plt.bar(np.arange(2*width, 11 * width, width), probs2, width, align='center', alpha=0.3, color='red')
 
     plt.show()
 
@@ -51,13 +56,21 @@ def std_normal():
     ax = plt.gca()
     ax.fill_between(x, y, facecolor='blue', alpha=0.5)
     # Decision boundary
-    plt.axvline(x=1, color='r')
-    plt.text(1.1, 0.32727, r'$Y \,\geq\, 1$', fontsize=16)
-    pairs = zip(x, y)
-    pairs = filter(lambda p: p[0] >= 1, pairs)
-    x = [p[0] for p in pairs]
-    y = [p[1] for p in pairs]
-    ax.fill_between(x, y, facecolor='red', alpha=0.3)
+    plt.axvline(x=0.5, color='r')
+    plt.text(0.5+0.1, 0.37, r'$Y \,\geq\, 0.5$', fontsize=16)
+    pairs2 = zip(x, y)
+    pairs2 = filter(lambda p: p[0] >= 0.5, pairs2)
+    x2 = [p[0] for p in pairs2]
+    y2 = [p[1] for p in pairs2]
+    ax.fill_between(x2, y2, facecolor='red', alpha=0.3)
+
+    plt.axvline(x=1.5, color='r')
+    plt.text(1.5+0.1, 0.32727, r'$Y \,\geq\, 1.5$', fontsize=16)
+    pairs2 = zip(x, y)
+    pairs2 = filter(lambda p: p[0] >= 1.5, pairs2)
+    x2 = [p[0] for p in pairs2]
+    y2 = [p[1] for p in pairs2]
+    ax.fill_between(x2, y2, facecolor='red', alpha=0.3)
 
     plt.show()
 
