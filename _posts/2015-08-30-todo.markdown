@@ -16,33 +16,37 @@ wouldn't be saying that I'd write a post gushing about a MLP x Doctor Who fan se
 The Short MLP Primer
 ----------------------------------
 
-My Little Pony: Friendship is Magic is a cartoon about pastel colored horses.
+My Little Pony: Friendship is Magic is a cartoon about pastel colored horses doing
+things with other pastel colored horses.
 
-It's surprisingly good. Nice characters, fun jokes, lots of pony puns,
-and real development.
-Usually plots are slice of life stories, but sometimes the Mane 6 (yes that is
-their offcial name) run afoul of
-dragons, manticores, and hydras, forcing them to save the world.
+It's surprisingly good. The characters are well defined and undergo real
+development, the jokes are pretty good, and the plots are both realistic and
+relatable.
+The episodes are usually slice of life stories with faint continuity,
+but occasionally they have adventures inspired by Greek mythology
+where they fight monsters that escaped Tartarus or overthrow totalitarian
+dictators. Yes, really.
 
-This cartoon spawned one of the craziest fandoms in the world, and I'm proudly
-a member.
+The MLP fandom is one of the craziest and most prolific fandoms in the world,
+and I proudly count myself among them.
 
 
 The Short Doctor Who Primer
 ----------------------------------
 
-Doctor Who is a long running show by the BBC. The show celebrated its 50th
-anniversary recently.
+Doctor Who is a long running show by the BBC. I do mean long; the show celebrated
+its 50th anniversary recently.
 
-The eponymous Doctor is a time lord who time travels in a police call box called the TARDiS.
-His age isn't very exact, but it's somewhere over 1000 years old.
-He travels time and space with a companion, who acts as the audience surrogate
-to let the Doctor explain what's going on this episode. Whenever the Doctor is
-about to die, he regenerates into a new form and personality (which is the in-universe
-explanation for whenever the actor changes.)
+The eponymous Doctor is a Time Lord who time travels in the TARDIS, which looks
+like a police call box. Although he looks human, he's somewhere over 1000 years old.
+Whenever he dies, he regenerates into a new form (which is the In-Universe explanation
+for why he can be played by several different actors.)
+Together with a companion (a human who's in on the Doctor's secret), he travels
+through time and space, helping resolve any conflicts he finds along the way.
 
-This show is a British institution, and I have not watched a single episode. All
-my knowledge is from secondhand leakage through crossovers.
+I have not watched a single episode of Doctor Who proper. Everything I know is from
+crossovers and internet fueled osmosis, so I apologize in advance for any
+Doctor Who misrepresentation.
 
 
 So....Why Are There MLP x Doctor Who Crossovers?
@@ -72,16 +76,48 @@ Squeak, along with other members of the fandom, formed a group called Pony In
 A Box Productions, and started planning out an audio play called Doctor Whooves
 Adventures.
 
-Several years later, I started listening to the series, and they stole my heart.
+Several years later, I listened to the series, and it stole my heart. It's
+genuinunely in my favorite works of all time list. It's singlehandly convinced
+me to watch Doctor Who proper, as soon as I can figure out a good time to deal with
+the binge.
 
-Production Values
-----------------------------------
+Part of the reason I love the audio series so much is the shockingly high
+production values, which you normally don't expect out of fanwork.
+Although the audio play is a side project, the group at Pony In A Box holds
+themselves to the same standards as a professional company, and it shows. First,
+the writing staff (led mostly by Squeak) prepares a script. Then, the voice actors
+record their lines. At the same time, the art team creates promotional pictures for
+the eventual Youtube upload.
+Once all the lines are recorded, the sound team comes in, adding background music and
+sound effects. (This is both more important and more time consuming than it sounds.)
 
-For a fan series that people make in their own time, the show has astoundingly
+Overall, every episode is a huge labor of love. The voice actors don't phone it in,
+and the scripts are lean and concise. Unfortunately, it also means each episode takes
+a long time to finish. To date, I've been waiting for the conclusion to Bells of
+Fate (my favorite episode) for over a year. Still, it's coming out soon! Meaning,
+they targeted August of this year and it's already September, but beggars can't
+be choosers and all that.
+
+
+
+Every script goes through heavy editing, then the voice actors say their lines,
+then the sound team adds sound effects and background music, and
 high production values. The voice actors know who their characters are and know
 how they want to portray them. The sound team picks songs that match well and
 include good sound effects, which is a lot harder than it sounds. I wouldn't like
 this series nearly as much without hearing all the nuances that go into the scripts.
+
+Why should people watch this show?
+- Production values put into the show make it feel like profesisonal quality
+- The show uses lots of dry, deadpan humor
+- At the same time, the show isn't afraid to delve into loss, death, the consequences
+of actions. Possible segueway into the show being more Doctor Who like?
+- Characters are acted very well (ties into first point.) Show makes a point of
+having strong female characters. Talk about Twilight actually keeping up with
+the Doctor and getting herself out of trouble as often as the Doctor rescuing here.
+- Overall, it strikes a nice balance between the darker Doctor Who mythos and
+the lighter elements of MLP.
+- (Also the crossover has brilliant construction, OMG.)
 
 The Writing
 ----------------------------------
@@ -89,22 +125,7 @@ The Writing
 Squeak writes good scripts. Pony In A Box
 has other productions, most of which are written by Squeak, and I like those for similar
 reasons. He or she has a dry, subtle sense of humor, and simple conversations reveal
-so many details about the characters. Some samples:
-
-From Daring Do Adventures (she's the pony version of Indiana Jones)
-
-> "I'm fairly sure that's going to come back to haunt us."
->
-> "Eh, we'll cross that burnt bridge once we get there."
-
-From Tales Of A Junk Town Pony Peddler (set in post-apocalpytic wasteland)
-
-> "Girl, you don't have a lick of street smarts about you (CHECK ACTUAL)
-> 
-> "Streetwise? Streetwise?! If *that's* what it means to be streetwise,
-> I'll stay on the sidewalk, thanks! Show some compassion for once!
-
-From Doctor Whooves Adventures
+so many details about the characters.
 
 > "So, now that you've got me [in the TARDIS], I've realized this is completely insane."
 >
@@ -147,6 +168,9 @@ Who from "may watch sometime" to "will watch when I have time" and got me into
 Celtic music (Bells of Fate is themed after a cross between Ireland and the Knights
 of Camelot.) There's a little continuity, but most episodes
 are standalone. Recommended viewing order:
+
+<svg class="song-sample" id="no-diggity" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60" enable-background="new 0 0 100 100" xml:space="preserve" style="fill: rgb(102, 102, 102); height: 25px; width: 21px;"><g style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;"><polygon points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  "></polygon><path d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21"></path><path d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z"></path></g></svg>`
+
 
 Number 12 Part 1 + 2 (character introduction)
 Bells of Fate (yeah I've gushed about this enough)
