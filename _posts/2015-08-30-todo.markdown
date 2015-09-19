@@ -88,35 +88,49 @@ of content, and started uploading radio plays under the title "Doctor Whooves Ad
 And now we come to *me*. Around two years ago, I found out about the series, and
 decided to listen to a few episodes. At first, it was just entertaining, but at
 some point I realized Pony in a Box has stolen my heart, locked it away and threw away
-the key, and I didn't even care. I love this series so, so much.
-It's genuinunely in my favorite works of all time list, and it's singlehandly convinced
-me to watch Doctor Who, as soon as I find time for the binge.
+the key, and I didn't even care. I love this series so, so much. I actually find
+it difficult to find things I don't like about the radio play. The characters
+are well done, the soundtrack fits well, even the static image on the Youtube
+uploads are good. Doctor Whooves Adventures is in my favorite works of all time list
+and singlehandedly convinced me to watch Doctor Who, as soon as I find time for the
+binge.
 
-Part of the reason I love the audio series so much is the shockingly high
-production values, which you normally don't expect out of fanwork.
-Although the audio play is a side project, the group at Pony In A Box holds
-themselves to the same standards as a professional company, and it shows. First,
-the writing staff (led mostly by Squeak) prepares a script. Then, the voice actors
+
+Why Should You Watch This Show?
+--------------------------------
+It's funny when it feels like it but isn't afraid to be sad.
+The characters are not only well written but well acted. It mixes the two canons
+well: the overarching themes of death and loss from Doctor Who are tempered
+by themes of optimisim and conviction frmo MLP. Yet despite taking elements
+from both, Doctor Whooves Adventures is approachable to people outside
+either fandom, and you don't need to know either MLP or Doctor Who to
+enjoy this series.
+
+Below, I'm going to repeat the above, but in many, many more words. Let's get to it!
+
+
+Production Values
+-----------------------------
+
+Normally, you don't expect fan creations to go through much production, which
+makes the effort put into Doctor Whooves Adventures all the more surprising.
+The group at Pony In A Box holds
+themselves to a professional standard, and it shows. First,
+the writing staff (led by Squeak) prepares a script. Then, the voice actors
 record their lines. At the same time, the art team creates promotional pictures for
 the eventual Youtube upload.
 Once all the lines are recorded, the sound team comes in, adding background music and
-sound effects. (This is both more important and more time consuming than it sounds.)
-
-Overall, every episode is a huge labor of love. The voice actors don't phone it in,
-and the scripts are lean and concise. Unfortunately, it also means each episode takes
+sound effects. (As someone who has done very minor movie editing, this is both
+more important and more time consuming than it sounds.)
+Every episode is a huge labor of love, and that means lean, concise scripts
+and real emotional delivery.
+Unfortunately, it also means each episode takes
 a long time to finish. To date, I've been waiting for the conclusion to Bells of
 Fate (my favorite episode) for over a year. Still, it's coming out soon! Meaning,
-they targeted August of this year and it's already September, but beggars can't
-be choosers and all that.
+they targeted August of this year and it's already September...but it is happening
+and I can't begrudge the team too much because I know how long these things can take.
 
 
-
-Every script goes through heavy editing, then the voice actors say their lines,
-then the sound team adds sound effects and background music, and
-high production values. The voice actors know who their characters are and know
-how they want to portray them. The sound team picks songs that match well and
-include good sound effects, which is a lot harder than it sounds. I wouldn't like
-this series nearly as much without hearing all the nuances that go into the scripts.
 
 Why should people watch this show?
 - Production values put into the show make it feel like profesisonal quality
@@ -180,7 +194,6 @@ Celtic music (Bells of Fate is themed after a cross between Ireland and the Knig
 of Camelot.) There's a little continuity, but most episodes
 are standalone. Recommended viewing order:
 
-<svg class="song-sample" id="no-diggity" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60" enable-background="new 0 0 100 100" xml:space="preserve" style="fill: rgb(102, 102, 102); height: 25px; width: 21px;"><g style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;"><polygon points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  "></polygon><path d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21"></path><path d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z"></path></g></svg>`
 
 
 Number 12 Part 1 + 2 (character introduction)
