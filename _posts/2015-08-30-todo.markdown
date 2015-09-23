@@ -78,7 +78,11 @@ to David Tennant's,
 the then current Doctor's actor. He also had a cutie mark of an hourglass,
 meaning his special talent was related to *time.*
 
-(two pictures)
+![Comparison of the Doctors](/public/doc-who-adv/comparison.jpg)
+{: .centered }
+
+Left: the pony. Right: the human. Honestly, not a slam dunk case.
+{: .centered }
 
 When you combine those two details with the craziness of the MLP fandom,
 there's only one reasonable outcome.
@@ -87,8 +91,12 @@ and to this day he's one of the most popular fan characters. There's tons
 of fanart and fanfic, and at least five currently running audio/comic
 series.
 
-(the awesome fanart picture)
+![Companions of Doctor Whooves](/public/doc-who-adv/companions.png)
+{: .centered }
 
+Companions from currently running audio plays. From left to right: Tick Tock,
+Twilight, Trixie, Roseluck, Derpy, Doctor Whooves. By Lilla Dessert.
+{: .centered }
 
 The Adventure Begins
 ---------------------------
@@ -147,8 +155,9 @@ an excerpt from "Bells of Fate", my favorite episode. Although I've provided the
 transcript, I recommend listening to the audio instead - I can't convey the delivery
 any other way.
 
-(Mayhew segment)
+<audio src="/public/doc-who-adv/mayhew.mp3" controls></audio>
 
+TRANSCRIPT HERE
 
 Unfortunately, it also means each episode takes
 a long time to finish. I've been waiting for the conclusion to Bells of
@@ -167,11 +176,11 @@ Because the writers can trust the voice actors, every line can focus on driving
 the plot forward without sacrificing characterization.
 
 Again, I recommended listening to the audio over reading the transcript. From
-"Chords of Chaos":
+the start of "Wrong Way Backwards"
 
-> "So, now that you've got me [in the TARDIS], I've realized this is completely insane."
->
-> "I've been at it so long I'd stopped noticing."
+<audio src="/public/doc-who-adv/wwb_start.mp3" controls></audio>
+
+TRANSCRIPT HERE.
 
 And although there's plenty of deadpan humor to go around, the writers aren't
 afraid to get heartwrenching.
@@ -240,7 +249,7 @@ Until next time. In the words of the good Doctor himself,
 {: .centered }
 
 
-Mayhew segment
+Move this transcript to the appropriate spot.
 
 Let's begin. The history of the green isles, and the island of clover in particular
 in the year 517 there was a great exodus from trottingham. Many ships
@@ -258,4 +267,3 @@ But among them as a foal. His name was Mayhew. Mayhew was tiny and undernourishe
 from a life under the dark, his mother held him in the hull of their ship, huddled and afriad.
 AS they sailed, fortunately, the water was smooth form
 
-<video autoplay=false controls="yes" src="/public/doc-who-adv/mayhew.mp3"> </video>
