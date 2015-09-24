@@ -87,26 +87,27 @@ Left: the pony. Right: the human. Honestly, not a slam dunk case.
 When you combine those two details with the craziness of the MLP fandom,
 there's only one reasonable outcome.
 Fans quickly christened him  "Doctor Whooves"
-and to this day he's one of the most popular fan characters. There's tons
-of fanart and fanfic, and at least five currently running audio/comic
-series.
+and to this day he's one of the most popular fan characters.
 
 ![Companions of Doctor Whooves](/public/doc-who-adv/companions.png)
 {: .centered }
 
-Companions from currently running audio plays. From left to right: Tick Tock,
-Twilight, Trixie, Roseluck, Derpy, Doctor Whooves. By Lilla Dessert.
+The companions from just the audio plays.
+Left to right: Tick Tock, Twilight, Trixie, Roseluck, Derpy, Doctor Whooves.
+Include fanfic and you might as well add the whole cast.
+(By Lilla Dessert.)
 {: .centered }
 
 The Adventure Begins
 ---------------------------
 
-Among those fanfics was one titled "Number 12", by SqueakAnon. (The name
+Among the sea of fan content was the fanfic "Number 12", by SqueakAnon. (The name
 is accurate. Squeak's gender and real name are both unknown.)
 
 Squeak's take was that Doctor Whooves was the 12th Doctor (the show
 was on the 11th at the moment). The story starts with the TARDIS crashing into
-Twilight's home, and ends with Twilight becoming the Doctor's companion.
+Twilight's home, and ends with Twilight becoming the Doctor's companion. It was
+well received, and that was that.
 
 A while later, Sqeuak decided to take it one step further. He or she contacted other
 members of the fandom, and formed Pony In A Box Productions. Their mission:
@@ -154,12 +155,8 @@ Every episode is a huge labor of love, and it shows in the end product. Here's
 an excerpt showing this off. It's from "Bells of Fate" (my favorite episode),
 and talks about the founding of the Green Isles, an Irish inspired kingdom
 that's isolated from the rest of the world.
-I highly recommend listening to the audio over reading the transcript. The power
-comes from the delivery and the soundtrack, not the script.
 
 <audio src="/public/doc-who-adv/mayhewfull.mp3" controls></audio>
-
-TRANSCRIPT HERE
 
 Unfortunately, all that production means each episode takes
 a long time to finish. I've been waiting for the conclusion to Bells of
@@ -194,11 +191,10 @@ the start of "Wrong Way Backwards"
 
 <audio src="/public/doc-who-adv/wwb_start.mp3" controls></audio>
 
-TRANSCRIPT HERE.
-
 Although the tone is generally light, one of the running themes is to have
 ponies be haunted by tragedies from their past, and to struggle in moving on.
 
+<audio src="/public/doc-who-adv/lunarrepublic.mp3" controls></audio>
 (Penny Dreadful, or excerpt from Number 12, ending of Bells of Fate?)
 
 In poorly written stories, it feels like plots happen because someone willed it to
@@ -255,32 +251,3 @@ Until next time. In the words of the good Doctor himself,
 > "Onwards and upwards!"
 {: .centered }
 
-
-Move this transcript to the appropriate spot.
-
-Let's begin. The history of the green isles, and the island of clover in particular
-in the year 517 there was a great exodus from trottingham. Many ships
-headin towards Canterlot in efforst tos escape seom wild magic that threatened the land.
-The blight stretched from the shored of Hoofany to the fertile cesenccet of Glyphmakr.
-Ponies, zebras and griffons alike filled its hull as it crossed the
-
-safer shores. The air filled witih whhisperes of what was causign the strange, dark occurrences,
-the birds would stop singing, farm animals would beocme resless, crops would die, and
-ponies would go missing. It got to the point where no one could even leave their homes
-or tend to their fields. So as they sailed across the sea, hoping for somewhere
-safe, they dared to wish that such evil would be left behind, They were wrong.
-
-But among them as a foal. His name was Mayhew. Mayhew was tiny and undernourished
-from a life under the dark, his mother held him in the hull of their ship, huddled and afriad.
-AS they sailed, fortunately, the water was smooth form
-
-<button
-    class="spoiler-control"
-    title="Click to show transcript"
-    toggle1="Show Transcript"
-    toggle2="Hide Transcript">
-</button>
-{: .centered }
-
-Testing
-{: .hidden }
