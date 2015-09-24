@@ -268,3 +268,14 @@ strong {
     text-align: center;
 }
 
+.hidden {
+    display: none;
+}
+
+.shown {
+    padding-left: $spacing-unit;
+}
+
+audio.player {
+    width: 66%;
+}
