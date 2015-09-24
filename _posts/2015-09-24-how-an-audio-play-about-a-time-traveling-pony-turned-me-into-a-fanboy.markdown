@@ -214,7 +214,8 @@ Sure, maybe that isn't realistic, but who says it has to be?
 Parting Remarks
 -----------------------------
 
-If you do decided to listen to the series, I recommend listening in episode order.
+If you do decided to listen to the series, you can do so [here.](http://ponyinabox.com/shows/doctor-whooves)
+I recommend listening in episode order.
 Should you get bored, each story arc is only 2-3 episodes long, and there's little continuity
 between them, so you're free to jump to the better episodes. Here's my short list, with
 the standard your mileage may vary caveat.
