@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How An Audio Play About a Time Travelling Pony Turned Me Into a Fanboy"
+title:  "How An Audio Play About a Time Traveling Pony Turned Me Into a Fanboy"
 date:   2015-08-30 00:00:00
 ---
 
@@ -29,14 +29,14 @@ My Little Pony: Friendship is Magic is a cartoon about pastel colored horses liv
 lives with other pastel colored horses.
 
 The main horse (okay, pony) is Twilight
-Sparkle, a unicorn prodigy who's incredibly smart and hard working. However,
-she's also a bit socially inept, and prone to worrying about everything too much.
+Sparkle, a unicorn prodigy. She's incredibly smart and hard working, but
+she's also a bit socially inept, and is prone to freaking out over small details.
 
 It's surprisingly good. Although it takes a while to warm up to it, once you like the
 characters the show just clicks and becomes a joy to watch.
 Friendship is Magic starts with Twilight saving the world from eternal darkness, then shifts to
-slice of life. On rare occasions, it shifts back to adventure, and the main cast have to fight monsters
-that escaped Tartarus, or overthrow communistic cults, or save kingdoms from
+slice of life. On rare occasions, it shifts back to adventure, where the main cast have to fight monsters
+that escaped Tartarus, overthrow communistic cults, and save kingdoms from
 totalitarian dictators.
 
 Yes, really. All of that is canon.
@@ -53,11 +53,11 @@ Everything I know about the show is from Internet osmosis. I'll say what I know,
 and apologize in advance for any Doctor Who misrepresentation.
 (So to any Whovians reading this: please don't kill me.)
 
-Doctor Who is a long running show by the BBC. I do mean long; the first episode
+Doctor Who is a long running show by the BBC. I do mean long. The first episode
 aired over 50 years ago.
 
-The eponymous Doctor is a Time Lord who time travels in the TARDIS, which looks like
-a London police box.
+The eponymous Doctor is a Time Lord who time travels in the TARDIS, which takes the
+appearance of a London police box.
 Although he looks human, he's somewhere around 1000 years old.
 Whenever he dies, he regenerates into a new form and personality, which keeps the
 show fresh. (That's the in-universe explanation. In reality, it's a way to change
@@ -95,7 +95,7 @@ and to this day he's one of the most popular fan characters.
 The companions from just the audio plays.
 Left to right: Tick Tock, Twilight, Trixie, Roseluck, Derpy, Doctor Whooves.
 Include fanfic and you might as well add the whole cast.
-(By Lilla Dessert.)
+(By [Lilla Dessert.](http://lilladessert.deviantart.com/art/WMCMITM-Companion-Ver-2-546658058))
 {: .centered }
 
 The Adventure Begins
@@ -156,7 +156,9 @@ an excerpt showing this off. It's from "Bells of Fate" (my favorite episode),
 and talks about the founding of the Green Isles, an Irish inspired kingdom
 that's isolated from the rest of the world.
 
-<audio src="/public/doc-who-adv/mayhewfull.mp3" controls></audio>
+<div class="centered">
+    <audio class="player" src="/public/doc-who-adv/mayhewfull.mp3" controls></audio>
+</div>
 
 Unfortunately, all that production means each episode takes
 a long time to finish. I've been waiting for the conclusion to Bells of
@@ -189,13 +191,16 @@ It's also chock full of dry, deadpan humor.
 Again, I recommended listening to the audio over reading the transcript. From
 the start of "Wrong Way Backwards"
 
-<audio src="/public/doc-who-adv/wwb_start.mp3" controls></audio>
+<div class="centered">
+    <audio class="player" src="/public/doc-who-adv/wwb_start.mp3" controls></audio>
+</div>
 
 Although the tone is generally light, one of the running themes is to have
 ponies be haunted by tragedies from their past, and to struggle in moving on.
 
-<audio src="/public/doc-who-adv/lunarrepublic.mp3" controls></audio>
-(Penny Dreadful, or excerpt from Number 12, ending of Bells of Fate?)
+<div class="centered">
+    <audio class="player" src="/public/doc-who-adv/lunarrepublic.mp3" controls></audio>
+</div>
 
 In poorly written stories, it feels like plots happen because someone willed it to
 happen. In this series, it's more like the writers drop a seed, and everything happens
@@ -221,12 +226,14 @@ music.)
 after listening to the short Cell Mates, but the story is getting told out of
 order anyways. You'll be as confused as the rest of us whether you've seen the
 episodes in order or not.
-- Wrong Way Backwards Parts 1 + 2 + 3 + 1 + 2 + 3. You'll see what I mean. Timey wimey,
-wibbly wobbly, and all around excellent. This episode's construction is
-the most impressive, but it's admittedly quite long.
+- Wrong Way Backwards Parts 1 + 2 + 3, then 1 + 2 + 3 to fill the gaps.
+You'll see what I mean. Timey wimey,
+wibbly wobbly, and all around fun. This episode's construction is
+the most impressive, but it's also the longest by far, especially if you listen to
+both sides.
 
 The remaining episodes (Shadows of the Lunar Republic, Chords of Chaos,
-Pony of the Opera) are fun, but not as strong as the rest.
+Pony of the Opera) are ranked similarly. They're fun, but not as strong as the rest.
 
 
 \*\*\*
