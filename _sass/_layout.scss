@@ -268,3 +268,10 @@ strong {
     text-align: center;
 }
 
+.hidden {
+    display: none;
+}
+
+.shown {
+    padding-left: $spacing-unit;
+}

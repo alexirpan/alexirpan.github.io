@@ -274,3 +274,13 @@ But among them as a foal. His name was Mayhew. Mayhew was tiny and undernourishe
 from a life under the dark, his mother held him in the hull of their ship, huddled and afriad.
 AS they sailed, fortunately, the water was smooth form
 
+<button
+    class="spoiler-control"
+    title="Click to show transcript"
+    toggle1="Show Transcript"
+    toggle2="Hide Transcript">
+</button>
+{: .centered }
+
+Testing
+{: .hidden }
