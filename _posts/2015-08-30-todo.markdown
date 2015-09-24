@@ -151,18 +151,20 @@ more important and more time consuming than it sounds.)
 At the same time, the art team creates promotional pictures for
 the eventual Youtube upload.
 Every episode is a huge labor of love, and it shows in the end product. Here's
-an excerpt from "Bells of Fate", my favorite episode. Although I've provided the
-transcript, I recommend listening to the audio instead - I can't convey the delivery
-any other way.
+an excerpt showing this off. It's from "Bells of Fate" (my favorite episode),
+and talks about the founding of the Green Isles, an Irish inspired kingdom
+that's isolated from the rest of the world.
+I highly recommend listening to the audio over reading the transcript. The power
+comes from the delivery and the soundtrack, not the script.
 
-<audio src="/public/doc-who-adv/mayhew.mp3" controls></audio>
+<audio src="/public/doc-who-adv/mayhewfull.mp3" controls></audio>
 
 TRANSCRIPT HERE
 
-Unfortunately, it also means each episode takes
+Unfortunately, all that production means each episode takes
 a long time to finish. I've been waiting for the conclusion to Bells of
 Fate for over a year. Still, it's coming out soon! Meaning,
-they targeted August of this year and it's already September...but it is happening
+they targeted August of this year and it's the end of September...but it is happening
 and I can't begrudge the team too much because I know how long these things can take.
 
 
@@ -175,6 +177,18 @@ more than the words themselves.
 Because the writers can trust the voice actors, every line can focus on driving
 the plot forward without sacrificing characterization.
 
+The show makes a point of having strong female
+characters and a gender balanced cast. (This is true of most MLP fanwork. When a
+fandom grows in open defiance of gender stereotypes, people pay a lot of attention
+to avoiding them. It's a beautiful part of the fandom.)
+Twilight's a fantastic companion; as one of the smartest ponies in MLP canon,
+she might be the only character that can keep up with the Doctor. She
+solves problems and gets herself out of trouble almost as often as the Doctor does,
+and although the Doctor knows more about the universe than she ever will, Twilight is the one
+who knows the most about the pony-filled world the Doctor landed in
+letting them teach and get taught in turn.
+
+It's also chock full of dry, deadpan humor.
 Again, I recommended listening to the audio over reading the transcript. From
 the start of "Wrong Way Backwards"
 
@@ -182,21 +196,10 @@ the start of "Wrong Way Backwards"
 
 TRANSCRIPT HERE.
 
-And although there's plenty of deadpan humor to go around, the writers aren't
-afraid to get heartwrenching.
+Although the tone is generally light, one of the running themes is to have
+ponies be haunted by tragedies from their past, and to struggle in moving on.
 
 (Penny Dreadful, or excerpt from Number 12, ending of Bells of Fate?)
-
-Another strength of the writing is that the show makes a point of having strong female
-characters and a gender balanced cast. (Aside: this is true of most MLP fanwork. When a
-fandom grows in open defiance of gender stereotypes, people pay a lot of attention
-to portraying gender and sexuality realistically. It's a beautiful part of the fandom.)
-Twilight's a fantastic companion; as one of the smartest ponies in MLP canon,
-she's probably the only character that can keep up with the Doctor. She
-solves problems and gets herself out of trouble almost as often as the Doctor does,
-and although the Doctor knows much more than she ever will, Twilight is still the one
-who knows the most about the world of My Little Pony, letting them teach and get taught
-in turn.
 
 In poorly written stories, it feels like plots happen because someone willed it to
 happen. In this series, it's more like the writers drop a seed, and everything happens
@@ -210,17 +213,18 @@ Parting Remarks
 -----------------------------
 
 If you do decided to listen to the series, I recommend listening in episode order.
-However, each story arc is only 2-3 episodes long, and there's very little continuity
-between them, so you're free to jump around.
-If an episode isn't working for you, here's my short list.
+However, each story arc is only 2-3 episodes long, and there's little continuity
+between them, so you're free to jump around. Here's my short list.
 
 - Number 12 Part 1 + 2. You absolutely need to start here, no questions. It's not
 the best episode, but this introduces the main cast, so it's unskippable.
 - Bells of Fate. My favorite episode. Great mythology influences, and the two
-plots tie together elegantly. Fun fact: this episode actually got me into Irish
-music.
-- Rhapsody in Blue Box. Watch the short Cell Mates first. Tugs at the heartstrings more
-than any other.
+plots tie together elegantly. (Fun fact: this episode actually got me into Irish
+music.)
+- Rhapsody in Blue Box. Tugs at the heartstrings more than any other. May be better
+after listening to the short Cell Mates, but the story is getting told out of
+order anyways. You'll be as confused as the rest of us whether you've seen the
+episodes in order or not.
 - Wrong Way Backwards Parts 1 + 2 + 3 + 1 + 2 + 3. You'll see what I mean. Timey wimey,
 wibbly wobbly, and all around excellent. This episode's construction is
 the most impressive, but it's admittedly quite long.
@@ -232,18 +236,21 @@ Pony of the Opera) are fun, but not as strong as the rest.
 \*\*\*
 {: .centered }
 
-Maybe my love for this series will fade. (But it's hard to see that happening.)
+It's so strange to realize that five years ago, I was still in high school. So much
+has changed since then. I'd like to think I got a bit smarter, but odds are
+I'm still just as dumb and don't know it yet.
 
+In five more years? Who knows? Maybe my love for this series will fade. (But it's hard to see that happening.)
 Maybe Doctor Whooves Adventures will die a slow death, as the creators lose interest.
 (But I hope that never comes to pass.)
-
 The only thing I'm certain about is that I'll never be certain about how my
 tastes will shift. The best I can do is to stay open to change, and to keep
 reaching.
 
 Until next time. In the words of the good Doctor himself,
 
-(Definitely add some pictures here)
+![Series Logo](/public/doc-who-adv/dwa_512.jpg)
+{: .centered }
 
 > "Onwards and upwards!"
 {: .centered }
