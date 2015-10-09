@@ -4,104 +4,148 @@ title:  "A Modest Proposal for The Humor Formula"
 date:   2015-10-10 01:24:00 -0800
 ---
 
-*Disclaimer: Not very polished, bullshitted on the fly, mostly for fun.*
+*DISCLAIMER*
 
-Abstract: We claim discovery of a formula that computes the humor level of
-a joke $$J$$. Although we do not have a formal proof, we suggest a few examples
-that fall in line with the formula, and hope this inspires further research into this area.
+*Wrote this only to remind myself to keep practicing my writing. Persons
+criticizing the polish will be prosecuted; persons pointing out the copious
+bullshit will be banished; persons noticing this disclaimer's unoriginality
+will be shot.*
 
-Update KaTEX
+*By Order of the Author, Per G.G., Chief of Ordnance*
 
-Notation:
 
-Let $$J$$ be a joke from the set of all jokes, and let $$P$$ be a person
-from the set of all people. The humor function $$H: J \times P \rightarrow R$$
-is defined as the function such that $$H(j, p)$$ is how much person $$p$$ enjoys joke
-$$j$$.
+Abstract
+---------------------------------
 
-We feel that although it's important to lay down the ground notation, it gets in
-the way of the key ideas, and therefore will transition into English in a bid for
-better understanding. However, for the rest of the proposal, please remember
-that when we say "this person finds this joke funny", we actually mean
-"For this choice of $$p$$ and $$j$$, $$H(p, j)$$ is especially large."
+Humor and jokes have experienced a great surge in popularity, which can attributed
+to the creation of more efficient delivery systems like the Internet. However,
+the field of humor analysis is still notably underdeveloped.
+We posit a hypothesis on a formula describing the humor of a joke as a function
+of the speaker, the joke's content, and the listener, in the hopes that this
+will prompt society to think about why it considers something to be funny, instead
+of taking it as a given. As evidence, we use material from professional comedians,
+and math puns that have made the rounds in  mathematician subculture folklore.
 
-Why Analyze Jokes? Doesn't Explaining a Joke Sap Away All Its Humor?
+
+Clearing Misconceptions
+----------------------------------
+
+One common criticism against the field of humor analysis is that explaining a joke
+ruins the joke, which renders the analysis of humor as harmful. This misconception
+is actively harmful and often forms the seeds of most criticism against the field,
+so we would like to briefly explain away these worries.
+
+First of all, humor analysis is the study of humor *in general.* This involves
+making grand, sweeping statements about why we consider jokes to be funny, without
+leaking or exposing any information about the jokes themselves, and this indirect
+analysis is what lets us make progress while minimizing joke destruction.
+
+Secondly, it is arguable whether explaining a joke is harmful at all. Suppose
+a listener hears a joke, gets it immediately, then hears an explanation of the joke.
+That listener's enjoyment is not ruined by hearing that explanation, because the listener
+already has an implicit representation of that explanation in their head. Now,
+suppose a listener hears a joke, and does not get it. Then that listener has so
+far received zero entertainment from the joke, and hearing an explanation can only
+increase that entertainment. And in some rare cases, explaining the joke can itself
+be a joke. This is known as *meta humor*, and is outside the purview of this
+proposal.
+
+We admit that this argument is informal, and that there are other complicating
+factors, most notably ones that arise in group settings. Frankly, we do not
+give a shit, and will proceed with the analysis regardless.
+
+
+Notation
+-----------------------------------
+
+Although our analysis is not especially rigorous, we nevertheless will include
+some notation to make this appear more legitimate.
+
+$$J$$ will represent the set of all jokes, and $$j$$ will represent a joke
+from that set. $$P$$ will represent the set of all people, and $$p$$ represents
+a person from that set. $$H: P \times J \times P \rightarrow R$$ denotes the humor function.
+We assume humor depends on three arguments: the person saying the joke, the
+joke's content, and the person hearing the joke. This will often be written
+as $$H(p_s, j, p_h)$$, where the subscripts help identify between saying and
+hearing. The value of this function is a real value, denoting how funny $$p_h$$
+finds joke $$j$$ when it is delivered by $$p_s$$.
+
+Lest people worry about drowning in notation, we endeavor to explain all
+further equations with English as well, and only introduce it here to formalize
+the assumptions we are making.
+
+
+Proposed Humor Formula
 ------------------------------------
 
-Yes, it does.
+We propose that humor is the product of three factors: the inherent funniness
+of the joke and speaker, the amount of education needed to understand the joke.
+and the amount of sleep deprivation the listener has.
 
-Frankly, I have no sense of humor, and thus don't give a shit.
+More formally, let $$I(j, p_s)$$ be the inherent humor joke $$j$$ has
+when delivered by $$p_s$$, $$E(j)$$ be the amount of education needed,
+and $$S(p_h)$$ be the amount of sleep deprivation the listener
+has. Then
 
-Proposed Formula
-------------------------------------
+$$
+    humor = H(p_s, j, p_h) = I(j,p)E(j)S(p_h)
+$$
 
-humor = ((amount of background/context required to understand the joke) * (inherent
-funniness of the joke)) * (amount fo sleep deprivation)
-{: .centered }
+We spend the rest of the post explaining the reasoning behind these terms.
 
-The notation $$1_{X}$$ is borrowed from indicator random variables, and means
-"$$1$$ if $$X$$ is true and $$0$$ otherwise."  So for example,
-$$1_{2=2}$$ equals $$1$$.
-
-I'll spend the rest of this post explaining why this formula makes sense.
 
 Inherent Humor Term
 -----------------------------------
 
-Every joke has some baseline level of humor.
-
-This may be controversial. Clearly, different people will like a given joke more
+Clearly, different people will like a given joke more
 or less, and given the wide variability, it doesn't seem reasonable to talk about
-inherent humor. However, I claim professional comedians are a counterexample.
-There are people who make a living doing stand-up or creating comedy sketches,
-and the reason they can do so is because most of their jokes have high
-inherent baselines.
+inherent humor. However, we claim professional comedians are a counterexample
+to this line of reasoning. These people make a living doing stand-up or creating
+comedy sketches that a wide range of people enjoy. They can do this because
+their delivery is strong enough to give a good starting funniness.
 
-Note that a joke's baseline humor depends on many factors, including the content,
-the complexity/cleverness, the delivery, and so on.
-For this analysis, we'll assume these factors are all rolled into the humor term.
+A joke is also inherently funny when it is especially clever. For example,
+song parodies by Weird Al are usually considered funny because he creates an
+entire new set of lyrics that parodies the old ones. Thus, the inhereneet
+humor must depends on both the deliverer and the joke itself.
 
 
-The Background Term
+Education Term
 ------------------------------------
-
-It's a well observed effect across several disciplines that highly topical,
-obscure jokes can be carried by their exclusivity.
 
 (PhD comics image)
 
-For instance, consider the following examples from math.
+Consider the following examples from math.
 
 > Q: "What's purple and commutes?"
 > A: "An abelian grape!"
 
-> Q: "What's sour, yellow, and equivalent to the axiom of choice?"
+> Q: "What's sour, yellow, and equivalent to the Axiom of Choice?"
 > A: "Zorn's lemon!"
 
-The first joke requires abstract algebra since it's a play on "abelian group".
-The second requires foundational mathematics since it's a play on "Zorn's lemma".
-**Both of these jokes have terrible baselines, but because they use obscure concepts,
-they still demand a chuckle from people "in the know"** This becomes especially
-apparent in the following joke
+The first joke requires knowing abstract algebra, since it is a play on "abelian group".
+The second requires foundational mathematics, as it is a play on "Zorn's lemma".
+Both of these jokes have terrible inherent humor, but because they use obscure concepts,
+they still demand a chuckle from people "in the know". We call this
+*privileged shared knowledge*. People with privileged knowledge know something that
+the average person does not know. The key insight is that when someone delivers a joke,
+it is implied that person knows the background required to understand the joke as well.
+Thus, listeners "in the know have privileged shared knowledge with the speaker.
+This triggers deep seated tribal mentality, where the tribe is everyone who knows
+abstract algebra, or everyone who knows about the Zorn's Lemma. Once included in this
+tribe, the listener gives the spekaer much more leeway, and will consider what the
+speaker says to be considerably funnier than it actually is. (Note this also
+explains why people who do not know the background do not enjoy the joke. Because
+they do not have the privileged shared knowledge, they are excluded from the tribe for
+that joke, and therefore rely only on the inherent humor. Usually, the
+inherent humor of jokes like this is abysmal.
 
-> "A server set up with RAID 5 walks into a bar..."
 
-I don't even have to finish this sentence, because readers who know what RAID 5
-is will immediately give this joke a free pass. RAID 5! I understood that
-reference! And thus, you realize your sense of humor is forever ruined.
-
-These examples have been focused towards educational knowledge, which may be breeding
-some misconceptions. When I say background, I mean any level of privileged knowledge
-that not everyone has. Consider internet memes. If someone suddenly shouts
-"ALWAYS, I WANNA BE WITH YOU, AND MAKE BELIEVE WITH YOU", someone not in the know
-is going to be very confused. However, someone who's spent enough time on the
-Internet to know the reference is going to continue with "AND LIVE IN HARMONY
-HARMONY OH LOOOOVE". (This is most obvious in Reddit threads; in real life,
-people have enough restraint to leave the joke alone.)
-
-Note that we can't roll this into the baseline humor term because it depends on the
-joke's receiver, and we assume the baseline humor depends only on the
-speaker and the joke itself.
+(As a side note, this observation seems naturally extendable to internet memes
+and in-jokes. For memes, the privileged shared information is knowledge of the
+meme itself. For in-jokes, the privileged shared information is the context in which
+the in-joke was first created. We leave finding examples of this to the reader,
+but suggest Reddit threads as a good starting point.)
 
 
 Combining These Two Terms
