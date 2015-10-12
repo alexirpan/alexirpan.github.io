@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Proposition For The Formula to Humor"
-date:   2015-10-10 01:24:00 -0800
+date:   2015-10-11 22:04:00 -0800
 ---
 
 *DISCLAIMER*
