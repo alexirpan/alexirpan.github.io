@@ -157,7 +157,7 @@ As further evidence, consider this especially extreme case.
 The first joke is slightly funny on its own, and is further elevated because
 it mentions "mathematicians" and "theorems" in passing. However,
 the second joke has no inherent humor at all. It is only funny if you
-know a little bit of category theory (link). Then, as if by magic, it suddenly
+know a little bit of category theory. [\[3\]](#cite3) Then, as if by magic, it suddenly
 becomes humorous. Not only do you need to
 know category theory, you need to know that there is an old joke that
 mathematicians are coffee -> theorem converters. By this point, anyone
@@ -221,3 +221,4 @@ References
 
 1. <a name="cite1" href="http://tvtropes.org/pmwiki/pmwiki.php/Main/DontExplainTheJoke">Don't Explain the Joke - TVTropes</a>
 2. <a name="cite2" href="http://www.phdcomics.com/comics/archive.php?comicid=868">PhD Comics - Your Shrinking Sense of Humor</a>
+3. <a name="cite3" href="http://math.stackexchange.com/questions/900390/joke-explanation-a-comathematician-is-a-device-for-turning-cotheorems-into-ffe">Joke Explanation of Comathematicians - Math StackExchange</a>
