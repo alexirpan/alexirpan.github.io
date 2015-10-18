@@ -6,22 +6,28 @@ date:   2015-10-16 22:04:00 -0800
 
 (Very minor spoilers for *Friendship Games*, read at your own risk.)
 
-The third Equestria Girls movie (the high school spinoff for Friendship
-is Magic) came out recently. Honestly, it wasn't that good. It was definitely okay,
-but like the previous two movies the pacing and plotting are a bit suspect. It
-also broke my suspension of disbelief a bit too much.
+*Friendship Games*, the third *Equestria Girls* movie, came out recently.
+As with the rest of the high school spinoff
+for *Friendship is Magic*, I have mixed
+feelings about id. It's...well, it's definitely a movie.
+The pacing's off, the plots aren't
+neat and tidy, and it broke my suspension of disbelief by too much.
 
-That being said, I still liked it. As always, the animation is solid and the
-songs are catchy. (My head knows they're pop songs, and not even good pop songs,
-but it's still fun.) Here's an example. The backstory is that two rival high schools
-are competing in the academic decathalon (acadeca).
+That being said, I still liked it. The animation is solid, the songs are catchy,
+and the character development is still fun, no matter how cliche it is.
+
+Here's one of the better segments. The backstory is that two rival high schools
+are competing in and academic decathalon (the Acadeca.) Give it a watch.
 
 VIDEO
 
-First off, I just want to point out all the badass science and carpentry these
-girls are doing. Hooray for breaking gender stereotypes without making it obvious!
+(As an aside, I want to point out all the badass science and carpentry these
+girls are doing. Hooray for breaking gender stereotypes without directly calling
+it out, which makes it all feel normal!)
 
-However, if I'm honest, my first reaction was on this frame
+I like how the song gets animated, and the shot composition. But, that's not
+what this post is about. My first reaction was on this frame, right before
+Sunset and Twilight have a math-off.
 
 PICTURE
 
@@ -37,146 +43,141 @@ PICTURE
 
 OPTIONAL PICTURE
 
-Oh man, you don't even know. Euclidean geometry is my favorite topic frmo high
-school math, and I've spent a correspondingly long time messing around in it.
-What's notable here is that not only is this Euclidean geometry, the text
-animated on the chalkboard looks like a well formed geometry proof.
+Oh man, you don't even know. Euclidean geometry is the **best**. It's
+my favorite topic from high school math.
+What's notable here is that not only is this Euclidean geometry, the
+animated text looks like a well formed geometry proof.
 
-And that begs the question: is it?
+Which begs the question: is it?
 
 (heading?)
 
 To make this a bit more interesting, I'm going to unpack my thought process
 and try to explain why I did the steps I did. (REPHRASE)
 
-First, I gave the animating staff the benefit of the doubt,
-and assumed the proof was valid. Why? Well, one of the episodes from season
-2 was based around time travel, and they added the equation describing
-relativistic time dilation as an Easter egg (link.) It's entirely reasonable
-that they would animate more math Easter eggs.
+To investigate this, I first gave
+the animating staff the benefit of the doubt, and assumed it was a real proof.
+Well, the time travel episode from season 2 of *Friendship is Magic*
+included the equation describing relativistic time dilation. So at this point,
+including a geo proof wouldn't suprise me.
 
-Let's chase that assumption for a bit. Assume the chalkboard has both a real
-geometry problem and its proof. When watching casually, the starting and ending
-shots are most prominent.
+Now, let's chase that assumption for a bit. Assuming the chalkboard has both a real
+geometry problem and its proof, I used the start and end of the math contest to
+get data on what the problem could be.
 
 PICTURE OF THE START
+
+On a closer look, the diagram looked vaguely familiar. Let's set that aside for
+now and ask what else we can figure out.
 
 At the beginning, there's no text accompanying the diagram, so the problem
 must be simple to state, and requires no additional detail.
 At the end, the writing on
 the chalkboard only involves lines, triangles, and angles. Notably, no trigonmetry
 is used.
-Since no side lengths are specified, the problem is most likely an angle chasing
-problem. Yet for an angle chasing problem, this is a surprisingly long proof. Normally,
-these proofs are a few lines of reasoning at most, but Sunset and Twilight have filled
-an entire chalkboard with derivations. (Again, at this point we don't know the
-chalkboard actually has derivations, or that this problem even exists.
-We're assuming it does, and need to be prepared
-to completely discard this line of reasoning.) Plus, there's one more clue: this
-problem felt vaguely familiar to me.
+No side lengths are specified, so it's most likely an angle chasing problem.
+Yet for an angle chasing problem, this is a surprisingly long proof. In my
+experience, angle chasing is pretty short, but Sunset and Twilight have filled
+an entire chalkboard with derivations.
 
-Based off these clues and some Googling, I found a reasonable candidate:
-the World's Hardest Easy Geometry Problem. (LINK). It's a problem that both
-only requires a diagram to state and basic geometry to solve.
-I had actually seen this problem several years agao, which explains the feeling
-I had. As verification, the answer of $$x = 20^\circ$$ is correct,
+(Again, at this point I still don't know this is a real proof. Everything
+I'm concluding is under the assumption that the animating staff were detail-oriented
+enough to do research for a 20 (CHECK) second clip.)
 
-PICTURE
-
-the diagrams match up
+Based off those clues, a vague feeling, and the power of the Internet,
+I found
+the World's Hardest Easy Geometry Problem. (LINK). It's a problem that's simple
+to state, requires only basic geometry, and is difficult to actually solve.
+I had actually seen this problem several years agao, which explains why the diagram
+looked so familiar. And more importantly, $$x = 20^\circ$$ is the solution to
+the problem.
 
 PICTURE
 
-and the final line $$\angle DEF = 30 + x = (180 - 80) / 2 = 50$$ shows up in
-both places.
+and the given angles match up
 
 PICTURE
 
-At this point, we can conclude the animators have included this problem into
-the movie. Why? At this stage, there are two possibilities for what we will observe.
+and there's something that looks like $$(180 - 80) / 2 = 50$$, which shows up
+at the end of hte World's Hardest Easy Geometry Problem proof.
 
-- The rest of the chalkboard will be the rest of the proof.
-- The rest of the chalkboard will not be the rest of the proof.
+PICTURE
 
-There is a reasonable explanation for the first outcome: the animators looked up
-a geometry problem and included it in the movie. However, there are no reasonable
-explanations for the latter. What world states would lead to the animators
-inclding geometry from one problem, and filling the rest with junk? There are some
-explanations (i.e. everything matched so far was by dumb luck), but these are
-too unlikely.)
+So, now we can upgrade that assumption to a fact. The only question left is how
+accurate they were about it, and the only way to do that is to verify the rest of
+the chalkboard.
 
-So, we know the animators are working in good faith. But, we don't know how accurate
-they were, or how well they succeeded. The only way to do that is to verify the
-rest of the chalkboard. I stepped through
-the video frame by frame until I found the money shot.
+Unfortunately (for me), the movie spends more time on its characters than its
+geometry proof. There's a very brief montage which looks promising,
+
+ANIMATED GIF?
+
+so I downloaded the video and stepped through frame by frame, until I found
+the money shot.
 
 COPY PASTED PROOF (ALSO USE THAT IMAGE)
 
 FULL PROOF FROM MOVIE HERE (side by side?)
 
-This is the clearest shot of the chalkboard in the entire sequence. It's only
-shown for 0.2 seconds of the montage, but it matches up with the second section
-of the proof.
+This is the clearest shot of the chalkboard in the entire sequence. It's also only
+shown for 0.2 seconds. A lot of work, for something that people will barely
+notice. The text lines up perfectly with the second section of the proof.
 
 ANOTHER SIDE BY SIDE IMAGE?
 
-However, it's not perfect. For one, they didn't draw the line parallel to $$AB$$
-through $$D$$, so there's no point $$F$$. Also, the line $$\angle CDF = \angle CAB =
-70 + 10 = 80^\circ$$ has a small animation error, the rightmost equals sign is a
-minus sign instead.
+However, it's not perfect. For one, neither character draws the parallel to $$AB$$
+through $$D$$, so there's no point $$F$$. Also, neither character draws segment $$AF$$,
+so there's no point $$G$$. They're both pulling these points out of nowhere. And, the line
+$$\angle CDF = \angle CAB = 70 + 10 = 80^\circ$$ has a small animation error;
+they accidentally drew $$- 80^\circ$ instead of $$= 80^\circ$$.
 
-This verifies up to the line $$\angle DGF = 180 - 60 - 60 = 60^\circ = \angle ACB$$.
-The next picture in the montage is
-
-PICTURE
-
-which doesn't give much new information (although the line before $$\triangle DCF ~ \triangle ACB$$
-is a bit visible and matches $$\angle AEB = 180 - 70 - (60+20)$$.)
-
-And, a few frames after that comes this shot.
+The rest of the montage isn't there interesting. There's this shot
 
 PICTURE
 
-This includes the $$\angle DEF = 30 + x = (180-80)/2$$ line that appeared in the
-ending shot. There's also something about $$FE$$, and something about the ratio
-between two sides.
+which is a closeup of the top line of the second section, and this shot
 
+PICTURE
 
+which is a closeup of the $$\angle DEF = 30 + x = (180 - 80)/2$$ line I noticed
+previously.
 
+The first section of the proof only appears in the final shot. It's a bit blurry,
+but it reads
 
-1. Calculate some known angles:
+$$
+\angle ACB = 180 - (10+70) - (60+20) = 20^\circ
+$$
 
-    ACB = 180-(10+70)-(60+20) = 20°
-    AEB = 180-70-(60+20) = 30° 
+$$
+\angle AEB = 180 - 70 - (60+20) = 30^\circ
+$$
 
-2. Draw a line from point D parallel to AB, labeling the intersection with BC as a new point F and conclude:
+which again lines up.
 
-    DCF ACB
-    CFD = CBA = 60+20 = 80°
-    DFB = 180-80 = 100°
-    CDF = CAB = 70+10 = 80°
-    ADF = 180-80 = 100°
-    BDF = 180-100-20 = 60° 
+The ending of the proof is best seen in the two closeups
 
-3. Draw a line FA labeling the intersection with DB as a new point G and conclude:
+PICTURES
 
-    ADF BFD
-    AFD = BDF = 60°
-    DGF = 180-60-60 = 60° = AGB
-    GAB = 180-60-60 = 60°
-    DFG (with all angles 60°) is equilateral
-    AGB (with all angles 60°) is equilateral 
+which gives the final lines
 
-4. CFA with two 20° angles is isosceles, so FC = FA
+$$\triangle ACG \cong CAE$$
 
-5. Draw a line CG, which bisects ACB and conclude:
+$$FC - CE = FA - AG = \overbar{FE} = \overbar{FG}$$
 
-    ACG CAE
-    FC-CE = FA-AG = FE = FG
-    FG = FD, so FE = FD 
+Some points off here, for having Sunset deriving $$\angle CDF = \angle CAB = 70+10 = 80^\circ$$
+after writing $$FE = FG$$; she's proving things out of order, and there's
+no way she can justify $$FC - CE = FA - AG$$ before that line. (And points
+to Twilight for proving things in the right order.)
 
-6. With two equal sides, DFE is isosceles and conclude:
+Going back to the original proof, both characters skipped stating
+triangles $$\triangle DFG$$ and $$\triangle AGB$$ are equilateral. However,
+that's reasonable. They've shown the angles of $$\triangle DFG$$
+and $$\triangle AGB$$ are all $$60^\circ$$. They also omitted justifying
+$$FC = FA$$ from isosceles $$\triangle FCA$$, and $$CG$$ bisecting $$\angle C$$,
+but these are also reasonable skips.
 
-    DEF = 30+x = (180-80)/2 = 50 
+Overall, I'm impressed the animating staff actually included real math. It also
+proves that Sunset almost, almost got it, if not for the arithmetic mistake at
+the end. Sometimes that's how these things go.
 
-Answer: x = 20°
