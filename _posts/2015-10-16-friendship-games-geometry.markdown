@@ -14,21 +14,148 @@ but it's widely agreed that they're nowhere near as good as the show.
 The most recent entry, *Friendship Games*, came out September of this year.
 It's...well, it's definitely a movie.
 The pacing is off, the plot is silly, and the world stretches suspension
-of disbelief way too much. (Magic is real, people are growing wings,
-the high school has a portal to an alternate universe, AND NO ONE
-FREAKS OUT ABOUT IT. Really?)
+of disbelief way too much. (Magic is real, humans are growing wings,
+there's a portal to an alternate universe, *and nobody calls the authorities
+or government to report it.* Really?)
 
-That being said, I still enjoyed it. The animation is solid, and the songs are
+That being said, I still enjoyed it. The animation is excellent, and the songs are
 catchy. Here's one of those songs.
 
 <div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ww8TDQ03qlk" frameborder="0" allowfullscreen></iframe>
 </div>
 
-ADD TRANSCRIPT IN SPOILER
+<button
+    class="spoiler-control"
+    title="Click to show lyrics"
+    toggle1="Show Lyrics"
+    toggle2="Hide Lyrics">
+</button>
+{: .centered }
 
-First off, I dig this animation a lot. It gets so much mileage out of facial
-expressions and body language.
+<pre class="hidden">
+[Sunset Shimmer and Wondercolts]
+
+Ho! We're gonna take you down
+Ho! We're gonna take you down!
+Take you down! (Ho! We're gonna take you down!)
+Take you down! (Down, down, down)
+
+[Shadowbolts]
+
+(Oh oh!) We're here to take you out
+(Aw aw!) We're here to take you out (Aw aw!)
+Take you out! (We're here take you out!)
+Take you out!
+
+[Wondercolts]
+
+We're not about to let you win
+So get out of our way
+Think you got us beat
+But we're here to stay
+
+United strong, yeah, we'll take you down
+You're not so tough, now you're in our town
+All of the times we lost before
+Not about to give up, we're only bringin' in more
+
+We can smell your fear, we can see your sweat
+Hope you didn't spend money 'cause you're losin' this bet!
+
+You've got nothin' on us
+Na, na, na-na-na, na
+Let's go, Wondercolts!
+You've got nothin' on us
+Na, na, na-na-na, na
+Let's go, Wondercolts!
+
+[Shadowbolts]
+
+Talk a little too much for a school that never wins
+Maybe you should just stop 'fore you even begin
+We are Crystal Prep High and we have a reputation
+Every little moment is about our education
+
+Put your ear to the ground
+Listen to that sound
+You're a house of cards
+And it's about to fall down (fall down)
+About to fall down (fall down), hit the ground
+
+You've got nothin' on us
+Na, na, na-na-na, na
+Let's go, Shadowbolts!
+You've got nothin' on us
+Na, na, na-na-na, na
+Let's go, Shadowbolts!
+
+[Wondercolts]
+
+Pressure's on
+Now we're gonna beat you
+Step aside, it's time that we defeat you
+Crystal Prep yourself 'cause you're about to go
+Down, down, down, down
+
+[Shadowbolts]
+
+Pressure's on
+You know we're gonna take you
+Just give up before we have to break you
+Canter-not-a-lot, you're about to go
+Down, down, down, down
+
+[Wondercolts]
+
+Take it up to the top
+'Cause we know we can win
+
+[Shadowbolts]
+
+Maybe you should just stop
+'Cause we've seen you give in
+
+[Wondercolts]
+
+We believe in ourselves
+And we've got what it takes
+
+[All]
+
+And we're not gonna stop
+
+[Sci-Twi]
+
+I can't wait 'til this is all over
+There's so much more that's going on
+
+[Sunset Shimmer]
+
+And before these games are over
+I'll find out just what she's done
+
+[All]
+
+Can she do it?
+Will she make it?
+Who will win it?
+Who will take it?
+
+Can she do it?
+Will she make it?
+Did she win it?
+Did she make it?
+
+Who's the winner?
+Who's the reject?
+How did she answer?
+
+Principal Cinch: Incorrect!
+</pre>
+
+This segment is a ton of fun. It gets so much mileage out of facial
+expressions and body language, the way good animation should.
 I'd also
 like to point out all the badass science and carpentry these
 girls are doing. Hooray for casually breaking gender stereotypes!
@@ -50,16 +177,14 @@ Wait. Is that...
 
 **It's Euclidean geometry.**
 
-OPTIONAL PICTURE
-
-Let me explain why I'm freaking out so much.
+Let me explain why this is the best thing ever.
 
 I did math contests in high school. My favorite subject was Euclidean
 geometry. I took a course on Euclidean geometry for math contests. I made
 honorable mention in Bay Area Math Olympiad because I knew about [radical axes](https://en.wikipedia.org/wiki/Radical_axis).
 This is an animation of two high school students competing on a
 geometry problem. THIS WAS ACTUALLY MY LIFE. One huge part of my life got
-animated into another huge part of my life. It's so wondeful.
+animated into another huge part of my life. It's so wonderful.
 
 And the animators didn't half-ass it either. These chalkboards look like
 valid geometry proofs. There's no immediate reason to believe they aren't.
@@ -75,7 +200,7 @@ the animators the benefit of the doubt and assumed it was real. There's a good
 reason to assign a high prior on this.
 The time travel episode from season 2 of *Friendship is Magic*
 [included equations from special relativity describing time dilation.](http://i.imgur.com/AP7wC99.png)
-The 100th episode had [a free body diagram and several equations from Newtonion physics.](https://derpicdn.net/img/view/2015/6/13/916038__safe_doctor+whooves_math_non-dash-pony_physics_bowling_bowling+alley_no+ponies.png)
+The 100th episode had [a free body diagram and several equations from Newtonian physics.](https://derpicdn.net/img/view/2015/6/13/916038__safe_doctor+whooves_math_non-dash-pony_physics_bowling_bowling+alley_no+ponies.png)
 I give the team a lot of respect on attention to detail. At this point, they could
 add Fermat's Last Theorem as an Easter egg and I wouldn't bat an eye.
 
@@ -237,4 +362,9 @@ Sunset Shimmer's fall to villainy was based around a desire to be
 the best at all costs, and her redemption is about her anxiety at failing to
 make up for all the damage she caused. With all the self-loathing and setbacks
 she goes through, it's easy to forget she's almost as good as Twilight.
+
+Nice job team! Now, if only you remembered how to spell...
+
+![spelling gif](/public/geo-proof/spelling.gif)
+{: .centered }
 
