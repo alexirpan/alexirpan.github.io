@@ -6,17 +6,19 @@ date:   2015-10-16 22:04:00 -0800
 
 (Very minor spoilers for *Friendship Games*. Read at your own risk.)
 
+(Click on any image to see the full size photo.)
+
 It's not well known outside the fandom, but *My Little Pony: Friendship is Magic*
 has a high school spinoff called *Equestria Girls*. It's a movie series that exists
 only because of the merchandise potential. Reception to the films is mixed,
-but it's widely agreed that they're nowhere near as good as the show.
+but it's widely agreed they're nowhere near as good as the show.
 
 The most recent entry, *Friendship Games*, came out September of this year.
 It's...well, it's definitely a movie.
 The pacing is off, the plot is silly, and the world stretches suspension
 of disbelief way too much. (Magic is real, humans are growing wings,
-there's a portal to an alternate universe, *and nobody calls the authorities
-or government to report it.* Really?)
+there's a portal to an alternate universe, *and no one outside the school
+knows about it despite almost no attempts to hide it.* Really?)
 
 That being said, I still enjoyed it. The animation is excellent, and the songs are
 catchy. Here's one of those songs.
@@ -162,17 +164,17 @@ girls are doing. Hooray for casually breaking gender stereotypes!
 
 But, that's not what this blog post is about. It's about this frame.
 
-![first scene](/public/geo-proof/first.png)
+[![first scene](/public/geo-proof/first.png)](/public/geo-proof/first.png)
 {: .centered }
 
 Wait. Is that...
 
-![second scene](/public/geo-proof/second.png)
+[![second scene](/public/geo-proof/second.png)](/public/geo-proof/second.png)
 {: .centered }
 
 *It is.*
 
-![third scene](/public/geo-proof/third.png)
+[![third scene](/public/geo-proof/third.png)](/public/geo-proof/third.png)
 {: .centered }
 
 **It's Euclidean geometry.**
@@ -183,12 +185,12 @@ I did math contests in high school. My favorite subject was Euclidean
 geometry. I took a course on Euclidean geometry for math contests. I made
 honorable mention in Bay Area Math Olympiad because I knew about [radical axes](https://en.wikipedia.org/wiki/Radical_axis).
 This is an animation of two high school students competing on a
-geometry problem. THIS WAS ACTUALLY MY LIFE. One huge part of my life got
-animated into another huge part of my life. It's so wonderful.
+geometry problem. THIS WAS ACTUALLY MY LIFE. One huge part of my identity got
+animated into another huge part of my identity. It's so wonderful.
 
 And the animators didn't half-ass it either. These chalkboards look like
 valid geometry proofs. There's no immediate reason to believe they aren't.
-I wonder if the proof's valid...
+I wonder if the proof's correct...
 
 Cue the nerdsniping.
 
@@ -207,10 +209,10 @@ add Fermat's Last Theorem as an Easter egg and I wouldn't bat an eye.
 Let's chase that assumption for a bit. It's easiest to see the diagram
 at the start and end of the contest.
 
-![second scene](/public/geo-proof/second.png)
+[![second scene](/public/geo-proof/second.png)](/public/geo-proof/second.png)
 {: .centered }
 
-![ninth scene](/public/geo-proof/ninth.png)
+[![ninth scene](/public/geo-proof/ninth.png)](/public/geo-proof/ninth.png)
 {: .centered }
 
 On a closer look, the diagram looked vaguely familiar. Let's set that aside for
@@ -242,17 +244,17 @@ I had actually seen this problem several years ago, which explains why the probl
 looked so familiar. The solution is $$x = 20^\circ$$, which matches the answer
 from the movie.
 
-![side by side answer](/public/geo-proof/sbs_answer.png)
+[![side by side answer](/public/geo-proof/sbs_answer.png)](/public/geo-proof/sbs_answer.png)
 {: .centered }
 
 and the given angles match up
 
-![side by side diagram](/public/geo-proof/sbs_diagram.png)
+[![side by side diagram](/public/geo-proof/sbs_diagram.png)](/public/geo-proof/sbs_diagram.png)
 {: .centered }
 
 and $$(180 - 80) / 2 = 50$$ shows up in both proofs.
 
-![side by side 50](/public/geo-proof/sbs_50.png)
+[![side by side 50](/public/geo-proof/sbs_50.png)](/public/geo-proof/sbs_50.png)
 {: .centered }
 
 Jackpot.
@@ -271,14 +273,14 @@ the proof. Most of the proof is in this montage.
 
 Stepping through this frame by frame gives the money shot.
 
-![fifth scene](/public/geo-proof/fifth.png)
+[![fifth scene](/public/geo-proof/fifth.png)](/public/geo-proof/fifth.png)
 {: .centered }
 
 This is the clearest shot of the chalkboard in the entire sequence. It's also only
 shown for 0.2 seconds. A lot of work, for something that people will barely
 notice. The text lines up exactly with the second section of the proof.
 
-![middle of proof](/public/geo-proof/middle_proof.png)
+[![middle of proof](/public/geo-proof/middle_proof.png)](/public/geo-proof/middle_proof.png)
 {: .centered }
 
 However, it's not perfect. Neither character draws the parallel to $$AB$$
@@ -291,12 +293,12 @@ They accidentally drew $$- 80^\circ$$ instead of $$= 80^\circ$$.
 
 The rest of the montage has nothing new. There's this shot
 
-![sixth scene](/public/geo-proof/sixth.png)
+[![sixth scene](/public/geo-proof/sixth.png)](/public/geo-proof/sixth.png)
 {: .centered }
 
 which is a closeup of the top line of the second section, and this shot
 
-![seventh scene](/public/geo-proof/seventh.png)
+[![seventh scene](/public/geo-proof/seventh.png)](/public/geo-proof/seventh.png)
 {: .centered }
 
 which is a closeup of the $$\angle DEF = 30 + x = (180 - 80)/2$$ line.
@@ -304,7 +306,7 @@ which is a closeup of the $$\angle DEF = 30 + x = (180 - 80)/2$$ line.
 The first section of the proof only appears in the final shot. I had to zoom
 to see it, so it's a bit blurry.
 
-![proof start](/public/geo-proof/proofstart.png)
+[![proof start](/public/geo-proof/proofstart.png)](/public/geo-proof/proofstart.png)
 {: .centered }
 
 It reads
@@ -319,15 +321,15 @@ $$
 
 which again lines up with
 
-![original proof start](/public/geo-proof/originalproofstart.png)
+[![original proof start](/public/geo-proof/originalproofstart.png)](/public/geo-proof/originalproofstart.png)
 {: .centered }
 
 The ending of the proof is best seen in the two closeups
 
-![third scene](/public/geo-proof/third.png)
+[![third scene](/public/geo-proof/third.png)](/public/geo-proof/third.png)
 {: .centered }
 
-![fourth scene](/public/geo-proof/fourth.png)
+[![fourth scene](/public/geo-proof/fourth.png)](/public/geo-proof/fourth.png)
 {: .centered }
 
 
