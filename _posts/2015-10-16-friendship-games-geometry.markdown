@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Math in Movies: The Friendship Games Geometry Problem"
-date:   2015-10-16 22:04:00 -0800
+date:   2015-11-02 22:06:00 -0800
 ---
 
 (Very minor spoilers for *Friendship Games*. Read at your own risk.)
