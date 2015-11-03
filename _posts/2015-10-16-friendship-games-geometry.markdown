@@ -6,7 +6,7 @@ date:   2015-10-16 22:04:00 -0800
 
 (Very minor spoilers for *Friendship Games*. Read at your own risk.)
 
-I imagine most people outside the fandom don't know this, but *My Little Pony: Friendship is Magic*
+It's not well known outside the fandom, but *My Little Pony: Friendship is Magic*
 has a high school spinoff called *Equestria Girls*. It's a movie series that exists
 only because of the merchandise potential. Reception to the films is mixed,
 but it's widely agreed that they're nowhere near as good as the show.
@@ -74,8 +74,8 @@ To investigate this, I first gave
 the animators the benefit of the doubt and assumed it was real. There's a good
 reason to assign a high prior on this.
 The time travel episode from season 2 of *Friendship is Magic*
-included equations from special relativity describing time dilation.
-The 100th episode had a free body diagram and several equations from Newtonion physics.
+[included equations from special relativity describing time dilation.](http://i.imgur.com/AP7wC99.png)
+The 100th episode had [a free body diagram and several equations from Newtonion physics.](https://derpicdn.net/img/view/2015/6/13/916038__safe_doctor+whooves_math_non-dash-pony_physics_bowling_bowling+alley_no+ponies.png)
 I give the team a lot of respect on attention to detail. At this point, they could
 add Fermat's Last Theorem as an Easter egg and I wouldn't bat an eye.
 
@@ -102,11 +102,12 @@ experience, angle chasing is pretty short, but Sunset and Twilight have filled
 an entire chalkboard with derivations.
 
 (Again, at this point it's only likely this is a real proof. What I'm doing
-here is finding out what a real proof would imply to help narrow down the
-problem. Based on how easy/hard it is to find the problem, I can use that to
-adjust how likely I believe the proof is real. It's possible the animators
+here is finding out what a real proof would imply to help narrow down what the
+problem is. Based on how easy/hard it is to find a problem matching those
+deductions, I can adjust how likely I believe the proof is real.
+It's possible the animators
 made a new geometry problem just for this movie, but I don't think they're
-crazy enough to do that for 20 seconds (CHECK) of animation.)
+crazy enough to do that for 25 seconds of animation.)
 
 After some searching, I found
 [the World's Hardest Easy Geometry Problem](https://www.duckware.com/tech/worldshardesteasygeometryproblem.html).
@@ -138,9 +139,12 @@ It's certain this is a real geometry problem and proof.
 The only question left is to see how accurate the animators were.
 
 Unfortunately for geometry enthusiasts, the movie spends very little time on
-the proof. There's a montage, but it's hard to verify anything at a glance.
-(ANIMATED GIF?) I downloaded the video and stepped through frame by frame, until I found
-the money shot.
+the proof. Most of the proof is in this montage.
+
+![gif of proof scene](/public/geo-proof/proof.gif)
+{: .centered }
+
+Stepping through this frame by frame gives the money shot.
 
 ![fifth scene](/public/geo-proof/fifth.png)
 {: .centered }
@@ -149,14 +153,16 @@ This is the clearest shot of the chalkboard in the entire sequence. It's also on
 shown for 0.2 seconds. A lot of work, for something that people will barely
 notice. The text lines up exactly with the second section of the proof.
 
-![side by side proof](/public/geo-proof/sbs_full_proof.png)
+![middle of proof](/public/geo-proof/middle_proof.png)
 {: .centered }
 
 However, it's not perfect. Neither character draws the parallel to $$AB$$
 through $$D$$, so there's no point $$F$$. Also, neither character draws segment $$AF$$,
-so there's no point $$G$$. They're both pulling these points out of nowhere. And, the line
-$$\angle CDF = \angle CAB = 70 + 10 = 80^\circ$$ has a small animation error;
-they accidentally drew $$- 80^\circ$ instead of $$= 80^\circ$$.
+so there's no point $$G$$. They're both pulling these points out of nowhere. (If curious,
+[click here](https://www.duckware.com/tech/images/problem1-large.gif) for the
+diagram with added lines.) Also, the derivation
+$$\angle CDF = \angle CAB = 70 + 10 = 80^\circ$$ has a small animation error.
+They accidentally drew $$- 80^\circ$$ instead of $$= 80^\circ$$.
 
 The rest of the montage has nothing new. There's this shot
 
@@ -173,7 +179,7 @@ which is a closeup of the $$\angle DEF = 30 + x = (180 - 80)/2$$ line.
 The first section of the proof only appears in the final shot. I had to zoom
 to see it, so it's a bit blurry.
 
-![proof start](/public/geo-proof/proof-start.png)
+![proof start](/public/geo-proof/proofstart.png)
 {: .centered }
 
 It reads
@@ -186,7 +192,10 @@ $$
 \angle AEB = 180 - 70 - (60+20) = 30^\circ
 $$
 
-which again lines up.
+which again lines up with
+
+![original proof start](/public/geo-proof/originalproofstart.png)
+{: .centered }
 
 The ending of the proof is best seen in the two closeups
 
@@ -199,30 +208,33 @@ The ending of the proof is best seen in the two closeups
 
 which gives the final lines
 
-$$\triangle ACG \cong CAE$$
+$$\triangle ACG \cong \triangle CAE$$
 
-$$FC - CE = FA - AG = \overbar{FE} = \overbar{FG}$$
+$$FC - CE = FA - AG = \overline{FE} = \overline{FG}$$
+
+$$\overline{FG} = \overline{FD}, \overline{FE} = \overline{FD}$$
 
 There are some more errors here. Sunset derives $$\angle CDF = \angle CAB = 70+10 = 80^\circ$$
-after writing $$FE = FG$$; she's proving things out of order. There's
-no way she can justify $$FC - CE = FA - AG$$ before that line. (Points
+after writing $$\overline{FE} = \overline{FG}$$; she's proving things out of order. There's
+no way she can justify $$\overline{FC} - \overline{CE} = \overline{FA} - \overline{AG}$$ before that line. (Points
 to Twilight for proving things in the right order. It could be a subtle way to
-show Twilight has more talent, but I'm more inclined to believe it's an error.)
+show Twilight is better, but it's probably an error.)
 
 Going back to the original proof, both characters skipped stating
 triangles $$\triangle DFG$$ and $$\triangle AGB$$ are equilateral. However,
 that's reasonable. They've shown the angles of $$\triangle DFG$$
 and $$\triangle AGB$$ are all $$60^\circ$$, so the equal side lengths are implied.
-They also skipped justifying $$FC = FA$$ from isosceles $$\triangle FCA$$, and
+They also skipped justifying $$\overline{FC} = \overline{FA}$$ from isosceles $$\triangle FCA$$, and
 didn't prove $$CG$$ is the angle bisector of $$\angle C$$,
 but these are also reasonable skips given the diagram.
 
-Overall, I'm impressed the animating staff actually included real math. It also
-proves that Sunset almost, almost got it, since her only error is an
+Overall, I'm impressed the animators got as much right as they did.
+It also shows that Sunset almost, almost solved the problem,
+since her only error is an
 arithmetic mistake at the end. Sometimes that's how these things go.
-Now that I've done all of this, this actually makes the scene better.
+Now that I've done all of this, I actually like this scene more.
 Sunset Shimmer's fall to villainy was based around a desire to be
 the best at all costs, and her redemption is about her anxiety at failing to
-make up for all the damage she caused. With all the self-loathing, it's easy
-to forget that she's almost as good as Twilight.
+make up for all the damage she caused. With all the self-loathing and setbacks
+she goes through, it's easy to forget she's almost as good as Twilight.
 
