@@ -6,21 +6,19 @@ date:   2048-01-01 00:00:00
 
 *Last updated November 26, 2015*
 
-I read a lot more web fiction than the average, probably because I have a barely functioning
-social life. Almost all stories I've read the past few years were published
+Almost all stories I've read the past few years were published
 online. There's something very addicting about being able to read a story wherever
-I have Internet access. With smartphones, that means practically anywhere.
+I have Internet access, especially because I own a smartphone.
 
-On one hand, I've missed out on very good books that were published
-traditionally. On the other hand, I'm slightly more qualified to recommend
-stories that people wouldn't normally hear about.
+On one hand, this means I've missed out on recent traditionally published books.
+On the other hand, I'm slightly more qualified to recommend web fiction than
+the average. Hooray!
 
-I intend to write more in-depth reviews for some of these recommendations, and will
-link those when done.
+I intend to write more in-depth reviews for some of these recommendations.
 To stop this page from getting too unwieldly, **every recommendation must either
 link to a full blog post review or be at most three sentences long.**
 
-For now, I'm restricting myself to text only content. Anything visual like
+This is restricted to text only content. Anything visual like
 webcomics will have to wait for another time.
 
 Stories in each category are ordered roughly by how much I liked them.
@@ -38,34 +36,84 @@ Stories in each category are ordered roughly by how much I liked them.
 
 *The other stories are good. These are better.*
 
-**Worm**, by Wildbow
-
-Status: Completed
-
-Link: [here](https://parahumans.wordpress.com/about/)
-
-Vivid characters in a slowly evolving world where superpowers are real.
-Everything about the world feels organic and realistic. Dark and gritty
-with lots of entertaining fights that are won by cleverness instead of
-brute strength.
-
 **Fallout Equestria**, by kkat (MLP x Fallout)
 
 Status: Completed
 
 Link: [here](http://www.fimfiction.net/story/119190/fallout-equestria)
 
-Much like Worm, this asks how people (or ponies in this case) act when the
-chips are down. Blends MLP and Fallout canon very cleverly, but is good enough
+A story about maintaining hope in the face of crushing adversity,
+as told through a wonderful ensemble cast and some of the most engaging
+action I've ever read.
+Blends MLP and Fallout canon very cleverly, but is good enough
 that you should try reading it even if you know nothing about either.
-When the author can make a pool of water scarier than a squad of raiders, you
-know you have something special.
+When the author can make a pool of water scarier than a squad of rifle-wielding
+raiders, you know you have something special.
+
+**Worm**, by Wildbow
+
+Status: Completed
+
+Link: [here](https://parahumans.wordpress.com/about/)
+
+An incredibly large cast of characters living in a world where superpowers are real.
+Like *Fallout Equestria*, the worldbuilding is organic and realistic, and every
+hero and villain has a
+good reason to do what they're doing. Dark and gritty,
+with lots of entertaining fights that are won by cleverness instead of
+brute strength.
 
 [back to top](#table-of-contents)
 
 # Original Work
 
 *You see a blank piece of paper, but I see potential.*
+
+**Ra**, by qntm
+
+Status: Completed
+
+Link: [here](http://qntm.org/ra)
+
+Magic breaks the laws of physics, but it still has to follow the laws of magic.
+A hard science fiction story driven entirely by a desire to know how the world
+works. As far as I know, this is the only story that cites Godel's
+Incompleteness Theorems in relevant context.
+
+**Fine Structure**, by qntm
+
+Status: Completed
+
+Link: [here](http://qntm.org/structure)
+ 
+A series of science fiction vignettes that slowly reveal a coherent narrative.
+The height of my addiction was in my second reading of the story, not the first,
+because many chapters get better once you know what they're trying to hint.
+The characterization is weak, but this story is carried by its ideas,
+not its characters.
+
+**Twig**, by Wildbow
+
+Status: In Progress (updates 2-3 times a week.)
+
+Link: [here](https://twigserial.wordpress.com/about/)
+
+A biopunk story set in the early 1900s. A nice mix of clever plans,
+on the fly thinking, and horrifying biology. Details on the different factions
+have been revealed over time, but so far the big picture is still unclear.
+
+**Other Short Stories**, by qntm
+
+Status: Completed
+
+Link: [here](http://qntm.org/fiction)
+
+More sci-fi short stories. I recommend:
+- *I don't know, Timmy, being God is a big responsibility*
+- *The Difference*
+- *The Last-But-One Question*
+- *Causal Noose*
+- *Gorge*
 
 **Pact**, by Wildbow
 
@@ -76,57 +124,6 @@ Link: [here](https://pactwebserial.wordpress.com/about/)
 Modern supernatural. Workings of the world are explicitly kept vague and
 ill-defined, which can be frustrating at times.
 Strong start that peters out in the middle, but the final arcs make up for it.
-
-
-**Twig**, by Wildbow
-
-Status: In Progress (updates 2-3 times a week.)
-
-Link: [here](https://twigserial.wordpress.com/about/)
-
-A biopunk story set in the early 1900s. This is in progress, so the big picture
-is still unfolding. So far, everything has been a nice mix of entertainingly awesome
-and subtly (or not so subtly) horrifying.
-
-
-**Ra**, by qntm
-
-Status: Completed
-
-Link: [here](http://qntm.org/ra)
-
-Magic breaks the laws of physics, but it still has to follow the laws of magic.
-A hard science fiction story where characters try to discover what magic can
-and cannot do. There is no shame in looking up concepts you don't know;
-this is a story that cites Godel's Incompleteness Theorems in relevant context.
-
-
-**Fine Structure**, by qntm
-
-Status: Completed
-
-Link: [here](http://qntm.org/structure)
- 
-A hard science fiction story told through many perspectives in anachronic order,
-eventually converging into a coherent narrative.
-The height of my addiction was in my second reading of the story, not the first,
-because I knew what was going on the second time through.
-The characterization is weak, but this story is carried by its ideas,
-not its characters.
-
-
-**Other Short Stories**, by qntm
-
-Status: Completed
-
-Link: [here](http://qntm.org/fiction)
-
-Recommended stories
-- *I don't know, Timmy, being God is a big responsibility*
-- *The Difference*
-- *The Last-But-One Question*
-- *Causal Noose*
-- *Gorge*
 
 
 [back to top](#table-of-contents)
