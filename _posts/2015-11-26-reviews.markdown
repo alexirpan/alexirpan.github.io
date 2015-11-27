@@ -4,29 +4,7 @@ title: Stories I Have Read Online, Which You Can Only Read Online, Which You Sho
 date:   2048-01-01 00:00:00
 ---
 
-
 *Last updated November 21, 2015*
-
-Stories. DONE = have a first draft.
-Worm (DONE)
-Pact (DONE)
-Twig (DONE)
-Fallout Equestria (DONE)
-Ra (DONE)
-Fine Structure (DONE)
-HPMoR (DONE)
-MLP Loops (DONE kinda, need to move and rename)
-Natural 20 (DONE but merge it)
-Eternal (DONE)
-Background Pony (DONE)
-My Little Dashie (DONE)
-Past Sins (DONE)
-Hard Reset Trilogy (DONE)
-Cenotaph
-Wake
-Friendship is Optimal (DONE)
-Artemis, Stella, Beat (DONE)
-A Taste Of the Good Life (DONE)
 
 I read a lot more web fiction than the average, probably because I have a barely functioning
 social life. Almost all stories I've read the past few years were published
@@ -37,8 +15,9 @@ On one hand, I've missed out on very good books that were published
 traditionally. On the other hand, I'm slightly more qualified to recommend
 stories that people wouldn't normally hear about.
 
-I intend to write more in-depth reviews for some of these recommendations.
-To stop this page frmo getting to unwieldly, **every recommendation that doesn't
+I intend to write more in-depth reviews for some of these recommendations, and will
+link those when done.
+To stop this page from getting too unwieldly, **every recommendation that doesn't
 link to a full blog post review gets three sentences max.**
 
 For now, I'm restricting myself to text only content. No webcomics, no audio plays,
@@ -53,91 +32,97 @@ grouping works by author takes priority over ordering by quality.
 Stories labeled with a ** are good enough that I recommend them even if you are
 unfamiliar with the source material.
 
+- Clobbered for auto generated table of contents
+{:toc}
 
-FAVORITES
 
-My all time favorites. The other works are good, but these are better.
+# Overall favorites
+
+The other stories are good. These are better.
 
 Worm, by Wildbow
+
 Status: Completed
+
 https://parahumans.wordpress.com/about/
 
-Superpowers are real. They first appeared a few decades ago, and now they're
-a part of society. Has an incredibly large cast of characters that play off
-each other very organically. Dark tone with very juicy action.
+Vivid characters in a slowly evolving world where superpowers are real.
+Everything about the world feels organic and realistic. Dark and gritty
+with lots of entertaining fights that are won by cleverness instead of
+brute strength.
 
 Fallout Equestria, by kkat (MLP x Fallout)
+
 Status: Completed
+
 http://www.fimfiction.net/story/119190/fallout-equestria
 
-I recommend trying this even if you don't know about either MLP or Fallout.
-I liked it that much.
-
-If you liked Worm, Fallout Equestria is more of the same.
-Wonderful ensemble cast, a world dripping with potential, terrifyingly good
-action, and lots of moral ambiguity to go around.
-When the author makes a pool of water one of the
-scariest encounters in the series, you know something is going right.
+Much like Worm, this asks how people (or ponies in this case) act when the
+chips are down. Blends MLP and Fallout canon very cleverly, but is good enough
+that you should try reading it even if you know nothing about either.
+When the author can make a pool of water scarier than a squad of raiders, you
+know you have something special.
 
 
 ORIGINAL CONTENT
 
-No fandom needed to enjoy.
+You see a blank piece of paper, and I see potential.
 
 Pact, by Wildbow
+
 Status: Completed
+
 https://pactwebserial.wordpress.com/about/
 
-Modern supernatural. Strong start that peters out in the middle, but the final
-arcs make up for it.
+Modern supernatural. Workings of the world are explicitly kept vague and
+ill-defined, which can be frustrating at times.
+Strong start that peters out in the middle, but the final arcs make up for it.
 
 
 Twig, by Wildbow
+
 Status: In Progress (updates 2-3 times a week.)
+
 https://twigserial.wordpress.com/about/
 
-Biopunk. Fun set of characters. The big picture is still unclear, but so far
-thi shas been entertaining.
+A biopunk story set in the early 1900s. This is in progress, so the big picture
+is still unfolding. So far, everything has been a nice mix of entertainingly awesome
+and subtly (or not so subtly) horrifying.
 
 
 
 Ra, by qntm
+
 Status: Completed
+
 http://qntm.org/ra
 
-Magic is real.
-
-Magic is also a science. It may break the laws of physics, but it still follows
-the laws of magic, and it's not clear what those are. Did you really think
-you could pick up a wand and launch sparks? How is creating all that
-thermal and kinetic energy out of nothing supposed to be easy?
-
-Entertaining hard science fiction. There is no shame in looking up concepts
-you don't know; this is a story that cites Godel's Incompleteness
-Theorems in relevant context.
+Magic breaks the laws of physics, but it still has to follow the laws of magic.
+A hard science fiction story where characters try to discover what magic can
+and cannot do. There is no shame in looking up concepts you don't know;
+this is a story that cites Godel's Incompleteness Theorems in relevant context.
 
 
 Fine Structure, by qntm
+
 Status: Completed
+
 http://qntm.org/structure
-
-Another hard science fiction story. Told from many perspectives through
-parallel storied that eventually converge into a coherent narrative.
-The height of my addiction was in my second reading of the story, not the first.
-
-The characters in Fine Structure aren't that amazing - often, characters act as
-ways for the author to express ideas about how the world works, instead of as
-characters with personality and agency. However, the ideas are interesting enough
-to make up for this.
-
-Avoid reading the comments. They will spoil you, even if you don't realize what
-you're getting spoiled on.
+ 
+A hard science fiction story told through many perspectives in anachronic order,
+eventually converging into a coherent narrative.
+The height of my addiction was in my second reading of the story, not the first,
+because I knew what was going on the second time through.
+The characterization is weak, but this story is carried by its ideas,
+not its characters.
 
 
-Other stories, by qntm
+
+
+Other Short Stories, by qntm
+
 http://qntm.org/fiction
 
-Sam Hughes has a lot of science fiction short stories on his site.
 Recommended ones:
 - I don't know, Timmy, being God is a big responsibility
 - The Difference
@@ -150,101 +135,112 @@ HARRY POTTER
 
 Yer a wizard, Harry.
 
-Harry Potter and the Methods of Rationality
+Harry Potter and the Methods of Rationality, by Eliezer Yudkowsky
+
 Status: Completed
+
 http://hpmor.com/
 
-Harry grows up with an Oxford professor as his father, and spends his childhood
-reading books about science. Then, he gets a letter from Hogwarts...
+Harry Potter grows up in a loving household and spends most of his childhood
+reading books about physics, chemistry, cognitive science, probability, etc.
+He goes to Hogwarts, and then things get complicated.
+This tends to be a love it or hate it story.
 
-This tends to be a love it or hate it story, so I would recommend just reading
-it to see where you lie.
 
+Harry Potter and the Natural 20, by Sir Poley (Harry Potter x D&D)
 
-Harry Potter and the Natural 20 (Harry Potter x D&D)
 Status: Unfinished, possibly dead
+
 https://www.fanfiction.net/s/8096183/1/Harry-Potter-and-the-Natural-20
 
-A munchkin from the D&D universe drops into the Harry Potter universe. Their
-systems of magic collide, and hilarity ensues. If you like creative rule-bending
-or self-aware characters, this story is for you.
-
-Note the author actually rolls every dice in the story, to give encounters
-more authenticity.
+A munchkin from the D&D universe drops into the Harry Potter universe, and abuses
+both systems of magic to much hilarity. Starts off funny, then slowly leads to
+real character development and drama. For all encounters, the author rolled
+dice in real life before deciding what to write next, and Milo actually has
+a character sheet (which is unfortunately out of date.)
 
 MY LITTLE Pony: Friendship is Magic
 
 You may have destroyed the Elements, but you can't destory the most powerful
 magic of all: the magic of friendship!
 
-MLP Loops (MLP x everything)
+MLP Loops, by many people (MLP x everything)
+
 Status: Ongoing
+
+Spoils: Up through end of season 3. Writers incorporate new episodes as they
+get aired, so the latest chapters spoil up through the latest episode.
+
 http://tvtropes.org/pmwiki/pmwiki.php/FanFic/TheInfiniteLoops
 
-The multiversal computer that powers all possible realities is malfunctioning.
-As a stopgap, the Admins are running reality on repeat while they fix the damage.
-This sticks MLP (and every other reality) into a Groundhog Day time loop.
-
-A strangely addictive anthology of short stories. Often irreverent, usually
-funny, but occasionally realistic and down to earth.
-
-Spoils MLP up through the Season 3 finale, since the story started soon after that
-aired. Over time it incoporates Season 4 and Season 5 material.
+A strangely addictive anthology of short stories where characters are stuck
+in Groundhog Day time loops. Starts arbitrary, then build an increasingly
+elaborate canon over time. There are other time loop stories for other
+fandoms, but the MLP one is the biggest.
 
 
 Hard Reset, by Eakin
+
 Status: Complete
+
+Spoils: Up through end of season 2. Sequels spoil through end of season 3.
+
 LINK
 
-Twilight Sparkle is having a bad day. First, an experimental spell blows up in her
-face and gets her stuck in a time loop. Second, an alien invasion is coming to
-destroy the city. She's going to stop the invasion, even if it kills here.
-Which it will. A lot.
-
-Think Edge of Tomorrow, but darker, with more emphasis on psychological damage.
-Pretty short with a very nice ending chapter.
+Twilight Sparkle gets stuck in a time loop right before an alien invasion
+comes to destroy the city, and she has all of eternity to find out how to
+stop it. Think Edge of Tomorrow with more emphasis on the psychological damage
+that could happen.
+Pretty short with an excellent ending chapter.
 
 Followed by A Stitch in Time (romantic comedy with some adventure), then concluded
 by You Can Fight Fate (adventure).
 
-Hard Reset spoils through Season 2 finale. Stitch and Fate spoil through
-Season 3 finale.
 
 
-Friendship is Optimal, by ___
+Friendship is Optimal, by Iceman
+
 Status: Complete
-LINK
 
-Set in the human world. Hanna is a developer at _____ Studios, and after the success
-of their procedurally generated MMO ____, they've been contacted to make an MMO
-for MLP. And thus CelestAI is created...
+Spoils: Nothing. (You can actually read this without knowing MLP, since it's
+set on Earth.)
 
-At its core, this is a story about AI, not about the people. It makes it somewhat
+http://www.fimfiction.net/story/62074/friendship-is-optimal
+
+Hanna is the CEO of Hofvarpnir Studios, and after the success
+of their AI generated shooter The Fall of Asgard, they've been
+contacted to make an MMO for My Little Pony.
+At its core, this is a story about AI, not about people. It makes it somewhat
 alien to read through, but I still liked it.
 
-Does not spoil anything, and you don't even need MLP knowledge to read this.
 
-The Law Offices of Artemis, Stell, and Beat
+Friendship is Optimal: The Law Offices of Artemis, Stella & Beat, by Eakin
+
 Status: Complete
-LINK
 
-Fan-fanfiction based on the Friendship is Optimal universe. I liked this over
+Spoils: Nothing (except Friendship is Optimal)
+
+http://www.fimfiction.net/story/70441/friendship-is-optimal-the-law-offices-of-artemis-stella-beat
+
+Fan-fanfiction based on Friendship is Optimal from the
+perspective of a lawyer. I liked this over
 Friendship is Optimal because it's grounded more in human interaction.
 Unfortunately, you do need to read about 2/3rd of Friendship is Optimal to
 appreciate this.
 
-Also does not spoil anything from MLP.
 
+A Taste of The Good Life, by Eakin
 
-A Taste of The Good Life, by Eakin (LINK)
 Status: Complete
-LINK
 
-Slice of life story that stays light throughout. The plot is predictable from a mile
-away, but that doesn't make it bad because the execution is solid.
-Eakin gets a lot of mileage out of short, simple sentences,
+Spoils: Up through end of season 2
 
-Very light spoilers through Season 2
+http://www.fimfiction.net/story/134645/a-taste-of-the-good-life
+
+A romantic slice of life story that stays light throughout.
+The plot is predictable from a mile away, but that doesn't make it bad because
+the execution is solid.
+
 
 
 WORM
@@ -252,23 +248,28 @@ WORM
 Doing the wrong things for the right reasons.
 
 Cenotaph, by notes
+
 Status: Completed
-LINK
 
-An original flavor AU where Taylor is a hero instead of a villain. Although,
-"hero" and "villain" don't mean much when it comes to Worm...
+Spoils: Up to the end of Worm, but does so obliquely. Major plot points of
+Worm won't get spoiled.
 
-If you liked Worm, you will probably like Cenotaph (and Cenotaph is also much
-shorter.)
+http://archiveofourown.org/works/1152749/chapters/2337442
+
+An original flavor AU where Taylor decides to take matters into her own hands.
+The writing style is concise, and every word feels deliberate.
+If you liked Worm, you will almost certainly like Cenotaph.
 
 Followed by Wake, then Legacy. Wake is completed and Legacy is in progress.
 
 Manager, by Sereviel
-Status: In Progress
-LINK
 
-Taylor got the Adminstrator power. What if that power was more literal?
+Status: In Progress, sporadic updates
 
-Basically, Taylor's power is completely broken, and she uses it to troll
-the entire setting. At the same time, her power still has limits, and she avoids
-Mary Sue issues. Lighthearted and all around fun.
+Spoils: Up to the end of Worm. Will spoil some major plot points.
+
+http://archiveofourown.org/works/1536152/chapters/3251618
+
+An AU where Taylor triggers with a completely broken power, and uses it to
+troll the entire setting. At the same time, her power still has limits, which lets
+her avoid Mary Sue issues. Lighthearted and all around fun.
