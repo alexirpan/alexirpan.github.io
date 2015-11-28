@@ -6,13 +6,15 @@ date:   2048-01-01 00:00:00
 
 *Last updated November 26, 2015*
 
-Almost all stories I've read the past few years were published
+Almost all stories I've read the last few years were published
 online. There's something very addicting about being able to read a story wherever
 I have Internet access, especially because I own a smartphone.
 
-On one hand, this means I've missed out on recent traditionally published books.
-On the other hand, I'm slightly more qualified to recommend web fiction than
-the average. Hooray!
+On one hand, this means there are a lot of print books I haven't read. I'll admit that
+the standards for web fiction are much lower.
+On the other hand, not all web fiction is terrible. Thanks to my reading habits,
+I'm slightly more qualified to recommend online stories than the average person.
+Horray!
 
 I intend to write more in-depth reviews for some of these recommendations.
 To stop this page from getting too unwieldly, **every recommendation must either
@@ -56,10 +58,10 @@ Status: Completed
 
 Link: [here](https://parahumans.wordpress.com/about/)
 
-An incredibly large cast of characters living in a world where superpowers are real.
-Like *Fallout Equestria*, the worldbuilding is organic and realistic, and every
-hero and villain has a
-good reason to do what they're doing. Dark and gritty,
+A massive cast of characters living in a world where superpowers are real.
+Like *Fallout Equestria*, the worldbuilding is incredibly organic, and every
+character has a good reason to do what they're doing, even the villains.
+Dark and gritty,
 with lots of entertaining fights that are won by cleverness instead of
 brute strength.
 
@@ -76,19 +78,21 @@ Status: Completed
 Link: [here](http://qntm.org/ra)
 
 Magic breaks the laws of physics, but it still has to follow the laws of magic.
-A hard science fiction story driven entirely by a desire to know how the world
+A hard science fiction story
+driven by a deep desire to understand how the world
 works. As far as I know, this is the only story that cites Godel's
-Incompleteness Theorems in relevant context.
+Incompleteness Theorems in correct context.
 
 **Fine Structure**, by qntm
 
 Status: Completed
 
 Link: [here](http://qntm.org/structure)
- 
-A series of science fiction vignettes that slowly reveal a coherent narrative.
+
+A series of seemingly disconnected science fiction vignettes that slowly
+reveal a shared narrative.
 The height of my addiction was in my second reading of the story, not the first,
-because many chapters get better once you know what they're trying to hint.
+because many chapters get better once you know what they're trying to hint at.
 The characterization is weak, but this story is carried by its ideas,
 not its characters.
 
@@ -99,8 +103,8 @@ Status: In Progress (updates 2-3 times a week.)
 Link: [here](https://twigserial.wordpress.com/about/)
 
 A biopunk story set in the early 1900s. A nice mix of clever plans,
-on the fly thinking, and horrifying biology. Details on the different factions
-have been revealed over time, but so far the big picture is still unclear.
+on the fly thinking, and horrifying biology. Best to read and draw conclusions
+on your own.
 
 **Other Short Stories**, by qntm
 
@@ -108,7 +112,9 @@ Status: Completed
 
 Link: [here](http://qntm.org/fiction)
 
-More sci-fi short stories. I recommend:
+Similar flavor to *Ra* and *Fine Structure*, but much shorter.
+I recommend:
+
 - *I don't know, Timmy, being God is a big responsibility*
 - *The Difference*
 - *The Last-But-One Question*
@@ -121,7 +127,8 @@ Status: Completed
 
 Link: [here](https://pactwebserial.wordpress.com/about/)
 
-Modern supernatural. Workings of the world are explicitly kept vague and
+A modern supernatural story that juxtaposes ancient tradition with technological
+advances. Workings of the world are explicitly kept vague and
 ill-defined, which can be frustrating at times.
 Strong start that peters out in the middle, but the final arcs make up for it.
 
@@ -142,7 +149,8 @@ Link: [here](http://hpmor.com/)
 Harry Potter grows up in a loving household and spends most of his childhood
 reading books about physics, chemistry, cognitive science, probability, etc.
 He goes to Hogwarts, and then things get complicated.
-This tends to be a love it or hate it story.
+This tends to be a love it or hate it story, but if you love it you will
+really love it.
 
 
 **Harry Potter and the Natural 20**, by Sir Poley (Harry Potter x D&D)
@@ -152,10 +160,10 @@ Status: Unfinished, assumed dead
 Link: [here](https://www.fanfiction.net/s/8096183/1/Harry-Potter-and-the-Natural-20)
 
 A munchkin from the D&D universe drops into the Harry Potter universe, and abuses
-both systems of magic to much hilarity. Starts off funny, then slowly leads to
-real character development and drama. For all encounters, the author rolled
-dice in real life before deciding what to write next, and Milo actually has
-a character sheet (which is unfortunately out of date.)
+both systems of magic in his quest to be the most powerful wizard in the world.
+Starts off funny, then slowly leads to
+real character development and drama. Fun trivia: for all encounters,
+the author rolled dice in real life before deciding what to write next.
 
 
 [back to top](#table-of-contents)
@@ -170,15 +178,14 @@ how much I cared about you. The spark ignited inside me when I realized that you
 
 Status: Complete
 
-Spoils: Up through end of season 2. Sequels spoil through end of season 3.
+Spoilers: Up through end of season 2. Sequels spoil through end of season 3.
 
 Link: [here](http://www.fimfiction.net/story/67362/hard-reset)
 
-Twilight Sparkle gets stuck in a time loop right before an alien invasion
-comes to destroy the city, and she has all of eternity to find out how to
-stop it. Think Edge of Tomorrow with more emphasis on the psychological damage
-that could happen.
-Pretty short with an excellent ending chapter.
+Twilight Sparkle gets stuck in a time loop right before an invasion of
+Canterlot. The invaders win, but she has all of eternity to figure out how to
+save the world. A short action based Groundhog Day story with an excellent
+ending chapter.
 
 Followed by **A Stitch in Time** (romantic comedy with some adventure), then concluded
 by **You Can Fight Fate** (adventure).
@@ -188,15 +195,15 @@ by **You Can Fight Fate** (adventure).
 
 Status: Ongoing (updates every few weeks)
 
-Spoils: Up through end of season 3. Writers incorporate new episodes as they
+Spoilers: Up through end of season 3. Writers incorporate new episodes as they
 get aired, so the latest chapters spoil up through the latest episode.
 
 Link: [here](https://www.fanfiction.net/s/9216685/1/MLP-Loops)
 
-A strangely addictive anthology of short stories where characters are stuck
-in Groundhog Day time loops. Starts arbitrary, then build an increasingly
-elaborate canon over time. There are other time loop stories for other
-fandoms, but the MLP one is the biggest.
+A strangely addictive anthology of short stories where characters from MLP get
+stuck in Groundhog Day time loops. Stories have lots of awesome moments, which
+is balanced by deadpan situational humor. The joy comes from seeing how
+characters change as they gain perspective through the time loops.
 
 
 
@@ -204,38 +211,53 @@ fandoms, but the MLP one is the biggest.
 
 Status: Complete
 
-Spoils: Nothing. You can actually read this without knowing MLP, since it's
+Spoilers: Nothing. You can actually read this without knowing MLP, since it's
 set on Earth.
 
 Link: [here](http://www.fimfiction.net/story/62074/friendship-is-optimal)
 
 Hanna is the CEO of Hofvarpnir Studios, and after the success
-of their AI generated shooter The Fall of Asgard, they've been
-contacted to make an MMO for My Little Pony.
+of their AI generated shooter *The Fall of Asgard*, they've been
+contacted to make an MMO for *My Little Pony*.
 At its core, this is a story about AI, not about people. It makes it somewhat
-alien to read through, but I still liked it.
+alien to read through, but I feel that's intentional.
 
 
 **Friendship is Optimal: The Law Offices of Artemis, Stella & Beat**, by Eakin
 
 Status: Complete
 
-Spoils: Nothing (except Friendship is Optimal)
+Spoilers: Nothing (except Friendship is Optimal)
 
 Link: [here](http://www.fimfiction.net/story/70441/friendship-is-optimal-the-law-offices-of-artemis-stella-beat)
 
-Fan-fanfiction based on Friendship is Optimal from the
+Fan-fanfiction based on *Friendship is Optimal* from the
 perspective of a lawyer. I liked this over
-Friendship is Optimal because it's grounded more in human interaction.
-Unfortunately, you do need to read about 2/3rd of Friendship is Optimal to
+*Friendship is Optimal* because it's grounded more in human interaction.
+Unfortunately, you do need to read about two-thirds of *Friendship is Optimal* to
 appreciate this.
+
+
+**Past Sins**, by Pen Stroke
+
+Status: Complete
+
+Spoilers: Up through end of season 2, although season 2 spoilers only show up
+in the sequels.
+
+Link: [here](http://www.fimfiction.net/story/41596/past-sins)
+
+A historically important fanfic that created its own subfandom. It's aged a bit,
+and it goes for the easy emotional punches, but it's still enjoyable and worth
+reading. The premise should lead to crazy Mary Sue issues, so the fact that it
+doesn't have those problems is a good sign for the writing.
 
 
 **A Taste of The Good Life**, by Eakin
 
 Status: Complete
 
-Spoils: Up through end of season 2
+Spoilers: Up through end of season 2
 
 Link: [here](http://www.fimfiction.net/story/134645/a-taste-of-the-good-life)
 
@@ -263,13 +285,15 @@ An original flavor AU where Taylor decides to take matters into her own hands.
 The writing style is concise, and every word feels deliberate.
 If you liked Worm, you will almost certainly like Cenotaph.
 
-Followed by **Wake**, then **Legacy**. Wake is completed and Legacy is in progress.
+Followed by **Wake**, then **Legacy**. *Wake* is completed and *Legacy*
+is in progress.
 
 **Manager**, by Seraviel
 
-Status: In Progress. Sporadic updates but may be better to treat as dead.
+Status: In Progress. Sporadic updates, but for your sanity it's better to
+treat it as dead.
 
-Spoilers: Will spoil major Worm plot points, read after finishing Worm.
+Spoilers: Will spoil major plot points.
 
 Link: [here](http://archiveofourown.org/works/1536152/chapters/3251618)
 
