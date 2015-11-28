@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Stories I Have Read Online, Which You Can Only Read Online, Which You Should Try Reading (Online)
-date:   2048-01-01 00:00:00
+permalink: /webfictionrecs/
 ---
 
 *Last updated November 26, 2015*

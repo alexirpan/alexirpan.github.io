@@ -13,6 +13,8 @@ paginate: 3
 # a page for all header links. Hardcoded + repeated but not
 # worth doing it right at this time
 header_links:
+    - url: "/webfictionrecs/"
+      title: "Recs"
     - url: "/archive/"
       title: "Archive"
     - url: "/feed.xml"
