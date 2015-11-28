@@ -6,18 +6,18 @@ permalink: /webfictionrecs/
 
 *Last updated November 28, 2015*
 
-Almost all stories I've read the last few years were published
+Almost all stories I've read the last few years were self-published
 online. There's something very addicting about being able to read a story wherever
 I have Internet access, especially because I own a smartphone.
 
 On one hand, this means there are a lot of print books I haven't read. I'll admit that
 the standards for web fiction are much lower.
-On the other hand, not all web fiction is terrible. Thanks to my reading habits,
-I'm slightly more qualified to recommend online stories than the average person.
-Horray!
+On the other hand, not all web fiction is terrible, and thanks to my reading habits,
+I'm slightly more qualified to recommend web fiction than the average person.
+Hooray!
 
 I intend to write more in-depth reviews for some of these recommendations.
-To stop this page from getting too unwieldly, **every recommendation must either
+To stop this page from getting too unwieldy, **every recommendation must either
 link to a full blog post review or be at most three sentences long.**
 
 This is restricted to text only content. Anything visual like
@@ -80,8 +80,8 @@ Link: [here](http://qntm.org/ra)
 Magic breaks the laws of physics, but it still has to follow the laws of magic.
 A hard science fiction story
 driven by a deep desire to understand how the world
-works. As far as I know, this is the only story that cites Godel's
-Incompleteness Theorems in correct context.
+works. As far as I know, this is the only story that cites Gödel's
+incompleteness theorems in correct context.
 
 **Fine Structure**, by qntm
 
@@ -231,7 +231,7 @@ Spoilers: Nothing (except Friendship is Optimal)
 
 Link: [here](http://www.fimfiction.net/story/70441/friendship-is-optimal-the-law-offices-of-artemis-stella-beat)
 
-Fan-fanfiction based on *Friendship is Optimal* from the
+Recursive fanfiction based on *Friendship is Optimal* from the
 perspective of a lawyer. I liked this over
 *Friendship is Optimal* because it's grounded more in human interaction.
 Unfortunately, you do need to read about two-thirds of *Friendship is Optimal* to
