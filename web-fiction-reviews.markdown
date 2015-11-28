@@ -4,7 +4,7 @@ title: Stories I Have Read Online, Which You Can Only Read Online, Which You Sho
 permalink: /webfictionrecs/
 ---
 
-*Last updated November 26, 2015*
+*Last updated November 28, 2015*
 
 Almost all stories I've read the last few years were published
 online. There's something very addicting about being able to read a story wherever
