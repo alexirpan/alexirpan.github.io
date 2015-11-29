@@ -4,7 +4,7 @@ title: Stories I Have Read Online, Which You Can Only Read Online, Which You Sho
 permalink: /webfictionrecs/
 ---
 
-*Last updated November 28, 2015*
+*Last updated November 29, 2015*
 
 Almost all stories I've read the last few years were self-published
 online. There's something very addicting about being able to read a story wherever
@@ -131,6 +131,17 @@ A modern supernatural story that juxtaposes ancient tradition with technological
 advances. Workings of the world are explicitly kept vague and
 ill-defined, which can be frustrating at times.
 Strong start that peters out in the middle, but the final arcs make up for it.
+
+**Ed**, by qntm
+
+Status: Completed
+
+Link: [here](http://qntm.org/ed)
+
+*Ed* is an excuse premise that lets the author explore interesting science
+fiction ideas. It's like *Fine Structure*, but with even flatter characters.
+Nevertheless, if you like reading about mind-bending sci-fi ideas analyzed to
+their logical conclusion, *Ed* will be good for you.
 
 
 [back to top](#table-of-contents)
