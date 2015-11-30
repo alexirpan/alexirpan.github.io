@@ -18,20 +18,20 @@ average this might be the highest quality season yet.
 
 That's why I'm worried.
 Everything about this show and this fandom feels like its living on borrowed time.
-I mean, the 100th episode aired this year. The five year anniversary
-of the show aired this year. A full length season 6 is confirmed, and a
+I mean, the 100th episode aired this year. The five year anniversary episode
+aired this year. Season 6 is confirmed, and a
 feature length movie is in production.
-It's hard to believe the show staff kept the
-heart of the show alive after all these years, but they have.
-My favorite episode of the series aired this season, for crying out loud! (And
+It's hard to believe the show staff have kept the
+heart of the show alive after all this time, but they did.
+My favorite episode of the entire show was in this season, for crying out loud! (And
 I thought nothing was going to top *Pinkie Pride* from season 4.)
-Five seasons later, the jokes are still good and ponies are still subtly
-changing for the better.
+Over five years later, the jokes are still good and the ponies are still going
+through character development.
 A crash feels inevitable, but for now the
 hype train keeps rolling.
 
 That isn't to say this season was perfect.
-I have mixed feelings on season 5's finale, and on its action in general.
+I have mixed feelings on the finale, and on season 5's action in general.
 The show blew all its
 serial escalation on the explosively good season 4 finale, and although that
 shouldn't be a slight against season 5, it still colors my perception of the
@@ -53,6 +53,6 @@ right off, and the envelope wasn't just pushed, it was shoved beyond recognition
 Welcome back to *My Little Pony*. Here's *a desolate wasteland with no civilization*. For kids!
 {: .centered }
 
-It's a great sign for season 6. I don't know if they can keep the charm that's
-kept me watching the show, but this time I'll give them the benefit of the doubt.
+It's a great sign for season 6. I'm still unsure they can keep the charm that
+makes the show great, but this time I'll give them the benefit of the doubt.
 
