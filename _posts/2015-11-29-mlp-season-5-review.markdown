@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Retrospective on Friendship is Magic Season 5"
-date:   2015-11-29 22:06:00 -0800
+date:   2015-11-29 19:19:00 -0800
 ---
 
 *Very minor spoilers for season 5, use your own judgment.*
