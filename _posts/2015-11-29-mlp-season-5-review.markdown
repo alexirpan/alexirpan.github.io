@@ -4,6 +4,8 @@ title:  "Retrospective on Friendship is Magic Season 5"
 date:   2015-11-29 22:06:00 -0800
 ---
 
+*Very minor spoilers for season 5, use your own judgment.*
+
 This was a worrying season. Not because the episodes were bad, but because
 the episodes were surprisingly good.
 
@@ -43,12 +45,16 @@ adventure is counterbalanced by the heart in its slice of life episodes.
 The guiding theme this season was executed very well, and led to a
 lot of touching scenes that felt natural and genuine.
 
-More than anything else, season 5 shows the staff isn't afraid to try something
+More than anything else, this season shows the staff isn't afraid to try something
 new. Episodes have deeper continuity, tons of status quo was told to buck
 right off, and the envelope wasn't just pushed, it was shoved beyond recognition.
 
-IMAGE HERE OF SEASON 5 FINALE
+![wasteland](/public/season5/wasteland.png)
+{: .centered }
+
+Welcome back to *My Little Pony*. Here's *a desolate wasteland with no civilization*.
+{: .centered }
 
 It's a great sign for season 6. I don't know if they can keep the charm that's
-kept me watching the show, but this time I'll give the benefit of the doubt.
+kept me watching the show, but this time I'll give them the benefit of the doubt.
 
