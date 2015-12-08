@@ -1,18 +1,31 @@
 ---
 layout: post
-title:  "MAKE A BETTER TITLE YOU IDIOT"
+title:  "\"How Do You Feel About Grad School?\""
 date:   2015-09-28 23:14:00 -0800
 ---
 
-UGGGHHH GOT DISTRACTED
+General structure: small passages of personal stories, followed by more general thoughts. AKA,
+stealing the New York Times thinkpieces structure.
 
-Okay here's the cliff notes to myself.
+When I get asked this question, here's how I respond.
 
-"So, how do you feel about grad school."
+Internally: *Oh god, I have no idea.
+Oh jeez, oh jeez, can I defer this decision? Yes? Okay, let's do that.*
 
-*Oh god. Oh jeez, oh jeez, can I deflect this? Yes? Okay, let's deflect this.*
+Externally: "Well, I have mixed feelings about it."
 
-"Well, I have mixed feelings about it."
+vignettes:
+- First day in the lab (at start of the semester)
+- First day in the lab (for real)
+    - Includes first talk
+- Weekly catchup with a small group, after having done no work.
+- First meeting with grad student
+
+
+It's the start of Spring 2014. I'm a sophomore and I'm taking my first two CS
+upper divisions, Algorithms and Artificial Intelligence. Well, I had an
+internship last summer, 
+
 
 
 (god that's so tacky. Haven't I used that gimmick enough?)

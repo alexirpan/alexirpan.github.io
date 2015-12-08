@@ -1,2 +1,5 @@
 _site
 .sass-cache
+
+# Vim backup files when I develop in babun
+*~
