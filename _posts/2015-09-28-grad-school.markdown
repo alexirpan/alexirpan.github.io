@@ -21,38 +21,129 @@ vignettes:
 - Weekly catchup with a small group, after having done no work.
 - First meeting with grad student
 
+\*\*\*
+{: .centered}
 
 It's the start of Spring 2014. I'm a sophomore and I'm taking my first two CS
-upper divisions, Algorithms and Artificial Intelligence. Well, I had an
-internship last summer, 
+upper divisions, Algorithms and Artificial Intelligence. I'm about to
+get interviewed by the AI professor on whether I'd be qualifed to do research
+with him.
 
+The professor's office is in the research lab, and the lab is behind a card key
+lock. After waiting 10 minutes, someone lets me in, and we start talking.
 
+"So, what are you interested in researching?"
 
-(god that's so tacky. Haven't I used that gimmick enough?)
+I don't have a good answer to that question. I vaguely like algorithms, and
+have dabbled in AI by coding up game tree search for a few games, but I don't
+know what to say besides that. All I know is that I want to try doing
+research, because I haven't done any yet. I mumble out an incoherent reply,
+and after talking more it's clear I'm not qualified. He wishes me luck in
+the class, and I leave.
 
-Unforunately, I still haven't made up my mind on how I feel about grad school.
-There's a lot of reasons why...
+With no research, no relationships, almost no extracurriculars, and a barely
+functioning social life, I have the freedom to put all the time I want
+into my classes.
 
-There's a perpetual question among CS majors at Berkeley: do you plan to
-go into industry, or go to grad school? I have never heard so much angst about
-grad school outside of the major, and for good reason: industry pays stupidly
-well. The claims of a computer science bubble are widespread, and although I
-haven't thought about it enough to give an opinion, the facts are still the same.
-CS graduates from Berkeley can average over 6 figures (check). Hell, internships
-for CS students pay well over the average. Big name companies sell you with
-perks and the promise of interesting problems. Startups sell you with the dream
-of making a difference in the world, and that slim chance you make it out like
-a king.
+I get the top score on the AI final, placing sixth in the class.
 
-CS grad school sells itself with research. That's it. If you're looking for money,
-grad school isn't for you. If you want to coast through life with a reasonable
-living salary, grad school isn't for you. The only, only plausible reason to go
+The next semester, I start doing research with that professor.
+
+\*\*\*
+{: .centered}
+
+When you're a Berkeley CS major, everyone eventually gets asked the same
+question: are you going into industry, or going to grad school? For years,
+I've always struggled to figure out how to answer that question.
+
+On one hand, the software industry pays stupidly well. Money is pretty far down
+on my priority list, but it's not ignorable. Internships at big name
+companies will pay $6000 or $7000 a month, well over the national average.
+On average, new grads at Berkeley get offers of over $100000 base annual salary.
+(LOOK UP THE STATS.) Frankly, these numbers are ridiculous. It's unclear whether
+these salaries are a bubble or if software actually creates that much economic
+value, but right now that's the state of things.
+
+A job in industry will have immediate impact on the world. Research can have
+incredibly far reaching impact, but it takes five to ten years for research to
+trickle down into industry, and until then very few people know what you're talking about.
+
+Big name companies sell themselves by offering insane perks. Have free lunch,
+have free dinner, we have a ball pit on campus, we have massagers on campus.
+You'll never go hungry with all the food we have here. And by the way, we have
+some interesting problems to solve. You like problem solving, right?
+
+Startups sell you with the dream of changing the world. We're changing how
+people connect with each other. We're changing transportation. You, yes you,
+can make a difference, and if we make it big you'll make it out like a king.
+
+Then, we come to graduate school. A PhD program sells itself with research.
+You will tackle the hardest problems, the ones where no one knows the answer.
+It could take you years to learn your subject of interest. It will be hard,
+and difficult, but in the end you will learn what it feels like to truly
+know something.
+
+If you're looking for money, grad school isn't for you.
+
+If you want to coast through life with a reasonable
+living salary, grad school isn't for you.
+
+The only, only plausible reason to go
 to computer science grad school is because you want to do research.
 
-For many people, that's an immediate deal breaker. But, money isn't one of my
-highest priorities, and I wouldn't know what to do if I wasn't trying to avoid
-endlessly consuming content instead of creating it. So, grad school should be
-a fit, right?
+For many people, that's an immediate deal breaker. For me, it isn't.
+Money isn't my top priority, and I wouldn't feel good about myself if I
+wasn't pushing myself to be better, to be the person I wish I could be instead
+of the person I actually am.
+Grad school should be a good fit, right?
+
+\*\*\*
+{: .centered }
+
+First day in the lab. I'm meeting with a grad student to figure out what topics
+I can do research in. He asks me how much I know about neural nets. Huh.
+What are those?
+
+He explains that you take some input state, apply a linear function to it,
+apply a nonlinearity to that output, repeat it a few times, and get something
+that works on a wide range of problems. I don't understand why this should work,
+and he admits that a lot of things about neural nets aren't well understood.
+After the brief introduction, he mentions a few topics that are interesting,
+and I latch onto the problem of learning how to efficiently search an exponentially
+large state space to find good outcomes.
+
+First week in the lab. I've got an account on one of desktops in the lab. The
+lab's pretty big, around 30-40 computers total. I'm not sure where to start, but
+I know that when people do research, they write papers. I start reading releveant
+papers and work through the tutorials on Theano for building neural nets.
+
+Meanwhile, I overhear the most incomprehensible things.
+
+"Hey, do you understand recurrent neural nets?"
+
+"Kind of? I implemented one a while back."
+
+"Okay, that's more than me. Mind helping me understand LSTMs?"
+
+The words wash over me, and I try not to let it discourage me. I've just
+started, there's no way I should know what they're talking about. Okay, now
+how does this sample code work?
+
+Two hours later, I don't feel any closer to getting things, and I have to go to
+class. Okay, that's also fine. I'll try more later.
+
+The same song and dance continues for the next two weeks. It takes me that long
+to know what I want to do and write code to do it, and nothing I'm doing is
+even nove, it's all reproducing standard methods from the literature.
+
+\*\*\*
+{: .centered }
+
+Research is hard.
+
+No one, not even the most brilliantly arrogant people I know, has ever said
+anything otherwise.
+
 
 
 Welcome to Reality
