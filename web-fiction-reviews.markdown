@@ -4,7 +4,7 @@ title: Stories I Have Read Online, Which You Can Only Read Online, Which You Sho
 permalink: /webfictionrecs/
 ---
 
-*Last updated November 29, 2015*
+*Last updated December 17, 2015*
 
 Almost all stories I've read the last few years were self-published
 online. There's something very addicting about being able to read a story wherever
@@ -311,5 +311,25 @@ Link: [here](http://archiveofourown.org/works/1536152/chapters/3251618)
 An AU where Taylor triggers with a completely broken power, and uses it to
 troll the entire setting. At the same time, her power still has limits, which lets
 her avoid Mary Sue issues. Lighthearted and all around fun.
+
+[back to top](#table-of-contents)
+
+
+# Firefly
+
+*You can't take the sky from me.*
+
+**Forward**, by Peptuck
+
+Status: Incomplete, kind of dead
+
+Spoilers: Everything up to the movie
+
+Link: [here](https://www.fanfiction.net/s/4099993/1/Forward)
+
+A hypothetical Season Two, set after Serenity with some retcons. Characters and
+stories feel very true to the show, with plenty of references to both Firefly canon and
+other works. I would avoid reading the Author's Notes unless you're okay with
+spoilers on how the current episode will play out.
 
 [back to top](#table-of-contents)
