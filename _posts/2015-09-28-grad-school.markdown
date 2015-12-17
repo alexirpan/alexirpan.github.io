@@ -142,8 +142,28 @@ even nove, it's all reproducing standard methods from the literature.
 Research is hard.
 
 No one, not even the most brilliantly arrogant people I know, has ever said
-anything otherwise.
+anything otherwise. Getting no progress for a few weeks is expected. Getting
+marginal progress after a few months is entirely believable. These are things
+that everyone who does research says, but it doesn't prepare you for the reality.
+The shift from classes to research is jarring, and even when I knew it was coming
+it still hit like a freight train.
 
+Every top CS graduate school program will ask for your prior research experience.
+The obvious reason they ask for this is because they want to know who will be
+a good PhD student, but there's an implicit reason to this too. Once you remove
+the structure of a class, of homework sets, of midterms and finals and grades,
+a grad student needs to have the motivation to keep learning new things. Study
+material almost exclusively for the sake of learning something interesting, when
+no one will notice of care if you don't.
+
+I'm getting better at this, but it's still just as tricky as when I first started.
+
+REPHRASE THIS SECTION
+
+\*\*\*
+{: .centered }
+
+Two months into the semester, I still feel like a massive fraud.
 
 
 Welcome to Reality
