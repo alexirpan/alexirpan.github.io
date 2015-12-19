@@ -47,7 +47,7 @@ into my classes.
 
 I get the top score on the AI final, placing sixth in the class.
 
-The next semester, I start doing research with that professor.
+The next semester, I start doing research.
 
 \*\*\*
 {: .centered}
@@ -123,7 +123,7 @@ Meanwhile, I overhear the most incomprehensible things.
 
 "Kind of? I implemented one a while back."
 
-"Okay, that's more than me. Mind helping me understand LSTMs?"
+"Okay, that's better than me. Mind helping me understand LSTMs?"
 
 The words wash over me, and I try not to let it discourage me. I've just
 started, there's no way I should know what they're talking about. Okay, now
@@ -132,9 +132,23 @@ how does this sample code work?
 Two hours later, I don't feel any closer to getting things, and I have to go to
 class. Okay, that's also fine. I'll try more later.
 
-The same song and dance continues for the next two weeks. It takes me that long
-to know what I want to do and write code to do it, and nothing I'm doing is
-even nove, it's all reproducing standard methods from the literature.
+The same song and dance continues for the next two weeks. I go to the weekly
+group meeting, and get lost on literally the first slide. I start reading
+the literature, and get daunted at all the impressive results I see. During my
+one-on-one meeting, I mention that it feels like the problem I was working on
+was already solved, and the graduate student has to gently remind me that
+things aren't true just because someone writes a paper about it. All that means
+is that the method works on exactly the problems mentioned in the paper, and
+probably fails on a few problems that the authors didn't include.
+After hearing that, and after reading The Control Group Is OUt Of Control (LINK),
+I start treating papers as guidelines instead of cold hard truth, but that
+doesn't help me stop drowning as I realize how deep everything goes.
+
+By the time I realize I can (and should) be implementing an algorithm straight
+out of the AI course I took, it's been three weeks.
+
+By the time I understand and implement my first neural net in Theano, it's
+been a month and a half.
 
 \*\*\*
 {: .centered }
@@ -145,6 +159,8 @@ No one, not even the most brilliantly arrogant people I know, has ever said
 anything otherwise. Getting no progress for a few weeks is expected. Getting
 marginal progress after a few months is entirely believable. These are things
 that everyone who does research says, but it doesn't prepare you for the reality.
+As an undergrad, I found this even worse, because I was so used to courses.
+STEAL FROM FB POST HERE.
 The shift from classes to research is jarring, and even when I knew it was coming
 it still hit like a freight train.
 
@@ -163,7 +179,18 @@ REPHRASE THIS SECTION
 \*\*\*
 {: .centered }
 
-Two months into the semester, I still feel like a massive fraud.
+It's two months since I started. I had some ideas, did a literature check, and
+found out somebody implemented them eight years ago. I'm filled with confidence.
+Another researcher had the same idea, and it led to a publication! My idea is valid!
+Maybe I'm not a fraud after all. It reinforces one of the vague principles
+in my brain: I'm not special, I'm just a person. Taking wisdom from tips about
+startups, the marketplace for ideas is competitive. Either an idea is old hat,
+or many people are discovering it simultaneously.
+
+NOT ACTUALLY ACCURATE HERE. (I dropped 104 around week 4 IIRC)
+
+The next few weeks pass uneventfully. Then it all goes wrong. Horribly long
+problem sets overlap each other and they
 
 
 Welcome to Reality
