@@ -190,7 +190,26 @@ or many people are discovering it simultaneously.
 NOT ACTUALLY ACCURATE HERE. (I dropped 104 around week 4 IIRC)
 
 The next few weeks pass uneventfully. Then it all goes wrong. Horribly long
-problem sets overlap each other and they
+problem sets overlap each other. I'm trying to learn about thread schedulers
+and clopen sets and infinite-dimensional vector spaces and Jacobians and
+it's a mess. A complete mess. By the time I finish everything to my satisfaction,
+I have no time for research that week. I sheepishly try to cobble something
+together in time for my one-on-one, but
+there's not much I can do with no code and no ideas.
+
+In my meeting, I hear disappointment in his words, and I can't
+tell if he's actually disappointed or if I'm adding my self-loathing into
+his speech because that's what I want to hear.
+
+That afternoon, I lie on my bed and stare at the ceiling, thinking about nothing
+for a long time.
+
+*You're pushing yourself too hard.*
+
+*Or maybe*, says another voice, *maybe you weren't pushing yourself enough
+before, and now you are. Do you believe in growth through adversity or not?*
+
+I can't reconcile the two.
 
 
 Welcome to Reality
