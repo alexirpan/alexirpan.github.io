@@ -4,15 +4,10 @@ title:  "\"How Do You Feel About Grad School?\""
 date:   2015-09-28 23:14:00 -0800
 ---
 
-General structure: small passages of personal stories, followed by more general thoughts. AKA,
-stealing the New York Times thinkpieces structure.
-
-When I get asked this question, here's how I respond.
-
-Internally: *Oh god, I have no idea.
+Internal response: *Oh god, I have no idea.
 Oh jeez, oh jeez, can I defer this decision? Yes? Okay, let's do that.*
 
-Externally: "Well, I have mixed feelings about it."
+External response: "Well, I have mixed feelings about it."
 
 vignettes:
 - First day in the lab (at start of the semester)
@@ -52,9 +47,22 @@ The next semester, I start doing research.
 \*\*\*
 {: .centered}
 
-When you're a Berkeley CS major, everyone eventually gets asked the same
-question: are you going into industry, or going to grad school? For years,
-I've always struggled to figure out how to answer that question.
+Just this once, let's set aside all self-deprecation and doublethink about
+myself.
+
+Objectively, I am doing very well in the Berkeley CS program.
+
+And as someone who has more A's than B's on their transcript, everyone
+eventually asks me what my future plans are. Or to be more precise, everyone
+assumes my future plans are graduate school. Isn't it obvious?
+Look at this man: high GPA, doing research, taking graduate classes in
+junior year because he's run out of upper division courses that interest him.
+That's not the face of someone who plans to work in industry, shuffling bits
+day in and they out. They're an academic, through and thorugh.
+
+Well...
+
+(I like this so far, but I need a good connector.)
 
 On one hand, the software industry pays stupidly well. Money is pretty far down
 on my priority list, but it's not ignorable. Internships at big name
