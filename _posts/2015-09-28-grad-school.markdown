@@ -38,7 +38,7 @@ the class, and I leave.
 
 With no research, no relationships, almost no extracurriculars, and a barely
 functioning social life, I have the freedom to put all the time I want
-into my classes.
+into schoolwork.
 
 I get the top score on the AI final, placing sixth in the class.
 
@@ -209,38 +209,35 @@ In my meeting, I hear disappointment in his words, and I can't
 tell if he's actually disappointed or if I'm adding my self-loathing into
 his speech because that's what I want to hear.
 
-That afternoon, I lie on my bed and stare at the ceiling, thinking about nothing
-for a long time.
+That afternoon, I lie on my bed and stare at the ceiling, thoughts swirling
+in my head.
 
-*You're pushing yourself too hard.*
+*You're pushing yourself too hard. You need to slow down.*
 
 *Or maybe*, says another voice, *maybe you weren't pushing yourself enough
 before, and now you are. Do you believe in growth through adversity or not?*
 
-I can't reconcile the two.
+*I do. I really do. It doesn't mean I'm not pushing myself too hard.*
 
+\*\*\*
+{: .centered }
 
-Welcome to Reality
---------------------------------------
+The blessing and curse of the Information Age is that if you want to
+learn something, you can. Ever wondered what gerrymandering was? Here, go
+to Wikipedia. What about World War II? Well, that's covered too, in volumes and
+volumes of books, and also in a few comics, and also in an anime.
 
-The blessing (and curse) of the Information Age is that if you want to
-learn about something, you can. Ever wondered what gerrymandering was? Here, go
-to Wikipedia. Maybe you want to know what James Potter did for a job. Well,
-this site has you covered.
+One day, I find out Orson Scott Card's political views clash with your own.
+The work is divided from the author, but it slightly colors how you perceive
+any novels he writes. The next, I read that if the US had invaded Cuba during the Cuban
+Missile Crisis, Fidel Castro would have ordered a nuclear attack, knowing it
+would be the end of the world.
 
-Maybe you want to find out about the nuclear warheads that disappeared, whereabouts
-unknown.
+One day I binge read PhD Comics and The PhD Grind.
 
-Maybe you want to learn about Orson Scott Card because you enjoyed *Ender's Game*,
-and find out his political views clash with your own, slightly poisoning how
-you read the rest of his books.
-
-That's the difference. I don't think the world's any more or less moral than it
-is now, the only difference is that the brightest and darkest moments are so much
-easier to find and learn about.
-
-(that Futurama fry meme. NOt sure if world is getting worse, or if it was always
-like this and now I'm old enough to see it.)
+When it comes to graduate school, you don't have to look very hard to find the
+black humor. You also don't have to look very hard to find stories that are
+dark with no laughs.
 
 When it comes to grad school, it's no different. You don't even have to look
 very deep; read just a bit of PhD comics and you'll pick up the black humor
