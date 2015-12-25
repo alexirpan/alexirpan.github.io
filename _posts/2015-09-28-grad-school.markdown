@@ -4,17 +4,39 @@ title:  "\"How Do You Feel About Grad School?\""
 date:   2015-09-28 23:14:00 -0800
 ---
 
-Internal response: *Oh god, I have no idea.
-Oh jeez, oh jeez, can I defer this decision? Yes? Okay, let's do that.*
+Outline:
+    The goal is to tie the personal stories into the greater reasoning of how I
+    feel about grad school. It makes most sense to do stories chronologically,
+    and that should guide the general passages.
+    - Beginning, where I don't know what research is like
+    - Starting research for first time. Imposter feelings, trying to keep up.
+    - Middle section. Don't have the time, too busy, too much work.
+    - Get some interesting data.
+    - End: go to a group meeting, actually understand most of it. Book ends
+    the first group meeting I go to?
+    - Or, I can book end with my final talk with the professor.
 
-External response: "Well, I have mixed feelings about it."
+    General passages:
+    - Imposter syndrome.
+    - The work/feeling of always having more to do.
+    - Potential impact between industry and grad school. (This can probably
+    be expanded into reasons between the two.)
 
-vignettes:
+    I don't want this to be fully negative, and want to fit in reasons to
+    do a PhD. It's hard to figure out where.
+
+
+Potential vignettes:
 - First day in the lab (at start of the semester)
 - First day in the lab (for real)
     - Includes first talk
 - Weekly catchup with a small group, after having done no work.
 - First meeting with grad student
+
+Internal response: *Oh god, I have no idea.
+Oh jeez, oh jeez, can I defer this decision? Yes? Okay, let's do that.*
+
+External response: "Well, I have mixed feelings about it."
 
 \*\*\*
 {: .centered}
@@ -62,48 +84,43 @@ day in and they out. They're an academic, through and thorugh.
 
 Well...
 
-(I like this so far, but I need a good connector.)
-
-On one hand, the software industry pays stupidly well. Money is pretty far down
-on my priority list, but it's not ignorable. Internships at big name
-companies will pay $6000 or $7000 a month, well over the national average.
+On one hand, the software industry pays stupidly well. Internships at big name
+companies pay $6000 or $7000 a month, well over the national average.
 On average, new grads at Berkeley get offers of over $100000 base annual salary.
-(LOOK UP THE STATS.) Frankly, these numbers are ridiculous. It's unclear whether
-these salaries are a bubble or if software actually creates that much economic
-value, but right now that's the state of things.
+(LOOK UP THE STATS.) Frankly, these numbers are ridiculous.
 
-A job in industry will have immediate impact on the world. Research can have
-incredibly far reaching impact, but it takes five to ten years for research to
-trickle down into industry, and until then very few people know what you're talking about.
+Big name companies sell themselves by offering insane perks. Free lunch,
+free dinner, we have a ball pit on campus, we have massagers on campus.
+You'll never go hungry, and by the way we have
+some interesting problems that need solving.
 
-Big name companies sell themselves by offering insane perks. Have free lunch,
-have free dinner, we have a ball pit on campus, we have massagers on campus.
-You'll never go hungry with all the food we have here. And by the way, we have
-some interesting problems to solve. You like problem solving, right?
+Or, you can work at a startup.
+Startups sell you with the dream of changing the world, or at least the dream
+of mkaing it rich. We're changing how people connect with each other.
+We're changing transportation. Join now, and if we make it big you'll make it
+out like a king.
 
-Startups sell you with the dream of changing the world. We're changing how
-people connect with each other. We're changing transportation. You, yes you,
-can make a difference, and if we make it big you'll make it out like a king.
+How does a computer science PhD program compete with that? It sells itself
+with research. In a PhD program, you will tackle the hardest problems,
+the ones where no one knows the answer. You will devote the next few years
+towards learning as much as you want in your quest to solve one of those problems.
+It will be hard, difficult, and poorly paid, but in the end you will learn
+what it feels like to truly know something.
 
-Then, we come to graduate school. A PhD program sells itself with research.
-You will tackle the hardest problems, the ones where no one knows the answer.
-It could take you years to learn your subject of interest. It will be hard,
-and difficult, but in the end you will learn what it feels like to truly
-know something.
+If you're looking for money, grad school isn't for you. You'll make more in
+industry, and the money lost by not working won't make up for whatever higher
+salary you'll get aftewards.
 
-If you're looking for money, grad school isn't for you.
+If you want to coast through life with a reasonable living salary, grad school
+isn't for you. You'll live, but you'll live cheaply, and you certainly won't
+coast in a PhD program.
 
-If you want to coast through life with a reasonable
-living salary, grad school isn't for you.
+The only valid reason to go to CS grad school is because you want to do research.
 
-The only, only plausible reason to go
-to computer science grad school is because you want to do research.
+Well, that makes answering the title question easier.
+Did I want to do research sophomore spring? Yes! Definitely!
 
-For many people, that's an immediate deal breaker. For me, it isn't.
-Money isn't my top priority, and I wouldn't feel good about myself if I
-wasn't pushing myself to be better, to be the person I wish I could be instead
-of the person I actually am.
-Grad school should be a good fit, right?
+Do I want to do research now? Uh, maybe. I'm not sure. Let me think about it.
 
 \*\*\*
 {: .centered }
@@ -152,11 +169,97 @@ After hearing that, and after reading The Control Group Is OUt Of Control (LINK)
 I start treating papers as guidelines instead of cold hard truth, but that
 doesn't help me stop drowning as I realize how deep everything goes.
 
-By the time I realize I can (and should) be implementing an algorithm straight
-out of the AI course I took, it's been three weeks.
+It takes me two weeks to realize I can (and should) be implementing an
+algorithm straight out of the AI course I took. It's simple, it might work, and
+it's better than nothing.
 
-By the time I understand and implement my first neural net in Theano, it's
-been a month and a half.
+It takes me another two weeks to understand and implement my first neural net in
+Theano.
+
+\*\*\*
+
+Graduate school demands you to be excellent.
+
+Many people apply for graduate school programs
+at top universities. Most people who get accepted have 3.5 GPA or higher, even
+with difficult course loads.
+At this point GPA stops mattering, because all admissions really cares about
+is the prior research experience. Well, then it gets crazier, because
+every applicant will have quite a bit of research and a solid recommendation.
+There's self selection, because people who aren't strong academically or don't
+have research will not even be interested in graduate school.
+For AI, this is especially bad, because AI is an incredibly hot field. (CITE HERE)
+AI and Algorithms make up over half of all applicants to CS PhD programs,
+which makes competition especially fierce.
+We're talking almost perfect 4.0, first or second author on a publication,
+researched their topic for two years in undergrad, the works.
+The good ones (or lucky ones) get in, and start their journey.
+
+At least a quarter of them will drop out.
+
+That's not a joke. It's the CMU drop out rate as of 2014. You need incredible
+talent and dedication to even get into a program as good as CMU, and even
+those people, that brilliant collection of budding researchers, a quarter of them
+won't finish their PhD.
+
+To me, the further up academia you go, the tighter the funnel gets. The top
+performers in high school are average in college. The top performers in undergrad
+are average as grad students. The top grad students are average as professors,
+of which some are tenure track and some are not. There is no top, *it keeps
+going*.
+
+It takes a very confident person to believe they can make it all the way
+up the hierarchy, and it takes a very dedicated person to actually do so.
+
+Where does that leave me? How am I supposed to handle it when I know several people
+who have publications, and everyone around me is talking one level over my head?
+
+(Cut below paragraph, move ideas around.)
+
+Once you get up that high, almost everyone has inferiority complexes (???) and
+stays humble, and now they're asked to prove they're the shiniest diamond in all
+the land. It's a staggeringly tall order, and the prospects if you aren't
+near the top seem especially bad. Around a quarter of adjunct faculty are on
+food stamps, and that's assuming you can even find one at all. Alternatively,
+you can apply for a CS research lab, but I've heard those are as competitive
+as getting faculty positions.
+
+\*\*\*
+
+Two hour break between lectures. That leaves enough time to fit in a bit
+of research. A novel idea pops into my head. I do a literature check, and find my
+exact idea in a paper from eight years ago.
+
+Confidence runs through me
+Another researcher had the same idea, and they got a paper out of it!
+Maybe I'm not a fraud after all. I spend the rest of the week reading and
+implementing.
+
+Then, it all goes wrong. All my classes ramp up at the same time.
+I spend my days going to lecture and my nights doing homework and projects,
+Sorry research, I don't have time for you. I need to learn about thread schedulers
+and clopen sets and infinite-dimensional vector spaces and Jacobians and
+you need to wait. You have to wait. Please.
+
+By the end of the week, I've done literally no research.
+I sheepishly try to cobble something together in time for my one-on-one, but
+I can't do much with no new ideas and no new code.
+
+In my meeting, I hear disappointment in his words, and I can't
+tell if he's actually disappointed or if I'm adding my self-loathing into
+his speech because that's what I want to hear. I have time that afternoon,
+but I go home instead, because I'm in too bad a mood to work effectively.
+
+Instead of catching up on work or catching up with friends, I lie on my bed
+and stare at the ceiling, thoughts swirling in my head.
+
+*You're pushing yourself too hard. You need to slow down.*
+
+*Or maybe*, says another voice, *maybe you weren't pushing yourself enough,
+and now you are. Do you believe in growth through adversity or not?*
+
+*I do. I really do. That doesn't mean I can't push myself too much.*
+
 
 \*\*\*
 {: .centered }
@@ -164,60 +267,18 @@ been a month and a half.
 Research is hard.
 
 No one, not even the most brilliantly arrogant people I know, has ever said
-anything otherwise. Getting no progress for a few weeks is expected. Getting
-marginal progress after a few months is entirely believable. These are things
-that everyone who does research says, but it doesn't prepare you for the reality.
-As an undergrad, I found this even worse, because I was so used to courses.
-STEAL FROM FB POST HERE.
-The shift from classes to research is jarring, and even when I knew it was coming
-it still hit like a freight train.
+otherwise. Professors talk about the long hours, 60 to 80 hour work weeks,
+and for most of the time you're stuck on a problem.
+By failing so many times, you learn something, but it can be hard to see the upside
+when you can only say what doesn't work instead of what does.
 
-Every top CS graduate school program will ask for your prior research experience.
-The obvious reason they ask for this is because they want to know who will be
-a good PhD student, but there's an implicit reason to this too. Once you remove
-the structure of a class, of homework sets, of midterms and finals and grades,
-a grad student needs to have the motivation to keep learning new things. Study
-material almost exclusively for the sake of learning something interesting, when
-no one will notice of care if you don't.
+As an undergrad, I found this even worse, because I was so used to the problem
+solving from math competitions and courses.
+Given a choice between a several hour homework problem, and a research problem
+that takes
+20 hours optimistically and years pessimistically, it's a lot easier to choose
+the homework instead.
 
-I'm getting better at this, but it's still just as tricky as when I first started.
-
-REPHRASE THIS SECTION
-
-\*\*\*
-{: .centered }
-
-It's two months since I started. I had some ideas, did a literature check, and
-found out somebody implemented them eight years ago. I'm filled with confidence.
-Another researcher had the same idea, and it led to a publication! My idea is valid!
-Maybe I'm not a fraud after all. It reinforces one of the vague principles
-in my brain: I'm not special, I'm just a person. Taking wisdom from tips about
-startups, the marketplace for ideas is competitive. Either an idea is old hat,
-or many people are discovering it simultaneously.
-
-NOT ACTUALLY ACCURATE HERE. (I dropped 104 around week 4 IIRC)
-
-The next few weeks pass uneventfully. Then it all goes wrong. Horribly long
-problem sets overlap each other. I'm trying to learn about thread schedulers
-and clopen sets and infinite-dimensional vector spaces and Jacobians and
-it's a mess. A complete mess. By the time I finish everything to my satisfaction,
-I have no time for research that week. I sheepishly try to cobble something
-together in time for my one-on-one, but
-there's not much I can do with no code and no ideas.
-
-In my meeting, I hear disappointment in his words, and I can't
-tell if he's actually disappointed or if I'm adding my self-loathing into
-his speech because that's what I want to hear.
-
-That afternoon, I lie on my bed and stare at the ceiling, thoughts swirling
-in my head.
-
-*You're pushing yourself too hard. You need to slow down.*
-
-*Or maybe*, says another voice, *maybe you weren't pushing yourself enough
-before, and now you are. Do you believe in growth through adversity or not?*
-
-*I do. I really do. It doesn't mean I'm not pushing myself too hard.*
 
 \*\*\*
 {: .centered }
@@ -230,30 +291,46 @@ volumes of books, and also in a few comics, and also in an anime.
 One day, I find out Orson Scott Card's political views clash with your own.
 The work is divided from the author, but it slightly colors how you perceive
 any novels he writes. The next, I read that if the US had invaded Cuba during the Cuban
-Missile Crisis, Fidel Castro would have ordered a nuclear attack, knowing it
-would be the end of the world.
+Missile Crisis, Fidel Castro would have ordered a nuclear attack, even knowing
+he would have died to the reply.
 
-One day I binge read PhD Comics and The PhD Grind.
+One day I binge read PhD Comics and The PhD Grind, and the bleak picture of
+academia is exposed to my eyes for the first time.
 
 When it comes to graduate school, you don't have to look very hard to find the
 black humor. You also don't have to look very hard to find stories that are
-dark with no laughs.
+dark with no laughs. Similar refrains come up.
 
-When it comes to grad school, it's no different. You don't even have to look
-very deep; read just a bit of PhD comics and you'll pick up the black humor
-pretty quick. Here you are, working on your PhD, doing research in something that
-you can only explain to around a few hundred and only really explain to a few tens.
-Meanwhile, the outside world keeps on spinning, as everyone with "real" jobs
-seems to actually be happy and unstressed...
+> "I'm doing research in something that I can't even explain to people I know"
+>
+> "Here I am, stuck with no progress after five months,
+> while my friends have jobs, families, and money."
+>
+> "Pulled an all-nighter for that paper deadline. Can't even crash the next day,
+> too many other things to finish."
 
-Or, maybe you read the PhD grind, a frank account of the author's experience
-going through the PhD program at Stanford. If you are at all interested in going
-for a PhD, I consider it required reading material. There are a lot of comments
-that resonated with me, most especially this one.
+The PhD grind is especially effective in portraying the grinding conditions
+the author went through. PhD Comics is hyperbolic for the sake of comedy,
+but The PhD Grind is real. I consider it required material if you want to
+learn what a PhD can really mean.
+
+Together, they paint a gloomy picture of academia. In academia, you voluntarily
+are taking low pay and long hours in the name of research. Or as said by
+(CITE), "A PhD costs you around a house."
+
+So, if it sounds so bad, why was choosing not to go to graduate school such a
+hard decision?
+
+Research can be depressing and relentless, but it's still science.
+
+
+A lot of sections resonated with me, but my favorite was this one.
 
 > I discovered over the past 5 years that I love being a spectator of
 > research, but the burden of being a continual producer of new research is
 > just too great for me.
+
+
 
 That's the problem. That's the root cause of all my indecision. People take
 a lot of technology for granted, but when I step back and take a look, **really**
@@ -270,37 +347,6 @@ several months of work.
 The machine of research is a beautiful piece of work, and it can be gratifying to
 know you are literally building the future, but in the end you're still just
 one cog in a mass of gears and wires.
-
-\*\*\*
-
-There's a common refrain among professors to prospective graduate students:
-"If you could be happy doing anything else, don't go into academia."
-
-FLESH THIS OUT AND REORGANIZE IT LATER
-
-\*\*\*
-
-Grad school demands you to be excellent.
-
-Here's how it goes: some number of people get into graduate school programs
-at top universities. The vast majority have GPAs very close to 4.0, have prior
-research experience, and have an idea of what they want to do research in.
-At least a quarter of them will drop out, possibly with an MS.
-(That's the CMU drop out rate as of 2014.)
-
-When going into top universities like Berkeley for undergrad, people talk about
-how they were the top of their class in high school, and now they have to
-get used to being average. The same logic applies to graduate school, but
-now the standard for "average" is a 3.5 GPA from a top university. Then, you need
-to somehow standout among that crowd when looking for faculty positions to snag
-a tenure-track position instead of an adjunct, then need to stand out for tenure...
-Once you get up that high, almost everyone has inferiority complexes (???) and
-stays humble, and now they're asked to prove they're the shiniest diamond in all
-the land. It's a staggeringly tall order, and the prospects if you aren't
-near the top seem especially bad. Around a quarter of adjunct faculty are on
-food stamps, and that's assuming you can even find one at all. Alternatively,
-you can apply for a CS research lab, but I've heard those are as competitive
-as getting faculty positions.
 
 \*\*\*
 
