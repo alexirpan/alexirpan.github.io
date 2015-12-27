@@ -4,7 +4,8 @@ title:  "\"How Do You Feel About Grad School?\""
 date:   2015-09-28 23:14:00 -0800
 ---
 
-Outline:
+Outline
+
     The goal is to tie the personal stories into the greater reasoning of how I
     feel about grad school. It makes most sense to do stories chronologically,
     and that should guide the general passages.
@@ -33,56 +34,79 @@ Potential vignettes:
 - Weekly catchup with a small group, after having done no work.
 - First meeting with grad student
 
-Internal response: *Oh god, I have no idea.
-Oh jeez, oh jeez, can I defer this decision? Yes? Okay, let's do that.*
+POST CONTENT FOLLOW BELOW
 
-External response: "Well, I have mixed feelings about it."
+\*\*\*
+
+I chose not to apply to grad school this year.
+
+It seems like everyone I know assumed my future plans were graduate school,
+so I want to explain why it was never inevitable, depite whatever it may have
+looked like.
+
 
 \*\*\*
 {: .centered}
 
-It's the start of Spring 2014. I'm a sophomore and I'm taking my first two CS
-upper divisions, Algorithms and Artificial Intelligence. I'm about to
-get interviewed by the AI professor on whether I'd be qualifed to do research
-with him.
+**Start of Spring semester, 2014**
 
-The professor's office is in the research lab, and the lab is behind a card key
-lock. After waiting 10 minutes, someone lets me in, and we start talking.
+I'm a sophomore taking my first upper division courses, Algorithms and
+Artificial Intelligence. I applied to a few research postings, because
+so far I had done well and it seemd like The Thing To Do.
+Surprisingly, I actually get a reply from the professor of the AI
+course.
 
+Right away, it feels like I don't belong. He interviews all candidates in
+person, except his office is in the research lab, and I don't have card
+key access. I end up waiting outside the door for five minutes before someone
+lets me in.
+
+We sit down, and the first thing out of his mouth is
 "So, what are you interested in researching?"
 
-I don't have a good answer to that question. I vaguely like algorithms, and
-have dabbled in AI by coding up game tree search for a few games, but I don't
-know what to say besides that. All I know is that I want to try doing
-research, because I haven't done any yet. I mumble out an incoherent reply,
-and after talking more it's clear I'm not qualified. He wishes me luck in
-the class, and I leave.
+I don't have a good answer. I like algorithms. I like AI. That's why I signed
+up for those upper divisions. I have no idea what research is, and I say as much.
+After talking more, it's clear I'm not qualified right now.
+He wishes me luck in the class, and I leave.
 
 With no research, no relationships, almost no extracurriculars, and a barely
 functioning social life, I have the freedom to put all the time I want
 into schoolwork.
 
-I get the top score on the AI final, placing sixth in the class.
+I get the top score on the AI final.
 
 The next semester, I start doing research.
 
 \*\*\*
 {: .centered}
 
-Just this once, let's set aside all self-deprecation and doublethink about
-myself.
+I don't like to brag about my academic accomplishments. In high school, I used to
+care more, but in college I've tried to make a conscious shift towards whether
+I learned the material, instead of whether I've learned exactly what appears on
+the final. Those two goals don't always align with each other. I have leaned
+towards the grade a lot more than I should, and it definitely feels like
+I would know more if I didn't study towards the test so much.
 
-Objectively, I am doing very well in the Berkeley CS program.
+That being said, I do need to explain why people thought I was going to grad school.
+I have more As than Bs on my transcript. Some of those As are A+s.
+I've taken four technicals every semester, which is rare but not uncommon.
+(Okay, I only did three this semester, but in my defense it was my first time TAing.)
+I started taking graduate CS courses
+in junior year, because I ran out of upper divisions I was interested in.
 
-And as someone who has more A's than B's on their transcript, everyone
-eventually asks me what my future plans are. Or to be more precise, everyone
-assumes my future plans are graduate school. Isn't it obvious?
-Look at this man: high GPA, doing research, taking graduate classes in
-junior year because he's run out of upper division courses that interest him.
-That's not the face of someone who plans to work in industry, shuffling bits
-day in and they out. They're an academic, through and thorugh.
+So from the outside, it really, really does not look like I plan to go into
+industry. I must be an academic, through and through.
 
-Well...
+That's what it looks like. In reality, I have no earthly idea if I am.
+
+Getting good grades shows you have good work ethic or good talent.
+
+It shows you have the potential to be a good researcher. It doesn't make you one.
+
+\*\*\*
+{: .centered }
+
+(Move these paragraphs elsewhere.)
 
 On one hand, the software industry pays stupidly well. Internships at big name
 companies pay $6000 or $7000 a month, well over the national average.
