@@ -149,24 +149,26 @@ Do I want to do research now? Uh, maybe. I'm not sure. Let me think about it.
 \*\*\*
 {: .centered }
 
-First day in the lab. I'm meeting with a grad student to figure out what topics
-I can do research in. He asks me how much I know about neural nets. Huh.
-What are those?
+**Start of Fall semester, 2014**
 
-He explains that you take some input state, apply a linear function to it,
-apply a nonlinearity to that output, repeat it a few times, and get something
-that works on a wide range of problems. I don't understand why this should work,
+First day in the lab. I meet with a grad student to figure out what topics
+I can do research in. He asks me how much I know about neural nets.
+
+Huh. What are those?
+
+"The basic idea is to take your input features, apply a linear transformation,
+then apply a nonlinear function to that. If you repeat this enough times, it
+can solve a wide range of problems."
+
+I don't understand why this works
 and he admits that a lot of things about neural nets aren't well understood.
-After the brief introduction, he mentions a few topics that are interesting,
-and I latch onto the problem of learning how to efficiently search an exponentially
-large state space to find good outcomes.
+We talk a bit more, and I decide to study search methods.
 
-First week in the lab. I've got an account on one of desktops in the lab. The
-lab's pretty big, around 30-40 computers total. I'm not sure where to start, but
-I know that when people do research, they write papers. I start reading releveant
-papers and work through the tutorials on Theano for building neural nets.
-
-Meanwhile, I overhear the most incomprehensible things.
+A few days later, I get an account on a lab machine.
+I'm not sure where to start, but I know that when people do research, they write
+papers, so I start there.
+As I read the literature and work through neural net tutorials, I overhear
+some discussion.
 
 "Hey, do you understand recurrent neural nets?"
 
@@ -174,31 +176,59 @@ Meanwhile, I overhear the most incomprehensible things.
 
 "Okay, that's better than me. Mind helping me understand LSTMs?"
 
-The words wash over me, and I try not to let it discourage me. I've just
-started, there's no way I should know what they're talking about. Okay, now
-how does this sample code work?
+I don't understand a word of it. I try not to let it discourage me. I've just
+started, there's no way I should know what they're talking about.
 
 Two hours later, I don't feel any closer to getting things, and I have to go to
-class. Okay, that's also fine. I'll try more later.
+class. That's fine. I'll try more later.
 
 The same song and dance continues for the next two weeks. I go to the weekly
-group meeting, and get lost on literally the first slide. I start reading
-the literature, and get daunted at all the impressive results I see. During my
-one-on-one meeting, I mention that it feels like the problem I was working on
-was already solved, and the graduate student has to gently remind me that
-things aren't true just because someone writes a paper about it. All that means
-is that the method works on exactly the problems mentioned in the paper, and
-probably fails on a few problems that the authors didn't include.
-After hearing that, and after reading The Control Group Is OUt Of Control (LINK),
-I start treating papers as guidelines instead of cold hard truth, but that
-doesn't help me stop drowning as I realize how deep everything goes.
+group meeting, and get lost on literally the first slide.
+During my one-on-one meeting, I mention that my problem feels well-solved because
+of how many papers there are on it, and the graduate student has to gently
+remind me that a research paper doesn't make something true. A paper means
+exactly what it says; the method used works on exactly the experiments in the
+paper, and may or may not work anywhere else. My faith in scientific studies
+drops dramatically. (It bottoms out after I read The Control Group Is Out Of
+Control (LINK).)
+I start treating papers as guidelines for promising ideas, but there's still
+a vast ocean of prior work, and that mindset doesn't help me swim.
 
-It takes me two weeks to realize I can (and should) be implementing an
-algorithm straight out of the AI course I took. It's simple, it might work, and
-it's better than nothing.
+It takes me two weeks before I feel ready to even write any code.
 
-It takes me another two weeks to understand and implement my first neural net in
-Theano.
+It takes me another two weeks to write my first neural net in Theano.
+
+\*\*\*
+
+Research is hard.
+
+No one, not even the most brilliantly arrogant people I know, has ever said
+otherwise. Professors talk about the long hours, 60 to 80 hour work weeks,
+and for most of the time you're stuck on a problem. Of course, you're
+not really stuck, because by failing so many times, you learn when an approach
+doesn't work. Still, it can be hard to see the upside when you have no positive
+results.
+
+This makes scientific research a fundamentally different problem from homework.
+The nicest quote explaining this is from the book "Countdown", describing
+a speech Andrew Wiles gave at the International Math Olympiad.
+
+> Solving Olympiad problems is not like doing mathematical research and is not
+> necessarily the best training for research. Working at the mathematical
+> frontiers is more like a marathon than a sprint. Problems can take many years to solve,
+> and you never know for sure whether you're going to make the finish line. "The
+> transition from a sprint to a marathon requires a new kind of stamina and a
+> profoundly different test of character," he said. "We admire someone who can win
+> a gold medla in four successive Olympic Games, not so much for the raw talent
+> as for the strength of will and determinatino to purse a goal over such a
+> sustained period of time. [...] You can forget the idea, if you ever had it,
+> that all you require is a bit of natural genius and that then you can wait for
+> inspiration to strike."
+
+I read "Countdown" in high school, but the sheer difficulty of research
+still blindsided me. It led to me not doing as much research as I should have.
+Given a choice between a two hour homework problem and a two month
+research problem, it was a lot easier for me to choose the former.
 
 \*\*\*
 
@@ -283,26 +313,6 @@ and stare at the ceiling, thoughts swirling in my head.
 and now you are. Do you believe in growth through adversity or not?*
 
 *I do. I really do. That doesn't mean I can't push myself too much.*
-
-
-\*\*\*
-{: .centered }
-
-Research is hard.
-
-No one, not even the most brilliantly arrogant people I know, has ever said
-otherwise. Professors talk about the long hours, 60 to 80 hour work weeks,
-and for most of the time you're stuck on a problem.
-By failing so many times, you learn something, but it can be hard to see the upside
-when you can only say what doesn't work instead of what does.
-
-As an undergrad, I found this even worse, because I was so used to the problem
-solving from math competitions and courses.
-Given a choice between a several hour homework problem, and a research problem
-that takes
-20 hours optimistically and years pessimistically, it's a lot easier to choose
-the homework instead.
-
 
 \*\*\*
 {: .centered }
