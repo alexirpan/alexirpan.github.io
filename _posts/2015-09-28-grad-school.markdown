@@ -13,6 +13,7 @@ Outline
     - Starting research for first time. Imposter feelings, trying to keep up.
     - Middle section. Don't have the time, too busy, too much work.
     - Get some interesting data.
+    - That Friday night.
     - End: go to a group meeting, actually understand most of it. Book ends
     the first group meeting I go to?
     - Or, I can book end with my final talk with the professor.
@@ -48,7 +49,7 @@ looked like.
 \*\*\*
 {: .centered}
 
-**Start of Spring semester, 2014**
+**Spring semester, 2014**
 
 I'm a sophomore taking my first upper division courses, Algorithms and
 Artificial Intelligence. I applied to a few research postings, because
@@ -103,53 +104,11 @@ Getting good grades shows you have good work ethic or good talent.
 
 It shows you have the potential to be a good researcher. It doesn't make you one.
 
-\*\*\*
-{: .centered }
-
-(Move these paragraphs elsewhere.)
-
-On one hand, the software industry pays stupidly well. Internships at big name
-companies pay $6000 or $7000 a month, well over the national average.
-On average, new grads at Berkeley get offers of over $100000 base annual salary.
-(LOOK UP THE STATS.) Frankly, these numbers are ridiculous.
-
-Big name companies sell themselves by offering insane perks. Free lunch,
-free dinner, we have a ball pit on campus, we have massagers on campus.
-You'll never go hungry, and by the way we have
-some interesting problems that need solving.
-
-Or, you can work at a startup.
-Startups sell you with the dream of changing the world, or at least the dream
-of mkaing it rich. We're changing how people connect with each other.
-We're changing transportation. Join now, and if we make it big you'll make it
-out like a king.
-
-How does a computer science PhD program compete with that? It sells itself
-with research. In a PhD program, you will tackle the hardest problems,
-the ones where no one knows the answer. You will devote the next few years
-towards learning as much as you want in your quest to solve one of those problems.
-It will be hard, difficult, and poorly paid, but in the end you will learn
-what it feels like to truly know something.
-
-If you're looking for money, grad school isn't for you. You'll make more in
-industry, and the money lost by not working won't make up for whatever higher
-salary you'll get aftewards.
-
-If you want to coast through life with a reasonable living salary, grad school
-isn't for you. You'll live, but you'll live cheaply, and you certainly won't
-coast in a PhD program.
-
-The only valid reason to go to CS grad school is because you want to do research.
-
-Well, that makes answering the title question easier.
-Did I want to do research sophomore spring? Yes! Definitely!
-
-Do I want to do research now? Uh, maybe. I'm not sure. Let me think about it.
 
 \*\*\*
 {: .centered }
 
-**Start of Fall semester, 2014**
+**Fall semester, 2014**
 
 First day in the lab. I meet with a grad student to figure out what topics
 I can do research in. He asks me how much I know about neural nets.
@@ -232,54 +191,6 @@ research problem, it was a lot easier for me to choose the former.
 
 \*\*\*
 
-Graduate school demands you to be excellent.
-
-Many people apply for graduate school programs
-at top universities. Most people who get accepted have 3.5 GPA or higher, even
-with difficult course loads.
-At this point GPA stops mattering, because all admissions really cares about
-is the prior research experience. Well, then it gets crazier, because
-every applicant will have quite a bit of research and a solid recommendation.
-There's self selection, because people who aren't strong academically or don't
-have research will not even be interested in graduate school.
-For AI, this is especially bad, because AI is an incredibly hot field. (CITE HERE)
-AI and Algorithms make up over half of all applicants to CS PhD programs,
-which makes competition especially fierce.
-We're talking almost perfect 4.0, first or second author on a publication,
-researched their topic for two years in undergrad, the works.
-The good ones (or lucky ones) get in, and start their journey.
-
-At least a quarter of them will drop out.
-
-That's not a joke. It's the CMU drop out rate as of 2014. You need incredible
-talent and dedication to even get into a program as good as CMU, and even
-those people, that brilliant collection of budding researchers, a quarter of them
-won't finish their PhD.
-
-To me, the further up academia you go, the tighter the funnel gets. The top
-performers in high school are average in college. The top performers in undergrad
-are average as grad students. The top grad students are average as professors,
-of which some are tenure track and some are not. There is no top, *it keeps
-going*.
-
-It takes a very confident person to believe they can make it all the way
-up the hierarchy, and it takes a very dedicated person to actually do so.
-
-Where does that leave me? How am I supposed to handle it when I know several people
-who have publications, and everyone around me is talking one level over my head?
-
-(Cut below paragraph, move ideas around.)
-
-Once you get up that high, almost everyone has inferiority complexes (???) and
-stays humble, and now they're asked to prove they're the shiniest diamond in all
-the land. It's a staggeringly tall order, and the prospects if you aren't
-near the top seem especially bad. Around a quarter of adjunct faculty are on
-food stamps, and that's assuming you can even find one at all. Alternatively,
-you can apply for a CS research lab, but I've heard those are as competitive
-as getting faculty positions.
-
-\*\*\*
-
 Two hour break between lectures. That leaves enough time to fit in a bit
 of research. A novel idea pops into my head. I do a literature check, and find my
 exact idea in a paper from eight years ago.
@@ -315,7 +226,151 @@ and now you are. Do you believe in growth through adversity or not?*
 *I do. I really do. That doesn't mean I can't push myself too much.*
 
 \*\*\*
-{: .centered }
+
+Graduate school demands you to be excellent.
+
+Although anybody can apply for graduate school, not everybody can get in.
+As I understand it, these are the implicit requirements for top
+CS graduate schools.
+
+- A high GPA. It doesn't have to be perfect, a 3.5 GPA won't raise any
+questions and anything above it is at best a small bonus.
+- Prior research with a professor. If you do not have this, you will 100% not
+get in. In the best case, your research leads to
+a publication, but depending on the subfield this is not required.
+If you're applying for AI or machine learning, the standards are much higher
+because so many (almost 50%) of applicants try for these fields.
+One publication or one paper under review is almost expected.
+- Three letters of recommendation.
+A common mix is a strong letter from your PI, an okay letter from the course
+you TAed, and a weak letter from the course you did well in. Again, stronger
+applicants will have two research letters, or maybe even three.
+
+http://graddecision.org/SpecialCircumstance_CS.html
+
+This is an incredibly demanding funnel. I don't have hard numbers, but for the
+sake of argument let's guess the top 10% of CS students at Berkeley meet
+these qualifications. They apply,
+the good ones (or the lucky ones) (or actually, both) get in, and they start
+a PhD.
+
+A quarter of them will drop out of the PhD. (This is the estimated CMU
+drop out rate, circa 2014.)
+
+You need incredible talent and dedication to even get into a program as good
+as CMU, to make it through the application filter, and a quarter of them
+won't finish.
+
+People call academia an ivory tower, but if anything it's an ivory spire.
+The top high schoolers are average undergrads.
+The top undergrads are average graduate students.
+The top graduate students are average professors, and getting a tenure-track
+position in the first place is hard. Then you need to lobby for tenure,
+then you need to compete for grant money, and it keeps going. There is no top
+to the spire, because the people who make it high enough have become so
+enlightened that they recognize the top *doesn't actually exist.* It's an
+illusion that distracts you from actually doing research.
+
+It takes a very confident person to believe they can make it all the way
+up the spire. It takes a very dedicated person to actually do so.
+
+These are both awful realizations if you have imposter syndrome like I do.
+
+Off the top of my head, I can name several people smarter than me. (I met
+them in high school, and they've been better han me since.) I can name
+a few undergrads with first author publications. (They work in the same
+lab I do, but they've worked longer and harder than I have.) It's to the point
+where I base my self worth not on where I am in relation to others, but on where
+I am in relation to my own standards, because relative ranking will only leave
+you disappointed. Not everybody can be Elon Musk. That's not saying I do this
+successfully, but I try.
+
+The point is that when I surround myself with people better than me, I lose the
+ability to rank myself. Am I doing well in the Berkeley CS program? Yeah! Objectively,
+I'm doing very well. Subjectively, I still feel like an idiot who spends way too
+much time doing who knows what.
+
+\*\*\*
+
+**Spring semester, 2015**
+
+New semester, same problems. Four more technical classes to juggle, and more
+deadlock in my research. Four classes is pushing it if I want to do good
+research, but I love my classes too much to drop any of them.
+Does learning Kolmogorov complexity help my research? No. Absolutely not.
+Proving the existence of incompressible strings is still super awesome.
+
+I put in hours where I can, but my schedule is busy, and once again I can't
+put in as many as I'd like. Still, I have some interesting results, showing
+that with enough training time (on the order of running it overnight)
+I can get a program to self-learn heuristics for playing Connect Four.
+It's not amazing, but I have trouble beating it, so it's at least okay.
+
+However, the approach I'm trying fundamentally requires lots of computation
+time, and running experiments is becoming infeasible. I can't make more progress
+until I find a way to make my experiments run faster.
+
+These are the thoughts in the back of my head, while I wait in line for free
+food. At Berkeley, the demand for CS internships is so high that companies
+give free dinner, T-shirts, stickers, and other free stuff at their info sessions.
+It's pocket change for them, and hungry CS students are totally okay with the
+bait. I'm waiting with a few other people from the CS honor societies. Some
+are 100% doing grad school, some are 100% not doing grad school. A few are on
+the fence, like me.
+
+"What are we even doing with our lives? Is waiting in line for 20 minutes really
+worth it for free food?"
+
+"Well, I'm here to get used to the grad student life. Why are you here, Mister
+I Already Accepted A Full Time Offer In Industry?"
+
+"You know, I don't really know. Force of habit, I guess."
+
+We laugh, and no one acknowledges the financial commentary. We all
+already know it's true, and it doesn't need repeating.
+
+\*\*\*
+
+
+On one hand, the software industry pays stupidly well. Internships at big name
+companies pay $6000 or $7000 a month, well over the national average.
+On average, new grads at Berkeley get offers of over $100000 base annual salary.
+(LOOK UP THE STATS.) Frankly, these numbers are ridiculous.
+
+Big name companies sell themselves by offering insane perks. Free lunch,
+free dinner, we have a ball pit on campus, we have massagers on campus.
+You'll never go hungry, and by the way we have
+some interesting problems that need solving.
+
+Or, you can work at a startup.
+Startups sell you with the dream of changing the world, or at least the dream
+of mkaing it rich. We're changing how people connect with each other.
+We're changing transportation. Join now, and if we make it big you'll make it
+out like a king.
+
+How does a computer science PhD program compete with that? It sells itself
+with research. In a PhD program, you will tackle the hardest problems,
+the ones where no one knows the answer. You will devote the next few years
+towards learning as much as you want in your quest to solve one of those problems.
+It will be hard, difficult, and poorly paid, but in the end you will learn
+what it feels like to truly know something.
+
+If you're looking for money, grad school isn't for you. You'll make more in
+industry, and the money lost by not working won't make up for whatever higher
+salary you'll get aftewards.
+
+If you want to coast through life with a reasonable living salary, grad school
+isn't for you. You'll live, but you'll live cheaply, and you certainly won't
+coast in a PhD program.
+
+The only valid reason to go to CS grad school is because you want to do research.
+
+Well, that makes answering the title question easier.
+Did I want to do research sophomore spring? Yes! Definitely!
+
+Do I want to do research now? Uh, maybe. I'm not sure. Let me think about it.
+
+
 
 The blessing and curse of the Information Age is that if you want to
 learn something, you can. Ever wondered what gerrymandering was? Here, go
