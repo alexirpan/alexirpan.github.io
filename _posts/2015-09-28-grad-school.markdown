@@ -4,118 +4,114 @@ title:  "\"How Do You Feel About Grad School?\""
 date:   2015-09-28 23:14:00 -0800
 ---
 
-\*\*\*
+**December, 2015**
+
+I need to send an email to the professor I'm doing research with, and it fills
+me with trepdiation. You would think that after doing it so many times, it
+wouldn't be so intimidating, but you would be wrong.
+
+
+![PhD Comics Email](/public/grad-school-thoughts/phdcomicsemail.gif)
 {: .centered }
 
-
-\*\*\*
+From [PhD Comics](http://www.phdcomics.com/comics/archive.php?comicid=1047)
 {: .centered }
 
-I chose not to apply to grad school this year.
+Still, there's a reason this email is harder to write than most.
+I take a deep breath, and start composing my thoughts.
 
-It seems like everyone I know assumed my future plans were graduate school,
-so I want to explain why it was never inevitable, depite whatever it may have
-looked like.
-
-
-\*\*\*
-{: .centered}
-
-**Spring semester, 2014**
-
-I'm a sophomore taking my first upper division courses, Algorithms and
-Artificial Intelligence. I applied to a few research postings, because
-so far I had done well and it seemd like The Thing To Do.
-Surprisingly, I actually get a reply from the professor of the AI
-course.
-
-Right away, it feels like I don't belong. He interviews all candidates in
-person, except his office is in the research lab, and I don't have card
-key access. I end up waiting outside the door for five minutes before someone
-lets me in.
-
-We sit down, and the first thing out of his mouth is
-"So, what are you interested in researching?"
-
-I don't have a good answer. I like algorithms. I like AI. That's why I signed
-up for those upper divisions. I have no idea what research is, and I say as much.
-After talking more, it's clear I'm not qualified right now.
-He wishes me luck in the class, and I leave.
-
-With no research, no relationships, almost no extracurriculars, and a barely
-functioning social life, I have the freedom to put all the time I want
-into schoolwork.
-
-I get the top score on the AI final.
-
-The next semester, I start doing research.
-
-\*\*\*
-{: .centered}
-
-I don't like to brag about my academic accomplishments. In high school, I used to
-care more, but in college I've tried to make a conscious shift towards whether
-I learned the material, instead of whether I've learned exactly what appears on
-the final. Those two goals don't always align with each other. I have leaned
-towards the grade a lot more than I should, and it definitely feels like
-I would know more if I didn't study towards the test so much.
-
-That being said, I do need to explain why people thought I was going to grad school.
-I have more As than Bs on my transcript. Some of those As are A+s.
-I've taken four technicals every semester, which is rare but not uncommon.
-(Okay, I only did three this semester, but in my defense it was my first time TAing.)
-I started taking graduate CS courses
-in junior year, because I ran out of upper divisions I was interested in.
-
-So from the outside, it really, really does not look like I plan to go into
-industry. I must be an academic, through and through.
-
-That's what it looks like. In reality, I have no earthly idea if I am.
-
-Getting good grades shows you have good work ethic or good talent.
-
-It shows you have the potential to be a good researcher. It doesn't make you one.
-
+> Subject: Not applying this year
+>
+> After giving it some thought, I'm not applying to graduate school this year...
 
 \*\*\*
 {: .centered }
 
-**Fall semester, 2014**
+Most friends at school were surprised I didn't apply to graduate school.
+I don't like to brag about my academic accomplishments, since I feel it's both
+pointless and not actually indicative of your social worth, intelligence, or
+research ability. But, I need to do so to explain why graduate school looked
+inevitable for me.
 
-First day in the lab. I meet with a grad student to figure out what topics
-I can do research in. He asks me how much I know about neural nets.
+So, (breathes in), my transcript has more As than Bs. Some of those As are A+s.
+I've taken four technicals every semester, which is more than the average.
+(I only did three this semester, but in my defense I was TAing for the first time.)
+I started taking graduate CS courses in junior year, because the remaining upper
+divisions didn't sound interesting to me. Meanwhile, I've also been doing research
+since junior year, in the Robot Learning Lab at UC Berkeley.
 
-Huh. What are those?
+So from the outside, it really, really looks like I'm an academic, through and
+through.
 
-"The basic idea is to take your input features, apply a linear transformation,
-then apply a nonlinear function to that. If you repeat this enough times, it
-can solve a wide range of problems."
+That's what it looks like.
 
-I don't understand why this works
-and he admits that a lot of things about neural nets aren't well understood.
-We talk a bit more, and I decide to study search methods.
+In reality, I have no idea if I am one.
 
-A few days later, I get an account on a lab machine.
+Getting good grades and taking challenging courses shows you have good work
+ethic or good talent.
+It shows you have the potential to be a good researcher.
+But, it doesn't autmoatically make you one.
+
+\*\*\*
+{: .centered }
+
+**September, 2014**
+
+First day in the lab. I have no idea what I want to do research in, and I
+only asked for a researh position because it seems like The Thing Students With
+High GPA do. At least I know how I got accepted - I got the top score on the
+AI final last semester. (Turns out when you have no research, no relationships,
+almost no extracurriculars, a barely functioning social life, and no side
+projects, you can devote a lot of time to schoolwork. In retrospect, spending
+15 hours optimizing a Pacman bot wasn't the best use of my time.)
+
+To help give me direction, I meet with a graduate student who will be my main
+mentor from here on out, to see what topics I have an interest in.
+
+"Have you ever heard of neural nets?"
+
+"Nope."
+
+"Okay. The basic idea is to take your input features, apply a linear
+transformation represented by a matrix, then apply a nonlinear function to that.
+It turns out if you repeat this enough time, you can solve a wide range of
+problems by learning the correct matrix entries."
+
+The good news is that I follow this. The bad news is that I have no idea why
+this should even work. He admits that it's still unclear why this method works
+well, but it does. We talk a bit more, and although I don't make a decision on
+what problem to research, I get a better idea of the available options.
+
+I get an account on a lab machine. Hooray, I'm on the team!
 I'm not sure where to start, but I know that when people do research, they write
-papers, so I start there.
+papers, and other people read them. Google Scholar is my best friend for the
+next few days.
+
 As I read the literature and work through neural net tutorials, I overhear
 some discussion.
 
-"Hey, do you understand recurrent neural nets?"
+"Hey, do you understand RNNs?"
 
-"Kind of? I implemented one a while back."
+"Kind of? I implemented one a while back for a NIPS paper."
 
-"Okay, that's better than me. Mind helping me understand LSTMs?"
+"Okay, that's more than I've done. Mind helping me understand LSTMs?"
 
-I don't understand a word of it. I try not to let it discourage me. I've just
-started, there's no way I should know what they're talking about.
+I don't understand a word of it, but I try not to let it discourage me.
+It's my first week. There's no way I should know what they're talking about.
 
-Two hours later, I don't feel any closer to getting things, and I have to go to
-class. That's fine. I'll try more later.
+The same song and dance continues for the next two weeks. My lectures have
+1-2 hour gaps, and I spend them doing research. By which I mean reading
+the simplest reference I can find, in a desperate bid to find something I
+can even comprehend. I also go to weekly group meetings. Every presentation
+loses me on literally the first slide, but there's free lunch, so I can't complain.
 
-The same song and dance continues for the next two weeks. I go to the weekly
-group meeting, and get lost on literally the first slide.
-During my one-on-one meeting, I mention that my problem feels well-solved because
+![PhD Comics Presentation](/public/grad-school-thoughts/phdcomicspresentation.gif)
+{: .centered }
+
+I'm the guy with the brown afro. Source: [PhD Comics](http://www.phdcomics.com/comics/archive.php?comicid=719)
+{: .centered }
+
+In my first one-on-one meeting, I mention that my problem feels well-solved because
 of how many papers there are on it, and the graduate student has to gently
 remind me that a research paper doesn't make something true. A paper means
 exactly what it says; the method used works on exactly the experiments in the
