@@ -4,40 +4,12 @@ title:  "\"How Do You Feel About Grad School?\""
 date:   2015-09-28 23:14:00 -0800
 ---
 
-Outline
+\*\*\*
+{: .centered }
 
-    The goal is to tie the personal stories into the greater reasoning of how I
-    feel about grad school. It makes most sense to do stories chronologically,
-    and that should guide the general passages.
-    - Beginning, where I don't know what research is like
-    - Starting research for first time. Imposter feelings, trying to keep up.
-    - Middle section. Don't have the time, too busy, too much work.
-    - Get some interesting data.
-    - That Friday night.
-    - End: go to a group meeting, actually understand most of it. Book ends
-    the first group meeting I go to?
-    - Or, I can book end with my final talk with the professor.
-
-    General passages:
-    - Imposter syndrome.
-    - The work/feeling of always having more to do.
-    - Potential impact between industry and grad school. (This can probably
-    be expanded into reasons between the two.)
-
-    I don't want this to be fully negative, and want to fit in reasons to
-    do a PhD. It's hard to figure out where.
-
-
-Potential vignettes:
-- First day in the lab (at start of the semester)
-- First day in the lab (for real)
-    - Includes first talk
-- Weekly catchup with a small group, after having done no work.
-- First meeting with grad student
-
-POST CONTENT FOLLOW BELOW
 
 \*\*\*
+{: .centered }
 
 I chose not to apply to grad school this year.
 
@@ -158,6 +130,7 @@ It takes me two weeks before I feel ready to even write any code.
 It takes me another two weeks to write my first neural net in Theano.
 
 \*\*\*
+{: .centered }
 
 Research is hard.
 
@@ -190,6 +163,7 @@ Given a choice between a two hour homework problem and a two month
 research problem, it was a lot easier for me to choose the former.
 
 \*\*\*
+{: .centered }
 
 Two hour break between lectures. That leaves enough time to fit in a bit
 of research. A novel idea pops into my head. I do a literature check, and find my
@@ -226,6 +200,7 @@ and now you are. Do you believe in growth through adversity or not?*
 *I do. I really do. That doesn't mean I can't push myself too much.*
 
 \*\*\*
+{: .centered }
 
 Graduate school demands you to be excellent.
 
@@ -291,6 +266,7 @@ I'm doing very well. Subjectively, I still feel like an idiot who spends way too
 much time doing who knows what.
 
 \*\*\*
+{: .centered }
 
 **Spring semester, 2015**
 
@@ -330,21 +306,27 @@ We laugh, and no one acknowledges the financial commentary. We all
 already know it's true, and it doesn't need repeating.
 
 \*\*\*
+{: .centered }
 
+Let's talk about the elephant in the room: the money.
 
-On one hand, the software industry pays stupidly well. Internships at big name
-companies pay $6000 or $7000 a month, well over the national average.
-On average, new grads at Berkeley get offers of over $100000 base annual salary.
-(LOOK UP THE STATS.) Frankly, these numbers are ridiculous.
+The software industry pays stupidly well. Based on Berkeley Career Center
+surveys, the average salary for an EECS student in 2014 was $108,000.
+For a company in Silicon Valley, this actually is not that surprising, but if
+that salary for new grads doesn't seem slightly insane, you need to recalibrate
+what you know about money.
 
-Big name companies sell themselves by offering insane perks. Free lunch,
-free dinner, we have a ball pit on campus, we have massagers on campus.
-You'll never go hungry, and by the way we have
-some interesting problems that need solving.
+That's not even getting into the perks. Companies like Google, Facebook, and
+LinkedIn sell themselves by offering insane perks.
+Free lunch, free dinner, we have a ball pit on campus, we have massagers on campus.
+We built a slide from the 2nd floor of the building to the ground floor, because
+it helps express our inner child. You'll never go hungry, you'll never go
+thirsty, and by the way we have some interesting problems that need solving,
+so why don't you join us?
 
-Or, you can work at a startup.
-Startups sell you with the dream of changing the world, or at least the dream
-of mkaing it rich. We're changing how people connect with each other.
+Alternatively, new grads can work at a startup. Come here, and you can change
+the world! Or, you can exploit a temporary inefficiency of the market and be the
+first one to solve it. We're changing how people connect with each other.
 We're changing transportation. Join now, and if we make it big you'll make it
 out like a king.
 
@@ -355,21 +337,87 @@ towards learning as much as you want in your quest to solve one of those problem
 It will be hard, difficult, and poorly paid, but in the end you will learn
 what it feels like to truly know something.
 
-If you're looking for money, grad school isn't for you. You'll make more in
-industry, and the money lost by not working won't make up for whatever higher
-salary you'll get aftewards.
+If you're looking for money, grad school isn't for you. As said by (CITE),
+getting a PhD will cost you about a house.
 
 If you want to coast through life with a reasonable living salary, grad school
-isn't for you. You'll live, but you'll live cheaply, and you certainly won't
-coast in a PhD program.
+isn't for you. You'll live, but you'll live cheaply, and it certainly won't be
+easy.
 
 The only valid reason to go to CS grad school is because you want to do research.
+You need a fiery passion for your subject, a deep-seated curiousity that will
+keep you motivated and up at night. AS (CITE) puts it, a PhD is designed to
+break your will and test your faith.
 
-Well, that makes answering the title question easier.
-Did I want to do research sophomore spring? Yes! Definitely!
+Money isn't my biggest decision factor. Of course, I'll gladly negotiate for
+more money if I can, but in the end I care more about self-satisfication
+and impact.
 
-Do I want to do research now? Uh, maybe. I'm not sure. Let me think about it.
+In many respects, going for a PhD is like starting a startup. Both demand
+dedication. Both end up becoming your life. It takes around 5 years to get a
+PhD, and it can take 5 years for people to even learn about your startup. They
+demand a similar skillset, and I suspect there's a big overlap between
+people with or considering PhDs and startup founders.
 
+If a startup is a bet against the world that you can build something useful,
+then a PhD is a bet against the world that you can discover something that
+no one has ever seen before.
+
+However, there definitely are differences.
+Paul Graham says everybody should try founding a startup.
+No one says everybody should try getting a PhD.
+
+\*\*\*
+{: .centered }
+
+**Fall semester, 2015**
+
+I chose to do an internship instead of research the summer before senior year.
+I was a bit disillusioned with research after running into so many road blocks,
+and didn't feel like I was self-motivated enough to try for a PhD program.
+
+It was a good experience, and overall I'm very glad I decided to take the offer.
+At the same time, as the semester started, I found myself enjoying research
+a lot more. Maybe it was the light course load in the first few weeks, or maybe
+it was the realization that I actually knew something, and could hold a
+conversation with the grad student mentoring me. At least, for a while.
+
+Riding the peak of research motivation, I set up meetings with my PI to find
+a way to get a reasonable application in time for deadlines. I get started on
+a new project, one that could lead to a paper faster than my old one.
+(Later, I read a paper where the authors independently discovered the same
+ideas I did, released just last year.
+They ran into the same computational barrier, and got over it by throwing
+more computing power at the problem instead of thinking of algorithmic
+improvements. I feel a bit cheated, but at least it means I was on the right
+track.)
+
+There's an undercurrent of satisfaction to my life, but it's buried beneath
+the weariness of living a life between problem sets. I get more research done
+than last semester, but it still doesn't feel like enough.
+
+It's Friday.
+
+Friday, Friday, gotta get down on Friday.
+
+Oh wait, no I can't. This needs to be done *now*. In fact, it needed to be done
+two days ago.
+
+So begins the story of how I spent a Friday night in the lab. Could have been
+playing board games with friends. Could have been relaxing at home. Nope, lab.
+Lab lab lab.
+
+The lab is understandably quiet. No one wants to work on Friday night. I'm not
+here by choice, and neither are they.
+
+I finish dinner and start working by 8 PM. Five hours later, it's done. Not well,
+not prettily, but good enough, and it's not worth staying later.
+
+As I walk out, I think, *Wow, done by 1 AM. That's actually not so bad.* It's a
+bit depressing that I'm serious about this.
+
+Out of curiosity, I do one circuit of the lab, and one other person is still
+spending their Friday night (now Saturday morning) doing work.
 
 
 The blessing and curse of the Information Age is that if you want to
@@ -438,6 +486,7 @@ know you are literally building the future, but in the end you're still just
 one cog in a mass of gears and wires.
 
 \*\*\*
+{: .centered }
 
 
 
