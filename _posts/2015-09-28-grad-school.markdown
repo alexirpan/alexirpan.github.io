@@ -19,9 +19,7 @@ How I Got To Where I Am Now
 
 **December 2015**
 
-*I see you shiver with anticipation.*
-
-It's not a good shiver. I need to send an email to the professor I'm doing
+I need to send an email to the professor I'm doing
 research with. You would think that after doing it so many times, it
 wouldn't be so intimidating, but you would be wrong.
 
@@ -67,7 +65,7 @@ through and through.
 
 That's what it looks like.
 
-In reality, I'm not sure I am on. I never have been sure.
+In reality, I'm not sure I am on. I've never been sure.
 
 Getting good grades and taking challenging courses shows you have good work
 ethic or good talent. They are signs you have the potential to be a
@@ -75,8 +73,6 @@ good researcher. They don't automatically make you one.
 
 \*\*\*
 {: .centered }
-
-*Let's do the Time Warp again.*
 
 **September 2014**
 
@@ -603,8 +599,41 @@ I take a deep breath, and start composing my thoughts.
 > 
 > - A love for teaching with the plan to go for a lecturer position after a PhD. I've liked TAing this semester and approve of education in general, but again this isn't a strong enough interest to make me want to teach full time.
 > 
-> The summary ends up being: I wasn't motivated to work on my applications. I took that as a sign that I wasn't as interested in a PhD as I was before. After asking myself a few things, I realized it was unlikely I would start a PhD even given a free entrance into a top program. None of these decisions depend on whether I'd be a good researcher or not, they all depend on whether I'm motivated to do research or not,
+> The summary ends up being: I wasn't motivated to work on my applications. I took that as a sign that I wasn't as interested in a PhD as I was before. After asking myself a few things, I realized it was unlikely I would start a PhD even given a free entrance into a top program. None of these decisions depend on whether I'd be a good researcher or not, they all depend on whether I'm motivated to do research or not.
 > 
-> Maybe this is already clear, but *I'm not saying any of these beliefs are set in stone.* It is entirely possible that I'll change my mind about many of these things, However, my expectation is that my beliefs aren't going to change significantly by next year to make applying worth it. I still plan to do more research this week + finals week to set up opportunities for myself to gain motivation for research, but if they change enough to make me want to go to grad school I'll just have to wait a year on applications.
+> Maybe this is already clear, but **I'm not saying any of these beliefs are set in stone.** It is entirely possible that I'll change my mind about many of these things, However, my expectation is that my beliefs aren't going to change significantly by next year to make applying worth it. I still plan to do more research this week + finals week to set up opportunities for myself to gain motivation for research, but if they change enough to make me want to go to grad school I'll just have to wait a year on applications.
 > 
 > Alex
+
+\*\*\*
+{: .centered }
+
+My professor was very understanding.
+
+For a few days after that choice, I found myself idlly considering whether I could
+put together an application, and had to mentally beat myself with a newspaper.
+You can't change your mind! Application deadlines were 3 days ago! It's done!
+Live your life with the choice you made.
+
+(Okay, I didn't use that much melodrama, but I did actually think these things.)
+
+Even now, I'm unsure I made the right decision. I'm worried I chose wrong, and
+that I didn't actually make a choice; I only sent out that email when it was
+implausible I could have even cobbled together an application. I shouldn't be
+worried, it's not like I've completely shut the door on getting a PhD. I know
+this rationally, but the rest of my brain disagrees.
+
+Still, for now I'm okay with this. I've thought about this topic for a while,
+and I could do with worrying about other things. Like fixing my social life,
+fixing my romantic life, figuring out how okay I am with my mental makeup...
+
+After all, what's the hurry? It's only graduate school.
+
+\*\*\*
+{: .centered }
+
+*If you're interested in more about this topic, I recommend [these notes on
+applying to Computer Science PhD programs](https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf),
+the [PhD Comics archive](http://phdcomics.com/comics.php), and [the articles
+on Philip Guo's site.](http://pgbovine.net/writings.htm). Odds are that if you're
+considering grad school, you've already visited all these links.)*
