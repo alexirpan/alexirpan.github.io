@@ -4,6 +4,19 @@ title:  "\"How Do You Feel About Grad School?\""
 date:   2015-09-28 23:14:00 -0800
 ---
 
+Foreword
+------------------------------------------------------------------
+As of the time I'm writing this, I've never been a full time software developer
+and I've never been a full time researcher. It's possible my perspective is
+warped. If you feel parts of this are inaccurate or exaggerated, it's a feature,
+not a bug.
+
+This is how I feel about things as a graduating senior. The beauty of opinions
+is that I make no claim to be right, and you're under no obligation to agree with me.
+
+How I Got To Where I Am Now
+-----------------------------------------------------------------
+
 **December 2015**
 
 *I see you shiver with anticipation.*
@@ -24,8 +37,8 @@ I take a deep breath, and start composing my thoughts.
 
 > Subject: Not applying this year
 >
-> After giving it some thought, I'm not applying to graduate school this year.
-> I want to explain why I made this choice...
+> After thinking about things more, I'm not planning to apply to grad school
+> this year. I'm going to try to explain my reasons...
 
 \*\*\*
 {: .centered }
@@ -453,74 +466,145 @@ spending their Friday night (now Saturday morning) doing work.
 \*\*\*
 {: .centered }
 
-I 
-The blessing and curse of the Information Age is that if you want to
-learn something, you can. Ever wondered what gerrymandering was? Here, go
-to Wikipedia. What about World War II? Well, that's covered too, in volumes and
-volumes of books, and also in a few comics, and also in an anime.
+By this semester, I know what research is like. I have full-time job offers
+that I can take if I want. If I wanted to relax and do nothing this semester,
+I could.
 
-One day, I find out Orson Scott Card's political views clash with your own.
-The work is divided from the author, but it slightly colors how you perceive
-any novels he writes. The next, I read that if the US had invaded Cuba during the Cuban
-Missile Crisis, Fidel Castro would have ordered a nuclear attack, even knowing
-he would have died to the reply.
+So of course, I signed up for three grad classes, TAed for the first time, and
+did a research appointment on top of it. At some point in high school, I gained
+a deep unease with myself that pushes me to do more. Appeasing that part of
+myself while making sure I don't overload has been one of the harder parts of
+my life.
 
-One day I binge read PhD Comics and The PhD Grind, and the bleak picture of
-academia is exposed to my eyes for the first time.
+I definitely have a big self-deprecation complex. On one hand, it's probably
+a net positive for success, especially success in research. Without natural
+curiosity, there's no way I could deal with academia, because the only reason
+anyone would choose the academia life is because they wanted it. (There are
+exceptions, like international students who need to keep student status for
+their visas, but often they like research as well.)
 
-When it comes to graduate school, you don't have to look very hard to find the
-black humor. You also don't have to look very hard to find stories that are
-dark with no laughs. Similar refrains come up.
+To say there's angst in academia is an understatement. For graduate school,
+you don't need to look very hard to find black humor and horror stories.
+I've already linked lots of PhD Comics. All the things you see in PhD Comics?
+It's real. A bit exaggerated, and different people run into different troubles,
+but it happens.
 
-> "I'm doing research in something that I can't even explain to people I know"
->
-> "Here I am, stuck with no progress after five months,
-> while my friends have jobs, families, and money."
->
-> "Pulled an all-nighter for that paper deadline. Can't even crash the next day,
-> too many other things to finish."
+Not a fan of comics? Okay, why don't you read
+[The Ph.D. Grind](http://pgbovine.net/PhD-memoir.htm) by Philip Guo? It's a
+detailed account of the author's experience getting a PhD at Stanford, and I
+consider it required reading if you're considering a PhD. More than
+anything else, it conveys how soul-crushing academia can be. (That's not to say
+his experience was common. In retrospect, [he says he was a 30th percentile
+in happiness at Stanford](http://pgbovine.net/PhD-interview-eugene-wu-keith-winstein.htm),
+but also said it could have been even harder if he was at a weaker school.)
 
-The PhD grind is especially effective in portraying the grinding conditions
-the author went through. PhD Comics is hyperbolic for the sake of comedy,
-but The PhD Grind is real. I consider it required material if you want to
-learn what a PhD can really mean.
+Stories about the malaise in academia are all over the place. There is sampling
+bias, where only the more extreme opinions get told, but it's a bit worrying
+when finding doom and gloom stories is so much easier than finding the
+sunshine and rainbows stories.
 
-Together, they paint a gloomy picture of academia. In academia, you voluntarily
-are taking low pay and long hours in the name of research. Or as said by
-(CITE), "A PhD costs you around a house."
+> "You make time for hobbies," she told me. "This isn't undergrad anymore.
+> This is the rest of your life."
 
-So, if it sounds so bad, why was choosing not to go to graduate school such a
-hard decision?
+[Source (need Quora account)](http://qr.ae/RgsIFA)
 
-Research can be depressing and relentless, but it's still science.
+> Look, I am in fact a career academic. I know exactly what's attractive about it, I've made considerable financial and personal sacrifices to get myself to a position where I can work in a university environment and spend my time doing groundbreaking research. And yet. The gateway into this life is a PhD, and the PhD system is deeply, deeply fucked up when it isn't actively abusive. **Doing a PhD will break you.** It's pretty much designed to break you. Yes, even you, you who are brilliant (that almost goes without saying; it's because you're brilliant that you're contemplating doing a PhD in the first place). You who are resilient and have survived several kinds of shit that life has thrown at you just to get to the point where you're about to graduate with a brilliant degree. You who have the unconditional support of your family and friends and partners. If you have every admirable personal quality you can think of, if you have every advantage in life, still, getting through a PhD will grind you down, will come terrifyingly close to killing your soul and might well succeed. It will do horrible things to your mental and physical health and test to breaking point every significant relationship in your life. 
 
+[Source](https://liv.dreamwidth.org/389934.html)
 
-A lot of sections resonated with me, but my favorite was this one.
+![PhD Comics Cancer](/public/grad-school-thoughts/phdcancer.gif)
+{: .centered }
+
+[Excerpt of this comic](http://www.phdcomics.com/comics/archive.php/archive.php?comicid=1162)
+{: .centered }
+
+> A 2015 study at the University of California Berkeley found that 47% of graduate students suffer from depression, following a previous 2005 study that showed 10% had contemplated suicide. A 2003 Australian study found that that the rate of mental illness in academic staff was three to four times higher than in the general population, according to a New Scientist article.
+
+[Source](http://qz.com/547641/theres-an-awful-cost-to-getting-a-phd-that-no-one-talks-about/)
+
+So, if it's so bad, why is choosing not to go to grad school such a hard decision?
+
+It's because some people care deeply about research. they care about it enough
+to accept the hardships that comes with the PhD. There's an old saying: if you
+could be happy anywhere else, don't go into academia. Some people can't be happy
+anywhere else. It is what it is.
+
+(Philip Guo calls this [a unicorn job](http://pgbovine.net/unicorn-jobs.htm). It's
+a job where you put up with lots of stress for that 10% or 20% of the job you
+actually want to do, because you enjoy it that much.)
+
+It feels like I fall right on the boundary between the two.
+A lot of sections from The PhD Grind resonated with me, but my favorite was
+this one.
 
 > I discovered over the past 5 years that I love being a spectator of
 > research, but the burden of being a continual producer of new research is
 > just too great for me.
 
+When I don't do research for a while, I miss the feeling that I'm in touch with
+the cutting-edge and directly playing a hand in shaping the future. (In AI too!
+Holy shit, I get to experiment with algorithms for computer learning, how awesome
+is that opportunity?) When I do research for longer, I realize how much of a
+novice I am and how ridiculous it is to believe I can personally make a key
+contribution to the field. (Oh jeez, so many subfields, so many subsubfields,
+papers and papers and papers and which ones are even worth reading?)
 
+One time, [Andrew Ng](http://www.andrewng.org/), one of the biggest names
+in machine learning, came to give a talk on the deep learning work he did at
+Baidu. Every talk on deep learning gets a packed auditorium. A talk on deep
+learning by Andrew Ng? It was packed 15 minutes before it started.
 
-That's the problem. That's the root cause of all my indecision. People take
-a lot of technology for granted, but when I step back and take a look, **really**
-take a look, it is completely baffling that we can do the things we can today.
-Speech recognition went from garbage to in every smartphone. Image classification
-went from a pipe dream to a reality that companies are fighting tooth and nail
-over. The rate of progress is unbelieveable, and it seems like every 2-3 months
-there's a new breakthrough that pushes the scope of human knowledge every
-so slightly outward.
+He gave a broad overview of the current research trend towards bigger models
+and bigger datasets, then talked about his work developing smart assistants
+like the Baidu Eye. The way he talked about it, you could tell this wasn't
+just something he worked on, it was something he *believed* in. They were
+his vision of the future, and he was there to play a part in making it real.
 
-Then I sit down and try to do research, and make only incremental progress after
-several months of work.
+Another day, I was in the lab, and overheard a conversation between a visiting
+postdoc and a graduate student. They started talking about PhD Comics, and
+the postdoc said she could never relate to the comic. She was always a happy
+grad student.
 
-The machine of research is a beautiful piece of work, and it can be gratifying to
-know you are literally building the future, but in the end you're still just
-one cog in a mass of gears and wires.
+Passion and faith in your work is what will carry you through a PhD.
+Nothing else will.
+
+It was a high bar, and I wasn't sure enough in myself to say I crossed it.
+As the months passed by, I realized I had made my decision a long time
+ago. I was just too worried to say it out loud.
 
 \*\*\*
 {: .centered }
 
+*I've given a lot of thought to how I wanted to express how I feel about
+grad school, but in the end I decided it would be simpler to include my
+email in full.*
 
+**December 2015**
 
+I take a deep breath, and start composing my thoughts.
+
+> After thinking about things more, I'm not planning to apply to grad school this year. I'm going to try to explain my reasons.
+> 
+> - I haven't been researching faculty at any schools I might be applying to. Given that some of the deadlines are Dec 8th, that means I won't have a very polished application. But more importantly, I haven't had the motivation to work on applications. Of course, very few people look forward to writing applications, but people interested in grad school will usually have the motivation to trudge through it because they see it as necessary to get to where they want to go.
+> 
+> - I haven't notified people writing my letters of recommendation. Again, this isn't a deal breaker by itself, but it's certainly somewhat bad etiquette, and it goes back towards the idea of motivation. If I believed I wanted to apply this year I certainly would have notified faculty sooner.
+> 
+> - I talked with some other seniors/grad students, and the general consensus was that you should only go to grad school if you are very sure you want to go. If you're only somewhat interested, you should internally downgrade interest by a lot.
+> 
+> - Assuming I magically finished my application and got into a top graduate program, I'd still lean towards not going. After a PhD, I don't think I'd want to stay in academia, and would likely try to get into an industry lab. At that point, the PhD essentially becomes a 5-6 year long process of improving research skills enough to apply for those positions, which doesn't sound worth it to me.
+> 
+> To me, there are many reasons to go for a PhD, but I'm not completely sold on any of them:
+> 
+> - To prove to yourself / the world that you can get through a PhD program, because only a small percentage of people can do so. I don't a strong need to prove myself to be better than other people, and care more about my personal standards for how much I can push myself. (I suppose that could also be seen as an argument for why I should do a PhD, which is all about pushing boundaries.)
+> 
+> - A very strong belief that what you're doing your research in is important. Strong enough to deal with the stresses of academia, and solid enough to keep going even after realizing just how big your field is. I believe that AI research is very important and impactful, and enjoy reading about new advances, but the costs of creating new research are too high for me.
+> 
+> - A personal fulfillment achieved by understanding something very deeply. For theory-leaning people (which I'd classify myself as), this may also be the joy from finding an especially elegant proof or neat connection between different topics. This is definitely hard to find outside academia, but aspects of this still show up in industry, and being an expert on X is common advice for standing out among your peers.
+> 
+> - A love for teaching with the plan to go for a lecturer position after a PhD. I've liked TAing this semester and approve of education in general, but again this isn't a strong enough interest to make me want to teach full time.
+> 
+> The summary ends up being: I wasn't motivated to work on my applications. I took that as a sign that I wasn't as interested in a PhD as I was before. After asking myself a few things, I realized it was unlikely I would start a PhD even given a free entrance into a top program. None of these decisions depend on whether I'd be a good researcher or not, they all depend on whether I'm motivated to do research or not,
+> 
+> Maybe this is already clear, but *I'm not saying any of these beliefs are set in stone.* It is entirely possible that I'll change my mind about many of these things, However, my expectation is that my beliefs aren't going to change significantly by next year to make applying worth it. I still plan to do more research this week + finals week to set up opportunities for myself to gain motivation for research, but if they change enough to make me want to go to grad school I'll just have to wait a year on applications.
+> 
+> Alex
