@@ -4,10 +4,12 @@ title:  "\"How Do You Feel About Grad School?\""
 date:   2015-09-28 23:14:00 -0800
 ---
 
-**December, 2015**
+**December 2015**
 
-I need to send an email to the professor I'm doing research with, and it fills
-me with trepdiation. You would think that after doing it so many times, it
+*I see you shiver with anticipation.*
+
+It's not a good shiver. I need to send an email to the professor I'm doing
+research with. You would think that after doing it so many times, it
 wouldn't be so intimidating, but you would be wrong.
 
 
@@ -22,70 +24,87 @@ I take a deep breath, and start composing my thoughts.
 
 > Subject: Not applying this year
 >
-> After giving it some thought, I'm not applying to graduate school this year...
+> After giving it some thought, I'm not applying to graduate school this year.
+> I want to explain why I made this choice...
 
 \*\*\*
 {: .centered }
 
-Most friends at school were surprised I didn't apply to graduate school.
-I don't like to brag about my academic accomplishments, since I feel it's both
+Most friends at Berkeley were surprised I didn't apply to graduate school.
+To many of them, it seemed patently obvious I was going to apply. I want to
+explain why it wasn't so clear cut. Over the past few years, I've both been
+100% sure I was going to apply and 100% sure I wasn't. Graph my motivation for
+graduate school and you'll get out a sine wave.
+
+First, I should explain why it looked like I was headed for grad school.
+I don't like to brag about my academic accomplishments. It's both
 pointless and not actually indicative of your social worth, intelligence, or
-research ability. But, I need to do so to explain why graduate school looked
-inevitable for me.
+research ability.
 
+Still, in this case it's relevant.
 So, (breathes in), my transcript has more As than Bs. Some of those As are A+s.
-I've taken four technicals every semester, which is more than the average.
-(I only did three this semester, but in my defense I was TAing for the first time.)
-I started taking graduate CS courses in junior year, because the remaining upper
-divisions didn't sound interesting to me. Meanwhile, I've also been doing research
-since junior year, in the Robot Learning Lab at UC Berkeley.
+I've taken four technicals every semester, which is more than the average (but
+I know people who take more.)
+I started taking graduate level courses in junior year, because the remaining
+upper divisions didn't interest me enough. Meanwhile, I've also been doing
+research since junior year, in the Robot Learning Lab at UC Berkeley.
 
-So from the outside, it really, really looks like I'm an academic, through and
-through.
+Given just that information, it really, *really* looks like I'm an academic,
+through and through.
 
 That's what it looks like.
 
-In reality, I have no idea if I am one.
+In reality, I'm not sure I am on. I never have been sure.
 
 Getting good grades and taking challenging courses shows you have good work
-ethic or good talent.
-It shows you have the potential to be a good researcher.
-But, it doesn't autmoatically make you one.
+ethic or good talent. They are signs you have the potential to be a
+good researcher. They don't automatically make you one.
 
 \*\*\*
 {: .centered }
 
-**September, 2014**
+*Let's do the Time Warp again.*
 
-First day in the lab. I have no idea what I want to do research in, and I
-only asked for a researh position because it seems like The Thing Students With
-High GPA do. At least I know how I got accepted - I got the top score on the
-AI final last semester. (Turns out when you have no research, no relationships,
+**September 2014**
+
+It's my first day in the lab, and I already feel like I don't belong.
+
+I have no idea what I want to research. I
+only asked for a research position because it's The Thing Students With
+High GPA are supposed to do. At least I know why I'm here - I got the top score
+on the AI final last semester. (Turns out when you have no research,
+no relationships,
 almost no extracurriculars, a barely functioning social life, and no side
 projects, you can devote a lot of time to schoolwork. In retrospect, spending
-15 hours optimizing a Pacman bot wasn't the best use of my time.)
+15 hours optimizing a Pacman bot was a big waste of time.)
 
 To help give me direction, I meet with a graduate student who will be my main
-mentor from here on out, to see what topics I have an interest in.
+mentor from here on out. We introduce ourselves, and he starts proposing a few
+topics that could be interesting.
 
-"Have you ever heard of neural nets?"
+At one point, he asks, "Have you heard of neural nets?"
 
-"Nope."
+"Nope," I reply. Interally, I think, *Remember to admit what you don't know.
+That should be easy, you don't know anything yet.*
 
 "Okay. The basic idea is to take your input features, apply a linear
 transformation represented by a matrix, then apply a nonlinear function to that.
-It turns out if you repeat this enough time, you can solve a wide range of
-problems by learning the correct matrix entries."
+It turns out if you repeat this process several times, you can solve a wide
+range of problems."
 
-The good news is that I follow this. The bad news is that I have no idea why
-this should even work. He admits that it's still unclear why this method works
-well, but it does. We talk a bit more, and although I don't make a decision on
+I follow this explanation (hooray!), but I have no idea why
+this should even work. He admits the theory behind neural nets is a bit shaky,
+but he points towards an execptionally cool result: [learning to play Atari
+games purely from visual input](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf).
+
+We talk a bit more, and although I don't make a decision on
 what problem to research, I get a better idea of the available options.
 
-I get an account on a lab machine. Hooray, I'm on the team!
+I talk with another student to get an account on a lab machine.
+Yay, I'm on the team!
 I'm not sure where to start, but I know that when people do research, they write
-papers, and other people read them. Google Scholar is my best friend for the
-next few days.
+papers, and other people read them. So I start there. For the next few days,
+Google Scholar is my best friend.
 
 As I read the literature and work through neural net tutorials, I overhear
 some discussion.
@@ -99,8 +118,10 @@ some discussion.
 I don't understand a word of it, but I try not to let it discourage me.
 It's my first week. There's no way I should know what they're talking about.
 
-The same song and dance continues for the next two weeks. My lectures have
-1-2 hour gaps, and I spend them doing research. By which I mean reading
+The same song and dance continues for the next two weeks. Eventually, I hit on
+investigating Monte Carlo Tree Search.
+My lectures are separated by 1-2 hour gaps, and I spend them doing research.
+By which I mean reading
 the simplest reference I can find, in a desperate bid to find something I
 can even comprehend. I also go to weekly group meetings. Every presentation
 loses me on literally the first slide, but there's free lunch, so I can't complain.
@@ -108,30 +129,36 @@ loses me on literally the first slide, but there's free lunch, so I can't compla
 ![PhD Comics Presentation](/public/grad-school-thoughts/phdcomicspresentation.gif)
 {: .centered }
 
-I'm the guy with the brown afro. Source: [PhD Comics](http://www.phdcomics.com/comics/archive.php?comicid=719)
+I'm the guy with the brown afro, except I'm not even a first year which makes it worse.
+Source: [PhD Comics](http://www.phdcomics.com/comics/archive.php?comicid=719)
 {: .centered }
 
-In my first one-on-one meeting, I mention that my problem feels well-solved because
-of how many papers there are on it, and the graduate student has to gently
-remind me that a research paper doesn't make something true. A paper means
-exactly what it says; the method used works on exactly the experiments in the
-paper, and may or may not work anywhere else. My faith in scientific studies
-drops dramatically. (It bottoms out after I read The Control Group Is Out Of
-Control (LINK).)
-I start treating papers as guidelines for promising ideas, but there's still
-a vast ocean of prior work, and that mindset doesn't help me swim.
+In my first one-on-one meeting, I mention that my problem feels well-solved,
+and my mentor has to gently
+remind me that a paper doesn't make an idea valid. A paper means
+exactly what it says; the method used works on exactly the experiments mentioned.
+It may or may not work anywhere else. My faith in scientific studies
+drops sharply. (It bottoms out a few weeks later, after reading
+[The Control Group Is Out Of Control](http://slatestarcodex.com/2014/04/28/the-control-group-is-out-of-control/).)
 
-It takes me two weeks before I feel ready to even write any code.
+Once I see papers as promising ideas instead of ground
+truth, prior work doesn't intimidate me as much.
+At the same time, there's still a vast ocean of prior work, and I can barely
+keep myself afloat.
 
-It takes me another two weeks to write my first neural net in Theano.
+It takes me two weeks to write my first line of code.
+Reading papers isn't enough. I need to implement something to actually understand
+what it does.
+
+It takes me another week to get my code to work.
+
+Then, one more week to understand why it works at all.
 
 \*\*\*
 {: .centered }
 
-Research is hard.
-
 No one, not even the most brilliantly arrogant people I know, has ever said
-otherwise. Professors talk about the long hours, 60 to 80 hour work weeks,
+research is easy. Professors talk about the long hours, 60 to 80 hour work weeks,
 and for most of the time you're stuck on a problem. Of course, you're
 not really stuck, because by failing so many times, you learn when an approach
 doesn't work. Still, it can be hard to see the upside when you have no positive
@@ -161,31 +188,36 @@ research problem, it was a lot easier for me to choose the former.
 \*\*\*
 {: .centered }
 
-Two hour break between lectures. That leaves enough time to fit in a bit
-of research. A novel idea pops into my head. I do a literature check, and find my
-exact idea in a paper from eight years ago.
+**October 2014**
 
-Confidence runs through me
+An interesting idea pops into my head. I do a literature check, and find
+my exact idea in a paper from seven years ago.
+
+It's a bittersweet finding, but I'm still proud of myself.
 Another researcher had the same idea, and they got a paper out of it!
-Maybe I'm not a fraud after all. I spend the rest of the week reading and
-implementing.
+Maybe I'm not a fraud after all. And, I see some interesting extensions that
+aren't mentioned in the literature.
 
-Then, it all goes wrong. All my classes ramp up at the same time.
-I spend my days going to lecture and my nights doing homework and projects,
-Sorry research, I don't have time for you. I need to learn about thread schedulers
-and clopen sets and infinite-dimensional vector spaces and Jacobians and
-you need to wait. You have to wait. Please.
+For the next week, I'm riding a high of accomplishment, making steady progress
+on an implementation.
+Then, it all goes wrong. My classes all ramp up at the same time.
+I spend my days in lecture and my nights doing homework and projects. Resarch
+goes on the back burner. I'm sorry! I don't have time for you! I need to learn
+about thread schedulers, about clopen sets and Jacobians, and you need to wait.
+You have to wait for me. Please.
 
-By the end of the week, I've done literally no research.
-I sheepishly try to cobble something together in time for my one-on-one, but
-I can't do much with no new ideas and no new code.
+No amount of pleading can change the facts: by my next one-on-one, I've done
+literally no research. I sheepishly try to cobble something together in time
+for my meeting, but I can't do much with no new ideas and no new code. (Besides,
+grad students are the sharpest bullshit detectors I know. It comes with the
+territory.)
 
-In my meeting, I hear disappointment in his words, and I can't
-tell if he's actually disappointed or if I'm adding my self-loathing into
-his speech because that's what I want to hear. I have time that afternoon,
-but I go home instead, because I'm in too bad a mood to work effectively.
+In my meeting, I hear disappointment in his words, but I can't
+tell if he's actually disappointed or if I'm reading self-loathing
+because that's what I want to hear. I finally have free time that afternoon,
+but I go home instead. I'm in too bad a mood to do any work.
 
-Instead of catching up on work or catching up with friends, I lie on my bed
+Instead of meeting up with friends, I lie on my bed
 and stare at the ceiling, thoughts swirling in my head.
 
 *You're pushing yourself too hard. You need to slow down.*
@@ -217,16 +249,18 @@ A common mix is a strong letter from your PI, an okay letter from the course
 you TAed, and a weak letter from the course you did well in. Again, stronger
 applicants will have two research letters, or maybe even three.
 
-http://graddecision.org/SpecialCircumstance_CS.html
+(Based on [these two](https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf)
+[sources](https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf).)
 
-This is an incredibly demanding funnel. I don't have hard numbers, but for the
-sake of argument let's guess the top 10% of CS students at Berkeley meet
-these qualifications. They apply,
-the good ones (or the lucky ones) (or actually, both) get in, and they start
-a PhD.
+This is an incredibly demanding funnel. First, only the strong CS students
+will even meet these qualifications. They apply,
+the truly excellent ones (or the lucky ones) (or actually, both) get accepted,
+and they start a PhD. About 14% of Berkeley CS undergrads go to graduate school,
+including masters programs, and I'd say it's reasonable to say that is actually
+the top 14% of the major.
 
-A quarter of them will drop out of the PhD. (This is the estimated CMU
-drop out rate, circa 2014.)
+A quarter of incoming PhD students will drop out of the program. (This is the
+estimated CMU drop out rate, circa 2014.)
 
 You need incredible talent and dedication to even get into a program as good
 as CMU, to make it through the application filter, and a quarter of them
@@ -257,14 +291,14 @@ you disappointed. Not everybody can be Elon Musk. That's not saying I do this
 successfully, but I try.
 
 The point is that when I surround myself with people better than me, I lose the
-ability to rank myself. Am I doing well in the Berkeley CS program? Yeah! Objectively,
-I'm doing very well. Subjectively, I still feel like an idiot who spends way too
-much time doing who knows what.
+ability to rank myself. Am I doing well in the Berkeley CS program? Yes.
+Objectively, I'm doing very well. Subjectively, I still feel like an idiot who
+spends way too much time doing who knows what.
 
 \*\*\*
 {: .centered }
 
-**Spring semester, 2015**
+**January 2015**
 
 New semester, same problems. Four more technical classes to juggle, and more
 deadlock in my research. Four classes is pushing it if I want to do good
@@ -366,13 +400,14 @@ No one says everybody should try getting a PhD.
 \*\*\*
 {: .centered }
 
-**Fall semester, 2015**
+**September 2015**
 
 I chose to do an internship instead of research the summer before senior year.
 I was a bit disillusioned with research after running into so many road blocks,
 and didn't feel like I was self-motivated enough to try for a PhD program.
 
-It was a good experience, and overall I'm very glad I decided to take the offer.
+It was [a good experience]({% post_url 2015-08-20-things-i-did-in-my-khan-academy-internship %}),
+and overall I'm very glad I decided to take the offer.
 At the same time, as the semester started, I found myself enjoying research
 a lot more. Maybe it was the light course load in the first few weeks, or maybe
 it was the realization that I actually knew something, and could hold a
@@ -415,7 +450,10 @@ bit depressing that I'm serious about this.
 Out of curiosity, I do one circuit of the lab, and one other person is still
 spending their Friday night (now Saturday morning) doing work.
 
+\*\*\*
+{: .centered }
 
+I 
 The blessing and curse of the Information Age is that if you want to
 learn something, you can. Ever wondered what gerrymandering was? Here, go
 to Wikipedia. What about World War II? Well, that's covered too, in volumes and
