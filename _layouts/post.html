@@ -21,4 +21,7 @@ layout: default
     <a href="{{ page.next.url | prepend: site.baseurl }}" class="newer-posts">{{ page.next.title }} &rarr;</a>
     {% endif %}
   </div>
+
+  <!-- Disqus comments -->
+  {% include comments.html %}
 </div>
