@@ -6,18 +6,8 @@ date:   2016-01-03 23:14:00 -0800
 
 DRAFT
 
-Foreword
-------------------------------------------------------------------
-As of the time I'm writing this, I've never been a full time software developer
-and I've never been a full time researcher. It's possible my perspective is
-warped. If you feel parts of this are inaccurate or exaggerated, it's a feature,
-not a bug.
-
-This is how I feel about things as a graduating senior. The beauty of opinions
-is that I make no claim to be right, and you're under no obligation to agree with me.
-
-How I Got To Where I Am Now
------------------------------------------------------------------
+*These are my thoughts as a graduating senior who has both never been a full time
+software developer and has never been a full time researcher.*
 
 **December 2015**
 
@@ -95,7 +85,7 @@ topics that could be interesting.
 
 At one point, he asks, "Have you heard of neural nets?"
 
-"Nope," I reply. Interally, I think, *Remember to admit what you don't know.
+"Nope," I reply. Internally, I think, *Remember to admit what you don't know.
 That should be easy, you don't know anything yet.*
 
 "Okay. The basic idea is to take your input features, apply a linear
@@ -105,7 +95,7 @@ range of problems."
 
 I follow this explanation (hooray!), but I have no idea why
 this should even work. He admits the theory behind neural nets is a bit shaky,
-but he points towards an execptionally cool result: [learning to play Atari
+but he points towards an exceptionally cool result: [learning to play Atari
 games purely from visual input](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf).
 
 We talk a bit more, and although I don't make a decision on
@@ -185,8 +175,8 @@ a speech Andrew Wiles gave at the International Math Olympiad.
 > and you never know for sure whether you're going to make the finish line. "The
 > transition from a sprint to a marathon requires a new kind of stamina and a
 > profoundly different test of character," he said. "We admire someone who can win
-> a gold medla in four successive Olympic Games, not so much for the raw talent
-> as for the strength of will and determinatino to purse a goal over such a
+> a gold medal in four successive Olympic Games, not so much for the raw talent
+> as for the strength of will and determination to purse a goal over such a
 > sustained period of time. [...] You can forget the idea, if you ever had it,
 > that all you require is a bit of natural genius and that then you can wait for
 > inspiration to strike."
@@ -212,7 +202,7 @@ aren't mentioned in the literature.
 For the next week, I'm riding a high of accomplishment, making steady progress
 on an implementation.
 Then, it all goes wrong. My classes all ramp up at the same time.
-I spend my days in lecture and my nights doing homework and projects. Resarch
+I spend my days in lecture and my nights doing homework and projects. Research
 goes on the back burner. I'm sorry! I don't have time for you! I need to learn
 about thread schedulers, about clopen sets and Jacobians, and you need to wait.
 You have to wait for me. Please.
@@ -256,8 +246,8 @@ If you're applying for AI or machine learning, the standards are much higher
 because so many (almost 50%) of applicants try for these fields.
 One publication or one paper under review is almost expected.
 - Three letters of recommendation.
-A common mix is a strong letter from your PI, an okay letter from the course
-you TAed, and a weak letter from the course you did well in. Again, stronger
+A common mix is a strong letter from your PI, a decent letter from the course
+you TAed for, and a weak letter from the course you did well in. Again, stronger
 applicants will have two research letters, or maybe even three.
 
 (Based on [these two](https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf)
@@ -271,8 +261,8 @@ and they start a Ph.D.. About 14% of Berkeley CS undergrads go to graduate schoo
 including masters programs, and I'd say it's reasonable to say that is actually
 the top 14% of the major.
 
-A quarter of incoming Ph.D. students will drop out of the program. This is the
-CMU drop out rate, circa 2014.
+A quarter of incoming Ph.D. students will drop out of the program. That's the
+percentage that leave CMU, circa 2014.
 
 You need incredible talent and dedication to even get into a program as good
 as CMU, to make it through the application filter, and a quarter of them
@@ -283,7 +273,7 @@ The top high schoolers are average undergrads.
 The top undergrads are average graduate students.
 The top graduate students are average professors, and then some get a
 tenure-track job and some don't. The ones who do need to prove they
-desrver tenure. Everyone competes for grant money to fund the next wave
+deserve tenure. Everyone competes for grant money to fund the next wave
 of grad students. It keeps going. There is no top
 to the spire, because the people who make it high enough have become so
 enlightened that they recognize the top *doesn't actually exist.* It's an
@@ -324,18 +314,18 @@ I put in hours where I can, but my schedule is busy, and once again I can't
 put in as many as I'd like. Still, I have some interesting results, showing
 that with enough training time I can get a program to self-learn
 heuristics for playing Connect Four.
-It's not amazing, but I have trouble beating it, so it's at least okay.
+It's not amazing, but I have trouble beating my AI, so it's not nothing.
 
-Unforunately, my approach requires lots of computation
+Unfortunately, my approach requires lots of computation
 time, and running experiments is becoming infeasible.
 I can't make more progress until I find a way to make my experiments run faster,
-and I don't hit ony any solutions that are easy to implement.
+and I don't hit on any solutions that are easy to implement.
 
 These are the thoughts in the back of my head, while I wait in line for free
-food. At Berkeley, the demand for CS internships is so high that companies
+food. The demand for Berkeley CS students is so high that companies
 give free dinner, T-shirts, and stickers at their info sessions.
 It's pocket change for them, but every company has to do it to compete for
-their mindshare. Hungry CS students are totally okay with this situation.
+their mindshare. Hungry CS majors are totally okay with this situation.
 
 I'm waiting with a few other people from the CS honor societies. Some
 are 100% doing grad school, some are 100% not doing grad school. A few are on
@@ -358,14 +348,14 @@ already know it's true, and it doesn't need repeating.
 Let's talk about the elephant in the room: the money.
 
 The software industry pays stupidly well. Based on Berkeley Career Center
-surveys, the average salary for an EECS student in 2014 was $108,000.
+surveys, EECS graduates averaged starting salaries of $108,000 in 2014.
 For a company in Silicon Valley, this actually is not that surprising, but if
 that salary for new grads doesn't seem slightly insane, you need to recalibrate
 what you know about money.
 
 That's not even getting into the perks. Companies like Google, Facebook, and
 LinkedIn sell themselves by offering insane perks.
-Free lunch, free dinner, we have a ball pit on campus, we have massagers on campus.
+Free lunch, free dinner, we have a ball pit on campus, we have a masseuse on campus.
 We built a slide from the 2nd floor of the building to the ground floor, because
 it helps express our inner child. You'll never go hungry, you'll never go
 thirsty, and by the way we have some interesting problems that need solving,
@@ -394,8 +384,8 @@ The only valid reason to go to CS grad school is because you want to do research
 
 Money isn't my driving motivation, so it doesn't play a role in my decision.
 Of course, I'll gladly negotiate for more money if I can, but in the end I
-care more about self-satisfication and impact. However, ignoring the
-possiblity of six-figure salaries straight out of college would be insane.
+care more about self-satisfaction and impact. However, ignoring the
+possibility of six-figure salaries straight out of college would be insane.
 
 (There is a Ph.D. Comics about "selling out" that I can't find right now, which will go here.)
 
@@ -503,7 +493,7 @@ his experience was common. In retrospect, [he says he was a 30th percentile
 in happiness at Stanford](http://pgbovine.net/Ph.D.-interview-eugene-wu-keith-winstein.htm),
 but also said it could have been even harder if he was at a weaker school.)
 
-Too long? Okay, how about shorter blog posts and articles?
+Too long? Okay, how about blog posts and articles?
 Stories about the malaise in academia are all over the place. There is sampling
 bias, where only the more extreme opinions get told, but it's a bit worrying
 when doom and gloom stories are easy to find and sunshine and rainbow
@@ -623,7 +613,7 @@ I take a deep breath, and start composing my thoughts.
 
 My professor was very understanding.
 
-For a few days after that choice, I found myself idlly considering whether I could
+For a few days after that choice, I found myself idly considering whether I could
 put together an application, and had to mentally beat myself with a newspaper.
 You can't change your mind! Application deadlines were 3 days ago! It's done!
 Live your life with the choice you made.
