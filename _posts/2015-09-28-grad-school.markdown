@@ -628,8 +628,8 @@ implausible I could have even cobbled together an application.
 I'm worried that I'm doing a disservice to the world by not going for a Ph.D.,
 because I think I could actually handle it if I find the right idea to keep me
 going. In a group meeting near the end of this semester, I realized I was
-actually following 90\% of it, and knew exactly where to look to learn the
-remaining 10\%.
+actually following 90% of it, and knew exactly where to look to learn the
+remaining 10%.
 
 I shouldn't be worried. It's not like I've completely shut the door on getting a Ph.D..
 And, those people I consider smarter than myself? I know some who also didn't
