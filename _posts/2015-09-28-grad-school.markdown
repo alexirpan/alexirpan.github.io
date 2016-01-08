@@ -4,10 +4,8 @@ title:  "\"How Do You Feel About Grad School?\""
 date:   2016-01-03 23:14:00 -0800
 ---
 
-DRAFT
-
 *These are my thoughts as a graduating senior who has both never been a full time
-software developer and has never been a full time researcher.*
+software developer and never been a full time researcher.*
 
 **December 2015**
 
@@ -28,40 +26,36 @@ I take a deep breath, and start composing my thoughts.
 > Subject: Not applying this year
 >
 > After thinking about things more, I'm not planning to apply to grad school
-> this year. I'm going to try to explain my reasons...
+> this year. I'm going to try to explain my reasons.
 
 \*\*\*
 {: .centered }
 
 Most friends at Berkeley were surprised I didn't apply to graduate school.
-To many of them, it seemed patently obvious I was going to apply. I want to
-explain why it wasn't so clear cut. Over the past few years, I've both been
-100% sure I was going to apply and 100% sure I wasn't. Graph my motivation for
-graduate school and you'll get out a sine wave.
+To many of them, it seemed obvious I was going to apply.
 
-First, I should explain why it looked like I was headed for grad school.
-I don't like to brag about my academic accomplishments. It's both
-pointless and not actually indicative of your social worth, intelligence, or
-research ability.
-
-Still, in this case it's relevant.
-So, (breathes in), my transcript has more As than Bs. Some of those As are A+s.
-I've taken four technicals every semester, which is more than the average (but
-I know people who take more.)
+So first, I should explain why graduate school looked inevitable.
+My transcript has more As than Bs. Some of those As are A+s.
+I've taken four technicals every semester, which is more than the average,
+although I know people who take more.
 I started taking graduate level courses in junior year, because the remaining
-upper divisions didn't interest me enough. Meanwhile, I've also been doing
+upper divisions didn't interest me enough. Meanwhile, I've also done
 research since junior year, in the Robot Learning Lab at UC Berkeley.
+
+(For the record, I don't like to brag about my academic accomplishments.
+It's both pointless and not actually indicative of your social worth or
+intelligence.)
 
 Given just that information, it really, *really* looks like I'm an academic,
 through and through.
 
 That's what it looks like.
 
-In reality, I'm not sure I am on. I've never been sure.
+In reality, I'm not sure I am one.
 
 Getting good grades and taking challenging courses shows you have good work
-ethic or good talent. They are signs you have the potential to be a
-good researcher. They don't automatically make you one.
+ethic or good talent. They're signs you have the potential to be a
+great researcher. They don't automatically make you one.
 
 \*\*\*
 {: .centered }
@@ -73,22 +67,22 @@ It's my first day in the lab, and I already feel like I don't belong.
 I have no idea what I want to research. I
 only asked for a research position because it's The Thing Students With
 High GPA are supposed to do. At least I know why I'm here - I got the top score
-on the AI final last semester. (Turns out when you have no research,
+on the AI final last semester. (When you have no research,
 no relationships,
 almost no extracurriculars, a barely functioning social life, and no side
 projects, you can devote a lot of time to schoolwork. In retrospect, spending
-15 hours optimizing a Pacman bot was a big waste of time.)
+15 hours optimizing a Pacman bot was a waste of time.)
 
 To help give me direction, I meet with a graduate student who will be my main
-mentor from here on out. We introduce ourselves, and he starts proposing a few
-topics that could be interesting.
+mentor in the upcoming months. We introduce ourselves, and he starts proposing
+a few potential topics.
 
 At one point, he asks, "Have you heard of neural nets?"
 
 "Nope," I reply. Internally, I think, *Remember to admit what you don't know.
-That should be easy, you don't know anything yet.*
+That should be easy, you don't know anything yet, and that's okay.*
 
-"Okay. The basic idea is to take your input features, apply a linear
+"Well, the basic idea is to take your input features, apply a linear
 transformation represented by a matrix, then apply a nonlinear function to that.
 It turns out if you repeat this process several times, you can solve a wide
 range of problems."
@@ -119,18 +113,18 @@ some discussion.
 I don't understand a word of it, but I try not to let it discourage me.
 It's my first week. There's no way I should know what they're talking about.
 
-The same song and dance continues for the next two weeks. Eventually, I hit on
-investigating Monte Carlo Tree Search.
+The same song and dance continues for the next two weeks. Eventually, I decide
+to research Monte Carlo Tree Search.
 My lectures are separated by 1-2 hour gaps, and I spend them doing research.
 By which I mean reading
 the simplest reference I can find, in a desperate bid to find something I
-can even comprehend. I also go to weekly group meetings. Every presentation
+can follow. I also go to weekly group meetings. Every presentation
 loses me on literally the first slide, but there's free lunch, so I can't complain.
 
 ![Ph.D. Comics Presentation](/public/grad-school-thoughts/phdcomicspresentation.gif)
 {: .centered }
 
-I'm the guy with the brown afro, except I'm not even a first year which makes it worse.
+I'm basically the guy with the brown afro.
 Source: [Ph.D. Comics](http://www.phdcomics.com/comics/archive.php?comicid=719)
 {: .centered }
 
@@ -145,11 +139,12 @@ drops sharply. (It bottoms out a few weeks later, after reading
 Once I see papers as promising ideas instead of ground
 truth, prior work doesn't intimidate me as much.
 At the same time, there's still a vast ocean of prior work, and I can barely
-keep myself afloat.
+keep myself afloat. Still, I'm doing research! Literally pushing the boundaries
+of human knowledge. Better to light one candle than to curse the darkness.
 
-It takes me two weeks to write my first line of code.
-Reading papers isn't enough. I need to implement something to actually understand
-what it does.
+It takes me a while to realize reading papers isn't enough. I need to implement
+their ideas to understand them better. I write my first line of code two weeks
+after starting.
 
 It takes me another week to get my code to work.
 
@@ -159,10 +154,11 @@ Then, one more week to understand why it works at all.
 {: .centered }
 
 No one, not even the most brilliantly arrogant people I know, has ever said
-research is easy. Professors talk about the long hours, 60 to 80 hour work weeks,
-and for most of the time you're stuck on a problem. Of course, you're
-not really stuck, because by failing so many times, you learn when an approach
-doesn't work. Still, it can be hard to see the upside when you have no positive
+research is easy. Professors casually talk about 60 to 80 hour work weeks,
+and most of that time is spent getting stuck on a problem.
+Of course, you're not really stuck, because by failing so many times,
+you learn when an approach does or does not work.
+Still, it can be hard to see the upside when you have no positive
 results.
 
 This makes scientific research a fundamentally different problem from homework.
@@ -196,11 +192,11 @@ my exact idea in a paper from seven years ago.
 
 It's a bittersweet finding, but I'm still proud of myself.
 Another researcher had the same idea, and they got a paper out of it!
-Maybe I'm not a fraud after all. And, I see some interesting extensions that
+That's a good sign. And, I see some interesting extensions that
 aren't mentioned in the literature.
 
 For the next week, I'm riding a high of accomplishment, making steady progress
-on an implementation.
+on implementing my ideas.
 Then, it all goes wrong. My classes all ramp up at the same time.
 I spend my days in lecture and my nights doing homework and projects. Research
 goes on the back burner. I'm sorry! I don't have time for you! I need to learn
@@ -208,14 +204,14 @@ about thread schedulers, about clopen sets and Jacobians, and you need to wait.
 You have to wait for me. Please.
 
 No amount of pleading can change the facts: by my next one-on-one, I've done
-literally no research. I sheepishly try to cobble something together in time
+literally no research. I try to cobble something together in time
 for my meeting, but I can't do much with no new ideas and no new code. (Besides,
-grad students are the sharpest bullshit detectors I know. It comes with the
+researchers are the sharpest bullshit detectors I know. It comes with the
 territory.)
 
-In my meeting, I hear disappointment in his words, but I can't
-tell if he's actually disappointed or if I'm reading self-loathing
-because that's what I want to hear. I finally have free time that afternoon,
+In my meeting, I hear disappointment, but I can't
+tell if he's actually disappointed or if I'm projecting my disappointment in
+myself into his words. I finally have free time that afternoon,
 but I go home instead. I'm in too bad a mood to do any work.
 
 Instead of meeting up with friends, I lie on my bed
@@ -331,11 +327,12 @@ I'm waiting with a few other people from the CS honor societies. Some
 are 100% doing grad school, some are 100% not doing grad school. A few are on
 the fence, like me.
 
-"What are we even doing with our lives? Is waiting in line for 20 minutes really
+One of my friends pipes up. "What are we even doing with our lives?
+Is waiting in line for 20 minutes really
 worth it for free food?"
 
-"Well, I'm here to get used to the grad student life. Why are you here, Mister
-I Already Accepted A Full Time Offer In Industry?"
+Someone else replies. "Well, I'm here to get used to the grad student life.
+Why are you here, Mister I Already Accepted A Full Time Offer In Industry?"
 
 "You know, I don't really know. Force of habit, I guess."
 
@@ -574,24 +571,33 @@ ago. I was just too worried to say it out loud.
 \*\*\*
 {: .centered }
 
-*I've given a lot of thought to how I wanted to express how I feel about
-grad school, but in the end I decided it would be simpler to include my
-email in full.*
-
 **December 2015**
+
+I need to send an email to the professor I'm doing
+research with. You would think that after doing it so many times, it
+wouldn't be so intimidating, but you would be wrong.
+
+*I know what I want to say. I just need to look inside and say it.*
 
 I take a deep breath, and start composing my thoughts.
 
 > After thinking about things more, I'm not planning to apply to grad school this year. I'm going to try to explain my reasons.
 > 
 > - I haven't been researching faculty at any schools I might be applying to. Given that some of the deadlines are Dec 8th, that means I won't have a very polished application. But more importantly, I haven't had the motivation to work on applications. Of course, very few people look forward to writing applications, but people interested in grad school will usually have the motivation to trudge through it because they see it as necessary to get to where they want to go.
-> 
+
+*It's true, I haven't. It has to mean something.*
+
 > - I haven't notified people writing my letters of recommendation. Again, this isn't a deal breaker by itself, but it's certainly somewhat bad etiquette, and it goes back towards the idea of motivation. If I believed I wanted to apply this year I certainly would have notified faculty sooner.
 > 
 > - I talked with some other seniors/grad students, and the general consensus was that you should only go to grad school if you are very sure you want to go. If you're only somewhat interested, you should internally downgrade interest by a lot.
-> 
+
+*Maybe grad school isn't for me.*
+
 > - Assuming I magically finished my application and got into a top graduate program, I'd still lean towards not going. After a Ph.D., I don't think I'd want to stay in academia, and would likely try to get into an industry lab. At that point, the Ph.D. essentially becomes a 5-6 year long process of improving research skills enough to apply for those positions, which doesn't sound worth it to me.
-> 
+
+*I don't have to go for a Ph.D. if I don't want to. That's okay.
+It's time to admit it to myself.*
+
 > To me, there are many reasons to go for a Ph.D., but I'm not completely sold on any of them:
 > 
 > - To prove to yourself / the world that you can get through a Ph.D. program, because only a small percentage of people can do so. I don't a strong need to prove myself to be better than other people, and care more about my personal standards for how much I can push myself. (I suppose that could also be seen as an argument for why I should do a Ph.D., which is all about pushing boundaries.)
@@ -603,10 +609,16 @@ I take a deep breath, and start composing my thoughts.
 > - A love for teaching with the plan to go for a lecturer position after a Ph.D.. I've liked TAing this semester and approve of education in general, but again this isn't a strong enough interest to make me want to teach full time.
 > 
 > The summary ends up being: I wasn't motivated to work on my applications. I took that as a sign that I wasn't as interested in a Ph.D. as I was before. After asking myself a few things, I realized it was unlikely I would start a Ph.D. even given a free entrance into a top program. None of these decisions depend on whether I'd be a good researcher or not, they all depend on whether I'm motivated to do research or not.
-> 
+
+*And if I have doubts...*
+
 > Maybe this is already clear, but **I'm not saying any of these beliefs are set in stone.** It is entirely possible that I'll change my mind about many of these things, However, my expectation is that my beliefs aren't going to change significantly by next year to make applying worth it. I still plan to do more research this week + finals week to set up opportunities for myself to gain motivation for research, but if they change enough to make me want to go to grad school I'll just have to wait a year on applications.
-> 
+
+*I'll deal with it then, because I don't need them now.*
+
 > Alex
+
+I read and reread, wanting to get it just right. Then, I click send.
 
 \*\*\*
 {: .centered }
