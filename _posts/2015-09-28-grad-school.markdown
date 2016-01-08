@@ -80,7 +80,7 @@ a few potential topics.
 At one point, he asks, "Have you heard of neural nets?"
 
 "Nope," I reply. Internally, I think, *Remember to admit what you don't know.
-That should be easy, you don't know anything yet, and that's okay.*
+That should be easy, you don't know anything yet.*
 
 "Well, the basic idea is to take your input features, apply a linear
 transformation represented by a matrix, then apply a nonlinear function to that.
@@ -114,7 +114,7 @@ I don't understand a word of it, but I try not to let it discourage me.
 It's my first week. There's no way I should know what they're talking about.
 
 The same song and dance continues for the next two weeks. Eventually, I decide
-to research Monte Carlo Tree Search.
+to research ways to combine Monte Carlo Tree Search with reinforcement learning.
 My lectures are separated by 1-2 hour gaps, and I spend them doing research.
 By which I mean reading
 the simplest reference I can find, in a desperate bid to find something I
@@ -192,7 +192,7 @@ my exact idea in a paper from seven years ago.
 
 It's a bittersweet finding, but I'm still proud of myself.
 Another researcher had the same idea, and they got a paper out of it!
-That's a good sign. And, I see some interesting extensions that
+Maybe I'm not a fraud after all. And, I see some interesting extensions that
 aren't mentioned in the literature.
 
 For the next week, I'm riding a high of accomplishment, making steady progress
