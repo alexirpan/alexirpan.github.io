@@ -485,12 +485,12 @@ It's real. A bit exaggerated, and different people run into different troubles,
 but it happens.
 
 Not a fan of comics? Okay, why don't you read
-[The Ph.D. Grind](http://pgbovine.net/Ph.D.-memoir.htm) by Philip Guo? It's a
+[The Ph.D. Grind](http://pgbovine.net/PhD-memoir.htm) by Philip Guo? It's a
 detailed account of the author's experience getting a Ph.D. at Stanford, and I
 consider it required reading if you're considering a Ph.D.. More than
 anything else, it conveys how soul-crushing academia can be. (That's not to say
 his experience was common. In retrospect, [he says he was a 30th percentile
-in happiness at Stanford](http://pgbovine.net/Ph.D.-interview-eugene-wu-keith-winstein.htm),
+in happiness at Stanford](http://pgbovine.net/PhD-interview-eugene-wu-keith-winstein.htm),
 but also said it could have been even harder if he was at a weaker school.)
 
 Too long? Okay, how about blog posts and articles?
