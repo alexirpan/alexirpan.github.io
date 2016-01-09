@@ -395,20 +395,18 @@ about selling out on their principles.
 Source: [Ph.D. Comics](http://www.phdcomics.com/comics/archive.php?comicid=839)
 {: .centered }
 
-In many respects, going for a Ph.D. is like starting a startup. Not working
-at a startup, founding a startup. Both demand
-dedication. Both end up becoming your life. It takes around 5 years to get a
-Ph.D., and it can take 5 years for people to even learn about your startup. You
+In many respects, the mindset of Ph.D. candidates matches the mindset of startup
+founders. Both demand unending dedication. Both can take over your life.
+It takes around 5 years to get a Ph.D., and it can take 5 years for people to
+even learn about your startup. You
 shoulder a lot of stress, but you're not supposed to tell anybody about it because
-you need to look like you know what you're doing and have a plan.
-They demand a similar skillset, and I suspect there's a big overlap between
-people with or considering Ph.D.s and startup founders.
+you need to look like you know what you're doing.
 
 If a startup is a bet against the world that you can build something useful,
 then a Ph.D. is a bet against the world that you can discover something that
 no one has ever seen before.
 
-That's not to say they're the same, because they certainly aren't.
+That's not to say they're the same.
 [Paul Graham says everybody should try founding a startup.](http://paulgraham.com/notnot.html)
 No one says everybody should try getting a Ph.D..
 
@@ -423,9 +421,9 @@ and didn't feel like I was self-motivated enough to try for a Ph.D. program.
 
 It was [a good experience]({% post_url 2015-08-20-things-i-did-in-my-khan-academy-internship %}),
 and overall I'm very glad I decided to take the offer.
-At the same time, as the semester started, I found myself enjoying research
+At the same time, when the semester started I found myself enjoying research
 a lot more. Maybe it was the light course load in the first few weeks, or maybe
-it was the realization that I actually knew something, and could hold a
+it was the realization that I actually learned something. I could hold a
 conversation with the grad student mentoring me. At least, for a while.
 
 Riding the peak of research motivation, I set up meetings with my PI to find
@@ -466,67 +464,72 @@ Out of curiosity, I look around, and one other person is still doing work.
 \*\*\*
 {: .centered }
 
-By this semester, I know what research is like. I have full-time job offers
-waiting for me, and all my major requirements are done.
-If I wanted to relax and do nothing this semester, I could.
+By my first semester of senior year, I knew what research was like.
+I had full-time job offers waiting for me, and all my major requirements were
+done. If I wanted to relax and do nothing, I could have.
 
 So of course, I signed up for three grad classes, TAed for the first time, and
-did a research on top of it. At some point in high school, I gained
-a deep unease with myself that pushes me to do more. Appeasing that part of
-myself while making sure I don't overload has been one of the harder parts of
-my life.
+did research on top of it. Sometime in high school I gained
+a deep unease with myself that always pushes me to do more. Appeasing that part
+of my brain while making sure I don't overload has been one of the harder
+challenges of my life.
 
 I definitely have a big self-deprecation complex. On one hand, it's probably
 a net positive for success, especially success in research. Without natural
 curiosity, there's no way I could deal with academia, because the only reason
 anyone would choose the academia life is because they wanted it. (There are
 exceptions, like international students who need to keep student status for
-their visas, but often they like research as well, because otherwise they
+their visas, but the ones I've met like research as well, because otherwise they
 wouldn't have made it to Berkeley.)
 
 To say there's angst in academia is an understatement. For graduate school,
 you don't need to look very hard to find the black humor and horror stories.
-I've already shared lots of Ph.D. Comics above. All the things you see?
-It's real. A bit exaggerated, and different people run into different troubles,
-but it happens.
+I've already shared lots of Ph.D. Comics above. All the things you see in those
+comics? They're real. A bit exaggerated, and different people run into
+different troubles, but it happens.
 
-Not a fan of comics? Okay, why don't you read
-[The Ph.D. Grind](http://pgbovine.net/PhD-memoir.htm) by Philip Guo? It's a
+There's also
+[The Ph.D. Grind](http://pgbovine.net/PhD-memoir.htm) by Philip Guo. It's a
 detailed account of the author's experience getting a Ph.D. at Stanford, and I
-consider it required reading if you're considering a Ph.D.. More than
+consider it required reading if you're considering grad school. More than
 anything else, it conveys how soul-crushing academia can be. (That's not to say
 his experience was common. In retrospect, [he says he was a 30th percentile
 in happiness at Stanford](http://pgbovine.net/PhD-interview-eugene-wu-keith-winstein.htm),
 but also said it could have been even harder if he was at a weaker school.)
 
-Too long? Okay, how about blog posts and articles?
-Stories about the malaise in academia are all over the place. There is sampling
-bias, where only the more extreme opinions get told, but it's a bit worrying
+Even a casual search of the internet will turn up countless blog posts,
+articles, and opinion pieces. Stories about the malaise in academia are all over
+the place. There is sampling bias, where only the more extreme opinions get
+told, but it's a bit worrying
 when doom and gloom stories are easy to find and sunshine and rainbow
 stories aren't.
+
+> A 2015 study at the University of California Berkeley found that 47% of graduate students suffer from depression, following a previous 2005 study that showed 10% had contemplated suicide. A 2003 Australian study found that that the rate of mental illness in academic staff was three to four times higher than in the general population, according to a New Scientist article.
+
+[Source](http://qz.com/547641/theres-an-awful-cost-to-getting-a-phd-that-no-one-talks-about/)
+{: .centered }
+
+> Look, I am in fact a career academic. I know exactly what's attractive about it, I've made considerable financial and personal sacrifices to get myself to a position where I can work in a university environment and spend my time doing groundbreaking research. And yet. The gateway into this life is a Ph.D., and the Ph.D. system is deeply, deeply fucked up when it isn't actively abusive. **Doing a Ph.D. will break you.** It's pretty much designed to break you. Yes, even you, you who are brilliant (that almost goes without saying; it's because you're brilliant that you're contemplating doing a Ph.D. in the first place). You who are resilient and have survived several kinds of shit that life has thrown at you just to get to the point where you're about to graduate with a brilliant degree. You who have the unconditional support of your family and friends and partners. If you have every admirable personal quality you can think of, if you have every advantage in life, still, getting through a Ph.D. will grind you down, will come terrifyingly close to killing your soul and might well succeed. It will do horrible things to your mental and physical health and test to breaking point every significant relationship in your life. 
+
+[Source](https://liv.dreamwidth.org/389934.html)
+{: .centered }
 
 > "You make time for hobbies," she told me. "This isn't undergrad anymore.
 > This is the rest of your life."
 
 [Source (need Quora account)](http://qr.ae/RgsIFA)
-
-> Look, I am in fact a career academic. I know exactly what's attractive about it, I've made considerable financial and personal sacrifices to get myself to a position where I can work in a university environment and spend my time doing groundbreaking research. And yet. The gateway into this life is a Ph.D., and the Ph.D. system is deeply, deeply fucked up when it isn't actively abusive. **Doing a Ph.D. will break you.** It's pretty much designed to break you. Yes, even you, you who are brilliant (that almost goes without saying; it's because you're brilliant that you're contemplating doing a Ph.D. in the first place). You who are resilient and have survived several kinds of shit that life has thrown at you just to get to the point where you're about to graduate with a brilliant degree. You who have the unconditional support of your family and friends and partners. If you have every admirable personal quality you can think of, if you have every advantage in life, still, getting through a Ph.D. will grind you down, will come terrifyingly close to killing your soul and might well succeed. It will do horrible things to your mental and physical health and test to breaking point every significant relationship in your life. 
-
-[Source](https://liv.dreamwidth.org/389934.html)
+{: .centered }
 
 ![Ph.D. Comics Cancer](/public/grad-school-thoughts/phdcancer.gif)
 {: .centered }
 
-[Excerpt of this comic](http://www.phdcomics.com/comics/archive.php/archive.php?comicid=1162)
+[Source](http://www.phdcomics.com/comics/archive.php/archive.php?comicid=1162)
 {: .centered }
 
-> A 2015 study at the University of California Berkeley found that 47% of graduate students suffer from depression, following a previous 2005 study that showed 10% had contemplated suicide. A 2003 Australian study found that that the rate of mental illness in academic staff was three to four times higher than in the general population, according to a New Scientist article.
+So, if it's so bad, why wass choosing not to go to grad school such a hard decision?
 
-[Source](http://qz.com/547641/theres-an-awful-cost-to-getting-a-phd-that-no-one-talks-about/)
-
-So, if it's so bad, why is choosing not to go to grad school such a hard decision?
-
-It's because some people care deeply about research. they care about it enough
+Despite all the struggle I went through, I did believe in the work
+I was doing. Some people care deeply about research. They care about it enough
 to accept the hardships that comes with the Ph.D.. There's an old saying: if you
 could be happy anywhere else, don't go into academia. Some people can't be happy
 anywhere else. It is what it is.
@@ -535,7 +538,9 @@ anywhere else. It is what it is.
 a job where you put up with lots of stress for that 10% or 20% of the job you
 actually want to do, because you enjoy it that much.)
 
-It feels like I fall right on the boundary between the two.
+It feels like my belief in research falls right on the boundary. Interested
+enough to keep doing it semester after semester, but not enough to put in the
+hours I needed to create work of my own.
 A lot of sections from The Ph.D. Grind resonated with me, but my favorite was
 this one.
 
@@ -544,12 +549,14 @@ this one.
 > just too great for me.
 
 When I don't do research for a while, I miss the feeling that I'm in touch with
-the cutting-edge and directly playing a hand in shaping the future. (In AI too!
-Holy shit, I get to experiment with algorithms for computer learning, how awesome
-is that opportunity?) When I do research for longer, I realize how much of a
+the cutting-edge and directly playing a hand in shaping the future. In AI too!
+Holy shit, I get to experiment with algorithms for computer learning at a top-tier
+university! How awesome is that opportunity?
+
+When I do research for longer, I realize how much of a
 novice I am and how ridiculous it is to believe I can personally make a key
-contribution to the field. (Oh jeez, so many subfields, so many subsubfields,
-papers and papers and papers and which ones are even worth reading?)
+contribution to the field. So many subfields, so many subsubfields,
+papers and papers and papers and which ones are even worth reading?
 
 One time, [Andrew Ng](http://www.andrewng.org/), one of the biggest names
 in machine learning, came to give a talk on the deep learning work he did at
@@ -559,7 +566,7 @@ learning by Andrew Ng? It was packed 15 minutes before it started.
 He gave a broad overview of the current research trend towards bigger models
 and bigger datasets, then talked about his work developing smart assistants
 like the Baidu Eye. The way he talked about it, you could tell this wasn't
-just something he worked on, it was something he *believed* in. They were
+just something he worked on, it was something he *believed* in. This was
 his vision of the future, and he was there to play a part in making it real.
 
 Another day, I was in the lab, and overheard a conversation between a visiting
@@ -586,7 +593,7 @@ I need to send an email to the professor I'm doing
 research with. You would think that after doing it so many times, it
 wouldn't be so intimidating, but you would be wrong.
 
-*I know what I want to say. I just need to look inside and say it.*
+*I know what I want to say. I just need to say it.*
 
 I take a deep breath, and start composing my thoughts.
 
@@ -619,7 +626,7 @@ It's time to admit it to myself.*
 > 
 > The summary ends up being: I wasn't motivated to work on my applications. I took that as a sign that I wasn't as interested in a Ph.D. as I was before. After asking myself a few things, I realized it was unlikely I would start a Ph.D. even given a free entrance into a top program. None of these decisions depend on whether I'd be a good researcher or not, they all depend on whether I'm motivated to do research or not.
 
-*And if I have doubts...*
+*And if I have doubts down the line...*
 
 > Maybe this is already clear, but **I'm not saying any of these beliefs are set in stone.** It is entirely possible that I'll change my mind about many of these things, However, my expectation is that my beliefs aren't going to change significantly by next year to make applying worth it. I still plan to do more research this week + finals week to set up opportunities for myself to gain motivation for research, but if they change enough to make me want to go to grad school I'll just have to wait a year on applications.
 
@@ -634,7 +641,7 @@ I read and reread, wanting to get it just right. Then, I click send.
 
 My professor was very understanding.
 
-For a few days after that choice, I found myself idly considering whether I could
+For a few days after making my choice, I found myself idly considering whether I could
 put together an application, and had to mentally beat myself with a newspaper.
 You can't change your mind! Application deadlines were 3 days ago! It's done!
 Live your life with the choice you made.
@@ -648,14 +655,13 @@ implausible I could have even cobbled together an application.
 
 I'm worried that I'm doing a disservice to the world by not going for a Ph.D.,
 because I think I could actually handle it if I find the right idea to keep me
-going. In a group meeting near the end of this semester, I realized I was
-actually following 90% of it, and knew exactly where to look to learn the
-remaining 10%.
+going. In a group meeting near the end of this semester, I realized I followed
+90% of it, and knew exactly where to look to learn the remaining 10%.
 
 I shouldn't be worried. It's not like I've completely shut the door on getting a Ph.D..
-And, those people I consider smarter than myself? I know some who also didn't
+Those people I consider smarter than myself? I know some who also didn't
 go for a Ph.D.. It's not like my choice is unique or special. It's not like every
-smart student has to go for a Ph.D..
+smart student has to go to grad school.
 
 I know this rationally, but the rest of my brain disagrees.
 
@@ -669,8 +675,14 @@ After all, what's the hurry? It's only graduate school.
 \*\*\*
 {: .centered }
 
+ADD LINKS HERE
+
+*Thanks to Allan Peng, Magaret Sy, Ronald Kwan, and Ziv Scully for reviewing
+drafts of this post, as well as others who prefered to stay anonymous.*
+
 *If you're interested in more about this topic, I recommend [these notes on
 applying to Computer Science Ph.D. programs](https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf),
 the [Ph.D. Comics archive](http://phdcomics.com/comics.php), and [the articles
 on Philip Guo's site.](http://pgbovine.net/writings.htm). Odds are that if you're
-considering grad school, you've already visited all these links.)*
+considering grad school, you've visited many of these links.)*
+
