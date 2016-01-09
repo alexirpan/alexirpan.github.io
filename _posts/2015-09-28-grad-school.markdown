@@ -111,14 +111,14 @@ some discussion.
 "Okay, that's more than I've done. Mind helping me understand LSTMs?"
 
 I don't understand a word of it, but I try not to let it discourage me.
-It's my first week. There's no way I should know what they're talking about.
+I just started. There's no way I should know what they're talking about.
 
 The same song and dance continues for the next two weeks. Eventually, I decide
-to research ways to combine Monte Carlo Tree Search with reinforcement learning.
+to research ways to combine Monte Carlo tree search with reinforcement learning.
 My lectures are separated by 1-2 hour gaps, and I spend them doing research.
 By which I mean reading
 the simplest reference I can find, in a desperate bid to find something I
-can follow. I also go to weekly group meetings. Every presentation
+can comprehend. I also go to weekly group meetings. Every presentation
 loses me on literally the first slide, but there's free lunch, so I can't complain.
 
 ![Ph.D. Comics Presentation](/public/grad-school-thoughts/phdcomicspresentation.gif)
@@ -172,7 +172,7 @@ a speech Andrew Wiles gave at the International Math Olympiad.
 > transition from a sprint to a marathon requires a new kind of stamina and a
 > profoundly different test of character," he said. "We admire someone who can win
 > a gold medal in four successive Olympic Games, not so much for the raw talent
-> as for the strength of will and determination to purse a goal over such a
+> as for the strength of will and determination to pursue a goal over such a
 > sustained period of time. [...] You can forget the idea, if you ever had it,
 > that all you require is a bit of natural genius and that then you can wait for
 > inspiration to strike."
@@ -222,14 +222,14 @@ and stare at the ceiling, thoughts swirling in my head.
 *Or maybe*, says another voice, *maybe you weren't pushing yourself enough,
 and now you are. Do you believe in growth through adversity or not?*
 
-*I do. I really do. That doesn't mean I can't push myself too much.*
+*I do. I really do. That doesn't mean I can't push myself too hard.*
 
 \*\*\*
 {: .centered }
 
 Graduate school demands you to be excellent.
 
-Although anybody can apply for graduate school, not everybody can get in.
+Although anybody can apply for graduate school, not all applicants will get in.
 Based on [these two](https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf)
 [sources](http://graddecision.org/) and conversations with other grad
 students, here are the implicit requirements for top CS programs.
@@ -251,22 +251,22 @@ This is an incredibly demanding funnel. Only the strongest CS students
 will even meet these qualifications. They apply,
 the truly excellent ones (or the lucky ones) (or actually, both) get accepted
 into the Ph.D. program, and they start their new life. About 14% of Berkeley CS
-undergrads go to graduate school (counting masters programs),
+undergrads go to graduate school (counting master's programs),
 and I'd say this is actually the top 14% of the major. Maybe top 20%, if you
 want to be safe.
 
-A quarter of these students will drop out of the program. That's the
+A quarter of these students will drop out of the PhD program. That's the
 percentage that leave CMU, circa 2014.
 
 You need incredible talent and dedication to even get into a program as good
-as CMU, to make it through the application filter, and a quarter of them
+as CMU's, to make it through the application filter, and a quarter of them
 won't finish.
 
 People call academia an ivory tower, but if anything it's an ivory spire.
 The top high schoolers are average undergrads.
 The top undergrads are average graduate students.
 The top graduate students are average professors. Some get a
-tenure-track job and some don't. The ones who do need to prove they
+tenure-track job and some don't, and the ones who do need to prove they
 deserve tenure. Meanwhile, everyone competes for grant money to fund the next wave
 of grad students. It keeps going. There is no top
 to the spire, because the people who make it high enough have become so
@@ -283,11 +283,12 @@ Off the top of my head, I can name several people smarter than me. (I met
 them in high school, and they've been better than me since.) I can name
 a few undergrads with first author publications. (They work in the same
 lab I do, and they've worked longer and harder than I have.)
-I base my self worth not on where I am relative to others, but on where
-I am relative to my own standards, because from personal experience
-relative ranking will always leave you disappointed.
-Not everybody can be Elon Musk. That's not saying I do this
-successfully, but I try.
+
+I'm not saying that's a bad thing. It's fantastic I had the opportunity
+to meet such brilliant people so early in my life, because they taught me to
+base my self worth not on where I am relative to others, but on where
+I am relative to my own standards. Not everybody can be Elon Musk or Bill Gates.
+That's not saying I do this successfully, but I try.
 
 The point is that when I surround myself with people better than me, I lose the
 ability to rank myself. Am I doing well in the Berkeley CS program? Yes.
@@ -303,14 +304,14 @@ New semester, same problems. Four more technical classes to juggle, and more
 deadlock in my research. Four classes is pushing it if I want to do good
 research, but I love my classes too much to drop any of them.
 Does learning [Kolmogorov complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity) help my research? No. Absolutely not.
-Proving the existence of incompressible strings is still super awesome.
+Is proving the existence of incompressible strings super awesome? Hell yes.
 
 I put in hours where I can, but my schedule is busy, and once again I can't
 put in as many as I'd like. Still, I have some interesting results, showing
 that with enough training time I can get a program to self-learn
 heuristics for playing Connect Four.
-It's not amazing (Connect Four is a solved game) (LINK), but my AI beats me over half
-the time, so it's not nothing.
+It's not amazing (Connect Four [is a solved game](http://www.informatik.uni-trier.de/~fernau/DSL0607/Masterthesis-Viergewinnt.pdf)),
+but my AI beats me over half the time, so it's not nothing.
 
 Unfortunately, my approach requires lots of computation
 time, and running experiments is becoming infeasible.
@@ -319,7 +320,6 @@ and I don't hit on any solutions that are easy to implement. When I lose
 motivation, I remind myself of why I'm here. *You're here because you like AI.
 If it was easy to discover something new, it would have been done already. So
 keep going. It'll be worth it when it all comes together.*
-Sometimes this works. Sometimes it doesn't.
 
 These are the thoughts in the back of my head, while I wait in line for free
 food. The demand for Berkeley CS students is so high that companies
@@ -342,16 +342,19 @@ Why are you here, Mister I Already Accepted A Full Time Offer In Industry?"
 We laugh, and no one acknowledges the financial commentary. We all
 already know it's true, and it doesn't need repeating.
 
+We get a plate of pad thai and eggplant. It's good, and getting it for free
+makes it even sweeter.
+
 \*\*\*
 {: .centered }
 
 Let's talk about the elephant in the room: the money.
 
 The software industry pays stupidly well. Based on Berkeley Career Center
-surveys, in 2014 EECS graduates averaged starting salaries of $108,000.
-For a company in Silicon Valley, this is actually not that surprising, but if
-that salary for new grads doesn't seem slightly insane, you need to recalibrate
-your thoughts about money.
+surveys, in 2014 EECS graduates averaged a starting salary of $108,000.
+Once you spend enough time in Silicon Valley, this is actually not that
+surprising, but if that salary for new grads doesn't seem slightly insane, you
+should recalibrate your understanding of money.
 
 That's not even getting into the perks. Companies like Google, Facebook, and
 LinkedIn sell themselves by offering insane perks.
@@ -368,8 +371,9 @@ We're changing how people connect with each other.
 We're changing transportation. Join now, and if we make it big you can live like
 a king.
 
-How does a computer science Ph.D. program compete with that? It sells itself
-with research. When getting a Ph.D., you will tackle the hardest problems,
+There's only one way a Ph.D. program can compete with the money in industry.
+A CS Ph.D. program sells itself with research.
+Here, you will tackle the hardest problems,
 the ones where no one knows the answer. You will devote the next few years
 towards learning as much as you want in your quest to solve one of those problems.
 It will be hard, difficult, and poorly paid, but in the end you will learn
@@ -380,14 +384,15 @@ If you're looking for money, grad school isn't for you.
 If you want to coast through life with a reasonable living salary, grad school
 isn't for you.
 
-The only valid reason to go to CS grad school is because you want to do research.
+The only valid reason to go to CS grad school is because you want to do research,
+with every fiber and bone in your body.
 
-Money isn't my driving motivation, so it doesn't play a role in my decision.
+Money isn't my driving motivation, so it didn't play a role in my decision.
 Of course, I'll gladly negotiate for more money if I can, but in the end I
-care more about self-satisfaction and impact. But once again, it doesn't
-change the facts: the opportunity cost of doing research is losing a six-figure
-salary. You can't just ignore that. I suspect that's why grad students worry
-about selling out on their principles.
+care more about self-satisfaction and impact. But once again, mental wizardry
+can't change the facts: the opportunity cost of doing research is around
+$70,0000 a year. You can't just ignore that. I suspect that's why grad students
+worry about selling out on their principles.
 
 ![Ph.D. Comics Sell Out](/public/grad-school-thoughts/phdsellout.gif)
 {: .centered }
@@ -398,17 +403,19 @@ Source: [Ph.D. Comics](http://www.phdcomics.com/comics/archive.php?comicid=839)
 In many respects, the mindset of Ph.D. candidates matches the mindset of startup
 founders. Both demand unending dedication. Both can take over your life.
 It takes around 5 years to get a Ph.D., and it can take 5 years for people to
-even learn about your startup. You
-shoulder a lot of stress, but you're not supposed to tell anybody about it because
-you need to look like you know what you're doing.
+even learn about your startup. Both could easily get a lucrative job in
+industry, but the whole reason they chose this path was to avoid being just
+another employee.
+You shoulder a lot of stress, but you're not supposed to tell anybody about it
+because you need to look like you know what you're doing.
 
-If a startup is a bet against the world that you can build something useful,
-then a Ph.D. is a bet against the world that you can discover something that
+If a startup is a bet against the world that you can build something people will
+pay for, then a Ph.D. is a bet against the world that you can discover something
 no one has ever seen before.
 
-That's not to say they're the same.
+That's not to say they're the same. For one,
 [Paul Graham says everybody should try founding a startup.](http://paulgraham.com/notnot.html)
-No one says everybody should try getting a Ph.D..
+No one says everybody should try getting a Ph.D.
 
 \*\*\*
 {: .centered }
@@ -416,30 +423,30 @@ No one says everybody should try getting a Ph.D..
 **September 2015**
 
 I chose to do an internship instead of research the summer before senior year.
-I was a bit disillusioned with research after running into so many road blocks,
+I was a disillusioned with research after running into so many road blocks,
 and didn't feel like I was self-motivated enough to try for a Ph.D. program.
 
 It was [a good experience]({% post_url 2015-08-20-things-i-did-in-my-khan-academy-internship %}),
 and overall I'm very glad I decided to take the offer.
 At the same time, when the semester started I found myself enjoying research
 a lot more. Maybe it was the light course load in the first few weeks, or maybe
-it was the realization that I actually learned something. I could hold a
+it was the realization that I actually knew what I was doing. I could hold a
 conversation with the grad student mentoring me. At least, for a while.
 
 Riding the peak of research motivation, I set up meetings with my PI to find
 a way to get a reasonable application in time for deadlines. I get started on
 a new project, one that could lead to a paper faster than my old one.
-(Later, I read a paper where the authors independently worked along the same lines
-I did, released just last year.
+(Later, I find a paper where the authors independently worked along the same lines
+I did, this time [from less than a year ago](http://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning).
 They ran into the same computational barrier as me, and got over it by throwing
-more computing power at the problem instead of thinking of algorithmic
-improvements. I feel a bit cheated, but at least it means I was on the right
-track.)
+more computing power at the problem instead of developing algorithmic
+improvements. I feel cheated, but at least it means I was on the right track.)
 
 There's an undercurrent of satisfaction to my life, but it's buried beneath
 the weariness of living a life between problem sets. I get more research done
-than last semester, but it still doesn't feel like enough. Soon, it's hard to
-tell if I'm satisfied at all.
+than last semester, but it still doesn't feel like enough. On espeically bad
+weeks, I get one hour of leisure time, tops. Soon, it's hard to tell if I'm
+satisfied at all.
 
 One Friday night, I get dinner by myself, then head straight to the lab.
 My work needs to be done *now*. In fact, it needed to be done two days ago.
@@ -482,11 +489,12 @@ exceptions, like international students who need to keep student status for
 their visas, but the ones I've met like research as well, because otherwise they
 wouldn't have made it to Berkeley.)
 
-To say there's angst in academia is an understatement. For graduate school,
-you don't need to look very hard to find the black humor and horror stories.
+On the other hand, intense self criticism is the first step on the road
+to depression. To say there's angst in academia is an understatement.
+You don't need to look very hard to find the black humor and horror stories.
 I've already shared lots of Ph.D. Comics above. All the things you see in those
-comics? They're real. A bit exaggerated, and different people run into
-different troubles, but it happens.
+comics? They're real. A bit exaggerated, and any one student will only run into
+a fraction of the issues depicted, but it's all true.
 
 There's also
 [The Ph.D. Grind](http://pgbovine.net/PhD-memoir.htm) by Philip Guo. It's a
@@ -526,7 +534,7 @@ stories aren't.
 [Source](http://www.phdcomics.com/comics/archive.php/archive.php?comicid=1162)
 {: .centered }
 
-So, if it's so bad, why wass choosing not to go to grad school such a hard decision?
+So, if it's so bad, why was choosing not to go to grad school such a hard decision?
 
 Despite all the struggle I went through, I did believe in the work
 I was doing. Some people care deeply about research. They care about it enough
@@ -538,7 +546,7 @@ anywhere else. It is what it is.
 a job where you put up with lots of stress for that 10% or 20% of the job you
 actually want to do, because you enjoy it that much.)
 
-It feels like my belief in research falls right on the boundary. Interested
+My belief in research fell right on the boundary. Interested
 enough to keep doing it semester after semester, but not enough to put in the
 hours I needed to create work of my own.
 A lot of sections from The Ph.D. Grind resonated with me, but my favorite was
@@ -554,9 +562,10 @@ Holy shit, I get to experiment with algorithms for computer learning at a top-ti
 university! How awesome is that opportunity?
 
 When I do research for longer, I realize how much of a
-novice I am and how ridiculous it is to believe I can personally make a key
-contribution to the field. So many subfields, so many subsubfields,
-papers and papers and papers and which ones are even worth reading?
+novice I am and how unlikely it is any of my contributions will be important.
+There are so many subfields, so many subsubfields,
+papers and papers and papers and how is one more paper supposed to stand out
+from the rest?
 
 One time, [Andrew Ng](http://www.andrewng.org/), one of the biggest names
 in machine learning, came to give a talk on the deep learning work he did at
