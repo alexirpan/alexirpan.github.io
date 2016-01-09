@@ -586,12 +586,12 @@ grad student.
 A third day, a professor said, "Looks like I'll be done by 11 PM. Get to leave
 early for once."
 
-Passion and faith in your work is what will carry you through a Ph.D.
+Passion and faith in your work is what will carry you through a Ph.D. program.
 Nothing else will.
 
-It was a high bar, and I wasn't sure enough in myself to say I crossed it.
+It was a high bar, and I wasn't sure I crossed it.
 As the months passed by, I realized I had made my decision a long time
-ago. I was just too worried to say it out loud.
+ago. I was just too afraid to say it out loud.
 
 \*\*\*
 {: .centered }
@@ -620,26 +620,25 @@ I take a deep breath, and start composing my thoughts.
 
 > - Assuming I magically finished my application and got into a top graduate program, I'd still lean towards not going. After a Ph.D., I don't think I'd want to stay in academia, and would likely try to get into an industry lab. At that point, the Ph.D. essentially becomes a 5-6 year long process of improving research skills enough to apply for those positions, which doesn't sound worth it to me.
 
-*I don't have to go for a Ph.D. if I don't want to. That's okay.
-It's time to admit it to myself.*
+It hurts a bit to say it, and I'm not sure why, but I know that on some level
+it doesn't really matter. *I don't have to go for a Ph.D. if I don't want to, and
+right now I don't want to. That's okay. It's okay to say it out loud.*
 
 > To me, there are many reasons to go for a Ph.D., but I'm not completely sold on any of them:
 > 
-> - To prove to yourself / the world that you can get through a Ph.D. program, because only a small percentage of people can do so. I don't a strong need to prove myself to be better than other people, and care more about my personal standards for how much I can push myself. (I suppose that could also be seen as an argument for why I should do a Ph.D., which is all about pushing boundaries.)
+> - To prove to yourself / the world that you can get through a Ph.D. program, because only a small percentage of people can do so. I don't [have] a strong need to prove myself to be better than other people, and care more about my personal standards for how much I can push myself. (I suppose that could also be seen as an argument for why I should do a Ph.D., which is all about pushing boundaries.)
 > 
 > - A very strong belief that what you're doing your research in is important. Strong enough to deal with the stresses of academia, and solid enough to keep going even after realizing just how big your field is. I believe that AI research is very important and impactful, and enjoy reading about new advances, but the costs of creating new research are too high for me.
 > 
 > - A personal fulfillment achieved by understanding something very deeply. For theory-leaning people (which I'd classify myself as), this may also be the joy from finding an especially elegant proof or neat connection between different topics. This is definitely hard to find outside academia, but aspects of this still show up in industry, and being an expert on X is common advice for standing out among your peers.
 > 
 > - A love for teaching with the plan to go for a lecturer position after a Ph.D. I've liked TAing this semester and approve of education in general, but again this isn't a strong enough interest to make me want to teach full time.
-> 
-> The summary ends up being: I wasn't motivated to work on my applications. I took that as a sign that I wasn't as interested in a Ph.D. as I was before. After asking myself a few things, I realized it was unlikely I would start a Ph.D. even given a free entrance into a top program. None of these decisions depend on whether I'd be a good researcher or not, they all depend on whether I'm motivated to do research or not.
 
-*And if I have doubts down the line...*
+*I'm not a grad student. And if I have doubts down the line,*
 
-> Maybe this is already clear, but **I'm not saying any of these beliefs are set in stone.** It is entirely possible that I'll change my mind about many of these things, However, my expectation is that my beliefs aren't going to change significantly by next year to make applying worth it. I still plan to do more research this week + finals week to set up opportunities for myself to gain motivation for research, but if they change enough to make me want to go to grad school I'll just have to wait a year on applications.
+> Maybe this is already clear, but **I'm not saying any of these beliefs are set in stone.** It is entirely possible that I'll change my mind about many of these things, However, my expectation is that my beliefs aren't going to change [enough] by next year to make applying worth it. I still plan to do more research this week + finals week to set up opportunities for myself to gain motivation for research, but if they change enough to make me want to go to grad school I'll just have to wait a year on applications.
 
-*I'll deal with it then, because I don't need them now.*
+*I'll deal with them then, because I don't need them now.*
 
 > Alex
 
@@ -648,9 +647,9 @@ I read and reread, wanting to get it just right. Then, I click send.
 \*\*\*
 {: .centered }
 
-My professor was very understanding.
+I get a reply two days later. My professor was very understanding.
 
-For a few days after making my choice, I found myself idly considering whether I could
+A while after making my choice, I found myself idly considering whether I could
 put together an application, and had to mentally beat myself with a newspaper.
 You can't change your mind! Application deadlines were 3 days ago! It's done!
 Live your life with the choice you made.
@@ -663,14 +662,14 @@ I'm worried I didn't actually make a choice. I only sent out that email when it 
 implausible I could have even cobbled together an application.
 
 I'm worried that I'm doing a disservice to the world by not going for a Ph.D.,
-because I think I could actually handle it if I find the right idea to keep me
+because I think I could actually handle it if I found the right idea to keep me
 going. In a group meeting near the end of this semester, I realized I followed
 90% of it, and knew exactly where to look to learn the remaining 10%.
 
 I shouldn't be worried. It's not like I've completely shut the door on getting a Ph.D.
 Those people I consider smarter than myself? I know some who also didn't
-go for a Ph.D. It's not like my choice is unique or special. It's not like every
-smart student has to go to grad school.
+go for grad school, and they're doing fine. It's not like my choice is unique
+or special. It's not like every smart student has to go to grad school.
 
 I know this rationally, but the rest of my brain disagrees.
 
@@ -686,7 +685,7 @@ After all, what's the hurry? It's only graduate school.
 
 *Thanks to [Allan Peng](https://www.linkedin.com/in/apengwin),
 [Margaret Sy](http://margaretsy.com/), Ronald Kwan, and [Ziv Scully](http://www.djnziv.com/)
-for reviewing drafts of this post, as well as others who prefered to stay anonymous.*
+for reviewing drafts of this post, as well as others who preferred to stay anonymous.*
 
 *If you're interested in more about this topic, I recommend [these notes on
 applying to Computer Science Ph.D. programs](https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf),
