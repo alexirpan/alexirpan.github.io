@@ -230,10 +230,11 @@ and now you are. Do you believe in growth through adversity or not?*
 Graduate school demands you to be excellent.
 
 Although anybody can apply for graduate school, not everybody can get in.
-As I understand it, these are the implicit requirements for top
-CS graduate schools.
+Based on [these two](https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf)
+[sources](http://graddecision.org/) and conversations with other grad
+students, here are the implicit requirements for top CS programs.
 
-- A high GPA. It doesn't have to be perfect, a 3.5 GPA won't raise any
+- A high GPA. It doesn't have to be perfect. A 3.5 GPA won't raise any
 questions and anything above it is at best a small bonus.
 - Prior research with a professor. If you do not have this, you will 100% not
 get in. In the best case, your research leads to
@@ -246,18 +247,15 @@ A common mix is a strong letter from your PI, a decent letter from the course
 you TAed for, and a weak letter from the course you did well in. Again, stronger
 applicants will have two research letters, or maybe even three.
 
-(Based on [these two](https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf)
-[sources](http://graddecision.org/), and brief conversations with other students
-in the lab.)
-
-This is an incredibly demanding funnel. First, only the strong CS students
+This is an incredibly demanding funnel. Only the strongest CS students
 will even meet these qualifications. They apply,
-the truly excellent ones (or the lucky ones) (or actually, both) get accepted,
-and they start a Ph.D.. About 14% of Berkeley CS undergrads go to graduate school,
-including masters programs, and I'd say it's reasonable to say that is actually
-the top 14% of the major.
+the truly excellent ones (or the lucky ones) (or actually, both) get accepted
+into the Ph.D. program, and they start their new life. About 14% of Berkeley CS
+undergrads go to graduate school (counting masters programs),
+and I'd say this is actually the top 14% of the major. Maybe top 20%, if you
+want to be safe.
 
-A quarter of incoming Ph.D. students will drop out of the program. That's the
+A quarter of these students will drop out of the program. That's the
 percentage that leave CMU, circa 2014.
 
 You need incredible talent and dedication to even get into a program as good
@@ -267,9 +265,9 @@ won't finish.
 People call academia an ivory tower, but if anything it's an ivory spire.
 The top high schoolers are average undergrads.
 The top undergrads are average graduate students.
-The top graduate students are average professors, and then some get a
+The top graduate students are average professors. Some get a
 tenure-track job and some don't. The ones who do need to prove they
-deserve tenure. Everyone competes for grant money to fund the next wave
+deserve tenure. Meanwhile, everyone competes for grant money to fund the next wave
 of grad students. It keeps going. There is no top
 to the spire, because the people who make it high enough have become so
 enlightened that they recognize the top *doesn't actually exist.* It's an
@@ -284,10 +282,11 @@ These are both awful realizations if you have imposter syndrome like I do.
 Off the top of my head, I can name several people smarter than me. (I met
 them in high school, and they've been better than me since.) I can name
 a few undergrads with first author publications. (They work in the same
-lab I do, but they've worked longer and harder than I have.) It's to the point
-where I base my self worth not on where I am in relation to others, but on where
-I am in relation to my own standards, because relative ranking will only leave
-you disappointed. Not everybody can be Elon Musk. That's not saying I do this
+lab I do, and they've worked longer and harder than I have.)
+I base my self worth not on where I am relative to others, but on where
+I am relative to my own standards, because from personal experience
+relative ranking will always leave you disappointed.
+Not everybody can be Elon Musk. That's not saying I do this
 successfully, but I try.
 
 The point is that when I surround myself with people better than me, I lose the
@@ -310,26 +309,30 @@ I put in hours where I can, but my schedule is busy, and once again I can't
 put in as many as I'd like. Still, I have some interesting results, showing
 that with enough training time I can get a program to self-learn
 heuristics for playing Connect Four.
-It's not amazing, but I have trouble beating my AI, so it's not nothing.
+It's not amazing (Connect Four is a solved game) (LINK), but my AI beats me over half
+the time, so it's not nothing.
 
 Unfortunately, my approach requires lots of computation
 time, and running experiments is becoming infeasible.
 I can't make more progress until I find a way to make my experiments run faster,
-and I don't hit on any solutions that are easy to implement.
+and I don't hit on any solutions that are easy to implement. When I lose
+motivation, I remind myself of why I'm here. *You're here because you like AI.
+If it was easy to discover something new, it would have been done already. So
+keep going. It'll be worth it when it all comes together.*
+Sometimes this works. Sometimes it doesn't.
 
 These are the thoughts in the back of my head, while I wait in line for free
 food. The demand for Berkeley CS students is so high that companies
 give free dinner, T-shirts, and stickers at their info sessions.
-It's pocket change for them, but every company has to do it to compete for
-their mindshare. Hungry CS majors are totally okay with this situation.
+It's pocket change for them, and every company has to do it to compete.
+Hungry CS majors are totally okay with this.
 
 I'm waiting with a few other people from the CS honor societies. Some
 are 100% doing grad school, some are 100% not doing grad school. A few are on
 the fence, like me.
 
 One of my friends pipes up. "What are we even doing with our lives?
-Is waiting in line for 20 minutes really
-worth it for free food?"
+Is waiting in line for 20 minutes really worth it for free food?"
 
 Someone else replies. "Well, I'm here to get used to the grad student life.
 Why are you here, Mister I Already Accepted A Full Time Offer In Industry?"
@@ -345,10 +348,10 @@ already know it's true, and it doesn't need repeating.
 Let's talk about the elephant in the room: the money.
 
 The software industry pays stupidly well. Based on Berkeley Career Center
-surveys, EECS graduates averaged starting salaries of $108,000 in 2014.
-For a company in Silicon Valley, this actually is not that surprising, but if
+surveys, in 2014 EECS graduates averaged starting salaries of $108,000.
+For a company in Silicon Valley, this is actually not that surprising, but if
 that salary for new grads doesn't seem slightly insane, you need to recalibrate
-what you know about money.
+your thoughts about money.
 
 That's not even getting into the perks. Companies like Google, Facebook, and
 LinkedIn sell themselves by offering insane perks.
@@ -359,14 +362,14 @@ thirsty, and by the way we have some interesting problems that need solving,
 so why don't you join us?
 
 Alternatively, new grads can work at a startup. Come here, and you can change
-the world! Or, you can exploit a temporary inefficiency of the market, since the
-first one to exploit it can create tons of wealth.
+the world! Or, you can exploit a temporary inefficiency of the market. The first
+exploiter (or more commonly, the best exploiter) can create tons of wealth.
 We're changing how people connect with each other.
 We're changing transportation. Join now, and if we make it big you can live like
 a king.
 
 How does a computer science Ph.D. program compete with that? It sells itself
-with research. In a Ph.D. program, you will tackle the hardest problems,
+with research. When getting a Ph.D., you will tackle the hardest problems,
 the ones where no one knows the answer. You will devote the next few years
 towards learning as much as you want in your quest to solve one of those problems.
 It will be hard, difficult, and poorly paid, but in the end you will learn
@@ -381,10 +384,16 @@ The only valid reason to go to CS grad school is because you want to do research
 
 Money isn't my driving motivation, so it doesn't play a role in my decision.
 Of course, I'll gladly negotiate for more money if I can, but in the end I
-care more about self-satisfaction and impact. However, ignoring the
-possibility of six-figure salaries straight out of college would be insane.
+care more about self-satisfaction and impact. But once again, it doesn't
+change the facts: the opportunity cost of doing research is losing a six-figure
+salary. You can't just ignore that. I suspect that's why grad students worry
+about selling out on their principles.
 
-(There is a Ph.D. Comics about "selling out" that I can't find right now, which will go here.)
+![Ph.D. Comics Sell Out](/public/grad-school-thoughts/phdsellout.gif)
+{: .centered }
+
+Source: [Ph.D. Comics](http://www.phdcomics.com/comics/archive.php?comicid=839)
+{: .centered }
 
 In many respects, going for a Ph.D. is like starting a startup. Not working
 at a startup, founding a startup. Both demand
