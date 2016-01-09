@@ -311,7 +311,7 @@ put in as many as I'd like. Still, I have some interesting results, showing
 that with enough training time I can get a program to self-learn
 heuristics for playing Connect Four.
 It's not amazing (Connect Four [is a solved game](http://www.informatik.uni-trier.de/~fernau/DSL0607/Masterthesis-Viergewinnt.pdf)),
-but my AI beats me over half the time, so it's not nothing.
+but my AI beats me over half the time, so it's definitely something.
 
 Unfortunately, my approach requires lots of computation
 time, and running experiments is becoming infeasible.
@@ -440,7 +440,7 @@ a new project, one that could lead to a paper faster than my old one.
 I did, this time [from less than a year ago](http://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning).
 They ran into the same computational barrier as me, and got over it by throwing
 more computing power at the problem instead of developing algorithmic
-improvements. I feel cheated, but at least it means I was on the right track.)
+improvements. I feel cheated, but at least I was on the right track.)
 
 There's an undercurrent of satisfaction to my life, but it's buried beneath
 the weariness of living a life between problem sets. I get more research done
@@ -537,8 +537,8 @@ stories aren't.
 So, if it's so bad, why was choosing not to go to grad school such a hard decision?
 
 Despite all the struggle I went through, I did believe in the work
-I was doing. Some people care deeply about research. They care about it enough
-to accept the hardships that comes with the Ph.D.. There's an old saying: if you
+I was doing. Some people care deeply about research. They care about research enough
+to accept the hardships that comes with it. There's an old saying: if you
 could be happy anywhere else, don't go into academia. Some people can't be happy
 anywhere else. It is what it is.
 
@@ -586,7 +586,7 @@ grad student.
 A third day, a professor said, "Looks like I'll be done by 11 PM. Get to leave
 early for once."
 
-Passion and faith in your work is what will carry you through a Ph.D..
+Passion and faith in your work is what will carry you through a Ph.D.
 Nothing else will.
 
 It was a high bar, and I wasn't sure enough in myself to say I crossed it.
@@ -631,7 +631,7 @@ It's time to admit it to myself.*
 > 
 > - A personal fulfillment achieved by understanding something very deeply. For theory-leaning people (which I'd classify myself as), this may also be the joy from finding an especially elegant proof or neat connection between different topics. This is definitely hard to find outside academia, but aspects of this still show up in industry, and being an expert on X is common advice for standing out among your peers.
 > 
-> - A love for teaching with the plan to go for a lecturer position after a Ph.D.. I've liked TAing this semester and approve of education in general, but again this isn't a strong enough interest to make me want to teach full time.
+> - A love for teaching with the plan to go for a lecturer position after a Ph.D. I've liked TAing this semester and approve of education in general, but again this isn't a strong enough interest to make me want to teach full time.
 > 
 > The summary ends up being: I wasn't motivated to work on my applications. I took that as a sign that I wasn't as interested in a Ph.D. as I was before. After asking myself a few things, I realized it was unlikely I would start a Ph.D. even given a free entrance into a top program. None of these decisions depend on whether I'd be a good researcher or not, they all depend on whether I'm motivated to do research or not.
 
@@ -667,9 +667,9 @@ because I think I could actually handle it if I find the right idea to keep me
 going. In a group meeting near the end of this semester, I realized I followed
 90% of it, and knew exactly where to look to learn the remaining 10%.
 
-I shouldn't be worried. It's not like I've completely shut the door on getting a Ph.D..
+I shouldn't be worried. It's not like I've completely shut the door on getting a Ph.D.
 Those people I consider smarter than myself? I know some who also didn't
-go for a Ph.D.. It's not like my choice is unique or special. It's not like every
+go for a Ph.D. It's not like my choice is unique or special. It's not like every
 smart student has to go to grad school.
 
 I know this rationally, but the rest of my brain disagrees.
