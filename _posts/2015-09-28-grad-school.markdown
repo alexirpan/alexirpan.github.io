@@ -675,14 +675,13 @@ After all, what's the hurry? It's only graduate school.
 \*\*\*
 {: .centered }
 
-ADD LINKS HERE
-
-*Thanks to Allan Peng, Magaret Sy, Ronald Kwan, and Ziv Scully for reviewing
-drafts of this post, as well as others who prefered to stay anonymous.*
+*Thanks to [Allan Peng](https://www.linkedin.com/in/apengwin),
+[Margaret Sy](http://margaretsy.com/), Ronald Kwan, and [Ziv Scully](http://www.djnziv.com/)
+for reviewing drafts of this post, as well as others who prefered to stay anonymous.*
 
 *If you're interested in more about this topic, I recommend [these notes on
 applying to Computer Science Ph.D. programs](https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf),
 the [Ph.D. Comics archive](http://phdcomics.com/comics.php), and [the articles
 on Philip Guo's site.](http://pgbovine.net/writings.htm). Odds are that if you're
-considering grad school, you've visited many of these links.)*
+considering grad school, you've visited many of these links.*
 
