@@ -380,7 +380,7 @@ a king.
 There's only one way a Ph.D. program can compete with the money in industry.
 A CS Ph.D. program sells itself with research.
 You will tackle the hardest problems,
-the ones where no one knows the answer. You will devote the next few years
+the ones where no one knows the answers. You will devote the next few years
 towards learning as much as you want in your quest to solve one of those problems.
 It will be hard, difficult, and poorly paid, but in the end you will learn
 what it feels like to truly know something.
@@ -433,8 +433,8 @@ It was [a good experience]({% post_url 2015-08-20-things-i-did-in-my-khan-academ
 and overall I'm very glad I decided to take the offer.
 At the same time, when the semester started I found myself enjoying research
 a lot more. Maybe it was the light course load in the first few weeks, or maybe
-it was the realization that I actually knew what I was doing. I could actually hold a
-conversation with my grad student mentor. At least, for a while.
+it was the realization that I actually knew what I was doing. After one year of
+research, I could actually hold a conversation with my mentor. At least, for a while.
 
 Riding my newfound wave of motivation, I set up meetings with my PI to find
 a way to get a reasonable application in time for deadlines. I start
@@ -449,7 +449,7 @@ improvements. I feel cheated, but at least I was on the right track.)
 There's an undercurrent of satisfaction to my life, but it's buried beneath
 the weariness of living a life between problem sets. I get more research done
 than last semester, but it still doesn't feel like enough. On especially bad
-weeks, I get one hour of leisure time, tops. Soon, it's hard to tell if I'm
+weeks, I get one hour of leisure time a day, tops. Soon, it's hard to tell if I'm
 satisfied at all.
 
 One Friday night, I get dinner by myself, then head straight to the lab.
@@ -541,7 +541,7 @@ So, if it's so bad, why is choosing not to go to grad school such a hard decisio
 
 Some people care deeply about research. They care about research enough
 to accept the hardships that comes with it. I can see where they're coming from.
-There's something profoundly beautiful in the pursuit of knowledge for it's own
+There's something profoundly beautiful in the pursuit of knowledge for its own
 sake, in searching for answers only because we know we don't know everything.
 I don't have the words to express it properly.
 
@@ -600,7 +600,7 @@ A third day, a professor said, "Looks like I'll be done by 11 PM. Get to leave
 early for once." The way he said it left no doubt. He was tired, but
 he loved computer vision and he loved his work. He was here by choice.
 
-Passion and faith in your work is what carries you through a Ph.D. program.
+Passion and faith in your work are what carries you through a Ph.D. program.
 Nothing else will.
 
 It was a high bar, and I wasn't sure I crossed it.
@@ -636,7 +636,7 @@ I take a deep breath, and start composing my thoughts.
 
 It hurts a bit to lay it all out. I'm not sure why, but I know that on some level
 it doesn't matter if I get why or not. *I don't have to go for a Ph.D. if I don't want to, and
-right now I don't want to. That's okay. It's okay to say it out loud.*
+right now I don't want to. That's fine.*
 
 > To me, there are many reasons to go for a Ph.D., but I'm not completely sold on any of them:
 > 
@@ -690,9 +690,11 @@ or special. It's not like every smart student has to go to grad school.
 I know this rationally, but the rest of my brain disagrees.
 
 Still, for now I'm okay with this. I've thought about this topic for a while,
-and I could do with worrying about other things. Like fixing my social life,
-fixing my romantic life, figuring out how okay I am with my mental state, or
-maybe a video game or two. (Or three.)
+and I could do with worrying about other things. My social life's a mess. My
+romantic life's a mess. Don't even get me started on whether I think my
+mental state is okay or not. There are more important things, and I'll get there
+one step at a time. Or maybe, I'll just relax and play a video game or two.
+(Or three.)
 
 After all, what's the hurry? It's only graduate school.
 
