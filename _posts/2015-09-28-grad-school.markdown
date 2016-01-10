@@ -448,7 +448,7 @@ improvements. I feel cheated, but at least I was on the right track.)
 
 There's an undercurrent of satisfaction to my life, but it's buried beneath
 the weariness of living a life between problem sets. I get more research done
-than last semester, but it still doesn't feel like enough. On espeically bad
+than last semester, but it still doesn't feel like enough. On especially bad
 weeks, I get one hour of leisure time, tops. Soon, it's hard to tell if I'm
 satisfied at all.
 
@@ -600,7 +600,7 @@ A third day, a professor said, "Looks like I'll be done by 11 PM. Get to leave
 early for once." The way he said it left no doubt. He was tired, but
 he loved computer vision and he loved his work. He was here by choice.
 
-Passion and faith in your work is what will carry you through a Ph.D. program.
+Passion and faith in your work is what carries you through a Ph.D. program.
 Nothing else will.
 
 It was a high bar, and I wasn't sure I crossed it.
