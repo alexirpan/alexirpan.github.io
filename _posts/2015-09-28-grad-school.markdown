@@ -207,14 +207,14 @@ about thread schedulers, about clopen sets and Jacobians, and you need to wait.
 You have to wait for me. Please.
 
 No amount of pleading can change the facts: by my next one-on-one, I've done
-literally no research. I try to cobble something together in time
+literally no research. I sheepishly try to cobble something together in time
 for my meeting, but I can't do much with no new ideas and no new code. (Besides,
 researchers are the sharpest bullshit detectors I know. It comes with the
 territory.)
 
 In my meeting, I hear disappointment, but I can't
-tell if he's actually disappointed or if I'm projecting my disappointment in
-myself into his words. I finally have free time that afternoon,
+tell if he's actually disappointed or if I'm projecting my own disappointment
+into his words. I finally have free time that afternoon,
 but I go home instead. I'm in too bad a mood to do any work.
 
 Instead of meeting up with friends, I lie on my bed
@@ -258,8 +258,8 @@ undergrads go to graduate school (counting master's programs),
 and I'd say this is actually the top 14% of the major. Maybe top 20%, if you
 want to be safe.
 
-A quarter of these students will drop out of the Ph.D. program. That's the
-percentage that leave CMU, circa 2014.
+A quarter of these students will drop out of the program.
+This is the CMU drop out rate, circa 2014.
 
 You need incredible talent and dedication to even get into a program as good
 as CMU's, to make it through the application filter, and a quarter of them
@@ -287,7 +287,7 @@ them in high school, and they've been better than me since.) I can name
 undergrads with first author publications. (They work in the same
 lab I do, and they've worked longer and harder than I have.)
 
-I'm not saying that's a bad thing. It's fantastic I had the opportunity
+I'm not saying that's a bad thing. It's fantastic I've had the opportunity
 to meet such brilliant people so early in my life, because they taught me to
 base my self worth on my own standards, not on where I am relative to others.
 Not everybody can be Elon Musk or Bill Gates.
@@ -313,16 +313,19 @@ I put in hours where I can, but my schedule is busy, and once again I can't
 put in as many as I'd like. It's disappointing, because I actually have
 some promising preliminary results. With enough training time,
 I can get a program to self-learn heuristics for playing Connect Four.
-It's not amazing (Connect Four [is a solved game](http://www.informatik.uni-trier.de/~fernau/DSL0607/Masterthesis-Viergewinnt.pdf)),
-but my AI beats me over half the time, so it's definitely something.
+It's not amazing, but my AI beats me over half the time, so it's definitely something.
 
 Unfortunately, my approach requires lots of computation
 time, and running experiments is becoming infeasible.
 I can't make more progress until I find a way to make my experiments run faster,
-and I don't hit on any solutions that are easy to implement. When I lose
-motivation, I remind myself of why I'm here. *You're here because AI is awesome.
+and I don't hit on any solutions that are easy to implement.
+
+As progress stalls, I find it hard to keep doing research.
+I have to remind myself why I'm here in the first place.
+*You're here because AI is awesome.
 If it was easy to discover something new, it would have been done already. So
-keep going. It'll be worth it when it all comes together.*
+keep going. It'll be worth it when it all comes together.* Sometimes this works.
+Other times, it just sounds hollow.
 
 These are the thoughts in the back of my head, while I wait in line for free
 food. The demand for Berkeley CS majors is so high that companies
@@ -343,7 +346,7 @@ Why are you here, Mister I Already Accepted A Full Time Offer In Industry?"
 "You know, I don't really know. Force of habit, I guess."
 
 We laugh, and no one acknowledges the financial commentary. We all
-already know the stats, and they don't need repeating.
+already know it's true, and it doesn't need repeating.
 
 We get a plate of pad thai and eggplant. It's good, and getting it for free
 makes it even sweeter.
@@ -431,13 +434,14 @@ and overall I'm very glad I decided to take the offer.
 At the same time, when the semester started I found myself enjoying research
 a lot more. Maybe it was the light course load in the first few weeks, or maybe
 it was the realization that I actually knew what I was doing. I could actually hold a
-conversation with the grad student mentoring me. At least, for a while.
+conversation with my grad student mentor. At least, for a while.
 
-Riding my newfound wave of motivation, I set up meetings with my professor to find
+Riding my newfound wave of motivation, I set up meetings with my PI to find
 a way to get a reasonable application in time for deadlines. I start
 a new project, one that could lead to a paper faster than my old one.
-(A few months later, I find a paper where the authors independently worked along the same lines
-I did, this time [from less than a year ago](http://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning).
+(As an aside, later this semester I found a paper where the authors
+independently worked along the same lines
+I did, this time [from 2014 instead of 2007](http://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning).
 They ran into the same computational barrier as me, and got over it by throwing
 more computing power at the problem instead of developing algorithmic
 improvements. I feel cheated, but at least I was on the right track.)
@@ -476,15 +480,15 @@ I had full-time job offers waiting for me, and all my major requirements were
 done. If I wanted to relax and do nothing, I could have.
 
 So of course, I signed up for three grad classes, TAed for the first time, and
-did research on top of it. Sometime in high school I gained
+did research on top of it. At some point in high school I gained
 a deep unease with myself that always pushed me to learn more and do more. Appeasing that part
 of my brain while making sure I don't overload has been one of the harder
 challenges of my life.
 
-I definitely have a big self-deprecation complex. On one hand, it's probably
+I'll be the first to admit I have a huge self-deprecation complex. On one hand, it's probably
 a net positive for success, especially success in research. Without natural
 curiosity, there's no way I could deal with academia, because the only reason
-anyone would choose the academia life is because they wanted it. (There are
+anyone would choose the academic life is because they wanted it. (There are
 exceptions, like international students who need to keep student status for
 their visas, but the ones I've met like research as well, because otherwise they
 wouldn't have made it to Berkeley.)
@@ -496,7 +500,7 @@ I've already shared lots of Ph.D. Comics above. All the things you see in those
 comics? They're real. A bit exaggerated, and any one student will only run into
 a fraction of the issues depicted, but it's all true.
 
-There's also
+As proof, there's
 [The Ph.D. Grind](http://pgbovine.net/PhD-memoir.htm) by Philip Guo. It's a
 detailed account of the author's experience getting a Ph.D. at Stanford, and I
 consider it required reading if you're considering grad school. More than
@@ -505,8 +509,7 @@ his experience was common. In retrospect, [he says he was a 30th percentile
 in happiness at Stanford](http://pgbovine.net/PhD-interview-eugene-wu-keith-winstein.htm),
 but also said it could have been even harder if he was at a weaker school.)
 
-Even a casual search of the internet will turn up countless blog posts,
-articles, and opinion pieces. Stories about the malaise in academia are all over
+Stories about the malaise in academia are all over
 the place. There is sampling bias, where only the more extreme opinions get
 told, but it's a bit worrying
 when doom and gloom stories are easy to find and sunshine and rainbow
@@ -534,11 +537,15 @@ stories aren't.
 [Source](http://www.phdcomics.com/comics/archive.php/archive.php?comicid=1162)
 {: .centered }
 
-So, if it's so bad, why was choosing not to go to grad school such a hard decision?
+So, if it's so bad, why is choosing not to go to grad school such a hard decision?
 
-Despite all the struggle I went through, I did believe in the work
-I was doing. Some people care deeply about research. They care about research enough
-to accept the hardships that comes with it. There's an old saying: if you
+Some people care deeply about research. They care about research enough
+to accept the hardships that comes with it. I can see where they're coming from.
+There's something profoundly beautiful in the pursuit of knowledge for it's own
+sake, in searching for answers only because we know we don't know everything.
+I don't have the words to express it properly.
+
+There's an old saying: if you
 could be happy anywhere else, don't go into academia. Some people can't be happy
 anywhere else. It is what it is.
 
@@ -546,6 +553,7 @@ anywhere else. It is what it is.
 a job where you put up with lots of stress for that 10% or 20% of the job you
 actually want to do, because you enjoy it that much.)
 
+I got it, but I couldn't live up to the ideal.
 My motivation for research fell right on the boundary. Interested
 enough to keep doing it semester after semester, but not enough to put in the
 hours I needed to create work of my own.
@@ -557,17 +565,21 @@ this one.
 > just too great for me.
 
 When I don't do research for a while, I miss the feeling that I'm in touch with
-the cutting-edge and directly playing a hand in shaping the future. In AI too!
+the cutting-edge and playing a hand in shaping the future. In AI too!
 Holy shit, I get to experiment with algorithms for computer learning at a top-tier
 university! How awesome is that opportunity?
 
 When I do research for longer, I realize how much of a
 novice I am and how unlikely it is any of my contributions will be important.
 There are so many subfields, so many subsubfields,
-papers and papers and papers and how is one more paper supposed to stand out
-from the rest?
+papers and papers and papers and it feels naive to believe one more paper
+can stand out from the rest.
 
-One time, [Andrew Ng](http://www.andrewng.org/), one of the biggest names
+I know it's unrealistic to reach that far, that reality is complicated and
+ideals are dreams for a reason, but it always makes me feel a bit guilty
+to see others make it closer to scientific purity.
+
+One day, [Andrew Ng](http://www.andrewng.org/), one of the biggest names
 in machine learning, came to give a talk on the deep learning work he did at
 Baidu. Every talk on deep learning gets a packed auditorium. A talk on deep
 learning by Andrew Ng? It was packed 15 minutes before it started.
@@ -578,13 +590,15 @@ like the Baidu Eye. The way he talked about it, you could tell this wasn't
 just something he worked on, it was something he *believed* in. This was
 his vision of the future, and he was there to play a part in making it real.
 
-Another day, I was in the lab, and overheard a conversation between a visiting
-postdoc and a graduate student. They started talking about Ph.D. Comics, and
-the postdoc said she could never relate to the comic. She was always a happy
+Another day, a visiting postdoc came to our lab for group meeting. After
+the meeting, I overheard a conversation between that postdoc
+and a graduate student. They started talking about Ph.D. Comics, and
+the postdoc said she could never relate to it. She was always a happy
 grad student.
 
 A third day, a professor said, "Looks like I'll be done by 11 PM. Get to leave
-early for once."
+early for once." The way he said it left no doubt. He was tired, but
+he loved computer vision and he loved his work. He was here by choice.
 
 Passion and faith in your work is what will carry you through a Ph.D. program.
 Nothing else will.
@@ -620,8 +634,8 @@ I take a deep breath, and start composing my thoughts.
 
 > - Assuming I magically finished my application and got into a top graduate program, I'd still lean towards not going. After a Ph.D., I don't think I'd want to stay in academia, and would likely try to get into an industry lab. At that point, the Ph.D. essentially becomes a 5-6 year long process of improving research skills enough to apply for those positions, which doesn't sound worth it to me.
 
-It hurts a bit to say it, and I'm not sure why, but I know that on some level
-it doesn't matter if I get it or not. *I don't have to go for a Ph.D. if I don't want to, and
+It hurts a bit to lay it all out. I'm not sure why, but I know that on some level
+it doesn't matter if I get why or not. *I don't have to go for a Ph.D. if I don't want to, and
 right now I don't want to. That's okay. It's okay to say it out loud.*
 
 > To me, there are many reasons to go for a Ph.D., but I'm not completely sold on any of them:
@@ -629,7 +643,9 @@ right now I don't want to. That's okay. It's okay to say it out loud.*
 > - To prove to yourself / the world that you can get through a Ph.D. program, because only a small percentage of people can do so. I don't [have] a strong need to prove myself to be better than other people, and care more about my personal standards for how much I can push myself. (I suppose that could also be seen as an argument for why I should do a Ph.D., which is all about pushing boundaries.)
 > 
 > - A very strong belief that what you're doing your research in is important. Strong enough to deal with the stresses of academia, and solid enough to keep going even after realizing just how big your field is. I believe that AI research is very important and impactful, and enjoy reading about new advances, but the costs of creating new research are too high for me.
-> 
+
+*Thanks Philip, for putting it more succinctly than I can.*
+
 > - A personal fulfillment achieved by understanding something very deeply. For theory-leaning people (which I'd classify myself as), this may also be the joy from finding an especially elegant proof or neat connection between different topics. This is definitely hard to find outside academia, but aspects of this still show up in industry, and being an expert on X is common advice for standing out among your peers.
 > 
 > - A love for teaching with the plan to go for a lecturer position after a Ph.D. I've liked TAing this semester and approve of education in general, but again this isn't a strong enough interest to make me want to teach full time.
