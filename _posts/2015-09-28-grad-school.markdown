@@ -4,8 +4,11 @@ title:  "\"How Do You Feel About Grad School?\""
 date:   2016-01-03 23:14:00 -0800
 ---
 
-*These are my thoughts as a graduating senior who has both never been a full time
-software developer and never been a full time researcher.*
+My undergrad is almost over. These are my thoughts as a graduating senior who has both never been a full time
+software developer and never been a full time researcher.
+
+\*\*\*
+{: .centered }
 
 **December 2015**
 
@@ -113,7 +116,7 @@ some discussion.
 I don't understand a word of it, but I try not to let it discourage me.
 I just started. There's no way I should know what they're talking about.
 
-The same song and dance continues for the next two weeks. Eventually, I decide
+The same song and dance continues for the next few days. Eventually, I decide
 to research ways to combine Monte Carlo tree search with reinforcement learning.
 My lectures are separated by 1-2 hour gaps, and I spend them doing research.
 By which I mean reading
@@ -139,7 +142,7 @@ drops sharply. (It bottoms out a few weeks later, after reading
 Once I see papers as promising ideas instead of ground
 truth, prior work doesn't intimidate me as much.
 At the same time, there's still a vast ocean of prior work, and I can barely
-keep myself afloat. Still, I'm doing research! Literally pushing the boundaries
+keep myself afloat. But hey, I'm doing research! Literally pushing the boundaries
 of human knowledge. Better to light one candle than to curse the darkness.
 
 It takes me a while to realize reading papers isn't enough. I need to implement
@@ -162,7 +165,7 @@ Still, it can be hard to see the upside when you have no positive
 results.
 
 This makes scientific research a fundamentally different problem from homework.
-The nicest quote explaining this is from the book "Countdown", describing
+The nicest quote explaining this is from the book "Countdown" by Steve Olson, describing
 a speech Andrew Wiles gave at the International Math Olympiad.
 
 > Solving Olympiad problems is not like doing mathematical research and is not
@@ -195,9 +198,9 @@ Another researcher had the same idea, and they got a paper out of it!
 Maybe I'm not a fraud after all. And, I see some interesting extensions that
 aren't mentioned in the literature.
 
-For the next week, I'm riding a high of accomplishment, making steady progress
-on implementing my ideas.
-Then, it all goes wrong. My classes all ramp up at the same time.
+For the next week, I make steady progress on implementing my ideas, riding a
+high of accomplishment.
+Then, it all falls apart. My classes all ramp up at the same time.
 I spend my days in lecture and my nights doing homework and projects. Research
 goes on the back burner. I'm sorry! I don't have time for you! I need to learn
 about thread schedulers, about clopen sets and Jacobians, and you need to wait.
@@ -243,19 +246,19 @@ If you're applying for AI or machine learning, the standards are much higher
 because so many (almost 50%) of applicants try for these fields.
 One publication or one paper under review is almost expected.
 - Three letters of recommendation.
-A common mix is a strong letter from your PI, a decent letter from the course
-you TAed for, and a weak letter from the course you did well in. Again, stronger
+A common mix is a strong letter from your PI, a decent letter from a course
+you TAed for, and a weak letter from a course you did well in. Again, stronger
 applicants will have two research letters, or maybe even three.
 
 This is an incredibly demanding funnel. Only the strongest CS students
 will even meet these qualifications. They apply,
 the truly excellent ones (or the lucky ones) (or actually, both) get accepted
-into the Ph.D. program, and they start their new life. About 14% of Berkeley CS
+into top Ph.D. programs, they make a decision, and they start their new life. About 14% of Berkeley CS
 undergrads go to graduate school (counting master's programs),
 and I'd say this is actually the top 14% of the major. Maybe top 20%, if you
 want to be safe.
 
-A quarter of these students will drop out of the PhD program. That's the
+A quarter of these students will drop out of the Ph.D. program. That's the
 percentage that leave CMU, circa 2014.
 
 You need incredible talent and dedication to even get into a program as good
@@ -281,13 +284,13 @@ These are both awful realizations if you have imposter syndrome like I do.
 
 Off the top of my head, I can name several people smarter than me. (I met
 them in high school, and they've been better than me since.) I can name
-a few undergrads with first author publications. (They work in the same
+undergrads with first author publications. (They work in the same
 lab I do, and they've worked longer and harder than I have.)
 
 I'm not saying that's a bad thing. It's fantastic I had the opportunity
 to meet such brilliant people so early in my life, because they taught me to
-base my self worth not on where I am relative to others, but on where
-I am relative to my own standards. Not everybody can be Elon Musk or Bill Gates.
+base my self worth on my own standards, not on where I am relative to others.
+Not everybody can be Elon Musk or Bill Gates.
 That's not saying I do this successfully, but I try.
 
 The point is that when I surround myself with people better than me, I lose the
@@ -307,9 +310,9 @@ Does learning [Kolmogorov complexity](https://en.wikipedia.org/wiki/Kolmogorov_c
 Is proving the existence of incompressible strings super awesome? Hell yes.
 
 I put in hours where I can, but my schedule is busy, and once again I can't
-put in as many as I'd like. Still, I have some interesting results, showing
-that with enough training time I can get a program to self-learn
-heuristics for playing Connect Four.
+put in as many as I'd like. It's disappointing, because I actually have
+some promising preliminary results. With enough training time,
+I can get a program to self-learn heuristics for playing Connect Four.
 It's not amazing (Connect Four [is a solved game](http://www.informatik.uni-trier.de/~fernau/DSL0607/Masterthesis-Viergewinnt.pdf)),
 but my AI beats me over half the time, so it's definitely something.
 
@@ -317,17 +320,17 @@ Unfortunately, my approach requires lots of computation
 time, and running experiments is becoming infeasible.
 I can't make more progress until I find a way to make my experiments run faster,
 and I don't hit on any solutions that are easy to implement. When I lose
-motivation, I remind myself of why I'm here. *You're here because you like AI.
+motivation, I remind myself of why I'm here. *You're here because AI is awesome.
 If it was easy to discover something new, it would have been done already. So
 keep going. It'll be worth it when it all comes together.*
 
 These are the thoughts in the back of my head, while I wait in line for free
-food. The demand for Berkeley CS students is so high that companies
+food. The demand for Berkeley CS majors is so high that companies
 give free dinner, T-shirts, and stickers at their info sessions.
 It's pocket change for them, and every company has to do it to compete.
 Hungry CS majors are totally okay with this.
 
-I'm waiting with a few other people from the CS honor societies. Some
+I'm waiting with a few friends from the CS honor societies. Some
 are 100% doing grad school, some are 100% not doing grad school. A few are on
 the fence, like me.
 
@@ -340,7 +343,7 @@ Why are you here, Mister I Already Accepted A Full Time Offer In Industry?"
 "You know, I don't really know. Force of habit, I guess."
 
 We laugh, and no one acknowledges the financial commentary. We all
-already know it's true, and it doesn't need repeating.
+already know the stats, and they don't need repeating.
 
 We get a plate of pad thai and eggplant. It's good, and getting it for free
 makes it even sweeter.
@@ -352,9 +355,9 @@ Let's talk about the elephant in the room: the money.
 
 The software industry pays stupidly well. Based on Berkeley Career Center
 surveys, in 2014 EECS graduates averaged a starting salary of $108,000.
-Once you spend enough time in Silicon Valley, this is actually not that
-surprising, but if that salary for new grads doesn't seem slightly insane, you
-should recalibrate your understanding of money.
+Once you spend enough time in Silicon Valley, this makes sense,
+but if that large a salary for new grads doesn't seem slightly insane, you
+should recalibrate your perspective.
 
 That's not even getting into the perks. Companies like Google, Facebook, and
 LinkedIn sell themselves by offering insane perks.
@@ -364,8 +367,8 @@ it helps express our inner child. You'll never go hungry, you'll never go
 thirsty, and by the way we have some interesting problems that need solving,
 so why don't you join us?
 
-Alternatively, new grads can work at a startup. Come here, and you can change
-the world! Or, you can exploit a temporary inefficiency of the market. The first
+Alternatively, new grads can join a startup. Come here, and you can change
+the world! You can exploit a temporary inefficiency of the market. The first
 exploiter (or more commonly, the best exploiter) can create tons of wealth.
 We're changing how people connect with each other.
 We're changing transportation. Join now, and if we make it big you can live like
@@ -373,7 +376,7 @@ a king.
 
 There's only one way a Ph.D. program can compete with the money in industry.
 A CS Ph.D. program sells itself with research.
-Here, you will tackle the hardest problems,
+You will tackle the hardest problems,
 the ones where no one knows the answer. You will devote the next few years
 towards learning as much as you want in your quest to solve one of those problems.
 It will be hard, difficult, and poorly paid, but in the end you will learn
@@ -384,15 +387,12 @@ If you're looking for money, grad school isn't for you.
 If you want to coast through life with a reasonable living salary, grad school
 isn't for you.
 
-The only valid reason to go to CS grad school is because you want to do research,
-with every fiber and bone in your body.
+The only valid reason to go to CS grad school is because you want to do research.
 
-Money isn't my driving motivation, so it didn't play a role in my decision.
-Of course, I'll gladly negotiate for more money if I can, but in the end I
-care more about self-satisfaction and impact. But once again, mental wizardry
-can't change the facts: the opportunity cost of doing research is around
-$70,0000 a year. You can't just ignore that. I suspect that's why grad students
-worry about selling out on their principles.
+Money isn't my driving motivation.
+I care more about self-satisfaction and impact.
+Still, ignoring the possibility of six-figure salaries straight out of college would be insane.
+I suspect that's why grad students worry about selling out on their principles.
 
 ![Ph.D. Comics Sell Out](/public/grad-school-thoughts/phdsellout.gif)
 {: .centered }
@@ -413,7 +413,7 @@ If a startup is a bet against the world that you can build something people will
 pay for, then a Ph.D. is a bet against the world that you can discover something
 no one has ever seen before.
 
-That's not to say they're the same. For one,
+That's not to say they're the same.
 [Paul Graham says everybody should try founding a startup.](http://paulgraham.com/notnot.html)
 No one says everybody should try getting a Ph.D.
 
@@ -423,20 +423,20 @@ No one says everybody should try getting a Ph.D.
 **September 2015**
 
 I chose to do an internship instead of research the summer before senior year.
-I was a disillusioned with research after running into so many road blocks,
+I was disillusioned with research after running into so many road blocks,
 and didn't feel like I was self-motivated enough to try for a Ph.D. program.
 
 It was [a good experience]({% post_url 2015-08-20-things-i-did-in-my-khan-academy-internship %}),
 and overall I'm very glad I decided to take the offer.
 At the same time, when the semester started I found myself enjoying research
 a lot more. Maybe it was the light course load in the first few weeks, or maybe
-it was the realization that I actually knew what I was doing. I could hold a
+it was the realization that I actually knew what I was doing. I could actually hold a
 conversation with the grad student mentoring me. At least, for a while.
 
-Riding the peak of research motivation, I set up meetings with my PI to find
-a way to get a reasonable application in time for deadlines. I get started on
+Riding my newfound wave of motivation, I set up meetings with my professor to find
+a way to get a reasonable application in time for deadlines. I start
 a new project, one that could lead to a paper faster than my old one.
-(Later, I find a paper where the authors independently worked along the same lines
+(A few months later, I find a paper where the authors independently worked along the same lines
 I did, this time [from less than a year ago](http://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning).
 They ran into the same computational barrier as me, and got over it by throwing
 more computing power at the problem instead of developing algorithmic
@@ -477,7 +477,7 @@ done. If I wanted to relax and do nothing, I could have.
 
 So of course, I signed up for three grad classes, TAed for the first time, and
 did research on top of it. Sometime in high school I gained
-a deep unease with myself that always pushes me to do more. Appeasing that part
+a deep unease with myself that always pushed me to learn more and do more. Appeasing that part
 of my brain while making sure I don't overload has been one of the harder
 challenges of my life.
 
@@ -546,7 +546,7 @@ anywhere else. It is what it is.
 a job where you put up with lots of stress for that 10% or 20% of the job you
 actually want to do, because you enjoy it that much.)
 
-My belief in research fell right on the boundary. Interested
+My motivation for research fell right on the boundary. Interested
 enough to keep doing it semester after semester, but not enough to put in the
 hours I needed to create work of my own.
 A lot of sections from The Ph.D. Grind resonated with me, but my favorite was
@@ -621,7 +621,7 @@ I take a deep breath, and start composing my thoughts.
 > - Assuming I magically finished my application and got into a top graduate program, I'd still lean towards not going. After a Ph.D., I don't think I'd want to stay in academia, and would likely try to get into an industry lab. At that point, the Ph.D. essentially becomes a 5-6 year long process of improving research skills enough to apply for those positions, which doesn't sound worth it to me.
 
 It hurts a bit to say it, and I'm not sure why, but I know that on some level
-it doesn't really matter. *I don't have to go for a Ph.D. if I don't want to, and
+it doesn't matter if I get it or not. *I don't have to go for a Ph.D. if I don't want to, and
 right now I don't want to. That's okay. It's okay to say it out loud.*
 
 > To me, there are many reasons to go for a Ph.D., but I'm not completely sold on any of them:
