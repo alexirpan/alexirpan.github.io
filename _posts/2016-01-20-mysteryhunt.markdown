@@ -26,20 +26,20 @@ get the next square a-ha. Once we did, we got stuck on extraction and abandoned 
 The next day, someone looked at it, did the obvious thing, and solved it in
 five minutes. In hindsight, I have no idea how we missed it.
 
-Had fun finding the solution to [Pictocryptolists](http://huntception.com/puzzle/pictocryptolists/). As with all substitution ciphers,
+Had fun finding the answer to [Pictocryptolists](http://huntception.com/puzzle/pictocryptolists/). As with all substitution ciphers,
 it took a while to get the first foothold, but once we got the theme it came
 together like clockwork. Around five people cycled through it.
 It was straightforward with lots of work, so we used it as a cooldown puzzle
 for people frustrated by their current one.
 
-Oh, for once I actually found a meta mechanism! It was for [Obedience Training](http://huntception.com/puzzle/obedience_training/).
+Oh, for once I identified a meta mechanism! It was for [Obedience Training](http://huntception.com/puzzle/obedience_training/).
 We were very confident in ????PROOF BREEDERS, where exactly two of the ? were
 consonants, but it took us until Sunday to guess the correct starting word.
 (It was GOOFPROOF, for what it's worth. I know it's on theme, but FOOLPROOF
 makes so much sense...)
 
 [Meet the Loremipsumstanis](http://huntception.com/puzzle/meet_the_loremipsumstanis/) was frustrating. Everyone collected data for it once
-we figured out how to decode the Bacon Ipsum because it was too much fun to
+we knew how the Bacon Ipsum worked, because it was too much fun to
 justify working on anything else. It was all smooth sailing, until we
 got to the final cryptic phrase. We knew the answer had to be eight letters long
 from both the given numbers and the Rip Van Winkle meta constraint, but we
@@ -56,11 +56,10 @@ hopefully I'll get another chance to reason about exponent towers.
 
 Now, a slight digression. A ton of puzzles came out between Saturday night and Sunday
 morning, but I didn't work on them. Instead, I was doing Round 1 of Facebook
-Hacker Cup. Take it from me, starting a programming competition at 2 AM after
-doing puzzles all day was an awful decision. I briefly looked at
-the problems, decided there was no way I could get the last one, and focused on
-the first three. I did very minimal testing, submitting my last solution
-5 seconds before the contest ended.
+Hacker Cup. Take it from me, don't start a programming competition at 2 AM after
+doing puzzles all day. I briefly looked at
+the problems, and decided to focus on the first 3. I did very minimal testing,
+submitting my last solution 5 seconds before the contest ended.
 Miraculously, they were all correct.
 I expect to die in Round 2, and will be very surprised if I make
 top 500 for the T-shirt, but at least I made it.
@@ -75,31 +74,74 @@ My second most enjoyable solve of the Hunt.
 
 But, my favorite solve of the Hunt has to go to [Sleeping Beauty meta](http://huntception.com/round/sleeping_beauty/). I
 didn't know Nikoli created a logic puzzle with no numbers, but now I
-do. Everyone else did the legwork of filling in the grid and solving
-with incomplete info, but we got stuck on final extraction Sunday morning and abandoned
-it. Around twenty-five minutes before the end of Hunt, I gave a final look, and
+do. Other people did the legwork of filling in the grid and solving
+with incomplete info, but we didn't know what to do with the logic
+puzzle solution. We abandoned it Sunday morning.
+Around twenty-five minutes before Hunt HQ closed, I gave a final look, and
 figured it out. Let me tell you, it feels really good to solve a meta,
 and it feels even better to be the reason it was solved in the first place.
 
 We weren't close to finishing, but I never expected to finish, so that
 was fine. I'm very curious to see what kind of hunt Setec will make.
-After seeing Sneakers, I'll say only this: Setec can have Too Many Secrets,
+After seeing *Sneakers*, I'll say only this: Setec can have Too Many Secrets,
 as long as they don't have Too Many Puzzles.
 
 Finally, for tradition's sake: this post is not a puzzle.
 
 (Just kidding, it is. Yes, really.
-If something seems sketchy, look at the remainder. You'll need some more
-numbers, and here they are: 16, 5, 16, 23, 9, 25, 23.)
+If something seems sketchy, look at the remainder.
+You'll need more numbers to get the answer, and here they are:
+-10, 5, -10, -3, 9, -1, -3.)
 
 <button
     class="spoiler-control"
-    title="Click to show lyrics"
+    title="Click to show answer"
     toggle1="Show Answer"
     toggle2="Hide Answer">
 </button>
 {: .centered }
 
 <pre class="hidden">
-The answer, ROT13ed, is QERNZRE
+The answer is DREAMER.
+</pre>
+
+<button
+    class="spoiler-control"
+    title="Click to show solution"
+    toggle1="Show Solution"
+    toggle2="Hide Solution">
+</button>
+{: .centered }
+
+<pre class="hidden">
+This is a straightforward identify, sort, index, solve puzzle.
+Not very interesting, but it gets the job done, and I didn't
+want to make something too complicated.
+
+There are 7 given numbers, and 7 puzzles are linked. Furthermore,
+sometimes the post spells out numbers and sometimes it doesn't.
+The comment that you'll need more numbers should sound a bit
+fishy.
+
+If you look closer, every paragraph linking a puzzle has exactly
+one number spelled out in words. Every other paragraph uses digits
+The numbers are five, five, two, eight, five, forty, and twenty-five.
+Index the number into each of those paragraphs to get the clue phrase
+
+PUZZLE ANSWER FOR DATA USE SAME NUMBERS
+
+From the links, look up the answer to each puzzle. As clued,
+use the same paragraph numbers to index into the puzzle answers.
+Some numbers won't work, but the comment to "look at the remainder"
+should hopefully lead you to reducing the number if the answer
+is too short. Doing so gives
+
+NMODDFU
+
+and shifting by the final numbers gives
+
+DREAMER
+
+as the answer. If your puzzle allows for arbitrary answers, might
+as well make it on theme, right?
 </pre>
