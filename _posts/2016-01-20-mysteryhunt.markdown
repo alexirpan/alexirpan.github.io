@@ -15,10 +15,10 @@ their sleep schedules by working on puzzles for 3 days straight. Still,
 any week where I get to hear proposals for sneakernet from space to Earth is
 pretty awesome.
 
-Thanks to sponsors, at the start of this Hunt, every team got Google Cardboard,
+Thanks to sponsors, at the start of this Hunt every team got Google Cardboard,
 Fitbit notebooks, and Fitbit pens. In a true display of Mystery Hunt paranoia, the first thing
 we did was open the notebooks and disassemble a pen to verify none of them were
-puzzles. I blame the first aid kit from the Alice hunt.
+puzzles. I blame the first aid kit puzzle from the Alice hunt.
 
 After kickoff, my first puzzle of the Hunt was [You Complete Me](http://huntception.com/puzzle/you_complete_me/).
 We got the correct coefficients after some staring, but it took us a while to
@@ -114,17 +114,16 @@ The answer is DREAMER.
 {: .centered }
 
 <pre class="hidden">
-This is a straightforward identify, sort, index, solve puzzle.
+This is a barebones identify, sort, index, solve puzzle.
 Not very interesting, but it gets the job done, and I didn't
 want to make something too complicated.
 
 There are 7 given numbers, and 7 puzzles are linked. Furthermore,
 sometimes the post spells out numbers and sometimes it doesn't.
-The comment that you'll need more numbers should sound a bit
-fishy.
+The comment that you'll need more numbers should also sound fishy.
 
-If you look closer, every paragraph linking a puzzle has exactly
-one number spelled out in words. Every other paragraph uses digits
+If you read carefully, every paragraph linking a puzzle has exactly
+one number spelled out in words. Every other paragraph uses digits.
 The numbers are five, five, two, eight, five, forty, and twenty-five.
 Index the number into each of those paragraphs to get the clue phrase
 
@@ -142,6 +141,5 @@ and shifting by the final numbers gives
 
 DREAMER
 
-as the answer. If your puzzle allows for arbitrary answers, might
-as well make it on theme, right?
+as the answer.
 </pre>
