@@ -16,8 +16,15 @@ any week where I get to hear proposals for sneakernet from space to Earth is
 pretty awesome.
 
 Normally, I hunt on bigger teams because they have better remote solver
-support. This year I went in-person, wanted to try out a smaller team, and
-hunted with ET.
+support. Because I went in-person this year, I decided I should try out a
+smaller team, so I hunted with ET Phone In Answer. It was definitely a
+different dynamic. In
+my previous Hunts, it felt like I wasn't a big contributor. (For context,
+my first Hunt was with Sages.) When 10 people are looking at the same puzzle,
+the math means it's unlikely you find the a-ha, because there's so many other
+people working on it. On the other hand, I do like finishing
+Hunt, and that's a lot easier on larger teams.
+Something I'll need to think about for next year.
 
 Thanks to sponsors, at the start of this Hunt every team got Google Cardboard,
 Fitbit notebooks, and Fitbit pens. In a true display of Mystery Hunt paranoia, the first thing
@@ -72,8 +79,8 @@ Back to puzzles! Shortly after coming into HQ, somebody called out ["Ponies!"](h
 I've always felt like Mystery Hunt had to have an My Little Pony puzzle at some point,
 and this year someone on the writing team felt the same way.
 We solved it in around forty minutes, seamlessly going from data
-collection to a-ha to extraction. On point construction, clean theming, solvable
-without MLP knowledge but much faster with it, and the final answer was on point.
+collection to a-ha to extraction. On point construction, clean theming, and
+solvable without MLP knowledge but much faster with it.
 My second most enjoyable solve of the Hunt.
 
 But, my favorite solve of the Hunt has to go to [Sleeping Beauty meta](http://huntception.com/round/sleeping_beauty/). I
@@ -82,8 +89,9 @@ do. Other people did the legwork of filling in the grid and solving
 with incomplete info, but we didn't know what to do with the logic
 puzzle solution. We abandoned it Sunday morning.
 Around twenty-five minutes before Hunt HQ closed, I gave a final look, and
-figured it out. Let me tell you, it feels really good to solve a meta,
-and it feels even better to be the reason it was solved in the first place.
+figured it out. I didn't actually do that much, but it feels really good to be
+the guy (or gal) to figure out the final extraction, especially on a
+metapuzzle.
 
 We weren't close to finishing, but I never expected to finish, so that
 was fine. I'm very curious to see what kind of hunt Setec will make.
@@ -92,7 +100,7 @@ as long as they don't have Too Many Puzzles.
 
 Finally, for tradition's sake: this post is not a puzzle.
 
-(Just kidding, it is. Yes, really.
+(Just kidding, it is. Yes, really. I promise it's short.
 If something seems sketchy, look at the remainder.
 You'll need more numbers to get the answer, and here they are:
 -10, 5, -10, -3, 9, -1, -3.)
