@@ -5,7 +5,7 @@ date:   2016-01-20 23:08:00 -0800
 ---
 
 *Targeted towards people who did MIT Mystery Hunt 2016. I doubt you'll
-care about this if you didn't participate. Spoilers.*
+care about this if you didn't participate. Some spoilers.*
 
 Here's the thing about puzzle hunts: they bring together the strangest
 people. Strange in a good way. The biggest reason puzzles are awesome is
@@ -14,6 +14,10 @@ but only the slightly unhinged are willing to destroy
 their sleep schedules by working on puzzles for 3 days straight. Still,
 any week where I get to hear proposals for sneakernet from space to Earth is
 pretty awesome.
+
+Normally, I hunt on bigger teams because they have better remote solver
+support. This year I went in-person, wanted to try out a smaller team, and
+hunted with ET.
 
 Thanks to sponsors, at the start of this Hunt every team got Google Cardboard,
 Fitbit notebooks, and Fitbit pens. In a true display of Mystery Hunt paranoia, the first thing
@@ -29,8 +33,8 @@ five minutes. In hindsight, I have no idea how we missed it.
 Had fun finding the answer to [Pictocryptolists](http://huntception.com/puzzle/pictocryptolists/). As with all substitution ciphers,
 it took a while to get the first foothold, but once we got the theme it came
 together like clockwork. Around five people cycled through it.
-It was straightforward with lots of work, so we used it as a cooldown puzzle
-for people frustrated by their current one.
+It was straightforward but tediuos, which made it a great cooldown puzzle
+if you were frustrated at your current puzzle.
 
 Oh, for once I identified a meta mechanism! It was for [Obedience Training](http://huntception.com/puzzle/obedience_training/).
 We were very confident in ????PROOF BREEDERS, where exactly two of the ? were
