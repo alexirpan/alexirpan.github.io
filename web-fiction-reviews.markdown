@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Stories I Have Read Online, Which You Can Only Read Online, Which You Should Try Reading (Online)
+title: Recommended Web Fiction
 permalink: /webfictionrecs/
 ---
 
@@ -23,7 +23,8 @@ link to a full blog post review or be at most three sentences long.**
 This is restricted to text only content. Anything visual like
 webcomics will have to wait for another time.
 
-Stories in each category are ordered roughly by how much I liked them.
+Stories in each category are ordered roughly by how much I liked them, but every
+story on this page is worth checking out.
 
 -----------------------
 <br>
