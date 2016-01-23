@@ -209,3 +209,6 @@ I recommend starting with
 [Party Cat](http://nedroid.com/2009/05/party-cat-full-series/) and [200 Bad Comics](http://nedroid.com/bcpage1.html).
 
 [back to top](#table-of-contents)
+
+
+{% include comments.html %}
