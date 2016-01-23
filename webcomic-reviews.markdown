@@ -12,7 +12,7 @@ try to do just a bit more. Some are beautifully drawn,
 some are beautifully written, some are terrifying, some are sweet.
 The strongest will do a bit of everything, and bring you along for the ride.
 
-Much like web fiction, webcomics are self-published and run on donations, merchandise,
+Much like [web fiction](/webfictionrecs/), webcomics are self-published and run on donations, merchandise,
 and Patreon. Unfortunately, this means good webcomics are hard to find among the
 sea of alternatives, which can be
 a death sentence for content creators. Here are webcomics I recommend, in the hopes that

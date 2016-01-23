@@ -4,8 +4,11 @@ title: Recommendations
 permalink: /recs/
 ---
 
-Recommendations are split into two subpages
+I've written short reviews of online content I like. They're
+divided into these subpages.
 
 [Web fiction recommendations](/webfictionrecs/)
 
-[Web comic recommendations](/webcomicrecs/) 
+[Webcomic recommendations](/webcomicrecs/) 
+
+[&larr; Back to home](/)
