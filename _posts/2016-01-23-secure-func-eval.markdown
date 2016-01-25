@@ -132,7 +132,7 @@ encryption scheme with a few extra properties.
 Oblivious Transfer
 ==========================================================
 
-Oblivious transfer is a way for one party to send information to
+*Oblivious transfer* is a way for one party to send information to
 the other party without knowing what they're sending. Alice has two
 messages $$m_0, m_1$$, and Bob has a bit $$b$$. In oblivious transfer
 
@@ -142,4 +142,68 @@ messages $$m_0, m_1$$, and Bob has a bit $$b$$. In oblivious transfer
   * Bob does not learn what the other message was
 * Alice does not learn which message Bob took.
 
+To use an analogy, imagine oblivious transfer as a pair of black boxes.
+Alice puts her two messages into the boxes, and gives them to Bob.
+When Bob opens one box, the other box immediately collapses and deletes
+its data.
+
 PICTURE HERE
+
+Symmetric Encryption
+===========================================================
+
+In *symmetric encryption*, there is an encryption function $$E$$
+and a decryption function $$D$$.
+For secure function evaluation, we expect $$(E, D)$$ to act like this.
+
+* $$E(k, m)$$ is the encryption of message $$m$$ with key $$k$$.
+* $$D(k, c)$$ is the decryption of ciphertext $$c$$ with key $$k$$.
+* $$D(k, E(k, m)) = m$$, meaning the same key is used for encyrpting and
+decrypting
+* Decrypting $$E(k,m)$$ with a different key $$k'$$ results in an error.
+* Given ciphertext $$c$$, it is hard to find a pair $$(m, k)$$ such that
+encrypting $$m$$ with $$k$$ gives $$c$$.
+
+
+Yao's Garbled Circuits
+------------------------------------------------------------------------
+
+Garbled circuits were the first construction showing secure computation
+was possible. They were first developed by Yao in (CHECK).
+
+Any function $$f$$ has a corresponding circuit $$C$$ which evaluates
+it. Every circuit $$C$$ is made up of logic gates, like AND gates, OR gates,
+NOT gates, and so on. These gates are connected by wires, which take
+values $$0$$ or $$1$$.
+
+PICTURE HERE
+
+We could have Alice send circuit $$C$$ and input $$x$$ to Bob.
+Bob could then set the input wires for $$x$$, set the input wires for his own input $$y$$, then
+evalute the logic gates of the circuit until all outputs were found.
+However, this obviously lets Bob learn what $$x$$ is. 
+
+This is where garbling comes in. Instead of sending $$C$$, Alice will
+send a garbled circuit $$G(C)$$. This garbled circuit will compute the
+same thing as $$C$$ while hiding information about its computation.
+
+Let $$W = \{ w_1, w_2, \cdots, w_n \}$$ be the set of wires in the circuit.
+For each wire $$w_i$$, generate two random encryption keys
+$$k_i^0$$ and $$k_i^1$$, which will represent $$0$$ and $$1$$.
+
+Now, construct a *garbled logic gate*. This acts the same as a regular
+logic gate, except it will manipulate encryption keys instead of bits.
+For example, suppose we have an OR gate, with input wires $$w_1,w_2$$
+and output wire $$w_3$$.
+
+$$
+    \begin{tabular}{c|c||c}
+        w_1 & w_2 & w_3 \\
+        \hline
+        0 & 0 & 0 \\
+        0 & 1 & 1 \\
+        1 & 0 & 1 \\
+        1 & 1 & 1
+    \end{tabular}
+$$
+
