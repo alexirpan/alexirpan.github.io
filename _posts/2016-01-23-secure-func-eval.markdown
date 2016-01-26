@@ -164,6 +164,8 @@ decrypting
 * Given ciphertext $$c$$, it is hard to find a pair $$(m, k)$$ such that
 encrypting $$m$$ with $$k$$ gives $$c$$.
 
+For notation, I'll sometimes use $$E_k(m) = E(k, m)$$.
+
 
 Yao's Garbled Circuits
 ------------------------------------------------------------------------
@@ -181,7 +183,7 @@ PICTURE HERE
 We could have Alice send circuit $$C$$ and input $$x$$ to Bob.
 Bob could then set the input wires for $$x$$, set the input wires for his own input $$y$$, then
 evalute the logic gates of the circuit until all outputs were found.
-However, this obviously lets Bob learn what $$x$$ is. 
+However, this obviously lets Bob learn what $$x$$ is.
 
 This is where garbling comes in. Instead of sending $$C$$, Alice will
 send a garbled circuit $$G(C)$$. This garbled circuit will compute the
@@ -191,19 +193,73 @@ Let $$W = \{ w_1, w_2, \cdots, w_n \}$$ be the set of wires in the circuit.
 For each wire $$w_i$$, generate two random encryption keys
 $$k_i^0$$ and $$k_i^1$$, which will represent $$0$$ and $$1$$.
 
-Now, construct a *garbled logic gate*. This acts the same as a regular
-logic gate, except it will manipulate encryption keys instead of bits.
-For example, suppose we have an OR gate, with input wires $$w_1,w_2$$
-and output wire $$w_3$$.
+A garbled circuit is made of *garbled logic gates*. Garbled gates act
+the same as regular logic gates, except they use the sampled encryption
+keys to represent bits.
+
+For example, suppose we have an OR gate. It has input wires $$w_1,w_2$$
+and output wire $$w_3$$. The inputs are bits $$0$$ or $$1$$, and the gate
+outputs $$0$$ or $$1$$.
+
+PICTURE HERE
 
 $$
-    \begin{tabular}{c|c||c}
+    \begin{array}{ccc}
         w_1 & w_2 & w_3 \\
-        \hline
         0 & 0 & 0 \\
         0 & 1 & 1 \\
         1 & 0 & 1 \\
         1 & 1 & 1
-    \end{tabular}
+    \end{array}
 $$
 
+REDO THIS TABLE
+
+The garbled OR gate instead takes $$k_1^0, k_1^1, k_2^0, k_2^1$$ as input,
+and outputs $$k_3^0$$ or $$k_3^1$$. This is done by creating the following
+4 values.
+
+$$
+    \begin{array}{c}
+        E_{k_1^0}(E_{k_2^0}(k_3^0)) \\
+        E_{k_1^0}(E_{k_2^1}(k_3^1)) \\
+        E_{k_1^1}(E_{k_2^0}(k_3^1)) \\
+        E_{k_1^1}(E_{k_2^1}(k_3^1))
+    \end{array}
+$$
+
+For each pair of input bits, lookup the key for what the output bit should be,
+and encrypt it with the keys for both input bits. (This is also known as the
+*garbled table* for the logic gate.)
+
+The garbled table has a few nice properties.
+
+* If the receiver has no secret keys, the four values will all be gibberish,
+because they have been encrypted.
+* If the receiver has the secret keys for the input bits, they can decrypt
+exactly one of the four values. (For example, if they have $$k_1^0$$ and
+$$k_2^1$$, they can only fully decrypt the $$E_{k_1^0}(E_{k_2^1}(k_3^1))$$
+entry.) Furthermore, every other value will decrypt into an error, because
+of assumptions on the encryption scheme.
+* The one decrypted value holds the key representing the correct output
+bit.
+
+And most importantly,
+
+* For every wire, we randomly generate the keys $$k_i^0$$ and $$k_i^1$$.
+Both keys are sampled from the same probability distribution. Thus,
+given just one key, there is no way to predict the value of the other key.
+And, given just one key, there is no way to tell whether it represents
+bit $$0$$ or bit $$1$$, because the generating process is identical.
+
+By putting the correct gibberish into a garbled gate, we can get the
+correct gibberish out, while having no idea what the bits are like.
+
+Putting it all together, here is how we can evaluate a garbled circuit.
+
+* We are given a garbled circuit and the keys for the correct input
+bits.
+* While there is an unevaluated gate where both input keys are known,
+take an unevaluated gate.
+* Decrypt all four values for that gate. Set the output wire to the
+one successfully decrypted value.
