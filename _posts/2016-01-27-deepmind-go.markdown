@@ -24,7 +24,7 @@ Although computer Go isn't one of my main interests,
 Monte Carlo Tree Search (MCTS) is. The biggest application of MCTS is in
 computer Go, and when you spend two semesters researching MCTS, you end up
 reading a few computer Go papers along the way. So, I figure my perspective is
-at least slightly more informed.
+at least slightly interesting.
 
 
 Prior Work
@@ -64,7 +64,7 @@ is unreasonable. Even then, people close to breakthroughs are often wrong.
 I'm sure there are plenty of
 professors who were (and maybe still are) pessimistic on neural nets and
 optimistic on SAT solvers. It's also often in the interest of authors to
-play up the strengths of their research.
+play up the strengths of their research for articles.
 
 Back to Go. I wasn't surprised because [DeepMind released a preprint of
 their previous Go paper on December 2014](http://arxiv.org/abs/1412.6564).
@@ -76,7 +76,7 @@ for their computer Go work. Funny how that goes.)
 
 Before this paper, the best approach was Monte Carlo Tree
 Search. In MCTS, the algorithm evaluates board positions by playing many random
-games, or rollouts. Using previous results, it focuses the search on more
+games, or rollouts. Using previous outcomes, it focuses the search on more
 promising moves. Progress in MCTS strategies came from tweaking the rollout
 policy. A stronger rollout player gives more accurate results,
 but because MCTS runs hundreds of thousands of rollouts, even small increases
@@ -96,8 +96,7 @@ move predictors.
 At the end of their 2014 paper, there's a short section on combining
 their CNN with search. They didn't get very far, besides showing it was
 an obviously good idea if it could be made computationally feasible.
-
-Ever since that paper, it's felt like the last thing Computer Go needed a
+Ever since that paper, it's felt like the last thing Computer Go needed was a
 combination of heavy duty neural net move predictors with MCTS, done such
 that computation time didn't explode.
 
@@ -129,8 +128,8 @@ learning. (The paper calls this the RL policy network.)
 * Finally, they train a value network, which predicts the value of a board
 if both players play according to the RL policy network.
   * The value network gives an approximation of rollout values with the
-  larger network. It's an approximation, but it's thousands of times
-  faster.
+  larger network, which is too expensive to do during real life play.
+  It's an approximation, but it's thousands of times faster.
 
 The first part that piqued my interest was how many networks were trained
 for AlphaGo. It makes sense: different tasks in MCTS are better suited to different
@@ -172,7 +171,7 @@ that direction, and using supervised learning to pre-train unsupervised learning
 sounds like a good idea anyways. If you look at the results table,
 the final policy network (the one before self-play refinement) got 55.4%
 move prediction accuracy, compared to 55.2% move accuracy from the December 2014
-paper. The improved performance doesn't come from the CNN, it all comes from
+paper. The improved performance doesn't come from a better supervised CNN, it all comes from
 self-play. Remember that the 85% win rate against Pachi doesn't even use search.
 I'm sure plenty of people
 are investigating whether a similar approach works on problems besides Go.
@@ -218,5 +217,5 @@ In those games, AlphaGo won 3-2.
     > using 50 GPUs, for one week.
     
     That adds up to *a month*, even on 50 GPUs. So, for anyone looking to try
-    something similar, make sure to use a small problem, or a computing cluster,
-    or both.
+    something similar, make sure to use a small problem, and keep a computing
+    cluster handy.
