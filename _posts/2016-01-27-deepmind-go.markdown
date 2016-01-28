@@ -4,40 +4,35 @@ title:  "Go: More Complicated than Go Fish"
 date:   2016-01-27 23:08:00 -0800
 ---
 
-*As something "hot off the presses", this may lack polish.*
+*As something "hot off the presses" (hot off the keyboard?), it's a bit unpolished.*
 
-Yesterday, Google DeepMind announced an expert level Go AI. Blog post announcement
-[here](http://googleresearch.blogspot.com/2016/01/alphago-mastering-ancient-game-of-go.html),
-and Nature paper [here](http://www.nature.com/nature/journal/v529/n7587/full/nature16961.html).
+Yesterday, Google DeepMind announced [they had developed an AI called AlphaGo
+that reached expert level in Go](http://googleresearch.blogspot.com/2016/01/alphago-mastering-ancient-game-of-go.html),
+beating the European Go champion.
 
-
-It got picked up by, well, almost everybody. See:
+It got picked up by, well, everybody. I don't want to catalog every article,
+so here's a sample:
 [MIT Technology Review](http://www.technologyreview.com/news/546066/googles-ai-masters-the-game-of-go-a-decade-earlier-than-expected/),
 [Wired](http://www.wired.com/2016/01/in-a-huge-breakthrough-googles-ai-beats-a-top-player-at-the-game-of-go/),
 [Ars Technica](http://arstechnica.com/gadgets/2016/01/googles-ai-beats-go-champion-will-now-take-on-best-player-in-the-world/),
-[The New York Times](http://bits.blogs.nytimes.com/2016/01/27/alphabet-program-beats-the-european-human-go-champion/),
-and others I don't have the patience to catalogue.
-It's been filling my Facebook news feed all day.
+and [The New York Times](http://bits.blogs.nytimes.com/2016/01/27/alphabet-program-beats-the-european-human-go-champion/),
+Posts from friends and famous AI researchers have been filling my news feed,
+and it's all along the lines of "Well done" or "Holy shit" or "I for one welcome our
+new robot overlords." .
 
-Although computer Go isn't one of my interests,
+Although computer Go isn't one of my main interests,
 Monte Carlo Tree Search (MCTS) is. The biggest application of MCTS is in
 computer Go, and when you spend two semesters researching MCTS, you end up
-reading a few computer Go papers too.
-
-
-After downloading and reading the Nature paper, I've revised my opinion.
-Their result still isn't that surprising, but it's even more impressive
-than it sounds, and their combination of several AI approaches has a lot
-of potential.
+reading a few computer Go papers along the way. So, I figure my perspective is
+at least slightly more informed.
 
 
 Prior Work
 --------------------------------------------------------------------------
 
-My first reaction was that AlphaGo was very impressive, but not that
-surprising.
+My first reaction was that AlphaGo was very impressive, but not surprising.
 
-This is at odds with some of the reporting. The original blog post says
+This is at odds with some of the reporting. The original blog post says that
 
 > Experts predicted it would be at least another 10 years until a computer
 > could beat one of the world’s elite group of Go professionals.
@@ -46,104 +41,99 @@ The MIT Technology Review repeats this with
 
 > Google’s AI Masters the Game of Go a Decade Earlier Than Expected
 
-Wired has an actual quote.
+Wired has an actual quote by said expert, Rémi Coulom.
 
-> “It happened faster than I thought,” says Rémi Coulom, the French researcher
-> behind what was previously the world’s top artificially intelligent Go player.
+> In early 2014, Coulom’s Go-playing program, Crazystone, challenged grandmaster Norimoto Yoda at a tournament in Japan. And it won. But the win came with caveat: the machine had a four-move head start, a significant advantage. At the time, Coulom predicted that it would be another 10 years before machines beat the best players without a head start.
 
 I entirely understand why it sounds like this result came out of nowhere,
-but it didn't. Giant leaps are very rare in research. For big problems like
-Computer Go, it's more like a dam. At first, the problem is a big unapproachable
-wall. Over the years, people make incremental progress, chipping away bit by bit.
-This works in a special case. This gets to amateur level play. This doesn't
-get all the way there, but pushing in this direction could work.
-Eventually, all the right ideas collect by the dam's side, some group puts
-the pieces together in the right way, and finally breaks through.
+but it didn't. Giant leaps are very rare in research. For problems like computer
+Go, it's more like trying to punch through a thick wall. At first, the problem
+is unapproachable. Over the years, people make incremental progress,
+chipping away bit by bit, building prototype chisels, exploring blueprints for
+hypothetical pile drivers, and so on.
+Eventually, all the right ideas collect by the wall, some group puts
+the pieces together in the right way, and finally breaks down the wall.
 
-Then reporters only talks about the final breakthrough and it
-sounds like complete magic.
+Then reporters only talks about the final breakthrough, and it
+sounds like complete magic to outsiders.
 
-This isn't a dig at science reporters. I don't think there's a way around this,
-because you have to be steeped in the culture of that research field to see
-the signs. Even then, you could be wrong. I'm sure there are plenty of smart
+This isn't a dig at science reporting.
+You have to be steeped in a research field to see
+the signs of a breakthrough, and asking reporters to do that for every field
+is unreasonable. Even then, people close to breakthroughs are often wrong.
+I'm sure there are plenty of
 professors who were (and maybe still are) pessimistic on neural nets and
-optimistic on SAT solvers. It's very time consuming (and less attention
-grabbing) to look for the prior work that built to the newest paper.
+optimistic on SAT solvers. It's also often in the interest of authors to
+play up the strengths of their research.
 
-Back to Go. The reason I wasn't surprised was because I [read DeepMind's
-first Go paper when it went on ArXiv in December 2014](http://arxiv.org/abs/1412.6564).
+Back to Go. I wasn't surprised because [DeepMind released a preprint of
+their previous Go paper on December 2014](http://arxiv.org/abs/1412.6564).
 (Incidentally, [Clark and Storkey](http://arxiv.org/abs/1412.3409)
-independently released a similar paper just 10 days earlier.
-The day before Google announced AlphaGo's Nature paper, people from
-Facebook AI Research [released a new preprint](http://arxiv.org/abs/1511.06410)
-for their work. Seems like the old maxim holds true: if no one else is trying
-the same thing, it's a bad sign.)
+released a similar paper 10 days before them, with worse results.
+The day before Google announced AlphaGo,
+Facebook AI Research [updated a preprint](http://arxiv.org/abs/1511.06410)
+for their computer Go work. Funny how that goes.)
 
 Before this paper, the best approach was Monte Carlo Tree
 Search. In MCTS, the algorithm evaluates board positions by playing many random
-games, or rollouts. It incrementally builds a search tree, using previous
-results to focus the search on promising moves. Past progress came from tweaking
-how rollouts were generated. A stronger rollout player gives better results,
-but because MCTS runs hundreds of thousands of rollouts, the rollout method
-needs to be very fast.
+games, or rollouts. Using previous results, it focuses the search on more
+promising moves. Progress in MCTS strategies came from tweaking the rollout
+policy. A stronger rollout player gives more accurate results,
+but because MCTS runs hundreds of thousands of rollouts, even small increases
+in computing cost get magnified.
 
-What made DeepMind's first paper so impressive was that it worked without
-using any search at all. Pass in the board, wait a few milliseconds, return a move.
-Compared to the 5 second search time other programs used, it was insane that
-they could get a decent
-Go program. The approach was simple. Using supervised learning, train a
-convolutional neural net to predict the next move the expert makes.
-That's it.
-With a big enough CNN, they got to 55% accuracy, which beat all prior
+What made DeepMind's first paper so impressive was that it achieved good performance
+with zero search. Pass in the board, get a move in a few milliseconds.
+Compared to the 5 second search time other programs used, this was radically
+different. It didn't beat existing bots, but it didn't have to.
+
+The approach was simple. Using supervised learning, they trained a
+convolutional neural net to predict the next move from a database of expert
+level games.
+With a big enough CNN, they got to 55.2% accuracy, which beat all prior
 move predictors.
 
-At the end of their 2014 paper, there's a short section on combinining
-their CNN with search. They didn't get very far, besides showing that it was
+At the end of their 2014 paper, there's a short section on combining
+their CNN with search. They didn't get very far, besides showing it was
 an obviously good idea if it could be made computationally feasible.
 
-Ever since that paper, it's felt like the last thing Computer Go needed was a
-way to combine heavy duty neural net move predictors with MCTS in a clever
-way that doesn't make computation time explode.
+Ever since that paper, it's felt like the last thing Computer Go needed a
+combination of heavy duty neural net move predictors with MCTS, done such
+that computation time didn't explode.
 
-With AlphaGo, that's finally happened. So no, it's not surprising that this
-happened so quickly. There was a clear roadmap of what needed to be done,
-and people took it.
+With AlphaGo, that's finally happened. So no, these results aren't that
+crazy. There was a clear roadmap of what needed to happen, and people
+figured it out.
 
 To be fair to Rémi Coulom, his quoted remarks came before DeepMind's preprint
 was sent to the computer-go mailing list. I'm sure he's been following
 this closely, and it's an unfortunate citation without context.
 
-If anything's surprising, it's that they pushed their preprint to AlphaGo
-within a year. I would have guessed 2 years.
-
 
 The New Stuff
 ---------------------------------------------------------------------------
 
-I know I've been a bit down on this result, but I don't want that to fool
-anybody. This is an exceptionally impressive result, and the approaches used
-to integrate search are very interesting. If you have access, I highly
-recommend reading the paper on your own. It's well
-written, and the authors kept the main text as jargon-free as possible.
+I know I've been a bit down on AlphaGo, but I don't want that to fool
+anybody. AlphaGo is exceptionally impressive.
+If you have access, I highly recommend reading the [Nature](http://www.nature.com/nature/journal/v529/n7587/full/nature16961.html)
+paper on your own. It's very well written, and the key ideas are conveyed well.
 
 If you don't have access, here's the quick summary.
 
 * Using the supervised dataset of expert level games. they train
-two networks. One is a small rollout network, used in random games for MCTS.
+two networks. One is a small rollout network, used for rollouts in the MCTS.
 The other is a large CNN, similar to the Dec 2014 paper. This is called
 the policy network.
-  * The rollout network is very small because it will be run millions of times.
 * The policy network is further refined through self-play and reinforcement
 learning. (The paper calls this the RL policy network.)
 * Finally, they train a value network, which predicts the value of a board
-if both players play according to the refined network.
-  * The value network gives an approximation of what MCTS with the refined
-  network would return. It's an approximation, but it's thousands of times
+if both players play according to the RL policy network.
+  * The value network gives an approximation of rollout values with the
+  larger network. It's an approximation, but it's thousands of times
   faster.
 
 The first part that piqued my interest was how many networks were trained
-for AlphaGo. Each network was trained for a different subtask in
-the MCTS. It makes sense: different tasks are better suited to different
+for AlphaGo. It makes sense: different tasks in MCTS are better suited to different
 network architectures, so you might as well use a different neural net for each one.
 
 However, I found this side remark much more interesting.
@@ -165,11 +155,15 @@ something about the problem, we can still learn from unlabeled data.*
 This is huge. This is the kind of thing that makes people want to do research.
 
 The one dream of anybody in ML is unsupervised learning.
-It's harder, but it's so much cooler, and the potential feels unbounded.
+It's very hard, but it's so much cooler when it works, and the potential of
+unsupervised learning feels unbounded.
 Supervised learning will always be held back in part by whether
 there's a large enough labeled dataset to capture all the information for a problem.
-By constrast, unsupervised learning is held back by the sheer difficulty of
-learning when you don't know what the answer's supposed to be. This is an idea
+Labels need to be provided by humans, so constructing large datasets takes
+a lot of manpower.
+
+By constrast, unsupervised learning is held back only by the sheer difficulty of
+learning when you don't know what the answer is supposed to be. This is an idea
 problem, not a dataset problem. It's easy to get more unsupervised data; just
 look around the world more!
 
@@ -178,23 +172,26 @@ that direction, and using supervised learning to pre-train unsupervised learning
 sounds like a good idea anyways. If you look at the results table,
 the final policy network (the one before self-play refinement) got 55.4%
 move prediction accuracy, compared to 55.2% move accuracy from the December 2014
-paper. It's almost all from self-play, folks. I'm sure plenty of people
+paper. The improved performance doesn't come from the CNN, it all comes from
+self-play. Remember that the 85% win rate against Pachi doesn't even use search.
+I'm sure plenty of people
 are investigating whether a similar approach works on problems besides Go.
 
 Compared to this, interfacing the neural net with search feels less
-important. There are some neat ideas here: don't try to use something heavy-duty
-in rollouts, pre-seed initial value estimates with the heavy-duty net because
-you only need to call it once per node, average the rollout value with the
-approximate value network value. And from an engineering perspective, they're
-doing some crazy asynchronous CPU + GPU architecture to always keep the machine
-busy with computation. Still, to me the story here is the unsupervised learning
-capability.
+important. There are some neat ideas here: train a special small network for
+rollouts, pre-seed initial value estimates with the heavy-duty net (which you can afford
+because you only need it once per node), and combine the approximate value from
+the policy network with the true value from the weaker rollout network.
+From an engineering perspective, they're
+doing a crazy asynchronous CPU + GPU architecture that sounds like a nightmare to
+manage. There are plenty of ideas here, but to me the story is proving the
+capability of unsupervised learning.
 
 
 Final Cavaets
 -------------------------------------------------------------------------------
 
-I'll close with the few downsides I see so far.
+I'll close with the few downsides I see on skimming the paper.
 
 * This still uses a lot of computation time. When they announced results for
 running AlphaGo on one machine, they mean a machine with 40 CPU threads and
