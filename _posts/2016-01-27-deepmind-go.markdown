@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Go: More Complicated than Go Fish"
-date:   2016-01-27 23:08:00 -0800
+title:  "Go: More Complicated Than Go Fish"
+date:   2016-01-28 03:15:00 -0800
 ---
 
-*As something "hot off the presses" (hot off the keyboard?), it's a bit unpolished.*
+*As something "hot off the presses" (hot off the keyboard?), this is a bit unpolished.*
 
 Yesterday, Google DeepMind announced [they had developed an AI called AlphaGo
 that reached expert level in Go](http://googleresearch.blogspot.com/2016/01/alphago-mastering-ancient-game-of-go.html),
@@ -162,7 +162,7 @@ there's a large enough labeled dataset to capture all the information for a prob
 Labels need to be provided by humans, so constructing large datasets takes
 a lot of manpower.
 
-By constrast, unsupervised learning is held back only by the sheer difficulty of
+By contrast, unsupervised learning is held back only by the sheer difficulty of
 learning when you don't know what the answer is supposed to be. This is an idea
 problem, not a dataset problem. It's easy to get more unsupervised data; just
 look around the world more!
@@ -188,36 +188,35 @@ manage. There are plenty of ideas here, but to me the story is proving the
 capability of unsupervised learning.
 
 
-Final Cavaets
+Final Caveats
 -------------------------------------------------------------------------------
 
 I'll close with the few downsides I see on skimming the paper.
 
 * This still uses a lot of computation time. When they announced results for
-running AlphaGo on one machine, they mean a machine with 40 CPU threads and
+running AlphaGo on one machine, they mean a machine with 48 CPUs and
 8 GPUs. The version used against the European Go champion Fan Hui runs on
 a distributed cluster of *1202 CPUs and 176 GPUs*. Let's just say this is
-still out of the reach of the average enthusiast and move on.
+out of the reach of the average enthusiast and move on.
 * The reported 5-0 record against Fan Hui was in formal games, one game per
 day. Each day, Fan also played an informal game, with shorter time controls.
-In those games, AlphaGo won 3-2. This isn't malicious reporting. By my
-understanding, both parties knew that only the formal games would count.
-* This takes a **lot** of training time. From the Methods section:
+In those games, AlphaGo won 3-2.
+* This takes a **lot** of training time. From the methods section:
 
-> Updates were applied asynchronously on 50 GPUs using DistBelief [...]
-> Training [for the supervised network] took around 3 weeks for
-> 340 million training steps.
+    > Updates were applied asynchronously on 50 GPUs using DistBelief [...]
+    > Training [for the supervised network] took around 3 weeks for
+    > 340 million training steps.
 
-Then, for self-play refinement,
-
-> The [RL policy] network was trained in this way for 10,000 mini-batches
-> of 128 games, using 50 GPUs for one day.
-
-And finally, for the value network,
-
-> The value network was trained for 50 million mini-batches of 32 positions,
-> using 50 GPUs, for one week.
-
-That adds up to *a month*, even on 50 GPUs. So, for anyone looking to try
-something similar, make sure to use a small problem, or a computing cluster,
-or both.
+    Then, for self-play refinement,
+    
+    > The [RL policy] network was trained in this way for 10,000 mini-batches
+    > of 128 games, using 50 GPUs for one day.
+    
+    And finally, for the value network,
+    
+    > The value network was trained for 50 million mini-batches of 32 positions,
+    > using 50 GPUs, for one week.
+    
+    That adds up to *a month*, even on 50 GPUs. So, for anyone looking to try
+    something similar, make sure to use a small problem, or a computing cluster,
+    or both.
