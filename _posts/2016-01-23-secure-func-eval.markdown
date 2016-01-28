@@ -254,6 +254,9 @@ bit $$0$$ or bit $$1$$, because the generating process is identical.
 
 By putting the correct gibberish into a garbled gate, we can get the
 correct gibberish out, while having no idea what the bits are like.
+This is almost there, with one exception. We want to know what the
+circuit outputs are! For the final output wires, we set $$k_i^0 = 0$$
+and $$k_i^1 = 1$$. This way, the evaluator will learn only the outputs.
 
 Putting it all together, here is how we can evaluate a garbled circuit.
 
@@ -263,3 +266,44 @@ bits.
 take an unevaluated gate.
 * Decrypt all four values for that gate. Set the output wire to the
 one successfully decrypted value.
+* Repeat until all circuit outputs are known (REWRITE)
+
+
+Putting Together The Protocol
+-----------------------------------------------------------------------
+
+The protocol will start with Alice generating the garbled circuit and
+sending it to Bob. Alice will also send the keys for her input $$x$$.
+
+However, for Bob to evaluate the garbled circuit, he needs the keys for
+his input $$y$$. One way for Bob to get his keys without sending $$y$$
+to Alice is to have Alice send both keys for each of $$y$$'s input
+wires. For example, if $$y$$ is 3 bits long, and the wires for the
+circuit are $$w_4, w_5, w_6$$, Alice could send
+
+$$
+    \{ k_4^0, k_4^1, k_5^0, k_5^1, k_6^0, k_6^1 \}
+$$
+
+to Bob. However, this has a subtle bug: **it lets Bob evaluate $$f(x,y)$$
+with Alice's $$x$$ for any $$y$$.** This could let Bob learn more
+information. Going back to the millionaire's problem, where $$x = 10$$
+and $$y = 8$$, Bob could run $$f(x,1), f(x,2), f(x,3)$$, and so on
+to find the exact wealth of Alice.
+
+Allowing Bob to run the circuit twice is insecure. So, Bob needs to get
+only the keys for $$y$$. This is where oblivious transfer comes in.
+For each wire $$w_i$$, Alice and Bob do an oblivious transfer. Alice
+offer $$k_i^0, k_i^1$$, and Bob offers $$y_i$$, where $$y_i$$ is the
+$$i$$th bit of $$y$$.
+
+This gives the final protocol.
+
+* Alice garbles the circuit, sending it to Bob
+* Alice sends her input keys
+* Alice sends Bob's input keys with oblivous transfer
+* Bob evalutes the garbled circuit, getting $$f(x,y)$$
+* Bob sends $$f(x,y)$$ back to Alice.
+
+And thus, it's possible to securely compute any function.
+
