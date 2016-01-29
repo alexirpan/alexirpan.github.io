@@ -15,10 +15,10 @@ so here's a sample:
 [MIT Technology Review](http://www.technologyreview.com/news/546066/googles-ai-masters-the-game-of-go-a-decade-earlier-than-expected/),
 [Wired](http://www.wired.com/2016/01/in-a-huge-breakthrough-googles-ai-beats-a-top-player-at-the-game-of-go/),
 [Ars Technica](http://arstechnica.com/gadgets/2016/01/googles-ai-beats-go-champion-will-now-take-on-best-player-in-the-world/),
-and [The New York Times](http://bits.blogs.nytimes.com/2016/01/27/alphabet-program-beats-the-european-human-go-champion/),
+and [The New York Times](http://bits.blogs.nytimes.com/2016/01/27/alphabet-program-beats-the-european-human-go-champion/).
 Posts from friends and famous AI researchers have been filling my news feed,
 and it's all along the lines of "Well done" or "Holy shit" or "I for one welcome our
-new robot overlords." .
+new robot overlords."
 
 Although computer Go isn't one of my main interests,
 Monte Carlo Tree Search (MCTS) is. The biggest application of MCTS is in
@@ -96,7 +96,7 @@ move predictors.
 At the end of their 2014 paper, there's a short section on combining
 their CNN with search. They didn't get very far, besides showing it was
 an obviously good idea if it could be made computationally feasible.
-Ever since that paper, it's felt like the last thing Computer Go needed was a
+Ever since that paper, it's felt like the last thing computer Go needed was a
 combination of heavy duty neural net move predictors with MCTS, done such
 that computation time didn't explode.
 
