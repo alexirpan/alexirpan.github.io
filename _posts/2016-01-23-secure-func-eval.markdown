@@ -1,37 +1,55 @@
 ---
 layout: post
-title:  "A Gentle Introduction to Secure Function Evaluation"
+title:  "A Gentle Introduction to Secure Computation"
 date:   2016-01-23 18:19:00 -0800
 ---
 
-As a final project in a theoretical cryptography course I took last semester,
-we had to give a short presentation on a crypto research paper. This blog
-post is adapted from my presentation notes. Although the proofs
-rely on a lot of background knowledge, the core ideas are very clean and
-elegant.
+In Fall 2015, I took CS 276, a graduate level introductio to theoretical
+cryptography. For the final project, I gave a short presentation on secure
+computation.
 
-Note: this field is more commonly known as secure computation, but I like
-secure function evaluation more because it's more specific.
+This blog post is adapted from my presentation notes.
+Although proving security formally relies on a lot of background knowledge,
+the core ideas are very clean, and I believe anyone with a passing interest
+in theoretical computer science can understand them.
 
 \*\*\*
 {: .centered }
 
-What is Secure Function Evaluation?
+
+What is Secure Computation?
 -------------------------------------------------------------------
 
-In secure function evaluation, we have the following setting. Alice and
-Bob are two parties. Alice has private information $$x$$, and Bob has
-private infromation $$y$$. There
-is some function $$f(x,y)$$ that both Alice and Bob want to know, but
+In secure computation, parties have some private information.
+They would like to learn the answer to a question based off everyone's
+information, while keeping their information private.
+For example, in cryptographic voting, every party
+has a private vote for a candidate. Everyone wants to know who the
+majority winner is, but everyone also wants to keep their vote secret.
+
+The guiding question of secure computation is this: **under what assumptions
+is it possible to compute functions without leaking private input?**
+This post will focus on showing any function is securely computable
+in the two party case, through Yao's garbled circuits.
+
+Problem Setting
+-------------------------------------------------------------------
+
+Following crypto tradition, Alice and Bob are two parties.
+Alice has private information $$x$$, and Bob has
+private information $$y$$. Function $$f(x,y)$$ is a public function
+that both Alice and Bob want to know, but
 neither Alice nor Bob wants the other party to learn their private inputs.
 
 PICTURE HERE
 
-The classical example of this is Yao's Millionaire Problem. In this
-problem, Alice and Bob are both very rich, and want to know who has
+The classical example from the first paper exploring this is Yao's
+Millionaire Problem. In this example,
+Alice and Bob are both very rich, and want to know who has
 more money. At the same time, it's socially unacceptable to brag about
-your wealth, so neither wants to say how much money they have. In
-this example, $$x$$ is Alice's wealth, $$y$$ is Bob's wealth, and
+your wealth, so neither wants to say how much money they have. Let
+$$x$$ be Alice's wealth, and $$y$$ be Bob's wealth. Then they want
+to securely compute
 
 $$
     f(x,y) = \begin{cases}
@@ -41,82 +59,106 @@ $$
     \end{cases}
 $$
 
-The question of secure function evaluation is this: **does there exist
-a protocol where Alice and Bob can both learn $$f(x,y)$$, and neither
-learns anything more than they should?**
+Before going any further, we first need to set up ground rules on
+what security guarantees we have. We're
+going to assume adversaries are *semi-honest*, or
+*honest-but-curious*. In the semi-honest model, Alice and Bob
+will never lie, following protocol exactly. (That's the "honest" part.)
+After they finish communicating, Alice and Bob will attempt to learn
+about the other party's input by analyzing the messages they received.
+(That's the "curious" or "semi-honest" part.)
 
-It turns out the answer is yes. Before explaining how this is doable,
-we first need to set up a few ground rules. In this protocol, we're
-going to assume adversaries are *semi-honest*, also known as
-*honest-but-curious*. In this adversary model, we assume both Alice
-and Bob follow protocol exactly (hence why it's honest). After they
-finish communicating, Alice and Bob will attempt to extract
-information based on the messages they received (hence why it's semi-honest,
-or honest-but-curious).
-
-One reasonable question is to ask why we're limiting the power of the
-adversary. Assuming neither party lies to each other sounds hopelessly
-naive. It's true that a stronger adversary gives a stronger protocol,
-but it also makes it harder to design such a protocol. Historically,
-the semi-honest protocol was proved first, and later work extended it
-to malicious adversaries. Explaining how to do that is above the scope
-of this post.
+Assuming neither party lies sounds hopelessly naive, but it's still
+tricky to show secure computation is possible for semi-honest
+adversaries. It turns out many semi-honest protocols can be extended to ones
+that are safe against lying adversaries; proving how to do that
+is above the scope of this post.
 
 
 Information Leakage
 -------------------------------------------------------------------
 
-To prove a protocol doesn't leak any additional information, we first
-need to explain what that actually means. What makes secure function
-evaluation tricky is that Alice and Bob cannot trust each other.
-Suppose there was a 3rd person, named Faith, who both Alice and Bob
-trust. Then, we have a very simple protocol.
+To prove a protocol is secure, we first need to define what it means to be
+secure.
+
+The hard part of secure computation is that Alice and Bob cannot trust
+each other. Every message sent between the two can be analyzed for
+information later. How are Alice and Bob supposed to share enough to
+evaluate $$f$$ without giving up something about their inputs?
+
+Well, let's make the problem easier.
+Suppose there was a trusted third party named Faith.
+
+PICTURE HERE
+
+With a trusted third party, secure computation is easy.
 
 * Alice sends $$x$$ to Faith
 * Bob sends $$y$$ to Faith
-* Faith computes $$f(x,y)$$, and send it back to Alice and Bob
+* Faith computes $$f(x,y)$$, and send the result back to Alice and Bob
 
 PICTURE HERE.
 
 This is called the *ideal world*, because it represents the best
-case scenario. At the end of the protocol, Alice knows $$x$$ and
-$$f(x,y)$$, while Bob knows $$y$$ and $$f(x,y)$$.
+case scenario. Note that Alice and Bob never communicate to each other
+directly. All communication goes through Faith, and Faith gives back
+only what that party should know. (That is, Faith only gives back
+$$f(x,y)$$.)
 
-There's an important subtlety here. **Even in the ideal world, Alice
-and Bob may leak information about their inputs.** For example,
-suppose $$f(x,y) = x+y$$. At the end of computation, Alice knows
-$$x$$ and $$x+y$$. By computing
+This gives the first attempt at a definition.
+
+**A computation protocol between Alice and Bob is secure if it is as
+secure as the ideal world protocol between Alice, Bob, and Faith.**
+{: .centered }
+
+This is a good first step, but now we need to look at how secure the
+ideal world protocol is.
+
+There's a very important subtlety here. **Even the ideal world can leak
+information about Alice and Bob's inputs.** Suppose we tried to securely
+compute $$f(x,y) = x+y$$. At the end of communication, Alice knows
+$$x$$ and $$x+y$$, while Bob knows $$y$$ and $$x + y$$. If Alice computes
 
 $$
-    (x+y) - x = y
+    (x+y) - x
 $$
 
-Alice can learn Bob's original input. Bob can do the same thing.
+she learns Bob's input $$y$$. Similarly, if Bob computes
 
+$$
+    (x+y) - y
+$$
+
+he learns Alice's input $$x$$. **If Alice and Bob want to compute
+$$x + y$$, no protocol can hide their original inputs.** Any secure computation
+protocol has to give Alice and Bob $$x+y$$, and that's all they need.
+
+This is an extreme example, but simiar things can happen for other functions too.
 Going back to the millionaire's problem, suppose Alice has $$10$$
 dollars and Bob has $$8$$ dollars. They securely compute who has the
-most money, and both learn Alice is richer. Now Alice knows Bob
-has less than $$10$$ dollars, and Bob knows Alice has more than
-$$8$$ dollars. However, there is still some privacy: neither knows
-the exact wealth of the other.
+most money, and both learn Alice is richer. At this point,
 
-Computing $$f(x,y)$$ may leak information, but we assume that Alice
-and Bob recognize this is a necessary evil if they want to compute
-$$f$$.
+* Alice knows she has more money than Bob. Therefore, Alice knows Bob has less than $$10$$ dollars.
+* Bob knows he has less money than Alice. Therefore, Bob knows Alice has more than $$8$$ dollars.
 
-If the ideal world is the best we can do, then we should expect the real protocol
+However, there is still some privacy: neither knows the exact wealth of the other.
+They only have upper and lower bounds on the other's wealth.
+
+Computing $$f(x,y)$$ may leak information about $$x$$ and $$y$$, but it's a
+necessary evil if Alice and Bob want to compute $$f$$.
+
+If the ideal world with Faith is the best we can do, thenthen we should expect the real protocol
 (the one where Faith doesn't exist) to act the same.
 This gives the following definition of security.
 
-**A function evaluation protocol is secure if it leaks no more
-information than the ideal world protocol.**
+**A computation protocol between Alice and Bob is secure if Alice learns
+only information computable from $$x$$ and $$f(x,y)$$, and Bob learns only
+information computable from $$y$$ and $$f(x,y)$$**
 {: .centered }
 
-(Side note: if you're familiar with zero-knowledge proofs, this
-may seem familiar. To formally prove security, you need to show
-there are simulators for both Alice and Bob that can simulate the
-entire protocol from only the information they know. I don't want
-to get into the details, and this won't show up in the later sections.)
+(Side note: if you're familiar with zero-knowledge proofs, security is formally
+defined in a similar way, using simulators. If you aren't familiar with
+zero-knowledge proofs, don't worry, this won't show up in later sections.)
 
 
 Cryptographic Primitives
@@ -154,7 +196,7 @@ Symmetric Encryption
 
 In *symmetric encryption*, there is an encryption function $$E$$
 and a decryption function $$D$$.
-For secure function evaluation, we expect $$(E, D)$$ to act like this.
+For secure computation, we expect $$(E, D)$$ to act like this.
 
 * $$E(k, m)$$ is the encryption of message $$m$$ with key $$k$$.
 * $$D(k, c)$$ is the decryption of ciphertext $$c$$ with key $$k$$.
