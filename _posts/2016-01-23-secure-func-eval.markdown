@@ -307,3 +307,51 @@ This gives the final protocol.
 
 And thus, it's possible to securely compute any function.
 
+
+Implications
+------------------------------------------------------------------------
+
+This protocol has a few nice properties, the nicest being that this uses
+a constant number of messages (or rounds). The actual network cost is big,
+because Alice needs to send the entire garbled circuit, but this means there
+is minimal connection overhead.
+
+Although this protocol is mostly a theoretical exercise, it is usable in practice.
+Current implementations can securely compute circuits with about a billion gates.
+However, you do need to build the ciruit for the evaluated function, which is its
+own can of worms.
+
+The most important part of this protocol is not its real world usability. It's
+important *because it shows secure computation is possible for arbitrary functions.*
+Before Yao's garbled circuits, it wasn't clear the problem was even solvable.
+From general secure computation, you can get many interesting corollaries.
+
+* In the circuit model of computation, there is a universal circuit $$U$$ such that
+given circuit $$C$$ and input $$x$$, $$U(C,x)$$ returns $$C(x)$$. Have Alice
+give $$C, x$$, and Bob give nothing. Bob can now securely compute $$C(x)$$,
+learning as little about $$C$$ or $$x$$ as possible. Now, Alice could have
+evaluated $$C(x)$$ by herself, because she knows both inputs. But, suppose Alice
+is a client, and Bob is a Google or Amazon datacenter. Alice can leverage
+the power of cloud computing, *without telling the cloud provider what she
+wants to compute*.
+* This is the two-party computation (2PC) case. There are protocols for the
+multiparty computation (MPC) case, which has its own useful conclusions. Suppose
+a group of $$n$$ people want to elect one of two candidates. This gives the
+function
+
+$$
+    f(x_1, x_2, \ldots, x_n) = \begin{cases}
+        0 & \text{ if more votes are for candidate} 0 \\
+        1 & \text{ if more votes are for candidate} 1
+    \end{cases}
+$$
+
+This lets the group find the majority opinion, without leaking anyone's vote.
+As you might imagine, voter privacy is a really big deal.
+* Although the millionaire problem is quite silly, there's a similar problem
+that's actually useful: electronic auctions. One common auction format is
+the Vickrey auction. Everyone submits a bid simulatenously, and whoever bid
+the highest wins. But, they only pay the second-highest bid (the reasoning being
+that it is more fair to the buyer if they pay as little above the second-highest
+bid as possible.) Secure computation lets bidders place bids secretly without
+a trusted third party.
