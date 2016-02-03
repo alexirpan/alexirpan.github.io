@@ -160,53 +160,70 @@ information computable from $$y$$ and $$f(x,y)$$**
 defined in a similar way, using simulators. If you aren't familiar with
 zero-knowledge proofs, don't worry, this won't show up in later sections.)
 
+Now that we have a definition of security, we can start constructing the
+protocol. Before doing so, we'll need to assume the existence of a few cryptographic
+primitives.
+
 
 Cryptographic Primitives
 --------------------------------------------------------------------
 
-The construction of a SFE protocol is going to rely on a few
-cryptographic primitives. Again, explaining how to construct these
-primitives is very detail heavy, and not worth getting into.
+Pretty much all of theoretical cryptography rests on assuming specific
+primitive operations are possible. For example, many things assume the existence
+of one-way functions. These functions are computable in polynomial time, but
+cannot be inverted in polynomial time. The reason the field assumes OWFs
+exist instead of proving them is because their existence is equivalent to
+proving $$P \neq NP$$, and that's, well, really really hard.
 
-There are two primitives we need: oblivious transfer, and a symmetric
-encryption scheme with a few extra properties.
+There are two primitives we need: oblivious transfer, and symmetric
+encryption with a few extra properties. For both, I do not plan to explain
+how to implement these. You'll have to assume or take it on faith that it's
+possible to do this.
+
 
 Oblivious Transfer
 ==========================================================
 
 *Oblivious transfer* is a way for one party to send information to
 the other party without knowing what they're sending. Alice has two
-messages $$m_0, m_1$$, and Bob has a bit $$b$$. In oblivious transfer
+messages $$m_0, m_1$$, and Bob has a bit $$b$$. In oblivious transfer,
 
 * Alice offers $$m_0, m_1$$
 * Bob offers $$b$$
-* Bob receives $$m_0$$ for $$b = 0$$, and $$m_1$$ for $$b = 1$$.
-  * Bob does not learn what the other message was
+* If $$b = 0$$, Bob receives $$m_0$$. Otherwise, he receives $$m_1$$. In
+either case, Bob does not learn the other message.
 * Alice does not learn which message Bob took.
 
-To use an analogy, imagine oblivious transfer as a pair of black boxes.
-Alice puts her two messages into the boxes, and gives them to Bob.
-When Bob opens one box, the other box immediately collapses and deletes
-its data.
+At the end of the protocol, Alice knows Bob took one of the messages, but
+doesn't know which one. And Bob knows Alice had two messages, but only got
+to see one.
 
-PICTURE HERE
+Again, I won't explain how to construct OT. If you want, Wikipedia has
+an example that works assuming RSA is secure. (LINK)
+
 
 Symmetric Encryption
 ===========================================================
 
 In *symmetric encryption*, there is an encryption function $$E$$
-and a decryption function $$D$$.
-For secure computation, we expect $$(E, D)$$ to act like this.
+and a decryption function $$D$$, such that
 
 * $$E(k, m)$$ is the encryption of message $$m$$ with key $$k$$.
 * $$D(k, c)$$ is the decryption of ciphertext $$c$$ with key $$k$$.
 * $$D(k, E(k, m)) = m$$, meaning the same key is used for encyrpting and
 decrypting
-* Decrypting $$E(k,m)$$ with a different key $$k'$$ results in an error.
-* Given ciphertext $$c$$, it is hard to find a pair $$(m, k)$$ such that
-encrypting $$m$$ with $$k$$ gives $$c$$.
+* Given just ciphertext $$c$$, it is hard to find a pair
+$$(m, k)$$ such that $$E(k, m) = c$$.
 
-For notation, I'll sometimes use $$E_k(m) = E(k, m)$$.
+The above is part of all standard definitions. For garbled circuits, we'll
+need one more property.
+
+* Decrypting $$E(k,m)$$ with a different key $$k'$$ results in an error.
+(In principle, an attacker could try keys until they found the one that didn't
+cause an error, but there are exponentially many keys, so this attack doesn't
+matter.)
+
+To save on notation, I'll use $$E_k(m)$$ to mean $$E(k, m)$$ from here on out.
 
 
 Yao's Garbled Circuits
