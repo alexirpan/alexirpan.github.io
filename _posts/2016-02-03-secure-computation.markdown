@@ -4,7 +4,7 @@ title:  "A Gentle Introduction to Secure Computation"
 date:   2016-02-03 18:19:00 -0800
 ---
 
-In Fall 2015, I took CS 276, a graduate level introductio to theoretical
+In Fall 2015, I took CS 276, a graduate level introduction to theoretical
 cryptography. For the final project, I gave a short presentation on secure
 computation.
 
@@ -133,7 +133,7 @@ he learns Alice's input $$x$$. **If Alice and Bob want to compute
 $$x + y$$, no protocol can hide their original inputs.** Any secure computation
 protocol has to give Alice and Bob $$x+y$$, and that's all they need.
 
-This is an extreme example, but simiar things can happen for other functions too.
+This is an extreme example, but similar things can happen for other functions too.
 Going back to the millionaire's problem, suppose Alice has $$10$$
 dollars and Bob has $$8$$ dollars. They securely compute who has the
 most money, and both learn Alice is richer. At this point,
@@ -147,7 +147,7 @@ They only have upper and lower bounds on the other's wealth.
 Computing $$f(x,y)$$ may leak information about $$x$$ and $$y$$, but it's a
 necessary evil if Alice and Bob want to compute $$f$$.
 
-If the ideal world with Faith is the best we can do, thenthen we should expect the real protocol
+If the ideal world with Faith is the best we can do, then we should expect the real protocol
 (the one where Faith doesn't exist) to act the same.
 This gives the following definition of security.
 
@@ -210,7 +210,7 @@ and a decryption function $$D$$, such that
 
 * $$E(k, m)$$ is the encryption of message $$m$$ with key $$k$$.
 * $$D(k, c)$$ is the decryption of ciphertext $$c$$ with key $$k$$.
-* $$D(k, E(k, m)) = m$$, meaning the same key is used for encyrpting and
+* $$D(k, E(k, m)) = m$$, meaning the same key is used for encrypting and
 decrypting
 * Given just ciphertext $$c$$, it is hard to find a pair
 $$(m, k)$$ such that $$E(k, m) = c$$.
@@ -325,7 +325,7 @@ $$
     \end{array}
 $$
 
-Decrypting the two remaning messages with $$k_2^1$$ gives
+Decrypting the two remaining messages with $$k_2^1$$ gives
 
 $$
     \begin{array}{c}
@@ -349,16 +349,16 @@ here's the intuition.
 * For every wire, we randomly generate $$k_i^0$$ and $$k_i^1$$.
 Both keys are generated independently, so learning $$k_i^0$$ tells you
 nothing about $$k_i^1$$, and vice versa. It also doesn't tell you
-whether your key repesents bit $$0$$ or $$1$$; the only one who knows
+whether your key represents bit $$0$$ or $$1$$; the only one who knows
 that is the person who makes the garbled circuit.
 * When evaluating each garbled gate, every garbled table will have
-exactly 4 values. Of those 4, exactly 2 are decyrptable by the first key,
+exactly 4 values. Of those 4, exactly 2 are decryptable by the first key,
 and exactly 1 of those 2 is decryptable by the second. So, given just
 the garbled table, you cannot tell whether the original gate was an
 AND gate or an OR gate.
 
 
-By giving a garbled circuit the correct input gibberish, we can evalute each
+By giving a garbled circuit the correct input gibberish, we can evaluate each
 logic gate, seeing gibberish on every intermediate wire. The only meaningful
 messages we see are the final output bits. Thus, Bob can
 evaluate $$C$$ without exposing any intermediate values, as long as Bob
@@ -395,8 +395,8 @@ This gives the final protocol.
 * Alice garbles the circuit, sending it to Bob
 * Alice sends the keys for her input wires.
 * For each of Bob's input wires, Alice sends Bob the correct input
-key with oblivous transfer
-* Bob evalutes the garbled circuit, getting $$f(x,y)$$
+key with oblivious transfer
+* Bob evaluates the garbled circuit, getting $$f(x,y)$$
 * Bob sends $$f(x,y)$$ back to Alice.
 
 And now Alice and Bob can learn whose richer, without publicizing their
@@ -426,7 +426,7 @@ given circuit $$C$$ and input $$x$$, $$U(C,x)$$ returns $$C(x)$$. Have Alice
 give $$C, x$$, and Bob give nothing. Bob can now securely compute $$C(x)$$,
 learning as little about $$C$$ or $$x$$ as possible. Now, Alice could have
 evaluated $$C(x)$$ by herself, because she knows both inputs. But, suppose Alice
-is a client, and Bob is a Google or Amazon datacenter. Alice can leverage
+is a client, and Bob is a Google or Amazon data center. Alice can leverage
 the power of cloud computing, *without telling the cloud provider what she
 wants to compute*.
 * This is the two-party computation (2PC) case. There are protocols for the
@@ -445,7 +445,7 @@ This lets the group find the majority opinion, without leaking anyone's vote.
 As you might imagine, voter privacy is a really big deal.
 * Although the millionaire problem is quite silly, there's a similar problem
 that's actually useful: electronic auctions. One common auction format is
-the Vickrey auction. Everyone submits a bid simulatenously, and whoever bid
+the Vickrey auction. Everyone submits a bid simultaneously, and whoever bid
 the highest wins. But, they only pay the second-highest bid (the reasoning being
 that it is more fair to the buyer if they pay as little above the second-highest
 bid as possible.) Secure computation lets bidders place bids secretly without
