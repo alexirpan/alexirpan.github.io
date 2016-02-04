@@ -229,38 +229,53 @@ To save on notation, I'll use $$E_k(m)$$ to mean $$E(k, m)$$ from here on out.
 Yao's Garbled Circuits
 ------------------------------------------------------------------------
 
+To prove an arbitrary function is securely computable, we need a proof method
+that is independent of the function. There are infinitely many computable
+functions, so trying to do anything on a case by case based is doomed
+to failure.
+
+The solution is to prove things based on a specific model of computation.
+For instance, every computable function is representable by a Turing machine.
+If we showed a Turing machine can be computed securely, then every computable
+function can be computed securely. It turns out the easiest model of
+computation to prove security for is the circuit model.
+
 Garbled circuits were the first construction showing secure computation
 was possible. They were first developed by Yao in (CHECK).
 
-Any function $$f$$ has a corresponding circuit $$C$$ which evaluates
-it. Every circuit $$C$$ is made up of logic gates, like AND gates, OR gates,
-NOT gates, and so on. These gates are connected by wires, which take
-values $$0$$ or $$1$$.
+For any function $$f$$, there is some circuit $$C$$ that evaluates it.
+Every circuit $$C$$ is made up of logic gates, like AND gates, OR gates,
+NOT gates, etc. These gates are connected by wires. Some are input wires,
+and some are output wires. When given input, the logic gates take their
+inputs, compute their outputs, and send them to the next gate, until
+all output wires are decided.
 
 PICTURE HERE
 
-We could have Alice send circuit $$C$$ and input $$x$$ to Bob.
-Bob could then set the input wires for $$x$$, set the input wires for his own input $$y$$, then
-evalute the logic gates of the circuit until all outputs were found.
-However, this obviously lets Bob learn what $$x$$ is.
+Given the circuit $$C$$ for $$f$$, Alice could send $$C$$ and input bits
+$$x$$ to Bob. Bob could then set the input wires for $$x$$, add his own
+input $$y$$, and evaluate $$C$$.
+However, this obviously lets Bob learn what $$x$$ is, and isn't secure.
 
 This is where garbling comes in. Instead of sending $$C$$, Alice will
-send a garbled circuit $$G(C)$$. This garbled circuit will compute the
-same thing as $$C$$ while hiding information about its computation.
+send a garbled circuit $$G(C)$$. This garbled circuit will return the
+same outputs as $$C$$, but can be computed by Bob while
+hiding information about its computation.
 
 Let $$W = \{ w_1, w_2, \cdots, w_n \}$$ be the set of wires in the circuit.
 For each wire $$w_i$$, generate two random encryption keys
 $$k_i^0$$ and $$k_i^1$$, which will represent $$0$$ and $$1$$.
 
 A garbled circuit is made of *garbled logic gates*. Garbled gates act
-the same as regular logic gates, except they use the sampled encryption
-keys to represent bits.
+the same as regular logic gates, except they operate on sampled encryption
+keys instead of bits.
 
-For example, suppose we have an OR gate. It has input wires $$w_1,w_2$$
-and output wire $$w_3$$. The inputs are bits $$0$$ or $$1$$, and the gate
-outputs $$0$$ or $$1$$.
+To give a concrete example, take an OR gate.
 
 PICTURE HERE
+
+It has input wires $$w_1,w_2$$, and output wire $$w_3$$. The gate table
+is
 
 $$
     \begin{array}{ccc}
@@ -274,9 +289,12 @@ $$
 
 REDO THIS TABLE
 
-The garbled OR gate instead takes $$k_1^0, k_1^1, k_2^0, k_2^1$$ as input,
-and outputs $$k_3^0$$ or $$k_3^1$$. This is done by creating the following
-4 values.
+The garbled OR gate instead takes $$k_1^0, k_1^1$$ for $$w_1$$, and
+$$k_2^0, k_2^1$$ for $$w_2$$. The output is $$k_3^0$$ or $$k_3^1$$,
+and the output returned is based on what the gate is supposed to return.
+For example, because $$0 OR 1 = 1$$, inputs $$k_1^0, k_2^1$$ should
+give output $$k_3^1$$. Doing this for all input pairs gives
+these 4 values.
 
 $$
     \begin{array}{c}
@@ -287,48 +305,67 @@ $$
     \end{array}
 $$
 
-For each pair of input bits, lookup the key for what the output bit should be,
-and encrypt it with the keys for both input bits. (This is also known as the
-*garbled table* for the logic gate.)
-
+This is known as the *garbled table* for the logic gate.
 The garbled table has a few nice properties.
 
-* If the receiver has no secret keys, the four values will all be gibberish,
+* If the receiver has no secret keys, the 4 values will all be gibberish,
 because they have been encrypted.
-* If the receiver has the secret keys for the input bits, they can decrypt
-exactly one of the four values. (For example, if they have $$k_1^0$$ and
-$$k_2^1$$, they can only fully decrypt the $$E_{k_1^0}(E_{k_2^1}(k_3^1))$$
-entry.) Furthermore, every other value will decrypt into an error, because
-of assumptions on the encryption scheme.
-* The one decrypted value holds the key representing the correct output
-bit.
+* If the receiver has one secret key for each wire, they can get the correct output
+by attempting to decrypt all 4 values. Going back to the $$0 OR 1 = 1$$
+example, the receiver has $$k_1^0, k_2^1$$. They first decrypt with
+$$k_1^0$$. They'll be able to decrypt exactly two values, and will fail
+on the rest because decrypting with the wrong key gives an error.
 
-And most importantly,
+$$
+    \begin{array}{c}
+        E_{k_2^0}(k_3^0)) \\
+        E_{k_2^1}(k_3^1)) \\
+        \text{error} \\
+        \text{error}
+    \end{array}
+$$
 
-* For every wire, we randomly generate the keys $$k_i^0$$ and $$k_i^1$$.
-Both keys are sampled from the same probability distribution. Thus,
-given just one key, there is no way to predict the value of the other key.
-And, given just one key, there is no way to tell whether it represents
-bit $$0$$ or bit $$1$$, because the generating process is identical.
+Decrypting the two remaning messages with $$k_2^1$$ gives
 
-By putting the correct gibberish into a garbled gate, we can get the
-correct gibberish out, while having no idea what the bits are like.
-This is almost there, with one exception. We want to know what the
-circuit outputs are! For the final output wires, we set $$k_i^0 = 0$$
-and $$k_i^1 = 1$$. This way, the evaluator will learn only the outputs.
+$$
+    \begin{array}{c}
+        \text{error} \\
+        k_3^1 \\
+        \text{error} \\
+        \text{error}
+    \end{array}
+$$
 
-Putting it all together, here is how we can evaluate a garbled circuit.
+So, exactly one value is decryptable, and the final message received
+is the correct key $$k_3^1$$. That key can then be used to decrypt the next
+gate wire 3 leads to. The one exception is if the output wire
+of a gate is an output wire of the circuit. In that case, instead of
+generating a random key, set $$k_i^0 = 0$$ and $$k_i^1 = 1$$. (This makes
+sure the output is public.)
 
-* We are given a garbled circuit and the keys for the correct input
-bits.
-* While there is an unevaluated gate where both input keys are known,
-take an unevaluated gate.
-* Decrypt all four values for that gate. Set the output wire to the
-one successfully decrypted value.
-* Repeat until all circuit outputs are known (REWRITE)
+This garbled circuit is secure. I don't want to prove it formally, but
+here's the intuition.
+
+* For every wire, we randomly generate $$k_i^0$$ and $$k_i^1$$.
+Both keys are generated independently, so learning $$k_i^0$$ tells you
+nothing about $$k_i^1$$, and vice versa. It also doesn't tell you
+whether your key repesents bit $$0$$ or $$1$$; the only one who knows
+that is the person who makes the garbled circuit.
+* When evaluating each garbled gate, every garbled table will have
+exactly 4 values. Of those 4, exactly 2 are decyrptable by the first key,
+and exactly 1 of those 2 is decryptable by the second. So, given just
+the garbled table, you cannot tell whether the original gate was an
+AND gate or an OR gate.
 
 
-Putting Together The Protocol
+By giving a garbled circuit the correct input gibberish, we can evalute each
+logic gate, seeing gibberish on every intermediate wire. The only meaningful
+messages we see are the final output bits. Thus, Bob can
+evaluate $$C$$ without exposing any intermediate values, as long as Bob
+gets the right input keys.
+
+
+Input Key Transfer
 -----------------------------------------------------------------------
 
 The protocol will start with Alice generating the garbled circuit and
@@ -337,34 +374,33 @@ sending it to Bob. Alice will also send the keys for her input $$x$$.
 However, for Bob to evaluate the garbled circuit, he needs the keys for
 his input $$y$$. One way for Bob to get his keys without sending $$y$$
 to Alice is to have Alice send both keys for each of $$y$$'s input
-wires. For example, if $$y$$ is 3 bits long, and the wires for the
-circuit are $$w_4, w_5, w_6$$, Alice could send
+wires to Bob. That way, Bob can pick the keys he needs to run
+the circuit, and Alice doesn't know which key Bob picked.
 
-$$
-    \{ k_4^0, k_4^1, k_5^0, k_5^1, k_6^0, k_6^1 \}
-$$
-
-to Bob. However, this has a subtle bug: **it lets Bob evaluate $$f(x,y)$$
+However, this has a subtle bug: **it lets Bob evaluate $$f(x,y)$$
 with Alice's $$x$$ for any $$y$$.** This could let Bob learn more
 information. Going back to the millionaire's problem, where $$x = 10$$
-and $$y = 8$$, Bob could run $$f(x,1), f(x,2), f(x,3)$$, and so on
-to find the exact wealth of Alice.
+and $$y = 8$$, Bob could run $$f(x,1), f(x,2), f(x,3), \cdots$$, until
+he found the threshold where Bob's input is larger. That lets Bob
+find Alice's exact wealth, which breaks security.
 
-Allowing Bob to run the circuit twice is insecure. So, Bob needs to get
-only the keys for $$y$$. This is where oblivious transfer comes in.
-For each wire $$w_i$$, Alice and Bob do an oblivious transfer. Alice
-offer $$k_i^0, k_i^1$$, and Bob offers $$y_i$$, where $$y_i$$ is the
-$$i$$th bit of $$y$$.
+Bob should only be able to run the circuit for his fixed $$y$$, and
+nothing else. This is why oblivious transfer is necessary. With oblivious
+transfer, Bob can ask for exactly the keys he needs for $$y$$. Alice
+can provide the keys without knowing which one Bob takes, and Bob cannot
+take more keys than he needs for exactly one evaluation.
 
 This gives the final protocol.
 
 * Alice garbles the circuit, sending it to Bob
-* Alice sends her input keys
-* Alice sends Bob's input keys with oblivous transfer
+* Alice sends the keys for her input wires.
+* For each of Bob's input wires, Alice sends Bob the correct input
+key with oblivous transfer
 * Bob evalutes the garbled circuit, getting $$f(x,y)$$
 * Bob sends $$f(x,y)$$ back to Alice.
 
-And thus, it's possible to securely compute any function.
+And now Alice and Bob can learn whose richer, without publicizing their
+wealth, and with no trusted third parties.
 
 
 Implications
