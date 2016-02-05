@@ -13,9 +13,6 @@ Formal proofs of security rely on a lot of background knowledge,
 but the core ideas are very clean, and I believe anyone interested
 in theoretical computer science can understand them.
 
-\*\*\*
-{: .centered }
-
 
 What is Secure Computation?
 -------------------------------------------------------------------
@@ -48,10 +45,10 @@ private information $$y$$. Function $$f(x,y)$$ is a public function
 that both Alice and Bob want to know, but
 neither Alice nor Bob wants the other party to learn their private inputs.
 
-PICTURE HERE
+![problem setup](/public/secure-comp/setup.png)
+{: .centered }
 
-The classical example is Yao's
-Millionaire Problem.
+The classical example is Yao's Millionaire Problem.
 Alice and Bob want to know who has more money.
 It's socially unacceptable to brag about
 your wealth, so neither wants to say how much money they have. Let
@@ -94,17 +91,15 @@ send to each other.
 
 For now, secure computation looks tricky, so let's make the problem easier.
 Suppose there was a trusted third party named Faith.
-
-PICTURE HERE
-
-With a trusted third party, Alice and Bob can compute $$f(x,y)$$ without
+With Faith, Alice and Bob could compute $$f(x,y)$$ without
 ever talking to one another.
 
 * Alice sends $$x$$ to Faith
 * Bob sends $$y$$ to Faith
 * Faith computes $$f(x,y)$$, and send the result back to Alice and Bob
 
-PICTURE HERE.
+![ideal world](/public/secure-comp/ideal.png)
+{: .centered }
 
 This is called the *ideal world*, because it represents the best
 case scenario. All communication goes through Faith, who never reveals
@@ -188,23 +183,24 @@ construct them. You'll have to take it on faith that these exist.
 Oblivious Transfer
 ==========================================================
 
-*Oblivious transfer* is a special case of secure computation.
+*Oblivious transfer* (abbreviated OT) is a special case of secure computation.
 Alice has two messages $$m_0, m_1$$. Bob has a bit $$b$$.
-In oblivious transfer,
+In oblivious transfer, imagine we have a black box that works like this.
 
-* Alice offers $$m_0, m_1$$
-* Bob offers $$b$$
-* If $$b = 0$$, Bob receives $$m_0$$. Otherwise, he receives $$m_1$$. In
-both cases, Bob does not learn the message he didn't take.
-* Alice does not learn which message Bob took. She only learns that Bob
-took one of them.
+* Alice gives $$m_0, m_1$$
+* Bob gives $$b$$
+* If $$b = 0$$, Bob gets $$m_0$$. Otherwise, he gets $$m_1$$. In
+both cases, Bob does not learn the other message.
+* Alice does not learn which message Bob received.
+She only learns that Bob got one of them.
 
-With oblivious transfer, Alice can send a message to Bob without knowing
-which message Bob picked, and Bob can choose between messages while only
-learning about the message he eventually picks.
+![Oblivious transfer](/public/secure-comp/ot.png)
+{: .centered }
 
-Again, I won't explain the details, but [Wikipedia has a good example
-of oblivious transfer based on RSA](https://en.wikipedia.org/wiki/Oblivious_transfer#1-2_oblivious_transfer).
+Letting Alice send messages without knowing which message was finally
+received will be key to the protocol. OT is implementable without
+this black box, but I don't want to get into the details.
+If you're curious. [Wikipedia has a good example based on RSA](https://en.wikipedia.org/wiki/Oblivious_transfer#1-2_oblivious_transfer).
 
 
 Symmetric Encryption
@@ -242,16 +238,15 @@ computation makes the construction much easier.
 For any function $$f(x,y)$$, there is some circuit $$C$$ such that
 $$C(x,y)$$ gives the same output.
 That circuit $$C$$ is made up of logic gates and wires connecting them.
-Each logic gate has two input wires and one output wire, computing a simple Boolean function,
-like AND or OR. Those outputs are then fed as inputs to another gate
-in the circuit.
-
-PICTURE HERE
+Each logic gate has two input wires and one output wire, and computes
+a simple Boolean function, like AND or OR.
 
 The wires in a circuit can be divided into three categories: inputs for
 the circuit, outputs for the circuit, and intermediate wires between gates.
 
-PICTURE?
+![example circuit](/public/secure-comp/circuit.png)
+{: .centered }
+
 
 
 Garbled Circuits
@@ -264,6 +259,9 @@ Here is a very obviously insecure protocol for computing $$f(x,y)$$
 * Bob takes $$x$$, adds his input $$y$$, and evaluates the circuit to
 get $$f(x,y)$$
 * Bob sends $$f(x,y)$$ back to Alice.
+
+![First protocol](/public/secure-comp/protocol1.png)
+{: .centered }
 
 This works, but Alice has to send $$x$$ to Bob.
 
@@ -284,7 +282,8 @@ keys instead of bits.
 To give a concrete example, suppose we want to garble an OR gate.
 It has input wires $$w_1,w_2$$, and output wire $$w_3$$.
 
-PICTURE HERE
+![OR gate](/public/secure-comp/or.png)
+{: .centered }
 
 The logic gate table is
 
@@ -380,31 +379,33 @@ Here's the new protocol, with garbled circuits
 evaluates $$G(C)$$ to get $$f(x,y)$$
 * Bob sends $$f(x,y)$$ back to Alice.
 
-Again, this is a good step, but there's still an issue. How does Bob
+![Second protocol](/public/secure-comp/protocol2.png)
+{: .centered }
+
+This is a good step, but there's still a problem. How does Bob
 get the input keys for $$y$$? Only Alice knows the keys created for each wire.
 Bob could give Alice his input $$y$$ to get the right keys, but then
-Alice learns Bob's input.
+Alice would learn $$y$$.
 
 One solution is to have Alice send both keys for each of $$y$$'s input
-wires to Bob. For each wire, Bob can pick the key corresponding to his
-input $$y$$. This lets Bob run the circuit without giving Alice his input
-bits.
+wires to Bob. For each wire, Bob can then pick the key corresponding to
+the correct bit of $$y$$. That way, Bob doesn't have to give
+Alice $$y$$, but can still run the circuit.
 
 However, this has a subtle bug: by giving Bob both keys for his input
-wires, **Bob can evaluate $$f(x,y)$$
-with Alice's $$x$$ for an arbitrary $$y$$.**
-This lets Bob get more information.
+wires, **Bob can run the circuit with an arbitrary $$y$$.**
+Letting Bob evaluate $$f(x,y)$$ many times gives Bob more information.
 Going back to the millionaire's problem, let $$x = 10$$
-and $$y = 8$$. At the end, Bob knows $$x > 8$$. If Bob later evaluates
-$$f(x, 9)$$, he'll learn $$x > 9$$, which is more information than
-he should know.
+and $$y = 8$$. At the end, Bob learns Alice is richer, meaning $$x > 8$$.
+But, if he later evaluate $$f(x, 9)$$, he'll learn $$x > 9$$, which is more
+than he should know.
 
-Thus, to be secure, Bob should only be able to run $$G(C)$$ on exactly
-$$x,y$$. To do so, he needs to get only the keys for $$y$$, without
-Alice learning which keys he wants. If only there was a way for Alice to
-obliviously transfer that data...
+Thus, to be secure, Bob should only get to run the circuit on exactly
+$$x,y$$. To do so, he needs to get the keys for $$y$$, and only the keys
+for $$y$$, without Alice learning which keys he wants. If only there was a way
+for Alice to obliviously transfer those keys.
 
-So yes, that's why oblivious transfer is necessary. using oblivious transfer
+Alright, yes, that's why we need oblivious transfer. Using oblivious transfer
 to fill in the gap, we get the final protocol.
 
 * Alice garbles circuit $$C$$ to get garbled circuit $$G(C)$$
@@ -415,7 +416,10 @@ Alice sends $$k_{i,y_i}$$ to Bob.
 * With all input keys, Bob can evaluate the circuit to get $$f(x,y)$$
 * Bob sends $$f(x,y)$$ back to Alice.
 
-And now Alice and Bob can compute $$f(x,y)$$ without leaking their
+![Final protocol](/public/secure-comp/protocol3.png)
+{: .centered }
+
+This lets Alice and Bob can compute $$f(x,y)$$ without leaking their
 information and without trusted third parties.
 
 
