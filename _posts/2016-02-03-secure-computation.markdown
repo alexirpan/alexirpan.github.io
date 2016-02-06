@@ -9,7 +9,7 @@ cryptography. For the final project, I gave a short presentation on secure
 computation.
 
 This blog post is adapted from my presentation notes.
-Formal proofs of security rely on a lot of background knowledge,
+The formal proofs of security rely on a lot of background knowledge,
 but the core ideas are very clean, and I believe anyone interested
 in theoretical computer science can understand them.
 
@@ -17,9 +17,9 @@ in theoretical computer science can understand them.
 What is Secure Computation?
 -------------------------------------------------------------------
 
-In secure computation, each party have some private information.
+In secure computation, each party have some private data.
 They would like to learn the answer to a question based off everyone's
-information. In cryptographic voting, this is the majority opinion.
+data. In voting, this is the majority opinion.
 In an auction, this is the winning bid. However, they also want to maintain
 as much privacy as possible. Voters want to keep their votes secret,
 and bidders don't want to publicize how much they're willing to pay.
@@ -32,8 +32,8 @@ securely compute functions on private inputs without leaking information
 about those inputs?**
 
 This post will focus on the two party case, showing that every function
-is securely computable with the right computational assumptions. We'll do
-this through Yao's garbled circuits.
+is securely computable with the right computational assumptions. We'll show
+this with Yao's garbled circuits.
 
 
 Problem Setting
@@ -43,7 +43,7 @@ Following crypto tradition, Alice and Bob are two parties.
 Alice has private information $$x$$, and Bob has
 private information $$y$$. Function $$f(x,y)$$ is a public function
 that both Alice and Bob want to know, but
-neither Alice nor Bob wants the other party to learn their private inputs.
+neither Alice nor Bob wants the other party to learn their input.
 
 ![problem setup](/public/secure-comp/setup.png)
 {: .centered }
@@ -64,19 +64,18 @@ $$
 
 lets Alice and Bob learn who is richer.
 
-Before going any further, we need to set up ground rules on
-what security guarantees we want to acheive. We're
-going to assume adversaries are *semi-honest*, also known as
-*honest-but-curious*. In the semi-honest model, Alice and Bob
-never lie, following the specified protocol exactly. (That's the "honest" part.)
-However, after they finish communicating, Alice and Bob can go back over the
-messages received, and try to extract information about the other person's input.
-(That's the "curious" or "semi-honest" part.)
+Before going any further, I should explain what security guarantees we're
+trying to acheive. We're going to make something secure against *semi-honest*
+adversaries, also known as *honest-but-curious*. In the semi-honest model, Alice and Bob
+never lie, following the specified protocol exactly.
+However, after the protocol, Alice and Bob will analyze the messages received
+to try to extract information about the other person's input.
 
-Assuming neither party lies sounds naive, but it's good enough for some settings.
+Assuming neither party lies sounds naive, but in some settings it's good enough.
 From a historical perspective, Yao's garbled circuits were the first protocol
-that showed secure computation was possible at all. They form a stepping stone
-towards protocols safe against malicious adversaries; explaining those protocols
+that showed secure computation was even possible.
+Often, semi-honest protocols form a stepping stone towards the malicious case, where
+we allow lying. Explaining protocols for malicious adversaries
 is above the scope of this post.
 
 
@@ -87,12 +86,12 @@ To prove a protocol is secure, we first need to define what security means.
 What makes secure computation hard is that Alice and Bob cannot trust
 each other. Every message can be analyzed for
 information later, so they have to be very careful in what they choose to
-send to each other.
+send to one another.
 
-For now, secure computation looks tricky, so let's make the problem easier.
+Let's make the problem easier.
 Suppose there was a trusted third party named Faith.
-With Faith, Alice and Bob could compute $$f(x,y)$$ without
-ever talking to one another.
+With Faith, Alice and Bob could compute $$f(x,y)$$ without directly
+communicating.
 
 * Alice sends $$x$$ to Faith
 * Bob sends $$y$$ to Faith
@@ -103,18 +102,18 @@ ever talking to one another.
 
 This is called the *ideal world*, because it represents the best
 case scenario. All communication goes through Faith, who never reveals
-input received to the other party. She only replies with what the parties
+the input she received. She only replies with what the parties
 want to know, $$f(x,y)$$.
 
-If this is the best case scenario, we should try to define security by how close
-we get to the optimum. This gives the following.
+If this is the best case scenario, we should define security by how close
+we get to that best case. This gives the following.
 
 **A protocol between Alice and Bob is secure if it is as
 secure as the ideal world protocol between Alice, Bob, and Faith.**
 {: .centered }
 
-This is a good first step, but now we need to look at how secure the
-ideal world protocol is.
+To make this more precise, we need to analyze the ideal world's
+security.
 
 Suppose we securely computed $$f(x,y) = x+y$$ in the ideal world.
 At the end of communication, Alice knows
@@ -130,11 +129,13 @@ $$
     (x+y) - y
 $$
 
-he learns Alice's input $$x$$. **Even the ideal world can leak information,
-possibly even the entire input.** If they want to know $$f(x,y) = x + y$$,
-neither Alice nor Bob can hide $$x$$ or $$y$$.
+he learns Alice's input $$x$$. **Even the ideal world can leak information.**
+In an extreme case like this, possibly even the entire input!
+If Alice and Bob want to know $$f(x,y) = x + y$$, they have to give up
+any hope of privacy.
 
-This is an extreme example, but most functions leak *something*.
+This is an extreme example, but most functions leak something about
+each party.
 Going back to the millionaire's problem, suppose Alice has $$10$$
 dollars and Bob has $$8$$ dollars. They securely compute who has the
 most money, and learn Alice is richer. At this point,
@@ -144,18 +145,17 @@ most money, and learn Alice is richer. At this point,
 
 However, there is still some privacy: neither knows the exact wealth of the other.
 
-If the ideal world with Faith is the best we can do, then we should expect a
-world without Faith to act the same. $$f(x,y)$$ must be given to Alice and
-Bob, giving the final definition.
+Since $$f(x,y)$$ must be given to Alice and Bob, the best we can do is
+learn nothing more than what was learnable from $$f(x,y)$$. This
+gives the final definition.
 
-**A computation protocol between Alice and Bob is secure if Alice learns
+**A protocol between Alice and Bob is secure if Alice learns
 only information computable from $$x$$ and $$f(x,y)$$, and Bob learns only
 information computable from $$y$$ and $$f(x,y)$$**
 {: .centered }
 
-(Side note: this is an informal defintion. The true definitions use
-simulators, like zero-knowledge proofs. Don't worry if this doesn't make sense,
-it won't show up in later sections.)
+(Side note: if you've seen zero-knowledge proofs, this may seem familiar.
+If you haven't, don't worry, it won't show up in later section.)
 
 Armed with a security definition, we can start constructing the
 protocol. Before doing so, we'll need a few cryptographic assumptions.
@@ -164,20 +164,23 @@ protocol. Before doing so, we'll need a few cryptographic assumptions.
 Cryptographic Primitives
 --------------------------------------------------------------------
 
-All of theoretical cryptography rests on assuming there exist problems that
-cannot be solved in polynomial time. These form the cryptographic primitives,
-which can be used when constructing protocols.
+All of theoretical cryptography rests on assuming some problems are harder
+than other problems. These problems form the cryptographic primitives,
+which can be used for constructing protocols.
 
-For example, one common cryptographic
-primitive is one-way functions, or OWFs. These functions are easy to compute, but
-hard to invert. We have to assume OWFs exist because proving they exist would
-let us prove $$P \neq NP$$, and that's, well, a really hard problem, to put it
-mildly.
+For example, one ryptographic primitive is the one-way function. Abbreviated
+OWF, these functions are easy to compute, but hard to invert, where easy
+means "doable in polynomial time" and hard means "not doable in polynomial
+time." Assuming OWFs exist, we can create secure encryption, pseudorandom
+number generators, and many other useful things.
+
+No one has proved one-way functions exist, because proving that would
+prove $$P \neq NP$$, and that's, well, a really hard problem, to put it
+mildly. However, there are several functions that people believe to be
+one-way, which are the ones used in practice.
 
 For secure computation, we need two primitives: oblivious transfer, and symmetric
-encryption. For both, we have candidates for how to implement them, but we cannot
-prove their security, and I don't want to get into the details of how to
-construct them. You'll have to take it on faith that these exist.
+encryption.
 
 
 Oblivious Transfer
@@ -185,38 +188,38 @@ Oblivious Transfer
 
 *Oblivious transfer* (abbreviated OT) is a special case of secure computation.
 Alice has two messages $$m_0, m_1$$. Bob has a bit $$b$$.
-In oblivious transfer, imagine we have a black box that works like this.
+Oblivious transfer is black box method where
 
 * Alice gives $$m_0, m_1$$
-* Bob gives $$b$$
+* Bob gives bit $$b$$, 0 or 1
 * If $$b = 0$$, Bob gets $$m_0$$. Otherwise, he gets $$m_1$$. In
 both cases, Bob does not learn the other message.
 * Alice does not learn which message Bob received.
-She only learns that Bob got one of them.
+She only knows Bob got one of them.
 
 ![Oblivious transfer](/public/secure-comp/ot.png)
 {: .centered }
 
-Letting Alice send messages without knowing which message was finally
-received will be key to the protocol. OT is implementable without
+Letting Alice send messages without knowing which message was
+received will be key to the secure computation protocol. OT is implementable without
 this black box, but I don't want to get into the details.
-If you're curious. [Wikipedia has a good example based on RSA](https://en.wikipedia.org/wiki/Oblivious_transfer#1-2_oblivious_transfer).
+If you're curious, [Wikipedia has a good example based on RSA](https://en.wikipedia.org/wiki/Oblivious_transfer#1-2_oblivious_transfer).
 
 
 Symmetric Encryption
 ===========================================================
 
-*Symmetric encryption* allows two people to send messages that cannot
-be decrypted without the secret key. There is an encryption function $$E$$
-and a decryption function $$D$$, such that
+*Symmetric encryption* allows two people to send encrypted messages that cannot
+be decrypted without the secret key. Formally, a symmetric encryption scheme
+is a pair of functions, encrypter $$E$$ and decrypter $$D$$, such that
 
 * $$E(k, m)$$ is the encryption of message $$m$$ with key $$k$$.
 * $$D(k, c)$$ is the decryption of ciphertext $$c$$ with key $$k$$.
-* Decrypting with the same key used to encrypt gives the original message, or
+* Decrypting with the same secret key gives the original message, or
 $$D(k, E(k, m)) = m$$,
 * Given just ciphertext $$c$$, it is hard to find a key $$k$$ and message $$m$$
-such that $$E(k, m) = c$$. (In cryptography, hard means
-not solvable in polynomial time.)
+such that $$E(k, m) = c$$. (Where again, hard means not solvable in polynomial
+time.)
 
 For garbled circuits, we'll need one more property.
 
@@ -224,16 +227,25 @@ For garbled circuits, we'll need one more property.
 
 To save on notation, I'll use $$E_k(m)$$ to mean $$E(k, m)$$ from here on out.
 
+with all that out of the way, we can finally start talking about the protocol
+itself.
 
-A Quick Circuit Primer
+
+Yao's Garbled Circuits
 ------------------------------------------------------------------------
 
-Yao's garbled circuits were the first protocol showing every function
-was securely computable. They were first developed in 1982.
+Developed in 1986, Yao's garbled circuits are the first construction showing
+functions were securely computable. Andrew Yao is often credited as
+the person who started the entire subfield of secure computation.
 
-To prove every function is securely computable, we instead prove every
-circuit is securely computable. Working with the circuit model of
+To prove every function is securely computable, Yao proved every
+circuit was securely computable. Every function can be converted to an
+equivalent circuit, and working in the circuit model of
 computation makes the construction much easier.
+
+
+A Quick Circuit Primer
+========================================================================
 
 For any function $$f(x,y)$$, there is some circuit $$C$$ such that
 $$C(x,y)$$ gives the same output.
@@ -248,15 +260,14 @@ the circuit, outputs for the circuit, and intermediate wires between gates.
 {: .centered }
 
 
-
-Garbled Circuits
-------------------------------------------------------------------------
+Garbling Circuits
+========================================================================
 
 Here is a very obviously insecure protocol for computing $$f(x,y)$$
 
 * Alice sends circuit $$C$$ to Bob.
 * Alice sends her input $$x$$ to Bob.
-* Bob takes $$x$$, adds his input $$y$$, and evaluates the circuit to
+* Bob evaluates the circuit to
 get $$f(x,y)$$
 * Bob sends $$f(x,y)$$ back to Alice.
 
@@ -265,13 +276,14 @@ get $$f(x,y)$$
 
 This works, but Alice has to send $$x$$ to Bob.
 
-This is where garbling comes in. Instead of sending $$C$$ to Bob, Alice will
-send the garbled circuit $$G(C)$$, then her input $$x$$ encoded in a certain
-way. It will be constructed such that Bob can evaluate $$G(C)$$ with Alice's
+This is where garbling comes in. Instead of sending $$C$$, Alice will
+send a garbled circuit $$G(C)$$. Instead of sending $$x$$, she'll
+send $$x$$ encoded in a certain way.
+It will be done such that Bob can evaluate $$G(C)$$ with Alice's
 encoded input, without learning what Alice's original input $$x$$ was, and
-without exposing any wire values except for the final output $$f(x,y)$$.
+without exposing any wire values except for the final output.
 
-Let $$W = \{ w_1, w_2, \cdots, w_n \}$$ be the set of wires in the circuit.
+Number the wires of the circuit as $$w_1, w_2, \cdots$$.
 For each wire $$w_i$$, generate two random encryption keys
 $$k_{i,0}$$ and $$k_{i,1}$$. These will represent $$0$$ and $$1$$.
 
@@ -297,8 +309,6 @@ $$
     \end{array}
 $$
 
-REDO THIS TABLE
-
 The garbled OR gate instead takes $$k_{1,0}, k_{1,1}$$ for $$w_1$$, and
 $$k_{2,0}, k_{2,1}$$ for $$w_2$$. The output is $$k_{3,0}$$ or $$k_{3,1}$$,
 depending on which bit the gate is supposed to return.
@@ -319,41 +329,45 @@ $$
 The garbled table has a few nice properties.
 
 * Without a secret key for each input wire, Bob cannot read any of the given
-values because they have been encrypted.
+values, because he can't break the encryption.
 * With one secret key for each wire, Bob can get the correct output
 by attempting to decrypt all 4 values. Going back to the $$0 \text{ OR } 1 = 1$$
 example, assume Bob has $$k_{1,0}$$ and $$k_{2,1}$$. Bob first decrypts with
 $$k_{1,0}$$. He'll successfully decrypt exactly two values, and will get
 an error on the other two.
 
-$$
+    $$
     \begin{array}{c}
         E_{k_{2,0}}(k_{3,0})) \\
         E_{k_{2,1}}(k_{3,1})) \\
         \text{error} \\
         \text{error}
     \end{array}
-$$
+    $$
 
-Decrypting the two remaining messages with $$k_{2,1}$$ gives
+    Decrypting the two remaining messages with $$k_{2,1}$$ gives
 
-$$
+    $$
     \begin{array}{c}
         \text{error} \\
         k_{3,1} \\
         \text{error} \\
         \text{error}
     \end{array}
-$$
+    $$
 
-getting the key corresponding to output bit $$1$$ for wire $$w_3$$.
+    getting the key corresponding to output bit $$1$$ for wire $$w_3$$.
+
+(To be fully correct, we also shuffle the garbled table, to make sure
+the position of the decrypted message doesn't leak anything.)
 
 Creating the garbled table for every logic gate in the circuit gives the
-garbled circuit. I don't want to formally prove it's secure, but
-here's the intuition.
+garbled circuit. Informally, here's why the garbled circuit can be
+evaluated securely.
 
-* Given the input keys, Bob can unpack the correct output key, and
-only the correct output key.
+* Given the input keys, Bob can evaluate the garbled gates in turn.
+Each garbled gate can return only the correct value, so when Bob
+gets to the output wires, he must have the correct output.
 * Both $$k_{i,0}$$ and $$k_{i,1}$$ are generated randomly. Given just
 one of them, Bob has no way to tell whether the key he has represents
 $$0$$ or $$1$$. (Alice knows, but Alice isn't the one evaluating the circuit.)
@@ -362,27 +376,27 @@ Thus, from Bob's perspective, he's evaluating the circuit by passing gibberish
 to each garbled gate and getting gibberish out. He's still doing the
 computation - he just has no idea what bits he's actually looking at.
 
-The one minor exception is key generation for the output wires of the
-circuit. Instead of generating random keys, Alice encrypts $$0$$ or $$1$$.
-This lets Bob learn the output of the circuit, and nothing else.
+(The one minor exception is key generation for the output wires of the
+circuit. Instead of generating random keys, Alice uses the raw bit
+$$0$$ or $$1$$, since Alice needs Bob to learn the circuit output bits.)
 
 
-Input Key Transfer
------------------------------------------------------------------------
+The Last Step
+==============================================================================
 
 Here's the new protocol, with garbled circuits
 
 * Alice garbles circuit $$C$$ to get garbled circuit $$G(C)$$
 * Alice sends $$G(C)$$ to Bob.
 * Alice sends the keys for her input $$x$$ to Bob.
-* Bob takes the input keys for $$x$$, adds the input keys for $$y$$, and
+* Bob combines them with the input keys for $$y$$, and
 evaluates $$G(C)$$ to get $$f(x,y)$$
 * Bob sends $$f(x,y)$$ back to Alice.
 
 ![Second protocol](/public/secure-comp/protocol2.png)
 {: .centered }
 
-This is a good step, but there's still a problem. How does Bob
+There's still a problem. How does Bob
 get the input keys for $$y$$? Only Alice knows the keys created for each wire.
 Bob could give Alice his input $$y$$ to get the right keys, but then
 Alice would learn $$y$$.
@@ -403,7 +417,7 @@ than he should know.
 Thus, to be secure, Bob should only get to run the circuit on exactly
 $$x,y$$. To do so, he needs to get the keys for $$y$$, and only the keys
 for $$y$$, without Alice learning which keys he wants. If only there was a way
-for Alice to obliviously transfer those keys.
+for Alice to obliviously transfer those keys...
 
 Alright, yes, that's why we need oblivious transfer. Using oblivious transfer
 to fill in the gap, we get the final protocol.
@@ -419,36 +433,23 @@ Alice sends $$k_{i,y_i}$$ to Bob.
 ![Final protocol](/public/secure-comp/protocol3.png)
 {: .centered }
 
-This lets Alice and Bob can compute $$f(x,y)$$ without leaking their
-information and without trusted third parties.
+This lets Alice and Bob compute $$f(x,y)$$ without leaking their
+information, and without trusted third parties.
 
 
 Conclusion
 ------------------------------------------------------------------------
 
-This protocol is mostly a theoretical exercise, but it is fast enough to
-use in practice. Current implementations can securely compute circuits
-with about a billion gates. However, it requires converting the desired
-function into a circuit, which makes it tricky to use.
+This protocol is mostly a theoretical exercise. However, there has been
+[recent work](https://www.cs.uic.edu/pub/Bits/PeterSnyder/Peter_Snyder_-_Garbled_Circuits_WCP_2_column.pdf)
+to make it fast enough for practical use. It's still tricky to use, because
+the desired function needs to be converted into an equivalent
+circuit.
 
-Despite the difficulty of real world use, this
-protocol is still important because it proves secure computation is
-even possible. This has led to a lot of interesting research, some with
-immediate practical benefits.
+Despite this difficulty, Yao's garbled circuits are still a very important
+foundational result. In a post-Snowden world, interest in cryptography
+is very high, and there's a lot of usefulness to designing protocols
+with decentralized trust, from Bitcoin to [cloud
+computing](https://css.csail.mit.edu/cryptdb/). It's all very interesting,
+and I'm sure something cool is just around the corner.
 
-
-Further Topics
-------------------------------------------------------------------------
-
-If you liked this topic and would like to learn more, there are a ton
-of similar topics in secure computation.
-
-* The GMW protocol lets parties securely compute functions, and only
-requires oblivious transfer. It's also extendable to multi-party
-computation, and even malicious multi-party computation.
-* Fully homomorphic encryption is an encryption method that lets
-parties run functions directly on encrypted data, instead of decrypting
-it first. This is starting to be used in practice: see CryptDB
-
-It's a very large field, but ideally this gives you a foothold for learning
-more.
