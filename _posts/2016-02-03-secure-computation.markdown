@@ -226,21 +226,23 @@ For garbled circuits, we'll need one more property.
 
 * Decrypting $$E_k(m)$$ with a different key $$k'$$ results in an error.
 
-with all that out of the way, we can finally start talking about the protocol
+With all that out of the way, we can finally start talking about the protocol
 itself.
 
 
 Yao's Garbled Circuits
 ------------------------------------------------------------------------
 
-Developed in 1986, Yao's garbled circuits were the first construction showing
-every function is securely computable. Andrew Yao is often credited as
-the person who started the entire subfield of secure computation.
+Secure computation was first formally introduced by Andrew Yao in the early
+1980s. His introductory paper demonstrated protocols for a few examples,
+but did not prove every function was securely computable. That didn't
+happen until 1986, with the construction of Yao's garbled circuits.
 
-To prove this, Yao proved every circuit was securely computable.
+To prove every function was securely computable,
+Yao proved every circuit was securely computable.
 Every function can be converted to an
 equivalent circuit, and we'll see that working in the circuit model of
-computation makes the construction much easier.
+computation makes the construction simpler.
 
 
 A Quick Circuit Primer
