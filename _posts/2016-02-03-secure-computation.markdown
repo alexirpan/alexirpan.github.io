@@ -17,7 +17,7 @@ in theoretical computer science can understand them.
 What is Secure Computation?
 -------------------------------------------------------------------
 
-In secure computation, each party have some private data.
+In secure computation, each party has some private data.
 They would like to learn the answer to a question based off everyone's
 data. In voting, this is the majority opinion.
 In an auction, this is the winning bid. However, they also want to maintain
@@ -71,12 +71,11 @@ never lie, following the specified protocol exactly.
 However, after the protocol, Alice and Bob will analyze the messages received
 to try to extract information about the other person's input.
 
-Assuming neither party lies sounds naive, but in some settings it's good enough.
-From a historical perspective, Yao's garbled circuits were the first protocol
-that showed secure computation was even possible.
-Often, semi-honest protocols form a stepping stone towards the malicious case, where
-we allow lying. Explaining protocols for malicious adversaries
-is above the scope of this post.
+Assuming neither party lies is naive and doesn't give a lot of security in
+real life. However, it's still hard to create secure protocols assuming no
+lying. Often, semi-honest protocols form a stepping stone towards the malicious
+case, where we allow lying. Explaining protocols for malicious adversaries
+is outside the scope of this post.
 
 
 Informal Definitions
@@ -95,7 +94,7 @@ communicating.
 
 * Alice sends $$x$$ to Faith
 * Bob sends $$y$$ to Faith
-* Faith computes $$f(x,y)$$, and send the result back to Alice and Bob
+* Faith computes $$f(x,y)$$ and sends the result back to Alice and Bob
 
 ![ideal world](/public/secure-comp/ideal.png)
 {: .centered }
@@ -155,7 +154,7 @@ information computable from $$y$$ and $$f(x,y)$$**
 {: .centered }
 
 (Side note: if you've seen zero-knowledge proofs, this may seem familiar.
-If you haven't, don't worry, it won't show up in later section.)
+If you haven't, don't worry, it won't show up in later sections.)
 
 Armed with a security definition, we can start constructing the
 protocol. Before doing so, we'll need a few cryptographic assumptions.
@@ -168,7 +167,7 @@ All of theoretical cryptography rests on assuming some problems are harder
 than other problems. These problems form the cryptographic primitives,
 which can be used for constructing protocols.
 
-For example, one ryptographic primitive is the one-way function. Abbreviated
+For example, one cryptographic primitive is the one-way function. Abbreviated
 OWF, these functions are easy to compute, but hard to invert, where easy
 means "doable in polynomial time" and hard means "not doable in polynomial
 time." Assuming OWFs exist, we can create secure encryption, pseudorandom
@@ -188,7 +187,7 @@ Oblivious Transfer
 
 *Oblivious transfer* (abbreviated OT) is a special case of secure computation.
 Alice has two messages $$m_0, m_1$$. Bob has a bit $$b$$.
-Oblivious transfer is black box method where
+For now, we treat oblivious transfer as a black box method where
 
 * Alice gives $$m_0, m_1$$
 * Bob gives bit $$b$$, 0 or 1
@@ -200,9 +199,11 @@ She only knows Bob got one of them.
 ![Oblivious transfer](/public/secure-comp/ot.png)
 {: .centered }
 
+You can think of the OT box as a trusted third party, like Faith.
 Letting Alice send messages without knowing which message was
-received will be key to the secure computation protocol. OT is implementable without
-this black box, but I don't want to get into the details.
+received will be key to the secure computation protocol. I don't want to get into
+the details of implementing OT with just Alice and Bob, since they aren't
+that interesting.
 If you're curious, [Wikipedia has a good example based on RSA](https://en.wikipedia.org/wiki/Oblivious_transfer#1-2_oblivious_transfer).
 
 
@@ -213,19 +214,17 @@ Symmetric Encryption
 be decrypted without the secret key. Formally, a symmetric encryption scheme
 is a pair of functions, encrypter $$E$$ and decrypter $$D$$, such that
 
-* $$E(k, m)$$ is the encryption of message $$m$$ with key $$k$$.
-* $$D(k, c)$$ is the decryption of ciphertext $$c$$ with key $$k$$.
+* $$E_k(m)$$ is the encryption of message $$m$$ with key $$k$$.
+* $$D_k(c)$$ is the decryption of ciphertext $$c$$ with key $$k$$.
 * Decrypting with the same secret key gives the original message, or
-$$D(k, E(k, m)) = m$$,
+$$D_k(E_k(m)) = m$$,
 * Given just ciphertext $$c$$, it is hard to find a key $$k$$ and message $$m$$
-such that $$E(k, m) = c$$. (Where again, hard means not solvable in polynomial
+such that $$E_k(m) = c$$. (Where again, hard means not solvable in polynomial
 time.)
 
 For garbled circuits, we'll need one more property.
 
-* Decrypting $$E(k,m)$$ with a different key $$k'$$ results in an error.
-
-To save on notation, I'll use $$E_k(m)$$ to mean $$E(k, m)$$ from here on out.
+* Decrypting $$E_k(m)$$ with a different key $$k'$$ results in an error.
 
 with all that out of the way, we can finally start talking about the protocol
 itself.
@@ -234,13 +233,13 @@ itself.
 Yao's Garbled Circuits
 ------------------------------------------------------------------------
 
-Developed in 1986, Yao's garbled circuits are the first construction showing
-functions were securely computable. Andrew Yao is often credited as
+Developed in 1986, Yao's garbled circuits were the first construction showing
+every function is securely computable. Andrew Yao is often credited as
 the person who started the entire subfield of secure computation.
 
-To prove every function is securely computable, Yao proved every
-circuit was securely computable. Every function can be converted to an
-equivalent circuit, and working in the circuit model of
+To prove this, Yao proved every circuit was securely computable.
+Every function can be converted to an
+equivalent circuit, and we'll see that working in the circuit model of
 computation makes the construction much easier.
 
 
@@ -338,8 +337,8 @@ an error on the other two.
 
     $$
     \begin{array}{c}
-        E_{k_{2,0}}(k_{3,0})) \\
-        E_{k_{2,1}}(k_{3,1})) \\
+        E_{k_{2,0}}(k_{3,0}) \\
+        E_{k_{2,1}}(k_{3,1}) \\
         \text{error} \\
         \text{error}
     \end{array}
@@ -449,7 +448,6 @@ circuit.
 Despite this difficulty, Yao's garbled circuits are still a very important
 foundational result. In a post-Snowden world, interest in cryptography
 is very high, and there's a lot of usefulness to designing protocols
-with decentralized trust, from Bitcoin to [cloud
-computing](https://css.csail.mit.edu/cryptdb/). It's all very interesting,
+with decentralized trust, from Bitcoin to [secure cloud storage](https://css.csail.mit.edu/cryptdb/). It's all very interesting,
 and I'm sure something cool is just around the corner.
 
