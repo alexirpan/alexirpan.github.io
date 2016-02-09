@@ -408,7 +408,7 @@ the correct bit of $$y$$. That way, Bob doesn't have to give
 Alice $$y$$, but can still run the circuit.
 
 However, this has a subtle bug: by giving Bob both keys for his input
-wires, **Bob can run the circuit with an arbitrary $$y$$.**
+wires, **Alice lets Bob run the circuit with an arbitrary $$y$$.**
 Letting Bob evaluate $$f(x,y)$$ many times gives Bob more information.
 Going back to the millionaire's problem, let $$x = 10$$
 and $$y = 8$$. At the end, Bob learns Alice is richer, meaning $$x > 8$$.
