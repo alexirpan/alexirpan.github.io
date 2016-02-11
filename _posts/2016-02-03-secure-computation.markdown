@@ -8,7 +8,7 @@ In Fall 2015, I took CS 276, a graduate level introduction to theoretical
 cryptography. For the final project, I gave a short presentation on secure
 computation.
 
-This blog post is adapted from my presentation notes.
+This blog post is adapted and expanded from my presentation notes.
 The formal proofs of security rely on a lot of background knowledge,
 but the core ideas are very clean, and I believe anyone interested
 in theoretical computer science can understand them.
@@ -181,7 +181,7 @@ number generators, and many other useful things.
 No one has proved one-way functions exist, because proving that would
 prove $$P \neq NP$$, and that's, well, a really hard problem, to put it
 mildly. However, there are several functions that people believe to be
-one-way, which are the ones used in practice.
+one-way, which can be used in practice.
 
 For secure computation, we need two primitives: oblivious transfer, and symmetric
 encryption.
@@ -192,7 +192,7 @@ Oblivious Transfer
 
 *Oblivious transfer* (abbreviated OT) is a special case of secure computation.
 Alice has two messages $$m_0, m_1$$. Bob has a bit $$b$$.
-For now, we treat oblivious transfer as a black box method where
+We treat oblivious transfer as a black box method where
 
 * Alice gives $$m_0, m_1$$
 * Bob gives bit $$b$$, $$0$$ or $$1$$
@@ -207,7 +207,7 @@ She only knows Bob got one of them.
 You can think of the OT box as a trusted third party, like Faith.
 Letting Alice send messages without knowing which message was
 received will be key to the secure computation protocol. I don't want to get into
-the details of implementing OT with just Alice and Bob, since they aren't
+the details of implementing OT with only Alice and Bob, since they aren't
 that interesting.
 If you're curious, [Wikipedia has a good example based on RSA](https://en.wikipedia.org/wiki/Oblivious_transfer#1-2_oblivious_transfer).
 
@@ -239,7 +239,7 @@ itself.
 Yao's Garbled Circuits
 ------------------------------------------------------------------------
 
-Secure computation was first formally introduced by Andrew Yao in the early
+Secure computation was first formally studied by Andrew Yao in the early
 1980s. His introductory paper demonstrated protocols for a few examples,
 but did not prove every function was securely computable. That didn't
 happen until 1986, with the construction of Yao's garbled circuits.
@@ -405,12 +405,12 @@ evaluated securely.
 * For a given garbled gate, Bob cannot read any value in the garbled
 table unless he has a secret key for each input wire, because the values are
 encrypted.
-* From the keys for the circuit input,
+* Starting with the keys for the circuit input,
 Bob can evaluate the garbled gates in turn.
 Each garbled gate returns exactly one key, and that key represents
-exactly the correct output bit. So, when Bob
-gets to the output wires he must get the same output as the
-ungarbled circuit.
+exactly the correct output bit. When Bob
+gets to the output wires, he must get the same output as the
+original circuit.
 * Both $$k_{i,0}$$ and $$k_{i,1}$$ are generated randomly. Given just
 one of them, Bob has no way to tell whether the key he has represents
 $$0$$ or $$1$$. (Alice knows, but Alice isn't the one evaluating the circuit.)
@@ -420,9 +420,9 @@ as input, propagating gibberish through the garbled gates, and getting
 gibberish out. He's still doing the
 computation - he just has no idea what bits he's actually looking at.
 
-(The one minor unfinished detail is key generation for the output wires of the
+(The one minor detail left is key generation for the output wires of the
 circuit. Instead of generating random keys, Alice uses the raw bit
-$$0$$ or $$1$$, since Alice needs Bob to learn the circuit output bits.)
+$$0$$ or $$1$$, since Alice needs Bob to learn the circuit output.)
 
 
 The Last Step
@@ -455,7 +455,7 @@ wires, **Alice lets Bob run the circuit with an arbitrary $$y$$.**
 Letting Bob evaluate $$f(x,y)$$ many times gives Bob more information.
 Going back to the millionaire's problem, let $$x = 10$$
 and $$y = 8$$. At the end, Bob learns Alice is richer, meaning $$x > 8$$.
-But, if he later evaluate $$f(x, 9)$$, he'll learn $$x > 9$$, which is more
+But, if he later evaluates $$f(x, 9)$$, he'll learn $$x > 9$$, which is more
 than he should know.
 
 Thus, to be secure, Bob should only get to run the circuit on exactly
@@ -507,7 +507,8 @@ polynomial time".
     There's a very subtle point I'm glossing over here. When $$f(x,y)$$ is converted
 to a circuit $$C$$, the number of input wires is fixed. To create an equivalent
 circuit, Alice and Bob need to share their input lengths. For a long time, this
-was seen as inevitable. When I asked a Berkeley professor about this, he
-pointed me to a [recent paper (2012)](http://eprint.iacr.org/2012/679.pdf) that
-shows input length can be hidden, but I haven't read it yet, so for now assume
-this is okay.
+was seen as inevitable, but it turns out it's not.
+When I asked a Berkeley professor about this, he
+pointed me to a [recent paper (2012)](http://eprint.iacr.org/2012/679.pdf) showing
+input length can be hidden. I haven't read it yet, so for now assume
+this is fine.
