@@ -32,8 +32,7 @@ securely compute functions on private inputs without leaking information
 about those inputs?**
 
 This post will focus on the two party case, showing that every function
-is securely computable with the right computational assumptions. We'll show
-this with Yao's garbled circuits.
+is securely computable with the right computational assumptions.
 
 
 Problem Setting
@@ -52,7 +51,7 @@ The classical example is Yao's Millionaire Problem.
 Alice and Bob want to know who has more money.
 It's socially unacceptable to brag about
 your wealth, so neither wants to say how much money they have. Let
-$$x$$ be Alice's wealth, and $$y$$ be Bob's wealth. Then securely computing
+$$x$$ be Alice's wealth, and $$y$$ be Bob's wealth. Securely computing
 
 $$
     f(x,y) = \begin{cases}
@@ -65,17 +64,19 @@ $$
 lets Alice and Bob learn who is richer.
 
 Before going any further, I should explain what security guarantees we're
-trying to acheive. We're going to make something secure against *semi-honest*
+aiming for. We're going to make something secure against *semi-honest*
 adversaries, also known as *honest-but-curious*. In the semi-honest model, Alice and Bob
 never lie, following the specified protocol exactly.
 However, after the protocol, Alice and Bob will analyze the messages received
 to try to extract information about the other person's input.
 
 Assuming neither party lies is naive and doesn't give a lot of security in
-real life. However, it's still hard to create secure protocols assuming no
-lying. Often, semi-honest protocols form a stepping stone towards the malicious
-case, where we allow lying. Explaining protocols for malicious adversaries
-is outside the scope of this post.
+real life. However, it's still difficult to
+build a protocol that leaks no unnecessary information, even in this
+easier setting.
+Often, semi-honest protocols form a stepping stone towards the malicious
+case, where parties can lie. Explaining protocols that work for
+malicious adversaries is outside the scope of this post.
 
 
 Informal Definitions
@@ -190,7 +191,7 @@ Alice has two messages $$m_0, m_1$$. Bob has a bit $$b$$.
 For now, we treat oblivious transfer as a black box method where
 
 * Alice gives $$m_0, m_1$$
-* Bob gives bit $$b$$, 0 or 1
+* Bob gives bit $$b$$, $$0$$ or $$1$$
 * If $$b = 0$$, Bob gets $$m_0$$. Otherwise, he gets $$m_1$$. In
 both cases, Bob does not learn the other message.
 * Alice does not learn which message Bob received.
@@ -284,7 +285,7 @@ It will be done such that Bob can evaluate $$G(C)$$ with Alice's
 encoded input, without learning what Alice's original input $$x$$ was, and
 without exposing any wire values except for the final output.
 
-Number the wires of the circuit as $$w_1, w_2, \cdots$$.
+Number the wires of the circuit as $$w_1, w_2, \ldots, w_n$$.
 For each wire $$w_i$$, generate two random encryption keys
 $$k_{i,0}$$ and $$k_{i,1}$$. These will represent $$0$$ and $$1$$.
 
@@ -298,19 +299,16 @@ It has input wires $$w_1,w_2$$, and output wire $$w_3$$.
 ![OR gate](/public/secure-comp/or.png)
 {: .centered }
 
-Internally, an OR gate is implemented with transistors, and
-some electrical engineering to put it all together.
-However, at our level of abstraction we only care that it
-acts as follows.
+Internally, an OR gate is implemented with transistors.
+However, at our level of abstraction we treat the OR gate as a black box.
+The only thing we care about is that it follows this behavior.
 
 * Given $$w_1 = 0, w_2 = 0$$, it sets $$w_3 = 0$$.
 * Given $$w_1 = 0, w_2 = 1$$, it sets $$w_3 = 1$$.
 * Given $$w_1 = 1, w_2 = 0$$, it sets $$w_3 = 1$$.
 * Given $$w_1 = 1, w_2 = 1$$, it sets $$w_3 = 1$$.
 
-With the actual implementation as a black box.
-
-BLACK BOX PICTURE.
+This is summarized in the function table below.
 
 $$
     \begin{array}{ccc}
@@ -336,7 +334,18 @@ OR gate with another black box that acts as follows
 
 BLACK BOX PICTURE
 
-ANOTHER TABLE
+$$
+    \begin{array}{ccc}
+        w_1 & w_2 & w_3 \\
+        k_{1,0} & k_{2,0} & k_{3,0} \\
+        k_{1,0} & k_{2,1} & k_{3,1} \\
+        k_{1,1} & k_{2,0} & k_{3,1} \\
+        k_{1,1} & k_{2,1} & k_{3,1}
+    \end{array}
+$$
+
+By replacing every logic gate with a garbled gate, we can evaluate
+the circuit using random encryption keys instead of bits.
 
 We implement this using symmetric encryption. For every possible pair
 of input keys, the correct output is encrypted using both those keys.
@@ -351,36 +360,32 @@ $$
     \end{array}
 $$
 
-The garbled table has a few nice properties.
-
-* Without a secret key for each input wire, Bob cannot read any of the given
-values, because he can't break the encryption.
-* With one secret key for each wire, Bob can get the correct output
+With one secret key for each wire, Bob can get the correct output
 by attempting to decrypt all 4 values. Suppose Bob has $$k_{1,0}$$ and $$k_{2,1}$$.
 Bob first decrypts with $$k_{1,0}$$.
 He'll decrypt exactly two values, and will get an error on the other two.
 
-    $$
+$$
     \begin{array}{c}
         E_{k_{2,0}}(k_{3,0}) \\
         E_{k_{2,1}}(k_{3,1}) \\
         \text{error} \\
         \text{error}
     \end{array}
-    $$
+$$
 
-    Decrypting the two remaining messages with $$k_{2,1}$$ gives
+Decrypting the two remaining messages with $$k_{2,1}$$ gives
 
-    $$
+$$
     \begin{array}{c}
         \text{error} \\
         k_{3,1} \\
         \text{error} \\
         \text{error}
     \end{array}
-    $$
+$$
 
-    getting the key corresponding to output bit $$1$$ for wire $$w_3$$.
+getting the key corresponding to output bit $$1$$ for wire $$w_3$$.
 
 (To be fully correct, we also shuffle the garbled table, to make sure
 the position of the decrypted message doesn't leak anything.)
@@ -389,9 +394,15 @@ Creating the garbled table for every logic gate in the circuit gives the
 garbled circuit. Informally, here's why the garbled circuit can be
 evaluated securely.
 
-* Given the input keys, Bob can evaluate the garbled gates in turn.
-Each garbled gate returns only the correct next key, so when Bob
-gets to the output wires, he must have the correct output.
+* For a given garbled gate, Bob cannot read any value in the garbled
+table unless he has a secret key for each input wire, because the values are
+encrypted.
+* From the keys for the circuit input,
+Bob can evaluate the garbled gates in turn.
+Each garbled gate returns exactly one key, and that key represents
+exactly the correct output bit. So, when Bob
+gets to the output wires he must get the same output as the
+ungarbled circuit.
 * Both $$k_{i,0}$$ and $$k_{i,1}$$ are generated randomly. Given just
 one of them, Bob has no way to tell whether the key he has represents
 $$0$$ or $$1$$. (Alice knows, but Alice isn't the one evaluating the circuit.)
@@ -401,7 +412,7 @@ as input, propagating gibberish through the garbled gates, and getting
 gibberish out. He's still doing the
 computation - he just has no idea what bits he's actually looking at.
 
-(The one minor exception is key generation for the output wires of the
+(The one minor unfinished detail is key generation for the output wires of the
 circuit. Instead of generating random keys, Alice uses the raw bit
 $$0$$ or $$1$$, since Alice needs Bob to learn the circuit output bits.)
 
@@ -473,7 +484,7 @@ circuit.
 
 Despite this difficulty, Yao's garbled circuits are still a very important
 foundational result. In a post-Snowden world, interest in cryptography
-is very high, and there's a lot of usefulness to designing protocols
+is very high. There's lots of use in designing protocols
 with decentralized trust, from Bitcoin to [secure cloud storage](https://css.csail.mit.edu/cryptdb/). It's all very interesting,
 and I'm sure something cool is just around the corner.
 
