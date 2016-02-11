@@ -147,15 +147,19 @@ However, there is still some privacy: neither knows the exact wealth of the othe
 
 Since $$f(x,y)$$ must be given to Alice and Bob, the best we can do is
 learn nothing more than what was learnable from $$f(x,y)$$. This
-gives the final definition.
+gives the final definition.[^security-defn]
 
 **A protocol between Alice and Bob is secure if Alice learns
 only information computable from $$x$$ and $$f(x,y)$$, and Bob learns only
 information computable from $$y$$ and $$f(x,y)$$**
 {: .centered }
 
-(Side note: if you've seen zero-knowledge proofs, this may seem familiar.
-If you haven't, don't worry, it won't show up in later sections.)
+(Side note: if you've seen zero-knowledge proofs, you can alternatively
+think of a protocol as secure if it is simulatable from $$x, f(x,y)$$
+for Alice and $$y, f(x,y)$$ for Bob. In fact, this is how you would
+formally prove security.
+If you haven't seen zero-knowledge proofs, don't worry, they won't show up
+in later sections, and we'll argue security informally.)
 
 Armed with a security definition, we can start constructing the
 protocol. Before doing so, we'll need a few cryptographic assumptions.
@@ -223,7 +227,8 @@ $$D_k(E_k(m)) = m$$,
 such that $$E_k(m) = c$$. (Where again, hard means not solvable in polynomial
 time.)
 
-For garbled circuits, we'll need one more property.
+The above is part of the standard definition for symmetric encryption.
+For the proof, we'll need one more property that's less conventional.
 
 * Decrypting $$E_k(m)$$ with a different key $$k'$$ results in an error.
 
@@ -283,7 +288,7 @@ send a garbled circuit $$G(C)$$. Instead of sending $$x$$, she'll
 send $$x$$ encoded in a certain way.
 It will be done such that Bob can evaluate $$G(C)$$ with Alice's
 encoded input, without learning what Alice's original input $$x$$ was, and
-without exposing any wire values except for the final output.
+without exposing any wire values except for the final output.[^length]
 
 Number the wires of the circuit as $$w_1, w_2, \ldots, w_n$$.
 For each wire $$w_i$$, generate two random encryption keys
@@ -320,19 +325,22 @@ $$
     \end{array}
 $$
 
-A garbled OR gate goes one step further. It instead takes
-$$k_{1,0}, k_{1,1}$$ for $$w_1$$, and
+A garbled OR gate goes one step further.
+
+![Garbled OR gate](/public/secure-comp/garbled_or.png)
+{: .centered }
+
+
+It instead takes $$k_{1,0}, k_{1,1}$$ for $$w_1$$, and
 $$k_{2,0}, k_{2,1}$$ for $$w_2$$. Treating these keys as bits $$0$$ or $$1$$,
 the output is $$k_{3,0}$$ or $$k_{3,1}$$,
-depending on which bit the gate is supposed to return. We replace the
-OR gate with another black box that acts as follows
+depending on which bit the gate is supposed to return. You can think of
+it as replacing the OR gate with a black box that acts as follows.
 
 * Given $$w_1 = k_{1,0}, w_2 = k_{2,0}$$, it sets $$w_3 = k_{3,0}$$.
 * Given $$w_1 = k_{1,0}, w_2 = k_{2,1}$$, it sets $$w_3 = k_{3,1}$$.
 * Given $$w_1 = k_{1,1}, w_2 = k_{2,0}$$, it sets $$w_3 = k_{3,1}$$.
 * Given $$w_1 = k_{1,1}, w_2 = k_{2,1}$$, it sets $$w_3 = k_{3,1}$$.
-
-BLACK BOX PICTURE
 
 $$
     \begin{array}{ccc}
@@ -488,3 +496,18 @@ is very high. There's lots of use in designing protocols
 with decentralized trust, from Bitcoin to [secure cloud storage](https://css.csail.mit.edu/cryptdb/). It's all very interesting,
 and I'm sure something cool is just around the corner.
 
+
+Footnotes
+-----------------------------------------------------------------------
+[^security-defn]:
+    By "information computable", we mean "information computable in
+polynomial time".
+
+[^length]:
+    There's a very subtle point I'm glossing over here. When $$f(x,y)$$ is converted
+to a circuit $$C$$, the number of input wires is fixed. To create an equivalent
+circuit, Alice and Bob need to share their input lengths. For a long time, this
+was seen as inevitable. When I asked a Berkeley professor about this, he
+pointed me to a [recent paper (2012)](http://eprint.iacr.org/2012/679.pdf) that
+shows input length can be hidden, but I haven't read it yet, so for now assume
+this is okay.
