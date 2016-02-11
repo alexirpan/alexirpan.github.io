@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Gentle Introduction to Secure Computation"
-date:   2016-02-03 18:19:00 -0800
+date:   2016-02-11 00:15:00 -0800
 ---
 
 In Fall 2015, I took CS 276, a graduate level introduction to theoretical
