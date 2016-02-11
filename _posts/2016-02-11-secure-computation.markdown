@@ -496,6 +496,8 @@ is very high. There's lots of use in designing protocols
 with decentralized trust, from Bitcoin to [secure cloud storage](https://css.csail.mit.edu/cryptdb/). It's all very interesting,
 and I'm sure something cool is just around the corner.
 
+*Thanks to the many who gave comments on drafts of this post.*
+
 
 Footnotes
 -----------------------------------------------------------------------
