@@ -292,13 +292,25 @@ A garbled circuit is made of *garbled logic gates*. Garbled gates act
 the same as regular logic gates, except they operate on the sampled encryption
 keys instead of bits.
 
-To give a concrete example, suppose we want to garble an OR gate.
+Suppose we want to garble an OR gate.
 It has input wires $$w_1,w_2$$, and output wire $$w_3$$.
 
 ![OR gate](/public/secure-comp/or.png)
 {: .centered }
 
-The logic gate table is
+Internally, an OR gate is implemented with transistors, and
+some electrical engineering to put it all together.
+However, at our level of abstraction we only care that it
+acts as follows.
+
+* Given $$w_1 = 0, w_2 = 0$$, it sets $$w_3 = 0$$.
+* Given $$w_1 = 0, w_2 = 1$$, it sets $$w_3 = 1$$.
+* Given $$w_1 = 1, w_2 = 0$$, it sets $$w_3 = 1$$.
+* Given $$w_1 = 1, w_2 = 1$$, it sets $$w_3 = 1$$.
+
+With the actual implementation as a black box.
+
+BLACK BOX PICTURE.
 
 $$
     \begin{array}{ccc}
@@ -310,13 +322,25 @@ $$
     \end{array}
 $$
 
-The garbled OR gate instead takes $$k_{1,0}, k_{1,1}$$ for $$w_1$$, and
-$$k_{2,0}, k_{2,1}$$ for $$w_2$$. The output is $$k_{3,0}$$ or $$k_{3,1}$$,
-depending on which bit the gate is supposed to return.
-For example, $$0 \text{ OR } 1 = 1$$, so inputs $$k_{1,0}, k_{2,1}$$ should
-give output $$k_{3,1}$$. Using symmetric encryption, encrypt the correct
-output with both keys. Doing this for all possible inputs gives the
-*garbled table*.
+A garbled OR gate goes one step further. It instead takes
+$$k_{1,0}, k_{1,1}$$ for $$w_1$$, and
+$$k_{2,0}, k_{2,1}$$ for $$w_2$$. Treating these keys as bits $$0$$ or $$1$$,
+the output is $$k_{3,0}$$ or $$k_{3,1}$$,
+depending on which bit the gate is supposed to return. We replace the
+OR gate with another black box that acts as follows
+
+* Given $$w_1 = k_{1,0}, w_2 = k_{2,0}$$, it sets $$w_3 = k_{3,0}$$.
+* Given $$w_1 = k_{1,0}, w_2 = k_{2,1}$$, it sets $$w_3 = k_{3,1}$$.
+* Given $$w_1 = k_{1,1}, w_2 = k_{2,0}$$, it sets $$w_3 = k_{3,1}$$.
+* Given $$w_1 = k_{1,1}, w_2 = k_{2,1}$$, it sets $$w_3 = k_{3,1}$$.
+
+BLACK BOX PICTURE
+
+ANOTHER TABLE
+
+We implement this using symmetric encryption. For every possible pair
+of input keys, the correct output is encrypted using both those keys.
+Doing this for all possible inputs gives the *garbled table*,
 
 $$
     \begin{array}{c}
@@ -332,10 +356,9 @@ The garbled table has a few nice properties.
 * Without a secret key for each input wire, Bob cannot read any of the given
 values, because he can't break the encryption.
 * With one secret key for each wire, Bob can get the correct output
-by attempting to decrypt all 4 values. Going back to the $$0 \text{ OR } 1 = 1$$
-example, assume Bob has $$k_{1,0}$$ and $$k_{2,1}$$. Bob first decrypts with
-$$k_{1,0}$$. He'll successfully decrypt exactly two values, and will get
-an error on the other two.
+by attempting to decrypt all 4 values. Suppose Bob has $$k_{1,0}$$ and $$k_{2,1}$$.
+Bob first decrypts with $$k_{1,0}$$.
+He'll decrypt exactly two values, and will get an error on the other two.
 
     $$
     \begin{array}{c}
@@ -367,14 +390,15 @@ garbled circuit. Informally, here's why the garbled circuit can be
 evaluated securely.
 
 * Given the input keys, Bob can evaluate the garbled gates in turn.
-Each garbled gate can return only the correct value, so when Bob
+Each garbled gate returns only the correct next key, so when Bob
 gets to the output wires, he must have the correct output.
 * Both $$k_{i,0}$$ and $$k_{i,1}$$ are generated randomly. Given just
 one of them, Bob has no way to tell whether the key he has represents
 $$0$$ or $$1$$. (Alice knows, but Alice isn't the one evaluating the circuit.)
 
 Thus, from Bob's perspective, he's evaluating the circuit by passing gibberish
-to each garbled gate and getting gibberish out. He's still doing the
+as input, propagating gibberish through the garbled gates, and getting
+gibberish out. He's still doing the
 computation - he just has no idea what bits he's actually looking at.
 
 (The one minor exception is key generation for the output wires of the
