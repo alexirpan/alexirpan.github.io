@@ -24,7 +24,7 @@ header_links:
 
 
 # Build settings
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 kramdown:
     math_engine: mathjax
