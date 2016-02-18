@@ -64,18 +64,23 @@ day one. *I gave myself leeway, and still overshot it every time.*
 {: .centered}
 
 My most productive blogging hours start near midnight, and I've definitely
-lost sleep while revising drafts. (In fact, I'm doing it right now. Check
-the commit history, you'll find a commit at 1 AM Pacfic time.)
+lost sleep while revising drafts. In fact, I'm doing it right now! Check
+the commit history for this post, you'll find a commit at 1 AM Pacific time. I need
+to wake up early too...
+
+In fact, let's look at my first technical post, about how to [efficiently turn a
+fair coin into a biased one](http://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.html).
+Thanks to Git, I have timestamps of every single commit.
+
+(ADD ALL COMMITS HERE.)
+
+
 
 (Incidentally, this is the biggest argument for why you should consider
 a [CFAR workshop](http://rationality.org/workshops/) if you have the money.
 Knowledge of logical fallacies doesn't
 stop you from making them. I haven't done one because the cost is scary and my
 mind has lots of inertia, but it's slowly getting more appealing.)
-
-Now, because my blog works from git commits, you don't have have to take my word
-for it. I can pull up the exact timestamps. Among other things, my most productive
-blogging is around midnight, but that's neither here nor there.
 
 For my post about efficiently biasing a fair coin, I committed my first draft
 at 2:05 AM. The next day, I extended it, making a commit at 9 PM and 12:12 AM.
