@@ -1,0 +1,147 @@
+---
+layout: post
+title:  "Six Months of Blogging: A Retrospective"
+date:   2016-02-18 00:15:00 -0800
+---
+
+Exactly six months ago, I [rebooted my personal site](http://www.alexirpan.com/2015/08/18/hello-world-again.html) into the current blog. Half a year sounds like a good
+interval to review how it's going so far. Every blog will inevitably talk
+about itself, and now's the time.
+
+The good news is that I've learned a bit about writing and content creation.
+That wasn't something I explicitly set out to do, but in hindsight it's obvious
+you learn about writing when you do more writing.
+
+(TODO better introduction)
+
+(TODO decide on lesson ordering)
+
+Lesson: I Made A Good Platform Choice
+------------------------------------------------------------------------------
+
+Although there were some annoyances at the start, hosting on Github Pages
+was definitely the right call. I don't get the usefulness of Wordpress plugins,
+but I also don't have to pay for my web hosting, and can write blog posts in
+a command line editor. Github Pages is a blogging platform designed for
+programmers, and although it's not the most user-friendly thing, it's let
+me focus almost entirely on writing instead of frontend web-development.
+
+It's also nice that despite all the styling I get for free, I still have
+complete control over the site content. When I needed math for my post about
+simulating a biased coin, I could easily include KaTeX on all my pages. And when
+it turned out KaTeX didn't play nicely with kramdown because of weird issues
+with LaTeX comments, I could add my own hotfix. (Incidentally, I don't know how
+this regex works anymore. It sure does though!)
+
+REPHRASE THIS
+
+I miss out on a few things, like free commenting or free analytics, but those
+are hand-rollable, and it's worth it for getting to blog entirely in a git
+workflow.
+
+
+Lesson: Holy Shit Writing Is Time-Consuming
+------------------------------------------------------------------------------
+
+> Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.
+
+(Douglas Hofstadter, *Gödel, Escher, Bach*)
+{: .centered}
+
+Going into it, I expected to spend more time writing each post than I thought
+I'd need. What I didn't expect was falling behind my estimated schedule consistently,
+post after post. Knowing about the planning fallacy didn't stop me from falling
+into it, and even the most generous estimates went over time.
+
+Now, because my blog works from git commits, you don't have have to take my word
+for it. I can pull up the exact timestamps. Among other things, my most productive
+blogging is around midnight, but that's neither here nor there.
+
+For my post about efficiently biasing a fair coin, I committed my first draft
+at 2:05 AM. The next day, I extended it, making a commit at 9 PM and 12:12 AM.
+By this point, I decided I needed to finish this post by the weekend. I already
+almost had a full first draft done. It shouldn't take too long to revise it, right?
+Maybe I stay up until 2 AM at most.
+
+Well...
+
+* Commit on Aug 22, 11:15 PM (finish adding pictures created last night)
+* Commit on Aug 23, 1:39 AM (finish first draft)
+* Commit on Aug 23, 2:13 AM (first revision)
+* Commit on Aug 23, 2:53 AM (more editing, stil can't figure out a good conclusion.)
+* Commit on Aug 23, 3:40 AM (figured out a conclusion, revised to be shorter)
+
+Clearly, I realized I wasn't going to finish it this night, so I went to bed, and
+
+* Commit on Aug 23, 5:52 PM (a final revision that changed more than I thought it would.)
+* Commit on Aug 23, 5:59 PM (a final pass to catch spelling errors.)
+
+Yeah. My estimate was way off. I *said* I understood that writing took a long time,
+but now that I've actually done some of it, I have so much more respect for people
+that update their content multiple times a week. I certainly can't do that.
+Looking back, I've averaged about one post every two weeks; I don't see myself
+getting any faster unless I both invest a lot more time and revise a lot less.
+
+
+Lesson: Ideas are Easy, Execution is Hard
+-------------------------------------------------------------------------------
+
+When I started this blog, I worried I'd run out of material to write about.
+It turns out the opposite turned true. I have plenty of ideas, enough that I
+don't have the time to try writing all of them, and I have to prune them down
+to the ones I especially like.
+
+Off the top of my head, I can name four posts I definitely plan to write about,
+and one post I definitely won't because it doesn't meet my standards anymore.
+Based on my past average, that'll take about two months to finish.
+
+Sometimes, people think they're boring. They think they're nothing special, that
+they don't have interesting perspectives or lives. I suppose it's good I don't
+know any narcissists.
+
+But now? I'm quite sure the opposite is true.
+
+> Everybody has a secret world inside of them. All of the
+> people in the whole world, I mean everybody. No matter how dull and boring they
+> are on the outside, inside them they've all got unimaginable, magnificent,
+> wonderful, stupid, amazing worlds. Not just one world. Hundreds of them.
+> Thousands maybe.
+
+(Neil Geiman, *The Sandman*)
+{. :centered }
+
+Everybody's interesting. Everybody's cool. We just don't show it, because it's
+so hard to expose it and we worry about being judged and ridiculed for our
+own brand of stupidity. It's a wonderfully naive, goofy, idealistic viewpoint,
+*and I plan to own the hell out of it.*
+
+I've got the rest of my life to become a cynical old man. Why should I try
+to get there any faster?
+
+I still need to write about *Gunnerkrigg Court*, and obsessive fandoms, and
+icebergs of effort. Maybe I'll expand on an idea inspired by a quote from
+*Fine Structure*: "There was a war in Heaven, and the debris fell to Earth."
+But if I'm honest, that's all far out the horizon.
+
+
+Lesson: I Actually Have A Writing Style
+-------------------------------------------------------------------------------
+
+I made a deliberate choice to keep this blog as colloquial as possible. It's
+my site, I don't give a shit if people look down on me for using contractions
+or swearing.
+
+At the same time, I've noticed my writing becomes very reptitive if I'm not careful
+about it. I love, love using parallelism. I'm fond of starting sentences with
+"And" or "But", because I like how the period before the connective (CHECK?)
+stops and starts the reading flow.
+
+I adopted short paragraphs because they're an easy way to highlight specific
+ideas.
+
+I start lots of sentences with I, pretending like it's for repetition, but
+it's really because it's easier than figuring out more unique sentence
+constructions.
+
+I don't if this is my style or if it's just my writing habits. Maybe the two
+are the same thing.
