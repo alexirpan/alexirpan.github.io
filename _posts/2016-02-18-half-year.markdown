@@ -114,14 +114,17 @@ if I devoted a lot more and revised a lot less.
 Ideas are Easy, Execution is Hard
 -------------------------------------------------------------------------------
 
-When I started this blog, I worried I'd run out of material to write about.
-It turns out the opposite turned true. I have plenty of ideas, enough that I
-don't have the time to try writing all of them, and I have to prune them down
-to the ones I especially like.
+When I started this blog, I was worried I'd run out of topics to write about.
+It turns out the opposite is true; the limiting factor is time.
 
-Off the top of my head, I can name four posts I definitely plan to write about,
-and one post I definitely won't because it doesn't meet my standards anymore.
-Based on my past average, that'll take about two months to finish.
+I have plenty of ideas, enough that I
+don't have the time to write posts for all of them. Each post is a 2-4 week
+commitment, and I have to prune ideas down to ones I can see myself
+working on for that long. My standard for topics worth writing about rose so
+much the past 6 months. (REORDER)
+
+Off the top of my head, I have four posts I want to write, and have no work
+on any of them.
 
 Sometimes, people think they're boring. They think they're nothing special, that
 they don't have interesting perspectives or lives. I suppose it's good I don't
