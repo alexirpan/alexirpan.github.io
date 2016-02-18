@@ -63,6 +63,7 @@ day one. *I gave myself leeway, and still overshot it every time.*
 (Douglas Hofstadter, *Gödel, Escher, Bach*)
 {: .centered}
 
+(EXPLAIN THE LINK)
 My most productive blogging hours start near midnight, and I've definitely
 lost sleep while revising drafts. In fact, I'm doing it right now! Check
 the commit history for this post, you'll find a commit at 1 AM Pacific time. I need
@@ -72,9 +73,17 @@ In fact, let's look at my first technical post, about how to [efficiently turn a
 fair coin into a biased one](http://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.html).
 Thanks to Git, I have timestamps of every single commit.
 
-(ADD ALL COMMITS HERE.)
+![Commits for coins branch](/public/half-year/coins-commits.png)
+{: .centered}
 
+First commit at 2 AM, worked on it the next day from 9 PM til midnight, started
+a final pass Saturday midnight and stayed up until 3:40 AM, then finally released
+it Sunday evening.
 
+It's worse for my larger posts. My first draft about research and graduate school
+was from October. I put it off until November, joking that it would take me
+until December to finish it. The post actually came out mid-January, and this
+is with the freedom I had from winter break.
 
 (Incidentally, this is the biggest argument for why you should consider
 a [CFAR workshop](http://rationality.org/workshops/) if you have the money.
@@ -82,30 +91,24 @@ Knowledge of logical fallacies doesn't
 stop you from making them. I haven't done one because the cost is scary and my
 mind has lots of inertia, but it's slowly getting more appealing.)
 
-For my post about efficiently biasing a fair coin, I committed my first draft
-at 2:05 AM. The next day, I extended it, making a commit at 9 PM and 12:12 AM.
-By this point, I decided I needed to finish this post by the weekend. I already
-almost had a full first draft done. It shouldn't take too long to revise it, right?
-Maybe I stay up until 2 AM at most.
+I did some quick calculation, and turned up 14 posts in the past 6 months. (15
+if you count this one.) That works out to about one post every two weeks.
 
-Well...
+I literally cannot see myself updating any faster than once a week. It's
+not possible for me unless I get a lot better at writing. I consider myself
+a slow person, both in problem solving and writing. I can't solve problems unless
+I think about them for a long time. I rarely ask questions in lecture, because
+I don't even follow enough to ask a question in the first place. And when
+it comes to writing, I have to turn an idea once in the head and thrice on
+the page before I feel it's explained well.
 
-* Commit on Aug 22, 11:15 PM (finish adding pictures created last night)
-* Commit on Aug 23, 1:39 AM (finish first draft)
-* Commit on Aug 23, 2:13 AM (first revision)
-* Commit on Aug 23, 2:53 AM (more editing, stil can't figure out a good conclusion.)
-* Commit on Aug 23, 3:40 AM (figured out a conclusion, revised to be shorter)
+It baffles me that people can update their blogs several times a week while holding
+full time jobs. I certainly can't do that.
+Right now, I estimate I could go up to one post a week, and that's
+if I devoted a lot more and revised a lot less.
 
-Clearly, I realized I wasn't going to finish it this night, so I went to bed, and
 
-* Commit on Aug 23, 5:52 PM (a final revision that changed more than I thought it would.)
-* Commit on Aug 23, 5:59 PM (a final pass to catch spelling errors.)
 
-Yeah. My estimate was way off. I *said* I understood that writing took a long time,
-but now that I've actually done some of it, I have so much more respect for people
-that update their content multiple times a week. I certainly can't do that.
-Looking back, I've averaged about one post every two weeks; I don't see myself
-getting any faster unless I both invest a lot more time and revise a lot less.
 
 
 Ideas are Easy, Execution is Hard
