@@ -6,7 +6,8 @@ date:   2016-02-18 00:15:00 -0800
 
 Exactly six months ago, I [rebooted my personal site](http://www.alexirpan.com/2015/08/18/hello-world-again.html) into the current blog. Half a year sounds like a good
 interval to review how it's going so far. Every blog will inevitably talk
-about itself, and now's the time.
+about itself, and now's the time. (It also gives me an excuse to link back
+to all my previous posts to try to increase engagement.)
 
 The good news is that I've learned a bit about writing and content creation.
 That wasn't something I explicitly set out to do, but in hindsight it's obvious
@@ -145,3 +146,69 @@ constructions.
 
 I don't if this is my style or if it's just my writing habits. Maybe the two
 are the same thing.
+
+
+Lesson: Effort Has Weak Correlation With Writing Quality
+-------------------------------------------------------------------------------
+
+The correlation between effort and quality seems obvious, but what surprised
+me is how weak it is.
+
+For examples, consider two posts, one about Doctor Whooves Adventures and one
+about AlphaGo. The Doctor Whooves Adventures post was in the works for almost
+a month, and I spent a long time writing it because I didn't quite know what
+I wanted to say. (CHECK THE TIME). In contrast, I wrote the AlphaGo post in a day,
+because I wanted to hit the anvil while it was hot. In retrospect, the AlphaGo
+post was much, much better. Even accounting for having more experience, I have
+trouble believing that a few blog posts of practice let me produce better
+content in a day than I could in a month.
+
+The real lesson here is that if writing is the process that turns ideas into
+words, then writing is a lot easier if you already have a feeling on what
+you want to say.
+
+Of course, you still need to edit, and you still need to revise, but sometimes
+you find a good phrasing right away.
+
+
+Lesson: More Eyes Is Strongly Correlated With Writing Quality
+------------------------------------------------------------------------------
+
+I've asked for feedback on three posts: biasing a fair coin, my thoughts on
+graduate school, and an introduction to secure computation. Every single
+post got astoundingly better once I got other people's feedback.
+
+Everyone can read something only once. Trying to recapture reading with a set
+of fresh eyes is hopeless, and eventually the brain glazes over the minor details,
+like sentence structures or old ideas. It's been extraordinarily helpful to
+get feedback on the tone or clarity of the post.
+
+I've been trying to get better at editing by myself, but even the best writers
+have other people read their drafts. There's no shame in it.
+
+(EXPAND? PHIL FISH QUOTE?)
+
+
+Lesson: Quality Correlates Weakly With Popularity
+------------------------------------------------------------------------------
+
+According to Google Analytics, my most popular posts are
+
+* Secure Computation
+* Grad School Thoughts
+* Mystery Hunt 2016 Wrap-Up
+
+Secure computation wins by a mile because I submitted it to HN, and it was
+on the front page for a day. Grad School Thoughts got very good traction
+among my Facebook friends and I tried submitting it to HN. Mystery Hunt 2016 Wrap-Up
+was submitted to the Mystery Hunt subreddit.
+
+Right now, the viewership of my blog is almost entirely decided by whether I
+share it outside Facebook, and whether it gets traction outside Facebook.
+
+By my standards of quality, my best posts are Grad School Thoughs, AlphaGo,
+and A Gentle Introduction to SEcure Computation. They also happen to be three
+of my four most recent posts (not counting this one.)
+
+
+
