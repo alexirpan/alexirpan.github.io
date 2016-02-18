@@ -65,7 +65,7 @@ day one. *I gave myself leeway, and still overshot it every time.*
 
 My most productive blogging hours start near midnight, and I've definitely
 lost sleep while revising drafts. (In fact, I'm doing it right now. Check
-the commit history, you'll find a commit at 1 PM.)
+the commit history, you'll find a commit at 1 AM Pacfic time.)
 
 (Incidentally, this is the biggest argument for why you should consider
 a [CFAR workshop](http://rationality.org/workshops/) if you have the money.
