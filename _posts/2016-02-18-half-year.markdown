@@ -126,11 +126,12 @@ much the past 6 months. (REORDER)
 Off the top of my head, I have four posts I want to write, and have no work
 on any of them.
 
-Sometimes, people think they're boring. They think they're nothing special, that
-they don't have interesting perspectives or lives. I suppose it's good I don't
-know any narcissists.
-
-But now? I'm quite sure the opposite is true.
+Occasionally, people have thanked me for my writing, or called me interesting
+or special. I'm honored, and I'm very proud of some of my posts, but I don't
+think I'm owed that praise. From my perspective, I've seen some ideas,
+I've thought about parts of my life, and I decided it was worth sharing. Other
+people go through the same things. The only difference is whether they share
+it or not.
 
 > Everybody has a secret world inside of them. All of the
 > people in the whole world, I mean everybody. No matter how dull and boring they
@@ -141,11 +142,13 @@ But now? I'm quite sure the opposite is true.
 (Neil Geiman, *The Sandman*)
 {. :centered }
 
-Everybody's interesting. Everybody's cool. We just don't show it, because it's
+People think they're boring, that they're nothing special, that their lives
+are cookie cutter and their perspectives are mainstream, but I'm confident
+that's all wrong. Everybody's interesting.
+Everybody's cool. We just don't show it, because it's
 so hard to expose it and we worry about being judged and ridiculed for our
 own brand of stupidity. It's a wonderfully naive, goofy, idealistic viewpoint,
-*and I plan to own the hell out of it.*
-
+and I own the hell out of it.
 I've got the rest of my life to become a cynical old man. Why should I try
 to get there any faster?
 
@@ -158,68 +161,90 @@ But if I'm honest, that's all far out the horizon.
 I Actually Have A Writing Style
 -------------------------------------------------------------------------------
 
-I made a deliberate choice to keep this blog as colloquial as possible. It's
-my site, I don't give a shit if people look down on me for using contractions
-or swearing.
+I made a deliberate choice to keep this blog colloquial. It's my blog and my
+voice. I don't give a shit if people look down on me for using contractions
+or swearing. I write about things I like in the way I like to read them, and
+if anyone else cares, that's just a bonus.
 
-At the same time, I've noticed my writing becomes very reptitive if I'm not careful
-about it. I love, love using parallelism. I'm fond of starting sentences with
-"And" or "But", because I like how the period before the connective (CHECK?)
-stops and starts the reading flow.
+One unintended result is that I've become more aware of my speech patterns,
+because they show up in my writing patterns. I start lots of sentences
+with "and" or "but" because I like the abruptness of starting with
+a conjnction. I abuse parallel structure because it's simple, it's straightforward,
+and it's an easy way to link disparate ideas together.
 
-I adopted short paragraphs because they're an easy way to highlight specific
-ideas.
+I've adopted short paragraphs because they're very good at highlighting
+specific ideas I want to get across.
 
-I start lots of sentences with I, pretending like it's for repetition, but
-it's really because it's easier than figuring out more unique sentence
-constructions.
+However, that's not necessarily a good thing. One thing I've struggled with
+is making sure my sentence lengths and word choices are varied. If I'm not
+careful, every sentence will meander, and words will pop up again and again
+because I'm more used to using them. It's just how my thought process works.
 
-I don't if this is my style or if it's just my writing habits. Maybe the two
-are the same thing.
+I'm not sure if this counts as a writing style. It may just be my writing
+habits. Or, maybe there isn't a great distinction between the two.
 
 
-Effort Has Weak Correlation With Writing Quality
+Experience, Not Effort, Is The Biggest Factor In Quality
 -------------------------------------------------------------------------------
 
-The correlation between effort and quality seems obvious, but what surprised
-me is how weak it is.
+This one surprised me. My writing quality depends almost entirely on how well
+I understand the ideas behind it.
 
-For examples, consider two posts, one about Doctor Whooves Adventures and one
-about AlphaGo. The Doctor Whooves Adventures post was in the works for almost
-a month, and I spent a long time writing it because I didn't quite know what
-I wanted to say. (CHECK THE TIME). In contrast, I wrote the AlphaGo post in a day,
-because I wanted to hit the anvil while it was hot. In retrospect, the AlphaGo
-post was much, much better. Even accounting for having more experience, I have
-trouble believing that a few blog posts of practice let me produce better
-content in a day than I could in a month.
+Consider two posts, one about [Doctor Whooves Adventures](http://www.alexirpan.com/2015/09/24/how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy.html),
+and the other about [AlphaGo](http://www.alexirpan.com/2016/01/28/deepmind-go.html).
 
-The real lesson here is that if writing is the process that turns ideas into
-words, then writing is a lot easier if you already have a feeling on what
-you want to say.
+The first was very difficult for me to write. I didn't know why I liked
+*Doctor Whooves Adventures*, and even after writing about it I find it hard
+to articulate what makes the radio play so entertaining. Over two weeks, I
+agonized on how to express why the show was so good, on what to spoil and
+what not to spoil. Eventually, I posted my final draft to a lukewarm response.
+On re-read, it's a weak post.
 
-Of course, you still need to edit, and you still need to revise, but sometimes
-you find a good phrasing right away.
+On the other hand, the post on AlphaGo was written in a single night.
+I wanted to hit the hammer (CHECK) while it was hot. I've been writing proofs
+since 9th grade, gave a math talk in 11th grade, and had just finished
+TAing a discrete math course, so I had lots of experience explaining technical
+material to unfamiliar audiences. I wrote a first draft, spent an hour revising
+it, and released it next morning. It was one of my most popular posts, and
+although it could be cleaned up, the core ideas are all there.
+
+Writing is the process that turns ideas into words. It turns out it's a lot
+easier if you already know how you want to express those ideas are. It's not
+a coincidence that many of my better posts are technical explanations instead
+of thinkpieces.
+
+(REPHRASE)
+
+Hopefully I'll get better at non-technical writing in the upcoming months.
+
+(ADD TO THINGS HERE)
 
 
-More Eyes Is Strongly Correlated With Writing Quality
+The Second Biggest Factor Is Peer Review
 ------------------------------------------------------------------------------
 
-I've asked for feedback on three posts: biasing a fair coin, my thoughts on
-graduate school, and an introduction to secure computation. Every single
-post got astoundingly better once I got other people's feedback.
+I've sent drafts for feedback on three posts: biasing a fair coin, my thoughts on
+graduate school, and an introduction to secure computation. Every one got
+astoundingly better.
 
-Everyone can read something only once. Trying to recapture reading with a set
-of fresh eyes is hopeless, and eventually the brain glazes over the minor details,
-like sentence structures or old ideas. It's been extraordinarily helpful to
-get feedback on the tone or clarity of the post.
+I think this is something about writing that everyone knows is true, but it's
+hard to describe how much it actually helps. The first impression is both
+important and impossible to recreate. Eventually, the brain glazes over the
+minor details, and gets set into its own interpretation of the sentences.
 
-I've been trying to get better at editing by myself, but even the best writers
-have other people read their drafts. There's no shame in it.
+> I don't know what I think of it anymore, I've been staring at it for so long.
+> I can't tell. I really can't tell if it's good or not. [... I] don't even
+> see the mistakes anymore.
 
-(EXPAND? PHIL FISH QUOTE?)
+(Phil Fish, *Indie Game: The Movie*)
+{: .centered }
+
+Even the best writers send drafts to editors and friends. There's no shame in
+it. In fact, it's more surprising that I didn't value peer review so
+highly before now. Somehow, that concept didn't enter my brain until now.
 
 
-Quality Correlates Weakly With Popularity
+Quality Doesn't Automatically Lead To Popularity
 ------------------------------------------------------------------------------
 
 According to Google Analytics, my most popular posts are
@@ -228,17 +253,36 @@ According to Google Analytics, my most popular posts are
 * Grad School Thoughts
 * Mystery Hunt 2016 Wrap-Up
 
-Secure computation wins by a mile because I submitted it to HN, and it was
-on the front page for a day. Grad School Thoughts got very good traction
-among my Facebook friends and I tried submitting it to HN. Mystery Hunt 2016 Wrap-Up
-was submitted to the Mystery Hunt subreddit.
+However, the popularity is only loosely connected to the content
+
+* I submitted the post on secure computation to Hacker News, and it was on
+the front page for a day.
+* I also submitted my graduate school post to Hacker News. That one didn't
+stick, but it got very good traction among Facebook friends (who were almost
+all in college and could relate to many of my thoughts.)
+* And finally, I shared the Mystery Hunt post on the Mystery Hunt subreddit.
 
 Right now, the viewership of my blog is almost entirely decided by whether I
-share it outside Facebook, and whether it gets traction outside Facebook.
+share it outside Facebook or not. Alright, so what if I ignore that? All of
+my blog posts are shared on my personal Facebook. By activity there,
+my most popular posts are
 
-By my standards of quality, my best posts are Grad School Thoughs, AlphaGo,
-and A Gentle Introduction to SEcure Computation. They also happen to be three
-of my four most recent posts (not counting this one.)
+* Grad School Thoughts
+* Things I Did In My Khan Academy Internship
+* Tie between Go: More Complicated Than Go Fish and Simulating a Biased Coin With A Fair One
+
+And although this is closer to my standard of quality, I'd rank my Secure
+Computation Post as better than my Khan Academy post.
+
+Again, it's an obvious point, but popularity is driven by several factors
+besides quality. I'm a bit stat obsessed about my blog, probably more than is
+healthy, and I need to remember to judge posts by myself instead of by
+view count.
 
 
+Yes, Writing More Is Helping
+-------------------------------------------------------------------------------
 
+It's not a coincidence that my best posts are my more recent ones. I can't find
+the source, but I've heard everybody cringes when they read their past
+writing, and I'm no exception. 
