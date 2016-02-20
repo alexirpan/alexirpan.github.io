@@ -5,90 +5,133 @@ date:   2016-02-18 00:15:00 -0800
 ---
 
 Just over six months ago, I [rebooted my personal site](http://www.alexirpan.com/2015/08/18/hello-world-again.html)
-and started blogging. Half a year seemed like a good milestone to look back on.
-Every blog inevitably talks about itself, and now's the time.
-(I'll admit it also gives me a good reason to link lots of old posts.)
+and started blogging. Half a year seemed like a good milestone to do a retrospective.
+Besides, the part of me that loves all things meta wouldn't forgive myself if I
+missed a chance for a self-referential blog post.
+
+\*\*\*
+{: .centered }
 
 When I started blogging, I had three goals.
 
-* Introduce people to interesting technical concepts, with focus on concepts that
-don't rely on too much prior knowledge.
-* Make it easy for me to practice writing by giving myself a platform to share
-ideas to a wider audience, then actually write posts.
-* Write about somethign itneresting?
+* Give myself a platform that let me focus almost entirely on creating content,
+ideally with as much transparency as possible.
+* Use that platform to write technical posts about anything I thought was
+interesting.
+* Also use that platform to improve my non-technical writing, by writing
+about the shows and comics I liked.
 
-So far, I'd say I'm making good progress on the first, okay on the second, and
-not very much on the third. I expected my blog to be much more cohesive than
-it became. My guess was 50% technical posts and 50% posts about stories I liked,
-but it ended up becoming more like an extension of my thoughts, which are
-off-the-wall almost by choice.
-
-(TODO better introduction.)
+So far, I've done well on the first two and not so well on the last.
+I wasn't expecting my blog to be so scattered - it's not quite a technical
+blog and not quite a non-technical one, it just is. I guess that's the
+consequence of treating my blog as a more polished version of my thoughts.
 
 
 Github Pages Was A Good Call
 ------------------------------------------------------------------------------
 
-Although there was upfront cost, hosting on Github Pages was definitely a good
-call. Free web hosting that auto-scales if I need it to is a huge plus, and I
-don't have any interactive content anyways. (Not that I need the auto-scaling...)
+It's admittedly barebones, but Github Pages has been a wonderful platform
+for my personal site. Free web hosting, total control over my site's content,
+a transparent build process that lets me preview my site without an
+internet connection, and complete edit history thanks to Git. I know it's
+incredibly nerdy to say this, but getting to write my blog posts in
+Markdown using vim is amazing.
 
-It's a bit annoying that I had to add analytics and comments by myself,
-but the gains outweigh the losses by far. This is a very programmer thing to
-say, but writing my blog posts in vim has been wonderful. (For the record,
-I'm not text editor-ist. Emacs and Sublime are welcome to hang out.)
-Like I said in my first post: WYSIWYG editors be damned, all I need is a
-terminal.
+After the upfront cost of getting my site working, writing all of my posts
+and adding new functionality has been straightforward. As of now, I have
+image files, audio files, syntax highlighting, Youtube embeds, spoiler buttons,
+and KaTeX enabled. Not only does it all work, I know exactly how it all
+works, since none of the functionality is abstracted away into plugins. It's
+all handrolled.
 
-It's also nice that if I choose to, I could tweak the styling of my site
-as much as I wanted. Complete transparent control over my site's content is
-a beautiful thing. When I needed to add math, I could easily choose to use
-KaTeX instead of MathJax. And when it turned out KaTeX and kramdown didn't
-mix well, I could write the Javascript hotfix myself.
-(Don't ask how the regex works, it just does.)
+The only weird bug I've run into is a conflict between
+[KaTeX and kramdown](https://github.com/Khan/KaTeX/issues/20#issuecomment-133649914),
+but even that wasn't terrible.
+Since I had control over the site content, I could
+[add a hotfix](https://github.com/alexirpan/alexirpan.github.io/commit/bb00924acd5e1e1c5fbca8fd25847058f1d9ad1c) myself.
+(Please don't ask how the regex works, it just does.)
 
 
 
-Holy Shit, Writing Takes Time
+Writing Takes Even Longer Than I Imagined
 ------------------------------------------------------------------------------
 
-As someone who's struggled with essays his whole life, I knew writing was hard.
-What I didn't expect was to always, always take longer than I thought to
-write something. Note that this is with knowing about planning fallacy from
-day one. *I gave myself leeway, and still overshot it every time.*
+As someone who's struggled with essays his whole life, I had no plans to
+even attempt an update schedule. If I had one, I knew I either wouldn't make it
+or would feel obligated to write something even when I didn't have good ideas.
+
+What I didn't expect was that when I did decide to write a post, it would
+always, always take longer to finish than I thought it would. And for the record,
+I knew about planning fallacy from day one. On every post, I gave myself leeway,
+and I *still overhot it.* As Douglas Hofstadter puts it,
 
 > Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.
 
-(Douglas Hofstadter, *Gödel, Escher, Bach*)
+(*Gödel, Escher, Bach*)
 {: .centered}
 
-(EXPLAIN THE LINK)
-My most productive blogging hours start near midnight, and I've definitely
-lost sleep while revising drafts. In fact, I'm doing it right now! Check
-the commit history for this post, you'll find a commit at 1 AM Pacific time. I need
-to wake up early too...
-
-In fact, let's look at my first technical post, about how to [efficiently turn a
-fair coin into a biased one](http://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.html).
-Thanks to Git, I have timestamps of every single commit.
+Running into Hofstadter's Law again and again wouldn't be so bad if my most
+productive blogging hours weren't at night. As it stands, I get most of
+writing done around midnight. To show how bad this can been, let's look at my
+[first technical post](http://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.html).
+Pulling up the timestamps of all my Git commits gives this.
 
 ![Commits for coins branch](/public/half-year/coins-commits.png)
 {: .centered}
 
-First commit at 2 AM, worked on it the next day from 9 PM til midnight, started
-a final pass Saturday midnight and stayed up until 3:40 AM, then finally released
-it Sunday evening.
+Pictured: a slow descent into madness
+{: .centered}
 
-It's worse for my larger posts. My first draft about research and graduate school
-was from October. I put it off until November, joking that it would take me
-until December to finish it. The post actually came out mid-January, and this
-is with the freedom I had from winter break.
 
-(Incidentally, this is the biggest argument for why you should consider
+If you read carefully, you can see the hours of lost sleep
+
+* Initial work saved at Thursday, 2 AM
+* First draft of words and diagrams done Friday night, from 9 PM to midnight.
+* Revising session on Saturday Night, starting at 11 PM and ending at
+*3:40 AM*.
+* Final proofreading and launch on Sunday evening. Attempt to fix my sleep
+schedule in time for Monday fails miserably.
+
+You'd think I'd have learned my lesson, but sadly I haven't.
+In fact, I'm doing something similar right now. Check the commit history for
+this post, you'll find a commit at 1 AM. No way I'm going to be awake for
+my morning classes...
+
+![Commits for half-year branch](/public/half-year/halfyear-commits.png)
+{: .centered}
+
+Pictured: descent into madness, complete
+{: .centered}
+
+
+It's worse for my larger posts. My [post on my feelings towards graduate school](
+http://www.alexirpan.com/2016/01/03/grad-school.html) was written over a month
+of winter break. Like all good programmers, I express my rage through commit logs,
+and wow, there are some gems here.
+
+> More things. All the things. man whose going to read these commits anyways (Sat Dec 19 03:36:46 2015)
+
+> Time to in medias res this shit up (Sat Dec 26 16:50:37 2015)
+
+> Too lazy to make good commit message (Sun Jan 3 18:28:00 2016)
+
+> Cut a paragraph from the email. Close to something I'm okay releasing, one more reread (Sat Jan 9 01:38:18 2016)
+
+> Okay, more changes than I thought. Going to reread again (Sat Jan 9 22:55:00 2016)
+
+> This post keeps getting longer and longer... (Sun Jan 10 02:48:04 2016)
+
+> URGH JUST SHIP IT. (Sun Jan 10 11:50:03 2016)
+
+(Incidentally, this is a good argument for why you should consider
 a [CFAR workshop](http://rationality.org/workshops/) if you have the money.
-Knowledge of logical fallacies doesn't
-stop you from making them. I haven't done one because the cost is scary and my
-mind has lots of inertia, but it's slowly getting more appealing.)
+You can read about logical fallacies all you want, it doesn't stop you from
+making them. I haven't done one because the cost is scary and my
+mind is stupidly stubborn about some things, but I've been thinking about it.)
+
+
+Ideas are Easy, Execution is Hard
+-------------------------------------------------------------------------------
 
 I did some quick calculation, and turned up 14 posts in the past 6 months. (15
 if you count this one.) That works out to about one post every two weeks.
@@ -105,13 +148,6 @@ It baffles me that people can update their blogs several times a week while hold
 full time jobs. I certainly can't do that.
 Right now, I estimate I could go up to one post a week, and that's
 if I devoted a lot more and revised a lot less.
-
-
-
-
-
-Ideas are Easy, Execution is Hard
--------------------------------------------------------------------------------
 
 When I started this blog, I was worried I'd run out of topics to write about.
 It turns out the opposite is true; the limiting factor is time.
