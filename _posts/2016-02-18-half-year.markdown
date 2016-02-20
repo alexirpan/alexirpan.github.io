@@ -5,18 +5,49 @@ date:   2016-02-18 00:15:00 -0800
 ---
 
 Just over six months ago, I [rebooted my personal site](http://www.alexirpan.com/2015/08/18/hello-world-again.html)
-and started blogging.
+into the current blog.
 
-It's a milestone, of sorts, and the part of me that loves all things meta
-wouldn'tl forgive myself if I passed up the chance to blog about my blog.
-I decided it would be neat to collect all the little things I've learned in
-the past half year.
+I wasn't exactly sure how people would respond, but so far I've been pleasantly
+surprised. It's encouraging to know people like reading my own brand of
+stupidity.
+
+Half a year is a decent achievement,
+and the part of me that loves all things meta
+wouldn't forgive myself if I passed up a chance to write a blog post about
+my blogging experience.
+
+Here's a few things I've learned over the past half year.
 
 \*\*\*
 {: .centered }
 
-Github Pages Was A Good Call
-------------------------------------------------------------------------------
+# 1. My Writing is Getting Better
+
+Of my four most recent posts, not counting this one, three are in the running
+for my personal favorites. It's not a coincidence.
+
+I've heard everybody cringes when they read their past writing, and I'm no
+exception. But it's all part of the process. It reminds me of a quote
+from *Art & Fear*, by David Bayles.
+
+> The ceramics teacher announced on opening day that he was dividing the class into two groups. All those on the left side of the studio, he said, would be graded solely on the quantity of work they produced, all those on the right solely on its quality. His procedure was simple: on the final day of class he would bring in his bathroom scales and weigh the work of the “quantity” group: fifty pounds of pots rated an “A”, forty pounds a “B”, and so on. Those being graded on “quality”, however, needed to produce only one pot — albeit a perfect one — to get an “A”. Well, came grading time and a curious fact emerged: the works of highest quality were all produced by the group being graded for quantity. It seems that while the “quantity” group was busily churning out piles of work-and learning from their mistakes — the “quality” group had sat theorizing about perfection, and in the end had little more to show for their efforts than grandiose theories and a pile of dead clay.” 
+
+Or said more succinctly,
+
+> Sucking at something is the first step to becoming sorta good at
+> something.
+
+(Jack The Dog, *Adventure Time*)
+{: .centered }
+
+(Oddly enough, I'm almost okay with
+[Retrospective on Friendship is Magic Season 5](http://www.alexirpan.com/2015/11/29/mlp-season-5-review.html).
+It must be too short to offend me.
+
+\*\*\*
+{: .centered }
+
+# 2. Github Pages Was A Good Call
 
 My main goal with the site reboot was to give myself a platform that
 let me focus almost entirely on creating content. Github Pages fit perfectly.
@@ -38,8 +69,7 @@ but even that wasn't terrible. After figuring out the issue, I could
 
 
 
-Writing Takes Even Longer Than I Imagined
-------------------------------------------------------------------------------
+# 3. Writing Takes Even Longer Than I Imagined
 
 I never planned to have an update schedule. If I had one, I knew I'd fall behind,
 and would feel obligated to write something even when I didn't have the time
@@ -108,8 +138,7 @@ Reading about logical fallacies doesn't stop you from making them.
 I haven't done one because the cost is scary, but I've thought about it.)
 
 
-Time Is The Limiting Factor
--------------------------------------------------------------------------------
+# 4. Time Is The Limiting Factor
 
 In the past 6 months, I've written fourteen posts. Fifteen, if you count this one.
 That averages to just over one post every 2 weeks.
@@ -134,8 +163,7 @@ I think people undervalue how impressive sticking to a schedule is. We'd all
 be a lot better off if we [valorized organization more](http://www.alexirpan.com/2015/09/01/optimizing-process.html).
 
 
-I Actually Have A Writing Style
--------------------------------------------------------------------------------
+# 5. I Actually Have A Writing Style
 
 I deliberately chose to keep this blog colloquial. It's my blog, it's my
 voice, and I don't give a shit about formal writing conventions. If
@@ -172,8 +200,7 @@ will become dull and laggard.
 I can recognize good writing. The hard part is actually making it.
 
 
-Experience, Not Effort, Is The Biggest Factor In Quality
--------------------------------------------------------------------------------
+# 6. Experience, Not Effort, Is The Biggest Factor In Quality
 
 This one surprised me. Consider two posts, one about [Doctor Whooves Adventures](http://www.alexirpan.com/2015/09/24/how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy.html),
 and the other about [AlphaGo](http://www.alexirpan.com/2016/01/28/deepmind-go.html).
@@ -210,8 +237,7 @@ As with all things, I can do it if I put in enough time. The only question
 is whether I can allocate enough time, and whether I want to.
 
 
-Peer Review Is Amazing
-------------------------------------------------------------------------------
+# 7. Peer Review Is Amazing
 
 On most posts, I don't ask friends to read them first. I've been
 trying to practice my revision skills, and it feels like cheating to outsource
@@ -236,8 +262,7 @@ it. What's more surprising is how little I valued this process before now.
 It's something I had to go through many times to fully appreciate.
 
 
-Popularity Is More About Exposure Than Quality
-------------------------------------------------------------------------------
+# 8. Popularity Is More About Exposure Than Quality
 
 According to Google Analytics, my most viewed posts are:
 
@@ -262,34 +287,6 @@ I know it's obvious, but it bears repeating: **popular things are not always goo
 good things are not always popular.** I'm a bit obsessed with refreshing my
 blog analytics, more than is healthy, and I need to remember to divorce my
 feelings about a post from its view count.
-
-
-My Writing is Getting Better
--------------------------------------------------------------------------------
-
-Of my four most recent posts, not counting this one, three are in the running
-for my personal favorites. It's not a coincidence.
-
-I've heard everybody cringes when they read their past writing, and I'm no
-exception. But it's all part of the process. It reminds me of a quote
-from *Art & Fear*, by David Bayles.
-
-> The ceramics teacher announced on opening day that he was dividing the class into two groups. All those on the left side of the studio, he said, would be graded solely on the quantity of work they produced, all those on the right solely on its quality. His procedure was simple: on the final day of class he would bring in his bathroom scales and weigh the work of the “quantity” group: fifty pounds of pots rated an “A”, forty pounds a “B”, and so on. Those being graded on “quality”, however, needed to produce only one pot — albeit a perfect one — to get an “A”. Well, came grading time and a curious fact emerged: the works of highest quality were all produced by the group being graded for quantity. It seems that while the “quantity” group was busily churning out piles of work-and learning from their mistakes — the “quality” group had sat theorizing about perfection, and in the end had little more to show for their efforts than grandiose theories and a pile of dead clay.” 
-
-Or said more succinctly,
-
-> Sucking at something is the first step to becoming sorta good at
-> something.
-
-(Jack The Dog, *Adventure Time*)
-{: .centered }
-
-(Oddly enough, I'm almost okay with
-[Retrospective on Friendship is Magic Season 5](http://www.alexirpan.com/2015/11/29/mlp-season-5-review.html).
-It must be too short to offend me.
-
-\*\*\*
-{: .centered }
 
 
 The Next Six Months
