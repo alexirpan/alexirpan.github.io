@@ -92,9 +92,11 @@ Pictured: descent into madness, complete
 {: .centered}
 
 
-It's worse for my larger posts. My [post on my feelings towards graduate school](
-http://www.alexirpan.com/2016/01/03/grad-school.html) was written over a month
-of winter break. Like all good programmers, I express my rage through commit logs,
+This procrastination is even worse for my larger posts. My post
+[about my thoughts on graduate school](
+http://www.alexirpan.com/2016/01/03/grad-school.html) was
+written during a month of winter break.
+Like all good programmers, I express my rage through commit messages,
 and wow, there are some gems here.
 
 > More things. All the things. man whose going to read these commits anyways (Sat Dec 19 03:36:46 2015)
@@ -103,47 +105,44 @@ and wow, there are some gems here.
 
 > Too lazy to make good commit message (Sun Jan 3 18:28:00 2016)
 
-> Cut a paragraph from the email. Close to something I'm okay releasing, one more reread (Sat Jan 9 01:38:18 2016)
-
-> Okay, more changes than I thought. Going to reread again (Sat Jan 9 22:55:00 2016)
-
-> This post keeps getting longer and longer... (Sun Jan 10 02:48:04 2016)
-
 > URGH JUST SHIP IT. (Sun Jan 10 11:50:03 2016)
 
-(Incidentally, this is a good argument for why you should consider
-a [CFAR workshop](http://rationality.org/workshops/) if you have the money.
-You can read about logical fallacies all you want, it doesn't stop you from
-making them. I haven't done one because the cost is scary and my
-mind is stupidly stubborn about some things, but I've been thinking about it.)
+(Incidentally, this is why you should consider a [CFAR workshop](http://rationality.org/workshops/).
+Reading about logical fallacies doesn't stop you from making them.
+I haven't done one because the cost is scary, but I've thought about it.)
 
 
 Time Is The Limiting Factor
 -------------------------------------------------------------------------------
 
-I've written fourteen posts in the past 6 months. (Fifteen, if you count this
-one.) That works out to about one post every 2 weeks.
+In the past 6 months, I've written fourteen posts. Fifteen, if you count this one.
+That averages to just over one post every 2 weeks.
 
-When I started this blog, I was worried I wouldn't have things to say, but
-the opposite has turned true; I have so many posts I'd like to create, and
+It turns out I have blog-worthy ideas more often than twice a week.
+When I started writing, I was worried I'd run out of things to say, but
+the opposite has turned true; I have so many posts I want to write, and
 don't have the time to turn them all into reality.
 
 I consider myself a slow person, both in problem solving and writing.
-I don't care what my grades say, it's very rare for me to figure out the right
-approach likes others seem to do, and most of my success comes from brute force
-instead of clever insight. I have to turn an idea once in the head and thrice on
-the page before I'm satisfied with it.
+It's very rare for me to solve a problem at first glance, and most of my
+success comes from brute force experience instead of latent ability.
+And when it comes to writing, I have to phrase an idea once in the head
+and thrice on the page before I'm satisfied.
 
-It baffles me that [Slate Star Codex](http://slatestarcodex.com/)
-updates at least once a week. I'm confused by [web serials](https://parahumans.wordpress.com/)
-that release new chapters like clockwork. I certainly can't do that.
+ADD ONE MORE THING TO ABOVE PARAGRAPH FOR RULE OF THREE
 
-I think people don't respect how impressive sticking to a schedule is. Or if
-they do, they don't respect it enough.
+It baffles me that [web serials](https://parahumans.wordpress.com/) and blogs
+like [Slate Star Codex](http://slatestarcodex.com/) update at least once a week,
+because I certainly can't do that. I'm too sloppy and undisciplined.
+
+I think people undervalue how impressive sticking to a schedule is. We'd all
+be a lot better off if we [valorized organization more](http://www.alexirpan.com/2015/09/01/optimizing-process.html).
 
 
 Blogging Isn't Special, But People Who Don't Think Differently
 ------------------------------------------------------------------------------
+
+MAKE A BETTER HEADING TITLE
 
 Occasionally, people have praised my writing, or thanked me for sharing my
 viewpoint, or called me special. I'm honored, and I'm very proud of some of my
@@ -158,7 +157,7 @@ that I've shared mine in a blog post instead of over beer at someone's house.
 > Thousands maybe.
 
 (Neil Geiman, *The Sandman*)
-{. :centered }
+{: .centered }
 
 People think they're boring.
 
@@ -179,23 +178,34 @@ Why should I try to get there any faster?
 I Actually Have A Writing Style
 -------------------------------------------------------------------------------
 
-I made a deliberate choice to keep this blog colloquial. It's my blog. It's my
-voice. I don't give a shit if people look down on me for using contractions
-or swearing. I'll write about things I like in the way I like to read them, and
-if anyone else cares, that's just a bonus.
+I deliberately chose to keep this blog colloquial. It's my blog, it's my
+voice, and I don't give a shit about the conventions of formal writing. If
+I want to use contractions or swear a bit, I will. If my posts drag on a bit,
+that's part of who I am.
 
-It's made it much easier for me to produce content, but one unintended side
-effect is that I've become more aware of my speech patterns.
-I start lots of sentences with "and" or "but" because I like the abruptness of starting with
-a conjnction. I abuse parallel structure because it's simple, it's straightforward,
-and it's an easy way to link disparate ideas together. I've adopted one sentence
-paragraphs because they're very good for pounding ideas with great force.
+I don't want to feel obligated to write a certain way, or write only about
+certain things. I want to write something that I'll want to read later.
+If anyone else thinks my writing is cool, it's just a bonus.
 
-It's pretty cool, but it also means I have to spend lots of time revising.
-If I'm not careful, my sentences will all start with "I" or "It's", or they'll
-all be stuctured the same way, or I'll accidentally use an uncommon word in
-two adjacent sentences, or a whole host of errors that subtly weaken my prose.
-Hopefully I can avoid these traps in the future.
+Throwing off the shackles of formal writing voice made it much easier
+to produce content, but I've also found an unintended side effect.
+Once I tried to [write like how I'd talk if I had the time to phrase things
+just right](http://paulgraham.com/talk.html), I started noticing patterns
+in my writing. I'm fond of starting sentences with "and" or "but" or "because";
+I like the abruptness of the conjunction. I force parallel structure wherever
+I can; it's simple, it's straightforward, and it's an easy way to make
+disparate ideas seem connected. I've adopted short, one sentence paragraphs;
+they're very good when you want to pound ideas with great force.
+
+It's neat that I'm getting better at analyzing my own writing,
+but it also means I have to spend lots of time revising.
+If I'm not careful, all my sentences end up starting with "I" or "It's",
+or they all have similar structure, or I'll use a word too often and make
+my writing sound repetitive.
+
+There's no formal guidelines I'm following when I do this.
+All my editing is done by feel. I can recognize good writing; the hard part is
+actually making it.
 
 
 Experience, Not Effort, Is The Biggest Factor In Quality
