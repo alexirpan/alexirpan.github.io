@@ -41,36 +41,39 @@ Or said more succinctly,
 (Jack The Dog, *Adventure Time*)
 {: .centered }
 
-(Oddly enough, I'm almost okay with
-[Retrospective on Friendship is Magic Season 5](http://www.alexirpan.com/2015/11/29/mlp-season-5-review.html).
-It must be too short to offend me.
+The only post of my I would leave unchanged is
+["How Do You Feel About Grad School"](http://www.alexirpan.com/2016/01/03/grad-school.html),
+and that's because I spent the better part of a month editing it. (Oddly enough,
+[Retrospective on Friendship is Magic Season 5](http://www.alexirpan.com/2015/11/29/mlp-season-5-review.html)
+is very close to good enough in my eyes. It must be too short to offend me.)
 
 \*\*\*
 {: .centered }
 
-# 2. Github Pages Was A Good Call
 
-My main goal with the site reboot was to give myself a platform that
-let me focus almost entirely on creating content. Github Pages fit perfectly.
-Free web hosting, total control over my site's content,
-a transparent build process that lets me preview my site from my laptop,
-and free edit history and backups thanks to Git.
+# 2. If You're A Programmer, Consider Github Pages
+
+When I rebooted my personal site. I wanted a site that
+let me focus entirely on creating content. [Github Pages](https://pages.github.com/)
+fit perfectly. Free web hosting, total control over my site's content,
+a transparent build process, and free edit history and backups thanks to Git.
 
 I know it's incredibly nerdy to say this, but getting to write my blog posts
-with Vim makes is fantastic. So far, I have image files, audio files, code
-highlighting, Youtube embeds, spoiler buttons, and typeset math (implemented with [KaTeX](http://khan.github.io/KaTeX/)).
-Not only does it all work, I know exactly how it all works, because none
-of the functionality is abstracted away.
+with Vim is fantastic. Github Pages strikes a nice balance between ease of use
+and extensibility. So far, my blog uses images, audio clips, code
+highlighting, Youtube embeds, spoiler buttons, typeset math (implemented with [KaTeX](http://khan.github.io/KaTeX/)),
+comments (from Disqus), and analytics (from Google Analytics).
+Not only does it all work, I know how it all works, which is a huge plus.
 
-The only weird bug I've run into is a conflict between
-[KaTeX and kramdown](https://github.com/Khan/KaTeX/issues/20#issuecomment-133649914),
-but even that wasn't terrible. After figuring out the issue, I could
-[add a hotfix](https://github.com/alexirpan/alexirpan.github.io/commit/bb00924acd5e1e1c5fbca8fd25847058f1d9ad1c) myself.
-(Please don't ask how the regex works. It just does.)
+If you're familiar with Git, it's surprising how natural it feels to write blog
+posts. The only weird bug I've had is a conflict between
+[KaTeX and the Markdown rendering engine](https://github.com/Khan/KaTeX/issues/20#issuecomment-133649914),
+but even that wasn't terrible. After figuring out the issue, I
+[added a hotfix](https://github.com/alexirpan/alexirpan.github.io/commit/bb00924acd5e1e1c5fbca8fd25847058f1d9ad1c)
+the next day. (Please don't ask how the regex works. It just does.)
 
 
-
-# 3. Writing Takes Even Longer Than I Imagined
+# 3. Writing Will Take Longer Than You Think
 
 I never planned to have an update schedule. If I had one, I knew I'd fall behind,
 and would feel obligated to write something even when I didn't have the time
@@ -139,7 +142,7 @@ Reading about logical fallacies doesn't stop you from making them.
 I haven't done one because the cost is scary, but I've thought about it.)
 
 
-# 4. Time Is The Limiting Factor
+# 4. Don't Worry About Ideas. Worry About Time
 
 In the past 6 months, I've written fourteen posts. Fifteen, if you count this one.
 That averages to just over one post every 2 weeks.
@@ -164,7 +167,7 @@ I think people undervalue how impressive sticking to a schedule is. We'd all
 be a lot better off if we [valorized organization more](http://www.alexirpan.com/2015/09/01/optimizing-process.html).
 
 
-# 5. I Actually Have A Writing Style
+# 5. You'll Have a Writing Style, Whether You Notice It Or Not
 
 I deliberately chose to keep this blog colloquial. It's my blog, it's my
 voice, and I don't give a shit about formal writing conventions. If
@@ -238,7 +241,7 @@ As with all things, I can do it if I put in enough time. The only question
 is whether I can allocate enough time, and whether I want to.
 
 
-# 7. Peer Review Is Amazing
+# 7. Do Peer Review Whenever You Can
 
 On most posts, I don't ask friends to read them first. I've been
 trying to practice my revision skills, and it feels like cheating to outsource
@@ -263,7 +266,7 @@ it. What's more surprising is how little I valued this process before now.
 It's something I had to go through many times to fully appreciate.
 
 
-# 8. Popularity Is More About Exposure Than Quality
+# 8. Try Not To Get Hung Up On Popularity
 
 According to Google Analytics, my most viewed posts are:
 
