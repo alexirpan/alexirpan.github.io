@@ -4,9 +4,8 @@ title:  "Six Months of Blogging: A Retrospective"
 date:   2016-02-18 00:15:00 -0800
 ---
 
-A few days ago, I noticed I was coming up on six months since my
-[personal site reboot](http://www.alexirpan.com/2015/08/18/hello-world-again.html).
-Half a year seemed like a good milestone to look back on.
+Just over six months ago, I [rebooted my personal site](http://www.alexirpan.com/2015/08/18/hello-world-again.html)
+and started blogging. Half a year seemed like a good milestone to look back on.
 Every blog inevitably talks about itself, and now's the time.
 (I'll admit it also gives me a good reason to link lots of old posts.)
 
