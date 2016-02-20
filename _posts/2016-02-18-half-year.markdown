@@ -213,10 +213,7 @@ Hopefully I can avoid these traps in the future.
 Experience, Not Effort, Is The Biggest Factor In Quality
 -------------------------------------------------------------------------------
 
-This one surprised me. My writing quality depends almost entirely on how well
-I understand the ideas behind it.
-
-Consider two posts, one about [Doctor Whooves Adventures](http://www.alexirpan.com/2015/09/24/how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy.html),
+This one surprised me. Consider two posts, one about [Doctor Whooves Adventures](http://www.alexirpan.com/2015/09/24/how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy.html),
 and the other about [AlphaGo](http://www.alexirpan.com/2016/01/28/deepmind-go.html).
 
 The first was very difficult for me to write. I didn't know why I liked
@@ -224,39 +221,50 @@ The first was very difficult for me to write. I didn't know why I liked
 to articulate what makes the radio play so entertaining. Over two weeks, I
 agonized on how to express why the show was so good, on what to spoil and
 what not to spoil. Eventually, I posted my final draft to a lukewarm response.
-On re-read, it's a weak post.
 
-On the other hand, the post on AlphaGo was written in a single night.
-I wanted to hit the hammer (CHECK) while it was hot. I've been writing proofs
-since 9th grade, gave a math talk in 11th grade, and had just finished
-TAing a discrete math course, so I had lots of experience explaining technical
-material to unfamiliar audiences. I wrote a first draft, spent an hour revising
-it, and released it next morning. It was one of my most popular posts, and
-although it could be cleaned up, the core ideas are all there.
+In comparison, the post on AlphaGo was written in a single night.
+I wanted to strike while the iron was hot, since I knew it would be a fleeting topic.
+Thanks to prior experience with the research areas involved, I was able to
+understand the paper one a first read, and thanks to thinking about these
+topics for over a year, I was able to quickly articulate my feelings about
+the result. (REPHARSE, RUNS ON.)
 
-Writing is the process that turns ideas into words. It turns out it's a lot
-easier if you already know how you want to express those ideas are. It's not
-a coincidence that many of my better posts are technical explanations instead
-of thinkpieces.
+When I look back at my past work, almost all of my favorite posts are technical
+posts, because that's what I have the most experience writing. I've been writing
+proofs since high school, gave a math talk in 11th grade, and did two research
+presentations last semester. Of course my technical posts are going to be better
+than my non-technical ones, I've literally had years of training.
 
-(REPHRASE)
+Writing is the process of turning ideas into words. It's a lot easier to do that
+if you've seen and explained these ideas before.
 
-Hopefully I'll get better at non-technical writing in the upcoming months.
+That's not saying I think all my non-technical writing is bad. My finest work is
+still [my post about graduate school](http://www.alexirpan.com/2016/01/03/grad-school.html),
+which was entirely a non-technical thinkpiece. (Seriously, go read it if you
+haven't. I doubt I'm ever going to write anything better.)
 
-(ADD TO THINGS HERE)
+As with all things, I can do it if I put in enough time. The only question
+is whether I can allocate enough time to learn something new.
 
 
-The Second Biggest Factor Is Peer Review
+Peer Review Is Amazing
 ------------------------------------------------------------------------------
 
-I've sent drafts for feedback on three posts: biasing a fair coin, my thoughts on
-graduate school, and an introduction to secure computation. Every one got
-astoundingly better.
+On most of my posts, I don't ask for feedback before posting them. I've been
+trying to practice my revision skills, and it felt like cheating to ask for
+impressions from other people.
+
+However, on some posts I decide it's worth getting people to look at rough
+drafts. I've sent drafts out for three posts: the other two envelope problem, my thoughts on
+graduate school, and an introduction to secure computation.
+
+Every time, someone pointed out something I hadn't noticed, and every post got
+noticeably better after I incoporated their comments.
 
 I think this is something about writing that everyone knows is true, but it's
-hard to describe how much it actually helps. The first impression is both
-important and impossible to recreate. Eventually, the brain glazes over the
-minor details, and gets set into its own interpretation of the sentences.
+hard to describe how much feedback actually helps. You can't recreate the
+first impression. After tweaking sentences for so long, it can be hard to tell
+whether an idea is clear, or whether a paragraph flows properly.
 
 > I don't know what I think of it anymore, I've been staring at it for so long.
 > I can't tell. I really can't tell if it's good or not. [... I] don't even
