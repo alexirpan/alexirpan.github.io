@@ -259,72 +259,61 @@ drafts. I've sent drafts out for three posts: the other two envelope problem, my
 graduate school, and an introduction to secure computation.
 
 Every time, someone pointed out something I hadn't noticed, and every post got
-noticeably better after I incoporated their comments.
+noticeably better after I incorporated their comments.
 
 I think this is something about writing that everyone knows is true, but it's
-hard to describe how much feedback actually helps. You can't recreate the
-first impression. After tweaking sentences for so long, it can be hard to tell
-whether an idea is clear, or whether a paragraph flows properly.
-
-> I don't know what I think of it anymore, I've been staring at it for so long.
-> I can't tell. I really can't tell if it's good or not. [... I] don't even
-> see the mistakes anymore.
-
-(Phil Fish, *Indie Game: The Movie*)
-{: .centered }
+hard to describe how much asking feedback actually helps. It's impossible
+to recreate the first impression, and after reading so many drafts the sentences
+blur together. Getting someone else to read it helps bring in more perspective.
 
 Even the best writers send drafts to editors and friends. There's no shame in
-it. In fact, it's more surprising that I didn't value peer review so
-highly before now. Somehow, that concept didn't enter my brain until now.
+it. What's more surprising is how little I valued peer review before now.
+Somehow, that concept didn't enter my brain until now.
 
 
-Quality Doesn't Automatically Lead To Popularity
+Popularity Is More About Exposure Than Quality
 ------------------------------------------------------------------------------
 
-According to Google Analytics, my most popular posts are
+According to Google Analytics, my most viewed posts are:
 
 * Secure Computation
 * Grad School Thoughts
 * Mystery Hunt 2016 Wrap-Up
 
-However, the popularity is only loosely connected to the content
+Each post follows a pattern
 
-* I submitted the post on secure computation to Hacker News, and it was on
-the front page for a day.
-* I also submitted my graduate school post to Hacker News. That one didn't
-stick, but it got very good traction among Facebook friends (who were almost
-all in college and could relate to many of my thoughts.)
-* And finally, I shared the Mystery Hunt post on the Mystery Hunt subreddit.
+* I submitted the post on secure computation to Hacker News. It made front page,
+and stuck there for a day.
+* I also submitted the post on graduate school to Hacker News. That one didn't
+stick - it was both long and not quite aligned with good HN posts.
+* And finally, I shared my Mystery Hunt write-up to the Mystery Hunt subreddit.
 
-Right now, the viewership of my blog is almost entirely decided by whether I
-share it outside Facebook or not. Alright, so what if I ignore that? All of
-my blog posts are shared on my personal Facebook. By activity there,
-my most popular posts are
+Every other post was shared only to my Facebook.
 
-* Grad School Thoughts
-* Things I Did In My Khan Academy Internship
-* Tie between Go: More Complicated Than Go Fish and Simulating a Biased Coin With A Fair One
+The viewership of my blog is almost entirely decided by whether I share it
+ouside Facebook or not. By my rankings, my post on Go and my post about
+my [Khan Academy internship](http://www.alexirpan.com/2015/08/20/things-i-did-in-my-khan-academy-internship.html)
+both deserve more views.
 
-And although this is closer to my standard of quality, I'd rank my Secure
-Computation Post as better than my Khan Academy post.
-
-Again, it's an obvious point, but popularity is driven by several factors
-besides quality. I'm a bit stat obsessed about my blog, probably more than is
-healthy, and I need to remember to judge posts by myself instead of by
-view count.
+Again, I'm sure this is obvious, but popular things are not always good, and
+good things are not always popular. I'm a bit stat obsessed about my blog,
+probably more than is healthy, and I need to remember to divorce my feelings
+about a post from its view count.
 
 
 Yes, Writing More Is Helping
 -------------------------------------------------------------------------------
 
-It's not a coincidence that of my four most recent posts, three are in the running
-for the best quality. I've heard everybody cringes when they read their past
-writing, and I'm no exception; on almost every post I notice things I want to change.
-About the only post I'm okay with is my post about grad school, and that's
-because I've already looked at it for so long.
+Of my four most recent posts, not counting this one, three are in the running
+for my personal favorites. It's not a coincidence.
 
-(oddly enough, Retrospective on Friendship is Magic Season 5 got close. It
-must be too short for it to offend me too much.)
+I've heard everybody cringes when they read their past writing, and I'm no
+exception. Almost every post has something I'd change if I got another chance,
+but if I started going down that road, I'd spend my whole time endlessly
+tweaking sentences. About the only post I'm okay with is my post about
+grad school. (Oddly enough, I'm almost okay with
+[Retrospective on Friendship is Magic Season 5](http://www.alexirpan.com/2015/11/29/mlp-season-5-review.html).
+It must be too short to offend me.
 
 
 The Next Six Months
