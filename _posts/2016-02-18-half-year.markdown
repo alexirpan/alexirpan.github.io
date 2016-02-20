@@ -134,42 +134,6 @@ I think people undervalue how impressive sticking to a schedule is. We'd all
 be a lot better off if we [valorized organization more](http://www.alexirpan.com/2015/09/01/optimizing-process.html).
 
 
-Blogging Isn't Special, But People Who Don't Think Differently
-------------------------------------------------------------------------------
-
-MAKE A BETTER HEADING TITLE
-
-Occasionally, people have praised my writing, or thanked me for sharing my
-viewpoint, or called me special. I'm honored, and I'm very proud of some of my
-posts, but from my perspective it's not that impressive. Plenty of people I know
-have interesting ideas, many much better than mine, and the only difference is
-that I've shared mine in a blog post instead of over beer at someone's house.
-
-> Everybody has a secret world inside of them. All of the
-> people in the whole world, I mean everybody. No matter how dull and boring they
-> are on the outside, inside them they've all got unimaginable, magnificent,
-> wonderful, stupid, amazing worlds. Not just one world. Hundreds of them.
-> Thousands maybe.
-
-(Neil Geiman, *The Sandman*)
-{: .centered }
-
-People think they're boring.
-
-They think they're nothing special, that their lives are cookie cutter.
-They think their perspectives are mainstream and interests are dull.
-
-*But nothing could be further from the truth.*
-
-Everybody's interesting. Everybody's cool. It's just hard to see, because
-it's hidden behind layers of pleasantries and fear of judgment and ridicule.
-
-We've all got our own brand of stupidity, and it's worth sharing.
-It's a wonderfully naive, goofy, idealistic viewpoint, and I own the hell
-out of it. I've got the rest of my life to become a cynical old man.
-Why should I try to get there any faster?
-
-
 I Actually Have A Writing Style
 -------------------------------------------------------------------------------
 
@@ -300,17 +264,27 @@ blog analytics, more than is healthy, and I need to remember to divorce my
 feelings about a post from its view count.
 
 
-Writing More Is Helping
+My Writing is Getting Better
 -------------------------------------------------------------------------------
 
 Of my four most recent posts, not counting this one, three are in the running
 for my personal favorites. It's not a coincidence.
 
 I've heard everybody cringes when they read their past writing, and I'm no
-exception. Almost every post has something I'd change if I got another chance,
-but if I started going down that road, I'd spend my whole time endlessly
-tweaking sentences. About the only post I'm okay with is my post about
-grad school. (Oddly enough, I'm almost okay with
+exception. But it's all part of the process. It reminds me of a quote
+from *Art & Fear*, by David Bayles.
+
+> The ceramics teacher announced on opening day that he was dividing the class into two groups. All those on the left side of the studio, he said, would be graded solely on the quantity of work they produced, all those on the right solely on its quality. His procedure was simple: on the final day of class he would bring in his bathroom scales and weigh the work of the “quantity” group: fifty pounds of pots rated an “A”, forty pounds a “B”, and so on. Those being graded on “quality”, however, needed to produce only one pot — albeit a perfect one — to get an “A”. Well, came grading time and a curious fact emerged: the works of highest quality were all produced by the group being graded for quantity. It seems that while the “quantity” group was busily churning out piles of work-and learning from their mistakes — the “quality” group had sat theorizing about perfection, and in the end had little more to show for their efforts than grandiose theories and a pile of dead clay.” 
+
+Or said more succinctly,
+
+> Sucking at something is the first step to becoming sorta good at
+> something.
+
+(Jack The Dog, *Adventure Time*)
+{: .centered }
+
+(Oddly enough, I'm almost okay with
 [Retrospective on Friendship is Magic Season 5](http://www.alexirpan.com/2015/11/29/mlp-season-5-review.html).
 It must be too short to offend me.
 
