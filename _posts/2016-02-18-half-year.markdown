@@ -5,12 +5,12 @@ date:   2016-02-18 00:15:00 -0800
 ---
 
 Just over six months ago, I [rebooted my personal site](http://www.alexirpan.com/2015/08/18/hello-world-again.html)
-and started blogging. Half a year seemed like a good milestone to do a retrospective.
-Besides, the part of me that loves all things meta wouldn't forgive myself if I
-missed a chance for a self-referential blog post.
+and started blogging.
 
-In the past half year of managing this blog, I've learned a lot, and I thought
-it would be neat to collect all the pieces into one post.
+It's a milestone, of sorts, and the part of me that loves all things meta
+wouldn'tl forgive myself if I passed up the chance to blog about my blog.
+I decided it would be neat to collect all the little things I've learned in
+the past half year.
 
 \*\*\*
 {: .centered }
@@ -25,15 +25,14 @@ a transparent build process that lets me preview my site from my laptop,
 and free edit history and backups thanks to Git.
 
 I know it's incredibly nerdy to say this, but getting to write my blog posts
-with Vim makes is fantastic. So far, I have image files, audio files, syntax
-highlighting, Youtube embeds, spoiler buttons, and typeset math from [KaTeX](http://khan.github.io/KaTeX/).
+with Vim makes is fantastic. So far, I have image files, audio files, code
+highlighting, Youtube embeds, spoiler buttons, and typeset math (implemented with [KaTeX](http://khan.github.io/KaTeX/)).
 Not only does it all work, I know exactly how it all works, because none
-of the functionality has been abstracted away.
+of the functionality is abstracted away.
 
 The only weird bug I've run into is a conflict between
 [KaTeX and kramdown](https://github.com/Khan/KaTeX/issues/20#issuecomment-133649914),
-but even that wasn't terrible.
-Since I had control over the site content, I could
+but even that wasn't terrible. After figuring out the issue, I could
 [add a hotfix](https://github.com/alexirpan/alexirpan.github.io/commit/bb00924acd5e1e1c5fbca8fd25847058f1d9ad1c) myself.
 (Please don't ask how the regex works. It just does.)
 
@@ -42,15 +41,15 @@ Since I had control over the site content, I could
 Writing Takes Even Longer Than I Imagined
 ------------------------------------------------------------------------------
 
-As someone who's struggled writing essays his whole life, I've never planned
-to have an update schedule. If I had one, I knew I'd fall behind,
-or would feel obligated to write something even when I didn't have the time
+I never planned to have an update schedule. If I had one, I knew I'd fall behind,
+and would feel obligated to write something even when I didn't have the time
 or ideas.
 
-What I didn't expect was how much time I needed to spend on each post. Without
-fail, every post I write takes longer to finish than I thought it would.
-And for the record, I've known about planning fallacy from day one.
-Every post, I gave myself a generous estimate, and *I still overshot it.*
+I knew that meant my updates would be sporadic, but I didn't expect how much
+time I needed for each post. Without
+fail, every post I write takes longer to finish than I think it will.
+And for the record, I've tried to remember planning fallacy from day one.
+Every post, I give myself a generous estimate, and *overshoot it anyways.*
 As Douglas Hofstadter puts it,
 
 > Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.
@@ -59,8 +58,8 @@ As Douglas Hofstadter puts it,
 {: .centered}
 
 Proving Hofstadter's Law wouldn't be so bad if I didn't do most of my blogging
-around midnight. My nocturnal schedule makes blogging literally cut into my
-hours of sleep. To show how bad this can be, let's look at the commits for
+around midnight. I have definitely lost sleep to blogging, and that can't be
+healthy. To show how bad this can be, let's look at the commits for
 my [first technical post](http://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.html).
 
 ![Commits for coins branch](/public/half-year/coins-commits.png)
@@ -70,20 +69,17 @@ Pictured: slow descent into madness
 {: .centered}
 
 
-I'll summarize the details of what the commits were for.
-
-* Initial work saved at Thursday, 2 AM
-* Completed a first draft on Friday night, working from 9 PM to midnight.
+* Initial work saved Thursday, 2 AM
+* Completed a first draft Friday night, working from 9 PM to midnight.
 * Revising session Saturday night. Started at 11 PM, hoping to finish by 2 AM.
 Ended up revising until *3:40 AM*.
-* Final proofreading and launch on Sunday evening. Attempt to fix my sleep
+* Final proofreading and launch Sunday evening. Attempt to fix my sleep
 schedule for Monday fails miserably.
 
-You'd think I'd have learned my lesson and scheduled writing time elsewhere,
+You'd think I'd have learned to schedule writing time elsewhere,
 but I haven't. In fact, I'm doing some late night writing right now.
-If you check the commit history for
-this post, you should find a commit at 1 AM, another at 2 AM, some
-3 AM commits mixed in...
+Check the commits for this post. You should find a commit at 1 AM,
+another at 2 AM, a few 3 AM commits mixed in...
 
 ![Commits for half-year branch](/public/half-year/halfyear-commits.png)
 {: .centered}
@@ -92,12 +88,12 @@ Pictured: descent into madness, complete
 {: .centered}
 
 
-This procrastination is even worse for my larger posts. My post
+This procrastination is even worse for my longer posts. My post
 [about my thoughts on graduate school](
 http://www.alexirpan.com/2016/01/03/grad-school.html) was
 written during a month of winter break.
 Like all good programmers, I express my rage through commit messages,
-and wow, there are some gems here.
+and wow are there some gems here.
 
 > More things. All the things. man whose going to read these commits anyways (Sat Dec 19 03:36:46 2015)
 
@@ -119,21 +115,20 @@ In the past 6 months, I've written fourteen posts. Fifteen, if you count this on
 That averages to just over one post every 2 weeks.
 
 It turns out I have blog-worthy ideas more often than twice a week.
-When I started writing, I was worried I'd run out of things to say, but
-the opposite has turned true; I have so many posts I want to write, and
-don't have the time to turn them all into reality.
+When I started this, I was worried I'd run out of things to say, but
+the opposite has turned true. I have so many posts I want to write, and
+don't have the time to do so.
 
-I consider myself a slow person, both in problem solving and writing.
-It's very rare for me to solve a problem at first glance, and most of my
-success comes from brute force experience instead of latent ability.
+I consider myself a slow person in all aspects of life. I rarely solve a problem
+at first glance, and rely on putting in tons of hours for my problem sets.
+I almost never ask questions in lecture,
+because I rarely know enough to articulate exactly what I'm confused about.
 And when it comes to writing, I have to phrase an idea once in the head
 and thrice on the page before I'm satisfied.
 
-ADD ONE MORE THING TO ABOVE PARAGRAPH FOR RULE OF THREE
-
 It baffles me that [web serials](https://parahumans.wordpress.com/) and blogs
 like [Slate Star Codex](http://slatestarcodex.com/) update at least once a week,
-because I certainly can't do that. I'm too sloppy and undisciplined.
+because I can't do that. I'm too sloppy and undisciplined with my time.
 
 I think people undervalue how impressive sticking to a schedule is. We'd all
 be a lot better off if we [valorized organization more](http://www.alexirpan.com/2015/09/01/optimizing-process.html).
@@ -179,33 +174,38 @@ I Actually Have A Writing Style
 -------------------------------------------------------------------------------
 
 I deliberately chose to keep this blog colloquial. It's my blog, it's my
-voice, and I don't give a shit about the conventions of formal writing. If
-I want to use contractions or swear a bit, I will. If my posts drag on a bit,
+voice, and I don't give a shit about formal writing conventions. If
+I want to use contractions or swear a bit, I will. If my posts drag on,
 that's part of who I am.
 
 I don't want to feel obligated to write a certain way, or write only about
-certain things. I want to write something that I'll want to read later.
-If anyone else thinks my writing is cool, it's just a bonus.
+certain things. I write things I think I'll want to read later.
+If anyone else thinks that's cool, it's a bonus.
 
-Throwing off the shackles of formal writing voice made it much easier
+Throwing off the shackles of formal voice made it much easier
 to produce content, but I've also found an unintended side effect.
 Once I tried to [write like how I'd talk if I had the time to phrase things
-just right](http://paulgraham.com/talk.html), I started noticing patterns
-in my writing. I'm fond of starting sentences with "and" or "but" or "because";
-I like the abruptness of the conjunction. I force parallel structure wherever
-I can; it's simple, it's straightforward, and it's an easy way to make
-disparate ideas seem connected. I've adopted short, one sentence paragraphs;
-they're very good when you want to pound ideas with great force.
+just right](http://paulgraham.com/talk.html), I started noticing patterns.
+I start many sentences with "and" or "but" or "because", the abruptness
+of the conjunction is neat. I say "A and B and C"
+instead of the more correct "A, B, and C", the missing commas make
+it flow quicker.
 
-It's neat that I'm getting better at analyzing my own writing,
-but it also means I have to spend lots of time revising.
-If I'm not careful, all my sentences end up starting with "I" or "It's",
-or they all have similar structure, or I'll use a word too often and make
-my writing sound repetitive.
+I adopted one to two sentence paragraphs.
+They're very good when you want to emphasize ideas with force.
 
-There's no formal guidelines I'm following when I do this.
-All my editing is done by feel. I can recognize good writing; the hard part is
-actually making it.
+I add parallel structure wherever I can. It's simple, it's straightforward,
+and it's an easy way to make disparate ideas seem connected.
+
+It's very cool that I can notice these things, because getting better at
+writing was my main goal with blogging.
+But, it also means I have to spend lots of time revising.
+If I'm not careful, all my sentences will start with contractions. Every
+paragraph will have shoehorned parallelism.
+Words will repeat, sentences will be structured similarly, my writing
+will become dull and laggard.
+
+I can recognize good writing. The hard part is actually making it.
 
 
 Experience, Not Effort, Is The Biggest Factor In Quality
@@ -216,57 +216,60 @@ and the other about [AlphaGo](http://www.alexirpan.com/2016/01/28/deepmind-go.ht
 
 The first was very difficult for me to write. I didn't know why I liked
 *Doctor Whooves Adventures*, and even after writing about it I find it hard
-to articulate what makes the radio play so entertaining. Over two weeks, I
-agonized on how to express why the show was so good, on what to spoil and
-what not to spoil. Eventually, I posted my final draft to a lukewarm response.
+to explain why I still rewatch old episodes. Over two weeks, I
+agonized on how to express my love for the show, on what to spoil and
+what to keep a surprise. Eventually, I posted a final draft to a lukewarm response.
 
 In comparison, the post on AlphaGo was written in a single night.
-I wanted to strike while the iron was hot, since I knew it would be a fleeting topic.
-Thanks to prior experience with the research areas involved, I was able to
-understand the paper one a first read, and thanks to thinking about these
-topics for over a year, I was able to quickly articulate my feelings about
-the result. (REPHARSE, RUNS ON.)
+I wanted to strike while the iron was hot, since I knew interest in Go would be
+fleeting.
+Thanks to prior experience with the research areas involved, I got the gist of
+the paper on a single read. and thanks to thinking about these
+topics for over a year, I was able to quickly articulate my feelings on the
+result.
 
-When I look back at my past work, almost all of my favorite posts are technical
-posts, because that's what I have the most experience writing. I've been writing
+When I review my past work, almost all of my favorite posts are technical
+ones. It's what I have the most experience writing. I've been writing
 proofs since high school, gave a math talk in 11th grade, and did two research
-presentations last semester. Of course my technical posts are going to be better
-than my non-technical ones, I've literally had years of training.
+presentations last semester. *Of course my technical posts are going to be better
+than my non-technical ones, I've had years of practice.*
 
-Writing is the process of turning ideas into words. It's a lot easier to do that
+Writing is the process of turning ideas into words. It's a lot easier
 if you've seen and explained these ideas before.
 
-That's not saying I think all my non-technical writing is bad. My finest work is
-still [my post about graduate school](http://www.alexirpan.com/2016/01/03/grad-school.html),
-which was entirely a non-technical thinkpiece. (Seriously, go read it if you
-haven't. I doubt I'm ever going to write anything better.)
+That's not saying all my non-technical writing is bad. My finest work is
+still [grad school post](http://www.alexirpan.com/2016/01/03/grad-school.html),
+which was a pure non-technical thinkpiece. (Seriously, go read it if you
+haven't. I doubt I'll ever write anything better.)
 
 As with all things, I can do it if I put in enough time. The only question
-is whether I can allocate enough time to learn something new.
+is whether I can allocate enough time, and whether I want to.
 
 
 Peer Review Is Amazing
 ------------------------------------------------------------------------------
 
-On most of my posts, I don't ask for feedback before posting them. I've been
-trying to practice my revision skills, and it felt like cheating to ask for
-impressions from other people.
+On most posts, I don't ask friends to read them first. I've been
+trying to practice my revision skills, and it feels like cheating to outsource
+it to other people.
 
-However, on some posts I decide it's worth getting people to look at rough
-drafts. I've sent drafts out for three posts: the other two envelope problem, my thoughts on
-graduate school, and an introduction to secure computation.
+However, on some posts I decide it's worth it.
+I've sent drafts out for three posts:
+[The Other Two Envelope Problem](http://www.alexirpan.com/2015/09/09/the-other-two-envelope-problem.html),
+["How Do You Feel About Grad School?"](http://www.alexirpan.com/2016/01/03/grad-school.html),
+and [A Gentle Introduction to Secure Computation](http://www.alexirpan.com/2016/02/11/secure-computation.html)
 
-Every time, someone pointed out something I hadn't noticed, and every post got
-noticeably better after I incorporated their comments.
+Every post got much better with their feedback, by an order of magnitude.
 
-I think this is something about writing that everyone knows is true, but it's
-hard to describe how much asking feedback actually helps. It's impossible
+Nobody questions that peer review is helpful, but it's
+hard to describe how much it helps. It's impossible
 to recreate the first impression, and after reading so many drafts the sentences
-blur together. Getting someone else to read it helps bring in more perspective.
+blur together in your brain. You miss the forest for the trees, and need
+someone else to look from further away.
 
 Even the best writers send drafts to editors and friends. There's no shame in
-it. What's more surprising is how little I valued peer review before now.
-Somehow, that concept didn't enter my brain until now.
+it. What's more surprising is how little I valued this process before now.
+It's something I had to go through many times to fully appreciate.
 
 
 Popularity Is More About Exposure Than Quality
@@ -274,32 +277,30 @@ Popularity Is More About Exposure Than Quality
 
 According to Google Analytics, my most viewed posts are:
 
-* Secure Computation
-* Grad School Thoughts
+* A Gentle Introduction to Secure Computation
+* "How Do You Feel About Grad School?"
 * Mystery Hunt 2016 Wrap-Up
 
-Each post follows a pattern
+Yet I know for sure that this isn't related to their quality.
+The high view count comes almost entirely from sharing to a wider audience.
 
 * I submitted the post on secure computation to Hacker News. It made front page,
 and stuck there for a day.
 * I also submitted the post on graduate school to Hacker News. That one didn't
-stick - it was both long and not quite aligned with good HN posts.
-* And finally, I shared my Mystery Hunt write-up to the Mystery Hunt subreddit.
+stick, but it hung around new submissions for a while.
+* Finally, I shared my Mystery Hunt write-up to the Mystery Hunt subreddit.
 
-Every other post was shared only to my Facebook.
+Traffic to my blog is almost entirely decided by whether I share it
+ouside Facebook. By my rankings, my AlphaGo post and [Khan Academy](http://www.alexirpan.com/2015/08/20/things-i-did-in-my-khan-academy-internship.html)
+post deserve more views.
 
-The viewership of my blog is almost entirely decided by whether I share it
-ouside Facebook or not. By my rankings, my post on Go and my post about
-my [Khan Academy internship](http://www.alexirpan.com/2015/08/20/things-i-did-in-my-khan-academy-internship.html)
-both deserve more views.
-
-Again, I'm sure this is obvious, but popular things are not always good, and
-good things are not always popular. I'm a bit stat obsessed about my blog,
-probably more than is healthy, and I need to remember to divorce my feelings
-about a post from its view count.
+I know it's obvious, but it bears repeating: **popular things are not always good, and
+good things are not always popular.** I'm a bit obsessed with refreshing my
+blog analytics, more than is healthy, and I need to remember to divorce my
+feelings about a post from its view count.
 
 
-Yes, Writing More Is Helping
+Writing More Is Helping
 -------------------------------------------------------------------------------
 
 Of my four most recent posts, not counting this one, three are in the running
