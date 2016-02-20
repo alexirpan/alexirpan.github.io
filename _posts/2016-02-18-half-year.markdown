@@ -66,7 +66,7 @@ my [first technical post](http://www.alexirpan.com/2015/08/23/simulating-a-biase
 ![Commits for coins branch](/public/half-year/coins-commits.png)
 {: .centered}
 
-Pictured: a slow descent into madness
+Pictured: slow descent into madness
 {: .centered}
 
 
@@ -79,11 +79,11 @@ Ended up revising until *3:40 AM*.
 * Final proofreading and launch on Sunday evening. Attempt to fix my sleep
 schedule for Monday fails miserably.
 
-Of all the reasons to stay up, this is one of the sillier ones.
-
-In fact, I'm doing it right now. If you check the commit history for
-this post, you should find a commit at 1 AM, another at 3 AM, some
-2 AM commits mixed in...
+You'd think I'd have learned my lesson and scheduled writing time elsewhere,
+but I haven't. In fact, I'm doing some late night writing right now.
+If you check the commit history for
+this post, you should find a commit at 1 AM, another at 2 AM, some
+3 AM commits mixed in...
 
 ![Commits for half-year branch](/public/half-year/halfyear-commits.png)
 {: .centered}
