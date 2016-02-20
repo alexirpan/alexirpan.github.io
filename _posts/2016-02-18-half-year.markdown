@@ -9,72 +9,59 @@ and started blogging. Half a year seemed like a good milestone to do a retrospec
 Besides, the part of me that loves all things meta wouldn't forgive myself if I
 missed a chance for a self-referential blog post.
 
+In the past half year of managing this blog, I've learned a lot, and I thought
+it would be neat to collect all the pieces into one post.
+
 \*\*\*
 {: .centered }
-
-When I started blogging, I had three goals.
-
-* Give myself a platform that let me focus almost entirely on creating content,
-ideally with as much transparency as possible.
-* Use that platform to write technical posts about anything I thought was
-interesting.
-* Also use that platform to improve my non-technical writing, by writing
-about the shows and comics I liked.
-
-So far, I've done well on the first two and not so well on the last.
-I wasn't expecting my blog to be so scattered - it's not quite a technical
-blog and not quite a non-technical one, it just is. I guess that's the
-consequence of treating my blog as a more polished version of my thoughts.
-
 
 Github Pages Was A Good Call
 ------------------------------------------------------------------------------
 
-It's admittedly barebones, but Github Pages has been a wonderful platform
-for my personal site. Free web hosting, total control over my site's content,
-a transparent build process that lets me preview my site without an
-internet connection, and complete edit history thanks to Git. I know it's
-incredibly nerdy to say this, but getting to write my blog posts in
-Markdown using vim is amazing.
+My main goal with the site reboot was to give myself a platform that
+let me focus almost entirely on creating content. Github Pages fit perfectly.
+Free web hosting, total control over my site's content,
+a transparent build process that lets me preview my site from my laptop,
+and free edit history and backups thanks to Git.
 
-After the upfront cost of getting my site working, writing all of my posts
-and adding new functionality has been straightforward. As of now, I have
-image files, audio files, syntax highlighting, Youtube embeds, spoiler buttons,
-and KaTeX enabled. Not only does it all work, I know exactly how it all
-works, since none of the functionality is abstracted away into plugins. It's
-all handrolled.
+I know it's incredibly nerdy to say this, but getting to write my blog posts
+with Vim makes is fantastic. So far, I have image files, audio files, syntax
+highlighting, Youtube embeds, spoiler buttons, and typeset math from [KaTeX](http://khan.github.io/KaTeX/).
+Not only does it all work, I know exactly how it all works, because none
+of the functionality has been abstracted away.
 
 The only weird bug I've run into is a conflict between
 [KaTeX and kramdown](https://github.com/Khan/KaTeX/issues/20#issuecomment-133649914),
 but even that wasn't terrible.
 Since I had control over the site content, I could
 [add a hotfix](https://github.com/alexirpan/alexirpan.github.io/commit/bb00924acd5e1e1c5fbca8fd25847058f1d9ad1c) myself.
-(Please don't ask how the regex works, it just does.)
+(Please don't ask how the regex works. It just does.)
 
 
 
 Writing Takes Even Longer Than I Imagined
 ------------------------------------------------------------------------------
 
-As someone who's struggled with essays his whole life, I had no plans to
-even attempt an update schedule. If I had one, I knew I either wouldn't make it
-or would feel obligated to write something even when I didn't have good ideas.
+As someone who's struggled writing essays his whole life, I've never planned
+to have an update schedule. If I had one, I knew I'd fall behind,
+or would feel obligated to write something even when I didn't have the time
+or ideas.
 
-What I didn't expect was that when I did decide to write a post, it would
-always, always take longer to finish than I thought it would. And for the record,
-I knew about planning fallacy from day one. On every post, I gave myself leeway,
-and I *still overhot it.* As Douglas Hofstadter puts it,
+What I didn't expect was how much time I needed to spend on each post. Without
+fail, every post I write takes longer to finish than I thought it would.
+And for the record, I've known about planning fallacy from day one.
+Every post, I gave myself a generous estimate, and *I still overshot it.*
+As Douglas Hofstadter puts it,
 
 > Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.
 
 (*Gödel, Escher, Bach*)
 {: .centered}
 
-Running into Hofstadter's Law again and again wouldn't be so bad if my most
-productive blogging hours weren't at night. As it stands, I get most of
-writing done around midnight. To show how bad this can been, let's look at my
-[first technical post](http://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.html).
-Pulling up the timestamps of all my Git commits gives this.
+Proving Hofstadter's Law wouldn't be so bad if I didn't do most of my blogging
+around midnight. My nocturnal schedule makes blogging literally cut into my
+hours of sleep. To show how bad this can be, let's look at the commits for
+my [first technical post](http://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.html).
 
 ![Commits for coins branch](/public/half-year/coins-commits.png)
 {: .centered}
@@ -83,19 +70,20 @@ Pictured: a slow descent into madness
 {: .centered}
 
 
-If you read carefully, you can see the hours of lost sleep
+I'll summarize the details of what the commits were for.
 
 * Initial work saved at Thursday, 2 AM
-* First draft of words and diagrams done Friday night, from 9 PM to midnight.
-* Revising session on Saturday Night, starting at 11 PM and ending at
-*3:40 AM*.
+* Completed a first draft on Friday night, working from 9 PM to midnight.
+* Revising session Saturday night. Started at 11 PM, hoping to finish by 2 AM.
+Ended up revising until *3:40 AM*.
 * Final proofreading and launch on Sunday evening. Attempt to fix my sleep
-schedule in time for Monday fails miserably.
+schedule for Monday fails miserably.
 
-You'd think I'd have learned my lesson, but sadly I haven't.
-In fact, I'm doing something similar right now. Check the commit history for
-this post, you'll find a commit at 1 AM. No way I'm going to be awake for
-my morning classes...
+Of all the reasons to stay up, this is one of the sillier ones.
+
+In fact, I'm doing it right now. If you check the commit history for
+this post, you should find a commit at 1 AM, another at 3 AM, some
+2 AM commits mixed in...
 
 ![Commits for half-year branch](/public/half-year/halfyear-commits.png)
 {: .centered}
@@ -314,6 +302,9 @@ tweaking sentences. About the only post I'm okay with is my post about
 grad school. (Oddly enough, I'm almost okay with
 [Retrospective on Friendship is Magic Season 5](http://www.alexirpan.com/2015/11/29/mlp-season-5-review.html).
 It must be too short to offend me.
+
+\*\*\*
+{: .centered }
 
 
 The Next Six Months
