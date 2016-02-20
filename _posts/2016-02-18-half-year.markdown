@@ -130,33 +130,28 @@ making them. I haven't done one because the cost is scary and my
 mind is stupidly stubborn about some things, but I've been thinking about it.)
 
 
-Ideas are Easy, Execution is Hard
+Time Is The Limiting Factor
 -------------------------------------------------------------------------------
 
-I did some quick calculation, and turned up 14 posts in the past 6 months. (15
-if you count this one.) That works out to about one post every two weeks.
+I've written fourteen posts in the past 6 months. (Fifteen, if you count this
+one.) That works out to about one post every 2 weeks.
 
-I literally cannot see myself updating any faster than once a week. It's
-not possible for me unless I get a lot better at writing. I consider myself
-a slow person, both in problem solving and writing. I can't solve problems unless
-I think about them for a long time. I rarely ask questions in lecture, because
-I don't even follow enough to ask a question in the first place. And when
-it comes to writing, I have to turn an idea once in the head and thrice on
-the page before I feel it's explained well.
+When I started this blog, I was worried I wouldn't have things to say, but
+the opposite has turned true; I have so many posts I'd like to create, and
+don't have the time to turn them all into reality.
 
-It baffles me that people can update their blogs several times a week while holding
-full time jobs. I certainly can't do that.
-Right now, I estimate I could go up to one post a week, and that's
-if I devoted a lot more and revised a lot less.
+I consider myself a slow person, both in problem solving and writing.
+I don't care what my grades say, it's very rare for me to figure out the right
+approach likes others seem to do, and most of my success comes from brute force
+instead of clever insight. I have to turn an idea once in the head and thrice on
+the page before I'm satisfied with it.
 
-When I started this blog, I was worried I'd run out of topics to write about.
-It turns out the opposite is true; the limiting factor is time.
+It baffles me that [Slate Star Codex](http://slatestarcodex.com/)
+updates at least once a week. I'm confused by [web serials](https://parahumans.wordpress.com/)
+that release new chapters like clockwork. I certainly can't do that.
 
-I have plenty of ideas, enough that I
-don't have the time to write posts for all of them. Each post is a 2-4 week
-commitment, and I have to prune ideas down to ones I can see myself
-working on for that long. My standard for topics worth writing about rose so
-much the past 6 months. (REORDER)
+I think people don't respect how impressive sticking to a schedule is. Or if
+they do, they don't respect it enough.
 
 Off the top of my head, I have four posts I want to write, and have no work
 on any of them.
