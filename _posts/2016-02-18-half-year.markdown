@@ -5,13 +5,13 @@ date:   2016-02-18 00:15:00 -0800
 ---
 
 Just over six months ago, I [rebooted my personal site](http://www.alexirpan.com/2015/08/18/hello-world-again.html)
-into the current blog.
+into the current blog. So far, I've been pleasantly surprised.
+It's encouraging to know people like reading my own brand of
+stupidity.
 
-I wasn't exactly sure how people would respond, but so far I've been pleasantly
-surprised. It's encouraging to know people like reading my own brand of
-stupidity. As celebration, I decided to collate the lessons I've learned into
-one post. (Besides, the part of me that loves all things meta wouldn't forgive myself
-if I passed up a chance to write a blog post about my blog.)
+As celebration, I decided to reflect on the lessons I've learned.
+The part of me that loves all things meta wouldn't forgive myself
+if I never wrote a blog post about my blog.
 
 
 \*\*\*
@@ -20,13 +20,16 @@ if I passed up a chance to write a blog post about my blog.)
 # 1. Just Write. It'll Get Better
 
 Of my four most recent posts, not counting this one, three are in the running
-for my personal favorites. It's not a coincidence.
+for my favorites. That's not a coincidence.
 
-I've heard everybody cringes when they read their past writing, and I'm no
-exception. But it's all part of the process. It reminds me of a quote
-from *Art & Fear*, by David Bayles.
+If you're worried you can't write well, write anyways.
+Everybody cringes when they read their past writing, me included,
+but it's all part of the process.
 
 > The ceramics teacher announced on opening day that he was dividing the class into two groups. All those on the left side of the studio, he said, would be graded solely on the quantity of work they produced, all those on the right solely on its quality. His procedure was simple: on the final day of class he would bring in his bathroom scales and weigh the work of the “quantity” group: fifty pounds of pots rated an “A”, forty pounds a “B”, and so on. Those being graded on “quality”, however, needed to produce only one pot — albeit a perfect one — to get an “A”. Well, came grading time and a curious fact emerged: the works of highest quality were all produced by the group being graded for quantity. It seems that while the “quantity” group was busily churning out piles of work-and learning from their mistakes — the “quality” group had sat theorizing about perfection, and in the end had little more to show for their efforts than grandiose theories and a pile of dead clay.” 
+
+(David Bayles, *Art & Fear*)
+{: .centered }
 
 Or said more succinctly,
 
@@ -36,52 +39,46 @@ Or said more succinctly,
 (Jack The Dog, *Adventure Time*)
 {: .centered }
 
-The only post of my I would leave unchanged is
-["How Do You Feel About Grad School"](http://www.alexirpan.com/2016/01/03/grad-school.html),
-and that's because I spent the better part of a month editing it. (Oddly enough,
-[Retrospective on Friendship is Magic Season 5](http://www.alexirpan.com/2015/11/29/mlp-season-5-review.html)
-is very close to good enough in my eyes. It must be too short to offend me.)
-
 \*\*\*
 {: .centered }
 
 
 # 2. Your Writing Environment Matters. Take The Time To Find One That Works For You
 
-My old personal site was written in [Blogger](https://www.blogger.com). It worked,
-but after my first two posts I lost motivation to keep it updated. In retrospect,
-the big reason I didn't like use Blogger was all the abstraction it put between
-you and your site. To create posts, I had to go to Blogger's site and write in
-their Microsoft Word-esque editor. To change my layout, I either had to use
-a drag and drop interface or edit the raw HTML.
+My old personal site used [Blogger](https://www.blogger.com). It worked,
+but I quickly lost motivation to update it.
+Blogger abstracts away tons of its functionality behind its own tools.
+To create posts, I had to go to Blogger's site and write in
+their Microsoft Word-esque editor. To change the site layout, I had to use
+a drag and drop interface or edit the raw HTML. Plus, all the tie-ins with Google+
+annoyed me.
 
 In contrast, using [Github Pages](https://pages.github.com/) has been a complete
-joy. It's much more transparent, I have total
-control over my site's content, and I get free edit history thanks to Git.
+joy. It's transparent, I have total control over my site's design, and I
+get free edit history thanks to Git.
 I know it's incredibly nerdy to say this, but getting to write my blog posts
 in Markdown using Vim is fantastic.
 
-Github Pages strikes a nice balance between ease of use
-and extensibility. So far, my blog uses images, audio clips, code
-highlighting, Youtube embeds, spoiler buttons, typeset math (implemented with [KaTeX](http://khan.github.io/KaTeX/)),
+So far, my blog uses images, audio clips, code
+highlighting, Youtube embeds, spoiler buttons, typeset math (from [KaTeX](http://khan.github.io/KaTeX/)),
 comments (from Disqus), and analytics (from Google Analytics).
 Not only does it all work, I know how it all works, which is a huge plus.
 
-If you're familiar with Git, it's surprising how natural it feels. I can easily
-switch between different drafts, and can move from coding to blogging at the
-drop of a hat if I need to take a break from debugging. The only issue I've had
-so far is a conflict between
+If you're familiar with Git, it's surprising how natural blogging in it feels.
+I can switch between different drafts on a whim, and can move from coding to
+blogging with ease if I need to take a break from debugging.
+The only issue I've had so far is a conflict between
 [KaTeX and the Markdown rendering engine](https://github.com/Khan/KaTeX/issues/20#issuecomment-133649914),
 but even that wasn't terrible. After figuring out the problem, I
 [added a hotfix](https://github.com/alexirpan/alexirpan.github.io/commit/bb00924acd5e1e1c5fbca8fd25847058f1d9ad1c)
-the next day. (Please don't ask how the regex works. It just does.)
+the next day.
 
 **If you don't like your writing environment, you aren't going to write.**
-There are lots of obstacles between an idea and its execution.
-Your working environment shouldn't be one of them.
+There are lots of obstacles between having an idea and writing about it.
+Your environment shouldn't be one of them.
 
 
-# 3. Writing Will Take Longer Than You Think
+# 3. It'll Take Longer Than You Think
 
 I never planned to have an update schedule. As a student, I knew my work loads
 could shoot up in an instance, and I didn't want to feel obligated to write
@@ -89,8 +86,8 @@ something when I didn't have the time to do it right.
 
 What I didn't expect was how *long* writing would take.
 Without fail, every post I write takes longer to
-finish than I think it will.
-And for the record, I've tried to account for planning fallacy from day one.
+finish than I think it will. This is even after I account for the
+planning fallacy.
 As Douglas Hofstadter puts it,
 
 > Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.
@@ -99,7 +96,7 @@ As Douglas Hofstadter puts it,
 {: .centered}
 
 Proving Hofstadter's Law wouldn't be so bad if I didn't do most of my writing
-at midnight. To show how bad this can be, let's look at the commits for
+at midnight. To show how bad this can be, here are the commits for
 my [first technical post](http://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.html).
 
 ![Commits for coins branch](/public/half-year/coins-commits.png)
@@ -116,8 +113,8 @@ Ended up revising until *3:40 AM*.
 * Final proofreading and launch Sunday evening. Attempt to fix my sleep
 schedule for Monday fails miserably.
 
-I have literally lost sleep to my blog posts. It's silly and stupid, but I
-don't see it changing. In fact, I'm doing some late night writing right now.
+I have literally lost sleep to blogging, It's silly, it's stupid, and I
+don't see it changing anytime soon. In fact, I'm doing some late night writing right now.
 Check the commits for this post. You should find a commit at 1 AM,
 another at 2 AM, a few 3 AM commits mixed in...
 
@@ -128,8 +125,9 @@ Pictured: descent into madness, complete
 {: .centered}
 
 
-Like all good programmers, I express my rage through commit messages.
-Here are some gems from the commits for my graduate school post.
+It's okay to get frustrated at your writing speed. Everyone wishes they could
+write it right the first time, but no one does. Try not to let it bother you,
+and keep going. (I find that taking my rage out on commit messages helps.)
 
 > More things. All the things. man whose going to read these commits anyways (Sat Dec 19 03:36:46 2015)
 
@@ -139,33 +137,29 @@ Here are some gems from the commits for my graduate school post.
 
 > URGH JUST SHIP IT. (Sun Jan 10 11:50:03 2016)
 
-If you're going to write, allocate some time. Then make that estimate
-longer. Then expect to go over that estimate, unless you manage to
-stay very, very focused.
-
-(Incidentally, this is why you should consider a [CFAR workshop](http://rationality.org/workshops/).
+Incidentally, this is why you should consider a [CFAR workshop](http://rationality.org/workshops/).
 Reading about logical fallacies doesn't actually stop you from making them.
-I haven't done one because the cost is scary, but I've considered it.)
+I haven't done one because the cost is scary, but I've considered it.
 
 
-# 4. Don't Worry About Ideas. Worry About Time
+# 4. Don't Worry About Your Ideas. Worry About Your Time
 
 In the past 6 months, I've written fourteen posts. Fifteen, if you count this one.
 That averages to just over one post every 2 weeks.
 
-It turns out I have blog-worthy ideas more often than once every 2 weeks.
+I have blog-worthy ideas more often than once every 2 weeks.
 When I started this, I was worried I'd run out of things to say, but
-the opposite has turned true; I have too many ideas, and need to aggressively
-filter them down.
+the opposite has turned true; I have too many ideas, and need to filter them
+aggressively.
 
 I consider myself a slow person in all aspects of life.
 I rarely solve a problem at first glance, unless I've seen a problem that's
 very very similar. I almost never ask questions in lecture,
-because I rarely know enough to articulate what I'm confused about.
+because I'm usually so lost I can't articulate what I'm confused about.
 And when it comes to writing, I have to phrase an idea once in the head
 and thrice on the page before I'm satisfied.
 
-Being so isn't bad, but it baffles me that web serials like [Worm](https://parahumans.wordpress.com/)
+Being slow isn't bad, but it baffles me that web serials like [Worm](https://parahumans.wordpress.com/)
 and blogs like [Slate Star Codex](http://slatestarcodex.com/) can update over once
 a week. I certainly can't do that. It requires a level of discipline I don't
 have yet.
@@ -174,7 +168,7 @@ I think people undervalue how impressive sticking to a schedule is. We'd all
 be a lot better off if we [valorized organization more](http://www.alexirpan.com/2015/09/01/optimizing-process.html).
 
 
-# 5. You Already Have A Writing Style. Embrace It.
+# 5. Your Writing Style is Your Speaking Style. Embrace It
 
 When I started this blog, I chose to keep it colloquial. It's my blog, and
 it's my voice. If I want to use contractions or swear a bit, I will, formal
@@ -187,29 +181,24 @@ if anyone else thinks that's cool, it's just a bonus.
 
 Once I tried to [write like how I'd talk if I had the time to phrase things
 just right](http://paulgraham.com/talk.html), I started noticing patterns.
-I start many sentences with "and" or "but" or "because", the abruptness
-of the conjunction is neat. I say "A and B and C"
-instead of the more correct "A, B, and C", the missing commas make
-it flow quicker.
+I start sentences with "and" or "but" or "because", since I like
+the abruptness of the conjunction. I say "A and B and C"
+instead of the more correct "A, B, and C" at times, because sometimes I don't
+want the mental pauses from commas.
 
-I adopted one to two sentence paragraphs.
-They're very good when you want to emphasize ideas with force.
+I adopted sudden paragraphy breaks, since they're very good for emphasizing
+specific ideas. I insert parallel structure everywhere, since it's an easy way
+to connect disparate ideas.
 
-I add parallel structure wherever I can. It's simple, it's straightforward,
-and it's an easy way to make disparate ideas seem connected.
+When you write, you're trying to say something. So actually **say it**. Don't
+couch it in formal writing, just say it. If that means you add internet memes
+everywhere, then so be it.
 
-I don't know if this is my style or if it's my habits, but maybe the two
-aren't so different. Still, it's very cool that I'm more aware of these
-patterns. It also means I have to spend lots of time revising.
-If I'm not careful, my writing will become nothing but habits.
-Every paragraph will have shoehorned parallelism.
-Words will repeat. Every sentence will get structured similarly, and
-my writing will become dull and laggard.
-
-I can recognize good writing. The hard part is getting there.
+There's a time and place for formal writing. Blog posts are neither the time
+nor the place.
 
 
-# 6. Experience, Not Effort, Is The Driver Of Quality
+# 6. Experience, Not Effort, Is The Key Factor Of Quality
 
 This one surprised me. Consider two posts, one about [Doctor Whooves Adventures](http://www.alexirpan.com/2015/09/24/how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy.html),
 and the other about [AlphaGo](http://www.alexirpan.com/2016/01/28/deepmind-go.html).
@@ -234,15 +223,12 @@ proofs since high school, gave a math talk in 11th grade, and did two research
 presentations last semester. *Of course my technical posts are going to be better
 than my non-technical ones, I've had years of practice.*
 
-Writing is the process of turning ideas into words. It's a lot easier
-if you've seen and explained these ideas before.
-
-That's not saying all my non-technical writing is bad. My finest work is
-a [non-technical thinkpiece](http://www.alexirpan.com/2016/01/03/grad-school.html),
-after all. (Seriously, I know I've linked it so many times, but go read my
-grad school post if you haven't. I doubt I'll ever write anything better.)
-I plan to focus more on non-technical writing in the next 6 months, and this
-post is the first step on that path.
+That's not saying all my non-technical writing is bad. My best post
+a [non-technical thinkpiece about grad school](http://www.alexirpan.com/2016/01/03/grad-school.html),
+after all. (Seriously, go read it if you haven't. I doubt I'll ever write anything
+better.) What I'm saying is that if you're going to write about something unfamiliar,
+don't be surprised if it takes you ages to churn out something mediocre. It took
+me a month of winter break before I was comfortable launching that post publically.
 
 
 # 7. Do Peer Review Whenever You Can
@@ -316,15 +302,17 @@ up for giving it a shot.
 
 And with that, I'll close with a quote.
 
-> Do you see now, Doctor? This land is divided, and there is no fixing it.
+> SP: Do you see now, Doctor? This land is divided, and there is no fixing it.
 >
-> Oh, I do see...I see that this cannot stand. I see that things are wrong here.
+> Doctor: Oh, I do see...I see that this **cannot stand.** I see that things are wrong here.
 Things are very, very wrong, and I don't like it very much. I see that there is
 pain here, and I don't like that either. I see that you've grown complacent.
 I think everyone has. There is nothing worse for life than complacency, my dear,
-and I shall not **have it.**
+and I shall not **have it.** I might not know many things about this land of
+myth and magic, but I know that Twilight is on the other side of this conflict and
+I know that this conflict is causing misery. I'm correct to correct both those things.
 
-(Doctor Whooves Adventures, *Bells of Fate*)
+(*Doctor Whooves Adventures*, "Bells of Fate")
 {: .centered }
 
 Onwards and upwards!
