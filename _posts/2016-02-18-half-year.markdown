@@ -187,7 +187,7 @@ specific sentences. I insert parallel structure everywhere, since it's an easy w
 to connect disparate ideas.
 
 When you write, you're trying to say something. So actually **say it**. Don't
-couch it in formal writing. If that means you add internet memes
+couch it in formal writing. If that means you add Internet memes
 everywhere, then so be it.
 
 There's a time and place for formal writing. Blog posts are neither the time
@@ -235,7 +235,7 @@ In comparison, the post on AlphaGo was written in a single night.
 I wanted to strike while the iron was hot, since I knew interest in Go would be
 fleeting.
 Thanks to prior experience with the research areas involved, I got the gist of
-the paper in a single read. and thanks to thinking about these
+the paper in a single read, and thanks to thinking about these
 topics for over a year, I was able to quickly articulate my feelings on the
 result.
 
@@ -246,7 +246,7 @@ presentations last semester. Of course my technical posts are going to be better
 than my non-technical posts, *I've had years of practice for the former.*
 
 That's not saying all my non-technical writing is bad. My best post
-is still my [non-technical thinkpiece about grad school](http://www.alexirpan.com/2016/01/03/grad-school.html).
+is still my [non-technical think piece about grad school](http://www.alexirpan.com/2016/01/03/grad-school.html).
 What I'm saying is that if you're going to write about something unfamiliar,
 don't be surprised if it takes you ages to churn out something mediocre. It took
 me a month of winter break to write that graduate school post.
@@ -297,7 +297,8 @@ post ideas. On the short list are
 * A post about *Gunnerkrigg Court*
 * A post on effort icebergs and criticism
 * A post about obsessive fandoms
-* A post detailing the hilariously incompetent history of Online Dominion
+* A post detailing the hilariously incompetent history of the Dominion Online
+implementation
 
 I may also try writing some short stories. I haven't done creative
 writing since high school, but after reading so much [web fiction](http://www.alexirpan.com/recs/), I'm
