@@ -224,7 +224,7 @@ I still don't value it enough.
 # 7. Effort Doesn't Drive Quality, Experience Does
 
 This one surprised me. Consider two posts, one about [Doctor Whooves Adventures]({% post_url 2015-09-24-how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy %}),
-and the other about [AlphaGo]({% post_url 2016-01-28-deepmind-go %}).
+and the other about [AlphaGo]({% post_url 2016-01-27-deepmind-go %}).
 
 The first was very difficult for me to write. I didn't know why I liked
 *Doctor Whooves Adventures*, and even after that post I find it hard
@@ -273,7 +273,7 @@ you. According to Google Analytics, my three most viewed posts are:
 
 * [A Gentle Introduction to Secure Computation]({% post_url 2016-02-11-secure-computation %})
 * ["How Do You Feel About Grad School?"]({% post_url 2016-01-03-grad-school %})
-* [Mystery Hunt 2016 Wrap-Up]({% post_url 2016-01-21-mysteryhunt %})
+* [Mystery Hunt 2016 Wrap-Up]({% post_url 2016-01-20-mysteryhunt %})
 
 The first stuck on Hacker News for a day, and the last got shared to the Mystery Hunt subreddit.
 Note that both reasons for the high view count are only tangentially
@@ -283,7 +283,7 @@ If I cared only about view count, I wouldn't bother writing about
 a [*My Little Pony* made-for-TV movie]({% post_url 2015-11-02-friendship-games-geometry %}),
 because I know most people won't be interested. But I care about it, and that's why I did it.
 
-(For the record, both my [AlphaGo post]({% post_url 2016-01-28-deepmind-go %})
+(For the record, both my [AlphaGo post]({% post_url 2016-01-27-deepmind-go %})
 and my [Khan Academy post]({% post_url 2015-08-20-things-i-did-in-my-khan-academy-internship %})
 deserve more views than they have. You really shouldn't read that MLP post
 unless you're interested in me commentating a nerd-snipe.)
