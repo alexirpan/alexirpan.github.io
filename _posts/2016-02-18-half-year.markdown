@@ -4,7 +4,7 @@ title:  "Lessons Learned After Six Months of Blogging"
 date:   2016-02-18 00:15:00 -0800
 ---
 
-Just over six months ago, I [rebooted my personal site](http://www.alexirpan.com/2015/08/18/hello-world-again.html)
+Just over six months ago, I [rebooted my personal site]({% post_url 2015-08-18-hello-world-again %})
 and started blogging. So far, I've been pleasantly surprised at the response.
 It's encouraging to know people like reading my own brand of
 stupidity.
@@ -93,7 +93,7 @@ planning fallacy. As said by Douglas Hofstadter,
 
 Proving Hofstadter's Law wouldn't be so bad if I didn't do most of my writing
 at midnight. To show why it's awful, here are the commits for
-my [first technical post](http://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.html).
+my [first technical post]({% post_url 2015-08-23-simulating-a-biased-coin-with-a-fair-one %}).
 
 ![Commits for coins branch](/public/half-year/coins-commits.png)
 {: .centered}
@@ -161,7 +161,7 @@ a week. I certainly can't do that. It requires a level of discipline I don't
 have yet.
 
 I think people undervalue how impressive sticking to a schedule is. We'd all
-be a lot better off if we [valorized organization more](http://www.alexirpan.com/2015/09/01/optimizing-process.html).
+be a lot better off if we [valorized organization more]({% post_url 2015-09-01-optimizing-process %}).
 
 
 # 5. Your Writing Style Is Your Speaking Style. Embrace It
@@ -202,9 +202,9 @@ it to other people.
 
 However, sometimes I decide I want more polish.
 I've asked for feedback on three posts:
-[The Other Two Envelope Problem](http://www.alexirpan.com/2015/09/09/the-other-two-envelope-problem.html),
-["How Do You Feel About Grad School?"](http://www.alexirpan.com/2016/01/03/grad-school.html),
-and [A Gentle Introduction to Secure Computation](http://www.alexirpan.com/2016/02/11/secure-computation.html)
+[The Other Two Envelope Problem]({% post_url 2015-09-09-the-other-two-envelope-problem %}),
+["How Do You Feel About Grad School?"]({% post_url 2016-01-03-grad-school %}),
+and [A Gentle Introduction to Secure Computation]({% post_url 2016-02-11-secure-computation %})
 
 Every post improved by an order of magnitude.
 
@@ -221,8 +221,8 @@ I still don't value it enough.
 
 # 7. Effort Doesn't Drive Quality, Experience Does
 
-This one surprised me. Consider two posts, one about [Doctor Whooves Adventures](http://www.alexirpan.com/2015/09/24/how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy.html),
-and the other about [AlphaGo](http://www.alexirpan.com/2016/01/28/deepmind-go.html).
+This one surprised me. Consider two posts, one about [Doctor Whooves Adventures]({% post_url 2015-09-24-how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy %}),
+and the other about [AlphaGo]({% post_url 2016-01-28-deepmind-go %}).
 
 The first was very difficult for me to write. I didn't know why I liked
 *Doctor Whooves Adventures*, and even after that post I find it hard
@@ -246,7 +246,7 @@ presentations last semester. Of course my technical posts are going to be better
 than my non-technical posts, *I've had years of practice for the former.*
 
 That's not saying all my non-technical writing is bad. My best post
-is still my [non-technical think piece about grad school](http://www.alexirpan.com/2016/01/03/grad-school.html).
+is still my [non-technical think piece about grad school]({% post_url 2016-01-03-grad-school %}).
 What I'm saying is that if you're going to write about something unfamiliar,
 don't be surprised if it takes you ages to churn out something mediocre. It took
 me a month of winter break to write that graduate school post.
@@ -268,19 +268,19 @@ post from its view count.
 What people think about your work matters. But don't let it rule everything about
 you. According to Google Analytics, my three most viewed posts are:
 
-* A Gentle Introduction to Secure Computation
-* "How Do You Feel About Grad School?"
-* Mystery Hunt 2016 Wrap-Up
+* [A Gentle Introduction to Secure Computation]({% post_url 2016-02-11-secure-computation %})
+* ["How Do You Feel About Grad School?"]({% post_url 2016-01-03-grad-school %})
+* [Mystery Hunt 2016 Wrap-Up]({% post_url 2016-01-21-mysteryhunt %})
 
 The first stuck on Hacker News for a day, and the last got shared to the Mystery Hunt subreddit.
 Note that both are tangentially related to the actual quality.
 
 If I cared only about view count, I wouldn't bother writing about
-a [My Little Pony made-for-TV movie](http://www.alexirpan.com/2015/11/02/friendship-games-geometry.html),
+a [My Little Pony made-for-TV movie]({% post_url 2015-11-02-friendship-games-geometry %}),
 because I know most people won't care. But I care, and that's why I did it.
 
-(For the record, both my [AlphaGo post](http://www.alexirpan.com/2016/01/28/deepmind-go.html)
-and [Khan Academy post](http://www.alexirpan.com/2015/08/20/things-i-did-in-my-khan-academy-internship.html)
+(For the record, both my [AlphaGo post]({% post_url 2016-01-28-deepmind-go %})
+and [Khan Academy post]({% post_url 2015-08-20-things-i-did-in-my-khan-academy-internship %})
 deserve more views than they have. You really don't need to read that MLP post
 unless you're interested in nerd-sniping commentated live.)
 
@@ -301,7 +301,7 @@ post ideas. On the short list are
 implementation
 
 I may also try writing some short stories. I haven't done creative
-writing since high school, but after reading so much [web fiction](http://www.alexirpan.com/recs/), I'm
+writing since high school, but after reading so much [web fiction](/recs/), I'm
 up for giving it a shot.
 
 At my current rate, four posts will take two months. With planning fallacy, maybe three.
