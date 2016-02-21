@@ -198,7 +198,31 @@ There's a time and place for formal writing. Blog posts are neither the time
 nor the place.
 
 
-# 6. Experience, Not Effort, Is The Key Factor Of Quality
+# 6. Do Peer Review Whenever You Can
+
+On many posts, I don't ask friends to read them first. I've been
+practicing my revision skills, and it feels like cheating to outsource
+it to other people.
+
+However, on some posts I decide I want more polish.
+I've sent drafts out for three posts:
+[The Other Two Envelope Problem](http://www.alexirpan.com/2015/09/09/the-other-two-envelope-problem.html),
+["How Do You Feel About Grad School?"](http://www.alexirpan.com/2016/01/03/grad-school.html),
+and [A Gentle Introduction to Secure Computation](http://www.alexirpan.com/2016/02/11/secure-computation.html)
+
+Every post improved by an order of magnitude.
+
+It's hard to describe how much peer review helps.
+After reading so many drafts, your brain starts blurring sentences together.
+You miss the forest for the trees, and getting another viewpoint helps
+untangle this.
+
+Even the best writers send drafts to editors and friends. There's no shame in
+it. What's more surprising is how little I valued this process before now.
+It took me until my secure computation post to fully appreciate it.
+
+
+# 7. Experience, Not Effort, Is The Key Factor Of Quality
 
 This one surprised me. Consider two posts, one about [Doctor Whooves Adventures](http://www.alexirpan.com/2015/09/24/how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy.html),
 and the other about [AlphaGo](http://www.alexirpan.com/2016/01/28/deepmind-go.html).
@@ -231,74 +255,62 @@ don't be surprised if it takes you ages to churn out something mediocre. It took
 me a month of winter break before I was comfortable launching that post publically.
 
 
-# 7. Do Peer Review Whenever You Can
-
-On many posts, I don't ask friends to read them first. I've been
-practicing my revision skills, and it feels like cheating to outsource
-it to other people.
-
-However, on some posts I decide I want more polish.
-I've sent drafts out for three posts:
-[The Other Two Envelope Problem](http://www.alexirpan.com/2015/09/09/the-other-two-envelope-problem.html),
-["How Do You Feel About Grad School?"](http://www.alexirpan.com/2016/01/03/grad-school.html),
-and [A Gentle Introduction to Secure Computation](http://www.alexirpan.com/2016/02/11/secure-computation.html)
-
-Every post improved by an order of magnitude.
-
-It's hard to describe how much peer review helps.
-After reading so many drafts, your brain starts blurring sentences together.
-You miss the forest for the trees, and getting another viewpoint helps
-untangle this.
-
-Even the best writers send drafts to editors and friends. There's no shame in
-it. What's more surprising is how little I valued this process before now.
-It took me until my secure computation post to fully appreciate it.
-
-
 # 8. Try Not To Get Hung Up On Popularity
 
-According to Google Analytics, my most viewed posts are:
+We all want other people to care about us, even when we give ourselves reasons
+why they shouldn't. Writing is no exception. In fact, it's extra dangerous.
+When you write something, when you share a personal story or spend hours
+revising over and over again, you can't help but grow attached to it. Watching it
+get ignored can be a punch to the gut.
+
+It's obvious, but it bears repeating: **popular things are not always good, and
+good things are not always popular.** I'm a bit obsessed with checking my blog views,
+more than is healthy, and I need to remember to divorce my feelings about a
+post from its view count.
+
+What people think about your post matters, but don't let it rule everything about
+you. According to Google Analytics, my most viewed posts are:
 
 * A Gentle Introduction to Secure Computation
 * "How Do You Feel About Grad School?"
 * Mystery Hunt 2016 Wrap-Up
 
-The high view count for these posts comes almost entirely from my personal
-promotion.
+The first stuck on Hacker News for a day, the second got very good traction among
+my Facebook friends, and the last got shared to the Mystery Hunt subreddit.
+Note that all of that is tangentially related to the actual quality - I got
+more views because I shared the link to a more public place.
 
-* I submitted the post on secure computation to Hacker News. It made front page,
-and stuck there for a day.
-* I also submitted the post on graduate school to Hacker News. That one didn't
-stick, but it hung around new submissions for a while.
-* Finally, I shared my Mystery Hunt write-up to the Mystery Hunt subreddit.
+If I cared only about view count, I wouldn't bother writing about
+[a My Little Pony made-for-TV movie](http://www.alexirpan.com/2015/11/02/friendship-games-geometry.html),
+because I know most people won't care. But I do, and that makes it worth it.
 
-Traffic to my blog is decided almost entirely by whether I share it ouside Facebook.
-Personally, both my [AlphaGo post](http://www.alexirpan.com/2016/01/28/deepmind-go.html)
+(For the record, both my [AlphaGo post](http://www.alexirpan.com/2016/01/28/deepmind-go.html)
 and [Khan Academy post](http://www.alexirpan.com/2015/08/20/things-i-did-in-my-khan-academy-internship.html)
-deserve more views than my thoughts on Mystery Hunt.
-
-I know it's obvious, but it bears repeating: **popular things are not always good, and
-good things are not always popular.** I'm a bit obsessed with checking my blog views,
-more than is healthy, and I need to remember to divorce my
-feelings about a post from its view count.
+deserve more views than they have. You really don't need to read that MLP post
+unless you're interested in attention to detail.)
 
 \*\*\*
 {: .centered }
 
-We'll see how I feel about these ideas in another half year.
-If there's one constant in the universe, it's that everyone thinks their past self is an idiot.
+We'll see how I feel these lessons in the future.
+If there's one constant in the universe, it's that everyone thinks
+their past self is an idiot.
 
-In the next few months, I plan to start flushing my queue of non-technical posts.
-On the short list is
+As for the next few months? I plan to start flushing my queue of non-technical
+post ideas. On the short list are
 
 * A post about *Gunnerkrigg Court*
-* A post on effort icebergs
+* A post on effort icebergs and criticism
 * A post about obsessive fandoms
-* A post detailing the hilariously incompetent history of online Dominion
+* A post detailing the hilariously incompetent history of Online Dominion
 
-If that goes well, I may also add some short stories. I haven't done creative
+I may also try writing some short stories. I haven't done creative
 writing since high school, but after reading so much [web fiction](http://www.alexirpan.com/recs/), I'm
 up for giving it a shot.
+
+At my current rate, that'll take two months. With planning fallacy, maybe three.
+Knowing that I still overshoot my estimates...well, let's say six more months to
+be safe. Hopefully I do faster than that though.
 
 And with that, I'll close with a quote.
 
@@ -307,12 +319,14 @@ And with that, I'll close with a quote.
 > Doctor: Oh, I do see...I see that this **cannot stand.** I see that things are wrong here.
 Things are very, very wrong, and I don't like it very much. I see that there is
 pain here, and I don't like that either. I see that you've grown complacent.
-I think everyone has. There is nothing worse for life than complacency, my dear,
+I think everyone has. There is nothing worse for life than complacency,
 and I shall not **have it.** I might not know many things about this land of
 myth and magic, but I know that Twilight is on the other side of this conflict and
-I know that this conflict is causing misery. I'm correct to correct both those things.
+I know that this conflict is causing misery. I'm going to correct both those things.
 
 (*Doctor Whooves Adventures*, "Bells of Fate")
 {: .centered }
+
+Keep going. Because whether it works out or not, it's sadder to not try at all.
 
 Onwards and upwards!
