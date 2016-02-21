@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Lessons Learned After Six Months of Blogging"
-date:   2016-02-18 00:15:00 -0800
+date:   2016-02-20 19:40:00 -0800
 ---
 
 Just over six months ago, I [rebooted my personal site]({% post_url 2015-08-18-hello-world-again %})
