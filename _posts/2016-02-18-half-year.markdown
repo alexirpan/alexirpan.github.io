@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Six Months of Blogging: A Retrospective"
+title:  "Lessons Learned After Six Months of Blogging"
 date:   2016-02-18 00:15:00 -0800
 ---
 
@@ -9,15 +9,10 @@ into the current blog.
 
 I wasn't exactly sure how people would respond, but so far I've been pleasantly
 surprised. It's encouraging to know people like reading my own brand of
-stupidity.
+stupidity. As celebration, I decided to collate the lessons I've learned into
+one post. (Besides, the part of me that loves all things meta wouldn't forgive myself
+if I passed up a chance to write a blog post about my blog.)
 
-Half a year is a decent achievement,
-and the part of me that loves all things meta
-wouldn't forgive myself if I passed up a chance to write a blog post about
-my blogging experience.
-
-If you're interested in blogging, or you're just interested in a look behind the
-scenes, here are a few tips.
 
 \*\*\*
 {: .centered }
@@ -51,49 +46,60 @@ is very close to good enough in my eyes. It must be too short to offend me.)
 {: .centered }
 
 
-# 2. If You're A Programmer, Consider Github Pages
+# 2. Your Writing Environment Matters. Take The Time To Find One That Works For You
 
-When I rebooted my personal site. I wanted a site that
-let me focus entirely on creating content. [Github Pages](https://pages.github.com/)
-fit perfectly. Free web hosting, total control over my site's content,
-a transparent build process, and free edit history and backups thanks to Git.
+My old personal site was written in [Blogger](https://www.blogger.com). It worked,
+but after my first two posts I lost motivation to keep it updated. In retrospect,
+the big reason I didn't like use Blogger was all the abstraction it put between
+you and your site. To create posts, I had to go to Blogger's site and write in
+their Microsoft Word-esque editor. To change my layout, I either had to use
+a drag and drop interface or edit the raw HTML.
 
+In contrast, using [Github Pages](https://pages.github.com/) has been a complete
+joy. It's much more transparent, I have total
+control over my site's content, and I get free edit history thanks to Git.
 I know it's incredibly nerdy to say this, but getting to write my blog posts
-with Vim is fantastic. Github Pages strikes a nice balance between ease of use
+in Markdown using Vim is fantastic.
+
+Github Pages strikes a nice balance between ease of use
 and extensibility. So far, my blog uses images, audio clips, code
 highlighting, Youtube embeds, spoiler buttons, typeset math (implemented with [KaTeX](http://khan.github.io/KaTeX/)),
 comments (from Disqus), and analytics (from Google Analytics).
 Not only does it all work, I know how it all works, which is a huge plus.
 
-If you're familiar with Git, it's surprising how natural it feels to write blog
-posts. The only weird bug I've had is a conflict between
+If you're familiar with Git, it's surprising how natural it feels. I can easily
+switch between different drafts, and can move from coding to blogging at the
+drop of a hat if I need to take a break from debugging. The only issue I've had
+so far is a conflict between
 [KaTeX and the Markdown rendering engine](https://github.com/Khan/KaTeX/issues/20#issuecomment-133649914),
-but even that wasn't terrible. After figuring out the issue, I
+but even that wasn't terrible. After figuring out the problem, I
 [added a hotfix](https://github.com/alexirpan/alexirpan.github.io/commit/bb00924acd5e1e1c5fbca8fd25847058f1d9ad1c)
 the next day. (Please don't ask how the regex works. It just does.)
+
+**If you don't like your writing environment, you aren't going to write.**
+There are lots of obstacles between an idea and its execution.
+Your working environment shouldn't be one of them.
 
 
 # 3. Writing Will Take Longer Than You Think
 
-I never planned to have an update schedule. If I had one, I knew I'd fall behind,
-and would feel obligated to write something even when I didn't have the time
-or ideas.
+I never planned to have an update schedule. As a student, I knew my work loads
+could shoot up in an instance, and I didn't want to feel obligated to write
+something when I didn't have the time to do it right.
 
-I knew that meant my updates would be sporadic, but I didn't expect how much
-time I needed for each post. Without
-fail, every post I write takes longer to finish than I think it will.
-And for the record, I've tried to remember planning fallacy from day one.
-Every post, I give myself a generous estimate, and *overshoot it anyways.*
+What I didn't expect was how *long* writing would take.
+Without fail, every post I write takes longer to
+finish than I think it will.
+And for the record, I've tried to account for planning fallacy from day one.
 As Douglas Hofstadter puts it,
 
 > Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.
 
-(*Gödel, Escher, Bach*)
+(from *Gödel, Escher, Bach*)
 {: .centered}
 
-Proving Hofstadter's Law wouldn't be so bad if I didn't do most of my blogging
-around midnight. I have definitely lost sleep to blogging, and that can't be
-healthy. To show how bad this can be, let's look at the commits for
+Proving Hofstadter's Law wouldn't be so bad if I didn't do most of my writing
+at midnight. To show how bad this can be, let's look at the commits for
 my [first technical post](http://www.alexirpan.com/2015/08/23/simulating-a-biased-coin-with-a-fair-one.html).
 
 ![Commits for coins branch](/public/half-year/coins-commits.png)
@@ -110,8 +116,8 @@ Ended up revising until *3:40 AM*.
 * Final proofreading and launch Sunday evening. Attempt to fix my sleep
 schedule for Monday fails miserably.
 
-You'd think I'd have learned to schedule writing time elsewhere,
-but I haven't. In fact, I'm doing some late night writing right now.
+I have literally lost sleep to my blog posts. It's silly and stupid, but I
+don't see it changing. In fact, I'm doing some late night writing right now.
 Check the commits for this post. You should find a commit at 1 AM,
 another at 2 AM, a few 3 AM commits mixed in...
 
@@ -122,12 +128,8 @@ Pictured: descent into madness, complete
 {: .centered}
 
 
-This procrastination is even worse for my longer posts. My post
-[about my thoughts on graduate school](
-http://www.alexirpan.com/2016/01/03/grad-school.html) was
-written during a month of winter break.
-Like all good programmers, I express my rage through commit messages,
-and wow are there some gems here.
+Like all good programmers, I express my rage through commit messages.
+Here are some gems from the commits for my graduate school post.
 
 > More things. All the things. man whose going to read these commits anyways (Sat Dec 19 03:36:46 2015)
 
@@ -137,9 +139,13 @@ and wow are there some gems here.
 
 > URGH JUST SHIP IT. (Sun Jan 10 11:50:03 2016)
 
+If you're going to write, allocate some time. Then make that estimate
+longer. Then expect to go over that estimate, unless you manage to
+stay very, very focused.
+
 (Incidentally, this is why you should consider a [CFAR workshop](http://rationality.org/workshops/).
-Reading about logical fallacies doesn't stop you from making them.
-I haven't done one because the cost is scary, but I've thought about it.)
+Reading about logical fallacies doesn't actually stop you from making them.
+I haven't done one because the cost is scary, but I've considered it.)
 
 
 # 4. Don't Worry About Ideas. Worry About Time
@@ -147,39 +153,38 @@ I haven't done one because the cost is scary, but I've thought about it.)
 In the past 6 months, I've written fourteen posts. Fifteen, if you count this one.
 That averages to just over one post every 2 weeks.
 
-It turns out I have blog-worthy ideas more often than twice a week.
+It turns out I have blog-worthy ideas more often than once every 2 weeks.
 When I started this, I was worried I'd run out of things to say, but
-the opposite has turned true. I have so many posts I want to write, and
-don't have the time to do so.
+the opposite has turned true; I have too many ideas, and need to aggressively
+filter them down.
 
-I consider myself a slow person in all aspects of life. I rarely solve a problem
-at first glance, and rely on putting in tons of hours for my problem sets.
-I almost never ask questions in lecture,
-because I rarely know enough to articulate exactly what I'm confused about.
+I consider myself a slow person in all aspects of life.
+I rarely solve a problem at first glance, unless I've seen a problem that's
+very very similar. I almost never ask questions in lecture,
+because I rarely know enough to articulate what I'm confused about.
 And when it comes to writing, I have to phrase an idea once in the head
 and thrice on the page before I'm satisfied.
 
-It baffles me that [web serials](https://parahumans.wordpress.com/) and blogs
-like [Slate Star Codex](http://slatestarcodex.com/) update at least once a week,
-because I can't do that. I'm too sloppy and undisciplined with my time.
+Being so isn't bad, but it baffles me that web serials like [Worm](https://parahumans.wordpress.com/)
+and blogs like [Slate Star Codex](http://slatestarcodex.com/) can update over once
+a week. I certainly can't do that. It requires a level of discipline I don't
+have yet.
 
 I think people undervalue how impressive sticking to a schedule is. We'd all
 be a lot better off if we [valorized organization more](http://www.alexirpan.com/2015/09/01/optimizing-process.html).
 
 
-# 5. You'll Have a Writing Style, Whether You Notice It Or Not
+# 5. You Already Have A Writing Style. Embrace It.
 
-I deliberately chose to keep this blog colloquial. It's my blog, it's my
-voice, and I don't give a shit about formal writing conventions. If
-I want to use contractions or swear a bit, I will. If my posts drag on,
-that's part of who I am.
+When I started this blog, I chose to keep it colloquial. It's my blog, and
+it's my voice. If I want to use contractions or swear a bit, I will, formal
+writing conventions be damned. If my posts drag on, that's part of who I
+am.
 
-I don't want to feel obligated to write a certain way, or write only about
-certain things. I write things I think I'll want to read later.
-If anyone else thinks that's cool, it's a bonus.
+I don't want to feel obligated to write a certain way, or present only certain
+parts about myself. I write things in the way I like to read them, and
+if anyone else thinks that's cool, it's just a bonus.
 
-Throwing off the shackles of formal voice made it much easier
-to produce content, but I've also found an unintended side effect.
 Once I tried to [write like how I'd talk if I had the time to phrase things
 just right](http://paulgraham.com/talk.html), I started noticing patterns.
 I start many sentences with "and" or "but" or "because", the abruptness
@@ -193,18 +198,18 @@ They're very good when you want to emphasize ideas with force.
 I add parallel structure wherever I can. It's simple, it's straightforward,
 and it's an easy way to make disparate ideas seem connected.
 
-It's very cool that I can notice these things, because getting better at
-writing was my main goal with blogging.
-But, it also means I have to spend lots of time revising.
-If I'm not careful, all my sentences will start with contractions. Every
-paragraph will have shoehorned parallelism.
-Words will repeat, sentences will be structured similarly, my writing
-will become dull and laggard.
+I don't know if this is my style or if it's my habits, but maybe the two
+aren't so different. Still, it's very cool that I'm more aware of these
+patterns. It also means I have to spend lots of time revising.
+If I'm not careful, my writing will become nothing but habits.
+Every paragraph will have shoehorned parallelism.
+Words will repeat. Every sentence will get structured similarly, and
+my writing will become dull and laggard.
 
-I can recognize good writing. The hard part is actually making it.
+I can recognize good writing. The hard part is getting there.
 
 
-# 6. Experience, Not Effort, Is The Biggest Factor In Quality
+# 6. Experience, Not Effort, Is The Driver Of Quality
 
 This one surprised me. Consider two posts, one about [Doctor Whooves Adventures](http://www.alexirpan.com/2015/09/24/how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy.html),
 and the other about [AlphaGo](http://www.alexirpan.com/2016/01/28/deepmind-go.html).
@@ -233,37 +238,35 @@ Writing is the process of turning ideas into words. It's a lot easier
 if you've seen and explained these ideas before.
 
 That's not saying all my non-technical writing is bad. My finest work is
-still [grad school post](http://www.alexirpan.com/2016/01/03/grad-school.html),
-which was a pure non-technical thinkpiece. (Seriously, go read it if you
-haven't. I doubt I'll ever write anything better.)
-
-As with all things, I can do it if I put in enough time. The only question
-is whether I can allocate enough time, and whether I want to.
+a [non-technical thinkpiece](http://www.alexirpan.com/2016/01/03/grad-school.html),
+after all. (Seriously, I know I've linked it so many times, but go read my
+grad school post if you haven't. I doubt I'll ever write anything better.)
+I plan to focus more on non-technical writing in the next 6 months, and this
+post is the first step on that path.
 
 
 # 7. Do Peer Review Whenever You Can
 
-On most posts, I don't ask friends to read them first. I've been
-trying to practice my revision skills, and it feels like cheating to outsource
+On many posts, I don't ask friends to read them first. I've been
+practicing my revision skills, and it feels like cheating to outsource
 it to other people.
 
-However, on some posts I decide it's worth it.
+However, on some posts I decide I want more polish.
 I've sent drafts out for three posts:
 [The Other Two Envelope Problem](http://www.alexirpan.com/2015/09/09/the-other-two-envelope-problem.html),
 ["How Do You Feel About Grad School?"](http://www.alexirpan.com/2016/01/03/grad-school.html),
 and [A Gentle Introduction to Secure Computation](http://www.alexirpan.com/2016/02/11/secure-computation.html)
 
-Every post got much better with their feedback, by an order of magnitude.
+Every post improved by an order of magnitude.
 
-Nobody questions that peer review is helpful, but it's
-hard to describe how much it helps. It's impossible
-to recreate the first impression, and after reading so many drafts the sentences
-blur together in your brain. You miss the forest for the trees, and need
-someone else to look from further away.
+It's hard to describe how much peer review helps.
+After reading so many drafts, your brain starts blurring sentences together.
+You miss the forest for the trees, and getting another viewpoint helps
+untangle this.
 
 Even the best writers send drafts to editors and friends. There's no shame in
 it. What's more surprising is how little I valued this process before now.
-It's something I had to go through many times to fully appreciate.
+It took me until my secure computation post to fully appreciate it.
 
 
 # 8. Try Not To Get Hung Up On Popularity
@@ -274,8 +277,8 @@ According to Google Analytics, my most viewed posts are:
 * "How Do You Feel About Grad School?"
 * Mystery Hunt 2016 Wrap-Up
 
-Yet I know for sure that this isn't related to their quality.
-The high view count comes almost entirely from sharing to a wider audience.
+The high view count for these posts comes almost entirely from my personal
+promotion.
 
 * I submitted the post on secure computation to Hacker News. It made front page,
 and stuck there for a day.
@@ -283,29 +286,45 @@ and stuck there for a day.
 stick, but it hung around new submissions for a while.
 * Finally, I shared my Mystery Hunt write-up to the Mystery Hunt subreddit.
 
-Traffic to my blog is almost entirely decided by whether I share it
-ouside Facebook. By my rankings, my AlphaGo post and [Khan Academy](http://www.alexirpan.com/2015/08/20/things-i-did-in-my-khan-academy-internship.html)
-post deserve more views.
+Traffic to my blog is decided almost entirely by whether I share it ouside Facebook.
+Personally, both my [AlphaGo post](http://www.alexirpan.com/2016/01/28/deepmind-go.html)
+and [Khan Academy post](http://www.alexirpan.com/2015/08/20/things-i-did-in-my-khan-academy-internship.html)
+deserve more views than my thoughts on Mystery Hunt.
 
 I know it's obvious, but it bears repeating: **popular things are not always good, and
-good things are not always popular.** I'm a bit obsessed with refreshing my
-blog analytics, more than is healthy, and I need to remember to divorce my
+good things are not always popular.** I'm a bit obsessed with checking my blog views,
+more than is healthy, and I need to remember to divorce my
 feelings about a post from its view count.
 
+\*\*\*
+{: .centered }
 
-The Next Six Months
--------------------------------------------------------------------------------
+We'll see how I feel about these ideas in another half year.
+If there's one constant in the universe, it's that everyone thinks their past self is an idiot.
 
-I plan to write more non-technical posts, to stretch those parts of my brain.
-Off the top of my head, I still need to write about *Gunnerkrigg Court*,
-effort icebergs, and obsessive fandoms. I may also try some short form
-creative writing, there are some interesting ideas I want to explore.
-(On the short list is an idea inspired by a quote from *Fine Structure*:
-"There was a war in Heaven, and the debris fell to Earth.")
+In the next few months, I plan to start flushing my queue of non-technical posts.
+On the short list is
 
-Ideally, I'll have more free time this semester because it's my final one,
-but it's not clear that'll be true. I'll also be working full time starting
-in June. So, although my goal is to write more, don't be surprised if this
-doesn't happen.
+* A post about *Gunnerkrigg Court*
+* A post on effort icebergs
+* A post about obsessive fandoms
+* A post detailing the hilariously incompetent history of online Dominion
 
-MAKE AN ENDING
+If that goes well, I may also add some short stories. I haven't done creative
+writing since high school, but after reading so much [web fiction](http://www.alexirpan.com/recs/), I'm
+up for giving it a shot.
+
+And with that, I'll close with a quote.
+
+> Do you see now, Doctor? This land is divided, and there is no fixing it.
+>
+> Oh, I do see...I see that this cannot stand. I see that things are wrong here.
+Things are very, very wrong, and I don't like it very much. I see that there is
+pain here, and I don't like that either. I see that you've grown complacent.
+I think everyone has. There is nothing worse for life than complacency, my dear,
+and I shall not **have it.**
+
+(Doctor Whooves Adventures, *Bells of Fate*)
+{: .centered }
+
+Onwards and upwards!
