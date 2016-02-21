@@ -36,23 +36,23 @@ Or said more succinctly,
 > Sucking at something is the first step to becoming sorta good at
 > something.
 
-(Jack The Dog, *Adventure Time*)
+(Jake The Dog, *Adventure Time*)
 {: .centered }
 
 
 # 2. Your Writing Environment Matters. Take The Time To Find One That Works For You
 
-My old personal site ran on [Blogger](https://www.blogger.com). It worked,
+My old site ran on [Blogger](https://www.blogger.com). It worked,
 but I quickly lost motivation to update it.
-Blogger abstracts its functionality behind its own tools, and I got sick of it.
-To create posts, I had to go to Blogger's site and write in
-their Microsoft Word-esque editor. To change the site layout, I had to use
-a drag and drop interface or edit raw HTML. Plus, all the tie-ins with Google+
-were vaguely annoying.
+Blogger abstracts its functionality behind lots of tools, and I got sick of it.
+To create posts, I had to open Blogger's site and write in
+their Microsoft Word-esque editor. To change the site layout, I could either use
+a drag and drop interface, or edit raw HTML. Plus, the Google+ tie-in was
+vaguely annoying.
 
 In contrast, [Github Pages](https://pages.github.com/) has been a complete
-joy. It's transparent. I have total control over my site's design. I
-get free edit history thanks to Git.
+joy. It's transparent, I have total control over my site's design, and best of
+all I get free edit history thanks to Git.
 I know it's incredibly nerdy to say this, but getting to write my blog posts
 in Markdown using Vim is fantastic.
 
@@ -66,7 +66,7 @@ I can switch between different drafts on a whim, and can move from coding to
 blogging with ease if I need to take a break from debugging.
 The only issue I've had so far is a conflict between
 [KaTeX and the Markdown rendering engine](https://github.com/Khan/KaTeX/issues/20#issuecomment-133649914),
-but even that wasn't terrible. After figuring out the problem, I
+but even that wasn't so bad. After figuring out the problem, I
 [added a hotfix](https://github.com/alexirpan/alexirpan.github.io/commit/bb00924acd5e1e1c5fbca8fd25847058f1d9ad1c)
 the same day.
 
@@ -75,7 +75,7 @@ There are lots of obstacles between having an idea and writing about it.
 Your environment shouldn't be one of them.
 
 
-# 3. It'll Take Longer Than You Think
+# 3. It'll Take Longer Than You Think. No, Longer Than That
 
 I never planned to have an update schedule. As a student, I knew my work loads
 could shoot up in an instant, and I didn't want to feel obligated to write
@@ -83,7 +83,7 @@ something when I didn't have the time to do it properly.
 
 What I didn't expect was how *long* writing would take.
 Without fail, every post I write takes longer to
-finish than I think it will. This is even after accounting for the
+finish than I think it will. This is even after I try accounting for the
 planning fallacy. As said by Douglas Hofstadter,
 
 > Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.
@@ -104,9 +104,9 @@ Pictured: my slow descent into madness
 
 * Initial work saved Thursday, 2 AM
 * Completed a first draft Friday night, working from 9 PM to midnight.
-* Revising session Saturday night. Started at 11 PM, hoping to finish by 2 AM.
-Ended up revising until *3:40 AM*.
-* Final proofreading and launch Sunday evening. Attempted to fix my sleep
+* Started revising Saturday night. Started at 11 PM, hoped to finish by 2 AM.
+Still working at *3:40 AM*.
+* Final launch at Sunday 6 PM. Attempted to fix my sleep
 schedule for Monday, failed miserably.
 
 I have literally lost sleep to blogging. It's silly, it's stupid, and I
@@ -169,7 +169,7 @@ be a lot better off if we [valorized organization more]({% post_url 2015-09-01-o
 When I started this blog, I chose to keep it colloquial. It's my blog, and
 it's my voice. If I want to use contractions or swear a bit, I will, formal
 writing conventions be damned. If my posts drag on, that's part of who I
-am, I won't change it.
+am, I won't hide it.
 
 I don't want to feel obligated to write a certain way, or present only certain
 parts about myself. I write things I'll want to read later.
@@ -179,12 +179,14 @@ Once I started [writing like how I'd talk if I had the time to phrase things
 just right](http://paulgraham.com/talk.html), I started noticing patterns.
 I start sentences with "and" or "but" or "because", since I like
 the abruptness of the conjunction. I say "A and B and C"
-instead of "A, B, and C" occasionally, because sometimes I don't
-like the mental pauses from commas.
+instead of "A, B, and C", because sometimes I don't
+like the mental pauses from the commas.
 
-I adopted sudden paragraph breaks, since they're very good for emphasizing
-specific sentences. I insert parallel structure everywhere, since it's an easy way
-to connect disparate ideas.
+I use sudden paragraph breaks to emphasize specific sentences.
+I insert parallel structure to connect disparate ideas.
+
+Parts of this are just for good style, but style isn't a list of conventions
+you have to follow. It's how you say the things you want to say.
 
 When you write, you're trying to say something. So actually **say it**. Don't
 couch it in formal writing. If that means you add Internet memes
@@ -196,8 +198,8 @@ nor the place.
 
 # 6. Do Peer Review Whenever You Can
 
-I usually don't ask friends to read my posts before I share them. I've been
-practicing my revision skills, and it feels like cheating to outsource
+I usually don't ask friends to read my posts before I share them. I want to
+work on my revision skills, and it feels cheap to outsource
 it to other people.
 
 However, sometimes I decide I want more polish.
@@ -210,8 +212,8 @@ Every post improved by an order of magnitude.
 
 It's hard to describe how much peer review helps.
 After reading so many drafts, your brain starts blurring the words together.
-You miss the forest for the trees, and getting another viewpoint helps
-untangle this.
+You miss the forest for the trees, and getting another reader helps immensely
+with untangling this.
 
 Even the best writers send drafts to editors and friends. There's no shame in
 it. What's more surprising is how little I valued it before now.
@@ -226,10 +228,10 @@ and the other about [AlphaGo]({% post_url 2016-01-28-deepmind-go %}).
 
 The first was very difficult for me to write. I didn't know why I liked
 *Doctor Whooves Adventures*, and even after that post I find it hard
-to explain why I'm still hoping for a new episode. Over two weeks, I
-agonized on how to express my love for the show, on deciding what excerpts to
-share for my argument. I went back and forth, and eventually posted a final
-draft to a lukewarm response. Looking back, I can understand why.
+to explain why I hope the series isn't dead. Over two weeks, I
+agonized on how to express my love for the show. I went back and forth between
+different excerpts and ideas, and eventually posted a final
+draft to a lukewarm response. Looking back, I can see why.
 
 In comparison, the post on AlphaGo was written in a single night.
 I wanted to strike while the iron was hot, since I knew interest in Go would be
@@ -248,17 +250,18 @@ than my non-technical posts, *I've had years of practice for the former.*
 That's not saying all my non-technical writing is bad. My best post
 is still my [non-technical think piece about grad school]({% post_url 2016-01-03-grad-school %}).
 What I'm saying is that if you're going to write about something unfamiliar,
-don't be surprised if it takes you ages to churn out something mediocre. It took
-me a month of winter break to write that graduate school post.
+don't be surprised if it takes you ages to churn out something mediocre. The
+first draft of my graduate school post was awful, and it took a month
+of revising over winter break to get it to that state.
 
 
 # 8. Try Not To Get Hung Up On Popularity
 
 We all want other people to care about us, even when we give ourselves reasons
 why they shouldn't. Writing is no exception. In fact, it's an extra dangerous area.
-When you share a personal story or spend hours deciding the easiest way to explain
-a concept, you can't help but grow attached to your work. And watching it
-get ignored can be a punch to the gut.
+When you share a personal story or spend hours thinking about the easiest way to
+explain something, you can't help but grow attached to your work. It's like a
+little baby, and watching your baby get ignored is like a punch to the gut.
 
 It's obvious, but it bears repeating: **popular things are not always good, and
 good things are not always popular.** I'm a bit obsessed with checking my blog views,
@@ -273,16 +276,17 @@ you. According to Google Analytics, my three most viewed posts are:
 * [Mystery Hunt 2016 Wrap-Up]({% post_url 2016-01-21-mysteryhunt %})
 
 The first stuck on Hacker News for a day, and the last got shared to the Mystery Hunt subreddit.
-Note that both are tangentially related to the actual quality.
+Note that both reasons for the high view count are only tangentially
+related to the actual quality.
 
 If I cared only about view count, I wouldn't bother writing about
-a [My Little Pony made-for-TV movie]({% post_url 2015-11-02-friendship-games-geometry %}),
-because I know most people won't care. But I care, and that's why I did it.
+a [*My Little Pony* made-for-TV movie]({% post_url 2015-11-02-friendship-games-geometry %}),
+because I know most people won't be interested. But I care about it, and that's why I did it.
 
 (For the record, both my [AlphaGo post]({% post_url 2016-01-28-deepmind-go %})
-and [Khan Academy post]({% post_url 2015-08-20-things-i-did-in-my-khan-academy-internship %})
-deserve more views than they have. You really don't need to read that MLP post
-unless you're interested in nerd-sniping commentated live.)
+and my [Khan Academy post]({% post_url 2015-08-20-things-i-did-in-my-khan-academy-internship %})
+deserve more views than they have. You really shouldn't read that MLP post
+unless you're interested in me commentating a nerd-snipe.)
 
 \*\*\*
 {: .centered }
@@ -305,8 +309,8 @@ writing since high school, but after reading so much [web fiction](/recs/), I'm
 up for giving it a shot.
 
 At my current rate, four posts will take two months. With planning fallacy, maybe three.
-Knowing that I still overshoot my estimates...well, let's try another six
-months. Hopefully I get more than that done in six months though.
+Knowing that I still overshoot my estimates...six months?
+Hopefully I can do more than that though.
 
 I'll close with a quote, something as "me" as I can find.
 
