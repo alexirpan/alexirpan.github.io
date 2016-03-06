@@ -15,6 +15,8 @@ paginate: 3
 header_links:
     - url: "/recs/"
       title: "Recs"
+    - url: "/projects/"
+      title: "Projects"
     - url: "/archive/"
       title: "Archive"
     - url: "/feed.xml"
