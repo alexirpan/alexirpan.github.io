@@ -11,8 +11,9 @@ Currently, I do undergraduate research in the [Berkeley Artificial Intelligence
 Research (BAIR) Lab](http://bair.berkeley.edu/),
 mentored by [Pieter Abbeel](http://www.cs.berkeley.edu/~pabbeel/) and
 working most closely with [John Schulman](http://www.eecs.berkeley.edu/~joschu/).
-My main research area is deep reinforcement learning, which explores whether
-agents can learn good strategies from minimal domain knowledge.
+My main research area is deep reinforcement learning, which combines
+deep neural nets and reinforcement learning to learn good strategies from
+minimal domain knowledge.
 In the past, I was a TA for [CS 70](http://inst.eecs.berkeley.edu/~cs70),
 the introductory discrete math and probability course.
 
