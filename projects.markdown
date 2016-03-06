@@ -12,8 +12,9 @@ so the first page load may be slow.
 
 -----------------------
 
+<p></p>
 
-<br>[**Divisibility Regex**](http://divisibilityregex.herokuapp.com/)
+# [Divisibility Regex](http://divisibilityregex.herokuapp.com/)
 
 *Checks divisibility of numbers by using regular expressions. December 2015*
 
@@ -31,8 +32,9 @@ Made this to have fun exploring DFAs and regular expressions.
 
 -----------------------
 
+<p></p>
 
-<br>[**Jaden Smith Generator**](http://jaden-generator.herokuapp.com/)
+# [Jaden Smith Generator](http://jaden-generator.herokuapp.com/)
 
 *Generates typical Jaden Smith tweets. September 2014*
 
@@ -53,8 +55,9 @@ so far I've convinced myself that would be really, really dumb.
 
 -----------------------
 
+<p></p>
 
-<br>[**Python Flow Visualizer**](http://python-flow-visualizer.herokuapp.com/)
+# [Python Flow Visualizer](http://python-flow-visualizer.herokuapp.com/)
 
 *Visualize the control flow of a Python program. October 2013*
 
