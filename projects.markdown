@@ -11,52 +11,62 @@ automatically powers down the site if no one has visited in a while,
 so the first page load may be slow.
 
 -----------------------
-<br>
 
 
-[**Divisibility Regex**](http://divisibilityregex.herokuapp.com/)
+<br>[**Divisibility Regex**](http://divisibilityregex.herokuapp.com/)
 
-*Check if a number is divisible by another with regular expression*
+*Checks divisibility of numbers by using regular expressions. December 2015*
 
 ![Screenshot of a big regex](/public/project-pics/divisibility.png)
 
 Repo: [here](https://github.com/alexirpan/divisibility-regex)
 
-Check if a number is divisible by matching it against an appropriate
-regular expression. A brief explanation of how it works can be found at the
-site's FAQ. Created to have fun exploring the equivalency between DFAs and
+Creates regular expressions that match a number if and only if it is divisible
+by another number. Works for checking divisibility up to 9.
+A brief explanation of how this works can be found at the
+site's FAQ.
+
+Made this to have fun exploring the equivalency between DFAs and
 regular expressions.
 
+-----------------------
 
-[**Jaden Smith Generator**](http://jaden-generator.herokuapp.com/)
 
-*Generate typical Jaden Smith tweets*
+<br>[**Jaden Smith Generator**](http://jaden-generator.herokuapp.com/)
+
+*Generates typical Jaden Smith tweets. September 2014*
 
 ![A typical Jaden Smith tweet](/public/project-pics/jaden.png)
 
 Repo: [here](https://github.com/alexirpan/Jaden-Smith-Generator)
 
 Outputs typical sentences [Jaden Smith](https://twitter.com/officialjaden)
-might tweet by using a Markov chain trained on two corpora:
-all tweets made by Jaden Smith, and the full text of the King
-James Bible. Created because it was too silly to not make.
-I have considered switching this to an RNN-based model, but
-so far I've convinced myself that's too stupid to do.
+might tweet by using a Markov chain trained on
+all tweets made by Jaden Smith and the full text of the King
+James Bible.
+
+Created because the idea was so incredibly silly that it had to become real.
+I have considered switching this to an RNN model, but
+so far I've convinced myself that would be really stupid.
+
+-----------------------
 
 
-[**Python Flow Visualizer**](http://python-flow-visualizer.herokuapp.com/)
+<br>[**Python Flow Visualizer**](http://python-flow-visualizer.herokuapp.com/)
 
-*Visualize the control flow of a Python program*
+*Visualize the control flow of a Python program. October 2013*
 
-![Visualized control flow for memoized Fibonacci](/public/project-pics/python.png)
+[![Visualized control flow for memoized Fibonacci](/public/project-pics/python.png)](/public/project-pics/python.png)
 
 Repo: [here](https://github.com/alexirpan/python-visualizer)
 
-(Note: will render poorly on a small screen.)
+(Note: site renders poorly on a small screen. Click image for a larger version.)
 
 Runs a given Python snippet and animates the jumps in control flow.
-The linked picture is a visualization of [Peter Norvig's Scheme interpreter](http://norvig.com/lispy.html)
-evaluating tree recursive Fibonacci. Identifies lines that are jumped to
-often, and makes a note on lines that fail a Python lint check.
-Made for the Facebook NorCal Hackathon; I was part of a group of four.
+The picture above is a visualization of [Peter Norvig's Scheme interpreter](http://norvig.com/lispy.html)
+evaluating tree recursive Fibonacci. Identifies the lines that are jumped to most
+often, and notes which lines fail Python lint checks.
+
+Made in 24 hours for the Facebook NorCal Hackathon. Worked with
+Chenyang Yuan, Ena Hariyoshi, and Anting Shen.
 
