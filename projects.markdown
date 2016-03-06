@@ -18,6 +18,7 @@ so the first page load may be slow.
 *Checks divisibility of numbers by using regular expressions. December 2015*
 
 ![Screenshot of a big regex](/public/project-pics/divisibility.png)
+{: .centered }
 
 Repo: [here](https://github.com/alexirpan/divisibility-regex)
 
@@ -26,8 +27,7 @@ by another number. Works for checking divisibility up to 9.
 A brief explanation of how this works can be found at the
 site's FAQ.
 
-Made this to have fun exploring the equivalency between DFAs and
-regular expressions.
+Made this to have fun exploring DFAs and regular expressions.
 
 -----------------------
 
@@ -37,17 +37,19 @@ regular expressions.
 *Generates typical Jaden Smith tweets. September 2014*
 
 ![A typical Jaden Smith tweet](/public/project-pics/jaden.png)
+{: .centered }
 
 Repo: [here](https://github.com/alexirpan/Jaden-Smith-Generator)
 
-Outputs typical sentences [Jaden Smith](https://twitter.com/officialjaden)
-might tweet by using a Markov chain trained on
+Outputs typical [Jaden Smith](https://twitter.com/officialjaden) tweets
+by using a Markov chain trained on
 all tweets made by Jaden Smith and the full text of the King
-James Bible.
+James Bible. (Adding the King James Bible makes the output coherent more
+often.)
 
-Created because the idea was so incredibly silly that it had to become real.
-I have considered switching this to an RNN model, but
-so far I've convinced myself that would be really stupid.
+This idea was incredibly silly, so of course I decided I needed to make it real.
+I have considered upgrading this to an RNN model, but
+so far I've convinced myself that would be really, really dumb.
 
 -----------------------
 
@@ -57,6 +59,7 @@ so far I've convinced myself that would be really stupid.
 *Visualize the control flow of a Python program. October 2013*
 
 [![Visualized control flow for memoized Fibonacci](/public/project-pics/python.png)](/public/project-pics/python.png)
+{: .centered }
 
 Repo: [here](https://github.com/alexirpan/python-visualizer)
 
@@ -68,5 +71,7 @@ evaluating tree recursive Fibonacci. Identifies the lines that are jumped to mos
 often, and notes which lines fail Python lint checks.
 
 Made in 24 hours for the Facebook NorCal Hackathon. Worked with
-Chenyang Yuan, Ena Hariyoshi, and Anting Shen.
+Anting Shen, Chenyang Yuan, and Ena Hariyoshi. Uses [D3.js](https://d3js.org/) and
+[Angular](https://angularjs.org/).
+
 
