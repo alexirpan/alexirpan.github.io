@@ -100,6 +100,43 @@ side project of one Google engineer, most famous for his presentation
 It quite literally ran out of DougZ's basement - an AMA about Isotropic revealed
 that "server maintenance" was code for "turn the machine off and on again."
 
+At a first glance, Isotropic doesn't look like anything special. It didn't have
+the graphics of BSW. It didn't even have the official card art.
+
+ADD A PICTURE OF ISO HERE.
+
+Still, it was the best platform Online Dominion has ever had. It may have been
+plain, but it did the key things right.
+
+* The gameplay engine was rock solid. Rules were always implemented correctly.
+Matching was reliable, the server almost never dropped games, and players
+could reconnect to games if they lost their internet connection. At worst,
+there would be some brief lag.
+* The interface was designed well. It never felt like the client got in the way
+of what you wanted to do. When it comes to controls, the goal of any game client
+is to feel like an extension of your thoughts.
+* The minimalist graphics made it runnable on basically every computer. I played
+Isotropic on a Windows Vista laptop that had 5 minutes of battery life, and it
+worked fine. All you needed was an internet connection - in principle you could
+play on your phone and it would work.
+* If you needed to do something for a bit, the game displayed a text log of the
+past few turns, which let you catch up on what happened while you looked away.
+
+Those were all the main essentials, but Isotropic had a few features that
+made it the focal point of the fan community
+
+* There was a competitive ladder based on TrueSkill (LINK), a variant of
+Elo that generalizes to multiplayer games. The FAQ linked directly to
+Microsoft's documentation, and described exactly how new players got ranked.
+The leaderboard was exceptionally transparent - you always knew exactly
+how good the system thought you were.
+* Expansions were released promptly. DougZ was a friend of Donald X's (CHECK),
+and a private version of Isotropic was actually used for playtesting. That meant
+expansions were available for free on Isotropic the day they were in stores.
+* Although it wasn't there from the start, automatch quickly let players
+get matched with people of their skill level. Players could alternatively challenge
+players in the lobby
+
 
 
 First Dominion Strategy post: http://dominionstrategy.com/2010/11/12/combo-of-the-day-1-quarrytalisman/
