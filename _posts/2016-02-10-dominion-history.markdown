@@ -65,13 +65,41 @@ the expansion *Cornucopia* brought its own set as well.)
 
 All of this discussion couldn't exist without Dominion Online. In the beginning,
 there was Dominion on BrettspielWhet (BSW). I wasn't around for BSW, but by
-my understanding, it was clunky and heavyweight. Nevertheless, it was free and
-it worked.
+my understanding, it was clunky and heavyweight. Nevertheless, it worked and it was
+free. TALK ABOUT EXPANSIONS HERE.
+
+EMPHASIzE POWER OF ONLINE PLAY?
 
 BSW picture
 
-Sometime around then, an innocent post
+Sometime around 2010, one user, DougZ, posted an innocent reply to a thread asking
+when BSW would have the newest expansion.
 
-Isotropic announcment: https://boardgamegeek.com/article/5373751#5373751
+> I've implemented a server where you can play Dominion against other players online. There's no AI, and the interface is pretty bare-bones, but it does include all the published cards including Prosperity (except for a couple of the promo cards).
+>
+> You can find instructions and a link to the server at http://dominion.isotropic.org/faq.
+>
+> Posted Sun Aug 8, 2010 10:57 pm
+
+[Source](https://boardgamegeek.com/article/5373751#5373751)
+{: .centered }
+
+It was just another post in just another thread. But in time, Isotropic would
+usher in a golden age.
+
+\*\*\*
+{: .centered }
+
+There's a scene from CHECK THE MOVIE. "You weren't there, man! You had to be there!"
+Isotropic was a similar - if you weren't there for Iso, it can be hard to see why
+the community holds it in such high regard.
+
+Isotropic was not professional by any stretch of the information. It was the
+side project of one Google engineer, most famous for his presentation
+["Chicken chicken chicken: chicken chicken"](https://www.youtube.com/watch?v=yL_-1d9OSdk).
+It quite literally ran out of DougZ's basement - an AMA about Isotropic revealed
+that "server maintenance" was code for "turn the machine off and on again."
+
+
 
 First Dominion Strategy post: http://dominionstrategy.com/2010/11/12/combo-of-the-day-1-quarrytalisman/
