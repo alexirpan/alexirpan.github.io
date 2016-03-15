@@ -6,6 +6,11 @@ date:   2016-02-08 10:00:00 -0800
 
 MAKE UP AN INTRO HERE
 
+As someone who's played Dominion competitively on and off for the last
+five years, it's hard for me to detach my impression of events from the facts.
+So, I'm not going to. I'm going to play the opinionated historian, not
+the interested outsider and not the invested fanboy.
+
 It's a long story. To do it right, we need to head back to the very beginning.
 
 
@@ -134,9 +139,38 @@ how good the system thought you were.
 and a private version of Isotropic was actually used for playtesting. That meant
 expansions were available for free on Isotropic the day they were in stores.
 * Although it wasn't there from the start, automatch quickly let players
-get matched with people of their skill level. Players could alternatively challenge
-players in the lobby
+get matched with people of their skill level. Players could also directly
+challenge players in the lobby, since every player's skill level was displayed
+next to them.
+* At the end of each game, you were given a link to the text log for each game.
+This made it easy to share games you thought were cool, ask for help, review
+what you did wrong, and so on.
 
+Essentially, Isotropic implemented everything the competitive community
+wanted, and a few things it didn't know it wanted. People quickly evolved
+the metagame, using Isotropic as their platform to test new ideas.
 
+Around tNear this time, one player called
 
-First Dominion Strategy post: http://dominionstrategy.com/2010/11/12/combo-of-the-day-1-quarrytalisman/
+Around this time, theory and rrenaud, started a blog for
+Dominion. They called it Dominion Strategy, and posted their first
+article in [November 2010](http://dominionstrategy.com/2010/11/12/combo-of-the-day-1-quarrytalisman/).
+(CHECK IF THIS WAS FIRST INSTANCE OF IT)
+
+As theory posted more content, Dominion Strategy became the hub of
+competitive Dominion. Theory posted startegy articles, and people debated them
+in the comments section. Analysis slowly shifted from BGG to the new site.
+
+Meanwhile, rrenaud was working on a different problem: Dominion analytics.
+Every day, Isotropic uploaded an archive of all games played that day. It was
+ripe for analysis, but needed text log parsing, some daily scripts to
+download the logs each day, a database to store logs for each player, and so
+on. With a few others (CREDIT), he built [CouncilRoom](http://www.councilroom.com).
+With CouncilRoom, people could cite statistics for their arguments, pushing
+strategy discussion in a more mechanical direction.
+
+Soon, DominionStrategy was *the* place to go for Dominion. Theory's articles
+on the best cards per cost point were huge debating grounds. In (CHECK) 2011,
+he started the DominionStrategy Forum, commonly abbreviated f.DS, and that
+was where things really kicked off.
+
