@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AlphaGo vs Lee Sedol: Post Match Commentaries"
-date:   2016-03-17 17:00:00 -0800
+date:   2016-03-17 18:24:00 -0700
 ---
 
 *During the [five game match between AlphaGo and Lee Sedol](https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol),
@@ -194,7 +194,7 @@ AlphaGo 3-1 Lee Sedol
 [![AlphaGo resigning](/public/ago-lsd/alphagoresign.jpg)](/public/ago-lsd/alphagoresign.jpg)
 {: .centered }
 
-AlphaGo resigning. Click for larger version.
+AlphaGo resigning. [Click for larger version](/public/ago-lsd/alphagoresign.jpg).
 {: .centered }
 
 
