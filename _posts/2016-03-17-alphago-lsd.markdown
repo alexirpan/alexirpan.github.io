@@ -8,8 +8,9 @@ date:   2016-03-17 17:00:00 -0800
 I posted my thoughts after each game to Facebook. People seemed to like them, so
 I'm collecting them here for posterity.*
 
-*These are mostly unedited, because editing will bring in my unconscious
-bias from knowing how the match ended up.*
+*These are almost entirely unedited. Editing will add in my unconscious bias from
+knowing the match outcome, and I want to preserve how I felt while the match
+was in progress.*
 
 
 Game 1
@@ -99,6 +100,12 @@ AlphaGo 3-0 Lee Sedol
 
 (Also, someone made [this edit](http://imgur.com/a/WefEN) to Hikaru no Go. Never read the source, but I still liked it.)
 
+[![Preview of Hikaru no Go edit](/public/ago-lsd/hikarunogo.png)](http://imgur.com/a/WefEN)
+{: .centered }
+
+[Click for the full version](http://imgur.com/a/WefEN)
+{: .centered }
+
 
 Game 4
 ------------------------------------
@@ -109,7 +116,7 @@ Yesterday, I said I'd like for Lee Sedol to win a game for the story.
 
 I DIDN'T THINK IT WOULD ACTUALLY HAPPEN. What in the world? Is anime real after all?
 
-I have to admit that I only caught the end of the game today, so here's my reconstruction from the GoGameGuru comments. Once again, Lee Sedol spent time in the early and midgame for naught, as AlphaGo gained a strong lead. On move 78, Lee Sedol played a very strong move. Michael Redmond (English commentator) praised it. Gu Li (Chinese commentator) called it "God's Move" once he saw it.
+I have to admit that I only caught the end of the game today, so here's my reconstruction from the [GoGameGuru comments](https://gogameguru.com/alphago-4/#comments). Once again, Lee Sedol spent time in the early and midgame for naught, as AlphaGo gained a strong lead. On move 78, Lee Sedol played a very strong move. Michael Redmond (English commentator) praised it. Gu Li (Chinese commentator) called it "God's Move" once he saw it.
 
 AlphaGo replied wrong on move 79, although it wasn't an obvious mistake, and some pro commentators were considering AlphaGo's reply. By move 87, AlphaGo realized its mistake, and that's where things get weird. AlphaGo made a series of surprisingly awful moves, letting Lee take a huge lead. (Even I thought S11 was awful, and I've played ~10 games of Go total in my life.) AlphaGo managed to chip away the lead over the endgame, but Lee replied well (while stuck in overtime from move 90 to boot! Replying with 60s thinking time is very impressive.) Soon, there were no chances left. AlphaGo resigns, room bursts into applause.
 
@@ -119,13 +126,17 @@ I haven't seen any sports animes, but I'm pretty sure this plot fits just fine.
 
 Naturally, Lee's win led to an interesting press conference. If you missed it, seeing journalists look for a reason Lee won was very amusing.
 
-> Q: "Yesterday, you tweeted that the distributed version of AlphaGo has about a 75% win rate against the single machine version, which was still quite strong. Did you use the single machine version for this match?" (Translation: Did you dumb down the AI to make Lee Sedol feel better after losing 3-0?)
+> Q: "Yesterday, you tweeted that the distributed version of AlphaGo has about a 75% win rate against the single machine version, which was still quite strong. Did you use the single machine version for this match?"
+
+(Translation: Did you dumb down the AI to make Lee Sedol feel better after losing 3-0?)
 
 > A: "We used the same distributed version as the previous games."
 
 (Translation: there is no conspiracy.)
 
-> Q: "There's been discussion on an information asymmetry. AlphaGo got to see all of Lee Sedol's past games, and Lee got to see none of AlphaGo's. Having played 3 games against AlphaGo previously, I'd like to hear Lee's thoughts on this." (Translation: Do you think AlphaGo's past 3 wins were only because Lee Sedol was unfamiliar with AlphaGo's play?)
+> Q: "There's been discussion on an information asymmetry. AlphaGo got to see all of Lee Sedol's past games, and Lee got to see none of AlphaGo's. Having played 3 games against AlphaGo previously, I'd like to hear Lee's thoughts on this."
+
+(Translation: Do you think AlphaGo's past 3 wins were only because Lee Sedol was unfamiliar with AlphaGo's play?)
 
 > Lee's A: "I didn't know people were discussing that. I don't see it as important. I did learn about AlphaGo in the past 3 games, but looking back I can only blame myself for my losses."
 
@@ -168,7 +179,7 @@ Today showed AIs can exhibit strange emergent behavior in the right circumstance
 
 > Q: "Today, we saw AlphaGo make many unfathomable mistakes to experts. They thought these moves made no sense, but were hesitant to question AlphaGo. They weren't sure if AlphaGo's mistakes were actually mistakes. If this happened in real world usage, like something medical, and it recommends what looks like a mistake to experts, and people don't question it because they think there's a bigger picture, it could lead to lots of confusion. So, I'm curious to hear your perspective on that."
 
-It was a great question that cut to the heart of the matter. DeepMind is already eyeing medicine (see DeepMind Health), so this is especially relevant.
+It was a great question that cut to the heart of the matter. DeepMind is already eyeing medicine (see [DeepMind Health](https://deepmind.com/health)), so this is especially relevant.
 
 > Demis's A: "You have to remember AlphaGo is a prototype. I wouldn't call it a beta, or even an alpha. So of course, part of why we're doing this match is to test our methods against skilled humans. We're also playing a game, a beautiful game. Healthcare would be a different matter, and of course it would require stringent testing like other software. This is a prototype we're testing, so I think it's a different situation."
 
@@ -228,5 +239,5 @@ AlphaGo 4-1 Lee Sedol
 (Oh god, I'm typing this during the final press conference and a reporter just asked how many clones of AlphaGo DeepMind has and how many they were planning to make. I do not have enough hands for the amount of facepalm I want to do.)
 
 (Woops, and another reporter is suggesting DeepMind hosted this contest to see the public's perception towards AI, and wanted to know how DeepMind's ethics board will handle the people's fears about AI. I mean, sure, it could be part of their reasoning, but it's definitely not their main reason for hosting the match.)
-*(Editor's note: and connotating that DeepMind has a vaguely sinistor motive
+*(Editor's note: and connoting that DeepMind had a motive so vaguely sinister
 isn't doing me any favors.)*
