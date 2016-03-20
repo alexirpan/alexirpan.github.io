@@ -4,7 +4,7 @@ title: Recommended Web Fiction
 permalink: /webfictionrecs/
 ---
 
-*Last updated December 17, 2015*
+*Last updated March 20, 2016*
 
 Almost all stories I've read the last few years were self-published
 online. There's something very addicting about being able to read a story wherever
@@ -178,6 +178,11 @@ real character development and drama. Fun trivia: for all encounters,
 the author rolled dice in real life before deciding what to write next.
 
 
+**The Unicorn at Hogwarts**, by Saphroneth (Harry Potter x MLP)
+
+Crosslisted [here](#unicorn-at-hogwarts) in the MLP section.
+
+
 [back to top](#table-of-contents)
 
 
@@ -217,6 +222,20 @@ stuck in Groundhog Day time loops. Stories have lots of awesome moments, which
 is balanced by deadpan situational humor. The joy comes from seeing how
 characters change as they gain perspective through the time loops.
 
+<a name="unicorn-at-hogwarts"></a>
+**The Unicorn at Hogwarts**, by Saphroneth (MLP x Harry Potter)
+
+Status: Unfinished and likely to never update
+
+Spoilers: Up through end of season 2
+
+Link: [here](http://www.fimfiction.net/story/68059/)
+
+Twilight gets banished to the Harry Potter universe, and decides that if she
+has to rederive dimensional travel in a different branch of magic, she might
+as well enroll at Hogwarts. A very lighthearted crossover that does a surprising
+amount of worldbuilding. All the extra details make the plot more engaging and
+more natural.
 
 
 **Friendship is Optimal**, by Iceman
@@ -278,6 +297,17 @@ The plot is predictable from a mile away, but that doesn't make it bad because
 the execution is solid.
 
 
+**Nosflutteratu**, by Charcoal Quill
+
+Status: Complete
+
+Spoilers: None
+
+Link: [here](http://www.fimfiction.net/story/72971/nosflutteratu)
+
+A one-shot where Fluttershy's a vampire. Yep. It's pretty cute.
+
+
 [back to top](#table-of-contents)
 
 
@@ -302,8 +332,7 @@ is in progress.
 
 **Manager**, by Seraviel
 
-Status: In Progress. Sporadic updates, but for your sanity it's better to
-treat it as dead.
+Status: In Progress. Very sporadic updates.
 
 Spoilers: Will spoil major plot points.
 
