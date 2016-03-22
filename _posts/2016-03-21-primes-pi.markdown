@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Primes, Riemann Zeta, and Pi, Oh My!"
-date:   2016-03-21 16:56:00 -0700
+date:   2016-03-22 15:36:00 -0700
 ---
 
-I've been working on other blog posts, but they've been harder
-to write than expected. I felt bad about not updating this blog, so
-I decided to write a quick recreational math post.
+I've been working on other posts, but they've been harder
+to write than expected. A quick recreational math post should help
+fill the gap.
 
 I'm targeting this towards
 the high school math contest audience. That means I won't assume anything
@@ -21,13 +21,13 @@ Let $$a$$ and $$b$$ be two uniformly random natural numbers.
 What is the probability $$a$$ and $$b$$ are relatively prime?
 
 First off, this problem isn't well formed. You can't define a
-uniform distribution over the naturals because it breaks axioms
-of probability theory.
+uniform distribution over the naturals, because such a distribution
+would break probability theory axioms.
 (See [here](http://math.stackexchange.com/questions/997173/can-you-pick-a-random-natural-number-and-a-random-real-number)
-for an explanation.)
+if curious.)
 To make this formal, we should really be picking naturals
 $$a,b$$ uniformly from $$1$$ to $$N$$, and ask what the
-probability converges to as $$N$$ approches $$\infty$$.
+probability converges to as $$N$$ approaches $$\infty$$.
 
 > Let $$P(n)$$ be the probability that two uniformly random
 > natural numbers from $$1$$ to $$n$$ (inclusive) are relatively prime.
@@ -120,7 +120,7 @@ $$
 $$
 
 (If you're like me, you may want to spend a moment admiring this argument.
-This is a contender for my favorite proof ever.)
+It's a contender for my favorite proof ever.)
 
 The final expression is
 
@@ -134,7 +134,7 @@ $$
     \sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}
 $$
 
-gives the final answer of $$6/\pi^2 \approx 0.608$$.
+gives that the probability is $$6/\pi^2 \approx 0.608$$.
 
 
 Riemann Zeta And More Handwaving
@@ -192,7 +192,8 @@ $$
 Equate this with the Taylor series. To make the constant term match up,
 we must have $$a' = 1$$.
 (Try converting to the $$a(x-r_1)(x-r_2)\cdots$$ form and
-you'll see why this proof is sketchy.)
+you'll see why it's sketchy to assume $$\sin$$ acts like an
+infinite degree polynomial.)
 
 Group up the terms for roots $$k\pi$$ and $$-k\pi$$ to get
 
@@ -223,7 +224,7 @@ $$
 
 It turns out that analyzing this function for complex $$s$$ has deep connections
 to the primes. I can't explain why because I don't know analytic
-number theory. However, if you consider that we started from relatively
+number theory, but if you consider that we started from relatively
 prime numbers and got to here, I don't think a connection is too strange.
 
 
@@ -265,6 +266,9 @@ exactly the same as the product for relatively prime random numbers, except
 without an infinite series for $$2$$. When expanded, we'll get exactly
 one term for every odd number.
 
+(I love this factoring trick so much. It's great, even if it's difficult
+to apply on other problems.)
+
 Now, consider the signs of those terms. Term $$1/n$$ is positive if and
 only if
 $$n$$ is the product of an even number of (not necessarily distinct) $$3\text{ mod } 4$$ primes.
@@ -287,7 +291,8 @@ $$
     \frac{1}{1+\frac{1}{3}}\cdot
                     \frac{1}{1-\frac{1}{5}}\cdot
                     \frac{1}{1+\frac{1}{7}}\cdot
-                    \frac{1}{1+\frac{1}{11}}
+                    \frac{1}{1+\frac{1}{11}}\cdot
+                    \frac{1}{1-\frac{1}{13}}\cdots
 $$
 
 $$
@@ -295,11 +300,8 @@ $$
 $$
 
 $$
-    \frac{4}{\pi} = \left(1+\frac{1}{3}\right)\left(1-\frac{1}{5}\right)\left(1+\frac{1}{7}\right)\left(1+\frac{1}{11}\right)\cdots
+    \frac{4}{\pi} = \left(1+\frac{1}{3}\right)\left(1-\frac{1}{5}\right)\left(1+\frac{1}{7}\right)\left(1+\frac{1}{11}\right)\left(1 - \frac{1}{13}\right)\cdots
 $$
-
-(I love this factoring trick so much. It's great, even if it's difficult
-to apply on other problems.)
 
 
 Oh My! That's All, Folks!
