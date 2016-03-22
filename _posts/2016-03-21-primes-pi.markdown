@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "MAKE UP A TITLE"
+date:   2016-03-21 16:56:00 -0700
+---
+
+Somebody showed me a formula for $$\pi$$ based on prime numbers that
+was pretty cool. That got me thinking about other cool
+results that relate number theory and $$\pi$$ in unexpected ways.
+I figured they would make a nice short update.
+
+As a disclaimer, I am not a math major, and my math education
+stopped at the start of real analysis. I'm targeting this towards
+the high school math contest audience, meaning I won't assume anything above
+calculus, but I also assume readers are interested in mathematics and
+will look up unfamiliar terms on their own.
+
+
+Relatively Prime Random Numbers
+---------------------------------------------------------------------
+
+Let $$a$$ and $$b$$ be two uniformly random natural numbers.
+What is the probability $$a$$ and $$b$$ are relatively prime?
+
+First off, this problem isn't that well formed. There are infinitely
+many natural numbers, and it's unclear how we'd pick one of infinitely
+many things. To be more formal, we should really state the problem
+this way.
+
+> Let $$P(n)$$ be the probability that two uniformly random
+> natural numberes from $$1$$ to $$n$$ (inclusive) are relatively prime.
+> What is $$\lim_{n\to\infty} P(n)$$?
+
+(From now on I'll use $$P(\infty)$$ for the limit.)
+
+Alright, we have a problem. Now what? First, let's get an expression
+at all. We're good if $$a$$ and $$b$$ share no common factors. For this
+to be true, for every prime $$p$$ at most one of $$a,b$$ can be divisible
+by $$p$$. Equivalently, $$a$$ and $$b$$ are not both divisible by $$p$$.
+
+Since we pick naturals uniformly at random, the probability a random
+natural is divisible by $$p$$ is $$1/p$$. The probabillity both
+numbers are divisible by $$p$$ must be $$1/p^2$$, giving the following.
+
+$$
+    P(\infty) = \left(1 - \frac{1}{2^2}\right)
+                \left(1 - \frac{1}{3^2}\right)
+                \left(1 - \frac{1}{5^2}\right)\cdots
+              = \prod_{p\text{ prime}} \left(1 - \frac{1}{p^2}\right)
+$$
+
+Now, here's where you apply an interesting trick - take the reciprocal
+of both sides.
+
+$$
+    \frac{1}{P(\infty)}
+    = \frac{1}{\left(1 - \frac{1}{2^2}\right)}
+      \frac{1}{\left(1 - \frac{1}{3^2}\right)}
+      \frac{1}{\left(1 - \frac{1}{5^2}\right)}\cdots
+$$
