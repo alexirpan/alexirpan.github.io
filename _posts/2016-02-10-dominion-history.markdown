@@ -4,76 +4,125 @@ title:  "The Surprisingly Dramatic History of Online Dominion"
 date:   2016-02-08 10:00:00 -0800
 ---
 
-MAKE UP AN INTRO HERE
+------------------------------------------------------------------
 
-As someone who's played Dominion competitively on and off for the last
-five years, it's hard for me to detach my impression of events from the facts.
-So, I'm not going to. I'm going to play the opinionated historian, not
-the interested outsider and not the invested fanboy.
+DECIDE HOW TO HANDLE ABOVE
+
+The story that's actually interesting here isn't the history of Dominion.
+It's my impression of Dominion's history and my experiences with the game.
+The history will arise naturally, but my experience won't.
+
+ALSO, MAY STILL NEED AN INTRO
 
 It's a long story. To do it right, we need to head back to the very beginning.
 
 
-    TIMELINE:
-    Dominion's original release and reception
-    Original online implementation on BSW
-    BGGDL
-    The rise of Isotropic
+TIMELINE:
+    Before my time:
+        Dominion's original release and reception
+        Original online implementation on BSW
+        BGGDL
+
+    My time:
+        The rise of Isotropic
+        Geronimoo Simulator
         Talk about Council Room too!
         And the fan card contest getting onto the site during April Fool's
-    Announcement of an official client by Goko
-    Closed Beta
-        With security concerns
-    Disastrous Launch and bring back into closed beta
-    Long span before Isotropic goes down
-    Rise of Goko Salvager
-    Transition to Making Fun
-    Long stall before new version
-    Repeated disappointment
-    Making More Fun (dll hacking oh my)
-    The next new implementation
+        Announcement of an official client by Goko
+        Closed Beta
+            With security concerns
+        Disastrous Launch and bring back into closed beta
+        Long span before Isotropic goes down
 
-In 2008, Donald X. Vaccarino (known as DXV or Donald X in the community)
-published Dominion. It quickly shot to the top 10 board games on BoardGameGeek.
-It's fallen since then, but much like Setters of Catan it's a historically
-important board game that sparked many changes.
+    My semi-hiatus:
 
-Now, I'm not going to explain the rules in depth. This post is about
-the Dominion community, not the game. However, I do need to briefly explain how
-the game works.
+    Goko era:
+        Rise of Goko Salvager
+        Dominion streams over Dominion videos
+        Transition to Making Fun
+        Long stall before new version
+        Repeated disappointment
 
-Dominion is called a deckbuilding game. In fact, it's usually credited as the
-first deckbuilder, inspiring games like Ascension, Puzzle Strike, Star Realms,
-and, uh, Deck Builder.
+    Present day:
+        Making More Fun (dll hacking oh my)
+
+    Future:
+        The next implementation
+
+
+--------------------------------------------------------------------------
+
+My competitive Dominion career (or hobby, to be more precise) started
+the summer before 11th grade. I was at a summer math program, and during
+free time one of the mentors proposed we played Dominion.
+He described it as "*Magic: the Gathering*, except you don't have to
+buy new cards every time, which is nice when you start doing adult
+things like pay rent."
+
+Over that summer, I got hooked. I was playing at least 2 hours a day for
+five weeks straight, and that much play time adds up. It was fun to
+play around with cards, trying to figure out what cards I wanted and how
+different cards interacted with each other. Militia was great, but it was
+bad against Library, and meanwhile Ironworks was amazing with Gardens.
+None of this was spelled out by the game, but it was implicit in its
+design. That sense of discovery when someone figured out something new
+and won was both incredible and infectious.
+
+In the months after that summer, someone discovered a free online
+client called Isotropic. I signed up for an account, and that's when
+this story really starts.
+
+--------------------------------------------------------------------------
+
+By the time I started really getting into Dominion, the online community
+had been around for a few years. Dominion came out in 2008, and I didn't
+start playing until 2010.
+
+Now, first I do want to briefly explain how the game works. I can't write
+a huge post about Dominion without explaining what Dominion *is*.
+
+Dominion is a deckbuilding game. Like other Eurogames, the goal is to end
+the game with the most victory points.
+
+The high level overview is that every player starts with an identical deck.
+Each turn, players play cards to generate money, and use that money
+to buy better cards. Players can then use their new cards to generate more
+money, which lets them buy even better cards, and so on.
+
+Cards in Dominion are split into three broad types.
+
+* Victory cards give victory points, but do nothing during the game,
+which forces players to balance between getting points and improving their deck.
+* Treasure cards produce money. They're weak for their cost, but you can play
+as many Treasures as you want. These often form the backbone of your deck.
+* Action cards have a variety of powerful effects. To balance this, each player
+is limited to 1 Action per turn. However, some Actions (like Cellar and Village,
+displayed below) give you more actions.
 
 IMAGE
 
-The core idea is that everyone starts with the same deck of cards. On each turn,
-people play cards, generate resources, and buy new cards for their deck. As
+What makes Dominion so replayable is that every set comes with around 25
+Action cards. Before the game starts, players randomly pick 10 Action cards to
+use that game. Those Action cards make up the supply, a shared pool of cards
+that everyone buys from. The randomization makes every game of Dominion a
+different experience, and when you consider there are 8 (CHECK) sets so far,
+you're looking at an insane amount of replay value. There was also a certain
+elegance to the rules. Everyone started with the same cards, everyone had
+access to the same cards, and everyone had the same goal: build the best deck
+you can as fast as you can. There's definitely luck in Dominion, but all the
+symmetry makes it a very skill-testing game.
 
-In Dominion, everyone starts with the same deck of cards. Over the course of the
-game, people play cards from their hand to generate money. They use that money
-to buy more cards from the supply, making their deck better. (EXPLAIN SUPPLY)
+All these qualities made Dominion a commercial success. It was beloved on
+BoardGameGeek, and in fact that's where strategy discussion started.
+By the time I entered the scene, I was playing catch-up. The community had
+already developed its own internal jargon. I read about the Silver Test (is
+that card you want better than Silver?). I learned the difference between
+terminals, cantrips, and +Actions. (Terminal actions give no actions. Cantrips
+give +1 Card, +1 Action, and a minor effect, meaning they replace themselves.
++Actions give +2 Actions or more.) Debates over the strength of Chapel and Witch,
+over the power of the Big Money strategy, rules of thumb for the opening - there
+was a ton of existing content, and I read as much of it as I could.
 
-What makes Dominion so replayable is that each set comes with around 25
-different Action cards. Each game only uses 10, which makes every game a different
-experience. With expansions, the depth becomes ridiculous. But we'll get to
-how ridiculous competitive Dominion gets later.
-
-Anyways, Dominion released, and it was a huge hit. It soon grew its own pocket
-of fandom in the BoardGameGeek forums. Nascent strategy discussions came and went.
-Is Chapel too strong? Does it pass the Silver Test? Over time, people started
-coming up with special terms. Big Money, the opening, greening, terminals, Village
-Idiot. Over time, strategy discussion started crystallizing around the important
-concepts. Engines, rushes, cycling, Cursing. There's a cornucopia of terms (and
-the expansion *Cornucopia* brought its own set as well.)
-
-All of this discussion couldn't exist without Dominion Online. In the beginning,
-there was Dominion on BrettspielWhet (BSW). I wasn't around for BSW, but by
-my understanding, it was clunky and heavyweight. Nevertheless, it worked and it was
-free. TALK ABOUT EXPANSIONS HERE.
-
-EMPHASIzE POWER OF ONLINE PLAY?
 
 BSW picture
 
@@ -172,30 +221,3 @@ Soon, DominionStrategy was *the* place to go for Dominion. Theory's articles
 on the best cards per cost point were huge debating grounds. In (CHECK) 2011,
 he started the DominionStrategy Forum, commonly abbreviated f.DS, and that
 was where things really kicked off.
-
-------------------------------------------------------------------
-
-DECIDE HOW TO HANDLE ABOVE
-
-The story that's actually interesting here isn't the history of Dominion.
-It's my impression of Dominion's history and my experiences with the game.
-The history will arise naturally, but my experience won't.
-
---------------------------------------------------------------------------
-
-I was introduced to Dominion in the summer before 11th grade.
-The person who introduced
-me described it as "like *Magic: the Gathering*, except you don't have to
-buy new cards every time, which is important when you start doing adult
-things like pay rent."
-
-Over that summer, I got hooked. I was playing at least 2 hours a day for
-five weeks straight, and that much play time adds up. It was fun to
-play around with cards, trying to figure out what cards I wanted and how
-different cards interacted with each other. Militia was great, but it was
-bad against Library, and meanwhile Ironworks was amazing with Gardens.
-None of this was spelled out by the game, but it was implicit in its
-design. That sense of discovery when someone figured out something new
-and won was both incredible and infectious.
-
-
