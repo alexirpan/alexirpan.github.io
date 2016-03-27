@@ -121,9 +121,8 @@ there would be some brief lag.
 of what you wanted to do. When it comes to controls, the goal of any game client
 is to feel like an extension of your thoughts.
 * The minimalist graphics made it runnable on basically every computer. I played
-Isotropic on a Windows Vista laptop that had 5 minutes of battery life, and it
-worked fine. All you needed was an internet connection - in principle you could
-play on your phone and it would work.
+Isotropic on a laptop with 5 minutes of battery life, and it
+worked fine.
 * If you needed to do something for a bit, the game displayed a text log of the
 past few turns, which let you catch up on what happened while you looked away.
 
@@ -173,4 +172,30 @@ Soon, DominionStrategy was *the* place to go for Dominion. Theory's articles
 on the best cards per cost point were huge debating grounds. In (CHECK) 2011,
 he started the DominionStrategy Forum, commonly abbreviated f.DS, and that
 was where things really kicked off.
+
+------------------------------------------------------------------
+
+DECIDE HOW TO HANDLE ABOVE
+
+The story that's actually interesting here isn't the history of Dominion.
+It's my impression of Dominion's history and my experiences with the game.
+The history will arise naturally, but my experience won't.
+
+--------------------------------------------------------------------------
+
+I was introduced to Dominion in the summer before 11th grade.
+The person who introduced
+me described it as "like *Magic: the Gathering*, except you don't have to
+buy new cards every time, which is important when you start doing adult
+things like pay rent."
+
+Over that summer, I got hooked. I was playing at least 2 hours a day for
+five weeks straight, and that much play time adds up. It was fun to
+play around with cards, trying to figure out what cards I wanted and how
+different cards interacted with each other. Militia was great, but it was
+bad against Library, and meanwhile Ironworks was amazing with Gardens.
+None of this was spelled out by the game, but it was implicit in its
+design. That sense of discovery when someone figured out something new
+and won was both incredible and infectious.
+
 
