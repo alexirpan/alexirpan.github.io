@@ -150,8 +150,16 @@ leaderboard is transparent, I mean that Isotropic's FAQ linked to the exact
 algorithm used, along with the initial parameters everybody started with.
 When new expansions were released, DougZ would have them implemented the day
 of their release. (We later found out that DougZ was a real life friend
-of the game's creator, Donald X., and Isotropic was used for internal
-playtesting.) Additionally, feature requests START FROM HERE
+of the game's creator, Donald X. Isotropic was a public version of the
+internal playtesting client Doug created.)
+
+Since DougZ was a user of the client himself, he had a good intuition for
+what features people wanted, and listened to community feedback when he didn't.
+People didn't like having to specifcally pick players to challenge, so he
+added an automatch feature based on rating. People wanted to specify using
+only certain expansions, so he added a small interface to handle that.
+
+feature requests START FROM HERE
 
 
 * Although it wasn't there from the start, automatch quickly let players
