@@ -123,69 +123,37 @@ give +1 Card, +1 Action, and a minor effect, meaning they replace themselves.
 over the power of the Big Money strategy, rules of thumb for the opening - there
 was a ton of existing content, and I read as much of it as I could.
 
-
-BSW picture
-
-Sometime around 2010, one user, DougZ, posted an innocent reply to a thread asking
-when BSW would have the newest expansion.
-
-> I've implemented a server where you can play Dominion against other players online. There's no AI, and the interface is pretty bare-bones, but it does include all the published cards including Prosperity (except for a couple of the promo cards).
->
-> You can find instructions and a link to the server at http://dominion.isotropic.org/faq.
->
-> Posted Sun Aug 8, 2010 10:57 pm
-
-[Source](https://boardgamegeek.com/article/5373751#5373751)
-{: .centered }
-
-It was just another post in just another thread. But in time, Isotropic would
-usher in a golden age.
-
-\*\*\*
-{: .centered }
+All of this strategy discussion was fueled by Isotropic.
 
 There's a scene from CHECK THE MOVIE. "You weren't there, man! You had to be there!"
-Isotropic was a similar - if you weren't there for Iso, it can be hard to see why
-the community holds it in such high regard.
+Isotropic was similar - if you weren't there for Iso, it's hard to see why
+Isotropic was so important.
 
-Isotropic was not professional by any stretch of the information. It was the
-side project of one Google engineer, most famous for his presentation
-["Chicken chicken chicken: chicken chicken"](https://www.youtube.com/watch?v=yL_-1d9OSdk).
-It quite literally ran out of DougZ's basement - an AMA about Isotropic revealed
-that "server maintenance" was code for "turn the machine off and on again."
+It wasn't professional by any stretch of the information.
+Iso was the side project of a single Google engineer, Doug Zonker (who went by DougZ online.)
+It quite literally ran out of DougZ's basement. An AMA on the Dominion
+subreddit revealed that "server maintenance" was code for
+"turn the machine off and on again to free up garbage memory."
+It wasn't professional by any stretch of the information. There were no
+animations. There was no styling. Hell, it didn't even have the official card art.
 
-At a first glance, Isotropic doesn't look like anything special. It didn't have
-the graphics of BSW. It didn't even have the official card art.
+ADD A PICTURE OF ISO HERE?
 
-ADD A PICTURE OF ISO HERE.
+What Iso did have was a rock solid rules engine, a well-designed interface,
+and a transparent competitive leaderboard. It may have been plain, but it worked,
+and it worked well. I for one appreciated Isotropic's minimalistic style, because
+I was using a laptop with 5 minutes of battery life that ran on nothing but
+dreams.
 
-Still, it was the best platform Online Dominion has ever had. It may have been
-plain, but it did the key things right.
+DougZ was both an active developer and an open one. When I say the competitive
+leaderboard is transparent, I mean that Isotropic's FAQ linked to the exact
+algorithm used, along with the initial parameters everybody started with.
+When new expansions were released, DougZ would have them implemented the day
+of their release. (We later found out that DougZ was a real life friend
+of the game's creator, Donald X., and Isotropic was used for internal
+playtesting.) Additionally, feature requests START FROM HERE
 
-* The gameplay engine was rock solid. Rules were always implemented correctly.
-Matching was reliable, the server almost never dropped games, and players
-could reconnect to games if they lost their internet connection. At worst,
-there would be some brief lag.
-* The interface was designed well. It never felt like the client got in the way
-of what you wanted to do. When it comes to controls, the goal of any game client
-is to feel like an extension of your thoughts.
-* The minimalist graphics made it runnable on basically every computer. I played
-Isotropic on a laptop with 5 minutes of battery life, and it
-worked fine.
-* If you needed to do something for a bit, the game displayed a text log of the
-past few turns, which let you catch up on what happened while you looked away.
 
-Those were all the main essentials, but Isotropic had a few features that
-made it the focal point of the fan community
-
-* There was a competitive ladder based on TrueSkill (LINK), a variant of
-Elo that generalizes to multiplayer games. The FAQ linked directly to
-Microsoft's documentation, and described exactly how new players got ranked.
-The leaderboard was exceptionally transparent - you always knew exactly
-how good the system thought you were.
-* Expansions were released promptly. DougZ was a friend of Donald X's (CHECK),
-and a private version of Isotropic was actually used for playtesting. That meant
-expansions were available for free on Isotropic the day they were in stores.
 * Although it wasn't there from the start, automatch quickly let players
 get matched with people of their skill level. Players could also directly
 challenge players in the lobby, since every player's skill level was displayed
