@@ -39,17 +39,39 @@ Gauntlet of May 2016!**
 (Quietly, in the distance, a [fanfare](https://www.youtube.com/watch?v=lKy0SP8ScAk)
 plays. Then the crickets start chirping.)
 
+Here's how it works.
+
 * For every day of May, I will write and post at least 500 words.
 * If I write more than 500 words for a day, that's great! I still have to write
 500 words the next day. There is no rollover, there is no surplus, and there
 is no buffer. Each of those 500 words must be written between
-12:00:00 AM and 11:59:59 PM.
+12:00:00 AM and 11:59:59 PM, and must be live by midnight. (I'm giving myself
+some leeway, because it takes a few minutes to build my site.)
 * I am allowed to write on whatever I want. I am allowed to write as awfully as
 I want. Posts do not have to be well-edited. If they are, it means I had time
 to do so.
 * To make this actually matter to me, **every day I fail to write 500 words,
 I will donate $20 to charity.** I haven't decided where, but I'll probably
-distribute them based on what [GiveWell](http://www.givewell.org/) recommends.
+distribute them based on [GiveWell's](http://www.givewell.org/) recommendations.
 
+This gauntlet is a somewhat drastic measure, but I am very sure I can do this.
+Looking back, I was about as busy last semester as I was this semester, but
+I still managed to get posts out on a semi-regular basis.
 
+The intention with this challenge is that 500 words is not that much.
+Yet, if I do 500 words every day, that's 15000 words this month, and that's
+quite a bit. Think National Novel Writing Month, but smaller scale and more
+personal. So in theory, every day I'll write a bit about a topic,
+and things will build and build. Hopefully, this will help deal with the
+backlog of things I want to share.
+
+If I can't do this when I don't have work, there's no way I do this when I
+do have work. If I can do this for an entire month, perhaps the habit will
+finally stick.
+
+I have more to say on this topic, but I'll leave it for another time.
+
+(Finally, a parting mark: if you're wondering whether it's ethically
+justifiable for my brain to treat giving to charity as punishment,
+that is almost certainly something I'll write about.)
 
