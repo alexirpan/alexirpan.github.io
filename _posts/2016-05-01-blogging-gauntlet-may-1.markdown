@@ -4,26 +4,26 @@ title:  "The Blogging Gauntlet: May 1 - Introduction"
 date:   2016-05-01 00:05:00 -0700
 ---
 
-Recently, I haven't been updating this blog very often. The biggest factor in
-that was that my spring break finished, and every one of my classes decided
-they could really get moving now that everyone was back. That meant I was
-swamped with final projects until today.
+Recently, I haven't been updating this blog. The biggest factor was
+that right after spring break finished, all of my classes decided
+they could really get moving, and I've been swamped with final projects
+until today.
 
-However, that shouldn't be an excuse not to blog. In fact, for about the
-first two weeks after coming back, I found myself wanting to write blog
+However, that shouldn't be an excuse not to blog *at all*. In fact, for
+about the first two weeks after break, I found myself wanting to write blog
 posts about various silly observations I'd had. I knew I was busy, and
-that blogging had to take a backseat, but it was nagging and nagging me.
-To quote **Art & Fear** again,
+that blogging had to take a backseat, but it was nagging me for a while.
+To quote *Art & Fear* yet again,
 
 > Artists don't get down to work until the pain of working is exceeded
 > by the pain of not working.
 
-Yet as the weeks passed by, I was feeling less motivation to keep writing.
+Yet as the weeks passed by, that motivation dwindled.
 I always had an excuse. This presentation is due the 14th. I need to
 fix my research code in time to run experiments. I have a paper to write.
-These were all incontrovertible facts, and the consequences were similarly
-unavoidable: my blogging habit slowly dissipated. Gaming and Internet
-browsing rushed into the void, and soon I was back where I started.
+These were all indisputable facts, and the consequences were similarly
+unavoidable: my blogging habit slowly dissipated. Gaming and TVTropes
+rushed into the void, and soon I was back where I started.
 
 Classes have finished at Berkeley, meaning I'm free for the first time
 in a long while. But in just over a month, I'll be starting a full-time
@@ -32,46 +32,46 @@ too tired, I'll be too drained. Those are the words I'll tell myself
 to justify not writing, and sometimes they will be true and sometimes
 they won't, but the outcome will be the same either way.
 
-So, with a new month comes a new start and a new opportunity. I've been
+With a new month comes a new start and a new opportunity. I've been
 planning this for a while, and I am proud to present: **The Blogging
 Gauntlet of May 2016!**
 
-(Quietly, in the distance, a [fanfare](https://www.youtube.com/watch?v=lKy0SP8ScAk)
-plays. Then the crickets start chirping.)
+([Please clap](https://www.youtube.com/watch?v=DdCYMvaUcrA).)
 
 Here's how it works.
 
 * For every day of May, I will write and post at least 500 words.
 * If I write more than 500 words for a day, that's great! I still have to write
 500 words the next day. There is no rollover, there is no surplus, and there
-is no buffer. Each of those 500 words must be written between
-12:00:00 AM and 11:59:59 PM, and must be live by midnight. (I'm giving myself
-some leeway, because it takes a few minutes to build my site.)
+is no buffer. Five hundred words per day, every day, all written between
+12:00:00 AM and 11:59:59 PM local time.
 * I am allowed to write on whatever I want. I am allowed to write as awfully as
-I want. Posts do not have to be well-edited. If they are, it means I had time
-to do so.
-* To make this actually matter to me, **every day I fail to write 500 words,
-I will donate $20 to charity.** I haven't decided where, but I'll probably
-distribute them based on [GiveWell's](http://www.givewell.org/) recommendations.
+I want. Posts do not have to be well-edited, but I will try to edit them
+if I have the time.
+* To make my brain take notice of this, **every day I fail to write 500 words,
+I will donate $20 to charity.** I plan to distribute any money donated
+based on [GiveWell's](http://www.givewell.org/) recommendations.
 
 This gauntlet is a somewhat drastic measure, but I am very sure I can do this.
 Looking back, I was about as busy last semester as I was this semester, but
 I still managed to get posts out on a semi-regular basis.
 
 The intention with this challenge is that 500 words is not that much.
-Yet, if I do 500 words every day, that's 15000 words this month, and that's
-quite a bit. Think National Novel Writing Month, but smaller scale and more
-personal. So in theory, every day I'll write a bit about a topic,
-and things will build and build. Hopefully, this will help deal with the
-backlog of things I want to share.
+Yet, if I do 500 words every day, that's 15,000 words this month, and that's
+quite a bit. Think [NaNoWriMo](http://nanowrimo.org/), but smaller scale and more
+personal. This should also help flush my queue of ideas I want to write
+down but haven't yet. Based on reception, I can then narrow down which ideas
+I want to write about in more detail.
 
 If I can't do this when I don't have work, there's no way I do this when I
-do have work. If I can do this for an entire month, perhaps the habit will
+do have work. If I can do this for an entire month, the habit may
 finally stick.
 
-I have more to say on this topic, but I'll leave it for another time.
+I'm pretty excited about this. I have more to say about why I'm doing this,
+but I'll leave it for another time.
 
-(Finally, a parting mark: if you're wondering whether it's ethically
-justifiable for my brain to treat giving to charity as punishment,
-that is almost certainly something I'll write about.)
+(Finally, a parting mark: yes, my brain models giving to charity as a
+punishment, not a reward.
+if you're wondering about the ethical gymnastics going on behind
+*that*, stay tuned, because I will almost certainly write about it.)
 
