@@ -8,3 +8,38 @@ Last Sunday, I did Berkeley Mystery Hunt. I can't talk about the puzzles
 publicly because this puzzle hunt gets run twice: once during the school
 year for Berkeley students, and once during the summer for people in the
 Bay Area.
+
+In every puzzle hunt, I run into the same scenario. A new puzzle comes out,
+and I take a look at it. I'll solve it, or I'll get stuck and move to
+anotoher puzzle. Either way, I run into a problem. Either I need other
+people to explain what they've figured out, or other people need to
+understand my progress based on my work so far.
+
+For smaller puzzle hunts, this is fine. Usually you're all in the same
+room, so you can ask each other in person. However, when you scale
+up to massive teams like MIT Mystery Hunt, this becomes a huge
+concern. They might be sleeping, or be on the other side of the country,
+and you have to figure out the partial progress from only the notes they've
+written down.
+
+I didn't know what to call this, until I read qntm's stories about
+antimemetics. If you haven't read them, I highly, highly recommend checking
+them out. Start at [We Need To Talk About Fifty-Five](http://www.scp-wiki.net/we-need-to-talk-about-fifty-five)
+and follow the links from there.
+
+If you don't want to, here's the quick version. Memes are ideas that
+want to be known, spreading from mind to mind. Antimemes are ideas that
+want to be forgotten. They are self-censoring. When you stop looking at
+an antimemetic object, your brain erases your memory and you forget
+it even exists.
+
+The Antimemetics Division studies antimemes, and
+they have a devil of a time doing so. It's hard to study things that
+everyone rediscovers on a daily basis, and it's even harder when
+malicious antimemes erase the lives of coworkers so thoroughly that
+any evidence of their existence disappears. It's one of the more
+horrifying ways to go. You can't prove your existence to the world
+if the world doesn't listen to you...
+
+Nightmare fuel aside
+
