@@ -4,34 +4,6 @@ title:  "The Blogging Gauntlet: May 2 - Too Tired To Play"
 date:   2016-05-01 14:30:00 -0700
 ---
 
-In the past few years, I've learned a very useful trick for pretending to be
-wise. When you come across an argument, all you have to do is say something
-like this.
-
-> I think boiling this issue down to black and white is an oversimplification.
-> There's a lot of ambiguity here. This isn't fiction, where people are
-> objectively in the right or wrong, it's reality. It's all full of grey,
-> and how grey someone appears is all a matter of perspective.
-
-The beauty of statements like this is that it:
-
-* First identifies a black and white division, which makes it sound like
-everyone is on one side or the other.
-* Then, proposes such a division is bullshit. Which it is, but the phrasing
-makes it sound like that division was there the whole time, when it probably
-wasn't.
-* Finally, you point out why it's bullshit, and now you're "that guy" who's
-floating above the argument.
-
-And the whole time, *I've never stated how I feel about the issue itself.*
-
-Now, I've been trying to cut back on arguments like that, because I want
-to get better at actually saying things. But, I'm actually going to use shades
-of this argument to explain why I've been finding it hard to blog.
-
-\*\*\*
-{: .centered }
-
 Let's talk about work and play.
 
 These are topics that people absolutely love to bring up when talking
@@ -70,3 +42,20 @@ too daunting to do in my spare time.
 A few weeks ago, I had a conversation with somebody. She said it was nice to
 have a low effort writing outlet. That way, she could write whatever she wanted,
 without worrying about having to make it perfect.
+
+I feel I could benefit from something similar, and that's part of why
+I did this challenge. By forcing myself to write 500 words every day, I'm
+forced to lower my standards on what's publishable and what isn't. I won't lie,
+that's going to sting a bit. It doesn't matter how many layers of self-deprecation
+I weave on top, I care a lot about the quality of my writing. I place these
+high standards, and I adjust and I change words until it feels right. And there's
+the issue: the process of editing isn't as fun as the initial step of putting
+words onto the page. The end result can be glorious to behold, but it's a long
+journey to get there. My brain isn't good enough to understand the long term
+reward.
+
+Consider this challenge as part of my long term plan to get better at working
+towards long term plans. In the short term, my writing is going to be straight
+garbage, but in the long term I'll become much better at articulating
+my thoughts. I'll also be better at taking small concrete steps towards
+lofty uncertain goals.
