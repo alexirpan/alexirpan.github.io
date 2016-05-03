@@ -1,61 +1,74 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 2 - Too Tired To Play"
-date:   2016-05-01 14:30:00 -0700
+date:   2016-05-01 23:13:00 -0700
 ---
 
 Let's talk about work and play.
 
-These are topics that people absolutely love to bring up when talking
-about motivation and productivity. Here's how the argument goes.
-People who do lots of work do so because they want to. They find ways
-to make work fun. The average employee goes to work to earn a paycheck,
-then plays elsewhere. Work to live, not live to work. But these people,
-these special people can drive enjoyment our of their work. For them,
-work is play, work is fun, and that self-satisfication drives them
-to produce at incredible rates.
+This is a theme that people absolutely love to bring up when talking
+about productivity. Here's how the argument goes.
+People who do lots of work do because they like their work.
+They find ways to make work fun.
+The average employee goes to work to earn a paycheck, using that
+money to fund their play elsewhere.
+They work to live, instead of living to work. The mythical employee
+who treats their work as play lives for their work, because their
+work isn't work; it's play! That self-satisfication drives them
+to work on side project after side project.
 
-On one hand, I do agree with parts of this. In general, people who
-like their job will do more at their job. It's obvious. And then people
-who like hobbies will spend time outside of work on those hobbies.
-They'll learn how to dance, or maybe play an instrument. Maybe they'll
-organize a D&D campaign.
+I'll fully admit I'm strawmanning the argument by a bit. It's not
+as though it's unfounded.
+People who like their job will do more at their job. It's obvious.
+People with big hobbies will spend time outside of work on those hobbies.
+They'll take salsa lessons, or practice playing the piano. Maybe they'll
+try organizing a roleplaying campaign.
 
-But fundamentally, doing all these things still requires effort.
-Learning an instrument well takes focused practice. Running a D&D campaign
-requires someone to craft a plausible setting and characters. There is
-real effort there, and personally, sometimes I'm too tired to do something
-that I get enjoyment out of.
+What this portrayal misses is that even if you like your work, it's still
+work. Someone can both deeply enjoy their job and deeply desire a break
+from it. And similarly, some hobbies require lots of effort as well.
+Learning to play the piano requires focused practice.
+Running a roleplaying campaign requires crafting a plausible setting,
+and learning how to improv against the insane actions of roleplayers themselves.
 
-Being a passive consumer of entertainment is almost zero effort for
-reasonable gain. Writing a blog post requires me to put in the time to
-write. It may be more personally fulfilling, but after a long day it's hard
-to convince my brain to put in *more* time.
+If there is work and there is play, then for me blogging is semi-play.
+It's nice, but it requires effort, and sometimes I'm too tired for that.
+If I've just worked for 12 hours, the last thing my brain wants to do is work
+even more.
 
-If there is work and there is play, then for me blogging is a mix between
-the two. I want to write more, but there's this pressure to make the words
+It doesn't matter that blogging is more personally fulfilling than being
+a passive consumer of entertainment. Entertainment is entertaining! It's
+made that way! Zero effort for a small blip of amusement. Welcome, dear children,
+to the firehose of information.
+
+I don't want to bash the entertainment industry that hard, because admittedly
+this blog is a contributor to that firehose. I just think it's an interesting
+way to model the way I act.
+
+I want to write more, but there's this pressure to make the words
 I'm writing perfect and well-polished. To make every sentence a clean pearl,
 saying exactly what I mean in exactly as many words as I need. The issue is that
-it takes a long time to write in a polished way, and that makes blogging
-too daunting to do in my spare time.
+it takes a long time to write in a polished way. The more polished I want
+something, the more effort that has to go into it. My standards for myself
+make blogging too daunting to do unless I have little else going on, and
+that's not sustainable.
 
 A few weeks ago, I had a conversation with somebody. She said it was nice to
-have a low effort writing outlet. That way, she could write whatever she wanted,
-without worrying about having to make it perfect.
+have a low effort writing outlet. That way, she could write down her passing
+thoughts, without worrying about making it perfect.
 
-I feel I could benefit from something similar, and that's part of why
-I did this challenge. By forcing myself to write 500 words every day, I'm
+By requiring 500 words every day, I'm
 forced to lower my standards on what's publishable and what isn't. I won't lie,
-that's going to sting a bit. It doesn't matter how many layers of self-deprecation
-I weave on top, I care a lot about the quality of my writing. I place these
-high standards, and I adjust and I change words until it feels right. And there's
-the issue: the process of editing isn't as fun as the initial step of putting
-words onto the page. The end result can be glorious to behold, but it's a long
-journey to get there. My brain isn't good enough to understand the long term
-reward.
+that's going to sting a bit. It doesn't matter how many layers of
+self-deprecation
+I weave about myself, I care a lot about the quality of the things I produce.
+It's natural to; in fact I'd say it's incrediby strange not to.
+The end result of a well-edited most can be glorious to behold, but it's a
+long journey to get there, and I find it less fun than the first step of turning
+my thoughts into words.
 
-Consider this challenge as part of my long term plan to get better at working
-towards long term plans. In the short term, my writing is going to be straight
-garbage, but in the long term I'll become much better at articulating
-my thoughts. I'll also be better at taking small concrete steps towards
-lofty uncertain goals.
+I'm treating this gauntlet as one small piece of my long term plan to get
+better at working towards long term plans.
+In the short term, my writing is going to be straight garbage. In the long term,
+I'll be more articulate, and I'll be better at understanding the power of
+taking small concrete steps towards lofty uncertain goals.
