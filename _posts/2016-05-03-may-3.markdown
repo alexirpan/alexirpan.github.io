@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 3 - Asynchronous Research in Puzzle Hunts"
+date:   2016-05-03 23:22:00 -0700
+---
+
+Last Sunday, I did Berkeley Mystery Hunt. I can't talk about the puzzles
+publicly because this puzzle hunt gets run twice: once during the school
+year for Berkeley students, and once during the summer for people in the
+Bay Area.
