@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Blogging Gauntlet: May 3 - Asynchronous Research in Puzzle Hunts"
+title:  "The Blogging Gauntlet: May 3 - Asynchronous Research and You"
 date:   2016-05-03 23:22:00 -0700
 ---
 
@@ -20,9 +20,12 @@ room, so you can ask each other in person. However, when you scale
 up to massive teams like MIT Mystery Hunt, this becomes a huge
 concern. They might be sleeping, or be on the other side of the country,
 and you have to figure out the partial progress from only the notes they've
-written down.
+written down. If those notes don't explain the motivation behind all
+the data collected, they're practically useless. How am I supposed to
+know why you removed all the vowels, or where this random column of
+numbers came from?
 
-I didn't know what to call this, until I read qntm's stories about
+I didn't know what to call this, until I read qntm's series on
 antimemetics. If you haven't read them, I highly, highly recommend checking
 them out. Start at [We Need To Talk About Fifty-Five](http://www.scp-wiki.net/we-need-to-talk-about-fifty-five)
 and follow the links from there.
@@ -41,5 +44,44 @@ any evidence of their existence disappears. It's one of the more
 horrifying ways to go. You can't prove your existence to the world
 if the world doesn't listen to you...
 
-Nightmare fuel aside
+Nightmare fuel aside, there's a quote about antimemetics research
+that resonated with me, which is applicable outside the realm of
+fiction.
+
+> Still lost for a logical entry point to the data, Wheeler curses all of her predecessors. Asynchronous research — whereby the research topic is forgotten entirely between iterations, and rediscovered over and over — is a perfectly standard practice in the Antimemetics Division, and her people ought to be better trained than this. There should be an obvious single document to read first which makes sense of the rest. A primer—
+
+qntm, *CASE COLOURLESS GREEN*
+{: .centered }
+
+The idea of asynchronous research is something I've thought about before,
+but this is the first time I've seen someone describe it. And I love the
+description, it's perfect.
+
+When I take notes on something, whether it's for puzzle hunts or lecture,
+I emphasize writing down motivations, writing down questions
+people ask about the material, and writing down the answers to those questions.
+If I don't follow the lecture, I write what the lecturer is saying anyways,
+and pepper the margins with question marks to indicate my confusion.
+
+The reason I do this is simple: if I understand the material, I'm not going
+to read my old notes. **In the worlds where I'm reading my notes, I don't
+understand what's going on, so I write my notes towards a more confused
+version of myself.** If my notes spend too long explaining a topic I already
+get, that's fine, I'll just skip ahead. But if my notes don't explain something
+in enough detail, I have to struggle through them, and that takes a lot longer.
+
+Understanding something in the now doesn't mean you'll remember it in the future,
+so it's best to leave notes for your forgetful future selves. Comment your code
+to explain your awful hack. Mark key ideas to give your future self something
+to start at, and mark when you're confused to let your future self
+know where your notes are dodgy.
+
+If you're confused about an idea, then get it after a few minutes, **write down why you were confused and why
+it makes sense, because there's a good chance that if you get confused again,
+you'll get confused in the same way.**
+(Writing it down also makes it stick better and decreases the chance
+you get confused in the first place.)
+
+This may not be the best way to take notes, but it's what my note taking
+strategy converged to, and so far it works for me.
 
