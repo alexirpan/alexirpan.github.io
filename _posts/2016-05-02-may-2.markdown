@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 2 - Too Tired To Play"
-date:   2016-05-01 23:13:00 -0700
+date:   2016-05-01 23:22:00 -0700
 ---
 
 Let's talk about work and play.
@@ -14,7 +14,7 @@ The average employee goes to work to earn a paycheck, using that
 money to fund their play elsewhere.
 They work to live, instead of living to work. The mythical employee
 who treats their work as play lives for their work, because their
-work isn't work; it's play! That self-satisfication drives them
+work isn't work; it's play! That self-satisfaction drives them
 to work on side project after side project.
 
 I'll fully admit I'm strawmanning the argument by a bit. It's not
@@ -29,21 +29,27 @@ work. Someone can both deeply enjoy their job and deeply desire a break
 from it. And similarly, some hobbies require lots of effort as well.
 Learning to play the piano requires focused practice.
 Running a roleplaying campaign requires crafting a plausible setting,
-and learning how to improv against the insane actions of roleplayers themselves.
+and learning how to improvise against the insane actions of roleplayers themselves.
 
 If there is work and there is play, then for me blogging is semi-play.
 It's nice, but it requires effort, and sometimes I'm too tired for that.
-If I've just worked for 12 hours, the last thing my brain wants to do is work
-even more.
+If I've just worked for 12 hours, the last thing my brain wants to do is
+do more. I'm too tired to work, and I'm too tired to play.
 
 It doesn't matter that blogging is more personally fulfilling than being
-a passive consumer of entertainment. Entertainment is entertaining! It's
+a passive consumer of other people's work. Entertainment is entertaining! It's
 made that way! Zero effort for a small blip of amusement. Welcome, dear children,
-to the firehose of information.
+to the fire hose of information.
 
-I don't want to bash the entertainment industry that hard, because admittedly
-this blog is a contributor to that firehose. I just think it's an interesting
-way to model the way I act.
+![An xkcd comic about consuming](/public/may2/consumer.png)
+{: .centered }
+
+[There is always a relevant xkcd](https://xkcd.com/662/)
+{: .centered }
+
+I don't want to bash the entertainment industry that hard, because it would
+be hypocritical. This blog is a contributor to that fire hose, and I want
+people to drink from it.
 
 I want to write more, but there's this pressure to make the words
 I'm writing perfect and well-polished. To make every sentence a clean pearl,
@@ -57,12 +63,13 @@ A few weeks ago, I had a conversation with somebody. She said it was nice to
 have a low effort writing outlet. That way, she could write down her passing
 thoughts, without worrying about making it perfect.
 
+This challenge is a step towards making my blog take less effort.
 By requiring 500 words every day, I'm
 forced to lower my standards on what's publishable and what isn't. I won't lie,
 that's going to sting a bit. It doesn't matter how many layers of
 self-deprecation
 I weave about myself, I care a lot about the quality of the things I produce.
-It's natural to; in fact I'd say it's incrediby strange not to.
+It's natural to; in fact I'd say it's incredibly strange not to.
 The end result of a well-edited most can be glorious to behold, but it's a
 long journey to get there, and I find it less fun than the first step of turning
 my thoughts into words.
