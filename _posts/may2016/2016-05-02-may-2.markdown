@@ -4,6 +4,8 @@ title:  "The Blogging Gauntlet: May 2 - Too Tired To Play"
 date:   2016-05-02 23:22:00 -0700
 ---
 
+{% include gauntlet.md %}
+
 Let's talk about work and play.
 
 This is a theme that people absolutely love to bring up when talking

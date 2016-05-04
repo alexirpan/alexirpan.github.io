@@ -4,6 +4,8 @@ title:  "The Blogging Gauntlet: May 3 - Asynchronous Research and You"
 date:   2016-05-03 17:12:00 -0700
 ---
 
+{% include gauntlet.md %}
+
 Last Sunday, I did Berkeley Mystery Hunt. I can't talk about the puzzles
 publicly because this puzzle hunt gets run twice: once during the school
 year for Berkeley students, and once during the summer for people in the
