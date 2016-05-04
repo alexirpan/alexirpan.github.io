@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 3 - Asynchronous Research and You"
-date:   2016-05-03 23:22:00 -0700
+date:   2016-05-03 17:12:00 -0700
 ---
 
 Last Sunday, I did Berkeley Mystery Hunt. I can't talk about the puzzles
@@ -11,7 +11,7 @@ Bay Area.
 
 In every puzzle hunt, I run into the same scenario. A new puzzle comes out,
 and I take a look at it. I'll solve it, or I'll get stuck and move to
-anotoher puzzle. Either way, I run into a problem. Either I need other
+another puzzle. Either way, I run into a problem. Either I need other
 people to explain what they've figured out, or other people need to
 understand my progress based on my work so far.
 
@@ -44,13 +44,19 @@ any evidence of their existence disappears. It's one of the more
 horrifying ways to go. You can't prove your existence to the world
 if the world doesn't listen to you...
 
+![I don't exist](/public/may3/retgone.jpg)
+{: .centered }
+
+(from *Crisis on Infinite Earths*, discovered through TVTropes)
+{: .centered }
+
 Nightmare fuel aside, there's a quote about antimemetics research
 that resonated with me, which is applicable outside the realm of
 fiction.
 
 > Still lost for a logical entry point to the data, Wheeler curses all of her predecessors. Asynchronous research — whereby the research topic is forgotten entirely between iterations, and rediscovered over and over — is a perfectly standard practice in the Antimemetics Division, and her people ought to be better trained than this. There should be an obvious single document to read first which makes sense of the rest. A primer—
 
-qntm, *CASE COLOURLESS GREEN*
+(qntm, *CASE COLOURLESS GREEN*)
 {: .centered }
 
 The idea of asynchronous research is something I've thought about before,
@@ -82,6 +88,28 @@ you'll get confused in the same way.**
 (Writing it down also makes it stick better and decreases the chance
 you get confused in the first place.)
 
+Here are some examples. Below are my notes on backprop from neural nets.
+I make sure to annotate the intuition behind the gradient.
+
+[![Lecture notes](/public/may3/smallbackprop.png)](/public/may3/backprop.jpg)
+{: .centered }
+
+(Click for full size.)
+{: .centered }
+
+Here's another example from theoretical crypto.
+I don't follow the intuition said in lecture, but I write it down anyways,
+and note my confusion appropriately.
+
+[![Lecture notes](/public/may3/smallcrypto.jpg)](/public/may3/crypto.png)
+{: .centered }
+
+(Click for full size.)
+{: .centered }
+
+There are downsides to this approach. I've filled notebooks with notes that
+I've never read again, and it's tricky to take detailed notes while keeping
+up with lecture. However, I overall think it's worth it.
 This may not be the best way to take notes, but it's what my note taking
-strategy converged to, and so far it works for me.
+strategy evolved into. So far, it's been working for me.
 
