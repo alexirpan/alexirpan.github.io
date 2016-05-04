@@ -7,6 +7,8 @@ url: "http://www.alexirpan.com" # the base hostname & protocol for your site
 github_username:  alexirpan
 timezone: "America/Los_Angeles"
 
+gems: [jekyll-paginate]
+
 paginate: 3
 
 # Get around Jekyll default ordering and requirement to have
