@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 4 - The Exploration-Exploitation Problem."
+date:   2016-05-04 17:12:00 -0700
+---
+
+{% include gauntlet.md %}
+
+The 
