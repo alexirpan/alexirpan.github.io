@@ -1,9 +1,39 @@
 ---
 layout: post
-title:  "The Blogging Gauntlet: May 4 - The Exploration-Exploitation Problem."
+title:  "The Blogging Gauntlet: May 4 - Exploration-Exploitation and Decision Making"
 date:   2016-05-04 17:12:00 -0700
 ---
 
 {% include gauntlet.md %}
 
-The 
+The exploration-exploitation problem is a classical problem in AI. Its generality
+means it shows up in several topics, such as reinforcement learning and Monte
+Carlo Tree Search. Additionally, it can be very applicable to issues in industry,
+like online advertsing, A/B testing, and decision making in general.
+
+The cleanest setting for explaining exploration-exploitation is
+the multi-armed bandit problem. Don't ask me where the name came from, because
+I'm not sure of that either.
+
+In the original formulation, a gambler stands in front of a slot machine
+with $$N$$ arms. Every arm has a different reward, and those rewards as random.
+More formally, the reward from each arm follows an unknown probability distribution.
+Whenever the gambler picks an arm, they get a sample from that distribution.
+
+Importantly, the gambler doesn't know which arm has high expected reward
+and which doesn't. For $$T$$ timesteps, the gambler pulls an arm and receives
+a reward sampled from that arm's distribution. The goal is to design a strategy
+for the gambler which maximizes their expected reward.
+
+
+
+If this gambler were all-powerful and omniscient, they could always pick the
+arm with highest expected reward. Let's call this the optimal strategy.
+Now, it's impossible to achieve the optimal strategy. The gambler has
+no information on the payout of each arm, so they have to try every
+arm at least once to make sure they aren't missing the optimal
+arm. This motivates the definition of regret.
+
+**Regret** is 
+
+
