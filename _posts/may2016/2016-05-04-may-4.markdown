@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 4 - Exploration-Exploitation Part 1: Multi-armed Bandits"
-date:   2016-05-04 19:40:00 -0700
+date:   2016-05-04 19:42:00 -0700
 ---
 
 {% include gauntlet.md %}
@@ -45,7 +45,7 @@ Suppose our strategy was to pick arm 1 or 2 randomly. Over $$T$$ timesteps,
 this achieves expected payout
 
 $$
-    \left(\frac{1}{2}\frac{2}{2} + \frac{1}{2}\cdot \frac{4}{3}\right)T = \frac{7}{6}T
+    \left(\frac{1}{2}\cdot\frac{2}{2} + \frac{1}{2}\cdot \frac{4}{3}\right)T = \frac{7}{6}T
 $$
 
 However, the optimal strategy has expected payout
@@ -82,9 +82,7 @@ Or to be more precise, *it is theoretically impossible to distinguish
 between the two without taking tons of samples.* We have to observe
 at least one good outcome, and the difference between "happens one in a million"
 and "happens never" is small enough to be almost invisible.
-
-This problem was first formulated in World War II, and well, I'll let
-Wikipedia explain how difficult this problem is.
+I'll let Wikipedia explain how frustrating this problem can be.
 
 > Originally considered by Allied scientists in World War II, it proved so intractable that, according to Peter Whittle, the problem was proposed to be dropped over Germany so that German scientists could also waste their time on it.
 
