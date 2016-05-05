@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 5 - Exploration-Exploitation Part 2: Milk Tea"
+date:   2016-05-05 19:42:00 -0700
+---
+
+{% include gauntlet.md %}
+
+[Yesterday]({% post_url 2016-05-04-may-4 %})
