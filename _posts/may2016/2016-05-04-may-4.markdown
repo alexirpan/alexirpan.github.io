@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Blogging Gauntlet: May 4 - Exploration-Exploitation and Decision Making"
+title:  "The Blogging Gauntlet: May 4 - Exploration-Exploitation Part 1: Multi-armed Bandits"
 date:   2016-05-04 17:12:00 -0700
 ---
 
@@ -9,7 +9,7 @@ date:   2016-05-04 17:12:00 -0700
 The exploration-exploitation problem is a classical problem in AI. Its generality
 means it shows up in several topics, such as reinforcement learning and Monte
 Carlo Tree Search. Additionally, it can be very applicable to issues in industry,
-like online advertsing, A/B testing, and decision making in general.
+like online advertising, A/B testing, and decision making in general.
 
 The cleanest setting for explaining exploration-exploitation is
 the multi-armed bandit problem. Don't ask me where the name came from, because
@@ -25,15 +25,81 @@ and which doesn't. For $$T$$ timesteps, the gambler pulls an arm and receives
 a reward sampled from that arm's distribution. The goal is to design a strategy
 for the gambler which maximizes their expected reward.
 
-
-
-If this gambler were all-powerful and omniscient, they could always pick the
+If the gambler were all-powerful and omniscient, they could always pick the
 arm with highest expected reward. Let's call this the optimal strategy.
 Now, it's impossible to achieve the optimal strategy. The gambler has
 no information on the payout of each arm, so they have to try every
 arm at least once to make sure they aren't missing the optimal
 arm. This motivates the definition of regret.
 
-**Regret** is 
+The **regret** of a strategy $$S$$ is the expected difference in reward between
+following $$S$$ and following the optimal strategy of always picking the best arm.
+Note the regret is always positive - by definition, it's impossible to do better
+than the optimal strategy.
+As an example, suppose we have two arms.
 
+* Arm 1 pays $2 with probability $$1/2$$, and $0 otherwise.
+* Arm 2 pays $4 with probability $$1/3$$, and $0 otherwise.
 
+Suppose our strategy was to pick arm 1 or 2 randomly. Over $$T$$ timesteps,
+this achieves expected payout
+
+$$
+    \left(\frac{1}{2}\frac{2}{2} + \frac{1}{2}\cdot \frac{4}{3}\right)T = \frac{7}{6}T
+$$
+
+However, the optimal strategy has expected payout
+
+$$
+    \frac{4}{3}T
+$$
+
+So the regret of this strategy is $$T/6$$.
+
+At this point, it's worth explaining why this problem is so difficult. Because
+we have no information about each arm's reward distribution, it's possible that
+most of the reward is bundled into low probability outcomes. Think of this
+example.
+
+* Arm 1 always pays $1
+* Arm 2 pays $1,000,000 with probability $$1/10^4$$.
+
+In the case, the arm with highest expected reward is arm 3, but in almost all
+attempts the gambler will receive $0 for that arm.
+This is the exploration-exploitation problem in a nutshell. Based on our
+experiences so far, we can either try new things with have a chance of
+being better than anything we've seen so far (exploration), or we can
+do what we've done before, because we know we like it (exploitation).
+Too much exploration leads to too little reward, because we never stick to
+what we like the most. On the flip side, too much exploitation means we
+never discover alternatives that could be orders of magnitude better
+than our current life.
+
+Figuring out a good balanced between exploration and exploitation is
+complicated because we have no idea how to distinguish between choices that
+are good with very low probability and choices which are always bad.
+Or to be more precise, *it is theoretically impossible to distinguish
+between the two without taking tons of samples.* We have to observe
+at least one good outcome, and the difference between "happens one in a million"
+and "happens never" is small enough to be almost invisible.
+
+This problem was first formulated in World War II, and well, I'll let
+Wikipedia explain how difficult this problem is.
+
+> Originally considered by Allied scientists in World War II, it proved so intractable that, according to Peter Whittle, the problem was proposed to be dropped over Germany so that German scientists could also waste their time on it.
+
+I don't want to get into the work done on this problem. The literature is vast,
+deep, and I won't pretend to understand all of it. However, there are a few
+intuitive properties that are good guides for real-world decision making.
+
+* It's best to explore choices early and exploit best known choices later.
+If you discover a really good option, you want to maximize your
+exploiting time.
+* The bigger $$T$$ is (the longer your time horizon), the more you should
+explore early on. The small loss of reward in the now is worth the knowledge
+of knowing you're doing the best possible thing.
+* Good strategies gradually reduce their tolerance for short-term loss, instead
+of flipping from "try ALL the things!" to "try ONLY ONE of the things!"
+
+This is already much longer than I expected, so I'll leave my real life
+milk tea example for tomorrow.
