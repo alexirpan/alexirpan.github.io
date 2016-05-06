@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 5 - Exploration-Exploitation Part 2: Milk Tea"
-date:   2016-05-05 02:28:00 -0700
+date:   2016-05-05 23:30:00 -0700
 ---
 
 {% include gauntlet.md %}
