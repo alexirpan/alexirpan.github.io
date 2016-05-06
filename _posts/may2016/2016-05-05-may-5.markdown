@@ -1,0 +1,90 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 5 - Exploration-Exploitation Part 2: Milk Tea"
+date:   2016-05-05 23:30:00 -0700
+---
+
+{% include gauntlet.md %}
+
+[Yesterday]({% post_url 2016-05-04-may-4 %}) I introduced multi-armed bandits.
+Today I'll give a delicious real world example: deciding on the best place
+to get milk tea in Berkeley.
+
+Before I get into the details, let's set up some ground rules.
+
+* Pearl milk tea is a tea drink made of tea, milk, and tapioca balls. The
+tapioca balls are also known as pearls.
+* Many, many people call this drink "boba" or "bubble tea". These people
+are wrong. Yes, I understand there are regional dialects that each have
+a different word for milk tea, but the correct one is PMT. "Boba" and
+"bubble" refer to only the tapioca inside the tea. Thus, both "boba"
+and "bubble tea" are incorrect, because they do not signify that
+the milk tea drink has milk in it.
+** "Boba milk tea" or "bubble milk tea" are acceptable terms that I can
+tolerate.
+
+Anyways, this post isn't about milk tea linguistics, it's about multi-armed
+bandits. In this setting, initially every arm is a milk tea restaurant.
+The arm's payout
+is random, depending on what flavor of tea I get and how I request it be made.
+Over time, each arm further divides into more choices, because I need to choose
+what flavor of tea to get within a given milk tea cafe.
+
+Let's pretend I'm a freshman again, and have no context about the milk tea
+scene. As a freshman, I know of two milk tea options: Quickly's,
+Sweetheart's, and Lotus House. I try them for a while, and conclude that
+Sweetheart's has the best pearls, and Lotus House has the best tea.
+This continues to hold up as I try different flavors.
+Eventually, I converge to alternating between Sweetheart's and Lotus House
+based on mood.
+
+A few months later, someone mentions PurpleKow to me. This milk tea place is
+further from the dorms, but I check it out, and *my god*, it's so much
+better. Here, I paid the price for not exploring enough. If I was serious about
+milk tea (which I am now), I should have done a search of nearby milk tea places.
+That would have made me find PurpleKow significantly sooner.
+
+Now, fast forward to next year. Near the south side of campus, two stores open.
+
+* Sheng Kee Bakery, a chain of Asian bakeries that also sell milk tea.
+* ShareTea.
+
+Sheng Kee's new, so it deserves a few tries. I quickly decide it's okay, but
+not good enough. ShareTea's also new, so I try it, and
+
+*oh*
+
+*my*
+
+*god.*
+
+ShareTea quickly becomes my go-to spot. At this point, I don't bother
+going to PurpleKow or Sweetheart's. My past observations of the quality
+of milk tea gives me high confidence in the quality of milk tea from these
+establishments, and it's worse than ShareTea's.
+
+At this point, I have some regret. I could have gotten tea from PurpleKow
+significantly more than I did. However, it's outweighed by my decision to
+explore ShareTea early. I missed PurpleKow for a few months, but I got to
+exploit ShareTea for years.
+
+Finally, a few months after going to ShareTea several times a week, someone
+tells me I should really, really try Asha Tea House. I try it, and again
+I'm surprised. It's very good, better than ShareTea, but it's expensive
+enough to make it a trade-off between quality and quantity.
+I choose between the two based on which I favor that day.
+
+In the present, it's worth asking myself how I've done. Well, overall my
+milk tea regret is pretty low. There were a few months where I didn't explore
+my options thoroughly enough, but I checked out ShareTea within days of its
+opening, and got to exploit it for years. There's some regret from not visiting
+Asha earlier, but it's close enough in quality that I don't feel so bad
+about it.
+
+The biggest takeaway I want to get across is that we usually don't do enough
+exploration. People tend to regret what they didn't do more than they do, and
+although there may be some cognitive bias there, the potential reward from
+trying something amazing means it's worth exploring more than you think you
+should. Spending a few months trying different things is cheap compared to
+years of doing the right thing.
+
