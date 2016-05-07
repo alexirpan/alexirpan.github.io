@@ -64,7 +64,7 @@ example.
 * Arm 1 always pays $1
 * Arm 2 pays $1,000,000 with probability $$1/10^4$$.
 
-In the case, the arm with highest expected reward is arm 3, but in almost all
+In the case, the arm with highest expected reward is arm 2, but in almost all
 attempts the gambler will receive $0 for that arm.
 This is the exploration-exploitation problem in a nutshell. Based on our
 experiences so far, we can either try new things with have a chance of

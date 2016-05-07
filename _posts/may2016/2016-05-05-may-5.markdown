@@ -31,7 +31,7 @@ Over time, each arm further divides into more choices, because I need to choose
 what flavor of tea to get within a given milk tea cafe.
 
 Let's pretend I'm a freshman again, and have no context about the milk tea
-scene. As a freshman, I know of two milk tea options: Quickly's,
+scene. As a freshman, I know of three milk tea options: Quickly's,
 Sweetheart's, and Lotus House. I try them for a while, and conclude that
 Sweetheart's has the best pearls, and Lotus House has the best tea.
 This continues to hold up as I try different flavors.
