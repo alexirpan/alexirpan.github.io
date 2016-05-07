@@ -88,7 +88,7 @@ Think of it this way - a computer can explore a billion states in reasonable
 time. However, $$10^9$$ states is a drop in the bucket compared to $$10^{43}$$
 states. Actually, that metaphor isn't good enough, so here's a raw calculation.
 [A liter of water has about $$10^{26}$$ water molecules](http://www.wolframalpha.com/input/?i=how+many+atoms+are+in+a+liter+of+water).
-Seeing $$10^9$$ out of $$10^{43}$$ states is like having a containuer of
+Seeing $$10^9$$ out of $$10^{43}$$ states is like having a container of
 100,000,000 liters
 of water, and looking at a single molecule of it.
 
