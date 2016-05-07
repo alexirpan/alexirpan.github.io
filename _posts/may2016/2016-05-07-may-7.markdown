@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 7 - Shaping Thought Processes"
+date:   2016-05-07 9:51:00 -0700
+---
+
+{% include gauntlet.md %}
+
+About a week ago, a friend of mine made a Facebook post.
+
+> That moment when you accidentally use bodywash instead of shampoo,
+> and think "this should have been caught at compile time"
+
+Everybody laugh, cue snare drum, etc. But, it got me thinking.
+This friend of mine is someone who's done functional programming,
+and thinks a lot about programming languages. It's fitting for him
+to think about catching mistakes at compile time, because that's
+the great strength of functional programming. To quote the
+[Haskell wiki](https://wiki.haskell.org/Why_Haskell_just_works),
+
+> A lot of people experience a curious phenomenon when they start using Haskell: Once your code compiles it usually works.
+
+I started reflecting on other times people have used their area of
+expertise to reason about events in their life, and the list grew
+faster than I thought. A student in the graduate level machine learning/stats
+course I'm taking said he had very high regret because he procrastinated
+making his poster until now.
+
+Last weekend, I did a puzzle hunt with someone who does systems
+research in [AMPLab](https://amplab.cs.berkeley.edu/). At one point, a few
+members left to do an on-campus puzzle. He said it made more sense to work on
+a new puzzle instead of getting caught up on the partial progress of the puzzle
+they abandoned. Or more specifically, he said they already had that puzzle loaded
+into their cache, so it wasn't worth the context switching time.
+
+In one memorable math session, someone decided the word "three" was a variable,
+leading to insane sentences like "If three is bigger than eight, then this property
+should hold."
+
+And if it wasn't already clear, I'm among these people who have let their
+technical knowledge blend into their real world thoughts. I literally just
+wrote a post about [online milk tea regret minimization]({% post_url 2016-05-05-may-5 %}).
+I've also described my decision making as a [priority queue](https://en.wikipedia.org/wiki/Priority_queue).
+I get offered a task with high priority. I can either do it like a productive
+person, or procrastinate it by placing it back into the queue with lower
+priority. Perhaps that's my algorithms side bleeding out.
+
+To me, it seems like the more you think about a subject, the more it shapes
+the way you think in general. I'm sure that leads to all sorts of stereotypes.
+Physiscists round constants to orders of magnitude, theoretical computer
+scientists throw out constants entirely.
+
