@@ -48,5 +48,24 @@ priority. Perhaps that's my algorithms side bleeding out.
 To me, it seems like the more you think about a subject, the more it shapes
 the way you think in general. I'm sure that leads to all sorts of stereotypes.
 Physiscists round constants to orders of magnitude, theoretical computer
-scientists throw out constants entirely.
+scientists throw out constants entirely. I don't know of stereotypes for
+biologists or chemists, but I'd guess they place more on the process of things -
+how things change from one thing into another. And then of course, math majors
+are both pedantic and willing to treat absurd scenarios with total seriousness,
+because math eventually turns into reasoning about abstract structures that
+have no real world analogue. When there's a rich body of math based around
+assuming there are no naturals larger than $$5$$, treating "three" as a variable
+isn't that surprising.
+
+I don't think this is a bad thing. I also don't think it's a good thing. It's
+simply a thing; a way that our brains work. I'm sure if you asked, every major
+could give you a way their major has shaped their thoughts to make them a better
+person. Math made me a better problem solver and a more detail-oriented person.
+Astrophysics helped me imagine scales of exponentially large numbers, and gave
+me more reason to care about Earth. Philosophy made me better at arguing my
+points. Public health made me more emphathetic.
+
+Which is the "best" field of study for shaping your thoughts? There isn't one.
+Humanity probably needs all of these modes of thinking, and we'll borrow the hats
+of others if we need to think in a way that's unfamiliar to us.
 
