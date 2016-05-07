@@ -1,8 +1,23 @@
 ---
 layout: post
-title:  "The Blogging Gauntlet: May 6 - ?????"
+title:  "The Blogging Gauntlet: May 6 - State Space Size is a Garbage Metric"
 date:   2016-05-06 10:00:00 -0700
 ---
 
 {% include gauntlet.md %}
+
+When talking about games, and especially when talking about game AIs,
+it's very common for people to compare the size
+of the state space to other big numbers, like the number of atoms in the
+universe.
+
+EXAMPLES HERE
+
+On some level it's understandable. The number of states is often used as
+a proxy for the difficulty of the problem. Chess has CHECK states.
+Go on a 19 x 19 board has CHECK states. So Go is a harder game to play,
+and look, AlphaGo took a lot longer to make than DeepBlue! Checkers has
+CHECK states and Backgammon has CHECK states, and they were solved a lot
+earlier than both (CHECK WHEN).
+
 
