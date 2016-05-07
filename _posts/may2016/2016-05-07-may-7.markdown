@@ -14,15 +14,16 @@ About a week ago, a friend of mine made a Facebook post.
 Everybody laugh, cue snare drum, etc. But, it got me thinking.
 This friend of mine is someone who's done functional programming,
 and thinks a lot about programming languages. It's fitting for him
-to think about catching mistakes at compile time, because that's
-the great strength of functional programming. To quote the
+to think about catching mistakes at compile time. To quote the
 [Haskell wiki](https://wiki.haskell.org/Why_Haskell_just_works),
 
 > A lot of people experience a curious phenomenon when they start using Haskell: Once your code compiles it usually works.
 
 I started reflecting on other times people have used their area of
 expertise to reason about events in their life, and the list grew
-faster than I thought. A student in the graduate level machine learning/stats
+faster than I thought.
+
+In the 2nd-to-last week of classes, a student in the graduate level machine learning/stats
 course I'm taking said he had very high regret because he procrastinated
 making his poster until now.
 
@@ -47,7 +48,7 @@ priority. Perhaps that's my algorithms side bleeding out.
 
 To me, it seems like the more you think about a subject, the more it shapes
 the way you think in general. I'm sure that leads to all sorts of stereotypes.
-Physiscists round constants to orders of magnitude, theoretical computer
+Physicists round constants to orders of magnitude, theoretical computer
 scientists throw out constants entirely. I don't know of stereotypes for
 biologists or chemists, but I'd guess they place more on the process of things -
 how things change from one thing into another. And then of course, math majors
@@ -63,7 +64,7 @@ could give you a way their major has shaped their thoughts to make them a better
 person. Math made me a better problem solver and a more detail-oriented person.
 Astrophysics helped me imagine scales of exponentially large numbers, and gave
 me more reason to care about Earth. Philosophy made me better at arguing my
-points. Public health made me more emphathetic.
+points. Public health made me more empathetic.
 
 Which is the "best" field of study for shaping your thoughts? There isn't one.
 Humanity probably needs all of these modes of thinking, and we'll borrow the hats
