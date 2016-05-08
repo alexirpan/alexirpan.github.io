@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 7 - Shaping Thought Processes"
-date:   2016-05-07 9:51:00 -0700
+date:   2016-05-07 21:06:00 -0700
 ---
 
 {% include gauntlet.md %}
