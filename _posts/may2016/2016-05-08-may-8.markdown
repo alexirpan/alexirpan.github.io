@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 8 - Shut Up And Write"
-date:   2016-05-08 22:20:00 -0700
+date:   2016-05-08 22:59:00 -0700
 ---
 
 {% include gauntlet.md %}
 
-When it's 10:20 PM, and I have to write a 500 word post, and
+When it's 10:20 PM, I have to write a 500 word post, and
 I have no idea what's I'm going to write about, you know I'm
-going to be dredging the bottom of the self-reference barrel.
+going to dredge the bottom of the self-reference barrel.
 
 So, I have 100 minutes to write a post. By itself, this wouldn't
 be the trickiest task. Some of the posts on previous days were written
@@ -17,49 +17,52 @@ time-crunched, and deliberately thought about a topic I wanted to
 write about. That let me plan out an outline in advance. When you
 know what you want to say, it's surprisingly easy to say it.
 
-In this case...that's not so true. I didn't bother trying to think of a topic
-ahead of time, and here we are. One draft, only draft, let's
-see if my stream of consciousness is remotely coherent.
+Today, I didn't think of a topic ahead of time, and here we are.
+Let's see if my lightly edited stream of consciousness is remotely coherent.
 
-First off, I could always just give up. It's $20. Twenty dollars
-isn't that much for me (which I'm sure says something about
-my socioeconomic status.) But here I am, writing out words.
+First off, I could always just give up. It's $20 if I don't write a post.
+Twenty dollars
+isn't that much for me, which I'm sure says something about
+my socioeconomic status. But here I am, writing out words.
 
 So, let's assume I'm acting rationally, or at least acting in a way
 that could be interpreted as the actions of a rational person. Then,
 we immediately prove some interesting things about myself. For instance,
 I value 100 minutes of my time at more than $20.
 
-On the other hand, that assumes I get nothing out of writing blog posts,
+That assumes I get nothing out of writing blog posts,
 or rising to meet one of my self-imposed challenges. I get a really
 big sense of accomplishment when I finish something, and that feeling
 is definitely worth more than $20 to me. In retrospect, the feeling
 of accomplishment is worth a LOT more than that - it might be my
 primary motivator. It was one of the biggest things that made deciding
 not to go to grad school so difficult. Should probably keep a closer
-eye on that.
+eye on that part of myself.
 
-Now, on the other other hand...I have a final tomorrow. I have not
-studied for this final as much as I should have. Evidentally, I value
+Now, on the other hand...I have a final tomorrow. I have not
+studied for this final as much as I should have. Evidently, I value
 writing blog posts and going on road trips to LA more than
 studying for finals. Which I guess makes
-sense. Writing tons of garbage is so much more interesting than
+sense. Writing tons of garbage and doing random things in LA
+is so much more interesting than
 reading my scribbled notes from weeks long past. I can justify not
 studying by saying "I'm a second semester senior", "I'm taking this
 class pass-no pass", and from your perspective you might be wondering
 why I feel guilty at all. But I do. It's probably tied to that feeling
-of accomplishment; the feeling I get when I fail to do something
+of accomplishment. The feeling I get when I fail to do something
 simply because I didn't put in enough time is terrible. For me, there
 isn't some line in the sand marking things I want to do and things
 I should do but don't want to. It's one big gradient of priorities and
 procrastination. Envisioning achievement motivates working towards that
-achievement, even if the path required to get there isn't worth it.
+achievement, even if the path required to get there isn't worth it in
+the end.
 
-You know, that whole paragraph was a whole lot of nothing. Just go mentally
-edit it out from your memory.
+> you'll never give up, even if there's, uh... absolutely NO benefit to persevering whatsoever. if i can make that clear. no matter what, you'll just keep going. not out of any desire for good or evil... but just because you think you can. and because you "can"... ... you "have to"
 
-Hey, will you look at that. I hit 500 words! Cool. Nice.
+(Naming the source would be a spoiler.)
+{: .centered }
+
+Hey, will you look at that. I hit 500 words! Cool. Nice. See you all next time.
 
 (Also, I think I'll be fine for the final. If I'm not, well, life is one
-big tapestry. When the tapestry's big enough, it's okay to have some patches
-of baby barf green.)
+big tapestry. In any piece of work that big, it's expected that patches of it will be baby barf green.)
