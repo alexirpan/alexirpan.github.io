@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 9 - Reality is The Null Hypothesis"
-date:   2016-05-09 23:37:00 -0700
+date:   2016-05-09 23:46:00 -0700
 ---
 
 {% include gauntlet.md %}
@@ -146,3 +146,10 @@ are interesting to think about, and we can't punt them down the horizon forever.
 
 I've made my choice. Perhaps now, you've made yours. In either case: may your
 null hypothesis be rich and enlightening.
+
+\*\*\*
+{: .centered }
+
+*If you like thinking about things like this, I recommended: [I don't know, Timmy, being God is a big responsibility](https://qntm.org/responsibility),
+Inception, The Matrix (just the first one), and the TVTropes article on [Lotus-Eater Machines](http://tvtropes.org/pmwiki/pmwiki.php/Main/LotusEaterMachine).
+And of course, [Ra](https://qntm.org/ra), but that's longer than the rest.)*
