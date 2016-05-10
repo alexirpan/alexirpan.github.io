@@ -68,7 +68,81 @@ not a real one.
 I accept this argument, and propose a new corollary. It goes like this: we're
 probably a simulation, but who gives a shit? It's real to me.
 
+In essence, I'm Cypher from *The Matrix*. Except, you know, with less murder,
+and less betrayal of his friends.
 
+PICTURE Of Cypher
+
+A guy who's right, but is also an asshole
+{: .centered }
 
 \*\*\*
+{: .centered }
+
+The null hypothesis is that the world is real.
+
+What if I was given proof that the world was a simulation? Let's handwave the
+details, and assume that this proof is incredibly convincing and almost
+impossible to fake.
+
+Well, it doesn't change my position. Okay, now I know for sure the world isn't
+real. *It's still real to me.* Presumably I don't get access to anything that
+lets me alter my simulated reality, so I have to keep going with the constructed
+rules of the world. I'm not bothered by the difference between natural rules
+and constructed rules. They're all rules to me.
+
+IT'S REAL TO ME DAMMIT GUY
+
+A similar argument holds against the existence of perfect crimes. After a perfect
+crime, there is no evidence of that crime. It is impossible for me to distinguish
+between a world with perfect crimes and one without perfect crimes, so I shouldn't
+bother thinking about it. The only time something should matter is if there is
+a noticeable affect on the world.
+
+\*\*\*
+{: .centered }
+
+Okay. What about virtual reality?
+
+I got to try out a virtual reality headset last week, and it's quite impressive.
+Right now, it's still slightly off from reality, but there were moments where I
+genuinuely forgot I was in a room the whole time.
+
+So, let's up the ante. Suppose VR technology starts looking very similar to
+reality. You put on a VR headset, and jump into a constructed world. Are you
+ethically obligated to act as if the constructed world is reality, or are you
+free to act amorally?
+
+At this point, I'm actually not so sure. Here's something I call the Reality
+Turing Test.
+
+> You put on a VR headset, and go to sleep. While sleeping, the proctor
+> does one of two things. They either brings your sleeping body to a
+> real life room and sets your headset to display the world around you, or
+> they have the headset display a virtual reality. You wake up, and have to
+> decide if you're looking at VR or looking at reality.
+
+Right now, VR headsets don't pass this test. The graphics aren't perfect,
+and occasionally there's a slight stutter. But in the future, VR headsets
+may pass the Reality Turing Test, and that's where ethics gets complicated.
+When you put on a VR headset, you're aware of the transition between reality
+and virtual reality. But, if you act amorally in virtual reality, and virtual
+reality is hard to distinguish from true reality, it's a very small step to
+acting amorally in the real world.
+
+If you agree with my position, then at some point in the future video game
+designers are obligated to keep VR video games as *unrealistic* as possible, to
+maximize the gaps between VR and reality. A video game character is a monster
+when compared to real life people.
+
+Reality may be the null hypothesis, but in a future where we can approximate
+reality to high-fidelity, it may not be the only null hypothesis. That's a bit
+more scary than it sounds.
+
+We're not there yet. I'd say we're not even close to there yet. But the ethics
+are interesting to think about, and we can't punt them down the horizon forever.
+
+> "You know, choosing not to choose isn't really a decision."
+
+(Twilight Sparkle, *Friendship is Magic*)
 {: .centered }
