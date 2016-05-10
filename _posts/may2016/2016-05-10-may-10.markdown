@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 10 - Splitwise is NP-Complete"
+date:   2016-05-10 15:41:00 -0700
+---
+
+{% include gauntlet.md %}
+
+[Splitwise](https://www.splitwise.com) is a free bill management solution.
+The idea is that on group trips, different people foot different expenses.
+They then need to get paid back. What Splitwise does is automatically
+do all the bookkepping for you.
+
+Say Alice, Bob, Carol, and Dave went on a trip together.
+Alice spent $60 and needs to
+get paid back by Bob, Carol, and Dave. Carol spent $20 and needs to
+get paid back by Bob and Dave. Dave spent $30 and needs to get paid
+back by Alice and Bob, and Alice's share should be twice as big as Bob's.
+Splitwise handles all the math for you, telling everyone how much they should
+pay to who. Think of it as a specialized
+spreadsheet with a pretty interface and integration with Paypal and
+Venmo.
+
+We can interpret these payments as a weighted directed graph.
+People are vertices, and if Alice owes $$\$x$$ to Bob, there is an
+edge of weight $$x$$ from Alice to Bob. The situation above can
+be expressed by this graph.
+
+![First payment graph](/public/may10/graph1.png)
+{: .centered }
+
+Alice needs $20 from everyone else, Carol needs $10 from Bob and
+Dave, and Dave needs $20 from Alice and $10 from Bob.
+
+There are some redundancies in the graph. For example,
+Alice and Dave each need to pay each other $20. Since the net money
+between them is $0, we should just remove those edges to avoid
+doing extra transactions.
+
+![Second payment graph](/public/may10/graph2.png)
+{: .centered }
+
+Splitwise does this for you. In fact, they go one step further.
+**Splitwise tries to minimize the total number of transactions
+in the graph.**
+
+Let's go back to the example above. Carol receives $20 in total
+from Bob and Dave, then pays $20 to Alice. Instead of routing
+the money through Carol to Alice, Bob and Dave could instead
+pay their $10 directly to Alice. Carol is still net +$0 and
+Alice is still net +$20 in both situations, but now Carol
+doesn't have to pay anyone. That reduces the graph to this one.
+
+![Third payment graph](/public/may10/graph3.png)
+{: .centered }
+
+Finally, Bob is sending $10 to Dave, who is sending $10 to Alice.
+We can simplify this by having Bob send $10 to Alice straight,
+giving the final payment graph.
+
+![4th payment graph](/public/may10/graph4.png)
+{: .centered }
+
+Pretty neat, right? We've simplified the graph down to a single payment. We've
+also shown how a tool that does this automatically could be useful.
