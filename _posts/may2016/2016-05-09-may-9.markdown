@@ -1,0 +1,148 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 9 - Reality is The Null Hypothesis"
+date:   2016-05-09 23:37:00 -0700
+---
+
+{% include gauntlet.md %}
+
+*Very minor spoilers for Ra, major spoilers for The Matrix. Avoid if you
+dislike metaphysics.*
+
+Among the many excellent sequences of [*Ra*](https://qntm.org/ra), this is in my top 3.
+To set the stage: Laura and Natalie have just come back from a harrowing
+experience in the shared dreamscape called Tanako's world.
+In that dreamscape, Laura killed someone. Natalie is not happy.
+
+(For brevity, I've cut out some of the middle paragraphs.)
+
+> Natalie pulls Laura aside. "I need you to do something for me."
+>
+> "Okay?"
+>
+> "I need you to stop killing people."
+>
+> Laura chokes. "Ah, what?"
+>
+> "You killed that person," Natalie says to Laura. "You could have vented the energy upwards, away from all of us. You vaporised him and you didn't need to."
+>
+> "He was threatening lives!"
+>
+> "You had neutralised that threat. That makes it murder." Natalie's tone of voice isn't even accusatory. It's completely flat.
+>
+> "I don't understand what you're saying. It was a dream."
+>
+> "**So when did you wake up?**"
+>
+> Laura steps through her memories one at a time. She remembers walking home. She walked all the way back from her memory palace to Tanako's world to the fissure to reality. It's a continuous record. "...We're awake right now, right?"
+> 
+> "That's the null hypothesis," says Natalie. "Until you can prove otherwise, always assume you're in reality. Now, repeat after me: 'We don't know what happened.'"
+
+\*\*\*
+{: .centered }
+
+About two years ago, I remember telling
+someone about the [simulation hypothesis](https://en.wikipedia.org/wiki/Simulation_hypothesis).
+The argument goes like this: suppose humanity could one day create
+high-fidelity simulations of the world. These simulations are so good that
+the simulated people have consciousness. Many people could run these
+simulations, or the simulated people could run their own high-fidelity simulations.
+There could be several layers of simulation or just one, but in either case
+the number of simulated people is much larger than the number of real people.
+
+Thus, one of the following must hold true.
+
+* Most civilizations cannot simulate self-aware beings.
+* Most civilizations can simulate self-aware beings, but choose not to.
+* Most civilizations can and do simulate self-aware beings.
+
+And if the last holds true, we are very likely living in a simulation.
+
+I accept this argument, with a small extension. It goes like this: we're
+probably a simulation, but I don't give a shit. Why should I? It's real to me.
+
+In essence, I'm Cypher from *The Matrix*. Except, you know, with less murder,
+and less betrayal, and less facial hair.
+
+![Cypher](/public/may9/cypher.jpg)
+{: .centered }
+
+A guy who isn't wrong. He's just an asshole.
+{: .centered }
+
+\*\*\*
+{: .centered }
+
+The null hypothesis is that the world is real.
+
+What if I was given proof that the world was a simulation? Let's handwave the
+details, and assume that this proof is incredibly convincing and almost
+impossible to fake.
+
+Well, it doesn't change my position. Okay, now I know for sure the world isn't
+real. *It's still real to me.* Presumably I don't get access to anything that
+lets me alter my simulated reality, so I have to keep going along anyways.
+I'm not bothered by knowing the world's rules were constructed by some third
+party.
+
+<div class="centered">
+<iframe width="420" height="315" src="https://www.youtube.com/embed/BvTNyKIGXiI" frameborder="0" allowfullscreen></iframe>
+</div>
+
+A similar argument holds for perfect crimes. By definition, if people commit
+a perfect
+crime, there is no evidence of that crime. It is impossible for me to distinguish
+between a world with perfect crimes and one without perfect crimes, so I shouldn't
+bother thinking about it.
+
+\*\*\*
+{: .centered }
+
+Okay. What about virtual reality?
+
+I got to try out a virtual reality headset last week, and it's quite impressive.
+Right now, it's still slightly off from reality, but there were moments where I
+genuinely forgot I was standing in a room.
+
+So, let's up the ante. Suppose VR technology starts looking very similar to
+reality. You put on a VR headset, and jump into a constructed world. Are you
+ethically obligated to act as if the constructed world is reality, or are you
+free to act amorally?
+
+At this point, I'm actually not so sure. Here's something I call the Reality
+Turing Test.
+
+> You walk into a room with the lights out. You put on a VR headset.
+> The proctor then either has the headset display the room around you and turns
+> on the lights, or has the headset display VR.
+> The headset passes the test if you can't tell if you're looking at VR or
+> looking at reality.
+
+Right now, VR headsets don't pass this test. The graphics aren't perfect,
+and occasionally there's a slight stutter. But in the future, VR headsets
+may pass the Reality Turing Test, and that's where ethics gets complicated.
+When you put on a VR headset, you're aware of the transition between reality
+and virtual reality. But, if you act amorally in virtual reality, and virtual
+reality is hard to distinguish from true reality, it's a very small step to
+acting amorally in the real world.
+
+If you agree with my position, then at some point in the future video game
+designers are obligated to keep VR video games as *unrealistic* as possible, to
+maximize the gaps between VR and reality. A video game protagonist is a monster
+by reality's standards, and acting like one in high-fidelity VR is too close
+to acting like one in reality for my tastes.
+
+Reality may be the null hypothesis, but in a future where we can approximate
+reality to high-fidelity, it may not be the only null hypothesis. That's creepier
+than you might think.
+
+We're not there yet. I'd say we're not even close to there yet. But the ethics
+are interesting to think about, and we can't punt them down the horizon forever.
+
+> "You know, choosing not to choose isn't really a decision."
+
+(Twilight Sparkle, *My Little Pony: Friendship is Magic*)
+{: .centered }
+
+I've made my choice. Perhaps now, you've made yours. In either case: may your
+null hypothesis be rich and enlightening.
