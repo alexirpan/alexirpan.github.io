@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 9 - Reality is The Null Hypothesis"
-date:   2016-05-09 15:58:00 -0700
+date:   2016-05-09 23:37:00 -0700
 ---
 
 {% include gauntlet.md %}
