@@ -1,9 +1,74 @@
 ---
 layout: post
-title:  "The Blogging Gauntlet: May 9 - ????"
+title:  "The Blogging Gauntlet: May 9 - Reality is The Null Hypothesis"
 date:   2016-05-09 15:58:00 -0700
 ---
 
 {% include gauntlet.md %}
 
+*Very minor spoilers for Ra, major spoilers for The Matrix*
 
+Among the many excellent sequences of *Ra*, this is in my top 3.
+To set the stage: Laura and Natalie have just come back from a harrowing
+experience in the shared dreamscape called Tanako's world.
+In that dreamscape, Laura killed someone. Natalie is not happy.
+
+(For brevity, I've cut out some of the middle paragraphs.)
+
+> Natalie pulls Laura aside. "I need you to do something for me."
+>
+> "Okay?"
+>
+> "I need you to stop killing people."
+>
+> Laura chokes. "Ah, what?"
+>
+> "You killed that person," Natalie says to Laura. "You could have vented the energy upwards, away from all of us. You vaporised him and you didn't need to."
+>
+> "He was threatening lives!"
+>
+> "You had neutralised that threat. That makes it murder." Natalie's tone of voice isn't even accusatory. It's completely flat.
+>
+> "I don't understand what you're saying. It was a dream."
+>
+> "**So when did you wake up?**"
+>
+> Laura steps through her memories one at a time. She remembers walking home. She walked all the way back from her memory palace to Tanako's world to the fissure to reality. It's a continuous record. "...We're awake right now, right?"
+> 
+> "That's the null hypothesis," says Natalie. "Until you can prove otherwise, always assume you're in reality. Now, repeat after me: 'We don't know what happened.'"
+
+(qntm, *Ra*) LINK ME
+{: .centered }
+
+\*\*\*
+{: .centered }
+
+First off, if you like thinking about the nature of reality, check out *Ra*.
+Reality is one of *Ra*'s running themes, and it's pretty great if you're okay
+with the metaphysics.
+
+Back to your regularly scheduled post. About two years ago, I remember telling
+someone about the [simulation hypothesis](https://en.wikipedia.org/wiki/Simulation_hypothesis).
+The argument goes like this: suppose humanity can create high-fidelity simulations
+of the world. Furthermore, suppose we one day simulate people who have
+consciousness. Then, those simulated people may also simulate people who have
+consciousness. The simulated people in the simulation may simulate more people.
+The three-nested simulation may simulate more people. Repeat, and repeat.
+
+In this set-up, there are many simulations, and only one reality. Thus, one
+of three things must hold.
+
+* Most civilizations cannot simulate self-aware beings.
+* Most civilizations can simulate self-aware beings, but choose not to.
+* Most civilizations can and do simulate self-aware beings.
+
+And, if the last holds true, we are very likely living in a simulated world,
+not a real one.
+
+I accept this argument, and propose a new corollary. It goes like this: we're
+probably a simulation, but who gives a shit? It's real to me.
+
+
+
+\*\*\*
+{: .centered }
