@@ -23,8 +23,8 @@ Venmo.
 
 We can interpret these payments as a weighted directed graph.
 People are vertices, and if Alice owes $$\$x$$ to Bob, there is an
-edge of weight $$x$$ from Alice to Bob. The situation above can
-be expressed by this graph.
+edge of weight $$x$$ from Alice to Bob. The situation from the previous
+paragraph can be expressed by this graph.
 
 ![First payment graph](/public/may10/graph1.png)
 {: .centered }
@@ -63,3 +63,129 @@ giving the final payment graph.
 
 Pretty neat, right? We've simplified the graph down to a single payment. We've
 also shown how a tool that does this automatically could be useful.
+
+This raises an interesting question. How would you solve the Splitwise problem
+in general? The exact problem formulation is below.
+
+> Let $$G = (V,E)$$ be a weighted directed graph. Given $$G$$, construct
+> an equivalent graph $$G'$$ such that every vertex $$v$$ receives/gives the
+> same amount of money it would in $$G$$, and $$G'$$ has as few edges
+> as possible.
+
+In this post, I'll explore how I found out this problem is NP-Complete.
+
+
+Flow Representation
+--------------------------------------------------
+
+My first intution was that the Splitwise problem was very similar to a
+network flow problem. You want to minimize the cost (in this case the number
+of edges) needed to send money to everyone else.
+
+This motivated looking at the [min-cost flow problem](https://en.wikipedia.org/wiki/Minimum-cost_flow_problem).
+In the min-cost flow problem, for every edge $$(u,v)$$ it costs $$c$$ to send
+one unit for flow from $$u$$ to $$v$$. In the previous example, reducing
+the number of edges often breaks down into minimize the amount of money
+flowing through the system.
+
+![5th payment graph](/public/may10/graph5.png)
+{: .centered }
+
+The system on the left has $$20$$ total flow, while the system on the right has
+$$10$$ total flow. Assuming all edges cost the same to travel through, the
+latter graph is cheaper.
+
+Min-cost flow is solvable through linear programming, but it wasn't obvious
+that reducing the cost of the flow was the same as reducing the number of edges.
+
+
+A Greedy Algorithm
+------------------------------------------------------
+
+Min-cost flow didn't fit very well. Note that in flow problems, we assume only
+certain edges of the graph exist, or that only some pairs of people $$u,v$$
+can send things to one another. In the Splitwise problem, anyone can send money
+to anybody else.
+
+So, I tried looking from a different angle. Instead of trying to reduce existing
+edges, let's figure out how much everybody should pay, then add the edges ourselves.
+Given a graph $$G = (V,E)$$, we can compute everyone's balance by iterating
+over all edges.
+
+To minimize the number of edges, one natural idea is to send as much money
+as possible in every transaction. This motivates the following algorithm.
+
+1. Read the input $$(V, E)$$ to compute the net balance at the end of payment.
+2. While someone owes money to somebody else:
+3. &nbsp; &nbsp; &nbsp; &nbsp; Find the person $$v_{max}$$ who owes the most
+4. &nbsp; &nbsp; &nbsp; &nbsp; Find the person $$v_{min}$$ who should receive the most.
+5. &nbsp; &nbsp; &nbsp; &nbsp; Have $$v_{max}$$ send as much money as possible to $$v_{min}$$.
+6. &nbsp; &nbsp; &nbsp; &nbsp; Update everyone's net balance.
+
+Here's an example run. Parties $$P_1,P_2,P_3,P_4$$ owe $1,$2,$3,$4 respectively,
+and parties $$P_5,P_6$$ should receive $5 each. The outputted set of edges is
+
+* $$P_4$$ sends $4 to $$P_5$$
+* $$P_3$$ sends $3 to $$P_6$$. (At this point, $$P_6$$ is owed $5 and $$P_5$$ is owed $1, so $$P_6$$ gets money first.)
+* $$P_2$$ sends $2 to $$P_6$$. ($$P_5$$ is owed $1, $$P_6$$ is owed $2 before this step.)
+* $$P_1$$ sends $1 to $$P_5$$.
+
+Every party that owes money must send money at least
+once, which gives a lower bound of $$4$$ transcations. This solution uses
+$$4$$ transactions, so it's optimal.
+
+On mentioning this problem to a friend, he pointed out the following
+example. Have $$P_1,P_2$$ owe $3, and $$P_3$$ owe $5. Then have $$P_4$$
+request $6 and $$P_5$$ request $5. The output is
+
+* $$P_3$$ sends $5 to $$P_4$$
+* $$P_2$$ sends $3 to $$P_5$$
+* $$P_1$$ sends $2 to $$P_5$$
+* $$P_1$$ sends $1 to $$P_4$$
+
+However, we only need $$3$$ transactions if $$P_3$$ sends money to $$P_5$$
+in the first step.
+
+He then supplied me a proof that Splitwise is NP-Complete, by showing
+the [partition problem](https://en.wikipedia.org/wiki/Partition_problem)
+reduces to Splitwise.
+
+
+NP-Completeness Proof
+----------------------------------------------------------------
+
+First, reformulate Splitwise as a decision problem.
+
+> Let $$G = (V,E)$$ be a weighted directed graph. Given $$G$$ and $$k$$, return
+> where there exists an equivalent graph $$G'$$ with at most $$k$$ edges.
+
+Given a $$G'$$, we can verify it's valid and has at most $$k$$ edges in polynomial
+time. So Splitwise is in NP.
+
+Next, construct a reduction from Partition to Splitwise. Given a list $$S$$
+of positive integers, we want to know if there is a partition $$S_1,S_2$$ such that
+both sets have the same total sum.
+
+Given $$S = \{a_1,a_2, \ldots, a_n\}$$, construct $$G$$ with
+$$n+2$$ vertices $$v_1,v_2,\ldots, v_{n+2}$$. Then, add edges such that
+$$V_i$$ owes a total of $$a_i$$, and $$v_{n+1}, v_{n+2}$$ request
+$$\frac{1}{2}\sum_{i=1}^n a_i$$ each.
+
+Any solution to this instance must have at least $$n$$ transactions since $$n$$
+people owe money. Furthermore, if the solution has exactly $$n$$ transactions,
+then $$v_i$$ must send $$a_i$$ for their transaction. The edges entering
+$$v_{n+1}$$ and $$v_{n+2}$$ correspond exactly to a partition of $$\{a_1,\ldots,a_n\}$$
+Thus, there is a solution with $$n$$ transactions if and only if a partition
+exists. Since Partition is NP-Complete, it follows that Splitwise is NP-Complete. $$\blacksquare$$
+
+
+Splitwise in Practice
+--------------------------------------------------------------------
+
+Splitwise may be NP-Complete, but it turns out the greedy algorithm gets
+pretty close to the optimal value in most cases. Based on a [Quora post
+by a Splitwise founder](https://www.quora.com/What-algorithm-or-solution-do-the-people-at-Splitwise-use-for-its-debt-simplification-feature),
+they use something similar.
+
+So, they're not solving NP-Complete problems on a regular basis. Oh well.
+I still think it's neat that an NP-Complete problem fell out at all.
