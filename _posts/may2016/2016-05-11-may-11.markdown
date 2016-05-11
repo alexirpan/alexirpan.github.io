@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 10 - From Gaming, Lead Me To Optimality"
+date:   2016-05-11 14:53:00 -0700
+---
+
+{% include gauntlet.md %}
+
+> From ignorance, lead me to truth.
+>
+> From darkness, lead me to light.
+>
+> From death, lead me to immortality.
+
+(Translation of the [Pavamāna Mantra](https://en.wikipedia.org/wiki/Brihadaranyaka_Upanishad#Pavam.C4.81na_Mantra))
+{: .centered }
+
+As a kid, I played a lot of video games. That hasn't really changed since
+college.
+
+PUT PICTURES HERE
+
+I also play a lot of board games. Right now, Dominion is the biggest
+one, but I've played a smattering of other ones, usually Eurogames.
+
+PICTURE HERE TOO.
+
+From a naive standpoint of time spent, this is a lot of time I could have put
+into other things. I used to think of video games as time sinks that I used to
+fill up my free time, but lately I've been noticing that
