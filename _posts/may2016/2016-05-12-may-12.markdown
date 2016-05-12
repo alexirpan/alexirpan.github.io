@@ -6,3 +6,88 @@ date:   2016-05-12 10:20:00 -0700
 
 {% include gauntlet.md %}
 
+Today, I watched a blindfolded man eat and critique Italian beef
+sandwiches.
+
+YOUTUBE EMBED
+
+Why did I do this?
+
+\*\*\*
+{: .centered }
+
+The first reason is simple. I was bored. My browser was already open to YouTube,
+and this video showed up in my recommendations. Make up whatever reason you
+want for why Alton Brown showed up in my video recommendations. Who knows.
+
+That's an okay explanation, but I'm not satisfied with it. Why did I choose to
+watch YouTube instead of opening a Steam game? Why did I click on that
+video instead of any of the other YouTube recommendations? When I think back
+on my actions, I assume that I always had a reason for doing it. This is true
+even if I don't know why I did something. In that case, it just means my
+subconscious influenced me in a certain way, and it's up to me to puzzle
+out the pieces.
+
+Let's consider a few hypotheses that might have played into my decision.
+
+
+The Novelty Hypothesis
+-----------------------------------------------------------------
+
+I'm not 100\% sure of this, but I'd guess most people don't spend their time
+watching blindfolded food critics eat sandwiches. Just a hunch.
+
+That makes this video special. How often have I seen blindfolded taste testing?
+Not very often. From an [exploration-exploitation]({% post_url 2016-05-02-may-2 %})
+perspective, that places a ton of value of watching it once. Maybe I am actually
+a huge fan of blindfolded taste-testing and didn't know it.
+
+However, by that logic I should be watching every video on YouTube, because
+I haven't seen anything quite like it yet. This explanation doesn't
+accuately incorporate my prior beliefs.
+
+I agree that novelty played a role in my decision. However, *I must have
+already had a prior belief that blindfolded taste testing would be
+worth watching,* or else I wouldn't have clicked it.
+
+Luckily, this is easier to explain.
+
+
+The Nostalgia Hypothesis
+------------------------------------------------------------------
+
+This video isn't of any food critic, it's of Alton Brown, host of Good
+Eats. I used to watch Good Eats as a kid, because
+
+* It taught the science behind cooking in a way that a kid could
+understand
+* I got to see Alton Brown cook delicious food. (This phenonmenon is
+known as food porn.)
+
+Nostalgia is a very powerful force. My past enjoyment from watching
+Good Eats must have made me interested in watching more Alton Brown
+videos.
+
+This is satisfying enough for me, but for completeness let's add one
+more detail.
+
+
+The Celebrity Hypothesis
+------------------------------------------------------------------
+
+I've watched some of Alton Brown's videos in the past. His first one
+was LINK. The second I watched was LINK, where he opens a champagne
+bottle with a saber.
+
+Again, these are entertaining videos. And that's the thing. Alton
+Brown is, at heart, an entertainer. He's a celebrity in the food world.
+I don't want to get into stardom theory, because my memory of it
+is fairly hazy, but you could call me a fan of his. The natural
+instinct of fandom is to watch everything related to the fandom,
+and thus, Alton Brown YouTube videos.
+
+It doesn't matter that I've never been to Chicago, and have no opinions
+on Italian beef sandwiches. If Alton Brown is giving a review, I'm going
+to find it interesting, because I trust his work to be good.
+
+Now if you'll excuse me, I'm hungry. Time to head to a sandwich place.
