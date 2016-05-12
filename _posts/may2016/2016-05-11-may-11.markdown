@@ -26,5 +26,49 @@ one, but I've played a smattering of other ones, usually Eurogames.
 PICTURE HERE TOO.
 
 From a naive standpoint of time spent, this is a lot of time I could have put
-into other things. I used to think of video games as time sinks that I used to
-fill up my free time, but lately I've been noticing that
+into other things. I used to think of video games as useless time sinks
+that I used for entertainment. Now, well, they're still time sinks. But they
+definitely weren't useless.
+
+CHECK GRAMMER
+
+\*\*\*
+{: .centered }
+
+First, I should explain my perspective on games, to clarify where I'm coming
+from. I promise to get less philosophical by the next section break.
+
+All games take place in their own world.
+
+That world follows certain rules. These are called the rules of the game.
+For example, baseball. There are two teams. There are four bases. There is
+a pitcher, and a short stop, and home runs and base stealing
+and strikes and outs. I don't know all the details because I don't watch
+baseball, but these are definitely terms baseball uses.
+
+The concepts in a world are then tied together by rules in that world.
+For worlds that come from games, these are the rules of the game.
+For example, three strikes and you're out in baseball.
+
+So, games are viewable as a set of rules. These rules define the world.
+Winning a game is the same as performing actions that are sanctioned by
+the rules such that those actions lead towards an objective.
+
+\*\*\*
+{: .centered }
+
+With that out of the way, I can explain why games were and are important
+to me. **The rules of a game are much simpler than the rules of the real world.**
+Furthermore, the objective in a game is also much, much simpler than that of
+the real world.
+
+This gives me a much better idea of what to do. In the real world, I'm a pretty
+quiet person. Put me in a game of Resistance or Mafia, and I'll talk a bunch.
+What changed? In Resistance or Mafia, the objectives are very simple: pretend
+you aren't a spy/mafia, or find the spies/mafia. The rules of these social
+deduction games place heavy constraints on the world, and within those constraints
+it is massively easier for me to gauge social behavior and guess at other people's
+thought processes.
+
+This then leads into my next point. **When the rules the world follows are simpler,
+it's easier to act optimally.**
