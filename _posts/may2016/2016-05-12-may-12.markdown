@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 12 - I Just Watched Someone Eat a Sandwich While Blindfolded"
-date:   2016-05-12 10:20:00 -0700
+date:   2016-05-12 16:45:00 -0700
 ---
 
 {% include gauntlet.md %}
@@ -16,10 +16,7 @@ two most popular Italian beef sandwiches.
 
 Why did I do this?
 
-\*\*\*
-{: .centered }
-
-The first reason is simple. I was bored. My browser was already open to YouTube,
+A simple explanation is that I was bored. My browser was already open to YouTube,
 and this video appeared in my recommendations.
 
 That's an okay explanation, but I'm not satisfied with it. Why did I choose to
@@ -30,10 +27,10 @@ even if I don't know why I did something. In that case, it just means my
 subconscious influenced me in a certain way, and it's up to me to puzzle
 out the pieces.
 
-Let's consider a few hypotheses that might have played into my decision.
+Let's consider a few explanations that might have played into my decision.
 
 
-The Novelty Hypothesis
+The Novelty Explanation
 -----------------------------------------------------------------
 
 I'm not 100% sure of this, but I'd guess most people don't spend their time
@@ -54,7 +51,7 @@ would be worth watching.*
 Luckily, it's easier to explain where that belief came from.
 
 
-The Nostalgia Hypothesis
+The Nostalgia Explanation
 ------------------------------------------------------------------
 
 This video isn't of any food critic, it's of Alton Brown, host of Good
@@ -72,7 +69,7 @@ This satisfies my curiosity by enough, but for completeness let's add one
 more detail.
 
 
-The Celebrity Hypothesis
+The Celebrity Explanation
 ------------------------------------------------------------------
 
 I've watched some of Alton Brown's videos in the past. See
