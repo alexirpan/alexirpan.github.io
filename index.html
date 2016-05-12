@@ -23,10 +23,10 @@ layout: default
   <!--- Pagination links -->
   <div class="pagination">
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="older-posts">Older posts</a>
+      <a href="{{ paginator.next_page_path }}" class="older-posts">&larr; Older posts</a>
     {% endif %}
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="newer-posts">Newer posts</a>
+      <a href="{{ paginator.previous_page_path }}" class="newer-posts">Newer posts &rarr;</a>
     {% endif %}
   </div>
 </div>
