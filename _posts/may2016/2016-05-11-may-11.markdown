@@ -1,0 +1,109 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 11 - From Gaming, Lead Me To Optimality"
+date:   2016-05-11 20:20:00 -0700
+---
+
+{% include gauntlet.md %}
+
+> From ignorance, lead me to truth.
+>
+> From darkness, lead me to light.
+>
+> From death, lead me to immortality.
+
+(Translation of the [Pavamāna Mantra](https://en.wikipedia.org/wiki/Brihadaranyaka_Upanishad#Pavam.C4.81na_Mantra))
+{: .centered }
+
+As a kid, I played a lot of games. That hasn't really changed since
+college.
+
+In [Dustforce](http://dustforce.com/), I've logged 316 hours.
+
+In [The Binding of Isaac: Rebirth](http://store.steampowered.com/app/250900/), I've logged 212 hours.
+
+In [Dominion](https://boardgamegeek.com/boardgame/36218/dominion), I don't know how many hours I've spent, but I know I've played
+about 3500 games.
+
+This is a ton of time, to put things mildly. It's so many hours! I
+could be doing so many more
+productive things. And sure, that's true, but playing games is fun, I need
+ways to relax, and playing games doesn't automatically make you a lazy person.
+
+In fact, far from it. Despite all the time I've spent, I'd say gaming has been
+a net positive force in my life.
+
+\*\*\*
+{: .centered }
+
+First, I should explain my viewpoint on games, to clarify where I'm coming
+from. We're diving into philosophy land here - hold on to your hats.
+
+All games take place in their own world.
+
+That world follows certain rules. For example, baseball. There are two teams.
+There are four bases. There is a pitcher, and a shortstop, and so on.
+There are strikes and outs and home runs.
+
+This is true of all worlds, but for worlds constructed by games, *the rules
+of the game are the rules of the world*. When you get three strikes, you're
+out. This is a fact that you cannot argue against. It's how the world
+works.
+
+In this viewpoint, playing a game is the same as taking actions in the world,
+game strategy is the same as task planning, and winning
+a game is the same as executing a series of actions that maximizes your
+win percentage.
+
+\*\*\*
+{: .centered }
+
+When viewed this way, deciding whether to buy Park Place in Monopoly
+is similar to choosing where to go for lunch, or what job to pick. However, there's one
+key difference. **Game worlds are much simpler than the real world.**
+
+In the real world, I'm a pretty quiet person.
+But put me in a game of [Resistance](https://en.wikipedia.org/wiki/The_Resistance_%28game%29), and I'll talk a bunch.
+What changes? If I'm playing Resistance, everybody's context
+changes. The objective is very simple: find the spies, or pretend you aren't
+a spy. The rules of Resistance place very heavy constraints on everyone's
+behavior, and within those constraints it's massively easier for me to
+judge social behavior and make reads on whether someone is hiding
+something or not. And I don't have to worry about what to talk about, because
+everyone's only going to talk about Resistance. That's something I know.
+
+This leads into my next point. **When the rules the world follows are simpler,
+it's easier to act optimally.** In Dominion, one of the first lessons
+people teach is that all cards are judged relative to one another.
+What matters is not how impressive a card looks, but how impressive it looks
+compared to cards of similar cost.
+
+You may recognize this as a textbook example of opportunity cost.
+
+I've seen other life lessons over the years. A simple strategy can be better
+than a complicated one. Dominion is zero-sum, so you don't need to be good,
+you just need to be better than your opponent.
+The thousands of Dominion games I've played have thrown me into tens
+of thousands of situations where I've gotten to practice implementing these
+ideas. Sure, the context is different, but the core skill is the same.
+
+About two weeks ago, I was playing a game where I had fallen behind due to
+bad shuffles. I paused to take stock. I needed a lucky break to have a shot.
+After thinking for a bit, I wagered the entire game on drawing cards in
+exactly the order I needed. It was about a 10% chance of happening, and if it
+went wrong I'd be so behind that I'd have to resign.
+
+The choice wasn't intuitive, but when I envisioned the worlds where
+I won the game, they all needed that 10% chance to come true. So I risked it
+all, and went for it.
+
+And it did.
+
+And I won.
+
+On one hand, it didn't feel like I deserved to win. On the other hand,
+*I won*. I made the perfect calculated risk, and it paid off.
+
+Yes, I could have been doing something productive instead, but you know
+what? I wouldn't trade that victory for anything else I could have done in
+those 15 minutes.
