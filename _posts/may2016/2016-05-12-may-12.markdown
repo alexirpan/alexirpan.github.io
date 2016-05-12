@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 12 - ????"
+date:   2016-05-12 10:20:00 -0700
+---
+
+{% include gauntlet.md %}
+
