@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 11 - From Gaming, Lead Me To Optimality"
-date:   2016-05-11 14:53:00 -0700
+date:   2016-05-11 20:20:00 -0700
 ---
 
 {% include gauntlet.md %}
@@ -18,11 +18,11 @@ date:   2016-05-11 14:53:00 -0700
 As a kid, I played a lot of games. That hasn't really changed since
 college.
 
-In Dustforce, I've logged 316 hours.
+In [Dustforce](http://dustforce.com/), I've logged 316 hours.
 
-In Binding of Isaac: Rebirth, I've logged 212 hours.
+In [The Binding of Isaac: Rebirth](http://store.steampowered.com/app/250900/), I've logged 212 hours.
 
-In Dominion, I don't know how many hours I've spent, but I know I've played
+In [Dominion](https://boardgamegeek.com/boardgame/36218/dominion), I don't know how many hours I've spent, but I know I've played
 about 3500 games.
 
 This is a ton of time, to put things mildly. It's so many hours! I
@@ -63,7 +63,7 @@ is similar to choosing where to go for lunch, or what job to pick. However, ther
 key difference. **Game worlds are much simpler than the real world.**
 
 In the real world, I'm a pretty quiet person.
-But put me in a game of Resistance, and I'll talk a bunch.
+But put me in a game of [Resistance](https://en.wikipedia.org/wiki/The_Resistance_%28game%29), and I'll talk a bunch.
 What changes? If I'm playing Resistance, everybody's context
 changes. The objective is very simple: find the spies, or pretend you aren't
 a spy. The rules of Resistance place very heavy constraints on everyone's
@@ -85,25 +85,25 @@ than a complicated one. Dominion is zero-sum, so you don't need to be good,
 you just need to be better than your opponent.
 The thousands of Dominion games I've played have thrown me into tens
 of thousands of situations where I've gotten to practice implementing these
-ideas. Sure, the context is different, but the core skill is the same. I wouldn't
-be as practiced with opportunity cost as I am if it weren't for Dominion.
+ideas. Sure, the context is different, but the core skill is the same.
 
-About two weeks ago, I was playing Dominion, and had fallen behind due to
-bad shuffles. Eventually, I wagered the entire game on drawing cards in
-exactly the right order. It was about a 10% chance of happening, and if it
+About two weeks ago, I was playing a game where I had fallen behind due to
+bad shuffles. I paused to take stock. I needed a lucky break to have a shot.
+After thinking for a bit, I wagered the entire game on drawing cards in
+exactly the order I needed. It was about a 10% chance of happening, and if it
 went wrong I'd be so behind that I'd have to resign.
 
-The choice wasn't intuitive, but when I tried envisioning the worlds where
-I won the game, I needed that 10% chance to come true. So I risked it all
-on assuming it would happen, and went for it.
+The choice wasn't intuitive, but when I envisioned the worlds where
+I won the game, they all needed that 10% chance to come true. So I risked it
+all, and went for it.
 
 And it did.
 
 And I won.
 
 On one hand, it didn't feel like I deserved to win. On the other hand,
-*I won*. I saw the state of the world, made a perfect play, *and I won.*
+*I won*. I made the perfect calculated risk, and it paid off.
 
-And yes, I could have been doing something productive instead, but you know
-what? I wouldn't trade that feeling for any productivity in the world.
-I play a lot of games, and that's okay.
+Yes, I could have been doing something productive instead, but you know
+what? I wouldn't trade that victory for anything else I could have done in
+those 15 minutes.
