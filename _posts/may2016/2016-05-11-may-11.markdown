@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Blogging Gauntlet: May 10 - From Gaming, Lead Me To Optimality"
+title:  "The Blogging Gauntlet: May 11 - From Gaming, Lead Me To Optimality"
 date:   2016-05-11 14:53:00 -0700
 ---
 
@@ -15,60 +15,95 @@ date:   2016-05-11 14:53:00 -0700
 (Translation of the [Pavamāna Mantra](https://en.wikipedia.org/wiki/Brihadaranyaka_Upanishad#Pavam.C4.81na_Mantra))
 {: .centered }
 
-As a kid, I played a lot of video games. That hasn't really changed since
+As a kid, I played a lot of games. That hasn't really changed since
 college.
 
-PUT PICTURES HERE
+In Dustforce, I've logged 316 hours.
 
-I also play a lot of board games. Right now, Dominion is the biggest
-one, but I've played a smattering of other ones, usually Eurogames.
+In Binding of Isaac: Rebirth, I've logged 212 hours.
 
-PICTURE HERE TOO.
+In Dominion, I don't know how many hours I've spent, but I know I've played
+about 3500 games.
 
-From a naive standpoint of time spent, this is a lot of time I could have put
-into other things. I used to think of video games as useless time sinks
-that I used for entertainment. Now, well, they're still time sinks. But they
-definitely weren't useless.
+This is a ton of time, to put things mildly. It's so many hours! I
+could be doing so many more
+productive things. And sure, that's true, but playing games is fun, I need
+ways to relax, and playing games doesn't automatically make you a lazy person.
 
-CHECK GRAMMER
+In fact, far from it. Despite all the time I've spent, I'd say gaming has been
+a net positive force in my life.
 
 \*\*\*
 {: .centered }
 
-First, I should explain my perspective on games, to clarify where I'm coming
-from. I promise to get less philosophical by the next section break.
+First, I should explain my viewpoint on games, to clarify where I'm coming
+from. We're diving into philosophy land here - hold on to your hats.
 
 All games take place in their own world.
 
-That world follows certain rules. These are called the rules of the game.
-For example, baseball. There are two teams. There are four bases. There is
-a pitcher, and a short stop, and home runs and base stealing
-and strikes and outs. I don't know all the details because I don't watch
-baseball, but these are definitely terms baseball uses.
+That world follows certain rules. For example, baseball. There are two teams.
+There are four bases. There is a pitcher, and a shortstop, and so on.
+There are strikes and outs and home runs.
 
-The concepts in a world are then tied together by rules in that world.
-For worlds that come from games, these are the rules of the game.
-For example, three strikes and you're out in baseball.
+This is true of all worlds, but for worlds constructed by games, *the rules
+of the game are the rules of the world*. When you get three strikes, you're
+out. This is a fact that you cannot argue against. It's how the world
+works.
 
-So, games are viewable as a set of rules. These rules define the world.
-Winning a game is the same as performing actions that are sanctioned by
-the rules such that those actions lead towards an objective.
+In this viewpoint, playing a game is the same as taking actions in the world,
+game strategy is the same as task planning, and winning
+a game is the same as executing a series of actions that maximizes your
+win percentage.
 
 \*\*\*
 {: .centered }
 
-With that out of the way, I can explain why games were and are important
-to me. **The rules of a game are much simpler than the rules of the real world.**
-Furthermore, the objective in a game is also much, much simpler than that of
-the real world.
+When viewed this way, deciding whether to buy Park Place in Monopoly
+is similar to choosing where to go for lunch, or what job to pick. However, there's one
+key difference. **Game worlds are much simpler than the real world.**
 
-This gives me a much better idea of what to do. In the real world, I'm a pretty
-quiet person. Put me in a game of Resistance or Mafia, and I'll talk a bunch.
-What changed? In Resistance or Mafia, the objectives are very simple: pretend
-you aren't a spy/mafia, or find the spies/mafia. The rules of these social
-deduction games place heavy constraints on the world, and within those constraints
-it is massively easier for me to gauge social behavior and guess at other people's
-thought processes.
+In the real world, I'm a pretty quiet person.
+But put me in a game of Resistance, and I'll talk a bunch.
+What changes? If I'm playing Resistance, everybody's context
+changes. The objective is very simple: find the spies, or pretend you aren't
+a spy. The rules of Resistance place very heavy constraints on everyone's
+behavior, and within those constraints it's massively easier for me to
+judge social behavior and make reads on whether someone is hiding
+something or not. And I don't have to worry about what to talk about, because
+everyone's only going to talk about Resistance. That's something I know.
 
-This then leads into my next point. **When the rules the world follows are simpler,
-it's easier to act optimally.**
+This leads into my next point. **When the rules the world follows are simpler,
+it's easier to act optimally.** In Dominion, one of the first lessons
+people teach is that all cards are judged relative to one another.
+What matters is not how impressive a card looks, but how impressive it looks
+compared to cards of similar cost.
+
+You may recognize this as a textbook example of opportunity cost.
+
+I've seen other life lessons over the years. A simple strategy can be better
+than a complicated one. Dominion is zero-sum, so you don't need to be good,
+you just need to be better than your opponent.
+The thousands of Dominion games I've played have thrown me into tens
+of thousands of situations where I've gotten to practice implementing these
+ideas. Sure, the context is different, but the core skill is the same. I wouldn't
+be as practiced with opportunity cost as I am if it weren't for Dominion.
+
+About two weeks ago, I was playing Dominion, and had fallen behind due to
+bad shuffles. Eventually, I wagered the entire game on drawing cards in
+exactly the right order. It was about a 10% chance of happening, and if it
+went wrong I'd be so behind that I'd have to resign.
+
+The choice wasn't intuitive, but when I tried envisioning the worlds where
+I won the game, I needed that 10% chance to come true. So I risked it all
+on assuming it would happen, and went for it.
+
+And it did.
+
+And I won.
+
+On one hand, it didn't feel like I deserved to win. On the other hand,
+*I won*. I saw the state of the world, made a perfect play, *and I won.*
+
+And yes, I could have been doing something productive instead, but you know
+what? I wouldn't trade that feeling for any productivity in the world.
+I play a lot of games, and that's okay.
