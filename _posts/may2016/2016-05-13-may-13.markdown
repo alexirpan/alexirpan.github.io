@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "The Blogging Gauntlet: May 13 - ?????"
-date:   2016-05-13 12:17:00 -0700
+title:  "The Blogging Gauntlet: May 13 - Appearing Skilled and Being Skilled Are Very Different"
+date:   2016-05-13 14:33:00 -0700
 ---
 
 {% include gauntlet.md %}
@@ -57,7 +57,7 @@ I've never heard them talk about.
 
 I feel this issue is exacerbated with introverted people, who generally don't
 talk about themselves, and with women, who generally don't play up
-their accomplishments as much as men do. It took me an embarassingly long time
+their accomplishments as much as men do. It took me an embarrassingly long time
 to realize most of my Khan Academy intern class had done more
 functional programming than me.
 
