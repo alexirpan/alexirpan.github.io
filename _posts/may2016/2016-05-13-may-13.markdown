@@ -1,0 +1,92 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 13 - Appearing Skilled and Being Skilled Are Very Different"
+date:   2016-05-13 14:33:00 -0700
+---
+
+{% include gauntlet.md %}
+
+I am bad at chess.
+
+When I say I'm bad at chess, I mean I've played at most 10 games of
+chess my whole life. Anybody who's learned the slightest bit of chess
+will wipe the floor with me.
+
+When other people say they're bad at chess, it could mean anything.
+I've heard novices say they're bad at chess, but I've also heard a master
+say he's bad at chess. I've heard someone say they're bad at chess, then
+play against that master and almost win. I've seen someone say they're
+awful, then win with a handicap of a queen and two rooks.
+
+When everyone says they're bad at chess regardless of their
+skill level, hearing "I'm bad at chess" gives zero information.
+You can't learn their skill level unless you watch them play a game.
+
+Yesterday, I went to a board game cafe. One of the staff members recommended
+we play Dominion. I mentioned I played a lot online, and he said he played
+a few games back in the day. Two sentences later, I learned "a few" meant
+1500 games.
+
+I'm not going to talk about why people downplay their accomplishments, because
+you could read the [imposter syndrome Wikipedia page](https://en.wikipedia.org/wiki/Impostor_syndrome)
+instead.
+What I want to talk about is the consequences of this kind of behavior.
+
+\*\*\*
+{: .centered }
+
+One day, I was at a gathering in a friend's house, and someone proposed playing
+[Codenames](https://boardgamegeek.com/boardgame/178900/codenames).
+I hadn't played Codenames before, but from the reviews it sounded great.
+I immediately went into teaching mode, setting up the board and
+explaining the rules.
+
+We started playing the game, and on the 4th round someone mentioned an
+exceptionally good clue from a game she played last week. Someone else then
+wanted to clarify what variants we were using.
+Neither of them said they had played Codenames before; it was only
+revealed well into the game itself.
+
+There are couple factors at play here. Once I got going, there was natural
+inertia to let me continue with my explanation. And during the game itself,
+everyone was focused on playing the game, not on explaining their
+experience with the game.
+
+Still, I wonder how many of my friends are secretly experts in subjects
+I've never heard them talk about.
+
+I feel this issue is exacerbated with introverted people, who generally don't
+talk about themselves, and with women, who generally don't play up
+their accomplishments as much as men do. It took me an embarrassingly long time
+to realize most of my Khan Academy intern class had done more
+functional programming than me.
+
+It's shown up in this very blog. People have told me they liked my blog posts,
+but I don't see them as especially interesting or special.
+I know people who have better thoughts, more insightful thoughts, relayed
+through private conversations and real life instead of posted on the Internet
+for all to see.
+
+To quote Neil Geiman,
+
+> Everybody has a secret world inside of them. I mean everybody. All of the people in the whole world, I mean everybody — no matter how dull and boring they are on the outside. Inside them they've all got unimaginable, magnificent, wonderful, stupid, amazing worlds... Not just one world. Hundreds of them. Thousands, maybe.
+
+(From *The Sandman*)
+{: .centered }
+
+The difference, then, is that I try to wear my thoughts on the outside. The
+outside world won't know of a friend's brilliant insights into the privacy vs
+security debate, or their research on post-quantum cryptography, but
+it will think I'm good at cryptography because I wrote [one blog post
+on garbled circuits]({% post_url 2016-02-11-secure-computation %}).
+It hides that I've only taken two crypto courses, had to struggle through
+both, and am woefully uninformed about the wider state of cryptography
+research.
+
+The world is biased towards people who do things that make them look special,
+not towards people who are special. I'm worried about the gap between the two,
+and what it could lead to.
+
+Finally, a closing thought. Turn these ideas back onto this post. Did this
+post give you a new perspective? Or did it only give words to ideas you
+already had?
