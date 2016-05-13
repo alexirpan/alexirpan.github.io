@@ -4,30 +4,37 @@ title: About
 permalink: /about/
 ---
 
-*Last updated March 5, 2016.*
+*Last updated May 12, 2016.*
 
-I'm a fourth year undergraduate at UC Berkeley majoring in computer science.
-Currently, I do undergraduate research in the [Berkeley Artificial Intelligence
+I'm about to graduate from UC Berkeley, majoring in computer science.
+At Berkeley, I did undergraduate research in the [Berkeley Artificial Intelligence
 Research (BAIR) Lab](http://bair.berkeley.edu/),
 mentored by [Pieter Abbeel](http://www.cs.berkeley.edu/~pabbeel/) and
 working most closely with [John Schulman](http://www.eecs.berkeley.edu/~joschu/).
 My main research area is deep reinforcement learning, which combines
 deep neural nets and reinforcement learning to learn good strategies from
 minimal domain knowledge.
-In the past, I was a TA for [CS 70](http://inst.eecs.berkeley.edu/~cs70),
+
+In 2016, I was an Honorable Mention for the NSF Graduate Research Fellowship
+Program. Starting this June,
+I will be working at Google, as part of the first Google Brain Residency
+Program.
+
+In the past, I interned at Robinhood, Facebook, and Khan Academy.
+I was also a TA for [CS 70](http://inst.eecs.berkeley.edu/~cs70),
 the introductory discrete math and probability course.
 
-As someone who entered Berkeley as a math major, I've always had a fondness
-for theoretical computer science. Besides machine learning, my other technical
-interests are a grab bag of complexity theory, theoretical cryptography, and mathematical logic.
+As someone who started as a math major, I've always liked
+theoretical computer science. Outside machine learning, I enjoy
+complexity theory, theoretical cryptography, and mathematical logic.
 
-This site is also my personal blog. I post about anything I want to
-write, meaning posts range from explanations of research papers to dumb jokes.
-I post whenever I have the time, so unfortunately I don't post very often.
-School takes priority.
+This site doubles as my personal blog. I write whatever I feel like writing
+about, meaning posts range from explanations of research papers to observations
+of my life and dumb jokes.
+I post whenever I have the time to, meaning not very often.
 
-My non-technical interests are all over the place, but I usually get
-very deep into a few interests at a time. Right now, the biggest ones
+For non-technical interests, I get very deep into a few things
+at a time. Right now, the biggest ones
 are My Little Pony, competitive Dominion, Super Smash Bros., and puzzle
 hunts.
 
