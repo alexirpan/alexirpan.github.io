@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 14 - Your Next First Day"
+date:   2016-05-14 16:49:00 -0700
+---
+
+{% include gauntlet.md %}
+
