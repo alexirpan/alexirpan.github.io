@@ -6,3 +6,57 @@ date:   2016-05-14 16:49:00 -0700
 
 {% include gauntlet.md %}
 
+I graduated from college today.
+
+It's not my usual style, but on this of all days, I'm going
+to try something different.
+
+\*\*\*
+{: .centered }
+
+Today was the last day of our undergrad.
+
+There were previous lasts in this semester. The last midterm,
+the last final. The last spring break, the last club meeting.
+The last time we'll see each other in real life.
+
+But this last is different from the rest. It is our last
+day as students of this university. As the days ticked
+by, we realized that time was running short, and that soon
+we would be walk different paths.
+
+Our commencement was a symbol of everything we went through
+these past four years. Or for some, perhaps they only spent
+three. By itself, commencement is just a ceremony, but in
+context it serves as the capstone of not just our
+academic lives, but our personal ones as well.
+That gives it a weight that few other moments in our life
+can have.
+
+We'll remember it in different ways. Some will remember the
+excellent speech Sheryl Sandberg gave, which received
+press coverage within hours. Others won't remember
+commencement itself, or may not have attended, but they'll
+remember their college experience.
+After spending years living and breathing the college life,
+it's impossible to leave it without at least one special
+moment.
+
+This may have been our last day of our undergrad, but it
+is not our last last day. There will be other last days.
+The last day of our job. The last day before our marriage,
+or perhaps the last day *of* our marriage.
+All things come to an end. I sincerely hope your
+last last day is far, far away.
+
+However, just as today is a day of lasts, it is also
+a day of firsts. We have to leave college, whether we want
+to or not. The point of undergrad is not to stay in
+undergrad for the rest of our lives. The point is to learn
+something new. It could be something technical, or it could
+be something about ourselves. In either case, we incubate
+with others just like us, laughing at how naive we were
+in high school, and confiding how naive we still feel
+about the real world.
+
+
