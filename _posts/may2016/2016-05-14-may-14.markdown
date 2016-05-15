@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 14 - Your Next First Day"
-date:   2016-05-14 16:49:00 -0700
+date:   2016-05-14 20:26:00 -0700
 ---
 
 {% include gauntlet.md %}
@@ -14,12 +14,13 @@ to try something different.
 \*\*\*
 {: .centered }
 
-In this semester, we have faced plenty of lasts. The last
-midterm. The last final. The last time
-we'll have to dodge flyers on Sproul.
+Today is our last day as undergraduates of this university.
 
-But this last is different from the rest. It is our last
-day as undergraduates of this university. It's been a long
+We've faced plenty of lasts this semester. The last
+midterm. The last final. The last time
+we had to dodge flyers on Sproul.
+
+But this last is different from the rest. It's been a long
 time coming, and yet for many of us it felt like it came
 too soon. As the days passed inexorably by, we realized,
 perhaps for the first time, that time was running short,
@@ -44,25 +45,25 @@ After spending years living and breathing college,
 it's impossible to leave without one special memory.
 
 There will be other last days, and they won't all
-be pretty. It may be the last day of our job. Or, the last day of our marriage.
-Perhaps more worryingly, it could be the last day we're even in a
-relationship. It's part of life, that all things come to an end, and let me just
+be pretty. It may be the last day of our job. Or, the last day we ever
+talked to a close friend.
+It's part of life, that all things come to an end, and let me just
 say that it's going to suck. (Although for the record, I hope your
-last last day never comes to pass, and that if you knew someone who had their
+last last day never comes to pass. And that if you knew someone who had their
 last last day, I'm sorry.)
 
-I'll stop being so depressing. Just as today is a day of lasts, it is also
+However, just as today is a day of lasts, today is also
 a day of firsts. Over the past four years, we've taken great strides
 to becoming the people we've always wanted to be.
 Like chickens, we incubated inside our little eggs, bouncing from class
 to class.
 We laughed at the worries we had in high school, sobbed when we were thrown
-more than we could handle, and did both when we climbed back into the light.
-Together, we grew into the people we are today.
+more than we could handle, and did both when we climbed out of the hole we
+had fallen into.
 
 Whether we want to or not, we must hatch from
-our shells, pierce the veil, and look out onto the
-outside world. It's like I said before.
+our shells, pierce the veil, and enter the real world.
+It's like I said before.
 All things come to an end, and college is no exception.
 
 And you know what?
@@ -74,12 +75,16 @@ We'll keep walking down the road we lay for ourselves, brick by
 brick. We'll keep living, and keep learning. We may not be in college
 anymore, but in our hearts we'll always be students.
 
-Tomorrow is our next first day. The California sun will shine down on a
+Together, we've grown into the people who will take the world by storm.
+After we've made our mark, the world will never be the same.
+
+Tomorrow is our next first day. The Sun will shine down on a
 wild, unfriendly world. And we'll look out on that vast landscape, baring
-our heads up high. Together, we will march unflinchingly into the next
+our heads up high. Together, we march unflinchingly into the next
 page of our story.
 
-I can't wait to see what we will do.
+I have no idea what it'll look like, but it'll be interesting. It'll be
+beyond our craziest dreams. And I can't wait to see what we'll do.
 
 \*\*\*
 {: .centered }
