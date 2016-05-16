@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 15 - Harry Potter Compression Algorithms"
-date:   2016-05-15 15:53:00 -0700
+date:   2016-05-15 20:10:00 -0700
 ---
 
 {% include gauntlet.md %}
@@ -32,7 +32,7 @@ In response, my friend quoted Ollivander.
 (*Harry Potter and the Sorcerer's Stone*. But you knew that already, didn't you?)
 {: .centered }
 
-Then I replied with this.
+I replied with this.
 
 ![Conversation](/public/may15/conversation.png)
 {: .centered }
