@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 16 - Harry Potter Compression Algorithms"
+date:   2016-05-16 14:24:00 -0700
+---
+
+{% include gauntlet.md %}
+
