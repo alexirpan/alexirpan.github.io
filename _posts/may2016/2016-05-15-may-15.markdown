@@ -1,8 +1,95 @@
 ---
 layout: post
-title:  "The Blogging Gauntlet: May 15 - ????????"
+title:  "The Blogging Gauntlet: May 15 - Harry Potter Compression Algorithms"
 date:   2016-05-15 15:53:00 -0700
 ---
 
 {% include gauntlet.md %}
 
+Two months ago, I was at a dinner where we started talking about
+[character alignments](https://en.wikipedia.org/wiki/Alignment_%28Dungeons_%26_Dragons%29).
+To explain why lawful-vs-chaotic was a different axis from good-vs-evil,
+we said "Umbridge is an example of Lawful Evil,
+and The Joker is an example of Chaotic Evil."
+
+[![Harry Potter Alignments](/public/may15/harry-potter-alignments.jpg)](/public/may15/harry-potter-alignments.jpg)
+{: .centered }
+
+There's nothing a good character alignment chart can't add to.
+{: .centered }
+
+A month after that, I was relaying a story about bigoted geniuses. A graduate
+student wrote a compiler which automatically inserted anti-Semitic
+messages into any code it compiled. This behavior was then hidden under
+several layers of code generation, making it especially difficult to
+remove the anti-Semitic messages while keeping the rest of the
+compiling ability intact.
+
+In response, my friend quoted Ollivander.
+
+> He-Who-Must-Not-Be-Named did great things - terrible, yes, but great.
+
+(*Harry Potter and the Sorcerer's Stone*. But you knew that already, didn't you?)
+{: .centered }
+
+Then I replied with this.
+
+![Conversation](/public/may15/conversation.png)
+{: .centered }
+
+In my generation, it's assumed everyone has read the
+*Harry Potter* books. They're just that popular. Importantly, it goes
+further than that. **The knowledge
+that _Harry Potter_ is well known is itself well known.**
+Almost everyone knows *Harry Potter*, and everyone knows almost
+everyone knows *Harry Potter*.
+
+Thus, *Harry Potter* can be used as a compression algorithm for conversation.
+If you want to explain something that's similar to something from *Harry Potter*,
+you can cite the relevant scenario/character, and people will usually follow
+you. And usually, this is much shorter than explaining it for yourself.
+The D&D Player Handbook spends two paragraphs explaining Lawful Evil,
+but in that dinner we explained it in a single sentence.
+
+\*\*\*
+{: .centered }
+
+You can apply a similar argument to anything that's common knowledge. Memes, movie
+quotes, and world history are all fair game, assuming they are well known,
+and it is well known that they are well known.
+
+What makes *Harry Potter* special is
+its perfect storm of length and popularity. Because it's so long and has such
+a huge fandom, *Harry Potter* is an especially large source of concepts.
+If I wanted to explain test anxiety, I could quote how Hermione acts during
+final exams. If I wanted to explain the trope of the Enigmatic Old Wizard,
+I could use Dumbledore's actions.
+
+One of my classes this semester talked about [impact evaluation](https://en.wikipedia.org/wiki/Impact_evaluation).
+Paraphrased, the TA said, "In the ideal scenario, we would perform a study,
+measure results, use a Time-Turner, then don't do the study and measure the
+difference between the two worlds." This made me really happy,
+not just because it fit, but also because it validated my thoughts on
+*Harry Potter* compression.
+
+(Although for the record, it doesn't fit perfectly.
+Time-Turners only allow for stable time loops in
+canon. You wouldn't be able to apply the study to the same group of people,
+because there is always only one timeline. Time-Turners would still
+eliminate a lot of confounding variables though.)
+
+Now that I've thought about it, it seems obvious. Yes, this is how
+discourse works. People will use analogies
+to previous well known ideas to explain their points.
+I mean, no shit Sherlock.
+
+Even when an idea is simple in retrospect, I still find it rewarding
+to think it through out loud. It elevates the idea from latent
+knowledge to common knowledge, and helps me identify it in other
+contexts. I just used a meme
+based off Sherlock Holmes, and I didn't realize how much meaning
+I could pack into those three words until now.
+
+(I have a lot more to write about this than I thought, so I'm stopping here.
+I may pick it up tomorrow, or I'll save it from a longer post after the gauntlet is
+over.)
