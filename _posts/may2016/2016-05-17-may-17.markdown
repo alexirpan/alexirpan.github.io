@@ -1,8 +1,71 @@
 ---
 layout: post
-title:  "The Blogging Gauntlet: May 16 - What's Your Time Travel Password?"
-date:   2016-05-17 15:04:00 -0700
+title:  "The Blogging Gauntlet: May 17 - What's Your Time Travel Password?"
+date:   2016-05-17 16:45:00 -0700
 ---
 
 {% include gauntlet.md %}
 
+As far as I know, time travel doesn't exist. However, that doesn't mean
+there's nothing interesting to say about it. In fact, you can do a lot
+of [theorizing about models of time travel](https://qntm.org/time).
+
+Today, I made a time travel password. What I'm going to do is detail the argument
+for why everyone else should make one too.
+
+\*\*\*
+{: .centered }
+
+Suppose we're living in a world where time travel is possible, and that
+furthermore time travel will be invented within our lifetime. I know this
+is a huge assumption, but bear with me for a moment.
+
+A world where people can transmit information to past versions of themselves
+is very hard to predict. The nature of that world depends on the model of
+time travel used, but the potential gains of time travel are huge.
+
+However, *that means the potential losses of forged future messages are also
+huge*. If you're in a world where time travel is possible, the strangest
+requests in the world can be explained away by saying the future depends on it.
+What makes decision making tricky is that it's almost always done under
+uncertainty. Time travel removes that uncertainty, giving a perfect oracle
+towards achieving the best outcome. Or, if a message is forged, a perfect oracle
+towards achieving the *worst* outcome.
+
+To prevent this, you need an authentication scheme that verifies future
+messages come from you. Hence, time travel passwords! In the present, you
+pre-commit to adding your time travel password to any message sent to a
+past version of you. That way, if you ever receive such a message, you can
+verify that message is legitimate.
+
+Importantly, you never, under any circumstances, write down your time travel
+password or speak it out loud. After the passphrase leaves your head, it's no longer secure.
+As a corollary, every time travel password is one time use, and you must create
+a new one whenever you receive a future message.
+
+\*\*\*
+{: .centered }
+
+There's a very natural objection to this: isn't time travel exceedingly
+unlikely? Why should I waste my time making a password for non-existent technologies?
+
+Well, consider the following.
+
+* Creating a time travel password takes less than a minute.
+* If time travel is never invented, you lose one minute of your life.
+* If time travel is invented, you prevent a large class of attacks that could
+be made against you.
+
+The expected utility is vastly, vastly in favor of making a time travel
+password. I'll fully admit this argument is a variant of
+[Pascal's mugging](https://en.wikipedia.org/wiki/Pascal's_mugging), which
+you might reject for one reason or another.
+
+Here's my counterargument. Yes, maybe I'm mugging you out of one minute of
+your time. However, the value of one minute of your time is very, very low.
+And even if time travel is never invented, you get to tell people you have a time
+travel password! How awesome is that? You can explain this very argument, or link
+to help increase my view counts (nod nod, wink wink).
+
+Having a time travel password makes you a more interesting person, and that's surely
+worth the one minute of time it costs you.
