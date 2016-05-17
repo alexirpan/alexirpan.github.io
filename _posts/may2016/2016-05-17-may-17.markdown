@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 16 - What's Your Time Travel Password?"
+date:   2016-05-17 15:04:00 -0700
+---
+
+{% include gauntlet.md %}
+
