@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 17 - What's Your Time Travel Password?"
-date:   2016-05-17 16:45:00 -0700
+date:   2016-05-17 16:46:00 -0700
 ---
 
 {% include gauntlet.md %}
@@ -39,7 +39,7 @@ past version of you. That way, if you ever receive such a message, you can
 verify that message is legitimate.
 
 Importantly, you never, under any circumstances, write down your time travel
-password or speak it out loud. After the passphrase leaves your head, it's no longer secure.
+password or speak it out loud. After the password leaves your head, it's no longer secure.
 As a corollary, every time travel password is one time use, and you must create
 a new one whenever you receive a future message.
 
