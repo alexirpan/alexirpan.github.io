@@ -1,0 +1,129 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 16 - Memorable Quotes"
+date:   2016-05-16 18:14:00 -0700
+---
+
+{% include gauntlet.md %}
+
+What makes a quote memorable? What makes it tick?
+
+I don't have a good answer for this. And furthermore, I suspect I never will.
+It's one of the key troubles of life. We can recognize quality, we can have
+highly refined tastes, and at the same time have no idea why we have those tastes.
+Articulating those likes and desires is much harder than having them in first
+place.
+
+> The sliding scale is a fantasy. There's no simple answers.
+
+([*Worm*](https://parahumans.wordpress.com/))
+{: .centered }
+
+In a way, it's like NP-Complete problems. If we're given an explanation,
+we'll understand it, but it's incredibly difficult to find that explanation
+in the first place. Guess that's why critics get to keep their jobs.
+
+We read and hear many things. Somehow, our brains decide which input is truly
+memorable, and worth keeping verbatim, while the rest gets relegated to vague
+feelings. The strangest part to me is that for the most part, people agree
+on what quotes are important. Legendary movies are usually quoted in the same
+way.
+
+> Here's looking at you, kid.
+
+(*Casablanca*)
+{: .centered }
+
+Yes, quality is subjective, but quality isn't *entirely* subjective. If
+someone tried to hold up *Plan 9 From Outer Space* as a masterpiece of
+science fiction instead of a masterpiece of unintended comedy,
+we'd laugh them out of the room.
+
+> Future events such as these will affect you in the future.
+
+(*Plan 9 From Outer Space*)
+{: .centered }
+
+There must be some core functionality, that recognizes some idea as important,
+and it has to be almost the same from person to person. In the brain, we can't
+be that different. Can we?
+
+> Harry was finding himself very disturbed by how reproducible human thoughts were when you reset people back to the same initial conditions and exposed them to the same stimuli.
+
+([*Harry Potter and the Methods of Rationality*](http://hpmor.com/))
+{: .centered }
+
+So what does it? What makes a quote memorable?
+
+I want to know, because if you understand how this works, it's a improvement
+on everything I can think of. It makes your writing more interesting. It makes
+your speeches more persuasive. Technical explanations from research papers
+stick better.
+
+> I am an anti-illusionist. I trick your brain into seeing what was there
+> all along.
+
+([Vi Hart](https://www.youtube.com/watch?v=4gZ5rsAHMl4))
+{: .centered }
+
+Understanding this seems key to all forms of communication, and communication
+underlies essentially every interaction in the world. Shouldn't I be training
+that meta-skill?
+
+> She was such a potent telepath that even if I could come up with a plan, she would rip it from my mind before I could get close enough to her to implement it.
+>
+> We were racing apotheosis.  And we were losing.
+
+([*Fallout Equestria*](http://www.fimfiction.net/story/119190/fallout-equestria))
+{: .centered }
+
+I bet this is the sales pitch people use when trying to sell the books they've
+written on persuasion. It has to work, right? I mean, it seems self-evident.
+Of course, what isn't self-evident is that they're the best person for
+explaining persuasion.
+
+Where does that leave me? It is an unfortunate truth that there isn't
+enough time to understand everything, or even understand most things. Eventually,
+you have to choose what's worth learning and what isn't. Or perhaps more accurately,
+you don't choose. Instead, we naturally gravitate toward our interests and
+circle them endlessly, never quite passing the event horizon into true
+clarity.
+
+> "I understand why you want, and need, the universe to be simple, to be 'just so'. But it simply isn't. Stop thinking you know what 'quantum' means. Magic isn't a miraculous healing field, it doesn't bind living creatures to one another. Crack a book open, one that isn't aiming to pander. The answers are complicated. We will find every explanation eventually. As for me, I will uncover the truth on my own terms. The proper way. Or, more likely, I will not.
+
+([*Ra*](https://qntm.org/ra))
+{: .centered }
+
+Like I said, I still don't have any answers. The closest idea I can think of
+is hopelessly general, but probably still correct.
+
+1. Breathe in.
+2. Breathe out.
+3. Get a rough idea of what you need to do.
+4. Walk there, one step at a time.
+
+It's fluffy, I know. But I've heard a variation on this idea from several sources,
+so it can't be all junk. I suppose that's what I'll do, and at some point,
+if I get there, I can write my own feel-good story, and pretend to be someone
+who understood what he was doing all along.
+
+This final quote doesn't quite fit. But, after re-reading it, I liked it too
+much. It's memorable to me.
+
+> “I want to calm the storm, but the war is in your eyes.  
+> How can I shield you from the horror and the lies?
+>
+> When all that once held meaning is shattered, ruined, bleeding  
+> And the whispers in the darkness tell me we won’t survive?”
+> 
+> “All things will end in time, this coming storm won’t linger  
+> Why should we live as if there’s nothing more?
+> 
+> So hold me ‘neath the thunderclouds, my heart held in your hooves,  
+> Our love will keep the monsters from our door.”
+> 
+> “For I know tomorrow will be a better day.  
+> Yes, I believe tomorrow can be a better day…”
+
+([*Fallout Equestria*](http://www.fimfiction.net/story/119190/fallout-equestria))
+{: .centered }
