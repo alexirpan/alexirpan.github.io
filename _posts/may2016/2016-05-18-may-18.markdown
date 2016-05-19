@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Blogging Gauntlet: May 18 - ?????"
+title:  "The Blogging Gauntlet: May 18 - More Time Travel Password Theorizing"
 date:   2016-05-18 20:06:00 -0700
 ---
 
@@ -14,7 +14,7 @@ Harry Houdini and his wife Bess developed secret passphrases which he promised
 to say to her if he found a way to contact her from the afterlife. After his
 death, Bess used those passphrases to debunk several spirit mediums. Or,
 as put by [MagicPedia](http://www.geniimagazine.com/magicpedia/The_Houdini_Code),
-"Bess begain the tradition of holding a seance to see whether Houdint could
+"Bess began the tradition of holding a seance to see whether Houdint could
 escape from death."
 
 Can I just say: this is totally badass. See? Wasn't that super interesting, and
@@ -35,7 +35,7 @@ This doesn't mean you shouldn't create a time travel password. It still
 stops future adversaries from messing with you, and you always have the option
 of giving the adversary your password. And in some sense, this is good enough.
 If you have the password, you must be able to convince your past self your
-message is from the future, because otherwise your authetication scheme
+message is from the future, because otherwise your authentication scheme
 is broken. If you're convinced that cooperating with your kidnappers is in your
 best interest, that's it. There's no authentication scheme in the world that
 is secure against your own cooperation, because any authentication scheme that
@@ -52,3 +52,17 @@ secure.** If we reveal our password in real life, we can request a password chan
 but this doesn't work for time travel. You can't retroactively change your memory.
 You could send a message telling your past self to change their time travel
 password, but that assumes you can send a message before anybody else.
+
+An ideal system would either have a handy reset button or have a way to minimize
+the chance of mistakes. I haven't thought about it for long, but one option
+that could work is two-factor authentication. Instead of just sending a message,
+you also need to send some physical token to the past as well. That way, anyone
+who hears your message can't fool your future self. However, this assumes you
+can send physical objects back in time, and that you have several of these tokens,
+in case you want to send multiple messages back in time.
+
+This starts running into the usability vs security issue. Yes, there are
+probably ways to make time travel passwords more secure, but they also make it
+more complicated to implement, and place more constraints on what types of
+time travel are allowed. For me, a simple password is secure enough, and it's
+not worth spending a lot of time trying to optimize it further.
