@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 18 - More Time Travel Password Theorizing"
-date:   2016-05-18 20:06:00 -0700
+date:   2016-05-18 23:12:00 -0700
 ---
 
 {% include gauntlet.md %}
@@ -70,14 +70,14 @@ authentication. Require every message to come
 with both a password and a physical token that only you own.
 That way, anyone who learns your password can't fool your past self.
 
-Unfortunately, this assumes you
-can send objects back in time, which may not be true.
+Unfortunately, this assumes you can send objects back in time, which might not
+be true.
 There's another issue too: you're not getting your physical token back after
 sending it to the past. If you want to send more than one message to the past,
-you'll need multiple tokens.
+you'll need a new token for each one.
 
 At this point, we're running into the usability vs security issue.
 Yes, if you try hard enough, you can make more secure time travel authentication
-schemes, but at some point it's not worth the effort to implement them and
+schemes, but at some point it's not worth the effort to implement them, and
 theorizing about them is just an interesting exercise. Personally, I'm going
 to stick to passwords, because they're good enough for me.
