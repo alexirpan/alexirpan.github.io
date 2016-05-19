@@ -1,0 +1,83 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 18 - More Time Travel Password Theorizing"
+date:   2016-05-18 23:12:00 -0700
+---
+
+{% include gauntlet.md %}
+
+*This builds upon the ideas from [yesterday's post]({% post_url 2016-05-17-may-17 %}).
+Read that one first.*
+
+First off, here's some trivia I learned from the [TVTropes page on trust passwords](http://tvtropes.org/pmwiki/pmwiki.php/Main/TrustPassword).
+Harry Houdini and his wife Bess developed secret passphrases which he promised
+to say to her if he found a way to contact her from the afterlife. After his
+death, Bess used those passphrases to debunk several spirit mediums. Or,
+as put by [MagicPedia](http://www.geniimagazine.com/magicpedia/The_Houdini_Code),
+"Bess began the tradition of holding a seance to see whether Houdini could
+escape from death." None of the spirit mediums ever convinced her.
+
+Can I just say: this is totally badass. I never realized time travel passwords
+could also be used to *authenticate yourself from the dead.*
+
+(Also, MagicPedia implies she did this as a coping mechanism for her loss, instead of as a way
+to debunk mystics. I like the latter interpretation more.)
+
+Anyways, so I've been thinking about the security of time travel passwords.
+Suppose you're kidnapped, and your kidnappers are trying to coerce you to
+reveal your time travel password. What do you do?
+Obviously, you could lie about your password. However, this may not help you.
+If your kidnappers can verify whether messages they sent into the past have
+changed the present, they'll know you're lying.
+
+This doesn't mean you shouldn't create a time travel password. It still
+gives you some security, and if you are kidnapped, you always have the option
+of giving the adversary your password.
+
+In some ways, this is the best it ever gets. Here's the quick argument.
+Any time travel authentication scheme must have a way to convince your past
+self a message is from the future. This is true by definition. Otherwise, even
+when you're sending a message of your own free will, your past self could
+reject your messages. In other words, every authentication scheme must have
+some way to let people through the door.
+If kidnappers have convinced you to cooperate with them,
+you'll always be able to open the door for them. There's no way around it.
+
+Still, there's room for improvement. Suppose I accidentally say my time travel
+password out loud. Anyone present can now pretend to be me from the future.
+And importantly, **I have no way to tell my past self their time travel password is no longer
+secure.** Time travel passwords are actually *less* secure than regular passwords!
+If we reveal our password in real life, we can request a password change,
+but this doesn't work for time travel. You can't retroactively change your memory!
+You're screwed!
+
+![Great Scott!](/public/may18/bttf.jpg)
+{: .centered }
+
+(Would this be a bad time to mention I've never seen *Back to the Future*? I know,
+I know, I'm sorry.)
+{: .centered }
+
+At best, you can send a message ASAP telling your past self to change their
+time travel password. But, that assumes you get there first. If you get there
+2nd or 3rd, you're sunk. By that point, your past self has had years to
+act on malicious information. Who knows what could happen?
+
+An ideal time travel auth-system should minimize the danger from
+revealing your password.
+I haven't thought about it for long, but one option is two-factor
+authentication. Require every message to come
+with both a password and a physical token that only you own.
+That way, anyone who learns your password can't fool your past self.
+
+Unfortunately, this assumes you can send objects back in time, which might not
+be true.
+There's another issue too: you're not getting your physical token back after
+sending it to the past. If you want to send more than one message to the past,
+you'll need a new token for each one.
+
+At this point, we're running into the usability vs security issue.
+Yes, if you try hard enough, you can make more secure time travel authentication
+schemes, but at some point it's not worth the effort to implement them, and
+theorizing about them is just an interesting exercise. Personally, I'm going
+to stick to passwords, because they're good enough for me.
