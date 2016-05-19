@@ -6,3 +6,49 @@ date:   2016-05-18 20:06:00 -0700
 
 {% include gauntlet.md %}
 
+*This builds upon the ideas from [yesterday's post]({% post_url 2016-05-17-may-17 %}).
+Read that one first.*
+
+First off, here's some trivia I learned from the [TVTropes page on trust passwords](http://tvtropes.org/pmwiki/pmwiki.php/Main/TrustPassword):
+Harry Houdini and his wife Bess developed secret passphrases which he promised
+to say to her if he found a way to contact her from the afterlife. After his
+death, Bess used those passphrases to debunk several spirit mediums. Or,
+as put by [MagicPedia](http://www.geniimagazine.com/magicpedia/The_Houdini_Code),
+"Bess begain the tradition of holding a seance to see whether Houdint could
+escape from death."
+
+Can I just say: this is totally badass. See? Wasn't that super interesting, and
+worth a minute of your time?
+
+Anyways, so I've been thinking about the security of time travel passwords.
+Suppose you're kidnapped, and your kidnappers are trying to coerce you to
+reveal your time travel password, because they want to modify history
+through you. What do you do?
+
+Well, first off you could obviously lie about your password. However, this
+could lead to issues, depending on if the adversary can verify whether
+messages they sent into the past have changed the present. If they cannot
+verify any changes to the present, you're in the clear. If they can, you're
+sunk, because they'll know you're lying.
+
+This doesn't mean you shouldn't create a time travel password. It still
+stops future adversaries from messing with you, and you always have the option
+of giving the adversary your password. And in some sense, this is good enough.
+If you have the password, you must be able to convince your past self your
+message is from the future, because otherwise your authetication scheme
+is broken. If you're convinced that cooperating with your kidnappers is in your
+best interest, that's it. There's no authentication scheme in the world that
+is secure against your own cooperation, because any authentication scheme that
+does so would also block access if there were no kidnappers coercing you.
+
+(I'm not sure I'm explaining this idea well. Turn it over a few times if
+this is confusing you.)
+
+Still, a time travel password scheme isn't secure against mistakes. In fact, it's
+incredibly insecure against mistakes! Suppose I accidentally say my time travel
+password out loud. Anyone present can now pretend to be me from the future, **and
+I have no way to tell my past self their time travel password is no longer
+secure.** If we reveal our password in real life, we can request a password change,
+but this doesn't work for time travel. You can't retroactively change your memory.
+You could send a message telling your past self to change their time travel
+password, but that assumes you can send a message before anybody else.
