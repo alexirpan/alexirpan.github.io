@@ -6,8 +6,9 @@ date:   2016-05-19 22:11:00 -0700
 
 {% include gauntlet.md %}
 
-I've been working on turning my final project for CS 281B into a NIPS paper all of
-today, and I have no idea how I convinced myself this was a good idea.
+I've been working all day on turning my final project for CS 281B into
+a NIPS paper all of today. The submission deadline is tomorrow, 9 AM.
+I have no idea how I convinced myself this was a good idea.
 
 First off, the odds that I actually get accepted to NIPS is almost nil.
 My final project has the bare minimum of algorithm design to make it even
@@ -32,10 +33,9 @@ from one another. OH WAIT, EXCEPT BOTH THOSE THINGS ARE TRUE? YEAH, THEY ARE.
 
 UUUUUUGGGGGGHHHHHHHH.
 
-Yes, if you couldn't tell I'm a bit annoyed with myself. It was probably a
+(Yes, if you couldn't tell I'm a bit annoyed with myself. It was probably a
 bad idea to even write a blog post when I'm in a mood of productive anger,
-but here we are. I'm hoping this post will be funny as balls in retrospect, but
-who knows.
+but here we are.)
 
 The odds I give myself for even getting into NIPS is so small that I decided
 it wasn't even worth sending my paper around for feedback, because it would
@@ -44,4 +44,34 @@ to make it net negative for the lab. Maybe this is circular logic to convince
 myself I don't want to talk to people, but at this point I'm too tired to work
 towards internal consistency.
 
+If you were expecting a post about existential risk, I'm sorry the title
+baited you. I was considering writing about it, but decided I wouldn't be
+able to properly cover it, considering that I'm writing this post on an
+insanely short deadline and I need to finish my paper literally tonight.
+Tomorrow I have to, like, graduate and walk on stage high-fiving my
+professors.
 
+Anyways this is a huge pile of bullshit, and I almost feel like I'm cheating
+myself for writing this just to make sure I didn't have to pay $20. Holy
+shit the quality of this post is going to be PISS POOR, and writing an
+angry post is maaaaaaybe not the best thing to save on the Internet for
+all to see.
+
+If I had the time to write a decent post, here's what I would have said.
+
+* The odds of me getting accepted are small, but I was always planning
+to refine my final project for my research page currently under construction.
+The NIPS deadline just gave me a good deadline to actually work on it
+and spring me out of my hedonistic haze.
+* When the paper is done, I will get to say I submitted a paper to
+a top tier machine learning conference, which is actually a decently big
+deal.
+* I'm not sure how I feel about existential risk, but in this case the
+journey of finding the best way to explain my ideas to a curious but
+unfamiliar audience is my main motivation.
+
+But I didn't have the time to find a good way to naturally meander through
+all those points, so you get this instead. Many paragraphs of anger
+and angst, with all the meat at the very end.
+
+There, okay, that's it. I'm outta here, I have a paper to write.
