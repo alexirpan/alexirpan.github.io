@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 20 - Workaholic Habits"
+date:   2016-05-20 16:05:00 -0700
+---
+
+{% include gauntlet.md %}
+
+Now that my [NIPS submission is done]({% post_url 2016-05-20-may-20 %}), I have
+time to write a bit about my feelings towards the student lifestyle.
+
+The thing about academia is that workloads are incredibly variable. The week
+before a deadline is hell on earth, while the weeks after it can be incredibly
+relaxing. When you're a student, work blends into your life. The time you can
+do your work is very flexible, which makes it easy to put off until you have
+to pull an all-nighter.
+
+For the last two weeks of classes this semester, I had two final projects
+to finish. I was behind enough that I ended up going. It was reaching
+the point where I was waking up, going into lab, and not leaving until midnight,
+every single day. One day, I noticed it was 1 AM, and did some mental
+calculation. "Hm, so I got up at 9 AM. I've been working for 16 hours. But,
+I went to lecture, and also got meals, so really I've only been working
+for *12* hours! That's not...so...bad..."
+
+And then the penny dropped. Working until midnight every day was my new standard.
+Working at least 12 hours every day was my new standard. Mind you, this is
+including weekends - I'm pretty sure the only day I took off was the Sunday
+in between those two weeks.
+
+At one point, I realized *this was incredibly unhealthy for me*, but I
+couldn't **stop**. My project was due Thursday, meaning I needed the poster
+done by Wednesday, meaning I needed to finish my experiment code by Tuesday
+because it needed to run overnight. The timeline I had to rise to shunted
+everything except work out of my life, and I didn't see any way to push free time
+back in.
