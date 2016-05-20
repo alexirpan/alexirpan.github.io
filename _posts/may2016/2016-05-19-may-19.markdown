@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 19 - Working Assuming Futility"
+date:   2016-05-19 22:11:00 -0700
+---
+
+{% include gauntlet.md %}
+
+I've been working on turning my final project for CS 281B into a NIPS paper all of
+today, and I have no idea how I convinced myself this was a good idea.
+
+First off, the odds that I actually get accepted to NIPS is almost nil.
+My final project has the bare minimum of algorithm design to make it even
+justifiable to write a paper in the first place, and the experiments I ran
+all gave negative results. Furthermore, I worked on this project entirely by
+myself, with little to no input from any grad students/professors. That means
+my writeup is going to be very unrefined. I don't have the time to get feedback
+on my writing, because everyone I know who could give feedback is busy attending
+ICRA, and the time it would take for me to explain what I'm doing and for them
+to read my paper isn't worth it. Even if this was the most well-written paper
+in the world, the combination of not very novel ideas and negative results
+feels like a death sentence.
+
+What makes this an even worse idea is that I didn't even learn about the NIPS
+deadline until 2 days ago. Sure, let's submit to NIPS! Why not! It's not like
+I've spent the past few days playing Phoenix Wright: Ace Attorney in my
+pajamas all day, meaning I have to go through a super jarring context shift
+into the work all day mindset.
+It's not like this is my last week staying at Berkeley, and
+I should probably be trying to meet up with friends before we all head away
+from one another. OH WAIT, EXCEPT BOTH THOSE THINGS ARE TRUE? YEAH, THEY ARE.
+
+UUUUUUGGGGGGHHHHHHHH.
+
+Yes, if you couldn't tell I'm a bit annoyed with myself. It was probably a
+bad idea to even write a blog post when I'm in a mood of productive anger,
+but here we are. I'm hoping this post will be funny as balls in retrospect, but
+who knows.
+
+The odds I give myself for even getting into NIPS is so small that I decided
+it wasn't even worth sending my paper around for feedback, because it would
+diminish the chances of other people getting their papers accepted by enough
+to make it net negative for the lab. Maybe this is circular logic to convince
+myself I don't want to talk to people, but at this point I'm too tired to work
+towards internal consistency.
+
+
