@@ -34,44 +34,48 @@ from one another. OH WAIT, EXCEPT BOTH THOSE THINGS ARE TRUE? YEAH, THEY ARE.
 UUUUUUGGGGGGHHHHHHHH.
 
 (Yes, if you couldn't tell I'm a bit annoyed with myself. It was probably a
-bad idea to even write a blog post when I'm in a mood of productive anger,
-but here we are.)
+bad idea to even write a blog post when I'm in such a mood, but here we are.
+On the raggedy edge.)
 
-The odds I give myself for even getting into NIPS is so small that I decided
-it wasn't even worth sending my paper around for feedback, because it would
-diminish the chances of other people getting their papers accepted by enough
-to make it net negative for the lab. Maybe this is circular logic to convince
-myself I don't want to talk to people, but at this point I'm too tired to work
-towards internal consistency.
+Look, I even did an estimation in my head, and decided it wasn't worth sending
+my paper around for feedback, because it would take away time from people
+working on *their* papers, and the marginally improved chance for my paper
+isn't worth diminishing the chances of people who actually have significant
+progress. Maybe this is circular logic I'm giving myself to not talk to
+people, but at this point I'm too tired for self improvement or
+internal consistency.
 
-If you were expecting a post about existential risk, I'm sorry the title
-baited you. I was considering writing about it, but decided I wouldn't be
-able to properly cover it, considering that I'm writing this post on an
-insanely short deadline and I need to finish my paper literally tonight.
-Tomorrow I have to, like, graduate and walk on stage high-fiving my
-professors.
+By the way, if you were expecting a post about existential risk and why
+it's justifiable to act in situations where you almost always receive
+failure, I'm sorry the title baited you. See, that's what I thought
+this post was going to be about, but my stream of consciousness decide to
+hijack it into a rant post and I don't have the time to do that topic
+full justice. I'm writing this on an insanely short deadline because I
+need to both finish this post and finish my paper before midnight.
+Tomorrow I need to wake up early and, like, go to the CS graduation
+ceremony.
 
-Anyways this is a huge pile of bullshit, and I almost feel like I'm cheating
-myself for writing this just to make sure I didn't have to pay $20. Holy
-shit the quality of this post is going to be PISS POOR, and writing an
-angry post is maaaaaaybe not the best thing to save on the Internet for
-all to see.
+Anyways this post is a huge pile of bullshit. I'm cheating
+myself for writing this just to make sure I don't have to pay $20, but
+I set the rules! Only myself to blame for writing piss poor posts!
 
-If I had the time to write a decent post, here's what I would have said.
+If I had the time to write a decent post, here's the ideas I would
+have tried to convey.
 
 * The odds of me getting accepted are small, but I was always planning
 to refine my final project for my research page currently under construction.
 The NIPS deadline just gave me a good deadline to actually work on it
 and spring me out of my hedonistic haze.
-* When the paper is done, I will get to say I submitted a paper to
+* When the paper is done, I'll get to say I submitted a paper to
 a top tier machine learning conference, which is actually a decently big
-deal.
+deal. Of course anybody can do this, so it's secretly not a big deal.
 * I'm not sure how I feel about existential risk, but in this case the
 journey of finding the best way to explain my ideas to a curious but
-unfamiliar audience is my main motivation.
+unfamiliar audience and the experience I get doing so is the big
+thing I'm getting out of this.
 
-But I didn't have the time to find a good way to naturally meander through
-all those points, so you get this instead. Many paragraphs of anger
-and angst, with all the meat at the very end.
+I didn't have the time to find a good way to naturally bring all this
+up, so instead you get a bullet point text dump. Sorry!
 
-There, okay, that's it. I'm outta here, I have a paper to write.
+Okay this is actually closer to 700 words, not 500.
+I'm outta here, I've got a paper to write.
