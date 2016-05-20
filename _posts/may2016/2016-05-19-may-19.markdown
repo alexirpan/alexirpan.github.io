@@ -1,0 +1,87 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 19 - Working Assuming Failure"
+date:   2016-05-19 22:53:00 -0700
+---
+
+{% include gauntlet.md %}
+
+*Alternate title: This Was a Bad Idea.*
+
+I've been working all day on turning my final project for CS 281B into
+a [NIPS](https://nips.cc/) paper. The submission deadline is tomorrow, 9 AM.
+I have no idea how I convinced myself this was a good idea.
+
+First off, the odds that I actually get accepted to [NIPS](https://nips.cc/) is almost nil.
+My final project has the bare minimum of algorithm design to make it even
+justifiable to write a paper in the first place, and the experiments I ran
+all gave negative results. Furthermore, I worked on this project entirely by
+myself, with little to no input from any grad students/professors. That means
+I'll have no feedback from people who have experience with the submission process,
+and that I'll be editing the paper entirely by myself, which is a **huge**
+recipe for disaster.
+Everyone I've worked with is busy attending
+[ICRA](http://www.icra2016.org/), and the time it would take for me to explain
+what I'm doing and for them
+to read my paper isn't worth it. Besides, even if this was the most well-written paper
+in the world, the combination of not very novel ideas and negative results
+feels like a death sentence.
+
+What makes this an even worse idea is that I didn't even learn about the NIPS
+deadline until 2 days ago. Sure, let's submit to NIPS! Why not! It's not like
+I've spent the past few days playing Phoenix Wright: Ace Attorney in my
+pajamas all day, meaning I have to go through a super jarring context shift
+into the work all day mindset.
+It's not like this is my last week staying at Berkeley, and
+I should probably be trying to meet up with friends before we all head away
+from one another. OH WAIT, EXCEPT BOTH THOSE THINGS ARE TRUE? YEAH, THEY ARE.
+
+UUUUUUGGGGGGHHHHHHHH.
+
+(Yes, if you couldn't tell I'm a bit annoyed with myself. It was probably a
+bad idea to even write a blog post when I'm in such a mood, but here we are.
+On the raggedy edge.)
+
+Look, I even did an estimation in my head, and decided it wasn't worth sending
+my paper around for feedback, because it would take away time from people
+working on *their* papers, and the marginally improved chance for my paper
+isn't worth diminishing the chances of people who actually have significant
+progress. Maybe this is circular logic I'm giving myself to not talk to
+people, but at this point I'm too tired for self improvement or
+internal consistency.
+
+By the way, if you were expecting a post about existential risk and why
+it's justifiable to act in situations where you almost always receive
+failure, I'm sorry the title baited you. See, that's what I thought
+this post was going to be about, but my stream of consciousness decide to
+hijack it into a rant post and I don't have the time to do that topic
+full justice. I'm writing this on an insanely short deadline because I
+need to both finish this post and finish my paper before midnight to
+give myself sleeping time for the CS graduation ceremony tomorrow
+morning.
+
+Anyways this post is a huge pile of bullshit and I'm sorry you sat and
+read through it. I'm cheating
+myself for writing this just to make sure I don't have to pay $20, but
+I set the rules! Only myself to blame if they let me get away with this!
+
+If I had the time to write a decent post, here's the ideas I would
+have tried to convey.
+
+* The odds of me getting accepted are small, but I was always planning
+to refine my final project for my research page currently under construction.
+The NIPS deadline just gave me a good deadline to actually work on it
+and spring me out of my hedonistic haze.
+* When the paper is done, I'll get to say I submitted a paper to
+a top tier machine learning conference, which is actually a decently big
+deal. Of course anybody can do this, so it's secretly not a big deal.
+* I'm not sure how I feel about existential risk, but in this case the
+journey of finding the best way to explain my ideas to a curious but
+unfamiliar audience and the experience I get doing so is the big
+thing I'm getting out of it.
+
+I didn't have the time to find a good way to naturally bring all this
+up, so instead you get a bullet point text dump. Sorry!
+
+Okay this is actually closer to 750 words, not 500.
+I'm outta here, I've got a paper to write.
