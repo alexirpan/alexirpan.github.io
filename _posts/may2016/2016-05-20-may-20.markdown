@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Blogging Gauntlet: May 20 - Workaholic Habits"
+title:  "The Blogging Gauntlet: May 20 - Confessions of a Procrastinating Workaholic"
 date:   2016-05-20 16:05:00 -0700
 ---
 
@@ -34,3 +34,20 @@ done by Wednesday, meaning I needed to finish my experiment code by Tuesday
 because it needed to run overnight. The timeline I had to rise to shunted
 everything except work out of my life, and I didn't see any way to push free time
 back in.
+
+At Berkeley, I've never been able to get my life into a schedule. I'll add
+things to my calendar, then not do them. For reference, right now, I have
+a recurring event to write a post from 2 PM - 4 PM every day. I don't think
+I've ever actually written a post in that block. It's effectively a glorified
+daily notification.
+
+When I have the freedom to arrange work however I like, it all gets down at
+night, or right before I need to go out for food. It's too easy for me
+to justify pushing it off.
+
+I know some people who argue this isn't a bug, it's a feature. Procrastination
+is what happens when you don't have the motivation to get your work done.
+Thus, you'll end up working exactly when you're motivated to.
+
+Sure, that's true, but I'd much rather have my misery around deadlines get
+averaged out into the weeks leading up to it.
