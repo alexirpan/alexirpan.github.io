@@ -6,8 +6,8 @@ date:   2016-05-20 11:59:59 -0700
 
 {% include gauntlet.md %}
 
-*This post was put online at 12:00:07 AM. As per the rules, I must donate $20
-to charity.*
+*This post was put online at 12:00:07 AM. As per the rules, the post was not
+completed before midnight, and I must donate $20 to charity.*
 
 Now that my [NIPS submission is done]({% post_url 2016-05-20-may-20 %}), I have
 time to write a bit about my feelings towards the student lifestyle.
@@ -62,6 +62,4 @@ at most, and then it feels like too much work for not enough gain. Somehow,
 I need to hack it to make doing productivity hacks fun, and I haven't figured
 out a way to make this work yet.
 
-So until then, here I am. A procrastinating workaholic, who sometimes uses
-work as an excuse not to hang out, even when it seems like I shouldn't have to
-do this.
+So until then, here I am. A procrastinating workaholic.
