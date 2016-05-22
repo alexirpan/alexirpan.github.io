@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 21 - Fearful Symmetry"
+date:   2016-05-21 18:36:00 -0700
+---
+
+{% include gauntlet.md %}
+
+*I was hesitant to write on this topic, because I care about it a lot and don't
+want to mess it up. Eventually I decided it was worth writing a beta post.*
+
+In April of this year, Anca Dragan gave [a presentation on her work in
+human-computer interaction](https://www.facebook.com/events/1083061028418433/).
+Anca is one of those terrifyingly smart people that make you feel slightly
+ashamed. Did a PhD at CMU, was nominated for several best paper awards at top
+robotics conferences, and was hired straight out of her PhD to a
+professor position at Berkeley.
+
+The event was hosted by FEM Tech, a new student organization that, quote,
+
+> promotes gender diversity and inspire women from all majors to excel in technology careers. Through organized seminars, mentorship programs, training workshops, and networking events, FEM Tech will provide a supportive community for all majors to create meaningful connections with like-minded women. We hope to excite new interest in tech and provide support for women already in STEM majors.
+
+([FEM Tech] website)
+{: .centered }
+
+I did not go to this talk. I was very busy that week, and the event description
+sounded like it wouldn't go into enough depth to be interesting to me. Or rather,
+that is the excuse I gave myself.
+
+In truth, I walked towards the event, and saw almost everyone there was female.
+I wasn't comfortable with that, so I turned around and went back to the library.
+
+It took me a few minutes to realize that I wasn't comfortable with an all-female
+room, at a time when many women have to deal with an all-male room. *Doesn't
+that make me part of the problem?*
+
+\*\*\*
+{: .centered }
