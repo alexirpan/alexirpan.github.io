@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 21 - Fearful Symmetry"
-date:   2016-05-21 19:59:00 -0700
+date:   2016-05-21 20:02:00 -0700
 ---
 
 {% include gauntlet.md %}
@@ -65,7 +65,7 @@ to see it with our own eyes.*
 \*\*\*
 {: .centered }
 
-Looking back, it doesn't feel like I had a tough life.
+It doesn't feel like I've had a tough life.
 
 Yes, I went to a challenging high school, and a tough college. I've
 definitely had struggles. But, it doesn't feel like I've had to work as hard
@@ -93,7 +93,7 @@ tea shop every day and ignore the homeless on the streets. I don't understand
 what it feels like to view the police with fear, or my bank account with dread,
 and I never want to. I'm in a position where I can avoid these issues, and quite
 reasonably decide I don't want to add pain into my life for the sake of having
-pain in my life.
+pain in my life. Suffering is symmetrical, and I choose to avoid it.
 
 > Tyger, tyger, burning bright  
 > In the forests of the night,  
@@ -114,5 +114,5 @@ I don't know how to reconcile that, and some part of me doesn't want to.
 
 On days like these, I have to wonder. Which is worse - always living with wool
 worn over your own eyes, or taking the wool off and pulling it back on by
-your own accord? And in the end, which am I going to choose?
+your own accord? And in the end, which will I choose?
 
