@@ -1,0 +1,118 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 21 - Fearful Symmetry"
+date:   2016-05-21 20:02:00 -0700
+---
+
+{% include gauntlet.md %}
+
+*I was hesitant to write on this topic, because I care about it a lot and didn't
+want to mess it up. Eventually I decided it was worth writing a beta post.*
+
+Last month, Anca Dragan gave [a presentation on her work in
+human-robot interaction](https://www.facebook.com/events/1083061028418433/).
+Anca is one of those terrifyingly smart people that make you feel slightly
+ashamed about yourself. She did a PhD at CMU, was nominated for several best paper awards at top
+robotics conferences, and was hired straight out of her PhD to a
+assistant professorship at Berkeley.
+
+The event was hosted by FEM Tech, a new student organization that, quote,
+
+> promotes gender diversity and inspires women from all majors to excel in technology careers. Through organized seminars, mentorship programs, training workshops, and networking events, FEM Tech will provide a supportive community for all majors to create meaningful connections with like-minded women. We hope to excite new interest in tech and provide support for women already in STEM majors.
+
+([FEM Tech](http://femtechberkeley.com/) website)
+{: .centered }
+
+The event was billed as open to everyone, but I didn't go.
+I was very busy that week, and the event description
+sounded like it wouldn't go into enough depth to be interesting to me. Or rather,
+that is the excuse I gave myself.
+
+In truth, I walked towards the event, and saw almost everyone there was female.
+I wasn't comfortable with that, so I turned around and went back to the library.
+
+I only grasped the full implications when I was at the library doors.
+I wasn't comfortable with an all-female
+room, at a time when many women in tech have to deal with an all-male room. *Oh, so that's
+what that feels like. Did deciding not to enter that room make me part of the problem?*
+
+\*\*\*
+{: .centered }
+
+Several of my friends are worried about the reasonable chance Trump has at
+becoming president. Of course, the majority of my friend group is planning to
+back the Democratic nominee. (What, you were expecting me to know
+a Berkeley CS student *who would vote for a Republican?*
+Tell me if you find one of those, because that's
+a rare breed.)
+
+Some have semi-jokingly talked about finding ways to live in Europe next
+year. Many are seriously worried about the damage a Trump presidency could
+cause.
+
+Meanwhile, I'm thinking about the 2008 general election, and the voters who
+gave their all to stop an Obama presidency.
+I've seen interviews from volunteers for the McCain campaign - some were
+truly frightened about how an Obama presidency would erode American values,
+destroy the economy, and send the US into a death spiral.
+
+I listen to the conversation with a blank face. *So now we understand what it feels like,
+to see a candidate we truly fear. A candidate who
+we believe will rip the nation asunder. That fear is nothing new. It
+existed before, exists now, and will always exist. This year, we get
+to see it with our own eyes.*
+
+\*\*\*
+{: .centered }
+
+It doesn't feel like I've had a tough life.
+
+Yes, I went to a challenging high school, and a tough college. I've
+definitely had struggles. But, it doesn't feel like I've had to work as hard
+as other people. I've never had to worry about failing a class. While students
+vent about a final's difficulty, I walk out feeling like I solved every
+problem.
+
+That has to mess with my empathy. How am I supposed to effectively cheer
+up a student for the class I'm TAing, if I got an A+ while they find
+mod math inscrutable? How am I supposed
+to understand implicit prejudice, when I'm a male Asian in Silicon Valley?
+How do I justify avoiding crazy working hours, when those in poverty
+have to deal with them out of necessity?
+
+I view suffering as input-independent. It doesn't matter if someone is
+crying because their salary is below $100,000, or if they're crying because
+they didn't have enough to eat. The inputs don't entitle us to write off
+the suffering of a privileged person.
+Suffering is symmetrical, no matter the cause. Fixing those causes may
+have wildly varying costs, but we should still strive to empathize
+with that suffering.
+
+We should try, and yet it feels like I *don't*. I can walk to an artisan
+tea shop every day and ignore the homeless on the streets. I don't understand
+what it feels like to view the police with fear, or my bank account with dread,
+and I never want to. I'm in a position where I can avoid these issues, and quite
+reasonably decide I don't want to add pain into my life for the sake of having
+pain in my life. Suffering is symmetrical, and I choose to avoid it.
+
+> Tyger, tyger, burning bright  
+> In the forests of the night,  
+> What immortal hand or eye  
+> Could frame thy fearful symmetry?
+
+(William Blake, *The Tyger*)
+{: .centered }
+
+\*\*\*
+{: .centered }
+
+Yesterday, I lost. I didn't finish my post in time. I have to donate $20 to some
+effective charity, and it feels like I lost. It's going to help people, and
+it feels like I lost.
+
+I don't know how to reconcile that, and some part of me doesn't want to.
+
+On days like these, I have to wonder. Which is worse - always living with wool
+worn over your own eyes, or taking the wool off and pulling it back on by
+your own accord? And in the end, which will I choose?
+
