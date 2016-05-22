@@ -12,15 +12,15 @@ want to mess it up. Eventually I decided it was worth writing a beta post.*
 In April of this year, Anca Dragan gave [a presentation on her work in
 human-computer interaction](https://www.facebook.com/events/1083061028418433/).
 Anca is one of those terrifyingly smart people that make you feel slightly
-ashamed. Did a PhD at CMU, was nominated for several best paper awards at top
+ashamed about yourself. She did a PhD at CMU, was nominated for several best paper awards at top
 robotics conferences, and was hired straight out of her PhD to a
-professor position at Berkeley.
+assistant professorship at Berkeley.
 
 The event was hosted by FEM Tech, a new student organization that, quote,
 
 > promotes gender diversity and inspire women from all majors to excel in technology careers. Through organized seminars, mentorship programs, training workshops, and networking events, FEM Tech will provide a supportive community for all majors to create meaningful connections with like-minded women. We hope to excite new interest in tech and provide support for women already in STEM majors.
 
-([FEM Tech] website)
+([FEM Tech](http://femtechberkeley.com/) website)
 {: .centered }
 
 I did not go to this talk. I was very busy that week, and the event description
@@ -30,9 +30,38 @@ that is the excuse I gave myself.
 In truth, I walked towards the event, and saw almost everyone there was female.
 I wasn't comfortable with that, so I turned around and went back to the library.
 
-It took me a few minutes to realize that I wasn't comfortable with an all-female
-room, at a time when many women have to deal with an all-male room. *Doesn't
+I only grasped the full implications when I was at the library doors.
+I wasn't comfortable with an all-female
+room, at a time when many women in tech have to deal with an all-male room. *Oh, so that's
+what that feels like. I don't have to deal with this, but they do. Does
 that make me part of the problem?*
 
 \*\*\*
 {: .centered }
+
+Several of my friends are worried about the reasonable chance Trump has at
+becoming president. Of course, the majority of my friend group is planning to
+back the Democratic nominee. (What, you were expecting me to know
+a Berkeley CS major *who would vote for a Republican?*
+Tell me if you find one of those, because that's
+a rare breed.)
+
+Some have semi-jokingly talked about finding ways to live in Europe next
+year. Many are seriously worried about the damage a Trump presidency could
+cause.
+
+Meanwhile, I'm thinking about the 2008 general election, and the voters who
+were genuinely worried about what an Obama presidency meant for the nation.
+I've seen interviews from volunteers for the McCain campaign - they were
+truly frightened about how an Obama presidency would erode American values,
+destroy the economy, and send the US into a death spiral.
+
+*So now you know what it feels like, to see a candidate who you don't just
+disagree with, but disagree with vehemently. You fear a candidate who
+will rip the nation asunder, but this is nothing new. That fear has
+always existed.*
+
+\*\*\*
+{: .centered }
+
+
