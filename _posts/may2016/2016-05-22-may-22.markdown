@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 22 - ???????"
+date:   2016-05-22 17:52:00 -0700
+---
+
+{% include gauntlet.md %}
+
+I play a lot of video games. They're fun! Mostly, I play platformers and
+puzzle games.
+
+One thing I casually follow is the ideas behind video game design. It's
+really interesting to read about. Much like cinematography, there's so
+much design that you don't consciously recognize until someone points it out
+to you. Good design is both invisible to the common viewer and necessary
+for quality, which can make it infuriatingly difficult to understand.
+
+
