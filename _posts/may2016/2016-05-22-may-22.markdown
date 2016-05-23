@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 22 - Super Meat Boy's Instructive Design"
-date:   2016-05-22 23:55:00 -0700
+date:   2016-05-22 23:58:00 -0700
 ---
 
 {% include gauntlet.md %}
@@ -48,7 +48,7 @@ Here's the first level, 1-1.
 
 Easy enough. To beat this level, you have to jump to the raised terrain on the
 right side, then jump left to the middle platform. You can't jump directly
-to the middle platform, so now you know how high your jump is.
+to the middle platform, and failing to do so teaches you how high your jump is.
 
 You touch Bandage Girl (the pink square) because there's nothing else in the
 level, and after a few loading screens you move to 1-2.
