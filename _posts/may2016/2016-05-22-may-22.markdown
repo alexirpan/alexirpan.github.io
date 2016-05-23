@@ -1,0 +1,127 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 22 - Super Meat Boy's Instructive Design"
+date:   2016-05-22 23:55:00 -0700
+---
+
+{% include gauntlet.md %}
+
+I play a lot of video games. They're fun!
+
+I've learned a bit of video game design, and it's really
+interesting. Much like cinematography, there's so
+much you don't consciously recognize until someone points it out
+to you. Good design is invisible, and it's much easier to notice its
+absence than its presence.
+That can make design infuriatingly difficult to understand, so today I
+decided to explain what I've learned so far.
+
+Before I get into the meat of things, I should cite my sources. I'm cribbing
+from the [Sequelitis video on Mega Man](https://www.youtube.com/watch?v=8FpigqfcvlM)
+(warning: lots of swearing) and
+the [TVTropes page for Instructive Level Design](http://tvtropes.org/pmwiki/pmwiki.php/Main/InstructiveLevelDesign).
+
+\*\*\*
+{: .centered }
+
+As I've said before, [video games take place in a constructed world]({% post_url 2016-05-11-may-11 %}).
+The first thing any video game does is teach you those rules.
+If you don't know the mechanics, how are you supposed to play the game?
+
+What makes video games unique is that they can teach you the rules while
+you're playing the game, without ever explaining them to you outright.
+This is what makes well-crafted video games so fun to me.
+It feels like I'm genuinely learning something.
+I get guided through simple challenges, which are then composed into
+larger ones. When done properly, playing a game feels like solving a
+puzzle where your subconscious already has part of the solution.
+Everything flows.
+
+Let's talk about *Super Meat Boy*. It's a really, really well designed platformer.
+It's also hard as balls, but only in the later levels.
+The first world is easy, because it focuses on teaching the core mechanics.
+
+Here's the first level, 1-1.
+
+![1-1](/public/may22/1-1.jpg)
+{: .centered}
+
+Easy enough. To beat this level, you have to jump to the raised terrain on the
+right side, then jump left to the middle platform. You can't jump directly
+to the middle platform, so now you know how high your jump is.
+
+You touch Bandage Girl (the pink square) because there's nothing else in the
+level, and after a few loading screens you move to 1-2.
+
+![1-2](/public/may22/1-2.jpg)
+{: .centered}
+
+Wow, Bandage Girl is really high and there's no platforms to reach her!
+You might get curious and try jumping to the terrain on the left.
+If you do, you'll learn you die if you go outside the level.
+
+Once that happens, the only thing left is to jump towards the wall. You try
+pressing buttons, and learn you can walljump to cover vertical space.
+Walljumping up the corridor takes you to 1-3.
+
+Also, note the decorative buzzsaw. It'll come up later.
+
+![1-3](/public/may22/1-3.jpg)
+{: .centered}
+
+This gap is too big to cross unless you hold the run button before jumping.
+Also, more decorative buzzsaws.
+
+![1-4](/public/may22/1-4.jpg)
+{: .centered}
+
+So many buzzsaws! This level takes the walljump you learned
+in 1-2 and makes sure you know how to do it. So, you start jumping, and
+then you notice something - *the screen scrolls.*
+
+![1-4-2](/public/may22/1-4-2.jpg)
+{: .centered}
+
+This tells you that levels in *Super Meat Boy* may be bigger than one
+screen. Note we're never worried about going out of bounds - by the time we
+reach the edge of the initial screen, we've seen the screen scroll.
+This primes the player to continue jumping to the top, even if
+they died by going out of bounds on 1-2.
+
+![1-5](/public/may22/1-5.jpg)
+{: .centered}
+
+The natural inclination is to go up. Why not left? Well, if you went left on
+1-2, you died, but if you didn't, note this part I've circled in red.
+
+![1-5-2](/public/may22/1-5-2.jpg)
+{: .centered}
+
+It's incomplete. There must be more to the level off the top of the screen.
+We know the screen scrolls, so let's go up. The only way to go up is to do
+walljumps off a single wall, so now you know how to do that too.
+
+So to recap, here's the game mechanics learned so far.
+
+* You can jump.
+* The goal is to get to Bandage Girl.
+* You can walljump between two walls, or off the same wall.
+* You die if you go out of bounds.
+* You can run, and that gives you a larger jump.
+* Some levels are larger than one screen, and the game will scroll if they are.
+
+This is all taught in the first minute of gameplay, with no environmental
+hazards. This all builds into 1-6.
+
+![1-6](/public/may22/1-6.jpg)
+{: .centered}
+
+This is the first level where you can die by something other than going
+out of bounds. By this point, decorative sawblades
+have appeared in the past few levels, so seeing them as a stage hazard is no
+surprise.
+
+At this point, the player will jump and walljump their way to Bandage Girl.
+They've been taught everything they need, even if they don't recognize it,
+and if they hit a sawblade, it'll be their fault.
+
