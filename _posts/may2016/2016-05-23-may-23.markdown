@@ -6,3 +6,28 @@ date:   2016-05-23 11:52:00 -0700
 
 {% include gauntlet.md %}
 
+A while back, one of my friends asked why I started blogging.
+Amazingly, I've never explictly laid it out, so I figured it
+was worth writing about.
+
+First off, I'm blogging because I want to. This is obvious to
+the point of vacuosness - of course I wouldn't write blog posts
+if I didn't want to. Who would?
+
+Still, this doesn't explain why I have this motivation. I've been
+thinking about it, and ultimately I think I blog for mostly
+selfish reasons.
+
+My blog isn't very focused. I have written both technical posts meant to teach something
+and non-technical posts meant to explain my point of view.
+I classify them into the following categories.
+
+Posts on topics I want to teach to other people. Thdse are
+all technical. Examplws are garbled circuits and efficiently
+biasing a fair coin.
+
+Posts on topics I don't understand yet, but I want to explain
+what I know so far. Examples are my post on the AlphaGo paper.
+
+That leaves discussion posts - posts where I try to preswnt my point
+pf view on a topic and the reasons why I have that perspective. 
