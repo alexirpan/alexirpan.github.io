@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 23 - ????"
-date:   2016-05-23 20:44:00 -0700
+date:   2016-05-23 20:48:00 -0700
 ---
 
 {% include gauntlet.md %}
@@ -10,15 +10,15 @@ A while back, one of my friends asked why I started blogging.
 Amazingly, I've never explictly laid it out, so I figured it
 was worth writing about.
 
+\*\*\*
+{: .centered }
+
 First off, I'm blogging because I want to. This is obvious to
-the point of vacuosness - of course I wouldn't write blog posts
+the point of vacuousness - of course I wouldn't write blog posts
 if I didn't want to. Who would?
 Still, that doesn't explain why I have this motivation to write.
 After thinking about it, I've ultimately decided I blog for mostly
 selfish reasons.
-
-\*\*\*
-{: .centered }
 
 Everything comes back to my perspective on writing. Writing is the process
 of turning explicit thoughts into words. Thinking about writing, on the
@@ -69,7 +69,7 @@ myself to evaluate my own beliefs and become more aware of my implicit thoughts.
 Depending on how much I've reflected on my world views, these posts either come
 naturally or are a huge pain to write.
 In the worst case, organizing all the
-disparate threads of thought into a coherent narrative takes days to disentagle.
+disparate threads of thought into a coherent narrative takes days to disentangle.
 
 Now, note that these are all things I'm doing for me. I'm making blog posts to
 help organize my own thoughts, to help figure out my position on things.
@@ -77,12 +77,12 @@ There's very little I'm trying to do for anybody else.
 
 I suspect the only reason I'm okay with writing a ton of blog posts is that I
 have very few inhibitions against sharing my thoughts on the Internet. I have
-friends who would never, absolutely never share their life stories without
+friends who would never, absolutely never, share their life stories without
 careful consideration. Somehow, my barriers against this are much lower.
 
 (Also, I'd be lying if I didn't point out I was also writing this blog to try to
 make myself interesting. Come one, come all, sue me for my insecurities when
-I know awesome people!)
+I know awesome people! Get in line, I've got first dibs.)
 
 Of course, pointing out your own selfish motivations doesn't stop them from
 being selfish. It just makes you more honest. And besides, a lot of good
