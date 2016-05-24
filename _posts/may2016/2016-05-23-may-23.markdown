@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 23 - ????"
-date:   2016-05-23 11:52:00 -0700
+date:   2016-05-23 19:05:00 -0700
 ---
 
 {% include gauntlet.md %}
@@ -13,21 +13,51 @@ was worth writing about.
 First off, I'm blogging because I want to. This is obvious to
 the point of vacuosness - of course I wouldn't write blog posts
 if I didn't want to. Who would?
-
-Still, this doesn't explain why I have this motivation. I've been
-thinking about it, and ultimately I think I blog for mostly
+Still, that doesn't explain why I have this motivation to write.
+After thinking about it, I've ultimately decided I blog for mostly
 selfish reasons.
 
-My blog isn't very focused. I have written both technical posts meant to teach something
-and non-technical posts meant to explain my point of view.
-I classify them into the following categories.
+\*\*\*
+{: .centered }
 
-Posts on topics I want to teach to other people. Thdse are
-all technical. Examplws are garbled circuits and efficiently
-biasing a fair coin.
+Everything comes back to my perspective on writing. Writing is the process
+of turning explicit thoughts into words. Thinking about writing, on the
+other hand, is the process of turning implicit thoughts into
+explicit thoughts.
 
-Posts on topics I don't understand yet, but I want to explain
-what I know so far. Examples are my post on the AlphaGo paper.
+My blog isn't very focused. I classify my posts into the
+following categories.
 
-That leaves discussion posts - posts where I try to preswnt my point
-pf view on a topic and the reasons why I have that perspective. 
+* Posts on topics I understand well. These are all technical posts, and are
+about problems with known solutions. The post is spent presenting
+and framing the solution the right way. Examples are the
+garbled circuits post and the efficiently biasing a fair coin post.
+* Posts on topics I've been learning about recently. These are things
+I don't understand very well yet, and trying to articulate them forces me
+to condense my understanding into simpler terms.
+* For lack of a better word, discussion posts. These are posts where
+I try to present my point of view on a topic. These are the bulk majority
+of my posts. They're essentially life observations, me explaining
+the way I see the world.
+
+Writing posts on topics I understand well doesn't help my understanding, because
+I know them well enough to have most of my feelings be explicit already.
+Accordingly, I've written very few of these posts, reserving them for
+ideas I find exceptionally cool. Yes, it feels good to teach something new,
+but writing a good teaching post takes forever, and I don't have the motivation
+to sustain it.
+
+Writing posts on topics I've been learning about, on the other hand, is good
+for raising awareness on ideas that I think should be more well known.
+At this point, I don't know enough to make a judgment call on whether the idea
+is worth researching more, but I do know it's interesting enough that someone
+else may want to research it more. These posts are primarily
+signal boosts of the idea.
+
+That leaves discussion posts. When I'm writing discussion posts, I'm forcing
+myself to evaluate my own beliefs and become more aware of my implicit thoughts.
+These posts are either easy to write or not, dependning on how much I've
+thought about my world views. In the worst case, organizing all the
+disparate threads of thought into a coherent narrative is a trainwreck that
+takes hours to disentagle.
+
