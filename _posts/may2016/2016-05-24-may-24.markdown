@@ -5,3 +5,37 @@ date:   2016-05-24 10:13:00 -0700
 ---
 
 {% include gauntlet.md %}
+
+If it wasn't already clear, I'm a pretty geeky dude.
+
+Now, I'm not sure I need to do this, but just to be safe,
+I'm using the definition from the alt-text of this xkcd
+
+XKCD PICTURE
+
+> A geek is someone unusually into something (so you could have computer geeks, baseball geeks, theater geeks, etc) and nerds are (often awkward) science, math, or computer geeks.
+
+If you stick around me long enough, you'll find out I'm one of those people
+who are "from the Internet". I'm a big MLP fan, meaning I've read at least two
+million words of fanfiction and have spent money buying the comics for
+the Expanded Universe. (Yes, MLP has an Expanded Universe. I know, it's
+absurd.)
+
+The first music album I put on my phone was Demetori, a group who makes metal
+remixes of Touhou music. (Touhou is a series of Japanese video games made by
+ZUN. It has an insane subculture that is almost entirely driven by fans.)
+They are actually my favorite band of all time.
+
+Meanwhile, I've also bought merchandise from several webcomics. I have
+a Dinosaur Comics T-shirt, a Homestuck T-shirt, a Gunnerkrigg Court T-shirt
+and a Gunnerkrigg Court whiteboard and a Gunnerkrigg Court coin I received
+for backing a Kickstarter and...look, Gunnerkrigg Court is really good, okay?
+Go read it. GO READ IT. Imagine Harry Potter as a comic written by Neil
+Geiman.
+
+I never really tried to hide my geekiness growing up. I openly played
+Magic: the Gathering in middle school. In high school, I told a friend I was
+reading fanfiction, and they gave me some shit for it, but it was all in
+good fun. When you grow up in an upper-middle class school district, it
+turns out people 
+turns out nobody gives a shit.
