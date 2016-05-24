@@ -1,0 +1,90 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 23 - ????"
+date:   2016-05-23 20:48:00 -0700
+---
+
+{% include gauntlet.md %}
+
+A while back, one of my friends asked why I started blogging.
+Amazingly, I've never explictly laid it out, so I figured it
+was worth writing about.
+
+\*\*\*
+{: .centered }
+
+First off, I'm blogging because I want to. This is obvious to
+the point of vacuousness - of course I wouldn't write blog posts
+if I didn't want to. Who would?
+Still, that doesn't explain why I have this motivation to write.
+After thinking about it, I've ultimately decided I blog for mostly
+selfish reasons.
+
+Everything comes back to my perspective on writing. Writing is the process
+of turning explicit thoughts into words. Thinking about writing, on the
+other hand, is the process of turning implicit thoughts into
+explicit thoughts.
+
+This can take a very long time. I have a hard time explaining my points in
+person. It may just be my general social awkwardness, but often I feel
+like I want to say something and can't because I don't know how to explain
+it properly. If I try, it gets muddled into a ton of rambling that doesn't
+go anywhere.
+
+By blogging, I give myself an outlet for practicing turning vague notions
+into concrete words. It may not come out perfectly, but all I'm looking for
+is getting experience at explaining my thoughts.
+
+With that in mind, let's look at the posts I've written so far.
+I would broadly classify them into the
+following categories.
+
+* Posts on topics I understand well. These are all technical posts, and are
+about problems with known solutions. The post is spent presenting
+and framing the solution the right way.
+* Posts on topics I've been learning about recently. These are things
+I don't understand very well yet, and trying to articulate them forces me
+to condense my understanding into simpler terms.
+* For lack of a better word, discussion posts. These are posts where
+I try to present my point of view on a topic.
+They're essentially life observations, things a person might post on Twitter
+or Facebook.
+
+Writing posts on topics I understand well only helps train my framing, because
+I know the ideas well enough to have most of my feelings be explicit already.
+Accordingly, I've written very few of these posts, reserving them for
+ideas I find exceptionally cool. Yes, it feels good to teach something new,
+but writing a good teaching post takes forever, and I don't have the motivation
+to sustain it.
+
+Writing posts on topics I've been learning about, on the other hand, is good
+for raising awareness on ideas that I think should be more well known.
+At this point, I don't know enough to make a judgment call on whether the idea
+is worth researching more, but I do know it's interesting enough that someone
+else may want to research it more. It helps me organize the new information
+I've just received.
+
+That leaves discussion posts. In these posts, I'm forcing
+myself to evaluate my own beliefs and become more aware of my implicit thoughts.
+Depending on how much I've reflected on my world views, these posts either come
+naturally or are a huge pain to write.
+In the worst case, organizing all the
+disparate threads of thought into a coherent narrative takes days to disentangle.
+
+Now, note that these are all things I'm doing for me. I'm making blog posts to
+help organize my own thoughts, to help figure out my position on things.
+There's very little I'm trying to do for anybody else.
+
+I suspect the only reason I'm okay with writing a ton of blog posts is that I
+have very few inhibitions against sharing my thoughts on the Internet. I have
+friends who would never, absolutely never, share their life stories without
+careful consideration. Somehow, my barriers against this are much lower.
+
+(Also, I'd be lying if I didn't point out I was also writing this blog to try to
+make myself interesting. Come one, come all, sue me for my insecurities when
+I know awesome people! Get in line, I've got first dibs.)
+
+Of course, pointing out your own selfish motivations doesn't stop them from
+being selfish. It just makes you more honest. And besides, a lot of good
+things in the world happened for selfish reasons. If you like this blog,
+hopefully you consider it as one of them.
