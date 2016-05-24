@@ -6,58 +6,92 @@ date:   2016-05-24 10:13:00 -0700
 
 {% include gauntlet.md %}
 
+> I'm here to show you who I am   
+> Throw off the veil, it's finally time   
+> There's more to me than glitz and glam,  
+> And now I feel my stars align 
+
 If it wasn't already clear, I'm a pretty weird dude.
-
-By any measure, I'm both a geek and a nerd.
-Now, I'm not sure I need to do this, but just to be safe,
-I'm using the definition from the alt-text of this xkcd
-
-XKCD PICTURE
-
-> A geek is someone unusually into something (so you could have computer geeks, baseball geeks, theater geeks, etc) and nerds are (often awkward) science, math, or computer geeks.
 
 If you stick around me long enough, you'll find out I'm one of those people
 who are "from the Internet". I'm a big Friendship is Magic fan, meaning
-I've read at least two million words of fanfiction and have spent money
-buying the comics for the Expanded Universe.
+I've read over two million words of fanfiction and have spent money
+buying comics from the Expanded Universe.
 
-(Yes, MLP has an Expanded Universe. It is completely absurd that there's a
-market for this, but I'm a consumer of it, so I understand *why* it exists...)
+(Yes, MLP has an Expanded Universe. I know, it's absurd.)
 
-In high school, I got into the Touhou Project. It's a series of Japanese
-video games made by a single person. Somehow, there's an entire Internet
-subculture revolving around this. I only follow the music side, but there's
-a thriving scene of music remixes that I find objectively good.
-The first music album I put on my phone was BEGIERDE DES ZAUBERER, a metal
-album by Demetori. They are actually my favorite music group of all time.
+In high school, I got into the Touhou fandom.
+I only follow the music side, but it's a thriving scene, and I find lots
+of it objectively good even without the Touhou context.
+The first music album I downloaded to my phone was BEGIERDE DES ZAUBERER,
+a metal album by Demetori. On reflection, they are actually my favorite
+band, ever. I've yet to find anyone that's as consistently amazing.
 
-Meanwhile, I read a decent number of webcomics, some of which I've bought
-merchandise for. I have a Dinosaur Comics T-shirt. And, a Homestuck T-shirt.
+Meanwhile, I read a decent number of webcomics, as my reviews page can attest
+to. Again, I've bought merchandise for this.
+I have a Dinosaur Comics T-shirt. I have a Homestuck T-shirt.
 I also have a Gunnerkrigg Court T-shirt, a Gunnerkrigg Court whiteboard, a metal
 Gunnerkrigg Court coin I received for backing the Legendary Showdown Kickstarter,
-and...look, Gunnerkrigg Court is really good, okay? Go read it, it is by
-far my favorite webcomic.
+and...look, Gunnerkrigg Court is really good, okay? Go read it. I've been
+meaning to write a post about Gunnerkrigg Court ever since starting this blog,
+but I haven't figured out what to say to do it justice.
 
-The point of all of this is that I'm part of a lot of subcultures, and
+The point being, I'm part of a lot of subcultures, and
 I never felt like I had to hide that when growing up. I did for a while, until
-I realized that people weren't really judging me.
+I realized I didn't have to.
 I openly played Magic: the Gathering in middle school. I admitted to reading
 fanfiction in high school, and although my friends gave me shit for it, it was
-all in good fun. By the time I hit college I was firmly aiming for the "weird
-but kinda interesting" niche.
+all in good fun. By the time I hit college I was well into the
+"from the Internet" niche.
 
-This is completely at odds with the K-12 education I've heard people complain
-about, where they have to deal with bullying and everyone's an asshole.
-I'm not saying that my school didn't have these issues, I'm saying that I
-was mostly insulated from them and I never had to interact with any of those
-problems. **I had the freedom to reveal whatever I wanted
-about myself without having to worry about what people thought**. I only realize
-how fortunate I was to have such an environment until now. It didn't
-matter if there were people who did care, because there were enough people
-who *didn't* to make this socially viable.
+This is completely at odds with the K-12 education people complain about,
+where everyone's an asshole.
+I'm not saying that my school didn't have issues, but any issues it did have
+somehow never reached me. **I had the freedom to reveal whatever I wanted
+about myself without having to worry about what people thought**.
+It didn't matter if there were people who did care, because there were enough people
+who didn't to make it socially viable.
 
 In contrast, there are people who have to bottle up the weird things about
 themselves, not because they don't want to share them, but because they
-can't share them without ostracizing themselves. I find that really sad. I'm
-not sure how I would have come out in that environment, but I don't think I'd
-be as happy or okay with my life as I am.
+can't share them without ostracizing themselves. I find that really sad. It's
+only in retrospect that I can see how fortunate my environment was, and I'm
+not sure how I would turned out if I got bullied for things I liked.
+
+In Season 5 of MLP, there's an episode where an old friend comes back to
+Ponyville. She's hit the big time, but over the course of the episode she
+realizes she's so far from her roots that she's unrecognizable.
+It eventually builds into this quote.
+
+> The *real* perk of friendship is gettin' to see your friend
+> bein' true to their self. And Rara, when you're simply yourself,
+> you're the brightest star I've ever seen shine.
+
+And then, into this song.
+
+VIDEO
+
+It's one of my favorite songs from the show. So, I'll close with it.
+
+> And now I see those colors   
+> Right before my eyes   
+> I hear my voice so clearly   
+> And I know that it is right   
+>
+> They thought I was weak, but I am strong   
+> They sold me the world, but they were wrong   
+> And now that I'm back, I still belong   
+> 'Cause I know   
+>
+> That I am just a pony   
+> I make mistakes from time to time   
+> But now I know the real me   
+> And put my heart out on the line   
+>
+> And let the magic in my heart stay true   
+> Whoa-whoa-whoa-whoa   
+> And let the magic in my heart stay true   
+> Whoa-whoa-whoa-whoa   
+> Just like the magic inside of you   
+>
+> Just like the magic inside of you.
