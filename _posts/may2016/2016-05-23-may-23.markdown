@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "The Blogging Gauntlet: May 23 - ????"
-date:   2016-05-23 20:48:00 -0700
+title:  "The Blogging Gauntlet: May 23 - Why Do I Blog?"
+date:   2016-05-23 22:03:00 -0700
 ---
 
 {% include gauntlet.md %}
