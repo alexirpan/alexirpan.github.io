@@ -6,6 +6,8 @@ permalink: /research/
 
 This is not a standard research page.
 
+For various reasons, I
+
 
 
 These are personal projects that I consider good enough to share.
