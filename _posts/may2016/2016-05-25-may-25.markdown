@@ -7,8 +7,6 @@ date:   2016-05-25 16:10:00 -0700
 {% include gauntlet.md %}
 
 I watched *The Social Network* for the first time a few months ago.
-Yes, I missed the huge wave of hype when it came out in 2010, and
-only caught up about 5.5 years later.
 
 It's a pretty good movie, but it was also very obviously written to
 be an entertaining movie instead of an accurate story. In reply to
@@ -24,8 +22,8 @@ depiction of the tech industry.
 For one, the whole movie is pretty misogynstic. No, I mean really misogynstic.
 Almost every female character in the movie is defined by having sex, being in
 a relationship, or partying half-naked. Turns out I'm not alone in feeling
-this way, since it looks like there was a lot of backlash over this.
-In response, Sorkin said this.
+this way, because based on news articles from the time there was a lot of
+backlash over how the movie depicted women. In response, Sorkin said this.
 
 > Facebook was born during a night of incredibly misogyny. The idea of comparing women to farm animals, and then to each other, based on their looks and then publicly ranking them. It was a revenge stunt, aimed first at the woman who'd most recently broke his heart (who should get some kind of medal for not breaking his head) and then at the entire female population of Harvard.
 >
@@ -69,4 +67,24 @@ regards to diversity, but I can accept their decision.
 On the other hand, I'm less okay with *The Social Network*. It takes the
 diversity issues in tech and exaggerates them for the sake of drama. It tries
 to show how personal issues among the people closest to Facebook led to isolation,
-but the movie can't avoid portraying those people with glamour.
+but the movie can't avoid portraying those people with glamour. In the end,
+everyone still comes out ridiculously rich.
+
+There are people in public health who campaign against depicting smoking in movies.
+They've done studies showing that it has a big influence on teen smoking
+rates. And again, people have made the same defense - we're trying to depict
+the world as it is. People smoke in real life. People are going to smoke in
+movies too. On the other hand, a lot of actors were on the payrolls for
+tobacco companies, in the "help promote us and we'll fund the movie" sense,
+which made the problem a lot less ambiguous.
+
+In contrast, I highly doubt there are people who are going to pull funding
+if a movie's cast is too diverse, or its plot is too progressive. Oh, unless
+you count instances where executives thought a movie wouldn't sell with a female
+lead or an Asian lead, and gently pushed for someone less likely to shock
+the audience. Yeah, on second thought maybe this is still an issue.
+
+Maybe it's the optimist in me, but I think a show can be aspirational in its
+depiction of gender and race and be successful as well. It's definitely been
+getting better, I don't know anyone who would argue otherwise. I'm going to
+expect it to keep improving.
