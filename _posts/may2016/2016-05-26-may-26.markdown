@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 26 - Titles Are Hard"
+date:   2016-05-26 01:12:00 -0700
+---
+
+{% include gauntlet.md %}
+
+When I look back on the posts I've been writing this month,
+I notice I've been using a lot fewer section headings than
+I did in my previous posts. Instead of making up a section
+title, I'll add a
+
+\*\*\*
+{: .centered }
+
+And move on to the next topic. I wonder why?
+
+\*\*\*
+{: .centered }
+
+One reason I've been doing this is that making up titles
+is hard. No, really, it's awful. Fun fact: back when I first
+set up a personal site on Blogger, its title was actually
+"Titles Are Hard". This was back when I indulged in
+recursion and self-reference a bit more than I should have.
+(I blame "There's a Monster at the End of This Book" for
+awakening that part of myself.)
+
+Now, although it wasn't a good blog title, it was at
+least an accurate blog title. It is really hard to create a
+good section title, especially when I'm writing by the
+seat of my pants. When I use a title, the implicit promise I'm
+giving to the reader is that the title is going to be related
+to the upcoming section, possibly in some pithy way.
+
+**This is so hard to do well!** Look, here's how my writing has gone
+this week. I pick some seed topic, let it germinate into whatever
+it wants, and prune the extra leaves to make it more focused. But, when
+I place pressure to produce more quickly, I don't have time to do lots
+of pruning. I don't know quite what I'm writing until I write it, and
+when the topic is always shifting under my feet, it's hard to pick a title
+that matches the ideas in the most recent paragraph.
+
