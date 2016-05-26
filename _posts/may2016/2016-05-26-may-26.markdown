@@ -1,0 +1,78 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 26 - Titles Are Hard"
+date:   2016-05-26 16:42:00 -0700
+---
+
+{% include gauntlet.md %}
+
+When I look back on the posts I've been writing this month,
+I notice I've been using a lot fewer section headings than
+I did in my previous posts. Instead of making up a section
+title, I'll add a divider like
+
+\*\*\*
+{: .centered }
+
+And move on to the next topic. I wonder why?
+
+\*\*\*
+{: .centered }
+
+One reason I've been doing this is that making up titles
+is hard. No, really, it's awful. Fun fact: back when I first
+set up a personal site on Blogger, its title was actually
+"Titles Are Hard". This was back when I indulged in
+recursion and self-reference a bit more than I should have.
+(I blame [*The  Monster at the End of This Book*](https://en.wikipedia.org/wiki/The_Monster_at_the_End_of_This_Book:_Starring_Lovable,_Furry_Old_Grover) for
+awakening that part of myself.)
+
+Now, it may not have been a good blog title, but at least it was
+accurate. It is really hard to create a
+good section title, especially when I'm writing by the
+seat of my pants. When I use a title, the implicit promise I'm
+giving to the reader is that the title is going to be related
+to the upcoming section, possibly in some pithy way.
+
+**This is so hard to do well!** Look, here's how my writing has gone this
+month.
+First, I come up with some seed topic. From there, I
+let the idea germinate into whatever it wants. I then prune the extra leaves
+to make it appear like I had a plan of what to write all along.
+But, when
+I place pressure to produce more quickly, I don't have time to do lots
+of pruning. To continue this tortured analogy, I allow the plant to grow with
+no constraints, realize I'm
+running out of time, trim the most blatant errant leaves, and reveal
+what I have so far. Then it's on to the next plant.
+
+For me, writing is this gradual process where I realize what I want to write
+after I write it.
+When the topic is always shifting under my feet, it's hard to pick a title
+that matches the ideas I've been talking about. This blogging gauntlet
+is focused on raw output. That means there are no incentives to go back and decide
+on good titles, because that takes time, time I could spend writing more
+material instead.
+
+Whatever cleanliness there is in my writing is simply the byproduct of whatever
+I find acceptable on that day, nothing more.
+
+An Ending of Sorts
+------------------------------------------
+
+While I'm on this topic, you know what else is terrible? Endings.
+I have without fail hated my ending on every first draft.
+If I had the time that day, I would rewrite the ending again and again until
+it was acceptable. More commonly, I left it the way it was.
+
+Much in the way that it's hard for me to come up with a pithy way to sum
+up a section, it's hard for me to come up with a nice way to end the post
+as a whole. Conversations don't have a fixed ending, they continue until the
+points naturally die. In writing, the standards are different. People expect
+to read [something to take home](http://alumni.media.mit.edu/~cahn/life/gian-carlo-rota-10-lessons.html).
+
+On the other hand, I've read several blog posts
+that also didn't have a good conclusion. They simply stopped at the moment they
+said everything they were planning to say.
+
+Maybe that's okay after all.
