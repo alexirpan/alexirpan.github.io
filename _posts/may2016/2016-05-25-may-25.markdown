@@ -11,9 +11,8 @@ I watched *The Social Network* for the first time a few months ago.
 It's a pretty good movie, but it was also very obviously written to
 be an entertaining movie instead of an accurate story. In reply to
 criticism along these lines, the scriptwriter
-Aaron Sorkin said,
+Aaron Sorkin [said](http://nymag.com/movies/features/68319/index4.html),
 "I don't want my fidelity to be to the truth; I want it to be to storytelling. What is the big deal about accuracy purely for accuracy's sake, and can we not have the true be the enemy of the good?"
-(CITE).
 
 I think it's self-evident that Sorkin bent the story to make it more cinematic,
 and he achieved his goal very well, but I'm not sure it makes up for its
@@ -28,6 +27,9 @@ backlash over how the movie depicted women. In response, Sorkin said this.
 > Facebook was born during a night of incredibly misogyny. The idea of comparing women to farm animals, and then to each other, based on their looks and then publicly ranking them. It was a revenge stunt, aimed first at the woman who'd most recently broke his heart (who should get some kind of medal for not breaking his head) and then at the entire female population of Harvard.
 >
 > More generally, I was writing about a very angry and deeply misogynistic group of people. These aren't the cuddly nerds we made movies about in the 80's. They're very angry that the cheerleader still wants to go out with the quarterback instead of the men (boys) who are running the universe right now. The women they surround themselves with aren't women who challenge them (and frankly, no woman who could challenge them would be interested in being anywhere near them.)
+
+([Vulture](http://www.vulture.com/2010/10/aaron_sorkin_would_like_to_go.html?mid=agenda--20101012))
+{: .centered }
 
 I'm not sure I like this explanation very much.
 Sorkin's claim is that he wanted to present people the way they were, and the
@@ -51,32 +53,38 @@ all white dudes.
 >
 > "We shot some crowd footage at Disrupt," the real TechCrunch conference that fictional Pied Piper competes in, he said. "I have a friend in tech who called me, and she said, 'Those crowd shots are absurd, you didn't put any women in there at all.' I had to tell her—those were real shots. The world we're depicting is fucked up. Do we have a responsibility to make the genders on our show more balanced, when this is the world we're depicting?"
 
-http://arstechnica.com/the-multiverse/2016/03/cast-of-hbos-silicon-valley-discuss-the-real-tech-region-at-swsw/
+([Ars Technica](http://arstechnica.com/the-multiverse/2016/03/cast-of-hbos-silicon-valley-discuss-the-real-tech-region-at-swsw/))
+{: .centered }
 
 It's an interesting question. Should show writers be obligated to present the
 world as it really is, or should they present the world as we wish it should be?
-What's the right balanced between aspirational depictions and real ones?
+What's the right balance between aspirational and reality?
 
-I'd actually defend *Silicon Valley*'s depiction, because they're trying to
-lampoon the whole tech industry. Their whole goal is to point out how
-ridiculous tech is while bending the depiction as little as needed. Again, I
-haven't seen the show, but if it makes fun of its own lack of diversity,
-that's fine by me. I probably wouldn't have made the same decision with
-regards to diversity, but I can accept their decision.
+I think show writers actually do have a responsibility to depict gender balance,
+even when it doesn't reflect reality. Your show is going to be unrealistic
+anyways. If people are going to give you shit for gender balance,
+they can go to hell.
 
-On the other hand, I'm less okay with *The Social Network*. It takes the
+For the record, I partially defend *Silicon Valley*'s depiction, because
+they're trying to lampoon the tech industry. The whole point of the show is to
+portray Silicon Valley accurately, then make a few biting comments to point
+out its absurdity.
+I wouldn't have made the same decision, but I understand
+why they did.
+
+On the other hand, *The Social Network* doesn't have this defense.
+It takes the
 diversity issues in tech and exaggerates them for the sake of drama. It tries
 to show how personal issues among the people closest to Facebook led to isolation,
 but the movie can't avoid portraying those people with glamour. In the end,
 everyone still comes out ridiculously rich.
 
-There are people in public health who campaign against depicting smoking in movies.
-They've done studies showing that it has a big influence on teen smoking
-rates. And again, people have made the same defense - we're trying to depict
+There are people in public health [who campaign against depicting smoking in movies](http://smokefreemovies.ucsf.edu/).
+And again, people have made the same defense - we're trying to depict
 the world as it is. People smoke in real life. People are going to smoke in
-movies too. On the other hand, a lot of actors were on the payrolls for
-tobacco companies, in the "help promote us and we'll fund the movie" sense,
-which made the problem a lot less ambiguous.
+movies too. On the other hand, back in the 1950s a lot of actors were on
+tobacco company payrolls, in the sense of "advertise smoking or we aren't going
+to give you funding", which made that argument a lot weaker.
 
 In contrast, I highly doubt there are people who are going to pull funding
 if a movie's cast is too diverse, or its plot is too progressive. Oh, unless
@@ -84,6 +92,9 @@ you count instances where executives thought a movie wouldn't sell with a female
 lead or an Asian lead, and gently pushed for someone less likely to shock
 the audience. Yeah, on second thought maybe this is still an issue.
 
+I'm not saying the whole media industry is against dated depictions of society.
+I'm just saying there's enough aggregate resistance against diversity and misogyny
+to make it continue to be an issue.
 Maybe it's the optimist in me, but I think a show can be aspirational in its
 depiction of gender and race and be successful as well. It's definitely been
 getting better, I don't know anyone who would argue otherwise. I'm going to
