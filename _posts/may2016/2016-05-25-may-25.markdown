@@ -1,10 +1,13 @@
 ---
 layout: post
-title:  "The Blogging Gauntlet: May 25 - ??????"
-date:   2016-05-25 16:10:00 -0700
+title:  "The Blogging Gauntlet: May 25 - We're Not Misogynistic, Reality Is"
+date:   2016-05-25 19:09:00 -0700
 ---
 
 {% include gauntlet.md %}
+
+*For the record: I know this title is clickbait, but I couldn't find an
+alternative I liked.*
 
 I watched *The Social Network* for the first time a few months ago.
 
@@ -96,6 +99,12 @@ I'm not saying the whole media industry is against dated depictions of society.
 I'm just saying there's enough aggregate resistance against diversity and misogyny
 to make it continue to be an issue.
 Maybe it's the optimist in me, but I think a show can be aspirational in its
-depiction of gender and race and be successful as well. It's definitely been
-getting better, I don't know anyone who would argue otherwise. I'm going to
-expect it to keep improving.
+depiction of gender and race and be successful as well. It's been getting
+better in real life. Why can't it be getting better in cinema?
+
+**If you actually want to depict the world the way it is, why focus on the negatives,
+when you could focus on what people are doing to make the world better?**
+That's reality too.
+
+Somehow, I doubt I'll ever see a show about a company's
+efforts to improve workplace diversity. But, a man can dream.
