@@ -19,8 +19,8 @@ and he achieved his goal very well, but I'm not sure it makes up for its
 depiction of the tech industry.
 
 For one, the whole movie is pretty misogynistic. No, I mean really misogynistic.
-Almost every female character in the movie is defined by having sex, being in
-a relationship, or partying half-naked. Turns out I'm not alone in feeling
+Almost every female character in the movie is defined by having sex, dating
+a male lead, or partying half-naked. Turns out I'm not alone in feeling
 this way, because based on news articles from the time there was a lot of
 backlash over how the movie depicted women. In response, Sorkin said this.
 
@@ -28,20 +28,20 @@ backlash over how the movie depicted women. In response, Sorkin said this.
 >
 > More generally, I was writing about a very angry and deeply misogynistic group of people. These aren't the cuddly nerds we made movies about in the 80's. They're very angry that the cheerleader still wants to go out with the quarterback instead of the men (boys) who are running the universe right now. The women they surround themselves with aren't women who challenge them (and frankly, no woman who could challenge them would be interested in being anywhere near them.)
 
-([Vulture](http://www.vulture.com/2010/10/aaron_sorkin_would_like_to_go.html?mid=agenda--20101012))
+([Ken Levine's Blog](http://kenlevine.blogspot.com/2010/10/aaron-sorkin-responds-to-commenter-in.html))
 {: .centered }
 
 I'm not sure I like this explanation very much.
 Sorkin's claim is that he wanted to present people the way they were, and the
 people he presented were actually that misogynistic. In other words, if you
-found this distasteful, it was supposed to make you feel that way.
-On the other hand, he wrote out the part where Zuckerberg was in a long term
-relationship with Priscilla Chan during most of Facebook's lifetime. To
-present the misogynistic world he wanted to present, Sorkin had to bend
-the facts, and at that point I'm not sure how strong your claim is allowed
-to be.
+found the movie's depiction of women distasteful, it was supposed to make you feel that way.
+This falls apart when you realize he wrote out
+Priscilla Chan, Zuckerberg's long term girlfriend during Facebook's early
+years.
+If you're bending the facts for your narrative, I'm not sure you get to claim
+you're depicting people accurately.
 
-This defense was also repeated by the show writers for *Silicon Valley*. Now,
+A similar defense was given by the show writers for *Silicon Valley*. Now,
 for the record, I haven't seen the show. By my understanding, their goal is
 to satire startup culture, so they feel they have an obligation to present
 the world as accurately as possible - meaning a very homogeneous cast of almost
