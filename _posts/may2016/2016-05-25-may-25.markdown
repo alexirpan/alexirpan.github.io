@@ -1,0 +1,110 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 25 - We're Not Misogynistic, Reality Is"
+date:   2016-05-25 19:09:00 -0700
+---
+
+{% include gauntlet.md %}
+
+*For the record: I know this title is clickbait, but I couldn't find an
+alternative I liked.*
+
+I watched *The Social Network* for the first time a few months ago.
+
+It's a pretty good movie, but it was also very obviously written to
+be an entertaining movie instead of an accurate story. In reply to
+criticism along these lines, the scriptwriter
+Aaron Sorkin [said](http://nymag.com/movies/features/68319/index4.html),
+"I don't want my fidelity to be to the truth; I want it to be to storytelling. What is the big deal about accuracy purely for accuracy's sake, and can we not have the true be the enemy of the good?"
+
+I think it's self-evident that Sorkin bent the story to make it more cinematic,
+and he achieved his goal very well, but I'm not sure it makes up for its
+depiction of the tech industry.
+
+For one, the whole movie is pretty misogynistic. No, I mean really misogynistic.
+Almost every female character in the movie is defined by having sex, dating
+a male lead, or partying half-naked. Turns out I'm not alone in feeling
+this way, because based on news articles from the time there was a lot of
+backlash over how the movie depicted women. In response, Sorkin said this.
+
+> Facebook was born during a night of incredibly misogyny. The idea of comparing women to farm animals, and then to each other, based on their looks and then publicly ranking them. It was a revenge stunt, aimed first at the woman who'd most recently broke his heart (who should get some kind of medal for not breaking his head) and then at the entire female population of Harvard.
+>
+> More generally, I was writing about a very angry and deeply misogynistic group of people. These aren't the cuddly nerds we made movies about in the 80's. They're very angry that the cheerleader still wants to go out with the quarterback instead of the men (boys) who are running the universe right now. The women they surround themselves with aren't women who challenge them (and frankly, no woman who could challenge them would be interested in being anywhere near them.)
+
+([Ken Levine's Blog](http://kenlevine.blogspot.com/2010/10/aaron-sorkin-responds-to-commenter-in.html))
+{: .centered }
+
+I'm not sure I like this explanation very much.
+Sorkin's claim is that he wanted to present people the way they were, and the
+people he presented were actually that misogynistic. In other words, if you
+found the movie's depiction of women distasteful, it was supposed to make you feel that way.
+This falls apart when you realize he wrote out
+Priscilla Chan, Zuckerberg's long term girlfriend during Facebook's early
+years.
+If you're bending the facts for your narrative, I'm not sure you get to claim
+you're depicting people accurately.
+
+A similar defense was given by the show writers for *Silicon Valley*. Now,
+for the record, I haven't seen the show. By my understanding, their goal is
+to satire startup culture, so they feel they have an obligation to present
+the world as accurately as possible - meaning a very homogeneous cast of almost
+all white dudes.
+
+> There's an issue lurking behind the show's success—and it's the same one that faces the real Silicon Valley. The show is overwhelmingly white and male, especially in the first season, where the only "diversity" comes from one South Asian programmer and a female VC.
+>
+> Berg said they're not shying away from the issue at all. They're just reflecting the valley as they see it.
+>
+> "We shot some crowd footage at Disrupt," the real TechCrunch conference that fictional Pied Piper competes in, he said. "I have a friend in tech who called me, and she said, 'Those crowd shots are absurd, you didn't put any women in there at all.' I had to tell her—those were real shots. The world we're depicting is fucked up. Do we have a responsibility to make the genders on our show more balanced, when this is the world we're depicting?"
+
+([Ars Technica](http://arstechnica.com/the-multiverse/2016/03/cast-of-hbos-silicon-valley-discuss-the-real-tech-region-at-swsw/))
+{: .centered }
+
+It's an interesting question. Should show writers be obligated to present the
+world as it really is, or should they present the world as we wish it should be?
+What's the right balance between aspirational and reality?
+
+I think show writers actually do have a responsibility to depict gender balance,
+even when it doesn't reflect reality. Your show is going to be unrealistic
+anyways. If people are going to give you shit for gender balance,
+they can go to hell.
+
+For the record, I partially defend *Silicon Valley*'s depiction, because
+they're trying to lampoon the tech industry. The whole point of the show is to
+portray Silicon Valley accurately, then make a few biting comments to point
+out its absurdity.
+I wouldn't have made the same decision, but I understand
+why they did.
+
+On the other hand, *The Social Network* doesn't have this defense.
+It takes the
+diversity issues in tech and exaggerates them for the sake of drama. It tries
+to show how personal issues among the people closest to Facebook led to isolation,
+but the movie can't avoid portraying those people with glamour. In the end,
+everyone still comes out ridiculously rich.
+
+There are people in public health [who campaign against depicting smoking in movies](http://smokefreemovies.ucsf.edu/).
+And again, people have made the same defense - we're trying to depict
+the world as it is. People smoke in real life. People are going to smoke in
+movies too. On the other hand, back in the 1950s a lot of actors were on
+tobacco company payrolls, in the sense of "advertise smoking or we aren't going
+to give you funding", which made that argument a lot weaker.
+
+In contrast, I highly doubt there are people who are going to pull funding
+if a movie's cast is too diverse, or its plot is too progressive. Oh, unless
+you count instances where executives thought a movie wouldn't sell with a female
+lead or an Asian lead, and gently pushed for someone less likely to shock
+the audience. Yeah, on second thought maybe this is still an issue.
+
+I'm not saying the whole media industry is against dated depictions of society.
+I'm just saying there's enough aggregate resistance against diversity and misogyny
+to make it continue to be an issue.
+Maybe it's the optimist in me, but I think a show can be aspirational in its
+depiction of gender and race and be successful as well. It's been getting
+better in real life. Why can't it be getting better in cinema?
+
+**If you actually want to depict the world the way it is, why focus on the negatives,
+when you could focus on what people are doing to make the world better?**
+That's reality too.
+
+Somehow, I doubt I'll ever see a show about a company's
+efforts to improve workplace diversity. But, a man can dream.
