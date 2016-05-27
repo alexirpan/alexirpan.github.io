@@ -9,45 +9,48 @@ date:   2016-05-27 02:42:00 -0700
 If there's anything I like, it's when people do something interesting
 with structure.
 
-A good example of this is from the Firefly fanfic *Forward*. It uses
-an omniscent narrator. To indicate River's general...spaciness, the
-text is centered on the page, and randomly shifts between normal text,
-bold text, and italics.
+A good example of this is from the Firefly fanfic *Forward*. To indicate
+River's...spaciness, her thoughts are centered instead of left-aligned,
+and randomly shifts into bolds or italics.
 
-Another example comes up in *Ra*. Events that take place in the dreamscape
-Tanako's World is right-aligned instead of left-aligned.
+Another example comes up in *Ra*. Depending on where events take place,
+the text is left-aligned or right-aligned.
 
-I'm not sure quite what makes this so interesting to me. My closest guess
-is that toying with the structure reveals our implicit assumptions about
-that structure. By adjusting it in the right way, we can send ideas that
-are almost unrelated to the words themselves.
+I'm not quite sure why I like when people mess with structure, but
+my closest guess is that toying with the structure reveals our implicit
+assumptions about that structure. By adjusting it in the right way, authors can
+reveal those structural assumptions, then push their boundaries.
+That lets them send ideas without changing the words themselves.
+Done properly, it gives a sense of completeness - the text content
+gets tied to the medium itself.
 
-In any case, this means I'm usually on the lookout for ways I can mess
-with or subvert the typical structure. In yesterday's post, I was pretty
+When I write blog posts, I'm on the lookout for ways I can play with
+structural expectations. In yesterday's post, I was pretty
 pleased with myself for finding a way to use
 
 \*\*\*
 {: .centered }
 
-twice in a row with different meanings both times. (And I'm also pleased
-I found a way to use the nonstandard meaning again, but this joke is
-wearing thing.)
+twice in a row, once to indicate how I use it as a section break and once
+as an actual section break.
+(I'm also pleased I strecthed that gag into this post, but it's wearing
+thin and I'll stop.)
 
-On occasions this comes out as self-descriptive writing. A while back, I
+On occasions, that leads to self-descriptive writing. A while back, I
 used parallelism when describing how I used parallelism, and used a
 two sentence paragraph when explaining why I liked short paragraphs.
 
-I've been noticing that some of my blog post ideas have been based around
-writing something with a strange structure. For a while, I was briefly
-considering writing a post made of nothing but quotations of other work.
-That post would have talked about plagiarism, while
-also showing that if you use enough sources, the act of synthesizing
-all the disconnected ideas is enough to make it original. Look, I even
-collected some quotes for this.
+For a while, I was seriously
+considering writing a post made entirely from quotations.
+I would have cited quotes about plagiarism, using the structure to show
+I was copying everything I could find. At the same time, the structure
+would also show how synthesizing all the ideas together was enough
+to make it original, and arguably not plagiarism at all.
+Look, I even have some prototype quotes I was going to use.
 
-> To steal ideas from one person is plagiarism; to steal from many is research.
+> There is nothing new under the sun.
 
-(The [source](http://quoteinvestigator.com/2010/09/20/plagiarism/) is complicated)
+(Ecclesiastes)
 {: .centered }
 
 > Plagiarize  
@@ -58,16 +61,51 @@ collected some quotes for this.
 > Only be sure always to call it please "research"  
 
 (Lobachevsky by Tom Lehrer)
+{: .centered }
 
-> There is nothing new under the sun.
+> If I have seen further, it is by standing on the shoulders of giants.
 
-(Ecclesiastes)
+(Isaac Newton)
+{: .centered }
 
-Eventually I abandoned this project, because the reward-to-effort ratio was
-really, really bad. I still like it conceptually, but not enough to justify
-making it for real.
+> To steal ideas from one person is plagiarism; to steal from many is research.
 
-As an aside, video games are an especially interesting medium for this.
-For visual novels like Phoenix Wright and the like, it's surprising how key
-interactivity is to the whole experience. It's an example of how narratives
-have to shift depending on if they're a book, a movie, or a game.
+(The [source](http://quoteinvestigator.com/2010/09/20/plagiarism/) is complicated)
+{: .centered }
+
+Eventually I abandoned this project. The reward-to-effort ratio was
+enormous and too big to justify.
+I still like it conceptually, but it was too hard to make it real.
+Eventually I tried a quote-heavy post in [Memorable Quotes]({% post_url 2016-05-16-may-16 %})
+and called it a day.
+
+I know of one other person who came up with a similarly convoluted structure,
+and actually went through with it. That person would be Mark Rosewater,
+head designer for Magic: the Gathering. He writes weekly articles about the
+design of the current sets, and sometimes about game design as a whole.
+
+Way back in 2004, he decided to write an article on
+[Elegance](http://magic.wizards.com/en/articles/archive/making-magic/elegance-2004-10-18-48).
+It is the most divisive article he's ever written. I haven't kept up with
+MTG very closely, but I doubt anything has matched the backlash or praise he
+got.
+
+The structure is completely insane. The article is a home page of 50 words.
+Each word is a link to another 50 word snippet. It's conceptually beautiful,
+but it's also horrendously difficult for the reader.
+The fanmail got crazy enough that he ended up spending next week's
+[article](http://magic.wizards.com/en/articles/archive/making-magic/elegant-response-2004-11-01)
+on how people responded to "Elegance".
+
+I'd recommend reading his response article by itself, but I'll briefly summarize
+it here. Rosewater's key point was that elegance was a very difficult concept
+to explain. It was so difficult that he felt the best way to explain elegance
+was to have the article itself be elegant. He wanted to highlight the gap between
+elegant concepts and elegant executions, so he wrote an article that showed how
+one didn't imply the other. The disconnect between the structure and its
+readiblity was the whole point of the article. The words themselves were less
+important.
+
+Personally, I got sick of "Elegance" around the 7th link, but after reading
+his rseponse, I have a lot of respect for the idea. It's a fantastic example
+of how structure influences communication.
