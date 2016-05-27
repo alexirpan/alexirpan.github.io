@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 27 - ??????"
+date:   2016-05-27 02:42:00 -0700
+---
+
+{% include gauntlet.md %}
+
+If there's anything I like, it's when people do something interesting
+with structure.
+
+A good example of this is from the Firefly fanfic *Forward*. It uses
+an omniscent narrator. To indicate River's general...spaciness, the
+text is centered on the page, and randomly shifts between normal text,
+bold text, and italics.
+
+Another example comes up in *Ra*. Events that take place in the dreamscape
+Tanako's World is right-aligned instead of left-aligned.
+
+I'm not sure quite what makes this so interesting to me. My closest guess
+is that toying with the structure reveals our implicit assumptions about
+that structure. By adjusting it in the right way, we can send ideas that
+are almost unrelated to the words themselves.
