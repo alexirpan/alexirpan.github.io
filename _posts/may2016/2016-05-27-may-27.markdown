@@ -1,0 +1,106 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 27 - Structural Tinkering"
+date:   2016-05-27 14:25:00 -0700
+---
+
+{% include gauntlet.md %}
+
+If there's anything I like, it's when people do something interesting
+with structure.
+
+A good example of this is from the Firefly fanfic *Forward*.
+River's thoughts are centered on the page, and will shift into bolds
+or italics.
+
+![Forward excerpt](/public/may27/forward.png)
+{: .centered }
+
+*Ra* does something similar. Magic spells are written in monospaced font and
+a different color.
+
+![Ra excerpt](/public/may27/ra.png)
+{: .centered }
+
+I like how toying with the structure reveals our implicit
+assumptions about that structure. By adjusting it in the right way, authors can
+reveal those assumptions, then push their boundaries to describe things
+without words. Done properly, it gives a sense of completeness - the
+text content gets tied to the medium itself, and neither can easily
+be separated from the whole.
+
+When I write blog posts, I'm on the lookout for structural gimmicks.
+In [yesterday's post]({% post_url 2016-05-26-may-26 %}), I was pretty pleased with myself for finding a way to use
+"\*\*\*" twice in a row, once to indicate how I use it as a section break and once
+as an actual section break.
+I'm also pleased I got to discuss section breaks right before using one in today's
+post as well. The joke's wearing thin, so
+I promise this is the last time I'll use this gag.
+
+\*\*\*
+{: .centered }
+
+For a while, I was seriously
+considering writing a post made entirely from quotations.
+I would have cited quotes about plagiarism, using the structure to blatantly
+show I was copying from everybody else. At the same time, the structure
+would also show how organizing all the quotes together was itself enough to
+make it original. It was going to show the boundary between plagiarism and
+original thought by having elements of both appear in its construction.
+Look, I even collected some quotes I was going to use.
+
+> There is nothing new under the sun.
+
+(*Ecclesiastes*)
+{: .centered }
+
+> Plagiarize  
+> Let no one else's work evade your eyes  
+> Remember why the good Lord made your eyes  
+> So don't shade your eyes  
+> But plagiarize, plagiarize, plagiarize  
+> Only be sure always to call it please "research"  
+
+([*Lobachevsky*](https://www.youtube.com/watch?v=UQHaGhC7C2E) by Tom Lehrer)
+{: .centered }
+
+> If I have seen further, it is by standing on the shoulders of giants.
+
+(Isaac Newton)
+{: .centered }
+
+Eventually I abandoned this project. I still like it conceptually, but
+the reward-to-effort ratio is way too small to justify writing it.
+I tried a quote-heavy post in [Memorable Quotes]({% post_url 2016-05-16-may-16 %})
+and called it a day.
+
+I know of one other person who came up with a similarly convoluted structure,
+and actually went through with it. That person would be Mark Rosewater,
+head designer for Magic: the Gathering. He writes weekly articles about the
+design of the current sets, and sometimes about game design as a whole.
+
+Way back in 2004, he decided to write an article on
+[Elegance](http://magic.wizards.com/en/articles/archive/making-magic/elegance-2004-10-18-48).
+It is the most divisive article he's ever written. I haven't kept up with
+MTG very closely, but I doubt anything has matched the backlash or praise.
+
+The structure is completely insane. The article is a home page of 50 words.
+Each word is a link to another 50 word snippet. It's conceptually beautiful,
+but it's also horrendously difficult for the reader.
+The fanmail got crazy enough that he ended up spending another
+[article](http://magic.wizards.com/en/articles/archive/making-magic/elegant-response-2004-11-01)
+responding to the reader response to "Elegance".
+
+I'd recommend reading his response article by itself, but I'll briefly summarize
+it here. Rosewater's key point was that elegance was a very difficult concept
+to explain. It was so difficult that he felt the best way to explain elegance
+was to have the article itself be elegant. He wanted to highlight the gap between
+elegant concepts and elegant executions, so he wrote an article that showed how
+one didn't imply the other. The disconnect between the elegance of its
+structure and its
+readability was the whole point of the article. The words themselves were less
+important.
+
+Personally, I got sick of "Elegance" around the 7th link, but after reading
+his response, I have a lot of respect for the idea. It's a fantastic example
+of how structure influences communication.
