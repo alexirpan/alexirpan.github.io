@@ -18,3 +18,38 @@ abilities.
 I have no publications, and one submission which will get rejected
 with high probability. (I estimate 98% reject chance.) So, instead
 this page contains anything I've done that is "researchy".
+
+---------------------------------------------
+
+<p></p>
+
+Exploring Boosted Neural Nets for Rubik's Cube Solving
+
+*Spring 2016. Final project for CS 281B, Advanced Topics in Decision Making*
+
+
+---------------------------------------------
+
+<p></p>
+
+Factored Q-Learning in Continuous State-Action Spaces
+
+*Fall 2015. Final project for CS 281A, Statistical Learning Theory*
+
+
+---------------------------------------------
+
+<p></p>
+
+An Overview of Sublinear Machine Learning Algorithms
+
+*Spring 2015. Final project for CS 270, the introductory graduate course for algorithms*
+
+
+---------------------------------------------
+
+<p></p>
+
+Integrating Monte Carlo Tree Search with Reinforcement Learning
+
+*Fall 2015 - Spring 2015. Research Project*
