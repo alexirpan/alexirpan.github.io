@@ -8,14 +8,15 @@ date:   2016-05-28 00:02:00 -0700
 
 Today, I learned about one of the coolest marketing stunts I've ever seen.
 
-Now, you may or may not know there's a new Teenage Mutant Ninja Turtles
+Now, you may or may not know there's a new *Teenage Mutant Ninja Turtles*
 movie coming out. If you didn't know, I don't blame you, because I didn't either.
-I never watched TMNT as a kid, and this is the sequel to the reboot directed
+I never watched *TMNT* as a kid, and this is the sequel to the reboot directed
 by Michael Bay. I don't like Michael Bay's films, so it's a double whammy.
 
-Anyways, as part of the promotion, check out this AirBnB listing.
+Anyways, as part of the promotion, check out [this AirBnB listing](https://www.airbnb.com/rooms/12885815).
 
-IMAGE
+![Listing](/public/may28/listing.png)
+{: .centered }
 
 Yes, somewhere in New York, they recreated the Turtle's Lair, and it only costs
 $10. They don't let you stay the night, but you get free pizza, and there's an
@@ -28,15 +29,24 @@ This is an amazing, amazing marketing stunt. For one, it's cheap enough to
 feel like something any fan could afford. And secondly, the internal
 decorating is on point. I mean, look at this, it's ridiculous.
 
-IMAGES
+![hideout](/public/may28/hideout1.jpg)
+{: .centered }
+
+![hideout](/public/may28/hideout2.jpg)
+{: .centered }
+
+![hideout](/public/may28/hideout3.jpg)
+{: .centered }
 
 Look, this marketing campaign was cool enough that it marginally convinced me
-to watch the movie. *Me!* A guy who has no nostalgia about TMNT, and who
+to watch the movie. *Me!* A guy who has no nostalgia about *TMNT*, and who
 expects the movie to be terrible.
 
-There's some weird kayfabe thing going on, where the listing pretends it's
+(Warning: TVTropes link incoming, click at your own risk.)
+
+There's some weird [kayfabe](http://tvtropes.org/pmwiki/pmwiki.php/Main/Kayfabe) thing going on, where the listing pretends it's
 actually Leonardo talking about the place. They don't explicit say they're
-advertisting the movie, but it's obvious they are if you read the listing
+advertising the movie, but it's obvious they are if you read the listing
 in full. Maybe that's a marketing trick I don't know? Or at least, maybe
 it's how good viral campaigns are made. Things that look too much like
 advertising don't go viral. No one wants to look like a corporate stooge
@@ -51,7 +61,7 @@ how to social engineer as many people as possible to look at their stuff.
 **People literally make a living out of this.**
 
 This is the point where some of you may say, "The market has a demand for
-this and these people can supply it", free markets etcera etcera. Yes, I get
+this and these people can supply it." Yes, I get
 it, but it's not something I consciously think about. I don't think about
 how many artists the art market can support, or how many people are employed
 to design new headphones. Any economics I know is subconscious information.
