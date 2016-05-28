@@ -1,0 +1,72 @@
+---
+layout: post
+title:  "The Blogging Gauntlet: May 28 - The Ingenuity of Marketers"
+date:   2016-05-28 00:02:00 -0700
+---
+
+{% include gauntlet.md %}
+
+Today, I learned about one of the coolest marketing stunts I've ever seen.
+
+Now, you may or may not know there's a new Teenage Mutant Ninja Turtles
+movie coming out. If you didn't know, I don't blame you, because I didn't either.
+I never watched TMNT as a kid, and this is the sequel to the reboot directed
+by Michael Bay. I don't like Michael Bay's films, so it's a double whammy.
+
+Anyways, as part of the promotion, check out this AirBnB listing.
+
+IMAGE
+
+Yes, somewhere in New York, they recreated the Turtle's Lair, and it only costs
+$10. They don't let you stay the night, but you get free pizza, and there's an
+arcade, and there's a basketball court.
+
+Ten dollars for pizza and an arcade is a pretty good deal, even if you're not
+into Teenage Mutant Ninja Turtles. So obviously, they're all booked.
+
+This is an amazing, amazing marketing stunt. For one, it's cheap enough to
+feel like something any fan could afford. And secondly, the internal
+decorating is on point. I mean, look at this, it's ridiculous.
+
+IMAGES
+
+Look, this marketing campaign was cool enough that it marginally convinced me
+to watch the movie. *Me!* A guy who has no nostalgia about TMNT, and who
+expects the movie to be terrible.
+
+There's some weird kayfabe thing going on, where the listing pretends it's
+actually Leonardo talking about the place. They don't explicit say they're
+advertisting the movie, but it's obvious they are if you read the listing
+in full. Maybe that's a marketing trick I don't know? Or at least, maybe
+it's how good viral campaigns are made. Things that look too much like
+advertising don't go viral. No one wants to look like a corporate stooge
+who let advertising hijack them. But, if you hide it just a bit, it doesn't
+*feel* like you're giving them exposure even though you are.
+
+(For the record, I am not a marketer, I have read literally nothing
+on marketing, do not assume I know what I'm talking about.)
+
+Sometimes, I forget that there are people whose entire job is to figure out
+how to social engineer as many people as possible to look at their stuff.
+**People literally make a living out of this.**
+
+This is the point where some of you may say, "The market has a demand for
+this and these people can supply it", free markets etcera etcera. Yes, I get
+it, but it's not something I consciously think about. I don't think about
+how many artists the art market can support, or how many people are employed
+to design new headphones. Any economics I know is subconscious information.
+
+Okay, getting off topic, back to marketing. I actually can't remember the last
+time I've seen a marketing stunt so interesting. I think part of it is that
+this was hosted on AirBnB. I spend most of my time
+around people who know the tech industry, and at times it definitely feels
+like a bubble. Not an economic bubble, a social bubble. (It might be
+an economic bubble, but I don't trust my judgment here.) Everyone I talk
+too knows about Medium, Hacker News, Quora, and Palantir, which are four
+random tech industry things that are more obscure than you'd assume if you
+live your life in Silicon Valley.
+
+I wouldn't expect a marketing group to know about AirBnB, and even if they
+did I wouldn't expect them to figure out a way to use it for advertisement.
+I'll have to update my beliefs about this later.
+
