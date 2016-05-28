@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Blogging Gauntlet: May 28 - The Ingenuity of Marketers"
-date:   2016-05-28 00:02:00 -0700
+date:   2016-05-28 00:33:00 -0700
 ---
 
 {% include gauntlet.md %}
@@ -64,9 +64,10 @@ This is the point where some of you may say, "The market has a demand for
 this and these people can supply it." Yes, I get
 it, but it's not something I consciously think about. I don't think about
 how many artists the art market can support, or how many people are employed
-to design new headphones. Any economics I know is subconscious information.
+to design new headphones. I only think about markets when I'm explicitly
+challenged to think about markets.
 
-Okay, getting off topic, back to marketing. I actually can't remember the last
+Okay, getting off topic, back to advertising. I actually can't remember the last
 time I've seen a marketing stunt so interesting. I think part of it is that
 this was hosted on AirBnB. I spend most of my time
 around people who know the tech industry, and at times it definitely feels
