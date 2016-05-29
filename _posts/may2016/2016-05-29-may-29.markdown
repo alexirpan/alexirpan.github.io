@@ -10,9 +10,9 @@ However, obviously I'm making do with a non-ideal situation by using the tools I
 
 It's funny. I've always seen tablets as a little extraneous. I thought you either wanted a phone size thing or a laptop size thing. A tablet size thing felt like a weird middle ground. But, now that I'm using one, I can understand why it feels qualitatively different from both. Still don't think I'll buy one though.
 
-Anyways, this is a whole new experience for me. Honestly, I wasn't expecting to even try to make a blog post today. I was just going to take the $20 hit because of how little time I had. But, when there's a will there's a way, I suppose.
+Anyways, this is a whole new experience for me. Honestly, I wasn't expecting to even try to make a blog post today. I was just going to take the $20 hit because of how little time I had. But, when there's a will there's a way.
 
-Now, I don't think I've emphasized just how convoluted my process is right now, so let me explain.
+I don't think I've emphasized just how convoluted my process is right now, so let me explain.
 
 * I'm borrowing this iPad from my family, so no downloading apps. That means I have to edit through Github's interface, which to be fair isn't that bad.
 * To check the word count, I've been using vim's built in word counters. I can't get vim on this iPad so instead...
@@ -27,9 +27,9 @@ At last count I was over 230 words. Now...hey, 380! Not bad.
 (I would put the Not Bad Obama meme here, but there's no way I want to deal with setting up all of that on an iPad. Let your imagination fill in the dank meme.)
 
 This is about the moment where you should realize I just spent about 400 words talking about nothing except the struggles
-I'm going through to type the post your reading. Truly, I have hit rock bottom for material. Or to be more precise, I've passed rock bottom, because I already wrote a similar post for Shut Up And Write earlier this month. I'm retreading my shitposting! Do you realize how incredibly disappointing that is, to me, a person trying to write semi-serious things?
+I'm going through to type the post you're reading. Truly, I have hit rock bottom for material. Or to be more precise, I've passed rock bottom, because I already used a similar concept in [Shut Up And Write]({% post_url 2016-05-08-may-8 %}). I'm retreading my shitposting! Do you realize how incredibly disappointing that is, to me, a person trying to write semi-serious things?
 
-Oh who am I kidding, I've always been this way.
+Oh who am I kidding, this blog has always indulged in memeing about itself.
 
 Time for a word count...
 
