@@ -1,3 +1,11 @@
+---
+layout: post
+title: "The Blogging Gauntlet: May 29 - Self-Indulgent Garbage"
+date: 2016-05-29 00:44:00 -0700
+---
+
+{% include gauntlet.md %}
+
 Apologies in advance if I have typos or worse writing than usual.
 I'm traveling right now and don't have my laptop with me, meaning I
 have to use a different writing flow.
