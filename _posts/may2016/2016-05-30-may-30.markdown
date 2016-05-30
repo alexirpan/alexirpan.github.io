@@ -1,4 +1,10 @@
- If you don't know who Alan Moore is, let me tell a story.
+---
+layout: post
+title: "The Blogging Gauntlet: May 30 - Welcome to the Medium"
+date: 2016-05-30 00:51:00 -0700
+---
+
+If you don't know who Alan Moore is, let me tell a story.
 
 Alan Moore is one of the most influential comic writers of all time. Among his works is Watchmen, which I consider to be a masterpiece. It's visually rich, thick with plot and symbolism, and has an all around engrossing narrative.
 
@@ -11,3 +17,7 @@ So, when a Watchmen movie was announced, his response was typical - he refused t
 I haven't found a quote by Moore where he explains this, but here's a fan theory I quite liked. Watchmen is very visually dense. It uses tons of visual callbacks, lots of visual motifs. An entire chapter is palindromic for Pete's sake. It's rich enough that sometimes you want to pause and take in all the detail in a given panel.
 
 A comic lets you do this, but a film doesn't. A film pushes images at you frame after frame. It dictates the pace of each scene. In contrast, when reading a comic, **the reader chooses how long they spend on each page.** When reading a comic, time can be stretched or contracted or made to run backwards if the reader wishes it to be. When Dr. Manhattan talks about determinism and seeing all times at once, it can be interpreted as a commentary on comics themselves, and it loses impact when told as a movie.
+
+WJust as there are differences between comics and movies, there are differences between books and movies. William Goldman wrote the book The Princess Bride, then later adapted it into screenplay for the movie people endlessly quote. What's striking is how different the plot is between the two. The book has a deeper backstory on Inigo Montoya's father. It has a more elaborate framing device, where instead of a grandfather telling a story it's a middle aged man rewriting a story *his* father told him in his youth.
+
+Let me take a stab at why movies have to have fundamentally different plots. A book has a much easier time doing inner monologues. The author is allowed to write each character's inner thoughts. By contrast, a movie's goal is to show, don't tell. The viewer expects the director to make full use of the images and audio, and that expectation places limits on what kinds of dialogue are acceptable. I've heard this is very clear in the Hunger Games adaptations, which have to cut out lots of Katniss's inner monologue.
