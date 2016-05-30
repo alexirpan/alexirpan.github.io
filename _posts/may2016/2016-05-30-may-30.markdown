@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Blogging Gauntlet: May 30 - Welcome to the Medium"
-date: 2016-05-30 00:51:00 -0700
+date: 2016-05-30 06:37:00 -0700
 ---
 
 If you don't know who Alan Moore is, let me tell a story.
@@ -10,18 +10,18 @@ Alan Moore is one of the most influential comic writers of all time. Among his w
 
 Alan Moore is also known for having very strong opinions about adaptations of his work. Moore has without fail hated adaptations of his work, so much so that he refuses to be listed in the credits of those adaptations. The one exception is the *Justice League Unlimited* adaptation for "The Man Who Has Everything".
 
-So, when a *Watchmen* movie was announced, his response was typical - he refused to see it and did not want to be credited. However, his reasoning was interesting. Alan Moore believed Watchmen was unadaptable. He thought it was a story that only worked as a comic.
+So, when a *Watchmen* movie was announced, his response was typical - he refused to see it and did not want to be credited. However, his reasoning was interesting.
 
 > There are things we did with Watchmen that could only work in a comic, and were indeed designed to show off things that other media can't.
 
 (Entertainment Weekly)
 {: .centered }
 
-I haven't found a quote by Moore where he explains this, but here's a fan theory I quite liked. *Watchmen* uses tons of visual callbacks, and lots of visual motifs. An entire chapter is palindromic for Pete's sake. It's rich enough that sometimes you want to pause and take in all the detail.
+I haven't found a quote by Moore where he explains this, but here's a fan explanation I quite liked. *Watchmen* uses tons of visual callbacks, and lots of visual motifs. An entire chapter is palindromic for pete's sake. It's rich enough that sometimes you want to pause and take in all the detail.
 
-A comic lets you do this, but a film doesn't. A film pushes images at you frame after frame. It dictates the pace of each scene. In contrast, when reading a comic, **the reader chooses how long they spend on each page.** When reading a comic, time can be stretched or contracted or made to run backwards if the reader wishes it to be. When Dr. Manhattan talks about determinism and seeing all times at once, it can be interpreted as a commentary on comic readers themselves. It doesn't work as well in a movie because the subtext disappears.
+A comic lets you do this, but a film doesn't. A film pushes images at you frame after frame. It dictates the pace of each scene. In contrast, when reading a comic, **the reader chooses how long they spend on each page.** Comic time can be stretched or contracted or made to run backwards if the reader wishes it to be. When Dr. Manhattan talks about determinism and seeing all times at once, it can be interpreted as a commentary on comic readers themselves. It doesn't work as well in a movie because the subtext disappears.
 
-Just as there are differences between comics and movies, there are differences between books and movies. William Goldman wrote the book *The Princess Bride*, then later adapted it into the movie people endlessly quote. What's striking is how different the plot is between the two. The book has a deeper backstory on Inigo Montoya's father. It has a more elaborate framing device, where instead of a grandfather telling a story it's a middle aged man rewriting a story *his* father told him in his youth. Goldman didn't have to change anything since he wrote his own adaptation, but he did. Why?
+Just as there are differences between comics and movies, there are differences between books and movies. William Goldman wrote the book *The Princess Bride*, then later adapted it into the movie people endlessly quote. What's striking is how different the plot is between the two. The book has a deeper backstory on Inigo Montoya's father. It has a more elaborate framing device, where instead of a grandfather telling a story it's an unhappily married man rewriting a story *his* father told him in his youth. Goldman didn't have to change anything since he wrote his own adaptation, but he did. Why?
 
 Let me take a stab at why movies have fundamentally different storytelling standards. A book has a much easier time doing inner monologues. The author is allowed to write each character's inner thoughts. By contrast, a movie's goal is to show, don't tell. The viewer expects the director to make full use of the images and audio, and that expectation places limits on what kinds of dialogue are acceptable. I've heard this is very clear in the *Hunger Games* adaptations, which have to cut out lots of Katniss's inner monologue.
 
@@ -29,4 +29,6 @@ Let me take a stab at why movies have fundamentally different storytelling stand
 
 The title is a reference to *Homestuck*, a webcomic (kind of) that could only work on the Internet. By incorporating text, animated GIFs, Flash animations, and interactive games, it creates what can only be called an experience. If *Watchmen* is arguably unadaptable, *Homestuck* is definitively so.
 
-That's not good, and that's not bad. It's just the nature of works that push their medium to its limits. So, next time you see something interesting, try considering through what means it was presented, and see if it colors your perception. If you find anything interesting, leave me a comment, since I'd like to learn more.
+Another example is *Undertale*. The game simply would not work if the player was not given the choice between Spare or Kill, making it a story that works best as a video game. Any other medium wouldn't give that choice. (There are spoilery reasons for why a Choose Your Own Adventure book wouldn't work either.)
+
+Next time you see something interesting, try considering through what means it was presented, and see if it colors your perception. If you find anything interesting, leave me a comment, since I'd like to learn more.
