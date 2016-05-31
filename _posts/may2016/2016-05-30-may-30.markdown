@@ -4,6 +4,8 @@ title: "The Blogging Gauntlet: May 30 - Welcome to the Medium"
 date: 2016-05-30 06:37:00 -0700
 ---
 
+{% include gauntlet.md %}
+
 If you don't know who Alan Moore is, let me tell a story.
 
 Alan Moore is one of the most influential comic writers of all time. Among his works is *Watchmen*, which I consider to be a masterpiece. It's visually rich, thick with plot and symbolism, and has an all around engrossing narrative.
