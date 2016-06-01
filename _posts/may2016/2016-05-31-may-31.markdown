@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Blogging Gauntlet: May 31 - Fin"
-date: 2016-05-31 00:21:00 - 0700
+date: 2016-05-31 17:36:00 - 0700
 ---
 
 {% include gauntlet.md %}
@@ -19,4 +19,10 @@ What went well, and what didn't? For starters, writing 500 words every day was b
 (A Berkeley Professor that I'll keep anonymous)
 {: .centered }
 
-However, other posts took over four hours. Hopefully this is just because of work ballooning to fill my free time, and it won't take that long to write once I start working.
+However, other posts took over four hours. Hopefully this is just because of work ballooning to fill my free time, and it won't take that long to write once I start working full-time.
+
+Another thing I learned is that a new topic every day is too much for me. There are quite a few posts that I genuinely regret writing. The ideas backing them up were either illformed or nonexistent, and I ran out of material pretty quickly after the first week. I have blog-worthy ideas more often than once every two weeks, but less often than every day.
+
+I could have avoided this by dedicating more than one post to a given topic, and in fact was expecting to do so, but that ended up falling apart after the exploration-exploitation posts. I'm simply not familiar with the serial mindset of posting part after part. When I write, I like to rearrange paragraphs and ideas all over the place, until I get an ordering I like. This stops working when I have to publish words every day. Publishing half or a third of an intended post fixes the ideas I start with and the order they are presented in, and trying to continue old posts feels like writing while trapped in a corner. I have on occasion scrapped entire drafts when I realized I wasn't writing about what I actually wanted to write about. If I had published the start of those drafts, I would have been forced to leave them unfinished, which doesn't sit well with me.
+
+I know serial writing is doable, it's just that I can't do it yet.
