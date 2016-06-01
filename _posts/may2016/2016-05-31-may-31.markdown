@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Blogging Gauntlet: May 31 - Conclusion"
-date: 2016-05-31 20:11:00 - 0700
+date: 2016-05-31 20:26:00 - 0700
 ---
 
 {% include gauntlet.md %}
@@ -34,6 +34,6 @@ I have a better appreciation for doing a little bit each day. I may try to incor
 
 I successfully beta-tested posts I've always wanted to write, and although not all of them worked out, some were very well received, more than I expected them to be. Getting to write in a context where people knew they shouldn't expect something perfect was a big help.
 
-On that note, this is where you, the reader, come in. This has been a journey for me, and I could use more detailed feedback. If you could fill this quick survey, I'd appreciate it - this directly contributes to making this blog better.
+On that note, this is where you, the reader, come in. This has been a journey for me, and I could use more detailed feedback. If you could fill [this](http://goo.gl/forms/fZwUAKGkzIBwahQ83) quick survey, I'd appreciate it - it'll directly contributes to making this blog better.
 
 Next steps: going to stop blogging for about a week because I'm technically on vacation, then I'll start working on longer posts and/or rewriting posts from this month that I liked. I'm thinking about adding an update schedule, but need time to think about the details. In either case - stay tuned.
