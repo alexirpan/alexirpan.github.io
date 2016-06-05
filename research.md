@@ -16,8 +16,11 @@ up on academia just yet, meaning I need a way to signal my research
 abilities.
 
 I have no publications, and one submission which will get rejected
-with high probability. (I estimate 98% reject chance.) So, instead
-this page contains anything I've done that is "researchy".
+with high probability. (I estimate 98% reject chance.) This is pretty poor!
+So for just this once, I'm going to sell any researchy things I've done, like
+final projects for graduate level classes and the like. We cool? We cool.
+
+Items are ordered by my personal pride.
 
 ---------------------------------------------
 
@@ -53,3 +56,21 @@ An Overview of Sublinear Machine Learning Algorithms
 Integrating Monte Carlo Tree Search with Reinforcement Learning
 
 *Fall 2015 - Spring 2015. Research Project*
+
+
+---------------------------------------------
+
+<p></p>
+
+Paper Presentation: Hiding Input Size in Two-Party Secure Computation
+
+*Spring 2016. Final project for CS 294, Secure Computation*
+
+
+---------------------------------------------
+
+<p></p>
+
+Paper Presentation: Secure Function Evaluation with Garbled Circuits
+
+*Fall 2015. Final project for CS 276, Cryptography*
