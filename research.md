@@ -6,21 +6,14 @@ permalink: /research/
 
 This is not a standard research page.
 
-I like research a lot, but research is also really hard. Due to confidence
-issues, I didn't apply to PhD programs this year. If you want to read
-my more complete thoughts on this, you can read this blog post CITE.
+Due to confidence issues, I didn't apply to PhD programs this year.
+For more complete reasons, you may read this [blog post]({% post_url 2016-01-03-grad-school %}).
 
-For now, I'm not at the position where people would be looking up my
-research, but I'm still proud of the work I did. I also haven't given
-up on academia just yet, meaning I need a way to signal my research
-abilities.
+The research I've done so far hasn't led to publishable results, but it's
+not nothing, and I'm still proud of the work I've done.
+I haven't given up on academia just yet, meaning I still need to signal
+my research abilities. This page is that signal.
 
-I have no publications, and one submission which will get rejected
-with high probability. (I estimate 98% reject chance.) This is pretty poor!
-So for just this once, I'm going to sell any researchy things I've done, like
-final projects for graduate level classes and the like. We cool? We cool.
-
-Items are ordered by my personal pride.
 
 ---------------------------------------------
 
