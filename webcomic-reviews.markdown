@@ -4,7 +4,7 @@ title: Recommended Webcomics
 permalink: /webcomicrecs/
 ---
 
-*Last updated January 22, 2016*
+*Last updated June 7, 2016*
 
 I've read a lot of webcomics in my time on the Internet. A lot of comics only look
 to make people laugh, and although that's a laudable goal, my favorite comics
@@ -72,6 +72,18 @@ and economics. Cynical, insightful, and not above doing a dick joke on occasion.
 
 # Story Based
 
+**Paranatural**, by Zack Morrison
+
+Updates: Tuesday, Friday
+
+Link: [here](http://www.paranatural.net/comic/chapter-1)
+
+*X-Men* meets *Ghostbusters* but everyone's twelve years old and a little bit
+crazy. Much like *Cucumber Quest*, it wavers between affectionately parodying
+kid's adventure/anime tropes and playing them straight.
+A comedy adventure comic that grows into wonderful art, solid
+worldbuilding, and fantastic characterization.
+
 **Cucumber Quest**, by Gigi D.G
 
 Updates: Irregularly, about 2-3 updates a week.
@@ -98,7 +110,7 @@ absurdity.
 
 **Homestuck**, by Andrew Hussie
 
-Updates: On hiatus, but the author hopes to finish by April 13, 2016.
+Updates: N/A, completed
 
 Link: [here](http://www.mspaintadventures.com/?s=6)
 
@@ -107,10 +119,10 @@ Once called [the *Ulysses* of the Internet](https://www.youtube.com/watch?v=MLK7
 that rewards incredibly deep analysis of its setting.
 It takes a while to get through the slow starting acts, but eventually you'll catch yourself
 asking questions about stable time loops, the rules governing resurrection, and
-the incredibly blurry fourth wall.
+whether the fourth wall can exist if it's a physical object in the comic.
 With static images, animated gifs, Flash animations, and interactive
-game segments, *Homestuck* is the one comic that relies on the Internet to
-work.
+game segments, *Homestuck* is the one webcomic that could only work as a
+webcomic.
 
 **The Adventures of Dr. McNinja**, by Chris Hastings
 
@@ -188,7 +200,7 @@ linguistics, and the occasional analysis of Batman.
 
 **PhD Comics**, by Jorge Cham
 
-Updates: Irregularly, but about 1 update a week.
+Updates: Irregularly, about 1 update a week.
 
 Link: [here](http://phdcomics.com/comics.php)
 
