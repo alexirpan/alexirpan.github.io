@@ -27,9 +27,17 @@ Exploring Boosted Neural Nets for Rubik's Cube Solving
 
 *Spring 2016. Final project for CS 281B, Advanced Topics in Decision Making*
 
-Originally a side project, my goal of training a controller that learned how
-to solve a Rubik's cube from raw features grew and grew into a life of its
-own.
+Poster (click for full-size PDF):
+
+[![Poster](/public/research/posterimage.png)](/public/research/poster.pdf)
+
+NIPS submission (in review, almost certain rejection): [PDF](/public/research/nips_2016.pdf)
+
+TODO ADD TO ARXIV
+
+I started a side project of training a neural net
+to solve a Rubik's cube from raw features, expecting it to be simple, but it
+grew and grew into a life of its own.
 
 
 ---------------------------------------------
@@ -42,8 +50,19 @@ Factored Q-Learning in Continuous State-Action Spaces
 
 *Fall 2015. Final project for CS 281A, Statistical Learning Theory*
 
-Overlap between research and class final project. Investigated whether
+Poster (click for full-size PDF):
 
+[![281A Poster](/public/research/281aposterimage.png)](/public/research/281aposter.pdf)
+
+Informal Writeup: [PDF](/public/research/281areport.pdf)
+
+Overlap between research and class final project. The title is misleading;
+although the intention was to test applying factorization to discretized
+continuous MDPs, I had difficulty getting Q-learning to work even in the
+low-dimensional continous spaces. The experimental results are from Atari games,
+which have a discrete action space.
+
+For now, I don't have plans to work on this again.
 
 
 ---------------------------------------------
@@ -55,6 +74,8 @@ An Overview of Sublinear Machine Learning Algorithms [[pdf](/public/research/sub
 *Alex Irpan\*, Ronald Kwan\**
 
 *Spring 2015. Final project for CS 270, the introductory graduate course for algorithms*
+
+Report: [PDF](/public/research/sublinear-algorithms-optimization.pdf)
 
 A summary of papers detailing algorithms for solving SDPs and learning
 perceptrons/SVMs in sublinear time, assuming a RAM model. Key ideas:
