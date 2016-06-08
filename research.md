@@ -4,15 +4,17 @@ title: Research
 permalink: /research/
 ---
 
+*Last updated June 7, 2016.*
+
 This is not a standard research page.
 
-Due to confidence issues, I didn't apply to PhD programs this year.
-For more complete reasons, you may read this [blog post]({% post_url 2016-01-03-grad-school %}).
+Due to confidence issues, I didn't apply to PhD programs senior year.
+My more complete reasoning is in this [blog post]({% post_url 2016-01-03-grad-school %}).
 
 The research I've done so far hasn't led to publishable results, but it's
-not nothing, and I'm still proud of the work I've done.
-I haven't given up on academia just yet, meaning I still need to signal
-my research abilities. This page is that signal.
+not nothing. I'm still proud of the work I've done, and want to share it.
+Additionally, I haven't given up on academia just yet, meaning I still need
+to signal my research capabilities. This page is that signal.
 
 
 ---------------------------------------------
@@ -21,7 +23,13 @@ my research abilities. This page is that signal.
 
 Exploring Boosted Neural Nets for Rubik's Cube Solving
 
+*Alex Irpan*
+
 *Spring 2016. Final project for CS 281B, Advanced Topics in Decision Making*
+
+Originally a side project, my goal of training a controller that learned how
+to solve a Rubik's cube from raw features grew and grew into a life of its
+own.
 
 
 ---------------------------------------------
