@@ -11,17 +11,20 @@ This is not a standard research page.
 Due to confidence issues, I didn't apply to PhD programs senior year.
 My more complete reasoning is in this [blog post]({% post_url 2016-01-03-grad-school %}).
 
-The research I've done so far hasn't led to publishable results, but it's
-not nothing. I'm still proud of the work I've done, and want to share it.
-Additionally, I haven't given up on academia just yet, meaning I still need
-to signal my research capabilities. This page is that signal.
+The research I've done hasn't led to publishable results, but it's
+not nothing. I'm still proud of it, and want to share it, in the off chance
+someone finds it neat.
+
+(Additionally, I haven't given up on academia just yet, meaning I need
+to signal my research capabilities in case I apply in the future.
+This page is that signal.)
 
 
 ---------------------------------------------
 
 <p></p>
 
-Exploring Boosted Neural Nets for Rubik's Cube Solving
+**Exploring Boosted Neural Nets for Rubik's Cube Solving**
 
 *Alex Irpan*
 
@@ -31,20 +34,22 @@ Poster (click for full-size PDF):
 
 [![Poster](/public/research/posterimage.png)](/public/research/poster.pdf)
 
-NIPS submission (in review, almost certain rejection): [PDF](/public/research/nips_2016.pdf)
+NIPS submission (in review but almost certain rejection): [PDF](/public/research/nips_2016.pdf)
 
-TODO ADD TO ARXIV
+I originally started a side project of training a neural net to learn how to
+solve a Rubik's Cube from raw features. Over time, it grew into a life of its
+own, eventually pulling in ideas from boosting and turning into an experiment
+to see if AdaBoost reweighting could guide neural net training while giving
+a natural ensemble model. The short answer is that it didn't. The long answer
+is in the submission.
 
-I started a side project of training a neural net
-to solve a Rubik's cube from raw features, expecting it to be simple, but it
-grew and grew into a life of its own.
 
 
 ---------------------------------------------
 
 <p></p>
 
-Factored Q-Learning in Continuous State-Action Spaces
+**Factored Q-Learning in Continuous State-Action Spaces**
 
 *Alex Irpan, mentored by John Schulman*
 
@@ -56,20 +61,23 @@ Poster (click for full-size PDF):
 
 Informal Writeup: [PDF](/public/research/281areport.pdf)
 
-Overlap between research and class final project. The title is misleading;
-although the intention was to test applying factorization to discretized
-continuous MDPs, I had difficulty getting Q-learning to work even in the
-low-dimensional continous spaces. The experimental results are from Atari games,
-which have a discrete action space.
+The title is misleading. Although the intention of this project was to
+apply factorization to discretized multi-dimensional continuous MDPs,
+I had difficulty getting Q-learning to work in small cases, and there was no
+point moving forward until the small case worked.
+The experimental results from the poster are from the Atari game Asteroids,
+a problem with a discrete action space.
 
-For now, I don't have plans to work on this again.
+I'm still interested in representing stochastic policies with graphical
+models instead of joint distributions over all actions, but not interested enough
+to try implementing it.
 
 
 ---------------------------------------------
 
 <p></p>
 
-An Overview of Sublinear Machine Learning Algorithms [[pdf](/public/research/sublinear-algorithms-optimization)]
+**An Overview of Sublinear Machine Learning Algorithms**
 
 *Alex Irpan\*, Ronald Kwan\**
 
@@ -78,17 +86,19 @@ An Overview of Sublinear Machine Learning Algorithms [[pdf](/public/research/sub
 Report: [PDF](/public/research/sublinear-algorithms-optimization.pdf)
 
 A summary of papers detailing algorithms for solving SDPs and learning
-perceptrons/SVMs in sublinear time, assuming a RAM model. Key ideas:
-describe optimization as a max-min game, then sample entries using multiplicative
-weights, in a way such that the update is an unbiased estimator of the update
-from the standard algorithm.
+perceptrons/SVMs in sublinear time. Each paper uses a similar approach:
+describe the optimization problem as a max-min game, then sample entries
+from the data matrix using multiplicative weights. The sampled entries
+are used to compute an unbiased estimator of the update each iteration.
+Tons of concentration inequalities glue it all into a sublinear run-time
+bound.
 
 
 ---------------------------------------------
 
 <p></p>
 
-Integrating Monte Carlo Tree Search with Reinforcement Learning
+**Integrating Monte Carlo Tree Search with Reinforcement Learning**
 
 *Alex Irpan, mentored by John Schulman*
 
@@ -102,14 +112,12 @@ using MCTS. The rollouts give a natural Q-value on the observed states, which
 can be used to update $$\pi$$ to a better $$\pi'$$, which can be fed to MCTS
 to get an even better policy, and so on.
 
-EXPLAIN MORE?
-
 
 ---------------------------------------------
 
 <p></p>
 
-Paper Presentation: Hiding Input Size in Two-Party Secure Computation
+**Presentation: Hiding Input Size in Two-Party Secure Computation**
 
 *Alex Irpan*
 
@@ -127,13 +135,12 @@ small communication efficiency.
 
 <p></p>
 
-Paper Presentation: Secure Function Evaluation with Garbled Circuits
+**Presentation: Secure Function Evaluation with Garbled Circuits**
 
 *Alex Irpan*
 
 *Fall 2015. Final project for CS 276, Cryptography*
 
-Explained Yao's garbled circuits. Presentation notes were adapted
-into a blog post that's clearer but less technical.
-
-ADD LINK
+A presentation on Yao's garbled circuits, the first solution to securely
+computing functions between two semi-honest parties. The presentation notes
+were adapted into this [blog post]({% post_url 2016-02-11-secure-computation %}).
