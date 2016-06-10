@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-*Last updated June 7, 2016.*
+*Last updated June 10, 2016.*
 
 I'm about to graduate from UC Berkeley, majoring in computer science.
 At Berkeley, I did undergraduate research in the [Berkeley Artificial Intelligence
@@ -37,5 +37,3 @@ For non-technical interests, I get very deep into a few things
 at a time. Right now, the biggest ones
 are My Little Pony, competitive Dominion, hard platforming games, and puzzle
 hunts.
-
-Research page coming soon.
