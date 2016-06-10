@@ -36,6 +36,8 @@ Poster (click for full-size PDF):
 
 NIPS submission (in review but almost certain rejection): [PDF](/public/research/nips_2016.pdf)
 
+Code: [GitHub](https://github.com/alexirpan/rubik_research)
+
 I originally started a side project of training a neural net to learn how to
 solve a Rubik's Cube from raw features. Over time, it grew into a life of its
 own, eventually pulling in ideas from boosting and turning into an experiment
@@ -60,6 +62,8 @@ Poster (click for full-size PDF):
 [![281A Poster](/public/research/281aposterimage.png)](/public/research/281aposter.pdf)
 
 Informal Writeup: [PDF](/public/research/281areport.pdf)
+
+Code: [BitBucket](https://bitbucket.org/airpan/fall15-research)
 
 The title is misleading. Although the intention of this project was to
 apply factorization to discretized multi-dimensional continuous MDPs,
@@ -104,31 +108,18 @@ bound.
 
 *Fall 2015 - Spring 2015. Research Project*
 
-Experiments with using Monte Carlo Tree Search to get Q-values for
-Q-learning. Monte Carlo Tree Search turns a stochastic policy $$\pi$$
-into a stronger stochastic policy $$\pi'$$ at the cost of doing search.
-The idea was that given some $$\pi$$, we could use $$\pi$$ to get an episode
-using MCTS. The rollouts give a natural Q-value on the observed states, which
-can be used to update $$\pi$$ to a better $$\pi'$$, which can be fed to MCTS
-to get an even better policy, and so on.
+Code: [BitBucket](https://bitbucket.org/airpan/research-code)
 
+First research project ever, where I experimented with integrating Monte
+Carlo Tree Search with Q-learning on the toy problem of Connect Four.
+My reasoning was that MCTS turns a bad policy $$\pi$$ into a better
+one through search, and updating $$\pi$$ towards the Q-values
+found during search would improve $$\pi$$, giving a better policy
+from MCTS, and so on. I didn't know about policy gradient at the time;
+I probably would have used that if I knew it.
 
----------------------------------------------
-
-<p></p>
-
-**Presentation: Hiding Input Size in Two-Party Secure Computation**
-
-*Alex Irpan*
-
-*Spring 2016. Final project for CS 294, Secure Computation*
-
-Explained Yindell and Pinkas (CHECK) work on securely computing functions
-while hiding input sizes. In the semi-honest setting, functions with
-bounded output size are always securely computable while hiding one party's
-input size, assuming FHE. The unbounded case is impossible in general, and
-it is also impossible to hide both party's input size except for functions with
-small communication efficiency.
+These ideas were better implemented in this NIPS paper and in AlphaGo,
+so I don't see much use in revisiting this.
 
 
 ---------------------------------------------
@@ -141,6 +132,28 @@ small communication efficiency.
 
 *Fall 2015. Final project for CS 276, Cryptography*
 
+Blog post: [here]({% post_url 2016-02-11-secure-computation %})
+
 A presentation on Yao's garbled circuits, the first solution to securely
-computing functions between two semi-honest parties. The presentation notes
-were adapted into this [blog post]({% post_url 2016-02-11-secure-computation %}).
+computing functions between two semi-honest parties. I have presentation notes,
+but they're too messy to share. The blog post is more refined and has more
+intuition, at the cost of technical depth.
+
+
+---------------------------------------------
+
+<p></p>
+
+**Presentation: Hiding Input Size in Two-Party Secure Computation**
+
+*Alex Irpan*
+
+*Spring 2016. Final project for CS 294, Secure Computation*u
+
+Presentation Notes: [PDF](/public/research/hiding_input_size.pdf)
+
+Explained a paper by Lindell, Nissim, and Orlandi on computing
+functions while hiding not only the inputs, but also the sizes of the inputs.
+Presented the construction for one case assuming fully homomorphic encryption,
+and impossibility proofs for other cases.
+
