@@ -21,10 +21,12 @@ header_links:
       title: "Projects"
     - url: "/archive/"
       title: "Archive"
-    - url: "/feed.xml"
-      title: "RSS"
+    - url: "/research/"
+      title: "Research"
     - url: "/about/"
       title: "About"
+    - url: "/feed.xml"
+      image: /public/feed-icon.png
 
 
 # Build settings
