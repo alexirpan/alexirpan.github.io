@@ -90,7 +90,7 @@ but have too many other things on my plate.
 
 *Alex Irpan\*, Ronald Kwan\* (worked equally)*
 
-*Spring 2015. Final project for CS 270, the introductory grad level algorithms course*
+*Spring 2015. Final project for CS 270, Combinatorial Algorithms and Data Structures*
 
 Report: [PDF](/public/research/sublinear-algorithms-optimization.pdf)
 
@@ -152,7 +152,7 @@ intuition.
 
 *Alex Irpan*
 
-*Spring 2016. Final project for CS 294, Secure Computation*u
+*Spring 2016. Final project for CS 294, Secure Computation*
 
 Presentation Notes: [PDF](/public/research/hiding_input_size.pdf)
 
