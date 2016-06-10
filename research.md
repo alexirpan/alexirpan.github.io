@@ -15,7 +15,7 @@ The research I've done hasn't led to publishable results, but it's
 not nothing. I'm still proud of it, and want to share it, in the off chance
 someone finds it neat.
 
-(Additionally, I haven't given up on academia just yet, meaning I need
+(Additionally, I haven't given up on academia just yet, so I need
 to signal my research capabilities in case I apply in the future.
 This page is that signal.)
 
@@ -38,13 +38,12 @@ NIPS submission (in review but almost certain rejection): [PDF](/public/research
 
 Code: [GitHub](https://github.com/alexirpan/rubik_research)
 
-Project where I tried training a neural net to learn how to
-solve a Rubik's Cube from raw features. Originally a small side project, but it
+Project where I trained neural nets mapping raw features to Rubik's Cube moves.
+Started as a small side project, but
 grew over time, eventually turning into an experiment
 to see if AdaBoost reweighting while training could improve training
 time or accuracy.
-The short answer is that it did neither. The long answer
-is in the submission.
+The short answer is that it did neither. For details, see the submission.
 
 
 ---------------------------------------------
@@ -66,13 +65,16 @@ Informal Writeup: [PDF](/public/research/281areport.pdf)
 Code: [BitBucket](https://bitbucket.org/airpan/fall15-research)
 
 The intention of this project was to
-apply factorization to discretized multi-dimensional continuous MDPs,
-but I had difficulty getting Q-learning to work in small continuous MDPs,
+add independence assumptions between different dimmensions of the action space,
+with specific application to discretized continuous MDPs.
+Unfortunately I had difficulty getting Q-learning to work in small
+continuous MDPs,
 and there was no point moving forward until the small case worked.
 Experimental results from the poster are from a discrete MDP, the Atari
 game Asteroids.
 
-I'm still interested in stochastic policies based on graphical models,
+Results were a wash, but I like some of the ideas here. I still want to test
+stochastic policies based on graphical models,
 but have too many other things on my plate.
 
 
@@ -88,11 +90,12 @@ but have too many other things on my plate.
 
 Report: [PDF](/public/research/sublinear-algorithms-optimization.pdf)
 
-A summary of algorithms for solving SDPs and learning
-perceptrons/SVMs in sublinear time. Each shares the same approach:
+Summarizes algorithms for solving SDPs and learning
+perceptrons/SVMs in sublinear time, including their performance proogs.
+Each shares the same approach:
 describe the optimization problem as a max-min game, and sample an
 estimate of the gradient, which can be done in sublinear time.
-Multiplicative weights and concentration inequalities glues the proof together.
+Multiplicative weights and concentration inequalities glues the proofs together.
 
 
 ---------------------------------------------
@@ -103,22 +106,20 @@ Multiplicative weights and concentration inequalities glues the proof together.
 
 *Alex Irpan, mentored by John Schulman*
 
-*Fall 2015 - Spring 2015. Research Project*
+*Fall 2014 - Spring 2015*
 
 Code: [BitBucket](https://bitbucket.org/airpan/research-code)
 
-My first research project ever, where I experimented with integrating Monte
+My first research project. I experimented with integrating Monte
 Carlo Tree Search with Q-learning on the toy problem of Connect Four.
 The goal was to use MCTS for policy improvement. MCTS turns a bad
 rollout policy $$\pi$$ into a better one while producing reasonably
 accurate Q-values. Q-learning improves rollout policy $$\pi$$. MCTS on
-the improved $$\pi$$ gives more accurate Q-values, and so on.
-I didn't know about policy gradient at the time;
-I probably would have used that if I knew it.
+the improved $$\pi$$ gives more accurate Q-values, which can further
+improve $$\pi$$, and so on.
 
 The goals I had were better implemented in this [NIPS paper](http://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning)
-and in AlphaGo,
-so I don't see much use in revisiting this.
+and in AlphaGo, so I don't see much use in revisiting this.
 
 
 ---------------------------------------------
@@ -151,7 +152,7 @@ intuition.
 
 Presentation Notes: [PDF](/public/research/hiding_input_size.pdf)
 
-Garbled circuits implicitly leak the input size of both parties, so can we do
+Garbled circuits implicitly leak the input size of both parties. Can we do
 better? A paper by Lindell, Nissim, and Orlandi on hiding input size helps
 answer this question.
 Presented the construction for one case assuming fully homomorphic encryption,
