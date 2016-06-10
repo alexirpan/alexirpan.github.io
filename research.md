@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-*Last updated June 9, 2016.*
+*Last updated June 10, 2016.*
 
 This is not a standard research page.
 
@@ -14,17 +14,20 @@ My more complete reasoning is in this [blog post]({% post_url 2016-01-03-grad-sc
 The research I've done hasn't led to publishable results, but it's
 not nothing. I'm still proud of it, and want to share it, in the off chance
 someone finds it neat.
+(I also haven't given up on academia just yet, so this page also
+signals my research capabilities in case I apply in the future.)
 
-(Additionally, I haven't given up on academia just yet, so I need
-to signal my research capabilities in case I apply in the future.
-This page is that signal.)
+Project list:
+
+- Clobbered for auto generated table of contents
+{:toc}
 
 
 ---------------------------------------------
 
 <p></p>
 
-**Exploring Boosted Neural Nets for Rubik's Cube Solving**
+# Exploring Boosted Neural Nets for Rubik's Cube Solving
 
 *Alex Irpan*
 
@@ -50,7 +53,7 @@ The short answer is that it did neither. For details, see the submission.
 
 <p></p>
 
-**Factored Q-Learning in Continuous State-Action Spaces**
+# Factored Q-Learning in Continuous State-Action Spaces
 
 *Alex Irpan, mentored by John Schulman*
 
@@ -65,7 +68,8 @@ Informal Writeup: [PDF](/public/research/281areport.pdf)
 Code: [BitBucket](https://bitbucket.org/airpan/fall15-research)
 
 The intention of this project was to
-add independence assumptions between different dimmensions of the action space,
+add independence assumptions between different dimensions of the action space to
+decrease model size,
 with specific application to discretized continuous MDPs.
 Unfortunately I had difficulty getting Q-learning to work in small
 continuous MDPs,
@@ -82,7 +86,7 @@ but have too many other things on my plate.
 
 <p></p>
 
-**An Overview of Sublinear Machine Learning Algorithms**
+# An Overview of Sublinear Machine Learning Algorithms
 
 *Alex Irpan\*, Ronald Kwan\* (worked equally)*
 
@@ -102,7 +106,7 @@ Multiplicative weights and concentration inequalities glues the proofs together.
 
 <p></p>
 
-**Integrating Monte Carlo Tree Search with Reinforcement Learning**
+# Integrating Monte Carlo Tree Search with Reinforcement Learning
 
 *Alex Irpan, mentored by John Schulman*
 
@@ -126,7 +130,7 @@ and in AlphaGo, so I don't see much use in revisiting this.
 
 <p></p>
 
-**Presentation: Secure Function Evaluation with Garbled Circuits**
+# Presentation: Secure Function Evaluation with Garbled Circuits
 
 *Alex Irpan*
 
@@ -144,7 +148,7 @@ intuition.
 
 <p></p>
 
-**Presentation: Hiding Input Size in Two-Party Secure Computation**
+# Presentation: Hiding Input Size in Two-Party Secure Computation
 
 *Alex Irpan*
 
