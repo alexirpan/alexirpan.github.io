@@ -121,3 +121,8 @@ of "the establishment", the mythical body that has enough power to make the
 candidate of their choice. You know, the same establishment that backed Jeb,
 and Rubio, who are both leading nominees. OH WAIT.
 
+Look. I like Bernie. He has ideas I like. The majority of Bernie supporters
+I've interacted with are reasonable people who don't let their love of the
+candidate blind themselves from the reality of politics.
+
+It's the die hard fans that annoy me. It's the die hard fans
