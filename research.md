@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-*Last updated June 10, 2016.*
+*Last updated June 11, 2016.*
 
 This is not a standard research page.
 
@@ -14,8 +14,11 @@ My more complete reasoning is in this [blog post]({% post_url 2016-01-03-grad-sc
 The research I've done hasn't led to publishable results, but it's
 not nothing. I'm still proud of it, and want to share it, in the off chance
 someone finds it neat.
-(I also haven't given up on academia just yet, so this page also
-signals my research capabilities in case I apply in the future.)
+
+(I'm also applying to the [CFAR for ML researchers workshop](http://rationality.org/cfar-for-ml-researchers/),
+which requires a CV or CV-equivalent. If you're from CFAR - hello! Don't worry, the fourth
+wall of the Internet will save you from getting infected by my weirdness. Relax, and
+enjoy the show.)
 
 Project list:
 
