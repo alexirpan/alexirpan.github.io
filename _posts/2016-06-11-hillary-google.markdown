@@ -21,7 +21,7 @@ horseshit.
 
 
 The Argument
---------------------------------------------------------------------
+=======================================================
 
 The creators of the linked video did some searches when working
 on a report concluding presidential primaries, and made an observation.
@@ -37,10 +37,10 @@ Schmidt, to give Google a motive for biasing search results.
 
 
 My Rebuttal
-----------------------------------------------------------------------
+=======================================================
 
 Autocompletes are Not Biased Just for Hillary
-=======================================================
+--------------------------------------------------------------------
 
 PICTURES
 
@@ -58,9 +58,11 @@ the positivity bias comes in. This was confirmed by a public statement from Goog
 
 
 It Would Be Too Difficult to Hide The Conspiracy
-==============================================================
+--------------------------------------------------------------------
 
-Let's set aside motive for a bit. A good motive increases the likelihood a
+Let's set aside motive. Because actually, I don't give a shit about the motive,
+and the motive has nothing to do with why I don't believe this video.
+A good motive increases the likelihood a
 person does something, but it does nothing towards explaining the logistics
 that go into it.
 
@@ -89,10 +91,11 @@ are not enough to justify a conspiracy.
 
 
 The Timing Suggests More Reasonable Explanations
-===============================================================
+------------------------------------------------------------------
 
-I find it interesting that this video came out *just after* the last
-presidential primaries.
+This is the third nail in the coffin for me. I don't even need this, because
+I only need to cast reasonable doubt to explain why a theory is bogus. But
+just for kicks, here's my take on things.
 
 The video claims the conspiracy was so subtle that they only realized it
 right now. That's possible, but the coincidence that they noticed it
@@ -106,14 +109,15 @@ of this video focused their brainpower on figuring out ways Bernie could
 still win. Once Bernie lost in California, they subconsciously focused on
 finding reasons Bernie *deserved* to win. Because that's how the narrative goes!
 The system is corrupt, it's fighting against the One True Candidate at every
-turn.
-The narrative made people susceptible to ballooning a small difference in
+turn. The narrative made people susceptible to ballooning a small difference in
 search results into the claim that Google systematically biased for Hillary,
 and the narrative didn't make them question if their evidence was strong
 enough for their claim.
 
-I've seen a lot of desperate grasping to argue why Bernie is still going to
-be the nominee, and not a lot of consideration towards accepting that a lot
-of people wanted Hillary to be the nominee.
-
+This is symptomatic of a trend I've noticed among the most intolerable Bernie
+supporters. They have been grasping at the tiniest straws to argue why Bernie
+is going to be the nominee, as if the only reason Bernie lost was because
+of "the establishment", the mythical body that has enough power to make the
+candidate of their choice. You know, the same establishment that backed Jeb,
+and Rubio, who are both leading nominees. OH WAIT.
 
