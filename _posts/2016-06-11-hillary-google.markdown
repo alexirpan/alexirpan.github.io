@@ -39,4 +39,20 @@ Schmidt, to give Google a motive for biasing search results.
 My Rebuttal
 ----------------------------------------------------------------------
 
-First
+First of all, here's some autocomplete results from Snopes.
+
+PICTURES
+
+These results suggest that when there is more uncertainty in what
+search the user is making, Google biases towards a more positive result.
+This is something that holds across all candidates, not just Hillary.
+Note this is **not** the same as Google always having positive search
+results. It simply means that the system is less sure how to complete
+"Hillary Clinton cri" than it is on how to complete "Bernie Sanders so".
+If you're typing "Bernie Sanders so", it's pretty likely you're going to
+complete it to "socialist", since Sanders self-identifies as a democratic
+socialist. On the other hand, it's less clear that "Bernie Sanders com"
+will complete to "communist" since it's a rarer phrase, and that's where
+the positivity bias comes in. This was confirmed by a public statement from Google.
+
+Okay
