@@ -39,7 +39,8 @@ Schmidt, to give Google a motive for biasing search results.
 My Rebuttal
 ----------------------------------------------------------------------
 
-First of all, here's some autocomplete results from Snopes.
+Autocompletes are Not Biased Just for Hillary
+=======================================================
 
 PICTURES
 
@@ -55,4 +56,64 @@ socialist. On the other hand, it's less clear that "Bernie Sanders com"
 will complete to "communist" since it's a rarer phrase, and that's where
 the positivity bias comes in. This was confirmed by a public statement from Google.
 
-Okay
+
+It Would Be Too Difficult to Hide The Conspiracy
+==============================================================
+
+Let's set aside motive for a bit. A good motive increases the likelihood a
+person does something, but it does nothing towards explaining the logistics
+that go into it.
+
+So to play devil's advocate, let's set aside motive, and assume Google has
+been manipulating search results in favor of Hillary. In such a world,
+what also has to be true?
+
+Such a bias had to have been added in by an engineer. That biasing code
+made it past code review. No one on the entire Search team (which is about
+200 engineers) noticed this, or anyone who did decided to stay quiet.
+Note Bernie Sanders outraised Hillary Clinton in Silicon Valley, so it's
+not like the whole company -Hillary. There is a sizable Bernie contingent
+who would report such a thing, if it actually existed.
+
+Let me state this again for emphasis: **if the conspiracy is true, then
+none of those 200 engineers reported it, despite having direct access
+to Google's codebase. And, despite a sizable fraction of them being
+Bernie supporters. AND, despite them knowing search very well because
+_it is their literal full-time job._**
+
+I find this so incredibly preposterous that I can't believe it to be true.
+
+It doesn't matter that Eric Schmidt has dealt with Hillary, because we're
+assuming the conspiracy is real for the sake of argument. Motives alone
+are not enough to justify a conspiracy.
+
+
+The Timing Suggests More Reasonable Explanations
+===============================================================
+
+I find it interesting that this video came out *just after* the last
+presidential primaries.
+
+The video claims the conspiracy was so subtle that they only realized it
+right now. That's possible, but the coincidence that they noticed it
+right after it's impossible to do anything about it doesn't fit well
+with me. They claim they discovered this behavior when doing searches for
+a report wrapping up the presidential primaries - so why didn't they discover
+it for previous Super Tuesdays?
+
+Here's what I think happened: while Bernie had a plausible chance, the creators
+of this video focused their brainpower on figuring out ways Bernie could
+still win. Once Bernie lost in California, they subconsciously focused on
+finding reasons Bernie *deserved* to win. Because that's how the narrative goes!
+The system is corrupt, it's fighting against the One True Candidate at every
+turn.
+The narrative made people susceptible to ballooning a small difference in
+search results into the claim that Google systematically biased for Hillary,
+and the narrative didn't make them question if their evidence was strong
+enough for their claim.
+
+I've seen a lot of desperate grasping to argue why Bernie is still going to
+be the nominee, and not a lot of consideration towards accepting that a lot
+of people wanted Hillary to be the nominee.
+
+
