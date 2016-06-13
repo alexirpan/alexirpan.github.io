@@ -16,12 +16,11 @@ before I found out how many people believed it. Then I was just mad.
 ![Relevant XKCD](/public/hillary-google/xkcd.png)
 {: .centered }
 
-I'm going to regret this, but here's why this video is
-horseshit.
+I may regret this, but here's why I find the whole affair preposterous.
 
 
 The Argument
-=======================================================
+--------------------------------------------------------
 
 The creators of the linked video did some searches when working
 on a report concluding presidential primaries, and made an observation.
@@ -37,12 +36,13 @@ Schmidt, to give Google a motive for biasing search results.
 
 
 My Rebuttal
-=======================================================
+-----------------------------------------------------------
 
 Autocompletes are Not Biased Just for Hillary
---------------------------------------------------------------------
+==========================================================
 
-PICTURES
+![Other search results](/public/hillary-google/searches.jpg)
+{: .centered }
 
 These results suggest that when there is more uncertainty in what
 search the user is making, Google biases towards a more positive result.
@@ -58,7 +58,7 @@ the positivity bias comes in. This was confirmed by a public statement from Goog
 
 
 It Would Be Too Difficult to Hide The Conspiracy
---------------------------------------------------------------------
+============================================================
 
 Let's set aside motive. Because actually, I don't give a shit about the motive,
 and the motive has nothing to do with why I don't believe this video.
@@ -91,7 +91,7 @@ are not enough to justify a conspiracy.
 
 
 The Timing Suggests More Reasonable Explanations
-------------------------------------------------------------------
+=============================================================
 
 This is the third nail in the coffin for me. I don't even need this, because
 I only need to cast reasonable doubt to explain why a theory is bogus. But
