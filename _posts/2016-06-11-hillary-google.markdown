@@ -22,16 +22,14 @@ I may regret this, but here's why I find the whole affair preposterous.
 The Argument
 --------------------------------------------------------
 
-The creators of the linked video did some searches when working
-on a report concluding presidential primaries, and made an observation.
-The autocomplete suggestions Google suggested for Hillary were different
-from Yahoo's and Bing's suggestions. The suggestions were for terms that
-were searched less often than the ones suggested by Yahoo and Bing, and
-also had more positive sentiment.
-In contrast, the autocompletes tried for Sanders and Trump seemed to
-match.
+While researching for a report about the last presidential primaries,
+SourceFed found that Google's autocomplete suggestions for search queries
+involving Hillary differed from Yahoo's and Bing's. Google's autocompletes
+were both more positive and less common than Yahoo's and Bing's suggestions.
+In contrast, a few autocompletes tried for Sanders and Trump matched
+across all search engines.
 
-The video then points out the relationship between Hillary and Eric
+They then examine the relationship between Hillary and Eric
 Schmidt, to give Google a motive for biasing search results.
 
 
@@ -44,85 +42,121 @@ Autocompletes are Not Biased Just for Hillary
 ![Other search results](/public/hillary-google/searches.jpg)
 {: .centered }
 
-These results suggest that when there is more uncertainty in what
+These are results found by [Snopes](http://www.snopes.com/google-manipulate-hillary-clinton/).
+They have similar results for Trump. So, right off the bat it seems like the
+video didn't try enough search queries.
+
+When there is more uncertainty in what
 search the user is making, Google biases towards a more positive result.
-This is something that holds across all candidates, not just Hillary.
+This is something that happens whenever the search includes anyone's name. It
+hold for Sanders, and for Trump, and for Hillary, with no preference to any
+of them. See Google's explanation [here](https://search.googleblog.com/2016/06/google-search-autocomplete.html).
+
 Note this is **not** the same as Google always having positive search
-results. It simply means that the system is less sure how to complete
-"Hillary Clinton cri" than it is on how to complete "Bernie Sanders so".
-If you're typing "Bernie Sanders so", it's pretty likely you're going to
-complete it to "socialist", since Sanders self-identifies as a democratic
-socialist. On the other hand, it's less clear that "Bernie Sanders com"
-will complete to "communist" since it's a rarer phrase, and that's where
-the positivity bias comes in. This was confirmed by a public statement from Google.
+results. If someone searches "Bernie Sanders so", it's likely it will
+get completed to "Bernie Sanders socialist", since Sanders self-identifies
+as a democratic socialist. On the other hand, he does not identify as
+communist, making "Bernie Sanders communist" a rarer phrase. That's
+why Google autocompletes "socialist" but not "communist".
+
+The only interesting thing here is that "socialist" has better sentiment
+than "communist", and that it isn't seen as an offensive enough word to avoid.
 
 
 It Would Be Too Difficult to Hide The Conspiracy
 ============================================================
 
-Let's set aside motive. Because actually, I don't give a shit about the motive,
-and the motive has nothing to do with why I don't believe this video.
-A good motive increases the likelihood a
-person does something, but it does nothing towards explaining the logistics
-that go into it.
+Let's set aside motive. Because actually, I don't give a shit about the motive.
+I don't care how Hillary and Eric Schmidt are related. A good motive increases
+the likelihood a person does something, but it doesn't magically make that
+something happen.
 
-So to play devil's advocate, let's set aside motive, and assume Google has
-been manipulating search results in favor of Hillary. In such a world,
+So to play devil's advocate, let's ignore motive, and assume Google has
+been manipulating search results for Hillary. In such a world,
 what also has to be true?
 
-Such a bias had to have been added in by an engineer. That biasing code
-made it past code review. No one on the entire Search team (which is about
-200 engineers) noticed this, or anyone who did decided to stay quiet.
-Note Bernie Sanders outraised Hillary Clinton in Silicon Valley, so it's
-not like the whole company -Hillary. There is a sizable Bernie contingent
-who would report such a thing, if it actually existed.
+Code acting specifically for Hillary had to be added in by a programmer.
+That code then made it past code review. No one on the entire search
+team noticed this, or anyone who did decided to stay quiet.
+Let's say the team is on the order of 100 engineers. Search is a core product
+of Google and the company is over 50,000 employees, so I think this is a close
+enough guess.
 
-Let me state this again for emphasis: **if the conspiracy is true, then
-none of those 200 engineers reported it, despite having direct access
+This is a lot of people! And nobody acted as a whistleblower?
+Note that [Sanders outraised Clinton in Silicon Valley](https://www.buzzfeed.com/carolineodonovan/bernie-sanders-is-still-outraising-hillary-clinton-among-tec?utm_term=.cb1V3oKlO#.xyDM6akXw),
+so there must be a sizable contingent of Sanders fans, who would certainly
+report this if it actually existed.
+
+**If the conspiracy is true, then
+none of those 100 engineers reported it, despite having direct access
 to Google's codebase. And, despite a sizable fraction of them being
 Bernie supporters. AND, despite them knowing search very well because
 _it is their literal full-time job._**
 
-I find this so incredibly preposterous that I can't believe it to be true.
+![Tinfoil hat](/public/hillary-google/conspiracy.png)
+{: .centered }
 
-It doesn't matter that Eric Schmidt has dealt with Hillary, because we're
-assuming the conspiracy is real for the sake of argument. Motives alone
-are not enough to justify a conspiracy.
+([Paranatural](http://www.paranatural.net/about))
+{: .centered }
+
+This is incredibly preposterous.
+I've read many arguments for *why* Google would bias
+their autocomplete results, but I've yet to see anyone explain
+*how* a company could hide a conspiracy to influence the presidential election.
+Scandals are really, really hard to
+cover up - think of how many government scandals the public finds out about.
 
 
-The Timing Suggests More Reasonable Explanations
-=============================================================
+The Part Where I Rant and Maybe Piss People Off
+---------------------------------------------------------------------
 
-This is the third nail in the coffin for me. I don't even need this, because
-I only need to cast reasonable doubt to explain why a theory is bogus. But
-just for kicks, here's my take on things.
+I could stop this post here, because all I needed to do was cast reasonable
+doubt on this video. But just for kicks, let me explain *why* I got trolled
+into writing this post.
 
-The video claims the conspiracy was so subtle that they only realized it
-right now. That's possible, but the coincidence that they noticed it
-right after it's impossible to do anything about it doesn't fit well
-with me. They claim they discovered this behavior when doing searches for
-a report wrapping up the presidential primaries - so why didn't they discover
-it for previous Super Tuesdays?
+SourceFed claims the conspiracy was so subtle that they only realized it
+after all the presidential primaries ended. Why? Why now, instead of after
+other big election days? It could be random chance, but I have another
+explanation.
 
-Here's what I think happened: while Bernie had a plausible chance, the creators
-of this video focused their brainpower on figuring out ways Bernie could
-still win. Once Bernie lost in California, they subconsciously focused on
-finding reasons Bernie *deserved* to win. Because that's how the narrative goes!
-The system is corrupt, it's fighting against the One True Candidate at every
-turn. The narrative made people susceptible to ballooning a small difference in
-search results into the claim that Google systematically biased for Hillary,
-and the narrative didn't make them question if their evidence was strong
-enough for their claim.
+Here's my claim: while Bernie had a chance at becoming the nominee, people
+focused on ways Bernie could win. Once Bernie lost in California,
+instead of grieving in
+silence, they turned to finding reasons Bernie *deserved* to win.
+Because that's how the narrative goes! The system is corrupt, it's fighting
+against the One True Candidate at every turn. It doesn't even have to be
+a conscious decision, a subconscious bias towards believing Bernie was cheated
+makes people susceptible to ballooning a small difference in autocomplete
+results into the extraordinary claim that Google is in cahoots with Hillary.
+They didn't ask if their evidence was strong enough to back their claim,
+because it fit the storyline.
 
 This is symptomatic of a trend I've noticed among the most intolerable Bernie
-supporters. They have been grasping at the tiniest straws to argue why Bernie
-is going to be the nominee, as if the only reason Bernie lost was because
-of "the establishment", the mythical body that has enough power to make the
-candidate of their choice. You know, the same establishment that backed Jeb,
-and Rubio, who are both leading nominees. OH WAIT.
+supporters. I am *not* talking about the Bernie supporters who like his
+policies and really wanted him to win the nomination. The majority of Bernie
+supporters I interact with are reasonable people who don't let their love
+for Bernie blind themselves from the realities of the situation.
 
-Look. I like Bernie. He has ideas I like. The majority of Bernie supporters
-I've interacted with are reasonable people who don't let their love of the
-candidate blind themselves from the reality of politics.
+No, I'm talking about the die hard fans. The ones who have deified Bernie
+practically to the level of the Second Coming. Here comes Bernie Sanders,
+our Lord and Savior, descending from the mountaintops of Vermont,
+fighting the establishment at every turn, where establishment = exactly the
+parts of politics that works against Bernie Sanders.
 
-It's the die hard fans that annoy me. It's the die hard fans
+To these people, the idea that Hillary won because a large percentage of
+voters agreed with her platform is ridiculous. Instead, they'd prefer to
+believe Hillary bought all her votes, because she's establishment, and
+establishment is evil. Establishment is the bane of our existence. Whoever
+they back wins, which is why the two nominees are Hillary Clinton and Jeb
+Bush. YEP. THAT IS DEFINITELY WHAT HAPPENED.
+
+Believing the system is corrupt is fine. Wanting to decrease money's
+influence in politics is an admirable goal. Voting for a candidate you
+believe in is the whole point of democracy. And grieving when a candidate
+loses just shows how much you cared about electing the person you believed
+would make the world a better place.
+
+But if you're going to revel in tribalism, if you're going to divide the
+world into "the system" and "the free" and shift the boundaries whenever they
+make you uncomfortable, if you refuse to accept people smarter than you
+disagree on politics, I will find it very hard to respect you.
