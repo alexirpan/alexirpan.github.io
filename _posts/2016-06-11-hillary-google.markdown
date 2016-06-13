@@ -157,6 +157,18 @@ loses just shows how much you cared about electing the person you believed
 would make the world a better place.
 
 But if you're going to revel in tribalism, if you're going to divide the
-world into "the system" and "the free" and shift the boundaries whenever they
-make you uncomfortable, if you refuse to accept people smarter than you
-disagree on politics, I will find it very hard to respect you.
+world into "the system" and "the free" and shift the boundaries to make yourself
+mad at the person of your choice, or if you're going to decide whether someone's
+smart or dumb based on which candidate they like, I will find it
+very hard to respect you. I will find it very hard to tolerate you.
+If you refuse to be civil in debates, I will ignore you.
+
+In contrast, if you understand that people are messy, political beliefs are
+a maze of wrong turns, and can argue with people you disagree
+with while respecting their inherent worth as a person,
+then holy shit, *we should keep in touch*.
+
+Oh, and if you make a conspiracy video with horrible justification, I'll feel
+free to laugh at you. It's not nice, in fact it's downright mean, but I find it
+a hell of a lot easier than thinking about a world where people will believe
+something because an eight minute video pandered to them in the right way.
