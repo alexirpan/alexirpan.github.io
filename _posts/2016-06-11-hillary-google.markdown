@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "There is No Conspiracy"
-date:   2016-06-11 19:31:00 -0700
+title:  "Hillary, Google, and a Rant"
+date:   2016-06-13 02:09:00 -0700
 ---
 
 Turns out the secret to getting more blog posts out of me is to
@@ -10,7 +10,7 @@ Turns out the secret to getting more blog posts out of me is to
 There'a [a viral video](https://www.youtube.com/watch?v=PFxFRqNmXKg)
 claiming Google manipulated search results in favor of Hillary.
 I've seen several people watch this and say, "Yeah, seems likely."
-In constrast, my reaction was to laugh at the video, and I did,
+In contrast, my reaction was to laugh at the video, and I did,
 before I found out how many people believed it. Then I was just mad.
 
 ![Relevant XKCD](/public/hillary-google/xkcd.png)
@@ -107,7 +107,7 @@ Scandals are really, really hard to
 cover up - think of how many government scandals the public finds out about.
 
 
-The Part Where I Rant and Maybe Piss People Off
+The Part Where I Go Off The Rails and Rant and Maybe Piss People Off
 ---------------------------------------------------------------------
 
 I could stop this post here, because all I needed to do was cast reasonable
@@ -139,15 +139,18 @@ for Bernie blind themselves from the realities of the situation.
 
 No, I'm talking about the die hard fans. The ones who have deified Bernie
 practically to the level of the Second Coming. Here comes Bernie Sanders,
-our Lord and Savior, descending from the mountaintops of Vermont,
-fighting the establishment at every turn, where establishment = exactly the
-parts of politics that works against Bernie Sanders.
+our Lord and Savior, descending from the mountaintops of Vermont! Wielding
+pen and paper, he'll fight the establishment at every turn! Where
+establishment = exactly every part of politics working against Bernie Sanders.
 
 To these people, the idea that Hillary won because a large percentage of
 voters agreed with her platform is ridiculous. Instead, they'd prefer to
-believe Hillary bought all her votes, because she's establishment, and
-establishment is evil. Establishment is the bane of our existence. Whoever
-they back wins, which is why the two nominees are Hillary Clinton and Jeb
+believe Hillary bought all her votes, as if everyone who voted for her was
+a mindless drone or sheep.
+Because she's establishment, and establishment is evil.
+Establishment is the bane of our existence. They are the Enemy, they hold all
+the keys. Whoever the establishment backs wins, which is why the two
+nominees are Hillary Clinton and Jeb
 Bush. YEP. THAT IS DEFINITELY WHAT HAPPENED.
 
 Believing the system is corrupt is fine. Wanting to decrease money's
@@ -156,19 +159,24 @@ believe in is the whole point of democracy. And grieving when a candidate
 loses just shows how much you cared about electing the person you believed
 would make the world a better place.
 
-But if you're going to revel in tribalism, if you're going to divide the
-world into "the system" and "the free" and shift the boundaries to make yourself
-mad at the person of your choice, or if you're going to decide whether someone's
-smart or dumb based on which candidate they like, I will find it
+But if you're going to revel in tribalism, if you're going to
+shift the boundaries whenever it lets
+you avoid getting mad about something you like, or if you're going to decide
+someone's intelligence based on which candidate they like, I will find it
 very hard to respect you. I will find it very hard to tolerate you.
 If you refuse to be civil in debates, I will ignore you.
 
 In contrast, if you understand that people are messy, political beliefs are
-a maze of wrong turns, and can argue with people you disagree
-with while respecting their inherent worth as a person,
-then holy shit, *we should keep in touch*.
+a maze of dead ends, and arguments where people respect each other are
+doable, then holy shit, *we should keep in touch*.
+
+If you can't do that? Well, then no. We shouldn't keep in touch. It's not worth my time,
+and you'll find plenty of people to get mad at instead of me.
 
 Oh, and if you make a conspiracy video with horrible justification, I'll feel
 free to laugh at you. It's not nice, in fact it's downright mean, but I find it
 a hell of a lot easier than thinking about a world where people will believe
 something because an eight minute video pandered to them in the right way.
+
+![Mic drop](/public/hillary-google/micdrop.gif)
+{: .centered }
