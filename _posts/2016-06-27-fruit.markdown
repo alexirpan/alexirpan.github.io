@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "TODO"
+date:   2016-06-27 21:24:00 -0700
+---
+
+Back in 2008, Randall Munroe, creator of xkcd, put up this comic.
+
+PICTURE
+
+In a perfect storm of bike-shedding, this comic was by far his most
+controversial, beating out his endorsement of Obama. It seemed that
+everyone had a different opinion about fruit, and wanted him to know.
+
+For a while, I've wanted to know what the average fruit opinion is.
+One day, I decided to stop being lazy and actually make a survey.
+
+
+Survey Design
+----------------------------------------------------------------------
+
+Each fruit's ease of eating and tastiness is rated on a scale of 1 to 10,
+with 1 the worst and 10 the best. I then shared the survey to a few
+places - my Facebook friends, the xkcd subreddit, and the SampleSize
+subreddit.
+
+Along the way, I got some comments about my survey design. My population
+is biased towards people who frequent these subreddits, and
+placing the xkcd comic at the start of the survey biases the results.
+
+PICTURE?
+
+These are both fair criticisms. In my defense, I wanted to give context
+for why the survey existed, and it's a survey about fruit.
+Literally fruit. It's not supposed to be a big deal.
+
+In total, I got over 1300 responses. Additionally, everyone's fruit opinion
+is indeed unique; no two responses had the exact same fruit rating.
+
+
+Analysis
+----------------------------------------------------
