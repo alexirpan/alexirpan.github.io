@@ -2,6 +2,7 @@ import csv
 import os
 
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 def read_data():
@@ -89,12 +90,14 @@ def replace_nan_and_get_avg(data, categories):
     averages = dict()
 
     for i in range(num_fruit):
+        fruit_name = categories[i].rsplit(' ', 1)[0][:-1]
+        averages[fruit_name] = [0, 0]
         for dim in (0, 1):
             fruit_ease = data[:, i, dim]
             n_ease = (~np.isnan(fruit_ease)).sum()
             total = np.nan_to_num(fruit_ease).sum()
             avg = float(total) / n_ease
-            averages[categories[dim * num_fruit + i]] = avg
+            averages[fruit_name][dim] = avg
             for j in xrange(num_replies):
                 if np.isnan(data[j, i, dim]):
                     data[j, i, dim] = avg
@@ -102,5 +105,34 @@ def replace_nan_and_get_avg(data, categories):
     print 'Replaced %d NaN entries with the corresponding average' % replaced
     return averages
 
+
 averages = replace_nan_and_get_avg(data, categories)
 
+
+def show_plot(averages):
+    img = plt.imread('xkcdemptyfruit.png')
+    implot = plt.imshow(img)
+    # Coordinates of key locations in image
+    LEFT = (19, 288)
+    CENTER = (339, 288)
+    RIGHT = (659, 288)
+    TOP = (339, 18)
+    BOTTOM = (339, 558)
+
+    EASE = (RIGHT[0] - LEFT[0]) / 9.0
+    TASTE = (TOP[1] - BOTTOM[1]) / 9.0
+    # This is (0, 0) in fruit space
+    BOT_LEFT = (LEFT[0] - EASE, BOTTOM[1] - TASTE)
+
+    fruits = []
+    ease_coor = []
+    taste_coor = []
+    for fruit in averages.keys():
+        fruits.append(fruit)
+        ease_coor.append(BOT_LEFT[0] + averages[fruit][0] * EASE)
+        taste_coor.append(BOT_LEFT[1] + averages[fruit][1] * TASTE)
+
+    plt.scatter(ease_coor, taste_coor)
+    for i, fruit in enumerate(fruits):
+        plt.annotate(s=fruit, xy=[ease_coor[i], taste_coor[i]])
+    plt.show()
