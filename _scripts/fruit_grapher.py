@@ -109,7 +109,7 @@ def replace_nan_and_get_avg(data, categories):
 averages = replace_nan_and_get_avg(data, categories)
 
 
-def show_plot(averages):
+def show_plot(averages, stretch=True):
     img = plt.imread('xkcdemptyfruit.png')
     implot = plt.imshow(img)
     # Coordinates of key locations in image
@@ -124,15 +124,34 @@ def show_plot(averages):
     # This is (0, 0) in fruit space
     BOT_LEFT = (LEFT[0] - EASE, BOTTOM[1] - TASTE)
 
+    if stretch:
+        min_ease = min(t[0] for t in averages.values())
+        max_ease = max(t[0] for t in averages.values())
+        min_taste = min(t[1] for t in averages.values())
+        max_taste = max(t[1] for t in averages.values())
+        taste_scale = (max_ease - min_ease) / (max_taste - min_taste)
+    else:
+        taste_scale = 1
+    print 'Scaling tastes by %f' % taste_scale
+    avg_ease = sum(t[0] for t in averages.values()) / len(averages)
+    avg_taste = sum(t[1] for t in averages.values()) / len(averages)
+    print 'Average of data is (%f, %f)' % (avg_ease, avg_taste)
+
     fruits = []
     ease_coor = []
     taste_coor = []
     for fruit in averages.keys():
         fruits.append(fruit)
-        ease_coor.append(BOT_LEFT[0] + averages[fruit][0] * EASE)
-        taste_coor.append(BOT_LEFT[1] + averages[fruit][1] * TASTE)
+        ease = averages[fruit][0]
+        ease_coor.append(BOT_LEFT[0] + ease * EASE)
+        taste = averages[fruit][1]
+        taste = (taste - avg_taste) * taste_scale + avg_taste
+        taste_coor.append(BOT_LEFT[1] + taste * TASTE)
 
     plt.scatter(ease_coor, taste_coor)
     for i, fruit in enumerate(fruits):
-        plt.annotate(s=fruit, xy=[ease_coor[i], taste_coor[i]])
+        plt.annotate(s=fruit, xy=[ease_coor[i]-10, taste_coor[i]-5])
     plt.show()
+
+
+show_plot(averages, stretch=True)

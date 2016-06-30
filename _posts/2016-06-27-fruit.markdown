@@ -6,7 +6,8 @@ date:   2016-06-27 21:24:00 -0700
 
 Back in 2008, Randall Munroe, creator of xkcd, put up this comic.
 
-PICTURE
+![Original comic](/public/fruit-opinion/xkcdfruit.png)
+{: .centered }
 
 In a perfect storm of bike-shedding, this comic was by far his most
 controversial, beating out his endorsement of Obama. It seemed that
@@ -35,8 +36,38 @@ for why the survey existed, and it's a survey about fruit.
 Literally fruit. It's not supposed to be a big deal.
 
 In total, I got over 1300 responses. Additionally, everyone's fruit opinion
-is indeed unique; no two responses had the exact same fruit rating.
+is indeed unique; no two responses had the exact same fruit rating. (To be fair,
+it would be more surprising if this weren't true. With over 20 different fruit,
+each rated on a scale from 1 to 10, it's incredibly unlikely that two different
+people would agree exactly.)
 
 
-Analysis
+It's Time For...GRAPHS
 ----------------------------------------------------
+
+I imagine many people won't care, but instead of showing just the final graph,
+I'm going to show the iterations I went through.
+
+Here's a first pass, created using Python.
+
+![First graph](/public/fruit-opinion/graph1.png)
+{: .centered }
+
+Right away, we can tell fruit are noticeably more cluttered than the original graph.
+This happens because even controversial fruit have enough fans to keep the average
+from dropping too low. Although grapefruit is one of the least popular fruits by
+tastiness, its average taste rating is still at 4.76. Meanwhile, the tastiest fruit,
+strawberries, have a taste rating of 8.39. As a whole, people like fruit. In comparison, everyone
+agrees it's a pain in the ass to eat pomegranate and pineapple.
+This makes the fruit opinions very vertically
+compressed.
+
+We can fix this with some vertical stretching. The taste of each fruit is scaled such that
+the difference from max taste to min taste equals the difference from max difficulty to
+min difficulty, and such that the average taste stays the same.
+
+![Second graph](/public/fruit-opinion/graph2.png)
+{: .centered }
+
+Much better.
+
