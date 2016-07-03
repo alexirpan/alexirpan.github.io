@@ -4,65 +4,106 @@ title:  "kfeawopfk"
 date:   2016-07-02 19:40:00 -0800
 ---
 
-CHANGE THE INTRO
-
 I started work about a month ago. It's been a whirlwind, and I still
 don't feel settled down yet, but things are starting to fall into place.
 
-One of my first tasks at work is to think about my research interests,
-check other people's research interests, and figure out a meaningful
-project that lies in both. That means sending lots of emails, asking
-what people are working on, what they're interested in, what they think
-about, and so forth.
+One of my first tasks at work is to reflect on my research interests,
+find other people's research interests, and figure out a meaningful
+project that lies in both. That means sending lots of emails to figure
+out what people are working on and what they're interested in.
+
 Instant messaging apps like Slack may be the new kid
 on the block, but email is still the lifeblood of a company's
-communication.
+communication. Proper email etiquette is to respect other people's time,
+and avoid sending extraneous emails.
 
-At the same time, emails shouldn't take up all of an employee's time.
-They are a necessary cost to keep communication running. In the workplace,
-proper email etiquette is to waste as little of the other person's time
-as possible. I've had time to think about email's social norms, and
-honestly, there's a lot that feels slightly broken.
+Let's say I send an email. Three days later, I haven't gotten a reply.
+Any of the following could be true.
 
-Let's say I send an email. Three days later, I haven't gotten a reply
-yet. Any one of the following could be true.
-
-* They read the email, and are ignore it on purpose.
-* They read the email, and are planning to reply to it later.
+* They read the email, and don't want to reply to it.
+* They read the email, and are planning to reply to it when they're less
+busy.
 * They read the email, and have forgotten to reply to it.
-* They haven't read the email because they're very busy with work, but
-they'll catch up on email at some point.
-* They haven't read the email because they're on vacation or out of office.
+* They haven't read the email because they're on vacation.
 
-Proper protocol on my part depends on the scenario. In the first, I shouldn't
-send another email, because they'll ignore it again and it'll waste both
-of our time. In the second, I should send another email to remind them
-to reply to the first one. In the third, I shouldn't send another email
-because they'll get there eventually. In the fourth, I should wait until they're
-back in the office.
+What I should do in response depends on which of these is true. If they're
+busy or on vacation, I should wait until they get to me. If they've forgotten,
+I should send a reminder. If they don't want to reply, I should either send
+an email convicing them to reply, or stop sending emails to respect their
+decision.
 
 However, all I observe is no reply in my inbox. So, which one's true?
 
 Information theory 101: if there
-are several plausible hypotheses that all lead to the same observation,
-and you want to figure out which one is true, you are pretty boned.
+are several reasonable hypotheses that all lead to the same observation,
+and you want to figure out which one is true, you are screwed.
 
-Alright. What can people do to give email senders more information?
+So far, my rule of thumb is to model people as busy and working in good faith.
+That means being patient with email replies, sending reminders for important
+requests, and ignoring emails.
 
-* If they don't want to talk to you, they can respectfully tell you they
-aren't interested. Or more commonly, they phrase their email in a way
-that tries to send "not interested" in the subtext, and hope you get the
-hint, because they're trying to be a nice person and not hurt your feelings
-outright.
-* They can send a short email saying "Acknowledged, will reply soon, send
-me a follow-up if I don't." Or, send an email saying "Very busy, send follow-up
-if this is truly urgent."
-* If they're on vacation, they can set up an auto-reply saying so.
+What happens next depends on the person. My rule of thumb is to assume good
+will, because most people I deal with aren't assholes. That means generally
+being patient on getting email replies, and sending small follow-ups if it's
+an important request.
 
-Some people do this, but not enough. Note that I haven't done anything like
-this, because it's only now that I've started viewing email as a really
-helpful parasite that needs to be kept in line.
+This works out okay, but we can do better. Here's some quick examples that
+show how to streamline communication.
 
+* Somebody goes on vacation. They set up an auto-reply saying they're on
+vacation, and will be back in a week.
+* Someone's busy with work, and gets an email they want to respond to, but
+it'll take a lot of time to respond properly. They send a quick reply
+explaining the situation, promising to look at it more thoroughly later.
+
+When people do this, it helps me understand their situation. Because, and
+this is obvious, I'm not the other guy/girl! All I have is myself. If I've
+never emailed you before, I don't have any way to figure out how you handle
+email.
+
+Which brings me to the most insidious scenario.
+
+* They read the email, and don't want to reply to it.
+
+I have almost never gotten a reply that tells me up front that they're
+not interested. For that matter, I've almost never sent such a reply
+myself. The several unanswered LinkedIn invitations I have attest to this.
+
+I claim that people ignore emails entirely because they don't want to
+spend any more time than they have to, or they want to save other people's
+feelings. In other hands, people ignore emails for noble reasons. I've heard
+math/CS professors talk about how many emails they get from cranks claiming
+to have an elementary proof of Fermat's Last Theorem or P = NP. They don't
+have time to explain why they're wrong, and the moment they reply to a crank,
+that crank sees it as license to harass the professor. So, they don't reply
+at all.
+
+But, to me it seems like this directly contributes to misguided drama.
+Another reason people don't reply to emails is because they want to have
+plausible deniability. As soon as you say it outright, it becomes common
+knowledge that employee X doesn't like employee Y, or employee X doesn't think
+employee Y is worth their time. As long as you don't reply, you can pretend
+the email got misplaced.
+
+And then someone doesn't reply to an email because it actually did get misplaced,
+and because of the global political norms, people start assuming lots of nasty
+subtext.
+
+Stuff like this bothers me. I'm not the most socially adept person, so
+maybe this is just how people think communication should work. But why can't it
+work the other way?
+
+From an organizational level, the problem is that this kind of frank communication
+only works if everyone agrees they should manage email this way. If only one
+person is telling people they don't want to deal with this, they'll just be
+labelled as a jackass.
+
+I've heard GiveWell has a custom emoticon, that means "I'm very busy, and don't
+have time to review this fully, but it looks good at a surface level, and I
+trust your judgment." And it's funny, that this is a useful enough feature to have
+an entire emoticon dedicated to it, but I can see the benefits. It lets employees
+request oversight, while knowing up-front that they shouldn't expect to
+get feedback on everything.
 
 
 
