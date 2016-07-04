@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Minor Annoyance of Email"
-date:   2016-07-03 18:22:00 -0800
+date:   2016-07-03 18:22:00 -0700
 ---
 
 I started work about a month ago. It's been a whirlwind, and I still
