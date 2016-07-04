@@ -4,7 +4,6 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.offsetbox as ob
-from matplotlib.cbook import get_sample_data
 from matplotlib._png import read_png
 
 
@@ -113,8 +112,10 @@ averages = replace_nan_and_get_avg(data, categories)
 
 
 def show_plot(averages, stretch=True):
+    fig = plt.figure()
+
     img = plt.imread('xkcdemptyfruit.png')
-    implot = plt.imshow(img)
+    plt.imshow(img)
     # Coordinates of key locations in image
     LEFT = (19, 288)
     CENTER = (339, 288)
@@ -153,21 +154,23 @@ def show_plot(averages, stretch=True):
 
     plt.scatter(ease_coor, taste_coor)
     for i, fruit in enumerate(fruits):
-        plt.annotate(s=fruit, xy=[ease_coor[i]-10, taste_coor[i]-5])
-        add_image('fruit-pics/%s.png' % fruit.lower(), ease_coor[i] - 10, taste_coor[i] - 5)
-    plt.draw()
-    plt.show()
+        xy = [ease_coor[i] - 10, taste_coor[i] - 5]
+        plt.annotate(s=fruit, xy=xy)
+        add_image(fig, 'fruit-pics/%s.png' % fruit.lower(), xy[0], xy[1])
+    plt.savefig('foo.png')
 
 
-def add_image(filename, x, y):
+def add_image(fig, filename, x, y):
     # Adds image to (x, y) in the plot
     if not os.path.isfile(filename):
         print '%s could not be found' % filename
         return
-    fn = get_sample_data(filename, asfileobj=False)
-    arr_img = read_png(fn)
-    imagebox = ob.OffsetImage(arr_img)
-    ab = ob.AnnotationBox(imagebox, (x, y))
+    img = plt.imread(filename)
+    width = img.shape[1]
+    height = img.shape[0]
+    ax_img = fig.add_axes([x, y, width, height])
+    ax_img.imshow(img)
+    print 'Added %s' % filename
 
 
 show_plot(averages, stretch=True)
