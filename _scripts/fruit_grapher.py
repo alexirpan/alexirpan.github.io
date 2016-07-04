@@ -3,8 +3,7 @@ import os
 
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.offsetbox as ob
-from matplotlib._png import read_png
+import matplotlib.patches as patches
 
 
 def read_data():
@@ -110,20 +109,21 @@ def replace_nan_and_get_avg(data, categories):
 
 averages = replace_nan_and_get_avg(data, categories)
 
+# Picture data
+LEFT = (19, 288)
+CENTER = (339, 288)
+RIGHT = (659, 288)
+TOP = (339, 18)
+BOTTOM = (339, 558)
+
+EASE = (RIGHT[0] - LEFT[0]) / 9.0
+TASTE = (TOP[1] - BOTTOM[1]) / 9.0
+# This is (0, 0) in fruit space
+BOT_LEFT = (LEFT[0] - EASE, BOTTOM[1] - TASTE)
+
 
 def transform_data(data, averages, categories):
     """Transforms the data into plotted (x, y) coordinates."""
-    LEFT = (19, 288)
-    CENTER = (339, 288)
-    RIGHT = (659, 288)
-    TOP = (339, 18)
-    BOTTOM = (339, 558)
-
-    EASE = (RIGHT[0] - LEFT[0]) / 9.0
-    TASTE = (TOP[1] - BOTTOM[1]) / 9.0
-    # This is (0, 0) in fruit space
-    BOT_LEFT = (LEFT[0] - EASE, BOTTOM[1] - TASTE)
-
     # Manually strecth the taste scale to make the resulting graph
     # less compact
     min_ease = min(t[0] for t in averages.values())
@@ -170,12 +170,8 @@ def fit_gaussian(data, averages, categories):
 
     for i in range(num_fruit):
         fruit_name = categories[i].rsplit(' ', 1)[0][:-1]
-        covariances[fruit_name] = np.zeros((2,2))
-        avg = np.array(averages[fruit_name])
-        for j in xrange(num_replies):
-            v = (data[j, i] - avg).reshape((2,1))
-            covariances[fruit_name] += np.dot(v, v.reshape(1,2))
-        covariances[fruit_name] /= num_replies
+        covariances[fruit_name] = np.cov(data[:, i, :], rowvar=False)
+        assert covariances[fruit_name].shape == (2, 2)
 
     return covariances
 
@@ -183,12 +179,76 @@ def fit_gaussian(data, averages, categories):
 covariances = fit_gaussian(data, plotted_avgs, categories)
 
 
-def show_plot(averages):
+# Copied from StackOverflow
+def plot_point_cov(points, nstd=2, ax=None, **kwargs):
+    """
+    Plots an `nstd` sigma ellipse based on the mean and covariance of a point
+    "cloud" (points, an Nx2 array).
+
+    Parameters
+    ----------
+        points : An Nx2 array of the data points.
+        nstd : The radius of the ellipse in numbers of standard deviations.
+            Defaults to 2 standard deviations.
+        ax : The axis that the ellipse will be plotted on. Defaults to the 
+            current axis.
+        Additional keyword arguments are pass on to the ellipse patch.
+
+    Returns
+    -------
+        A matplotlib ellipse artist
+    """
+    pos = points.mean(axis=0)
+    cov = np.cov(points, rowvar=False)
+    return plot_cov_ellipse(cov, pos, nstd, ax, **kwargs)
+
+def plot_cov_ellipse(cov, pos, nstd=2, ax=None, **kwargs):
+    """
+    Plots an `nstd` sigma error ellipse based on the specified covariance
+    matrix (`cov`). Additional keyword arguments are passed on to the 
+    ellipse patch artist.
+
+    Parameters
+    ----------
+        cov : The 2x2 covariance matrix to base the ellipse on
+        pos : The location of the center of the ellipse. Expects a 2-element
+            sequence of [x0, y0].
+        nstd : The radius of the ellipse in numbers of standard deviations.
+            Defaults to 2 standard deviations.
+        ax : The axis that the ellipse will be plotted on. Defaults to the 
+            current axis.
+        Additional keyword arguments are pass on to the ellipse patch.
+
+    Returns
+    -------
+        A matplotlib ellipse artist
+    """
+    def eigsorted(cov):
+        vals, vecs = np.linalg.eigh(cov)
+        order = vals.argsort()[::-1]
+        return vals[order], vecs[:,order]
+
+    if ax is None:
+        ax = plt.gca()
+
+    vals, vecs = eigsorted(cov)
+    theta = np.degrees(np.arctan2(*vecs[:,0][::-1]))
+
+    # Width and height are "full" widths, not radius
+    width, height = 2 * nstd * np.sqrt(vals)
+    ellip = patches.Ellipse(xy=pos, width=width, height=height, angle=theta, **kwargs)
+
+    ax.add_artist(ellip)
+    return ellip
+
+
+def show_plot(data, averages, covariances):
     fig = plt.figure()
 
     img = plt.imread('xkcdemptyfruit.png')
     plt.imshow(img)
 
+    # Location of averages
     fruits = []
     ease_coor = []
     taste_coor = []
@@ -197,11 +257,27 @@ def show_plot(averages):
         ease_coor.append(averages[fruit][0])
         taste_coor.append(averages[fruit][1])
 
+    # Adds text labels
     plt.scatter(ease_coor, taste_coor)
     for i, fruit in enumerate(fruits):
         xy = [ease_coor[i] - 10, taste_coor[i] - 5]
         plt.annotate(s=fruit, xy=xy)
+
+    # Adds confidence interval (assuming Gaussian)
+    delta = 0.1
+    x = np.arange(LEFT[0], RIGHT[0], delta)
+    y = np.arange(TOP[1], BOTTOM[1], delta)
+    X, Y = np.meshgrid(x, y)
+
+    for i, fruit in enumerate(fruits):
+        cov = covariances[fruit]
+        ave = averages[fruit]
+        # Draw the 2-sigma ellipse.
+        plot_point_cov(data[:, i, :], nstd=0.25, facecolor='none')
+        #plot_cov_ellipse(cov, ave, nstd=0.25, facecolor='none')
+        print 'Added contour for %s' % fruit
+
     plt.show()
 
 
-show_plot(plotted_avgs)
+show_plot(data, plotted_avgs, covariances)
