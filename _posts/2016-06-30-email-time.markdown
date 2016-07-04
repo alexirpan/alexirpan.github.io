@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "kfeawopfk"
+title:  "The Minor Annoyance of Email"
 date:   2016-07-02 19:40:00 -0800
 ---
 
@@ -14,8 +14,9 @@ out what people are working on and what they're interested in.
 
 Instant messaging apps like Slack may be the new kid
 on the block, but email is still the lifeblood of a company's
-communication. Proper email etiquette is to respect other people's time,
-and avoid sending extraneous emails.
+communication. It's asynchronous, it's free, everyone has it, and
+filters give you huge control over how to manage it. Email is here
+to stay, as annoying as it may be.
 
 Let's say I send an email. Three days later, I haven't gotten a reply.
 Any of the following could be true.
@@ -29,7 +30,7 @@ busy.
 What I should do in response depends on which of these is true. If they're
 busy or on vacation, I should wait until they get to me. If they've forgotten,
 I should send a reminder. If they don't want to reply, I should either send
-an email convicing them it's worth replying, or stop sending emails to respect
+an email to convince them it's worth replying, or stop sending emails to respect
 their decision.
 
 However, all I observe is no reply in my inbox. So, which one's true?
@@ -45,48 +46,59 @@ request.
 
 This has worked well enough, but can we do better?
 
-To start, here are simple things that can help with this.
+Let's suppose people do this.
 
-* Somebody goes on vacation. They set up an auto-reply saying they're on
-vacation, and will be back in a week.
-* Someone's busy with work, and gets an email they want to respond to, but
-it'll take a lot of time to respond properly. They send a quick reply
+* They go on vacation. Before leaving, they set up an auto-reply saying
+they're on vacation, and will be back in a week.
+* They want to reply to an email, but it'll take time to respond properly,
+and other work has higher priority. They decide to send a quick reply
 explaining the situation, promising to look at it more thoroughly later.
 
-This changes the observation. Now I know you're on vacation, or busy, and
-won't spam your inbox with more emails.
+By doing so, they change the observation that the sender observes, letting
+them make a more informed decision.
 
 If you want to be treated differently depending on how busy you are,
 you have to tell people how busy you are. Otherwise, you run into the
-problem Philip Guo observed: several people will all make polite,
-reasonable requests for your time, and if you agree to all of them
-you'll be eternally busy.
+problem Philip Guo observed: [several people will make polite
+requests for your time, if you agree to all of them
+you'll be eternally busy, and if you say no to any of them you'll feel
+like an asshole.](http://www.pgbovine.net/why-academics-feel-overworked.htm).
 
 Which brings me to the most insidious pair of scenarios.
 
 * They don't want to reply to my email.
 * They forgot to reply to my email.
 
-I have almost never gotten an email verifying the first one. When people
-don't want to deal with something, they ignore it. I'm guilty of this
-too, based on my several unanswered LinkedIn invitations.
-I think people don't want to hurt the sender's feelings, or want to have
-plausible deniability.
+I've almost never gotten an email verifying the first one. Instead, they
+don't send a reply, and hope you'll read the signs.
+I'm guilty of this too. Just ask all the people in my LinkedIn inbox.
 
-But, if it was socially acceptable to politely tell people their emails
-weren't worth replying to, I wouldn't have to worry about whether I
-was being a bother to somebody or not.
+I think people don't want to hurt the sender's feelings, or want to have
+plausible deniability. But, it's self-evident to me that not all my
+emails deserve meaningful replies.
+I work with busy people, who don't have time for everything they're asked
+to do. Not getting a reply isn't an insult to my request.
+All it means is that they have limited bandwidth and I didn't
+make it through the pipe.
+
+The issue is that if people are interested, and then forget to follow up,
+or don't know how to follow up, you end up reading the wrong signs, and think
+they aren't interested at all. In work contexts, this isn't so bad.
+In romantic contexts...things can get complicated.
 
 I've mentioned similar ideas to some of my friends, and they don't think
-the same way. I think these feelings all flow from my social awkwardness
-and latent self-esteem issues. I don't want to annoy people, but I'm not
-socially adept enough to notice when I'm annoying people, and no one
-wants to be that guy/girl who says the harsh truth...
+the same way. I think these ideas all flow from my social awkwardness.
+I can navigate how social interactions work (somewhat), but that doesn't
+mean I have to like it, and there's no reason discourse has to be the way
+it is. At the same time, I have to admit the way *I* want discourse to
+work *just so happens* to be the way that's most convenient to me.
 
-Or, this could all be paranoia on my part. Because, people keep in contact
-with me despite all this.
+Still, there's definitely room for more polite refusals. I've always found
+radio silence to be infuriatingly cryptic, but for now we're stuck with it.
+Communication doesn't change unless the parties involved agree it should
+work differently, and at a societal level these shifts come incredibly
+slowly. At best, we can write down our ideas, share them with other people,
+and see where that goes.
 
-I believe communication would be better if it was okay to say these harsh
-truths, but there's too much going against it. Saying things like that
-only works if both parties know saying
+Until then, all those LinkedIn emails are going to collect virtual dust.
 
