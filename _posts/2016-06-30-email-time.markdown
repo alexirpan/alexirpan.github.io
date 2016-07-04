@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Minor Annoyance of Email"
-date:   2016-07-02 19:40:00 -0800
+date:   2016-07-03 18:22:00 -0800
 ---
 
 I started work about a month ago. It's been a whirlwind, and I still
@@ -60,11 +60,11 @@ them make a more informed decision.
 If you want to be treated differently depending on how busy you are,
 you have to tell people how busy you are. Otherwise, you run into the
 problem Philip Guo observed: [several people will make polite
-requests for your time, if you agree to all of them
-you'll be eternally busy, and if you say no to any of them you'll feel
-like an asshole.](http://www.pgbovine.net/why-academics-feel-overworked.htm).
+requests for your time, saying no to any polite request makes you feel
+like an asshole, and saying yes to all of them consumes all your time](http://www.pgbovine.net/why-academics-feel-overworked.htm).
 
-Which brings me to the most insidious pair of scenarios.
+Which brings me to the most insidious pair of scenarios. The pair which
+has no easy way to change the observation.
 
 * They don't want to reply to my email.
 * They forgot to reply to my email.
@@ -81,7 +81,7 @@ to do. Not getting a reply isn't an insult to my request.
 All it means is that they have limited bandwidth and I didn't
 make it through the pipe.
 
-The issue is that if people are interested, and then forget to follow up,
+The issue is that if people are interested, but forgot to follow up,
 or don't know how to follow up, you end up reading the wrong signs, and think
 they aren't interested at all. In work contexts, this isn't so bad.
 In romantic contexts...things can get complicated.
@@ -89,14 +89,12 @@ In romantic contexts...things can get complicated.
 I've mentioned similar ideas to some of my friends, and they don't think
 the same way. I think these ideas all flow from my social awkwardness.
 I can navigate how social interactions work (somewhat), but that doesn't
-mean I have to like it, and there's no reason discourse has to be the way
-it is. At the same time, I have to admit the way *I* want discourse to
-work *just so happens* to be the way that's most convenient to me.
+mean I have to like it.
 
-Still, there's definitely room for more polite refusals. I've always found
-radio silence to be infuriatingly cryptic, but for now we're stuck with it.
-Communication doesn't change unless the parties involved agree it should
-work differently, and at a societal level these shifts come incredibly
+I want communication to work differently.
+There's definitely room for more polite "No"s.
+But communication doesn't change unless all parties involved agree it should
+work differently. At a societal level, these shifts come incredibly
 slowly. At best, we can write down our ideas, share them with other people,
 and see where that goes.
 
