@@ -263,19 +263,19 @@ def show_plot(data, averages, covariances):
         xy = [ease_coor[i] - 10, taste_coor[i] - 5]
         plt.annotate(s=fruit, xy=xy)
 
-    # Adds confidence interval (assuming Gaussian)
-    delta = 0.1
-    x = np.arange(LEFT[0], RIGHT[0], delta)
-    y = np.arange(TOP[1], BOTTOM[1], delta)
-    X, Y = np.meshgrid(x, y)
+    # Adds confidence ellipse
+    nstd = 0.25
+    # Area within nstd of mean
+    p = 1 - np.exp(-0.5 * nstd ** 2)
+    print 'Drawing ellipses within %f of mean' % p
 
     for i, fruit in enumerate(fruits):
         cov = covariances[fruit]
         ave = averages[fruit]
         # Draw the 2-sigma ellipse.
-        plot_point_cov(data[:, i, :], nstd=0.25, facecolor='none')
+        plot_point_cov(data[:, i, :], nstd=nstd, facecolor='none')
         #plot_cov_ellipse(cov, ave, nstd=0.25, facecolor='none')
-        print 'Added contour for %s' % fruit
+        print 'Added ellipse for %s' % fruit
 
     plt.show()
 
