@@ -140,7 +140,7 @@ tastes for each fruit are a lot closer than their average difficulty.
 Stretching the taste-axis exaggerates the relative difference
 between fruits without changing their ranking.
 
-[![Plain graph](/public/fruit-opinion/graph2.png)](/public/fruit-opinion/graph2.png)
+[![Plain graph](/public/fruit-opinion/plain.png)](/public/fruit-opinion/plain.png)
 {: .centered }
 
 Here's the same plot overlaid onto the original comic, if you want to
@@ -159,4 +159,6 @@ the ellipses overlap more than they already do.
 [![Ellipse graph](/public/fruit-opinion/ellipse.png)](/public/fruit-opinion/ellipse.png)
 {: .centered }
 
-
+For the technically inclined, a CSV of responses can be downloaded [here](/public/fruit-opinion/clean_fruit.csv),
+and the code used to create these graphs can be seen [here](https://github.com/alexirpan/alexirpan.github.io/blob/fruit-opinion/_scripts/fruit_grapher.py)
+(requires NumPy and Matplotlib).
