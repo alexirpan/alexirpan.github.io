@@ -178,6 +178,27 @@ def fit_gaussian(data, averages, categories):
 
 covariances = fit_gaussian(data, plotted_avgs, categories)
 
+fruits = list(averages.keys())
+hardest = sorted(fruits, key=lambda f: averages[f][0])
+easiest = sorted(fruits, key=lambda f: -averages[f][0])
+worst = sorted(fruits, key=lambda f: averages[f][1])
+tastiest = sorted(fruits, key=lambda f: -averages[f][1])
+# Area of ellipse = pi * a * b where a,b are lengths of major and minor
+# axes.
+# For covariance matrices, a and b are the sqrt of the eigenvalues
+# The determinant is the product of the eigenvalues
+# So, the determinant corresponds exactly to the area of the ellipse for
+# 1 stddev away.
+agreed_on = sorted(fruits, key=lambda f: np.linalg.det(covariances[f]))
+controversial = sorted(fruits, key=lambda f: -np.linalg.det(covariances[f]))
+
+print 'Hardest', hardest
+print 'Easiest', easiest
+print 'Worst', worst
+print 'Tastiest', tastiest
+print 'Controversial', controversial
+print 'Agreed On', agreed_on
+
 
 # Copied from StackOverflow
 def plot_point_cov(points, nstd=2, ax=None, **kwargs):
@@ -242,10 +263,13 @@ def plot_cov_ellipse(cov, pos, nstd=2, ax=None, **kwargs):
     return ellip
 
 
-def show_plot(data, averages, covariances):
+def show_plot(data, averages, covariances, ellipse=True, orig_fruit=True):
     fig = plt.figure()
 
-    img = plt.imread('xkcdemptyfruit.png')
+    if orig_fruit:
+        img = plt.imread('xkcdfruit.png')
+    else:
+        img = plt.imread('xkcdemptyfruit.png')
     plt.imshow(img)
 
     # Location of averages
@@ -260,24 +284,26 @@ def show_plot(data, averages, covariances):
     # Adds text labels
     plt.scatter(ease_coor, taste_coor)
     for i, fruit in enumerate(fruits):
-        xy = [ease_coor[i] - 10, taste_coor[i] - 5]
+        x_off = 3 * len(fruit)
+        xy = [ease_coor[i] - x_off, taste_coor[i] - 5]
         plt.annotate(s=fruit, xy=xy)
 
-    # Adds confidence ellipse
-    nstd = 0.25
-    # Area within nstd of mean
-    p = 1 - np.exp(-0.5 * nstd ** 2)
-    print 'Drawing ellipses within %f of mean' % p
+    if ellipse:
+        # Adds confidence ellipse
+        nstd = 0.25
+        # Area within nstd of mean
+        p = 1 - np.exp(-0.5 * nstd ** 2)
+        print 'Drawing ellipses within %f of mean' % p
 
-    for i, fruit in enumerate(fruits):
-        cov = covariances[fruit]
-        ave = averages[fruit]
-        # Draw the 2-sigma ellipse.
-        plot_point_cov(data[:, i, :], nstd=nstd, facecolor='none')
-        #plot_cov_ellipse(cov, ave, nstd=0.25, facecolor='none')
-        print 'Added ellipse for %s' % fruit
+        for i, fruit in enumerate(fruits):
+            cov = covariances[fruit]
+            ave = averages[fruit]
+            # Draw the 2-sigma ellipse.
+            plot_point_cov(data[:, i, :], nstd=nstd, facecolor='none')
+            #plot_cov_ellipse(cov, ave, nstd=0.25, facecolor='none')
+            print 'Added ellipse for %s' % fruit
 
     plt.show()
 
 
-show_plot(data, plotted_avgs, covariances)
+show_plot(data, plotted_avgs, covariances, ellipse=True, orig_fruit=False)

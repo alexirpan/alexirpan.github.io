@@ -42,32 +42,114 @@ each rated on a scale from 1 to 10, it's incredibly unlikely that two different
 people would agree exactly.)
 
 
-It's Time For...GRAPHS
+Analysis
 ----------------------------------------------------
 
-I imagine many people won't care, but instead of showing just the final graph,
-I'm going to show the iterations I went through.
+Results
+================================================
 
-Here's a first pass, created using Python.
+The five most difficult fruits are
 
-![First graph](/public/fruit-opinion/graph1.png)
+1. Pineapple
+2. Pomegranate
+3. Honeydew
+4. Grapefruit
+5. Cantaloupe
+
+Pineapple and pomegranate are the clear losers here. Honeydew, grapefruit, and
+cantaloupe are all roughly tied in difficulty.
+
+The five easiest fruits are
+
+1. Seedless Grapes
+2. Blueberried
+3. Strawberries
+4. Bananas
+5. Red Apples
+
+No surprises here.
+
+Now, onto taste. The five worst tasting fruits are
+
+1. Lemons
+2. Grapefruit
+3. Tomatoes
+4. Honeydew
+5. Cantaloupe
+
+As a fellow grapefruit hater, I approve. As a fan of cantaloupe, I question
+people's judgment.
+
+The five best tasting fruits are
+
+1. Strawberries
+2. Seedless Grapes
+3. Peaches
+4. Blueberries
+5. Mango
+
+Personally, I'm surprised seedless grapes was 2nd, while seeded grapes
+was 13th. It's not a small difference either - here are the two histograms.
+
+![Grapes](/public/fruit-opinion/grapes.png)
 {: .centered }
 
-Right away, we can tell fruit are noticeably more cluttered than the original graph.
-This happens because even controversial fruit have enough fans to keep the average
-from dropping too low. Although grapefruit is one of the least popular fruits by
-tastiness, its average taste rating is still at 4.76. Meanwhile, the tastiest fruit,
-strawberries, have a taste rating of 8.39. As a whole, people like fruit. In comparison, everyone
-agrees it's a pain in the ass to eat pomegranate and pineapple.
-This makes the fruit opinions very vertically
-compressed.
+Seems like it was hard to disentangle the taste of the fruit
+from how annoying eating
+the fruit is.
 
-We can fix this with some vertical stretching. The taste of each fruit is scaled such that
-the difference from max taste to min taste equals the difference from max difficulty to
-min difficulty, and such that the average taste stays the same.
+Finally, controversy. I measured this by fitting a normal distribution
+to the cloud of replies for each fruit. The distribution is fitted to
+difficulty/ease and tastiness simultaneously.
+A fruit is controversial if its normal distribution has large variance.
 
-![Second graph](/public/fruit-opinion/graph2.png)
+The five least controversial fruits are
+
+1. Strawberries
+2. Seedless Grapes
+3. Oranges
+4. Blueberries
+5. Tangerines
+
+By definition, this shouldn't be surprising.
+
+The five most controversial fruits are
+
+1. Tomatoes
+2. Grapefruit
+3. Mango
+4. Watermelon
+5. Lemons
+
+Congratulations to mango, for managing to be both controversial and in the
+top five tastiest fruits.
+
+
+Graphs
+=============================================================
+
+I had to bend the numbers a little bit here. It turns out the average
+tastes for each fruit are a lot closer than their average difficulty.
+Stretching the taste-axis exaggerates the relative difference
+between fruits without changing their ranking.
+
+![Plain graph](/public/fruit-opinion/graph2.png)
 {: .centered }
 
-Much better.
+Here's the same plot overlaid onto the original comic. It's a bit
+cluttered.
+
+![With original](/public/fruit-opinion/graph_over_fruit.png)
+{: .centered }
+
+Finally, here's the plot with confidence ellipses from the fitted
+normal distributions. Don't read too much into the absolute size
+of each ellipse. Only a small fraction of response actually lie within
+each ellipse, but drawing a 90% confidence ellipse would have made
+the ellipses overlap more than they already do. What matters is
+the relative size between ellipses.
+
+![Ellipse graph](/public/fruit-opinion/ellipse.png)
+{: .centered }
+
 
