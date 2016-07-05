@@ -9,41 +9,43 @@ Back in 2008, Randall Munroe, creator of xkcd, put up this comic.
 ![Original comic](/public/fruit-opinion/xkcdfruit.png)
 {: .centered }
 
-In a perfect storm of bike-shedding, this comic was by far his most
-controversial, beating out his endorsement of Obama. It seemed that
-everyone had a different opinion about fruit, and wanted him to know.
+In a perfect storm of bikeshedding, this comic was by far his most
+controversial ever. He got more email from this than his
+endorsement of Obama. It seemed that
+everyone had a different opinion about fruit, and wanted to tell
+Randall exactly how wrong he was.
 
 For a while, I've wanted to know what the average fruit opinion is.
-One day, I decided to stop being lazy and actually make a survey.
+One day, I decided to stop being lazy and make a survey for this.
 
 
 Survey Design
 ----------------------------------------------------------------------
 
-Each fruit's ease of eating and tastiness is rated on a scale of 1 to 10,
-with 1 the worst and 10 the best. I then shared the survey to a few
-places - my Facebook friends, the xkcd subreddit, and the SampleSize
-subreddit.
+Participants rated each fruit's difficulty and tastiness on a scale
+from 1 to 10. I shared the survey among my Facebook friends, the xkcd
+subreddit, and the SampleSize subreddit. One of my friends reshared
+the survey to the UC Berkeley Computer Science group.
 
-Along the way, I got some comments about my survey design. My population
-is biased towards people who frequent these subreddits, and
-placing the xkcd comic at the start of the survey biases the results.
-
-PICTURE?
-
-These are both fair criticisms. In my defense, I wanted to give context
-for why the survey existed, and it's a survey about fruit.
-Literally fruit. It's not supposed to be a big deal.
-
-In total, I got over 1300 responses. Additionally, everyone's fruit opinion
-is indeed unique; no two responses had the exact same fruit rating. (To be fair,
-it would be more surprising if this weren't true. With over 20 different fruit,
-each rated on a scale from 1 to 10, it's incredibly unlikely that two different
-people would agree exactly.)
+Along the way, I got some comments about the survey's design. My surveyed
+population is biased towards people who frequent those subreddits, and
+placing the xkcd comic at the start of the survey biases participants.
+It's true, but in my defense, I wanted to give context
+for why I was conducting this survey, and the survey is about
+fruit. Literally fruit. It wasn't supposed to be a big deal.
 
 
 Analysis
 ----------------------------------------------------
+
+In total, I got over 1300 responses.
+Before going into results, fun fact: everyone's fruit opinion
+is indeed unique. No two responses had the exact same fruit rating. To be fair,
+it would be more surprising if this weren't true, since I asked for
+ratings on over 20 different fruits.
+In fact, it would have been incredibly strange if I did find two people with
+the exact same rating.
+
 
 Results
 ================================================
@@ -62,7 +64,7 @@ cantaloupe are all roughly tied in difficulty.
 The five easiest fruits are
 
 1. Seedless Grapes
-2. Blueberried
+2. Blueberries
 3. Strawberries
 4. Bananas
 5. Red Apples
@@ -95,12 +97,11 @@ was 13th. It's not a small difference either - here are the two histograms.
 {: .centered }
 
 Seems like it was hard to disentangle the taste of the fruit
-from how annoying eating
-the fruit is.
+from its difficulty.
 
-Finally, controversy. I measured this by fitting a normal distribution
+Finally, controversial fruits. I measured this by fitting a normal distribution
 to the cloud of replies for each fruit. The distribution is fitted to
-difficulty/ease and tastiness simultaneously.
+difficulty and tastiness simultaneously.
 A fruit is controversial if its normal distribution has large variance.
 
 The five least controversial fruits are
@@ -121,8 +122,14 @@ The five most controversial fruits are
 4. Watermelon
 5. Lemons
 
-Congratulations to mango, for managing to be both controversial and in the
-top five tastiest fruits.
+![Tomatoes](/public/fruit-opinion/tomatoes.png)
+{: .centered }
+
+Yep, the tastiness of tomatoes was definitely controversial - this is
+almost like a uniform distribution, compared to the histograms for
+grapes.
+Also, congratulations to mango, for being both controversial and in the top
+five tastiest fruits.
 
 
 Graphs
@@ -136,18 +143,18 @@ between fruits without changing their ranking.
 ![Plain graph](/public/fruit-opinion/graph2.png)
 {: .centered }
 
-Here's the same plot overlaid onto the original comic. It's a bit
-cluttered.
+Here's the same plot overlaid onto the original comic, if you want to
+compare and contrast.
 
 ![With original](/public/fruit-opinion/graph_over_fruit.png)
 {: .centered }
 
 Finally, here's the plot with confidence ellipses from the fitted
-normal distributions. Don't read too much into the absolute size
-of each ellipse. Only a small fraction of response actually lie within
+normal distributions, to visualize controversy.
+Don't read too much into the absolute size
+of each ellipse. Only a small fraction of responses actually lie within
 each ellipse, but drawing a 90% confidence ellipse would have made
-the ellipses overlap more than they already do. What matters is
-the relative size between ellipses.
+the ellipses overlap more than they already do.
 
 ![Ellipse graph](/public/fruit-opinion/ellipse.png)
 {: .centered }
