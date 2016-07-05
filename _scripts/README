@@ -1,2 +1,2 @@
-Contains util scripts that don't need to be in the live site. For example,
-python plot generators are here.
+Contains code that was used in creating post content. For example,
+Python plotting code is here.
