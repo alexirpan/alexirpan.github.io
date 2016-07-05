@@ -140,13 +140,13 @@ tastes for each fruit are a lot closer than their average difficulty.
 Stretching the taste-axis exaggerates the relative difference
 between fruits without changing their ranking.
 
-![Plain graph](/public/fruit-opinion/graph2.png)
+[![Plain graph](/public/fruit-opinion/graph2.png)](/public/fruit-opinion/graph2.png)
 {: .centered }
 
 Here's the same plot overlaid onto the original comic, if you want to
 compare and contrast.
 
-![With original](/public/fruit-opinion/graph_over_fruit.png)
+[![With original](/public/fruit-opinion/graph_over_fruit.png)](/public/fruit-opinion/graph_over_fruit.png)
 {: .centered }
 
 Finally, here's the plot with confidence ellipses from the fitted
@@ -156,7 +156,7 @@ of each ellipse. Only a small fraction of responses actually lie within
 each ellipse, but drawing a 90% confidence ellipse would have made
 the ellipses overlap more than they already do.
 
-![Ellipse graph](/public/fruit-opinion/ellipse.png)
+[![Ellipse graph](/public/fruit-opinion/ellipse.png)](/public/fruit-opinion/ellipse.png)
 {: .centered }
 
 
