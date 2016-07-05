@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "TODO"
-date:   2016-06-27 21:24:00 -0700
+title:  "I Got Fruit Opinions"
+date:   2016-07-04 18:56:00 -0700
 ---
 
 Back in 2008, Randall Munroe, creator of xkcd, put up this comic.
