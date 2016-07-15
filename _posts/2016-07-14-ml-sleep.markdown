@@ -1,0 +1,71 @@
+---
+layout: post
+title:  "TITLE PLEASE"
+date:   2016-07-15 00:55:00 -0700
+---
+
+Machine learning is the study of algorithms that let a computer
+learn insights about data without direct human intervention.
+
+Machine learning *research* is the process by which ML reseachers
+work themselves to death to get 1% more test accuracy in the name of
+optimal resource allocation.
+
+Let me explain.
+
+\*\*\*
+{: .centered }
+
+The first point I need to make is that despite all the math, the
+machine learning that makes the headlines is is not a theoretical science.
+That's not saying machine learning doesn't have theory in it. There's
+computational learning theory, optimization proofs, game theory,
+decision theory, and so on, all of which have applications to machine
+learning.
+
+However, the machine learning that makes headlines and feeds AI hype
+is experimentalist. One hundred percent. And that means putting in
+the hours. Here's a common ML workflow.
+
+1. Set up an experiment for the machine learning algorithm you want
+to test.
+2. Run the algorithm. Wait for results, or for your program to crash.
+3. Interpret results, and use them to decide whether you need to
+tweak hyperparameters, tweak your network architecture, check for bugs,
+or switch to a different algorithm entirely.
+4. Repeat until you get results.
+
+This is the experiment loop, and it holds across basically every
+field.
+
+1. Experiment.
+2. Interpret.
+3. Update experiment.
+4. Repeat until you have results
+
+What makes machine learning a little special is that the turnaround
+times on experiments are both fast and slow. Sometimes, your experiment
+code is buggy and you fail fast. Or, all your model parameters diverge to
+NaN or infinity almost immediately.
+
+However, sometimes the experiment runs, and you just have to wait. After
+an hour or two, results come in, and more often than not they're awful.
+You tweak hyperparameters a bit, try again, see failure an hour later,
+try again...
+
+On one hand, the turnaround time is a lot shorter than other fields. I've
+heard chemistry and biology experiments can take an insanely long time
+to run. However, I see the short turnaround time as a bit of a curse.
+
+Think of machine learning experiments as a casino. Sometimes you hit the
+experimental jackpot, sometimes you don't, and although it's possible
+to gain an intuition for when models will or won't converge to good
+behavior, there's still a lot of randomness inherent to the algorithm.
+
+The unfortunate state of things in machine learning is that there is no
+catch-all solution. Neural nets may be execeptionally flexible, but they still
+require tuning. When your success is decided by a casino, the only
+reasonable strategy is to play at the casino so much that you have to win.
+
+Luckily, the machine learning casino is free. All it costs is computation
+time.
