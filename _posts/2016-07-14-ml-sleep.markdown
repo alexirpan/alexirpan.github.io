@@ -16,23 +16,19 @@ Let me explain.
 \*\*\*
 {: .centered }
 
-Despite all the math in machine learning, the ML that feeds AI hype is
-not theoretical computer science. There is theory in machine learning.
-Bandit problems, convex optimization, non-convex optimization,
-probabilistic models and so on are all important aspects of machine learning.
-Look hard enough, and there will be theory for you.
+Despite all the math on the surface, machine learning is a largely
+experimental field. That's not saying there's no theory. There's
+plenty of theory. Multi-armed bandits, contextual bandits, convex
+optimization, non-convex optimization, directed graphical models,
+Markov random fields: if you look, the theory will be there.
 
-However, the flashiest results (image classification, speech recognition, etc.)
-are relentlessly experimentalist. The theory is important for understanding
-why algorithms are designed the way they are, but you can get surprisingly far
-with the basics of multivariable calculus and linear algebra.
+However, the flashy results like speech recognition and translation (or
+in other words, the results that make industry pour mountains of money
+into ML) are relentlessly experimentalist.
+The theory is important, but you can get surprisingly far without it.
 
-The unfortunate state of things is that the progress of experimentalist
-machine learning is faster than the formal guarantees theoretical machine
-learning has produced. And as with all experimentalist sciences, you only
-make progress if you put in the hours.
-
-Here's the experiment loop, which holds across every field.
+Like all experimentalist fields, the way to ensure good results is to
+put in the hours. Here's the experiment loop, which holds across every field.
 
 1. Design an experiment.
 2. Implement and run the experiment.
@@ -40,36 +36,40 @@ Here's the experiment loop, which holds across every field.
 4. Update the experiment design.
 5. Repeat until you have results.
 
-Machine learning is no different. In ML, experiment design means thinking
-about ways to improve state-of-the-art algorithms, and implementation means
-writing the code for it.
-What makes machine learning a little special is that the turnaround
-time on experiments is both fast and slow. An experiment may crash immediately,
-or model parameters can all diverge to NaN. Other times, the experiment
-works, and it can take hours to get useful results.
+For ML, experiment designs means reading and thinking about state-of-the-art
+approaches, and implementation means writing experiment code. Luckily,
+ML experiments have turnaround times measured in hours. I hear other fields
+have experiments that take weeks, or months.
 
-This is where the chemists and biologists and physicists start laughing
-at me. Hours? It only takes *hours* to get data? Come back to complain when
-your turnaround time is measured in days, or weeks.
-
-Yes, I'm a bit entitled (#machinelearningprivilege).
 However, short turnaround times are actually a bit of a curse.
-Think of ML experiments as a casino. Almost all algorithms used today
-are probabilistic, because they've empirically been shown to work the best.
-That means running the exact same experiment can give several different
-results. And this is even before hyperparamater tuning, which you can view
-as ways the programmer can tweak the learning process.
+Think of ML experiments as playing a card game.
+Almost all ML algorithms are probabilistic in some way, because they've
+empirically worked the best. The exact same experiment could work one
+time, and fail another time, and this even before hyperparameter tuning.
+(This is especially painful for reinforcement learning, a notoriously
+brittle set of algorithms. I've heard and lived many fail-to-replicate stories.
+A lot of recent advances could be summarized as ways to make the method
+converge to good behavior more often.) There's skill, in learning how to
+play cards correctly, and people with more skill tend to do better, but
+there will always be luck involved. Similarly, over time ML researchers
+gain an intuition for when an approach is likely to be fruitful, but whether
+it works or whether the theoretical justification translates into
+empirical results is still a gambler's game.
 
-Combined, it makes machine learning feel a bit like blackjack. There's
-definitely skill involved, but sometimes things will work or fail for
-arbitrary reasons. There is no one size fits all solution. Not even
-neural nets.
+If your experiments take months to finish, you carefully plan out every aspect
+to give yourself as high a chance of success as possible, because there simply
+isn't time to fail too often.
 
-When your success is decided by a casino, the only
-reasonable strategy is to play the casino so much that you have to win.
-When it's easy to run several experiments a day, and every experiment could
-be the one that works, it's very easy to work yourself to death.
+If, on the other hand, you can run several experiments a day, it's a lot easier
+to just run several experiments. Machine learning theory lags behind practice,
+and even legends in the field have to do lots of tweaking to make
+algorithms work.
 
+In the game of machine learning, you get lucky on your first try, or you try
+so many times that you *have* to get lucky. Everyone ends up choosing the
+second strategy.
+
+Unfortunately, running lots of experiments takes time.
 My schedule is ruled by experiments. The best time for a human to run
 experiments is when the human needs to go on a break. Going out for lunch?
 Start an experiment, see how it's doing in an hour.
@@ -85,3 +85,5 @@ because I couldn't get my code working. How many times I've spent Friday
 nights praying my code would stop crashing, because I needed the weekend
 computation time.
 
+Unfortunately, experimentalists produce new algorithms faster than
+theorists can formally explain why they work so well empirically.
