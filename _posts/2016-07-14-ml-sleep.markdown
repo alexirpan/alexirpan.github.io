@@ -5,67 +5,83 @@ date:   2016-07-15 00:55:00 -0700
 ---
 
 Machine learning is the study of algorithms that let a computer
-learn insights about data without direct human intervention.
+learn insights from data in a semi-autonomous way.
 
-Machine learning *research* is the process by which ML reseachers
-work themselves to death to get 1% more test accuracy in the name of
-optimal resource allocation.
+Machine learning *research* is the process by which programmers
+can work themselves to death in the name of optimally using human time
+and computer time.
 
 Let me explain.
 
 \*\*\*
 {: .centered }
 
-The first point I need to make is that despite all the math, the
-machine learning that makes the headlines is is not a theoretical science.
-That's not saying machine learning doesn't have theory in it. There's
-computational learning theory, optimization proofs, game theory,
-decision theory, and so on, all of which have applications to machine
-learning.
+Despite all the math in machine learning, the ML that feeds AI hype is
+not theoretical computer science. There is theory in machine learning.
+Bandit problems, convex optimization, non-convex optimization,
+probabilistic models and so on are all important aspects of machine learning.
+Look hard enough, and there will be theory for you.
 
-However, the machine learning that makes headlines and feeds AI hype
-is experimentalist. One hundred percent. And that means putting in
-the hours. Here's a common ML workflow.
+However, the flashiest results (image classification, speech recognition, etc.)
+are relentlessly experimentalist. The theory is important for understanding
+why algorithms are designed the way they are, but you can get surprisingly far
+with the basics of multivariable calculus and linear algebra.
 
-1. Set up an experiment for the machine learning algorithm you want
-to test.
-2. Run the algorithm. Wait for results, or for your program to crash.
-3. Interpret results, and use them to decide whether you need to
-tweak hyperparameters, tweak your network architecture, check for bugs,
-or switch to a different algorithm entirely.
-4. Repeat until you get results.
+The unfortunate state of things is that the progress of experimentalist
+machine learning is faster than the formal guarantees theoretical machine
+learning has produced. And as with all experimentalist sciences, you only
+make progress if you put in the hours.
 
-This is the experiment loop, and it holds across basically every
-field.
+Here's the experiment loop, which holds across every field.
 
-1. Experiment.
-2. Interpret.
-3. Update experiment.
-4. Repeat until you have results
+1. Design an experiment.
+2. Implement and run the experiment.
+3. Interpret the analytics.
+4. Update the experiment design.
+5. Repeat until you have results.
 
+Machine learning is no different. In ML, experiment design means thinking
+about ways to improve state-of-the-art algorithms, and implementation means
+writing the code for it.
 What makes machine learning a little special is that the turnaround
-times on experiments are both fast and slow. Sometimes, your experiment
-code is buggy and you fail fast. Or, all your model parameters diverge to
-NaN or infinity almost immediately.
+time on experiments is both fast and slow. An experiment may crash immediately,
+or model parameters can all diverge to NaN. Other times, the experiment
+works, and it can take hours to get useful results.
 
-However, sometimes the experiment runs, and you just have to wait. After
-an hour or two, results come in, and more often than not they're awful.
-You tweak hyperparameters a bit, try again, see failure an hour later,
-try again...
+This is where the chemists and biologists and physicists start laughing
+at me. Hours? It only takes *hours* to get data? Come back to complain when
+your turnaround time is measured in days, or weeks.
 
-On one hand, the turnaround time is a lot shorter than other fields. I've
-heard chemistry and biology experiments can take an insanely long time
-to run. However, I see the short turnaround time as a bit of a curse.
+Yes, I'm a bit entitled (#machinelearningprivilege).
+However, short turnaround times are actually a bit of a curse.
+Think of ML experiments as a casino. Almost all algorithms used today
+are probabilistic, because they've empirically been shown to work the best.
+That means running the exact same experiment can give several different
+results. And this is even before hyperparamater tuning, which you can view
+as ways the programmer can tweak the learning process.
 
-Think of machine learning experiments as a casino. Sometimes you hit the
-experimental jackpot, sometimes you don't, and although it's possible
-to gain an intuition for when models will or won't converge to good
-behavior, there's still a lot of randomness inherent to the algorithm.
+Combined, it makes machine learning feel a bit like blackjack. There's
+definitely skill involved, but sometimes things will work or fail for
+arbitrary reasons. There is no one size fits all solution. Not even
+neural nets.
 
-The unfortunate state of things in machine learning is that there is no
-catch-all solution. Neural nets may be execeptionally flexible, but they still
-require tuning. When your success is decided by a casino, the only
-reasonable strategy is to play at the casino so much that you have to win.
+When your success is decided by a casino, the only
+reasonable strategy is to play the casino so much that you have to win.
+When it's easy to run several experiments a day, and every experiment could
+be the one that works, it's very easy to work yourself to death.
 
-Luckily, the machine learning casino is free. All it costs is computation
-time.
+My schedule is ruled by experiments. The best time for a human to run
+experiments is when the human needs to go on a break. Going out for lunch?
+Start an experiment, see how it's doing in an hour.
+Heading out for the day? Run an experiment overnight, check the results
+tmorrow morning. Don't want to work over the weekend? Well, your computer
+won't mind. Have an experiment you want to run? Of course, you don't
+*have* to run an experiment. I'm just saying, if you have a long term experiment,
+and don't get the code working by tonight, you'll have to wait an extra
+two days to get results because you decided to finish it after the weekend...
+
+I've lost track of how many times I've worked way longer than planned
+because I couldn't get my code working. How many times I've spent Friday
+nights praying my code would stop crashing, because I needed the weekend
+computation time.
+
