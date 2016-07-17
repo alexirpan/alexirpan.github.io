@@ -11,27 +11,27 @@ Machine learning *research* is the process by which researchers
 get addicted to gambling their time in the name of improved
 results.
 
-Let me explain why.
-
 \*\*\*
 {: .centered }
 
-Despite all the math in machine learning, ML is a largely
-experimental field. That's not saying there's no theory. There's
-plenty of theory. A short list: multi-armed bandits, contextual bandits, convex
-optimization, non-convex optimization, directed graphical models,
-Markov random fields. If you look for it, the proofs are there. It's
-also not saying there's no place for theory. Although not everyone wants
-to spend the time learning the proof of their algorithm's convergence, everyone
-wants the proof to exist.
+Despite its foundations in math and statistics, ML is mostly an
+experimental science.
 
-However, in applications-driven domains like speech recognition and
-translation, people care about results first, theoretical justification second.
-That means a lot of hacky heuristics, tied together in whatever way makes them
-work the best. And, discovering which heuristics work the best takes time.
+That's not saying there's no theory. There's
+plenty of theory. A short list: multi-armed bandits, contextual bandits,
+non-convex optimization, directed graphical models,
+and Markov random fields. The proofs are there, if you look for them.
+I'm also not saying there's no place for theory. Not everyone wants
+to spend the time to learn why their algorithm is guaranteed to
+converge, but everyone wants the proof to exist.
 
-At the core of machine learning, or any science really, is the scientific
-method.
+However, in the applications-driven domains that drive AI hype,
+people care about results first, theoretical justification second.
+That means a lot of heuristics. Often, those heuristics are bound together
+in an unsatisfying way that works empirically, but has very little
+founding theoretically.
+
+How do we discover those heuristics? Well, by the scientific method.
 
 1. Make hypothesis.
 2. Design an experiment to test that hypothesis.
@@ -40,23 +40,36 @@ method.
 5. Refine the hypothesis with more informed experiment designs.
 6. Repeat until enlightenment.
 
-In machine learning, the hypotheses are beliefs that an approach will
-improve upon the state of the art, and the experiments are algorithmic
-implementations benchmarked on datasets. The datasets are either canonical
-ones from the subfield you're working in (like ImageNet for image classification),
-or ones you collect yourself if you can't find an existing one.
+In machine learning, hypotheses are promising algorithms,
+and experiments are benchmarks of those algorithms.
 
-Almost all ML algorithms are probabilistic and incredibly customizable.
-That means any success could be a fluke, any failure could also be a fluke,
-and the number of potential settings is so large that trying every possibility
-is impossible.
+Hey, what's the issue? Just run experiments, until something works!
+
+Well, gather round. I've got a whole plate of beef to share.
+
+\*\*\*
+{: .centered }
+
+By and large, ML algorithms are both probabilistic and incredibly
+customizable. Empirically, probabilistic approaches work the best on large
+datasets, and currently, datasets are very very large. (Big Data is a buzz
+word that I've grown to dislike, so I avoid using it.)
+
+Their customizability means you have to try many different
+settings to get good performance,
 Have you tried tweaking your hyperparameters?
 Whitening your data? Using a different optimization algorithm?
-Running the exact same code several times? Making your model simpler? Making
-your model more complex? Using [batch normalization](https://arxiv.org/abs/1502.03167)?
-It's a huge maze, and
-the difference between "plausible idea that will work" and "plausible
-idea that won't" is basically zero.
+Making your model simpler? Making your model more complex? Using batch norm?
+Unfortunately, standard practice in ML is to publish the one setting that
+worked, and none of the settings that failed. This would be insane in other
+fields, but in ML, it's just how things are.
+
+It doesn't help that the difference between
+"plausible idea that will work" and "plausible idea that won't" is basically
+zero. It also doesn't help that beauty of an idea is basically uncorrelated
+with its real-world performance.
+Here's a conversation I overheard once, between a computer vision
+professor and one of his students.
 
 > Student: It doesn't work.
 >
@@ -74,8 +87,7 @@ idea that won't" is basically zero.
 >
 > Professor: Ahhhh, I suppose so. What a shame.
 
-(A real conversation I overheard)
-{: .centered }
+I feel their pain.
 
 After training enough machine learning models, you gain an intuition for which
 knobs are most important to turn, but it never quite hits the level of guaranteed
@@ -91,7 +103,7 @@ Having a formal proof of the hopelessness of the problem is nice.)
 \*\*\*
 {: .centered }
 
-I still haven't explained why maching learning research can easily take over
+I still haven't explained why machine learning research can easily take over
 your life.
 
 Well, I suppose I have, in a roundabout way. ML experiments can be very random
@@ -124,7 +136,7 @@ And that means experiments. Tons and tons of experiments. It doesn't help that
 the best time to run experiments is when you're about to take a break.
 Going out for lunch? Start an experiment, see how it's doing when
 you get back. Heading out for the day? Run an experiment overnight, check the
-results tmorrow morning. Don't want to work over the weekend? Well, your computer
+results tomorrow morning. Don't want to work over the weekend? Well, your computer
 won't mind. We're in a lucky regime where we can mostly run our experiments
 unattended, which is great, until you keep working through the night because
 your code is broken and you really want to run something overnight.
@@ -142,5 +154,5 @@ work-life balance. I'd like to have time for other things, like blogging.
 Or more importantly, video games. (No, but seriously, I am sorry I
 haven't been blogging very often.)
 
-Untill then, here's us. On the raggedy edge.
+Until then, here's us. On the raggedy edge.
 
