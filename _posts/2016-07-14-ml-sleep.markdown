@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TITLE PLEASE"
+title:  "Machine Learning Workaholism"
 date:   2016-07-15 00:55:00 -0700
 ---
 
@@ -8,107 +8,139 @@ Machine learning is the study of algorithms that let a computer
 learn insights from data in a semi-autonomous way.
 
 Machine learning *research* is the process by which researchers
-get addicted to gambling their time to try to get better
+get addicted to gambling their time in the name of improved
 results.
 
-Let me explain.
+Let me explain why.
 
 \*\*\*
 {: .centered }
 
-Despite all the math on the surface, machine learning is a largely
+Despite all the math in machine learning, ML is a largely
 experimental field. That's not saying there's no theory. There's
 plenty of theory. A short list: multi-armed bandits, contextual bandits, convex
 optimization, non-convex optimization, directed graphical models,
-Markov random fields. If you look, the theory is there.
+Markov random fields. If you look for it, the proofs are there. It's
+also not saying there's no place for theory. Although not everyone wants
+to spend the time learning the proof of their algorithm's convergence, everyone
+wants the proof to exist.
 
-However, the flashy results that industry cares about is stuff like
-speech recognition and translations.
-These advances come from the experimentalist side of machine learning.
-The theory is important, but you can get surprisingly far without it.
+However, in applications-driven domains like speech recognition and
+translation, people care about results first, theoretical justification second.
+That means a lot of hacky heuristics, tied together in whatever way makes them
+work the best. And, discovering which heuristics work the best takes time.
 
-Here's the scientific method, the core of every field.
+At the core of machine learning, or any science really, is the scientific
+method.
 
 1. Make hypothesis.
 2. Design an experiment to test that hypothesis.
 3. Implement and run the experiment.
 4. Interpret the analytics.
-5. Refine the hypothesis and experiment design.
+5. Refine the hypothesis with more informed experiment designs.
 6. Repeat until enlightenment.
 
-For ML, the hypotheses are usually like "I believe this method will improve
-upon the state of the art because of these reasons." The experiments are
-algorithmic tweaks that verify whether the reasoning holds true. Luckily,
-ML experiments have turnaround times measured in hours. I hear other fields
-have experiments that take weeks, or months.
+In machine learning, the hypotheses are beliefs that an approach will
+improve upon the state of the art, and the experiments are algorithmic
+implementations benchmarked on datasets. The datasets are either canonical
+ones from the subfield you're working in (like ImageNet for image classification),
+or ones you collect yourself if you can't find an existing one.
 
-However, short turnaround times are actually a bit of a curse.
-Almost all ML algorithms are probabilistic, because probabilistic methods
-have empirically worked the best. There are endless knobs to turn. Have you
-tried tweaking hyperparameters? Whitening your data? Using a different
-optimization algorithm?
-It's impossible to try every reasonable idea, because there are so many of
-them, and the difference between "plausible idea that works" and "plausible
-idea that doesn't" is basically zero. Here is, no joke, a conversation I
-overheard between a professor and a grad student.
+Almost all ML algorithms are probabilistic and incredibly customizable.
+That means any success could be a fluke, any failure could also be a fluke,
+and the number of potential settings is so large that trying every possibility
+is impossible.
+Have you tried tweaking your hyperparameters?
+Whitening your data? Using a different optimization algorithm?
+Running the exact same code several times? Making your model simpler? Making
+your model more complex? Using [batch normalization](https://arxiv.org/abs/1502.03167)?
+It's a huge maze, and
+the difference between "plausible idea that will work" and "plausible
+idea that won't" is basically zero.
 
-> Professor: No! It doesn't work? The theory's so beautiful, it has to work!
+> Student: It doesn't work.
 >
-> Student: I know, but it doesn't work. Not even on [Lenna](https://en.wikipedia.org/wiki/Lenna).
+> Professor: No! It doesn't work? The theory's too beautiful for it not
+> to work!
 >
-> Professor: (half-joking tone) Maybe if we run it on a million images, instead
-> of just one...
+> Student: I know. The argument is very elegant, but it doesn't work in practice.
+> Not even on [Lenna](https://en.wikipedia.org/wiki/Lenna).
+>
+> Professor: (in a half-joking tone) Maybe if we run it on a million images,
+> in parallel, it'll magically start working.
 >
 > Student: If it doesn't work on a single image of Lenna, it's not going to work
 > on a million copies of Lenna.
+>
+> Professor: Ahhhh, I suppose so. What a shame.
 
-Eventually, you gain an intuition for which knobs are most important
-to turn, but it never quite hits the level of guaranteed results. No matter
-how hard you try, it might just fail. Secretly, we hope theorists give
-us a better understanding of our current methods, but we also recognize the
-theory is very difficult, and it isn't catching up to practice any time soon.
+(A real conversation I overheard)
+{: .centered }
 
-(In fact, theory has produced the [no free lunch theorem](https://en.wikipedia.org/wiki/No_free_lunch_theorem),
-which states that no algorithm can outperform every other algorithm on all
-problems. Having a formal proof of the hopelessness of the problem is nice.)
+After training enough machine learning models, you gain an intuition for which
+knobs are most important to turn, but it never quite hits the level of guaranteed
+success. I like to joke that one day, the theorists will catch up and recommend
+an approach for reasons better than "it works empirically", but I don't think
+it'll happen anytime soon. The theory is very hard.
 
-So. Why does this make short turnaround times a bit of a curse?
+(What theory *has* done is produce the [no free lunch theorem](http://www.no-free-lunch.org/).
+Informally, it says that no algorithm can beat every other algorithm on
+every problem, meaning every problem must have a different optimal solution.
+Having a formal proof of the hopelessness of the problem is nice.)
 
-Well, if your experiments take months to finish, you carefully plan out every aspect
-to give yourself as high a chance of success as possible, because there simply
-isn't time to fail too often.
+\*\*\*
+{: .centered }
 
-If, on the other hand, you can run several experiments a day, it's a lot easier
-(and faster) to throw a ton of darts and see what sticks to the dartboard.
-Legends in the field don't have to throw as many darts, but they still have to
-throw a lot.
+I still haven't explained why maching learning research can easily take over
+your life.
 
-It's one huge casino, and your job is on the line.
+Well, I suppose I have, in a roundabout way. ML experiments can be very random
+and very arbitrary, working or failing at a drop of a hat. Not even the legends
+in the field can get away with avoiding hyperparameter tuning. It has to be
+done if you want good performance.
+
+It feels like one huge casino. You pull the lever of the slot machine, and
+hope it works. Sometimes, it does. Or somebody tells you the slot machine
+hasn't worked in 10 years and you should try the new slot machine everyone's
+excited about. Or they share a schematic of part of the slot machine's
+design, discovered through trial and error by many people before you.
+We understand many things, but the slot machine's still a slot machine,
+randomness and all. And worse, it's a slot machine where your job or
+funding or graduation is on the line.
+
+In the game of machine learning, you get lucky, or try
+so many times you *have* to get lucky. The only way to guarantee success
+is to do the latter.
+
+Just Work by, I don't know, sacrificing a goat under the light of the full moon,
+we'd do it in a heartbeat. Because if machine learning algorithms Just Worked,
+it would definitely make up for killing one goat.
+
 In the game of machine learning, you get lucky on the first try, or try
 so many times you *have* to get lucky. And the only way to succeed is to
 do the latter.
 
-My schedule is ruled by experiments. The best time to run experiments is when
-you're about to stop working, because it lets you minimize the time you spend
-waiting for results. Because ML experiments are so short, they're easy to
-squeeze into schedules, and soon it takes over your schedule.
-Going out for lunch or a meeting? Start an experiment, see how it's doing when
+And that means experiments. Tons and tons of experiments. It doesn't help that
+the best time to run experiments is when you're about to take a break.
+Going out for lunch? Start an experiment, see how it's doing when
 you get back. Heading out for the day? Run an experiment overnight, check the
 results tmorrow morning. Don't want to work over the weekend? Well, your computer
-won't mind.
+won't mind. We're in a lucky regime where we can mostly run our experiments
+unattended, which is great, until you keep working through the night because
+your code is broken and you really want to run something overnight.
+(This is how people promise to themselves they'll leave by 7 PM, and end up
+staying until midnight.)
 
-In the ideal allocation, human time is spent reading papers, implementing
-ideas, and interpreting results, and it's done when the human has motivation to
-work. Computer time is spent running experiments, and is done while the human
-is recharging for the next day.
+It's the kind of mindset that sucks in people who have workaholic mindsets.
+You don't *have* to run an experiment every night. I'm just saying, if this
+code isn't fixed by tonight, you're going to miss out on so much delicious
+computation time. Don't come crawling back to me if you fail because you
+didn't throw enough darts at the dartboard...
 
-You don't *have* to run an experiment every night. I'm just saying, if you don't
-finish debugging your code by tonight, you'll miss out on a huge chunk of
-computation time, and that's one fewer batch of experiments you get before the
-paper deadline. But sure, stop working now! It's not like your job is riding
-on it or anything...
+I've been trying to avoid falling into that hole, with strictly enforced
+work-life balance. I'd like to have time for other things, like blogging.
+Or more importantly, video games. (No, but seriously, I am sorry I
+haven't been blogging very often.)
 
-It's an insidious mode of thinking. I have to actively fight it for sanity's
-sake, or else I'd be eating lunch at 4 PM every day trying to get my code to
-stop crashing. Sometimes you have to cut your losses and accept that you're
-losing a few hours.
+Untill then, here's us. On the raggedy edge.
+
