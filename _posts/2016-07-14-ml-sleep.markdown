@@ -4,12 +4,20 @@ title:  "TITLE PLEASE"
 date:   2016-07-15 00:55:00 -0700
 ---
 
+Sometimes, I wonder why I work in AI/machine learning.
+
+Don't get me wrong. There's a lot of really cool work being done
+in the field. There's also a lot of garbage. I guess it's a good sign
+I feel this way, because it's universal that every researcher
+eventually despises the field they work in on some level.
+
+
 Machine learning is the study of algorithms that let a computer
 learn insights from data in a semi-autonomous way.
 
-Machine learning *research* is the process by which programmers
-can work themselves to death in the name of optimally using human time
-and computer time.
+Machine learning *research* is the process by which researchers
+get addicted to gambling their time to try to get better
+results.
 
 Let me explain.
 
@@ -18,72 +26,96 @@ Let me explain.
 
 Despite all the math on the surface, machine learning is a largely
 experimental field. That's not saying there's no theory. There's
-plenty of theory. Multi-armed bandits, contextual bandits, convex
+plenty of theory. A short list: multi-armed bandits, contextual bandits, convex
 optimization, non-convex optimization, directed graphical models,
-Markov random fields: if you look, the theory will be there.
+Markov random fields. If you look, the theory is there.
 
-However, the flashy results like speech recognition and translation (or
-in other words, the results that make industry pour mountains of money
-into ML) are relentlessly experimentalist.
+However, the flashy results that industry cares about is stuff like
+speech recognition and translations.
+These advances come from the experimentalist side of machine learning.
 The theory is important, but you can get surprisingly far without it.
 
-Like all experimentalist fields, the way to ensure good results is to
-put in the hours. Here's the experiment loop, which holds across every field.
+Here's the scientific method, the core of every field.
 
-1. Design an experiment.
-2. Implement and run the experiment.
-3. Interpret the analytics.
-4. Update the experiment design.
-5. Repeat until you have results.
+1. Make hypothesis.
+2. Design an experiment to test that hypothesis.
+3. Implement and run the experiment.
+4. Interpret the analytics.
+5. Refine the hypothesis and experiment design.
+6. Repeat until enlightenment.
 
-For ML, experiment designs means reading and thinking about state-of-the-art
-approaches, and implementation means writing experiment code. Luckily,
+For ML, the hypotheses are usually like "I believe this method will improve
+upon the state of the art because of these reasons." The experiments are
+algorithmic tweaks that verify whether the reasoning holds true. Luckily,
 ML experiments have turnaround times measured in hours. I hear other fields
 have experiments that take weeks, or months.
 
 However, short turnaround times are actually a bit of a curse.
-Think of ML experiments as playing a card game.
-Almost all ML algorithms are probabilistic in some way, because they've
-empirically worked the best. The exact same experiment could work one
-time, and fail another time, and this even before hyperparameter tuning.
-(This is especially painful for reinforcement learning, a notoriously
-brittle set of algorithms. I've heard and lived many fail-to-replicate stories.
-A lot of recent advances could be summarized as ways to make the method
-converge to good behavior more often.) There's skill, in learning how to
-play cards correctly, and people with more skill tend to do better, but
-there will always be luck involved. Similarly, over time ML researchers
-gain an intuition for when an approach is likely to be fruitful, but whether
-it works or whether the theoretical justification translates into
-empirical results is still a gambler's game.
+Almost all ML algorithms are probabilistic, because probabilistic methods
+have empirically worked the best. There are endless knobs to turn. Have you
+tried tweaking hyperparameters? Whitening your data? Using a different
+optimization algorithm?
+It's impossible to try every reasonable idea, because there are so many of
+them, and the difference between "plausible idea that works" and "plausible
+idea that doesn't" is basically zero. Here is, no joke, a conversation I
+overheard between a professor and a grad student.
 
-If your experiments take months to finish, you carefully plan out every aspect
+> Professor: No! It doesn't work? The theory's so beautiful, it has to work!
+>
+> Student: I know, but it doesn't work. Not even on [Lenna](https://en.wikipedia.org/wiki/Lenna).
+>
+> Professor: (half-joking tone) Maybe if we run it on a million images, instead
+> of just one...
+>
+> Student: If it doesn't work on a single image of Lenna, it's not going to work
+> on a million copies of Lenna.
+
+Eventually, you gain an intuition for which knobs are most important
+to turn, but it never quite hits the level of guaranteed results. No matter
+how hard you try, it might just fail. Secretly, we hope theorists give
+us a better understanding of our current methods, but we also recognize the
+theory is very difficult, and it isn't catching up to practice any time soon.
+
+(In fact, theory has produced the [no free lunch theorem](https://en.wikipedia.org/wiki/No_free_lunch_theorem),
+which states that no algorithm can outperform every other algorithm on all
+problems. Having a formal proof of the hopelessness of the problem is nice.)
+
+So. Why does this make short turnaround times a bit of a curse?
+
+Well, if your experiments take months to finish, you carefully plan out every aspect
 to give yourself as high a chance of success as possible, because there simply
 isn't time to fail too often.
 
 If, on the other hand, you can run several experiments a day, it's a lot easier
-to just run several experiments. Machine learning theory lags behind practice,
-and even legends in the field have to do lots of tweaking to make
-algorithms work.
+(and faster) to throw a ton of darts and see what sticks to the dartboard.
+Legends in the field don't have to throw as many darts, but they still have to
+throw a lot.
 
-In the game of machine learning, you get lucky on your first try, or you try
-so many times that you *have* to get lucky. Everyone ends up choosing the
-second strategy.
+It's one huge casino, and your job is on the line.
+In the game of machine learning, you get lucky on the first try, or try
+so many times you *have* to get lucky. And the only way to succeed is to
+do the latter.
 
-Unfortunately, running lots of experiments takes time.
-My schedule is ruled by experiments. The best time for a human to run
-experiments is when the human needs to go on a break. Going out for lunch?
-Start an experiment, see how it's doing in an hour.
-Heading out for the day? Run an experiment overnight, check the results
-tmorrow morning. Don't want to work over the weekend? Well, your computer
-won't mind. Have an experiment you want to run? Of course, you don't
-*have* to run an experiment. I'm just saying, if you have a long term experiment,
-and don't get the code working by tonight, you'll have to wait an extra
-two days to get results because you decided to finish it after the weekend...
+My schedule is ruled by experiments. The best time to run experiments is when
+you're about to stop working, because it lets you minimize the time you spend
+waiting for results. Because ML experiments are so short, they're easy to
+squeeze into schedules, and soon it takes over your schedule.
+Going out for lunch or a meeting? Start an experiment, see how it's doing when
+you get back. Heading out for the day? Run an experiment overnight, check the
+results tmorrow morning. Don't want to work over the weekend? Well, your computer
+won't mind.
 
-I've lost track of how many times I've worked way longer than planned
-because I couldn't get my code working. How many times I've spent Friday
-nights praying my code would stop crashing, because I needed the weekend
-computation time.
+In the ideal allocation, human time is spent reading papers, implementing
+ideas, and interpreting results, and it's done when the human has motivation to
+work. Computer time is spent running experiments, and is done while the human
+is recharging for the next day.
 
-Unfortunately, experimentalists produce new algorithms faster than
-theorists can formally explain why they work so well empirically.
+You don't *have* to run an experiment every night. I'm just saying, if you don't
+finish debugging your code by tonight, you'll miss out on a huge chunk of
+computation time, and that's one fewer batch of experiments you get before the
+paper deadline. But sure, stop working now! It's not like your job is riding
+on it or anything...
+
+It's an insidious mode of thinking. I have to actively fight it for sanity's
+sake, or else I'd be eating lunch at 4 PM every day because I couldn't get my
+code to stop crashing.
