@@ -78,7 +78,7 @@ field is pure software, but failure to replicate is still a real issue.
 
 This is the most infuriating part of ML, for anyone who appreciates the beauty
 of mathematical proofs. There's no theoretical motivation behind hyperparameter
-tuning, it's just something you have to do.
+tuning. It's just something you have to do.
 The beauty of an ML idea is uncorrelated with its real-world performance.
 Here's a conversation I overheard once, between a computer vision
 professor and one of his students.
@@ -113,7 +113,7 @@ it'll happen anytime soon. The theory is very hard.
 (What theory *has* done is produce the [no free lunch theorem](http://www.no-free-lunch.org/).
 Informally, it says that no algorithm can beat another algorithm on
 every possible problem. In other words, there will never be One Algorithm To
-Rule Them All. Having a formal proof of our guaranteed failure is nice.)
+Rule Them All. Having a formal proof of impossibility is nice.)
 
 \*\*\*
 {: .centered }
@@ -163,7 +163,7 @@ I'd do it in a heartbeat. Because if machine learning algorithms Just Worked,
 there are plenty of ways I can make up for killing an innocent goat.
 
 Good thing goat sacrifices don't do that, because I really don't want to
-add that to my list of "things that work for unsatisfying reasons.".
+add that to my list of "things that work for unsatisfying reasons".
 That list is plenty full.
 
 \*\*\*
@@ -178,11 +178,11 @@ that I'm okay with it. Compared to theory, running experiments is garbage, but
 it's *exciting* garbage.
 
 The theoretical computer science friends I know probably think I'm insane
-for putting up with these conditions. Oh well! I'm insane. What else is new.
+for putting up with these conditions. I'm insane! Oh well. What else is new.
 
 Here's us, on the raggedy edge. If that's the price to pay, I'll pay it.
 
-> The javelin is far ahead of her and moving far faster. The colonists will have plenty of time to get comfortable. There will be something at Sirius by the time she gets there. Maybe. It'll be friendly, maybe. And if not, she can keep improvising. 
+> The javelin is far ahead of her and moving far faster. The colonists will have plenty of time to get comfortable. There will be something at Sirius by the time she gets there. Maybe. It'll be friendly, maybe. And if not, she can keep improvising.
 
 ([Ra](https://qntm.org/ra))
 {: .centered }
