@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Machine Learning Casino"
-date:   2016-07-15 00:55:00 -0700
+date:   2016-07-17 12:20:00 -0700
 ---
 
 Machine learning is the study of algorithms that let a computer
