@@ -4,14 +4,6 @@ title:  "TITLE PLEASE"
 date:   2016-07-15 00:55:00 -0700
 ---
 
-Sometimes, I wonder why I work in AI/machine learning.
-
-Don't get me wrong. There's a lot of really cool work being done
-in the field. There's also a lot of garbage. I guess it's a good sign
-I feel this way, because it's universal that every researcher
-eventually despises the field they work in on some level.
-
-
 Machine learning is the study of algorithms that let a computer
 learn insights from data in a semi-autonomous way.
 
@@ -117,5 +109,6 @@ paper deadline. But sure, stop working now! It's not like your job is riding
 on it or anything...
 
 It's an insidious mode of thinking. I have to actively fight it for sanity's
-sake, or else I'd be eating lunch at 4 PM every day because I couldn't get my
-code to stop crashing.
+sake, or else I'd be eating lunch at 4 PM every day trying to get my code to
+stop crashing. Sometimes you have to cut your losses and accept that you're
+losing a few hours.
