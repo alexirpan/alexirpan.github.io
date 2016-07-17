@@ -1,0 +1,189 @@
+---
+layout: post
+title:  "The Machine Learning Casino"
+date:   2016-07-17 12:20:00 -0700
+---
+
+Machine learning is the study of algorithms that let a computer
+learn insights from data in a semi-autonomous way.
+
+Machine learning research sounds like a process where you get to
+think really hard about how to improve the ways computers
+learn those insights.
+
+Machine learning research is *actually* a process that takes over
+your life, by tricking you into gambling your time into
+implementing whatever heuristic seem most promising. Then you get to
+watch it fail in the most incomprehensible ways imaginable.
+
+\*\*\*
+{: .centered }
+
+Despite its foundations in statistics, ML is mostly an
+experimental science.
+
+That's not saying there's no theory. There's
+plenty of theory. Bandit problems, convex and non-convex optimization,
+graphical models, and information theory, to name a few areas.
+The proofs are there, if you look for them.
+
+I'm also not saying there's no place for theory. Not everyone wants
+to spend the time to learn why their algorithm is guaranteed to
+converge, but everyone wants the proof to exist.
+
+However, in the applications-driven domains that drive AI hype,
+people care about results first, theoretical justification second.
+That means a lot of heuristics. Often, those heuristics are bound together
+in an unsatisfying way that works empirically, but has very little
+founding theoretically.
+
+How do we discover those heuristics? Well, by the scientific method.
+
+1. Make hypothesis.
+2. Design an experiment to test that hypothesis.
+3. Run the experiment and interpret the results.
+4. Refine the hypothesis with more informed experiment designs.
+5. Repeat until enlightenment.
+
+In machine learning, hypotheses are promising algorithms,
+and experiments are benchmarks of those algorithms.
+
+Hey, what's the issue? Just run experiments, until something works!
+
+Well, gather round. I've got a whole plate of beef to share, with plenty
+of salt.
+
+\*\*\*
+{: .centered }
+
+Current state of the art methods
+are both probabilistic and incredibly
+customizable. Empirically, probabilistic approaches work well on large
+datasets, and datasets are very very large these days.
+
+Their customizability means there's an endless number of variations you can try.
+Have you tried tweaking your hyperparameters?
+Whitening your data? Using a different optimization algorithm?
+Making your model simpler? Making your model more complex? Using batch norm?
+Changing your nonlinearity? The dream is that we discover an approach whose
+average case is good enough to work out of the box. Unfortunately, we aren't
+there yet. Neural nets are magical, but they're still quite finicky once you
+move past simple problems.
+
+Standard practice in ML is to publish a few good settings,
+and none of the settings that failed. This would be insane in other
+fields, but in ML, it's just how things are. And sometimes, the exact same
+settings don't even work! You'd think we could do better, given that the
+field is pure software, but failure to replicate is still a real issue.
+
+This is the most infuriating part of ML, for anyone who appreciates the beauty
+of mathematical proofs. There's no theoretical motivation behind hyperparameter
+tuning. It's just something you have to do.
+The beauty of an ML idea is uncorrelated with its real-world performance.
+Here's a conversation I overheard once, between a computer vision
+professor and one of his students.
+
+> Student: It doesn't work.
+>
+> Professor: No! It doesn't work? The theory's too beautiful for it not
+> to work!
+>
+> Student: I know. The argument is very elegant, but it doesn't work in practice.
+> Not even on [Lenna](https://en.wikipedia.org/wiki/Lenna).
+>
+> Professor: (in a half-joking tone) Maybe if we run it on a million images,
+> in parallel, it'll magically start working.
+>
+> Student: If it doesn't work on a single image of Lenna, it's not going to work
+> on a million copies of Lenna.
+>
+> Professor: Ahhhh, I suppose so. What a shame.
+
+I feel their pain.
+
+After training enough machine learning models, you gain an intuition for which
+knobs are most important to turn, and can diagnose the common failure modes.
+Your ad hoc explanations start condensing into a general understanding of
+when approaches are likely to work.
+However, this understanding never quite hits the level of guaranteed
+success. I like to joke that one day, the theorists will catch up and recommend
+an approach for reasons better than "it works empirically", but I don't think
+it'll happen anytime soon. The theory is very hard.
+
+(What theory *has* done is produce the [no free lunch theorem](http://www.no-free-lunch.org/).
+Informally, it says that no algorithm can beat another algorithm on
+every possible problem. In other words, there will never be One Algorithm To
+Rule Them All. Having a formal proof of impossibility is nice.)
+
+\*\*\*
+{: .centered }
+
+I still haven't explained why machine learning research can take over
+your life.
+
+Well, I suppose I have, in a roundabout way. Machine learning
+experiments can be very arbitrary. Not even the legends
+in the field can get away with avoiding hyperparameter tuning. It's a necessary
+evil.
+
+It makes the field feel like one huge casino. You pull the lever of the slot machine, and
+hope it works. Sometimes, it does. Or it doesn't, at which point
+somebody walks up to tell you that slot machine hasn't worked in 10 years
+and you should try the new slot machine everyone's
+excited about. Machine learning is very much like folklore, with tips and tricks
+passed down over the generations.
+
+We understand many things, but the slot machine's still a slot machine. There's unavoidable randomness
+that *will* ruin your day.
+And worse, it's a slot machine where your job or
+funding or graduation is on the line.
+
+In the game of machine learning, you get lucky, or try
+so many times you *have* to get lucky. The only way to guarantee success
+is to do the latter.
+
+That means experiments. Tons and tons of experiments. It doesn't help that
+the best time to run experiments is when you're about to take a break.
+Going out for lunch? Start an experiment, see how it's doing when
+you get back. Heading out for the day? Run an experiment overnight, check the
+results tomorrow morning. Don't want to work over the weekend? Well, your computer
+won't mind. We're in a nice regime where we can run experiments
+unattended, which is great, as long as your code works.
+If your code breaks, good luck fixing it. Every day you can't run experiments
+is one fewer night of computation time.
+
+It's the kind of pressure which pulls in workaholic mindsets.
+You don't *have* to fix your code tonight, just like you don't *have* to maximize
+the number of level pulls on the slot machine. I'm sure you'll get lucky,
+even if you miss a day or two. **_It will be fine_**.
+
+If there was a way to make machine algorithms Just Work by, I don't know,
+sacrificing a goat under the light of the full moon,
+I'd do it in a heartbeat. Because if machine learning algorithms Just Worked,
+there are plenty of ways I can make up for killing an innocent goat.
+
+Good thing goat sacrifices don't do that, because I really don't want to
+add that to my list of "things that work for unsatisfying reasons".
+That list is plenty full.
+
+\*\*\*
+{: .centered }
+
+At this point, you might be wondering why I even bother working in machine
+learning.
+
+Truth is, all the bullshit is worth it. There are so many exciting things
+happening, and by this point my tolerance for these issues has grown by enough
+that I'm okay with it. Compared to theory, running experiments is garbage, but
+it's *exciting* garbage.
+
+The theoretical computer science friends I know probably think I'm insane
+for putting up with these conditions. I'm insane! Oh well. What else is new.
+
+Here's us, on the raggedy edge. If that's the price to pay, I'll pay it.
+
+> The javelin is far ahead of her and moving far faster. The colonists will have plenty of time to get comfortable. There will be something at Sirius by the time she gets there. Maybe. It'll be friendly, maybe. And if not, she can keep improvising.
+
+([Ra](https://qntm.org/ra))
+{: .centered }
+
