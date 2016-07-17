@@ -1,20 +1,24 @@
 ---
 layout: post
-title:  "Machine Learning Workaholism"
+title:  "The Machine Learning Casino"
 date:   2016-07-15 00:55:00 -0700
 ---
 
 Machine learning is the study of algorithms that let a computer
 learn insights from data in a semi-autonomous way.
 
-Machine learning *research* is the process by which researchers
-get addicted to gambling their time in the name of improved
-results.
+Machine learning research sounds like a process where you get to
+think really hard about how to optimize the learning process.
+
+Machine learning research is *actually* a process that takes over
+your life, by tricking you into gambling tons of your time into
+implementing whatever heuristic seem most
+promising.
 
 \*\*\*
 {: .centered }
 
-Despite its foundations in math and statistics, ML is mostly an
+Despite its foundations in statistics, ML is mostly an
 experimental science.
 
 That's not saying there's no theory. There's
@@ -127,8 +131,7 @@ In the game of machine learning, you get lucky, or try
 so many times you *have* to get lucky. The only way to guarantee success
 is to do the latter.
 
-And that means experiments. Tons and tons of experiments, eating up tons and
-tons of time. It doesn't help that
+And that means experiments. Tons and tons of experiments. It doesn't help that
 the best time to run experiments is when you're about to take a break.
 Going out for lunch? Start an experiment, see how it's doing when
 you get back. Heading out for the day? Run an experiment overnight, check the
