@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Variational Inference for Idiots Like Me"
+date:   2016-07-23 12:20:00 -0700
+---
+
+I've been meaning to understand variational autoencoders for
+a while. 
