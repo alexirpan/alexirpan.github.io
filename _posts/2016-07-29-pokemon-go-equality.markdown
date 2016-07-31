@@ -20,4 +20,15 @@ Instinct. Your goal is to take down gyms owned by other teams, and train gyms
 own by your own team. Owning gyms gives you some game rewards, but it's really
 more for team pride.
 
+I'm part of Team Instinct. Our reputation...isn't that great.
 
+GIFS
+
+In my region, Mystic has the most members, Valor is second, and Instinct is
+third. I have a few gyms in walking distance, but they're perpetually blue,
+guarded by five Mystic players with several 2000+ CP Pokemon. They're out of
+my league and it's a little sad.
+
+However, on rare occasions I find an Instinct gym, and it's almost always a
+monster. Gym level 5, with the weakest Pokemon at 1700 CP and the strongest
+approaching 3000 CP.
