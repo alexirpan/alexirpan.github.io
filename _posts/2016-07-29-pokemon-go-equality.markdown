@@ -29,6 +29,17 @@ third. I have a few gyms in walking distance, but they're perpetually blue,
 guarded by five Mystic players with several 2000+ CP Pokemon. They're out of
 my league and it's a little sad.
 
-However, on rare occasions I find an Instinct gym, and it's almost always a
-monster. Gym level 5, with the weakest Pokemon at 1700 CP and the strongest
-approaching 3000 CP.
+However, on exactly one occasion the gym near my house has been held by
+Team Instinct. For about two days, it was level 7, with the weakest Pokemon
+at 2000 CP and the strongest at almost 3000 CP.
+
+It's since been whittled down and turned back into a Mystic gym, but that
+Instinct gym is still the strongest gym I've ever seen. Why?
+
+\*\*\*
+{: .centered }
+
+To explain it, I'm going to jump back to a more serious turf war: World War
+2.
+
+
