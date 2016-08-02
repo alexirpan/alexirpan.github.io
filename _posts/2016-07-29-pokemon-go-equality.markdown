@@ -39,7 +39,39 @@ Instinct gym is still the strongest gym I've ever seen. Why?
 \*\*\*
 {: .centered }
 
-To explain it, I'm going to jump back to a more serious turf war: World War
+To explain this, we need to jump back to a more serious turf war: World War
 2.
 
+The US Air Force was interested in minimizing bomber losses to enemy fire.
+To that end, they hired several academics to study damages to the aircraft
+from their previous missions and recommend improvements.
+Initially, the study recommended adding armor to the areas with the most
+damage.
 
+At this point, the statistician Abraham Wald had a moment of insight.
+The aircraft they were studying were the aircraft that survived their
+bombing runs.
+The damaged areas were therefore areas where the bomber
+could be damaged and still piloted home, and armor should actually be
+added to the areas with the *least* damage.
+
+This is a special case of *survivorship bias*. In the bomber study,
+the population of aircraft studied was conditoned on the aircraft making
+it home.
+
+The application to Pokemon Go is straightforward. First, offense is much
+stronger than defense. This is partly because of game mechanics, but there's
+a simpler explanation: a gym can be reinforced only by the team that owns it,
+and can be attacked by the two other teams which don't own it.
+
+Let's assume the average
+player in each team is the same strength. The Pokemon Go team people choose
+is arbitrary (discounting mob effects and so on), and there's no reason
+to assume a stronger player will be biased towards a specific team.
+Each team can be attacked by both other teams. Therefore, the team with
+the fewest members (Team Instinct) can be attacked by the most people.
+That means Team Instinct gyms are taken down more often than other teams.
+So, *given* that we observe a Team Instinct gym, it's more likely to be
+stronger than a Valor gym or Mystic gym, because our observation is
+conditioned on the gym existing. Simiarly, we expect the average Valor gym
+to be stronger than the average Mystic gym.
