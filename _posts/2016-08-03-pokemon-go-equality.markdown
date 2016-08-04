@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How Pokemon Go Can Teach Us About Social Equality"
-date:   2016-07-17 12:20:00 -0700
+date:   2016-08-03 23:37:00 -0700
 ---
 
 I've been playing Pokemon Go. If you haven't played the game, here's
@@ -119,5 +119,8 @@ doesn't necessarily mean they're prejudiced against rich people.
 Survivorship bias is not an end-all argument. It's simply one more filter to
 protect yourself from making the wrong conclusion.
 Protecting airplanes is important. Identifying
-discrimination is important. And of course, Pokemon Go is important too.
+discrimination is important.
 
+Pokemon Go? Ehhh, maybe not so much. Still, it's been fun. If I stick at it,
+who knows? Maybe I'll get a chance to be part of the Instinct gym that
+survives.
