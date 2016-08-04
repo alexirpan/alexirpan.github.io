@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How Pokemon Go Can Teach Us About Social Equality"
-date:   2016-08-03 23:37:00 -0700
+date:   2016-08-03 23:58:00 -0700
 ---
 
 I've been playing Pokemon Go. If you haven't played the game, here's
@@ -78,8 +78,9 @@ Conclusion: Instinct gyms are badass.
 {: .centered }
 
 Applying vaguely [anthropic arguments](Phttps://en.wikipedia.org/wiki/Anthropic_principle)
-to Pokemon Go is fun and all, but survivorship bias is more important than that.
-Take discrimination. Suppose you're Hispanic, and
+to Pokemon Go is fun and all, but survivorship bias has more important
+applications.
+Implicit discrimination in the workplace, for example. Suppose you're Hispanic, and
 want to work in the software industry. A company releases a study showing their
 Hispanic employees outperform their colleagues. This is actually a bad sign.
 If a company is implicitly biased
@@ -117,10 +118,13 @@ If a company notices that rich employees perform better than poor ones, it
 doesn't necessarily mean they're prejudiced against rich people.
 
 Survivorship bias is not an end-all argument. It's simply one more filter to
-protect yourself from making the wrong conclusion.
-Protecting airplanes is important. Identifying
-discrimination is important.
+protect yourself from making the wrong conclusion. Otherwise, you don't protect
+airplanes properly, or you don't recognize discrimination when you should.
 
-Pokemon Go? Ehhh, maybe not so much. Still, it's been fun. If I stick at it,
-who knows? Maybe I'll get a chance to be part of the Instinct gym that
-survives.
+As for Pokemon Go? Well, honestly, there are more important problems in the
+world than the troubles of Team Instinct. I'm sure we'll find ways to deal with
+it.
+
+![Instinct sucks](/public/pokemon-go-equality/lastinstinct1.jpg)
+![lol who cares](/public/pokemon-go-equality/lastinstinct2.jpg)
+{: .centered }
