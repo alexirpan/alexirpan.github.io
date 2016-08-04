@@ -77,7 +77,7 @@ Conclusion: Instinct gyms are badass.
 ![Team Instinct banner](/public/pokemon-go-equality/instinctfight.jpg)
 {: .centered }
 
-Applying vaguely [anthropic arguments](Phttps://en.wikipedia.org/wiki/Anthropic_principle)
+Applying vaguely [anthropic arguments](https://en.wikipedia.org/wiki/Anthropic_principle)
 to Pokemon Go is fun and all, but survivorship bias has more important
 applications.
 Implicit discrimination in the workplace, for example. Suppose you're Hispanic, and
