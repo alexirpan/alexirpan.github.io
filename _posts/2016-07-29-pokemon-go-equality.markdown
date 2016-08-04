@@ -19,7 +19,7 @@ Both are easier if your Pokemon have higher CP.
 
 In my region, Mystic has the most members. Valor has the second most, and
 Instinct has the least. I chose Team Instinct, because come on,
-Zapdos is badass.
+Zapdos is awesome.
 Unfortunately, because Instinct has so few members, it's the butt monkey
 of many jokes.
 
@@ -47,7 +47,7 @@ war: World War 2.
 The United States was interested in minimizing planes lost during bombing
 runs. To that end, they hired several academics to study aircraft flown
 in previous missions. They identified the regions with the most damage,
-and recommended to add armor to those aras.
+and recommended adding armor to those regions.
 
 Then, the statistician Abraham Wald had a moment of insight.
 The aircraft studied were aircraft that survived in previous missions.
@@ -61,7 +61,7 @@ overlooked the failure cases. This is generally known as *survivorship bias*.
 
 Now, back to Pokemon Go. Let's assume that team choice doesn't affect the
 strength of the player. This is a safe assumption, because the fastest
-ways to level up are catching Pokemon, visting Pokestops, and evolving
+ways to level up are catching Pokemon, visiting Pokestops, and evolving
 Pokemon under the effect of a Lucky Egg, and all of these methods are
 team independent. Given this, gyms owned by Team Instinct face the most
 adversity, because they can be attacked by both Mystic and Valor, the two
@@ -109,8 +109,9 @@ often become strong anyway, because fewer people attack them and more people can
 train them. In the software industry, there are strong socioeconomic
 feedback loops that help perpetuate the current demographic imbalance.
 If a company notices that rich employees perform better than poor ones, it
-doesn't mean they're prejudiced against rich people.
+doesn't necessarily mean they're prejudiced against rich people.
 
-Survivorship bias is not an end-all argument against all criticism. It's simply
-one more thing to note down.
+Survivorship bias is not an end-all argument. It's simply one more filter to
+apply before trusting something. Protecting airplanes is important. Identifying
+discrimination is important. And of course, Pokemon Go is important.
 
