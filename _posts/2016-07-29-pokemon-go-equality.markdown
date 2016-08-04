@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "What Pokemon Go Teaches Us About Social Equality"
+title:  "How Pokemon Go Can Teach Us About Social Equality"
 date:   2016-07-17 12:20:00 -0700
 ---
 
@@ -17,28 +17,31 @@ range of them. Once claimed, players can either train gyms their team owns
 (to make them harder to defeat) or fight enemy gyms (to make them weaker.)
 Both are easier if your Pokemon have higher CP.
 
-In my region, Mystic has the most members, Valor is second, and Instinct
-is last. I chose Team Instinct, and our reputation for team strength...
-isn't that great.
+In my region, Mystic has the most members. Valor has the second most, and
+Instinct has the least. I chose Team Instinct, because come on,
+Zapdos is badass.
+Unfortunately, because Instinct has so few members, it's the butt monkey
+of many jokes.
 
-GIFS
+![Animated Team Instinct meme](/public/pokemon-go-equality/instinct.gif)
+{: .centered }
 
 There are a few gyms in walking distance of where I live, but they're
-perpetually blue. My strongest Pokemon is a 800 CP Arcanine, and when
-the gym is guarded by a 1700 CP Vaporeon, there's no point even trying.
+perpetually owned by Team Mystic. My strongest Pokemon is a 800 CP Arcanine,
+and when the gym is guarded by a 1700 CP Vaporeon, there's no point even trying.
 
-However, for just over one day, the gym near my house was held by Team
-Instinct. It was level 5, with the weakest Pokemon at 2000 CP and the strongest
-being a 2700 CP Snorlax. It didn't last, but for that day I had hope, that
-Team Instinct had a shot after all.
+However, on exactly one occasion, the gym near my house was taken over by
+Team Instinct, and it was the strongest gym I've ever seen.
+Level 6, with the weakest Pokemon at 2000 CP and the strongest
+being a 2700 CP Snorlax. Eventually, some Mystic players took it down, but
+for just over a day I had hope that Instinct players could make it after all.
 
-That Instinct gym is still the strongest I've ever seen. And in fact this makes
-sense, once you account for survivorship bias.
+Alright. What does any of this have to do with social equality?
 
 \*\*\*
 {: .centered }
 
-To explain survivorship bias, I'm jumping back to a more serious turf
+To explain myself, I'm going to jump back to a more serious turf
 war: World War 2.
 
 The United States was interested in minimizing planes lost during bombing
@@ -52,50 +55,62 @@ That meant the damaged areas were actually the *least* important
 part of the aircraft, because the pilot was able to land safely.
 The best places to add armor were actually the places with no damage.
 
-In short, because the population of aircraft was conditioned on survival,
-the study overlooked the failure cases.
+In short, because the studied population of aircraft
+was conditioned on the planes surviving, the previous group had
+overlooked the failure cases. This is generally known as *survivorship bias*.
 
-The application to Pokemon Go is straightforward. The average player in
-each team is the same strength, because team choice is pretty arbitrary.
-A gym can be attacked by the two teams that don't own it. Therefore, the
-team with the fewest members (Team Instinct) faces the most adversity.
-So, *given* that I observe a Team Instinct gym that lasts for more than a day,
-it has be stronger than a Mystic gym that lasts for more than a day.
+Now, back to Pokemon Go. Let's assume that team choice doesn't affect the
+strength of the player. This is a safe assumption, because the fastest
+ways to level up are catching Pokemon, visting Pokestops, and evolving
+Pokemon under the effect of a Lucky Egg, and all of these methods are
+team independent. Given this, gyms owned by Team Instinct face the most
+adversity, because they can be attacked by both Mystic and Valor, the two
+largest teams. Instinct gyms face more attackers, and are therefore
+taken down very quickly. So, *given* that I observe a Team Instinct gym
+that survives for several hours, it must be stronger than a similar Mystic
+or Valor gym, or else it wouldn't have lasted long enough for me to observe.
+Conclusion: Instinct gyms I see are more likely to be badass.
+
+![Team Instinct banner](/public/pokemon-go-equality/instinctfight.jpg)
+{: .centered }
+
+Applying [anthropic arguments](Phttps://en.wikipedia.org/wiki/Anthropic_principle)
+to Pokemon Go is all well and good, but survivorship bias applies to serious
+issues as well. Take discrimination for example. Say you're Hispanic and
+want to work in the software industry. If a company is implicitly biased
+against Hispanics in their hiring process, the average Hispanic programmer they
+hire will outperform their other hires, because the Hispanics have to survive
+a tougher hiring process.
+
+This isn't a new idea. Paul Graham [wrote an essay](http://www.paulgraham.com/bias.html)
+on the exact same point, and noted this was a litmus test that people could
+check at their own companies.
+What makes this argument nice is that it applies no matter what the job
+market looks like. If a company doesn't have many female engineers, they can
+claim it's a pipeline problem and there aren't enough women in the workforce
+for tech.
+But, if their female engineers consistently outperform other employees,
+they must be biasing in the hiring process. To quote Paul Graham's essay,
+
+> This is not just a heuristic for detecting bias. It's what bias means.
+
+It's incredibly important to keep arguments like this in mind, because they
+fly in the face of intuition. If someone says some of the smartest people
+they know are black...well, for one, even saying something like that is a red
+flag. But also, it could mean that they're only willing to be friends with
+those people *because* they're so smart.
 
 \*\*\*
 {: .centered }
 
-Pokemon Go is a silly example, but survivorship bias applies to many serious
-situations too.
-Let's suppose you're Hispanic and work in the software industry.
-Hispanics are underrepresented in tech. If a company is implicitly biased
-against Hispanics in their hiring process, then the average Hispanic programmer
-will outperform other programmers at that company, because the observation of
-their ability is biased towards Hispanics who survive a tougher hiring
-process.
+To be fair, there are a ton of confounding factors behind these arguments.
+In Pokemon Go, although Mystic gyms don't need to be strong to survive, they
+often become strong anyway, because fewer people attack them and more people can
+train them. In the software industry, there are strong socioeconomic
+feedback loops that help perpetuate the current demographic imbalance.
+If a company notices that rich employees perform better than poor ones, it
+doesn't mean they're prejudiced against rich people.
 
-This isn't a new idea. Paul Graham [wrote an essay](http://www.paulgraham.com/bias.html)
-on the exact same point.
-What makes this argument nice is that it applies no matter what the population
-looks like. A company with few female engineers can claim there's a pipeline
-problem, and there aren't enough female engineers in the workforce.
-But if their female engineers consistently outperform their male engineers,
-there aren't many counterarguments to claims of bias. To quote the essay
-linked,
+Survivorship bias is not an end-all argument against all criticism. It's simply
+one more thing to note down.
 
-> This is not just a heuristic for detecting bias. It's what bias means.
-
-(For the record, I have no position on whether there is a pipeline problem.
-I haven't researched it enough to have any confidence.)
-
-Now, to be fair, there are a ton of confounding factors.
-In Pokemon Go, Mystic gyms have fewer attackers. So, although they don't have
-to be strong to last longer, they're also easier to make stronger. Mystic gyms
-can be strong, but Instinct gyms have to be strong.
-
-In real world scenarios, there are also positive feedback loops. People from
-wealthier backgrounds have an easier time
-There are also network effects
-which pushes them to be stronger. It's plausible that similar network effects
-hold in real life, where people have an easier time getting support from people
-like them.
