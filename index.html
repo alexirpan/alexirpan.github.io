@@ -17,6 +17,8 @@ layout: default
         <div class="post-content">
           {{ post.content }}
         </div>
+
+        <a href="{{ post.url | prepend: site.baseurl | append: "#disqus_thread" }}">Comments</a>
       </li>
     {% endfor %}
   </ul>
@@ -30,3 +32,5 @@ layout: default
     {% endif %}
   </div>
 </div>
+
+<script id="dsq-count-scr" src="//kindasortainsightful.disqus.com/count.js" async></script>

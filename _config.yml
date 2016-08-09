@@ -1,5 +1,5 @@
 # Site settings
-title: Slightly Insightful
+title: Sorta Insightful
 description: > # this means to ignore newlines until "baseurl:"
   In a world where everyone has opinions, one man...also has opinions
 baseurl: "" # the subpath of your site, e.g. /blog/
