@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "\"What's Your Opinion on AI Risk?\""
+date:   2016-08-13 18:52:00 -0700
+---
+
+*These are my personal opinions, and do not reflect the opinions of
+anybody I've worked with. AI risk is a touchy subject, so I want to
+be very clear about this.*
+
+I went to Effective Altruism Global this year, which was pretty great.
+I wasn't sure I would fit into the effective altruist culture, since I
+didn't count myself as part of EA, but it turns out I do fit in, and
+EA attracts a lot of interesting people.
+
+Now, I'm bad at starting conversation, but starting conversation at
+EA Global is easy. All you have to do is ask what they do. And that
+led to the following exchange, which I probably repeated about 10 times
+over the entire weekend.
+
+> Them: "What do you do?"
+>
+> Me: "Well, I just finished my undergrad at Berkeley. I'm now working
+> at Google Brain, a machine learning research group."
+>
+> Them: "That's really cool! So, just wondering...(what's your opinion
+> on the existential risk on AI/what's your timeline for AGI)?"
