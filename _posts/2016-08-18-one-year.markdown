@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "One Year Later"
+date:   2016-08-16 23:12:00 -0700
+---
+
+> Over the past few days, I’ve set up the current site and ported over content
+> from the the old one. You should see the old blog posts if you scroll down.
+> Out with the old, in with the new...
+>
+> [...]
+>
+> As for the title - although I still don’t know what I’m doing with my life,
+>  one of my goals is to be an interesting, insightful person. Unfortunately,
+> I’m not one yet. But if I try, maybe I can get there.
+
+Sorta Insightful turns one year old today. To whatever meager readership I have:
+thanks. It means more than you'd think.
+
+It's been six months since I wrote my [last retrospective post]({% post_url 2016-02-20-half-year %}).
+Let's see what changeed.
+
+\*\*\*
+{: .centered }
+
+First off, I owe people an apology. Six months ago, I said the following.
+
+> I plan to start flushing my queue of non-technical post ideas. On the short list are
+>
+> * A post about *Gunnerkrigg Court*
+> * A post on effort icebergs and criticism
+> * A post about obsessive fandoms
+> * A post detailing the hilariously incompetent history of the Dominion Online implementation
+
+I haven't written any of those posts, and I feel awful for it. I feel especially
+bad about the *Gunnerkrigg Court* post, because I've wanted to write a post
+about it ever since I started this blog, and I haven't even started a draft yet.
+Meanwhile, it's been so long since I started thinking about effort icebergs that
+I've forgotten what I actually wanted to say. The closest I can remember
+is the tension between criticizing something that somebody put their sweat and
+tears into, even if it's terrible? Man, I had that post planned out, and then
+never got around to making it.
+
+Similarly, the post on obsessive fandoms never materialized. Last I remember, I
+was going to frame it around *My Little POny*, or *Touhou*, or *Homestuck*, or
+possibly all three. As for the post about Dominion Online, I at least have a
+draft, which I haven't touched since...March 27, 2016. So, about 4.5 months.
+
+All these posts I'd like to write, and they're chained to the ground, not
+because I can't write them, but because I'm too lazy to write them.
+
+
