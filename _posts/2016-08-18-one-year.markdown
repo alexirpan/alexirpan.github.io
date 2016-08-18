@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "One Year Later"
-date:   2016-08-18 00:10:00 -0700
+date:   2016-08-18 01:57:00 -0700
 ---
 
 > Over the past few days, I’ve set up the current site and ported over content
-> from the the old one. You should see the old blog posts if you scroll down.
+> from the old one. You should see the old blog posts if you scroll down.
 > Out with the old, in with the new...
 >
 > [...]
@@ -13,6 +13,9 @@ date:   2016-08-18 00:10:00 -0700
 > As for the title - although I still don’t know what I’m doing with my life,
 >  one of my goals is to be an interesting, insightful person. Unfortunately,
 > I’m not one yet. But if I try, maybe I can get there.
+
+([Hello World, Again]({% post_url 2015-08-18-hello-world-again %}))
+{: .centered }
 
 Sorta Insightful turns one year old today. To whatever meager readership I have:
 thanks. It means more than you'd think.
@@ -34,18 +37,18 @@ First off, I owe people an apology. Six months ago, I said the following.
 
 I haven't written any of those posts, and I feel awful about it.
 I feel especially bad about not writing the *Gunnerkrigg Court* post. Writing
-that post has been on my shortlist ever since I started this blog, and I haven't
-even started yet.
+that post has been on my shortlist ever since I started this blog.
 
-Meanwhile, I've forgotten what the post on effort icebergs
+Meanwhile, I've forgotten what the effort icebergs post
 was going to cover. Last I remember, I was planning to resolve the tension
-between criticizing bad movies and respecting the effort that goes into all
-movies, even bad ones.
+between constructive criticism of bad work and respect for the effort that
+went into it.
+And there was some infographic I really liked and wanted
+to use? Wow, it has been a while.
 
-Similarly, the post on obsessive fandoms is still at the idea stage. It was
-going to be about *My Little Pony*, or *Touhou*, or *Homestuck*. Maybe
-even all three, if it made sense to do so.
-As for the post about Dominion Online, I at least have some
+The obsessive fandom post is officially turning into a post
+about the *My Little Pony* fandom in particular, but it hasn't passed the idea
+stage yet. As for the Dominion post, I at least have some
 words written down, but I haven't touched them since March.
 
 All these posts that want to be free, and they're chained to the ground, not
@@ -69,14 +72,12 @@ submit everything to Hacker News. If it was all about machine learning, I could
 be reaping r/MachineLearning karma. But it's not all technical, and it's not
 all machine learning. It's fractured, just like me.
 
-These blog posts aren't just words. They're *my* words. Marketing something
-so personal feels wrong, on some level that I can't explain properly.
-It's a huge nostalgia trip, to look back on my thoughts and realize how much
-has changed in just a year, and I think that's all I really need. A pocket of
-thoughts, that happens to be on the Internet.
-
+These blog posts aren't just words on a page. They're *my* words, on *my* page.
+Marketing something
+so personal feels wrong, on a level that's hard to explain.
 Yes, I'd like the feeling of approval that comes with popularity, but I don't
-need the validation to keep writing. Just this is good enough.
+need the validation to keep writing. Just having the thoughts out there is
+good enough.
 
 \*\*\*
 {: .centered }
@@ -85,17 +86,12 @@ Enough bittersweet stuff. What's gone well?
 
 Well, for one, I started working full time, and I still have time for blog
 posts. In the past six months, I wrote 38 blog posts, if
-you include this one. Now, to be fair, 31 of those posts are from the blogging
-gauntlet I did in May, which had a lot of garbage, but there are definitely a
+you include this one. Now, to be fair, 31 of those posts are from the [blogging
+gauntlet I did in May]({% post_url 2016-05-01-blogging-gauntlet-may-1 %}), which had a lot of garbage, but there are definitely a
 few pearls worth checking out. People seem to like [Appearing Skilled and Being
 Skilled are Very Different]({% post_url 2016-05-13-may-13 %}), although my
 personal favorite is [Fearful Symmetry]({% post_url 2016-05-21-may-21 %}). (I'd
 really like to revisit Fearful Symmetry, when I have time to.)
-
-Speaking of which, I'd forgetten how well the blogging gauntlet went. I should
-review the lessons I learned, and in the future
-go fix thatwent really well. The May 31 post
-summarizes it pretty well, so I'll let that speak for itself.
 
 I think I'm getting better at articulating my thoughts well the first time. I
 don't have any way to measure this quantitatively, but I feel like I've been
@@ -109,19 +105,21 @@ you're nuts, and I love you for it.
 The Future of Sorta Insightful
 ==============================================================================
 
-The next post is going to be my position on the existential risk of AI.
-For a long time, I had a bunch of conflicting feelings about it, but going to
-EA Global forced me to work through some of the bigger contradictions. I've run
-out of excuses to avoid working through the smaller ones.
+The future of Sorta Insightful is pretty simple: I'll keep writing and see how
+it goes. Next post is me explaining my position on the existential risk of AI.
+I've had a bunch of conflicting feelings about the topic, but going to
+EA Global forced me to work through the bigger ones. I'm pretty excited to fully
+resolve my contradictions on the subject.
 
 I wrote the start of a really, really stupid short story about dinosaurs.
-In the right hands, this story could be pretty neat, but my hands aren't
+In the right hands, this story could be pretty neat, but unfortunately my hands aren't
 the right hands. At the same time, I'm not going to get better at storytelling
 unless I try, so I'll keep at it. I hope that story sees the light of day,
-because the premise is so stupid that it wraps back around to brilliant.
+because the premise is so stupid that it might just wrap back around to brilliant.
 
 The post about *Gunnerkrigg Court* is going to happen. I swear it will. Just,
-not soon. After the Doctor whooves Adventures post, I want to make sure I
+not soon. After the [post on]({% post_url 2015-09-24-how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy %}) *Doctor Whooves Adventures*, I want to make sure I
 get this explanation right. I love this comic sooooooo much, and it deserves
 a good advertisement.
 
+Here's to another year! It's going to be pretty great.
