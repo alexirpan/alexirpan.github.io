@@ -1,0 +1,128 @@
+---
+layout: post
+title:  "One Year Later"
+date:   2016-08-18 01:57:00 -0700
+---
+
+> Over the past few days, I’ve set up the current site and ported over content
+> from the old one. You should see the old blog posts if you scroll down.
+> Out with the old, in with the new...
+>
+> [...]
+>
+> As for the title - although I still don’t know what I’m doing with my life,
+>  one of my goals is to be an interesting, insightful person. Unfortunately,
+> I’m not one yet. But if I try, maybe I can get there.
+
+([Hello World, Again]({% post_url 2015-08-18-hello-world-again %}))
+{: .centered }
+
+Sorta Insightful turns one year old today. To whatever meager readership I have:
+thanks. It means more than you'd think.
+
+It's been six months since I wrote my [last retrospective post]({% post_url 2016-02-20-half-year %}).
+Let's see what's changed.
+
+\*\*\*
+{: .centered }
+
+First off, I owe people an apology. Six months ago, I said the following.
+
+> I plan to start flushing my queue of non-technical post ideas. On the short list are
+>
+> * A post about *Gunnerkrigg Court*
+> * A post on effort icebergs and criticism
+> * A post about obsessive fandoms
+> * A post detailing the hilariously incompetent history of the Dominion Online implementation
+
+I haven't written any of those posts, and I feel awful about it.
+I feel especially bad about not writing the *Gunnerkrigg Court* post. Writing
+that post has been on my shortlist ever since I started this blog.
+
+Meanwhile, I've forgotten what the effort icebergs post
+was going to cover. Last I remember, I was planning to resolve the tension
+between constructive criticism of bad work and respect for the effort that
+went into it.
+And there was some infographic I really liked and wanted
+to use? Wow, it has been a while.
+
+The obsessive fandom post is officially turning into a post
+about the *My Little Pony* fandom in particular, but it hasn't passed the idea
+stage yet. As for the Dominion post, I at least have some
+words written down, but I haven't touched them since March.
+
+All these posts that want to be free, and they're chained to the ground, not
+because I can't write them, but because I'm too lazy to write them.
+
+Yes, I know that there aren't really people who hate me because I haven't
+written these posts, but this is one of those things where I won't feel better
+until I make it up to myself.
+
+\*\*\*
+{: .centered }
+
+Next, the neutral news. My blog still gets basically no traffic. I didn't
+expect it to. One year isn't that long to
+build a readership, and I didn't go into this expecting much popularity.
+
+Yes, in theory I could be promoting my blog more, but there are two things
+stopping me. One, my blog has no coherent theme. It's exactly what I want to
+write about and nothing more. If it was a purely technical blog, I could
+submit everything to Hacker News. If it was all about machine learning, I could
+be reaping r/MachineLearning karma. But it's not all technical, and it's not
+all machine learning. It's fractured, just like me.
+
+These blog posts aren't just words on a page. They're *my* words, on *my* page.
+Marketing something
+so personal feels wrong, on a level that's hard to explain.
+Yes, I'd like the feeling of approval that comes with popularity, but I don't
+need the validation to keep writing. Just having the thoughts out there is
+good enough.
+
+\*\*\*
+{: .centered }
+
+Enough bittersweet stuff. What's gone well?
+
+Well, for one, I started working full time, and I still have time for blog
+posts. In the past six months, I wrote 38 blog posts, if
+you include this one. Now, to be fair, 31 of those posts are from the [blogging
+gauntlet I did in May]({% post_url 2016-05-01-blogging-gauntlet-may-1 %}), which had a lot of garbage, but there are definitely a
+few pearls worth checking out. People seem to like [Appearing Skilled and Being
+Skilled are Very Different]({% post_url 2016-05-13-may-13 %}), although my
+personal favorite is [Fearful Symmetry]({% post_url 2016-05-21-may-21 %}). (I'd
+really like to revisit Fearful Symmetry, when I have time to.)
+
+I think I'm getting better at articulating my thoughts well the first time. I
+don't have any way to measure this quantitatively, but I feel like I've been
+stumbling over my own words less often.
+
+I continue to be pleasantly surprised that people actually bother to read things
+I write. You could be anywhere on the Internet, and you chose to be here? Man,
+you're nuts, and I love you for it.
+
+
+The Future of Sorta Insightful
+==============================================================================
+
+The future of Sorta Insightful is pretty simple: I'll keep writing and see how
+it goes. Next post is me explaining my position on the existential risk of AI.
+I've had a bunch of conflicting feelings about the topic, but going to
+EA Global forced me to work through the bigger ones. I'm pretty excited to fully
+resolve my contradictions on the subject.
+
+I wrote the start of a really, really stupid short story about dinosaurs.
+In the right hands, this story could be pretty neat, but unfortunately my hands aren't
+the right hands. At the same time, I'm not going to get better at storytelling
+unless I try, so I'll keep at it. I hope that story sees the light of day,
+because the premise is so stupid that it might just wrap back around to brilliant.
+
+The post about *Gunnerkrigg Court* is going to happen. I swear it will. Just,
+not soon. After the [post on]({% post_url 2015-09-24-how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy %}) *Doctor Whooves Adventures*, I want to make sure I
+get this explanation right. I love this comic sooooooo much, and it deserves
+a good advertisement.
+
+As always, I promise no update schedule beyond "soon". Hopefully you'll bear
+with me on this.
+
+Here's to another year! It's going to be pretty great.
