@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "One Year Later"
-date:   2016-08-18 01:57:00 -0700
+date:   2016-08-18 02:13:00 -0700
 ---
 
 > Over the past few days, I’ve set up the current site and ported over content
@@ -118,11 +118,11 @@ unless I try, so I'll keep at it. I hope that story sees the light of day,
 because the premise is so stupid that it might just wrap back around to brilliant.
 
 The post about *Gunnerkrigg Court* is going to happen. I swear it will. Just,
-not soon. After the [post on]({% post_url 2015-09-24-how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy %}) *Doctor Whooves Adventures*, I want to make sure I
+not soon. After messing up the [post on]({% post_url 2015-09-24-how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy %}) *Doctor Whooves Adventures*, I want to make sure I
 get this explanation right. I love this comic sooooooo much, and it deserves
 a good advertisement.
 
-As always, I promise no update schedule beyond "soon". Hopefully you'll bear
+As always, I promise no update schedule beyond "soon". Bear
 with me on this.
 
 Here's to another year! It's going to be pretty great.

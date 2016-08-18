@@ -16,7 +16,7 @@ paginate: 3
 # worth doing it right at this time
 header_links:
     - url: "/recs/"
-      title: "Recs"
+      title: "Reviews"
     - url: "/projects/"
       title: "Projects"
     - url: "/archive/"
