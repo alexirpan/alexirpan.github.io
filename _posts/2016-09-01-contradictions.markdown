@@ -30,36 +30,69 @@ In short, [the perfect is the enemy of the good](https://en.wikipedia.org/wiki/P
 It's okay, and even laudable, to try towards a good enough solution, instead of
 hoping for a perfect solution.
 
-I think acting in a 
-If you're like me, you want to act self-consistently.
-By doing so, you sometimes arrive to very strange
-conclusions. Sometimes, that's okay. Strange beliefs aren't necessarily bad.
-However, it's often the case that you don't want to act according to your
-conclusions. Assuming you believe in diminishing returns of money, it's true
-that giving away the majority of your wealth is better for the world, but there
-are things like beds and nice food and laptops that you'd like to have in your
-life.
+If you're like me, you want to have consistent beliefs that lead to consistent
+actions. If you're like me, you don't actually have consistent beliefs. Instead
+you have inconsistent beliefs and inconsistent actions.
 
-If you believe very strongly that you should follow valid chains of reasoning,
-and then produce a chain of reasoning that leads to something you **don't** want
-to do, it can feel pretty awful. Because if you do it, you're doing something
-you don't want to do, and if you don't, you're violating a personal creed.
+This is totally okay and entirely expected.
 
-I think it's entirely okay to have both these beliefs.
+Let me be frank. Brains are astoundingly useful, but they are also complete
+garbage. Our intuitive understanding of probability is good at making quick
+decisions, but awful at [solving even simple probability questions](https://en.wikipedia.org/wiki/Monty_Hall_problem).
+We double check information that challenges our ideas, but [don't double
+check information that confirms them](https://en.wikipedia.org/wiki/Confirmation_bias).
+And if someone else does try to challenges our world view, we
+[can double down on our beliefs instead of moving away from them](https://youarenotsosmart.com/2011/06/10/the-backfire-effect/),
+flying in the face of any reasonble model of intelligent thought.
 
-Like, okay, let's be real. Brains are garbage. They're incredible at a lot of
-things, but they're also garbage. I've heard enough stories about distorted
-perception and cognitive biases to make my faith in my brain extremely low.
-Someone recently tried to convince me that my brain could be lying to me without
-my knowledge, because my knowledge is dependent on my brain, and it didn't
-really faze me. We're already getting lied to when the chemical reactions
-for eyes and touch sync themselves up despite operating on different timescales.
-At that point, all bets are off.
+![Dinosaur Comics](/public/contradictions/dinosaur.png)
+{: .centered }
 
-A few days ago, someone pointed
+([Dinosaur Comics](http://www.qwantz.com/index.php?comic=1806))
+{: .centered }
 
-From this viewpoint, having contradictions in your brain is entirely expected.
-Interestingly, this isn't a hopeless problem. If you put enough effort in, you
-can take the implicit thoughts and make them explicit, working at contradictions
-until they go away.
+We're getting lied to on a subconscious level. Lying to ourselves on a
+conscious level isn't much different.
 
+Recently, someone tried to convince me I could theoretically be schizophrenic
+and not even know it, and that in fact many schizophrenics do not believe they
+are schizophrenic. I think the most surprising thing about it was that I wasn't
+phased at all. Someone, I've read about cognitive biases and
+perceptual biases for so long that I've gained a deep-seated mistrust of my
+own ability to know the truth.
+
+That doesn't mean I don't try to seek the truth. All I've got is my brain. It's
+not like I have a choice.
+All it means is that I've accepted that using an imperfect reasoning
+engine to reason about the world is an amusing comedy, and we just have to
+deal with it.
+
+\*\*\*
+
+Well. Actually, it's not hopeless. Brains can be self-consistent too.
+
+The trick is that you find a nice, quiet place, and sit down to think. You let
+the thoughts come, sometimes consciously, sometimes subconsciously, and wait
+until you understand the implicit thoughts well enough to say them out loud.
+
+Writing helps with this. When you write, you're forced to try words, again and
+again, until you hit upon the one with perfect weight. Rinse, lather, repeat.
+
+The only problem is that this takes *forever*, especially on complicated topics.
+It doesn't matter how many contradictions you resolve, more will pop up.
+
+Hence, prioritized contradiction resolution. Here's how my reasoning goes.
+
+* I have contradictory thoughts.
+* I have finite time and motivation.
+* It costs time and motivation to resolve contradictions.
+* Therefore, I should focus on fixing the contradictions most important to me.
+
+It makes sense for me to think deeply about the AI safety debate, because I do
+research in machine learning. Not having a well thought out opinion would feel
+irresponsible.
+
+In contrast, I don't need to have well thought out reasons to like My Little Pony.
+I'd like to take the time to tease apart why I like the fandom so much, but
+the value I'd gain from figuring that out doesn't seem as large. Thus,
+it's okay for me to put those contradictions on my internal todo pile.
