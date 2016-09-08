@@ -6,20 +6,21 @@ date:   2016-09-01 00:10:00 -0700
 
 I know I said my next post was going to be my position on the existential risk
 of AI, but I love metaposts too much. I'm going to explain why I'm writing that
-post, through the lens of how I view self-consistency. Said lens is probably
-obvious to anyone in my friend group who'll read this, but oh well.
+post, through the lens of how I view self-consistency. (I suspect said lens is
+probably obvious to anyone who'll read this post, but oh well.)
 
-At a party several months ago, I got into a discussion with Alice and Bob
+At a party several months ago, Alice, Bob, and I were in a conversation
 about effective altruism. (Fake names, for privacy reasons.)
-Alice self-identified as EA, and Bob didn't. At one point, Bob said he approved
-of EA, and agreed with the arguments for EA, but had yet to donate. He didn't
-see how to resolve the arguments in a way other than "donate all disposable
-income and live a minimal life, because your marginal utility for money is
-smaller than the majority of the world", so he didn't donate at all.
+Alice self-identified as part of the movement, and Bob didn't.
+At one point, Bob said he approved of EA, and agreed with its arguments,
+but had yet to donate. He didn't see how to resolve the arguments in a way
+other than "donate all disposable income and live a minimal life, because your
+marginal utility for money is small compared to Africa." That felt too drastic,
+so he didn't donate at all.
 
-Alice replied like so.
+Here's Alice's paraphrased reply.
 
-> Alice: I agree that's the conclusion you end at, but that doesn't mean you
+> I agree that's the conclusion you end at, but that doesn't mean you
 > have to follow it. I think aiming for perfect self-consistency is a pipe dream.
 > For EA in particular, you can try to live up to that conclusion by donating
 > some money, which is better than none. That being said, you should only be
@@ -68,6 +69,7 @@ engine to reason about the world is an amusing comedy, and we just have to
 deal with it.
 
 \*\*\*
+{: .centered }
 
 Well. Actually, it's not hopeless. Brains can be self-consistent too.
 
