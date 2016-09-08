@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Prioritized Contradiction Resolution"
-date:   2016-09-01 00:10:00 -0700
+date:   2016-09-07 23:23:00 -0700
 ---
 
 I know I said my next post was going to be my position on the existential risk
