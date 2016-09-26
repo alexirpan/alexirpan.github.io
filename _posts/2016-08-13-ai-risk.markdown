@@ -40,6 +40,42 @@ smooth motion sweeps the stacks of paper and books onto the ground.
 aspects of the same person."
 
 Supporter shrugs. "Fair. Why are we even framing this as a conversation?
-Why can't we just write an essay, like a normal person."
+Why can't we just write an essay, like a normal person?"
 
-Detractor raise
+Detractor raises a hand, pointing an index finger towards the metaphorical
+sky as he counts off the ways. "One. This isn't something I've figured
+out yet. It's something I'm in the middle of figuring out. So, I need to
+explain my contradictory feelings, and that's easier if I anthropomorphize
+the two sides.
+
+"Two. It's a writing challenge. Restrictions breed creativity. Forcing the
+argument into a dialogue should learn to interesting results, and we need
+the writing practice.
+
+"And three? Well, that's a secret. But we both know the reason."
+
+Supporter pauses for a bit, then shrugs. "Alright. Sounds fair. Let's do this."
+
+"Let's."
+
+Part 1: Laying Out the Ground Rules
+===========================================================
+
+Supporter and Detractor sit down at the table.
+
+"Let's start from the beginning. Being as generous to the concerns of AI safety
+as possible, is AGI potentially dangerous?"
+
+The answer comes quickly. "Yes. If intelligence explosion turns out to be true,
+and AI is created, and it can self-improve, then yes, it could be dangerous.
+And to be clear, for now we're talking about killer robots ala Skynet."
+
+"Okay. Well that was fast."
+
+Part 2: Pulling Down the Activation Barrier
+==========================================================
+
+"Now, malevolent AI that is intentionally killing humans is bad. But that's not
+what people worried about AI really mean."
+
+
