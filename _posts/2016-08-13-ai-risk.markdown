@@ -54,28 +54,63 @@ the writing practice.
 
 "And three? Well, that's a secret. But we both know the reason."
 
-Supporter pauses for a bit, then shrugs. "Alright. Sounds fair. Let's do this."
+Supporter pauses for a bit, then shrugs. "Alright. Sounds fair. Let's do this.
+We'll take turns. I'll start by laying out the argument, you reply, and we
+see where it goes from there. Sound good?"
 
-"Let's."
+"Yep."
+
+"Alright. Let's do this."
+
 
 Part 1: Laying Out the Ground Rules
 ===========================================================
 
-Supporter and Detractor sit down at the table.
+Let's be clear here.
 
-"Let's start from the beginning. Being as generous to the concerns of AI safety
-as possible, is AGI potentially dangerous?"
+When I say "artificial intelligence", I'm not looking to hear anything about
+consciousness or Chinese room experiments. To me, artificial intelligence, I
+mean "a computer system that performs a task."
 
-The answer comes quickly. "Yes. If intelligence explosion turns out to be true,
-and AI is created, and it can self-improve, then yes, it could be dangerous.
-And to be clear, for now we're talking about killer robots ala Skynet."
+Astute readers will note that this might as well mean nothing, because literally
+every computer program performs a task. But I don't have a better definition.
 
-"Okay. Well that was fast."
+This view further breaks down into Weak AI and Strong AI. Weak AI is a computer
+system that solves a specific task at a near-human level or above human level.
+Every task has a different weak AI, which may or may not exist in the present.
+Addition and multiplication have a weak AI. There is a weak AI for recognizing handwritten
+digits, and there is almost a weak AI for recognizing pictures of digits.
+There is a weak AI for recognizing whether a picture is a dog or a cat, and
+in fact, there is a weak AI for identifying the breed of a specific dog.
+There "is" a weak AI for something if somebody has made it, ever. AlphaGo
+is a weak AI for Go, but only a few companies could make AlphaGo.
+There is a weak AI for translating Spanish to English, but not for German to
+English.
 
-Part 2: Pulling Down the Activation Barrier
-==========================================================
+Strong AI is a computer system that solves every task at a near-human or above
+human level. This is more commonly known as artificial general intelligence,
+or AGI. I use these interchangeably, but I'll try to stick to AGI.
 
-"Now, malevolent AI that is intentionally killing humans is bad. But that's not
-what people worried about AI really mean."
+Currently, AGI does not exist.
+
+I see no reason AGI is fundamentally impossible.
+
+My current timeline is <FILL IN TIMELINE HERE>
 
 
+Part 2: Lowering the Goal Post
+===========================================================
+
+Detractor speaks up. "Point of order."
+
+"Yes?"
+
+"I already know the arguments for value alignment, and find them valid. But,
+maybe we should go over them anyways? Just in case."
+
+"Sure, as long as we tell the reader that if they know what value alignment
+means, they can probably skip this section without missing much. We're going
+to retread a lot of old ground here."
+
+\*\*\*
+{: .centered }
