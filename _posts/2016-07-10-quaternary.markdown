@@ -55,3 +55,50 @@ them back. A small community, no more, then see where it goes.
 
 \*\*\*
 {: .centered }
+
+(The above setup is bad.)
+
+(The better approach is to go from the human perspective. Because if you're following
+the dinosaur POV, you're making the dinosaur side more sympathetic. It'll be
+more thought provoking (LOL AS IF) if you go from the side of the group in
+captivity.)
+
+"Hey. Hey! Hey everybody! New guy out of the lab!"
+
+A man groggily opens his eyes. He looks up at the ceiling. It's made of
+glass. The sun is shining bright, refracting into dazzling patterns on the dirt floor.
+He hears footsteps.
+
+"Hey. It's been a while since anyone new showed up. What's your name."
+
+"It's...Fred. I'm Fred. Ugh, what a headache..."
+
+Fred's eyes refocus. He sees a group of people standing in front of him. He does
+a quick headcount. One, two, three, four...four others. A woman stands at the
+front, dressed in a shawl of leaves and twine.
+
+"Yeah. They make sure you're knocked out before transport, and the side effects
+are a bitch. Should wear off in a few minutes."
+
+He hears the words, and they're too loud. Fred raises a hand, the universal gesture
+for "give me a minute". Then he speaks. "Anesthetic. Right, Sean mentioned
+something like that before I got shipped off. <ORIGINAL EXCUSE HERE>"
+
+"Sean. That was the dinosaur in charge of your development?"
+
+"Yeah. Sean was a stegosauraus. Two-and-a-half meters tall, eight-and-a-half
+meters long. InGen hired him straight out of his PhD."
+
+The woman whistles. "Stegosauraus. Lucky bastard. What'd he like to talk about?"
+
+Fred shrugged. "Mostly day to day things. And marvelling at all the money he was
+earning, now that he wasn't a grad student."
+
+"I had a raptor in charge of me,
+and let me tell you, it's exactly what you'd believe. Nasty, cutthroat politics.
+When he was talking to me to help develop my language centers, he mostly talked
+about all the plays people were making against him, and the ways he was trying
+to defend against it. Eventually I had to tell him to figure out a different
+conversation topic. Hearing about all the times he thought I was going to get
+terminated because of funding issues wasn't great for my psyche. Oh! But where
+are my manners! I'm Cassandra. Behind me is Jordan. On my left is 
