@@ -21,45 +21,98 @@ people comment on things they feel aren't accurate. And that's it. No followup,
 unless I want to write one. This is just an attempt to push my horizons.
 
 \*\*\*
+{: .centered }
 
 Politicians (people who run for public office) are motivated by two desires.
 
 1. To get power, for the sake of having power.
 2. To get power, for the sake of making the world a better place.
 
-There are people who find great joy who find great joy in telling people what to do,
-*and watching it actually happen.* Ever heard of a power trip? Now, imagine
-you're this kind of person, and there's a job whose entire purpose is to create
-laws that tell people what to do, and if they don't do it they get arrested.
+How important each of the two is comes down to both the politician and the level
+of office they're running for. Someone running for town mayor is more likely to
+be motivated by making the world a better place. Someone running for Senator
+is closer towards the end of wanting more power. Someone running for President
+almost certainly has power as their primary goal. Only a very, very interesting
+sort of person would look at the Presidency, observe the incredible stress
+it causes, consider the increased odds of death by assassination, and conclude
+that yeah, they could run the United freaking States of America.
 
-The most cynical people would say that this is enough, and all of politics can
-be reduced to people trying to get power for the sake of having power. However,
-I think this is too big of a simplification. Many people want power because
-they want the ability to exert meaningful change on the world. If you want
-to convince people and have a role in shaping policy, politics isn't a bad
-place to be.
+> Power is my mistress. I have worked too hard at her conquest to allow anyone
+> to take her away from me.
 
-In fact, the first step in making the world a better place is almost always
-accumulating the power or influence to change people's minds. This can be
-somewhat icky to admit out loud, but I have a very hard time denying them.
+(Napoleon, CITE)
+{: .centered }
 
-Power is my mistress. I have worked too hard at her conquest to allow anyone to take her away from me.
-Read more at: http://www.brainyquote.com/quotes/quotes/n/napoleonbo165317.html
+The most cynical people would claim that all politicians are entirely
+self-motivated, doing whatever it takes to keep elected office. I don't think
+that position is entirely wrong, and at the same time I don't think it's
+entirely right. When I look at a politician, I see somebody who believes
+world order is broken. The whole thesis of running for office is that you
+believe you'd be a better leader than the current one, so of course
+a politician wants power - the people in power are doing it wrong!
 
-Politics isn't the only way to get power. In fact, I imagine it's a lot easier
-to get power outside of public office rather than inside public office.
-Somehow, it feels a lot easier to climb a corporate ladder than a government
-ladder.
+It's somewhat icky to admit out loud, but sometimes the first step to making
+the world a better place is seizing enough power to influence other people's
+minds.
 
-(As an aside, every politician is trying to make the world a better place.
-It's just that they have different opinions on what an ideal world looks like.)
+And this should go without saying, but every politician is genuinely trying
+to make the world a better place. It's just that they have wildly different
+opinions on what an ideal world should look like. You don't devote hours to
+fundraising and campaigning unless you truly believe some laws need to
+change. If someone just wanted power, they'd probably have an easier time
+getting power through the private sector.
 
-This view helps explain the role of elections. In an internship two years ago,
-the city mayor visited our office to give a talk. During the Q&A session,
-an audience member asked how politicians could justify switching positions so
-often. The mayor said that of course politicians are going to act in a way
-that makes them popular with voters. Otherwise, they wouldn't get to be
-elected.
+\*\*\*
+{: .centered }
+
+The other golden rule of politics is that nobody gets everything of what they
+want.
+
+Governments are vast systems of incredible complexity. It's surprising that
+they work at all, all things considered. That means there are large structural
+forces that prevent people from doing "the right thing."
+
+The President has a lot of power, but the President isn't a dictator.
+Similarly, a Congressman or Congresswoman is just one person in the House of
+Representatives. Everyone has their pet issue, and they're not all going to get
+addressed, because some of those pet issues will be in direct conflict to one
+another.
+
+Politicians have to balance their personal convictions with the realities of
+the system. If you Stick to your guns and refuse to make concessions, you
+don't get anywhere. Look at what happened to Congress last administration.
+
+Furthermore, everyone knows this. People liked to complain about Republicans
+blocking Democratic legislation by being obstinate, but it made sense. Stall
+the legislative process, make voters disillusioned by Democratice leadership,
+and win back control of the House in midterm elections. And Democrats know
+this, so they either had to make bigger concessions, or had to paint
+Republicans as do-nothings to hurt their election chances.
+
+The point is that politics is messy, meandering, filled with off the record
+deals, and you have to learn to navigate this whole mess, or else you're
+not the leader you promised the voters you were going to be. And if you
+don't deliver, you're not getting their votes.
+
+In short, politics is where ideals go to die.
+
+\*\*\*
+{: .centered }
+
+When I was doing an internship two years ago, the city mayor visited our
+office, to talk about the role of technology in governement.
+During the Q&A session, an audience member asked how politicians could justify
+switching positions so often. The mayor said that of course politicians are
+going to act in a way that makes them popular with voters. Otherwise, they
+wouldn't be keeping their constituents happy.
+
+*Politicians are often forced to advocate for something they don't believe
+in, because they need to be seen as caring about that issue.* Take Obama
+on terrorism. In an interview with The Atlantic, he said that people get
+much more scared of terrorism than they should. He'd prefer devoting his
+time to forming stronger relationships with Asia, (check this.) But, he
+couldn't be seen as soft on terror, and so he had to spend more time on
+the Middle East than he wanted to.
 
 *In a democracy, votes are the ways to keep a politician's desire for power
 aligned with your interests.* If you agree with one candidate more than the
@@ -73,3 +126,8 @@ for denying/embracing climate change, and furthermore that they *have* to
 change their mind, *even if they believe otherwise*, for the sake of keeping
 elected office, you realize there's a power there. And you didn't have to
 campaign for weeks to get it.
+
+
+\*\*\*
+{: .centered }
+
