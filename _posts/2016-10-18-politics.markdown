@@ -1,32 +1,73 @@
 ---
 layout: post
 title:  "How I View Politicians"
-date:   2016-10-18 22:50:00 -0700
+date:   2016-10-22 15:54:00 -0700
 ---
 
-I'm not sure why you're here to get political opinions. When it comes to
-discussing politics, I'm incredibly underqualified.
+I'm not sure why you're here to get political opinions. I'm incredibly
+underqualified to discuss anything about politics.
 
 On the other hand, lots of people are underqualified, and that doesn't stop
-flame wars on the Internet. And what, my understanding of politics is going
-to get better if I try to avoid politics? That's literally the opposite
+the flame wars on the Internet. And what, my understanding of politics is going
+to get better if I avoid thinking about it? That's literally the opposite
 of what you should be doing if you want to understand politics.
 
-Now, I still don't have a taste for politics, and I'm not interested in running
-for office any time soon, but I figured that doesn't mean I can't get some quick
-updates to my understanding.
+So here's how this post is going to go. I explain how I view politics and
+politicians. And that's it. No followup. I wait for people to object to the
+stupider things I say, and think about it.
 
-So here's how this post is going to go. I explain how I model politicians. Then
-people comment on things they feel aren't accurate. And that's it. No followup,
-unless I want to write one. This is just an attempt to push my horizons.
+Is this going to make me a politicial genius? No. Am I looking to become
+a political genius? No. I'm looking to be less of a political idiot.
+Broaden my horizons a bit, see what happens.
 
-\*\*\*
+Here we go.
+
+The Two Rules
+===========================================================
+
+I have two golden rules about politics.
+
+1. Politicians are motivated by two desires: power for the sake of power, and
+power for the sake of making the world a better place.
+2. No one gets everything they want. Therefore, politics turns into a game
+of compromise and quid pro quo.
+
+Let's break it down.
+
+The Power to Change the World
+-----------------------------------------------------------
+
+All politicians want power. I don't think this is a controversial claim.
+Try saying the reverse. "Some politicians don't want power." I have trouble
+thinking of a politician that statement could apply to.
+
+The question, then, is what they want power for. Some people want power for
+the feeling of dominance over others. The vaguely euphoric feeling they get,
+when they tell people what to do, and it *gets done.*
+
+> Power is my mistress. I have worked too hard at her conquest to allow anyone
+> to take her away from me.
+
+(Napoleon)
 {: .centered }
 
-Politicians (people who run for public office) are motivated by two desires.
+I know some political scientists claim that having power is the **only**
+desire of politicians. That's not entirely wrong, and it's also not entirely
+true. If someone just wanted power, they'd probably have an easier time in
+the private sector. (I'll freely admit that's purely my intuition.)
 
-1. To get power, for the sake of having power.
-2. To get power, for the sake of making the world a better place.
+That leads to the second part of the rule. When I look at a politician, I see
+somebody who believes world order is broken. When someone runs for office,
+their entire thesis is that they'd be a better leader than the current one.
+So of course they want power - the people in power are doing it wrong!
+
+To place it in narrative terms, it's the difference between a hero who
+became a hero for fame, and a hero who became a hero because they believed
+no one else was going to rise to the occasion.
+
+It's somewhat icky to admit out loud, but sometimes the first step to making
+the world a better place is seizing enough power to influence other people's
+minds.
 
 How important each of the two is comes down to both the politician and the level
 of office they're running for. Someone running for town mayor is more likely to
@@ -37,20 +78,6 @@ sort of person would look at the Presidency, observe the incredible stress
 it causes, consider the increased odds of death by assassination, and conclude
 that yeah, they could run the United freaking States of America.
 
-> Power is my mistress. I have worked too hard at her conquest to allow anyone
-> to take her away from me.
-
-(Napoleon, CITE)
-{: .centered }
-
-The most cynical people would claim that all politicians are entirely
-self-motivated, doing whatever it takes to keep elected office. I don't think
-that position is entirely wrong, and at the same time I don't think it's
-entirely right. When I look at a politician, I see somebody who believes
-world order is broken. The whole thesis of running for office is that you
-believe you'd be a better leader than the current one, so of course
-a politician wants power - the people in power are doing it wrong!
-
 It's somewhat icky to admit out loud, but sometimes the first step to making
 the world a better place is seizing enough power to influence other people's
 minds.
@@ -59,8 +86,7 @@ And this should go without saying, but every politician is genuinely trying
 to make the world a better place. It's just that they have wildly different
 opinions on what an ideal world should look like. You don't devote hours to
 fundraising and campaigning unless you truly believe some laws need to
-change. If someone just wanted power, they'd probably have an easier time
-getting power through the private sector.
+change.
 
 \*\*\*
 {: .centered }
@@ -121,18 +147,40 @@ you in the election. And remember, the whole reason you're a politician
 is because you believe the people in charge are doing it wrong. The person
 replacing you is going to do it wrong too.
 
-*In a democracy, votes are the ways to keep a politician's desire for power
-aligned with your interests.* If you agree with one candidate more than the
-other, you vote for the candidate you like more, because that rewards
-candidates that follow your norms and punishes candidates that don't.
+Does it bother me, that politicians may be saying things they don't believe
+in? Yes, it does. But that doesn't make me not want to vote for them, because
+to me it shows they're good at playing the game.
 
-It's hard to understand how powerful this is. Everyone says that if you don't
-vote, your voice won't be heard, but when you realize that you have the power
-to punish politicians for being sexist, or racist, or pro-choice/pro-life, or
-for denying/embracing climate change, and furthermore that they *have* to
-change their mind, *even if they believe otherwise*, for the sake of keeping
-elected office, you realize there's a power there. And you didn't have to
-campaign for weeks to get it.
+\*\*\*
+
+Given these principles, what makes a politician appleaing to me? How do I
+choose who to vote for?
+
+People like to say that every vote counts, and if you don't vote, you don't have
+a voice in the democracy. That's true, but it's so cliche that it's lost
+the impact it deserves.
+
+I think of votes like so: *votes are the means by which the public keeps
+a politician's desire for power aligned with the public's interests.*
+Yes, voting for a candidate gives them your support. But the flip side is also
+true - not voting for a candidate punishes them into moving closer to
+your position.
+
+If a majority of the country agrees that interracial marriage shouldn't be
+illegal and votes accordingly, it doesn't matter whether the politician
+supports interracial marriage. If they speak out against it, they lose their
+next election. That's it. There's no way out, for this hypothetical politician.
+
+At some point, there's no difference between pandering to racists and being a
+racist. And similarly, at some point there's no difference between pandering
+to equal rights and believing in equal rights.
+
+So there's one answer: vote for politicians who are closest to your personal
+beliefs.
+
+For me though, there's another metric: vote for politicians who look like
+they'll actually get things done. Recall the golden rule of politics - no
+one gets all of what they want.
 
 
 \*\*\*
