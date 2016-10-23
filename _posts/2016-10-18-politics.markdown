@@ -1,0 +1,245 @@
+---
+layout: post
+title:  "My Understanding of Politics"
+date:   2016-10-22 23:58:00 -0700
+---
+
+Let me start by saying I'm incredibly underqualified to discuss anything
+about politics.
+
+On the other hand, lots of people are underqualified, and that doesn't stop
+them from getting into flame wars on the Internet. And what, my understanding
+of politics is going
+to get better if I avoid thinking about it? That's literally the opposite
+of what you should be doing if you want to understand politics.
+
+So here's how this post is going to go. I explain how I view politics and
+politicians. And that's it. No follow-up. I wait for people to object to the
+stupider things I say, and then I don't reply to their objections unless
+I want to.
+
+Is this going to make me a political genius? No. Am I looking to become
+a political genius? No. All I want is to be less of a political idiot.
+This seems like a good way to get some easy gains in that direction.
+
+Here we go.
+
+The Two Rules
+-----------------------------------------------------------
+
+I have two golden rules about politics.
+
+1. Politicians are motivated by two desires: power for the sake of power, and
+power for the sake of making the world a better place.
+2. No one gets everything they want, which turns politics into a game
+of compromise and quid pro quo.
+
+Let's break it down.
+
+The Power to Change the World
+===========================================================
+
+Most politicians want power. I don't think this is a controversial claim.
+Try saying the reverse. "Most politicians don't want power." That sounds
+resoundingly false to me.
+
+What they want power for? Some people want power for
+the feeling of dominance over others. The euphoric feeling they get,
+when they tell people what to do, and it *actually happens the way they
+asked it to get done.*
+
+> Power is my mistress. I have worked too hard at her conquest to allow anyone
+> to take her away from me.
+
+(Napoleon)
+{: .centered }
+
+I know some political scientists claim that having power is the **only**
+desire of politicians. That's not entirely wrong, and it's also not entirely
+true. If someone wanted only power and nothing else, they'd probably have an easier time in
+the private sector. (I'll freely admit this is just my intuition talking.)
+
+That leads to the second part of the rule. When I look at a politician, I see
+somebody who believes world order is broken. When someone runs for office,
+their entire thesis is that they'd be a better leader than the current one.
+So of course they want power - the people in power are doing it wrong!
+
+To place it in narrative terms, it's the difference between a hero who
+became a hero for fame, and a hero who became a hero because they believed
+no one else was going to rise to the occasion.
+
+It's somewhat icky to admit out loud, but sometimes the first step to improving
+the world is a naked grab for power. If you have influence, it makes it
+much easier to convince people to act the way you think they ought to.
+
+And this should go without saying, but all politicians are genuinely trying
+to make the world a better place. Including the ones that disagree with you.
+Politicians aren't trolls. They don't disagree with you solely to piss you
+off. They disagree with you because their better world looks different from
+your better world.
+
+That being said, how much this altruistic desire matters is dependent on the
+politician. A town mayor is more likely to care about helping people.
+A senator is closer towards the end of power for power's sake.
+Someone running for president almost certainly has power as their primary goal.
+Only a very hungry sort of person would look at the presidency,
+look at the incredible stress is causes, consider the increased odds of death
+by assassination, understand that a large part of the world is going to hate
+them with undying passion, and conclude that yeah, they want that.
+
+![Obama before and after presidency](/public/politics-model/obama.png)
+{: .centered }
+
+(As a corollary, I'm not bothered when people attack politicians for
+being opportunists. I expect this of them. Whether they do so
+discreetly or openly doesn't influence my opinion by much.)
+
+Even the most cynical interpretation of politics doesn't sound that bad to
+me. When I was an intern, the city mayor visited our
+office, to talk about the role of technology in government.
+During the Q&A session, an audience member asked how politicians could justify
+switching positions so often. The mayor said that of course politicians are
+going to switch positions to match what votes want to do. Otherwise, they
+wouldn't be representing their constituents.
+
+I saw his reply as a positive spin on this: *even politicians motivated
+only by power have to follow the will of the voters.*
+
+If a majority of the country agrees that interracial marriage should be legal,
+and a politician says they don't approve of it, they're going to lose their
+next election, badly. And therefore every politician agrees
+that interracial marriage is okay, despite the fact that as recently as
+2013, [thirteen percent of Americans did not approve of marriage between blacks and
+whites](http://www.gallup.com/poll/163697/approve-marriage-blacks-whites.aspx).
+I'm guessing the fraction is lower among members of Congress, but there are over
+500 people in Congress. I think it's reasonable to assume at least one privately
+disagrees with interracial marriage, but goes along with it publicly.
+
+At some point, there's no difference between pandering to racists and being a
+racist. And similarly, at some point there's no difference between pandering
+to equal rights activists and believing in equal rights.
+
+**Votes are the means by which the public keeps a politician's desire for power
+aligned with the public's interests.** Unfortunately, what's best for the
+nation isn't always what the nation wants, but that's the world we live in.
+Someone who doesn't pander for votes is going to lose their election to someone
+who does. And remember, the whole reason people go into politics is because
+they believe they'll do a better job than everyone else running.
+
+It does bother me that politicians may be saying things they don't believe
+in, but considering the other upsides of democracy, I'm not too upset about the
+current state of affairs.
+
+
+"How About a Nice Game of Politics?"
+--------------------------------------------------------------------
+
+Take a bunch of people, all interested in advancing their own agenda. Then
+throw them into a room, and tell them they have to agree on something.
+
+That's what Congress feels like to me. Hence, the second rule of politics:
+no one gets everything they want.
+
+The president has a lot of power, but the president isn't a dictator.
+Similarly, a congressman or congresswoman is just one person in the House
+of Representatives. Governments are huge systems of incredible complexity.
+All things considered, it's surprising they actually work.
+
+To advance their pet issues, politicians have to balance their personal
+convictions with the realities of their situation. People who stick to their
+guns and refuse to make concessions tend not to get anything done.
+
+> [BURR]  
+> You got more than you gave.
+>
+> [HAMILTON]  
+> And I wanted what I got.  
+> When you got skin in the game, you stay in the game.  
+> But you don't get a win unless you play in the game.
+
+(Hamilton, ["The Room Where It Happens"](https://www.youtube.com/watch?v=IWdBOsk8D7A))
+{: .centered }
+
+That's not saying stubbornness doesn't have its place. Weaponized stubbornness
+can be a powerful tool. Consider the Obama administration.
+The broad narrative I heard from my decidedly Democratic bubble was that
+Republicans blocked Democratic legislation by being obstinate.
+
+If you ally yourself with the blue tribe, sure, that sucks. But think about the
+broader play. Republicans stall the legislative process, making voters
+disillusioned by Democratic leadership. That gives ammunition for Republicans
+to use in upcoming midterm elections, which already tend to swing against
+the president's party.
+
+The Democrats know all of this, but the clock is still ticking on this
+power play. They now have two options. Make huge concessions that
+get their bills through (at the cost of the bills' original spirits), or
+gamble that painting Republicans as do-nothings will be enough come election
+time.
+
+Which move was right? Or were there other moves? I don't know.
+The point is that politics is messy. You don't get into Congress without
+some level of shrewdness. Backroom deals are all a part of the game.
+
+You can try to rise above the game, proclaiming that governments should hold
+themselves to higher ideals. Then you lose to the people who compromised
+their principles and accepted money from lobbyists.
+
+Politicians have to learn how to navigate this mess, or else they're not
+the leader they promised voters they were going to be.
+
+That means quid pro quo. It means advocating for something
+you don't believe in, because you were promised support for the bill they
+care about. Accepting money from lobbyists even if you don't want to,
+because you're stuck in a political prisoner's dilemma. Over time, politicians
+become exactly the kind of person they hated as teenagers.
+
+In short, politics is where ideals go to die.
+
+The great politicians are not the ones with the purest hearts. The great
+politicians are the ones that recognize the system, dive into it with
+disdain, and surface with the general thrust of the bill they wanted to pass.
+
+
+What Guides My Vote?
+-----------------------------------------------------------------
+
+Given this lens, what makes me decide I should vote for a specific politician?
+
+My main goal is to support politicians who publicly support causes that
+match my belief. They could be lying, but guessing what they believe behind
+their claims is a road towards madness. It's easier for me to trust what they
+say. And if they don't actually believe in their cause, who cares? They have
+to support it to get votes, and if they didn't try to support it after getting
+elected, they're not getting my vote again.
+
+My secondary goal is to support politicians that hold council and deeply
+consider the best solutions to issues. Politicians are trying to
+make the world a better place, but they're not going to be experts in everything.
+Good politicians stay informed by surrounding themselves with experts and asking
+them questions. Great politicians actually change their position after talking
+to their experts.
+
+(This is why I've never been very bothered by attacks based around
+politicians flip-flopping. Why should I care that they voted against something
+four years ago, if they're voting for it now? Is it really that unreasonable
+that they changed their position?)
+
+Finally, I support politicians who look like they'll actually get things
+done. I'm much fonder of proposals that push the status quo by a bit instead of
+a lot. It's hard enough to pass a bill. Proposing a radical bill that most of
+the legislature hates sounds pointless. All it does is proclaim you have
+strange beliefs. That's interesting, but it doesn't lead to actual results.
+
+\*\*\*
+{: .centered }
+
+Well, there you have it. My broad views on politics. I'd like to think that
+it's not totally wrong, but we'll see how it goes.
+
+If you had any objections, I'd appreciate it if you could comment. And if you
+agreed with what I said, I'd also appreciate comments, to get confirmation that
+I'm on the right track. I suspect readers of this post in particular will be
+more politically aware than me, and if I expect politicians to
+evolve their policy by asking the advice of experts, I should ask the same
+of myself.
