@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "How I View Politicians"
-date:   2016-10-22 15:54:00 -0700
+title:  "My Understanding of Politics"
+date:   2016-10-22 23:53:00 -0700
 ---
 
 Let me start by saying I'm incredibly underqualified to discuss anything
@@ -19,12 +19,8 @@ stupider things I say, and then I don't reply to their objections unless
 I want to.
 
 Is this going to make me a political genius? No. Am I looking to become
-a political genius? No.
-
-All I want is to be less of a political idiot. This seems like a good way
-to get some easy gains in that direction. (In general, it's okay
-to study a topic, while having no intention to become an expert in that
-topic.)
+a political genius? No. All I want is to be less of a political idiot.
+This seems like a good way to get some easy gains in that direction.
 
 Here we go.
 
@@ -35,7 +31,7 @@ I have two golden rules about politics.
 
 1. Politicians are motivated by two desires: power for the sake of power, and
 power for the sake of making the world a better place.
-2. No one gets everything they want. Therefore, politics turns into a game
+2. No one gets everything they want, which turns politics into a game
 of compromise and quid pro quo.
 
 Let's break it down.
@@ -48,8 +44,9 @@ Try saying the reverse. "Most politicians don't want power." That sounds
 resoundingly false to me.
 
 What they want power for? Some people want power for
-the feeling of dominance over others. The vaguely euphoric feeling they get,
-when they tell people what to do, and it *gets done.*
+the feeling of dominance over others. The euphoric feeling they get,
+when they tell people what to do, and it *actually happens the way they
+asked it to get done.*
 
 > Power is my mistress. I have worked too hard at her conquest to allow anyone
 > to take her away from me.
@@ -59,8 +56,8 @@ when they tell people what to do, and it *gets done.*
 
 I know some political scientists claim that having power is the **only**
 desire of politicians. That's not entirely wrong, and it's also not entirely
-true. If someone just wanted power, they'd probably have an easier time in
-the private sector. (I'll freely admit this is purely my intuition talking.)
+true. If someone wanted only power and nothing else, they'd probably have an easier time in
+the private sector. (I'll freely admit this is just my intuition talking.)
 
 That leads to the second part of the rule. When I look at a politician, I see
 somebody who believes world order is broken. When someone runs for office,
@@ -106,10 +103,11 @@ going to switch positions to match what votes want to do. Otherwise, they
 wouldn't be representing their constituents.
 
 I saw his reply as a positive spin on this: *even politicians motivated
-by just power have to follow the will of the voters.*
+only by power have to follow the will of the voters.*
+
 If a majority of the country agrees that interracial marriage should be legal,
 and a politician says they don't approve of it, they're going to lose their
-next election. That's it. No way out. And therefore every politician agrees
+next election, badly. And therefore every politician agrees
 that interracial marriage is okay, despite the fact that as recently as
 2013, [thirteen percent of Americans did not approve of marriage between blacks and
 whites](http://www.gallup.com/poll/163697/approve-marriage-blacks-whites.aspx).
@@ -159,7 +157,7 @@ guns and refuse to make concessions tend not to get anything done.
 > When you got skin in the game, you stay in the game.  
 > But you don't get a win unless you play in the game.
 
-(Hamilton, "The Room Where It Happens")
+(Hamilton, ["The Room Where It Happens"](https://www.youtube.com/watch?v=IWdBOsk8D7A))
 {: .centered }
 
 That's not saying stubbornness doesn't have its place. Weaponized stubbornness
@@ -181,7 +179,7 @@ time.
 
 Which move was right? Or were there other moves? I don't know.
 The point is that politics is messy. You don't get into Congress without
-some level of shrewdness. It's filled with backroom deals and lobbyists, and
+some level of shrewdness. It's filled with backroom deals and quid pro quo, and
 it's all a part of the game.
 
 You can try to rise above the game, proclaiming that governments should hold
@@ -204,7 +202,7 @@ politicians are the ones that recognize the system, dive into it with
 disdain, and surface with the general thrust of the bill they wanted to pass.
 
 
-What Guides my Vote?
+What Guides My Vote?
 -----------------------------------------------------------------
 
 Given this lens, what makes me decide I should vote for a specific politician?
@@ -220,8 +218,8 @@ My secondary goal is to support politicians that hold council and deeply
 consider the best solutions to issues. Politicians are trying to
 make the world a better place, but they're not going to be experts in everything.
 Good politicians stay informed by surrounding themselves with experts and asking
-them questions. Great politicians actually change their mind because of what
-experts say.
+them questions. Great politicians actually change their position after talking
+to their experts.
 
 (This is why I've never been very bothered by attacks based around
 politicians flip-flopping. Why should I care that they voted against something
@@ -231,10 +229,17 @@ that they changed their position?)
 Finally, I support politicians who look like they'll actually get things
 done. I'm much fonder of proposals that push the status quo by a bit instead of
 a lot. It's hard enough to pass a bill. Proposing a radical bill that most of
-the legislature hates is almost always a fool's errand.
+the legislature hates sounds pointless. All it does is proclaim you have
+strange beliefs. That's interesting, but it doesn't lead to actual results.
 
 \*\*\*
 {: .centered }
 
-Well there you have it. My broad viewpoints on politics. I'd like to think that
-it's not totally wrong. But I think the feedback will be the judge of that.
+Well, there you have it. My broad views on politics. I'd like to think that
+it's not totally wrong, but we'll see how it goes.
+
+If you had any objections, I'd appreciate it if you could comment. And if you
+agreed with what I said, I'd also appreciate comments. I expect readers of this
+post to be more politically aware than mean, and if I ask politicians to
+evolve their policy by asking the advice of experts, I should ask the same
+of myself.
