@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Understanding of Politics"
-date:   2016-10-22 23:53:00 -0700
+date:   2016-10-22 23:58:00 -0700
 ---
 
 Let me start by saying I'm incredibly underqualified to discuss anything
@@ -179,8 +179,7 @@ time.
 
 Which move was right? Or were there other moves? I don't know.
 The point is that politics is messy. You don't get into Congress without
-some level of shrewdness. It's filled with backroom deals and quid pro quo, and
-it's all a part of the game.
+some level of shrewdness. Backroom deals are all a part of the game.
 
 You can try to rise above the game, proclaiming that governments should hold
 themselves to higher ideals. Then you lose to the people who compromised
@@ -193,7 +192,7 @@ That means quid pro quo. It means advocating for something
 you don't believe in, because you were promised support for the bill they
 care about. Accepting money from lobbyists even if you don't want to,
 because you're stuck in a political prisoner's dilemma. Over time, politicians
-become exactly the kind of person they hated as a teenager.
+become exactly the kind of person they hated as teenagers.
 
 In short, politics is where ideals go to die.
 
@@ -239,7 +238,8 @@ Well, there you have it. My broad views on politics. I'd like to think that
 it's not totally wrong, but we'll see how it goes.
 
 If you had any objections, I'd appreciate it if you could comment. And if you
-agreed with what I said, I'd also appreciate comments. I expect readers of this
-post to be more politically aware than mean, and if I ask politicians to
+agreed with what I said, I'd also appreciate comments, to get confirmation that
+I'm on the right track. I suspect readers of this post in particular will be
+more politically aware than me, and if I expect politicians to
 evolve their policy by asking the advice of experts, I should ask the same
 of myself.
