@@ -4,26 +4,32 @@ title:  "How I View Politicians"
 date:   2016-10-22 15:54:00 -0700
 ---
 
-I'm not sure why you're here to get political opinions. I'm incredibly
-underqualified to discuss anything about politics.
+Let me start by saying I'm incredibly underqualified to discuss anything
+about politics.
 
 On the other hand, lots of people are underqualified, and that doesn't stop
-the flame wars on the Internet. And what, my understanding of politics is going
+them from getting into flame wars on the Internet. And what, my understanding
+of politics is going
 to get better if I avoid thinking about it? That's literally the opposite
 of what you should be doing if you want to understand politics.
 
 So here's how this post is going to go. I explain how I view politics and
-politicians. And that's it. No followup. I wait for people to object to the
-stupider things I say, and think about it.
+politicians. And that's it. No follow-up. I wait for people to object to the
+stupider things I say, and then I don't reply to their objections unless
+I want to.
 
-Is this going to make me a politicial genius? No. Am I looking to become
-a political genius? No. I'm looking to be less of a political idiot.
-Broaden my horizons a bit, see what happens.
+Is this going to make me a political genius? No. Am I looking to become
+a political genius? No.
+
+All I want is to be less of a political idiot. This seems like a good way
+to get some easy gains in that direction. (At a meta level, it's okay
+to study a topic, while having no intention to become an expert in that
+topic.)
 
 Here we go.
 
 The Two Rules
-===========================================================
+-----------------------------------------------------------
 
 I have two golden rules about politics.
 
@@ -35,13 +41,13 @@ of compromise and quid pro quo.
 Let's break it down.
 
 The Power to Change the World
------------------------------------------------------------
+===========================================================
 
-All politicians want power. I don't think this is a controversial claim.
-Try saying the reverse. "Some politicians don't want power." I have trouble
-thinking of a politician that statement could apply to.
+Most politicians want power. I don't think this is a controversial claim.
+Try saying the reverse. "Most politicians don't want power." That sounds
+resoundingly false to me.
 
-The question, then, is what they want power for. Some people want power for
+What they want power for? Some people want power for
 the feeling of dominance over others. The vaguely euphoric feeling they get,
 when they tell people what to do, and it *gets done.*
 
@@ -54,7 +60,7 @@ when they tell people what to do, and it *gets done.*
 I know some political scientists claim that having power is the **only**
 desire of politicians. That's not entirely wrong, and it's also not entirely
 true. If someone just wanted power, they'd probably have an easier time in
-the private sector. (I'll freely admit that's purely my intuition.)
+the private sector. (I'll freely admit this is purely my intuition talking.)
 
 That leads to the second part of the rule. When I look at a politician, I see
 somebody who believes world order is broken. When someone runs for office,
@@ -66,48 +72,42 @@ became a hero for fame, and a hero who became a hero because they believed
 no one else was going to rise to the occasion.
 
 It's somewhat icky to admit out loud, but sometimes the first step to improving
-the world is an aggressive grab for power. If you have influence, it makes it
+the world is a naked grab for power. If you have influence, it makes it
 much easier to convince people to act the way you think they ought to.
 
 And this should go without saying, but all politicians are genuinely trying
 to make the world a better place. Including the ones that disagree with you.
 Politicians aren't trolls. They don't disagree with you solely to piss you
-off. They disagree with you because they disagree with you on what a better
-world should look like.
+off. They disagree with you because their better world looks different from
+your better world.
 
-That being said, how important this desire to do good is comes down to the
-politician and the level of office their running for.
-Someone running for town mayor is more likely to care about helping people.
-Someone running for senator is closer towards the end of wanting more power.
-Someone running for President almost certainly has power as their primary goal.
-Only a very, very arrogant sort of person would look at the Presidency,
+That being said, how much this altruistic desire matters is dependent on the
+politician. A town mayor is more likely to care about helping people.
+A senator is closer towards the end of power for power's sake.
+Someone running for president almost certainly has power as their primary goal.
+Only a very hungry sort of person would look at the presidency,
 look at the incredible stress is causes, consider the increased odds of death
 by assassination, understand that a large part of the world is going to hate
-them with undying passion, and conclude that yeah, they actually want to be
-President, and they'd be a good leader for the United freaking States
-of America.
+them with undying passion, and conclude that yeah, they want that.
+
+![Obama before and after presidency](/public/politics-model/obama.png)
+{: .centered }
+
+(As a corollary, I'm not bothered when people attack politicians for
+being opportunists. I expect this of them. Whether they do so
+discreetly or openly doesn't influence my opinion by much.)
 
 Even the most cynical interpretation of politics doesn't sound that bad to
-me. When I was doing an internship two years ago, the city mayor visited our
+me. When I was an intern, the city mayor visited our
 office, to talk about the role of technology in government.
 During the Q&A session, an audience member asked how politicians could justify
 switching positions so often. The mayor said that of course politicians are
 going to switch positions to match what votes want to do. Otherwise, they
-wouldn't be doing a good job of representing their constituents.
+wouldn't be representing their constituents.
 
-I saw his reply as a positive spin on the following idea: *politicians motivated
-by power have to follow the voters, because that's the metric they
-get judged by.* Take Obama's approach to terrorism.
-In an interview with The Atlantic, he said that people get
-much more scared of terrorism than they should. He'd prefer devoting his
-time to forming stronger relationships with Asia, because that's much more
-important for the future of the US. (check this.) But, he couldn't be seen as
-soft on terror, and so he had to spend more time on the Middle East than he
-wanted to.
+I saw his reply as a positive spin on this: *even politicians motivated
+by just power have to follow the will of the voters.*
 
-If you agree with Obama, then the state of things kinda sucks. On the flip side,
-votes also force self-motivated politicians who disagree with you to act as
-if they did agree with you.
 If a majority of the country agrees that interracial marriage should be legal,
 and a politician says they don't approve of it, they're going to lose their
 next election. That's it. No way out. And therefore every politician agrees
@@ -118,6 +118,17 @@ whites.
 At some point, there's no difference between pandering to racists and being a
 racist. And similarly, at some point there's no difference between pandering
 to equal rights and believing in equal rights.
+
+Take Obama's approach to terrorism.
+There's an excellent article in the The Atlantic about
+Obama's foreign policy.
+I highly recommend reading it ([linked here](http://www.theatlantic.com/magazine/archive/2016/04/the-obama-doctrine/471525/)),
+but it's admittedly very long, so here's the relevant point:
+Obama believes the public is more scared of terrorism than they should
+be. Terrorism takes very few lives, and isn't likely to damage American
+infrastructure or American society. He'd much rather focus on building
+good relationships with Asia. But, he couldn't be seen as soft on terror,
+and therefore he had to spend more time on the Middle East than he wanted to.
 
 *Votes are the means by which the public keeps a politician's desire for power
 aligned with the public's interests.* Unfortunately, what's best for the
@@ -134,7 +145,7 @@ current state of affairs.
 
 
 "You Got More Than You Gave. And I Wanted What I Got."
-====================================================================
+--------------------------------------------------------------------
 
 Take a bunch of people, all interested in advancing their own agenda. Then
 throw them into a room, and tell them they have to agree on something.
@@ -211,8 +222,23 @@ As another secondary goal, I support politicians that are willing to change
 their mind, especially about key issues for them. Politicians are trying to
 make the world a better place. Having the self-awareness to ask for council
 is a big plus. Actually changing their mind about an issue because of that
-council is a bigger one. (This is why I've never been particularly bothered
+council is a bigger one.
+
+(This is why I've never been particularly bothered
 by people trying to dig up voting records from 10 years ago. That doesn't
 matter. What matters is their most recent voting record. The further into
 the past you dig, the less relevant that information is for the present day.)
+
+\*\*\*
+{: .centered }
+
+This grew a lot more than I thought it would, so I'll stop here.
+
+Just writing the words down was enough to light up new chains of insight. As
+I finished more sections, I realized there were more words, and more, and now
+I have a bag of vaguely connected ideas instead of a focused position.
+
+If I was more practiced at writing about politics, I'd certainly narrow this
+down more, but I feel like I still got something out of this exercise. Maybe
+my model of politics is okay after all.
 
