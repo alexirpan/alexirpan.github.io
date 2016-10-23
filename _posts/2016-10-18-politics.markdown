@@ -107,44 +107,33 @@ wouldn't be representing their constituents.
 
 I saw his reply as a positive spin on this: *even politicians motivated
 by just power have to follow the will of the voters.*
-
 If a majority of the country agrees that interracial marriage should be legal,
 and a politician says they don't approve of it, they're going to lose their
 next election. That's it. No way out. And therefore every politician agrees
 that interracial marriage is okay, despite the fact that as recently as
-2013, (CITE) 13% of Americans did not approve of marriage between blacks and
-whites.
+2013, [thirteen percent of Americans did not approve of marriage between blacks and
+whites](http://www.gallup.com/poll/163697/approve-marriage-blacks-whites.aspx).
+I'm guessing the fraction is lower among members of Congress, but there are over
+500 people in Congress. I think it's reasonable to assume at least one privately
+disagrees with interracial marriage, but goes along with it publically.
 
 At some point, there's no difference between pandering to racists and being a
 racist. And similarly, at some point there's no difference between pandering
-to equal rights and believing in equal rights.
+to equal rights activists and believing in equal rights.
 
-Take Obama's approach to terrorism.
-There's an excellent article in the The Atlantic about
-Obama's foreign policy.
-I highly recommend reading it ([linked here](http://www.theatlantic.com/magazine/archive/2016/04/the-obama-doctrine/471525/)),
-but it's admittedly very long, so here's the relevant point:
-Obama believes the public is more scared of terrorism than they should
-be. Terrorism takes very few lives, and isn't likely to damage American
-infrastructure or American society. He'd much rather focus on building
-good relationships with Asia. But, he couldn't be seen as soft on terror,
-and therefore he had to spend more time on the Middle East than he wanted to.
-
-*Votes are the means by which the public keeps a politician's desire for power
-aligned with the public's interests.* Unfortunately, what's best for the
-nation isn't always what the nation wants, but it's the world we live in.
+**Votes are the means by which the public keeps a politician's desire for power
+aligned with the public's interests.** Unfortunately, what's best for the
+nation isn't always what the nation wants, but that's the world we live in.
 Someone who doesn't pander for votes is going to lose their election to someone
 who does. And remember, the whole reason people go into politics is because
-they believe they'll do a better job than everyone else running. So yes,
-politicians do things for show and flair rather than substance, because they
-have to.
+they believe they'll do a better job than everyone else running.
 
 It does bother me that politicians may be saying things they don't believe
-in, but considering all the upsides of democracy, I'm not too upset about the
+in, but considering the other upsides of democracy, I'm not too upset about the
 current state of affairs.
 
 
-"You Got More Than You Gave. And I Wanted What I Got."
+"How About a Nice Game of Politics?"
 --------------------------------------------------------------------
 
 Take a bunch of people, all interested in advancing their own agenda. Then
@@ -153,92 +142,99 @@ throw them into a room, and tell them they have to agree on something.
 That's what Congress feels like to me. Hence, the second rule of politics:
 no one gets everything they want.
 
-The President has a lot of power, but the President isn't a dictator.
-Similarly, a Congressman or Congresswoman is just one person in a vast
-bureaucracy. Governments are huge systems of incredible complexity.
+The president has a lot of power, but the president isn't a dictator.
+Similarly, a congressman or congresswoman is just one person in the House
+of Representatives. Governments are huge systems of incredible complexity.
 All things considered, it's suprising they actually work.
 
 To advance their pet issues, politicians have to balance their personal
 convictions with the realities of their situation. People who stick to their
 guns and refuse to make concessions tend not to get anything done.
 
+> [BURR]  
+> You got more than you gave.
+>
+> [HAMILTON]  
+> And I wanted what I got.  
+> When you got skin in the game, you stay in the game.  
+> But you don't get a win unless you play in the game.
+
+(Hamilton, "The Room Where It Happens")
+{: .centered }
+
 That's not saying stubbornness doesn't have its place. Weaponized stubbornness
-can be a powerful tool. Take Congress in the Obama adminstration.
-I didn't follow politics very closely, because who's got time for that?
-The broad narrative I got from my decidedly Democratic bubble was that
-Republicans were blocking Democratic legislation by being obstinate.
+can be a powerful tool. Consider the Obama administration.
+The broad narrative I heard from my decidedly Democratic bubble was that
+Republicans blocked Democratic legislation by being obstinate.
 
 If you ally yourself with the blue tribe, sure, that sucks. But think about the
-broader picture. Republicans stall the legislative process, making voters
+broader play. Republicans stall the legislative process, making voters
 disillusioned by Democratic leadership. That gives ammunition for Republicans
-to use in upcoming midterm elections. The Democrats know the clock is ticking
-on this power play, so they now have two options. Make bigger concessions to
-get their bills through, or gamble that painting Republicans as do-nothings will
-be enough to maintain voter approval.
+to use in upcoming midterm elections, which already tend to swing against
+the president's party.
 
-Which move was right? Were there other moves? I don't know.
-The point is that politics is messy. It's filled with backroom
-deals and lobbyists, and it's all a part of the game.
+The Democrats know all of this, but the clock is still ticking on this
+power play. They now have two options. Make huge concessions that
+get their bills through (at the cost of the bills' original spirits), or
+gamble that painting Republicans as do-nothings will be enough come election
+time.
+
+Which move was right? Or were there other moves? I don't know.
+The point is that politics is messy. You don't get into Congress without
+some level of shrewdness. It's filled with backroom deals and lobbyists, and
+it's all a part of the game.
 
 You can try to rise above the game, proclaiming that governments should hold
-themselves to higher ideals. Then you lose to the people who accepted money
-from lobbyists.
+themselves to higher ideals. Then you lose to the people who compromised
+their principles and accepted money from lobbyists.
 
 Politicians have to learn how to navigate this mess, or else they're not
 the leader they promised voters they were going to be.
 
-That means quid pro quo. It means compromise. Advocating for something
-they don't believe in, because they were promised support for the bill they
-care about. Accepting money from lobbyists even if they don't want to,
-because they're stuck in a political prisoner's dilemna. Over time, politicians
-become exactly the kind of person they hated as a politically aware
-teenager.
+That means quid pro quo. It means advocating for something
+you don't believe in, because you were promised support for the bill they
+care about. Accepting money from lobbyists even if you don't want to,
+because you're stuck in a political prisoner's dilemna. Over time, politicians
+become exactly the kind of person they hated as a teenager.
 
 In short, politics is where ideals go to die.
 
-The great politicians are not the ones with the strongest ideals. The great
-politicians are the ones that dove into the system with disgust, and rose
-out of the mess with the bill they wanted to pass.
+The great politicians are not the ones with the purest hearts. The great
+politicians are the ones that recognize the system, dive into it with
+disdain, and surface with the general thrust of the bill they wanted to pass.
 
 
 What Guides my Vote?
-==========================================================
+-----------------------------------------------------------------
 
 Given this lens, what makes me decide I should vote for a specific politician?
 
-As a primary goal, I support politicians who publically support causes that
+My main goal is to support politicians who publically support causes that
 match my belief. They could be lying, but guessing what they believe behind
-their claims is a road towards madness. And if they don't actually believe
-in their cause, who cares? They have to support it to get votes, and if they
-didn't try after getting elected, they're not getting my vote again. Good
-is input-independent.
+their claims is a road towards madness. It's easier for me to trust what they
+say. And if they don't actually believe in their cause, who cares? They have
+to support it to get votes, and if they didn't try to support it after getting
+elected, they're not getting my vote again.
 
-As a secondary goal, I support politicians who look like they'll actually get things
+My secondary goal is to support politicians that hold council and deeply
+consider the best solutions to issues. Politicians are trying to
+make the world a better place, but they're not going to be experts in everything.
+Good politicians stay informed by surrounding themselves with experts and asking
+them questions. Great politicians actually change their mind because of what
+experts say.
+
+(As an aside, this is why I've never been very bothered by attacks based around
+politicians flipflopping. Why should I care that they voted against something
+four years ago, if they're voting for it now? Is it really that unreasonable
+that they changed their position?)
+
+Finally, I support politicians who look like they'll actually get things
 done. I'm much fonder of proposals that push the status quo by a bit instead of
-a lot, because the former are much more likely to actually happen. It's already
-hard enough to pass a bill.
-
-As another secondary goal, I support politicians that are willing to change
-their mind, especially about key issues for them. Politicians are trying to
-make the world a better place. Having the self-awareness to ask for council
-is a big plus. Actually changing their mind about an issue because of that
-council is a bigger one.
-
-(This is why I've never been particularly bothered
-by people trying to dig up voting records from 10 years ago. That doesn't
-matter. What matters is their most recent voting record. The further into
-the past you dig, the less relevant that information is for the present day.)
+a lot. It's hard enough to pass a bill. Proposing a radical bill that most of
+the legislature hates is almost always a fool's errand.
 
 \*\*\*
 {: .centered }
 
-This grew a lot more than I thought it would, so I'll stop here.
-
-Just writing the words down was enough to light up new chains of insight. As
-I finished more sections, I realized there were more words, and more, and now
-I have a bag of vaguely connected ideas instead of a focused position.
-
-If I was more practiced at writing about politics, I'd certainly narrow this
-down more, but I feel like I still got something out of this exercise. Maybe
-my model of politics is okay after all.
-
+Well there you have it. My broad viewpoints on politics. I'd like to think that
+it's not totally wrong. But I think the feedback will be the judge of that.
