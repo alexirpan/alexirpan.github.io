@@ -65,60 +65,119 @@ To place it in narrative terms, it's the difference between a hero who
 became a hero for fame, and a hero who became a hero because they believed
 no one else was going to rise to the occasion.
 
-It's somewhat icky to admit out loud, but sometimes the first step to making
-the world a better place is seizing enough power to influence other people's
-minds.
+It's somewhat icky to admit out loud, but sometimes the first step to improving
+the world is an aggressive grab for power. If you have influence, it makes it
+much easier to convince people to act the way you think they ought to.
 
-How important each of the two is comes down to both the politician and the level
-of office they're running for. Someone running for town mayor is more likely to
-be motivated by making the world a better place. Someone running for Senator
-is closer towards the end of wanting more power. Someone running for President
-almost certainly has power as their primary goal. Only a very, very interesting
-sort of person would look at the Presidency, observe the incredible stress
-it causes, consider the increased odds of death by assassination, and conclude
-that yeah, they could run the United freaking States of America.
+And this should go without saying, but all politicians are genuinely trying
+to make the world a better place. Including the ones that disagree with you.
+Politicians aren't trolls. They don't disagree with you solely to piss you
+off. They disagree with you because they disagree with you on what a better
+world should look like.
 
-It's somewhat icky to admit out loud, but sometimes the first step to making
-the world a better place is seizing enough power to influence other people's
-minds.
+That being said, how important this desire to do good is comes down to the
+politician and the level of office their running for.
+Someone running for town mayor is more likely to care about helping people.
+Someone running for senator is closer towards the end of wanting more power.
+Someone running for President almost certainly has power as their primary goal.
+Only a very, very arrogant sort of person would look at the Presidency,
+look at the incredible stress is causes, consider the increased odds of death
+by assassination, understand that a large part of the world is going to hate
+them with undying passion, and conclude that yeah, they actually want to be
+President, and they'd be a good leader for the United freaking States
+of America.
 
-And this should go without saying, but every politician is genuinely trying
-to make the world a better place. It's just that they have wildly different
-opinions on what an ideal world should look like. You don't devote hours to
-fundraising and campaigning unless you truly believe some laws need to
-change.
+Even the most cynical interpretation of politics doesn't sound that bad to
+me. When I was doing an internship two years ago, the city mayor visited our
+office, to talk about the role of technology in government.
+During the Q&A session, an audience member asked how politicians could justify
+switching positions so often. The mayor said that of course politicians are
+going to switch positions to match what votes want to do. Otherwise, they
+wouldn't be doing a good job of representing their constituents.
 
-\*\*\*
-{: .centered }
+I saw his reply as a positive spin on the following idea: *politicians motivated
+by power have to follow the voters, because that's the metric they
+get judged by.* Take Obama's approach to terrorism.
+In an interview with The Atlantic, he said that people get
+much more scared of terrorism than they should. He'd prefer devoting his
+time to forming stronger relationships with Asia, because that's much more
+important for the future of the US. (check this.) But, he couldn't be seen as
+soft on terror, and so he had to spend more time on the Middle East than he
+wanted to.
 
-The other golden rule of politics is that nobody gets everything of what they
-want.
+If you agree with Obama, then the state of things kinda sucks. On the flip side,
+votes also force self-motivated politicians who disagree with you to act as
+if they did agree with you.
+If a majority of the country agrees that interracial marriage should be legal,
+and a politician says they don't approve of it, they're going to lose their
+next election. That's it. No way out. And therefore every politician agrees
+that interracial marriage is okay, despite the fact that as recently as
+2013, (CITE) 13% of Americans did not approve of marriage between blacks and
+whites.
 
-Governments are vast systems of incredible complexity. It's surprising that
-they work at all, all things considered. That means there are large structural
-forces that prevent people from doing "the right thing."
+At some point, there's no difference between pandering to racists and being a
+racist. And similarly, at some point there's no difference between pandering
+to equal rights and believing in equal rights.
+
+*Votes are the means by which the public keeps a politician's desire for power
+aligned with the public's interests.* Unfortunately, what's best for the
+nation isn't always what the nation wants, but it's the world we live in.
+Someone who doesn't pander for votes is going to lose their election to someone
+who does. And remember, the whole reason people go into politics is because
+they believe they'll do a better job than everyone else running. So yes,
+politicians do things for show and flair rather than substance, because they
+have to.
+
+It does bother me that politicians may be saying things they don't believe
+in, but considering all the upsides of democracy, I'm not too upset about the
+current state of affairs.
+
+
+"You Got More Than You Gave. And I Wanted What I Got."
+====================================================================
+
+Take a bunch of people, all interested in advancing their own agenda. Then
+throw them into a room, and tell them they have to agree on something.
+
+That's what Congress feels like to me. Hence, the second rule of politics:
+no one gets everything they want.
 
 The President has a lot of power, but the President isn't a dictator.
 Similarly, a Congressman or Congresswoman is just one person in the House of
-Representatives. Everyone has their pet issue, and they're not all going to get
-addressed, because some of those pet issues will be in direct conflict to one
-another.
+Representatives. Congress moves slowly, but that's to be expected.
+Governments are huge systems of incredible complexity. All things considered,
+it's suprising they work at all.
 
-Politicians have to balance their personal convictions with the realities of
-the system. If you Stick to your guns and refuse to make concessions, you
-don't get anywhere. Look at what happened to Congress last administration.
+To advance their pet issues, politicians have to balance their personal
+convictions with the realities of government. People who stick to their guns
+and refuse to make concessions tend not to get anything done.
 
-Furthermore, everyone knows this. People liked to complain about Republicans
-blocking Democratic legislation by being obstinate, but it made sense. Stall
-the legislative process, make voters disillusioned by Democratice leadership,
-and win back control of the House in midterm elections. And Democrats know
-this, so they either had to make bigger concessions, or had to paint
-Republicans as do-nothings to hurt their election chances.
+That's not saying stubbornness doesn't have its place in politics. Take Congress
+in the Obama adminstration. I didn't follow Congress very closely (because
+who has the time for that?), but the broad narrative I heard was that
+Republicans were blocking Democratic legislation by being obstinate.
 
-The point is that politics is messy, meandering, filled with off the record
-deals, and you have to learn to navigate this whole mess, or else you're
-not the leader you promised the voters you were going to be. And if you
-don't deliver, you're not getting their votes.
+If you ally yourself with the blue tribe, sure, that sucks. But think about the
+broader picture. Republicans stall the legislative process, making voters
+disillusioned by Democratic leadership. That gives ammunition for Republicans
+to win midterm elections. And Democrats know the clock is ticking on this
+power play, so they now have two options. Make bigger concessions, or gamble
+that painting Republicans as do-nothings will be enough to sway voter
+approval.
+
+Which move was the right one? Or were there other moves they could have made?
+I don't know. The point is that politics is messy, meandering, filled with
+deals and lobbyists, and it's all a part of the game. Politicians have to
+learn how to navigate this mess, or else they're not the leader they promised
+voters they were going to be. And if they don't deliver, they're not getting
+votes.
+
+That means quid pro quo. It means compromise. Advocating for something
+they don't believe in, because they were promised support for a bill they
+care about. Accepting money from lobbyists, because other people are accepting
+money from lobbyists, and they're stuck in the political prisoner's dilemna.
+You become exactly the kind of person you hated as a politically aware
+teenager.
 
 In short, politics is where ideals go to die.
 
