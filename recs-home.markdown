@@ -9,6 +9,8 @@ divided into these subpages.
 
 [Web fiction recommendations](/webfictionrecs/)
 
-[Webcomic recommendations](/webcomicrecs/) 
+[Webcomic recommendations](/webcomicrecs/)
+
+[Touhou music recommendations](/touhoumusicrecs/)
 
 [&larr; Back to home](/)
