@@ -21,9 +21,9 @@ symphony with Latin choir.
 For every genre of music I listen to, I was introduced to that genre through
 Touhou. That isn't a joke. It's fact.
 
-Here are songs I ilke. To keep this list short, every circle gets at
+Here are some songs I like. To keep this list short, every circle gets at
 most one song. Some circles are one hit wonders, and some produce masterpiece
-after masterpiece (looking at you Demetori), but in this they all get
+after masterpiece (looking at you, Demetori), but in this they all get
 equal representation.
 
 
