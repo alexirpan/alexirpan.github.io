@@ -28,7 +28,7 @@ equal representation.
 
 
 -----------------------
-<br>
+<br><a name="top"></a>
 
 * **[IOSYS (Minami) - Nightime Cruising](https://www.youtube.com/watch?v=BOXJqqCPWKo) (rock)**
 
@@ -89,5 +89,7 @@ equal representation.
 * [まぐのす-おぷす- Lunar Clock ~ Luna Dial](https://www.youtube.com/watch?v=f4c9OFqCfFM) (prog metal)
 
 * [Tutti Sound - Charming Domination](https://www.youtube.com/watch?v=2PyfklMQmzY) (symphony)
+
+[back to top](#top)
 
 {% include comments.html %}
