@@ -6,23 +6,28 @@ permalink: /touhoumusicrecs/
 
 *Last updated November 5, 2016*
 
-Touhou is many things. A video game series where poorly drawn magical girls
-shoot bullets at one another. A series of music albums that happens to come
-with a game. An ever-growing universe filled with story potential.
-But what defines Touhou the most is its insanely dedicated fandom. In any
-discussion about fandom, Touhou's fandom is the gold standard.
+Touhou is a video game series where poorly drawn magical girls
+shoot bullets at one another.
 
-I got into Touhou around high school, and never got out of it. What kept me
-invested was the music. There's a vibrant doujin music community all built
-around the Touhou soundtracks. Somehow, a pile of MIDI files inspired
-people to pick up guitars, lay down tracks, and (in one case) hire a
-symphony with Latin choir.
+Touhou is a series of music albums that happens to come with a game.
+
+Touhou is an ever-growing universe filled with untapped story potential.
+
+Touhou is all of those things. But what defines Touhou the most is its
+insane fandom. In any discussion about fandom, Touhou's is the gold standard.
+
+I got into Touhou around high school, and never got out of it. I haven't
+played the games in a while, but I stay for the music.
+Somehow, the original MIDI songs inspired tons of doujin music circles to
+pick up guitars, lay down techno tracks, and in one instance, hire a
+choral symphony. To cover a song from a video game. It's ridiculous and I love
+it.
 
 For every genre of music I listen to, I was introduced to that genre through
-Touhou. That isn't a joke. It's fact.
+Touhou. That's not a joke. It's a fact.
 
-Here are some songs I like. To keep this list short, every circle gets at
-most one song. Some circles are one hit wonders, and some produce masterpiece
+To keep this recs list short(er), every circle gets at most one song.
+Some circles are one hit wonders, and others produce masterpiece
 after masterpiece (looking at you, Demetori), but in this they all get
 equal representation.
 
@@ -30,9 +35,9 @@ equal representation.
 -----------------------
 <br><a name="top"></a>
 
-* **[IOSYS (Minami) - Nightime Cruising](https://www.youtube.com/watch?v=BOXJqqCPWKo) (rock)**
+* **[IOSYS (Minami) - Nighttime Cruising](https://www.youtube.com/watch?v=BOXJqqCPWKo) (rock)**
 
-* **[A1 - Forbidden Child](https://www.youtube.com/watch?v=osK40WMqHYM) (folk, hindi)**
+* **[A1 - Forbidden Child](https://www.youtube.com/watch?v=osK40WMqHYM) (folk, Hindi)**
 
 * [O-Life Japan - The Sealed Away Youkai ~ Lost Place](https://www.youtube.com/watch?v=36dRdM51my8) (folk, orchestral)
 
@@ -62,7 +67,7 @@ equal representation.
 
 * [Shibayan Records - MyonMyonMyonMyonMyonMyon!](https://www.youtube.com/watch?v=zQutTXEQtWc) (trance, vocals)
 
-* [Floating Cloud - The End of the Journey](https://www.youtube.com/watch?v=gSInKRZ4uBg) (folk)
+* [Floating Cloud - The End of the Journey](https://www.youtube.com/watch?v=gSInKRZ4uBg) (folk, Irish)
 
 * [Foreground Eclipse - Flames Within These Black Feathers (non-screaming version)](https://www.youtube.com/watch?v=ASmN8x6sPjc) (metal, vocals)
 
@@ -72,9 +77,9 @@ equal representation.
 
 * [Automata Girl - Cinnamon, Cinnamon!!](https://www.youtube.com/watch?v=POZG7qjrgYo) (vocals, pop)
 
-* [xenoglossy - 3rd Eye Rag](https://www.youtube.com/watch?v=Qj4IYafwuKc) (ragtime)
+* [Xenoglossy - 3rd Eye Rag](https://www.youtube.com/watch?v=Qj4IYafwuKc) (ragtime)
 
-* **[Floods of Sounds - One Night Hell SCreen](https://www.youtube.com/watch?v=T75iD_KlUlA) (piano)**
+* **[吉田未来Project - One Night Hell Screen](https://www.youtube.com/watch?v=T75iD_KlUlA) (piano)**
 
 * [Riverside - Lullaby of Deserted Hell](https://www.youtube.com/watch?v=SQJwuEtRZjw) (vocals, classical)
 
@@ -89,6 +94,18 @@ equal representation.
 * [まぐのす-おぷす- Lunar Clock ~ Luna Dial](https://www.youtube.com/watch?v=f4c9OFqCfFM) (prog metal)
 
 * [Tutti Sound - Charming Domination](https://www.youtube.com/watch?v=2PyfklMQmzY) (symphony)
+
+* [Poplica\* - Ambigu](https://www.youtube.com/watch?v=m9n__F_8Zbc) (folk, Japanese)
+
+* **[=NeutraL= (nazz-can) ボーダーオブライフ ~ Border of Life](https://www.youtube.com/watch?v=UIdDyxbtDhU) (metal)**
+
+* [GYRO Mix - The Bridge People No Longer Cross](https://www.youtube.com/watch?v=kjrOOIUkUno) (piano)
+
+* [いんぷれ。- Reincarnation](https://www.youtube.com/watch?v=mkX-PXSb6sE) (piano)
+
+* **[Sonic Hybrid Orchestra - The Nuclear Fusion](https://www.youtube.com/watch?v=sT-iPx-9B88) (symphonic metal)**
+
+* [UNDEAD CORPORATION - The Dream of a Rabbit Singing in the Night](https://www.youtube.com/watch?v=rw5Si9kNbiw) (vocals, metal)
 
 [back to top](#top)
 
