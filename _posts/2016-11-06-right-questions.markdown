@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Asking The Right Questions: A Story of Failure"
-date:   2016-11-08 01:54:00 -0800
+date:   2016-11-08 02:09:00 -0800
 ---
 
 This is the story of how I didn't get publishable results in time for a
@@ -90,7 +90,7 @@ in reply, but I ignore it.)
 \*\*\*
 {: .centered }
 
-October is month of long hours. I took this job in part to avoid the horror
+October is a month of long hours. I took this job in part to avoid the horror
 stories I kept hearing about work-life balance in grad school, but around
 this time I realize that isn't innate to grad school, it's innate to research.
 
@@ -98,7 +98,7 @@ Like always, there are twists and turns, unexpected issues, the
 works. However, all things considered, progress is surprisingly smooth.
 Every week, I have more to show for my work.
 
-Just one problem. The work isn't fast enough.
+Just one problem. The work isn't coming together fast enough.
 
 One week before the deadline, I make the call - I can't hit ICLR.
 If I did a bunch of research pivots, and got really lucky, maaaaybe I could 
@@ -200,8 +200,9 @@ I know I won't be able to convey all the feelings I want because the barrier
 between reading something and living it is huge. But I do it anyways,
 because I need to do it for me.
 
-In total, I write 1723 words. (That includes the sentences you're reading
-right now.)
+In total, I write 1750 words. (That includes the sentences you're reading
+right now.) I already don't like this post, but I think I've conveyed
+the sentiment to myself well enough that I'm okay releasing it as is.
 
 There will certainly be other failures in my life. But if I get a say, they
 won't be similar this one.
