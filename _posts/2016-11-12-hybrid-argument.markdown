@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction to the Hybrid Argument"
-date:   2016-11-10 09:58:00 -0800
+date:   2016-11-12 18:57:00 -0800
 ---
 
 I was reading through some proofs from imitation learning,
