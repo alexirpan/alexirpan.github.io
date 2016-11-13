@@ -4,25 +4,25 @@ title:  "Introduction to the Hybrid Argument"
 date:   2016-11-10 09:58:00 -0800
 ---
 
-I was reading through a proof from a robotics paper for imitiation learning,
-and realized the proof reminded me of hybrid arguments from cryptography.
+I was reading through some proofs from imitation learning,
+and realized they were reminding me of hybrid arguments from cryptography.
 It's always nice to realize connections between fields, so I figure it was
 worth making a quick guide to how hybrid arguments work.
 
 \*\*\*
 {: .centered }
 
-Hybrid arguments are a proof method, like proof by induction or proof by
-contradiction. Like induction/contradiction, they aren't always enough to
-solve the problem. Also like induction and contradiction, the details differ
+Hybrid arguments are a proof method, like proof by induction. Like induction,
+they aren't always enough to
+solve the problem. Also like induction, the details differ
 on each problem, and filling in those details is the hardest part
-of using the method.
+of each method.
 
 The hybrid argument requires the following.
 
 * We want to compare two objects $$A$$ and $$A'$$.
-* There is a sequence of objects $$A_0, A_2, \cdots, A_n$$ such that $$A_1 = A$$,
-$$A_n = A'$$, and the $$A_i$$ can be seen as an interpolation from $$A_1$$ to $$A_n$$.
+* There is a sequence of objects $$A_0, A_1, \cdots, A_n$$ such that $$A_0 = A$$,
+$$A_n = A'$$, and the $$A_i$$ can be seen as an interpolation from $$A_0$$ to $$A_n$$.
 Intuitively, as $$i$$ increases, $$A_i$$ slowly drifts from $$A$$ to $$A'$$.
 * The difference between two adjacent $$A_i$$ in the interpolation is small.
 
@@ -56,9 +56,10 @@ argument has no power.**
 {: .centered }
 
 This is all very fuzzy, so let's make things more concrete. This problem
-comes from the DAgger paper,
-which proposes an algorithm for imitation learning. (It's since been replaced by
-AGGREVATE, and more recently GAIL.)
+comes from the [DAGGER](https://www.cs.cmu.edu/~sross1/publications/Ross-AIStats11-NoRegret.pdf) paper.
+(Side note: if you're doing imitation learning, DAGGER is a bit old, and
+[AGGREVATE](https://arxiv.org/abs/1406.5979) or [Generative Adversarial Imitation Learning](https://arxiv.org/abs/1606.03476) may be better.)
+
 We have an environment in which agents can act for $$T$$ timesteps. Let $$\pi_E$$
 be the expert policy, and $$\pi$$ be our current policy. Let $$J(\pi)$$ be
 the expected cost of policy $$\pi$$. We want to prove that given the right
@@ -74,41 +75,54 @@ $$
     J(\pi_E) - J(\pi) = J(\pi_0) - J(\pi_T) = \sum_{i=0}^{T-1} J(\pi_i) - J(\pi_{i+1})
 $$
 
-The only difference between $$\pi_i$$ and $$\pi_{i+1}$$ is the action taken at
-timestep $$i+1$$, and how that carries through the rest of the episode.
-The paper then goes on to argue that as long as the environment has no key decision
-where a single wrong move at timestep $$i+1$$ can lead to death, the ability of the
-expert to correct from timestep $$i+1$$ must be similar to its ability to
-correct from timestep $$i$$. Hybrids let us break down reasoning over
+The only difference between $$\pi_i$$ and $$\pi_{i+1}$$ is that in the first, the
+expert takes over after $$i$$ steps, and in the second it takes over after
+$$i+1$$ steps.
+The paper then argues that as long as the environment has no key decision
+where a single wrong move can lead to death, the ability of the
+expert to correct after $$i+1$$ steps must be similar to its ability to
+correct after $$i$$ steps.
+
+This shows why hybrids are useful. They let us break down reasoning over
 $$n$$ steps worth of differences to reasoning about $$n$$ differences of 1 step
 each.
 
 A similar flavor of argument shows up a ton in crypto.
 Very often, we're trying to replace a true source of randomness with something that's
 pseudorandom, and we need to argue that security is still preserved. For
-example, we have $$n$$ PRNGs $$G_1,\cdots,G_n$$, and want to prove that if
-we sample $$n$$ seeds $$s_i$$ independetly, the function
+example, we have $$n$$ PRNGs $$G_1,\cdots,G_n$$, and $$n$$ independently sampled
+seeds $$s_i$$. Suppose we concatenated the $$n$$ inputs and $$n$$ outputs
+together to get the function
 
 $$
    G'(s_1s_2\cdots s_n) = G_1(s_1)G_2(s_2)G_3(s_3)\cdots G_n(s_n)
 $$
 
-is itself a PRNG. The hybrids $$H_i$$ would be functions that use only the first
-$$i$$ PRNGs, with true randomness for the rest. Note that $$H_0$$ is a truly
-random function, and $$H_n = G'$$. Arguing that the difference between each $$H_i$$
-is small enough suffices to show $$G'$$ is a PRNG, because we only need $$n$$
-small steps to go from the fully random $$H_0$$ to the desired function $$G'$$.
+We want to show $$G'$$ is still a PRNG.
+
+Here, the hybrids are functions $$H_i$$, where $$H_i$$ uses
+the first $$i$$ PRNGs and uses true randomness for the remaining $$n-i$$
+blocks of bits. This makes $$H_0$$ truly random and $$H_n = G'$$.
+If the difference between $$H_0$$ and $$H_n$$ is small, $$G'$$'s
+output is close to truly random, which would show $$G'$$ is a PRNG. This
+leaves arguing that switching from $$H_i$$ to $$H_{i+1}$$ (switching
+the $$(i+1)$$th block of bits from true random to $$G_{i+1}$$) doesn't
+change things enough to break security.
 
 \*\*\*
 {: .centered }
 
-These aren't the greatest examples. Like with many things, hybrid
+Like with many things, hybrid
 arguments are something that you have to actually do to really understand. And
-I don't have a library of problems off the top of my head.
+I don't have a library of hybrid problems off the top of my head. That being said,
+I think it's useful to know what they are and roughly how they work.
+Proof methods are only as useful as your ability to recognize when they might apply,
+and it's hard to recognize something if you don't know it exists.
 
-However, I think it's useful to keep in mind. Whenever you have two objects
-and a reasonable interpolation, it's worth thinking about bounds on adjacent
-terms in the interpolation. And whenever you only know how to bound the
-difference between two similar objects, it's worth thinking about whether you
-can chain that difference together by building an appropriate sequence.
+Whenever you have two objects and a reasonable interpolation between them,
+it's worth thinking about whether you can bound the difference between adjacent
+terms. And whenever you know how to bound the difference between two similar
+objects, it's worth thinking about whether you can build an appropriate
+sequence that lets you chain those differences into a conclusion about
+objects further apart.
 
