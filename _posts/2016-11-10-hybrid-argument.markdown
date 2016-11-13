@@ -38,9 +38,9 @@ $$
         f(A_{n-2})\right) + \cdots + \left(f(A_2) - f(A_1)\right)
 $$
 
-Man, I love telescoping series. There's a sense of elegance in how all the
+(Man, I love telescoping series. There's a sense of elegance in how all the
 terms cancel just right. Although in this case, instead of cancelling terms,
-we're reintroducing them.
+we're reintroducing them.)
 
 This reduces bounding the difference $$f(A^*) - f(A)$$ to bounding the sum
 of differences $$f(A_{i+1}) - f(A_i)$$.
@@ -61,29 +61,38 @@ here.
 Much like induction, this forms the shell of the proof, and it's up to the
 prover to provide the details to carry the argument through.
 
-Some examples. First, a simple crypto example. Suppose we have a collection
-of pseudorandom number generators $$G_1, G_2, G_3,\cdots, G_n$$. Prove that if
-each PRNG $$G_1$$ is seeded independently with seed $$s_i$$, then the concatenated
-output
+Some examples. First, a simple crypto example.
 
-$$
-    G_1(s_1)|G_2(s_2)|G_3(s_3)|\cdots|G_n(s_n)
-$$
+> We have $$n$$ pseudorandom number generators $$G_1, G_2, G_3,\cdots, G_n$$.
+> Prove that if each PRNG $$G_1$$ is seeded independently with seed $$s_i$$, the
+> concatenated output
+>
+> $$
+>    G_1(s_1)|G_2(s_2)|G_3(s_3)|\cdots|G_n(s_n)
+> $$
+>
+> is itself pseudorandom.
 
-is itself pseudorandom.
-
-Construct hybrids $$H_i$$, where $$H_i$$ uses the first $$i$$ PRNGs, and uses
-true randomness for the rest. (By convention, we'll use $$\$$$ for truly random
-data.
+we prove this with a hybrid argument. Define a sequence $$\{H_i\}$$, where
+$$H_i$$ uses only the first $$i$$ PRNGs and uses truly random bits for the rest.
 
 $$
     H_i = G_1(s_1)|\cdots|G_i(s_i)|\$|\$|\cdots|\$
 $$
 
+(By convention, we use $$\$$$ for true random.) When defined this way, $$H_0$$
+is truly random, $$H_n$$ uses all $$n$$ PRNGs $$G$$, and ones in between replace
+more random bits with pseudorandom bits. When going from $$H_i$$ to
+$$H_{i+1}$$, the only difference is that the $$(i+1)$$th block of bits changes
+from true random to pseudorandom $$G_{i+1}(s_{i+1})$$.
+This then lets you use a proof by contradiction. If $$H_n$$ was not pseudorandom,
+there must be a measure difference from $$H_n$$ and $$H_0$$. FIX THIS EXPLANATION
 
 
-ThiThis is all very abstract, so let's get into examples. Here's the problem that
-inspired this blog post.
+Now, the lemma that inspired this blog post. This comes from the DAgger paper,
+which proposes an algorithm for imitation learning. (It's since been replaced by
+AGGREVATE, and more recently GAIL)
+
 
 > We have an environment in which agents can act for $$T$$ timesteps. This
 > environment is an MDP, meaning the next state only depends on the current
@@ -94,10 +103,23 @@ inspired this blog post.
 
 Let $$J(\pi)$$ be the expected cost of policy $$\pi$$. To bound $$J(\pi^*) -
 J(\pi)$$, we first construct a sequence of policies $$\{\pi_i\}$$. Let
-$$\pi_i$$ be the policy where we follow $$\pi$$ for $$T - i$$ timesteps, then
-follow $$\pi^*$$ for the remaining timesteps. Note that $$\pi_0 = \pi$$
-and $$\pi_T = \pi^*$$. We now have
+$$\pi_i$$ be the policy where we follow $$\pi$$ for the first
+$$T - i$$ timesteps, then follow $$\pi^*$$ for the remaining timesteps.
+This gives $$\pi_0 = \pi$$ and $$\pi_T = \pi^*$$. The telescoping trick
+gives
 
 $$
     J(\pi^*) - J(\pi) = \sum_{i=1}^T J(\pi_i) - J(\pi_{i-1})
+$$
+
+Considering just one term, note that the first $$i-1$$ steps between
+$$\pi_i$$ and $$\pi_{i-1}$$ are the same. Because the environment is
+an MDP, $$J(\pi_i) - J(\pi_{i-1})$$ becomes the difference between
+letting $$\pi^*$$ take over after $$i-1$$ steps, or letting $$\pi$$ make
+one choice, then letting the expert take over. The rest of the argument
+focuses on environments where the expert can correct from taking a single
+unoptimal action.
+
+$$
+
 $$
