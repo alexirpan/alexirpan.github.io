@@ -13,81 +13,101 @@ worth making a quick guide to how hybrid arguments work.
 {: .centered }
 
 Hybrid arguments are a proof method, like proof by induction or proof by
-contradiction. Like induction/contradiction, the details will differ between
-problems, and solving those details is often the hardest part of the proof.
+contradiction. Like induction/contradiction, they aren't always enough to
+solve the problem. Also like induction and contradiction, filling in the
+details of the argument is the hardest part of the proof.
 
-The hybrid argument may apply when we have the following.
+The hybrid argument requires the following.
 
-* We have two objects $$A$$ and $$A^*$$.
+* We want to compare two objects $$A$$ and $$A'$$.
 * There is a sequence of objects $$A_1, A_2, \cdots, A_n$$ such that $$A_1 = A$$,
-$$A_n = A^*$$, and each $$A_i$$ can be made by interpolating from $$A_1$$ to $$A_n$$
+$$A_n = A'$$, and each $$A_i$$ can be made by interpolating from $$A_1$$ to $$A_n$$
 in some way. Intuitively, as $$i$$ increases, $$A_i$$ slowly shifts from
 $$A_1$$ to $$A_n$$.
-* We have a function $$f$$ that acts on these objects.
-* We want to bound the difference between $$f(A)$$ and $$f(A^*)$$.
+* The difference between two adjacent $$A_i$$ is small.
 
-Difference does not necessarily mean subtraction, but for simplicity let's assume
-it does mean subtraction and $$f$$ is a function that always returns real
-numbers. To continue the proof, we use one of my favorite tricks - rewrite the
-term as a telescoping series.
+For concreteness, let's assume there's a function $$f$$ and we're trying to
+bound $$f(A) - f(A')$$. Rewrite this difference as a telescoping series.
 
 $$
-    f(A^*) - f(A)
-        = f(A_n) - f(A_1)
-        = \left(f(A_n) - f(A_{n-1})\right) + \left(f(A_{n-1}) -
-        f(A_{n-2})\right) + \cdots + \left(f(A_2) - f(A_1)\right)
+    f(A) - f(A') = f(A_1) - f(A_n) = \sum_{i=1}^{n-1} \left(f(A_i) - f(A_{i+1})\right)
 $$
 
-(Man, I love telescoping series. There's a sense of elegance in how all the
-terms cancel just right. Although in this case, instead of cancelling terms,
-we're reintroducing them.)
+Every term in the sum cancels, except for the starting $$f(A_1)$$ and
+the ending $$-f(A_n)$$. (Man, I love telescoping series. There's something
+elegant about how it all cancels out. Although in this case, we're adding
+more terms instead of removing them.)
 
-This reduces bounding the difference $$f(A^*) - f(A)$$ to bounding the sum
-of differences $$f(A_{i+1}) - f(A_i)$$.
+This reduces bounding $$f(A) - f(A')$$ to bounding the sum of $$f(A_i) - f(A_{i+1})$$.
+Now recall the difference adjacent $$A_i$$ are small. And that's it!
+Really, there are only two tricks to the argument.
 
-Why does this help? The intuition is that if you can construct a nice
-enough sequences $$A_1,A_2,\cdots,A_n$$, reasoning about the difference
-between two adjacent terms is much easier. In fact, a useful hybrid argument
-basically requires that $$A_i$$ and $$A_{i+1}$$ differ in a nice, explainable
-way. Otherwise, you aren't getting any power out of this rearrangement.
+* Creating a sequence $$\{A_i\}$$ with small enough differences.
+* Applying the telescoping trick to use those differences.
 
+**It's very important that there's both a reasonable interpolation and the
+distance between interpolated objects is small. Without both these points, the
+argument has no power.**
 
-Once you bound the difference, that's it! Really, there are only two tricks
-here.
+The hybrid argu
+To make this concrete, I'll give two examples, one from crypto and one from
+statistical learning theory. First, the crypto example. A deterministic function $$G$$
+is a pseudorandom number generator (PRNG) if it is hard to tell $$G(s)$$
+apart from true random.
 
-* Creating a sequence $$\{A_i\}$$ that acts the way you want it to.
-* Noticing the telescoping trick to expand out the difference.
-
-Much like induction, this forms the shell of the proof, and it's up to the
-prover to provide the details to carry the argument through.
-
-Some examples. First, a simple crypto example.
-
-> We have $$n$$ pseudorandom number generators $$G_1, G_2, G_3,\cdots, G_n$$.
-> Prove that if each PRNG $$G_1$$ is seeded independently with seed $$s_i$$, the
-> concatenated output
+> We have $$n$$ pseudorandom number generators (PRNGs) $$G_1, G_2, G_3,\cdots, G_n$$.
+> Let $$s = s_1s_2\cdots s_n$$ be the concatenation of $$n$$ independently sampled
+> random seed. Prove
 >
 > $$
->    G_1(s_1)|G_2(s_2)|G_3(s_3)|\cdots|G_n(s_n)
+>    G'(s) = G_1(s_1)G_2(s_2)G_3(s_3)\cdots G_n(s_n)
 > $$
 >
-> is itself pseudorandom.
+> is also a PRNG.
 
-we prove this with a hybrid argument. Define a sequence $$\{H_i\}$$, where
-$$H_i$$ uses only the first $$i$$ PRNGs and uses truly random bits for the rest.
+We prove this with a hybrid argument. Let $$f(G)$$ be
 
 $$
-    H_i = G_1(s_1)|\cdots|G_i(s_i)|\$|\$|\cdots|\$
+    f(G) = \text{the difference between}\, G(s) \,\text{and random, where}\,s\,\text{is random}
 $$
 
-(By convention, we use $$\$$$ for true random.) When defined this way, $$H_0$$
-is truly random, $$H_n$$ uses all $$n$$ PRNGs $$G$$, and ones in between replace
-more random bits with pseudorandom bits. When going from $$H_i$$ to
-$$H_{i+1}$$, the only difference is that the $$(i+1)$$th block of bits changes
-from true random to pseudorandom $$G_{i+1}(s_{i+1})$$.
-This then lets you use a proof by contradiction. If $$H_n$$ was not pseudorandom,
-there must be a measure difference from $$H_n$$ and $$H_0$$. FIX THIS EXPLANATION
+Crypto convention is to use $ for randomness. By definition, $$f(\$) = 0$$, and
+for any PRNG $$G$$, $$f(G)$$ is small. (I don't want to get into the details
+of how you precisely define "difference" here, because the details aren't the
+point of this blog post. If you're curious, there are a lot of crypto lecture
+notes on the internet.)
 
+We want to prove $$f(G')$$ is small. This is where the hybrid argument comes
+in. Since $$f(\$) = 0$$, proving $$f(G')$$ is small is equivalent to proving $$f(G') - f(\$)$$ is
+small. Define hybrids $$H_0, \cdots, H_n$$, where
+
+$$
+    H_i(s) = G_1(s_1)G_2(s_2)\cdots G_i(s_i)\$\$\cdots\$
+$$
+
+Or in words, $$H_i$$ uses the first $$i$$ PRNGs, then switches to pure random
+for the rest. When defined this way, $$H_0$$ is true random, and $$H_n = G'$$.
+Write the difference as
+
+$$
+    f(G') - f(\$) = \sum_{i=0}^n f(H_{i+1}) - f(H_i)
+$$
+
+Now, consider the difference between $$H_{i+1}$$ and $$H_i$$.
+
+$$
+    H_i(s) = G_1(s_1)\cdots G_i(s_i)\$\$\$\cdots
+$$
+
+$$
+    H_{i+1}(s) = G_1(s_1)\cdots G_i(s_i)G_{i+1}(s_{i+1})\$\$\cdots
+$$
+
+The only difference is at the $$(i+1)$$th block of bits, where we replace
+true random with $$G_{i+1}(s_{i+1})$$. Because $$G_{i+1}$$ is given to be a PRNG,
+the difference
+is a PRNG. Therefore, the difference $$f(H_{i+1}) - f(H_i)$$ is small. This
+completes the (handwavey) proof. $$\blacksquare$$
 
 Now, the lemma that inspired this blog post. This comes from the DAgger paper,
 which proposes an algorithm for imitation learning. (It's since been replaced by
@@ -97,7 +117,7 @@ AGGREVATE, and more recently GAIL)
 > We have an environment in which agents can act for $$T$$ timesteps. This
 > environment is an MDP, meaning the next state only depends on the current
 > state and action. Let $$C(s,a)$$ be the cost of taking action $$a$$ in
-> state $$s$$. Let $$\pi$$ be our current policy, and let $$\pi^*$$ be the
+> state $$s$$. Let $$\pi$$ be our current policy and $$\pi^*$$ be the
 > expert policy we are trying to imitate. Bound the expected difference in cost
 > between using $$\pi$$ and using $$\pi^*$$.
 
