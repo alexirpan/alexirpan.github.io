@@ -49,7 +49,54 @@ Really, there are only two tricks to the argument.
 distance between interpolated objects is small. Without both these points, the
 argument has no power.**
 
-The hybrid argu
+I know this is all very fuzzy, so let's make things more concrete. This problem
+comes from the DAgger paper,
+which proposes an algorithm for imitation learning. (It's since been replaced by
+AGGREVATE, and more recently GAIL.)
+We have an environment in which agents can act for $$T$$ timesteps. Let $$\pi_E$$
+be the expert policy, and $$\pi$$ be our current policy. Let $$J(\pi)$$ be
+the expected cost of policy $$\pi$$. We want to prove that given the right
+assumptions, $$J(\pi)$$ will be close to $$J(\pi_E)$$ by the end of training.
+
+This is done with hybrids.
+Define $$\pi_i$$ as the policy which follows $$\pi$$ for $$i$$
+timesteps, then follows $$\pi_E$$ for the remaining $$T-i$$ timesteps. Note
+$$\pi_0 = \pi_E$$ and $$\pi_T = \pi$$.
+The telescoping trick gives
+
+$$
+    J(\pi_E) - J(\pi) = J(\pi_0) - J(\pi_T) = \sum_{i=0}^{T-1} J(\pi_i) - J(\pi_{i+1})
+$$
+
+The only difference between $$\pi_i$$ and $$\pi_{i+1}$$ is the action taken at
+timestep $$i+1$$, and how that carries through the rest of the episode.
+The paper then goes on to argue that as long as the environment has no key decision
+where a single wrong move at timestep $$i+1$$ can lead to death, the ability of the
+expert to correct from timestep $$i+1$$ must be similar to its ability to
+correct from timestep $$i$$. Hybrids let us break down reasoning over
+$$n$$ steps worth of differences to reasoning about $$n$$ differences of 1 step
+each.
+
+A similar flavor of argument shows up a ton in crypto.
+Very often, we're trying to replace a true source of randomness with something that's
+pseudorandom, and we need to argue that security is still preserved. For
+example, we have $$n$$ PRNGs $$G_1,\cdots,G_n$$, and want to prove that if
+we sample $$n$$ seeds $$s_i$$ independetly, the function
+
+$$
+   G'(s_1s_2\cdots s_n) = G_1(s_1)G_2(s_2)G_3(s_3)\cdots G_n(s_n)
+$$
+
+is itself a PRNG. The hybrids $$H_i$$ would be functions that use only the first
+$$i$$ PRNGs, with true randomness for the rest. Note that $$H_0$$ is a truly
+random function, and $$H_n = G'$$. Arguing that the difference between each $$H_i$$
+is small enough suffices to show $$G'$$ is a PRNG, because we only need $$n$$
+small steps to go from the fully random $$H_0$$ to the desired function $$G'$$.
+
+
+In this example, the function $$f$$ would be a measure of
+how hard it is to distinguish 
+
 To make this concrete, I'll give two examples, one from crypto and one from
 statistical learning theory. First, the crypto example. A deterministic function $$G$$
 is a pseudorandom number generator (PRNG) if it is hard to tell $$G(s)$$
