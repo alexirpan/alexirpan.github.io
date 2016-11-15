@@ -4,21 +4,22 @@ title: Research
 permalink: /research/
 ---
 
-*Last updated June 11, 2016.*
+*Last updated November 14, 2016.*
 
 This is not a standard research page.
 
 Due to confidence issues, I didn't apply to PhD programs senior year.
 My more complete reasoning is in this [blog post]({% post_url 2016-01-03-grad-school %}).
 
-The research I've done hasn't led to publishable results, but it's
-not nothing. I'm still proud of it, and want to share it, in the off chance
-someone finds it neat.
+My current research area is transfer for robotics and deep reinforcement
+learning. Broadly, I'm interested in ways to use pretrained policies to
+train new policies with fewer samples. My current theory is that this requires
+automatically learning a shared structure/factor common to several tasks, and
+my current research is focused on ways to learn and utilize those
+shared factors.
 
-(I'm also applying to the [CFAR for ML researchers workshop](http://rationality.org/cfar-for-ml-researchers/),
-which requires a CV or CV-equivalent. If you're from CFAR - hello! Don't worry, the fourth
-wall of the Internet will save you from getting infected by my weirdness. Relax, and
-enjoy the show.)
+The research I did in undergrad didn't lead to publishable results, but
+I'm still proud of it. Hopefully you'll find it neat.
 
 Project list:
 
@@ -40,7 +41,7 @@ Poster (click for full size):
 
 [![Poster](/public/research/posterimage.png)](/public/research/poster.pdf)
 
-NIPS submission (in review but almost certain rejection): [PDF](/public/research/nips_2016.pdf)
+NIPS submission (rejected, and I never expected acceptance): [PDF](/public/research/nips_2016.pdf)
 
 Code: [GitHub](https://github.com/alexirpan/rubik_research)
 
