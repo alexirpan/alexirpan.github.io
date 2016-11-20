@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Quaternary Park"
+title:  "Cenozoic Park"
 date:   2016-07-10 16:14:00 -0700
 ---
 
@@ -63,6 +63,15 @@ the dinosaur POV, you're making the dinosaur side more sympathetic. It'll be
 more thought provoking (LOL AS IF) if you go from the side of the group in
 captivity.)
 
+Potential ideas:
+    - Captive humans complain about tokenism
+    - Argument that humans wouldn't exist without dinosaurs
+        - "We took the Earth from them."
+    - Imply human-level extinction event.
+    - Inspired by The Crash - prior knowledge used to bootstrap dinosaur development
+    - Holding sentient beings captive vs being the reason those beings exist
+    at all
+
 "Hey. Hey! Hey everybody! New guy out of the lab!"
 
 A man groggily opens his eyes. He looks up at the ceiling. It's made of
@@ -91,7 +100,7 @@ meters long. InGen hired him straight out of his PhD."
 
 The woman whistles. "Stegosauraus. Lucky bastard. What'd he like to talk about?"
 
-Fred shrugged. "Mostly day to day things. And marvelling at all the money he was
+"Mostly day to day things. And marvelling at all the money he was
 earning, now that he wasn't a grad student."
 
 "I had a raptor in charge of me,
@@ -101,4 +110,16 @@ about all the plays people were making against him, and the ways he was trying
 to defend against it. Eventually I had to tell him to figure out a different
 conversation topic. Hearing about all the times he thought I was going to get
 terminated because of funding issues wasn't great for my psyche. Oh! But where
-are my manners! I'm Cassandra. Behind me is Jordan. On my left is 
+are my manners! I'm Cassandra. Behind me is Jordan. He's Dave, she's Dorothy."
+
+They shake hands. "Well, I'll remember all those names for ten minutes at best."
+
+Jordan laughs. "You'll pick it up. This is your home now."
+
+Fred stops. "And where, exactly, is home?"
+
+A loud screech from a speaker above him answers for him.
+
+**"The park is now open. Welcome, to Cenozoic Park."**
+
+\*\*\*
