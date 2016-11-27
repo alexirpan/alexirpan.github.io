@@ -4,45 +4,81 @@ title:  "Welcome to the Illuminati"
 date:   2016-07-10 16:14:00 -0700
 ---
 
-(Figure out the format later, get the text first.)
 
+**From:** recruitment@shellstone.com  
+**To:** rainforest@gmail.com  
+**Subject:** Congratulations!
 
-We've heard that you signed our offer. We'd like to be the first to welcome you
-to the Illuminati! Working for this organization is an experience like no other.
+After reviewing your interview feedback, we're proud to extend you an offer
+to join the Illuminati! Our offer letter is attached. **Please make a decision
+within the next 2 weeks.**
 
-We know your official start date is a month from now, but to speed-up the
-onboarding process (and leave room for the fun stuff, like confirming which
-theories are true and which are false), here's what you need to do before
-orientation.
+You are free to discuss this offer with other people, but **do not tell them
+it is an offer from the Illuminati.** If pressed, you can say it's an offer from
+a Silicon Valley startup in stealth mode.
 
-* Familiarize yourself with common privacy techniques, like PGP, Tor,
-and browser fingerprints. Now that you work for the Illuminati, assume the
-NSA is actively looking for you. (We have contacts in the NSA to make sure
-they aren't, but the NSA is now the least of your worries.) We don't expect
-employees to get everything right, so just do your best. At orientation time
-we'll patch the gaps.
+If you have any questions or concerns about the offer, let us know!
 
-* Once you feel sufficiently secure, sign up on the Official Illuminati forums,
-linked here. All communication from henceforth will be done through either
-the forums or our internal chat client.
-**For your username, do not use your real name, or the names of any
-of your existing online personas.**
-Doing so or encouraging others to do so is grounds for termination.
+■
+{: .centered }
 
-* Once you have created an account and had it verified by your referrer (in
-your case, this is SilentNight), you'll have level 0 security clearance.
+**Dulcet:** hey, how've you've been?  
+**Rainforest:** hey. Alright, I guess. Still making a decision on that
+offer I was talking about  
+**Dulcet:** holy shit how many times have we gone over this? JUST TAKE THE OFFER  
+**Rainforest:** not that simple  
+**Dulcet:** okay look, I get that there are a bunch of reasons not to take it  
+**Dulcet:** but from what you've been able to tell me, it sounds amazing  
+**Dulcet:** and I think if you don't take that offer, you'll be wondering for
+the rest of your life  
+**Dulcet:** it sounds like a once in a lifetime chance. You don't pass those up.
+**Rainforest:** I'll think about it.
+
+■
+{: .centered }
+
+**From:** recruitment@shellstone.com  
+**To:** rainforest@gmail.com  
+**Subject:** Re: Congratulations!
+
+We've heard that you signed our offer. Congratulations!
+
+Your official start date is a month from now, but to speed-up the
+onboarding process, do the following before orientation.
+
+* Familiarize PGP, Tor, browser fingerprints, and other parts of computer
+security. Start using these services in your everyday life.
+As an Illuminati employee, you are now the target for a wide variety
+of actors. Our rule of thumb is, assume the NSA is looking for you, and act
+accordingly. (The NSA shouldn't be looking for you thanks to our contacts,
+but let's just say we aren't the only secret society in the world.)
+
+* Create an account on the Official Illuminati forums. An agent will deliver
+the URL in person sometime in the next person.
+All communication from now will be done through the Illuminati forum.
+**For your username, do not use anything tied to your real name, or the
+names of any of your existing online accounts.**
+Doing so is grounds for termination of your employment.
+
+* Upon doing so, you'll have level 0 security clearance.
 This gives you the minimal access required to access the employee
 handbook and the new employee subforum. Your clearance will increase to
 level 1 after your orientation.
-Subforums outside of your clearance will not be displayed.
-**Subforums will display the clearance needed to access them. Posting
-content above this clearnace is grounds for termination.** This is the
-most common way people leave the organization - be very, very careful.
 
-If you have further questions, send a PM or start a chat with SilentNight.
+Your orientation mentor is *SilentNight*. If you have further questions,
+send a PM or start a chat with SilentNight after completing the sign-up procedure.
 
-Welcome to the Illuminati! Companies like to say they're going to change
-the world, but at the Illuminati, we mean it.
+From here on out, we will no longer reply to emails from this address.
 
+Lastly, welcome to the Illuminati! We know many companies say they're changing
+the world or making it a better place, but at the Illuminati, we mean it.
 
-\* \* \*
+■
+{: .centered }
+
+QwerG: That finishes everything I wanted to cover. I'm restoring chat privileges
+to everyone else, and opening the floor to questions. (Note your messages are
+going through a moderator queue before getting displayed, so your reply may
+show up a bit late.
+
+NAME1: 
