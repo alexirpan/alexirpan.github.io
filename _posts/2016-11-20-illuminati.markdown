@@ -49,7 +49,7 @@ We've heard that you signed our offer. Congratulations!
 Your official start date is a month from now, but to speed-up the
 onboarding process, do the following before orientation.
 
-* Familiarize PGP, Tor, browser fingerprints, and other parts of computer
+* Familiarize yourself with PGP, Tor, browser fingerprints, and other parts of computer
 security. Start using these services in your everyday life.
 As an Illuminati employee, you are now the target for a wide variety
 of actors. Our rule of thumb is, assume the NSA is looking for you, and act
@@ -91,18 +91,52 @@ process so I think you have my old address, should I send you my new one?
 {: .centered }
 
 
-**From:** SilentNight@shellstone.com  
-**To:** rainforest@gmail.com  
+**From:** SilentNight@gmail.com  
+**To:** rainforest@shellstone.com  
 **Subject:** Re: Congratulations!
 
 Don't worry about it, we know you moved and already have your new address.
-Watch out for that agent! They always troll the new hires a little bit.
+Keep an eye out for that agent! They like to troll the new hires.
 
 ■
 {: .centered }
 
+**From:** rainforest@shellstone.com  
+**To:** SilentNight@gmail.com  
+**Subject:** Agent came today
+
+JESUS
+
+■
+{: .centered }
+
+**From:** SilentNight@gmail.com  
+**To:** rainforest@shellstone.com  
+**Subject:** Re: Agent came today
+
+hahahahhahahahhaha
+
+(Now that you have forum access, use PMs to contact me.
+Disabling this email account.)
+
+■
+{: .centered }
+
+![Eye of Providence](/public/illuminati/eye.jpg)
+{: .centered }
+
+**The Illuminati**
+
+Hello **Tundra**  
+Total time logged in: 0 days, 0 hours, and 4 minutes
+
+**Illuminati Forum > New Employees (level 0) > How did the agent troll you?**
+
+
+
+
 QwerG: That finishes everything I wanted to cover. I'm restoring chat privileges
-to everyone else, and opening the floor to questions. (Note your messages are
+to everyone else, and openingshthe floor to questions. (Note your messages are
 going through a moderator queue before getting displayed, so your reply may
 show up a bit late.
 
