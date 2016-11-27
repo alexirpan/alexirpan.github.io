@@ -16,7 +16,7 @@ to join the Illuminati! Our offer letter is attached. **Please make a decision
 within the next 2 weeks.**
 
 You are free to discuss this offer with other people, but **do not tell them
-it is an offer from the Illuminati.** If pressed, you can say it's an offer from
+it is an offer from the Illuminati.** If pressed, tell them it's an offer from
 a Silicon Valley startup in stealth mode.
 
 If you have any questions or concerns about the offer, let us know!
@@ -33,7 +33,7 @@ offer I was talking about
 **Dulcet:** but from what you've been able to tell me, it sounds amazing  
 **Dulcet:** and I think if you don't take that offer, you'll be wondering for
 the rest of your life  
-**Dulcet:** it sounds like a once in a lifetime chance. You don't pass those up.
+**Dulcet:** it sounds like a once in a lifetime chance. You don't pass those up.  
 **Rainforest:** I'll think about it.
 
 ■
@@ -105,7 +105,7 @@ Keep an eye out for that agent! They like to troll the new hires.
 **To:** SilentNight@gmail.com  
 **Subject:** Agent came today
 
-JESUS
+JESUS I WASN'T READY FOR THAT
 
 ■
 {: .centered }
@@ -116,8 +116,8 @@ JESUS
 
 hahahahhahahahhaha
 
-(Now that you have forum access, use PMs to contact me.
-Disabling this email account.)
+(Now that you have forum access, I'm disabling this account. Send me a PM
+if you need help.)
 
 ■
 {: .centered }
@@ -130,14 +130,101 @@ Disabling this email account.)
 Hello **Tundra**  
 Total time logged in: 0 days, 0 hours, and 4 minutes
 
-**Illuminati Forum > New Employees (level 0) > How did the agent troll you?**
+**Illuminati Forum > Newcomers (level 0) > How did the agent troll you?**
 
+**AdminBot** (beep boop)
 
+Share your onboarding story here. How did they deliver forum access to you?
 
+**\> Tonne** (New Hire)
 
-QwerG: That finishes everything I wanted to cover. I'm restoring chat privileges
-to everyone else, and openingshthe floor to questions. (Note your messages are
-going through a moderator queue before getting displayed, so your reply may
-show up a bit late.
+I was planting tulips in my garden. Dug out a hole to place the tulip, and found
+a buried capsule with a piece of paper in it.
 
-NAME1: 
+**\> Heliotrope** (New Hire)
+
+Went out for a jog, accidentally bumped into somebody, found the note in my
+pocket aftewards. Guess that accident wasn't an accident after all.
+
+**\> PPP** (New Hire)
+
+Got a package from Amazon that I didn't order. Box had a giant Matryoskha doll.
+Turns out the bottom level was rigged with firecrackers,
+set to go off when opened. After I finished freaking out I found the contact info
+inside.
+
+**\> Tundra** (New Hire)
+
+That doesn't sound nearly as bad as what happened to me.
+
+**\> QwerG** (Onboarding Team)
+
+> Quote from: Tundra  
+> ------------------------------
+> &nbsp;&nbsp;That doesn't sound nearly as bad as what happened to me.
+
+You wouldn't believe how proud I was when I came up with that idea. Glad it
+worked as well as I hoped :)
+
+**\> Tundra** (New Hire)
+
+> Quote from: QwerG  
+> ------------------------------
+> &nbsp;&nbsp;Quote from: Tundra  
+> ------------------------------
+> &nbsp;&nbsp;&nbsp;&nbsp;That doesn't sound nearly as bad as what happened to me.
+>
+> You wouldn't believe how proud I was when I came up with that idea. Glad it
+> worked as well as I hoped :)
+
+At least one of us is happy :(
+
+■
+{: .centered }
+
+**New Hire Orientation**
+
+**QwerG:** Hi all! Welcome to your Illuminati orientation. Can you send a message
+if you're here?
+
+**Tundra:** here
+
+**Tonne:** yep
+
+**Heliotrope:** yo
+
+**PPP:** here
+
+**QwerG:** And that's everyone. Now, you probably noticed there a delay between
+sending your message and it getting displayed. That's because all your messages
+go through a moderation queue. This lets us control who gets to talk when.
+
+**QwerG:** I have to cover, so let's get going.
+
+**QwerG:** For starters, I have a video for all of you.
+
+(*Four hours later*)
+
+**QwerG:** Let's adjourn for a lunch break. I've disabled chat moderation. Be back
+here within an hour.
+
+(Direct Message request from Heliotrope)
+
+**Direct Message: Heliotrope**
+
+**Heliotrope:** What crap.
+
+**Tundra:** lol
+
+**Tundra:** I mean, what did you expect?
+
+**Heliotrope:** I took this job because I was tired of corporate bullshit. I
+didn't expect secret organizations to have corporate bullshit too.
+
+**Tundra:** bullshit is everywhere
+
+**Tundra:** there's no escape
+
+**Heliotrope:** Look I get that but maybe I wanted just a little bit less bullshit.
+I mean, did you see that video? Do you think QwerG even believes it?
+
