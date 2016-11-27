@@ -4,6 +4,8 @@ title:  "Welcome to the Illuminati"
 date:   2016-07-10 16:14:00 -0700
 ---
 
+(Dates are missing because I haven't figured out what timeline I want
+yet.)
 
 **From:** recruitment@shellstone.com  
 **To:** rainforest@gmail.com  
@@ -39,6 +41,7 @@ the rest of your life
 
 **From:** recruitment@shellstone.com  
 **To:** rainforest@gmail.com  
+**CC:** SilentNight@shellstone.com  
 **Subject:** Re: Congratulations!
 
 We've heard that you signed our offer. Congratulations!
@@ -54,7 +57,7 @@ accordingly. (The NSA shouldn't be looking for you thanks to our contacts,
 but let's just say we aren't the only secret society in the world.)
 
 * Create an account on the Official Illuminati forums. An agent will deliver
-the URL in person sometime in the next person.
+the URL and authentication details in person sometime in the next two days.
 All communication from now will be done through the Illuminati forum.
 **For your username, do not use anything tied to your real name, or the
 names of any of your existing online accounts.**
@@ -65,13 +68,35 @@ This gives you the minimal access required to access the employee
 handbook and the new employee subforum. Your clearance will increase to
 level 1 after your orientation.
 
-Your orientation mentor is *SilentNight*. If you have further questions,
-send a PM or start a chat with SilentNight after completing the sign-up procedure.
+Your orientation mentor is *SilentNight*, who has been CCed on this email.
+You can direct further questions to SilentNight. He/she is here to help.
 
-From here on out, we will no longer reply to emails from this address.
+From here on out, we will no longer reply to emails sent to
+recruitment@shellstone.com.
 
 Lastly, welcome to the Illuminati! We know many companies say they're changing
 the world or making it a better place, but at the Illuminati, we mean it.
+
+■
+{: .centered }
+
+**From:** rainforest@gmail.com  
+**To:** SilentNight@shellstone.com  
+**Subject:** Re: Congratulations!
+
+Hey, I just finished moving two days ago. I did this after the interview
+process so I think you have my old address, should I send you my new one?
+
+■
+{: .centered }
+
+
+**From:** SilentNight@shellstone.com  
+**To:** rainforest@gmail.com  
+**Subject:** Re: Congratulations!
+
+Don't worry about it, we know you moved and already have your new address.
+Watch out for that agent! They always troll the new hires a little bit.
 
 ■
 {: .centered }
