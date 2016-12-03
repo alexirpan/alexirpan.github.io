@@ -226,5 +226,80 @@ didn't expect secret organizations to have corporate bullshit too.
 **Tundra:** there's no escape
 
 **Heliotrope:** Look I get that but maybe I wanted just a little bit less bullshit.
-I mean, did you see that video? Do you think QwerG even believes it?
+I mean, did you see that video? Do you think he even believes it?
 
+**Tundra:** Who's he?
+
+**Heliotrope:** QwerG
+
+**Tundra:** how do you know QwerG's a he?
+
+**Tundra:** They could be a she. Or consider themselves genderqueer.
+QwerG could even be a chatbot.
+
+**Tundra:** not like we'd ever know
+
+**Heliotrope:** I kinda like the chatbot angle
+
+**Heliotrope:** would help explain how utterly useless that entire presentation was.
+
+**Tundra:** lol
+
+**Heliotrope:** Just hardcode some pointless corporate platitudes and presto.
+
+**Tundra:** getting food, ttyl
+
+**Heliotrope:** k
+
+
+■
+{: .centered }
+
+**QwerG:** That concludes our orientation session. Congratulations! You're all new
+Illuminati employees.
+
+**QwerG:** You now all have level 1 security access, which opens up most of our
+secrets. Any burning questions about what we do, what we've done, etc? (Note:
+moderation is staying on to keep questions rate-limited.)
+
+**PPP:** Is Queen Elizabeth II a lizard person?
+
+**QwerG:** No
+
+**PPP:** Do lizard people exit?
+
+**QwerG:** yes
+
+**Tonne:** wait what
+
+**PPP:** YES, TOTALLY CALLED IT. KNEW IT HAD TO BE REAL
+
+**Tundra:** wtf are you serious
+
+**QwerG:** Yep. I happen to be one myself.
+
+**Heliotrope:** ...I was going to ask if you were a chatbot, but, uh, okay.
+
+**PPP:** So what's your life like?
+
+**Tonne:** woah woah woah hold up. why should I trust you? Like, why should
+lizard people even exist? It's just stupidly unlikely.
+
+**QwerG:** any more unlikely than the Illuminati being a real secret society that's
+been controlling world history?
+
+**Tonne:** no that argument's not valid and you know it. Someone here hid a note
+in my garden without getting caught, despite me trying to catch them in the
+act. I'm getting an actual paycheck from the Illuminati. So I've got all this
+evidence the Illuminati is real. I don't have anything similar for you being
+a lizard person, besides your claim.
+
+**QwerG:** Okay. First off, you're getting a paycheck from Shellstone.
+Maybe everyone you've talked to is a Freemason who's *pretending* to be the
+Illuminati. But sure, I get the big picture.
+
+**QwerG:** You have no reason to believe me. But what would
+I have to gain by lying about this? If you think hard enough, I'm sure you could
+come up with a reason, but it won't be very strong.
+
+**QwerG:** a
