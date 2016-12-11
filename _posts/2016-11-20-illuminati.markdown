@@ -278,7 +278,8 @@ moderation is staying on to keep questions rate-limited.)
 
 **QwerG:** Yep. I happen to be one myself.
 
-**Heliotrope:** ...I was going to ask if you were a chatbot, but, uh, okay.
+**Heliotrope:** ...I was going to ask if you were human, but, uh, wow, didn't
+expect the answer would be no.
 
 **PPP:** So what's your life like?
 
@@ -299,7 +300,113 @@ Maybe everyone you've talked to is a Freemason who's *pretending* to be the
 Illuminati. But sure, I get the big picture.
 
 **QwerG:** You have no reason to believe me. But what would
-I have to gain by lying about this? If you think hard enough, I'm sure you could
-come up with a reason, but it won't be very strong.
+I have to gain by lying about this? If you find one that justifies its
+complexity, let me know, but I doubt you will.
 
-**QwerG:** a
+**QwerG:** Lizard person life isn't that different. We've got ways to look
+like humans in public, and I'd rather be careful revealing details about
+my private life. Company policy. One you all should keep in mind.
+
+**PPP:** didn't mean any disrespect.
+
+**QwerG:** I know. Almost out of time, one last question before I go.
+
+**Tundra:** Who leads the Illuminati?
+
+**QwerG:** I can't tell you.
+
+**Heliotrope:** because we can't know, or because you don't know yourself?
+
+**Heliotrope:** ...hello?
+
+**Tundra:** qwerg left. Moderation's off. See that indicator?
+
+**Heliotrope:** damnit. Fine, whatever,
+
+**Tonne:** That was very well done by QwerG, wouldn't you say?
+
+**PPP:** ?
+
+**Tonne:** Think about it. Did we actually learn anything about what the
+Illuminati's doing? In that whole orientation, was there any meaningful
+content?
+
+**Tundra:** Oh. Now that you mention it...
+
+**PPP:** he's good. sneaky. just what I would expect from a lizard person.
+
+**Heliotrope:** I can't decide if that's racist or not.
+
+**Tundra:** "Racist" might not be the right word :P
+
+**Tundra:** and PPP, how do you know QwerG's a he?
+
+
+■
+{: .centered }
+
+
+**Dulcet:** yo  
+**Dulcet:** yo yo  
+**Dulcet:** yo-yo..
+**Dulcet:** yo-yo-yo-yoy-oy-oo-o-yo..
+**Rainforest:** I'm here i'm here dulcet shut up already.  
+**Dulcet:** hey it's not on me if you take a while to respond  
+**Rainforest:** busy with work  
+**Dulcet:** right, right, that kickass startup. What are you working on? (That you can talk about.)  
+**Rainforest:** some cybersecurity stuff  
+**Rainforest:** penetration testing, security auditing, etc etc.  
+**Dulcet:** wow, they need that stuff this early?  
+**Rainforest:** yeah, I guess they do.
+
+■
+{: .centered }
+
+
+**The Illuminati**
+
+Hello **Tundra**  
+Total time logged in: 10 days, 2 hours, and 44 minutes
+
+**Illuminati Forum > Foundation (level 1) > Postmortem: Chilean government**
+
+**kolpkolpkolp** (Oils the political machine)
+
+Summary: The Chilean government was out of our control since 1988. New hire
+Heliotrope and I got the legislative branch back under Illuminati influence.
+
+Details: I did a crawl through the records and found out Chile's been neglected
+for a while. It was a low priority country, which made it a great new hire
+project. Heliotrope did most of the scouting grunt work to figure out who would
+be easy to coerce. I sent agents appropriately. Plans went off without a hitch.
+
+Challenges: None
+
+Further work: Unfortunately we weren't able to get the President on our side.
+Intel suggests he's getting some backing from the Freemasons. We made the judgment
+call to let their claim stand. With legislative influence we should be able to
+mess with his favorability ratings anyways.
+
+**PPP:** good shit heliotrope. Good shit.
+
+**Heliotrope:** aww thanks. Honestly kolp did all the hard work.
+
+**kolpkolpkolp:** Word of advice: don't undersell the intel. Sending agents is
+flashy, but it's also risky. The cleanest plans are ones where our intel is so
+good, nothing can go wrong.
+
+**Tundra:** What are we trying to get the Chilean government to do?
+
+**kolpkolpkolp:** idk. Sometimes you just want a government, you know? They
+make great birthday presents.
+
+
+■
+{: .centered }
+
+**The Illuminati**
+
+Hello **Tundra**  
+Total time logged in: 23 days, 22 hours, and 10 minutes
+
+**Illuminati Forum > Foundation (level 1) > **
