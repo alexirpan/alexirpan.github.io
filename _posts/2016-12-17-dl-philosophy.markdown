@@ -4,10 +4,7 @@ title:  "Deep Learning Philosophy"
 date:   2016-01-03 23:14:00 -0700
 ---
 
-This, unfortunately, is not a post where I apply deep learning to philosophy
-texts to see if I can generate new ones. (Although that does sound fun.)
-
-Instead, this is about my feelings on what principles deep learning is founded
+This post is my feelings on what principles deep learning is founded
 on, how the field works, why people do research in the field and how, broad
 topics in the field I find interesting, and future research directions that
 look promising.
@@ -108,15 +105,69 @@ What Are Neural Nets?
 
 Lots of people like to describe neural nets as artificial brains. On one hand,
 neural nets are definitely biologically inspired, and there's good work to be
-done on pursuing them from a neuroscience perspective. However, my brain is
-better at the math perspective, which is why I think of neural nets like this.
+done on pursuing them from a neuroscience perspective. On the other hand,
+I think this is deceptive. Not because it doesn't have ground, but because
+it's been repeated over and over in popular science, and the cavaets on the
+original claim have been lost over time.
+
+I prefer a math perspective, because I have more experience with math than
+neuroscience.
 
 > Neural nets are a set of differentiable functions that can approximate any
 > other function.
 
+What's So Special About That? (The Theoretical View)
+============================================================================
+
 Why is differentiability important? If a function is differentiable, we can
-find the gradient (the derivative)
+find the gradient (the derivative) of the function at any point. In machine
+learning, we pick/define a type of function (linear, neural net, etc), which
+is *parametrized* in some way, and our goal is to learn the parameters.
 
-What makes neural nets different from previous approaches is that
+Equation of line with arrow pointing to parameters w and b
 
-This is a huge, huge
+The dirty secret of machine learning is that everything eventually turns
+into gradient descent. If we have a parametrized differentiable function,
+and want to minimize it over a dataset $$X$$, there are 2 components to
+the loss - the data and the parameters. Taking the partial derivative
+with respect to the parameters gives a parameter update - the direction
+in which to move the parameters to decrease the value of the function.
+
+Classical parameter descent picture.
+
+There are non-parametric methods like nearest neighbor which are not
+differentiable, and are therefore learned in a different way. They tend
+to work well with very little data, but don't generalize as well as
+data size grows. (But they will be important - keep them in mind.)
+
+Now, let's go back to the original claim.
+
+> Neural nets are a set of differentiable functions that can approximate any
+> other function.
+
+This lets us compute parameter updates over arbitrary datasets, as long
+as we have an appropriate loss to minimize. Now, note the part in bold.
+
+> Neural nets are a set of differentiable functions **that can approximate any
+> other function.**
+
+What are we trying to do in machine learning? We're trying to learn
+functions. And neural nets can represent any possible function, and they're
+differentiable, meaning we know how to train neural nets from scratch.
+
+This is a big part of the recent hype, where people try neural nets on
+literally every dataset they can think of. They do this because neural nets
+actually can be applied on all those datasets.
+
+What's So Special About That? (The Practical View)
+===========================================================================
+
+Here's the dirty secret of that previous justification: not that many
+people care about universal approximation.
+
+It's nice to know that a sufficiently big neural net with the right parameters
+can approximate any function. But in practice, what matters is
+
+* How well does the model fit the data? Is the loss of the function learned
+small?
+* How well does the model generalize to new data?
