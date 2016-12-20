@@ -4,6 +4,51 @@ title:  "Deep Learning Philosophy"
 date:   2016-01-03 23:14:00 -0700
 ---
 
+OUTLINE
+
+INTRODUCTION
+
+* Define what deep learning is
+* Introduce machine learning as a field of learning functions
+
+WHY NEURAL NETS?
+
+* Emphasize that neural nets are best thought of as a very expressive
+family of functions
+* Emphasize that they actually work, and how important this is.
+
+FIELD AXIOMS
+
+* Given enough data and a large enough neural net, you can train the
+neural net to solve the problem.
+* Neural nets can be treated as computation blocks that will learn
+the proper behavior (if tuned well)
+* Given enough data, end-to-end architecture will perform best.
+* Neural nets aren't the answer to everything, but they're the answer to
+many things.
+* We have not hit the limits of neural nets (yet).
+
+CULTURE
+
+* Conferences are the key venues. Workshops are okay too. The rest don't matter as much.
+* but arXiv is perfectly acceptable for publication
+* The field moves very, very fast - something can be old news within a few months.
+* Open research is better for the field - if you want people to use your work,
+don't make them reproduce it first.
+* Standardizing on benchmarks is good for progress.
+
+RESEARCH DIRECTIONS
+
+* Generative models based on deep learning
+* Make everything differentiable. (Neural net analogues of existing methods)
+* Ways to prevent gradient vanishing/exploding.
+* Apply neural nets to problems in the field you care about.
+* Predictive models
+* ???
+* (Trying to focus this on neural nets in particular, not on applications to
+specific fields.)
+
+
 This post is my feelings on what principles deep learning is founded
 on, how the field works, why people do research in the field and how, broad
 topics in the field I find interesting, and future research directions that
