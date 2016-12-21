@@ -11,11 +11,14 @@ INTRODUCTION
 * Define what deep learning is
 * Introduce machine learning as a field of learning functions
 
-WHY NEURAL NETS?
+WHY ARE NEURAL NETS A BIG DEAL?
 
 * Emphasize that neural nets are best thought of as a very expressive
 family of functions
 * Emphasize that they actually work, and how important this is.
+* Emphasize they can be thought of as modular computation blocks,
+* Unification of methods means expertise transfers easily - it makes
+sense for CV people to sit next to NLP people and robotics people.
 
 FIELD AXIOMS
 
@@ -48,6 +51,10 @@ RESEARCH DIRECTIONS
 * (Trying to focus this on neural nets in particular, not on applications to
 specific fields.)
 
+\* \* \*
+{: .centered }
+
+(Also rewrite this intro, it's shit.)
 
 This post is my feelings on what principles deep learning is founded
 on, how the field works, why people do research in the field and how, broad
@@ -148,6 +155,8 @@ working code is very, very far off.
 What Are Neural Nets?
 ============================================================================
 
+(Try to work in the classical description of neural nets here.)
+
 Lots of people like to describe neural nets as artificial brains. On one hand,
 neural nets are definitely biologically inspired, and there's good work to be
 done on pursuing them from a neuroscience perspective. On the other hand,
@@ -158,11 +167,17 @@ original claim have been lost over time.
 I prefer a math perspective, because I have more experience with math than
 neuroscience.
 
-> Neural nets are a set of differentiable functions that can approximate any
-> other function.
+> Neural nets are a family of differentiable functions that apply multiple
+> layers of computation. Each layer applies a linear function, then a nonlinear
+> activation.
 
 What's So Special About That? (The Theoretical View)
 ============================================================================
+
+Neural nets have a neat property - they're universal function approximators.
+More formally, given any function $$f(x)$$, a sufficiently large neural net
+with the right parameters can match $$f(x)$$ at all $$x$$ to arbitrary precision. And they can do this
+while still being differentiable.
 
 Why is differentiability important? If a function is differentiable, we can
 find the gradient (the derivative) of the function at any point. In machine
@@ -207,12 +222,70 @@ actually can be applied on all those datasets.
 What's So Special About That? (The Practical View)
 ===========================================================================
 
-Here's the dirty secret of that previous justification: not that many
-people care about universal approximation.
+Here's the real truth: most people don't care about universal approximation.
+Hell, I don't even know any statistical learning theory people who care
+about universal approximation. It's neat to know it's possible, but generally
+they care about convergence rates or regret in online learning.
 
 It's nice to know that a sufficiently big neural net with the right parameters
-can approximate any function. But in practice, what matters is
+can approximate any function. But that doesn't actually matter in practice.
+What matters in practice is how well the neural net fits the data, and that's
+where they shine.
 
-* How well does the model fit the data? Is the loss of the function learned
-small?
-* How well does the model generalize to new data?
+Here is the classical picture from every talk Andrew Ng ever does about
+deep learning.
+
+PICTURE
+
+In words: although other machine learning methods perform well with less
+data, at a certain data threshold a neural net approach outperforms every
+other method we have.
+
+There's a tradeoff between model complexity and data efficiency.
+More complex models can solve harder problems, but they also need more data
+to train. Neural nets are squarely on the more complex side.
+
+By itself, this still doesn't answer the question to my satisfication.
+There will always be a state-of-the-art approach that performs the best
+given enough data. At one point it was support vector machines. At another
+point it was random forests. (Random forests are still alive and kicking,
+by the way. I hear they're very popular on Kaggle.)
+
+Here is the other diagram people always bring up in deep learning.
+
+FEATURE ENGINEERING PICTURE
+
+Traditionally, when people have wanted to apply machine learning to a problem,
+they take the raw data and create *features* of the data. These are human-designed
+heuristics of what's important about the data. For example, in spam detection,
+the raw text is the original email text, and your features could be the number of
+typos, relative word frequency, etc. This transforms the data into what experts
+think is important. A function is then fit to the transformed data.
+
+The feature engineering step is needed because many machine learning
+methods often aren't expressive enough to work with the raw data. Well, to be more
+exact, they sometimes do - but they don't do so often enough.
+
+Neural nets seem to get around this issue - in more domains than previous methods,
+they get better performance without feature engineering.
+
+DEEP LEARNING PICTURE
+
+This **still** doesn't explain the picture. Humans still have influence over
+how easy the model is to optimize. All we're doing is trading in expert
+feature desiging for expert neural net architecture design.
+
+**What makes neural nets different is that architecture design is significantly
+easier and more general than feature design.** (Karpathy's slide)
+
+IMAGE from Karpathy's slide from DLSS
+
+Additionally, because neural nets are applicable to so many domains, it's much
+easier for people across different subfields to share ideas. Computer vision
+people use convolutional nets, and NLP people use LSTMS, but they're all still
+neural nets, and that means a lot of latent intuition and knowledge is usable
+across domains. And because different fields are sharing more techniques,
+advances in one field can give ideas for advances in other fields.
+
+(Find the old article about Brain.) This is why it's possible to unify researchers
+all across machine learning under the banner of neural nets.
