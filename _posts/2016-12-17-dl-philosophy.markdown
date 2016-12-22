@@ -287,5 +287,41 @@ neural nets, and that means a lot of latent intuition and knowledge is usable
 across domains. And because different fields are sharing more techniques,
 advances in one field can give ideas for advances in other fields.
 
-(Find the old article about Brain.) This is why it's possible to unify researchers
-all across machine learning under the banner of neural nets.
+Across several fields, we're starting to see a unification of methods, and I
+think that's why progress has grown so quickly - people who used to do
+computer vision can talk to someone in NLP, find out their using an attention
+mechanism, and can try applying it to problems in computer vision. This would have
+been ridiculous before deep learning proved itself.
+
+Neural Nets as Computation Blocks
+================================================================
+
+Andrew Ng has a nice quote about why deep learning is so flexible. Most machine
+learning approaches map numbers to other numbers. Deep neural nets are different -
+they let us map arbitrary data into a smaller numerical space, which can then
+be interpreted as another form of data. Images into numbers into text.
+Text into numbers into text in another language. Words into numbers into...music?
+Sure, why not?
+
+Convnets are neural networks good at learning patterns invariant to location
+in the input. That's good for computer vision, and that's also good for music
+generation, and also for computational biology.
+
+RNNs are good for sequence data, making them good for language models, which
+need to carry dependencies through time. But they're also good for
+video prediction, and for reinforcement learning, both of which rely on
+outputting a good trajectory instead of a good image.
+
+LSTMs are more complicated RNNs. They use more parameters, but generally
+have better capacity and avoid graidnet issues that RNNs have. LSTMs have replaced
+RNNs in many (but not all!) applications.
+
+We're entering this weird regime, where we can daisy-chain a ton of neural net
+layers together, and the system is still trainable and will still do the right
+thing. Some conv layers to process an image, maybe an RNN if you want to process
+text, some fully connected layers to glue the whole thing together.
+Moreover, this end-to-end approach actually work better than training
+each component individually - if you have enough data. (Intuitively, by
+making everything end-to-end, the entire network is optimized for the final
+task you want to solve. If you train every component individually, each
+component is optimized for its own objective.
