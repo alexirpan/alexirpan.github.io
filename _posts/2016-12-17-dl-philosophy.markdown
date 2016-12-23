@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deep Learning Philosophy"
-date:   2016-01-03 23:14:00 -0700
+date:   2016-12-22 22:14:00 -0700
 ---
 
 OUTLINE
@@ -324,4 +324,34 @@ Moreover, this end-to-end approach actually work better than training
 each component individually - if you have enough data. (Intuitively, by
 making everything end-to-end, the entire network is optimized for the final
 task you want to solve. If you train every component individually, each
-component is optimized for its own objective.
+component is optimized for its own objective, which may not be exactly aligned
+with the final objective.)
+
+Research Culture
+------------------------------------------------------------------
+
+The field moves very, very quickly.
+
+Take Tensorflow for example. It turned 1 year old today. But the way people
+talk about it, you'd think it was around forever. It's very quickly jumped to
+one of the big machine learning frameworks.
+
+Or consider ADAM. ADAM is an optimization algorithm that combines momentum
+with adaptive learning rates (LOOK THIS UP.) The paper for ADAM came out in 2014.
+It's since been implemented in Tensorflow and Torch, and it's the default
+optimization algorithm to try.
+
+Dropout has wide adoption. Batch normalization came out in early 2015. In just
+under 2 years it's become widespread across image models, and has spawned two
+followups, layer norm and weight norm.
+
+I haven't done research in other fields, but I'm pretty sure this pace of
+research is atypical. There are **a lot** of people doing machine learning
+research right now, and because the cultural norm is putting papers on
+arXiv, ideas spread very quickly. There's an understanding that open research
+is good for the field. Many papers come with a source code release. In my experience,
+when a paper doesn't come out with source code, it doesn't mean the authors
+didn't want to release their code, it means the authors don't have time to
+clean up their code for open release. (This happens distressingly often.)
+
+
