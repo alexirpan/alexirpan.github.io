@@ -354,4 +354,76 @@ when a paper doesn't come out with source code, it doesn't mean the authors
 didn't want to release their code, it means the authors don't have time to
 clean up their code for open release. (This happens distressingly often.)
 
+The field is also very, very experimentalist. Deep learning has found its
+biggest niche in applications, and in applied problems, you care about
+final performance first and why it works second. Or to be more precise: in
+applied problems you only care about why it works because it lets you try
+new ideas in a more principled way, so even fuzzy inprecise explanations
+with empirical evidence in their favor is good enough.
 
+This makes deep learning deeply unsatisfying for theoretically oriented people.
+Some people are working on theoretical explanations for why deep learning
+should work, but we're not there yet.
+
+This can also make the field appear shallower than it really is. Ideas are cheap,
+execution is hard. Many papers in deep learning have fairly natural extensions,
+and in other fields authors may spend the time exploring those extensions very
+carefully. But because there are so many authors, and because everyone procrastinates,
+researchers often run out of time to implement and hyperparam tune those
+extensions. There's a strong bias to release early. Submissions bunch up around
+conference deadlines, but arXiv papers are perfectly acceptable too.
+
+Benchmark Standardization
+========================================================================
+
+People care a lot about open-sourced datasets. There are good reasons for this.
+
+* A common dataset lets researchers agree on the exact nature of the problem. (idk if I like this)
+* Working from a well-known dataset removes external variables.
+* Building a large dataset can be costly because it requires human labels. If
+datasets aren't standardized, each research group has to spend time recreating
+their dataset, which slows down progress.
+
+
+Research Directions
+--------------------------------------------------------------------------
+
+"Throw a Neural Net, See If It Works"
+=========================================================================
+
+Sometimes, throwing a neural net at the problem just makes it work out.
+
+This kind of research happens in domains where people haven't tried using
+neural nets before. For example, computational biology for gene sequencing,
+or medical imaging.
+
+In these domains, the neural net uses standard techniques. Most of the work
+is in collecting a large, clean dataset. These are domains where people
+have very high confidence the neural net will solve the problem, once you
+get all the plumbing out of the way.
+
+(Need to fit in the Andrew Ng quote here.)
+
+"To Use Neural Nets on the Problem, We'll Need Some Cleverness"
+======================================================================
+
+In these domains, applying known neural net methods won't improve performance, usually because
+people have already applied known methods to get the current state of the art.
+Prime examples are image classification, speech recognition, machine translation,
+and my personal favorite of reinforcement learning.
+
+People in these domains aren't interested in neural nets for the sake of
+neural nets. They're interested in neural nets for the sake of solving their
+problem better. Better translation, better image segmentation, etc. If you gave
+these researchers a black box method that worked better, but didn't use neural
+nets, they would switch to that method without much regret.
+
+That doesn't mean they're not interested in developing neural net architectures.
+It just means they're embedded into the feedback loop of research. In our
+specific problem, current neural net architectures are lacking. So we develop
+new ones that solve the issues we've noticed. Those architectural ideas go upstream,
+and can get used in other fields.
+
+PUT A PICTURE EXPLANING THIS HERE
+
+This itself breaks down into another bi
