@@ -426,4 +426,30 @@ and can get used in other fields.
 
 PUT A PICTURE EXPLANING THIS HERE
 
-This itself breaks down into another bi
+ImageNet led to the development of highway networks and residual networks.
+Language problems led to bidirectional RNNs. Audio generation led to WaveNet.
+
+Neural Nets for Their Own Sake
+=========================================================================
+
+Research in this area focuses entirely on extending our understanding of
+neural nets and extending the problems that neural nets could be applied to.
+
+Theoretical Justification for Neural Nets
+----------------------------------------------------------------------------
+
+This research focuses on devising theoretical explanations for the power of neural
+nets. This work is entirely about devising theories that fit existing
+empirical evidence; it isn't directly applicable to current problems of the day.
+
+(That's not a knock against the research. Pretty much every science has gone
+through something similar, and theory always lags behind practice. (LINK HERE).)
+
+Some results from this area: a proof that there are functions whose appoximations
+require an exponentially large 1 hidden layer neural net, but only a polynomially
+large deep neural net. Works that try to link algebraic topology to deep learning.
+A view of neural nets through a spin glass model, which I don't understand very
+well. An argument that models with history are required for sequence data, based
+on an information theory argument between symbols in the sequence.
+
+This is the more mathematical viewpoint. In a similar vein
