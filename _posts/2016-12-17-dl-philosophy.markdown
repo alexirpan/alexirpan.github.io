@@ -452,4 +452,137 @@ A view of neural nets through a spin glass model, which I don't understand very
 well. An argument that models with history are required for sequence data, based
 on an information theory argument between symbols in the sequence.
 
-This is the more mathematical viewpoint. In a similar vein
+Interpretability of Neural Nets
+-----------------------------------------------------------------------------
+
+This research explores ways to inspect neural nets to better understand how
+they arrive at their final output. The most notable example is DeepDream.
+
+IMAGES
+
+It almost feels wrong to call this a research area, because I don't know of
+anybody whose primary research focus is interpreting neural nets.
+However, many papers include visualizations anyways, because it makes the
+paper stronger.
+
+
+Duplicating Neuroscience
+-----------------------------------------------------------------------------
+
+Let me go on a tangent for a bit.
+
+I don't like it when people explain neural nets as approximating neurons in
+the brain. At a very approximate level, it's true, but every time a researcher
+talks about neuroscience inspiration, ten spectators of the research walk away
+with inflated misconceptions.
+
+That being said, neural nets have undeniable influence from neuroscience, and
+several researchers in the field have neuroscience background. At the Brains & Bits
+workshop at NIPS this year, Demis Hassabis had a succinct justification. We
+know the brain works for intelligence. If we can understand the brain and
+reproduce it in software, it's guaranteed to work. 5 year or 10 year projects
+based on neuroscience are easier to justify.
+
+I'm less familiar with this due to my biases, but I'll list some work.
+
+* Feedback alignment (a more biologically plausible backprop)
+* Energy based models (ML algorithm that could run better on analog hardware)
+* Count-based exploration (can be motivated by the hippocampus)
+* Modulated locomotor controllers (a fast reflex "spinal cord" and slower LOOK UP THE PAPER)
+
+Make ALL The Things Differentiable!
+-----------------------------------------------------------------------------
+
+For all gradient-based ML models (which includes neural nets), we need the model
+to be differentiable. In continuous problems, this is usually straightforward,
+but in discrete problems we start running into issues.
+
+The most common way to deal with this is making the neural net output a distribution
+over the discrete choices. We then take the weighted average, or sample from
+the distribution. This lets us relax the problem from discrete output to
+continuous output. Initially, the distribution will be uniform, but over
+time we expect the distribution to converge to putting all weight on a single
+choice.
+
+DIAGRAM
+
+The thinking process goes like so.
+
+* Neural nets don't apply to X because it's not differentiable.
+* Let's make the problem differentiable, then use a neural net to see what happens.
+
+Recent work in this area includes:
+
+* Variational autoencoders
+* Gumbel-Softmax / Concrete distribution
+* Straightthrough estimator
+* Neural Turing Machines, Neural GPU
+* Pointer networks.
+
+These papers often don't outperform the work they're inspired from, but they
+do demonstrate what problems we can solve just through gradient descent.
+
+Speaking of solving by gradient descent...
+
+Meta-Learning
+------------------------------------------------------------------------------
+
+Recall that machine learning is all about learning functions. Functions are
+everywhere, including machine learning. What if we applied neural nets to the
+functions we use to optimize neural nets?
+
+There's been tentative steps in this direction. In Learning to "learn by
+gradient descent" by gradient descent, the authors note that people rarely use
+vanilla SGD. They always use a function of the gradient instead (momentum, Adagrad, etc.)
+
+EQUATION
+
+Instead of having a human describe the function, we can have NAME be represented
+by a neural net. To train the neural net, we generate a large set of functions,
+and use gradient descent to update the neural net to minimize those functions as
+quickly as possible.
+
+PICTURE
+
+A related work is RL^2. Remember RNNs can be thought of as representing
+algorithms. Every RL algorithm has the same interface - obtain a sample from the
+environment, and return the next action to take in the environment. Instead of
+doing this with a known RL algorithm, the agent can use an RNN that persists
+history across multiple episodes.
+
+PICTURE
+
+Both of these results have large cavaets. They've only been tested on toy problems.
+The metalearned in RL^2 in particular isn't very robust (but to be fair a lot
+of deep RL isn't very robust.)
+
+Still, it's a bit fascinating that this metalearning actually works. In
+principle, it's supposed to work. It's just surprising that parts of it are
+already working.
+
+Before people get too scared, I think we're still a ways off from recursive
+self-improvement. The positive results show that if you learn an algorithm
+on one class of problems, they generalize a bit outside of that class, but there's
+no guarantee the optimizer or RNN learned will outperform human methods on
+all problems we care about. It's more likely they'll outperform human
+methods near the region they were trained, and they'll decay outside that region.
+
+(That being said, they don't have to outperform existing algorithms on all problems.
+They just have to outperform existing methods on the real world problems we care
+about.)
+
+(THIS ISN'T EXPLAINED THAT WELL, ADD SOME PICTURES HERE.)
+
+Sometimes, people
+describe RNNs as learning algorithms, not functions. Intuitively, algorithms
+are methods that update their internal state over time, eventually outputting
+an answer. The hidden state of an RNN can be interpreted as an algorithm's
+internal state, and the weight matrix can be interpreted as the computation
+we apply at each step of the algorithm.
+
+
+Conclusion
+================================================================================
+
+TODO: Make a conclusion
+
