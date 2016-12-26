@@ -26,6 +26,7 @@ FIELD AXIOMS
 neural net to solve the problem.
 * Neural nets can be treated as computation blocks that will learn
 the proper behavior (if tuned well)
+* (Emphasize abstraction barriers in the above.)
 * Given enough data, end-to-end architecture will perform best.
 * Neural nets aren't the answer to everything, but they're the answer to
 many things.
@@ -42,7 +43,7 @@ don't make them reproduce it first.
 
 RESEARCH DIRECTIONS
 
-* Generative models based on deep learning
+* Generative models based on deep learning (this is getting bundled into applications)
 * Make everything differentiable. (Neural net analogues of existing methods)
 * Ways to prevent gradient vanishing/exploding.
 * Apply neural nets to problems in the field you care about.
@@ -51,97 +52,118 @@ RESEARCH DIRECTIONS
 * (Trying to focus this on neural nets in particular, not on applications to
 specific fields.)
 
+Make sure to add a table of contents!
+
 \* \* \*
 {: .centered }
 
-(Also rewrite this intro, it's shit.)
+Summary: This post collects various thoughts I've had about deep learning.
+It gives a justification for why deep learning is such a big deal,
+then broadly classifies research in the field into a few buckets.
 
-This post is my feelings on what principles deep learning is founded
-on, how the field works, why people do research in the field and how, broad
-topics in the field I find interesting, and future research directions that
-look promising.
-
-Target audience: someone with math background up through calculus.
-That someone wants a high level overview of deep learning,
-or is a researcher interested in seeing how other fields operate, or
-a current deep learning researcher interested in seeing
-new perspectives.
-If I've done my job well, all those people should get something out this.
-
-This post is technical, but it is **not** intended to be a tutorial
-in deep learning. A ton of people have written much better tutorials than
-I can, and I'd like to focus on motivations and, well, philosophy.
-
-This post won't be very lyrical. I'm aiming for a brisk, dense pace.
-
-What is Deep Learning?
--------------------------------------------------------------------------
-
-Deep learning is a rapidly growing subfield of machine learning, that focuses
-on applying deep neural networks to various problems, and on creating new
-neural net architectures that could solve problems that were previously
-out of reach.
-
-Before going further, I need to unpack this a bit.
+This is **not** intended to be a tutorial in deep learning. There are a ton
+of those already - see LINKS HERE. However, it will be somewhat technical.
+I won't do proofs, but I will use math notation now and again.
 
 What is Machine Learning?
 ============================================================================
 
-I wrote an answer for this in a previous blog post.
+I can't explain deep learning if I don't explain what machine learning is.
+
+(Note: if you know what features and classification are, you can skip this
+section.)
+
+Here's a definition from a previous blog post, which is a paraphrase of
+Wikipedia's description.
 
 > Machine learning is the study of algorithms that let a computer learn insights from data in a semi-autonomous way.
 
-But now, I have a different answer.
+This definition is valid, but I'll phrase it in a different way.
 
-> Machine learning is the study of algorithms that learn functions from one
-> type of data to another.
+> Machine learning is the study of algorithms that learn functions between
+> two sets of data.
+
+In basically every machine learning problem, we have examples of desired
+inputs and desired outputs. Using those examples, we want to train a function
+to map from those inputs to those outputs. After training is done, we evaluate
+that function on new inputs to get a guess/approximation of the true output.
+
+Or in short: every problem in ML is a function learning problem, because every
+problem's solution can be described as a function.
+
+Examples!
 
 Suppose we had a set of points in the 2D plane, and wanted to fit a trendline that best
 fits the data. We can use linear regression.
-Linear regression takes a set of points, and outputs another function, which
-is guaranteed to be a line, and which is guaranteed to be the best line
-(according to the least squares metric.)
 
 Image of points in a plane
 
-Algorithm: linear regression.
-What gets learned: a linear function.
-Function's input: the x-coordinate
-Functions's output: the y-coordinate.
+Input set: The x-coordinates of each point.  
+Output set: The y-coordinate of each point.  
+Algorithm: Linear regression.  
+Function learned: a $$f(x)$$ of the form $$f(x) = ax + b$$ such that for every $$(x, y)$$, $$y$$ is close to
+$$f(x)$$. (To be precise, linear regression minimizes $$\sum (x,y) (y - f(x))^2$$)
 
-
-Suppose the points were in 3D space instead. We can still use linear regression,
-because in ML, linear doesn't mean "forms a line". It means "given $$d$$-dimensional
-data, output a $$(d-1)$$-dimensional hyperplane." In 3D space, linear regerssion
-gives a 2D plane. In 4D space, it gives a 3D plane. And so on.
+Suppose the points were in 3D space instead. We can still use linear regression.
+The "linear" in linear regression doesn't mean "forms a line", it's meant in
+the mathematical sense of the word.
 
 Image of points in 3D space.
 
-Algotihm: linear regression
-What gets learned: a plane
+Input set: The (x,y)-coordinates of each point.  
+Output set: The z-coordinate of each point.  
+Algorithm: Linear regression.  
+Function learned: a $$f(x,y)$$ of the form $$f(x, y) = ax + by + c$$
+such that for every $$(x, y, z)$$, the sum
+$$\sum (x,y,z) (z - f(x,y))^2$$ is minimized.
 
-Points in 3D space suck. Who cares about 3D points? Let's jump to pictures.
-Say we really, really cared about corgis, and wanted to filter our album to
-only pictures of corgis. (They're adorable. This is a totally valid request.)
+In general, when our input set is $$d$$-dimensional data, we say the data has
+$$d$$ **features**.
+
+Points in 3D space are boring. Who cares about those? Let's jump to image data.
+Say we're really, really big fans of corgis. (They're adorable. This is a
+totally valid opinion.) We're such a big fan that we want to automatically
+filter our album of photos to only the photos with corgis in them.
 
 Image of a corgi
 
-A human can do this easily, classifying images as "has a corgi" and "doesn't
-have a corgi". But we have a lot of photos, and want to do this automatically.
-We want a function $$f$$ such that $$f(corgi) = YES$$ and $$f(not corgi = NO$$ (use pictures here.)
+This is the textbook image classification problem. Each image falls into
+two classes, "contains corgis" and "doesn't contain corgis".
+
+Input set: A collection of images.  
+Output set: A prediction of corginess for each image.  
+Algorithm: Something from computer vision. In the past, HOG features + support
+vector machines. Now, a convolutional neural net.  
+Function learned: A function $$f$$ such that $$f(corgi photo) = corgis$$
+and $$f(not corgi) = NO$$
+
+PICTURE HERE
 
 Suppose we had some English sentences, and wanted to translate them into
-Spanish. We want a function $$f$$ such that $$f(How are you?) = TRANSLATION.$$
-Now we're getting toward problems where there could be several valid outputs,
-meaning several valid functions, but that's a detail we'll worry about later.
+Spanish. This problem differs from the previous one, because there could be
+several valid translations.
 
-We have a gallery of images, and want to describe their content for the blind.
-This is the image captioning problem, and Facebook cares about it for
-accessbility reasons. In that case, the function could be $$f(picture of dog) = A dog in a field is jumping to catch a ball."
+Input set: A colleciton of English sentences.  
+Output set: A translation of each sentence into Spanish.  
+Algorithm: Something from natural language processing. Nowadays, that
+means a big recurrent neural net or LSTM.  
+Function learned: $$f(ENGLISH SENTENCE) = TRANSLATION$$
 
-We have a design specification of an algorithm, and want to produce code that
-implements that algorithm. The function is $$f(design doc text) = working implementation
-in your favorite programming language.$$
+The image captioning problem. Given an image, generate a description of
+that image. (This is important for the blind and visually impaired -
+Facebook cares about this quite a bit.)
+
+PICTURE FROM KARPATHY'S PAPER
+
+The leading approach uses a combination of convnets and RNNs.
+
+The programming problem. We have a nautral language description of what
+the program should do, and we want to produce code that implements that algorithm.
+
+PICTURE
+
+Right now, the best approach is "hire a team of software engineers". No one
+knows how to do this through machine learning. At least, not yet.
 
 Everything's functions in the end, and some are easier to learn than others.
 The goal of ML research is to expand the set of functions
@@ -151,6 +173,15 @@ if you have enough pictures of corgis and pictures of not-corgis (which is
 already a big advancement that hides a ton of research effort). Image
 captioning is still tricky, but it's getting there at a good pace. Text to
 working code is very, very far off.
+
+What is Deep Learning?
+-------------------------------------------------------------------------
+
+Deep learning is a rapidly growing subfield of machine learning, that focuses
+on applying deep neural networks to various problems, and on creating new
+neural net architectures that could solve problems that were previously
+out of reach.
+
 
 What Are Neural Nets?
 ============================================================================
