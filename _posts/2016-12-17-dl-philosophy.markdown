@@ -63,7 +63,12 @@ then broadly classifies research in the field into a few buckets.
 
 This is **not** intended to be a tutorial in deep learning. There are a ton
 of those already - see LINKS HERE. However, it will be somewhat technical.
-I won't do proofs, but I will use math notation now and again.
+I won't do proofs, but I won't be afriad to drop a little bit of math.
+
+# Table of Contents
+
+- Clobbered for auto generated table of contents
+{:toc}
 
 What is Machine Learning?
 ============================================================================
@@ -165,53 +170,71 @@ PICTURE
 Right now, the best approach is "hire a team of software engineers". No one
 knows how to do this through machine learning. At least, not yet.
 
-Everything's functions in the end, and some are easier to learn than others.
-The goal of ML research is to expand the set of functions
-we can expect a computer to learn. We can (kind of) do image captioning.
-Learning a line is easy. Learning a corgi/not-corgi classifer isn't too hard
-if you have enough pictures of corgis and pictures of not-corgis (which is
-already a big advancement that hides a ton of research effort). Image
-captioning is still tricky, but it's getting there at a good pace. Text to
-working code is very, very far off.
+\* \* \*
+{: .centered }
 
 What is Deep Learning?
 -------------------------------------------------------------------------
 
-Deep learning is a rapidly growing subfield of machine learning, that focuses
-on applying deep neural networks to various problems, and on creating new
-neural net architectures that could solve problems that were previously
-out of reach.
+Deep learning is a rapidly growing subfield of machine learning that focuses
+on applying and developing neural networks.
 
 
-What Are Neural Nets?
+What Are Neural Networks?
 ============================================================================
 
-(Try to work in the classical description of neural nets here.)
+Here is the common description.
 
-Lots of people like to describe neural nets as artificial brains. On one hand,
-neural nets are definitely biologically inspired, and there's good work to be
-done on pursuing them from a neuroscience perspective. On the other hand,
-I think this is deceptive. Not because it doesn't have ground, but because
-it's been repeated over and over in popular science, and the cavaets on the
-original claim have been lost over time.
+We can model a neuron in the brain as a unit that activates depending on
+what input it receives. Neural nets connect several of these artificial
+neurons into a block of compute that can be learned from data.
 
-I prefer a math perspective, because I have more experience with math than
-neuroscience.
+PICTURE of perceptron and neural net
 
-> Neural nets are a family of differentiable functions that apply multiple
-> layers of computation. Each layer applies a linear function, then a nonlinear
-> activation.
+Neural nets are definitely biologically inspired. But I think the narrative
+of neural nets as artificial brains is too big in popular science.
+Anthropomorphizing neural nets and explaining what they aim to be is
+much easier than explaining what they actually are.
 
-What's So Special About That? (The Theoretical View)
-============================================================================
+> Neural nets are a particularly useful differentiable family of functions.
+> They apply multiple layers of computation, each of which applies a linear
+> function, then a nonlinear activation.
 
-Neural nets have a neat property - they're universal function approximators.
-More formally, given any function $$f(x)$$, a sufficiently large neural net
-with the right parameters can match $$f(x)$$ at all $$x$$ to arbitrary precision. And they can do this
-while still being differentiable.
+I heavily, heavily prefer this viewpoint. But I'm a math person, not a
+neuroscience person, so my bias should be obvious.
 
-Why is differentiability important? If a function is differentiable, we can
-find the gradient (the derivative) of the function at any point. In machine
+(For emphasis: describing neural nets as artifical brains isn't *wrong*,
+but it heavily underplays how crude the approximation is. Not even the
+neuroscience researchers in deep learning would claim neural nets
+replicate the brain. In fact, that's why they're interested in the field;
+they want to push in that direction.)
+
+What Makes Neural Nets Special? (The Theoretical View)
+----------------------------------------------------------------------------
+
+Neural nets are differentiable universal function approximators.
+
+A family of functions $$F$$ is a universal approximator if for any continuous
+function
+$$f$$, there is an $$f' \in F$$ that's close to $$f$$ at every point
+(for any $$\epsilon > 0$$, there exists an $$f' \in F$$ such that
+$$|f(x) - f'(x)| < \epsilon$$ for all $$x$$)
+
+(Technically the proof only holds when the domain is a compact subset
+of the reals, but it's not a big detail.)
+
+Recall that machine learning is all about learning the right function.
+Universal approximation tells in principle, it's always possible to learn
+a neural net for that function.
+
+However, this says nothing about how to actually 
+
+Why is differentiability important? The dirty secret of machine learning is
+that 90% of it is glorified optimization and gradient descent.
+Machine learning algorithms can be divided into parametric and nonparametric
+models.
+and non-parametrized models. 
+In machine
 learning, we pick/define a type of function (linear, neural net, etc), which
 is *parametrized* in some way, and our goal is to learn the parameters.
 
@@ -225,6 +248,13 @@ with respect to the parameters gives a parameter update - the direction
 in which to move the parameters to decrease the value of the function.
 
 Classical parameter descent picture.
+
+
+
+Neural nets have a neat property - they're universal function approximators.
+More formally, given any function $$f(x)$$, a sufficiently large neural net
+with the right parameters can match $$f(x)$$ at all $$x$$ to arbitrary precision. And they can do this
+while still being differentiable.
 
 There are non-parametric methods like nearest neighbor which are not
 differentiable, and are therefore learned in a different way. They tend
