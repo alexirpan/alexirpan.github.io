@@ -322,35 +322,101 @@ simple to describe. Dropout is literally a few sentences.
 > the expected sum of outputs the same as without dropout, but the random
 > dropping ensures that the neural net's output is more robust.
 
-When I read papers in the field, most of time I think, "Wait, that's it? That
-idea's so simple!" Part of it is me building better research intuitions, but
-it's very different from reading theortical computer science papers. In theory
+When I read papers in the field, most of time I think, "Wait, that's it?
+That's so simple!"
 
-research is atypical. There are **a lot** of people doing machine learning
-research right now, and because the cultural norm is putting papers on
-arXiv, ideas spread very quickly. There's an understanding that open research
-is good for the field. Many papers come with a source code release. In my experience,
-when a paper doesn't come out with source code, it doesn't mean the authors
-didn't want to release their code, it means the authors don't have time to
-clean up their code for open release. (This happens distressingly often.)
+As a guy who took grad level theoretical computer
+science courses for **fun**, this can be deeply unsatisfying.
+The TCS papers I've read have a collection of core ideas that branch into
+proof details. The deep learning papers I've read have a single core idea
+that branches into the details of the paper's experiments. (This excludes
+the small set of theoretical deep learning papers, for obvious reasons.)
 
-## The Big Data Argument
+The field is very, very experimentalist. Deep learning has found its
+biggest niche in applications, and in applied problems, you care about the
+final performance first and foremost. If it doesn't beat state-of-the-art, the
+paper needs to have a very compelling argument for why this doesn't matter.
 
-The common answer comes from this picture, yet again.
+It's not that we don't care about explanations. It's that [theory lags practice](http://lemire.me/blog/2015/01/07/theory-lags-practice/) so much that we don't have the tools to build anything
+besides empirical explanations. Even fuzzy, imprecise arguments with empirical
+evidence are good enough, as long as they allow for intuitive extensions of the
+work.
 
-PICTURE
+And there are almost always intuitive extensions. In deep learning, ideas
+are cheap, and execution is hard. To quote Andrew Ng, "90% of machine learning
+is dirty work." People have ideas all the time; the glory is in getting them
+to work.
 
-With enough data, neural nets beat everything other approach. We didn't have
-enough data when neural nets debuted in the 1980s, but now we have the data
-and the compute, so shove everything through the pipeline and problem solved!
+In many paper stories, I've heard the same story: we tried something, and
+it failed. We tried again, and it failed. We tried, again and again, and
+it finally worked. By the time it worked, we had 3 days to write the paper.
 
-I've never fully agreed with this argument. Yes, the statement is true. But
-that doesn't mean it explains the full story.
-There will always be a state-of-the-art approach that performs the best
-given enough data. At one point it was support vector machines, at
-another point it was random forests. What's different this time?
+![Graph of NIPS submissions vs time to deadline](/public/dl-philosophy/nips_submission.png)
+{: .centered }
 
-## The Feature Engineering Argument
+[(This is one of my favorite graphs.)](http://homepages.inf.ed.ac.uk/imurray2/nips_submission_times/)
+{: .centered }
+
+It's not that the authors didn't think of those extensions. They
+just ran out of time, because everyone procrastinates and research is hard and
+deadlines are brick walls that force you to aim for completion instead of
+perfection.
+
+Also, there are a ton of people in the field, Cultural norm is to publish on
+arXiv, submit to conferences over journals, publish your conference submission
+on arXiv as soon as you're allowed to, publish often,
+and release source code if you have the time to clean it up.
+This is great for sharing ideas, but it pushes researchers to put their work
+out early. That doesn't lead to well-written papers that flip your research
+worldview. It leads to papers that are obvious to your world view. Of course,
+researchers understand that the paper hides all the work that went into it,
+because they've been busy trying to get their own papers to work.
+
+So yes, it is all very open, and the ideas are often very simple. But getting
+things to work at all (and work well) is a big enough achievement to overshadow
+the simplicity of the explanation. (Besides, simple explanations should be
+rewarded. The best papers are ones where you wonder why you didn't think of
+it first.)
+
+## Why is Deep Learning Progressing So Fast?
+
+I've made a big show of explaining how quickly the field moves. But why is
+deep learning in particular growing so fast, compared to other subfields in
+machine learning?
+
+There isn't a single answer. It's more like a collection of answers.
+
+### Resurrecting Old Ideas With Big Data
+
+Neural nets aren't new. They've been around since the 1980s. The argument
+goes like this: the old guard of neural net researchers always knew it was
+a matter of time before neural nets would rise again. Now that we have
+large datasets and the compute power to process them, many ideas we
+theorized about in the past can be tested for real. The empirical results
+let us refine our ideas and get better performance, through the scientific
+method.
+
+This explains why neural nets started working, but it doesn't explain why
+the field is growing so quickly. Besides, a lot of researchers in the new wave
+haven't read the old papers anyways. Yann LeCun has lamented that many new papers
+are rediscovering ideas from the 80s and 90s, and Schmidhuber...well, his
+citation claims are a meme in the ML community by this point.
+
+Besides, there's always been a state-of-the-art machine learning method.
+Support vector machines, random forests, etc. As far as I know, they've never
+blown up like neural nets have. (But I'm new to the field - maybe my folklore
+is out of date.)
+
+### Financial Incentives
+
+Image recognition, speech transcription, machine translation, and other areas
+have become so good that they're practical enough for companies to care
+about the research. There's a ton of money in machine learning, so companies
+are throwing a lot of funding at machine learning researchers in industry
+research labs, which speeds up progress.
+
+
+### Avoiding Feature Engineering
 
 Here is the other diagram people always bring up in deep learning.
 
@@ -382,10 +448,13 @@ These choices are made before training begins, just like feature engineering.
 All we've done is trade expert feature design for expert neural net
 architecture design.
 
-This leads to the third argument, which, when combined with the first two,
-answers the question to my satisfication
+This leads to th next points.
 
-## The Simplicity/Unification Argument
+
+### Simplicity/Unification
+
+(Note: planning to make this just unification, and moving the simplicity
+part to the previous heading.)
 
 **What makes neural nets different is that architecture design is easier and
 more general than feature design.**
@@ -426,6 +495,18 @@ PICTURE
 
 (I want to make some point about neural net knowledge becoming more important than
 domain specific knowledge but I can't get the phrasing right so screw it.)
+
+### The Standardized Benchmarks
+Benchmark Standardization
+========================================================================
+
+People care a lot about open-sourced datasets. There are good reasons for this.
+
+* A common dataset lets researchers agree on the exact nature of the problem. (idk if I like this)
+* Working from a well-known dataset removes external variables.
+* Building a large dataset can be costly because it requires human labels. If
+datasets aren't standardized, each research group has to spend time recreating
+their dataset, which slows down progress.
 
 
 Neural Nets as Computation Blocks
@@ -483,23 +564,10 @@ researchers often run out of time to implement and hyperparam tune those
 extensions. There's a strong bias to release early. Submissions bunch up around
 conference deadlines, but arXiv papers are perfectly acceptable too.
 
-Benchmark Standardization
-========================================================================
 
-People care a lot about open-sourced datasets. There are good reasons for this.
+# Research Directions
 
-* A common dataset lets researchers agree on the exact nature of the problem. (idk if I like this)
-* Working from a well-known dataset removes external variables.
-* Building a large dataset can be costly because it requires human labels. If
-datasets aren't standardized, each research group has to spend time recreating
-their dataset, which slows down progress.
-
-
-Research Directions
---------------------------------------------------------------------------
-
-"Throw a Neural Net, See If It Works"
-=========================================================================
+## "Throw a Neural Net, See If It Works"
 
 Sometimes, throwing a neural net at the problem just makes it work out.
 
@@ -514,8 +582,7 @@ get all the plumbing out of the way.
 
 (Need to fit in the Andrew Ng quote here.)
 
-"To Use Neural Nets on the Problem, We'll Need Some Cleverness"
-======================================================================
+## "To Use Neural Nets on the Problem, We'll Need Some Cleverness"
 
 In these domains, applying known neural net methods won't improve performance, usually because
 people have already applied known methods to get the current state of the art.
@@ -539,14 +606,12 @@ PUT A PICTURE EXPLANING THIS HERE
 ImageNet led to the development of highway networks and residual networks.
 Language problems led to bidirectional RNNs. Audio generation led to WaveNet.
 
-Neural Nets for Their Own Sake
-=========================================================================
+## Neural Nets for Their Own Sake
 
 Research in this area focuses entirely on extending our understanding of
 neural nets and extending the problems that neural nets could be applied to.
 
-Theoretical Justification for Neural Nets
-----------------------------------------------------------------------------
+### Theoretical Justification for Neural Nets
 
 This research focuses on devising theoretical explanations for the power of neural
 nets. This work is entirely about devising theories that fit existing
@@ -562,8 +627,7 @@ A view of neural nets through a spin glass model, which I don't understand very
 well. An argument that models with history are required for sequence data, based
 on an information theory argument between symbols in the sequence.
 
-Interpretability of Neural Nets
------------------------------------------------------------------------------
+### Interpretability of Neural Nets
 
 This research explores ways to inspect neural nets to better understand how
 they arrive at their final output. The most notable example is DeepDream.
@@ -576,8 +640,7 @@ However, many papers include visualizations anyways, because it makes the
 paper stronger.
 
 
-Duplicating Neuroscience
------------------------------------------------------------------------------
+### Duplicating Neuroscience
 
 Let me go on a tangent for a bit.
 
@@ -600,8 +663,7 @@ I'm less familiar with this due to my biases, but I'll list some work.
 * Count-based exploration (can be motivated by the hippocampus)
 * Modulated locomotor controllers (a fast reflex "spinal cord" and slower LOOK UP THE PAPER)
 
-Make ALL The Things Differentiable!
------------------------------------------------------------------------------
+### Make ALL The Things Differentiable!
 
 For all gradient-based ML models (which includes neural nets), we need the model
 to be differentiable. In continuous problems, this is usually straightforward,
@@ -634,8 +696,7 @@ do demonstrate what problems we can solve just through gradient descent.
 
 Speaking of solving by gradient descent...
 
-Meta-Learning
-------------------------------------------------------------------------------
+### Meta-Learning
 
 Recall that machine learning is all about learning functions. Functions are
 everywhere, including machine learning. What if we applied neural nets to the
@@ -691,8 +752,7 @@ internal state, and the weight matrix can be interpreted as the computation
 we apply at each step of the algorithm.
 
 
-Conclusion
-================================================================================
+# Conclusion
 
 TODO: Make a conclusion
 
