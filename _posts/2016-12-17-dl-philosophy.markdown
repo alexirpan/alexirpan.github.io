@@ -47,8 +47,6 @@ RESEARCH DIRECTIONS
 * Make everything differentiable. (Neural net analogues of existing methods)
 * Ways to prevent gradient vanishing/exploding.
 * Apply neural nets to problems in the field you care about.
-* Predictive models
-* ???
 * (Trying to focus this on neural nets in particular, not on applications to
 specific fields.)
 
@@ -70,8 +68,9 @@ I won't do proofs, but I won't be afriad to drop a little bit of math.
 - Clobbered for auto generated table of contents
 {:toc}
 
-What is Machine Learning?
-============================================================================
+# Background
+
+## What is Machine Learning?
 
 I can't explain deep learning if I don't explain what machine learning is.
 
@@ -173,15 +172,12 @@ knows how to do this through machine learning. At least, not yet.
 \* \* \*
 {: .centered }
 
-What is Deep Learning?
--------------------------------------------------------------------------
+## What is Deep Learning?
 
 Deep learning is a rapidly growing subfield of machine learning that focuses
 on applying and developing neural networks.
 
-
-What Are Neural Networks?
-============================================================================
+### What Are Neural Networks?
 
 Here is the common description.
 
@@ -209,8 +205,9 @@ neuroscience researchers in deep learning would claim neural nets
 replicate the brain. In fact, that's why they're interested in the field;
 they want to push in that direction.)
 
-What Makes Neural Nets Special? (The Theoretical View)
-----------------------------------------------------------------------------
+# What Makes Neural Nets Special?
+
+## The Theoretical View
 
 Neural nets are differentiable universal function approximators.
 
@@ -227,70 +224,47 @@ Recall that machine learning is all about learning the right function.
 Universal approximation tells in principle, it's always possible to learn
 a neural net for that function.
 
-However, this says nothing about how to actually 
+However, this doesn't tell us how to find an appropriate neural net.
+This is where differentiablity comes in.
+The dirty secret of machine learning is that 90% of it reduces to gradient
+descent on some loss function.
 
-Why is differentiability important? The dirty secret of machine learning is
-that 90% of it is glorified optimization and gradient descent.
-Machine learning algorithms can be divided into parametric and nonparametric
-models.
-and non-parametrized models. 
-In machine
-learning, we pick/define a type of function (linear, neural net, etc), which
-is *parametrized* in some way, and our goal is to learn the parameters.
+* Define a loss function $$\ell_\theta(x,y)$$, where $$\theta$$ is the parameters
+and $$x$$ is the input and $$y$$ is the desired output.
+* Find $$\nabla_\theta \ell_\theta(x, y)$$, the gradient with respect to $$\theta$$.
+The gradient is the direction of steepest descent for the loss function.
+* Apply an update rule to move $$\theta$$ to $$\theta'$$, and repeat.
 
-Equation of line with arrow pointing to parameters w and b
-
-The dirty secret of machine learning is that everything eventually turns
-into gradient descent. If we have a parametrized differentiable function,
-and want to minimize it over a dataset $$X$$, there are 2 components to
-the loss - the data and the parameters. Taking the partial derivative
-with respect to the parameters gives a parameter update - the direction
-in which to move the parameters to decrease the value of the function.
+Differentiability is key in the 2nd step. The core idea is that if the function
+is differentiable, we can always find a good update direction, and because we're
+optimizing over a continuous range, we can take arbitrarily small steps in that direction.
 
 Classical parameter descent picture.
 
+(Not all ML reduces to this. Nearest neighbor and random forests are two big
+methods with non-differentiable components.)
+
+The takeaway from this entire transgression is that differentiability gives
+us a way to search parameter space ($$\theta$$-space) towards regions with
+smaller losses. As long as the loss is differentiable and minimized when $$f_\theta$$
+is what we want, we're set.
+
+Therefore, the combination of differentiabilty and universal approximation makes
+neural nets applicable to any problem.
 
 
-Neural nets have a neat property - they're universal function approximators.
-More formally, given any function $$f(x)$$, a sufficiently large neural net
-with the right parameters can match $$f(x)$$ at all $$x$$ to arbitrary precision. And they can do this
-while still being differentiable.
+## The Practical View
 
-There are non-parametric methods like nearest neighbor which are not
-differentiable, and are therefore learned in a different way. They tend
-to work well with very little data, but don't generalize as well as
-data size grows. (But they will be important - keep them in mind.)
+Now here's the real truth: most people don't care about universal approximation.
 
-Now, let's go back to the original claim.
+Oh, sure, it's nice that the result holds up, but all the proof of universal
+approximation shows is that neural nets can represent a lookup table. Constructing
+a neural net the way the theorem tells you to will very quickly require more computing
+power than the entire world has.
 
-> Neural nets are a set of differentiable functions that can approximate any
-> other function.
-
-This lets us compute parameter updates over arbitrary datasets, as long
-as we have an appropriate loss to minimize. Now, note the part in bold.
-
-> Neural nets are a set of differentiable functions **that can approximate any
-> other function.**
-
-What are we trying to do in machine learning? We're trying to learn
-functions. And neural nets can represent any possible function, and they're
-differentiable, meaning we know how to train neural nets from scratch.
-
-This is a big part of the recent hype, where people try neural nets on
-literally every dataset they can think of. They do this because neural nets
-actually can be applied on all those datasets.
-
-What's So Special About That? (The Practical View)
-===========================================================================
-
-Here's the real truth: most people don't care about universal approximation.
-Hell, I don't even know any statistical learning theory people who care
-about universal approximation. It's neat to know it's possible, but generally
-they care about convergence rates or regret in online learning.
-
-It's nice to know that a sufficiently big neural net with the right parameters
-can approximate any function. But that doesn't actually matter in practice.
-What matters in practice is how well the neural net fits the data, and that's
+In practice, neural nets don't use all the compute power in the world. (Citation
+needed.)
+What matters is how well neural nets fit the data, and that's
 where they shine.
 
 Here is the classical picture from every talk Andrew Ng ever does about
@@ -298,19 +272,85 @@ deep learning.
 
 PICTURE
 
-In words: although other machine learning methods perform well with less
-data, at a certain data threshold a neural net approach outperforms every
-other method we have.
+The pattern so far is that above a certain data threshold, neural net approaches
+outperform every other approach. Which is weirdly fascinating, when you think about it.
+This claim is almost an axiom in the deep learning community; the only counterexamples
+I know of are pathological ones.
 
-There's a tradeoff between model complexity and data efficiency.
-More complex models can solve harder problems, but they also need more data
-to train. Neural nets are squarely on the more complex side.
+When you have a hammer, everything looks like a nail. And so far, neural nets are
+a big hammer that turns a ton of problems into nails.
 
-By itself, this still doesn't answer the question to my satisfication.
+
+# What's the Field Like?
+
+The field is very exciting. Everything's moving ridiculously quickly, which is
+painful if you're trying to keep up with current research, but it feels like
+there's a new surprising result every month.
+
+To emphasize how fast the field is moving, here are a few examples.
+
+* The public release of [TensorFlow](https://www.tensorflow.org/) was just
+over a year ago. (On my birthday! Hooray!) It's become one of the big
+machine learning frameworks.
+* [The paper for Adam](https://arxiv.org/abs/1412.6980), a new gradient optimization
+method, came out about two years ago. It's since become the optimization
+algorithm of choice for a ridiculous number of papers. Google Scholar
+says it has almost 1300 citations.
+* [Dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) debuted in
+2014, and has over 1700 citations.
+* [Batch norm](https://arxiv.org/abs/1502.03167)
+came out in 2015, and it's since become the default for image models - many
+models don't train at all if you don't use batch norm.
+* [ResNets](https://arxiv.org/abs/1512.03385)
+came out a year ago, became the new big thing in image recognition after they
+beasted ImageNet 2015, and now they already feel like old news.
+
+Maybe I'm unintentionally cherrypicking here, but it feels weird that a ton of
+important papers came out just in the past three years. It's impossible to keep
+up with everything. [Arxiv Sanity Preserver](http://www.arxiv-sanity.com/)
+helps, but there's just so much to read.
+
+To quote one of my friends,
+
+> Is everything [in deep learning] SUPER DUPER OPEN or is it just me?
+
+In some ways, it is. The core idea in many papers can be shockingly
+simple to describe. Dropout is literally a few sentences.
+
+> To train a neural net with dropout, for each neuron, multiply the output
+> by $$1/p$$ with probability $$p$$, and otherwise set it to $$0$$. This keeps
+> the expected sum of outputs the same as without dropout, but the random
+> dropping ensures that the neural net's output is more robust.
+
+When I read papers in the field, most of time I think, "Wait, that's it? That
+idea's so simple!" Part of it is me building better research intuitions, but
+it's very different from reading theortical computer science papers. In theory
+
+research is atypical. There are **a lot** of people doing machine learning
+research right now, and because the cultural norm is putting papers on
+arXiv, ideas spread very quickly. There's an understanding that open research
+is good for the field. Many papers come with a source code release. In my experience,
+when a paper doesn't come out with source code, it doesn't mean the authors
+didn't want to release their code, it means the authors don't have time to
+clean up their code for open release. (This happens distressingly often.)
+
+## The Big Data Argument
+
+The common answer comes from this picture, yet again.
+
+PICTURE
+
+With enough data, neural nets beat everything other approach. We didn't have
+enough data when neural nets debuted in the 1980s, but now we have the data
+and the compute, so shove everything through the pipeline and problem solved!
+
+I've never fully agreed with this argument. Yes, the statement is true. But
+that doesn't mean it explains the full story.
 There will always be a state-of-the-art approach that performs the best
-given enough data. At one point it was support vector machines. At another
-point it was random forests. (Random forests are still alive and kicking,
-by the way. I hear they're very popular on Kaggle.)
+given enough data. At one point it was support vector machines, at
+another point it was random forests. What's different this time?
+
+## The Feature Engineering Argument
 
 Here is the other diagram people always bring up in deep learning.
 
@@ -332,27 +372,61 @@ they get better performance without feature engineering.
 
 DEEP LEARNING PICTURE
 
-This **still** doesn't explain the picture. Humans still have influence over
-how easy the model is to optimize. All we're doing is trading in expert
-feature desiging for expert neural net architecture design.
+Once again, this is true, but I feel it still misses something. You can think
+of features as biases humans place on what the model should optimize over.
+That human bias is still present in neural nets, but it gets offset to the
+neural net architecture chosen for the problem. Convolutional nets are
+good at translation invariant patterns, RNNs are good for sequential data,
+dropout is good if you want better regularization of the model, and so on.
+These choices are made before training begins, just like feature engineering.
+All we've done is trade expert feature design for expert neural net
+architecture design.
 
-**What makes neural nets different is that architecture design is significantly
-easier and more general than feature design.** (Karpathy's slide)
+This leads to the third argument, which, when combined with the first two,
+answers the question to my satisfication
+
+## The Simplicity/Unification Argument
+
+**What makes neural nets different is that architecture design is easier and
+more general than feature design.**
+
+Credit goes to Andrej Karpathy for putting these thoughts into words, because
+when I read them the first time, a ton of incomplete ideas I had clicked into place.
+
+Consider computer vision. Compared to what people did before, describing
+convnets is easy! Throw some conv layers together, add some pooling and
+fully connected layers to glue it all together, and done.
 
 IMAGE from Karpathy's slide from DLSS
 
-Additionally, because neural nets are applicable to so many domains, it's much
-easier for people across different subfields to share ideas. Computer vision
-people use convolutional nets, and NLP people use LSTMS, but they're all still
-neural nets, and that means a lot of latent intuition and knowledge is usable
-across domains. And because different fields are sharing more techniques,
-advances in one field can give ideas for advances in other fields.
+Similarly, there used to be a ton of linguistics-specific knowledge in machine
+translation. Recent papers suggest that word embeddings and large LSTMs let
+you sidestep all of that knowledge.
 
-Across several fields, we're starting to see a unification of methods, and I
-think that's why progress has grown so quickly - people who used to do
-computer vision can talk to someone in NLP, find out their using an attention
-mechanism, and can try applying it to problems in computer vision. This would have
-been ridiculous before deep learning proved itself.
+Across several fields, we're starting to see a unification of methods. Convnets
+are good at pattern recognition, which is good for computer vision, but it's also
+good for Computer Go. RNNs are good at sequential data, which is good for
+language models, but it's also good for reinforcement learning, and even image
+generation if you view image generation as a sequence of pixel outputs. (Link PixelRNN here.)
+
+They're all unifed under the banner of neural nets. It made sense for Google to
+throw all their neural net researchers onto one team, even if they were working on
+different problems, because they all knew how to talk about neural nets. And
+even if they weren't directly related, sometimes an idea from one domain can
+spark an idea in another. Everything's connected, through the neural net
+bridge.
+
+PICTURE
+
+Progress in one domain pushes progress in the others. You could see this as
+neural nets rising, and pulling everything along with it. But I see it the other
+way around: everything is rising, and neural nets are along for the ride.
+
+PICTURE
+
+(I want to make some point about neural net knowledge becoming more important than
+domain specific knowledge but I can't get the phrasing right so screw it.)
+
 
 Neural Nets as Computation Blocks
 ================================================================
@@ -388,32 +462,7 @@ task you want to solve. If you train every component individually, each
 component is optimized for its own objective, which may not be exactly aligned
 with the final objective.)
 
-Research Culture
-------------------------------------------------------------------
-
-The field moves very, very quickly.
-
-Take Tensorflow for example. It turned 1 year old today. But the way people
-talk about it, you'd think it was around forever. It's very quickly jumped to
-one of the big machine learning frameworks.
-
-Or consider ADAM. ADAM is an optimization algorithm that combines momentum
-with adaptive learning rates (LOOK THIS UP.) The paper for ADAM came out in 2014.
-It's since been implemented in Tensorflow and Torch, and it's the default
-optimization algorithm to try.
-
-Dropout has wide adoption. Batch normalization came out in early 2015. In just
-under 2 years it's become widespread across image models, and has spawned two
-followups, layer norm and weight norm.
-
-I haven't done research in other fields, but I'm pretty sure this pace of
-research is atypical. There are **a lot** of people doing machine learning
-research right now, and because the cultural norm is putting papers on
-arXiv, ideas spread very quickly. There's an understanding that open research
-is good for the field. Many papers come with a source code release. In my experience,
-when a paper doesn't come out with source code, it doesn't mean the authors
-didn't want to release their code, it means the authors don't have time to
-clean up their code for open release. (This happens distressingly often.)
+FOOOOOOO
 
 The field is also very, very experimentalist. Deep learning has found its
 biggest niche in applications, and in applied problems, you care about
