@@ -4,21 +4,12 @@ title:  "Deep Learning Philosophy"
 date:   2016-12-22 22:14:00 -0700
 ---
 
-OUTLINE
-
-INTRODUCTION
-
-* Define what deep learning is
-* Introduce machine learning as a field of learning functions
+THINGS FROM OUTLINE TO ADD
 
 WHY ARE NEURAL NETS A BIG DEAL?
 
-* Emphasize that neural nets are best thought of as a very expressive
-family of functions
 * Emphasize that they actually work, and how important this is.
 * Emphasize they can be thought of as modular computation blocks,
-* Unification of methods means expertise transfers easily - it makes
-sense for CV people to sit next to NLP people and robotics people.
 
 FIELD AXIOMS
 
@@ -34,21 +25,13 @@ many things.
 
 CULTURE
 
-* Conferences are the key venues. Workshops are okay too. The rest don't matter as much.
-* but arXiv is perfectly acceptable for publication
-* The field moves very, very fast - something can be old news within a few months.
-* Open research is better for the field - if you want people to use your work,
-don't make them reproduce it first.
 * Standardizing on benchmarks is good for progress.
 
 RESEARCH DIRECTIONS
 
 * Generative models based on deep learning (this is getting bundled into applications)
-* Make everything differentiable. (Neural net analogues of existing methods)
 * Ways to prevent gradient vanishing/exploding.
 * Apply neural nets to problems in the field you care about.
-* (Trying to focus this on neural nets in particular, not on applications to
-specific fields.)
 
 Make sure to add a table of contents!
 
