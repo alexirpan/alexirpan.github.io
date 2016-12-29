@@ -362,21 +362,22 @@ just ran out of time, because everyone procrastinates and research is hard and
 deadlines are brick walls that force you to aim for completion instead of
 perfection.
 
-Also, there are a ton of people in the field, Cultural norm is to publish on
-arXiv, submit to conferences over journals, publish your conference submission
-on arXiv as soon as you're allowed to, publish often,
-and release source code if you have the time to clean it up.
+Also, there are a ton of people in the field. No, like, a ton. Do you know how
+big NIPS was this year? It was about 5800 people. For a research conference.
+Cultural norm is to publish on arXiv, submit to conferences over journals,
+publish your conference submission on arXiv as soon as you're allowed to,
+and publish often, with source code if you have the time to clean it up.
 This is great for sharing ideas, but it pushes researchers to put their work
-out early. That doesn't lead to well-written papers that flip your research
-worldview. It leads to papers that are obvious to your world view. Of course,
-researchers understand that the paper hides all the work that went into it,
-because they've been busy trying to get their own papers to work.
+out early, because of how easy it is to get scooped. When that many people
+are working on similar problems, solutions tend to arise at the same time.
+
+This isn't the best environment for well-written papers that flip your research
+worldview. It leads to papers that feel very incremental and obvious, after
+the fact.
 
 So yes, it is all very open, and the ideas are often very simple. But getting
-things to work at all (and work well) is a big enough achievement to overshadow
-the simplicity of the explanation. (Besides, simple explanations should be
-rewarded. The best papers are ones where you wonder why you didn't think of
-it first.)
+things to work at all (and work well) is a big enough achievement to justify
+publication.
 
 ## Why is Deep Learning Progressing So Fast?
 
@@ -386,7 +387,7 @@ machine learning?
 
 There isn't a single answer. It's more like a collection of answers.
 
-### Resurrecting Old Ideas With Big Data
+### Big Data Lets Us Retry Old Ideas
 
 Neural nets aren't new. They've been around since the 1980s. The argument
 goes like this: the old guard of neural net researchers always knew it was
@@ -407,7 +408,7 @@ Support vector machines, random forests, etc. As far as I know, they've never
 blown up like neural nets have. (But I'm new to the field - maybe my folklore
 is out of date.)
 
-### Financial Incentives
+### Strong Financial Incentives
 
 Image recognition, speech transcription, machine translation, and other areas
 have become so good that they're practical enough for companies to care
@@ -416,101 +417,98 @@ are throwing a lot of funding at machine learning researchers in industry
 research labs, which speeds up progress.
 
 
-### Avoiding Feature Engineering
+### Architecture Engineering is Easier and Simpler Than Feature Engineering
 
-Here is the other diagram people always bring up in deep learning.
+![Features vs neural nets](/public/dl-philosophy/features.svg)
+{: .centered }
 
-FEATURE ENGINEERING PICTURE
+(From Andrej Karpathy's presentation at Bay Area Deep Learning Summer School 2016)
+{: .centered }
 
 Traditionally, when people have wanted to apply machine learning to a problem,
-they take the raw data and create *features* of the data. These are human-designed
-heuristics of what's important about the data. For example, in spam detection,
-the raw text is the original email text, and your features could be the number of
-typos, relative word frequency, etc. This transforms the data into what experts
-think is important. A function is then fit to the transformed data.
+they take the raw data and create *features* of the data. These are
+human-designed heuristics of what's important about the data.
+In spam detection, features could be relative word frequency, number of typos,
+etc.
 
-The feature engineering step is needed because many machine learning
-methods often aren't expressive enough to work with the raw data. Well, to be more
-exact, they sometimes do - but they don't do so often enough.
+You can think of features as biases humans place on the training process.
+Ideally, we wouldn't need features, but for a long time, feature engineering was required to
+learn anything, because the existing machine learning
+methods just weren't expressive enough.
 
-Neural nets seem to get around this issue - in more domains than previous methods,
-they get better performance without feature engineering.
+Neural nets are challenging this paradigm. Computer vision used to use many heuristically
+designed features that were specific to image-based datasets. Here's a slide
+where Karpathy points out how it used to be in 2011.
 
-DEEP LEARNING PICTURE
+![Features old](/public/dl-philosophy/old_features.svg)
+{: .centered }
 
-Once again, this is true, but I feel it still misses something. You can think
-of features as biases humans place on what the model should optimize over.
-That human bias is still present in neural nets, but it gets offset to the
-neural net architecture chosen for the problem. Convolutional nets are
-good at translation invariant patterns, RNNs are good for sequential data,
-dropout is good if you want better regularization of the model, and so on.
-These choices are made before training begins, just like feature engineering.
+**This doesn't remove human design entirely.** Features are biases on what
+the model should optimize over, but a similar thing happens with neural net
+architectures. Different architectures are better at representing different
+datasets. CNNs are good for translation invariant patterns,
+RNNs are good for sequential data,
+fully convolutional models may beat models that mix convolutions with pooling,
+and so on.
+Architecture choices are made before training starts, just like feature
+engineering.
 All we've done is trade expert feature design for expert neural net
 architecture design.
 
-This leads to th next points.
-
-
-### Simplicity/Unification
-
-(Note: planning to make this just unification, and moving the simplicity
-part to the previous heading.)
-
-**What makes neural nets different is that architecture design is easier and
+**The key is that architecture design is easier and
 more general than feature design.**
 
-Credit goes to Andrej Karpathy for putting these thoughts into words, because
-when I read them the first time, a ton of incomplete ideas I had clicked into place.
+You don't need to know all the image
+statistics tricks if you want to do computer vision. Similarly, neural machine
+translation lets you skip the linguistics-specific knowledge that rules previous
+systems. Screw sentence alignment, just shove it all into a single hidden state
+vector, or do some attention mechanism. Key words? Eh, just change everything into
+word vectors, they'll do the right thing.
 
-Consider computer vision. Compared to what people did before, describing
-convnets is easy! Throw some conv layers together, add some pooling and
-fully connected layers to glue it all together, and done.
+(Sometimes, it feels insane that we can wave our hands while shouting neural
+nets, and then get state-of-the-art translation results.)
 
-IMAGE from Karpathy's slide from DLSS
+Simpler model design means lower barrier to entry and fewer places to have bugs.
+Which means more researchers, and faster implementation. There's no single
+reason deep learning is growing quickly. It's all interconnected.
 
-Similarly, there used to be a ton of linguistics-specific knowledge in machine
-translation. Recent papers suggest that word embeddings and large LSTMs let
-you sidestep all of that knowledge.
+### Unification of Approaches
 
 Across several fields, we're starting to see a unification of methods. Convnets
 are good at pattern recognition, which is good for computer vision, but it's also
 good for Computer Go. RNNs are good at sequential data, which is good for
-language models, but it's also good for reinforcement learning, and even image
-generation if you view image generation as a sequence of pixel outputs. (Link PixelRNN here.)
+language models, but it's also good for reinforcement learning problems, and
+even image generation, if you formulate image generation as a sequence of
+pixel outputs. (Link DRAW here)
 
-They're all unifed under the banner of neural nets. It made sense for Google to
-throw all their neural net researchers onto one team, even if they were working on
-different problems, because they all knew how to talk about neural nets. And
-even if they weren't directly related, sometimes an idea from one domain can
-spark an idea in another. Everything's connected, through the neural net
-bridge.
+They're all unifed under the banner of neural nets, and that gives a common
+language for sharing ideas. This is why Google Brain exists. By making all
+the neural net researchers work in the same building, they all start working
+faster. It's easier for ideas in one domain to spark ideas in another
+when the research is founded on the same principles.
 
-PICTURE
+To use an analogy: it's as if neural nets are an open source repository of
+information. People play around with them on the problem of their choice,
+and when they discover something that could generalize outside their problem,
+they send what they learned back upstream. Someone else can then pull that
+change, spin it to fit the problem they're working on, push what *they* learned,
+and the cycle of research continues.
 
-Progress in one domain pushes progress in the others. You could see this as
-neural nets rising, and pulling everything along with it. But I see it the other
-way around: everything is rising, and neural nets are along for the ride.
+MAYBE HAVE A DIAGRAM HERE?
 
-PICTURE
-
-(I want to make some point about neural net knowledge becoming more important than
-domain specific knowledge but I can't get the phrasing right so screw it.)
-
-### The Standardized Benchmarks
-Benchmark Standardization
-========================================================================
-
-People care a lot about open-sourced datasets. There are good reasons for this.
-
-* A common dataset lets researchers agree on the exact nature of the problem. (idk if I like this)
-* Working from a well-known dataset removes external variables.
-* Building a large dataset can be costly because it requires human labels. If
-datasets aren't standardized, each research group has to spend time recreating
-their dataset, which slows down progress.
+(Yes I did just use source control as an analogy for research. This might be
+the most computer-sciency analogy I've ever done.)
 
 
 Neural Nets as Computation Blocks
 ================================================================
+
+(Note: This section repeats a lot of things I said before. I'm still figuring out where
+I want the new ideas to go. The modularity/composability stuff is actually
+pretty important - most researchers think of neural net layers as a block
+of compute that will do the right thing.)
+
+(I'm actually not happy with this section in general.)
 
 Andrew Ng has a nice quote about why deep learning is so flexible. Most machine
 learning approaches map numbers to other numbers. Deep neural nets are different -
@@ -543,29 +541,13 @@ task you want to solve. If you train every component individually, each
 component is optimized for its own objective, which may not be exactly aligned
 with the final objective.)
 
-FOOOOOOO
-
-The field is also very, very experimentalist. Deep learning has found its
-biggest niche in applications, and in applied problems, you care about
-final performance first and why it works second. Or to be more precise: in
-applied problems you only care about why it works because it lets you try
-new ideas in a more principled way, so even fuzzy inprecise explanations
-with empirical evidence in their favor is good enough.
-
-This makes deep learning deeply unsatisfying for theoretically oriented people.
-Some people are working on theoretical explanations for why deep learning
-should work, but we're not there yet.
-
-This can also make the field appear shallower than it really is. Ideas are cheap,
-execution is hard. Many papers in deep learning have fairly natural extensions,
-and in other fields authors may spend the time exploring those extensions very
-carefully. But because there are so many authors, and because everyone procrastinates,
-researchers often run out of time to implement and hyperparam tune those
-extensions. There's a strong bias to release early. Submissions bunch up around
-conference deadlines, but arXiv papers are perfectly acceptable too.
-
-
 # Research Directions
+
+**This is not going to be a complete list.** I know I've been talking about
+the field of deep learning a lot in this post, but in many ways neural nets
+are more like a tool than a field. When I think about the research, it divides
+into three broad categories: standard neural nets applied on novel problems,
+nonstandard 
 
 ## "Throw a Neural Net, See If It Works"
 
