@@ -543,15 +543,35 @@ with the final objective.)
 
 # Research Directions
 
-**This is not going to be a complete list.** I know I've been talking about
-the field of deep learning a lot in this post, but in many ways neural nets
-are more like a tool than a field. When I think about the research, it divides
+## Disclaimer
+
+When I was planning out this post, this was the section I was looking forward
+to and dreading the most. I'm excited because there are a ton of neat deep
+learning ideas that should be more widely known. I'm dreading it because
+I think people might see it as a canonical list of everything people in deep
+learning are working on.
+
+Let me address the latter part first. No, I am not going to explain what
+everyone in deep learning works on, because there's no way I have a complete
+picture, and if I did that I might as well be writing a survey paper.
+
+If I'm omitting your favorite subfield, I'm not doing it because I think the
+subfield isn't worth the time, I'm doing it because I am but one person, and
+I can't keep track of everything.
+
+## The Sliding Scale of Deep Learning Research
+
+I know I've been talking about "the field of deep learning" a lot in this post,
+but for many people neural nets are more like a tool than a field.
+When I think about the research, it divides
 into three broad categories: standard neural nets applied on novel problems,
-nonstandard 
+nonstandard neural nets applied on problems where standard neural nets
+have already been tried, and research done for the sake of pushing our
+expectations of what neural nets can do.
 
 ## "Throw a Neural Net, See If It Works"
 
-Sometimes, throwing a neural net at the problem just makes it work out.
+Sometimes, throwing a neural net at the problem just works.
 
 This kind of research happens in domains where people haven't tried using
 neural nets before. For example, computational biology for gene sequencing,
