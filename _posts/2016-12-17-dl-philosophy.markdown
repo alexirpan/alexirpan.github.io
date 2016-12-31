@@ -32,13 +32,12 @@ Wikipedia's description.
 For this post, I'll phrase it differently.
 
 > Machine learning is the study of algorithms that can learn functions between
-> two sets of data.
+> a set of inputs and a set of outputs.
 
-In many machine learning problems, we have examples of desired
-inputs and desired outputs. Using those examples, we want to train a function
-to map from those inputs to those outputs. After training is done, we evaluate
-that function on new inputs to get a guess/approximation of the true output.
-Or in short: every problem in ML is a function learning problem.
+In many machine learning problems, we have dataset of example (input, output)
+pairs. Using those examples, we train a function that matches those
+(input, output) pairs. After training, we can evaluate that function on
+new inputs to get predictions on what the output should be.
 
 Examples!
 
@@ -47,23 +46,20 @@ fits the data. We can use linear regression.
 
 Image of points in a plane
 
-Input set: The x-coordinates of each point.  
-Output set: The y-coordinate of each point.  
+Dataset: Pairs $$(x, y)$$  
 Algorithm: Linear regression.  
-Function learned: a $$f(x)$$ of the form $$f(x) = ax + b$$ such that for every $$(x, y)$$, $$y$$ is close to
-$$f(x)$$. (To be precise, linear regression minimizes $$\sum (x,y) (y - f(x))^2$$)
+Function learned: a $$f(x)$$ of the form $$f(x) = ax + b$$ such that
+$$f(x) \approx y$$ for every $$(x,y)$$ in our dataset.
 
 Suppose the points were in 3D space instead. Linear regression still works,
 but in this case we're learning a 2D plane instead of a line.
 
 Image of points in 3D space.
 
-Input set: The (x,y)-coordinates of each point.  
-Output set: The z-coordinate of each point.  
+Dataset: Pairs $$((x,y), z)$$  
 Algorithm: Linear regression.  
 Function learned: a $$f(x,y)$$ of the form $$f(x, y) = ax + by + c$$
-such that for every $$(x, y, z)$$, the sum
-$$\sum (x,y,z) (z - f(x,y))^2$$ is minimized.
+such that $$f(x, y) \approx z$$ for every $$((x,y), z)$$ in the dataset.
 
 In the first example, we had two-dimensional data $$(x,y)$$, but the
 data was clustered around a line, which is a one-dimensional object.
@@ -99,7 +95,7 @@ PICTURE HERE
 Input set: A colleciton of English sentences.  
 Output set: A translation of each sentence into Spanish.  
 Algorithm: Something from natural language processing. Nowadays, that
-means a big recurrent neural net or LSTM.  
+means some kind of recurrent neural net.  
 Function learned: $$f(ENGLISH SENTENCE) = TRANSLATION$$
 
 Say we're a site that hosts a lot of pictures (like Facebook), and we
@@ -148,8 +144,10 @@ PICTURE of perceptron and neural net
 This is the way many, many people introduce neural nets, and I hate it.
 
 Yes, neural nets are biologically inspired. Yes, neuroscience matters to
-deep learning. I hate it not because it's incorrect, but because the narrative
-of neural nets as artificial brains is a huge popular science meme that
+deep learning. But I hate this explanation, not because it's wrong, but
+because it's just right enough to say in an interview about deep learning.
+The narrative
+of neural nets as artificial brains becomes a huge popular science meme that
 breeds misconceptions about the field.
 Anthropomorphizing neural nets and explaining what they aim to be is
 much easier than explaining what they actually are.
@@ -161,6 +159,14 @@ Unfortunately, it's not as accessible, but it has fewer dreams of grandeur.
 > Each layer has a weight matrix $$W$$ and bias parameters $$b$$. These layers
 > alternate between applying a linear function and applying a nonlinear
 > activation function.
+
+Every neural net has an input layer (the layer that data enters from),
+an output layer (the layer that returns the final desired output), and
+intermediate or hidden layers (layers that do intermediate computation
+on the data.)
+
+Letting $$\sigma$$ denote the activation function and $$\ell_i$$ denote the
+output of layer $$i$$, a two hidden layer neural net would look like this.
 
 $$
     \ell_1(x) = \sigma(W_1x + b_1)
@@ -174,10 +180,12 @@ $$
     f(x) = \ell_3(x) = \sigma(W_2\ell_2(x) + b_3)
 $$
 
+PUT A NEURAL NET PICTURE HERE?
+
 (For emphasis: describing neural nets as artifical brains isn't *wrong*,
 but the approximation between neural nets and brains is very very crude.
-Even the neuroscience researchers in deep learning admit this is true.
-In fact, that's why they're interested in the field;
+Even the neuroscientists in deep learning admit this is true.
+In fact, that's why they're interested in the field -
 they want to push neural nets closer to their real world inspiration.)
 
 # What Makes Neural Nets Special?
@@ -193,7 +201,8 @@ $$f$$, there is an $$f' \in F$$ that's close to $$f$$ at every point
 (for any $$\epsilon > 0$$, there exists an $$f' \in F$$ such that
 $$|f(x) - f'(x)| < \epsilon$$ for all $$x$$)
 
-**Neural nets are universal function approximators.**
+[There is a theorem that proves the family of
+neural nets with one hidden layer is a universal approximator](https://en.wikipedia.org/wiki/Universal_approximation_theorem).
 
 Recall that machine learning is all about learning the right function.
 Universal approximation tells us that in principle, it's always possible to
@@ -201,33 +210,46 @@ learn a neural net close to the true function.
 
 ## A Practical View
 
-It's neat that this is true. However, when you look at the proof for
-universal approximation, all it proves is that we can hardcode a neural
-net's output at a specific $$x$$, and if we hardcode the output at enough
+If read through the proof for universal approximation, you realize
+all it proves is that we can hardcode a neural net's output at a specific
+$$x$$, and if we hardcode the output at enough
 different $$x$$ we can approximate any function.
 
-Doing this construction in practice would require a ridiculously large neural
-net.
+This really isn't that exciting of a result. In practice, a neural
+net that's too large actually will memorize the entire dataset, just because
+that's the optimal strategy for fitting the data. (This is explored nicely
+in a recent [ICLR 2017 submission](https://openreview.net/pdf?id=Sy8gdB9xx).)
 
-Neural nets matter for a different reason: in practice, modestly sized neural
-nets are 
-**they are differentiable, they
-generalize well in practice, and given enough data they outperform every
-other approach.**
+However, the goal of machine learning isn't to memorize the dataset we're
+given at training time. The goal is to learn some structure about the data
+that we expect to carry over to test time, and represent that data in the
+learned function.
 
-Here is the classical picture from every talk Andrew Ng ever does about
-deep learning.
+Neural nets matter for a different reason: **when properly tuned, not only
+do they generalize well, they also keep improving in performance as
+the amount of data grows.**
 
-PICTURE
+I've been to three different talks by Andrew Ng. In all those talks,
+he had a variant of this slide.
 
-The pattern so far is that above a certain data threshold, neural net approaches
-outperform every other approach. Which is weirdly fascinating, when you think about it.
-This claim is almost an axiom in the deep learning community; the only counterexamples
-I know of are pathological ones.
+![Andrew Ng deep learning performance graph](/public/dl-philosophy/dl-scale.jpg)
+{: .centered }
 
-When you have a hammer, everything looks like a nail. And so far, neural nets are
-a big hammer that turns a ton of problems into nails.
+It's funny that this graph keeps showing up, but it's true and it's worth repeating.
+If you have a very large dataset, you can simply try to train a very large neural net, and
+if you have the compute power, it's going to beat everything
+else. That just wasn't true for previous state of the art algorithms.
+This principle has been proven true so often that it's basically an axiom of
+the field.
 
+When you have a hammer, everything looks like a nail. So far, neural nets are
+a very big hammer, and turns out a lot of hard problems were secretly just
+nails.
+
+## Differentiation
+
+(Note: I'm probably cutting this section. I think it doesn't fit with the
+rest of the post.)
 
 Why does differentiability matter?
 The dirty secret of machine learning is that 90% of it reduces to gradient
@@ -256,54 +278,69 @@ is differentiable. And neural nets are differentiable.
 
 # What's the Field Like?
 
-The field is very exciting. Everything's moving ridiculously quickly, which is
-painful if you're trying to keep up with current research, but it feels like
-there's a new surprising result every month.
+It's very exciting, and occasionally very stressful.
+Everything's moving ridiculously quickly, which makes keeping up with current
+research impossible. [Arxiv Sanity Preserver](http://www.arxiv-sanity.com/)
+helps, but there's just so much to read.
+It feels like there's a new surprising result every month. Which isn't a
+surprise, when you consider how fast research conferences are growing.
 
-To emphasize how fast the field is moving, here are a few examples.
+![NIPS attendance graph](/public/dl-philosophy/nips_attendance.png)
+{: .centered }
+
+This graph goes up to 2015. In 2016, NIPS had around 5800 registrations,
+over a 50% increase. It would have been more, if they didn't cap registration
+(which they had to do for the first time.) [Source](https://signalprocessingsociety.org/get-involved/speech-and-language-processing/newsletter/brief-review-nips-2015)
+{: .centered }
+
+This might make the 1980s wave of neural net researchers sad, but anything older
+than 2010 feels like ancient work to me. Do you understand how ridiculous
+that is? No, like, *really* understand it. Think about all the work from the
+past, and realize how much of it got upended in only six years. It's insane.
+
+When a good idea arises in deep learning, it spreads like wildfire. Here's a
+few examples.
 
 * The public release of [TensorFlow](https://www.tensorflow.org/) was just
-over a year ago. (On my birthday! Hooray!) It's become one of the big
-machine learning frameworks.
-* [The paper for Adam](https://arxiv.org/abs/1412.6980), a new gradient optimization
-method, came out about two years ago. It's since become the optimization
-algorithm of choice for a ridiculous number of papers. Google Scholar
-says it has almost 1300 citations.
-* [Dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) debuted in
-2014, and has over 1700 citations.
+over a year ago. (On my birthday too!) It's since become synonomous with
+deep learning among many people.
+* [The paper for Adam](https://arxiv.org/abs/1412.6980)
+came out about two years ago. It's since become the default optimization
+algorithm to use instead of stochastic gradient descent. (Unless you're using
+models that were trained with RMSProp back in the day, and you don't want
+to re-tune your learning rates.) The paper has almost 1300 citations.
+In another year, maybe we'll all be using [Eve](https://arxiv.org/pdf/1611.01505.pdf),
+assuming their results keep holding up.
+* [Dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) debuted
+in 2014. The paper has over 1700 citations, and it's one of the more common
+regularization tricks.
 * [Batch norm](https://arxiv.org/abs/1502.03167)
-came out in 2015, and it's since become the default for image models - many
-models don't train at all if you don't use batch norm.
-* [ResNets](https://arxiv.org/abs/1512.03385)
-came out a year ago, became the new big thing in image recognition after they
-beasted ImageNet 2015, and now they already feel like old news.
+came out in 2015, and it's since become the default for image models - the number
+of iterations can drastically reduce. In some reinforcement learning problems,
+models won't train at all without use batch norm.
+* [Residual networks (ResNets)](https://arxiv.org/abs/1512.03385)
+came out a year ago. The paper has 1000 citations, which actually feels a bit
+low. I think we still haven't fully exploited the ResNet idea, and I expect that
+citation count to keep climbing.
 
-Maybe I'm unintentionally cherrypicking here, but it feels weird that a ton of
-important papers came out just in the past three years. It's impossible to keep
-up with everything. [Arxiv Sanity Preserver](http://www.arxiv-sanity.com/)
-helps, but there's just so much to read.
+I could be cherrypicking unintentionally - maybe the influential papers are
+primed in my brain. Still, it feels weird that a ton of
+important papers came out just in the past three years.
 
 To quote one of my friends,
 
 > Is everything [in deep learning] SUPER DUPER OPEN or is it just me?
 
-In some ways, it is. The core idea in many papers can be shockingly
-simple to describe. Dropout is literally a few sentences.
-
-> To train a neural net with dropout, for each neuron, multiply the output
-> by $$1/p$$ with probability $$p$$, and otherwise set it to $$0$$. This keeps
-> the expected sum of outputs the same as without dropout, but the random
-> dropping ensures that the neural net's output is more robust.
-
-When I read papers in the field, most of time I think, "Wait, that's it?
-That's so simple!"
+In some ways, it is. With enough experience, the core idea of many papers can be
+shockingly easy to describe, often fitting into 1 or 2 paragraphs.
 
 As a guy who took grad level theoretical computer
-science courses for **fun**, this can be deeply unsatisfying.
-The TCS papers I've read have a collection of core ideas that branch into
-proof details. The deep learning papers I've read have a single core idea
-that branches into the details of the paper's experiments. (This excludes
-the small set of theoretical deep learning papers, for obvious reasons.)
+science courses for fun, this can be a bit jarring.
+The TCS papers I've read have a group of core ideas that branch into
+details for the proof (which you have to read to understand).
+The deep learning papers I've read have a single core idea
+that branches into the details of the paper's experiments (which you can usually
+skip unless you're skeptical of the results or want to reproduce the paper).
 
 The field is very, very experimentalist. Deep learning has found its
 biggest niche in applications, and in applied problems, you care about the
@@ -317,12 +354,13 @@ work.
 
 And there are almost always intuitive extensions. In deep learning, ideas
 are cheap, and execution is hard. To quote Andrew Ng, "90% of machine learning
-is dirty work." People have ideas all the time; the glory is in getting them
-to work.
+is dirty work." (TODO: source this.) People have ideas all the time. The glory is in making ideas work.
 
-In many paper stories, I've heard the same story: we tried something, and
+I've heard authors talk about their paper, and it always sounds like a variant
+of this: we tried something, and
 it failed. We tried again, and it failed. We tried, again and again, and
-it finally worked. By the time it worked, we had 3 days to write the paper.
+it finally worked, three days before the deadline. We spent those
+three days writing the paper.
 
 ![Graph of NIPS submissions vs time to deadline](/public/dl-philosophy/nips_submission.png)
 {: .centered }
@@ -335,22 +373,21 @@ just ran out of time, because everyone procrastinates and research is hard and
 deadlines are brick walls that force you to aim for completion instead of
 perfection.
 
-Also, there are a ton of people in the field. No, like, a ton. Do you know how
-big NIPS was this year? It was about 5800 people. For a research conference.
 Cultural norm is to publish on arXiv, submit to conferences over journals,
 publish your conference submission on arXiv as soon as you're allowed to,
 and publish often, with source code if you have the time to clean it up.
 This is great for sharing ideas, but it pushes researchers to put their work
-out early, because of how easy it is to get scooped. When that many people
-are working on similar problems, solutions tend to arise at the same time.
+out early, because of how easy it is to get scooped.
 
-This isn't the best environment for well-written papers that flip your research
-worldview. It leads to papers that feel very incremental and obvious, after
-the fact.
+Everyone knows that a lot of people are working in the field, and everyone
+knows that arXiv is an acceptable publication area, and once all of that's
+common knowledge, you get the state of things today.
+It's not the best environment for well-written papers that address all natural
+concerns.
+It leads to papers that feel very incremental.
 
-So yes, it is all very open, and the ideas are often very simple. But getting
-things to work at all (and work well) is a big enough achievement to justify
-publication.
+I think the research culture is a net positive, but it does kind of suck to
+constantly worry if today is the day you're going to get scooped.
 
 # Why is Deep Learning Progressing So Fast? A Few Arguments
 
