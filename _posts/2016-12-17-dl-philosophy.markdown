@@ -5,8 +5,6 @@ date:   2016-12-22 22:14:00 -0700
 ---
 
 This post collects various thoughts I've had about deep learning.
-It gives a justification for why deep learning is such a big deal,
-then broadly classifies research in the field into a few buckets.
 
 This is **not** intended to be a tutorial in deep learning, because there are
 a ton of those already. I haven't seen as much writing about the field itself,
@@ -397,7 +395,7 @@ research labs, which speeds up progress.
 ![Features vs neural nets](/public/dl-philosophy/features.svg)
 {: .centered }
 
-(From Andrej Karpathy's presentation at Bay Area Deep Learning Summer School 2016)
+(From Andrej Karpathy's presentation at Bay Area Deep Learning School 2016)
 {: .centered }
 
 Traditionally, when people have wanted to apply machine learning to a problem,
@@ -466,8 +464,8 @@ To use an analogy: it's as if neural nets are an open source repository of
 information. People play around with them on the problem of their choice,
 and when they discover something that could generalize outside their problem,
 they send what they learned back upstream. Someone else can then pull that
-change, spin it to fit the problem they're working on, push what *they* learned,
-and the cycle of research continues.
+change, modify it to fit the problem they're working on, and
+push what *they* learned back upstream.
 
 MAYBE HAVE A DIAGRAM HERE?
 
@@ -478,10 +476,9 @@ the most computer-sciency analogy I've ever done.)
 
 (Note: This section repeats a lot of things I said before. I'm still figuring out where
 I want the new ideas to go. The modularity/composability stuff is actually
-pretty important - most researchers think of neural net layers as a block
-of compute that will do the right thing.)
+pretty important.)
 
-(I'm actually not happy with this section in general.)
+(I'm actually not happy with this section in general, needs a rewrite.)
 
 Andrew Ng has a nice quote about why deep learning is so flexible. Most machine
 learning approaches map numbers to other numbers. Deep neural nets are different -
@@ -516,91 +513,130 @@ with the final objective.)
 
 # Research Directions
 
-## Disclaimer
-
-When I was planning out this post, this was the section I was looking forward
-to and dreading the most. I'm excited because there are a ton of neat deep
-learning ideas that should be more widely known. I'm dreading it because
-I think people might see it as a canonical list of everything people in deep
-learning are working on.
-
-Let me address the latter part first. No, I am not going to explain what
-everyone in deep learning works on, because there's no way I have a complete
-picture, and if I did that I might as well be writing a survey paper.
-
-If I'm omitting your favorite subfield, I'm not doing it because I think the
-subfield isn't worth the time, I'm doing it because I am but one person, and
-I can't keep track of everything.
-
 ## The Sliding Scale of Deep Learning Research
 
 I know I've been talking about "the field of deep learning" a lot in this post,
 but for many people neural nets are more like a tool than a field.
-When I think about the research, it divides
-into three broad categories: standard neural nets applied on novel problems,
-nonstandard neural nets applied on problems where standard neural nets
-have already been tried, and research done for the sake of pushing our
-expectations of what neural nets can do.
+When I think about the research, it divides into roughly three categories.
 
-## "Throw a Neural Net, See If It Works"
+Note that when I say roughly, I mean roughly. Researchers slide up and down
+the spectrum very often. Projects can start in one category and slide to
+another depending on how the experiments go.
 
-Sometimes, throwing a neural net at the problem just works.
+(Note: below is all somewhat incomplete.)
 
-This kind of research happens in domains where people haven't tried using
-neural nets before. For example, computational biology for gene sequencing,
-or medical imaging.
+## Standard Architectures on New Problems
 
-In these domains, the neural net uses standard techniques. Most of the work
-is in collecting a large, clean dataset. These are domains where people
-have very high confidence the neural net will solve the problem, once you
-get all the plumbing out of the way.
+In this work, people strongly believe vanilla neural net methods will work out
+of the box. They don't care about neural nets in particular, they just want
+to solve the problem they're working on, using neural nets as a subroutine.
+This research has no novelty from the deep learning side (besides learning
+that neural nets can solve this problem too.)
 
-(Need to fit in the Andrew Ng quote here.)
+The struggle in this research is often in obtaining a large, clean dataset
+to run existing methods on. After all the plumbing is done, the training itself
+is straightforward.
 
-## "To Use Neural Nets on the Problem, We'll Need Some Cleverness"
+[Computational biology](http://onlinelibrary.wiley.com/doi/10.15252/msb.20156651/full).
 
-In these domains, applying known neural net methods won't improve performance, usually because
-people have already applied known methods to get the current state of the art.
-Prime examples are image classification, speech recognition, machine translation,
-and my personal favorite of reinforcement learning.
+[Medical imaging (diabetic retinopathy)](http://jamanetwork.com/journals/jama/article-abstract/2588763)
 
-People in these domains aren't interested in neural nets for the sake of
-neural nets. They're interested in neural nets for the sake of solving their
-problem better. Better translation, better image segmentation, etc. If you gave
-these researchers a black box method that worked better, but didn't use neural
-nets, they would switch to that method without much regret.
+[Premise selection for Theorem Provers (DeepMath)](https://arxiv.org/abs/1606.04442)
 
-That doesn't mean they're not interested in developing neural net architectures.
-It just means they're embedded into the feedback loop of research. In our
-specific problem, current neural net architectures are lacking. So we develop
-new ones that solve the issues we've noticed. Those architectural ideas go upstream,
-and can get used in other fields.
+My research area of deep reinforcement learning, falls into this bucket.
+Sometimes there are new architecture ideas, but much of the research is
+about developing new RL algorithms. These algorithms are usually independent
+of the function representation, and the only difference in deep RL is that
+the function representation happens to be a neural net. I have another post
+planned for deep reinforcement learning, so I'll leave the details for another
+time.
 
-PUT A PICTURE EXPLANING THIS HERE
+Sometimes, standard approaches don't work out. This leads into the next
+category.
 
-ImageNet led to the development of highway networks and residual networks.
-Language problems led to bidirectional RNNs. Audio generation led to WaveNet.
+## New Architectures Developed for Existing/New Problems
 
-## Neural Nets for Their Own Sake
+In the flagship deep learning problems (image classification, speech
+recognition), people have run the simple ideas into the ground. Even some
+novel problems stand up to the neural net hammer more than you'd expect.
 
-Research in this area focuses entirely on extending our understanding of
+In those cases, people need to develop new architectures ideas or new
+loss functions. The goal is still on solving the current problem - any
+advances to neural nets themselves are incidental. (Note: maybe link to
+the section about unification? Or maybe I don't need to hammer this point
+home.)
+
+Here, aspects of the problem solution depend or heavily assuume the function
+representation is a neural net. They may also use custom loss functions
+that had to be developed for the problem at hand.
+
+[Residual networks](https://arxiv.org/abs/1505.00387) were developed by
+Microsoft Research Asia for ImageNet, but could be applicable in other fields.
+
+In [Stochastic Neural Networks for Hierarchical Reinforcement Learning](https://openreview.net/pdf?id=B1oK8aoxe),
+the network is mostly standard, but a mix of random inputs and mutual
+information reward encourages the main goal: automatic learning of low
+level skills in the environment.
+
+[WaveNet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/) by
+Deepmind was developed to improve audio generation. Although the focus was
+audio generation, the approach is general enough to be applicable to other
+problems.
+
+In [Towards End-to-End Speech Recognition with Recurrent Neural Networks](http://www.jmlr.org/proceedings/papers/v32/graves14.pdf),
+they used bidirectional LSTMs, which actually were first developed over a decade
+ago, but they needed to be combined with many speech recognition specific
+loss functions to give good performance.
+
+[Progressive Neural Networks](https://arxiv.org/abs/1606.04671) are an approach
+for transfer learning and avoiding catastrophic forgetting in reinforcement
+learning. The architecture used is general enough to be applied to image
+recognition too, as seen in [this ICLR 2017 submission](https://openreview.net/pdf?id=ryZqPN5xe).
+
+
+## Research Exclusively on Neural Nets
+
+Research in this area has the primary goal of extending our understanding of
 neural nets and extending the problems that neural nets could be applied to.
+Although the papers run benchmarks from other problems, doing well on those
+benchmarks isn't the point.
 
 ### Theoretical Justification for Neural Nets
 
 This research focuses on devising theoretical explanations for the power of neural
-nets. This work is entirely about devising theories that fit existing
-empirical evidence; it isn't directly applicable to current problems of the day.
+nets. To tell the truth, I only have passing knowledge of the theory work, so
+don't trust my comments too much.
 
-(That's not a knock against the research. Pretty much every science has gone
-through something similar, and theory always lags behind practice. (LINK HERE).)
+* [The Loss Surface of Multilayer Networks (AISTATS 2015)](https://arxiv.org/pdf/1412.0233.pdf).
+Relates neural networks to spherical spin-glass models.
+* [On the Number of Linear Regions of Deep Neural Networks (NIPS 2014)](http://papers.nips.cc/paper/5422-on-the-number-of-linear-regions-of-deep-neural-networks).
+Proves number of linear regions of the network can grow exponentially with
+depth.
+* [Critical Behavior from Deep Dynamics: A Hidden Dimension in Natural Language](https://arxiv.org/abs/1606.06737).
+Shows that empirically, mutual information between symbols in language data
+decays by a power law. Proves simple Markov models cannot have this property,
+but RNNs and LSTMs can.
 
-Some results from this area: a proof that there are functions whose appoximations
-require an exponentially large 1 hidden layer neural net, but only a polynomially
-large deep neural net. Works that try to link algebraic topology to deep learning.
-A view of neural nets through a spin glass model, which I don't understand very
-well. An argument that models with history are required for sequence data, based
-on an information theory argument between symbols in the sequence.
+If you're interested in this flavor of research, [Yoshua Bengio gave a good talk
+about this Bay Area Deep Learning School 2016](https://www.youtube.com/watch?v=11rsu_WwZTc).
+The talk also covered the next research area of...
+
+### Duplicating Neuroscience and Biological Plausibility.
+
+Demis Hassabis, co-founder of DeepMind, was part of a panel at the NIPS 2016
+Brains & Bits workshop. He gave a succinct justification for why neuroscience
+matters. We know the brain works for intelligence. If we can understand the
+brain and reproduce it in software, it has to work. That lets us commit to
+5 year or 10 year projects with more confidence than we'd normally have.
+
+Again, I'm not that familiar with neuroscience
+I'm less familiar with this due to my biases, but I'll list some work.
+
+* Feedback alignment (a more biologically plausible backprop)
+* Energy based models (ML algorithm that could run better on analog hardware)
+* Count-based exploration (can be motivated by the hippocampus)
+* Modulated locomotor controllers (a fast reflex "spinal cord" and slower LOOK UP THE PAPER)
+
 
 ### Interpretability of Neural Nets
 
@@ -613,30 +649,6 @@ It almost feels wrong to call this a research area, because I don't know of
 anybody whose primary research focus is interpreting neural nets.
 However, many papers include visualizations anyways, because it makes the
 paper stronger.
-
-
-### Duplicating Neuroscience
-
-Let me go on a tangent for a bit.
-
-I don't like it when people explain neural nets as approximating neurons in
-the brain. At a very approximate level, it's true, but every time a researcher
-talks about neuroscience inspiration, ten spectators of the research walk away
-with inflated misconceptions.
-
-That being said, neural nets have undeniable influence from neuroscience, and
-several researchers in the field have neuroscience background. At the Brains & Bits
-workshop at NIPS this year, Demis Hassabis had a succinct justification. We
-know the brain works for intelligence. If we can understand the brain and
-reproduce it in software, it's guaranteed to work. 5 year or 10 year projects
-based on neuroscience are easier to justify.
-
-I'm less familiar with this due to my biases, but I'll list some work.
-
-* Feedback alignment (a more biologically plausible backprop)
-* Energy based models (ML algorithm that could run better on analog hardware)
-* Count-based exploration (can be motivated by the hippocampus)
-* Modulated locomotor controllers (a fast reflex "spinal cord" and slower LOOK UP THE PAPER)
 
 ### Make ALL The Things Differentiable!
 
