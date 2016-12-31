@@ -4,47 +4,14 @@ title:  "Deep Learning Philosophy"
 date:   2016-12-22 22:14:00 -0700
 ---
 
-THINGS FROM OUTLINE TO ADD
-
-WHY ARE NEURAL NETS A BIG DEAL?
-
-* Emphasize that they actually work, and how important this is.
-* Emphasize they can be thought of as modular computation blocks,
-
-FIELD AXIOMS
-
-* Given enough data and a large enough neural net, you can train the
-neural net to solve the problem.
-* Neural nets can be treated as computation blocks that will learn
-the proper behavior (if tuned well)
-* (Emphasize abstraction barriers in the above.)
-* Given enough data, end-to-end architecture will perform best.
-* Neural nets aren't the answer to everything, but they're the answer to
-many things.
-* We have not hit the limits of neural nets (yet).
-
-CULTURE
-
-* Standardizing on benchmarks is good for progress.
-
-RESEARCH DIRECTIONS
-
-* Generative models based on deep learning (this is getting bundled into applications)
-* Ways to prevent gradient vanishing/exploding.
-* Apply neural nets to problems in the field you care about.
-
-Make sure to add a table of contents!
-
-\* \* \*
-{: .centered }
-
-Summary: This post collects various thoughts I've had about deep learning.
+This post collects various thoughts I've had about deep learning.
 It gives a justification for why deep learning is such a big deal,
 then broadly classifies research in the field into a few buckets.
 
-This is **not** intended to be a tutorial in deep learning. There are a ton
-of those already - see LINKS HERE. However, it will be somewhat technical.
-I won't do proofs, but I won't be afriad to drop a little bit of math.
+This is **not** intended to be a tutorial in deep learning, because there are
+a ton of those already. I haven't seen as much writing about the field itself,
+and as a researcher in the field, I think it's important to understand why
+the field is the way it is.
 
 # Table of Contents
 
@@ -53,30 +20,27 @@ I won't do proofs, but I won't be afriad to drop a little bit of math.
 
 # Background
 
+I know I said this wasn't going to be a tutorial in deep learning, but
+I want this post to be self-contained. Here's the background I expect
+people to have, before getting into the meat of the post.
+
 ## What is Machine Learning?
-
-I can't explain deep learning if I don't explain what machine learning is.
-
-(Note: if you know what features and classification are, you can skip this
-section.)
 
 Here's a definition from a previous blog post, which is a paraphrase of
 Wikipedia's description.
 
 > Machine learning is the study of algorithms that let a computer learn insights from data in a semi-autonomous way.
 
-This definition is valid, but I'll phrase it in a different way.
+For this post, I'll phrase it differently.
 
-> Machine learning is the study of algorithms that learn functions between
+> Machine learning is the study of algorithms that can learn functions between
 > two sets of data.
 
-In basically every machine learning problem, we have examples of desired
+In many machine learning problems, we have examples of desired
 inputs and desired outputs. Using those examples, we want to train a function
 to map from those inputs to those outputs. After training is done, we evaluate
 that function on new inputs to get a guess/approximation of the true output.
-
-Or in short: every problem in ML is a function learning problem, because every
-problem's solution can be described as a function.
+Or in short: every problem in ML is a function learning problem.
 
 Examples!
 
@@ -91,9 +55,8 @@ Algorithm: Linear regression.
 Function learned: a $$f(x)$$ of the form $$f(x) = ax + b$$ such that for every $$(x, y)$$, $$y$$ is close to
 $$f(x)$$. (To be precise, linear regression minimizes $$\sum (x,y) (y - f(x))^2$$)
 
-Suppose the points were in 3D space instead. We can still use linear regression.
-The "linear" in linear regression doesn't mean "forms a line", it's meant in
-the mathematical sense of the word.
+Suppose the points were in 3D space instead. Linear regression still works,
+but in this case we're learning a 2D plane instead of a line.
 
 Image of points in 3D space.
 
@@ -104,18 +67,24 @@ Function learned: a $$f(x,y)$$ of the form $$f(x, y) = ax + by + c$$
 such that for every $$(x, y, z)$$, the sum
 $$\sum (x,y,z) (z - f(x,y))^2$$ is minimized.
 
-In general, when our input set is $$d$$-dimensional data, we say the data has
-$$d$$ **features**.
+In the first example, we had two-dimensional data $$(x,y)$$, but the
+data was clustered around a line, which is a one-dimensional object.
+Similarly, in the second example we had three-dimensional data $$(x,y,z)$$,
+but the data was clustered around a plane, a two-dimensional object.
 
-Points in 3D space are boring. Who cares about those? Let's jump to image data.
-Say we're really, really big fans of corgis. (They're adorable. This is a
-totally valid opinion.) We're such a big fan that we want to automatically
+(Something something manifold hypothesis)
+
+Points in 3D space are boring. Who cares about those? Let's jump to
+research-level problems.
+
+Say we're really, really big fans of corgis.
+We're such a big fan that we want to automatically
 filter our album of photos to only the photos with corgis in them.
-
-Image of a corgi
 
 This is the textbook image classification problem. Each image falls into
 two classes, "contains corgis" and "doesn't contain corgis".
+
+PICTURE HERE
 
 Input set: A collection of images.  
 Output set: A prediction of corginess for each image.  
@@ -124,11 +93,10 @@ vector machines. Now, a convolutional neural net.
 Function learned: A function $$f$$ such that $$f(corgi photo) = corgis$$
 and $$f(not corgi) = NO$$
 
-PICTURE HERE
-
 Suppose we had some English sentences, and wanted to translate them into
-Spanish. This problem differs from the previous one, because there could be
-several valid translations.
+Spanish.
+
+PICTURE HERE
 
 Input set: A colleciton of English sentences.  
 Output set: A translation of each sentence into Spanish.  
@@ -136,21 +104,28 @@ Algorithm: Something from natural language processing. Nowadays, that
 means a big recurrent neural net or LSTM.  
 Function learned: $$f(ENGLISH SENTENCE) = TRANSLATION$$
 
-The image captioning problem. Given an image, generate a description of
-that image. (This is important for the blind and visually impaired -
-Facebook cares about this quite a bit.)
+Say we're a site that hosts a lot of pictures (like Facebook), and we
+want to cater to the visually impaired. These people use screen readers
+to browse the Internet. Given an image, we want to write a caption for
+that image.
 
 PICTURE FROM KARPATHY'S PAPER
 
-The leading approach uses a combination of convnets and RNNs.
+Input set: A collection of images.  
+Output set: A description of each image.
+Algorithm: Use a CNN to encode the data into some representation, then
+have an RNN decode the representation into a setence.  
+Function learned: $$f(corgi) = A dog is sitting on a rug.$$
 
-The programming problem. We have a nautral language description of what
-the program should do, and we want to produce code that implements that algorithm.
+A programmer is bored of implementing design docs. They have a document
+describing the design of the system, and want to produce code that matches
+the design spce.
 
 PICTURE
 
-Right now, the best approach is "hire a team of software engineers". No one
-knows how to do this through machine learning. At least, not yet.
+Input set: Documents that describe what the program should do, in English text.  
+Output set: Implementations of each of those design docs.  
+Algorithm: N/A. The research isn't there yet.
 
 \* \* \*
 {: .centered }
@@ -162,37 +137,57 @@ on applying and developing neural networks.
 
 ### What Are Neural Networks?
 
-Here is the common description.
-
-We can model a neuron in the brain as a unit that activates depending on
-what input it receives. Neural nets connect several of these artificial
-neurons into a block of compute that can be learned from data.
+In neuroscience, we model a neuron in the brain as a unit that computes some
+value from its input. If the value passes a certain threshold, the neuron
+"activates". That activation (or lack of activation) is fed as input to
+later neurons in the brain.
+Neural nets are a implementation of this idea in code. They chain several
+artificial neurons into layers of computation. Given examples of true data, we can train
+the neurons to fire or not fire apporpriately.
 
 PICTURE of perceptron and neural net
 
-Neural nets are definitely biologically inspired. But I think the narrative
-of neural nets as artificial brains is too big in popular science.
+This is the way many, many people introduce neural nets, and I hate it.
+
+Yes, neural nets are biologically inspired. Yes, neuroscience matters to
+deep learning. I hate it not because it's incorrect, but because the narrative
+of neural nets as artificial brains is a huge popular science meme that
+breeds misconceptions about the field.
 Anthropomorphizing neural nets and explaining what they aim to be is
 much easier than explaining what they actually are.
 
-> Neural nets are a particularly useful differentiable family of functions.
-> They apply multiple layers of computation, each of which applies a linear
-> function, then a nonlinear activation.
+I prefer a bottom-up explanation that starts from the math level.
+Unfortunately, it's not as accessible, but it has fewer dreams of grandeur.
 
-I heavily, heavily prefer this viewpoint. But I'm a math person, not a
-neuroscience person, so my bias should be obvious.
+> Neural nets are a differentiable family of functions.
+> Each layer has a weight matrix $$W$$ and bias parameters $$b$$. These layers
+> alternate between applying a linear function and applying a nonlinear
+> activation function.
+
+$$
+    \ell_1(x) = \sigma(W_1x + b_1)
+$$
+
+$$
+    \ell_2(x) = \sigma(W_2\ell_1(x) + b_2)
+$$
+
+$$
+    f(x) = \ell_3(x) = \sigma(W_2\ell_2(x) + b_3)
+$$
 
 (For emphasis: describing neural nets as artifical brains isn't *wrong*,
-but it heavily underplays how crude the approximation is. Not even the
-neuroscience researchers in deep learning would claim neural nets
-replicate the brain. In fact, that's why they're interested in the field;
-they want to push in that direction.)
+but the approximation between neural nets and brains is very very crude.
+Even the neuroscience researchers in deep learning admit this is true.
+In fact, that's why they're interested in the field;
+they want to push neural nets closer to their real world inspiration.)
 
 # What Makes Neural Nets Special?
 
-## The Theoretical View
+Why are neural nets in particular growing so fast? What differentiates them
+from other approaches?
 
-Neural nets are differentiable universal function approximators.
+## A Theoretical View
 
 A family of functions $$F$$ is a universal approximator if for any continuous
 function
@@ -200,55 +195,27 @@ $$f$$, there is an $$f' \in F$$ that's close to $$f$$ at every point
 (for any $$\epsilon > 0$$, there exists an $$f' \in F$$ such that
 $$|f(x) - f'(x)| < \epsilon$$ for all $$x$$)
 
-(Technically the proof only holds when the domain is a compact subset
-of the reals, but it's not a big detail.)
+**Neural nets are universal function approximators.**
 
 Recall that machine learning is all about learning the right function.
-Universal approximation tells in principle, it's always possible to learn
-a neural net for that function.
+Universal approximation tells us that in principle, it's always possible to
+learn a neural net close to the true function.
 
-However, this doesn't tell us how to find an appropriate neural net.
-This is where differentiablity comes in.
-The dirty secret of machine learning is that 90% of it reduces to gradient
-descent on some loss function.
+## A Practical View
 
-* Define a loss function $$\ell_\theta(x,y)$$, where $$\theta$$ is the parameters
-and $$x$$ is the input and $$y$$ is the desired output.
-* Find $$\nabla_\theta \ell_\theta(x, y)$$, the gradient with respect to $$\theta$$.
-The gradient is the direction of steepest descent for the loss function.
-* Apply an update rule to move $$\theta$$ to $$\theta'$$, and repeat.
+It's neat that this is true. However, when you look at the proof for
+universal approximation, all it proves is that we can hardcode a neural
+net's output at a specific $$x$$, and if we hardcode the output at enough
+different $$x$$ we can approximate any function.
 
-Differentiability is key in the 2nd step. The core idea is that if the function
-is differentiable, we can always find a good update direction, and because we're
-optimizing over a continuous range, we can take arbitrarily small steps in that direction.
+Doing this construction in practice would require a ridiculously large neural
+net.
 
-Classical parameter descent picture.
-
-(Not all ML reduces to this. Nearest neighbor and random forests are two big
-methods with non-differentiable components.)
-
-The takeaway from this entire transgression is that differentiability gives
-us a way to search parameter space ($$\theta$$-space) towards regions with
-smaller losses. As long as the loss is differentiable and minimized when $$f_\theta$$
-is what we want, we're set.
-
-Therefore, the combination of differentiabilty and universal approximation makes
-neural nets applicable to any problem.
-
-
-## The Practical View
-
-Now here's the real truth: most people don't care about universal approximation.
-
-Oh, sure, it's nice that the result holds up, but all the proof of universal
-approximation shows is that neural nets can represent a lookup table. Constructing
-a neural net the way the theorem tells you to will very quickly require more computing
-power than the entire world has.
-
-In practice, neural nets don't use all the compute power in the world. (Citation
-needed.)
-What matters is how well neural nets fit the data, and that's
-where they shine.
+Neural nets matter for a different reason: in practice, modestly sized neural
+nets are 
+**they are differentiable, they
+generalize well in practice, and given enough data they outperform every
+other approach.**
 
 Here is the classical picture from every talk Andrew Ng ever does about
 deep learning.
@@ -262,6 +229,31 @@ I know of are pathological ones.
 
 When you have a hammer, everything looks like a nail. And so far, neural nets are
 a big hammer that turns a ton of problems into nails.
+
+
+Why does differentiability matter?
+The dirty secret of machine learning is that 90% of it reduces to gradient
+descent on some loss function.
+
+* Define a function $$f_\theta(x) = \hat{y}$$, where $$\theta$$ are the
+parameters, $$x$$ is the desired input, and $$\hat{y}$$ is the predicted
+output.
+* Define a differentiable loss function $$\ell(\hat{y},y)$$, which is 0 when
+$$\hat{y} = y$$ and positive otherwise.
+* Find $$\nabla_\theta \ell(\hat{y}, y)$$, the gradient with respect to $$\theta$$.
+With multivariable calculus, you can show this is the direction of steepest
+descent in parameter space (in $$\theta$$-space.)
+* Update $$\theta$$ with $$\theta \gets \theta - \alpha * \nabla_\theta \ell(\hat{y}, y)$$,
+where $$\alpha$$ is the learning rate, which decides how quickly the model is
+allowed to update. This brings us to a region of lower loss.
+* Repeat until loss stops going down.
+
+Classical parameter descent picture.
+
+Different parameters (different $$\theta$$) give different functions $$f_\theta(x)$$.
+Gradient descent gives us a way to search the function space in a way that
+guides us towards functions with smaller loss...as long as the function family
+is differentiable. And neural nets are differentiable.
 
 
 # What's the Field Like?
@@ -362,7 +354,7 @@ So yes, it is all very open, and the ideas are often very simple. But getting
 things to work at all (and work well) is a big enough achievement to justify
 publication.
 
-## Why is Deep Learning Progressing So Fast?
+# Why is Deep Learning Progressing So Fast? A Few Arguments
 
 I've made a big show of explaining how quickly the field moves. But why is
 deep learning in particular growing so fast, compared to other subfields in
@@ -370,7 +362,7 @@ machine learning?
 
 There isn't a single answer. It's more like a collection of answers.
 
-### Big Data Lets Us Retry Old Ideas
+## Big Data Lets Us Retry Old Ideas
 
 Neural nets aren't new. They've been around since the 1980s. The argument
 goes like this: the old guard of neural net researchers always knew it was
@@ -391,7 +383,7 @@ Support vector machines, random forests, etc. As far as I know, they've never
 blown up like neural nets have. (But I'm new to the field - maybe my folklore
 is out of date.)
 
-### Strong Financial Incentives
+## Strong Financial Incentives
 
 Image recognition, speech transcription, machine translation, and other areas
 have become so good that they're practical enough for companies to care
@@ -400,7 +392,7 @@ are throwing a lot of funding at machine learning researchers in industry
 research labs, which speeds up progress.
 
 
-### Architecture Engineering is Easier and Simpler Than Feature Engineering
+## Architecture Engineering is Easier and Simpler Than Feature Engineering
 
 ![Features vs neural nets](/public/dl-philosophy/features.svg)
 {: .centered }
@@ -455,7 +447,7 @@ Simpler model design means lower barrier to entry and fewer places to have bugs.
 Which means more researchers, and faster implementation. There's no single
 reason deep learning is growing quickly. It's all interconnected.
 
-### Unification of Approaches
+## Unification of Approaches
 
 Across several fields, we're starting to see a unification of methods. Convnets
 are good at pattern recognition, which is good for computer vision, but it's also
@@ -482,9 +474,7 @@ MAYBE HAVE A DIAGRAM HERE?
 (Yes I did just use source control as an analogy for research. This might be
 the most computer-sciency analogy I've ever done.)
 
-
-Neural Nets as Computation Blocks
-================================================================
+# Neural Nets as Computation Blocks
 
 (Note: This section repeats a lot of things I said before. I'm still figuring out where
 I want the new ideas to go. The modularity/composability stuff is actually
