@@ -630,6 +630,8 @@ for transfer learning and avoiding catastrophic forgetting in reinforcement
 learning. The architecture used is general enough to be applied to image
 recognition too, as seen in [this ICLR 2017 submission](https://openreview.net/pdf?id=ryZqPN5xe).
 
+[Accelerating Eulerian Fluid Simulation With Convolutional Networks](https://arxiv.org/pdf/1607.03597.pdf) - TODO: decide
+where this should go and write a blurb.
 
 ## Research Exclusively on Neural Nets
 
