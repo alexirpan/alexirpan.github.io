@@ -4,6 +4,31 @@ title:  "Deep Learning Philosophy"
 date:   2016-12-22 22:14:00 -0700
 ---
 
+NOTE TO READERS
+
+Based on some feedback / thinking so far, this post's scope is too big,
+and it needs to get narrowed down
+
+Right now, I'm floating the idea of splitting it into three posts.
+
+* One post from "Background" to right before "What's the Field Like?"
+* One post from "What's the Field Like?" to right before "Research Direction"
+* One post for "Research Directions"
+
+The first post is the most likely to get entirely removed.
+
+The second post would probably stay the same, plus some elaboration.
+
+The third post would go through a heavy rewrite. Right now it's closer to
+a list of topics. The rewrite would be a broader discussion of research
+motivations, instead of an attempt to categorize/summarize most of deep
+learning research.
+
+With all that said, on to the draft itself.
+
+\* \* \*
+{: .centered }
+
 This post collects various thoughts I've had about deep learning.
 
 This is **not** intended to be a tutorial in deep learning, because there are
