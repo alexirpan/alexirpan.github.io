@@ -6,6 +6,11 @@ date:   2016-12-22 22:14:00 -0700
 
 NOTE TO READERS
 
+The draft follows after this. I'll be collecting feedback/ideas as I have them
+here.
+
+**Jan 2 comments**
+
 Based on some feedback / thinking so far, this post's scope is too big,
 and it needs to get narrowed down
 
@@ -24,7 +29,10 @@ a list of topics. The rewrite would be a broader discussion of research
 motivations, instead of an attempt to categorize/summarize most of deep
 learning research.
 
-With all that said, on to the draft itself.
+**Jan 3 comments**
+
+I might move the metalearning section to its own post, I think I have enough
+to say here to make it stand-alone.
 
 \* \* \*
 {: .centered }
