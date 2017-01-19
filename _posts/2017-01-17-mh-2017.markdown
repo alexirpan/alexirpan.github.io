@@ -1,0 +1,98 @@
+---
+layout: post
+title:  "MIT Mystery Hunt 2017"
+date:   2016-01-03 23:14:00 -0800
+---
+
+When ✈✈✈ Galactic Trendsetters ✈✈✈ did introductions this year, I realized with
+some surprise that this was my 5th time solving Mystery Hunt. Second time
+flying in. Now that I'm a Real Adult with a Real Job, it's harder to justify
+taking a few days off, but after five years I've hit a critical mass of both
+MIT people I know and puzzle people I know.
+
+If you want to avoid spoilers, you should stop reading now.
+
+\* \* \*
+{: .centered }
+
+Let's get some elephants out of the room first.
+
+Was Hunt shorter than Setec Astronomy expected? Yes, absolutely.
+
+Was having a short Hunt a bad thing? I'm not so sure. *WHOOSH* Galactic
+Trendsetters *NIERRRRR* got 4th this year, which is a lot better than before.
+From what I heard, the team got bigger, people got better at looking at metas
+early, and the metas were easier to solve than previous years. Combined,
+that meant we finished by midday Saturday. It turns out you can do
+things on MLK weekend besides solve puzzles. I played some board games,
+had a nice dinner, and got to work on Facebook Hacker Cup Round 1 at a reasonable
+time, instead of 4 AM.
+
+I place no blame at all on Setec for a short Hunt. Look, time estimation is hard. (I
+should know, I contributed to the Sages hunt.) The themeing was on point. The opening
+skit was great, the flavor was baked in all over the place, and overall it was
+one of my favorite Hunts. I just wish it was a bit longer...
+
+Yes, I can see how a short Hunt could be disappointing. Some people on our team arrived
+Saturday morning, and by that point we only had two metapuzzles left.
+On the flip side, running out of puzzles is a competitive team problem.
+There were several teams who got to finish Hunt for the first
+time, and that's really awesome.
+
+I think it comes down to how much you were here for puzzles, and how much you
+were here for hanging out with people for puzzles. I came for a bit of both,
+and I got a bit of both, so I'm satisfied.
+
+Setec wrote good puzzles. In fact, in some ways they were almost too good.
+To me, getting good at puzzles is less about noticing the trick, and more about
+learning how to solve from 60% of the data, 10% of which might be wrong.
+Hunts get longer when you have to figure out incredibly obtuse extraction
+mechanisms, and we didn't hit as many of those this year.
+
+The metas were clued very well, which made them easier
+to solve. That led to more backsolving constraints, which made it easier
+to solve puzzles. That sped up the unlocking process, and it all cascades
+from there. At some point we had three Quest rounds open with zero solves in
+each, just because we'd been solving metas and Character puzzles so quickly.
+The Chemist meta and Cleric meta were especially open to backsolving, and because
+character levels were the main unlock mechanism, we backsolved those very
+aggressively. (A bit too aggressively in fact. HQ got mad at us and didn't
+confirm one of our Cleric backsolves for an hour. We're sorry!)
+
+I did like that the unlock mechanism was very clear. It made it easy to
+decide which puzzles to prioritize. We never would have done the scavenger
+hunt if people hadn't insisted we unlock Wizard level 6. I didn't work on it
+myself, but it led to a scroll with calligraphy, Elvish, and the first 150 words
+of The Bee Movie, which was a glorious sight.
+
+PICTURE
+
+Puzzle-wise, not too many puzzles stuck in my mind, just because they went by
+so fast. There are also some pretty good solvers on the team, meaning there were
+very few puzzles where I was around from start to finish.
+
+The first puzzle I was around all the way for was China Kilns. The trick was
+really cute. We derped on assigning clues to answers properly, then we derped on
+solving the clue phrase, then we solved it.
+
+By the time I looked at A Message From Our Sponsors, everything was IDed. Someone
+else got the a-ha. My main contribution was verifying that the
+Poinsettia Bowl was indeed a thing and we had to be on the right track.
+
+When Pentoku came out, I loudly announced I wanted to work on a logic puzzle and
+people were free to join me. Then I left because about seven people started
+crowding around a blackboard.
+Between the entire team, I'm pretty sure we solved each Pentoku twice, just because
+of communication issues between people in different rooms and remote solvers.
+
+I helped arrange the clues for A Lengthy Journey. This was shortly after
+we solved China Kilns, so I was thinking we needed to make the answers form
+a cycle (each answer disambiguates a different clue.) We never
+realized that wasn't what we were supposed to do. It's one of the 9 puzzles we never solved.
+
+Fashionable Friends wasn't an immediately obvious My Little Pony puzzle, so I
+overlooked it. Someone pinged me about it later because it got stuck on
+extraction. I unblocked it immediately, because of *course* cutie marks are
+going to be important in an MLP puzzle. I mean, DUH, this happened last year
+too. I'm not sure whether to be proud or to quietly question why part of my life revolves around cartoon
+horses.
