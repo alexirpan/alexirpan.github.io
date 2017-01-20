@@ -54,12 +54,13 @@ Look, time estimation is hard. I should know, I contributed to the Sages hunt.
 I place no blame at all on Setec for a short Hunt.
 Setec wrote good puzzles. In fact, in some ways they were almost too good.
 To me, getting good at puzzles is less about noticing the trick, and more about
-learning how to solve from 60% of the data, 10% of which might be wrong.
+learning how to solve from 60% of the data, 10% of which might be wrong. I can't
+do it, but some people are eerily good at solving past errors.
 
 > Neo: What are you trying to tell me? That I can identify extractions?
 >
 > Morpheus: No, Neo. I'm trying to tell you that when you're ready, you won't
-> have to. [Because you've solve metas by pulling random letters out of the
+> have to. [Because you'll solve metas by pulling random letters out of the
 > puzzle answers.]
 
 Hunts get longer when you have to figure out incredibly obtuse extraction
@@ -89,51 +90,59 @@ and I got a bit of both, so I'm satisfied.
 
 On to puzzle stories!
 
-The first puzzle I was around all the way for was China Kilns. The trick was
+The first puzzle I was around all the way for was [CHINA KILNS](http://solutions.monsters-et-manus.com/hunt/puzzle/china_kilns.html). The trick was
 really cute. We derped on assigning clues to answers properly, then we derped on
 solving the clue phrase, then we solved it.
 
-By the time I looked at A Message From Our Sponsors, everything was IDed. Someone
-else got the aha. My main contribution was verifying that the
-Poinsettia Bowl was indeed a thing and we had to be on the right track.
+By the time I looked at [A Message From Our Sponsors](http://solutions.monsters-et-manus.com/hunt/puzzle/a_message_from_our_sponsors.html), everything was IDed. Someone
+else got the aha. My main contribution was verifying the
+Poinsettia Bowl was indeed a thing.
 
-When Pentoku came out, I loudly announced I wanted to work on a logic puzzle and
+When [Pentoku]( http://solutions.monsters-et-manus.com/hunt/puzzle/pentoku.html)
+came out, I loudly announced I wanted to work on a logic puzzle and
 people were free to join me. Then I left because about seven people started
-crowding around a blackboard.
+crowding around a blackboard, and I'm secretly not good at logic puzzles.
 Between the entire team, I'm pretty sure we solved each Pentoku twice, just because
-of communication issues between people in different rooms and remote solvers.
+of communication issues between different rooms and the remote solvers.
 
-I helped arrange the clues for A Lengthy Journey. This was shortly after
-we solved China Kilns, so I was thinking we needed to make the answers form
-a cycle (each answer disambiguates a different clue.) We never
-realized that wasn't what we were supposed to do. It's one of the 9 puzzles we never solved.
+I helped arrange the clues for [A Lengthy Journey](http://solutions.monsters-et-manus.com/hunt/puzzle/a_lengthy_journey.html). This was shortly after
+we solved CHINA KILNS, so I was thinking we needed to make the answers form
+a cycle (each answer disambiguates a different clue, forming a cycle among
+clues.) We never
+realized that wasn't what we were supposed to do. We ended Hunt with 9 puzzles
+unsolved, and this was one of them.
 
-Fashionable Friends wasn't an immediately obvious My Little Pony puzzle, so I
-overlooked it. Someone pinged me about it later. I showed up and immediately
-identified the extraction mechanism, because of *course* cutie marks are
+[Fashionable Friends](http://solutions.monsters-et-manus.com/hunt/puzzle/fashionable_friends.html)
+looked like fashion and so I skipped it.
+Someone pinged me about it later, saying it was a My Little Pony puzzle.
+I showed up and immediately identified the extraction mechanism, because of *course* cutie marks are
 going to be important in an MLP puzzle. I mean, duh! (It helps that last year's
-MLP puzzle also used cutie mark extraction.)
+[MLP puzzle](http://huntception.com/puzzle/missing_the_mark/) also used cutie mark extraction.)
 
-I worked on Hamiltonian Path with a few other people. I let other people figure
-out the path constraints, and kept myself busy with identifying songs. I was
-very, very surprised that I could ID about 80% of the songs by memory, and only
-needed to look up lyrics for a few of them. Who knew 2-3 second snippets could
-be so distinctive? We got stuck for a very long time because I didn't even
-realize the clips all had a number in them, I was focusing too much on the songs.
+I worked on [Hamiltonian Path](http://solutions.monsters-et-manus.com/hunt/puzzle/hamiltonian_path.html)
+with a few other people. I let other people figure
+out the path constraints, and kept myself busy with identifying songs, because
+god damnit when else am I going to get to use my knowledge of Hamilton.
+I was very, very surprised that I could ID about 80% of the songs by memory,
+and only needed to look up lyrics for a few of them. Who knew 2-3 second snippets could
+be so distinctive? They were so distinctive that I didn't even realize each clip
+had a number in it, which was really important for extraction. Oops.
 Anyways, after a very long time we got to GIVE US A VERSE, then got back a CD...and
-realized we actually needed to make a team request for a laptop that had
-a CD player. Oh technology, how you get obsoleted so quickly.
+I realized I actually needed to make a team request for a laptop that had
+a CD player. Oh technology, you get obsoleted so quickly.
 
-I did a dramatic reading of The Puzzle At The End of This Book around midnight
-on Friday. That was fun. We caught all the encoded information on the first read,
-except for the encoding that gave HUMA. I'm really disappointed we missed
+[Mentally Stimulating Diversion](http://solutions.monsters-et-manus.com/hunt/puzzle/mentally_stimulating_diversion.html) was in fact a mentally stimulating diversion. It was a short one though,
+me and another person only spent about 40 minutes on it.
+
+I did a dramatic reading of [The Puzzle At The End of This Book](http://solutions.monsters-et-manus.com/hunt/puzzle/the_puzzle_at_the_end_of_this_book.html) around midnight
+on Friday. That was fun. We noticed all the encoded information during the
+dramatic reading,
+except for the encoding that gave SPECTER. I'm really disappointed we missed
 that mechanism, because it's clearly the best one.
 (We did catch QALUPALIK, but it took us a while to believe that was a word.)
 
 That was the last normal puzzle I looked at. After that I stared at metas for
-the rest of Hunt. I don't have much to say on the metas that I didn't say before:
-they were well made, with lots of relevant flavor, and therefore we hit the
-right idea on most pretty quickly.
+the rest of Hunt.
 
 I don't have much to say on endgame that wasn't said at wrap-up. After solving
 all the metas, we scheduled a solo version of the Hungry Hungry Hippogriffs event
