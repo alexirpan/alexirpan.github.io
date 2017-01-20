@@ -67,9 +67,7 @@ of The Bee Movie, which was a glorious sight.
 
 PICTURE
 
-Puzzle-wise, not too many puzzles stuck in my mind, just because they went by
-so fast. There are also some pretty good solvers on the team, meaning there were
-very few puzzles where I was around from start to finish.
+Onto puzzle stories!
 
 The first puzzle I was around all the way for was China Kilns. The trick was
 really cute. We derped on assigning clues to answers properly, then we derped on
@@ -91,8 +89,28 @@ a cycle (each answer disambiguates a different clue.) We never
 realized that wasn't what we were supposed to do. It's one of the 9 puzzles we never solved.
 
 Fashionable Friends wasn't an immediately obvious My Little Pony puzzle, so I
-overlooked it. Someone pinged me about it later because it got stuck on
-extraction. I unblocked it immediately, because of *course* cutie marks are
-going to be important in an MLP puzzle. I mean, DUH, this happened last year
-too. I'm not sure whether to be proud or to quietly question why part of my life revolves around cartoon
-horses.
+overlooked it. Someone pinged me about it later. I showed up and immediately
+identified the extraction mechanism, because of *course* cutie marks are
+going to be important in an MLP puzzle. I mean, duh! (It helps that last year's
+MLP puzzle also used cutie mark extraction.)
+
+I worked on Hamiltonian Path with a few other people. I let other people figure
+out the path constraints, and kept myself busy with identifying songs. I was
+very, very surprised that I could ID about 80% of the songs by memory, and only
+needed to look up lyrics for a few of them. Who knew 2-3 second snippets could
+be so distinctive? We got stuck for a very long time because I didn't even
+realize the clips all had a number in them, I was focusing too much on the songs.
+Anyways, after a very long time we got to GIVE US A VERSE, then got back a CD...and
+realized we actually needed to make a team request for a laptop that had
+a CD player. Oh technology, how you get obsoleted so quickly.
+
+I did a dramatic reading of The Puzzle At The End of This Book around midnight
+on Friday. That was fun. We caught all the encoded information on the first readthrough,
+except for the encoding that gave HUMA. I'm really disappointed we didn't catch
+that mechanism, because it's clearly the best one.
+(Also QALUPALIK, are you serious, that's a WORD?)
+
+That was the last normal puzzle I looked at. After that I stared at metas for
+the rest of Hunt. I don't have much to say on the metas that I didn't say before:
+they were well made, with lots of relevant flavor, and therefore we hit the
+right idea on most pretty quickly.
