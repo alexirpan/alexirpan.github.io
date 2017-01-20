@@ -6,4 +6,4 @@ _site
 # I don't know why it's trying to add this
 .log
 # Sometimes things crash
-zsh.exe.stackdump
+*.exe.stackdump
