@@ -1,0 +1,162 @@
+---
+layout: post
+title:  "MIT Mystery Hunt 2017"
+date:   2017-01-20 00:59:00 -0800
+---
+
+When ✈✈✈ Galactic Trendsetters ✈✈✈ did introductions this year, I realized with
+some surprise that this was my 5th time solving Mystery Hunt. Only my 2nd time
+flying in for Hunt though. Now that I'm a Real Adult with a Real Job, it's harder to justify
+taking a few days off, but after five years I've hit a critical mass of
+MIT people I know and puzzle people I know.
+
+If you want to avoid spoilers, you should stop reading now.
+
+\* \* \*
+{: .centered }
+
+Let's get some elephants out of the room first.
+
+Was Hunt fun? Yes, absolutely.
+I loved the theme. The opening skit was great, the flavor was baked in all
+over the place, and overall it's one of my favorite Hunts.
+
+Was Hunt shorter than Setec Astronomy expected? Yes, absolutely.
+
+Was having a short Hunt a bad thing? I'm not so sure. **WHOOSH** Galactic
+Trendsetters **NIERRRRR** got 4th this year, which is a lot better than before.
+From what I heard, the team got bigger, people got better at looking at metas
+early, and the metas were easier to solve than previous years. Combined,
+that meant we finished by midday Saturday. Turns out you can do
+things on MLK weekend besides solve puzzles. I played some board games and party
+games, had a nice dinner, and got to work on Facebook Hacker Cup Round 1 at a reasonable
+time, instead of 4 AM.
+
+![Dinner at Thelonious Monkfish](/public/mh-2017/monkfish.jpg)
+{: .centered }
+
+The aforementioned nice dinner, at Thelonious Monkfish.
+{: .centered }
+
+![Banana names](/public/mh-2017/banana.jpg)
+{: .centered }
+
+A game from Jackbox Party Pack 3
+{: .centered }
+
+Yes, I can see how a short Hunt could be disappointing. Some people on our team arrived
+Saturday morning, and by that point we only had two metapuzzles left.
+On the flip side, running out of puzzles is a competitive team problem.
+There were several teams who got to finish Hunt for the first
+time, and that's really awesome.
+
+Look, time estimation is hard. I should know, I contributed to the Sages hunt.
+I place no blame at all on Setec for a short Hunt.
+Setec wrote good puzzles. In fact, in some ways they were almost too good.
+To me, getting good at puzzles is less about noticing the trick, and more about
+learning how to solve from 60% of the data, 10% of which might be wrong. I can't
+do it, but some people are eerily good at solving past errors.
+
+> Neo: What are you trying to tell me? That I can identify extractions?
+>
+> Morpheus: No, Neo. I'm trying to tell you that when you're ready, you won't
+> have to. [Because you'll solve metas by pulling random letters out of the
+> puzzle answers.]
+
+Hunts get longer when you have to figure out incredibly obtuse extraction
+mechanisms, and we didn't hit as many of those this year.
+
+I'll sum it up like this. The metas were clued through tons of flavortext, which
+made them easier to solve. That led to more backsolving constraints, which made it easier
+to solve puzzles. That sped up the unlocking process, and it all cascades
+from there. At some point we had three Quest rounds open with zero solves in
+each, just because we'd been solving metas and Character puzzles so quickly.
+The Chemist meta and Cleric meta were especially open to backsolving, and because
+character levels were the main unlock mechanism, we backsolved those very
+aggressively. (A bit too aggressively in fact. HQ got mad at us and stopped
+confirming our Cleric backsolves for an hour. We're sorry!)
+
+I did like how clear the character level unlock mechanism was. It made it easy to
+decide which puzzles to prioritize. We never would have done the scavenger
+hunt if people hadn't insisted we unlock Wizard level 6 already. I didn't
+work on it myself, but it led to a scroll of the Bee Movie script, which was a glorious sight.
+
+![Bee Movie scroll](/public/mh-2017/scroll.jpg)
+{: .centered }
+
+I think it comes down to how much you were here for puzzles, and how much you
+were here for hanging out with people for puzzles. I came for a bit of both,
+and I got a bit of both, so I'm satisfied.
+
+On to puzzle stories!
+
+The first puzzle I was around all the way for was [CHINA KILNS](http://solutions.monsters-et-manus.com/hunt/puzzle/china_kilns.html). The trick was
+really cute. We derped on assigning clues to answers properly, then we derped on
+solving the clue phrase, then we solved it.
+
+By the time I looked at [A Message From Our Sponsors](http://solutions.monsters-et-manus.com/hunt/puzzle/a_message_from_our_sponsors.html), everything was IDed. Someone
+else got the aha. My main contribution was verifying the
+Poinsettia Bowl was indeed a thing.
+
+When [Pentoku]( http://solutions.monsters-et-manus.com/hunt/puzzle/pentoku.html)
+came out, I loudly announced I wanted to work on a logic puzzle and
+people were free to join me. Then I left because about seven people started
+crowding around a blackboard, and I'm secretly not good at logic puzzles.
+Between the entire team, I'm pretty sure we solved each Pentoku twice, just because
+of communication issues between different rooms and the remote solvers.
+
+I helped arrange the clues for [A Lengthy Journey](http://solutions.monsters-et-manus.com/hunt/puzzle/a_lengthy_journey.html). This was shortly after
+we solved CHINA KILNS, so I was thinking we needed to make the answers form
+a cycle (each answer disambiguates a different clue, forming a cycle among
+clues.) We never
+realized that wasn't what we were supposed to do. We ended Hunt with 9 puzzles
+unsolved, and this was one of them.
+
+[Fashionable Friends](http://solutions.monsters-et-manus.com/hunt/puzzle/fashionable_friends.html)
+looked like fashion and so I skipped it.
+Someone pinged me about it later, saying it was a My Little Pony puzzle.
+I showed up and immediately identified the extraction mechanism, because of *course* cutie marks are
+going to be important in an MLP puzzle. I mean, duh! (It helps that last year's
+[MLP puzzle](http://huntception.com/puzzle/missing_the_mark/) also used cutie mark extraction.)
+
+I worked on [Hamiltonian Path](http://solutions.monsters-et-manus.com/hunt/puzzle/hamiltonian_path.html)
+with a few other people. I let other people figure
+out the path constraints, and kept myself busy with identifying songs, because
+god damnit when else am I going to get to use my knowledge of Hamilton.
+I was very, very surprised that I could ID about 80% of the songs by memory,
+and only needed to look up lyrics for a few of them. Who knew 2-3 second snippets could
+be so distinctive? They were so distinctive that I didn't even realize each clip
+had a number in it, which was really important for extraction. Oops.
+Anyways, after a very long time we got to GIVE US A VERSE, then got back a CD...and
+I realized I actually needed to make a team request for a laptop that had
+a CD player. Oh technology, you get obsoleted so quickly.
+
+[Mentally Stimulating Diversion](http://solutions.monsters-et-manus.com/hunt/puzzle/mentally_stimulating_diversion.html) was in fact a mentally stimulating diversion. It was a short one though,
+me and another person only spent about 40 minutes on it.
+
+I did a dramatic reading of [The Puzzle At The End of This Book](http://solutions.monsters-et-manus.com/hunt/puzzle/the_puzzle_at_the_end_of_this_book.html) around midnight
+on Friday. That was fun. We noticed all the encoded information during the
+dramatic reading,
+except for the encoding that gave SPECTER. I'm really disappointed we missed
+that mechanism, because it's clearly the best one.
+(We did catch QALUPALIK, but it took us a while to believe that was a word.)
+
+That was the last normal puzzle I looked at. After that I stared at metas for
+the rest of Hunt.
+
+I don't have much to say on endgame that wasn't said at wrap-up. After solving
+all the metas, we scheduled a solo version of the Hungry Hungry Hippogriffs event
+(which didn't look as fun as the full version), and a solo version of the
+Quizardry event.
+
+![Quizadry](/public/mh-2017/quizadry.jpg)
+{: .centered }
+
+The one cute thing that happened was that we asked to hear only the category
+on the final round of Quizardry, then tried to figure out the correct answer
+purely from knowing it needed to be transformable into another valid answer
+in that category. I suppose we unintentionally spoiled the endgame gimmick
+for ourselves, because endgame worked exactly the safe way - identify something
+in a category whose phrase satisfies a constraint we learned from before.
+
+So long, and thanks for all the puzzles!
