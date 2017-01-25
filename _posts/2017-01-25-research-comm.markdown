@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Research Communication is Hard"
-date:   2017-01-25 02:17:00 -0800
+date:   2017-01-25 02:30:00 -0800
 ---
 
 I've been working on my current research project for around four to six months.
@@ -39,17 +39,18 @@ about [communicating research](https://gist.github.com/stoutbeard/4158578).
 > Communicating these ideas is a bit like trying to explain a vacuum cleaner to someone who has never seen one, except you're only allowed to use words that are four letters long or shorter.
 
 A lot of the metaphorical four letter words I used weren't useful anymore, and
-filtering it into just the key points was most of the work.
+filtering it to just the key points was most of the work.
 
 When I got comments back, I had a shocking revelation: **the only one who fully
 understood my project was me.**
 
 On the surface, that's not so surprising, so let me clarify. I've been talking
 to most of these people about my project for months. They've received and read
-every doc I wrote about my project, from start to finish. I've had one-on-ones
-with several of them to explain the issues I've run into.
+every doc I wrote about my project, from start to finish. I've had
+weekly meetings with several of these people, to explain issues I ran into
+and get tips on how to get past them.
 
-*And I was the only one who understood everything that was going on?*
+*And the whole time, I was the only one who understood everything that was going on?*
 
 **_What the hell?_**
 
@@ -57,54 +58,51 @@ I used to think good writing was important because nobody wants to extend resear
 that's hard to understand.
 
 But now I've realized there's another big benefit. If you want people to give
-useful feedback, it's very important they understand the problem as well as you
-do.
+useful feedback, it's very important they actually understand what the problem is.
 
-I'm about to describe one of those ideas that's obviously true, but maybe you
-haven't seen it before. Are you ready? Okay, good.
+I'm about to describe one of those ideas that's obviously true.
+Are you ready? Okay, good.
 
 When people say "That sounds good to me", they're implicitly saying "Based on
-my understanding of the problem, that sounds good to me." Worryingly, if you
-describe only the high level idea, their brains will fill in the details
-of those ideas by themselves. And the details they fill in *will be ones that
-make sense to them*, **which likely differ from the details you're actually
-thinking of.**
+my understanding of the problem, that sounds good to me." Worryingly, if they
+missed a few details you tried to convey, their brains will fill in the details
+by themselves. And the details they fill in *will be ones that
+make sense to them*, **which likely differs from the details you were
+trying to convey in the first point.**
 
-The relevant point: **if you ask for help from your advisor, they're going to
-give you advice based on how they understand your problem, and if your real
-problem is in one of the details they've glossed over in their understanding
-of the problem, you're not going to get good advice.**
+The relevant point: **if you ask for help from your advisor, and your problem
+is in one of those details you failed to convey, you're not going to get good advice.**
 
 If you yourself are a researcher, and this was a new idea for you, read over
-it a few times. It may not directly apply to your situation, but flavors of it
-should be applicable.
+it a few times. I think it's worth knowing.
 
-In hindsight, the biggest pivots in my research happened when experienced
+In hindsight, the biggest shifts in my research didn't happen when I had a new
+idea. They happened when experienced
 researchers finally grasped a detail I thought they'd already understood.
 They would then immediately make an obvious argument for why doing it that
 way was dumb, and then I'd feel like an idiot.
 
-If everyone's busy trying to climb your chain of reasoning, they might not
-notice the weak links, because they're busy climbing, and may assume
-you've already made sure all the links make sense.
+If everyone's busy climbing your chain of reasoning, they won't
+notice the weak links, because they'll assume all the links make sense.
 
-The disappointing thing here is that if I had explained my research project
-better, I could have saved a few weeks of work, because I wouldn't have done
-many of the things I did do.
+That suggests two things:
+
+* Prefer simple solutions over complicated ones. Complicated solutions are hard
+to explain, meaning it's harder to get good feedback, and complicated solutions
+are the ones that need feedback the most.
+* If you do need to use a complicated solution, be very, very careful that
+you understand why you're doing everything you're doing, and that the reasons
+you made up four months ago still make sense in the present.
+
+If I had explained my research project better, I could have saved a few weeks
+of work, because I could have avoided a lot of silly ideas that weren't worth
+doing in retrospect.
 
 Research miscommunication is inevitable. It takes a long time to explain things
 properly, and usually people don't have the time for that. I suspect that's the
 main reason research takes so long - it's the blind leading the blind.
 Sometimes the blind one is you. Sometimes it's someone else.
-And it's hard to tell the difference.
-
-Really, the best we can do is minimize the costs. Prefer simple ideas. They're
-easier to explain, which makes getting feedback easier. Try to talk to
-people outside your collaboration group, to make sure the foundations make
-sense. Remember to review things within your collaboration group, to make sure
-people understand why things are the way they are. Revisit the assumptions
-you made at the start of the project, and make sure those assumptions still
-make sense.
+It's hard to tell the difference.
 
 If the pattern holds, people aren't going to understand everything I wanted
 them to understand from this post. Oh well. I tried.
