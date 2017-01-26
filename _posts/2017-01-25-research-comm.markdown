@@ -68,7 +68,7 @@ my understanding of the problem, that sounds good to me." Worryingly, if they
 missed a few details you tried to convey, their brains will fill in the details
 by themselves. And the details they fill in *will be ones that
 make sense to them*, **which likely differs from the details you were
-trying to convey in the first point.**
+trying to convey in the first place.**
 
 The relevant point: **if you ask for help from your advisor, and your problem
 is in one of those details you failed to convey, you're not going to get good advice.**
