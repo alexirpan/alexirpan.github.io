@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Default Position Problem"
-date:   2017-01-31 02:30:00 -0800
+date:   2017-02-12 16:12:00 -0800
 ---
 
 The ideas here are all old news, but some anvils need to be dropped.
@@ -57,13 +57,14 @@ By the time it got to your filter bubble, it's been distorted
 into something weaker than it was. So don't generalize the
 distorted argument that reaches your eyes and ears. Look harder.
 
-Or, if you don't have time to look? Take things slowly. Recognize that things
+Or, if you don't have time to look? Take things slowly. Recognize that problems
 are complicated, and there's more than meets the eye.
 Recognize the diversity of belief.
 
-(And yes, I recognize the irony of me dictating all these ideas, of arguing
+(And yes, I notice the irony of me dictating all these ideas, of arguing
 against the default position problem from my own default position.
 Far be it from me to expect people to believe my ideas about epistemology
-without question. Just please, recognize that these ideas are important,
-that it's hard to argue well, and that it's worth thinking about problems
-like this. Something tells me we're going to need it.)
+without question. Just please, keep these ideas in mind.
+Remember it's hard to argue well, and that it's worth thinking about problems
+like this. Something tells me we're going to need good epistemology a lot
+in the upcoming years.)
