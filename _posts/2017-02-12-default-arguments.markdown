@@ -15,7 +15,7 @@ default position. The implicit logic goes roughly like this.
 4. If I can show that the other person's reasons for believing Y are wrong,
 they'll believe X instead.
 
-The first two are prerequistes to an argument. The third is a matter of debate.
+The first two are prerequisites to an argument. The third is a matter of debate.
 The fourth is where everything goes to shit.
 
 Stop me if you've heard this story before. Two people on the Internet are arguing.
