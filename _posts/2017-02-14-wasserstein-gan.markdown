@@ -421,14 +421,16 @@ Let's compare the WGAN algorithm with the standard GAN algorithm.
     \frac{1}{m} \sum_{i=1}^m \log D(x^{(i)}) + \frac{1}{m} \sum_{i=1}^m \log (1 - D(g_\theta(z^{(i)})))
  $$
 
- where we constraint $$D(x)$$ to always be a probabiity $$p \in (0, 1)$$.
+    where we constraint $$D(x)$$ to always be a probabiity $$p \in (0, 1)$$.
 
- In WGANs, nothing requires $$f_w$$ to output a probability. This explains why
- the authors tend to call $$f_w$$ the critic instead of the discriminator -
- it's not explicitly trying to classify inputs as real or fake.
+In WGANs, nothing requires $$f_w$$ to output a probability. This explains why
+the authors tend to call $$f_w$$ the critic instead of the discriminator -
+it's not explicitly trying to classify inputs as real or fake.
 
 * As argued in the original GAN paper, in the limit the maximum of the objective
-above is the Jenson-Shannon divergence, up to scaling and constant factors.
+above is the Jenson-Shannon divergence instead of the Wasserstein divergence.
+(This is true up to scaling and constant factors.)
+
 In practice, we never train $$D$$ to convergence.
 In fact, usually the discriminator is too strong, and we need to alternate
 gradient updates between $$D$$ and $$G$$ to get reasonable generator updates.
@@ -442,97 +444,136 @@ In contrast, because the earth mover distance is differentiable nearly everywher
 we can (and should) train $$f_w$$ to convergence before each generator update,
 to get as accurate an estimate of $$W(P_r, P_\theta)$$ as possible.
 
-* In GANs, the common approach to training the model is to add heavy, heavy regularization,
-through batch norm and lots of dropout. In WGANs, the weight clamping seems to
-be reliable enough. (Although I'd guess batch norm and dropout don't hurt and
-possibly help.)
 
 Empirical Results
 --------------------------------------------------------------------------------
 
-To motivate the rest of the experiments, the authors set up two Gaussian
-distributions, train a GAN discriminator and WGAN critic to optimality, then
-plot their values. The blue curve is the real distribution, the green curve
-is the fake distribution, the red curve is the GAN discriminator output at
-various points, and the cyan curve is the WGAN critic output.
+First, the authors set up a small experiment to showcase the difference between
+GAN and WGAN. There are two 1D Gaussian distributions, blue for real and green
+for fake. Train a GAN discriminator and WGAN critic to optimality, then
+plot their values over the space.
+The red curve is the GAN discriminator output, and
+the cyan curve is the WGAN critic output.
 
-PICTURE
+![Distribution comparison](/public/wasserstein/gauss1d.png)
+{: .centered }
 
-The weight clamping appears to guarantee the gradient is nice over all the
-state space.
+Both identify which distribution is real and which is fake, but the GAN
+discriminator does so in a way that makes gradients vanish over most of the space.
+In contrast, the weight clamping in WGAN gives a reasonably nice gradient over
+everything.
 
-Next, the Wasserstein loss seems to correlate well with image quality.
+Next, the Wasserstein loss seems to correlate well with image quality. Here,
+the authors plot the loss curve over time, along with the generated samples.
 
-PICTURE
+![Loss curve and photos](/public/wasserstein/w_mlp512.png)
+{: .centered }
 
-After reading through the paper, this actually isn't too surprising. For these
-curves, we're training the critic $$f_w$$ to convergence. These plots should
-therefore be pretty good approximation of $$K \cdot W(P_r, P_\theta)$$, where $$K$$
-is the Lipschitz constant for the family $$\{f_w\}$$.
-As argued before, a low $$W(P_r, P_\theta)$$ means $$P_r$$ and $$P_\theta$$ are "close"
-to one another. It would be more surprising if low Wasserstein distance
+After reading through the paper, this isn't too surprising. Since we're training
+the critic $$f_w$$ to convergence, these critic's value should be good approximations of
+$$K \cdot W(P_r, P_\theta)$$, where $$K$$ is whatever the Lipschitz constant
+is. As argued before, a low $$W(P_r, P_\theta)$$ means $$P_r$$ and $$P_\theta$$ are "close"
+to one another. It would be more surprising if the critic value
 *didn't* correspond to visual similarity.
 
 The image results also look quite good. Compared to the DCGAN baseline on the
 bedroom dataset, it performs about as well.
 
-PICTURE
+![WGAN with DCGAN architecture](/public/wasserstein/wgan_bn.png)
+{: .centered }
 
-If we remove batch norm from the
-generator, WGAN still generates good samples, but DCGAN diverges completely.
-More compellingly, the results suggest there
+![DCGAN with DCGAN architecture](/public/wasserstein/dcgan_bn.png)
+{: .centered }
 
-PICTURE
+Top: WGAN with the same DCGAN architecture. Bottom: DCGAN
+{: .centered }
+
+If we remove batch norm from the generator, WGAN still generates okay samples,
+but DCGAN fails completely.
+
+![WGAN with DCGAN architecture, no batch norm](/public/wasserstein/wgan_nobn.png)
+{: .centered }
+
+![DCGAN with DCGAN architecture, no batch norm](/public/wasserstein/dcgan_nobn.png)
+{: .centered }
+
+Top: WGAN with DCGAN architecture, no batch norm. Bottom: DCGAN, no batch norm.
+{: .centered }
 
 Finally, we make the generator a feedforward net instead of a convolutional one.
 This keeps the number of parameters the same, while removing the inductive
-bias convolutional models give. The WGAN samples are more detailed, and don't
-have as much mode collapse as the GAN.
+bias from convolutional models. The WGAN samples are more detailed, and don't
+mode collapse as much as standard GAN. In fact, they report never running
+into mode collapse at all for WGANs!
 
-PICTURE
+![WGAN with MLP architecture](/public/wasserstein/wgan_mlp.png)
+{: .centered }
+
+![DCGAN with MLP architecture](/public/wasserstein/gan_mlp.png)
+{: .centered }
+
+Top: WGAN with MLP architecture. Bottom: Standard GAN, same architecture.
+{: .centered }
+
+$$\blacksquare$$
+
+The readthrough of the paper ends here. If you're interested in related work,
+or the proofs for the theorems, you'll have to read the paper.
 
 
-Research Questions
+Follow-Up Questions
 ------------------------------------------------------------------------------
 
-This feels like a very rich paper, with a lot of natural follow-up questions.
+This is a rich enough paper to have several natural follow-up questions.
 
 * The weights in $$f_w$$ are clamped to $$[-c, +c]$$. How important is $$c$$
-for performance? Based on lurking /r/MachineLearning, the tentative results
-say that low $$c$$ trains more reliably, but high $$c$$ trains faster when
-it does work.
+for performance?
 
-In theory, different $$c$$ only changes the scaling factor between different
-$$\{f_w\}$$. But remember that we're approximating the set of all $$K$$-Lipschitz
-functions with $$\{f_w\}$$. I imagine the discrepency between the two sets
-changes with $$c$$. There could be interesting work in describing that discrepency,
-or in finding ways to make $$\{f_w\}$$ be closer to $$K$$-Lipschitz functions
-while still be optimizable.
+ Based on lurking /r/MachineLearning, the tentative results
+ say that low $$c$$ trains more reliably, but high $$c$$ trains faster when
+ it does work. I imagine $$\{f_W\}$$ imagine the discrepency between the two sets
+ changes with $$c$$. There could be interesting work in describing that discrepency,
+ or in finding ways to make $$\{f_w\}$$ be closer to $$K$$-Lipschitz functions
+ while still be optimizable.
 
-* The authors observe that because the constant $$K$$ depends on the model
-architecture, we can't directly compare the Wasserstein estimate between
-different model architectures to choose the best model. If there was a way to
-estimate $$K$$ for a given architecture and $$c$$, could we "normalize"
-the Wasserstein estimate to compare different model architectures?
+* Given a fixed critic architecture and fixed $$c$$ for clamping, can we
+quantitatively compare different generators by computing the
+Wasserstein estimate of both? Note there's an approximation
+error from optimizing over $$\{f_w: w \in \mathcal{W}\}$$ instead of $$\{f: \|f\|_L \le K\}$$,
+so the estimate may not be accurate. However, because we fix both the critic
+architecture and $$c$$, the hope is that most of the error is some universal
+error that appears in all distributions. If the approximation error doesn't change
+too much between distributions, this would give a way to judge generation quality
+without relying on Mechanical Turk. (And if the error does change a lot, it would probably be
+interesting to investigate when that happens.)
 
-(Note: the paper discusses this too, and is quick to point out that we don't
-know the approximation error between our estimate of the EM distance and the
-true EM distance. However, if I understand it right, if we use a fixed
-critic architecture, we should be able to compare different generators
-without issue.)
+* The constant $$K$$ depends on both $$c$$ and the model architecture, and
+therefore we can't directly compare the critics between models with different
+architectures. Is there a way to estimate $$K$$? Recall the critic objective
+converges to $$K \cdot W(P_r, P_\theta)$$, so dividing by $$K$$ would normalize
+the difference between architectures.
+
+ This actually seems pretty straightforward. Take either a random generator or
+ pretrained generator, then train critics $$f_w$$ from varying architectures and
+ compare their final values. Again, the approximation error could complicate
+ this, but this could be a way to analyze the approximation error itself. Given
+ a few different generators, the change in estimated $$K$$ between different
+ distributions would show how important the distribution is to the approximation
+ error.
 
 * How important is it to train the critic to convergence? A converged critic
-gives the most accurate gradient, but in settings where that's impractical,
-can a mildly trained critic work?
+gives the most accurate gradient, but it takes more time.
+In settings where that's impractical, can a simple alternating gradient
+scheme work?
 
-* There's a connection between GANs and actor-critic reinforcement learning.
-What ideas from this work are applicable to actor-critic RL? (At a first
+* Are ideas from this work are applicable to actor-critic RL? At a first
 glance, I'm now very interested in investigating the magnitude of the actor
-gradients. If they tend to be very large or very small, weight clamping on
-the critic may make the training more consistent.)
+gradients. If they tend to be very large or very small, we may have a similar
+saturation problem, and adding a Lipschitz bound through weight clamping
+could help give better gradients.
 
-* Are there any low-hanging distribution matching problems?
+* Are there any low-hanging distribution matching problems? Personally,
 I have my eye on imitation learning. The
-Generative Adversarial Imitation Learning showed a GAN-like approach makes
-sense, and there could be easy gains in switching to a WGAN approach.
+Generative Adversarial Imitation Learning paper showed a GAN approach made
+sense, and there could be easy gains just from switching to a WGAN approach.
 
