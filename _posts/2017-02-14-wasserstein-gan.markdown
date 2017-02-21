@@ -4,180 +4,196 @@ title:  "Readthrough: Wasserstein GAN"
 date:   2017-02-12 16:12:00 -0800
 ---
 
-These are personal notes about the Wasserstein GAN paper that I made as I read
-through the paper. The notes are written for me - as such I'm putting very
-little effort into making sure they're clear to others, and will be very loose
-with notataion. My hope is that parts of this will still be comprehensible.
+I really, really like the Wasserstein GAN paper. I know it's already gotten a lot
+of hype, but I feel like it could use more.
+
+I also think the theory in the paper scared off a lot of people, which is a bit
+of a shame. This is my contribution to help fix that.
 
 Why Is This Paper Important?
 ----------------------------------------------------------------------
 
-This paper makes a bunch of interesting points.
+There's a giant firehose of machine learning papers - how do you decide which
+ones are worth reading closely?
 
-* Proposes a new GAN training algorithm that produces pretty good samples on
-various datasets.
-* Said training algorithm is justified by theory. The pattern I've seen in
-deep learning is that not all theory-justified papers have good experimental
-results, but theory-justified papers with good empirical results have *really*
-good empirical results.
-* Shows a correlation between loss and perceptual quality. This is actually
-huge if it holds up across different problems. In my limited GAN experience,
+For Wasserstein GAN, it was mostly compelling word of mouth.
+
+* The paper proposes a new GAN training algorithm that works well on the
+common GAN datasets.
+* Said training algorithm is backed up by theory. This really piqued my
+interest. In deep learning, not all theory-justified papers have good
+empirical results, but theory-justified papers with good empirical
+results have *really* good empirical results. For those papers, it's very
+important to understand their theory, because the theory usually explains
+why they perform so much better.
+* I heard that in Wasserstein GAN,
+you can (and should) train the discriminator to convergence
+in Wasserstein GAN. If true, it would remove needing to balance between
+generator updates and discriminator updates, which feels like one of the
+big tricks needed to get GANs to work.
+* The paper shows a correlation between discriminator loss and perceptual
+quality. This is actually also really huge. In my limited GAN experience,
 one of the big problems is that the loss doesn't really mean anything, thanks
 to adversarial training. Reinforcement learning has a similar problem, but
-at least we have episode reward. GANs only get, I don't know, Mechanical Turk.
-Even a rough quantitative measure of quality could be good enough to
-use tricks like early stopping.
+at least we have mean episode reward. GANs get basically nothing.
+Even a rough quantitative measure of quality could be good enough to use
+hyperparam optimization tricks, like early stopping, Bayesian optimization,
+etc.
 
-So, even though I'm not a GAN person, this paper has the potential to change
-the game on GANs, and even if I don't use GANs in the near future, it'll likely
-be good for me to know the ideas from this paper. This is especially true
-because I buy Oriol's argument that GANs have close ties to actor-critic
-reinforcement learning.
+Additionally, although I'm not a GAN person, I am an RL person, and as Oriol
+observed, GANs have close ties to actor-critic reinforcement learning. It
+seemed likely the paper would have interesting nuggets of information.
+
+$$\blacksquare$$
+
+At this point, you may want to download the paper yourself and read along with
+these more informal notes. The upcoming section names correspond exactly with
+the paper's section names.
+
 
 Introduction
 -----------------------------------------------------------------------
 
-(You may want to pick up the paper and start scanning through it yourself
-at this point.)
+The paper first starts with explain some background on generative models.
+In all cases, we assume the data we have comes from some unknown
+distribution $$P_r$$. We want to learn a distribution $$P_\theta$$ that
+approximates $$P_r$$. The function family $$\{P_\theta\}_{\theta \in \mathbb{R}^d}$$
+is defined such that this is tractable.
 
-Alright, sets up the problem of learning a probability distribution, by
-finding the best distribution out of a parametrized
-function family $$(P_\theta)$$.
+You can imagine two approaches for doing this.
 
-They say that in the limit, maximizing the likelihood is equivalent to
-minimizing $$KL(P_r \| P_\theta)$$, which sounds reasonable. It's been
-a while since I verified the math but that's fine. They then say that
-if distribution $$P_\theta$$ has low dimensional support (say if the dimensionality
-of $$\theta$$ isn't high enough), then the KL distance isn't defined
-or is infinite.
+* The parameters $$\theta$$ directly describe a probability density.
+Meaning, $$P_\theta$$ is a function such that $$\int P_\theta(x)\, dx = 1$$.
+We optimize $$P_\theta$$ through maximum likelihood estimation.
+* The parameters $$\theta$$ describe a way to transform an existing
+distribution into $$P_\theta$$. In this setup, $$g_\theta$$ is a deterministic
+function, $$Z$$ is a common distribution (usually uniform or Gaussian),
+and $$P_\theta = g_\theta(Z)$$.
 
-This pans out, remember that
+The first page of the paper is dedicated to explaining why the first approach hasn't worked
+well.
+
+The MLE objective is
 
 $$
-    KL(P || Q) = \sum_p p\log{p} - \sum_p p\log{q}
+    \max_{\theta \in \mathbb{R}^d} \frac{1}{m}\sum_{i=1}^m \log P_\theta(x^{(i)})
 $$
 
-If $$P_\theta$$ is 0 when $$P_r$$ isn't 0, then the latter summation will go to $$\infty$$.
+In the limit, this is equivalent to minimizing the KL-divergence
+$$KL(P_r \| P_\theta)$$.
 
-(Yes, I know that these distributions are continuous, but my intuition refuses
-to accept continuous distributions as a thing. I use summations in my head, and
-assume that with nice enough distributions, I can turn all the sums into integrals
-and everything will just work out.)
+Recall that for discrete distributions $$P$$ and $$Q$$, the KL divergence is
+defined as
 
-In total, for the MLE approach, if $$P_\theta(x^{(i)})$$ is $$0$$ for any $$x$$
-in the data, the objective goes to $$-\infty$$, which is bad. So for the MLE to
-make sense we need to add random noise to make sure the probability is never 0,
-and empirically we need to add a lot of random noise to get nice training. That
-kinda sucks.
+$$
+    KL(P || Q) = \int_x P(x) \log \frac{P(x)}{Q(x)} \,dx
+$$
 
-Which then motivates the discussion of approaches closer to GANs and VAEs. In
-these models we have some distribution $$Z$$ and a deterministic
-$$g_\theta: : Z \to X$$. Let $$Z = N(0, I)$$, because that's what everyone does
-these days. We can think of each $$g_\theta$$ as inducing a distribution,
-if we define $$P_\theta := g_\theta(Z)$$.
+If $$Q(x) = 0$$ at an $$x$$ where $$P(x) \neq 0$$, then the KL divergence goes
+to $$+\infty$$.
 
-Now that we have distributions, we want a measure of distance between
-distributions. We want a metric because we want a notion of convergence - we want
-the distribution $$P_\theta$$ to converge to the data distribution $$P_r$$,
-and the convergence definition needs a distance.
+This is bad for the MLE if $$P_\theta$$ has low dimensional support. If $$P_\theta$$
+isn't defined at every possible data point, the KL divergence will explode.
+This motivated adding random noise to $$P_\theta$$ when training the
+MLE. Empirically, people needed to add a lot of random noise to get models
+to train, and that kind of sucks.
 
-Paper starts talking about distance functions inducing topologies, with weaker
-topologies happening when it's easier for a sequence of distributions to converge.
-Then there's a footnote.
+This motivates the latter approach. The other motivation of the latter
+approach is that it's very easy to generate samples. Simply sample random noise
+$$z$$, and evaluate $$g_\theta(z)$$. Even if we know the density $$P_\theta$$
+explicitly, it may be hard to sample from it efficiently.
 
-> More exactly, the topology induced by ρ is weaker than that induced by ρ'
-> when the set of
-> convergent sequences under
-> ρ
-> is a superset of that under
-> ρ'
+To train $$g_\theta$$ (and by extension $$P_\theta$$), we need a measure of
+distance between distributions. (I will use metric, distance function, and
+divergence interchangeably. I know this isn't technically accurate, but the
+terms are all heavily conflated in my head.)
 
-Oh okay, so a topology is weaker than another one if everything that converges under
-the first's notion of distance also converges under the second's notion of distance.
-Got it. Cool.
+Around this point, the paper starts talking about distance functions inducing
+weak or strong topologies. Different metrics induce different sets of convergent
+sequences; a sequence that converges under one distance function may not
+converge under another. The topology induced by distance $$\rho$$ is weaker
+than the one induced by $$\rho'$$ if every sequence that converges under
+$$\rho'$$ converges under $$\rho$$. (It's weaker because more things converge.)
 
-We want the mapping $$\theta \to P_\theta$$ to be continuous, because if that's
-true, then a converging $$\theta$$ gives converging distributions $$P_\theta$$.
-La dee dah, okay. Oh, but then there's a neat point - convergence is defined
-with respect to the metric of the space. We get to choose the distance function,
-so we want one that leads to continuity.
+Looping back to generative models, given a distance $$\rho$$, we can treat
+$$\rho(P_r, P_\theta)$$ as a loss function. Minimizing $$\rho(P_r, P_\theta)$$
+with respect to $$\theta$$ will bring $$P_\theta$$ close to $$P_r$$. This
+is principled as long as the mapping $$\theta \mapsto P_\theta$$ is
+continuous (which will be true if $$g_\theta$$ is a neural net).
 
-Summary of sections that I already read when deciding to closely read this paper
-in the first place.
 
-Different Distancess
+Different Distances
 --------------------------------------------------------------------------------
 
-This section is about comparing the properties of different distance functions.
+We know we want to minimize $$\rho$$, but how do we define $$\rho$$? This
+section compares various distances and their properties.
 
-It starts by talking about compact metric sets $$X$$, and Borel subsets $$\Sigma$$ of $$X$$, and so forth,
-and to be honest my measure theory isn't that good. But intuitively, I just
-think of all of this as "things are nice enough to make everything go through",
-and I assume they're defined such that all the intuitions I have about probability
-keep working.
+Immediately, we're thrown into discussions of compact metric sets, Borel subsets,
+and spaces of probability measures. Now, I'll be honest, my measure theory is
+pretty bad. However, in machine learning, we're usually working with functions
+that are "nice enough". I like to tell myself that as long as we aren't doing
+any bullshit like the Cantor set, we're probably good, and all intuitions from
+discrete probability carry over.
 
-Anyways, on to the distances.
+Anyways, on to the distances at play.
 
-* Total variation distance,
+* The Total variation (TV) distance is
 
-$$
-    \delta(P_r, P_g) = \sup_{A \in \Sigma} | P_r(A) - P_g(A) |
-$$
+ $$\delta(P_r, P_g) = \sup_{A} | P_r(A) - P_g(A) |$$
 
-Or in words, the subset of outcomes that maximize the difference in mass
-one distribution has versus the other.
+ In words, find the subset of outcomes $$A$$ that maximizes the difference
+in probability of falling in $$A$$.
 
-PICTURE?
+* The Kullback-Leibler (KL) divergence is
 
-* KL divergence
+$$KL(P_r\|P_g) = \int \log\left(\frac{P_r(x)}{P_g(x)}\right) P_r(x) dx$$
 
-$$
-    KL(P_r | P_q) = \sum p \log{p} - \sum p \log{q}
-$$
+ This isn't symmetric. The reverse KL divergence is defined as $$KL(P_g \| P_r)$$.
 
-which as we saw before, isn't symmetric and could be inifinite.
+* The Jenson-Shannon (JS) divergence. Let $$M$$ be the mixture distribution.
+$$M = 1/2 P + 1/2 Q$$. Then
 
-* The Jenson-Shannon (JS) divergence, which is defined by taking the mixture
-$$M = 1/2 P + 1/2 Q$$, then averaging the KL divergenccs between $$P$$ and $$M$$
-and $$Q$$ and $$M$$.
+ $$JS(P_r,P_g) = KL(P_r\|P_m)+KL(P_g\|P_m)$$
 
-* Finally, the Wasserstein, or earth-mover distance. The definition is pretty
-opaque at first.
+* Finally, the Earth Mover (EM) or Wasserstein distance. Let $$\Pi(P_r, P_g)$$
+be the set of all joint distributions $$\gamma$$ whose marginal distributions
+are $$P_r$$ and $$P_g$$. Then.
 
-DEFINITION
+ $$W(P_r, P_g) = \inf_{\gamma \in \Pi(P_r ,P_g)} E_{(x, y) \sim \gamma}\big[\:\|x - y\|\:\big]$$
 
-The intuitive definition is that probability distributions are defined by how
-much mass they put on each point. It costs effort to move mass from one point to
-another, and the minimal effort needed is the the distance according to the
-Wasserstein metric.
+Aside: What's Up With The Earth Mover Definition?
+===============================================================================
 
-I didn't understand this for a bit, but I think I understand the intuition
-now. Let me digress for a bit.
+The EM distance definition is a bit opaque. It took me a while to understand it,
+but I was very pleased once I figured out the intuition. If you'd like to do so
+on your own (or don't care about the intuition), jump to the black square.
 
-We're taking the infinum over all joint distributions whose marginals
-match $$P_r$$ and $$P_g$$. This means that for all $$y$$, every distribution
-$$\gamma$$ satisfies
+Probability distributions are defined by how much mass they put on each point.
+Imagine we started with distribution $$P_r$$, and wanted to move mass around
+to change the distribution into $$P_g$$. Moving mass $$m$$ by distance $$d$$
+costs $$m\cdot d$$ effort. The earth mover distance is the minimal effort
+we need to spend.
 
-$$
-    \sum_x \gamma(x, y) = P_g(y)
-$$
+Why is $$\Pi(P_r, P_g)$$ defined the way it is? You can think of each $$\gamma \in \Pi$$
+as a transport plan.
+To execute the plan, for all $$x,y$$ move $$\gamma(x,y)$$ mass
+from $$x$$ to $$y$$.
 
-Now, let's consider $$E_{(x,y) ~ \gamma} [ \| x - y\|]$$ for a fixed $$y$$.
-That expectation expands to
+Every strategy for moving weight can be represented this
+way. But what properties does the plan need to satisfy to transform $$P_r$$ into $$P_g$$?
 
-$$
-    \sum_x \gamma(x,y) \|x - y \|
-$$
+* The amount of mass that leaves $$x$$ is $$\int_y \gamma(x,y) dy$$. This
+must equal $$P_r(x)$$, the amount of mass originally at $$x$$.
+* The amount of mass that enters $$y$$ is $$\int_x \gamma(x,y) dx$$. This
+must equal $$P_g(y)$$, the amount of mass that ends up at $$y$$.
 
-Intuitively, this is the same as
+This shows why the marginals of $$\gamma \in \Pi$$ must be $$P_r$$ and $$P_g$$.
+For scoring, the effort spent is
+$$\int_x \int_y \gamma(x,y) \| x - y \| dy dx = E_{(x,y) \sim \gamma}\big[\|x - y\|\big]$$
+Computing the infinum of this over all valid $$\gamma$$ gives the earth
+mover distance.
 
-* Enumerating all locations $$x$$ where $$\gamma(x,y) \neq 0$$.
-* Move some weight from $$y$$ to $$x$$, where the weight moved is $$\gamma(x, y)$$.
-* It takes 1 unit of work to move 1 unit of mass 1 unit of distance.
-Charge accordingly.
-
-Because the marginal distribution is the same, we know that all the mass at $$y$$
-must be charged in this way.
+$$\blacksquare$$
 
 Now, the paper introduces a simple example to argue why we should care about
 the Earth-Mover distance.
@@ -185,74 +201,121 @@ the Earth-Mover distance.
 Consider probability distributions defined over $$\mathbb{R}^2$$. Let the
 true data distribution be $$(0, y)$$, with $$y$$ sampled uniformly from $$U[0,1]$$.
 Consider the family of distributions $$P_\theta$$, where $$P_\theta = (\theta, y)$$,
-with $$y$$ also sampled from $$U[0, 1]$$. We'd like our optimization algorithm
-to learn to move $$\theta$$ to $$0$$.
+with $$y$$ also sampled from $$U[0, 1]$$.
 
-According to intuition, as $$\theta \to 0$$, the distribution $$P_\theta$$ is
-getting closer to $$0$$, and the distance between $$P_0$$ and $$P_\theta$$
+![Picture of distributions described above](/public/wasserstein/distribution.png)
+{: .centered }
+
+Real and fake distribution when $$\theta = 1$$
+{: .centered }
+
+We'd like our optimization algorithm to learn to move $$\theta$$ to $$0$$,
+As $$\theta \to 0$$, the distance $$\rho(P_0, P_\theta)$$
 should decrease. But for many common distance functions, this doesn't happen.
 
-* Total variation: For any $$\theta \neq 0$$, let $$A$$ be the support of
-$$P_0$$, meaning all $$(x,y)$$ where $$P_0(x, y) \neq 0$$. Because the distributions
-have disjoint support, we have CASES
+* Total variation: For any $$\theta \neq 0$$, let $$A = \{(0, y) : y \in [0,1]\}$$.
+This gives
+
+ $$ \delta(P_0, P_\theta) =
+  \begin{cases}
+    1 &\quad \text{if } \theta \neq 0~, \\
+    0 &\quad \text{if } \theta = 0~.
+  \end{cases}
+ $$
+
 * KL divergence and reverse KL divergence: Recall that the KL divergence $$KL(P\|Q)$$ is $$+\infty$$ if there
-is any point $$(x,y)$$ where $$P(x,y) > 0$$ and $$Q(x,y) = 0$$. For $$\theta \neq 0$$,
-the distributions have disjoint support, so we can always find a point $$(0,y)$$
-or $$(\theta, y)$$ where this is true. CASES
-* Jenson-Shannon divergence: In the expression
+is any point $$(x,y)$$ where $$P(x,y) > 0$$ and $$Q(x,y) = 0$$. For $$KL(P_0 \| P_\theta)$$,
+this is true at $$(\theta, 0)$$. For $$KL(P_\theta \| P_0)$$, this is true at
+$$(0, 0)$$.
 
-$$
-    KL(P_0 \| \frac{1}{2} P_0 + \frac{1}{2} P_\theta) = \sum_{(x,y)} P_0(x,y) \log \frac{P_0(x,y)}{(\frac{1}{2}P_0 + \frac{1}{2}P_\theta)(x,y)}
-$$
+ $$ KL(P_0 \| P_\theta) = KL(P_\theta \| P_0) =
+  \begin{cases}
+    +\infty &\quad \text{if } \theta \neq 0~, \\
+    0 &\quad \text{if } \theta = 0~,
+  \end{cases}
+ $$
 
-the fraction of probabilities is always $$2$$.
-So $$KL(P_0 \| \frac{1}{2} P_0 + \frac{1}{2} P_\theta) = \log(2)$$, and thus CASES
+* Jenson-Shannon divergence: Consider the mixture $$M = \frac{1}{2} P_0 + \frac{1}{2} P_\theta$$,
+and now look at just one of the KL terms.
 
-If our optimization algorithm was based off taking the gradient $$d(P_0, P_\theta)$$,
-then if we used any of these as our distance function, the gradient would be
-$$0$$ for all $$\theta \neq 0$$.
+ $$
+    KL(P_0 \| M) = \int_{(x,y)} P_0(x,y) \log \frac{P_0(x,y)}{(\frac{1}{2}P_0 + \frac{1}{2}P_\theta)(x,y)} dxdy
+ $$
 
-However, with the Wasserstein-1 distance, the distance does decrease.
+ For any $$x,y$$ where $$P_0(x,y) \neq 0$$, $$M(x,y) = \frac{1}{2} P_0(x,y)$$, so
+this integral works out to $$\log 2$$. The same is true of $$KL(P_\theta \| M)$$,
+so the JS divergence is
 
-* Wasserstein-1: Because the two distributions are just translations of one
-another, the best way to move weight is by a straight line. Therefore,
-$$W(P_0, P_\theta) = |\theta|$$
+ $$ JS(P_0, P_\theta) =
+  \begin{cases}
+    \log 2 &\quad \text{if } \theta \neq 0~, \\
+    0 &\quad \text{if } \theta = 0~,
+  \end{cases}
+ $$
+
+* Earth Mover distance: Because the two distributions are just translations of one
+another, the best way transport plan is moving the weight in a straight line.
+This gives $$W(P_0, P_\theta) = |\theta|$$
 
 **This example shows that there exist sequences of distributions that don't
 converge under the JS, KL, reverse KL, or TV divergence, but which do converge
-under the Wasserstein-1 distance.**
+under the EM distance.**
 
-This is a contrived example because the supports are disjoint, but the paper then
-points out that when working with low dimensional manifolds in high dimensional spaces,
-this case is easy to hit unless you actively try to avoid it.
+**This example also shows that for the JS, KL, reverse KL, and TV divergence,
+there are cases where the gradient is always $$0$$.** This is especially
+damning from an optimization perspective - any approach that works by
+taking the gradient $$\nabla_\theta \rho(P_0, P_\theta)$$ could fail badly.
+
+Admittedly, this is a contrived example because the supports are disjoint, but
+the paper points out that when the supports are low dimensional manifolds in
+high dimensional space, it's very easy for the intersection to be measure zero,
+and you can get similarly bad results for the TV and KL divergences.
 
 This argument is then strengthened by the following theorem.
 
-THEOREM
+> Let $$P_r$$ be a fixed distribution. Let $$Z$$ be a random variable.
+> Let $$g_\theta$$ be a deterministic function parametrized by $$\theta$$, and let $$P_\theta = g_\theta(Z)$$.
+> Then,
+>
+> 1. If $$g$$ is continuous in $$\theta$$, so is $$W(P_r, P_\theta)$$.
+> 2. If $$g$$ is sufficiently nice, then $$W(P_r, P_\theta)$$ is continuous
+> everywhere, and differentiable almost everywhere.
+> 3. Statements 1-2 are false for the Jensen-Shannon divergence $$JS(P_r, P_\theta)$$
+> and all the KLs.
 
-The conditions in statement 1 and 2 are satisfied by feedforward networks, and
-thus this result guarantees that $$W(P_r, P_\theta)$$ is differentiable almost
-everywhere, making it a reasonable loss function. Furthermore, this is **not**
-true for the JS, KL, or reverse-KL divergences.
+You'll need to refer to the paper to see what "sufficiently nice" means, but
+for our purposes it's enough to know that it's satisfied for feedfoward
+networks that use standard nonlinearites. Thus, out of JS, KL, and Wassertstein
+distance, only the Wasserstein distance has guarantees of continuity and
+differentiability, which are both things you really want in a loss function.
 
-The second theorem proved strengthens the argument even further,
+The second theorem shows that not only does the Wasserstein distance
+give better guarantees, it's also easier to optimize.
 
-THEOREM
+> Let $$P$$ be a distribution, and $$(P_n)_{n \in \mathbb{N}}$$ be a sequence
+> of distributions. Then, the following are true about the limit.
+>
+> 1. The following statements are equivalent.
+>   * $$\delta(P_n, P) \to 0$$
+> with $$\delta$$ the total variation distance.
+>   * $$JS(P_n,P) \to 0$$ with
+> $$JS$$ the Jensen-Shannon divergence.
+> 2. The following statements are equivalent.
+>   * $$W(P_n, P) \to 0$$.
+>   * $$P_n \rightarrow P$$, where $$\rightarrow$$ represents
+> convergence in distribution for random variables.
+> 3. $$KL(P_n \| P) \to 0$$ or $$KL(P \| P_n) \to 0$$ imply
+> the statements in (1).
+> 4. The statements in (1) imply the statements in (2).
 
-Together, this proves that
+Together, this proves that every distribution that converges under the
+KL, reverse-KL, TV, and JS divergences also converges under the Wasserstein
+divergence, and that the topology from the Wasserstein distance is indeed weak.
+It also proves that a small earth mover distance corresponds to a small
+difference in distributions.
 
-* If a sequence converges under the KL or reverse-KL divergence, it converges
-under the TV and JS divergence too.
-* If a sequence converges under the TV or JS divergence, it converges
-under the Wasserstein distance.
-
-This shows the topology under the Wasserstein distance is indeed weak, as stated
-earlier in the paper; the set of convergent sequences is strictly larger than
-the alternatives given.
-
-Combined, this shows that the Wasserstein distance is a compelling loss function,
-because it's almost always differentiable, and more sequences of distributions
-converge under this distance.
+Combined, this shows that the Wasserstein distance is a compelling loss function
+for generative models.
 
 Wasserstein GAN
 -----------------------------------------------------------------------------------
@@ -260,109 +323,129 @@ Wasserstein GAN
 Unfortunately, computing the Wasserstein distance exactly is intractable.
 Let's repeat the definition below.
 
-DEFINITION
+ $$W(P_r, P_g) = \inf_{\gamma \in \Pi(P_r ,P_g)} E_{(x, y) \sim \gamma}\big[\:\|x - y\|\:\big]$$
 
-The paper now shows how we can approximate this to be tractable. It turns out there's
-a theorem by Kantorovich and Rubinstein from 1958 which gives an alternative
-definition
+The paper now shows how we can compute an approximation of this.
 
-DEFINITON
+A result from Kantorovich-Rubinstein duality showed $$W$$ was equivalent to.
+
+$$W(P_r, P_\theta) = \sup_{\|f\|_L \leq 1}
+E_{x \sim P_r}[f(x)] - E_{x \sim P_\theta}[f(x)]$$
 
 where the supremum is taken over all $$1$$-Lipschitz functions.
 
-Digression: What Does Lipschitz Mean?
+Aside: What Does Lipschitz Mean?
 ===============================================================================
 
+Let $$d_X$$ and $$d_Y$$ be metrics on spaces $$X$$ and $$Y$$. (In our case, this
+will always be Euclidean distance, but might as well be complete.)
 A function $$f: X \to Y$$ is $$K$$-Lipschitz if for all $$x_1, x_2 \in X$$,
 
 $$
     d_Y(f(x_1), f(x_2)) \le K d_X(x_1, x_2)
 $$
 
-where $$d_X, d_Y$$ are the metrics on $$X$$ and $$Y$$. Intuitively, saying a function
-is $$K$$-Lipschitz is like saying the slope is never more than $$K$$.
+Intuitively, a $$K$$-Lipschitz function never has a slope more than $$K$$. We're
+just generalizing slope to general domains with general distance functions.
 
 $$\blacksquare$$
 
-Back to the paper. If we replace the supremum over $$1$$-Lipschitz functions
+Note that if we replace the supremum over $$1$$-Lipschitz functions
 with the supremum over $$K$$-Lipschitz functions, then the supremum is
-$$K \cdot W(P_r, P_\theta)$$ instead.
+$$K \cdot W(P_r, P_\theta)$$ instead. (This is true because every $$K$$-Lipschitz
+function is a $$1$$-Lipschitz function if you divide it by $$K$$, and the Wasserstein
+objective is linear.)
 
-This supremum is still intractable, but now the set we're optimizing over is easier
-to approximate. Suppose we have a parametrized function family $$\{f_w\}$$,
-where $$w$$ are the weights, and further suppose all these functions are
-$$K$$-Lipschitz for some $$K$$. Then we have the following.
-
-LINE
-
-This gives a way to compute the Wasserstein distance, up to some unknown
-multiplicative constant. But for optimization purposes, we don't need to care what
-that constant is! It's enough to know that it exists, and that it's fixed
-throughout the training process. Gradients of $$W$$ will be scaled by that
-unknown constant, but we already scale gradients by the learning rate, so
-it should get absorbed into the hyperparam tuning.
-
-If $$\{f_w\}$$ contains the true supremum among all
-$$K$$-Lipschitz functions, this gives the distance exactly. Otherwise, the approximation's
-quality depends on the differences between $$\{f_w\}$$ and the set of $$K$$-Lipschitz
-functions.
-
-Now, let's finally bring this to generative models. As stated in the introduction,
-we'd like to have $$P_\theta = g_\theta(Z)$$. Intuitively, given the optimal $$f_w$$
-for the Wasserstein distance, we can update $$\theta$$ with
+The supremum over $$K$$-Lipschitz functions $$\{f : \|f\|_L \le K\}$$ is still
+intractable, but now it's easier to approximate.
+Suppose we have a parametrized function family $$\{f_w\}_{w \in \mathcal{W}}$$,
+where $$w$$ are the weights and $$\mathcal{W}$$ is the set of all possible
+weights. Further suppose these functions are all
+$$K$$-Lipschitz for some $$K$$. Then we have
 
 $$
-    \nabla_\theta W(P_r, P_\theta) = \nabla (E_{x \sim P_r}[f_w(x)] - E_{z \sim Z}[f_w(g_\theta(x))] = -E_{z \sim Z}[\nabla_\theta f_w(g_\theta(z))]
+    \max_{w \in \mathcal{W}}
+        E_{x \sim P_r}[f_w(x)] - E_{x \sim P_\theta}[f_w(x)]
+    \le \sup_{\|f\|_L \le K}
+        E_{x \sim P_r}[f(x)] - E_{x \sim P_\theta}[f(x)]
+    = K \cdot W(P_r, P_\theta)
 $$
 
-The optimization now breaks into three steps.
+For optimization purposes, we don't even need to care what $$K$$ is!
+It's enough to know that it exists, and that it's fixed throughout
+training process. Sure, gradients of $$W$$ will be scaled by an unknown $$K$$,
+but they'll also be scaled by the learning rate $$\alpha$$, so $$K$$ will
+get absorbed into the hyperparam tuning.
 
-* For a fixed generator, compute an approximation of $$W(P_r, P_\theta)$$ by
-optimizing for the best $$f_w$$.
-* Once we find the optimal $$f_w$$, compute the gradient $$-E_{z \sim Z}[\nabla_\theta f_w(g_\theta(z))]$$
-by sampling several $$z \sim Z$$ and taking the average.
-* Update $$g_\theta$$, and repeat the process.
+If $$\{f_w\}$$ contains the true supremum among
+$$K$$-Lipschitz functions, this gives the distance exactly. This probably won't
+be true. In that case, the approximation's
+quality depends on what $$K$$-Lipschitz functions are missing from $$\{f_w\}$$.
 
-This leaves one final detail. This entire derivation only works when the
+Now, let's loop all this back to generative models.
+We'd like to train $$P_\theta = g_\theta(Z)$$ to match $$P_r$$. Intuitively, given a fixed
+$$g_\theta$$, we can compute the optimal $$f_w$$
+for the Wasserstein distance. We can then backprop through $$W(P_r, g_\theta(Z))$$
+to get the gradient for $$\theta$$.
+
+$$
+    \nabla_\theta W(P_r, P_\theta) = \nabla_\theta (E_{x \sim P_r}[f_w(x)] - E_{z \sim Z}[f_w(g_\theta(x))]) = -E_{z \sim Z}[\nabla_\theta f_w(g_\theta(z))]
+$$
+
+The training process has now broken into three steps.
+
+* For a fixed $$\theta$$, compute an approximation of $$W(P_r, P_\theta)$$ by
+training $$f_w$$ to convergence.
+* Once we find the optimal $$f_w$$, compute the $$\theta$$ gradient $$-E_{z \sim Z}[\nabla_\theta f_w(g_\theta(z))]$$
+by sampling several $$z \sim Z$$.
+* Update $$\theta$$, and repeat the process.
+
+There's one final detail. This entire derivation only works when the
 function family $$\{f_w\}$$ is $$K$$-Lipschitz. To guarantee this is true,
 we use weight clamping. The weights $$w$$ are constrained to lie within $$[-c, c]$$,
-by clipping $$w$$ after every gradient update.
+by clipping $$w$$ after every update to $$w$$.
 
 The full algorithm is below.
 
-PICTURE
+![Picture of algorithm because it was too hard to typeset](/public/wasserstein/algorithm.png)
+{: .centered }
 
-Compare & Contrast: Standard GANs
+Aside: Compare & Contrast: Standard GANs
 ===================================================================================
 
 Let's compare the WGAN algorithm with the standard GAN algorithm.
-In GANS, the discriminator maximizes
 
-$$
+* In GANS, the discriminator maximizes
+
+ $$
     \frac{1}{m} \sum_{i=1}^m \log D(x^{(i)}) + \frac{1}{m} \sum_{i=1}^m \log (1 - D(g_\theta(z^{(i)})))
-$$
+ $$
 
-where we constraint $$D(x)$$ to always be a probabiity $$p \in (0, 1)$$.
-In contrast, nothing says the $$f_w$$ in Wasserstein GAN needs to output a probability.
-This explains why the authors tend to call $$f_w$$ the critic, instead of the
-discriminator. Although $$f_w$$ can act like a classifier between the real
-and fake distribution, nothing forces it to be one.
+ where we constraint $$D(x)$$ to always be a probabiity $$p \in (0, 1)$$.
 
-The original GAN paper shows that at the maximum, this equals the Jenson-Shannon
-divergence (with some scaling and constant factors). If we trained the discriminator
-to convergence, it would be exactly the same as Wasserstein GAN, except with
-JS divergence instead of Wasserstein distance.
+ In WGANs, nothing requires $$f_w$$ to output a probability. This explains why
+ the authors tend to call $$f_w$$ the critic instead of the discriminator -
+ it's not explicitly trying to classify inputs as real or fake.
 
-However, in practice, the discriminator in GANs is not trained to convegence.
+* As argued in the original GAN paper, in the limit the maximum of the objective
+above is the Jenson-Shannon divergence, up to scaling and constant factors.
+In practice, we never train $$D$$ to convergence.
 In fact, usually the discriminator is too strong, and we need to alternate
-gradient updates between the discriminator and generator to get reasonable
-generator updates. At each generator update, we aren't updating the generator
-against the Jenson-Shannon divergence, or even an approximation
-of the Jenson-Shannon divergence. We're updating the generator against
-an objective that kind of but isn't really the Jenson-Shannon divergence.
-It certainly works, but in light of the observations this paper makes about
-gradients of the JS divergence, it's a bit surprising it did work.
+gradient updates between $$D$$ and $$G$$ to get reasonable generator updates.
+So we aren't updating $$G$$ against the Jenson-Shannon divergence, or even an
+approximation of the Jenson-Shannon divergence, we're updating $$G$$ against
+an objective that kind of aims towards the JS divergence, but doesn't go
+all the way. It certainly works, but in light of the points this paper
+makes about gradients of the JS divergence, it's a bit surprising it does work.
 
+In contrast, because the earth mover distance is differentiable nearly everywhere,
+we can (and should) train $$f_w$$ to convergence before each generator update,
+to get as accurate an estimate of $$W(P_r, P_\theta)$$ as possible.
+
+* In GANs, the common approach to training the model is to add heavy, heavy regularization,
+through batch norm and lots of dropout. In WGANs, the weight clamping seems to
+be reliable enough. (Although I'd guess batch norm and dropout don't hurt and
+possibly help.)
 
 Empirical Results
 --------------------------------------------------------------------------------
