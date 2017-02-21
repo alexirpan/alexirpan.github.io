@@ -250,4 +250,206 @@ This shows the topology under the Wasserstein distance is indeed weak, as stated
 earlier in the paper; the set of convergent sequences is strictly larger than
 the alternatives given.
 
-Furthermore, when the Wasserstein distance approaches $$0$$, the distributions
+Combined, this shows that the Wasserstein distance is a compelling loss function,
+because it's almost always differentiable, and more sequences of distributions
+converge under this distance.
+
+Wasserstein GAN
+-----------------------------------------------------------------------------------
+
+Unfortunately, computing the Wasserstein distance exactly is intractable.
+Let's repeat the definition below.
+
+DEFINITION
+
+The paper now shows how we can approximate this to be tractable. It turns out there's
+a theorem by Kantorovich and Rubinstein from 1958 which gives an alternative
+definition
+
+DEFINITON
+
+where the supremum is taken over all $$1$$-Lipschitz functions.
+
+Digression: What Does Lipschitz Mean?
+===============================================================================
+
+A function $$f: X \to Y$$ is $$K$$-Lipschitz if for all $$x_1, x_2 \in X$$,
+
+$$
+    d_Y(f(x_1), f(x_2)) \le K d_X(x_1, x_2)
+$$
+
+where $$d_X, d_Y$$ are the metrics on $$X$$ and $$Y$$. Intuitively, saying a function
+is $$K$$-Lipschitz is like saying the slope is never more than $$K$$.
+
+$$\blacksquare$$
+
+Back to the paper. If we replace the supremum over $$1$$-Lipschitz functions
+with the supremum over $$K$$-Lipschitz functions, then the supremum is
+$$K \cdot W(P_r, P_\theta)$$ instead.
+
+This supremum is still intractable, but now the set we're optimizing over is easier
+to approximate. Suppose we have a parametrized function family $$\{f_w\}$$,
+where $$w$$ are the weights, and further suppose all these functions are
+$$K$$-Lipschitz for some $$K$$. Then we have the following.
+
+LINE
+
+This gives a way to compute the Wasserstein distance, up to some unknown
+multiplicative constant. But for optimization purposes, we don't need to care what
+that constant is! It's enough to know that it exists, and that it's fixed
+throughout the training process. Gradients of $$W$$ will be scaled by that
+unknown constant, but we already scale gradients by the learning rate, so
+it should get absorbed into the hyperparam tuning.
+
+If $$\{f_w\}$$ contains the true supremum among all
+$$K$$-Lipschitz functions, this gives the distance exactly. Otherwise, the approximation's
+quality depends on the differences between $$\{f_w\}$$ and the set of $$K$$-Lipschitz
+functions.
+
+Now, let's finally bring this to generative models. As stated in the introduction,
+we'd like to have $$P_\theta = g_\theta(Z)$$. Intuitively, given the optimal $$f_w$$
+for the Wasserstein distance, we can update $$\theta$$ with
+
+$$
+    \nabla_\theta W(P_r, P_\theta) = \nabla (E_{x \sim P_r}[f_w(x)] - E_{z \sim Z}[f_w(g_\theta(x))] = -E_{z \sim Z}[\nabla_\theta f_w(g_\theta(z))]
+$$
+
+The optimization now breaks into three steps.
+
+* For a fixed generator, compute an approximation of $$W(P_r, P_\theta)$$ by
+optimizing for the best $$f_w$$.
+* Once we find the optimal $$f_w$$, compute the gradient $$-E_{z \sim Z}[\nabla_\theta f_w(g_\theta(z))]$$
+by sampling several $$z \sim Z$$ and taking the average.
+* Update $$g_\theta$$, and repeat the process.
+
+This leaves one final detail. This entire derivation only works when the
+function family $$\{f_w\}$$ is $$K$$-Lipschitz. To guarantee this is true,
+we use weight clamping. The weights $$w$$ are constrained to lie within $$[-c, c]$$,
+by clipping $$w$$ after every gradient update.
+
+The full algorithm is below.
+
+PICTURE
+
+Compare & Contrast: Standard GANs
+===================================================================================
+
+Let's compare the WGAN algorithm with the standard GAN algorithm.
+In GANS, the discriminator maximizes
+
+$$
+    \frac{1}{m} \sum_{i=1}^m \log D(x^{(i)}) + \frac{1}{m} \sum_{i=1}^m \log (1 - D(g_\theta(z^{(i)})))
+$$
+
+where we constraint $$D(x)$$ to always be a probabiity $$p \in (0, 1)$$.
+In contrast, nothing says the $$f_w$$ in Wasserstein GAN needs to output a probability.
+This explains why the authors tend to call $$f_w$$ the critic, instead of the
+discriminator. Although $$f_w$$ can act like a classifier between the real
+and fake distribution, nothing forces it to be one.
+
+The original GAN paper shows that at the maximum, this equals the Jenson-Shannon
+divergence (with some scaling and constant factors). If we trained the discriminator
+to convergence, it would be exactly the same as Wasserstein GAN, except with
+JS divergence instead of Wasserstein distance.
+
+However, in practice, the discriminator in GANs is not trained to convegence.
+In fact, usually the discriminator is too strong, and we need to alternate
+gradient updates between the discriminator and generator to get reasonable
+generator updates. At each generator update, we aren't updating the generator
+against the Jenson-Shannon divergence, or even an approximation
+of the Jenson-Shannon divergence. We're updating the generator against
+an objective that kind of but isn't really the Jenson-Shannon divergence.
+It certainly works, but in light of the observations this paper makes about
+gradients of the JS divergence, it's a bit surprising it did work.
+
+
+Empirical Results
+--------------------------------------------------------------------------------
+
+To motivate the rest of the experiments, the authors set up two Gaussian
+distributions, train a GAN discriminator and WGAN critic to optimality, then
+plot their values. The blue curve is the real distribution, the green curve
+is the fake distribution, the red curve is the GAN discriminator output at
+various points, and the cyan curve is the WGAN critic output.
+
+PICTURE
+
+The weight clamping appears to guarantee the gradient is nice over all the
+state space.
+
+Next, the Wasserstein loss seems to correlate well with image quality.
+
+PICTURE
+
+After reading through the paper, this actually isn't too surprising. For these
+curves, we're training the critic $$f_w$$ to convergence. These plots should
+therefore be pretty good approximation of $$K \cdot W(P_r, P_\theta)$$, where $$K$$
+is the Lipschitz constant for the family $$\{f_w\}$$.
+As argued before, a low $$W(P_r, P_\theta)$$ means $$P_r$$ and $$P_\theta$$ are "close"
+to one another. It would be more surprising if low Wasserstein distance
+*didn't* correspond to visual similarity.
+
+The image results also look quite good. Compared to the DCGAN baseline on the
+bedroom dataset, it performs about as well.
+
+PICTURE
+
+If we remove batch norm from the
+generator, WGAN still generates good samples, but DCGAN diverges completely.
+More compellingly, the results suggest there
+
+PICTURE
+
+Finally, we make the generator a feedforward net instead of a convolutional one.
+This keeps the number of parameters the same, while removing the inductive
+bias convolutional models give. The WGAN samples are more detailed, and don't
+have as much mode collapse as the GAN.
+
+PICTURE
+
+
+Research Questions
+------------------------------------------------------------------------------
+
+This feels like a very rich paper, with a lot of natural follow-up questions.
+
+* The weights in $$f_w$$ are clamped to $$[-c, +c]$$. How important is $$c$$
+for performance? Based on lurking /r/MachineLearning, the tentative results
+say that low $$c$$ trains more reliably, but high $$c$$ trains faster when
+it does work.
+
+In theory, different $$c$$ only changes the scaling factor between different
+$$\{f_w\}$$. But remember that we're approximating the set of all $$K$$-Lipschitz
+functions with $$\{f_w\}$$. I imagine the discrepency between the two sets
+changes with $$c$$. There could be interesting work in describing that discrepency,
+or in finding ways to make $$\{f_w\}$$ be closer to $$K$$-Lipschitz functions
+while still be optimizable.
+
+* The authors observe that because the constant $$K$$ depends on the model
+architecture, we can't directly compare the Wasserstein estimate between
+different model architectures to choose the best model. If there was a way to
+estimate $$K$$ for a given architecture and $$c$$, could we "normalize"
+the Wasserstein estimate to compare different model architectures?
+
+(Note: the paper discusses this too, and is quick to point out that we don't
+know the approximation error between our estimate of the EM distance and the
+true EM distance. However, if I understand it right, if we use a fixed
+critic architecture, we should be able to compare different generators
+without issue.)
+
+* How important is it to train the critic to convergence? A converged critic
+gives the most accurate gradient, but in settings where that's impractical,
+can a mildly trained critic work?
+
+* There's a connection between GANs and actor-critic reinforcement learning.
+What ideas from this work are applicable to actor-critic RL? (At a first
+glance, I'm now very interested in investigating the magnitude of the actor
+gradients. If they tend to be very large or very small, weight clamping on
+the critic may make the training more consistent.)
+
+* Are there any low-hanging distribution matching problems?
+I have my eye on imitation learning. The
+Generative Adversarial Imitation Learning showed a GAN-like approach makes
+sense, and there could be easy gains in switching to a WGAN approach.
+
