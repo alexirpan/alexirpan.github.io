@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Readthrough: Wasserstein GAN"
+title:  "Read-through: Wasserstein GAN"
 date:   2017-02-12 16:12:00 -0800
 ---
 
@@ -417,9 +417,9 @@ Let's compare the WGAN algorithm with the standard GAN algorithm.
 
 * In GANS, the discriminator maximizes
 
- $$
-    \frac{1}{m} \sum_{i=1}^m \log D(x^{(i)}) + \frac{1}{m} \sum_{i=1}^m \log (1 - D(g_\theta(z^{(i)})))
- $$
+    $$
+  \frac{1}{m} \sum_{i=1}^m \log D(x^{(i)}) + \frac{1}{m} \sum_{i=1}^m \log (1 - D(g_\theta(z^{(i)})))
+    $$
 
     where we constraint $$D(x)$$ to always be a probabiity $$p \in (0, 1)$$.
 
@@ -485,7 +485,7 @@ bedroom dataset, it performs about as well.
 ![DCGAN with DCGAN architecture](/public/wasserstein/dcgan_bn.png)
 {: .centered }
 
-Top: WGAN with the same DCGAN architecture. Bottom: DCGAN
+*Top:* WGAN with the same DCGAN architecture. *Bottom:* DCGAN
 {: .centered }
 
 If we remove batch norm from the generator, WGAN still generates okay samples,
@@ -497,7 +497,7 @@ but DCGAN fails completely.
 ![DCGAN with DCGAN architecture, no batch norm](/public/wasserstein/dcgan_nobn.png)
 {: .centered }
 
-Top: WGAN with DCGAN architecture, no batch norm. Bottom: DCGAN, no batch norm.
+*Top:* WGAN with DCGAN architecture, no batch norm. *Bottom:* DCGAN, no batch norm.
 {: .centered }
 
 Finally, we make the generator a feedforward net instead of a convolutional one.
@@ -512,12 +512,12 @@ into mode collapse at all for WGANs!
 ![DCGAN with MLP architecture](/public/wasserstein/gan_mlp.png)
 {: .centered }
 
-Top: WGAN with MLP architecture. Bottom: Standard GAN, same architecture.
+*Top:* WGAN with MLP architecture. *Bottom:* Standard GAN, same architecture.
 {: .centered }
 
 $$\blacksquare$$
 
-The readthrough of the paper ends here. If you're interested in related work,
+The read-through of the paper ends here. If you're interested in related work,
 or the proofs for the theorems, you'll have to read the paper.
 
 
@@ -526,17 +526,15 @@ Follow-Up Questions
 
 This is a rich enough paper to have several natural follow-up questions.
 
-* The weights in $$f_w$$ are clamped to $$[-c, +c]$$. How important is $$c$$
-for performance?
+The weights in $$f_w$$ are clamped to $$[-c, +c]$$. How important is $$c$$
+for performance? Based on lurking /r/MachineLearning, the tentative results
+say that low $$c$$ trains more reliably, but high $$c$$ trains faster when
+it does work. I imagine $$\{f_W\}$$ imagine the discrepancy between the two sets
+changes with $$c$$. There could be interesting work in describing that discrepancy,
+or in finding ways to make $$\{f_w\}$$ be closer to $$K$$-Lipschitz functions
+while still be optimizable.
 
- Based on lurking /r/MachineLearning, the tentative results
- say that low $$c$$ trains more reliably, but high $$c$$ trains faster when
- it does work. I imagine $$\{f_W\}$$ imagine the discrepency between the two sets
- changes with $$c$$. There could be interesting work in describing that discrepency,
- or in finding ways to make $$\{f_w\}$$ be closer to $$K$$-Lipschitz functions
- while still be optimizable.
-
-* Given a fixed critic architecture and fixed $$c$$ for clamping, can we
+Given a fixed critic architecture and fixed $$c$$ for clamping, can we
 quantitatively compare different generators by computing the
 Wasserstein estimate of both? Note there's an approximation
 error from optimizing over $$\{f_w: w \in \mathcal{W}\}$$ instead of $$\{f: \|f\|_L \le K\}$$,
@@ -547,32 +545,32 @@ too much between distributions, this would give a way to judge generation qualit
 without relying on Mechanical Turk. (And if the error does change a lot, it would probably be
 interesting to investigate when that happens.)
 
-* The constant $$K$$ depends on both $$c$$ and the model architecture, and
+The constant $$K$$ depends on both $$c$$ and the model architecture, and
 therefore we can't directly compare the critics between models with different
 architectures. Is there a way to estimate $$K$$? Recall the critic objective
 converges to $$K \cdot W(P_r, P_\theta)$$, so dividing by $$K$$ would normalize
 the difference between architectures.
 
- This actually seems pretty straightforward. Take either a random generator or
- pretrained generator, then train critics $$f_w$$ from varying architectures and
- compare their final values. Again, the approximation error could complicate
- this, but this could be a way to analyze the approximation error itself. Given
- a few different generators, the change in estimated $$K$$ between different
- distributions would show how important the distribution is to the approximation
- error.
+* This actually seems pretty straightforward. Take either a random generator or
+pretrained generator, then train critics $$f_w$$ from varying architectures and
+compare their final values. Again, the approximation error could complicate
+this, but this could be a way to analyze the approximation error itself. Given
+a few different generators, the change in estimated $$K$$ between different
+distributions would show how important the distribution is to the approximation
+error.
 
-* How important is it to train the critic to convergence? A converged critic
+How important is it to train the critic to convergence? A converged critic
 gives the most accurate gradient, but it takes more time.
 In settings where that's impractical, can a simple alternating gradient
 scheme work?
 
-* Are ideas from this work are applicable to actor-critic RL? At a first
+Are ideas from this work are applicable to actor-critic RL? At a first
 glance, I'm now very interested in investigating the magnitude of the actor
 gradients. If they tend to be very large or very small, we may have a similar
 saturation problem, and adding a Lipschitz bound through weight clamping
 could help give better gradients.
 
-* Are there any low-hanging distribution matching problems? Personally,
+Are there any low-hanging distribution matching problems? Personally,
 I have my eye on imitation learning. The
 Generative Adversarial Imitation Learning paper showed a GAN approach made
 sense, and there could be easy gains just from switching to a WGAN approach.
