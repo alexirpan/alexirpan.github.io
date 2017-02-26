@@ -4,6 +4,8 @@ title:  "Read-through: Wasserstein GAN"
 date:   2017-02-22 01:41:00 -0800
 ---
 
+*Last edited February 26, 2017.*
+
 I really, really like the [Wasserstein GAN paper](https://arxiv.org/abs/1701.07875). I know it's already gotten a lot
 of hype, but I feel like it could use more.
 
@@ -68,12 +70,12 @@ approximates $$P_r$$, where $$\theta$$ are the parameters of the distribution.
 
 You can imagine two approaches for doing this.
 
-* The parameters $$\theta$$ directly describe a probability density.
-Meaning, $$P_\theta$$ is a function such that $$P_\theta(x) \ge 0$$ and
-$$\int_x P_\theta(x)\, dx = 1$$.
+* Directly learn the probability density function $$P_\theta$$.
+Meaning, $$P_\theta$$ is some differentiable function such that
+$$P_\theta(x) \ge 0$$ and $$\int_x P_\theta(x)\, dx = 1$$.
 We optimize $$P_\theta$$ through maximum likelihood estimation.
-* The parameters $$\theta$$ describe a way to transform an existing
-distribution $$Z$$. Here, $$g_\theta$$ is some differentiable function,
+* Learn a function that transforms an existing distribution $$Z$$ into
+$$P_\theta$$. Here, $$g_\theta$$ is some differentiable function,
 $$Z$$ is a common distribution (usually uniform or Gaussian),
 and $$P_\theta = g_\theta(Z)$$.
 
@@ -122,7 +124,7 @@ very unlikely that all of $$P_r$$ lies within that support.
 If even a single data point lies outside $$P_\theta$$'s support,
 the KL divergence will explode.
 
-To deal with this, we can random noise to $$P_\theta$$ when training the
+To deal with this, we can add random noise to $$P_\theta$$ when training the
 MLE. This ensures the distribution is defined everywhere. But now we introduce
 some error, and empirically people have needed to add a lot of random noise
 to make models train. That kind of sucks. Additionally, even if we learn a
@@ -183,9 +185,9 @@ On to the distances at play.
     This isn't symmetric. The reverse KL divergence is defined as $$KL(P_g \| P_r)$$.
 
 * The Jenson-Shannon (JS) divergence: Let $$M$$ be the mixture distribution
-$$M = 1/2 P + 1/2 Q$$. Then
+$$M = P_r/2 + P_g/2$$. Then
 
-    $$JS(P_r,P_g) = KL(P_r\|P_m)+KL(P_g\|P_m)$$
+    $$JS(P_r,P_g) = \frac{1}{2}KL(P_r\|P_m)+\frac{1}{2}KL(P_g\|P_m)$$
 
 * Finally, the Earth Mover (EM) or Wasserstein distance: Let $$\Pi(P_r, P_g)$$
 be the set of all joint distributions $$\gamma$$ whose marginal distributions
@@ -267,14 +269,14 @@ $$(0, 0.5)$$.
   \end{cases}
  $$
 
-* Jenson-Shannon divergence: Consider the mixture $$M = \frac{1}{2} P_0 + \frac{1}{2} P_\theta$$,
+* Jenson-Shannon divergence: Consider the mixture $$M = P_0/2 + P_\theta/2$$,
 and now look at just one of the KL terms.
 
  $$
     KL(P_0 \| M) = \int_{(x,y)} P_0(x,y) \log \frac{P_0(x,y)}{M(x,y)} \,dy\,dx
  $$
 
- For any $$x,y$$ where $$P_0(x,y) \neq 0$$, $$M(x,y) = \frac{1}{2} P_0(x,y)$$, so
+ For any $$x,y$$ where $$P_0(x,y) \neq 0$$, $$M(x,y) = \frac{1}{2}P_0(x,y)$$, so
 this integral works out to $$\log 2$$. The same is true of $$KL(P_\theta \| M)$$,
 so the JS divergence is
 
