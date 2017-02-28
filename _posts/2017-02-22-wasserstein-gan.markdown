@@ -426,7 +426,7 @@ to get the gradient for $$\theta$$.
 
 $$
 \begin{aligned}
-    \nabla_\theta W(P_r, P_\theta) &= \nabla_\theta (\mathbb{E}_{x \sim P_r}[f_w(x)] - \mathbb{E}_{z \sim Z}[f_w(g_\theta(x))]) \\
+    \nabla_\theta W(P_r, P_\theta) &= \nabla_\theta (\mathbb{E}_{x \sim P_r}[f_w(x)] - \mathbb{E}_{z \sim Z}[f_w(g_\theta(z))]) \\
     &= -\mathbb{E}_{z \sim Z}[\nabla_\theta f_w(g_\theta(z))]
 \end{aligned}
 $$
