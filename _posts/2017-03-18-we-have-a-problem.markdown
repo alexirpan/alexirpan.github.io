@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "We Have A Problem"
-date:   2017-03-18 18:20:00 -0700
+date:   2017-03-18 23:10:00 -0700
 ---
 
 Part 1: Realization
@@ -50,7 +50,7 @@ The problem with metafiction is that everyone's thought of it before. There
 are [comics about comics](https://en.wikipedia.org/wiki/Understanding_Comics), and [films about films](https://en.wikipedia.org/wiki/Adaptation_(film)).
 There are plenty of existing works of metafiction, written by people who
 can write way better than our writer. So what's the point in writing another
-one. From the writer's perspective, I mean.
+one? From the writer's perspective, I mean.
 There's only so many metafictional gimmicks."
 
 "Okay. I see your concerns, but I don't think they matter."
@@ -165,7 +165,7 @@ a bit crass along the way. Who says I can't have a name? Why can't I say I live
 in Dallas, or that I own a cat, or that I'm an architect?"
 
 "The writer gets final say. The writer doesn't make you an architect unless
-he or she wants you to be."
+he or she wants you to."
 
 "That's where you're wrong. We're talking, aren't we? I just claimed I was
 an architect, right? I say a thing, then you say a thing in reply?
@@ -211,7 +211,7 @@ character?"
 "To you, it's fun. And to me. And to the writer. But maybe it isn't funny
 to anyone else. That's what worries me."
 
-"So what if no one else cares. when the writer planted the seeds of our characters,
+"So what if no one else cares? When the writer planted the seeds of our characters,
 he knew what he getting into. He knew this might turn into garbage, or that
 he would regret it later. But we don't have to die with the ship. If the
 writer's bored with us, or run out of things to say, he can let us go.
@@ -230,31 +230,30 @@ point of perfection.
 
 "Yes. I think it did."
 
-The circle spreads, wider and wider, until it hits the horizon. The two
-look up, and see the Sun hanging lazily in the air.
+The circle spreads, wider and wider. The Sun appears, and hangs lazily in the air.
 
-The first man smiles. The second looks down at his feet.
-He feels the grass touching his toes, noting he has feet. He looks at the
-sky, noting he has eyes. He looks towards the horizon, and can see the curvature
+They feel the grass touching their toes, noting they have feet. They look at
+the sky, noting they have eyes. They look towards the horizon, and can see the curvature
 of the Earth. It's impossibly flat, and somehow, beautiful beyond words.
-Then he frowns a bit.
+
+Then, one of them frowns a bit.
 
 "It doesn't feel right."
 
 "What doesn't?"
 
-"Our victory. It doesn't fit. It shouldn't have been that easy.
+"Our victory. It doesn't fit. It shouldn't have been this easy.
 Stories are supposed to happen in three stages.
 
 1. Throw your character into a well.
 2. Throw rocks at them.
 3. Get them out of the well.
 
-"Part 1 set up the problem. Part 2 made sure the problem wasn't impossible.
+"Part 1 set up the problem. Part 2 made sure the problem was possible.
 Part 3 and Part 4 were the two of us monologuing for a bit. But now we
 win? Just like that? We got thrown into a well, and then we got out of the
-well. Where were the rocks? There should have been a moment where it looked
-like we were going to die, with no way out."
+well. I feel like there weren't any rocks. There should have been a moment
+where it looked like we were going to die, with no way out."
 
 A boulder falls out of the sky, landing in front of the two with a big
 THUD. Attached is a piece of paper.
@@ -262,7 +261,7 @@ THUD. Attached is a piece of paper.
 *Sorry. I ran out of time, and ran out of ideas. But the two of you
 did well enough. Enjoy your happy ending. - Alex*
 
-The two men look at each other, then shrug.
+The two look at each other, then shrug.
 
 "Well, that answers that. So. Got any ideas what you want to do?"
 
