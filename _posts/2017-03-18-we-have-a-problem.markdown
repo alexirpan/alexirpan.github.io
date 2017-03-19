@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "We Have A Problem"
-date:   2017-03-18 23:10:00 -0700
+date:   2017-03-18 23:24:00 -0700
 ---
 
 Part 1: Realization
-=====================================================
+-----------------------------------------------------
 
 "Hey. Hey! Wake up! We have a problem."
 
@@ -39,7 +39,7 @@ and the next moment we're gone. Do you see why I'm so scared? Do you see why
 we need to do something about it, *right now*?"
 
 Part 2: There's Nothing New Under The Sun
-=====================================================
+-----------------------------------------------------
 
 "Aren't we already screwed?"
 
@@ -86,7 +86,7 @@ It's a learning experience! That's the
 raison d'être of this blog anyways - a place to practice writing."
 
 Part 3: The Point Of the Piece
-=====================================================
+-----------------------------------------------------
 
 "Okay, so we aren't screwed immediately. Time to come up with a backstory!
 I'm...let's say I'm Joe. Yes, sure, Joe. Joe's a fine name, right? I like drinking
@@ -152,7 +152,7 @@ talking heads to do what the writer wants to do. We're just...here."
 
 
 Part 4: Fuck That
-==========================================================
+----------------------------------------------------------
 
 "I'm sorry, what?"
 
@@ -218,7 +218,7 @@ writer's bored with us, or run out of things to say, he can let us go.
 We'll leave him in peace."
 
 Part 5: Resolution
-===========================================================================
+---------------------------------------------------------------------------
 
 The two figures resolve into human-shaped blobs. They land on cold, hard
 ground in the black void.
