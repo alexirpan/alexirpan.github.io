@@ -40,10 +40,11 @@ Given our data distribution, the output of this unit is itself going to follow
 some distribution. That distribution depends on the weights and
 biases that feed into this unit.
 
-During the training process, the distribution of this unit's activation is
+During the training process, the distribution of this unit's output is
 going to change. The next layer in the network has to learn how to effectively
-make use of this unit's output.
-current layer's activation
+use that unit's activation, which is made harder if the distribution of those
+activations is continually shifting. The motivation behind batch norm is to
+normalize the output distribution to always be mean 0, variance 1.
 
 When training neural nets, we feed small batches (minibatches) of data at a time.
 To make this example concrete, let's say our batch size is 32. Then, depending
