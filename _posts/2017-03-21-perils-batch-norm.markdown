@@ -138,8 +138,11 @@ to the average mean and variance over the entire dataset. We then normalize
 with the moving average, instead of the true mean and variance.
 
 
-What Exactly Went Wrong?
+Stories Revisited
 -----------------------------------------------------------------------------
+
+With batch norm background out of the way, let's revisit the stories from the
+beginning, and see what exactly went wrong.
 
 > One day, I was training a model with a reinforcement learning.
 > Someone recommended I tried batch norm, but but I
@@ -181,8 +184,78 @@ them, feeding one batch to each copy.
 
 IMAGE
 
-In both approaches, we're feeding a mixture of
-In both approaches, we feed in the same data, and we have the same loss,
-and we run the same optimization function, and we use the same hyperparams.
-*So why is one 5% better than the other?*
+Due to implementation reasons, when sharing weights, the batch norm moving
+averages were shared as well. In both approaches, the moving averages
+converge to the mean and variance of the average of the two distributions.
+But at training time, they differ.
 
+* In the first approach, we train the network as if the true mean/variance
+were the mean/variance of the mixture distribution.
+* In the second approach, we train the network as if the true mean
+was the mean of just the 1st distribution, or just the 2nd distribution,
+and never the mixture. Same for the variance. So, at training time everything
+works out okay, but at evalutation time, the mean/variance are different from
+the ones the network was trained with.
+
+IMAGE
+
+Above is a graph of accuracy, where we ran the same hyperparameters 5 times to
+get a measure of uncertainty. Not only does the batch norm issue hurt performance,
+it also increases the variance in model performance.
+
+(Note this is a general problem whenever you train the same parameters on
+two different datasets. In particular, when training a GAN, if your discriminator
+uses batch norm, you likely want to make sure your batches always have a mix
+of real and fake data.)
+
+
+Alternatives
+--------------------------------------------------------------------------
+
+I know I've said this already, but it bears repeating:
+all of these issues happened because of what batch norm does to a model.
+
+* Batch norm makes the computation change between train time and test time.
+* Batch norm makes training depend on all the entries in the batch.
+
+And if your code relies on assumptions that batch norm breaks, you're going
+to have problems.
+
+Batch norm isn't going away. It's ingrained very heavily, it's part of several
+famous model architectures, and that means at some point you'll either
+train a model with batch norm to compare an old approach, or will use a pretrained
+model with batch norm.
+
+But, if neither of those are true, I would recommend using layer norm instead.
+It works along similar lines, without breaking the assumptions that batch norm
+does.
+
+* The computation in layer norm happens at both train and test time.
+* Training is independent from other entries in the batch.
+
+You'll have to do hyperparam tuning anyways, and when tuned I would be surprised
+if the difference in performance between layer norm and batch norm was that big.
+
+If you're confident you've considered all the consequences of batch norm, then
+sure, you can keep using it. But the whole reason software is hard is because
+of the unknown unknowns, the bugs that happen because you don't expect them to
+happen.
+
+CONCLUSION HERE
+
+
+After the fix, my model started working, but I got lucky here too. I was
+applying batch norm directly on the input states when training. In supervised
+learning, you'd never do this, because it's equivalent to whitening the data,
+and presumably you've done that already. But in reinforcement learning, using
+batch norm makes sense, because the state distribution is going to change as
+your policy changes. Without batch norm, even inputs have the same covariate
+shift problem.
+
+But in the environment I was using, the states were the relative position of
+the robot joints, and the velocities of each of those joints, concatenated
+together. Because I naively applied normalization over the entire state,
+the faster the robot moved, the lower the magnitude of the normalized joint
+inputs. A better approach would be to normalize just the parts of the state
+space corresponding to joint position. But I got lucky - reinforcement
+learning was able to power through the issue.
