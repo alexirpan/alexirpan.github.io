@@ -4,12 +4,14 @@ title:  "On The Perils of Batch Norm"
 date:   2017-03-21 00:13:00 -0700
 ---
 
-One day, I was training a model with a reinforcement learning.
-(NAF, to be specific.) Someone recommended I tried batch norm, because
+One day, I was training a neural network with reinforcement learning.
+I was trying to reproduce the results of paper, with lots of difficulty.
+Someone recommended I add batch norm, because
 it was key to making some of the models train. I implemented it, but I
 still couldn't reproduce the results.
 
-A few days later, I figured out the issue. Batch norm was the culprit.
+A few days later, I found a bug with how I was doing batch norm, and after fixing
+it, things started getting better.
 
 \*\*\*
 {: .centered }
@@ -117,11 +119,15 @@ distribution for their inputs.
 
 This is the problem batch norm addresses. We can't keep the distribution
 entirely fixed, but we can reduce the covariate shift, by normalizing the
-output to always be mean $$0$$, variance $$1$$. (More formally, we restrict
-only the 1st and 2nd moment, instead of the entire distribution.)
+output to always be mean $$0$$, variance $$1$$.
 
-(As a side effect, normalizing the outputs can help stop exploding or
-vanishing gradients, but the covariate shift is the main motivation.)
+IMAGE
+
+Note this doesn't keep the distribution fixed! There are several distributions
+with mean $$0$$, variance $$1$$, and the output distribution is allowed
+to move between any of them. Batch norm just restricts the kind of distributions
+we allow (which is why the paper is subtitles "reducing covariate shift",
+instead of "eliminates covariate shift".)
 
 So, how do we make sure the output is always mean $$0$$, variance $$1$$?
 At training time, we train the network on batches of data (say 32 inputs at
