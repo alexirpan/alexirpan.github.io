@@ -17,28 +17,25 @@ it, things started getting better.
 {: .centered }
 
 Another day, somebody came to me with a very, very strange bug.
-Their model was working fine at training time, slowly increasing in
-accuracy. When evaluated on a batch of data, the accuracy was still good.
-But when evaluated on a single example, it failed completely.
+During training, the classification accuracy was fine. During evaluation, the
+accuracy on the validation set was fine. But at inference time, the model
+failed completely.
 
-This sounded suspiciously like a batch norm issue, but I had no idea how
-it could have happened.
-After several hours of digging in the code, we found it was indeed
-a batch norm issue.
+Hmmmmm. Well, that certainly smelled like a batch norm issue. About an hour
+later, we finally tracked down the code that used batch norm incorrectly.
 
 \*\*\*
 {: .centered }
 
-That same day (and I mean literally that same day), I was discussing the
-recent issues I was having with my own project. I had branched from a
-working model to implement a domain adaptation technique, and was running
-regression tests to verify I didn't make a bug in the port. I used exactly
+That same day (and I mean literally that same day), I was discussing
+recent issues I was having with my own project.
+I had two equivalent implementations of a neural net. I was using exactly
 the same data, with exactly the same loss, and exactly the same hyperparameters,
-*so why was my code 5% worse in performance?*
+and exactly the same optimizer, same number of GPUs,
+*so why was my code 5% worse?*
 
-It is very lucky I was dealing with batch norm issues earlier that day, because
-if I hadn't, it would have taken me much longer to figure out it was Yet
-Another Batch Norm Issue.
+Guess what? It was batch norm! Good thing the bug from the last story was
+still in my head, becuase who knows how long it would have taken me otherwise?
 
 
 Batch Norm: The Cause of, And Solution To, All of Life's Problems
@@ -52,24 +49,26 @@ to inexperience.
 
 On the other hand, these issues all happened because batch norm forces you to
 keep track of things you normally don't need to care about. Suddenly, your model
-runs different computation between train time and test time. Suddenly, you have
-to care about what kind of data is given in each minibatch, because entries in
-the batch are no longer independent. Yes, you can treat batch norm as black box
-normalization magic, but in practice, [the abstraction leaks](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/),
+runs different computation between train time and test time. Suddenly, entries
+in the minibatch are no longer independent.
+Yes, you can treat batch norm as black box normalization magic, and this'll even
+work for a while, but in practice [the abstraction leaks](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/),
 like all abstractions do. In batch norm's case, the abstraction leaks in ways
-that other optimization tricks don't, and it places more cognitive load on the
-researcher to keep track of everything.
+that other optimization tricks don't. It places more cognitive load on the
+researcher to keep track of everything, to make sure it's all batch-norm-proof.
 
-In short, it was all my fault, but batch norm sure made it easier to make those
-mistakes in the first place.
+In short, the problems were my fault, but batch norm made it a lot easier to
+make those mistakes.
 
-That said, when it works, my models definitely train a lot faster with batch norm.
+That said, when batch norm works, my models definitely train a lot faster.
 Like, a lot faster. No contest.
 
-It's almost like a Faustian bargain. I'll give you 2x faster training, in exchange
-for increasing your chances of hitting some incredibly obtuse bug that'll plague
-you for days. And I keep signing it, like a sucker. And so do other people.
-If they didn't, it wouldn't have gotten over 1000 citations.
+It's the Faustian bargain of optimization. I'll give you 2x faster training, 10x
+faster training, 20x faster training! All I ask is that you increase your chance
+of hitting some incredibly obtuse bug.
+
+I keep signing it, like a sucker. And so do other people.
+If they didn't, the batch norm paper wouldn't have gotten over 1000 citations.
 
 
 What is Batch Norm?
@@ -85,49 +84,48 @@ example, let's say it's a 1 hidden layer network. Letting $$\sigma$$
 be the nonlinearity, we have something like this.
 
 $$
-    F(x) = f_2(f_1(x))
+    h = f_1(x), F(x) = f_2(h) = f_2(f_1(x))
 $$
 
-where $$f_1(x) = \sigma(W_1x + b_1)$$ and $$f_2(x) = \sigma(W_2x + b_2)$$.
+where $$f_1(x) = \sigma(W_1x + b_1)$$ and $$f_2(h) = \sigma(W_2h + b_2)$$.
 
-IMAGE
+![One hidden layer neural net](/public/perils-batch-norm/neural_net.jpeg)
+{: .centered }
 
-Now, consider a single output unit in one of the layers.
+Adapted [from a picture from CS231N](http://cs231n.github.io/neural-networks-1/)
+{: .centered }
 
-IMAGE
-
-Like all of machine learning, we assume input data follows some distribution
-$$D$$. The output of each layer is itself going to follow some distribution,
-which is defined by $$D$$ and the weights and biases for that layer. For
-conveincence, letl $$f_1(D)$$ be the distribution of the 1st layer's activations.
-
-Now, during the training process, each layer is going have its own job.
-The 1st layer is trying to learn good features from the input. The 2nd layer's
-job is to learn good features from the 1st layer's output. The 3rd layer learns
-from the 2nd layer, the 4th from the 3rd, and so on down, with the final layer
-learning how to solve the desired task. Then, through the magic of backprop,
-we can update everything appropriately. Easy, right?
+During the training process, we can think of each layer as having its own job.
+The 1st layer's job is to learn good features from the input. The 2nd layer's
+job is to solve the task from the 1st layer's features. These jobs are going
+to depend on one another, but backprop gives us a way to update everything
+at once. Easy, right?
 
 However, as the weights change, the distribution of each layer's activations
-will follow suit. This makes the next layer's job harder, because the distribution
-it's learning from keeps changing underneath it. (The paper calls this
-the covariate shift problem.)
+will change too. This makes the next layer's job harder, because the distribution
+it's learning from keeps changing underneath it. In the literature, this is
+known as *covariate shift*. The key motivation behind batch norm is that covariate
+shift can be problem at every layer of the network.
 
-Wouldn't it be nice if we could keep the distribution fixed during training?
+Wouldn't it be nice if we could keep the distribution of activations fixed
+during training?
 That way, layers in the network wouldn't need to compensate for the shift in
 distribution for their inputs.
 
-This is the problem batch norm addresses. We can't keep the distribution
-entirely fixed, but we can reduce the covariate shift, by normalizing the
-output to always be mean $$0$$, variance $$1$$.
+That would be nice, but in practice there are some problems with it.
+
+* We can't compute the distribution exactly, because the distribution depends
+on all datapoints $$X$$.
+* If we constrain the distribution of activations, we limit the kinds
+of networks we can learn.
+
+To solve this, batch norm does the following.
+
+* 
+
 
 IMAGE
 
-Note this doesn't keep the distribution fixed! There are several distributions
-with mean $$0$$, variance $$1$$, and the output distribution is allowed
-to move between any of them. Batch norm just restricts the kind of distributions
-we allow (which is why the paper is subtitles "reducing covariate shift",
-instead of "eliminates covariate shift".)
 
 So, how do we make sure the output is always mean $$0$$, variance $$1$$?
 At training time, we train the network on batches of data (say 32 inputs at
