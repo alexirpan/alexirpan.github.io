@@ -34,8 +34,9 @@ the same data, with exactly the same loss, and exactly the same hyperparameters,
 and exactly the same optimizer, same number of GPUs,
 *so why was my code 5% worse?*
 
-Guess what? It was batch norm! Good thing the bug from the last story was
-still in my head, becuase who knows how long it would have taken me otherwise?
+Guess what? It was batch norm! Luckily, I had been thinking about batch norm
+earlier that day. Who knows how long it would have taken me to figure it out
+if I hadn't?
 
 
 Batch Norm: The Cause of, And Solution To, All of Life's Problems
@@ -71,7 +72,7 @@ I keep signing it, like a sucker. And so do other people.
 If they didn't, the batch norm paper wouldn't have gotten over 1000 citations.
 
 
-What is Batch Norm?
+Digression: What Does Batch Norm Do?
 --------------------------------------------------------------------------------
 
 Earlier, I mentioned that batch norm is a leaky abstraction. To solve bugs
@@ -114,116 +115,112 @@ distribution for their inputs.
 
 That would be nice, but in practice there are some problems with it.
 
-* We can't compute the distribution exactly, because the distribution depends
-on all datapoints $$X$$.
+* It is expensive to compute the distribution exactly, because the distribution
+depends on all datapoints $$X$$.
 * If we constrain the distribution of activations, we limit the kinds
 of networks we can learn.
 
 To solve this, batch norm does the following.
 
-* 
+* We approximate the normalization, by assuming every neuron can be normalized
+independently, and that normalizing over a minibatch of points from $$X$$ is
+sufficient.
+* After normalizing the distribution, we scale by a learned $$\gamma$$ and
+shift by a learned $$\beta$$.
+
+The algorithm below (copied from the paper) is the transform done for a single
+activation $$x$$, given that we have a batch of activations $$\{x_1,\ldots,x_m\}$$
+A small $$\epsilon$$ is added to the normalization to avoid division by $$0$$.
+
+![Batch norm algorithm](/public/perils-batch-norm/batch-norm-alg.png)
+{: .centered }
+
+Note that at the end of the transform, the activations can still follow an
+arbitrary distribution. However, that distribution's mean and variance depend
+only on $$\gamma$$ and $$\beta$$. (To be specific, the mean is $$\beta$$ and
+the variance is $$\gamma^2$$.) By concentrating the mean and variance into
+a single variable, we make it easier for the network to learn the distribution
+that makes solving the task easiest.
+
+During the training process, we also keep a running average of minibatch means
+and variances. Let $$\mu_B$$ and $$\sigma_B$$ be the minibatch mean and variance.
+We update with an exponential moving average.
+
+$$
+    \mu \gets \beta \mu + (1-\beta) \mu_B
+$$
+
+$$
+    \sigma \gets \beta \sigma + (1-\beta) \sigma_B
+$$
+
+The exponential moving average is a weighted average of all terms seen so far,
+except it places more weight on recent terms. We use this to approximate
+the true mean and variance over the entire dataset.
+
+At evaluation time, instead of normalizing with the minibatch mean and variance,
+we normalize with the averaged $$\mu$$ and $$\sigma$$. This makes the evaluation
+independent of the examples in each minibatch.
 
 
-IMAGE
-
-
-So, how do we make sure the output is always mean $$0$$, variance $$1$$?
-At training time, we train the network on batches of data (say 32 inputs at
-a time for the sake of an exmaple.) For each output unit, we can compute the
-mean and variance over this batch, which lets us normalize exactly.
-
-EQUATIONS HERE?
-
-However, at test time, we want to run the network on single examples at a time.
-To ensure consistent evaluation, when we compute the mean and variance above,
-we also update a moving average of the means and variance of each batch.
-When the network has converged, the moving average should have converged
-to the average mean and variance over the entire dataset. We then normalize
-with the moving average, instead of the true mean and variance.
-
-
-Stories Revisited
+Batch Norm Oddities
 -----------------------------------------------------------------------------
 
-With batch norm background out of the way, let's revisit the stories from the
-beginning, and see what exactly went wrong.
+I know I've said this already, but it bears repeating:
 
-> One day, I was training a model with a reinforcement learning.
-> Someone recommended I tried batch norm, but but I
-> still couldn't reproduce the results.
+* Batch norm makes the computation change between train time and test time.
+* In train mode, the network's output now depends on the minibatch.
 
-I eventually discovered that when computing actions to take, my model
-was running in train mode. Because I was feeding a batch of size 1 (the last
-state from the environment), batch norm forced the input to always be all
-zeroes. I never needed to change to test mode in the middle of training before,
-but batch norm makes the train mode eval differ from the test mode eval.
+If your code relies on an assumption that batch norm breaks, you're going
+to have problems. And annoyingly, batch norm is unique in what assumptions it
+breaks, and therefore is much more likely to break something you never expected
+to fail.
 
-> Another day, somebody came to me with a very, very strange bug.
-> Their model was working fine at training time, slowly increasing in
-> accuracy. When evaluated on a batch of data, the accuracy was still good.
-> But when evaluated on a single example, it failed completely.
+The following is a list of things I have to keep in mind whenever I use batch norm:
 
-In this model, we loaded a pretrained network, froze all its weights, then
-added extra layers and trained just the new layers on the new task.
-It turned out we had accidentally loaded the pretrained network in train
-mode. This was fine before, because we had made extra sure that all variables
-in that network were not trainable, but not anymore. To fix it, we
-ended up having to make extra sure that the model was loaded in test mode,
-with moving average updates disabled for layers we wanted to freeze.
-
-
-> I had branched from a working model to implement a domain adaptation
-> technique, and was running regression tests to verify I didn't make a bug in
-> the port. I used exactly the same data, with exactly the same loss, and
-> exactly the same hyperparameters,
-> *so why was my code 5% worse in performance?*
-
-In this setup, I was training a model on two datasets. In one implementation,
-I sampled one batch from each dataset, and merged them into one big one.
+* When using batch norm in a reinforcement learning policy, I must always run
+in test mode when collecting experience in the environment. (Because it's easiest
+to get an action by feeding a batch of size 1, and in train mode the activations
+will get normalized to all zeros.)
+* If I'm using batch norm on the inputs to RL, I should normalize each input
+modality separately. For example, if the input state is the concatenation of
+robot joint positions and robot joint velocities, I don't want the velocities to
+affect the normalization of the positions. (Batch norm on the inputs can make
+sense for RL because your input distribution changes as your policy changes,
+which gives the same covariate shift problem.)
+* Never use TensorFlow's meta_checkpoint() functions to load a pretrained model
+that uses batch norm. Those functions load the model exactly the way it was
+defined at train time - which makes all batch norms in that model frozen in
+train mode.
+* When finetuning a pretrained model, make sure the moving averages only run
+for layers with trainable variables.
+* When training a model on a mixture of two datasets, make sure batches
+are representative of the mixture. For example, suppose I'm training a model
+to classify digits, and I give it both MNIST and SVHN,
 
 IMAGE
 
-In the second, I had two copies of the network, with shared weights between
-them, feeding one batch to each copy.
+In one approach, I randomly give a batch of MNIST data or SVHN data. In
+the second, batches have both MNIST and SVHN examples.
 
 IMAGE
 
-Due to implementation reasons, when sharing weights, the batch norm moving
-averages were shared as well. In both approaches, the moving averages
-converge to the mean and variance of the average of the two distributions.
-But at training time, they differ.
-
-* In the first approach, we train the network as if the true mean/variance
-were the mean/variance of the mixture distribution.
-* In the second approach, we train the network as if the true mean
-was the mean of just the 1st distribution, or just the 2nd distribution,
-and never the mixture. Same for the variance. So, at training time everything
-works out okay, but at evalutation time, the mean/variance are different from
-the ones the network was trained with.
+The 2nd approach works much better, because the minibatch mean and variance
+are closer to the dataset-wise mean and variance. In fact, it's best to
+have 2 copies of batch norm, one for each dataset.
 
 IMAGE
 
 Above is a graph of accuracy, where we ran the same hyperparameters 5 times to
 get a measure of uncertainty. Not only does the batch norm issue hurt performance,
 it also increases the variance in model performance.
-
-(Note this is a general problem whenever you train the same parameters on
-two different datasets. In particular, when training a GAN, if your discriminator
-uses batch norm, you likely want to make sure your batches always have a mix
-of real and fake data.)
+* For a similar reason, if you use batch norm in a discriminator in a GAN, always
+balance the input batch to be half fake data and half real data - batches of
+all fake or all real data makes training more unstable.
 
 
 Alternatives
 --------------------------------------------------------------------------
-
-I know I've said this already, but it bears repeating:
-all of these issues happened because of what batch norm does to a model.
-
-* Batch norm makes the computation change between train time and test time.
-* Batch norm makes training depend on all the entries in the batch.
-
-And if your code relies on assumptions that batch norm breaks, you're going
-to have problems.
 
 Batch norm isn't going away. It's ingrained very heavily, it's part of several
 famous model architectures, and that means at some point you'll either
@@ -245,21 +242,3 @@ sure, you can keep using it. But the whole reason software is hard is because
 of the unknown unknowns, the bugs that happen because you don't expect them to
 happen.
 
-CONCLUSION HERE
-
-
-After the fix, my model started working, but I got lucky here too. I was
-applying batch norm directly on the input states when training. In supervised
-learning, you'd never do this, because it's equivalent to whitening the data,
-and presumably you've done that already. But in reinforcement learning, using
-batch norm makes sense, because the state distribution is going to change as
-your policy changes. Without batch norm, even inputs have the same covariate
-shift problem.
-
-But in the environment I was using, the states were the relative position of
-the robot joints, and the velocities of each of those joints, concatenated
-together. Because I naively applied normalization over the entire state,
-the faster the robot moved, the lower the magnitude of the normalized joint
-inputs. A better approach would be to normalize just the parts of the state
-space corresponding to joint position. But I got lucky - reinforcement
-learning was able to power through the issue.
