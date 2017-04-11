@@ -72,23 +72,13 @@ I keep signing it, like a sucker. And so do other people.
 If they didn't, the batch norm paper wouldn't have gotten over 1000 citations.
 
 
-Digression: What Does Batch Norm Do?
+What Is Batch Norm?
 --------------------------------------------------------------------------------
 
-Earlier, I mentioned that batch norm is a leaky abstraction. To solve bugs
-caused by leaky abstractions, you have to pierce the abstraction barrier. Thus,
-to explain my batch norm bugs, I first have to explain batch norm. Feel free
-to jump to the next section if this is review.
-
-Let's suppose we're training a neural network on some data. For the sake of the
-example, let's say it's a 1 hidden layer network. Letting $$\sigma$$
-be the nonlinearity, we have something like this.
-
-$$
-    h = f_1(x), F(x) = f_2(h) = f_2(f_1(x))
-$$
-
-where $$f_1(x) = \sigma(W_1x + b_1)$$ and $$f_2(h) = \sigma(W_2h + b_2)$$.
+Batch norm is motivated by "internal covariate shift". What does that mean?
+Well, let's suppose we're training a neural network on some data. The input
+will go through a few hidden layers, then go to the output.
+{: .hidden }
 
 ![One hidden layer neural net](/public/perils-batch-norm/neural_net.jpeg)
 {: .centered }
@@ -96,41 +86,90 @@ where $$f_1(x) = \sigma(W_1x + b_1)$$ and $$f_2(h) = \sigma(W_2h + b_2)$$.
 Adapted [from a picture from CS231N](http://cs231n.github.io/neural-networks-1/)
 {: .centered }
 
-During the training process, we can think of each layer as having its own job.
+During training, each layer has a different job.
 The 1st layer's job is to learn good features from the input. The 2nd layer's
-job is to solve the task from the 1st layer's features. These jobs are going
-to depend on one another, but backprop gives us a way to update everything
-at once. Easy, right?
+job is to learn good features from the 1st layer's features. The 3rd layer's
+job is to learn good features from the 2nd layer. And so on up the network,
+until we hit the last layer, whose job is to solve the task from the 2nd-to-last
+layer's features.
 
-However, as the weights change, the distribution of each layer's activations
-will change too. This makes the next layer's job harder, because the distribution
-it's learning from keeps changing underneath it. In the literature, this is
-known as *covariate shift*. The key motivation behind batch norm is that covariate
-shift can be problem at every layer of the network.
+Each of these jobs is going to interact with the other one, so they aren't
+independent, but luckily backprop gives a way to compute the parameter update
+for all layers at once. Easy, right?
 
-Wouldn't it be nice if we could keep the distribution of activations fixed
-during training?
-That way, layers in the network wouldn't need to compensate for the shift in
-distribution for their inputs.
+As the parameters change, the distribution of each layer's activations
+will change. This makes the next layer's job harder, because the distribution
+it's learning from keeps changing underneath it. This forces the layer to
+continually adapt to the distribution, which slows down learning.
+The literature calls this
+*covariate shift*, and generally it's been studied at the level of the data
+(when the test set distribution differs from the training set distribution,
+for example.) The observation buiding batch norm is that covariate shift
+can be problematic at every layer of the network, and reducing it should
+improve training.
 
-That would be nice, but in practice there are some problems with it.
+To address this, batch norm normalizes every output unit to be mean $$0$$,
+variance $$1$$. Well, kind of. There are a few important details.
 
-* It is expensive to compute the distribution exactly, because the distribution
-depends on all datapoints $$X$$.
-* If we constrain the distribution of activations, we limit the kinds
-of networks we can learn.
+* To center the distribution of output $$x$$, we need to compute the mean $$\mu$$, the variance
+$$\sigma^2$$, and compute
 
-To solve this, batch norm does the following.
+$$
+    \hat{x} = \frac{x - \mu}{\sqrt{\sigma^2}}
+$$
 
-* We approximate the normalization, by assuming every neuron can be normalized
-independently, and that normalizing over a minibatch of points from $$X$$ is
-sufficient.
-* After normalizing the distribution, we scale by a learned $$\gamma$$ and
-shift by a learned $$\beta$$.
+Mean $$\mu$$ and variance $$\sigma^2$$ depend on the entire distribution, which
+is impractical to compute. So instead, we compute the mean and variance for
+just the minibatch $$\mathcal{B} = \{x_1, x_2,\ldots, x_m\}$$.
 
-The algorithm below (copied from the paper) is the transform done for a single
-activation $$x$$, given that we have a batch of activations $$\{x_1,\ldots,x_m\}$$
-A small $$\epsilon$$ is added to the normalization to avoid division by $$0$$.
+$$
+    \mu_\mathcal{B} = \sum_{i=1}^m x_i
+$$
+
+$$
+    \sigma^2_\mathcal{B} = \sum_{i=1}^m (x_i - \mu_B)^2
+$$
+
+$$
+    \hat{x_i} = \frac{x_i - \mu_B}{\sqrt{\sigma_\mathcal{B}^2 + \epsilon}}
+$$
+
+(The $$\epsilon$$ is here to avoid division by zero problems.)
+
+**Note $$\hat{x_i}$$ now depends on other $$\hat{x_j}$$ in the batch!**
+
+
+* To make the output deterministic at eval time, we keep a moving average
+of $$\mu_\mathcal{B}$$ and $$\sigma^2_\mathcal{B}$$. On every parameter
+update, we also compute
+
+$$
+    \mu \gets (1-\alpha) \mu + \alpha * \mu_\mathcal{B}
+$$
+
+$$
+    \sigma^2 \gets (1-\alpha) \sigma^2 + \alpha * \sigma^2_\mathcal{B}
+$$
+
+This is the exponential moving average, and it has a nice property: the
+average places more weight on recent inputs. When the network converges,
+this is usually a good estimate of the dataset-wide mean and variance.
+At test time, We normalize with the averaged $$\mu$$ and $$\sigma$$
+instead.
+
+$$
+    \hat{x} = \frax{x - \mu}{\sqrt{\sigma^2 + \epsilon}}
+$$
+
+* Finally, in practice we don't want to limit the output distribution to only
+be mean $$0$$ and variance $$1$$. So we define
+
+$$
+    \hat{y_i} = \gamma_i\hat{x_i} + \beta_i
+$$
+
+to be the actual output, and let $$\beta$$ and $$\gamma$$ be learnable
+parameters.
 
 ![Batch norm algorithm](/public/perils-batch-norm/batch-norm-alg.png)
 {: .centered }
