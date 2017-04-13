@@ -4,12 +4,11 @@ title:  "On The Perils of Batch Norm"
 date:   2017-03-21 00:13:00 -0700
 ---
 
-*For the record, this is somewhat tongue-in-cheek. As much as I dislike batch
-norm, I have healthy respect for it, and the disdain only extends to the
-method, not the researchers behind it.*
+*This post assumes you know what batch norm is.
+A brief overview of batch norm can be found[here](/public/perils-batch-norm/batch_norm_appendix.html).*
 
-*A brief overview of batch norm can be found
-[here](/public/perils-batch-norm/batch_norm_appendix.html).*
+Let's talk about batch norm. To be more specific, let's talk about why
+I'm starting to hate batch norm.
 
 One day, I was training a neural network with reinforcement learning.
 I was trying to reproduce the results of paper, with lots of difficulty.
@@ -17,18 +16,22 @@ Someone recommended I add batch norm, because
 it was key to making some of the models train. I implemented it, but I
 still couldn't reproduce the results.
 
-A few days later, I found a bug with how I was doing batch norm.
+A few days later, I found out I always collected experience by feeding
+a batch of size $$1$$, with just the current state. That collect always
+ran in train mode. Combined, I was always normalizing to $$\vec{0}$$.
 
 \*\*\*
 {: .centered }
 
-Another day, somebody came to me with a very, very strange bug.
-During training, the classification accuracy was fine. During evaluation, the
-accuracy on the validation set was fine. But at inference time, the model
-failed completely.
+Another day, somebody came to me with a strange bug in his transfer
+experiments. We had been using TensorFlow's
+[MetaGraph](https://www.tensorflow.org/programmers_guide/meta_graph#import_a_metagraph)
+tools for finetuning pretrained models. These tools take a model
+checkpoint and reconstruct it in the current session, which makes finetuning
+a lot easier. After a few hours of digging, we realized those tools
+arne't compatible with batch norm.
 
-Hmmmmm. Well, that certainly smelled like a batch norm issue. About an hour
-later, we finally tracked down the code that used batch norm incorrectly.
+Why?
 
 \*\*\*
 {: .centered }
@@ -58,23 +61,73 @@ minibatch.
 
 Almost no other optimization trick has this property. And it's *infuriating*,
 because that means batch norm is very, very likely to break an assumption
-your code implicitly holds. Take the first issue I had, where batch norm + RL
-was failing. Turns out I was collecting experience with `is_training=True`.
-This worked fine before. It's not like I'm ever going to use something like
-batch norm, right? It's not like I'm going to normalize my output to
-all zeros because I'm using a batch of size $$1$$, right?
+your code implicitly holds.
 
 Alright, but that was just a one-off thing, right? Well, then the second
 bug happened. I was using TensorFlow's [MetaGraph](https://www.tensorflow.org/programmers_guide/meta_graph#import_a_metagraph)
-utils, which let you load an existing model, and start building from it as if
-you had built it in the current session. By design, it loads the graph
-exactly the way it was built at training time. Well guess what? It fails with
-batch norm! Because at training time, batch norm is in "normalize exactly"
-mode, instead of "normalize with the running averages mode." Now part
-of your model is stuck in "normalize exactly" mode, forever, unless you specifically
-add a toggle for the behavior at model build time.
+utils, which reconstructs the model exactly the way it was at train time.
+(This is useful if you want to take a pretrained model, then finetune it on
+a new dataset.) Well, guess what? It plays poorly with batch norm!
+The computation batch norm runs at train time is different from the
+computation it runs at test time, so the loaded pretrained
+model was forever stuck in train mode, even at inference time.
 
-Okay, okay, but that's not
+Now, let's look at the third batch norm issue I had. I was training a model
+on a mixture of two datasets. (For the sake of the example, let's pretend it
+they were both digit datasets, MNIST and SVHN.) I had two versions of the model.
+In the first, I take a batch of MNIST and a batch of SVHN, then join them into
+one giant batch and feed it through the network.
+
+IMAGE
+
+In the second, I create two copies of the network with shared weights, giving
+one copy MNIST and the other copy SVHN.
+
+IMAGE
+
+In both cases, every gradient is computed on a batch of 32 MNIST examples and
+32 SVHN examples. Yet the performance was significantly different.
+
+After a big search to find bugs, I eventually figured out that batch norm
+was the issue. In the first approach, we normalize the MNIST and SVHN data
+together. In the second approach, each tower normalizes just MNIST data, or
+just SVHN data. The moving averages were shared as well, and get updated
+with both MNIST and SVHN data.
+
+* In the first approach, we train as if the batch statistics were half MNIST
+half SVHN, and test as if the batch statistics were half MNIST half SVHN.
+* In the second approach, we train as if the batch statistics were MNIST *or*
+SVHN, but test as if the batch statistics were half MNIST half SVHN.
+
+In the latter case, because we're normalizing differently than we were at
+train time, performance drops drastically.
+
+IMAGE
+
+Above is a graph of accuracy. (Not on MNIST + SVHN - on the datasets I was
+actually doing experiments on.) I ran the exact same hyperparameters with
+5 random seeds for both methods. Note that not only did it hurt performance,
+it also increased the variance.
+
+Batch Norm: The Cause of, And Solution To, All of Life's Problems
+------------------------------------------------------------------------
+
+By now, you may have noticed a pattern.
+
+When you add batch norm to a model, it changes it in two fundamental ways.
+
+* For a single input $$x_i$$, the output depends on other $$x_j$$ in the
+minibatch.
+* The evaluation at test time is different from the evaluation at train time.
+
+Almost no other optimization trick has this property. And it's *infuriating*,
+because that means batch norm is very, very likely to break an assumption
+your code implicitly holds. Take the first issue I had, where batch norm + RL
+was failing. Turns out I was collecting experience with `is_training=True`.
+The easiest way to do that was to give an input of batch size $$1$$,
+and batch norm normalized it to $$\vec{0}$$.
+
+
 
 
 
@@ -142,26 +195,6 @@ defined at train time - which makes all batch norms in that model frozen in
 train mode.
 * When finetuning a pretrained model, make sure the moving averages only run
 for layers with trainable variables.
-* When training a model on a mixture of two datasets, make sure batches
-are representative of the mixture. For example, suppose I'm training a model
-to classify digits, and I give it both MNIST and SVHN,
-
-IMAGE
-
-In one approach, I randomly give a batch of MNIST data or SVHN data. In
-the second, batches have both MNIST and SVHN examples.
-
-IMAGE
-
-The 2nd approach works much better, because the minibatch mean and variance
-are closer to the dataset-wise mean and variance. In fact, it's best to
-have 2 copies of batch norm, one for each dataset.
-
-IMAGE
-
-Above is a graph of accuracy, where we ran the same hyperparameters 5 times to
-get a measure of uncertainty. Not only does the batch norm issue hurt performance,
-it also increases the variance in model performance.
 * For a similar reason, if you use batch norm in a discriminator in a GAN, always
 balance the input batch to be half fake data and half real data - batches of
 all fake or all real data makes training more unstable.
