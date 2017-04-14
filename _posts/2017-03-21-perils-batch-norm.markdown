@@ -29,116 +29,125 @@ experiments. We had been using TensorFlow's
 tools for finetuning pretrained models. These tools take a model
 checkpoint and reconstruct it in the current session, which makes finetuning
 a lot easier. After a few hours of digging, we realized those tools
-arne't compatible with batch norm.
+weren't compatible with batch norm.
 
-Why?
+Why? Well, the MetaGraph import reconstructs the model exactly the way it
+was defined at train time. Normally this isn't an issue, but in models with
+batch norm, the computation at train time is different from the computation
+at test time. The loaded pretrained model was stuck in train mode forever,
+and in particular it meant we couldn't do inference for the same reason
+as the previous bug - we'd always normalize the input to $$\vec{0}$$.
 
 \*\*\*
 {: .centered }
 
 That same day (and I mean literally that same day), I was discussing
 recent issues I was having with my own project.
-I had two equivalent implementations of a neural net. I was using exactly
-the same data, with exactly the same loss, and exactly the same hyperparameters,
-and exactly the same optimizer, same number of GPUs,
-*so why was my code 5% worse?*
+I had two implementations of a neural net. At each step, I was feedin gthe
+same input data. The networks had exactly the same loss
+and exactly the same hyperparameters, with exactly the same optimizer (RMSProp),
+trained with exactly the same number of GPUs, *and yet one version had 5%
+less classification accuracy?*
 
-Guess what? It was batch norm! Luckily, I had been thinking about batch norm
-earlier that day. Who knows how long it would have taken me to figure it out
-if I hadn't?
+It was clear that something had to be different about the two implementations,
+but what could it be? Well, turns out it was very lucky I had been thinking
+about batch norm because of the MetaGraph stuff. If I hadn't, I have no idea
+how long it would have taken me to figure it out.
+
+Let's dig into this one a bit, because the problem is actually pretty general.
+I was training a model to classify two datasets, for some domain adaptation
+experiments. For the sake of the example,
+let's pretend it they were both digit datasets, MNIST and SVHN.
+
+I have two implementations of this.
+In the first, I sample a batch of MNIST data and a batch of SVHN data, join
+them into one big batch of twice the size, then feed it through the network.
+
+IMAGE
+
+In the second, I create two copies of the network with shared weights. One
+copy gets MNISt data, and the other copy gets SVHN data.
+
+IMAGE
+
+Note that in both cases, half the data is MNIST and half the data is SVHN.
+Naively, we'd expect the gradient to be the same in both versions of the
+model. And this is true - until batch norm comes into play. In the first
+approach, the batch statistics and normalization are computed on both
+MNIST and SVHn data. In the second approach, each tower computes
+batch statistics on just one dataset, MNIST or SVHN.
+
+At training time, everything's fine. But remember that the two networks
+have shared weights? **The moving averages for dataset mean and variance
+were also shared, getting updated on both datasets.**
+So in the second approach, we train as if the mean
+was the MNIST mean or SVHN mean, but at test time we normalized as if
+the mean was the MNIST + SVHN mean. When the test-time normalization is
+different from the train time normalization, we get results like this.
+
+IMAGE
+
+This is a plot of accuracy on my two datasets. The plot is of the top, median,
+and worst performance over 5 random seeds. Note the higher variance of the
+incorrect approach.
+
+Also, note that this problem isn't specific to domain adaptation. It's a
+problem whenever minibatches aren't representative of your data
+distribution. The big example is GANs. If your discriminator uses batch
+norm, then the minibatches should always be half fake and half real.
+If you alternate batches of fake data and real data, you're going to
+have a bad time.
 
 
 Batch Norm: The Cause of, And Solution To, All of Life's Problems
 ------------------------------------------------------------------------
 
-By now, you may have noticed a pattern.
+By now, you may have noticed a pattern to these problems.
 
+I've thought about this quite a bit, and I've concluded that I'm never
+touching batch norm again if I can get away with it.
+
+The problem with batch norm is that it **works.** When batch norm works
+right, my models train a lot faster. A *lot* faster. No contest. But now
+I'm not sure it's worth it, and my reasoning comes from the engineering side.
+
+Broadly, when code does the wrong thing, it happens for one of three reasons.
+
+1. You make a stupid typo, and it gets caught by static analysis, the compiler,
+or a runtime error when that code runs for the first time.
+2. You make a silly mistake with the implementation, one that doesn't stop the
+code from crashing. It silently does the wrong thing until someone fixes it.
+When you find the mistake, you feel really dumb, because you know what the
+problem is.
+3. You implement everything correctly, catching all the corner cases you can
+think of. But it turns out your code is implicitly expecting certain
+thing about the behavior, things you don't even know about.
+When those implicit assumptions break, the code breaks.
+When you fix the bug, you feel dumb, but you also feel proud, because
+you've learned something new about your code.
+
+(I'm sure I've missed some cases, but this covers almost all bugs I've
+experienced.)
+
+The first two reasons are unavoidable. People make stupid mistakes, it happens.
+The third is also unavoidable, but you can mitigate it through testing, design
+reviews, and so on.
+
+Back to batch norm.
 When you add batch norm to a model, it changes it in two fundamental ways.
 
-* For a single input $$x_i$$, the output depends on other $$x_j$$ in the
-minibatch.
-* The evaluation at test time is different from the evaluation at train time.
+* The output for a single input $$x_i$$ depends on the other $$x_j$$ within
+the minibatch.
+* The model does different computation between train time and test time.
 
-Almost no other optimization trick has this property. And it's *infuriating*,
+Almost no other optimization trick has these properties. And it's *infuriating*,
 because that means batch norm is very, very likely to break an assumption
 your code implicitly holds.
 
-Alright, but that was just a one-off thing, right? Well, then the second
-bug happened. I was using TensorFlow's [MetaGraph](https://www.tensorflow.org/programmers_guide/meta_graph#import_a_metagraph)
-utils, which reconstructs the model exactly the way it was at train time.
-(This is useful if you want to take a pretrained model, then finetune it on
-a new dataset.) Well, guess what? It plays poorly with batch norm!
-The computation batch norm runs at train time is different from the
-computation it runs at test time, so the loaded pretrained
-model was forever stuck in train mode, even at inference time.
-
-Now, let's look at the third batch norm issue I had. I was training a model
-on a mixture of two datasets. (For the sake of the example, let's pretend it
-they were both digit datasets, MNIST and SVHN.) I had two versions of the model.
-In the first, I take a batch of MNIST and a batch of SVHN, then join them into
-one giant batch and feed it through the network.
-
-IMAGE
-
-In the second, I create two copies of the network with shared weights, giving
-one copy MNIST and the other copy SVHN.
-
-IMAGE
-
-In both cases, every gradient is computed on a batch of 32 MNIST examples and
-32 SVHN examples. Yet the performance was significantly different.
-
-After a big search to find bugs, I eventually figured out that batch norm
-was the issue. In the first approach, we normalize the MNIST and SVHN data
-together. In the second approach, each tower normalizes just MNIST data, or
-just SVHN data. The moving averages were shared as well, and get updated
-with both MNIST and SVHN data.
-
-* In the first approach, we train as if the batch statistics were half MNIST
-half SVHN, and test as if the batch statistics were half MNIST half SVHN.
-* In the second approach, we train as if the batch statistics were MNIST *or*
-SVHN, but test as if the batch statistics were half MNIST half SVHN.
-
-In the latter case, because we're normalizing differently than we were at
-train time, performance drops drastically.
-
-IMAGE
-
-Above is a graph of accuracy. (Not on MNIST + SVHN - on the datasets I was
-actually doing experiments on.) I ran the exact same hyperparameters with
-5 random seeds for both methods. Note that not only did it hurt performance,
-it also increased the variance.
-
-Batch Norm: The Cause of, And Solution To, All of Life's Problems
-------------------------------------------------------------------------
-
-By now, you may have noticed a pattern.
-
-When you add batch norm to a model, it changes it in two fundamental ways.
-
-* For a single input $$x_i$$, the output depends on other $$x_j$$ in the
-minibatch.
-* The evaluation at test time is different from the evaluation at train time.
-
-Almost no other optimization trick has this property. And it's *infuriating*,
-because that means batch norm is very, very likely to break an assumption
-your code implicitly holds. Take the first issue I had, where batch norm + RL
-was failing. Turns out I was collecting experience with `is_training=True`.
-The easiest way to do that was to give an input of batch size $$1$$,
-and batch norm normalized it to $$\vec{0}$$.
-
-
-
-
-
-The problem with batch norm is that it **works.** When I do batch norm
-right, my models train a lot faster. A *lot* faster. No contest. The problem
+The problem
 is that I keep making small, subtle mistakes, and I invariably lose days
 of my life to debugging one stupid issue or another.
 
-
-
-Let me br
 
 On the other hand, these issues all happened because batch norm forces you to
 keep track of things you normally don't need to care about. Suddenly, your model
