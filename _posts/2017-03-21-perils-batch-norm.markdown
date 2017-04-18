@@ -107,128 +107,66 @@ By now, you may have noticed a pattern to these problems.
 I've thought about this quite a bit, and I've concluded that I'm never
 touching batch norm again if I can get away with it.
 
-The problem with batch norm is that it **works.** When batch norm works
-right, my models train a lot faster. A *lot* faster. No contest. But now
-I'm not sure it's worth it, and my reasoning comes from the engineering side.
+My reasoning comes from the engineering side.
+Broadly, when code does the wrong thing, it happens for one of two reasons.
 
-Broadly, when code does the wrong thing, it happens for one of three reasons.
-
-1. You make a stupid typo, and it gets caught by static analysis, the compiler,
-or a runtime error when that code runs for the first time.
-2. You make a silly mistake with the implementation, one that doesn't stop the
-code from crashing. It silently does the wrong thing until someone fixes it.
-When you find the mistake, you feel really dumb, because you know what the
-problem is.
-3. You implement everything correctly, catching all the corner cases you can
+1. You make a silly mistake, like a mistyped variable line or a missing line
+of code.
+2. You implement everything correctly, catching all the corner cases you can
 think of. But it turns out your code is implicitly expecting certain
 thing about the behavior, things you don't even know about.
 When those implicit assumptions break, the code breaks.
 When you fix the bug, you feel dumb, but you also feel proud, because
 you've learned something new about your code.
 
-(I'm sure I've missed some cases, but this covers almost all bugs I've
-experienced.)
+The first is unavoidable. People make stupid mistakes, it happens.
+The second is also unavoidable, but it's mitigatable by unit testing, favoring
+simpler solutions, and reusing battle-tested code, among other things.
 
-The first two reasons are unavoidable. People make stupid mistakes, it happens.
-The third is also unavoidable, but you can mitigate it through testing, design
-reviews, and so on.
-
-Back to batch norm.
-When you add batch norm to a model, it changes it in two fundamental ways.
+Now, when you add batch norm to a model, it changes it in two fundamental ways.
 
 * The output for a single input $$x_i$$ depends on the other $$x_j$$ within
 the minibatch.
 * The model does different computation between train time and test time.
 
-Almost no other optimization trick has these properties. And it's *infuriating*,
-because that means batch norm is very, very likely to break an assumption
-your code implicitly holds.
+Almost no other optimization trick has these properties. That makes it
+easier to write code which accidentally assumes inputs in a minibatch are
+independent, or accidentally assumes the same thing happens at train time and
+test time, because those are sane properties of any model that
+doesn't use batch norm. *Which makes it even more infuriating to run into
+batch norm bugs!*
 
-The problem
-is that I keep making small, subtle mistakes, and I invariably lose days
-of my life to debugging one stupid issue or another.
+One broken invariant here, another there, and next thing you know you've
+lost days to debugging subtle issues.
 
-
-On the other hand, these issues all happened because batch norm forces you to
-keep track of things you normally don't need to care about. Suddenly, your model
-runs different computation between train time and test time. Suddenly, entries
-in the minibatch are no longer independent.
-Yes, you can treat batch norm as black box normalization magic, and this'll even
-work for a while, but in practice [the abstraction leaks](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/),
-like all abstractions do. In batch norm's case, the abstraction leaks in ways
-that other optimization tricks don't. It places more cognitive load on the
-researcher to keep track of everything, to make sure it's all batch-norm-proof.
-
-In short, the problems were my fault, but batch norm made it a lot easier to
-make those mistakes.
-
-That said, when batch norm works, my models definitely train a lot faster.
-Like, a lot faster. No contest.
-
-It's the Faustian bargain of optimization. I'll give you 2x faster training, 10x
-faster training, 20x faster training! All I ask is that you increase your chance
-of hitting some incredibly obtuse bug.
-
-I keep signing it, like a sucker. And so do other people.
-If they didn't, the batch norm paper wouldn't have gotten over 1000 citations.
+Yes, you can treat batch norm as black box normalization magic. This can work
+for a while. But in practice,
+[the abstraction leaks](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/),
+like all abstractions do, and keeping track of the details is tiring. And in
+my experience, although every deep learning abstraction leaks, batch norm
+leaks a lot more than the rest.
 
 
-Batch Norm Oddities
------------------------------------------------------------------------------
-
-I know I've said this already, but it bears repeating:
-
-* Batch norm makes the computation change between train time and test time.
-* In train mode, the network's output now depends on the minibatch.
-
-If your code relies on an assumption that batch norm breaks, you're going
-to have problems. And annoyingly, batch norm is unique in what assumptions it
-breaks, and therefore is much more likely to break something you never expected
-to fail.
-
-The following is a list of things I have to keep in mind whenever I use batch norm:
-
-* When using batch norm in a reinforcement learning policy, I must always run
-in test mode when collecting experience in the environment. (Because it's easiest
-to get an action by feeding a batch of size 1, and in train mode the activations
-will get normalized to all zeros.)
-* If I'm using batch norm on the inputs to RL, I should normalize each input
-modality separately. For example, if the input state is the concatenation of
-robot joint positions and robot joint velocities, I don't want the velocities to
-affect the normalization of the positions. (Batch norm on the inputs can make
-sense for RL because your input distribution changes as your policy changes,
-which gives the same covariate shift problem.)
-* Never use TensorFlow's meta_checkpoint() functions to load a pretrained model
-that uses batch norm. Those functions load the model exactly the way it was
-defined at train time - which makes all batch norms in that model frozen in
-train mode.
-* When finetuning a pretrained model, make sure the moving averages only run
-for layers with trainable variables.
-* For a similar reason, if you use batch norm in a discriminator in a GAN, always
-balance the input batch to be half fake data and half real data - batches of
-all fake or all real data makes training more unstable.
-
-
-Alternatives
+So...Why Haven't You Ditched Batch Norm Already?
 --------------------------------------------------------------------------
 
-Batch norm isn't going away. It's ingrained very heavily, it's part of several
-famous model architectures, and that means at some point you'll either
-train a model with batch norm to compare an old approach, or will use a pretrained
-model with batch norm.
+The problem with batch norm is that it works.
 
-But, if neither of those are true, I would recommend using layer norm instead.
-It works along similar lines, without breaking the assumptions that batch norm
-does.
+No, I mean, it **works.** When you do everything right, models train a lot
+faster. No contest. It's well-tested, it's part of tons of pretrained models,
+and it's shockingly general. There's a reason the batch norm paper has
+so many citations.
 
-* The computation in layer norm happens at both train and test time.
-* Training is independent from other entries in the batch.
+It's the Faustian bargain of deep learning. Faster training, in exchange
+for a slice of your sanity. And I keep signing it, because I'm working on problems
+where previous state of the art used batch norm, and I'm loathe to move too far
+off someting that works.
 
-You'll have to do hyperparam tuning anyways, and when tuned I would be surprised
-if the difference in performance between layer norm and batch norm was that big.
-
-If you're confident you've considered all the consequences of batch norm, then
-sure, you can keep using it. But the whole reason software is hard is because
-of the unknown unknowns, the bugs that happen because you don't expect them to
-happen.
-
+Now, that being said, I'm somewhat optimistic about the other normalization
+techniques. I've had some success with layer norm, although I hear the jury
+is still out for adding it to conv layers. Weight norm and cosine norm
+sound interesting, although I haven't thought about them that much. All
+three do the same thing at train time and test time, and all three are minibatch
+independent. If you're working on a problem from scratch (no known-working
+neural net architectures), it's probably worth trying one of the above.
+You'll need to do hyperparam tuning anyways.
