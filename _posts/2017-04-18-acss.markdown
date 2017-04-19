@@ -1,0 +1,92 @@
+---
+layout: post
+title:  "The acss Package (Or, How Computational Complexity Theory Crept Into A Cognitive Science Study)
+date:   2017-04-18 23:27:00 -0700
+---
+
+Our story begins with a friend sending me [this article](https://www.newscientist.com/article/2127995-our-ability-to-think-in-a-random-way-peaks-at-25-then-declines/)
+from New Scientist. In short, people are asked to generate a random sequence,
+then get graded on how random that seqeunce is. Turns out people reach
+peak randomness at 25, then decline afterwards. It's a pretty cool correlation,
+and the hope is that random sequence generation is a good proxy for cognitive
+ability. (Whether that proxy is good or not is left to later work, I believe.)
+
+How is the randomness measured? Well, here's a quote from the article.
+
+> To measure how random people’s answers were, the researchers used a concept called “algorithmic randomness”. The idea is that if a sequence is truly random, it should be difficult to create an algorithm or computer program that can generate it. Statistics software provided an estimate of how complex this would be for each response.
+
+If you know a bit of complexity theory, this should set off alarm bells.
+The running theme of complexity theory is that most questions of the
+form "Program $$P$$ has behavior $$B$$" are undecidable.
+(See [Rice's theorem](https://en.wikipedia.org/wiki/Rice%27s_theorem)
+if you're interested in more reading.) So my question is, which one of the
+authors decided to use an undecidable measure of randomness as their
+metric? And how are they even computing it?
+
+To answer these questions, we need to dig to
+[the original paper](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005408),
+which is helpfully linked from the article. Luckily, the full text is available
+online. A quick skim turns up this package.
+
+> An estimate of the algorithmic complexity of participants’ responses was computed using the acss function included in the freely publicly available acss R-package that implements the complexity methods used in this project.
+
+Bingo! I'm guessing that either prior work used acss, or someone did a search
+and found acss worked for their use case.
+Looking up the citation for acss turns up [this paper](https://arxiv.org/pdf/1409.4080.pdf).
+
+Let me set the stage for what happened next. I open this paper, and start
+skimming through it. Then I see this table.
+
+![Turing machine table](/public/acss/turing-table.png)
+{: .centered }
+
+Uhhhhhh. What?
+
+I'm sorry, does that say 450 days of computing time?
+
+And, hang on, $$10^11$$ Turing machines? *9 trillion* Turing machines?
+**What are you even doing?**
+
+**What possibly justifies running so many Turing machines?**
+
+Gather round. It's time to jump into some complexity theory.
+
+Formally, given a string $$x$$, the [Kolmogorov complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity)
+$$K(x)$$ can be used as a measure of randomness. Informally, the Kolmogorov
+complexity is the shortest way to describe $$x$$. If it's easy to describe
+$$x$$, then $$x$$ have some kind of structure, and therefore can't be very
+random. If it's hard to describe $$x$$, then $$x$$ doesn't have structure,
+and that should count as being very random.
+
+The problem with Kolmogorov complexity is that it's undecidable, which makes
+the definition hard to work with. To paraphrase a crypto professor, "when
+your definition of randomness is undecidable, it suddenly becomes very hard
+to prove anything's possible in cryptography." So how is the acss package
+doing anything?
+
+Importantly, undecidability says nothing about approximate or partial solutions.
+In this case, we're going to use the notion of algorithmic probability.
+
+**Definition**: Given string $$x$$, the *algorithmic probability* of $$s$$ is
+
+$$
+    m(x) = \sum_{P: U(P) = x } 1/2^{|P|}
+$$
+
+where $$U$$ is a universal Turing machine, $$P$$ is a program, and $$|P|$$
+is the length of the program.
+
+A classical result (the algorithmic coding theorem, proved by Levin in 1974)
+shows that
+
+$$
+    K(x) = -\log_2 m(x) + O(1)
+$$
+
+where the constant $$O(1)$$ is independent of $$x$$.
+
+This is still undecidable, because computing $$m(x)$$ exactly requires
+computing all programs that output $$x$$. But $$m(x)$$ can be approximated,
+by simply taking the sum over a large number of programs, where each
+program $$P$$ is sampled with probability proportional to
+$$1/2^{|P|}$$.
