@@ -76,10 +76,11 @@ of various strings. In very rough terms, the Kolmogorov complexity is the
 length of the string's shortest description. How is that connected
 to randomness? Intuitively, if you can describe a string $$x$$ quickly,
 it must have lots of structure, and therefore can't be very random. If
-it's hard to describe $$x$$, then it must have very little structure.
-So Kolmogorov complexity can be used as a measure of randomness.
+it's hard to describe $$x$$, it must have little structure, which should count
+as very random. Therefore, we can define the randomness of sequence $$x$$
+by the Kolmogorov complexity $$K(x)$$.
 
-One problem: it's undecidable. But we can reformulate Kolmogorov
+One problem: Kolmogorov complexity is undecidable. But we can reformulate Kolmogorov
 complexity into a form that can be approximated in a computable way.
 Turns out there's a theorem (Levin, 1974) that relates Kolmogorov
 complexity to randomly generated Turing machines. (I was a bit
