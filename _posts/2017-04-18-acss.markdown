@@ -1,92 +1,117 @@
 ---
 layout: post
-title:  "The acss Package (Or, How Computational Complexity Theory Crept Into A Cognitive Science Study)
+title:  "How Computational Complexity Theory Crept Into A Cognitive Science Study"
 date:   2017-04-18 23:27:00 -0700
 ---
 
 Our story begins with a friend sending me [this article](https://www.newscientist.com/article/2127995-our-ability-to-think-in-a-random-way-peaks-at-25-then-declines/)
-from New Scientist. In short, people are asked to generate a random sequence,
-then get graded on how random that seqeunce is. Turns out people reach
-peak randomness at 25, then decline afterwards. It's a pretty cool correlation,
-and the hope is that random sequence generation is a good proxy for cognitive
-ability. (Whether that proxy is good or not is left to later work, I believe.)
+from New Scientist.
 
-How is the randomness measured? Well, here's a quote from the article.
+The short version is, the authors gave a survey to several thousand people, asking
+them to generate random sequences. Then they measured how random those
+sequences were, and it turns out there were most random in 25 year olds,
+with a decline afterwards. It's a neat result.
+
+How is the randomness measured?
 
 > To measure how random people’s answers were, the researchers used a concept called “algorithmic randomness”. The idea is that if a sequence is truly random, it should be difficult to create an algorithm or computer program that can generate it. Statistics software provided an estimate of how complex this would be for each response.
 
-If you know a bit of complexity theory, this should set off alarm bells.
-The running theme of complexity theory is that most questions of the
-form "Program $$P$$ has behavior $$B$$" are undecidable.
-(See [Rice's theorem](https://en.wikipedia.org/wiki/Rice%27s_theorem)
-if you're interested in more reading.) So my question is, which one of the
-authors decided to use an undecidable measure of randomness as their
-metric? And how are they even computing it?
+Wait. What?
+
+If you know a bit of complexity theory, this should set off alarm bells,
+because any problem of the form "Program $$P$$ has behavior $$B$$"
+tends to be a big ball of undecidable pain.
+(See [Rice's theorem](https://en.wikipedia.org/wiki/Rice%27s_theorem),
+if interested.) Why does this study even use algorithmic randomness?
+How did complexity theory enter the picture?
+
+\* \* \*
+{: .centered }
 
 To answer these questions, we need to dig to
-[the original paper](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005408),
-which is helpfully linked from the article. Luckily, the full text is available
-online. A quick skim turns up this package.
+[the original paper](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005408).
+Luckily, the full text is available online. A quick skim turns up this line.
 
 > An estimate of the algorithmic complexity of participants’ responses was computed using the acss function included in the freely publicly available acss R-package that implements the complexity methods used in this project.
 
-Bingo! I'm guessing that either prior work used acss, or someone did a search
-and found acss worked for their use case.
-Looking up the citation for acss turns up [this paper](https://arxiv.org/pdf/1409.4080.pdf).
+Bingo! I'm guessing that either prior work used acss, or someone involved
+found out R had a library for measuring randomness. This still doesn't answer
+what they're doing for algorithmic complexity (which is decidedly, uh,
+undecidable.)
 
-Let me set the stage for what happened next. I open this paper, and start
-skimming through it. Then I see this table.
+Following the citation for acss turns up [the paper](https://arxiv.org/pdf/1409.4080.pdf)
+explaining the methodology. Turns out the acss paper shares authors
+with the New Scientist paper. Makes sense.
+
+Now, let me set the stage for what happened next. I open this paper, and
+start rapidly scrolling through the pages. Then my eyes catch this passage.
+
+> To actually build the frequency distributions of strings
+> with different numbers of symbols, we used a Turing machine simulator,
+> written in C++, running on a supercomputer
+> of middle-size at CICA.
+
+Uhhhhhh. Turing machine simulator? On a supercomputer?
+
+Then I read the table immediately after it, and my eyes kind of bug out.
 
 ![Turing machine table](/public/acss/turing-table.png)
 {: .centered }
 
-Uhhhhhh. What?
+450 days of computing time? To simulate *over 9 trillion Turing machines*?
 
-I'm sorry, does that say 450 days of computing time?
+I've been going "Uhhhhh" this whole time. But on reading this table, I upgrade
+from "uhhhhh" to "UHHHHHH".
 
-And, hang on, $$10^11$$ Turing machines? *9 trillion* Turing machines?
-**What are you even doing?**
+But with a little more reading, I go from "UHHHHHH" to "YES".
 
-**What possibly justifies running so many Turing machines?**
+Gather round. It's time to jump into complexity theory.
 
-Gather round. It's time to jump into some complexity theory.
+\* \* \*
+{: .centered }
 
-Formally, given a string $$x$$, the [Kolmogorov complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity)
-$$K(x)$$ can be used as a measure of randomness. Informally, the Kolmogorov
-complexity is the shortest way to describe $$x$$. If it's easy to describe
-$$x$$, then $$x$$ have some kind of structure, and therefore can't be very
-random. If it's hard to describe $$x$$, then $$x$$ doesn't have structure,
-and that should count as being very random.
+The goal of the library is to estimate
+the [Kolmogorov complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity)
+of various strings. In very rough terms, the Kolmogorov complexity is the
+length of the string's shortest description. How is that connected
+to randomness? Intuitively, if you can describe a string $$x$$ quickly,
+it must have lots of structure, and therefore can't be very random. If
+it's hard to describe $$x$$, then it must have very little structure.
+So Kolmogorov complexity can be used as a measure of randomness.
 
-The problem with Kolmogorov complexity is that it's undecidable, which makes
-the definition hard to work with. To paraphrase a crypto professor, "when
-your definition of randomness is undecidable, it suddenly becomes very hard
-to prove anything's possible in cryptography." So how is the acss package
-doing anything?
+One problem: it's undecidable. But we can reformulate Kolmogorov
+complexity into a form that can be approximated in a computable way.
+Turns out there's a theorem (Levin, 1974) that relates Kolmogorov
+complexity to randomly generated Turing machines. (I was a bit
+surprised I didn't know it already, to be honest.)
 
-Importantly, undecidability says nothing about approximate or partial solutions.
-In this case, we're going to use the notion of algorithmic probability.
-
-**Definition**: Given string $$x$$, the *algorithmic probability* of $$s$$ is
-
-$$
-    m(x) = \sum_{P: U(P) = x } 1/2^{|P|}
-$$
-
-where $$U$$ is a universal Turing machine, $$P$$ is a program, and $$|P|$$
-is the length of the program.
-
-A classical result (the algorithmic coding theorem, proved by Levin in 1974)
-shows that
+Consider a randomly sampled Turing machine, sampled such that programs of
+length $$\ell$$ are sampled proportionally to $$2^{-\ell}$$. Then
 
 $$
-    K(x) = -\log_2 m(x) + O(1)
+    K(x) = -\log_2 Pr(\text{random program outputs } x) + O(1)
 $$
 
-where the constant $$O(1)$$ is independent of $$x$$.
+Where the constant $$O(1)$$ is independent of $$x$$.
 
-This is still undecidable, because computing $$m(x)$$ exactly requires
-computing all programs that output $$x$$. But $$m(x)$$ can be approximated,
-by simply taking the sum over a large number of programs, where each
-program $$P$$ is sampled with probability proportional to
-$$1/2^{|P|}$$.
+In this form, Kolmogorov complexity is easy to approximate. We can simply
+sample a large number of random Turing machines, counting the fraction that
+outputs $$x$$.
+
+And that's exactly how the acss package was made! To estimate $$K(x)$$ for all $$x$$ of length
+at most $$11$$, they randomly generate a MASSIVE number of short Turing machines,
+run all of them, then accumulate them into probabilities for each $$x$$.
+
+I mean, sometimes they run into pesky things like the halting problem, but
+they just pick a limit $$T$$ on the number of steps to run each machine,
+such that almost all of the machines halt, and it turns out a $$T$$ around
+$$4000$$ or so is good enough.
+
+Well, there's the story. In 2015, some people simulated trillions and trillions
+of Turing machines, saving the results into an R package. Then, they used it
+in a survey testing people's ability to generate randomness, which finally turned
+into an article claiming that random number generation is a good proxy for
+cognitive ability.
+
+I'm not sure I believe it's a good proxy. But hey, that Turing machine thing
+was definitely cool.
