@@ -9,7 +9,7 @@ from New Scientist.
 
 The short version is, the authors gave a survey to several thousand people, asking
 them to generate random sequences. Then they measured how random those
-sequences were, and it turns out there were most random in 25 year olds,
+sequences were, and it turns out they were most random in 25 year olds,
 with a decline afterwards. It's a neat result.
 
 How is the randomness measured?
@@ -78,7 +78,7 @@ to randomness? Intuitively, if you can describe a string $$x$$ quickly,
 it must have lots of structure, and therefore can't be very random. If
 it's hard to describe $$x$$, it must have little structure, which should count
 as very random. Therefore, we can define the randomness of sequence $$x$$
-by the Kolmogorov complexity $$K(x)$$.
+by its Kolmogorov complexity $$K(x)$$.
 
 One problem: Kolmogorov complexity is undecidable. But we can reformulate Kolmogorov
 complexity into a form that can be approximated in a computable way.
