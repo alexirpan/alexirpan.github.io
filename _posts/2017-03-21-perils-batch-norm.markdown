@@ -60,7 +60,7 @@ I estimate we spent at least 6 hours tracking down the batch norm problem,
 and it ended with us concluding we needed to rerun all of the experiments
 we had done so far.
 
-\*\*\*
+\* \* \*
 {: .centered }
 
 That same day (and I mean literally the same day), I was talking to my mentor
@@ -95,7 +95,10 @@ copy gets MNIST data, and the other copy gets SVHN data.
 ![Second version of network](/public/perils-batch-norm/version2.svg)
 {: .centered }
 
-Note that in both cases, half the data is MNIST and half the data is SVHN.
+Note that in both cases, half the data is MNIST, half the data is SVHN,
+and thanks to shared weights, we have the same number of parameters and
+they're updated in the same way.
+
 Naively, we'd expect the gradient to be the same in both versions of the
 model. And this is true - until batch norm comes into play. In the first
 approach, the batch statistics are computed on both
@@ -105,30 +108,40 @@ batch statistics on just one dataset, MNIST or SVHN.
 At training time, everything's fine. But you know how the two networks
 have shared weights? **The moving averages for dataset mean and variance
 are also shared, getting updated on both datasets.**
-In the second approach, we train as if the normalization was MNIST mean and variance,
-or SVHN mean and variance, but at test time we normalize with the mean
-and variance of the merged MNIST + SVHN dataset.
+In the second approach, the top network is trained with mean and variance
+estimated with MNIST data. The bottom network estimates with SVHN data.
+But during training, the moving average keeps track of both MNIST and
+SVHN data. At test time,
+we normalize with the mean and variance of the merged dataset,
 And because the test-time normalization differs from the average train
 time normalization, we get results like this.
 
 IMAGE
+{: .centered }
 
 This is a plot of accuracy on my two datasets. The plot is of the top, median,
 and worst performance over 5 random seeds. Note the higher variance of the
 incorrect approach.
 
-Also, note that this problem isn't specific to domain adaptation. It's a
-problem whenever minibatches aren't representative of your data
-distribution. The big example is GANs. If your discriminator uses batch
-norm, then the minibatches should always be half fake and half real.
-If you alternate batches of fake data and real data, you're going to
-have a bad time.
+Whenever individual minibatches aren't representative of your entire data
+distribution, you can run into this problem. That means forgetting to randomize
+your input is especially bad with batch norm. It also plays a big role in
+GANs. The discriminator is usually trained on a mix of fake data and real data.
+If your discriminator uses batch norm, it's incorrect to alternate between
+batches of all fake or all real data. Each minibatch needs to be a 50-50 mix of
+both.
 
+(Aside: in practice, we got the best results by using the two network
+version, without shared batch norm parameters. This was trickier to implement,
+but it did help a bit.)
+
+IMAGE
+{: .centered }
 
 Batch Norm: The Cause of, And Solution To, All of Life's Problems
 ------------------------------------------------------------------------
 
-By now, you may have noticed a pattern to these problems.
+By now, you may have noticed a pattern.
 
 I've thought about this quite a bit, and I've concluded that I'm never
 touching batch norm again if I can get away with it.
@@ -136,47 +149,48 @@ touching batch norm again if I can get away with it.
 My reasoning comes from the engineering side.
 Broadly, when code does the wrong thing, it happens for one of two reasons.
 
-1. You make a silly mistake, like a mistyped variable line or a missing line
-of code.
-2. You implement everything correctly, catching all the corner cases you can
-think of. But it turns out your code is implicitly expecting certain
-thing about the behavior, things you don't even know about.
-When those implicit assumptions break, the code breaks.
-When you fix the bug, you feel dumb, but you also feel proud, because
-you've learned something new about your code.
+1. You make a mistake, and it's obvious once you see it. Something like a
+mistyped variable, or forgetting to call a function.
+2. Your code has implicit assumptions about the behavior of other code
+it interacts with, and one of those assumptions got broken.
+These bugs are more pernicious, since it can take a while to figure out
+what assumption your code relied on.
 
-The first is unavoidable. People make stupid mistakes, it happens.
-The second is also unavoidable, but it's mitigatable by unit testing, favoring
-simpler solutions, and reusing battle-tested code, among other things.
+Both mistakes are unavoidable. People make stupid mistakes, and people
+forget to check all the corner cases. However, the second class can
+be mitigated by favoring simpler solutions and reusing code that's
+known to work.
 
-Now, when you add batch norm to a model, it changes it in two fundamental ways.
+Alright. Now: batch norm. Batch norm changes models in two fundamental ways.
 
-* The output for a single input $$x_i$$ depends on the other $$x_j$$ within
-the minibatch.
-* The model does different computation between train time and test time.
+* At training time, the output for a single input $$x_i$$ depends on the
+other $$x_j$$ within the minibatch.
+* At testing time, the model runs a different computation path.
 
 Almost no other optimization trick has these properties. That makes it
-easier to write code which accidentally assumes inputs in a minibatch are
-independent, or accidentally assumes the same thing happens at train time and
-test time, because those are sane properties of any model that
-doesn't use batch norm. *Which makes it even more infuriating to run into
-batch norm bugs!*
+easier to write code that only works when inputs are minibatch independent,
+or only works when train time and test time do the same computation. The code's
+never been pushed that way. I mean, why would it? It's not like somebody's
+going to come up with a technique that breaks those assumptions, right?
 
-One broken invariant here, another there, and next thing you know you've
-lost days to debugging subtle issues.
-
-Yes, you can treat batch norm as black box normalization magic. This can work
-for a while. But in practice,
+Yes, you can treat batch norm as black box normalization magic, and it
+can even work out for a while. But in practice,
 [the abstraction leaks](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/),
-like all abstractions do, and keeping track of the details is tiring. And in
-my experience, although every deep learning abstraction leaks, batch norm
-leaks a lot more than the rest.
+like all abstractions do, and making sure your code is compatible with
+batch norm can be tiring.
+
+I just want things to work, and every time
+I run into Yet Another Batch Norm issue I get sad for a bit, before digging
+into what broke this time.
+
+In my experience, every deep learning abstraction leaks a bit. It's just
+that batch norm's idiosyncrasies make it leak a lot more.
 
 
 So...Why Haven't People Ditched Batch Norm?
 --------------------------------------------------------------------------
 
-At this point, I'll admit I'm being a bit unfair. Minibatch dependence is
+I'll admit I'm being unfair. Minibatch dependence is
 indefensible - no one is going to argue that it's a good quality for
 models to have. Given all the annoyances of batch norm, why is it so
 ubiquitous?
@@ -187,12 +201,12 @@ In it, Dijkstra argues that the goto statement should be avoided, because it
 makes code harder to read, and any program that uses goto can be rewritten
 to avoid it.
 
-Deep learning isn't programming.
 The unfortunate truth is that batch norm works really, really well.
 Yes, it has issues, but when you do everything right, models train a lot
-faster. No contest. There's a reason the batch norm paper has so many citations.
-(Over 1400 citations, as of this post.)
-It's well-tested and shockingly general.
+faster. No contest. (There's a reason the batch norm paper has over 1400
+citations, as of this post.) There is no logical equivalent to batch norm,
+and there's nothing that's been battle-tested as well.
+And therefore, there's always incentive to add it to the model.
 
 It's the Faustian bargain of deep learning. Faster training, in exchange
 for minor insanity. And I keep signing it. And so does everybody else.
