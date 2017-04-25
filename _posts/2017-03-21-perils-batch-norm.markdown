@@ -4,86 +4,112 @@ title:  "On The Perils of Batch Norm"
 date:   2017-03-21 00:13:00 -0700
 ---
 
-*This post assumes you know what batch norm is.
-A brief overview of batch norm can be found[here](/public/perils-batch-norm/batch_norm_appendix.html).*
+*This post is written for deep learning practitioners, and assumes you
+know what batch norm is and how it works.*
+
+*If you're new to batch norm,
+or want a refresher, a brief overview of batch norm can be found
+[here](/public/perils-batch-norm/batch_norm_appendix.html).*
+
+\* \* \*
+{: .centered }
 
 Let's talk about batch norm. To be more specific, let's talk about why
 I'm starting to hate batch norm.
 
 One day, I was training a neural network with reinforcement learning.
-I was trying to reproduce the results of paper, with lots of difficulty.
-Someone recommended I add batch norm, because
-it was key to making some of the models train. I implemented it, but I
-still couldn't reproduce the results.
+I was trying to reproduce the results of a [paper](https://arxiv.org/abs/1603.00748),
+and was having lots of trouble. (Par for the course in RL.)
+The first author recommended I add batch norm if I wasn't using it already,
+because it was key to solving some of the environments. I did so, but it
+still didn't work.
 
-A few days later, I found out I always collected experience by feeding
-a batch of size $$1$$, with just the current state. That collect always
-ran in train mode. Combined, I was always normalizing to $$\vec{0}$$.
+A few days later, I found out that when running my policy in the environment,
+
+* I fed the current state in a batch of size $$1$$.
+* I ran the policy in train mode.
+
+So I was normalizing my input to $$\vec{0}$$ all the time. Which sounds a pretty
+obvious issue, but thanks to reinforcement learning's inherent
+randomness, it wasn't obvious my input was always $$\vec{0}$$.
+
+I fixed it, and started getting the results I was supposed to get.
+
+\* \* \*
+{: .centered }
+
+A few months later, an intern I was working with
+showed me a *fascinating* bug in his transfer learning experiments.
+He was using my code, which used TensorFlow's
+[MetaGraph tools](https://www.tensorflow.org/programmers_guide/meta_graph#import_a_metagraph).
+They let you take a model checkpoint and reconstruct the TF graph
+exactly the way it was at the time the checkpoint got saved. This makes it
+really, really easy to load an old model and add a few layers on top of it.
+
+Unfortunately, MetaGraph ended up being our downfall. Turns out it doesn't play
+well with batch norm! Model checkpoints are saved while the model is training.
+Therefore, the model from the meta checkpoint is always stuck in train mode.
+Normally, that's fine. But batch norm turns it into a problem, because
+the train time code path differs from the test time code path.
+We couldn't do inference for the same reason
+as the previous bug - we'd always normalize the input to $$\vec{0}$$. (This
+is avoidable if you make the `is_training` flag a placeholder, but for
+structural reasons that wasn't doable for this project.)
+
+I estimate we spent at least 6 hours tracking down the batch norm problem,
+and it ended with us concluding we needed to rerun all of the experiments
+we had done so far.
 
 \*\*\*
 {: .centered }
 
-Another day, somebody came to me with a strange bug in his transfer
-experiments. We had been using TensorFlow's
-[MetaGraph](https://www.tensorflow.org/programmers_guide/meta_graph#import_a_metagraph)
-tools for finetuning pretrained models. These tools take a model
-checkpoint and reconstruct it in the current session, which makes finetuning
-a lot easier. After a few hours of digging, we realized those tools
-weren't compatible with batch norm.
-
-Why? Well, the MetaGraph import reconstructs the model exactly the way it
-was defined at train time. Normally this isn't an issue, but in models with
-batch norm, the computation at train time is different from the computation
-at test time. The loaded pretrained model was stuck in train mode forever,
-and in particular it meant we couldn't do inference for the same reason
-as the previous bug - we'd always normalize the input to $$\vec{0}$$.
-
-\*\*\*
-{: .centered }
-
-That same day (and I mean literally that same day), I was discussing
-recent issues I was having with my own project.
-I had two implementations of a neural net. At each step, I was feedin gthe
-same input data. The networks had exactly the same loss
-and exactly the same hyperparameters, with exactly the same optimizer (RMSProp),
+That same day (and I mean literally the same day), I was talking to my mentor
+about issues I was having in my own project.
+I had two implementations of a neural net. I was feeding the
+same input data every step. The networks had exactly the same loss
+and exactly the same hyperparameters, with exactly the same optimizer,
 trained with exactly the same number of GPUs, *and yet one version had 5%
-less classification accuracy?*
-
+less classification accuracy, and consistently so.*
 It was clear that something had to be different about the two implementations,
-but what could it be? Well, turns out it was very lucky I had been thinking
-about batch norm because of the MetaGraph stuff. If I hadn't, I have no idea
-how long it would have taken me to figure it out.
+but what?
 
-Let's dig into this one a bit, because the problem is actually pretty general.
-I was training a model to classify two datasets, for some domain adaptation
-experiments. For the sake of the example,
-let's pretend it they were both digit datasets, MNIST and SVHN.
+It was very lucky all the MetaGraph stuff got me thinking about batch norm.
+Who knows how long it would have taken me to figure it out otherwise?
 
-I have two implementations of this.
-In the first, I sample a batch of MNIST data and a batch of SVHN data, join
+Let's dig into this one a bit, because this problem was the inspiration
+for this blog post.
+I was training a model to classify two datasets.
+For the sake of an example, let's pretend I was classifying two digit
+datasets, MNIST and SVHN.
+
+I had two implementations.
+In the first, I sample a batch of MNIST data and a batch of SVHN data, merge
 them into one big batch of twice the size, then feed it through the network.
 
-IMAGE
+![First version of network](/public/perils-batch-norm/version1.svg)
+{: .centered }
 
 In the second, I create two copies of the network with shared weights. One
-copy gets MNISt data, and the other copy gets SVHN data.
+copy gets MNIST data, and the other copy gets SVHN data.
 
-IMAGE
+![Second version of network](/public/perils-batch-norm/version2.svg)
+{: .centered }
 
 Note that in both cases, half the data is MNIST and half the data is SVHN.
 Naively, we'd expect the gradient to be the same in both versions of the
 model. And this is true - until batch norm comes into play. In the first
-approach, the batch statistics and normalization are computed on both
-MNIST and SVHn data. In the second approach, each tower computes
+approach, the batch statistics are computed on both
+MNIST and SVHN data. In the second approach, each tower computes
 batch statistics on just one dataset, MNIST or SVHN.
 
-At training time, everything's fine. But remember that the two networks
+At training time, everything's fine. But you know how the two networks
 have shared weights? **The moving averages for dataset mean and variance
-were also shared, getting updated on both datasets.**
-So in the second approach, we train as if the mean
-was the MNIST mean or SVHN mean, but at test time we normalized as if
-the mean was the MNIST + SVHN mean. When the test-time normalization is
-different from the train time normalization, we get results like this.
+are also shared, getting updated on both datasets.**
+In the second approach, we train as if the normalization was MNIST mean and variance,
+or SVHN mean and variance, but at test time we normalize with the mean
+and variance of the merged MNIST + SVHN dataset.
+And because the test-time normalization differs from the average train
+time normalization, we get results like this.
 
 IMAGE
 
@@ -147,26 +173,44 @@ my experience, although every deep learning abstraction leaks, batch norm
 leaks a lot more than the rest.
 
 
-So...Why Haven't You Ditched Batch Norm Already?
+So...Why Haven't People Ditched Batch Norm?
 --------------------------------------------------------------------------
 
-The problem with batch norm is that it works.
+At this point, I'll admit I'm being a bit unfair. Minibatch dependence is
+indefensible - no one is going to argue that it's a good quality for
+models to have. Given all the annoyances of batch norm, why is it so
+ubiquitous?
 
-No, I mean, it **works.** When you do everything right, models train a lot
-faster. No contest. It's well-tested, it's part of tons of pretrained models,
-and it's shockingly general. There's a reason the batch norm paper has
-so many citations.
+There's a famous letter in computer science:
+Dijkstra's [Go To Statement Considered Harmful](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html).
+In it, Dijkstra argues that the goto statement should be avoided, because it
+makes code harder to read, and any program that uses goto can be rewritten
+to avoid it.
+
+Deep learning isn't programming.
+The unfortunate truth is that batch norm works really, really well.
+Yes, it has issues, but when you do everything right, models train a lot
+faster. No contest. There's a reason the batch norm paper has so many citations.
+(Over 1400 citations, as of this post.)
+It's well-tested and shockingly general.
 
 It's the Faustian bargain of deep learning. Faster training, in exchange
-for a slice of your sanity. And I keep signing it, because I'm working on problems
-where previous state of the art used batch norm, and I'm loathe to move too far
-off someting that works.
+for minor insanity. And I keep signing it. And so does everybody else.
+(In my case, I'm comparing to prior work that used batch norm, and
+I don't want to stray too far from a proven solution.)
 
-Now, that being said, I'm somewhat optimistic about the other normalization
-techniques. I've had some success with layer norm, although I hear the jury
-is still out for adding it to conv layers. Weight norm and cosine norm
-sound interesting, although I haven't thought about them that much. All
-three do the same thing at train time and test time, and all three are minibatch
-independent. If you're working on a problem from scratch (no known-working
-neural net architectures), it's probably worth trying one of the above.
-You'll need to do hyperparam tuning anyways.
+I'm somewhat optimistic that other normalization techniques can compete.
+I've had some success with layer norm, although I hear the jury
+is still out for how well it works with convolutions.
+Weight norm and cosine norm sound interesting, although I haven't thought about
+them very much, and they work in different ways. Importantly, all three
+avoid the main pain points of batch norm. They do the same thing at train time and
+test time, and they're all minibatch independent.
+If you're working on a new problem, and want to be brave, it might be worth
+trying one of those alternatives. Look, you'll need to do hyperparam tuning anyways.
+A tuned layer norm model probably shouldn't be much worse than a tuned batch norm
+model, so why not give it a shot.
+
+(If you want to stay closer to batch norm's motivation, you could also try
+batch renormalization. I haven't tried it, but it's supposed to handle non-independent
+minibatches better. Still has train vs test and minibatch dependence though.)
