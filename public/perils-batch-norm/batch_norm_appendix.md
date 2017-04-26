@@ -96,11 +96,11 @@ At test time, We normalize with the averaged $$\mu$$ and $$\sigma$$
 instead. This makes each $$x_i$$ independent again.
 
 $$
-    BN_{test}(x) = \frax{x - \mu}{\sqrt{\sigma^2 + \epsilon}}
+    BN_{test}(x) = \frac{x - \mu}{\sqrt{\sigma^2 + \epsilon}}
 $$
 
-Finally, in practice we don't want to limit the output distribution to only
-be mean $$0$$ and variance $$1$$, because this constrains the network too much
+Finally, in practice we don't want to limit the output distribution to always
+be mean 0 and variance 1, because this constrains the network too much
 for learning. We define
 
 $$
@@ -129,8 +129,7 @@ After applying batch norm, this unit has mean $$\beta$$, variance $$\gamma$$.
 The statistics of the distribution are concentrated entirely into those two variables.
 If batch norm wasn't used, the mean and variance would be implicitly
 defined by the weights along the arrows flowing into the shaded unit.
-
-By having the mean and variance be directly optimizable, it makes it easier
+When mean and variance are directly optimizable, it's easier
 for gradient descent to discover the best distribution for each layer's activations.
 
 ![Distribution of activations from the paper](/public/perils-batch-norm/batch-norm-distribution.png)
