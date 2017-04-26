@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "On The Perils of Batch Norm"
-date:   2017-03-21 00:13:00 -0700
+date:   2017-04-26 02:02:00 -0700
 ---
 
 *This post is written for deep learning practitioners, and assumes you

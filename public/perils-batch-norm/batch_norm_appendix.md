@@ -140,4 +140,4 @@ on MNIST. Note that the batch norm plot is more stable. Also note that both dist
 converge to a similar point, but batch norm gets close to the final distribution much sooner.
 {: .centered }
 
-[Back to original post]({% post_url 2017-03-21-perils-batch-norm %})
+[Back to original post]({% post_url 2017-04-26-perils-batch-norm %})
