@@ -74,16 +74,30 @@ $$
 
 **Note $$BN(x_i)$$ now depends on other $$x_j$$ in the minibatch!**
 
+Finally, in practice we don't want to limit the output distribution to always
+be mean 0 and variance 1, because this constrains the network too much
+for learning. We define
+
+$$
+    y = \gamma BN(x) + \beta
+$$
+
+to be the actual output, and let $$\beta$$ and $$\gamma$$ be learnable
+parameters.
+
+![Batch norm algorithm](/public/perils-batch-norm/batch-norm-alg.png)
+{: .centered }
+
 To make the output deterministic at eval time, we keep an exponential moving average
 of $$\mu_\mathcal{B}$$ and $$\sigma^2_\mathcal{B}$$. At every step,
 we also compute
 
 $$
-    \mu \gets (1-\alpha) \mu + \alpha * \mu_\mathcal{B}
+    \mu \gets (1-\alpha) \mu + \alpha \mu_\mathcal{B}
 $$
 
 $$
-    \sigma^2 \gets (1-\alpha) \sigma^2 + \alpha * \sigma^2_\mathcal{B}
+    \sigma^2 \gets (1-\alpha) \sigma^2 + \alpha\sigma^2_\mathcal{B}
 $$
 
 The exponential moving average has a few nice properties: it places more weight
@@ -98,20 +112,6 @@ instead. This makes each $$x_i$$ independent again.
 $$
     BN_{test}(x) = \frac{x - \mu}{\sqrt{\sigma^2 + \epsilon}}
 $$
-
-Finally, in practice we don't want to limit the output distribution to always
-be mean 0 and variance 1, because this constrains the network too much
-for learning. We define
-
-$$
-    y = \gamma BN(x) + \beta
-$$
-
-to be the actual output, and let $$\beta$$ and $$\gamma$$ be learnable
-parameters.
-
-![Batch norm algorithm](/public/perils-batch-norm/batch-norm-alg.png)
-{: .centered }
 
 Note that thanks to $$\gamma$$ and $$\beta$$, the activations can follow
 any distribution. (When $$\gamma = \sqrt{\sigma_{\mathcal{B}}^2 + \epsilon}$$ and
