@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Sometimes I Think About AI Safety and I Get Depressed For a Bit"
+date:   2017-05-02 01:14:00 -0700
+---
+
+*These are my personal opinions. They do not reflect the opinions of anybody
+I have worked with. AI safety gets very sensitive very fast, and I
+want to make __extra__ sure that people are aware of this.*
+
+
+I feel like the conversations people have about AI are broken. Or to be more
+specific, they're broken in ways that make me disengage from any conversations
+about AI safety, and that feels like a problem.
+
+Throughout this essay, I'll use "the strawman rationalist". The strawman
+rationalist will be denoted by *italics*. The strawman rationalist is not
+fair. It does not match any self-described rationalist I know. It's more
+like an amalgam of all the negative rationalist stereotypes I can think of.
+
+\* \* \*
+{: .centered }
+
+
