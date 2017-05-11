@@ -74,6 +74,10 @@ $$
 Any time we can move everything except the score function out of the expectation,
 we can cancel that term.
 
+The equality above is true for any distribution, but the $$a_i|s_i$$ distribution
+is especially helpful for MDPs. By the Markov property, $$a_i|s_i$$
+is the same as $$a_i | s_{0:i},a_{0:i-1}$$.
+
 
 REINFORCE Variance Reduction
 
@@ -141,6 +145,112 @@ Because of this, we can subtract a state-dependent baseline from the cumulative
 rewards without changing the expectation.
 
 $$
-    g = \sum_i \left(R_{0:i-1} \cdot 0 + \mathbb{E}[R_{i:\infty}\nabla_\theta \log \pi(a_i|s_i)]   \right)
+    \sum_i \left(\mathbb{E}[(R_{i:\infty} - b(s_i))\nabla_\theta \log \pi(a_i|s_i)]   \right)
+    = g - \sum_i \left(b(s_i)\nabla_\theta \log \pi(a_i|s_i)]   \right)
+    = g
+$$
+
+In practice, people usually try to estimate $$V^\pi(s_i)$$ and use that as their
+baseline. Intuitively, this "centers" the scaling of
+$$\nabla_\theta \log \pi(a_i|s_i)$$. If we estimated $$V^\pi$$ exactly, the
+scaling is positive if and only if the reward for taking action $$a_i$$
+is better than the average.
+
+
+Q-Learning
+
+Bellman Operators
+
+Operators map functions to functions. We can think of each application of an
+operator as one step of an optimization.
+
+Use $$\mathcal{T}$$ to denote operators.
+
+Proofs of Convergence in Tabular Problems.
+
+Let $$mathcal{T}^\pi$$ be the Bellman operator for $$\pi$$. Define this
+as
 
 $$
+    (\mathcal{T}^\piQ)(s, a) = r(s,a) + \gamma \mathbb{E}_{\pi}[Q(s',a')]
+$$
+
+We now prove that if we repeatedly apply $$T^\pi$$ to any $$Q$$, we converge
+to $$Q^\pi$$.
+
+First, show that $$Q^\pi$$ is a fixed point. Follows by definitions.
+
+$$
+    (\mathcal{T}^\piQ^\pi)(s, a) = r(s,a) + \gamma \mathbb{E}_{\pi}[Q^\pi(s',a')]
+    = r(s,a) + \gamma V^\pi(s') = Q^\pi(s,a)
+$$
+
+Now, prove $$\mathcal{T}^\pi$$ is a contraction.
+An operator is a contraction if
+
+$$
+    \| \mathcal{T}^\piQ_1 - \mathcal{T}^\piQ_2 \| \le c \|Q_1 - Q_2\|
+$$
+for some $$0 \le c < 1$$ and some distance function.
+
+Why do we want to prove this?
+By the Banach fixed-point theorem, for any contraction,
+
+* Repeatedly applying the contraction converges to a fixed point.
+* That fixed point is unique.
+
+We use max norm as the distance function. $$\|f\|_\infty = \sup_x |f(x)|$$.
+In this case, the supremum is over state-action pairs $$(s,a)$$. For any
+$$(s,a)$$,
+
+$$
+    \mathcal{T}^\piQ_1(s,a) - \mathcal{T}^\piQ_2(s,a) =
+    r(s,a) + \gamma\mathbb{E}_\pi[Q_1(s',a') - (r(s,a) + \gamma\mathbb{E}_\pi(Q_2(s',a'))] =
+    \gamma \mathbb{E}_\pi[ Q_1(s',a') - Q_2(s',a') ] \le
+    \gamma \sup_{s',a'} (Q_1(s',a') - Q_2(s',a'))
+$$
+
+Therefore, $$\| \mathcal{T}^\piQ_1 - \mathcal{T}^\piQ_2 \|_\infty \le \gamma \|Q_1 - Q_2\|_\infty$$,
+and since $$ 0 \le \gamma < 1$$, operator $$\mathcal{T}^\pi$$ is a contraction.
+
+We've now shown the Bellman operator $$\mathcal{T}^\pi$$ converges to $$\pi$$.
+Let $$\pi^*$$ be the optimal policy. What does the Bellman operator for that
+look like?
+
+$$
+    (\mathcal{T}^*Q)(s, a) = r(s,a) + \gamma \mathbb{E}_{\pi^*}[Q(s',a')]
+$$
+
+The optimal policy $$\pi^*$$ will take the action $$a'$$ that maximizes
+$$Q(s', a')$$, which converts the expectation into a max.
+
+$$
+    (\mathcal{T}^*Q)(s, a) = r(s,a) + \gamma \max_{a'}Q(s',a')
+$$
+
+This recovers the 1-step return that appears all over the place. Since this
+is a special case of $$\mathcal{T}^\pi$$, by earlier argument this converges
+to $$Q^*(s,a)$$.
+
+In practice, we can never apply the Bellman operator exactly, except for
+very small problems where we can easily iterate over all $$(s,a)$$.
+Instead, we have parametrized Q-functions $$Q_\theta(s,a)$$,
+then take gradient steps to minimze the TD-error
+
+$$
+    \frac{1}{2}\left(Q(s,a) - (r(s,a) + \gamma \max_{a'}Q(s', a')\right)^2
+$$
+
+With parametrized Q-functions, we are no longer guaranteed to converge,
+
+
+Other Bellman Operators
+
+The 1-step Bellman optimality operator isn't the only one we could be using.
+Consider
+
+$$
+    
+$$
+
+Al
