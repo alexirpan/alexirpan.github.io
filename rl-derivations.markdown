@@ -150,9 +150,9 @@ $$
     = g
 $$
 
-In practice, people usually try to estimate $$V^\pi(s_i)$$ and use that as their
+In practice, people usually try to estimate $$V^{\pi}(s_i)$$ and use that as their
 baseline. Intuitively, this "centers" the scaling of
-$$\nabla_\theta \log \pi(a_i|s_i)$$. If we estimated $$V^\pi$$ exactly, the
+$$\nabla_\theta \log \pi(a_i|s_i)$$. If we estimated $$V^{\pi}$$ exactly, the
 scaling is positive if and only if the reward for taking action $$a_i$$
 is better than the average.
 
@@ -168,28 +168,28 @@ Use $$\mathcal{T}$$ to denote operators.
 
 Proofs of Convergence in Tabular Problems.
 
-Let $$mathcal{T}^\pi$$ be the Bellman operator for $$\pi$$. Define this
+Let $$\mathcal{T}^{\pi}$$ be the Bellman operator for $$\pi$$. Define this
 as
 
 $$
-    (\mathcal{T}^\piQ)(s, a) = r(s,a) + \gamma \mathbb{E}_{\pi}[Q(s',a')]
+    (\mathcal{T}^{\pi}Q)(s, a) = r(s,a) + \gamma \mathbb{E}_{\pi}[Q(s',a')]
 $$
 
-We now prove that if we repeatedly apply $$T^\pi$$ to any $$Q$$, we converge
-to $$Q^\pi$$.
+We now prove that if we repeatedly apply $$T^{\pi}$$ to any $$Q$$, we converge
+to $$Q^{\pi}$$.
 
-First, show that $$Q^\pi$$ is a fixed point. Follows by definitions.
+First, show that $$Q^{\pi}$$ is a fixed point. Follows by definitions.
 
 $$
-    (\mathcal{T}^\piQ^\pi)(s, a) = r(s,a) + \gamma \mathbb{E}_{\pi}[Q^\pi(s',a')]
-    = r(s,a) + \gamma V^\pi(s') = Q^\pi(s,a)
+    (\mathcal{T}^{\pi}Q^{\pi})(s, a) = r(s,a) + \gamma \mathbb{E}_{\pi}[Q^{\pi}(s',a')]
+    = r(s,a) + \gamma V^{\pi}(s') = Q^{\pi}(s,a)
 $$
 
-Now, prove $$\mathcal{T}^\pi$$ is a contraction.
+Now, prove $$\mathcal{T}^{\pi}$$ is a contraction.
 An operator is a contraction if
 
 $$
-    \| \mathcal{T}^\piQ_1 - \mathcal{T}^\piQ_2 \| \le c \|Q_1 - Q_2\|
+    \| \mathcal{T}^{\pi}Q_1 - \mathcal{T}^{\pi}Q_2 \| \le c \|Q_1 - Q_2\|
 $$
 for some $$0 \le c < 1$$ and some distance function.
 
@@ -204,16 +204,16 @@ In this case, the supremum is over state-action pairs $$(s,a)$$. For any
 $$(s,a)$$,
 
 $$
-    \mathcal{T}^\piQ_1(s,a) - \mathcal{T}^\piQ_2(s,a) =
+    \mathcal{T}^{\pi}Q_1(s,a) - \mathcal{T}^{\pi}Q_2(s,a) =
     r(s,a) + \gamma\mathbb{E}_\pi[Q_1(s',a') - (r(s,a) + \gamma\mathbb{E}_\pi(Q_2(s',a'))] =
     \gamma \mathbb{E}_\pi[ Q_1(s',a') - Q_2(s',a') ] \le
     \gamma \sup_{s',a'} (Q_1(s',a') - Q_2(s',a'))
 $$
 
-Therefore, $$\| \mathcal{T}^\piQ_1 - \mathcal{T}^\piQ_2 \|_\infty \le \gamma \|Q_1 - Q_2\|_\infty$$,
-and since $$ 0 \le \gamma < 1$$, operator $$\mathcal{T}^\pi$$ is a contraction.
+Therefore, $$\| \mathcal{T}^{\pi}Q_1 - \mathcal{T}^{\pi}Q_2 \|_\infty \le \gamma \|Q_1 - Q_2\|_\infty$$,
+and since $$ 0 \le \gamma < 1$$, operator $$\mathcal{T}^{\pi}$$ is a contraction.
 
-We've now shown the Bellman operator $$\mathcal{T}^\pi$$ converges to $$\pi$$.
+We've now shown the Bellman operator $$\mathcal{T}^{\pi}$$ converges to $$\pi$$.
 Let $$\pi^*$$ be the optimal policy. What does the Bellman operator for that
 look like?
 
@@ -229,7 +229,7 @@ $$
 $$
 
 This recovers the 1-step return that appears all over the place. Since this
-is a special case of $$\mathcal{T}^\pi$$, by earlier argument this converges
+is a special case of $$\mathcal{T}^{\pi}$$, by earlier argument this converges
 to $$Q^*(s,a)$$.
 
 In practice, we can never apply the Bellman operator exactly, except for
@@ -243,14 +243,29 @@ $$
 
 With parametrized Q-functions, we are no longer guaranteed to converge,
 
+(Soft Q-Learning is a TODO here)
 
-Other Bellman Operators
+Natural Policy Gradient
 
-The 1-step Bellman optimality operator isn't the only one we could be using.
-Consider
+(Argument summarized from [https://papers.nips.cc/paper/2073-a-natural-policy-gradient.pdf](original paper).)
+
+Natural policy gradient is a special case of natural gradient, so let's
+explain that first.
+
+Suppose we have some objective function $$\eta(\theta)$$ that's
+differentiable. When optimizing $$\eta(\theta)$$, Why do we step in
+direction $$\nabla_\theta \eta(\theta)$$? It's because the direction
+of steepest descent is the gradient. Quick argument follows.
+
+The direction of steepest descent is the solution to 
 
 $$
-    
+\max_{d\theta, \|d\theta\|^2 \le c} \eta(\theta) - \eta(\theta + d\theta)
 $$
 
-Al
+for some small constant $$c$$. AS $$c \to 0$$, the first order Taylor
+approximation gets more accurate.
+
+$$
+    \eta(\theta + d\theta) \approx \eta(\theta) + \nabla_\theta \eta(\theta) \cdot d\theta
+$$
