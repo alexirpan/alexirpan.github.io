@@ -260,12 +260,91 @@ of steepest descent is the gradient. Quick argument follows.
 The direction of steepest descent is the solution to 
 
 $$
-\max_{d\theta, \|d\theta\|^2 \le c} \eta(\theta) - \eta(\theta + d\theta)
+\lim_{c\to 0} \max_{d\theta, \|d\theta\|^2 \le c} \eta(\theta) - \eta(\theta + d\theta)
 $$
 
-for some small constant $$c$$. AS $$c \to 0$$, the first order Taylor
-approximation gets more accurate.
+As $$c \to 0$$, the first order Taylor approximation gets more accurate, giving
 
 $$
-    \eta(\theta + d\theta) \approx \eta(\theta) + \nabla_\theta \eta(\theta) \cdot d\theta
+    \lim_{c\to 0} \max_{d\theta, \|d\theta\|^2 \le c} \eta(\theta) - \eta(\theta + d\theta)
+    =\lim_{c\to 0} \max_{d\theta, \|d\theta\|^2 \le c} \eta(\theta) - (\eta(\theta) + \nabla_\theta \eta(\theta) \cdot d\theta)
+    =\lim_{c\to 0} \max_{d\theta, \|d\theta\|^2 \le c} -\nabla_\theta \eta(\theta) \cdot d\theta
+    =\lim_{c\to 0} \min_{d\theta, \|d\theta\|^2 \le c} \nabla_\theta \eta(\theta) \cdot d\theta
 $$
+
+We can alternatively write the dot product as
+
+$$
+    \|\nabla_\theta \eta(\theta)\|\|d\theta\| \cos\alpha
+$$
+
+where $$\alpha$$ is the angle between the two vectors. Since the gradient norm
+is constant, this is minimized when $$\|d\theta\| = c$$ and $$\cos\alpha = -1$$.
+This gives step direction $$-\nabla \eta(\theta)$$.
+
+$$
+    \theta_{n+1} = \theta - \nabla \eta(\theta)
+$$
+
+In this derivation, we implicitly assumed $$\|d\theta\|$$ was defined as
+the Euclidean norm. We could alternatively define norm as
+
+$$
+    \|v\|_G^2 = v^TGv
+$$
+
+where $$G$$ is some symmetric positive definite matrix. The Euclidean norm is a special
+case of this, where $$G$$ is the identity matrix.
+
+Suppose we required the step direction to be $$\|d\theta\|_G^2 < c$$ instead.
+Now what's the optimal step direction? Note that different directions have
+different maximum Euclidean norms, so the direction aligned with
+$$\nabla \eta(\theta)$$ may no longer be optimal.
+
+(Linear algebra interlude because I keep forgetting basic linear algebra.)
+
+Lemma: Every positive definite matrix $$G$$ is invertible.
+
+Proof: Suppose not. Then there exist $$u,v$$ such that $$Gu = Gv$$ and
+$$u \neq v$$. Equivalently, $$G(u-v) = 0$$ for some non-zero vector $$u - v$$.
+But then $$(u-v)^TG(u-v) = 0$$, contradicting the positive definite definition,
+so $$G$$ must be invertible.
+
+$$
+    \min_{d\theta, d\theta^TGd\theta \le c} \nabla_\theta \eta(\theta)^Td\theta
+$$
+
+Solve this constrained optimization problem through Lagrange multipliers.
+To simplify notation let $$g = \nabla_\theta \eta(\theta)$$.
+At the solution $$d\theta$$, we must have
+
+$$
+    \nabla_{d\theta} (g \cdot d\theta - \lambda(d\theta^TGd\theta - c)) = 0
+$$
+
+Which gives
+
+$$
+    g - \lambda 2Gd\theta = 0
+$$
+
+Solving this gives
+
+$$
+    d\theta = \frac{1}{2\lambda}G^{-1}g
+$$
+
+So the optimal step direction is $$G^{-1}g$$.
+
+Okay, so what?
+In regular gradient descent, we always take small steps in parameter
+space, defined by the Euclidean distance in parameter space. Natural gradient
+argues that we should instead take small steps in the space of probability
+distributions. We can do this by measuring distance with the
+Fisher information matrix.
+
+(At least, I think. I'm pretty sure this is an approximation of the actual
+argument, but it's the one that makes sense to me.)
+
+Natural policy gradient is the idea of natural gradient, applied to the
+policy gradient from REINFORCE.
