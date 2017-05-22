@@ -118,7 +118,7 @@ $$
 
 
 Expectation of Score Function is Zero.
------------------------------------------------
+===============================================
 
 This will be important to variance reduction.
 
@@ -133,13 +133,13 @@ $$
 Any time we can move everything except the score function out of the expectation,
 we can cancel that term.
 
-The equality above is true for any distribution, but the $$a_i|s_i$$ distribution
-is especially helpful for MDPs. By the Markov property, $$a_i|s_i$$
-is the same as $$a_i | s_{0:i},a_{0:i-1}$$.
+The equality above is true for any distribution, but the $$a_i\vert s_i$$ distribution
+is especially helpful for MDPs. By the Markov property, $$a_i\vert s_i$$
+is the same as $$a_i \vert s_{0:i},a_{0:i-1}$$.
 
 
 REINFORCE Variance Reduction
------------------------------------------------
+===============================================
 
 Now that we're married to the MDP framework, there are ways to quickly
 reduce variance without adding any bias.
@@ -221,15 +221,15 @@ Q-Learning
 -----------------------------------------------
 
 Bellman Operators
------------------------------------------------
+===============================================
 
 Operators map functions to functions. We can think of each application of an
 operator as one step of an optimization.
 
 Use $$\mathcal{T}$$ to denote operators.
 
-Proofs of Convergence in Tabular Problems.
------------------------------------------------
+Proof of Convergence For Tabular Problems
+===============================================
 
 Let $$\mathcal{T}^{\pi}$$ be the Bellman operator for $$\pi$$. Define this
 as
