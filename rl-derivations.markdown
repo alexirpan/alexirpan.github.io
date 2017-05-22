@@ -4,11 +4,69 @@ title: A List of Reinforcement Learning Derivations
 permalink: /rl-derivations/
 ---
 
-I keep forgetting how to derive the famous reinforcement learning
-results. Here's a place for me to store the proofs. They are very rough.
+*Status: Draft*
+
+*Last updated May 22, 2017*
+
+A place for me to store the derivations of reinforcement learning
+results, because I keep forgetting them.
+
+TODO: Add paper links for where I first encountered these proofs.
+
+Equivalent Formulations of Policies and Reward
+-----------------------------------------------
+
+(Adapted from a mix of Generative Adversarial Imitation Learning
+and Trust-Region Policy Optimization.)
+
+The state visitation frequency is defined as the discounted
+sum of probabilities of visiting a given state.
+
+$$
+    \rho_\pi(s) = \sum_{t=0}^\infty \gamma^t P(s_t=s|\pi)
+$$
+
+Note that up to a constant factor, you can think of this as
+a probability distribution over states.
+
+$$
+    \sum_s \rho_\pi(s) = \sum_{t=0}^\infty \sum_{s \in S} \gamma^t P(s_t=s|\pi) = \sum_{t=1}^\infty \gamma^t \sum_{s \in S} P(s_t=s|\pi) = \sum_t \gamma^t = \frac{1}{1-\gamma}
+$$
+
+More precisely, multiplying $$\rho_\pi(s)$$ by $$(1-\gamma)$$ gives a
+probability distribution.
+
+The occupency measure $$\rho_\pi(s,a)$$ is defined similarly, except it's the
+discounted sum of probabilityes of visiting state-action pairs $$(s,a)$$,
+instead of just states $$s$$.
+
+$$
+    \rho_\pi(s,a) = \pi(a|s) \rho_\pi(s)
+$$
+
+(I know this is an abuse of notation. I'm sorry.)
+
+
+Theorem: there is a bijection between occupency measures and policies.
+
+Proof: is actually somewhat involved, refer to Syed et al 2008 for details.
+
+
+Theorem: the expected reward of policy $$\pi$$ can be written as
+
+$$
+    \sum_{s,a} \rho_\pi(s,a)r(s,a)
+$$
+
+where $$r(s,a)$$ is the reward for taking action $$a$$ from state $$s$$.
+
+Proof intuition: Consider triples $$(s, a, t)$$. When computing the
+expected reward of $$\pi$$, imagine placing reward $$\gamma^t r(s,a)$$
+at $$(s,a,t)$$.
 
 
 REINFORCE
+-----------------------------------------------
 
 Let $$X$$ be a random variable with known p.d.f. $$p_\theta(X)$$.
 (From here on, $$\theta$$ will be omitted. In general, $$\theta$$
@@ -60,6 +118,7 @@ $$
 
 
 Expectation of Score Function is Zero.
+-----------------------------------------------
 
 This will be important to variance reduction.
 
@@ -80,6 +139,7 @@ is the same as $$a_i | s_{0:i},a_{0:i-1}$$.
 
 
 REINFORCE Variance Reduction
+-----------------------------------------------
 
 Now that we're married to the MDP framework, there are ways to quickly
 reduce variance without adding any bias.
@@ -158,8 +218,10 @@ is better than the average.
 
 
 Q-Learning
+-----------------------------------------------
 
 Bellman Operators
+-----------------------------------------------
 
 Operators map functions to functions. We can think of each application of an
 operator as one step of an optimization.
@@ -167,6 +229,7 @@ operator as one step of an optimization.
 Use $$\mathcal{T}$$ to denote operators.
 
 Proofs of Convergence in Tabular Problems.
+-----------------------------------------------
 
 Let $$\mathcal{T}^{\pi}$$ be the Bellman operator for $$\pi$$. Define this
 as
@@ -243,9 +306,10 @@ $$
 
 With parametrized Q-functions, we are no longer guaranteed to converge,
 
-(Soft Q-Learning is a TODO here)
+TODO: add soft Q-Learning.
 
 Natural Policy Gradient
+-----------------------------------------------
 
 (Argument summarized from [https://papers.nips.cc/paper/2073-a-natural-policy-gradient.pdf](original paper).)
 
@@ -347,4 +411,24 @@ Fisher information matrix.
 argument, but it's the one that makes sense to me.)
 
 Natural policy gradient is the idea of natural gradient, applied to the
-policy gradient from REINFORCE.
+policy gradient from REINFORCE. At a high level it's actually pretty
+simple.
+
+1. Decide on some learning rate $$\alpha$$.
+2. Approximate the inverse Fisher $$F^{-1}$$ from the data.
+3. Compute the gradient $$g$$ REINFORCE would have given.
+4. Update with $$\theta_{n+1} \gets \theta_n + \alpha * F^{-1}g$$.
+
+In practice, you need to use conjugate gradients to compute $$F^{-1}g$$
+effeciently - computing $$F^{-1}$$ explicitly takes $$O(n^2)$$ time,
+where $$n$$ is the number of parameters, and conjugate gradients
+let you approximate $$F^{-1}g$$ in linear time.
+
+
+Trust Region Policy Optimization
+-----------------------------------------------
+
+TRPO is natural policy gradient, with an adaptive step size to make sure
+it's taking the largest possible step that lies within the trust region
+(a bound on the KL-divergence between the policy before and after the update.)
+
