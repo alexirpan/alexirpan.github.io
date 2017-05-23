@@ -4,69 +4,25 @@ title: A List of Reinforcement Learning Derivations
 permalink: /rl-derivations/
 ---
 
-*Status: Draft*
 
-*Last updated May 22, 2017*
+*Last updated May 23, 2017*
 
 A place for me to store the derivations of reinforcement learning
 results, because I keep forgetting them.
 
+This is a draft, and will probably stay at that level forever.
+Intended to be a reference for me - only posting publicly because
+there's a chance it's a useful reference for other people.
+
 TODO: Add paper links for where I first encountered these proofs.
 
-Equivalent Formulations of Policies and Reward
------------------------------------------------
+# Table of Contents
 
-(Adapted from a mix of Generative Adversarial Imitation Learning
-and Trust-Region Policy Optimization.)
-
-The state visitation frequency is defined as the discounted
-sum of probabilities of visiting a given state.
-
-$$
-    \rho_\pi(s) = \sum_{t=0}^\infty \gamma^t P(s_t=s|\pi)
-$$
-
-Note that up to a constant factor, you can think of this as
-a probability distribution over states.
-
-$$
-    \sum_s \rho_\pi(s) = \sum_{t=0}^\infty \sum_{s \in S} \gamma^t P(s_t=s|\pi) = \sum_{t=1}^\infty \gamma^t \sum_{s \in S} P(s_t=s|\pi) = \sum_t \gamma^t = \frac{1}{1-\gamma}
-$$
-
-More precisely, multiplying $$\rho_\pi(s)$$ by $$(1-\gamma)$$ gives a
-probability distribution.
-
-The occupency measure $$\rho_\pi(s,a)$$ is defined similarly, except it's the
-discounted sum of probabilityes of visiting state-action pairs $$(s,a)$$,
-instead of just states $$s$$.
-
-$$
-    \rho_\pi(s,a) = \pi(a|s) \rho_\pi(s)
-$$
-
-(I know this is an abuse of notation. I'm sorry.)
+* Clobbered for auto generated table of contents
+{:toc}
 
 
-Theorem: there is a bijection between occupency measures and policies.
-
-Proof: is actually somewhat involved, refer to Syed et al 2008 for details.
-
-
-Theorem: the expected reward of policy $$\pi$$ can be written as
-
-$$
-    \sum_{s,a} \rho_\pi(s,a)r(s,a)
-$$
-
-where $$r(s,a)$$ is the reward for taking action $$a$$ from state $$s$$.
-
-Proof intuition: Consider triples $$(s, a, t)$$. When computing the
-expected reward of $$\pi$$, imagine placing reward $$\gamma^t r(s,a)$$
-at $$(s,a,t)$$.
-
-
-REINFORCE
------------------------------------------------
+# REINFORCE
 
 Let $$X$$ be a random variable with known p.d.f. $$p_\theta(X)$$.
 (From here on, $$\theta$$ will be omitted. In general, $$\theta$$
@@ -117,8 +73,7 @@ $$
 $$
 
 
-Expectation of Score Function is Zero.
-===============================================
+## Expectation of Score Function is Zero.
 
 This will be important to variance reduction.
 
@@ -138,8 +93,7 @@ is especially helpful for MDPs. By the Markov property, $$a_i\vert s_i$$
 is the same as $$a_i \vert s_{0:i},a_{0:i-1}$$.
 
 
-REINFORCE Variance Reduction
-===============================================
+## REINFORCE Variance Reduction
 
 Now that we're married to the MDP framework, there are ways to quickly
 reduce variance without adding any bias.
@@ -217,19 +171,16 @@ scaling is positive if and only if the reward for taking action $$a_i$$
 is better than the average.
 
 
-Q-Learning
------------------------------------------------
+# Q-Learning
 
-Bellman Operators
-===============================================
+## Bellman Operators
 
 Operators map functions to functions. We can think of each application of an
 operator as one step of an optimization.
 
 Use $$\mathcal{T}$$ to denote operators.
 
-Proof of Convergence For Tabular Problems
-===============================================
+## Proof of Convergence For Tabular Problems
 
 Let $$\mathcal{T}^{\pi}$$ be the Bellman operator for $$\pi$$. Define this
 as
@@ -308,10 +259,7 @@ With parametrized Q-functions, we are no longer guaranteed to converge,
 
 TODO: add soft Q-Learning.
 
-Natural Policy Gradient
------------------------------------------------
-
-(Argument summarized from [https://papers.nips.cc/paper/2073-a-natural-policy-gradient.pdf](original paper).)
+## Natural Policy Gradient
 
 Natural policy gradient is a special case of natural gradient, so let's
 explain that first.
@@ -321,19 +269,19 @@ differentiable. When optimizing $$\eta(\theta)$$, Why do we step in
 direction $$\nabla_\theta \eta(\theta)$$? It's because the direction
 of steepest descent is the gradient. Quick argument follows.
 
-The direction of steepest descent is the solution to 
+The direction of steepest descent is the $$d\theta$$ that solves
 
 $$
-\lim_{c\to 0} \max_{d\theta, \|d\theta\|^2 \le c} \eta(\theta) - \eta(\theta + d\theta)
+\lim_{c\to 0} \max_{\|d\theta\|^2 \le c} \eta(\theta) - \eta(\theta + d\theta)
 $$
 
 As $$c \to 0$$, the first order Taylor approximation gets more accurate, giving
 
 $$
-    \lim_{c\to 0} \max_{d\theta, \|d\theta\|^2 \le c} \eta(\theta) - \eta(\theta + d\theta)
-    =\lim_{c\to 0} \max_{d\theta, \|d\theta\|^2 \le c} \eta(\theta) - (\eta(\theta) + \nabla_\theta \eta(\theta) \cdot d\theta)
-    =\lim_{c\to 0} \max_{d\theta, \|d\theta\|^2 \le c} -\nabla_\theta \eta(\theta) \cdot d\theta
-    =\lim_{c\to 0} \min_{d\theta, \|d\theta\|^2 \le c} \nabla_\theta \eta(\theta) \cdot d\theta
+    \lim_{c\to 0} \max_{\|d\theta\|^2 \le c} \eta(\theta) - \eta(\theta + d\theta)
+    =\lim_{c\to 0} \max_{\|d\theta\|^2 \le c} \eta(\theta) - (\eta(\theta) + \nabla_\theta \eta(\theta) \cdot d\theta)
+    =\lim_{c\to 0} \max_{\|d\theta\|^2 \le c} -\nabla_\theta \eta(\theta) \cdot d\theta
+    =\lim_{c\to 0} \min_{\|d\theta\|^2 \le c} \nabla_\theta \eta(\theta) \cdot d\theta
 $$
 
 We can alternatively write the dot product as
@@ -400,14 +348,13 @@ $$
 
 So the optimal step direction is $$G^{-1}g$$.
 
-Okay, so what?
 In regular gradient descent, we always take small steps in parameter
 space, defined by the Euclidean distance in parameter space. Natural gradient
 argues that we should instead take small steps in the space of probability
 distributions. We can do this by measuring distance with the
 Fisher information matrix.
 
-(At least, I think. I'm pretty sure this is an approximation of the actual
+(At least, I think. I'm pretty sure this is not the most precise
 argument, but it's the one that makes sense to me.)
 
 Natural policy gradient is the idea of natural gradient, applied to the
@@ -424,11 +371,114 @@ effeciently - computing $$F^{-1}$$ explicitly takes $$O(n^2)$$ time,
 where $$n$$ is the number of parameters, and conjugate gradients
 let you approximate $$F^{-1}g$$ in linear time.
 
+(This actually gets you 80% of the way to Trust Region Policy Optimization,
+since at the end of its derivation it reduces to natural policy gradient
+with an adaptive learning rate to take the largest step it can within
+the trust region.)
 
-Trust Region Policy Optimization
------------------------------------------------
 
-TRPO is natural policy gradient, with an adaptive step size to make sure
-it's taking the largest possible step that lies within the trust region
-(a bound on the KL-divergence between the policy before and after the update.)
+## Equivalent Formulations of Policies and Reward
 
+(Adapted from a mix of Generative Adversarial Imitation Learning
+and Trust-Region Policy Optimization.)
+
+The state visitation frequency is defined as the discounted
+sum of probabilities of visiting a given state.
+
+$$
+    \rho_\pi(s) = \sum_{t=0}^\infty \gamma^t P(s_t=s|\pi)
+$$
+
+Note that up to a constant factor, you can think of this as
+a probability distribution over states.
+
+$$
+    \sum_s \rho_\pi(s) = \sum_{t=0}^\infty \sum_{s \in S} \gamma^t P(s_t=s|\pi) = \sum_{t=1}^\infty \gamma^t \sum_{s \in S} P(s_t=s|\pi) = \sum_t \gamma^t = \frac{1}{1-\gamma}
+$$
+
+More precisely, multiplying $$\rho_\pi(s)$$ by $$(1-\gamma)$$ gives a
+probability distribution.
+
+The occupency measure $$\rho_\pi(s,a)$$ is defined similarly, except it's the
+discounted sum of probabilityes of visiting state-action pairs $$(s,a)$$,
+instead of just states $$s$$.
+
+$$
+    \rho_\pi(s,a) = \pi(a|s) \rho_\pi(s)
+$$
+
+(I know this is an abuse of notation. I'm sorry.)
+
+The expected reward of policy $$\pi$$ is
+
+$$
+    \eta(\pi) = \mathbb{E}_\pi[\sum_t \gamma^t \pi(a_t|s_t)r(s_t,a_t)]
+$$
+
+which can be interpreted as taking the average reward over all trajectories.
+But alternatively, we can count how often we visit state-action pairs $$(s,a)$$,
+and sum over that.
+
+$$
+    \eta(\pi) = \sum_{s,a} \rho_\pi(s,a) r(s,a)
+$$
+
+Argument that works for me - imagine a giant grid of all $$(s,a)$$ pairs.
+Whenever you execute an episode, when you encounter $$(s_t, a_t)$$,
+add $$\gamma^t r(s_t,a_t)$$ to that square in the grid. The sum of values in
+the grid is the reward of the episode. The sum of values in the average grid
+is the expected reward of $$\pi$$. But equivalently, we could ask,
+"What value is in cell $$(s,a)$$ in the average grid?" And it turns out
+that cell will have value $$\rho_\pi(s,a)r(s,a)$$.
+
+TODO: add proof of bijection between occupnecy measures $$\rho$$
+and policies $$\pi$$.
+
+Why bother formulating the problem this way? It gives another way to think
+about the learning problem. In the trajectory view, you want to update
+your policy such that episodes that give good reward happen more often.
+In the state-action view, you want to update such that you visit
+good $$(s,a)$$ more often. It can be easier to make arguments
+in one view than in the other.
+
+
+## Advantage With Respect to Another Policy
+
+The expected return of $$\pi'$$ can be defined by its expected
+advantage over $$\pi$$, which is handy for thinking about the difference
+between policies.
+
+$$
+    \eta(\pi') = \eta(\pi) + \mathbb{E}_{\pi'}\left[ \sum_{t}\gamma^t A_\pi(s_t,a_t)\right]
+$$
+
+Proof:
+
+$$
+    \mathbb{E}_{\pi'}\left[ \sum_{t}\gamma^t A_\pi(s_t,a_t)\right]
+    =\mathbb{E}_{\pi'}\left[ \sum_{t}\gamma^t (r_t + \gamma V_\pi(s_{t+1}) - V_\pi(s_t)\right]
+    =\mathbb{E}_{\pi'}\left[ \left(\sum_{t}\gamma^t r_t\right) +
+                    +\left(\sum_{t=0}^\infty \gamma^{t+1}V_\pi(s_{t+1})\right)
+                    - \left(\sum_{t=0}^\infty \gamma^t V_\pi(s_t)\right)\right]
+$$
+
+At this point, note that the last two summations are identical, except the
+first starts counting from $$1$$ and the other starts counting from $$0$$.
+This lets us cancel all terms except for $$t=0$$ in the second summation.
+
+$$
+    \mathbb{E}_{\pi'}\left[ \sum_{t}\gamma^t A_\pi(s_t,a_t)\right]
+    =\mathbb{E}_{\pi'}\left[ -V(s_0) + \sum_{t}\gamma^t r_t\right]
+    =\mathbb{E}_{\pi'}\left[ -V(s_0)\right] + \mathbb{E}_{\pi'}\left[\sum_{t}\gamma^t r_t\right]
+$$
+
+Now note that because the initial state $$s_0$$ is independent of the policy,
+the first expectation changes to $$-\eta(\pi)$$. The second expectations
+is $$\eta(\pi')$$ by definition. Therefore,
+
+$$
+    \mathbb{E}_{\pi'}\left[ \sum_{t}\gamma^t A_\pi(s_t,a_t)\right]
+    = \eta(\pi') - \eta(\pi)
+$$
+
+completing the proof.
