@@ -4,69 +4,26 @@ title: A List of Reinforcement Learning Derivations
 permalink: /rl-derivations/
 ---
 
-*Status: Draft*
 
-*Last updated May 22, 2017*
+*Last updated May 24, 2017*
 
-A place for me to store the derivations of reinforcement learning
-results, because I keep forgetting them.
+Place for me to store notes on reinforcement learning, with a
+focus on the details of the derivations.
 
-TODO: Add paper links for where I first encountered these proofs.
+This is a draft, and will never be more than a draft.
+Intended as a reference for me, may not be legible to other people.
+Only posting publicly in case other people find it useful.
 
-Equivalent Formulations of Policies and Reward
------------------------------------------------
+TODO: Add paper links for where I first encountered these proofs,
+relevant papers, etc.
 
-(Adapted from a mix of Generative Adversarial Imitation Learning
-and Trust-Region Policy Optimization.)
+# Table of Contents
 
-The state visitation frequency is defined as the discounted
-sum of probabilities of visiting a given state.
-
-$$
-    \rho_\pi(s) = \sum_{t=0}^\infty \gamma^t P(s_t=s|\pi)
-$$
-
-Note that up to a constant factor, you can think of this as
-a probability distribution over states.
-
-$$
-    \sum_s \rho_\pi(s) = \sum_{t=0}^\infty \sum_{s \in S} \gamma^t P(s_t=s|\pi) = \sum_{t=1}^\infty \gamma^t \sum_{s \in S} P(s_t=s|\pi) = \sum_t \gamma^t = \frac{1}{1-\gamma}
-$$
-
-More precisely, multiplying $$\rho_\pi(s)$$ by $$(1-\gamma)$$ gives a
-probability distribution.
-
-The occupency measure $$\rho_\pi(s,a)$$ is defined similarly, except it's the
-discounted sum of probabilityes of visiting state-action pairs $$(s,a)$$,
-instead of just states $$s$$.
-
-$$
-    \rho_\pi(s,a) = \pi(a|s) \rho_\pi(s)
-$$
-
-(I know this is an abuse of notation. I'm sorry.)
+* Clobbered for auto generated table of contents
+{:toc}
 
 
-Theorem: there is a bijection between occupency measures and policies.
-
-Proof: is actually somewhat involved, refer to Syed et al 2008 for details.
-
-
-Theorem: the expected reward of policy $$\pi$$ can be written as
-
-$$
-    \sum_{s,a} \rho_\pi(s,a)r(s,a)
-$$
-
-where $$r(s,a)$$ is the reward for taking action $$a$$ from state $$s$$.
-
-Proof intuition: Consider triples $$(s, a, t)$$. When computing the
-expected reward of $$\pi$$, imagine placing reward $$\gamma^t r(s,a)$$
-at $$(s,a,t)$$.
-
-
-REINFORCE
------------------------------------------------
+# REINFORCE
 
 Let $$X$$ be a random variable with known p.d.f. $$p_\theta(X)$$.
 (From here on, $$\theta$$ will be omitted. In general, $$\theta$$
@@ -117,10 +74,9 @@ $$
 $$
 
 
-Expectation of Score Function is Zero.
-===============================================
+## Expectation of Score Function is Zero.
 
-This will be important to variance reduction.
+REMEMBER THIS, IT'S IMPORTANT ALL OVER THE PLACE.
 
 $$
     \mathbb{E}_{a_i|s_i}\left[\nabla_\theta \log \pi(a_i | s_i)\right] =
@@ -138,8 +94,7 @@ is especially helpful for MDPs. By the Markov property, $$a_i\vert s_i$$
 is the same as $$a_i \vert s_{0:i},a_{0:i-1}$$.
 
 
-REINFORCE Variance Reduction
-===============================================
+## REINFORCE Variance Reduction
 
 Now that we're married to the MDP framework, there are ways to quickly
 reduce variance without adding any bias.
@@ -182,7 +137,8 @@ $$
 (Can show this formally by writing out the conditional expectations, but it
 gets messy fast.)
 
-Right away, this lets us drop a few terms from the gradient.
+Right away, this lets us drop about half the terms from the gradient (from roughly
+$$n^2$$ to roughly $$n^2/2$$.)
 
 **Observation 2:** We can subtract a baseline function without biasing the gradient,
 as long as the baseline has certain properties.
@@ -217,19 +173,16 @@ scaling is positive if and only if the reward for taking action $$a_i$$
 is better than the average.
 
 
-Q-Learning
------------------------------------------------
+# Q-Learning
 
-Bellman Operators
-===============================================
+## Bellman Operators
 
 Operators map functions to functions. We can think of each application of an
 operator as one step of an optimization.
 
 Use $$\mathcal{T}$$ to denote operators.
 
-Proof of Convergence For Tabular Problems
-===============================================
+## Proof of Convergence For Tabular Problems
 
 Let $$\mathcal{T}^{\pi}$$ be the Bellman operator for $$\pi$$. Define this
 as
@@ -267,10 +220,12 @@ In this case, the supremum is over state-action pairs $$(s,a)$$. For any
 $$(s,a)$$,
 
 $$
-    \mathcal{T}^{\pi}Q_1(s,a) - \mathcal{T}^{\pi}Q_2(s,a) =
-    r(s,a) + \gamma\mathbb{E}_\pi[Q_1(s',a') - (r(s,a) + \gamma\mathbb{E}_\pi(Q_2(s',a'))] =
-    \gamma \mathbb{E}_\pi[ Q_1(s',a') - Q_2(s',a') ] \le
+\begin{aligned}
+    \mathcal{T}^{\pi}Q_1(s,a) - \mathcal{T}^{\pi}Q_2(s,a) &=
+    r(s,a) + \gamma\mathbb{E}_\pi[Q_1(s',a') - (r(s,a) + \gamma\mathbb{E}_\pi(Q_2(s',a'))] \\ &=
+    \gamma \mathbb{E}_\pi[ Q_1(s',a') - Q_2(s',a') ] \\ &\le
     \gamma \sup_{s',a'} (Q_1(s',a') - Q_2(s',a'))
+\end{aligned}
 $$
 
 Therefore, $$\| \mathcal{T}^{\pi}Q_1 - \mathcal{T}^{\pi}Q_2 \|_\infty \le \gamma \|Q_1 - Q_2\|_\infty$$,
@@ -308,32 +263,33 @@ With parametrized Q-functions, we are no longer guaranteed to converge,
 
 TODO: add soft Q-Learning.
 
-Natural Policy Gradient
------------------------------------------------
-
-(Argument summarized from [https://papers.nips.cc/paper/2073-a-natural-policy-gradient.pdf](original paper).)
+# Natural Policy Gradient
 
 Natural policy gradient is a special case of natural gradient, so let's
 explain that first.
 
 Suppose we have some objective function $$\eta(\theta)$$ that's
-differentiable. When optimizing $$\eta(\theta)$$, Why do we step in
+differentiable. When optimizing $$\eta(\theta)$$, why do we step in
 direction $$\nabla_\theta \eta(\theta)$$? It's because the direction
 of steepest descent is the gradient. Quick argument follows.
 
-The direction of steepest descent is the solution to 
+The direction of steepest descent is the $$d\theta$$ that solves
 
 $$
-\lim_{c\to 0} \max_{d\theta, \|d\theta\|^2 \le c} \eta(\theta) - \eta(\theta + d\theta)
+\max_{\|d\theta\|^2 \le \epsilon} \eta(\theta) - \eta(\theta + d\theta)
 $$
 
-As $$c \to 0$$, the first order Taylor approximation gets more accurate, giving
+for sufficiently small $$\epsilon > 0$$.
+
+As $$\epsilon \to 0$$, the first order Taylor approximation gets more accurate, giving
 
 $$
-    \lim_{c\to 0} \max_{d\theta, \|d\theta\|^2 \le c} \eta(\theta) - \eta(\theta + d\theta)
-    =\lim_{c\to 0} \max_{d\theta, \|d\theta\|^2 \le c} \eta(\theta) - (\eta(\theta) + \nabla_\theta \eta(\theta) \cdot d\theta)
-    =\lim_{c\to 0} \max_{d\theta, \|d\theta\|^2 \le c} -\nabla_\theta \eta(\theta) \cdot d\theta
-    =\lim_{c\to 0} \min_{d\theta, \|d\theta\|^2 \le c} \nabla_\theta \eta(\theta) \cdot d\theta
+\begin{aligned}
+    \max_{\|d\theta\|^2 \le \epsilon} \eta(\theta) - \eta(\theta + d\theta)
+    &= \max_{\|d\theta\|^2 \le \epsilon} \eta(\theta) - (\eta(\theta) + \nabla_\theta \eta(\theta) \cdot d\theta) \\
+    &= \max_{\|d\theta\|^2 \le \epsilon} -\nabla_\theta \eta(\theta) \cdot d\theta \\
+    &= \min_{\|d\theta\|^2 \le \epsilon} \nabla_\theta \eta(\theta) \cdot d\theta
+\end{aligned}
 $$
 
 We can alternatively write the dot product as
@@ -343,8 +299,8 @@ $$
 $$
 
 where $$\alpha$$ is the angle between the two vectors. Since the gradient norm
-is constant, this is minimized when $$\|d\theta\| = c$$ and $$\cos\alpha = -1$$.
-This gives step direction $$-\nabla \eta(\theta)$$.
+is constant, this is minimized when $$\|d\theta\| = \epsilon$$ and $$\cos\alpha = -1$$.
+This gives step direction $$-\nabla \eta(\theta)$$, and update.
 
 $$
     \theta_{n+1} = \theta - \nabla \eta(\theta)
@@ -360,7 +316,13 @@ $$
 where $$G$$ is some symmetric positive definite matrix. The Euclidean norm is a special
 case of this, where $$G$$ is the identity matrix.
 
-Suppose we required the step direction to be $$\|d\theta\|_G^2 < c$$ instead.
+(Why is it sufficient to consider symmetric positive definite matrices?
+We care specifically about the quadratic form $$f(v) = v^TGv$$. For any non-symmetric
+$$A$$, you get the same function if you use $$(A + A^T)/2$$ instead, so
+for any quadratic form $$f(v)$$, there exists some equivalent
+symmetric positive definite matrix.)
+
+Suppose we required the step direction to be $$\|d\theta\|_G^2 < \epsilon$$ instead.
 Now what's the optimal step direction? Note that different directions have
 different maximum Euclidean norms, so the direction aligned with
 $$\nabla \eta(\theta)$$ may no longer be optimal.
@@ -372,10 +334,12 @@ Lemma: Every positive definite matrix $$G$$ is invertible.
 Proof: Suppose not. Then there exist $$u,v$$ such that $$Gu = Gv$$ and
 $$u \neq v$$. Equivalently, $$G(u-v) = 0$$ for some non-zero vector $$u - v$$.
 But then $$(u-v)^TG(u-v) = 0$$, contradicting the positive definite definition,
-so $$G$$ must be invertible.
+so $$G$$ must be invertible. $$\blacksquare$$.
+
+To get the step direction, we solve
 
 $$
-    \min_{d\theta, d\theta^TGd\theta \le c} \nabla_\theta \eta(\theta)^Td\theta
+    \min_{d\theta^TGd\theta \le \epsilon} \nabla_\theta \eta(\theta)^Td\theta
 $$
 
 Solve this constrained optimization problem through Lagrange multipliers.
@@ -383,16 +347,16 @@ To simplify notation let $$g = \nabla_\theta \eta(\theta)$$.
 At the solution $$d\theta$$, we must have
 
 $$
-    \nabla_{d\theta} (g \cdot d\theta - \lambda(d\theta^TGd\theta - c)) = 0
+    \nabla_{d\theta} (g \cdot d\theta - \lambda(d\theta^TGd\theta - \epsilon)) = 0
 $$
 
 Which gives
 
 $$
-    g - \lambda 2Gd\theta = 0
+    g - 2\lambda Gd\theta = 0
 $$
 
-Solving this gives
+Since $$G$$ is invertible, this has solution
 
 $$
     d\theta = \frac{1}{2\lambda}G^{-1}g
@@ -400,15 +364,14 @@ $$
 
 So the optimal step direction is $$G^{-1}g$$.
 
-Okay, so what?
 In regular gradient descent, we always take small steps in parameter
 space, defined by the Euclidean distance in parameter space. Natural gradient
 argues that we should instead take small steps in the space of probability
 distributions. We can do this by measuring distance with the
 Fisher information matrix.
 
-(At least, I think. I'm pretty sure this is an approximation of the actual
-argument, but it's the one that makes sense to me.)
+(I'm pretty sure this argument is wrong in some subtle way, but it's
+approximately correct.)
 
 Natural policy gradient is the idea of natural gradient, applied to the
 policy gradient from REINFORCE. At a high level it's actually pretty
@@ -424,11 +387,251 @@ effeciently - computing $$F^{-1}$$ explicitly takes $$O(n^2)$$ time,
 where $$n$$ is the number of parameters, and conjugate gradients
 let you approximate $$F^{-1}g$$ in linear time.
 
+(This actually gets you 80% of the way to Trust Region Policy Optimization,
+since at the end of its derivation it reduces to natural policy gradient
+with an adaptive learning rate to take the largest step it can within
+the trust region.)
 
-Trust Region Policy Optimization
------------------------------------------------
 
-TRPO is natural policy gradient, with an adaptive step size to make sure
-it's taking the largest possible step that lies within the trust region
-(a bound on the KL-divergence between the policy before and after the update.)
+# Equivalent Formulations of Policies and Reward
 
+(Adapted from a mix of Generative Adversarial Imitation Learning
+and Trust-Region Policy Optimization.)
+
+## State Visitation / Occupency Measure
+
+The state visitation frequency is defined as the discounted
+sum of probabilities of visiting a given state.
+
+$$
+    \rho_\pi(s) = \sum_{t=0}^\infty \gamma^t P(s_t=s|\pi)
+$$
+
+Note that up to a constant factor, you can think of this as
+a probability distribution over states.
+
+$$
+    \sum_s \rho_\pi(s) = \sum_{t=0}^\infty \sum_{s \in S} \gamma^t P(s_t=s|\pi) = \sum_{t=1}^\infty \gamma^t \sum_{s \in S} P(s_t=s|\pi) = \sum_t \gamma^t = \frac{1}{1-\gamma}
+$$
+
+More precisely, multiplying $$\rho_\pi(s)$$ by $$(1-\gamma)$$ gives a
+probability distribution.
+
+The occupency measure $$\rho_\pi(s,a)$$ is defined similarly, except it's the
+discounted sum of probabilityes of visiting state-action pairs $$(s,a)$$,
+instead of just states $$s$$.
+
+$$
+    \rho_\pi(s,a) = \pi(a|s) \rho_\pi(s)
+$$
+
+(I know this is an abuse of notation. I'm sorry.)
+
+The expected reward of policy $$\pi$$ is
+
+$$
+    \eta(\pi) = \mathbb{E}_\pi[\sum_t \gamma^t \pi(a_t|s_t)r(s_t,a_t)]
+$$
+
+which can be interpreted as taking the average reward over all trajectories.
+But alternatively, we can count how often we visit state-action pairs $$(s,a)$$,
+and sum over that.
+
+$$
+    \eta(\pi) = \sum_{s,a} \rho_\pi(s,a) r(s,a)
+$$
+
+Argument that works for me - imagine a giant grid of all $$(s,a)$$ pairs.
+Whenever you execute an episode, when you encounter $$(s_t, a_t)$$,
+add $$\gamma^t r(s_t,a_t)$$ to that square in the grid. The sum of values in
+the grid is the reward of the episode. The sum of values in the average grid
+is the expected reward of $$\pi$$. But equivalently, we could ask,
+"What value is in cell $$(s,a)$$ in the average grid?" And it turns out
+that cell will have value $$\rho_\pi(s,a)r(s,a)$$.
+
+TODO: add proof of bijection between occupnecy measures $$\rho$$
+and policies $$\pi$$.
+
+Why bother formulating the problem this way? It gives another way to think
+about the learning problem. In the trajectory view, you want to update
+your policy such that episodes that give good reward happen more often.
+In the state-action view, you want to update such that you visit
+good $$(s,a)$$ more often. It can be easier to make arguments
+in one view than in the other.
+
+
+## Advantage With Respect to Another Policy
+
+The expected return of $$\pi'$$ can be defined by its expected
+advantage over $$\pi$$, which is handy for thinking about the difference
+between policies.
+
+$$
+    \eta(\pi') = \eta(\pi) + \mathbb{E}_{\pi'}\left[ \sum_{t}\gamma^t A_\pi(s_t,a_t)\right]
+$$
+
+Proof:
+
+$$
+    \mathbb{E}_{\pi'}\left[ \sum_{t}\gamma^t A_\pi(s_t,a_t)\right]
+    =\mathbb{E}_{\pi'}\left[ \sum_{t}\gamma^t (r_t + \gamma V_\pi(s_{t+1}) - V_\pi(s_t)\right]
+    =\mathbb{E}_{\pi'}\left[ \left(\sum_{t}\gamma^t r_t\right) +
+                    +\left(\sum_{t=0}^\infty \gamma^{t+1}V_\pi(s_{t+1})\right)
+                    - \left(\sum_{t=0}^\infty \gamma^t V_\pi(s_t)\right)\right]
+$$
+
+At this point, note that the last two summations are identical, except the
+first starts counting from $$1$$ and the other starts counting from $$0$$.
+This lets us cancel all terms except for $$t=0$$ in the second summation.
+
+$$
+    \mathbb{E}_{\pi'}\left[ \sum_{t}\gamma^t A_\pi(s_t,a_t)\right]
+    =\mathbb{E}_{\pi'}\left[ -V(s_0) + \sum_{t}\gamma^t r_t\right]
+    =\mathbb{E}_{\pi'}\left[ -V(s_0)\right] + \mathbb{E}_{\pi'}\left[\sum_{t}\gamma^t r_t\right]
+$$
+
+Now note that because the initial state $$s_0$$ is independent of the policy,
+the first expectation changes to $$-\eta(\pi)$$. The second expectations
+is $$\eta(\pi')$$ by definition. Therefore,
+
+$$
+    \mathbb{E}_{\pi'}\left[ \sum_{t}\gamma^t A_\pi(s_t,a_t)\right]
+    = \eta(\pi') - \eta(\pi)
+$$
+
+completing the proof.
+
+# Q-Prop
+
+In REINFORCE, you can subtract a state-dependent baseline without biasing the
+gradient. The Q-Prop paper gives a way to subtract an action-dependent baseline.
+
+The argument is based on control variates, a variance reduction technique.
+The [Wikipedia page](https://en.wikipedia.org/wiki/Control_variates)
+is pretty good.
+
+Suppose we want to estimate $$\mathbb{E}[f(X)]$$. We can do so by sampling
+from $$X$$. Now, let $$g(X)$$ be another function, whose expectation
+$$\mathbb{E}[g(X)]$$ is known / can be computed analytically. Let
+$$\mathbb{E}[f(X)] = \mu$$ and $$\mathbb{E}[g(X)] = b$$. Then
+
+$$
+   f(X) + c (g(X) - b)
+$$
+
+also has expectation $$\mu$$ for any $$c$$. If $$f(X)$$ and $$g(X)$$ are
+correlated, a good choice of $$c$$ can make
+the variance of $$f(X) + c(g(X) - b)$$ lower than
+the variance of $$f(X)$$.
+
+To apply control variates to RL, recall that we showed the policy gradient was
+
+$$
+    g = \sum_i \mathbb{E}_{\tau|s_i}[R_{i:\infty}\nabla_\theta \log \pi(a_i|s_i)]
+$$
+
+We want to subtract an action dependent baseline $$f(s,a)$$. Next, we
+make an observation from the MuProp paper: first-order Taylor expansions make
+nice control variates. We'll see how the linear function makes the math nice.
+(Or at least, nicer. It's still pretty bashy.)
+
+Let $$f(s, a)$$ be some arbitrary function. Since each expectation is conditioned
+on $$s_i$$, it suffices to consider the Taylor expansion with respect to just
+$$a$$. Let $$\bar{a}$$ be some arbitrary action, depending only on $$s_i$$.
+The 1st-order Taylor expansion $$\bar{f}(s,a)$$ around $$(s_i, \bar{a})$$
+is
+
+$$
+    \bar{f}(s,a) = f(s_i, \bar{a}) + \nabla_a f(s_i, a)|_{a=\bar{a}}\cdot(a - \bar{a})
+$$
+
+We plan to compute
+
+$$
+    g = \sum_i \mathbb{E}_{\tau|s_i}[(R_{i:\infty} - \bar{f}(s_i,a_i))\nabla_\theta \log \pi(a_i|s_i)]
+    + \mathbb{E}_{\tau|s_i}[\bar{f}(s_i,a_i)\nabla_\theta \log \pi(a_i|s_i)]
+$$
+
+This is trivially equal to the original gradient, which leaves analytically
+computing the 2nd term. Think of this as the offset we need to re-add to the gradient
+to make the gradient estimator unbiased again.
+
+$$
+\begin{aligned}
+    \mathbb{E}_{\tau|s_i}[\bar{f}(s_i,a_i)\nabla_\theta \log \pi(a_i|s_i)]
+    =&\mathbb{E}_{\tau|s_i}[f(s_i,\bar{a})\nabla_\theta \log \pi(a_i|s_i)] \\
+    &+\mathbb{E}_{\tau|s_i}[\left(\nabla_a f(s_i, a)|_{a=\bar{a}}\cdot a_i\right)\nabla_\theta \log \pi(a_i|s_i)] \\
+    &-\mathbb{E}_{\tau|s_i}[\left(\nabla_a f(s_i, a)|_{a=\bar{a}}\cdot \bar{a}\right)\nabla_\theta \log \pi(a_i|s_i)]
+\end{aligned}
+$$
+
+In the first expectation, because $$\bar{a}$$ depends only on $$s_i$$, the
+scaling factor depends only on $$s_i$$, and therefore the
+expectation goes to $$0$$ (we can move $$f(s_i, \bar{a})$$ out of the expectation,
+then note expectation of the score function is $$0$$.)
+
+In the last expectation, the same is also true. $$\nabla_a f(s_i,a)|_{a=\bar{a}}\cdot \bar{a}$$
+depends only on $$\bar{a}$$, which only depends on $$s_i$$, and therefore can
+also move out of the expectation, and therefore that term goes to $$0$$ too.
+
+That leaves the middle expectation. At this point, note the expectation over $$\tau\vert s_i$$
+is the same as the expectation over $$a_i \vert s_i$$, since at this point no
+terms depend on other states or actions.
+
+$$
+\begin{aligned}
+   \mathbb{E}_{a_i|s_i}[\left(\nabla_a f(s_i, a)|_{a=\bar{a}}\cdot a_i\right)\nabla_\theta \log \pi(a_i|s_i)]
+   &=\int_{a_i}\pi(a_i|s_i)\left(\nabla_a f(s_i, a_i)|_{a=\bar{a}}\cdot a_i\right)\nabla_\theta \log \pi(a_i|s_i)\,da_i \\
+   &=\left(\nabla_a f(s_i, a)|_{a=\bar{a}}\right) \cdot \int_{a_i}a_i\nabla_\theta \pi(a_i|s_i)\,da_i \\
+   &=\left(\nabla_a f(s_i, a)|_{a=\bar{a}}\right) \cdot \nabla_\theta \int_{a_i} a_i\pi(a_i|s_i)\,da_i \\
+   &=\left(\nabla_a f(s_i, a)|_{a=\bar{a}}\right) \cdot \nabla_\theta \mathbb{E}_{a_i|s_i}[a_i]
+\end{aligned}
+$$
+
+Points of confusion I ran into: we're applying the same trick of $$p \nabla \log p = \nabla p$$.
+We're multiplying a $$dim(a)$$ vector by a $$dim(a) \times dim(\theta)$$ matrix
+to get a $$dim(\theta)$$ vector. (Recall we want the expectation to return
+an offset for the gradient with respect to $$\theta$$.)
+
+We've ended with multiplying the gradient w.r.t $$a$$ at $$\bar{a}$$ with the
+gradient w.r.t. $$\theta$$ of the mean action of policy $$\pi$$. From here,
+we can make a number of natural choices.
+
+* Let $$\pi_|theta(s) = \mathcal{N}(\mu_\theta(s), \Sigma)$$, where $$\mu_\theta(s)$$
+is some learned actor (some neural net), and $$\Sigma$$ is either constant
+or also learned. There's no specific reason $$\pi$$ needs to be Gaussian,
+as long as the mean action has an analytic closed form.
+* For the $$i$$th term, let $$\bar{a} = \mu_\theta(s_i)$$.
+* For $$f(s, a)$$, let $$f$$ be an estimate of the Q-function $$Q_w(s,a)$$, where
+$$w$$ are the weights of $$Q_w(s,a)$$. We update $$w$$ in between computing and
+applying each policy gradient.
+
+This gives the final gradient.
+
+$$
+    g = \sum_i \mathbb{E}_{\tau|s_i}[(R_{i:\infty} - \bar{Q}_w(s_i,a_i))\nabla_\theta \log \pi(a_i|s_i)]
+    + \mathbb{E}_{\tau|s_i}[\nabla_a Q_w(s_i,a)|_{a=\mu(s_i)}\nabla_\theta \mu(s_i) ]
+$$
+
+(The paper interprets $$R_{i:\infty}$$ as the empirical Q-value. Under that
+interpretation, each gradient is scaled by the difference between the
+empirical and estimated Q-values.)
+
+TODO: explain extenstion to advantage estimation.
+
+Why go through all this effort to learn an action-dependent baseline? Intuitvely,
+if our baseline depends on both state and action, we can do a better job of
+"centering" the gradient. we can also learn $$Q_w$$ with off-policy data saved
+in a replay buffer, with standard Q-Learning.
+
+(A common choice of state-dependent baseline is a learned value function $$V$$.
+Why can't we learn $$V$$ with off-policy data? The problem is that it doesn't
+have the same self-consistency objective as the TD-error in Q-Learning, it requires knowing
+the action the current policy $$\pi$$ would take, which requires on-policy
+data collection.)
+
+Important note: Q-Prop is an approach for estimating the gradient. It says nothing
+about how to apply it. You can directly add the gradient with SGD, or you can use
+natural policy gradient, or TRPO.
+
+TODO: explain aggressive vs conservative Q-Prop.
