@@ -260,7 +260,7 @@ With parametrized Q-functions, we are no longer guaranteed to converge,
 
 TODO: add soft Q-Learning.
 
-## Natural Policy Gradient
+# Natural Policy Gradient
 
 Natural policy gradient is a special case of natural gradient, so let's
 explain that first.
