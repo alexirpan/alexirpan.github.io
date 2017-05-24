@@ -76,7 +76,7 @@ $$
 
 ## Expectation of Score Function is Zero.
 
-This will be important to variance reduction.
+REMEMBER THIS, IT'S IMPORTANT ALL OVER THE PLACE.
 
 $$
     \mathbb{E}_{a_i|s_i}\left[\nabla_\theta \log \pi(a_i | s_i)\right] =
@@ -137,7 +137,8 @@ $$
 (Can show this formally by writing out the conditional expectations, but it
 gets messy fast.)
 
-Right away, this lets us drop a few terms from the gradient.
+Right away, this lets us drop about half the terms from the gradient (from roughly
+$$n^2$$ to roughly $$n^2/2$$.)
 
 **Observation 2:** We can subtract a baseline function without biasing the gradient,
 as long as the baseline has certain properties.
@@ -219,10 +220,12 @@ In this case, the supremum is over state-action pairs $$(s,a)$$. For any
 $$(s,a)$$,
 
 $$
-    \mathcal{T}^{\pi}Q_1(s,a) - \mathcal{T}^{\pi}Q_2(s,a) =
-    r(s,a) + \gamma\mathbb{E}_\pi[Q_1(s',a') - (r(s,a) + \gamma\mathbb{E}_\pi(Q_2(s',a'))] =
-    \gamma \mathbb{E}_\pi[ Q_1(s',a') - Q_2(s',a') ] \le
+\begin{aligned}
+    \mathcal{T}^{\pi}Q_1(s,a) - \mathcal{T}^{\pi}Q_2(s,a) &=
+    r(s,a) + \gamma\mathbb{E}_\pi[Q_1(s',a') - (r(s,a) + \gamma\mathbb{E}_\pi(Q_2(s',a'))] \\ &=
+    \gamma \mathbb{E}_\pi[ Q_1(s',a') - Q_2(s',a') ] \\ &\le
     \gamma \sup_{s',a'} (Q_1(s',a') - Q_2(s',a'))
+\end{aligned}
 $$
 
 Therefore, $$\| \mathcal{T}^{\pi}Q_1 - \mathcal{T}^{\pi}Q_2 \|_\infty \le \gamma \|Q_1 - Q_2\|_\infty$$,
@@ -266,23 +269,27 @@ Natural policy gradient is a special case of natural gradient, so let's
 explain that first.
 
 Suppose we have some objective function $$\eta(\theta)$$ that's
-differentiable. When optimizing $$\eta(\theta)$$, Why do we step in
+differentiable. When optimizing $$\eta(\theta)$$, why do we step in
 direction $$\nabla_\theta \eta(\theta)$$? It's because the direction
 of steepest descent is the gradient. Quick argument follows.
 
 The direction of steepest descent is the $$d\theta$$ that solves
 
 $$
-\lim_{c\to 0} \max_{\|d\theta\|^2 \le c} \eta(\theta) - \eta(\theta + d\theta)
+\max_{\|d\theta\|^2 \le \epsilon} \eta(\theta) - \eta(\theta + d\theta)
 $$
 
-As $$c \to 0$$, the first order Taylor approximation gets more accurate, giving
+for sufficiently small $$\epsilon > 0$$.
+
+As $$\epsilon \to 0$$, the first order Taylor approximation gets more accurate, giving
 
 $$
-    \lim_{c\to 0} \max_{\|d\theta\|^2 \le c} \eta(\theta) - \eta(\theta + d\theta)
-    =\lim_{c\to 0} \max_{\|d\theta\|^2 \le c} \eta(\theta) - (\eta(\theta) + \nabla_\theta \eta(\theta) \cdot d\theta)
-    =\lim_{c\to 0} \max_{\|d\theta\|^2 \le c} -\nabla_\theta \eta(\theta) \cdot d\theta
-    =\lim_{c\to 0} \min_{\|d\theta\|^2 \le c} \nabla_\theta \eta(\theta) \cdot d\theta
+\begin{aligned}
+    \max_{\|d\theta\|^2 \le \epsilon} \eta(\theta) - \eta(\theta + d\theta)
+    &= \max_{\|d\theta\|^2 \le \epsilon} \eta(\theta) - (\eta(\theta) + \nabla_\theta \eta(\theta) \cdot d\theta) \\
+    &= \max_{\|d\theta\|^2 \le \epsilon} -\nabla_\theta \eta(\theta) \cdot d\theta \\
+    &= \min_{\|d\theta\|^2 \le \epsilon} \nabla_\theta \eta(\theta) \cdot d\theta
+\end{aligned}
 $$
 
 We can alternatively write the dot product as
@@ -292,8 +299,8 @@ $$
 $$
 
 where $$\alpha$$ is the angle between the two vectors. Since the gradient norm
-is constant, this is minimized when $$\|d\theta\| = c$$ and $$\cos\alpha = -1$$.
-This gives step direction $$-\nabla \eta(\theta)$$.
+is constant, this is minimized when $$\|d\theta\| = \epsilon$$ and $$\cos\alpha = -1$$.
+This gives step direction $$-\nabla \eta(\theta)$$, and update.
 
 $$
     \theta_{n+1} = \theta - \nabla \eta(\theta)
@@ -309,7 +316,13 @@ $$
 where $$G$$ is some symmetric positive definite matrix. The Euclidean norm is a special
 case of this, where $$G$$ is the identity matrix.
 
-Suppose we required the step direction to be $$\|d\theta\|_G^2 < c$$ instead.
+(Why is it sufficient to consider symmetric positive definite matrices?
+We care specifically about the quadratic form $$f(v) = v^TGv$$. For any non-symmetric
+$$A$$, you get the same function if you use $$(A + A^T)/2$$ instead, so
+for any quadratic form $$f(v)$$, there exists some equivalent
+symmetric positive definite matrix.)
+
+Suppose we required the step direction to be $$\|d\theta\|_G^2 < \epsilon$$ instead.
 Now what's the optimal step direction? Note that different directions have
 different maximum Euclidean norms, so the direction aligned with
 $$\nabla \eta(\theta)$$ may no longer be optimal.
@@ -321,10 +334,12 @@ Lemma: Every positive definite matrix $$G$$ is invertible.
 Proof: Suppose not. Then there exist $$u,v$$ such that $$Gu = Gv$$ and
 $$u \neq v$$. Equivalently, $$G(u-v) = 0$$ for some non-zero vector $$u - v$$.
 But then $$(u-v)^TG(u-v) = 0$$, contradicting the positive definite definition,
-so $$G$$ must be invertible.
+so $$G$$ must be invertible. $$\blacksquare$$.
+
+To get the step direction, we solve
 
 $$
-    \min_{d\theta, d\theta^TGd\theta \le c} \nabla_\theta \eta(\theta)^Td\theta
+    \min_{d\theta^TGd\theta \le \epsilon} \nabla_\theta \eta(\theta)^Td\theta
 $$
 
 Solve this constrained optimization problem through Lagrange multipliers.
@@ -332,16 +347,16 @@ To simplify notation let $$g = \nabla_\theta \eta(\theta)$$.
 At the solution $$d\theta$$, we must have
 
 $$
-    \nabla_{d\theta} (g \cdot d\theta - \lambda(d\theta^TGd\theta - c)) = 0
+    \nabla_{d\theta} (g \cdot d\theta - \lambda(d\theta^TGd\theta - \epsilon)) = 0
 $$
 
 Which gives
 
 $$
-    g - \lambda 2Gd\theta = 0
+    g - 2\lambda Gd\theta = 0
 $$
 
-Solving this gives
+Since $$G$$ is invertible, this has solution
 
 $$
     d\theta = \frac{1}{2\lambda}G^{-1}g
@@ -355,8 +370,8 @@ argues that we should instead take small steps in the space of probability
 distributions. We can do this by measuring distance with the
 Fisher information matrix.
 
-(At least, I think. I'm pretty sure this is not the most precise
-argument, but it's the one that makes sense to me.)
+(I'm pretty sure this argument is wrong in some subtle way, but it's
+approximately correct.)
 
 Natural policy gradient is the idea of natural gradient, applied to the
 policy gradient from REINFORCE. At a high level it's actually pretty
@@ -606,7 +621,7 @@ TODO: explain extenstion to advantage estimation.
 
 Why go through all this effort to learn an action-dependent baseline? Intuitvely,
 if our baseline depends on both state and action, we can do a better job of
-"centering" the gradient. We can also learn $$Q_w$$ with off-policy data saved
+"centering" the gradient. we can also learn $$Q_w$$ with off-policy data saved
 in a replay buffer, with standard Q-Learning.
 
 (A common choice of state-dependent baseline is a learned value function $$V$$.
@@ -614,3 +629,9 @@ Why can't we learn $$V$$ with off-policy data? The problem is that it doesn't
 have the same self-consistency objective as the TD-error in Q-Learning, it requires knowing
 the action the current policy $$\pi$$ would take, which requires on-policy
 data collection.)
+
+Important note: Q-Prop is an approach for estimating the gradient. It says nothing
+about how to apply it. You can directly add the gradient with SGD, or you can use
+natural policy gradient, or TRPO.
+
+TODO: explain aggressive vs conservative Q-Prop.
