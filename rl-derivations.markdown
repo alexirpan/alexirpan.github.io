@@ -5,16 +5,17 @@ permalink: /rl-derivations/
 ---
 
 
-*Last updated May 23, 2017*
+*Last updated May 24, 2017*
 
-A place for me to store the derivations of reinforcement learning
-results, because I keep forgetting them.
+Place for me to store notes on reinforcement learning, with a
+focus on the details of the derivations.
 
-This is a draft, and will probably stay at that level forever.
-Intended to be a reference for me - only posting publicly because
-there's a chance it's a useful reference for other people.
+This is a draft, and will never be more than a draft.
+Intended as a reference for me, may not be legible to other people.
+Only posting publicly in case other people find it useful.
 
-TODO: Add paper links for where I first encountered these proofs.
+TODO: Add paper links for where I first encountered these proofs,
+relevant papers, etc.
 
 # Table of Contents
 
@@ -377,10 +378,12 @@ with an adaptive learning rate to take the largest step it can within
 the trust region.)
 
 
-## Equivalent Formulations of Policies and Reward
+# Equivalent Formulations of Policies and Reward
 
 (Adapted from a mix of Generative Adversarial Imitation Learning
 and Trust-Region Policy Optimization.)
+
+## State Visitation / Occupency Measure
 
 The state visitation frequency is defined as the discounted
 sum of probabilities of visiting a given state.
@@ -482,3 +485,132 @@ $$
 $$
 
 completing the proof.
+
+# Q-Prop
+
+In REINFORCE, you can subtract a state-dependent baseline without biasing the
+gradient. The Q-Prop paper gives a way to subtract an action-dependent baseline.
+
+The argument is based on control variates, a variance reduction technique.
+The [Wikipedia page](https://en.wikipedia.org/wiki/Control_variates)
+is pretty good.
+
+Suppose we want to estimate $$\mathbb{E}[f(X)]$$. We can do so by sampling
+from $$X$$. Now, let $$g(X)$$ be another function, whose expectation
+$$\mathbb{E}[g(X)]$$ is known / can be computed analytically. Let
+$$\mathbb{E}[f(X)] = \mu$$ and $$\mathbb{E}[g(X)] = b$$. Then
+
+$$
+   f(X) + c (g(X) - b)
+$$
+
+also has expectation $$\mu$$ for any $$c$$. If $$f(X)$$ and $$g(X)$$ are
+correlated, a good choice of $$c$$ can make
+the variance of $$f(X) + c(g(X) - b)$$ lower than
+the variance of $$f(X)$$.
+
+To apply control variates to RL, recall that we showed the policy gradient was
+
+$$
+    g = \sum_i \mathbb{E}_{\tau|s_i}[R_{i:\infty}\nabla_\theta \log \pi(a_i|s_i)]
+$$
+
+We want to subtract an action dependent baseline $$f(s,a)$$. Next, we
+make an observation from the MuProp paper: first-order Taylor expansions make
+nice control variates. We'll see how the linear function makes the math nice.
+(Or at least, nicer. It's still pretty bashy.)
+
+Let $$f(s, a)$$ be some arbitrary function. Since each expectation is conditioned
+on $$s_i$$, it suffices to consider the Taylor expansion with respect to just
+$$a$$. Let $$\bar{a}$$ be some arbitrary action, depending only on $$s_i$$.
+The 1st-order Taylor expansion $$\bar{f}(s,a)$$ around $$(s_i, \bar{a})$$
+is
+
+$$
+    \bar{f}(s,a) = f(s_i, \bar{a}) + \nabla_a f(s_i, a)|_{a=\bar{a}}\cdot(a - \bar{a})
+$$
+
+We plan to compute
+
+$$
+    g = \sum_i \mathbb{E}_{\tau|s_i}[(R_{i:\infty} - \bar{f}(s_i,a_i))\nabla_\theta \log \pi(a_i|s_i)]
+    + \mathbb{E}_{\tau|s_i}[\bar{f}(s_i,a_i)\nabla_\theta \log \pi(a_i|s_i)]
+$$
+
+This is trivially equal to the original gradient, which leaves analytically
+computing the 2nd term. Think of this as the offset we need to re-add to the gradient
+to make the gradient estimator unbiased again.
+
+$$
+\begin{aligned}
+    \mathbb{E}_{\tau|s_i}[\bar{f}(s_i,a_i)\nabla_\theta \log \pi(a_i|s_i)]
+    =&\mathbb{E}_{\tau|s_i}[f(s_i,\bar{a})\nabla_\theta \log \pi(a_i|s_i)] \\
+    &+\mathbb{E}_{\tau|s_i}[\left(\nabla_a f(s_i, a)|_{a=\bar{a}}\cdot a_i\right)\nabla_\theta \log \pi(a_i|s_i)] \\
+    &-\mathbb{E}_{\tau|s_i}[\left(\nabla_a f(s_i, a)|_{a=\bar{a}}\cdot \bar{a}\right)\nabla_\theta \log \pi(a_i|s_i)]
+\end{aligned}
+$$
+
+In the first expectation, because $$\bar{a}$$ depends only on $$s_i$$, the
+scaling factor depends only on $$s_i$$, and therefore the
+expectation goes to $$0$$ (we can move $$f(s_i, \bar{a})$$ out of the expectation,
+then note expectation of the score function is $$0$$.)
+
+In the last expectation, the same is also true. $$\nabla_a f(s_i,a)|_{a=\bar{a}}\cdot \bar{a}$$
+depends only on $$\bar{a}$$, which only depends on $$s_i$$, and therefore can
+also move out of the expectation, and therefore that term goes to $$0$$ too.
+
+That leaves the middle expectation. At this point, note the expectation over $$\tau\vert s_i$$
+is the same as the expectation over $$a_i \vert s_i$$, since at this point no
+terms depend on other states or actions.
+
+$$
+\begin{aligned}
+   \mathbb{E}_{a_i|s_i}[\left(\nabla_a f(s_i, a)|_{a=\bar{a}}\cdot a_i\right)\nabla_\theta \log \pi(a_i|s_i)]
+   &=\int_{a_i}\pi(a_i|s_i)\left(\nabla_a f(s_i, a_i)|_{a=\bar{a}}\cdot a_i\right)\nabla_\theta \log \pi(a_i|s_i)\,da_i \\
+   &=\left(\nabla_a f(s_i, a)|_{a=\bar{a}}\right) \cdot \int_{a_i}a_i\nabla_\theta \pi(a_i|s_i)\,da_i \\
+   &=\left(\nabla_a f(s_i, a)|_{a=\bar{a}}\right) \cdot \nabla_\theta \int_{a_i} a_i\pi(a_i|s_i)\,da_i \\
+   &=\left(\nabla_a f(s_i, a)|_{a=\bar{a}}\right) \cdot \nabla_\theta \mathbb{E}_{a_i|s_i}[a_i]
+\end{aligned}
+$$
+
+Points of confusion I ran into: we're applying the same trick of $$p \nabla \log p = \nabla p$$.
+We're multiplying a $$dim(a)$$ vector by a $$dim(a) \times dim(\theta)$$ matrix
+to get a $$dim(\theta)$$ vector. (Recall we want the expectation to return
+an offset for the gradient with respect to $$\theta$$.)
+
+We've ended with multiplying the gradient w.r.t $$a$$ at $$\bar{a}$$ with the
+gradient w.r.t. $$\theta$$ of the mean action of policy $$\pi$$. From here,
+we can make a number of natural choices.
+
+* Let $$\pi_|theta(s) = \mathcal{N}(\mu_\theta(s), \Sigma)$$, where $$\mu_\theta(s)$$
+is some learned actor (some neural net), and $$\Sigma$$ is either constant
+or also learned. There's no specific reason $$\pi$$ needs to be Gaussian,
+as long as the mean action has an analytic closed form.
+* For the $$i$$th term, let $$\bar{a} = \mu_\theta(s_i)$$.
+* For $$f(s, a)$$, let $$f$$ be an estimate of the Q-function $$Q_w(s,a)$$, where
+$$w$$ are the weights of $$Q_w(s,a)$$. We update $$w$$ in between computing and
+applying each policy gradient.
+
+This gives the final gradient.
+
+$$
+    g = \sum_i \mathbb{E}_{\tau|s_i}[(R_{i:\infty} - \bar{Q}_w(s_i,a_i))\nabla_\theta \log \pi(a_i|s_i)]
+    + \mathbb{E}_{\tau|s_i}[\nabla_a Q_w(s_i,a)|_{a=\mu(s_i)}\nabla_\theta \mu(s_i) ]
+$$
+
+(The paper interprets $$R_{i:\infty}$$ as the empirical Q-value. Under that
+interpretation, each gradient is scaled by the difference between the
+empirical and estimated Q-values.)
+
+TODO: explain extenstion to advantage estimation.
+
+Why go through all this effort to learn an action-dependent baseline? Intuitvely,
+if our baseline depends on both state and action, we can do a better job of
+"centering" the gradient. We can also learn $$Q_w$$ with off-policy data saved
+in a replay buffer, with standard Q-Learning.
+
+(A common choice of state-dependent baseline is a learned value function $$V$$.
+Why can't we learn $$V$$ with off-policy data? The problem is that it doesn't
+have the same self-consistency objective as the TD-error in Q-Learning, it requires knowing
+the action the current policy $$\pi$$ would take, which requires on-policy
+data collection.)
