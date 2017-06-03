@@ -4,21 +4,39 @@ title:  "Sometimes I Think About AI Safety and I Get Depressed For a Bit"
 date:   2017-05-02 01:14:00 -0700
 ---
 
-*These are my personal opinions. They do not reflect the opinions of anybody
-I have worked with. AI safety gets very sensitive very fast, and I
-want to make __extra__ sure that people are aware of this.*
+I've been trying to write this post for almost a year.
 
+That doesn't mean I've been actively writing that whole time. It's more
+like a constant nagging feeling, that refuses to go away.
 
-I feel like the conversations people have about AI are broken. Or to be more
-specific, they're broken in ways that make me disengage from any conversations
-about AI safety, and that feels like a problem.
+I wrote a draft 6 months ago (CHECK TIME), then erased the whole thing out
+of disgust. I have notes jotted down 8 months ago that I don't fully endorse
+anymore.
+
+Everything's jumbled, a giant cacophony of latent beliefs and hazy thoughts.
+At this point, I just want it to be *done*, because I'm sick of bottling
+up my monologues. The problem is that my opinions on the subject are tied
+to so much of my life that it's hard to look at them, even subjectively.
+
+I can't even write this unless I make the following very, very clear.
+
+* These are my opinion as of the time of this post (May 29, 2017), and
+my feelings are very likely to change.
+* These are my personal opinions - they do not reflect the opinions of
+anybody I have worked with or any organization that has employed me.
+* No, seriously, **these opinions are mine.** If you don't realize how
+sensitive talking about AI safety is...well, hopefully I can explain it.
+
+\* \* \*
+{: .centered }
+
+I feel like the conversations people have about AI are broken.
+
+To be more specific, they're broken in ways that make me actively avoid most
+online discussion about AI. This is definitely a problem.
 
 Throughout this essay, I'll use "the strawman rationalist". The strawman
 rationalist will be denoted by *italics*. The strawman rationalist is not
 fair. It does not match any self-described rationalist I know. It's more
 like an amalgam of all the negative rationalist stereotypes I can think of.
-
-\* \* \*
-{: .centered }
-
 
