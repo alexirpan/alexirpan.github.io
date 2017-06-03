@@ -30,13 +30,116 @@ sensitive talking about AI safety is...well, hopefully I can explain it.
 \* \* \*
 {: .centered }
 
-I feel like the conversations people have about AI are broken.
+The core premise of AI safety discussion is that artificial intelligence
+is a transformative technology, that could either improve everyone's
+lives, or perpetuate inequality, and in the worst case scenarios, end
+the human race.
 
-To be more specific, they're broken in ways that make me actively avoid most
-online discussion about AI. This is definitely a problem.
+This is a controversial topic, for obvious reasons, and an annoying
+topic to discuss, for less obvious reasons.
+
+To me, it's been incredibly frustrating to read conversations about AGI.
+They feel broken, in ways that make me actively avoid joining in.
+
+The thing about AI is that it captures the imagination. At times it feels
+like everyone has an opinion on what "intelligence" means, whether it
+can really be created artificially, whether AGI is possible or not.
+No wonder everyone says they do machine learning instead of AI - it's
+less of a buzzword. (Although that's not saying much.)
+
+So on one hand, there's a group of people who aren't very informed on the
+field. On any article about AI, they bring up Skynet, Terminators, or HAL.
+It gets old really fast, but I'm generally fine with this. Not everyone
+is going to understand machine learning, and I broadly don't expect
+uninformed people to know any better. In the same vein, I recognize that
+my opinion on literary theory, biology, and any chemistry/physics past
+the high school level is complete, utter garbage.
+
+On the other hand, there are the debates about the existential risk of AI,
+usually from people in some union of the effective altruism and rationalist
+communities, and those debates are where most of my frustration comes from.
+
+Broadly, it's because it feels like they should know better. It feels like
+a lot of the discussion is at a high level, uses imprecise definitions to
+make broad claims, and to me both those communities pride themselves on
+carefully considering all sides of the argument - except, seemingly, for
+AI safety.
+
+I know this isn't a fair portrayal of the community. That's part
+of the problem.
+
+\* \* \*
+{: .centered }
+
+Like a lot of other people, I was introduced to the community
+through Harry Potter and the Methods of Rationality. I was a bored
+high school kid, and I liked Harry Potter, so it just kind of happened.
+Ever since then, I've been circling the community - first by reading the
+occasional LessWrong post, and nowadays through whatever shows up in
+my Facebook feed.
+
+Around that time was when I first started reading some arguments people had
+about superhuman AI, that felt like neat stories, but didn't feel like things
+I needed or wanted to care about.
+
+But nowadays, when people talk about parables of AI safety, I just get
+sick of it.
+
+By this point I've read at least three "rationalist fanfics" that were basically
+all AI safety parables. Oh look, you tell an AI to make lots of paperclips and
+it invents nanotech and converts all matter to paperclips. Hence, paperclip
+optimizer. Oh look, you tell an AI to write lots of notes and it hides its
+intelligence to fool people into thinking it's not very smart, then kills the
+human race with neurotoxin to stop it from writing lots of notes. Bam, the
+scenario from Tim Urban's Wait but Why. Oh look, you tell an AI to
+"maximize happiness of the game's players" and it manipulates all the humans until
+they play the game. Oh look, Santa's elves are real, and if you ask them to make
+people happen they create wireheading and have to be talked out of it by
+The Sane Person Who Knows This Is a Bad Idea. *I get it, I got it the first
+time.* And I know you're telling these parables because you think the ideas
+are important, and I know some people are reading about paperclip optimizers
+for the first time, but isn't it natural to get sick of paperclip optimizers
+the 5th time through?
+
+I watched Ex Machina because people hyped it up as great. It was a good movie,
+but not for me. To me it felt like it was presenting a bunch of old ideas
+as if they were new. I didn't need to hear Yet Another Debate About The Chinese
+Room Thought Experiment because *I really don't care.*
+
+Really, that's the crux of the problem I have about EAs and rationalists.
+The organizing principle of EAs is that you can have much larger impact if
+you donate according to careful argument instead of what feels right.
+The organizing principle of rationalists is that the human brain is horribly
+horribly broken, and it's worth trying to optimize your life, even if you're
+never going to be perfect.
+
+But in practice, it feels like the organizing principle is for people to
+endlessly debate the merits of different causes, different organizations,
+and the right way to live your life. 
 
 Throughout this essay, I'll use "the strawman rationalist". The strawman
 rationalist will be denoted by *italics*. The strawman rationalist is not
 fair. It does not match any self-described rationalist I know. It's more
 like an amalgam of all the negative rationalist stereotypes I can think of.
+
+Depending on the circumstance, I can pass as an EA or as a rationalist.
+If I want people to think I'm an effective altruist, 
+I talk about the marginal utility of money, or Against Malaria Foundation,
+or animal suffering. If I want people to think I"m a rationalist, I can
+play up cognitive biases, and talk about different x-risks, or ways
+to exploit comparative advantages in the market.
+
+The thing is, I'm neither? I'm not an effective altruist, and I'm not
+a rationalist.
+
+"But, you went to EAGxBerkeley, then went to EA Global, then went to
+a Slate Star Codex meetup hosted at the CFAR office, *and then went
+to a CFAR workshop*. How are you *not* an EA or a rationalist?"
+
+And I mean, that's all true, but when I say I'm not an EA, and not
+a rationalist, it feels right.
+The thing is, I don't consider myself to be an effective altruist, and
+I don't consider myself to be a rationalist. I'm merely a bystander to
+both movements.
+
 
