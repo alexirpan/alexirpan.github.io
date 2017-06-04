@@ -191,8 +191,49 @@ decide to kill all humans.
 But really, this is a long chain of reasoning that can be better summarized
 this way.
 
-* If you try to blindly optimize an objective, you can get lots of unexpected
-behavior. When humans optimize for something, they usually follow some implicit
-ethical rules. An AI that optimizes for something without ethics will produce
-lots of unexpected behavior, some of which could involve destroying the
-entire world.
+* Blindly optimizing an objective can lead to lots of unexpected behavior.
+* When humans optimize for something, they usually follow some implicit
+ethical rules.
+* An AI that optimizes for something may not have those implicit ethics,
+leading to lots of unexpected behavior, some of which could include
+killing all humans.
+
+My broad view at this time is that the argument behind AI safety is worth
+taking seriously. MIRI's agenda seems focused on exclusively thinking
+about ways to constrain superhuman systems, under the thesis that it's a very
+different problem from contraining current ML systems. I'm skeptical any of
+MIRI's work will end up being useful down the line, but that doesn't mean
+I want them to stop.
+
+What I do want to stop, however, is the vaguely adversarial way people on both
+sides have framed the AI safety debate. It's not overt or anything, more like
+a collection of snide remarks and jokes I hear now and then. A person from MIRI,
+saying that at least 2 professors take them seriously, one of whom is
+well-respected. Another person from MIRI, joking that giving DeepMind tons
+of compute power may have been a bad idea. An effective altruist, contrasting
+the money going into AI vs the money going into AI safety. Two people have
+independently joked that if AGI is imminent, maybe we need kill all the AI
+researchers, which really stops being funny when you're one of those
+researchers.
+
+On the flip side, a lot of established ML people have criticized people
+for bad reasons. They have weird opinions on some basilisk thing,
+why should I listen to these people. He's a professor of philosophy, I'll
+listen to people who do more ML.
+
+The thing is, I broadly agree with the argument for AI safety, if you assume
+a sufficiently powerful AI. And furthermore, none of the ML researchers I know
+dispute the argument, given the premise.
+If you do enough reinforcement learning, it's
+obvious that reward function design is really hard, because of how easy it
+is to get stuck at local optima. If you blindly optimize training set loss,
+you overfit to the data. If everyone designs algorithms and tests them on
+32 x 32 CIFAR images, they're not going to generalize as well because people
+have trial-and-errored there way to methods that only work well on CIFAR.
+A common metric in NLP is BLEU, which you can optimize with RL, but if you
+do so you don't get better human-graded performance.
+
+People do things like debate the orthogonality thesis, or debate whether
+an AI can convince a human to let it out of the box, but these are debates
+about systems that don't exist yet, and so they quickly turn into unverifiable
+philosophy.
