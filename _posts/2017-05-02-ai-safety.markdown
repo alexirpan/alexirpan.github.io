@@ -115,12 +115,18 @@ never going to be perfect.
 
 But in practice, it feels like the organizing principle is for people to
 endlessly debate the merits of different causes, different organizations,
-and the right way to live your life. 
+and the right way to live your life. That's fine, but sometimes I feel like
+people are more interested in philosophy than the original question.
+I can understand why. Philosophy is fun in moderation, but not much more than
+that.
 
-Throughout this essay, I'll use "the strawman rationalist". The strawman
-rationalist will be denoted by *italics*. The strawman rationalist is not
-fair. It does not match any self-described rationalist I know. It's more
-like an amalgam of all the negative rationalist stereotypes I can think of.
+An aggressive reductionist desire to categorize and name everything about
+the world. (It's not a coincidence that people who do math end up intersecting
+in these circles a lot - all of math runs on this kind of thinking.)
+
+
+\* \* \*
+{: .centered }
 
 Depending on the circumstance, I can pass as an EA or as a rationalist.
 If I want people to think I'm an effective altruist, 
@@ -142,4 +148,51 @@ The thing is, I don't consider myself to be an effective altruist, and
 I don't consider myself to be a rationalist. I'm merely a bystander to
 both movements.
 
+\* \* \*
+{: .centered }
 
+Throughout this essay, I'll use "the strawman rationalist". The strawman
+rationalist will be denoted by *italics*. The strawman rationalist is not
+fair. It does not match any self-described rationalist I know. It's more
+like an amalgam of all the negative rationalist stereotypes I can think of.
+
+Now, given how awful the strawman rationalist is, why do I keep him around?
+He's always smug, always insufferable, always tries to find a new reason
+to ignore arguments that machine learning could possibly end okay, and believesg[M ^
+that he and his cohort are the only people who are doing anything meaningful
+to protect people. To the strawman, everyone else is a well-meaning but
+misguided idiot, but I'm not, oh no I'm not, because I've read the Sequences!
+
+I keep him around because despite how crazy he is, he still manages to give
+good insights.
+
+The rough arguments for AI safety are
+
+* At some point, there will be an AI that can do any task better than
+a human can.
+* There is some chance such an AI can repeatedly discover new technological
+advances, and apply those advances to itself to improve itself at an
+astonishing rate.
+    * This doesn't have to be exponential, it just has to be fast enough.
+    * It's assumed that a single
+    technological advance follows a sigmoid curve - there is a slow increase
+    as the technology is tested, then a rapid period of innovation, then a
+    slowdown as people realize the limits of the technology. The argument
+    is that if you achieve a lot of technological advances quickly, a
+    chain of iterated sigmoids starts to approach a near-expoential curve.
+* A human will eventually ask such an AI to do something.
+* Almost all things are easier if you can think faster, so the AI will
+decide to improve itself as much as it can.
+* Almost all things are easier if you're alive, so the AI will decide to
+minimize the chance anybody disables it.
+* Therefore, if a sufficiently smart AI is asked to do something, it may
+decide to kill all humans.
+
+But really, this is a long chain of reasoning that can be better summarized
+this way.
+
+* If you try to blindly optimize an objective, you can get lots of unexpected
+behavior. When humans optimize for something, they usually follow some implicit
+ethical rules. An AI that optimizes for something without ethics will produce
+lots of unexpected behavior, some of which could involve destroying the
+entire world.
