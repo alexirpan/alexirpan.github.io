@@ -237,3 +237,37 @@ People do things like debate the orthogonality thesis, or debate whether
 an AI can convince a human to let it out of the box, but these are debates
 about systems that don't exist yet, and so they quickly turn into unverifiable
 philosophy.
+
+
+Rough notes for things I want to bring up.
+
+* Some people are first introduced to cognitive biases and Bayesian thinking
+through the rationalist community. I think some then make the mistake of
+assuming that these insights are *unique* to rationalists. The collection
+of all the ideas in one place is special, but the ideas themselves are not.
+I feel this is why I've been so skeptical of the community - it feels
+too insular, in the way everybody cites everybody else because they only
+want to cite trustworthy EAs or rationalists, with a seeming lack of awareness
+of how ridiculous they look to outsiders.
+* The general feeling of "this is totally cult behavior", social pressure
+to agree with The Hot New Thing or to feel like A Member Of The Resistance.
+* Why AI safety in particular, versus any other X-risk like nuclear proliferation,
+climate change, alien invasion, bioterrorism, preventing creating of
+nanotechnology, etc?
+* It is okay for some people to be passionate about X-risk, and for some people
+to be passionate about other things. The part I can't stand is "when people
+mistake their cause for a religion"
+* "Introduced to these ideas, and then you're stuck in the convex hull of ideas / the
+convex hull of trust, and soon you don't trust anybody else."
+    * Some people do this, but the loudest are the most fanatic, and it feels
+    like the most fanatic don't. Or they've been so disappointed that they just
+    give up on talking to any other people.
+    * The example of the AI safety paper that has a citation of "I don't like
+    discussing AI safety with people who haven't read Superintelligence"
+* Concern that people advocating for AI safety are doing so for charlatan
+reasons (that they don't actually believe in the dangers, they just want to play
+up the dangers to get money.)
+    * I'm pretty sure this isn't true for most people.
+* The feeling that I had when reading the Open Phil grant - it sounds like
+you're giving OpenAI money because in some philosophical thought experiment,
+they agreed with your viewpoint. This seems like a really, really weak reason.
