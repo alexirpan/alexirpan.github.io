@@ -234,7 +234,9 @@ Look, you'll need to do hyperparam tuning anyways.
 When tuned well, I'd expect the difference between various methods to be pretty low.
 
 (If you want to be extra brave, you could try [batch renormalization](https://arxiv.org/abs/1702.03275).
-Unfortunately it still has moving averages that are only used at test time.)
+Unfortunately it still has moving averages that are only used at test time.
+**EDIT (June 7, 2017): multiple people, including some of the paper authors,
+have told me this is incorrect. They're right, ignore this paragraph.**
 
 In my case, I can't afford to switch from batch norm. Previous
 state of the art used batch norm, so I know it works, and I've already paid

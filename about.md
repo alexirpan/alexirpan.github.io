@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-*Last updated May 4, 2017.*
+*Last updated June 7, 2017.*
 
 In 2016, I graduated from the Computer Science undergraduate program at UC
 Berkeley, with a 4.0 in major GPA. I currently work at Google on the Brain
@@ -32,8 +32,6 @@ of my life and stupid jokes.
 I post whenever I have the time to, meaning not very often.
 (Disclaimer: the views expressed here are my own, not those of my employer.)
 
-I play Dominion competitively,
-watch lots of *My Little Pony: Friendship is Magic*, and like participating in
-puzzle hunts.
-To find other interests, browse the site.
-I'm sure you'll turn up something.
+I play Dominion at a competitive level (peaked at top 25),
+like participating in puzzle hunts, and actively follow *My Little Pony: Friendship is Magic*.
+For other interests, browse the site. I'm sure you'll find something.
