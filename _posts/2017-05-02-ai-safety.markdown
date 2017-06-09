@@ -271,3 +271,40 @@ up the dangers to get money.)
 * The feeling that I had when reading the Open Phil grant - it sounds like
 you're giving OpenAI money because in some philosophical thought experiment,
 they agreed with your viewpoint. This seems like a really, really weak reason.
+
+The general trend I've noticed is that some people like to rant about rationalists.
+But over time, it turns out they rant specifically about Yudkowsky and people
+with similarly weird beliefs to him. And that they appreciate the people who
+don't seem to take the whole thing as seriously - people who don't feel the
+need to talk about Bayes Theorem and utilitarianism all the time.
+
+Once, a friend on Facebook asked (CHECK),
+
+> Aliens have just visited Earth, and they ask for 10 people to represent all
+> of humanity. Who do you pick?
+
+One commenter said Bostrom should obviously be one of them. And I remember thinking
+that this was an oddly controversial pick, unless you were in the in-group.
+
+Yes, I know you've seen the skulls. Yes, I know that some people in these groups
+are aware their beliefs are fluid. Yes, I've read CFAR's mission statement:
+beliefs, weakly held, but acted on anyways.
+
+The problem is that it's not clear these virtues are universalized, it's not clear
+this is common knowledge, and people view rationalists as much more homogenous
+than they actually are.
+
+This isn't actually that weird, when you think about it. Let me put it this way:
+I decided to read three "rationalist fanfic" stories, and they all indepedently
+decided they needed to explain the many worlds interpretation of quantum
+mechanics in laymans terms. They also all felt the need to talk about characters
+"making updates about the world". Then there was simulation hypothesis, then
+wireheading, then cryonics.
+
+Do you realize how condescending it is, to see somebody say they're the only
+people making a difference, and that the rest of us are just along for the ride,
+like so much chaff? The implicit assumption that everyone outside of the rationalist
+in-group is an idiot? 
+
+Do you know what my strawman rationalist says in response? "We say that because
+it's true. Don't you know? Denying the truth doesn't make it any less true."
