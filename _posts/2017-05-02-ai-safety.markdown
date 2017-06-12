@@ -20,43 +20,50 @@ sure it justifies the vitriol / drama that surrounds it.
 \* \* \*
 {: .centered }
 
+*Opinion as of June 2017.*
 
-I've been trying to write this post for almost a year.
+*These are my personal opinions, and don't reflect the opinions of
+any organizations I've worked with.*
 
-That doesn't mean I've been actively writing that whole time. It's more
-like a constant nagging feeling, that refuses to go away.
+I've been trying to write this post for over a year.
 
-I wrote a draft 6 months ago (CHECK TIME), then erased the whole thing out
-of disgust. I have notes jotted down 8 months ago that I don't fully endorse
-anymore.
+There are some notes from 8 months ago that I don't agree with anymore.
+There was a draft from 6 months ago, which I deleted out of disgust.
 
-Everything's jumbled, a giant cacophony of latent beliefs and hazy thoughts.
-At this point, I just want it to be *done*, because I'm sick of bottling
-up my monologues. The problem is that my opinions on the subject are tied
-to so much of my life that it's hard to look at them, even subjectively.
+All my feelings on this subject are...jumbled. A cacophony of latent
+beliefs, hazy thoughts, and lots and lots of frustration at my inability to
+explain things to myself. At this point, I just want it to be *done*,
+because I'm sick of bottling up monologues.
 
-I can't even write this unless I make the following very, very clear.
-
-* These are my opinion as of the time of this post (May 29, 2017), and
-my feelings are very likely to change.
-* These are my personal opinions - they do not reflect the opinions of
-anybody I have worked with or any organization that has employed me.
-* No, seriously, **these opinions are mine.** If you don't realize how
-sensitive talking about AI safety is...well, hopefully I can explain it.
+so here goes.
 
 \* \* \*
 {: .centered }
 
-The core premise of AI safety discussion is that artificial intelligence
-is a transformative technology, that could either improve everyone's
-lives, or perpetuate inequality, and in the worst case scenarios, end
-the human race.
+The core premise of AI safety discussion is that AI and machine learning
+are transformative technologies that could radically change society.
+People's lives could get a lot better, or a lot worse. In the most
+pessimistic scenarios, AGI kills all life on Earth, then kills all life
+in the galaxy in a speed-of-light wave of death.
 
-This is a controversial topic, for obvious reasons, and an annoying
-topic to discuss, for less obvious reasons.
+Whether that's going to happen or not is a controversial topic, to put
+things mildly.
 
-To me, it's been incredibly frustrating to read conversations about AGI.
-They feel broken, in ways that make me actively avoid joining in.
+Like all controversial topics, there are thousands and thousands of pages
+of discussion, scattered across the Internet. I generally avoid joining
+any of them, because by the time I finish reading them, I get turned off
+and leave.
+
+That feels like a problem. Let's dig in and do some...*introspection.*
+
+![Panel from SMBC comic about introspection](/public/ai-safety/introspection.png)
+{. centered }
+
+Source: [SMBC](http://www.smbc-comics.com/comic/2011-04-25)
+{: .centered }
+
+\* \* \*
+{: .centered }
 
 The thing about AI is that it captures the imagination. At times it feels
 like everyone has an opinion on what "intelligence" means, whether it
