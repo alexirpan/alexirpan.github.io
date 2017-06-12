@@ -4,6 +4,23 @@ title:  "Sometimes I Think About AI Safety and I Get Depressed For a Bit"
 date:   2017-05-02 01:14:00 -0700
 ---
 
+OUTLINE
+
+1. Complaints about the state of conversation around AI safety.
+2. Summarize the stereotypical argument about superintelligence (link a
+bunch of things about it here.)
+2a. I'm not sure how necessary this is. It might not be needed.
+3. Complaints about the common rationalist point of view (fair portrayal
+or not).
+4. Complains about the ML point of view (fair portrayal or not.)
+I don't know if these should be separated - the thing I want to emphasize
+is that there are several reasons to disagree with someone, but I'm not
+sure it justifies the vitriol / drama that surrounds it.
+
+\* \* \*
+{: .centered }
+
+
 I've been trying to write this post for almost a year.
 
 That doesn't mean I've been actively writing that whole time. It's more
@@ -308,3 +325,57 @@ in-group is an idiot?
 
 Do you know what my strawman rationalist says in response? "We say that because
 it's true. Don't you know? Denying the truth doesn't make it any less true."
+
+\* \* \*
+{: .centered }
+
+Another frustrating thing is the heavy, heavy focus people in AI safety have
+on timelines.
+
+Now, before I complain, I'll admit that this makes sense, and that I'm not sure
+there are better alternatives.
+
+On the other hand, a lot of people I know don't like making predictions about
+the long term trends of technology. I don't like to do this either, because
+of how hard it is to predict technological progress.
+
+It feels like people are reading tea leaves, and every paper's another leaf.
+I've noticed a strong allergy against making any predictions too far out into
+the future, because even the short term progress is hard, and it's hard to
+estimate the difficluty of problems, and people don't want to overpromise
+and underdeliver because hype is so easy to create and so difficult to keep
+in check.
+
+So, when I see articles about neural cryptography, and people talking about
+steganography in AGI, or somebody releases WaveNet and somebody speculates on
+when we'll see an AI-generated pop song hit the Billboard top 100, a part of
+me dies.
+
+I think a lot of times, when a big company releases a blog post on a neat
+ML paper, people try to interpret what the point of it is, why it'll make
+money, and so on. And in my experinece, most research happens because people
+think it's really, really cool to see what's doable. This applies to all fields
+of research, by the way. I was talking to one person about AI safety, and she
+told me that although she kept seeing people say they wanted to do AI safety for
+utilitarian reasons, she didn't feel she was utilitarian. She was just super,
+super interested in mathematical models of cognition. AI safety let her
+study those problems in a context that could be important, down the line.
+
+This is my impression of a lot of AI safety research. People get incredibly
+drawn to the problem, find it fascinating, and then try to funnel their
+abilities into something that's vaguely safety-like. Researchers from MIRI
+come from a pure math background, with focus on mathematical logic and
+metamathematics, and that leads to them releasing work on self-reflective
+Turing Machines and probabilistic proof systems.
+
+This is the other reason I have trouble taking any arguments out of MIRI
+too seriously - part of me always suspects that their arguments are partially
+post hoc justifications to align their research abilities with their
+research trajectory. Everyone does this - the joke in public health is that
+everyone has a good argument for why their cause is important to deal with.
+Researchers always work on problems that seem important to them, and they're
+also always telling people why it's important to them, and the problem I have
+is when people get too dogmatic on why *you and you and you and you* should
+be working on the same thing.
+
+\* \* \*
