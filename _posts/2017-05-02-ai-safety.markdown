@@ -386,3 +386,31 @@ is when people get too dogmatic on why *you and you and you and you* should
 be working on the same thing.
 
 \* \* \*
+
+There are many reasonable arguments, many of which have competing conclusions.
+I could just as easily believe something else, and it's mostly luck that changes
+which argument I see first. So it feels wrong to commit too strongly to any
+particular action, or to advocate for anything very strongly.
+
+And, again, this isn't a unique viewpoint: Nick Bostrom gave a talk on this,
+giving an example of how a person argues themself into and out of voting
+for someone. (LOOK IT UP). Eventually he concludes with saying that you
+probably should put more penalty on committing to specific arguments, especially
+with regards to x-risk (CHECK IF THIS CONCLUSION ACTUALLY HOLDS UP.)
+
+So, you know. I'd like to think that fundamentalist rationalists at least keep
+things like this in mind, but I'm not sure they do.
+
+\* \* \*
+
+Now, of course, I'm not sure these claims actually apply to anybody.
+
+On average, the people I've met that have relations to LessWrong in some way
+are generally alright.
+
+Really, it seems like the problem is perception. For better or worse, the ideas
+that pull the community together also attract a lot of weirdness. Is that bad?
+Well, no, not if you're okay with weird. Some people aren't okay with weird.
+And the weird people also tend to be the loudest or the most likely to speak
+up, and soon you hit the classic filter bubble problem - the people who talk
+aren't representive of the people who exist.
