@@ -5,56 +5,47 @@ date:   2017-06-18 00:52:00 -0700
 ---
 
 Similar to Wasserstein GAN, this is another theory-motivated paper with neat
-applications to deep learning. Once again, the paper has a lot of theory, but
-if you allow for some looseness in rigor, the core idea isn't too difficult
-to implement.
+applications to deep learning. Once again, if you are looking for details on
+all the proofs, you are better off reading the original paper. The goal
+of this post is to give background and motivation for the approach.
 
-This, by the way, is the general trend with many theory papers - the
-algorithm isn't that bad, but the runtime proof is complicated. If you're looking
-to do theory, you should read the paper. If, however, you're just looking to
-apply the method, keep reading.
 
 Why Is This Paper Important?
 ----------------------------------------------------------------------
 
-I really, really don't like doing hyperparam optimization. Nobody does. It's
-grunt work that's required to get the best results, and it has to be done, but
-that doesn't mean I like doing it.
+For one, I really don't like doing hyperparam optimization. It has to be done,
+but that doesn't mean I have to like it. So, I like to keep an eye on
+hyperparam optimization papers. Even if I never have the time to implement
+them, they're usually fun to think about - you get a lot of interesting problems
+when point queries take hours or days to compute. It's like a version of the
+robotics problem - real world robot data is ridiculously expensive to generate.
 
-Because of this, I try to keep an eye on the hyperparam optimization space.
-For one, anything that lets me spend less time on hyperparam optimization makes
-me happy, because it means I can get to the parts of research I actually like.
+Additionally, there's been a growing trend towards metalearning recently. The
+Neural Architecture Search paper made a big splash, and although we aren't at
+the point where meta-learned models always outperform hand-tuned models, it's
+looking more likely.
 
-Also, I think it's always worth keeping an eye on the current state of
-black-box optimization and meta-learning.
 
-Some Quick Background
+Some Quick Background on Hyperparam Optimization
 ---------------------------------------------------------------------
 
 For two approachable introductions to the subject, I highly recommend two blog
 posts from Ben Recht's blog, linked [here](http://www.argmin.net/2016/06/20/hypertuning/)
-and [here](http://www.argmin.net/2016/06/23/hyperband/). They're very short,
-but if you're really lazy, here's my summary.
+and [here](http://www.argmin.net/2016/06/23/hyperband/). The key takeaways are
 
-* One simple benchmark for hyperparam optimization is random search. This can
-be really difficult to beat. Random search can't exploit any existing structure
-in the problem, but it also means it can't get exploited by pathological
-problems.
-* Another common approach is Bayesian optimization, where you fit a distribution
-(i.e. a mixture of Gaussians)
-based on the data so far, sample a new point based on uncertainty and estimated
-performance, and update the distribution.
-* In practice, Bayesian optimization does a bit better than random search, but
-not by a lot, and is often outperformed by simply running random search at twice
-the speed. Yes, the random search gets more compute time, but sometimes it's a
-lot easier to just ask for another computer.
-* One way to speed up random search is by doing *successive halving*. The idea
-of this approach is, you run $$N$$ hyperparam settings at once. After running
-each for time $$T$$, stop the bottom half runs and keep going. After running
-each for time $$2T$$ total, stop the bottom half, and keep going again. By
-repeatedly pruning bad runs, you get to try more settings in the same amount
-of computation time. This is later extended to the Hyperband algorithm,
-described [here](https://arxiv.org/abs/1603.06560).
+* Random search is a simple, deceptively strong baseline.
+* Bayesian optimization (i.e. fitting a Gaussian mixture model)
+can outperform random search by a bit.
+* However, Random Search run twice as fast beats a lot of Bayesian optimization
+methods. Yes, it's more compute time, but sometimes buying more machines is
+easier than implementing clever ideas.
+* Successive halving (SH) is a nice extension of random search that lets you try
+many more hyperparams in the same amount of time. It does this by pruning
+runs that have poor performance early on. You have to be a little careful with
+how aggressively you prune, but in practice it's pretty easy to beat Random
+Search.
+SH was later extended to the
+Hyperband algorithm, described [here](https://arxiv.org/abs/1603.06560).
 
 
 Problem Setting
@@ -357,7 +348,7 @@ For example, there are 8 learning rate options, which are decided by 3 binary
 hyperparams.
 
 Harmonica is evaluated with 300 samples at each stage (meaning 300 trained models),
-with maximum degree $$d = 3$, sparsity $$s=5$$, and restriction size $$t=4$$.
+with maximum degree $$d = 3$$, sparsity $$s=5$$, and restriction size $$t=4$$.
 PSR is done for 2 stages, then successive halving is used for the final
 hyperparam optimization.
 
