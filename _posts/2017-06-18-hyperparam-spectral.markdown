@@ -155,7 +155,7 @@ Why is this an orthonormal basis? A set $$\{f_1, f_2, \ldots, f_n\}$$
 is orthonormal if it satisfies two properties.
 
 * For every $$f_i$$, $$\langle f_i, f_i \rangle = 1$$.
-* For every $$f_i, f_j$$ where $$i \neq j$$, $$\lange f_i, f_j \rangle = 0$$.
+* For every $$f_i, f_j$$ where $$i \neq j$$, $$\langle f_i, f_j \rangle = 0$$.
 
 Now, we show the parity functions have this property.
 
@@ -163,7 +163,7 @@ Now, we show the parity functions have this property.
 that $$f_i(x) = -1$$ or $$f_i(x) = 1$$, depending on how many bits of $$x$$
 match. In either case, $$f_i(x)^2 = 1$$ for all $$x$$, $$\langle f_i, f_i \rangle = 1$$.
 * For any two different subsets $$S_1, S_2$$, there exists some $$i$$ in one,
-but not the other. Without loss of generality, let $$i in S_1$$ and $$i \not\in S_2$$.
+but not the other. Without loss of generality, let $$i \in S_1$$ and $$i \notin S_2$$.
 We can write $$f_{S_1}(x)$$ as
 
 $$
@@ -219,7 +219,7 @@ $$
 
 At this point, we draw a comparison to Fourier series. Any periodic
 signal $$s(t)$$ can be decomposed into a sum of sinusoids, because the sinusoids
-$${1, \sin(t), \cos(t), \sin(2t), \cos(2t), \ldots \}$$ form an
+$$\{1, \sin(t), \cos(t), \sin(2t), \cos(2t), \ldots \}$$ form an
 orthonormal basis. Intuitively, the earlier terms represent low-frequency
 components of the signal, and the later terms represent high-frequency
 components. To reconstruct $$s(t)$$ exactly, we should do
@@ -281,4 +281,130 @@ $$
 
 This gives the main subroutine, called Polynomial Sparse Recovery.
 
+![PSR algorithm](/public/hyperparam-spectral/psr.png)
+{: .centered }
+
+When called, it returns a sparse polynomial, and all variables that are used
+in the sparse polynomial.
+
+
+Runtime Bound For Subalgorithm
+----------------------------------------------------------------------------
+
+To be honest, I only skimmed the proof for the runtime bound. It looks like a
+mix of Chebyshev's inequality, Parseval's identity, clever rearrangement,
+prior work on sparse recovery.
+
+More relevantly, here is the theorem statement.
+
+> Let $$f$$ be an $$(\epsilon, d, s)$$-bounded function. Let $$\{H_S\}$$ be
+> an orthonormal polynomial basis bounded by $$K$$. Then the PSR algorithm
+> finds a $$g$$ that's within $$\epsilon$$ of $$f$$ in time $$O(n^d)$$ with
+> sample complexity $$T = \tilde{O}(K^2s^2 \log N/\epsilon)$$.
+
+In this statement, $$N$$ is the size of the polynomial basis. For the special
+case of parity functions, we have $$K = 1$$ and $$N = O(n^d)$$, requiring
+$$T = \tilde{O}(s^2 d \log n / \epsilon)$$.
+
+
+Harmonica: The Full Algorithm
+----------------------------------------------------------------------------
+
+The full algorithm runs the polynomial sparse recovery algorithm in stages.
+At each stage, sample some values $$f(x_i)$$ by training some models, then
+fit a sparse polynomial $$g$$.
+
+Let's suppose $$f$$ represents the error %, and we want it to be as low as
+possible. Given $$g$$, it's straightforward to find the settings that minimize
+it, because $$g$$ is sparse and low-degree. Note that there are at most
+$$sd$$ different variables $$x_i$$ can appear in $$g(x_1,x_2,\ldots,x_n)$$,
+because each parity function contributes at most $$d$$ variables and $$g$$
+is the sum of $$s$$ of these. So we can simply brute-force assignments
+to all $$2^{sd}$$ assignments if we have to - note that $$(2^s)^d$$ should
+be heavily dwarfed by the $$O(Tn^d)$$ time it takes to get $$g$$, for an
+appropriate sparsity choice $$s$$.
+
+Note, however, that this only gives settings for the variables that $$g$$
+depends on. This doesn't cover all the hyperparams. So, we apply the
+algorithm in stages. At each stage, we use the sparse polynomial to get
+settings for some of the hyperparams, freeze those, then apply the algorithm
+to get settings for the remaining hyperparams. After enough stages, the
+hyperparam space is small enough that we can use a baseline hyperparam
+search algorithm. Random search, successive halving, Hyperband, whatever.
+
+(Empirically, it looks like the authors found that freezing the hyperparam
+setting from the first stages was too aggressive. Instead, the proposed
+algorithm says to find the $$t$$ settings that minimize $$g$$, and to sample
+the setting from those $$t$$ in future stages. For example, say we have 30
+hyperparams, and at stage 1 we retrieved a $$g(x)$$ that depends on 10 of
+those hyperparams. With $$t = 4$$, when optimizing over the 20 remaining
+hyperparams, instead of having only 1 setting for the 10 hyperparams seen
+before, we sample one of the four.)
+
+![Harmonica algorithm](/public/hyperparam-spectral/harmonica.png)
+{: .centered }
+
+
+Experiments
+----------------------------------------------------------------------------
+
+The problem used is Cifar-10, trained with a deep Resnet model. The model
+has 39 hyperparams, deciding everything from learning rate to L2 regularization
+to connectivity of the network, batch size, and non-linearity. Then, to make
+the problem more difficult, 21 dummy hyperparams are added, giving 60 hyperparams
+total. All hyperparams are binary, but some variables span multiple hyperparams.
+For example, there are 8 learning rate options, which are decided by 3 binary
+hyperparams.
+
+Harmonica is evaluated with 300 samples at each stage (meaning 300 trained models),
+with maximum degree $$d = 3$, sparsity $$s=5$$, and restriction size $$t=4$$.
+PSR is done for 2 stages, then successive halving is used for the final
+hyperparam optimization.
+
+Importantly, the full model is a 56 layer ResNet. In the first two stages,
+Harmonica is run on a smaller 8 layer network, and the full network is only trained
+in the final stage. The argument is that hyperparams
+tend to have a consistent effect as you make the model deeper, so tuning
+on a small network still gives you good settings for the full size network.
+It's unclear whether a similar trick was used in the methods they compared against.
+I assume they weren't, for pessimism's sake.
+
+
+Results Summary
+------------------------------------------------------------------------------
+
+Harmonica outperforms random search, Hyperband (extension of successive halving),
+and Spearmint (a Bayesian optimization approach.)
+
+![Test error](/public/hyperparam-spectral/results1.png)
+{: .centered }
+
+In this plot, the different between Harmonica 1 and Harmonica 2 is that in Harmonica 2,
+the final stage is given less time.
+
+In terms of runtime, the fastest version (Harmonica 2) runs 5x faster than Random
+Search and outperforms it. The slower version (Harmonica 1) is still competitive
+with other approaches in runtime while giving much better results.
+
+![Run time](/public/hyperparam-spectral/results2.png)
+{: .centered }
+
+As Harmonica discovers settings for the important hyperparams, the average test
+error in the restricted hyperparam space drops. Each stage gives another drop in
+performance.
+
+![Average test error](/public/hyperparam-spectral/results3.png)
+{: .centered }
+
+As a side effect of the sparse recovery, we get weights on which features (which
+hyperparams) are most important. Results are shown for a 3-stage Harmonica
+experiment, where sparsity $$s = 8$$ for the first 2 stages and $$s = 5$$ for the
+3rd stage.
+
+![Table of important hyperparams](/public/hyperparam-spectral/results4.png)
+{: .centered }
+
+Many of the important hyperparams line up with convention - batch norm should be
+one, the activation function should be ReLU, and Adam is a better optimizer than
+SGD. Check the original paper for definitions of the hyperparams listed here.
 
