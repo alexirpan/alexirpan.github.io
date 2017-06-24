@@ -257,32 +257,28 @@ Polynomial Recovery Algorithm
 -------------------------------------------------------------------------------
 
 Let's assume we have evaluations of $$f$$ at $$T$$ different points $$x_i$$.
-We want to fit a sparse polynomial to these points. The main intuition
-here is that we can view it as a giant linear regression problem. We have
-a vector of values
+We want to fit a sparse polynomial to these points. The main trick is a classic:
+fitting a sparse low-degree polynomial is the same as fitting a sparse linear
+regression problem in a larger space. We have a dataset of values
 
 $$
-    y = \begin{bmatrix}
-        f(x_1) \\
-        f(x_2) \\
-        \vdots \\
-        f(x_T)
-    \end{bmatrix}
+    \{y_1,y_2,\ldots y_n\} = \{ f(x_1), f(x_2), \ldots, f(x_n) \}
 $$
 
-And input features
+There are $$O(n^d)$$ features, one for each subset $$S$$ with $$|S| \le d$$.
+We want to find $$\alpha_S$$ that minimizes
 
 $$
-    x_S = \begin{bmatrix}
-        f_S(x_1) \\
-        f_S(x_2) \\
-        \vdots \\
-        f_S(x_T)
-    \end{bmatrix}
+    \sum_{i=1}^T (y_i - \sum_{|S| \le d} \alpha_S f_S(x_i))^2
 $$
 
-And you're trying to find coefficient $$\alpha_S$$ to minimize
+We also want to have the solution be sparse, which once again has a classical
+solution - add L1 regularization.
 
 $$
-    \|y - \sum_{|S| \le d} \alpha_S x_S\|_2
+    \min_{\alpha_S} \lambda * \|\alpha\|_1 + \sum_{i=1}^T (f(x_i) - \sum_{|S| \le d} \alpha_S f_S(x_i))^2
 $$
+
+This gives the main subroutine, called Polynomial Sparse Recovery.
+
+
