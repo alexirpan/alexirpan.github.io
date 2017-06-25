@@ -397,5 +397,39 @@ experiment, where sparsity $$s = 8$$ for the first 2 stages and $$s = 5$$ for th
 
 Many of the important hyperparams line up with convention - batch norm should be
 one, the activation function should be ReLU, and Adam is a better optimizer than
-SGD. Check the original paper for definitions of the hyperparams listed here.
+SGD. Check the original paper for definitions of the hyperparams listed herej.
 
+
+Advantages
+==============================================================================
+
+In each stage of Harmonica, each model can be evaluated in parallel. By
+constrast, Bayesian optimization techniques are more difficult to parallelize
+because the derivation often assumes a single-threaded evaluation.
+
+Enforcing hyperparam sparsity leads to interpretability - weights of different
+terms can be used to interpret which hyperparams are most important and least
+important.
+
+Disadvantages
+==============================================================================
+
+My intuition says that this approach works best when you have a large number of
+hyperparameters. Each stage evaluates 100 models, but in smaller hyperparam spaces,
+evaluating 100 models wiht random search is going to enough tuning for most
+small problems. That being said, if you have fewer hyperparams you'll need fewer
+samples to fit the sparse polynomial well, so maybe this isn't a concern.
+
+It's unclear if an analogue of "tune on small, transfer to large" trick was
+done in any of the other comparisons. If it doesn't, it casts a lot of doubt on
+how much faster Harmonica is.
+
+The approach only works if it makes sense for the features to be sparse. This
+isn't that big a disadvantage. In my experience, neural net hyperparams are all
+linearly separable, and this is backed up by the Harmonica results - the important
+terms are almost all degree 1. (The authors observed that you do need $$d \ge 2$$
+to get best performance thought, because sometimes you do learn 2-dimensional features.
+
+The derivation only works with discrete, binary features. This might make it
+hard to extend to discrete choices that aren't clean powers of 2. I don't know
+if there's a generalization of the parity function basis, there might be.
