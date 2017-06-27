@@ -4,7 +4,8 @@ title:  "Read-through: Hyperparameter Optimization: A Spectral Approach"
 date:   2017-06-18 00:52:00 -0700
 ---
 
-Similar to Wasserstein GAN, this is another theory-motivated paper with neat
+Similar to [Wasserstein GAN]({% post_url 2017-02-22-wasserstein-gan %}),
+this is another theory-motivated paper with neat
 applications to deep learning. Once again, if you are looking for proof
 details, you are better off reading the original paper. The goal
 of this post is to give background and motivation.
@@ -414,14 +415,6 @@ with degree $$d = 3$$, sparsity $$s=5$$, and $$t=4$$. They perform 2-3 stages
 of PSR (depending on the experiment), and use successive halving as the base
 hyperparam optimizer.
 
-Importantly, the full model is a 56 layer ResNet. In the first two stages,
-Harmonica is run on a smaller 8 layer network, and the full network is only trained
-in the final stage. The argument is that hyperparams
-tend to have a consistent effect as you make the model deeper, so tuning
-on a small network still gives you good settings for the full size network.
-It's unclear whether a similar trick was used in the methods they compared against.
-I assume they weren't, for pessimism's sake.
-
 
 Results Summary
 ------------------------------------------------------------------------------
@@ -457,9 +450,19 @@ experiment, where sparsity $$s = 8$$ for the first 2 stages and $$s = 5$$ for th
 ![Table of important hyperparams](/public/hyperparam-spectral/results4.png)
 {: .centered }
 
+The minimizing settings often line up with human convention. Batch norm should
+be on (vs off), the activation function should be ReLU (vs sigmoid or tanh),
+and Adam should be used (vs SGD).
+
 Many of the important hyperparams line up with convention - batch norm should be
 one, the activation function should be ReLU, and Adam is a better optimizer than
-SGD. Check the original paper for definitions of the hyperparams listed herej.
+SGD. Check the original paper for more details on the hyperparam definition.
+
+One especially interesting term is the one discovered at stage 1-8. The
+dummy variable is extra and can be ignored. The authors say that in their code,
+if Optnet and Share gradInput are both true, training becomes unpredictable.
+The learned $$g$$ is minimized if this term equals $$-1$$, which happens
+if only one of Optnet and Share gradInput is true at a given time.
 
 
 Advantages
@@ -477,21 +480,25 @@ Disadvantages
 ==============================================================================
 
 My intuition says that this approach works best when you have a large number of
-hyperparameters. Each stage evaluates 100 models, but in smaller hyperparam spaces,
-evaluating 100 models wiht random search is going to enough tuning for most
-small problems. That being said, if you have fewer hyperparams you'll need fewer
-samples to fit the sparse polynomial well, so maybe this isn't a concern.
+hyperparameters and want to initially narrow down the space.
+Each stage requires hundreds of models, and in smaller hyperparam spaces,
+evaluating 100 models with random search is going to enough tuning already.
+That being said, perhaps you can get away with fewer if you're working in a
+smaller hyperparam space.
 
-It's unclear if an analogue of "tune on small, transfer to large" trick was
-done in any of the other comparisons. If it doesn't, it casts a lot of doubt on
-how much faster Harmonica is.
+**In the first two stages, Harmonica is run on a smaller 8 layer network, and the full 56 layer Resnet is only trained
+in the final stage.** The argument is that hyperparams often have a consistent
+effect as the model gets deeper, so it's okay to tune on a small network and
+copy the settings to a larger one. It's not clear whether a similar trick
+was used in their baselines. If they weren't, the runtime comparisons arne't as
+impressive as they look.
 
 The approach only works if it makes sense for the features to be sparse. This
-isn't that big a disadvantage. In my experience, neural net hyperparams are all
-linearly separable, and this is backed up by the Harmonica results - the important
-terms are almost all degree 1. (The authors observed that you do need $$d \ge 2$$
-to get best performance thought, because sometimes you do learn 2-dimensional features.
+isn't that big a disadvantage, in my experience neural net hyperparams are
+nearly independent. This is backed up by the Harmonica results - the important
+terms are almost all degree 1. (The authors observed that they did
+need $$d \ge 2$$ for best performance.)
 
-The derivation only works with discrete, binary features. This might make it
-hard to extend to discrete choices that aren't clean powers of 2. I don't know
-if there's a generalization of the parity function basis, there might be.
+The derivation only works with discrete, binary features. Extending the approach
+to arbitrary discrete hyperparams doesn't look too bad (just take the closest
+power of 2), but extending to continuous spaces looks quite a bit trickier.
