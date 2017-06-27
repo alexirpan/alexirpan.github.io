@@ -40,14 +40,13 @@ each data point take hours or days to collect. Similar issues show up in
 robotics learning - robots are expensive and often need human supervision,
 which makes it hard to collect the ImageNet-scale datasets that neural nets
 are so good at.
-* Hyperparam tuning intuition is one of the most black-box aspects of
-ML expertise. I believe it exists, but it's also really hard for people to
-describe it. Better hyperparam optization could make ML more accessible
+* Better hyperparam optimization makes ML more accessible
 to others, because it reduces the amount of esoteric knowledge needed to
-get models to work. That's good for me because I don't want to have to know
-that for my job. It's bad for me because I'm vaguely proud of the time
-I've spent building weird deep learning experitse, and I'm not sure I like knowing
-it could be obsoleted down the line. In either case, I want to pay attention.
+get models to work. That's good because people shouldn't need to know that
+esoteric knowledge to solve their problems. It's bad for me because weird deep
+learning expertise is one of the few things I'm good at, and I'm not sure I
+like knowing it could be obsolete down the line. All the more reason to
+pay attention.
 
 
 Some Quick Background on Hyperparam Optimization
@@ -68,7 +67,8 @@ many more hyperparams in the same amount of time, by pruning poor hyperparams
 early on. You have to be a little careful with
 how aggressively you prune, but in practice it does pretty well.
     * SH was later extended to the Hyperband algorithm, described [here](https://arxiv.org/abs/1603.06560).
-    Hyperband will be used for a comparison in the paper.
+    Hyperband is one of the baseline methods used for comparison. [Spearmint](https://github.com/HIPS/Spearmint),
+    a Bayesian optimization method, is the other main comparision.
 
 
 Problem Setting
@@ -121,7 +121,7 @@ points, because each data point requires training a neural net to convergence.
 Sparsity helps with this by reducing the capacity of the polynomial fitting
 process - it stops it from putting a little bit of weight on thousands of different
 terms, which is one of the easiest ways to overfit. As a side effect, sparsity
-tends to help interpretability.
+tends to make interpreting models easier.
 
 (Aside: this is one of the common complaints about deep learning - it's
 hard to interpret much out of the sum of 100 activations. But in practice,
@@ -196,10 +196,10 @@ Now, we show the parity functions have this property.
 
 In the upcoming sections, sometimes $$i$$ means an index from $$1$$
 to $$n$$, and sometimes $$i$$ means a number from $$0$$ to $$2^{n-1}$$ that
-should be interepreted as $$n$$ bits of binary. It should be inferrable from
+should be interpreted as $$n$$ bits of binary. It should be inferable from
 context.
 
-* By defintion, $$\langle f_i, f_i \rangle = \mathbb{E}[f_i(x)^2]$$. Note
+* By definition, $$\langle f_i, f_i \rangle = \mathbb{E}[f_i(x)^2]$$. Note
 that $$f_i(x) = -1$$ or $$f_i(x) = 1$$, depending on how many matching bits
 there are between $$i$$ and $$x$$.
 In either case, $$f_i(x)^2 = 1$$, so $$\langle f_i, f_i \rangle = 1$$.
@@ -220,7 +220,7 @@ $$
 $$
 
 The inner expectation equals $$c$$, for some constant $$c$$ that doesn't depend
-on $$x_i$$. Thus we can write the expectaion as
+on $$x_i$$. Thus we can write the expectation as
 
 $$
     \mathbb{E}_{x_i}\left[x_i \cdot c\right] =
@@ -291,7 +291,7 @@ $$
 
 Computing this exactly is intractable because there are $$2^n$$ subsets.
 However, note that each term $$f_S(x_1,\ldots,x_n)$$ is the product
-over a choice of some indices. When $$S = \emptyset$$, we get a $$0$$-degree
+over a choice of indices. When $$S = \emptyset$$, we get a $$0$$-degree
 constant term. When $$S$$ is all numbers from $$1$$ to $$n$$, we get an
 $$n$$-degree term.
 
@@ -419,31 +419,34 @@ hyperparam optimizer.
 Results Summary
 ------------------------------------------------------------------------------
 
-Harmonica outperforms random search, Hyperband (extension of successive halving),
-and Spearmint (a Bayesian optimization approach.)
+Harmonica outperforms random search, Hyperband and Spearmint.
 
 ![Test error](/public/hyperparam-spectral/results1.png)
 {: .centered }
 
 In this plot, the different between Harmonica 1 and Harmonica 2 is that in Harmonica 2,
-the final stage is given less time.
-
-In terms of runtime, the fastest version (Harmonica 2) runs 5x faster than Random
+the final stage is given less time. This gives worse performance, but better
+runtime.
+The faster version (Harmonica 2) runs 5x faster than Random
 Search and outperforms it. The slower version (Harmonica 1) is still competitive
-with other approaches in runtime while giving much better results.
+with other approaches in runtime while giving much better results. Even
+when the base hyperparam optimizer is random search instead of successive halving,
+it outperforms random search in under half the time.
 
 ![Run time](/public/hyperparam-spectral/results2.png)
 {: .centered }
 
 As Harmonica discovers settings for the important hyperparams, the average test
 error in the restricted hyperparam space drops. Each stage gives another drop in
-performance.
+performance, but the drop is small between stage 2 and stage 3 - I'm guessing
+this is why they decided to only use 2 stages in the timing experiments.
 
 ![Average test error](/public/hyperparam-spectral/results3.png)
 {: .centered }
 
-As a side effect of the sparse recovery, we get weights on which features (which
-hyperparams) are most important. Results are shown for a 3-stage Harmonica
+To show that the chosen terms are meaningful, the coefficients in each stage
+are sorted by magnitude, to show which hyperparams influence error the most.
+Results are shown for a 3-stage Harmonica
 experiment, where sparsity $$s = 8$$ for the first 2 stages and $$s = 5$$ for the
 3rd stage.
 
@@ -469,15 +472,19 @@ Advantages
 ==============================================================================
 
 In each stage of Harmonica, each model can be evaluated in parallel. By
-constrast, Bayesian optimization techniques are more difficult to parallelize
+contrast, Bayesian optimization techniques are more difficult to parallelize
 because the derivation often assumes a single-threaded evaluation.
 
 Enforcing hyperparam sparsity leads to interpretability - weights of different
 terms can be used to interpret which hyperparams are most important and least
-important.
+important. The approach successfully learned to ignore all dummy hyperparams.
 
 Disadvantages
 ==============================================================================
+
+A coworker mentioned that Harmonica assumes a fixed computation budget for
+each stage, which doesn't make it as good in an anytime setting (which is
+a better fit for Bayesian optimization.)
 
 My intuition says that this approach works best when you have a large number of
 hyperparameters and want to initially narrow down the space.
@@ -502,3 +509,18 @@ need $$d \ge 2$$ for best performance.)
 The derivation only works with discrete, binary features. Extending the approach
 to arbitrary discrete hyperparams doesn't look too bad (just take the closest
 power of 2), but extending to continuous spaces looks quite a bit trickier.
+
+
+Closing Thoughts
+-------------------------------------------------------------------------------
+
+Overall I like this paper quite a bit. I'm not sure how practical it is - the
+"tune on small, copy to large" trick in particular feels a bit sketchy. But that
+should only affect the runtime of the algorithm, not the performance. I think
+it's neat that it continues to work in empirical land.
+
+One thing that's nice is that because the final stage can use any hyperparam
+optimization algorithm, it's easy to mix-and-match Harmonica with other
+approaches. So even if Harmonica doesn't pan out in further testing, the
+polynomial sparse recovery subroutine could be an interesting building block
+in future work.
