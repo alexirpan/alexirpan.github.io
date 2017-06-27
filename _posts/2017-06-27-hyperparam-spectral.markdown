@@ -102,7 +102,7 @@ polynomial, we learn a sparse, low-degree polynomial $$g(x)$$ that approximates
 $$f$$.
 
 What's the intuition for why you'd want to do this? Well, to be honest,
-I have no idea why you'd decide to look at i[compressed sensing](https://en.wikipedia.org/wiki/Compressed_sensing),
+I have no idea why you'd decide to look at [compressed sensing](https://en.wikipedia.org/wiki/Compressed_sensing),
 instead of the other methods out there. But I can explain why it makes sense to
 me, after the fact.
 
@@ -160,7 +160,7 @@ We can verify this satisfies the inner product definitions.
     \langle af, g \rangle = \mathbb{E}_{x} [af(x)g(x)] = a \mathbb{E}_x [f(x)g(x) = a\langle f, g\rangle
     $$
 
- For functions $$f_1, f_2$$,
+    For functions $$f_1, f_2$$,
 
     $$
     \langle f_1+f_2, g\rangle = \mathbb{E}_x[(f_1(x) + f_2(x))g(x)] = \mathbb{E}_x [f_1(x)g(x)] + \mathbb{E}_x [f_2(x)g(x)] = \langle f_1, g\rangle + \langle f_2, g\rangle
@@ -211,7 +211,7 @@ $$
     f_{S_1}(x) = x_i \prod_{j \in S_1 - \{i\}} x_j
 $$
 
-Take the expectation over $$x$$, and factor it into the condition expectation
+Take the expectation over $$x$$, and factor it into the conditional expectation
 on $$x_i$$.
 
 $$
