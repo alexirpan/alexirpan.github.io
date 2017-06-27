@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Read-through: Hyperparameter Optimization: A Spectral Approach"
-date:   2017-06-18 00:52:00 -0700
+date:   2017-06-27 01:34:00 -0700
 ---
 
 Similar to [Wasserstein GAN]({% post_url 2017-02-22-wasserstein-gan %}),
