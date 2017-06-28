@@ -270,14 +270,14 @@ components of the signal, and the later terms represent high-frequency
 components. To reconstruct $$s(t)$$ exactly, we should do.
 
 $$
-    s(t) = a_0 + \sum{n=1}^\infty a_n \sin(nx) + \sum_{n=1}^\infty b_n \cos(nx)
+    s(t) = a_0 + \sum_{n=1}^\infty a_n \sin(nx) + \sum_{n=1}^\infty b_n \cos(nx)
 $$
 
 We can't compute this exactly because the sum is infinite. However, we can
 approximate the signal by truncating the sum at some maximum $$N$$
 
 $$
-    s(t) \approx a_0 + \sum{n=1}^N a_n \sin(nx) + \sum_{n=1}^N b_n \cos(nx)
+    s(t) \approx a_0 + \sum_{n=1}^N a_n \sin(nx) + \sum_{n=1}^N b_n \cos(nx)
 $$
 
 This corresponds to dropping all the high frequency terms. Depending on the
