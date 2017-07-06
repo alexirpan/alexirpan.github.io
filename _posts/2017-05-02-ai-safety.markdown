@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sometimes I Think About AI Safety and I Get Depressed For a Bit"
+title:  "Sometimes I Think About AI Safety and Rationalists and I Get Depressed For a Bit"
 date:   2017-05-02 01:14:00 -0700
 ---
 
@@ -25,6 +25,13 @@ sure it justifies the vitriol / drama that surrounds it.
 *These are my personal opinions, and don't reflect the opinions of
 any organizations I've worked with.*
 
+This post has been very difficult to write.
+
+I've been trying to write it for well over a year. I found some notes
+from 8 months ago that I don't agree with anymore. Six months ago,
+I looked at a draft, and the writing was so revolting that I
+deleted it out of disgust.
+
 I've been trying to write this post for over a year.
 
 There are some notes from 8 months ago that I don't agree with anymore.
@@ -35,32 +42,37 @@ beliefs, hazy thoughts, and lots and lots of frustration at my inability to
 explain things to myself. At this point, I just want it to be *done*,
 because I'm sick of bottling up monologues.
 
-so here goes.
+That feels like a problem. Let's dig in and do some...*introspection.*
+
+![Panel from SMBC comic about introspection](/public/ai-safety/introspection.png)
+{: .centered }
+
+Source: [SMBC](http://www.smbc-comics.com/comic/2011-04-25)
+{: .centered }
 
 \* \* \*
 {: .centered }
 
-The core premise of AI safety discussion is that AI and machine learning
-are transformative technologies that could radically change society.
-People's lives could get a lot better, or a lot worse. In the most
-pessimistic scenarios, AGI kills all life on Earth, then kills all life
-in the galaxy in a speed-of-light wave of death.
+Roughly, AI safety centers around this question: "HOw do we make sure
+AI acts the way we want it to?" The core premise is that machine learning
+is a transformative technology, with a lot of potential for good and bad,
+and it would be nice if we could avoid the bad stuff.
 
-Whether that's going to happen or not is a controversial topic, to put
-things mildly.
+AGI stands for artificial general intelligence, a hypothetical machine
+learning system that can perform any task at least as well as the average
+human could. Depending on how pessimistic you are, some people believe that
+AGI will most likely kill all life on Earth, and then kill all life in the
+galaxy in a death wave that spreads at nearly the speed-of-light.
 
-Like all controversial topics, there are thousands and thousands of pages
-of discussion, scattered across the Internet. I generally avoid joining
-any of them, because by the time I finish reading them, I get turned off
-and leave.
+This is a controversial opinion, to put things mildly.
 
-That feels like a problem. Let's dig in and do some...*introspection.*
+I'm not going to attempt to cover all the arguments.
+Like all controversial topics, there are thousands of pages worth of discussion,
+scattered across the Internet.
 
-![Panel from SMBC comic about introspection](/public/ai-safety/introspection.png)
-{. centered }
-
-Source: [SMBC](http://www.smbc-comics.com/comic/2011-04-25)
-{: .centered }
+What I'm going to explain is a more personal problem: I usually avoid
+participating in any of them, because very often, I get turned off for one reason
+or another, then leave.
 
 \* \* \*
 {: .centered }
@@ -95,18 +107,35 @@ of the problem.
 \* \* \*
 {: .centered }
 
-Like a lot of other people, I was introduced to the community
-through Harry Potter and the Methods of Rationality. I was a bored
-high school kid, and I liked Harry Potter, so it just kind of happened.
-Ever since then, I've been circling the community - first by reading the
-occasional LessWrong post, and nowadays through whatever shows up in
-my Facebook feed.
+Like a lot of other people, my first exposure to rationalists was through
+Harry Potter and the Methods of Rationality.
 
-Around that time was when I first started reading some arguments people had
-about superhuman AI, that felt like neat stories, but didn't feel like things
-I needed or wanted to care about.
+(Some of you may be going, "Yes! The plan to get people into rationalism
+through Harry Potter worked!" We'll talk about that later.)
 
-But nowadays, when people talk about parables of AI safety, I just get
+As a high school kid with lots of free time and a decent Obsessive Fan
+Mindset, it just kind of happened. I followed some links to LessWrong,
+read a bit, but not much more than that. Around this point I started
+reading some of the stereotypical rationalist discussion topics: AI box
+thought experiments, value alignment, utilitarianism,
+cryonics, etc. It was neat, but it didn't feel like something I needed to care
+about.
+
+Over time, my enthusiasm for these topics has died down. It's not that I think
+they're bad ideas. It's that it feels like some people are *significantly*
+more excited about them than they should be, and every time I see it I get a
+little bit sick of it.
+
+It's hit that point that I now have a model of "the strawman rationalist".
+The strawman rationalist is not fair. The strawman rationalist does not match
+anyone I know, and most likely doesn't match anybody in the world, not even
+the most hardcore rationalist (if such a thing can even be said to exist.)
+It is an amalgam of every negative rationalist stereotype I can think of.
+I find it easy to feed it with more ammunition, which I find incredibly
+disappointing.
+
+Nowadays, when people bring up the same topics,
+talk about parables of AI safety, I just get
 sick of it.
 
 By this point I've read at least three "rationalist fanfics" that were basically
@@ -175,14 +204,9 @@ both movements.
 \* \* \*
 {: .centered }
 
-Throughout this essay, I'll use "the strawman rationalist". The strawman
-rationalist will be denoted by *italics*. The strawman rationalist is not
-fair. It does not match any self-described rationalist I know. It's more
-like an amalgam of all the negative rationalist stereotypes I can think of.
-
 Now, given how awful the strawman rationalist is, why do I keep him around?
 He's always smug, always insufferable, always tries to find a new reason
-to ignore arguments that machine learning could possibly end okay, and believesg[M ^
+to ignore arguments that machine learning could possibly end okay, and believes
 that he and his cohort are the only people who are doing anything meaningful
 to protect people. To the strawman, everyone else is a well-meaning but
 misguided idiot, but I'm not, oh no I'm not, because I've read the Sequences!
@@ -414,3 +438,24 @@ Well, no, not if you're okay with weird. Some people aren't okay with weird.
 And the weird people also tend to be the loudest or the most likely to speak
 up, and soon you hit the classic filter bubble problem - the people who talk
 aren't representive of the people who exist.
+
+
+
+No true Scotsman problem.
+
+The problem people have is mostly with Yudkowsky and beliefs close to those
+ones.
+
+The feeling that people are arguing in circles.
+
+The feeling that people from other areas of expertise are advocating for the
+right thing to do, talking about something they don't understand, and knowing
+that it's easy for people to be mislead about things, and the difficulty
+in distinguishing between crackpot and valid point.
+
+In rationalist circles, it feels like people very quickly decide to follow
+whatever argument rings true with them, and then directly act on it. Whereas
+other people are hesitant to predict anything too far out because of the
+difficulty of the prediction, and don't see how it's supposed to change anything
+or what the point of it is. "The best we can do" vs "not even worth the effort
+right now"
