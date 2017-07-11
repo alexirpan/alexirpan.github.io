@@ -77,6 +77,61 @@ or another, then leave.
 \* \* \*
 {: .centered }
 
+Now, I know I said I wasn't going to try to cover all the arguments, but I have
+to cover at least some of them.
+
+Here is the rough foundation for AI safety.
+
+* At some point, there will be an AI that can do any task at a superhuman level.
+* That AGI will be told to do something.
+* Almost all tasks are easier if you can think faster, so the AI will
+decide to improve itself as much as it can.
+* Almost all tasks are easier if you're alive, so the AI will decide to
+minimize the chance anybody disables it.
+* Therefore, a sufficiently smart AI may decide to kill all humans, to stop
+any humans from disabling it.
+* And furthermore, this may happen even if the task it is trying to do is
+simple.
+
+This is the value alignment part of the argument, and is the core of pretty
+much all concerns on the subject.
+
+Here's an alternate way to form the argument.
+
+* Blindly optimizing an objective can lead to lots of unexpected behavior.
+* When humans optimize for something, they usually follow some implicit
+ethics that stops them from doing anything too heinous.
+* A superhuman AI may not have those implicit ethics, and the unexpected
+behavior could include killing all humans.
+
+The other core component is the intelligence explosion argument.
+
+* Suppose there is an AI that can do scientific research at a human level.
+* Humans have discovered new technology and inference algorithms by doing
+research, and presumably such an AI could do the save.
+* If that AI applies those advances to itself, it can speed up its own
+rate of discovery.
+* Therefore there's a chance that once AI reaches a certain point, it can
+repeatedly discover new techniques to improve itself, faster and faster,
+until it reaches the level of superhuman performance that people worry about
+for the value alignment argument.
+* And furthermore, by a similar value alignment argument, if an AI is asked
+to do any task, it may decide to pursue intelligence explosion, because it'll
+make performing the task easier.
+
+Intelligence explosion is core to the argument because it pushes the bar lower.
+FILL ME OUT.
+
+Right now, my broad view is that this is a good argument for why AI safety
+is worth thinking about
+
+My broad view at this time is that the argument behind AI safety is worth
+taking seriously. MIRI's agenda seems focused on exclusively thinking
+about ways to constrain superhuman systems, under the thesis that it's a very
+different problem from contraining current ML systems. I'm skeptical any of
+MIRI's work will end up being useful down the line, but that doesn't mean
+I want them to stop.
+
 The thing about AI is that it captures the imagination. At times it feels
 like everyone has an opinion on what "intelligence" means, whether it
 can really be created artificially, whether AGI is possible or not.
@@ -108,31 +163,35 @@ of the problem.
 {: .centered }
 
 Like a lot of other people, my first exposure to rationalists was through
-Harry Potter and the Methods of Rationality.
+Harry Potter and the Methods of Rationality. I got pretty into it, and like all
+fiction I I followed the same pattern: read the story, then read any commentary
+and discussion I can find. Following that enough led me to some LessWrong
+links. I thought the ideas were neat, but it didn't feel like something
+I needed to care about.
 
-(Some of you may be going, "Yes! The plan to get people into rationalism
-through Harry Potter worked!" We'll talk about that later.)
-
-As a high school kid with lots of free time and a decent Obsessive Fan
-Mindset, it just kind of happened. I followed some links to LessWrong,
-read a bit, but not much more than that. Around this point I started
-reading some of the stereotypical rationalist discussion topics: AI box
+as a high school kid with lots of free time and a decent obsessive fan
+mindset, it just kind of happened. i followed some links to lesswrong,
+read a bit, but not much more than that. around this point i started
+reading some of the stereotypical rationalist discussion topics: ai box
 thought experiments, value alignment, utilitarianism,
-cryonics, etc. It was neat, but it didn't feel like something I needed to care
-about.
+cryonics, etc.
 
-Over time, my enthusiasm for these topics has died down. It's not that I think
-they're bad ideas. It's that it feels like some people are *significantly*
-more excited about them than they should be, and every time I see it I get a
+over time, my enthusiasm for these topics has died down. it's not that i think
+they're bad ideas. it's that it feels like some people are *significantly*
+more excited about them than they should be, and every time i see it i get a
 little bit sick of it.
 
-It's hit that point that I now have a model of "the strawman rationalist".
+it's hit that point that i now have a model of "the strawman rationalist".
 The strawman rationalist is not fair. The strawman rationalist does not match
 anyone I know, and most likely doesn't match anybody in the world, not even
 the most hardcore rationalist (if such a thing can even be said to exist.)
 It is an amalgam of every negative rationalist stereotype I can think of.
 I find it easy to feed it with more ammunition, which I find incredibly
 disappointing.
+
+\* \* \*
+{: .centered }
+
 
 Nowadays, when people bring up the same topics,
 talk about parables of AI safety, I just get
@@ -213,45 +272,6 @@ misguided idiot, but I'm not, oh no I'm not, because I've read the Sequences!
 
 I keep him around because despite how crazy he is, he still manages to give
 good insights.
-
-The rough arguments for AI safety are
-
-* At some point, there will be an AI that can do any task better than
-a human can.
-* There is some chance such an AI can repeatedly discover new technological
-advances, and apply those advances to itself to improve itself at an
-astonishing rate.
-    * This doesn't have to be exponential, it just has to be fast enough.
-    * It's assumed that a single
-    technological advance follows a sigmoid curve - there is a slow increase
-    as the technology is tested, then a rapid period of innovation, then a
-    slowdown as people realize the limits of the technology. The argument
-    is that if you achieve a lot of technological advances quickly, a
-    chain of iterated sigmoids starts to approach a near-expoential curve.
-* A human will eventually ask such an AI to do something.
-* Almost all things are easier if you can think faster, so the AI will
-decide to improve itself as much as it can.
-* Almost all things are easier if you're alive, so the AI will decide to
-minimize the chance anybody disables it.
-* Therefore, if a sufficiently smart AI is asked to do something, it may
-decide to kill all humans.
-
-But really, this is a long chain of reasoning that can be better summarized
-this way.
-
-* Blindly optimizing an objective can lead to lots of unexpected behavior.
-* When humans optimize for something, they usually follow some implicit
-ethical rules.
-* An AI that optimizes for something may not have those implicit ethics,
-leading to lots of unexpected behavior, some of which could include
-killing all humans.
-
-My broad view at this time is that the argument behind AI safety is worth
-taking seriously. MIRI's agenda seems focused on exclusively thinking
-about ways to constrain superhuman systems, under the thesis that it's a very
-different problem from contraining current ML systems. I'm skeptical any of
-MIRI's work will end up being useful down the line, but that doesn't mean
-I want them to stop.
 
 What I do want to stop, however, is the vaguely adversarial way people on both
 sides have framed the AI safety debate. It's not overt or anything, more like
