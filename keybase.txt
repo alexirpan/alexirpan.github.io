@@ -1,0 +1,77 @@
+---
+permalink: /keybase.txt
+---
+==================================================================
+https://keybase.io/alexirpan
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.alexirpan.com
+  * I am alexirpan (https://keybase.io/alexirpan) on keybase.
+  * I have a public key with fingerprint B204 5EE6 EBBB 978E F430  7DDE C4D0 F089 4C27 55B2
+
+To do so, I am signing this object:
+
+{
+    &quot;body&quot;: {
+        &quot;key&quot;: {
+            &quot;eldest_kid&quot;: &quot;0101cf8669556a14b12a72a6d5f4d2751c1ba464b4ee03580e6926ca46e770ebdd260a&quot;,
+            &quot;fingerprint&quot;: &quot;b2045ee6ebbb978ef4307ddec4d0f0894c2755b2&quot;,
+            &quot;host&quot;: &quot;keybase.io&quot;,
+            &quot;key_id&quot;: &quot;c4d0f0894c2755b2&quot;,
+            &quot;kid&quot;: &quot;0101cf8669556a14b12a72a6d5f4d2751c1ba464b4ee03580e6926ca46e770ebdd260a&quot;,
+            &quot;uid&quot;: &quot;fc4e4716a2b52a13f09ecb5e17ed3719&quot;,
+            &quot;username&quot;: &quot;alexirpan&quot;
+        },
+        &quot;service&quot;: {
+            &quot;hostname&quot;: &quot;www.alexirpan.com&quot;,
+            &quot;protocol&quot;: &quot;http:&quot;
+        },
+        &quot;type&quot;: &quot;web_service_binding&quot;,
+        &quot;version&quot;: 1
+    },
+    &quot;ctime&quot;: 1500001920,
+    &quot;expire_in&quot;: 157680000,
+    &quot;prev&quot;: &quot;dc4df02807898d67c0224add6a1ed309dcc32f41e95d6259da679c43cf0674fd&quot;,
+    &quot;seqno&quot;: 5,
+    &quot;tag&quot;: &quot;signature&quot;
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMNCAnicrVJtUFRVGN4FgpHawCbATCTv4ii24L1378fehdJiotFJZlO2gaDZ7se5
+7A3YXe/e3WXHL8po+IoppmQazBElBEIBic1FnR0S+xBDScXKGQzKRSeRBmtUSOpc
+xvrVz86fM+d9n+c5z/vMO6iL1MRqB8//Vv3SKutR7dDAXo+mwE5VbEM4p+BHzNuQ
+ErBwgVIBuBVbiSQgZgTFUIwXTRTFkCTFYgSH4SyNs5RAioSA0yTGYxxLUARHAIAa
+SRMKKAaneFgCNI0CThBwCmURAyJKjmIgu2TJoUBZDkcJEgAKcBzH0CYgEkaUFgTA
+EwIqoiaG4KE2yeGQaHe6VQY0x7FukCE5YQ0+bAv2/gP/P/v2LMiJPAEIGqNYnCNx
+FjOKKAN4jgQYDQQjjTEq0A1kB1sGIJotBeWS7GIdyA4DAsteiQdqsuooDyA+ny/j
+X1gG7yyDCi7ZqTh5Zyls2xXFZVbZit+1AAec7YGQjZMcAgwTErxAdktOB2LGIJJX
+JFUZI1F4MAZHDQgod0kysEkqgqQpk9pRvwFeKCnA7EQUN6G0iTEJFM2jOE6wggDT
+gjOhjMDzRlwkMMCQAoWTjMBSNMMTRl5EKZoQBUQdbavDiZhJaJMthpJuqdjBKh4Z
+IDu+GCiK0mhjNdEPRahLpoldFP/P6oE/4/7K3TxRst5xydIyUdbgyW9paUtoLZ5K
++XR56qP579ZckKjBHv3Nc+X7Qgjz9isRK0+46grlPndj8KvZ5s8OFXTp74E706H5
+T8p6qoi1ysh42xrHqcbozI6ZnI3Vm3RhMnvo4Az/rTdhZHxd9jyyvGHxfN7Ylnks
+43Ln1NybD79n+DXjvmYw4nO5drxrf3biG77VUmOT2BKsfSGrePsTq2YvvH6+svbu
+NxWBZyygxr8sLen22J0NadyS6dqwb7j8si+p+kr/H7sC9BDX/9SgpZ+qfGvyiGHF
+T5dutoeT06Xt+yL70DUHdb358de0dfIGLd0XFzwmi54samVrZUTdeu72Aa3/Vkxw
+ekoubIu9b90/WvU7P1wdLqnvOJV8+rGPstOzTp754Pl3eq+7Mke/19vnuq/qA3W7
+d79M5PUyhafJpwNB6+p+u+e48t37PxbZ9ga6dxV9GV58S5nZs+jAyIr2nZ4qS9Nx
++chJ68Ybox1R2jzzzs21SWe9OSmHJ88UrnsxoePxu5sM8QOHU7rTfuj/+pFg+mTu
+s9xz52yh+uYbSYmBozUfL9Vd7+rZoqejK4av0Ka1Z5M+/LnE3b4kh9bWu+8lj7GF
+TYmt1akWz1XL7FTaxZhlE08W5OGvxf3i7inIZL2loXDu0uaYhK2hE0VVnbo9hsZJ
+V9S1i/5jDamRh6xzoPNV6W9eacPX
+=0sHA
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/alexirpan
+
+==================================================================
