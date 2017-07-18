@@ -119,11 +119,33 @@ for the value alignment argument.
 to do any task, it may decide to pursue intelligence explosion, because it'll
 make performing the task easier.
 
-Intelligence explosion is core to the argument because it pushes the bar lower.
-FILL ME OUT.
+Intelligence explosion is foundational to many of the arguments people like
+to advocate for, because if you assume that a system can go from barely
+capable to superhuman very quickly, then you can say that it'll be unclear
+when an AI has the potential to become superhuman, which makes it harder for
+people to tell when they should be careful. Or you can say that an AI can go
+from dumb to actually-smart-but-pretending-to-be-dumb. I'm sure there are
+other arguments I'm missing.
+
+It's also foundational because it lets you argue that people who disagree about
+AI safety are simply falling prey to underestimating exponential growth.
+
+It's also foundational because it pushes the timeline for when AGI happens to
+be a lot sooner.
+
+\* \* \*
+{: .centered }
 
 Right now, my broad view is that this is a good argument for why AI safety
-is worth thinking about
+is worth thinking about, but past that it comes down to your beliefs about
+the world. To me, it is very obvious that blindly maximizing a simple objective
+can lead to weird, unintended behavior. This shows up in reinforcement learning
+all the time - it's not a novel idea. I think most ML researchers also find this
+obvious, it shows up all over the place. If you want to produce
+lots of papers, you do different research than if you want to produce good
+work.
+
+I also find it easy to accept that it's easy to 
 
 My broad view at this time is that the argument behind AI safety is worth
 taking seriously. MIRI's agenda seems focused on exclusively thinking
