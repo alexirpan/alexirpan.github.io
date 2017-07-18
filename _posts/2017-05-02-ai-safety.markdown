@@ -6,16 +6,18 @@ date:   2017-05-02 01:14:00 -0700
 
 OUTLINE
 
-1. Complaints about the state of conversation around AI safety.
-2. Summarize the stereotypical argument about superintelligence (link a
-bunch of things about it here.)
-2a. I'm not sure how necessary this is. It might not be needed.
+1. Explain that I have problems with the current conversations around AI safety.
+2. Summarize the streotypical argument for superintelligence.
+3. Explain my opinion about it.
+4. Use this to lead into the complains I have about the conversations.
 3. Complaints about the common rationalist point of view (fair portrayal
 or not).
-4. Complains about the ML point of view (fair portrayal or not.)
-I don't know if these should be separated - the thing I want to emphasize
-is that there are several reasons to disagree with someone, but I'm not
-sure it justifies the vitriol / drama that surrounds it.
+
+The goal here is not necessarily to justify the point of view of ML researchers.
+It's to explain why people get so exasperated when people talk about AI safety.
+
+Trying not be vitriolic because I understand the arguments, but that isn't the
+same thing as wanting to actually talk about them all the time.
 
 \* \* \*
 {: .centered }
@@ -145,7 +147,12 @@ obvious, it shows up all over the place. If you want to produce
 lots of papers, you do different research than if you want to produce good
 work.
 
-I also find it easy to accept that it's easy to 
+I also find it easy to believe that the problem is hard. It's generally hard
+to prove a negative. If computer security has taught us anything, it's that
+despite having a core kernel of extremely well tested crypto, a lot of systems
+are just horribly vulnerable all the time. The attack surface is almost always
+larger than you imagine it, because the attack surface is your imagination plus
+the imagination of everybody else interested in breaking it.
 
 My broad view at this time is that the argument behind AI safety is worth
 taking seriously. MIRI's agenda seems focused on exclusively thinking
@@ -184,19 +191,10 @@ of the problem.
 \* \* \*
 {: .centered }
 
-Like a lot of other people, my first exposure to rationalists was through
-Harry Potter and the Methods of Rationality. I got pretty into it, and like all
-fiction I I followed the same pattern: read the story, then read any commentary
-and discussion I can find. Following that enough led me to some LessWrong
-links. I thought the ideas were neat, but it didn't feel like something
-I needed to care about.
+People reading HPMoR and then rapidly entering rationalist subculture.
 
-as a high school kid with lots of free time and a decent obsessive fan
-mindset, it just kind of happened. i followed some links to lesswrong,
-read a bit, but not much more than that. around this point i started
-reading some of the stereotypical rationalist discussion topics: ai box
-thought experiments, value alignment, utilitarianism,
-cryonics, etc.
+The canonical topics: AI unboxing, value alignment, utilitarianis, cryonics,
+nootropics, cognitive biases, etc.
 
 over time, my enthusiasm for these topics has died down. it's not that i think
 they're bad ideas. it's that it feels like some people are *significantly*
