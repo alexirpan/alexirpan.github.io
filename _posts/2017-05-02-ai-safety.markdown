@@ -22,10 +22,8 @@ same thing as wanting to actually talk about them all the time.
 \* \* \*
 {: .centered }
 
-*Opinion as of June 2017.*
-
-*These are my personal opinions, and don't reflect the opinions of
-any organizations I've worked with.*
+*Warning: long, good chance I'll regret writing this. Opinion as of July
+2017. Personal opinion, does not reflect opinion of anyone I've worked with.*
 
 This post has been very difficult to write.
 
@@ -147,25 +145,93 @@ obvious, it shows up all over the place. If you want to produce
 lots of papers, you do different research than if you want to produce good
 work.
 
-I also find it easy to believe that the problem is hard. It's generally hard
-to prove a negative. If computer security has taught us anything, it's that
-despite having a core kernel of extremely well tested crypto, a lot of systems
-are just horribly vulnerable all the time. The attack surface is almost always
-larger than you imagine it, because the attack surface is your imagination plus
-the imagination of everybody else interested in breaking it.
+The follow-on argument is that people expect safety problems to be difficult,
+which I also find reasonable. Once you exit mathematics, it's usually very
+hard to prove something can never happen. The vague intuition from computer
+security is that systems are often much more vulnerable than you'd expect,
+even if they're based on a core kernel of extremely well-tested theory, just
+because of software bugs, human error, and social engineering. The attack
+surfaace is almost always larger than you imagine it to be.
 
-My broad view at this time is that the argument behind AI safety is worth
-taking seriously. MIRI's agenda seems focused on exclusively thinking
-about ways to constrain superhuman systems, under the thesis that it's a very
-different problem from contraining current ML systems. I'm skeptical any of
-MIRI's work will end up being useful down the line, but that doesn't mean
-I want them to stop.
+At this point, I feel like people immediately jump to saying you should support
+MIRI or OpenAI or Open Philantrhophy Project, or FHI. You know, the
+stereotypical rationalist / EA options.
 
-The thing about AI is that it captures the imagination. At times it feels
-like everyone has an opinion on what "intelligence" means, whether it
-can really be created artificially, whether AGI is possible or not.
-No wonder everyone says they do machine learning instead of AI - it's
-less of a buzzword. (Although that's not saying much.)
+This is roughly the point where I have the largest mental disconnect. This
+probably isn't fair to AI safety enthusiasts, but it feels like people jump
+from a reasonable argument to advocacy of surprisingly few options, and
+discussion of topics that don't feel important to me.
+
+Let's take MIRI, for example. I have skimmed some of MIRI's work, and gone to
+some presentations by people from MIRI. It's all very theoretical, and I have
+a hard time believing any of it is going to be useful. They've picked such a
+theoretical view by this argument:
+
+* Constraining the behavior of systems is hard.
+* Constraining the behavior of systems with superhuman intelligence is going to
+be *extra* hard, and it's unlikely that safety efforts for current ML
+systems are going to help once AI progresses enough.
+* We aren't quite sure how to do it either, but a formal, mathematical model
+of cognition is likely to be useful for reasoning about cognition in artificial
+intelligence.
+
+I don't agree with all of these points, but all the surveys on AI timelines
+show there's close to no agreement on whether AGI is possible or when it's
+going to happen. In the face of uncertainty, the proper approach is for people
+to try many things. MIRI's research agenda is reasonable as One Of The Things
+People Can Try.
+
+So I'm going about my day, trying to stay reasonable about the whole thing, and
+then imagine somebody declaring that you should be donating all your money to
+MIRI, because they are *literally* saving the world in the most
+cost-efficient way, and how could you possibly disagree with that if you want
+to call yourself a rationalist?
+
+At which point I find it very easy to reject the label and not call myself
+a rationalist.
+
+No, no one has ever said that to me. But it's how I model the group of
+hardcore rationalists that got into the movement by falling in love with
+Yudkowsky's writing - a group of people who agreed with someone so much they
+forgot to ask themselves whether they should. People who are busying warning
+people that an AGI in a box can convince a human to do anything, without
+considering the obvious follow-up - a smart enough person convince another
+to believe anything they wanted to.
+
+(Try to be fairer to Eliezer here because the framing right now is very
+unfair.)
+
+AI captures the imagination. Stories about unaligned AGI even more so. By
+now, I've read several allegories about how AGI with a simple value function
+will kill us all. I've read three "rationalist fanfic" stories, all of which
+indepdently decided to digress into the simulation hypothesis, cryonics,
+and layman explanations of quantum mechanics. This is an exceedingly
+narrow range of topics for a group that I'd expect to pride itself on novel
+thinking. To paraphrase a friend, "I thought rationalists were supposed to
+be about thinking carefully about your comparative advantages, and instead
+people keep saying I should try modafinil, sign up for cryonics, and enter
+polyamorous relationships."
+
+I play a lot of Dominion, an exceedingly narrow interest by any metric.
+Somebody linked a post from Slate Star Codex. One of the posters was amazed by
+it. Within a week, he added links to the Sequences and SSC to his signature,
+drops random Bayesian probabilities in all his posts, and starts a thread
+on superintelligence in the general discussion forum, asking people whether
+they're closer to Eliezer Yudkowsky or Robin Hanson.
+
+This was an astoundingly quick change, from "guy who has mentioned
+effective altruism", to "most stereotypical rationalist I've ever seen",
+and it feels weird that anybody would shift how they act so quickly.
+
+\* \* \*
+{: .centered }
+
+(Can't figure out this transition.)
+
+If
+
+It hurts more when people have varying opinions of what "intelligence" means,
+and treat every new deep learning paper as a Potential Sign of the End Times.
 
 So on one hand, there's a group of people who aren't very informed on the
 field. On any article about AI, they bring up Skynet, Terminators, or HAL.
@@ -174,10 +240,6 @@ is going to understand machine learning, and I broadly don't expect
 uninformed people to know any better. In the same vein, I recognize that
 my opinion on literary theory, biology, and any chemistry/physics past
 the high school level is complete, utter garbage.
-
-On the other hand, there are the debates about the existential risk of AI,
-usually from people in some union of the effective altruism and rationalist
-communities, and those debates are where most of my frustration comes from.
 
 Broadly, it's because it feels like they should know better. It feels like
 a lot of the discussion is at a high level, uses imprecise definitions to
@@ -190,11 +252,6 @@ of the problem.
 
 \* \* \*
 {: .centered }
-
-People reading HPMoR and then rapidly entering rationalist subculture.
-
-The canonical topics: AI unboxing, value alignment, utilitarianis, cryonics,
-nootropics, cognitive biases, etc.
 
 over time, my enthusiasm for these topics has died down. it's not that i think
 they're bad ideas. it's that it feels like some people are *significantly*
@@ -466,8 +523,6 @@ So, you know. I'd like to think that fundamentalist rationalists at least keep
 things like this in mind, but I'm not sure they do.
 
 \* \* \*
-
-Now, of course, I'm not sure these claims actually apply to anybody.
 
 On average, the people I've met that have relations to LessWrong in some way
 are generally alright.
