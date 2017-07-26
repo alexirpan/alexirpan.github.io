@@ -153,6 +153,20 @@ even if they're based on a core kernel of extremely well-tested theory, just
 because of software bugs, human error, and social engineering. The attack
 surfaace is almost always larger than you imagine it to be.
 
+However, both of these are only arguments for the difficulty of the problem.
+They don't argue anything about when/if AGI is going to happen. My guesses are
+fairly pessimistic, for a few reasons.
+
+* I believe neural nets are here to stay, but I'm skeptical deep learning
+is enough for AGI. The hype around deep learning is well-founded, but they still
+have heavy limitations. Intuitively, many of these limitations feel incredibly
+foundational.
+* I don't see a clear roadmap for making an AGI of any kind, even if you didn't
+care about the safety problems, even if you used all the computers in the world
+in some way. I know people like to talk about exponential
+growth, or iterated sigmoids that look exponential, but even then I don't see
+it.
+
 At this point, I feel like people immediately jump to saying you should support
 MIRI or OpenAI or Open Philantrhophy Project, or FHI. You know, the
 stereotypical rationalist / EA options.
