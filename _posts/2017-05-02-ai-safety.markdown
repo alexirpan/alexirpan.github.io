@@ -185,64 +185,60 @@ theoretical view by this argument:
 * Constraining the behavior of systems with superhuman intelligence is going to
 be *extra* hard, and it's unlikely that safety efforts for current ML
 systems are going to help once AI progresses enough.
-* We aren't quite sure how to do it either, but a formal, mathematical model
-of cognition is likely to be useful for reasoning about cognition in artificial
-intelligence.
+* We aren't quite sure how to do it either, but we expect a mathematical, formal
+model of cognition is likely to be useful.
 
-I don't agree with all of these points, but all the surveys on AI timelines
-show there's close to no agreement on whether AGI is possible or when it's
-going to happen. In the face of uncertainty, the proper approach is for people
-to try many things. MIRI's research agenda is reasonable as One Of The Things
+I don't agree with all of this, but this is a reasonable enough argument.
+All the surveys on AI timelines suggest there's no agreement on when AGI will
+happen, or if it's even possible, and the range is even large within MIRI's
+staff. In the face of uncertainty, the proper approach is
+to try many things. MIRI's research agenda is reasonable as A Thing
 People Can Try.
 
 So I'm going about my day, trying to stay reasonable about the whole thing, and
-then imagine somebody declaring that you should be donating all your money to
+then start imagining somebody declaring that you should be donating all your money to
 MIRI, because they are *literally* saving the world in the most
 cost-efficient way, and how could you possibly disagree with that if you want
 to call yourself a rationalist?
 
-At which point I find it very easy to reject the label and not call myself
-a rationalist.
+At which point I get incredibly weary, slightly depressed, and annoyed at the
+state of the world.
 
-No, no one has ever said that to me. But it's how I model the group of
-hardcore rationalists that got into the movement by falling in love with
-Yudkowsky's writing - a group of people who agreed with someone so much they
-forgot to ask themselves whether they should. People who are busying warning
-people that an AGI in a box can convince a human to do anything, without
-considering the obvious follow-up - a smart enough person convince another
-to believe anything they wanted to.
+No one in the rationalist-sphere has ever said something like that to me. But
+it's how I model the hardcore segment that got into the movement
+by falling in love with Yudkowsky's writing - a group of people who agreed with
+someone so much, they forgot to do due diligence and ask themselves whether
+they should. A group that spends its days discussing Newcomb problems and
+warning people that an AGI can convince a human to let it out of the box,
+without considering the obvious corollary - a smart enough person could do
+the same, and maybe they already have.
 
-(Try to be fairer to Eliezer here because the framing right now is very
-unfair.)
+Artificial intelligence captures the imagination. Stories about unaligned AGI
+do so even more. I've read three "rationalist fanfic" stories, all of which
+independently decided to talk about unaligned AGI, cryonics, and the
+many-worlds interpretation of quantum mechanics - which feels like an
+exceptionally narrow range of topics for a group that I'd expect to pride
+itself on novel, skeptical thinking.
 
-AI captures the imagination. Stories about unaligned AGI even more so. By
-now, I've read several allegories about how AGI with a simple value function
-will kill us all. I've read three "rationalist fanfic" stories, all of which
-indepdently decided to digress into the simulation hypothesis, cryonics,
-and layman explanations of quantum mechanics. This is an exceedingly
-narrow range of topics for a group that I'd expect to pride itself on novel
-thinking. To paraphrase a friend, "I thought rationalists were supposed to
-be about thinking carefully about your comparative advantages, and instead
-people keep saying I should try modafinil, sign up for cryonics, and enter
-polyamorous relationships."
+To paraphrase a friend: "I thought rationalists were supposed to
+be about studying cognitive biases and figuring out how to exploit your
+comparative advantages. Instead everyone asks me to sign up for cryonics,
+advocate for AI safety, and try out polyamory."
 
-I play a lot of Dominion, an exceedingly narrow interest by any metric.
-Somebody linked a post from Slate Star Codex. One of the posters was amazed by
-it. Within a week, he added links to the Sequences and SSC to his signature,
-drops random Bayesian probabilities in all his posts, and starts a thread
-on superintelligence in the general discussion forum, asking people whether
-they're closer to Eliezer Yudkowsky or Robin Hanson.
+There's a card game I frequent pretty often, and one day somebody linked a post
+from Slate Star Codex. One poster liked it a lot. Within a week, he adds
+links to the Sequences and SSC to his signature,
+drops Bayesian probabilities in all his posts, and starts a thread asking
+whether people's beliefs on superintelligence are closer to Eliezer
+Yudkowsky or Robin Hanson.
 
-This was an astoundingly quick change, from "guy who has mentioned
-effective altruism", to "most stereotypical rationalist I've ever seen",
-and it feels weird that anybody would shift how they act so quickly.
+None of this was particularly surprising. His pattern of speaking and thinking
+was very similar to how people act in the rationalist-sphere. And yet, it feels
+weird that anybody could jump from "guy who mentioned EA once" to
+"ridiculously stereotypical rationalist" that quickly.
 
 \* \* \*
 {: .centered }
-
-(Can't figure out this transition.)
-
-If
 
 It hurts more when people have varying opinions of what "intelligence" means,
 and treat every new deep learning paper as a Potential Sign of the End Times.
