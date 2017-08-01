@@ -218,7 +218,28 @@ do so even more. I've read three "rationalist fanfic" stories, all of which
 independently decided to talk about unaligned AGI, cryonics, and the
 many-worlds interpretation of quantum mechanics - which feels like an
 exceptionally narrow range of topics for a group that I'd expect to pride
-itself on novel, skeptical thinking.
+itself on novel, skeptical thinking. I get it - these ideas are interesting
+to think about, and you think they're cool and important. But isn't it natural
+to get sick of paperclip optimizers when you've read about them for the
+5th time?
+
+(Off the top of my head:
+
+1. Superintelligence is told to create lots of notes, invents nanotech, uses up
+all the oxygen to kill humans by asphixiation, turns humans into notes.
+2. Superintelligence is told to make people happy, decides the best way to do
+this is to inject people with a serum that constantly triggers their dopamine receptors.
+3. Superintelligence is told to make people laugh by writing good jokes,
+it writes one so good that people die laughing.
+4. Superintelligence is told to maximize the happiness of players in an MMORPG,
+invents brain uploading and manipulates people until everyone has uploaded into
+the game.
+5. And of course, superintelligence is told to make lots of paperclips, invents
+nanotech, kills everyone, turns them into paperclips.
+
+*It took me like, 2 minutes to remember all of these.* Can you blame me for
+getting sick of these kinds of stories? I think it's entirely fair for me to get annoyed
+with people when present the same argument pattern, over and over again.)
 
 To paraphrase a friend: "I thought rationalists were supposed to
 be about studying cognitive biases and figuring out how to exploit your
@@ -279,26 +300,6 @@ disappointing.
 \* \* \*
 {: .centered }
 
-
-Nowadays, when people bring up the same topics,
-talk about parables of AI safety, I just get
-sick of it.
-
-By this point I've read at least three "rationalist fanfics" that were basically
-all AI safety parables. Oh look, you tell an AI to make lots of paperclips and
-it invents nanotech and converts all matter to paperclips. Hence, paperclip
-optimizer. Oh look, you tell an AI to write lots of notes and it hides its
-intelligence to fool people into thinking it's not very smart, then kills the
-human race with neurotoxin to stop it from writing lots of notes. Bam, the
-scenario from Tim Urban's Wait but Why. Oh look, you tell an AI to
-"maximize happiness of the game's players" and it manipulates all the humans until
-they play the game. Oh look, Santa's elves are real, and if you ask them to make
-people happen they create wireheading and have to be talked out of it by
-The Sane Person Who Knows This Is a Bad Idea. *I get it, I got it the first
-time.* And I know you're telling these parables because you think the ideas
-are important, and I know some people are reading about paperclip optimizers
-for the first time, but isn't it natural to get sick of paperclip optimizers
-the 5th time through?
 
 I watched Ex Machina because people hyped it up as great. It was a good movie,
 but not for me. To me it felt like it was presenting a bunch of old ideas
