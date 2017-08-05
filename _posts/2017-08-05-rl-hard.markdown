@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Why Is Reinforcement Learning Hard?"
+date:   2017-08-05 01:31:00 -0700
+---
+
+About two weeks ago, I observed on Facebook that reinforcement learning doesn't
+actually work, and then claimed that if you think RL can solve your problem,
+there's about a 70% chance you're wrong.
+
+On reflection, this pessimism is actually very central to my research frame.
+If you're the kind of person who likes talking about AI timelines, it's also
+why my timelines are so pessimistic. I think much of the recent hype for
+reinforcement learning is deserved, simply because of its potential, but
+at the same time it feels very overblown.
+
+
+Reasons Why Reinforcement Learning Is Hard
+------------------------------------------------------------------------
+
+1. It Can Be Horribly, Horribly Unstable.
+
+This is the big one, and I feel it's underappreciated by people who haven't
+implemented reinforcement learning themselves.
+
+Almost all machine learning algorithms have *hyperparameters*, which influence
+the behavior of the learning system. Often these are picked by hand, or tuned
+automatically by some hyperparameter optimization algorithm.
+
+In many supervised learning problems, even if you don't do a lot of
+hyperparameter tuning, you'll still get reasonable performance. Your accuracy
+will increase over time, and
+
