@@ -27,7 +27,13 @@ Almost all machine learning algorithms have *hyperparameters*, which influence
 the behavior of the learning system. Often these are picked by hand, or tuned
 automatically by some hyperparameter optimization algorithm.
 
-In many supervised learning problems, even if you don't do a lot of
-hyperparameter tuning, you'll still get reasonable performance. Your accuracy
-will increase over time, and
+We say an approach is *stable* if it's relatively easy to see signs of life.
+Meaning, for a wide range of hyperparameters, your accuracy will go up over time.
+You may not get amazing performance, but you'll do well enough that you know it's
+worth investing more time. Most supervised learning problems fall into this
+domain, which is very handy.
+
+For almost all problems, reinforcement learning is nowhere near as stable.
+I'm not aware of any 
+
 
