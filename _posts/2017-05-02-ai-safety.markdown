@@ -153,28 +153,103 @@ even if they're based on a core kernel of extremely well-tested theory, just
 because of software bugs, human error, and social engineering. The attack
 surfaace is almost always larger than you imagine it to be.
 
-However, both of these are only arguments for the difficulty of the problem.
-They don't argue anything about when/if AGI is going to happen. My guesses are
-fairly pessimistic, for a few reasons.
+On occasion people try to attack the premise of how easy or hard it is to
+constrain a superhuman AI system. I mostly skip these arguments, because it
+often feels like people are using imprecise defintions to argue about something
+that doesn't exist. And because superhuman AI doesn't exist, it's easy for the
+AI-safety-apologist to make the AI strong enough to render all arguments
+invalid, by saying "something something intelligence explosion."
 
-* I believe neural nets are here to stay, but I'm skeptical deep learning
-is enough for AGI. The hype around deep learning is well-founded, but they still
-have heavy limitations. Intuitively, many of these limitations feel incredibly
-foundational.
-* I don't see a clear roadmap for making an AGI of any kind, even if you didn't
-care about the safety problems, even if you used all the computers in the world
-in some way. I know people like to talk about exponential
-growth, or iterated sigmoids that look exponential, but even then I don't see
-it.
+So, most of the useful debate on the subject is on when or if AGI is going to
+happen. Well, I say "useful", but I'm not sold on how useful it actually is.
 
-At this point, I feel like people immediately jump to saying you should support
-MIRI or OpenAI or Open Philantrhophy Project, or FHI. You know, the
-stereotypical rationalist / EA options.
+Right now I'm at "10% by 35 years from now, 50% by 50 years from now, 90% by
+75 years from now". These numbers are very arbitrary, but here's my rough
+arguments for why it feels unlikely for anything notable to happen in the
+next 10 years.
 
-This is roughly the point where I have the largest mental disconnect. This
-probably isn't fair to AI safety enthusiasts, but it feels like people jump
-from a reasonable argument to advocacy of surprisingly few options, and
-discussion of topics that don't feel important to me.
+* I believe neural nets are here to stay. However, I'm skeptical scaling up
+deep learning by itself is sufficient. The hype around deep learning is
+well-founded, but I believe neural nets have fundamental limitations that are
+hard to deal with. (It's hard for me to articulate what exactly those are.)
+* I don't see a clear roadmap for making an AGI of any kind. Even if you
+don't care about the safety problems, even if you use all the computers in the
+world, plus a Moore's law growth in computational power.
+I know people are very fond of exponential growth, or of iterated sigmoids that
+look exponential when you zoom out, but even then I don't see it as particularly
+likely - it feels like there are several large conceptual problems in the way,
+and more that we can't see right now.
+* Deep learning successes get written into papers, presented at conferences,
+and get discussed widely. In some cases, they get turned into popular science
+articles that don't include all the words of caution that are implicitly present
+in the original paper. By contrast, the negative results aren't discussed very
+widely, and mostly accumulate as instituional knowledge in various labs. If you
+only pay attention to the success stories, it's easier to extrapolate a drastic
+trend in performance. Think filter bubbles, except it's a filter bubble around
+how successful the technology is.
+
+Moving apart from direct theories about AGI, I also have some reservations about
+the arguments presented by various organizations.
+
+* Some organiziations (like 80,000 Hours and OpenPhil) have stated that they
+believe more people should work on AI safety. I like that people are thinking
+about AI safety, and I like that both DeepMind and OpenAI have safety teams.
+Both have some room for growth, but I dont think they should grow by much more,
+because it's unclear to me that there's enough potential impact.
+
+I think people often frame the argument as "people don't think AI safety is
+important", when the more common belief I've heard is "people think safety will
+be important to keep in mind, but current systems have little need for it."
+Right now, the money is in better translation, better computer vision, and
+better model of user preferences. Over time I expect reward hacking to be a
+more important problem, that will have to be solved to produce good products.
+which puts much more economic incentive into safety-like problems.
+
+For example, the Concrete Problems in AI Safety paper mentions a thought
+experiment of a household robot getting reward if it can't see any dust. The
+robot decides to cover all furniture with a blanket, because it's easier than
+cleaning the room. This is a thought experiment because household robots don't
+exist. But if anyone wants to make a household robot, consumers will want the
+household robot to do what they tell it to do.
+
+Or as another example: someone asks Google Home "How do you spell SOS in
+Morse Code?". The assistant replies with "S-O-s-Space-I-N-Space-M-O-R-S-E-Space-...".
+For now, it's a cute quirk of the behavior, but I think over time people will
+get normalized to what ML and do and will ask for better.
+
+(Note: I'm very sure you can poke holes in both of these examples, but I'm more
+concerned about the holistic point: there are currently few economic incentives
+for AI safety, and I expect there will be more economic incentives in the future.)
+
+(Note 2: I'm guessing this is why OpenAI has both NLP and robotics in their
+list of research interests - it creates scenarios where an improper AI doesn't
+do that much damage, but is still important to deal with to keep eople happy.)
+
+(Note 3: This is not a novel idea. Stuart Russell made a similar point in his
+keynote talk at the 2016 Bay Area Robotics Symposium.)
+
+As a further branching point from this, I think my definition of safety-like
+problems is broader than the standard one. To me, all of the following are
+important problems.
+
+* Fairness: how do we ensure machine learning isn't discriminatory? Important
+in discussiona about racial profiling, eligibility of home ownership,
+learned associations between genders and roles.
+* Privacy: machine learning techniques can memorize parts of their training
+data, which can be extractable by an adversary. This is less of a concern with
+images, but is more concerning if you want to apply ML to healthcare - how do
+you best prevent leaks of patient data? See differential privacy.
+* Adversarial inputs: it's been shown that we can create inputs that get
+mislabled with high confidence. Furthermore there are papers showing that
+some of these perturbations are universal across all images, that this is
+achievable even if you only get black-box queries to the model (like through
+a computer vision API), and with proper
+training the results are robust to various image transformations. When ML
+becomes more prevalent, how do we deal with these concerns?
+* Human-computer interaction: how do humans interact with computer agents?
+How can a robot do something that invites the proper human response?
+How do humans model a robot's actions?
+
 
 Let's take MIRI, for example. I have skimmed some of MIRI's work, and gone to
 some presentations by people from MIRI. It's all very theoretical, and I have
@@ -253,24 +328,66 @@ drops Bayesian probabilities in all his posts, and starts a thread asking
 whether people's beliefs on superintelligence are closer to Eliezer
 Yudkowsky or Robin Hanson.
 
-None of this was particularly surprising. His pattern of speaking and thinking
-was very similar to how people act in the rationalist-sphere. And yet, it feels
-weird that anybody could jump from "guy who mentioned EA once" to
+Honestly, none of this was particularly surprising, because his pattern of
+speaking was very similar to how people act in the rationalist sphere.
+And at the same time, I think it's sad that it *wasn't* surprising that
+anybody could jump from "guy who mentioned EA once" to
 "ridiculously stereotypical rationalist" that quickly.
 
 \* \* \*
 {: .centered }
 
-It hurts more when people have varying opinions of what "intelligence" means,
-and treat every new deep learning paper as a Potential Sign of the End Times.
+In many ways, the rationalist community reminds me of the math contest
+community - a group of people who, after much searching, have found people who
+finally speak the same language they do, and all the consequences thereof.
+It should come as no surprise that the two have a healthily large overlap.
 
-So on one hand, there's a group of people who aren't very informed on the
-field. On any article about AI, they bring up Skynet, Terminators, or HAL.
-It gets old really fast, but I'm generally fine with this. Not everyone
-is going to understand machine learning, and I broadly don't expect
-uninformed people to know any better. In the same vein, I recognize that
-my opinion on literary theory, biology, and any chemistry/physics past
-the high school level is complete, utter garbage.
+The large focus on AI safety that some people have is wearying and annoying.
+I get annoyed when I read people arguing what precisely "intelligence" means.
+I get further annoyed when people read a news article about a recent deep
+learning paper, and herald it as a Potential Sign of the End Times.
+
+Take, for instance, the Neural Cryptography paper. Here's roughly how it goes:
+Alice and Bob are two neural networks with shared parameters. Each agent
+has an encoder, which takes a message $$m$$ and key $$k$$, then outputs
+some output $$m'$$. There's a decoder, which takes $$m'$$ and $$k$$ and
+is trained to reconstruct $$m$$ as closely as possible.
+
+In between the two is Eve, a neural network which receives just $$m'$$,
+and tries to reconstruct $$m$$. The two are trained adversarially - Alice
+and Bob are trained to maximize Eve's confusion (# of bits it gets wrong),
+and Eve tries to maximize the # of bits it gets right.
+
+It's a cute idea, but the experiments were very small - they give each
+network an 8 bit message, and an 8 bit key, and the model didn't even learn
+a one-time pad, it learned something that kinda worked. I went to a talk
+the authors gave, and they talked about how that was the best they got,
+even after lots of tuning.
+
+So in short: a cute research idea, with results suggesting you could
+*kind of* do this, but not much more than that. It was submitted to ICLR
+and rejected for similar reasons, and I think that verdict is fair.
+
+But in the media coverage of the paper....oh jeez, let me pull up the headlines.
+
+HEADLINES HERE.
+
+Meanwhile my transhumanist friends were discussing it as if it was a great
+advance, extrapolating to AI agents using steganography to encode messages to
+one another, wondering what the next plan was with neural cryptography, and
+all sorts of massively oversized speculation given the results of the work.
+
+In moments like these, it's very hard to be fair towards the seeming
+hypocrisy - proclaiming the importance of listening to experts and actually
+reading the paper, and then selectively ignoring it when talking about AI,
+and when confronted about it, pulling up some general heuristic like "well,
+you're just underestimating the trend of research, here's a Wikipedia article
+for it."
+
+This isn't even a wrong thing to say! It's a valid point! But at the same time
+it feels like people aren't aware of the limitations of deep learning, and
+are selectively building a worldview based only on its successes, because that's
+what they hear about the most.
 
 Broadly, it's because it feels like they should know better. It feels like
 a lot of the discussion is at a high level, uses imprecise definitions to
@@ -283,11 +400,6 @@ of the problem.
 
 \* \* \*
 {: .centered }
-
-over time, my enthusiasm for these topics has died down. it's not that i think
-they're bad ideas. it's that it feels like some people are *significantly*
-more excited about them than they should be, and every time i see it i get a
-little bit sick of it.
 
 it's hit that point that i now have a model of "the strawman rationalist".
 The strawman rationalist is not fair. The strawman rationalist does not match
