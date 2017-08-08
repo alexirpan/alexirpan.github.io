@@ -4,134 +4,124 @@ title:  "Sometimes I Think About AI Safety and Rationalists and I Get Depressed 
 date:   2017-05-02 01:14:00 -0700
 ---
 
-OUTLINE
-
-1. Explain that I have problems with the current conversations around AI safety.
-2. Summarize the streotypical argument for superintelligence.
-3. Explain my opinion about it.
-4. Use this to lead into the complains I have about the conversations.
-3. Complaints about the common rationalist point of view (fair portrayal
-or not).
-
-The goal here is not necessarily to justify the point of view of ML researchers.
-It's to explain why people get so exasperated when people talk about AI safety.
-
-Trying not be vitriolic because I understand the arguments, but that isn't the
-same thing as wanting to actually talk about them all the time.
-
-\* \* \*
-{: .centered }
-
-*Warning: long, good chance I'll regret writing this. Opinion as of July
+*Warning: good chance I'll regret writing this. Opinion as of July
 2017. Personal opinion, does not reflect opinion of anyone I've worked with.*
 
-This post has been very difficult to write.
+*This post has been very difficult to write.
+In the course of writing this, I've found notes from 8 months ago that I don't
+agree with, and a draft from 6 months ago that was so revolting I deleted it out
+of disgust. The general structure of this post has changed at least four times
+and I'm still not that satisfied with it. Perfection is the enemy of the good, but
+on this topic, I wanted to make sure I did it right, because of how much of my life
+ends up intersecting with the topic.*
 
-I've been trying to write it for well over a year. I found some notes
-from 8 months ago that I don't agree with anymore. Six months ago,
-I looked at a draft, and the writing was so revolting that I
-deleted it out of disgust.
-
-I've been trying to write this post for over a year.
-
-There are some notes from 8 months ago that I don't agree with anymore.
-There was a draft from 6 months ago, which I deleted out of disgust.
-
-All my feelings on this subject are...jumbled. A cacophony of latent
-beliefs, hazy thoughts, and lots and lots of frustration at my inability to
-explain things to myself. At this point, I just want it to be *done*,
-because I'm sick of bottling up monologues.
-
-That feels like a problem. Let's dig in and do some...*introspection.*
-
-![Panel from SMBC comic about introspection](/public/ai-safety/introspection.png)
-{: .centered }
-
-Source: [SMBC](http://www.smbc-comics.com/comic/2011-04-25)
-{: .centered }
+*I say all this to let you know that although I'm doing my best to explain my position,
+it is almost certain that I haven't. I'm hoping that I got close enough.*
 
 \* \* \*
 {: .centered }
 
-Roughly, AI safety centers around this question: "HOw do we make sure
-AI acts the way we want it to?" The core premise is that machine learning
-is a transformative technology, with a lot of potential for good and bad,
-and it would be nice if we could avoid the bad stuff.
+What Is AI Safety?
+----------------------------------------------------------------------------------
 
-AGI stands for artificial general intelligence, a hypothetical machine
-learning system that can perform any task at least as well as the average
-human could. Depending on how pessimistic you are, some people believe that
-AGI will most likely kill all life on Earth, and then kill all life in the
-galaxy in a death wave that spreads at nearly the speed-of-light.
+There are several treatises on the subject, but I think there's value in showing
+my frame on the problem.
 
-This is a controversial opinion, to put things mildly.
+Roughly, AI safety centers around this question:
 
-I'm not going to attempt to cover all the arguments.
-Like all controversial topics, there are thousands of pages worth of discussion,
-scattered across the Internet.
+> How do we make sure AI acts the way we want it to?
 
-What I'm going to explain is a more personal problem: I usually avoid
-participating in any of them, because very often, I get turned off for one reason
-or another, then leave.
+Very often, people narrow it down to this question:
 
-\* \* \*
-{: .centered }
+> When artificial general intelligence arrives, how do we make sure AGI does
+> what we want it to do?
 
-Now, I know I said I wasn't going to try to cover all the arguments, but I have
-to cover at least some of them.
+Just in case you're unfamiliar withe the terms: AGI stands for artificial
+general intelligence, a hypothetical machine learning system that can perform any
+task at least as well as the average human could. This includes learning new tasks at
+least as well as the average human, becuase learning is a thing humans can do.
 
-Here is the rough foundation for AI safety.
+Now, depending on how pessimistic you are, some people believe that
+AGI will most likely kill all life on Earth. Depeding on your opinions on the limits
+of technology, maybe it'll kill all life in the galaxy in a death wave that spreads
+at close to the speed-of-light.
 
-* At some point, there will be an AI that can do any task at a superhuman level.
-* That AGI will be told to do something.
-* Almost all tasks are easier if you can think faster, so the AI will
-decide to improve itself as much as it can.
-* Almost all tasks are easier if you're alive, so the AI will decide to
-minimize the chance anybody disables it.
-* Therefore, a sufficiently smart AI may decide to kill all humans, to stop
-any humans from disabling it.
-* And furthermore, this may happen even if the task it is trying to do is
-simple.
+This is a controversial subject, to put things mildly. It has generated thousands of
+pages worth of discussion all across the Internet. I'm not going to attempt to cover
+all the arguments, because I don't know all the arguments. I'll cover the ones I know,
+and then I'll get into my reservations.
 
-This is the value alignment part of the argument, and is the core of pretty
-much all concerns on the subject.
+
+The Existential Risk Inductive Chain
+---------------------------------------------------------------------------------
+
+This is the foundation of AI safety advocacy - pretty much everybody specifically
+concerned about the x-risk aspects of machine learning knows a spiel for this
+by heart.
+
+* Suppose that at some point, there is an AGI that can do any task at a superhuman level.
+* That AGI will eventually be given some goal.
+* Almost all tasks are easier if you can think faster, so the AGI will
+decide to self-improve as quickly as possible.
+* Almost all tasks are easier if you have control, so the AGI will decide to
+minimize the chance anybody can disable it. Redundant copies, metaphorically
+"hiding the off-switch", etc.
+* Combined, such an AGI may first self-improve past the point of humanity's ability
+to deal with it, then decide to kill all humans, because humans can't turn you off
+if all the humans are dead.
+* Importantly, this could potentially happen for any task, even if the AGI's
+goal sounds benign, because again - everything's easier if you're smarter and you're
+alive.
+
+(...at which point, I imagine someone saying, "And that is why you should donate at
+least 10% of your income to a mix of MIRI and OpenAI". But we'll get into that later.)
+
+This part of the argument is called *value alignment*, and people refer to "the
+value alignment problem" in similar terms.
 
 Here's an alternate way to form the argument.
 
 * Blindly optimizing an objective can lead to lots of unexpected behavior.
 * When humans optimize for something, they usually follow some implicit
 ethics that stops them from doing anything too heinous.
-* A superhuman AI may not have those implicit ethics, and the unexpected
-behavior could include killing all humans.
+* Superhuman AGI may not have those implicit ethics, at which point many
+bad things could happen.
 
-The other core component is the intelligence explosion argument.
+People like to focus on the value alignment part of the argument, but the other
+component is the *intelligence explosion* component. This is just as pivotal
+to the argument as value alignment.
 
-* Suppose there is an AI that can do scientific research at a human level.
-* Humans have discovered new technology and inference algorithms by doing
-research, and presumably such an AI could do the save.
-* If that AI applies those advances to itself, it can speed up its own
-rate of discovery.
-* Therefore there's a chance that once AI reaches a certain point, it can
-repeatedly discover new techniques to improve itself, faster and faster,
-until it reaches the level of superhuman performance that people worry about
-for the value alignment argument.
-* And furthermore, by a similar value alignment argument, if an AI is asked
-to do any task, it may decide to pursue intelligence explosion, because it'll
-make performing the task easier.
+In the above, this was abstracted as "the AGI will self-improve as quickly as
+possible". Let's expand this point.
 
-Intelligence explosion is foundational to many of the arguments people like
-to advocate for, because if you assume that a system can go from barely
-capable to superhuman very quickly, then you can say that it'll be unclear
-when an AI has the potential to become superhuman, which makes it harder for
-people to tell when they should be careful. Or you can say that an AI can go
-from dumb to actually-smart-but-pretending-to-be-dumb. I'm sure there are
-other arguments I'm missing.
+* Suppose there is an AGI that can do scientific research at human level or
+above.
+* Humans have discovered better machine learning algorithms by doing
+research. By definition, such an AGI could do the save.
+* Suppose that AGI discovers some advance. It could apply it to itself, which
+speeds up its rate of discovery.
+* Therefore, there's a chance that once AI reaches a certain point, it can
+repeatedly discover new techniques to improve itself at a faster and faster
+rate (i.e. recursive self-improvement leading to exponential gains.)
+* Note that it doesn't have to be exponential. One common theory of technology
+is that it follows a sigmoid curve. First it's used rarely, then there's a rapid
+period of discovery, then the limitations of the technique are figured out and
+discovery slows down. The concern is less about a single technique giving exponential
+gains. It's more about discovering several techniques, each with their
+own period of rapid discovery, making it look like exponential growth when zoomed
+out.
 
-It's also foundational because it lets you argue that people who disagree about
-AI safety are simply falling prey to underestimating exponential growth.
+I consider this pivotal because people use both the Sword of Value Alignment
+and Sword of Intelligence Explosion to fend off the common counterarguments.
 
-It's also foundational because it pushes the timeline for when AGI happens to
-be a lot sooner.
+* If someone says AGI won't harm humans, you wave the Value Alignment sword and
+say it's easy for AGI to accidentally end up hurting humans.
+* If someone says it will be obvious when AGI will happen, you wave the Intelligence
+Explosion sword and say that it may not be obvious until it happens, at which
+point it's too late.
+* If someone says AGI is too far off to be concerned about, you wave the Intelligence
+EXplosion sword again and tell people they underestimate exponential growth in their
+timelines for when / if AGI happens.
 
 \* \* \*
 {: .centered }
@@ -230,7 +220,7 @@ keynote talk at the 2016 Bay Area Robotics Symposium.)
 
 As a further branching point from this, I think my definition of safety-like
 problems is broader than the standard one. To me, all of the following are
-important problems.
+safety-like problems.
 
 * Fairness: how do we ensure machine learning isn't discriminatory? Important
 in discussiona about racial profiling, eligibility of home ownership,
@@ -247,9 +237,18 @@ a computer vision API), and with proper
 training the results are robust to various image transformations. When ML
 becomes more prevalent, how do we deal with these concerns?
 * Human-computer interaction: how do humans interact with computer agents?
-How can a robot do something that invites the proper human response?
-How do humans model a robot's actions?
+How do humans interpret robot behavior, and in turn, how can we make sure
+robots accurately model human behavior?
+* Interpretability: decision trees are well-known for being interpretable.
+Neural nets are well-known for being harder to interpret. This is a blocker
+for areas like medicine, where doctors place a lot of value on understanding
+what a model is doing.
 
+These all feel like necessary questions to answer if we want machine learning
+to play a larger role in life. I'm not a big x-risk person, but if I preteded
+to be a big x-risk person, and bought the AI x-risk argument, I could still
+see these approaches as giving useful lessons for the future...except on the
+side, it's also more useful in the present day.
 
 Let's take MIRI, for example. I have skimmed some of MIRI's work, and gone to
 some presentations by people from MIRI. It's all very theoretical, and I have
@@ -663,8 +662,6 @@ No true Scotsman problem.
 
 The problem people have is mostly with Yudkowsky and beliefs close to those
 ones.
-
-The feeling that people are arguing in circles.
 
 The feeling that people from other areas of expertise are advocating for the
 right thing to do, talking about something they don't understand, and knowing
