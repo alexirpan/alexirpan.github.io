@@ -4,7 +4,7 @@ title:  "Sometimes I Think About AI Safety and Rationalists and I Get Depressed 
 date:   2017-05-02 01:14:00 -0700
 ---
 
-*Warning: good chance I'll regret writing this. Opinion as of July
+*Warning: good chance I'll regret writing this. Opinion as of August
 2017. Personal opinion, does not reflect opinion of anyone I've worked with.*
 
 *This post has been very difficult to write.
@@ -18,8 +18,6 @@ ends up intersecting with the topic.*
 *I say all this to let you know that although I'm doing my best to explain my position,
 it is almost certain that I haven't. I'm hoping that I got close enough.*
 
-\* \* \*
-{: .centered }
 
 What Is AI Safety?
 ----------------------------------------------------------------------------------
@@ -117,58 +115,136 @@ and Sword of Intelligence Explosion to fend off the common counterarguments.
 * If someone says AGI won't harm humans, you wave the Value Alignment sword and
 say it's easy for AGI to accidentally end up hurting humans.
 * If someone says it will be obvious when AGI will happen, you wave the Intelligence
-Explosion sword and say that it may not be obvious until it happens, at which
-point it's too late.
+Explosion sword and say that by the time it's obvious, it may be too late to do much
+about it.
 * If someone says AGI is too far off to be concerned about, you wave the Intelligence
-EXplosion sword again and tell people they underestimate exponential growth in their
-timelines for when / if AGI happens.
+EXplosion sword again and tell people they underestimate the potential of exponential
+growth.
 
-\* \* \*
-{: .centered }
+
+Thoughts on the Inductive Chain
+---------------------------------------------------------------------------
 
 Right now, my broad view is that this is a good argument for why AI safety
-is worth thinking about, but past that it comes down to your beliefs about
-the world. To me, it is very obvious that blindly maximizing a simple objective
-can lead to weird, unintended behavior. This shows up in reinforcement learning
-all the time - it's not a novel idea. I think most ML researchers also find this
-obvious, it shows up all over the place. If you want to produce
-lots of papers, you do different research than if you want to produce good
-work.
+is worth thinking about, but past that it very heavily comes down to your beliefs
+about technology, which is a very fuzzy subject that's hard to argue much about.
 
-The follow-on argument is that people expect safety problems to be difficult,
-which I also find reasonable. Once you exit mathematics, it's usually very
-hard to prove something can never happen. The vague intuition from computer
-security is that systems are often much more vulnerable than you'd expect,
-even if they're based on a core kernel of extremely well-tested theory, just
-because of software bugs, human error, and social engineering. The attack
-surfaace is almost always larger than you imagine it to be.
+I find it very obvious that blindly maximizing a simple objective
+can lead to weird, unintended behavior. This shows up all the time in machine
+learning. Minimizing classification loss on your training set is not the same as
+maximizing classification accuracy. Maximizing accuracy on your training set isn't
+the same as maximizing accuracy in the real world.
 
-On occasion people try to attack the premise of how easy or hard it is to
-constrain a superhuman AI system. I mostly skip these arguments, because it
-often feels like people are using imprecise defintions to argue about something
-that doesn't exist. And because superhuman AI doesn't exist, it's easy for the
-AI-safety-apologist to make the AI strong enough to render all arguments
-invalid, by saying "something something intelligence explosion."
+On occasion, it helps to model machine learning algorithms as learning the
+easiest thing necessary to get good performance, and no more.
+In one famous story, the army asked researchers to label images as containing or not
+containing a tank. They got good performance on their training data, and failed
+miserably in the real world. After inspecting their data, they found that all the images
+with tanks in them were taken during the daytime, so their model decided that every bright
+image had to have a tank in it. Reward hacking happens when learning something
+easy is enough to get good performance.
 
-So, most of the useful debate on the subject is on when or if AGI is going to
-happen. Well, I say "useful", but I'm not sold on how useful it actually is.
+This is especially important to think about in RL, because in practice it's
+very easy to design reward functions with bad local maxima. For example, one task in
+OpenAI Gym is to move a two-segment arm to a point. You get reward based on the
+distance to that point. When training models on this task, I found my networks would
+often learn to spin the arm in a very fast circle. On average, the arm isn't that far
+from the point, and it's easy to spin in a circle - just apply the maximum torque at
+every joint.
 
-Right now I'm at "10% by 35 years from now, 50% by 50 years from now, 90% by
-75 years from now". These numbers are very arbitrary, but here's my rough
-arguments for why it feels unlikely for anything notable to happen in the
-next 10 years.
+This is one of the simplest RL tasks out there, and already I have to think about
+whether there are simple behaviors that are hard to escape from. Once a network
+discovers that spinning very fast isn't that bad, it's hard to get it to stop
+spinning very fast.
 
-* I believe neural nets are here to stay. However, I'm skeptical scaling up
-deep learning by itself is sufficient. The hype around deep learning is
-well-founded, but I believe neural nets have fundamental limitations that are
-hard to deal with. (It's hard for me to articulate what exactly those are.)
+In short, I accept that a superhuman AGI may not do what we expect it to do,
+and I've yet to talk to a ML researcher who's said otherwise, because every
+ML researcher has run into a model that didn't do what they expected it to do.
+Value alignment is not a novel idea - it's telling that Isaac Asimov first wrote
+the Three Laws of Robotics, then immediately wrote a short story of a Three-Laws
+compliant robot killing humans. Then he came up with a Zeroth Law. Then he
+wrote a short story of a Zeroth Law compliant robot that kills humans...
+
+The follow-on argument is that people expect the safety problems to be
+difficult, and therefore we should have people thinking about them now. This
+also sounds reasonable to me. There's a lesson from computer security: the attack
+surface is always larger than you think it is. (This is why security people like to
+say that everything is broken.) If you're modeling superhuman AGI as an adversary
+that's trying to misinterpret things as horribly as possible, it's easy to
+figure something out.
+
+(On occasion, people try to argue it's easy to constrain a superhuman AI system.
+I mostly consider these arguments a distraction, because the AI-safety-apologist
+can usually pretend the AGI is powerful enough to make these arguments invalid,
+by saying "something something intelligence-explosion-then-AGI-argues-itself-out-of-the-box".)
+
+(For similar reasons, I've never really liked reading people debate things like
+the orthogonality thesis. In these kinds of arguments, it often feels like people
+are leaning on too much philosophy, and are using imprecise or incomplete
+descriptions of imaginary objects to argue something fundamental about the world.
+And because the inputs (the descriptions) are fuzzy, the end result is also
+fuzzy, at which point I woner why I should care.)
+
+Overall, excluding some warts, I think being concerned is fair, if you believe
+superhuman AGI is going to happen before people have figured out how to handle
+it. My biggest disagreement is on when it happens.
+
+
+Timelines (AKA "The Part Where Some AI Safety Advocates Get Mad At Me")
+------------------------------------------------------------------------------
+
+I should start by saying that I think a lot of timeline discussion isn't
+very useful.
+
+Over the past few years, people have given out surveys to various ML researchers,
+asking when or if AGI will happen. Fairly consistently across the board, the
+results have shown that there is massive variance. Some people say never, some
+people say it'll happen in 10 years with 90% confidence. But if we know that
+there's massive variance in the outcome, what's the point in even asking?
+
+When asked, many machine learning researchers don't like giving estimates of
+when AI will be able to do something. That's not because they don't care - it's
+their research area, of course they care! It's more that they know it's very
+hard to predict research progress, so there's not much point in giving an
+answer. I fall into a similar view.
+
+(If you prefer more rationalist / decision theory terms: the value of
+information in hearing the answer is so low that it's not worth the risk of
+giving people weird misconceptions about the field.)
+
+By contrast, I feel like the mainstream rationalist argument is that
+existential risk is massively, massively important. And therefore, any piece
+of information on timelines, no matter how noisy, is important to hear.
+Because people's strategies are all based 
+
+For the record, 10 years with 90% confidence sounds insane to me. Last time
+I was forced to give numbers, I gave "10% likelihood within 35 years,
+50% likelihood within 50 years, 90% likelihood within 75 years". These numbers
+are fairly arbitrary and don't mean much, but I'll explain them anyways.
+
+* I believe neural nets are here to stay, but I'm skeptical that
+deep learning by itself is enough. There's a lot of hype around deep learning,
+and for good reason, but they can be a bit finicky and it feels like they
+have fundamental limitations that are hard to deal with. (It's tricky for
+me to articulate what those are.)
 * I don't see a clear roadmap for making an AGI of any kind. Even if you
 don't care about the safety problems, even if you use all the computers in the
-world, plus a Moore's law growth in computational power.
-I know people are very fond of exponential growth, or of iterated sigmoids that
-look exponential when you zoom out, but even then I don't see it as particularly
-likely - it feels like there are several large conceptual problems in the way,
+world, and accounting for a Moore's law growth in computational power.
+It feels like there are several large conceptual problems in the way,
 and more that we can't see right now.
+* Furthermore, people have been working on this literally from the start of
+the field. I feel like people aren't pricing in what that implies about the
+difficulty of the problem. Sure, computers have gotten a lot faster, but
+I believe there are big conceptual problems in the way, and progress on
+conceptual problems is less dependent on hardware - that the problems still
+exist is a strong indicator that they're quite, quite difficult. (In the same
+way that people have yet to give a good refutation to value alignment, despite
+how long that problem has been around.)
+
+At this point, I'm imagining a strawman rationalist yelling that I'm bad at
+exponential growth and don't know about scope senstivity and that I'm another
+one of those people who thinks AI safety is stupid. To which I'd 
+
 * Deep learning successes get written into papers, presented at conferences,
 and get discussed widely. In some cases, they get turned into popular science
 articles that don't include all the words of caution that are implicitly present
@@ -491,14 +567,6 @@ listen to people who do more ML.
 The thing is, I broadly agree with the argument for AI safety, if you assume
 a sufficiently powerful AI. And furthermore, none of the ML researchers I know
 dispute the argument, given the premise.
-If you do enough reinforcement learning, it's
-obvious that reward function design is really hard, because of how easy it
-is to get stuck at local optima. If you blindly optimize training set loss,
-you overfit to the data. If everyone designs algorithms and tests them on
-32 x 32 CIFAR images, they're not going to generalize as well because people
-have trial-and-errored there way to methods that only work well on CIFAR.
-A common metric in NLP is BLEU, which you can optimize with RL, but if you
-do so you don't get better human-graded performance.
 
 People do things like debate the orthogonality thesis, or debate whether
 an AI can convince a human to let it out of the box, but these are debates
