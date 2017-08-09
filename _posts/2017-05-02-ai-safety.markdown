@@ -5,7 +5,8 @@ date:   2017-05-02 01:14:00 -0700
 ---
 
 *Warning: good chance I'll regret writing this. Opinion as of August
-2017. Personal opinion, does not reflect opinion of anyone I've worked with.*
+2017. Personal opinion, does not reflect opinion of anyone I've worked with.
+I reserve the right to change my opinion later.*
 
 *This post has been very difficult to write.
 In the course of writing this, I've found notes from 8 months ago that I don't
@@ -182,15 +183,15 @@ by saying "something something intelligence-explosion-then-AGI-argues-itself-out
 the orthogonality thesis. In these kinds of arguments, it often feels like people
 are leaning on too much philosophy, and are using imprecise or incomplete
 descriptions of imaginary objects to argue something fundamental about the world.
-And because the inputs (the descriptions) are fuzzy, the end result is also
-fuzzy, at which point I woner why I should care.)
+And because the inputs are fuzzy, it quickly turns into unverifiable philosophy,
+at which point I wonder why I should care.)
 
 Overall, excluding some warts, I think being concerned is fair, if you believe
 superhuman AGI is going to happen before people have figured out how to handle
 it. My biggest disagreement is on when it happens.
 
 
-Timelines (AKA "The Part Where Some AI Safety Advocates Get Mad At Me")
+Timelines (AKA "The Part Where Some AI Safety Advocates May Get Mad At Me")
 ------------------------------------------------------------------------------
 
 I should start by saying that I think a lot of timeline discussion isn't
@@ -215,11 +216,9 @@ giving people weird misconceptions about the field.)
 By contrast, I feel like the mainstream rationalist argument is that
 existential risk is massively, massively important. And therefore, any piece
 of information on timelines, no matter how noisy, is important to hear.
-Because people's strategies are all based 
 
-For the record, 10 years with 90% confidence sounds insane to me. Last time
-I was forced to give numbers, I gave "10% likelihood within 35 years,
-50% likelihood within 50 years, 90% likelihood within 75 years". These numbers
+To appease the second group, I'll give my estimate: 10% likelihood within 35 years,
+50% likelihood within 50 years, 90% likelihood within 75 years. These numbers
 are fairly arbitrary and don't mean much, but I'll explain them anyways.
 
 * I believe neural nets are here to stay, but I'm skeptical that
@@ -232,27 +231,56 @@ don't care about the safety problems, even if you use all the computers in the
 world, and accounting for a Moore's law growth in computational power.
 It feels like there are several large conceptual problems in the way,
 and more that we can't see right now.
-* Furthermore, people have been working on this literally from the start of
+* People have been working on this literally from the start of
 the field. I feel like people aren't pricing in what that implies about the
 difficulty of the problem. Sure, computers have gotten a lot faster, but
 I believe there are big conceptual problems in the way, and progress on
-conceptual problems is less dependent on hardware - that the problems still
-exist is a strong indicator that they're quite, quite difficult. (In the same
+conceptual problems is less dependent on hardware. That the conceptual problems
+still exist is a strong indicator that they're quite, quite difficult. (In the same
 way that people have yet to give a good refutation to value alignment, despite
 how long that problem has been around.)
+* Successes get written into papers, presented at conferences, sent through
+university and industry PR machines, and get discussed widely. Failures
+do not. Because you hear about accomplishments a lot more than failures,
+it's easy to extrapolate a faster trend than a slower one, and this makes me
+inclined to downweight my guesses.
 
-At this point, I'm imagining a strawman rationalist yelling that I'm bad at
-exponential growth and don't know about scope senstivity and that I'm another
-one of those people who thinks AI safety is stupid. To which I'd 
+By that point, I expect enough safety research to be done.
+To me, it often feels like EA-minded people frame the argument as
+"researchers don't think AI safety is important and we do". The more common
+belief I've heard is "I don't think it's worth spending a lot of resources
+on safety right now, but I don't mind that people are working on it." Which
+is around where I'm at. Right now, the money is in better translation,
+better computer vision, and better recommendations. We're still very much at
+the start of integrating machine learning into society. Over time I expect
+safety problems to be more important for producing good products, which
+will put more economic incentive into those lines of research.
 
-* Deep learning successes get written into papers, presented at conferences,
-and get discussed widely. In some cases, they get turned into popular science
-articles that don't include all the words of caution that are implicitly present
-in the original paper. By contrast, the negative results aren't discussed very
-widely, and mostly accumulate as instituional knowledge in various labs. If you
-only pay attention to the success stories, it's easier to extrapolate a drastic
-trend in performance. Think filter bubbles, except it's a filter bubble around
-how successful the technology is.
+For example, the Concrete Problems in AI Safety paper (which I like quite a lot)
+mentions a thought experiment of a household robot getting reward if it can't
+see any dust. It decides to cover all the furniture with a blanket, because
+that's easier than cleaning the room. This is a thought experiment because
+household robots don't exist, but if household robots did exist, the one that
+does what people expect it to do will be a better product. This starting to
+happen with the various voice assistants, like Google and Alexa and Siri and
+Cortana, except right now people don't expect them to work all the time because
+the tech is so new.
+
+(Aside: I'm very sure you can poke holes in this example, but I'm more
+concerned about the holistic point: there are currently few economic incentives
+for AI safety, and I expect there will be more economic incentives in the future.)
+
+(Aside 2: I'm guessing this is why OpenAI has a household robot as a research
+goal. It creates low-risk scenarios where an agent can't do alot of damage
+
+(Aside 3: This is not a novel idea. Stuart Russell made a similar point in his
+keynote talk at the 2016 Bay Area Robotics Symposium. Except his example was a
+robot deciding to turn the family pet into food. I guess he wanted to be
+shocking.)
+
+
+Strategy (AKA "The Part Where Even More AI Safety Advocates May Get Mad At Me")
+--------------------------------------------------------------------------------
 
 Moving apart from direct theories about AGI, I also have some reservations about
 the arguments presented by various organizations.
@@ -262,37 +290,6 @@ believe more people should work on AI safety. I like that people are thinking
 about AI safety, and I like that both DeepMind and OpenAI have safety teams.
 Both have some room for growth, but I dont think they should grow by much more,
 because it's unclear to me that there's enough potential impact.
-
-I think people often frame the argument as "people don't think AI safety is
-important", when the more common belief I've heard is "people think safety will
-be important to keep in mind, but current systems have little need for it."
-Right now, the money is in better translation, better computer vision, and
-better model of user preferences. Over time I expect reward hacking to be a
-more important problem, that will have to be solved to produce good products.
-which puts much more economic incentive into safety-like problems.
-
-For example, the Concrete Problems in AI Safety paper mentions a thought
-experiment of a household robot getting reward if it can't see any dust. The
-robot decides to cover all furniture with a blanket, because it's easier than
-cleaning the room. This is a thought experiment because household robots don't
-exist. But if anyone wants to make a household robot, consumers will want the
-household robot to do what they tell it to do.
-
-Or as another example: someone asks Google Home "How do you spell SOS in
-Morse Code?". The assistant replies with "S-O-s-Space-I-N-Space-M-O-R-S-E-Space-...".
-For now, it's a cute quirk of the behavior, but I think over time people will
-get normalized to what ML and do and will ask for better.
-
-(Note: I'm very sure you can poke holes in both of these examples, but I'm more
-concerned about the holistic point: there are currently few economic incentives
-for AI safety, and I expect there will be more economic incentives in the future.)
-
-(Note 2: I'm guessing this is why OpenAI has both NLP and robotics in their
-list of research interests - it creates scenarios where an improper AI doesn't
-do that much damage, but is still important to deal with to keep eople happy.)
-
-(Note 3: This is not a novel idea. Stuart Russell made a similar point in his
-keynote talk at the 2016 Bay Area Robotics Symposium.)
 
 As a further branching point from this, I think my definition of safety-like
 problems is broader than the standard one. To me, all of the following are
@@ -563,16 +560,6 @@ On the flip side, a lot of established ML people have criticized people
 for bad reasons. They have weird opinions on some basilisk thing,
 why should I listen to these people. He's a professor of philosophy, I'll
 listen to people who do more ML.
-
-The thing is, I broadly agree with the argument for AI safety, if you assume
-a sufficiently powerful AI. And furthermore, none of the ML researchers I know
-dispute the argument, given the premise.
-
-People do things like debate the orthogonality thesis, or debate whether
-an AI can convince a human to let it out of the box, but these are debates
-about systems that don't exist yet, and so they quickly turn into unverifiable
-philosophy.
-
 
 Rough notes for things I want to bring up.
 
