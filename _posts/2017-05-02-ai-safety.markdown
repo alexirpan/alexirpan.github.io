@@ -576,6 +576,9 @@ people, and both have assholes with no humility. Both have made people
 finally have meaningful conversations, and both spawn ridiculous amounts
 of gossip.
 
+EVERYTHING BELOW THIS LINE IS SCRATCH WORK. YOU CAN GIVE FEEDBACK IF YOU WANT BUT I'M FIGURING OUT WHAT I WANT FROM IT.
+----------------------------------------------------------------------------------------------------
+
 The large focus on AI safety that some people have is wearying and annoying.
 I get annoyed when I read people arguing what precisely "intelligence" means.
 I get further annoyed when people read a news article about a recent deep
@@ -789,22 +792,11 @@ utilitarian reasons, she didn't feel she was utilitarian. She was just super,
 super interested in mathematical models of cognition. AI safety let her
 study those problems in a context that could be important, down the line.
 
-This is my impression of a lot of AI safety research. People get incredibly
-drawn to the problem, find it fascinating, and then try to funnel their
-abilities into something that's vaguely safety-like. Researchers from MIRI
-come from a pure math background, with focus on mathematical logic and
-metamathematics, and that leads to them releasing work on self-reflective
-Turing Machines and probabilistic proof systems.
-
-This is the other reason I have trouble taking any arguments out of MIRI
-too seriously - part of me always suspects that their arguments are partially
-post hoc justifications to align their research abilities with their
-research trajectory. Everyone does this - the joke in public health is that
+Everyone does this - the joke in public health is that
 everyone has a good argument for why their cause is important to deal with.
 Researchers always work on problems that seem important to them, and they're
 also always telling people why it's important to them, and the problem I have
-is when people get too dogmatic on why *you and you and you and you* should
-be working on the same thing.
+is when people get too dogmatic about what the right thing is.
 
 \* \* \*
 
@@ -813,19 +805,11 @@ I could just as easily believe something else, and it's mostly luck that changes
 which argument I see first. So it feels wrong to commit too strongly to any
 particular action, or to advocate for anything very strongly.
 
-And, again, this isn't a unique viewpoint: Nick Bostrom gave a talk on this,
+Again, this isn't a unique viewpoint: Nick Bostrom gave a talk on this,
 giving an example of how a person argues themself into and out of voting
 for someone. (LOOK IT UP). Eventually he concludes with saying that you
-probably should put more penalty on committing to specific arguments, especially
-with regards to x-risk (CHECK IF THIS CONCLUSION ACTUALLY HOLDS UP.)
-
-So, you know. I'd like to think that fundamentalist rationalists at least keep
-things like this in mind, but I'm not sure they do.
-
-\* \* \*
-
-On average, the people I've met that have relations to LessWrong in some way
-are generally alright.
+probably should put more penalty on committing to specific arguments, and that
+people should be down-weighting their x-risk concerns.
 
 Really, it seems like the problem is perception. For better or worse, the ideas
 that pull the community together also attract a lot of weirdness. Is that bad?
@@ -834,17 +818,6 @@ And the weird people also tend to be the loudest or the most likely to speak
 up, and soon you hit the classic filter bubble problem - the people who talk
 aren't representive of the people who exist.
 
-
-
-No true Scotsman problem.
-
-The problem people have is mostly with Yudkowsky and beliefs close to those
-ones.
-
-The feeling that people from other areas of expertise are advocating for the
-right thing to do, talking about something they don't understand, and knowing
-that it's easy for people to be mislead about things, and the difficulty
-in distinguishing between crackpot and valid point.
 
 In rationalist circles, it feels like people very quickly decide to follow
 whatever argument rings true with them, and then directly act on it. Whereas
