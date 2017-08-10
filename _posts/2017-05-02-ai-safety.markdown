@@ -197,29 +197,36 @@ Timelines (AKA "The Part Where Some AI Safety Advocates May Get Mad At Me")
 I should start by saying that I think a lot of timeline discussion isn't
 very useful.
 
-Over the past few years, people have given out surveys to various ML researchers,
-asking when or if AGI will happen. Fairly consistently across the board, the
-results have shown that there is massive variance. Some people say never, some
-people say it'll happen in 10 years with 90% confidence. But if we know that
-there's massive variance in the outcome, what's the point in even asking?
+People have given surveys to various ML researchers, asking when or if AGI will
+happen. Consistently, across the board, the results have shown there's no
+consensus. Some people say never. Others say it'll happen in 10 years with 90%
+confidence. But overall, it's very hard to predict when a research problem will
+get solved.
 
-When asked, many machine learning researchers don't like giving estimates of
-when AI will be able to do something. That's not because they don't care - it's
-their research area, of course they care! It's more that they know it's very
-hard to predict research progress, so there's not much point in giving an
-answer. I fall into a similar view.
+I've seen lots of excited discussion about the topic, and none of it feels very
+useful to me. It's like people are reading tea leaves, and every resarch paper is
+another leaf. Many ML researchers have a strong allergy against making predictions
+too far into the future, and it feels like people characterize it as irrational.
+To that, I'd say this: predicting research is hard, and people really don't want to
+overpromise and underdeliver, because hype is so easy to create and so difficult
+to keep in check.
 
-(If you prefer more rationalist / decision theory terms: the value of
-information in hearing the answer is so low that it's not worth the risk of
-giving people weird misconceptions about the field.)
+It's not that ML researchers don't care. It's their research area, of course
+they care! But not everyone revels in debating what the future is going to be like.
+I don't. There's a frustrating tendency for the EA community to condense an entire ML
+researcher into just their opinion about AGI.
 
-By contrast, I feel like the mainstream rationalist argument is that
-existential risk is massively, massively important. And therefore, any piece
-of information on timelines, no matter how noisy, is important to hear.
+(If you prefer a more stereotypically rationalist phrasing: the value of information in
+hearing the answer is low enough that it's not worth the risk of giving people
+weird misconceptions about the field.)
 
-To appease the second group, I'll give my estimate: 10% likelihood within 35 years,
-50% likelihood within 50 years, 90% likelihood within 75 years. These numbers
-are fairly arbitrary and don't mean much, but I'll explain them anyways.
+However, for people who are passionate about existential risk, timelines are
+*everything*. They guide the value, they guide the strategy, and therefore any piece
+of information, no matter how noisy, is important to hear.
+
+So, to appease the second group, I'll give my estimate: 10% likelihood within 35 years,
+50% likelihood within 50 years, 90% likelihood within 75 years. Again, these numbers
+are arbitrary and don't mean much, but I'll explain them anyways.
 
 * I believe neural nets are here to stay, but I'm skeptical that
 deep learning by itself is enough. There's a lot of hype around deep learning,
@@ -266,99 +273,262 @@ happen with the various voice assistants, like Google and Alexa and Siri and
 Cortana, except right now people don't expect them to work all the time because
 the tech is so new.
 
-(Aside: I'm very sure you can poke holes in this example, but I'm more
+(Note: I'm very sure you can poke holes in this example, but I'm more
 concerned about the holistic point: there are currently few economic incentives
 for AI safety, and I expect there will be more economic incentives in the future.)
 
-(Aside 2: I'm guessing this is why OpenAI has a household robot as a research
-goal. It creates low-risk scenarios where an agent can't do alot of damage
+(Note 2: This might be why OpenAI has making a household robot as a research
+goal.)
 
-(Aside 3: This is not a novel idea. Stuart Russell made a similar point in his
+(Note 3: This is not a novel idea. Stuart Russell made a similar point in his
 keynote talk at the 2016 Bay Area Robotics Symposium. Except his example was a
-robot deciding to turn the family pet into food. I guess he wanted to be
-shocking.)
+robot deciding to turn the family pet into food. I guess he wanted to go
+for shock factor.)
 
 
-Strategy (AKA "The Part Where Even More AI Safety Advocates May Get Mad At Me")
+Strategy And Culture (AKA "The Part Where Everyone Who Wasn't Mad At Me Gets Mad")
 --------------------------------------------------------------------------------
 
-Moving apart from direct theories about AGI, I also have some reservations about
-the arguments presented by various organizations.
+To summarize: I do like that people are thinking about AI safety, I think they
+have some room for growth, and although I'm not super enthusiastic about it,
+I don't mind the existence of various orgs dedicating themselves soley to AGI
+risk.
 
-* Some organiziations (like 80,000 Hours and OpenPhil) have stated that they
-believe more people should work on AI safety. I like that people are thinking
-about AI safety, and I like that both DeepMind and OpenAI have safety teams.
-Both have some room for growth, but I dont think they should grow by much more,
-because it's unclear to me that there's enough potential impact.
+What I **do** mind, however, is how people have turned AI safety discussion into
+a minefield that I just can't deal with.
 
-As a further branching point from this, I think my definition of safety-like
-problems is broader than the standard one. To me, all of the following are
-safety-like problems.
+Look. I do hesitate admitting it, but I fit into many aspects of EA culture and
+rationalist culture. On average, whenever I bring enough to go to events with many
+EAs or rationalists, I have a good time.
 
-* Fairness: how do we ensure machine learning isn't discriminatory? Important
-in discussiona about racial profiling, eligibility of home ownership,
-learned associations between genders and roles.
-* Privacy: machine learning techniques can memorize parts of their training
-data, which can be extractable by an adversary. This is less of a concern with
-images, but is more concerning if you want to apply ML to healthcare - how do
-you best prevent leaks of patient data? See differential privacy.
-* Adversarial inputs: it's been shown that we can create inputs that get
-mislabled with high confidence. Furthermore there are papers showing that
-some of these perturbations are universal across all images, that this is
-achievable even if you only get black-box queries to the model (like through
-a computer vision API), and with proper
-training the results are robust to various image transformations. When ML
-becomes more prevalent, how do we deal with these concerns?
-* Human-computer interaction: how do humans interact with computer agents?
-How do humans interpret robot behavior, and in turn, how can we make sure
-robots accurately model human behavior?
+Except, the key point is *on average.* Because every now and then, I run into
+something that's violently repellent, and I give up and check out.
+
+In this post, I have tried to be nice, and I have tried to be diplomatic, and
+I have tried to focus on the arguments and tried to play fair. Because like I
+said: I approve of most of the culture, and I've met some cool people. And down
+this road lies overgeneralization and nastiness.
+
+But sometimes, I have to rant, and this is one of those times.
+
+\* \* \*
+{: .centered }
+
+There is no one, single incident that turned me off of the rationalist and EA
+communities. It's more like a series of events, building over time, until finally
+it breaks.
+
+Overall, my biggest gripe is that the discussion feels oddly centralizing. Let's
+say an AI safety debate breaks out on Hacker News, because literally every article
+about ML on Hacker News seems to devolve into AI safety discussion. Here's what
+I expect to get brought up.
+
+* Somebody insulting Nick Bostrom and saying they don't like his arguments.
+* Somebody praising Nick Bostrom and arguing he has the right ideas.
+* Somebody will mention Stuart Russell.
+* Somebody will mention Andrew Ng and that one quote he made that time which
+people *love* to hate on.
+* Somebody will cite the Slate Star Codex post about AI researchers.
+* Somebody will complain about EAs who donate to MIRI or OpenAI instead of Afria.
+* Somebody will defend them by giving off-the-cuff Bayesian probabilities on
+the impact.
+
+Somehow, in the quest to consider novel, interesting ideas, it feels like EAs
+and rationalists have lost sight of how to do the same around AI safety. They
+lift up Bostrom and Yudkowsky as shining knights, send links to Paul's or Victoria's
+writings, try to get you to read Superintelligence or some paper by Nate Soares,
+tell you to donate to MIRI so that they can solve corrigibility and figure out
+the details of constrained extrapolated volition. Recently it's changed to asking
+people to donate to OpenAI.
+
+To be very clear: I am not hating on Bostrom or Yudkowsky or Paul or Victoria or Nate.
+I'm sure they're nice and reasonable once you get to know them. I'm hating on the
+fandom that seems to have sprung up around them - a weird blend of AI voyuerism and
+AI fanboyism, filtered exclusively through rationalists.
+
+I once tried to read an arXiv paper where someone listed various achievements of
+AI, and concluded that they were expecting AGI very soon and was hoping people
+could give counterarguments. In the citations section, they cited Superintelligence,
+saying they didn't like talking to people who hadn't read Superintelligence, because
+he felt like he was repeating the same arguments. I wonder if that person ever
+considered that if you only talk to people who've read Superintelligence, you're
+going to get a very different view of AI than most people.
+
+(For the record: I haven't read Superintelligence. I actually hope it was obvious
+that I haven't read it, because it would be nice if people with similar beliefs to the
+arXiv author have a justified reason to find this post boring.)
+
+This kind of fanboyism feels like a latent problem in rationalist culture.
+On Facebook, I've seen people say things like
+
+> Yes, the headline is clickbait, but I swear this article is good. Look at
+> who's sharing it.
+
+Or
+
+> You should read this article by Scott, because Scott is amazing.
+
+Or
+
+> You should listen to my prediction about the administration, because I bet on Trump
+> winning the election, even though I didn't like him.
+
+Or
+
+> It is not a mistake that we put a leader of the EA movement in charge of this event.
+> We did this because we knew they were well-trusted.
+
+In other words, people trying to get you to read something by telling you about the
+intelligence of the person writing it. **Most rationalists do not do this.** Out of the
+ones I see in my Facebook feed, around 10-20% of them act like this. But it's annoying
+enough that it pollutes the rest of my experience. To paraphrase a friend:
+"I think every rationalist defines themselves by their intelligence. They all think
+they're smart and they're proud of it." I wouldn't say it that strongly, but it has
+kernels of truth.
+
+I have a very intense aversion to this form of argument, and vastly
+prefer people who let the work stand on its own and leave it to the reader to decide
+whether the person writing it is smart.
+To me, "smart" means "I think this was well-constructed and the argument is compelling
+to me on some level", which makes the label very subjective. When somebody says
+
+> You should read this article by Scott, because Scott is amazing.
+
+I get annoyed, because I have no reason to believe Scott is amazing or not. Whereas
+if they had said
+
+> You should read this amazing article, written by Scott.
+
+I'm totally fine, because I can read the article and decide on my own terms whether
+I think Scott is amazing or not.
+
+\* \* \*
+{: .centered }
+
+Here is a strawman rationalist counterpoint: "Does that really matter? I'm not convinced
+it's a problem, and even if it is a problem, I don't think it's important."
+
+Well Strawman Rationalist, I'm glad you asked! Let me tell you a story.
+
+There's a card game forum I visit daily. One day, somebody linked a post
+from Slate Star Codex. It was a good post, very relevant to the conversation.
+One of the common forumgoers liked it a lot, and commented as such. The moment
+I saw this, I felt a bit of dread, because I knew what was coming.
+
+Within a week, he's added links to the Sequences and Slate Star Codex to his
+signature. Within two weeks, he's dropping Bayesian probabilities in all his posts.
+This ends with him starting a thread asking whether people's beliefs on
+superintelligence are closer to Eliezer Yudkowsky's or Robin Hanson's.
+
+None of this was particularly surprising. His pattern of
+speaking was very similar to the pattern of speaking in the rationalist sphere. He
+had mentioned GiveWell in the past, so he already had that in-road. It was very
+obvious that he would like the rationalist community.
+
+And at the same time, I was disappointed anybody could jump from
+"guy who mentioned GiveWell once" to "ridiculously stereotypical rationalist"
+in the span of two weeks.
+
+He could have been talking about anything in the world! And instead he was talking
+about Eliezer.
+
+If a culture has a tendency to deify specific people, it'll turn into people debating
+for and against ideas those people care about.
+
+Is this bad? Well, not necessarily. There are times where it's okay (and even good)
+to dive into a very narrow world view - if you recognize you're doing so. The
+danger is that you circulate a group of very similar ideas. On AI risk in particular,
+it feels like many of the same themes come up.
+
+* Big companies are not listening to the little guys fighting the good fight
+for AI safety.
+* It is insane that people are not donating existential risk, or that the people
+who do are donating to causes like global warming and nuclear non-proliferation
+instead of AI.
+* The world can only get better if people donate to support MIRI and OpenAI.
+
+I have some disagreements with all three points.
+
+As a further branching point from this, my definition of safety-like problems
+seems broader than most people's.
+To me, all of the following are relevant.
+
+* Fairness: how do we ensure machine learning isn't discriminatory? People have
+talked about using machine learning to profile criminals, which is incredibly
+controversial in its own right - what if it makes racial profiling worse?
+* Privacy: people have had some success with extracting training data out of
+machine learning models. This isn't a big concern right now, but if you, say,
+train a model on patient data for healthcare, solving the differential
+privacy problems become a lot more important.
+* Adversarial inputs: it's been shown that we can imperceptible noise to inputs
+to fool models into mislabeling them with high confidence. These adversarial attacks
+are both robust and generalizable - some results suggest they can transfer
+between models, that a single noise perturbation can make all images misclassified,
+that the noise perturbation works even if you print the image onto paper and take
+a picture of the paper, and that you can do so even if
+you only get black-box queries to the model (like you would through a computer
+vision API). How do we stop adversaries from fooling trained models?
+* Human-computer interaction: over time, computer agents will play a larger
+role in society. How do humans model and interpret robot behavior? In turn, how
+do we make sure robots model human behavior accurately? This is relevant to
+self-driving cars, because there are a lot of implicit human conventions behind
+signalling when you do and don't have right of way.
 * Interpretability: decision trees are well-known for being interpretable.
-Neural nets are well-known for being harder to interpret. This is a blocker
+Neural nets are well-known for being hard to interpret. This is a blocker
 for areas like medicine, where doctors place a lot of value on understanding
-what a model is doing.
+what a model is doing. A doctor may choose a weak, interpretable model over
+a strong, less interpretable one, which is an entirely reasonable choice, but
+it limits ML's ability to save lives.
 
-These all feel like necessary questions to answer if we want machine learning
-to play a larger role in life. I'm not a big x-risk person, but if I preteded
-to be a big x-risk person, and bought the AI x-risk argument, I could still
-see these approaches as giving useful lessons for the future...except on the
-side, it's also more useful in the present day.
+These are all important, approachable questions, that are considerably more
+well-defined than the agent foundations work I've seen when I skimmed MIRI's
+work.
 
-Let's take MIRI, for example. I have skimmed some of MIRI's work, and gone to
-some presentations by people from MIRI. It's all very theoretical, and I have
-a hard time believing any of it is going to be useful. They've picked such a
-theoretical view by this argument:
+I went to a presentation Nate Soares gave once. The argument went roughly
+like this.
 
 * Constraining the behavior of systems is hard.
 * Constraining the behavior of systems with superhuman intelligence is going to
-be *extra* hard, and it's unlikely that safety efforts for current ML
-systems are going to help once AI progresses enough.
+be *extra* hard. It's unlikely that safety efforts for current ML
+systems will help once AI progresses enough.
 * We aren't quite sure how to do it either, but we expect a mathematical, formal
 model of cognition is likely to be useful.
 
-I don't agree with all of this, but this is a reasonable enough argument.
-All the surveys on AI timelines suggest there's no agreement on when AGI will
-happen, or if it's even possible, and the range is even large within MIRI's
-staff. In the face of uncertainty, the proper approach is
-to try many things. MIRI's research agenda is reasonable as A Thing
-People Can Try.
+I don't agree with the second point (research on current systems can give lessons
+for the future, even if the methods themselves won't work.) I also don't agree
+with the third point (hard for me to see the value in formalizing probabilistic
+proof systems or self-reflective Turing Machines or whatever.)
 
-So I'm going about my day, trying to stay reasonable about the whole thing, and
-then start imagining somebody declaring that you should be donating all your money to
-MIRI, because they are *literally* saving the world in the most
-cost-efficient way, and how could you possibly disagree with that if you want
-to call yourself a rationalist?
+(Next paragraph is awful, will fix later)
 
-At which point I get incredibly weary, slightly depressed, and annoyed at the
-state of the world.
+To me, the chance that working on fairness and adversarial inputs is relevant
+to AGI, is around the same order of magnitude as the usefulness of MIRI's work.
+(Read: quite small.) Except if you work on fairness and adversarial inputs, it's
+useful right now, in which case you might as well help people now and help contribute
+to future safety-like problems.
 
-No one in the rationalist-sphere has ever said something like that to me. But
-it's how I model the hardcore segment that got into the movement
+When I think of MIRI, I think about a group of people who really like math,
+and really like thinking about cognition / decision theory. They've discovered an
+argument that lets them get paid to do it, but they would do it for free, because
+the problems are just that interesting to them. I don't think it'll be useful,
+but I don't want them to stop. They're simply alright.
+
+I certainly don't think of MIRI as a group of people who
+are *literally* saving the world from itself in the *most cost-efficient* way, and how could
+you possibly call yourself a rationalist if you disagree with that?
+
+But then I read or hear something that implies something like that, because
+they read some posts by Yudkowsky and just *have* to tell people about them...
+
+No one in the rationalist-sphere has ever said something like that to me.
+But it's how I model the hardcore segment that got into the movement
 by falling in love with Yudkowsky's writing - a group of people who agreed with
 someone so much, they forgot to do due diligence and ask themselves whether
 they should. A group that spends its days discussing Newcomb problems and
-warning people that an AGI can convince a human to let it out of the box,
-without considering the obvious corollary - a smart enough person could do
-the same, and maybe they already have.
+timeless decision theory and prisoner's dilemnas and coordination problems,
+warning people that an AGI can hijack a human's mind by writing a convincing
+enough argument, all without considering the obvious corollary - a smart
+enough person could do the same, and maybe they already have.
 
 Artificial intelligence captures the imagination. Stories about unaligned AGI
 do so even more. I've read three "rationalist fanfic" stories, all of which
@@ -388,23 +558,10 @@ nanotech, kills everyone, turns them into paperclips.
 getting sick of these kinds of stories? I think it's entirely fair for me to get annoyed
 with people when present the same argument pattern, over and over again.)
 
-To paraphrase a friend: "I thought rationalists were supposed to
+To paraphrase another friend: "I thought rationalists were supposed to
 be about studying cognitive biases and figuring out how to exploit your
-comparative advantages. Instead everyone asks me to sign up for cryonics,
-advocate for AI safety, and try out polyamory."
-
-There's a card game I frequent pretty often, and one day somebody linked a post
-from Slate Star Codex. One poster liked it a lot. Within a week, he adds
-links to the Sequences and SSC to his signature,
-drops Bayesian probabilities in all his posts, and starts a thread asking
-whether people's beliefs on superintelligence are closer to Eliezer
-Yudkowsky or Robin Hanson.
-
-Honestly, none of this was particularly surprising, because his pattern of
-speaking was very similar to how people act in the rationalist sphere.
-And at the same time, I think it's sad that it *wasn't* surprising that
-anybody could jump from "guy who mentioned EA once" to
-"ridiculously stereotypical rationalist" that quickly.
+comparative advantages. Instead it's people asking me to sign up for cryonics
+and try out polyamory."
 
 \* \* \*
 {: .centered }
@@ -413,6 +570,11 @@ In many ways, the rationalist community reminds me of the math contest
 community - a group of people who, after much searching, have found people who
 finally speak the same language they do, and all the consequences thereof.
 It should come as no surprise that the two have a healthily large overlap.
+
+They have the same virtues and they have the same failings. Both have smart
+people, and both have assholes with no humility. Both have made people
+finally have meaningful conversations, and both spawn ridiculous amounts
+of gossip.
 
 The large focus on AI safety that some people have is wearying and annoying.
 I get annoyed when I read people arguing what precisely "intelligence" means.
@@ -449,37 +611,19 @@ advance, extrapolating to AI agents using steganography to encode messages to
 one another, wondering what the next plan was with neural cryptography, and
 all sorts of massively oversized speculation given the results of the work.
 
-In moments like these, it's very hard to be fair towards the seeming
-hypocrisy - proclaiming the importance of listening to experts and actually
-reading the paper, and then selectively ignoring it when talking about AI,
-and when confronted about it, pulling up some general heuristic like "well,
-you're just underestimating the trend of research, here's a Wikipedia article
-for it."
+On one hand, complaining that the media lies and never gives the nuanced
+view. On the other hand, buying into the machine learning PR wholesale,
+without reading the actual paper.
 
-This isn't even a wrong thing to say! It's a valid point! But at the same time
-it feels like people aren't aware of the limitations of deep learning, and
-are selectively building a worldview based only on its successes, because that's
-what they hear about the most.
+In moments like those, it's very hard to be fair towards the seeming
+hypocrisy.
 
-Broadly, it's because it feels like they should know better. It feels like
-a lot of the discussion is at a high level, uses imprecise definitions to
-make broad claims, and to me both those communities pride themselves on
-carefully considering all sides of the argument - except, seemingly, for
-AI safety.
+It's all the more frustrating because *I expect rationalist to do
+better.* I'm not disappointed because they're stupid, I'm disappointed
+because they're smart and they're falling into the same traps they tell
+other people to avoid.
 
-I know this isn't a fair portrayal of the community. That's part
-of the problem.
-
-\* \* \*
-{: .centered }
-
-it's hit that point that i now have a model of "the strawman rationalist".
-The strawman rationalist is not fair. The strawman rationalist does not match
-anyone I know, and most likely doesn't match anybody in the world, not even
-the most hardcore rationalist (if such a thing can even be said to exist.)
-It is an amalgam of every negative rationalist stereotype I can think of.
-I find it easy to feed it with more ammunition, which I find incredibly
-disappointing.
+I know this isn't the fairest portrayal, but it's the one I have.
 
 \* \* \*
 {: .centered }
@@ -490,7 +634,6 @@ but not for me. To me it felt like it was presenting a bunch of old ideas
 as if they were new. I didn't need to hear Yet Another Debate About The Chinese
 Room Thought Experiment because *I really don't care.*
 
-Really, that's the crux of the problem I have about EAs and rationalists.
 The organizing principle of EAs is that you can have much larger impact if
 you donate according to careful argument instead of what feels right.
 The organizing principle of rationalists is that the human brain is horribly
@@ -521,16 +664,6 @@ to exploit comparative advantages in the market.
 
 The thing is, I'm neither? I'm not an effective altruist, and I'm not
 a rationalist.
-
-"But, you went to EAGxBerkeley, then went to EA Global, then went to
-a Slate Star Codex meetup hosted at the CFAR office, *and then went
-to a CFAR workshop*. How are you *not* an EA or a rationalist?"
-
-And I mean, that's all true, but when I say I'm not an EA, and not
-a rationalist, it feels right.
-The thing is, I don't consider myself to be an effective altruist, and
-I don't consider myself to be a rationalist. I'm merely a bystander to
-both movements.
 
 \* \* \*
 {: .centered }
@@ -633,16 +766,6 @@ it's true. Don't you know? Denying the truth doesn't make it any less true."
 
 \* \* \*
 {: .centered }
-
-Another frustrating thing is the heavy, heavy focus people in AI safety have
-on timelines.
-
-Now, before I complain, I'll admit that this makes sense, and that I'm not sure
-there are better alternatives.
-
-On the other hand, a lot of people I know don't like making predictions about
-the long term trends of technology. I don't like to do this either, because
-of how hard it is to predict technological progress.
 
 It feels like people are reading tea leaves, and every paper's another leaf.
 I've noticed a strong allergy against making any predictions too far out into
