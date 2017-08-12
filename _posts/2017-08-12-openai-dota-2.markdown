@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Emergency Post Because OpenAI Just Revealed Their Dota 2 1v1 Bot And I Have Opinions"
-date:   2017-08-11 01:56:00 -0700
+date:   2017-08-12 01:03:00 -0700
 ---
 
 See title!
