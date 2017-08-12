@@ -1,30 +1,24 @@
 ---
 layout: post
-title:  "Sometimes I Think About AI Safety and Rationalists and I Get Depressed For a Bit"
+title:  "On AI Safety and Rationalist Culture"
 date:   2017-05-02 01:14:00 -0700
 ---
 
-*Warning: good chance I'll regret writing this. Opinion as of August
+*Good chance I'll regret writing this. Opinion as of August
 2017. Personal opinion, does not reflect opinion of anyone I've worked with.
 I reserve the right to change my opinion later.*
 
 *This post has been very difficult to write.
-In the course of writing this, I've found notes from 8 months ago that I don't
-agree with, and a draft from 6 months ago that was so revolting I deleted it out
-of disgust. The general structure of this post has changed at least four times
-and I'm still not that satisfied with it. Perfection is the enemy of the good, but
-on this topic, I wanted to make sure I did it right, because of how much of my life
-ends up intersecting with the topic.*
+In the course of writing this, I've gone through several drafts, all of which
+were so revolting that I deleted them months later. Perfection is the enemy of
+the good, but on this topic I wanted to make sure I did it right.*
 
-*I say all this to let you know that although I'm doing my best to explain my position,
-it is almost certain that I haven't. I'm hoping that I got close enough.*
+*I say all this to let you know that although I have tried my best to explain
+myself, I have almost certainly failed. But I'm hoping I got close enough.*
 
 
 What Is AI Safety?
 ----------------------------------------------------------------------------------
-
-There are several treatises on the subject, but I think there's value in showing
-my frame on the problem.
 
 Roughly, AI safety centers around this question:
 
@@ -191,42 +185,59 @@ superhuman AGI is going to happen before people have figured out how to handle
 it. My biggest disagreement is on when it happens.
 
 
-Timelines (AKA "The Part Where Some AI Safety Advocates May Get Mad At Me")
+Thoughts on Timelines
 ------------------------------------------------------------------------------
 
-I should start by saying that I think a lot of timeline discussion isn't
-very useful.
+I think a lot of timeline discussion isn't very useful, and I'm concerned by
+the heavy focus people place on the subject.
 
-People have given surveys to various ML researchers, asking when or if AGI will
-happen. Consistently, across the board, the results have shown there's no
-consensus. Some people say never. Others say it'll happen in 10 years with 90%
-confidence. But overall, it's very hard to predict when a research problem will
-get solved.
-
-I've seen lots of excited discussion about the topic, and none of it feels very
-useful to me. It's like people are reading tea leaves, and every resarch paper is
-another leaf. Many ML researchers have a strong allergy against making predictions
-too far into the future, and it feels like people characterize it as irrational.
-To that, I'd say this: predicting research is hard, and people really don't want to
-overpromise and underdeliver, because hype is so easy to create and so difficult
-to keep in check.
+Very often, people in machine learning are asked when they think AGI will
+happen. And very often, they reply, "far enough away that it's hard to give
+a good number", which isn't a reply that people like to hear.
 
 It's not that ML researchers don't care. It's their research area, of course
-they care! But not everyone revels in debating what the future is going to be like.
-I don't. There's a frustrating tendency for the EA community to condense an entire ML
-researcher into just their opinion about AGI.
+they care! But not everybody's a futurist. I get that some people love debating
+what future society will look like, and I can handle it, but only in moderation.
 
-(If you prefer a more stereotypically rationalist phrasing: the value of information in
-hearing the answer is low enough that it's not worth the risk of giving people
-weird misconceptions about the field.)
+Everyone gets very excited when you start talking about AGI, but once the
+subject of timelines comes up, I feel like people are just philosophizing about
+something that can't be verified or refuted unless you're willing to wait 10
+years. It's like people are reading tea leaves, where every resarch paper is
+another leaf.
 
-However, for people who are passionate about existential risk, timelines are
-*everything*. They guide the value, they guide the strategy, and therefore any piece
-of information, no matter how noisy, is important to hear.
+When people are forced to predict when AGI happens, they have massive variance.
+This has been backed up time and time again - *nobody agrees*. At that point,
+why even bother asking?
 
-So, to appease the second group, I'll give my estimate: 10% likelihood within 35 years,
-50% likelihood within 50 years, 90% likelihood within 75 years. Again, these numbers
-are arbitrary and don't mean much, but I'll explain them anyways.
+(If you prefer rationalist-speak: the value of information in the answer is
+basically zero, because you could just pick a few random numbers between 10
+and 100 and get the same answer. It's zero-knowledge proofs all over again! If you
+can simulate the answer, you haven't learned anything, *so why do you care
+so much?* Maybe they've convinced themselves that x-risk is so important, any
+discussion that isn't about x-risk is bad for the world. I don't know.)
+
+There's a frustrating tendency for the EA community to condense an entire ML
+researcher into just their opinion about AGI. Stuart Russell is cited far
+more for his opinions on AGI than on anything else. Andrew Ng is still
+notorious for that one Mars analogy he made.
+
+Predicting techonlogical progress is hard. I think everyone can agree on that.
+For machine learning in particular, it's very easy to create hype, and very
+difficult to keep it in check. So it's much safer to avoid speculating at all.
+Otherwise people get weird misconceptions about the state of the field and
+start advocating for the wrong things.
+
+For the sake of completeness, I'll give my estimate. But I won't be happy
+about it.
+
+\* \* \*
+{: .centered }
+
+I don't think AGI is impossible, simply because it's very hard to argue for that
+strong of a negative. I place 10% likelihood within 35 years, 50% likelihood
+within 50 years, and 90% likelihood within 75 years.
+
+Here's some of my reasoning.
 
 * I believe neural nets are here to stay, but I'm skeptical that
 deep learning by itself is enough. There's a lot of hype around deep learning,
@@ -251,13 +262,65 @@ university and industry PR machines, and get discussed widely. Failures
 do not. Because you hear about accomplishments a lot more than failures,
 it's easy to extrapolate a faster trend than a slower one, and this makes me
 inclined to downweight my guesses.
+* People who are concerned about machine learning seem most concerned by
+reinforcement learning. RL has a lot of potential, but it's hard to overstate
+how broken reinforcemenet learning is. Sueprvised learning works. Reinforcement
+learning doesn't work. This is a subject for another post, but in short, RL
+is ridiculously unstable, only works in very well-defined environements with
+friendly reward functions, and even then it'll fail 30% of the time for no
+reason. That DeepMind manages to get results anyways is partly because they
+have great researchers, but also because they can get away with running 50 trials
+and only graphing the top 5. (Which is what they did in the A3C paper, and
+every other paper that uses A3C.)
+(Note to self: Track down the Karpathy HN comment complaining about this.)
 
-By that point, I expect enough safety research to be done.
-To me, it often feels like EA-minded people frame the argument as
-"researchers don't think AI safety is important and we do". The more common
-belief I've heard is "I don't think it's worth spending a lot of resources
-on safety right now, but I don't mind that people are working on it." Which
-is around where I'm at. Right now, the money is in better translation,
+Past this, it starts entering the fuzzy imprecise thoughts that I can't put
+into words without lots of introspection.
+
+In addition, I think the things I consider related to AI safety are larger
+than what people normally talk about. To me, all of the following are safety-like
+problems.
+
+* Fairness: how do we ensure machine learning isn't discriminatory? People have
+talked about using machine learning to profile criminals, which is incredibly
+controversial in its own right - what if it makes racial profiling worse?
+* Privacy: people have had some success with extracting training data out of
+machine learning models. This isn't a big concern right now, but if you, say,
+train a model on patient data for healthcare, solving the differential
+privacy problems become a lot more important.
+* Adversarial inputs: it's been shown that we can imperceptible noise to inputs
+to fool models into mislabeling them with high confidence. These adversarial attacks
+are both robust and generalizable - some results suggest they can transfer
+between models, that a single noise perturbation can make all images misclassified,
+that the noise perturbation works even if you print the image onto paper and take
+a picture of the paper, and that you can do so even if
+you only get black-box queries to the model (like you would through a computer
+vision API). How do we stop adversaries from fooling trained models?
+* Human-computer interaction: over time, computer agents will play a larger
+role in society. How do humans model and interpret robot behavior? In turn, how
+do we make sure robots model human behavior accurately? This is relevant to
+self-driving cars, because there are a lot of implicit human conventions behind
+signalling when you do and don't have right of way.
+* Interpretability: decision trees are well-known for being interpretable.
+Neural nets are well-known for being hard to interpret. This is a blocker
+for areas like medicine, where doctors place a lot of value on understanding
+what a model is doing. A doctor may choose a weak, interpretable model over
+a strong, less interpretable one, which is an entirely reasonable choice, but
+it limits ML's ability to save lives.
+
+I consider these safety-like because it's intuitively clear what you want the
+model to do, but it's not solvable by throwing a bigger neural net with more
+data. These problems are considerably more relevant in the short term, and I
+expect them to give useful lessons and ideas for more powerful machine learning
+systems.
+
+Some people who are very passionate about AI safety are working on it right now.
+That's fine - they're passionate enough that they wouldnt be happy if they were working on
+anything else. And it's probably good that a few people are looking at it,
+just because of the high variance.
+
+even make sense to allocate more resources to it.
+Right now, the money is in better translation,
 better computer vision, and better recommendations. We're still very much at
 the start of integrating machine learning into society. Over time I expect
 safety problems to be more important for producing good products, which
@@ -453,36 +516,6 @@ As a further branching point from this, my definition of safety-like problems
 seems broader than most people's.
 To me, all of the following are relevant.
 
-* Fairness: how do we ensure machine learning isn't discriminatory? People have
-talked about using machine learning to profile criminals, which is incredibly
-controversial in its own right - what if it makes racial profiling worse?
-* Privacy: people have had some success with extracting training data out of
-machine learning models. This isn't a big concern right now, but if you, say,
-train a model on patient data for healthcare, solving the differential
-privacy problems become a lot more important.
-* Adversarial inputs: it's been shown that we can imperceptible noise to inputs
-to fool models into mislabeling them with high confidence. These adversarial attacks
-are both robust and generalizable - some results suggest they can transfer
-between models, that a single noise perturbation can make all images misclassified,
-that the noise perturbation works even if you print the image onto paper and take
-a picture of the paper, and that you can do so even if
-you only get black-box queries to the model (like you would through a computer
-vision API). How do we stop adversaries from fooling trained models?
-* Human-computer interaction: over time, computer agents will play a larger
-role in society. How do humans model and interpret robot behavior? In turn, how
-do we make sure robots model human behavior accurately? This is relevant to
-self-driving cars, because there are a lot of implicit human conventions behind
-signalling when you do and don't have right of way.
-* Interpretability: decision trees are well-known for being interpretable.
-Neural nets are well-known for being hard to interpret. This is a blocker
-for areas like medicine, where doctors place a lot of value on understanding
-what a model is doing. A doctor may choose a weak, interpretable model over
-a strong, less interpretable one, which is an entirely reasonable choice, but
-it limits ML's ability to save lives.
-
-These are all important, approachable questions, that are considerably more
-well-defined than the agent foundations work I've seen when I skimmed MIRI's
-work.
 
 I went to a presentation Nate Soares gave once. The argument went roughly
 like this.
