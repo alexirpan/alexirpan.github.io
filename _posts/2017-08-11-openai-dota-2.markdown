@@ -52,7 +52,7 @@ Neither of these are super impressive from the standpoint of seeing what
 machine learning is capable of, because they both rely on a human
 providing specific domain knowledge.
 
-In contrast, AlphaGo was impressive because it both solved a new game,
+In contrast, [AlphaGo]({% post_url 2016-01-27-deepmind-go %}) was impressive because it both solved a new game,
 and did so by combining supervised pretraining + reinforcement
 learning + Monte Carlo Tree Search in a way that hadn't been done before.
 Generally, the best games for research are ones where developing new
@@ -99,9 +99,9 @@ to only 1v1 Shadow Fiend gives you a ton of nice things.
 * The same policy can be used for both players.
 
 In many ways, this reminds me of the [Super Smash Brothers Melee bot](https://github.com/vladfi1/phillip)
-that beat several pro players - it can beat pros, but only if both players
+that beat several pro players - it can beat pros, [but only if both players
 are Captain Falcon, and only if the players are P1 and P2, and only if they
-play on Battlefield. Cool? Yes. Limited? Also yes.
+play on Battlefield](https://www.youtube.com/watch?v=dXJUlqBsZtE). Cool? Yes. Limited? Also yes.
 
 The existence of that SSBM bot makes me suspect there weren't many breakthroughs behind
 this bot, just some grunt work on getting the system together and getting
@@ -182,8 +182,8 @@ paper - I could see it being useful for given partial signal to behaviors
 that are hard to define.
 
 * **Learning algorithm:** Probably [PPO](https://blog.openai.com/openai-baselines-ppo/).
-It works well, and it supports continuous control, which may be good for
-mouse movement.
+It works well, and it supports continuous control, which may be a better fit
+for mouse movement.
 
 * **Training time:** "Two weeks real time", except that says basically
 nothing for how many machines they used, whether they were able to run the
