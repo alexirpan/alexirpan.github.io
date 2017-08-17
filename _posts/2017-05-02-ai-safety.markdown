@@ -67,7 +67,8 @@ goal sounds benign, because again - everything's easier if you're smarter and yo
 alive.
 
 (...at which point, I imagine someone saying, "And that is why you should donate at
-least 10% of your income to a mix of MIRI and OpenAI". But we'll get into that later.)
+least 10% of your income to either MIRI or OpenAI, depending on preference".
+But we'll get into that later.)
 
 This part of the argument is called *value alignment*, and people refer to "the
 value alignment problem" in similar terms.
@@ -120,6 +121,36 @@ growth.
 Thoughts on the Inductive Chain
 ---------------------------------------------------------------------------
 
+Originally, this section was nine paragraphs where I explained how a number
+of experiences I've had made the argument reasonable enough to think about.
+
+Then I talked to several people who are very emphatic about AI safety, and
+realized I was missing the point.
+
+I think the meme about EAs and rationalists is that they either fully endorse
+the arguments that made Nick Bostrom and Eliezer Yudkowsky so famous (or
+notorious).
+
+More often, what I've seen is that everybody has their own complicated narrative
+on why people should care about AI safety. Intelligence explosion and value
+alignment are certainly common themes, but not everyone agrees that's going to
+happen, and not everyone think existential risk is worth thinking about.
+If I had to distill it to the most general argument, it would be this.
+
+* Machine learning has already done many things, and will become an increasingly
+large part of life in the future. As part of this, researchers will continue
+to improve the capabilities of what machine learning can do.
+* That comes with risks, either because people will use it to do bad things,
+or the machine learning system will do something bad on its own.
+
+Usually, it's more that hearing these arguments inspires thinking of ideas of
+similar flavor. Parts of the argument ring true, and after some complicated
+thought process, people decide how much they care about existential risk, how
+likely they think AI will end the world, and how likely it is that people can
+do anything about it. Then they act accordingly.
+
+The way I've heard it explained
+
 Right now, my broad view is that this is a reasonable enough argument for why
 it's worth thinking about AI safety. As to how likely it is: everything comes
 down to your beliefs about technology and how the world works, a fuzzy subject
@@ -150,6 +181,8 @@ This is one of the simplest RL tasks out there, and already I have to think abou
 whether there are simple behaviors that are hard to escape from. Once a network
 discovers that spinning very fast isn't that bad, it's hard to get it to stop
 spinning very fast.
+
+
 
 In short, I accept that a superhuman AGI may not do what we expect it to do,
 and I've yet to talk to a ML researcher who's said otherwise, because every
