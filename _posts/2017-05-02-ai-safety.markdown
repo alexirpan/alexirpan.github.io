@@ -120,28 +120,27 @@ growth.
 Thoughts on the Inductive Chain
 ---------------------------------------------------------------------------
 
-Right now, my broad view is that this is a good argument for why AI safety
-is worth thinking about, but past that it very heavily comes down to your beliefs
-about technology, which is a very fuzzy subject that's hard to argue much about.
+Right now, my broad view is that this is a reasonable enough argument for why
+it's worth thinking about AI safety. As to how likely it is: everything comes
+down to your beliefs about technology and how the world works, a fuzzy subject
+that's hard to argue anything concrete about.
 
-I find it very obvious that blindly maximizing a simple objective
-can lead to weird, unintended behavior. This shows up all the time in machine
-learning. Minimizing classification loss on your training set is not the same as
-maximizing classification accuracy. Maximizing accuracy on your training set isn't
-the same as maximizing accuracy in the real world.
-
-On occasion, it helps to model machine learning algorithms as learning the
-easiest thing necessary to get good performance, and no more.
-In one famous story, the army asked researchers to label images as containing or not
-containing a tank. They got good performance on their training data, and failed
-miserably in the real world. After inspecting their data, they found that all the images
-with tanks in them were taken during the daytime, so their model decided that every bright
-image had to have a tank in it. Reward hacking happens when learning something
-easy is enough to get good performance.
+First of all, I find it very obvious that you can get weird, interesting
+behavior from blindly maximizing a simple objective. This already shows up
+all over machine learning. It often helps to model machine learning
+algorithms as learning the easiest thing necessary to get good performance,
+and no more. In one famous example, back in the 1980s the army asked
+researchers to label all images that contained a tank. They got good results
+early on, so they tested it in a real world scenario, and it failed miserably.
+On inspection, the researchers realized all their positive examples
+were taken during the day, and all their negative examples were taken at night.
+So the model decided that all bright images have tanks and all dark images don't
+have tanks. Garbage in, garbage out.
 
 This is especially important to think about in RL, because in practice it's
-very easy to design reward functions with bad local maxima. For example, one task in
-OpenAI Gym is to move a two-segment arm to a point. You get reward based on the
+very easy to get stuck at local maxima of your reward function. For
+example, one task in OpenAI Gym is to move a two-segment arm to a point.
+You get reward based on the
 distance to that point. When training models on this task, I found my networks would
 often learn to spin the arm in a very fast circle. On average, the arm isn't that far
 from the point, and it's easy to spin in a circle - just apply the maximum torque at
