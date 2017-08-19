@@ -1,0 +1,181 @@
+---
+layout: post
+title:  "Two Years Later"
+date:   2017-08-18 23:38:00 -0700
+---
+
+I'll be honest: I completely forgot to prepare a post for my two year
+blogging anniversary until today. I'm vaguely disgusted that "two year
+blogging anniversary" is a valid English phrase, but sometimes languages
+are silly like that.
+
+Ironically this is because I've been working on a larger post that's been
+taking up most of my writing time. Hopefully I get that done soon.
+
+I do feel I've been less productive this year than last year, blogging wise.
+Let's see if that's backed up empirically. Now, word count is a pretty bad
+metric for writing time, because in my experience most of writing is rewriting.
+But it's the best metric I've got. Here's a list of all posts I wrote this
+year, along with their word count.
+
+```
+ 1244 2016-09-07-contradictions.markdown  
+ 1936 2016-10-18-politics.markdown  
+ 1750 2016-11-08-right-questions.markdown  
+  895 2016-11-12-hybrid-argument.markdown  
+ 1384 2017-01-20-mh-2017.markdown  
+  931 2017-01-25-research-comm.markdown  
+  592 2017-02-12-default-arguments.markdown  
+ 4035 2017-02-22-wasserstein-gan.markdown  
+ 1827 2017-03-18-we-have-a-problem.markdown  
+  834 2017-04-19-acss.markdown  
+ 1925 2017-04-26-perils-batch-norm.markdown  
+ 3443 2017-06-27-hyperparam-spectral.markdown  
+ 1613 2017-08-12-openai-dota-2.markdown  
+22409 total  
+```
+
+Here's the same list for last year.
+
+```
+  542 2015-08-20-things-i-did-in-my-khan-academy-internship.markdown  
+ 1744 2015-08-23-simulating-a-biased-coin-with-a-fair-one.markdown  
+ 2592 2015-08-25-perfectly-intelligent-mafia.markdown  
+  599 2015-09-01-optimizing-process.markdown  
+ 1580 2015-09-09-the-other-two-envelope-problem.markdown  
+ 1988 2015-09-24-how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy.markdown  
+ 1703 2015-10-11-humor-proposal.markdown  
+ 1871 2015-11-02-friendship-games-geometry.markdown  
+  465 2015-11-29-mlp-season-5-review.markdown  
+ 6376 2016-01-03-grad-school.markdown  
+ 1231 2016-01-20-mysteryhunt.markdown  
+ 1784 2016-01-27-deepmind-go.markdown  
+ 3101 2016-02-11-secure-computation.markdown  
+ 2647 2016-02-20-half-year.markdown  
+ 4537 2016-03-17-alphago-lsd.markdown  
+ 1353 2016-03-22-primes-pi.markdown  
+ 1323 2016-06-13-hillary-google.markdown  
+  817 2016-07-03-email-time.markdown  
+  714 2016-07-04-fruit.markdown  
+ 1361 2016-07-17-ml-sleep.markdown  
+ 1016 2016-08-03-pokemon-go-equality.markdown  
+39344 total  
+```
+
+So, I wrote around 17,000 fewer words this year. What changed?
+
+\* \* \*
+{: .centered }
+
+The most important change is that I'm been working full time the entire year.
+It's been a lot harder for me to get side projects done than it was in college.
+This is a well-known experience with well-known explanations, but let me explain
+anyways.
+
+In college, I didn't have designated work times. I went to class, I had lunch
+and dinner, and the rest of the day was a blend between work and free time.
+It was very easy for me to work for 20 minutes, switch to playing *Dustforce*
+for 40 minutes, blog for 10 minutes, flowing back and forth depending on mood until 3 AM.
+Then I would wake up the next morning and start the process over again.
+
+It was even easier for me to do this because I didn't have many group projects,
+and I had very few homework groups or study groups. Overall there was no
+accountability on my schedule, and the blending was a natural consequence of that.
+
+This wasn't a bad thing. I wasn't very focused, but at any time there was a chance
+I could switch to being productive, and the activation barrier between everything
+was much lower. Blogging slotted itself very naturally into my day. (Well, more
+like into my night.)
+
+All that has changed. I have meetings, coworkers, managers. I'm working on a
+project with collaborators across three offices.
+Coordination is a lot easier if everybody's working times overlap - one of my
+collaborators works from London, and he's deliberately shifted his schedule
+forward because the only good meeting time is his evenings (which are our
+mornings in California).
+
+It's the same problem that most companies have, and there's a shared solution:
+a homogenized schedule with similar working hours. When I was a student, I
+worked more, but the
+work was spread out over the entire week, like maple syrup on pancakes.
+Sure, sometimes I didn't finish work until 2 AM. But I had relaxed enough
+during the afternoon to make this feel okay.
+
+![Pancakes](/public/2year/pancakes.jpg)
+{: .centered }
+
+In a job, all the work gets compressed into a single block.
+I do take breaks, and I'm lucky enough to work at a company that doesn't
+care how long your break is...as long as you get your work done. That nagging
+feeling of getting my work done means I don't take a lot of breaks.
+
+The end result is that my energy and motivation gets spent at work in one
+big burst. By the time I get home it's hard to do much more than browse
+the Internet and play games.
+
+I've thought a bit about whether I can reproduce the college working schedule,
+so to speak, but there are benefits to working similar hours to everybody else.
+Overall I don't think there's a lot of value in changing how I work.
+
+\* \* \*
+{: .centered }
+
+Okay, time for more uplifting news! In [last year's post]({% post_url 2016-08-18-one-year %}),
+I mentioned a few posts I said I would write this year! Let's see how I did.
+
+> The post about *Gunnerkrigg Court* is going to happen. I swear it will.
+
+Uhhhh, that post didn't happen. Okay, next!
+
+> I wrote the start of a really, really stupid short story about dinosaurs. [...]
+> I hope that story sees the light of day, because the premise is so stupid
+> that it might just wrap back around to brilliant.
+
+That one didn't happen either. Alright, what else did I say I was
+going to work on.
+
+Oh, I said I was going to write a post about AI safety! That one is in progress!
+And not done! A bit far from done, in fact, but let's round that up to a win.
+If [failure is success rounded down](http://www.qwantz.com/index.php?comic=955),
+then surely success is failure rounded up.
+
+To be serious for a bit: yes, I am a bit disappointed I haven't written posts
+that I said I wanted to write. But I'm not actually that disappointed. It
+feels like I'm spent about as much time writing as I wanted to spend this year.
+
+Well, maybe I've written a bit less than I wanted to.
+
+Let's say I'm more at peace and leave it at that.
+
+In terms of life trajectory: I didn't apply to PhD programs, mostly out of
+laziness. I should have applied, just to keep the option open, but I don't see
+myself going to academia any time soon, unless my research interests or work
+drastically change.
+
+I think I've changed less this year compared to last year. Again, this is
+a common sentiment.
+I found it easy to grow every year of college - it just happened naturally.
+I've been finding it harder to do so after leaving that environment.
+
+When I think about what I would regret the most, it's something like this: the
+worry that five years from now, I'll look back on my life, and have no idea
+where five years of my life went. Something kind of like this.
+
+> Apple Bloom has sunk into a psychotic depression, because she knows this is how
+> it all starts. Pretty soon they'll all be living in different cities, and they'll
+> only see each other at New Year's. [...] Sure, they'll start talking about things
+> they did back in the day, like "Oh hey, remember that time we were happy and
+> life felt like it had meaning?" And after a few drinks, it'll feel like there's
+> still a connection between them, and they'll share all their online handles
+> and say they should get together sometime. [...] Then the next day when they sober up,
+> they'll get right back to never getting around to it.
+
+([Totally Legit Recap, "On Your Marks". Warning: NSFW humor about *My Little Pony*](https://www.youtube.com/watch?v=5av-M97Kjic&feature=youtu.be&t=1m52s).)
+{: .centered }
+
+It's that worry that pushes me to work on things, even when I have reasons not to.
+
+Will pre-emptively thinking about [quarter-life crises](https://en.wikipedia.org/wiki/Quarter-life_crisis)
+stop me from having a quarter-life crisis? Eh, maybe. We'll find out.
+
+I think I've rambled long enough. Two years down. Here's to two more.
