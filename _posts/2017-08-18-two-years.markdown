@@ -4,20 +4,19 @@ title:  "Two Years Later"
 date:   2017-08-18 02:13:00 -0700
 ---
 
-I will be honest: I completely forgot to prepare a post for my two year
-blogging anniversary until today. (I am vaguely disgusted that "two year
-blogging anniversary" is something I would say, but sometimes that's the way
-it is.)
+I'll be honest: I completely forgot to prepare a post for my two year
+blogging anniversary until today. (I'm vaguely disgusted that "two year
+blogging anniversary" is a valid English phrase, but sometimes languages
+are silly like that.)
 
 Ironically this is because I've been working on a larger post that's been
-taking up most of the time I've dedicated to writing. Hopefully I get that out
-soon.
+taking up most of my writing time. Hopefully I get that done soon.
 
 I do feel I've been less productive this year than last year, blogging wise.
-How about we see if that's backed up empiricially? Now, word count is an awful
-metric for time spent writing, but it's the best one I have for now. Between
-today and one year ago, I wrote...
-
+Let's see if that's backed up empirically. Now, word count is a pretty bad
+metric for writing time, because in my experience most of writing is rewriting.
+But it's the best metrics I've got. Here's a list of all posts I wrote this
+year, along with their word count.
 
 ```
  1244 2016-09-07-contradictions.markdown  
@@ -36,8 +35,7 @@ today and one year ago, I wrote...
 22409 total  
 ```
 
-Just over 22 thousand words. Between 1 year and 2 years ago, I wrote...
-
+Here's the same list for last year.
 
 ```
   542 2015-08-20-things-i-did-in-my-khan-academy-internship.markdown  
@@ -64,60 +62,68 @@ Just over 22 thousand words. Between 1 year and 2 years ago, I wrote...
 39344 total  
 ```
 
-Over 39 thousand words. What changed?
+So, I wrote around 17,000 fewer words this year. What changed?
 
 \* \* \*
 {: .centered }
 
-The most important change is that I started working full-time June of last year.
-Before then, I was balancing blogging with being a college student. Now I'm
-balancing it with work.
+The most important change is that I'm been working full time the entire year.
+It's been a lot harder for me to get side projects done than it was in college.
+This is a well-known experience with well-known explanations, but let me explain
+anyways.
 
-It's a very well-known experience, but it's been quite a lot harder for me to
-get side projects done than it was in college. And again, it's well-known
-why that's true, but let me explain anyway.
+In college, I didn't have designated work times. I went to class, I had lunch
+and dinner, and the rest of the day was a blend between work and free time.
+It was very easy for me to work for 20 minutes, switch to playing *Dustforce*
+for 40 minutes, blog for 10 minutes, flowing back and forth depending on mood until 3 AM.
+Then I would wake up the next morning and start the process over again.
 
-When I was in college, I didn't
-have designated work times. I went to class, I had lunch and dinner, and work and
-free time blended together in the rest of the day. It was very easy for me to
-work for 20 minutes, switch to playing *Dustforce* for 40 minutes, blog for 10
-minutes, all flowing back and forth depending on mood until 3 AM. Then waking
-up at 10 AM to start the whole process over again.
+It was even easier for me to do this because I didn't have many group projects,
+and I had very few homework groups or study groups. Overall there was no
+accountability on my schedule, and the blending was a natural consequence of that.
 
-I had few group projects, and no study groups, and therefore no accountability
-on my schedule. Not a very focused way to work, but it made it easy to slot
-blogging whenever I wanted to do it - the activation barrier was low.
+This wasn't a bad thing. I wasn't very focused, but at any time there was a chance
+I could switch to being productive, and the activation barrier between everything
+was much lower. Blogging slotted itself very naturally into my day. (Well, more
+like into my night.)
 
-But now, I'm in a group project. I have meetings, coworkers, managers, and
-coordination is a lot easier if everybody's working times overlap by enough.
-One person working on my project is living in London, and he deliberately
-starts work late and leaves late. That's because his evenings are mornings
-in California, and it's the only way we can ever have meetings.
+All that has changed. I have meetings, coworkers, managers. I'm working on a
+project with collaborators across three offices.
+Coordination is a lot easier if everybody's working times overlap - one of my
+collaborators works frmo London, and he's deliberately shifted his schedule
+forward because the only good meeting time is his evenings (which are our
+mornings in California.)
 
-I'd say that I worked more when I was a student, but it spread itself out
-like a big morass over the entire week, never concentrating too tightly.
-In a job...it all compresses into a single block. I do take breaks, and luckily
-I have a tech job, where in principle I can take whatever breaks I want. In
-practice there's always a nagging feeling that I should get my work done so
-that I can leave the office.
+It's the same problem that most companies have, and it homogenizes the schedule
+into the same "working hours". When I was a student, I worked more, but the
+work was spread out over the entire week like a big morass. Sure, sometimes I
+didn't finish work until 2 AM. But I had relaxed enough during the afternoon
+to make this feel okay.
 
-End result: I'm much more tired earlier in the day, which makes it hard to
-bring up motivation to do anything more than browsing the Internet, which
-makes it harder to devote more time to blogging, which means I don't get as
-much writing done.
+In a job, all the work gets compressed into a single block, the time where
+everyone agrees they can get in to work. I do take breaks, and I'm lucky enough
+to work at a company where I don't a capped break time, but in practice there's
+always a nagging feeling to get my work done so that I can leave the office.
 
-So, consider this an apology post, that will maybe make me write more, but
-realistically it depends on how the rest of me feels about it.
+The end result is that all my energy and motivation gets spent at work in one
+big burst, and by the time I get home it's hard to do much more than browse
+the Internet and play games. The time it takes to context switch into anything
+productive is much bigger, and for me, writing falls into the "productive"
+bucket.
+
+I've thought a bit about whether I can reproduce the college working schedule,
+so to speak, but there are benefits to working similar hours to everybody else.
+Overall I don't think there's a lot of value in changing how I work.
 
 \* \* \*
 {: .centered }
 
-Okay, time for more uplifting news! Let's look at the posts I said I would
-write this year!
+Okay, time for more uplifting news! In [last year's post]({% post_url 2017-08-18-one-year %}),
+I mentioned a few posts I said I would write this year! Let's see how I did.
 
 > The post about *Gunnerkrigg Court* is going to happen. I swear it will.
 
-Uhhhh, well, that post didn't happen. Okay, next!
+Uhhhh, that post didn't happen. Okay, next!
 
 > I wrote the start of a really, really stupid short story about dinosaurs. [...]
 > I hope that story sees the light of day, because the premise is so stupid
