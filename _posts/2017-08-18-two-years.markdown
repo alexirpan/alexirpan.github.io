@@ -5,9 +5,9 @@ date:   2017-08-18 02:13:00 -0700
 ---
 
 I'll be honest: I completely forgot to prepare a post for my two year
-blogging anniversary until today. (I'm vaguely disgusted that "two year
+blogging anniversary until today. I'm vaguely disgusted that "two year
 blogging anniversary" is a valid English phrase, but sometimes languages
-are silly like that.)
+are silly like that.
 
 Ironically this is because I've been working on a larger post that's been
 taking up most of my writing time. Hopefully I get that done soon.
@@ -15,7 +15,7 @@ taking up most of my writing time. Hopefully I get that done soon.
 I do feel I've been less productive this year than last year, blogging wise.
 Let's see if that's backed up empirically. Now, word count is a pretty bad
 metric for writing time, because in my experience most of writing is rewriting.
-But it's the best metrics I've got. Here's a list of all posts I wrote this
+But it's the best metric I've got. Here's a list of all posts I wrote this
 year, along with their word count.
 
 ```
@@ -90,26 +90,28 @@ like into my night.)
 All that has changed. I have meetings, coworkers, managers. I'm working on a
 project with collaborators across three offices.
 Coordination is a lot easier if everybody's working times overlap - one of my
-collaborators works frmo London, and he's deliberately shifted his schedule
+collaborators works from London, and he's deliberately shifted his schedule
 forward because the only good meeting time is his evenings (which are our
-mornings in California.)
+mornings in California).
 
-It's the same problem that most companies have, and it homogenizes the schedule
-into the same "working hours". When I was a student, I worked more, but the
-work was spread out over the entire week like a big morass. Sure, sometimes I
-didn't finish work until 2 AM. But I had relaxed enough during the afternoon
-to make this feel okay.
+It's the same problem that most companies have, and there's a shared solution:
+a homogenized schedule with similar working hours. When I was a student, I
+worked more, but the
+work was spread out over the entire week, like maple syrup on pancakes.
+Sure, sometimes I didn't finish work until 2 AM. But I had relaxed enough
+during the afternoon to make this feel okay.
 
-In a job, all the work gets compressed into a single block, the time where
-everyone agrees they can get in to work. I do take breaks, and I'm lucky enough
-to work at a company where I don't a capped break time, but in practice there's
-always a nagging feeling to get my work done so that I can leave the office.
+![Pancakes](/public/2year/pancakes.jpg)
+{: .centered }
 
-The end result is that all my energy and motivation gets spent at work in one
-big burst, and by the time I get home it's hard to do much more than browse
-the Internet and play games. The time it takes to context switch into anything
-productive is much bigger, and for me, writing falls into the "productive"
-bucket.
+In a job, all the work gets compressed into a single block.
+I do take breaks, and I'm lucky enough to work at a company that doesn't
+care how long your break is...as long as you get your work done. That nagging
+feeling of getting my work done means I don't take a lot of breaks.
+
+The end result is that my energy and motivation gets spent at work in one
+big burst. By the time I get home it's hard to do much more than browse
+the Internet and play games.
 
 I've thought a bit about whether I can reproduce the college working schedule,
 so to speak, but there are benefits to working similar hours to everybody else.
@@ -118,7 +120,7 @@ Overall I don't think there's a lot of value in changing how I work.
 \* \* \*
 {: .centered }
 
-Okay, time for more uplifting news! In [last year's post]({% post_url 2017-08-18-one-year %}),
+Okay, time for more uplifting news! In [last year's post]({% post_url 2016-08-18-one-year %}),
 I mentioned a few posts I said I would write this year! Let's see how I did.
 
 > The post about *Gunnerkrigg Court* is going to happen. I swear it will.
@@ -129,27 +131,31 @@ Uhhhh, that post didn't happen. Okay, next!
 > I hope that story sees the light of day, because the premise is so stupid
 > that it might just wrap back around to brilliant.
 
-That one didn't happen either. Uhhh, alright, what else did I say I was
+That one didn't happen either. Alright, what else did I say I was
 going to work on.
 
 Oh, I said I was going to write a post about AI safety! That one is in progress!
 And not done! A bit far from done, in fact, but let's round that up to a win.
-If failure is success rounded down, then surely success is failure rounded up.
+If [failure is success rounded down](http://www.qwantz.com/index.php?comic=955),
+then surely success is failure rounded up.
 
 To be serious for a bit: yes, I am a bit disappointed I haven't written posts
-that I've wanted to write for over a year. But I'm not actually that
-disappointed - it feels like I'm spent about as much time writing as I want to
-spend. Well, maybe I've written a bit less than I wanted to.
+that I said I wanted to write. But I'm not actually that disappointed. It
+feels like I'm spent about as much time writing as I wanted to spend this year.
 
-Let's say I'm slightly more at peace and leave it at that.
+Well, maybe I've written a bit less than I wanted to.
 
-In terms of life trajectory: I skipped applying to PhD programs because I was
-a bit lazy, I can still do the research I want to do in my current job, and I'm
-getting paid.
+Let's say I'm more at peace and leave it at that.
 
-I think I've changed less this year compared to last year. Again, I hear this
-is common. It's very easy to drastically change every year of college. It's
-much harder to do so when you leave that environment.
+In terms of life trajectory: I didn't apply to PhD programs, mostly out of
+laziness. I should have applied, just to keep the option open, but I don't see
+myself going to academia any time soon, unless my research interests or work
+drastically change.
+
+I think I've changed less this year compared to last year. Again, this is
+a common sentiment.
+I found it easy to grow every year of college - it just happened naturally.
+I've been finding it harder to do so after leaving that environment.
 
 When I think about what I would regret the most, it's something like this: the
 worry that five years from now, I'll look back on my life, and have no idea
@@ -158,19 +164,18 @@ where five years of my life went. Something kind of like this.
 > Apple Bloom has sunk into a psychotic depression, because she knows this is how
 > it all starts. Pretty soon they'll all be living in different cities, and they'll
 > only see each other at New Year's. [...] Sure, they'll start talking about things
-> they did back in the day, like "Oh hey, rememeber that time we were happy and
+> they did back in the day, like "Oh hey, remember that time we were happy and
 > life felt like it had meaning?" And after a few drinks, it'll feel like there's
 > still a connection between them, and they'll share all their online handles
-> and say they should get together somtime. [...] Then the next day when they sober up,
+> and say they should get together sometime. [...] Then the next day when they sober up,
 > they'll get right back to never getting around to it.
 
 ([Totally Legit Recap, "On Your Marks". Warning: NSFW humor about *My Little Pony*](https://www.youtube.com/watch?v=5av-M97Kjic&feature=youtu.be&t=1m52s).)
 {: .centered }
 
-It's that worry that pushes me to try to do things, even when I have reasons
-not to.
+It's that worry that pushes me to work on things, even when I have reasons not to.
 
 Will pre-emptively thinking about [quarter-life crises](https://en.wikipedia.org/wiki/Quarter-life_crisis)
-stop me from having a quarter-life crisis? Eh, maybe. Again, we'll find out.
+stop me from having a quarter-life crisis? Eh, maybe. We'll find out.
 
-I think I've rambled long enough. Two years down, and here's to two more.
+I think I've rambled long enough. Two years down. Here's to two more.
