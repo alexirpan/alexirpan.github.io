@@ -121,19 +121,23 @@ growth.
 Thoughts on the Inductive Chain
 ---------------------------------------------------------------------------
 
-Originally, this section was nine paragraphs where I explained how a number
-of experiences I've had made the argument reasonable enough to think about.
 
-Then I talked to several people who are very emphatic about AI safety, and
-realized I was missing the point.
+MAYBE SEPARATE SECTION
 
-I think the meme about EAs and rationalists is that they either fully endorse
-the arguments that made Nick Bostrom and Eliezer Yudkowsky so famous (or
-notorious).
+Originally, this section was nine paragraphs where I explained various reasons
+for why I was okay with the philosophical argument and didn't find it particularly
+objectionable. Then I talked to several people who are very emphatic about AI
+safety, and realized I was missing the point.
 
-More often, what I've seen is that everybody has their own complicated narrative
+I think there's a massive meme about people who try to advocate for AI safety:
+they either fully endorse the arguments of Nick Bostrom / Eliezer Yudkowsky /
+Stuart Russell, or they reject them. I don't think that meme is true.
+
+What I've seen is that everybody has their own complicated narrative
 on why people should care about AI safety. Intelligence explosion and value
-alignment are certainly common themes, but not everyone agrees that's going to
+alignment are certainly common themes, ones that have been discussed to death,
+but not everybody think it's particularly concerning to think about.
+but not everyone agrees that's going to
 happen, and not everyone think existential risk is worth thinking about.
 If I had to distill it to the most general argument, it would be this.
 
@@ -151,36 +155,49 @@ do anything about it. Then they act accordingly.
 
 The way I've heard it explained
 
-Right now, my broad view is that this is a reasonable enough argument for why
-it's worth thinking about AI safety. As to how likely it is: everything comes
-down to your beliefs about technology and how the world works, a fuzzy subject
-that's hard to argue anything concrete about.
+END MAYBE SECTION
 
-First of all, I find it very obvious that you can get weird, interesting
-behavior from blindly maximizing a simple objective. This already shows up
-all over machine learning. It often helps to model machine learning
-algorithms as learning the easiest thing necessary to get good performance,
-and no more. In one famous example, back in the 1980s the army asked
-researchers to label all images that contained a tank. They got good results
-early on, so they tested it in a real world scenario, and it failed miserably.
-On inspection, the researchers realized all their positive examples
-were taken during the day, and all their negative examples were taken at night.
-So the model decided that all bright images have tanks and all dark images don't
+For now, let's assume that by magic, there is a powerful enough machine
+learning system. Then sure, the outcome described above is a possibility.
+I think it's natural that simple objectives lead to complicated behavior - you
+see this all the time in ML.
+
+I also think it's natural that optimizing simple objectives doesn't guarantee
+it does what you want. Again, this happens in ML all the time. The most
+famous example is the tank classiifer. The army contracts a research lab
+to classify images as tank or not-tank. They got good results, try it in a
+real-world setting, and it does awful. Why?
+All the positive examples were taken in daytime, and all the negative ones
+were taken at night.
+The model decided that all bright images have tanks and all dark images don't
 have tanks. Garbage in, garbage out.
 
-This is especially important to think about in RL, because in practice it's
-very easy to get stuck at local maxima of your reward function. For
-example, one task in OpenAI Gym is to move a two-segment arm to a point.
-You get reward based on the
-distance to that point. When training models on this task, I found my networks would
-often learn to spin the arm in a very fast circle. On average, the arm isn't that far
-from the point, and it's easy to spin in a circle - just apply the maximum torque at
-every joint.
+IMAGE HERE
 
+I model machine learning algorithms as learning the easiest thing necessary to
+get good performance, and nothing more. I've found this to be pretty useful,
+especially for reinforcement learning. I've been burned by RL enough times that
+I treat it as almost adversarial - if you're trying to design a reward function,
+it is safer to assume your network will do its hardest to interpret it as
+pathologically as possible.
+
+Let me give an example: you're trying to use RL to teach a simulated robot arm
+to pick up a block. So first, you give reward for making the block go up. To
+avoid making the robot flail too much, you give a minor penalty for moving too
+quickly.
+
+The policy tries to learn how to get reward, but the motion to grab and lift
+the block is too complex, and every time it tries to move, it gets penalized.
+Eventually, the policy learns to avoid moving at all.
+
+Okay, so now you add a shaped reward, where you get increasing reward as the
+arm gets close to the block, then you give even more reward for lifting
+the block into the air.
+
+
+This is a dead simple RL task and I already have to think
 This is one of the simplest RL tasks out there, and already I have to think about
-whether there are simple behaviors that are hard to escape from. Once a network
-discovers that spinning very fast isn't that bad, it's hard to get it to stop
-spinning very fast.
+whether there are simple behaviors that are hard to escape from.
 
 
 
