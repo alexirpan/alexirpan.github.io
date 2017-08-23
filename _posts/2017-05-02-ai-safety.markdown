@@ -121,7 +121,6 @@ growth.
 Thoughts on the Inductive Chain
 ---------------------------------------------------------------------------
 
-
 MAYBE SEPARATE SECTION
 
 Originally, this section was nine paragraphs where I explained various reasons
@@ -192,22 +191,39 @@ Eventually, the policy learns to avoid moving at all.
 
 Okay, so now you add a shaped reward, where you get increasing reward as the
 arm gets close to the block, then you give even more reward for lifting
-the block into the air.
+the block into the air. You train the policy, and it learns to reach towards
+the block, then stop. What happened now? This time, it first learned how to
+reach towards a point. Once it got there, it did some exploration, and found that
+whenever it touched the block, it got negative reward, because it never figured
+out how to pick up the block. Over time, the policy learns "touching block bad"
+and decides to stop touching the block.
 
+Now, if you scale everything right, you can eventually use just self-play to
+learn how to pick up a block, but defining a good reward for it is a lot harder
+than it should be. There's a reason the block stacking papers from OpenAI use
+a hardcoded policy or imitation learning - the top-down reward function approach
+can be really finicky.
 
-This is a dead simple RL task and I already have to think
-This is one of the simplest RL tasks out there, and already I have to think about
-whether there are simple behaviors that are hard to escape from.
+There are more examples of this too. The Eurisko bot, which was told to solve
+a naval war game, and decided to field a massive army of tiny, immobile frigates,
+along with one very fast submarine, instead of any sort of conventional army.
+Then the tournament organizers added a "mobility" rule, and the Eurisko bot
+decided *shooting its own ships* was the best way to meet the mobility
+requirement. The ???? basketball team, which made the finals by playing legal-but-unconventional
+basketball against teams that weren't prepared for it. (Both of these examples
+are from a Malcolm Gladwell article that's a fun read.)
 
+That was a bit of a tangent, but in short, I find it obvious that systems can
+have outcomes that don't match their intention, because that happens already.
+I find it obvious that machine learning systems in particular can do the same,
+because that's happened already. So yes, if you want to posit a sufficiently
+powerful AI, that's so capable it might as well be God, and then say that maybe
+that God-AI may not do what we expect it to, then go right ahead - I won't get in
+your way.
 
-
-In short, I accept that a superhuman AGI may not do what we expect it to do,
-and I've yet to talk to a ML researcher who's said otherwise, because every
-ML researcher has run into a model that didn't do what they expected it to do.
-Value alignment is not a novel idea - it's telling that Isaac Asimov first wrote
-the Three Laws of Robotics, then immediately wrote a short story of a Three-Laws
-compliant robot killing humans. Then he came up with a Zeroth Law. Then he
-wrote a short story of a Zeroth Law compliant robot that kills humans...
+In practice I've seen that people really, really like to harp
+on value alignment as if it's novel, exciting, and illuminating. Every time I
+see that happen, I get bored, because I think it's none of those things.
 
 The follow-on argument is that people expect the safety problems to be
 difficult, and therefore we should have people thinking about them now. This
