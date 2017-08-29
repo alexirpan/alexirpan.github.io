@@ -72,10 +72,8 @@ Thus, the average number of friends of friends is greater than or equal to the
 average number of friends. Equality happens only if the graph is regular (if everyone
 has exactly the same number of friends.)
 
-Now, that being said, looking at just the mean doesn't say anything about the
-distribution of friends, or the distribution of friends of friends. In some
-special cases, it could be the case that most people have more friends than their
-friends, and there are a minority of really lonely people. (Construct this?)
+**Importantly, this doesn't say anything about the friendships of a specific person,
+or a specific person's friends.** It only says something about the overall average.
 
 \* \* \*
 {: .centered }
@@ -89,6 +87,49 @@ person produces content and consumes content.
 What is the average number of works a producer makes? Let $$d_v^{out}$$ be the number
 of edges leaving $$v$$.
 
-What is the average number of works a producer's
+In the consumer view, on average how prolific are the content producers for the
+content the consumer consumes? For each incoming edge, create a list for the source
+of that edge. On that list, write down every person whose consumed their content.
 
+Now, apply similar logic as the undirected case. There is one list for every
+edge in the graph, giving $$\sum_v d_v^{out}$$. A producer $$u$$ is the title
+of $$d_u^{out}$$ lists, one for each person whose consumed their content. Each
+of those lists will have $$d_u^{out}$$ items on it.
 
+This gives the same expression, apply Cauchy-Schwarz again, and so on.
+
+The end result is that yes, the same result holds in directed graphs - on average,
+the content producers you follow produce more than you do.
+
+\* \* \*
+{: .centered }
+
+In the argument above, nothing was specific about friendship. The only requirements
+was that we could model it as an undirected graph, where some object is a vertex,
+vertices are related by edges, and those relations are symmetric.
+
+There's a branch of mathematics called category theory. I don't actually
+understand it, but the impression I get is that you let symbols represent something,
+you let arrows representing something between symbols, and then you interpret
+all of mathematics as special cases of those symbols and arrows.
+
+As a shoutout to all the category theory fans reading this, let's make a bunch
+of claims about society, based on different interpretaitons of vertices and edges.
+
+Let vertices be Twitter accounts. An edge connects $$u$$ to $$v$$ if $$u$$
+follows $$v$$. Then on average, the accounts you follow have more followers than
+you do.
+
+Let vertices be people. There is an edge from Alice to Bob if Bob has read
+a book Alice wrote. Then on average, fewer people have read Bob's books than
+the authors of the books Bob has read. Now, most people haven't written a book,
+but again this principle applies to any form of communication - blogs, articles,
+Facebook posts, Youtube videos, research papers, memes...
+
+Let's abstract this even further. Say there's an edge from Alice to Bob if
+Alice is a friend of Bob's and she said something Bob found interesting. Then
+on average, your friends generate more interesting ideas than you do.
+
+These realizations are all *fantastic* for dealing with imposter syndrome
+issues. And in general, it's a useful principle to keep in mind: in whatever
+social / intellectual circle you keep, popular things will be overrepresented (?)
