@@ -221,40 +221,55 @@ powerful AI, that's so capable it might as well be God, and then say that maybe
 that God-AI may not do what we expect it to, then go right ahead - I won't get in
 your way.
 
-In practice I've seen that people really, really like to harp
-on value alignment as if it's novel, exciting, and illuminating. Every time I
-see that happen, I get bored, because I think it's none of those things.
+Aside: Miscellanerous Thoughts
+------------------------------------------------------------------------------
 
-The follow-on argument is that people expect the safety problems to be
-difficult, and therefore we should have people thinking about them now. This
-also sounds reasonable to me. There's a lesson from computer security: the attack
-surface is always larger than you think it is. (This is why security people like to
-say that everything is broken.) If you're modeling superhuman AGI as an adversary
-that's trying to misinterpret things as horribly as possible, it's easy to
-figure something out.
+When people talk about AI safety, it feels like they rally, really like to harp
+on value alignment as if it's novel, exciting, and illuminating. Every time this
+happens, I get bored, because I think it's none of those things, and people get too
+swept-up in the narrative.
 
-(On occasion, people try to argue it's easy to constrain a superhuman AI system.
-I mostly consider these arguments a distraction, because the AI-safety-apologist
-can usually pretend the AGI is powerful enough to make these arguments invalid,
-by saying "something something intelligence-explosion-then-AGI-argues-itself-out-of-the-box".)
+One common counterargument is the orthogonality thesis. People who believe it think
+that intelligence and empathy do not go hand in hand, while people who reject it believe
+intelligent beings are natural empathetic (and therefore superhuman AGI isn't a concern
+because it'll care about us.) I've never liked reading debates on this, because
+it often feels like people lean on too much philosophy, and use imprecise or incomplete
+descriptions of imaginary objects to construct some logical argument that you're
+supposed to find infallible.
+And because the inputs are fuzzy, it quickly turns into unverifiable theorizing,
+at which point I wonder why I should care.
 
-(For similar reasons, I've never really liked reading people debate things like
-the orthogonality thesis. In these kinds of arguments, it often feels like people
-are leaning on too much philosophy, and are using imprecise or incomplete
-descriptions of imaginary objects to argue something fundamental about the world.
-And because the inputs are fuzzy, it quickly turns into unverifiable philosophy,
-at which point I wonder why I should care.)
+Another common counterargument is that it would be easy to stop a superhuman AGI
+system from doing anything we don't want it to do, simply by keeping it sandboxed from
+the Internet. Again, I mostly consider these arguments a distraction, because the
+AI-safety-apologist can simply imagine an AGI is powerful enough to make these
+arguments invalid. "Something something intelligence-explosion-then-AGI-argues-you-should-let-it-out-of-the-box".
+This doesn't feel like a productive line of argument, because again, it quickly
+turns into arguments about assumptions about a thing that doesn't exist, which,
+again, feels like it has enough margin for error that it doesn't feel useful.
 
-Overall, excluding some warts, I think being concerned is fair, if you believe
-superhuman AGI is going to happen before people have figured out how to handle
-it. My biggest disagreement is on when it happens.
+However, I will grant this: that line of argument suggests there's some chance
+that the safety problems are hard, and therefore people should be considering them
+now. This applies to the earlier part too, and in fact is important enough that I
+should emphasize it:
+
+**Not everyone believes that the future will go the way the narrative says it will.
+Rather, the arguments inspire thinking and introspection of a similar flavor, and at the
+end some people become convinced.**
+
+Or to be more precise,
+
+**I would be profoundly disappointed if people were simply parroting the arguments
+they heard. So far I haven't interacted with anyone who hasn't thought about it
+themselves, but maybe I've gotten lucky with who I talk to.**
 
 
 Thoughts on Timelines
 ------------------------------------------------------------------------------
 
-I think a lot of timeline discussion isn't very useful, and I'm concerned by
-the heavy focus people place on the subject.
+I would like to preface this section by pointing out timelines are bullshit.
+
+Not *complete* bullshit. Just...partial bullshit.
 
 Very often, people in machine learning are asked when they think AGI will
 happen. And very often, they reply, "far enough away that it's hard to give
