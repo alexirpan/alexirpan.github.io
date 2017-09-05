@@ -267,45 +267,45 @@ themselves, but maybe I've gotten lucky with who I talk to.**
 Thoughts on Timelines
 ------------------------------------------------------------------------------
 
-I would like to preface this section by pointing out timelines are bullshit.
-
-Not *complete* bullshit. Just...partial bullshit.
+I would like to preface this section by saying I find timelines distracting and
+vaguely annoying to talk about.
 
 Very often, people in machine learning are asked when they think AGI will
 happen. And very often, they reply, "far enough away that it's hard to give
 a good number", which isn't a reply that people like to hear.
 
 It's not that ML researchers don't care. It's their research area, of course
-they care! But not everybody's a futurist. I get that some people love debating
-what future society will look like, and I can handle it, but only in moderation.
+they care! But not everybody's likes futurist speculation. Personally, it's
+something I can only handle in moderation.
 
-Everyone gets very excited when you start talking about AGI, but once the
-subject of timelines comes up, I feel like people are just philosophizing about
-something that can't be verified or refuted unless you're willing to wait 10
-years. It's like people are reading tea leaves, where every resarch paper is
-another leaf.
+Everyone gets very excited about AGI, but it often feels like people are just
+philosophizing about something in a way that can't be verified or refuted,
+unless you're willing to wait 10 years. It's like people are reading tea leaves,
+where every research paper is another leaf.
 
-When people are forced to predict when AGI happens, they have massive variance.
-This has been backed up time and time again - *nobody agrees*. At that point,
-why even bother asking?
+Overwhelmingly, every survey has shown that there is no consensus and massive
+variance on when people expect tasks to be solved. This holds on randomly
+selected NIPS attendees, on randomly selected AAAI attendees, on AAAI attendees
+who are specifically going to workshops about AGI, and even on MIRI researchers.
+At that point, why even bother asking? It feels like the value of information
+is basically zero. If you can roll some dice, and get the same answer, you
+haven't actually learned anything.
 
-(If you prefer rationalist-speak: the value of information in the answer is
-basically zero, because you could just pick a few random numbers between 10
-and 100 and get the same answer. It's zero-knowledge proofs all over again! If you
-can simulate the answer, you haven't learned anything, *so why do you care
-so much?* Maybe they've convinced themselves that x-risk is so important, any
-discussion that isn't about x-risk is bad for the world. I don't know.)
+Generally, the actual number is much less important than the model that generates
+the number, but even on this front I'm not sold there's a lot of useful
+information. Predicting techonlogical progress is hard. I think everyone can
+agree on that. Often, the models behind timelines are based on gut feelings about
+the importance of software vs hardware, and whether areas of research will
+continue to be fruitful or not. This also has lots of randomness, so even if you
+focus on the model behind the timeline, the end result is still very subjective.
 
-There's a frustrating tendency for the EA community to condense an entire ML
-researcher into just their opinion about AGI. Stuart Russell is cited far
-more for his opinions on AGI than on anything else. Andrew Ng is still
-notorious for that one Mars analogy he made.
+This is a long way of saying that discussion of these topics isn't well suited
+to mediums that don't support a back-and-forth conversation.
 
-Predicting techonlogical progress is hard. I think everyone can agree on that.
-For machine learning in particular, it's very easy to create hype, and very
-difficult to keep it in check. So it's much safer to avoid speculating at all.
-Otherwise people get weird misconceptions about the state of the field and
-start advocating for the wrong things.
+Whenever I talk to EAs, I see a frustrating tendency for people to condense
+an entire ML researcher into just their timeline and opinion about AGI. Stuart
+Russell is "that guy who agrees with us"; Andrew Ng is "that guy who made
+that Mars analogy."
 
 For the sake of completeness, I'll give my estimate. But I won't be happy
 about it.
