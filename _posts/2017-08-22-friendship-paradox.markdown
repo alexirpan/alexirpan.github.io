@@ -4,15 +4,16 @@ title:  "The Friendship Paradox And You"
 date:   2017-08-23 00:00:00 -0700
 ---
 
-The friendship paradox is a nice rule of thumb that actually has mathematical
-justification. I think it's not as well known as it should be, so here's an
-explanation.
+The [friendship paradox](https://en.wikipedia.org/wiki/Friendship_paradox) is a
+cute rule of thumb. Unlike other rules of thumb, it actually has some mathematical
+justification behind it.
 
 The paradox states that on average, your friends have more friends than you do.
-At first glance, this may seem strange, because it can't be true for everybody
-at once. And that's true - it can't! That's why it says that *on average* your
-friends are more popular than you. There will be people who are more popular
-than all their friends.
+At first glance, this may seem strange, because it can't be true for everybody.
+Someone has to be more popular than everybody else. And that's true - somebody
+has to be on top. That's why the statement says *on average*. A small fraction
+of people are more popular than their friends, and a large fraction are
+less popular than their friends.
 
 To justify why this could be true, let's model friendship as an undirected graph.
 In this graph, people are vertices, and an edge connects two people if they're
@@ -28,24 +29,22 @@ $$
     \text{Average number of friends} = \frac{\sum_{v \in V} d_v}{n}
 $$
 
-What is the average number of friends that a person's friends will have?
-To count this, let's imagine that every person $$v$$ creates $$d_v$$ lists, one list
-for each of their friends. Every list is titled with that friend's name $$u$$,
-and the list for $$u$$ has the list of all of $$u$$'s friends.
+What is the average number of friends that a person's friends have?
+To count this, let's imagine that every person $$v$$ creates $$d_v$$ lists, one
+for each of their friends. Every list is titled with that friend's name - say it's
+$$u$$, for sake of example. On that list, $$v$$ writes down all of $$u$$'s
+friends.
 
 IMAGE
 
 The average number of friends that $$v$$'s friends have is the average length of
-the $$d_v$$ lists that $$v$$ created. The average number of friends that an
-average person's friends have is the average length of all such lists written by
-anybody.
+the lists that $$v$$ created. The average number of friends that any
+person's friends have is the average length of all created lists.
 
-How many lists are there? Person $$v$$ makes $$d_v$$ lists, so there are
-$$\sum_{v \in V} d_v$$ lists.
-
-What is the total length of the lists? A list titled $$v$$ has $$d_v$$ names on
-it because $$v$$ has $$d_v$$ friends.
-We get one list titled $$v$$ for each friend of $$v$$, giving $$d_v$$ such lists.
+Each person $$v$$ makes $$d_v$$ lists, so there are
+$$\sum_{v \in V} d_v$$ lists total. A list titled $$v$$ has $$d_v$$ names on
+it, because $$v$$ has $$d_v$$ friends. We get one list titled $$v$$ whenever a
+friend of $$v$$ creates lists, so there are $$d_v$$ such lists.
 Thus, every person $$v$$ contributes $$d_v^2$$ to the total length.
 
 Overall, this gives
@@ -54,15 +53,17 @@ $$
     \text{Average number of friends of friends} = \frac{\sum_{v \in V} d_v^2}{\sum_{v \in V} d_v}
 $$
 
-Now, apply the Cauchy-Schwarz inequality. This inequality states that for any
-vectors $$a$$, $$b$$,
+Now, apply the [Cauchy-Schwarz inequality](https://en.wikipedia.org/wiki/Cauchy%E2%80%93Schwarz_inequality).
+This inequality states that for any vectors $$a$$, $$b$$, their dot product
+is at most the product of their norms. We'll use the version where we square
+both sides.
 
 $$
     (\langle a, b \rangle)^2 \le \|a\|^2\|b\|^2
 $$
 
-Let $$a$$ be the vector of all ones, and $$b$$ be the vector of degrees. This
-gives
+Let $$a$$ be the vector of all ones, and $$b$$ be the vector of degrees $$d_v$$.
+Since there are $$n$$ vertices, we get
 
 $$
     \left(\sum_{v \in V} d_v\right)^2 \le n \sum_{v \in V} d_v^2
@@ -71,60 +72,67 @@ $$
 which rearranges to
 
 $$
-    \frac{\sum_{v \in V} d_v^2}{\sum_{v \in V} d_v} \ge \frac{\sum_{v \in V} d_v}{n}
+    \frac{\sum_{v \in V} d_v}{n} \le \frac{\sum_{v \in V} d_v^2}{\sum_{v \in V} d_v}
 $$
 
-Thus, the average number of friends of friends is greater than or equal to the
-average number of friends. $$\blacksquare$$
+The left hand side is the average number of friends, and the right hand side is
+the average number of friends of friends. That concludes the proof. $$\blacksquare$$
 
 At a high level, the friendship paradox happens because the popularity of
 popular people spreads through the network - they have lots of friends, each of
 whom sees that some of their friends are very popular.
 
-**Importantly, this only says something about the overall average.** To argue
-anything more concrete, you need to make assumptions about how people interact
-and how friendships work.
+**Importantly, this only says something about the average.** Arguing anything
+more requires making assumptions about how people interact and how friendships
+work.
 
 A natural extension is to ask whether a similar result holds in directed graphs.
-A lot of interactions aren't symmetric, and if a similar result holds, it makes
-the principle more general.
+A lot of relationships aren't symmetric, so if a similar result holds, it makes
+the principle more applicable.
 
 It turns out such a result does exist.
-Let's model a directed edge as a producer-consumer relationship. An edge goes
-from A to B if B consumes something that A produces. A given person acts as both
-a producer and a consumer (represented by out-edges and in-edges respectively.)
+Let's model a directed edge as a producer-consumer relationship. There's an
+edge from $$u$$ to $$v$$ if $$u$$ produces something that $$v$$ consumes.
+People both produce things and consume things, represented by out-edges and in-edges respectively.
+Let $$d_{v,out}$$ and $$d_{v,in}$$ be the number of out-edges and in-edges for $$v$$.
 
-Again, some notation: $$d_v^{out}$$ and $$d_v^{in}$$ are the number of out-edges
-and in-edges for $$v$$. Let's consider two quantities, the average number of things
-people make, and the average number of things people consume from producers they
-follow. The average number of things somebody makes is
+Let's consider the average number of things people produce.
+The average number of things somebody produces is
 
 $$
-    \sum_{v \in V} d_v^{out} / n
+    \frac{\sum_{u \in V} d_{u,out}}{n}
 $$
 
-On average, how prolific are the content producers for the content the consumer consumes?
-Again, for each incoming edge, create a list for the source of that edge,
+Compare this to the number of things produced by the content producers that
+people follow. Again, for each incoming edge, create a list for the source of that edge,
 writing down every person that's consumed their content.
 
 Now, apply similar logic as the undirected case. There is exactly one list for
-each edge, giving $$\sum_v d_v^{out}$$ lists. A producer $$u$$ is the title
-of $$d_u^{out}$$ lists, one for each person whose consumed their content. Each
-of those lists will have $$d_u^{out}$$ items on it.
+each edge, giving $$\sum_v d_{v,out}$$ lists. A producer $$v$$ is the title
+of $$d_{v,out}$$ lists, one for each person whose consumed their content. Each
+of those lists will have $$d_{v,out}$$ items on it. The average length of
+those lists is
+
+$$
+    \frac{\sum_{v \in V} d_{v,out}^2}{\sum_{v \in V} d_{v,out}}
+$$
 
 Applying Cauchy-Schwarz again gives that on average, the content producers you
 follow make more things than you do.
 
-You can perform a similar argument with edges in the opposite direction. This
-gives that on average, people who consume your content consume more things than
-you do.
+I call this the *producer* view, because you're always counting the edges that
+are leaving each vertex. We can also take the *consumer* view. In this view,
+we count the edges that are entering each vertex. By performing a similar argument,
+you get that on average, people who consume your work consume more than you do.
+Both views are valid, and sometimes one view gives an easier interpretation than
+the other.
 
 **Again, this argument only says something about the average, and you need
 assumptions about graph connectivity to argue anything stronger.** In fact, despite
 its mathematical underpinnings, I would hesitate on treating the friendship
 paradox as a truth about the world. I see it more like a principle, that's
-useful for flavoring different arguments, but not quite strong enough to form
-an argument on its own.
+useful for flavoring different arguments, but not strong enough to form an
+argument on its own.
 
 \* \* \*
 {: .centered }
@@ -134,33 +142,36 @@ was that we can model something as a graph.
 
 There's a branch of mathematics called category theory. I don't know it very
 well, but the impression I get is that you let objects represent something, you
-let arrows represent some relation between symbols, and then you interpret
-all of mathematics as special cases of those objects and arrows. Like, say,
-finance.
+let arrows represent some relation between objects, and then you interpret
+all of mathematics as special cases of those objects and arrows. This lets
+you do things like [explain finance with commutative diagrams](https://hoj201.wordpress.com/2016/04/03/finance-explained-in-commutative-diagrams/).
 
-As a shoutout to the category theory fans reading this, let's make a bunch of
-wild claims about society, based on different interpretations of vertices and
-edges!
+I know at least one fan of category theory is going to read this, so as an homage,
+let's make a bunch of wild claims about society by forming different
+interpretations of vertices and edges.
 
 Let vertices be Twitter accounts. An edge connects $$u$$ to $$v$$ if $$u$$
-follows $$v$$. These are directed edges. On average, the accounts you follow
-have more followers than you do.
+follows $$v$$. In the producer view, on average the accounts you follow have more followers than you.
+In the consumer view, the people who follow you are more likely to follow more people than you.
 
-Let's have vertices be people again, except instead of friendship, let's say
-there's an edge from $$u$$ to $$v$$ if $$u$$ has a crush on $$v$$. These
-are also directed edge. On average, the people you crush on receive more
-attention than you do. Awww, that's kinda sad. But let's consider the other
-direction. On average, people who have crushes on you crush on more people
-than you do. Uhhhh, okay, that didn't really help.
+Let vertices be people. Instead of friendship,
+say there's an edge from $$u$$ to $$v$$ if $$u$$ has a crush on $$v$$. To the
+disappointment of many people, crushes aren't symmetric. In the producer
+view, on average the people you crush on have more admirers than
+you do. In the consumer view, on average people who have crushes on you have
+crushes on more people than you do. I don't know if this makes anyone feel
+better about their romantic life, but there you go?
 
 Again, let vertices be people. This time, there is an edge from $$u$$ to
-$$v$$ if $$v$$ read something that $$u$$ wrote.
-On average, the writers whose works you read get more readers than you do.
-We could substitute writing with any form of communication.
-Blogs, articles, Facebook posts, Youtube videos, tweets, research papers,
-memes...in general, anyone who prolifically creates content not only makes lots
+$$v$$ if $$u$$ writes something that $$v$$ reads. In the producer view,
+on average your readership is smaller than the readerships of other writers.
+In the consumer view, on average the people who read your work read more things
+than you do. Now, not everybody writes, but we could substitue writing
+with any form of communication. Blogs, articles, Facebook posts, speeches,
+Youtube videos, research papers, memes...in general, anyone who
+prolifically creates content not only makes lots
 of things, but becomes well-known *for* making lots of things.
-Their reputation precede them and outgrows them too.
+Their reputation both precedes them and outgrows them.
 
 \* \* \*
 {: .centered }
