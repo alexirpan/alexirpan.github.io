@@ -19,7 +19,8 @@ To justify why this could be true, let's model friendship as an undirected graph
 In this graph, people are vertices, and an edge connects two people if they're
 friends with one another.
 
-IMAGE
+![Friendship Graph](/public/friendship-paradox/graph.svg)
+{: .centered }
 
 Now let's introduce some notation. $$V$$ is the set of all vertices, $$n$$ is
 the number of vertices, $$v$$ is a single vertex, and $$d_v$$ is the degree of vertex $$v$$. The average
@@ -35,17 +36,19 @@ for each of their friends. Every list is titled with that friend's name - say it
 $$u$$, for sake of example. On that list, $$v$$ writes down all of $$u$$'s
 friends.
 
-IMAGE
+![Friendship Graph With Lists](/public/friendship-paradox/graph_list.svg)
+{: .centered }
 
 The average number of friends that $$v$$'s friends have is the average length of
-the lists that $$v$$ created. The average number of friends that any
+the lists that $$v$$ created, not counting the title. The average number of friends that any
 person's friends have is the average length of all created lists.
 
-Each person $$v$$ makes $$d_v$$ lists, so there are
-$$\sum_{v \in V} d_v$$ lists total. A list titled $$v$$ has $$d_v$$ names on
+Each $$v$$ makes $$d_v$$ lists, giving
+$$\sum_{v \in V} d_v$$ lists in total. A list titled $$v$$ has $$d_v$$ names on
 it, because $$v$$ has $$d_v$$ friends. We get one list titled $$v$$ whenever a
-friend of $$v$$ creates lists, so there are $$d_v$$ such lists.
-Thus, every person $$v$$ contributes $$d_v^2$$ to the total length.
+friend of $$v$$ creates lists, so there are $$d_v$$ lists titled $$v$$, each
+with $$d_v$$ people on it.
+Thus, each person $$v$$ contributes $$d_v^2$$ to the total length.
 
 Overall, this gives
 
@@ -93,39 +96,51 @@ the principle more applicable.
 It turns out such a result does exist.
 Let's model a directed edge as a producer-consumer relationship. There's an
 edge from $$u$$ to $$v$$ if $$u$$ produces something that $$v$$ consumes.
+
+![Directed Graph](/public/friendship-paradox/directed_graph.svg)
+{: .centered }
+
 People both produce things and consume things, represented by out-edges and in-edges respectively.
 Let $$d_{v,out}$$ and $$d_{v,in}$$ be the number of out-edges and in-edges for $$v$$.
 
 Let's consider the average number of things people produce.
-The average number of things somebody produces is
+The average number of things somebody produces is the average number of
+outgoing edges.
 
 $$
     \frac{\sum_{u \in V} d_{u,out}}{n}
 $$
 
-Compare this to the number of things produced by the content producers that
-people follow. Again, for each incoming edge, create a list for the source of that edge,
-writing down every person that's consumed their content.
+Let's compare to the average of the content producers that $$v$$ follows.
+For each **incoming** edge, create a list for the source of that edge,
+writing down every consumer of that source (the end of every outgoing edge).
 
-Now, apply similar logic as the undirected case. There is exactly one list for
-each edge, giving $$\sum_v d_{v,out}$$ lists. A producer $$v$$ is the title
-of $$d_{v,out}$$ lists, one for each person whose consumed their content. Each
-of those lists will have $$d_{v,out}$$ items on it. The average length of
-those lists is
+![Directed Graph List](/public/friendship-paradox/directed_graph_list.svg)
+{: .centered }
+
+From here we can apply similar logic as the undirected case. Each person creates
+one list for each outgoing edge, giving $$\sum_v d_{v,out}$$ lists total.
+Each $$v$$ is the title of $$d_{v,out}$$ lists, one for consumer.
+Each of those lists will have $$d_{v,out}$$ items on it. All together, this
+gives a similar expression
 
 $$
     \frac{\sum_{v \in V} d_{v,out}^2}{\sum_{v \in V} d_{v,out}}
 $$
 
-Applying Cauchy-Schwarz again gives that on average, the content producers you
+which we can once again apply Cauchy-Schwarz too.
+
+The conclusion is that on average, the content producers you
 follow make more things than you do.
 
 I call this the *producer* view, because you're always counting the edges that
-are leaving each vertex. We can also take the *consumer* view. In this view,
-we count the edges that are entering each vertex. By performing a similar argument,
-you get that on average, people who consume your work consume more than you do.
-Both views are valid, and sometimes one view gives an easier interpretation than
-the other.
+leave each vertex. We can also take the *consumer* view, counting the edges that
+are entering each vertex instead. By performing a similar argument, you get this
+conclusion instead.
+
+On average, the people who follow your work follow more things than you do.
+
+Both views are valid, and give different interpretations of the same graph.
 
 **Again, this argument only says something about the average, and you need
 assumptions about graph connectivity to argue anything stronger.** In fact, despite
