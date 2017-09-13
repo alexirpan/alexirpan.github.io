@@ -152,8 +152,8 @@ argument on its own.
 \* \* \*
 {: .centered }
 
-In the derivation, nothing was specific about friendship. The only requirement
-was that we could model interactions as a graph.
+In the derivation above, the only requirement was that we could model interactions
+as a graph.
 
 There's a branch of mathematics called [category theory](https://en.wikipedia.org/wiki/Category_theory).
 I don't know it very well, but the impression I get is that you let objects represent something, you
@@ -203,9 +203,14 @@ often turns into this.
 1. I should write more.
 2. Why do I think that? It's partly because I read cool things from people that write more than I do.
 3. But by friendship paradox, it's expected that those writers are writing more than me.
-4. So hey, maybe I shouldn't feel bad!
+4. So hey, maybe I shouldn't feel too bad.
 
 More importantly, the friendship paradox touches on another, more important
 idea: the things you see don't have to reflect reality. If you base your assumptions
 of popularity on the popularity of your friends, on average you'll come up
-short.
+short. If you base your assumptions of productivity by things you read online, it's
+easier to see evidence of productivity from people who are very productive.
+If you base your views of somebody by things you hear them say, it's warped by
+the chances you would have heard their views in the first place. And so on down.
+Not all of these are applications of the friendship paradox, but it's easy to
+forget about these things, and thinking about the paradox is a nice reminder.
