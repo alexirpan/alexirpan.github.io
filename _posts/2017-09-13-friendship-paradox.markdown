@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Friendship Paradox And You"
-date:   2017-08-23 00:00:00 -0700
+date:   2017-09-13 00:58:00 -0700
 ---
 
 The [friendship paradox](https://en.wikipedia.org/wiki/Friendship_paradox) is a
@@ -212,5 +212,6 @@ short. If you base your assumptions of productivity by things you read online, i
 easier to see evidence of productivity from people who are very productive.
 If you base your views of somebody by things you hear them say, it's warped by
 the chances you would have heard their views in the first place. And so on down.
+
 Not all of these are applications of the friendship paradox, but it's easy to
 forget about these things, and thinking about the paradox is a nice reminder.
