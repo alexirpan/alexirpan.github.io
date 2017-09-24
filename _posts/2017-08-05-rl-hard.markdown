@@ -1,39 +1,51 @@
 ---
 layout: post
-title:  "Why Is Reinforcement Learning Hard?"
+title:  "Reinforcement Learning Doesn't Work Yet"
 date:   2017-08-05 01:31:00 -0700
 ---
 
-About two weeks ago, I observed on Facebook that reinforcement learning doesn't
-actually work, and then claimed that if you think RL can solve your problem,
-there's about a 70% chance you're wrong.
+*Colored by personal experience. It's been about 6 months since I implemented RL myself, but from what I hear, not a lot has changed.*
 
-On reflection, this pessimism is actually very central to my research frame.
-If you're the kind of person who likes talking about AI timelines, it's also
-why my timelines are so pessimistic. I think much of the recent hype for
-reinforcement learning is deserved, simply because of its potential, but
-at the same time it feels very overblown.
+If you ask me if reinforcement learning can solve your problem, I'll tell
+you it can't, and I think this is correct about 70% of the time.
+
+Reinforcement learning has mountains and mountains of hype behind it. I think
+RL certainly deserves a lot of hype, but not as much as it's currently getting,
+given how little it can actually do. Hidden behind the beautiful demos is
+mountains and mountains of pain, failed experiments, instability, and pure,
+nonsensical bullshit.
+
+This is part of why all my AI timelines are fairly long term, by the way.
+
+Okay. Why doesn't RL work?
 
 
-Reasons Why Reinforcement Learning Is Hard
+It's Horribly Unstable
 ------------------------------------------------------------------------
 
-1. It Can Be Horribly, Horribly Unstable.
+Karpathy quote.
 
-This is the big one, and I feel it's underappreciated by people who haven't
-implemented reinforcement learning themselves.
+"I get lunch with people who have been in this field for a few years,
+and after a few months I finally got RL to solve a task. Except then it
+fails 30% of the time, just cause."
 
-Almost all machine learning algorithms have *hyperparameters*, which influence
-the behavior of the learning system. Often these are picked by hand, or tuned
-automatically by some hyperparameter optimization algorithm.
+Almost every ML algorithm has hyperparameters, which influence the behavior
+of the learning system. Often, these are picked by hand, or by random search.
 
-We say an approach is *stable* if it's relatively easy to see signs of life.
-Meaning, for a wide range of hyperparameters, your accuracy will go up over time.
-You may not get amazing performance, but you'll do well enough that you know it's
-worth investing more time. Most supervised learning problems fall into this
-domain, which is very handy.
+Supervised learning is stable. If you change the hyperparamters a little bit,
+your performance won't change that much. Not all hyperparameters perform that
+well, but it's relatively easy to see signs of life. These signs of life are
+super important, because they tell you that you're on the right track, and
+that it's worth investing more time.
 
-For almost all problems, reinforcement learning is nowhere near as stable.
-I'm not aware of any 
+Reinforcement learning, on the other hand, isn't stable at all. It is aggressively,
+almost pathologically unstable. It is so bad that it's almost productive to
+imagine your computer is a demon that's trying to misinterpret what you're trying
+to get it to optimize.
 
+Let me give you an example. When I started working at Brain, one of the first
+things I did was to reproduce the results of a continuous RL paper. Specifically,
+I was trying to reproduce the paper that introduces Normalized Advantage Function.
+Now, as luck would have it, the first author of that paper was interning at
+Brain and sitting right next to me.
 
