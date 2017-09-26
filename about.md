@@ -4,11 +4,12 @@ title: About
 permalink: /about/
 ---
 
-*Last updated June 7, 2017.*
+*Last updated Septebmer 25, 2017.*
 
 In 2016, I graduated from the Computer Science undergraduate program at UC
-Berkeley, with a 4.0 in major GPA. I currently work at Google on the Brain
-Robotics team.
+Berkeley, with a 4.0 in major GPA. I currently work at Google as a Software
+Engineer on the Brain Robotics team. The views expressed on this blog are
+personal opinions, and do not reflect the opinions of my employer.
 
 My main research interests are deep reinforcement learning, transfer learning,
 and multitask learning.
@@ -27,11 +28,11 @@ As someone who started as a math major, I've always had a soft spot for
 theoretical computer science. Outside of machine learning, I enjoy
 complexity theory, theoretical cryptography, and mathematical logic.
 
-Blog posts range from explanations of research papers to observations
-of my life and stupid jokes.
-I post whenever I have the time to, meaning not very often.
-(Disclaimer: the views expressed here are my own, not those of my employer.)
+Posts range from explanations of research papers to observations
+of my life and stupid jokes. I post whenever I have the time to, meaning not
+very often, but historically I average about one post per month.
 
-I play Dominion at a competitive level (peaked at top 25),
-like participating in puzzle hunts, and actively follow *My Little Pony: Friendship is Magic*.
-For other interests, browse the site. I'm sure you'll find something.
+In my free time, I like playing Dominion competitively. At my best, I was in
+the top 25 worldwide. I'm currentl ranked 62nd.
+I also watch *My Little Pony: Friendship is Magic*, and like participating
+in puzzle hunts.

@@ -4,22 +4,15 @@ title: Research
 permalink: /research/
 ---
 
-*Last updated November 14, 2016.*
+*Last updated September 25, 2017.*
 
-This is not a standard research page.
+My current research interests are transfer learning and deep reinforcement
+learning, with a bias towards their applications to robotics.
 
-Due to confidence issues, I didn't apply to PhD programs senior year.
-My more complete reasoning is in this [blog post]({% post_url 2016-01-03-grad-school %}).
-
-My current research area is transfer for robotics and deep reinforcement
-learning. Broadly, I'm interested in ways to use pretrained policies to
-train new policies with fewer samples. My current theory is that this requires
-automatically learning a shared structure/factor common to several tasks, and
-my current research is focused on ways to learn and utilize those
-shared factors.
-
-The research I did in undergrad didn't lead to publishable results, but
-I'm still proud of it. Hopefully you'll find it neat.
+This page is divided into post-undergrad projects and undergrad projects.
+Post-undergrad projects are significantly lower quality, but I leave them up
+because I'm still slightly proud of what I accomplished, given what I knew
+at the time.
 
 Project list:
 
@@ -31,7 +24,32 @@ Project list:
 
 <p></p>
 
-# Exploring Boosted Neural Nets for Rubik's Cube Solving
+# Post-Undergrad Work
+
+### Using Simulation and Domain Adaptation to Improve Efficiency of Deep Robotic Grasping
+
+*Konstantinos Bousmalis\*, Alex Irpan\*, Paul Wohlhart\*, Yunfei Bai, Matthew Kelcey, Mrinal Kalakrishnan, Laura Downs, Julian Ibarz, Peter Pastor, Kurt Konolige, Sergey Levine, Vincent Vanhoucke. Asterisk indicates equal contribution.*
+
+Paper and Video: [here](https://sites.google.com/view/graspgan)
+
+Combines several domain adaptation techniques (both feature-level and pixel-level) to learn real-world grasping policies from monocular RGB images.
+
+
+### Learning Hierarchical Information Flow with Recurrent Neural Modules
+
+*Danijar Hafner, Alex Irpan, James Davidson, Nicolas Heess*
+
+Paper: [here](https://arxiv.org/abs/1706.05744)
+
+Proposes ThalNet, a network architecture inspired by the thalamus in the brain. Accepted to NIPS 2017.
+
+---------------------------------------------
+
+<p></p>
+
+# Undergrad Work
+
+### Exploring Boosted Neural Nets for Rubik's Cube Solving
 
 *Alex Irpan*
 
@@ -41,23 +59,15 @@ Poster (click for full size):
 
 [![Poster](/public/research/posterimage.png)](/public/research/poster.pdf)
 
-NIPS submission (rejected, and I never expected acceptance): [PDF](/public/research/nips_2016.pdf)
+Paper: [here](/public/research/nips_2016.pdf)
 
 Code: [GitHub](https://github.com/alexirpan/rubik_research)
 
-Project where I trained neural nets mapping raw features to Rubik's Cube moves.
-Started as a small side project, but
-grew over time, eventually turning into an experiment
-to see if AdaBoost reweighting while training could improve training
-time or accuracy.
-The short answer is that it did neither. For details, see the submission.
+Applies AdaBoost to a online data stream to aid in training a neural net to
+classify the next move in a Rubik's Cube solution.
 
 
----------------------------------------------
-
-<p></p>
-
-# Factored Q-Learning in Continuous State-Action Spaces
+### Factored Q-Learning in Continuous State-Action Spaces
 
 *Alex Irpan, mentored by John Schulman*
 
@@ -71,26 +81,12 @@ Informal Writeup: [PDF](/public/research/281areport.pdf)
 
 Code: [BitBucket](https://bitbucket.org/airpan/fall15-research)
 
-The intention of this project was to
-add independence assumptions between different dimensions of the action space to
-decrease model size,
-with specific application to discretized continuous MDPs.
-Unfortunately I had difficulty getting Q-learning to work in small
-continuous MDPs,
-and there was no point moving forward until the small case worked.
-Experimental results from the poster are from a discrete MDP, the Atari
-game Asteroids.
-
-Results were a wash, but I like some of the ideas here. I still want to test
-stochastic policies based on graphical models,
-but have too many other things on my plate.
+Represents a Q-function as the sum of one Q-function for each dimension of the
+action space, aiming to avoid the curse of dimensionality in high-dimensional
+discretized MDPs.
 
 
----------------------------------------------
-
-<p></p>
-
-# An Overview of Sublinear Machine Learning Algorithms
+### An Overview of Sublinear Machine Learning Algorithms
 
 *Alex Irpan\*, Ronald Kwan\* (worked equally)*
 
@@ -98,19 +94,11 @@ but have too many other things on my plate.
 
 Report: [PDF](/public/research/sublinear-algorithms-optimization.pdf)
 
-Summarizes algorithms for solving SDPs and learning
-perceptrons/SVMs in sublinear time, including their performance proogs.
-Each shares the same approach:
-describe the optimization problem as a max-min game, and sample an
-estimate of the gradient, which can be done in sublinear time.
-Multiplicative weights and concentration inequalities glues the proofs together.
+A survey paper summarizing algorithms used to solve SDPs and learn SVMs in sublinear
+time.
 
 
----------------------------------------------
-
-<p></p>
-
-# Integrating Monte Carlo Tree Search with Reinforcement Learning
+### Integrating Monte Carlo Tree Search with Reinforcement Learning
 
 *Alex Irpan, mentored by John Schulman*
 
@@ -118,51 +106,5 @@ Multiplicative weights and concentration inequalities glues the proofs together.
 
 Code: [BitBucket](https://bitbucket.org/airpan/research-code)
 
-My first research project. I experimented with integrating Monte
-Carlo Tree Search with Q-learning on the toy problem of Connect Four.
-The goal was to use MCTS for policy improvement. MCTS turns a bad
-rollout policy $$\pi$$ into a better one while producing reasonably
-accurate Q-values. Q-learning improves rollout policy $$\pi$$. MCTS on
-the improved $$\pi$$ gives more accurate Q-values, which can further
-improve $$\pi$$, and so on.
-
-The goals I had were better implemented in this [NIPS paper](http://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning)
-and in AlphaGo, so I don't see much use in revisiting this.
-
-
----------------------------------------------
-
-<p></p>
-
-# Presentation: Secure Function Evaluation with Garbled Circuits
-
-*Alex Irpan*
-
-*Fall 2015. Final project for CS 276, Cryptography*
-
-Blog post: [here]({% post_url 2016-02-11-secure-computation %})
-
-A presentation on Yao's garbled circuits, the first solution to securely
-computing functions between two semi-honest parties. I have presentation notes,
-but they're messy. The blog post is more refined and has more
-intuition.
-
-
----------------------------------------------
-
-<p></p>
-
-# Presentation: Hiding Input Size in Two-Party Secure Computation
-
-*Alex Irpan*
-
-*Spring 2016. Final project for CS 294, Secure Computation*
-
-Presentation Notes: [PDF](/public/research/hiding_input_size.pdf)
-
-Garbled circuits implicitly leak the input size of both parties. Can we do
-better? A paper by Lindell, Nissim, and Orlandi on hiding input size helps
-answer this question.
-Presented the construction for one case assuming fully homomorphic encryption,
-and impossibility proofs for other cases.
-
+Regresses policy $$\pi$$ to target values generated by MCTS, with $$\pi$$
+as the rollout policy. Note: done before AlphaGo was announced.
