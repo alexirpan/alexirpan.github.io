@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-*Last updated Septebmer 25, 2017.*
+*Last updated September 25, 2017.*
 
 In 2016, I graduated from the Computer Science undergraduate program at UC
 Berkeley, with a 4.0 in major GPA. I currently work at Google as a Software
