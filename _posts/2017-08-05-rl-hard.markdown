@@ -4,10 +4,15 @@ title:  "Reinforcement Learning Doesn't Work Yet"
 date:   2017-08-05 01:31:00 -0700
 ---
 
-*Colored by personal experience. It's been about 6 months since I implemented RL myself, but from what I hear, not a lot has changed.*
+*Like all rants, this should be taken with a grain of salt.*
 
-If you ask me if reinforcement learning can solve your problem, I'll tell
-you it can't, and I think this is correct about 70% of the time.
+*I mostly cite papers from Berkeley and DeepMind, because I know more about them.
+Apologies if I missed a paper you think is relevant.*
+
+I once mused that whenever people ask me if RL can solve their problem, I tell
+them it can't, and about 70% of the time I'm right. Now, people don't actually
+ask me that enough for me to figure out how accurate I am, but in general
+people heavily overestimate what reinforcement learning can do.
 
 Reinforcement learning has mountains and mountains of hype behind it. I think
 RL certainly deserves a lot of hype, but not as much as it's currently getting,
@@ -20,14 +25,8 @@ This is part of why all my AI timelines are fairly long term, by the way.
 Okay. Why doesn't RL work?
 
 
-It's Horribly Unstable
+Stability
 ------------------------------------------------------------------------
-
-Karpathy quote.
-
-"I get lunch with people who have been in this field for a few years,
-and after a few months I finally got RL to solve a task. Except then it
-fails 30% of the time, just cause."
 
 Almost every ML algorithm has hyperparameters, which influence the behavior
 of the learning system. Often, these are picked by hand, or by random search.
@@ -47,5 +46,64 @@ Let me give you an example. When I started working at Brain, one of the first
 things I did was to reproduce the results of a continuous RL paper. Specifically,
 I was trying to reproduce the paper that introduces Normalized Advantage Function.
 Now, as luck would have it, the first author of that paper was interning at
-Brain and sitting right next to me.
+Brain and sitting right next to me. He doesn't have his old code anymore but he
+helpfully gives me a few pointers.
+
+After about a month of failures, I finally solve my first task: the Pendulum
+task from OpenAI Gym. If you're unfamiliar with this task, it's dead simple.
+There's a pendulum. You send some amount of acceleration in either direction
+around the circle. You get the most reward if you can balance the pendulum at
+the top.
+
+GIF
+
+Now, when I finally get it to work, here are the plots of performance. Success
+on this task is defined as hitting -100 to -150 reward. This is 10 independent
+runs, with the exact same hyperparameters. The only difference is the random seed.
+
+PICTURE
+
+10 seeds, and *3* of them work within 200k steps? If this happened in any other
+branch of ML, you'd be digging for bugs and would be trying to track down what's
+going wrong. In RL, it's Tuesday.
+
+Karpathy quote.
+
+"I get lunch with people who have been in this field for a few years,
+and after a few months I finally got RL to solve a task. Except then it
+fails 30% of the time, just cause."
+
+To be fair, if you leave these jobs running for longer, many of them do
+eventually get past the success bar, after around 800k steps instead. But there
+are other environments where that just doesn't happen. To wit: here is a plot
+from the VIME paper, trained with TRPO (which is billed as one of the more stable
+RL algorithms.) The environment is HalfCheetah.
+
+PLOT
+
+Hey, that reward curve looks reasonable. Except note the shaded region is the
+performance over 5 random seeds, where the worst seed learned nothing and the
+best seed got twice the reward.
+
+Not all environment will have this kind of behavior, but many do.
+
+
+Why?
+---------------------------------------------------------------------------
+
+The answer to "why?" isn't a big research question. In fact it is fairly obvious
+once you do enough in the space, and it quickly becomes clear how difficult the
+problem is.
+
+Let's consider just on-policy learning for now. In on-policy RL, you're trying
+to learn a policy. You initially start by playing randomly. Over time, your policy
+tries things, gets reward signal, and gets updated to try to make good rewards
+happen more often. Importantly, all your data is getting generated online, and
+the data you see at any point depends on your current policy.
+
+Richard Sutton's textbook
+observes "the deadly triad". VERIFY THIS.
+
+
+
 
