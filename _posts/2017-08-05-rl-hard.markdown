@@ -95,15 +95,59 @@ The answer to "why?" isn't a big research question. In fact it is fairly obvious
 once you do enough in the space, and it quickly becomes clear how difficult the
 problem is.
 
+Everything comes down to the exploration-exploitation tradeoff. The short version
+is this: if you spend too much time on exploration, 
+
+The core issue is that the data you collect depends on your current policy.
 Let's consider just on-policy learning for now. In on-policy RL, you're trying
 to learn a policy. You initially start by playing randomly. Over time, your policy
 tries things, gets reward signal, and gets updated to try to make good rewards
 happen more often. Importantly, all your data is getting generated online, and
 the data you see at any point depends on your current policy.
 
-Richard Sutton's textbook
-observes "the deadly triad". VERIFY THIS.
+Very often, there are behaviors that essentially act like local maxima in reward
+space. As an example, consider the Hopper environment.
+
+GIF
+
+In this environment, you want the robot leg to hop forward. You get reward for
+travelling forward, and the episode ends if the leg falls to the ground, which
+happens when the leg falls too far forward.
+
+If you visualize learned policies over time, you usually see the policy first
+learn to jump forward.
+
+This gives a small burst of reward, and then the episode stops.
+
+The correct thing to do is to jump forward, but then start leaning back to
+stabilize in time for another jump...
+
+GIF
+
+but it can be very difficult to learn to explore to this behavior, *because
+if it leans back without learning to land stably, it gets less reward than
+learning to lunge forward.*
+
+If the policy is at a behavior that's far from a behavior that gives higher reward,
+it may learn that any exploration just gives worse performance. Over time the
+policy becomes more and more confident that it's doing the right thing, and
+the policy never recovers learning.
+
+And on the flip side, if the policy gets lucky and explores to a good behavior,
+it can learn much more quickly than another one.
 
 
+It (Mostly) Requires a Reward Oracle
+------------------------------------------------------------------------------
 
+Almost all reinforcement learning results are done in simulated environments
+with a predefined reward function, that is assumed to perfectly represent what you
+want. For example, in Atari games, you want to maximize score. You always want
+to maximize score. That's just how they work. For the MuJoCo tasks in OpenAI
+Gym, a similar thing is true - you have exact positions of each robot joint
+and velocity, and often have the exact position of the target location too.
+
+Every now and then, I'm at a party and someone wonders why people rarely apply
+reinforcement learning to the real world, and 
+reinforcement learning in the real world.
 
