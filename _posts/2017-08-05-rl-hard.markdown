@@ -140,14 +140,20 @@ it can learn much more quickly than another one.
 It (Mostly) Requires a Reward Oracle
 ------------------------------------------------------------------------------
 
-Almost all reinforcement learning results are done in simulated environments
-with a predefined reward function, that is assumed to perfectly represent what you
-want. For example, in Atari games, you want to maximize score. You always want
-to maximize score. That's just how they work. For the MuJoCo tasks in OpenAI
-Gym, a similar thing is true - you have exact positions of each robot joint
-and velocity, and often have the exact position of the target location too.
+Every now and then, I'm at a party and someone wonders why reinforcement learning
+hasn't been applied to many real-world problems.
 
-Every now and then, I'm at a party and someone wonders why people rarely apply
-reinforcement learning to the real world, and 
-reinforcement learning in the real world.
+There are several reasons why, but a big one is that *most RL depends on having
+a reward function that captures exactly what you want.* The majority of
+reinforcement learning results come from simulated environments, where you have
+perfect knowledge of the entire state and can define a reward appropriately.
+In Atari, you want to maximize score. You always want to maxmize score. That's
+just how those games works. For the MuJoCo tasks, a similar thing is true. Reacher
+wants to reach to an exact target location. HalfCheetah wants to run forward
+really fast. Cartpole wants to not fall down.
+
+*Reward functions that don't have this property tend to work poorly, and sometimes
+do weird things that give  reward without solving the problem.* Here's an example
+from a DeepMind paper on learning to grasp a block.
+Reinforcement learning is best thought of as a variant of black-box optimization.
 
