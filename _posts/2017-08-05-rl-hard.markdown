@@ -153,7 +153,24 @@ wants to reach to an exact target location. HalfCheetah wants to run forward
 really fast. Cartpole wants to not fall down.
 
 *Reward functions that don't have this property tend to work poorly, and sometimes
-do weird things that give  reward without solving the problem.* Here's an example
-from a DeepMind paper on learning to grasp a block.
-Reinforcement learning is best thought of as a variant of black-box optimization.
+do weird things that give reward without solving the problem.* A classic example
+comes from this DeepMind paper, which uses RL to learn how to grasp a block.
+When the gripper is far from the block, the policy gets reward for moving
+closer. When the gripper is near the block, it gets reward based on the block
+height, defined as the z-coordinate of the bottom face.
 
+In one execution, the policy did this
+
+GIF
+
+Hey guys and gals, the face is higher than it started! That's what you wanted,
+right?
+
+A friend once told me a similar issue: they were trying to train a robot arm to
+learn to move to a point in space, that was defined with respect to a table.
+So the arm learned to move down at the table REALLY FAST, which made the table
+fall down, such that the point *just happened* to move to the arm.
+
+This isn't cleverness. It's just stupid. But if your reward function
+gives reward for stupid behavior, there's always a chance your policy learns
+to do this.
