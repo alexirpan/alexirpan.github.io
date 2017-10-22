@@ -171,6 +171,24 @@ learn to move to a point in space, that was defined with respect to a table.
 So the arm learned to move down at the table REALLY FAST, which made the table
 fall down, such that the point *just happened* to move to the arm.
 
-This isn't cleverness. It's just stupid. But if your reward function
-gives reward for stupid behavior, there's always a chance your policy learns
-to do this.
+Not all of this is even reward hacking. Usually reward hacking implies cleverness
+or out-of-the-box solutions that give more reward than the intended solution.
+But these behaviors aren't clever, and they don't give more reward. They're
+just stupid, a poor solution to the exploration-exploitation tradeoff. Whenever
+your reward function gives small reward for stupid behavior, there's always a
+chance learning just gets completely stuck at the wrong thing. It's just
+how deep RL is, unfortunately.
+
+
+It is Often Horribly Sample Inefficient
+-------------------------------------------------------------------------------
+
+The most well-known benchmark for deep RL is Atari. These games run at 60 frames
+per second.
+
+would you like to guess how many frames a state-of-the-art DQN takes to train?
+
+Well, it obviously depends on the game, but based off the recent Rainbow paper,
+it's about 70 million frames for the baseline DQN from the Nature paper (CHECK),
+which drops to 44 million frames if you combine several DQN advances from the
+past 2 years.
