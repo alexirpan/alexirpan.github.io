@@ -4,25 +4,206 @@ title:  "Reinforcement Learning Doesn't Work Yet"
 date:   2017-08-05 01:31:00 -0700
 ---
 
-*Like all rants, this should be taken with a grain of salt.*
+*Like all rants, this accentuates the negatives and downplays the positives,
+so you should take it with some skepticism.*
 
-*I mostly cite papers from Berkeley and DeepMind, because I know more about them.
-Apologies if I missed a paper you think is relevant.*
+*I mostly cite papers from Berkeley and DeepMind, because I know more of the
+researchers there. Apologies if I missed a paper you think is relevant.*
 
 I once mused that whenever people ask me if RL can solve their problem, I tell
-them it can't, and about 70% of the time I'm right. Now, people don't actually
-ask me that enough for me to figure out how accurate I am, but in general
-people heavily overestimate what reinforcement learning can do.
+them it can't, and about 70% of the time I'm right.
 
-Reinforcement learning has mountains and mountains of hype behind it. I think
-RL certainly deserves a lot of hype, but not as much as it's currently getting,
-given how little it can actually do. Hidden behind the beautiful demos is
-mountains and mountains of pain, failed experiments, instability, and pure,
-nonsensical bullshit.
+Every now and then, I'm at a party and someone wonders why reinforcement learning
+hasn't been applied to many real-world problems.
+
+Now, people don't actually directly ask me whether RL will work or not. It's
+more about the heavy optimism some people have for reinforcement learning. The
+naive, wide-eyed belief that RL works, and it's just a matter of time until
+it changes the world, and it pains me that I end up being the one that has to
+burst their aspirations and bring them down to Earth.
+
+Reinforcement learning has mountains and mountains of hype behind it, somewhat
+deservedly. It's an incredibly, incredibly flexible paradigm, and a robust,
+performant reinforcement learning system should theoretically be great at
+everything. It's the kind of dream that makes the money keep flowing.
+
+Unfortunately, it doesn't really work. I believe it can work, but there are a
+lot of problems in the way, many of which feel very fundamentally difficult.
+Hidden behind the beautiful demos is mountains and mountains of pain, failed
+experiments, statistically insignificant results, and pure, nonsensical
+bullshit.
 
 This is part of why all my AI timelines are fairly long term, by the way.
 
 Okay. Why doesn't RL work?
+
+
+It Can Be Horribly Sample Inefficient
+-------------------------------------------------------------------------------
+
+The most well-known benchmark for deep reinforcement learning is Atari. Throw
+Q-Learning at it, and some (but not all!) of the games get solved to superhuman
+performance.
+
+Atari games run at 60 frames per second. Take a moment and guess how many frames
+a state-of-the-art DQN takes to train.
+
+
+The answer depends on the game, but let's take a look at a recent Deepmind
+paper, [Rainbow DQN](https://arxiv.org/abs/1710.02298). Over the past 5 years,
+there have been several extensions made to the original DQN network. Evidently,
+some researchers got curious to see what would happen if you combined all the
+advances together. The results come in this handy chart.
+
+CHART
+
+The y-axis is "median human-normalized score". There are 57 Atari games in the
+benchmark. For each game, the score is normalized such that human performance
+is 100%. The plotted curve is the median of those normalized scores.
+Rainbow matches that within 7 million frames, which is about 1900 hours of
+play.
+
+Mind you, this is actually pretty great, because the old record (Distributional
+DQN) didn't hit 100% median performance within 44 million frames. And the
+original DQN (the one from the Nature paper) never even hits 100%. It gets to
+79% median performance after 200 million frames.
+
+Hundreds of thousands or millions of steps is roughly the scale for a number
+of common benchmarks. Here's a plot from the PPO paper, https://arxiv.org/abs/1707.06347,
+which is looking like one of the most performant RL algorithms so far.
+
+PLOT
+
+In pretty much all the RL benchmarks, you can solve the problem faster with some
+other method. Cartpole is solvable with LQR or CEM. The MuJoCo environments are
+solvable on-the-fly in real-time with model predictive control
+(albeit with perfect models of environment dynamics). Atari can be solved
+faster with search. So on one hand, it's not surprisingly that RL takes longer
+to learn. On the other hand, it can be really, really disappointing to see
+something requires thousands of times more samples. This is a problem in any
+setting where it's hard to get a ridiculously large number of samples.
+
+
+It (Usually) Requires a Reward Oracle
+------------------------------------------------------------------------------
+
+There are some papers on learning a reward function, often based on imitation
+learning or expert feedback. However, outside of these exceptions, reinforcement
+learning assumes that your reward function captures *exactly* what you want.
+And I mean *exactly*. RL has an annoying tendency to overfit to your reward and
+doing something you don't want it to.
+
+Take Atari, for example. You want to maximize score. You
+*always* want to maximize score. It's just how those games work, and it's why
+Atari games are such a nice benchmark.
+
+The majority of reinforcement learning results come from simulated environments,
+and that's because you have perfect knowledge of the state and can define an
+appropriate reward. Consider the MuJoCo tasks in OpenAI gym.
+The Reacher task sants to reach a target location. You have exact locations of
+everything, so reward is simply the distance. Easy. In HalfCheetah, you give
+more reward if you make it run forward really fast. Also straightforward.
+
+*Reward functions that don't have this property tend to work poorly, and sometimes
+do weird things that give reward without solving the problem.* For example,
+language models are often trained by maximizing the likelihood of a translation,
+then evaluated by computing their BLEU score. Salesforce tried optimizing BLEU
+score directly with RL, and found that although they got better BLEU score,
+humans rated the translations as lower quality. If your reward function doesn't
+reflect something you care about, there is no guarantee your model will care
+about it either.
+Reinforcement learning is a variant of black-box optimization, and
+it's well-known that black-box optimization will learn whatever junk it
+gets rewarded for.
+
+A good example comes from this DeepMind paper, where the authors use DDPG to
+learn to grasp and lift a block. The policy gets reward for increasing the
+block's height, which is defined as the z-coordinate of the bottom face.
+
+The policy ended up learning this.
+
+GIF
+
+This makes the bottom face have a higher z-coordinate. Now, clearly this isn't
+what it's supposed to do...but RL doesn't care. From the perspective of the
+learning algorithm, it did something, and got positive reward, so it's going to
+keep doing that thing.
+
+Anecdotally, a coworker talked about trying out RL on a toy environment. The
+episode terminated whenever the agent walked out of bounds. Fairly standard
+stuff. Except, he forgot to add a large negative penalty for terminating this
+way. And what ended up happening was that the agent learned to be suicidal if
+it was ever close to getting negative reward, because a quick death that ends in
+0 reward is preferably to a life of -1 reward.
+
+I know some people like to tell stories about paperclip
+optimizers, but there's no reason to go speculating that far when there are
+present-day examples. You know those MuJoCo environments I talked about? Most
+of them have an extra reward term that penalizes actions of large magnitude.
+Without this, you can get wildly unrealistic behavior.
+
+Note that this goes both ways: the DeepMind parkour paper learned several novel
+behaviors by creating environments with difficult-to-traverse terrain, just by
+using a reward of "go forward without falling".
+
+
+Even Given a Reward Oracle, Local Optima in Behavior Space Can Be Hard To Escape
+------------------------------------------------------------------------------
+
+A friend once told me a similar issue: they were using RL to train a robot
+learn to move to a point in space, that was defined with respect to a table.
+So the arm learned to move down at the table REALLY FAST, which made the table
+fall down, such that the point *just happened* to move to the arm.
+
+Not all of this is even reward hacking. Usually reward hacking implies cleverness
+or out-of-the-box solutions that give more reward than the intended solution.
+But these behaviors aren't clever, and they don't give more reward. They're
+just stupid, a poor solution to the exploration-exploitation tradeoff. Whenever
+your reward function gives small reward for stupid behavior, there's always a
+chance learning just gets completely stuck at the wrong thing. It's just
+how deep RL is, unfortunately.
+
+
+Even Given a Reward Oracle, Local Optima in Behavior Space Can Be Hard To Escape
+------------------------------------------------------------------------------
+
+By behavior space, I mean "the set of possible behaviors an agent might learn
+in this environment". It doesn't mean anything mathematical.
+
+Here's one of my favorite videos. This is an implementation of NAF, learning
+on the HalfCheetah environment.
+
+VIDEO
+
+Now, from an outside perspective, this is stupid, because *of course* you should
+be running on your feet, not by flailing on your back. But that's only because
+we have the outside context to know that running on the end of your feet
+is what's "supposed" to happen. I don't have videos from earlier in training,
+but this is my guess.
+
+* The robot gets reward for moving forward.
+* Through random exploration, it learns to backflip. This gives a bit of reward
+since it succesfully lunged forward a bit.
+* The policy learned to do this consistently.
+* Once it learned to backflip, it's hard to reorient yourself, forcing the policy
+to learn this back-flailing maneuver.
+
+Here's another example, on the Reacher environment.
+
+VIDEO
+
+At some point, the policy learned to spin itself really, really fast. It's simple
+to do so - just output the maximum torque allowed at each joint. No single
+deviation is enough to change this behavior, so random exploration isn't enough
+to escape this behavior, and it keeps spinning forever.
+
+This shows up in Atari games too. In Breakout, the first thing any policy learns
+is to always output right. That reflects the ball once and gives 5 points instead
+of 0.
+
+VIDEO
+
+When tuned properly, a policy eventually learns to play the game.
 
 
 Stability
@@ -135,60 +316,3 @@ the policy never recovers learning.
 
 And on the flip side, if the policy gets lucky and explores to a good behavior,
 it can learn much more quickly than another one.
-
-
-It (Mostly) Requires a Reward Oracle
-------------------------------------------------------------------------------
-
-Every now and then, I'm at a party and someone wonders why reinforcement learning
-hasn't been applied to many real-world problems.
-
-There are several reasons why, but a big one is that *most RL depends on having
-a reward function that captures exactly what you want.* The majority of
-reinforcement learning results come from simulated environments, where you have
-perfect knowledge of the entire state and can define a reward appropriately.
-In Atari, you want to maximize score. You always want to maxmize score. That's
-just how those games works. For the MuJoCo tasks, a similar thing is true. Reacher
-wants to reach to an exact target location. HalfCheetah wants to run forward
-really fast. Cartpole wants to not fall down.
-
-*Reward functions that don't have this property tend to work poorly, and sometimes
-do weird things that give reward without solving the problem.* A classic example
-comes from this DeepMind paper, which uses RL to learn how to grasp a block.
-When the gripper is far from the block, the policy gets reward for moving
-closer. When the gripper is near the block, it gets reward based on the block
-height, defined as the z-coordinate of the bottom face.
-
-In one execution, the policy did this
-
-GIF
-
-Hey guys and gals, the face is higher than it started! That's what you wanted,
-right?
-
-A friend once told me a similar issue: they were trying to train a robot arm to
-learn to move to a point in space, that was defined with respect to a table.
-So the arm learned to move down at the table REALLY FAST, which made the table
-fall down, such that the point *just happened* to move to the arm.
-
-Not all of this is even reward hacking. Usually reward hacking implies cleverness
-or out-of-the-box solutions that give more reward than the intended solution.
-But these behaviors aren't clever, and they don't give more reward. They're
-just stupid, a poor solution to the exploration-exploitation tradeoff. Whenever
-your reward function gives small reward for stupid behavior, there's always a
-chance learning just gets completely stuck at the wrong thing. It's just
-how deep RL is, unfortunately.
-
-
-It is Often Horribly Sample Inefficient
--------------------------------------------------------------------------------
-
-The most well-known benchmark for deep RL is Atari. These games run at 60 frames
-per second.
-
-would you like to guess how many frames a state-of-the-art DQN takes to train?
-
-Well, it obviously depends on the game, but based off the recent Rainbow paper,
-it's about 70 million frames for the baseline DQN from the Nature paper (CHECK),
-which drops to 44 million frames if you combine several DQN advances from the
-past 2 years.
