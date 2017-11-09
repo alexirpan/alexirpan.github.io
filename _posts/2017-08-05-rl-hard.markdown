@@ -335,6 +335,20 @@ faster than a policy that doesn't. A policy that fails to discover good training
 examples in time will collapse towards learning nothing at all, as it becomes
 more confident that any deviation it tries will fail.
 
-------------------------------------------
 
+But What About All Reinforcement Learning Success Stories?
+-------------------------------------------------------------------
 
+Here are some high-profile reinforcement learning success stories, in
+roughly reverse chronological order.
+
+* AlphaGo and AlphaGo Zero reaching superhuman performance in Go.
+* A Dota 2 1v1 Shadow Fiend bot that beat top pro players in laning.
+* DeepMind annoucning that a learned agent achieved record low energey usage
+in Google datacenters.
+* A learned Super Smash Brothers Melee bot that beat several pro players.
+* DQN solving some Atari games to superhuman performance, without hand-designed
+features.
+* The backgammon bot TD-Lambda, from the 80s.
+
+(I'm sure I'm missing some, but let's work with this list for now.)
