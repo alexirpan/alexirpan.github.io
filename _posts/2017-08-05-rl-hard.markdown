@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reinforcement Learning Doesn't Work Yet"
+title:  "Deep Reinforcement Learning Doesn't Work Yet"
 date:   2017-08-05 01:31:00 -0700
 ---
 
@@ -336,19 +336,93 @@ examples in time will collapse towards learning nothing at all, as it becomes
 more confident that any deviation it tries will fail.
 
 
-But What About All Reinforcement Learning Success Stories?
+What About All Reinforcement Learning Success Stories?
 -------------------------------------------------------------------
 
-Here are some high-profile reinforcement learning success stories, in
-roughly reverse chronological order.
+To balance out the negative, there are certainly reinforcement learning
+success stories. Here are some high-profile ones.
 
 * AlphaGo and AlphaGo Zero reaching superhuman performance in Go.
 * A Dota 2 1v1 Shadow Fiend bot that beat top pro players in laning.
 * DeepMind annoucning that a learned agent achieved record low energey usage
 in Google datacenters.
+* Neural architecture search
 * A learned Super Smash Brothers Melee bot that beat several pro players.
 * DQN solving some Atari games to superhuman performance, without hand-designed
 features.
-* The backgammon bot TD-Lambda, from the 80s.
 
-(I'm sure I'm missing some, but let's work with this list for now.)
+Now, let me explain why I don't consider these as "RL working" yet.
+
+Humans and computers are better at different things. This should be obvious:
+we don't ask humans to add lots of numbers really fast, and we don't ask
+computers to write literary analysis of *The Great Gatsby*.
+
+A similar thing is true for reinforcement learning. Some environments are
+easier for RL to solve than other environments. These are some properties that
+generally help. Not all of them are required to be learnable, but each one
+helps.
+
+* Local optima in reward space are hard to find. This makes it harder for the
+network learning to get stuck during learning.
+* The reward is not a sparse 0-1 reward. The denser the reward signal, the easier
+it is to give feedback on what actions are good and bad.
+* It is easy to quickly generate a large amount of experience in the ground-truth
+environment. Or, if this isn't possible, the simulation of the ground-truth
+environment is accurate enough that you don't lose much from applying RL in
+simulation instead of reality. This lets you sidestep sample inefficiencies.
+* There are consistent short-term relationships between the action you
+take and the rewards you receive. This makes credit assignment much easier.
+* (A point about self-play)
+
+Taking each success above in turn, they all have some of the attributes about.
+
+* AlphaGo and AlphaGo Zero are both for playing Go, where a ridiculously large
+amount of experience can be collected.
+* The Dota 2 Shadow Fiend bot was restricted to a small part of the Dota game
+space. No bottle, few items, 1v1 laning only, only Shadow Fiend out of over 100
+heroes. The bot is most likely using the Dota 2 API to get exact health of all
+enemies in sight. The reward signal is defined by gold and enemy health, both
+of which are rich reward signals - if the agent was only given reward when it
+got a kill, it would be much harder to learn.
+* The Deepmind power center work built off prior work from the Google data
+center team that showed PUE could be predicted with high accuracy from a fairly
+small neural net, which evidently makes it good enough for learning. If a neural
+net can do good prediction of (data center settings) --> PUE, then it seems
+obvious that optimizing that network over its input could work.
+* In the original neural architecture search paper, the policy outputs parameters
+for building a neural net, and the reward is the validation accuracy of that network
+when it's trained to convergence. Validation accuracy is actually a very rich
+reward signal - an increase from 70% to 71% is going to be reflected in the final
+reward. Across deep learning there's empirical evidence that hyperparameters
+in deep learning are close-to linearly independent. Given both a rich reward and
+seemingly simple relation between model choice and reward, working in "only"
+2000 trained networks doesn't seem so far-fetched.
+* The SSBM bot shares many similarities to the Dota 2 setup - 1v1, Battlefield
+only, infinite time match to avoid having to learn strategies around stocks,
+Captain Falcon dittos only, and a rich reward based on amount of % dealt and
+taken.
+
+The broader point I want to get across is this: many things have to go right
+for reinforcement learning to even be a plausible solution, and then it still
+requires a lot of careful work to get that solution.
+
+
+Looking to The Future?
+-------------------------------------------------------------------------------
+
+There's an old saying - every researcher learns how to hate their area of
+study. The trick is that researchers will press on despite this, because they
+like the problems too much to quit them.
+
+That's about where I'm at with deep reinforcement learning. Despite my reservations
+and pessimism, I'm still interested in working in that area, keeping up with
+what's going on, and wanting to see where it's all going. Notice that I said
+"Deep Reinforcement Learning Doesn't Work *Yet*". I see no reason why it couldn't
+work, given more time.
+
+Maybe a locally optimal solution is good enough, if it's better than the solution
+human experts can come up with. Maybe if you throw enough hardware, sample
+inefficiency stops mattering. The human preferences paper suggests that it's
+possible to define well-shaped reward functions implicitly by rating behaviors
+as good or bad, instead of trying to define a good reward yourself, which is a good
+sign because it's 
