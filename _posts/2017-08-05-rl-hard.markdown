@@ -420,9 +420,20 @@ what's going on, and wanting to see where it's all going. Notice that I said
 "Deep Reinforcement Learning Doesn't Work *Yet*". I see no reason why it couldn't
 work, given more time.
 
-Maybe a locally optimal solution is good enough, if it's better than the solution
-human experts can come up with. Maybe if you throw enough hardware, sample
-inefficiency stops mattering. The human preferences paper suggests that it's
-possible to define well-shaped reward functions implicitly by rating behaviors
-as good or bad, instead of trying to define a good reward yourself, which is a good
-sign because it's 
+To play devil's advocate, let's take all the things I mentioned above that help
+RL learn, and argue potential reasons why they might not matter.
+
+* Local optima in reward space stop learning: with a good curriculum or good
+exploration policy, this becomes less of an issue. And it's possible that if you
+throw tons of agents with different exploration strategies, you can brute-force
+your way past the problem. Or, a locally optimal solution could be good enough.
+Humans certainly aren't the best possible lifeform that can come out of evolution,
+but we're still good enough to get lots of things done.
+* Sparse rewards are difficult to learn: this is true, but the flip side is that
+sparse rewards can have fewer spurious minima than shaped rewards. The Learning
+from Human Preferences paper found that human-feedback actually outperformed the
+given shaped rewards, possibly because the hand-designed reward didn't give
+enough reward for partial progress. It's possible we can either hallucinate
+positive rewards (HER), define auxiliary tasks (UNREAL), or do predicitive
+learning to build a world model from transitions that give 0 reward.
+* Requires a large amount of experience:
