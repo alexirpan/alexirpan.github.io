@@ -1,110 +1,151 @@
 ---
 layout: post
 title:  "Deep Reinforcement Learning Doesn't Work Yet"
-date:   2017-08-05 01:31:00 -0700
+date:   2017-12-11 23:06:00 -0700
 ---
 
-*Like all rants, this accentuates the negatives and downplays the positives,
-so you should take it with some skepticism.*
+*Like all rants, this accentuates the negatives and downplays the positives.
+Don't take it too seriously.*
 
-*I mostly cite papers from Berkeley and DeepMind, because I know more of the
-researchers there. Apologies if I missed a paper you think is relevant.*
+*I mostly cite papers from Berkeley and DeepMind, because I'm more familiar with
+their work. Apologies if I missed a paper you think is relevant.*
 
-I once mused that whenever people ask me if RL can solve their problem, I tell
-them it can't, and about 70% of the time I'm right.
+I once mused that hypothetically, if people asked me if RL can solve their
+problem, I would just tell them it can't, because that would be correct about
+70% of the time. I haven't gotten to test this empirically, but I stand by this.
 
-Every now and then, I'm at a party and someone wonders why reinforcement learning
-hasn't been applied to many real-world problems.
+Deep reinforcement learning has mountains and mountains of hype behind it, and
+it deserves it. It's an incredibly, incredibly flexible paradigm, and in
+principle, a robust and performant RL system should be great at everything - it
+is almost certainly going to be part of a general AI. That's the kind of dream
+that fuels millions of dollars of funding.
 
-Now, people don't actually directly ask me whether RL will work or not. It's
-more about the heavy optimism some people have for reinforcement learning. The
-naive, wide-eyed belief that RL works, and it's just a matter of time until
-it changes the world, and it pains me that I end up being the one that has to
-burst their aspirations and bring them down to Earth.
+Unfortunately, it doesn't really work.
 
-Reinforcement learning has mountains and mountains of hype behind it, somewhat
-deservedly. It's an incredibly, incredibly flexible paradigm, and a robust,
-performant reinforcement learning system should theoretically be great at
-everything. It's the kind of dream that makes the money keep flowing.
-
-Unfortunately, it doesn't really work. I believe it can work, but there are a
-lot of problems in the way, many of which feel very fundamentally difficult.
-Hidden behind the beautiful demos is mountains and mountains of pain, failed
-experiments, statistically insignificant results, and pure, nonsensical
+Now, I believe it can work, otherwise I wouldn't be interested in it.
+But there are a lot of problems in the way, many of which feel fundamentally
+difficult. Hidden behind the beautiful demos is a towering garbage pile of
+pain, failed experiments, statistically insignificant results, and pure, nonsensical
 bullshit.
 
-This is part of why all my AI timelines are fairly long term, by the way.
+My AGI timelines are long because everyone is looking towards RL
+as the key, and to me it looks like a really, really shitty key.
 
-Okay. Why doesn't RL work?
+So, to all the people who ask me why RL isn't used on more real-world problems,
+or who believe that deep RL actually does reasonable things, or who have the
+naive, wide-eyed belief that their new research idea will only take a few weeks to
+test out: this post is for you. I take no joy in this. In fact, it pains me that
+I have to burst these lofty aspirations and bring them down to Earth. I only
+do this because people aren't talking about the dark sides of RL enough.
+
+
+Reasons Deep Reinforcement Learning Sucks Right Now
+------------------------------------------------------------------------------
+
+List them
 
 
 It Can Be Horribly Sample Inefficient
 -------------------------------------------------------------------------------
 
 The most well-known benchmark for deep reinforcement learning is Atari. Throw
-Q-Learning at it, and some (but not all!) of the games get solved to superhuman
+DQN at it, and some (but not all!) of the games get solved to superhuman
 performance.
 
-Atari games run at 60 frames per second. Take a moment and guess how many frames
-a state-of-the-art DQN takes to train.
+Atari games run at 60 frames per second. On the top of your head, do you
+know how many frames a state-of-the-art DQN needs to reach human performance?
 
 The answer depends on the game, but let's take a look at a recent Deepmind
-paper, [Rainbow DQN](https://arxiv.org/abs/1710.02298). Over the past 5 years,
-there have been several extensions made to the original DQN network. Evidently,
-some researchers got curious to see what would happen if you combined all the
+paper, [Rainbow DQN](https://arxiv.org/abs/1710.02298). This paper came out
+about 2 months ago, and it's a combination
+of the several incremental advances made in the past 5 years. Evidently,
+somebody finally got curious to see what would happen if you combined all the
 advances together. The results come in this handy chart.
 
-CHART
+![Figure from Rainbow DQN](/public/rl-hard/rainbow_dqn.png)
+{: .centered }
 
-The y-axis is "median human-normalized score". There are 57 Atari games in the
-benchmark. For each game, the score is normalized such that human performance
-is 100%. The plotted curve is the median of those normalized scores.
-Rainbow matches that within 7 million frames, which is about 1900 hours of
-play.
+The y-axis is "median human-normalized score". This is computed by training
+57 DQNs, one for each Atari game, normalizing the score of each agent such that
+human performance is 100%, then plotting the median performance across the
+57 games. RainbowDQN matches original DQN performance in about 7 million
+frames, and passes the 100% threshold at around 18 million frames. This
+corresponds to about 83 hours of play experience, which doesn't include the
+time needed to actually compute the outputs and gradients for the Q-network.
 
-Mind you, this is actually pretty great, because the old record (Distributional
-DQN) didn't hit 100% median performance within 44 million frames. And the
-original DQN (the one from the Nature paper) never even hits 100%. It gets to
-79% median performance after 200 million frames.
+Mind you, this is actually a pretty great, because the old record (Distributional
+DQN) didn't hit 100% median performance until abouut 70 million frames. The
+original DQN (the one from the Nature paper) never even hits 100% normalized
+performance. After 200 million frames it reaches 79% median performance.
 
-Hundreds of thousands or millions of steps is roughly the scale for a number
-of common benchmarks. Here's a plot from the PPO paper, https://arxiv.org/abs/1707.06347,
-which is looking like one of the most performant RL algorithms so far.
+Many common benchmarks require hundreds of thousands or millions of steps. And,
+I mean, that's fine, but it feels like many of the benchmarks shouldn't require
+this many steps. Here's a plot from another state-of-the-art algorithm,
+[PPO](https://blog.openai.com/openai-baselines-ppo/). This was from about 5 months
+ago, and was the algorithm behind the famous [parkour paper](https://www.youtube.com/watch?v=hx_bgoTF7bs).
 
-PLOT
+VIDEO
 
-In pretty much all the RL benchmarks, you can solve the problem faster with some
-other method. Cartpole is solvable with LQR or CEM. The MuJoCo environments are
-solvable on-the-fly in real-time with model predictive control
-(albeit with perfect models of environment dynamics). Atari can be solved
-faster with search. So on one hand, it's not surprisingly that RL takes longer
-to learn. On the other hand, it can be really, really disappointing to see
-something requires thousands of times more samples. This is a problem in any
-setting where it's hard to get a ridiculously large number of samples.
+These results are really impressive, but based on the paper it took about 100
+hours of training with 64 workers to learn the policy for the Humanoid.
+In comparison, back in 2012 online trajectory optimization could solve these
+behaviors on the fly.
+
+https://www.youtube.com/watch?v=uRVAX_sFT24
+
+This isn't a fair comparison, since model predictive control is doing planning
+against a known dynamics model. In a similar vein, you can easily outperform
+[DQN in Atari with Monte Carlo Tree Search instead](https://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning).
+The point is more to show that RL uses orders of magnitude more computation
+to arrive at the same result as other more domain-specific algorithms. This is
+a common pattern - generality comes at the price of sample efficiency.
 
 
 It (Usually) Requires a Reward Oracle
 ------------------------------------------------------------------------------
 
-There are some papers on learning a reward function, often based on imitation
-learning or expert feedback. However, outside of these exceptions, reinforcement
-learning assumes that your reward function captures *exactly* what you want.
+RL algorithms assume the existence of a reward function. Usually, this is either
+given, or it is learned offline and fixed over the course of learning. Importantly,
+for RL to do the right thing, your reward function must capture *exactly* what
+you want.
 And I mean *exactly*. RL has an annoying tendency to overfit to your reward and
-doing something you don't want it to.
+do things you don't expect.
 
 Take Atari, for example. You want to maximize score. You
-*always* want to maximize score. It's just how those games work, and it's why
+*always* want to maximize score. It's just how those games work. That's why
 Atari games are such a nice benchmark.
 
 The majority of reinforcement learning results come from simulated environments,
 and that's because you have perfect knowledge of the state and can define an
 appropriate reward. Consider the MuJoCo tasks in OpenAI gym.
-The Reacher task sants to reach a target location. You have exact locations of
-everything, so reward is simply the distance. Easy. In HalfCheetah, you give
-more reward if you make it run forward really fast. Also straightforward.
+In the Reacher task, you control a two-segment arm, that's connected to a central
+point, and the goal is to move the end of the arm to a target location.
 
-*Reward functions that don't have this property tend to work poorly, and sometimes
-do weird things that give reward without solving the problem.* For example,
+GIF
+
+You have the exact locations of everything, so reward is simply the distance to
+the goal. Easy.
+
+In the HalfCheetah environment, you have a two-legged robot, restricted to a
+vertical plane, meaning it can only run forward or backward.
+
+GIF
+
+The goal is to learn
+a running gait, so you give reward depending on its velocity. Also straightforward.
+
+**Reward functions that don't have this property tend to work poorly.** There's
+a semi-famous boat racing example from an [OpenAI blog post](https://blog.openai.com/faulty-reward-functions/),
+where finishing the race gives less points than collecting powerups.
+
+GIF
+
+To be honest, I really didn't understand why this even merited a blog post. Of
+course 
+like that this was billed as "faulty reward functions in the wild", because it
+felt so freaking obvious that this happens already.
+
+For example,
 language models are often trained by maximizing the likelihood of a translation,
 then evaluated by computing their BLEU score. Salesforce tried optimizing BLEU
 score directly with RL, and found that although they got better BLEU score,
@@ -243,7 +284,7 @@ chance learning just gets completely stuck at the wrong thing. It's just
 how deep RL is right now.
 
 
-Stability
+Final Results are Incredibly Unstable and Hard to Reproduce
 ------------------------------------------------------------------------
 
 Almost every ML algorithm has hyperparameters, which influence the behavior
@@ -336,6 +377,10 @@ examples in time will collapse towards learning nothing at all, as it becomes
 more confident that any deviation it tries will fail.
 
 
+Everything Is Just Incredible Overfitting to Patterns That Don't Make Sense
+------------------------------------------------------------------------------
+
+
 What About All Reinforcement Learning Success Stories?
 -------------------------------------------------------------------
 
@@ -403,8 +448,8 @@ Captain Falcon dittos only, and a rich reward based on amount of % dealt and
 taken.
 
 The broader point I want to get across is this: many things have to go right
-for reinforcement learning to even be a plausible solution, and then it still
-requires a lot of careful work to get that solution.
+for reinforcement learning to even be a plausible solution, and then it often
+still requires a lot of careful work to make that solution happen.
 
 
 Looking to The Future?
@@ -418,11 +463,27 @@ That's about where I'm at with deep reinforcement learning. Despite my reservati
 and pessimism, I'm still interested in working in that area, keeping up with
 what's going on, and wanting to see where it's all going. Notice that I said
 "Deep Reinforcement Learning Doesn't Work *Yet*". I see no reason why it couldn't
-work, given more time.
+work, given more time. I think there are several avenues along which things can
+get better.
 
-Maybe a locally optimal solution is good enough, if it's better than the solution
-human experts can come up with. Maybe if you throw enough hardware, sample
-inefficiency stops mattering. The human preferences paper suggests that it's
-possible to define well-shaped reward functions implicitly by rating behaviors
-as good or bad, instead of trying to define a good reward yourself, which is a good
-sign because it's 
+*Good enough local optima:* If human experts are bad at a task, it doesn't
+matter if an RL solution gets stuck at a local optima, as long as it's still
+better than human performance.
+
+*Just throw more hardware:* Given enough hardware, sample inefficiency may no
+longer be the primary concern.
+
+*Learned reward shaping:* The human preferences paper suggests that it's
+possible for neural nets to implicitly define well-shaped reward functions
+from human feedback. This, along with other parts of inverse RL, could let
+us avoid the difficulties of explicit reward definition.
+
+*Metalearning saves the day:* This is a point Pieter Abbeel likes to repeat.
+RL algorithms are designed to apply to any environment that's an MDP. However,
+we don't need to solve arbitrary environments, we just need to solve the real-world
+environments we care about. In principle, metalearning could let use learn a
+real-world prior that lets us learn new tasks faster. (i.e. if your goal is to
+train an RL agent to navigate warehouses, you could presumably focus your
+efforts on learning navigation priors.)
+
+*Wild overfitting is actually okay:*
