@@ -140,83 +140,105 @@ where finishing the race gives less points than collecting powerups.
 
 GIF
 
-To be honest, I really didn't understand why this even merited a blog post. Of
-course 
-like that this was billed as "faulty reward functions in the wild", because it
-felt so freaking obvious that this happens already.
+To be honest, at the time I really didn't understand why this merited a blog
+post. It was just so *obvious*. Of course optimizing the wrong objective leads
+to weird behavior! What, do people not see this happening in schools?
+(Teaching to the test instead of teaching to learn.) In academia? (Publishing
+more papers instead of publishing good papers because of publish or perish.)
+How is it news that RL does the same thing? Do enough RL and you inevitably
+run into an issue like this.
 
-For example,
-language models are often trained by maximizing the likelihood of a translation,
-then evaluated by computing their BLEU score. Salesforce tried optimizing BLEU
-score directly with RL, and found that although they got better BLEU score,
-humans rated the translations as lower quality. If your reward function doesn't
-reflect something you care about, there is no guarantee your model will care
-about it either.
-Reinforcement learning is a variant of black-box optimization, and
+(Then I started writing this blog post, and found that the most compelling
+video I could find was the boat racing video from the blog post. So, I now
+begrudgingly accept that the post had a point.)
+
+For example, [some researchers at Salesforce](https://www.salesforce.com/products/einstein/ai-research/tl-dr-reinforced-model-abstractive-summarization/)
+trained a text summarization model.
+This is usually trained with supervised learning. For evaluation, they use an
+automated metric called ROUGE, as well as human ratings. ROUGE isn't differentiable,
+so they tried using RL to optimize ROUGE. And yes, you can get much better
+ROUGE scores if you train with RL, except there's one problem.
+
+> While ROUGE scores have a good correlation with human judgment in general, the summaries with the highest ROUGE aren't necessarily the most readable or natural ones. This became an issue when we trained our model to maximize the ROUGE score with reinforcement learning alone. We observed that our models with the highest ROUGE scores also generated barely-readable summaries.
+
+Again, if your reward function doesn't reflect something you care about,
+there's no guarantee the learned model will care about it either.
+Reinforcement learning is just a variant of black-box optimization, after all -
 it's well-known that black-box optimization will learn whatever junk it
 gets rewarded for.
 
-A good example comes from this DeepMind paper, where the authors use DDPG to
-learn to grasp and lift a block. The policy gets reward for increasing the
-block's height, which is defined as the z-coordinate of the bottom face.
+Here's another example. In [this paper from DeepMind](https://arxiv.org/abs/1704.03073),
+the authors use DDPG to learn a grasping policy.
+The policy gets reward based on how high the block is, which is defined as
+the z-coordinate of the bottom face.
 
 The policy ended up learning this.
 
-GIF
+https://www.youtube.com/watch?v=8QnD8ZM0YCo
 
-This makes the bottom face have a higher z-coordinate. Now, clearly this isn't
-what it's supposed to do...but RL doesn't care. From the perspective of the
-learning algorithm, it did something, and got positive reward, so it's going to
-keep doing that thing.
+Now, clearly this isn't the intended solution...but RL doesn't care.
+From the perspective of the learning algorithm, it did something, and got
+positive reward, so it's going to keep doing that thing.
 
-Here's an anecdote. A coworker talked about trying out RL on a toy environment. The
-episode terminated whenever the agent walked out of bounds. Fairly standard
-stuff. Except, he forgot to add a large negative penalty at the final timestep.
-way. And what ended up happening was that the agent learned to be suicidal if
-it was ever close to getting negative reward, because it was too difficult to
-reach positive reward, and a quick death that ends in 0 reward is preferable
-to a long life of -1 reward.
+I don't have any more videos, or paper references, but I do have more anecdotal
+stories.
 
-Here's another story. A friend is trying to learn a racing game in Universe.
-The reward is defined by taking a segment of the game screen, and doing OCR on
-the pixels to get a score. In initial exploration, it found that at a certain
-point of the track, the start line was *really close* to the score, and the OCR
-incorrectly interpreted it as a leading 1. This multiplied the reward by 10,
-and so the policy spent all its time trying to manipulate the OCR to fail,
-instead of on actually solving the game. (I have not verified this story in
-any way.)
+* A coworker is applying RL to a toy navigation problem.
+The episode terminates whenever the agent walks out of bounds.
+Fairly standard stuff. Except, he forgot to add a large negative penalty if
+it walks out of bounds.
+And what ended up happening was that the agent learned to be suicidal if
+it was ever close to getting negative reward. Reaching the positive reward
+was too difficult, and a quick death ending in 0 reward is preferable to a
+life of -1 reward.
+* A friend is applying RL to another racing game in Universe.
+The reward is defined by applying OCR to a segment of the game screen to
+extract the score. In initial exploration, due to dumb luck, the OCR made a
+rare mistake. It saw the starting line of the race, and interpreted it as
+a leading 1, increasing the score by an order of magnitude. Upon seeing such a
+large reward, the policy spent the rest of learning trying (and failing) to
+reproduce that scenario.
+* The same friend is training a simulated robot to reach towards a point
+above a table. It turns out the point was defined *with respect to the table*.
+The policy learned to pound the table really hard, making it fall down *just so*
+to make the goal point move to the end of the arm.
+* A researcher is training a simulated hand to pick up a hammer and push in a nail.
+The reward is defined by how far the nail is pushed into the hole. Instead of
+picking up the hammer, the policy learned to punch the nail into the hole. So
+they added a reward term to encourage picking up the hammer. When trained again,
+the policy learned to pick up the hammer...then throw it at the nail, instead
+of hammering it in.
 
-I know some people like to tell stories about paperclip
-optimizers, and those stories have gotten new life with the paperclip game,
-but there's no reason to speculate that far when there are present-day examples
-all the time.
+I haven't verified any of the above for myself, but none of it sounds
+implausible to me. I've been burned by reinforcement learning too many times to
+believe otherwise.
 
-Note that this goes both ways: the DeepMind parkour paper learned several novel
-behaviors by creating environments with difficult-to-traverse terrain, just by
-using a reward of "go forward without falling".
+I know people like to tell stories about paperclip
+optimizers, but there's no reason to speculate that far when
+present-day examples show up all the time.
 
 
 Even Given a Reward Oracle, Local Optima Can Be Hard To Escape
 ------------------------------------------------------------------------------
 
-All the previous examples are commonly called "reward hacking". To me, reward
-hacking implies cleverness,
-or out-of-the-box approaches that give more reward than the intended solution.
+All the previous examples are commonly called "reward hacking", which to me
+implies a clever, out-of-the-box solution that gives more reward than the
+intended answer.
 
-These are the exceptions. The much more common case is stupidity, poor solutions
-to the exploration-exploitation tradeoff that lead to frustration and so, so
-much pain. And oh do I have stories for this. So many, in fact, that I've had
-to cut some to avoid rambling.
+These are the exceptions. The much more common case is stupidity - poor
+local optima that come from getting the exploration-exploitation tradeoff
+wrong. Ones that lead to frustration and so, so much pain,
+
+And oh do I have stories for this.
 
 Here's one of my favorite videos. This is an implementation of NAF, learning
 on the HalfCheetah environment.
 
 VIDEO
 
-Now, from an outside perspective, this is stupid, because *of course* running
-on your feet is faster than falling on your back and flailing your legs. But
-we can only say that because we have a bunch of prebuilt knowledge that tells
-us running on your feet is a better idea. RL doesn't know this! It sends actions
+Now, from an outside perspective, this is really, *really* dumb. But we can
+only say it's dumb because we have a bunch of prebuilt knowledge that tells
+us running on your feet is better. RL doesn't know this! It sends actions
 and gets back states and rewards. That's it. I don't have videos from earlier
 in the training run, but here is my guess for what happened.
 
@@ -487,3 +509,7 @@ train an RL agent to navigate warehouses, you could presumably focus your
 efforts on learning navigation priors.)
 
 *Wild overfitting is actually okay:*
+
+Note that this goes both ways: the DeepMind parkour paper learned several novel
+behaviors by creating environments with difficult-to-traverse terrain, just by
+using a reward of "go forward without falling".
