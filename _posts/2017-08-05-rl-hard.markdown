@@ -4,21 +4,25 @@ title:  "Deep Reinforcement Learning Doesn't Work Yet"
 date:   2017-12-11 23:06:00 -0700
 ---
 
-*This is a rant. Like all rants, this accentuates the negatives and downplays the positives.*
+*This mostly cites papers from Berkeley, Google Brain, DeepMind, and OpenAI,
+because I'm most familiar with that work.
+I'm almost certainly missing stuff from less famous institutions, so if I missed
+a paper that's an important counterexample, I apologize - I'm just one guy,
+after all.*
 
-*This mostly cites papers from Berkeley, Google Brain, DeepMind, and OpenAI.
-I'm almost certainly missing stuff from less famous instituions. If I missed a
-relevant paper, I apologize - I'm just one guy, after all. Feel free to comment.*
+Once, on Facebook, I made the following claim.
 
-I once mused that hypothetically, if people asked me if RL can solve their
-problem, I would just tell them it can't, because that would be correct about
-70% of the time. I haven't gotten to test this empirically, but I stand by this.
+> Whenever someone asks me if reinforcement learning can solve their problem, I tell them it can't. I think this is right at least 70% of the time.
 
-Deep reinforcement learning has mountains and mountains of hype behind it, and
-it deserves it. It's an incredibly, incredibly flexible paradigm, and in
-principle, a robust and performant RL system should be great at everything - it
-is almost certainly going to be part of a general AI. That's the kind of dream
-that fuels millions of dollars of funding.
+![Futurama Bender meme](/public/rl-hard/bender-70.jpg)
+{: .centered }
+
+Deep reinforcement learning is driven by mountains and mountains of hype. It
+deserves a lot of it. Reinforcement learning is incredibly flexible paradigm,
+and in principle, a robust and performant RL system should be great at
+everything. Merging this with the power of deep learning seems like the closest
+thing we have to any sort of AGI. That's the kind of dream that fuels billions
+of dollars of funding.
 
 Unfortunately, it doesn't really work.
 
@@ -40,27 +44,25 @@ do this because people aren't talking about the dark sides of RL enough.
 
 
 Reasons Deep Reinforcement Learning Sucks Right Now
-------------------------------------------------------------------------------
-
-List them
+==============================================================================
 
 
 It Can Be Horribly Sample Inefficient
 -------------------------------------------------------------------------------
 
-The most well-known benchmark for deep reinforcement learning is Atari. Throw
-DQN at it, and some (but not all!) of the games get solved to superhuman
-performance.
+The most well-known benchmark for deep reinforcement learning is Atari. This is
+the environment that put deep RL on the map. Combine Q-Learning with a
+reasonably sized neural networks, and some (but not all) of the games get
+solved to human or superhuman performance.
 
 Atari games run at 60 frames per second. On the top of your head, do you
-know how many frames a state-of-the-art DQN needs to reach human performance?
+know how many frames a state of the art DQN needs to reach human performance?
 
 The answer depends on the game, but let's take a look at a recent Deepmind
 paper, [Rainbow DQN](https://arxiv.org/abs/1710.02298). This paper came out
 about 2 months ago, and it's a combination
-of the several incremental advances made in the past 5 years. Evidently,
-somebody finally got curious to see what would happen if you combined all the
-advances together. The results come in this handy chart.
+of the several incremental advances made in the past 5 years.
+The results come in this handy chart.
 
 ![Figure from Rainbow DQN](/public/rl-hard/rainbow_dqn.png)
 {: .centered }
@@ -68,37 +70,64 @@ advances together. The results come in this handy chart.
 The y-axis is "median human-normalized score". This is computed by training
 57 DQNs, one for each Atari game, normalizing the score of each agent such that
 human performance is 100%, then plotting the median performance across the
-57 games. RainbowDQN matches original DQN performance in about 7 million
-frames, and passes the 100% threshold at around 18 million frames. This
-corresponds to about 83 hours of play experience, which doesn't include the
-time needed to actually compute the outputs and gradients for the Q-network.
+57 games. RainbowDQN passes the 100% threshold at about 18 million frames.
+This corresponds to about 83 hours of play experience, plus however long it takes
+to train the model.
 
-Mind you, this is actually a pretty great, because the old record (Distributional
-DQN) didn't hit 100% median performance until abouut 70 million frames. The
-original DQN (the one from the Nature paper) never even hits 100% normalized
-performance. After 200 million frames it reaches 79% median performance.
+This is actually pretty good, when you consider that the previous record
+([Distributional DQN](https://arxiv.org/pdf/1707.06887.pdf)) needed
+*70 million* frames to hit 100% median performance. As for the
+[DQN from the Nature paper](https://www.nature.com/articles/nature14236),
+it never hits 100% median performance, even after 200 million frames of training.
 
-Many common benchmarks require hundreds of thousands or millions of steps. And,
-I mean, that's fine, but it feels like many of the benchmarks shouldn't require
-this many steps. Here's a plot from another state-of-the-art algorithm,
-[PPO](https://blog.openai.com/openai-baselines-ppo/). This was from about 5 months
-ago, and was the algorithm behind the famous [parkour paper](https://arxiv.org/abs/1707.02286).
+RL has a nasty habit of taking longer than you think it should.
+Many of the MuJoCo benchmarks require 10^5 to 10^7 steps. Honestly, that's
+fine, but it *really* feels like it shouldn't require that many steps. These
+tasks don't look that hard.
+
+Below is a video frmo the famous [parkour paper](https://arxiv.org/abs/1707.02286),
+trained using PPO.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hx_bgoTF7bs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-These results are really impressive, but based on the paper it took about 100
-hours of training with 64 workers to learn the policy for the Humanoid. That's
-a lot of computation, considering that online trajectory optimization has done
-similarly cool things since 2012.
+These results are *incredible*. When I saw this video I was shocked that RL
+could even do this. Turns out it can...if you use 64 workers and train for
+100 hours.
+
+
+Many of the Benchmarks are Better Solved by Other Methods
+--------------------------------------------------------------------------------
+
+Below is a video of robots similar to ones in the MuJoCo benchmarks, controlled
+with online trajcetory optimization. This video is from 2012, and the behaviors
+are more impressive than the majority of reinforcement learning results. The
+correct actions are computed in near real-time, online, with no offline
+training.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uRVAX_sFT24" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-This isn't a fair comparison, since model predictive control is doing planning
-against a known dynamics model. In a similar vein, you can easily outperform
+How can this do so well? The approach used (model predictive control) gets to
+do planning against a known, ground-truth world model. So on one hand, it's
+not a fair comparison to model-free RL. On the other hand, it's somewhat
+disheartening how much time RL takes to get results that look *worse* than
+this.
+
+In a similar vein, you can easily outperform
 [DQN in Atari with Monte Carlo Tree Search instead](https://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning).
-The point is more to show that RL uses orders of magnitude more computation
-to arrive at the same result as other more domain-specific algorithms. This is
-a common pattern - generality comes at the price of sample efficiency.
+
+Reinforcement learning can theoretically work for anything, including
+environments where a model of the world isn't known. However, this generality
+comes at the price of sample efficiency, and the rule-of-thumb is that if any
+domain-specific algorithm works, it'll work faster and better. In my experience,
+if you want to solve anything with reinforcement learning, you're better off
+by avoiding it unless absolutely necessary. Hence my 70% claim from before.
+
+Take Boston Dynamics. They rather legendarily gave a presentation at NIPS, a
+leading machine learning conference, and then said on stage that they don't
+do machine learning. And upon further digging, I found a paper from 2015 that
+mostly talks about optimization and time-varying LQR. I would argue those
+techniques are close enough to machine learning, but they're not what most
+people expect.
 
 
 It (Usually) Requires a Reward Oracle
@@ -369,13 +398,18 @@ eventually get hit the threshold for success, just in 800k steps instead of
 by random chance is terrible!
 
 Just to show this isn't a personal complaint: here is a plot from the VIME paper, trained with TRPO (which is billed as one of the more stable
-RL algorithms.) The environment is HalfCheetah, modified to have sparse reward.
+RL algorithms.) The environment is HalfCheetah. The reward is modified to
+give 0 reward until the agent runs forward ??? units, to make exploration
+harder. The y-axis is episode reward, and the x-axis is number of timesteps,
+in thousands.
 
 ![Plot from VIME paper](/public/rl-hard/vime.png)
 
 The dark line is the median performance over 10 random seeds, and the shaded
-region is the 25th to 75th percentile. It's somewhat distributing that the 25%
-line is so close to zero.
+region is the 25th to 75th percentile. On one hand, it is nice that VIME helps
+on this problem. But on the other hand, when you consider how close the 25th
+percentile is to zero, it's disheartening to realize that it's failing
+10-20% of the time for no reason.
 
 > If it makes you feel any better, I've been doing this for a while and it took me last ~6 weeks to get a from-scratch policy gradients implementation to work 50% of the time on a bunch of RL problems. And I also have a GPU cluster available to me, and a number of friends I get lunch with every day who've been in the area for the last few years.
 >
@@ -413,45 +447,58 @@ more confident that any deviation it tries will fail.
 Even When You Get Good Results, It's Often Just Incredible Overfitting to Weird Patterns In the Environment
 ------------------------------------------------------------------------------
 
-In RL, your training set is your test set. The upside is that if you want to do
+In RL, your train set is your test set. The upside is that if you want to do
 well in an environment, you're free to overfit like crazy. The downside is that
-if you want to do well in any other environment, you're going to overfit like
+if you want to generalize to any other environment, you're going to overfit like
 crazy.
 
-Consider DQN. It works well on Atari games, but importantly, the
-benchmark for each Atari game has to be trained independently. There's no expectation
-that an agent trained on one Atari game will be a good initialization for training
-on another Atari game. In computer vision, Imagenet features transfer to lots of
-image tasks. There doesn't seem to be an equivalent for reinforcement learning
-yet.
+Consider the Atari benchmark. DQN can solve a lot of the Atari games, but
+there's little expectation
+that an agent trained on one Atari game will be a good initialization for
+training on another Atari game. In contrast, if you're doing image classification,
+pretrained features from a model trained on ImageNet should be one of the
+first things you try, because they transfer really well. RL doesn't have
+an equivalent "ImageNet for control" yet. (OpenAI Universe tried to solve
+this, but from what I heard, it's just too hard to solve anything reliably
+in it, due to the asychronous implementation.)
 
-This also shows up in multiagent environments. In this work (LINK), we applied
-RL algorithms to a toy 2-player game, where there's a known analytic solution
-for optimal behavior. We fixed player 1 to be optimal, then trained player 2
-with reinforcement learning. In this view, player 1's actions are simply part
-of the environment. Once the 2nd player is trained, we can test generalization
-by changing player 1's behavior. And interestingly, even though player 2 can
-perform well against an optimal player 1, it actually does *worse* if player 1
-is changed to be suboptimal! The model hasn't generalized to beating any possible
-player, it only knows what to do against the optimal one.
+This is most obvious in multiagent environments.
+In [this work](https://arxiv.org/abs/1711.02301), we studied a toy 2-player
+game where there's a closed-form analytic solution for optimal play.
+In one of our first experiments, we freeze player 1's behavior, then trained
+player 2 with RL. By doing this, you can treat player 1's actions as part
+of the environment. We trained player 2 against the optimal player 1, and
+although RL can learn good strategies, we found it failed to generalize
+to non-optimal players.
 
-A DeepMind paper from NIPS showed something similar. Here, there are two agents
-playing laser tag. The agents are trained with multiagent reinforcement learning,
-and they learn to shoot each other very quickly.
+A [DeepMind paper](https://arxiv.org/abs/1711.00832) from NIPS showed a
+similar result. Here, there are two agents
+playing laser tag. The agents are trained with multiagent reinforcement
+learning. To test generalization, they run the training with 5 random
+seeds. Here's a video of agents that have been trained against one
+another.
 
-VIDEO
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8vXpdHuoQH8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-They ran the same setup for
-several experiments. Then, they took agent 1 from experiment 1, and played it against
-agent 2 from experiment 2. They got behavior like this.
+As you can see, they learn to move towards and shoot each other. Then, they
+took player 1 from one experiment, and pitted it against player 2 from a
+*different* experiment. If the learned policies generalize, we should see
+similar behavior.
 
-VIDEO
+Spoiler alert: you don't.
 
-A kind of co-evolution happens. The agents get really good at beating each other,
-but as soon as you introduce a different player, performance goes to shit. Note
-that the only difference here is the random seed! It's the exact same learning
-algorithm with the exact same hyperparameters.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jOjwOkCM_i8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
+This seems to be a running theme in multiagent RL. When agents are trained
+against one another, a kind of co-evolution happens. The agents get really good
+at beating each other, but as soon as they get deployed against a player they
+haven't seen before, performance goes to shit. Note
+that the only difference between these videos is the random seed. Same learning
+algorithm, same hyperparameters, and the divergence is purely from randomness
+in initial conditions.
+
+Self-play doesn't seem to have this problem. Somehow, controlling both players
+with the same neural net gets around this problem.
 
 
 But What About All The Great Things Deep RL Has Done For Us?
@@ -591,3 +638,7 @@ behaviors by creating environments with difficult-to-traverse terrain, just by
 using a reward of "go forward without falling".
 
 work, given more time.
+
+
+
+CONCLUSION
