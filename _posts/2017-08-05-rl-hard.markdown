@@ -83,7 +83,9 @@ tasks don't look that hard.
 Below is a video frmo the famous [parkour paper](https://arxiv.org/abs/1707.02286),
 trained using PPO.
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hx_bgoTF7bs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
 
 These results are *incredible*. When I saw this video I was shocked that RL
 could even do this. Turns out it can...if you use 64 workers and train for
@@ -99,7 +101,9 @@ are more impressive than the majority of reinforcement learning results. The
 correct actions are computed in near real-time, online, with no offline
 training.
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uRVAX_sFT24" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
 
 How can this do so well? The approach used (model predictive control) gets to
 do planning against a known, ground-truth world model. So on one hand, it's
@@ -145,7 +149,9 @@ appropriate reward. Consider the MuJoCo tasks in OpenAI gym.
 In the Reacher task, you control a two-segment arm, that's connected to a central
 point, and the goal is to move the end of the arm to a target location.
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BkhSKqc8vSA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
 
 (Video from Wenhao Yu)
 
@@ -155,10 +161,12 @@ the goal. Easy.
 In the HalfCheetah environment, you have a two-legged robot, restricted to a
 vertical plane, meaning it can only run forward or backward.
 
+<div class="centered">
 <video controls="controls">
   <source type="video/mp4" src="/public/rl-hard/upright_half_cheetah.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
+</div>
 
 The goal is to learn
 a running gait, so you give reward depending on its velocity. Also straightforward.
@@ -167,7 +175,9 @@ a running gait, so you give reward depending on its velocity. Also straightforwa
 a semi-famous boat racing example from an [OpenAI blog post](https://blog.openai.com/faulty-reward-functions/),
 where finishing the race gives less points than collecting powerups.
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tlOIHko8ySg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
 
 To be honest, at the time I really didn't understand why this merited a blog
 post. It was just so *obvious*. Of course optimizing the wrong objective leads
@@ -203,7 +213,9 @@ the z-coordinate of the bottom face.
 
 The policy ended up learning this.
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8QnD8ZM0YCo?start=27" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
 
 Now, clearly this isn't the intended solution...but RL doesn't care.
 From the perspective of the learning algorithm, it did something, and got
@@ -271,10 +283,12 @@ And oh do I have stories for this.
 Here's one of my favorite videos. This is an implementation of NAF, learning
 on the HalfCheetah environment.
 
+<div class="centered">
 <video controls="controls">
   <source type="video/mp4" src="/public/rl-hard/upsidedown_half_cheetah.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
+</div>
 
 Now, from an outside perspective, this is really, *really* dumb. But we can
 only say it's dumb because we have a bunch of prebuilt knowledge that tells
@@ -296,10 +310,12 @@ is to figure out how to move forward while while lying on your back.
 
 And thus, this.
 
+<div class="centered">
 <video controls="controls">
   <source type="video/mp4" src="/public/rl-hard/upsidedown_half_cheetah.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
+</div>
 
 Realistically though, I have no idea if my theory above is right. All I know
 is that it didn't learn.
@@ -310,6 +326,7 @@ Here's another failed run, this time on the Reacher environment.
   <source type="video/mp4" src="/public/rl-hard/failed_reacher.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
+{: .centered }
 
 In this run, the initial random weights tended to output highly positive or
 highly negative action outputs. That made it easy to learn how to spin really
@@ -381,6 +398,7 @@ gravity.
   <source type="video/mp4" src="/public/rl-hard/pendulum_example.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
+{: .centered }
 
 This is the easiest continuous control task in OpenAI Gym - the action space
 is 1-dimensional, the state space is 3-dimensional, and you have a shaped reward
@@ -398,7 +416,9 @@ runs, with the exact same hyperparameters. The only difference is the random see
 learning you'd be digging for bugs in data loading or training to figure out
 why it's so unstable. In reinforcement learning? It's Tuesday.
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iVzAMmpMra8" frameborder="0" allowfullscreen></iframe>
+</div>
 
 To be fair, if you leave these running for longer, many of them do
 eventually get hit the threshold for success, just in 800k steps instead of
@@ -412,6 +432,7 @@ harder. The y-axis is episode reward, and the x-axis is number of timesteps,
 in thousands.
 
 ![Plot from VIME paper](/public/rl-hard/vime.png)
+{: .centered }
 
 The dark line is the median performance over 10 random seeds, and the shaded
 region is the 25th to 75th percentile. On one hand, it is nice that VIME helps
@@ -486,7 +507,9 @@ learning. To test generalization, they run the training with 5 random
 seeds. Here's a video of agents that have been trained against one
 another.
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8vXpdHuoQH8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
 
 As you can see, they learn to move towards and shoot each other. Then, they
 took player 1 from one experiment, and pitted it against player 2 from a
@@ -495,7 +518,9 @@ similar behavior.
 
 Spoiler alert: you don't.
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jOjwOkCM_i8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
 
 This seems to be a running theme in multiagent RL. When agents are trained
 against one another, a kind of co-evolution happens. The agents get really good
