@@ -1,8 +1,8 @@
-===
+---
 layout: post
 title:  "Deep Reinforcement Learning Doesn't Work Yet"
 date:   2017-12-11 23:06:00 -0700
-===
+---
 
 *This mostly cites papers from Berkeley, Google Brain, DeepMind, and OpenAI,
 because I'm most familiar with that work.
