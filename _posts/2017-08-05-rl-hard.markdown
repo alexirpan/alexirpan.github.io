@@ -1,8 +1,8 @@
----
+===
 layout: post
 title:  "Deep Reinforcement Learning Doesn't Work Yet"
 date:   2017-12-11 23:06:00 -0700
----
+===
 
 *This mostly cites papers from Berkeley, Google Brain, DeepMind, and OpenAI,
 because I'm most familiar with that work.
@@ -38,20 +38,15 @@ as the key, and to me it looks like a really, really shitty key.
 So, to all the people who ask me why RL isn't used on more real-world problems,
 or who believe that deep RL actually does reasonable things, or who have the
 naive, wide-eyed belief that their new research idea will only take a few weeks to
-test out: this post is for you. I take no joy in this. In fact, it pains me that
-I have to burst these lofty aspirations and bring them down to Earth. I only
-do this because people aren't talking about the dark sides of RL enough.
-
-
-Reasons Deep Reinforcement Learning Sucks Right Now
-==============================================================================
+test out: let me tell you many of the reasons why reinforcement learning
+is terrible.
 
 
 It Can Be Horribly Sample Inefficient
--------------------------------------------------------------------------------
+==============================================================================
 
 The most well-known benchmark for deep reinforcement learning is Atari. This is
-the environment that put deep RL on the map. Combine Q-Learning with a
+the environment that put DeepMind on the map. Combine Q-Learning with a
 reasonably sized neural networks, and some (but not all) of the games get
 solved to human or superhuman performance.
 
@@ -96,7 +91,7 @@ could even do this. Turns out it can...if you use 64 workers and train for
 
 
 Many of the Benchmarks are Better Solved by Other Methods
---------------------------------------------------------------------------------
+==============================================================================--
 
 Below is a video of robots similar to ones in the MuJoCo benchmarks, controlled
 with online trajcetory optimization. This video is from 2012, and the behaviors
@@ -131,7 +126,7 @@ people expect.
 
 
 It (Usually) Requires a Reward Oracle
-------------------------------------------------------------------------------
+==============================================================================
 
 RL algorithms assume the existence of a reward function. Usually, this is either
 given, or it is learned offline and fixed over the course of learning. Importantly,
@@ -214,46 +209,54 @@ Now, clearly this isn't the intended solution...but RL doesn't care.
 From the perspective of the learning algorithm, it did something, and got
 positive reward, so it's going to keep doing that thing.
 
-I don't have any more videos, or paper references, but I do have more anecdotal
-stories.
+Anecdotally, I've heard several more horror stories, mostly tied to small,
+perverse properties of black box optimization.
 
-* A coworker is applying RL to a toy navigation problem.
-The episode terminates whenever the agent walks out of bounds.
-Fairly standard stuff. Except, he forgot to add a large negative penalty if
-it walks out of bounds.
-And what ended up happening was that the agent learned to be suicidal if
-it was ever close to getting negative reward. Reaching the positive reward
-was too difficult, and a quick death ending in 0 reward is preferable to a
-life of -1 reward.
-* A friend is applying RL to another racing game in Universe.
-The reward is defined by applying OCR to a segment of the game screen to
-extract the score. In initial exploration, due to dumb luck, the OCR made a
-rare mistake. It saw the starting line of the race, and interpreted it as
-a leading 1, increasing the score by an order of magnitude. Upon seeing such a
-large reward, the policy spent the rest of learning trying (and failing) to
-reproduce that scenario.
-* The same friend is training a simulated robot to reach towards a point
+A coworker is teaching an
+agent to learn how to navigate. The episode terminates whenever the agent
+walks out of bounds. He didn't add any penalty if the episode terminates this
+way. The final policy learned to be suicidal, because negative reward was
+plentiful, positive reward was rare, and a quick death ending in 0 reward
+was preferable to a long life with negative reward.
+
+A friend is training a simulated robot to reach towards a point
 above a table. It turns out the point was defined *with respect to the table*.
 The policy learned to pound the table really hard, making it fall down *just so*
 to make the goal point move to the end of the arm.
-* A researcher is training a simulated hand to pick up a hammer and push in a nail.
-The reward is defined by how far the nail is pushed into the hole. Instead of
-picking up the hammer, the policy learned to punch the nail into the hole. So
-they added a reward term to encourage picking up the hammer. When trained again,
-the policy learned to pick up the hammer...then throw it at the nail, instead
-of hammering it in.
+
+A researcher gives a talk about using RL to train a simulated robot hand to
+pick up a hammer and hammer in a nail. Initially, the reward was defined just
+by how far the nail is pushed into the hole. Instead of
+picking up the hammer, the robot used its own limbs to punch the nail in.
+So, they added a reward term to encourage picking up the hammer, and retrained.
+They got the policy to pick up the hammer...but then it threw the hammer at the
+nail instead of actually using it.
+
+BELOW IS CUT
+
+A friend mentions training an agent to play a racing flash game. The reward
+is defined by applying OCR to the pixels on the screen to parse the score.
+Unfortunately, the OCR isn't perfect. In initial exploration, the OCR made a
+rare, but important mistake - it interpreted the start line of the race as
+a leading 1, which increased the score by an order of magnitude. This
+completely killed learning, because the policy spent the rest of its time
+trying and failing to reproduce the same error.
+
+END CUT
 
 I haven't verified any of the above for myself, but none of it sounds
 implausible to me. I've been burned by reinforcement learning too many times to
 believe otherwise.
 
-I know people like to tell stories about paperclip
-optimizers, but there's no reason to speculate that far when
-present-day examples show up all the time.
+I know people like to tell stories about paperclip optimizers, and it's an
+important concept, but honestly, I'm sick of hearing about it.
+There's no reason to speculate that far when present-day examples of misaligned
+incentives show up all the time, including in current reinforcement learning
+research.
 
 
 Even Given a Reward Oracle, Local Optima Can Be Hard To Escape
-------------------------------------------------------------------------------
+==============================================================================
 
 All the previous examples are commonly called "reward hacking", which to me
 implies a clever, out-of-the-box solution that gives more reward than the
@@ -343,7 +346,7 @@ how deep RL is right now.
 
 
 Final Results are Incredibly Unstable and Hard to Reproduce
-------------------------------------------------------------------------
+========================================================================
 
 Almost every ML algorithm has hyperparameters, which influence the behavior
 of the learning system. Often, these are picked by hand, or by random search.
@@ -449,8 +452,8 @@ examples in time will collapse towards learning nothing at all, as it becomes
 more confident that any deviation it tries will fail.
 
 
-Even When You Get Good Results, It's Often Just Incredible Overfitting to Weird Patterns In the Environment
-------------------------------------------------------------------------------
+Even When You Get Good Results, It's Often Just Overfitting to Weird Patterns In the Environment
+==============================================================================
 
 In RL, your train set is your test set. The upside is that if you want to do
 well in an environment, you're free to overfit like crazy. The downside is that
@@ -507,7 +510,7 @@ with the same neural net gets around this problem.
 
 
 But What About All The Great Things Deep RL Has Done For Us?
--------------------------------------------------------------------
+==================================================================
 
 Really? Has it really done great things? It's certainly done some very cool
 things, but as far as I know there's very little evidence of it doing any
@@ -524,10 +527,10 @@ For all of it's promise, deep reinforcement learning is still decidedly a resear
 topic.
 
 
-Okay, But What About All the Cool Things Deep RL Has Done?
------------------------------------------------------------------------
+Okay, But What About All the *Cool* Things Deep RL Has Done?
+=====================================================================
 
-I agree! Deep reinforcement learning has done some *awesome* stuff. 
+I agree! Deep reinforcement learning has done some *awesome* stuff.
 Off the top of my head, here are the famous success stories.
 
 * DeepMind created DQN, which learned how to play some Atari games to
@@ -552,20 +555,20 @@ and clever solving of subgames.)
 
 Taking each success above in turn, here would be my words of caution.
 
-* *Atari*: As mentioned earlier, this required millions of frames of experience,
+* **Atari**: As mentioned earlier, this required millions of frames of experience,
 has score as a ground-truth reward function.
-* *Go / Chess / Shogi*: All used millions of games, and all can employ
+* **Go / Chess / Shogi**: All used millions of games, and all can employ
 self-play, which has been shown to be a very useful property for learning.
-* *Dota 2*: The Shadow Fiend bot was restricted to a small part of the Dota game
+* **Dota 2**: The Shadow Fiend bot was restricted to a small part of the Dota game
 space. No bottle, few items, 1v1 laning only, and only Shadow Fiend.
 The bot is likely using the [Dota 2 API](https://developer.valvesoftware.com/wiki/Dota_2_Workshop_Tools/Scripting/API)
 to get the exact health of all enemies in sight. Gold and enemy health form
 a rich, well shaped reward signal.
-* *Power center PUE*: This built off of prior work from the Google data
+* **Power center PUE**: This built off of prior work from the Google data
 center team, which showed neural nets could predict PUE with high accuracy.
 Given a neural net with good predictions, it seems obvious that optimizing PUE
 over the networks inputs is going to lead to good things.
-* *Neural architecture search*: Validation accuracy of a network trained to
+* **Neural architecture search**: Validation accuracy of a network trained to
 convergence is also a very rich reward signal - even if an action only increases
 accuracy from 70% to 71%, RL will pick up on this. Empirically, hyperparameters
 in deep learning tend to be close to linearly independent, and although NAS
@@ -590,7 +593,7 @@ the strengths of reinforcement learning, and they tend to dodge its weaknesses.
 
 
 Looking to The Future?
--------------------------------------------------------------------------------
+===============================================================================
 
 There's an old saying - every researcher learns how to hate their area of
 study. The trick is that researchers will press on despite this, because they
@@ -603,31 +606,33 @@ what's going on, and wanting to see where it's all going. Notice that I said
 work, given more time. To balance out the negativity, here are some ways I could
 see things getting better.
 
-*Local optima are good enough:* It would be very arrogant to claim humans are
-globally optimal at anything. We're really just better at some things than
-all the other species.
-A reinforcement learning solution doesn't have to reach the global
-optima either. It just has to do better than humans can.
+**Local optima are good enough:** It would be very arrogant to claim humans are
+globally optimal at anything. I would guess we're juuuuust good enough to get
+to civilization stage, compared to any other species. In the same vein, an
+RL solution doesn't have to achieve a global optima, as long as its local optima
+is better than the human baseline.
 
-*Hardware solves everything:* Personally, I'm a bit skeptical that hardware
-will simply solve everything. Nevertheless, the faster you can run things, the
-less you care about sample inefficiency. You could potentially brute-force
-the exploration problem entirely. Hardware also lets you try existing
-research ideas faster, and opens up new research avenues of its own.
+**Hardware solves everything:** I know some people who believe that the most
+influential thing that can be done for AI is simply scaling up hardware. Personally,
+I'm skeptical that hardware will fix everything, but it's certainly going to
+be important. The faster you can run things, the less you care about sample
+inefficiency, and the easier it is to brute-force your way past exploration
+problems.
 
-*Add more learning signal:* Sparse rewards are hard to learn because you get
+**Add more learning signal:** Sparse rewards are hard to learn because you get
 very little information about what thing help you. It's possible we can either hallucinate
 positive rewards (HER), define auxiliary tasks (UNREAL), or do predicitive
 learning to build a world model from transitions that give 0 reward.
 
-*Learn learnable reward functions:* The human preferences paper suggests that
+**Reward functions could be learnable:** The human preferences paper suggests that
 it's possible for neural nets to use human feedback to implicitly define a
 reward signal that encourages partial progress for a task. In some cases, this
 outperformed the existing reward definitions. It's possible we
 could extend this with other parts of inverse RL / imitation learning to get
 past many of the difficulties that come from explicitly defining reward.
 
-*Metalearning saves the day:* RL algorithms are designed to apply to any environment that's an MDP. However,
+**Priors from metalearning could speed up learning elsewhere:**
+RL algorithms are designed to apply to any environment that's an MDP. However,
 we don't need to solve arbitrary environments, we just need to solve
 environments in the real-world. In principle, we could use metalearning to learn
 a real-world prior that lets us quickly learn new real-world tasks, at the cost
@@ -636,14 +641,29 @@ in his talks.) For example, if you wanted to use RL to do navigating in
 warehouses, there's probably a way to use metalearning to learn a good
 navigation prior,
 
-*Wild overfitting is actually okay:*
+**Reproducability and wild overfitting don't matter for the problem:**
+From a research perspective, this is disappointing, but there are several
+settings where you might not care how easy it is to reproduce the same results,
+as long as it works. Suppose you train 3 ad-serving models, only changing the
+random seed. In live A/B testing, one gives 2% less revenue, one performs the
+same, and one gives 2% more revenue. In that hypothetical, you don't throw out
+the results - you keep the model with 2% more revenue and celebrate your new
+earnings. Similarly, suppose those ad-serving models were trained primarily
+on clicks logged in the United States. It might not generalize to worldwide
+markets, but that doesn't matter - just don't deploy it to other countries.
 
-Note that this goes both ways: the DeepMind parkour paper learned several novel
-behaviors by creating environments with difficult-to-traverse terrain, just by
-using a reward of "go forward without falling".
+**Harder environments could paradoxably be easier:** One of the big lessons
+from the DeepMind parkour paper is that if you make your task very difficult
+by adding several variations, you can sometimes actually make the learning
+easier, because the policy cannot overfit to any one setting without losing
+performance on all the other settings. We've seen a similar thing in the
+domain randomization papers, and even back to ImageNet: models trained on
+ImageNet will generalize way better than ones trained on CIFAR-100. An
+analogous "ImageNet for control" could fix this. (OpenAI tried to spur this
+with Universe, but it didn't get adopted. From what I heard, the environments
+were just too hard to solve. However, the core premise is sound and I'd like
+to see another attempt when RL is more performant.)
 
-work, given more time.
-
-
-
-CONCLUSION
+Overall, although I spent a lot of this post being pessimistic about where
+reinforcement learning *is*, I still believe in where reinforcement learning
+*could be*.
