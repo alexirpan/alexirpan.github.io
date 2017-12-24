@@ -150,7 +150,9 @@ appropriate reward. Consider the MuJoCo tasks in OpenAI gym.
 In the Reacher task, you control a two-segment arm, that's connected to a central
 point, and the goal is to move the end of the arm to a target location.
 
-GIF
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BkhSKqc8vSA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+(Video from Wenhao Yu)
 
 You have the exact locations of everything, so reward is simply the distance to
 the goal. Easy.
@@ -158,7 +160,7 @@ the goal. Easy.
 In the HalfCheetah environment, you have a two-legged robot, restricted to a
 vertical plane, meaning it can only run forward or backward.
 
-GIF
+![Video of HalfCheetah running forward](/public/rl-hard/upright_half_cheetah.mp4)
 
 The goal is to learn
 a running gait, so you give reward depending on its velocity. Also straightforward.
@@ -263,7 +265,7 @@ And oh do I have stories for this.
 Here's one of my favorite videos. This is an implementation of NAF, learning
 on the HalfCheetah environment.
 
-VIDEO
+![Video of HalfCheetah running forward on its back](/public/rl-hard/upsidedown_half_cheetah.mp4)
 
 Now, from an outside perspective, this is really, *really* dumb. But we can
 only say it's dumb because we have a bunch of prebuilt knowledge that tells
@@ -285,14 +287,14 @@ is to figure out how to move forward while while lying on your back.
 
 And thus, this.
 
-SAME VIDEO
+![Video of HalfCheetah running forward on its back](/public/rl-hard/upsidedown_half_cheetah.mp4)
 
 Realistically though, I have no idea if my theory above is right. All I know
 is that it didn't learn.
 
 Here's another failed run, this time on the Reacher environment.
 
-VIDEO
+![Video of Reacher spinning very fast](/public/rl-hard/failed_reacher.mp4)
 
 In this run, the initial random weights tended to output highly positive or
 highly negative action outputs. That made it easy to learn how to spin really
@@ -304,22 +306,6 @@ Meanwhile, this "spin really fast" policy is actually not that awful -
 in every revolution, the endpoint is guaranteed to pass by the target location.
 
 Combine all of this together, and it never learns to stop spinning really fast.
-
-(May kill the Breakout example, not necessary)
-
-This shows up in Atari games too. In Breakout, the first thing any policy learns
-is to always output right. If you do so, you're guaranteed to reflect the
-ball at least once and clear one brick. And hey - 5 points is better than 0
-points.
-
-VIDEO
-
-Breakout is simple enough that most well-tuned learning algorithms will reliably
-learn to superhuman performance. But for a poorly tuned algorithm, it's possible
-that the policy will never do enough exploration to learn that it should be
-moving to track the ball.
-
--------------------------
 
 These are all examples of the classic exploration-exploitation problem that has dogged
 reinforcement learning since time immemeorial.
@@ -372,7 +358,11 @@ Each timstep, you can apply some acceleration around that point. You get
 more reward the closer the pendulum is to the top, with maximum reward if
 you can balance the pendulum.
 
-GIF
+Below is a video of a run that *mostly* works. Although the policy doesn't
+balance straight up, it learns to output the exact torque needed to counteract
+gravity.
+
+![Video of the Pendulum](/public/rl-hard/pendulum_example.mp4)
 
 This is the easiest continuous control task in OpenAI Gym - the action space
 is 1-dimensional, the state space is 3-dimensional, and you have a shaped reward
@@ -380,11 +370,11 @@ that's giving you fine-grained feedback on how close you are to the top.
 
 Why did this take me a month? Well, I was partly learning how TensorFlow worked.
 I also had a bunch of bugs that took a while to pin down.
-Now, when I finally get it to work, here are the plots of performance. Success
-on this task is defined as hitting -100 to -150 reward. This is 10 independent
+Now, when I finally get it to work, here are the plots of performance.
+This is 10 independent
 runs, with the exact same hyperparameters. The only difference is the random seed.
 
-PLOT
+![Graph of Pendulum results](/public/rl-hard/pendulum_results.png)
 
 10 seeds, and *3* of them work within 200k steps? If this happened in supervised
 learning you'd be digging for bugs in data loading or training to figure out
