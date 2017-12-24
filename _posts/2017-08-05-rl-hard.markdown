@@ -160,7 +160,10 @@ the goal. Easy.
 In the HalfCheetah environment, you have a two-legged robot, restricted to a
 vertical plane, meaning it can only run forward or backward.
 
-![Video of HalfCheetah running forward](/public/rl-hard/upright_half_cheetah.mp4)
+<video controls="controls">
+  <source type="video/mp4" src="/public/rl-hard/upright_half_cheetah.mp4"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 The goal is to learn
 a running gait, so you give reward depending on its velocity. Also straightforward.
@@ -265,7 +268,10 @@ And oh do I have stories for this.
 Here's one of my favorite videos. This is an implementation of NAF, learning
 on the HalfCheetah environment.
 
-![Video of HalfCheetah running forward on its back](/public/rl-hard/upsidedown_half_cheetah.mp4)
+<video controls="controls">
+  <source type="video/mp4" src="/public/rl-hard/upsidedown_half_cheetah.mp4"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 Now, from an outside perspective, this is really, *really* dumb. But we can
 only say it's dumb because we have a bunch of prebuilt knowledge that tells
@@ -287,14 +293,20 @@ is to figure out how to move forward while while lying on your back.
 
 And thus, this.
 
-![Video of HalfCheetah running forward on its back](/public/rl-hard/upsidedown_half_cheetah.mp4)
+<video controls="controls">
+  <source type="video/mp4" src="/public/rl-hard/upsidedown_half_cheetah.mp4"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 Realistically though, I have no idea if my theory above is right. All I know
 is that it didn't learn.
 
 Here's another failed run, this time on the Reacher environment.
 
-![Video of Reacher spinning very fast](/public/rl-hard/failed_reacher.mp4)
+<video controls="controls">
+  <source type="video/mp4" src="/public/rl-hard/failed_reacher.mp4"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 In this run, the initial random weights tended to output highly positive or
 highly negative action outputs. That made it easy to learn how to spin really
@@ -362,7 +374,10 @@ Below is a video of a run that *mostly* works. Although the policy doesn't
 balance straight up, it learns to output the exact torque needed to counteract
 gravity.
 
-![Video of the Pendulum](/public/rl-hard/pendulum_example.mp4)
+<video controls="controls">
+  <source type="video/mp4" src="/public/rl-hard/pendulum_example.mp4"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 This is the easiest continuous control task in OpenAI Gym - the action space
 is 1-dimensional, the state space is 3-dimensional, and you have a shaped reward
