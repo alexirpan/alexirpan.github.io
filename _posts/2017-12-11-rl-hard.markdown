@@ -4,20 +4,6 @@ title:  "Deep Reinforcement Learning Doesn't Work Yet"
 date:   2017-12-11 23:06:00 -0700
 ---
 
-BROAD OUTLINE
-
-People care about deep RL because it has a lot of potential.
-
-Unfortunately, deep RL is pretty awful, for so and so reasons.
-
-Despite this, I'm optimistic things can get better, and here are some
-plausible paths.
-
-It seems more consistent to just describe it as awful, but I don't want
-people to think deep RL is useless, or that it doesn't deserve research.
-
--------------------------------------------------------------------
-
 *This mostly cites papers from Berkeley, Google Brain, DeepMind, and OpenAI,
 because I'm most familiar with that work.
 I'm almost certainly missing stuff from less famous institutions, so if I missed
@@ -54,7 +40,7 @@ as the key, and to me it looks like a really, really shitty key.
 So, to all the people who ask me why RL isn't used on more real-world problems,
 or who believe that deep RL actually does reasonable things, or who have the
 naive, wide-eyed belief that their new research idea will only take a few weeks to
-test out: let me tell you many of the reasons why reinforcement learning
+test out: let me tell you many of the reasons why deep reinforcement learning
 is terrible.
 
 
@@ -233,11 +219,10 @@ ROUGE scores if you train with RL, except there's one problem.
 ![Salesforce ROUGE performance](/public/rl-hard/salesforce_rouge.png)
 {: .centered }
 
+Although the RL model performed best on ROUGE, the model actually used is the
+one trained with both supervised and reinforcement learning.
 Again, if your reward function doesn't reflect something you care about,
 there's no guarantee the learned model will care about it either.
-Reinforcement learning is just a variant of black-box optimization, after all -
-it's well-known that black-box optimization will learn whatever junk it
-gets rewarded for.
 
 Here's another example. In [this paper from DeepMind](https://arxiv.org/abs/1704.03073),
 the authors use DDPG to learn a grasping policy.
@@ -254,8 +239,21 @@ Now, clearly this isn't the intended solution...but RL doesn't care.
 From the perspective of the learning algorithm, it did something, and got
 positive reward, so it's going to keep doing that thing.
 
-Anecdotally, I've heard several more horror stories, mostly tied to small,
-perverse properties of black box optimization.
+Anecdotally, I've heard several more horror stories. It's been known for a while
+that black-box optimization has a tendency to lead to weird solutions. A classic
+example is the time someone applied genetic algorithms to circuit design, and
+[got a circuit where an unconnected logic gate was necessary to the final
+design](https://en.wikipedia.org/wiki/Evolvable_hardware#Introduction).
+
+![Circuit with crazy gates](/public/rl-hard/circuit.png)
+{: .centered }
+
+[From "An Envolved Circuit, Intrinsic in Silicon, Entwined with Physics"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.50.9691&rep=rep1&type=pdf)
+{: .centered }
+
+Reinforcement learning can be seen as a variant of black-box optimization,
+and it has similar pitfalls. Anything that gives +1 reward is good, even if
+the +1 reward isn't coming for the right reasons.
 
 A coworker is teaching an
 agent to learn how to navigate. The episode terminates whenever the agent
@@ -277,15 +275,15 @@ So, they added a reward term to encourage picking up the hammer, and retrained.
 They got the policy to pick up the hammer...but then it threw the hammer at the
 nail instead of actually using it.
 
-I haven't verified any of the above for myself, but none of it sounds
-implausible to me. I've been burned by reinforcement learning too many times to
-believe otherwise.
+I admit these are all anecdotes, and I haven't seen the videos of the behavior.
+However, none of it sounds implausible to me.
+I've been burned by RL too many times to believe otherwise.
 
-I know people like to tell stories about paperclip optimizers, and it's an
-important concept, but honestly, I'm sick of hearing about it.
-There's no reason to speculate that far when present-day examples of misaligned
-incentives show up all the time, including in current reinforcement learning
-research.
+I know people who like to tell stories about paperclip optimizers. I get it,
+I really do. But honestly, I'm sick of hearing those stories, because they
+always speculate up some superhuman misaligned AGI to create a just-so story.
+Doing that really shouldn't be necessary, when people have to deal with
+present-day examples all the time.
 
 
 Even Given a Reward Oracle, Local Optima Can Be Hard To Escape
@@ -388,7 +386,67 @@ chance learning just gets completely stuck at the wrong thing. It's just
 how deep RL is right now.
 
 
-Final Results are Incredibly Unstable and Hard to Reproduce
+Even When Deep RL Works, It May Just Be Overfitting to Weird Patterns In the Environment
+==============================================================================
+
+In reinforcement learning, your train set is your test set. The upside is that if you want to do
+well in an environment, you're free to overfit like crazy. The downside is that
+if you want to generalize to any other environment, you're going to overfit like
+crazy.
+
+DQN can solve a lot of the Atari games, but there's little expectation
+that an agent trained on one Atari game will be a good initialization for
+training on another Atari game. In contrast, if you're doing image classification,
+pretrained features from a model trained on ImageNet should be one of the
+first things you try, because they transfer really well. RL doesn't have
+an equivalent "ImageNet for control" yet. (OpenAI Universe tried to solve
+this, but from what I heard, it's just too hard to solve anything reliably
+in it, due to the asychronous implementation.)
+
+This is most obvious in multiagent environments.
+In [this work](https://arxiv.org/abs/1711.02301), we studied a toy 2-player
+game where there's a closed-form analytic solution for optimal play.
+In one of our first experiments, we freeze player 1's behavior, then trained
+player 2 with RL. By doing this, you can treat player 1's actions as part
+of the environment. We trained player 2 against the optimal player 1, and
+although RL can learn good strategies, we found it failed to generalize
+to non-optimal players.
+
+A [DeepMind paper](https://arxiv.org/abs/1711.00832) from NIPS showed a
+similar result. Here, there are two agents
+playing laser tag. The agents are trained with multiagent reinforcement
+learning. To test generalization, they run the training with 5 random
+seeds. Here's a video of agents that have been trained against one
+another.
+
+<div class="centered">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8vXpdHuoQH8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
+
+As you can see, they learn to move towards and shoot each other. Then, they
+took player 1 from one experiment, and pitted it against player 2 from a
+*different* experiment. If the learned policies generalize, we should see
+similar behavior.
+
+Spoiler alert: you don't.
+
+<div class="centered">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jOjwOkCM_i8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
+
+This seems to be a running theme in multiagent RL. When agents are trained
+against one another, a kind of co-evolution happens. The agents get really good
+at beating each other, but as soon as they get deployed against a player they
+haven't seen before, performance goes to shit. Note
+that the only difference between these videos is the random seed. Same learning
+algorithm, same hyperparameters, and the divergence is purely from randomness
+in initial conditions.
+
+Self-play doesn't seem to have this problem. Somehow, controlling both players
+with the same neural net gets around this problem.
+
+
+Even Ignoring Generalization Issues, The Final Results Can be Unstable and Hard to Reproduce
 ========================================================================
 
 Almost every ML algorithm has hyperparameters, which influence the behavior
@@ -500,109 +558,55 @@ examples in time will collapse towards learning nothing at all, as it becomes
 more confident that any deviation it tries will fail.
 
 
-Even When Deep RL Works, It May Just Be Overfitting to Weird Patterns In the Environment
-==============================================================================
-
-In reinforcement learning, your train set is your test set. The upside is that if you want to do
-well in an environment, you're free to overfit like crazy. The downside is that
-if you want to generalize to any other environment, you're going to overfit like
-crazy.
-
-DQN can solve a lot of the Atari games, but there's little expectation
-that an agent trained on one Atari game will be a good initialization for
-training on another Atari game. In contrast, if you're doing image classification,
-pretrained features from a model trained on ImageNet should be one of the
-first things you try, because they transfer really well. RL doesn't have
-an equivalent "ImageNet for control" yet. (OpenAI Universe tried to solve
-this, but from what I heard, it's just too hard to solve anything reliably
-in it, due to the asychronous implementation.)
-
-This is most obvious in multiagent environments.
-In [this work](https://arxiv.org/abs/1711.02301), we studied a toy 2-player
-game where there's a closed-form analytic solution for optimal play.
-In one of our first experiments, we freeze player 1's behavior, then trained
-player 2 with RL. By doing this, you can treat player 1's actions as part
-of the environment. We trained player 2 against the optimal player 1, and
-although RL can learn good strategies, we found it failed to generalize
-to non-optimal players.
-
-A [DeepMind paper](https://arxiv.org/abs/1711.00832) from NIPS showed a
-similar result. Here, there are two agents
-playing laser tag. The agents are trained with multiagent reinforcement
-learning. To test generalization, they run the training with 5 random
-seeds. Here's a video of agents that have been trained against one
-another.
-
-<div class="centered">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8vXpdHuoQH8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</div>
-
-As you can see, they learn to move towards and shoot each other. Then, they
-took player 1 from one experiment, and pitted it against player 2 from a
-*different* experiment. If the learned policies generalize, we should see
-similar behavior.
-
-Spoiler alert: you don't.
-
-<div class="centered">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jOjwOkCM_i8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</div>
-
-This seems to be a running theme in multiagent RL. When agents are trained
-against one another, a kind of co-evolution happens. The agents get really good
-at beating each other, but as soon as they get deployed against a player they
-haven't seen before, performance goes to shit. Note
-that the only difference between these videos is the random seed. Same learning
-algorithm, same hyperparameters, and the divergence is purely from randomness
-in initial conditions.
-
-Self-play doesn't seem to have this problem. Somehow, controlling both players
-with the same neural net gets around this problem.
-
-
 But What About All The Great Things Deep RL Has Done For Us?
 ==================================================================
 
-Really? Has it really done great things? It's certainly done some very cool
-things, but as far as I know there's very little evidence of it doing any
-practical things. I tried to think of a real-world, productionized use of
-deep RL, and the only thing I could think of was
-the DeepMind data center power usage project.
-There's rumors that some finance companies use reinforcement learning, but nothing definitive.
-Of course, finance companies have good reasons to be cagey about how they
-play the market, so maybe the evidence is never going to be strong. Jack
-Clark (Strategy & Comms Director at OpenAI) [made a tweet asking about this](https://twitter.com/jackclarkSF/status/919584404472602624)
-back in October 2017, and there just really isn't that much in the replies.
+Deep reinforcement learning has certainly done some very cool things. DQN is
+old news now, but was absolutely *nuts* at the time. AlphaGo and AlphaZero
+continue to be very impressive achievements.
+However, outside of these game playing successes,
+deep RL hasn't done much that has practical real world value.
 
-For all of it's promise, deep reinforcement learning is still decidedly a research
-topic.
+I tried to think of a real-world, productionized use of deep RL, and I could
+only think of two things: [the project to reduce the power used by
+Google's data centers](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/),
+and [the project to automatically design neural net architectures](https://research.googleblog.com/2017/11/automl-for-large-scale-image.html).
+Jack Clark (Strategy & Comms Director at OpenAI)
+[tweeted a request for more examples](https://twitter.com/jackclarkSF/status/919584404472602624),
+and I just didn't find that much in the replies.
+
+I assume finance companies have tried using RL, but so far there's nothing
+definitive about it. Of course, finance companies have good reasons to be cagey
+about how they play the market, so perhaps the evidence there is never going to
+be strong.
+
+**Overall, for all of its hype and promise, deep RL is still decidedly a research
+topic.** If you came to me with an image classification, I'd point you to
+pretrained ImageNet models, and I'd have high confidence that the learning
+would work.
+If [the people behind *Silicon Valley* can make Not Hotdog](https://medium.com/@timanglade/how-hbos-silicon-valley-built-not-hotdog-with-mobile-tensorflow-keras-react-native-ef03260747f3),
+then you can too. Right now, I can't say the same about reinforcement learning.
+There's too much that could go wrong.
 
 
-Okay, But What About All the *Cool* Things Deep RL Has Done?
+What if I Don't Care About Immediate Real-World Value?
 =====================================================================
 
-I agree! Deep reinforcement learning has done some *awesome* stuff.
-Off the top of my head, here are the famous success stories.
+Ignoring real-world value, here's my list of cool things deep RL has done.
 
-* DeepMind created DQN, which learned how to play some Atari games to
-superhuman performance, without hand-designed features, putting deep RL on the
-map.
-* DeepMind created AlphaGo, which beat a professional Go player, then AlphaGo Zero did even better. The
-same learning algorithm was shown to have little issue with Shogi and Chess as
-well.
-* OpenAI made a Dota 2 1v1 Shadow Fiend bot, that beat top pro players in a
+* Ones from the previous section: DQN, AlphaGo, AlphaZero, the parkour bot,
+reducing power center usage, Neural Architecture Search.
+* OpenAI's Dota 2 1v1 Shadow Fiend bot, which beat top pro players in a
 simplified duel setting.
-* Google Brain showed that an agent trained with reinforcement learning could
-learn novel neural net architectures that outperformed human-designed models.
-They called this neural architecture search.
-* Some students at MIT and NYU showed that deep RL could learn to beat
-pro SSBM players at 1v1 Falcon dittos.
+* A Super Smash Brothers Melee bot from students at MIT and NYU, that can beat
+pro players at 1v1 Falcon dittos.
 
-(Note: two machine learning systems, [Libratus](https://www.ijcai.org/proceedings/2017/0772.pdf) and [DeepStack](https://arxiv.org/abs/1701.01724),
-recently beat pro players at no-limit heads
-up Texas Hold'Em. These aren't listed, because from what I heard, neither
-uses reinforcement learning. They both used counterfactual regret minimization
-and clever solving of subgames.)
+Two machine learning systems,
+[Libratus](https://www.ijcai.org/proceedings/2017/0772.pdf) and [DeepStack](https://arxiv.org/abs/1701.01724),
+recently beat pro players at no-limit heads up Texas Hold'Em.
+These are both very cool, but by my understanding, neither uses reinforcement
+learning. They instead use counterfactual regret minimization and clever
+iterative solving of subgames.
 
 Taking each success above in turn, here would be my words of caution.
 
