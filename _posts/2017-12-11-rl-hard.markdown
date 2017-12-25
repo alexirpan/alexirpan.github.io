@@ -6,9 +6,8 @@ date:   2017-12-11 23:06:00 -0700
 
 *This mostly cites papers from Berkeley, Google Brain, DeepMind, and OpenAI,
 because I'm most familiar with that work.
-I'm almost certainly missing stuff from less famous institutions, so if I missed
-a paper that's an important counterexample, I apologize - I'm just one guy,
-after all.*
+I'm almost certainly missing stuff from less famous institutions, and for that
+I apologize - I'm just one guy, after all.*
 
 Once, on Facebook, I made the following claim.
 
@@ -147,7 +146,7 @@ https://agile.seas.harvard.edu/files/agile/files/explicit-zmp.pdf
 
 
 
-It (Usually) Requires a Reward Oracle
+It Usually Requires a Reward Oracle
 ==============================================================================
 
 RL algorithms assume the existence of a reward function. Usually, this is either
@@ -248,6 +247,7 @@ design](https://en.wikipedia.org/wiki/Evolvable_hardware#Introduction).
 ![Circuit with crazy gates](/public/rl-hard/circuit.png)
 {: .centered }
 
+The gray cells are required to get correct behavior, including the one in the top-left corner.
 [From "An Envolved Circuit, Intrinsic in Silicon, Entwined with Physics"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.50.9691&rep=rep1&type=pdf)
 {: .centered }
 
@@ -598,12 +598,10 @@ with the same approach. Until you try things out, it can be hard to judge
 whether a given RL algorithm will work.
 
 That being said, we can draw conclusions from the current list of deep
-reinforcement learning successes.
+reinforcement learning successes. Here's my list so far.
 
-Ignoring real-world value, here's my list of cool things deep RL has done.
-
-* Ones from the previous section: DQN, AlphaGo, AlphaZero, the parkour bot,
-reducing power center usage, Neural Architecture Search.
+* Things mentioned in the previous sections: DQN, AlphaGo, AlphaZero,
+the parkour bot, reducing power center usage, Neural Architecture Search.
 * OpenAI's Dota 2 1v1 Shadow Fiend bot, which beat top pro players in a
 simplified duel setting.
 * A Super Smash Brothers Melee bot from students at MIT and NYU, that can beat
@@ -616,60 +614,91 @@ These are both very cool, but by my understanding, neither uses reinforcement
 learning. They instead use counterfactual regret minimization and clever
 iterative solving of subgames.
 
+From this list, we can identify common properties that make learning more
+feasible. None of the properties below are required, but every one of them
+helps.
 
+* **It is easy to generate near unbounded amounts of experience.**
+It should be clear why this helps. The more data you have, the easier the learning
+problem is. This applies to
+Atari, Go, Chess, Shogi, and the simulated environments for the parkour bot.
+It likely applies to the power center project too, because
+[in prior work](https://googleblog.blogspot.com/2014/05/better-data-centers-through-machine.html),
+it was shown that neural nets can predict energy efficiency with high
+accuracy. That's exactly the kind of simulated model you'd want for training an
+RL system.
 
-Taking each success above in turn, here would be my words of caution.
+    It might apply to the Dota 2 and SSBM work, but it depends on the throughput
+of how quickly the games can be run, and how many machines were available to
+run them.
 
-* **Atari**: As mentioned earlier, this required millions of frames of experience,
-has score as a ground-truth reward function.
-* **Go / Chess / Shogi**: All used millions of games, and all can employ
-self-play, which has been shown to be a very useful property for learning.
-* **Dota 2**: The Shadow Fiend bot was restricted to a small part of the Dota game
-space. No bottle, few items, 1v1 laning only, and only Shadow Fiend.
-The bot is likely using the [Dota 2 API](https://developer.valvesoftware.com/wiki/Dota_2_Workshop_Tools/Scripting/API)
-to get the exact health of all enemies in sight. Gold and enemy health form
-a rich, well shaped reward signal.
-* **Power center PUE**: This built off of prior work from the Google data
-center team, which showed neural nets could predict PUE with high accuracy.
-Given a neural net with good predictions, it seems obvious that optimizing PUE
-over the networks inputs is going to lead to good things.
-* **Neural architecture search**: Validation accuracy of a network trained to
-convergence is also a very rich reward signal - even if an action only increases
-accuracy from 70% to 71%, RL will pick up on this. Empirically, hyperparameters
-in deep learning tend to be close to linearly independent, and although NAS
-isn't exactly tuning hyperparameters, it seems reasonable that there are clear
-links between action choices and reward, which makes credit assignment
-straightforward. Given all of this, working in "only" 2000 trained networks
-doesn't seem so far-fetched.
-* The SSBM bot shares many similarities to the Dota 2 setup - 1v1, Battlefield
-only, infinite time match to avoid having to understand how stocks work,
-Captain Falcon dittos only, gets to use self-play, and a rich reward based on
-% dealt and received.
+* **The environment can be simplified into just the core learning problem.**
+The presented Dota 2 bot only plays the early game, only plays Shadow Fiend against Shadow
+Fiend in a 1v1 laning setting, uses hardcoded item builds, and calls the
+[Dota 2 API](https://developer.valvesoftware.com/wiki/Dota_2_Workshop_Tools/Scripting/API)
+to avoid having to solve perception. Similarly, the SSBM bot
+can only play 1v1 games, both players have to play Captain Falcon, and the
+match has to be on Battlefield.
+
+    This isn't a dig at either bot, because why would you make your problem harder
+when you don't even know if the easier problem is solvable?
+A full solution to either game is going to require more machinery, but the
+broad trend of all research is to demonstrate the smallest proof-of-concept
+first and generalize it later.
+
+* **There is a way to introduce self-play into learning.** This is a component
+of AlphaGo, AlphaZero, the Dota 2 Shadow Fiend bot, and the SSBM Falcon bot. I
+should note that by self-play, *I mean exactly the setting where the game is
+competitive, and both players can be controlled by the same agent.* The
+combination of both seems to be important to get stable, well-performing
+behavior.
+
+* **The reward signal is rich, and the consequences of actions is immediate.**
+In Dota 2, reward can come from last hits (triggers after every monster kill
+by either player), and health (triggers after every attack or skill that
+hits a target.) These reward signals
+come quick and often. For the SSBM bot, reward can be given for damage dealt
+and taken, which gives signal for every attack that successfully lands. The shorter
+the time dependency between action and consequence, the easier it is for
+reinforcement learning to figure out a path to high reward.
+
+    As a case example of this, let's examine the original neural architecture
+search paper, from ICLR 2016. The reward is validation accuracy, which is a
+very rich reward signal - if a neural net design decision only increases
+accuracy from 70% to 71%, RL will still pick up on this. Additionally, there's
+evidence that hyperparameters in deep learning are close to
+linearly independent. (This was empirically shown in "Hyperparameter
+Optimization: A Spectral Approach" - a summary by me is
+[here]({% post_url 2017-06-27-hyperparam-spectral %}) if interested.
+NAS isn't exactly tuning hyperparameters, but it seems
+reasonable that neural net design decisions are also similar. This is good
+news for learning because the correlations between decision and performance
+will be strong.
+
+    The combination of these two helps me understand why it "only" takes about
+2000 trained networks to learn a better one, compared to the millions of examples
+needed in other environments.
 
 The broader point I want to get across is this: many things have to go right
-for reinforcement learning to even be a plausible solution, and then it often
-still requires a lot of careful work to make that solution happen. Perhaps
-in the future, RL will be great at everything, but for now, there's a narrow
-set of problems where RL is the right solution.
-
-The same is true of reinforcement learning. It's not that reinforcement learning
-is particularly good. It's more that the environments above are well-suited to
-the strengths of reinforcement learning, and they tend to dodge its weaknesses.
+for reinforcement learning to be a plausible solution, and even then, it's
+not a free ride to make that solution happen. Perhaps in the future, RL will
+be robust enough to be plug-and-play. But for now, it's not there.
 
 
-Looking to The Future?
+Looking to The Future
 ===============================================================================
 
 There's an old saying - every researcher learns how to hate their area of
 study. The trick is that researchers will press on despite this, because they
-like the problems too much to quit them.
+like the problems too much.
 
-That's about where I'm at with deep reinforcement learning. Despite my reservations
-and pessimism, I'm still interested in working in that area, keeping up with
-what's going on, and wanting to see where it's all going. Notice that I said
-"Deep Reinforcement Learning Doesn't Work *Yet*". I see no reason why it couldn't
-work, given more time. To balance out the negativity, here are some ways I could
-see things getting better.
+That's roughly how I feel about deep reinforcement learning. Despite my
+reservations, I think people absolutely should be throwing RL at different
+problems, including ones where it probably shouldn't work. How else are we
+supposed to make RL better?
+
+I see no reason why deep RL couldn't work, given more time. The question is
+how it'll get there. Here are some futures I find plausible.
 
 **Local optima are good enough:** It would be very arrogant to claim humans are
 globally optimal at anything. I would guess we're juuuuust good enough to get
@@ -686,36 +715,28 @@ problems.
 
 **Add more learning signal:** Sparse rewards are hard to learn because you get
 very little information about what thing help you. It's possible we can either hallucinate
-positive rewards (HER), define auxiliary tasks (UNREAL), or do predicitive
-learning to build a world model from transitions that give 0 reward.
+positive rewards (Hindsight Experience Replay), define auxiliary tasks (UNREAL),
+or bootstrap with self-supervised learning to build a good enough world model.
 
-**Reward functions could be learnable:** The human preferences paper suggests that
-it's possible for neural nets to use human feedback to implicitly define a
-reward signal that encourages partial progress for a task. In some cases, this
-outperformed the existing reward definitions. It's possible we
-could extend this with other parts of inverse RL / imitation learning to get
-past many of the difficulties that come from explicitly defining reward.
+**Reward functions could be learnable:** There's preliminary progress showing
+reward functions can be learned. (Learning from Human Preferences, Guided Cost
+Learning, Time-Contrastive Neural Networks, imitation learning and inverse RL
+in general). The human preferences paper in particular found that for some
+tasks, a reward implicitly defined by human reward outperformed existing reward
+defitions, because humans did a better job classifying partial progress.
+It's possible this could let use sidestep many of the difficulties that come
+from explicit reward defintion.
 
 **Priors from metalearning could speed up learning elsewhere:**
 RL algorithms are designed to apply to any environment that's an MDP. However,
 we don't need to solve arbitrary environments, we just need to solve
 environments in the real-world. In principle, we could use metalearning to learn
 a real-world prior that lets us quickly learn new real-world tasks, at the cost
-of general learning ability. (This is a point Pieter Abbeel likes to mention
-in his talks.) For example, if you wanted to use RL to do navigating in
-warehouses, there's probably a way to use metalearning to learn a good
-navigation prior,
-
-**Reproducability and wild overfitting don't matter for the problem:**
-From a research perspective, this is disappointing, but there are several
-settings where you might not care how easy it is to reproduce the same results,
-as long as it works. Suppose you train 3 ad-serving models, only changing the
-random seed. In live A/B testing, one gives 2% less revenue, one performs the
-same, and one gives 2% more revenue. In that hypothetical, you don't throw out
-the results - you keep the model with 2% more revenue and celebrate your new
-earnings. Similarly, suppose those ad-serving models were trained primarily
-on clicks logged in the United States. It might not generalize to worldwide
-markets, but that doesn't matter - just don't deploy it to other countries.
+of general learning ability. (Pieter Abbeel likes to mention this argument a lot
+in his talks.) For example, if I wanted to use RL to do navigating in
+warehouses, I'd look into using metalearning to learn a good navigation prior,
+and then finetune it for the specific warehouse the robot is deployed in,
+since the finetuning should work way faster.
 
 **Harder environments could paradoxably be easier:** One of the big lessons
 from the DeepMind parkour paper is that if you make your task very difficult
@@ -729,6 +750,17 @@ with Universe, but it didn't get adopted. From what I heard, the environments
 were just too hard to solve. However, the core premise is sound and I'd like
 to see another attempt when RL is more performant.)
 
-Overall, although I spent a lot of this post being pessimistic about where
-reinforcement learning *is*, I still believe in where reinforcement learning
-*could be*.
+Finally, although it's unsatisfying from a research perspective, the issues
+of RL may not matter for practical purposes. Suppose you trained 3 ad-serving
+models based on clicks logged in the United States, using 3 random seeds. In
+live A/B testing, one gives 2% less revenue, one performs the
+same, and one gives 2% more revenue. In that hypothetical, reproducibility
+doesn't matter - you deploy the model with 2% more revenue and celebrate.
+Similarly, it doesn't matter that the ad-serving model may only perform well
+in the United States - if it generalizes poorly to the worldwide market,
+just don't deploy it there.
+
+Overall, although I'm pessimistic about where reinforcement learning *is*, I
+still believe in where reinforcement learning *could be*. So, the next time
+someone asks me whether RL can solve their problem? I'll tell them no. But
+then I'll say, if you give it more time, maybe it can.
