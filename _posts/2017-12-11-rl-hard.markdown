@@ -589,8 +589,16 @@ then you can too. Right now, I can't say the same about reinforcement learning.
 There's too much that could go wrong.
 
 
-What if I Don't Care About Immediate Real-World Value?
+Alright. In What Settings Could Deep RL Do Something Great For Me?
 =====================================================================
+
+A priori, it's really hard to say. The problem with trying to solve everything
+with RL is that you're trying to solve several very different environments
+with the same approach. Until you try things out, it can be hard to judge
+whether a given RL algorithm will work.
+
+That being said, we can draw conclusions from the current list of deep
+reinforcement learning successes.
 
 Ignoring real-world value, here's my list of cool things deep RL has done.
 
@@ -607,6 +615,8 @@ recently beat pro players at no-limit heads up Texas Hold'Em.
 These are both very cool, but by my understanding, neither uses reinforcement
 learning. They instead use counterfactual regret minimization and clever
 iterative solving of subgames.
+
+
 
 Taking each success above in turn, here would be my words of caution.
 
