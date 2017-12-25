@@ -29,12 +29,9 @@ Unfortunately, it doesn't really work.
 
 Now, I believe it can work, otherwise I wouldn't be interested in it.
 But there are a lot of problems in the way, many of which feel fundamentally
-difficult. Hidden behind the beautiful demos is a towering garbage pile of
-pain, failed experiments, statistically insignificant results, and pure, nonsensical
-bullshit.
-
-My AGI timelines are long because everyone is looking towards RL
-as the key, and to me it looks like a really, really shitty key.
+difficult. Hidden behind the beautiful demos of learned agents is a
+towering garbage pile of pain, failed experiments, statistically insignificant
+results, and pure, nonsensical bullshit.
 
 So, to all the people who ask me why RL isn't used on more real-world problems,
 or who believe that deep RL actually does reasonable things, or who have the
@@ -119,59 +116,80 @@ disheartening how much time RL takes to get results that look *worse* than
 this.
 
 In a similar vein, you can easily outperform
-[DQN in Atari with Monte Carlo Tree Search instead](https://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning).
+DQN in Atari with off-the-shelf Monte Carlo Tree Search. Here are the numbers
+from [Guo et al, NIPS 2014](https://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning). UCT is the standard version of MCTS
+used today.
+
+![DQN results](/public/rl-hard/dqn_atari.png)
+{: .centered }
+
+![MCTS results](/public/rl-hard/uct_atari.png)
+{: .centered }
+
+Again, not a fair comparison, because DQN does no search, and MCTS does a lot
+of search. But, it does show that if you just want a good Atari bot, spending
+a bunch of time training DQN may not be your best bet.
 
 Reinforcement learning can theoretically work for anything, including
 environments where a model of the world isn't known. However, this generality
-comes at the price of sample efficiency, and the rule-of-thumb is that if any
-domain-specific algorithm works, it'll work faster and better. In my experience,
-if you want to solve something, you're better off trying anything besides
-reinforcement learning first, because it'll be easier to utilize
-problem-specific information.
+comes at a price: it's hard to exploit any problem-specific information that
+could help with learning. That leads to correspondingly low sample efficiency.
+
+The rule-of-thumb is that except in rare cases, domain-specific algorithms will
+work faster and better than reinforcement learning. This isn't a problem if you're
+doing RL for reinforcement learning's sake, but it can make it harder to get
+motivated, and it's harder to explain to laypeople why the problems you're
+working on are cool.
 
 Consider the company most people think of when you mention robots:
 [Boston Dynamics](https://www.youtube.com/channel/UC7vVhkEfw4nOGp8TyDk7RcQ).
 At NIPS 2016, a leading machine learning conference, they gave a legendary
 performance where they said they din't do machine learning.
 If you look up research papers from the group, you can find
-[that they use time-varying LQR, QP solvers, convex optimization](https://dspace.mit.edu/openaccess-disseminate/1721.1/110533). In other words, classical robotics stuff.
-(Personally, I'd bundle those techniques as close enough to machine learning,
-but that's probably an unorthodox classification.)
-
-https://agile.seas.harvard.edu/files/agile/files/explicit-zmp.pdf
+[that they use time-varying LQR, QP solvers, and convex optimization](https://dspace.mit.edu/openaccess-disseminate/1721.1/110533). In other words, classical robotics stuff.
+(Personally, I'd bundle those techniques as machine learning, but that
+might be an unorthodox view.)
 
 <div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
+No one at Boston Dynamics has to sell why teaching a robot to do that is cool.
+I have to sell my problems all the time, because the reason they're hard is
+subtle, and the end result isn't always that impressive.
 
 
 It Usually Requires a Reward Oracle
 ==============================================================================
 
-RL algorithms assume the existence of a reward function. Usually, this is either
-given, or it is learned offline and fixed over the course of learning. Importantly,
+Reinforcement learning assumes the existence of a reward function. Usually, this is either
+given, or it is learned offline and fixed over the course of learning. =
+
+Importantly,
 for RL to do the right thing, your reward function must capture *exactly* what
 you want.
 And I mean *exactly*. RL has an annoying tendency to overfit to your reward and
 do things you don't expect.
 
-Take Atari, for example. You want to maximize score. You
-*always* want to maximize score. It's just how those games work. That's why
-Atari games are such a nice benchmark.
+Do you know why Atari games are such a nice benchmark? There are a few
+reasons, but a big one is that the goal in every game is to maximize score, so
+you never have to worry about specifying reward.
 
 The majority of reinforcement learning results come from simulated environments,
-and that's because you have perfect knowledge of the state and can define an
-appropriate reward. Consider the MuJoCo tasks in OpenAI gym.
+in part because perfect knowledge of the state makes reward function design
+waaaaaay easier. Consider the example of the MuJoCo tasks in OpenAI gym.
+(MuJoCo is a physics simulator.)
+
 In the Reacher task, you control a two-segment arm, that's connected to a central
-point, and the goal is to move the end of the arm to a target location.
+point, and the goal is to move the end of the arm to a target location. Below
+is a video of a successfully learned policy.
 
 <div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BkhSKqc8vSA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
-You have the exact locations of everything, so reward is simply the distance to
-the goal. Easy.
+Reward is easy to define. It's the distance from the end of the arm to the target,
+plus a small control cost.
 
 In the HalfCheetah environment, you have a two-legged robot, restricted to a
 vertical plane, meaning it can only run forward or backward.
@@ -183,62 +201,66 @@ vertical plane, meaning it can only run forward or backward.
 </video>
 </div>
 
-The goal is to learn
-a running gait, so you give reward depending on its velocity. Also straightforward.
+The goal is to learn a running gait. Again, reward is easy to define: it's
+just the velocity of the HalfCheetah.
 
-**Reward functions that don't have this property tend to work poorly.** There's
+Let's consider a harder example. There's
 a semi-famous boat racing example from an [OpenAI blog post](https://blog.openai.com/faulty-reward-functions/),
 where finishing the race gives less points than collecting powerups.
+**When reward functions don't reflect what you care about, the final behavior
+doesn't always match what you wanted.**
 
 <div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tlOIHko8ySg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
-To be honest, at the time I really didn't understand why this merited a blog
-post. It was just so *obvious*. Of course optimizing the wrong objective leads
-to weird behavior! What, do people not see this happening in schools?
-(Teaching to the test instead of teaching to learn.) In academia? (Publishing
-more papers instead of publishing good papers because of publish or perish.)
-How is it news that RL does the same thing? Do enough RL and you inevitably
-run into an issue like this.
+To be honest, at the time I wasn't a fan of this blog post. Not because I
+thought the point was bad. It was more because I thought the point it was
+making was blindingly obvious, and the post was making a bigger deal out of
+it than necesssary. How is it news that reinforcement learning does weird
+things when your reward doesn't match what you care about?
 
-(Then I started writing this blog post, and found that the most compelling
-video I could find was the boat racing video from the blog post. So, I now
-begrudgingly accept that the post had a point.)
+Then I started writing this blog post, and realized the most compelling video
+was the boat racing video from that blog post. So, okay, I now begrudgingly
+accept that there was some value from that blog post.
 
-For example, [some researchers at Salesforce](https://www.salesforce.com/products/einstein/ai-research/tl-dr-reinforced-model-abstractive-summarization/)
-trained a text summarization model.
-This is usually trained with supervised learning. For evaluation, they use an
-automated metric called ROUGE, as well as human ratings. ROUGE isn't differentiable,
-so they tried using RL to optimize ROUGE. And yes, you can get much better
-ROUGE scores if you train with RL, except there's one problem.
+Anyways, my grumpiness aside, there are other examples of this too. Here
+is [a blog post about text summarization, from Salesforce](https://www.salesforce.com/products/einstein/ai-research/tl-dr-reinforced-model-abstractive-summarization/). Normally, the model is
+trained with supervised learning, then evaluated with
+an automated metric called ROUGE. ROUGE isn't differentiable, but RL can
+deal with non-differentiable rewards. They tried using RL to optimize ROUGE,
+and yes, this works, but there's a key problem.
 
 > While ROUGE scores have a good correlation with human judgment in general, the summaries with the highest ROUGE aren't necessarily the most readable or natural ones. This became an issue when we trained our model to maximize the ROUGE score with reinforcement learning alone. We observed that our models with the highest ROUGE scores also generated barely-readable summaries.
 
 ![Salesforce ROUGE performance](/public/rl-hard/salesforce_rouge.png)
 {: .centered }
 
-Although the RL model performed best on ROUGE, the model actually used is the
-one trained with both supervised and reinforcement learning.
+The final model used is the model trained with both supervised and reinforcement learning,
+even though it's ROUGE score is smaller.
 Again, if your reward function doesn't reflect something you care about,
 there's no guarantee the learned model will care about it either.
 
-Here's another example. In [this paper from DeepMind](https://arxiv.org/abs/1704.03073),
-the authors use DDPG to learn a grasping policy.
-The policy gets reward based on how high the block is, which is defined as
-the z-coordinate of the bottom face.
+Here's another fun example. In
+[this paper from DeepMind](https://arxiv.org/abs/1704.03073),
+the authors use a distributed version of DDPG to learn a grasping policy. The
+goal is to grasp the red block, and stack it on top of the blue block. For the
+initial lifting motion, reward is given based on how high the red block is.
 
-The policy ended up learning this.
+However, importantly, the reward is defined by the z-coordinate of the
+bottom face of the block. One of the failure modes was that the policy learned
+to tip the red block over, instead of picking it up.
 
 <div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8QnD8ZM0YCo?start=27" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
-Now, clearly this isn't the intended solution...but RL doesn't care.
-From the perspective of the learning algorithm, it did something, and got
-positive reward, so it's going to keep doing that thing.
+Now, clearly this isn't the intended solution. But RL doesn't care.
+From the perspective of reinforcement learning, it did something, and got
+rewarded for it. So it's going to keep doing that thing.
 
-Anecdotally, I've heard several more horror stories. It's been known for a while
+Anecdotally, I've heard several horror stories of trying to fight RL with
+reward functions. It's been known for a while
 that black-box optimization has a tendency to lead to weird solutions. A classic
 example is the time someone applied genetic algorithms to circuit design, and
 [got a circuit where an unconnected logic gate was necessary to the final
@@ -247,7 +269,8 @@ design](https://en.wikipedia.org/wiki/Evolvable_hardware#Introduction).
 ![Circuit with crazy gates](/public/rl-hard/circuit.png)
 {: .centered }
 
-The gray cells are required to get correct behavior, including the one in the top-left corner.
+The gray cells are required to get correct behavior, including the one in the top-left corner,
+even though it's connected to nothing.
 [From "An Envolved Circuit, Intrinsic in Silicon, Entwined with Physics"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.50.9691&rep=rep1&type=pdf)
 {: .centered }
 
@@ -259,19 +282,22 @@ A coworker is teaching an
 agent to learn how to navigate. The episode terminates whenever the agent
 walks out of bounds. He didn't add any penalty if the episode terminates this
 way. The final policy learned to be suicidal, because negative reward was
-plentiful, positive reward was rare, and a quick death ending in 0 reward
-was preferable to a long life with negative reward.
+plentiful, positive reward was too hard to achieve, and a quick death ending
+in 0 reward was preferable to a long life that risked negative reward.
 
-A friend is training a simulated robot to reach towards a point
-above a table. It turns out the point was defined *with respect to the table*.
-The policy learned to pound the table really hard, making it fall down *just so*
-to make the goal point move to the end of the arm.
+A friend is training a simulated robot arm to reach towards a point
+above a table. It turns out the point was defined *with respect to the table*,
+and the table wasn't anchored to anything.
+The policy learned to slam the table really hard, making the table fall
+over, which moved the target point too. The target point *just so happened*
+to fall next to the end of the arm.
 
 A researcher gives a talk about using RL to train a simulated robot hand to
 pick up a hammer and hammer in a nail. Initially, the reward was defined just
 by how far the nail is pushed into the hole. Instead of
 picking up the hammer, the robot used its own limbs to punch the nail in.
-So, they added a reward term to encourage picking up the hammer, and retrained.
+So, they added a reward term to encourage picking up the hammer, and retrained
+the policy.
 They got the policy to pick up the hammer...but then it threw the hammer at the
 nail instead of actually using it.
 
@@ -297,9 +323,10 @@ These are the exceptions. The much more common case is stupidity - poor
 local optima that come from getting the exploration-exploitation tradeoff
 wrong. Ones that lead to frustration and so, so much pain,
 
-And oh do I have stories for this.
+I have far too many stories for this, so here are just a few.
 
-Here's one of my favorite videos. This is an implementation of NAF, learning
+Here's one of my favorite videos. This is an implementation of
+[Normalized Advantage Function](https://arxiv.org/abs/1603.00748), learning
 on the HalfCheetah environment.
 
 <div class="centered">
@@ -309,23 +336,25 @@ on the HalfCheetah environment.
 </video>
 </div>
 
-Now, from an outside perspective, this is really, *really* dumb. But we can
-only say it's dumb because we have a bunch of prebuilt knowledge that tells
-us running on your feet is better. RL doesn't know this! It sends actions,
-and gets back states and rewards. That's it. Here's my best guess for what
-happened.
+From an outside perspective, this is really, *really* dumb. But we can
+only say it's dumb because we can see the 3rd person view, and have a bunch of
+prebuilt knowledge that tells us running on your feet is better.
+RL doesn't know this! It sees a state vector, it sends action vectors, and it
+knows it's getting some positive reward. That's it.
 
-* Through random exploration, it learned to fall forward. This gives a bit of
-reward - moving forward is better than not moving at all.
-* It keeps doing that because it got rewarded for it, and the behavior got
-"burned into" the policy. Now it's falling forward consistently.
-* Through random exploration, from that state it learns a backflip maneuver.
-This gives more reward - backflipping forward is better than lying down.
-* It keeps doing that because it got rewarded for it, and backflipping got
-burned in too. Now it's backflipping consistently.
-* Once the policy flips to its back consistently, it's too hard to learn
-how to flip right side up. So, the easiest path to high reward
-is to figure out how to move forward while while lying on your back.
+Here's my best guess for what happened during learning.
+
+* Falling forward is better than standing still. The policy explored its way
+to learning how to fall.
+* It did so enough to "burn in" that behavior, so now it's falling forward
+consistently.
+* Doing a backflip is better than staying still after falling over.
+The policy explored its way to a backflip maneuver.
+* It did that enough too, and now backflipping is burned into the policy.
+* Once the policy is backflipping consistently, which is easier for the
+policy: learning to do a front-flip and then learning to run from that,
+or figuring out how to move forward while lying on its back? I would
+guess the latter.
 
 And thus, this.
 
@@ -349,19 +378,14 @@ Here's another failed run, this time on the Reacher environment.
 </div>
 
 In this run, the initial random weights tended to output highly positive or
-highly negative action outputs. That made it easy to learn how to spin really
-fast. It's easy to perpetuate this behavior - just make all your
-neural network weights large in magnitude. It's hard to deviate from this policy
-in a meaningful way - you have to take several exploration steps to stop spinning,
-and until then your actions barely influence your state.
-Meanwhile, this "spin really fast" policy is actually not that awful -
-in every revolution, the endpoint is guaranteed to pass by the target location.
+highly negative action outputs. This makes most of the actions output the
+maximum or minimum acceleration possible. It's really easy to spin super fast:
+just output high magnitude actions. Once the robot gets going, it's hard
+to deviate from this policy in a meaningful way - you have to take several
+exploration steps to stop the rampant spinning first. It's certainly
+learnable, but in this run, it didn't happen.
 
-CHANGE ABOVE
-
-Combine all of this together, and it never learns to stop spinning really fast.
-
-These are all examples of the classic exploration-exploitation problem that has dogged
+In other words, it's another case of the classic exploration-exploitation problem that has dogged
 reinforcement learning since time immemeorial.
 Your data comes from your current policy. If your current policy explores too
 much you get junk data and learn nothing. Exploit too much and you burn-in
@@ -372,12 +396,13 @@ them have been attempted recently - intrinsic motivation, curiosity-driven
 exploration, count-based exploration, and so forth. However, none of these have
 worked consistently for all environments,
 and I'm skeptical a similar solution will be figured out anytime soon. The
-problem is really, really, really, really, really hard. To quote the
-[Wikipedia article on multi-armed bandits](https://en.wikipedia.org/wiki/Multi-armed_bandit),
+problem is really, really, really, really, really hard. Exploration-exploitation
+was first studied in multi-armed bandits, and to quote the
+[Wikipedia article](https://en.wikipedia.org/wiki/Multi-armed_bandit),
 
 > Originally considered by Allied scientists in World War II, it proved so intractable that, according to Peter Whittle, the problem was proposed to be dropped over Germany so that German scientists could also waste their time on it.
 
-http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.57.1916&rep=rep1&type=pdf
+(Ref: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.57.1916&rep=rep1&type=pdf)
 
 I've taken to imagining reinforcement learning as a demon that's
 deliberately misinterpreting your reward and actively searching for local optima.
@@ -459,23 +484,33 @@ well, but it's relatively easy to see signs of life. These signs of life are
 super important, because they tell you that you're on the right track, you're
 doing something reasonable, and it's worth investing more time.
 
-Reinforcement learning, on the other hand, isn't stable at all. It is 
-pathologically unstable.
+Reinforcement learning, on the other hand, isn't stable at all. Sometimes it
+is, but most of the time it's pathologically awful.
 
-When I started working at Brain, one of the first
-things I worked on was reproducing the results of a continuous RL paper.
-Specifically, I was trying to reproduce the Normalized Advantage Function
-paper.
+When I started working at Google Brain, one of the first
+things I did was implement the algorithm from the Normalized Advantage Function
+paper. I figured it would only take me about 2-3 weeks. I had several things
+going for me: some familiarity with Theano (which transferred to TensorFlow
+well), some deep RL experience, and the first author was literally sitting
+next to me because he was interning at Brain.
 
-After about a month of failures, I finally solve my first task: the Pendulum
-task from OpenAI Gym. If you're unfamiliar with this task, it's very simple.
-There's a pendulum. There's gravity. The pendulum hangs from a point.
-Each timstep, you can apply some acceleration around that point. You get
-more reward the closer the pendulum is to the top, with maximum reward if
-you can balance the pendulum.
+It ended up taking me more like 6 weeks to reproduce the results I cared about,
+because of a bunch of subtle software bugs that took forever to track down.
+The question is, why did this take so long?
 
-Below is a video of a run that *mostly* works. Although the policy doesn't
-balance straight up, it learns to output the exact torque needed to counteract
+To answer this, let's consider the simplest continuous control task in
+OpenAI Gym: the Pendulum task. In this task, there's a pendulum, anchored
+at a point, with gravity acting on the pendulum. The input state is
+3-dimensional. The action space is 1-dimensional, the amount of torque to apply.
+The goal is to balance the pendulum perfectly straight up.
+
+This is a tiny problem, and it's made even easier by a well shaped reward.
+Reward is defined by the angle of the pendulum. Actions bringing the pendulum
+closer to the vertical not only give reward, they give *increasing* reward.
+The reward landscape is basically concave.
+
+Below is a video of a policy that *mostly* works. Although the policy doesn't
+balance straight up, it outputs the exact torque needed to counteract
 gravity.
 
 <div class="centered">
@@ -485,26 +520,21 @@ gravity.
 </video>
 </div>
 
-This is the easiest continuous control task in OpenAI Gym - the action space
-is 1-dimensional, the state space is 3-dimensional, and you have a shaped reward
-that's giving you fine-grained feedback on how close you are to the top.
-
-Why did this take me a month? Well, I was partly learning how TensorFlow worked.
-I also had a bunch of bugs that took a while to pin down.
-Now, when I finally get it to work, here are the plots of performance.
-This is 10 independent
-runs, with the exact same hyperparameters. The only difference is the random seed.
+Here is a plot of performance, after I fixed all the bugs. Each line is the
+reward curve from one of 10 independent runs. Same hyperparameters, the only
+difference is the random seed.
 
 ![Graph of Pendulum results](/public/rl-hard/pendulum_results.png)
 
-Now, I did solve the environment, but 30% of the time, it didn't learn at all.
-This is just from different random seeds! Look, there's variance in supervised
-learning too, but if models failed to learn anything at all 30% of the time, it
-would be a clear signal of an implementation bug in data loading or training.
-In reinforcement learning? It's Tuesday.
+30% of the time, it's not doing anything at all! *But this counts as working.*
+Look, there's variance in supervised learning too, but it's rarely this bad.
+If my supervised learning code failed by random chance 30% of the time, I'd
+have super high confidence there was a bug in data loading or training. But
+if that happens in reinforcement learning, I have no idea if there's a bug,
+or if reinforcement learning is just messing with me. Maybe it's just Tuesday.
 
 <div class="centered">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iVzAMmpMra8" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GlhOUyy4wbs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
 Here's a plot from the [Variational Information Maximizing Exploration paper](https://arxiv.org/abs/1605.09674).
@@ -762,5 +792,6 @@ just don't deploy it there.
 
 Overall, although I'm pessimistic about where reinforcement learning *is*, I
 still believe in where reinforcement learning *could be*. So, the next time
-someone asks me whether RL can solve their problem? I'll tell them no. But
-then I'll say, if you give it more time, maybe it can.
+someone asks me whether RL can solve their problem? I'll tell them no, it
+can't. But I'll also tell them to ask me again a few years from now. By then,
+maybe it can.
