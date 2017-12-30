@@ -9,15 +9,17 @@ There's something special about visting a city that is literally
 thousands of years old. It is one thing to read about the Renaissance,
 and it is another thing entirely to see a sculpted fountain in person,
 realizing that it predates the Declaration of Independence by over
-300 years, and it's *right there*. The one downside is that although
-my parents liked the scenery, they were not the biggest fans of
+300 years, and it's *right there*.
+
+The one downside is that although
+my parents liked the scenery, they weren't the biggest fans of
 Italian food. They didn't dislike it, but, well, let me put it this way:
 the only restaurant we visited multiple times was a Chinese restaurant.
 
 To be fair, the Chinese restaurant catered to Chinese exchange students,
 meaning their Chinese food was authentic and actually pretty good.
-Still, the whole time, I was trying to figure out why we were eating
-Chinese food in Rome.
+Still, I wasn't expecting to eat Chinese food in Rome, and I *especially*
+wasn't expecting eating Chinese food multiple times in Rome.
 
 But I digress! During the trip, we visited a supermarket to buy some
 fruit. While there, a family member pointed out these boxes.
@@ -36,35 +38,45 @@ I bought two boxes.
 \* \* \*
 {: .centered }
 
-Let's take a closer look.
+Let's take a closer look. The front and back have the same picture,
+but the two sides are different.
 
-PICTURES / VIDEO
+![Front of box](/public/mlp-italy/front.jpg)
+{: .centered }
 
-I was originally against buying it because the character art wasn't
-show accurate. Rainbow's mane doesn't
-look like that! Since when has Fluttershy ever winked like that, or
-Twilight smirked like that? Isn't that somewhat out-of-character for
-both of them? *Literally unbuyable.*
+![Side 1 of box](/public/mlp-italy/side1.jpg)
+{: .centered }
 
-Then I remembered that there was a MLP movie, which was animated
-differently. It might have been *movie accurate*. Rainbow Dash
-in particular is closer to her movie model than her show model.
+![Side 2 of box](/public/mlp-italy/side2.jpg)
+{: .centered }
 
-PICTURE
+The first thing I noticed was that the character art looked...off, somehow.
+In what world does Fluttershy wink like that? In what world does Twilight
+smirk like that. Expression-wise I'm pretty sure neither has made that
+face in the show, and it feels out-of-character for both of them.
+Fluttershy seems too reserved for a playful wink. Twilight seems too nice for
+a knowing smirk.
 
-All this focus on the character model is only kind-of a joke.
-Look, here's my view: as a fan, I have
-the right to call out shitty merchandise. Like, if you're going
-to monetize your show by capitalizing on people liking your characters,
-*you should at least make good merchandise*,
+Rainbow also looked off, and after staring at it a while, I
+figured out why. Normally her mane hangs over her *left* eye, but
+here it hangs over her *right*.
+
+![Rainbow Dash comparison](/public/mlp-italy/dash_comparison.jpg)
+{: .centered }
+
+*Literally unbuyable.* I'm only kind-of joking, actually.
+Look, here's my view: fans have the right to call out shitty merchandise.
+Like, if you're going to monetize your show, you should at least have your
+merchandise reflect what your show looks like!
 Don't even tell me that the target audience of young girls won't care.
 I suspect the target audience *does* care. One, I believe children
 are more perceptive than people think. Two, when you're a kid, you don't
-have as much going on in your life as an adult does, and that means
-that the details matter even more.
+have as much going on in your life, which makes it easy to obsess over the
+details of your Saturday morning cartoons. The moment they changed
+Ash Ketchum's voice actor in *Pokemon*, I was **done** with that show.
 
-As a case study in this, there was big uproar over merchandise for
-*Brave*. The goal of *Brave* was to create a Disney princess
+Take *Brave* as a case study.
+The goal of *Brave* was to create a Disney princess
 that avoided the gender stereotypes of the old Disney princesses.
 The movie succeeded. The marketing didn't.
 
@@ -72,10 +84,11 @@ The movie succeeded. The marketing didn't.
 {: .centered }
 
 The marketing made Merida slimmer, made her a bit older, removed her
-bow, and made her hair less curly. Anecdotally, I read accounts of girls
-not liking the new design, because "it's not the same Merida as the
-movie." (You can read comments made by Brave's director
-[here](http://www.marinij.com/general-news/20130511/brave-creator-blasts-disney-for-blatant-sexism-in-princess-makeover), if interested.)
+bow, and made her hair less curly. Anecdotally, my Facebook feed had a few
+comments from parents, saying their daughter didn't like it because "her
+hair wasn't as curly", and "it's not the same Merida as the movie."
+(You can read comments from Brave's director
+[here](http://www.marinij.com/general-news/20130511/brave-creator-blasts-disney-for-blatant-sexism-in-princess-makeover), if you're interested in further ranting.)
 
 The details matter. Don't mess them up.
 
@@ -96,52 +109,66 @@ The chocolate muffin...was not that good. Derpy would be ashamed.
 (She delivers mail and makes good muffins. That's the joke.)
 {: .centered }
 
-Honestly, I wasn't expecting the muffin to be good, so that's fine.
-
-(Also, it turns out I'm an uncultured swine, because it isn't a muffin,
-it's "[panettoncino](https://en.wikipedia.org/wiki/Panettone) with chocolate chips."
-Sorry.)
-
+Okay, so it's not actually a muffin. It's
+"[panettoncino](https://en.wikipedia.org/wiki/Panettone) with chocolate chips",
+But my headcanon is that if Derpy can make good muffins, she can make good
+panettoncino too.
 
 Let's take a closer look at these cards.
 
-PICTURE
+![Front of cards](/public/mlp-italy/card_fronts.jpg)
+{: .centered }
 
-Awwwwww, they're so cute! But wait a second, there's only 5
-cards. Isn't it supposed to be the Mane 6? Where's Applejack?
+(Card fronts.)
+{: .centered }
 
-Taking a look at the back of the cards, she isn't there either.
+![Back of cards](/public/mlp-italy/card_backs.jpg)
+{: .centered }
 
-PICTURE.
+(Card back. It's identical for all of them.)
+{: .centered }
+
+Awwwwww, they're so cute! I have no issues with the art here. But wait a
+second, there's only 5 cards. Isn't it supposed to be the Mane 6?
+Where's Applejack? She's not on the front. She's not on the back.
 
 Speaking of which, is Applejack even on the box?
 
-VIDEO
+Scroll up if you want. She isn't.
+**Applejack doesn't appear anywhere on or in this box.** Every other
+pony in the Mane 6 is there. The top bar has plenty of side characters...
+and no Applejack.
 
-She isn't. **Applejack isn't on this box at all.** Every other
-pony in the Mane 6 is there. Even in the top bar, there are plenty
-of side characters. Roseluck, Mysterious Mare-do-Well, Spike, Trixie,
-the Cutie Mark Crusaders...and no Applejack.
+![Side characters](/public/mlp-italy/sidecharacters.jpg)
+{: .centered }
+
+(I recognized all these characters by heart. Don't judge me.)
+{: .centered }
+
+...and no Applejack.
+
+![Sad Applejack](/public/mlp-italy/sad_applejack.png)
+{: .centered }
 
 Strike the "Chinese food in Rome" thing. This right here is
 a **What the hell were you thinking?** moment.
-
-PICTURE OF APPLEJACK?
-
 Applejack certainly isn't that popular, but come on,
-she's part of the ensemble! There are plenty of Applejack fans!
+she's part of the main ensemble! There are plenty of Applejack fans!
 
 ![There are dozens of us! DOZENS!](/public/mlp-italy/dozens.gif)
 {: .centered }
 
-Either this is a mistake of colossal proportions, or Applejack
-doesn't get much love from marketing. This is funny at a meta-level
-because people like to joke Applejack is "the most popular background
-character", but it's really sad for fans that have to see her getting
+This is funny at a meta-level,
+because people like to joke Applejack is "the best background pony",
+but it's sad for fans that have to see her getting
 treated as a second-level citizen.
+Either this is a mistake of colossal proportions, or Applejack is
+just that unappealing of a character. I'll be generous and go with
+the former.
 
-I've certainly bought other MLP merchandise, but it's primarily been
+I've bought other MLP merchandise, but it's primarily been
 fan-created merchandise. Fan merchandise tends to match the quality
-I expect out of merchandise, because it's made by people *who actually care*.
+I expect out of merchandise, because it's made by people *who actually care
+about getting the details right.*
 
-That panettoncino? It doesn't look it was made by people who cared.
+Look, Hasbro, just do it better next time, alright?
