@@ -1,15 +1,14 @@
 ---
 layout: post
 title:  "So There I Was, Buying My Little Pony Merchandise in Italy"
-date:   2017-12-28 00:30:00 -0700
+date:   2017-12-30 00:24:00 -0700
 ---
 
 For Thanksgiving, my family went on a trip to Rome. It was pretty cool!
-There's something special about visting a city that is literally
+There's something special about visiting a city that is literally
 thousands of years old. It is one thing to read about the Renaissance,
-and it is another thing entirely to see a sculpted fountain in person,
-realizing that it predates the Declaration of Independence by over
-300 years, and it's *right there*.
+and it is another thing to realize that the sculpture in the town plaza predates
+the Declaration of Independence by over 300 years, and it's *right there*.
 
 The one downside is that although
 my parents liked the scenery, they weren't the biggest fans of
@@ -106,9 +105,6 @@ The chocolate muffin...was not that good. Derpy would be ashamed.
 ![Derpy hooves](/public/mlp-italy/derpy.jpg)
 {: .centered }
 
-(She delivers mail and makes good muffins. That's the joke.)
-{: .centered }
-
 Okay, so it's not actually a muffin. It's
 "[panettoncino](https://en.wikipedia.org/wiki/Panettone) with chocolate chips",
 But my headcanon is that if Derpy can make good muffins, she can make good
@@ -125,7 +121,7 @@ Let's take a closer look at these cards.
 ![Back of cards](/public/mlp-italy/card_backs.jpg)
 {: .centered }
 
-(Card back. It's identical for all of them.)
+(Card backs. It's identical for all of them.)
 {: .centered }
 
 Awwwwww, they're so cute! I have no issues with the art here. But wait a
@@ -136,13 +132,9 @@ Speaking of which, is Applejack even on the box?
 
 Scroll up if you want. She isn't.
 **Applejack doesn't appear anywhere on or in this box.** Every other
-pony in the Mane 6 is there. The top bar has plenty of side characters...
-and no Applejack.
+pony in the Mane 6 is there. The top bar has plenty of side characters.
 
 ![Side characters](/public/mlp-italy/sidecharacters.jpg)
-{: .centered }
-
-(I recognized all these characters by heart. Don't judge me.)
 {: .centered }
 
 ...and no Applejack.
@@ -168,7 +160,7 @@ the former.
 
 I've bought other MLP merchandise, but it's primarily been
 fan-created merchandise. Fan merchandise tends to match the quality
-I expect out of merchandise, because it's made by people *who actually care
+I expect, because it's made by people *who actually care
 about getting the details right.*
 
 Look, Hasbro, just do it better next time, alright?
