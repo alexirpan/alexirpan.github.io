@@ -20,29 +20,31 @@ Still, the whole time, I was trying to figure out why we were eating
 Chinese food in Rome.
 
 But I digress! During the trip, we visited a supermarket to buy some
-fruit. While there, a family member pointed out a box carrying
-My Little Pony characters.
+fruit. While there, a family member pointed out these boxes.
 
-PICTURE
+![My Little Pony boxes](/public/mlp-italy/box_store.jpg)
+{: .centered }
 
-I wasn't planning to buy it. They argued the following.
+I was against buying it. They argued the following.
 
-* According to the packaging, there was "a surprise" inside.
-* It would be a really funny souvineir.
+* According to the packaging, there was "a surprise inside".
 * It only cost 2 Euros.
+* Buying MLP merchandise in Italy is intrinsically funny.
 
-I ended up buying two boxes.
+I bought two boxes.
 
 \* \* \*
 {: .centered }
 
-Fast forward a few weeks, and I figured I should open one of these
-up.
+Let's take a closer look.
 
-Now, for the record, I was initially opposed to buying it because
-the characters art wasn't show-accurate. Rainbow's mane doesn't
-look like that! Since when has Fluttershy winked like that, or
-Twilight smirked like that? *Literally unbuyable.*
+PICTURES / VIDEO
+
+I was originally against buying it because the character art wasn't
+show accurate. Rainbow's mane doesn't
+look like that! Since when has Fluttershy ever winked like that, or
+Twilight smirked like that? Isn't that somewhat out-of-character for
+both of them? *Literally unbuyable.*
 
 Then I remembered that there was a MLP movie, which was animated
 differently. It might have been *movie accurate*. Rainbow Dash
@@ -50,29 +52,96 @@ in particular is closer to her movie model than her show model.
 
 PICTURE
 
-Mollified, I opened up the box. Inside was this.
+All this focus on the character model is only kind-of a joke.
+Look, here's my view: as a fan, I have
+the right to call out shitty merchandise. Like, if you're going
+to monetize your show by capitalizing on people liking your characters,
+*you should at least make good merchandise*,
+Don't even tell me that the target audience of young girls won't care.
+I suspect the target audience *does* care. One, I believe children
+are more perceptive than people think. Two, when you're a kid, you don't
+have as much going on in your life as an adult does, and that means
+that the details matter even more.
 
-PICTURE
+As a case study in this, there was big uproar over merchandise for
+*Brave*. The goal of *Brave* was to create a Disney princess
+that avoided the gender stereotypes of the old Disney princesses.
+The movie succeeded. The marketing didn't.
 
-What looked like a chocolate muffin, and a few pony cards. The
-chocolate muffin...was not that good. Derpy would be ashamed.
-But, I wasn't expecting it to be that great.
+![Character design comparison](/public/mlp-italy/brave.jpg)
+{: .centered }
 
-Let's take a look at these cards.
+The marketing made Merida slimmer, made her a bit older, removed her
+bow, and made her hair less curly. Anecdotally, I read accounts of girls
+not liking the new design, because "it's not the same Merida as the
+movie." (You can read comments made by Brave's director
+[here](http://www.marinij.com/general-news/20130511/brave-creator-blasts-disney-for-blatant-sexism-in-princess-makeover), if interested.)
+
+The details matter. Don't mess them up.
+
+\* \* \*
+{: .centered }
+
+Opening the box produces this.
+
+![Box contents](/public/mlp-italy/muffin.jpg)
+{: .centered }
+
+What looked like a chocolate muffin, and a few pony cards.
+The chocolate muffin...was not that good. Derpy would be ashamed.
+
+![Derpy hooves](/public/mlp-italy/derpy.jpg)
+{: .centered }
+
+(She delivers mail and makes good muffins. That's the joke.)
+{: .centered }
+
+Honestly, I wasn't expecting the muffin to be good, so that's fine.
+
+(Also, it turns out I'm an uncultured swine, because it isn't a muffin,
+it's "[panettoncino](https://en.wikipedia.org/wiki/Panettone) with chocolate chips."
+Sorry.)
+
+
+Let's take a closer look at these cards.
 
 PICTURE
 
 Awwwwww, they're so cute! But wait a second, there's only 5
 cards. Isn't it supposed to be the Mane 6? Where's Applejack?
 
+Taking a look at the back of the cards, she isn't there either.
+
+PICTURE.
+
 Speaking of which, is Applejack even on the box?
 
 VIDEO
 
-*She isn't.*
+She isn't. **Applejack isn't on this box at all.** Every other
+pony in the Mane 6 is there. Even in the top bar, there are plenty
+of side characters. Roseluck, Mysterious Mare-do-Well, Spike, Trixie,
+the Cutie Mark Crusaders...and no Applejack.
+
+Strike the "Chinese food in Rome" thing. This right here is
+a **What the hell were you thinking?** moment.
 
 PICTURE OF APPLEJACK?
 
-Applejack certainly isn't a very popular character, but come on,
-she's part of the Mane 6! Is she really so unmarketable? Did the
-design people forget to include her?
+Applejack certainly isn't that popular, but come on,
+she's part of the ensemble! There are plenty of Applejack fans!
+
+![There are dozens of us! DOZENS!](/public/mlp-italy/dozens.gif)
+{: .centered }
+
+Either this is a mistake of colossal proportions, or Applejack
+doesn't get much love from marketing. This is funny at a meta-level
+because people like to joke Applejack is "the most popular background
+character", but it's really sad for fans that have to see her getting
+treated as a second-level citizen.
+
+I've certainly bought other MLP merchandise, but it's primarily been
+fan-created merchandise. Fan merchandise tends to match the quality
+I expect out of merchandise, because it's made by people *who actually care*.
+
+That panettoncino? It doesn't look it was made by people who cared.
