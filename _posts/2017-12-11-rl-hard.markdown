@@ -4,10 +4,10 @@ title:  "Deep Reinforcement Learning Doesn't Work Yet"
 date:   2017-12-11 23:06:00 -0700
 ---
 
-*This mostly cites papers from Berkeley, Google Brain, DeepMind, and OpenAI,
-because I'm most familiar with that work.
-I'm almost certainly missing stuff from less famous institutions, and for that
-I apologize - I'm just one guy, after all.*
+*This mostly cites papers from Berkeley, Google Brain, DeepMind, and OpenAI
+from the past few years, because I'm most familiar with that work.
+I'm almost certainly missing stuff from older literature and less famous
+institutions, and for that I apologize - I'm just one guy, after all.*
 
 Once, on Facebook, I made the following claim.
 
@@ -25,22 +25,33 @@ is an obvious fit. Deep RL is one of the closest things that looks anything like
 AGI, and that's the kind of dream that fuels billions
 of dollars of funding.
 
-Unfortunately, it doesn't really work.
+Unfortunately, it doesn't really work yet.
 
-Now, I believe it can work, otherwise I wouldn't be interested in it.
+Now, I believe it *can* work. If I didn't believe in reinforcement learning,
+I wouldn't be interested in it.
 But there are a lot of problems in the way, many of which feel fundamentally
 difficult. Hidden behind the beautiful demos of learned agents is a
 towering garbage pile of pain, failed experiments, statistically insignificant
 results, and pure, nonsensical bullshit.
 
-So, to all the people who ask me why RL isn't used on more real-world problems,
-or who believe that deep RL actually does reasonable things, or who have the
-naive, wide-eyed belief that their new research idea will only take a few weeks to
-test out: let me tell you many of the reasons why deep reinforcement learning
-is terrible.
+Several times, I've seen people try deep reinforcement learning for the first
+time. Without fail, something goes wrong. Without fail, the "toy problem" is
+not as easy as it looks. And without fail, they get destroyed a few times
+until they set their research expectations realistically.
+
+My goal isn't to claim that RL is useless, or to discourage people from joining
+the field. I just want people to know what they're getting into, so that when
+they do nothing for a month, they know it isn't their fault.
+
+(A final aside: many of the following are problems in not just deep RL, but
+RL in general. However, I place special emphasis on deep RL because my
+first-hand experience is biased towards neural net approaches.
+The hype of RL is driven by the
+promise of applying RL to large, complex environments where good function
+approximation is necessary. It is that hype that needs to be addressed.)
 
 
-It Can Be Horribly Sample Inefficient
+Reinforcement Learning Can Be Horribly Sample Inefficient
 ==============================================================================
 
 The most well-known benchmark for deep reinforcement learning is Atari. This is
@@ -52,9 +63,9 @@ Atari games run at 60 frames per second. On the top of your head, do you
 know how many frames a state of the art DQN needs to reach human performance?
 
 The answer depends on the game, but let's take a look at a recent Deepmind
-paper, [Rainbow DQN](https://arxiv.org/abs/1710.02298). This paper came out
-about 2 months ago, and it's a combination
-of the several incremental advances made in the past 5 years.
+paper, [Rainbow DQN (Hessel et al, 2017)](https://arxiv.org/abs/1710.02298).
+This paper is the combination
+of the several incremental advances made to DQN in the past 5 years.
 The results come in this handy chart.
 
 ![Figure from Rainbow DQN](/public/rl-hard/rainbow_dqn.png)
@@ -68,39 +79,45 @@ This corresponds to about 83 hours of play experience, plus however long it take
 to train the model.
 
 This is actually pretty good, when you consider that the previous record
-([Distributional DQN](https://arxiv.org/pdf/1707.06887.pdf)) needed
+([Distributional DQN (Bellemare et al, 2017)](https://arxiv.org/pdf/1707.06887.pdf)) needed
 *70 million* frames to hit 100% median performance. As for the
-[DQN from the Nature paper](https://www.nature.com/articles/nature14236),
+[DQN from the Nature paper (Mnih et al, 2015)](https://www.nature.com/articles/nature14236),
 it never hits 100% median performance, even after 200 million frames of training.
 
-RL has a nasty habit of taking longer than you think it should.
-Many of the MuJoCo benchmarks require 10^5 to 10^7 steps. Honestly, that's
-fine, but it *really* feels like it shouldn't require that many steps. These
-tasks don't look that hard.
-
-Below is a video from the [DeepMind parkour paper](https://arxiv.org/abs/1707.02286),
-trained using PPO.
+You know the planning fallacy? The one that says finishing something usually
+takes longer than you think it will? I'm starting to believe reinforcement
+learning has a similar rule of thumb - it usually takes more samples than you
+think it will. Many of the MuJoCo benchmarks take between 10^5 to 10^7 steps,
+depending on the task.
+The [DeepMind parkour paper (Heess et al, 2017)](https://arxiv.org/abs/1707.02286), demoed below,
+used 64 workers over 100 hours. (The paper does not clarify what "worker"
+means, but I assume it means CPUs.)
 
 <div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hx_bgoTF7bs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
-These results are *incredible*. When I saw this video I was shocked that RL
-could even do this. Turns out it can...if you use 64 workers, and train for
-100 hours. Not that unreasonable, but it's still a lot of compute.
+These results are *super cool*, and when it first came out I was really excited
+that deep RL could learn running behaviors like this...but it still feels like
+these behaviors shouldn't need this much time to learn, nor this much
+computation.
+
+There's an obvious counterpoint here: what if we just ignore sample efficiency?
+There are several settings where it's easy to generate experience. Games are
+a big example. But, for any setting where this *isn't* true, RL faces an uphill
+battle, and unfortunately, most real-world settings fall under this category.
 
 
-Many of the Benchmarks are Better Solved by Other Methods
+If You Just Care About Final Performance, Many Problems are Better Solved by Other Methods
 ==============================================================================
 
-Now, I love the parkour paper. But it's worth putting it in context of other
-work.
+Now, I like the parkour paper a lot. But, it's worth putting it in context of
+prior work.
 
-Below is a video of similar simulated robots, controlled
+Here is a video of similar simulated robots, controlled
 with online trajectory optimization.
 The correct actions are computed in near real-time, online, with no offline
-training. Oh, and it's [from 2012](https://homes.cs.washington.edu/~todorov/papers/TassaIROS12.pdf),
-so it's using old hardware too.
+training. Oh, and it's from 2012. ([Tassa et al, IROS 2012](https://homes.cs.washington.edu/~todorov/papers/TassaIROS12.pdf)). So it's also running on 5 year old hardware.
 
 <div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uRVAX_sFT24" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
@@ -110,10 +127,10 @@ Personally, I find these behaviors equally cool to watch. So how can this
 approach work so well, while using way less compute.
 
 The trick is that the approach shown (model predictive control) gets to do
-planning against a known world model (the physics simulator). So on one hand,
-it's not a fair comparison to model-free RL. On the other hand, it's somewhat
-disheartening how much time RL takes to get results that look *worse* than
-this.
+planning against a known world model (the physics simulator). This is
+not a fair comparison to model-free RL. On the other hand, given that a model
+helps by this much, why would you spend a bunch of time training an RL policy
+that gets results that look *worse* than this?
 
 In a similar vein, you can easily outperform
 DQN in Atari with off-the-shelf Monte Carlo Tree Search. Here are the numbers
@@ -127,24 +144,26 @@ used today.
 {: .centered }
 
 Again, not a fair comparison, because DQN does no search, and MCTS does a lot
-of search. But, it does show that if you just want a good Atari bot, spending
-a bunch of time training DQN may not be your best bet.
+of search. However, it does show that if you just want a good Atari bot,
+throwing a tree search algorithm at the problem is probably easier than training
+a DQN.
 
 Reinforcement learning can theoretically work for anything, including
 environments where a model of the world isn't known. However, this generality
 comes at a price: it's hard to exploit any problem-specific information that
-could help with learning. That leads to correspondingly low sample efficiency.
+could help with learning, which forces you to use tons of samples to learn
+things that could have been hardcoded.
 
-The rule-of-thumb is that except in rare cases, domain-specific algorithms will
+The rule-of-thumb is that except in rare cases, domain-specific algorithms
 work faster and better than reinforcement learning. This isn't a problem if you're
 doing RL for reinforcement learning's sake, but it can make it harder to get
 motivated, and it's harder to explain to laypeople why the problems you're
 working on are cool.
 
-Consider the company most people think of when you mention robots:
+Consider the company most people think of when you mention robotics:
 [Boston Dynamics](https://www.youtube.com/channel/UC7vVhkEfw4nOGp8TyDk7RcQ).
 At NIPS 2016, a leading machine learning conference, they gave a legendary
-performance where they said they din't do machine learning.
+presentation where they said they din't do machine learning.
 If you look up research papers from the group, you can find
 [that they use time-varying LQR, QP solvers, and convex optimization](https://dspace.mit.edu/openaccess-disseminate/1721.1/110533). In other words, classical robotics stuff.
 (Personally, I'd bundle those techniques as machine learning, but that
@@ -156,14 +175,14 @@ might be an unorthodox view.)
 
 No one at Boston Dynamics has to sell why teaching a robot to do that is cool.
 I have to sell my problems all the time, because the reason they're hard is
-subtle, and the end result isn't always that impressive.
+subtle, and the end result isn't always as visually impressive.
 
 
 It Usually Requires a Reward Oracle
 ==============================================================================
 
 Reinforcement learning assumes the existence of a reward function. Usually, this is either
-given, or it is learned offline and fixed over the course of learning. =
+given, or it is learned offline and fixed over the course of learning.
 
 Importantly,
 for RL to do the right thing, your reward function must capture *exactly* what
@@ -222,32 +241,39 @@ things when your reward doesn't match what you care about?
 
 Then I started writing this blog post, and realized the most compelling video
 was the boat racing video from that blog post. So, okay, I now begrudgingly
-accept that there was some value from that blog post.
+accept that this blog post was useful.
 
 Anyways, my grumpiness aside, there are other examples of this too. Here
 is [a blog post about text summarization, from Salesforce](https://www.salesforce.com/products/einstein/ai-research/tl-dr-reinforced-model-abstractive-summarization/). Normally, the model is
 trained with supervised learning, then evaluated with
 an automated metric called ROUGE. ROUGE isn't differentiable, but RL can
 deal with non-differentiable rewards. They tried using RL to optimize ROUGE,
-and yes, this works, but there's a key problem.
+and yes, this works, but it turned out high ROUGE doesn't always give you
+good summaries.
 
 > While ROUGE scores have a good correlation with human judgment in general, the summaries with the highest ROUGE aren't necessarily the most readable or natural ones. This became an issue when we trained our model to maximize the ROUGE score with reinforcement learning alone. We observed that our models with the highest ROUGE scores also generated barely-readable summaries.
 
 ![Salesforce ROUGE performance](/public/rl-hard/salesforce_rouge.png)
 {: .centered }
 
-The final model used is the model trained with both supervised and reinforcement learning,
-even though it's ROUGE score is smaller.
+Here is an example summary.
+
+> Button was denied his 100th race for McLaren after an ERS prevented him from making it to the start-line. It capped a miserable weekend for the Briton.  Button has out-qualified.  Finished ahead of Nico Rosberg at Bahrain. Lewis Hamilton has. In 11 races. . The race. To lead 2,000 laps. . In. . . And.
+
+[Paulus et al, 2017](https://arxiv.org/abs/1705.04304)
+{: .centered }
+
 Again, if your reward function doesn't reflect something you care about,
 there's no guarantee the learned model will care about it either.
 
-Here's another fun example. In
-[this paper from DeepMind](https://arxiv.org/abs/1704.03073),
-the authors use a distributed version of DDPG to learn a grasping policy. The
-goal is to grasp the red block, and stack it on top of the blue block. For the
-initial lifting motion, reward is given based on how high the red block is.
+Here's another fun example. This is [Popov et al, 2017](https://arxiv.org/abs/1704.03073),
+sometimes known as "the Lego stacking paper".
+The authors use a distributed version of DDPG to learn a grasping policy. The
+goal is to grasp the red block, and stack it on top of the blue block.
 
-However, importantly, the reward is defined by the z-coordinate of the
+Secondly, it still has some failure cases.
+For the initial lifting motion, reward is given based on how high the red block
+is. This is defined by the z-coordinate of the
 bottom face of the block. One of the failure modes was that the policy learned
 to tip the red block over, instead of picking it up.
 
@@ -257,12 +283,33 @@ to tip the red block over, instead of picking it up.
 
 Now, clearly this isn't the intended solution. But RL doesn't care.
 From the perspective of reinforcement learning, it did something, and got
-rewarded for it. So it's going to keep doing that thing.
+rewarded for it. So, it's going to keep doing that thing.
 
-Anecdotally, I've heard several horror stories of trying to fight RL with
-reward functions. It's been known for a while
-that black-box optimization has a tendency to lead to weird solutions. A classic
-example is the time someone applied genetic algorithms to circuit design, and
+In theory, this all comes from improper reward shaping. When a policy isn't
+learning, you can add reward terms to try to make the behaviors you want
+more learnable.
+However, whether those shaping terms actually work or not is very up in
+the air. Learnability is very difficult to predict ahead of time, and while it's
+possible to fight RL on this front, it's an unfulfilling fight that takes
+a lot of time without teaching you very much.
+
+For reference, here is one of the reward functions from the Lego stacking
+paper.
+
+![Lego grasp reward function](/public/rl-hard/lego_reward.png)
+{: .centered }
+
+I don't know how much time was spent designing this reward, but I'm going to
+guess "a lot".
+
+Reinforcement learning can be seen as a variant of black-box optimization. In
+these black-box methods, you are given nothing about the environment. You are
+simply told that this gives +1 reward, or it doesn't, and have to learn on your
+own. And the problem is that anything that gives +1 reward is good, even if
+the +1 reward isn't coming for the right reasons.
+
+A classic non-RL example is the time someone applied genetic algorithms to
+circuit design, and
 [got a circuit where an unconnected logic gate was necessary to the final
 design](https://en.wikipedia.org/wiki/Evolvable_hardware#Introduction).
 
@@ -274,25 +321,23 @@ even though it's connected to nothing.
 [From "An Envolved Circuit, Intrinsic in Silicon, Entwined with Physics"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.50.9691&rep=rep1&type=pdf)
 {: .centered }
 
-Reinforcement learning can be seen as a variant of black-box optimization,
-and it has similar pitfalls. Anything that gives +1 reward is good, even if
-the +1 reward isn't coming for the right reasons.
+However, I've heard several anecdotes to this effect from other RL researchers.
 
-A coworker is teaching an
+* A coworker is teaching an
 agent to learn how to navigate. The episode terminates whenever the agent
 walks out of bounds. He didn't add any penalty if the episode terminates this
 way. The final policy learned to be suicidal, because negative reward was
 plentiful, positive reward was too hard to achieve, and a quick death ending
 in 0 reward was preferable to a long life that risked negative reward.
 
-A friend is training a simulated robot arm to reach towards a point
+* A friend is training a simulated robot arm to reach towards a point
 above a table. It turns out the point was defined *with respect to the table*,
 and the table wasn't anchored to anything.
 The policy learned to slam the table really hard, making the table fall
 over, which moved the target point too. The target point *just so happened*
 to fall next to the end of the arm.
 
-A researcher gives a talk about using RL to train a simulated robot hand to
+* A researcher gives a talk about using RL to train a simulated robot hand to
 pick up a hammer and hammer in a nail. Initially, the reward was defined just
 by how far the nail is pushed into the hole. Instead of
 picking up the hammer, the robot used its own limbs to punch the nail in.
@@ -301,7 +346,8 @@ the policy.
 They got the policy to pick up the hammer...but then it threw the hammer at the
 nail instead of actually using it.
 
-I admit these are all anecdotes, and I haven't seen the videos of the behavior.
+Admittedly, these are all secondhand accounts, and I haven't seen videos of
+any of these behaviors.
 However, none of it sounds implausible to me.
 I've been burned by RL too many times to believe otherwise.
 
@@ -381,28 +427,30 @@ In this run, the initial random weights tended to output highly positive or
 highly negative action outputs. This makes most of the actions output the
 maximum or minimum acceleration possible. It's really easy to spin super fast:
 just output high magnitude actions. Once the robot gets going, it's hard
-to deviate from this policy in a meaningful way - you have to take several
-exploration steps to stop the rampant spinning first. It's certainly
-learnable, but in this run, it didn't happen.
+to deviate from this policy in a meaningful way - to deviate, you have to take
+several exploration steps to stop the rampant spinning. It's certainly
+possible, but in this run, it didn't happen.
 
-In other words, it's another case of the classic exploration-exploitation problem that has dogged
+These are both cases of the classic exploration-exploitation problem that has dogged
 reinforcement learning since time immemeorial.
 Your data comes from your current policy. If your current policy explores too
 much you get junk data and learn nothing. Exploit too much and you burn-in
 behaviors that aren't optimal.
 
-There are several intuitively pleasing ideas for addressing this, and many of
-them have been attempted recently - intrinsic motivation, curiosity-driven
-exploration, count-based exploration, and so forth. However, none of these have
-worked consistently for all environments,
-and I'm skeptical a similar solution will be figured out anytime soon. The
+There are several intuitively pleasing ideas for addressing this - intrinsic
+motivation, curiosity-driven exploration, count-based exploration, and so forth.
+Many of these approaches date back to the 1980s or earlier, and several of them
+have been attempted recently with deep learning models.
+However, as far as I know, none of the recent results have worked consistently
+for all environments.
+I'm skeptical such a silver bullet will be figured out anytime soon. The
 problem is really, really, really, really, really hard. Exploration-exploitation
 was first studied in multi-armed bandits, and to quote the
 [Wikipedia article](https://en.wikipedia.org/wiki/Multi-armed_bandit),
 
 > Originally considered by Allied scientists in World War II, it proved so intractable that, according to Peter Whittle, the problem was proposed to be dropped over Germany so that German scientists could also waste their time on it.
 
-(Ref: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.57.1916&rep=rep1&type=pdf)
+(Reference: [Q-Learning for Bandit Problems, Duff 1995](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.57.1916&rep=rep1&type=pdf))
 
 I've taken to imagining reinforcement learning as a demon that's
 deliberately misinterpreting your reward and actively searching for local optima.
@@ -419,25 +467,29 @@ well in an environment, you're free to overfit like crazy. The downside is that
 if you want to generalize to any other environment, you're going to overfit like
 crazy.
 
-DQN can solve a lot of the Atari games, but there's little expectation
-that an agent trained on one Atari game will be a good initialization for
-training on another Atari game. In contrast, if you're doing image classification,
+DQN can solve a lot of the Atari games, but it does so by focusing all of
+learning on a single goal - getting really good at one game. The final model
+isn't expected to generalize to other games.
+The model isn't even expected to be a good initialization for a new Atari
+game. In contrast, if you're doing image classification,
 pretrained features from a model trained on ImageNet should be one of the
 first things you try, because they transfer really well. RL doesn't have
 an equivalent "ImageNet for control" yet. (OpenAI Universe tried to solve
 this, but from what I heard, it's just too hard to solve anything reliably
 in it, due to the asychronous implementation.)
 
-This is most obvious in multiagent environments.
-In [this work](https://arxiv.org/abs/1711.02301), we studied a toy 2-player
+This is most obvious in multiagent environments. An example is
+[Raghu et al, 2017](https://arxiv.org/abs/1711.02301). (Disclaimer: I worked
+on this paper.) We studied a toy 2-player
 game where there's a closed-form analytic solution for optimal play.
-In one of our first experiments, we freeze player 1's behavior, then trained
+In one of our first experiments, we freezed player 1's behavior, then trained
 player 2 with RL. By doing this, you can treat player 1's actions as part
 of the environment. We trained player 2 against the optimal player 1, and
 although RL can learn good strategies, we found it failed to generalize
-to non-optimal players.
+to non-optimal players. Our theory was that the data distribution wasn't
+rich enough.
 
-A [DeepMind paper](https://arxiv.org/abs/1711.00832) from NIPS showed a
+[Lanctot et al, NIPS 2017](https://arxiv.org/abs/1711.00832) showed a
 similar result. Here, there are two agents
 playing laser tag. The agents are trained with multiagent reinforcement
 learning. To test generalization, they run the training with 5 random
@@ -709,6 +761,8 @@ will be strong.
 2000 trained networks to learn a better one, compared to the millions of examples
 needed in other environments.
 
+(Add a note about "optimization through differentiation"?)
+
 The broader point I want to get across is this: many things have to go right
 for reinforcement learning to be a plausible solution, and even then, it's
 not a free ride to make that solution happen. Perhaps in the future, RL will
@@ -717,6 +771,8 @@ be robust enough to be plug-and-play. But for now, it's not there.
 
 Looking to The Future
 ===============================================================================
+
+(Mention transfer learning here! UVFAs, etc.)
 
 There's an old saying - every researcher learns how to hate their area of
 study. The trick is that researchers will press on despite this, because they
@@ -748,14 +804,18 @@ very little information about what thing help you. It's possible we can either h
 positive rewards (Hindsight Experience Replay), define auxiliary tasks (UNREAL),
 or bootstrap with self-supervised learning to build a good enough world model.
 
-**Reward functions could be learnable:** There's preliminary progress showing
-reward functions can be learned. (Learning from Human Preferences, Guided Cost
-Learning, Time-Contrastive Neural Networks, imitation learning and inverse RL
-in general). The human preferences paper in particular found that for some
-tasks, a reward implicitly defined by human reward outperformed existing reward
-defitions, because humans did a better job classifying partial progress.
-It's possible this could let use sidestep many of the difficulties that come
-from explicit reward defintion.
+**Reward functions could be learnable:** There's been a lot of work in
+imitation learning and inverse RL to have reward functions be learned implicitly
+from demonstrations of good behavior. Working along this axis
+could let use sidestep many of the difficulties that come from explicit reward
+defintion. There are several recent papers to this effect: Learning from Human Preferences, Guided Cost
+Learning, Time-Contrastive Neural Networks, (that Berkeley paper from the RL
+symposium.)
+The human preferences paper in particular found that for some
+tasks, a reward implicitly defined by human reward outperformed the
+existing reward definition, because humans ratings were better for
+encouraging partial progress that wasn't covered in the hardcoded reward.
+(ELABORATE BETTER, MENTIOIN TAMER?)
 
 **Priors from metalearning could speed up learning elsewhere:**
 RL algorithms are designed to apply to any environment that's an MDP. However,
