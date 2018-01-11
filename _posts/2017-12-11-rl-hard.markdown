@@ -761,7 +761,7 @@ accuracy from 70% to 71%, RL will still pick up on this. Additionally, there's
 evidence that hyperparameters in deep learning are close to
 linearly independent. (This was empirically shown in [Hyperparameter
 Optimization: A Spectral Approach (Hazan et al, 2017)](https://arxiv.org/abs/1706.00764) - a summary by me is
-[here]({% post_url 2017-06-27-hyperparam-spectral %}) if interested.
+[here]({% post_url 2017-06-27-hyperparam-spectral %}) if interested.)
 NAS isn't exactly tuning hyperparameters, but it seems
 reasonable that neural net design decisions are also similar. This is good
 news for learning because the correlations between decision and performance
