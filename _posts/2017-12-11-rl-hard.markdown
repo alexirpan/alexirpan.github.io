@@ -43,12 +43,14 @@ My goal isn't to claim that RL is useless, or to discourage people from joining
 the field. I just want people to know what they're getting into, so that when
 they do nothing for a month, they know it isn't their fault.
 
-(A final aside: many of the following are problems in not just deep RL, but
-RL in general. However, I place special emphasis on deep RL because my
-first-hand experience is biased towards neural net approaches.
-The hype of RL is driven by the
-promise of applying RL to large, complex environments where good function
-approximation is necessary. It is that hype that needs to be addressed.)
+(A final note: in the rest of this post, I use RL and deep RL interchangeably.
+I'd like to clarify that I am criticizing just deep RL in particular. These
+observations are based on papers and personal observations from the last 5 years,
+almost all of which use deep neural nets. The criticisms may apply to linear
+RL or tabular RL, but I'm not confident enough to claim they generalize.
+The hype of RL is driven by the promise of applying RL to large, complex
+environments where good function approximation is necessary. It is that hype
+in particular that needs to be addressed.)
 
 
 Reinforcement Learning Can Be Horribly Sample Inefficient
@@ -65,7 +67,8 @@ know how many frames a state of the art DQN needs to reach human performance?
 The answer depends on the game, but let's take a look at a recent Deepmind
 paper, [Rainbow DQN (Hessel et al, 2017)](https://arxiv.org/abs/1710.02298).
 This paper is the combination
-of the several incremental advances made to DQN in the past 5 years.
+of the several incremental advances made to DQN in the past 5 years. It exceeds
+human-level performance on over 40 of the 57 Atari games attempted.
 The results come in this handy chart.
 
 ![Figure from Rainbow DQN](/public/rl-hard/rainbow_dqn.png)
@@ -626,8 +629,7 @@ is enough to lead to these kinds of results, imagine how much an actual
 difference in the code could make.
 
 Luckily, we don't have to imagine, because this was inspected by
-the recent [Deep Reinforcement Learning That Matters](https://arxiv.org/abs/1709.06560)
-paper (Henderson et al, AAAI 2018). It makes a bunch of points that I think were well-known in the RL
+a recent paper,  [Deep Reinforcement Learning That Matters (Henderson et al, AAAI 2018)](https://arxiv.org/abs/1709.06560). It makes a bunch of points that I think were well-known in the RL
 community, but which weren't packaged together until now. Among its conclusions
 are:
 
@@ -650,21 +652,25 @@ But What About All The Great Things Deep RL Has Done For Us?
 ==================================================================
 
 Deep reinforcement learning has certainly done some very cool things. DQN is
-old news now, but was absolutely *nuts* at the time. AlphaGo and AlphaZero
+old news now, but was absolutely *nuts* at the time. A single model was able to
+learn directly from raw pixels, without tuning for each game individually.
+
+AlphaGo and AlphaZero
 continue to be very impressive achievements.
 However, outside of these game playing successes,
 deep RL hasn't done much that has practical real world value.
 
-I tried to think of a real-world, productionized use of deep RL, and I could
+I tried to think of real-world, productionized uses of deep RL, and I could
 only think of two things: [the project to reduce the power used by
 Google's data centers](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/),
-and [the project to automatically design neural net architectures](https://research.googleblog.com/2017/11/automl-for-large-scale-image.html).
-Jack Clark (Strategy & Comms Director at OpenAI)
-[tweeted a request for more examples](https://twitter.com/jackclarkSF/status/919584404472602624),
+and [the project to automatically design neural net architectures](https://research.googleblog.com/2017/11/automl-for-large-scale-image.html). A friend reminded me of a 3rd project: [optimizing
+device placement for large Tensorflow graphs (Mirhoseini et al, ICML 2017)](https://arxiv.org/abs/1706.04972).
+Jack Clark from OpenAI
+[tweeted a request for similar examples](https://twitter.com/jackclarkSF/status/919584404472602624),
 and I just didn't find that much in the replies.
 
-I assume finance companies have tried using RL, but so far there's nothing
-definitive about it. Of course, finance companies have good reasons to be cagey
+I assume finance companies have tried using RL, but so far there's no definitive
+proof. Of course, finance companies have reasons to be cagey
 about how they play the market, so perhaps the evidence there is never going to
 be strong.
 
@@ -747,11 +753,10 @@ by either player), and health (triggers after every attack or skill that
 hits a target.) These reward signals
 come quick and often. For the SSBM bot, reward can be given for damage dealt
 and taken, which gives signal for every attack that successfully lands. The shorter
-the time dependency between action and consequence, the easier it is for
+the delay between action and consequence, the easier it is for
 reinforcement learning to figure out a path to high reward.
 
-    As a case example of this, let's examine the original neural architecture
-search paper, from ICLR 2016. The reward is validation accuracy, which is a
+    As a case example of this, let's examine the [original neural architecture search paper (Zoph et al, ICLR 2017)](https://openreview.net/forum?id=r1Ue8Hcxg). The reward is validation accuracy, which is a
 very rich reward signal - if a neural net design decision only increases
 accuracy from 70% to 71%, RL will still pick up on this. Additionally, there's
 evidence that hyperparameters in deep learning are close to
@@ -764,10 +769,8 @@ news for learning because the correlations between decision and performance
 will be strong.
 
     The combination of these two helps me understand why it "only" takes about
-2000 trained networks to learn a better one, compared to the millions of examples
+12800 trained networks to learn a better one, compared to the millions of examples
 needed in other environments.
-
-(Add a note about "optimization through differentiation"?)
 
 The broader point I want to get across is this: many things have to go right
 for reinforcement learning to be a plausible solution, and even then, it's
@@ -808,56 +811,112 @@ problems.
 **Add more learning signal:** Sparse rewards are hard to learn because you get
 very little information about what thing help you. It's possible we can either hallucinate
 positive rewards ([Hindsight Experience Replay, Andrychowicz et al, NIPS 2017](https://arxiv.org/abs/1707.01495)), define auxiliary tasks ([UNREAL, Jaderberg et al, NIPS 2016](https://arxiv.org/abs/1611.05397)),
-or bootstrap with self-supervised learning to build a good enough world model.
+or bootstrap with self-supervised learning to build good world model. Adding
+more cherries to the cake, so to speak.
 
-**Reward functions could be learnable:** There's been a lot of work in
-imitation learning and inverse RL to have reward functions be learned implicitly
-from demonstrations of good behavior. Working along this axis
-could let use sidestep many of the difficulties that come from explicit reward
-defintion. There are several recent papers to this effect: Learning from Human Preferences, Guided Cost
-Learning, Time-Contrastive Neural Networks, (that Berkeley paper from the RL
-symposium.)
-The human preferences paper in particular found that for some
-tasks, a reward implicitly defined by human reward outperformed the
-existing reward definition, because humans ratings were better for
-encouraging partial progress that wasn't covered in the hardcoded reward.
-(ELABORATE BETTER, MENTIOIN TAMER?)
+**Model-based learning unlocks sample efficiency:** Here's how I describe
+model-based RL: "EVeryone wants to do it, not many people know how." In principle,
+a good model fixes a bunch of problems. Good world models transfer well to new tasks,
+and rollouts of the world model let you imagine new experience. From what I've
+seen, model-based approaches use fewer samples as well.
+
+    Or to be more precise, they use fewer samples when they work. Learning good models
+is hard. My impression is that low-dimensional state models work sometimes, and image
+models are usually too hard. But, if this gets easier, some interesting things
+could happen.
+
+Papers of interest from the Berkeley robotics labs: [Guided Policy Search (Levine et al, ICML 2013)](https://graphics.stanford.edu/projects/gpspaper/gps_full.pdf), [Neural Network Dynamics for Model-Based Deep RL with Model-Free Fine-Tuning (Nagabandi et al, 2017](https://people.eecs.berkeley.edu/~nagaban2/resources/paper_mbmf.pdf),
+[Deep Spatial Autoencoders for Visuomotor Learning (Finn et al, ICRA 2016)](http://rll.berkeley.edu/dsae/dsae.pdf),
+[Self-Supervised Visual Planning with Temporal Skip Connections (Ebert et al, CoRL 2017)](https://arxiv.org/abs/1710.05268), [Combining Model-Based and Model-Free Updates for Trajectory-Centric Reinforcement Learning (Chebotar et al, ICML 2017)](https://arxiv.org/abs/1703.03078).
+
+
+**Reward functions could be learnable:** The promise of ML is that we can use
+data to learn things that are better than human design. If reward function design
+is so hard, Why not apply this to learn better reward functions? Imitation
+learning and inverse reinforcement learning are both rich fields that have
+shown reward functions can be implicitly
+defined by human demonstrations or human ratings.
+
+For recent work scaling these ideas to deep learning, see [Guided Cost Learning (Finn et al, ICML 2016)](https://arxiv.org/abs/1603.00448), [Time-Constrastive Networks (Sermanet et al, 2017)](https://arxiv.org/abs/1704.06888),
+and [Learning From Human Preferences (Christiano et al, NIPS 2017)](https://blog.openai.com/deep-reinforcement-learning-from-human-preferences/). The Human Preferences paper in particular showed
+that the learned reward was actually better-shaped for learning than the baseline
+reward used for that task, which is an interesting practical finding.
+
+For recent work that doesn't use deep learning, see [Inverse Reward Design (Hadfield-Menell et al, NIPS 2017)](https://arxiv.org/abs/1711.02827) and [Learning Robot Objectives from Physical Human Interaction (Bajcsy et al, CoRL 2017)](http://proceedings.mlr.press/v78/bajcsy17a/bajcsy17a.pdf).
+
+
+**Transfer learning saves the day:** The promise of transfer learning is that
+you can leverage knowledge from previous tasks to speed up learning of new ones.
+I think this is absolutely the future, when task learning is robust enough to
+solve several disparate tasks. It's hard to do transfer learning if you can't
+learn at all, and given task A and task B, it can be very hard to predict
+whether A transfers to B. In my experience, it's either super obvious, or super
+unclear, and even the super obvious cases aren't trivial to get working.
+
+[Universal Value Function Approximators (Schaul et al, ICML 2015)](http://proceedings.mlr.press/v37/schaul15.pdf),
+[Distral (Whye Teh et al, NIPS 2017)](https://arxiv.org/abs/1707.04175),
+and [Overcoming catastrophic forgetting (Kirkpatrick et al, PNAS 2017)](https://deepmind.com/blog/enabling-continual-learning-in-neural-networks/) are recent works in this direction.
+For older work, consider reading [Horde (Sutton et al, AAMAS 2011)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.297.6455&rep=rep1&type=pdf).
+
+Robotics
+in particular has had lots of progress in sim-to-real transfer (transfer learning
+between a simulated version of a task and the real task). See [Domain Randomization (Tobin et al, IROS 2017)](https://blog.openai.com/spam-detection-in-the-physical-world/), [Sim-to-Real Robot
+Learning with Progressive Nets (Rusu et al, CoRL 2017)](https://arxiv.org/abs/1610.04286),
+and
+[GraspGAN (Bousmalis et al, 2017)](https://research.googleblog.com/2017/10/closing-simulation-to-reality-gap-for.html). (Disclaimer: I worked on GraspGAN.)
+
 
 **Priors from metalearning could speed up learning elsewhere:**
 RL algorithms are designed to apply to any environment that's an MDP. However,
 we don't need to solve arbitrary environments, we just need to solve
 environments in the real-world. In principle, we could use metalearning to learn
 a real-world prior that lets us quickly learn new real-world tasks, at the cost
-of general learning ability. (Pieter Abbeel likes to mention this argument a lot
-in his talks.) For example, if I wanted to use RL to do navigating in
-warehouses, I'd look into using metalearning to learn a good navigation prior,
-and then finetune it for the specific warehouse the robot is deployed in,
-since the finetuning should work way faster.
+of general learning ability.
+
+I credit Pieter Abbeel for first introducing me to this argument. He mentions
+it in a lot of his talks, and I agree it makes sense.
+For example, if I wanted to use RL to do navigating in warehouses, and wanted to
+arbitrary warehouses, I'd look into using metalearning to learn a good
+navigation prior, and then finetune it for the specific warehouse the robot is
+deployed in,
+
+A summary of recent work can be found in [this post](http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/)
+from BAIR (Berkeley AI Research).
+
 
 **Harder environments could paradoxably be easier:** One of the big lessons
 from the DeepMind parkour paper is that if you make your task very difficult
-by adding several variations, you can sometimes actually make the learning
+by adding several task variations, you can actually make the learning
 easier, because the policy cannot overfit to any one setting without losing
 performance on all the other settings. We've seen a similar thing in the
 domain randomization papers, and even back to ImageNet: models trained on
 ImageNet will generalize way better than ones trained on CIFAR-100. An
-analogous "ImageNet for control" could fix this. (OpenAI tried to spur this
-with Universe, but it didn't get adopted. From what I heard, the environments
-were just too hard to solve. However, the core premise is sound and I'd like
-to see another attempt when RL is more performant.)
+analogous "ImageNet for control" could make RL start working.
+(OpenAI tried to spur this with Universe, but it didn't get adopted. From what I
+heard, the environments were just too hard to solve. However, the core premise
+is sound and I'd like to see another attempt when RL is more performant.)
 
-Finally, although it's unsatisfying from a research perspective, the issues
-of RL may not matter for practical purposes. Suppose you trained 3 ad-serving
-models based on clicks logged in the United States, using 3 random seeds. In
-live A/B testing, one gives 2% less revenue, one performs the
+Environment wise, there are a lot of options. [OpenAI Gym](https://github.com/openai/gym)
+easily has the most traction, but there's also the [Arcade Learning Environment](https://github.com/mgbellemare/Arcade-Learning-Environment), [Roboschool](https://github.com/openai/roboschool),
+[DeepMind Lab](https://github.com/deepmind/lab), the [DeepMind Control Suite](https://github.com/deepmind/dm_control), and [ELF](https://github.com/facebookresearch/ELF).
+
+
+Finally, although it's unsatisfying from a research
+perspective, the issues of RL may not matter for practical purposes. Suppose
+a finance company is using RL. They train a trading agent based on trades in
+the US stock market, using 3 random seeds.
+In live A/B testing, one gives 2% less revenue, one performs the
 same, and one gives 2% more revenue. In that hypothetical, reproducibility
 doesn't matter - you deploy the model with 2% more revenue and celebrate.
-Similarly, it doesn't matter that the ad-serving model may only perform well
+Similarly, it doesn't matter that the trading agent may only perform well
 in the United States - if it generalizes poorly to the worldwide market,
-just don't deploy it there.
+just don't deploy it there. There is a large gap between doing something
+extraordinary and making that extraordinary success reproducible, and maybe it's
+worth focusing on the former first.
+
 
 Overall, although I'm pessimistic about where reinforcement learning *is*, I
-still believe in where reinforcement learning *could be*. So, the next time
-someone asks me whether RL can solve their problem? I'll tell them no, it
-can't. But I'll also tell them to ask me again a few years from now. By then,
-maybe it can.
+still believe in where reinforcement learning *could be*. That being said,
+the next time someone asks me whether RL can solve their problem, I'm still
+going to tell them that no, it can't. But I'll also tell them to ask me again in
+a few years. By then, maybe it can.
