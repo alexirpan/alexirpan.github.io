@@ -742,10 +742,9 @@ first and generalize it later.
 
 * **There is a way to introduce self-play into learning.** This is a component
 of AlphaGo, AlphaZero, the Dota 2 Shadow Fiend bot, and the SSBM Falcon bot. I
-should note that by self-play, *I mean exactly the setting where the game is
-competitive, and both players can be controlled by the same agent.* The
-combination of both seems to be important to get stable, well-performing
-behavior.
+should note that by self-play, I mean exactly the setting where the game is
+competitive, and both players can be controlled by the same agent. So far,
+that setting seems to have the most stable and well-performing behavior.
 
 * **The reward signal is rich, and the consequences of actions is immediate.**
 In Dota 2, reward can come from last hits (triggers after every monster kill
@@ -780,8 +779,6 @@ be robust enough to be plug-and-play. But for now, it's not there.
 
 Looking to The Future
 ===============================================================================
-
-(Mention transfer learning here! UVFAs, etc.)
 
 There's an old saying - every researcher learns how to hate their area of
 study. The trick is that researchers will press on despite this, because they
@@ -820,8 +817,8 @@ a good model fixes a bunch of problems. Good world models transfer well to new t
 and rollouts of the world model let you imagine new experience. From what I've
 seen, model-based approaches use fewer samples as well.
 
-    Or to be more precise, they use fewer samples when they work. Learning good models
-is hard. My impression is that low-dimensional state models work sometimes, and image
+The problem is that learning good models is hard. My impression is that
+low-dimensional state models work sometimes, and image
 models are usually too hard. But, if this gets easier, some interesting things
 could happen.
 
@@ -914,6 +911,9 @@ just don't deploy it there. There is a large gap between doing something
 extraordinary and making that extraordinary success reproducible, and maybe it's
 worth focusing on the former first.
 
+
+Where We Are Now
+===============================================================================
 
 Overall, although I'm pessimistic about where reinforcement learning *is*, I
 still believe in where reinforcement learning *could be*. That being said,
