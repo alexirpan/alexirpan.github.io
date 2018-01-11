@@ -451,6 +451,7 @@ was first studied in multi-armed bandits, and to quote the
 > Originally considered by Allied scientists in World War II, it proved so intractable that, according to Peter Whittle, the problem was proposed to be dropped over Germany so that German scientists could also waste their time on it.
 
 (Reference: [Q-Learning for Bandit Problems, Duff 1995](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.57.1916&rep=rep1&type=pdf))
+{: .centered }
 
 I've taken to imagining reinforcement learning as a demon that's
 deliberately misinterpreting your reward and actively searching for local optima.
@@ -519,8 +520,13 @@ that the only difference between these videos is the random seed. Same learning
 algorithm, same hyperparameters, and the divergence is purely from randomness
 in initial conditions.
 
-Self-play doesn't seem to have this problem. Somehow, controlling both players
-with the same neural net gets around this problem.
+That being said, there are some neat recents from competitive self-play environments
+that seem to contradict this. [OpenAI has a nice blog post of some of their work in this space](https://blog.openai.com/competitive-self-play/). Self-play is also an important part of both
+AlphaGo and AlphaZero. My intuition is that if your agents are learning at
+the same pace, they can continually challenge each other and speed up each other's
+learning, but if one of them learns much faster, it exploits the weaker player
+too much and overfits. This is easiest to get in symmetric self-play, and gets
+harder when you try to relax to general multiagent settings.
 
 
 Even Ignoring Generalization Issues, The Final Results Can be Unstable and Hard to Reproduce
@@ -546,8 +552,8 @@ going for me: some familiarity with Theano (which transferred to TensorFlow
 well), some deep RL experience, and the first author was literally sitting
 next to me because he was interning at Brain.
 
-It ended up taking me more like 6 weeks to reproduce the results I cared about,
-because of a bunch of subtle software bugs that took forever to track down.
+It ended up taking me 6 weeks to reproduce results, thanks to
+a bunch of subtle software bugs that took forever to track down.
 The question is, why did this take so long?
 
 To answer this, let's consider the simplest continuous control task in
@@ -589,7 +595,7 @@ or if reinforcement learning is just messing with me. Maybe it's just Tuesday.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GlhOUyy4wbs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
-Here's a plot from the [Variational Information Maximizing Exploration paper](https://arxiv.org/abs/1605.09674).
+Here's a plot from the [Variational Information Maximizing Exploration paper (Houthooft et al, NIPS 2016)](https://arxiv.org/abs/1605.09674).
 The environment is HalfCheetah. The reward is modified to be sparser, but the
 details aren't too important.
 The y-axis is episode reward, the x-axis is number of timesteps, and the
@@ -621,7 +627,7 @@ difference in the code could make.
 
 Luckily, we don't have to imagine, because this was inspected by
 the recent [Deep Reinforcement Learning That Matters](https://arxiv.org/abs/1709.06560)
-paper. It makes a bunch of points that I think were well-known in the RL
+paper (Henderson et al, AAAI 2018). It makes a bunch of points that I think were well-known in the RL
 community, but which weren't packaged together until now. Among its conclusions
 are:
 
@@ -690,7 +696,7 @@ simplified duel setting.
 pro players at 1v1 Falcon dittos.
 
 Two machine learning systems,
-[Libratus](https://www.ijcai.org/proceedings/2017/0772.pdf) and [DeepStack](https://arxiv.org/abs/1701.01724),
+[Libratus (Brown et al, IJCAI 2017)](https://www.ijcai.org/proceedings/2017/0772.pdf) and [DeepStack (Moravčík et al, 2017)](https://arxiv.org/abs/1701.01724),
 recently beat pro players at no-limit heads up Texas Hold'Em.
 These are both very cool, but by my understanding, neither uses reinforcement
 learning. They instead use counterfactual regret minimization and clever
@@ -705,7 +711,7 @@ It should be clear why this helps. The more data you have, the easier the learni
 problem is. This applies to
 Atari, Go, Chess, Shogi, and the simulated environments for the parkour bot.
 It likely applies to the power center project too, because
-[in prior work](https://googleblog.blogspot.com/2014/05/better-data-centers-through-machine.html),
+[in prior work (Gao, 2014)](https://googleblog.blogspot.com/2014/05/better-data-centers-through-machine.html),
 it was shown that neural nets can predict energy efficiency with high
 accuracy. That's exactly the kind of simulated model you'd want for training an
 RL system.
@@ -749,8 +755,8 @@ search paper, from ICLR 2016. The reward is validation accuracy, which is a
 very rich reward signal - if a neural net design decision only increases
 accuracy from 70% to 71%, RL will still pick up on this. Additionally, there's
 evidence that hyperparameters in deep learning are close to
-linearly independent. (This was empirically shown in "Hyperparameter
-Optimization: A Spectral Approach" - a summary by me is
+linearly independent. (This was empirically shown in [Hyperparameter
+Optimization: A Spectral Approach (Hazan et al, 2017)](https://arxiv.org/abs/1706.00764) - a summary by me is
 [here]({% post_url 2017-06-27-hyperparam-spectral %}) if interested.
 NAS isn't exactly tuning hyperparameters, but it seems
 reasonable that neural net design decisions are also similar. This is good
@@ -801,7 +807,7 @@ problems.
 
 **Add more learning signal:** Sparse rewards are hard to learn because you get
 very little information about what thing help you. It's possible we can either hallucinate
-positive rewards (Hindsight Experience Replay), define auxiliary tasks (UNREAL),
+positive rewards ([Hindsight Experience Replay, Andrychowicz et al, NIPS 2017](https://arxiv.org/abs/1707.01495)), define auxiliary tasks ([UNREAL, Jaderberg et al, NIPS 2016](https://arxiv.org/abs/1611.05397)),
 or bootstrap with self-supervised learning to build a good enough world model.
 
 **Reward functions could be learnable:** There's been a lot of work in
