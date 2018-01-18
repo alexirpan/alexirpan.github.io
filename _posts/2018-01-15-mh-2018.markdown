@@ -1,0 +1,221 @@
+---
+layout: post
+title:  "MIT Mystery Hunt 2018"
+date:   2018-01-15 02:00:00 -0800
+---
+
+*I will edit in puzzle links later.*
+
+After going in-person for the past 2 Hunts, I decided not to fly-in for
+the 2018 Hunt. The short explanation is that I procrastinate on flights, and at the time I
+needed to make a decision, work was very, very busy. There were several Code Red,
+"nothing is possible unless we implement this" issues.
+
+The issue wasn't that I didn't have time. It was that I'd have to take days off of work
+on short notice. If I had planned it ahead of time, and made sure people were aware I would
+be out on certain days for travel and Hunt, I woud have flown in. Lesson learned:
+hobbies don't just fall into your life, you make time for your hobbies.
+
+I hunted with ✈✈✈ Galactic Trendsetters ✈✈✈ again. I suppose at this point, it's
+my home team, thanks to connections from the high school math contest network.
+
+If you want to avoid spoilers, you should stop reading now.
+
+\* \* \*
+{: .centered }
+
+Let's start with broad, overarching feelins about Hunt.
+
+I think Hunt was pretty good! I was worried that a team would finish somewhat
+quickly, given the warning that Hunt would be shorter than previous years, and
+that it would be best if your team wasn't too large. My expectation was that
+it would be fewer puzzles, team sizes wouldn't change, the winning team would
+solve Hunt pretty quickly, and then the rest of us would get there along the way.
+The initial Emotions round felt like it was moving along that path. Then, the
+Islands happend, and suddenly it was clear that this was still MIT Mystery Hunt
+and it was still going to be A Journey.
+
+Turns out I had forgotten that number of puzzles isn't the only metric that
+matters in Hunt. Unlock structure matters too. If it's harder
+to unlock a bunch of puzzles, it's harder to parallelize solving, which bottlenecks
+big teams more. The easy puzzles get solved instantly, leaving just the hard
+ones.
+
+On the flip side, if it's too easy to unlock a ton of puzzles, then small teams
+can get overwhelmed, and big teams just steamroll everything. It's all a
+bunch of trade-offs.
+
+Galactic has 60 people this year, and it definitely felt like we were gated on
+unlocks. This was especially strong
+in the Games round, which was our first island. The unlock structure was linear,
+until you unlocked a puzzle close to the center. It quickly became clear that
+if we got stuck on any single puzzle, it would potentially block unlocks for
+a ton of other puzzles. And in fact, that's what happened for us: both
+The Year's Hardest Crossword and Sports Radio were stuck for a while, so we
+had to rely entirely on solving the linear puzzles up to All the Right Angles
+before it felt like we were out of danger. In general, I would have liked to see
+more redundancy in the unlocks for that round.
+
+I have basically zero complaints about the rest of the Hunt. I really like the
+art aesthetic of the Pokemon round, especially the way it contrasted with the
+look of the rest of the Hunt. And all the puzzles felt very fair to me.
+
+On to specific stories!
+
+\* \* \*
+{: .centered }
+
+In the days leading up to Hunt, I made a [bingo generator](https://www.alexirpan.com/mystery-hunt-bingo/).
+It seemed like a cute idea, and the site was entirely static, which made it easy
+to piggyback off Github pages. Unfortunately, I didn't get a Bingo. I needed
+"Puzzle is unsolved by the end of Hunt" to get there, and we self-torpedoed my
+chances by using our spare Buzzy Bucks to buy all missing puzzles.
+
+![B-I-N-G-O](/public/mh-2018/bingo.png)
+{: .centered }
+
+Most recent Hunts have a free answer system that lets you sweep up unsolved
+puzzles. I'm not sure a zero-solve puzzle is even possible anymore.
+
+This was my 6th Mystery Hunt, and I continue to feel like I'm bad at puzzles.
+I historically have a bad track record at getting a-has. Here's my main
+contributions every hunt.
+
+* Telling people we should read the flavor text.
+* Telling people we should read the puzzle title.
+* Trying to brute-force puzzles by matching partials to whatever
+word lists I have, and failing.
+* Counting things.
+* Looking at metapuzzles early, on the off chance they're easy to solve
+with partial info.
+* Getting really anal about organizing existing data and explaining current
+puzzle theories.
+
+The way this works out is that I basically never get to do "hero-solves",
+because other people hero-solve faster than I do.
+I feel more like the grease that gets all the other cogs to keep spinning.
+But, who knows, maybe I underestimate my solving skills.
+
+I spent my Friday morning to afternoon trying to do work while spectating
+our progress. This was a terrible idea, because I didn't do much work, and
+also didn't get to work on puzzles.
+I ended up skipping all of the Emotions round.
+The extent of my contribution was opening the metas, looking at partial
+progress, and thinking, "oh yeah that's definitely right." For the
+**Fear** meta in particular, several people on the team had gotten suspicious
+when the Health & Safety Quiz was mailed to everybody, and got *very*
+suspicious when HQ sent a deliberately vague reply as to whether it was a
+puzzle or not. So when we saw Fear's flavor text, we got the idea pretty
+quickly.
+
+Our unlock order was Games, Sci-Fi, Pokemon, then Hacking. The first two were
+by popular vote. By the time we unlocked the third island, it was 1:30 AM on
+Saturday. Local people didn't want to do on-campus puzzles at night, and remote
+people didn't want to unlock on-campus puzzles because they wanted to have puzzles
+to work on. This ended up backfiring a bit, because on Saturday night, the
+only puzzles open were longstanding Games puzzles and physical puzzles. At least
+it gave me an excuse to go to bed.
+
+The first puzzle I really looked at was **Shift**, which was cute. I thought
+"blue shift, red shift", but didn't think much of it. Someone else figured out
+that "gamma" should be shifted to "delta", I realized "blue shift, red
+shift" was actually right, and we cleaned it up from there.
+
+I spent a bunch of time on **All The Right Angles**. One nice thing about
+crossword-like puzzles is that you can
+contribute even if you only figure out a few clues. We got the billiards
+and substituion gimmick pretty quickly, but had trouble getting SIXTUS to
+fit in our grid. Eventually, someone figured out that
+"LOUIS IX isn't LOUIS 9, it's LOUI6, the cheeky bastards". After filling in the
+grid, we drew the billiard path, and someone joked we should call in EIGHT
+because the path was a figure eight. That gave people some bad flashbacks to
+[SEVEN WONDERS](http://web.mit.edu/puzzle/www/2017/puzzle/marvels_of_the_ancient_world.html)
+from last year. Luckily, the answer was not EIGHT.
+
+**Walk Across Some Dungeons 2** was fun. I was on it instantly, but I moved to
+other puzzles when I realized I was bad at Sokoban.
+
+When I saw **A Tribute: 2010-2017** get unlocked, I immediately thought,
+"oh sick, I bet this is the puzzle referencing old Hunts", and then I looked,
+and it was a puzzle referencing old Hunts. Validation! I didn't succesfully
+ID any of the old puzzles, and I didn't solve any of the segments either, but I
+tried!
+
+I contributed basically zero to the Sci-Fi round. The only thing I did was throw
+backsolve attempts at the metas now and then.
+
+In the Pokemon round, the first puzzle I worked on was The Advertiser. We
+figured out they were all TMs, identified them, and then were told it
+was a metapuzzle. We solved it with 2 answers.
+
+The first regular puzzle we solved in Pokemon was 33 RPM, so Mix Tape was the puzzle where
+we discovered the evolution gimmick, which was pretty great.
+
+![Evolution](/public/mh-2018/evolution.png)
+{: .centered }
+
+I puzzled with another remote solver, and he was just getting so mad at Mix Tape.
+It was past midnight, and we had the audio, but the quality was bad. The songs
+weren't Shazamable, which was just all kinds of pain.
+Our image pipeline was "take the spiral image" $$\rightarrow$$ "unroll into a
+rectangular image"
+$$\rightarrow$$ "turn into audio", but small errors accumulated.
+In retrospect, reading directly from the raw spiral would have been better.
+
+When **Twitch Plays Mystery Hunt** came out, I got the impression that literally
+every local solver started working on it at once. As a remote solver, I
+unfortunately didn't get to particpate, because all the coordination was getting
+done in person. I did get to see plenty of memes and copypasta.
+
+The first "intentionally left blank" puzzle we unlocked was **Lycanroc**, which
+confused us for a while. Lycanroc is literally a werewolf, so we thought we had
+to wait until night for the puzzle to change form. It was a sketchy theory,
+but we didn't have anything else. I believe the metameta structure got
+unlocked when somebody noticed the Fire transformation. Once we had that, we
+figured out all the transformations in a matter of minutes. This led to an
+amusing statistic: our best "solve" time was 6 seconds.
+
+![Kingler solver](/public/mh-2018/kingler.png)
+{: .centered }
+
+Some people on our team got very, very excited about **X Marks the Spot**. I
+didn't work on it, but as a Euclidean geometry fan, I approve.
+
+**The Scouts** was the last meta we solved in the Pokemon round. We only
+solved it after the metameta, when people working on hacking were looking for
+things to do. I made a comment about "badges" early on, but it took us a while
+to discover the puzzle titles were relevant.
+
+When I woke up on Saturday morning, I saw in the chat that **Pestered** was
+a Homestuck puzzle. I thought I missed it, but turns out it was stuck on
+extraction. I didn't figure the extraction either, and it was the final puzzle
+we bought. We got tripped up on two things. One, we were certain that we
+needed to use the DNA pairs of the trolls again, using the zodiac signs to get
+an ordering. Two, [the last page of The Tech](https://s3.amazonaws.com/thetech-production/issues/pdfs/000/009/378/original/V137_N37.pdf?1515653458)
+from the Thursday before Hunt had horoscopes that looked a lot like puzzle
+data. Turns out it was a massive, unintentional red herring. I wonder if
+HQ was confused by our GRYFFINDOR guess.
+
+The first puzzle I worked on in Hacking was **Bark Ode**. The most amusing part
+was easily the time where I had to mark a square as ? because I couldn't figure
+out if it was a dog or not. I then looked at **Voter Fraud**, but didn't do much
+for it, besides noting it was probably a voting systems puzzle.
+
+I planned to work on **Murder at the Asylum**, but some local people were solving
+it at a chalkboard, which didn't work for remote solvers.
+So, instead I
+looked at the **Scout** meta. Someone else made the key observation that
+TENDINOPATHIES was likely after a chute and overlapped with EXTEND. There was
+only one place on the grid that supported that, and with another location guess,
+we got EXOS as a partial, which was enough to solve the meta. I then worked out
+constraints on 3 missing answers, got my work checked, and backsolved
+**Murder at the Asylum** before they could forward solve it. Revenge of the
+remotes!
+
+That ended up being my final contribution to the Hunt. By the time I woke up on
+Sunday morning, we only had metas, physicals, and abandoned puzzles left. I did
+some work on drawing out the connectivity graphs for **Flee**, but that was about
+it. We did run into one red herring: BIOFUEL TORCH was a tool, BACKUP PLAN sounded
+like a punt, and EXOSKELETON was a plausible hack, which drove us to think
+about "Hack, Punt, Tool" for a bit. Somehow, despite never being an MIT student,
+I still got this reference. The fangs of MIT culture run deep...
