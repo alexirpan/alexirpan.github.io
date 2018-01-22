@@ -31,8 +31,8 @@ Now, I believe it *can* work. If I didn't believe in reinforcement learning,
 I wouldn't be interested in it.
 But there are a lot of problems in the way, many of which feel fundamentally
 difficult. Hidden behind the beautiful demos of learned agents is a
-towering garbage pile of pain, failed experiments, statistically insignificant
-results, and pure, nonsensical bullshit.
+towering garbage pile of pain, failed experiments, statistically
+insignificant results, and incredibly nonsensical behaviors.
 
 Several times, I've seen people try deep reinforcement learning for the first
 time. Without fail, something goes wrong. Without fail, the "toy problem" is
@@ -47,7 +47,8 @@ they do nothing for a month, they know it isn't their fault.
 I'd like to clarify that I am criticizing just deep RL in particular. These
 observations are based on papers and personal observations from the last 5 years,
 almost all of which use deep neural nets. The criticisms may apply to linear
-RL or tabular RL, but I'm not confident enough to claim they generalize.
+RL or tabular RL, but I'm not confident enough to claim those criticisms
+generalize.
 The hype of RL is driven by the promise of applying RL to large, complex
 environments where good function approximation is necessary. It is that hype
 in particular that needs to be addressed.)
@@ -58,7 +59,7 @@ Reinforcement Learning Can Be Horribly Sample Inefficient
 
 The most well-known benchmark for deep reinforcement learning is Atari. This is
 the environment that put DeepMind on the map. Combine Q-Learning with a
-reasonably sized neural networks, and some (but not all) of the games get
+reasonably sized neural networks, and several (but not all) of the games get
 solved to human or superhuman performance.
 
 Atari games run at 60 frames per second. On the top of your head, do you
@@ -114,6 +115,10 @@ battle, and unfortunately, most real-world settings fall under this category.
 If You Just Care About Final Performance, Many Problems are Better Solved by Other Methods
 ==============================================================================
 
+(TODO: Add a point about how you can either optimize for performance, or optimize
+for research contribution, and ideally you do both, but if you just want the
+former, RL isn't great.)
+
 Now, I like the parkour paper a lot. But, it's worth putting it in context of
 prior work.
 
@@ -166,7 +171,7 @@ working on are cool.
 Consider the company most people think of when you mention robotics:
 [Boston Dynamics](https://www.youtube.com/channel/UC7vVhkEfw4nOGp8TyDk7RcQ).
 At NIPS 2016, a leading machine learning conference, they gave a legendary
-presentation where they said they din't do machine learning.
+presentation where they said they don't do machine learning.
 If you look up research papers from the group, you can find
 [that they use time-varying LQR, QP solvers, and convex optimization](https://dspace.mit.edu/openaccess-disseminate/1721.1/110533). In other words, classical robotics stuff.
 (Personally, I'd bundle those techniques as machine learning, but that
@@ -250,16 +255,16 @@ Anyways, my grumpiness aside, there are other examples of this too. Here
 is [a blog post about text summarization, from Salesforce](https://www.salesforce.com/products/einstein/ai-research/tl-dr-reinforced-model-abstractive-summarization/). Normally, the model is
 trained with supervised learning, then evaluated with
 an automated metric called ROUGE. ROUGE isn't differentiable, but RL can
-deal with non-differentiable rewards. They tried using RL to optimize ROUGE,
-and yes, this works, but it turned out high ROUGE doesn't always give you
-good summaries.
+deal with non-differentiable rewards, so it's natural to apply RL to optimize
+ROUGE directly. This works, but high ROUGE doesn't guarantee high-quality
+summaries.
 
 > While ROUGE scores have a good correlation with human judgment in general, the summaries with the highest ROUGE aren't necessarily the most readable or natural ones. This became an issue when we trained our model to maximize the ROUGE score with reinforcement learning alone. We observed that our models with the highest ROUGE scores also generated barely-readable summaries.
 
 ![Salesforce ROUGE performance](/public/rl-hard/salesforce_rouge.png)
 {: .centered }
 
-Here is an example summary.
+Here is an example summary from a ROUGE-maximizing model.
 
 > Button was denied his 100th race for McLaren after an ERS prevented him from making it to the start-line. It capped a miserable weekend for the Briton.  Button has out-qualified.  Finished ahead of Nico Rosberg at Bahrain. Lewis Hamilton has. In 11 races. . The race. To lead 2,000 laps. . In. . . And.
 
@@ -354,7 +359,7 @@ any of these behaviors.
 However, none of it sounds implausible to me.
 I've been burned by RL too many times to believe otherwise.
 
-I know people who like to tell stories about paperclip optimizers. I get it,
+I know people who like to tell stories about [paperclip optimizers](https://en.wikipedia.org/wiki/Instrumental_convergence#Paperclip_maximizer). I get it,
 I really do. But honestly, I'm sick of hearing those stories, because they
 always speculate up some superhuman misaligned AGI to create a just-so story.
 Doing that really shouldn't be necessary, when people have to deal with
@@ -541,7 +546,8 @@ of the learning system. Often, these are picked by hand, or by random search.
 Supervised learning is stable. Fixed dataset, ground truth targets. If you
 change the hyperparamters a little bit,
 your performance won't change that much. Not all hyperparameters perform
-well, but it's relatively easy to see signs of life. These signs of life are
+well, but with all the empirical tricks discovered over the years,
+many hyperparams will show signs of life at train time. These signs of life are
 super important, because they tell you that you're on the right track, you're
 doing something reasonable, and it's worth investing more time.
 
@@ -790,7 +796,9 @@ problems, including ones where it probably shouldn't work. How else are we
 supposed to make RL better?
 
 I see no reason why deep RL couldn't work, given more time. The question is
-how it'll get there. Here are some futures I find plausible.
+how it'll get there. Here are some futures I find plausible. For the futures
+based on further research, I've provided citations to relevant papers in those
+research areas.
 
 **Local optima are good enough:** It would be very arrogant to claim humans are
 globally optimal at anything. I would guess we're juuuuust good enough to get
@@ -822,10 +830,15 @@ low-dimensional state models work sometimes, and image
 models are usually too hard. But, if this gets easier, some interesting things
 could happen.
 
-Papers of interest from the Berkeley robotics labs: [Guided Policy Search (Levine et al, ICML 2013)](https://graphics.stanford.edu/projects/gpspaper/gps_full.pdf), [Neural Network Dynamics for Model-Based Deep RL with Model-Free Fine-Tuning (Nagabandi et al, 2017](https://people.eecs.berkeley.edu/~nagaban2/resources/paper_mbmf.pdf),
+[Dyna (Sutton, 1991)](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=711FEF6BA26BBF98C28BC111B26F8761?doi=10.1.1.48.6005&rep=rep1&type=pdf) and
+[Dyna-2 (Silver et al., ICML 2008)](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Applications_files/dyna2.pdf) are
+classical papers in this space.
+For papers combining model-based learning with deep nets, I would recommend a few recent papers from the Berkeley robotics labs:
+[Neural Network Dynamics for Model-Based Deep RL with Model-Free Fine-Tuning (Nagabandi et al, 2017](http://bair.berkeley.edu/blog/2017/11/30/model-based-rl/),
+[Self-Supervised Visual Planning with Temporal Skip Connections (Ebert et al, CoRL 2017)](https://arxiv.org/abs/1710.05268),
+[Combining Model-Based and Model-Free Updates for Trajectory-Centric Reinforcement Learning (Chebotar et al, ICML 2017)](https://arxiv.org/abs/1703.03078).
 [Deep Spatial Autoencoders for Visuomotor Learning (Finn et al, ICRA 2016)](http://rll.berkeley.edu/dsae/dsae.pdf),
-[Self-Supervised Visual Planning with Temporal Skip Connections (Ebert et al, CoRL 2017)](https://arxiv.org/abs/1710.05268), [Combining Model-Based and Model-Free Updates for Trajectory-Centric Reinforcement Learning (Chebotar et al, ICML 2017)](https://arxiv.org/abs/1703.03078).
-
+and [Guided Policy Search (Levine et al, ICML 2013)](https://graphics.stanford.edu/projects/gpspaper/gps_full.pdf).
 
 **Reward functions could be learnable:** The promise of ML is that we can use
 data to learn things that are better than human design. If reward function design
@@ -834,12 +847,19 @@ learning and inverse reinforcement learning are both rich fields that have
 shown reward functions can be implicitly
 defined by human demonstrations or human ratings.
 
-For recent work scaling these ideas to deep learning, see [Guided Cost Learning (Finn et al, ICML 2016)](https://arxiv.org/abs/1603.00448), [Time-Constrastive Networks (Sermanet et al, 2017)](https://arxiv.org/abs/1704.06888),
-and [Learning From Human Preferences (Christiano et al, NIPS 2017)](https://blog.openai.com/deep-reinforcement-learning-from-human-preferences/). The Human Preferences paper in particular showed
-that the learned reward was actually better-shaped for learning than the baseline
-reward used for that task, which is an interesting practical finding.
+For famous papers in inverse RL and imitatin learning, see
+[Algorithms for Inverse Reinforcement Learning (Ng and Russell, ICML 2000)](http://ai.stanford.edu/~ang/papers/icml00-irl.pdf),
+[Apprenticeship Learning via Inverse Reinforcement Learning (Abbeel and Ng, ICML 2004)](http://ai.stanford.edu/~ang/papers/icml04-apprentice.pdf),
+and [DAgger (Ross, Gordon, and Bagnell, AISTATS 2011)](https://www.cs.cmu.edu/~sross1/publications/Ross-AIStats11-NoRegret.pdf).
 
-For recent work that doesn't use deep learning, see [Inverse Reward Design (Hadfield-Menell et al, NIPS 2017)](https://arxiv.org/abs/1711.02827) and [Learning Robot Objectives from Physical Human Interaction (Bajcsy et al, CoRL 2017)](http://proceedings.mlr.press/v78/bajcsy17a/bajcsy17a.pdf).
+For recent work scaling these ideas to deep learning, see [Guided Cost Learning (Finn et al, ICML 2016)](https://arxiv.org/abs/1603.00448), [Time-Constrastive Networks (Sermanet et al, 2017)](https://arxiv.org/abs/1704.06888),
+and [Learning From Human Preferences (Christiano et al, NIPS 2017)](https://blog.openai.com/deep-reinforcement-learning-from-human-preferences/). (The Human Preferences paper in particular showed
+that a reward learned from human ratings was actually better-shaped for learning
+than the original hardcoded reward, which is a neat practical result.)
+
+For longer term work that doesn't use deep learning, I liked
+[Inverse Reward Design (Hadfield-Menell et al, NIPS 2017)](https://arxiv.org/abs/1711.02827)
+and [Learning Robot Objectives from Physical Human Interaction (Bajcsy et al, CoRL 2017)](http://proceedings.mlr.press/v78/bajcsy17a/bajcsy17a.pdf).
 
 
 **Transfer learning saves the day:** The promise of transfer learning is that
