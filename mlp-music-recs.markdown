@@ -8,19 +8,20 @@ permalink: /mlpmusicrecs/
 
 Did you know there's a brony music scene?
 
-It's a really weird music scene. It had its heyday around Season 2 and Season
+It's a really weird scene. It had its heyday around Season 2 and Season
 3, when MLP was A Big Thing on the Internet. Since then, it's
 quieted down, but the music scene is certainly still going.
 As a sign of the times it came from, the songs lean heavily towards techno
 and dubstep.
 
-The scene has some similarities to the Touhou music scene, except for a few
-important differences. There are fewer original songs to work with, meaning
-several songs are actually entirely original pieces, rather than arranges of
-existing songs. More importantly, Hasbro cares a lot more about copyright.
+Like the [Touhou music scene](/touhoumusicrecs/), it was spawned from the
+primordial soup of inexplicable fandom. However, there are fewer songs
+in the source canon, meaning several brony songs are actually entirely original
+pieces that were simply inspired by the show.
+More importantly, Hasbro cares a lot more about copyright than ZUN does.
 This makes it a lot harder for musicians to profit off their work.
 Finally, many of the artists are one-hit wonders - they made a few very
-popular songs, and then moved on from the fandom.
+popular songs at peak MLP hype, and then they moved on.
 
 I would on average recommend a Touhou song over an MLP song, but there's still
 some cool stuff out there.
