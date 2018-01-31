@@ -4,12 +4,6 @@ title:  "Deep Reinforcement Learning Doesn't Work Yet"
 date:   2017-12-11 23:06:00 -0700
 ---
 
-(Link to rebuttal section earlier? Or mention that it exists so that people
-know it's there?)
-
-(Remove the second video because it mostly confuses people.)
-
----------------------------------------------------------------------------
 
 *This mostly cites papers from Berkeley, Google Brain, DeepMind, and OpenAI
 from the past few years, because I'm most familiar with that work.
@@ -43,23 +37,23 @@ insignificant results, and incredibly nonsensical behaviors.
 
 Several times, I've seen people try deep reinforcement learning for the first
 time. Without fail, something goes wrong. Without fail, the "toy problem" is
-not as easy as it looks. And without fail, they get destroyed a few times
-until they set their research expectations realistically.
+not as easy as it looks. And without fail, they get destroyed a few times,
+until they learn how to set realistic research expectations.
 
 My goal isn't to claim that RL is useless, or to discourage people from joining
 the field. I just want people to know what they're getting into, so that when
-they fail to get positve results for a month, they know it's not necessarily
+they fail to get positive results for a month, they know it's not necessarily
 their fault.
 
 (A final note: in the rest of this post, I use RL and deep RL interchangeably.
 I'd like to clarify that I am criticizing just deep RL in particular. These
 observations are based on papers and personal observations from the last 5 years,
 almost all of which use deep neural nets. The criticisms may apply to linear
-RL or tabular RL, but I'm not confident enough to claim those criticisms
+RL or tabular RL, but I'm not confident enough to claim the criticisms
 generalize.
-The hype of RL is driven by the promise of applying RL to large, complex
-environments where good function approximation is necessary. It is that hype
-in particular that needs to be addressed.)
+The hype of RL is driven by the promise of applying RL to large, complex,
+high-dimensional environments where good function approximation is necessary.
+It is that hype in particular that needs to be addressed.)
 
 
 Reinforcement Learning Can Be Horribly Sample Inefficient
@@ -145,20 +139,19 @@ training. Oh, and it's from 2012. ([Tassa et al, IROS 2012](https://homes.cs.was
 </div>
 
 I think these behaviors compare well to the previous video from the parkour
-paper. How
-Personally, I find these behaviors equally cool to watch. So how can this
-approach work so well, while using way less compute.
+paper. How is this possible with so much less compute?
 
 The trick is that the approach shown (model predictive control) gets to do
 planning against a known world model (the physics simulator). This is
-not a fair comparison to model-free RL. On the other hand, given that a model
-helps by this much, why would you spend a bunch of time training an RL policy
-that gets results that look *worse* than this?
+a very unfair comparison to model-free RL.
+On the other hand, if you have a model, and a model can help by this much,
+why spend a bunch of time training an RL policy if it doesn't perform any
+better?
 
 In a similar vein, you can easily outperform
-DQN in Atari with off-the-shelf Monte Carlo Tree Search. Here are the numbers
-from [Guo et al, NIPS 2014](https://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning). UCT is the standard version of MCTS
-used today.
+DQN in Atari with off-the-shelf Monte Carlo Tree Search. Here are baseline
+numbers from [Guo et al, NIPS 2014](https://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning). UCT is the standard version of
+MCTS used today. They report the score achieved by the learned agent.
 
 ![DQN results](/public/rl-hard/dqn_atari.png)
 {: .centered }
@@ -166,29 +159,29 @@ used today.
 ![MCTS results](/public/rl-hard/uct_atari.png)
 {: .centered }
 
-Again, not a fair comparison, because DQN does no search, and MCTS does a lot
-of search. However, it does show that if you just want a good Atari bot,
-throwing a tree search algorithm at the problem is probably easier than training
-a DQN.
+Again, not a fair comparison, because DQN does no search, and MCTS gets to
+perform search against the Atari emulaor.
+However, it does show that if you just want a good Atari bot, implementing a
+tree search algorithm is probably way easier than training a DQN.
 
 Reinforcement learning can theoretically work for anything, including
-environments where a model of the world isn't known. However, this generality
+environments where a model of the world isn't known. But this generality
 comes at a price: it's hard to exploit any problem-specific information that
 could help with learning, which forces you to use tons of samples to learn
 things that could have been hardcoded.
 
 The rule-of-thumb is that except in rare cases, domain-specific algorithms
-work faster and better than reinforcement learning. This isn't a problem if you're
-doing RL for reinforcement learning's sake, but it can make it harder to get
-motivated, and it's harder to explain to laypeople why the problems you're
-working on are cool.
+work faster and better than reinforcement learning. This isn't a problem if
+you're doing reinforcement learning for reinforcement learning's sake, but it
+can make it harder to get motivated, and it's harder to explain to laypeople
+why the problems you're working on are cool.
 
 Consider the company most people think of when you mention robotics:
 [Boston Dynamics](https://www.youtube.com/channel/UC7vVhkEfw4nOGp8TyDk7RcQ).
-At NIPS 2016, a leading machine learning conference, they gave a legendary
-presentation where they said they didn't do machine learning.
-If you look up research papers from the group, you can find
-[that they use time-varying LQR, QP solvers, and convex optimization](https://dspace.mit.edu/openaccess-disseminate/1721.1/110533). In other words, classical robotics stuff.
+At NIPS 2016, a leading machine learning conference, they gave [a great demo](https://www.youtube.com/watch?v=SvEs_hhb0sI) - and then said they didn't do machine learning. (At least that's
+what I heard, I wasn't there in person.)
+If you look up research papers from the group, you find papers mentioning
+[time-varying LQR, QP solvers, and convex optimization](https://dspace.mit.edu/openaccess-disseminate/1721.1/110533). In other words, classical robotics stuff.
 (Personally, I'd bundle those techniques as machine learning, but that
 might be an unorthodox view.)
 
@@ -196,15 +189,13 @@ might be an unorthodox view.)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
-No one at Boston Dynamics has to sell why teaching a robot to do that is cool.
-I have to sell my problems all the time, because the reason they're hard is
-subtle, and the end result isn't always as visually impressive.
+No one at Boston Dynamics has to explain why teaching a robot to do that is cool.
+I have to explain my problems all the time, because often they're hard for
+subtle reasons that aren't as visually impressive.
 
 
 It Usually Requires a Reward Oracle
 ==============================================================================
-
-(Mention proper scoring rules)
 
 Reinforcement learning assumes the existence of a reward function. Usually, this is either
 given, or it is learned offline and fixed over the course of learning.
@@ -381,6 +372,11 @@ I really do. But honestly, I'm sick of hearing those stories, because they
 always speculate up some superhuman misaligned AGI to create a just-so story.
 Doing that really shouldn't be necessary, when people have to deal with
 present-day examples all the time.
+
+(If you're interested in further reading on what makes a good reward,
+a good search term is ["proper scoring rule"](https://en.wikipedia.org/wiki/Scoring_rule#Proper_scoring_rules).
+See [this Terrence Tao blog post](https://terrytao.wordpress.com/2016/06/01/how-to-assign-partial-credit-on-an-exam-of-true-false-questions/) for an approachable example.)
+
 
 
 Even Given a Reward Oracle, Local Optima Can Be Hard To Escape
