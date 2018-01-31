@@ -727,10 +727,11 @@ reinforcement learning successes. Here's my list so far.
 
 * Things mentioned in the previous sections: DQN, AlphaGo, AlphaZero,
 the parkour bot, reducing power center usage, Neural Architecture Search.
-* OpenAI's Dota 2 1v1 Shadow Fiend bot, which beat top pro players in a
-simplified duel setting.
-* A Super Smash Brothers Melee bot from students at MIT and NYU, that can beat
-pro players at 1v1 Falcon dittos.
+* [OpenAI's Dota 2 1v1 Shadow Fiend bot, which beat top pro players in a
+simplified duel setting.](https://blog.openai.com/dota-2/)
+* [A Super Smash Brothers Melee bot](https://arxiv.org/abs/1702.06230) from students at MIT and NYU, that can beat
+pro players at [1v1 Falcon dittos](https://www.youtube.com/watch?v=dXJUlqBsZtE).
+(Firoiu et al, 2017).
 
 Two machine learning systems,
 [Libratus (Brown et al, IJCAI 2017)](https://www.ijcai.org/proceedings/2017/0772.pdf) and [DeepStack (Moravčík et al, 2017)](https://arxiv.org/abs/1701.01724),
