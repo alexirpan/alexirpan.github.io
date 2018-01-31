@@ -370,8 +370,8 @@ I've been burned by RL too many times to believe otherwise.
 I know people who like to tell stories about [paperclip optimizers](https://en.wikipedia.org/wiki/Instrumental_convergence#Paperclip_maximizer). I get it,
 I really do. But honestly, I'm sick of hearing those stories, because they
 always speculate up some superhuman misaligned AGI to create a just-so story.
-Doing that really shouldn't be necessary, when people have to deal with
-present-day examples all the time.
+There's no reason to speculate that far when present-day examples happen
+all the time.
 
 (If you're interested in further reading on what makes a good reward,
 a good search term is ["proper scoring rule"](https://en.wikipedia.org/wiki/Scoring_rule#Proper_scoring_rules).
@@ -477,19 +477,35 @@ how deep RL is right now.
 Even When Deep RL Works, It May Just Be Overfitting to Weird Patterns In the Environment
 ==============================================================================
 
-In reinforcement learning, your train set is your test set. The upside is that if you want to do
+> Deep RL is popular because it's the only area in ML where it's socially
+> acceptable to train on the test set.
+
+[Source](https://twitter.com/jacobandreas/status/924356906344267776)
+{: .centered }
+
+The upside of reinforcement learning is that if you want to do
 well in an environment, you're free to overfit like crazy. The downside is that
-if you want to generalize to any other environment, you're going to overfit like
-crazy.
+if you want to generalize to any other environment, you're probably going to
+do poorly, because you overfit like crazy.
+
+(To forestall some obvious counterexamples: yes, sometimes you can train on a
+distribution of environments, to get around this issue. I'll get to this soon.)
 
 DQN can solve a lot of the Atari games, but it does so by focusing all of
 learning on a single goal - getting really good at one game. The final model
-isn't expected to generalize to other games.
-The model isn't even expected to be a good initialization for a new Atari
-game. In contrast, if you're doing image classification,
-pretrained features from a model trained on ImageNet should be one of the
-first things you try, because they transfer really well. RL doesn't have
-an equivalent "ImageNet for control" yet. (OpenAI Universe tried to solve
+won't generalize to other games, because it hasn't been trained that way.
+Finetuning a learned DQN to a new Atari game sort of works
+(see [Progressive Neural Networks (Rusu et al, 2016)](https://arxiv.org/abs/1606.04671)), but it's not the wild success people empirically get from
+pretrained ImageNet features.
+
+To forestall some obvious counterexamples: yes, in some cases, there is
+a natural distribution of environments that you can train on. An example
+is navigation, where you can sample goal locations randomly, and use the
+universal value function approach to generalized.
+(See [Universal Value Function Approximators, Schaul et al, ICML 2015](http://proceedings.mlr.press/v37/schaul15.pdf).) I think there are promising signs here, and
+I give more examples in a future section. However, in practice, I think the
+generalization capabilities aren't strong enough yet. RL has yet to have
+its "ImageNet for control" moment. (OpenAI Universe tried to solve
 this, but from what I heard, it's just too hard to solve anything reliably
 in it, due to the asynchronous implementation.)
 
