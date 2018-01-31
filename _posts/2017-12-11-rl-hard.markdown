@@ -631,7 +631,7 @@ Look, there's variance in supervised learning too, but it's rarely this bad.
 If my supervised learning code failed by random chance 30% of the time, I'd
 have super high confidence there was a bug in data loading or training. But
 if that happens in reinforcement learning, I have no idea if there's a bug,
-or if reinforcement learning is just messing with me. Maybe it's just Tuesday.
+if my hyperparms are bad, or if reinforcement learning is just messing with me. Maybe it's just Tuesday.
 
 <div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GlhOUyy4wbs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
@@ -690,8 +690,6 @@ AlphaGo and AlphaZero
 continue to be very impressive achievements.
 However, outside of these game playing successes,
 deep RL hasn't done much that has practical real world value.
-
-(Link to Andrej post?)
 
 I tried to think of real-world, productionized uses of deep RL, and I could
 only think of two things: [the project to reduce the power used by
