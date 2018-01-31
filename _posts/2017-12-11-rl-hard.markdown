@@ -373,11 +373,6 @@ always speculate up some superhuman misaligned AGI to create a just-so story.
 There's no reason to speculate that far when present-day examples happen
 all the time.
 
-(If you're interested in further reading on what makes a good reward,
-a good search term is ["proper scoring rule"](https://en.wikipedia.org/wiki/Scoring_rule#Proper_scoring_rules).
-See [this Terrence Tao blog post](https://terrytao.wordpress.com/2016/06/01/how-to-assign-partial-credit-on-an-exam-of-true-false-questions/) for an approachable example.)
-
-
 
 Even Given a Reward Oracle, Local Optima Can Be Hard To Escape
 ==============================================================================
@@ -786,35 +781,46 @@ should note that by self-play, I mean exactly the setting where the game is
 competitive, and both players can be controlled by the same agent. So far,
 that setting seems to have the most stable and well-performing behavior.
 
-* **The reward signal is rich, and actions have quick consequences.**
+* **There's a clean way to define an ungameable reward.** Two player games
+have this: +1 for a win, -1 for a loss. The [original neural architecture search paper from Zoph et al, ICLR 2017](https://openreview.net/forum?id=r1Ue8Hcxg) had this: validation accuracy of
+the trained model. Any time you introduce reward shaping, you introduce a chance
+for learning a non-optimal policy that optimizes the wrong objective.
+
+    If you're interested in further reading on what makes a good reward,
+a good search term is ["proper scoring rule"](https://en.wikipedia.org/wiki/Scoring_rule#Proper_scoring_rules).
+See [this Terrence Tao blog post](https://terrytao.wordpress.com/2016/06/01/how-to-assign-partial-credit-on-an-exam-of-true-false-questions/) for an approachable example.
+
+* **If the reward has to be shaped, it should at least be rich.**
 In Dota 2, reward can come from last hits (triggers after every monster kill
 by either player), and health (triggers after every attack or skill that
 hits a target.) These reward signals
 come quick and often. For the SSBM bot, reward can be given for damage dealt
 and taken, which gives signal for every attack that successfully lands. The shorter
-the delay between action and consequence, the easier it is for
-reinforcement learning to figure out a path to high reward.
+the delay between action and consequence, the faster the feedback loop gets
+closed, and the easier it is for reinforcement learning to figure out a path to high reward.
 
-    Consider the [original neural architecture search paper (Zoph et al, ICLR 2017)](https://openreview.net/forum?id=r1Ue8Hcxg). The reward is validation accuracy, which is a
-very rich reward signal - if a neural net design decision only increases
+We can combine a few of these principles to analyze the success of Neural
+Architecture Search. As mentioned above, the reward is validation accuracy.
+This is a very rich reward signal - if a neural net design decision only increases
 accuracy from 70% to 71%, RL will still pick up on this. Additionally, there's
 evidence that hyperparameters in deep learning are close to
 linearly independent. (This was empirically shown in [Hyperparameter
 Optimization: A Spectral Approach (Hazan et al, 2017)](https://arxiv.org/abs/1706.00764) - a summary by me is
 [here]({% post_url 2017-06-27-hyperparam-spectral %}) if interested.)
-NAS isn't exactly tuning hyperparameters, but it seems
-reasonable that neural net design decisions are also similar. This is good
+NAS isn't exactly tuning hyperparameters, but I think it's reasonable
+that neural net design decisions would act similarly. This is good
 news for learning because the correlations between decision and performance
-will be strong.
+are strong. Finally, not only is the reward rich, it's actually what we care
+about when we train models.
 
-    The combination of these two helps me understand why it "only" takes about
+The combination of all these points helps me understand why it "only" takes about
 12800 trained networks to learn a better one, compared to the millions of examples
 needed in other environments.
 
-The broader point I want to get across is this: many things have to go right
-for reinforcement learning to be a plausible solution, and even then, it's
-not a free ride to make that solution happen. Perhaps in the future, RL will
-be robust enough to be plug-and-play. But for now, it's not there.
+Overall, success stories this strong are still the exception, not the rule.
+Many things have to go right for reinforcement learning to be a plausible
+solution, and even then, it's not a free ride to make that solution happen.
+In short: deep RL is currently not a plug-and-play technology.
 
 
 Looking to The Future
@@ -829,8 +835,12 @@ reservations, I think people absolutely should be throwing RL at different
 problems, including ones where it probably shouldn't work. How else are we
 supposed to make RL better?
 
-I see no reason why deep RL couldn't work, given more time. The question is
-how it'll get there. Here are some futures I find plausible. For the futures
+I see no reason why deep RL couldn't work, given more time. Several very
+interesting things are going to happen when deep RL is robust enough for wider
+use. The question is
+how it'll get there.
+
+Below, I've listed some futures I find plausible. For the futures
 based on further research, I've provided citations to relevant papers in those
 research areas.
 
@@ -926,12 +936,13 @@ of general learning ability.
 
 I credit Pieter Abbeel for first introducing me to this argument. He mentions
 it in a lot of his talks, and I agree it makes sense.
-For example, if I wanted to use RL to do navigating in warehouses, and wanted to
-arbitrary warehouses, I'd look into using metalearning to learn a good
-navigation prior, and then finetune it for the specific warehouse the robot is
-deployed in,
+For example, if I wanted to use RL to do warehouse navigation, I'd get pretty
+curious about using metalearning to learn a good navigation prior,
+and then finetune it for the specific warehouse the robot is deployed in.
+This very much seems like the future - if such a metalearned prior is possible.
 
-A summary of recent work can be found in [this post](http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/)
+A summary of recent learning-to-learn work can be found in
+[this post](http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/)
 from BAIR (Berkeley AI Research).
 
 
@@ -941,11 +952,9 @@ by adding several task variations, you can actually make the learning
 easier, because the policy cannot overfit to any one setting without losing
 performance on all the other settings. We've seen a similar thing in the
 domain randomization papers, and even back to ImageNet: models trained on
-ImageNet will generalize way better than ones trained on CIFAR-100. An
-analogous "ImageNet for control" could make RL start working.
-(OpenAI tried to spur this with Universe, but it didn't get adopted. From what I
-heard, the environments were just too hard to solve. However, the core premise
-is sound and I'd like to see another attempt when RL is more performant.)
+ImageNet will generalize way better than ones trained on CIFAR-100. As I said
+above, maybe we're just an "ImageNet for control" away from making RL
+considerably more generic.
 
 Environment wise, there are a lot of options. [OpenAI Gym](https://github.com/openai/gym)
 easily has the most traction, but there's also the [Arcade Learning Environment](https://github.com/mgbellemare/Arcade-Learning-Environment), [Roboschool](https://github.com/openai/roboschool),
