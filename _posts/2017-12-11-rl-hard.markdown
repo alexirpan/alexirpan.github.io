@@ -48,7 +48,8 @@ until they set their research expectations realistically.
 
 My goal isn't to claim that RL is useless, or to discourage people from joining
 the field. I just want people to know what they're getting into, so that when
-they do nothing for a month, they know it isn't their fault.
+they fail to get positve results for a month, they know it's not necessarily
+their fault.
 
 (A final note: in the rest of this post, I use RL and deep RL interchangeably.
 I'd like to clarify that I am criticizing just deep RL in particular. These
@@ -122,22 +123,29 @@ battle, and unfortunately, most real-world settings fall under this category.
 If You Just Care About Final Performance, Many Problems are Better Solved by Other Methods
 ==============================================================================
 
-(TODO: Add a point about how you can either optimize for performance, or optimize
-for research contribution, and ideally you do both, but if you just want the
-former, RL isn't great.)
+This section is directed towards people who apply deep RL, rather than people
+who directly do research on it.
 
-Now, I like the parkour paper a lot. But, it's worth putting it in context of
-prior work.
+When searching for solutions to any research problem, there are usually
+trade-offs between different objectives. You can optimize for getting a really
+good solution for that research problem, or you can optimize for making a good
+research contribution. The best problems are ones where getting a good solution
+*requires* making good research contributions, but it can be hard to find
+approachable problems of that kind.
 
+From the perspective of purely getting good performance, deep RL's track record
+isn't that great.
 Here is a video of similar simulated robots, controlled
 with online trajectory optimization.
 The correct actions are computed in near real-time, online, with no offline
-training. Oh, and it's from 2012. ([Tassa et al, IROS 2012](https://homes.cs.washington.edu/~todorov/papers/TassaIROS12.pdf)). So it's also running on 5 year old hardware.
+training. Oh, and it's from 2012. ([Tassa et al, IROS 2012](https://homes.cs.washington.edu/~todorov/papers/TassaIROS12.pdf)), so the hardware is 5 years old.
 
 <div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uRVAX_sFT24" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
+I think these behaviors compare well to the previous video from the parkour
+paper. How
 Personally, I find these behaviors equally cool to watch. So how can this
 approach work so well, while using way less compute.
 
@@ -195,6 +203,8 @@ subtle, and the end result isn't always as visually impressive.
 
 It Usually Requires a Reward Oracle
 ==============================================================================
+
+(Mention proper scoring rules)
 
 Reinforcement learning assumes the existence of a reward function. Usually, this is either
 given, or it is learned offline and fixed over the course of learning.
@@ -594,17 +604,8 @@ difference is the random seed.
 ![Graph of Pendulum results](/public/rl-hard/pendulum_results.png)
 
 30% of the time, it's not doing anything at all! *But this counts as working.*
-Look, there's variance in supervised learning too, but it's rarely this bad.
-If my supervised learning code failed by random chance 30% of the time, I'd
-have super high confidence there was a bug in data loading or training. But
-if that happens in reinforcement learning, I have no idea if there's a bug,
-or if reinforcement learning is just messing with me. Maybe it's just Tuesday.
-
-<div class="centered">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GlhOUyy4wbs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</div>
-
-Here's a plot from the [Variational Information Maximizing Exploration paper (Houthooft et al, NIPS 2016)](https://arxiv.org/abs/1605.09674).
+Here's another plot from some published work,
+["Variational Information Maximizing Exploration" (Houthooft et al, NIPS 2016)](https://arxiv.org/abs/1605.09674).
 The environment is HalfCheetah. The reward is modified to be sparser, but the
 details aren't too important.
 The y-axis is episode reward, the x-axis is number of timesteps, and the
@@ -616,8 +617,24 @@ algorithm used is TRPO.
 The dark line is the median performance over 10 random seeds, and the shaded
 region is the 25th to 75th percentile. Don't get me wrong, this plot is a good
 argument in favor of VIME. But on the other hand, the 25th percentile line
-is really close to 0 reward, meaning about 25% of runs are failing for no
+is really close to 0 reward. That means about 25% of runs are failing for no
 reason.
+
+Look, there's variance in supervised learning too, but it's rarely this bad.
+If my supervised learning code failed by random chance 30% of the time, I'd
+have super high confidence there was a bug in data loading or training. But
+if that happens in reinforcement learning, I have no idea if there's a bug,
+or if reinforcement learning is just messing with me. Maybe it's just Tuesday.
+
+<div class="centered">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GlhOUyy4wbs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
+
+When your training algorithm is both sample inefficient and unstable, it heavily
+slows down your rate of productive research, because you have to spend much more
+compute to get good evidence for your hypotheses. Maybe it only takes 1 million
+steps, but when you multiply it by 5 random seeds, and then multiply that with
+hyperparam tuning, it all becomes a bit depressing.
 
 > If it makes you feel any better, I've been doing this for a while and it took me last ~6 weeks to get a from-scratch policy gradients implementation to work 50% of the time on a bunch of RL problems. And I also have a GPU cluster available to me, and a number of friends I get lunch with every day who've been in the area for the last few years.
 >
@@ -631,12 +648,13 @@ reason.
 {: .centered }
 
 Instability to random seed is like a canary in a coal mine. If pure randomness
-is enough to lead to these kinds of results, imagine how much an actual
+is enough to lead to this much variance between runs, imagine how much an actual
 difference in the code could make.
 
 Luckily, we don't have to imagine, because this was inspected by
-a recent paper,  [Deep Reinforcement Learning That Matters (Henderson et al, AAAI 2018)](https://arxiv.org/abs/1709.06560). It makes a bunch of points that I think were well-known in the RL
-community, but which weren't packaged together until now. Among its conclusions
+the paper ["Deep Reinforcement Learning That Matters" (Henderson et al, AAAI 2018)](https://arxiv.org/abs/1709.06560).
+It makes several points that were well-known in the RL community, but which
+weren't packaged together until recently. Among its conclusions
 are:
 
 * Multiplying the reward by a constant can give significant differences in performance.
@@ -665,6 +683,8 @@ AlphaGo and AlphaZero
 continue to be very impressive achievements.
 However, outside of these game playing successes,
 deep RL hasn't done much that has practical real world value.
+
+(Link to Andrej post?)
 
 I tried to think of real-world, productionized uses of deep RL, and I could
 only think of two things: [the project to reduce the power used by
@@ -732,19 +752,21 @@ RL system.
 of how quickly the games can be run, and how many machines were available to
 run them.
 
-* **The environment can be simplified into just the core learning problem.**
-The presented Dota 2 bot only plays the early game, only plays Shadow Fiend against Shadow
-Fiend in a 1v1 laning setting, uses hardcoded item builds, and calls the
-[Dota 2 API](https://developer.valvesoftware.com/wiki/Dota_2_Workshop_Tools/Scripting/API)
-to avoid having to solve perception. Similarly, the SSBM bot
-can only play 1v1 games, both players have to play Captain Falcon, and the
-match has to be on Battlefield.
+* **The problem is simplified into an easier form.** One of the common errors
+I've seen in deep RL is to dream too big. Reinforcement learning can do
+anything! That doesn't mean you have to do everything at once.
 
-    This isn't a dig at either bot, because why would you make your problem harder
-when you don't even know if the easier problem is solvable?
-A full solution to either game is going to require more machinery, but the
+    The OpenAI Dota 2 bot only played the early game, only played Shadow Fiend against Shadow
+Fiend in a 1v1 laning setting, used hardcoded item builds, and presumably
+called the [Dota 2 API](https://developer.valvesoftware.com/wiki/Dota_2_Workshop_Tools/Scripting/API)
+to avoid having to solve perception. The SSBM bot started with 1v1 games,
+Captain Falcon only, Battlefield only, infinite time matches only.
+
+    This isn't a dig at either bot. Why work on a hard problem when you don't
+even know the easier one is solvable? The
 broad trend of all research is to demonstrate the smallest proof-of-concept
-first and generalize it later.
+first and generalize it later. OpenAI is extending their Dota 2 work, and
+the SSBM bot has been extended to play Marth and Sheik. (LINK).
 
 * **There is a way to introduce self-play into learning.** This is a component
 of AlphaGo, AlphaZero, the Dota 2 Shadow Fiend bot, and the SSBM Falcon bot. I
@@ -752,7 +774,7 @@ should note that by self-play, I mean exactly the setting where the game is
 competitive, and both players can be controlled by the same agent. So far,
 that setting seems to have the most stable and well-performing behavior.
 
-* **The reward signal is rich, and the consequences of actions is immediate.**
+* **The reward signal is rich, and actions have quick consequences.**
 In Dota 2, reward can come from last hits (triggers after every monster kill
 by either player), and health (triggers after every attack or skill that
 hits a target.) These reward signals
@@ -761,7 +783,7 @@ and taken, which gives signal for every attack that successfully lands. The shor
 the delay between action and consequence, the easier it is for
 reinforcement learning to figure out a path to high reward.
 
-    As a case example of this, let's examine the [original neural architecture search paper (Zoph et al, ICLR 2017)](https://openreview.net/forum?id=r1Ue8Hcxg). The reward is validation accuracy, which is a
+    Consider the [original neural architecture search paper (Zoph et al, ICLR 2017)](https://openreview.net/forum?id=r1Ue8Hcxg). The reward is validation accuracy, which is a
 very rich reward signal - if a neural net design decision only increases
 accuracy from 70% to 71%, RL will still pick up on this. Additionally, there's
 evidence that hyperparameters in deep learning are close to
@@ -919,9 +941,9 @@ easily has the most traction, but there's also the [Arcade Learning Environment]
 
 
 Finally, although it's unsatisfying from a research
-perspective, the issues of RL may not matter for practical purposes. Suppose
-a finance company is using RL. They train a trading agent based on trades in
-the US stock market, using 3 random seeds.
+perspective, the issues of RL may not matter for practical purposes. As a
+hypothetical example, suppose a finance company is using RL. They train a
+trading agent based on past data from the US stock market, using 3 random seeds.
 In live A/B testing, one gives 2% less revenue, one performs the
 same, and one gives 2% more revenue. In that hypothetical, reproducibility
 doesn't matter - you deploy the model with 2% more revenue and celebrate.
