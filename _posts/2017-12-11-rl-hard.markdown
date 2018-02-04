@@ -160,7 +160,7 @@ MCTS used today. They report the score achieved by the learned agent.
 {: .centered }
 
 Again, not a fair comparison, because DQN does no search, and MCTS gets to
-perform search against the Atari emulaor.
+perform search against a ground truth model (the Atari emulator.)
 However, it does show that if you just want a good Atari bot, implementing a
 tree search algorithm is probably way easier than training a DQN.
 
@@ -178,20 +178,23 @@ why the problems you're working on are cool.
 
 Consider the company most people think of when you mention robotics:
 [Boston Dynamics](https://www.youtube.com/channel/UC7vVhkEfw4nOGp8TyDk7RcQ).
-At NIPS 2016, a leading machine learning conference, they gave [a great demo](https://www.youtube.com/watch?v=SvEs_hhb0sI) - and then said they didn't do machine learning. (At least that's
-what I heard, I wasn't there in person.)
-If you look up research papers from the group, you find papers mentioning
-[time-varying LQR, QP solvers, and convex optimization](https://dspace.mit.edu/openaccess-disseminate/1721.1/110533). In other words, classical robotics stuff.
-(Personally, I'd bundle those techniques as machine learning, but that
-might be an unorthodox view.)
 
 <div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fRj34o4hN4I" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
+(Tone down paragraph below.)
+
 No one at Boston Dynamics has to explain why teaching a robot to do that is cool.
-I have to explain my problems all the time, because often they're hard for
-subtle reasons that aren't as visually impressive.
+I have to explain why my problems all the time, because often they're hard for
+subtle reasons that aren't as visually impressive, unless you have enough
+research context.
+
+If you look up research papers from the group, you find papers mentioning
+[time-varying LQR, QP solvers, and convex optimization](https://dspace.mit.edu/openaccess-disseminate/1721.1/110533).
+In other words, they mostly apply classical robotics.
+(Personally, I'd bundle those techniques as machine learning, but that
+might be an unorthodox view.)
 
 
 It Usually Requires a Reward Oracle
@@ -418,11 +421,6 @@ policy: learning to do a front-flip and then learning to run from that,
 or figuring out how to move forward while lying on its back? I would
 guess the latter.
 
-And thus, backflipping and traveling upside-down.
-
-Realistically though, I have no idea if my theory above is right. All I know
-is that it didn't learn.
-
 Here's another failed run, this time on the Reacher environment.
 
 <div class="centered">
@@ -540,7 +538,7 @@ Spoiler alert: you don't.
 This seems to be a running theme in multiagent RL. When agents are trained
 against one another, a kind of co-evolution happens. The agents get really good
 at beating each other, but as soon as they get deployed against a player they
-haven't seen before, performance goes to shit. Note
+haven't seen before, their performance drops. Note
 that the only difference between these videos is the random seed. Same learning
 algorithm, same hyperparameters, and the divergence is purely from randomness
 in initial conditions.
@@ -561,7 +559,7 @@ Almost every ML algorithm has hyperparameters, which influence the behavior
 of the learning system. Often, these are picked by hand, or by random search.
 
 Supervised learning is stable. Fixed dataset, ground truth targets. If you
-change the hyperparamters a little bit,
+change the hyperparameters a little bit,
 your performance won't change that much. Not all hyperparameters perform
 well, but with all the empirical tricks discovered over the years,
 many hyperparams will show signs of life at train time. These signs of life are
@@ -610,7 +608,8 @@ difference is the random seed.
 
 ![Graph of Pendulum results](/public/rl-hard/pendulum_results.png)
 
-30% of the time, it's not doing anything at all! *But this counts as working.*
+Seven of these runs worked. Three of these runs didn't. *Turns out a 30%
+failure rate counts as working.*
 Here's another plot from some published work,
 ["Variational Information Maximizing Exploration" (Houthooft et al, NIPS 2016)](https://arxiv.org/abs/1605.09674).
 The environment is HalfCheetah. The reward is modified to be sparser, but the
@@ -681,6 +680,8 @@ more confident that any deviation it tries will fail.
 
 But What About All The Great Things Deep RL Has Done For Us?
 ==================================================================
+
+(TODO: add RL + SL methods? Finetuning RNNs, RL used in NTMs, etc?)
 
 Deep reinforcement learning has certainly done some very cool things. DQN is
 old news now, but was absolutely *nuts* at the time. A single model was able to
@@ -825,6 +826,8 @@ In short: deep RL is currently not a plug-and-play technology.
 Looking to The Future
 ===============================================================================
 
+(TODO: unify model-based, extra learning signal, and priors together?)
+
 There's an old saying - every researcher learns how to hate their area of
 study. The trick is that researchers will press on despite this, because they
 like the problems too much.
@@ -926,8 +929,12 @@ and
 [GraspGAN (Bousmalis et al, 2017)](https://research.googleblog.com/2017/10/closing-simulation-to-reality-gap-for.html). (Disclaimer: I worked on GraspGAN.)
 
 
-**Priors from metalearning could speed up learning elsewhere:**
-RL algorithms are designed to apply to any environment that's an MDP. However,
+**Good priors could heavily reducing learning time:** This is closely tied to
+the transfer learning point. In one view, transfer learning is about using
+past experience to build a good prior for learning other tasks.
+RL algorithms are designed to apply to any Markov Decision Process.
+However, we often want to solve a small section of environments.
+
 we don't need to solve arbitrary environments, we just need to solve
 environments in the real-world. In principle, we could use metalearning to learn
 a real-world prior that lets us quickly learn new real-world tasks, at the cost
