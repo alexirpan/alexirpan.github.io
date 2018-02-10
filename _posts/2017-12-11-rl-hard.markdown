@@ -769,12 +769,13 @@ RL more carefully.
 Finance companies are surely experimenting with RL as we speak, but so far
 there's no definitive proof. (Of course, finance companies have reasons to be cagey
 about how they play the market, so perhaps the evidence there is never going to
-be strong.) Every Internet company ever has probably thought about adding RL to
+be strong.) Facebook's been doing some neat work with RL for chatbots and
+conversation. Every Internet company ever has probably thought about adding RL to
 their ad-serving model, but if anyone's done it, they've kept quiet about it.
 
-Overall, I'm pessimistic that people have gotten RL to work and are simply
-not publicizing it. It's more likely that deep RL is still a research topic,
-and still not robust enough for most applications.
+The way I see it, either deep RL is still a research topic that isn't robust
+enough for widespread use, or it's usable and the people who've gotten it
+to work aren't publicizing it. I think the former is more likely.
 
 If you came to me with an image classification problem, I'd point you to
 pretrained ImageNet models, and they'd probably do great.
@@ -801,12 +802,13 @@ simplified duel setting.](https://blog.openai.com/dota-2/)
 pro players at [1v1 Falcon dittos](https://www.youtube.com/watch?v=dXJUlqBsZtE).
 (Firoiu et al, 2017).
 
-Two machine learning systems,
-[Libratus (Brown et al, IJCAI 2017)](https://www.ijcai.org/proceedings/2017/0772.pdf) and [DeepStack (Moravčík et al, 2017)](https://arxiv.org/abs/1701.01724),
-recently beat pro players at no-limit heads up Texas Hold'Em.
-These are both very cool, but by my understanding, neither uses reinforcement
-learning. They instead use counterfactual regret minimization and clever
-iterative solving of subgames.
+(A quick aside: machine learning recently beat pro players at no-limit
+heads up Texas Hold'Em. This was done by both [Libratus (Brown et al, IJCAI 2017)](https://www.ijcai.org/proceedings/2017/0772.pdf)
+and [DeepStack (Moravčík et al, 2017)](https://arxiv.org/abs/1701.01724).
+I've talked to a few people who believed these used deep RL.
+They're both very cool, but they don't use deep RL.
+They use counterfactual regret minimization and clever iterative solving of
+subgames.)
 
 From this list, we can identify common properties that make learning more
 feasible. None of the properties below are required, but every one of them
@@ -840,7 +842,7 @@ Captain Falcon only, Battlefield only, infinite time matches only.
 even know the easier one is solvable? The
 broad trend of all research is to demonstrate the smallest proof-of-concept
 first and generalize it later. OpenAI is extending their Dota 2 work, and
-the SSBM bot has been extended to play Marth and Sheik. (LINK).
+the SSBM bot has been extended to play Marth and Sheik. (TODO: add link.)
 
 * **There is a way to introduce self-play into learning.** This is a component
 of AlphaGo, AlphaZero, the Dota 2 Shadow Fiend bot, and the SSBM Falcon bot. I
