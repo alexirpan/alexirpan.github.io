@@ -6,8 +6,8 @@ date:   2017-12-11 23:06:00 -0700
 
 
 *This mostly cites papers from Berkeley, Google Brain, DeepMind, and OpenAI
-from the past few years, because that work is most visible to me.
-I'm almost certainly missing stuff from older literature and less famous
+from the past few years, because their work is most visible to me.
+I'm almost certainly missing stuff from older literature and other
 institutions, and for that I apologize - I'm just one guy, after all.*
 
 Once, on Facebook, I made the following claim.
@@ -32,31 +32,43 @@ Now, I believe it *can* work. If I didn't believe in reinforcement learning,
 I wouldn't be working on it.
 But there are a lot of problems in the way, many of which feel fundamentally
 difficult. The beautiful demos of learned agents hide all the blood, sweat, and
-tears that go into making deep reinforcement learning work.
+tears that go into creating them.
 
-Several times, I've seen people try deep reinforcement learning for the first
-time. Without fail, they underestimate deep RL's difficulties.
+Several times now, I've seen people get lured by recent work. They try
+deep reinforcement learning for the first time, and without fail, they
+underestimate deep RL's difficulties.
 Without fail, the "toy problem" is not as easy as it looks. And without fail,
 the field destroys them a few times, until they learn how to set realistic
 research expectations.
 
-I don't think deep reinforcement learning is useless, and I don't think it
-doesn't deserve further research, and I certainly don't want to discourage people
-from joining the field. I just want people to know what they're getting into,
-so that if they fail to get positive results for a month, they know it's not
+This isn't the fault of anyone in particular. It's more of a systemic problem.
+It's easy to write a story around a positive result. It's hard to do the same
+for a negative one.
+
+I want deep RL to work. I want people to keep researching it.
+I certainly don't want to discourage people
+from joining the field. At the same time, I want people to know what they're
+getting into.
+So that if they fail to get positive results for a month, they know it's not
 necessarily their fault.
 
-The following is a collection of faults in current deep RL techniques, aggregated
-across several papers from the past 5 years. To make things very clear: **these
-are all good papers.** They make good research contributions, and many of them
-are directly addressing the faults of deep RL. In several cases, I only cite
-the paper because their baselines form a compelling negative result.
+This post is broadly divided into three sections: why deep RL doesn't work,
+why deep RL sometimes does work, and how deep RL could work better in the
+future. I know the post is a bit long, but I'd appreciate it if you'd read
+to the end before replying.
 
-A final note: in the rest of this post, I use RL and deep RL interchangeably.
-However, I'm criticizing just deep RL in particular, since the cited works
-represent the agent with a deep neural net. These criticisms *may* apply
-to linear RL or tabular RL, but I'm confident enough to generalize that far.
-The hype of RL is driven by the promise of applying RL to large, complex,
+A few final notes:
+
+* When listing why deep RL doesn't work, I cite several papers.
+**I like all of the papers I cite.** In many cases, I cite only because they
+give compelling negative examples.
+
+* I use "reinforcement learning" and "deep reinforcement learning"
+interchangeably. **I am criticizing deep reinforcement learning in particular.**
+The papers I cite usually represent the agent with a deep neural net, and
+although the criticisms *may* apply to linear RL or tabular RL, I'm not
+confident they generalize that far.
+The hype around deep RL is driven by the promise of applying RL to large, complex,
 high-dimensional environments where good function approximation is necessary.
 It is that hype in particular that needs to be addressed.
 
@@ -67,9 +79,9 @@ Reinforcement Learning Can Be Horribly Sample Inefficient
 The most well-known benchmark for deep reinforcement learning is Atari. As shown
 in the now-famous Deep Q-Networks paper, if you combine Q-Learning with
 reasonably sized neural networks and some optimization tricks, you can achieve
-human or superhuman performance in several (but not all) Atari games.
+human or superhuman performance in several Atari games.
 
-Atari games run at 60 frames per second. Now let's do an experiment. Off the
+Atari games run at 60 frames per second. Off the
 top of your head, can you estimate how many frames a state of the art DQN
 needs to reach human performance?
 
@@ -112,18 +124,19 @@ ground-truth information about all joint positions and velocities.
 
 The [DeepMind parkour paper (Heess et al, 2017)](https://arxiv.org/abs/1707.02286),
 demoed below,
-used 64 workers over 100 hours. (The paper does not clarify what "worker"
-means, but I assume it means CPUs.)
+used 64 workers over 100 hours. The paper does not clarify what "worker"
+means, but I assume it means CPUs.
 
 <div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hx_bgoTF7bs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
-These results are *super cool*, and when it first came out I was really excited
-that deep RL was able to learn these running behaviors like this. At the same
-time, the fact that we needed to use 6400 CPU hours to learn these behaviors
-is a bit disheartening. It doesn't feel like these gaits should require that
-much computation to learn.
+These results are *super cool*. When it first came out, I was surprised
+deep RL was able to learn these running behaviors.
+
+At the same time, the fact that we needed to use 6400 CPU hours to learn these
+behaviors is a bit disheartening. It doesn't feel like these gaits should
+require that much computation to learn.
 
 There's an obvious counterpoint here: what if we just ignore sample efficiency?
 There are several settings where it's easy to generate experience. Games are
@@ -138,7 +151,7 @@ When searching for solutions to any research problem, there are usually
 trade-offs between different objectives. You can optimize for getting a really
 good solution for that research problem, or you can optimize for making a good
 research contribution. The best problems are ones where getting a good solution
-*requires* making good research contributions, but it can be hard to find
+requires making good research contributions, but it can be hard to find
 approachable problems that meet that criteria.
 
 On the front of purely getting good performance, deep RL's track record isn't
@@ -166,7 +179,7 @@ and you didn't care how you did it. If that's true, you shouldn't use DQN,
 you should use Monte Carlo Tree Search. Here are baseline
 numbers from [Guo et al, NIPS 2014](https://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning),
 a paper that investigated ways to combine DQN with MCTS. They report the score
-acheived by a trained DQN agent, and an agent that uses UCT, 
+acheived by a trained DQN agent, and an agent that uses UCT,
 the standard version of MCTS.
 
 ![DQN results](/public/rl-hard/dqn_atari.png)
@@ -189,7 +202,7 @@ things that could have been hardcoded.
 The rule-of-thumb is that except in rare cases, domain-specific algorithms
 work faster and better than reinforcement learning. This isn't a problem if
 you're doing reinforcement learning for reinforcement learning's sake, but personally,
-I find it's harder to stay motivated when I compare RL's performance to, well,
+I find it's hard to stay motivated when I compare RL's performance to, well,
 anything else. And it's also harder for me to explain to laypeople why my problems
 are cool and hard and interesting, because they often don't have the context
 or experience to appreciate *why* things are hard.
@@ -205,16 +218,14 @@ when you mention robotics:
 If you look up research papers from the group, you find papers mentioning
 [time-varying LQR, QP solvers, and convex optimization](https://dspace.mit.edu/openaccess-disseminate/1721.1/110533).
 In other words, they mostly apply classical robotics techniques.
-
 The goal of the robot learning community is to show machine learning can
-surpass classical robotics techniques, making it possible to learn behaviors
-that apply to general environments.
+surpass classical robotics techniques, by learning behaviors
+that apply and adapt to general environments.
 
 No one at Boston Dynamics has to explain why teaching a robot to do that is cool.
 It is objectively cool. I mean, *my goodness*.
-Nothing I work on is near that visually impressive. "Oh, you're teaching robots
-to pick things up? Uh, cool, I guess."
-I have to explain why my problems all the time, because often they're hard for
+Nothing I work on is near that visually impressive.
+I have to explain my problems all the time, because often they're hard for
 subtle reasons that don't sound like a big deal if you're missing research
 context.
 
