@@ -164,23 +164,20 @@ no offline training. Oh, and it's running on 2012 hardware. ([Tassa et al, IROS 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uRVAX_sFT24" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
-These behaviors are also really cool! I think they compare well to the parkour
-paper. So what's different between this paper and that one?
+I think these behaviors compare well to the parkour
+paper. What's different between this paper and that one?
 
-The trick is that Tassa et al use model predictive control, which gets to
+The difference is that Tassa et al use model predictive control, which gets to
 perform planning aganist a ground-truth world model (the physics simulator).
-Model-free RL doesn't get to do this planning, and therefore has a much harder
-job. On the other hand, if you have a model, and planning against a model
-can entirely eliminate the need for offline training, why bother with all
-the bells and whistles of training an RL policy?
+Model-free RL doesn't do this planning, and therefore has a much harder
+job. On the other hand, if planning against a model helps this much, why
+bother with the bells and whistles of training an RL policy?
 
-In a similar vein, suppose you just wanted to make a really good Atari agent,
-and you didn't care how you did it. If that's true, you shouldn't use DQN,
-you should use Monte Carlo Tree Search. Here are baseline
-numbers from [Guo et al, NIPS 2014](https://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning),
-a paper that investigated ways to combine DQN with MCTS. They report the score
-acheived by a trained DQN agent, and an agent that uses UCT,
-the standard version of MCTS.
+In a similar vein, you can easily outperform DQN in Atari with off-the-shelf
+Monte Carlo Tree Search. Here are baseline
+numbers from [Guo et al, NIPS 2014](https://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning).
+They compare the scores from a trained DQN to the scores of a UCT agent
+(where UCT is the standard version of MCTS used today.)
 
 ![DQN results](/public/rl-hard/dqn_atari.png)
 {: .centered }
