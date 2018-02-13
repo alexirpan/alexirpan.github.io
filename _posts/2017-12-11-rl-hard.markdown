@@ -83,7 +83,7 @@ It is that hype in particular that needs to be addressed.
 I know it's a bit long, but I'd appreciate it if you would take the time to
 read the entire post before replying.
 
-(Figure out a transition here)
+(TODO: Figure out a transition here)
 
 
 Reinforcement Learning Can Be Horribly Sample Inefficient
@@ -862,7 +862,7 @@ Captain Falcon only, Battlefield only, infinite time matches only.
 even know the easier one is solvable? The
 broad trend of all research is to demonstrate the smallest proof-of-concept
 first and generalize it later. OpenAI is extending their Dota 2 work, and
-the SSBM bot has been extended to play Marth and Sheik. (TODO: add link.)
+there's ongoing work to extend the SSBM bot [to other characters](https://github.com/vladfi1/phillip).
 
 * **There is a way to introduce self-play into learning.** This is a component
 of AlphaGo, AlphaZero, the Dota 2 Shadow Fiend bot, and the SSBM Falcon bot. I
@@ -983,7 +983,7 @@ This is a nice recipe, since it lets you use a faster-but-less-general method
 to speed up initial learning. It's worked in other contexts - see [Sequence Tutor (Jaques et al, ICML 2017)](https://arxiv.org/abs/1611.02796). You can view this as starting the RL process with
 a reasonable prior, instead of a random one.
 
-(I will add the Yann LeCun cake picture here. I really tried to avoid mentioning
+(TODO: I will add the Yann LeCun cake picture here. I really tried to avoid mentioning
 it, but I have to do it.)
 
 
