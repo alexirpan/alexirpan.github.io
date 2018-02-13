@@ -184,7 +184,7 @@ I think these behaviors compare well to the parkour
 paper. What's different between this paper and that one?
 
 The difference is that Tassa et al use model predictive control, which gets to
-perform planning aganist a ground-truth world model (the physics simulator).
+perform planning against a ground-truth world model (the physics simulator).
 Model-free RL doesn't do this planning, and therefore has a much harder
 job. On the other hand, if planning against a model helps this much, why
 bother with the bells and whistles of training an RL policy?
@@ -217,7 +217,7 @@ work faster and better than reinforcement learning. This isn't a problem if
 you're doing deep RL for deep RL's sake, but I
 personally find it frustrating when I compare RL's performance to, well,
 anything else. One reason I liked AlphaGo so much was *because* it was an
-unambiguous win for deep RL. It's a surprisingly rare occurence.
+unambiguous win for deep RL. It's a surprisingly rare occurrence.
 
 And it's also harder for me to explain to laypeople why my problems
 are cool and hard and interesting, because they often don't have the context
@@ -245,7 +245,7 @@ Reinforcement Learning Usually Requires a Reward Oracle
 ==============================================================================
 
 Reinforcement learning assumes the existence of a reward function. Usually,
-this is either given, or it is handtuned offline and kept fixed over the course
+this is either given, or it is hand-tuned offline and kept fixed over the course
 of learning.
 
 Importantly,
@@ -254,11 +254,11 @@ you want.
 And I mean *exactly*. RL has an annoying tendency to overfit to your reward,
 leading to things you didn't expect. This is why Atari is such a nice benchmark. Not only
 is it easy to get lots of samples, the goal in every game is to maximize score,
-so you have never have to worry about defining your reward, and you know everyone
+so you never have to worry about defining your reward, and you know everyone
 else has the same reward function.
 
 This is also why the MuJoCo tasks are popular. Because they're run in simulation,
-you have perfect knowledge of all object stat, which makes reward function design
+you have perfect knowledge of all object state, which makes reward function design
 a lot easier.
 
 In the Reacher task, you control a two-segment arm, that's connected to a central
@@ -344,7 +344,7 @@ design](https://en.wikipedia.org/wiki/Evolvable_hardware#Introduction).
 
 The gray cells are required to get correct behavior, including the one in the top-left corner,
 even though it's connected to nothing.
-[From "An Envolved Circuit, Intrinsic in Silicon, Entwined with Physics"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.50.9691&rep=rep1&type=pdf)
+[From "An Evolved Circuit, Intrinsic in Silicon, Entwined with Physics"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.50.9691&rep=rep1&type=pdf)
 {: .centered }
 
 For a more recent example, see this
@@ -396,7 +396,7 @@ The other way to address this is to do careful reward shaping, adding new
 reward terms and tweaking coefficients of existing ones until the behaviors
 you want to learn fall out of the RL algorithm. It's *possible* to fight
 RL on this front, but it's a very unfulfilling fight. On occasion, it's
-necessary, but I've never felt like I've learning anything by doing it.
+necessary, but I've never felt like I've learnt anything by doing it.
 
 For reference, here is one of the reward functions from the Lego stacking
 paper.
@@ -453,7 +453,7 @@ The previous examples of RL are sometimes called "reward hacking". To me,
 this implies a clever, out-of-the-box solution that gives more reward than the
 intended answer of the reward function designer.
 
-Reward hacking is the exceptions. The much more common case is a poor local optima
+Reward hacking is the exception. The much more common case is a poor local optima
 that comes from getting the exploration-exploitation trade-off wrong.
 
 Here's one of my favorite videos. This is an implementation of
@@ -561,7 +561,7 @@ It's not the wild success people see from pretrained ImageNet features.
 
 To forestall some obvious comments: yes, in principle, training on a wide
 distribution of environments should make these issues go away.
-in some cases, you get such a distribution for free. An example
+In some cases, you get such a distribution for free. An example
 is navigation, where you can sample goal locations randomly, and use
 universal value functions to generalize.
 (See [Universal Value Function Approximators, Schaul et al, ICML 2015](http://proceedings.mlr.press/v37/schaul15.pdf).)
@@ -581,7 +581,7 @@ We studied a toy 2-player combinatorial game, where there's a closed-form analyt
 for optimal play.
 In one of our first experiments, we fixed player 1's behavior, then trained
 player 2 with RL. By doing this, you can treat player 1's actions as part
-of the environment. By trained player 2 against the optimal player 1, we showed
+of the environment. By training player 2 against the optimal player 1, we showed
 RL could learn good strategies. But we also found that if we deployed the same
 policy against a non-optimal player 1, it failed to generalize and did poorly.
 
@@ -615,7 +615,7 @@ only difference between these videos is the random seed. Same learning
 algorithm, same hyperparameters. The diverging behavior is purely from randomness
 in initial conditions.
 
-That being said, there are some neat recents from competitive self-play environments
+That being said, there are some neat results from competitive self-play environments
 that seem to contradict this. [OpenAI has a nice blog post of some of their work in this space](https://blog.openai.com/competitive-self-play/).
 Self-play is also an important part of both
 AlphaGo and AlphaZero. My intuition is that if your agents are learning at
@@ -636,11 +636,11 @@ Supervised learning is stable. Fixed dataset, ground truth targets. If you
 change the hyperparameters a little bit,
 your performance won't change that much. Not all hyperparameters perform
 well, but with all the empirical tricks discovered over the years,
-many hyperparams will show signs of life at train time. These signs of life are
+many hyperparams will show signs of life during training. These signs of life are
 super important, because they tell you that you're on the right track, you're
 doing something reasonable, and it's worth investing more time.
 
-Deep RL isn't stable at all, and it's just hugely annoying for research.
+Currently, deep RL isn't stable at all, and it's just hugely annoying for research.
 
 When I started working at Google Brain, one of the first
 things I did was implement the algorithm from the Normalized Advantage Function
@@ -957,7 +957,7 @@ or bootstrap with self-supervised learning to build good world model. Adding
 more cherries to the cake, so to speak.
 
 **Model-based learning unlocks sample efficiency:** Here's how I describe
-model-based RL: "EVeryone wants to do it, not many people know how." In principle,
+model-based RL: "Everyone wants to do it, not many people know how." In principle,
 a good model fixes a bunch of problems. Good world models transfer well to new tasks,
 and rollouts of the world model let you imagine new experience. From what I've
 seen, model-based approaches use fewer samples as well.
@@ -995,7 +995,7 @@ learning and inverse reinforcement learning are both rich fields that have
 shown reward functions can be implicitly
 defined by human demonstrations or human ratings.
 
-For famous papers in inverse RL and imitatin learning, see
+For famous papers in inverse RL and imitation learning, see
 [Algorithms for Inverse Reinforcement Learning (Ng and Russell, ICML 2000)](http://ai.stanford.edu/~ang/papers/icml00-irl.pdf),
 [Apprenticeship Learning via Inverse Reinforcement Learning (Abbeel and Ng, ICML 2004)](http://ai.stanford.edu/~ang/papers/icml04-apprentice.pdf),
 and [DAgger (Ross, Gordon, and Bagnell, AISTATS 2011)](https://www.cs.cmu.edu/~sross1/publications/Ross-AIStats11-NoRegret.pdf).
@@ -1031,7 +1031,7 @@ and
 [GraspGAN (Bousmalis et al, 2017)](https://research.googleblog.com/2017/10/closing-simulation-to-reality-gap-for.html). (Disclaimer: I worked on GraspGAN.)
 
 
-**Good priors could heavily reducing learning time:** This is closely tied to
+**Good priors could heavily reduce learning time:** This is closely tied to
 the transfer learning point. In one view, transfer learning is about using
 past experience to build a good prior for learning other tasks.
 RL algorithms are designed to apply to any Markov Decision Process.
