@@ -238,7 +238,7 @@ people thought it used RL, but it doesn't.
 If you look up research papers from the group, you find papers mentioning
 [time-varying LQR, QP solvers, and convex optimization](https://dspace.mit.edu/openaccess-disseminate/1721.1/110533).
 In other words, they mostly apply classical robotics techniques. Turns out
-those classical techniques still work pretty well.
+those classical techniques can work pretty well, when you apply them right.
 
 
 Reinforcement Learning Usually Requires a Reward Oracle
@@ -714,11 +714,11 @@ Deep RL adds a new dimension: random chance. And the only way you can address
 random chance is by throwing enough experiments at the problem to drown out
 the noise.
 
-When your training algorithm is both sample inefficient and unstable, it heavily
-slows down your rate of productive research. Maybe it only takes 1 million
+**When your training algorithm is both sample inefficient and unstable, it heavily
+slows down your rate of productive research.** Maybe it only takes 1 million
 steps. But when you multiply that by 5 random seeds, and then multiply that with
 hyperparam tuning, you need an exploding amount of compute to test hypotheses
-effectively. It's all a bit depressing.
+effectively.
 
 > If it makes you feel any better, I've been doing this for a while and it took me last ~6 weeks to get a from-scratch policy gradients implementation to work 50% of the time on a bunch of RL problems. And I also have a GPU cluster available to me, and a number of friends I get lunch with every day who've been in the area for the last few years.
 >
