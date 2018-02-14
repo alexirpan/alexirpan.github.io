@@ -6,7 +6,7 @@ date:   2017-12-11 23:06:00 -0700
 
 
 *This mostly cites papers from Berkeley, Google Brain, DeepMind, and OpenAI
-from the past few years, because their work is most visible to me.
+from the past few years, because that work is most visible to me.
 I'm almost certainly missing stuff from older literature and other
 institutions, and for that I apologize - I'm just one guy, after all.*
 
@@ -59,7 +59,7 @@ there's agreement on what those problems are, and it's easier to build
 agreement if people actually talk about the problems, instead of independently
 re-discovering the same issues over and over again.
 
-I **want** to see more deep RL research. I want new people to join the field. I
+I want to see more deep RL research. I want new people to join the field. I
 also want new people to know what they're getting into.
 
 
@@ -454,7 +454,7 @@ There's no reason to speculate that far when present-day examples happen
 all the time.
 
 
-Even Given a Reward Oracle, Local Optima Can Be Hard To Escape
+Even Given a Good Reward, Local Optima Can Be Hard To Escape
 ==============================================================================
 
 The previous examples of RL are sometimes called "reward hacking". To me,
@@ -590,8 +590,9 @@ for optimal play.
 In one of our first experiments, we fixed player 1's behavior, then trained
 player 2 with RL. By doing this, you can treat player 1's actions as part
 of the environment. By training player 2 against the optimal player 1, we showed
-RL could learn good strategies. But we also found that if we deployed the same
-policy against a non-optimal player 1, it failed to generalize and did poorly.
+RL could reach high performance. But when we deployed the same
+policy against a non-optimal player 1, its performance dropped, because it
+didn't generalize to non-optimal opponents.
 
 [Lanctot et al, NIPS 2017](https://arxiv.org/abs/1711.00832) showed a
 similar result. Here, there are two agents
@@ -1083,8 +1084,7 @@ This very much seems like the future, and the question is whether metalearning
 will get there or not.
 
 A summary of recent learning-to-learn work can be found in
-[this post](http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/)
-from BAIR (Berkeley AI Research).
+[this post from BAIR (Berkeley AI Research)](http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/).
 
 
 **Harder environments could paradoxically be easier:** One of the big lessons
@@ -1130,3 +1130,19 @@ That being said,
 the next time someone asks me whether reinforcement learning can solve their
 problem, I'm still going to tell them that no, it can't. But I'll also tell
 them to ask me again in a few years. By then, maybe it can.
+
+\* \* \*
+{: .centered }
+
+*This post went through a lot of revision. Thanks go to following people
+for reading earlier drafts:
+Daniel Abolafia,
+[Kumar Krishna Agrawal](https://kumarkrishna.github.io),
+[Surya Bhupatiraju](https://www.linkedin.com/in/suryabhupa/),
+[Jared Quincy Davis](https://www.linkedin.com/in/jaredquincydavis/),
+[Ashley Edwards](http://cc.gatech.edu/~aedwards/),
+[Peter Gao](https://www.linkedin.com/in/pgaooo/),
+[Vitchyr Pong](https://people.eecs.berkeley.edu/~vitchyr/),
+Alex Ray,
+and Kelvin Xu. There were several more reviewers who I'm crediting
+anonymously - thanks for all the feedback.*
