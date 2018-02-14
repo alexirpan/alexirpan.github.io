@@ -1067,12 +1067,12 @@ environments in an efficient way.
 One point Pieter Abbeel
 likes to mention in his talks is that deep RL only needs to solve tasks that
 we expect to need in the real world. I agree it makes a lot of sense.
-There should exist a
+There should exist
 a real-world prior that lets us quickly learn new real-world tasks, at the cost
-of learning non-realistic tasks, but that's a perfectly acceptable trade-off.
+of slower learning on non-realistic tasks, but that's a perfectly acceptable trade-off.
 
-The difficulty is that such a real-world prior is very hard to design.
-However, I think there's a good case for optimism.
+The difficulty is that such a real-world prior will be very hard to design.
+However, I think there's a good chance it won't be impossible.
 Personally, I'm excited by the recent work in metalearning, since it provides
 a data-driven way to generate reasonable priors.
 For example, if I wanted to use RL to do warehouse navigation, I'd get pretty
@@ -1103,8 +1103,8 @@ easily has the most traction, but there's also the [Arcade Learning Environment]
 
 
 Finally, although it's unsatisfying from a research
-perspective, the issues of RL may not matter for practical purposes. As a
-hypothetical example, suppose a finance company is using RL. They train a
+perspective, the empirical issues of deep RL may not matter for practical purposes. As a
+hypothetical example, suppose a finance company is using deep RL. They train a
 trading agent based on past data from the US stock market, using 3 random seeds.
 In live A/B testing, one gives 2% less revenue, one performs the
 same, and one gives 2% more revenue. In that hypothetical, reproducibility
@@ -1119,10 +1119,14 @@ worth focusing on the former first.
 Where We Are Now
 ===============================================================================
 
-(TODO: a better conclusion.)
+In many ways, I find myself annoyed with the current state of deep RL.
+And yet, it's attracted some of the strongest research
+interest I've ever seen. My feelings are best summarized by a mindset Andrew
+Ng mentioned in his [Nuts and Bolts of Applying Deep Learning](https://www.youtube.com/watch?v=F1ka6a13S9I)
+talk - a lot of short-term pessimism, balanced by even more long-term optimism.
+Deep RL is a bit messy right now, but I still believe in where it could be.
 
-Overall, although I'm pessimistic about where reinforcement learning *is*, I
-still believe in where reinforcement learning *could be*. That being said,
-the next time someone asks me whether RL can solve their problem, I'm still
-going to tell them that no, it can't. But I'll also tell them to ask me again in
-a few years. By then, maybe it can.
+That being said,
+the next time someone asks me whether reinforcement learning can solve their
+problem, I'm still going to tell them that no, it can't. But I'll also tell
+them to ask me again in a few years. By then, maybe it can.
