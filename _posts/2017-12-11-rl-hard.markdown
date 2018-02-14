@@ -1005,14 +1005,12 @@ and [Guided Policy Search (Levine et al, ICML 2013)](https://graphics.stanford.e
 
 **Use reinforcement learning just as the fine-tuning step:** The first AlphaGo
 paper started with supervised learning, and then did RL fine-tuning on top of it.
-This is a nice recipe, since it lets you use a faster-but-less-general method
-to speed up initial learning. It's worked in other contexts - see [Sequence Tutor (Jaques et al, ICML 2017)](https://arxiv.org/abs/1611.02796). You can view this as starting the RL process with
-a reasonable prior, instead of a random one.
-
-(TODO: I will add the Yann LeCun cake picture here. I really tried to avoid mentioning
-it, but I have to do it.)
-
-
+This is a nice recipe, since it lets you use a faster-but-less-powerful method
+to speed up initial learning. It's worked in other contexts - see
+[Sequence Tutor (Jaques et al, ICML 2017)](https://arxiv.org/abs/1611.02796).
+You can view this as starting the RL process with a reasonable prior, instead of
+a random one, where the problem of learning the prior is offloaded to some
+other approach.
 
 **Reward functions could be learnable:** The promise of ML is that we can use
 data to learn things that are better than human design. If reward function design
@@ -1046,7 +1044,7 @@ unclear, and even the super obvious cases aren't trivial to get working.
 
 [Universal Value Function Approximators (Schaul et al, ICML 2015)](http://proceedings.mlr.press/v37/schaul15.pdf),
 [Distral (Whye Teh et al, NIPS 2017)](https://arxiv.org/abs/1707.04175),
-and [Overcoming catastrophic forgetting (Kirkpatrick et al, PNAS 2017)](https://deepmind.com/blog/enabling-continual-learning-in-neural-networks/) are recent works in this direction.
+and [Overcoming Catastrophic Forgetting (Kirkpatrick et al, PNAS 2017)](https://deepmind.com/blog/enabling-continual-learning-in-neural-networks/) are recent works in this direction.
 For older work, consider reading [Horde (Sutton et al, AAMAS 2011)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.297.6455&rep=rep1&type=pdf).
 
 Robotics
@@ -1058,25 +1056,31 @@ and
 
 
 **Good priors could heavily reduce learning time:** This is closely tied to
-the transfer learning point. In one view, transfer learning is about using
+several of the previous points. In one view, transfer learning is about using
 past experience to build a good prior for learning other tasks.
-RL algorithms are designed to apply to any Markov Decision Process.
-However, we often want to solve a small section of environments.
+RL algorithms are designed to apply to any Markov Decision Process, which is
+where the pain of generality comes in.
+If we accept that our solutions will only perform well on a small section of
+environments, we should be able to leverage shared structure to solve those
+environments in an efficient way.
 
-Personally, I'm excited by the recent work in metalearning, since it provides
-a data-driven way to generate reasonable priors. Earlier, I said that one problem
-with RL is that it tries to do everything.
-We don't need RL to solve everything. We just need it to solve real-world
-tasks. There should exist a
+One point Pieter Abbeel
+likes to mention in his talks is that deep RL only needs to solve tasks that
+we expect to need in the real world. I agree it makes a lot of sense.
+There should exist a
 a real-world prior that lets us quickly learn new real-world tasks, at the cost
-of general learning ability, but that's a perfectly acceptable trade-off.
+of learning non-realistic tasks, but that's a perfectly acceptable trade-off.
 
-I credit Pieter Abbeel for first introducing me to this argument. He mentions
-it in a lot of his talks, and I agree it makes sense.
+The difficulty is that such a real-world prior is very hard to design.
+However, I think there's a good case for optimism.
+Personally, I'm excited by the recent work in metalearning, since it provides
+a data-driven way to generate reasonable priors.
 For example, if I wanted to use RL to do warehouse navigation, I'd get pretty
 curious about using metalearning to learn a good navigation prior,
-and then finetune it for the specific warehouse the robot is deployed in.
-This very much seems like the future - if such a metalearned prior is possible.
+and then fine-tuning the prior for the specific warehouse the robot will be
+deployed in.
+This very much seems like the future, and the question is whether metalearning
+will get there or not.
 
 A summary of recent learning-to-learn work can be found in
 [this post](http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/)
