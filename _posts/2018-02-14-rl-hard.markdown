@@ -1142,6 +1142,7 @@ Daniel Abolafia,
 [Jared Quincy Davis](https://www.linkedin.com/in/jaredquincydavis/),
 [Ashley Edwards](http://cc.gatech.edu/~aedwards/),
 [Peter Gao](https://www.linkedin.com/in/pgaooo/),
+Sherjil Ozair,
 [Vitchyr Pong](https://people.eecs.berkeley.edu/~vitchyr/),
 Alex Ray,
 and Kelvin Xu. There were several more reviewers who I'm crediting
