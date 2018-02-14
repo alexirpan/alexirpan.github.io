@@ -71,10 +71,13 @@ mean I don't like the paper.** I like these papers - they're worth a read, if
 you have the time.
 
 * I use "reinforcement learning" and "deep reinforcement learning"
-interchangeably. **I am criticizing deep reinforcement learning in particular.**
-The papers I cite usually represent the agent with a deep neural net, and
-although the criticisms *may* apply to linear RL or tabular RL, I'm not
-confident they generalize that far.
+interchangeably, because in my day-to-day, "RL" always implicitly
+means deep RL.
+**I am criticizing the empirical behavior of deep reinforcement
+learning, not reinforcement learning in general.**
+The papers I cite usually represent the agent with a deep neural net.
+Although the empirical criticisms *may* apply to linear RL or tabular RL, I'm not
+confident they generalize to smaller problems.
 The hype around deep RL is driven by the promise of applying RL to large, complex,
 high-dimensional environments where good function approximation is necessary.
 It is that hype in particular that needs to be addressed.
@@ -83,10 +86,10 @@ It is that hype in particular that needs to be addressed.
 I know it's a bit long, but I'd appreciate it if you would take the time to
 read the entire post before replying.
 
-(TODO: Figure out a transition here)
+Without further ado, here are some of the failure cases of deep RL.
 
 
-Reinforcement Learning Can Be Horribly Sample Inefficient
+Deep Reinforcement Learning Can Be Horribly Sample Inefficient
 ==============================================================================
 
 The most well-known benchmark for deep reinforcement learning is Atari. As shown
@@ -204,7 +207,9 @@ They compare the scores of a trained DQN to the scores of a UCT agent
 Again, this isn't a fair comparison, because DQN does no search, and MCTS gets to
 perform search against a ground truth model (the Atari emulator).
 However, sometimes you don't care about fair comparisons. Sometimes you just
-want the thing to work.
+want the thing to work. (If you're interested in a full evaluation of UCT,
+see the appendix of the original
+[Arcade Learning Environment paper (Bellemare et al, JAIR 2013)](http://www.marcgbellemare.info/static/publications/bellemare13arcade.pdf).)
 
 Reinforcement learning can theoretically work for anything, including
 environments where a model of the world isn't known. However, this generality
@@ -217,12 +222,11 @@ work faster and better than reinforcement learning. This isn't a problem if
 you're doing deep RL for deep RL's sake, but I
 personally find it frustrating when I compare RL's performance to, well,
 anything else. One reason I liked AlphaGo so much was *because* it was an
-unambiguous win for deep RL. It's a surprisingly rare occurrence.
+unambiguous win for deep RL, and that doesn't happen very often.
 
-And it's also harder for me to explain to laypeople why my problems
+This makes it harder for me to explain to laypeople why my problems
 are cool and hard and interesting, because they often don't have the context
-or experience to appreciate *why* things are hard.
-
+or experience to appreciate *why* they're hard.
 There's an explanation gap between what people think deep RL can do, and
 what it can really do. I'm working in robotics right now. Consider the company
 most people think of
@@ -241,12 +245,13 @@ In other words, they mostly apply classical robotics techniques. Turns out
 those classical techniques can work pretty well, when you apply them right.
 
 
-Reinforcement Learning Usually Requires a Reward Oracle
+Reinforcement Learning Usually Requires a Reward Function
 ==============================================================================
 
 Reinforcement learning assumes the existence of a reward function. Usually,
 this is either given, or it is hand-tuned offline and kept fixed over the course
-of learning.
+of learning. I say "usually" because there are exceptions, such as imitation
+learning or inverse RL, but most RL approaches treat the reward as an oracle.
 
 Importantly,
 for RL to do the right thing, your reward function must capture *exactly* what
@@ -328,11 +333,14 @@ of misspecified reward *was* the boat racing video. And since then, that video's
 been used in several presentations bringing awareness to the problem. So, okay,
 I'll begrudgingly admit this was a good blog post.
 
-Reinforcement learning can be seen as a variant of black-box optimization. In
-these black-box methods, you are given nothing about the environment. You are
-simply told that this gives +1 reward, or it doesn't, and have to learn on your
-own. And the problem is that anything that gives +1 reward is good, even if
-the +1 reward isn't coming for the right reasons.
+RL algorithms fall along a continuum, where they get to assume more or less
+knowledge about the environment they're in. The broadest category, model-free RL,
+is almost the same as black-box optimization. These methods are only allowed to
+assume they are in an MDP. Otherwise, they are given nothing else. The agent
+is simply told that this gives +1 reward, this doesn't, and it has to learn
+the rest on its own.
+And like black-box optimization, the problem is that anything that gives
++1 reward is good, even if the +1 reward isn't coming for the right reasons.
 
 A classic non-RL example is the time someone applied genetic algorithms to
 circuit design, and
@@ -699,7 +707,7 @@ is really close to 0 reward. That means about 25% of runs are failing, just
 because of random seed.
 
 Look, there's variance in supervised learning too, but it's rarely this bad.
-If my supervised learning code failed to beat random chance 30% of the time, I'd have
+If my supervised learning code failed to beat random chance 30% of the time, I'd
 have super high confidence there was a bug in data loading or training. If
 my reinforcement learning code does no better than random, I have no idea if
 it's a bug, if my hyperparameters are bad, or if I simply got unlucky.
@@ -739,11 +747,12 @@ Luckily, we don't have to imagine, because this was inspected by
 the paper ["Deep Reinforcement Learning That Matters" (Henderson et al, AAAI 2018)](https://arxiv.org/abs/1709.06560).
 Among its conclusions are:
 
-* Multiplying the reward by a constant can give significant differences in performance.
+* Multiplying the reward by a constant can cause significant differences in performance.
 * Five random seeds (a common reporting metric) may not be enough to argue
-significant results.
+significant results, since with careful selection you can get non-overlapping
+confidence intervals.
 * Different implementations of the same algorithm have different performance on
-the same task.
+the same task, even when the same hyperparameters are used.
 
 My theory is that RL is very sensitive to both your initialization and to the
 dynamics of your training process, because your data is always collected online
@@ -756,9 +765,6 @@ more confident that any deviation it tries will fail.
 
 But What About All The Great Things Deep RL Has Done For Us?
 ==================================================================
-
-(TODO: add RL + SL methods? Papers mentioned: Finetuning RNNs for music
-generation, NTMs, etc.)
 
 Deep reinforcement learning has certainly done some very cool things. DQN is
 old news now, but was absolutely *nuts* at the time. A single model was able to
@@ -781,15 +787,15 @@ Jack Clark from OpenAI
 (The tweet is from last year, before AutoML was announced.)
 
 I know Audi's doing something with deep RL, since they demoed a self-driving
-RC car at NIPS and said it used reinforcement learning. I know there's some
+RC car at NIPS and said it used deep RL. I know there's some
 neat work
 [optimizing device placement for large Tensorflow graphs (Mirhoseini et al, ICML 2017)](https://arxiv.org/abs/1706.04972).
-Salesforce has their text summarization model, which worked if you massage the
-RL more carefully.
+Salesforce has their text summarization model, which worked if you massaged the
+RL carefully enough.
 Finance companies are surely experimenting with RL as we speak, but so far
 there's no definitive proof. (Of course, finance companies have reasons to be cagey
 about how they play the market, so perhaps the evidence there is never going to
-be strong.) Facebook's been doing some neat work with RL for chatbots and
+be strong.) Facebook's been doing some neat work with deep RL for chatbots and
 conversation. Every Internet company ever has probably thought about adding RL to
 their ad-serving model, but if anyone's done it, they've kept quiet about it.
 
@@ -812,27 +818,33 @@ with RL is that you're trying to solve several very different environments
 with the same approach. It's only natural that it won't work all the time.
 
 That being said, we can draw conclusions from the current list of deep
-reinforcement learning successes. Here's my list so far.
+reinforcement learning successes. These are projects where deep RL either
+learns some qualitatively impressive behavior, or
+it learns something better than comparable prior work. (Admittedly, this
+is a very subjective criteria.)
+
+Here's my list so far.
 
 * Things mentioned in the previous sections: DQN, AlphaGo, AlphaZero,
-the parkour bot, reducing power center usage, Neural Architecture Search.
+the parkour bot, reducing power center usage, and AutoML with Neural
+Architecture Search.
 * [OpenAI's Dota 2 1v1 Shadow Fiend bot, which beat top pro players in a
 simplified duel setting.](https://blog.openai.com/dota-2/)
-* [A Super Smash Brothers Melee bot](https://arxiv.org/abs/1702.06230) from students at MIT and NYU, that can beat
+* [A Super Smash Brothers Melee bot](https://arxiv.org/abs/1702.06230) that can beat
 pro players at [1v1 Falcon dittos](https://www.youtube.com/watch?v=dXJUlqBsZtE).
 (Firoiu et al, 2017).
 
 (A quick aside: machine learning recently beat pro players at no-limit
 heads up Texas Hold'Em. This was done by both [Libratus (Brown et al, IJCAI 2017)](https://www.ijcai.org/proceedings/2017/0772.pdf)
 and [DeepStack (Moravčík et al, 2017)](https://arxiv.org/abs/1701.01724).
-I've talked to a few people who believed these used deep RL.
+I've talked to a few people who believed this was done with deep RL.
 They're both very cool, but they don't use deep RL.
 They use counterfactual regret minimization and clever iterative solving of
 subgames.)
 
-From this list, we can identify common properties that make learning more
-feasible. None of the properties below are required, but every one of them
-helps.
+From this list, we can identify common properties that make learning easier.
+None of the properties below are *required* for learning, but satisfying more
+of them is definitively better.
 
 * **It is easy to generate near unbounded amounts of experience.**
 It should be clear why this helps. The more data you have, the easier the learning
@@ -855,8 +867,9 @@ anything! That doesn't mean you have to do everything at once.
     The OpenAI Dota 2 bot only played the early game, only played Shadow Fiend against Shadow
 Fiend in a 1v1 laning setting, used hardcoded item builds, and presumably
 called the [Dota 2 API](https://developer.valvesoftware.com/wiki/Dota_2_Workshop_Tools/Scripting/API)
-to avoid having to solve perception. The SSBM bot started with 1v1 games,
-Captain Falcon only, Battlefield only, infinite time matches only.
+to avoid having to solve perception. The SSBM bot acheived superhuman performance,
+but it was only in 1v1 games, with Captain Falcon only, on Battlefield only,
+in an infinite time match.
 
     This isn't a dig at either bot. Why work on a hard problem when you don't
 even know the easier one is solvable? The
@@ -892,8 +905,17 @@ and taken, which gives signal for every attack that successfully lands. The shor
 the delay between action and consequence, the faster the feedback loop gets
 closed, and the easier it is for reinforcement learning to figure out a path to high reward.
 
-We can combine a few of these principles to analyze the success of Neural
-Architecture Search. As mentioned above, the reward is validation accuracy.
+
+A Case Study: Neural Architecture Search
+===============================================================================
+
+We can combine a few of the principles to analyze the success of Neural
+Architecture Search. According to the initial [ICLR 2017 version](https://arxiv.org/abs/1611.01578),
+after 12800 examples, deep RL was able to design state-of-the art neural
+net architectures. Admittedly, each example required training a neural net
+to convergence, but this is still very sample efficient.
+
+As mentioned above, the reward is validation accuracy.
 This is a very rich reward signal - if a neural net design decision only increases
 accuracy from 70% to 71%, RL will still pick up on this. Additionally, there's
 evidence that hyperparameters in deep learning are close to
@@ -902,17 +924,19 @@ Optimization: A Spectral Approach (Hazan et al, 2017)](https://arxiv.org/abs/170
 [here]({% post_url 2017-06-27-hyperparam-spectral %}) if interested.)
 NAS isn't exactly tuning hyperparameters, but I think it's reasonable
 that neural net design decisions would act similarly. This is good
-news for learning because the correlations between decision and performance
+news for learning, because the correlations between decision and performance
 are strong. Finally, not only is the reward rich, it's actually what we care
 about when we train models.
 
 The combination of all these points helps me understand why it "only" takes about
 12800 trained networks to learn a better one, compared to the millions of examples
-needed in other environments.
+needed in other environments. Several parts of the problem are all pushing in
+RL's favor.
 
 Overall, success stories this strong are still the exception, not the rule.
 Many things have to go right for reinforcement learning to be a plausible
 solution, and even then, it's not a free ride to make that solution happen.
+
 In short: deep RL is currently not a plug-and-play technology.
 
 
@@ -958,7 +982,9 @@ more cherries to the cake, so to speak.
 
 **Model-based learning unlocks sample efficiency:** Here's how I describe
 model-based RL: "Everyone wants to do it, not many people know how." In principle,
-a good model fixes a bunch of problems. Good world models transfer well to new tasks,
+a good model fixes a bunch of problems. As seen in AlphaGo, having a model
+at all makes it much easier to learn a good solution.
+Good world models will transfer well to new tasks,
 and rollouts of the world model let you imagine new experience. From what I've
 seen, model-based approaches use fewer samples as well.
 
@@ -977,8 +1003,8 @@ For papers combining model-based learning with deep nets, I would recommend a fe
 [Deep Spatial Autoencoders for Visuomotor Learning (Finn et al, ICRA 2016)](http://rll.berkeley.edu/dsae/dsae.pdf),
 and [Guided Policy Search (Levine et al, ICML 2013)](https://graphics.stanford.edu/projects/gpspaper/gps_full.pdf).
 
-**Use reinforcement learning just as the finetuning step:** The first AlphaGo
-paper started with supervised learning, and then did RL finetuning on top of it.
+**Use reinforcement learning just as the fine-tuning step:** The first AlphaGo
+paper started with supervised learning, and then did RL fine-tuning on top of it.
 This is a nice recipe, since it lets you use a faster-but-less-general method
 to speed up initial learning. It's worked in other contexts - see [Sequence Tutor (Jaques et al, ICML 2017)](https://arxiv.org/abs/1611.02796). You can view this as starting the RL process with
 a reasonable prior, instead of a random one.
