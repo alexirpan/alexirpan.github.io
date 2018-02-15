@@ -1002,7 +1002,7 @@ For papers combining model-based learning with deep nets, I would recommend a fe
 [Self-Supervised Visual Planning with Temporal Skip Connections (Ebert et al, CoRL 2017)](https://arxiv.org/abs/1710.05268),
 [Combining Model-Based and Model-Free Updates for Trajectory-Centric Reinforcement Learning (Chebotar et al, ICML 2017)](https://arxiv.org/abs/1703.03078).
 [Deep Spatial Autoencoders for Visuomotor Learning (Finn et al, ICRA 2016)](http://rll.berkeley.edu/dsae/dsae.pdf),
-and [Guided Policy Search (Levine et al, ICML 2013)](https://graphics.stanford.edu/projects/gpspaper/gps_full.pdf).
+and [Guided Policy Search (Levine et al, JMLR 2016)](http://jmlr.org/papers/v17/15-522.html).
 
 **Use reinforcement learning just as the fine-tuning step:** The first AlphaGo
 paper started with supervised learning, and then did RL fine-tuning on top of it.
@@ -1142,6 +1142,7 @@ Daniel Abolafia,
 [Jared Quincy Davis](https://www.linkedin.com/in/jaredquincydavis/),
 [Ashley Edwards](http://cc.gatech.edu/~aedwards/),
 [Peter Gao](https://www.linkedin.com/in/pgaooo/),
+Julian Ibarz,
 Sherjil Ozair,
 [Vitchyr Pong](https://people.eecs.berkeley.edu/~vitchyr/),
 Alex Ray,
