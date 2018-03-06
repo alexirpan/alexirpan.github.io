@@ -16,39 +16,57 @@ feeling, but in the interest of avoiding the [Tough Act To Follow](http://tvtrop
 problem, I'm planning to write shorter posts, and to release them more
 frequently.
 
-To close the thread on the deep RL post: why did I decide to make it a blog
-post, instead of a paper? In some sense, it could have been a paper. The post
-lies somewhere between a survey paper and a policy paper, and although there isn't
-a great venue for either, I could have thrown it on arXiv if I wanted to.
+For the first of those posts, I'll be exploring this question: **What's the
+difference between a blog post and a research paper, and why did I choose to
+write a blog post instead of a paper?**
+
+In some sense, the deep RL blog post could have been a paper. Topic-wise, it
+lies somewhere between a survey paper and a policy paper, and in principle,
+I could have tossed it on arXiv if I wanted to.
 
 However, I do think it needed to be a blog post, for a few reasons.
 
-First of all, I knew going on that I wanted videos of learned agents. It is
-so, so much easier to explain agent behavior if you can actually show recordings
-of those agents. Papers often come with a recorded video, but this is often
-relegated as supplemental material that can be skipped. I didn't want people to
-skip my videos.
+One of the big ones was videos.
+When planning the post, I knew that I wanted lots of videos.
+It is so, so much easier to explain the behavior of these algorithms
+if you can actually show videos of those behaviors. Writing it as a blog
+post made this easier.
 
-Secondly, I deliberately wanted a more colloquial tone that wasn't a great fit
-for a paper. If it wasn't clear from the Futurama meme, the post was never
-trying to be scholarly or formal. I felt it was easier for me to explain myself
-that way. It's not that formal writing is a bad writing style. It's more that
-there's a time and place for it, and the points I wanted to make didn't
-require formal writing - so I just didn't write it that way.
+Another was that I deliberately wanted to strike a more colloquial tone. If
+it wasn't clear from the Futurama meme, the post was never trying to be
+scholarly or formal. It's not that formal writing is a bad writing style.
+It's more that there's a time and place for it, and I found it easier to make
+the points I wanted to make if I let the writing be looser.
 
-The third reason is going to sound pretentious, but the medium of writing
-affects expectations about that writing. Maybe it's just me, but I feel like
-research papers are always implicitly trying to present something that's true
-about the world. Usually, that truth is, "here is a problem, which has had
-several approaches, and we demonstrate that our approach performs better."
-On the other hand, blog posts can be much more opinionated. Both blog posts
+Although both of these reasons were important, they're a bit trivial. The
+two most important reasons were that **I wanted a narrow target audience**, and
+**I wanted it to be an opinion piece**.
+
+This is going to sound pretentious, but the medium of writing
+affects expectations about that writing. Messaging apps encourage short
+sentence, whereas email encourages longer paragraphs. In a similar vein, I feel
+that blog posts encourage making opinions, whereas papers encourage stating
+truths. This might not make sense, so let me explain.
+
+Both blog posts
 and papers try to argue something by presenting evidence that supports
 that argument, and explaining away evidence that refutes it. However, I feel
-like the standard needed for a blog post is a lot lower, and that makes them
-well-suited for arguments about more nebulous things, like the state of a field.
-I'm glad that people are agreeing with my post, but at the time of writing it,
-I knew that people might have disagreed with the entire thing. I was fine with
-that, as long as it was clear why I arrived at the conclusions I did.
+that the standard expected out of a paper is a lot higher. People expect papers
+to be careful about their conclusions. Whether the average paper does this is
+up for debate, but it's certainly a desired end goal. If papers are supposed
+to be kernels of truth about the world, then it's only natural to hold them
+to a high standard.
+
+In contrast, although a blog post can state truths, they are not expected
+to *only* say true things. Most blog posts only list one author, and because of
+this, there's always this implicit question that the entire post is just that
+person's opinion. That makes blog posts well-suited for writing about topics
+that are inherently up for debate. Topics like, say, the state of a field, and
+where it is, and where it's going.
+
+At the time of writing, I wasn't sure whether people would agree with me or not.
+And I was fine with that. As long as the post made it clear why I arrived at
+the conclusions I did, I'd be okay with it.
 
 The fourth was that my target audience was much narrower than the audience for
 a research paper. I was specifically writing towards people who either worked
