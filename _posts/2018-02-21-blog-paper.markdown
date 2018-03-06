@@ -12,8 +12,9 @@ similar.
 
 To any new readers I might have: prepare to be disappointed. There is a good
 chance I'll never write anything as good or as popular again. It's a weird
-feeling, but in the interest of avoiding  "A [Tough Act To Follow](http://tvtropes.org/pmwiki/pmwiki.php/Main/ToughActToFollow)",
-I'm planning to write shorter posts, released more frequently.
+feeling, but in the interest of avoiding the [Tough Act To Follow](http://tvtropes.org/pmwiki/pmwiki.php/Main/ToughActToFollow)
+problem, I'm planning to write shorter posts, and to release them more
+frequently.
 
 To close the thread on the deep RL post: why did I decide to make it a blog
 post, instead of a paper? In some sense, it could have been a paper. The post
@@ -61,41 +62,27 @@ and experiment sections will take time to work through, but will explain the
 idea and how it worked out in practice.
 
 Once you have experience in a field, research papers become shockingly
-inefficient. The introduction covers a problem you've known about for months,
-if not years. The related work section cites mostly papers you've heard about,
-and exists just to convince other researchers that you've seen their work. The
-methods section is filled with preamble and boilerplate. By now, I've probably
-read over a hundred different introductions of RL, Q-Learning, and
-policy gradient.
+inefficient. The introduction covers a problem you've known about for months.
+The related work section cites papers you've already read, or at least have
+already heard about, and seems to exist just to convince other researchers you're
+aware of their work. The methods section is filled with preamble and
+boilerplate you've seen a billion times. I have lost track of how many times
+I've read an introdouction of RL, Q-Learning, or policy gradient, but I think
+it's at least a hundred.
 
+Here is a reviewer comment from a paper I worked on: "the 2 minute video
+accompanying your paper was better than the paper itself." Isn't that
+interesting?
 
-Research papers are for explaining new research. They do so according to
-fairly strict constraints. There must be an introduction, explaining the
-problem. There must be a related work section, citing every recent paper
-that tried the same problem. There must be a methods section, there have
-to be experiments, and there has to be a conclusion. In deep learning, it
-also all has to fit in 8 pages, since that's a common page limit for
-several conferences.
+I was not in the mood to explain how DQN worked, or how policy gradient worked.
+I wanted to cut past all that, and writing it as a blog post made that easier.
 
-Once you have experience in a field, research papers are a shockingly
-inefficient way of explaining knowledge.
-The introduction and related
-work sections are great when you're new, but veterans will already know
-what your problem is and what's been done on it recently. The methods
-section explains everything in detail to stay accountable, but veterans
-can often get away with skimming a paper for the key idea, letting their
-latent knowledge fill in the gaps. As an example, it feels like every RL paper
-explains that policy $$\pi$$ is trained to maximize reward in an environment,
-or defines what a $$Q$$-function is.
-I've organized a few lightning talk
-sessions, where people do quick 5-minute presentations of papers they've
-read, and this is often enough for the key idea. Once you strip out the
-problem definition, skip the careful qualification to prior work, and pass
-over all the intervening details, the rest is quite short.
+The research paper format encourages the author to be complete, but very few
+people are going to need everything the paper has to offer. That's fine! Papers
+aren't written for just one person, they're written for everyone. But once
+you strip out the problem definition, skip the careful qualification to prior
+work, and accept the intervening details on faith, the core idea is often quite
+short. Sometimes that's all you're looking for.
 
-I still remember an interesting reviewer comment I got: "your 2 minute
-video summarizing the paper was clearer than your actual paper." The
-research paper format is meant to be complete, but not everybody needs
-everything the paper is trying to explain.
-
-
+I have a pet theory that the reason academics like Twitter is because it's short
+enough that writing boilerplate is impossible. But it's just a theory.
