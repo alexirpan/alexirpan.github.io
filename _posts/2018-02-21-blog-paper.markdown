@@ -4,11 +4,10 @@ title:  "Blog Posts and Research Papers"
 date:   2018-02-21 01:01:00 -0800
 ---
 
-I've been blown away by the reception to my most recent "Deep RL Doesn't
-Work Yet" blog post. In retrospect, it was a perfect storm - I spent a lot of
+I've been blown away by the reception to my most recent
+"[Deep RL Doesn't Work Yet]({% post_url 2018-02-14-rl-hard %})" blog post. In retrospect, it was a perfect storm - I spent a lot of
 time on the post, it was about a popular subject, most people agreed with
 the post's overarching message, and yet very few people had written about it.
-That left room for me.
 
 To any new readers I might have: prepare to be disappointed. There is a good
 chance I'll never write anything as good or as popular again. It's a weird
@@ -16,9 +15,9 @@ feeling, but in the interest of avoiding the [Tough Act To Follow](http://tvtrop
 problem, I'm planning to write shorter posts, and to release them more
 frequently.
 
-For the first of those posts, I'll be exploring this question: **What's the
-difference between a blog post and a research paper, and why did I choose to
-write a blog post instead of a paper?**
+To close the thread on the RL blog post,
+I'll be exploring this question: **What's the
+difference between a blog post and a research paper?**
 
 In some sense, the deep RL blog post could have been a paper. Topic-wise, it
 lies somewhere between a survey paper and a policy paper, and in principle,
@@ -26,45 +25,49 @@ I could have tossed it on arXiv if I wanted to.
 
 However, I do think it needed to be a blog post.
 
-One of the big reasons was videos.
-When planning the post, I knew that I wanted lots of videos.
+One reason was that I knew I wanted lots of videos.
 It is so, so much easier to explain the behavior of these algorithms
-if you can actually show videos of those behaviors. Writing it as a blog
-post made this easier.
+if you can actually show videos of those behaviors. Papers have videos
+too, but they're often marked as supplemental material, whereas I wanted them
+to be front and center.
 
-Another was that I deliberately wanted to strike a more colloquial tone. If
+Another was that I deliberately wanted to be more colloquial. If
 it wasn't clear from the Futurama meme, the post was never trying to be
-scholarly or formal. It's not that formal writing is a bad writing style.
+formal. It's not that formal writing is a bad writing style.
 It's more that there's a time and place for it, and I found it easier to make
 the points I wanted to make if I let the writing be looser.
 
-Although both of these reasons matter, the more important reasons were that
-I wanted to be more opinionated, and I was aiming for a narrower target
-audience.
+Both of those reasons played a role in my decision to write a blog post
+instead of paper, but they're also both fairly superficial. The most important
+reasons went a bit deeper.
 
 This is going to sound pretentious, but the medium of writing
 affects expectations about that writing. Messaging apps encourage short
-sentence, whereas email encourages longer paragraphs. In a similar vein, I feel
+sentences, whereas email encourages longer paragraphs, and that influences the
+kind of messages you can get across. In a similar vein, I feel
 that blog posts encourage stating opinions, whereas papers encourage stating
 truths. This might not make sense, so let me explain.
 
 Both blog posts
-and papers try to argue something by presenting evidence that supports something
-and explaining away evidence that refutes it. That's practically the definition
+and papers argue their points by presenting evidence that support their points
+and explaining away evidence that refutes them. That's practically the definition
 of writing. However, I feel that papers in particular are held to a high
-standard. People expect papers to be both comprehensive and careful about their
-conclusions. Whether the average paper does this is
+standard. People expect papers to be both careful and comprehensive.
+Whether the average paper does this is
 up for debate, but it's certainly what people aim for.
 
 If papers are supposed to be kernels of truth about the world, then it's only
-natural that they be careful in their analysis. But the flip side of this is that
-it's harder for papers to speculate. Increasing the burden of proof
-places restrictions on what you can say.
+natural that people expect high-quality arguments, where every claim is backed
+up with evidence. But the flip side of this is that
+it's harder for papers to speculate. Increasing the burden of proof restricts
+what you can say. For particularly nebulous topics, it can be hard to reach that
+burden of proof.
 
-In contrast, blog posts, keynote talks, and so on are often much more free to
-state opinions, rather than facts. Of course, people still *expect* your argument
-to be solid, but it's not required.
-That makes blog posts well-suited for writing about topics
+In contrast, blog posts, keynote talks, and so on are much more free to
+be opinionated.
+People still *expect* your argument to be solid, but the burden of proof for
+"acceptable blog post" feels lower.
+That makes them well-suited for writing about topics
 that are inherently up for debate. Topics like, say, the state of a field, and
 where it is, and where it's going.
 
@@ -80,7 +83,7 @@ The advantage of narrow targeting is that I was free to jump directly to the
 points I wanted to make.
 
 I'm starting to believe that research papers are a shockingly inefficient
-way to communicate.
+way to communicate new ideas.
 When you're new to a field, research papers are a dense yet rewarding gold mine.
 The introduction talks about a problem you didn't even know existed. The
 related work is a treasure trove of papers to read next. The methods
@@ -99,11 +102,13 @@ like this:
 
 > Let $$S$$ and $$A$$ be the states and actions of a Markov decision
 process (MDP). Policy $$\pi$$ gives a distribution over actions, given state
-$$s$$. Our objective is to maximize reward."
+$$s$$. A trajectory is a sequence ($$s_1, a_1, s_2, a_2, \ldots$$), and our
+objective is to learn a $$\pi$$ that maximizes reward.
 
-And then depending on the paper,
+Depending on the paper,
 it'll either explain what Q-Learning is, or explain what policy gradient is.
-I was not in the mood to explain any of that.
+I was not in the mood to explain either in my RL post. So I decided to assume
+the reader already knew how they worked, and moved on.
 
 Did you know [there's a paper for MDP notation](https://arxiv.org/abs/1512.09075)?
 It exists just so that authors can use a single sentence for their notation,
@@ -111,29 +116,30 @@ instead of writing paragraphs of it. I half-suspect this was created when the
 author was trying to figure out how to get their paper to fit within the page
 limit for one of the ML conferences.
 
-The research paper format encourages the author to be complete. That's fine! I
-don't think papers should be written any differently. Papers are written
+**The research paper format encourages the authors to be complete.** That's fine! I
+don't think papers need to change. Papers are written
 for everyone, from the enthusiast to the new undergrad and the tenured
 professor. It's just that very few people need everything that's in the paper.
 These days, I usually read papers for their key ideas, and only read more
-closely if I'm trying to reproduce or extend their results.
+closely if I'm trying to reproduce or extend its results.
 Once you strip out the problem definition, skip the careful qualification to prior
 work, and accept the intervening details on faith, the core idea is often just
 a few paragraphs.
 
-Here is a paraphrased reviewer comment from a paper I worked on: "your 2 minute
+Here is a paraphrased reviewer comment from a paper I worked on: "Your 2 minute
 video was better at explaining your work than the paper itself."
 Isn't that interesting? It's technically wrong, since the video didn't mention
 any of the implementation details. And at the same time, I found myself
-agreeing with that revieiwer.
+agreeing with the comment.
 
-Everyone says that conferences are less about the papers, and more about networking
-and talking shop with other people in the field. Papers are important, but they
-aren't the only way to contribute something.
+The RL blog post argues many things, but one thing it's shown is that papers
+aren't the only way to contribute to a field. Papers matter, but they're not
+the only thing that matters. Yes, blog posts are one way to contribute, but
+there's also open-sourcing code, advocating for best practices, and creating
+tutorials for newcomers.
 
 I went to NIPS last year. Over the course of a week, [679 papers](https://unsupervisedmethods.com/nips-accepted-papers-stats-26f124843aa0)
 were presented. At the end of NIPS, what was everyone talking about?
-
 [Ali Rahimi's Test of Time talk](http://www.argmin.net/2017/12/05/kitchen-sinks/).
 
 Food for thought.
