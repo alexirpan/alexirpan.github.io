@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Blog Posts and Research Papers"
-date:   2018-02-21 01:01:00 -0800
+date:   2018-03-07 03:00:00 -0800
 ---
 
 I've been blown away by the reception to my most recent
