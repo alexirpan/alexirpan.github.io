@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "First Impressions with the MTG Arena Beta, and Fleeting Fancies"
-date:   2018-03-07 03:00:00 -0800
+date:   2018-03-29 02:07:00 -0800
 ---
 
 I've played Magic: the Gathering on and off for nearly 15 years. It's a
@@ -42,8 +42,9 @@ currently very difficult to build good ones, even if you spend a lot of time
 playing the game.
 
 Now, I was planning on writing a post complaining about the economy,
-but then [a really good post that covered everything I wanted to cover](https://rngeternal.com/2018/03/28/going-deep-analyzing-the-mtga-economy/).
-Instead of repeating the same points, I'll share some realizations I had.
+but then [I read a really good post that covered everything I wanted to cover](https://rngeternal.com/2018/03/28/going-deep-analyzing-the-mtga-economy/),
+and I realized I had nothing to add.
+Instead, I'll share some points I realized.
 
 I have a lot more respect for Hearthstone's core economy. I don't like
 where Hearthstone's gameplay has gone, but the core dusting and crafting
@@ -68,46 +69,56 @@ Nothing about that environment was going to last, but I didn't expect it to.
 In many ways it reminds me of the early years of the brony fandom. A ton of
 ridiculous stuff happened, and no one knew where the fandom was going, but just
 being on the ride was exciting. The first BronyCon must have been insane, because
-I doubt there was a good understanding for what a brony convention should do.
+I doubt there was a good understanding for what a brony convention should aspire
+to be.
 
 The fandom has cooled down since then. Content creators settled in. Conventions
-have turned into institutions. Season 3 disappointed a lot of fans. The fandom's
+have become more like institutions. Season 3 didn't help, given that it was
+disappointing compared to Seasons 1 and 2. The fandom's
 still going - Season 8 premiered last week - but it's condensed into something
 that's lost a lot of its initial magic.
 
-The question is whether people should have expected the fandom to keep its magic
-forever. On reflection, I don't think ponies were ever going to stay as
-culturually relevant as they were in 2012. And there's nothing wrong with that.
-Fads come and go. But if you calibrated your definition of "fandom" to the peak
-of that fandom's relevance, then everything afterwards is going to be a
-disappointment. I saw a Reddit post asking if research in deep learning was
+The question is whether people should have expected the brony fandom to keep
+its magic forever. On reflection, ponies were never going to stay as culturally
+visible as they were in 2012 or 2013. I feel a heavy part of the fandom's growth was
+its unexpectedness. Very few people expected a reboot of My Little Pony
+to actually be good, and it was that surprise that pulled people in. Now that
+people know it's a cartoon that people like, there's less pressure to see what
+all the fuss is about.
+
+There's nothing wrong with that. Cultural touchstones come and go. But if your definition of "fandom"
+is calibrated to the peak insanity of that fandom, then
+everything afterwards is going to be a disappointment. I saw a Reddit post asking if research in deep learning was
 slowing down. I don't think it is, but I do feel there have been fewer
 fundamental architecture shifts. There were a few years where every
-state-of-the-art ImageNet model introduced something new, and if you were watching
-the field at that time, the field would have looked ridiculously open. It's a lot less
-ridiculous now.
+state-of-the-art ImageNet model introduced a new idea, and if you were watching
+the field at that time, the field would have looked ridiculously open. It's a
+lot less ridiculous now.
 
-This is a personal thing, but I'm not a big fandom jumper. I tend to get into a
+I'm not a big fandom jumper. I tend to get into a
 few fandoms, and then stick with them for a long, long time. And for a while,
-I looked down on people who kept jumping fandoms. It felt like they were just
-chasing the new high, the new thing. I didn't seem them as "true fans", I saw
-them as people who liked the collective enthusiasm of new things, and as soon
-as it stopped they had to jump to the next new thing to get their fix.
-I don't look down on this anymore. If that's what people are looking for, who
-am I to judge?
+I looked down on people who did jump fandoms. It felt like they were
+chasing the high of the new thing, that they were in love with the collective
+enthusiasm of fandom, instead of the work the fandom was based on. I didn't
+see them as "true fans", because as soon as the next new thing came around,
+they'd leave.
+I don't look down on this behavior anymore. If that's what people are looking
+for, who am I to judge?
 
-it's just that if you do decide to stick with something, and it starts getting
-worse, I don't think it's productive to complain about "the good old days."
-It's okay to analyze it, or try to fix it, or even explain why you're leaving,
+It's just that if the community does get worse, I don't think
+it's productive to complain about "the good old days."
+Analyzing it or trying to fix it is fine,
 but I suspect that many communities start because of forces outside of their
-control. People get pulled in, and then something eventually breaks down.
-People who don't like this blame the community for "ruining something", or
+control. People get pulled in, those outside forces go away, and then when
+things change, people blame the community for "ruining things", or
 "destroying the fandom", instead of blaming
 the disappearance of the outside forces that made the community grow in the
 first place.
 
-The thing that gets you into a community doesn't have to be the thing that
-gets you to stay. There's even a [TVTropes page](http://tvtropes.org/pmwiki/pmwiki.php/JustForFun/ComeForTheXStayForTheY)
-for this. If the community has moved to a point that you don't want to stay at,
-and if it doesn't seem like you can change it, then perhaps you should just
-leave, and cherish the good times you had.
+The thing that gets people into a community doesn't have to be the thing that
+gets people to stay. There's even a [TVTropes page](http://tvtropes.org/pmwiki/pmwiki.php/JustForFun/ComeForTheXStayForTheY)
+for this. If the community starts getting worse, maybe the problem isn't
+the community. Maybe the problem is that you were pulled in by something that
+the community was never really about. And if you can't
+change that, then the easiest thing to do is to leave with the memories of the
+good times you had.
