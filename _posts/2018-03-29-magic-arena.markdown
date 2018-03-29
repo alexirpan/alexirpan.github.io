@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "First Impressions with the MTG Arena Beta, and Fleeting Fancies"
-date:   2018-03-29 02:07:00 -0800
+date:   2018-03-29 02:31:00 -0700
 ---
 
 I've played Magic: the Gathering on and off for nearly 15 years. It's a
@@ -26,7 +26,10 @@ consequence of Magic's rules engine. It doesn't "pop" as much as Hearthstone
 does, but the core gameplay is a lot more interesting to me, and that's what's
 bringing me back.
 
-The experience in the first few days after the NDA drop was pretty magical.
+![Picture of Magic Arena](/public/magic-arena/arena.png)
+{: .centered }
+
+The experience right after the NDA drop was pretty magical.
 Everyone's account got wiped, and you can't spend real money yet.
 Not only was everyone on a level playing
 field, no one could pay-to-win their way to a strong deck.
@@ -36,7 +39,7 @@ and builds a deck out of those cards.
 A Sealed league is a Sealed tournament that runs over several weeks.
 Every 1-2 weeks, players add an extra booster pack to their card pool.
 
-Arena is essentially in a similar state, thanks to the slow unlock rate.
+Arena is working in almost exactly the same way, thanks to the slow unlock rate.
 And therein lies the problem. Most people have terrible decks, because it's
 currently very difficult to build good ones, even if you spend a lot of time
 playing the game.
@@ -80,11 +83,17 @@ that's lost a lot of its initial magic.
 
 The question is whether people should have expected the brony fandom to keep
 its magic forever. On reflection, ponies were never going to stay as culturally
-visible as they were in 2012 or 2013. I feel a heavy part of the fandom's growth was
+visible as they were in 2011 or 2012. I feel a heavy part of the fandom's growth was
 its unexpectedness. Very few people expected a reboot of My Little Pony
 to actually be good, and it was that surprise that pulled people in. Now that
 people know it's a cartoon that people like, there's less pressure to see what
 all the fuss is about.
+
+![MLP poster from Comic Con 2011](/public/magic-arena/ponyposter.png)
+{: .centered }
+
+[Source](https://ponycomicconposter.deviantart.com/art/16k-Pony-Con-Poster-w-logos-251869643)
+{: .centered }
 
 There's nothing wrong with that. Cultural touchstones come and go. But if your definition of "fandom"
 is calibrated to the peak insanity of that fandom, then
