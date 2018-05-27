@@ -1,0 +1,72 @@
+---
+layout: post
+title:  "ICLR 2018 and ICRA 2018"
+date:   2018-05-27 15:38:00 -0700
+---
+
+I intended to write this post right after ICLR, but got busy and
+never found the time. Now I have the time, several weeks after it happened.
+I'm writing this on the plane back from ICRA, which was only 2 (CHECK0
+weeks after ICLR.
+
+I figured it would be interesting to compare and contrast ICLR (a deep
+learning focused conference) with ICRA (a robotics focused conference).
+
+First off, it is really, really shocking how short my memory for conferences
+is. It's only been about 2 weeks after ICLR and I have already forgotten
+almost all the posters. Thank goodness for Keep notes, otherwise I'd have
+no idea what happened.
+
+For me, the TL;DR of ICLR was that adversarial learning continues to be the
+big thing. The big one is generative adversarial networks, but there's also
+adversarial examples, and agents learning by self-play in competitive
+environments. This is *probably* selective bias, since I like adversarial
+approaches in general. They seem to touch on something fundamental about
+our ability to represent and optimize expressive function families. Alternating
+minimization / saddle point optimization has been around for a long time
+(at least since Nash equilibria were first proposed), and it seems like the
+difference now is that deep learning is letting us learn cost functions on
+high-dimensional data that we couldn't express by hand. I'm pretty biased here,
+but it feels like a powerful paradigm.
+
+There's been a few articles (Pearl) about how a lot of deep learning concerns itself
+with curve fitting (function approximation), which may not encompass all
+aspects of intelligence, like casual inference. I agree that this is true, but
+it also seems like you can reduce a lot of problems to curve-fitting problems.
+
+However, I do worry a bit about this research trend for robustness reasons.
+My intuition is that adversarial methods tend to have more variance in performance
+than other methods, because the alternating minimization makes your learning
+dynamics be a lot more chaotic. Now, this isn't a deal breaker. It just depends
+on the mean performance of adversarial methods. If they work a lot better on average,
+then they'll outperform other methods on average, even if there's variance.
+
+SUPER TERRIBLE PLOT
+
+(List out ICLR papers)
+
+As for ICRA 2018, well, it's pretty different. The field is still at a point where
+people can snark about whether machine learning will solve everything. As someone
+who's currently pretty all-in on ML, it was good to see some other perspectives
+on the topic.
+
+A much smaller fraction of the presented work was interesting to me. I'm one
+of those people who wants to treat hardware as an abstraction, since I'm most
+interested in learning control. The model requests
+some command in Cartesian / velocity / torque space, and it happens,
+and I don't really want to know how. (I'm sure somewhere there is a roboticist
+who's very disappointed right now.)
+
+Because of this, I generally stuck to the learning papers.
+
+Topics I want to hit:
+* more commercial focus. More projects on describing the value-add for a
+company, and how research integrates with that.
+* Almost no model-free RL papers. Everything seemed to be model-based RL,
+or model-based + model-free, or learning from demonstration + model free.
+* Generally less mature on the learning front - much more applications
+based (applying learning to a robotics task, less on proposing new learning algorithms)
+* Comments about Rodney Brooks HRI comments and Roomba talk comments
+* Everyone is onboard with using CNNs for perception, everything else is
+fuzzier.
+
