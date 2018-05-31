@@ -4,60 +4,115 @@ title:  "ICLR 2018 and ICRA 2018"
 date:   2018-05-27 15:38:00 -0700
 ---
 
-I intended to write this post right after ICLR, but got busy and
-never found the time. Now I have the time, several weeks after it happened.
-I'm writing this on the plane back from ICRA, which was only 2 (CHECK0
-weeks after ICLR.
+In the span of just under a month, I attended two conferences,
+[ICLR 2018](https://iclr.cc/) (a deep learning conference), and
+[ICRA 2018](https://icra2018.org/) (a robotics conference). I intended
+to write a summary of ICLR right after attending, but got busy. I'm
+less busy now, which presents a nice opportunity - a compare and contrast
+between the two different conferences.
 
-I figured it would be interesting to compare and contrast ICLR (a deep
-learning focused conference) with ICRA (a robotics focused conference).
+\* \* \*
+{: .centered }
 
-First off, it is really, really shocking how short my memory for conferences
-is. It's only been about 2 weeks after ICLR and I have already forgotten
-almost all the posters. Thank goodness for Keep notes, otherwise I'd have
-no idea what happened.
+First off, it's shocking how short my memory for conferences is.
+I have already forgotten almost everything from ICLR, and I'm reconstructing
+my experience from scattered poster pictures and notes. None of this is
+surprising, but the problem is that if you're reconstructing things from
+notes, then the reconstruction quality depends on how sleepy I was when
+I took the notes.
 
-For me, the TL;DR of ICLR was that adversarial learning continues to be the
-big thing. The big one is generative adversarial networks, but there's also
-adversarial examples, and agents learning by self-play in competitive
-environments. This is *probably* selective bias, since I like adversarial
-approaches in general. They seem to touch on something fundamental about
-our ability to represent and optimize expressive function families. Alternating
-minimization / saddle point optimization has been around for a long time
-(at least since Nash equilibria were first proposed), and it seems like the
-difference now is that deep learning is letting us learn cost functions on
-high-dimensional data that we couldn't express by hand. I'm pretty biased here,
-but it feels like a powerful paradigm.
+For me, the TL;DR of ICLR is that **adversarial learning continues to be
+a big thing.** Now, GANs have been popular for a few years, but I'm casting
+a wide umbrella here - this also includes adversarial examples, agents competing
+against one another, and general minimax optimization.
+
+This is probably just selection bias, because I like adversarial learning a lot.
+One way to describe a GAN is that the discriminator is learning an implicit
+cost function for similarity in the dataset. From this abstract point-of-view,
+using an adversarial approach lets you replace a fixed cost function with a
+learned cost function. This makes your problem more complicated, but the advantage
+is that any advances in optimization improve both your ability to learn cost
+functions and your ability to minimize those learned costs. At some tipping
+point, this will outperform whatever fixed cost you can think of.
+
+From an even more abstract view, this touches on
+the power of expressive, optimizable function families (like neural nets).
+Minimax optimization has been around for ages. The new thing is that
+deep learning enables learning cost functions on high-dimensional data, like
+images. But there are plenty of other things we could try to replace with
+learned methods, and the long-term promise of deep learning is that it's
+expressive enough that it *could* replace even more parts of the learning
+process.
 
 There's been a few articles (Pearl) about how a lot of deep learning concerns itself
-with curve fitting (function approximation), which may not encompass all
-aspects of intelligence, like casual inference. I agree that this is true, but
-it also seems like you can reduce a lot of problems to curve-fitting problems.
+with curve fitting (function approximation), and how this doesn't encompass all
+of intelligence. I mostly with this perspective, but it also looks like you can
+convert a lot of useful problems to curve-fitting problems.
 
-However, I do worry a bit about this research trend for robustness reasons.
-My intuition is that adversarial methods tend to have more variance in performance
-than other methods, because the alternating minimization makes your learning
-dynamics be a lot more chaotic. Now, this isn't a deal breaker. It just depends
+I do worry a bit about this research trend for robustness reasons.
+My intuition is that adversarial methods have more variance in performance,
+because the alternating minimization makes your learning dynamics a lot less
+predictable. Now, this isn't a deal breaker. It just depends
 on the mean performance of adversarial methods. If they work a lot better on average,
 then they'll outperform other methods on average, even if there's variance.
 
-SUPER TERRIBLE PLOT
+SUPER TERRIBLE PLOT?
 
-(List out ICLR papers)
+That was enough of a tangent about the research. From an *organizational*
+perspective, I liked that there were so many poster sessions at ICLR. This is
+the first time I've gone to ICLR, my previous ML conference was NIPS, and NIPS
+is just getting ridiculously large. Checking every poster at NIPS doesn't feel
+doable. Checking every poster at ICLR felt possible (albeit ambitious). I also
+appreciated that corporate recuriting didn't feel as ridiculous as it felt at
+NIPS - companies gave out swag, but not especially ridiculous swag. At NIPS
+companies were giving out fidget spinners. At ICLR, the weirdest thing I got was
+a pair of socks.
 
-As for ICRA 2018, well, it's pretty different. The field is still at a point where
-people can snark about whether machine learning will solve everything. As someone
-who's currently pretty all-in on ML, it was good to see some other perspectives
-on the topic.
+Papers I noted as interesting or wanted to follow-up on later:
 
-A much smaller fraction of the presented work was interesting to me. I'm one
-of those people who wants to treat hardware as an abstraction, since I'm most
-interested in learning control. The model requests
-some command in Cartesian / velocity / torque space, and it happens,
-and I don't really want to know how. (I'm sure somewhere there is a roboticist
-who's very disappointed right now.)
+* Intrinsic Motivation Self Play
+* Robust Adversarial Inverse RL
+* Policy Optimization by Genetic Distillation
+* Bayesian Optimization and HYperband
+* The Intrinsic Dimension of Objective Landscapes
+* Eigenoption Discovery Eigenpurposes as Intrinc Rewward
+* Self-Ensembling for Visual Domain Adaptation
+* To TD or not to TD
+* Hypergradient optimization
+* Action Selection Biasing, Knowledge GAin Estimates, exmploration MDP
 
-Because of this, I generally stuck to the learning papers.
+\* \* \*
+{: .centered }
+
+In contrast, ICRA 2018 was quite different. This was my first robotics
+conference. I started research as an ML person first, so my interests are more
+on the learning-for-control side, rather than the make-new-robots side. As much
+as possible, I'd like to treat real-world hardware as an abstraction, without
+much care for how things are implemented, as long as I can request control
+and have it executed with some reliability. (Somewhere, a roboticist weeps.)
+
+This meant that I was both unfamiliar with a lot of topics, and less of the
+research was interesting to me.
+
+Despite this, I think it was good that I went. People at ICLR are entirely
+sold that deep learning is cool, interesting, and is going to continue to
+be both those things. People are ICRA were less certain.
+
+There were certainly deep learning papers. Basically every perception paper I
+saw was using CNNs in one way or another, because CNNs work. But right now, it's
+still unclear whether deep learning for *control* will work. I think it should,
+but it hasn't proven itself enough times.
+The field is still at a point where people can
+snark that deep learning is just a fad, and the pendulum will swing back soon.
+As someone pretty all-in on ML, it was good to see that perspective.
+
+I was also struck by how the papers had an element of practicality about them.
+Every paper seemed to be arguing against an implicit question: "that's nice,
+but what does this do in the real world?" People in robotics respect that
+what matters is what happens on the real hardware, and that real hardware
+can be a complete pain.
+
+
 
 Topics I want to hit:
 * more commercial focus. More projects on describing the value-add for a
