@@ -106,22 +106,35 @@ The field is still at a point where people can
 snark that deep learning is just a fad, and the pendulum will swing back soon.
 As someone pretty all-in on ML, it was good to see that perspective.
 
-I was also struck by how the papers had an element of practicality about them.
-Every paper seemed to be arguing against an implicit question: "that's nice,
-but what does this do in the real world?" People in robotics respect that
-what matters is what happens on the real hardware, and that real hardware
-can be a complete pain.
+I'd guess that the difference in mindset comes because people are focusing more
+on getting robots to work, rather than on the algorithms used to get there.
+Despite being a research conference, there was a sense of practicality about
+the whole thing. Sometimes, a paper will use weird hacks that only make sense
+for their robot. But real hardware is hard! It's unsatisfying, but understandable.
 
+It was also interesting to see a bit more emphasis on the consumer. Rodney
+Brooks had a neat talk about the design decisions behind turning Roomba into
+a product, pointing out that a couple hundreed dollars gives you very little
+leeway for fancy sensors and hardware. (He also had a tangent rant about
+HRI research, which felt a bit out of place, but hey, sometimes you have to
+rant.)
 
+I didn't see or hear anyone complain about having to use CNNs for perception.
+It seemed like the field was perfectly willing to adopt deep learning for
+other parts of learning, as soon as it proves itself to be worth it.
 
-Topics I want to hit:
-* more commercial focus. More projects on describing the value-add for a
-company, and how research integrates with that.
-* Almost no model-free RL papers. Everything seemed to be model-based RL,
-or model-based + model-free, or learning from demonstration + model free.
-* Generally less mature on the learning front - much more applications
-based (applying learning to a robotics task, less on proposing new learning algorithms)
-* Comments about Rodney Brooks HRI comments and Roomba talk comments
-* Everyone is onboard with using CNNs for perception, everything else is
-fuzzier.
+Additionally, from an RL side. I saw almost no papers about model-free RL.
+Everyone doing RL seemed to be doing model-based RL, or a mix of model-based
+and model-free RL, or learning from demonstrations. It all makes sense from
+a data efficiency point of view, it was more that it was funny to see.
+
+In general, there was less novelty and maturity on the machine learning front,
+but again, this is mostly because ICRA is a robotics conference, and not all
+roboticists do ML.
+
+* Applying Async Deep Classifcation Networks and Gaming RL BASED MOtion Planners
+* OptLayer - Practice Constrain Optimization
+* Synthetically Trained NN for Learning HUman-REadable PLans
+* Semantic Robo Programming for Goal-Directed Manipulaion
+* Interactive Perception
 
