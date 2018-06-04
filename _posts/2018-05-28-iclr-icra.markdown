@@ -126,12 +126,21 @@ or another, but significantly fewer people were using deep learning for control,
 because that's the part that's uncertain. It was good to hear comments from
 people who see deep learning as just a fad (even if I don't agree!).
 
-It was also interesting to see a bit more emphasis on the consumer. Rodney
-Brooks had a neat talk about the design decisions behind turning Roomba into
-a product, pointing out that a couple hundreed dollars gives you very little
-leeway for fancy sensors and hardware. (He also had a tangent rant about
-HRI research, which felt a bit out of place, but hey, sometimes you have to
-rant.)
+I also liked the talks where researchers talked about their partnerships with
+comapnies. At research conferences, the focus is on discussing research and
+networking with other researchers, so it's easy to forget that these technologies
+can produce clear economic value. I went to a talk about robotics in agriculture,
+where they used computer vision to detect weeds, which lets you autonomously
+spray weed-killer on only the plants that need to die. Rodney Brooks also
+had a neat talk about the design decisions behind the original Roomba. He pointed
+out that a couple hundreed dollars gives you very little leeway for fancy
+sensors and hardware, which places tight limits on what you can do on-device.
+(He also had a rant criticizing
+[HRI research](http://humanrobotinteraction.org/). My recollection is that he
+thought people were using too much notation to hide simple ideas, that sample
+sizes for human studies were too small for the field's claims, and that the
+models of human behavior weren't accurate enough to be useful.
+It felt out of place, but hey, sometimes you have to rant.)
 
 Papers I noted to follow-up on later:
 
