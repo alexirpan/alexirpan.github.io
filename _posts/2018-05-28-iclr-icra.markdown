@@ -62,17 +62,6 @@ you could learn something that looks like causal inference, or whatever else you
 count as intelligence. But now we're in somewhat-unfounded philosophy land,
 so I'll stop here.
 
-PARAGRAPH BELOW CUT
-
-I do worry a bit about this research trend for robustness reasons.
-My intuition is that adversarial methods have more variance in performance,
-because the alternating minimization makes your learning dynamics a lot less
-predictable. Now, this isn't a deal breaker. It just depends
-on the mean performance of adversarial methods. If they work a lot better on average,
-then they'll outperform other methods on average, even if there's variance.
-
-PARAGRAPH ABOVE CUT
-
 From an attendee perspective, I liked having a lot of poster sessions. This is
 the first time I've gone to ICLR. My previous ML conference was NIPS, and NIPS
 just feels ridiculously large. Checking every poster at NIPS doesn't feel doable.
@@ -86,16 +75,16 @@ felt...strange. At ICLR, the weirdest thing I got was a pair of socks.
 
 Papers I noted to follow-up on later:
 
-* Intrinsic Motivation Self Play
-* Robust Adversarial Inverse RL
-* Policy Optimization by Genetic Distillation
-* Bayesian Optimization and HYperband
-* The Intrinsic Dimension of Objective Landscapes
-* Eigenoption Discovery Eigenpurposes as Intrinc Rewward
-* Self-Ensembling for Visual Domain Adaptation
-* To TD or not to TD
-* Hypergradient optimization
-* Action Selection Biasing, Knowledge GAin Estimates, exmploration MDP
+* [Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play](https://openreview.net/forum?id=SkT5Yg-RZ)
+* [Learning Robust Rewards with Adverserial Inverse Reinforcement Learning](https://openreview.net/forum?id=rkHywl-A-)
+* [Policy Optimization by Genetic Distillation](https://openreview.net/forum?id=ByOnmlWC-)
+* [Measuring the Intrinsic Dimension of Objective Landscapes](https://openreview.net/forum?id=ryup8-WCW)
+* [Eigenoption Discovery Through the Deep Successor Representation](https://openreview.net/forum?id=Bk8ZcAxR-)
+* [Self-Ensembling for Visual Domain Adaptation](https://openreview.net/forum?id=rkpoTaxA-)
+* [TD or not TD: Analyzing the Role of Temporal Differencing in Deep Reinforcement Learning](https://openreview.net/forum?id=HyiAuyb0b)
+* [Online Learning Rate Adaptation with Hypergradient Descent](https://openreview.net/forum?id=BkrsAzWAb)
+* [DORA The Explorer: Directed Outreaching Reinforcement Action-Selection](https://openreview.net/forum?id=ry1arUgCW)
+* [Learning to Multi-Task by Active Sampling](https://openreview.net/forum?id=B1nZ1weCZ)
 
 
 ICRA 2018
@@ -146,9 +135,8 @@ rant.)
 
 Papers I noted to follow-up on later:
 
-* Applying Async Deep Classifcation Networks and Gaming RL BASED MOtion Planners
-* OptLayer - Practice Constrain Optimization
-* Synthetically Trained NN for Learning HUman-REadable PLans
-* Semantic Robo Programming for Goal-Directed Manipulaion
-* Interactive Perception
-
+* [Applying Asynchronous Deep Classification Network and Gaming Reinforcement Learning-Based Motion Planner to a Mobile Robot](http://ghryou.me/assets/pdf/ghryou_icra_2018.pdf)
+* [OptLayer - Practical Constrained Optimization for Deep Reinforcement Learning in the Real World](https://arxiv.org/abs/1709.07643)
+* [Synthetically Trained Neural Networks for Learning Human-Readable Plans from Real-World Demonstrations](https://arxiv.org/abs/1805.07054)
+* [Semantic Robot Programming for Goal-Directed Manipulation in Cluttered Scenes](https://www.youtube.com/watch?v=kOcdqUmXRRo)
+* [Interactive Perception: Leveraging Action in Perception and Perception in Action](https://arxiv.org/abs/1604.03670)
