@@ -1,53 +1,68 @@
 ---
 layout: post
-title:  "ICLR 2018 and ICRA 2018"
+title:  "Thoughts On ICLR 2018 and ICRA 2018"
 date:   2018-05-27 15:38:00 -0700
 ---
 
 In the span of just under a month, I attended two conferences,
-[ICLR 2018](https://iclr.cc/) (a deep learning conference), and
-[ICRA 2018](https://icra2018.org/) (a robotics conference). I intended
-to write a summary of ICLR right after attending, but got busy. I'm
-less busy now, which presents a nice opportunity - a compare and contrast
-between the two different conferences.
+[ICLR 2018](https://iclr.cc/) and
+[ICRA 2018](https://icra2018.org/). The first is a deep learning conference,
+and the second is a robotics conference. They were pretty different, and I
+figured it would be neat to compare and contrast the two.
 
-\* \* \*
-{: .centered }
+My memory for conferences is shockingly short, so this is all reconstructed
+from notes and pictures I took of research posters. The problem with this
+strategy is that the reconstruction quality depends on how sleepy I was,
+and whether I remembered to take notes for something or not.
 
-First off, it's shocking how short my memory for conferences is.
-I have already forgotten almost everything from ICLR, and I'm reconstructing
-my experience from scattered poster pictures and notes. None of this is
-surprising, but the problem is that if you're reconstructing things from
-notes, then the reconstruction quality depends on how sleepy I was when
-I took the notes.
 
-For me, the TL;DR of ICLR is that **adversarial learning continues to be
-a big thing.** Now, GANs have been popular for a few years, but I'm casting
-a wide umbrella here - this also includes adversarial examples, agents competing
-against one another, and general minimax optimization.
+ICLR 2018
+=======================================================================
 
-This is probably just selection bias, because I like adversarial learning a lot.
+From the research side, the TL;DR of ICLR was that adversarial learning
+continues to be a big thing.
+
+The elephant in the room is GANs. Generative adversarial networks have been
+popular for a few years, but I'm casting a wide umbrella here, one that
+includes adversarial examples, multiagent environments where agents compete,
+and general minimax optimization problems of the form $$\min_x \max_y f(x, y)$$.
+
+There's a good chance this is selection bias.
+I like adversarial learning a lot.
 One way to describe a GAN is that the discriminator is learning an implicit
-cost function for similarity in the dataset. From this abstract point-of-view,
-using an adversarial approach lets you replace a fixed cost function with a
-learned cost function. This makes your problem more complicated, but the advantage
-is that any advances in optimization improve both your ability to learn cost
-functions and your ability to minimize those learned costs. At some tipping
-point, this will outperform whatever fixed cost you can think of.
+cost function to help train the generator.
+In an abstract sense, this adversarial approach lets you change from a
+fixed, human defined cost function, to a learned cost function that can adapt
+to the capabilities of whatever you're trying to learn. In the GAN case,
+you have a dynamic cost over image generation. But in a learning-by-self-play
+case, you get dynamic costs over learning good agent behavior.
+
+This does make your problem more complicated. One advantage
+is that if there are advances in optimization or modeling ability, it can
+improve both your ability to learn cost functions and your ability to minimize
+those learned costs. The hope is that you eventually hit a tipping point where
+it's *worth* spending a bunch of time doing adversarial learning.
 
 From an even more abstract view, this touches on
-the power of expressive, optimizable function families (like neural nets).
-Minimax optimization has been around for ages. The new thing is that
-deep learning enables learning cost functions on high-dimensional data, like
-images. But there are plenty of other things we could try to replace with
-learned methods, and the long-term promise of deep learning is that it's
-expressive enough that it *could* replace even more parts of the learning
-process.
+the power of expressive, optimizable function families, like neural nets.
+Minimax optimization is not a new idea, it's been around for ages. The new thing
+is that deep learning enables learning cost functions on high-dimensional data.
 
-There's been a few articles (Pearl) about how a lot of deep learning concerns itself
-with curve fitting (function approximation), and how this doesn't encompass all
-of intelligence. I mostly with this perspective, but it also looks like you can
-convert a lot of useful problems to curve-fitting problems.
+There are other parts of the learning process that could be replaced with
+learned nets instead of human-defined behavior. Does it make sense to do this.
+Well, *maybe*. We'll see.
+
+There was a recent [Quanta article](https://www.quantamagazine.org/to-build-truly-intelligent-machines-teach-them-cause-and-effect-20180515/),
+where Judea Pearl expressed his disappointment that deep learning was just
+learning correlations and curve fitting, that this doesn't cover all of
+intelligence, and that the next step for AI is to learn cause and effect and
+do causal inference. I agree with this, but it's possible that if you
+throw enough super-big neural nets into a big enough vat of optimization soup,
+you could learn something that looks like causal inference, or whatever else you want to
+count as intelligence. But now we're in somewhat-unfounded philosophy land,
+so I'll stop here.
+
+PARAGRAPH BELOW CUT
 
 I do worry a bit about this research trend for robustness reasons.
 My intuition is that adversarial methods have more variance in performance,
@@ -56,19 +71,20 @@ predictable. Now, this isn't a deal breaker. It just depends
 on the mean performance of adversarial methods. If they work a lot better on average,
 then they'll outperform other methods on average, even if there's variance.
 
-SUPER TERRIBLE PLOT?
+PARAGRAPH ABOVE CUT
 
-That was enough of a tangent about the research. From an *organizational*
-perspective, I liked that there were so many poster sessions at ICLR. This is
-the first time I've gone to ICLR, my previous ML conference was NIPS, and NIPS
-is just getting ridiculously large. Checking every poster at NIPS doesn't feel
-doable. Checking every poster at ICLR felt possible (albeit ambitious). I also
-appreciated that corporate recuriting didn't feel as ridiculous as it felt at
-NIPS - companies gave out swag, but not especially ridiculous swag. At NIPS
-companies were giving out fidget spinners. At ICLR, the weirdest thing I got was
-a pair of socks.
+From an attendee perspective, I liked having a lot of poster sessions. This is
+the first time I've gone to ICLR. My previous ML conference was NIPS, and NIPS
+just feels ridiculously large. Checking every poster at NIPS doesn't feel doable.
+Checking every poster at ICLR felt *possible*, although whether you'd actually
+want to do so is questionable.
 
-Papers I noted as interesting or wanted to follow-up on later:
+I also appreciated that corporate recuriting didn't feel as ridiculous as NIPS.
+At NIPS, companies were giving out fidget spinners and slinkies, which was *unique*,
+but the fact that companies needed to *come up with unique swag to stand out*
+felt...strange. At ICLR, the weirdest thing I got was a pair of socks.
+
+Papers I noted to follow-up on later:
 
 * Intrinsic Motivation Self Play
 * Robust Adversarial Inverse RL
@@ -81,36 +97,45 @@ Papers I noted as interesting or wanted to follow-up on later:
 * Hypergradient optimization
 * Action Selection Biasing, Knowledge GAin Estimates, exmploration MDP
 
-\* \* \*
-{: .centered }
 
-In contrast, ICRA 2018 was quite different. This was my first robotics
-conference. I started research as an ML person first, so my interests are more
-on the learning-for-control side, rather than the make-new-robots side. As much
-as possible, I'd like to treat real-world hardware as an abstraction, without
-much care for how things are implemented, as long as I can request control
-and have it executed with some reliability. (Somewhere, a roboticist weeps.)
+ICRA 2018
+================================================================================
 
-This meant that I was both unfamiliar with a lot of topics, and less of the
-research was interesting to me.
+ICRA 2018 was my first robotics conference. I wasn't sure what to expect. I
+started research as an ML person, and then sort of fell into robotics on the
+side, so my interests are closer to learning-for-control instead of
+making-new-robots. My ideal setup is one where I can run models on a real-world
+robot, but the details of the real-world hardware / low-level software stack
+are an abstraction. (Somewhere, a roboticist weeps.)
 
-Despite this, I think it was good that I went. People at ICLR are entirely
-sold that deep learning is cool, interesting, and is going to continue to
-be both those things. People are ICRA were less certain.
+This meant I was unfamiliar with a lot of the topics, so less of the conference
+appealed to me. Still, there were plenty of learning papers, and I'm glad I
+went.
 
-There were certainly deep learning papers. Basically every perception paper I
-saw was using CNNs in one way or another, because CNNs work. But right now, it's
-still unclear whether deep learning for *control* will work. I think it should,
-but it hasn't proven itself enough times.
-The field is still at a point where people can
-snark that deep learning is just a fad, and the pendulum will swing back soon.
-As someone pretty all-in on ML, it was good to see that perspective.
+From the research side, it was interesting to see how many RL papers there
+were. It was also interesting to see that almost none of those papers used
+purely model-free RL. One thing about ICRA is that your paper has a much, much
+better chance of getting accepted if it runs on a real-world robot. That
+forces you to care about data efficiency. I kept seeing "We combine model-free
+reinforcement learning with X", where X was model-based RL, or learning from
+human demonstrations, or learning from existing motion planning solutions,
+and so on.
 
-I'd guess that the difference in mindset comes because people are focusing more
-on getting robots to work, rather than on the algorithms used to get there.
-Despite being a research conference, there was a sense of practicality about
-the whole thing. Sometimes, a paper will use weird hacks that only make sense
-for their robot. But real hardware is hard! It's unsatisfying, but understandable.
+At a broader level, it felt like there was a sense of practicality about a lot
+of the research. This being research, plenty of it was still very speculative,
+but it felt like another consequence of having to work with real hardware. You
+can't ignore inference time if you need to run your model in real time. You
+can't ignore data efficiency if you need to collect it from a real robot.
+It has to work, and the real world doesn't care about a lot of things.
+
+This surprises a lot of ML people I talk to, but robotics hasn't fully embraced
+ML the way that people at NIPS / ICLR / ICML have. For a lot of people,
+machine learning is just a solution that may make sense. The impression I got
+was that only a few people actively wanted ML to fail, and everyone else wanted
+it to prove itself first. Every perception paper I saw used CNNs in one way
+or another, but significantly fewer people were using deep learning for control,
+because that's the part that's uncertain. It was good to hear comments from
+people who see deep learning as just a fad (even if I don't agree!).
 
 It was also interesting to see a bit more emphasis on the consumer. Rodney
 Brooks had a neat talk about the design decisions behind turning Roomba into
@@ -119,18 +144,7 @@ leeway for fancy sensors and hardware. (He also had a tangent rant about
 HRI research, which felt a bit out of place, but hey, sometimes you have to
 rant.)
 
-I didn't see or hear anyone complain about having to use CNNs for perception.
-It seemed like the field was perfectly willing to adopt deep learning for
-other parts of learning, as soon as it proves itself to be worth it.
-
-Additionally, from an RL side. I saw almost no papers about model-free RL.
-Everyone doing RL seemed to be doing model-based RL, or a mix of model-based
-and model-free RL, or learning from demonstrations. It all makes sense from
-a data efficiency point of view, it was more that it was funny to see.
-
-In general, there was less novelty and maturity on the machine learning front,
-but again, this is mostly because ICRA is a robotics conference, and not all
-roboticists do ML.
+Papers I noted to follow-up on later:
 
 * Applying Async Deep Classifcation Networks and Gaming RL BASED MOtion Planners
 * OptLayer - Practice Constrain Optimization
