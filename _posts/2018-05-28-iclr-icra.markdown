@@ -51,7 +51,8 @@ There are other parts of the learning process that could be replaced with
 learned methods instead of human-defined one, and deep learning may be how
 we get there. Does it make sense to do this? Well, *maybe*. The problem is that
 the more you do this, the harder it becomes to actually make everything
-learnable.
+learnable. It's turtles all the way down, until your turtles become unstable
+and collapse.
 
 There was a recent [Quanta article](https://www.quantamagazine.org/to-build-truly-intelligent-machines-teach-them-cause-and-effect-20180515/),
 where Judea Pearl expressed his disappointment that deep learning was just
