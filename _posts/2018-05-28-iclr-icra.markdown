@@ -8,12 +8,7 @@ In the span of just under a month, I attended two conferences,
 [ICLR 2018](https://iclr.cc/) and
 [ICRA 2018](https://icra2018.org/). The first is a deep learning conference,
 and the second is a robotics conference. They were pretty different, and I
-figured it would be neat to compare and contrast the two.
-
-My memory for conferences is shockingly short, so this is all reconstructed
-from notes and pictures I took of research posters. The problem with this
-strategy is that the reconstruction quality depends on how sleepy I was,
-and whether I remembered to take notes for something or not.
+figured it would be neat to compare the two.
 
 
 ICLR 2018
@@ -22,47 +17,54 @@ ICLR 2018
 From the research side, the TL;DR of ICLR was that adversarial learning
 continues to be a big thing.
 
-The elephant in the room is GANs. Generative adversarial networks have been
-popular for a few years, but I'm casting a wide umbrella here, one that
-includes adversarial examples, multiagent environments where agents compete,
-and general minimax optimization problems of the form $$\min_x \max_y f(x, y)$$.
+The most popular thing in that sphere would be generative adversarial
+networks. However, I'm casting a wide umbrella here, one that
+includes adversarial examples and environments with competing agents.
+Really, any minimax optimization problems of the form
+$$\min_x \max_y f(x, y)$$ counts as adversarial learning to me.
 
-There's a good chance this is selection bias.
-I like adversarial learning a lot.
-One way to describe a GAN is that the discriminator is learning an implicit
-cost function to help train the generator.
-In an abstract sense, this adversarial approach lets you change from a
-fixed, human defined cost function, to a learned cost function that can adapt
-to the capabilities of whatever you're trying to learn. In the GAN case,
-you have a dynamic cost over image generation. But in a learning-by-self-play
-case, you get dynamic costs over learning good agent behavior.
+I don't know if it was actually popular, or if my memory has selective
+bias, because I have a soft spot for these approaches. They feel powerful.
+One way to view a GAN is that you are learning a generator by using a learned
+implicit cost instead of a human defined one.
+This lets you adapt to the capabilities of your generator and lets you define
+costs that could be cumbersome to explain by hand.
 
-This does make your problem more complicated. One advantage
-is that if there are advances in optimization or modeling ability, it can
-improve both your ability to learn cost functions and your ability to minimize
-those learned costs. The hope is that you eventually hit a tipping point where
-it's *worth* spending a bunch of time doing adversarial learning.
+Sure, this makes your problem more complicated. But if you have strong
+enough optimization and modeling ability, the implicitly learned cost gives you
+sharper images than other approaches. And one advantage of replacing parts
+of your system with learned components is that advances in optimization and
+modeling ability apply to more aspects of your problem.
+You are improving both your ability to learn cost functions and your ability to
+minimize those learned costs. Eventually, there's a tipping point where it's
+worth adding all this machinery.
 
-From an even more abstract view, this touches on
+From a more abstract viewpoint, this touches on
 the power of expressive, optimizable function families, like neural nets.
-Minimax optimization is not a new idea, it's been around for ages. The new thing
-is that deep learning enables learning cost functions on high-dimensional data.
+Minimax optimization is not a new idea. It's been around for ages. The new
+thing that deep learning lets you model and learn complicated cost functions
+on high-dimensional data. To me, the interesting thing about GANs isn't the
+image generation, it's the proof-of-concept they show on complicated data
+*like* images. Nothing about the framework requires you to use image data.
 
 There are other parts of the learning process that could be replaced with
-learned nets instead of human-defined behavior. Does it make sense to do this.
-Well, *maybe*. We'll see.
+learned methods instead of human-defined one, and deep learning may be how
+we get there. Does it make sense to do this? Well, *maybe*. The problem is that
+the more you do this, the harder it becomes to actually make everything
+learnable.
 
 There was a recent [Quanta article](https://www.quantamagazine.org/to-build-truly-intelligent-machines-teach-them-cause-and-effect-20180515/),
 where Judea Pearl expressed his disappointment that deep learning was just
 learning correlations and curve fitting, that this doesn't cover all of
 intelligence, and that the next step for AI is to learn cause and effect and
-do causal inference. I agree with this, but it's possible that if you
+do causal inference. I agree with this, but there is a chance that if you
 throw enough super-big neural nets into a big enough vat of optimization soup,
-you could learn something that looks like causal inference, or whatever else you want to
-count as intelligence. But now we're in somewhat-unfounded philosophy land,
-so I'll stop here.
+you would learn something that looks a lot like causal inference, or whatever
+else you want to count as intelligence.
+But now we're rapidly approaching philosophy land, so I'll stop here and move
+on.
 
-From an attendee perspective, I liked having a lot of poster sessions. This is
+From an attendee perspective, I liked having lots of poster sessions. This is
 the first time I've gone to ICLR. My previous ML conference was NIPS, and NIPS
 just feels ridiculously large. Checking every poster at NIPS doesn't feel doable.
 Checking every poster at ICLR felt *possible*, although whether you'd actually
@@ -71,7 +73,8 @@ want to do so is questionable.
 I also appreciated that corporate recuriting didn't feel as ridiculous as NIPS.
 At NIPS, companies were giving out fidget spinners and slinkies, which was *unique*,
 but the fact that companies needed to *come up with unique swag to stand out*
-felt...strange. At ICLR, the weirdest thing I got was a pair of socks.
+felt...strange. At ICLR, the weirdest thing I got was a pair of socks. It was
+certainly odd, but not too outlandish.
 
 Papers I noted to follow-up on later:
 
