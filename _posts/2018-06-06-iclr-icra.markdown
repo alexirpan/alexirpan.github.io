@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Thoughts On ICLR 2018 and ICRA 2018"
-date:   2018-05-27 15:38:00 -0700
+date:   2018-06-06 02:13:00 -0700
 ---
 
 In the span of just under a month, I attended two conferences,
