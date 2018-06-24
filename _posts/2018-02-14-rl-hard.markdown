@@ -4,6 +4,23 @@ title:  "Deep Reinforcement Learning Doesn't Work Yet"
 date:   2018-02-14 05:15:00 -0800
 ---
 
+*June 24, 2018 note: If you want to cite an example from the post, please
+cite the paper which that example came from. If you want to cite the
+post as a whole, you can use the following BibTeX:*
+
+<pre>
+@misc{rlblogpost,
+    title={Deep Reinforcement Learning Doesn't Work Yet},
+    author={Irpan, Alex},
+    howpublished={\url{https://www.alexirpan.com/2018/02/14/rl-hard.html}},
+    year={2018}
+}
+</pre>
+
+---------------------------------------------
+
+<p></p>
+
 
 *This mostly cites papers from Berkeley, Google Brain, DeepMind, and OpenAI
 from the past few years, because that work is most visible to me.
