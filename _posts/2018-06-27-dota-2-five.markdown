@@ -1,0 +1,152 @@
+---
+layout: post
+title:  "Quick Opinions on Dota 2 Five"
+date:   2018-06-27 02:02:00 -0700
+---
+
+OpenAI recently announced that [a team of five Dota 2 agents has successfully](https://blog.openai.com/openai-five/)
+beaten an amateur team. It's a pretty exciting result and I'm interested
+to see where it goes from here.
+
+When OpenAI first revealed they were working on Dota 2, there was a lot of
+buzz, a lot of hype, and a lot of misunderstanding that compelled me to
+[write about it]({% post_url 2017-08-12-openai-dota-2 %}). This time, I have fewer questions and less compulsion to
+set the record straight, so to speak. The blog post has enough details
+to satisfy me, and the reaction hasn't been as crazy. (Then again, I haven't
+been reading the pop science press, so who knows...)
+
+I'm pretty busy this week, so instead of trying to organize my thoughts, I'm
+just going to throw them out there and see what happens.
+**This post is going to be messy, and may not make sense.** I typed this out
+over about an hour and didn't think too hard about my word choice. Everything
+in it makes sense to *me*, but that doesn't mean anything - everything you write
+makes sense to you.
+
+(If you haven't read the OpenAI announcement post, you should do so now, or else
+this will make even *less* sense.)
+
+\* \* \*
+{: .centered }
+
+This result came a bit earlier than I thought it would, but not by a lot.
+I'm not sure exactly when I was expecting to hear that 5v5 was looking solvable,
+but when I heard the news, I realized I wasn't that surprised.
+
+The post clarifies that yes, the input is a large number of game state features
+coming from the Dota 2 API, and isn't coming from vision. The agent's ability
+to observe the game is well beyond any human capability.
+I said this before and will say it again: this is totally okay and I have no
+problems with it.
+
+On the communication front, I was expecting the problem to require at least
+some communication. Not at the level of the multi-agent communication papers
+where people try to get agents to learn a language to communicate goals, I was
+thinking something like every agent getting the actions each other agent made
+at each time step. That isn't happening here, it's just five LSTMs each deciding
+their own actions. The only direct encouragement for teamwork is that the reward
+of each agent is defined by a "team spirit" parameter that decides how important
+the team's reward is to the individual. The fact that a single float is good
+enough is pretty interesting...
+
+...Well, until I thought about it a bit more. By my understanding, the input
+state of each agent is the properties of every unit *in the team's vision*.
+This includes health, attack, orientation, level, cooldowns of all their skills,
+and more. *And your teammates are always in your team's vision*. So, odds are
+you can reconstruct the actions from the change in state. If they changed location.
+they moved. If they just lost mana and one of their spell's cooldown just increased,
+they just used a skill.
+
+In this respect, it feels like the state definition is rich
+enough that emergent cooperative behavior isn't that surprising. There's no
+theoretical limit to the potential teamwork - what would team captain's give to
+have the ability to constantly understand everything the API can give you?
+
+Compute-wise, there's a lot of stuff going on: 256 GPUs, each contributing to a
+large synchronous batch of over a million observations. That is one of the largest
+batch sizes I've seen, although from a memory standpoint it might be smaller
+than a large batch of images. A Dota 2 observation is 20,000 floats. A 256 x 256
+RGB image is approximately 200 thousands bytes.
+
+(I assume the reason it's using synchronous training is because async training
+starts getting really weird when you scale up the number of GPUs. My understanding
+is that you can either hope the time delays aren't too bad given the number of
+GPUs you have, or you can try doing something like [HOGWILD](https://people.eecs.berkeley.edu/~brecht/papers/hogwildTR.pdf),
+or you can say "screw it" and just do synchronous training.)
+
+Speaking of saying "screw it" and doing the thing that will clearly scale,
+it's interesting that plain PPO is just good enough so far. I'm most surprised
+by the time horizon problem. The partial observability hurts, but empirically
+it was doable for the Dota 1v1 bot. The high dimensional action / observation
+space didn't feel like obstacles to me - they looked annoying but didn't look
+impassable. But the long time horizons problem felt hard enough that I expected
+it to require *something* besides just PPO.
+
+This seems to
+have parallels to the [Retro Contest](https://blog.openai.com/first-retro-contest-retrospective/)
+results, where the winning entries were just tuned versions of PPO and Rainbow DQN.
+In the past, I've been skeptical of the "hardware hypothesis", where the
+only thing stopping AI progress is faster computers. At the time, I said I
+thought the split in AI capabilities was about 50-50 between hardware and
+software. I'm starting to lean towards the hardware side, updating towards
+something like 60-40 for hardware vs software. There are an increasing number
+of results where baseline algorithms just work if you try them at the right
+scale, enough that I can't ignore them.
+
+One thing I like to joke about is that everyone who does reinforcement learning
+eventually decides that we need to solve hierarchical reinforcement learning and
+exploration. Like, everybody. And the problem is that they're really hard. So
+from a practitioner perspective, you have two choices. One is to purse a risky
+research project on a difficult subject that could pan out, but will likely be
+stuck on small problems. The other option is to just throw more GPUs at it.
+
+It's not that we should give up on hierarchical RL and the like. It's more that
+adding more hardware never hurts and likely helps, and even if you don't need
+the scale, everyone likes it when their models train faster. This makes it easier
+to justify investing time into infrastructure that enables scale. Models keep
+getting bigger, so even if it doesn't pay off now, it'll pay off eventually.
+
+\* \* \*
+{: .centered }
+
+I'd like to end this post with a prediction.
+
+The team's stated goal is to beat a Pro team at [The International](https://en.wikipedia.org/wiki/The_International_(Dota_2)),
+August 20-25, with a limited set of heros (presumably the same hardcoded team
+mentioned in the footnote of the post.) I think OpenAI has a decent shot, about
+50%.
+
+To explain my thinking a bit more, everything about the progress and skill curves
+so far suggest to me that the learning algorithm isn't hitting a plateau. For
+whatever reason, it seems like the Dota 2 skill level will continue to increase
+if you give it more training time. It may increase at a slower rate over time,
+but it doesn't seem to *stop*.
+
+Therefore, the question to me isn't about whether it's doable, it's about whether
+it's doable in the 2 months (60 days) they have left. Based on the plots, it looks
+like the current training time is around 7-19 days, and that leaves some breathing
+room for catching bugs and the like.
+
+Funnily enough, my guess is that the main blocker isn't going to be the
+learning time, it's going to be the software engineering time needed to remove
+as many restrictions as possible. For the match at The International, I'd be
+very disappointed if wards and Roshan were still banned - it seems ridiculous to
+ask a pro team to play without either of those. So let's assume the following:
+
+* Both wards and Roshan need to be implemented before the match.
+* The policy needs to be trained from scratch to learn how to ward and how to
+play around Roshan.
+* After wards and Roshan get implemented, there will be a crazy bug of some sort
+that will hurt learning until it gets fixed, possibly requiring a full restart
+of the training job.
+
+Assuming all of the above is true, model training for The International
+can't proceed until all this software engineering gets done, and that doesn't
+leave a lot of time to do many iterations.
+
+(Of course, I could be wrong - if OpenAI can finetune their Dota 2 bots instead
+of training from scratch, all the math gets a lot nicer.)
+
+Whatever way the match goes, I expect it to be one-sided, one way or the other.
+There's a narrow band of skill level that leads to an even match, and it's much
+more likely that it falls outside of that band.
+Pretty excited to see who's going to win and who's going to get stomped!
