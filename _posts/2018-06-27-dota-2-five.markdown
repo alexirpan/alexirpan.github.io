@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Quick Opinions on Dota 2 Five"
+title:  "Quick Opinions on OpenAI Five"
 date:   2018-06-27 02:02:00 -0700
 ---
 
