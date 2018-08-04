@@ -82,4 +82,37 @@ themselves.
 \* \* \*
 {: .centered }
 
-It was
+Years passed, then centuries, then millenia, all trapped in that moment of time.
+Nothing about the world changed, and yet the world was a very different place.
+People argued less, and helped each other more. It's funny how much people change
+when they become immortal.
+
+And then something happened.
+
+A man decided to spend a few months walking across the Atlantic, since it had
+been on his bucket list. Halfway through his journey, he spotted a glowing,
+pulsating wall of light.
+
+He made landfall in Morocco, and spread the word to the first local he saw. The
+news travelled like wildfire, inspiring others to make the journey, where they
+discovered that there were more walls of light. A group from Australia stood on
+each other's shoulders and looked down, and from that vantage point they
+realized they weren't just walls - they were letters, written in serif font.
+
+**WE GAVE YOU GIFTS, AND YOU SQUANDERED THEM.**
+
+**WE GAVE YOU CHOICES, AND YOU MADE ONES THAT BROUGHT YOU CLOSE TO RUIN.**
+
+**IN FEAR, WE TOOK THEM AWAY.**
+
+**BUT PERHAPS YOU WOULD LIKE THEM BACK.**
+
+**PROVE YOU DESERVE THEM, AND WE wiLL RESTART THE GEARS OF THE WORLD.**
+
+**YOU HAVE FIFTY YEARS TO DECIDE.**
+
+With the message delivered, the letters faded away, leaving just the frozen
+ocean waves.
+
+\* \* \*
+{: .centered }
