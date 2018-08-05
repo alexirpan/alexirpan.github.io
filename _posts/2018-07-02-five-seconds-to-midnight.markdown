@@ -116,3 +116,62 @@ ocean waves.
 
 \* \* \*
 {: .centered }
+
+It took a while for humanity to decide. It's always hard to change things once
+people get used to them. Our adaptability is both a strength and a weakness.
+
+There were definitely upsides to living in a frozen world...but there's also
+something faintly sad about losing control over your destiny. People have so
+many ideas now, for things to build, things to try, which they *can't*, because
+the world literally doesn't allow them to do.
+
+I'm standing in an office in Chicago, staring at a clock and waiting for my signal.
+
+After the Australia group read the message to the world, it was unclear what to
+do, but the thrill of something *new* meant nobody was scared. Eventually, we
+discovered five analog clocks, scattered across the world, all bathed in that
+same pulsating light, all stuck at precisely five seconds to midnight.
+
+The first was found in a classroom in Copenhagen.
+
+The second, in an abandoned laboratory on the outskirts of Berlin.
+
+The third, on the beach of a small island in the Pacific.
+
+The fourth, in a house near the center of Hiroshima.
+
+And the fifth, in front of my eyes, in a publishing office in Chicago.
+
+Each clock had a second hand, and unlike everything else, the second hand was
+free to move backward and forward, as long as it didn't move past five seconds
+to midnight. The leading theory was that if we could push all the second hands
+forward at the same time, that would be the signal to get things moving again.
+
+We have people stationed at each clock, along with a network of runners that
+have learned the knack of running at *precisely* the same speed, along with some
+checksums and backups to verify we don't have any errors. I'd explain the
+details, but I don't want to bore people.
+
+As for why I'm the one pushing the clock? It's nothing special. We chose randomly,
+and my name turned up.
+
+Right on cue, a runner walks into the room. Their eyes are wide, but they're
+moving forward at a steady pace.
+
+"It's time."
+
+I nod, say "I hope so", and start pushing the second hand forward. It starts to
+shift with a loud, creaking sound, a sound far too loud for an ordinary clock.
+And then, it jumps.
+
+*Tick.*
+
+*Tock.*
+
+*Tick.*
+
+*Tock.*
+
+*Tick.*
+
+As for why I'
