@@ -241,7 +241,12 @@ By the time I revisited it, I had finished reading <em>American Gods</em>, and i
 convinced me to throw the story away. The storytelling in that book
 was so lyrical that it made mine feel like a tragedy. I then decided it would
 be okay if my story was worse than <em>American Gods</em>, because a lot of things are
-worse than <em>American Gods</em>. I needed to write this story, and so I did.
+worse than <em>American Gods</em>. Besides, half the point of writing is to write
+things that look horrible to you later.
+<p>
+
+<p class="hidden notes">
+I needed to write this story, and so I did.
 Know that I did my best to steal the parts of that book's writing that I
 liked the most.
 </p>
