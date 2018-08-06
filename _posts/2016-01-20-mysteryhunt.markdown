@@ -109,11 +109,12 @@ You'll need more numbers to get the answer, and here they are:
     class="spoiler-control"
     title="Click to show answer"
     toggle1="Show Answer"
-    toggle2="Hide Answer">
+    toggle2="Hide Answer"
+    affected="answer">
 </button>
 {: .centered }
 
-<pre class="hidden">
+<pre class="hidden answer">
 The answer is DREAMER.
 </pre>
 
@@ -121,11 +122,12 @@ The answer is DREAMER.
     class="spoiler-control"
     title="Click to show solution"
     toggle1="Show Solution"
-    toggle2="Hide Solution">
+    toggle2="Hide Solution"
+    affected="solution">
 </button>
 {: .centered }
 
-<pre class="hidden">
+<pre class="hidden solution">
 This is a barebones identify, sort, index, solve puzzle.
 Not very interesting, but it gets the job done, and I didn't
 want to make something too complicated.

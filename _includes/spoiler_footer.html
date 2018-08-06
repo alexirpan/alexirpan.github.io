@@ -5,15 +5,18 @@
             var button = buttons[i];
             button.innerHTML = button.getAttribute("toggle1");
             button.onclick = function(e) {
+                var affected = this.getAttribute("affected");
+                var to_modify = document.getElementsByClassName(affected);
                 var startstate = (this.innerHTML === this.getAttribute("toggle1"));
-                // Yep, some hardcoded awfulness here
-                var controlled = this.parentNode.nextElementSibling;
-                if (startstate) {
-                    this.innerHTML = this.getAttribute("toggle2");
-                    controlled.className = "shown";
-                } else {
-                    this.innerHTML = this.getAttribute("toggle1");
-                    controlled.className = "hidden";
+                for (var j = 0; j < to_modify.length; j++) {
+                    var controlled = to_modify[j];
+                    if (startstate) {
+                        this.innerHTML = this.getAttribute("toggle2");
+                        controlled.className = controlled.className.replace("hidden", "shown");
+                    } else {
+                        this.innerHTML = this.getAttribute("toggle1");
+                        controlled.className = controlled.className.replace("shown", "hidden");
+                    }
                 }
             };
         }
