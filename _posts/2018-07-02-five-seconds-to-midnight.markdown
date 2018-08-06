@@ -31,10 +31,16 @@ the world. People no longer needed to sleep. They didn't get hungry, or thirsty.
 They couldn't hurt themselves, even if they tried. They simply *were*. Birth
 stopped, and death stopped. A few people tried to argue they weren't
 *technically* immortal, and weren't *technically* invulnerable, but it was close
-enough to immortality and invulnerability that they eventually gave up the
-fight for nomenclature.
+enough to immortality and invulnerability that those people gave up the fight
+for nomenclature.
 
-That left several questions, but chief among them was this: *what do we do now?*
+There were a few attempts to use science make sense of the situation. Why were only
+humans unaffected? How did the freeze distinguish between a carbon atom in a human, and
+a carbon atom in a plant, when they should have been identical? If people could move about, where did the energy come
+from? None of these attempts went anywhere. There were plenty of ideas, but they
+couldn't be tested, making them close to worthless.
+
+That left one big question: *what do we do now?*
 
 \* \* \*
 {: .centered }
@@ -104,30 +110,37 @@ everything that you want to see. People were running out of things to do.
 And then something new happened.
 
 Long after people had stopped keeping track of the time, a man decided to spend
-a few months walking across the Atlantic. He had done this about eighty times
+a few months walking across the Atlantic. He had done this eighty times
 before, but it had been on his bucket list to do it again after a friend mentioned
 an island he'd missed all the previous times. Halfway through his journey, he
 spotted a glowing, pulsating wall of light - something that was changing, when
 nothing was supposed to change.
 
-He made landfall in Morocco, and spread word to the first local he saw. Indepedent
+He made landfall in Morocco, and spread word to the first locals he could find.
+Indepedent
 expeditions verified his findings, and discovered that other walls of light had
 appeared across the ocean. A group from Australia started mapping the walls,
 and realized they were forming letters. With this news, they recruited a
 thousand people to form a human pyramid. The woman at the top of the pyramid
-looked down, and shouted out the message, written in white, serif font.
+looked down, and shouted out the message.
 
 **WE GAVE YOU GIFTS, AND YOU SQUANDERED THEM.**
+{: .centered }
 
 **WE GAVE YOU CHOICES, AND YOU MADE ONES THAT BROUGHT YOU CLOSE TO RUIN.**
+{: .centered }
 
 **IN FEAR, WE TOOK THEM AWAY.**
+{: .centered }
 
 **BUT PERHAPS YOU WOULD LIKE THEM BACK.**
+{: .centered }
 
 **PROVE YOU DESERVE THEM, AND WE wiLL RESTART THE GEARS OF THE WORLD.**
+{: .centered }
 
 **WE WILL GIVE YOU FIFTY YEARS TO DECIDE.**
+{: .centered }
 
 With the message delivered, the letters faded away, leaving just the frozen
 ocean waves.
@@ -143,10 +156,10 @@ People have so many ideas now, for things to build, things to try, and they
 *can't*, because the world literally won't allow them to do. We were given the
 chance to take back control over our own destiny. How could we say no?
 
-It was unclear how we were supposed to signal our decision, but eventually we
-discovered five analog clocks, scattered across the world, all identical in
-shape and size, all bathed in the same pulsating light from before, and all
-stuck at precisely five seconds to midnight.
+It was unclear how we were supposed to signal our decision. Eventually we
+discovered five analog clocks, scattered across the world. They were all
+identical in shape and size, all bathed in the same pulsating white light,
+and all stuck at precisely five seconds to midnight.
 
 The first was found in a classroom in Copenhagen.
 
@@ -165,24 +178,28 @@ forward at the same time, that would be the signal to get things moving again.
 
 I'm standing in front of the Chicago clock right now.
 
-For synchronization, we have a network of runners, who have learned the knack
-of running at *precisely* the same speed. We also have some checksum runners
-and backup runners to help correct for errors. The system's all very interesting,
-at least to me. I'd explain the details, but I wouldn't want to bore people;
+For synchronization, we have five runners, one for each clock, who have learned the knack
+of running at *precisely* a given speed. On a cue, they started running, such
+that they would arrive at each clock at the same time. In parallel, we're
+running some backup runners in case something goes wrong, and some checksum
+runners to transmit data that verifies we're in the correct margin of error.
+The system's all very interesting.
+I'd explain the details, but I wouldn't want to bore people.
 
-As for why I'm the one pushing the clock? It's nothing special. We chose
-randomly. I was the one picked.
+As for why I'm one of the people pushing a second hand? It's nothing special.
+We chose randomly. I just got lucky.
 
-Sometimes, I wonder what we'll do, or if we made the right call. It's not my
-place to judge. Besides, we'll find out soon.
+Sometimes, I wonder if we're making the right call. If I wanted, I could sabotage
+the whole operation. But I won't. It's humanity's decision and I have to respect
+it.
 
-Right on cue, a runner walks into the room, moving forward at a steady pace.
+Right on cue, a runner enters the room, moving forward at a steady pace.
 
 "It's time."
 
-I nod, and start pushing the second hand forward. It starts to
-shift with a loud, creaking sound, a sound far too loud for what should be
-an ordinary clock. I push, and push, and push - and then it's free.
+I nod, and start pushing the second hand forward. It starts to groan,
+making a loud, creaking sound that is far too loud for what should be
+an ordinary clock. I push, and push, and push - and then it starts moving.
 
 *Tick.*
 
@@ -211,7 +228,7 @@ an ordinary clock. I push, and push, and push - and then it's free.
 Sometime in early July, I thought of the beginning and end of this story.
 I liked the idea, I knew what notes I wanted to hit, and I had ideas about
 how to write it. Best of all, it was an idea that worked best as a short story,
-which made it excellent practice.
+which made it excellent writing practice.
 </p>
 
 <p class="hidden notes">
@@ -223,9 +240,9 @@ since I was too busy with conferences and travel.
 By the time I revisited it, I had finished reading <em>American Gods</em>, and it almost
 convinced me to throw the story away. The storytelling in that book
 was so lyrical that it made mine feel like a tragedy. I then decided it would
-be okay if my story was worse than American Gods, because a lot of things are
-worse than American Gods. I needed to write this story, and so I did.
-Know that I did my best to steal the parts of <em>American Gods</em>'s writing that I
+be okay if my story was worse than <em>American Gods</em>, because a lot of things are
+worse than <em>American Gods</em>. I needed to write this story, and so I did.
+Know that I did my best to steal the parts of that book's writing that I
 liked the most.
 </p>
 
