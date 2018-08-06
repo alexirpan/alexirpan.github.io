@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Five Seconds to Midnight"
-date:   2018-08-03 00:01:02 -0700
+date:   2018-08-06 00:20:00 -0700
 ---
 
 Everyone knew when time froze, and no one knew if it would start again.
