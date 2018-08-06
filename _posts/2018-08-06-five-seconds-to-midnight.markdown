@@ -117,7 +117,7 @@ spotted a glowing, pulsating wall of light - something that was changing, when
 nothing was supposed to change.
 
 He made landfall in Morocco, and spread word to the first locals he could find.
-Indepedent
+Independent
 expeditions verified his findings, and discovered that other walls of light had
 appeared across the ocean. A group from Australia started mapping the walls,
 and realized they were forming letters. With this news, they recruited a
@@ -136,7 +136,7 @@ looked down, and shouted out the message.
 **BUT PERHAPS YOU WOULD LIKE THEM BACK.**
 {: .centered }
 
-**PROVE YOU DESERVE THEM, AND WE wiLL RESTART THE GEARS OF THE WORLD.**
+**PROVE YOU DESERVE THEM, AND WE WILL RESTART THE GEARS OF THE WORLD.**
 {: .centered }
 
 **WE WILL GIVE YOU FIFTY YEARS TO DECIDE.**
