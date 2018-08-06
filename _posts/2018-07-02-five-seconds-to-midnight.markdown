@@ -6,11 +6,11 @@ date:   2018-08-03 00:01:02 -0700
 
 Everyone knew when time froze, and no one knew if it would start again.
 
-Cars stopped in the middle of the road, puffs of smoke
-stuck to their tailpipes like cotton candy. Raindrops hung in the air,
-casting shadows on sidewalks and fields around the world. Planes hung
-in the sky, the world's largest crib mobile above the clouds. It was all
-very strange.
+Raindrops hung in the air.
+Cars had stopped in the middle of the road, puffs of smoke
+stuck to their tailpipes like cotton candy.
+Planes were fixed in the sky, the world's largest crib mobile above the clouds.
+It was all very strange.
 
 Stranger still was what wasn't affected: people. Only people. Birds stopped
 mid-chirp, dogs and cats kept napping (and would nap forever), but humans
@@ -18,11 +18,12 @@ were the one exception. They could move around, grab things, shake hands,
 dance, run, crawl.
 
 The first reactions were panic and confusion. People reached for their
-smartphones, and then learned that smartphones don't do very much if time isn't
-moving. Computers don't do much either. Phone lines needed the flow of electricity,
-cars were glued to the road, trains were stuck on their tracks - transportation
-and communication had regressed to ancient times. The moment of realization
-stretched our further and further, carrying into eternity.
+smartphones, and then learned that smartphones don't do very much if electricity
+doesn't work, and electricity doesn't work if time doesn't work.
+Computers don't do much either. Neither did phone lines, or trains, or even
+horse-drawn carriages. Transportation
+and communication had regressed to ancient times. There was moment of
+realization - and it stretched, further and further, carrying into eternity.
 
 In the span of a few days, the other consequences became clear. It was now
 impossible to change the physical or chemical configuration of anything in
@@ -197,23 +198,39 @@ an ordinary clock. I push, and push, and push - and then it's free.
 
 <p></p>
 
-*Author's Notes*
+<button
+    class="spoiler-control"
+    title="Click to show Author's Notes"
+    toggle1="Reveal Author's Notes"
+    toggle2="Hide Author's Notes"
+    affected="notes">
+</button>
+{: .centered }
 
-*I first thought of this story in early July. The premise was captivating, I knew
-what ideas I wanted to include, I had ideas about how I wanted to write it, and best of all,
-it was well-suited to a short story format, which meant it shouldn't have taken much time
-to write.*
+<p class="hidden notes">
+Sometime in early July, I thought of the beginning and end of this story.
+I liked the idea, I knew what notes I wanted to hit, and I had ideas about
+how to write it. Best of all, it was an idea that worked best as a short story,
+which made it excellent practice.
+</p>
 
-*I started a draft before ICML, and then forgot about it, since I was too busy with
-conferences and travel.*
+<p class="hidden notes">
+I started a draft before ICML, and then forgot about it for several weeks,
+since I was too busy with conferences and travel.
+</p>
 
-*By the time I revisited it, I had finished reading American Gods, and it almost
-convinced me to throw this story away, because the storytelling in that book
-was so lyrical that it made mine feel like a tragedy. I then decided it would be okay if my story was orders of
-magnitude worse than American Gods, because a lot of things are worse than American
-Gods. I needed to write this story, and so I did. If you spot any similarities
-in the sentence structures, know that I did my best to steal the parts I liked
-the most.*
+<p class="hidden notes">
+By the time I revisited it, I had finished reading <em>American Gods</em>, and it almost
+convinced me to throw the story away. The storytelling in that book
+was so lyrical that it made mine feel like a tragedy. I then decided it would
+be okay if my story was worse than American Gods, because a lot of things are
+worse than American Gods. I needed to write this story, and so I did.
+Know that I did my best to steal the parts of <em>American Gods</em>'s writing that I
+liked the most.
+</p>
 
-*The bulk of this story was written while listening to [Demetori's rendition of Eastern Dream](https://www.youtube.com/watch?v=t3sm6RcBpXU)
-on repeat. This has nothing to do with anything. I just like that song very much.*
+<p class="hidden notes">
+The bulk of this story was written while listening to
+<a href="https://www.youtube.com/watch?v=t3sm6RcBpXU">Demetori's rendition of Eastern Dream</a>
+on repeat. This has nothing to do with anything. I just like that song very much.
+</p>

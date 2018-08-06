@@ -31,11 +31,12 @@ catchy. Here's one of those songs.
     class="spoiler-control"
     title="Click to show lyrics"
     toggle1="Show Lyrics"
-    toggle2="Hide Lyrics">
+    toggle2="Hide Lyrics"
+    affected="lyrics">
 </button>
 {: .centered }
 
-<pre class="hidden">
+<pre class="hidden lyrics">
 [Sunset Shimmer and Wondercolts]
 
 Ho! We're gonna take you down
