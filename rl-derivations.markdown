@@ -5,14 +5,17 @@ permalink: /rl-derivations/
 ---
 
 
-*Last updated May 24, 2017*
+*Last updated August 6, 2018*
 
 Place for me to store notes on reinforcement learning, with a
 focus on the details of the derivations.
 
-This is a draft, and will never be more than a draft.
-Intended as a reference for me, may not be legible to other people.
+This will never be more than a draft. It is intended as a personal
+reference, and may not be legible to other people.
 Only posting publicly in case other people find it useful.
+
+This plays very loose with summations vs integrals, I assume everything
+carries through between the discrete and continuous cases.
 
 TODO: Add paper links for where I first encountered these proofs,
 relevant papers, etc.
@@ -418,19 +421,17 @@ More precisely, multiplying $$\rho_\pi(s)$$ by $$(1-\gamma)$$ gives a
 probability distribution.
 
 The occupency measure $$\rho_\pi(s,a)$$ is defined similarly, except it's the
-discounted sum of probabilityes of visiting state-action pairs $$(s,a)$$,
+discounted sum of probabilities of visiting state-action pairs $$(s,a)$$,
 instead of just states $$s$$.
 
 $$
     \rho_\pi(s,a) = \pi(a|s) \rho_\pi(s)
 $$
 
-(I know this is an abuse of notation. I'm sorry.)
-
 The expected reward of policy $$\pi$$ is
 
 $$
-    \eta(\pi) = \mathbb{E}_\pi[\sum_t \gamma^t \pi(a_t|s_t)r(s_t,a_t)]
+    \eta(\pi) = \mathbb{E}_\pi\left[\sum_t \gamma^t \pi(a_t|s_t)r(s_t,a_t)\right]
 $$
 
 which can be interpreted as taking the average reward over all trajectories.
@@ -449,15 +450,73 @@ is the expected reward of $$\pi$$. But equivalently, we could ask,
 "What value is in cell $$(s,a)$$ in the average grid?" And it turns out
 that cell will have value $$\rho_\pi(s,a)r(s,a)$$.
 
-TODO: add proof of bijection between occupnecy measures $$\rho$$
-and policies $$\pi$$.
-
 Why bother formulating the problem this way? It gives another way to think
 about the learning problem. In the trajectory view, you want to update
 your policy such that episodes that give good reward happen more often.
 In the state-action view, you want to update such that you visit
 good $$(s,a)$$ more often. It can be easier to make arguments
 in one view than in the other.
+
+### Equivalence between Occupency Measures and Policies
+
+(Note: didn't look up the proof for this, reproved it myself. Should be
+correct but not sure about this.)
+
+Given an MDP, we can show there is a bijection between policies $$\pi$$
+and occupency measures $$\rho(s, a)$$.
+
+Recall that an occupency measure is defined by
+
+$$
+    \rho_\pi(s,a) = \pi(a|s) \rho_\pi(s)
+$$
+
+This immediately guarantees there is a surjection from policies to occupency
+measures, because an occupency measure cannot be defined without a corresponding
+policy.
+
+(Earlier, we said we can thinking occupency measures as a probability distribution
+over states, up to a constant factor. It is worth noting that not all probability
+distributions over states are valid occupency measures. A simple counterexample
+is an MDP with a fixed initial state $$s_0$$. Any distribution that fails to
+assign enough weight to $$s_0$$ cannot be an occupency measure.)
+
+This leaves showing there is an injection between the two. We do this by
+considering an arbitrary occupency measure $$\rho_pi$$, and constructing the
+$$\pi$$ that generated it, showing that there is a unique $$\pi$$ satisfying
+the definition.
+
+A simple rearrangement of the definition
+
+$$
+    \rho_\pi(s,a) = \pi(a|s) \rho_\pi(s)
+$$
+
+gives the following.
+
+$$
+    \pi(a|s) = \frac{\rho_\pi(s,a)}{\rho_\pi(s)}
+$$
+
+Now we use a sneaky trick. Note
+
+* That the sum of this over all $$a$$ must equal $$1$$, because $$\pi(a|s)$$ is
+a probability distribution.
+* That the denominator of this expression does not depend on $$a$$.
+
+We therefore have
+
+$$
+    \sum_a \pi(a|s) = 1 = \frac{\sum_a \rho_pi(s,a)}{\rho_\pi(s)}
+$$
+
+We get $$\rho_\pi(s) = \sum_a \rho_\pi(s,a )$$, giving
+
+$$
+    \pi(a|s) = \frac{\rho_\pi(s,a)}{\sum_a \rho_pi(s, a)}
+$$
+
+The policy satisfying this equality must be unique.
 
 
 ## Advantage With Respect to Another Policy
@@ -500,6 +559,32 @@ $$
 $$
 
 completing the proof.
+
+# Off-Policy Policy Gradient Through Importance Sampling
+
+When deriving policy gradient, we assume we always collect data from the
+currently learned policy. This is required to get an unbiased estimator of the
+gradient.
+
+Let's suppose this isn't the case. To retrieve an unbiased estimator, we can
+use importance sampling. By convention, let $$\mu$$ be the policy that collected
+our data, and $$\pi$$ be the current learned policy. Then the importance
+sampled gradient is
+
+$$
+    g = \left(\prod_t \rho_t \right)\sum_i \mathbb{E}\left[R_{i:\infty} \nabla_\theta \log \pi_\theta(a_i|s_i)\right]
+$$
+
+where $$\rho_t = \frac{\pi(a_t|s_t)}{\mu(a_t|s_t)}$$. The product of $$\rho_t$$
+across all $$t$$ gives the importance sampling weight for generating episode
+$$\tau$$ by acting according to $$\pi$$ instead of $$\mu$$.
+
+The importance weights are unbounded, which can lead to very high variance.
+There are some approaches to avoid having an exploding one. One is to truncate
+the product to only be over the first $$k$$ steps of the episode. Another is to
+compute the sum of importance weights over the entire dataset, then normalize each
+weight by dividing by the sum. This at least upper-bounds the importance sampling
+weights by $$1$$.
 
 # Q-Prop
 
@@ -633,5 +718,3 @@ data collection.)
 Important note: Q-Prop is an approach for estimating the gradient. It says nothing
 about how to apply it. You can directly add the gradient with SGD, or you can use
 natural policy gradient, or TRPO.
-
-TODO: explain aggressive vs conservative Q-Prop.
