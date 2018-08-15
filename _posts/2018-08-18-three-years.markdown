@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Three Years Later"
-date:   2017-08-18 00:00:00 -0700
+date:   2018-08-15 00:00:00 -0700
 ---
 
 *Sorta Insightful* turns three years old today! Whether you were here from the
@@ -58,27 +58,90 @@ although some months are busier than other months.
 
 Eagle-eyed readers may notice that the reinforcement learning post was much
 longer than the rest, forming almost 40% of the words I wrote for *Sorta Insightful*
-this year. Did it take 40% of my writing time as well?
+this year.
 
 
-Time Spent
+Time Spent Writing, and When I Do It
 --------------------------------------------------------------------------
 
-For about the past two years, I've been using Gleeo Time Tracker to track my
-time. I use this to track these things:
+How long do I spend writing for my blog?
 
-* How long I sleep each night.
-* How long my morning and evening commute are. Taking the difference between
-commute times lets me figure out how many hours I've worked. (I don't track
-work itself for a few complicated reasons that are better suited for another post.)
-* How long I play specific video games.
-* How long I spend reading books or web fiction.
-* How long I spend writing.
-
-EDIT THIS.
+For the past two years, I've been using Gleeo Time Tracker to track my
+time. I track a few things: how long I sleep, the length of my commute,
+how much time I spend reading books and web fiction, what video games I play
+(and for how long), and how long I spend writing.
 
 Despite having two years worth of data, I've never bother doing any analytics
-on it. Let's dig into that now!
+on it. This seems like a good excuse to dig into.
+
+Gleeo Time Tracker exports its time as a CSV file, which makes it easy to write
+some Python scripts to process it.
+
+**Overall, I spent about 132 hours 30 minutes writing for my blog this year.**
+At first, this felt like less than I expected, but this averages out to about
+21-22 minutes a day on average, which feels correct. I don't write on most
+days. My motivation comes in bursts, and I like starting and finishing posts
+over the course of few days, usually the weekend.
+
+Does that match the data? Here are the stats for how much time I spent
+on a given day of the week.
+
+| Day of the Week | Hours |
+|-----------------|-------|
+| Monday          | 21.78 |
+| Tuesday         | 14.47 |
+| Wednesday       | 33.53 |
+| Thursday        | 24.98 |
+| Friday          | 12.38 |
+| Saturday        | 11.18 |
+| Sunday          | 14.15 |
+
+Okay, so I was *super* wrong. I actually spend the most time writing on
+Wednesday. I guess blogging is my outlet for getting through the middle of the
+week?
+
+Alright, so I was wrong about the day of the week. How about the time of day?
+I've often joked that my most productive writing hours are between 11 PM and
+and 2 AM. Is that true?
+
+| Time of Day | Hours |
+|-------------|-------|
+| 00:00-00:59 | 22.95 |
+| 01:00-01:49 | 29.92 |
+| 02:00-02:49 | 17.88 |
+| 03:00-03:49 | 5.83  |
+| 04:00-04:49 | 2.20  |
+| 05:00-05:49 | 1.67  |
+| 06:00-06:49 | 1.27  |
+| 07:00-07:49 | 1.50  |
+| 08:00-08:49 | 1.00  |
+| 09:00-09:49 | 1.00  |
+| 10:00-10:49 | 1.00  |
+| 11:00-11:49 | 1.72  |
+| 12:00-12:49 | 1.00  |
+| 13:00-13:49 | 0.38  |
+| 14:00-14:49 | 1.77  |
+| 15:00-15:49 | 1.60  |
+| 16:00-16:49 | 4.30  |
+| 17:00-17:49 | 4.48  |
+| 18:00-18:49 | 5.28  |
+| 19:00-19:49 | 3.40  |
+| 20:00-20:49 | 3.78  |
+| 21:00-21:49 | 5.42  |
+| 22:00-22:49 | 5.03  |
+| 23:00-23:49 | 8.10  |
+
+Yep, that's true! In fact I do a decent amount of writing *after* 2 AM as well.
+
+I'm more impressed that I've written during literally every hour of the day.
+
+Here's that table in bar graph form.
+
+ADD GRAPH
+
+
+Time Spent on Specific Posts
+-------------------------------------------------------------------------------
 
 This blog is a Github Pages blog. Every change to this blog
 is done by a Git commit. Every post is drafted on a separate branch. The upshot
