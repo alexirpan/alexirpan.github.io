@@ -172,22 +172,44 @@ intervals in linear time.
 Here's the time spent for each post, from most to least, along with the number
 of words in that post.
 
-rl-derivations2 1.01666666667
-mlp-italy 4.31666666667 957 2017-12-30-mlp-italy.markdown  
-iclr-icra 10.6833333333 1790 2018-06-06-iclr-icra.markdown  
-mlp-music 5.28333333333
-blog-paper 8.21666666667 1319 2018-03-07-blog-paper.markdown  
-sim2real-promote 1.95 155 2017-09-25-sim2real-grasping.markdown  
-five-seconds 6.43333333333 1872 2018-08-06-five-seconds-to-midnight.markdown  
-mh-2018 3.68333333333 2112 2018-01-18-mh-2018.markdown  
-pokemon-ai 0.716666666667
-2year 3.38333333333 1256 2017-08-18-two-years.markdown  
-magic-arena 5.23333333333 1280 2018-03-29-magic-arena.markdown  
-research-tax 2.81666666667 1276 2017-11-18-research-tax.markdown  
-friendship-paradox 7.71666666667 1542 2017-09-13-friendship-paradox.markdown  
-ai-safety 15.2666666667
-rl-hard 53.3333333333 9426 2018-02-14-rl-hard.markdown  
-dota2-five 1.3 1464 2018-06-27-dota-2-five.markdown  
+| Post                | Hours | Word Count |
+|---------------------|-------|------------|
+| rl-hard             | 53.33 | 9426       |
+| (Draft)             | 15.27 | N/A        |
+| iclr-icra           | 10.68 | 1790       |
+| blog-paper          | 8.22  | 1319       |
+| friendship-paradox  | 7.72  | 1542       |
+| five-seconds        | 6.43  | 1872       |
+| mlp-music           | 5.28  | 450        |
+| magic-arena         | 5.23  | 1280       |
+| mlp-italy           | 4.32  | 957        |
+| mh-2018             | 3.68  | 2112       |
+| 2year               | 3.38  | 1256       |
+| research-tax        | 2.82  | 1276       |
+| sim2real-grasping   | 1.95  | 155        |
+| dota2-five          | 1.3   | 1464       |
+| (Draft)             | 1.02  | N/A        |
+| (Draft)             | 0.72  | N/A        |
 
-These times generally look okay, except for a few oddities. The post about
-GraspGAN was very short
+A few people have asked me how long it took me to write my reinforcement
+learning post. Well, there's your answer: 53 hours, 20 minutes, written over the
+course of 6 months. I started writing the post August 2017. Real work started
+in October, with the first complete draft done Christmas 2017. Editing based on
+early feedback was done between Christmas and Valentine's day, with the post
+releasing February 14, 2018.
+
+The time for the RL post actually lines up eerily well with the word count.
+The RL post was almost 40% of the words I wrote this year, and the post took
+almost 40% of my writing time. This correlation falls apart for most of the
+other posts.
+
+You may have noticed the crazy outlier of "1.95 hours to write 155 words". It's
+a bit misleading, since based on my commit logs, that post included updates to my
+About page and Research page, which isn't reflected in the actual word count.
+The MLP Music page also has a low word count, but that's because most of the time
+was spent tracking down links and making judgment calls on what songs to share.
+
+As for the draft posts: we'll see if I finish any of those. I believe it's
+perfectly healthy to have lots of incomplete projects. You aren't obligated
+to finish everything you start. Still, it feels weird to have 15 hours of work
+on a draft when most of my posts take less than 10.
