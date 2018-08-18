@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Three Years Later"
-date:   2018-08-15 00:00:00 -0700
+date:   2018-08-18 01:22:00 -0700
 ---
 
 *Sorta Insightful* turns three years old today! Whether you were here from the
@@ -15,28 +15,12 @@ self-reflective, just in a different vein.
 Words Written
 ----------------------------------------
 
-Last year, I wrote [22409 words]({% post_url 2017-08-18-two-years %}).
-
-```
- 1244 2016-09-07-contradictions.markdown  
- 1936 2016-10-18-politics.markdown  
- 1750 2016-11-08-right-questions.markdown  
-  895 2016-11-12-hybrid-argument.markdown  
- 1384 2017-01-20-mh-2017.markdown  
-  931 2017-01-25-research-comm.markdown  
-  592 2017-02-12-default-arguments.markdown  
- 4035 2017-02-22-wasserstein-gan.markdown  
- 1827 2017-03-18-we-have-a-problem.markdown  
-  834 2017-04-19-acss.markdown  
- 1925 2017-04-26-perils-batch-norm.markdown  
- 3443 2017-06-27-hyperparam-spectral.markdown  
- 1613 2017-08-12-openai-dota-2.markdown  
-22409 total  
-```
-
+Last year, I wrote [22,409 words]({% post_url 2017-08-18-two-years %}).
 How about this year?
 
-```
+I wrote **24,449** words. Here's the breakdown in chronological order.
+
+{% highlight python %}
  1256 2017-08-18-two-years.markdown  
  1542 2017-09-13-friendship-paradox.markdown  
   155 2017-09-25-sim2real-grasping.markdown  
@@ -50,14 +34,12 @@ How about this year?
  1464 2018-06-27-dota-2-five.markdown  
  1872 2018-08-06-five-seconds-to-midnight.markdown  
 24449 total  
-```
+{% endhighlight %}
 
-A little bit more, 24449 words. I wrote 12 posts this year, following my
-trend of 1 post a month on average. (Although some months are certainly
-busier than other ones.)
+I wrote 12 posts this year, following my trend of 1 post a month on average.
 
-Eagle-eyed readers may notice that the reinforcement learning post was much, much
-longer than the rest, taking up almost 40% of the words I wrote for
+Eagle-eyed readers may notice that the [reinforcement learning post]({% post_url 2018-02-14-rl-hard %})
+was much, much longer than the rest, taking up almost 40% of the words I wrote for
 *Sorta Insightful* this year.
 
 
@@ -66,7 +48,7 @@ View Counts
 
 These view counts are aggregated from August 18, 2017 to today.
 
-```
+{% highlight python %}
     302 2017-08-18-two-years.markdown  
     530 2017-09-13-friendship-paradox.markdown  
     552 2017-09-25-sim2real-grasping.markdown  
@@ -79,25 +61,25 @@ These view counts are aggregated from August 18, 2017 to today.
   3,311 2018-06-06-iclr-icra.markdown  
     579 2018-06-27-dota-2-five.markdown  
     154 2018-08-06-five-seconds-to-midnight.markdown  
-```
+{% endhighlight %}
 
-Okay, I knew the reinforcement learning post would be the outlier. I didn't
-think it would be the outlier by that much.
+Okay, I knew the RL post would be the outlier. I didn't think it would be the
+outlier by that much. Jeeeez.
 
 
 Time Spent Writing
 --------------------------------------------------------------------------
 
-For the past two years, I've been using Gleeo Time Tracker to track my
-time. I track a few things: how long I sleep, the length of my commute,
-how much time I spend reading books and web fiction, what video games I play
-(and for how long), and how long I spend writing.
+For the past two years, I've been using [Gleeo Time Tracker](https://gleeo.com/index.php/en/)
+to track my time. I track a few things: how long I sleep, the length of my commute,
+how much time I spend reading books and [web fiction](/webfictionrecs),
+what video games I play (and for how long), and how long I spend writing.
 
 Despite having two years worth of data, I've never bother doing any analytics
-on it. This post is a good excuse to start.
+on it. This post felt like a good excuse to start.
 
-Excluding the time spent on this post, **I spent 131 hours 21 minutes writing
-for my blog this year.**
+Excluding the time spent on this post, I spent **131 hours, 21 minutes** writing
+for my blog this year.
 At first, this felt like less than I expected, but this averages out to about
 21-22 minutes a day, which feels correct.
 
@@ -105,12 +87,12 @@ At first, this felt like less than I expected, but this averages out to about
 When I Write
 ---------------------------------------------------------------------------
 
-Most days, I don't do any writing. My motivation comes in bursts, and I like
-starting and finishing posts witihn a few days. I feel like I get the most
-writing done on the weekend. Is that true?
+Most days, I don't do any writing. My motivation comes in bursts. I like
+starting and finishing posts within a few days, and it feels like I do the most
+writing on the weekends. Is that true?
 
 Gleeo Time Tracker doesn't have the tools for this built-in, but you can
-export your timetracking data as a CSV file. This makes it straightforward to
+export your time tracking data as a CSV file. This makes it straightforward to
 do further analytics. I used Python for this, since that's my go-to programming
 language.
 
@@ -127,12 +109,12 @@ Here's how much time I've spent writing on a given day of the week.
 | Sunday          | 14.15 |
 {: .centered-table }
 
-Turns out I was *super wrong*! I actually do most of my writing on Wednesday.
+Turns out I was *super wrong!* I actually do most of my writing on Wednesday.
 I guess blogging is my outlet for getting through the middle of the week?
 
 Alright, so I was wrong about the day of the week. How about the time of day?
-I've often joked that my most productive writing hours are between 11 PM and
-and 2 AM. Is that true?
+I've often joked that my most productive writing hours are between 11 PM and 2 AM.
+Is that true?
 
 | &nbsp;&nbsp;Time of Day&nbsp;&nbsp; | Hours |
 |-------------|-------|
@@ -167,8 +149,7 @@ midnight and 3 AM.
 
 The more impressive (and scary) thing is that I've written during literally
 every hour of the day. Who's even awake at 5 AM? And given that I have 1.67
-hours of writing at that time, I must have done it *at least twice*. I never
-claimed to be good at managing my time.
+hours of writing at that time, I must have done it *at least twice*.
 
 
 Time Spent Per Post
@@ -178,11 +159,11 @@ My time tracker data doesn't store the post I was writing at the time. However,
 thanks to the magic of Git, I can reconstruct what post I was writing on a given
 day.
 
-This blog is a Github Pages blog, so every change to this blog is done through
+This blog is a [Github Pages](https://pages.github.com/) blog, so every change to this blog is done through
 a Git commit, with timestamp. First, I exported all commits I've ever made.
 
 With a few exceptions, the Git history for this blog is structured as a tree.
-EVery post starts by branching off of `master`. I work on the draft there,
+Every post starts by branching off of `master`. I work on the draft there,
 building my site locally to preview how it looks. When the post is finished,
 I go back to `master`, then run `git merge --squash <branch name>`. This
 creates a single commit that's the sum of all changes made in that branch.
@@ -191,18 +172,16 @@ This workflow means that writing-wise, the only meaningful commits are on the
 offshoot branches. These commits lie on exactly one branch, which corresponds
 to exactly one post.
 
-My time tracker data doesn't store the post I was writing
-at the time, but by cross-reference this data with my Git commit timestamps,
-I can figure out how long I spent writing each post.
+This gives me a list of commit times (from Git) and a list of `(start, end)`
+intervals (from my time tracker).
+If a commit lies within the interval, it's paired with that interval.
+Not every interval contains a commit, since I didn't commit my work during
+every writing session. but I can assign those intervals based on the closest
+commit. Summing all the intervals paired with the commits on a given branch
+gives me the time I've spent working on that post.
 
-Meanwhile, my time tracker data is a list of non-overlapping (start, end)
-intervals. If a commit lies within the interval, it's definitely paired with
-the same post as that commit. Not every interval contains a commit, since
-I didn't commit my work during every writing session. but I can assign
-these intervals based on the closest commit.
-
-Here's the time spent for each post, from most to least. For context, I also
-include the number of words in that post.
+Here's the time spent for each post, ordered from most to least. For context, I
+also include the number of words in that post.
 
 | &nbsp;&nbsp;Post&nbsp;&nbsp;                | Hours | &nbsp;&nbsp;Word Count&nbsp;&nbsp; |
 |---------------------|-------|------------|
@@ -226,27 +205,40 @@ include the number of words in that post.
 
 A few people have asked me how long it took me to write my reinforcement
 learning post. Well, there's your answer: 53 hours, 20 minutes. Based on
-commit timestamps, the first word was written August 2017, regular writing
-started October 2017, the first draft was done Christmas 2017, and editing
-based on early feedback was done between Christmas and Valentine's Day,
-with the post releasing February 14, 2018.
+commit timestamps, the first draft was started August 2017, most of it
+was written between October 2017 and Christmas 2017, and editing based on
+early feedback was done between Christmas 2017 and Valentine's Day 2018.
 
 The time for that post actually lines up eerily well with the word count.
 The RL post was almost 40% of the words I wrote this year, and the post took
 almost 40% of my writing time. This correlation immediately falls apart for the
 other posts.
 
-You may have noticed the crazy outlier of "1.95 hours to write 155 words". It's
+You may have noticed the crazy outlier of "1.95 hours to write [155 words]({% post_url 2017-09-25-sim2real-grasping %})". It's
 very misleading. Based on my commit messages, that post included updates to my
 About page and Research page, which isn't reflected in the reported word count.
 
-There are two other outliers. I spent 1.3 hours writing 1464 words for the
+There are two other outliers. I spent 1.3 hours writing [1464 words]({% post_url 2018-06-27-dota-2-five %}) for the
 OpenAI Five post. If you read that post, the lack of polish should be obvious.
-I spent 5.28 hours writing 450 words for the MLP Music Recs page, but for that
-page, most of my time was spent digging up songs and making judgment calls
-on what to share.
+I spent 5.28 hours writing 450 words for the [MLP Music Recs](/mlpmusicrecs)
+page, but most of the work there was spent searching up songs on YouTube and
+narrowing the list down to 1 song per artist.
 
-As for the draft posts: we'll see if I finish any of those. I believe it's
+As for the drafts: we'll see if I finish any of those. I believe it's
 perfectly healthy to have lots of incomplete projects. You aren't obligated
 to finish everything you start. Still, it feels weird to have 15 hours of work
-on a draft when most of my posts take less than 10.
+on an unfinished draft, when most of my posts take less than 10.
+
+
+What's Next?
+----------------------------------------------------------------------------
+
+Well, to be honest, I'm not really sure. Historically, if I say I'll write a
+post in the upcoming year, I never get around to writing it. This year, I'm
+deciding not to commit to writing anything. Instead, I'll write whatever I
+have motivation to write. This isn't really a change, it's simply me being
+more realistic about what's going to happen.
+
+Although, to be honest, I do still want to write that post about
+*Gunnerkrigg Court*. I've been talking about writing that post for over two
+years. One day, it'll happen. It has to.
