@@ -5,11 +5,11 @@ date:   2018-08-15 00:00:00 -0700
 ---
 
 *Sorta Insightful* turns three years old today! Whether you were here from the
-beginning or started recently, thanks for reading.
+beginning, or just discovered this blog, thanks for reading.
 
 I normally write a sappy, self-reflective post for my blogging anniversary. This
-year, I'm deciding to shake things up a bit, and to do a bunch of data analysis
-instead. It's still self-reflective, just in a different vein.
+year, I'm deciding to do a bunch of data analysis instead. It's still
+self-reflective, just in a different vein.
 
 
 Words Written
@@ -52,19 +52,41 @@ How about this year?
 24449 total  
 ```
 
-A little bit more, 24449 words. I wrote 12 distinct posts this year, and 13
-posts last year. Looks like I'm following my trend of 1 post a month on average,
-although some months are busier than other months.
+A little bit more, 24449 words. I wrote 12 posts this year, following my
+trend of 1 post a month on average. (Although some months are certainly
+busier than other ones.)
 
-Eagle-eyed readers may notice that the reinforcement learning post was much
-longer than the rest, forming almost 40% of the words I wrote for *Sorta Insightful*
-this year.
+Eagle-eyed readers may notice that the reinforcement learning post was much, much
+longer than the rest, taking up almost 40% of the words I wrote for
+*Sorta Insightful* this year.
 
 
-Time Spent Writing, and When I Do It
+View Counts
 --------------------------------------------------------------------------
 
-How long do I spend writing for my blog?
+These view counts are aggregated from August 18, 2017 to today.
+
+```
+    302 2017-08-18-two-years.markdown  
+    530 2017-09-13-friendship-paradox.markdown  
+    552 2017-09-25-sim2real-grasping.markdown  
+    279 2017-11-18-research-tax.markdown  
+    209 2017-12-30-mlp-italy.markdown  
+    907 2018-01-18-mh-2018.markdown  
+145,502 2018-02-14-rl-hard.markdown  
+  1,376 2018-03-07-blog-paper.markdown  
+    744 2018-03-29-magic-arena.markdown  
+  3,311 2018-06-06-iclr-icra.markdown  
+    579 2018-06-27-dota-2-five.markdown  
+    154 2018-08-06-five-seconds-to-midnight.markdown  
+```
+
+Okay, I knew the reinforcement learning post would be the outlier. I didn't
+think it would be the outlier by that much.
+
+
+Time Spent Writing
+--------------------------------------------------------------------------
 
 For the past two years, I've been using Gleeo Time Tracker to track my
 time. I track a few things: how long I sleep, the length of my commute,
@@ -72,19 +94,27 @@ how much time I spend reading books and web fiction, what video games I play
 (and for how long), and how long I spend writing.
 
 Despite having two years worth of data, I've never bother doing any analytics
-on it. This seems like a good excuse to dig into.
-Gleeo Time Tracker exports its time as a CSV file, which makes it easy to write
-some Python scripts to process it.
+on it. This post is a good excuse to start.
 
 Excluding the time spent on this post, **I spent 131 hours 21 minutes writing
 for my blog this year.**
 At first, this felt like less than I expected, but this averages out to about
-21-22 minutes a day on average, which feels correct. I don't write on most
-days. My motivation comes in bursts, and I like starting and finishing posts
-over the course of few days, usually the weekend.
+21-22 minutes a day, which feels correct.
 
-Does that match the data? Here are the stats for how much time I spent
-on a given day of the week.
+
+When I Write
+---------------------------------------------------------------------------
+
+Most days, I don't do any writing. My motivation comes in bursts, and I like
+starting and finishing posts witihn a few days. I feel like I get the most
+writing done on the weekend. Is that true?
+
+Gleeo Time Tracker doesn't have the tools for this built-in, but you can
+export your timetracking data as a CSV file. This makes it straightforward to
+do further analytics. I used Python for this, since that's my go-to programming
+language.
+
+Here's how much time I've spent writing on a given day of the week.
 
 | &nbsp;&nbsp;Day of the Week&nbsp;&nbsp;  | Hours |
 |-----------------|-------|
@@ -97,9 +127,8 @@ on a given day of the week.
 | Sunday          | 14.15 |
 {: .centered-table }
 
-Okay, so I was *super* wrong. I actually spend the most time writing on
-Wednesday. I guess blogging is my outlet for getting through the middle of the
-week?
+Turns out I was *super wrong*! I actually do most of my writing on Wednesday.
+I guess blogging is my outlet for getting through the middle of the week?
 
 Alright, so I was wrong about the day of the week. How about the time of day?
 I've often joked that my most productive writing hours are between 11 PM and
@@ -133,46 +162,47 @@ and 2 AM. Is that true?
 | 23:00-23:49 | 8.10  |
 {: .centered-table }
 
-Yep, that's true! In fact I do a decent amount of writing *after* 2 AM as well.
+Well, it's very close to true! I was an hour early, I'm most productive between
+midnight and 3 AM.
 
-I'm more impressed that I've written during literally every hour of the day.
+The more impressive (and scary) thing is that I've written during literally
+every hour of the day. Who's even awake at 5 AM? And given that I have 1.67
+hours of writing at that time, I must have done it *at least twice*. I never
+claimed to be good at managing my time.
 
-Here's that table in bar graph form.
 
-ADD GRAPH
-
-
-Time Spent on Specific Posts
+Time Spent Per Post
 -------------------------------------------------------------------------------
 
-This blog is a Github Pages blog. Every change to this blog has a Git commit,
-with timestamp. By cross-referencing these timestamps with my time tracker data,
-I can figure out how long I've spent writing each post.
+My time tracker data doesn't store the post I was writing at the time. However,
+thanks to the magic of Git, I can reconstruct what post I was writing on a given
+day.
 
-At least, that's the theory. The implementation is more complicated.
-I try to keep my Git history structured as a tree. Every post is drafted on
-a separate branch. When I want to publish it, I collapse those commits into a
-single commit that gets added to master `master`, by doing \
-`git merge --squash <branch name>`. My first two internships managed their
-Git repos this way, and the habit stuck.
+This blog is a Github Pages blog, so every change to this blog is done through
+a Git commit, with timestamp. First, I exported all commits I've ever made.
 
-For every commit, I can get the list of branches that containts that commit
-with `git branch --contains <commit hash>`. Due to the tree property, a commit is
-either on one branch (if it is off `master`), or on `master` and every branch
-that has offshooted from master since then.
+With a few exceptions, the Git history for this blog is structured as a tree.
+EVery post starts by branching off of `master`. I work on the draft there,
+building my site locally to preview how it looks. When the post is finished,
+I go back to `master`, then run `git merge --squash <branch name>`. This
+creates a single commit that's the sum of all changes made in that branch.
 
-DIAGRAM?
+This workflow means that writing-wise, the only meaningful commits are on the
+offshoot branches. These commits lie on exactly one branch, which corresponds
+to exactly one post.
 
-I ignore all the commits on `master`, and labeling the remaining commits with
-the branch they're on (which maps one-to-one with the posts I've written.)
+My time tracker data doesn't store the post I was writing
+at the time, but by cross-reference this data with my Git commit timestamps,
+I can figure out how long I spent writing each post.
 
-My time tracker data is a list of (start, end) intervals, and none of the
-intervals intersect. Assuming that every commit occurs within one of these
-intervals, after sorting the intervals and commits, we can assign commits to
-intervals in linear time.
+Meanwhile, my time tracker data is a list of non-overlapping (start, end)
+intervals. If a commit lies within the interval, it's definitely paired with
+the same post as that commit. Not every interval contains a commit, since
+I didn't commit my work during every writing session. but I can assign
+these intervals based on the closest commit.
 
-Here's the time spent for each post, from most to least, along with the number
-of words in that post.
+Here's the time spent for each post, from most to least. For context, I also
+include the number of words in that post.
 
 | &nbsp;&nbsp;Post&nbsp;&nbsp;                | Hours | &nbsp;&nbsp;Word Count&nbsp;&nbsp; |
 |---------------------|-------|------------|
@@ -195,22 +225,26 @@ of words in that post.
 {: .centered-table }
 
 A few people have asked me how long it took me to write my reinforcement
-learning post. Well, there's your answer: 53 hours, 20 minutes, written over the
-course of 6 months. I started writing the post August 2017. Real work started
-in October, with the first complete draft done Christmas 2017. Editing based on
-early feedback was done between Christmas and Valentine's day, with the post
-releasing February 14, 2018.
+learning post. Well, there's your answer: 53 hours, 20 minutes. Based on
+commit timestamps, the first word was written August 2017, regular writing
+started October 2017, the first draft was done Christmas 2017, and editing
+based on early feedback was done between Christmas and Valentine's Day,
+with the post releasing February 14, 2018.
 
-The time for the RL post actually lines up eerily well with the word count.
+The time for that post actually lines up eerily well with the word count.
 The RL post was almost 40% of the words I wrote this year, and the post took
-almost 40% of my writing time. This correlation falls apart for most of the
+almost 40% of my writing time. This correlation immediately falls apart for the
 other posts.
 
 You may have noticed the crazy outlier of "1.95 hours to write 155 words". It's
-a bit misleading, since based on my commit logs, that post included updates to my
-About page and Research page, which isn't reflected in the actual word count.
-The MLP Music page also has a low word count, but that's because most of the time
-was spent tracking down links and making judgment calls on what songs to share.
+very misleading. Based on my commit messages, that post included updates to my
+About page and Research page, which isn't reflected in the reported word count.
+
+There are two other outliers. I spent 1.3 hours writing 1464 words for the
+OpenAI Five post. If you read that post, the lack of polish should be obvious.
+I spent 5.28 hours writing 450 words for the MLP Music Recs page, but for that
+page, most of my time was spent digging up songs and making judgment calls
+on what to share.
 
 As for the draft posts: we'll see if I finish any of those. I believe it's
 perfectly healthy to have lots of incomplete projects. You aren't obligated
