@@ -56,58 +56,54 @@ Kitchen, Esophaghar, and Brain Tree quests also ask for all sorts of things.
 
 PICTURES
 
-That provides the reason to buy items for NPC shops, but what do you do if
-it isn't on sale? Well, just buy it from another user. And here, we see
-market forces in action. Some items restock in NPC shops very rarely, but they
-still have similar demand. This opens up an opportunity - you can wait at
-a shop until new items go on sale, buy the rare items for the NPC price, then
-sell them in the user market for much higher.
+That provides the reason to buy items for NPC shops. Common items are almost
+always in stock, and the NPC shops set a floor on the market price. But what
+about the rare items? Here, we see the economy in action. You can either
+wait for the rare item to reappear in stock, or you can buy them directly
+from a user shop at a premium.
 
-This practice is called restocking,
+This leads to a practice the community calls restocking. You sit at an NPC
+shop, continually refresh it until rare items reappear in stock, buy them
+before other restockers get them, and then sell them in your shop at a profit.
 
-A lot of MMOs end up with a similar problem. The game needs to provide ways
-for new players to earn money, but there also have to be reasons for those
-players to spend money in ways that remove it from the economy.
+As a kid, I thought it was magical that you could earn thousands or
+tens of thousands of NP if you got a good sale. As an adult, I realize it's
+basically a time-for-money tradeoff.
 
-(Explain Neopets?)
+Restocking is entirely condoned by the site, and they even included a
+restocking penalty, where if you refreshed a shop page too often, you were
+locked out of buying items for several minutes. This helped mitigate bots.
 
-In Neopets, the main currency is Neopoints (NP). People usually get started by
-playing the Flash games, which give 500-1000 NP per play, depending on how
-good you were at them. Many of these games have aged very, very poorly, but they're a steady stream
-of income.
+Why do I bring up restocking? It's the main engine for removing Neopoints
+from the economy! NP spent at NPC shops goes away forever, and NP exchanging
+between users doesn't add any extra NP to the system. If restockers spend
+enough money at NPC shops, Neopoint inflation should be held in check.
 
-(In fact, back in the site's heyday, companies would commission sponsored
-Flash games advertising their products. These games were often quite generous
-with their NP, making them popular attractions.)
+If.
 
-Money also came from dailies like Tombola, which could randomly give you
-Codestones. What's so special about Codestones? They're the currency used at
-the Mystery Island Training School, where you can increase your Neopet's
-battling stats.
+Turns out that didn't happen.
+
+
+Neopoint Inflation
+-----------------------------------------------------------------------------
+
+The Neopets system has all the tools needed to keep inflation in check. The
+problem was simply a matter of balance. More NP was added than removed, and
+over time, prices of various goods started to rise.
+Now, there have been several articles about Neopets inflation in the past.
+
+ADD LINKS.
+
+These all point at it from the angle of late-stage capitalism.
+
+
+
 
 Right away, there's an elegance to this. To train your Neopet, you can either
 wait until the Tombola gives you the random Codestone you need, or you can
 pay NP and buy a Codestone sold by another player. Money for time, in one of
 its purest forms.
 
-Games aren't the only source of NP. Users can also earn interest from the
-Neopets Bank (which caps out at 10% interest per year if you hit 10
-million Neopoints), and from the Stock Market.
-
-Some economically minded users noticed a problem. You have all these ways to
-add Neopoints into the economy, but without a way to remove them, prices
-keep rising.
-
-
-Handling the Inflation Problem
------------------------------------------------------------------------------
-
-Neopets inflation is kept in check through NPC stores and various avatars.
-
-In a standard MMORPG, you're leveling up a character and need to buy healing
-items. Neopets doesn't really have this. Healing is free from the Healing
-Springs, food is free from the Giant Omelette or Neolodge. Instead, the
-demand comes from:
 
 * Books, which disappear when read. There are trophies for reading
 the most books.
