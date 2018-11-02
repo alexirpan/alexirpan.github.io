@@ -90,22 +90,60 @@ Neopoint Inflation
 The Neopets system has all the tools needed to keep inflation in check. The
 problem was simply a matter of balance. More NP was added than removed, and
 over time, prices of various goods started to rise.
-Now, there have been several articles about Neopets inflation in the past.
 
-ADD LINKS.
+To combat this, the staff added more NP sinks to the system. Try the Lever
+of Doom! If you pull it, you lose 100 NP. But, with a very small chance,
+pulling the Lever of Doom grants you a special avatar to use on the message
+boards. Some users are avatar hunters, trying to get every avatar they can,
+and people have spent millions on the Lever of Doom.
 
-These all point at it from the angle of late-stage capitalism.
+Buy the Hidden Tower Grimoires! These are untradeable books, only buyable from
+the Hidden Tower, the most expensive NPC shops in the game. They're called
+the Grimoire of the First Order, the Grimoire of Prosperity, and the Grimoire
+of Affluence, and cost 100,000 NP, 1,000,000 NP, and 10,000,000 NP respectively.
+Reading each gives you an avatar. It also counts as a book read to your pet.
+And some users go very hard on reading more books than any other user.
+
+The problem with these NP sinks is that they only cater to specific groups
+of users. Plenty of people don't care about avatars, or don't care about books.
+What I find interesting is that *they were added in the first place.* You get
+the feeling that people
+
+They then added the Wheel of Extravangance. For 100,000 NP, you can spin the
+wheel, and on average, you'll lose money but gain special items or avatars.
+
+Eventually, this came to a head with the Save the Wheels initiative in (CHECK
+YEAR). The in-lore storyline was that the Wheels of Excitement, NAME_CHECK,
+were broken and needed renovations, so won't you please donate some
+Neopoints, and as an added bonus we'll toss in rare items if you donate
+a lot! The practical reason was that they desperately
+needed to siphon money from the Neopets.
+
+On the face of things, this is a bit ridiculous, but it actually *worked*.
+Users donated over 12 *billion* Neopoints in total. In some sense, Neopets
+is a zombie site, but the flip side of that is that users have directly seen
+how prices of scarce items can shoot up over time, and they have the patience
+to wait for their profit to appear.
+
+Through it all, the Neopets economy has managed to stay remarkably stable.
+I don't think this was guaranteed to happen. One worry some users had was that
+as the game stagnated, players would leave, the supply of key consumables
+would dry up, and the economy would collapse as a result. But this didn't
+happen. In fact
+Yes, the cost of some collectibles (like rare stamps and rare weapons) has
+gone up over time.
 
 
 
+At this point, I would like to call out one article in particular.
 
-Right away, there's an elegance to this. To train your Neopet, you can either
-wait until the Tombola gives you the random Codestone you need, or you can
-pay NP and buy a Codestone sold by another player. Money for time, in one of
-its purest forms.
+https://medium.com/nimbly-aware/the-bourgeoisie-online-a-review-of-the-neopets-economy-4963d0a0f845
 
+You see, this isn't the first post about the Neopets economy. There have been
+several over the years, but much of the motivation I had to write this article
+came from this article in particular.
 
-* Books, which disappear when read. There are trophies for reading
-the most books.
-* NPC Quests, like Kitchen Quest, the Brain Tree, and Faerie Quests, all of
-which give you bonuses for random knickknacks.
+It criticizes the Neopets article from a socialistic standpoint, essentially
+criticizing the economy for its similarities to broken economies of the past,
+from a late-stage capitalism persepctive.
+
