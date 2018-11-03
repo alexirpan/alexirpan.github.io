@@ -1,87 +1,111 @@
 ---
 layout: post
-title:  "If I Learned Anything About Economics as a Kid, It Was Thanks to MMORPGs"
+title:  "The Neopets Economy, in Retrospect"
 date:   2018-10-13 18:02:00 -0700
 ---
 
-I've been playing a lot of MapleStory 2 recently, mostly out of nostalgia for
-MapleStory 1. I played several MMOs when I was growing up. I never got into
-Runescape, or Kingdom of Loathing, two popular MMOs in my age range, but I did
-get into Neopets, moved on to MapleStory, then Ragnarok Online after that.
+I've been playing a lot of MapleStory 2 recently, mostly for nostalgia reasons.
+As a kid, I played my share of MMOs, but before MapleStory, I started with one
+of the longest running MMOs out there - Neopets.
 
-Out of all of those, I'd say Neopets was the most formative MMO. Sure, in terms
-of game hours spent, I've probably spent more time on Ragnarok Online or
-MapleStory. But Neopets was my *first* MMO, and it was a browser game, making it
-easy to play anywhere. The local library had a super-fast Internet connection,
-and several of us signed up for computer time for the sole purpose of getting
-an edge in Neopets restocking.
+In terms of game hours spent, I've probably spent more time on Ragnarok Online,
+but Neopets was the more formative one that got me into online games. As a kid,
+I didn't really appreciate the Neopets economy, besides the basics of
+"try to buy low, try to sell high, rare items and good items are expensive".
+It's only with the benefit of hindsight that I can appreciate how the Neopets
+market evolved.
 
-It's only with the benefit of hindsight that I can appreciate the economies
-that evolved in those MMOs, and in some ways they're actually quite elegant.
-They're simpler than real-world economies, but still have solid depth to them.
-
-This post is focused on the Neopets economy, because I understand that
-economy better, and after running for over 18 years, you naturally end up with
-lots of interesting stories.
+Neopets is still around today. It's certainly a lot smaller. There's a vague
+sense that it's been dying for years and only lives because of nostalgia.
+When a game runs for over 18 years, you naturally end up with lots of interesting stories.
 
 
 What is Neopets?
 ----------------------------------------------------------------------------
 
-Neopets is a website about Neopets, which are cute animals you can own. You can
-buy things for your Neopet with Neopoints (NP), the main currency of the site.
-You get Neopoints from playing games, getting lucky from random events, doing
-dailies that give you NP, and by selling items to other players.
+Neopets is a website about Neopets, which are cute animals you can own as
+pets. You can buy things for your Neopet with Neopoints (NP), the main currency
+of the site. You get Neopoints from playing games, getting lucky from random
+events, doing dailies that give you free NP and items, and by selling items to
+other players on the market.
 
-The thing with Neopets is that you have to make your own goals. Luckily, there
-are enough options that you can do a lot of things. Maybe you want to read the
-most books, earn a trophy for a game by getting the top score, or collect
-stamps, or train your pet so that it can compete in the Battledome, or paint
-your Neopet a specific color. Whatever the goal, it usually costs Neopoints
-to get there, and that's where the economy comes in.
+Outside of that, what you do is up to you. There's no clear goal to Neopets,
+and I think that's why it manages to stick around. Maybe you want to train
+a battling pet, by buying Codestones to pay for the Neopets training schools.
+Maybe you want to make your Neopet read the most books, which requires buying
+books that disappear after you read them. Maybe you just want to collect things
+- the game has thousands of items and some people pride themselves on having a
+good collection. Or you could get into the cosmetic side of things by buying
+paintbrushes (which change the color of your Neopet) and decorations (which
+you can have your Neopet wear).
+
+Like I said. It's all up to you. What isn't up to you are the laws of supply
+and demand. Neopets is basically a free market, modulo a few things, and where
+there's demand, there's prices.
 
 
-Inflows and Outflows
+How do You Earn Neopoints?
 -----------------------------------------------------------------------------
 
-A lot of MMOs run into a similar problem. New players need to have a source of
-income so that they can save up and buy the things they want. But there also
-need to be ways to remove money from the system, to help reduce inflation.
+Almost all MMOs have the same core problem. New players need to have a source of
+income so that they can get started with building their wealth to buy things.
+This income is usually provided by the game. In a standard MMORPG, monsters will
+drop money on death, or drop other items you can sell to NPCs. In Neopets,
+the game-provided income comes from playing games on the site.
 
-The way Neopets handles this is actually pretty neat. There are a ton of NPC
-shops in Neopets, selling all sorts of stuff, 99% of which has no intrinsic
-value. Seriously. But, there are also a bunch of NPC quests that use these
-random items. Faeries quests ask for all sorts of knick knacks. Edna,
-Kitchen, Esophaghar, and Brain Tree quests also ask for all sorts of things.
+The problem is that this doesn't shuffle money from one part of the economy to
+the rest. It directly *adds* money to the system. In the long run, as more
+money is added to the economy, the price of goods rises, since the worth of
+1 Neopoint keeps dropping. If left unchecked, you can hit a situation where
+it's impossible for new players to buy anything of value from enfranchised
+players.
+To slow down inflation, there need to be ways to remove money from the system.
+
+The way Neopets handles this is actually pretty neat. In Neopets, the
+majority of items come from NPC shops. Whenever a player buys an item from an
+NPC shop, the money they spent is siphoned out of the economy.
+
+Now, 99% of the stuff sold in NPC shops is useless, which is bad news for
+a money sink, but Neopets happens to have ways to make these items occasionally
+worth buying. There are several NPCs in Neopets that will give out quests.
+Illusen quests, Jhudora quests, Edna quests, Brain Tree quests, Kitchen quests,
+Faerie quests (if you get lucky). You could even go to the Faerieland Employment
+agency to get a job, if you really want to. These quests (or jobs) ask for
+random items that are sold in NPC shops, in exchange for rewards. This helps
+provide a base level of demand for many items.
 
 PICTURES
 
-That provides the reason to buy items for NPC shops. Common items are almost
-always in stock, and the NPC shops set a floor on the market price. But what
-about the rare items? Here, we see the economy in action. You can either
-wait for the rare item to reappear in stock, or you can buy them directly
-from a user shop at a premium.
+The way Neopets shops work is a bit special. When an item goes on sale, it sells
+with a limited stock. When they run out of stock, the item isn't buyable
+anymore, but shops restock every 7-8 minutes. These shops set a floor on the
+market price of an item. Common items are almost always in stock at this floor
+price. But what about rare items that sell out quickly?
 
-This leads to a practice the community calls restocking. You sit at an NPC
-shop, continually refresh it until rare items reappear in stock, buy them
-before other restockers get them, and then sell them in your shop at a profit.
+Here, we see the economy in action. You can either wait for the rare item to
+restock, and hope you buy it before other people do. Or, you can buy that
+rare item directly from a user shop, but at a higher price that accounts for
+the time spent buying that item from the NPC.
+
+This leads to a practice called restocking. You sit at an NPC shop, refreshing
+the page until rare items go on sale, buy them before other restockers, then
+sell them at your shop for a profit. If you're lucky enough or patient enough,
+this becomes one of the best ways to make NP in Neopets.
+
+When I was growing up, I remember playing Neopets at the local library with
+my friends, because they had just installed a super-fast Internet connection,
+and in a Neopets restock war, milliseconds matter. It's an eerie analgoue to
+the world of high-frequency trading today, except it was distributed over
+millions of children.
 
 As a kid, I thought it was magical that you could earn thousands or
 tens of thousands of NP if you got a good sale. As an adult, I realize it's
-basically a time-for-money tradeoff.
+purely a time-for-money tradeoff.
 
-Restocking is entirely condoned by the site, and they even included a
-restocking penalty, where if you refreshed a shop page too often, you were
-locked out of buying items for several minutes. This helped mitigate bots.
-
-Why do I bring up restocking? It's the main engine for removing Neopoints
-from the economy! NP spent at NPC shops goes away forever, and NP exchanging
-between users doesn't add any extra NP to the system. If restockers spend
-enough money at NPC shops, Neopoint inflation should be held in check.
-
-If.
-
-Turns out that didn't happen.
+Note that sales between user shops don't add NP to the economy, so this is
+a win-win from the game designer's side. New players get a way to bootstrap
+their wallet in a way that removes NP from the overall economy, which helps
+the overall new player experience.
 
 
 Neopoint Inflation
