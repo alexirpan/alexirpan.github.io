@@ -4,6 +4,181 @@ title:  "The Neopets Economy, in Retrospect"
 date:   2018-10-13 18:02:00 -0700
 ---
 
+(Stories here, old draft below)
+
+Around 2007 (CHECK), the Neopets team decided to standardize Neopet artwork.
+This was done to support clothing and decorations, which would be overlaid on
+top of the Neopet in the user lookup pages to provide greater customization.
+(As it so happens, many of these outfits were only buyable with NeoCash,
+the pay-to-win currency. So there were some clear money reasons involved.)
+
+To decrease the art load, they standardized the pose and orientation of all
+Neopets, simply overlaying the outfit at the appropriate location. This
+made some parts of the playerbase very upset. Some felt that the new artwork
+removed the charm of some of the old artwork, since depending on the color,
+Neopets would do different poses. (REWORD).
+
+COMPARISON
+
+Not all Neopets were converted, since not all the new artwork was done. This
+ended up creating a demand for Unconverted pets (UC for short). In pet trades,
+a UC pet can be traded for practically any converted pet + color combination.
+In time, UC pets became a status symbol, although some simply treat them
+as a scarce resource for trading purposes. All new pets are auto-converted,
+which keeps the UC supply fixed.
+
+For their part, the Neopets team did not unconvert pets that were already converted,
+but they did make conversion of the remaining pets optional, and also added
+safeguards preventingn UC pets from changing color due to random events.
+
+\* \* \*
+{: .centered }
+
+Almost all MMOs have the same core problem. New players need to have a source of
+income so that they can get started with building their wealth to buy things.
+This income is usually provided by the game. In a standard MMORPG, monsters will
+drop money on death, or drop other items you can sell to NPCs. In Neopets,
+the game-provided income comes from playing games on the site.
+
+The problem is that this doesn't shuffle money from one part of the economy to
+the rest. It directly *adds* money to the system. In the long run, as more
+money is added to the economy, the price of goods rises, since the worth of
+1 Neopoint keeps dropping. If left unchecked, you can hit a situation where
+it's impossible for new players to build a meaningful wealth from game-provided
+income, simply because prices rise past the point where it's reasonable to save
+up money 1000 NP at a time.
+
+To slow down inflation, there need to be ways to remove money from the system,
+and reasons those ways are attractive. (UGH TERRIBLE WORDING). Almost all Neopets
+items are created through NPC shops. Buying an item from an NPC shop removes NP
+from the economy (whereas buying an item from a user simply shuffles it around.)
+The community calls these Neopoint sinks.
+
+This sort of works. When a rare, in-demand item goes on sale in an NPC shop, users
+quickly buy it until it goes out of stock, then resell it on the user market at
+a much higher price. As a kid, I thought this was magical. As an adult, I realize
+it's the free market deciding a price based on scarcity, with a time-for-money
+tradeoff baked in. Wait for the item in an NPC shop and get it for cheap, or
+buy it right away from a user shop at a higher price.
+
+(This may remind you of stories from communistic countries, where people would
+line up to buy a limited quota of food at a government-mandated price, then
+buy the food they needed to survive from the black market at a heavily increased
+price.)
+
+The problem wasn't that Neopets didn't have NP sinks, it was that they weren't
+wide enough. Playing Flash games is fun. Constantly refreshing a shop page
+is less so. As prices began rising, some users called on Neopets to add more
+NP sinks to the system.
+
+Over the course of a few years, they did. Here are some of the funnier ones.
+
+The Lever of Doom! If you pull it, you lose 100 NP. That's all it does. But,
+with a very small chance, pulling the Lever of Doom grants you a special avatar
+to use on the message boards. Some avatar hunters ended up spending millions of
+NP before they hit the Lever of Doom avatar.
+
+PICTURE?
+
+The Hidden Tower Grimoires! The Hidden Tower is a special store in Neopets.
+Everything there has a fixed price, they never go out of stock, you can only buy
+1 item a day, and the *cheapest* item starts at 500,000 NP. Most cost millions
+of NP.
+
+Due to their always-in-stock nature, items from the Hidden Tower are cheaper on
+the user market, since users selling their old Hidden Tower items know that
+they need to undercut the NPC price to have a chance of a sale. This
+incidentally stops people from spending money at the Hidden Tower, limiting the
+efficacy of one of the biggest NP sinks in the game.
+
+So, TNT added the Hidden Tower Grimoires. These are books that disappear when
+read, are entirely untradeable, and give an avatar for reading each one.
+They're called
+the Grimoire of the First Order, the Grimoire of Prosperity, and the Grimoire
+of Affluence, and cost 100,000 NP, 1,000,000 NP, and 10,000,000 NP respectively.
+
+Remember the story of the iPhone app "I'm Rich", that cost $1000 and did
+literally nothing? This is very close to that territory - you spend 10 million
+Neopoints to increase your pet's "books read" counter by a bit, and get an
+avatar that you can use to say "yes, I'm so rich that I can spend 10 million
+Neopoints on a book".
+
+It worked.
+
+The problem with these NP sinks is that they only cater to specific groups
+of users. Plenty of people don't care about avatars, or don't care about books.
+
+Eventually, TNT decided, "Screw it, we're going all out." They announced the
+Save the Wheels initiative in (CHECK
+YEAR). The in-lore storyline was that the gambling Wheels (themselves NP sinks
+for the economy) were broken, and heavily needed renovation. For one month,
+they collected donations from Neopians, giving out items for each dontation.
+The more you donate, the better item you got, with the most expensive one
+requiring a 2 million NP donation.
+
+The practical reason was that they wanted to encourage users to remove money
+from the economy, and decided a good way to do it would be to give away
+special items for 1 month that would never be released again.
+
+I find this scheme the most ridiculous, but it actually *worked*.
+Users donated over 12 *billion* Neopoints in total, with the top user donating
+1 billion Neopoints by themselves. In many ways, Neopets is a zombie site, but
+the flip side is that several users have come back after years of hiatus, and
+have discovered that an item in their storage is worth millions due to only
+appearing in an event that finished over a decade ago. An old game and old
+playerbase has made waiting-on-your-investments a viable NP earning strategy.
+
+
+\* \* \*
+{: .centered }
+
+It was (NOT SURE WHEN), and the high-end Neopets market was collapsing in on
+itself.
+
+After running for X years, there were a few agreed upon Neopets items that were
+essentially out-of-print. They commanded prices in the hundreds-of-millions NP
+or billions of NP range, coming from a mix of very low supply and very high
+demand.
+
+At some point, people discovered an exploit in Neopets that let you duplicate
+any item you owned. People quickly began duplicating the most expensive items
+they had, then sold them, then bought even more expensive items, and so on.
+Pretty soon, people got suspicious at the sudden increase in supply of high-end
+items.
+
+Then people got greedy, duplicating items without any care, and rather
+predictably, the market crashed. You can imagine the Prisoner's Dilemna from
+the dupers' side.
+
+                                    Copy very few items | Copy lots of items
+Copy few copies, sell discreetly      Silently make billions     Market price crashes and don't have anything to sell
+Copy lots                             Make tens of billions before the price crashes          Worse for everyone
+
+The Neopets team announced that they were aware of the problem, had fixed the
+bug, had banned some of the obvious dupers, and that users should avoid buying
+any duplicated items, since doing so would be grounds for a ban.
+
+For a while, this helped stabilize things. Users listing items for especially
+low prices would be accused of being a duper, and it was seen as more legitimate
+to buy from an older account that was asking for a price closer to its old
+market value. However, it became clear that the Neopets team didn't actually
+have any way to track who abused the exploit and who didn't. They were only
+able to ban a few people because they had terrible op-sec (like selling 10
+copies of the same supposedly ~2B NP item in the same listing).
+
+Eventually, the Neopets team rescinded their warning, and users had to adjust to
+a new norm of heavily reduced prices for many high-end items.
+
+\* \* \*
+{: .centered }
+
+Let's talk about charity. In recent years, Neopets has run an event called
+the Charity Corner. The lore is that 
+
+One thing about Neopets is tha
+
+----------------------------------------------------------------
+
 I've been playing a lot of MapleStory 2 recently, mostly for nostalgia reasons.
 As a kid, I played my share of MMOs, but before MapleStory, I started with one
 of the longest running MMOs out there - Neopets.
