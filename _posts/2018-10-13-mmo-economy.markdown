@@ -172,10 +172,54 @@ a new norm of heavily reduced prices for many high-end items.
 \* \* \*
 {: .centered }
 
-Let's talk about charity. In recent years, Neopets has run an event called
-the Charity Corner. The lore is that 
+Let's talk about charity. In recent years, Neopets runs an event called
+Charity Corner during the holidays. The lore (CHECK) is that you're donating
+gifts to Neopets who don't have anyone to give them Christmas gifts (awwwww).
 
-One thing about Neopets is tha
+In previous years, the way it worked was that they gave you a category.
+Say, Books. Each item in Neopets has a rarity. You could donate 5 books that
+are at most 5 rarity away from one another (say 90 to 95), and would get back
+a random item of rarity 5 greater than the largest one, up to rarity 99.
+For example, you could donate books of rarity 91,92,93,94,95, and get a random
+rarity 99 item.
+
+Here's how rarities work in Neopets
+
+Rarity 98 or lower: pretty common, not very expensive
+Rarity 99: ridiculously rare, usually worth something
+Rarity 100+: doesn't correlate with cost in any way
+
+See where this is going? Five items of rarity 95 turn into 1 lotto ticket for
+a rarity 99 item that could literally be worth hundreds of millions of Neopoints.
+
+Prices for rarity 95 books went from about 800 NP to almost tens of thousands of
+Neopoints in just a few days. Meanwhile, prices for rarity 99 items dropped
+across the board.
+
+This had some neat follow-on effects. The Illusen and Jhudora quests give a very
+powerful weapon if you complete 50 quests in a row, each quest getting harder
+to fulfill than the last. Get one wrong, and you have to start all over from
+level 1. After a certain point, every quest asks for a rarity 99 item, which
+made these weapons very, very expensive. With the increase in R99 items, the prices
+dropped to the 25M NP range for Illusen's Staff and 40M NP range for Wand of the
+Dark Faerie. Still a bit expensive, but a lot more affordable than it used to
+be.
+
+\* \* \*
+{: .centered }
+
+The central lesson here is that it's really hard to escape economics. It has this
+nasty habit of showing up everywhere you look.
+
+But, it's also interesting from a game design perspective. I remember watching a
+Zero Punctuation review of Minecraft that described this.
+
+> You spin up Garry's Mod, spawn a bunch of explosives and watch things ragdoll
+> around, and that's it. Minecraft is more careful. It knows you have to work
+> for things, otherwise they don't have value.
+
+In some sense, Neopets only works as a game *because* some of its items are
+scarce. This gives players something to work to.
 
 ----------------------------------------------------------------
 
