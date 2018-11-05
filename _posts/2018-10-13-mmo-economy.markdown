@@ -162,116 +162,90 @@ at that price. Turned Tooths are now about 45,000 NP.
 That Time Neopets Got a User to Donate a Billion Neopoints to Charity
 -----------------------------------------------------------------------------
 
-Almost all MMOs have the same core problem. The game needs to give all new players
-some starting money and a source of income so that they can start building
-wealth. For example, monsters may drop in-game currency when they die. In Neopets,
-the game provides income through its Flash games. Each game gives up to 1000 NP
-per play, up to 3 plays per game per day.
+All MMO economies are defined by their inflows and outflows. How does in-game
+currency get created, and how does it get deleted?
 
-Note this directly *adds* money to the system. When combined with a user-run
-economy, in the long run, valuable goods will continue to rise in price, since
-the value of 1 Neopoint drops as more Neopoints are in the system.
-If left unchecked, you can hit a point where earning 1000 NP at a time isn't
-enough to buy anything of worth.
+Take MapleStory, a game I also played a lot in my youth. The in-game currency
+is Mesos. Monsters drops Mesos on death. When you buy from an NPC shop, the Mesos
+spent disappear. When you trade with a user, a small percentage of the Mesos
+spent is removed as tax.
 
-Thus, many MMO economies are driven by ways currency gets added and removed from
-their economies. At the start of Neopets, money was removed by NPC shops.
-Items sold between players only shuffles Neopoint between users. Items bought
-from an NPC shop removes NP entirely.
+Why does this tax exist? The game used to not have a tax, but the game devs
+learned that mesos were getting added faster than they were getting removed.
+Items with the most value were sold by users, not by NPCs, and shuffling Mesos
+between users doesn't remove money from the overall system. As the net Mesos
+in the economy increased, prices of items inflated. The tax was added to slow
+down inflation.
 
-The way Neopets shops work is pretty simply. Every 7-8 minutes, new items appear
-in stock. If a shop sells out, tough luck - you'll have to wait another 8
-minutes. Each shop sells certain items, which restock based on their rarity.
+In Neopets, NP enters the system through Flash games, and leaves from NPC
+shops and various gambling games.
+NPC shops do sell desirable items, but they do so at low prices. In fact,
+there's a practice called restocking, where you camp a shop until a rare item
+goes on sale, buy it for cheap, then sell it on the user market at a much
+higher price. As a kid, I thought restocking was magical. I remember playing
+Neopets from my local library, because they had a super fast Internet connection, and in a Neopets
+restock war, milliseconds matter. It was like high-frequency trading, except
+it was done by millions of children instead of bots.
 
-This led to a practice called *restocking*. When a rare, in-demand item
-goes on sale, you race to buy it before other restockers do. Then you sell it
-in your own shop at a much higher price to turn a profit.
+As an adult, I now recognize the profit from restocking is basically the
+free market paying you Neopoints for the time spent refreshing an NPC shop
+waiting for good items to appear.
 
-As a kid, I thought this was magical. I remember playing Neopets from my local
-library, because they had a super fast Internet connection, and in a Neopets
-restock war, milliseconds matter. Imagine high-frequency trading, run by
-millions of children.
+(From a game design point, this price scalping is actually good for the game.
+It gives players a reason to spend at NPC shops, and it gives new players
+another source of income.)
 
-As an adult, I realize it's the free market deciding a price based on scarcity,
-and restocking as a time-for-Neopoints tradeoff.
-
-From a game design point, ticket scalpers are good for the economy, since
-shopping at NPC shops both reduces inflation and gives new players another
-profit-making opportunity.
-
-This sort of works. When a rare, in-demand item goes on sale in an NPC shop, users
-quickly buy it until it goes out of stock, then resell it on the user market at
-a much higher price. As a kid, I thought this was magical. As an adult, I realize
-it's the free market deciding a price based on scarcity, with a time-for-money
-tradeoff baked in. Wait for the item in an NPC shop and get it for cheap, or
-buy it right away from a user shop at a higher price.
-
-(This may remind you of stories from communistic countries, where people would
+(This may remind you of stories from communist countries, where people
 line up to buy a limited quota of food at a government-mandated price, then
-buy the food they needed to survive from the black market at a heavily increased
-price.)
+buy the food they need to live from the black market at a much larger price.
+The difference is that Neopets is a game, and your life isn't as bad if you
+miss out on a Neopoint making opportunity.)
 
-The problem wasn't that Neopets didn't have NP sinks, it was that they weren't
-wide enough. Playing Flash games is fun. Constantly refreshing a shop page
-is less so. As prices began rising, some users called on Neopets to add more
-NP sinks to the system.
+Unlike MapleStory, Neopets didn't have a transaction tax. Without this balancer,
+the existing Neopoints sinks weren't big enough. Prices started rising and
+users wrote editorials asking the team to introduce more NP sinks to the economy.
 
-Over the course of a few years, they did. Here are some of the funnier ones.
+They did. In fact, they added several. Two I find really funny are:
 
-The Lever of Doom! If you pull it, you lose 100 NP. That's all it does. But,
-with a very small chance, pulling the Lever of Doom grants you a special avatar
-to use on the message boards. Some avatar hunters ended up spending millions of
-NP before they hit the Lever of Doom avatar.
+*The Lever of Doom:* Pulling this lever makes you lose 100 NP. Every pull has
+a small probability of giving you a Lever of Doom avatar you can use on the
+Neopets message boards. Some avatar hunters ended up spending millions of
+NP chasing that avatar.
 
-PICTURE?
-
-The Hidden Tower Grimoires! The Hidden Tower is a special store in Neopets.
-Everything there has a fixed price, they never go out of stock, you can only buy
-1 item a day, and the *cheapest* item starts at 500,000 NP. Most cost millions
-of NP.
-
-Due to their always-in-stock nature, items from the Hidden Tower are cheaper on
-the user market, since users selling their old Hidden Tower items know that
-they need to undercut the NPC price to have a chance of a sale. This
-incidentally stops people from spending money at the Hidden Tower, limiting the
-efficacy of one of the biggest NP sinks in the game.
-
-So, TNT added the Hidden Tower Grimoires. These are books that disappear when
-read, are entirely untradeable, and give an avatar for reading each one.
-They're called
-the Grimoire of the First Order, the Grimoire of Prosperity, and the Grimoire
-of Affluence, and cost 100,000 NP, 1,000,000 NP, and 10,000,000 NP respectively.
+*The Hidden Tower Grimoires:* The Hidden Tower is a special NPC shop. Items
+never got out of stock, and they're all very expensive. Most Hidden Tower items
+can be bought from users at a slight discount, making them an ineffective NP
+sink. The Hidden Tower Grimoires are books, entirely untradeable, only buyable
+from the Hidden Tower, with the most expensive one costing 10,000,000 NP.
+Each book grants an avatar when read, disappearing on use.
 
 Remember the story of the iPhone app "I'm Rich", that cost $1000 and did
-literally nothing? This is very close to that territory - you spend 10 million
-Neopoints to increase your pet's "books read" counter by a bit, and get an
-avatar that you can use to say "yes, I'm so rich that I can spend 10 million
-Neopoints on a book".
+literally nothing? Using the most expensive Grimoire avatar is very, very close
+to that.
 
-It worked.
+These sort of helped the problem, but didn't help enough. Eventually,
+the team decided to go all out, announcing the Save the Wheels initiative.
 
-The problem with these NP sinks is that they only cater to specific groups
-of users. Plenty of people don't care about avatars, or don't care about books.
+The Wheels are a feature where you pay a small NP fee to spin a wheel to
+get prizes. The in-lore justification for Save the Wheels was that the Wheels
+heavily needed renovations, and Neopians were asked to donate money to fund
+those renovations. The practical reason was that the Neopets team really
+needed people to willingly give up their Neopoints.
 
-Eventually, TNT decided, "Screw it, we're going all out." They announced the
-Save the Wheels initiative in (CHECK
-YEAR). The in-lore storyline was that the gambling Wheels (themselves NP sinks
-for the economy) were broken, and heavily needed renovation. For one month,
-they collected donations from Neopians, giving out items for each dontation.
-The more you donate, the better item you got, with the most expensive one
-requiring a 2 million NP donation.
+To incentivize this, each donation came with an item. The more you donate,
+the better the item. The most expensive item required a 2,000,000 NP donation.
 
-The practical reason was that they wanted to encourage users to remove money
-from the economy, and decided a good way to do it would be to give away
-special items for 1 month that would never be released again.
+In many ways, Neopets is a zombie site. The flip side is that many users have
+come back after years of hiatus, dug through their storage, and learned that
+a stamp they got from an event ten years ago is now worth millions because it's
+part of a stamp collection and was only given out at that event. Any time
+there's an event that gives out items which will never be given out again,
+you can be sure that someone will get as many as they can as an investment
+strategy.
 
-I find this scheme the most ridiculous, but it actually *worked*.
+It was a bit riduclous, but the Save the Wheels initiative worked.
 Users donated over 12 *billion* Neopoints in total, with the top user donating
-1 billion Neopoints by themselves. In many ways, Neopets is a zombie site, but
-the flip side is that several users have come back after years of hiatus, and
-have discovered that an item in their storage is worth millions due to only
-appearing in an event that finished over a decade ago. An old game and old
-playerbase has made waiting-on-your-investments a viable NP earning strategy.
+1 billion Neopoints by themselves.
 
 
 
