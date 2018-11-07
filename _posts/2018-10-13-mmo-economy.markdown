@@ -33,18 +33,53 @@ That Time Neopets Created a Scarce Good by Changing Pet Artwork
 
 In 2007, the Neopets team standardized all Neopet artwork, such that all Neopets
 of a species would have the same pose, regardless of color.
-
-IMAGE
-
 This was done to reduce the art load for a few features, like clothing. With
 a standard pose, the clothes can simply be overlaid on top of the Neopet.
 Many outfits are only buyable with NeoCash, the pay-to-win currency, so there
 are some pretty clear monetary reasons involved.
 
-This made some users very upset. They felt that the new artwork removed the
-charm of some of the old artwork.
+This made some users very upset. A lot of users were drawn to their Neopets
+because of what they looked like, and some felt that the new artwork lost some
+of the charm and individuality of the old art. As a comparison, here is
+some old artwork for the Darigan color.
 
-COMPARISON
+![acara old](/public/neopets-economy/old_darigan/acara_darigan_baby.gif)
+![aisha old](/public/neopets-economy/old_darigan/aisha_darigan_baby.gif)
+![blumaroo old](/public/neopets-economy/old_darigan/blumaroo_darigan_baby.gif)
+![bori old](/public/neopets-economy/old_darigan/bori_darigan_baby.gif)
+![bruce old](/public/neopets-economy/old_darigan/bruce_darigan_baby.gif)
+![buzz old](/public/neopets-economy/old_darigan/buzz_darigan_baby.gif)
+![cybunny old](/public/neopets-economy/old_darigan/cybunny_darigan_baby.gif)
+![draik old](/public/neopets-economy/old_darigan/draik_darigan_baby.gif)
+![eyrie old](/public/neopets-economy/old_darigan/eyrie_darigan_baby.gif)
+![gelert old](/public/neopets-economy/old_darigan/gelert_darigan_baby.gif)
+![grarrl old](/public/neopets-economy/old_darigan/grarrl_darigan_baby.gif)
+![grundo old](/public/neopets-economy/old_darigan/grundo_darigan_baby.gif)
+![hissi old](/public/neopets-economy/old_darigan/hissi_darigan_baby.gif)
+![ixi old](/public/neopets-economy/old_darigan/ixi_darigan_baby.gif)
+![jetsam old](/public/neopets-economy/old_darigan/jetsam_darigan_baby.gif)
+![jubjub old](/public/neopets-economy/old_darigan/jubjub_darigan_baby.gif)
+{: .centered }
+
+Here is the new artwork for the same set of Neopets.
+
+![acara new](/public/neopets-economy/new_darigan/acara.png)
+![aisha new](/public/neopets-economy/new_darigan/aisha.png)
+![blumaroo new](/public/neopets-economy/new_darigan/blumaroo.png)
+![bori new](/public/neopets-economy/new_darigan/bori.png)
+![bruce new](/public/neopets-economy/new_darigan/bruce.png)
+![buzz new](/public/neopets-economy/new_darigan/buzz.png)
+![cybunny new](/public/neopets-economy/new_darigan/cybunny.png)
+![draik new](/public/neopets-economy/new_darigan/draik.png)
+![eyrie new](/public/neopets-economy/new_darigan/eyrie.png)
+![gelert new](/public/neopets-economy/new_darigan/gelert.png)
+![grarrl new](/public/neopets-economy/new_darigan/grarrl.png)
+![grundo new](/public/neopets-economy/new_darigan/grundo.png)
+![hissi new](/public/neopets-economy/new_darigan/hissi.png)
+![ixi new](/public/neopets-economy/new_darigan/ixi.png)
+![jetsam new](/public/neopets-economy/new_darigan/jetsam.png)
+![jubjub new](/public/neopets-economy/new_darigan/jubjub.png)
+{: .centered }
 
 Not all the new artwork was completed at the time of the switch, so depending
 on the pet and color combination, some pets kept their old art. The community
