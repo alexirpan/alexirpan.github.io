@@ -130,9 +130,7 @@ The Auction House is also buyer favored, but for high end items, it usually isn'
 used except to close out deals agreed on through the Trading Post.
 
 The Trading Post is seller favored. To buy off the Trading Post, first you need
-to search the listings to find your item. Then you need to haggle with the
-seller, make a reasonable bid, and wait for them to accept it. This can lead
-to several days of turnaround in the worst case.
+to search the listings to find your item. Then you need to haggle with the seller, make a reasonable bid, and wait for them to accept it. This can lead to several days of turnaround in the worst case.
 
 If you want to figure out what a fair price is, good luck. When I've tried to buy
 rare items, I would often only find 2 listings with my item, both marked with
@@ -157,6 +155,59 @@ also knew that several newly released free weapons were better than Turned Tooth
 and the price would be crashing soon. Sure enough, when people listed their
 Turned Tooths in their shops at 150,000 NP, they learned there was no demand
 at that price. Turned Tooths are now about 45,000 NP.
+
+
+That Time a Book Got 1000 Times More Expensive Because of Charity
+------------------------------------------------------------------------------
+
+Here's a secret about Neopets: 99% of the items are useless. The only time you
+buy them is when some NPC gives you a quest that asks for them.
+
+Despite this, some useless items still have high prices. Items in Neopets have
+a rarity system, explained [here](http://www.jellyneo.net/?go=item_rarities_explained).
+For our purposes, the important rarities are Rarity 1-99. These items are
+buyable from NPC shops, with the rarity defining how rarely that item appears.
+Rarity 99 items appear exceptionally rarely. All of them command large prices
+because this, and many users like trying to collect all rarity 99 items in the
+game.
+
+Let's talk about the Charity Corner. It's an event Neopets occasionally runs,
+where the lore is that you donate gifts or school supplies to Neopians who
+need it. Awwwww.
+
+The way it works changes each year, but here's how it worked in 2015 and 2017.
+There were three rarity bands: r70-79, r80-89, and r90-99. They specify a category,
+like books. For every five items you donate, you get back a random item sampled
+from the rarity band you donated.
+
+For example, you donate five rarity 90 books, and you potentially get back a
+rarity 99 item.
+
+Now consider that the item you get back *isn't* weighted by rarity (giving
+you solid chances of hitting a rarity 99 item), and many items with rarities in
+the low 90s are dirt cheap.
+
+No surprises for what happened next: users began buying out the cheapest rarity 90
+items they could find, swarming to the next cheapest item once other users
+adjusted their prices accordingly.
+
+JellyNeo tracks historical logs of item prices. Here's the price log for
+[Realm of the Water Faeries], a rarity 92 book. Can you guess when Charity
+Corner ran that year?
+
+IMAGE
+
+Here's the 2017 spike, with a more modest spike of 100x instead of 1000x.
+
+IMAGE
+
+(Incidentally, one of the follow-on effects was that Illusen's Staff and
+Wand of the Dark Faerie plummeted in price. These items are obtainable through
+the Illusen quests and Jhudora quests. Each day, they ask for an item. The more
+times you succeeed in a row, the rarer the item gets. After a certain point, they
+only ask for rarity 99 items. The influx of new rarity 99 items made completing
+these quests much cheaper. In 2009, a Wand of the Dark Faerie was estimated at
+about 350 million NP. It's now about 40 million NP.
 
 
 That Time Neopets Got a User to Donate a Billion Neopoints to Charity
@@ -234,6 +285,7 @@ needed people to willingly give up their Neopoints.
 
 To incentivize this, each donation came with an item. The more you donate,
 the better the item. The most expensive item required a 2,000,000 NP donation.
+They also kept a leaderboard of the top ten users by Neopoints donated.
 
 In many ways, Neopets is a zombie site. The flip side is that many users have
 come back after years of hiatus, dug through their storage, and learned that
@@ -245,74 +297,40 @@ strategy.
 
 It was a bit riduclous, but the Save the Wheels initiative worked.
 Users donated over 12 *billion* Neopoints in total, with the top user donating
-1 billion Neopoints by themselves.
+1 billion Neopoints.
 
-
-
-That Time a Book Multiplied in Price by 60x
-------------------------------------------------------------------------------
-
-Let's talk about charity. In recent years, Neopets runs an event called
-Charity Corner during the holidays. The lore (CHECK) is that you're donating
-gifts to Neopets who don't have anyone to give them Christmas gifts (awwwww).
-
-In previous years, the way it worked was that they gave you a category.
-Say, Books. Each item in Neopets has a rarity. You could donate 5 books that
-are at most 5 rarity away from one another (say 90 to 95), and would get back
-a random item of rarity 5 greater than the largest one, up to rarity 99.
-For example, you could donate books of rarity 91,92,93,94,95, and get a random
-rarity 99 item.
-
-Here's how rarities work in Neopets
-
-Rarity 98 or lower: pretty common, not very expensive
-Rarity 99: ridiculously rare, usually worth something
-Rarity 100+: doesn't correlate with cost in any way
-
-See where this is going? Five items of rarity 95 turn into 1 lotto ticket for
-a rarity 99 item that could literally be worth hundreds of millions of Neopoints.
-
-Prices for rarity 95 books went from about 800 NP to almost tens of thousands of
-Neopoints in just a few days. Meanwhile, prices for rarity 99 items dropped
-across the board.
-
-This had some neat follow-on effects. The Illusen and Jhudora quests give a very
-powerful weapon if you complete 50 quests in a row, each quest getting harder
-to fulfill than the last. Get one wrong, and you have to start all over from
-level 1. After a certain point, every quest asks for a rarity 99 item, which
-made these weapons very, very expensive. With the increase in R99 items, the prices
-dropped to the 25M NP range for Illusen's Staff and 40M NP range for Wand of the
-Dark Faerie. Still a bit expensive, but a lot more affordable than it used to
-be.
 
 \* \* \*
 {: .centered }
 
-The central lesson here is that it's really hard to escape economics. It has this
-nasty habit of showing up everywhere you look.
+The central lesson here is that it's really hard to escape economics. It has
+this nasty habit of showing up everywhere you look.
 
-But, it's also interesting from a game design perspective. I remember watching a
-Zero Punctuation review of Minecraft that described this.
+Funnily enough, this isn't the first post about the Neopets economy. There
+have been other posts, some about [inflation](https://www.themarysue.com/neopets-economy/),
+and others that [contrast it with the failures of capitalism](https://medium.com/nimbly-aware/the-bourgeoisie-online-a-review-of-the-neopets-economy-4963d0a0f845).
 
-> You spin up Garry's Mod, spawn a bunch of explosives and watch things ragdoll
-> around, and that's it. Minecraft is more careful. It knows you have to work
-> for things, otherwise they don't have value.
+On one level, yes, there is definitely a Neopets top 1%, that barters in
+millions while others earn 5000 NP a day. As noted by [this editorial](http://www.neopets.com/ntimes/index.phtml?section=468018&week=412),
+most of the top 1% earn NP by buying and selling from others in the top 1%. From
+their perspective, commoners basically don't exist.
 
-In some sense, Neopets only works as a game *because* some of its items are
-scarce. This gives players something to work to.
+On the other hand, Neopets doesn't cost anything to play. Feeding your Neopets
+costs 5 NP a day. The Flash games are entirely free as well. The strongest
+criticism of unrestricted capitalism is that some are forced into terrible
+conditions to earn enough to live, but this just isn't a thing in Neopets.
+Neopoints are just the vehicle for buying things that other people also want.
 
------------------------------------------------------------------------------------------
+It reminds me of a quote from the (profanity-filled)
+[Zero Punctuation review of Minecraft](https://www.youtube.com/watch?v=4wgQvij3rVE).
 
+> If you can just clap your hands and summon fifty explosive barrels, the spectacle
+> is as fulfilling as eating your own snot. Minecraft is a responsible parent.
+> It knows you'll swiftly get bored if you just get whatever you want, so it pays> you
+> five dollars a week to wash its cars so that you can gain an appreciation
+> for value.
 
-At this point, I would like to call out one article in particular.
-
-https://medium.com/nimbly-aware/the-bourgeoisie-online-a-review-of-the-neopets-economy-4963d0a0f845
-
-You see, this isn't the first post about the Neopets economy. There have been
-several over the years, but much of the motivation I had to write this article
-came from this article in particular.
-
-It criticizes the Neopets article from a socialistic standpoint, essentially
-criticizing the economy for its similarities to broken economies of the past,
-from a late-stage capitalism persepctive.
-
+Neopets only works as a game *because* it requires effort to get many of things
+it offers. If anything transfers from Neopets to the real world, it's that we
+like a challenge, and we like goals, and we like aiming for something, as long
+as the path is fun enough to keep following.
