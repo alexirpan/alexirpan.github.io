@@ -195,19 +195,21 @@ JellyNeo tracks historical logs of item prices. Here's the price log for
 [Realm of the Water Faeries], a rarity 92 book. Can you guess when Charity
 Corner ran that year?
 
-IMAGE
+![Price increase from 45 NP to 50000 NP](/public/neopets-economy/charity2015.png)
+{: .centered }
 
 Here's the 2017 spike, with a more modest spike of 100x instead of 1000x.
 
-IMAGE
+![Price increase from 300 NP to 30000 NP](/public/neopets-economy/charity2017.png)
+{: .centered }
 
-(Incidentally, one of the follow-on effects was that Illusen's Staff and
+Incidentally, one of the follow-on effects was that Illusen's Staff and
 Wand of the Dark Faerie plummeted in price. These items are obtainable through
 the Illusen quests and Jhudora quests. Each day, they ask for an item. The more
 times you succeeed in a row, the rarer the item gets. After a certain point, they
 only ask for rarity 99 items. The influx of new rarity 99 items made completing
 these quests much cheaper. In 2009, a Wand of the Dark Faerie was estimated at
-about 350 million NP. It's now about 40 million NP.
+[350 million NP. It's now 40 million NP](https://items.jellyneo.net/item/14896/price-history/).
 
 
 That Time Neopets Got a User to Donate a Billion Neopoints to Charity
@@ -245,7 +247,7 @@ waiting for good items to appear.
 (From a game design point, this price scalping is actually good for the game.
 It gives players a reason to spend at NPC shops, and it gives new players
 another source of income.)
-
+ 
 (This may remind you of stories from communist countries, where people
 line up to buy a limited quota of food at a government-mandated price, then
 buy the food they need to live from the black market at a much larger price.
@@ -258,10 +260,22 @@ users wrote editorials asking the team to introduce more NP sinks to the economy
 
 They did. In fact, they added several. Two I find really funny are:
 
-*The Lever of Doom:* Pulling this lever makes you lose 100 NP. Every pull has
+*The Lever of Doom:* Pulling this lever makes you lose 100 NP. That's all it
+does.
+
+![Lever of Doom](/public/neopets-economy/leverofdoom.gif)
+{: .centered }
+
+Every pull has
 a small probability of giving you a Lever of Doom avatar you can use on the
-Neopets message boards. Some avatar hunters ended up spending millions of
+Neopets message boards. Some avatar hunters spent millions of
 NP chasing that avatar.
+
+![Lever of Doom Avatar](/public/neopets-economy/leveravatar.gif)
+{: .centered }
+
+Would you pay for this? I wouldn't.
+
 
 *The Hidden Tower Grimoires:* The Hidden Tower is a special NPC shop. Items
 never got out of stock, and they're all very expensive. Most Hidden Tower items
@@ -269,6 +283,16 @@ can be bought from users at a slight discount, making them an ineffective NP
 sink. The Hidden Tower Grimoires are books, entirely untradeable, only buyable
 from the Hidden Tower, with the most expensive one costing 10,000,000 NP.
 Each book grants an avatar when read, disappearing on use.
+
+![100,000 NP book](/public/neopets-economy/book1.gif)
+![1,000,000 NP book](/public/neopets-economy/book2.gif)
+![10,000,000 NP book](/public/neopets-economy/book3.gif)
+{: .centered }
+
+![100,000 NP ava](/public/neopets-economy/ava1.gif)
+![1,000,000 NP ava](/public/neopets-economy/ava2.gif)
+![10,000,000 NP ava](/public/neopets-economy/ava3.gif)
+{: .centered }
 
 Remember the story of the iPhone app "I'm Rich", that cost $1000 and did
 literally nothing? Using the most expensive Grimoire avatar is very, very close
@@ -326,7 +350,7 @@ It reminds me of a quote from the (profanity-filled)
 
 > If you can just clap your hands and summon fifty explosive barrels, the spectacle
 > is as fulfilling as eating your own snot. Minecraft is a responsible parent.
-> It knows you'll swiftly get bored if you just get whatever you want, so it pays> you
+> It knows you'll swiftly get bored if you just get whatever you want, so it pays you
 > five dollars a week to wash its cars so that you can gain an appreciation
 > for value.
 
