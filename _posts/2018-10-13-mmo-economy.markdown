@@ -28,7 +28,7 @@ cost something, and any game that's run for 18 years is bound to have its share
 of economic stories.
 
 
-That Time Neopets Created a Scarce Good by Changing Pet Artwork
+That Time Neopets Created a New Good by Changing Pet Art
 ------------------------------------------------------------------------------
 
 In 2007, the Neopets team standardized all Neopet artwork, such that all Neopets
@@ -81,146 +81,201 @@ Here is the new artwork for the same set of Neopets.
 ![jubjub new](/public/neopets-economy/new_darigan/jubjub.png)
 {: .centered }
 
-Not all the new artwork was completed at the time of the switch, so depending
-on the pet and color combination, some pets kept their old art. The community
-started calling them unconverted pets, or UC pets for short. For their part, although the Neopets team did not
-undo the conversion, they did make pet conversion optional. A pet's art gets
-converted if the user changes its color or equips any clothes.
+I don't think the new artwork is universally better or worse than the old art.
+It's all up to opinion.
 
-Since every new pet is defaulted to the new artwork, and new UC pets are impossible
-to create, these UC pets are now a scarce good. There's a fixed supply, and it's
-only going down in the future. Owning a UC pet is a bit of a status symbol,
-and although some genuinely prefer the old art, others simply treat them as a
-valuable bargaining chip.
+Not all the new art was ready at launch time of the switch.
+on the pet and color combination, some pets kept their old art. The community
+started calling them unconverted pets, or UC pets for short. The Neopets team
+did not undo the conversion, but they did make any further pet conversion
+optional.
+
+Every new pet is defaulted to the new artwork, which makes UC pets impossible
+to create. When there's demand and a fixed supply that's never going to increase,
+speculators are going to show up. Owning a UC pet is a status symbol, and
+although some genuinely prefer the old art, others simply treat them as a
+valuable bargaining chip in the pet trading market.
 
 You can read more about this topic from [this Reddit thread](https://www.reddit.com/r/neopets/comments/2xpejk/so_whats_the_deal_with_unconverted_neopets/)
 and [the Neopets wiki](http://neopets.wikia.com/wiki/Unconverted). When
-researching this, I even found a site where [you can buy UC pets](https://neopointsdeals.com/neopets/buy-unconverted-neopets/),
-including classifications based on how well the Neopet is named, which I
-find hilarious.
+researching this, I even found a page where [you can buy UC pets](https://neopointsdeals.com/neopets/buy-unconverted-neopets/), with classifications based on how well the Neopet is named. I
+find this ridiculous, yet excellent.
 
 
 That Time People Abused a Duplication Glitch and Crashed the High-End Economy
 -----------------------------------------------------------------------------
 
-In 2014, Neopets was sold from Viacom to JumpStart. During the server move, a
-bunch of things...just stopped working. Among the issues was a duping glitch.
-By doing a certain series of actions, you could duplicate arbitrary items.
+In 2014, Neopets was sold from Viacom to JumpStart. During the transition period,
+the site was lagging horribly, and a bunch of things...just stopped working.
 
-There are several Neopets items that cost hundreds of millions of Neopoints, due
-to having very limited supply and very strong effects. A few trolls decided
-to duplicate a bunch of expensive items, then sell them for deliberately
-low prices.
+> Games: broken (HSTs not reset)
+> 
+> Restocking: broken (only restocking once an hour or so)
+> 
+> User shops: a little broken (overstocking)
+> 
+> Battledome: broken forever (not really, it's just a little glitchy)
+> 
+> Keyquest: still broken (broken since transition)
+> 
+> Contests (Art Gallery, Random Contest, etc.): broken (submissions don't work)
+> 
+> Galleries: broken (you can add/remove but you can't rank)
+> 
+> Petpages: NEIN NEIN NEIN (you cannot edit petpages. at all. no petpages for you.)
+> 
+> Neomail: bit messy (neomails displaying as "read" instead of "replied")
+> 
+> Wishing Well: worst genie ever (has not granted wishes in days)
+>
+> Employment Agency: everyone is on state benefits (no job listings)
+> 
+> Guilds: pretty broken (rank names and layouts can not be edited)
+> 
+> Pound: having numerous issues. (adopting neopets is not a good idea right now)
+> 
+> Our hearts: broken (TNT WHYYYYYYYY)
 
-Credit to NeopointsDeals for the following pictures, documenting the madness
-that was going on.
+[Source](https://www.reddit.com/r/neopets/comments/2i0jjc/duping_glitches_and_broken_things_megathread/)
+{: .centered }
 
-PICTURES
+During the lag, a few users discovered that if you sent a bunch of requests at
+a fast enough rate, the servers would get confused and duplicate items.
+Several Neopets items cost hundreds of millions of Neopoints, and a few trolls
+started duplicating items and selling them at deliberately low prices.
 
-You have to imagine how annoyed some exploiters must have felt. If everyone
-who knew of the glitch had silently duped a few items, they could have made as
-many Neopoints as they wanted. Instead, the glitch immediately got patched.
+The following pictures come from [here](https://www.reddit.com/r/neopets/comments/8wyqpl/neopets_history_the_2014_dday_dupe_day/) and [here](http://neopointsdeals.com/neopets-dupe-day-2014/).
 
-Oh, by "immediately", I mean 4 days later. And they didn't rollback the
-servers. Instead, the Neopets team said they would ban people who took advantage
-of the duping glitch. They also removed any items they could trace to the duping
-glitch.
+![Island Krawk](/public/neopets-economy/dupe_auction.png)
+{: .centered }
 
-Now consider that there is no way to tell whether an item was duplicated or not,
-making it impossible to definitively know whether the item you're buying will be
-wiped or not.
+(Current price: 820,000 NP)
+{: .centered }
 
-Yeah.
+![Shop dupe](/public/neopets-economy/dupe1.png)
+{: .centered }
 
-You can see some of the frustration [here](https://www.reddit.com/r/neopets/comments/2i0jjc/duping_glitches_and_broken_things_megathread/).
-People ended up adopting a smell test, based on account age and price. New
-accounts are sketchy, and weirdly low prices are suspicious. The thing is, the
-Neopets team was only able to track down people with terrible operational
-security. Plenty of people silently abused the glitch without getting caught.
+(Current price: 28.5 million NP for Thyoras Tear, hundreds of millions for Super Attack Pea)
+{: .centered }
 
-Things settled down, but it was clear not all duplicated items were removed.
-Super Attack Peas used to be one of the most valuable items in the game,
-costing over a billion Neopoints. Nowadays, people ask for something between
-100 million and 300 million NP, but it's hard to know for sure. Items of that
-rarity are sold through the Trading Post. Requested prices are public
-and deals that actually close are private, making it hard to figure out the
-real price they're trading at.
+Then it got worse when people started releasing scripts to automate the process.
 
-Speaking of which...
+![Dupe program](/public/neopets-economy/dupe_program.png)
+{: .centered }
+
+You have to imagine how disappointed some cheaters were. Here they are, trying
+to silently exploit a glitch to make millions, and then the trolls show up and
+ruin everything by deliberately crashing the market. The glitch got patched
+immediately.
+
+And by immediately, I mean 4 days later.
+
+Also, they didn't rollback the servers. Instead, they banned the abused, removed
+all the obvious-looking duplicates, and warned that anyone taking advantage of
+the glitch may be banned. Combine this with the knowledge that it takes months
+to hear back from Neopets support for improper bannings, and it was natural
+that some people got a bit paranoid.
+
+![Please remove](/public/neopets-economy/dupe_remove.png)
+{: .centered }
+
+Now, there are reasons not to do a rollback. It's a nuclear option that's very
+disruptive for the end-user. However, it's also one of the few ways to guarantee
+invalid items are no longer in circulation. You can adopt smell tests based on
+whether the price is too good to be true, or if the account seems too young to
+have a good item, but once a dupe gets laundered by a few users, it's hard to
+identify it as a dupe.
+
+Ironically, by avoiding the nuclear option, the Neopets team ended up
+creating a radioactive fallout around high-end items. It took several months
+before people felt safe buying these items. It's almost certain that not all
+dupes are gone, but what can you do? Super Attack Peas used to be over 1 billion
+NP and now they're about one-fourth of the price. It's hard to know for sure,
+since Trading Post sales aren't public.
 
 
-That Time the Neopets Team Finally Increased the Max Shop Price
+That Time Neopets Decreased Sale Friction and Prices Dropped Accordingly
 -------------------------------------------------------------------------------
 
-For a long, long, long, looooooooooong time, the max price you could list a
-item at was 99,999 NP. If your item cost 100,000 NP or more, you would have
-to list it in the Auction House or on the Trading Post.
+For a long, long, long, looooooooooong time, the max price of items in user shops
+was 99,999 NP. For anything more expensive, you had to sell on the Auction House
+or Trading Post. In practice, the Auction House is only used to close already
+agreed-upon deals from the Trading Post, leaving the Trading Post (or TP) as
+the de-facto selling ground.
 
-This made it very annoying to buy expensive items. User shops are biased in
-favor of the buyer. The Shop Wizard is a built-in search engine that finds the
-lowest list price of an item across all user stores, making it easy to find the
-best deal.
+When I played more actively, I found this very annoying, because it takes so
+much longer to buy items from the Trading Post. Here's how you buy items from
+shops.
 
-The Auction House is also buyer favored, but for high end items, it usually isn't
-used except to close out deals agreed on through the Trading Post.
+* Go to the Shop Wizard and search for your item.
+* It gives you listings in order of lowest price.
+* Buy cheapest one.
+* The transaction happens immediately.
 
-The Trading Post is seller favored. To buy off the Trading Post, first you need
-to search the listings to find your item. Then you need to haggle with the seller, make a reasonable bid, and wait for them to accept it. This can lead to several days of turnaround in the worst case.
+Here's how the Trading Post works.
 
-If you want to figure out what a fair price is, good luck. When I've tried to buy
-rare items, I would often only find 2 listings with my item, both marked with
-"NeoMail me your offers".
+* Go to the Trading Post and search for your item
+* It gives you listings where people write how much they want, except most people just say "neomail me offers", which makes it hard to figure out the market price.
+* You haggle with the seller in an email back-and-forth, over a few hours or days.
+* Then you finally get the item.
 
-Fan sites aggregate price estimates based on offers people ask for in
-Trading Post listings, but these requested offers are usually a bit optimistic,
-and you can often buy for less than the requested price. Since closed Trading
-Post deals are private, no fan site can aggregate the true market price. The
-information asymmetry means that only active buyers and selleres of an item
-know the true market value.
+In short, there's a lot of friction. There's also information asymmetry. When
+a deal closes, only the people involved in that transaction know it happened.
+This incentivizes sellers to ask for more NP than the item is actually worth,
+because it's hard to prove it's inaccurate. It's a seller-favored platform,
+compared to the buyer-favored platform of the Shop Wizard.
 
-Recently, the max shop price was increased from 99,999 NP to 999,999 NP.
-It was a nice change, and one of the side effects was that prices for items
-under 1,000,000 NP started dropping, as the information asymmetries went
-away.
+Recently, the max shop price was increased from 99,999 NP to 999,999 NP. It was
+a great change that improved accessbility of several items, leading to price
+drops across the board for several items.
 
-At the time, I was selling Turned Tooths, a powerful budget weapon.
-Trading Post listings asked for between 150,000 NP and 250,000 NP, but I had
-been selling them at 99,999 NP in my shop. I was partly impatient, but I
-also knew that several newly released free weapons were better than Turned Tooth,
-and the price would be crashing soon. Sure enough, when people listed their
-Turned Tooths in their shops at 150,000 NP, they learned there was no demand
-at that price. Turned Tooths are now about 45,000 NP.
+> I think the thing most people don't realize is that honestly, it hasn't caused items to go down in value, these are what the values truly should have been.
+> 
+> With the trading post, you don't see the true scarcity / supply of the item because people have to keep posting trade lots, if they have a bunch of items to sell they take it down to put up other items, items sitting in SDBs, etc.
+> 
+> Upping the shop price limit essentially meant that we will finally see closer to the real supply of the item(s) and thus, the market will determine the price.
+> 
+> The TP is abused a lot to hide the true supply of the item and make it appear as if there is less of something than there is, resulting in an inflated price. (Like when people buy up all of an item off the SSW before the price increase and then say "Oh give me 300k+". The price difference between shops and trading post allowed for this manipulation)
+> 
+> So honestly, all it did was allow the market to actually determine values instead of letting users manipulate the perceived supply and inflate prices.
+> 
+> I'm all for it
+
+[Source](https://www.reddit.com/r/neopets/comments/8b0n1i/how_has_the_user_shop_price_increase_to_999999/dx349p1)
+{: .centered }
+
+I was selling Turned Tooths at the time, a powerful budget weapon, and it was
+pretty amazing to see all the Turned Tooths disappear from the Trading Post.
+There was some price memory where Trading Post listings were asking for
+150,000 NP to 200,000 NP, but I knew they were really hard to sell at above
+100,000 NP. Once the Shop Wizard made the true price obvious, there was no
+reason to use the Trading Post anymore.
 
 
 That Time a Book Got 1000 Times More Expensive Because of Charity
 ------------------------------------------------------------------------------
 
-Here's a secret about Neopets: 99% of the items are useless. The only time you
-buy them is when some NPC gives you a quest that asks for them.
+Here's a secret about Neopets: 99% of the items are useless.
 
-Despite this, some useless items still have high prices. Items in Neopets have
-a rarity system, explained [here](http://www.jellyneo.net/?go=item_rarities_explained).
-For our purposes, the important rarities are Rarity 1-99. These items are
-buyable from NPC shops, with the rarity defining how rarely that item appears.
-Rarity 99 items appear exceptionally rarely. All of them command large prices
-because this, and many users like trying to collect all rarity 99 items in the
-game.
+Despite this, some useless items still have high prices, because of their
+rarity. Neopets has a built-in rarity system, explained [here](http://www.jellyneo.net/?go=item_rarities_explained).
+For our purposes, the important rarities are rarities 1-99. These items are
+sold form NPC shops, and the rarity defines how often that item is in stock.
+Rarity 99 items restock very rarely, so all of them command large prices. Many
+users like trying to collect all rarity 99 items in the game.
 
-Let's talk about the Charity Corner. It's an event Neopets occasionally runs,
-where the lore is that you donate gifts or school supplies to Neopians who
-need it. Awwwww.
+Let's talk about the Charity Corner. It's a yearly event where you can donate
+donate gifts to Neopians who need it. Awwwww.
 
 The way it works changes each year, but here's how it worked in 2015 and 2017.
-There were three rarity bands: r70-79, r80-89, and r90-99. They specify a category,
-like books. For every five items you donate, you get back a random item sampled
-from the rarity band you donated.
+They defined three rarity bands: r70-79, r80-89, and r90-99. They announced
+a category, like books. For every five books you donate, you get a random item
+sampled from the rarity band you donated.
 
-For example, you donate five rarity 90 books, and you potentially get back a
-rarity 99 item.
-
-Now consider that the item you get back *isn't* weighted by rarity (giving
-you solid chances of hitting a rarity 99 item), and many items with rarities in
-the low 90s are dirt cheap.
+For example, you donate five rarity 90 books, and you get a randomm item from
+rarity 90 to 99. This sampling didn't seem to be weighted by rarity, which
+gave decent chances of getting a rarity 99 item, and there are a lot of cheap
+items in the low 90s.
 
 No surprises for what happened next: users began buying out the cheapest rarity 90
 items they could find, swarming to the next cheapest item once other users
@@ -238,85 +293,84 @@ Here's the 2017 spike, with a more modest spike of 100x instead of 1000x.
 ![Price increase from 300 NP to 30000 NP](/public/neopets-economy/charity2017.png)
 {: .centered }
 
-Incidentally, one of the follow-on effects was that Illusen's Staff and
-Wand of the Dark Faerie plummeted in price. These items are obtainable through
-the Illusen quests and Jhudora quests. Each day, they ask for an item. The more
-times you succeeed in a row, the rarer the item gets. After a certain point, they
-only ask for rarity 99 items. The influx of new rarity 99 items made completing
-these quests much cheaper. In 2009, a Wand of the Dark Faerie was estimated at
-[350 million NP. It's now 40 million NP](https://items.jellyneo.net/item/14896/price-history/).
+This also increased the supply of Illusen's Staff and Wand of the Dark Faeries,
+two of the strongest weapons in the game. These items are obtainable from a chain of NPC quests called the
+Illusen quests and Jhudora quests. Each day, they ask for an item. Succeed
+50 days in a row, and you get the weapon. Fail once, and you have to start all
+over. As you get cloesr to 50, they start asking only for rarity 99 items.
+More r99 items led to more completed quests, which led to more weapons in the
+market, and long story short, the price of a Wand of the Dark Faerie has dropped
+from [350 million NP in 2009 to 40 million NP now](https://items.jellyneo.net/item/14896/price-history/).
 
 
-That Time Neopets Got a User to Donate a Billion Neopoints to Charity
+That Time A User Donated a Billion Neopoints to Help Save the Economy
 -----------------------------------------------------------------------------
 
-All MMO economies are defined by their inflows and outflows. How does in-game
+All MMO economies are defined by their sources and sinks. How does in-game
 currency get created, and how does it get deleted?
 
-Take MapleStory, a game I also played a lot in my youth. The in-game currency
-is Mesos. Monsters drops Mesos on death. When you buy from an NPC shop, the Mesos
-spent disappear. When you trade with a user, a small percentage of the Mesos
-spent is removed as tax.
+Take MapleStory, a game I played a lot in my youth. Monsters drops money on
+death, buying healing items from NPC makes that money disappear, and whenever
+you trade with a user, a small percentage of the transaction is taken as tax.
 
-Why does this tax exist? The game used to not have a tax, but the game devs
-learned that mesos were getting added faster than they were getting removed.
-Items with the most value were sold by users, not by NPCs, and shuffling Mesos
-between users doesn't remove money from the overall system. As the net Mesos
-in the economy increased, prices of items inflated. The tax was added to slow
-down inflation.
+Why does this tax exist? The more monsters players killed, the more money
+enters the economy. In MapleStory, the in-game currency is called Mesos. The
+more Mesos there are, the less buying power each Mesos has. The tax helps
+keep inflation in check by removing Mesos from the overall economy.
 
-In Neopets, NP enters the system through Flash games, and leaves from NPC
-shops and various gambling games.
-NPC shops do sell desirable items, but they do so at low prices. In fact,
-there's a practice called restocking, where you camp a shop until a rare item
-goes on sale, buy it for cheap, then sell it on the user market at a much
-higher price. As a kid, I thought restocking was magical. I remember playing
-Neopets from my local library, because they had a super fast Internet connection, and in a Neopets
-restock war, milliseconds matter. It was like high-frequency trading, except
-it was done by millions of children instead of bots.
+In Neopets, Neopoints enter the system through Flash games, and leave from NPC
+shops and various gambling games. There's no transaction tax, so inflation
+is only held in check by whether users spend money at NPC shops or not.
+
+People do use these shops. Remember that NPC shops restock items of varying
+rarities. The NPC price for rare items is much lower than the true market price,
+leading to a practice called restocking. You refresh a shop page until
+rare items appear in stock, buy them for cheap, then sell them to users at
+a much higher price.
+
+As a kid, I thought restocking was magical. I played Neopets with my friends
+at the local library, because my local library had a super fast Internet
+connection. In a Neopets restock war, milliseconds matter. It was basically
+high-frequency trading, except performed by millions of children instead of bots.
 
 As an adult, I now recognize the profit from restocking is basically the
-free market paying you Neopoints for the time spent refreshing an NPC shop
-waiting for good items to appear.
+equivalent of scalping. There's arbitrage between the NPC market and the
+user market and you're getting compensated for the time spent.
 
-(From a game design point, this price scalping is actually good for the game.
-It gives players a reason to spend at NPC shops, and it gives new players
-another source of income.)
- 
-(This may remind you of stories from communist countries, where people
-line up to buy a limited quota of food at a government-mandated price, then
-buy the food they need to live from the black market at a much larger price.
-The difference is that Neopets is a game, and your life isn't as bad if you
-miss out on a Neopoint making opportunity.)
+From a game design point, scalping is actually good for the game, since it gives
+new players another way to earn Neopoints. But the low NPC shop prices
+did mean that NP was accumulating in the economy faster than it should.
 
-Unlike MapleStory, Neopets didn't have a transaction tax. Without this balancer,
-the existing Neopoints sinks weren't big enough. Prices started rising and
-users wrote editorials asking the team to introduce more NP sinks to the economy.
+Recognizing the problem, the Neopets team added new Neopoint sinks to the
+economy. Here are two I like a lot.
 
-They did. In fact, they added several. Two I find really funny are:
-
-*The Lever of Doom:* Pulling this lever makes you lose 100 NP. That's all it
+**The Lever of Doom:** Pulling this lever makes you lose 100 NP. That's all it
 does.
 
 ![Lever of Doom](/public/neopets-economy/leverofdoom.gif)
 {: .centered }
 
-Every pull has
+Why would you even pull this lever? Well,
+every pull has
 a small probability of giving you a Lever of Doom avatar you can use on the
-Neopets message boards. Some avatar hunters spent millions of
-NP chasing that avatar.
+Neopets message boards. That was enough to get avatar hunters to spend
+millions of NP chasing the avatar.
 
 ![Lever of Doom Avatar](/public/neopets-economy/leveravatar.gif)
 {: .centered }
 
-Would you pay for this? I wouldn't.
+Would you pay for this? I wouldn't. But you do you.
 
 
-*The Hidden Tower Grimoires:* The Hidden Tower is a special NPC shop. Items
-never got out of stock, and they're all very expensive. Most Hidden Tower items
-can be bought from users at a slight discount, making them an ineffective NP
-sink. The Hidden Tower Grimoires are books, entirely untradeable, only buyable
-from the Hidden Tower, with the most expensive one costing 10,000,000 NP.
+**The Hidden Tower Grimoires:** The Hidden Tower is the most expensive NPC
+shop in the game, selling items for millions of NP. Unlike other shops, all
+Hidden Tower items are always in stock. This reverses the dynamic - most
+Hidden Tower items are buyable from users at a slight discount from the base
+price. Bad for inflation, since users don't spend money at the NPC store.
+
+The Hidden Tower Grimoires are books, and unlike the other Hidden Tower
+items, they're entirely untradeable. You can only buy them from the Hidden
+Tower, with the most expensive one costing 10,000,000 NP.
 Each book grants an avatar when read, disappearing on use.
 
 ![100,000 NP book](/public/neopets-economy/book1.gif)
@@ -329,58 +383,76 @@ Each book grants an avatar when read, disappearing on use.
 ![10,000,000 NP ava](/public/neopets-economy/ava3.gif)
 {: .centered }
 
-Remember the story of the iPhone app "I'm Rich", that cost $1000 and did
-literally nothing? Using the most expensive Grimoire avatar is very, very close
-to that.
+Remember the story of the [I Am Rich](https://en.wikipedia.org/wiki/I_Am_Rich)
+iOS app, that cost $1000, and did literally nothing? Buying the most expensive
+Grimoire for the avatar is just pure conspicuous consumption.
+I think these avatars were actually a pretty smart move. They target the top 1%
+by creating a new status symbol.
 
-These sort of helped the problem, but didn't help enough. Eventually,
-the team decided to go all out, announcing the Save the Wheels initiative.
+Alone, these two weren't enough, so in 2010, the team decided to go all out, with
+a month-long **Save the Wheels Campaign**.
 
-The Wheels are a feature where you pay a small NP fee to spin a wheel to
-get prizes. The in-lore justification for Save the Wheels was that the Wheels
-heavily needed renovations, and Neopians were asked to donate money to fund
-those renovations. The practical reason was that the Neopets team really
-needed people to willingly give up their Neopoints.
+![Save the Wheels](/public/neopets-economy/savethewheels.jpg)
+{: .centered }
 
-To incentivize this, each donation came with an item. The more you donate,
-the better the item. The most expensive item required a 2,000,000 NP donation.
-They also kept a leaderboard of the top ten users by Neopoints donated.
+The Wheels are a site feature where you pay a small NP fee to spin a wheel to
+get prizes. They've been around since the start of the game, and they needed
+a visual rework.
 
-In many ways, Neopets is a zombie site. The flip side is that many users have
-come back after years of hiatus, dug through their storage, and learned that
-a stamp they got from an event ten years ago is now worth millions because it's
-part of a stamp collection and was only given out at that event. Any time
-there's an event that gives out items which will never be given out again,
-you can be sure that someone will get as many as they can as an investment
-strategy.
+Seeing an opporunity, the rework was branded as a renovation project. Users
+who donated Neopoints would receive thank-you gifts from the Neopian Conservation
+Society, and the top 10 donaters would be listed on a public leaderboard.
+The most expensive thank-you gift required donating 2,000,000 NP at once.
 
-It was a bit riduclous, but the Save the Wheels initiative worked.
-Users donated over 12 *billion* Neopoints in total, with the top user donating
-1 billion Neopoints.
+There are lots of user stories about people who come back to the site, dig
+through their storage, and discover an item (like a stamp they got from
+an event ten years ago) is now worth millions of Neopoints, because it's part
+of a stamp album that stamp collectors want and they were only given out
+ten years. Any time there's an event that gives out items which will never be
+given again, you can be sure that some users will get as many as they can as
+a long-term investment strategy.
+
+You can see the final tally at the offical [Neopets page](http://www.neopets.com/savethewheels/)
+for the event. Users donated 12,371,694,534 NP in total, with the top user
+donating over a billion NP by themselves.
+
+![Billion NP](/public/neopets-economy/billion.png)
+{: .centered }
+
+And okay, sure, it's not like they asked users to donate NP for the good of the
+economy. It was in exchange for stuff that speculators wanted. But I still
+find the entire event very amusing.
 
 
 \* \* \*
 {: .centered }
 
-The central lesson here is that it's really hard to escape economics. It has
+There isn't really a point to this post. It was mostly an excuse for me to dig
+up Neopets history. But if I had to make one, it would be that it's very, very
+hard to escape economics. It has
 this nasty habit of showing up everywhere you look.
 
-Funnily enough, this isn't the first post about the Neopets economy. There
-have been other posts, some about [inflation](https://www.themarysue.com/neopets-economy/),
-and others that [contrast it with the failures of capitalism](https://medium.com/nimbly-aware/the-bourgeoisie-online-a-review-of-the-neopets-economy-4963d0a0f845).
+There have been other posts about the Neopets economy. There's
+[this one about inflation](https://www.themarysue.com/neopets-economy/),
+and [this one about the dangers of unrestricted capitalism](https://medium.com/nimbly-aware/the-bourgeoisie-online-a-review-of-the-neopets-economy-4963d0a0f845).
 
-On one level, yes, there is definitely a Neopets top 1%, that barters in
-millions while others earn 5000 NP a day. As noted by [this editorial](http://www.neopets.com/ntimes/index.phtml?section=468018&week=412),
-most of the top 1% earn NP by buying and selling from others in the top 1%. From
-their perspective, commoners basically don't exist.
+In one sense, yes, there's definitely a Neopets top 1%, that barters in
+millions while others are earning 5000 NP a day. As noted by [this editorial](http://www.neopets.com/ntimes/index.phtml?section=468018&week=412), this top 1% barely interacts with the
+Neopets proletariat (which is certainly not a phrase I ever expected to write).
+There's definitely some uneasiness with how much more the wealthiest users have.
 
 On the other hand, Neopets doesn't cost anything to play. Feeding your Neopets
-costs 5 NP a day. The Flash games are entirely free as well. The strongest
+costs 5 NP a day. The Flash games are entirely free to play. The strongest
 criticism of unrestricted capitalism is that some are forced into terrible
-conditions to earn enough to live, but this just isn't a thing in Neopets.
-Neopoints are just the vehicle for buying things that other people also want.
+conditions to earn enough to live, but this just isn't a thing in Neopets,
+since the cost of living is zero.
 
-It reminds me of a quote from the (profanity-filled)
+Sure, not everyone on Neopets has what they want. But Neopets is a game. It
+only works as a game *because* it requires effort to get many of things it
+offers. If there's no challenge in getting things in the game, why would
+anyone play it?
+
+A similar sentiment was explained in this profanity-filled
 [Zero Punctuation review of Minecraft](https://www.youtube.com/watch?v=4wgQvij3rVE).
 
 > If you can just clap your hands and summon fifty explosive barrels, the spectacle
@@ -389,7 +461,8 @@ It reminds me of a quote from the (profanity-filled)
 > five dollars a week to wash its cars so that you can gain an appreciation
 > for value.
 
-Neopets only works as a game *because* it requires effort to get many of things
-it offers. If anything transfers from Neopets to the real world, it's that we
-like a challenge, and we like goals, and we like aiming for something, as long
-as the path is fun enough to keep following.
+I'd hesitate to generalize any lessons from the Neopets economy to the real
+world economy. There are too many differences for the comparison to have value.
+If anything does transfer, it's that we like having goals, something to aim for
+that takes work to achieve. And, it's that not everyone can get what they want.
+Not the happiest ending, but what do you expect out of the dismal science?
