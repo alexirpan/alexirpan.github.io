@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Stories From the Neopets Economy"
-date:   2018-10-13 18:02:00 -0700
+date:   2018-11-10 21:47:00 -0800
 ---
 
 What is Neopets?
