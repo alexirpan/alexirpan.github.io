@@ -240,7 +240,7 @@ the right price. The Shop Wizard is buyer-favored. The Trading Post is seller-fa
 
 Recently, the max shop price was increased from 99,999 NP to 999,999 NP. It was
 a great change that improved accessibility of several items, leading to price
-drops across the board for several items.
+drops across the board.
 
 > I think the thing most people don't realize is that honestly, it hasn't caused items to go down in value, these are what the values truly should have been.
 > 
@@ -325,7 +325,7 @@ All MMO economies are defined by their sources and sinks. How does in-game
 currency get created, and how does it get deleted?
 
 Take MapleStory, a game I played a lot in my youth. Monsters create money when
-they die. NPC shops remove moeny when they sell you healing potions.
+they die. NPC shops remove money when they sell you healing potions.
 Whenever you trade with a user, a small percentage of the transaction is taken as tax.
 
 Monsters and NPCs are parts of all RPGs. But why is there a user tax?
@@ -386,7 +386,7 @@ Hidden Tower items are buyable from users at a slight discount from the base
 price. Bad for inflation, since users don't spend money at the NPC store.
 
 The Hidden Tower Grimoires are books, and unlike the other Hidden Tower
-items, they're entirely untradeable. You can only buy them from the Hidden
+items, they're entirely untradable. You can only buy them from the Hidden
 Tower, with the most expensive one costing 10,000,000 NP.
 Each book grants an avatar when read, disappearing on use.
 
@@ -416,20 +416,21 @@ The Wheels are a site feature where you pay a small NP fee to spin a wheel to
 get prizes. They've been around since the start of the game, and they needed
 a visual rework.
 
-Seeing an opporunity, the rework was branded as a renovation project. Users
+Seeing an opportunity, the rework was branded as a renovation project. Users
 who donated Neopoints would receive thank-you gifts from the Neopian Conservation
 Society, and the top 10 donaters would be listed on a public leaderboard.
 The most expensive thank-you gift required donating 2,000,000 NP at once.
 
 There are lots of user stories about people who come back to the site, dig
-through their storage, and discover an item (like a stamp they got from
-an event ten years ago) is now worth millions of Neopoints, because it's part
-of a stamp album that stamp collectors want and they were only given out
-ten years. Any time there's an event that gives out items which will never be
+through their storage, and discover an item is now worth millions of Neopoints.
+For example, it could be a stamp from some random event, and now it's part
+of a stamp album that stamp collectors want, and they were only given out from
+that random event ten years ago.
+Any time Neopets runs something that gives out items which will never be
 given again, you can be sure that some users will get as many as they can as
 a long-term investment strategy.
 
-You can see the final tally at the offical [Neopets page](http://www.neopets.com/savethewheels/)
+You can see the final tally at the official [Neopets page](http://www.neopets.com/savethewheels/)
 for the event. Users donated 12,371,694,534 NP in total, with the top user
 donating over a billion NP by themselves.
 
