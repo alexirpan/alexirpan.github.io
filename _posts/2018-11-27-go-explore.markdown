@@ -18,7 +18,7 @@ because it's so hard to get a positive score at all.
 
 These are eye-popping headlines, but there's controversy around the results,
 and I have opinions here. For future note, I'm writing this before the official
-paper is released, so although I believe I
+paper is released, so I'm making some guesses about the exact details.
 
 
 What is the Proposed Approach?
