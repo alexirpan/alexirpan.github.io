@@ -223,7 +223,7 @@ qualitatively different algorithms, and a solution that combines this with
 no control over initial state will be worth paying attention to.
 
 In many ways, Go-Explore reminds me of the post for
-[Hybrid Reward Architecture paper (Seijen et al, 2017).](https://blogs.microsoft.com/ai/divide-conquer-microsoft-researchers-used-ai-master-ms-pac-man/)
+[Hybrid Reward Architecture paper (van Seijen et al, 2017).](https://blogs.microsoft.com/ai/divide-conquer-microsoft-researchers-used-ai-master-ms-pac-man/)
 This post also advertised a superhuman result on Atari:
 achieving 1 million points on Ms. Pac-Man, compared to a human high score of 266,330 points.
 It also did so in a way relying on trajectory memorization.
