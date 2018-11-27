@@ -238,6 +238,6 @@ their plots, the trick is the difference between 1 million points and 25,000 poi
 Like Go-Explore, this post had interesting ideas that I hadn't seen before,
 which is everything you could want out of research. And like Go-Explore,
 I was sour on the results themselves,
-because they smelled too much like PR, like a result that was shaped by desired
+because they smelled too much like PR, like a result that was shaped by
 PR, warped in a way that preferred flashy numbers too much and applicability
 too little.
