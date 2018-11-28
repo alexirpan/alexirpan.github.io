@@ -44,7 +44,7 @@ They call this phenomenon *detachment*.
 {: .centered }
 
 In this toy example, the agent is right between two rich sources of novelty.
-By chance, it only explore part of the left spiral before exploring the right
+By chance, it only explores part of the left spiral before exploring the right
 spiral. This locks off half of the left spiral, because it is bottlenecked by
 states that are no longer novel.
 
