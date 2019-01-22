@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "Mystery Hunt 2019"
+date:   2019-01-21 18:13:00 -0500
+---
+
+I'm writing this from the Boston Logan airport, where a bunch of flights were
+cancelled or delayed. Luckily, mine was just delayed, so I only have to wait an
+extra 2.5 hours.
+
+I hunted with teammate this year. It's an offshoot of (planes) Galactic
+Trendsetters (planes). Galactic was an amalgam of Floor Pi residents, CMU
+puzzlers, Berkeley puzzlers, and other connections branching from there.
+teammate is primarily the CMU and Berkeley block, plus some other connections.
+When deciding which team to join, I picked teammate in part because I expected
+it to be a more serious, smaller team. We ended up similar in size to Galactic.
+
+Normally, if multiple teams finish Mystery Hunt, Galactic is one of those teams,
+and since teammate was of similar size and composition to Galactic, I expected
+the same this year. We didn't get to do the runaround this year because HQ
+closed right after the coin was found. If HQ stayed open for longer, we had a
+good shot of finishing the Hunt, and although I was disappointed at the
+time, I'm okay with it now. Setec is not the largest team. Logistically, it's
+a lot of work to run HQ, and they predicted to stop running HQ by Sunday 5pm.
+
+Excluding that we didn't get to do the runaround, this was a very solid Mystery
+Hunt. I do feel that a lot of puzzles had more grunt work than previous years,
+although I haven't run the math on this. My guess is that Setec overcorrected
+from their short 2017 Hunt. I think it's good to have puzzles like this, but it
+can be annoying when a lot are like this.
+
+\* \* \*
+{: .centered }
+
+(Puzzle spoilers begin from here.)
+
+The puzzle-solving story starts several weeks before Mystery Hunt, with
+Alex Rosenthal's TED talk.
+
+(EMBED?)
+
+We knew that Setec embedded puzzle data in a TED talk in their last Hunt. The
+bottom of each slide is Morse code for a nine letter word, where the diagonal
+spells INNOVATED. It quickly became a team meme that we should call-in INNOVATED
+for the first puzzle in the Hunt, and that we should get started on solving
+the meta INNOVATED fed into. We got as far as "inNOVated, it's a meta where you
+extract months", before deciding to stop doing stupid things.
+
+I spent the day before Hunt playing Two Rooms and a Boom with people from
+Galactic. It's a social deduction game where the biggest gimmick is that you
+literally separate people into two rooms. The core rules are like this:
+There are two teams, Blue Team and Red Team. Blue Team has the President, and
+Red Team has the Bomber. Your goal is to have the President and bomb be in the
+same room (if Blue) or different room (if Red) by the end of the game. During
+the game, players can share (or not share) their roles with other players, and
+every so often, each room must choose people to swap with the other room. It
+turns into this interesting game of figuring out the web of trust and distrust,
+while trying to disguise who you trust, but still maintaining enough control of
+the vote to control who is and isn't leaving the room. But this is balanced by
+the fact that to get information, you have to reveal information, and the fact
+that you need to choose how to ferry information across rooms. It's neat and
+I'd recommend it.
+
+Very, very close to kickoff, I learned about the Mystery Hunt Betting Pool for
+predicting who would win.
