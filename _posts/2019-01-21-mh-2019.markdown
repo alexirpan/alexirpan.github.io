@@ -4,62 +4,215 @@ title:  "Mystery Hunt 2019"
 date:   2019-01-21 18:13:00 -0500
 ---
 
-I'm writing this from the Boston Logan airport, where a bunch of flights were
-cancelled or delayed. Luckily, mine was just delayed, so I only have to wait an
-extra 2.5 hours.
+Here is a lesson that should be obvious: if you are trying to hit a paper
+deadline, going to Mystery Hunt the weekend before that deadline is a bad idea.
+In my defense, in the weeks leading up to the deadline, I wasn't expecting to
+make it. Combined with the huge airport troubles getting out of Boston, I ended
+up landing in California at 11 AM the day before ICML deadline, with the
+horrible combination of a ruined sleep schedule and a lack of sleep in the first
+place from Hunt. But, now I've recovered, and finally have time to talk about
+Hunt.
 
-I hunted with teammate this year. It's an offshoot of (planes) Galactic
-Trendsetters (planes). Galactic was an amalgam of Floor Pi residents, CMU
-puzzlers, Berkeley puzzlers, and other connections branching from there.
-teammate is primarily the CMU and Berkeley block, plus some other connections.
-When deciding which team to join, I picked teammate in part because I expected
-it to be a more serious, smaller team. We ended up similar in size to Galactic.
+I hunted with teammate this year. It's an offshoot of ✈✈✈ Galactic
+Trendsetters ✈✈✈, leaning towards the CMU and Berkeley contingents of the team.
+When deciding between Galactic and teammate, I chose teammate because I expected
+it to be smaller and more serious. We ended up similar in size to Galactic.
 
-Normally, if multiple teams finish Mystery Hunt, Galactic is one of those teams,
-and since teammate was of similar size and composition to Galactic, I expected
-the same this year. We didn't get to do the runaround this year because HQ
-closed right after the coin was found. If HQ stayed open for longer, we had a
-good shot of finishing the Hunt, and although I was disappointed at the
-time, I'm okay with it now. Setec is not the largest team. Logistically, it's
-a lot of work to run HQ, and they predicted to stop running HQ by Sunday 5pm.
+Overall feelings on Hunt can be summed up as, "Those puzzles were great, but I
+wish we'd finished." Historically, if multiple teams finish Mystery Hunt,
+Galactic is one of those teams, and since teammate was of similar size, I
+expected teammate to finish as well. However, since Hunt was trickier this year,
+only one team finished all the metas. I was a bit disappointed that we didn't get to do the
+runaround, but oh well, that's just how it goes.
 
-Excluding that we didn't get to do the runaround, this was a very solid Mystery
-Hunt. I do feel that a lot of puzzles had more grunt work than previous years,
-although I haven't run the math on this. My guess is that Setec overcorrected
-from their short 2017 Hunt. I think it's good to have puzzles like this, but it
-can be annoying when a lot are like this.
+I did get the feeling that a lot of puzzles had more grunt work than last time
+Setec ran a Hunt, but I haven't checked this, and it's possible that I only feel
+this way because unlocks were more constrained, forcing us to solve the more
+laborious puzzles. (I did not work on First You Visit Burkina Faso, but I did
+here about all the pain it caused.) Having puzzles with lots of IDing and data
+entry is fine, it's important to have something where you know exactly how to
+contribute to the puzzle, but it becomes overwhelming if there's too much of it.
+
 
 \* \* \*
 {: .centered }
 
-(Puzzle spoilers begin from here.)
+Starting from here, there are more substantial puzzle spoilers.
 
-The puzzle-solving story starts several weeks before Mystery Hunt, with
-Alex Rosenthal's TED talk.
+The story starts several weeks before Mystery Hunt. Someone had found Alex
+Rosenthal's TED talk about Mystery Hunt. We knew Alex Rosenthal was on Setec,
+and that Setec had embedded puzzle data in a TED talk before. We got INNOVATED
+out of the TED talk puzzle, and it quickly became a team meme that teammate
+would submit INNOVATED right as Hunt opened. This evolved to, "Since NOV is a
+substring of INNOVATED, the meta INNOVATED goes to will work by extracting month
+abbreviations from puzzle answers." Imagine our surprise when we learn the hunt
+is Holiday themed - month meta confirmed!
 
 (EMBED?)
 
-We knew that Setec embedded puzzle data in a TED talk in their last Hunt. The
-bottom of each slide is Morse code for a nine letter word, where the diagonal
-spells INNOVATED. It quickly became a team meme that we should call-in INNOVATED
-for the first puzzle in the Hunt, and that we should get started on solving
-the meta INNOVATED fed into. We got as far as "inNOVated, it's a meta where you
-extract months", before deciding to stop doing stupid things.
-
 I spent the day before Hunt playing Two Rooms and a Boom with people from
-Galactic. It's a social deduction game where the biggest gimmick is that you
-literally separate people into two rooms. The core rules are like this:
-There are two teams, Blue Team and Red Team. Blue Team has the President, and
-Red Team has the Bomber. Your goal is to have the President and bomb be in the
-same room (if Blue) or different room (if Red) by the end of the game. During
-the game, players can share (or not share) their roles with other players, and
-every so often, each room must choose people to swap with the other room. It
-turns into this interesting game of figuring out the web of trust and distrust,
-while trying to disguise who you trust, but still maintaining enough control of
-the vote to control who is and isn't leaving the room. But this is balanced by
-the fact that to get information, you have to reveal information, and the fact
-that you need to choose how to ferry information across rooms. It's neat and
-I'd recommend it.
+Galactic. It's not puzzle related but the game's cool enough that I'll mention
+it anyways. It's a social deduction game, where one person is the President, another
+person is the Bomber, and (almost) everyone else is trying to get the President
+in the same or different room from the Bomber. Now, here's the gimmick: by same
+room, I mean the literal same room. People are divided across two rooms, and
+periodically, each room decides who to send to other room. People initially have
+secret roles, but there are ways to share your roles with other players, leading
+to a game of figuring out who to trust, who you can't trust, and concealing who
+you *do* trust, as well as deciding how you want to ferry information across the
+two rooms. It's neat.
 
-Very, very close to kickoff, I learned about the Mystery Hunt Betting Pool for
-predicting who would win.
+Right before kickoff, I learned about the Mystery Hunt Betting Pool, thought it
+was fun, and bet on Palindrome. I later learned that only 4 people participated
+we were all mutual friends with each other, and we had all guessed wrong. As per
+the agreement, no one won anything and the money was donated to Mystery Hunt.
+
+Every Hunt, I tend to look mostly at metapuzzles, then switch to regular puzzles
+when stuck on metas. This Hunt was no different. Overall I feel this means I
+look at metas more than I should, in that I don't make good calls on when we
+need more regular answers, but sometimes it pays off.
+
+
+Puzzles
+-----------------------------------------------------
+
+I did a mix of GIF of the Magi and Tough Enough, which were both pretty solid.
+I then took a look at Christmas-Halloween with some other people. We figured out
+the mechanic pretty quickly, which was easy to fill-in with incomplete info,
+which was easy to backsolve. Presumably a few other teams had a similar
+experience, based on the backsolving attempts from wrap-up.
+
+Backsolving philosophy is different across teams. teammate borrows the same culture
+as Galactic - when backsolving, wait for your answer to be confirmed wrong
+before trying it for the next puzzle, but otherwise, it is okay to backsolve
+multiple puzzles at once. We got feedback to backsolve less aggressively and
+toned down our backsolve attempts by a lot.
+
+We learned that Haunted was the TED puzzle, and had a good laugh when the clue
+phrase said "NOT INNOVATED, SORT FIRST".
+
+I did not work on Common Flavors, but at some point, someone tried brewing one
+of the teas, thought it tasted bad, and decided that these couldn't possibly be
+real teas, so they cut open the tea bags and started trying to identify things
+by phonelight. This didn't work, we ended up backsolving it.
+
+We See Thee Rise was a fun puzzle. It was all about clues where the location
+was wrong, and the realization that "oh my God, we're making the Canadian flag!"
+was great. Even if our maple leaf doesn't look that glorious in Google Sheets...
+
+I did not work on The Turducken Konundrum, but I heard that we solved it with
+zero backtracking, which was very impressive.
+
+I contributed...well, almost nothing to Your Wish is My Command, but I had the
+right idea on how to do all the extraction. Three other people had the same
+ideas, so, yeah. Based on the solve stats we have, we got the fastest solve, so
+that's nice.
+
+For 7 Little Dropquotes, we used...well, seven different groups of people. I was
+pretty impressed at the printing trickery - when printed, the colors are changed
+to Roman numerals. Somehow we got fastest solve on 7 Little Dropquotes. I didn't
+think our solve was particularly quick, but we did have a pretty smooth solve
+and we solved all the dropquotes. For future reference, Nutrimatic
+trivializes dropquotes, because the longer you make the word, the more likely it
+is that only one word fits the regex. This means you can use Nutrimatic on all
+the long clues humans find hard, and use humans on all the short clues Nutrimatic finds hard. I
+have learned I am really bad at solving dropquotes, but really good at typing regexes into
+Nutrimatic and telling people "that long word is INTELLECTUAL".
+
+Be Mine was an absurd puzzle. By the time I got to it, all the elements were
+IDed. The break-in was realizing that we should fill in "night" as "nite" and
+find minerals, at which point it became a silly game of "Is plumbopalladinite a
+mineral?" and "Wait, cupromakopavonite is a thing?" The extraction for this
+puzzle was decent in hindsight, but I found it annoying. I was trying to find
+the chemical compounds word-search style. The person I was solving with was
+trying to find elements that overlapped with the mineral name in the grid. I
+didn't like this theory because this meant there would be a few minerals that
+wouldn't extract anything, because their name didn't overlap with any of their
+elements. We tried both and it was clear that I was wrong and they were right,
+which bothers me from an elegance standpoint, but the mineral IDing was pretty
+fun.
+
+If you like puzzlehunt encodings, The Bill is the puzzle for you. A group of us
+spent an oddly long amount of time tracking down all the encoded data.
+
+Okay, there's a fun story behind State Machine. At some point, we realized that
+it was cluing the connectivity graph of the continental United States. I worked
+on implementing the state machine in code while other people worked on IDing the
+states. Once that was IDed, I ran it, got out the answer, copied it into sheets,
+and got something weird because I didn't have tabs in my output. I tried fixing
+it, failed to fix it, and then we had 3 people simultaneously go, "I can fix
+this in Google Sheets!" After several minutes, we finally had clean indices, and
+got the answer KATE BAR THE DOOR, which was...wrong. After lots of confusion we
+found out that we had actually cleaned the data wrong, and had gotten 0 for New Hampshire instead of
+10. This was *hilarious* at 2 AM and I broke down laughing.
+
+For Middle School of Mines, I didn't work on the puzzle, but I walked by people
+figuring out the Minesweeper grids, noticed the giant 0 in the grid so far, and
+said, "Oh no, I don't like where this puzzle is going." It then turned out the
+people solving the puzzle hadn't noticed the giant 0, in a rather literal case
+of "missing the forest of the threes".
+
+I had a lot of fun with Deeply Confused. Despite doing deep learning in my
+actual day job, I was embarassed to learn that I didn't have an on-hand way to
+call Inception-v3 from my laptop. We ended up using a web API anyways, because
+Keras was giving us the wrong results. Looking at the solution, the issue was
+probably that we forgot to normalize the image array before using
+`inception_v3.InceptionV3()`.
+
+Chris Chros was a fun puzzle that showed me there were a lot of famous actors
+played by Chrises.
+
+He's Out!!! was a puzzle that went from "huh" to "wow, neat!" when we figured
+out that a punchout in baseball means a strikeout, and that all the players we
+IDed were emergency pitchers and had struck out exactly one person.
+
+Tree Ring Circus was neat. I felt clever for extracting the ring sizes by
+looking up their size in the SVG drawing. I then felt stupid (and clever in a
+different way) when I realized this was intended, to make the ring sizes exactly
+match up with real ring sizes.
+
+Cubic was cute. We had someone bash out all the roots, did a count, found that
+every root appeared exactly twice, and went, "HMMMMMMMM". With the graph
+hinting, we started drawing the graphs, realized the title meant "cubic graphs",
+and it fell from there.
+
+Around Sunday 2-4 AM, we got caught by the time unlock, and went into what can
+only be called beast mode. Somehow, we managed to keep pace with the time
+unlock for several hours, solving puzzles at an average rate of 1 per 15
+minutes. One of those puzzles was Divine the Rule of Kings, which we just...did.
+Like, it just happened. Really weird. There were some memes about "can someone
+pull up the US state connectivity graph, again, for the 3rd time?". Evidently a
+few puzzle authors like that graph a lot.
+
+Of the regular puzzles I solved, I'd say my favorite was Getting Digits. Somehow
+we had a chain of ahas. First "ON and OFF!", then "Ohhhh it's START", then "ohhh
+it's a phone number". It's a simple extraction but there's still something cool
+about calling a phone number while expecting something magical to happen.
+
+
+Metapuzzles
+------------------------------------------------------------------------
+
+Despite looking at a lot of metas, I didn't contribute to many of them. The one
+where I unequivocably helped was figuring out the turkey pardon connection for
+Thanksgiving-President's Day.
+
+This section really exists for two reasons. The first is the
+Halloween-Thanksgiving meta. We were stuck for quite a while, assuming that the
+meta worked by overlaying three Halloween town answers with three Thanksgiving
+answers with food substrings, and extracting using blood types in some way.
+This was a total red herring, since the food names mostly came from turkeys for
+the Thanksgiving-President's meta. But, according to the people who solved it,
+the reason they finally tried ternary on the blood types was because we had a
+bingo square for "Puzzle uses ternary in extraction", and they wanted to get
+that square. After Hunt ended, we talked about how we were surprised there was
+no Magic: the Gathering reference for that bingo square, which led to the color
+pie, which led to colored wedges, which led to figuring out the Trivial Pursuit
+a-ha for the Pi-Holi meta. Based on a sample size of 2, I'm now claiming that
+Mystery Hunt Bingo is not only a fun diversion during hunt, it's also a decent
+source of "Have you tried..." ideas.
+
+The second reason is the Arbor-Pi meta. We had the core idea the whole time -
+do something based on digits after the Feynmann point. The problem was that we
+horribly overcomplicated it. Somehow we had convinced ourselves that the meta
+was based around
