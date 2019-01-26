@@ -287,21 +287,28 @@ instead.
 Post-Hunt
 ----------------------------------------------------------------------------
 
-We didn't get a Bingo. At least it's symmetric.
+Since Palindrome didn't win, I lost my Mystery Hunt bet. It turns out the
+betting pool only had four participants, we were all mutual friends, and we all
+guessed wrong. As per our agreement, all the money was donated to Mystery Hunt.
+
+Continuing the theme of not winning things, we didn't get a Bingo, but we got
+very close. At least it's symmetric.
 
 ![Bingo after](/public/mh19/bingo_after.jpg)
 {: .centered }
 
-Speaking of Bingo, after Hunt ended, we talked about how we didn't get the
+After Hunt ended, we talked about how we didn't get the
 Magic: the Gathering square, and how it was a shame that Pi-Holi wasn't an MTG
 puzzle, since it could have been about the color pie. That led to talking about
-other games with colored wedges, and then we got the Trivial Pursuit a-ha.
+other games with colored wedges, and then we got the Trivial Pursuit a-ha. At
+this rate, I actually might print out the phrase list to refer to for extraction
+purposes.
 
 I didn't do too much after Hunt. It was mostly spent getting food with friends,
 complaining about the cold, and waiting in an airport for 12 hours. It turned
 out a bunch of Bay Area Hunters were waiting for the same flights, so it wasn't
-as bad as it could have been - a bunch of us talked about Hunt, and a few people
-from my team got dinner at a Sbarro.
+as bad as it could have been. We talked about Hunt with other stranded
+passegners, and a few people from my team got dinner at Sbarro.
 
 ![Sbarro](/public/mh19/sbarro.jpg)
 {: .centered }
