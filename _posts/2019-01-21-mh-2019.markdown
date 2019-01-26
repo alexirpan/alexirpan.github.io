@@ -214,5 +214,23 @@ source of "Have you tried..." ideas.
 
 The second reason is the Arbor-Pi meta. We had the core idea the whole time -
 do something based on digits after the Feynmann point. The problem was that we
-horribly overcomplicated it. Somehow we had convinced ourselves that the meta
-was based around
+horribly overcomplicated it. We decided to assign numbers to each answer, then
+substitute numbers based on answer length. So far, so good. We then decided that
+the answer had to be a two digit number, so we took everything mod 100. *Then*,
+instead of extracting the digits N places after the Feynman point, we thought we
+had to find where those digits appeared in $$\pi$$ after the Feynman point.
+Somehow, the first 8 numbers we extracted this way were all even, and we spun in
+circles for a while until someone tried the obvious thing instead.
+
+
+Post-Hunt
+----------------------------------------------------------------------------
+
+I didn't do too much after Hunt. It was mostly spent getting food with friends,
+complaining about the cold, and waiting in an airport for 12 hours. It turned
+out a bunch of Bay Area Hunters were waiting for the same flights, so it wasn't
+as bad as it could have been - a bunch of us talked about Hunt, and a few people
+from my team got dinner at a Sbarro.
+
+
+It felt obligatory.
