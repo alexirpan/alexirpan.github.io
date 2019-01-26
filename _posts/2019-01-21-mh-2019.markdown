@@ -109,11 +109,16 @@ with incomplete info, then gave massive backsolving fodder.
 Based on the answers shared during wrap-up, several other teams had a similar
 experience.
 
-Backsolving philosophy is different across teams. teammate borrows the same culture
-as Galactic - when backsolving, wait for your answer to be confirmed wrong
-before trying it for the next puzzle, and make sure each puzzle has at most 1
-outstanding submission, but otherwise backsolve as much as you want.
-Historically, this means our solve accuracy is lower than other teams.
+Backsolving philosophy is different across teams, and teammate borrows a culture
+from Galactic - backsolve as much as you want, as long as you wait for your answer to be confirmed wrong
+before trying it for the next puzzle, and try to have only 1 pending answer per
+puzzle.
+This makes our solve accuracy relatively terrible since our frequent backsolve
+attempts drag down the average. For example, we guessed several random words for
+[Moral
+Ambiguity](http://web.mit.edu/puzzle/www/2019/puzzle/moral_ambiguity.html),
+because we knew it thematically and mechanically had to be the Holi Day prank answer.
+
 We got feedback to backsolve less aggressively and toned down our backsolve
 strategy by a lot. In fact, we completely forgot to backsolve [Making a
 Difference](http://web.mit.edu/puzzle/www/2019/puzzle/making_a_difference.html).
@@ -130,8 +135,11 @@ I did not work on [Common Flavors](http://web.mit.edu/puzzle/www/2019/puzzle/com
 fact, we backsolved that puzzle because we didn't figure out they were Celestial
 Seasonings. At some point, the people working on Common Flavors tried brewing
 one of the teas, tried it, and thought it tasted terrible. It couldn't possibly
-be a real tea blend! Oops. Eventually they cut open the tea bags and tried to
-identify ingredients by phonelight.
+be a real tea blend!
+
+Oops.
+
+Eventually they cut open the tea bags and tried to identify ingredients by phonelight.
 
 ![Common Flavors](/public/mh19/commonflavors.png)
 {: .centered }
@@ -140,7 +148,7 @@ identify ingredients by phonelight.
 The realization of "oh my God, we're making the Canadian flag!"
 was great. Even if our maple leaf doesn't look that glorious in Google Sheets...
 
-![We See Thee Rise](/public/mh19/seetheerise.png)
+![We See Thee Rise](/public/mh19/weseetheerise.png)
 {: .centered }
 
 I did not work on [The Turducken Konundrum](http://web.mit.edu/puzzle/www/2019/puzzle/dk8_the_turducken_konundrum_turkey.html),
@@ -201,11 +209,11 @@ drawing a giant 0 in the mines discovered so far,
 in a rather literal case of "missing the forest of the threes".
 
 I had a lot of fun with [Deeply Confused](http://web.mit.edu/puzzle/www/2019/puzzle/deeply_confused.html). Despite literally doing deep learning in my
-day job, I was embarassed to learn that I didn't have an on-hand way to
+day job, I was embarrassed to learn that I didn't have an on-hand way to
 call Inception-v3 from my laptop. We ended up using a web API anyways, because
 Keras was giving us the wrong results. Looking at the solution, we forgot to
-normalize the image array, which explains why we were getting high-confidence
-misclassifications of the wrong class.
+normalize the image array, which explains why we were getting wrong adversarial
+class.
 
 [Chris Chros](http://web.mit.edu/puzzle/www/2019/puzzle/chris_chros.html) was a
 fun puzzle. I never realized so many people with the name "Chris" were in
@@ -249,7 +257,7 @@ Metapuzzles
 ------------------------------------------------------------------------
 
 Despite looking at a lot of metas, I didn't contribute to many of them. The one
-where I unequivocably helped was figuring out the turkey pardon connection for
+where I definitely helped was figuring out the turkey pardon connection for
 Thanksgiving-President's Day. Otherwise, it was a bunch of observations that
 needed more answers to actually execute.
 
@@ -271,8 +279,7 @@ since there were two boxes, the answer had to be a two digit number, so we took
 everything mod 100. *Then*, instead of extracting the digit N places after the
 Feynman point, we thought we needed to find the digits "N" at some place after the Feynman
 point, noting how many digits we had to travel to find N.
-Somehow, all the
-partial work we had gave an even number, so it looked like *something* was
+Somehow, of the 8 boxes we had, all of them gave even numbers, so it looked like *something* was
 happening. This was all wrong and eventually someone did the simple thing
 instead.
 
@@ -287,10 +294,8 @@ We didn't get a Bingo. At least it's symmetric.
 
 Speaking of Bingo, after Hunt ended, we talked about how we didn't get the
 Magic: the Gathering square, and how it was a shame that Pi-Holi wasn't an MTG
-puzzle, since it could have been about the color pie.
-Then someone remembered that Trivial Pursuit is
-another game with colored wedges and the colors matched the givens for the
-Pi-Holi meta. Oops.
+puzzle, since it could have been about the color pie. That led to talking about
+other games with colored wedges, and then we got the Trivial Pursuit a-ha.
 
 I didn't do too much after Hunt. It was mostly spent getting food with friends,
 complaining about the cold, and waiting in an airport for 12 hours. It turned
@@ -298,7 +303,7 @@ out a bunch of Bay Area Hunters were waiting for the same flights, so it wasn't
 as bad as it could have been - a bunch of us talked about Hunt, and a few people
 from my team got dinner at a Sbarro.
 
-![Sbarro](/public/mn19/sbarro.jpg)
+![Sbarro](/public/mh19/sbarro.jpg)
 {: .centered }
 
 It felt obligatory.
