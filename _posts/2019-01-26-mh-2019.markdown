@@ -1,0 +1,316 @@
+---
+layout: post
+title:  "Mystery Hunt 2019"
+date:   2019-01-26 01:34:00 -0800
+---
+
+Here is a lesson that should be obvious: if you are trying to hit a paper
+deadline, going to Mystery Hunt the weekend before that deadline is a bad idea.
+In my defense, I did not think we were submitting to ICML, but some last-minute
+results convinced us it was worth trying.
+
+Combined with the huge airport troubles getting out of Boston, I ended
+up landing in California at 11 AM the day before the deadline, with the
+horrible combination of a ruined sleep schedule and a lack of sleep in the first
+place. But, now I've recovered, and finally have time to talk about
+Hunt.
+
+I hunted with teammate this year. It's an offshoot of ✈✈✈ Galactic
+Trendsetters ✈✈✈, leaning towards the CMU and Berkeley contingents of the team.
+Like Galactic, the team is pretty young, mostly made of people in their 20s.
+When deciding between Galactic and teammate, I chose teammate because I expected
+it to be smaller and more serious. We ended up similar in size to Galactic. No
+idea where all the people came from.
+
+Overall feelings on Hunt can be summed up as, "Those puzzles were great, but I
+wish we'd finished." Historically, if multiple teams finish Mystery Hunt,
+Galactic is one of those teams, and since teammate was of similar size and
+quality, I expected teammate to finish as well. However, since Hunt was harder this year,
+only one team got to the final runaround. I was a bit disappointed, but oh
+well, that's just how it goes.
+
+I did get the feeling that a lot of puzzles had more grunt work than last time
+Setec ran a Hunt, but I haven't checked this. This is likely colored by hearing
+stories about [First You Visit Burkina Faso](http://web.mit.edu/puzzle/www/2019/puzzle/first_you_visit_burkina_faso.html),
+and spending an evening staring at
+Google Maps for [Caressing](http://web.mit.edu/puzzle/www/2019/puzzle/caressing.html) and carefully cutting out dolls for [American Icons](http://web.mit.edu/puzzle/www/2019/puzzle/american_icons.html).
+(I heard that when we finally solved First You Visit Burkina Faso, the person
+from AD HOC asked "Did you like your trip to Burkina Faso?", and we replied
+"Fuck no!")
+
+What I think actually happened was that the puzzles were less backsolvable and
+the width of puzzle unlocks was smaller. Each puzzle unlocked a puzzle or a
+town, and each town started with 2 puzzles, so the width only increased when a
+new town was discovered. I liked this, but it meant we couldn't skip puzzles
+that looked time-consuming, they had to be done, especially if we didn't know
+how the meta structure worked.
+
+For what it's worth, I think it's good to have some puzzles with lots of
+IDing and data entry, because these form footholds that let everybody contribute
+to a puzzle. It just becomes overwhelming if there's too much of it, so you have
+to be careful.
+
+
+Before Hunt
+-----------------------------------------------------------------------------
+
+Starting from here, there are more substantial puzzle spoilers.
+
+A few weeks before Hunt, someone had found Alex Rosenthal's TED talk about Mystery Hunt.
+
+<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/alex_rosenthal_the_joyful_perplexing_world_of_puzzle_hunts" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+
+<p></p>
+
+We knew Alex Rosenthal was on Setec. We knew Setec had embedded puzzle data in a
+TED talk before. So when we got INNOVATED out of the TED talk, it quickly became
+a teammate team meme that we should submit INNOVATED right as Hunt opened, and
+that since "NOV" was a substring of INNOVATED, we should be on the lookout for a
+month-based meta where answers had other month abbreviations. Imagine our
+surprise when we learn the hunt is Holiday themed - month meta confirmed!
+
+The day before Hunt, I played several rounds of [Two Rooms and a Boom](http://www.tuesdayknightgames.com/tworoomsandaboom/)
+with people from Galactic. It's not puzzle related (at least, not yet), but the
+game's cool enough that I'll briefly explain. It's a social deduction game. One person is the President, another
+person is the Bomber, and (almost) everyone's win condition is getting the
+President and Bomber in the same or different rooms by the end of the game.
+
+Now, here's the gimmick: by same
+room, I mean the literal same room. People are randomly divided across two rooms, and
+periodically, each room decides who to swap with the other room. People initially have
+secret roles, but there are ways to share your roles with other players, leading
+to a game of figuring out who to trust, who you can't trust, and concealing who
+you *do* trust from people you don't, as well as deciding how you want to ferry
+information across the two rooms. It's neat.
+
+Right before kickoff, I learned about [the Mystery Hunt betting pool](https://twitter.com/dydt/status/1085780956236046338)
+one of my friends was running, thought it was fun, and chipped in, betting on
+Palindrome. While waiting for puzzles to officially release, we printed our
+official team [Bingo](https://www.alexirpan.com/mystery-hunt-bingo/) board.
+
+![Bingo start](/public/mh19/bingo.jpg)
+{: .centered }
+
+
+Puzzles
+-----------------------------------------------------
+
+Every Hunt, I tend to look mostly at metapuzzles, switching to regular puzzles
+when I get stuck on the metas.
+This Hunt was no different. It's not the worst strategy, but I think I look at
+metas a bit too much, and make bad calls on whether I should solve regular
+puzzles instead.
+
+I started Hunt by working on [GIF of the Magi](http://web.mit.edu/puzzle/www/2019/puzzle/gif_of_the_magi.html) and
+[Tough Enough](http://web.mit.edu/puzzle/www/2019/puzzle/tough_enough.html), which were both solid puzzles.
+After both of those were done, we had enough answers to start looking at [Christmas-Halloween](http://web.mit.edu/puzzle/www/2019/problem/christmas_halloween.html).
+We got the decimal-octal joke pretty quickly, and the puzzle was easy to fill-in
+with incomplete info, then gave massive backsolving fodder.
+Based on the answers shared during wrap-up, several other teams had a similar
+experience.
+
+Backsolving philosophy is different across teams, and teammate borrows a culture
+from Galactic - backsolve as much as you want, as long as you wait for your answer to be confirmed wrong
+before trying it for the next puzzle, and try to have only 1 pending answer per
+puzzle.
+This makes our solve accuracy relatively terrible since our frequent backsolve
+attempts drag down the average. For example, we guessed several random words for
+[Moral
+Ambiguity](http://web.mit.edu/puzzle/www/2019/puzzle/moral_ambiguity.html),
+because we knew it thematically and mechanically had to be the Holi Day prank answer.
+
+We got feedback to backsolve less aggressively and toned down our backsolve
+strategy by a lot. In fact, we completely forgot to backsolve [Making a
+Difference](http://web.mit.edu/puzzle/www/2019/puzzle/making_a_difference.html).
+This was especially embarassing because we knew the clue phrase started with
+"KING STORY ADAPTED AS A FILM", and yet we completely forgot that "RITA HAYWORTH
+AND THE SHAWSHANK REDEMPTION" was still unclaimed.
+
+I did not work on [Haunted](http://web.mit.edu/puzzle/www/2019/puzzle/haunted.html)
+but I know people had a good laugh when the cluephrase literally told them "NOT
+INNOVATED, SORT FIRST". teammate uses Discord to coordinate things. Accordingly,
+our `#innovated-shitposting` channel was renamed to `#ambiguous-shitposting`.
+
+I did not work on [Common Flavors](http://web.mit.edu/puzzle/www/2019/puzzle/common_flavors.html), and in
+fact, we backsolved that puzzle because we didn't figure out they were Celestial
+Seasonings. At some point, the people working on Common Flavors tried brewing
+one of the teas, tried it, and thought it tasted terrible. It couldn't possibly
+be a real tea blend!
+
+Oops.
+
+Eventually they cut open the tea bags and tried to identify ingredients by phonelight.
+
+![Common Flavors](/public/mh19/commonflavors.png)
+{: .centered }
+
+[We See Thee Rise](http://web.mit.edu/puzzle/www/2019/puzzle/we_see_thee_rise.html) was a fun puzzle.
+The realization of "oh my God, we're making the Canadian flag!"
+was great. Even if our maple leaf doesn't look that glorious in Google Sheets...
+
+![We See Thee Rise](/public/mh19/weseetheerise.png)
+{: .centered }
+
+I did not work on [The Turducken Konundrum](http://web.mit.edu/puzzle/www/2019/puzzle/dk8_the_turducken_konundrum_turkey.html),
+but based on solve stats, we got the fastest solve. I heard that we solved it
+with zero backtracking, which was very impressive.
+
+For [Your Wish is My Command](http://web.mit.edu/puzzle/www/2019/puzzle/your_wish_is_my_command.html), our first question was
+asking HQ if we needed the game ROMs of the games pictured, which would have
+been illegal. We were told to "not do illegal things." I did...well, basically nothing,
+because by the time I finished downloading an NES emulator, everyone else had
+IDed the Game Genie codes, and someone else had loaded the ROM on an NES
+emulator they had installed before Hunt. That emulator had a view for what
+address was modified to what value, and we solved it quickly from there.
+
+I want to call out the printer trickery done for [7 Little Dropquotes](http://web.mit.edu/puzzle/www/2019/puzzle/7_little_dropquotes.html).
+The original puzzle uses color to mark what rows letters came from, but if you
+print it, the colors are removed for Roman numerals, letting you print the page
+with a black-and-white printer. Our solve was pretty smooth, we printed out all
+the dropquotes and solved them in parallel. For future reference, Nutrimatic
+trivializes dropquotes, because the longer you make the word, the more likely it
+is that only one word fits the regex of valid letters. This means you can use Nutrimatic on all
+the long clues humans find hard, and use humans on all the short clues Nutrimatic finds hard.
+When solving this puzzle, I learned I am really bad at solving dropquotes, but
+really good at typing regexes into Nutrimatic and telling people "that long
+word is INTELLECTUAL".
+
+[Be Mine](http://web.mit.edu/puzzle/www/2019/puzzle/be_mine.html) was an absurd
+puzzle. I didn't have to do any of the element IDing, which was nice.
+The break-in was realizing that we should fill in "night" as "nite" and
+find minerals, at which point it became a silly game of "Is plumbopalladinite a
+mineral? It is!" and "Wait, cupromakopavonite is a thing?" I had a lot of fun
+finding mineral names and less fun extracting the puzzle answer.
+I was trying to find the chemical compounds word-search style.
+The person I was solving with was trying to find overlaps between a mineral
+name and the elements in the grid. I didn't like this theory because some
+minerals didn't extract any overlaps at all, but the word search wasn't going
+great. It became clear that I was wrong and they were right.
+
+If you like puzzlehunt encodings, [The Bill](http://web.mit.edu/puzzle/www/2019/puzzle/the_bill.html) is the puzzle for you.
+It didn't feel very thematic, but it's a very dense pile of extractions if
+you're into that.
+
+Okay, there's a story behind [State Machine](http://web.mit.edu/puzzle/www/2019/puzzle/state_machine.html). At some point, we realized that
+it was cluing the connectivity graph of the continental United States. I worked
+on implementing the state machine in code while other people worked on IDing the
+states. Once that was IDed, I ran the state machine and reported the results.
+Three people then spent several minutes cleaning the input, each doing so in a
+separate copy of the spreadsheet, because they all thought the other people were
+doing it wrong or too slowly. This led to the answer
+KATE BAR THE DOOR, which was...wrong. After lots of confusion, we figured out
+that the clean data we converged on had assigned 0 to New Hampshire instead of 10. They had taken the final digit for every state and filtered out all the
+zeros, forgetting that indicies could be bigger than 9. This was *hilarious* at
+2 AM and I broke down laughing, but now it just seems stupid.
+
+For [Middle School of Mines](http://web.mit.edu/puzzle/www/2019/puzzle/middle_school_of_mines.html),
+I didn't work on the puzzle, but I made the drive-by observation that were
+drawing a giant 0 in the mines discovered so far,
+in a rather literal case of "missing the forest of the threes".
+
+I had a lot of fun with [Deeply Confused](http://web.mit.edu/puzzle/www/2019/puzzle/deeply_confused.html). Despite literally doing deep learning in my
+day job, I was embarrassed to learn that I didn't have an on-hand way to
+call Inception-v3 from my laptop. We ended up using a web API anyways, because
+Keras was giving us the wrong results. Looking at the solution, we forgot to
+normalize the image array, which explains why we were getting wrong adversarial
+class.
+
+[Chris Chros](http://web.mit.edu/puzzle/www/2019/puzzle/chris_chros.html) was a
+fun puzzle. I never realized so many people with the name "Chris" were in
+Infinity War.
+
+[He's Out!!](http://web.mit.edu/puzzle/www/2019/puzzle/hes_out.html) was a
+puzzle that went from "huh" to "wow, neat!" when we figured
+out that a punchout in baseball means a strikeout. I've never played Punch-Out!!,
+but I recognized it from speedruns. A good intro is [the blindfolded run by
+Sinister1 at AGDQ 2014](https://youtu.be/CvzIb53Lcno?t=507).
+
+[Tree Ring Circus](http://web.mit.edu/puzzle/www/2019/puzzle/tree_ring_circus.html) was neat. I felt very clever for extracting the ring sizes by
+looking up their size in the SVG source. I then felt stupid when I realized this
+was intentional, since it's very important to have exact ring sizes for this
+puzzle.
+
+[Cubic](http://web.mit.edu/puzzle/www/2019/puzzle/cubic.html) was cute. It's fune
+to have a puzzle where you go from, "ah, Cubic means cubic polynomials", and
+see it go to "ohhhh, cubic means cubic *graphs*". I didn't really do anything
+for this but it was fun to hear it get solved.
+
+Somewhere around Sunday 2 AM, we got caught by the time unlock and starting
+unlocking a new puzzle every 15 minutes. I'm not sure what exactly happened, but
+the entire team somehow went into beast mode and kept pace with the time unlock
+for several hours. We ended up paying for it later that morning, when everyone
+crashed until noon.
+One of the puzzles solved in that block was [Divine the Rule of Kings](http://web.mit.edu/puzzle/www/2019/puzzle/divine_the_rule_of_kings.html),
+which we just...did.
+Like, it just happened. Really weird. There were some memes about "can someone
+pull up the US state connectivity graph, again?". Turns out
+puzzle authors really like that graph.
+
+Of the regular puzzles I solved, I'd say my favorite was [Getting Digits](http://web.mit.edu/puzzle/www/2019/puzzle/getting_digits.html).
+We didn't hit all the a-has at once, it was more like a staggered process.
+First "ON and OFF!", then "Ohhhh it's START", then "ohhh
+it's a phone number". It's a simple extraction but there's still something cool
+about calling a phone number to solve a puzzle.
+
+
+Metapuzzles
+------------------------------------------------------------------------
+
+Despite looking at a lot of metas, I didn't contribute to many of them. The one
+where I definitely helped was figuring out the turkey pardon connection for
+Thanksgiving-President's Day. Otherwise, it was a bunch of observations that
+needed more answers to actually execute.
+
+This section really exists for two reasons. The first is the
+Halloween-Thanksgiving meta. We were stuck for quite a while, assuming that the
+meta worked by overlaying three Halloween town answers with three Thanksgiving
+answers with food substrings, and extracting using blood types in some way.
+This was a total red herring, since the food names were coming from turkey
+names. However, according to the people who solved it,
+the reason they finally tried ternary on the blood types was because we had a
+bingo square for "Puzzle uses ternary in extraction", and they wanted to get
+that square. I'm officially claiming partial credit for that metapuzzle.
+
+The second reason is the Arbor-Pi meta. We had the core idea the whole time -
+do something based on digits after the Feynman point. The problem was that we
+horribly overcomplicated it. We decided to assign numbers to each answer, then
+substitute numbers based on answer length. So far, so good. We then decided that
+since there were two boxes, the answer had to be a two digit number, so we took
+everything mod 100. *Then*, instead of extracting the digit N places after the
+Feynman point, we thought we needed to find the digits "N" at some place after the Feynman
+point, noting how many digits we had to travel to find N.
+Somehow, of the 8 boxes we had, all of them gave even numbers, so it looked like *something* was
+happening. This was all wrong and eventually someone did the simple thing
+instead.
+
+
+Post-Hunt
+----------------------------------------------------------------------------
+
+Since Palindrome didn't win, I lost my Mystery Hunt bet. It turns out the
+betting pool only had four participants, we were all mutual friends, and we all
+guessed wrong. As per our agreement, all the money was donated to Mystery Hunt.
+
+Continuing the theme of not winning things, we didn't get a Bingo, but we got
+very close. At least it's symmetric.
+
+![Bingo after](/public/mh19/bingo_after.jpg)
+{: .centered }
+
+After Hunt ended, we talked about how we didn't get the
+Magic: the Gathering square, and how it was a shame that Pi-Holi wasn't an MTG
+puzzle, since it could have been about the color pie. That led to talking about
+other games with colored wedges, and then we got the Trivial Pursuit a-ha. At
+this rate, I actually might print out the phrase list to refer to for extraction
+purposes.
+
+I didn't do too much after Hunt. It was mostly spent getting food with friends,
+complaining about the cold, and waiting in an airport for 12 hours. It turned
+out a bunch of Bay Area Hunters were waiting for the same flights, so it wasn't
+as bad as it could have been. We talked about Hunt with other stranded
+passegners, and a few people from my team got dinner at Sbarro.
+
+![Sbarro](/public/mh19/sbarro.jpg)
+{: .centered }
+
+It felt obligatory.
