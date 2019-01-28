@@ -4,41 +4,28 @@ title:  "Sometimes You Have to Dive Into Bullshit"
 date:   2018-11-27 03:00:00 -0800
 ---
 
-I'd like to think I'm a good software engineer. Is that actually true?
+I'd like to think I'm a good software engineer, or at least an okay one.
+That's not to say I'm good at all parts of the job. There's a lot more to
+software engineering than just coding.
 
-Well, I'm not sure. There are a few points in favor. It's tricky for
-me to judge whether I'm overestimating from Dunning-Kruger or underestimating
-from imposter syndrome. I'm employed at a Big Tech Company, which is a plus.
-I haven't been coding for particularly long, which is a minus. Maybe you
-think young people are better at programming - I disagree. This isn't
-even getting into the aspects of good software engineering. There's more
-to it than just programming, and it's not like I'm good at all of it.
+Of all parts of software engineering, I only let myself take pride in one
+aspect: debugging. Historically, my track record for this is pretty good.
 
-There is one exception where I let myself take pride, and that's
-debugging. Here's a short story that was painful before but funny now:
-I was working on a class project for Operating Systems. This was
-ostensibly a group project, but our group dynamic was dysfunctional and
-I was basically doing it solo. I was stuck, so I went to TA office hours
-to see if they could help me fix a bug.
-
-This was one of the final office hours before the project deadline, so
-there were a bunch of people, and we had to wait in turns to talk to the
-TA.
-
-While waiting for my turn, I talked with a group that just finished their
-turn. The TA didn't figure out their issue, and since I had time to kill,
-I offered to take a look. I ended up finding the bug and explained
-what they had to fix.
-
-When it was my turn, I showed my code to the TA. They didn't get the bug either!
-So I left.
-
-That's the story of how I came in with a bug, fixed someone else's bug, and
-left with the same bug, which I ended up figuring out an hour before the
-deadline.
+In college, I was working on a class project for Operating Systems. Ostensibly,
+this was a group project, but in practice I was basically doing it solo. There
+was a very strange bug in my code, so I went to TA office hours to get help.
+This was one of the final office hours before the project deadline, so we had to
+wait in line to talk to the TA.
+While waiting for my turn, I talked with a group that just finished talking to
+the TA. The TA didn't figure out the problem, and since I was stuck anyways, I
+offered to take a look. I ended up finding the exact line where it all
+unravelled. I then showed my project to the TA, who also couldn't figure it out,
+and so I left having fixed someone else's bug.
 
 \* \* \*
 {: .centered }
+
+I don't have 
 
 When debugging, my biggest strength is that I have literally no hesitation
 at chasing code all the way down the call stack.
