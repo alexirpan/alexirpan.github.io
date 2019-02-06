@@ -52,36 +52,105 @@ On Moving the Goalposts
 -------------------------------------------
 
 The way AlphaStar played its games against TLO and MaNa is not the way that a
-human plays the game.
+human plays the game. Some people are upset by this.
 
-Apologies if I've missed something, but here's my understanding of how that
+I'm reminded of the routine "Everything's Great, and Nobody's Happy". In the
+past, it was still an open question whether bots could beat pro players at all,
+with no restrictions on APM or perception of the game state. The variant of
+AlphaStar that beat MaNa does have an advantage in that it is allowed to
+perceive the entire map at once, rather than use a camera to get views of
+different parts of the map. (The model architecture does use attention layers,
+which lets the model base its decision on specific parts of the map, but there
+are subtle reasons this different from human play.)
+
+This lets the bot do things that feel superhuman. For example, in one game
+(FIND THIS), MaNa tried building Dark Templars, perpetually cloaked units that
+are great for harassing, as long as they aren't detected. The moment the DTs
+went into AlphaStar's vision, AlphaStar started building Observers.
+
+Now, humans can do this too, but even at the pro level, I'd expect some delay
+in spotting the shimmer of a cloaked unit.
+
+
+On Actions Per Minute
+-----------------------------------------------
+
+Starcraft is notorious for its high APM at pro level. I almost said APM
+requirement, but this isn't exactly true.
+
+There's a video series by Day 9 about the basics of Starcraft: Brood War,
+and although it's not the same as Starcraft 2, SOMETHING SOMETHING. The core
+idea is still the same: even at the pro level, people will not micro their units
+optimally, because doing so would detract from the macro of actually building
+more units.
+
+This leads to what's known as the economy of attention: given what APM you can
+achieve, how do you prioritize where to concentrate your APM on?
+
+As an aside, this is why players in Starcraft will often attack on several
+fronts at once - doing so deliberately overloads the attention of the opponent
+and stretches out what they can manage.
+
+Now, this being said, 
+
+Alright, so let's bring this back to AlphaStar. The current implementation does
+include APM limits, defined in three stages. GET LIMITS. You can think of this
+as matching average pro APM, medium-load pro APM, and burst pro APM.
+
+The averages for this seem reasonable with what the best pros can do, and at the
+same time, some of the micro AlphaStar does is incredible. Finetune
+control of several groups of Stalkers at once, with almost perfect focus firing
+to avoid overkilling units.
+
+I personally have no problems with this. APM isn't everything. I've read a few
+comments from people complaining that AlphaStar's APM is all 100% effective,
+whereas pro players will make unnecessary clicks that don't do anything. This
+is overlooking that AlphaStar is *making good decisions with the APM it has*.
+If APM were the only thing that SC2 AIs needed to win, they should have beat pro
+players ages ago. When we say "micro", it doesn't just mean controlling units
+such that they win the fight, it also includes decisions on whether to engage
+and disengage in the first place. Those are the sorts of decisions that i'd
+expect bots to have trouble with, because it relies on context and intuition
+about the value of different units, positioning, whether your opponents have
+reinforcements, and so on.
+
+
+on reinforcement learning and Imitation Learning
+-------------------------------------------
+
+Most of the details are still vague right now. More have been promised in a
+peer-reviewed journal article, but that's likely a few months out.
+
+Imitaiton learning is good
+
+Population based training is good at stabilizing unstable things / moving
+equilibria.
+
+
+On New Stratgies
+---------------------------------------------------
+
+Massing probes. Maybe a good strategy, maybe not? Still up in the air.
+
+
+the game
+
+apologies if i've missed something, but here's my understanding of how that
 version of the agent worked.
 
-* The game state of Starcraft 2 is fed through an API. Although the agent does
+* the game state of starcraft 2 is fed through an api. although the agent does
   not work directly from raw pixels, it does have some visual input - the
   regions of the minimap currently in vision of any units the agent has
   produced.
-(Do later).
+(do later).
 
-At some level, the agent is able to observe everything within its vision. Now,
+at some level, the agent is able to observe everything within its vision. now,
 in practice, the agent includes an attention layer that causes it to focus on
-specific parts of the game state when deciding what actions to execute. In some
+specific parts of the game state when deciding what actions to execute. in some
 view, this is similar to how a human would play the game, but it's not exactly
 the same.
 
-(This point is subtle and hard to explain.)
-
-This leads to some behaviors that feel superhuman. For example, in one game
-against MaNa, MaNa tried building Dark Templars. These units are perpetually
-cloaked, and can't be targeted unless you have a detector unit nearby. However,
-if you look closely, there is a noticeable shimmer that appears where a cloaked unit is.
-
-The moment that a cloaked unit appeared in AlphaStar's vision, it immediately
-started building an Observer. This is something that a pro could do if they
-watched their base entrances closely enough, but I wouldn't expect a human to
-notice a DT immediately.
-
-The agent also comes with some limits on its APM. The average APM of the bot is
+the agent also comes with some limits on its APM. The average APM of the bot is
 limited to that of a pro player, except with some allowances for much higher
 burst APM, to model how pros handle especially micro-intensive fights.
 
