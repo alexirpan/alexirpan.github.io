@@ -178,3 +178,41 @@ harder
 * Viewing whole map at once vs requiring camera movements
 * Bring up older Starcraft AIs?
 * 5-10 year prediction broken and discussion on that.
+
+
+Notes from the match:
+
+* Match 5 against TLO: proxy 4 gate vs proxy 4 gate
+* The top five agents from population based training are picked, where top 5
+defined as least exploitable.
+* Match against MaNa was against version of the agent wiht more trianing time
+* Claim 350 ms reaction time (but check AMA I believe the numbers quoted there
+  are different in some way)
+* Averaged 310 APM in TLO match and APM = EPM
+* worker over-saturation strats, transfer to natural when it finishes, the
+  differnece is that it does not stop worker production after the main is
+  saturated to save up money for the nat, it just keeps building
+** Theory is that this defends against harass by building redundancy
+** adopted by Mana as an expeirment
+* Protoss mirror on 1 map
+** although results on another map were not as bad as they expected.
+* camera limitation rather than full map?
+* peak of 900 APM visible, claims peaks of 1500 APM
+* when estimating screens/min (from times attention changes?), does about 30
+  screens per min (average 2 seconds per screen, seems reasonable)
+* explicit camera moving agent was of only slightly worse / comparable strength
+  according to their internal ELO estimates but ende dup playing worse due to
+  weird collapse from MaNa's harassment patterns (or something)
+* Agent architecture is 3 LSTMs, one for attention on location to look, one for
+  outcome prediction, and a 3rd for deciding what to build / upgrade. Check blog
+  post it mentions pointer nets / self-attention
+* Early game acts with about 200 APM
+** Pro players have more but this is because they are practicing keeping their
+fingers moving fast to prep for latr parts of the game
+* 16 TPUs per agent (estimate equivalent to 50 GPUs)
+* Not sure how many agents are in each population, a guess of about 30 leads to
+  about 1500 GPUs as equivalent?
+* Train time: about 3 days to train the imitation learning baseline to
+  bootstrap, then 7 days of "AlphaStar league" (population based training)
+* Estimate 200 years of SC2 expeerience
+* Is this the train time for the TLO agent or MaNa agent?
