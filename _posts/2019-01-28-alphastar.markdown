@@ -115,16 +115,49 @@ about the value of different units, positioning, whether your opponents have
 reinforcements, and so on.
 
 
-on reinforcement learning and Imitation Learning
+On Reinforcement Learning and Imitation Learning
 -------------------------------------------
 
 Most of the details are still vague right now. More have been promised in a
-peer-reviewed journal article, but that's likely a few months out.
+peer-reviewed journal article, but here are my impressions for what's out right
+now.
 
-Imitaiton learning is good
+First off, the pure imitation learning baseline did better than I expected.
+I expected the longer time horizons to be a problem for imitation learning from
+human games, because I didn't think the dataset of human games was big enough to
+learn useful game-wide behaviors. However, it seems like this wasn't an issue.
+In retrospect, I shouldn't have been surprised, given that the baseline
+supervised learning version of AlphaGo can be thought of as an imitation
+learning baseline.
 
-Population based training is good at stabilizing unstable things / moving
-equilibria.
+This seems very important for initial bootstrapping. It's true that with further
+improvements, AlphaZero was able to surpass AlphaGo without using human
+bootstrapping, but I assume getting this to work is harder than starting from a
+reasonable baseline. This is something we observed in the robot grasping
+project, learning is sped up a lot if your initial data is doing
+somewhat-reasonable things.
+
+Secondly, my suspicion is that population based training is the key to making
+the whole learning system work. I haven't tried population based training
+myself, but from what I heard, it tends to give more gains in unstable learning
+settings. I would expect Starcraft to be one of those settings, because the
+nature of the game is that some build orders counter other build orders, which
+could lead to unstable equilibria if the population of agents isn't wide enough.
+
+To put it another way, I believe the best Starcraft 2 strategy is more easily
+representable by an ensemble of agents picking somewhat different strategies,
+rather than a single agent that's trying to represent the Nash equilibrium by
+itself.
+
+
+On Training Time and Training Resources
+----------------------------------------------------
+
+My notes from the match state that the imitation learning is trained for about 3
+days, and the population-based training is then traiend for another 7 days. I
+wasn't able to track down whether this was the training time for the TLO agent,
+or the one for the MaNa agent, since they said the version that beat MaNa was
+trained for longer.
 
 
 On New Stratgies
@@ -183,9 +216,11 @@ harder
 Notes from the match:
 
 * Match 5 against TLO: proxy 4 gate vs proxy 4 gate
+not using
 * The top five agents from population based training are picked, where top 5
 defined as least exploitable.
 * Match against MaNa was against version of the agent wiht more trianing time
+done
 * Claim 350 ms reaction time (but check AMA I believe the numbers quoted there
   are different in some way)
 * Averaged 310 APM in TLO match and APM = EPM
