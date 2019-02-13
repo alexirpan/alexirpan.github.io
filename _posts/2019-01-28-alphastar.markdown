@@ -64,29 +64,37 @@ showed up at the office, they came in wearing their TeamLiquid hoodies, and were
 quickly given DeepMind hoodies to cover the TeamLiquid logo, to disguise they
 were SC2 pro players.
 
+To be fair, the question was never whether DeepMind had positive results. It was
+always going to be about how good those results would be, and on that front, I
+was surprised.
+
 
 The Aftershock
 -----------------------------------------------
 
-However, I am a bit surprised at how fast they got an agent on par with top
-players. A few months after the AlphaGo match, I got into a conversation with
+A few months after the AlphaGo match, I got into a conversation with
 someone about AGI timelines. (Because, of course, whenever ML does something
-new, people start asking about AGI.) They thought it was close and I thought it
-wasn't, and as an exercise they asked what would change my mind.
+new, there are some people who like to ask what it means for AGI.) They thought
+AGI was happening very soon, and I thought it wasn't, and as an exercise they
+asked what would change my mind.
 
 I told them that given that DeepMind was working on Starcraft 2, if they beat a
 pro player within a year, I'd have to seriously revise my assumptions on the
 pace of ML progress. I thought it would take more like five years, maybe ten.
 
-DeepMind did it in about two and a half years.
+The first win in the AlphaGo vs Lee Sedol match was on March 9, 2016, meaning it
+took DeepMind just shy of three years to do the same in Starcraft.
 
-It's something that I'll have to think about more. On one hand, this is not the
-first time AI's been shown to solve something I thought it couldn't solve yet.
-On the other hand, I made most of my AI predictions about two years ago, and
-they were all at least 5 years out. The fact that some of these predictions were
-wrong two years out doesn't actually mean anything, because I won't know which
-predictions were right until another five years have passed. It's all a waiting
-game.
+I'll have to think about whether that means I'm undercalibrated. The tricky part
+here is that the last time I took a questionnaire about AI predictions, it only
+asked about moonshot AI projects, and accordingly almost all of my guesses were
+at least 10 years in the future. Given that I took this questionnaire two years
+ago, I've yet to have any positives, but I won't be able to *observe* any
+correct guesses for at least another 8 years. It's all a waiting game.
+
+This is probably why people don't like debating with futurists that refuse to
+make short-term predictions. Luckily, I don't deal with people like that very
+often.
 
 
 The Starcraft AI Effect
@@ -95,12 +103,42 @@ The Starcraft AI Effect
 One of the running themes in machine learning is that [whenever somebody gets an AI to do something new, others immediately find a way to discount it](https://en.wikipedia.org/wiki/AI_effect).
 
 Thanks to the wonders of livestreaming and Reddit, I was able to see this live,
-and boy was that a sight to behold.
+and boy was that a sight to behold. It reminded me of the routine
+["Everything is Amazing and Nobody is Happy"](https://www.youtube.com/watch?v=kBLkX2VaQs4).
+(I understand that Louis C.K. has [a lot of baggage these days](https://en.wikipedia.org/wiki/Louis_C.K.#2017%E2%80%93present:_Sexual_misconduct_revelations_and_afterwards), but I haven't found
+another clip that expresses the right sentiment, so I'm using it anyways.)
 
-The way AlphaStar played its games against TLO and MaNa is not the way that a
-human plays the game. Some people are upset by this.
+"Oh, AlphaStar has superhuman micro. That's not fair." Sure, it isn't. The
+average actions per minute of AlphaStar is 280 APM, although this isn't the full
+picture. According to the [Reddit AMA](https://www.reddit.com/r/MachineLearning/comments/ajgzoc/we_are_oriol_vinyals_and_david_silver_from/eexs0pd/), the limitation is at most 600 APM every 5 seconds,
+400 APM every 15 seconds, and 300 APM every 60 seconds. This was down to model
+both average pro APM and burst APM, since players can often reach high peak APM
+in micro-intensive situations. During the match itself, viewers spotted that
+AlphaStar's burst APM sometimes reached 900 or even 1500 APM, far above what
+we've seen from any human. These stats are backed up by the APM chart:
+AlphaStar's average APM is smaller than MaNa's, but has a longer tail. (TLO's
+numbers are inflated due to idiosyncracies in how he plays the game. MaNa's
+numbers are more reflective of human performance.)
 
-I'm reminded of the routine "Everything's Great, and Nobody's Happy". In the
+![APM Chart](/public/alphastar/apm.png)
+{: .centered }
+
+CAPTION
+{: .centered }
+
+In the
+past, it was still an open question whether bots could beat pro players at all,
+with no restrictions on APM or perception of the game state. The variant of
+AlphaStar that beat MaNa does have an advantage in that it is allowed to
+perceive the entire map at once, rather than use a camera to get views of
+different parts of the map. (The model architecture does use attention layers,
+which lets the model base its decision on specific parts of the map, but there
+are subtle reasons this different from human play.)
+
+I would say there were two main complains
+about AlphaStar: its vision, and its micro.
+
+In the
 past, it was still an open question whether bots could beat pro players at all,
 with no restrictions on APM or perception of the game state. The variant of
 AlphaStar that beat MaNa does have an advantage in that it is allowed to
@@ -136,9 +174,7 @@ a drop on their worker line, to force their opponent to split their attention
 across the two fronts. Doing so favors the player with more units, since in the
 abscence of any micro, the person with more stuff wins.
 
-Alright, so let's bring this back to AlphaStar. The current implementation does
-include APM limits, defined in three stages. GET LIMITS. You can think of this
-as matching average pro APM, medium-load pro APM, and burst pro APM.
+You can think of this as matching average pro APM, medium-load pro APM, and burst pro APM.
 
 
 
