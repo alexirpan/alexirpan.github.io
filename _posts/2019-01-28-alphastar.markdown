@@ -55,18 +55,28 @@ about Go enough to push the results with sufficient gusto.)
 
 Starcraft 2 has had a steady stream of progress reports, and that's lessened the
 shock of the initial impact. When you know a team has been working on Starcraft
-for several years, and Demis tweets that the SC2 demonstration will be worth
-watching...well, it's hard not to expect *something* to happen. LINK TWEET
+for several years, and [Demis Hassabis tweets](https://twitter.com/demishassabis/status/1087774153975959552)
+that the SC2 demonstration will be worth watching...well, it's hard not to expect *something* to happen.
+In retrospect it's funny to hear how far they went to conceal how strong
+AlphaStar was in the days up to the event.
 
-It's funny, because according to MaNa, DeepMind went very, very far to avoid
-leaking anything about the demonstration. So much so that when TLO and MaNa
-showed up at the office, they came in wearing their TeamLiquid hoodies, and were
-quickly given DeepMind hoodies to cover the TeamLiquid logo, to disguise they
-were SC2 pro players.
+> Me [MaNa] and TLO are going to be representing TeamLiquid, right? They wanted to make
+> sure there wasn't any kind of leak about the event, or what kind of show they
+> are putting on. Around the office, we had to cover ourselves with DeepMind
+> hoodies, because me and TLO are representing TeamLiquid, with the TeamLiquid
+> hoodie and TeamLiquid T-shirt. We walk in day one
+> and the project
+> managers are like, "NOOOO, don't do that, don't spoil it, people will see!
+> Here are some DeepMind hoodies, do you have a normal T-shirt?", and me and TLO
+> are walking in with TeamLiquid. We didn't know they wanted to keep it that spoiler-free.
 
-To be fair, the question was never whether DeepMind had positive results. It was
-always going to be about how good those results would be, and on that front, I
-was surprised.
+[From MaNa livestream about his experience (starts at
+1:13:19)](https://youtu.be/zgIFoepzhIo?t=4399)
+{: .centered }
+
+To be fair, the question was never about whether DeepMind had positive results. It was
+about how strong their results were. On that front, they successfully hid their
+progress and I was surprised at how strong the agent was.
 
 
 The Aftershock
@@ -126,21 +136,17 @@ numbers are more reflective of human performance.)
 CAPTION
 {: .centered }
 
-In the
-past, it was still an open question whether bots could beat pro players at all,
-with no restrictions on APM or perception of the game state. The variant of
-AlphaStar that beat MaNa does have an advantage in that it is allowed to
-perceive the entire map at once, rather than use a camera to get views of
-different parts of the map. (The model architecture does use attention layers,
-which lets the model base its decision on specific parts of the map, but there
-are subtle reasons this different from human play.)
+Yes, I would agree that this is an advantage in favor of AlphaStar. But it's
+worth noting that before AlphaStar, it was still an open question whether bots
+could beat pro players in the first place, with no restrictions on APM. What, is
+the defeat of a pro player in any capacity at all not entertaining enough?
 
-I would say there were two main complains
-about AlphaStar: its vision, and its micro.
+Here is my guess, which could be wildly off: these criticisms are not coming
+from the belief that AlphaStar is not impressive. They are coming from the
+belief that AlphaStar is not as impressive as it was advertised to be, nor as
+impressive as what they believe other people think it is going to be.
 
-In the
-past, it was still an open question whether bots could beat pro players at all,
-with no restrictions on APM or perception of the game state. The variant of
+The variant of
 AlphaStar that beat MaNa does have an advantage in that it is allowed to
 perceive the entire map at once, rather than use a camera to get views of
 different parts of the map. (The model architecture does use attention layers,
