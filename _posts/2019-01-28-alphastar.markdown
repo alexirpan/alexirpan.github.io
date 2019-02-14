@@ -31,9 +31,6 @@ The [DeepMind blog post](https://deepmind.com/blog/alphastar-mastering-real-time
 for AlphaStar is pretty extensive, and although I will cover some of what's
 discussed there, I will not cover all of it, this is more of a companion piece.
 
-ADD THE MANA STORY THAT WAS ACTUALLY PRETTY FUNNY
-
-
 
 The Initial Impact
 -------------------------------------------
@@ -107,6 +104,28 @@ make short-term predictions. Luckily, I don't deal with people like that very
 often.
 
 
+Novel Strategies
+---------------------------------------------------
+
+AlphaStar's style, so to speak, seems to trend in the following directions.
+
+* Never stop building probes, even when your main is saturated and your natural
+  hasn't finished building yet.
+* Build lots of Stalkers and micro them to flank and harass the enemy army until
+  it's weak enough to lose to all-in engagement.
+* Use a few other units to support those Stalkers.
+
+From the minimal research I've done, none of these strategies are entirely new,
+but AlphaStar pushed theses strategies more aggresively. Players have massed
+probes in the past, but they'll often stop when the main is saturated, saving
+their minerals for the new expansion. Similarly, Stalkers are a core Protoss
+unit, but AlphaStar seems to play around its traditional counters by using
+exceptional Stalker micro.
+
+It's a bit early to tell whether humans should be copying these strategies, but
+it's exciting that it's debatable in the first place.
+
+
 The Starcraft AI Effect
 -------------------------------------------
 
@@ -133,25 +152,88 @@ numbers are more reflective of human performance.)
 ![APM Chart](/public/alphastar/apm.png)
 {: .centered }
 
-CAPTION
+[From DeepMind blog post](https://deepmind.com/blog/alphastar-mastering-real-time-strategy-game-starcraft-ii/)
 {: .centered }
 
 Yes, I would agree that this is an advantage in favor of AlphaStar. But it's
 worth noting that before AlphaStar, it was still an open question whether bots
 could beat pro players in the first place, with no restrictions on APM. What, is
-the defeat of a pro player in any capacity at all not entertaining enough?
+the defeat of a pro player in any capacity at all not cool enough? *Are you not
+entertained?*
 
-Here is my guess, which could be wildly off: these criticisms are not coming
-from the belief that AlphaStar is not impressive. They are coming from the
-belief that AlphaStar is not as impressive as it was advertised to be, nor as
-impressive as what they believe other people think it is going to be.
+AlphaStar has other advantages. It is given the raw
+state instead of the visual one, which likely makes it easier to do precise
+focus-firing of units. It is allowed to observe everything it has in vision at
+once, which is undeniably an advantage on human players. To me, this
+seems like a bigger advantage than any of the APM constraints, although I may
+be overestimating the importance of this global vision.
 
-The variant of
-AlphaStar that beat MaNa does have an advantage in that it is allowed to
-perceive the entire map at once, rather than use a camera to get views of
-different parts of the map. (The model architecture does use attention layers,
-which lets the model base its decision on specific parts of the map, but there
-are subtle reasons this different from human play.)
+Despite these obvious advantages that no human would ever have, I did not see
+that many complaints about them in Twitch Chat, compared to the ones about APM.
+Why?
+
+
+What's Up With APM?
+-----------------------------------------------------------------
+
+After thinking about the question, I have a few theories for why people care
+about APM so much.
+
+**First**, Starcraft is notorious for its high APM at the professional level.
+This started back in Brood War, where there were absurd demonstrations of how
+fast Korean pro players were playing the game.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YbpCLqryN-Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**Second**, micro is one of the flashiest and most visible StarCraft skills.
+Open any StarCraft highlight reel and you'll usually find a moment where one
+player's ridiculous micro lets them barely win a fight they should have lost.
+For many people, micro is what makes StarCraft a good game.
+
+This is to the point where many outsiders are scared off of StarCraft because
+they think that if you don't have high APM, you can't play StarCraft. You'll
+be so busy trying to get your units to do what you want that you won't have time
+to think about any of the strategy.
+
+This is wrong, and the best argument against it is the one Day[9] gave on the
+eve of the release of StarCraft: Brood War Remastered.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EP9F-AZezCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> There is this illusion that in Brood War, you need to be excellent at your
+> mechanics before you get to be able to do the strategy. There is this idea
+> that if you practice for three months, you'll have your mechanics down and
+> then get to play the strategy portion. This is totally false. [...] If you
+> watch any pro play, stuff is going wrong **all the time.** They're losing
+> track of drop ships and missing macro back at home and they have a geyser with
+> 1 dude in it and they forget to expand. Stuff's going wrong all the time,
+> because it's hard to be a commander.
+
+This isn't saying that APM isn't important. Assuming all other skills are equal,
+the player with higher APM is going to win, because they can execute things with
+more speed and precision. I'm just saying that having high APM doesn't give you
+a free win.
+
+And in fact, this should be *obvious* if you look at existing Starcraft bots,
+that have thousands of APM and yet are nowhere near pro level. If anything, I
+find it very impressive that AlphaStar is actually *making good decisions with
+the APM it has*. "Micro" involves a lot of rapid, small-scale decisions about
+whether to engage or disengage, based off context about the value of different
+units, the strength of each army's composition, and who has the better position.
+It's *hard*, and AlphaStar can do it.
+
+So yes, when I see AlphaStar microing three groups of Stalkers to simultaenously
+do hit-and-runs on MaNa's army, it's hard to see how MaNa has a chance, but I'm
+not particularly upset by it either, because I'm too busy appreciating that
+AlphaStar can perform micro of this caliber.
+
+
+
+Here is my guess, which could be wildly off: the reason people were upset about
+this is because there was an *attempt* to make AlphaStar have human limits, and
+viewers were told AlphaStar would have human limits, and then AlphaStar
+performed superhuman APM anyways.
+
 
 This lets the bot do things that feel superhuman. For example, in one game
 (FIND THIS), MaNa tried building Dark Templars, perpetually cloaked units that
@@ -160,46 +242,6 @@ went into AlphaStar's vision, AlphaStar started building Observers.
 
 Now, humans can do this too, but even at the pro level, I'd expect some delay
 in spotting the shimmer of a cloaked unit.
-
-
-On Actions Per Minute
------------------------------------------------
-
-Starcraft is notorious for its high APM at pro level. I almost said APM
-requirement, but this isn't exactly true.
-
-There's a video series by Day 9 about the basics of Starcraft: Brood War,
-and although it's not the same as Starcraft 2, SOMETHING SOMETHING. The core
-idea is still the same: even at the pro level, people will not micro their units
-optimally, because doing so would detract from the macro of actually building
-more units. This leads to something people call the economy of attention: given
-what APM you can achieve, prioritizing where to concentrate your APM is itself
-part of the game.
-For example, a player may choose to engage the opponent's main army while doing
-a drop on their worker line, to force their opponent to split their attention
-across the two fronts. Doing so favors the player with more units, since in the
-abscence of any micro, the person with more stuff wins.
-
-You can think of this as matching average pro APM, medium-load pro APM, and burst pro APM.
-
-
-
-The averages for this seem reasonable with what the best pros can do, and at the
-same time, some of the micro AlphaStar does is incredible. Finetune
-control of several groups of Stalkers at once, with almost perfect focus firing
-to avoid overkilling units.
-
-I personally have no problems with this. APM isn't everything. I've read a few
-comments from people complaining that AlphaStar's APM is all 100% effective,
-whereas pro players will make unnecessary clicks that don't do anything. This
-is overlooking that AlphaStar is *making good decisions with the APM it has*.
-If APM were the only thing that SC2 AIs needed to win, they should have beat pro
-players ages ago. When we say "micro", it doesn't just mean controlling units
-such that they win the fight, it also includes decisions on whether to engage
-and disengage in the first place. Those are the sorts of decisions that i'd
-expect bots to have trouble with, because it relies on context and intuition
-about the value of different units, positioning, whether your opponents have
-reinforcements, and so on.
 
 
 On Reinforcement Learning and Imitation Learning
@@ -252,48 +294,11 @@ in the population.
 
 
 
-On New Stratgies
----------------------------------------------------
-
-Massing probes. Maybe a good strategy, maybe not? Still up in the air.
-
-
-the game
-
-apologies if i've missed something, but here's my understanding of how that
-version of the agent worked.
-
-* the game state of starcraft 2 is fed through an api. although the agent does
-  not work directly from raw pixels, it does have some visual input - the
-  regions of the minimap currently in vision of any units the agent has
-  produced.
-(do later).
-
-at some level, the agent is able to observe everything within its vision. now,
-in practice, the agent includes an attention layer that causes it to focus on
-specific parts of the game state when deciding what actions to execute. in some
-view, this is similar to how a human would play the game, but it's not exactly
-the same.
-
-the agent also comes with some limits on its APM. The average APM of the bot is
-limited to that of a pro player, except with some allowances for much higher
-burst APM, to model how pros handle especially micro-intensive fights.
-
-Some people felt that AlphaStar was still using 
-
-
-
-
-This has made some waves.
-
 Notes
-* The APM limits, is superhuman micro a big deal or not
-* The economy of attention, link to Day-9 video, forcing high APM situations
-* Cover macro vs micro and why good micro is hard,
-** Microing assuming you continue the engagement is a mechanical thing computers
+* Microing assuming you continue the engagement is a mechanical thing computers
 could be good at, but when you add in whether to engage or not, it gets much
 harder
-** "Learning to harass"
+* "Learning to harass"
 * Pretty good to really good is a smaller step than getting something pretty
   good in the first place.
 * Citation of Observer getting built as soon as Dark Templars enter vision.
@@ -307,15 +312,10 @@ harder
 
 Notes from the match:
 
-* Match 5 against TLO: proxy 4 gate vs proxy 4 gate
-not using
 * The top five agents from population based training are picked, where top 5
 defined as least exploitable.
-* Match against MaNa was against version of the agent wiht more trianing time
-done
 * Claim 350 ms reaction time (but check AMA I believe the numbers quoted there
   are different in some way)
-* Averaged 310 APM in TLO match and APM = EPM
 * worker over-saturation strats, transfer to natural when it finishes, the
   differnece is that it does not stop worker production after the main is
   saturated to save up money for the nat, it just keeps building
@@ -324,7 +324,6 @@ done
 * Protoss mirror on 1 map
 ** although results on another map were not as bad as they expected.
 * camera limitation rather than full map?
-* peak of 900 APM visible, claims peaks of 1500 APM
 done
 * when estimating screens/min (from times attention changes?), does about 30
   screens per min (average 2 seconds per screen, seems reasonable)
