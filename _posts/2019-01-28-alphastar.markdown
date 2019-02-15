@@ -4,12 +4,6 @@ title:  "Title TBD"
 date:   2019-01-28 01:41:00 -0800
 ---
 
-Rough Goal
------------------------------------------------------------------
-
-The original blog post is actually quite complete and I want to add commentary
-on top of it, not summarize it.
-
 
 In late January, DeepMind broadcasted a demonstration of their Starcraft 2 agent
 AlphaStar. It plays Protoss v Protoss mirrors on a map used in pro play
@@ -17,19 +11,22 @@ AlphaStar. It plays Protoss v Protoss mirrors on a map used in pro play
 beat two pro players from TeamLiquid, TLO (a Zerg player) and MaNa (a Protoss player).
 
 This made waves in both the Starcraft community and ML community. I fall
-*mostly* in the ML community, since I've barely played Starcraft II and it's
-been ages since I've played Brood War. However, as someone who's lightly
-followed Brood War and early SC2 pro play, I can provide some commentary about
-what this means for machine learning, with some Starcraft context added where
-it's appropriate.
+*mostly* in the ML community, but like StarCraft as a game. I've barely played
+Starcraft II, but I played a lot of Brood War growing up, and I've
+lightly followed Brood War and SC2 pro play,
 
-In other words, if you're interested about what AlphaStar means for Starcraft,
+As such, this is a two-part post. The first is a high-level overview of how I
+feel about AlphaStar and the impact it's had on Starcraft, and the second is a
+more detailed discussion of what AlphaStar means for machine learning.
+
+In other words, if you're interested in deep dives into AlphaStar's strategy,
 you may want to read something else. I recommend [the analysis video by Artosis](https://www.youtube.com/watch?v=_YWmU-E2WFc)
 and [the commentary MaNa did over his own games](https://www.youtube.com/watch?v=zgIFoepzhIo).
 
 The [DeepMind blog post](https://deepmind.com/blog/alphastar-mastering-real-time-strategy-game-starcraft-ii/)
 for AlphaStar is pretty extensive, and although I will cover some of what's
-discussed there, I will not cover all of it, this is more of a companion piece.
+discussed there, I will not cover all of it. Please read that first, if you
+haven't already.
 
 
 The Initial Impact
@@ -188,8 +185,9 @@ about APM so much.
 This started back in Brood War, where there were absurd demonstrations of how
 fast Korean pro players were playing the game.
 
+<p class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YbpCLqryN-Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-{: .centered }
+</p>
 
 **Second**, micro is one of the flashiest and most visible StarCraft skills.
 Open any StarCraft highlight reel and you'll usually find a moment where one
@@ -204,8 +202,9 @@ to think about any of the strategy.
 This is wrong, and the best argument against it is the one Day[9] gave on the
 eve of the release of StarCraft: Brood War Remastered.
 
+<p class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EP9F-AZezCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-{: .centered }
+</p>
 
 > There is this illusion that in Brood War, you need to be excellent at your
 > mechanics before you get to be able to do the strategy. There is this idea
@@ -257,7 +256,34 @@ It's not like StarCraft is just a hill to conquer. People really like the game
 as well.
 
 
-PART 2 STARTS HERE
+*This is part 2 of my post about AlphaStar, click [here] for part 1. ADD
+BACKLINK.*
+
+
+A Quick Overview of AlphaStar's Training Setup
+-----------------------------------------------------------------
+
+AlphaStar is made of 3 sequence models, likely with some shared weights. Each
+sequence model receives the same observations, the raw game state. There are
+then three sets of outputs: where to click, what to build/train, and an outcome
+predictor.
+
+LINKS?
+
+This model is trained in a two stage process. First, it is trained using
+imitation learning on human games provided by Blizzard. My notes from the match
+say that it takes 3 days to train the imitation learning baselines.
+
+The models are then further trained using IMPALA and population-based training,
+plus some other tricks I'll get to later. This is called
+the AlphaStar League. Each agent in the population is trained with 16
+TPUv3s, which are estimated to be equivalent to about 50 GPUs each. The
+population-based training was run for 14 days. After 14 days, they computed the
+Nash equilibrium of the population, and for the showmatch, selected the top 5
+least exploitable agents, using a different one in every game.
+
+All agents were trained in Protoss vs Protoss mirrors on a fixed map, Catalyst
+LE.
 
 
 On Reinforcement Learning and Imitation Learning
@@ -317,9 +343,6 @@ in the population.
 
 Notes from the match:
 
-* The top five agents from population based training are picked, where top 5
-defined as least exploitable.
-* Protoss mirror on 1 map
 * although results on another map were not as bad as they expected.
 * when estimating screens/min (from times attention changes?), does about 30
   screens per min (average 2 seconds per screen, seems reasonable)
@@ -329,9 +352,6 @@ defined as least exploitable.
 * Agent architecture is 3 LSTMs, one for attention on location to look, one for
   outcome prediction, and a 3rd for deciding what to build / upgrade. Check blog
   post it mentions pointer nets / self-attention
-* Early game acts with about 200 APM
-** Pro players have more but this is because they are practicing keeping their
-fingers moving fast to prep for latr parts of the game
 * 16 TPUs per agent (estimate equivalent to 50 GPUs)
 * Not sure how many agents are in each population, a guess of about 30 leads to
   about 1500 GPUs as equivalent?
