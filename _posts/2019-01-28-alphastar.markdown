@@ -165,8 +165,13 @@ AlphaStar has other advantages. It is given the raw
 state instead of the visual one, which likely makes it easier to do precise
 focus-firing of units. It is allowed to observe everything it has in vision at
 once, which is undeniably an advantage on human players. To me, this
-seems like a bigger advantage than any of the APM constraints, although I may
-be overestimating the importance of this global vision.
+seems like a bigger advantage than any of the APM constraints. In one of the
+games, MaNa built Dark Templars. Normally, a human won't know they're there
+unless they're looking at the right part of the map and see the shimmer for a
+cloaked unit. AlphaStar knows there are Dark Templars the moment they walk into
+AlphaStar's vision, because it's receiving raw game state and is observing
+everything in vision at once. There's literally no surprise factor.
+AlphaStar just immediately starts building Observers to counter the DTs.
 
 Despite these obvious advantages that no human would ever have, I did not see
 that many complaints about them in Twitch Chat, compared to the ones about APM.
@@ -184,6 +189,7 @@ This started back in Brood War, where there were absurd demonstrations of how
 fast Korean pro players were playing the game.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YbpCLqryN-Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{: .centered }
 
 **Second**, micro is one of the flashiest and most visible StarCraft skills.
 Open any StarCraft highlight reel and you'll usually find a moment where one
@@ -199,6 +205,7 @@ This is wrong, and the best argument against it is the one Day[9] gave on the
 eve of the release of StarCraft: Brood War Remastered.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EP9F-AZezCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{: .centered }
 
 > There is this illusion that in Brood War, you need to be excellent at your
 > mechanics before you get to be able to do the strategy. There is this idea
@@ -222,26 +229,35 @@ whether to engage or disengage, based off context about the value of different
 units, the strength of each army's composition, and who has the better position.
 It's *hard*, and AlphaStar can do it.
 
-So yes, when I see AlphaStar microing three groups of Stalkers to simultaenously
-do hit-and-runs on MaNa's army, it's hard to see how MaNa has a chance, but I'm
-not particularly upset by it either, because I'm too busy appreciating that
+When I see AlphaStar microing three groups of Stalkers to simultaenously
+do hit-and-runs on MaNa's army, it's hard to see how MaNa has a chance. But I'm
+not particularly upset by it either, since I'm too busy appreciating that
 AlphaStar can perform micro of this caliber.
 
+That leads to the **third** theory: they broke the implicit contract. First, the
+viewers are told that AlphaStar has restrictions to act with human APM. Saying
+this adds a bunch of implications: this will be a fair fight, AlphaStar will
+not do things that humans can't do. Then, AlphaStar does something superhuman
+with its micro. Now the contract is broken, the match doesn't seem fair, and who
+would believe they watched a fair match? We saw a similar thing when the OpenAI
+Dota team told people that OpenAI Five
+had human reaction times of 250 ms, and then auto-interrupted all of Axe's
+Blink-Call attempts.
+
+Again, no one cared when bots had thousands of APM. Perhaps because they weren't
+beating pros in the first place, but I think it's also because there is no
+attempt to claim it's human-like in any ways.
+
+For what it's worth, DeepMind is free to do what they want, but I suspect they
+will try to address the concerns that people have brought up. Let me put it this
+way: one of the faces of the project is Oriol Vinyals. Oriol [used to be the top
+Brood War player in Spain, then worked on a Starcraft AI at UC Berkeley, then
+eventually made his way to DeepMind to work on AlphaStar](https://www.technologyreview.com/lists/innovators-under-35/2016/pioneer/oriol-vinyals/).
+It's not like StarCraft is just a hill to conquer. People really like the game
+as well.
 
 
-Here is my guess, which could be wildly off: the reason people were upset about
-this is because there was an *attempt* to make AlphaStar have human limits, and
-viewers were told AlphaStar would have human limits, and then AlphaStar
-performed superhuman APM anyways.
-
-
-This lets the bot do things that feel superhuman. For example, in one game
-(FIND THIS), MaNa tried building Dark Templars, perpetually cloaked units that
-are great for harassing, as long as they aren't detected. The moment the DTs
-went into AlphaStar's vision, AlphaStar started building Observers.
-
-Now, humans can do this too, but even at the pro level, I'd expect some delay
-in spotting the shimmer of a cloaked unit.
+PART 2 STARTS HERE
 
 
 On Reinforcement Learning and Imitation Learning
@@ -294,37 +310,17 @@ in the population.
 
 
 
-Notes
-* Microing assuming you continue the engagement is a mechanical thing computers
-could be good at, but when you add in whether to engage or not, it gets much
-harder
-* "Learning to harass"
 * Pretty good to really good is a smaller step than getting something pretty
   good in the first place.
 * Citation of Observer getting built as soon as Dark Templars enter vision.
-** Artosis commentary over games?
-* Macro decisions of constant probe building (vs stopping probes to save up
-  minerals for Nexus)
-* Viewing whole map at once vs requiring camera movements
-* Bring up older Starcraft AIs?
-* 5-10 year prediction broken and discussion on that.
 
 
 Notes from the match:
 
 * The top five agents from population based training are picked, where top 5
 defined as least exploitable.
-* Claim 350 ms reaction time (but check AMA I believe the numbers quoted there
-  are different in some way)
-* worker over-saturation strats, transfer to natural when it finishes, the
-  differnece is that it does not stop worker production after the main is
-  saturated to save up money for the nat, it just keeps building
-** Theory is that this defends against harass by building redundancy
-** adopted by Mana as an expeirment
 * Protoss mirror on 1 map
-** although results on another map were not as bad as they expected.
-* camera limitation rather than full map?
-done
+* although results on another map were not as bad as they expected.
 * when estimating screens/min (from times attention changes?), does about 30
   screens per min (average 2 seconds per screen, seems reasonable)
 * explicit camera moving agent was of only slightly worse / comparable strength
