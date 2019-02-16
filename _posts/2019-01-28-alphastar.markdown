@@ -115,9 +115,10 @@ AlphaStar's style, so to speak, seems to trend in the following directions.
 From the minimal research I've done, none of these strategies are entirely new,
 but AlphaStar pushed theses strategies more aggresively. Players have massed
 probes in the past, but they'll often stop when the main is saturated, saving
-their minerals for the new expansion. Similarly, Stalkers are a core Protoss
-unit, but AlphaStar seems to play around its traditional counters by using
-exceptional Stalker micro.
+their minerals for the new expansion. Similarly, Stalkers have always been a
+core Protoss unit, but AlphaStar seems to play around its traditional counters
+by using exceptional Stalker micro to force wins before too many Immortals can
+get online.
 
 It's a bit early to tell whether humans should be copying these strategies, but
 it's exciting that it's debatable in the first place.
@@ -263,6 +264,9 @@ BACKLINK.*
 A Quick Overview of AlphaStar's Training Setup
 -----------------------------------------------------------------
 
+Most of the details are vague right now, but more have been promised in an
+upcoming journal article. This is based off of what's been revealed so far.
+
 AlphaStar is made of 3 sequence models, likely with some shared weights. Each
 sequence model receives the same observations, the raw game state. There are
 then three sets of outputs: where to click, what to build/train, and an outcome
@@ -278,7 +282,10 @@ The models are then further trained using IMPALA and population-based training,
 plus some other tricks I'll get to later. This is called
 the AlphaStar League. Each agent in the population is trained with 16
 TPUv3s, which are estimated to be equivalent to about 50 GPUs each. The
-population-based training was run for 14 days. After 14 days, they computed the
+population-based training was run for 14 days. I couldn't find any references
+for the size of the population, or how many agents were trained at once.
+
+After 14 days, they computed the
 Nash equilibrium of the population, and for the showmatch, selected the top 5
 least exploitable agents, using a different one in every game.
 
@@ -286,76 +293,151 @@ All agents were trained in Protoss vs Protoss mirrors on a fixed map, Catalyst
 LE.
 
 
-On Reinforcement Learning and Imitation Learning
--------------------------------------------
+Takeaways
+-------------------------------------------------------
 
-Most of the details are still vague right now. More have been promised in a
-peer-reviewed journal article, but here are my impressions for what's out right
-now.
+1. Imitation Learning Did Better Than I Thought
+=========================================================
 
-First off, the pure imitation learning baseline did better than I expected.
-I expected the longer time horizons to be a problem for imitation learning from
-human games, because I didn't think the dataset of human games was big enough to
-learn useful game-wide behaviors. However, it seems like this wasn't an issue.
-In retrospect, I shouldn't have been surprised, given that the baseline
-supervised learning version of AlphaGo can be thought of as an imitation
-learning baseline.
+I have always assumed that when comparing imitation learning to reinforcement
+learning, imitation learning performs better when given fewer samples, but has a
+lower ceiling in performance. Additionally, it can have problems dealing with random
+perturbations. I'm not sure if there's a formal name for this. I've always
+called it the [DAgger](https://www.ri.cmu.edu/pub_files/2011/4/Ross-AISTATS11-NoRegret.pdf) problem, because that's the paper that everyone cites when
+talking about this problem.
 
-This seems very important for initial bootstrapping. It's true that with further
-improvements, AlphaZero was able to surpass AlphaGo without using human
-bootstrapping, but I assume getting this to work is harder than starting from a
-reasonable baseline. This is something we observed in the robot grasping
-project, learning is sped up a lot if your initial data is doing
-somewhat-reasonable things.
+Intuitively, the argument goes like this: suppose you train an agent by doing
+supervised learning on the actions a human does. This is called *behavior
+cloning*, and is a common baseline in the literature. Let's say you train the
+model and it has some error bounded by $$\epsilon$$ at each state $$s$$.
+Then the worst case bound in performance is much larger than $$\epsilon$$ due to
+compounding errors. The learned model deviates from the expert a bit, visits a
+state where we have less expert supervision, deviates to a further state where
+we have even less supervision, and soon the agent is doing nonsense.
 
-Secondly, my suspicion is that population based training is the key to making
-the whole learning system work. I haven't tried population based training
-myself, but from what I heard, it tends to give more gains in unstable learning
-settings. I would expect Starcraft to be one of those settings, because the
-nature of the game is that some build orders counter other build orders, which
-could lead to unstable equilibria if the population of agents isn't wide enough.
+The temporal nature of the problem means that the longer your episode is, the
+more likely it is that you enter this negative feedback loop, and therefore, we
+expect long-horizon tasks to be harder for imitation learning. A StarCraft game
+is long enough that I didn't expect imitation learning to work at all.
+And yet, imitation learning was good enough to do reasonable things, reaching
+the level of a Gold player.
 
-To put it another way, I believe the best Starcraft 2 strategy is more easily
-representable by an ensemble of agents picking somewhat different strategies,
-rather than a single agent that's trying to represent the Nash equilibrium by
-itself.
+In the first version of AlphaGo, the agent was bootstrapped by doing behavioral
+cloning on human games, and that was able to play competitive games against top
+Go engines of the time. But Go is a game with at most 200-250 moves, whereas
+StarCraft has thousands of decisions points. I assumed that you
+would need a massive dataset of human games to get past this, more than Blizzard
+had on hand. Turns out you don't.
+
+My guess is that this is tied into another trend: despite the problems with
+behavioral cloning, it's actually a pretty strong baseline. I don't do imitation
+learning myself, but that's what I've been hearing. I suspect that's because
+many of behavioral cloning's problems can be covered up with better data
+collection. Here's the pseudocode for DAgger's resolution to the DAgger problem.
+
+![DAgger code](/public/alphastar/dagger.png)
+{: .centered }
+
+Given expert policy $$\pi^*$$ and current policy $$\hat{\pi}_i$$, we iteratively
+build a dataset $$\mathcal{D}$$ by collecting data from a mixture of the expert
+$$\pi^*$$ and current policy $$\hat{\pi}_i$$. We iteratively alternate training
+policies and collecting data, and by always collecting with a mixture of expert
+data and on-policy data, we can ensure that our dataset will always cover parts
+of state-space that are close enough to our current policy.
+
+But importantly, the final optimization loop is still based on maximizing the
+likelihood of actions in your dataset. The only change is on how the data is
+generated. So, if you have a very large dataset, from a wide variety of experts
+(like a corpus of StarCraft games from anyone who's played the game), then it's
+possible that your data already has enough variety to let your agent learn how
+to recover from the majority of incorrect decisions it could make.
+
+This is something I've anecdotally noticed in my own work. Adding a small amount
+of exploration noise to a handcoded policy at collection time can give you
+significant gains at training time.
+
+The fact that imitation learning gives a good baseline seems important for
+bootstrapping learning. It's true that AlphaZero was able to avoid this, but the
+AlphaGo version with imitation learning bootstrapping was developed first. I
+suspect AlphaZero-based techniques are trickier to get working in the first
+place.
 
 
-On Training Time and Training Resources
-----------------------------------------------------
+2. Population Based Training is Worth Keeping an Eye On
+================================================================
 
-REWORD
+StarCraft II is inherently a game based around strategies and
+counter-strategies. My feeling is that in DoTA 2, a heavy portion of your
+strategy is decided in the drafting phase. Certain hero compositions will only
+work best for certain styles of play. Because of this, once the draft is done,
+each team has an idea of what to expect.
 
-My notes from the match state that the imitation learning is trained for about 3
-days, and the population-based training is then traiend for another 14 days.
+However, Starcraft II starts out completely unobserved. Builds can go from heavy
+early aggression to greedy expansions for long-term payoff. It seems more likely
+that StarCraft could devolve into unstable equilibria if you try to represent
+the space of strategies within a single agent.
 
-Each agent is trained using 16 TPUs, which is estimated to be about the same as
-50 GPUs. But it's worth noting this then gets multiplied by the number of agents
-in the population.
+Population-based training does a lot to avoid this problem. A simple [self-play
+agent "gets stuck", but a population-based approach reaches Grandmaster
+level](https://twitter.com/OriolVinyalsML/status/1094670648042012673). One of
+the intuitive traps in self-play is that if you only play against the most
+recent version of yourself, then you could endlessly walk around a
+rock-paper-scissors loop, instead of discovering the trick that beats rock,
+paper, *and* scissors.
+
+I haven't tried population based training myself, but from what I heard,
+it tends to give more gains in unstable learning settings, and it seems likely that
+StarCraft is one of those games with several viable strategies. If you expect
+the game's Nash equilibria to turn into an ensemble of strategies, it seems way
+easier to maintain an ensemble of agents.
 
 
+3. Once RL Does Okay, It's Not Too Hard to Make It Great
+===============================================================
+
+In general, big RL projects seem to fall into two buckets.
+
+1. They don't work at all.
+2. They work and become very good with sufficient compute, which may be very
+   large due to diminishing returns.
+
+I haven't seen many in-betweens where things start to work, and then hit a
+disappointly low plateau.
+
+One model that would explain this is that algorithmic and training tricks are
+all about improving the rate of change for an RL agent. Early on, everything
+fails, but with enough tuning, the gradient of improvement starts pointing
+upwards enough that the agent can actually learn something. From there, it's not
+like the agent forgets how to learn, it's just a question of whether there are
+things that are hard to learn or not. This means the gap between blank-slate and
+pretty-good is actually much larger than the gap between pretty-good and
+pro-level. The first requires finding what makes learning work. The second just
+needs more data and training time.
+
+The agent that beat TLO on his offrace was trained for about 7 days. Giving
+it another 7 days was enough to beat MaNa on his main race. Sure, double the
+compute is a lot of compute, but the first success took almost three years of
+research time and the second success took seven days. (On a similar front,
+[OpenAI's DoTA 2 agent hit 80% win rate against the model they demoed at The
+International, with 10 days of training. Wonder where it's at now...](https://twitter.com/openai/status/1037765547427954688?lang=en).
 
 
-* Pretty good to really good is a smaller step than getting something pretty
-  good in the first place.
-* Citation of Observer getting built as soon as Dark Templars enter vision.
+4. We Should Be Tossing More Techniques Together
+=============================================================================
+
+One thing I found surprising about the AlphaStar architecture is how much
+*stuff* goes into it.
+
+FILL OUT
 
 
 Notes from the match:
 
 * although results on another map were not as bad as they expected.
-* when estimating screens/min (from times attention changes?), does about 30
-  screens per min (average 2 seconds per screen, seems reasonable)
 * explicit camera moving agent was of only slightly worse / comparable strength
   according to their internal ELO estimates but ende dup playing worse due to
   weird collapse from MaNa's harassment patterns (or something)
 * Agent architecture is 3 LSTMs, one for attention on location to look, one for
   outcome prediction, and a 3rd for deciding what to build / upgrade. Check blog
   post it mentions pointer nets / self-attention
-* 16 TPUs per agent (estimate equivalent to 50 GPUs)
-* Not sure how many agents are in each population, a guess of about 30 leads to
-  about 1500 GPUs as equivalent?
-* Train time: about 3 days to train the imitation learning baseline to
-  bootstrap, then 7 days of "AlphaStar league" (population based training)
 * Estimate 200 years of SC2 expeerience
-* Is this the train time for the TLO agent or MaNa agent?
