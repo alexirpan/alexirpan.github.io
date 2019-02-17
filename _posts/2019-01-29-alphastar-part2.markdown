@@ -5,22 +5,22 @@ date:   2019-01-29 01:41:00 -0800
 ---
 
 
-*This is part 2 of my post about AlphaStar, click [here] for part 1. ADD
-BACKLINK.*
+*This is part 2 of my post about AlphaStar, focused on the machine learning
+side. See [part 1]({% post_url 2019-01-28-alphastar %}) for high-level
+impressions.*
 
 
 A Quick Overview of AlphaStar's Training Setup
 -----------------------------------------------------------------
 
+It's impossible to talk about AlphaStar without briefly covering how it works.
 Most of the details are vague right now, but more have been promised in an
-upcoming journal article. This is based off of what's been revealed so far.
+upcoming journal article. This is based off of what's public so far.
 
 AlphaStar is made of 3 sequence models, likely with some shared weights. Each
 sequence model receives the same observations, the raw game state. There are
 then three sets of outputs: where to click, what to build/train, and an outcome
 predictor.
-
-LINKS?
 
 This model is trained in a two stage process. First, it is trained using
 imitation learning on human games provided by Blizzard. My notes from the match
@@ -28,10 +28,21 @@ say that it takes 3 days to train the imitation learning baselines.
 
 The models are then further trained using IMPALA and population-based training,
 plus some other tricks I'll get to later. This is called
-the AlphaStar League. Each agent in the population is trained with 16
+the AlphaStar League. Within the population, each agent is given a slightly
+different reward function, some of which involve learning to beat specific agents
+in the league. Each agent in the population is trained with 16
 TPUv3s, which are estimated to be equivalent to about 50 GPUs each. The
-population-based training was run for 14 days. I couldn't find any references
-for the size of the population, or how many agents were trained at once.
+population-based training was run for 14 days.
+
+![AlphaStar MMR Chart](/public/alphastar/alphastar_mmr.png)
+{: .centered }
+
+(From original post)
+{: .centered }
+
+I couldn't find any references for the population size, or how many agents are
+trained simulatenously. I would guess "big" and "a lot", respectively. Now
+multiply that by 16 TPUs each and you get a sense of the scale involved.
 
 After 14 days, they computed the
 Nash equilibrium of the population, and for the showmatch, selected the top 5
@@ -44,38 +55,40 @@ LE.
 Takeaways
 -------------------------------------------------------
 
-1. Imitation Learning Did Better Than I Thought
-=========================================================
+## 1. Imitation Learning Did Better Than I Thought
 
 I have always assumed that when comparing imitation learning to reinforcement
-learning, imitation learning performs better when given fewer samples, but has a
-lower ceiling in performance. Additionally, it can have problems dealing with random
-perturbations. I'm not sure if there's a formal name for this. I've always
+learning, imitation learning performs better when given fewer samples, but
+reinforcement learning wins in the long run. We saw that play out here.
+
+One of the problems with imitation learning is the way errors can compound over
+time. I'm not sure if there's a formal name for this. I've always
 called it the [DAgger](https://www.ri.cmu.edu/pub_files/2011/4/Ross-AISTATS11-NoRegret.pdf) problem, because that's the paper that everyone cites when
-talking about this problem.
+talking about this problem ([Ross et al, AISTATS 2011](https://www.ri.cmu.edu/pub_files/2011/4/Ross-AISTATS11-NoRegret.pdf)).
 
 Intuitively, the argument goes like this: suppose you train an agent by doing
 supervised learning on the actions a human does. This is called *behavior
 cloning*, and is a common baseline in the literature. Let's say you train the
 model and it has some error bounded by $$\epsilon$$ at each state $$s$$.
-Then the worst case bound in performance is much larger than $$\epsilon$$ due to
-compounding errors. The learned model deviates from the expert a bit, visits a
-state where we have less expert supervision, deviates to a further state where
-we have even less supervision, and soon the agent is doing nonsense.
+Then the worst case bound in performance is $$O(T\epsilon)$$, where $$T$$ is
+the episode length, due to compounding errors. The learned model deviates from
+the expert a bit, visiting a state where we have less expert supervision. Due to
+having less supervision, it makes another bad move, deviating to a further
+state with even less supervision. Soon, the agent is doing nonsense. In short,
+mistakes are often not recoverable in imitation learning.
 
 The temporal nature of the problem means that the longer your episode is, the
 more likely it is that you enter this negative feedback loop, and therefore, we
 expect long-horizon tasks to be harder for imitation learning. A StarCraft game
 is long enough that I didn't expect imitation learning to work at all.
-And yet, imitation learning was good enough to do reasonable things, reaching
-the level of a Gold player.
+And yet, imitation learning was good enough to reach the level of a Gold player.
 
-In the first version of AlphaGo, the agent was bootstrapped by doing behavioral
-cloning on human games, and that was able to play competitive games against top
+The first version of AlphaGo was bootstrapped by doing behavioral
+cloning on human games, and that version was competitive against top open-source
 Go engines of the time. But Go is a game with at most 200-250 moves, whereas
 StarCraft has thousands of decisions points. I assumed that you
 would need a massive dataset of human games to get past this, more than Blizzard
-had on hand. Turns out you don't.
+could provide. I'm surprised this wasn't the case.
 
 My guess is that this is tied into another trend: despite the problems with
 behavioral cloning, it's actually a pretty strong baseline. I don't do imitation
@@ -96,14 +109,13 @@ of state-space that are close enough to our current policy.
 But importantly, the final optimization loop is still based on maximizing the
 likelihood of actions in your dataset. The only change is on how the data is
 generated. So, if you have a very large dataset, from a wide variety of experts
-(like a corpus of StarCraft games from anyone who's played the game), then it's
+(like, say, a corpus of StarCraft games from anyone who's ever played the game), then it's
 possible that your data already has enough variety to let your agent learn how
 to recover from the majority of incorrect decisions it could make.
 
 This is something I've anecdotally noticed in my own work. Adding a small amount
 of exploration noise to a handcoded policy at collection time can give you
 significant gains at training time.
-
 The fact that imitation learning gives a good baseline seems important for
 bootstrapping learning. It's true that AlphaZero was able to avoid this, but the
 AlphaGo version with imitation learning bootstrapping was developed first. I
@@ -111,8 +123,7 @@ suspect AlphaZero-based techniques are trickier to get working in the first
 place.
 
 
-2. Population Based Training is Worth Keeping an Eye On
-================================================================
+## 2. Population Based Training is Worth Keeping an Eye On
 
 StarCraft II is inherently a game based around strategies and
 counter-strategies. My feeling is that in DoTA 2, a heavy portion of your
@@ -140,8 +151,7 @@ the game's Nash equilibria to turn into an ensemble of strategies, it seems way
 easier to maintain an ensemble of agents.
 
 
-3. Once RL Does Okay, It's Not Too Hard to Make It Great
-===============================================================
+## 3. Once RL Does Okay, It's Not Too Hard to Make It Great
 
 In general, big RL projects seem to fall into two buckets.
 
@@ -170,8 +180,7 @@ research time and the second success took seven days. (On a similar front,
 International, with 10 days of training. Wonder where it's at now...](https://twitter.com/openai/status/1037765547427954688?lang=en).
 
 
-4. We Should Be Tossing More Techniques Together
-=============================================================================
+## 4. We Should Be Tossing More Techniques Together
 
 One thing I found surprising about the AlphaStar architecture is how much
 *stuff* goes into it. Here's a list of papers referenced for the model
@@ -261,7 +270,7 @@ something new on an unsolved problem, finding the 10% of useful ideas with
 trial-and-error and using scale to punch through any barriers that only need
 scale to solve.
 
-Maybe we're already in that endgame. If so, I don't know how to feel about it.
+Maybe we're already in that endgame. If so, I don't know how I feel about that.
 
 
 Predictions
