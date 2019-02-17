@@ -426,18 +426,111 @@ International, with 10 days of training. Wonder where it's at now...](https://tw
 =============================================================================
 
 One thing I found surprising about the AlphaStar architecture is how much
-*stuff* goes into it.
+*stuff* goes into it. Here's a list of papers referenced for the model
+architecture. I've added links to everything that's non-standard.
 
-FILL OUT
+* A transformer is used to do self-attention ([Vaswani et al, NIPS 2017](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf)).
+* This self-attention is used to add inductive biases to the architecture for
+  learning relations between objects ([Zambaldi et al, to be presented at ICLR
+  2019](https://openreview.net/forum?id=HkxaFoC9KQ)).
+* The self-attention layers are combined with an LSTM.
+* The policy is auto-regressive, meaning it predicts each action dimension
+  conditionally on each previous action dimension.
+* This also uses a pointer network ([Vinyals et al, NIPS 2015](https://papers.nips.cc/paper/5866-pointer-networks.pdf)),
+  which more easily supports variable length outputs for variable length inputs.
+
+![PointerNet diagram](/public/alphastar/pointer.png)
+{: .centered }
+
+Diagram of PointerNet from original paper. A conventional RNN-based seq2seq model
+condtionally predicts output from the latent code. A PointerNet outputs
+attention vectors over its inputs.
+{: .centered }
+
+  I'm not sure why this is helpful. My current guess is that because StarCraft
+  involves controlling many units in concert, and the number of units changes
+  over the game, a pointer network is a more natural network architecture.
+* The model then uses a centralized value baseline, linking a counterfactual
+  policy gradient algorithm for multi-agent learning ([Foerster et al, AAAI
+  2018](https://www.cs.ox.ac.uk/people/shimon.whiteson/pubs/foersteraaai18.pdf)).
+
+![COMA diagram](/public/alphastar/coma.png)
+{: .centered }
+
+Diagram of counterfactual multi-agent (COMA) architecture, from original paper,
+{: .centered }
+
+  Roughly, instead of having a separate actor-critic pair for each agent, all
+  agents share the same critic and get per-agent advantage estimates by
+  marginalizing over the appropriate action.
+
+This is just for the model architecture. There are a few more references for the
+training itself.
+
+* It's trained with IMPALA ([Espeholt et al, 2018](https://arxiv.org/pdf/1802.01561.pdf)).
+* It also uses experience replay.
+* And self-imitation learning ([Oh et al, ICML 2018](http://proceedings.mlr.press/v80/oh18b/oh18b.pdf)).
+* And policy distillation in some way ([Rusu et al, ICLR 2016](https://arxiv.org/pdf/1511.06295.pdf)).
+* Which is trained with population-based training ([Jaderberg et al, 2018](https://arxiv.org/abs/1807.01281)).
+* and a reference to Game-Theoretic Approaches to Multiagent RL ([Lanctot et al,
+  NIPS 2017](https://arxiv.org/pdf/1711.00832.pdf)). I'm not sure where this is
+  used. Possibly for adding new agents to the AlphaStar league that are tuned to
+  learn the best response to existing agents?
+
+Many of these techniques were developed just in the last year. Based on the
+number of self-DeepMind citations, it's possible much of this was developed just
+for the StarCraft project.
+
+When developing ML research for a paper, there are heavy incentives for
+changing as little as possible, and concentrating all risk on your proposed
+improvement. There are many good reasons for this. It's good science to change
+just one variable at a time. By sticking closer to existing work, it's easier to
+find previously run baselines, and it's easier for other to validate your work.
+However, this means that there are good reasons *not* to incorporate prior
+state-of-the-art techniques into your research project. The risk added makes the
+cost-benefit analysis unfavorable.
+
+This is a shame, because with how prolific the machine learning field is, there
+isn't a lot of cross-paper pollination. I've always liked the Rainbow DQN paper
+([Hessel et al, AAAI 2018](https://arxiv.org/abs/1710.02298)),
+just because it asked what would happen if you tossed everything together.
+AlphaStar feels like something similar: several promising ideas that combine
+into a significantly stronger state-of-the-art.
+
+These sorts of papers are really useful for verifying what techniques are worth
+using and which ones aren't, because distributed evaluation across tasks and
+settings is really the only way we get confidence that a paper is actually
+useful. But if the incentives discouraging adding more risk to research
+projects, where does that leave us? It is 100% certain that the existing pieces
+of machine learning can do something we think it can't, and the only blocker is
+that no one's figured out how the Lego blocks go together.
+
+I wonder if the endgame is that research will turn into a two-class structure.
+One class of research will be bottom-up, studying well-known baselines, without
+a lot of crossover with other papers, proposing many ideas of which 90% will be
+useless. The other class will be top-down, done for the sake of achieving
+something new on an unsolved problem, finding the 10% of useful ideas with
+trial-and-error and using scale to punch through any barriers that only need
+scale to solve.
+
+Maybe we're already in that endgame. If so, I don't know how to feel about it.
 
 
-Notes from the match:
+Predictions
+------------------------------------------------------------------------------
 
-* although results on another map were not as bad as they expected.
-* explicit camera moving agent was of only slightly worse / comparable strength
-  according to their internal ELO estimates but ende dup playing worse due to
-  weird collapse from MaNa's harassment patterns (or something)
-* Agent architecture is 3 LSTMs, one for attention on location to look, one for
-  outcome prediction, and a 3rd for deciding what to build / upgrade. Check blog
-  post it mentions pointer nets / self-attention
-* Estimate 200 years of SC2 expeerience
+The results trained so far were only on a single map and a single PvP match. I
+see no reason why a similar technique wouldn't generalize to other maps or races
+if given more time. The [Reddit AMA](https://www.reddit.com/r/MachineLearning/comments/ajgzoc/we_are_oriol_vinyals_and_david_silver_from/eexs0pd/) suggests
+that AlphaStar already does okay on maps it wasn't trained on.
+
+I've read some theories that claimed DeepMind started at Terran, but moved to
+Protoss because their agents would keep lifting up their buildings early on in
+training. That seems like a tricky problem that's entirely fixable.
+
+If no further restrictions are added to AlphaStar, I think within a year they'll
+be able to beat any pro, in any matchup, on any set of maps in a best-of-five
+series. If restrictions
+are added to make AlphaStar's gameplay look more human, it's less certain, it
+would depend on what those restrictions were. Overall, nothing I saw made me
+believe we've seen the limit of what AlphaStar can do.
