@@ -18,7 +18,7 @@ Most of the details are vague right now, but more have been promised in an
 upcoming journal article. This is based off of what's public so far.
 
 AlphaStar is made of 3 sequence models, likely with some shared weights. Each
-sequence model receives the same observations, the raw game state. There are
+sequence model receives the same observations: the raw game state. There are
 then three sets of outputs: where to click, what to build/train, and an outcome
 predictor.
 
@@ -65,17 +65,37 @@ One of the problems with imitation learning is the way errors can compound over
 time. I'm not sure if there's a formal name for this. I've always
 called it the [DAgger](https://www.ri.cmu.edu/pub_files/2011/4/Ross-AISTATS11-NoRegret.pdf) problem, because that's the paper that everyone cites when
 talking about this problem ([Ross et al, AISTATS 2011](https://www.ri.cmu.edu/pub_files/2011/4/Ross-AISTATS11-NoRegret.pdf)).
+% DK - I think it's just called "the compounding error problem" or "the problem of compounding errors".  If you have a good/short name, this is a good place to propose it ;)
 
+% DK - I think this whole PP needs to be reworked.
 Intuitively, the argument goes like this: suppose you train an agent by doing
-supervised learning on the actions a human does. This is called *behavior
+supervised learning on the actions a human does. This is called *behavioral
 cloning*, and is a common baseline in the literature. Let's say you train the
 model and it has some error bounded by $$\epsilon$$ at each state $$s$$.
-Then the worst case bound in performance is $$O(T\epsilon)$$, where $$T$$ is
+Then the worst case bound in 
+% per-time-step performance?
+performance is $$O(T^2 \epsilon)$$,
+
+% DK - From DAGGER: 
+"In particular,
+a classifier that makes a mistake with probability $\eps$ under
+the distribution of states/observations encountered by the
+expert can make as many as $T^2 \eps$ mistakes in expectation
+over $T$-steps under the distribution of states the classifier
+itself induces (Ross and Bagnell, 2010)."
+% DK - I always thought of this in a more continuous sense, e.g. imagine a robot that should head North, but instead heads 1 degree East of North: it will go in a big circle, leading error to grow as fast as distance does... Errors could also grow exponentially, if the transition dynamics are exponential-ish (this is what we see in vanilla RNN feedback loops).≈
+
+where $$T$$ is
 the episode length, due to compounding errors. The learned model deviates from
-the expert a bit, visiting a state where we have less expert supervision. Due to
+the expert a bit, visiting a state where we have less expert supervision. 
+% DK - It's not necessarily just less, it could be none (if we're talking about such supervision existing in the dataset).
+% DK - If we're talking about at test time, then there's no supervision.
+Due to
 having less supervision, it makes another bad move, deviating to a further
 state with even less supervision. Soon, the agent is doing nonsense. In short,
 mistakes are often not recoverable in imitation learning.
+% DK - irrecoverable could mean "without more supervision" or "even with perfect supervision", so, e.g. if a robot makes a slight misstep (deviating slightly from expert) and falls off a cliff, then more supervision won't help.  This is what I think of as a classic "irrecoverable mistake"... so I think it's actually a separate issue from compounding errors.
+
 
 The temporal nature of the problem means that the longer your episode is, the
 more likely it is that you enter this negative feedback loop, and therefore, we
@@ -121,6 +141,7 @@ bootstrapping learning. It's true that AlphaZero was able to avoid this, but the
 AlphaGo version with imitation learning bootstrapping was developed first. I
 suspect AlphaZero-based techniques are trickier to get working in the first
 place.
+% DK - well... they have to solve a credit assignment problem that imitation learning doesn't have to solve.  This problem *also* gets harder with longer horizon.
 
 
 ## 2. Population Based Training is Worth Keeping an Eye On
@@ -163,7 +184,9 @@ I haven't seen many in-betweens where things start to work, and then hit a
 disappointly low plateau.
 
 One model that would explain this is that algorithmic and training tricks are
-all about improving the rate of change for an RL agent. Early on, everything
+all about improving the rate of change for an RL agent. 
+% DK - I found this first sentence, and the rest of the PP a bit unclear, and I disagree with the content a bit as well (I think).  You make it sounds like meta-learning and I think that's incorrect; I think it's just a matter of needing to know where to explore, and getting enough data to start figuring that out.  Meta-learning in RL looks like planning in belief space, and mainstream algos don't do that.
+Early on, everything
 fails, but with enough tuning, the gradient of improvement starts pointing
 upwards enough that the agent can actually learn something. From there, it's not
 like the agent forgets how to learn, it's just a question of whether there are
@@ -205,8 +228,9 @@ attention vectors over its inputs.
 {: .centered }
 
   I'm not sure why this is helpful. My current guess is that because StarCraft
-  involves controlling many units in concert, and the number of units changes
-  over the game, a pointer network is a more natural network architecture.
+  involves   
+% DK - repeatedly selecting which unit/building to control, and the number of units changes
+  over the game, it is more natural to use a pointer network to select units/buildings (as opposed to, e.g. a classifier).
 * The model then uses a centralized value baseline, linking a counterfactual
   policy gradient algorithm for multi-agent learning ([Foerster et al, AAAI
   2018](https://www.cs.ox.ac.uk/people/shimon.whiteson/pubs/foersteraaai18.pdf)).
@@ -261,6 +285,7 @@ useful. But if the incentives discouraging adding more risk to research
 projects, where does that leave us? It is 100% certain that the existing pieces
 of machine learning can do something we think it can't, and the only blocker is
 that no one's figured out how the Lego blocks go together.
+% DK - I found this last sentnce a bit unclear / lacking justification/reasoning.
 
 I wonder if the endgame is that research will turn into a two-class structure.
 One class of research will be bottom-up, studying well-known baselines, without
@@ -269,6 +294,7 @@ useless. The other class will be top-down, done for the sake of achieving
 something new on an unsolved problem, finding the 10% of useful ideas with
 trial-and-error and using scale to punch through any barriers that only need
 scale to solve.
+% DK - We can't use trial and error to find which ideas work, because it's combinatorial search unless we assume that different techniques contribute linearly.  Doing so is not totally wrong, but will miss some breakthroughs.  
 
 Maybe we're already in that endgame. If so, I don't know how I feel about that.
 
@@ -291,3 +317,5 @@ series. If restrictions
 are added to make AlphaStar's gameplay look more human, it's less certain, it
 would depend on what those restrictions were. Overall, nothing I saw made me
 believe we've seen the limit of what AlphaStar can do.
+% DK - I think it's pretty essential to discuss what they did(n't) do RE making gameplay human-like.  In particular, IIUC, they didn't do a very good/thorough job of controlling APM, and this means the AI is probably super-human at micro for "unfair" reasons.  I would devote a whole section to this topic, but even if you don't you should at least explain what is(n't) human like about the current restrictions, or at least reference some discussion of it!
+
