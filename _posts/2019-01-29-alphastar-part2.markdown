@@ -15,10 +15,10 @@ A Quick Overview of AlphaStar's Training Setup
 
 It's impossible to talk about AlphaStar without briefly covering how it works.
 Most of the details are vague right now, but more have been promised in an
-upcoming journal article. This is based off of what's public so far.
+upcoming journal article. This summary is based off of what's public so far.
 
 AlphaStar is made of 3 sequence models, likely with some shared weights. Each
-sequence model receives the same observations, the raw game state. There are
+sequence model receives the same observations: the raw game state. There are
 then three sets of outputs: where to click, what to build/train, and an outcome
 predictor.
 
@@ -67,7 +67,7 @@ called it the [DAgger](https://www.ri.cmu.edu/pub_files/2011/4/Ross-AISTATS11-No
 talking about this problem ([Ross et al, AISTATS 2011](https://www.ri.cmu.edu/pub_files/2011/4/Ross-AISTATS11-NoRegret.pdf)).
 
 Intuitively, the argument goes like this: suppose you train an agent by doing
-supervised learning on the actions a human does. This is called *behavior
+supervised learning on the actions a human does. This is called *behavioral
 cloning*, and is a common baseline in the literature. Let's say you train the
 model and it has some error bounded by $$\epsilon$$ at each state $$s$$.
 Then the worst case bound in performance is $$O(T\epsilon)$$, where $$T$$ is
@@ -106,21 +106,24 @@ policies and collecting data, and by always collecting with a mixture of expert
 data and on-policy data, we can ensure that our dataset will always cover parts
 of state-space that are close enough to our current policy.
 
-But importantly, the final optimization loop is still based on maximizing the
+But importantly, the core optimization loop (the "train classifier" line)
+is still based on maximizing the
 likelihood of actions in your dataset. The only change is on how the data is
 generated. So, if you have a very large dataset, from a wide variety of experts
 (like, say, a corpus of StarCraft games from anyone who's ever played the game), then it's
 possible that your data already has enough variety to let your agent learn how
 to recover from the majority of incorrect decisions it could make.
 
-This is something I've anecdotally noticed in my own work. Adding a small amount
-of exploration noise to a handcoded policy at collection time can give you
-significant gains at training time.
+This is something I've anecdotally noticed in my own work. When collecting
+[robot grasping data](https://ai.googleblog.com/2018/06/scalable-deep-reinforcement-learning.html),
+we found that datasets collected with small amounts of exploration noise led to
+significantly stronger policies than datasets without it.
+
 The fact that imitation learning gives a good baseline seems important for
 bootstrapping learning. It's true that AlphaZero was able to avoid this, but the
-AlphaGo version with imitation learning bootstrapping was developed first. I
-suspect AlphaZero-based techniques are trickier to get working in the first
-place.
+AlphaGo version with imitation learning bootstrapping was developed first. There
+usually aren't reasons to discard warm-starting from a good base policy, unless
+you're deliberately doing it as a research challenge.
 
 
 ## 2. Population Based Training is Worth Keeping an Eye On
@@ -164,10 +167,12 @@ disappointly low plateau.
 
 One model that would explain this is that algorithmic and training tricks are
 all about improving the rate of change for an RL agent. Early on, everything
-fails, but with enough tuning, the gradient of improvement starts pointing
-upwards enough that the agent can actually learn something. From there, it's not
-like the agent forgets how to learn, it's just a question of whether there are
-things that are hard to learn or not. This means the gap between blank-slate and
+fails because the learning signal is so weak that nothing happens. With enough tuning,
+the gradient of improvement starts pointing upwards enough that the agent can
+actually learn something. From there, it's not
+like the agent forgets how to learn, it's just a question of whether the things
+it needs to learn are hard or not.
+This means the gap between blank-slate and
 pretty-good is actually much larger than the gap between pretty-good and
 pro-level. The first requires finding what makes learning work. The second just
 needs more data and training time.
@@ -235,8 +240,11 @@ training itself.
   learn the best response to existing agents?
 
 Many of these techniques were developed just in the last year. Based on the
-number of self-DeepMind citations, it's possible much of this was developed just
-for the StarCraft project.
+number of self-DeepMind citations, and how often those papers cite results on
+the StarCraft II Learning Environment, it's possible much of this was developed
+specifically for the StarCraft project.
+
+(Paragraph below earlier in post?)
 
 When developing ML research for a paper, there are heavy incentives for
 changing as little as possible, and concentrating all risk on your proposed
