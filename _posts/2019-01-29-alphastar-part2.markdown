@@ -257,7 +257,7 @@ into a significantly stronger state-of-the-art.
 These sorts of papers are really useful for verifying what techniques are worth
 using and which ones aren't, because distributed evaluation across tasks and
 settings is really the only way we get confidence that a paper is actually
-useful. But if the incentives discouraging adding more risk to research
+useful. But if the incentives discourage adding more risk to research
 projects, where does that leave us? It is 100% certain that the existing pieces
 of machine learning can do something we think it can't, and the only blocker is
 that no one's figured out how the Lego blocks go together.
@@ -291,3 +291,15 @@ series. If restrictions
 are added to make AlphaStar's gameplay look more human, it's less certain, it
 would depend on what those restrictions were. Overall, nothing I saw made me
 believe we've seen the limit of what AlphaStar can do.
+
+*Thanks to the following people for reading drafts of this post:
+Tom Brown,
+Jared Quincy Davis,
+Peter Gao,
+David Krueger,
+Bai Li,
+Sherjil Ozair,
+Rohin Shah,
+Mimee Xu,
+and everyone else who preferred staying anonymous.*
+

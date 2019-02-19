@@ -43,7 +43,7 @@ For this reason, it hasn't made as big an impact on me as OpenAI's
 The key difference isn't how impressive the results were, it was how surprising
 it was to hear about them. No one knew DeepMind was looking at Go, or OpenAI was
 looking at DotA 2, until they were officially announced.
-Even for AlphaGo, DeepMind had publish a paper on Go evaluation
+Even for AlphaGo, DeepMind published a paper on Go evaluation
 over a year before the AlphaGo Nature paper ([Maddison et al, ICLR 2015](https://arxiv.org/abs/1412.6564)).
 It was on the horizon if you saw the right signs (see [my post on AlphaGo]({% post_url 2016-01-27-deepmind-go %}) if curious).
 
@@ -100,7 +100,7 @@ at least 10 years in the future. Therefore, even if my guesses were right, I
 won't be able to observe there were right for at least another 8 years.
 It's all a waiting game.
 
-This is probably why people don't like debating with futurists only make
+This is probably why people don't like debating with futurists who only make
 long-term predictions. Luckily, I don't deal with people like that very
 often.
 
