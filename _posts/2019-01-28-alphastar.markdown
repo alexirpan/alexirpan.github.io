@@ -87,17 +87,18 @@ asked what would change my mind.
 
 I told them that given that DeepMind was working on StarCraft II, if they beat a
 pro player within a year, I'd have to seriously revise my assumptions on the
-pace of ML progress. I thought it would take more like five years, maybe ten.
+pace of ML progress. I thought it would take five to ten years.
 
 The first win in the AlphaGo vs Lee Sedol match was on March 9, 2016, and the
 MaNa match was announced January 24, 2019. It took DeepMind just shy of three
 years to do it.
 
-I'll have to think about what that means for my calibraiton. The tricky part
-here is that I last took a AI predictions questionnaire two years ago, and it
-only asked about moonshot AI projects. Accordingly, almost all of my guesses were
-at least 10 years in the future. Therefore, even if my guesses were right, I
-won't be able to observe there were right for at least another 8 years.
+I'll have to think about what that means for my calibration. It's tricky,
+because
+the last AI predictions questionnaire I took only asked about
+moonshot AI projects. Accordingly, almost all of my guesses were
+at least 10 years in the future. Therefore, even if many guesses were right, I
+won't be able to observe they were right until 10 years have passed.
 It's all a waiting game.
 
 This is probably why people don't like debating with futurists who only make
@@ -126,6 +127,9 @@ by using exceptional Stalker micro to force early wins through a [timing push](h
 
 It's a bit early to tell whether humans should be copying these strategies, but
 it's exciting that it's debatable in the first place.
+
+
+TOUCH ON LEARNED UNIT COMPOSITIONS
 
 
 The StarCraft AI Effect
@@ -254,7 +258,7 @@ Now the contract is broken. The match doesn't seem fair.
 Soon, it evolves. The match *wasn't* fair. "Oh, it's just microing."
 We saw a similar thing in the OpenAI Five showcase. The DotA team said that
 OpenAI Five had 250ms reaction times, within human limits. One of the humans
-picked Axe, aiming for Blink-Call engages. OpenAI Five would stunlock every
+picked Axe, aiming for Blink-Call engages. OpenAI Five would insta-Hex every
 time as soon as they blinked within range, completely negating that strategy.
 We would never expect humans to do this consistently, and now the match isn't
 fair, and people start discounting the results.

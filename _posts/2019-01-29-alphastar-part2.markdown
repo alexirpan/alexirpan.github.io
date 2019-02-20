@@ -118,8 +118,9 @@ But importantly, the core optimization loop (the "train classifier" line)
 is still based on maximizing the
 likelihood of actions in your dataset. The only change is on how the data is
 generated. So, if you have a very large dataset, from a wide variety of experts
+of varying skill levels
 (like, say, a corpus of StarCraft games from anyone who's ever played the game), then it's
-possible that your data already has enough variety to let your agent learn how
+possible that your data already has enough variation to let your agent learn how
 to recover from several of the incorrect decisions it could make.
 
 This is something I've anecdotally noticed in my own work. When collecting
@@ -159,7 +160,7 @@ I haven't tried population based training myself, but from what I heard,
 it tends to give more gains in unstable learning settings, and it seems likely that
 StarCraft is one of those games with several viable strategies. If you expect
 the game's Nash equilibria to turn into an ensemble of strategies, it seems way
-easier to maintain an ensemble of agents.
+easier to maintain an ensemble of agents, since you get a free inductive prior.
 
 
 ## 3. Once RL Does Okay, It's Not Too Hard to Make It Great
@@ -201,6 +202,8 @@ One thing I found surprising about the AlphaStar architecture is how much
 *stuff* goes into it. Here's a list of papers referenced for the model
 architecture. I've added links to everything that's non-standard.
 
+(INDENT FIXES HERE?)
+
 * A transformer is used to do self-attention ([Vaswani et al, NIPS 2017](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf)).
 * This self-attention is used to add inductive biases to the architecture for
   learning relations between objects ([Zambaldi et al, to be presented at ICLR
@@ -219,9 +222,10 @@ condtionally predicts output from the latent code. A PointerNet outputs
 attention vectors over its inputs.
 {: .centered }
 
-  I'm not sure why this is helpful. My current guess is that because StarCraft
+  I'm not sure why this is helpful. My guess is that StarCraft
   involves controlling many units in concert, and the number of units changes
-  over the game, a pointer network is a more natural network architecture.
+  over the game, making a pointer network a more natural network architecture.
+
 * The model then uses a centralized value baseline, linking a counterfactual
   policy gradient algorithm for multi-agent learning ([Foerster et al, AAAI
   2018](https://www.cs.ox.ac.uk/people/shimon.whiteson/pubs/foersteraaai18.pdf)).
@@ -253,8 +257,6 @@ Many of these techniques were developed just in the last year. Based on the
 number of self-DeepMind citations, and how often those papers cite results on
 the StarCraft II Learning Environment, it's possible much of this was developed
 specifically for the StarCraft project.
-
-(Paragraph below earlier in post?)
 
 When developing ML research for a paper, there are heavy incentives for
 changing as little as possible, and concentrating all risk on your proposed
@@ -296,12 +298,22 @@ Predictions
 
 The results trained so far were only on a single map and a single PvP match. I
 see no reason why a similar technique wouldn't generalize to other maps or races
-if given more time. The [Reddit AMA](https://www.reddit.com/r/MachineLearning/comments/ajgzoc/we_are_oriol_vinyals_and_david_silver_from/eexs0pd/) suggests
-that AlphaStar already does okay on maps it wasn't trained on.
+if given more time. The [Reddit AMA](https://www.reddit.com/r/MachineLearning/comments/ajgzoc/we_are_oriol_vinyals_and_david_silver_from/eexs0pd/) says
+that AlphaStar already does okay on maps it wasn't trained on, suggesting the
+model has learned some core, generalizable features of StarCraft. It seems
+natural that it could learn more.
 
 I've read some theories that claimed DeepMind started at Terran, but moved to
 Protoss because their agents would keep lifting up their buildings early on in
 training. That seems like a tricky problem that's entirely fixable.
+
+One thing a few friends have mentioned is that they'd like to see extended games
+of a single AlphaStar agent against a pro, rather than picking a different agent
+every game. This would test whether a pro can quickly learn to exploit that
+agent, and whether the agent adapts its strategy based on its opponent's
+strategy. I'd like to see this too, but it seems like a strictly harder problem
+than the current ensemble method, and I don't see reasons for DeepMind to
+switch off the ensemble.
 
 If no further restrictions are added to AlphaStar, I think within a year they'll
 be able to beat any pro, in any matchup, on any set of maps in a best-of-five
