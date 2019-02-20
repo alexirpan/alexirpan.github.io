@@ -68,18 +68,26 @@ talking about this problem ([Ross et al, AISTATS 2011](https://www.ri.cmu.edu/pu
 
 Intuitively, the argument goes like this: suppose you train an agent by doing
 supervised learning on the actions a human does. This is called *behavioral
-cloning*, and is a common baseline in the literature. Let's say you train the
-model and it has some error bounded by $$\epsilon$$ at each state $$s$$.
-Then the worst case bound in performance is $$O(T\epsilon)$$, where $$T$$ is
-the episode length, due to compounding errors. The learned model deviates from
-the expert a bit, visiting a state where we have less expert supervision. Due to
-having less supervision, it makes another bad move, deviating to a further
-state with even less supervision. Soon, the agent is doing nonsense. In short,
-mistakes are often not recoverable in imitation learning.
+cloning*, and is a common baseline in the literature. Let's say you train a
+model to imitate your expert. At $$t=0$$, it acts with small error
+$$\epsilon_0$$. That's fine. This carries it to state that's modelled less well,
+since the expert visits it less often. Now at $$t=1$$, it acts with slightly
+larger error $$\epsilon_1$$, reaching a state even further from expert
+supervision. This is more troubling. At $$t=2$$, we get a larger error $$\epsilon_2$$, then
+an even larger $$\epsilon_3$$, and so on. As the errors compound over time, the
+agent reaches states very far from expert behavior, and soon the agent is doing
+nonsense. This problem means mistakes in imitation learning often aren't recoverable.
 
 The temporal nature of the problem means that the longer your episode is, the
-more likely it is that you enter this negative feedback loop, and therefore, we
-expect long-horizon tasks to be harder for imitation learning. A StarCraft game
+more likely it is that you enter this negative feedback loop, and the worse
+you'll be if you do. You can prove
+that if the expected loss each timestep is $$\epsilon$$, then the worst-case
+bound over the episode is $$O(T^2\epsilon)$$, and for certain loss functions
+this worst-case bound is tight.
+
+Due to growing quadratically in $$T$$, we expect long-horizon tasks to be harder
+for imitation learning.
+A StarCraft game
 is long enough that I didn't expect imitation learning to work at all.
 And yet, imitation learning was good enough to reach the level of a Gold player.
 
@@ -112,7 +120,7 @@ likelihood of actions in your dataset. The only change is on how the data is
 generated. So, if you have a very large dataset, from a wide variety of experts
 (like, say, a corpus of StarCraft games from anyone who's ever played the game), then it's
 possible that your data already has enough variety to let your agent learn how
-to recover from the majority of incorrect decisions it could make.
+to recover from several of the incorrect decisions it could make.
 
 This is something I've anecdotally noticed in my own work. When collecting
 [robot grasping data](https://ai.googleblog.com/2018/06/scalable-deep-reinforcement-learning.html),
@@ -164,6 +172,8 @@ In general, big RL projects seem to fall into two buckets.
 
 I haven't seen many in-betweens where things start to work, and then hit a
 disappointly low plateau.
+
+REWORK BELOW
 
 One model that would explain this is that algorithmic and training tricks are
 all about improving the rate of change for an RL agent. Early on, everything
@@ -266,9 +276,9 @@ These sorts of papers are really useful for verifying what techniques are worth
 using and which ones aren't, because distributed evaluation across tasks and
 settings is really the only way we get confidence that a paper is actually
 useful. But if the incentives discourage adding more risk to research
-projects, where does that leave us? It is 100% certain that the existing pieces
+projects, where does that leave us? It is incredibly certain that the existing pieces
 of machine learning can do something we think it can't, and the only blocker is
-that no one's figured out how the Lego blocks go together.
+that no one's tried the right combination of techniques.
 
 I wonder if the endgame is that research will turn into a two-class structure.
 One class of research will be bottom-up, studying well-known baselines, without
