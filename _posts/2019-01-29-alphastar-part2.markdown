@@ -23,10 +23,10 @@ then three sets of outputs: where to click, what to build/train, and an outcome
 predictor.
 
 This model is trained in a two stage process. First, it is trained using
-imitation learning on human games provided by Blizzard. My notes from the match
-say that it takes 3 days to train the imitation learning baselines.
+[imitation learning](https://sites.google.com/view/icml2018-imitation-learning/) on human games provided by Blizzard. My notes from the match
+say that it takes 3 days to train the imitation learning baseline.
 
-The models are then further trained using IMPALA and population-based training,
+The models are then further trained using [IMPALA](https://arxiv.org/abs/1802.01561) and [population-based training](https://arxiv.org/abs/1807.01281),
 plus some other tricks I'll get to later. This is called
 the AlphaStar League. Within the population, each agent is given a slightly
 different reward function, some of which involve learning to beat specific agents
@@ -296,31 +296,73 @@ Maybe we're already in that endgame. If so, I don't know how I feel about that.
 Predictions
 ------------------------------------------------------------------------------
 
-The results trained so far were only on a single map and a single PvP match. I
+In 2016, shortly after the AlphaGo vs Lee Sedol match, I got into a conversation with
+someone about AGI timelines. (Because, of course, whenever ML does something
+new, some people will immediately debate what it means for AGI.) They thought
+AGI was happening very soon. I thought it wasn't, and as an exercise they
+asked what would change my mind.
+
+I told them that given that DeepMind was working on StarCraft II, if they beat a
+pro player within a year, I'd have to seriously revise my assumptions on the
+pace of ML progress. I thought it would take five to ten years.
+
+The first win in the AlphaGo vs Lee Sedol match was on March 9, 2016, and the
+MaNa match was announced January 24, 2019. It took DeepMind just shy of three
+years to do it.
+
+The last time I took an AI predictions questionnaire, it only asked about
+moonshot AI projects. Accordingly, almost all of my guesses were
+at least 10 years in the future. None of what they asked has happened yet, so
+it's unclear to me if I'm poorly calibrated on moonshots or not - I won't be able
+to know for sure until 10 years have passed!
+
+This is probably why people don't like debating with futurists who only make
+long-term predictions. Luckily, I don't deal with people like that very
+often.
+
+To try to avoid this problem with AlphaStar, let me make some one-year
+predictions.
+
+**If no restrictions are added besides no global camera, I think within a year
+AlphaStar will be able to beat any pro, in any matchup, on any set of maps in a best-of-five
+series.**
+
+So far, AlphaStar only uses a single map and a single PvP match. I
 see no reason why a similar technique wouldn't generalize to other maps or races
 if given more time. The [Reddit AMA](https://www.reddit.com/r/MachineLearning/comments/ajgzoc/we_are_oriol_vinyals_and_david_silver_from/eexs0pd/) says
 that AlphaStar already does okay on maps it wasn't trained on, suggesting the
-model has learned some core, generalizable features of StarCraft. It seems
-natural that it could learn more.
+model can learn core, generalizable features of StarCraft.
 
-I've read some theories that claimed DeepMind started at Terran, but moved to
+Other races are also definitively on DeepMind's roadmap. I've read some theories
+that claimed DeepMind started at Terran, but moved to
 Protoss because their agents would keep lifting up their buildings early on in
-training. That seems like a tricky problem that's entirely fixable.
+training. That could be tricky, but doesn't sound impossible.
+
+The final showmatch against MaNa did expose a weakness where AlphaStar didn't
+know how to deal with drops, wasting time moving its army back and forth across
+the map. Now that this problem is a known quantity, I expect it to get resolved
+by the next showmatch.
+
+If restrictions are added to make AlphaStar's gameplay look more human, I'm less
+certain what will happen.
+It would depend on what the added restrictions were. The most likely restriction is one
+on burst APM. Let's say a cap of 700 burst APM, as that seems roughly in line with MaNa's
+numbers. **If a 700 burst APM restriction is added, it's less likely
+AlphaStar will be that good in a year, but it's still at least over 50%**.
+My suspicion is that existing strategies will falter with tighter APM limits. I also
+suspect that with enough time, population-based training will find strategies
+that are still effective.
 
 One thing a few friends have mentioned is that they'd like to see extended games
 of a single AlphaStar agent against a pro, rather than picking a different agent
 every game. This would test whether a pro can quickly learn to exploit that
 agent, and whether the agent adapts its strategy based on its opponent's
 strategy. I'd like to see this too, but it seems like a strictly harder problem
-than the current ensemble method, and I don't see reasons for DeepMind to
-switch off the ensemble.
+than using a different agent from the ensemble for each game, and I don't see reasons
+for DeepMind to switch off the ensemble. I predict we won't see any changes on
+this front.
 
-If no further restrictions are added to AlphaStar, I think within a year they'll
-be able to beat any pro, in any matchup, on any set of maps in a best-of-five
-series. If restrictions
-are added to make AlphaStar's gameplay look more human, it's less certain, it
-would depend on what those restrictions were. Overall, nothing I saw made me
-believe we've seen the limit of what AlphaStar can do.
+Overall, nothing I saw made me believe we've seen the limit of what AlphaStar can do.
 
 *Thanks to the following people for reading drafts of this post:
 Tom Brown,
