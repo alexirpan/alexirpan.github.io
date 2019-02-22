@@ -7,3 +7,4 @@ _site
 .log
 # Sometimes things crash
 *.exe.stackdump
+feedback
