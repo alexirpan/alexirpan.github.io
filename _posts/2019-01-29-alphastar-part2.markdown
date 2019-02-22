@@ -5,9 +5,9 @@ date:   2019-01-29 01:41:00 -0800
 ---
 
 
-*This is part 2 of my post about AlphaStar, focused on the machine learning
-side. See [part 1]({% post_url 2019-01-28-alphastar %}) for high-level
-impressions.*
+*This is part 2 of my post about AlphaStar, which is
+focused on the machine learning implications.
+Click [here]({% post_url 2019-01-28-alphastar %}) for part 1.
 
 
 A Quick Overview of AlphaStar's Training Setup
@@ -17,20 +17,20 @@ It's impossible to talk about AlphaStar without briefly covering how it works.
 Most of the details are vague right now, but more have been promised in an
 upcoming journal article. This summary is based off of what's public so far.
 
-AlphaStar is made of 3 sequence models, likely with some shared weights. Each
+AlphaStar is made of 3 sequence models that likely share some weights. Each
 sequence model receives the same observations: the raw game state. There are
-then three sets of outputs: where to click, what to build/train, and an outcome
+then three sets of outputs: where to click, what to build/train, and an reward
 predictor.
 
 This model is trained in a two stage process. First, it is trained using
 [imitation learning](https://sites.google.com/view/icml2018-imitation-learning/) on human games provided by Blizzard. My notes from the match
-say that it takes 3 days to train the imitation learning baseline.
+say it takes 3 days to train the imitation learning baseline.
 
 The models are then further trained using [IMPALA](https://arxiv.org/abs/1802.01561) and [population-based training](https://arxiv.org/abs/1807.01281),
 plus some other tricks I'll get to later. This is called
 the AlphaStar League. Within the population, each agent is given a slightly
-different reward function, some of which involve learning to beat specific agents
-in the league. Each agent in the population is trained with 16
+different reward function, some of which include rewards for exploiting other
+specific agents in the league. Each agent in the population is trained with 16
 TPUv3s, which are estimated to be equivalent to about 50 GPUs each. The
 population-based training was run for 14 days.
 
@@ -41,7 +41,7 @@ population-based training was run for 14 days.
 {: .centered }
 
 I couldn't find any references for the population size, or how many agents are
-trained simulatenously. I would guess "big" and "a lot", respectively. Now
+trained simultaneously. I would guess "big" and "a lot", respectively. Now
 multiply that by 16 TPUs each and you get a sense of the scale involved.
 
 After 14 days, they computed the
@@ -68,17 +68,17 @@ talking about this problem ([Ross et al, AISTATS 2011](https://www.ri.cmu.edu/pu
 
 Intuitively, the argument goes like this: suppose you train an agent by doing
 supervised learning on the actions a human does. This is called *behavioral
-cloning*, and is a common baseline in the literature. Let's say you train a
-model to imitate your expert. At $$t=0$$, it acts with small error
+cloning*, and is a common baseline in the literature. At $$t=0$$, your model acts with small error
 $$\epsilon_0$$. That's fine. This carries it to state that's modelled less well,
-since the expert visits it less often. Now at $$t=1$$, it acts with slightly
-larger error $$\epsilon_1$$, reaching a state even further from expert
-supervision. This is more troubling. At $$t=2$$, we get a larger error $$\epsilon_2$$, then
-an even larger $$\epsilon_3$$, and so on. As the errors compound over time, the
-agent reaches states very far from expert behavior, and soon the agent is doing
-nonsense. This problem means mistakes in imitation learning often aren't recoverable.
+since the expert visited it less often. Now at $$t=1$$, it acts with slightly
+larger error $$\epsilon_1$$. This is more troubling, as we're in a state with even
+less expert supervision. At $$t=2$$, we get a larger error $$\epsilon_2$$, at
+$$t=3$$ an even larger $$\epsilon_3$$, and so on. As the errors compound over time, the
+agent goes through states very far from expert behavior, and because we don't have
+labels for these states, the agent is soon doing nonsense.
 
-The temporal nature of the problem means that the longer your episode is, the
+This problem means mistakes in imitation learning often aren't recoverable,
+and the temporal nature of the problem means that the longer your episode is, the
 more likely it is that you enter this negative feedback loop, and the worse
 you'll be if you do. You can prove
 that if the expected loss each timestep is $$\epsilon$$, then the worst-case
@@ -111,13 +111,13 @@ Given expert policy $$\pi^*$$ and current policy $$\hat{\pi}_i$$, we iteratively
 build a dataset $$\mathcal{D}$$ by collecting data from a mixture of the expert
 $$\pi^*$$ and current policy $$\hat{\pi}_i$$. We iteratively alternate training
 policies and collecting data, and by always collecting with a mixture of expert
-data and on-policy data, we can ensure that our dataset will always cover parts
-of state-space that are close enough to our current policy.
+data and on-policy data, we can ensure that our dataset will always include both
+expert states and states close to ones our current policy would visit.
 
 But importantly, the core optimization loop (the "train classifier" line)
 is still based on maximizing the
 likelihood of actions in your dataset. The only change is on how the data is
-generated. So, if you have a very large dataset, from a wide variety of experts
+generated. If you have a very large dataset, from a wide variety of experts
 of varying skill levels
 (like, say, a corpus of StarCraft games from anyone who's ever played the game), then it's
 possible that your data already has enough variation to let your agent learn how
@@ -129,13 +129,13 @@ we found that datasets collected with small amounts of exploration noise led to
 significantly stronger policies than datasets without it.
 
 The fact that imitation learning gives a good baseline seems important for
-bootstrapping learning. It's true that AlphaZero was able to avoid this, but the
-AlphaGo version with imitation learning bootstrapping was developed first. There
+bootstrapping learning. It's true that AlphaZero was able to avoid this, but
+AlphaGo with imitation learning bootstrapping was developed first. There
 usually aren't reasons to discard warm-starting from a good base policy, unless
 you're deliberately doing it as a research challenge.
 
 
-## 2. Population Based Training is Worth Keeping an Eye On
+## 2. Population Based Training is Worth Watching
 
 StarCraft II is inherently a game based around strategies and
 counter-strategies. My feeling is that in DoTA 2, a heavy portion of your
@@ -159,11 +159,11 @@ paper, *and* scissors.
 I haven't tried population based training myself, but from what I heard,
 it tends to give more gains in unstable learning settings, and it seems likely that
 StarCraft is one of those games with several viable strategies. If you expect
-the game's Nash equilibria to turn into an ensemble of strategies, it seems way
+the game's Nash equilibrium to turn into an ensemble of strategies, it seems way
 easier to maintain an ensemble of agents, since you get a free inductive prior.
 
 
-## 3. Once RL Does Okay, It's Not Too Hard to Make It Great
+## 3. Once RL Does Okay, Making It Great Is Easier
 
 In general, big RL projects seem to fall into two buckets.
 
@@ -172,17 +172,20 @@ In general, big RL projects seem to fall into two buckets.
    large due to diminishing returns.
 
 I haven't seen many in-betweens where things start to work, and then hit a
-disappointly low plateau.
-
-REWORK BELOW
+disappointingly low plateau.
 
 One model that would explain this is that algorithmic and training tricks are
-all about improving the rate of change for an RL agent. Early on, everything
-fails because the learning signal is so weak that nothing happens. With enough tuning,
-the gradient of improvement starts pointing upwards enough that the agent can
-actually learn something. From there, it's not
-like the agent forgets how to learn, it's just a question of whether the things
-it needs to learn are hard or not.
+all about adding constant multipliers to how quickly your RL agent can learn new
+strategies. Early in a project, everything fails, because the learning signal is
+so weak that nothing happens.
+With enough tuning, the multipliers become large enough for agents to show signs
+of life. From there, it's not like the agent ever forgets how to learn. It's always
+capable of learning. It's just a question of whether the things needed for the
+next level of play are hard to learn or not.
+
+Humans tend to pick up games easily, then spend forever mastering them. RL seems
+to have the opposite problem - they pick up games slowly, but then master them
+with relative ease.
 This means the gap between blank-slate and
 pretty-good is actually much larger than the gap between pretty-good and
 pro-level. The first requires finding what makes learning work. The second just
@@ -191,54 +194,53 @@ needs more data and training time.
 The agent that beat TLO on his offrace was trained for about 7 days. Giving
 it another 7 days was enough to beat MaNa on his main race. Sure, double the
 compute is a lot of compute, but the first success took almost three years of
-research time and the second success took seven days. (On a similar front,
-[OpenAI's DoTA 2 agent hit 80% win rate against the model they demoed at The
-International, with 10 days of training. Wonder where it's at now...](https://twitter.com/openai/status/1037765547427954688?lang=en).
+research time and the second success took seven days. Similarly, although
+OpenAI's DotA 2 agent lost against a pro team,
+[they were able to beat their old agent 80% of the time with 10 dats of
+training. Wonder where it's at now...](https://twitter.com/openai/status/1037765547427954688?lang=en)
 
 
-## 4. We Should Be Tossing More Techniques Together
+## 4. We Should Be Tossing Techniques Together More Often
 
 One thing I found surprising about the AlphaStar architecture is how much
 *stuff* goes into it. Here's a list of papers referenced for the model
 architecture. I've added links to everything that's non-standard.
 
-(INDENT FIXES HERE?)
-
-* A transformer is used to do self-attention ([Vaswani et al, NIPS 2017](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf)).
+* A transformer is used to do self-attention ([Vaswani et al, NeurIPS 2017](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf)).
 * This self-attention is used to add inductive biases to the architecture for
   learning relations between objects ([Zambaldi et al, to be presented at ICLR
   2019](https://openreview.net/forum?id=HkxaFoC9KQ)).
 * The self-attention layers are combined with an LSTM.
 * The policy is auto-regressive, meaning it predicts each action dimension
   conditionally on each previous action dimension.
-* This also uses a pointer network ([Vinyals et al, NIPS 2015](https://papers.nips.cc/paper/5866-pointer-networks.pdf)),
+* This also uses a pointer network ([Vinyals et al, NeurIPS 2015](https://papers.nips.cc/paper/5866-pointer-networks.pdf)),
   which more easily supports variable length outputs for variable length inputs.
 
-![PointerNet diagram](/public/alphastar/pointer.png)
-{: .centered }
-
-Diagram of PointerNet from original paper. A conventional RNN-based seq2seq model
-condtionally predicts output from the latent code. A PointerNet outputs
-attention vectors over its inputs.
-{: .centered }
-
-  I'm not sure why this is helpful. My guess is that StarCraft
-  involves controlling many units in concert, and the number of units changes
-  over the game, making a pointer network a more natural network architecture.
+    ![PointerNet diagram](/public/alphastar/pointer.png)
+    {: .centered }
+  
+    Diagram of PointerNet from original paper. A conventional RNN-based seq2seq model
+    condtionally predicts output from the latent code. A PointerNet outputs
+    attention vectors over its inputs.
+    {: .centered }
+  
+    My guess for why a pointer net helps is that StarCraft
+    involves controlling many units in concert, and the number of units changes
+    over the game. Given that you need to output an action for each unit, a pointer
+    network is a natural choice.
 
 * The model then uses a centralized value baseline, linking a counterfactual
   policy gradient algorithm for multi-agent learning ([Foerster et al, AAAI
   2018](https://www.cs.ox.ac.uk/people/shimon.whiteson/pubs/foersteraaai18.pdf)).
 
-![COMA diagram](/public/alphastar/coma.png)
-{: .centered }
-
-Diagram of counterfactual multi-agent (COMA) architecture, from original paper,
-{: .centered }
-
-  Roughly, instead of having a separate actor-critic pair for each agent, all
-  agents share the same critic and get per-agent advantage estimates by
-  marginalizing over the appropriate action.
+    ![COMA diagram](/public/alphastar/coma.png)
+    {: .centered }
+    
+    Diagram of counterfactual multi-agent (COMA) architecture, from original paper.
+    Instead of having a separate actor-critic pair for each agent, all
+    agents share the same critic and get per-agent advantage estimates by
+    marginalizing over the appropriate action.
+    {: .centered }
 
 This is just for the model architecture. There are a few more references for the
 training itself.
@@ -248,27 +250,27 @@ training itself.
 * And self-imitation learning ([Oh et al, ICML 2018](http://proceedings.mlr.press/v80/oh18b/oh18b.pdf)).
 * And policy distillation in some way ([Rusu et al, ICLR 2016](https://arxiv.org/pdf/1511.06295.pdf)).
 * Which is trained with population-based training ([Jaderberg et al, 2018](https://arxiv.org/abs/1807.01281)).
-* and a reference to Game-Theoretic Approaches to Multiagent RL ([Lanctot et al,
-  NIPS 2017](https://arxiv.org/pdf/1711.00832.pdf)). I'm not sure where this is
+* And a reference to Game-Theoretic Approaches to Multiagent RL ([Lanctot et al,
+  NeurIPS 2017](https://arxiv.org/pdf/1711.00832.pdf)). I'm not sure where this is
   used. Possibly for adding new agents to the AlphaStar league that are tuned to
   learn the best response to existing agents?
 
 Many of these techniques were developed just in the last year. Based on the
-number of self-DeepMind citations, and how often those papers cite results on
+number of self-DeepMind citations, and how often those papers report results on
 the StarCraft II Learning Environment, it's possible much of this was developed
 specifically for the StarCraft project.
 
-When developing ML research for a paper, there are heavy incentives for
-changing as little as possible, and concentrating all risk on your proposed
+When developing ML research for a paper, there are heavy incentives to
+change as little as possible, and concentrate all risk on your proposed
 improvement. There are many good reasons for this. It's good science to change
 just one variable at a time. By sticking closer to existing work, it's easier to
-find previously run baselines, and it's easier for other to validate your work.
+find previously run baselines. It's also easier for other to validate your work.
 However, this means that there are good reasons *not* to incorporate prior
 state-of-the-art techniques into your research project. The risk added makes the
 cost-benefit analysis unfavorable.
 
-This is a shame, because with how prolific the machine learning field is, there
-isn't a lot of cross-paper pollination. I've always liked the Rainbow DQN paper
+This is a shame, because ML is a very prolific field, and yet
+there isn't a lot of cross-paper pollination. I've always liked the Rainbow DQN paper
 ([Hessel et al, AAAI 2018](https://arxiv.org/abs/1710.02298)),
 just because it asked what would happen if you tossed everything together.
 AlphaStar feels like something similar: several promising ideas that combine
@@ -278,7 +280,8 @@ These sorts of papers are really useful for verifying what techniques are worth
 using and which ones aren't, because distributed evaluation across tasks and
 settings is really the only way we get confidence that a paper is actually
 useful. But if the incentives discourage adding more risk to research
-projects, where does that leave us? It is incredibly certain that the existing pieces
+projects, then very few techniques get this distributed evaluation. Where does that leave us?
+It is incredibly certain that the existing pieces
 of machine learning can do something we think it can't, and the only blocker is
 that no one's tried the right combination of techniques.
 
