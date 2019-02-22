@@ -17,7 +17,7 @@ to follow the Brood War and SC2 pro scene.
 As such, this is a two-part post. The first is a high-level overview of my
 reactions to the AlphaStar match and other people's reactions to the match.
 The second part, linked
-[here]({% post_url 2019-01-29-alphastar-part2 %}), is a more detailed
+[here]({% post_url 2019-02-22-alphastar-part2 %}), is a more detailed
 discussion of what AlphaStar means for machine learning.
 
 In other words, if you're interested in deep dives into AlphaStar's StarCraft
@@ -150,7 +150,7 @@ I do think some of the criticisms are fair. The criticisms revolved around two p
 APM.
 
 I'm deferring details of AlphaStar's architecture to
-[part 2]({% post_url 2019-01-29-alphastar-part2 %}), but the short version is
+[part 2]({% post_url 2019-02-22-alphastar-part2 %}), but the short version is
 that AlphaStar is allowed to observe everything within vision of units it
 controls. By contrast, humans can only observe the minimap and the units on
 their screen, and must move the camera around to see other things.
@@ -355,5 +355,5 @@ So yeah, I don't think the AlphaStar team is looking at StarCraft as just anothe
 conquer. I think they genuinely love the game and won't stop until AlphaStar is
 both better than everyone and able to teach us something new about StarCraft II.
 
-[Continue to Part 2]({% post_url 2019-01-29-alphastar-part2 %})
+[Continue to Part 2]({% post_url 2019-02-22-alphastar-part2 %})
 {: .centered }
