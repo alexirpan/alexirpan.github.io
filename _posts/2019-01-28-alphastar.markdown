@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "An Overdue Post on AlphaStar, Part 1"
-date:   2019-01-28 01:41:00 -0800
+date:   2019-02-22 01:52:00 -0800
 ---
 
 
@@ -96,7 +96,7 @@ AlphaStar's style, so to speak, seems to trend in these directions.
 * Never stop building workers, even when it delays building your first
   expansion.
 * Build lots of Stalkers and micro them to flank and harass the enemy army until
-  it's weak enough to lose to all-in engagement. Stalkers are one of the first
+  it's weak enough to lose to an all-in engagement. Stalkers are one of the first
   units you can build, and can hit both ground and air units from range. They
   also have a Blink ability that lets them quickly jump in and out of battle.
 * Support those Stalkers with a few other units.
@@ -112,14 +112,14 @@ countered by Immortals. AlphaStar seems to play around this counter
 by using exceptional Stalker micro to force early wins through a [timing push](https://liquipedia.net/starcraft2/Timing_Attack).
 
 It's a bit early to tell whether humans should be copying these strategies.
-Specifically, the heavy Stalker build may only be viable with superhuman micro
+The heavy Stalker build may only be viable with superhuman micro
 (more on this later). Still, it's exciting that it's debatable in the first place.
 
 Below is a diagram from the blog post, visualizing the number of each unit the
 learned agents create as a function of training time. We see that Stalkers and
 Zealots dominate the curve. This isn't surprising, since Stalkers and Zealots
 are the first attacking units you can build, and even if you're planning to use
-other units, you still need to build some Stalkers or Zealots for defense.
+other units, you still need some Stalkers or Zealots for defense.
 
 ![Unit histograms](/public/alphastar/units.png)
 {: .centered }

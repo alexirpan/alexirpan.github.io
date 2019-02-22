@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "An Overdue Post on AlphaStar, Part 2"
-date:   2019-01-29 01:41:00 -0800
+date:   2019-02-22 01:53:00 -0800
 ---
 
 
 *This is part 2 of my post about AlphaStar, which is
 focused on the machine learning implications.
-Click [here]({% post_url 2019-01-28-alphastar %}) for part 1.
+Click [here]({% post_url 2019-01-28-alphastar %}) for part 1.*
 
 
 A Quick Overview of AlphaStar's Training Setup
