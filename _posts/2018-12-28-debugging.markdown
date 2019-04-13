@@ -1,15 +1,113 @@
 ---
 layout: post
-title:  "Sometimes You Have to Dive Into Bullshit"
+title:  "Things I Wish Everyone Knew About Debugging"
 date:   2018-11-27 03:00:00 -0800
 ---
 
-I'd like to think I'm a good software engineer, or at least an okay one.
-That's not to say I'm good at all parts of the job. There's a lot more to
-software engineering than just coding.
+Everyone's software development experience is a bit different, and people think
+about code in different ways. Here's how I think about it. I think it's a useful
+frame to look through, and it's worked well for me, but I'm not going to claim
+it's the correct one, especially when I've only been working full-time for a
+few years.
 
-Of all parts of software engineering, I only let myself take pride in one
-aspect: debugging. Historically, my track record for this is pretty good.
+\* \* \*
+{: .centered }
+
+At its core, software development is about using code to take existing systems
+and combine them into new ones. We have a set of tools and libraries available
+to use. Programming languages, web frameworks, machine learning libraries, and
+others, all implemented in code, all combinable with other things through code.
+
+Inevitably, these systems break down and have bugs. This shouldn't be
+surprising. Bugs are the natural state of code, and it's by concerted effort
+that they go away.
+
+I get incredibly nitpicky about bugs, where they come from, how to fix them, and
+how to reduce the chances they appear in the future. I don't know why I'm like
+this, it's just a thing I like doing.
+
+Earlier, I said programming was about using code to connect existing systems
+for the goal of creating new systems. This is something that every programmer
+has been doing for decades. You're not going to know what all the systems are
+doing. You're just not. Eventually, there is some point where you need to
+construct a model that assumes this subsystem does what it's supposed to do,
+and that's where everything starts going wrong.
+
+**Software bugs happen when your mental model of how the code works differs
+from how the code actually works.** There's a good reason that one of the first
+lessons in any CS curriculum is that the computer does exactly what it is told
+to do and no more - computers will do exactly what the code tells them to do,
+and your mental models about the code aren't going to change that.
+
+This has a few important corollaries.
+
+1. If your code has a bug, then your model of how the code works is wrong.
+Everyone tries to write working code. If all the code worked the way it should,
+then you wouldn't have a bug. So somewhere, at least one piece of code *must*
+be working in a different way.
+
+When I write it out, it seems obvious, but it's actually a very foundational
+insight, because it means that if you have the bandwidth and time to dig
+through the code, then you are eventually guaranteed to find something weird.
+You may not be able to *explain* the problem right away, but you'll find it,
+because it has to exist. This makes programming reassuring in a way that
+research isn't.
+
+2. Blame starts at the code you just wrote. The longer code has sat in a codebase,
+the more likely it is to be correct. Roughly, I think of other programmers as
+attaching blobs to whatever existing behaviors the current codebase supports.
+This implicitly adds several chains of dependencies on the behavior of that
+code. The newer your code is, the less implicit testing it's gotten.
+
+(The exception is if you're using old, abandoned code that hasn't been deleted
+from the code base, in which case, good luck.)
+
+If you can't find the error in your code, the error may be in the functions
+your code calls. If it isn't there, it may be in the functions those functions
+call, and so on down. Generally, you want to go breadth-first until you find
+something weird (and remember, you *have* to find something weird), then you
+go depth-first to understand why it's weird so that you can fix it.
+
+As for how to do this, print statement debugging is surprisingly powerful.
+Debuggers are better. I use vim and mostly code in Python for my job and hobby
+projects. I have a custom vim command that adds `import pdb; pdb.set_trace()`
+to the current location in the file, to fall into the Python debugger when
+execution hits that line. I use it all the time for local testing.
+
+Why are debuggers better than print statements? When you add print statements
+to code, you print things that you believe will help you solve the issue. But
+if your model of the code is wrong, then there's a good chance that you're wrong
+about what will solve the issue! Debuggers let you inspect everything about
+the current state of the code, including things you didn't know you wanted to
+inspect at the time you added the debugger breakpoint.
+
+Print statements are good for small bugs where you have a good idea what the
+problem is and simply want to verify. If it starts to look like that isn't true,
+favor debuggers.
+
+3. If you find code that relies on a config file, check that config.
+In my experience, config files are the source of a *lot* of bugs. They're easy
+to add to, and they're supposed to "just work". This leads to a lot of
+dead or redundant config options, which disguises which options are critical
+and which aren't. The ease of addition makes it easier to implicitly depend
+on behavior that the interface isn't supposed to support, making everything
+break when the underlying implementation changes in a way that breaks that
+implicit behavior.
+
+Ideally, you have snapshots of the exact config used for every job, at the moment
+in time it was working and failing. If you don't, then it is worth moving towards
+making this available.
+
+Documentation and docstrings should be treated as "trust, but verify". Again,
+in my experience, documentation and docstrings are usually correct, because no
+one tries to write incorrect documentation. But sometimes, documentation is out
+of date, or is incomplete about the behavior you actually care about. They help,
+but eventually you'll have to follow the stack trace and read the actual source code.
+
+
+
+Case Studies
+--------------------------------------------------------------------
 
 In college, I was working on a class project for Operating Systems. Ostensibly,
 this was a group project, but in practice I was basically doing it solo. There
