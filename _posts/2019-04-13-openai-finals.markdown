@@ -74,7 +74,7 @@ pool breaks this quick hack and requires using a learned approach instead. I'm
 sure it's doable (there's [existing work for this](https://arxiv.org/pdf/1806.10130.pdf)),
 but it's another hurdle that makes it look even more unlikely.
 
-A Million 3k MMR Teams at a Million Keyboards Have to Win Eventually
+A Million 3k MMR Teams at Five Million Keyboards Have to Win Eventually
 -----------------------------------------------------------------------
 
 At the end of the match, OpenAI announced that they were opening sign-ups to
