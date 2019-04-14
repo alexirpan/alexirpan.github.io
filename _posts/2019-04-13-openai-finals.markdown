@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "OpenAI Finals"
-date:   2019-04-13 21:27:00 -0800
+date:   2019-04-13 23:55:00 -0800
 ---
 
 OpenAI just beat OG, champions of [The International 8](https://liquipedia.net/dota2/The_International/2018),
@@ -69,7 +69,7 @@ draft works the same as the TI8 version. In the
 TI8 version, the win rate of every possible combination of heroes is evaluated,
 and the draft is done by picking the least exploitable next hero. Given
 a pool of 17 heroes, there are $$\binom{17}{5}\binom{12}{5}\cdot 2 = 9801792$$
-different hero combinations, which is large, but brute-forceable. A full hero
+different hero combinations, which is small enough to be brute-forced. A full hero
 pool breaks this quick hack and requires using a learned approach instead. I'm
 sure it's doable (there's [existing work for this](https://arxiv.org/pdf/1806.10130.pdf)),
 but it's another hurdle that makes it look even more unlikely.
@@ -77,7 +77,7 @@ but it's another hurdle that makes it look even more unlikely.
 A Million 3k MMR Teams at a Million Keyboards Have to Win Eventually
 -----------------------------------------------------------------------
 
-At the end of the match, OpenAI announced that they were opening signups to
+At the end of the match, OpenAI announced that they were opening sign-ups to
 allow everyone to play against or with OpenAI Five. It's only going to be up
 for a few days, but it's still exciting nonetheless. I have no idea how much
 the inference will cost in cloud credit (which is presumably why it's only
@@ -119,5 +119,5 @@ He later elaborated that he felt the bot had exploitable flaws in how it played
 around vision, but I think the more important note is that we take pride in
 our ability to actively try new things based on very few examples. The debate
 over how to do this is endless, but it makes me think that if somebody manages
-to demo impressive few-shot learning, we'll have a lot of trouble finding a new
-thing we're better than AIs at.
+to demo impressive few-shot learning, we'll start running out of excuses about
+AI.
