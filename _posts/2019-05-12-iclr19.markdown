@@ -92,3 +92,25 @@ This is a long way of saying that from my perspective, the organizers did a
 bunch of work grouping posters by topic, and it would have been more efficient
 to do no work at all. Open to reasons grouping-by-topic is better.
 (CGP Grey link).
+
+
+
+Could We, Like, Stop it With Changing GAN Optimizatinon Objectives
+-------------------------------------------------------------------------
+
+
+Man, Why do People Care About Adversarial Perturbations so Much
+--------------------------------------------------------------------------
+
+Dynamics Defenses, Zero-Knowledge Proof Connection
+=================================================================
+
+
+Structure and Priors
+------------------------------------------------------------------------
+
+
+ML Debates Don't Really Works
+---------------------------------------------------------------------------
+
+
