@@ -1,0 +1,94 @@
+---
+layout: post
+title:  "Trip Report ICLR 2019"
+date:   2019-05-12 21:05:00 -0800
+---
+
+ICLR has done terrible things for my ego. I did not have any papers at ICLR,
+I was there just to check out the conference, and then people I haven't met
+before are telling me that they know who I am, and friends are joking that I should
+change my affliation from "Google" to "Famous Blogger".
+
+Look, take it from me - having a famous blog post (and a weird last name) is
+great for name recognition, but it isn't good for much else.
+As far as I know, it hasn't gotten people to read any more of my research. I know
+for sure that I've said this before, but the reason I blog is because I get
+something out of doing it, even if no one actually reads the post. It's why I
+don't care about viewership. In fact I actively try *not* to care about viewership.
+Of course I want people to read my writing,
+but this blog is never going to pay my bills, and my worry is that if I care about
+viewership too much, I won't write the posts that I want to write. Instead I'll
+write the posts that I think other people want me to write. Those aren't the
+same and that seems like the first step towards a blog that's less fun.
+
+In that vein, here are some scattered thoughts on ICLR 2019 for me.
+
+
+Favorite Papers
+----------------------------------------------------------------------------
+
+Every conference, when we're doing small-talk, I get the same question.
+
+> what papers did you like from today?
+
+And every conference I give an answer like this: I don't remember any of them.
+I try to use conferences to get a feel for what's hot and what's not in machine
+learning, and to catch-up on the subfields that I'm following. So generally,
+I have a hard time remembering any paper in particular from the poster sessions.
+Instead my eyes glaze over at a few keywords, I type some notes that I know I'll
+never read, and maybe, maybe, I'll remember a specific paper that I thought
+was neat. In practice I usually don't. I see no problem with this.
+
+People still like deep learning. They still like reinforcement learning.
+Generative models - so hot right now. Meta-learning is also pretty healthy,
+although I feel it's changing from deriving new meta-learning algorithms and
+shifting towards figuring out what problems can be formulated as useful, solvable
+meta-learning problems.
+
+Papers about adversarial attacks are still going, although maybe this is colored
+by the poster session where it felt like every poster was about GANs or
+adversarial attacks. Speaking of which...
+
+
+Poster Arrangements
+---------------------------------------------------------------------------
+
+At this year's ICLR, posters were grouped by topic. One session was a bunch
+of RL posters, another was a bunch of sequence model posters, a third had
+a bunch of quantized / low-precision network posters, and so on.
+
+This didn't work that well for me. I found there were some sessions where I
+wasn't interested in any of the posters, and then there were other sessions
+where I wanted to see *all* of them. So I'd go between having nothing to do
+for a few hours, and having to skip a bunch of posters because I knew I wouldn't
+have the time to read every one of them. This felt horribly inefficient.
+
+I can see this scheme working if you do what you're supposed to at conferences:
+read the schedule, identify posters you want to see ahead of time, figure out
+which sessions they're in, then schedule everything else around that. That way,
+if most posters in a session don't look interesting, you can schedule all your
+networking meetings during those poster sessions. I don't do this because I'm
+lazy.
+
+A friend of mine pointed out another flaw: the posters they most wanted to see
+were in the same time slot as their poster session. That forces a trade-off
+between presenting your own work and seeing other related work in your field.
+
+My feeling is that ICLR should cater to the people presenting the posters, and
+general attendee experience should be secondary. So let's quickly solve the
+optimization problem. Say a subfield has $$N$$ posters, and there are $$k$$ different poster sessions.
+As an approximation, every poster is presented by $$1$$ person, and that person
+can't see any posters in the same session they're presenting in. We want to
+allocate the posters such that the average number of posters each presenter
+gets to see is maximized.
+
+I'll leave the formal proof as an exercise, but the solution you get is that
+the $$N$$ posters should be divided evenly between the $$k$$ poster sessions.
+Now, in practice posters can overlap between subfields, and distributing them
+evenly may be a challenge. But if we assign posters randomly to each poster
+session, it should work out to be about a uniform distribution.
+
+This is a long way of saying that from my perspective, the organizers did a
+bunch of work grouping posters by topic, and it would have been more efficient
+to do no work at all. Open to reasons grouping-by-topic is better.
+(CGP Grey link).
