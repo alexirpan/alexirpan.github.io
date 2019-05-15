@@ -82,7 +82,8 @@ can't see any posters in the same session they're presenting in. We want to
 allocate the posters such that the average number of posters each presenter
 gets to see is maximized.
 
-I'll leave the formal proof as an exercise, but the solution you get is that
+I'll leave the formal proof as an exercise (you'll want your Lagrange
+multipliers), but the solution you get is that
 the $$N$$ posters should be divided evenly between the $$k$$ poster sessions.
 Now, in practice posters can overlap between subfields, and distributing them
 evenly may be a challenge. But if we assign posters randomly to each poster
@@ -94,13 +95,36 @@ to do no work at all. Open to reasons grouping-by-topic is better.
 (CGP Grey link).
 
 
-
-Could We, Like, Stop it With Changing GAN Optimizatinon Objectives
+Generative Models, Everywhere
 -------------------------------------------------------------------------
 
+I'm getting the impressino that generative models are continuing to be a hot
+area. The fad of modifying the GAN optimization objective has mostly died by
+now, in favor of tricks around regularization and initialization, but that doesn't
+mean GAN papers have stopped. Meanwhile, VAE models and flow-based models are
+still going strong.
 
-Man, Why do People Care About Adversarial Perturbations so Much
+It feels like we're getting to the point of high-enough quality images to talk
+some interesting problems that generative models could potentially be used for.
+And of course, generating cool samples is one of the ways your paper becomes more
+engaging. It's sad that I'm only half-joking. The nature of research is that
+some looks cool and some doesn't, and the coolness factor is often closely
+tied to your field rather than the quality of your work.
+
+
+I'm So Over Adversarial Perturbations
 --------------------------------------------------------------------------
+
+Speaking of cool factor, wow there were a lot of papers about adversarial
+pertubations. Yes, yes, it's cool that you can add imperceptible noise to an
+image to change its class - if you define "imperceptible noise" in human terms
+rather than machine terms. (Adversarial are features) is one paper that argued
+these features genuinely are useful for predicting ImageNet classes.
+
+I used to be really interested in this line of work, but now I'm not. This came
+from talking to some of the authors of PAPER CITE
+
+
 
 Dynamics Defenses, Zero-Knowledge Proof Connection
 =================================================================
@@ -110,7 +134,7 @@ Structure and Priors
 ------------------------------------------------------------------------
 
 
-ML Debates Don't Really Works
+ML Debates Need More Design and Less Improv
 ---------------------------------------------------------------------------
 
 
