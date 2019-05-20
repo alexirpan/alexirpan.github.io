@@ -137,14 +137,72 @@ image classifiers have some amount of classification error that implies the
 existence of adversarial examples - the fact that your algorithm discovers them
 is, in some sense, not too big a deal.
 
-Assuming this is true, does it mean adversarial perturbation research has no
-value? No, it doesn't. Proving something exists doesn't imply you can
-efficiently discover it.
+There's value in learning robustness against adversarial perturbations, but I
+it shouldn't be seen as learning techniques that are useful for protecting
+against adversaries, or even as techniques that are good first steps for
+future research into protecting against adversaries. It should be seen more
+as adversarial data augmentation - deliberately probing for current weaknesses
+in the model to feed as new training input.
 
+I mean, in practice, it's possible that we can come up with a defense against
+adversarial perturbations that both bring average-distance-to-closest-error
+close to the theoretical limit, and it's empirically difficult to discover that
+closest error. But based on the empirical track record for breaking existing
+defenses, this doesn't seem very likely.
 
 
 Dynamics Defenses, Zero-Knowledge Proof Connection
-=================================================================
+-----------------------------------------------------------------
+
+I don't want this post to turn into an "Alex parrots Ian Goodfellow's talk"
+post, but I agree with a lot of his points and just want to quickly mention
+this one.
+
+In his talk at the Reliability of ML systems workshop (LINK), he proposed that
+we should consider a new paradigm called dynamic defenses. Essentially,
+a classifier learns a distributions $$p(class|input)$$. In a dynamic defense,
+this distribution $$p(class|input)$$ can change on every input, even if the same
+input is given twice. This breaks a ton of assumptions of existing analysis of
+models, but lets you express more flexible defenses.
+
+This may be a completely wild connection, but on hearing this I was reminded
+of zero-knowledge proofs. For a simple introduction, I recommend "Zero Knowledge
+Proofs for Fourth Graders".
+
+Suppose there is a cave with two entrances that meet in a door in the middle, like
+so.
+
+PICTURE
+
+I claim that I know a password that opens the door in the middle, but I don't
+want to tell you what the password is. HOw can I prove that I know the password?
+The zero-knowledge proof goes like so: first, I walk into the cave. Once I'm
+inside the cave, you message me "left" or "right". I walk out of that side of
+the cave.
+
+Suppose I didn't know the password. Then, the probability I can walk out the
+side you message me is $$1/2$$, because I can only do so if I guess correctly.
+If I do know the password, the probability is $$1$$, because if I'm on the wrong
+side, I can use the password to cross the door and leave the side I want.
+
+PICTURE
+
+Let's call this a single round. We repeat this process for $$N$$ rounds, until
+you're satisfied. After $$N$$ rounds, if I don't know the password, the probability
+I fool you is $$1/2^N$$ - essetially zero if we pick $$N$$ to be say, $$N = 40$$.
+
+The connection I see is that by integrating randomness into what you ask of me,
+it introduces randomness into whether I use or don't use the password, and I
+can leverage this randomness to prove something to you while protecting details
+of my internal processing. And with some twisting of logic it sounds like maybe
+there's some way to make a classifier useful without sharing any
+unnecessary knowledge. The obvious problem I see is that you don't want to prove
+your classifier is $$90\%$$ accurate, you want to actually classify things, and
+that's likely a very different problem.
+
+Again, probably all junk, but let me know if you get something that's less junk.
+
+
 
 
 The Structure and Priors Debate
