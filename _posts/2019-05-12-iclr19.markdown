@@ -121,8 +121,25 @@ image to change its class - if you define "imperceptible noise" in human terms
 rather than machine terms. (Adversarial are features) is one paper that argued
 these features genuinely are useful for predicting ImageNet classes.
 
-I used to be really interested in this line of work, but now I'm not. This came
-from talking to some of the authors of PAPER CITE
+I used to be really interested in this line of work, but now I'm not. Most of
+the change happened from talking to authors on the Adversarial Spheres paper
+([Gilmer et al, 2018](https://arxiv.org/abs/1801.02774)). I haven't read the
+paper in full, but my understanding is that they prove a bound on average
+distance to the closest misclassified point, based solely on classification
+error rate, and show that for existing datasets, these bounds are within
+the range of imperceptible noise. In other words, the reason adversarial
+examples are so plentiful has more to do with the geometry of high-dimensional
+spaces than anything else.
+
+This means that it shouldn't be too big a surprise that many adversarial
+defenses break as soon as a new attacker tries to break the defense. Most
+image classifiers have some amount of classification error that implies the
+existence of adversarial examples - the fact that your algorithm discovers them
+is, in some sense, not too big a deal.
+
+Assuming this is true, does it mean adversarial perturbation research has no
+value? No, it doesn't. Proving something exists doesn't imply you can
+efficiently discover it.
 
 
 
@@ -130,11 +147,44 @@ Dynamics Defenses, Zero-Knowledge Proof Connection
 =================================================================
 
 
-Structure and Priors
+The Structure and Priors Debate
 ------------------------------------------------------------------------
 
+There was a debate at ICLR this year, whose topic was about what should be
+given as structure or prior, and what should be learned. I got the impression
+that the organizers wanted it to be fiery and passionate. It wasn't.
 
-ML Debates Need More Design and Less Improv
----------------------------------------------------------------------------
+I'm in a slightly unique position to comment on this, because I was actually
+part of the ICML 2018 Debates workshop. I'd rather people not know I was part of
+that workshop, because I was really, really winging it, armed with a position
+paper I wrote in a day that I no longer fully agree with. Meanwhile, the other
+side of the debate was represented by [Katherine](https://www.dropbox.com/s/b356qc8zw2d0z7s/Lee%20-%20Submit%20to%20Journals.pdf?dl=0)
+and [Zack](https://www.dropbox.com/s/ao7c090p8bg1hk3/Lipton%20and%20Steinhardt%20-%20Troubling%20Trends%20in%20Machine%20Learning%20Scholarship.pdf?dl=0),
+who had considerably better position papers. It was like I was walking into what
+I thought was a knife fight with a paring knife, and then I learn that it's
+an "anything goes" fight and they're in a fortified bunker 300 meters away with
+defensive turrets.
 
+But then the debate started and it all turned out fine - because we agreed on
+about 90% of every question. None of us had any reason to pull out
+particularly heavy linguistic weaponry. It stayed very civil, and the most
+fiery comments came from the audience, not from us. When talking to the ICML
+debate organizers afterwards, they said that in retrospect, the mistake was
+assuming that if they took people with opposing views, and had them just talk,
+then it would naturally turn into a debate. But it doesn't. It only plays out
+that way if you continually force the participants to debate the crux of their
+disagreements - and this crux is sometimes not very obvious. Without this constant
+focus, it's easy to endlessly orbit it instead.
+
+http://phdcomics.com/comics.php?f=1354
+
+Look, let's not mince words. Machine learning researchers tend to be more
+introverted, tend to agree more than they disagree, and are usually quite tolerant
+of differing opinions over the best way to learn useful agents. We're more likely
+to get into fights with each other on Twitter or Reddit rather than real life,
+because it's just so much easier to be provocative on those platforms. I think
+ML debates are cool in theory, and I'd like to see a few more shots at making
+them happen, but if it does happen again, I'd advise the debate moderators to
+focus on identifying and repeatedly hitting the crux of the debaters' disagreement.
+ML debates need more design and less improv.
 
