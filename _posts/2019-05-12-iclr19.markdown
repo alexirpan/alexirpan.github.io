@@ -140,9 +140,10 @@ is, in some sense, not too big a deal.
 There's value in learning robustness against adversarial perturbations, but I
 it shouldn't be seen as learning techniques that are useful for protecting
 against adversaries, or even as techniques that are good first steps for
-future research into protecting against adversaries. It should be seen more
-as adversarial data augmentation - deliberately probing for current weaknesses
-in the model to feed as new training input.
+future research into protecting against adversaries. I think the usefulness
+is primarily that it's usable as adversarial domain augmentation, where you
+can give adversarial examples as new training inputs. And this is pretty
+different from a reasonable defense.
 
 I mean, in practice, it's possible that we can come up with a defense against
 adversarial perturbations that both bring average-distance-to-closest-error
@@ -203,8 +204,6 @@ that's likely a very different problem.
 Again, probably all junk, but let me know if you get something that's less junk.
 
 
-
-
 The Structure and Priors Debate
 ------------------------------------------------------------------------
 
@@ -234,7 +233,11 @@ that way if you continually force the participants to debate the crux of their
 disagreements - and this crux is sometimes not very obvious. Without this constant
 focus, it's easy to endlessly orbit it instead.
 
-http://phdcomics.com/comics.php?f=1354
+![PhD orbit comic](/public/iclr19/phdcomics.gif)
+{: .centered }
+
+(Source: [PhD Comics](http://phdcomics.com/comics.php?f=1354))
+{: .centered }
 
 Look, let's not mince words. Machine learning researchers tend to be more
 introverted, tend to agree more than they disagree, and are usually quite tolerant
