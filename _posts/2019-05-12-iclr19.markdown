@@ -4,18 +4,18 @@ title:  "Trip Report ICLR 2019"
 date:   2019-05-12 21:05:00 -0800
 ---
 
-ICLR did terrible things for my ego. I didn't have any papers at ICLR, I only
+ICLR did terrible things for my ego. I didn't have any papers at ICLR. I only
 went to check out the conference. Despite this, people I haven't met
 before are telling me that they know who I am from my blog, and friends
 are joking that I should change my affliation from "Google" to "Famous Blogger".
 
 Look, take it from me - having a famous blog post is
-great for name recognition, but it isn't good for much else.
-As far as I know, it hasn't gotten people to read any more of my [research](/research). I've
-definitely said this before,
+great for name recognition, but it isn't good for much else. Based on
+Google Analytics funnels, it doesn't translate to people reading other posts,
+or reading any more of my [research](/research). I've said this before,
 but I blog because it's fun and I get something out of doing it, even if
 no one actually reads it. I mean, of course I *want* people to read my blog, but
-I really go out of my way to *not* care about viewership.
+I really go out of my way to not care about viewership.
 Sorta Insightful is never going to pay my bills, and my worry is that if I care about
 viewership too much, I won't write the posts that I want to write. Instead, I'll
 write the posts that I think other people want me to write. Those two aren't the
@@ -36,11 +36,11 @@ I have a hard time remembering any particular poster or presentation.
 Instead, my eyes glaze over at a few keywords, I type some notes that I know I'll
 never read, I'll make a note of an interesting idea, and if I'm lucky,
 I'll even remember what paper it was from.
-In practice, I usually don't. For what it's worth, I don't see many problems
-with this conference strategy.
+In practice, I usually don't. For what it's worth, I think this conference
+strategy is totally fine.
 
 People still like deep learning. They still like reinforcement learning.
-GANs and meta-learning are both still pretty healty.
+GANs and meta-learning are both still pretty healthy.
 I get the feeling that for GANs and meta-learning, the honeymoon period of
 deriving slight variants of existing algorithms has worn off - many more of
 the papers I saw had shifted towards figuring out places where GANs or meta-learning
@@ -54,13 +54,13 @@ gets more press and engagement, so I expect to see more of this in the next few 
 It's sad that I'm only half-joking about the engagement part. The nature of
 research is that some of it looks cool and some of it doesn't, and the
 coolness factor is tied more towards your problem rather than the quality
-of your work. One of these days I should [clean up my thoughts on the engagement vs quality gap]({% post_url 2016-05-13-may-13 %}),
-since it's a topic where I'll gladly preach to the choir about it if it means
-that it gets through to the person in the choir who's only pretending that
-they understand it.
+of your work. One of these days I should [clean up my thoughts on the engagement vs quality gap]({% post_url 2016-05-13-may-13 %}).
+It's a topic where I'll gladly preach to the choir about it, if it means
+that it gets through to the person in the choir who's only pretending they
+know what the choir's talking about.
 
 
-Could We Spend Less Time On Adversarial Perturbations?
+Can We Talk About Adversarial Perturbations?
 --------------------------------------------------------------------------
 
 Speaking of cool factor, *wow* there were a lot of papers about adversarial
@@ -70,9 +70,8 @@ like more of the conference than it really was (more about this later),
 but let me rant for a bit.
 
 As a refresher, the adversarial perturbation literature is based around the
-discovery that large convnets that achieve good accuracy on ImageNet can be
-given images with small amount of noise added, imperceptible to the human eye,
-and the resulting image is completely misclassified.
+discovery that if you take images, and add small amounts of noise imperceptible
+to the human eye, then you get images that are completely misclassified.
 
 ![Adversarial Perturbation](/public/iclr19/adversarial.png)
 {: .centered }
@@ -81,9 +80,10 @@ From [(Goodfellow et al, ICLR 2015)](https://arxiv.org/abs/1412.6572)
 {: .centered }
 
 These results really captured people's attention, and they caught mine too.
-There's been a lot of work on learning adversarial defense to improve
-robustness to these imperceptible noise attacks, which I used to like a lot.
-I'm more lukewarm about it now.
+There's been a lot of work on learning defenses to improve
+robustness to these imperceptible noise attacks. I used to think this was cool,
+but I'm
+more lukewarm about it now.
 
 Most of the reason I'm not so interested now is tied to the Adversarial Spheres paper
 ([Gilmer et al, 2018](https://arxiv.org/abs/1801.02774)). Now big cavaet: I
@@ -92,58 +92,64 @@ understanding of the result.
 
 Suppose your data lies in some high-dimensional space. Let $$S$$ be the set of
 points your classifier correctly classifies.
-Assuming continuity and so forth, the
+The
 volume of this set should match the accuracy of your classifier. For example,
 if the classifier has $$95\%$$ accuracy, then the volume of $$S$$ will be
 $$95\%$$ of the total volume of the data space.
 
 When constructing adversarial perturbations, we add some $$\epsilon$$ noise to
 the input point. Given some correctly classified point $$x$$, we can find an
-adversarial example if the $$\epsilon$$-ball centered at $$x$$ contains a point
+adversarial example for $$x$$ if the $$\epsilon$$-ball centered at $$x$$ contains a point
 that is incorrectly classified.
 
 To reason about the average distance to an adversarial example over the dataset,
-we can consider the union of all these $$\epsilon$$-balls. This is equivalent
-to the set of points within distance $$\epsilon$$ of any correctly classified
-point. This set is roughly defined by taking the boundary of $$S$$, and pushing it
-outward by $$\epsilon$$ in each direction.
+we can consider the union of the $$\epsilon$$-balls for every correctly classified $$x$$. This is equivalent
+to the set of points within distance $$\epsilon$$ of any $$x \in S$$.
 
-The larger $$\epsilon$$ is, the more the volume of $$S$$ will grow.
+Let's consider the volume of $$S$$, once its expanded by $$\epsilon$$ out in
+all directions. The larger $$\epsilon$$ is, the more the volume of $$S$$ will grow.
 If we pick an $$\epsilon$$ that grows the volume of $$S$$ from $$95\%$$ of the
 space to $$100\%$$ of the space, then we're guaranteed to find an adversarial
-example, no matter how the adversarial examples are distributed in space,
-because every possible point is within $$\epsilon$$ of $$S$$, and by definition
-the classifier isn't perfect and misclassified some data point.
+example, no matter how misclassifications are distributed in space,
+because every possible point is within $$\epsilon$$ of $$S$$.
 The adversarial spheres paper proves bounds on the increase in volume for different
-$$\epsilon$$, to increase the volume such that it covers the entire space.
-Carrying out the math gives $$\epsilon$$ that's
-within the range of human-imperceptible noise.
+$$\epsilon$$, to increase the volume such that it covers the entire space,
+specifically for the case where you data lies on a sphere.
+Carrying out the math gives an $$\epsilon$$ below the threshold for human-perceptible
+noise. This is then combined with
+some arguments that the sphere is the best you can do (by relating volume
+increase to surface area and applying the
+[isoparametric inequality](https://en.wikipedia.org/wiki/Isoperimetric_inequality)), and some loose evidence real data follows similar
+bounds.
 
-Importantly, with some fairly reasonable assumptions on geometry, the final result
-depend only on test error and dimensionality of your dataset, and makes no
+Importantly, the final result
+depends only on test error and dimensionality of your dataset, and makes no
 assumptions about how robust your classifier is, or what adversarial defenses
-you've added on top.
+you've added on top. As long as you have some test error, it doesn't matter
+what defenses you try to add to the classifier.
+The weird geometry of high-dimensional space is sufficient to provide an
+existence proof for adversarial perturbations.
+It isn't that our classifiers aren't robust, it's that avoiding adversarial
+examples is really hard in a 100,000-dimensional space.
 
-Put another way, the weird geometry of high-dimensional space provides an
-existence proof for adversarial perturbations, and therefore, an algorithm that
-discovers them shouldn't be too surprising. It isn't that our classifiers are
-weak, it's that we're weird for not understanding 100,000-dimensional
-space.
-
-(High-dimensional geometry is **super-weird**, by the way. I still have a bad
-handle on it, but one example is that if you sample two random vectors
+(High-dimensional geometry is **super-weird**, by the way.
+For example, if you sample two random vectors
 where each coordinate comes from $$U[0,1]$$, they'll almost always be
 almost-orthogonal, by the law of large numbers. A more relevant fun fact is
 that adding $$\epsilon$$ noise to each coordinate of an $$n$$-dimensional
 point produces a new point that's $$O(\epsilon \sqrt{n})$$ away from your
-original one. If you consider the $$n$$ you see in images, it should be
-more intuitive why small perturbations in every dimension actually gives
+original one. If you consider the dimensionality $$n$$ of image data, it should be
+more intuitive why small perturbations in every dimension gives
 you tons of flexibiilty towards finding misclassified points.)
 
-There's value in trying to be robust against these adversarial perturbations,
-but my suspicion is that they'll be most useful as a form of adversarial
-data augmentation, rather than as useful stepping stones to other forms of
-ML security.
+The fact that adversarial examples exist doesn't mean that it's easy to
+discover them. One outcome is that adversarial defense research successfully
+finds a way to hide adversarial examples in a way that's hard to discover
+with any efficient algorithm. But, this feels unlikely to me.
+I think defenses for adversarial attacks will be most useful as a form of
+adversarial data augmentation, rather than as useful stepping stones to other
+forms of ML security, and that's further from the kind of work I'm
+interested in.
 
 
 A Quick Tangent on Zero-Knowledge Proofs
@@ -183,12 +189,15 @@ ones you weren't by checking the schedule in advance. Then, you can
 schedule all your networking catch-ups during the sessions you don't want
 to visit.
 
-This theory didn't apply to me because I wing all my conferences, getting
-by on a loose level of planning. This mean that some sessions, I didn't
-want to see any posteres, and in other sessiosn, I wanted to see **all**
+I wing all my conferences, getting
+by on a loose level of planning, so that's not how it played out for me.
+Instead, I would go between sessions where I didn't care about any of
+the posters, and sessions where
+I wanted to see **all**
 the posters. This felt horribly inefficient, because I had to skip posters
 I knew I'd be interested in reading, due to the time crunch of trying
-to see everything.
+to see everything, and then spend the next session going back to my
+room to take a nap.
 
 A friend of mine pointed out another flaw: the posters they most wanted to see
 were in the same time slot as their poster presentation. That forced a trade-off
@@ -209,12 +218,12 @@ the $$N$$ posters should be divided evenly between the $$k$$ poster sessions.
 Now, in practice, posters can overlap between subfields, and it can be hard
 to even define what is and isn't a subfield. Distributing exactly evenly
 is a challenge, but if we assign posters randomly to each poster session,
-then every subfield should work out to about a uniform distribution.
+then every subfield should work out to be approximately even.
 
 To me, it felt like the ICLR organizers spent a bunch of time clustering
 papers, when randomness would have been better.
 To quote CGP Grey, ["Man, it's always frustrating to know that to literally
-have done nothing would be faster than the something that is done."](https://www.youtube.com/watch?v=oAHbLRjF0vo).
+have done nothing would be faster than the something that is done"](https://www.youtube.com/watch?v=oAHbLRjF0vo).
 I'm open to explanations why randomness would be bad though!
 
 
@@ -231,14 +240,14 @@ I'm in a slightly unique position to comment on this, because I actually
 took part in the
 ICML 2018 Debates workshop. I'd rather people not know I did this,
 because I was really, really winging it, armed with a position
-paper I wrote in a day. I'm not even sure I agree with all of it now.
+paper I wrote in a day. I'm not even sure I agree with my position paper now.
 Meanwhile, the other
 side of the debate was represented by [Katherine](https://www.dropbox.com/s/b356qc8zw2d0z7s/Lee%20-%20Submit%20to%20Journals.pdf?dl=0)
 and [Zack](https://www.dropbox.com/s/ao7c090p8bg1hk3/Lipton%20and%20Steinhardt%20-%20Troubling%20Trends%20in%20Machine%20Learning%20Scholarship.pdf?dl=0),
 who had considerably more coherent position papers.
 It was like walking into what I thought was a knife fight, armed with
-a small paring knife, and realizing it was an "anything goes" fight and they're
-in a fortified bunker 300 meters away with defensive turrets.
+a small paring knife, and realizing it was an "anything goes" fight, where
+they have defensive turrets surrounding a fortified bunker 300 meters.
 
 But then the debate started, and it all turned out fine, because we spent
 90% of our time agreeing about every question, and none of us had any reason
@@ -270,7 +279,7 @@ they disagree, and are usually quite tolerant
 of differing opinions over research hypotheses. And it's really easy to
 unintentionally (or intentionally) steer
 the conversation towards the region of carefully qualified, agreeable
-conversation. This is especially true if you're debating a nebulous term
+conversation, where no one remembers it by tomorrow. This is especially true if you're debating a nebulous term
 like "deep learning" or "structure" or "rigor", where you can easily burn
 lots of time saying things like, "Yes, but what does deep learning *mean*?",
 at which point every debater presents their own definition and you've wasted
