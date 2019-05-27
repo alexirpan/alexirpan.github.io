@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Trip Report ICLR 2019"
-date:   2019-05-12 21:05:00 -0800
+title:  "Thoughts on ICLR 2019"
+date:   2019-05-26 22:30:00 -0800
 ---
 
 ICLR did terrible things for my ego. I didn't have any papers at ICLR. I only
 went to check out the conference. Despite this, people I haven't met
 before are telling me that they know who I am from my blog, and friends
-are joking that I should change my affliation from "Google" to "Famous Blogger".
+are joking that I should change my affiliation from "Google" to "Famous Blogger".
 
 Look, take it from me - having a famous blog post is
 great for name recognition, but it isn't good for much else. Based on
@@ -64,7 +64,7 @@ Can We Talk About Adversarial Perturbations?
 --------------------------------------------------------------------------
 
 Speaking of cool factor, *wow* there were a lot of papers about adversarial
-pertubations. This might be biased by the poster session where all the GAN
+perturbations. This might be biased by the poster session where all the GAN
 and adversarial perturbation papers were bunched together, making it seem
 like more of the conference than it really was (more about this later),
 but let me rant for a bit.
@@ -76,7 +76,7 @@ to the human eye, then you get images that are completely misclassified.
 ![Adversarial Perturbation](/public/iclr19/adversarial.png)
 {: .centered }
 
-From [(Goodfellow et al, ICLR 2015)](https://arxiv.org/abs/1412.6572)
+Source: [(Goodfellow et al, ICLR 2015)](https://arxiv.org/abs/1412.6572)
 {: .centered }
 
 These results really captured people's attention, and they caught mine too.
@@ -86,7 +86,7 @@ but I'm
 more lukewarm about it now.
 
 Most of the reason I'm not so interested now is tied to the Adversarial Spheres paper
-([Gilmer et al, 2018](https://arxiv.org/abs/1801.02774)). Now big cavaet: I
+([Gilmer et al, 2018](https://arxiv.org/abs/1801.02774)). Now big caveat: I
 haven't fully read the paper. Feel free to correct me, but here's my high-level
 understanding of the result.
 
@@ -111,7 +111,7 @@ all directions. The larger $$\epsilon$$ is, the more the volume of $$S$$ will gr
 If we pick an $$\epsilon$$ that grows the volume of $$S$$ from $$95\%$$ of the
 space to $$100\%$$ of the space, then we're guaranteed to find an adversarial
 example, no matter how misclassifications are distributed in space,
-because every possible point is within $$\epsilon$$ of $$S$$.
+because every possible misclassification is within $$\epsilon$$ of $$S$$.
 The adversarial spheres paper proves bounds on the increase in volume for different
 $$\epsilon$$, to increase the volume such that it covers the entire space,
 specifically for the case where you data lies on a sphere.
@@ -140,7 +140,7 @@ that adding $$\epsilon$$ noise to each coordinate of an $$n$$-dimensional
 point produces a new point that's $$O(\epsilon \sqrt{n})$$ away from your
 original one. If you consider the dimensionality $$n$$ of image data, it should be
 more intuitive why small perturbations in every dimension gives
-you tons of flexibiilty towards finding misclassified points.)
+you tons of flexibility towards finding misclassified points.)
 
 The fact that adversarial examples exist doesn't mean that it's easy to
 discover them. One outcome is that adversarial defense research successfully
@@ -148,8 +148,7 @@ finds a way to hide adversarial examples in a way that's hard to discover
 with any efficient algorithm. But, this feels unlikely to me.
 I think defenses for adversarial attacks will be most useful as a form of
 adversarial data augmentation, rather than as useful stepping stones to other
-forms of ML security, and that's further from the kind of work I'm
-interested in.
+forms of ML security. I'm just not too interested in that kind of work.
 
 
 A Quick Tangent on Zero-Knowledge Proofs
@@ -161,7 +160,8 @@ I'll keep this brief.
 Ian Goodfellow gave a talk at the [SafeML ICLR workshop](https://slideslive.com/38915790/the-case-for-dynamic-defenses-against-adversarial-examples).
 I'd encourage listening to the full talk, I'd say I agree with most of it.
 
-In that talk, he proposed dynamic defenses for adversarial examples.
+In that talk, he said that he thinks people are over-focusing on adversarial
+perturbations. He also proposed dynamic defenses for adversarial examples.
 In a dynamic defense, a classifier's output
 distribution $$p(class|input)$$ may change on every input processed, even
 if the same input is replayed multiple times. This both breaks a ton of
@@ -172,9 +172,10 @@ of zero-knowledge proofs. A lot of zero-knowledge proof schemes integrate
 randomness into their proof protocol, in a way that lets the prover prove
 something is true while protecting details of their internal processing.
 And with some twisting of logic, it sounds like maybe
-there's some way to make a classifier useful without sharing any
-unnecessary knowledge, by integrating changed behavior in an appropriate way.
-I feel like there might be something here, but there's also a reasonable chance
+there's some way to make a classifier useful without leaking
+unnecessary knowledge over how it works, by changing $$p(class|input)$$
+in the right way each input.
+I feel like there might be something here, but there's a reasonable chance
 it's all junk.
 
 
@@ -196,8 +197,7 @@ the posters, and sessions where
 I wanted to see **all**
 the posters. This felt horribly inefficient, because I had to skip posters
 I knew I'd be interested in reading, due to the time crunch of trying
-to see everything, and then spend the next session going back to my
-room to take a nap.
+to see everything, and then spend the next session doing nothing.
 
 A friend of mine pointed out another flaw: the posters they most wanted to see
 were in the same time slot as their poster presentation. That forced a trade-off
@@ -209,7 +209,7 @@ experience of other attendees should be secondary. Let's quickly solve the
 optimization problem. Say a subfield has $$N$$ posters, and there are $$k$$ different poster sessions.
 As an approximation, every poster is presented by $$1$$ person, and that person
 can't see any posters in the same session they're presenting in. We want to
-allocate the posters such that the we maximize the average number of posters
+allocate the posters such that we maximize the average number of posters
 each presenter sees.
 
 I'll leave the formal proof as an exercise (you'll want your Lagrange
@@ -247,12 +247,12 @@ and [Zack](https://www.dropbox.com/s/ao7c090p8bg1hk3/Lipton%20and%20Steinhardt%2
 who had considerably more coherent position papers.
 It was like walking into what I thought was a knife fight, armed with
 a small paring knife, and realizing it was an "anything goes" fight, where
-they have defensive turrets surrounding a fortified bunker 300 meters.
+they have defensive turrets surrounding a fortified bunker.
 
 But then the debate started, and it all turned out fine, because we spent
 90% of our time agreeing about every question, and none of us had any reason
-to pull out particularly heavy linguistic weaponry. It stayed very civil, and
-the most fiery comments came from the audience, not from us.
+to pull out particularly heavy linguistic weaponry. It stayed very civil,
+and the most fiery comments came from the audience, not from us.
 
 When talking to the organizers of the ICML debates workshop after the fact,
 they said the mistake was assuming that if they took people with opposing views,
@@ -304,4 +304,3 @@ hotels near the convention center, and lots of culture in walking distance.
 I had a good time, and as someone who's lived in California for most of their
 life, I appreciated getting to experience a city in the South for a change.
 It was great, asides from the weather. On that front, California just wins.
-Hopefully I'll get a chance to visit again.
