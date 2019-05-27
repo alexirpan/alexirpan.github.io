@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Thoughts on ICLR 2019"
-date:   2019-05-26 22:30:00 -0800
+date:   2019-05-26 22:30:00 -0700
 ---
 
 ICLR did terrible things for my ego. I didn't have any papers at ICLR. I only
