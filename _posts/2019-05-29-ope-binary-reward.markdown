@@ -1,25 +1,34 @@
 ---
 layout: post
-title:  "Off-Policy Evaluation of Generalization for Deep Q-Learning in Binary Reward Tasks"
+title:  "Recent RL Papers I've Worked On"
 date:   2019-05-26 22:30:00 -0700
 ---
 
-A paper I've been working on for a while went on arXiv recently. I'm pretty
-happy about where it landed.
+I'm a coauthor on two RL papers that went on arXiv recently.
 
-First, the paper link:
+The first is [The Principle of Unchanged Optimality in RL Generalization](https://arxiv.org/abs/1906.00336),
+which I co-wrote with Xingyou Song. This evolved out of discussions we had
+about generalization for RL, where at some point I realized we were discussing
+ideas that were both clearly correct and not written down anywhere. It's a very
+short paper, but if you must have a summary, it's about a property an RL
+generalization task should satisfy, and ways model-based RL can improve sample
+efficiency at the cost of generalization.
 
-Off-Policy Evaluation of Generalization for Deep Q-Learning in Binary Reward Tasks (LINK)
+The second is [Off-Policy Evaluation via Off-Policy Classification](LINK). This
+is a much longer paper written with many more authors over many more months.
+It's about off-policy evaluation, the problem of evaluating an RL policy
+without directly running that policy in the final environment. This is a problem
+I was less familiar with before starting this paper, but I now believe it to
+be both really important and really understudied. Our aim was to evaluate policies
+using just a Q-function, without importance sampling or model learning. With
+some assumptions about the MDP, we can use classification techniques to
+evaluate policies, and we show this scales up to image-based tasks, including
+some real-world grasping models from other work.
 
-Alex Irpan, Kanishka Rao, Konstantinos Bousmalis, Chris Harris, Julian Ibarz, Sergey Levine
+I'm working on a more detailed post about off-policy evaluation, to explain
+why it feels like a very important problem in RL, but it needs more polish.
+For now, let me know if you read either paper.
 
-This paper is primarily an off-policy evaluation paper. I was less familiar
-with this problem before working on this paper, but I now believe it's a problem
-that's both really important and really understudied.
-
-This post is **not** trying to summarize the entire paper. Instead, it aims to
-motivate why off-policy evaluation is an important problem, and provide a
-high-level overview of our approach and results.
 
 
 Why Off-Policy Evaluation?
