@@ -13,9 +13,10 @@ layout: default
   </article>
 
   <!--- Post links -->
+  <!--- Add a bit of padding to prev link for spacing -->
   <div class="post-nav">
     {% if page.previous %}
-    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="older-posts">&larr; {{ page.previous.title }}</a>
+    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="older-posts">&larr; {{ page.previous.title }}</a>&nbsp;&nbsp;&nbsp;
     {% endif %}
     {% if page.next %}
     <a href="{{ page.next.url | prepend: site.baseurl }}" class="newer-posts">{{ page.next.title }} &rarr;</a>
