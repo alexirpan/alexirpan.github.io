@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-*Last updated May 13, 2019.*
+*Last updated June 4, 2019.*
 
 My current main research interest is deep reinforcement learning, with a bias towards its applications to robotics. Within that, I care about reducing real-world data needed for robot learning, improving reliability of RL systems, and thinking about problems that arise when applying reinforcement learning to real-world settings.
 
@@ -17,6 +17,36 @@ Papers:
 ---------------------------------------------
 
 <p></p>
+
+### Off-Policy Evaluation via Off-Policy Classification
+
+*Alex Irpan, Kanishka Rao, Konstantinos Bousmalis, Chris Harris, Julian Ibarz, Sergey Levine*
+
+Paper: [here](https://arxiv.org/abs/1906.01624)
+
+Code: [here](https://gist.github.com/alexirpan/54ac855db7e0d017656645ef1475ac08)
+
+*ICML 2019 Workshop, Reinforcement Learning for Real Life*
+
+Proposes off-policy classification, an approach for off-policy evaluation based
+on classifying $$(s,a)$$ with a Q-function estimate. The approach does not
+require importance sampling or model learning, and works for image-based tasks.
+Shows we can evaluate the transfer performance of models from simulation to a
+real-world robot, without running the real-world robot.
+
+### The Principle of Unchanged Optimality in Reinforcement Learning Generalization
+
+*Alex Irpan\*, Xingyou Song\*. Asterisk indicates equal contribution.*
+
+Paper: [here](https://arxiv.org/abs/1906.00336)
+
+*ICML 2019 Workshop, Understanding and Improving Generalization in Deep Learning*
+
+Discusses a principle for designing RL generalization benchmarks: changes to your
+dynamics should be observable by your policy to make your problem well-founded.
+Argues this using comparisons to supervised learning generalization. Additionally
+discussses potential trade-offs between sample complexity and generalization in
+model-based RL.
 
 ### Sim-to-Real via Sim-to-Sim: Data-efficient Robotic Grasping via Randomized-to-Canonical Adaptation Networks
 
