@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "I'm Still Here"
-date:   2019-07-11 23:51:00 -0700
+date:   2019-07-11 23:58:00 -0700
 ---
 
 I normally like my blog posts to have a coherent theme to them. The problem is
-that this takes time, which I haven't had recently becuase I've been putting it
+that this takes time, which I haven't had because I've been putting it
 into other side projects instead. I got [inspired recently](https://sivers.org/ego),
 and figured, screw it, I'll just write a grab bag blog post to remind people
 this blog still exists, and go from there.
@@ -15,13 +15,13 @@ Dominion is a card game I was introduced to in 2010, and I took a liking to it
 right away. I got deep enough into it that I started playing competitively,
 participating in online tournaments, and so on. These days I don't play it very
 often, but I still stick around the community. The online version of Dominion
-has a rich, storied history, and many of the older members who've seen it all have
-left Dominion by now. I'm realizing I'm one of the few people who both
+has a rich, storied history. Many of the older members who've seen it all have
+left Dominion, and I'm realizing I'm one of the few people who both
 experienced all of it firsthand and wants to make sure those stories aren't
-forgotten, hence the side project.
+forgotten. Hence, the side project.
 Writing it has been really fun, but also really time-consuming.
 One restriction I have is that everything needs to have a primary source,
-and this means searcing through 8 year old forum threads and archive.org snapshots
+and this means searching through 8 year old forum threads and archive.org snapshots
 for defunct companies to get links for everything. I have no idea who will read
 this, but it's important to me.
 
