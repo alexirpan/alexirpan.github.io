@@ -1,13 +1,14 @@
 ---
 layout: post
 title:  "I'm Still Here"
-date:   2019-07-11 21:04:00 -0700
+date:   2019-07-11 23:51:00 -0700
 ---
 
 I normally like my blog posts to have a coherent theme to them. The problem is
 that this takes time, which I haven't had recently becuase I've been putting it
-into other side projects instead. I figured, screw it, I'll just write a
-grab bag blog post to remind people this blog still exists, and go from there.
+into other side projects instead. I got [inspired recently](https://sivers.org/ego),
+and figured, screw it, I'll just write a grab bag blog post to remind people
+this blog still exists, and go from there.
 
 The first side project I've been working on is a history of Dominion Online.
 Dominion is a card game I was introduced to in 2010, and I took a liking to it
