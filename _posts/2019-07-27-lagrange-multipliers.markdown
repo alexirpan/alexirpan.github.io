@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Langrange Multipliers Refresher, For Idiots Like Me"
-date:   2019-07-11 23:58:00 -0700
+date:   2019-07-27 00:09:00 -0700
 ---
 
 
@@ -172,9 +172,8 @@ This procedure doesn't guarantee that your constraint
 $$g(x) \ge c$$ is met over the entire optimization process, but it
 does quickly penalize the optimization for violating the constraint, since
 the $$\lambda$$ for that constraint will quickly rise and keep rising until
-the constraint is satisfied again. At that point, $$-\lambda(g(x) - c)$$ will
-be negative once more, and $$\lambda$$ will quickly regress towards $$0$$ to avoid
-helping the optimization over $$x$$.
+the constraint is satisfied again, at which point $$\lambda$$ will quickly
+regress towards $$0$$ until it is needed once more.
 
 As one final detail, handling inequalities does require handling optimization
 over $$\lambda \ge 0$$. The common trick is to rewrite $$\lambda$$
