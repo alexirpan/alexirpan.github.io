@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Langrange Multipliers Refresher, For Idiots Like Me"
+title:  "A Lagrange Multipliers Refresher, For Idiots Like Me"
 date:   2019-07-27 00:09:00 -0700
 ---
 
