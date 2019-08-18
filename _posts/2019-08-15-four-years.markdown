@@ -1,52 +1,49 @@
 ---
 layout: post
 title:  "Four Years Later"
-date:   2019-08-18 01:22:00 -0700
+date:   2019-08-17 01:22:00 -0700
 ---
 
 *Sorta Insightful* turns four years old today! Whether you were here from the
 beginning, or just discovered this blog, thanks for reading.
 
-Tradition states that I should write a self-reflective post about blogging. This
-won't be the greatest because I've been doing MUMS Puzzle Hunt the past 2 weeks,
-but, well, I knew that going in.
+I like to do an annual meta-post every year about blogging.
+This year's post is a bit rushed since I've been doing [MUMS Puzzle Hunt](https://www.mumspuzzlehunt.com/)
+the past 2 weeks, but I knew the risks going in.
 
 
-Statistics
-----------------------------------------------------------------
+# Statistics
 
-Word Count
-=============================================
+## Word Count
+
 Last year, I wrote [24,449 words]({% post_url 2018-08-18-three-years %}).
 This year, I wrote **21,878** words.
 
 {% highlight python %}
-  1530 2018-08-18-three-years.markdown  
-  3602 2018-11-10-neopets-economy.markdown  
-  2019 2018-11-27-go-explore.markdown  
-  2773 2019-01-26-mh-2019.markdown  
-  3136 2019-02-22-alphastar.markdown  
-  3087 2019-02-22-alphastar-part2.markdown  
-  1075 2019-04-13-openai-finals.markdown  
-  2621 2019-05-26-iclr19.markdown  
-  343 2019-06-04-arxiv-rl.md  
-  696 2019-07-11-still-here.markdown  
-  996 2019-07-27-lagrange-multipliers.markdown  
-21878 total  
+ 1,530 2018-08-18-three-years.markdown  
+ 3,602 2018-11-10-neopets-economy.markdown  
+ 2,019 2018-11-27-go-explore.markdown  
+ 2,773 2019-01-26-mh-2019.markdown  
+ 3,136 2019-02-22-alphastar.markdown  
+ 3,087 2019-02-22-alphastar-part2.markdown  
+ 1,075 2019-04-13-openai-finals.markdown  
+ 2,621 2019-05-26-iclr19.markdown  
+   343 2019-06-04-arxiv-rl.md  
+   696 2019-07-11-still-here.markdown  
+   996 2019-07-27-lagrange-multipliers.markdown  
+21,878 total  
 {% endhighlight %}
 
-In all honesty, I'm surprised it isn't lower. I felt I wasn't spending as much
-time blogging this year, and was expecting a much bigger drop in word count than
-about 10%.
+In all honesty, I'm surprised it isn't lower. I haven't spent as much time
+blogging this year.
 
-I wrote 11 posts this year, slightly under my trend of 1 post a month on average.
-I'm counting the AlphaStar post as 2 posts, even though both parts were written
-and released at the same time.
+I wrote 10 posts this year, under my trend of 1 post a month on average.
+This counts the AlphaStar post as a single post, even though it was split into
+2 parts, because both parts were written and released at the same time.
 
-View Counts
-====================================================
+# View Counts
 
-This only counts view from August 18, 2018 to today, for only posts I've written
+These are the view counts from August 18, 2018 to today, for the posts I've written
 this year.
 
 {% highlight python %}
@@ -63,158 +60,190 @@ this year.
   1,055 2019-07-27-lagrange-multipliers.markdown  
 {% endhighlight %}
 
-This is actually noticeably larger than last year, once you remove outliers. I'm
-pleasantly surprised that my Neopets post is up there in view count. Here I was,
-thinking that people only read my blog for the machine learning content.
+When you remove outliers, this is higher than last year. I'm
+pleasantly surprised my [Neopets economy]({% post_url 2018-11-10-neopets-economy %})
+post got solid viewership. It's one of my favorites. I mean, on a reread,
+I'd change a bunch of things about the writing, but that's what normally happens
+when you read your old work.
 
 
-Time Spent Writing
-============================================
+## Time Spent Writing
 
 Excluding time spent on this post, my time tracker says I've spent **88 hours, 12 minutes**
 writing for my blog this year. This is about 2/3rds of the time I spent last year,
 and explains why it felt like I didn't blog as much this year: I genuinely
 didn't!
 
-It remindes me of one of my favorite quotes.
+The word count doesn't reflect this, but that's expected.
+The rather frustrating thing about writing is the complete lack of correlation
+between time spent and words produced. If anything, you spend a lot of time
+making sure you use fewer words. The better you do this, the less people
+recognize it.
 
 > If I am to speak ten minutes, I need a week for preparation; if fifteen minutes,
 > three days; if half an hour; two days; if an hour, I am ready now.
 
-This is attributed to Woodrow Wilson, [but you can read the Quote Investigator
-post if you want to see the full attribution story](https://quoteinvestigator.com/2014/03/01/short-speech/).
-
-The rather frustrating thing about writing is that you spend a lot of time to
-make sure others don't spend a lot of time understanding you, and the better
-you do this, the easier it is to ignore. Well, that's how life works.
+Woodrow Wilson. [Well, maybe.](https://quoteinvestigator.com/2014/03/01/short-speech/).
+{: .centered }
 
 
-Posts in Limbo
-------------------------------------------------------------------------------
+# Posts in Limbo
 
 > To be honest, I do still want to write that post about
 > *Gunnerkrigg Court*. I've been talking about writing that post for over two
 > years. One day, it'll happen. It has to.
 
-(Me, last year)
+([Me, last year]({% post_url 2018-08-18-three-years %}))
 {: .centered }
 
-Oh, past me, how wrong you were. I claimed a Gunnerkrigg Court post was
-inevitable, but there's a very good chance I never write it.
+Oh, past me, how wrong you were.
 
-My interest in Gunnerkrigg Court has cooled down a lot ever since the conclusion
-of the Jeanne arc. Don't get me wrong: it's still a great webcomic, and I'll
-easily recommend it to everyone. However, the emotional resonance has faded a
-lot. A few big events have happened since then, but right now it feels like
-the comic is looking for a new overarching mystery to guide the plot. The
-chapters afterwards have felt more like aftershocks, rather than a new
-overarching mystery, and with it unfolding at Webcomic Time, it's going to
-take a while for the new main plot thread to appear.
+My interest in [Gunnerkrigg Court](https://www.gunnerkrigg.com/?p=1) has cooled down a lot ever since the conclusion
+of the Jeanne arc. Don't get me wrong, it's still a great webcomic. However,
+it's been less emotionally resonant for me this year. There have been a few big
+events, but right now it feels like the comic is in search of a new
+overarching mystery to guide the plot. The chapters so far have
+felt like aftershocks of the Jeanne conclusion,
+rather than a new plot. I'm sure it'll get to
+a new driving question soon, but with the story unfolding at [Webcomic Time](https://tvtropes.org/pmwiki/pmwiki.php/Main/WebcomicTime), it's
+going to take a while to get there.
 
-Again, I do still want to write that post. But I want to write it in the sense
-that I like the idea of writing it, which isn't the same as actually writing it.
-Let me see if I can explain this...
+I still want to write a *Gunnerkrigg Court* post. But I want to write
+it in the sense that I like the *idea* of writing it. That isn't the same as
+actually doing it.
 
-One way to view decision making is that your choices are solely dependent
-on your mental state, and the environment you're in. Let's suppose I'm making
-a choice about something that barely depends on my environment. I, at some point,
+One way to view decision making is that your choices depend on two things:
+your mental state, and your environment. Side projects, like this blog,
+usually don't depend on the environment, because they have little to no
+deadlines or accountability.
+
+I, at some point,
 reach a mental state where I think
 "Gee,
-I should write a post about *Gunnerkrigg Court*". But I'm busy, or have
-other posts I want to write instead, so I don't.
+I should write a post about *Gunnerkrigg Court*". But I'm busy, or want
+to write other posts, so I don't write about *Gunnerkrigg Court*.
+This decision sends me on a trajectory that arrives at the
+same mental state where I think "Gee, I should write a post about
+*Gunnerkrigg Court*".
 
-Later on, I re-arrive at the same mental state, and have the same thought.
-"Gee, I should write a post about
-*Gunnerkrigg Count*". Unless something has changed in my thinking since then,
-my next decision will be the same as before: I'll say I'm busy, or that I
-want to write other posts first. Repeat a few times, and the end result is that
-my thought process follows the same cyclic trajectory, and I'll continually
-say that I'll write something, without actually doing it, until something
-changes to break the loop.
+Because there's no accountability, unless something has changed in my
+thinking since last time, my next decision will be the same: I'll say I'm
+busy and do something else. Since my choice was the same, it sends me on the same trajectory
+as before,
+that arrives at the same point as before, creating a loop. Until something changes, my behavior will follow the same cyclic pattern where nothing happens.
 
-One way is by changing the environment. Deadlines are a good example of this.
-Think of it this way: the deadline is part of the environment. Every day, the
-deadline gets closer. If you enter a cyclical pattern of thought, then every
-time you restart the cycle, the deadline gets closer and closer. That's the
-change in the environment. At some point the deadline is close enough that you
-either do it, or you drop it. However, this only works if you respect the
-deadline, and if it isn't up for negotiation.
+For decisions that depend on the environment, you can break these loops by
+changing the environment. Deadlines are a good example of this.
+I know that I want to make a post for my blogging anniversary. This deadline
+is part of the environment. It arrives on August 18th, it's [inevitable](/public/4year/deadline.jpg),
+and there's no way to change it. That deadline stops me from putting it off
+forever, because it changes the state. First I have a week to write the post.
+Then, I have six days. Five days, four days - eventually, the time limit
+becomes dire enough that I can't avoid it.
+If there isn't a deadline, or if I don't respect the self-imposed deadline,
+then this doesn't work. It's easy to get stuck when the state doesn't change.
 
-The harder way is to simply decide to change your behavior in a way that breaks
-the loop. Obviously doable, and obviously difficult.
+The hard way to break these loops and not get stuck is to simply resolve
+not to get stuck and Actually Do Things. This means recognizing that if you don't work on something now,
+you may never work on it in the future, because you're implicitly deciding
+what you'll do in any future decision point sufficiently similar to the current
+one. Maybe you're okay with that. Maybe you aren't. If you aren't, then you
+should just Do The Thing, or at least Start Doing The Thing.
+Of course, it's hard to Actually Do Things, but it's why I respect people who
+do so.
 
-In my case, that means...well, that I'm not writing the post yet. But, I'll
-formally add it to my list of post ideas that I'd like to write, and maybe
-that'll act like the forcing function I need.
-
-
-Upcoming Posts
-------------------------------------------------------------------------
-
-I have a bad relationship with TODO lists, in the same way that I have a bad
-relationship with Pomodoros and other tricks that people I know swear by.
-However, I'm going to try them, just this once.
-
-Here's a summary of posts I've considered writing recently.
+(A lot of this section is inspired by conversations I've had with friends that
+self-identify as rationalists, who tried explaining timeless decision theory
+to me. I didn't get timeless decision theory at all, but it turns out that
+you don't have to understand something to get useful ideas out of it.)
 
 
-| Post Subject | Why I Want to Write It | Estimated Time to Complete | Odds I Decide to Write It |
-| A post about measurement. Not at the level of "how is a meter defined", although I do like that discussion. I'm more interested in explaining that measurements are inherently imperfect pictures of the underlying reality, an approximation leveraged when it's hard to know the truth. This would then lead into why understanding this is important for understanding how statistics can be misleading, why science can be tricky to reproduce, and why it's critical to understanding the limitations of machine learning and why ML practioners should be very careful when interacting with the real world.
+# What's Next?
 
-Why I want to Write It: It's a very useful mental concept for understanding
+I'm planning to make more of an effort on blogging this year.
+In case I don't write any of the planned posts, here are some notes
+on posts I've been meaning to write. That way, if they never materialize, you can
+fill in the blanks yourself.
+
+
+## Measurement
+
+**Topic:** A post about measurement. Not at the level of "how is a meter defined", although I do like that discussion. It would be more about how measurements are inherently imperfect pictures of the underlying reality.
+Understanding this is important for understanding when statistics and
+machine learning can give misleading results, as well as understanding
+the limitations and risks of ML.
+
+**Why I want to Write It:** It's a useful mental concept for understanding
 how you can be wrong, despite having lots of data. It's something that experienced
-ML people deeply understand, but most ML courses don't try to explain it, instead
-letting people discover it for themselves. As machine learning gets applied to
-more of society, it is crucially important for people to become ML-literate.
-Not at the level of understanding the math behind ML, but at the level of
-understanding when it'd be a bad idea to blindly apply machine learning.
+ML people understand, but most ML courses don't try to explain it.
+As machine learning gets applied to more of society, it's crucially important
+that people become ML-literate. Not at the level of understanding the math
+behind machine learning, but at the level of understanding the concepts backing
+concerns of blindly applying machine learning to arbitrary problem domains.
 
-Estimated Time to Complete: Very high. I've thought about this a while, and want
-to explain it right, but explaining it right will require a lot of careful thought.
+**Estimated Time to Complete:** Very high. I've thought about this a while,
+and could write a bad post pretty quickly, but I want to explain it right,
+and that'll require a lot of careful thought.
 
-Odds I Do Eventually Write This: Almost Certain (95%+)
+**Odds I Write This, Eventually**: 95%
+
+**Odds I Write This By the End of 2019**: 20%
 
 
-A post about Gunnerkrigg Court. What it does well, why I find its story fun,
+## Gunnerkrigg Court
+
+**Topic:** A post about Gunnerkrigg Court. What it does well, why I find its story fun,
 and why you should read it.
 
-Why I Want to Write It: Gunnerkrigg Court is up there as one of my favorite
+**Why I Want to Write It:** Gunnerkrigg Court is one of my favorite
 webcomics of all time, and although I have a short blurb about it on my
 Webcomics Recommendation page, I've felt I have more to say about it than
 just that blurb suggests.
 
-Estimated Time to Complete: Medium-High
+**Estimated Time to Complete:** Medium-High. I'm not sure what I want to say but
+I don't think there's a lot of it.
 
-Odds I Eventually Write This: Reasonable (75%+)
+**Odds I Write This, Eventually:** 75%
+
+**Odds I write This By The End of 2019:** 25%
 
 
-A post about attending BronyCon 2019, and my thoughts on what My Little Pony means
+## My Little Pony
+
+**Topic:** A post about attending BronyCon 2019, and my thoughts on what My Little Pony means
 to me and the community that grew around it, along with what I've learned about
 how the world works.
 
-Why I Want to Write It: I've been meaning to write a post about My Little Pony
+**Why I Want to Write It:** I've been meaning to write a post about My Little Pony
 for a while, but had trouble even starting to get thoughts down. It was too big
 for me to explain. I think I can use BronyCon 2019 as a lens to focus thoughts
 into more specific ideas, and if I have unused material I can make follow-on
 posts later on.
 
-Estimated Time to Complete: High. Will likely involve lots of introspecting,
+**Estimated Time to Complete:** High. Will likely involve lots of introspecting,
 and figuring out the right phrasings for implicit concepts that I haven't
 put into words before.
 
-Odds I Eventually Write This: High (85%+)
+**Odds I Write This, Eventually:** 85%
+
+**Odds I Write This By the End of 2019:** 50%
 
 
-A post about the history of Dominion Online, and the many trials it's been
-through. This is the same post I mentioned in a previous post.
+## Dominion Online
 
-Why I want to Write It: I've been part of the competitive Dominion community for
+**Topic:** A post about the history of Dominion Online, and the many trials it's been
+through. This is the same post I mentioned in a [previous post.]({% post_url 2019-07-11-still-here %})
+
+**Why I want to Write It:** I've been part of the competitive Dominion community for
 many years, and as someone who lived through a lot of the drama, I'm realizing
-that the list of people who've seen everything Dominion's gone through drops
-every day. I would rather these stories not be forgotten.
+that the list of people who have both seen all the drama and want to document it
+is very, very short. It's pretty much me and no one else.
 
-Estimated Time to Complete: Very high. I know exactly what I want to say, the
+**Estimated Time to Complete:** High. I know exactly what I want to say, the
 time comes from having to look up sources for everything, and the sheer length
-of what I want to write.
+of what I want to write. The only reason this isn't "Very High" is because I have
+the first 1/3rd written already.
 
-Odds I Eventually Finish This: High (85%+)
+**Odds I Write This, Eventually:** 85%
+
+**Odds I Write this By the End of 2019:** 35%
