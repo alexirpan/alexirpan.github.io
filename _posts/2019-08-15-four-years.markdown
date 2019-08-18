@@ -168,26 +168,28 @@ fill in the blanks yourself.
 
 ## Measurement
 
-**Topic:** A post about measurement. Not at the level of "how is a meter defined", although I do like that discussion. It would be more about how measurements are inherently imperfect pictures of the underlying reality.
-Understanding this is important for understanding when statistics and
-machine learning can give misleading results, as well as understanding
+**Topic:** A post about measurement. Not at the level of "how is a meter defined", although I do like that discussion. It would be more about how measurements are inherently imperfect pictures of the reality we're trying to measure,
+where imperfections are created by the process generating the measurements.
+Understanding this is important for explaining why statistics and
+machine learning can give misleading results, as well as
 the limitations and risks of ML.
 
-**Why I want to Write It:** It's a useful mental concept for understanding
-how you can be wrong, despite having lots of data. It's something that experienced
-ML people understand, but most ML courses don't try to explain it.
+**Why I want to Write It:** It's a useful mental concept that explains why
+more data isn't always good.
+It's something that experienced
+ML people understand, but it takes a while for the lessons to sink in.
 As machine learning gets applied to more of society, it's crucially important
-that people become ML-literate. Not at the level of understanding the math
-behind machine learning, but at the level of understanding the concepts backing
-concerns of blindly applying machine learning to arbitrary problem domains.
+that non-ML people become ML-literate. Not at the level of understanding the math
+behind machine learning, but at the level of understanding the concerns of
+blindly applying machine learning to arbitrary problem domains.
 
 **Estimated Time to Complete:** Very high. I've thought about this a while,
 and could write a bad post pretty quickly, but I want to explain it right,
-and that'll require a lot of careful thought.
+and that'll require a lot of careful writing.
 
-**Odds I Write This, Eventually**: 95%
+**Odds I Write This, Eventually:** 95%
 
-**Odds I Write This By the End of 2019**: 20%
+**Odds I Write This by the End of 2019:** 20%
 
 
 ## Gunnerkrigg Court
@@ -203,22 +205,22 @@ just that blurb suggests.
 **Estimated Time to Complete:** Medium-High. I'm not sure what I want to say but
 I don't think there's a lot of it.
 
-**Odds I Write This, Eventually:** 75%
+**Odds I Write This, Eventually:** 70%
 
-**Odds I write This By The End of 2019:** 25%
+**Odds I Write This by the End of 2019:** 25%
 
 
 ## My Little Pony
 
 **Topic:** A post about attending BronyCon 2019, and my thoughts on what My Little Pony means
 to me and the community that grew around it, along with what I've learned about
-how the world works.
+how communities are created and become self-sustaining.
 
 **Why I Want to Write It:** I've been meaning to write a post about My Little Pony
-for a while, but had trouble even starting to get thoughts down. It was too big
+for a while, but had trouble deciding where to begin. It was too big
 for me to explain. I think I can use BronyCon 2019 as a lens to focus thoughts
 into more specific ideas, and if I have unused material I can make follow-on
-posts later on.
+posts later.
 
 **Estimated Time to Complete:** High. Will likely involve lots of introspecting,
 and figuring out the right phrasings for implicit concepts that I haven't
@@ -226,7 +228,7 @@ put into words before.
 
 **Odds I Write This, Eventually:** 85%
 
-**Odds I Write This By the End of 2019:** 50%
+**Odds I Write This by the End of 2019:** 50%
 
 
 ## Dominion Online
@@ -234,14 +236,14 @@ put into words before.
 **Topic:** A post about the history of Dominion Online, and the many trials it's been
 through. This is the same post I mentioned in a [previous post.]({% post_url 2019-07-11-still-here %})
 
-**Why I want to Write It:** I've been part of the competitive Dominion community for
-many years, and as someone who lived through a lot of the drama, I'm realizing
-that the list of people who have both seen all the drama and want to document it
-is very, very short. It's pretty much me and no one else.
+**Why I Want to Write It:** I've been part of the competitive Dominion community for
+many years. The list of people who have both lived through all the drama and
+want to document it is very, very short. It's pretty much just me, as far as I
+know, so if I don't write it, no one will.
 
-**Estimated Time to Complete:** High. I know exactly what I want to say, the
-time comes from having to look up sources for everything, and the sheer length
-of what I want to write. The only reason this isn't "Very High" is because I have
+**Estimated Time to Complete:** High. I know exactly what I want to say, but
+there are a lot of sources to look up, and the sheer length
+of what I want to write is daunting. The only reason this isn't "Very high" is because I have
 the first 1/3rd written already.
 
 **Odds I Write This, Eventually:** 85%
