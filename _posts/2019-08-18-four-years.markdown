@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Four Years Later"
-date:   2019-08-17 01:22:00 -0700
+date:   2019-08-18 16:16:00 -0700
 ---
 
 *Sorta Insightful* turns four years old today! Whether you were here from the
@@ -83,7 +83,7 @@ recognize it.
 > If I am to speak ten minutes, I need a week for preparation; if fifteen minutes,
 > three days; if half an hour; two days; if an hour, I am ready now.
 
-Woodrow Wilson. [Well, maybe.](https://quoteinvestigator.com/2014/03/01/short-speech/).
+(Woodrow Wilson. [Well, maybe.](https://quoteinvestigator.com/2014/03/01/short-speech/).)
 {: .centered }
 
 
@@ -234,7 +234,7 @@ put into words before.
 ## Dominion Online
 
 **Topic:** A post about the history of Dominion Online, and the many trials it's been
-through. This is the same post I mentioned in a [previous post.]({% post_url 2019-07-11-still-here %})
+through. This is the same post I mentioned in a [previous post]({% post_url 2019-07-11-still-here %}).
 
 **Why I Want to Write It:** I've been part of the competitive Dominion community for
 many years. The list of people who have both lived through all the drama and
