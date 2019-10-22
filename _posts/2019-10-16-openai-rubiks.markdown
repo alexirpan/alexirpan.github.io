@@ -183,22 +183,71 @@ I remember when I first heard about domain randomization. I thought it was going
 to fix everything. Then I tried it myself, and talked to people who tried it
 for their projects, and got more realistic.
 
-If your sim2real transfer difficulties are bottlenecked on vision, then domain
-randomization is great. Define some random textures and lighting, instrument
-your simulator, then go to town. I think vision problems naturally lend themselves
-to invariance, and randomization is essentially a way to augment training
-data to not care about certain parts of the environment. If you're trying to
-estimate the pose of an object from vision, it doesn't matter what color or
-texture that object is.
+The common explanation of domain randomization is that by adding lots of
+randomness to your simulator, you can avoid the meticulous process of system
+identification. I'm starting to think this is only sort of true.
 
-If your sim2real transfer problem is bottlenecked on physics and dynamics, then
-you have problems. Unfortunately, almost all interesting manipulation problems
-are bottlenecked on dynamics.
+Consider the problem of contact forces. Now, I have very little experience with
+making physics simulators, but when I talk to colleagues with sim experience,
+contact forces make them break out in cold sweats. It's simply very hard to
+model the forces between objects that are touching each other. Somehow, there
+are always more interactions that are not properly modelled by the simulator.
 
-That's just my opinion, so let me justify it. Consider the problem of contact
-forces. How should we model the forces between objects that are touching each
-other? Physics simulators do okay at this, but also have many, many imperfections.
+Now, the domain randomization viewpoint here is that if you randomize frictions
+between everything, your model should generalize to real world dynamics without
+issue. And *sometimes*, this works, but more commonly, some aspect of physics
+isn't in the space of interactions your simulator can represent. REPHARSE THIS.
+Imagine something like modelling the movements of two magnets, in a simulator
+that doesn't model electromagnetic forces between objects. It doesn't matter
+how much you randomize friction or mass - you're never going to predict the
+movement of those magnets.
 
+Obviously simulators will model electromagnetic forces if there's reason to
+believe they're relevant to the task at hand, and in fact they do use magnetic
+field sensors to estimate joint angles.
+I'm just bringing them up as
+an example of a known unknown. What do you do about the unknown unknowns?
+The dynamical effects that are out of the space of any of your randomized simulators?
+
+If you look through sim2real papers, it's not a coincidence that many of the
+best sim2real results are about sim2real transfer of vision, for tasks with
+limited dynamics mismatch. If the transfer
+learning is bottlenecked on vision, domain randomization is great! Convolutional
+neural nets are absurdly good, random textures and lighting is something almost
+all simulators support, and if tuned properly it should just work.
+
+Unfortunately, practically all interesting robot manipulation problems are
+bottlenecked on dynamics.
+
+
+What Was I Talking About Again? Right, Rubik's Cube
+-------------------------------------------------------------------------------
+
+The reason I'm bringing up all my domain randomization opinions is because on
+a closer read, the Rubik's Cube result is much less of a win story for
+domain randomization than I thought. Even with randomization, simulator calibration
+has a noticeable effect on their results.
+
+I missed this before, but this was true in their Learning Dexterity result
+as well. From Appendix C.3 of that paper:
+
+> The MuJoCo XML model of the hand requires many parameters, which are then used as the mean of the randomized distribution of each parameter for the environment.
+> Even though substantial randomization is required to achieve good performance on the physical robot, we have found that it is important for the mean of the randomized distributions to correspond to reasonable physical values.
+> [...] For each joint, we optimize the damping, equilibrium position, static friction loss, stiffness, margin,and the minimum and maximum of the joint range. For each actuator, we optimize the proportionalgain, the force range, and the magnitude of backlash in each direction. Collectively, this corresponds to 264 parameter values.
+
+UPDATE THIS PART TO CLARIFY IT'S FROM THE HAND
+
+> We test how much of an impact simulation calibration has. [...] We evaluate a
+> policy trained on the old simulation and on the new simulation (i.e. with
+> coupling and dynamics calibration).
+
+The results table says they say an increase from 4.8 successful face rotations
+to 14.30 face rotations. That's a pretty big jump!
+
+In addition, Section 4.2 of the paper
+
+BETTER TITLE
+-----------------------------------------------------------
 
 
 One question you may have is, "why don't they train with real data?" In robotics,
