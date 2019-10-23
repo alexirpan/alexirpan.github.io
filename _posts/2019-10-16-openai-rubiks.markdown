@@ -6,118 +6,197 @@ date:   2019-10-16 01:25:00 -0700
 
 Recently, OpenAI announced they had [gotten their dexterous
 manipulation system to solve a Rubik's Cube](https://openai.com/blog/solving-rubiks-cube/).
-This is pretty cool, and I actually don't have too much to add besides that.
-I figured it would be good to explain some background here, because this is
-very much a steady continuation of existing work, rather than something insane.
+I thought I wouldn't have too much to say, and then this post became longer
+than I expected.
 
 
 What Did OpenAI Do?
 ----------------------------------------------------------------------
 
-Using reinforcement learning, they've learned a controller for a [Shadow Hand](https://www.shadowrobot.com/products/dexterous-hand/)
-that lets them solve a Rubik's Cube with reasonable success rate. Their reported
-success rate is 60% for average scrambles and 20% for the hardest possible
-scrambles (that require 26 quarter-face turns).
+Using reinforcement learning, they learned a controller for a [Shadow Hand](https://www.shadowrobot.com/products/dexterous-hand/)
+that lets them solve a Rubik's Cube with reasonable success rate. They
+report a success rate of 60% for average scrambles, and 20% for the hardest
+possible scrambles (that require 26 quarter-face turns).
 
-This numbers sound low out of context. In context, they're pretty good.
-Dexterous manipulation is a huge pain to learn.
+I say doing RL on the Shadow Hand platform, but really, I mean they do learning
+on a simulated version of the Shadow Hand, then try to get that to transfer to
+the real Shadow Hand with no real data.
+
+If you can successfully manipulate a cube, solving it isn't too hard. There
+are known search algorithms to find the sequence of turns (Kociemba's
+algorithm is the standard one), and they rely on Kociemba's algorithm to
+provide the sequence of turns, which the RL policy then executes.
+
+The true result here is the successful dexterous manipulation of the
+Rubik's Cube with the Shadow Hand.
 
 
 Why is Dexterous Manipulation Hard?
 -----------------------------------------------------------------------
 
 Okay, big cavaet. I've worked on robotic manipulation, but I haven't worked
-on dexterous manipulation. So maybe I'm totally off here. But the TL;DR
-answer is that hardware is terrible and simulators suck unless you spend a
-bunch of time improving them.
+on dexterous manipulation with hands before. So, maybe I'm totally off here.
+But the TL;DR answer is that hardware is terrible and simulators suck unless
+you spend a bunch of time improving them.
 
-For context, OpenAI says they've been working on solving a Rubik's Cube since
+OpenAI says they've been working on solving a Rubik's Cube since
 May 2017. It took them 2 months (May 2017 - July 2017) to solve it in
-simulation. It took them 1 more year (July 2017 - July 2018) to get to manipulating
-a solid wooden block. It took them 14 more months (July 2018 - October 2019)
-to get to the Rubik's Cube. The "runs on a real robot" part is the entire
-reason the learning problem is difficult.
+simulation with a simulated hand. It took them 1 more year (July 2017 - July 2018)
+to get a real hand to manipulate a solid wooden block. Then, another
+14 months (July 2018 - October 2019) to get to the Rubik's Cube. The "runs on a
+real robot" part is the entire reason the learning problem is difficult.
 
 
-Hang On, Wasn't This Robot Hand in the News Before?
+Wasn't This Robot Hand in the News Before?
 ----------------------------------------------------------------------
 
-It was! OpenAI announced they were doing RL on the Shadow Hand
-back in July 2018 in their [Learning Dexterity](https://openai.com/blog/learning-dexterity/)
-post.
-
-I say doing RL on the Shadow Hand platform, but really, I mean they do learning
-on a simulated version of the Shadow Hand, then try to get that to transfer to
-the real Shadow Hand with no real data.
+It was! It showed up in their
+[Learning Dexterity](https://openai.com/blog/learning-dexterity/)
+post from July 2018, where it also got a lot of press.
 
 
-What's New?
--------------------------------------------------------------------------------
+What Isn't New?
+----------------------------------------------------------------------
 
-From a learning perspective, there actually isn't that much.
-This looks like a ["moonshot achieved through roofshots"](https://rework.withgoogle.com/blog/the-roofshot-manifesto/)
-project, where there's a clear line of steady, compounding improvements.
+Everything about this paper looks like
+a ["moonshot achieved through roofshots"](https://rework.withgoogle.com/blog/the-roofshot-manifesto/)
+project, where there's a clear line of steady, compounding improvements from
+prior work.
 
-It's easier to start with what isn't new. The model is trained using
-distributed PPO with OpenAI's Rapid framework, which was used for both DotA 2
-and the original Learning Dexterity paper.
-The model architecture is reminiscent of the DotA 2 architecture - different
-input features are embedded into a
-512-dimensional embedding space, then summed together and passed through a
-large LSTM. Like the Learning Dexterity work, instead of learning a policy
+The model is trained using
+distributed PPO with OpenAI's Rapid framework, which was used for both OpenAI
+Five and the Learning Dexterity paper. The model architecture is heavily
+inspired by the DotA 2 architecture - each input features is embedded into
+a 512-dimensional embedding space, and these embeddings are summed and
+passed through a large LSTM.
+
+Like the Learning Dexterity work, instead of learning a policy
 directly on pixels through RL, they instead predict the pose of the Rubik's
-Cube from three camera images, then feed those predicted poses to the RL
-agent. Again, like the Learning Dexterity work, they use the same asymmetric
+Cube from three camera viewpoints, then feed those predicted poses to the RL
+agent.
+
+Again, like the Learning Dexterity work, they use the same asymmetric
 actor-critic trick, where the critic gets all ground truth state information,
 and the policy only gets the features visible from real-world data, which
 is fine for zero-shot transfer because you only need the policy at inference
 time.
 
-It's clear that the Rubik's Cube result is the same ideas, re-executed in a
-new context. And that's fine, that's how almost all research goes. You try what
-should work, and then it gets you partway, and then you need a few new ideas to
-get further through.
+It's the same ideas, likely even the same codebase, executed in a different
+context.
+
+
+What Is New?
+-----------------------------------------------------------------------
 
 One is the *automatic domain randomization*. In domain randomization, you
-randomly change several aspects of the simulator, learning a model against all
-those variations. This makes the final model more robust and makes it transfer
-better to the real world. However, applying it requires some tuning. Too
-little randomization, and the model won't be robust enough for the real world.
-Too much, and the learning problem becomes too hard to learn.
+learn a model in several randomly sampled simulated environments, learning
+a final model that's more robust and more likely to transfer to reality.
 
-The proposed solution is to take inspiration from automatic curriculum learning.
-We maintain a distribution over simulator parameters, starting with just a
-single point. If the policy reaches a certain performance threshold, we expand
-the distribution. This lets the model to learn a simpler task, before
-learning a more randomized (more difficult) task.
+Applying domain randomization requires some tuning, both for deciding what
+to randomize, and deciding the ranges from which to sample parameters.
+Too little randomization, and the model won't be robust to real-world noise.
+Too much, and the learning problem will become too difficult to learn.
 
-One detail which I only found after a close reading was that they also do
-*adversarial domain randomization*. An adversary applies perturbations to the
-force, torque, and actions, in a way that hurts performance...or rather, that's
-the theory. In practice, a random network (re-initialized every episode)
-performed better than any attempt to learn the adversary. This seems weird
-to me - I can believe the result, but my intuition is still too optimistic
-about adversarial learning to fully believe it.
+Taking inspiration from automatic curriculum learning, they maintain a
+distribution over simulator parameters, starting at a single point.
+If the policy's recent performance is above a threshold, the distribution
+is expanded to be wider. This lets us start from a simple problem, then
+expand its difficulty as the policy gets better at the task. (The
+distribution is never narrowed, and I assume you have to tune how much
+you widen each dimension, and the performance threshold, but this is
+still fewer parameters and less work than defining a fixed distribution
+or fixed curriculum schedule.)
 
-From a learning perspective, the final new thing is a heavier lean on
+Another detail which I only found after a close reading was
+*adversarial domain randomization*. This has been done before. An adversary
+applies perturbations to the
+force, torque, and actions, in a way that hurts performance to mine hard
+examples. Or rather, that's the theory, but in practice they
+found best results with a random adversary, which performed better than
+any learned adversary.
+This seems weird to me. I can believe the result, and at the same time it
+feels like a learned adversary should be better (but perhaps it's tricky
+to tune it properly.)
+
+Finally, although it's not directly related, there is
+a heavier lean on
 *policy distillation* and *model surgery*. This is a lesson they've carried
 over from DotA 2. Over the course of a long project, you will naturally want
 add new input features or try new neural net architectures. If the model takes
 a long time to train, it's worth designing methods that let you do this without
-training from scratch. Their model architecture is always structured as one
-that embeds each feature into a separate embedding that is added together, and
-the reason is because when you add a new feature, the added parameters don't
-change the semantic meaning of any other parameter, leaving you closer to a good
-initialization.
+training from scratch. The reason they add embeddings together instead of
+concatenating them is because you can easily add a new feature without changing
+the shape of any existing weight matrices. This lets you avoid training entirely
+from scratch.
 
 DIAGRAM
 
 For approaches that aren't compatible with this (like changing the LSTM size),
-existing models can be distilled into the new model architecture, which runs
-much faster than training from scratch.
+the current model can be distilled into the new model architecture, which is
+also much faster than training from scratch.
 
 
-Is This Actually Impressive?
+What Are the Pros Of This Work?
+----------------------------------------------------------------------------
+
+I mean, it works. That's always worth celebrating. Based on their demos, the
+result is pretty robust. They've also done a lot of work on interpreting the
+model. It's cool that by applying
+interpretability tools on the LSTM hidden state, they're able to identify
+semantically meaningful clusters for cube manipulation. I know people have
+complaints over how they got the policy to work (more details on that in the
+next section), but I don't think OpenAI has gotten enough credit for their
+analysis of what the learned policy does, and what emergent behaviors may
+appear from sufficiently big neural nets.
+
+In general, I've found that people without robot learning experience are
+poorly calibrated on how much bullshit there is in getting a real robot
+learning setup to work. It's always good to see something get there.
+
+Finally, this is something I *really* haven't seen enough credit for. The part
+I was most excited about in this work wasn't the Rubik's Cube solving. That
+felt inevitable, given time. Nor was I that excited about automatic
+domain randomization. I'm sure it was important to their work, but
+it's well established that automatic curriculum learning works if set up
+properly.
+
+I'm most excited by the comments on policy distillation and model surgery.
+Although these ideas aren't central to the project, they are indicative
+of the right research culture: **a focus on building systems that encourage
+long-term research success.**
+
+About 2 years ago, I talked with an OpenAI employee about why OpenAI spent
+a lot of time working on Gym and OpenAI Baselines. The paraphrased answer
+was that they felt like aspects of research that were undervalued by the
+RL community, and OpenAI was in a position to provide value.
+
+It's really stuck with me. Okay, yes, Gym and Baselines are also great
+branding tools for recruiting purposes. But this would have been true for
+any group that released something that got the adoption of Gym or Baselines.
+In general, it's very easy to build something that's only good for one
+experiment, or one reserach project. There are a lot of pressures to do
+so. But good tooling is actually absurdly helpful for speeding up research,
+because if done properly, the investment pays off long-term over all future
+research projects. Build an interpretability library, and every project can
+try it if they want to. Build RL diagnostics tools, and every RL project
+can try them out. TensorFlow exists because Google wanted different ML
+teams to use the same ML framework.
+
+I'm not saying it's easy to build good tools. It's really hard to build good
+tools, and a lot of times people are reluctant to work on it, because
+it's SWE work that's less interesting than the "real" research work. I fall in
+this bucket too. But, it's all research work. Research informs what kind of tools
+you want to build, and tools feed back into faster research.
+
+THIS IS ABRUPT, BAD
+
+To me, the comments on policy distillation and model surgery indicate that
+some people at OpenAI "get it", and that at the organization level, they're
+thinking both about the current research project and the systems behind the
+research projects.
+
+
+What Are the Cons of This Work?
 -----------------------------------------------------------------------------
 
 And now we dive into some of the more controversial aspects. Like every press
@@ -245,6 +324,8 @@ The results table says they say an increase from 4.8 successful face rotations
 to 14.30 face rotations. That's a pretty big jump!
 
 In addition, Section 4.2 of the paper
+
+
 
 BETTER TITLE
 -----------------------------------------------------------
