@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Let's (Briefly) Discuss OpenAI's Rubik's Cube Result"
+title:  "Let's Discuss OpenAI's Rubik's Cube Result"
 date:   2019-10-16 01:25:00 -0700
 ---
 
 Recently, OpenAI announced they had [gotten their dexterous
 manipulation system to solve a Rubik's Cube](https://openai.com/blog/solving-rubiks-cube/).
-I thought I wouldn't have too much to say, and then this post became longer
-than I expected.
+I thought I wouldn't have too much to say, and then this post got longer and
+longer.
 
 
 What Did OpenAI Do?
@@ -16,35 +16,28 @@ What Did OpenAI Do?
 Using reinforcement learning, they learned a controller for a [Shadow Hand](https://www.shadowrobot.com/products/dexterous-hand/)
 that lets them solve a Rubik's Cube with reasonable success rate. They
 report a success rate of 60% for average scrambles, and 20% for the hardest
-possible scrambles (that require 26 quarter-face turns).
+possible scrambles that require 26 quarter-face turns.
 
 I say doing RL on the Shadow Hand platform, but really, I mean they do learning
 on a simulated version of the Shadow Hand, then try to get that to transfer to
 the real Shadow Hand with no real data.
-
-If you can successfully manipulate a cube, solving it isn't too hard. There
-are known search algorithms to find the sequence of turns (Kociemba's
-algorithm is the standard one), and they rely on Kociemba's algorithm to
-provide the sequence of turns, which the RL policy then executes.
-
-The true result here is the successful dexterous manipulation of the
-Rubik's Cube with the Shadow Hand.
+It's a neat dexterous manipulation result.
 
 
 Why is Dexterous Manipulation Hard?
 -----------------------------------------------------------------------
 
-Okay, big cavaet. I've worked on robotic manipulation, but I haven't worked
-on dexterous manipulation with hands before. So, maybe I'm totally off here.
-But the TL;DR answer is that hardware is terrible and simulators suck unless
-you spend a bunch of time improving them.
+As a general rule, robot hardware is terrible to work with, and simulators
+suck unless you spend a bunch of time improving them. This is especially
+true for robot hands, because they have way more degress of freedom and
+complexity compared to simpler grippers.
 
 OpenAI says they've been working on solving a Rubik's Cube since
 May 2017. It took them 2 months (May 2017 - July 2017) to solve it in
 simulation with a simulated hand. It took them 1 more year (July 2017 - July 2018)
 to get a real hand to manipulate a solid wooden block. Then, another
 14 months (July 2018 - October 2019) to get to the Rubik's Cube. The "runs on a
-real robot" part is the entire reason the learning problem is difficult.
+real robot" part is the entire reason to care about this work.
 
 
 Wasn't This Robot Hand in the News Before?
@@ -129,8 +122,6 @@ concatenating them is because you can easily add a new feature without changing
 the shape of any existing weight matrices. This lets you avoid training entirely
 from scratch.
 
-DIAGRAM
-
 For approaches that aren't compatible with this (like changing the LSTM size),
 the current model can be distilled into the new model architecture, which is
 also much faster than training from scratch.
@@ -153,47 +144,41 @@ In general, I've found that people without robot learning experience are
 poorly calibrated on how much bullshit there is in getting a real robot
 learning setup to work. It's always good to see something get there.
 
-Finally, this is something I *really* haven't seen enough credit for. The part
-I was most excited about in this work wasn't the Rubik's Cube solving. That
-felt inevitable, given time. Nor was I that excited about automatic
-domain randomization. I'm sure it was important to their work, but
-it's well established that automatic curriculum learning works if set up
-properly.
+Finally, I know this is a weird thing to appreciate, but I actually like the
+policy distillation and model surgery aspects the most. Yes, the automatic
+domain randomization is nice, but of course automatic curriculum learning
+should perform better than sampling tasks uniformly at random.
 
-I'm most excited by the comments on policy distillation and model surgery.
-Although these ideas aren't central to the project, they are indicative
-of the right research culture: **a focus on building systems that encourage
+The policy distillation and model surgery aren't central to the project,
+but they are indicative of the correct research culture:
+**a focus on design decisions that encourage
 long-term research success.**
 
-About 2 years ago, I talked with an OpenAI employee about why OpenAI spent
-a lot of time working on Gym and OpenAI Baselines. The paraphrased answer
-was that they felt like aspects of research that were undervalued by the
-RL community, and OpenAI was in a position to provide value.
+At a party 2 years ago, I was with a few people talking about OpenAI, and an
+employee came up to give a quick spiel. They said they felt the academic
+community undervalued research infrastructure. That's why they released Gym.
+That's why they released OpenAI Baselines. It was something where OpenAI
+was in a position to provide value to the RL community.
 
-It's really stuck with me. Okay, yes, Gym and Baselines are also great
-branding tools for recruiting purposes. But this would have been true for
-any group that released something that got the adoption of Gym or Baselines.
-In general, it's very easy to build something that's only good for one
-experiment, or one reserach project. There are a lot of pressures to do
-so. But good tooling is actually absurdly helpful for speeding up research,
-because if done properly, the investment pays off long-term over all future
-research projects. Build an interpretability library, and every project can
-try it if they want to. Build RL diagnostics tools, and every RL project
-can try them out. TensorFlow exists because Google wanted different ML
-teams to use the same ML framework.
+Okay, yes, the obvious cynical point here is that Gym and Baselines are
+also great branding tools for OpenAI's recruiting purposes.
+This would have been true for any group that released something that got the
+adoption Gym or Baselines did, so I don't think it's a valid criticism.
 
-I'm not saying it's easy to build good tools. It's really hard to build good
-tools, and a lot of times people are reluctant to work on it, because
-it's SWE work that's less interesting than the "real" research work. I fall in
-this bucket too. But, it's all research work. Research informs what kind of tools
-you want to build, and tools feed back into faster research.
+Research code is usually terrible, because you're trying to move fast on
+an idea that may not even make sense. Designing everything properly the
+first time slows down your experimenting too much. However, never cleaning
+up anything is its own sin. People really underestimate the impact of
+good research infra, in my experience. I'm not saying it's easy to build
+good tools. It's absurdly difficult to build good tools. But if done properly,
+it pays off long-term over all future projects. An RL diagnostics library
+can be re-used for every RL project, An interpretability library can be
+re-used for any project that wants interpretability.
 
-THIS IS ABRUPT, BAD
-
-To me, the comments on policy distillation and model surgery indicate that
-some people at OpenAI "get it", and that at the organization level, they're
-thinking both about the current research project and the systems behind the
-research projects.
+The comments from this paper indicates that some people at OpenAI get it,
+and are thinking about it at multiple levels of a research project - both
+the code infrastructure, and the model architecture. It's cool and I wish
+people did more of this.
 
 
 What Are the Cons of This Work?
@@ -235,12 +220,15 @@ silly.
 2. People who just watch the video will definitely be confused by this.
 3. That confusion may have been intentional.
 
-I quickly skimmed the Twitter outrage and it seemed like people's opinion on #3
-was almost entirely defined by whether they believe OpenAI's
+It seems like people's opinion on #3
+is almost entirely defined by whether they believe OpenAI's
 PR strategy is acting in good faith. For what it's worth, I believe they are
 acting in good faith, but they simplified things so much that they lost some
 important nuance. To be fair, this happens everywhere. How many times have you
 read a paper because of a good abstract, only to be disappointed once you actually read it?
+
+I understand why people are fixated on this, but from a robotics perspective,
+it really, really doesn't matter, and other parts deserve more focus.
 
 
 Sensor Instrumentation
@@ -353,11 +341,11 @@ parameters. Like cube size, and action
 delay, and action latency, and simulator timestep length, and frictions, and
 mass, and action noise, but remember that action noise from a random network
 works best, and, well, you get the picture. There's a lot. Basically, I'm
-impressed by the work that went into setting up the randomization, and not
-impressed that the randomization helped.
+impressed by the effort that went into setting up the simulator and randomization,
+and not by the improvements *from* that randomization.
 
 Domain randomization isn't a tool. Domain randomization is a paradigm, and a
 very useful one at that. But at a high level, it doesn't fully remove
 simulator design. It just trades some software engineer design time for
-GPU training time, and the conversion rate depends on how few unmodelled
-real-world effects you have.
+GPU training time, and the conversion rate depends on whether it's easy to
+model a reasonable version of your task in simulation.
