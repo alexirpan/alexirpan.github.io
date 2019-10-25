@@ -96,9 +96,7 @@ If the policy's recent performance is above a threshold, the distribution
 is expanded to be wider. This lets us start from a simple problem, then
 expand its difficulty as the policy gets better at the task. (The
 distribution is never narrowed, and I assume you have to tune how much
-you widen each dimension, and the performance threshold, but this is
-still fewer parameters and less work than defining a fixed distribution
-or fixed curriculum schedule.)
+you widen each dimension, and the performance threshold.)
 
 Another detail which I only found after a close reading was
 *adversarial domain randomization*. This has been done before. An adversary
@@ -114,7 +112,7 @@ to tune it properly.)
 Finally, although it's not directly related, there is
 a heavier lean on
 *policy distillation* and *model surgery*. This is a lesson they've carried
-over from DotA 2. Over the course of a long project, you will naturally want
+over from DotA 2. Over the course of a long project, you will naturally want to
 add new input features or try new neural net architectures. If the model takes
 a long time to train, it's worth designing methods that let you do this without
 training from scratch. The reason they add embeddings together instead of
@@ -173,7 +171,7 @@ good research infra, in my experience. I'm not saying it's easy to build
 good tools. It's absurdly difficult to build good tools. But if done properly,
 it pays off long-term over all future projects. An RL diagnostics library
 can be re-used for every RL project, An interpretability library can be
-re-used for any project that wants interpretability.
+re-used for any project that wants interpretability. OpenAI has built both.
 
 The comments from this paper indicates that some people at OpenAI get it,
 and are thinking about it at multiple levels of a research project - both
@@ -227,8 +225,9 @@ acting in good faith, but they simplified things so much that they lost some
 important nuance. To be fair, this happens everywhere. How many times have you
 read a paper because of a good abstract, only to be disappointed once you actually read it?
 
-I understand why people are fixated on this, but from a robotics perspective,
-it really, really doesn't matter, and other parts deserve more focus.
+I understand why people are fixated on this, and it's worth talking about,
+but from a robotics perspective,
+it really, really doesn't matter. Other parts deserve more focus.
 
 
 Sensor Instrumentation
