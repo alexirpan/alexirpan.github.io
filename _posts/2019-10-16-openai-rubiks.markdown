@@ -199,143 +199,165 @@ research projects.
 What Are the Cons of This Work?
 -----------------------------------------------------------------------------
 
-And now we dive into some of the more controversial aspects. Like every press
-release, there are hidden details, and like every press release, these hidden
-details make the work less impressive.
+[Skynet Today's article](https://www.skynettoday.com/briefs/openai-rubiks-cube)
+has a good summary of some controversial points, along with their own take on
+things. It's worth reading. Here are a few I want to point out.
 
-(I want to be very clear here: this is not a shot at OpenAI, or at scientific
-press reporting. It's something shared by all papers. You open a research paper,
-and the abstract sounds great. You read it some more, and it starts looking
-worse. That's how it goes.)
 
-As mentioned before,
-the final robot controller is not learned entirely end-to-end from pixels to
-action. There's an intermediate step of estimating pose, and then learning
-from approximate pose to actions.
+Use of a Solver
+===================================================================
 
-The same is true of the solving algorithm. Reinforcement learning is not
-used to decide what moves are needed to solve the cube. Instead, the cube's
-state is fed to an existing solver (Kociemba's algorithm), and this is
-translated to a series of instructions, of the form "rotate the top face clockwise",
-"rotate the top face counterclockwise", and "orient the cube such that the
-top face is the one we want to turn". This is treated as a sequence of subgoals,
-and the model's job is to achieve each of these subgoals in order.
+The final robot controller is not learned entirely end-to-end from pixels to
+actions. There are intermediate steps of estimating pose, and the sequence
+of subgoals the policy should reach is outsourced to an existing solver
+(Kociemba's algorithm).
 
-This is fine. You can get a reinforcement learning algorithm to learn how to
-solve a Rubik's Cube, but there's no point in doing so when the real research
-question is robot dexterity and manipulation. This isn't the controversial
-part. The controversial part is that the press video never talks about this
-multistage approach. By some readings, the video heavily implies that it *was*
-learned end-to-end, without ever saying so.
+These are fine. You can get reinforcement learning to learn to solve a Rubik's
+Cube (see [McAleer et al, 2018](https://arxiv.org/abs/1805.07470)), but
+the most important part of this work is the sim2real transfer of a dexterous
+manipulation task. None of the manipulation problems are made easier if you
+use a solver. I don't think the pose estimation is a problem either, since
+it's learned from vision anyways.
 
-Let me quote directly from the video.
+What I'm less fine with is that the video OpenAI released never mentions this
+multistage approach. To quote directly from the narration,
 
 > "We're trying to build robots that learn a little bit like humans do, by trial and error. What we've done is trained an algorithm to solve the Rubik's Cube one-handed, with a robotic hand, which is actually pretty hard even for a human to do. We don't tell it how the hand needs to move the cube in order to get there. The particular friction that's on the fingers. How easy it is to turn the faces on the cube. What the gravity, what the weight of the cube is. All of these things it needs to learn by itself."
 
-I do actually agree with this criticism. In particular, when the narration says
-"We don't tell it how the hand needs to move the cube in order to get there",
-I know that this is consistent with the truth: the hand is not told what forces
-need to be applied at what joints to get the desired movement of the cube. I
-also know that there is another interpretation consistent with this
-statement - that machine
-learning is used to both learn the sequence of moves, and what moves to
-execute.
+To me, this reads as someone saying things that are consistent with the truth,
+but which leaves open interpretations that are stronger than the truth. The
+phrasing of "We don't tell it how the hand needs to move the cube in order to
+[solve it]" certainly doesn't imply any decomposition of the problem, and on
+my first listen, I had 3 reactions.
 
-The number one lesson of writing is that what you intend to say does not
-matter. What matters is the interpretation people take away from it. If you're
-trying to be clear, you want your intention to match the interpretation.
-If, on the other hand, your writing is
-deliberately misleading, then you can get people to believe things you've
-never actually said.
+1. They're almost certainly using a solver because not doing so would be really
+silly.
+2. People who just watch the video will definitely be confused by this.
+3. That confusion may have been intentional.
 
-The question, then, is whether OpenAI was deliberately misleading, or if they
-were trying so hard to strip details that they ended up stripping important
-ones. I'm not touching this, because the arguments I've read suggest it's mostly
-defined by your prior on whether OpenAI does good research or not. So let's move
-on.
+I quickly skimmed the Twitter outrage and it seemed like people's opinion on #3
+was almost entirely defined by whether they believe OpenAI's
+PR strategy is acting in good faith. For what it's worth, I believe they are
+acting in good faith, but they simplified things so much that they lost some
+important nuance. To be fair, this happens everywhere. How many times have you
+read a paper because of a good abstract, only to be disappointed once you actually read it?
+
+
+Sensor Instrumentation
+=======================================================================
+
+In the results reporting a 60% average solve rate, the Rubik's Cube used is a
+modified version of a Xiaomi Giiker cube, which comes with Bluetooth sensors
+that report the rotation angles of each face. The sensors in the original
+Giiker cube report face angles at $$90^\circ$$ resolution, so they modify
+it by replacing some components to get to $$5^\circ$$ resolution.
+
+This one, I actually do care about, because I couldn't find anywhere in the blog
+post where it was clarified that the 60% solve rate required these Bluetooth
+sensors. My assumption before reading the paper was that vision + domain
+randomization were used to predict both the pose of the cube and the angles of
+faces on that cube. They do have some pure vision results, and from purely
+vision the solve rate is 20% on average solves and 0% on the hardest solves.
+
+I don't have any particular problem with the added sensors, but I am let down,
+because it plays into a bigger theme: for all the claims of sim2real transfer,
+there's a long list of simulator details mentioned in the paper.
 
 
 Simulation Design
-------------------------------------------------------------------------------
+========================================================================
 
 I remember when I first heard about domain randomization. I thought it was going
 to fix everything. Then I tried it myself, and talked to people who tried it
 for their projects, and got more realistic.
 
 The common explanation of domain randomization is that by adding lots of
-randomness to your simulator, you can avoid the meticulous process of system
-identification. I'm starting to think this is only sort of true.
+randomness to your simulator, you can avoid exactly designing your simulator
+and performing system identification or calibration. So far, I'd say this
+is only sort of true.
 
 Consider the problem of contact forces. Now, I have very little experience with
 making physics simulators, but when I talk to colleagues with sim experience,
 contact forces make them break out in cold sweats. It's simply very hard to
-model the forces between objects that are touching each other. Somehow, there
+exactly model the forces between objects that are touching each other.
+Somehow, there
 are always more interactions that are not properly modelled by the simulator.
 
-Now, the domain randomization viewpoint here is that if you randomize frictions
+The domain randomization viewpoint is that if you randomize frictions
 between everything, your model should generalize to real world dynamics without
-issue. And *sometimes*, this works, but more commonly, some aspect of physics
-isn't in the space of interactions your simulator can represent. REPHARSE THIS.
-Imagine something like modelling the movements of two magnets, in a simulator
-that doesn't model electromagnetic forces between objects. It doesn't matter
-how much you randomize friction or mass - you're never going to predict the
-movement of those magnets.
+issue. And *sometimes*, this works, but more commonly, there's complexity in
+real-world contact forces that aren't correctly modeled by your simulator, and
+you aren't able to recover this, no matter how you randomize things.
 
-Obviously simulators will model electromagnetic forces if there's reason to
-believe they're relevant to the task at hand, and in fact they do use magnetic
-field sensors to estimate joint angles.
-I'm just bringing them up as
-an example of a known unknown. What do you do about the unknown unknowns?
-The dynamical effects that are out of the space of any of your randomized simulators?
+Think of it this way. Suppose we were trying to model the movements of two
+magnets in simulation, but our simulator doesn't model electromagnetic forces.
+It doesn't matter how much you randomize friction or mass, you're never going to
+predict the movements of those magnets to any reasonable degree of accuracy.
+
+Obviously, actual simulators will model these forces and other ones if there's
+reason to believe they're relevant to the task. I'm just bringing it up as an
+example of a known unknown within the simulator. But what about the unknown
+unknowns?
 
 If you look through sim2real papers, it's not a coincidence that many of the
-best sim2real results are about sim2real transfer of vision, for tasks with
-limited dynamics mismatch. If the transfer
-learning is bottlenecked on vision, domain randomization is great! Convolutional
+best sim2real results are about sim2real transfer of vision, for tasks where
+dynamics either don't matter or are simulated pretty well.
+When transfer learning is bottlenecked on vision, domain randomization is great!
+Convolutional
 neural nets are absurdly good, random textures and lighting is something almost
-all simulators support, and if tuned properly it should just work.
+all simulators support, and it seems like it does generalize pretty well.
 
 Unfortunately, practically all interesting robot manipulation problems are
 bottlenecked on dynamics.
 
-
-What Was I Talking About Again? Right, Rubik's Cube
--------------------------------------------------------------------------------
-
-The reason I'm bringing up all my domain randomization opinions is because on
-a closer read, the Rubik's Cube result is much less of a win story for
-domain randomization than I thought. Even with randomization, simulator calibration
-has a noticeable effect on their results.
-
-I missed this before, but this was true in their Learning Dexterity result
-as well. From Appendix C.3 of that paper:
+Some calibration is necessary to get the simulated hand to be
+reasonably close to the real one. I missed this last year, but it was true
+in their Learning Dexterity paper too. From Appendix C.3 of the Learning
+Dexterity paper:
 
 > The MuJoCo XML model of the hand requires many parameters, which are then used as the mean of the randomized distribution of each parameter for the environment.
 > Even though substantial randomization is required to achieve good performance on the physical robot, we have found that it is important for the mean of the randomized distributions to correspond to reasonable physical values.
-> [...] For each joint, we optimize the damping, equilibrium position, static friction loss, stiffness, margin,and the minimum and maximum of the joint range. For each actuator, we optimize the proportionalgain, the force range, and the magnitude of backlash in each direction. Collectively, this corresponds to 264 parameter values.
+> [...] For each joint, we optimize the damping, equilibrium position, static friction loss, stiffness, margin,and the minimum and maximum of the joint range. For each actuator, we optimize the proportional gain, the force range, and the magnitude of backlash in each direction. Collectively, this corresponds to 264 parameter values.
 
-UPDATE THIS PART TO CLARIFY IT'S FROM THE HAND
+The Rubik's Cube paper mentions calibration as well, where they added some
+tendons and pulleys to their simulated hand model to better match the real
+hand.
+Appedix D.1 helpfully includes the performance before and after this change.
 
-> We test how much of an impact simulation calibration has. [...] We evaluate a
-> policy trained on the old simulation and on the new simulation (i.e. with
-> coupling and dynamics calibration).
+![Calibration Results Table](/public/openai-rubiks/table.png)
+{: .centered }
 
-The results table says they say an increase from 4.8 successful face rotations
-to 14.30 face rotations. That's a pretty big jump!
-
-In addition, Section 4.2 of the paper
-
-
-
-BETTER TITLE
------------------------------------------------------------
+An increase from 4.8 face rotations to 14.30 face rotations seems like a pivotal
+jump to me. Then, for the cube itself, they mention needing to model the
+bevelled edges that appear on the real Rubik's Cube, because otherwise the model
+is too unforgiving.
 
 
-One question you may have is, "why don't they train with real data?" In robotics,
-real data is generally much more useful than simulated data. My understanding
-is that two things are at play. First, OpenAI is curious how far they can
-push zero-shot sim2real transfer, because simulation scales with compute while
-real robot doesn't. Second, OpenAI's goal is to show that deep reinforcement
-learning can solve difficult robotics problems. Therefore, they've set their
-sights on a problem hard enough that simulation is the *only* way they'd be
-able to get enough data for RL to learn something.
+Takeaways
+--------------------------------------------------------------------------
+
+My understanding is that OpenAI was treating zero-shot sim2real transfer as
+a non-negotiable part of the project. This is consistent with their research
+directions: throw a bunch of compute at something that easily scales with
+compute, and see what you can do in that regime. If you want to do this
+in robotics, you have to mostly use simulation, because real robots don't
+scale with compute.
+
+So really, once you strip everything old away, and the solver controversary
+away, what are we left with? We're left with the story that automatic
+domain randomization is better than plain domain randomization, and
+domain randomization can work for solving a Rubik's Cube, if you
+calibrate your simulator to
+be sort-of accurate, and instrument enough randomization
+parameters. Like cube size, and action
+delay, and action latency, and simulator timestep length, and frictions, and
+mass, and action noise, but remember that action noise from a random network
+works best, and, well, you get the picture. There's a lot. Basically, I'm
+impressed by the work that went into setting up the randomization, and not
+impressed that the randomization helped.
+
+Domain randomization isn't a tool. Domain randomization is a paradigm, and a
+very useful one at that. But at a high level, it doesn't fully remove
+simulator design. It just trades some software engineer design time for
+GPU training time, and the conversion rate depends on how few unmodelled
+real-world effects you have.
