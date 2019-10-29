@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Let's Discuss OpenAI's Rubik's Cube Result"
-date:   2019-10-16 01:25:00 -0700
+date:   2019-10-30 00:06:00 +0900
 ---
 
 Recently, OpenAI announced they had [gotten their dexterous
