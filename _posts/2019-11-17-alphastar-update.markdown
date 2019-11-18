@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Brief Update on AlphaStar Predictions"
-date:   2019-11-17 23:58:00 -0700
+date:   2019-11-18 00:20:00 -0700
 ---
 
 Around the end of October, the [Nature paper for AlphaStar](https://www.nature.com/articles/s41586-019-1724-z)
