@@ -1,0 +1,94 @@
+---
+layout: post
+title:  "What Size Should NeurIPS Be?"
+date:   2019-11-18 00:20:00 -0700
+---
+
+Ostensibly, I'm on vacation. However, I both have a bit of insomnia and
+a bit of inspiration, and I haven't written a post in a while, so buckle
+up, I'm weighing in on ML stuff again. (As always, you are free to
+ignore my opinions if you want to.)
+
+I've been to three NeurIPS: 2016, 2017, and 2019. So, no, I haven't really
+been around that long. NeurIPS 2016 was my first academic conference ever,
+so I didn't really know what to expect. By NeurIPS 2017, I'd been to a few
+and could confidently say that NeurIPS 2017 felt too big. By NeurIPS 2019,
+I was no longer sure that was true.
+
+Before going to NeurIPS 2016, I got some advice from senior researchers:
+if you aren't skipping talks, you're doing it wrong. I promptly ignored
+this advice and tried to attend every talk I could, but now I get what
+they were saying.
+
+A lot of people attend conferences to meet up with the people they only
+see at conferences. The more conferences you go to, the more networked
+you become, and the more this happens. The talks and papers will,
+in principle, always be there. The in-person conversations, not so much.
+It's not that they can't happen through video calls, it's that the conference
+environment provides a much lower activation energy to scheduling these
+things.
+
+Early on in your research career, it makes sense to go to talks. You know
+less about the field and you know fewer people. As you become more senior,
+it makes less sense to go to talks. It's more likely you know the topic
+of the talk already, and you know more people, so their value goes down
+compared to the
+research conversations had over drinks or lunch. I believe the organizers
+know this. Ever wonder why there
+are so many coffee breaks, and why they're all much longer than they'd
+need to be if people were just getting coffee? Important, valuable
+meetings are happening during those coffee breaks.
+
+In this model of a research conference, all the posters, accepted papers,
+talks, and so on are backgroud noise. They exist as the default option
+for people who don't have plans, and that default option is critically
+important to keeping everything going, but they're not the point of
+the conference. The point of the conference is for everyone in the
+research community to gather at the same place at the same time.
+This is a very similar dynamic to
+fan conventions, if you've been to any of those.
+
+If you take this model as true, then NeurIPS's unofficial status as
+the biggest ML conference is incredibly important. If you could only
+go to one conference each year, you'd go to NeurIPS, because everyone
+else is trying to go to NeurIPS.
+
+And if it's the place to be, shouldn't NeurIPS be as big as it needs to
+be?
+
+\* \* \*
+{: .centered }
+
+The main source of tension in this argument is that NeurIPS and the
+rest of ML is growing, but the growth is coming from different sources.
+
+Year over year, NeurIPS has been growing much faster than the PhD
+programs that should ostensibly be feeding into it. The growth is
+coming from increased interest from the broader data science community
+- a community that is much larger and of a different makeup than the
+ML research community, and that's where it gets tricky.
+
+I said NeurIPS is about networking, but the unsaid question is:
+networking between who? It started as networking between researchers,
+because the makeup of attendees at the time was mostly researchers,
+and it's been shifting ever since deep learning hype took off.
+
+Maybe machine learning conferences in the middle of its Eternal September
+moment. The influx of new people used to be small enough for the culture
+to absorb them without much change. That isn't true anymore - the rise
+in attendance is pushing the culture to a new, unexplored place.
+
+Who is NeurIPS for? Is it for the established researchers to talk shop?
+The newer researchers trying to present their work and build a career?
+The enthusiast looking to get into ML? Right now, it's for all of them,
+but I don't know how designed the current
+NeurIPS experience it. Until told otherwise, I'll believe it's something
+that grew organically, and continued to evolve with some prodding from
+the organizers to try to keep everyone happy, a daunting task I wouldn't
+wish on anyone.
+
+I've portrayed NeurIPS and other conferences as networking locations
+first, but they're also submission venues where people are submitting
+and presenting their peer-reviewed work. Much has been said about how
+bad the peer-review process is, but it's hard for me to believe it's
+entirely uncorrelated with a paper's merit.
