@@ -4,10 +4,11 @@ title:  "What Size Should NeurIPS Be?"
 date:   2019-11-18 00:20:00 -0700
 ---
 
-Ostensibly, I'm on vacation. However, I both have a bit of insomnia and
-a bit of inspiration, and I haven't written a post in a while, so buckle
-up, I'm weighing in on ML stuff again. (As always, you are free to
-ignore my opinions if you want to.)
+Ostensibly, I'm on vacation. However, it's raining, I have a bit
+of inspiration, and I haven't written a post in a while, so buckle up,
+here are some more machine learning opinions. I read some discussion about
+the size of NeurIPS, mostly from [Andrey Kurenkov's post at The Gradient](https://thegradient.pub/neurips-2019-too-big/),
+and wanted to weigh in.
 
 I've been to three NeurIPS: 2016, 2017, and 2019. So, no, I haven't really
 been around that long. NeurIPS 2016 was my first academic conference ever,
@@ -18,77 +19,112 @@ I was no longer sure that was true.
 Before going to NeurIPS 2016, I got some advice from senior researchers:
 if you aren't skipping talks, you're doing it wrong. I promptly ignored
 this advice and tried to attend every talk I could, but now I get what
-they were saying.
-
-A lot of people attend conferences to meet up with the people they only
-see at conferences. The more conferences you go to, the more networked
-you become, and the more this happens. The talks and papers will,
-in principle, always be there. The in-person conversations, not so much.
-It's not that they can't happen through video calls, it's that the conference
-environment provides a much lower activation energy to scheduling these
-things.
+they meant.
 
 Early on in your research career, it makes sense to go to talks. You know
 less about the field and you know fewer people. As you become more senior,
 it makes less sense to go to talks. It's more likely you know the topic
 of the talk already, and you know more people, so their value goes down
 compared to the
-research conversations had over drinks or lunch. I believe the organizers
-know this. Ever wonder why there
+research conversations you can have over drinks or lunch.
+Conference organizers know this.
+Ever wonder why there
 are so many coffee breaks, and why they're all much longer than they'd
 need to be if people were just getting coffee? Important, valuable
 meetings are happening during those coffee breaks.
 
+In the limit, people attend conferences to meet up with the people they
+only see at conferences. As some from the Bay Area, the running joke is that
+we travel halfway across the world to talk to people who live an hour's
+drive away.
+It's not that we don't want to talk to each other, it's that the conference
+environment provides a much lower activation energy to scheduling
+meetups, and it's easier to have serendipitous run-ins with people we
+haven't seen in a while.
+
 In this model of a research conference, all the posters, accepted papers,
 talks, and so on are backgroud noise. They exist as the default option
-for people who don't have plans, and that default option is critically
+for people who don't have plans, or who want a break from socializing.
+That default option is critically
 important to keeping everything going, but they're not the point of
 the conference. The point of the conference is for everyone in the
 research community to gather at the same place at the same time.
-This is a very similar dynamic to
-fan conventions, if you've been to any of those.
+If you've been to fan conventions, it's a very similar dynamic.
 
 If you take this model as true, then NeurIPS's unofficial status as
 the biggest ML conference is incredibly important. If you could only
 go to one conference each year, you'd go to NeurIPS, because everyone
-else is trying to go to NeurIPS.
+else is going to go to NeurIPS.
 
-And if it's the place to be, shouldn't NeurIPS be as big as it needs to
-be?
+And if NeurIPS is the place to be, shouldn't NeurIPS be as big as it needs
+to be?
 
 \* \* \*
 {: .centered }
 
-The main source of tension in this argument is that NeurIPS and the
-rest of ML is growing, but the growth is coming from different sources.
+Well, maybe. NeurIPS attendance is growing, but the growth is coming
+from different sources.
 
-Year over year, NeurIPS has been growing much faster than the PhD
-programs that should ostensibly be feeding into it. The growth is
-coming from increased interest from the broader data science community
-- a community that is much larger and of a different makeup than the
-ML research community, and that's where it gets tricky.
+Year over year, NeurIPS has been growing way faster than any of the
+PhD programs that could be feeding into it. I would guess it's growing
+faster than the undergrads and master's students as well. If the growth
+isn't coming from universities, it has to be coming from industry and
+the broader data science community - a community that is much larger
+and of a different makeup than the traditional ML research crowd.
 
-I said NeurIPS is about networking, but the unsaid question is:
-networking between who? It started as networking between researchers,
+I said NeurIPS is about networking, but the question is, networking
+between who?
+It started as networking between researchers,
 because the makeup of attendees at the time was mostly researchers,
-and it's been shifting ever since deep learning hype took off.
+and it's been shifting ever since deep learning hype took off. It
+is increasingly likely that if you talk to a random attendee, they'll
+be an ML enthusaist or someone working in an ML-related role at a big
+company, rather than someone in a PhD program.
 
-Maybe machine learning conferences in the middle of its Eternal September
-moment. The influx of new people used to be small enough for the culture
-to absorb them without much change. That isn't true anymore - the rise
-in attendance is pushing the culture to a new, unexplored place.
+And I should be really, really clear here: that's not necessarily a
+bad thing! But people in a PhD program have different priorities from
+people working at a big company, and that's causing a culture clash.
+The size debate is just a proxy for the real debate about what
+NeurIPS should be.
+Machine learning conferences are in the middle of their
+[Eternal September](https://en.wikipedia.org/wiki/Eternal_September)
+moment.
 
-Who is NeurIPS for? Is it for the established researchers to talk shop?
+In the early 1990s, there was this thing called Usenet (essentially an
+online, distributed forum), and
+most Usenet users came from connections given to colleges and universities.
+Every September, a new wave of students would join, and they'd stir
+a fuss, but the influx was
+small enough for existing Usenet culture to absorb them without much
+change. Then, AOL opened Usenet access to anyone who wanted it. Usenet
+culture couldn't integrate the firehose of interest, and it became
+known as the Eternal September. The original Usenet culture turned
+into whatever culture made sense for the new users.
+
+The parallels to NeurIPS are uncanny. A simple find-replace exactly
+describes what's happening now, from the people saying NeurIPS is turning
+into a spectacle, to the people who can't buy tickets to a conference
+they really want to attend.
+Despite their foreboding name, Eternal Septembers are not inherently
+bad. They are what they are. But generally, they're good for people trying
+to join, and bad for people that are already there.
+
+So the real question is, who is NeurIPS for?
+Is it for the established researchers to talk shop?
 The newer researchers trying to present their work and build a career?
-The enthusiast looking to get into ML? Right now, it's for all of them,
-but I don't know how designed the current
-NeurIPS experience it. Until told otherwise, I'll believe it's something
-that grew organically, and continued to evolve with some prodding from
-the organizers to try to keep everyone happy, a daunting task I wouldn't
-wish on anyone.
+The data scientist looking for new applications of ML research?
+Right now, it's for all of them, and the organizers are doing their best
+to balance everyone's interests correctly, which is an incredibly difficult job I
+wouldn't wish on anyone. The one thing that seems clear to me is that
+a pure, academic-only NeurIPS untethered from industry is never going to
+happen.
+You don't stop Eternal September. Eternal September is something
+that happens to you, and the best you can do is nudge the final outcome
+the best you can.
 
-I've portrayed NeurIPS and other conferences as networking locations
-first, but they're also submission venues where people are submitting
-and presenting their peer-reviewed work. Much has been said about how
-bad the peer-review process is, but it's hard for me to believe it's
-entirely uncorrelated with a paper's merit.
+It's a crazy solution, and I don't know if it even makes sense, but maybe
+NeurIPS needs to be split in two. Have one act as the submission venue,
+where people submit and present their research, with heavier restrictions
+on who's allowed to attend, and have the other act as the open-to-everyone
+conference. If NeurIPS's growing pains are caused by it trying to be
+something for everyone, then maybe we need to split its responsiblities.
