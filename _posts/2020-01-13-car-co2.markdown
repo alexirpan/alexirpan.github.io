@@ -1,0 +1,96 @@
+---
+layout: post
+title:  "The Carbon Footprint of Buying a Car"
+date:   2020-01-13 00:20:00 -0700
+---
+
+The car I've been driving for several years is currently
+in its death throes. Well, more precisely, it's been dying a slow death for
+ages, but I got normalized to all the small faults. The small faults are
+starting to grow into big ones and it's time for a change.
+
+In a bid to be more environmentally conscious, I want to reduce the carbon
+footprint of the replacement car. What should I do?
+
+To figure this out, we're going to make many approximations, because
+I'm only interested in a very rough order of magnitude. Imprecise estimates
+are fine, as long as I know how they're generated.
+
+\* \* \*
+{: .centered }
+
+First things first - we need to start by measuring something. It's not
+perfect, but I'm going to be using CO2 emissions over the lifetime of the car.
+
+In high school, one of my teachers claimed that a hybrid Toyota Prius was
+worse for the environment than a Hummer, because the CO2 emitted for battery
+production was much worse than the CO2 from the Hummer. I never bothered
+checking this, but let's see if we can find some sources.
+
+This [Guardian article](https://www.theguardian.com/environment/green-living-blog/2010/sep/23/carbon-footprint-new-car)
+from 2010 claims that purchasing a medium-sized new car is about
+17 tonnes of CO2. The [EPA greenhouse gas guidlines](https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle)
+from this year estimates that a gasoline car emits about 4.6 tonnes of CO2 per year.
+Now obviously we're comparing 2010 production numbers to 2020 estimates,
+so it's not super accurate, but this suggests that buying a new car is worth
+about 3.7 years of driving it.
+
+Let's say a car lasts about 10 years. Taking $$3.7 / (10+3.7)$$ gives
+27% of a gasoline car's emissions comes from initial production, and the
+rest comes from fuel. So how do hybrid and electric car production emissions
+compare to that?
+
+The European Parliament has [an infographic](https://www.europarl.europa.eu/news/en/headlines/society/20200109STO69925/understanding-the-gender-pay-gap-definition-and-causes)
+for CO2 emissions from different kinds of cars, from 2014.
+
+IMAGE HERE
+
+The green bars are the share from vehicle production, the bottom three bars
+are electric cars, and the top 2 bars are gasoline cars. We see that
+electric cars do pay a higher up-front cost in CO2 emissions, but eyeballing
+it gives about 62.5 g CO2/km versus 50 g CO2/km - an increase of 25% in
+production costs. As indicated in the chart, the lifetime emissions of the
+electric car is going to depend on how the electricity is generated. Purely
+coal-based electricity is worse than a gasoline car, purely renewable energy
+is wildly better, and energy from an EU average gives something that's still
+better than gasoline - about 220 g/km for a gasoline car, vs 170 g/km for an
+electric car, as long as you drive the car for long enough.
+
+That's just one source, but when looking through a few other sources, they
+all arrive at a similar conclusion: electric cars produce more up-front
+emissions, but produce less long-term emissions, assuming a 10 year lifespan.
+The [Alternative Fuels Data Center](https://afdc.energy.gov/vehicles/electric_emissions.html)
+from the Department of Energy has a tool that lets you estimate annual
+emissions for different kinds of vehicles, with breakdowns by state.
+Their estimate is that a gasoline car produces 11,435 pounds of CO2 (5.19
+tonnes, more than the EPA's estimate). For the average US power grid,
+a hybrid produces 6,258 pounds of CO2 annually (2.84 tonnes), and an electric car produces
+4,358 pounds of CO2 annually (1.98 tonnes).
+
+In addition, I assume these numbers are based off current electricty production.
+If you expect energy to become greener in the future, or live in a state that
+is more environmentally conscious, the balance tips further in favor of hybrids
+and electric cars. I live in California and on average, an all electric car
+produces 2,117 pounds of CO2 annually - less than half the national average, thanks
+to heavier usage of solar and hydropower. I expect electricity to become greener
+over time. There's enough pressure from climate protestors that I believe we're
+going to see power companies do environmentally friendly things for PR reasons,
+even if they don't particularly care about the environment. This is similar to
+how some companies figured out that paying lip service to LGBT rights was good
+PR - it's not the ideal scenario, but it's better than nothing.
+
+Interestingly, some sources find that right now, hybrids are better for the
+environment than an electric car. [CarbonBrief](https://www.carbonbrief.org/factcheck-how-electric-vehicles-help-to-tackle-climate-change)
+has some charts summarizing a few sources, showing how lifetime emissions drastically
+change depending which country's power grid you use. However, if you get a car
+that's partly gas-powered, tailpipe emissions are never going to drop, while
+power grid emissions could drop with development of new technology.
+
+
+\* \* \*
+{: .centered }
+
+Okay. So, we've established that the obvious answer of buying hybrid or electric
+cars is better for the environment. This was good to check, whether or not
+the final conclusion matched expectations!
+
