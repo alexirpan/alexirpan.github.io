@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Berkeley TA Back Pay Settlement, Summarized"
-date:   2020-01-17 01:52:00 -0500
+date:   2020-01-17 02:16:00 -0500
 ---
 
 *I was last at Berkeley in Spring 2016, and it's possible things have changed
