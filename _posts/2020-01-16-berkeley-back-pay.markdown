@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Berkeley TA Back Pay Settlement, Summarized"
-date:   2020-01-16 22:57:00 -1000
+date:   2020-01-17 01:52:00 -0500
 ---
 
 *I was last at Berkeley in Spring 2016, and it's possible things have changed
@@ -11,8 +11,7 @@ possible.*
 On Tuesday, UAW Local 2865, the union representing TAs across the UC system,
 [announced](https://uaw2865.org/cal-tas-win-multi-million-dollar-grievance-victory/)
 that UC Berkeley would pay $5 million in back pay to TAs. The story is getting
-picked up by a few places: [The Chronicle of Higher Education](http://uaw2865.org/wp-content/uploads/2020/01/Berkeley-TAs-Are-Awarded-Millions-in-Ba...ay-The-Chronicle-of-Higher-Education.pdf),
-, [Inside Higher Ed](https://www.insidehighered.com/news/2020/01/16/arbitrator-says-uc-berkeley-owes-its-computer-science-tas-5-million),
+picked up by a few places: [The Chronicle of Higher Education](http://uaw2865.org/wp-content/uploads/2020/01/Berkeley-TAs-Are-Awarded-Millions-in-Ba...ay-The-Chronicle-of-Higher-Education.pdf), [Inside Higher Ed](https://www.insidehighered.com/news/2020/01/16/arbitrator-says-uc-berkeley-owes-its-computer-science-tas-5-million),
 local Bay Area news outlets like [The Mercury News](https://www.mercurynews.com/2020/01/15/cal-tas-declare-victory-in-multi-million-grievance-fight/)
 and [Santa Cruz Sentinel](https://www.santacruzsentinel.com/2020/01/15/cal-tas-declare-victory-in-multi-million-grievance-fight/),
 and even some national outlets like [Vice](https://www.vice.com/en_us/article/v74d7b/teaching-assistants-say-theyve-won-millions-from-uc-berkeley).
@@ -42,20 +41,11 @@ get as close as they could without going over.
 After this started spreading, the union filed a grievance against the University. Now, to be clear,
 nothing the University did was illegal. The contracts were clear that
 8 hr / week positions were not eligible for fee remission, and the classes
-I TAed for made sure this was clear as well. However, the union argued that
+I helped teach made sure this was clear as well. However, the union argued that
 the University was effectively violating the spirit of the negotiated
-fee remission, by turning jobs that needed benfits into ones that didn't.
-You can make a similar argument for companies turning full-time jobs into
-jobs that don't require them to offer health-care benefits, for example.
-
-The union filed a grievance against the University. Now, to be clear,
-nothing the University did was illegal. The contracts were clear that
-8 hr / week positions were not eligible for fee remission, and the classes
-I TAed for made sure this was clear as well. However, the union argued that
-the University was effectively violating the spirit of the negotiated
-fee remission, by turning jobs that needed benfits into ones that didn't.
-You can make a similar argument for companies turning full-time jobs into
-jobs that don't require them to offer health-care benefits, for example.
+fee remission, by turning jobs that needed benefits into ones that didn't.
+This is not a new practice. Companies have done this for a while, taking
+full-time jobs and turning them into jobs classified as contractors.
 
 The arbitrator ruled in favor of the union, and the University has agreed
 to cooperate with the decision.
@@ -64,9 +54,10 @@ to cooperate with the decision.
 Why Did UC Berkeley Start Doing This?
 ------------------------------------------------------------------------
 
-In the last few years, UC Berkeley has had a perpetual funding problem. This
-plus exploding interest in CS courses plus competing offers from industry
-have put tons of strain on the CS department's budget.
+In the last few years, UC Berkeley has had a perpetual funding problem. This,
+plus exploding interest in CS courses, plus professor salaries rising due to
+competition from industry, combines to tons of strain on the CS department's
+budget.
 
 In 2016, in light of protests by graduate student instructors (GSIs), there was a
 town hall to discuss the CS department's budget, attended by professors,
@@ -76,18 +67,19 @@ they supported the GSI protests, and would have hired TAs at 10 hr
 appointments if they had the funding for it. The Berkeley CS department
 does get some funding, but nowhere near enough to meet demand. The department
 does heavy outreach for donor support, using this to shore up the budget,
-but this isn't seen as sustainable. They've repeatedly asked the Berkeley
+but they don't think it's sustainable to rely on donors to the degree
+they are. They've repeatedly asked the Berkeley
 administration to give them more funding, and have consistently seen it go
-to non-academic areas, like althetics or more administrative jobs.
+to non-academic areas, like athletics or [more administrative jobs](https://www.latimes.com/local/education/la-me-uc-spending-20151011-story.html).
 
 One obvious solution was to restrict enrollment, instead of using this
-8 hr TA loophole. However, CS enrollment was already heavily impacted.
+8 hr TA loophole. However, CS enrollment is already insane.
 Some lower division courses literally have thousands of students.
-Professors teaching these courses said
+At the town hall, professors teaching these courses said
 they were happy to have the class be as large as possible, as long as there
-was TA support for it. At some point, the department decided they would
-make the classes bigger by using 8 hr TA appointments to make the numbers
-work. My understanding was that they wanted this to be a one-time deal,
+was TA support for it. At some point, the department decided that they'd
+rather have bigger classes than 10 hr TA appointments.
+My understanding was that they wanted this to be a one-time deal,
 but like the donor support, this trick became a normalized part of the budget.
 
 
@@ -97,26 +89,26 @@ Were These 8 Hour TA Appointments Bad?
 It heavily depends on who you ask. Eight hour TA jobs were almost
 exclusively held by undergraduates, and in fact undergrads make up
 the majority of the CS department's TA staff.
-
 This tends to surprise people, and can be interpreted as vaguely
-exploitative. Let me explain why it wasn't.
+exploitative. Let me explain reasons it wasn't.
 
 Undergrads started getting hired as TAs
 because Berkeley didn't have enough grad student TAs to meet course
 demand. However, some
-professors have
-found that undergraduate TAs do a better job than graduate
-TAs, because undergrads *actually took the course they were TAing.*
+professors
+found that undergraduate TAs did a better job than graduate
+TAs.
 For lower division courses, graduate and undergraduate students know
-the material equally well, but grad students learned it at a different
-university, so they're generally less familiar with how Berkeley
-teaches the course.
+the material equally well, but undergraduates *actually took the course
+they were TAing*. Grad students who learned it at different institutions
+were less familiar with how Berkeley taught the course.
 
 Additionally, some undergrad TAs would TA the same course several
 years in a row. This happened less with grad students, since after they
 met their TA requirements, they would switch to focusing on research.
-The increased continuity from undergrads made it easier to preserve course
-teaching culture and knowledge across years.
+The increased continuity from undergrads made it easier to preserve
+course teaching
+culture and knowledge, which genuinely improved the quality of some classes.
 
 Finally, the increase in undergrad TAs was good for graduate school
 applications, since it gave more undergrads a connection to a professor
@@ -129,8 +121,8 @@ None of this is directly related to the union's grievance. Fee remissions
 will be paid back to both undergrad TAs and graduate TAs. It is, however,
 indirectly related. One side effect of hiring many 8 hour TAs is that
 *you have to hire more undergrads*.
-More students got to hold TA positions, and had someone to ask for a letter of
-recommendation at grad school application time.
+More students got to hold TA positions, talk to professors, get
+letters of recommendation, and so on.
 
 You could argue this is [Goodharting](https://en.wikipedia.org/wiki/Goodhart%27s_law)
 in action, since each professor gets less time to evaluate each TA. Maybe all
@@ -154,12 +146,13 @@ tech company summer internships. Strong students could get
 [$7,000 a month](https://www.glassdoor.com/research/internships-entry-level-jobs-2019/)
 or more during the summer, often with a housing stipend, and that could cover in-state tuition,
 housing, and food until the next summer if you planned your budget right,
-even with the insanity of Bay Area rent. Most departments do not have this
+even accounting for the insanity of Bay Area rent. Most departments do not have this
 luxury.
 
 The problem was that departments that didn't have these luxuries would and
 were tempted to adopt similar policies, in a bid to fix budget problems of there
-own. I think it's good for the university to have 8 hour TA appointments go away,
+own. Charts from UAW's page show that the statistics department was starting to
+shift to the CS model. I think it's good for the university to have 8 hour TA appointments go away,
 but I think it's bad for the CS department to lose them.
 
 
@@ -170,7 +163,7 @@ It's still uncertain, but here's my understanding based on discussion in
 the Berkeley Facebook student groups.
 
 First of all, existing TAs working less than 10 hours per week will continue
-to work the same amount. However, they'll receive fee remissions. There is
+to work the same amount, along with fee remissions. There is
 a contract negotiated by the union that prevents TAs from losing their jobs
 in the middle of the semester, so for now, this semester will play out as
 before.
@@ -186,14 +179,14 @@ and fewer undergrads will sign up in the first place. If the only TA options wer
 20 hour appointments, I likely wouldn't have taken any of them in my senior
 year, due to other time commitments.
 
-The adminstration will either need to allocate more TA budget, or CS class sizes
+The administration will either need to allocate more TA budget, or CS class sizes
 will need to shrink. Historically, I've lost a lot of faith in the UC system
 and expect it to raise the budget by a token amount that doesn't cover the
 shortfall. CS class enrollment was already effectively at capacity with the
 8 hr / week loophole, so it has to drop. The math I saw was that four 8 hour TAs
 cost the same as one 20 hour TA. If the budget doesn't increase, a shift to
 20 hour TAs means 62.5% of the teaching hours as last semester. This is pretty
-crazy, I have no idea how they'll even figure out enrollment.
+crazy and I have *no idea* how they'll even figure out enrollment.
 
 I'd like the union to negotiate higher pay per hour, in exchange for fee
 remissions, because one of the big lessons is that welfare cliffs can lead to
