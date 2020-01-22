@@ -6,36 +6,44 @@ date:   2020-01-20 16:32:00 -0500
 
 For Mystery Hunt 2020, I hunted with teammate, the same team I hunted with
 last year. We ended up smashing all my expectations. By puzzle count, we were
-2nd. By metas, we were 2nd to solve all metas. By finishing the Hunt, we
+2nd. By metas, we were 2nd to solve all metas. By Hunt finish time, we
 were 3rd, due to getting stuck on the last puzzle (more on that later).
 This was the first year where teammate got a call from HQ warning us that
-we were in contention for winning, and although I knew teammate was competitive,
-last year we were far behind the lead teams. This year, we weren't.
+we were in contention for winning, and for much of Saturday, we were the lead
+team, which is a rather weird prospect to consider. I didn't believe it
+until someone came back from trivia for [Weakest Carouselink](http://pennypark.fun/puzzle/weakest_carouselink/)
+and said we played against Palindrome, indicating we unlocked the puzzle
+at the same time as they did.
 
 Based on questions Left Out asked us during Hunt interactions, I don't think many
 Mystery Hunt veterans know where teammate came from. Very briefly, teammate
 is a mix of people from Puzzlehunt CMU, some Bay Area puzzlers from Berkeley,
-some people from Super Team Awesome, and friend branching out from there.
-Almost all the original members of teammate used to hunt with Galactic (FULL NAME),
-but one year they decided to start their own team, and teammate and Galactic
-have been sister teams ever since. The two teams have similar team culture
-and age demographics. For the former, meme-heavy and heavy willingness to backsolve.
-For the latter, the majority of both teams is under 30. I'm actually not sure
+some people from Super Team Awesome, and friends branching out from there.
+Before teammate, these people hunted with ✈✈✈ Galactic Trendsetters ✈✈✈,
+but one year they decided to split into their own team, and teammate and
+Galactic
+have been sister teams ever since.
+
+The two teams have similar team culture
+and age demographics. For the former, both are meme-heavy and very willing to
+backsolve.
+For the latter, the majority of both teams are younger than 30. I'm actually not sure
 if anyone on teammate is over 30, now that I think about it.
-
 This showed itself
-most strongly when we did the Balloon Vendor interaction. Left Out started a
-clue with "BTS..." and we immediately guess K-pop, then they gave us questions
-about stovepop popcorn and Pop-Up Video that stumped everyone.
+most strongly when Left Out came to deliver [the Baby Shower Balloon](http://pennypark.fun/puzzle/baby_shower/).
+They started a clue with "BTS..." and three of us immediately guessed K-Pop.
+Then we got a question about a VH1 television show that showed music videos
+([Pop-Up Video](https://en.wikipedia.org/wiki/Pop-Up_Video)), and our
+reaction was "What's VH1?"
 
-Before Hunt, members of both team's leadership were seriously considering
-merging Galactic and teammate. The downside would be a less fun Hunt. The upside
-would be significantly better odds of winning. The vote ended at deciding not
-to merge, and based on the solve graphs, we clearly didn't need to merge to be
-a contender for the coin this year. However, we weren't surprised to see Galactic
-win, since we knew they wanted to be more competitive this year. (Well, okay,
-I was a bit surprised, since I predict Palindrome to win every year, and every
-year it's just a bit wrong.)
+Before Hunt, members of Galactic and teammate leadership were seriously considering
+merging the two teams. The downside would be a less fun Hunt, since we'd be
+way over the recommended limit of 70-80 people. The upside was that we'd have
+much better odds of winning. We didn't merge, but based on the solve
+graphs, we clearly didn't need to merge to be
+a contender for the coin this year. We knew Galactic wanted to be more competitive
+this year, and weren't surprised they got to the coin first. (Although,
+like every year, I expect Palindrome to win, and then they don't.)
 
 \* \* \*
 {: .centered }
@@ -67,20 +75,59 @@ we were pretty despondent after 4 hours with no progress.
 
 The thing keeping us going was knowing that if we were 1st, there was no way we
 had a 4 hour lead over 2nd place, and we hadn't gotten a "coin is found" email.
-That mean that any other teams in contention had to be stuck on the same puzzle
-as us. Which was great for motivation, but bad for anybody looking to sleep,
+That mean that any other team in contention had to be stuck on the same puzzle
+as us, and it was done to who figured it out first.
+That was great for motivation, but bad for anybody looking to sleep,
 because any moment could be the moment we got the a-ha and went to the runaround.
 
-When the 3 PM coin email came, our entire team had been looking at Workshop
-for 6 hours, knew it was the only puzzle that mattered for Hunt
+When the 3 PM coin email came, our entire team had been looking at the Workshop
+pennies for 6 hours, knew it was the only puzzle that mattered for Hunt
 completion, and we were still stuck. Feels bad. As soon as the coin was found,
 Left Out called us, gave us some hints, and fastforwarded us through the
 endgame, which was both very fun and quite impressive.
 
 So, what happened? Word on the grapevine was that Workshop testsolved
 perfectly fine within Left Out, and they were surprised it took teams as long
-as it did to finish the Hunt. In my opinion, part of what played into this
+as it did to solve that puzzle. In my opinion, part of what played into this
 was that we knew the pennies would be part of a puzzle, but we assumed we
 could look at it later, when we had complete information.
-By the time we actually looked at the pennies, the team was very
-sleep-deprived and unable to figure
+By the time we actually looked at the pennies, we were very
+sleep-deprived due to rushing for the Cactus Canyon meta, weren't as sharp
+as normal, and were just burnt out on staring at the same freaking pennies
+for hours on end.
+
+In many ways, this was similar to what happened to my team for
+Galactic Puzzle Hunt 2019. We put off learning Puflantu until right before
+looking at metas, under the logic that it'd be easier to learn it all at once
+after unlocking more artifacts, but in practice, it turned the language
+learning into a big slog  What do you do, when there's nothing to do but
+learn Puflantu, and Puflantu is hurting your brain?
+
+I'm trying to figure out why the clocks for April Fool's Day town from
+Mystery Hunt 2019 didn't have this issue for us. It has a similar structure,
+where a small bit of information from every round gets pulled into one
+final puzzle. However, we solved that meta without
+too much pain in the final hours of Hunt, once we had enough prank
+answers. I think the crucial difference was that during the Hunt,
+we started looking at clocks early because there was no indiciation the
+clocks *didn't* matter for the current town. In contrast, getting pennies at
+the end of a round sent a signal that we didn't need to look at them
+until the end.
+
+\* \* \*
+{: .centered }
+
+I've been thinking about puzzlehunt design more recently. You may also
+have noticed that this post is labeled "Part 1". These two facts are linked!
+I'm one of the organizers for [My Little Pony: Puzzles Are Magic](https://www.puzzlesaremagic.com/),
+a puzzlehunt that starts in about 10 days.
+
+Currently, I'm 50-50 between trying to get as many sign-ups as possible, and
+freaking out that people are going to hate it for not living up to expectations.
+I've been told this is a natural part of the creative process. I'm also still
+freaking out.
+
+Puzzles are Magic should be fine, but in the next few days, I'll be spending
+more puzzle-time on making sure the hunt website doesn't blow up, and less time
+blogging about Mystery Hunt. When things are less busy, I'll share specific
+puzzle stories.
