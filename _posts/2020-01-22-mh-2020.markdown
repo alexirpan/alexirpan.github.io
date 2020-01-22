@@ -1,0 +1,152 @@
+---
+layout: post
+title:  "Mystery Hunt 2020, Part 1"
+date:   2020-01-22 03:10:00 -0500
+---
+
+For Mystery Hunt 2020, I hunted with teammate, the same team I hunted with
+last year. We ended up smashing all my expectations. By puzzle count, we were
+2nd. By metas, we were 2nd to solve all metas. By Hunt finish time, we
+were 3rd, due to getting stuck on the last puzzle (more on that later).
+This was the first year where teammate got a call from HQ warning us that
+we were in contention for winning, and for much of Saturday, we were the lead
+team, which is a rather weird prospect to consider. I didn't believe it
+until someone came back from trivia for [Weakest Carouselink](http://pennypark.fun/puzzle/weakest_carouselink/)
+and said we played against Palindrome, indicating we unlocked the puzzle
+at the same time they did.
+
+Based on questions Left Out asked us during Hunt interactions, I don't think many
+Mystery Hunt veterans know where teammate came from. Very briefly, teammate
+is a mix of people from Puzzlehunt CMU, some Bay Area puzzlers from Berkeley,
+some people from Super Team Awesome, and friends branching out from there.
+Before teammate, these people hunted with ✈✈✈ Galactic Trendsetters ✈✈✈,
+but one year they decided to split into their own team, and teammate and
+Galactic
+have been sister teams ever since.
+
+The two teams have similar team culture
+and age demographics. For the former, both are meme-heavy and very willing to
+backsolve.
+For the latter, the majority of both teams are younger than 30. I'm actually not sure
+if anyone on teammate is over 30, now that I think about it.
+This showed itself
+most strongly when Left Out came to deliver [the Baby Shower Balloon](http://pennypark.fun/puzzle/baby_shower/).
+They started a clue with "BTS..." and three of us immediately guessed K-Pop.
+Then we got a question about a VH1 television show that showed music videos
+([Pop-Up Video](https://en.wikipedia.org/wiki/Pop-Up_Video)), and our
+reaction was "What's VH1?"
+
+Before Hunt, members of Galactic and teammate leadership were seriously considering
+merging the two teams. The downside would be a less fun Hunt, since we'd be
+way over the recommended limit of 70-80 people. The upside was that we'd have
+much better odds of winning. We didn't merge, but based on the solve
+graphs, we clearly didn't need to merge to be
+a contender for the coin this year. We knew Galactic wanted to be more competitive
+this year, and weren't surprised they got to the coin first.
+
+\* \* \*
+{: .centered }
+
+I felt this year's Hunt was really good, in inventiveness of its structure
+and polish in its puzzle. However, for me it still feels a bit sour due to how the
+Hunt ended for us.
+
+On Friday night, we felt we were doing well. I stayed up until 6 AM,
+then slept for 4 hours and came back.
+On Saturday night, we *knew* we
+were doing well. We rightly guessed we had unlocked every round, we were making
+good progress on all the metas, and it started to look like if I went to bed,
+I would wake up after we finished Hunt. So I pulled an all-nighter, and I know other
+people pulled one as well. At 9 AM, we solved our last meta, and frantically
+sent someone to get the last penny.
+
+Every time you solved a round in this hunt, you got to pick up a pressed penny.
+Each penny had 3 arrows, 3 images, and 3 sentences of text. In short, it was definitely
+puzzle data, but I was expecting a shell metameta, and didn't bother
+looking too closely.
+Additionally, our home base was a fairly long walk from
+Hunt HQ, and Left Out told us it would be fine if we picked them in batches,
+to avoid having to send someone there and back for each meta solve.
+
+We picked up the final penny,
+didn't unlock a shell, and realized it was a pure metapuzzle,
+at which point we started looking at the pennies, and got horribly stuck.
+The Workshop isn't on the hunt website yet, but the solution is described at
+wrap-up. We got the penny layout within the 1st hour, and were stuck on extraction
+for the rest.
+
+About 3 hours in, we had concluded two things. First, if we had been in the lead,
+there was no way we had a three hour lead over 2nd place. Second, the coin hadn't
+been found yet. Assuming the a reasonable-length runaround, that implied that we were one of several teams
+stuck on the same pennies puzzle, and Hunt would come down to whichever team got the break-in
+first. And, every other cotender for the coin would have made the same
+inference, and were likely staring at the pennies just as intensely.
+That was great for motivation, but bad for anybody looking to sleep,
+because any moment could be the moment we got the a-ha and went to the runaround.
+
+By the time the coin announcement email came out,
+our entire team had been looking at the Workshop
+pennies for 6 hours. We knew it was the only puzzle that mattered for Hunt
+completion, and we still couldn't get it. Feels bad. As soon as the coin was found,
+Left Out called us, gave us some hints, and fastforwarded us through the
+endgame, which was both very fun and quite impressive.
+
+So, what happened? Word on the grapevine was that Workshop testsolved
+perfectly fine within Left Out, and they were surprised it took teams as long
+as it did to solve. In my opinion, part of what played into this
+was that we knew the pennies would be part of a puzzle, but we assumed we
+could look at it later, when we had complete information.
+By the time we actually looked at the pennies, we were very
+sleep-deprived due to rushing for the Cactus Canyon meta, so we weren't as sharp.
+As time passed, we got increasingly burnt out
+on trying to figure out the same freaking pennies for hours.
+
+In many ways, this was similar to what happened to my team for
+Galactic Puzzle Hunt 2019. We put off learning Puflantu until right before
+looking at metas, under the logic that it'd be easier to learn it all at once
+after unlocking more artifacts. In practice, it turned the language
+learning into a big slog. What do you do, when there's nothing to do but
+learn Puflantu, and Puflantu is hurting your brain?
+
+I'm trying to figure out why the clocks for April Fool's Day Town from
+Mystery Hunt 2019 didn't have this issue for us. It has a similar structure,
+where a small bit of information from every round gets pulled into one
+final puzzle. However, we solved that meta without
+too much pain in the final hours of Hunt, once we had enough prank
+answers. I think the crucial difference was that during the Hunt,
+we started looking at clocks early because there was no indication the
+clocks *didn't* matter for the current town. That caused we to track them
+early, giving us all the data we needed to extract once Sunday came around.
+In contrast, by getting pennies at
+the end of a round, we got a signal that we didn't need to look at them
+until the end. (And if they were part of a shell meta, looking at them
+early may have been wasted time, compared to solving other puzzles.)
+
+\* \* \*
+{: .centered }
+
+I've been thinking about puzzlehunt design more. You may also
+have noticed that this post is labeled "Part 1". These two facts are linked!
+I'm one of the organizers for [My Little Pony: Puzzles Are Magic](https://www.puzzlesaremagic.com/),
+a puzzlehunt that starts in about 10 days.
+
+Currently, I'm 50-50 between trying to get more sign-ups, and
+freaking out that people are going to hate it for not living up to expectations.
+I've been told this is a natural part of the creative process. I'm also still
+freaking out.
+
+Puzzles are Magic should be fine, but in the next few days, I'll be spending
+more puzzle-time on making sure the hunt website can handle the load,
+and less time blogging about Mystery Hunt. When things are less busy, I'll share specific
+puzzle stories.
+
+Last note: automated callbacks! I'm in favor of it. Somewhat selfishly,
+as teammate benefits from it a lot.
+I understand that some people like to hear
+a human voice now and then, and hunt organizers like how it lets them listen to
+teams celebrate a puzzle solve, but there's no reason you can't occasionally
+call teams for a check-in, or visit them in-person, while letting an
+automated system handle the majority of calls that are simply replies to
+puzzle guesses. It's not a binary choice. Just saying.
+
+Oh, and congratulations to the new couple. It was very, very sweet.
