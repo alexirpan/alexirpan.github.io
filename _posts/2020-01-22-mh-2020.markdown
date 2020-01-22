@@ -48,7 +48,7 @@ this year, and weren't surprised they got to the coin first.
 {: .centered }
 
 I felt this year's Hunt was really good, in inventiveness of its structure
-and polish in its puzzle. However, for me it still feels a bit sour due to how the
+and polish in its puzzles. However, for me it still feels a bit sour due to how the
 Hunt ended for us.
 
 On Friday night, we felt we were doing well. I stayed up until 6 AM,
@@ -63,9 +63,9 @@ sent someone to get the last penny.
 Every time you solved a round in this hunt, you got to pick up a pressed penny.
 Each penny had 3 arrows, 3 images, and 3 sentences of text. In short, it was definitely
 puzzle data, but I was expecting a shell metameta, and didn't bother
-looking too closely.
+looking at them too closely.
 Additionally, our home base was a fairly long walk from
-Hunt HQ, and Left Out told us it would be fine if we picked them in batches,
+Hunt HQ, and Left Out told us it would be fine if we picked the pennies up in batches,
 to avoid having to send someone there and back for each meta solve.
 
 We picked up the final penny,
@@ -77,15 +77,15 @@ for the rest.
 
 About 3 hours in, we had concluded two things. First, if we had been in the lead,
 there was no way we had a three hour lead over 2nd place. Second, the coin hadn't
-been found yet. Assuming the a reasonable-length runaround, that implied that we were one of several teams
+been found yet. Assuming the reasonable-length runaround, that implied that we were one of several teams
 stuck on the same pennies puzzle, and Hunt would come down to whichever team got the break-in
-first. And, every other cotender for the coin would have made the same
+first. And, every other contender for the coin would have made the same
 inference, and were likely staring at the pennies just as intensely.
 That was great for motivation, but bad for anybody looking to sleep,
-because any moment could be the moment we got the a-ha and went to the runaround.
+because any moment could be the moment we got the a-ha.
 
-By the time the coin announcement email came out,
-our entire team had been looking at the Workshop
+At 3 PM, Galactic found the coin.
+Our entire team had been looking at the Workshop
 pennies for 6 hours. We knew it was the only puzzle that mattered for Hunt
 completion, and we still couldn't get it. Feels bad. As soon as the coin was found,
 Left Out called us, gave us some hints, and fastforwarded us through the
@@ -115,7 +115,7 @@ final puzzle. However, we solved that meta without
 too much pain in the final hours of Hunt, once we had enough prank
 answers. I think the crucial difference was that during the Hunt,
 we started looking at clocks early because there was no indication the
-clocks *didn't* matter for the current town. That caused we to track them
+clocks *didn't* matter for the current town. We tracked them
 early, giving us all the data we needed to extract once Sunday came around.
 In contrast, by getting pennies at
 the end of a round, we got a signal that we didn't need to look at them
