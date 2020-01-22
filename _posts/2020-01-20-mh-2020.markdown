@@ -1,0 +1,86 @@
+---
+layout: post
+title:  "Mystery Hunt 2020, Part 1"
+date:   2020-01-20 16:32:00 -0500
+---
+
+For Mystery Hunt 2020, I hunted with teammate, the same team I hunted with
+last year. We ended up smashing all my expectations. By puzzle count, we were
+2nd. By metas, we were 2nd to solve all metas. By finishing the Hunt, we
+were 3rd, due to getting stuck on the last puzzle (more on that later).
+This was the first year where teammate got a call from HQ warning us that
+we were in contention for winning, and although I knew teammate was competitive,
+last year we were far behind the lead teams. This year, we weren't.
+
+Based on questions Left Out asked us during Hunt interactions, I don't think many
+Mystery Hunt veterans know where teammate came from. Very briefly, teammate
+is a mix of people from Puzzlehunt CMU, some Bay Area puzzlers from Berkeley,
+some people from Super Team Awesome, and friend branching out from there.
+Almost all the original members of teammate used to hunt with Galactic (FULL NAME),
+but one year they decided to start their own team, and teammate and Galactic
+have been sister teams ever since. The two teams have similar team culture
+and age demographics. For the former, meme-heavy and heavy willingness to backsolve.
+For the latter, the majority of both teams is under 30. I'm actually not sure
+if anyone on teammate is over 30, now that I think about it.
+
+This showed itself
+most strongly when we did the Balloon Vendor interaction. Left Out started a
+clue with "BTS..." and we immediately guess K-pop, then they gave us questions
+about stovepop popcorn and Pop-Up Video that stumped everyone.
+
+Before Hunt, members of both team's leadership were seriously considering
+merging Galactic and teammate. The downside would be a less fun Hunt. The upside
+would be significantly better odds of winning. The vote ended at deciding not
+to merge, and based on the solve graphs, we clearly didn't need to merge to be
+a contender for the coin this year. However, we weren't surprised to see Galactic
+win, since we knew they wanted to be more competitive this year. (Well, okay,
+I was a bit surprised, since I predict Palindrome to win every year, and every
+year it's just a bit wrong.)
+
+\* \* \*
+{: .centered }
+
+I felt this year's Hunt was really good, in inventiveness of its structure
+and polish in its puzzle. However, for me it still feels a bit sour due to how the
+Hunt ended for us.
+
+On Friday night, we felt we were doing well. I ended up staying up until 6 AM and
+getting 4 hours fo sleep before heading back. On Saturday night, we *knew* we
+were doing well. We rightly guessed we had unlocked every round, we were making
+good progress on all the metas, and it started to look like if I went to bed,
+I would wake up after we finished Hunt. So I pulled an all-nighter, and I know other
+people who pulled one as well.
+
+Every time we solved a meta, we got back a pressed penny. They definitely looked like
+puzzle info, but I expected that we'd get a shell metameta, and didn't bother
+looking too closely. Additionally, our homebase was a fairly long walk from
+Hunt HQ, and Left Out told us it would be fine if we picked them in batches,
+to avoid having to send someone there and back for each meta solve.
+We got the final penny, didn't unlock a shell, and realized it was a pure metapuzzle,
+at which point we got horribly stuck on the a-ha. The Workshop isn't up on
+the hunt website yet, but basically, every pressed penny had 3 arrows and 3 images
+on it, stuck onto a piece of paper describing the land it was from. The
+pennies could be arranged into a unique layout where all the images were
+oriented correctly and every arrow on every penny pointed to another one. At that
+point, we had no idea what to do. You can check wrap-up for the final step, but
+we were pretty despondent after 4 hours with no progress.
+
+The thing keeping us going was knowing that if we were 1st, there was no way we
+had a 4 hour lead over 2nd place, and we hadn't gotten a "coin is found" email.
+That mean that any other teams in contention had to be stuck on the same puzzle
+as us. Which was great for motivation, but bad for anybody looking to sleep,
+because any moment could be the moment we got the a-ha and went to the runaround.
+
+When the 3 PM coin email came, our entire team had been looking at Workshop
+for 6 hours, knew it was the only puzzle that mattered for Hunt
+completion, and we were still stuck. Feels bad. As soon as the coin was found,
+Left Out called us, gave us some hints, and fastforwarded us through the
+endgame, which was both very fun and quite impressive.
+
+So, what happened? Word on the grapevine was that Workshop testsolved
+perfectly fine within Left Out, and they were surprised it took teams as long
+as it did to finish the Hunt. In my opinion, part of what played into this
+was that we knew the pennies would be part of a puzzle, but we assumed we
+could look at it later, when we had complete information.
+By the time we actually looked at the pennies, the team was very
+sleep-deprived and unable to figure
