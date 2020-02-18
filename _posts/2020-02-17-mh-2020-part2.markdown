@@ -1,0 +1,114 @@
+---
+layout: post
+title:  "Mystery Hunt 2020, Part 2"
+date:   2020-01-22 03:10:00 -0500
+---
+
+I realize it's a while after Mystery Hunt, but now that
+[My Little Pony: Puzzles Are Magic](https://www.puzzlesaremagic.com/) has
+wrapped up, I have time to finish my post about Mystery Hunt 2020.
+(I may have some more personal posts about Puzzles are Magic after this, but
+no promises.)
+
+I got to Boston on Wednesday night, spending Thursday working remotely. As I
+said in Part 1, I hunted with teammate this year, and we spent the day before
+hunt socializing and figuring out logistics. I ended up acquiring a bunch of
+power strips the day before Hunt, with no room in my carry-on to bring them
+back, so all those power strips got donated to other team members by
+the end of Hunt.
+
+Before Hunt start, we read through the rules and learned answer checking would
+be automated this year. As has been said many times elsewhere, teammate tends
+to be very aggressive on answer guesses. Speaking personally (and definitely
+not for others on the team), here's why I tend
+to send a lot guesses during Hunt.
+
+To me, good puzzle solvers are distinguished
+by their ability to correctly generalize from limited data, solve around
+mistakes they've made in data collection, and rapidly form and discard hypotheses
+about how a puzzle works. More concretely, if you can reliably solve puzzles
+from 80% of the clues, it takes 80% of the time per puzzle. Except, in practice,
+it works out to *faster* than 80%, because the last 20% of clues are the hardest
+ones.
+The same principle holds for metapuzzles. If you can solve a
+meta from 60% of the feeders, then you get to skip the hardest 40% of that round,
+which often works out to less than half the time of a full 100% forward solve.
+
+Because of this, if you're interested in getting faster at hunts, you want to
+shortcut everything you believe you can shortcut, and that includes making low
+confidence guesses that rely on a few your assumptions being true. The answer
+checker acts as a binary signal of "all your generalizations were right", or
+"at least one of your generalizations was wrong", and although it's a very
+low-bandwidth signal, it's something that's there. So if the hunt lets you
+be more aggressive on guesses, I'll naturally use it a bit more.
+It's not
+personal towards the puzzle author - their puzzle is one of many puzzles
+within the cohesive whole that makes up Mystery Hunt.
+
+Sorry, that went on longer than I thought. On to specific puzzle stories.
+
+\* \* \*
+{: .centered }
+
+I looked around a few puzzles at the beginning, but the one I started first
+was Goldilocks. I filled in a few clues, someone else figured out the
+mechanic, then I failed to get any more clues and spent my time setting
+up indexing in the spreadsheet instead.
+
+The next one I worked on was The Trebuchet, and here it was a similar story.
+By the time I got to the puzzle, they had Boggled a few words (the voice
+actors from Bolt), and after we realized the ammunition were all puns,
+the rest of the walls fell pretty fast. I IDed a few of the shows for
+BLOCK OF TNT (wtf SHAQ LIFE is a show??), then started moving letters to
+the final wall as we got them. We expected them to slot in automatically,
+instead of acting like a drop quote, but I noted we were a few swaps away
+from (PHRASE) and someone else finished it from there.
+
+With that puzzle done, I jumped back to Storybook Forest, looking at
+Toddler Tilt. I did some work on it, but had trouble getting the toddlers
+to fall in the right order, and as we struggled through it, I noticed I
+was going through it slower than other people, and decided my time would be
+better spent on the meta.
+
+Looking through the Storybook Forest meta, I saw there were some tic-tac-toe
+theories. We had a lot of 9 letter answers, and the puzzles were arranged in
+a 3 x 3 grid. I decided to try extracting the same way as the Dolphin meta
+from 20,000 Puzzles Under the Sea, which actually sort of worked, but there
+were some weird answers that extracted 2 letters, and there weren't great
+ways to use the 11 letter answers. I started looking up tic-tac-toe variants
+that might have 11 spots to play, and in the middle of doing so the meta was
+solved by someone who didn't believe in any of our tic-tac-toe work.
+
+With that finished, I decided to look back towards The Grand Castle meta.
+We had 4 answers in that round, and after some false starts based on
+"stately" and "capital", someone discovered the Texas panhandle. I immediately
+noted that the panhandle had 26 counties, but out of the final answer of OILMEN,
+we had letters LMNO, and that made us think we had an ordering instead.
+Writing out the second word of each answer in the panhandle grid gave this.
+
+IMAGE
+
+On seeing this, I proposed that the 2nd words were going to form a cryptic
+ending in enumeration SIX. Someone else argued the cryptic would involve
+anagramming RACHEL and a possible continuation would be CHARLEMAGNE or
+CHARLES, so we called it in, and it was wrong.
+We tried a few more variants, but none of those worked either.
+
+We looked at it a bit more, and a 5th feeder answer came in, slotting in
+here.
+
+IMAGE
+
+After seeing this, I proposed that we'd actually get *two* cryptics, that
+would both share enumeration SIX, and our answer should be a 12-letter
+answers. I tried CHARLEMAGNES, plural, and that was wrong. Then someone
+found Six Flags Over Texas, which provided an ordering on the clues, and
+now that we didn't just have letters LMNO, I was okay with trying the
+A-Z idea again, and we solved it.
+
+With those rounds done, it was time to look at Spaceopolis. I watched
+our teammates sing karoake, and someone else got the Masked Singer a-ha,
+so I decided to do data entry and indexing. The extraction looked bad,
+and someone walked around asking for volunteers to solve The Magic
+Railway konundrum we'd just unlock. I agreed, played a mean house elf master
+for about an hour, and after finding the solution GRACE UNDER FIRE
