@@ -45,6 +45,9 @@ It's not
 personal towards the puzzle author - their puzzle is one of many puzzles
 within the cohesive whole that makes up Mystery Hunt.
 
+ADD THE CHARTS HERE
+MENTION MLP HERE
+
 Sorry, that went on longer than I thought. On to specific puzzle stories.
 
 \* \* \*
@@ -203,20 +206,76 @@ answer.
 The mental breakdown continued, and after a bunch more of "WHAT DID WE JUST
 DO AND WHY DID IT WORK", we figured out that RIDE ENHANCERS COLLECTIVE was
 part of the Omnibus episode that came out the weekend of Mystery Hunt. We
-concluded that we had probably skipped a bunch of steps and managed to shortcut
-directly through the answer thanks to some genuine fans of Omnibus that had
-no idea why they got an ad for a company that didn't exist. Reading the
-solution, it turned out we skipped every indexing step except the last one,
-so our guess was right.
+concluded that we had probably skipped a bunch of steps.
+Reading the
+solution, it turns out we skipped every cluephrase except the last one,
+so thank you, Omnibus fans. Your confusion about the RIDE ENHANCERS COLLECTIVE
+was not in vain.
 
+With that done, I decided to start looking at Big Top Carnival puzzles. I didn't
+contribute much to any of them, until someone said, "Hey, so all our answers are
+Kentucky Derby horses". We piled onto the meta and had \*T\*R\*D\*R\*, which
+we guessed was "something RIDER". Noticing that horse names had decently unique
+enumerations, we asked if anyone was working on a puzzle with given answer lengths.
+The group working on Weakest Carouselink said they had (4 4). (They had all
+the chains, but were missing extraction.) One person found PINK STAR as a horse
+option, and someone else proposed PINK SLIP. The people working on Weakest
+Carouselink said "that seems bad", and I pointed out it was thematic to
+Weakest Link (you get fired), so we called it in and it was right. That gave
+us \*S\*T\*R\*D\*R\*, and within 30 seconds we went from that to
+"STIRRUP?" to "STIRRUP DRAMA!" to "AHHHHHH WE SOLVED A META WITH 5 OUT OF 12 ANSWERS".
 
-INTRO HERE
-esterdayLand was the meta, Jukebox. I mostly
-did support, transcribing the blanks, arrangement, and colors into our spreadsheet,
-and explaining how I wanted the puzzle to work (fill in the blanks, treat the
-colored numbers as positions for the colored blanks, then read the final black
-numbers to get the answer). Someone got the modernized answer break-in, we
-filled out the answers, got to READ UNDER COLOR NUMBERS, and found we didn't
-have enough answers to get the final answer. At this point, I was getting tired and
-needed to sleep, so I decided to head back for the night and check on the answer
-the next morning.
+The true backsolve masters were all asleep at this time, but we had 7 puzzles
+to backsolve, of course those of us awake were going to try. We got 3 of them in the next hour,
+got stuck on the rest, and left it to others to finish up as we went back
+to the YesterdayLand meta.
+
+Sometime earlier that night, I had transcribed the blanks, their arrangement, and the
+colors into the meta spreadsheet, and made guesses about how I wanted the
+puzzle to work. After someone got the modernized answer break-in, I explained
+how I felt it should work, and we started filling in letters. I had DUBSTEP for
+modernized disco, which was okay. Then we tried EDM MUSIC, which was worse.
+Then someone noticed that we could do ELECTRONIC DANCE MUSIC which freed up
+the 7-long spot for PORNHUB, and after a brief "oh no they went there", we
+got to the READ UNDER COLOR NUMBERS cluephrase. We didn't have enough answers
+to get the meta, but I was getting pretty tired and decided to head back for
+the night.
+
+After I woke up, I caught up on what had happened.
+
+* The remaining Big Top Carnival puzzles had been backsolved.
+* YesterdayLand's meta was solved.
+* We had the emoji a-ha for for Creative Picture Studios.
+* We had unlocked Safari Adventure.
+
+I ended up contributing the most to Safari Adventure, which is to be
+expected - it was a really big round. For regular puzzles, I worked
+on Golden Wolf (figured out the Gashly kids a-ha), Lion (finishing one of
+the final logic puzzles), and Sheep (looking up Mega Man characters,
+pointing out all the last words were 11 letters long, and spending an
+hour *not* indexing by game number until someone else tried it and solved
+the puzzle.) I also worked on Snake, where we got IAMB from *A*B, guessed
+TROCHEES just in case, then got PACES from PACESA (we had some errors that
+we guessed through).
+
+I didn't work on Hyena, but there is a fun story for it. At one point,
+the group working on it was convinced an answer was the letters in CAM,
+permuted in some order, but they weren't sure what. They decided that, well
+there were only 6 permutations, so they tried all 6 and got it. They then
+got the letters SRT, in some order, and tried 4 of the 6 permutations,
+before stopping out of fear of answer locks. During the Hunt, we thought
+the answer locks were round-wide, and they didn't want to lock out other
+Safari puzzles. When we backsolved it later, they were upset to learn it
+was one of the 2 permutations of SRT they hadn't tried.
+
+In the middle of Safari Adventure, we unlocked First You Visit..., which
+was really funny, because there was a cascade of groans across each room
+as people discovered the puzzle. Out of Puzzle Traumatic Stress Disorder,
+no one solved the puzzle and we ended up backsvoling it.
+
+For Safari metas, I looked at a few. In The Cubs
+Scout, my incredibly-minor baseball knowledge helped a bit. In Zeus, I
+looked up the animals, but didn't get much further. In Sam, I figured
+out the stars-and-stripes idea, but didn't get the every-other trick.
+
+We unlocked Cascade Park, and 
