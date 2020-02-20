@@ -277,5 +277,28 @@ For Safari metas, I looked at a few. In The Cubs
 Scout, my incredibly-minor baseball knowledge helped a bit. In Zeus, I
 looked up the animals, but didn't get much further. In Sam, I figured
 out the stars-and-stripes idea, but didn't get the every-other trick.
+We initially thought the Tiger would be a regular puzzle that was part of
+5 metas, which we would have to backsolve entirely. Once we got to a 6th meta
+that needed Tiger, we figured out that it was probably the metameta. The
+Safari metas were getting solved pretty fast, and not every meta solver
+noted what backsolve answer was left over, so a few of us decided to make
+a Tiger tracking spreadsheet, asking Safari meta solvers if we could find
+them and reconstructing the solve from the spreadsheet if we couldn't.
+Once the Safari Adventure metameta unlocked, we transferred our data into
+that sheet, and in the process of doing so, someone got the Tyger Tyger
+a-ha right away, which just left solving the remaining Safari metas.
 
-We unlocked Cascade Park, and 
+During this time, we had one PennyPass leftover. In the Hunt, we would
+occasionally get PennyPasses, which could be used to unlock a puzzle in
+any round you had unlocked.
+I thought this was a neat choose-your-own-unlock-adventure, without the
+downsides of 2018's experiment. In 2018, teams chose which round to unlock,
+which was cool, but also meant that you might randomly pick the hardest round
+instead of the easiest one, and the organizers had to be prepared for every
+possible in-person interaction as soon as teams finished the intro round. It
+hasn't come back yet, and I don't think it should. Our PennyPass strategy
+was to optimize for the most open puzzles at once (the width of the hunt).
+In each round, solving one puzzle unlocked one other puzzle in that round.
+So, solving within a round either kept your width constant, or decreased your
+width if you had run out of puzzles to unlock in that round. The only way
+to increase width was to unlock new rounds, or use PennyPasses. 
