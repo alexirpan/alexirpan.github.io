@@ -5,8 +5,8 @@ date:   2020-02-20 03:10:00 -0500
 ---
 
 My Little Pony: Puzzles are Magic wrapped up recently. I was the one tech person
-for the hunt website, and while working on the hunt website, I realized how
-many things you needed to know to run a good hunt website. This is an attempt to
+for the hunt website, and while working on the hunt website, I learned a
+bunch of things about how to run a good hunt website. This is an attempt to
 list those things.
 
 If you are reading this, I'm assuming that you know what puzzlehunts are, you've
@@ -134,29 +134,30 @@ valid choices.
 
 Whether you want to confirm partials or not is up to you, but you should
 make sure your submission reply system supports replies besides just "correct"
-and "incorrect", because it lets you make more interesting puzzles.
-An example puzzle that needed this
-is [Art of the Dress](https://www.puzzlesaremagic.com/puzzle/art-of-the-dress/)
-from Puzzles are Magic.
+and "incorrect", because it can open up new puzzle design space.
+Example puzzles that rely on custom replies are
+[Art of the Dress](https://www.puzzlesaremagic.com/puzzle/art-of-the-dress/)
+from Puzzles are Magic, and [The Answer to This Puzzle Is...](https://2018.galacticpuzzlehunt.com/puzzle/the-answer-to-this-puzzle-is.html) from GPH 2018.
 
 Note that if you decide to confirm partials, you'll encourage teams to guess
 more, and you should make sure you aren't unduly punishing teams for trying to
 check their work.
 
-Make sure your code actually saves answer submissions to your database, and that
-submissions are tagged with what time they were made. You'll want this to
-compute stats after-the-fact.
+At minimum, your submissions should be tagged with the team that submitted them,
+and the time they were made, which will be useful when you want to compute
+submission statistics after-the-fact.
 
 
 Errata
 ----------------------------------------------------------------------------
 
 You will try to make a puzzlehunt without errata. You'll probably fail. Make sure
-your puzzlehunt has a page that lets you display issued errata for each puzzle.
+your puzzlehunt has a page that lists all errata you've issued so far, including
+time that errata came out.
 
 If you are building an MIT Mystery Hunt style puzzlehunt, where different
 teams have different puzzles unlocked,
-make sure your errata is only visible to teams that have unlocked the puzzle
+your errata should only be visible to teams that have unlocked the puzzle
 it corresponds to.
 
 When you issue errata, you'll want to notify teams, which brings me to...
@@ -180,8 +181,213 @@ some time in between each email send. We never figured out exactly how long we
 needed to wait, but 1 second between emails was too short and 20 seconds
 between emails was to be fine.
 
-You will want the ability to email everyone (for hunt wide announcements),
+You'll want the ability to email everyone (for hunt wide announcements),
 everyone on a specific team (if you want to talk to that team), and everyone
 who has unlocked but not solved a specific puzzle (to notify for errata).
 You may also want the ability to email everyone who hasn't unlocked a specific
 puzzle, if you want to provide extra help to struggling teams.
+
+
+Puzzle Format
+-----------------------------------------------------------------------------
+
+For puzzles, you can either go for a PDF-by-default format, or HTML-by-default
+format. I've seen hunts use both. For example, the two Australian hunts I've
+done (mezzacotta and MUMS 2019) were both PDF by default.
+
+The upside of PDF by default is that you know your puzzles will appear the
+same to all users. You can usually assume PDFs will appear the same to all
+users, which means you don't have to worry about how your puzzle will appear
+in different browsers or operating systems.
+
+Although it's more work, if you're running an online hunt, I'd advocate for
+an HTML-by-default puzzlehunt. An HTML based hunt has the following advantages.
+
+* You can more easily support "online-only" experiences, like music puzzles
+and interactive puzzles.
+* You reduce the number of clicks between a solver and the puzzle.
+* If you have several constructors, it is easier to enforce consistent
+fonts and styles across all your puzzles, and it is easier to change what
+that consistent styling is (just change the default font in your CSS).
+* If you need to issue errata, solvers will notice your errata faster if your
+puzzle is HTML-based, because it will be apparent as soon as anyone either
+refreshes or reopens the puzzle page. For PDF puzzles, solvers may not notice
+the errata until they re-download the puzzle PDF, and it's possible solvers
+may accidentally look at their old downloaded PDF instead of the updated PDF.
+
+I believe in total, these benefits are worth the extra work required to support
+HTML-by-default puzzles. Of course, you should use PDFs in cases where doing
+so is much easier. (There was no way A to Zecora was ever going to be in an
+HTML format.)
+
+If you plan to have your puzzles be HTML by default, you'll want to have
+tools that make doing so easier. It's not that it's impossible to write
+HTML by hand, it's just incredibly tedious to do so. I personally like Markdown
+for this. It's a lightweight syntax that builds directly to HTML, and you
+can embed HTML inside your Markdown file if you need to.
+
+I highly, highly, highly recommend writing scripts that partially automate
+converting puzzles into HTML. Doing so reduces typo risk, and makes it easier
+to update a puzzle based on testsolver feedback. For Puzzles are Magic, I had
+some scripts that generated HTML for grids, and scripts that auto-generated
+indices for puzzles based on taking 1 letter from every clue in a list.
+These were very useful for Flying High, Recommendations, and Endgame. Each of
+these ended up getting revised about 3 times each, and the scripts saved a
+bunch of time and headache.
+
+
+Access Control
+------------------------------------------------------------------------------
+
+Teams should not have access to a puzzle before they have unlocked it.
+This is obvious, but what's less obviously true is that they also shouldn't
+have access to any static resources that puzzle uses. Any puzzle specific
+images, Javascript, CSS, PDFs, and so on should be blocked behind a check of
+whether the team unlocked the puzzle in question.
+
+Assume that solvers will find any file that isn't gated behind one of these
+unlock checks, and check whether doing so would break anything about your
+hunt.
+
+
+Side Channel Leaks
+------------------------------------------------------------------------------
+
+There are many ways your puzzle can have side channels that leak information
+you may not want to leak. For exmaple, according to author notes in
+Wanted: Gangs of Six from MIT Mystery Hunt 2020, it used to be possible to
+extract the names of the fonts used from the puzzle, and several of the font
+names were named after the series they were from. To close this side-channel,
+the author had to remaster all the fonts themselves to give them non-spoilery
+names.
+
+Audio files come with album and artist metadata, unless you clear them. PDF
+files come with metadata that can leak info from their construction. For
+example, for [A Noteworthy Puzzle](https://www.mumspuzzlehunt.com/solution/III/2/)
+from the 2019 MUMS Puzzle Hunt, you could reconstruct the original sheet music
+and color names by inspecting the PDF carefully.
+
+This is especially relevant for interactive puzzles, which normally have
+a client-side Javascript component. The rule-of-thumb in online video games is
+to never, ever trust the client, and the same is true for puzzlehunts. In
+MIT Mystery Hunt 2020, teammate was able to solve 2 or 3 puzzles by
+inspecting the client-side Javascript, searching for the function that decrypted
+hidden text, and decrypting every string until we found one that looked like
+the answer. Left OUt is a very competent construction team and I'm not calling
+them out, I'm pointing out that this is just fundamentally hard. You will get
+solvers that are really good at programming, and they *will* reverse engineer
+things faster than you may think.
+
+To avoid this, adhere to the following conventions.
+
+Make your filenames completely non-descriptive. If you have 10 images, name
+them "1.png", "2.png", "3.png", and so on, in order of the webpage. The exception
+is if doing so would spoil something else about the puzzle. For example, in
+Anthropology from Puzzles are Magic, solvers needed to pair emoji hand signs to
+numbers. I ended up using images because I didn't want to deal with emojis
+looking different across operating systems. However, numbering the images
+"1.png", "2.png", and so on would have been misleading, so I generated random
+filenames for each image.
+
+If you have hidden content that should only appear after a solver does a certain
+step, hide it behind a random filename. If there is a secret 5th image and your
+first four images are named "1.png" to "4.png", you don't want solvers to
+shortcut the puzzle by trying to load "5.png".
+
+If you are using any file format that comes with metadata, check how to
+clear that metadata, and then do so before including it in your hunt.
+
+Some puzzlehunt tech setups go as far as auto-generating random filenames for
+every static resource in the hunt. I don't think you need to go that far, but
+you can if you want.
+
+For interactive puzzles, have key puzzle functionality hidden on the
+server side, and verify the solution server-side before continuing. Continuing
+with the Anthropology example, the client-side JS submits the entire grid
+state in a POST request, and the server-side Python code verifies the grid
+is a valid solution before allowing solvers to continue. For Applejack's Game,
+all the client-side code does is repeat whatever the server-side code gives
+it. This let me hide the card list and judge logic from the client.
+
+Note that side channel implies that you don't want puzzle info to leak this
+way. Sometimes, you do.
+Alternatively, you can have filenames be part of your puzzle. A notable puzzle
+in this vein I liked is p1cture from MIT Mystery Hunt 2015. Another puzzle like
+this is Tree Ring Circus from MIT Mystery Hunt 2019. To solve the puzzle, you
+needed to measure the ring sizes (diameters) of the given circles. The easiest
+way to do so was to directly inspect the SVG file to see what radius was
+used for each circle, and the solution says this was intentional. Another
+puzzle that deliberately leaks info through filenames is p1cture from MIT
+Mystery Hunt 2015. Your side channel leak is my puzzle idea.
+
+
+Accessibility
+-------------------------------------------------------------------------------
+
+You can generally assume that most solvers will be on either Windows or Mac OS X,
+they will normally use one of Chrome, Safari, or Firefox, and they'll be solving
+from a laptop-sized or monitor-sized screen.
+
+The key word here is *most*. The thing about accessibility is that it always
+affects a minority of your users, but there are a lot of minorities out there.
+If you want more people to solve your puzzlehunt, you'll need to be inclusive
+when possible.
+
+Some of your solvers will be color blind. Some of your solvers will be *legally*
+blind. Some
+of your solvers will heavily prefer printing puzzles versus solving them
+online, and of those solvers, not all of them will have access to color printers.
+
+You may not be able to please all of these people. If your puzzle is based
+on image identification, the legally blind solver is not going to be able to solve
+it. You can't even provide alt text that describe the image, because non-blind
+solvers will use the alt text as a side channel. But, try to do
+the best you can.
+
+It's put best by this reply from the 2019 MIT Mystery Hunt AMA: determine the
+minimum amount you are asking solvers to do for your puzzle, and then make sure
+as many people who meet that minimum get to solve your puzzle.
+
+For color blind solvers, try to avoid colors that are too visually similar to
+one another, and if you need to use a large number of colors, consider providing
+a color blind alternative.
+
+For people who prefer printing puzzles, make sure that your puzzles print well.
+By default, printers ignore all CSS, so by default, your puzzles probably
+print poorly. You'll need to define custom print styling under a
+`@media print` section in your CSS file to fix this. Try to avoid having
+grids, crosswords, or clues split across page breaks, and double check your
+CSS colors show up when you do Print Preview.
+
+Some solvers will solve from smartphones or tablets, rather than desktops or
+laptops. Check your site isn't completely broken on mobile.
+Even solvers with access to laptops will appreciate being able to solve
+puzzles on the go.
+
+For example, in Number Hunting, we rendered all the clues as math equations using
+MathJax, because it felt thematic and it was the prettiest way to display
+the one clue that needed to use a square root. However, we found that MathJax
+doesn't support line wrapping, making the equations render very poorly on mobile,
+so we provided an uglier plaintext version as well.
+
+As another example, in The Key is Going Slow and Steady, we used Prezi to build
+the Is It A Good Pet flowchart. One thing we learned during hunt construction was
+that if a puzzle looks big, it intimidates solvers and they're less likely to
+start it. So, if you have a way to make a puzzle look smaller, it encourages
+solvers to start work on your puzzle. No testsolver wanted to try solving
+Recommendations, until I made all the pictionary images 4x smaller and collapsed
+all the audio clips into a single file instead of 14 separate files. Doing so
+didn't change the puzzle difficulty. If anything, it made it harder. But, it
+made the puzzle take less screen space, and that was enough to get testsolvers to give it a shot.
+We expected a similar problem could happen in The Key is Going Slow and Steady,
+so we hid the full flowchart behind a dynamic Prezi presentation. The problem
+this introduced from an accessibility standpoint is that Prezi doesn't
+work on mobile, at all. The presentation was also quite slow and resource-hungry,
+which was bad for people using old computers.
+Given more time, I would have pushed for a more lightweight alternative.
+
+
+Hardware
+------------------------------------------------------------------------------
+
+Your
