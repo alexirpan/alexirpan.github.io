@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mystery Hunt 2019"
+title:  "MIT Mystery Hunt 2019"
 date:   2019-01-26 01:34:00 -0800
 ---
 

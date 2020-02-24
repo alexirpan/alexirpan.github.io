@@ -1,27 +1,88 @@
 ---
 layout: post
-title:  "Mystery Hunt 2020, Part 2"
+title:  "MIT Mystery Hunt 2020, Part 2"
 date:   2020-01-22 03:10:00 -0500
 ---
 
-I realize it's a while after Mystery Hunt, but now that
+Now that
 [My Little Pony: Puzzles Are Magic](https://www.puzzlesaremagic.com/) has
-wrapped up, I have time to finish my post about Mystery Hunt 2020.
-(I may have some more personal posts about Puzzles are Magic after this, but
-no promises.)
+wrapped up, I have time to finish my posts about MIT Mystery Hunt 2020. And
+only well over a month after Hunt too!
 
-I got to Boston on Wednesday night, spending Thursday working remotely. As I
-said in Part 1, I hunted with teammate this year, and we spent the day before
-hunt socializing and figuring out logistics. I ended up acquiring a bunch of
-power strips the day before Hunt, with no room in my carry-on to bring them
-back, so all those power strips got donated to other team members by
-the end of Hunt.
 
-Before Hunt start, we read through the rules and learned answer checking would
-be automated this year. As has been said many times elsewhere, teammate tends
-to be very aggressive on answer guesses. Speaking personally (and definitely
-not for others on the team), here's why I tend
-to send a lot guesses during Hunt.
+Before Hunt
+-------------------------------------------------------------------------
+
+Before MIT Mystery Hunt officially starts, people on our team like trying to
+identify hidden Mystery Hunt data before the hunt officially starts. This year,
+we had two targets: the emails from Left Out, and the wedding invitations.
+
+Every email we got from Left Out had a different signature. There was "Like Pluto,
+Left Out". Another said "Like J in a Playfair Cipher, Left Out". Then there was
+"Like a cake in the rain, Left Out". Some people felt this was just Left Out's
+gimmick (every signature is about something that's left out), but *maybe*
+they were a puzzle, so we kept track of all of them.
+
+When we got all the emails about the overnight situation, I argued this was
+weak evidence in favor of the emails being a puzzle. The argument went like this:
+if the emails were a puzzle, Left Out would need to know exactly how many
+different signatures they needed to send before Hunt. The overnight situation
+was a surprise. Therefore, if the emails were a puzzle, they wouldn't have
+custom signatures prepared for those emails, and none of the overnight situation
+emails had a custom signature.
+
+Someone else pointed out that given the seriousness of the situation, Left Out
+wasn't likely to include a jokey signature in those emails, whether or not the
+emails were a puzzle. That convinced me the emails weren't a puzzle.
+
+The wedding invitations, on the other hand...
+
+![Wedding invite with lines](/public/mh20-part2/hunt_invite.png)
+{: .centered }
+
+We recognized the first invite was a reference to the 2011 MIT Mystery Hunt
+invitation, but the second invite looked weirder. Why did the alignment look
+a little off center? Why was `WED LOVE YOU TO JOIN US!` missing an apostrophe in
+WE'D? And so on.
+
+Last year, our "is this a puzzle" theories were all in a channel named `#innovated-shitposting`.
+This year, it was `#wed-love-u-2-shitpost`. The working theory was that "join us"
+meant "draw connecting lines", "to" meant "connect the 2s", "love" meant
+"connect the hearts in the time", and "you" mean "connect the Us".
+
+So, uh, yeah, that's where all those red lines come from. We also thought it
+might have involved folding, so we tried that too.
+
+![Folded invite](/public/mh20-part2/hunt_invite_folded.png)
+{: .centered }
+
+As I was boarding my flight to Boston, my position was that the invite was
+more-likely-than-not a puzzle (say, 60% chance), but it would come with a shell
+that we wouldn't see until Hunt, so until then I wasn't going to try anything.
+
+Meanwhile, two people on teammate made a $20 bet with each other that the emails
+would or wouldn't be a puzzle. Neither the emails nor the wedding invite were
+a puzzle, and to quote the loser of the bet, "I'm a lot less confident in my
+bet now that I've read all the emails, but I'm not going to back down from a
+bet I accepted."
+
+The day before hunt was spent socializing and figuring out logistics.
+One teammate refreshed [Mystery Hunt Bingo](https://www.alexirpan.com/mystery-hunt-bingo/)
+until we got a board that would give a bingo if it had puzzles we wanted to see
+in Mystery Hunt. But, was cherry-picking a bingo board ethical?
+We discussed it at the social, and Rahul proclaimed "It's *okay* to cheat at bingo".
+That was that.
+
+
+A Tangent About Guessing
+------------------------------------------------------------------------------
+
+In the minutes before Hunt, we learned there would be an automatic checker
+this year. That's as good a segue as any to talk about guess rates.
+As has been said many times elsewhere, teammate is an outlier on submitting
+tons of guesses during Mystery Hunt.
+Speaking personally (and definitely not for others on the team),
+here's why I tend to guess a lot during Hunt.
 
 To me, good puzzle solvers are distinguished
 by their ability to correctly generalize from limited data, solve around
@@ -32,26 +93,65 @@ it works out to *faster* than 80%, because the last 20% of clues are the hardest
 ones.
 The same principle holds for metapuzzles. If you can solve a
 meta from 60% of the feeders, then you get to skip the hardest 40% of that round,
-which often works out to less than half the time of a full 100% forward solve.
+so you may cut your solve time by over half of what you'd spend in a full
+100% forward solve.
 
-Because of this, if you're interested in getting faster at hunts, you want to
-shortcut everything you believe you can shortcut, and that includes making low
-confidence guesses that rely on a few your assumptions being true. The answer
-checker acts as a binary signal of "all your generalizations were right", or
+Because of this, if you want to solve hunts faster, you should
+shortcut as much as you can, and that includes making low
+confidence guesses that rely on a few of your assumptions being true. The answer
+checker is a binary signal between "all your generalizations were correct", or
 "at least one of your generalizations was wrong", and although it's a very
-low-bandwidth signal, it's something that's there. So if the hunt lets you
-be more aggressive on guesses, I'll naturally use it a bit more.
+low-bandwidth signal, it's a signal that's there. So if the hunt lets you
+be more aggressive on guesses, I'll naturally submit a lot of aspirational
+guesses.
 It's not
 personal towards the puzzle author - their puzzle is one of many puzzles
-within the cohesive whole that makes up Mystery Hunt.
+within the cohesive whole that makes up MIT Mystery Hunt. I'm not going to
+abuse [OneLook](https://onelook.com/) to solve a cryptic crossword by itself,
+but I may abuse OneLook to solve a cryptic crossword that's part of a larger
+hunt, once I've gotten through all the clues that look fun.
 
-ADD THE CHARTS HERE
-MENTION MLP HERE
+Did this pay off? Here's a chart of puzzles solved versus guess accuracy of
+that team.
 
-Sorry, that went on longer than I thought. On to specific puzzle stories.
-
-\* \* \*
+![Solves vs acc all teams](/public/mh20-part2/solves_by_acc_all.png)
 {: .centered }
+
+The trendline of this chart definitely suggests that teams with lower guess
+accuracy solved more puzzles. But hang on a second: there are bunch of
+teams with 100% success rate that only solved a few puzzles. Here's the
+same plot, if we remove all teams that solved fewer than 10 puzzles.
+
+![Solves vs acc 10 or more](/public/mh20-part2/solves_by_acc_10ormore.png)
+{: .centered }
+
+Now, the downward trendline is gone.
+
+My feeling is that yes, teams that guess more did do better this Hunt. However,
+the size of that effect is small, and solving speed is still dominated
+by general solver ability, and random luck in how fast a team figures out
+the metapuzzles.
+
+One other tangent is that I feel a lot of the Puzzlvaria discussion about
+guessing is around metapuzzles that were backsolve friendly, and I'm worried
+people will think high guess rates come mostly from backsolves. This
+isn't true - crazy guesses come from both forward solves and backward solves.
+
+During Puzzles are Magic,
+I got curious about forward solve vs backsolve rates. I went through the guess
+log, made a list of all answer guesses that looked like backsolves,
+and computed forward guesses vs backward guesses for each puzzle.
+
+The results are linked on the full stats page, [here](https://www.puzzlesaremagic.com/hunt_stats/).
+Excluding meta puzzles and endgame puzzles (puzzles that couldn't be backsolved),
+across the entire hunt there were 4.38 guesses per forward solve, and
+5.36 guesses per backward solve.
+So yes, backsolves did have more guesses on average that hunt, but it wasn't by
+a big margin.
+
+
+Puzzle Stories
+---------------------------------------------------------------------------
 
 I looked around a few puzzles at the beginning, but the one I started first
 was Goldilocks. I filled in a few clues, someone else figured out the
@@ -282,13 +382,14 @@ We initially thought the Tiger would be a regular puzzle that was part of
 that needed Tiger, we figured out that it was probably the metameta. The
 Safari metas were getting solved pretty fast, and not every meta solver
 noted what backsolve answer was left over, so a few of us decided to make
-a Tiger tracking spreadsheet, asking Safari meta solvers if we could find
-them and reconstructing the solve from the spreadsheet if we couldn't.
-Once the Safari Adventure metameta unlocked, we transferred our data into
-that sheet, and in the process of doing so, someone got the Tyger Tyger
-a-ha right away, which just left solving the remaining Safari metas.
+a Tiger tracking spreadsheet, to figure out what Tiger answers we had,
+what we wanted to backsolve, and how each Safari meta worked. When
+the Safari Adventure metameta unlocked, we transferred our data into that
+sheet, and while doing so someone got the Tyger Tyger a-ha, which just
+left finishing enough Safari metas to extract.
 
-During this time, we had one PennyPass leftover. In the Hunt, we would
+I haven't talked about the PennyPass system yet.
+In this Hunt, we would
 occasionally get PennyPasses, which could be used to unlock a puzzle in
 any round you had unlocked.
 I thought this was a neat choose-your-own-unlock-adventure, without the
@@ -296,9 +397,21 @@ downsides of 2018's experiment. In 2018, teams chose which round to unlock,
 which was cool, but also meant that you might randomly pick the hardest round
 instead of the easiest one, and the organizers had to be prepared for every
 possible in-person interaction as soon as teams finished the intro round. It
-hasn't come back yet, and I don't think it should. Our PennyPass strategy
+hasn't come back yet, and I don't think it should.
+
+Our PennyPass strategy
 was to optimize for the most open puzzles at once (the width of the hunt).
 In each round, solving one puzzle unlocked one other puzzle in that round.
 So, solving within a round either kept your width constant, or decreased your
 width if you had run out of puzzles to unlock in that round. The only way
-to increase width was to unlock new rounds, or use PennyPasses. 
+to increase width was to unlock new rounds, or use PennyPasses. Our logic
+was that we should always use PennyPasses in the most recently unlocked
+round, because that round would have the fewest solves, and it would therefore
+give a +1 width increase for the longest period of time.
+
+We had one PennyPass left, that would expire in an hour, and the newest round
+was Cascade Park. We had actually unlocked all regular puzzles in every previous
+round by that point, so the question was whether to use it in Cascade Park now,
+or to wait an hour to see if we could solve 10 puzzles and unlock Cactus Canyon
+before the pass expired. It seemed really unlikely we'd solve 10 puzzles in
+an hour, so we spent it on Cascade Park, and nothing happened.
