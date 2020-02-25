@@ -9,6 +9,10 @@ Now that
 wrapped up, I have time to finish my posts about MIT Mystery Hunt 2020. And
 only well over a month after Hunt too!
 
+This post is *long*. I decided to bundle all my remaining thoughts about Hunt
+into one post, to motivate me to finish it before too much time had passed,
+and this post is the result.
+
 
 Before Hunt
 -------------------------------------------------------------------------
@@ -42,13 +46,14 @@ The wedding invitations, on the other hand...
 
 We recognized the first invite was a reference to the 2011 MIT Mystery Hunt
 invitation, but the second invite looked weirder. Why did the alignment look
-a little off center? Why was `WED LOVE YOU TO JOIN US!` missing an apostrophe in
-WE'D? And so on.
+a little off center? Why was WED LOVE YOU TO JOIN US! missing an apostrophe in
+WE'D? Was it just "WED" for "WEDDING", or was it something more? And so on.
 
-Last year, our "is this a puzzle" theories were all in a channel named `#innovated-shitposting`.
+Last year, our "is this a puzzle" theories were all in a channel named `#innovated-shitposting`
+(later renamed `#ambiguous-shitposting`).
 This year, it was `#wed-love-u-2-shitpost`. The working theory was that "join us"
 meant "draw connecting lines", "to" meant "connect the 2s", "love" meant
-"connect the hearts in the time", and "you" mean "connect the Us".
+"connect the hearts in 12:00 EST", and "you" mean "connect the letter Us".
 
 So, uh, yeah, that's where all those red lines come from. We also thought it
 might have involved folding, so we tried that too.
@@ -60,25 +65,34 @@ As I was boarding my flight to Boston, my position was that the invite was
 more-likely-than-not a puzzle (say, 60% chance), but it would come with a shell
 that we wouldn't see until Hunt, so until then I wasn't going to try anything.
 
-Meanwhile, two people on teammate made a $20 bet with each other that the emails
-would or wouldn't be a puzzle. Neither the emails nor the wedding invite were
-a puzzle, and to quote the loser of the bet, "I'm a lot less confident in my
-bet now that I've read all the emails, but I'm not going to back down from a
-bet I accepted."
+Meanwhile, two teammates on teammate had a $20 bet on whether the email signatures
+were a puzzle. One was adamant they were, the other was adamant they weren't.
+They agreed to a bet, and to quote the loser,
+"I'm a lot less confident in my bet now that I've read all the emails."
 
-The day before hunt was spent socializing and figuring out logistics.
-One teammate refreshed [Mystery Hunt Bingo](https://www.alexirpan.com/mystery-hunt-bingo/)
-until we got a board that would give a bingo if it had puzzles we wanted to see
-in Mystery Hunt. But, was cherry-picking a bingo board ethical?
+The day before hunt was spent socializing, figuring out who would get
+power strips (me), and figuring out our
+[Mystery Hunt Bingo](https://www.alexirpan.com/mystery-hunt-bingo/) for the year.
+One teammate refreshed until they
+got a board that would give a bingo if it had puzzles we wanted to see. ("I like
+this board, because we'll get a bingo if there's a puzzle about video games and
+a puzzle about anime.")
+But, was cherry-picking a bingo board ethical?
 We discussed it at the social, and Rahul proclaimed "It's *okay* to cheat at bingo".
-That was that.
+Cherry-picked bingo it is.
+
+We did get the bingo line that used video games and anime, although it was a
+close call. We needed an anime that came out in the past 2 years, and
+Wanted: Gangs of Six came through with
+[JoJo's Bizarre Adventure: Golden Wind](https://en.wikipedia.org/wiki/JoJo%27s_Bizarre_Adventure:_Golden_Wind).
 
 
 A Tangent About Guessing
 ------------------------------------------------------------------------------
 
 In the minutes before Hunt, we learned there would be an automatic checker
-this year. That's as good a segue as any to talk about guess rates.
+this year. That's as blunt a segue as any to talk about guess rates.
+
 As has been said many times elsewhere, teammate is an outlier on submitting
 tons of guesses during Mystery Hunt.
 Speaking personally (and definitely not for others on the team),
@@ -153,6 +167,13 @@ a big margin.
 Puzzle Stories
 ---------------------------------------------------------------------------
 
+These stories are roughly told in chronological order, but I've grouped
+puzzles I worked on by round. During the Hunt itself, I jumped between
+rounds much more than mentioned here, so some stories may be slightly out
+of order.
+
+## Grand Castle and Storybook Forest
+
 I looked around a few puzzles at the beginning, but the one I started first
 was Goldilocks. I filled in a few clues, someone else figured out the
 mechanic, then I failed to get any more clues and spent my time setting
@@ -215,6 +236,8 @@ found Six Flags Over Texas, which provided an ordering on the clues, and
 now that we didn't just have letters LMNO, I was okay with trying the
 A-Z idea again, and we solved it.
 
+## Spaceopolis, Yesterday Land, Balloon Vendor
+
 With those rounds done, it was time to look at Spaceopolis. I watched
 our teammates sing karoake, and someone else got the Masked Singer a-ha,
 so I decided to do data entry and indexing. The extraction looked bad,
@@ -231,9 +254,9 @@ No Clue Crossword, but we didn't figure out how it worked. We thought it
 might have been words that appear in a crossword solver when you
 [entered "No clue"](https://www.wordplays.com/crossword-solver/no-clue)
 as the clue, but that didn't seem very good, and we ended up backsolving
-it.
+it. I forget exactly when we got the Balloon Vendor meta, but it was cute.
 
-After that, the next puzzle I did major work on was Food Court. The main
+The next puzzle I did major work on was Food Court. The main
 thing this puzzle taught me was that I was horribly out of practice on
 probability - these were definitely questions I would have solved without
 issue if I was back in undergrad. I got an answer for one, then started
@@ -257,6 +280,10 @@ were all exact hundredths from $$0.01$$ to $$0.26$$, within $$10^-7$$ tolerance
 (the error
 coming purely from floating-point approximation). So, that was that.
 
+
+A Digression on Puzzle Design
+---------------------------------------------------------------------------
+
 Side note: One of the big lessons I've learned from Puzzles are Magic is
 that you always want to check how robust your puzzle is to errors. Solvers
 will always, always make errors in solving, even if your clues are 100%
@@ -276,6 +303,10 @@ I like the core idea of "you solve a bunch of math problems that seed a Markov c
 and I do think it's a good puzzle, it's just unfortunate that a consequence
 of the design is that solvers either get almost all the letters or none of them.
 I guess you just accept this and move on.
+
+
+Back to Puzzle Stories
+--------------------------------------------------------------------------
 
 And now we come to Change Machine. Oh boy. I started working on this puzzle
 because I was told there was a lot of mindless drudgery that needed to be done
@@ -312,6 +343,8 @@ solution, it turns out we skipped every cluephrase except the last one,
 so thank you, Omnibus fans. Your confusion about the RIDE ENHANCERS COLLECTIVE
 was not in vain.
 
+## Big Top Carnival
+
 With that done, I decided to start looking at Big Top Carnival puzzles. I didn't
 contribute much to any of them, until someone said, "Hey, so all our answers are
 Kentucky Derby horses". We piled onto the meta and had \*T\*R\*D\*R\*, which
@@ -330,6 +363,8 @@ to backsolve, of course those of us awake were going to try. We got 3 of them in
 got stuck on the rest, and left it to others to finish up as we went back
 to the YesterdayLand meta.
 
+## YesterdayLand Meta
+
 Sometime earlier that night, I had transcribed the blanks, their arrangement, and the
 colors into the meta spreadsheet, and made guesses about how I wanted the
 puzzle to work. After someone got the modernized answer break-in, I explained
@@ -341,11 +376,13 @@ got to the READ UNDER COLOR NUMBERS cluephrase. We didn't have enough answers
 to get the meta, but I was getting pretty tired and decided to head back for
 the night.
 
+## Saturday's Safari Adventure
+
 After I woke up, I caught up on what had happened.
 
 * The remaining Big Top Carnival puzzles had been backsolved.
 * YesterdayLand's meta was solved.
-* We had the emoji a-ha for for Creative Picture Studios.
+* We figured out all answers in Creative Picture Studios were emoji.
 * We had unlocked Safari Adventure.
 
 I ended up contributing the most to Safari Adventure, which is to be
@@ -388,6 +425,8 @@ the Safari Adventure metameta unlocked, we transferred our data into that
 sheet, and while doing so someone got the Tyger Tyger a-ha, which just
 left finishing enough Safari metas to extract.
 
+## PennyPass Postmortem
+
 I haven't talked about the PennyPass system yet.
 In this Hunt, we would
 occasionally get PennyPasses, which could be used to unlock a puzzle in
@@ -410,8 +449,82 @@ round, because that round would have the fewest solves, and it would therefore
 give a +1 width increase for the longest period of time.
 
 We had one PennyPass left, that would expire in an hour, and the newest round
-was Cascade Park. We had actually unlocked all regular puzzles in every previous
-round by that point, so the question was whether to use it in Cascade Park now,
+was Cascade Bay. We had actually unlocked all regular puzzles in every previous
+round by that point, so the question was whether to use it in Cascade Bay now,
 or to wait an hour to see if we could solve 10 puzzles and unlock Cactus Canyon
 before the pass expired. It seemed really unlikely we'd solve 10 puzzles in
-an hour, so we spent it on Cascade Park, and nothing happened.
+an hour, so we spent it on Cascade Bay. Nothing happened.
+
+We had already guessed Cascade Bay's gimmick: puzzles from one level would
+"flow down" into puzzles below. But, we didn't realize this meant we needed
+to solve the first meta to unlock new puzzles in that round. The Penny Pass
+wouldn't kick in until we unlocked the lower levels.
+
+After the Hunt, there was a postmortem assessment of whether we should have
+been able to infer the Penny Pass wouldn't do anything due to Cascade Bay's
+art, and whether we would have finished 10 puzzles before the Penny Pass
+expired to get to use it on Cactus Canyon. We didn't need the extra unlock
+in Cascade Bay because we figured out all three metas mechanics pretty
+quickly, and we *really* needed the extra unlock in Cactus Canyon because
+we got stuck on most of the early puzzles, reducing our effective width to just
+2-3 puzzles. teammate was tied with Galactic until Cactus Canyon, and then they
+took off, and we may have been able to keep pace with the Penny Pass.
+
+I believe we made the right call in the moment, and even if we had kept pace with
+Galactic, I think they still would have figured out the Workshop metameta first.
+
+## Cascade Bay
+
+Jumping to Cascade Bay, I saw my options where progress was happening were
+either Breakfast Menu, or The Excelerator. I looked at the people solving
+Breakfast Menu, saw "heraldry Waffle House", said "This is amazing. I don't want
+to do it.", and looked at The Excelerator instead. We had gotten the phrase
+FIND ELEVEN STARTING POINTS, but the solve notes said there were only 10 red
+trigrams. Someone looked again, found the 11th, and it was a smooth solve from
+there. I helped grind through some trigrams, then confirmed we wanted to read
+horizontally along each path, instead of reading vertically down the columns
+in ABDEFGHIJK order. (Although, other people were the ones who noticed the
+four letter words we got could be read as ranges, and the final extraction
+step at the end.)
+
+Solving The Excelerator gave us the 4th solve in Cascade Bay, which was enough
+for the meta crew to get the Lazy River meta. I looked at Coast Guard,
+trying variations on THROWN FOR A LOOP once we got the idea, but we were missing
+both the P and L in the cluephrase, so we ended up getting stuck there for
+quite some time. Our forward-solves kept confirming letters in THROWN FOR A
+instead.
+
+The Swimming Hole unlocked, someone immediately got acid/base, they placed some
+letters and told people they wanted the answer to end in NEUTRALITY, and I
+moved back to Safari because I figured they'd finish it up once more forward
+solves came in. They did.
+
+## Finishing Safari Adventure
+
+We were quite close to the end of Safari when I got back. We were just missing
+3 metas: The Trainer, Anne, and Ms. Cunningham. Meanwhile, Safari Adventure
+was open, but we were stuck on extraction - we believed we wanted the
+index of the word inside the line it appeared, rather than the line number
+itself. I decided to take a look at Ms. Cunningham, which had no progress.
+After some false starts, I decided to check who Ms. Cunningham was, which got me
+to the TaleSpin connection. Coincidentally, the other
+2 metas had break-ins at the same time! My TaleSpin break-in didn't actually
+do anything, because we had already assigned the Ms. Cunningham animals by
+process of elimination, and the given order of animals isn't the extraction
+order, so in effect, my contribution was convincing other solvers we had
+made progress on the meta. We solved Safari Adventure with 10 metas done,
+got a message saying we needed to finish all the metas, and finished up
+Ms. Cunningham, leaving just two rounds left: Creative Picture Studios, and
+Cactus Canyon.
+
+## Creative Picture Studios Meta
+
+track down the sunny in philadephia image
+
+## Cactus Canyon
+
+tell the workshop cactus story here.
+
+fill this out
+
+## The final workshop
