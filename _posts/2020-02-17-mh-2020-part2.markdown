@@ -175,193 +175,245 @@ of order.
 ## Grand Castle and Storybook Forest
 
 I looked around a few puzzles at the beginning, but the one I started first
-was Goldilocks. I filled in a few clues, someone else figured out the
-mechanic, then I failed to get any more clues and spent my time setting
-up indexing in the spreadsheet instead.
+was [Goldilocks](https://pennypark.fun/puzzle/goldilocks/). I filled in a few
+clues, then moved to setting up indexing when I failed to get any more clues.
 
-The next one I worked on was The Trebuchet, and here it was a similar story.
+The next one I worked on was [The Trebuchet](https://pennypark.fun/puzzle/trebuchet/),
+and here it was a similar story.
 By the time I got to the puzzle, they had Boggled a few words (the voice
 actors from Bolt), and after we realized the ammunition were all puns,
-the rest of the walls fell pretty fast. I IDed a few of the shows for
-BLOCK OF TNT (wtf SHAQ LIFE is a show??), then started moving letters to
-the final wall as we got them. We expected them to slot in automatically,
-instead of acting like a drop quote, but I noted we were a few swaps away
-from (PHRASE) and someone else finished it from there.
+the rest of the walls fell pretty fast. I IDed a few more words
+(wtf SHAQ LIFE is a show??), then constructed the final wall. We expected
+the blocks to fall into place automatically, instead of acting like a dropquote.
+I noted we were a few swaps from GEORGE BAILEY, and someone solved it from
+FOE OF GEORGE BAILEY.
 
-With that puzzle done, I jumped back to Storybook Forest. I briefly looked
-at Hackin' the Beanstalk, typing some junk, and noting they looked like
-famous algorithms. I opened the sheet for it and saw that every algorithm had
-already been IDed. Honestly given the number of CS majors we have I didn't
-expect anything else. They tried to figure out indexing for a bit, then
-someone threw the authors into nutrimatic and saw [SOURCE FILES](https://nutrimatic.org/?q=%5Bdijkstra%5D%5Bpollard%5D%5Bchudnovsky%5D%5Btarjan%5D%5Beuclid%5D%5Bkadane%5D%5Bfloyd%5D%5Bviterbi%5D%5Bluhn%5D%5Bbresenham%5D%5Bgaleshapley%5D&go=Go) was the first option, and it was right.
+With that puzzle done, I jumped back to Storybook Forest. I got excited by
+[Hacking' the Beanstalk](https://pennypark.fun/puzzle/hackin_the_beanstalk/),
+immediately recognizing the tortoise-and-hare algorithm when typing random letters.
+I opened the sheet for it...and every single algorithm had already been IDed.
+Our team has too many CS majors. We had the ordering, and were a bit stuck on
+extraction, until someone threw a regex at it and saw [SOURCE FILES](https://nutrimatic.org/?q=%5Bdijkstra%5D%5Bpollard%5D%5Bchudnovsky%5D%5Btarjan%5D%5Beuclid%5D%5Bkadane%5D%5Bfloyd%5D%5Bviterbi%5D%5Bluhn%5D%5Bbresenham%5D%5Bgaleshapley%5D&go=Go) was the first option. It was right.
 
-With that down, I started looking at Toddler Tilt, which no one had touched yet.
-I did a bit of work on it, but had trouble getting the toddlers to fall in the
-right order. A few people joined me, I noticed they were figuring it out much
+I looked at [Toddler Tilt](https://pennypark.fun/puzzle/toddler_tilt/), which
+no one had touched yet. However, I had trouble getting the toddlers to tilt
+in the right order. I noticed the people who joined me were getting it much
 faster than I was, and I decided my time would be better spent on the meta.
 
-Looking through the Storybook Forest meta, I saw there were some tic-tac-toe
-theories. We had a lot of 9 letter answers, and the puzzles were arranged in
-a 3 x 3 grid. I decided to try extracting the same way as the Dolphin meta
-from 20,000 Puzzles Under the Sea, which actually sort of worked, but there
-were some weird answers that extracted 2 letters, and there weren't great
-ways to use the 11 letter answers. I started looking up tic-tac-toe variants
-that might have 11 spots to play, and in the middle of doing so the meta was
-solved by someone who didn't believe in any of our tic-tac-toe work.
+For the [Storybook Forest meta](https://pennypark.fun/puzzle/storybook_pals/),
+we had some tic-tac-toe theories.
+We had a lot of 9 letter answers, and the puzzle art was arranged in a 3 x 3
+grid.
 
-With that finished, I went back towards The Grand Castle meta.
+![Storybook Forest art](/public/mh20-part2/storybook.png)
+{: centered }
+
+(9 puzzles, 3 x 3 grid, three animals in a row for the meta in the center. It must mean something!)
+{: .centered }
+
+I tried extracting the same way the [Dolphin meta](http://web.mit.edu/puzzle/www/2015/puzzle/pod_of_dolphins_meta/solution/) worked from MIT Mystery Hunt 2015. This sort of worked, but
+some answers extracted 2 letters instead of one, and there weren't great ways to
+use the 11 letter answers. I started looking for tic-tac-toe variants that might
+use 11 in an interesting way, and in the middle of doing so, someone who didn't
+believe any of our tic-tac-toe work solved the meta.
+
+With that finished, I went back towards [The Grand Castle meta](https://pennypark.fun/puzzle/castle/).
 We had 4 answers in that round, and after some false starts based on
 "stately" and "capital", someone discovered the Texas panhandle. I immediately
 noted that the panhandle had 26 counties, but out of the final answer of OILMEN,
-we had letters LMNO, and that made us think we had an ordering instead.
-Writing out the second word of each answer in the panhandle grid gave this.
+A-to-Z conversion of our answers gave LMNO, which made us think it was an
+ordering. Each answer in this round was a two word phrase, and reading the
+word that wasn't the county gave "MISTER RACHEL UNCERTAIN SIX". I proposed that
+the 2nd words were going to form a cryptic whose answer was six letters.
+Someone noticed that "Rachel uncertain" might mean anagram, giving CHARLE,
+which completed to a famous ruler, CHARLEMAGNE. That sounded great! We tried
+it, and it was wrong.
 
-IMAGE
+The next feeder we solved was the E from OILMEN, and the second letters gave
+this grid.
 
-On seeing this, I proposed that the 2nd words were going to form a cryptic
-ending in enumeration SIX. Someone else argued the cryptic would involve
-anagramming RACHEL and a possible continuation would be CHARLEMAGNE or
-CHARLES, so we called it in, and it was wrong.
-We tried a few more variants, but none of those worked either.
+<p class="centered">
+<table border="1">
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>CRISPIN</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>MISTER</td>
+    <td>RACHEL</td>
+    <td>UNCERTAIN</td>
+    <td>SIX</td>
+    </tr>
+</table>
+</p>
 
-We looked at it a bit more, and a 5th feeder answer came in, slotting in
-here.
+Ah, so clearly, we were going to fill in the box between CRISPIN and SIX, get
+two cryptics that shared SIX for the enumeration, and we'd combine them to get
+a 12 letter answer! We tried CHARLEMAGNES (plural), and that was wrong too.
+Someone found Six Flags Over Texas, which provided an ordering on the clues,
+and now that we had an ordering, A-Z letters looked much better, and we solved
+it.
 
-IMAGE
-
-After seeing this, I proposed that we'd actually get *two* cryptics, that
-would both share enumeration SIX, and our answer should be a 12-letter
-answers. I tried CHARLEMAGNES, plural, and that was wrong. Then someone
-found Six Flags Over Texas, which provided an ordering on the clues, and
-now that we didn't just have letters LMNO, I was okay with trying the
-A-Z idea again, and we solved it.
-
-## Spaceopolis, Yesterday Land, Balloon Vendor
+## Spaceopolis, Wizard's Hollow, Balloon Vendor
 
 With those rounds done, it was time to look at Spaceopolis. I watched
-our teammates sing karoake, and someone else got the Masked Singer a-ha,
-so I decided to do data entry and indexing. The extraction looked bad,
-and someone walked around asking for volunteers to solve The Magic
-Railway konundrum we'd just unlock. Two of us agreed, and I played a mean
-house elf master for about an hour, getting the answer GRACE UNDER FIRE.
-With The Magic Railway solved, we saw that Karoake was solved, and opened
-the sheet to check what we had missed. It turned out we had extracted the
-right letters, and just failed to read it as English.
+our teammates sing [karoake](https://pennypark.fun/puzzle/space_karaoke/).
+I did data entry and indexing for the Masked Singer a-ha, but the extraction
+looked bad. While puzzling over the sheet, someone walked by and asked for
+volunteers to solve [Magic Railway](https://pennypark.fun/puzzle/magic_railway/),
+the konundrum we had just unlocked.
+Two of us agreed. I played a mean
+house elf master for about an hour, briefly tried chemical elements instead
+of classical elements, and we got the answer, GRACE UNDER FIRE.
+Checking the status sheet, we saw Karoake had been solved, and the two of
+us who left checked to see what we had missed.
+It turned out we had extracted the right letters, and just failed to read
+it right.
 
-Sometime shortly after that, we unlocked TEAMWORK TIME: Hat Venn-dor, and
-I joined the effort for that. After we solved that, some of us looked at
-No Clue Crossword, but we didn't figure out how it worked. We thought it
-might have been words that appear in a crossword solver when you
+We unlocked [TEAMWORK TIME: Hat Venn-dor](https://pennypark.fun/puzzle/hat_venn_dor/),
+and joined the effort for that. In general, I really liked the TEAMWORK
+TIME puzzles, except for the ones where you only wanted 3 or 4 people interacting
+with the puzzle at once. But Hat Venn-dor was well-suited to lots of manic
+guessing, and I liked that. After that, some of us had a good laugh at
+[No Clue Crossword](https://pennypark.fun/puzzle/no_clue_crossword/),
+but we didn't get it and had to backsolve the puzzle.
+We thought it might have been words that appeared in a crossword clue lookup
+when you
 [entered "No clue"](https://www.wordplays.com/crossword-solver/no-clue)
-as the clue, but that didn't seem very good, and we ended up backsolving
-it. I forget exactly when we got the Balloon Vendor meta, but it was cute.
+as the clue, but that didn't seem very good.
+I forget exactly when we got the Balloon Vendor meta, but it was cute.
 
-The next puzzle I did major work on was Food Court. The main
+## YesterdayLand
+
+The next puzzle I did major work on was [Food Court](https://pennypark.fun/puzzle/food_court/). The main
 thing this puzzle taught me was that I was horribly out of practice on
-probability - these were definitely questions I would have solved without
-issue if I was back in undergrad. I got an answer for one, then started
-transcribing the probabilities into code to compute the steady state of the
-Markov chain. Someone else found an online tool for it, but said "it's garbage,
-it's only accurate to the hundredeths place". We tried the steady state
-and the numbers didn't seem that good. Given how the puzzle worked, we
-figured we needed to check our work. I loudly went around asking people
-to help us do math, and was told three times that someone was on it. I
+probability. Back in undergrad, I definitely would have solved all of the
+math questions without issue. After solving one of the problems, I saw we had
+answers for most questions, so I strated transcribing the probabilities into
+code to compute the steady state of the Markov chain. Another teammate had
+found an online tool for this, but said "it's garbage, it's only accurate
+to the hundredths place". That actually was good enough for the puzzle,
+but due to incorrect data, we weren't getting the right steady states.
+Given how the puzzle worked, it seemed clear we needed to check our work.
+I loudly went around asking people to help us do math, and was told three
+times that someone was on it.
 wasn't really listening (my mistake), and on the third time, they sat me
 down and explained that
 
 1. They knew someone who made Nationals of MATHCOUNTS.
-2. They weren't doing Hunt, so it was okay for us to ask them for help.
-3. This someone solved probability problems in their spare time for fun.
-4. They were both very fast and very accurate.
+2. They weren't doing Hunt, so it was okay to ask them for help.
+3. They solved probability problems in their spare time for fun.
+4. They were very fast and very accurate.
 
-About 30 minutes later, that person told us three of our answers were wrong.
-We fixed those, reran the Markov chains, and saw that the answers
-were all exact hundredths from $$0.01$$ to $$0.26$$, within $$10^-7$$ tolerance
-(the error
-coming purely from floating-point approximation). So, that was that.
+About 30 minutes later, they got back to us, saying "three of your answers are
+wrong, they should be this."
+We fixed them, reran the Markov chains, and saw the steady states
+were all exact hundredths from $$0.01$$ to $$0.26$$, with small errors purely
+coming from floating-point approximation. So, that was that.
 
 
-A Digression on Puzzle Design
+A Digression on All-or-Nothing Extraction Mechanisms
 ---------------------------------------------------------------------------
 
-Side note: One of the big lessons I've learned from Puzzles are Magic is
-that you always want to check how robust your puzzle is to errors. Solvers
+One big lesson I learned from making Puzzles are Magic was that you always
+want to check how robust your puzzle design is to errors.
+Solvers
 will always, always make errors in solving, even if your clues are 100%
-unambiguous. So, if possible, you want to check how robust your puzzle is
-to a few errors. The less robust it is, the more likely it is that solvers will
-do 90% of the work on a puzzle and fail to finish. If your partials are bad,
-it's common that a solver
-will try many different incorrect extractions, rather than fixing their data
-and trying the correct extraction again. Generally, this means you want
-mechanisms that extract one letter at a time, rather than all at once, and
-you should check your cluephrase looks promising if you randomly change some
-of the letters.
+unambiguous. So, if possible, you want to make your puzzle robust to a few
+errors. For example, crosswords check each letter twice (once with the Across
+clue, and once with the Down clue.)
 
-Food Court isn't very robust...but not every puzzle can be made robust without
-compromising its idea.
-I like the core idea of "you solve a bunch of math problems that seed a Markov chain",
-and I do think it's a good puzzle, it's just unfortunate that a consequence
-of the design is that solvers either get almost all the letters or none of them.
-I guess you just accept this and move on.
+The less robust your puzzle is, the more likely it is that solvers will do
+90% of the work for a puzzle without finishing, and that feels bad. Things
+that make a puzzle less robust are partial cluephrases using uncommon letters,
+and all-or-nothing extraction mechanisms, where a single error cascades into
+getting complete junk, even with the correct extraction mechanism.
+
+Food Court had one of these all-or-nothing extraction mechanisms, becauses
+changes to any transition probability *must* influence state probabilities
+everywhere else. Otherwise, [Markov chain theory](https://en.wikipedia.org/wiki/Markov_chain#Steady-state_analysis_and_limiting_distributions) says it *literally* can't have a unique steady state.
+I don't like mechanisms like this in a vacuum,
+but not every puzzle can be made robust without compromising
+its idea.
+The core idea of "you solve
+a bunch of math problems that seed a Markov chain" is compelling. So, in short,
+I liked this puzzle, and I think you just have to accept the all-or-nothing
+extraction is a consequence of the design and move on.
 
 
-Back to Puzzle Stories
+Back to YesterdayLand
 --------------------------------------------------------------------------
 
-And now we come to Change Machine. Oh boy. I started working on this puzzle
-because I was told there was a lot of mindless drudgery that needed to be done
-to the spreadsheet, and I was too tired to do any real solving. It turned out the puzzle was all
-about the Omnibus podcast, and everything had been IDed, but they had been
-IDed independently. Now that the Omnibus connection had been found, the main
-solvers wanted help arranging the movies and bible verses by Omnibus episode.
+Now we come to [Change Machine](https://pennypark.fun/puzzle/change_machine/).
+Oh boy.
+
+I moved to this puzzle because
+I was told there was a lot of mindless drudgery that needed to be done
+to the spreadsheet, and I was too tired to do any real solving. The puzzle
+was all about the [Omnibus](https://www.omnibusproject.com/) podcast, and
+everything was IDed, but they had been IDed independently. Now that the Omnibus
+connection had been found, they wanted help merging all the data by Omnibus
+episode.
 
 I was still confused, and at some point I said "Okay,
 it's 3 AM and I'm very tired. I need you to give me idiot-proof instructions
 for what you want me to do." Which they did, so props. After everything was
-ordered, I suggested indexing the KJ number into the Bible verse (since KJ
-was likely short for King James). Reading in episode order gave out
+ordered, I suggested indexing the KJ number into the Bible verse (treating
+KJ as short for King James, instead of Ken Jennings).
+Reading in episode order gave
 AD AMUSEMENT COMPANY IS KEY.
 
-We were confused. During this process, one person had been looking through
+We were confused. During this process, one person had been reading
 the Ken Jennings subreddit, and discovered a Reddit post where someone
-asked what the hell was up with the RIDE ENHANCERS COLLECTIVE? (Find the post)
+asked what the hell was up with the [RIDE ENHANCERS COLLECTIVE](https://www.reddit.com/r/Futurelings/comments/eq3g0v/ride_enhancers_collective/)?
 
-At this, we had a mental breakdown. Was this seeded information from Left Out?
-Was the AD COMPANY Reddit? WAS THIS ACTUALLY HOW WE WERE SUPPOSED TO SOLVE THE
-PUZZLE? I started looking up the post history of the Redditor, to see if they
-posted on other puzzle subreddits, but all I found were posts on r/teenagers
-and other subreddits dating back 10 months ago. Meanwhile, we were applying
-some left-over offset numbers to RIDE ENHHANCERS COLLECTIVE, which gave the
-answer.
-
-The mental breakdown continued, and after a bunch more of "WHAT DID WE JUST
-DO AND WHY DID IT WORK", we figured out that RIDE ENHANCERS COLLECTIVE was
-part of the Omnibus episode that came out the weekend of Mystery Hunt. We
-concluded that we had probably skipped a bunch of steps.
+We had a mini mental breakdown. Was this seeded information from Left Out?
+Did AD COMPANY mean Reddit? Was this actually how we were supposed to solve
+the puzzle?
+I dug into the post history of the [Redditor](https://www.reddit.com/user/mr_chan/), to see if they
+posted on other puzzle subreddits, but all I found were posts on r/ottawa
+and r/Curling, dating back several months.
+Applying the left-over offset numbers to RIDE ENHHANCERS COLLECTIVE was giving
+good letters, and that gave the final answer. At which point we had a much
+*bigger* mental breakdown. After a bunch of
+"WHAT DID WE JUST DO AND WHY DID IT WORK", we figured out that RIDE ENHANCERS COLLECTIVE was
+mentioned in an ad from the Omnibus
+episode that came out the weekend of Mystery Hunt, and we must have skipped
+a bunch of steps.
 Reading the
-solution, it turns out we skipped every cluephrase except the last one,
-so thank you, Omnibus fans. Your confusion about the RIDE ENHANCERS COLLECTIVE
-was not in vain.
+solution, there were three cluephrases, and we only got the last one.
+So thank you, Omnibus fans. Your confusion about the RIDE ENHANCERS COLLECTIVE
+was not in vain, and your Reddit post provided just enough search engine
+signal for us to shortcut the puzzle.
 
 ## Big Top Carnival
 
-With that done, I decided to start looking at Big Top Carnival puzzles. I didn't
-contribute much to any of them, until someone said, "Hey, so all our answers are
-Kentucky Derby horses". We piled onto the meta and had \*T\*R\*D\*R\*, which
-we guessed was "something RIDER". Noticing that horse names had decently unique
-enumerations, we asked if anyone was working on a puzzle with given answer lengths.
-The group working on Weakest Carouselink said they had (4 4). (They had all
-the chains, but were missing extraction.) One person found PINK STAR as a horse
-option, and someone else proposed PINK SLIP. The people working on Weakest
-Carouselink said "that seems bad", and I pointed out it was thematic to
+With that done, I looked at the new [Big Top Carnival](https://pennypark.fun/land/bigtop/) puzzles. I didn't
+do much, until someone said, "Hey, so all our answers are
+Kentucky Derby horses". We piled onto the meta and got to \*I\*R\*D\*R\*, which
+we guessed was "something RIDER". Noticing that horse names had mostly unique
+enumerations, we asked if anyone was working on a puzzle in Big Top
+with known answer length.
+The group working on [Weakest Carouselink](https://pennypark.fun/puzzle/weakest_carouselink/) said they had (4 4).
+Finding PINK STAR as a horse option, someone proposed PINK SLIP.
+The Weakest
+Carouselink solvers said "that seems bad", and I pointed out it was thematic to
 Weakest Link (you get fired), so we called it in and it was right. That gave
-us \*S\*T\*R\*D\*R\*, and within 30 seconds we went from that to
+us \*S\*I\*R\*D\*R\*, and within 30 seconds we went from that to
 "STIRRUP?" to "STIRRUP DRAMA!" to "AHHHHHH WE SOLVED A META WITH 5 OUT OF 12 ANSWERS".
 
-The true backsolve masters were all asleep at this time, but we had 7 puzzles
-to backsolve, of course those of us awake were going to try. We got 3 of them in the next hour,
-got stuck on the rest, and left it to others to finish up as we went back
-to the YesterdayLand meta.
+The really good backsolvers were all asleep, but we had 7 puzzles to backsolve,
+of course those of us awake were going to try. We got 3 in the next hour,
+got stuck on the rest, and left the backsolves for others to finish up as we
+went back to the YesterdayLand meta.
 
 ## YesterdayLand Meta
 
