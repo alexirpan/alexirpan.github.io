@@ -519,9 +519,60 @@ Cactus Canyon.
 
 ## Creative Picture Studios Meta
 
-track down the sunny in philadephia image
+Most of the puzzles in Creative Picture Studios were solved, which just left
+the metapuzzle. A few people had monopolized one of the rooms for several
+hours, brainstorming movie plots and moving emojis around.
+
+![Picture of people solving meta](/public/mh20-part2/charlie.jpg)
+{: .centered }
+
+More solvers filed in after finishing Safari, including me. First there were
+3 people yelling movie plots at each, then 4, then 5 and 6. There was a lot
+of shouting about what letters to take, and what emojis should go where.
+We backsolved The King's Ransom a few minutes before a long-running
+forward solve was about to finish. Someone turned to me and said, "There are
+too many people here." The two of us left the room to leave it at 4 people
+yelling at each other. After 40 minutes (and a few answer lockouts), they
+got it.
 
 ## Cactus Canyon
+
+During the hunt, we assumed the answer checker timeout was per-round, rather
+than per-puzzle. I believe what happened was that we hit the timeout in two
+puzzles in a single round at the same time, or we hit the timeout when
+people were backsolving two puzzles at the same time.
+
+How we convinced ourselves doesn't matter. What did matter was that our
+Creative Picture Studios meta solve had been delayed by 40 minutes due to
+rapid guessing, and as a team we were deathly afraid of getting locked out
+of submitting to the Cactus Canyon meta. One person working on the meta was
+appointed the answer guess dictator, and all guesses had to go through them.
+
+I didn't look at the meta in this round. I made small contributions to TEAMWORK TIME:
+Town Hall Meeting (left when I noticed it didn't need many people) and
+Wanted: Gangs of Six (IDed a few characters then left). For Spaghetti Western,
+I looked up Spaghetti rules, and got stuck on how to figure out the starter
+words. Another solver bailed me out, and with the starter words known, I was
+able to solve many of the minipuzzles.
+
+Mine Carts was stuck for a long time on trying to pair the Left Track and Right
+Track carts. (Yes, we knew the counts didn't work. We tried doing this anyways.)
+Someone eventually got the cart-connection a-ha. I embarassingly missed the
+My Little Pony connection. (I recognized SPITFIRE, but missed LIGHTNING DUST
+until someone put the two together. In my defense, our spreadsheet was a list
+of unpaired answers, so I missed the clue that mentioned pony...and also,
+Lightning Dust is an asshole character.)
+
+We got GRACE UNDER FIRE as part of our cluephrase, and that gave me an epiphany.
+All the Outer Lands had a gimmick to their puzzle structure. Creative Studios
+used emojis, Safari had puzzles go to several metas, and Cascade has metas
+cascade into lower ones. Clearly Cactus Canyon needed a gimmick as well! When
+we got GRACE UNDER FIRE, I mentioned that we had gotten GRACE UNDER FIRE as
+an *answer* to The Magic Railway way earlier in the Hunt. Clearly, we were going
+to get a bunch of paired connections between puzzles in Cactus Canyon to
+other puzzles in the Hunt! This was wrong, but I really wanted it to be true.
+
+During the hunt,
 
 tell the workshop cactus story here.
 
