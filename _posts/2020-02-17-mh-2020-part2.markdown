@@ -372,8 +372,8 @@ Reading in episode order gave
 AD AMUSEMENT COMPANY IS KEY.
 
 We were confused. During this process, one person had been reading
-the Ken Jennings subreddit, and discovered a Reddit post where someone
-asked what the hell was up with the [RIDE ENHANCERS COLLECTIVE](https://www.reddit.com/r/Futurelings/comments/eq3g0v/ride_enhancers_collective/)?
+the Ken Jennings subreddit, and discovered a
+[Reddit post where someone asked what the hell was up with the RIDE ENHANCERS COLLECTIVE](https://www.reddit.com/r/Futurelings/comments/eq3g0v/ride_enhancers_collective/)?
 
 We had a mini mental breakdown. Was this seeded information from Left Out?
 Did AD COMPANY mean Reddit? Was this actually how we were supposed to solve
@@ -417,16 +417,22 @@ went back to the YesterdayLand meta.
 
 ## YesterdayLand Meta
 
-Sometime earlier that night, I had transcribed the blanks, their arrangement, and the
-colors into the meta spreadsheet, and made guesses about how I wanted the
-puzzle to work. After someone got the modernized answer break-in, I explained
-how I felt it should work, and we started filling in letters. I had DUBSTEP for
-modernized disco, which was okay. Then we tried EDM MUSIC, which was worse.
-Then someone noticed that we could do ELECTRONIC DANCE MUSIC which freed up
-the 7-long spot for PORNHUB, and after a brief "oh no they went there", we
-got to the READ UNDER COLOR NUMBERS cluephrase. We didn't have enough answers
-to get the meta, but I was getting pretty tired and decided to head back for
-the night.
+One rather boring puzzle skill I've always been proud of is my diligence in
+filling out spreadsheets. When [Jukebox](https://pennypark.fun/puzzle/jukebox/)
+first unlocked, I opened it, and carefully transcribed their blanks, their
+arrangement, and the colored numbers into the meta spreasheet. I made some
+notes about how I wanted the puzzle to extract, and went off to solve other
+puzzles.
+
+After the Big Top Carnival flurry died down, we started looking at the meta,
+and someone got the modernized answer break-in. Thanks to everything getting
+transcribed, we were able to jump right into it. I had DUBSTEP for modenized
+DISCO, which seemed okay. That changed to EDM MUSIC, which was worse, but then
+someone noticed we had the blanks for ELECTRONIC DANCE MUSIC, freeing up the
+seven-long slot for the modernized PENTHOUSE, PORNHUB. After a brief "oh no
+they went there", we had enough to
+get to the READ UNDER COLOR NUMBERS cluephrase. We didn't have enough answers
+to get the meta, but I was getting pretty tired, and decided to get some sleep.
 
 ## Saturday's Safari Adventure
 
@@ -434,7 +440,8 @@ After I woke up, I caught up on what had happened.
 
 * The remaining Big Top Carnival puzzles had been backsolved.
 * YesterdayLand's meta was solved.
-* We figured out all answers in Creative Picture Studios were emoji.
+* We finally solved the scavenger hunt, after figuring out all answers in
+Creative Picture Studios were emoji.
 * We had unlocked Safari Adventure.
 
 I ended up contributing the most to Safari Adventure, which is to be
