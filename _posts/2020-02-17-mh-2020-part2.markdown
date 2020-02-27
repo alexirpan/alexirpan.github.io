@@ -10,8 +10,7 @@ wrapped up, I have time to finish my posts about MIT Mystery Hunt 2020. And
 only well over a month after Hunt too!
 
 This post is *long*. I decided to bundle all my remaining thoughts about Hunt
-into one post, to motivate me to finish it before too much time had passed,
-and this post is the result.
+into one post, to motivate me to finish it once and for all. This post is the result.
 
 
 Before Hunt
