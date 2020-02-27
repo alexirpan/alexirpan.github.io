@@ -131,7 +131,7 @@ that team.
 ![Solves vs acc all teams](/public/mh20-part2/solves_by_acc_all.png)
 {: .centered }
 
-The trendline of this chart definitely suggests that teams with lower guess
+The trend line of this chart definitely suggests that teams with lower guess
 accuracy solved more puzzles. But hang on a second: there are bunch of
 teams with 100% success rate that only solved a few puzzles. Here's the
 same plot, if we remove all teams that solved fewer than 10 puzzles.
@@ -139,15 +139,15 @@ same plot, if we remove all teams that solved fewer than 10 puzzles.
 ![Solves vs acc 10 or more](/public/mh20-part2/solves_by_acc_10ormore.png)
 {: .centered }
 
-Now, the downward trendline is gone.
+Now, the downward trend line is gone.
 
 My feeling is that yes, teams that guess more did do better this Hunt. However,
-the size of that effect is small, and solving speed is still dominated
+the size of that effect is small, and puzzles solved is still dominated
 by general solver ability, and random luck in how fast a team figures out
 the metapuzzles.
 
-One other tangent is that I feel a lot of the Puzzlvaria discussion about
-guessing is around metapuzzles that were backsolve friendly, and I'm worried
+One other tangent is that I feel a lot of the discussion about guessing has
+focused too much on backsolves. I'm worried
 people will think high guess rates come mostly from backsolves. This
 isn't true - crazy guesses come from both forward solves and backward solves.
 
@@ -162,6 +162,14 @@ across the entire hunt there were 4.38 guesses per forward solve, and
 5.36 guesses per backward solve.
 So yes, backsolves did have more guesses on average that hunt, but it wasn't by
 a big margin.
+
+Admittedly, because Puzzles are Magic confirmed partials, and had very minimal
+rate limiting, we encouraged teams to submit more guesses than they would
+in a Mystery Hunt. I don't think Mystery Hunt should confirm partials, and
+I do think a stronger rate limit make sense. The reason we confirmed partials
+with a generous rate limit was to make our hunt easier, but puzzles shouldn't
+need partial confirmations to have a clear final answer, and MIT Mystery Hunt
+doesn't need the guardrails that partials give you.
 
 
 Puzzle Stories
@@ -297,7 +305,7 @@ The next puzzle I did major work on was [Food Court](https://pennypark.fun/puzzl
 thing this puzzle taught me was that I was horribly out of practice on
 probability. Back in undergrad, I definitely would have solved all of the
 math questions without issue. After solving one of the problems, I saw we had
-answers for most questions, so I strated transcribing the probabilities into
+answers for most questions, so I started transcribing the probabilities into
 code to compute the steady state of the Markov chain. Another teammate had
 found an online tool for this, but said "it's garbage, it's only accurate
 to the hundredths place". That actually was good enough for the puzzle,
@@ -320,8 +328,7 @@ were all exact hundredths from $$0.01$$ to $$0.26$$, with small errors purely
 coming from floating-point approximation. So, that was that.
 
 
-A Digression on All-or-Nothing Extraction Mechanisms
----------------------------------------------------------------------------
+## A Digression on All-or-Nothing Extraction Mechanisms
 
 One big lesson I learned from making Puzzles are Magic was that you always
 want to check how robust your puzzle design is to errors.
@@ -337,7 +344,7 @@ that make a puzzle less robust are partial cluephrases using uncommon letters,
 and all-or-nothing extraction mechanisms, where a single error cascades into
 getting complete junk, even with the correct extraction mechanism.
 
-Food Court had one of these all-or-nothing extraction mechanisms, becauses
+Food Court had one of these all-or-nothing extraction mechanisms, because
 changes to any transition probability *must* influence state probabilities
 everywhere else. Otherwise, [Markov chain theory](https://en.wikipedia.org/wiki/Markov_chain#Steady-state_analysis_and_limiting_distributions) says it *literally* can't have a unique steady state.
 I don't like mechanisms like this in a vacuum,
@@ -349,8 +356,7 @@ I liked this puzzle, and I think you just have to accept the all-or-nothing
 extraction is a consequence of the design and move on.
 
 
-Back to YesterdayLand
---------------------------------------------------------------------------
+## Back to YesterdayLand
 
 Now we come to [Change Machine](https://pennypark.fun/puzzle/change_machine/).
 Oh boy.
@@ -381,7 +387,7 @@ the puzzle?
 I dug into the post history of the [Redditor](https://www.reddit.com/user/mr_chan/), to see if they
 posted on other puzzle subreddits, but all I found were posts on r/ottawa
 and r/Curling, dating back several months.
-Applying the left-over offset numbers to RIDE ENHHANCERS COLLECTIVE was giving
+Applying the left-over offset numbers to RIDE ENHANCERS COLLECTIVE was giving
 good letters, and that gave the final answer. At which point we had a much
 *bigger* mental breakdown. After a bunch of
 "WHAT DID WE JUST DO AND WHY DID IT WORK", we figured out that RIDE ENHANCERS COLLECTIVE was
@@ -420,13 +426,13 @@ went back to the YesterdayLand meta.
 One rather boring puzzle skill I've always been proud of is my diligence in
 filling out spreadsheets. When [Jukebox](https://pennypark.fun/puzzle/jukebox/)
 first unlocked, I opened it, and carefully transcribed their blanks, their
-arrangement, and the colored numbers into the meta spreasheet. I made some
+arrangement, and the colored numbers into the meta spreadsheet. I made some
 notes about how I wanted the puzzle to extract, and went off to solve other
 puzzles.
 
 After the Big Top Carnival flurry died down, we started looking at the meta,
 and someone got the modernized answer break-in. Thanks to everything getting
-transcribed, we were able to jump right into it. I had DUBSTEP for modenized
+transcribed, we were able to jump right into it. I had DUBSTEP for modernized
 DISCO, which seemed okay. That changed to EDM MUSIC, which was worse, but then
 someone noticed we had the blanks for ELECTRONIC DANCE MUSIC, freeing up the
 seven-long slot for the modernized PENTHOUSE, PORNHUB. After a brief "oh no
@@ -446,160 +452,200 @@ Creative Picture Studios were emoji.
 
 I ended up contributing the most to Safari Adventure, which is to be
 expected - it was a really big round. For regular puzzles, I worked
-on Golden Wolf (figured out the Gashly kids a-ha), Lion (finishing one of
-the final logic puzzles), and Sheep (looking up Mega Man characters,
+on [Golden Wolf](https://pennypark.fun/puzzle/golden_wolf/) (figured out the Gashly kids a-ha),
+[Lion](https://pennypark.fun/puzzle/lion/) (finishing one of
+the final NYT puzzles), and [Sheep](https://pennypark.fun/puzzle/sheep/) (looking up Mega Man characters,
 pointing out all the last words were 11 letters long, and spending an
 hour *not* indexing by game number until someone else tried it and solved
-the puzzle.) I also worked on Snake, where we got IAMB from *A*B, guessed
+the puzzle.) I also worked on [Snake](https://pennypark.fun/puzzle/snake/),
+where we got IAMB from \*A\*B, guessed
 TROCHEES just in case, then got PACES from PACESA (we had some errors that
 we guessed through).
 
-I didn't work on Hyena, but there is a fun story for it. At one point,
-the group working on it was convinced an answer was the letters in CAM,
-permuted in some order, but they weren't sure what. They decided that, well
-there were only 6 permutations, so they tried all 6 and got it. They then
-got the letters SRT, in some order, and tried 4 of the 6 permutations,
-before stopping out of fear of answer locks. During the Hunt, we thought
-the answer locks were round-wide, and they didn't want to lock out other
-Safari puzzles. When we backsolved it later, they were upset to learn it
-was one of the 2 permutations of SRT they hadn't tried.
+I didn't work on [Hyena](https://pennypark.fun/puzzle/hyena/), but there is a fun story for it.
+The group working on it was convinced one answer was the letters in SRT,
+in some order, but they weren't sure what. They decided that, well
+there were only 6 permutations, so...
 
-In the middle of Safari Adventure, we unlocked First You Visit..., which
-was really funny, because there was a cascade of groans across each room
-as people discovered the puzzle. Out of Puzzle Traumatic Stress Disorder,
-no one solved the puzzle and we ended up backsvoling it.
+![SRT guesses](/public/mh20-part2/srt_guesses.png)
+{: .centered }
 
-For Safari metas, I looked at a few. In The Cubs
-Scout, my incredibly-minor baseball knowledge helped a bit. In Zeus, I
-looked up the animals, but didn't get much further. In Sam, I figured
-out the stars-and-stripes idea, but didn't get the every-other trick.
+Working on the second answer, they got the letters CAM, and again, they
+tried 4 of the permutations, but stopped there out of fear of answer locks.
+During the Hunt, we thought answer lockouts applied to the entire round.
+They didn't want to lock out people forward solving Safari puzzles, so
+they abandoned it. Much later, we backsolved Hyena, and discovered the answer
+was one of the 2 permutations we hadn't tried.
+
+In the middle of Safari Adventure, we unlocked [First You Visit...](,https://pennypark.fun/puzzle/first_you_visit/).
+At the time, we were split across 3 rooms, and it was really funny to hear the
+groans cascade across the space as each room discovered the puzzle 5 seconds
+after each other.
+Out of Puzzle Traumatic Stress Disorder,
+no one worked on it, and we didn't even backsolve it until after getting to the
+Workshop metameta.
+
+For Safari metas, I looked at a few. For
+[The Cubs Scout](https://pennypark.fun/puzzle/cubs_scout/), my incredibly-minor
+baseball knowledge helped with how to read the extracted letters.
+In [Sam](https://pennypark.fun/puzzle/sam/), I figured
+out the stars-and-stripes idea, but didn't get the every other trick.
+
 We initially thought the Tiger would be a regular puzzle that was part of
 5 metas, which we would have to backsolve entirely. Once we got to a 6th meta
-that needed Tiger, we figured out that it was probably the metameta. The
-Safari metas were getting solved pretty fast, and not every meta solver
-noted what backsolve answer was left over, so a few of us decided to make
-a Tiger tracking spreadsheet, to figure out what Tiger answers we had,
-what we wanted to backsolve, and how each Safari meta worked. When
-the Safari Adventure metameta unlocked, we transferred our data into that
-sheet, and while doing so someone got the Tyger Tyger a-ha, which just
-left finishing enough Safari metas to extract.
+that needed Tiger, we realized it had to be the metameta.
+The Safari metas were getting solved pretty fast, and not every meta solver
+noted what backsolves were left.
+In teammate's tech setup, spreadsheets are made automatically for each new
+puzzle, but this breaks down when you're collecting data for a puzzle that
+doesn't exist! A group of us ended up making a Tiger spreadsheet manually.
+After unlocking [the metameta](https://pennypark.fun/puzzle/safari_adventure/),
+we transferred our manual sheet to the generated sheet, and while doing so
+someone got the Tyger Tyger a-ha, which just left finishing enough Safari
+metas to extract.
 
-## PennyPass Postmortem
+## A PennyPass Postmortem
 
 I haven't talked about the PennyPass system yet.
-In this Hunt, we would
-occasionally get PennyPasses, which could be used to unlock a puzzle in
-any round you had unlocked.
+In this Hunt, teams would get PennyPasses. Each pass could be spent to unlock
+a puzzle in any open round.
+
 I thought this was a neat choose-your-own-unlock-adventure, without the
 downsides of 2018's experiment. In 2018, teams chose which round to unlock,
-which was cool, but also meant that you might randomly pick the hardest round
-instead of the easiest one, and the organizers had to be prepared for every
-possible in-person interaction as soon as teams finished the intro round. It
-hasn't come back yet, and I don't think it should.
+which was cool, but it also meant you might randomly pick the hardest round
+instead of the easiest one. The organizers also had to be prepared for
+literally every in-person interaction as soon as teams passed the intro round.
+It hasn't come back yet, and I don't think it should. It adds randomness and
+tons of logistical headaches for not much benefit.
 
-Our PennyPass strategy
-was to optimize for the most open puzzles at once (the width of the hunt).
-In each round, solving one puzzle unlocked one other puzzle in that round.
+On the other hand, I wouldn't mind seeing the PennyPasses again. They're a nice
+way for teams to add help in rounds they need help on. Our strategy was that
+unless we were obviously stuck, we would optimize for the width of the Hunt -
+the number of unlocked puzzles.
+
+In each round, solving one puzzle unlocked one more puzzle in that round.
 So, solving within a round either kept your width constant, or decreased your
-width if you had run out of puzzles to unlock in that round. The only way
-to increase width was to unlock new rounds, or use PennyPasses. Our logic
-was that we should always use PennyPasses in the most recently unlocked
-round, because that round would have the fewest solves, and it would therefore
-give a +1 width increase for the longest period of time.
+width if you had no more puzzles to unlock in that round. This meant that
+we always used PennyPasses on the most recently unlocked round, because that
+round would have the fewest solves, and we'd have a +1 width increase for the
+longest period of time.
 
-We had one PennyPass left, that would expire in an hour, and the newest round
-was Cascade Bay. We had actually unlocked all regular puzzles in every previous
-round by that point, so the question was whether to use it in Cascade Bay now,
-or to wait an hour to see if we could solve 10 puzzles and unlock Cactus Canyon
-before the pass expired. It seemed really unlikely we'd solve 10 puzzles in
-an hour, so we spent it on Cascade Bay. Nothing happened.
+We had one PennyPass left, that was expiring in an hour, and the only round it
+was valid for was Cascade Bay, since we had unlocked everything else. We therefore
+had two options. One: use it right away on Cascade Bay. Or two: wait to see if
+we could solve the 10 puzzles we needed to unlock Cactus Canyon, and use it there.
+It seemed really unlikely we'd solve 10 puzzles in
+an hour, so we spent the pass on Cascade Bay. It said we used it, but nothing
+happened.
 
 We had already guessed Cascade Bay's gimmick: puzzles from one level would
-"flow down" into puzzles below. But, we didn't realize this meant we needed
-to solve the first meta to unlock new puzzles in that round. The Penny Pass
-wouldn't kick in until we unlocked the lower levels.
+"flow down" into puzzles below. But, we didn't realize this meant the first
+meta bottlenecked unlocks in the next level. Our PennyPass wasn't going to
+give us a new unlock until we finished more of Cascade Bay.
 
-After the Hunt, there was a postmortem assessment of whether we should have
-been able to infer the Penny Pass wouldn't do anything due to Cascade Bay's
-art, and whether we would have finished 10 puzzles before the Penny Pass
-expired to get to use it on Cactus Canyon. We didn't need the extra unlock
-in Cascade Bay because we figured out all three metas mechanics pretty
-quickly, and we *really* needed the extra unlock in Cactus Canyon because
-we got stuck on most of the early puzzles, reducing our effective width to just
-2-3 puzzles. teammate was tied with Galactic until Cactus Canyon, and then they
-took off, and we may have been able to keep pace with the Penny Pass.
+After the Hunt, there was a postmortem on whether we should have been able
+to infer that the PennyPass would work this way, based on Cascade Bay's
+art. With our backsolving speed on Safari, we actually may have finished
+10 puzzles before the Penny Pass expired, and we heavily needed more unlocks
+in Cactus Canyon at the end of Hunt.
+By the time the extra unlock kicked in for Cascade Bay, we had already figured
+out all three meta mechanics, and didn't need the help.
 
-I believe we made the right call in the moment, and even if we had kept pace with
-Galactic, I think they still would have figured out the Workshop metameta first.
+teammate was tied with Galactic until Cactus Canyon. We got stuck early, and
+they didn't.
+If we had been able to use the PennyPass on Cactus Canyon, we may have been
+able to keep pace.
+
+I believe we made the right call for the PennyPass in the moment, and even if
+we had kept pace with Galactic, I think they still would have figured out the
+Workshop metameta first, but there's a lot of what-ifs here.
 
 ## Cascade Bay
 
-Jumping to Cascade Bay, I saw my options where progress was happening were
-either Breakfast Menu, or The Excelerator. I looked at the people solving
-Breakfast Menu, saw "heraldry Waffle House", said "This is amazing. I don't want
-to do it.", and looked at The Excelerator instead. We had gotten the phrase
-FIND ELEVEN STARTING POINTS, but the solve notes said there were only 10 red
-trigrams. Someone looked again, found the 11th, and it was a smooth solve from
-there. I helped grind through some trigrams, then confirmed we wanted to read
-horizontally along each path, instead of reading vertically down the columns
-in ABDEFGHIJK order. (Although, other people were the ones who noticed the
-four letter words we got could be read as ranges, and the final extraction
-step at the end.)
+Now that we knew we needed solves in Cascade Bay, the call went out for
+unattached solvers to help solve puzzles in that round. We had solved
+[Water Guns](https://pennypark.fun/puzzle/water_guns/) thanks to an insight
+from a remote solver, but that still left several puzzles to finish.
+
+![Pokemon](/public/mh20-part2/pokemon.jpg)
+{: .centered }
+
+(The Pokemon we drew for Water Guns)
+{: .centered }
+
+I saw my options were
+[Breakfast Menu](https://pennypark.fun/puzzle/breakfast_menu/), or [The Excelerator](https://pennypark.fun/puzzle/excelerator/). I looked at the people solving
+Breakfast Menu, saw "heraldry Waffle House", and went "This is amazing. I don't want
+to do it." The Excelerator it is!
+
+It looked crazy, but we had the phrase
+FIND ELEVEN STARTING POINTS. The previous solvers had only found 10 red
+trigrams, not 11. On a second look, we found the 11th, and it was a decently
+smooth solve from there. I grinded through some trigrams, and confirmed we
+wanted to read horizontally along each chain rather than vertically, but
+it was someone else who noted the four letter words could all be treated as ranges.
+We had some trouble getting all the range formulas to work, because Google
+Sheets "helpfully" reorders ranges that are written in reverse order, but
+besides that it was neat.
 
 Solving The Excelerator gave us the 4th solve in Cascade Bay, which was enough
-for the meta crew to get the Lazy River meta. I looked at Coast Guard,
-trying variations on THROWN FOR A LOOP once we got the idea, but we were missing
-both the P and L in the cluephrase, so we ended up getting stuck there for
-quite some time. Our forward-solves kept confirming letters in THROWN FOR A
-instead.
+for the meta crew to get the [Lazy River](https://pennypark.fun/puzzle/lazy_river/)
+meta. For [Coast Guard](https://pennypark.fun/puzzle/coast_guard/), we had variations
+on
+THROWN FOR A LOOP for ages, but were missing the P and L in the
+cluephrase. Our forward solves kept confirming letters in THROWN FOR A,
+and we didn't solve the meta until we finally, finally got the P from a forward
+solve.
 
-The Swimming Hole unlocked, someone immediately got acid/base, they placed some
-letters and told people they wanted the answer to end in NEUTRALITY, and I
-moved back to Safari because I figured they'd finish it up once more forward
-solves came in. They did.
+[The Swimming Hole](https://pennypark.fun/puzzle/swimming_hole/) unlocked, the
+meta crew immediately got acid/base, they got some letters and told people
+they wanted the answer to end in NEUTRALITY, and I moved
+moved back to Safari because I figured they'd finish in a few more forward
+solves.
 
 ## Finishing Safari Adventure
 
 We were quite close to the end of Safari when I got back. We were just missing
-3 metas: The Trainer, Anne, and Ms. Cunningham. Meanwhile, Safari Adventure
-was open, but we were stuck on extraction - we believed we wanted the
-index of the word inside the line it appeared, rather than the line number
-itself. I decided to take a look at Ms. Cunningham, which had no progress.
-After some false starts, I decided to check who Ms. Cunningham was, which got me
-to the TaleSpin connection. Coincidentally, the other
-2 metas had break-ins at the same time! My TaleSpin break-in didn't actually
-do anything, because we had already assigned the Ms. Cunningham animals by
-process of elimination, and the given order of animals isn't the extraction
-order, so in effect, my contribution was convincing other solvers we had
-made progress on the meta. We solved Safari Adventure with 10 metas done,
-got a message saying we needed to finish all the metas, and finished up
-Ms. Cunningham, leaving just two rounds left: Creative Picture Studios, and
-Cactus Canyon.
+3 metas: The Trainer, Anne, and Ms. Cunningham. Meanwhile, we were stuck
+trying to take the index of the Tyger Tyger word inside the line it appeared,
+instead of converting the line number to a letter.
+
+I took a look at [Ms. Cunningham](https://pennypark.fun/puzzle/ms_cunningham/),
+which had no progress.
+After some false starts, I decided to look up who Ms. Cunningham was, which got
+me to TaleSpin. Coincidentally, the other
+2 metas had break-ins at the same time, and everyone got really excited
+about finally closing out the round.
+
+My TaleSpin break-in didn't actually do anything, because we had already
+determined the Ms. Cunningham animals by process of elimination, and the
+given clues weren't even the extraction order. In effect, my contribution was
+convincing other solvers we were making progress.
+
+We solved Safari Adventure metameta with 10 of the 11 metas, got a message saying we
+should finish all the metas as well. and solved Ms. Cunningham a few minutes
+later, leaving just two things left:
+Creative Picture Studios meta, and all of Cactus Canyon.
 
 ## Creative Picture Studios Meta
 
-Most of the puzzles in Creative Picture Studios were solved, which just left
-the metapuzzle. A few people had monopolized one of the rooms for several
+A few people had monopolized one of the rooms for several
 hours, brainstorming movie plots and moving emojis around.
 
 ![Picture of people solving meta](/public/mh20-part2/charlie.jpg)
 {: .centered }
 
-More solvers filed in after finishing Safari, including me. First there were
-3 people yelling movie plots at each, then 4, then 5 and 6. There was a lot
-of shouting about what letters to take, and what emojis should go where.
-We backsolved The King's Ransom a few minutes before a long-running
-forward solve was about to finish. Someone turned to me and said, "There are
-too many people here." The two of us left the room to leave it at 4 people
-yelling at each other. After 40 minutes (and a few answer lockouts), they
-got it.
+They had made a lot of progress, including a backsolve of [King's Ransom](https://pennypark.fun/puzzle/kings_ransom/) minutes before an hours-long forward solve was about to finish.
+
+First, there were 3 people yelling movie plots at each other. Then 4, then 5,
+then 6. There was a lot of shouting about letters to take, which emojis should
+go where, and guesses on where the missing movies would fit chronologically.
+A teammate turned to me and said, "There are too many people here." The two of
+us left the room to leave it at 4 people yelling at each other, figuring that
+would be good enough.
+After 40 minutes (caused by two answer lockouts), they got it.
 
 ## Cactus Canyon
-
-During the hunt, we assumed the answer checker timeout was per-round, rather
-than per-puzzle. I believe what happened was that we hit the timeout in two
-puzzles in a single round at the same time, or we hit the timeout when
-people were backsolving two puzzles at the same time.
 
 How we convinced ourselves doesn't matter. What did matter was that our
 Creative Picture Studios meta solve had been delayed by 40 minutes due to
@@ -607,34 +653,184 @@ rapid guessing, and as a team we were deathly afraid of getting locked out
 of submitting to the Cactus Canyon meta. One person working on the meta was
 appointed the answer guess dictator, and all guesses had to go through them.
 
-I didn't look at the meta in this round. I made small contributions to TEAMWORK TIME:
-Town Hall Meeting (left when I noticed it didn't need many people) and
-Wanted: Gangs of Six (IDed a few characters then left). For Spaghetti Western,
+I didn't look at the meta in this round. I made small contributions to
+[TEAMWORK TIME: Town Hall Meeting](https://pennypark.fun/puzzle/town_hall_meeting/) (left when I noticed it didn't need many people) and
+[Wanted: Gangs of Six](https://pennypark.fun/puzzle/wanted_gangs/) (IDed the ponies, Big Hero 6, some
+Watchmen, then left).
+
+For [Spaghetti Western](https://pennypark.fun/puzzle/spaghetti_western/),
 I looked up Spaghetti rules, and got stuck on how to figure out the starter
-words. Another solver bailed me out, and with the starter words known, I was
-able to solve many of the minipuzzles.
+words. Another solver bailed me out by getting the starter words, and with
+those know, the minipuzzles got a lot easier.
 
-Mine Carts was stuck for a long time on trying to pair the Left Track and Right
-Track carts. (Yes, we knew the counts didn't work. We tried doing this anyways.)
-Someone eventually got the cart-connection a-ha. I embarassingly missed the
-My Little Pony connection. (I recognized SPITFIRE, but missed LIGHTNING DUST
-until someone put the two together. In my defense, our spreadsheet was a list
-of unpaired answers, so I missed the clue that mentioned pony...and also,
-Lightning Dust is an asshole character.)
+[Mine Carts](https://pennypark.fun/puzzle/mine_carts/) was stuck for a long time on trying to pair the Left Track and Right
+Track carts. (Yes, we knew the counts didn't work for this. Yes, we tried
+pairing them anyways.) Eventually we figured out we should form a chain
+between the carts in each track.
+Embarrassingly, I missed the My Little Pony chain. In my defense, our spreadsheet
+was a list of unpaired answers, so I missed that each mine cart mentioned
+the category we wanted. I recognized
+SPITFIRE was a pony (she has a [fun pony music video](https://www.youtube.com/watch?v=pp0u7vHLqTs)),
+but missed LIGHTNING DUST (she's a key part of two episodes, but she's
+also an asshole).
 
-We got GRACE UNDER FIRE as part of our cluephrase, and that gave me an epiphany.
-All the Outer Lands had a gimmick to their puzzle structure. Creative Studios
-used emojis, Safari had puzzles go to several metas, and Cascade has metas
-cascade into lower ones. Clearly Cactus Canyon needed a gimmick as well! When
-we got GRACE UNDER FIRE, I mentioned that we had gotten GRACE UNDER FIRE as
-an *answer* to The Magic Railway way earlier in the Hunt. Clearly, we were going
-to get a bunch of paired connections between puzzles in Cactus Canyon to
-other puzzles in the Hunt! This was wrong, but I really wanted it to be true.
+We got GRACE UNDER FIRE as part of extraction, and that gave me an epiphany.
+GRACE UNDER FIRE was the answer to Magic Railway! All the Outer Lands had a gimmick
+to their puzzle structure.
+Creative Studios used emojis, Safari had puzzles go to several metas.
+Cascade has metas cascade into lower ones. This had to be the Cactus Canyon gimmick!
+We were going to get pairings between Cactus Canyon puzzles and other puzzles
+in the Hunt, and this would be relevant to the meta! All of this was wrong, but
+I really wanted it to be true.
 
-During the hunt,
+The people picking up pennies for Safari and Creative Studios came back, and
+announced that a team had just solved the Cactus Canyon meta. "Wait, what?"
+Here's how it happened: as they left the Workshop, they heard the solve jingle
+for Cactus Canyon from the computer of the person running the Workshop. Why
+would that happen? Well, suppose a team solved a meta. Left Out would want to
+prepare for that team picking up their penny. What if they reused the solving
+jingles to let the Workshop person know? So therefore, someone had just solved
+Cactus Canyon, and were about to start the endgame.
 
-tell the workshop cactus story here.
+This all sounded plausible, but if it was true, there was nothing we could do
+about it besides solve more puzzles. We caught up with Galactic people after,
+and confirmed that our penny pick-up matched their Cactus Canyon solve time.
 
-fill this out
+Remember how I said we thought answer lockouts were per-round? The 40 minute
+delay in solving the Creative Studios meta was weighing heavily on people's
+minds, and we ended up appointing an answer guess dictator. All guesses had to
+go through them. This led to some tense moments - on opening [Cowboy Campfire](https://pennypark.fun/puzzle/cowboy_campfire/), many of us wanted to immediately try backsolving with
+HOMECOOKED MEAL for theme reasons, but were overruled because the number of
+clues didn't match up.
 
-## The final workshop
+The last puzzle I worked on was [Snack Bar](https://pennypark.fun/puzzle/snack_bar/).
+Most of the hard work had been done already, and we split between trying to
+find new flavors, checking our existing flavors, and trying different arrangements
+of the flavors in the grid.
+At one point, we had 10 different copies of the
+grid, with everyone making copies trying to find a good arrangement.
+It got complicated when
+two people duplicated a sheet at the same time, leading to conflicting
+sheet names. Eventually, we got something that looked very promising, told everyone
+to move to "Copy of Copy of Copy of Nathan's sheet", and solved it. The answer
+for Snack Bar was very surprising to the meta crew, resolved a bunch of
+ambiguity (still not sure how), and was the last answer they needed to solve
+Cactus Canyon's meta.
+
+## Workshop
+
+If you're interested in the story for this, you can go read Part 1. The short
+version is: we got very excited, left our HQ to pick up the last penny, got
+stuck, got *extra* stuck, and retreated back to HQ as our laptop batteries
+started dying.
+
+We set aside some floor space for the pennies, and had people cycling between
+looking at the pennies, looking at our spreadsheets, and backsolving puzzles
+when people got sick of doing either of those two things.
+
+![teammate looking at pennies](/public/mh20-part2/teammate_around_pennies.jpg)
+{: .centered }
+
+![penny drawings](/public/mh20-part2/penny_drawings.jpg)
+{: .centered }
+
+There was nothing unfair about this puzzle. It was just hard. There was a lot of
+data, the phrases were tricky to find if you didn't know what you were looking
+for, and you needed 2 or 3 phrases for a single penny to be confident in
+what to do. It just didn't play to our strengths very well. We have really good
+solvers on teammate, for all types of puzzles, but I believe our edge is that
+we have a strong team-wide intuition for when we can use tools and programming
+to speed up solving, or to skip insights entirely through brute force. For example,
+although we didn't solve [High Noon Duel](https://pennypark.fun/puzzle/duel/),
+our solve went like this.
+
+1. Identified the movies and characters.
+2. Got stuck.
+3. Note that there are 14 pairs of clues, so there are 14! different pairings of
+cowboys to get semaphore.
+4. That's a bit big for brute force (87 billion), but not impossible with
+some heuristics, assuming the reading order was by the given order of
+left cowboys.
+5. I put together a short script to generate random pairings, and reported that
+about 14% of permutations gave valid semaphore, approximately 1 in 7.
+6. Since there are repeat directions in the black cowboys, we have much less than
+14! permutations. Combining clever permutation order with the 1 in 7 filtering
+definitely made it fit within brute-force range.
+
+I'm pretty sure this would have worked if we coded it up. We didn't, but I
+mention it because 3 people, all new to the puzzle, independently asked if the
+brute force was possible. That's just how we are as a team.
+[Number Hunting](https://www.puzzlesaremagic.com/puzzle/number-hunting/) from
+Puzzles are Magic testsolved pretty fast among testsolvers from teammate,
+because most
+of them had the same realization - once you solve enough to find the list of
+candidate answers,
+it's much faster to export the data and use regexes to search for
+matching answer enumerations, instead of solving the clues. When I checked the stats for
+Number Hunting, I was not surprised that a teammate team got the fastest solve.
+
+The pennies were definitely not a puzzle where coding trickery or tool knowledge
+got you to the answer faster. You just had to solve it. We didn't.
+
+## Runaround
+
+After Galactic found the coin, Left Out called us to give us hints, and we decided
+we'd rather jump straight to the runaround instead of solving Workshop.
+
+(This, by the way, is why the wrap-up presenters kept saying "SPOILER FREE ANSWER PHRASE".
+The only person spoiled on Workshop's answer was the person Left Out called.
+When we told this to Left Out, they told us they'd avoid saying the answer to
+Workshop during the finale and wrap-up, so that we could finish it ourselves.)
+
+I did the runaround for Cascade Bay. Our gimmick was on the easier side. We
+played the role of water inside a water pipe, starting in a water pipe above
+a sign on MIT campus. Along the way, we looped through an all-gender restroom,
+got lost in some walls, came out of some sprinklers, and solved the puzzle by
+getting our last letters from some nautical ships.
+
+Meeting back at Left Out's HQ for the finale, we brought back the Heart of the
+Park. I know there are videos of the finale at wrap-up. What that video doesn't
+capture is that for some reason, there are *twelve* projector screens in that room. It
+is one thing to watch the final Penny Park video. It is another to have it
+broadcasted to you from twelve screens covering every wall.
+
+# Closing Thoughts
+
+I really liked this year's Mystery Hunt. The puzzle structure got stretched
+in neat ways, there were a lot of in-person puzzles this year (a side-effect of
+automatic answer checking freeing up people elsewhere?), and the production
+value was nuts. Seriously, they made puzzle-specific art in a consistent
+style for every puzzle in the Hunt? I'm not sure people realize how insane
+that is. It's completely insane.
+
+I'm not sure if this was intentional on Left Out's part, but in lieu of the Coin,
+we distributed the pressed pennies instead, as mini-Coins. I joked that
+"oh boy, I get to keep a reminder of the puzzle that caused us incredible
+pain", but you know what, it really doesn't hurt at all anymore, and the penny
+still looks nice.
+
+As for what's next: teammate and Galactic had an agreement that if either team
+won, we'd help each other write Hunt. Some of teammate is joining Galactic
+to write, but not everyone. The team is reckoning with an uncomfortable chain
+of facts: there's a chance we could win Hunt, and the team wants to win Hunt
+if we're in position to, but we were implicitly relying on help from Galactic
+to write Hunt if we won. Assuming that no one wants to write MIT Mystery Hunt
+two years in a row, if teammate wins next year, the cavalry's not coming
+from Galactic. It will be less \*WHOOSH\* Galactic Trendsetters \*NYEEEEOW\* and
+more \*WHOOSH\* *please let us sleep \*ZZZZZZZ\*.
+
+The skill set to win Hunt is not the same as
+the skill set to write Hunt. There's definitely heavy overlap, since experienced
+solvers know what good puzzles look like, but that still leaves knowing how
+to create good puzzles, on top of all the other organization involved.
+MIT Mystery Hunt exists because people keep making it happen,
+and if you can win Hunt, you have the responsibility of continuing to make
+it happen. The most direct consequence of our strong performance this year has
+been serious discussions about how teammate can build more puzzle writing
+expertise.
+
+And, that's it. Jeez, this got really, really long. For puzzlers looking for
+new hunts,
+[Cryptex Hunt](http://www.cryptexhunt.com/2020/)
+starts in a few days. It's my first time doing it, so no idea what to expect,
+but it should be fun.
