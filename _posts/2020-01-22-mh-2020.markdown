@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mystery Hunt 2020, Part 1"
+title:  "MIT Mystery Hunt 2020, Part 1"
 date:   2020-01-22 03:10:00 -0500
 ---
 
