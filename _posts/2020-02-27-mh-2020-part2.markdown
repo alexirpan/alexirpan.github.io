@@ -807,6 +807,10 @@ When I checked the
 The pennies were definitely not a puzzle where coding trickery or tool knowledge
 got you to the answer faster. You just had to solve it. We didn't.
 
+*Edit: someone on the team that got the fastest solve for Number Hunting told
+me they actually solved the puzzle by guessing the answer from flavor, after
+identifying a quarter of the clues.*
+
 ## Runaround
 
 After Galactic found the coin, Left Out called us to give us hints, and we decided
