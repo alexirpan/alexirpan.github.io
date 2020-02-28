@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MIT Mystery Hunt 2020, Part 2"
-date:   2020-01-22 03:10:00 -0500
+date:   2020-02-27 23:20:00 -0500
 ---
 
 Now that
@@ -783,25 +783,25 @@ left cowboys.
 5. I put together a short script to generate random pairings, and reported that
 about 14% of permutations gave valid semaphore, approximately 1 in 7.
 6. Since there are repeat directions in the black cowboys, we have much less than
-14! permutations. Combining clever permutation order with the 1 in 7 filtering
-definitely made it fit within brute-force range.
+14! permutations. If we combined lazy unique permutation generation with the
+1 in 7 filtering, then added some English language heuristics on top, it
+should be brute-forceable.
 
 Would this have worked if we coded it up? Well, no, because the cluephrase
 wouldn't make sense without understanding the puzzle's intended mechanic.
 I
 mention it because 3 people, all new to the puzzle, independently asked if
 we should try brute force.
-That's just how we are as a team.
 
-As another example, [Number Hunting](https://www.puzzlesaremagic.com/puzzle/number-hunting/) from
-Puzzles are Magic testsolved pretty fast among testsolvers from teammate,
-because most
-of them had the same realization - once you solve enough to find the list of
+As another example, we gave [Number Hunting](https://www.puzzlesaremagic.com/puzzle/number-hunting/)
+from Puzzles are Magic to a few different testsolvers. This is all very
+anecdotal, but many of the testsolvers from teammate
+had the same realization - once you solve enough to find the list of
 candidate answers,
 it's much faster to export the list of all answers, and use coding to search
 for matching answer enumerations, instead of forward solving the clues.
 When I checked the
-[stats for Number Hunting](https://www.puzzlesaremagic.com/stats/number-hunting/), I was not surprised that a teammate team got the fastest solve.
+[stats for Number Hunting](https://www.puzzlesaremagic.com/stats/number-hunting/), I was not surprised that a teammate team got the fastest solve. That's just how we are as a team.
 
 The pennies were definitely not a puzzle where coding trickery or tool knowledge
 got you to the answer faster. You just had to solve it. We didn't.
@@ -849,13 +849,14 @@ of facts: there's a chance we could win Hunt, and the team wants to win Hunt
 if we're in position to, but we were implicitly relying on help from Galactic
 to write Hunt if we won. Assuming that no one wants to write MIT Mystery Hunt
 two years in a row, if teammate wins next year, the cavalry's not coming
-from Galactic. It will be less **WHOOSH** *Galactic Trendsetters!* **NYEEEEOW**,
+from Galactic. It will be less **WHOOSH** *Galactic Trendsetters!* **NYEEEOW**,
 and more **WHOOSH** *please let us sleep* **ZZZZZZZ**.
 
 The skill set to win Hunt is not the same as
 the skill set to write Hunt. There's definitely heavy overlap, since experienced
-solvers know what good puzzles look like, but that still leaves creating good
-puzzles, on top of all the other organization involved in running a Hunt.
+solvers know what good puzzles look like, but that still leaves all the
+time estimation, organization, theming, and tech required to make the Hunt
+tick.
 MIT Mystery Hunt exists because people keep making it happen,
 and if you can win Hunt, you have the responsibility of continuing to make
 it happen. The most direct consequence of our strong performance this year is
