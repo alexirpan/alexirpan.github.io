@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MIT Mystery Hunt 2020, Part 2"
-date:   2020-02-27 23:20:00 -0500
+date:   2020-02-27 23:30:00 -0500
 ---
 
 Now that
@@ -836,7 +836,15 @@ value was nuts. Seriously, they made puzzle-specific art in a consistent
 style for every puzzle in the Hunt? I'm not sure people realize how insane
 that is. It's completely insane.
 
-I'm not sure if this was intentional on Left Out's part, but in lieu of the Coin,
+I am a bit worried by the number of puzzles. The number of puzzles in Hunt has
+definitely trended upwards, and I'm not convinced that's sustainable. One
+lesson I remember reading about Random's 2015 Mystery Hunt was that easy puzzles
+took the same amount of time to write as hard puzzles, and they were only able
+to do the School of Fish round because they had a ton of writers. I'm pretty
+sure this year's hunt had more puzzles than 2015, and I don't think Left
+Out had more writers than Random did...
+
+In lieu of the Coin,
 we distributed the pressed pennies instead, as mini-Coins. I joked that
 "oh boy, I get to keep a reminder of the puzzle that caused us incredible
 pain", but you know what, it really doesn't hurt at all anymore, and the penny
