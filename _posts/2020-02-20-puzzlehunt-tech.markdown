@@ -4,41 +4,67 @@ title:  "A Puzzlehunt Tech Checklist"
 date:   2020-02-20 03:10:00 -0500
 ---
 
-[My Little Pony: Puzzles are Magic](https://www.puzzlesaremagic.com/) wrapped up recently. I was the tech person
-for the hunt. While setting up the hunt website, I learned a bunch of things
-about how to run an online puzzlehunt. This is an attempt to list those things.
+I have played my fair share of online puzzlehunts, and now that I've
+run a [puzzlehunt](https://www.puzzlesaremagic.com/) myself, I've learned
+a lot of things about how to run a successful hunt.
+
+There are several articles about puzzle design on the Internet, but as the
+tech person for Puzzles are Magic, I haven't seen any articles about building
+a hunt website.
+
+This is a list of things I feel every hunt website should strive to achieve.
+Not all of this is necessary, and we certainly didn't do all of this for
+Puzzles are Magic, but I feel everything here is a worthy goal to aim for.
 
 If you are reading this, I'm assuming that you know what puzzlehunts are, you've
 done a few puzzlehunts yourself, and are either interested in running an online
 puzzlehunt, or are interested in what the tech process looks like.
 
-Not everything mentioned here is something we got to for Puzzles are Magic. This
-list is a mix of things we did, and things we wish we did.
-It's okay if your hunt doesn't support everything here, but you
-should aim to support a lot of it.
+
+Hunts are Web Apps
+------------------------------------------------------------------------------
+
+The most important thing to remember about a puzzlehunt is that a puzzlehunt is
+a web app. There's a frontend that solvers interact with, there's a backend
+that stores submission and solve info, and the two need to send the right
+information to each other for your hunt to work.
+
+If you want to run an online puzzlehunt,
+you'll want someone who knows to program, or someone who's eager to learn how
+to program. Bonus points if they have made a website themselves, and extra bonus
+points if they have made a web app before as well. If you do not know how
+to program, you can still run an online hunt, but your job will get a lot harder.
 
 
 Using Existing Code
 ------------------------------------------------------------------------------
 
-Generally, expect people to be hesitant to share their puzzlehunt code. This
-isn't because they don't want to. It's because puzzlehunt coding is like
-video game coding. It starts sane and well-designed, and becomes increasingly
-hacky as you get closer to the hunt deadline. This is especially true if
-the hunt is heavy on interactive puzzles.
-The codebase for Puzzles are Magic has a core I'm decently happy with, and then
-a ton of hardcoded puzzle IDs and functionalities to make the hunt website
-work the way it was supposed to.
+Puzzlehunt coding is like video game coding.
+It starts sane and well-designed, and becomes increasingly
+hacky as you get closer to the hunt deadline. This is especially true if the
+hunt has interactive puzzles. In the end, functionality matters
+more than code quality, and since hunts are one-time events, there usually
+isn't much incentive to invest in clean code.
+
+Expect people to be hesitant about sharing their puzzlehunt code. Or at least,
+I'm hesitant to share *my* puzzlehunt code.
+I'm happy with the core, but there are a ton of hardcoded puzzle IDs and other
+things to make the hunt work as intended. I've considered releasing the code
+as-is, warts and all, but even then I'd need to audit the code to verify I'm
+not leaking any hardcoded passwords, secret keys, user data, puzzle ideas
+I want to use again, and so on.
 
 As far as I know, the only open-source puzzlehunt codebase is
 Puzzlehunt CMU's
 codebase, which can be found at [this GitHub](https://github.com/dlareau/puzzlehunt_server).
-The Puzzles are Magic code is forked from this code, with several modifications.
+Our hunt code is forked from this code, with several modifications. It's written
+in Django
 Our hunt was written in Django and served using Apache. Using Django + Apache isn't required,
-but both are free, very widely used, and well tested, so they're solid picks.
+but both libraries are free, very widely used, and very well tested, so they're
+solid picks.
 
 Whether you start from scratch or start from an existing codebase, expect to
-do some programming yourself.
+make changes to the code to support your needs.
 
 
 Authentication
@@ -46,48 +72,56 @@ Authentication
 
 You will need to decide whether you want logins to be person-based, or team-based.
 
-Person-based logins are good if you need very accurate counts of how many people
-are solving your hunt. Puzzlehunt CMU uses person-based logins because it's
-a CMU event where they provide free lunch, and they need to know how much food
-to order. Microsoft College Puzzle Challenge used person-based logins for a similar
-reason. The upcoming Cryptex Puzzle Hunt uses person-based logins because
-the winner is getting mailed a Cryptex, and they need to know who to contact
-for shipping details.
+In a person-based setup, each person makes their own account. People can create
+teams, or join existing teams by entering that team's randomly generated hunt code. Puzzlehunt CMU's code does this,
+as did Microsoft College Puzzle Challenge. The pro is that you get much
+more accurate estimates of how many people have registered. Both Puzzlehunt
+CMU and Microsoft CPC are on-campus events where the organizers provide free
+food, and they need to know how much food to order. The con is that by requiring
+every solver to make an account, you increase friction at registration time.
+Everyone on a team must make an account to participate, and anyone the team
+wants to recruit during hunt must do the same thing.
+Also, some people are generally
+wary of entering emails and passwords into an unfamiliar website.
 
-If you use person-based logins, the general design pattern is that every
-person creates an account, and each user can join a team if they enter some
-team code or password that links a team to their account.
+In a team-based setup, each team has a single account. There is a shared username
+and password, chosen by the person who creates the team, and their email is the
+main point of contact. They share the team's login credentials around, and team
+members can optionally add their names and emails on that team's profile page.
+This is the setup used by MIT Mystery Hunt, Galactic Puzzle Hunt, and Puzzles
+are Magic.
 
 The downside of person-based logins is that they add friction for pick-up
 solvers. Every one of those pick-up solvers will need to fill out
 your site's registration form before they get to see any puzzles. If you want
 as many people as possible to look at your puzzles, this is bad.
 
-If your hunt does not have physical prizes, and does not need very
-accurate solver counts, I would recommend team-based logins instead. In
-this setup, each team gets a single user account, with a shared username
-and password. One person creates the team, and their email is the main
-point of contact for that team. They can then optionally add other team members
-and emails from that team's profile page.
+For most online hunts, I would recommend team-based logins over person-based
+logins. If your goal is to get as many people to look at your puzzles as possible,
+you should minimize friction at registration time. I feel this is worth
+the trade-off of inaccurate participant counts, but it's up to you. (Based
+on survey feedback, only 50-75% of people who played Puzzles are Magic entered
+their personal information into the site.)
 
-Whatever login setup you use, make sure your site supports HTTPS and
-password resets. Otherwise, you will get people complaining that you aren't
-following security best practices. I'll be one of those people.
+Whatever login setup you go for, make sure you support the following:
 
+* Unicode in team names and person names. I'd go as far as saying this is
+non-negotiable. Several teams have emoji as part of their team culture, and
+sometimes you will get teams who use languages besides English.
+Puzzles are Magic got a few sign-ups from the Chinese MLP scene (we're
+not sure how), and Unicode gave us free Chinese character
+support.
+* Password resets. People forget their password. It happens. This is especially
+important if your site uses a team-based login. Lots of people sign up without
+realizing they're creating an account for their entire team.
+* HTTPS. There's really no excuse to not use HTTPS.
 You may think
 that no one will try to hack your puzzlehunt website. You'll be correct.
 However, people reuse passwords when they shouldn't, and you don't want
-packet sniffers to figure out any re-used passwords.
-Just use HTTPS.
+packet sniffers to discover any re-used passwords.
+Just use HTTPS. If you don't, people will complain, and I will be one of them.
 [Let's Encrypt](https://letsencrypt.org/)
 is a free certificate signing authority you can use for this.
-
-Make sure that team names and person names support Unicode.
-Several teams have emoji as part of their team culture, and you need to support
-it. I'd go as far as saying this is non-negotiable. Even if you don't care about
-emoji, Unicode comes with other benefits too. Puzzles are Magic got a few
-sign-ups from Chinese MLP fans. We're not sure how that happened, but I'm sure
-they appreciated Chinese character support.
 
 
 Admin Sites
@@ -98,27 +132,28 @@ with a database, and even those that do may not want to pull out a computer
 terminal every time they want to change something.
 You'll want admin sites that let you directly modify
 your database from a web interface.
-Django has a default admin site, and we found that was good enough.
 
-Some things we used this for were: fixing typos in team names,
+Django has a default admin site, and Puzzlehunt CMU's code comes with
+custom add-ons to this site. We found they covered 90% of our use cases.
+
+Some things we did through the admin site were: fixing typos in team names,
 deleting duplicate teams created by people who registered twice,
-and modifying answer replies when a 3rd-party site our hunt relied on went
-down.
-
-You'll also want pages that let you monitor the progress of the hunt.
-The Puzzlehunt CMU codebase had some custom admin sites for live-updating
-team progress and submissions queues, and we basically used those with
-a few minor changes.
+and modifying answer checker replies on-the-fly when a 3rd-party site our hunt
+relied on went down. We also had live-updating team progress pages and
+submission queues, taken from the CMU code, which we used with few changes.
 
 
 Unlock System
 ----------------------------------------------------------------------------
 
-Supporting the following should be good enough for a majority of use cases.
+In an Australian style hunt, puzzles are unlocked at a fixed time each day,
+with hints releasing over time. In a Mystery Hunt style hunt, puzzles are
+unlocked based on previoiusly solved puzzles, potentially with time unlocks
+as well.
 
-* Puzzles that unlock at a certain time.
-* Puzzles that unlock if K of N input puzzles are solved.
-* The ability to unlock puzzles manually for a specific team, or for all teams.
+Supporting both time unlocks and unlocks based on solving K out of N
+input puzzles is enough to cover both cases. You'll also want the ability to
+manually unlock puzzles, to help teams that need more help.
 
 
 Answer Submission and Replies
@@ -130,11 +165,14 @@ want an automatic answer checking system.
 For guess limits, you can either give each team a limited number of guesses
 per puzzle, or you can give unlimited guesses with rate limiting. Both are
 valid choices. Whatever you do, please, please don't make your answer
-checker case-sensitive.
+checker case-sensitive, and have it strip excess characters before
+checking for correctness.
 
-Whether you want to confirm partials or not is up to you, but
-make sure your submission reply system supports replies besides just "correct"
-and "incorrect". Having this can open up new puzzle design space.
+Whether you want to confirm partials or not is up to you, but even
+if you don't, it's good to support replies
+besides just "correct"
+and "incorrect". Supporting custom replies opens up new puzzle design
+space.
 Example puzzles that rely on custom replies are
 [Art of the Dress](https://www.puzzlesaremagic.com/puzzle/art-of-the-dress/)
 from Puzzles are Magic, and [The Answer to This Puzzle Is...](https://2018.galacticpuzzlehunt.com/puzzle/the-answer-to-this-puzzle-is.html) from GPH 2018.
@@ -143,17 +181,19 @@ Note that if you decide to confirm partials, you'll encourage teams to guess
 more, and you should make sure you aren't unduly punishing teams for trying to
 check their work.
 
-At minimum, your submissions should be tagged with the team that submitted them,
-and the time they were made, since this will let you compute submissions
-statistics after-the-fact.
+Submissions should be tagged with the team that submitted them, and what time
+they did so, since this will let you reconstruct team progress and
+submission statistics after-the-fact.
 
 
 Errata
 ----------------------------------------------------------------------------
 
-You will try to make a puzzlehunt without errata. You'll probably fail. Make sure
-your puzzlehunt has a page that lists all errata you've issued so far, including
-the time that errata came out.
+Everyone tries to make a puzzlehunt without errata, but very few people succeed.
+Make sure
+you have a page that lists all errata you've issued so far, including
+the time that errata came out, and have the errata visible from the puzzle
+page as well.
 
 If you are building an MIT Mystery Hunt style puzzlehunt, where different
 teams have different puzzles unlocked,
@@ -168,85 +208,108 @@ Email
 
 If you have fewer than 100 participants, you can get away with emailing everyone
 at once, putting their emails into the BCC field.
-Above 100 participants, you'll likely get hit by spam filters.
+Above 100 participants, you'll want an email system.
 
-At that point, you'll want an email system. Puzzles are Magic sent
-email directly through Django, but we continually had trouble with it,
-and it might be worth
-using a dedicated mailing service like SendGrid or MailChimp.
+Puzzles are Magic used Django's built in email system. Whenever we
+emailed people, we generated a list of emails, split them into chunks of
+80 emails each, then sent emails with a 20 second wait time between each
+email send. Without the wait time, we found Gmail refused to send our
+emails, likely because of a spam filter.
+
+As of this writing, we had to turn off a few security settings and manually
+unlock a CAPTCHA to get Gmail to be okay with Django sending emails from
+our hunt Gmail address. None of this was necessary to send emails from the
+hunt Gmail to itself, so it took us a long time to discover our email setup
+was broken. Make sure you check with an external email!
+
+Because of issues like that, you may want to integrate a dedicated mailing
+service, like SendGrid or MailChimp, which will deal with this nonsense
+for you. I haven't checked how hard that would be.
 
 You'll want the ability to email everyone (for hunt wide announcements),
 everyone on a specific team (if you want to talk to that team), and everyone
 who has unlocked but not solved a specific puzzle (to notify for errata).
-You may also want the ability to email everyone who hasn't unlocked a specific
-puzzle, if you want to provide extra help to struggling teams.
-
-In our email setup, we split our list of emails into chunks of 80
-emails each, then added a 20 second wait time between each email send. Without
-this wait time, we found Gmail refused to send our emails (likely because
-of a spam filter of some sort).
+You may also want the ability to email everyone who hasn't reached a certain
+point in the hunt, if you want to talk to less competitive teams.
 
 
 Puzzle Format
 -----------------------------------------------------------------------------
 
 For puzzles, you can either go for a PDF-by-default format, or HTML-by-default
-format. I've seen hunts use both.
+format.
 
-The upside of PDF-by-default is that you know your puzzles will appear the
-same to all users. You can usually assume PDFs will appear the same to all
-users, which means you don't have to worry about how your puzzle will appear
-in different browsers or operating systems.
+The upside of PDF-by-default is that you can usually assume PDFs will appear
+the same to all users. You don't have to worry about different browsers or
+operating systems messing up the layout of your puzzle.
 
-Despite this, if you're running an online hunt, I'd advocate for
-an HTML-by-default puzzlehunt. An HTML based hunt has the following advantages.
+Browser compatability is a huge pain, but if you're running an online hunt,
+I still advocate for an HTML-by-default puzzlehunt. It requires more work,
+but comes with these advantages.
 
 * You can more easily support "online-only" experiences, like music puzzles
-and interactive puzzles.
-* You reduce the number of clicks between a solver and the puzzle.
-* If you have several constructors, you can have a global CSS file that
-standardizes consistent fonts and styles across all your puzzles. With PDFs,
-you would need to do this standardization yourself.
-* If you need to issue errata, solvers will notice your errata faster if your
-puzzle is HTML-based, because it will be apparent as soon as anyone either
-refreshes or reopens the puzzle page. For PDF puzzles, solvers may not notice
-the errata until they re-download the puzzle PDF, and it's possible solvers
-may accidentally look at their old download instead of the new one.
+and interactive puzzles. In my opinion, if you're making an online hunt,
+you should create something that only works online, to differentiate it from
+in-person events.
+* You reduce the number of clicks between a solver and the puzzle. (Click link,
+see puzzle, vs click link, click download, open download, see puzzle.)
+* If you have several constructors, it's easier to force consistent fonts and
+styles across puzzles, by using a global CSS file.
+With PDFs, you need to standardize this yourself.
+* HTML pages are inherentently redownloaded whenever a solver refreshes or
+reopns the page. That means if you issue errata, solvers will notice your
+errata faster than if it's part of a PDF they have to re-download. It's also
+possible solvers will accidentally look at their old downloaded PDF, instead of
+the new PDF.
 
-In total, these benefits are worth the extra work required to support
-HTML-by-default puzzles. Of course, you should use PDFs in cases where doing
-so is much easier. (There was no way [A to Zecora](https://www.puzzlesaremagic.com/puzzle/a-to-zecora/) was ever going to be in an
-HTML format.)
+In total, I believe these benefits are worth the extra work required.
+Of course, you should use PDFs in cases where doing so is easier.
+There was no way [A to Zecora](https://www.puzzlesaremagic.com/puzzle/a-to-zecora/) was ever
+going to be in an HTML format, and puzzles based on precise alignment of text
+are much easier to test in a PDF format.
 
 If you plan to have your puzzles be HTML-by-default, you'll want to have
-tools that make writing HTML easier.
-It's not that it's impossible to write
-HTML by hand, it's just incredibly tedious to do so. I personally like Markdown,
-it's a lightweight syntax that builds directly to HTML.
+tools that make HTML conversion easier. It's possible to manually write HTML, but
+it's incredibly tedious.
+I personally like Markdown, since it's lightweight, builds directly to HTML,
+and you can add raw HTML if you need to support something special.
 
-I highly, highly, highly recommend writing scripts that partially automate
-converting puzzles into HTML. Doing so reduces typo risk, and makes it easier
-to update a puzzle based on testsolver feedback. For Puzzles are Magic, I wrote
-scripts that generated HTML for grids, and auto-generated extraction indices
-for puzzles
-based on taking 1 letter from every clue in a list.
-These were very useful for Flying High, Recommendations, and Endgame. Each of
-those puzzles were revised about 3 times, and the scripts made it much
-easier to build the required edits.
+This is off topic, but if you know how, I highly, highly, highly recommend
+writing scripts that automate converting puzzle data into HTML
+Doing so reduces typo risk, and makes it easier
+to update a puzzle based on testsolver feedback. For Puzzles are Magic, when
+constructing
+[Recommendations](https://www.puzzlesaremagic.com/puzzle/recommendations/),
+I wrote
+a script that took a target cluephrase, and auto-generated extraction indices
+that gave that cluephrase by taking 1 letter from every clue in a list. That
+script saved a bunch of time,
+since we ended up changing the cluephrase and songs used
+3 times, including the night before Hunt.
 
 
 Access Control
 ------------------------------------------------------------------------------
 
 Teams should not have access to a puzzle before they have unlocked it.
-This is obvious, but what's less obviously true is that they also shouldn't
+This is obvious, but what's less obvious is that they also shouldn't
 have access to any static resources that puzzle uses. Any puzzle specific
 images, Javascript, CSS, PDFs, and so on should be blocked behind a check of
-whether the team unlocked the puzzle in question.
+whether the team has unlocked that puzzle yet.
 
 Assume that solvers will find any file that isn't gated behind one of these
 unlock checks, and check whether doing so would break anything about your
 hunt.
+
+The 100% foolproof way to avoid puzzle leaks is to only put the puzzle into
+the website right before it would unlock. This works for Australian-style
+hunts, where puzzles are unlocked on a fixed schedule.
+However, for testsolving, you'll want to have testsolvers use your hunt
+website. So, you'll want the puzzles to be in your website, with access control
+to restrict them to playtesters.
+And if you're going to support that, then you might
+as well put the entire hunt into the website, so that time unlocks run
+automatically.
 
 
 File Metadata
@@ -254,26 +317,29 @@ File Metadata
 
 There are many ways your puzzle can have side channels that leak information
 you may not want to leak. For example, the puzzle
-[Wanted: Gangs of Six]( https://pennypark.fun/puzzle/wanted_gangs/) involves
+[Wanted: Gangs of Six]( https://pennypark.fun/puzzle/wanted_gangs/) involved
 identifying gangs of six characters from several series, extracting
 cluephrases using numbers written in fonts matching each series. The solution
 mentions that testsolvers were able to extract the font names from the PDF
-properties, and many of the font names were named after the series in question.
+properties, and many of the font names were named after the series they were
+taken from.
 The final puzzle uses remastered fonts with less spoiler-y names.
 As another example,
 for [A Noteworthy Puzzle](https://www.mumspuzzlehunt.com/solution/III/2/)
 from the 2019 MUMS Puzzle Hunt, the original sheet music and color names could
 be retrieved from inspecting the PDF file.
 
-Audio files come with album and artist metadata, unless you clear them. PDF
-files come with metadata, unless you clear them. Make sure you do so.
+Audio files come with album and artist metadata. Make sure you clear them.
+PDF files can have metadata too. Inspect them and make sure it doesn't leak
+anything you don't want to leak.
 
 Note that "side channel" implies you don't want puzzle info to leak this way.
-Sometimes, leaking info this way is okay, and even encouraged. In
+Sometimes, leaking info this way is okay. In
 [Tree Ring Circus](http://www.mit.edu/~puzzle/2019/puzzle/tree_ring_circus.html)
 from MIT Mystery Hunt 2019, you needed to find the diameters of each circle to
-solve the puzzle. The circles were drawn in SVG, and to aid solving, the
-radii used exactly matched the radii needed to extract the solution.
+solve the puzzle, based on a given scale. The circles were drawn in SVG, and to aid solving, the
+distances used in the SVG file exactly matched the distances needed to solve
+the puzzle.
 
 
 Filenames
@@ -304,44 +370,43 @@ can be part of a puzzle if you try hard enough.
 Interactive Puzzles
 ------------------------------------------------------------------------------
 
-Interactive puzzles are usually more work to make than other puzzles, but
-often they're the most memorable or popular puzzles. (My
+Interactive puzzles are usually more work to make, but are also
+often the most memorable or popular puzzles. (My
 theory is that interactive puzzles naturally lead to emergent complexity,
 and emergent complexity is the entire reason that people like solving
-puzzlehunt-style puzzles.)
+puzzles.)
 
 The rule-of-thumb in online video games is
 to never, ever trust the client. Puzzlehunts are the same.
-In MIT Mystery Hunt 2020, teammate was able to solve 2 or 3 interactive
+In MIT Mystery Hunt 2020, teammate solved 2 or 3 interactive
 puzzles by inspecting the client-side Javascript, finding a list of encrypted
-strings, searching for the function that decrypted then, and ran the
-descryption until we found ones that looked like the answer.
+strings, searching for the function that decrypted them, and running the
+decryption until we found strings that looked like the answer.
 
-The only 100% safe way to prevent these kinds of shortcuts is to move all
-key puzzle functionality to server-side code. For
-[Anthropology](https://www.puzzlesaremagic.com/puzzle/anthropology/),
-the client sends the entire grid state to the server, the server verifies
-it, and the client processes the given response. This let me hide all the grid
-logic.
-For
-[Applejack's Game](https://www.puzzlesaremagic.com/puzzle/applejacks-game/),
-the client sends the entered message, the server cleans it into only letters
-and commas, and the client forwards the response. This let me hide the card
-list and the judging logic.
-
+Assume that teams will decode any local Javascript, even if you minify and
+obfuscate it.
+The only guaranteed way to prevent these shortcuts is to move all
+key puzzle functionality to server-side code.
 Server-side confirmation has higher latency than client-side confirmation,
-so if you are worried about responsiveness, only confirm the most important
+so if you're worried about responsiveness,
+only confirm the most important
 parts of the puzzle on the server-side. For Puzzles are Magic, our logic
-was very simple, and we figured it would be responsive enough if everything
-was server side.
+was very simple, so we put everything on the server.
+
+For example,
+in [Applejack's Game](https://www.puzzlesaremagic.com/puzzle/applejacks-game/),
+all the Javascript does is take the entered message, send it to the server,
+and render the server's response. That's it. The server handles all input
+cleaning and state, which let me hide the card list and judging logic from
+the user.
 
 If possible, try to avoid repeating logic across the client and server. The
 [GPH 2019 AMA](https://2019.galacticpuzzlehunt.com/wrapup/ama.html) mentions that
-Peaches had a bug where the client-side logic didn't match the server-side
-verification, which caused some valid solutions to get marked as incorrect.
+Peaches had a bug where client-side logic didn't match the server-side
+verification, which caused some correct solutions to get marked as incorrect.
 As mentioned in that AMA, if your server side validation fails, make sure to
-give teams an obvious error, perhaps one that tells them to contact you and
-explain what they were doing beforehand.
+give teams an obvious error, perhaps one that tells them to contact you so that
+you know about the problem.
 
 
 Accessibility
