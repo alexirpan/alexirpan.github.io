@@ -25,15 +25,20 @@ Hunts are Web Apps
 ------------------------------------------------------------------------------
 
 The most important thing to remember about a puzzlehunt is that a puzzlehunt is
-a web app. There's a frontend that solvers interact with, there's a backend
+essentially a full web application.
+There's a frontend that solvers interact with, there's a backend
 that stores submission and solve info, and the two need to send the right
 information to each other for your hunt to work.
 
-If you want to run an online puzzlehunt,
-you'll want someone who knows to program, or someone who's eager to learn how
-to program. Bonus points if they have made a website themselves, and extra bonus
-points if they have made a web app before as well. If you do not know how
-to program, you can still run an online hunt, but your job will get a lot harder.
+That means if you want to run an online puzzlehunt with teams, leaderboards,
+and so on, you'll either need to know how to set up a website, or be eager to
+learn. If you have practice with looking up how to use unfamiliar software
+libraries, you should be set.
+
+If you don't know how to program, and can't enlist the help of someone who can,
+then your job will get a lot harder, but it won't be impossible. Remember that
+if worst comes to worst, you can always just release a batch of PDFs online,
+instead of building an entire website.
 
 
 Using Existing Code
@@ -361,8 +366,9 @@ For example, if you have a secret 5th image, and you name your first four
 images "1.png" to "4.png", you don't want solvers to shortcut the puzzle by
 trying to load "5.png".
 
-Again, like the file metadata mentioned above, sometimes leaking info this way
-is okay. An example puzzle that does this is [p1ctures](http://web.mit.edu/puzzle/www/2015/puzzle/p1ctures/)
+Again, like the file metadata mentioned above, sometimes leaking info in
+filenames is okay.
+An example puzzle that does this is [p1ctures](http://web.mit.edu/puzzle/www/2015/puzzle/p1ctures/)
 from MIT Mystery Hunt 2015. Yes, almost anything
 can be part of a puzzle if you try hard enough.
 
@@ -385,28 +391,30 @@ decryption until we found strings that looked like the answer.
 
 Assume that teams will decode any local Javascript, even if you minify and
 obfuscate it.
-The only guaranteed way to prevent these shortcuts is to move all
+The only guaranteed way to close these shortcuts is to move all
 key puzzle functionality to server-side code.
 Server-side confirmation has higher latency than client-side confirmation,
 so if you're worried about responsiveness,
 only confirm the most important
-parts of the puzzle on the server-side. For Puzzles are Magic, our logic
-was very simple, so we put everything on the server.
+parts of the puzzle on the server. The interactive puzzles for Puzzles are
+Magic were essentially turn-based, so latency wasn't an issue, and we could
+put everything on the server.
 
 For example,
 in [Applejack's Game](https://www.puzzlesaremagic.com/puzzle/applejacks-game/),
 all the Javascript does is take the entered message, send it to the server,
-and render the server's response. That's it. The server handles all input
-cleaning and state, which let me hide the card list and judging logic from
-the user.
+and render the server's response. That's it. There's nothing useful to
+retrieve from the client-side Javascript, and you need to interact with the
+puzzle to discover its rules.
 
 If possible, try to avoid repeating logic across the client and server. The
 [GPH 2019 AMA](https://2019.galacticpuzzlehunt.com/wrapup/ama.html) mentions that
 Peaches had a bug where client-side logic didn't match the server-side
 verification, which caused some correct solutions to get marked as incorrect.
+
 As mentioned in that AMA, if your server side validation fails, make sure to
 give teams an obvious error, perhaps one that tells them to contact you so that
-you know about the problem.
+you learn about the problem.
 
 
 Accessibility
@@ -416,8 +424,8 @@ You can generally assume that most solvers will be on either Windows or Mac OS X
 they will normally use one of Chrome, Safari, or Firefox, and they'll be solving
 from a laptop-sized or monitor-sized screen.
 
-The key word here is *most*. Each accessiblity issue will always affect a minority
-of your users, but there are a lot of different minorities.
+The key word here is *most*. Accessibility issues will always affect a minority
+of your users, but there are a lot of minorities.
 If you want more people to solve your puzzlehunt, you'll need to be inclusive
 when possible.
 
@@ -428,7 +436,7 @@ online. Of those solvers, not all of them will have access to color printers.
 
 You may not be able to please all of these people. If your puzzle is based
 on image identification, the legally blind solver is not going to be able to solve
-it. You can't even provide alt text that describe the image, because non-blind
+it. You can't even provide alt text that describes the image, because non-blind
 solvers will use the alt text as a side channel. But, try to do
 the best you can. As mentioned from the 2019 MIT Mystery Hunt AMA,
 ["Keep in mind what the puzzle actually needs in terms of skills and abilities, and what you’re presuming the solver/s will have. Wherever there’s a mismatch, try to make the puzzle suit the smallest set of abilities without stomping on data the puzzle needs."](https://www.reddit.com/r/mysteryhunt/comments/am5s1d/were_setec_astronomy_and_we_just_ran_a_mystery/efjklm7/).
@@ -440,39 +448,36 @@ a color blind alternative.
 For people who prefer printing puzzles, make sure that your puzzles print well.
 By default, printers ignore all CSS, so by default, your puzzles probably
 print poorly. You'll need to define [specific print CSS](https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/)
-files to get your puzzles to print correctly. Some specific issues we hit
-in Puzzles are Magic were grids getting split across page breaks, CSS colors
-not appearing on print, and hints appearing on print because our
-black background hiding the hints wasn't included.
+files to get your puzzles to print correctly.
 
-In addition to those concerns, some solvers will be solving from smartphones or tablets, rather
-than desktops or laptops. It's okay if your site works worse from mobile, but
+Some solvers will be solving from smartphones or tablets, rather
+than desktops or laptops. It's okay if your site is worse from mobile, but
 make sure your site isn't completely broken on mobile. Even solvers with laptops
 will appreciate being able to solve puzzles on the go.
 
-A place I felt we did this well was [Number Hunting](https://www.puzzlesaremagic.com/puzzle/number-hunting/).
-We rendered the clues as math equations for flavor reasons and style reasons,
-but we included an uglier plaintext version as well, in case MathJax rendering
-failed or was slow for certain users.
+Watch out for slow Internet connections or computers. On
+[Number Hunting](https://www.puzzlesaremagic.com/puzzle/number-hunting/),
+we found the equations sometimes took a while to render. They also rendered
+poorly on mobile, since MathJax doesn't support wrapping equations across lines.
+For those reasons, we included a plaintext version as well, since the LaTeX
+style rendering was just for flavor reasons.
 
-A place we could have done more was
+A puzzle we could have done more on was
 [The Key is Going Slow and Steady](https://www.puzzlesaremagic.com/puzzle/the-key-is-going-slow-and-steady/).
 One lesson we learned during hunt construction was that puzzle presentation
-really matters. If a puzzle looks big, it intimidates solvers, and they're
+really matters. If a puzzle looks big, it's intimidating, and solvers are
 less likely to start it. So, if you can find a way to make a puzzle look
-smaller, you can make the puzzle look more inviting. No testsolver wanted to
-solve [Recommendations](https://www.puzzlesaremagic.com/puzzle/recommendations/),
-so I made all the images 4x smaller and collapsed the 14 audio clips into one.
-This didn't change the core puzzle content. If anything, it made it harder.
-But, it made the puzzle *look* smaller, and that was enough to get testsolvers
-to give it a shot.
+smaller, you should.
+[Recommendations](https://www.puzzlesaremagic.com/puzzle/recommendations/)
+testsolved a lot better when I made all the images 4x smaller, even though
+this changed nothing about its difficulty.
 
 For The Key is Going Slow and Steady, we used [Prezi](https://prezi.com)
-to make the flowchart look smaller than it really was. The problem this
-introduced from an accessibility standpoint was that Prezi loaded slowly,
-was pretty resource-hungry, and didn't work on mobile devices.
+to bundle the flowchart into a smaller space. The problem this
+introduced from an accessibility standpoint is that Prezis load really,
+really slowly, and they don't work on mobile.
 Providing a lightweight alternative to the Prezi would have made the puzzle
-cleaner.
+cleaner, but we didn't have time.
 
 
 Hardware and Load Testing
@@ -487,36 +492,40 @@ For cloud services, you can either go for a raw machine, or you can use app
 creation services like Google App Engine or AWS Elastic Beanstalk. App services
 will give you less flexibility, will require writing code to fit their API,
 and are more expensive. However, they'll handle more things for you, like
-autoscaling.
+autoscaling your site when you get more users.
 
 Puzzles are Magic was hosted from a raw machine we purchased through Google
 Compute Engine. We did this because it required the fewest changes from
-the Puzzlehunt CMU code we started from. Most cloud services offer free
-cloud credit to new accounts. Unfortunately, our free trial expired about
+the Puzzlehunt CMU code we started from, and we had some GCE free trial credit
+to play with. Unfortunately, our free trial expired about
 6 weeks before the hunt started.
-We ended up spending about $120 in total. Of that total, $80 was spent
-in the month of hunt, and $0 was spent in the remaining time. We're currently
-spending about $16/month to run the hunt in maintenance mode.
+We spent about $120 in total. Of that total, $80 was spent in the 4 weeks around
+hunt, and $40 was spent in the remaining time.
+We're currently spending about $16/month to run the hunt in maintenance mode.
 
-Website load will start slow, and will rapidly increase in the days before
-hunt. Most teams won't sign up until a few days before your hunt starts, so
-keep this in mind when load testing. Below is a chart for number of
-active users each day for Puzzles are Magic.
+Here's a chart for number of users per day, with annotations for key
+dates.
 
 ![User chart](/public/puzzlehunt-tech/annotated_view_chart.png)
 {: .centered }
 
+User counts started increasingly rapidly the week before hunt, peaked the
+first weekend, then decayed over time. Make sure you get a large enough
+machine a few weeks *before* your hunt starts.
+
 We load tested our website using [Locust](https://locust.io/). Our target was
-supporting 750 active users at once. We picked that number based on registration
-counts and the desired margin of error. Early on, we had trouble getting more
-than 250 active users to work, but we eventually debugged it to testing from
-a slow Internet connection that had trouble pretending to be 250 users at once,
-so make sure you test from a fast connection, or you split your load test
-across a few networks.
+supporting 750 active users using the site at the same time. We picked that
+number based on registration counts leading up to hunt.
+
+Make sure you test from a fast Internet connection, or split your load test
+across a few networks! We had trouble getting more than 250 active users to work,
+and eventually debugged it to load testing from a slow connection that had
+trouble *pretending* to be 250 users. The
+site was fine the entire time.
 
 If your server is too busy to respond to solvers, it's also going to be
-too busy to respond to your remote login attempts to fix it, so you want to err on the
-side of too large.
+too busy to respond to your remote login attempts to fix it. Err on the
+side of too large. The money is worth your mental health.
 
 
 More Exact Hardware Details
@@ -560,7 +569,7 @@ and fewer threads per process made our site load a bit faster, at the
 cost of more CPU usage and RAM usage. Using `ThreadsPerChild 25` is probably
 good enough for you.
 
-We're not sure what **AsyncRequestWorkerFactor** is, but all the recommendations
+We're not sure what **AsyncRequestWorkerFactor** is, but all the guides
 we found online recommended keeping it at the default of 2.
 
 
@@ -569,7 +578,12 @@ Caching
 
 Adding caching to your website can heavily speed up its performance. However,
 it also opens your site to caching errors, which can be extra dangerous when
-you're trying to add errata to a puzzle. We decided not to use any caching.
+you're trying to add errata to a puzzle.
+
+We tried to avoid caching, but part of our Apache config cached static
+resources we didn't want to cache, and we were never able to debug how to
+turn it off. That caching made one of our erratas take 5 minutes to propagate
+to solvers. Luckily, the errata was minor.
 
 
 Static Conversion
@@ -577,15 +591,24 @@ Static Conversion
 
 As mentioned earlier, running Puzzles are Magic in maintenance mode currently
 costs about $16/month. For archiving purposes, sometime after the hunt, you'll
-want to convert your website into a static resource. This brings your maintenance
+want to convert your website into a fully static site. This brings your maintenance
 costs to almost zero. Amazon S3 costs just a few cents per GB of storage and
 data transfer, and Github Pages lets you host a static site for free.
 
-We're in the middle of converting Puzzles are Magic into a static website. The
-main blocker is the interactive puzzles. All the core logic for these puzzles
-is server side, and we need to port all the server-side logic into client-side
-Javascript before we can flip the switch.
+Try to have a static answer checker ready to go before hunt ends. Even if all
+your solutions are ready the instant hunt ends, you want to give solvers the
+ability to check their answers spoiler-free.
 
-If you have a lot of interactive puzzles, or you are hosting from a personal
-server, or you'd rather pay the server costs instead of spending time doing the
-static conversion, you can skip this step.
+As for converting the rest of the site, well, that can take some time.
+Remember how I said interactive puzzles should have all their logic be server-side?
+Well, making them work client-side basically means rewriting all the code to
+run in-browser.
+
+If you'd rather pay the server costs than deal with these headaches, then
+sure, leave the site as-is. Personally, I'd rather not pay $16/month for the
+rest of my life, and when I find free time I'm going to start converting
+everything.
+
+For non-interactive puzzles, the command [mentioned here](https://www.linuxjournal.com/content/downloading-entire-web-site-wget)
+seemed to work for me, but you should double check the links yourself, especially
+if your paths include Unicode characters.
