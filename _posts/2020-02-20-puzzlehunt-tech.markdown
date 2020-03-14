@@ -26,11 +26,11 @@ Hunts are Web Apps
 
 The most important thing to remember about a puzzlehunt is that a puzzlehunt is
 essentially a full web application.
-There's a frontend that solvers interact with, there's a backend
+There's a front-end that solvers interact with, there's a back-end
 that stores submission and solve info, and the two need to send the right
 information to each other for your hunt to work.
 
-That means if you want to run an online puzzlehunt with teams, leaderboards,
+That means if you want to run an online puzzlehunt with teams, leaderboard,
 and so on, you'll either need to know how to set up a website, or be eager to
 learn. If you have practice with looking up how to use unfamiliar software
 libraries, you should be set.
@@ -59,7 +59,7 @@ as-is, warts and all, but even then I'd need to audit the code to verify I'm
 not leaking any hardcoded passwords, secret keys, user data, puzzle ideas
 I want to use again, and so on.
 
-As far as I know, the only open-source puzzlehunt codebase is
+As far as I know, the only open-source puzzlehunt code base is
 Puzzlehunt CMU's
 codebase, which can be found at [this GitHub](https://github.com/dlareau/puzzlehunt_server).
 Our hunt code is forked from this code, with several modifications. It's written
@@ -153,7 +153,7 @@ Unlock System
 
 In an Australian style hunt, puzzles are unlocked at a fixed time each day,
 with hints releasing over time. In a Mystery Hunt style hunt, puzzles are
-unlocked based on previoiusly solved puzzles, potentially with time unlocks
+unlocked based on previously solved puzzles, potentially with time unlocks
 as well.
 
 Supporting both time unlocks and unlocks based on solving K out of N
@@ -248,7 +248,7 @@ The upside of PDF-by-default is that you can usually assume PDFs will appear
 the same to all users. You don't have to worry about different browsers or
 operating systems messing up the layout of your puzzle.
 
-Browser compatability is a huge pain, but if you're running an online hunt,
+Browser compatibility is a huge pain, but if you're running an online hunt,
 I still advocate for an HTML-by-default puzzlehunt. It requires more work,
 but comes with these advantages.
 
@@ -261,8 +261,8 @@ see puzzle, vs click link, click download, open download, see puzzle.)
 * If you have several constructors, it's easier to force consistent fonts and
 styles across puzzles, by using a global CSS file.
 With PDFs, you need to standardize this yourself.
-* HTML pages are inherentently redownloaded whenever a solver refreshes or
-reopns the page. That means if you issue errata, solvers will notice your
+* HTML pages are inherently re-downloaded whenever a solver refreshes or
+reopens the page. That means if you issue errata, solvers will notice your
 errata faster than if it's part of a PDF they have to re-download. It's also
 possible solvers will accidentally look at their old downloaded PDF, instead of
 the new PDF.
@@ -299,7 +299,7 @@ Access Control
 Teams should not have access to a puzzle before they have unlocked it.
 This is obvious, but what's less obvious is that they also shouldn't
 have access to any static resources that puzzle uses. Any puzzle specific
-images, Javascript, CSS, PDFs, and so on should be blocked behind a check of
+images, JavaScript, CSS, PDFs, and so on should be blocked behind a check of
 whether the team has unlocked that puzzle yet.
 
 Assume that solvers will find any file that isn't gated behind one of these
@@ -385,11 +385,11 @@ puzzles.)
 The rule-of-thumb in online video games is
 to never, ever trust the client. Puzzlehunts are the same.
 In MIT Mystery Hunt 2020, teammate solved 2 or 3 interactive
-puzzles by inspecting the client-side Javascript, finding a list of encrypted
+puzzles by inspecting the client-side JavaScript, finding a list of encrypted
 strings, searching for the function that decrypted them, and running the
 decryption until we found strings that looked like the answer.
 
-Assume that teams will decode any local Javascript, even if you minify and
+Assume that teams will decode any local JavaScript, even if you minify and
 obfuscate it.
 The only guaranteed way to close these shortcuts is to move all
 key puzzle functionality to server-side code.
@@ -402,9 +402,9 @@ put everything on the server.
 
 For example,
 in [Applejack's Game](https://www.puzzlesaremagic.com/puzzle/applejacks-game/),
-all the Javascript does is take the entered message, send it to the server,
+all the JavaScript does is take the entered message, send it to the server,
 and render the server's response. That's it. There's nothing useful to
-retrieve from the client-side Javascript, and you need to interact with the
+retrieve from the client-side JavaScript, and you need to interact with the
 puzzle to discover its rules.
 
 If possible, try to avoid repeating logic across the client and server. The
@@ -593,7 +593,7 @@ As mentioned earlier, running Puzzles are Magic in maintenance mode currently
 costs about $16/month. For archiving purposes, sometime after the hunt, you'll
 want to convert your website into a fully static site. This brings your maintenance
 costs to almost zero. Amazon S3 costs just a few cents per GB of storage and
-data transfer, and Github Pages lets you host a static site for free.
+data transfer, and GitHub Pages lets you host a static site for free.
 
 Try to have a static answer checker ready to go before hunt ends. Even if all
 your solutions are ready the instant hunt ends, you want to give solvers the
