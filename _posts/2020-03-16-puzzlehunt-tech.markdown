@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Puzzlehunt Tech Checklist"
-date:   2020-02-20 03:10:00 -0500
+date:   2020-03-16 02:00:00 -0800
 ---
 
 I have played my fair share of online puzzlehunts, and now that I've
