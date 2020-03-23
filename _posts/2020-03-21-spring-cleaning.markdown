@@ -63,12 +63,27 @@ I had forgotten the exact way you structure the optimization to maximize the
 margin.
 
 I could re-learn some of this quickly if I needed to, but the key point is that
-I *haven't* needed to do so. What was the point of it all, if I don't remember
-it afterwards?
+I *haven't* needed it. So what was the point of it all?
 
-Despite not remembering much of it, I do feel like that was the time where
-I was the most "alive", and had the most varied interests. There's a ton of
-conflating factors there - your early 20s are usually the time you do the most
-growing up - but it's made me realize how much I miss having 100% freedom to
-do whatever I was interested in, without having to worry about money or
-publications.
+I took those courses because I wanted to, or because they were graduation
+requirements. It worked for me, and I had the luxury to afford it, but it makes
+me realize how much of it is wasted time for the people who just care about
+getting a high paying job. You could argue that college teaches general skills
+around work ethic, socializing, time management, networking, and so on, but
+shouldn't teaching that be high school's job?
+
+The argument that rings true for me is that most people's college experience
+is like this, but it isn't clear what parts of school matter for you until after
+you finish it.
+
+Despite forgetting a lot of it, I do feel that time was when I was most
+"alive". I had more varied interests, was generally more curious about the world,
+and went through a lot of personal growth. It's made me realize how much I miss
+having 100% freedom to do whatever I wanted, without having to worry about
+money or career aspirations.
+
+It also reminded me of the time I genuinuely thought "it's all ogre now" was
+an incredible meme, enough so that I wrote it on the cheat sheet for my machine
+learning final. Well, no one's perfect. Luckily, I've moved on to much better
+memes, like ["Call Me Maybe" + "X Gon' Give It To Ya" mashups](https://www.youtube.com/watch?v=Fegs-XVKgnM).
+Four years from now, I bet I'll still like that song.
