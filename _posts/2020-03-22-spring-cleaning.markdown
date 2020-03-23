@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spring Cleaning"
-date:   2020-03-21 02:00:00 -0700
+date:   2020-03-22 23:05:00 -0700
 ---
 
 When I was growing up, I saved every bit of schoolwork I ever made. I did
