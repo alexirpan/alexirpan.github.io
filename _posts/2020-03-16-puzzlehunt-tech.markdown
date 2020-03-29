@@ -5,7 +5,7 @@ date:   2020-03-16 02:00:00 -0700
 ---
 
 I have played my fair share of online puzzlehunts, and after helping run
-[Puzzles are Magic](https://www.puzzlesaremagic.com/), I've learned
+[Puzzles are Magic](https://www.puzzlesaremagic.com), I've learned
 a lot of things about what makes a good hunt.
 
 There are several articles about puzzle design, but as the
@@ -202,7 +202,7 @@ besides just "correct"
 and "incorrect", since it opens up new puzzle design
 space.
 Example puzzles that rely on custom replies are
-[Art of the Dress](https://www.puzzlesaremagic.com/puzzle/art-of-the-dress/)
+[Art of the Dress](https://www.puzzlesaremagic.com/puzzle/art-of-the-dress)
 from Puzzles are Magic, and [The Answer to This Puzzle Is...](https://2018.galacticpuzzlehunt.com/puzzle/the-answer-to-this-puzzle-is.html) from GPH 2018.
 
 (Tangent: it is generally good for every puzzle hunt to have 1 or 2 puzzles where
@@ -298,7 +298,7 @@ the new PDF.
 
 In total, I believe these benefits are worth the extra work required.
 Of course, you should use PDFs in cases where doing so is easier.
-There was no way [A to Zecora](https://www.puzzlesaremagic.com/puzzle/a-to-zecora/) was ever
+There was no way [A to Zecora](https://www.puzzlesaremagic.com/puzzle/a-to-zecora) was ever
 going to be in HTML format. Meanwhile, use PDFs when you need the strengths
 of that format (such as a puzzle where the precise alignment of text is
 important).
@@ -314,10 +314,10 @@ writing scripts that automate converting puzzle data into HTML.**
 Doing so reduces typo risk, and makes it easier
 to update a puzzle. For Puzzles are Magic, when
 constructing
-[Recommendations](https://www.puzzlesaremagic.com/puzzle/recommendations/),
+[Recommendations](https://www.puzzlesaremagic.com/puzzle/recommendations),
 I wrote
 a script that took a target cluephrase, auto-generated extraction indices,
-and outputted the corresponding HTML. For [Endgame](https://www.puzzlesaremagic.com/puzzle/endgame/),
+and outputted the corresponding HTML. For [Endgame](https://www.puzzlesaremagic.com/puzzle/endgame),
 I did the same thing. Both those puzzles had 3 drafts, one of which was
 made the night before hunt, and those scripts saved a ton of time.
 
@@ -386,7 +386,7 @@ Filenames
 Make your filenames completely non-descriptive. If you have 10 images, name
 them "1.png", "2.png", "3.png", and so on, in order of the webpage. Or better
 yet, give each of them randomly generated names.
-[Anthropology](https://www.puzzlesaremagic.com/puzzle/anthropology/) from Puzzles are Magic used
+[Anthropology](https://www.puzzlesaremagic.com/puzzle/anthropology) from Puzzles are Magic used
 random names, since solvers needed to pair emoji pictures to numbers, and
 I didn't want the emoji in "1.png" to be confused for the number 1.
 
@@ -432,7 +432,7 @@ Magic were essentially turn-based, so we didn't care about latency and
 had all the logic be server-side.
 
 For example,
-in [Applejack's Game](https://www.puzzlesaremagic.com/puzzle/applejacks-game/),
+in [Applejack's Game](https://www.puzzlesaremagic.com/puzzle/applejacks-game),
 all the JavaScript does is take the entered message, send it to the server,
 and render the server's response. That's it. There's nothing useful to
 retrieve from the client-side JavaScript, so there's no need to hide it.
@@ -486,7 +486,7 @@ make sure your site isn't completely broken on mobile. Even solvers with laptops
 will appreciate being able to solve puzzles on the go.
 
 Watch out for slow Internet connections or computers. In
-[Number Hunting](https://www.puzzlesaremagic.com/puzzle/number-hunting/) from
+[Number Hunting](https://www.puzzlesaremagic.com/puzzle/number-hunting) from
 Puzzles are Magic, we used MathJax to render the math equations for flavor
 reasons, but we found this sometimes took a while, and rendered poorly on
 mobile because MathJax equations don't support line wrap. So, we included
@@ -494,12 +494,12 @@ a plaintext version as well.
 
 The one big accessibility failure from Puzzles are Magic I'm still annoyed
 about is
-[The Key is Going Slow and Steady](https://www.puzzlesaremagic.com/puzzle/the-key-is-going-slow-and-steady/).
+[The Key is Going Slow and Steady](https://www.puzzlesaremagic.com/puzzle/the-key-is-going-slow-and-steady).
 One lesson we learned during hunt construction was that puzzle presentation
 really matters. If a puzzle looks big, it's intimidating, and solvers are
 less likely to start it. So, if you can find a way to make a puzzle look
 smaller, you should.
-[Recommendations](https://www.puzzlesaremagic.com/puzzle/recommendations/)
+[Recommendations](https://www.puzzlesaremagic.com/puzzle/recommendations)
 testsolved a lot better when I made all the images 4x smaller, even though
 this changed nothing about its difficulty.
 

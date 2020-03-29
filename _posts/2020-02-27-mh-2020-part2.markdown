@@ -5,7 +5,7 @@ date:   2020-02-27 23:30:00 -0500
 ---
 
 Now that
-[My Little Pony: Puzzles are Magic](https://www.puzzlesaremagic.com/) has
+[My Little Pony: Puzzles are Magic](https://www.puzzlesaremagic.com) has
 wrapped up, I have time to finish my posts about MIT Mystery Hunt 2020. And
 only well over a month after Hunt too!
 
@@ -157,7 +157,7 @@ I got curious about forward solve vs backsolve rates. I went through the guess
 log, made a list of all answer guesses that looked like backsolves,
 and computed forward guesses vs backward guesses for each puzzle.
 
-The results are linked on [the full stats page](https://www.puzzlesaremagic.com/hunt_stats/).
+The results are linked on [the full stats page](https://www.puzzlesaremagic.com/hunt_stats).
 Excluding meta puzzles and endgame puzzles (puzzles that couldn't be backsolved),
 across the entire hunt there were 4.38 guesses per forward solve, and
 5.36 guesses per backward solve.
@@ -794,7 +794,7 @@ I
 mention it because 3 people, all new to the puzzle, independently asked if
 we should try brute force.
 
-As another example, we gave [Number Hunting](https://www.puzzlesaremagic.com/puzzle/number-hunting/)
+As another example, we gave [Number Hunting](https://www.puzzlesaremagic.com/puzzle/number-hunting)
 from Puzzles are Magic to a few different testsolvers. This is all very
 anecdotal, but many of the testsolvers from teammate
 had the same realization - once you solve enough to find the list of
@@ -802,7 +802,7 @@ candidate answers,
 it's much faster to export the list of all answers, and use coding to search
 for matching answer enumerations, instead of forward solving the clues.
 When I checked the
-[stats for Number Hunting](https://www.puzzlesaremagic.com/stats/number-hunting/), I was not surprised that a teammate team got the fastest solve. That's just how we are as a team.
+[stats for Number Hunting](https://www.puzzlesaremagic.com/stats/number-hunting), I was not surprised that a teammate team got the fastest solve. That's just how we are as a team.
 
 The pennies were definitely not a puzzle where coding trickery or tool knowledge
 got you to the answer faster. You just had to solve it. We didn't.

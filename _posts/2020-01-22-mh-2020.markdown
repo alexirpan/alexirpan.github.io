@@ -127,7 +127,7 @@ early may have been wasted time, compared to solving other puzzles.)
 
 I've been thinking about puzzlehunt design more. You may also
 have noticed that this post is labeled "Part 1". These two facts are linked!
-I'm one of the organizers for [My Little Pony: Puzzles Are Magic](https://www.puzzlesaremagic.com/),
+I'm one of the organizers for [My Little Pony: Puzzles Are Magic](https://www.puzzlesaremagic.com),
 a puzzlehunt that starts in about 10 days.
 
 Currently, I'm 50-50 between trying to get more sign-ups, and
