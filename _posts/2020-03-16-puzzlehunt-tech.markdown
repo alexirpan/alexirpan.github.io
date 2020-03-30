@@ -4,6 +4,8 @@ title:  "A Puzzlehunt Tech Checklist"
 date:   2020-03-16 02:00:00 -0700
 ---
 
+*Last updated March 29, 2020*
+
 I have played my fair share of online puzzlehunts, and after helping run
 [Puzzles are Magic](https://www.puzzlesaremagic.com), I've learned
 a lot of things about what makes a good hunt.
@@ -619,6 +621,16 @@ it, but part of our Apache config cached static
 resources we didn't want to cache. We never debugged why, but it did mean
 that when we added errata to a PDF, it took 5 minutes for the errata to
 propagate to solves. Luckily, the errata was minor.
+
+
+Hiding Spoilers from Web Crawlers
+-------------------------------------------------------------------------
+
+Adding `<meta name="robots" content="noindex">` to the header of an HTML
+file prevents most search engines from indexing that page. To avoid spoiling
+anyone who looks through your archive later, that header should be added to
+the solutions for each puzzle, as well as any other page that could spoil
+that puzzle's answer.
 
 
 Static Conversion
