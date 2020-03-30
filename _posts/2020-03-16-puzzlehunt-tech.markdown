@@ -651,6 +651,31 @@ For non-interactive portions, the command [mentioned here](https://www.linuxjour
 worked for me, but you should double check the links yourself, especially
 if your paths include Unicode characters, or are case sensitive.
 
+**March 29, 2020 update**: Just finished static conversion of Puzzles are Magic,
+hosting it through Github Pages. I didn't have Unicode issues, but did hit other
+problems.
+
+* Some non-HTML files were not getting served with the correct file type in their
+header. This still worked for solvers, but files like `1.png` were crawled and saved as `1.png.html`.
+This broke some of the dynamic puzzles,
+and I had to rename all those files, and
+fix the generated links to each, which I did with some small shell scripts.
+* Files loaded through dynamic JavaScript were not crawled by `wget`, and had to
+be added manually.
+* Files that relied on absolute paths broke in local testing, and needed to be
+changed to use relative paths.
+* In the dynamic version of the site, trailing slashes did not matter to the
+URL. Going to `/hunt/current/` was equivalent to visiting `/hunt/current`. In
+the static version, this was different. The path `/hunt/current/` is shorthand
+for "load hunt/current/index.html", and `/hunt/current` is short for "load
+hunt/current.html". Unfortunately, the links indexed by search engines all used
+trailing slashes. I was using Github Pages, which uses Jekyll, so I used
+[jekyll-redirect-from](https://github.com/jekyll/jekyll-redirect-from) to
+generate redirects from trailing slashes to the intended page. One gotcha was
+that `redirect_from: /hunt/current/`
+had to be added as the very start of the file, no whitespace allowed at the top,
+or else it would be treated as part of the HTML file.
+
 \* \* \*
 {: .centered }
 
