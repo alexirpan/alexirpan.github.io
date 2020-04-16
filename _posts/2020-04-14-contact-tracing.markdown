@@ -86,48 +86,44 @@ hard enough that I don't think the US can do it.
 That's where contact tracing comes in. Technical solutions can exploit what
 made software take over the world: a team of programmers can make an app that
 easily distributes to millions of people in very little time. With good contact
-tracing, we will not need as many tests to track the spread of COVID-19, and
-can relax the most economically damaging stay-at-home orders with minimal
-compromises to public health.
+tracing, we will need fewer tests to track the spread of COVID-19.
 
 Vaccine development, test production, and contact tracing apps will all be done in parallel, but I expect contact tracing to finish first,
 and to be the best hope of letting people get back to work the fastest.
 
 
-What About Privacy? (The Less Technical Answer)
+What About Privacy?
 -------------------------------------------------------------------------------
 
-Ever since 2016, people have trusted Big Tech less, for good reasons.
-However, if you actually *read* the proposal for the app, you find that
+Ever since the Patriot Act, people have been wary of governments using crises
+as an excuse to extend their powers, and ever sinze 2016, people have been
+wary of trusting Big Tech. So it's understandable that a collaboration between
+Apple, Google, and governmental health authorities is triggering alarm bells.
+
+However, if you read the proposal for the contact tracing app, you find that
 
 1. The privacy loss is fairly minimal.
 2. The attacks on privacy you can execute are potentially annoying, but not catastrophic.
-3. People are *literally* dying. The privacy loss is negligible in comparison.
 
-The last point is the important one. Yes, contact tracing comes with some
-privacy loss. But as proposed, it should reveal the minimum information needed
-to make contact tracing work, and that minimum privacy loss is small enough
-that people should be okay with it.
+And, when you contrast this with people *literally* dying, the privacy loss is
+negligible in comparison.
 
 Let's start with a privacy loss that *isn't* okay, to clarify the line.
-In South Korea, the government published several personal details for patients
+In South Korea, the government published personal information for patients
 confirmed COVID-19 positive.
-
+This included where they traveled, their gender, and their rough age. All
+of this infromation is broadcasted to everyone in the area.
 
 's approach. I need to track down the source for this, but in South Korea, the government published a full list of details for all patients confirmed as COVID-19 positive. (https://www.nature.com/articles/d41586-020-00740-y)
 
-This included the full movement patterns of the infected person, their gender,
-and their approximate age. All of this is further broadcasted to everyone in
-the area.
-
-Exposing that level of personal detail is just entirely unnecessary. Yes, it
+Exposing this level of personal detail is just entirely unnecessary. Yes, it
 slows down infection, but there are ways to report this information *without*
 publicizing people's activities to this level of detail. There is no change in
 health outcome between knowing you were near an infected person, and knowing
 you were near an infected person of a certain age and gender. In either case,
 you're self-quarantining. This is privacy loss for no gain.
 
-How does the proposed app differ? Here is the diagram from Google's announcement.
+How does the Apple and Google collaboration differ? Here is the diagram from Google's announcement.
 
 DIAGRAM
 
@@ -147,16 +143,30 @@ Something like this is already implemented in the existing NOVID contact
 tracing app, which also uses Bluetooth and a self-reporting function to securely
 trace contacts.
 
-
 What the proposed protocol does is attempt to minimize the privacy loss, while maintaining enough information to make contact tracing possible.
-
-enough overlap, the user gets a message saying they were recently in contact with a COVID-19 case.
-
 Crucially, as stated, Apple's and Google's servers do not directly store any interactions between phones. It stores only the messages that COVID-19 cases have sent out - but it does not store the receivers of those messages, assuming it's implemented according to spec.
 
-That last part is the sticking point.
+That last part is a sticking point.
 
-3. What if Sketchy Stuff Happens?
+
+What If Sketchy Stuff Happens?
+-------------------------------------------------------------------------------
+
+First, the simpler, less technical answer. So far, Apple and Google have
+publicized and announced their protocol ahead of time. This is standard practice
+if you want to do security right, because it lets external people audit the
+security, including people who aren't fans of either company.
+
+In short, they are so far doing things properly, and acting in a way that would
+make it much harder for them to sneak backdoors or privacy breaks into their
+protocol.
+
+Additionally, for the protocol itself, remember that it's basically the DP-3T
+protocol, a protocl that was designed entirely by academic security
+researchers, not big tech companies. I have not had the time to verify the details,
+but the high level spec sounds essentially identical.
+
+If you are on board with all of that, but do have the technical expertise to evaluate crypto, then I'd encourage you to compare it with the DP-3T protocol (https://github.com/DP-3T/documents), a contact tracing protocol designed entirely by academics. I have not had the time to check the details, but believe the public spec is basically the DP-3T protocol. I am a crypto passerby, not a crypto nut, but to my eyes I don't see any way to break the protocol. The only reason I say the privacy loss is minimal, instead of privacy loss 0, is because it's very hard to claim zero privacy loss. If it breaks, it should break minimally.
 
 Things I have seen:
 
