@@ -53,8 +53,8 @@ orders would have been worse. Corporate leaders and Republicans may have talked
 about lifting stay-at-home orders,
 but as relayed by [Justin Wolfers,
 UMich Economics professor](https://twitter.com/JustinWolfers/status/1244294419492343808),
-a survey of over 40 leading economimts found *0%* of them agreed that lifting
-severe lockdowns early would decrease total economic damange.
+a survey of over 40 leading economists found *0%* of them agreed that lifting
+severe lockdowns early would decrease total economic damage.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Understand the incentives: CEO&#39;s and bankers are calling for workers to be recalled. Economists—whose models also account for what&#39;s in the workers&#39; best interests—disagree. Epidemiologists—who understand how pandemics spread—also disagree.</p>&mdash; Justin Wolfers (@JustinWolfers) <a href="https://twitter.com/JustinWolfers/status/1244298426759680004?ref_src=twsrc%5Etfw">March 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
@@ -95,9 +95,9 @@ What About Privacy?
 -------------------------------------------------------------------------------
 
 Ever since the Patriot Act, people have been wary of governments using crises
-as an excuse to extend their powers, and ever sinze 2016, people have been
+as an excuse to extend their powers, and ever since 2016, people have been
 wary of trusting Big Tech. So it's understandable that a collaboration between
-Apple, Google, and governmental health authorities is triggering alarm bells.
+Apple, Google, and governmental health authorities triggers alarm bells.
 
 However, if you actually *read* the proposal for the contact tracing app, you find that
 
@@ -111,7 +111,7 @@ Let's start with a privacy loss that *isn't* okay, to clarify the line.
 In South Korea, the government published personal information for patients
 confirmed COVID-19 positive.
 This included where they traveled, their gender, and their rough age. All
-of this infromation is broadcasted to everyone in the area. See this piece
+this information is broadcasted to everyone in the area. See this piece
 from [The Atlantic](https://www.theatlantic.com/ideas/archive/2020/04/contact-tracing-could-free-america-from-its-quarantine-nightmare/609577/)
 for more, or this article from [Nature](https://www.nature.com/articles/d41586-020-00740-y).
 
@@ -153,7 +153,7 @@ doesn't indicate anything about who those messages correspond to. And since
 the database is a pile of random messages, there's no way to extract further
 information from the stored database.
 
-This protocol minimize privacy loss. It still exposes some information, because
+This protocol minimizes privacy loss. It still exposes some information, because
 doing so is required for contact tracing to work. Suppose Alice only meets with
 Bob in a 14 day period. She later gets a notification that someone she interacted
 with tested positive for COVID-19. It's rather obvious that Alice can conclude
@@ -162,8 +162,8 @@ able to conclude this no matter how contact tracing is implemented. The aim is
 to leak the minimum amount of information required to make contact tracing work,
 and to avoid leaking any other information, like age or gender. If Alice meets
 10 people and gets a notification, all she learns is that one of the 10 people
-she met is COVID-19 positive - which, again, is something that she would have
-learned anyways.
+she met is COVID-19 positive - which, again, is something that she could have
+concluded anyways.
 
 If implemented as stated, neither the hospital, nor Apple, nor Google should learn
 who's been meeting who, and the users getting the notification shouldn't learn
@@ -202,7 +202,7 @@ then that's fine too, as long as the app's security isn't compromised.
 Look, you may be philosophically against large corporations accumulating power.
 That's totally fine. Corporations have screwed over a *lot* of people. However,
 at this time, it's correct
-to *temporarily* suspend your principles. Not permanantly, temporarily, until
+to *temporarily* suspend your principles. Not permanently, temporarily, until
 the public health emergency has ended. Contact tracing only works if it's
 widespread. To make it widespread, you *want* the large reach of tech companies,
 because you need as many users as possible.
@@ -219,7 +219,7 @@ reaching outside the math contest community. Its footprint is too small.
 Meanwhile, everyone knows who Apple and Google are. It's much more likely
 they'll get the adoption needed to make contact tracing effective. Both companies
 also have Health divisions, meaning they should have knowledge for how to
-satisfy apporpriate health regulations, and connections to train public health
+satisfy appropriate health regulations, and connections to train public health
 authorities on how to use the app. These are all fixed costs, and the central
 lesson of fixed costs is that they're easier to absorb when you have a large
 [war chest](https://www.cnbc.com/2020/01/28/apple-q1-2019-cash-hoard-heres-how-much-cash-apple-has-on-hand.html).
@@ -284,7 +284,7 @@ just location data, with extra steps.
 
 I disagree that this would be required. People already download MBs worth of
 data for YouTube, Netflix, and updates for their existing apps. If each device
-only downloads data when its on Wi-Fi and plugged in, then it should be okay.
+only downloads data when it's on Wi-Fi and plugged in, then it should be okay.
 
 If users upload massive amounts of keys, they could trigger DDOS attacks by
 forcing gigabytes of downloads to all users. If users declare they are COVID-19
@@ -305,7 +305,7 @@ Contact tracing is a key part to bringing things back to normal as fast as
 is safe, which is important for restarting the economy.
 
 Of the existing contact tracing solutions, the collaboration between Apple
-and Google is currently the one I expect to get largest adoption. They
+and Google is currently the one I expect to get the largest adoption. They
 have the leverage, they have the network effects, and they have the
 brand name recognition to make it work.
 
