@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Argument for Contact Tracing"
-date:   2020-04-14 22:05:00 -0700
+date:   2020-04-16 21:09:00 -0700
 ---
 
 A few days ago, Apple and Google announced a partnership to develop an opt-in
@@ -152,7 +152,7 @@ frequently, the messages on each phone
 don't indicate anything about who those messages correspond to. Since
 the database is a pile of random messages, there's no way to extract further
 information from the stored database, like age, gender, or street address.
-That protects the privacy from both the user and the database's owner.
+That protects people's privacy from both users and the database's owner.
 
 The protocol minimizes privacy loss, but it does expose some information,
 since doing so is required to make contact tracing work. Suppose Alice only meets with
