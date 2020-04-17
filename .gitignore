@@ -1,6 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+.jekyll-cache
 # Vim backup files when I develop in babun
 *~
 # I don't know why it's trying to add this
