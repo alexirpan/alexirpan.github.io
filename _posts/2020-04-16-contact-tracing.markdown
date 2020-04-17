@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Argument for Contact Tracing"
-date:   2020-04-16 21:09:00 -0700
+date:   2020-04-16 21:19:00 -0700
 ---
 
 A few days ago, Apple and Google announced a partnership to develop an opt-in
@@ -305,8 +305,7 @@ sign-off of a doctor or public health authority.
 
 This is why I'm not so
 optimistic about a decentralized alternative. To prevent abuse, you want a
-central authority. (Or blockchains, but good luck convincing people to use
-*that*.)
+central authority.
 The natural choice for a central authority is the healthcare system.
 You'll need hospitals to understand your contact tracing app, and that's
 easiest if there's a single app, rather than several...and now we're back
@@ -338,9 +337,9 @@ people are too
 scared to use it, or something else, then given the current US response,
 I could see the worst forecasts of the Imperial College London report
 coming true: cycles of lockdown on, lockdown off, until a vaccine is ready.
-Their models are pessimistic, compared to other papers, but it could happen.
+Their models are pessimistic, compared to other models, but it could happen.
 And I will be
-really, really, really mad if it does, because it would have
+really, really, really mad if it does happen, because it will have
 been entirely preventable.
 
 *I originally posted this essay on Facebook, and got a lot of good feedback.
