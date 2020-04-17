@@ -17,7 +17,7 @@ I also quickly realized that a bunch of people weren't going to
 opt into it. Here's my attempt to fix that.
 
 This post covers what contact tracing is, why I believe it's critical to handling
-COVID-19, and how the proposed app implements it with minimal privacy loss,
+COVID-19, and how the proposed app implements it while maintaining privacy,
 ensuring that neither people, nor corporations, nor governments learn
 personal information they don't need to know.
 
@@ -63,7 +63,7 @@ severe lockdowns early would decrease total economic damage.
 So, lockdowns are going to continue until there's low risk of the disease
 resurging.
 As summarized by this [Vox article](https://www.vox.com/2020/4/10/21215494/coronavirus-plans-social-distancing-economy-recession-depression-unemployment),
-there are about 4 endgames for this.
+there are four endgames for this.
 
 1. Social distancing continues until cases literally go to 0, and the disease
 is eradicated.
@@ -73,11 +73,11 @@ and enough of the population gets it to give herd immunity.
 massive testing infrastructure is in place. Think millions of tests per day,
 enough to test literally the entire country, repeatedly, to track the
 course of the disease.
-4. Social distancing continues until cases go to a low number, and widespread contact tracing, plus a large, less massive number of tests are in place.
+4. Social distancing continues until cases drop to a small number, and widespread contact tracing, plus a large, less massive number of tests are in place.
 
 Eradication is incredibly unlikely, since the disease broke containment.
-Vaccines aren't going to be widely available for about a year, because safety
-studies will need a year to finish.
+Vaccines aren't going to be widely available for about a year, because of
+clinical trial timelines.
 For testing, scaling up production and logistics is
 underway right now, but reaching millions of tests per day sounds
 hard enough that I don't think the US can do it.
@@ -90,8 +90,8 @@ an app can be easily distributed to millions of people in very little time.
 
 Vaccine development, test production, and contact tracing apps will all be done in parallel,
 but given the United States already has testing shortfalls, I expect contact
-tracing to finish first, and to be the
-best hope for letting people get back to work the fastest.
+tracing to finish first, meaning it's the best hope for restarting the
+economy.
 
 
 What About Privacy?
@@ -99,7 +99,7 @@ What About Privacy?
 
 Ever since the Patriot Act, people have been wary of governments using crises
 as an excuse to extend their powers, and ever since 2016, people have been
-wary of trusting Big Tech. So it's understandable that they're sounding alarm
+wary of big tech companies. So it's understandable that people are sounding alarm
 bells over a collaboration between
 Apple, Google, and the government.
 
@@ -118,9 +118,7 @@ This included where they traveled, their gender, and their rough age. All
 this information is broadcasted to everyone in the area. See this piece
 from [The Atlantic](https://www.theatlantic.com/ideas/archive/2020/04/contact-tracing-could-free-america-from-its-quarantine-nightmare/609577/), or this article from [Nature](https://www.nature.com/articles/d41586-020-00740-y), for more information.
 
-Exposing this level of personal detail is entirely unnecessary. There are ways
-without
-publicizing people's activities to this level of detail. There is no change in
+Exposing this level of personal detail is entirely unnecessary. There is no change in
 health outcome between knowing you were near an infected person, and knowing
 you were near an infected person of a certain age and gender. In either case,
 you should self-quarantine. The South Korea model makes people lose privacy
@@ -146,23 +144,26 @@ to all nearby devices. These keys change every 5-15 minutes.
 2. Each device records the random messages it has heard from nearby devices.
 3. Whenever someone tests positive, they can elect to upload all their messages to a database. This upload requires the consent of both the user and a public health official.
 4. Apple's and Google's servers store a list of all messages sent by COVID-19 patients. They will be stored for 14 days, the incubation period of the virus.
-5. Periodically, every device will download the entire list of messages that COVID-19 cases have sent. It will then, on-device, compare that list to a locally saved list of messages received from nearby phones.
+5. Periodically, every device will download the current database. It will then, on-device, compare that list to a locally saved list of messages received from nearby phones.
 6. If there is enough overlap, the user gets a message saying they were recently in contact with a COVID-19 case.
 
 What makes this secure? Since each phone's message is random, and changes
-frequently, the list of messages for nearby phones
-doesn't indicate anything about who those messages correspond to. Since
+frequently, the messages on each phone
+don't indicate anything about who those messages correspond to. Since
 the database is a pile of random messages, there's no way to extract further
 information from the stored database, like age, gender, or street address.
 That protects the privacy from both the user and the database's owner.
 
-The protocol minimizes privacy loss, but it does still exposes some information.
-Exposing some information is required for contact tracing to work. Suppose Alice only meets with
+The protocol minimizes privacy loss, but it does expose some information,
+since doing so is required to make contact tracing work. Suppose Alice only meets with
 Bob in a 14 day period. She later gets a notification that someone she interacted
-with tested positive for COVID-19. It's rather obvious that Alice can conclude
+with tested positive for COVID-19. Given that Alice only met one person,
+it's rather obvious that Alice can conclude
 Bob has COVID-19. However, in this scenario, Alice would be
-able to conclude this no matter how contact tracing is implemented. In the proposed
-app, it leaks this required information, and no more. If Alice meets 10 people,
+able to conclude this no matter how contact tracing is implemented. You can view
+this as a required information leak, and the aim of the protocol is to leak no
+more than the required amount.
+If Alice meets 10 people,
 then gets a notification, all she learns is that one of the 10 people
 she met is COVID-19 positive - which, again, is something that she could have
 concluded anyways.
@@ -187,31 +188,31 @@ If you can count on anyone to do due diligence, it's the cryptography nerds.
 In short, if this was a sneaky power grab, they're sure making it hard to
 be sneaky by readily giving out so much information.
 
-*Maybe* there's a hole in the protocol. I think that's very unlikely. Remember,
+*Maybe* there's a backdoor in the protocol. I think that's very unlikely. Remember,
 it's basically the [DP-3T protocol](https://github.com/DP-3T/documents), which was
 designed entirely by academic security professors, not big tech companies.
 I haven't had the time to verify they're exactly identical, but on a skim they
 had the same security guarantees.
 
 When people explain what could go wrong, they point out that although the
-app is opt-in, governments could say people aren't allowed to leave lockdown
-unless they opt-in, effectively making it mandatory. Do we really want
-big tech companies building a system like this?
+app is opt-in, governments could keep people in lockdown unless they
+install the app, effectively making it mandatory. Do we really want
+big tech companies building such a wide-reaching system?
 
 My answer is yes, absolutely, and if governments push for mandatory installs,
 then that's fine too, as long as the app's security isn't compromised.
 
 Look, you may be philosophically against large corporations accumulating power.
 I get it. Corporations have screwed over a *lot* of people. However, I don't
-think contact tracing gives them much more power, and
-right now
+think contact tracing gives them much power they didn't already have.
+And right now,
 the coronavirus is also screwing over a lot of people. It's correct
-to temporarily suspend your principles. Not permanently, temporarily. Just until
+to *temporarily* suspend your principles, until
 the public health emergency is over. Contact tracing only works if it's
 widespread. To make it widespread, you *want* the large reach of tech companies,
 because you need as many users as possible.
 (Similarly, you may hate Big Pharma, but Big
-Pharma is partnering with the CDC for COVID-19 test production, and at this time
+Pharma is partnering with the CDC for COVID-19 test production, and at this time,
 they're best equipped to produce the massive numbers of tests
 needed to detect COVID-19.)
 
@@ -222,7 +223,7 @@ that got the ball rolling, but I never expected it to have any shot of
 reaching outside the math contest community. Its footprint is too small.
 Meanwhile, everyone knows who Apple and Google are. It's much more likely
 they'll get the adoption needed to make contact tracing effective. Both companies
-also have Health divisions, meaning they should have the knowledge to
+also have medical technology divisions, meaning they should have the knowledge to
 satisfy health regulations, and the connections to train public health
 authorities on how to use the app. These are all fixed costs, and the central
 lesson of fixed costs is that they're easier to absorb when you have a large
@@ -231,14 +232,14 @@ lesson of fixed costs is that they're easier to absorb when you have a large
 Basically, if you want contact tracing to exist, but don't want Apple or Google making it, then who do you want?
 The network effects and political leverage they have makes them most able to
 rapidly spread contact tracing. I'm not very optimistic about a decentralized
-solution, because (spoiler for next section) that opens you up to several
-other issues. If you want a centralized solution, the only larger actor is
+solution, because (spoiler for next section) that opens you up to other issues.
+For a centralized solution, the only larger actor is
 the government, and if you don't trust Apple or Google, you shouldn't trust
 the government either.
 
 Frankly, if you were worried about privacy, both companies
 have plenty of easier avenues to get personal information, and based on the
-Snowden leaks, the US government knows this too.
+Snowden leaks, the US government knows this.
 I do think
 there's some risk that governments will pressure Apple and Google to compromise
 the security for surveillance reasons, but I believe big tech companies have
@@ -249,16 +250,17 @@ to do so if pushed.
 What If Other Actors Do Something Sketchy on Top of Apple and Google's Platform?
 -------------------------------------------------------------------------------
 
-From a privacy standpoint, these are the most serious criticisms, and I'll defer
+These are the most serious criticisms. I'll defer
 to [Moxie Marlinspike's first reaction](https://twitter.com/moxie/status/1248707315626201088),
-because he created [Signal](https://en.wikipedia.org/wiki/Signal_(software)) and
+because he created [Signal](https://en.wikipedia.org/wiki/Signal_(software)), and
 has way more experience on how to break things.
 
 These contact tracing apps all use Bluetooth, to enable nearby
 communication. A bunch of people who wouldn't normally use Bluetooth are going
-to have it on. This opens them up to attacks that use Bluetooth. For example, a tracking
-company can place a Bluetooth beacon in a hotspot of human activity. One beacon
-by itself only registers nearby devices, and doesn't give much, but if you place enough of these
+to have it on. This opens them up to Bluetooth-based invasions of privacy. For example, a tracking
+company can place Bluetooth beacons in a hotspot of human activity. Each
+beacon registers the devices of people who walk past it. One beacon
+by itself doesn't give much, but if you place enough of these
 beacons and aggregate their pings, you can start triangulating movements.
 In fact, if you do a search for "Bluetooth beacon", one of the first results
 is [a page from a marketing company explaining why advertisers should use
@@ -274,13 +276,14 @@ rough frequency of COVID-19 contacts in a given area.
 My feeling is that like before, these attacks could be executed on
 any contact tracing app. For contact tracing to be widespread, it needs to be
 silent, automatic, and work on existing hardware. That pretty much leaves Bluetooth,
-as far as I know. Coordinated attacks on Bluetooth are possible, but they're more
-expensive to execute in a privacy-first protocol. Compared to stopping the
+as far as I know, which makes these coordinated Bluetooth attacks possible.
+And once again, compared to stopping the
 start of another exponential growth in loss of life, I think this is acceptable.
 
 Moxie notes that he expects location data to be incorporated at some point.
 If the app works as described, each day, the device needs to download
-data for every new case that day. At large scale, this could become 100s
+the entire database, whose size depends on the number of new cases that day.
+At large scale, this could become 100s
 of MBs of downloads each day. To decrease
 download size, you'd want each phone to only download messages uploaded from
 a limited set of devices that includes all nearby devices...which is basically
@@ -289,18 +292,25 @@ just location data, with extra steps.
 I disagree that you'd need to do that. People already download MBs worth of
 data for YouTube, Netflix, and updates for their existing apps. If each device
 only downloads data when it's on Wi-Fi and plugged in, then it should be okay.
-I'd also think that people would be highly motivated to allow those downloads
-to finish - if they don't finish the download, they don't learn if they were
+I'd also think that people would be highly motivated to start those downloads
+- without them, they don't learn if they were
 close to anyone with COVID-19!
 
 If users upload massive amounts of keys, they could trigger DDOS attacks by
 forcing gigabytes of downloads to all users. If users declare they are COVID-19
 positive when they aren't, they could spread fake information through the contact
-tracing app. However, the risk of both of these should be small, because in
-theory all uploads will require the sign-off of a doctor or public health
-authority. DDOS attacks and pranks are only problems in a decentralized, minimal verification
-system. If hospitals have the final say, that acts as the centralized source
-of trust that reduces the potential for abuse.
+tracing app.
+However, both of these should be unlikely, because uploads will require the
+sign-off of a doctor or public health authority.
+
+This is why I'm not so
+optimistic about a decentralized alternative. To prevent abuse, you want a
+central authority. (Or blockchains, but good luck convincing people to use
+*that*.)
+The natural choice for a central authority is the healthcare system.
+You'll need hospitals to understand your contact tracing app, and that's
+easiest if there's a single app, rather than several...and now we're back
+where we started.
 
 
 Summary
@@ -323,9 +333,15 @@ to what it prevents. And so far, they seem to be operating in good faith,
 with a public specification of what they plan to implement, which closely matches
 the academic consensus.
 
-If this *doesn't* happen - if it doesn't get enough adoption, if people are too
+If contact tracing *doesn't* happen - if it doesn't get enough adoption, if
+people are too
 scared to use it, or something else, then given the current US response,
-I could see the pessimistic forecasts of the UCL report coming true: cycles
-of lockdown on, lockdown off, until a vaccine is ready. And I will be
-really, really, really mad if that happens, because to me, it would have
+I could see the worst forecasts of the Imperial College London report
+coming true: cycles of lockdown on, lockdown off, until a vaccine is ready.
+Their models are pessimistic, compared to other papers, but it could happen.
+And I will be
+really, really, really mad if it does, because it would have
 been entirely preventable.
+
+*I originally posted this essay on Facebook, and got a lot of good feedback.
+Thanks to the six people who commented on points I missed.*
