@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Reinforcement Learning Potpourri"
-date:   2020-05-05 22:53:00 -0700
+date:   2020-05-07 02:02:00 -0700
 ---
 
 I've fallen behind on RL literature from the past few months. So, I've
