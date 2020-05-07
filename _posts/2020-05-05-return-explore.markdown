@@ -64,7 +64,7 @@ learning goal-conditioned policies.
 Data Augmentation
 ------------------------------------------------------------------
 
-The new hotness for RL is data augmentation. Three papers came out on arXiv in the
+The new hotness in RL is data augmentation. Three papers came out on arXiv in the
 past week: [Constrastive Unsupervised Reinforcement Learning (CURL)](https://arxiv.org/abs/2004.04136), from Srinivas and Laskin et al, [Image Augmentation is All You Need (DrQ)](https://arxiv.org/abs/2004.13649) from Kostrikov and Yarats et al, and
 [Reinforcement Learning with Augmented Data (RAD)](https://arxiv.org/abs/2004.14990) from Laskin and Lee et al.
 It also made it to [VentureBeat](https://venturebeat.com/2020/05/02/uc-berkeley-researchers-open-source-rad-to-improve-any-reinforcement-learning-algorithm/)
@@ -98,16 +98,18 @@ Now, are these results surprising? Uh, kind of? It isn't surprising because
 data augmentation isn't new.
 Specifically doing random cropping isn't
 new either - the [QT-Opt](https://ai.googleblog.com/2018/06/scalable-deep-reinforcement-learning.html) paper
-I worked on always used random cropping in its RL. Other groups have used
+I worked on 2 years ago used random cropping. Other groups have used
 data augmentation as well. The surprising part is the effect size.
 These papers are the first to carefully design
-an experimental setup that lets them demonstrate just how much gain
-data augmentation gives.
+an experimental setup that lets them isolate and measure the gains from
+data augmentation.
 
 It's the sort of paper that makes you
-feel dumb you didn't write it yourself. Especially because I've even run very
-similar data augmentation ablations before, just never on the standard RL
-benchmarks.
+feel dumb you didn't write it yourself. I've run very
+similar data augmentation ablations before, with results that were
+consistent to theirs, but I never did it on standard RL benchmarks and I never
+dug into it more. If I had, I probably could have written this paper. Ah well,
+live and learn.
 
 I'm very big on data augmentation. It just seems like the obvious thing to do.
 You can either view it as multiplying the size of your dataset by a constant factor,
@@ -151,8 +153,7 @@ Offline Reinforcement Learning
 ----------------------------------------------------------------------------
 
 Some colleagues from Google Brain and UC Berkeley have put
-a tutorial for [Offline Reinforcement Learning](https://arxiv.org/abs/2005.01643)
-on arXiv.
+a tutorial for [Offline Reinforcement Learning on arXiv](https://arxiv.org/abs/2005.01643).
 
 By offline reinforcement learning, they mean reinforcement learning from a fixed
 dataset of episodes from an environment, without doing any additional
