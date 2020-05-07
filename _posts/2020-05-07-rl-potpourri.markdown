@@ -44,17 +44,19 @@ policy to return to previous states, instead of following a memorized trajectory
 which lets you hand stochastic environments at training time. However, they
 left it as future work.
 
-Well, now they have results. They're quite nice, but it appears that it
+Well, now they have results. It worked, but it
 was only tested on Montezuma's Revenge with domain-specific features. I
 view papers through survival bias: if there's an experiment that's
 natural in the paper's context, but isn't in the paper, then it probably didn't work,
 because if it worked, it'd be in the paper.
 So for now, I'm assuming it didn't beat SOTA with domain agnostic features.
 
-My final verdict is that this paper is an even stronger case that good exploration
-can be reduced to learning to quickly return to states you've visited before.
-It continues to be a good argument that detachment and derailment are
-important concepts that pure intrinsic motivation doesn't always handle.
+My final verdict is that the updated paper improved its strengths, but only
+mildly improved its weaknesses. The paper is an even stronger case that good
+exploration
+can be reduced to learning to quickly return to states you've visited before,
+and exploration algorithms without this capability have failure modes that
+First Return Then Explore fixes.
 Learning that return policy, however, is still an open problem for general
 domains.
 The reduction is valuable, and I hope it encourages more work on efficiently
