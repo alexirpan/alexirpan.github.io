@@ -124,7 +124,7 @@ nuclear reactor design.
 
 Now we have Fauci, who is generally popular
 ([56% trust rating as of May 2](https://today.yougov.com/topics/politics/articles-reports/2020/05/12/americans-trust-dr-anthony-fauci)),
-and one of the figureheads of the Coronavirus Task Force. The GCDC playbook for
+and one of the figureheads of the Coronavirus Task Force. The CDC playbook for
 communication mentions the importance of having a single lead spokesperson
 who's a scientist, not a politician.
 Having a single spokesperson increases trust because of familiarity, and making
