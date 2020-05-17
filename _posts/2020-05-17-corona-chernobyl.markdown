@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Our Generation's Chernobyl"
-date:   2020-05-07 02:02:00 -0700
+date:   2020-05-17 15:06:00 -0700
 ---
 
 *This post has several spoilers for the HBO mini-series Chernobyl.
