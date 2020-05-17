@@ -17,8 +17,8 @@ in authoritarian countries, and both have made scientists the heroes and
 trusted officials of the day.
 
 Mechanically, they are very different. Chernobyl is about an exploded
-reactor pouring out a fixed amount of radiation per second, and COVID-19
-is about a living virus whose spread depends on several other factors. But
+reactor pouring out radioactive fallout, while COVID-19
+is about a living virus. But
 the response has felt similar, and that's what's making me disappointed.
 
 The *Chernobyl* mini-series on HBO is really well made, and although it
@@ -29,27 +29,34 @@ pretty stark parallels.
 Everything is Normal
 ----------------------------------------------------------------------------
 
-There's a podcast about creating the Chernobyl mini-series, Craig Mazin,
-the writer and executive producer of Chernobyl, talks about the show,
-scenes that got cut, and discusses what was real, and what wasn't.
+Craig Mazin, the writer and executive producer of Chernobyl, did a podcast
+about creating the mini-series, where he talks about the show, deleted scenes,
+and discusses what was real and what wasn't. In episode 2, he mentions one
+streak of bad luck that didn't make it to the show.
 
-The Chernobyl accident happened on April 26. In a streak of bad luck, May 1
-was International Workers' Day, a big holiday for the Soviet Union. By the
-time of May 1, party officials were beginning to understand the scope of the problem.
-Episode 2 of the podcast briefly mentions that city officials tried to cancel
-holiday celebrations, to reduce exposure to radioactive dust carried by the
-wind. They failed, because according to the state, Everything Was Normal.
+The Chernobyl accident happened on April 26. Five days later was May 1,
+International Workers' Day. This was a big holiday for the Soviet Union, and
+by May 1 party officials were understanding the scope of Chernobyl. They
+wanted to cancel holiday celebrations, to reduce exposure to radioactive dust.
+They failed, because the Kremlin told them that Everything Was Normal. Why
+would you take precautions when nothing was wrong?
 
-https://www.youtube.com/watch?v=faQs2_hjNZk
-
-22:20
+<p class="centered">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/faQs2_hjNZk?start=1332" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 > We're talking about parades. In Kiev, in Minsk, there were party officials
-who, it seems to me, begged, BEGGED, to cancel the parade. They were told that
-not only would they not cancel the parade, they would be walking in it too. And
-they did.
+> who, it honestly seems to me, begged, BEGGED, to cancel the parade. They were told that
+> not only would they not cancel the parade, you'll be walking in it too. And
+> they did.
 
-Everything's fine - until it isn't.
+(starts at 22:10)
+{: .centered }
+
+Everything's fine - until it isn't. Craig emphasizes that people in the
+Soviet Union bureaucracy weren't monsters. They knew it was dangerous to
+be outside, but were overruled by those who cared about reputation more
+than safety.
 
 
 Nevermind, This Isn't Normal
@@ -57,39 +64,49 @@ Nevermind, This Isn't Normal
 
 Plenty of Soviet disasters got covered up and were only declassified long after
 they occured. Chernobyl couldn't be kept a secret, because the wind carried
-radioactive particles to Sweden and other European countries, who detected it
-on their Geigar counters. After that, it couldn't be kept a secret.
+radioactive particles to Sweden and other European countries. After that,
+it couldn't be kept a secret.
 
-For people close to the
-reactor, they were exposed to so many radioactive particles that they began
-giving off radiation themselves, from particles that clung to their skin and
-clothing.
+Radioactive fallout is not the same as a virus. A single case of the virus
+can multiply and turn into a million cases. Radiation does not replicate this
+way. Chernobyl is special because people close to the reactor were exposed to
+so much radiation that they ended up giving off radiation themselves.
+The firefighter uniforms from that day are [still in the basement of the
+abandoned Pripyat hospital](http://www.chernobylgallery.com/galleries/pripyat-hospital/), too radioactive to approach without the
+right protective gear.
+
+Nearby countries told their citizens to avoid eating wild game and
+vegetables, and to follow basic decontamination measures.
 
 > There's radioactive dust, she said; close all the windows and plug all the cracks. Later, my anxiety grew when I saw her husband Andrei taking off his clothes and putting them in a plastic bag before entering his apartment.
 
-https://phys.org/news/2016-04-years-chernobyl.html
+([From Phys.org](https://phys.org/news/2016-04-years-chernobyl.html))
+{: .centered }
 
-The crucial difference between radiation and COVID-19 is that radiation
-doesn't spread in the same way - it isn't possible for 1 case to grow
-into 1 million cases.
+As for the Soviet Union, to their credit, they did take drastic action once it
+was clear they had to. Thanks to an authoritarian government and a culture
+that pushed the collective over the individual, the evacuation and cleanup
+was fairly orderly.
 
-Once it was clear the Soviet Union needed to take drastic action, they were
-able to do so quickly, thanks to an authoritarian government and a culture
-that pushed the collective over the individual.
-
-
-29:00
+<p class="centered">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/faQs2_hjNZk?start=1332" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 > So they finally evacuate Pripyat. One thing I was struck [by] was how
-orderly it was. 50,000 people are being evacuated from this town, and I could
-only think of what that would be like if they tried to do that to a similar
-town in America. [...] Everybody just said "whatever" and climbed up onto
-the [evacuation] buses.
+> orderly it was. I was like, oh you're evacuting an entire town 50,000 people, and I could
+> only think of what that would be like if they tried to do that to a similar
+> town in America. People would be yelling, people would be complaining, people
+> would be demanding they were allowed to bring that [...] Everybody just said "alright" and climbed up onto
+> the [evacuation] buses.
 >
-> The citizenry, by all accounts except one, was incredibly orderly. The police
-said "you're coming with us. You're coming on the bus. You can take one suitcase
-and no pets, and you'll be back in a few days." And everybody just said "okay, I'll
-get on the bus." [...] And they never, ever, ever came back [to Pripyat].
+> The citizenry, by all accounts except one, was incredibly orderly. Again,
+> reflective of the society in which they lived and grew up. The police
+> said, "You're coming with us. You're coming on the bus. You can take one suitcase
+> and no pets, and you'll be back in a few days." And everybody just said "okay, I'll
+> get on the bus." [...] And they never, ever, ever came back [to Pripyat].
+
+(starts at 28:55)
+{: .centered }
 
 
 Scientists Become Heroes
@@ -105,40 +122,48 @@ in Chernobyl.
 
 Well, now we have Fauci, who is generally popular
 ([56% trust rating as of May 2](https://today.yougov.com/topics/politics/articles-reports/2020/05/12/americans-trust-dr-anthony-fauci)),
-and one of the figureheads of the Coronavirus Task Force. CDC playbooks for
-epidemiology mention that it's important to have a single lead spokesperson,
-and to have that spokesperson be a scientist. It's bad if public health becomes
-political, because half the country will be more likely to defy public health
-for a political point. Based on the partisan divide in Fauci's trust based
-on party, it's already too late for the United States. See [this New Yorker article](https://www.newyorker.com/magazine/2020/05/04/seattles-leaders-let-scientists-take-the-lead-new-yorks-did-not)
+and one of the figureheads of the Coronavirus Task Force. The CDC playbook for
+communication mentions the importance of having a single lead spokesperson
+who's a scientist, not a politician.
+Having a single spokesperson increases trust because of familiarity, and making
+that person a scientist reduces risk of politicizing the disease. If half the
+country trusts the CDC less because of a culture war, it's a disaster
+for public health.
+See [this New Yorker article](https://www.newyorker.com/magazine/2020/05/04/seattles-leaders-let-scientists-take-the-lead-new-yorks-did-not)
 for more.
+
+According to the YouGov study above, Fauci's 56% trust rating is split 68%
+among Democrats and 48% among Republicans. Looks like it's already too late
+for the United States.
 
 
 Reality Doesn't Care About Politics
 ------------------------------------------------------------------------------
 
-Although the Chernobyl mini-series is, on its surface, about the events of Chernobyl,
-the series is more about how people *responded* to Chernobyl. That's the aspect
+The Chernobyl mini-series is ostensibly about the events of Chernobyl, but it's
+really more about how people *responded* to Chernobyl. That's the aspect
 I was reminded of first, and the reason I started writing this post.
 
 Chernobyl and COVID-19 aren't really about people. Sure, people are part of
 both, but their fundamentals
 are grounded in physical reality: infectious disesases for COVID-19, and
-radiation for Chernobyl. A worryingly large number of decision makers aren't
-respecting reality.
+radiation for Chernobyl. It's like the classic Philip K. Dick quote: "Reality
+is that which, when you stop believing in it, doesn't go away." A worryingly
+large number of decision makers aren't respecting reality.
 
-I'm not sure of the historical accuracy of this series, but in the mini-series,
-during Episode 3, Legasov and Scherbina are arguing over the size of an evacuation
+I'm not sure of the historical accuracy of this moment, but in Episode 3
+of the mini-series, "Open Wide, O Earth",
+Legasov and Scherbina are arguing over the size of an evacuation
 zone. Legasov learns the evacuation zone has been set to 30 km, and wants it to
-be larger. He is overruled, because someone said so.
+be much, much larger. He is overruled.
 
 > Legasov: "How did this happen? Who gave them this idea?"
 >
 > Scherbina: "Are you suggesting I did?"
 >
 > Legasov: "Well someone decided the evacuation zone should be 30 km, when we
-know-- (points to map) Here! Cesium-137 in Gomel District. Two HUNDRED kilometers
-away!"
+> know-- (points to map) Here! Cesium-137 in Gomel District. Two HUNDRED kilometers
+> away!"
 >
 > Scherbina: "It was decided."
 >
@@ -151,40 +176,45 @@ away!"
 > that will cost who knows how many lives is made by some apparatchik? Some career
 > Party man?"
 
-https://johnaugust.com/wp-content/uploads/2019/06/Chernobyl_Episode-3Open-Wide-O-Earth.pdf
+([screenplay linked here](https://johnaugust.com/wp-content/uploads/2019/06/Chernobyl_Episode-3Open-Wide-O-Earth.pdf))
+{: .centered }
 
-
+This is worth emphasizing: **no one is forced to do things that make sense.**
 To be a politician, the only thing you have to understand is people. Who they
 are, how they think, what they believe, and how to convince them to support you.
 That's certainly not easy, it requires some shrewdness,
 but there's no particular reason to expect politicians to be good at anything
-*besides* navigating structures of power. And in particular, they don't have to
+*besides* navigating structures of power. They don't have to
 be well-informed about anything, unless it's politically expedient to be
 well-informed.
 Unfortunately, that approach is exactly what *doesn't* work for the coronavirus.
 
 If the coronavirus was a people problem, maybe you could use charm and wit to
-defuse the situation. But it isn't. You can't talk to the coronavirus to
+defuse the situation. But you can't.
+You can't talk to the coronavirus to
 understand what it does and doesn't want. You can't work the room to get the
 disease to spread slower. You can't cut a deal with coronavirus to make it
 kill fewer people. No, it's there, it exists, and you have to deal with it -
-or not.
+or not. This has been repeated elsewhere, but all the instincts for
+political leverage are wrong at the start of a pandemic.
 
-What you hope, is that you get a politician that gets
-it, and they use their experience in navigating deals to get what matters to
+What you hope is that you get a politician that gets
+it, who's willing to be a bit of an ass, and they use their experience in
+navigating deals to get what matters to
 the people who need it. By the end of the series, Scherbina is that man.
+
+<p class="centered">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BsWzoQw7vUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 > Scherbina: I'm an inconsequential man, Valery. I hoped one day I would matter,
 but I didn't. I just stood next to people who did.
 >
 > Legasov: There are other scientists like me. Any one of them could have done what
-I did. You-- everything we asked for: men, material, lunar rovers. Who else
-could have done these things? They heard me, but they listened to you. [...]
-Of all the ministers, and all the deputies, the entire congregation of obedient
-fools, they mistakenly sent the one good man. For God's sake Boris, you were the one who mattered most.
-
-https://www.youtube.com/watch?v=BsWzoQw7vUE
-
+> I did. You-- everything we asked for: men, material, lunar rovers. Who else
+> could have done these things? They heard me, but they listened to you. [...]
+> Of all the ministers, and all the deputies, the entire congregation of obedient
+> fools, they mistakenly sent the one good man. For God's sake Boris, you were the one who mattered most.
 
 There's this phenomenon, where people in politics and PR will repeatedly say
 something that isn't true, and if they do this enough, they'll get people
