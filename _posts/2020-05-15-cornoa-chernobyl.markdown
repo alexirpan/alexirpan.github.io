@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TODO"
+title:  "Our Generation's Chernobyl"
 date:   2020-05-07 02:02:00 -0700
 ---
 
@@ -10,8 +10,7 @@ want to skip this post if you haven't seen it before.*
 
 Coronavirus is the new Chernobyl.
 Both
-are crises caused by something we can't see with the naked eye. Both
-spread invisibly, which is incredible for spreading anxiety.
+are crises caused by something we can't see with the naked eye.
 Both started
 in authoritarian countries, and both have made scientists the heroes and
 trusted officials of the day.
@@ -29,17 +28,18 @@ pretty stark parallels.
 Everything is Normal
 ----------------------------------------------------------------------------
 
-Craig Mazin, the writer and executive producer of Chernobyl, did a podcast
-about creating the mini-series, where he talks about the show, deleted scenes,
-and discusses what was real and what wasn't. In episode 2, he mentions one
+Craig Mazin, the writer and executive producer of *Chernobyl*, did a podcast
+about the series, where he talks about the show and the historical event.
+In episode 2, he mentions one
 streak of bad luck that didn't make it to the show.
 
 The Chernobyl accident happened on April 26. Five days later was May 1,
 International Workers' Day. This was a big holiday for the Soviet Union, and
-by May 1 party officials were understanding the scope of Chernobyl. They
+in the days before May 1, party officials understood the scope of Chernobyl's
+danger. They
 wanted to cancel holiday celebrations, to reduce exposure to radioactive dust.
 They failed, because the Kremlin told them that Everything Was Normal. Why
-would you take precautions when nothing was wrong?
+would you take precautions when there's nothing to worry about?
 
 <p class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/faQs2_hjNZk?start=1332" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -59,11 +59,11 @@ be outside, but were overruled by those who cared about reputation more
 than safety.
 
 
-Nevermind, This Isn't Normal
+Never Mind, This Isn't Normal
 ----------------------------------------------------------------------------
 
 Plenty of Soviet disasters got covered up and were only declassified long after
-they occured. Chernobyl couldn't be kept a secret, because the wind carried
+they occurred. Chernobyl couldn't be kept a secret, because the wind carried
 radioactive particles to Sweden and other European countries. After that,
 it couldn't be kept a secret.
 
@@ -93,7 +93,7 @@ was fairly orderly.
 </p>
 
 > So they finally evacuate Pripyat. One thing I was struck [by] was how
-> orderly it was. I was like, oh you're evacuting an entire town 50,000 people, and I could
+> orderly it was. I was like, oh you're evacuating an entire town 50,000 people, and I could
 > only think of what that would be like if they tried to do that to a similar
 > town in America. People would be yelling, people would be complaining, people
 > would be demanding they were allowed to bring that [...] Everybody just said "alright" and climbed up onto
@@ -102,8 +102,8 @@ was fairly orderly.
 > The citizenry, by all accounts except one, was incredibly orderly. Again,
 > reflective of the society in which they lived and grew up. The police
 > said, "You're coming with us. You're coming on the bus. You can take one suitcase
-> and no pets, and you'll be back in a few days." And everybody just said "okay, I'll
-> get on the bus." [...] And they never, ever, ever came back [to Pripyat].
+> and no pets, and you'll be back in a few days." And everybody just said, "Okay, I'll
+> get on the bus." [...] And they never, ever, ever came back.
 
 (starts at 28:55)
 {: .centered }
@@ -114,13 +114,15 @@ Scientists Become Heroes
 
 Chernobyl made everyone care a lot more about nuclear physicists. Coronavirus
 is making everyone care a lot more about epidemiologists. Valery Legasov is
-the protoganist of the Chernobyl mini-series, and in real life he was the chief
+the protagonist of the Chernobyl mini-series, and in real life he was the chief
 of the commission investigating Chernobyl. For the West, he became one of the
 faces of the Soviet response, since he presented the Soviet report at a meeting
 of the International Atomic Energy Agency in Vienna, detailing what happened
-in Chernobyl.
+in Chernobyl. He was well-respected for acknowledging failures in the Soviet
+response, although his public testimony covered up design flaws in Soviet
+nuclear reactor design.
 
-Well, now we have Fauci, who is generally popular
+Now we have Fauci, who is generally popular
 ([56% trust rating as of May 2](https://today.yougov.com/topics/politics/articles-reports/2020/05/12/americans-trust-dr-anthony-fauci)),
 and one of the figureheads of the Coronavirus Task Force. The GCDC playbook for
 communication mentions the importance of having a single lead spokesperson
@@ -133,7 +135,7 @@ See [this New Yorker article](https://www.newyorker.com/magazine/2020/05/04/seat
 for more.
 
 According to the YouGov study above, Fauci's 56% trust rating is split 68%
-among Democrats and 48% among Republicans. Looks like it's already too late
+among Democrats and 48% among Republicans. It is already too late
 for the United States.
 
 
@@ -146,7 +148,7 @@ I was reminded of first, and the reason I started writing this post.
 
 Chernobyl and COVID-19 aren't really about people. Sure, people are part of
 both, but their fundamentals
-are grounded in physical reality: infectious disesases for COVID-19, and
+are grounded in physical reality: infectious diseases for COVID-19, and
 radiation for Chernobyl. It's like the classic Philip K. Dick quote: "Reality
 is that which, when you stop believing in it, doesn't go away." A worryingly
 large number of decision makers aren't respecting reality.
@@ -182,8 +184,9 @@ be much, much larger. He is overruled.
 This is worth emphasizing: **no one is forced to do things that make sense.**
 To be a politician, the only thing you have to understand is people. Who they
 are, how they think, what they believe, and how to convince them to support you.
-That's certainly not easy, it requires some shrewdness,
-but there's no particular reason to expect politicians to be good at anything
+That's certainly not easy, it requires you to be shrewd and to have a good
+read of people.
+But there's no particular reason to expect politicians to be good at anything
 *besides* navigating structures of power. They don't have to
 be well-informed about anything, unless it's politically expedient to be
 well-informed.
@@ -195,11 +198,12 @@ You can't talk to the coronavirus to
 understand what it does and doesn't want. You can't work the room to get the
 disease to spread slower. You can't cut a deal with coronavirus to make it
 kill fewer people. No, it's there, it exists, and you have to deal with it -
-or not. This has been repeated elsewhere, but all the instincts for
-political leverage are wrong at the start of a pandemic.
+or not. This has been repeated elsewhere, but all political instincts are
+wrong at the start of a pandemic, and you pay a price if those instincts aren't
+overruled.
 
-What you hope is that you get a politician that gets
-it, who's willing to be a bit of an ass, and they use their experience in
+You hope you get a politician that understands the problem, has the
+grit to take unfavorable actions, and they use their experience in
 navigating deals to get what matters to
 the people who need it. By the end of the series, Scherbina is that man.
 
@@ -218,14 +222,14 @@ the people who need it. By the end of the series, Scherbina is that man.
 
 There's this phenomenon, where people in politics and PR will repeat something
 that isn't true, and if they do so often enough, people will believe it.
-They'll even start using motivated reasoning to create
+Those people will even start using motivated reasoning to create
 their own justification for what you're saying. This works for subjects
-that are complicated enough to have ambiguity in their casuality, but it doesn't
+that are complicated enough to have ambiguity in their causality, but it doesn't
 work very well for the narrow slice of reality that COVID-19 occupies.
 
-In Episode 4, "For the Happiness of All Mankind", the Soviet Union explores
-using robots to clear debris off the reactor roof. Radiation damages electronics.
-The robots they had from the Space Race could withstand some radiation, but not
+In episode 4, "For the Happiness of All Mankind", the Soviet Union explores
+using robots to clear debris off the Chernobyl reactor roof. Radiation damages electronics.
+The Soviet robots they had from the Space Race could withstand some radiation, but not
 the highest levels of radiation detected on the roof.
 
 Through tense off-screen negotiations, they get a robot from West Germany which
@@ -245,18 +249,19 @@ immediately. Scherbina soon learns why.
 Think about this for a second. Someone high up in the government decided to give
 a propaganda number, instead of a real one. That filtered all the way down the
 bureaucracy, down to the people figuring out how to borrow a robot from the West.
-That one lie, from someone who didn't care about accuracy, ended up wasting the
-time of the negotiators, of the robot constructors from West Germany, of the
-technicians who operated it - all of it, a waste.
+That one lie, from someone who cared more about reputation than accuracy, wasted
+the time
+of the negotiators, of the robot constructors from West Germany, of the
+technicians who operated it - all of it, gone.
 
 I cannot think of a better argument for why you should care who your boss is,
 and who your elected officials are. If technology is a multiplier of both good
 and bad, then power is too. What does it say when [both Republican and Democrat
-governors decided to hide details of PPE and test shipments from the
+governors hid flight details of testing and PPE shipments from the
 federal government](https://thehill.com/homenews/state-watch/495519-maryland-governor-says-coronavirus-tests-acquired-from-south-korea-under),
 to avoid confiscation? It's just absurd.
 
-The central theme of the Chernobyl mini-series is truth, and the lies surrounding it.
+The central theme of the *Chernobyl* mini-series is truth, and the lies surrounding it.
 This was why the showrunners tried to stay historically accurate. They thought
 it would be cheap to send a message about truth that was wrapped in artistic lies,
 and reality was dramatic enough. When the inevitable COVID-19 documentaries arrive,
