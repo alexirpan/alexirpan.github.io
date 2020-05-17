@@ -122,7 +122,7 @@ in Chernobyl.
 
 Well, now we have Fauci, who is generally popular
 ([56% trust rating as of May 2](https://today.yougov.com/topics/politics/articles-reports/2020/05/12/americans-trust-dr-anthony-fauci)),
-and one of the figureheads of the Coronavirus Task Force. The CDC playbook for
+and one of the figureheads of the Coronavirus Task Force. The GCDC playbook for
 communication mentions the importance of having a single lead spokesperson
 who's a scientist, not a politician.
 Having a single spokesperson increases trust because of familiarity, and making
@@ -208,7 +208,7 @@ the people who need it. By the end of the series, Scherbina is that man.
 </p>
 
 > Scherbina: I'm an inconsequential man, Valery. I hoped one day I would matter,
-but I didn't. I just stood next to people who did.
+> but I didn't. I just stood next to people who did.
 >
 > Legasov: There are other scientists like me. Any one of them could have done what
 > I did. You-- everything we asked for: men, material, lunar rovers. Who else
@@ -216,27 +216,48 @@ but I didn't. I just stood next to people who did.
 > Of all the ministers, and all the deputies, the entire congregation of obedient
 > fools, they mistakenly sent the one good man. For God's sake Boris, you were the one who mattered most.
 
-There's this phenomenon, where people in politics and PR will repeatedly say
-something that isn't true, and if they do this enough, they'll get people
-to believe the lie. They'll even start using motivated reasoning to create
-their own justification for what you're saying. But that doesn't make it true.
+There's this phenomenon, where people in politics and PR will repeat something
+that isn't true, and if they do so often enough, people will believe it.
+They'll even start using motivated reasoning to create
+their own justification for what you're saying. This works for subjects
+that are complicated enough to have ambiguity in their casuality, but it doesn't
+work very well for the narrow slice of reality that COVID-19 occupies.
 
+In Episode 4, "For the Happiness of All Mankind", the Soviet Union explores
+using robots to clear debris off the reactor roof. Radiation damages electronics.
+The robots they had from the Space Race could withstand some radiation, but not
+the highest levels of radiation detected on the roof.
 
-You *can* say things
-that aren't true, and get people to believe those things, and for subjects
-like the economy, it's complicated enough that motivated reasoning can create
-a reasonable argument for your soundbyte. But motivated reasoning stops working
-when you're talking about a narrow enough slice of well-studied reality -
-like the R0 number of COVID-19. At this point no politician is arguing it is
-less contagious than the flu, or less deadly - they're just arguing that it
-isn't deadly enough to care.
+Through tense off-screen negotiations, they get a robot from West Germany which
+can withstand the reported numbers. They try it out, and the robot fails
+immediately. Scherbina soon learns why.
 
-The problem is that
+<p class="centered">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WLxGxT9ImJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
-https://www.youtube.com/watch?v=WLxGxT9ImJE
+> Scherbina: The official position of the State is that a global nuclear
+> catastrophe is not
+> possible in the Soviet Union. They told the Germans that the highest detected level
+> of radiation was 2000 roentgen. They gave them the propaganda number. That robot
+> was never going to work.
 
+Think about this for a second. Someone high up in the government decided to give
+a propaganda number, instead of a real one. That filtered all the way down the
+bureaucracy, down to the people figuring out how to borrow a robot from the West.
+That one lie, from someone who didn't care about accuracy, ended up wasting the
+time of the negotiators, of the robot constructors from West Germany, of the
+technicians who operated it - all of it, a waste.
 
-> The official position of the State is that a global nuclear catastrpohe is not
-possible int he Soviet Union. They told the Germans that the highest detected level
-of radiation was 2000 roentgen. They gave them the propaganda number. That robot
-was never going to work.
+I cannot think of a better argument for why you should care who your boss is,
+and who your elected officials are. If technology is a multiplier of both good
+and bad, then power is too. What does it say when [both Republican and Democrat
+governors decided to hide details of PPE and test shipments from the
+federal government](https://thehill.com/homenews/state-watch/495519-maryland-governor-says-coronavirus-tests-acquired-from-south-korea-under),
+to avoid confiscation? It's just absurd.
+
+The central theme of the Chernobyl mini-series is truth, and the lies surrounding it.
+This was why the showrunners tried to stay historically accurate. They thought
+it would be cheap to send a message about truth that was wrapped in artistic lies,
+and reality was dramatic enough. When the inevitable COVID-19 documentaries arrive,
+I hope they make the same decision.
