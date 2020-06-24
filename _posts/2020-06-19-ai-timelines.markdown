@@ -11,4 +11,10 @@ In around 2015, after much prodding, I stated these predictions for AGI
 * 90% by 20??
 About
 
-This puts me on pessimistic end among my friend group.
+This puts me on pessimistic end for my friend group. Not as pessimistamong my friend group.
+
+New predictions
+
+* 10% by 2030
+* 50% by 2045
+* 90% by 2080
