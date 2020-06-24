@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "So Hey, That Open AI LP Thing"
-date:   2020-06-23 15:06:00 -0700
+date:   2020-06-24 02:18:00 -0700
 ---
 
 *I originally wrote this post March 12, 2019, the day after [OpenAI announced they were creating a "capped-profit" company](https://openai.com/blog/openai-lp/).
