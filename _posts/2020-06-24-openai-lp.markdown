@@ -1,0 +1,62 @@
+---
+layout: post
+title:  "So Hey, That Open AI LP Thing"
+date:   2020-06-24 02:18:00 -0700
+---
+
+*I originally wrote this post March 12, 2019, the day after [OpenAI announced they were creating a "capped-profit" company](https://openai.com/blog/openai-lp/).
+I decided not to share it very widely, because it
+was a touchy subject, lots of people were yelling, and I did not want to get
+involved in the cross-fire.*
+
+*I remembered that post recently, and after a re-read I still agreed with most
+of what I wrote. I feel it's worth having it public somewhere, even if no one
+cares about the Open AI LP debate anymore. Here's the original post, with some
+editing. For context, this was written a month after GPT-2, before the Rubik's
+Cube result, and before the Microsoft deal.*
+
+\* \* \*
+{: .centered }
+
+Okay, so OpenAI announced that they were legally restructuring from a nonprofit into a “capped-profit” company. I am not a lawyer, and I’m especially not a lawyer familiar with business law, but here is my understanding. OpenAI LP is a for-profit company. OpenAI Nonprofit is the nonprofit side. The OpenAI LP is managed by the nonprofit’s Board of Directors. Members of the nonprofit board are allowed to own stakes in OpenAI LP, but only a minority of the Board of Directors is allowed to do so. Investors and employees sign agreements that following OpenAI’s principles takes priority over profit. Investors are capped at receiving back 100x what they invest. This is on the order of “returns from investing early in a really good startup, but not as much as investing early in a stupidly amazing startup”.
+
+Company is now roughly divided as follows: the for-profit side employs the robotics, DotA 2, language, safety, and policy teams. The nonprofit side employs the educational programs and policy initiatives, although I don’t understand what “policy initiatives” means here, if the policy team is under OpenAI LP.
+
+Why is this happening? The given argument is that recent results suggest that new AI systems and any approaches that could lead to AGI will need lots of compute, and also need to attract lots of talent, and the investment required is going to be much larger than what is already dedicated to the company, so part of the company needs to become for-profit to attract investors to front the required funds. And if they succeed, they’ll make way more than 100x return, by orders of magnitude.
+
+Rather predictably, reactions have ranged from “yeah makes sense” to “wow WTF this is bullshit.” My reaction is roughly at the “ehhhhhhhhh, okay” side of things. I am a big fan of [Buffy Speak](https://tvtropes.org/pmwiki/pmwiki.php/Main/BuffySpeak), but at some point you gotta stop using Buffy Speak and gotta start explaining stuff using actual words.
+
+The “wow WTF this is bullshit” side seems to revolve around feelings of betrayal that OpenAI the nonprofit would turn into a for-profit company. The criticism feels like, "OpenAI was supposed to not be beholden to profit, and would stand above the incentives that for-profit companies are under. It’s good for nonprofit AI companies to exist, and now there is one fewer." There are enough for-profit AI startups and AI consulting gigs out there. If you saw the nonprofit nature of OpenAI as a core principle of its existence, then turning into a for-profit feels disingenuous. What distinguishes OpenAI from every other AI startup trying to make a quick buck?
+Moreover, given one restructuring from nonprofit to capped-profit, what systems are in place to prevent further slides to for-profitness? How do we know the 100x figure won’t change to 1000x later on? Are we guaranteed that the minority of the board with stakes in the for-profit OpenAI LP will not be able to leverage their wealth to take over the board’s decision making? Culture doesn’t die overnight. It’s something that grows organically and bleeds organically. What if this is the first step towards OpenAI turning into something it shouldn’t be?
+
+Meanwhile, the “yeah makes sense” crowd is generally (but not entirely) a group that believes AGI should be considered a serious possibility in the near term (where serious is something like “at least 5%”), and thinks that turning into a for-profit company is a necessary evil to raise sufficient capital to make sure OpenAI has a credible chance of creating AGI and having a seat at the table of any policy decisions.
+Opinions on *that* argument are highly correlated with how much you think people should care about AI safety, and now we’re in that minefield.
+
+My impression is what OpenAI is doing is consistent with the belief that AGI could happen sometime in the near-term, by combining lots of compute with a few (but not a lot) of insights into learning. Under that belief, it makes sense that they need more money for new hardware and talent. It makes sense to structure things such that investors have a reason to give them money. Under that belief of plausible near-term AGI, these are all necessary things OpenAI must do to continue to have any influence over the trajectory of machine learning, and then all the other stuff with the capped profit and nonprofit board and so on are about trying to minimize risk of losing their original mission statement.
+
+And honestly, I don’t expect anything different from OpenAI. Look, when your company gets initial investment from Elon Musk the Futurist and Sam Altman the head of Y Combinator, and your founding statement is “ensuring AGI helps humanity”, it’s going to primarily attract people who think AGI is credible enough to merit decisive action. So talented people who believe in shorter AGI timelines move towards OpenAI. This makes it more likely OpenAI does things consistent with belief in shorter timelines, which attracts people with short AI timelines and pushes away people with longer timelines, and so the feedback loop begins. It’s not a very *strong* feedback loop, but it's there. I remember talking to someone about why only OpenAI and DeepMind worked on AI safety, and what I said to them was, “it’s because, under your definition of AI safety, people at OpenAI and DeepMind care about it the most, and so they flock there. But this doesn’t imply no one else cares - it just implies they don’t care enough to drop their current work to join those safety teams.” *(Editing note: not to mention that what "AI safety" means is itself a nebulous concept. For example, I consider [fairness and interpretability](https://www.fatml.org/) as part of AI safety. I know people who'd disagree.)*
+
+Based on what previous and current employees of OpenAI are tweeting about, there was a lot of internal discussion about the restructuring, but everyone who is talking about it is voicing cautious support about the arrangement. Of course, there are obvious sampling biases here.
+
+I can't help but feel like the attacks on OpenAI LP are just an extension of the attacks around GPT-2, that accuse them of building hype narratives for profit. A lot of people were *not happy* with how GPT-2 was handled, and although they'll often say OpenAI does good research, they also dislike that OpenAI has excessive amounts of PR around their work. They'll accuse this PR of overemphasizing the research importance and engaging in media-trolling to drive attention, rather than substance. For them, OpenAI LP is just another dot in an on-going trend of burning research goodwill to funnel money into GPUs. Meanwhile, there are counterarguments in the form of blog posts defending OpenAI, accusing OpenAI's detractors of not taking OpenAI at face value, and lamenting the state of ML discourse.
+
+ML arguments are pretty terrible these days, I'm not going to defend that. But for trust, well...
+The thing about company trust is that other people have no obligation to take OpenAI at face value. Historically, I assume (but do not know for sure) that people who have been in ML for longer have seen lots of companies that were all fluff and no substance, that deliberately misled people about what they could do to continue getting investors and donators to give them money, and in the end, those investors were left with nothing. From the outside, OpenAI’s behavior is not too different from prior snake-oil salesman, so why should we believe anything about what they say?
+
+I can see how this would be incredibly frustrating to people who do take OpenAI's explanation at face value, because if you take OpenAI at face value, everything they're doing seems reasonable. It must feel like the people who don't get it are being incredibly obtuse. This is how you get fanboy blog posts - people build an incorrect model that detractors don't understand OpenAI's argument, and if they just explain it in a blog post, then it'll get more people to care about AGI and improve the world. The key difference, is that it's not that people don't understand OpenAI's argument, it's that they don't think OpenAI believes their own argument. They think it's just a front to hide their true goal of staying financially solvent.
+
+It's all typical mind fallacy.
+One side can't believe someone could genuinely believe AGI is coming soon, and the other side can't believe someone could genuinely believe AGI has no chance of happening in the next 50 years.
+Really, the most upsetting thing for me is that the most invested people have so little self-awareness that they can't see they aren't arguing about what they should be arguing about.
+
+For what it's worth, my timelines are a bit long, 10% chance of AGI by 2045. *(Editing note: I recently updated my forecast to 10% chance by 2040. Maybe I'll explain why in a future post.)* This is long enough that most of AI safety research doesn't feel worth it to me, but I'm willing to entertain the possiblity I'm wrong, and believe that reasonable people can believe AGI will happen within the next 10 years. I also think many of those reasonable people are at OpenAI. I also do wish there was less negativity in ML discourse, and more good-faith arguments, so if you want to write a post explaining why OpenAI is acting reasonably, feel free. It's not actually going to change any minds, but it probably won't hurt.
+
+As for what happens next? I see a few scenarios.
+
+If AGI happens soon, then it will have been good that OpenAI did this, because they would have needed the money. I do trust the company-which-already-has-an-AGI-safety-team to be a good player to have in the game.
+
+If AGI doesn’t happen soon, then a bunch of investors will have given money to OpenAI and not received anything in return, and some interesting AI research will get done. I guess this means other speculative research won’t get investment, and that’s sad. But it could also have meant that those investors didn’t invest in some random Silicon Valley startup that builds a website that generates a lot of money without creating social value. I have trouble seeing OpenAI turning into the next Theranos - if they did, they’d bleed AI talent so fast to every other lab. Sure, the investors will lose money, but really, that'd be their fault for betting on uncertain technology. You're not supposed to feel bad when venture capitalists make a bad investment. They knew the risks. If they didn't, they'd be bad VCs.
+
+As for the nonprofit to profit aspect of things, I don't have many opinions. I understand the concerns there. I also think it's entirely possible for for-profit companies to care about societal implications of their work. Literally all the FAANG machine learning labs have groups for this. I don't see any reason this couldn't include the existential threats people worry about. You can't make money if you're dead. *(Editing note: to clarify - yes, it gets much harder to coordinate when profits get involved, but I don't think it's impossible, and if you think that for-profit companies are fundamentally incapable of handling existential risk, then you have bigger problems to worry about than OpenAI LP.)*
+
+From my perspective, all OpenAI LP means is that more money will go into OpenAI, rather than other AI startups, and although I have some disagreements with how OpenAI does things, I do trust them to do interesting foundational research. TL;DR, "yeah okay, let's see where this goes."
