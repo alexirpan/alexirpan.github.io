@@ -18,7 +18,7 @@ Now that it's 2020, I'm updating my forecast to
 
 Or in short, I'm keeping the 90% line the same, but shifting everything else to
 be faster. I go into my reasons below. I'm not going to claim they're great
-reasons. It's mostly by feel for what seems right.
+reasons, the update is mostly by feel for what seems right.
 
 First of all, the distribution is wider. Thinking back on the past 4 years, I
 believe I was surprised by AI more than I expected to be. Unsupervised learning
@@ -49,7 +49,7 @@ human labelers through Mechanical Turk and similar services. If ML needed
 even larger labelled datasets, then you'd hit a problem where you just need
 insane amounts of human supervision to push performance higher.
 
-Meanwhile, the reinforcement learning success stories did not need human labels.
+The reinforcement learning success stories did not need human labels.
 They could succeed with a reward function stating what success *looked like*,
 without needing to prescribe anything about how to get there. They were very
 cool, but as I worked with it more, I got the impression they were working less
@@ -60,6 +60,27 @@ I expected this to
 get solved by either learning a prior from several previous tasks (which would
 take time to build), or from human demonstrations of the task (which would
 require human labelers again.)
+
+However, now that unsupervised learning is starting to get there, these challenges
+could be going away soon. I'm not sure people appreciate the potential here.
+What we've seen from GPT and AlphaStar is that at sufficient scale, it's okay
+for your data to be messy. You'll have better results if you have the same
+*quantity* of data, with better label accuracy, but because labels are not
+things you are magically given, the size of your labeled dataset is limited
+by the supervision you can pay for.
+
+**Unsupervised learning matters because it lets you use larger datasets,
+including ones that aren't even related to your target task.** Its main flaw
+is that it hasn't worked very well in the past. The old folklore was that
+unsupervised learning was cool, but [paying for labels was faster
+and better](https://twitter.com/RichardSocher/status/840333380130553856).
+Or in other words, the larger dataset didn't outweigh the inefficiency of
+state-of-the-art unsupervised learning.
+
+As this shifts, we may get a lot more "ImageNet moments" in several fields.
+Informally, the "ImageNet moment" is the moment where everyone in computer
+vision moved to using deep learning, and many papers
+If this shifts, 
 
 The difference is that unsupervised learning is actually starting to look very
 good. I'm not sure people appreciate how big a deal this could be.
