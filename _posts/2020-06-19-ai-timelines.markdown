@@ -32,22 +32,102 @@ range, and 50% to 90% in a 20 year range. I think AGI is a long-tailed event,
 there is a real possibility it's never viable. But this is an absurdly skewed
 distribution, so I adjusted it to be less skewed.
 
-That leaves the most important part - the shift to be closer. I've decided
-things are progressing faster than expected.
+But, you aren't here for that. You're here to learn why I shifted everything
+up a few years. Below is the list of things that made me Change My Mind.
 
-1. Unsupervised Learning is Getting Quite Good
 
-In the past few months, there have been a lot of unsupervised learning success
-stories. The OpenAI results, the DeepMind results, the Microsoft results (I think?),
-the Berkeley RL results, the contrastive learning results within our own group.
+1. I Didn't Account for Better Tools
 
-One of the reasons I was hesitant to believe AGI was coming soon was that I
-wasn't sure dataset curation could keep up with dataset sizes. The big success
-stories from 2015 came from large, labeled datasets. Those labels don't just
-pop into existence from on high. They have to come from somewhere: specifically,
-human labelers through Mechanical Turk and similar services. If ML needed
-even larger labelled datasets, then you'd hit a problem where you just need
-insane amounts of human supervision to push performance higher.
+Three years ago, I was talking to someone about AGI, and they mentioned
+that [there was no fire alarm for AGI](https://intelligence.org/2017/10/13/fire-alarm/).
+I told them I knew Eliezer Yudkowsky had written a post, but I hadn't gotten
+around to reading it. They summarized it as, "it will never be obvious when
+AGI is going to occur, and there will never be a point where everyone in ML
+knows that AI safety is the most important thing to work on." And my reaction
+was, "Yes, I've heard the stories of people predicting chess AIs would
+never exist, Fermi predicting [a nuclear chain reaction was very likely
+to be impossible](https://books.google.com/books?id=aSgFMMNQ6G4C&pg=PA813&lpg=PA813&dq=weart+fermi&source=bl&ots=Jy1pBOUL10&sig=c9wK_yLHbXZS_GFIv0K3bgpmE58&hl=en&sa=X&ved=0ahUKEwjNofKsisnWAhXGlFQKHbOSB1QQ6AEIKTAA#v=onepage&q=%22ten%20per%20cent%22&f=false), and even more recently we had
+[Rémi Coulom state that superhuman Go-players was about 10 years away](https://www.wired.com/2014/05/the-world-of-computer-go/), two years before AlphaGo beat Lee SeDol 4-1."
+The historical lesson is that nobody's long-term prediction is very good. I
+decided it wasn't worth my time to read it.
+
+I got around to reading it, and although that summary is *correct*, the ideas
+that were new to me were in everything outside that summary. The historical
+references, discussions of common knowledge, and forecasting discussion was
+old. But the useful part was where Eliezer Yudkowsky proposed guesses for
+why people predict AGI is impossible. One of his guesses was that researchers
+extrapolated what could be done with their current tools in N years, and they
+decided their current tools could never create AGI.
+
+This is incorrect, because research tools are also improving over time, and your
+extrapolation needs to account for that.
+I'm a big advocate for research tools - I think on average people underestimate
+their impact. In the more empirical sides of ML, the obvious factors of progress
+are your ideas and computational budget. The less obvious ones are what libraries
+you use, your software engineering and debugging skills, how you manage data,
+and how efficiently you can use the computational budget you do have. I'm sure
+I'm missing some more factors as well.
+
+Improvements are continually happening across this entire stack, their impact
+is roughly multiplicative, and on reflection, my gut predictions did not account
+for this as much as it should have. Multiplicative factors are very powerful:
+one simple example is that to get 10x better results, you can either make one
+thing 10x better, or you make ten things [26% better](https://www.google.com/search?&q=1.26^10).
+The latter is much easier, especially if you get 10 people who are each good
+at a different part of the stack to work together on a common goal. (This is
+how corporations get created.)
+
+
+2. Semi-Supervised and Unsupervised Learning is Getting Better
+
+I have been pretty impressed with the semi-supervised and unsupervised learning progress in the
+past few months. Momentum Contrast from [He et al, CVPR 2020](https://arxiv.org/abs/1911.05722)
+did pretty good, SimCLR from [(Chen et al, ICML 2020)](https://arxiv.org/abs/2002.05709) improved
+on that, and Bootstrap Your Own Latent [(Grill, Strub, Altché, Tallec, Richemond et al, 2020)](https://arxiv.org/abs/2006.07733)
+has improved on that. And then there's [GPT-3](https://arxiv.org/abs/2005.14165),
+but I'll get to that later.
+
+In 2015, the deep learning boom was mostly powered by supervised learning on
+large, labeled datasets. Meanwhile, self-supervised and unsupervised learning
+were sort of working, but not
+in a meaningful way. Richard Socher had a notable tweet at the time:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Rather than spending a month figuring out an unsupervised machine learning problem, just label some data for a week and train a classifier.</p>&mdash; Richard Socher (@RichardSocher) <a href="https://twitter.com/RichardSocher/status/840333380130553856?ref_src=twsrc%5Etfw">March 10, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+Of course, unsupervised learning was the right thing to do. Theoretically,
+you do unsupervised learning, and this builds a knowledge base that lets you
+learn any downstream task more easily.
+
+becomes easier. But, well, the main example of that working came from ImageNet,
+through labeled examples. (Admittedly, self-supervised word vectors were
+doing interesting things at around the same time.)
+
+When I combined this with the scaling laws observed by
+[(Hestness et al, 2017)](https://arxiv.org/abs/1712.00409), I concluded that
+ML progress would be bottlenecked the most by labeling requirements. Taking
+the most recent scaling law numbers from
+[(Kaplan and Candlish, 2020)](https://arxiv.org/abs/2001.08361), given a
+language model of $$N$$ parameters, your dataset size must be proportional to
+$$N^{0.74}$$ to saturate performance. You don't need to saturate performance,
+but it did suggest that labeling needs would grow alarmingly fast.
+
+Making a 10x bigger model architecture is easy. Making a 10x bigger model
+that's actually trainable is much harder, but it's a workable problem and
+I can see how you'd make steady progress on that front. But getting 10x more
+labels for the desired task seemed nightmarish.
+
+Large labeled datasets don't just appear out of nowhere. They take deliberate,
+sustained effort to generate. There's a reason ImageNet won the Test of Time
+award at CVPR 2019. Silicon gets faster, changing numbers in code lets you
+affect the entire model with a few keystrokes, but human labels eventually
+have to come from somewhere: specifically, human labelers hired through
+Mechanical Turk and similar services.
+If ML needed
+ever larger labelled datasets to push performance, then you'd hit a problem
+where you'd just need
+insane amounts of human supervision to make more progress.
+
+
 
 The reinforcement learning success stories did not need human labels.
 They could succeed with a reward function stating what success *looked like*,
@@ -105,3 +185,45 @@ generation and image generation is still weaker than other models, but whether t
 are state-of-the-art isn't the point. What matters is the thesis that at
 sufficient scale, a giant Transformer can handle different modalities without
 completely failing.
+
+
+CUT CONTENT
+
+(From Section 1.)
+
+Now, if you are basing your predictions by looking back on prior AI accomplishments,
+finding the time between milestones, and estimating that curve forwards, then
+you don't need to account for tools, because they are already priced into your
+historical curve, and your extrapolation will implicitly continue to extrapolate
+better tooling as well. However, I find this Kurzweil-style prediction deeply
+unsatisfying, because it doesn't give a reason *why* the trendline should or
+shouldn't continue. It simply asks you what you believe about it, and if you
+don't believe in the model, then, well, that's it, there's nothing in the short
+term that makes the model falsifiable. It's pretty easy to define a list of
+historical milestones that fits a clean exponential if you cherry-pick the
+milestones.
+[Juergen Schmidhuber](https://www.reddit.com/r/MachineLearning/comments/2xcyrl/i_am_j%C3%BCrgen_schmidhuber_ama/cp47cf3/?context=8&depth=9) did this for fun in his Reddit AMA. He could have
+just as easily cherry-picked other human accomplishments, to get a different
+trendline that would be equally unfalsifiable. How would we choose? We can't.
+
+If, historically, technological improvement is hard to predict, then 
+
+has its flaws. You have
+to decide what counts as a milestone and what doesn't, and it doesn't give any
+actionable foothold by which you can prove or disprove the trendline. It
+simply presents it and asks what you believe of it.
+actionable evidence to 
+not give arguments for why the curve should follow its trendline, besides "it
+has in the paste
+
+and you're implicitly assuming that they'll 
+
+
+. Any improvement wi
+While people are having better ideas,
+there are places all over the stack where things are getting better as well.
+
+
+and the At least within deep learning, the idea is a fairly small
+
+
