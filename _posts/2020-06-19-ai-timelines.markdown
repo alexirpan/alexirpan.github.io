@@ -153,9 +153,8 @@ from scratch.
 
 3. GPT-3 Results are Qualitatively Better than I Expected
 
-I had already decided to update my timeline estimates before GPT-3 was
-announced. You have GPT-3 to thank for motivating me to actually write a blog
-post about it.
+I had already updated my timeline estimates before people started toying
+with GPT-3, but GPT-3 was what motivated me to write a blog post explaining why.
 
 What we're seeing with GPT-3 is that language is an incredibly flexible input
 space. People have known this for a while. I know that NLP researchers like to
@@ -171,30 +170,121 @@ It is one thing to have the theoretical arguments. It is another thing to see
 it happen for real. Because what is GPT-3? It's a system that uses lots of
 training time to compress a very large corpus of text into a smaller set of
 Transformer weights, and the end result is able to do a wide variety of tasks
-if you can translate that task into a prompt of text to seed the model.
-There are definitely flaws in the model, but the sheer breadth of tech demos
-shown so far
-
-However, it is one thing to have the theoretical
-argument, and another thing to see tech demos showing the breadth of tasks that
-are possible whe
-
-you have a machine
-that perfectly understands and answers all ques
-that perfectly answers all questions
+if you can turn that task into a prompt of text to seed the model. Those tasks
+include translation, summarization, generating simple React UIs and functions
+from documentation, Q&A sessions, and so on. (REMEMBER TO ADD LINKS TO EXAMPLES.)
+There are definitely flaws in thes
+model, but the sheer breadth of tech demos is kind of absurd.
 
 GPT-3 is a concrete example of both points 1 and 2, better tooling and better
-unsupervised learning. There have been 
-and better unsupervised learning.
+unsupervised learning. The code generation demonstrations are especially interesting
+to me, since they look like early signs of a "Do What I Mean" programming tool.
+IDEs currently handle a lot of the grunt work, but if the existing tech demos
+could be made 5x better, I wouldn't be surprised if they become critical
+productivity boosters for nuts-and-bolts programming. Systems design and
+debugging will likely stick to humans, but a lot of programming is just
+coloring inside the lines. Even a simple do-what-I-mean tool should be a big
+boon. And overall, it's pretty remarkable that most of this behavior is
+emergent from getting good at predicting the next character of text a human would
+write.
 
-post about it.
-motivating me to write a blog post about
-it.
+There's currently no way for the prompt-based GPT-3 to learn anything it hasn't
+seen before, but if it's seen a massive crawl of the Internet, that might not
+be that big of a problem...
 
 
-announced,
-Based on the 1st two points
-I had already
+4. I Can See a Way AGI Might Happen, Without Many More Insights
+
+Once you exit the realm of formal proofs, it's very hard to argue something is
+impossible. So, for AGI, the best alternative is to first imagine the story of
+how AGI happens, and then gauge how plausible that sounds.
+
+(Even if you don't believe AGI can happen, I think this is a useful exercise for
+figuring out what you believe the current challenges in ML are.)
+
+In 2015, I tried this for a bit, and didn't see any reasonable foothold from
+which you could even attack building AGI. Models were getting better, but
+still seemed fundamentally incapable of doing something "general". Compute
+would help fix that, but I guessed that between compute and algorithms, about
+50% of the progress would come from compute, and the other 50% would come from
+algorithms.
+
+Since then, there have been a lot of successes coming from just scaling up
+models, and although there are still limitations in current models, I feel AGI
+progress is going to be 65% compute and 35% algorithms.
+
+At minimum, so far it doesn't look like we've seen the limits of what larger
+Transformer models can do. If performance scaled for 3 orders of magnitude,
+(1 billion params to 170 billion params), it wouldn't be too weird for it to
+scale for another 3 orders of magnitude.
+
+
+Story for how AGI happens.
+
+Expanded capabilities of research-level ML drives demands for more hardware
+to enable large-scle inference of those models. (Have seen this already for
+TPUs for image recognition and speech recognition).
+
+Excess capacity leftover is used to drive new research (there is some OpenAI
+post that makes this argument too.)
+
+We scale up transformers, or other better model architectures, to be of larger
+size. These transformers are not just trained on text. They are also trained
+on audio and video, and we've seen that transformers are able to handle these
+inputs as well.
+
+Somewhere in here, it is important to emphasize that transformers are worse
+than other generative models for images, and MuseNet was worse than other
+more dedicated audio generation models, but the important part here is that
+the architecture can handle it *well enough* that compute massages the
+difficulties. It also means that improvements to transformers improve the
+processing of all modalities, in the same way that improvements to CNN
+training have implications for any spatial recognition task.
+
+Once these models are trained on text, audio, and images, if this works
+better than expected, if fewer unexpected issues show up, then the dataset
+size is much bigger. There should be old industry slide decks for Big Data,
+talking about how Big Data scales bigger than Moore's law, and the classic
+problem with those slide decks is that they never explained how to use
+the data effectively. Historically, targeted, well-designed data extraction
+has been necessary to get good performance, but unstructured data is
+everywhere.
+
+And then, if it's handling audio, images, and text, then pretty much the
+only sensor modality you're missing from humans is touch sensing and
+embodiment in the world. That might be the blocker - if you believe that
+intelligence is impossible to learn without physical embodiment. That
+doesn't seem very plausible to me.
+
+
+One of the common arguments around AGI is intelligence explosion - that a
+more capable system will be able to improve itself faster, which will let it
+improve itself even faster than before, and so on. Machine learning is in
+many ways the field of automating decision making, and people have been trying
+to apply ML to ML for years, most recently with neural architecture search
+and black-box hyperparameter optimization.
+
+These approaches have long had a key limitation: someone must implement the
+code that enables a clean API between requested hyperparameter or model
+architecture, to implemented model, to final performance, and the search
+space you can explore is fundamentally limited by what search space humans
+feel are important. In robot learning, sim-to-real transfer via domain
+randomization has the same problem.
+
+Approaches like neural architecture search and black-box
+optimization of hyperparameters have long tried to automate more of the ML
+iteration process, but one of their key limitations is that someone must
+implement all the code that provides a clean API from "hyperparam / model architecture",
+to the actual model, to the final performance. Simulator randomizations for
+sim-to-real robot learning has a similar limitation - at a certain point,
+simulators are cheap enough that you aren't bottlenecked on how many sims you
+can run. You're bottlenecked by whether you have implemented all possible paths
+you want the model to explore. Your architecture search can't try dropout if
+you haven't implemented dropout as an option. It can't try layer norm or
+instance norm instead of batch norm if you haven't added that as a configurable.
+And so on.
+
+
 
 OpenAI has been pushing how far giant Transformer architectures can go, and so
 far the answer is "further than they've been pushed so far". They're getting
