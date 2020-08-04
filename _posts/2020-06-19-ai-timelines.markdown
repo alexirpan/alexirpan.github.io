@@ -193,30 +193,43 @@ seen before, but if it's seen a massive crawl of the Internet, that might not
 be that big of a problem...
 
 
-4. I Can See a Way AGI Might Happen, Without Many More Insights
+4. I Can Start to See The Frame of How AGI Might Happen
 
-Once you exit the realm of formal proofs, it's very hard to argue something is
-impossible. So, for AGI, the best alternative is to first imagine the story of
-how AGI happens, and then gauge how plausible that sounds.
+Whether you believe in the feasibility of AGI or not, one useful exercise is to
+imagine we manage to build AGI, fill in the blanks for what happened, and then
+gauge how plausible that sounds. I think this is a useful exercise to do
+now and then (say every year), because it helps you figure out what the big
+challenges in ML are, and which ones look attackable.
 
-(Even if you don't believe AGI can happen, I think this is a useful exercise for
-figuring out what you believe the current challenges in ML are.)
+In 2015, I did not see any reasonable path to AGI. Models were getting better,
+but only at simple tasks. Andrew Ng had given a talk where he said, "as a rule
+of thumb, I say machine learning can do most things a human can do in 1 second",
+and in 2015 that seemed true. There were several things missing between 2015
+models, and something that put the "general" in artificial general intelligence.
+Compute would help fix that, but I guessed that of the remaining AGI progress,
+50% would come from compute, and 50% would come from algorithms and ideas.
 
-In 2015, I tried this for a bit, and didn't see any reasonable foothold from
-which you could even attack building AGI. Models were getting better, but
-still seemed fundamentally incapable of doing something "general". Compute
-would help fix that, but I guessed that between compute and algorithms, about
-50% of the progress would come from compute, and the other 50% would come from
-algorithms.
+In the years since then, there have been lots of successes based around scaling
+up models and larger datasets. I've been convinced that compute will play more
+of a role than expected, something like 65% compute 35% algorithms.
+At minimum, we haven't seen the limits of large Transformers yet. If their
+performance has scaled for 3 orders of magnitude (1 billion params to 175
+billion params), it wouldn't be too weird if it scaled for another 3 orders
+of magnitude, and we already see qualitative differences in performance between
+GPT-2 and GPT-3. The GPT-3 samples are more coherent, make fewer mistakes,
+and handles long-term dependencies better.
 
-Since then, there have been a lot of successes coming from just scaling up
-models, and although there are still limitations in current models, I feel AGI
-progress is going to be 65% compute and 35% algorithms.
+Additionally, people focusing on GPT-3's text abilities are missing the thread
+of the plot. If you believe [the rumors](https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/),
+OpenAI has been working on large scale, multi-modal learning. Presumably, the
+aim is to take streams of audio, video, and text, shove them all into a single
+model, and see what happens. And for a while, my reaction was, "Cool, but that's
+much easier said than done."
 
-At minimum, so far it doesn't look like we've seen the limits of what larger
-Transformer models can do. If performance scaled for 3 orders of magnitude,
-(1 billion params to 170 billion params), it wouldn't be too weird for it to
-scale for another 3 orders of magnitude.
+However, if you look at the other work OpenAI has put out recently, you can see
+what they're building towards. They put out [MuseNet](https://openai.com/blog/musenet/), a generative model for
+audio based on large transformers. Then more recently, they put out [Image GPT](https://openai.com/blog/image-gpt/),
+a generative model for images also based on large transformers.
 
 
 Story for how AGI happens.
@@ -252,9 +265,7 @@ everywhere.
 
 And then, if it's handling audio, images, and text, then pretty much the
 only sensor modality you're missing from humans is touch sensing and
-embodiment in the world. That might be the blocker - if you believe that
-intelligence is impossible to learn without physical embodiment. That
-doesn't seem very plausible to me.
+embodiment in the world.
 
 
 One of the common arguments around AGI is intelligence explosion - that a
