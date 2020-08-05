@@ -193,43 +193,80 @@ seen before, but if it's seen a massive crawl of the Internet, that might not
 be that big of a problem...
 
 
-4. I Can Start to See The Frame of How AGI Might Happen
+4. It's Clear There's Still Room for Larger Models
 
-Whether you believe in the feasibility of AGI or not, one useful exercise is to
-imagine we manage to build AGI, fill in the blanks for what happened, and then
-gauge how plausible that sounds. I think this is a useful exercise to do
-now and then (say every year), because it helps you figure out what the big
-challenges in ML are, and which ones look attackable.
+One of the common proxies people use when reasoning about AGI is the availability
+of compute resources. They play an undeniable role in ML progress, but how much
+can be done from scaling up existing model architectures, without other ideas?
 
-In 2015, I did not see any reasonable path to AGI. Models were getting better,
-but only at simple tasks. Andrew Ng had given a talk where he said, "as a rule
-of thumb, I say machine learning can do most things a human can do in 1 second",
-and in 2015 that seemed true. There were several things missing between 2015
+In 2015, I was not convinced that compute would fix everything. Models were
+getting better, but only at simple tasks. As Andrew Ng put it, "a good approximation
+is that machine learning can do most things a human can do in 1 second". There
+were several things missing between 2015
 models, and something that put the "general" in artificial general intelligence.
-Compute would help fix that, but I guessed that of the remaining AGI progress,
-50% would come from compute, and 50% would come from algorithms and ideas.
+Compute would help fix that, but of the remaining AGI progress, I guessed 50%
+would come from compute, and 50% would come from algorithms and ideas.
 
-In the years since then, there have been lots of successes based around scaling
-up models and larger datasets. I've been convinced that compute will play more
-of a role than expected, something like 65% compute 35% algorithms.
-At minimum, we haven't seen the limits of large Transformers yet. If their
-performance has scaled for 3 orders of magnitude (1 billion params to 175
-billion params), it wouldn't be too weird if it scaled for another 3 orders
-of magnitude, and we already see qualitative differences in performance between
-GPT-2 and GPT-3. The GPT-3 samples are more coherent, make fewer mistakes,
-and handles long-term dependencies better.
+In the years since then, there have been lots of successes powered by scaling
+fairly simple models to larger datasets. I've since been convinced that compute
+will play a larger role, and that many human-like learning behaviors could just
+be emergent properties of larger models. I'm now guessing about 65% compute
+and 35% algorithms for the split between the two.
 
-Additionally, people focusing on GPT-3's text abilities are missing the thread
-of the plot. If you believe [the rumors](https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/),
-OpenAI has been working on large scale, multi-modal learning. Presumably, the
+If you are not sold on this, let's go back to GPT-3 for a moment. At minimum,
+we haven't seen the limits of GPT-3 scaling yet. If the performance of large
+Transformers has scaled for 3 orders of magnitude (1 billion params to 175
+billion params), then it wouldn't be too weird if they scaled for another 3
+orders of magnitude. Of course, it might not - but is there a good argument
+why it shouldn't? And 3 orders of magnitude was enough to drive more coherent
+text generation, better long-term dependencies, and new kinds of tasks, like
+rudimentary code generation.
+
+Presumably, the
 aim is to take streams of audio, video, and text, shove them all into a single
 model, and see what happens. And for a while, my reaction was, "Cool, but that's
-much easier said than done."
+much easier said than done." Multimodal learning has historically been a tricky
+problem.
 
-However, if you look at the other work OpenAI has put out recently, you can see
-what they're building towards. They put out [MuseNet](https://openai.com/blog/musenet/), a generative model for
-audio based on large transformers. Then more recently, they put out [Image GPT](https://openai.com/blog/image-gpt/),
+Additionally, the focus on GPT-3's text generation is missing the real plot
+thread.
+If you believe [the rumors](https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/),
+OpenAI has been working on large scale, multi-modal learning. Much of the recent
+work OpenAI has put out is consistent with this.
+There was [MuseNet](https://openai.com/blog/musenet/), a generative model for
+audio based on large transformers. More recently, there was [Image GPT](https://openai.com/blog/image-gpt/),
 a generative model for images also based on large transformers.
+
+ML techniques have become increasingly general, and employees at OpenAI see
+this as a big deal. (They have said as much [when I criticized their decision
+to discuss their robotics research at a DotA 2 event](https://twitter.com/jackclarkSF/status/1026813527850450944).)
+Why does this matter?
+
+Consider the state of machine learning before deep learning started taking
+over several fields. Computer vision models were based on [SIFT features](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform).
+Machine translation was based on [parse trees](https://en.wikipedia.org/wiki/Parse_tree).
+Speech recognition was based on recognizing [phonemes](https://en.wikipedia.org/wiki/Phoneme)
+and composing them together.
+
+I'll be honest - I have very little experience with any of the 3 things I just
+linked. But I could still start work in any of those fields today? Why? Because
+state-of-the-art models for all three have been taken over by neural nets, and
+I understand neural nets.
+
+This is one of the deep learning trends that people didn't appreciate at the time.
+When lots of fields converge to using the same set of techniques, it's easier
+for people across fields to share progress and ideas. A convolutional neural
+net is a model with a heavy prior towards considering nearby values. That's good
+for image recognition, but ended up having implications for genomics and music
+generation. A transformer is a sequence model, which is good for understanding
+language, but also can be applied to video understanding.
+
+You can't entirely ignore prior work or experience. Intuition in the target
+domain can be very powerful. AlphaGo was a victory for
+CNNs and RL, but it was developed by people who had been working on Computer Go
+for years, with the consulting help of pro-level Go players. However, much
+of the intuition for how *neural nets* work can be carried over between projects,
+and that's very useful.
 
 
 Story for how AGI happens.
@@ -305,45 +342,3 @@ generation and image generation is still weaker than other models, but whether t
 are state-of-the-art isn't the point. What matters is the thesis that at
 sufficient scale, a giant Transformer can handle different modalities without
 completely failing.
-
-
-CUT CONTENT
-
-(From Section 1.)
-
-Now, if you are basing your predictions by looking back on prior AI accomplishments,
-finding the time between milestones, and estimating that curve forwards, then
-you don't need to account for tools, because they are already priced into your
-historical curve, and your extrapolation will implicitly continue to extrapolate
-better tooling as well. However, I find this Kurzweil-style prediction deeply
-unsatisfying, because it doesn't give a reason *why* the trendline should or
-shouldn't continue. It simply asks you what you believe about it, and if you
-don't believe in the model, then, well, that's it, there's nothing in the short
-term that makes the model falsifiable. It's pretty easy to define a list of
-historical milestones that fits a clean exponential if you cherry-pick the
-milestones.
-[Juergen Schmidhuber](https://www.reddit.com/r/MachineLearning/comments/2xcyrl/i_am_j%C3%BCrgen_schmidhuber_ama/cp47cf3/?context=8&depth=9) did this for fun in his Reddit AMA. He could have
-just as easily cherry-picked other human accomplishments, to get a different
-trendline that would be equally unfalsifiable. How would we choose? We can't.
-
-If, historically, technological improvement is hard to predict, then 
-
-has its flaws. You have
-to decide what counts as a milestone and what doesn't, and it doesn't give any
-actionable foothold by which you can prove or disprove the trendline. It
-simply presents it and asks what you believe of it.
-actionable evidence to 
-not give arguments for why the curve should follow its trendline, besides "it
-has in the paste
-
-and you're implicitly assuming that they'll 
-
-
-. Any improvement wi
-While people are having better ideas,
-there are places all over the stack where things are getting better as well.
-
-
-and the At least within deep learning, the idea is a fairly small
-
-
