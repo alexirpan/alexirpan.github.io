@@ -193,7 +193,7 @@ seen before, but if it's seen a massive crawl of the Internet, that might not
 be that big of a problem...
 
 
-4. It's Clear There's Still Room for Larger Models
+4. It's Clear There's Still Room for Larger Models With Current Ideas
 
 One of the common proxies people use when reasoning about AGI is the availability
 of compute resources. They play an undeniable role in ML progress, but how much
@@ -259,7 +259,9 @@ for people across fields to share progress and ideas. A convolutional neural
 net is a model with a heavy prior towards considering nearby values. That's good
 for image recognition, but ended up having implications for genomics and music
 generation. A transformer is a sequence model, which is good for understanding
-language, but also can be applied to video understanding.
+language, but also can be applied to video understanding. As a community we've
+spent the past few years building primitives that everything else builds off
+of.
 
 You can't entirely ignore prior work or experience. Intuition in the target
 domain can be very powerful. AlphaGo was a victory for
@@ -267,6 +269,62 @@ CNNs and RL, but it was developed by people who had been working on Computer Go
 for years, with the consulting help of pro-level Go players. However, much
 of the intuition for how *neural nets* work can be carried over between projects,
 and that's very useful.
+
+To me, it sure seems like OpenAI is going all-in on understanding how to train
+really big Transformer models. They aren't as good at images and audio as more dedicated
+architectures, but they handle it well enough that maybe you can get away with
+not caring about that. Once everything is unified under one model architecture,
+you can also focus all effort on building intuition for what large transformers
+do, rather than anything else.
+
+So, going back to dataset requirements: if you can successfully get multimodal
+learning to work, and if there are comparable scaling laws for image data
+and audio data, then you can certainly find enough data to saturate a significantly
+larger model. There are open questions on how to do multimodal learning
+correctly, but you should definitely be able to get *something* out of it.
+
+Are large Transformers the last model architecture we'll use? No, probably not.
+But I do expect that despite what we've seen out of these models so far, we've
+yet to see the limits of what these models can do. Model architectures are only
+going to get better, so the capabilities of scaling up current models has to be
+a lower bound on what could be possible 10 or 20 years from now - and what looks
+possible from scaling up current models is already both interesting and slightly
+worrying.
+
+
+The Big Picture
+----------------------------------------------------------------------------
+
+In ["You and Your Research"](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html),
+Richard Hamming has a famous piece of advice: "what are the important problems
+in your field, and why aren't you working on them?" Surely AGI is one of the
+most important problems for machine learning.
+
+So, for machine learning, the natural version of this question is, "what
+problems need to be solved to get to artificial general intelligence?" What
+waypoints do you expect the field to hit on the road to get there, and how
+much uncertainty is there about the path between those waypoints?
+
+I feel like more of those waypoints are becoming clearer to me. I feel like
+if you asked 2015-me how we'd build AGI, I'd tell you I have no earthly idea.
+A lot of challenges I'd associate with human-level intelligence would need to
+be solved by technology so advanced I'd just call it magic, and there is no
+principled way to predict when that would happen, besides assigning lower
+likelihood to near-term outcomes. But 2020-me has *some* ideas how it could
+happen, and that's the biggest shift for me.
+
+
+
+And if it does a good job at predicting images, audio, and text,
+what sensor modalities do humans have, that this hypotehtical model doesn't?
+I think it's all the things tied to physical embodiment, like taste, touch,
+and smell. 
+our ability to detect gravity and inertia and orientation, and so on. That's a
+lot of input it doesn't have access to, but I don't 
+
+what sensor modalities 
+what's actually left
+
 
 
 Story for how AGI happens.
@@ -282,14 +340,6 @@ We scale up transformers, or other better model architectures, to be of larger
 size. These transformers are not just trained on text. They are also trained
 on audio and video, and we've seen that transformers are able to handle these
 inputs as well.
-
-Somewhere in here, it is important to emphasize that transformers are worse
-than other generative models for images, and MuseNet was worse than other
-more dedicated audio generation models, but the important part here is that
-the architecture can handle it *well enough* that compute massages the
-difficulties. It also means that improvements to transformers improve the
-processing of all modalities, in the same way that improvements to CNN
-training have implications for any spatial recognition task.
 
 Once these models are trained on text, audio, and images, if this works
 better than expected, if fewer unexpected issues show up, then the dataset
