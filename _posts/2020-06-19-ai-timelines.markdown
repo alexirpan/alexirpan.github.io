@@ -311,48 +311,39 @@ A lot of challenges I'd associate with human-level intelligence would need to
 be solved by technology so advanced I'd just call it magic, and there is no
 principled way to predict when that would happen, besides assigning lower
 likelihood to near-term outcomes. But 2020-me has *some* ideas how it could
-happen, and that's the biggest shift for me.
+happen, if you get lucky, and that feels like the biggest shift.
 
+Assuming AGI is possible without many more new ideas, here is one potential
+story how that happens: someone eventually develops an app so useful that
+models of GPT-3's size or larger becomes a huge productivity multiplier. Something
+like a true Do What I Mean coding tool, that still fails a lot, but it
+accurate enough that human work shifts towards code verification rather than
+code writing. This enables trying many of the research ideas that people would
+implement "if they had time to" - the kinds that researchers currently pawn off
+to interns. This is all valuable enough that the economics actually work out,
+people pay enough to cover the inference costs, and this is enough to fund
+buying more hardware, which enables even larger training. As we've seen with
+most cloud compute platforms, you buy excess CPUs to anticipate spikes in
+consumer demand, but can then sell access to the extra CPUs to earn money -
+or in this case, you send the CPUs to researchers.
 
+Meanwhile, cross-modality learning turns out to be easier than expected at scale,
+and we discover similar emergent properties. Object tracking and intuitive
+physics turn out to be naturally occuring phenemenon that are learnable just
+from images, without direct environment interaction. With more tweaks, even
+larger models, and even more data, you end up with a rich feature space for
+images, text, and audio, that is indistinguishable from understanding all 3
+domains. At that point, what sensors inputs do humans have, that this
+hypothetical model doesn't?
+I think it's entirely plausible that intelligence doesn't require
+living in a body, whether it's made of muscle and bone or metal and wires.
 
-And if it does a good job at predicting images, audio, and text,
-what sensor modalities do humans have, that this hypotehtical model doesn't?
-I think it's all the things tied to physical embodiment, like taste, touch,
-and smell. 
-our ability to detect gravity and inertia and orientation, and so on. That's a
-lot of input it doesn't have access to, but I don't 
-
-what sensor modalities 
-what's actually left
-
-
-
-Story for how AGI happens.
-
-Expanded capabilities of research-level ML drives demands for more hardware
-to enable large-scle inference of those models. (Have seen this already for
-TPUs for image recognition and speech recognition).
-
-Excess capacity leftover is used to drive new research (there is some OpenAI
-post that makes this argument too.)
-
-We scale up transformers, or other better model architectures, to be of larger
-size. These transformers are not just trained on text. They are also trained
-on audio and video, and we've seen that transformers are able to handle these
-inputs as well.
-
-Once these models are trained on text, audio, and images, if this works
-better than expected, if fewer unexpected issues show up, then the dataset
-size is much bigger. There should be old industry slide decks for Big Data,
+There should be old industry slide decks for Big Data,
 talking about how Big Data scales bigger than Moore's law, and the classic
 problem with those slide decks is that they never explained how to use
 the data effectively. Historically, targeted, well-designed data extraction
 has been necessary to get good performance, but unstructured data is
 everywhere.
-
-And then, if it's handling audio, images, and text, then pretty much the
-only sensor modality you're missing from humans is touch sensing and
-embodiment in the world.
 
 
 One of the common arguments around AGI is intelligence explosion - that a
