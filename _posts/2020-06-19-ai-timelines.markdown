@@ -4,81 +4,133 @@ title:  "My AI Timelines Have Sped Up"
 date:   2020-06-19 15:06:00 -0700
 ---
 
-In 2015, I made the following forecasts about AGI
+In 2015, I made the following forecasts about artificial general intelligence
+(AGI).
 
 * 10% chance by 2045
 * 50% chance by 2050
 * 90% chance by 2070
 
-Now that it's 2020, I'm updating my forecast to
+Now that it's 2020, I'm updating my forecast to:
 
 * 10% chance by 2035
 * 50% chance by 2045
 * 90% chance by 2070
 
 Or in short, I'm keeping the 90% line the same, but shifting everything else to
-be faster. I go into my reasons below. I'm not going to claim they're great
-reasons, the update is mostly by feel for what seems right.
+be faster. I'm not going to have a good argument for why I chose to move things
+by 10 years, instead of 5 or 15 years. The amount of change is a gut feeling.
+The important parts are what parts of my thinking have changed - you can choose
+your own adjustment based on that.
 
-First of all, the distribution is wider. Thinking back on the past 4 years, I
-believe I was surprised by AI more than I expected to be. Unsupervised learning
-got better way faster than I expected, deep RL got better a little faster than
-I expected, and transfer learning was slower than expected. Combined, it made
-me feel I should widen my forecast, so now 10% to 90% falls in a 35 year range
-instead of a 25 year range.
-
-Second, I noticed that in my 2015 forecast, I placed 10% to 50% in a 5 year
-range, and 50% to 90% in a 20 year range. I think AGI is a long-tailed event,
-there is a real possibility it's never viable. But this is an absurdly skewed
-distribution, so I adjusted it to be less skewed.
-
-But, you aren't here for that. You're here to learn why I shifted everything
-up a few years. Below is the list of things that made me Change My Mind.
+Let's start with the easy part first.
 
 
-1. I Didn't Account for Better Tools
+I Should Have Been More Uncertain
+-------------------------------------------------------------------------------
+
+It would be incredibly weird if I was never surprised by ML research.
+Historically, it's very hard to predict the trajectory a research field will
+take, and if I were never surprised, I'd take that as a personal failing to
+not consider large enough ideas.
+
+At the same time, when I think back on the past 5 years, I believe I was
+surprised more often than I expected. It wasn't all in a positive direction.
+Unsupervised learning got better way faster than I expected, deep RL got better
+a little faster than I expected, and transfer learning was slower than
+expected. Combined, I've decided I should widen the distribution of outcomes,
+so now I'm allocating 35 years to the 10%-90% interval instead of 25 years.
+
+I also noticed that my 2015 prediction placed 10% to 50% in a 5 year range,
+and 50% to 90% in a 20 year range. AGI is a long-tailed event, and there's
+a real possibility it's never viable, but a 5-20 split is absurdly skewed,
+so I'm adjusting accordingly.
+
+While doing so, I decided to shift the 10% and 50% lines to be closer to
+present day. The remainder of the post is justifying this.
+
+
+I Didn't Account for Better Tools
+----------------------------------------------------------------------------
 
 Three years ago, I was talking to someone about AGI, and they mentioned
 that [there was no fire alarm for AGI](https://intelligence.org/2017/10/13/fire-alarm/).
-I told them I knew Eliezer Yudkowsky had written a post, but I hadn't gotten
-around to reading it. They summarized it as, "it will never be obvious when
-AGI is going to occur, and there will never be a point where everyone in ML
-knows that AI safety is the most important thing to work on." And my reaction
-was, "Yes, I've heard the stories of people predicting chess AIs would
-never exist, Fermi predicting [a nuclear chain reaction was very likely
+I told them I knew Eliezer Yudkowsky had written another post about AGI, and
+I'd seen it shared all over Facebook, but I hadn't gotten around to reading it.
+They summarized it as, "It will never be obvious when AGI is going to occur.
+Even a few years before it happens, it will be possible to argue AGI is far
+away, and by the time its common knowledge that AI safety is the most
+important problem in the world, it'll be too late."
+
+And my reaction was, "okay, that's the same story I got from my Facebook
+timeline. I already know the story of
+Fermi predicting [a nuclear chain reaction was very likely
 to be impossible](https://books.google.com/books?id=aSgFMMNQ6G4C&pg=PA813&lpg=PA813&dq=weart+fermi&source=bl&ots=Jy1pBOUL10&sig=c9wK_yLHbXZS_GFIv0K3bgpmE58&hl=en&sa=X&ved=0ahUKEwjNofKsisnWAhXGlFQKHbOSB1QQ6AEIKTAA#v=onepage&q=%22ten%20per%20cent%22&f=false), and even more recently we had
-[Rémi Coulom state that superhuman Go-players was about 10 years away](https://www.wired.com/2014/05/the-world-of-computer-go/), two years before AlphaGo beat Lee SeDol 4-1."
-The historical lesson is that nobody's long-term prediction is very good. I
-decided it wasn't worth my time to read it.
+[Rémi Coulom state that superhuman Go-players was about 10 years away](https://www.wired.com/2014/05/the-world-of-computer-go/), two years before AlphaGo beat Lee SeDol."
+I decided it wasn't worth my time to read it.
 
-I got around to reading it, and although that summary is *correct*, the ideas
-that were new to me were in everything outside that summary. The historical
-references, discussions of common knowledge, and forecasting discussion was
-old. But the useful part was where Eliezer Yudkowsky proposed guesses for
-why people predict AGI is impossible. One of his guesses was that researchers
-extrapolated what could be done with their current tools in N years, and they
-decided their current tools could never create AGI.
+I now need to retroactively complain to all my Facebook friends who
+liked the common knowledge and historical knowledge parts, because although
+that summary is *correct*, the ideas I found useful were *everything
+outside that summary*. I trusted you, filter bubble! How could you let me
+down like this?
 
-This is incorrect, because research tools are also improving over time, and your
-extrapolation needs to account for that.
-I'm a big advocate for research tools - I think on average people underestimate
-their impact. In the more empirical sides of ML, the obvious factors of progress
-are your ideas and computational budget. The less obvious ones are what libraries
-you use, your software engineering and debugging skills, how you manage data,
-and how efficiently you can use the computational budget you do have. I'm sure
-I'm missing some more factors as well.
+Part of the linked posts proposes hypotheses for why people claim AGI is
+impossible. One of the hypotheses is that researchers pay too much attention
+to the difficulty of getting something working with their current tools,
+then extrapolate that difficulty to future, and conclude their current tools
+could never create AGI.
+This is a bad argument because your extrapolation needs to account for
+research tools also improving over time.
 
-Improvements are continually happening across this entire stack, their impact
-is roughly multiplicative, and on reflection, my gut predictions did not account
-for this as much as it should have. Multiplicative factors are very powerful:
-one simple example is that to get 10x better results, you can either make one
-thing 10x better, or you make ten things [26% better](https://www.google.com/search?&q=1.26^10).
-The latter is much easier, especially if you get 10 people who are each good
-at a different part of the stack to work together on a common goal. (This is
-how corporations get created.)
+What "tool" means is a bit vague,
+but one example is feature engineering for computer vision. When was the
+last time anyone talked about SIFT features for computer vision? Ages ago,
+they're obsolute. But model tuning didn't disappear, it just turned into
+CNN architecture tuning instead. SIFT features were the old tool,
+convolutional neural nets are the new tool, and computer vision is the application
+that's been supercharged by the better tool.
+
+Whereas for me, I'm not a big vision person. I think ML for control is a much
+more interesting problem, but you have to do computer vision to do control
+in image-based environments. So for me, computer vision is the tool, robotics
+is the application, and the improvements in computer vision have driven many
+of the promising real robot learning results.
+
+I'm a big advocate for research tools - I think on average, people underestimate
+their impact. So after reading that hypothesis that people don't forecast
+tool improvement properly, I thought for a bit, and decided I hadn't properly
+accounted for it either. That deserved shaving off a few years.
+
+In the more empirical sides of ML, the obvious components of progress are your
+ideas and computational budget, but there are less obvious ones too, like
+your coding skills, debugging skills, and ability to use available compute.
+There are a surprising number of ML applications where the main value-add is
+better data management and data summarization, rather than any learned model,
+because those tools free up decision making time for the rest of the
+research.
+
+In general, everyone's research tools are deficient in some way.
+Research is
+about doing something new, which naturally leads to discovering new problems,
+and it's highly unlikely someone's already made the perfect tool for a problem
+that didn't exist 3 months ago. But this also means that your current
+research tools will *always* feel janky, and you shouldn't be using that to
+argue anything about timelines.
+
+Improvements continually happen across the entire research stack, and most of
+these improvments have multiplicative benefits. Multiplicative factors
+can be very powerful.
+One simple example is that to get 10x better results, you can either make one
+thing with a 10x better paradigm shift, or you can make ten different things
+[1.26x better](https://www.google.com/search?&q=1.26^10) and they'll combine to
+a 10x total improvement. The latter is just as transformative but can be much
+easier, especially if you get 10 experts with different skill sets
+to work together on a common goal. This is how corporations become a thing.
 
 
-2. Semi-Supervised and Unsupervised Learning is Getting Better
+Semi-Supervised and Unsupervised Learning is Getting Better
+-------------------------------------------------------------------------------
 
 I have been pretty impressed with the semi-supervised and unsupervised learning progress in the
 past few months. Momentum Contrast from [He et al, CVPR 2020](https://arxiv.org/abs/1911.05722)
@@ -237,6 +289,12 @@ There was [MuseNet](https://openai.com/blog/musenet/), a generative model for
 audio based on large transformers. More recently, there was [Image GPT](https://openai.com/blog/image-gpt/),
 a generative model for images also based on large transformers.
 
+Was MuseNet state of the art when it came out? No. Is Image-GPT state of the
+art for image generation? I'm a bit out of the loop, but I believe the answer's
+no. However, these questions are missing the point that OpenAI is making:
+*a large enough Transformer does not completely fail on these different input
+modalities*.
+
 ML techniques have become increasingly general, and employees at OpenAI see
 this as a big deal. (They have said as much [when I criticized their decision
 to discuss their robotics research at a DotA 2 event](https://twitter.com/jackclarkSF/status/1026813527850450944).)
@@ -269,6 +327,9 @@ CNNs and RL, but it was developed by people who had been working on Computer Go
 for years, with the consulting help of pro-level Go players. However, much
 of the intuition for how *neural nets* work can be carried over between projects,
 and that's very useful.
+
+If there is evidence that transformers can handle audio and images, and you
+don't have a dedicated audio understanding team, then 
 
 To me, it sure seems like OpenAI is going all-in on understanding how to train
 really big Transformer models. They aren't as good at images and audio as more dedicated
