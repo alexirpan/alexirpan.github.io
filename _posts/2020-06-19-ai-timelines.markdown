@@ -139,103 +139,126 @@ on that, and Bootstrap Your Own Latent [(Grill, Strub, Altché, Tallec, Richemon
 has improved on that. And then there's [GPT-3](https://arxiv.org/abs/2005.14165),
 but I'll get to that later.
 
-In 2015, the deep learning boom was mostly powered by supervised learning on
-large, labeled datasets. Meanwhile, self-supervised and unsupervised learning
-were sort of working, but not
-in a meaningful way. Richard Socher had a notable tweet at the time:
+Unsupervised learning has historically been in this weird position where it is
+obviously the right way to do learning, and also a complete waste of time for
+most problems. On one hand, humans don't have labels for most things they learn,
+and ML systems should not need labels to learn. On the other hand, in 2015, the
+deep learning boom was powered by supervised learning on
+large, labeled datasets.
+Richard Socher had a notable tweet at the time:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Rather than spending a month figuring out an unsupervised machine learning problem, just label some data for a week and train a classifier.</p>&mdash; Richard Socher (@RichardSocher) <a href="https://twitter.com/RichardSocher/status/840333380130553856?ref_src=twsrc%5Etfw">March 10, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-Of course, unsupervised learning was the right way to do learning. Humans
-don't have labels for most things they learn how to do, they just get their
-eyes and ears and have to figure it out. But, well, the main example of general
-behavior at the time was from ImageNet features, learned through labeled
-classification. (Admittedly, self-supervised word vectors like GloVe and
-word2vec were doing interesting things around the same time.)
+Not to say that unsupervised learning was never useful. Even in 2010, it was
+common wisdom that deep networks should go through an unsupervised pre-training
+step before starting supervised learning. See [(Erhan et al, JMLR 2010)](https://jmlr.csail.mit.edu/papers/volume11/erhan10a/erhan10a.pdf).
+Self-supervised word vectors like [GloVe](https://nlp.stanford.edu/projects/glove/)
+and [word2vec](https://en.wikipedia.org/wiki/Word2vec) were also doing
+interesting things. These felt like exceptions to the rule, and I held ImageNet
+features as the main example of general behavior - and those features were
+learnt through labeled classification.
 
-When I combined this with the scaling laws observed by
-[(Hestness et al, 2017)](https://arxiv.org/abs/1712.00409), I concluded that
-ML progress would be bottlenecked the most by labeling requirements. Let's take
-the scaling law numbers from
-[(Kaplan and Candlish, 2020)](https://arxiv.org/abs/2001.08361) as an example.
-They find that for language modelling, performance follows a power law in the
-number of parameters $$N$$, and then saturating that model requires a dataset of
-size proportional to $$N^{0.74}$$. Now of course, this is just language modelling,
-and you don't need to saturate model performance, but the trendline is that your
-dataset size follows a power law relationship, and if that data needs to be
-labelled, you're going to have a bad time. Making a 10x bigger model doesn't
-require 10x as many people to work on it. Getting 10x as many human labels for
-a task does. There are fewer ways for software to speed up labelling speed.
+The trendlines were pointing to larger models, and larger labeled datasets, and
+I concluded that future ML progress would be bottlenecked by labeling requirements.
+Defining a 10x bigger model is easy. *Training* a 10x bigger model is harder, but
+it doesn't need 10x as many people to work on it. Getting 10x as many labels
+does. And yes, data labeling tools are getting better, but labels are fundamentally
+a question about human preferences, and that makes it hard to escape human
+labor. Reward functions in RL have a similar issue. In principle, the model
+figures it out after you define what success looks like. In practice, you need
+a human to check the model isn't hacking the reward, or your reward function
+is implicitly defined by human raters, which just turns into the same labeling
+problem.
 
-Large labeled datasets don't just appear out of nowhere. They take deliberate,
-sustained effort to generate. There's a reason ImageNet won the Test of Time
-award at CVPR 2019. Silicon gets faster, changing numbers in code lets you
-affect the entire model with a few keystrokes, but human labels eventually
-have to come from somewhere: specifically, human labelers hired through
-Mechanical Turk and similar services.
+These labeled datasets don't appear out of nowhere. They take deliberate,
+sustained effort to generate. There's a reason [ImageNet won the Test of Time
+award at CVPR 2019](https://www.computer.org/publications/tech-news/events/ieee-cvpr-conference-on-computer-vision-and-pattern-recognition-2019-awards-records) -
+the authors of that paper went out and did the work.
 If ML needed
-ever larger labelled datasets to push performance, then you'd hit a problem
-where you'd just need
-insane amounts of human supervision to make more progress.
+ever larger labelled datasets to push performance, and models kept growing
+by orders of magnitude, then you'd hit a point where the amount of human
+supervision needed to make progress would be insane.
 
-As for reinforcement learning, although they did not need human labels, they
-did need reward functions. As I worked with RL more, I got the impression they
-were working less by understanding, and more by brute-forcing random exploration
-in an exponential space until they stumbled upon a reward signal, which wasn't
-very scalable due to the curse of dimensionality. To fix this, I expected
-that you'd either need to learn a prior from previous tasks (which is effectively
-unsupervised learning with extra steps), or you need human demonstrations (which
-requires human labelers agains). And this isn't even getting into defining the
-reward functions, which will likely also need to be learned from human labels
-after you pass the threshold of easy tasks most people work with right now.
+(This isn't even getting into the problem of labels being imperfect. We've
+found that a lot of labeled datasets carry lots of bias within them, which
+isn't surprising, but a laissez-faire labeling system isn't going to fly
+these days.)
+
+One way out of this is if you don't need 10x as many labels. It turns out that's
+true, at least according to
+[(Hestness et al, 2017)](https://arxiv.org/abs/1712.00409), which found that
+image classification models have followed a trendline of "$$N$$ parameters,
+$$N^{0.57}$$ examples". (Up to constant factors).
+So a 10x larger model needs 3.7x as many labels, which is certainly better, but
+doesn't solve the issue of needing to improve labeling by 3.7x for every
+order of magnitude you want to scale...
 
 However, now that unsupervised learning is starting to get there, these challenges
 are getting a lot easier. I'm not sure people appreciate the potential here.
-At sufficient scale, it looks okay for your data to be messy. You'll have better
-results if you have the same quantity of labeled data, but because labels are
-not thing you are magically given, the size of your labeled dataset is limited by
-the supervision you can afford.
+At sufficient scale, it turns out its okay for your data to be messy. The same
+quantity of labeled data will be better, but remember, labels take effort -
+the size of your labeled dataset is limited by the supervision you can afford,
+and you can get much more unlabeled data for the same amount of effort.
+The scaling numbers for unsupervised language modelling from
+[(Kaplan and Candlish, 2020)](https://arxiv.org/abs/2001.08361) suggest a
+$$N^{0.74}$$ relationship, or 5.5x as much data per order of magnitude, but
+that data requirement is much easier to achieve.
 
-That core idea is the key: better unsupervised learning makes it easier to use
-larger datasets, including data that doesn't even look relevant to your target
-task, and as that gets better, I expect to see more "ImageNet moments", where
-most applications are solved by tuning pretrained models instead of training
-from scratch.
+Is unsupervised learning there already? I don't think so, but it is closer than
+I expected it to be. I expect to see more papers use data sources that aren't
+relevant to their target task, and more "ImageNet moments" where applications
+are built off of the shoulders of someone else's GPU time, rather than from
+scratch.
 
 
-3. GPT-3 Results are Qualitatively Better than I Expected
+GPT-3 Results are Qualitatively Better than I Expected
+-------------------------------------------------------------------------------
 
 I had already updated my timeline estimates before people started toying
 with GPT-3, but GPT-3 was what motivated me to write a blog post explaining why.
 
 What we're seeing with GPT-3 is that language is an incredibly flexible input
-space. People have known this for a while. I know that NLP researchers like to
+space. People have known this for a while. I know NLP researchers like to
 say language understanding is an AI-Complete task, because a hypothetical
 machine that perfectly understands and replies to all questions might as well
 be the same as a person. People have also argued that compression is a proxy
-for intelligence. Compressing data requires understanding patterns in that data,
-and if you accept that pattern recognition is a key component of intelligence, then
-a better compressor should be more intelligent. (This is the thesis behind
-the [Hutter Prize](http://prize.hutter1.net/).)
+for intelligence.
+As argued on the [Hutter Prize](http://prize.hutter1.net/) website, to compress
+data, you must understand patterns in that data, and if you view pattern recognition
+as a key component of intelligence, then better compressors should be more
+intelligent.
 
 It is one thing to have the theoretical arguments. It is another thing to see
-it happen for real. Because what is GPT-3? It's a system that uses lots of
+it happen for real. GPT-3 is many things, but its core is a system that uses lots of
 training time to compress a very large corpus of text into a smaller set of
-Transformer weights, and the end result is able to do a wide variety of tasks
-if you can turn that task into a prompt of text to seed the model. Those tasks
-include translation, summarization, generating simple React UIs and functions
-from documentation, Q&A sessions, and so on. (REMEMBER TO ADD LINKS TO EXAMPLES.)
-There are definitely flaws in thes
-model, but the sheer breadth of tech demos is kind of absurd.
+Transformer weights. The end result demonstrates a surpisingly wide breadth
+of knowledge that can be narrowed into many different tasks, as long as
+you can turn that task into a prompt of text to seed the model. It definitely
+has flaws, but the sheer breadth of tech demos people have shared is kind of
+absurd.
 
-GPT-3 is a concrete example of both points 1 and 2, better tooling and better
-unsupervised learning. The code generation demonstrations are especially interesting
-to me, since they look like early signs of a "Do What I Mean" programming tool.
-IDEs currently handle a lot of the grunt work, but if the existing tech demos
-could be made 5x better, I wouldn't be surprised if they become critical
-productivity boosters for nuts-and-bolts programming. Systems design and
-debugging will likely stick to humans, but a lot of programming is just
-coloring inside the lines. Even a simple do-what-I-mean tool should be a big
+GPT-3 is a concrete example of both of my previous points, better tooling and better
+unsupervised learning. The larger model is good enough to drive better
+coherence and long-term prediction, and the end result looks like it could
+drive better tools.
+The code generation demonstrations are especially interesting
+to me, since they look like early signs of a "Do What I Mean" programming.
+If the existing tech demos could be made 5x better, I wouldn't be surprised if
+they become critical productivity boosters for nuts-and-bolts programming.
+Systems design and debugging will likely stick to humans, but a lot of
+programming is just coloring inside the lines. Even a simple do-what-I-mean
+tool could be a game changer, in the same way that even pre-2000 search engines
+were still incredibly popular.
+(For reference: [AltaVista](https://en.wikipedia.org/wiki/AltaVista) was the
+11th most visited website in 1998.)
+
+One of the things that's made me pessimistic about hyperparameter optimization
+and domain randomization is that they don't just need a lot of compute, they also
+need someone to implement every dimension of the search space. This was my
+main criticism of the OpenAI Rubik's Cube post - the paper read like a year long
+descent into understanding all the factors they needed to randomize for their
+Rubik's Cube simulator, many of which were unintuitive, 
+
 boon. And overall, it's pretty remarkable that most of this behavior is
 emergent from getting good at predicting the next character of text a human would
 write.
