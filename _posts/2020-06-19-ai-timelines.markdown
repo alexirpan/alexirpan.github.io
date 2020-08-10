@@ -129,7 +129,7 @@ easier, especially if you get 10 experts with different skill sets
 to work together on a common goal. This is how corporations become a thing.
 
 
-Semi-Supervised and Unsupervised Learning is Getting Better
+Semi-Supervised and Unsupervised Learning are Getting Better
 -------------------------------------------------------------------------------
 
 I have been pretty impressed with the semi-supervised and unsupervised learning progress in the
@@ -208,7 +208,7 @@ A lot of Big Data hype was driven by plots showing data was getting created
 faster than Moore's Law. Much of the hype fizzled out because uninformed
 executives didn't understand that having data is not the same as having *useful*
 data for machine learning, and you still needed well-designed data extraction
-to get something good, meaing the true amount of usable data was much smaller
+to get something good, meaning the true amount of usable data was much smaller
 than at first glance.
 But the joke will be on us when unsupervised
 learning gets better, and even junk data becomes marginally useful.
@@ -270,8 +270,8 @@ Those approaches have long had a key limitation: even if you assume infinite
 compute, someone has to implement
 the code that provides a clean API from experiment parameters
 to final performance. The explorable search space is fundamentally
-limited by what search space humans think are interesting. If you don't
-envision part of the search space, you can't explore it. Domain randomization
+limited by what dimensions of the search space humans think of. If you don't
+envision part of the search space, machine learning can't explore it. Domain randomization
 in robot learning has the same problem.
 This was my
 main criticism of the [OpenAI Rubik's Cube result]({% post_url 2019-10-30-openai-rubiks %}) -
@@ -437,5 +437,5 @@ as true for image data. In other words, I may be overestimating research by
 only looking at problems where it's more likely to succeed.
 
 I entirely expect something to go wrong in the research agenda. That's why I'm
-only adjusting my estimates by a few years. But so far, I have only seen reasons
-to speed up my estimates, not slow them down.
+only adjusting my estimates by a few years. But so far, I have mostly seen reasons
+to speed up my estimates, rather than slow them down.
