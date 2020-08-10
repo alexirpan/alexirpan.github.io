@@ -204,11 +204,19 @@ The scaling numbers for unsupervised language modelling from
 $$N^{0.74}$$ relationship, or 5.5x as much data per order of magnitude, but
 that data requirement is much easier to achieve.
 
-Is unsupervised learning there already? I don't think so, but it is closer than
+A lot of Big Data hype was driven by plots showing data was getting created
+faster than Moore's Law. Much of the hype fizzled out because uninformed
+executives didn't understand that having data is not the same as having *useful*
+data for machine learning, and you still needed well-designed data extraction
+to get something good, meaing the true amount of usable data was much smaller
+than at first glance.
+But the joke will be on us when unsupervised
+learning gets better, and even junk data becomes marginally useful.
+
+Is unsupervised learning there already? Definitely not, but it *is* closer than
 I expected it to be. I expect to see more papers use data sources that aren't
 relevant to their target task, and more "ImageNet moments" where applications
-are built off of the shoulders of someone else's GPU time, rather than from
-scratch.
+are built by standing on the shoulders of someone else's GPU time.
 
 
 GPT-3 Results are Qualitatively Better than I Expected
@@ -254,25 +262,35 @@ were still incredibly popular.
 (For reference: [AltaVista](https://en.wikipedia.org/wiki/AltaVista) was the
 11th most visited website in 1998.)
 
-One of the things that's made me wary about hyperparameter optimization
-and domain randomization is that even if you assume access to infinite compute,
-you still need
-need someone to implement every dimension of the search space. This was my
-main criticism of the [OpenAI Rubik's Cube result]({% post_url 2019-10-30-openai-rubiks %}).
-The paper read like a year long
-descent into deeply understanding all the perturbations they needed to apply
-to a Rubik's Cube simulator, and implementing an API that let them do so. But,
-that kind of work is potentially easier if you can write code faster.
+One specific way I could see that being useful is for ML for ML efforts, like
+neural architecture search and black-box hyperparamter optimization. One of
+the common arguments around AGI is intelligence explosion, and that class
+of methods has been viewed as a potential intelligence explosion mechanism.
+Those approaches have long had a key limitation: even if you assume infinite
+compute, someone has to implement
+the code that provides a clean API from experiment parameters
+to final performance. The explorable search space is fundamentally
+limited by what search space humans think are interesting. If you don't
+envision part of the search space, you can't explore it. Domain randomization
+in robot learning has the same problem.
+This was my
+main criticism of the [OpenAI Rubik's Cube result]({% post_url 2019-10-30-openai-rubiks %}) -
+the paper read like a year long discovery of the Rubik's Cube
+domain randomization search space, rather than any generalizable robot
+learning lesson.
+
+If, whenever you discovered a new dimension you wanted to add to the search
+space, you could very quickly implement the code changes necessary to do so...
+then those methods would be a lot better.
 
 There are certainly problems with the current model. It has a fixed attention
 window, it doesn't have a way to learn anything it doesn't already know, and
 determining what it does know requires figuring out how to prompt GPT-3 in the
 right way. But, this reminds me a lot of early search engines. As a kid I was
-taught ways to structure my search queries to make better results appear more
+taught ways to structure my search queries to make good results appear more
 often, and we dealt with it because the gains were worth it.
 
-In short, I don't know where this leads, nor whether the economics work out,
-but there's *something* here.
+In short, I don't know where this leads, but there's *something* here.
 
 
 I Now Expect Compute to Play a Larger Role, and See Room for Models to Grow
@@ -281,9 +299,9 @@ I Now Expect Compute to Play a Larger Role, and See Room for Models to Grow
 For reasons I don't want to get into in this post, I don't like arguments where
 people make up a compute estimate of the human brain, take a Moore's Law curve,
 extrapolate the two out, and declare that AGI will happen when the two curves
-intersect.
+intersect. I believe they oversimplify the discussion.
 
-It cannot be denied that compute plays a role in ML progress. But how much
+However, it's undeniable that compute plays a role in ML progress. But how much
 are AI capabilities driven by scaling up existing models, and how much is driven
 by new ML ideas? In 2015, my guess was that 50% of AGI progress would come from
 compute and 50% would come from better algorithms. There were several things
@@ -296,7 +314,9 @@ many human-like learning behaviors could just be emergent properties of larger
 models. I also suspect that many things humans view as
 "intelligent" or "intentional" are neither. We just want to think we're
 intelligent and intentional. We're not, and the bar ML models need to cross is
-not as high as we think.
+not as high as we think. That speeds up timelines, because ML ideas are bottlenecked
+by the size of the ML community, whereas faster hardware is powered by
+worldwide consumer demand.
 
 Let's go back to GPT-3 for a moment. GPT-3 is not the largest Transformer
 you could build, and there are reasons to build a larger one.
@@ -320,12 +340,13 @@ for image generation? Also no. Models with more inductive priors did better
 than both.
 However, these questions miss the point OpenAI is making:
 *a large enough Transformer is not state-of-the-art, but it does well enough
-on these very different data formats.* I've gotten the impression that it's hard
-to learn across a combination of input modalities, but it should be a lot easier
-to do so if the same neural net architecture is used for each input stream.
-Once you add audio and video as potential training data, there should definitely
-be enough data to train a larger unsupervised model. If you get lucky,
-it may even work.
+on these very different data formats.* By default I assume it's hard
+to learn across multimodal inputs, but processing audio + image + text
+simultanenously should be easier if it all goes through a similar neural net
+architecture. It helps that OpenAI can leverage any intuition they already have
+about very large Transformers. Once you add in other data streams, there should
+definitely be enough data to train much larger unsupervised models, assuming
+scaling laws hold up.
 
 Are large Transformers the last model architecture we'll use? No, probably not.
 But I do see room for them to do more than they've done so far.
@@ -333,68 +354,6 @@ Model architectures are only
 going to get better, so the capabilities of scaling up current models must be
 a lower bound on what could be possible 10 or 20 years from now - and what looks
 possible right now is already interesting and slightly worrying.
-
-
-ML techniques have become increasingly general, and employees at OpenAI see
-this as a big deal. They said as much [when I criticized their decision
-to discuss their robotics research at a DotA 2 event](https://twitter.com/jackclarkSF/status/1026813527850450944).
-Why?
-
-Consider the state of machine learning before deep learning started taking
-over several fields. Computer vision models were based on [SIFT features](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform).
-Machine translation was based on [parse trees](https://en.wikipedia.org/wiki/Parse_tree).
-Speech recognition was based on recognizing [phonemes](https://en.wikipedia.org/wiki/Phoneme)
-and composing them together.
-
-I'll be honest - I have very little experience with any of the 3 things I just
-linked. Depite this, I could start work in any of those fields today. Why? Because
-state-of-the-art models for all three have been taken over by neural nets, and
-I understand neural nets.
-
-This is one of the deep learning trends that people didn't appreciate at the time.
-When lots of fields converge to using the same set of techniques, it's easier
-for people to share progress and ideas, and more people can benefit from that
-shared progress. A convolutional neural
-net is a model with a heavy prior towards considering nearby values. That's good
-for image recognition, but ended up having applications to genomics and music
-generation. A transformer is a sequence model, which is good for understanding
-language, but also can be applied to video understanding. The ML community
-has spent the past few years building more powerful primitives that everything
-else builds off of.
-
-As far as I know, OpenAI doesn't have an audio team. Their founding team had a
-lot of image generation experts, but many of them have left the company since
-then. So
-
-For now, OpenAI is essentially making a bet that building intuition about large
-transformers is *sufficient* to get good results at large enough scale. Sure,
-it would be great if they
-OpenAI is essentially
-
-To me, it sure seems like OpenAI is going all-in on understanding how to train
-really big Transformer models. They aren't as good at images and audio as more dedicated
-architectures, but they handle it well enough that maybe you can rely on
-your big Tranformer intuition and scale.
-you can get away with
-not caring about that. Once everything is unified under one model architecture,
-you can also focus all effort on building intuition for what large transformers
-do, rather than anything else.
-
-I'm not saying you can ignore prior work or experience. AlphaGo was a victory for
-CNNs and RL, but it was developed by people who had been working on Computer Go
-for years, with the consulting help of pro-level Go players. There's intuition
-about the target task, and intuition about the methods you're using to get there.
-Intuition about neural nets only covers the latter.
-
-If there is evidence that transformers can handle audio and images, and you
-don't have a dedicated audio understanding team, then 
-
-To me, it sure seems like OpenAI is going all-in on understanding how to train
-really big Transformer models. They aren't as good at images and audio as more dedicated
-architectures, but they handle it well enough that maybe you can get away with
-not caring about that. Once everything is unified under one model architecture,
-you can also focus all effort on building intuition for what large transformers
-do, rather than anything else.
 
 
 The Big Picture
@@ -410,160 +369,73 @@ problems need to be solved to get to artificial general intelligence?" What
 waypoints do you expect the field to hit on the road to get there, and how
 much uncertainty is there about the path between those waypoints?
 
-I feel like more of those waypoints are becoming clearer to me. I feel like
-if you asked 2015-me how we'd build AGI, I'd tell you I have no earthly idea.
-A lot of challenges I'd associate with human-level intelligence would need to
-be solved by technology so advanced I'd just call it magic, and there is no
-principled way to predict when that would happen, besides assigning lower
-likelihood to near-term outcomes. But 2020-me has *some* ideas how it could
-happen, if you get lucky, and that feels like the biggest shift.
+I feel like more of those waypoints are coming into focus.
+If you asked 2015-me how we'd build AGI, I'd tell you I have no earthly idea.
+I didn't feel like we had meaningful in-roads on any of the challenges I'd
+associate with human-level intelligence.
+If you ask 2020-me how we'd build AGI, I still see a lot of gaps, but I have
+*some* idea how it could happen, assuming you get lucky. That feels like the
+biggest shift.
 
-Assuming AGI is possible without many more new ideas, here is one potential
-story how that happens: someone eventually develops an app so useful that
-models of GPT-3's size or larger becomes a huge productivity multiplier. Something
-like a true Do What I Mean coding tool, that still fails a lot, but it
-accurate enough that human work shifts towards code verification rather than
-code writing. This enables trying many of the research ideas that people would
-implement "if they had time to" - the kinds that researchers currently pawn off
-to interns. This is all valuable enough that the economics actually work out,
-people pay enough to cover the inference costs, and this is enough to fund
-buying more hardware, which enables even larger training. As we've seen with
-most cloud compute platforms, you buy excess CPUs to anticipate spikes in
-consumer demand, but can then sell access to the extra CPUs to earn money -
-or in this case, you send the CPUs to researchers.
+Assuming AGI is possible without many more new ideas (and that's a big
+assumption), here is one way it could happen:
+someone eventually develops an app so useful that
+models of GPT-3's size or larger are huge productivity multipliers. Imagine
+the first computers, or Lotus Notes, or Microsoft Excel taking over the
+business world.
+It's valuable enough that the economics actually work out, and people are
+willing to pay enough to cover the inference costs and turn a profit.
+That funds buying more hardware, which enables even larger training runs.
+As we've seen with cloud computing, you buy excess hardware to anticipate spikes in
+consumer demand, but can then sell access to the extra hardware to earn money -
+except in this scenario, instead of a cloud computing service, you just give
+the excess compute capacity to research.
 
 Meanwhile, cross-modality learning turns out to be easier than expected at scale,
 and we discover similar emergent properties. Object tracking and intuitive
 physics turn out to be naturally occuring phenemenon that are learnable just
 from images, without direct environment interaction. With more tweaks, even
 larger models, and even more data, you end up with a rich feature space for
-images, text, and audio, that is indistinguishable from understanding all 3
-domains. At that point, what sensors inputs do humans have, that this
-hypothetical model doesn't?
-I think it's entirely plausible that intelligence doesn't require
-living in a body, whether it's made of muscle and bone or metal and wires.
+images, text, and audio. It quickly becomes unthinkable to train anything from
+scratch. Why would you? Much of the prior work in several fields gets obsoleted,
+going the way of
+[SIFT features](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform)
+for vision, [parse trees](https://en.wikipedia.org/wiki/Parse_tree) for
+machine translation, and
+[phoneme decoding steps](https://en.wikipedia.org/wiki/Phoneme) for speech
+recognition. People who don't know any of those techniques are working on
+neural nets that solve the task anyways, and that's faintly sad, but it is what
+it is.
 
-There should be old industry slide decks for Big Data,
-talking about how Big Data scales bigger than Moore's law, and the classic
-problem with those slide decks is that they never explained how to use
-the data effectively. Historically, targeted, well-designed data extraction
-has been necessary to get good performance, but unstructured data is
-everywhere.
+As models grow larger, and continue to demonstrate improved performance,
+research coalesces around a small pool of methods that have been shown to scale
+with compute. That's still happening with deep learning. When lots of fields
+use the same set of techniques, you get more knowledge sharing and that
+drives better research. CNNs have heavy priors towards considering nearby
+values, were first useful for image recognition, but now have implications for
+genomics and music generation. Transformers are a sequence model that first
+happened for language modelling, but can also be applied to video understanding.
+That trend is likely to continue.
 
+At that point, what sensor inputs do humans have, that this hypothetical model
+doesn't? I believe it's mostly the sensors tied to physical embodiment,
+like taste, touch, and smell. I think it's entirely plausible that intelligence
+doesn't require any of that. That starts looking eerily close to AGI to me.
 
-One of the common arguments around AGI is intelligence explosion - that a
-more capable system will be able to improve itself faster, which will let it
-improve itself even faster than before, and so on. Machine learning is in
-many ways the field of automating decision making, and people have been trying
-to apply ML to ML for years, most recently with neural architecture search
-and black-box hyperparameter optimization.
+There's a lot that has to go right for that path to work. You need multimodal
+learning to be easier than expected. You need to continue to have more behaviors
+emerge out of scaling, because your researcher time is primarily going into
+ideas that help you scale. Hardware has to match pace, which includes funding,
+energy usage, and maintenance. The scaling hypothesis has to keep being true,
+and unsupervised learning has to keep performing better.
 
-These approaches have long had a key limitation: someone must implement the
-code that enables a clean API between requested hyperparameter or model
-architecture, to implemented model, to final performance, and the search
-space you can explore is fundamentally limited by what search space humans
-feel are important. In robot learning, sim-to-real transfer via domain
-randomization has the same problem.
+The most likely issue I see is if unsupervised learning is harder for domains
+besides language. In 2015, unsupervised learning was given word vectors for
+text, and nothing at that level for images. Perhaps the compositional properties
+of language make it well suited to unsupervised learning, in a way that isn't
+as true for image data. In other words, I may be overestimating research by
+only looking at problems where it's more likely to succeed.
 
-Approaches like neural architecture search and black-box
-optimization of hyperparameters have long tried to automate more of the ML
-iteration process, but one of their key limitations is that someone must
-implement all the code that provides a clean API from "hyperparam / model architecture",
-to the actual model, to the final performance. Simulator randomizations for
-sim-to-real robot learning has a similar limitation - at a certain point,
-simulators are cheap enough that you aren't bottlenecked on how many sims you
-can run. You're bottlenecked by whether you have implemented all possible paths
-you want the model to explore. Your architecture search can't try dropout if
-you haven't implemented dropout as an option. It can't try layer norm or
-instance norm instead of batch norm if you haven't added that as a configurable.
-And so on.
-
-
-
-OpenAI has been pushing how far giant Transformer architectures can go, and so
-far the answer is "further than they've been pushed so far". They're getting
-more coherent at language generation, which is their strong point, but have okay
-results on music generation and image generation as well. Their music
-generation and image generation is still weaker than other models, but whether they
-are state-of-the-art isn't the point. What matters is the thesis that at
-sufficient scale, a giant Transformer can handle different modalities without
-completely failing.
-
-
-CUT
-
-Are large Transformers the last model architecture we'll use? No, probably not.
-But I do expect that despite what we've seen out of these models so far, we've
-yet to see the limits of what these models can do. Model architectures are only
-going to get better, so the capabilities of scaling up current models has to be
-a lower bound on what could be possible 10 or 20 years from now - and what looks
-possible from scaling up current models is already both interesting and slightly
-worrying.
-
-
-ML techniques have become increasingly general, and employees at OpenAI see
-this as a big deal. They said as much [when I criticized their decision
-to discuss their robotics research at a DotA 2 event](https://twitter.com/jackclarkSF/status/1026813527850450944).
-Why?
-
-Consider the state of machine learning before deep learning started taking
-over several fields. Computer vision models were based on [SIFT features](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform).
-Machine translation was based on [parse trees](https://en.wikipedia.org/wiki/Parse_tree).
-Speech recognition was based on recognizing [phonemes](https://en.wikipedia.org/wiki/Phoneme)
-and composing them together.
-
-I'll be honest - I have very little experience with any of the 3 things I just
-linked. Depite this, I could start work in any of those fields today. Why? Because
-state-of-the-art models for all three have been taken over by neural nets, and
-I understand neural nets.
-
-This is one of the deep learning trends that people didn't appreciate at the time.
-When lots of fields converge to using the same set of techniques, it's easier
-for people to share progress and ideas, and more people can benefit from that
-shared progress. A convolutional neural
-net is a model with a heavy prior towards considering nearby values. That's good
-for image recognition, but ended up having applications to genomics and music
-generation. A transformer is a sequence model, which is good for understanding
-language, but also can be applied to video understanding. The ML community
-has spent the past few years building more powerful primitives that everything
-else builds off of.
-
-As far as I know, OpenAI doesn't have an audio team. Their founding team had a
-lot of image generation experts, but many of them have left the company since
-then. So
-
-For now, OpenAI is essentially making a bet that building intuition about large
-transformers is *sufficient* to get good results at large enough scale. Sure,
-it would be great if they
-OpenAI is essentially
-
-To me, it sure seems like OpenAI is going all-in on understanding how to train
-really big Transformer models. They aren't as good at images and audio as more dedicated
-architectures, but they handle it well enough that maybe you can rely on
-your big Tranformer intuition and scale.
-you can get away with
-not caring about that. Once everything is unified under one model architecture,
-you can also focus all effort on building intuition for what large transformers
-do, rather than anything else.
-
-I'm not saying you can ignore prior work or experience. AlphaGo was a victory for
-CNNs and RL, but it was developed by people who had been working on Computer Go
-for years, with the consulting help of pro-level Go players. There's intuition
-about the target task, and intuition about the methods you're using to get there.
-Intuition about neural nets only covers the latter.
-
-If there is evidence that transformers can handle audio and images, and you
-don't have a dedicated audio understanding team, then 
-
-To me, it sure seems like OpenAI is going all-in on understanding how to train
-really big Transformer models. They aren't as good at images and audio as more dedicated
-architectures, but they handle it well enough that maybe you can get away with
-not caring about that. Once everything is unified under one model architecture,
-you can also focus all effort on building intuition for what large transformers
-do, rather than anything else.
-
-So, going back to dataset requirements: if you can successfully get multimodal
-learning to work, and if there are comparable scaling laws for image data
-and audio data, then you can certainly find enough data to saturate a significantly
-larger model. There are open questions on how to do multimodal learning
-correctly, but you should definitely be able to get *something* out of it.
+I entirely expect something to go wrong in the research agenda. That's why I'm
+only adjusting my estimates by a few years. But so far, I have only seen reasons
+to speed up my estimates, not slow them down.
