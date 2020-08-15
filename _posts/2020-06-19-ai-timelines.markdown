@@ -4,6 +4,9 @@ title:  "My AI Timelines Have Sped Up"
 date:   2020-06-19 15:06:00 -0700
 ---
 
+(For this post, I'm going to take artificial general intelligence to mean
+an AI system that matches or exceeds humans at economically valuable work.)
+
 In 2015, I made the following forecasts about artificial general intelligence
 (AGI).
 
@@ -17,11 +20,12 @@ Now that it's 2020, I'm updating my forecast to:
 * 50% chance by 2045
 * 90% chance by 2070
 
-Or in short, I'm keeping the 90% line the same, but shifting everything else to
-be faster. I'm not going to have a good argument for why I chose to move things
-by 10 years, instead of 5 or 15 years. The amount of change is a gut feeling.
-The important parts are what parts of my thinking have changed - you can choose
-your own adjustment based on that.
+I'm keeping the 90% line the same, but shifting everything else to
+be faster. Now, if you're looking for an argument of why I picked these particular
+years, and why I shifted by 10 years instead of 5 or 15, you're going to be
+disappointed. Both are driven by a gut feeling.
+What's important is why parts of my thinking have changed - you can choose
+your own timeline adjustment based on that.
 
 Let's start with the easy part first.
 
@@ -43,11 +47,11 @@ so now I'm allocating 35 years to the 10%-90% interval instead of 25 years.
 
 I also noticed that my 2015 prediction placed 10% to 50% in a 5 year range,
 and 50% to 90% in a 20 year range. AGI is a long-tailed event, and there's
-a real possibility it's never viable, but a 5-20 split is absurdly skewed,
-so I'm adjusting accordingly.
+a real possibility it's never viable, but a 5-20 split is absurdly skewed.
+I'm adjusting accordingly.
 
-While doing so, I decided to shift the 10% and 50% lines to be closer to
-present day. The remainder of the post is justifying this.
+Now we're at the hard part. Why did I choose to shift the 10% and 50% lines
+closer to present day?
 
 
 I Didn't Account for Better Tools
@@ -56,30 +60,32 @@ I Didn't Account for Better Tools
 Three years ago, I was talking to someone about AGI, and they mentioned
 that [there was no fire alarm for AGI](https://intelligence.org/2017/10/13/fire-alarm/).
 I told them I knew Eliezer Yudkowsky had written another post about AGI, and
-I'd seen it shared all over Facebook, but I hadn't gotten around to reading it.
+I'd seen it shared among Facebook friends, but I hadn't gotten around to reading it.
 They summarized it as, "It will never be obvious when AGI is going to occur.
 Even a few years before it happens, it will be possible to argue AGI is far
-away, and by the time its common knowledge that AI safety is the most
+away. By the time it's common knowledge that AI safety is the most
 important problem in the world, it'll be too late."
 
 And my reaction was, "okay, that's the same story I got from my Facebook
 timeline. I already know the story of
 Fermi predicting [a nuclear chain reaction was very likely
 to be impossible](https://books.google.com/books?id=aSgFMMNQ6G4C&pg=PA813&lpg=PA813&dq=weart+fermi&source=bl&ots=Jy1pBOUL10&sig=c9wK_yLHbXZS_GFIv0K3bgpmE58&hl=en&sa=X&ved=0ahUKEwjNofKsisnWAhXGlFQKHbOSB1QQ6AEIKTAA#v=onepage&q=%22ten%20per%20cent%22&f=false), and even more recently we had
-[Rémi Coulom state that superhuman Go-players was about 10 years away](https://www.wired.com/2014/05/the-world-of-computer-go/), two years before AlphaGo beat Lee SeDol."
+[Rémi Coulom state that superhuman Go was about 10 years away](https://www.wired.com/2014/05/the-world-of-computer-go/),
+one year before [the first signs it could happen](https://arxiv.org/abs/1412.6564),
+and two years before [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol) made it official."
 I decided it wasn't worth my time to read it.
 
-I now need to retroactively complain to all my Facebook friends who
-liked the common knowledge and historical knowledge parts, because although
-that summary is *correct*, the ideas I found useful were *everything
-outside that summary*. I trusted you, filter bubble! How could you let me
+I now need to retroactively complain to all my Facebook friends who only
+discussed historical events and common knowledge. Although
+that summary is *correct*, the ideas I found useful were all
+*outside that summary*. I trusted you, filter bubble! How could you let me
 down like this?
 
-Part of the linked posts proposes hypotheses for why people claim AGI is
+Part of the fire alarm post proposes hypotheses for why people claim AGI is
 impossible. One of the hypotheses is that researchers pay too much attention
 to the difficulty of getting something working with their current tools,
-then extrapolate that difficulty to future, and conclude their current tools
-could never create AGI.
+extrapolate that difficulty to future, and conclude they could never create
+AGI.
 This is a bad argument because your extrapolation needs to account for
 research tools also improving over time.
 
@@ -91,20 +97,23 @@ CNN architecture tuning instead. SIFT features were the old tool,
 convolutional neural nets are the new tool, and computer vision is the application
 that's been supercharged by the better tool.
 
-Whereas for me, I'm not a big vision person. I think ML for control is a much
-more interesting problem, but you have to do computer vision to do control
-in image-based environments. So for me, computer vision is the tool, robotics
+Whereas for me, I'm not a computer vision person. I think ML for control is a much
+more interesting problem. However, you have to do computer vision to do control
+in image-based environments, and if you want to handle the real-world, image-based
+inputs are the most flexible input space. So for me, computer vision is the tool, robotics
 is the application, and the improvements in computer vision have driven many
-of the promising real robot learning results.
+promising robot learning results.
 
-I'm a big advocate for research tools - I think on average, people underestimate
+I'm a big advocate for research tools. I think on average, people underestimate
 their impact. So after reading that hypothesis that people don't forecast
 tool improvement properly, I thought for a bit, and decided I hadn't properly
 accounted for it either. That deserved shaving off a few years.
 
 In the more empirical sides of ML, the obvious components of progress are your
 ideas and computational budget, but there are less obvious ones too, like
-your coding skills, debugging skills, and ability to use available compute.
+your coding skills, debugging skills, and ability to utilize your compute.
+It doesn't matter how many processors you have per machine, if your code doesn't
+use all the processors available.
 There are a surprising number of ML applications where the main value-add is
 better data management and data summarization, rather than any learned model,
 because those tools free up decision making time for the rest of the
@@ -114,7 +123,7 @@ In general, everyone's research tools are deficient in some way.
 Research is
 about doing something new, which naturally leads to discovering new problems,
 and it's highly unlikely someone's already made the perfect tool for a problem
-that didn't exist 3 months ago. But this also means that your current
+that didn't exist 3 months ago. So, your current
 research tools will *always* feel janky, and you shouldn't be using that to
 argue anything about timelines.
 
@@ -123,8 +132,8 @@ these improvments have multiplicative benefits. Multiplicative factors
 can be very powerful.
 One simple example is that to get 10x better results, you can either make one
 thing with a 10x better paradigm shift, or you can make ten different things
-[1.26x better](https://www.google.com/search?&q=1.26^10) and they'll combine to
-a 10x total improvement. The latter is just as transformative but can be much
+[1.26x better](https://www.google.com/search?&q=1.26^10), and they'll combine to
+a 10x total improvement. The latter is just as transformative, but can be much
 easier, especially if you get 10 experts with different skill sets
 to work together on a common goal. This is how corporations become a thing.
 
@@ -132,45 +141,51 @@ to work together on a common goal. This is how corporations become a thing.
 Semi-Supervised and Unsupervised Learning are Getting Better
 -------------------------------------------------------------------------------
 
-I have been pretty impressed with the semi-supervised and unsupervised learning progress in the
+I have been pretty impressed with semi-supervised and unsupervised learning progress in the
 past few months. Momentum Contrast from [He et al, CVPR 2020](https://arxiv.org/abs/1911.05722)
-did pretty good, SimCLR from [(Chen et al, ICML 2020)](https://arxiv.org/abs/2002.05709) improved
+was quite nice, SimCLR from [(Chen et al, ICML 2020)](https://arxiv.org/abs/2002.05709) improved
 on that, and Bootstrap Your Own Latent [(Grill, Strub, Altché, Tallec, Richemond et al, 2020)](https://arxiv.org/abs/2006.07733)
 has improved on that. And then there's [GPT-3](https://arxiv.org/abs/2005.14165),
 but I'll get to that later.
 
 Unsupervised learning has historically been in this weird position where it is
-obviously the right way to do learning, and also a complete waste of time for
-most problems. On one hand, humans don't have labels for most things they learn,
-and ML systems should not need labels to learn. On the other hand, in 2015, the
-deep learning boom was powered by supervised learning on
+obviously the right way to do learning, and also a complete waste of time if
+you want something to work now.
+On the one hand, humans don't have labels for most things they learn,
+so ML systems shouldn't need labels either. On the other hand, the
+deep learning boom of 2015 was mostly powered by supervised learning on
 large, labeled datasets.
 Richard Socher had a notable tweet at the time:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Rather than spending a month figuring out an unsupervised machine learning problem, just label some data for a week and train a classifier.</p>&mdash; Richard Socher (@RichardSocher) <a href="https://twitter.com/RichardSocher/status/840333380130553856?ref_src=twsrc%5Etfw">March 10, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Rather than spending a month figuring out an unsupervised machine learning problem, just label some data for a week and train a classifier.</p>&mdash; Richard Socher (@RichardSocher) <a href="https://twitter.com/RichardSocher/status/840333380130553856?ref_src=twsrc%5Etfw">March 10, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Not to say that unsupervised learning was never useful. Even in 2010, it was
 common wisdom that deep networks should go through an unsupervised pre-training
 step before starting supervised learning. See [(Erhan et al, JMLR 2010)](https://jmlr.csail.mit.edu/papers/volume11/erhan10a/erhan10a.pdf).
 Self-supervised word vectors like [GloVe](https://nlp.stanford.edu/projects/glove/)
 and [word2vec](https://en.wikipedia.org/wiki/Word2vec) were also doing
-interesting things. These felt like exceptions to the rule, and I held ImageNet
+interesting things around 2015. These felt like exceptions to the rule, and I held ImageNet
 features as the main example of general behavior - and those features were
 learnt through labeled classification.
 
-The trendlines were pointing to larger models, and larger labeled datasets, and
+When I was thinking through what made ML hard, the trendlines were pointing to larger
+models and larger labeled datasets. They're still pointing that way now.
 I concluded that future ML progress would be bottlenecked by labeling requirements.
 Defining a 10x bigger model is easy. *Training* a 10x bigger model is harder, but
 it doesn't need 10x as many people to work on it. Getting 10x as many labels
-does. And yes, data labeling tools are getting better, but labels are fundamentally
+does. And yes, data labeling tools are getting better, and there are even
+startups whose missions are to provide fast data labeling as a service.
+But labels are fundamentally
 a question about human preferences, and that makes it hard to escape human
-labor. Reward functions in RL have a similar issue. In principle, the model
-figures it out after you define what success looks like. In practice, you need
+labor.
+
+Reward functions in reinforcement learning have a similar issue. In principle, the model
+figures out a solution after you define what success looks like. In practice, you need
 a human to check the model isn't hacking the reward, or your reward function
 is implicitly defined by human raters, which just turns into the same labeling
 problem.
 
-These labeled datasets don't appear out of nowhere. They take deliberate,
+Large labeled datasets don't appear out of nowhere. They take deliberate,
 sustained effort to generate. There's a reason [ImageNet won the Test of Time
 award at CVPR 2019](https://www.computer.org/publications/tech-news/events/ieee-cvpr-conference-on-computer-vision-and-pattern-recognition-2019-awards-records) -
 the authors of that paper went out and did the work.
@@ -180,40 +195,45 @@ by orders of magnitude, then you'd hit a point where the amount of human
 supervision needed to make progress would be insane.
 
 (This isn't even getting into the problem of labels being imperfect. We've
-found that a lot of labeled datasets carry lots of bias within them, which
-isn't surprising, but a laissez-faire labeling system isn't going to fly
-these days.)
+found that a lot of labeled datasets carry lots of bias within them. That
+isn't surprising, but now that it's closer to common knowledge,
+a laissez-faire labeling system isn't going to fly anymore.)
 
-One way out of this is if you don't need 10x as many labels. It turns out that's
-true, at least according to
+Okay. Well, if 10x labels is a problem, are there ways around that problem?
+One way is if you don't need 10x as many labels.
+It turns out that's true, at least according to
 [(Hestness et al, 2017)](https://arxiv.org/abs/1712.00409), which found that
 image classification models have followed a trendline of "$$N$$ parameters,
-$$N^{0.57}$$ examples". (Up to constant factors).
-So a 10x larger model needs 3.7x as many labels, which is certainly better, but
-doesn't solve the issue of needing to improve labeling by 3.7x for every
-order of magnitude you want to scale...
+$$N^{0.57}$$ examples", Up to constant factors.
+So a 10x larger model doesn't need 10x as many labels, it just needs 3.7x as
+many labels. That's certainly better, but a 3.7x factor for every order
+of magnitude you want to scale still felt like a lot...
 
-However, now that unsupervised learning is starting to get there, these challenges
-are getting a lot easier. I'm not sure people appreciate the potential here.
-At sufficient scale, it turns out its okay for your data to be messy. The same
-quantity of labeled data will be better, but remember, labels take effort -
+Enter unsupervised learning. These labelling challenges are getting a lot
+easier, because what "label" means is starting to shift to something easier
+to obtain.
+At sufficient scale, it's looking like its okay for your labels to noisy and
+your data to be messy.
+I'm not sure people appreciate the potential here. If you have $$N$$
+unsupervised examples, then yes, $$N$$ labeled examples will be better,
+but remember that labels take effort -
 the size of your labeled dataset is limited by the supervision you can afford,
 and you can get much more unlabeled data for the same amount of effort.
 The scaling numbers for unsupervised language modelling from
 [(Kaplan and Candlish, 2020)](https://arxiv.org/abs/2001.08361) suggest a
 $$N^{0.74}$$ relationship, or 5.5x as much data per order of magnitude, but
-that data requirement is much easier to achieve.
+since that data is much easier to obtain, it's less effort than the 3.7x
+factor above.
 
 A lot of Big Data hype was driven by plots showing data was getting created
 faster than Moore's Law. Much of the hype fizzled out because uninformed
 executives didn't understand that having data is not the same as having *useful*
-data for machine learning, and you still needed well-designed data extraction
-to get something good, meaning the true amount of usable data was much smaller
-than at first glance.
-But the joke will be on us when unsupervised
-learning gets better, and even junk data becomes marginally useful.
+data for machine learning.
+The true amount of usable data was much smaller
+than at first glance. The research community had a big laugh, but the joke will
+be on us if unsupervised learning gets better and even junk data becomes marginally useful.
 
-Is unsupervised learning there already? Definitely not, but it *is* closer than
+Is unsupervised learning there already? Definitely not. 100% not. It *is* closer than
 I expected it to be. I expect to see more papers use data sources that aren't
 relevant to their target task, and more "ImageNet moments" where applications
 are built by standing on the shoulders of someone else's GPU time.
@@ -223,11 +243,11 @@ GPT-3 Results are Qualitatively Better than I Expected
 -------------------------------------------------------------------------------
 
 I had already updated my timeline estimates before people started toying
-with GPT-3, but GPT-3 was what motivated me to write a blog post explaining why.
+with GPT-3, but GPT-3 was what motivated me to write this blog post explaining why.
 
 What we're seeing with GPT-3 is that language is an incredibly flexible input
-space. People have known this for a while. I know NLP researchers like to
-say language understanding is an AI-Complete task, because a hypothetical
+space. People have known this for a while. I know an NLP professor who
+said language understanding is an AI-Complete task, because a hypothetical
 machine that perfectly understands and replies to all questions might as well
 be the same as a person. People have also argued that compression is a proxy
 for intelligence.
@@ -241,56 +261,63 @@ it happen for real. GPT-3 is many things, but its core is a system that uses lot
 training time to compress a very large corpus of text into a smaller set of
 Transformer weights. The end result demonstrates a surpisingly wide breadth
 of knowledge that can be narrowed into many different tasks, as long as
-you can turn that task into a prompt of text to seed the model. It definitely
-has flaws, but the sheer breadth of tech demos people have shared is kind of
+you can turn that task into a prompt of text to seed the model's output. It
+definitely has flaws, but the sheer breadth of tech demos people have shared is kind of
 absurd.
 It's also remarkable that most of this behavior is
 emergent from getting good at predicting the next token of text.
 
-GPT-3 is a concrete example of both of my previous points, better tooling and better
-unsupervised learning. The larger model is good enough to drive better
-coherence and long-term prediction, and the end result looks like it could
-drive better tools.
-The code generation demonstrations are especially interesting
-to me, since they look like early signs of a "Do What I Mean" programming.
+GPT-3 is a concrete example of the previous section (better unsupervised learning)
+and it's a sign of the first section (better tooling).
+Although there's a lot of fun stuff in story generation, I'm most interested
+in the [code generation demonstrations](https://twitter.com/sharifshameem/status/1282676454690451457).
+They look like early signs of a "Do What I Mean" programming interface.
 If the existing tech demos could be made 5x better, I wouldn't be surprised if
 they become critical productivity boosters for nuts-and-bolts programming.
 Systems design and debugging will likely stick to humans, but a lot of
-programming is just coloring inside the lines. Even a simple do-what-I-mean
-tool could be a game changer, in the same way that even pre-2000 search engines
-were still incredibly popular.
+programming is just coloring inside the lines. Even low levels of capability
+could be a game changer, in the same way as pre-2000 search engines.
 (For reference: [AltaVista](https://en.wikipedia.org/wiki/AltaVista) was the
-11th most visited website in 1998.)
+11th most visited website in 1998, and it's certainly worse than what
+Google/Bing/DuckDuckGo can do now.)
 
-One specific way I could see that being useful is for ML for ML efforts, like
+One specific way I could see code generation being useful is for ML for ML
+efforts, like
 neural architecture search and black-box hyperparamter optimization. One of
 the common arguments around AGI is intelligence explosion, and that class
-of methods has been viewed as a potential intelligence explosion mechanism.
-Those approaches have long had a key limitation: even if you assume infinite
+of black-box methods has been viewed as a potential intelligence explosion mechanism.
+However, they've long had a key limitation: even if you assume infinite
 compute, someone has to implement
 the code that provides a clean API from experiment parameters
 to final performance. The explorable search space is fundamentally
 limited by what dimensions of the search space humans think of. If you don't
-envision part of the search space, machine learning can't explore it. Domain randomization
+envision part of the search space, machine learning can't explore it.
+
+Domain randomization
 in robot learning has the same problem.
 This was my
 main criticism of the [OpenAI Rubik's Cube result]({% post_url 2019-10-30-openai-rubiks %}) -
 the paper read like a year long discovery of the Rubik's Cube
 domain randomization search space, rather than any generalizable robot
-learning lesson.
+learning lesson. The end result is based on a model exploring
+randomly generated simulations, but it only got there because of lots of effort
+determining which randomizations were worth implementing.
 
-If, whenever you discovered a new dimension you wanted to add to the search
-space, you could very quickly implement the code changes necessary to do so...
-then those methods would be a lot better.
+Now imagine that whenever you discovered a new unknown unknown, you could
+very quickly implement the code changes that add that dimension to the search
+space. Well, those methods sure look more promising!
 
-There are certainly problems with the current model. It has a fixed attention
+There are certainly problems with GPT-3. It has a fixed attention
 window, it doesn't have a way to learn anything it doesn't already know, and
-determining what it does know requires figuring out how to prompt GPT-3 in the
-right way. But, this reminds me a lot of early search engines. As a kid I was
+determining what it does know requires learning how to prompt GPT-3 to give
+the outputs you want. But, again, this reminds me a lot of early search engines.
+As a kid, I was
 taught ways to structure my search queries to make good results appear more
-often, and we dealt with it because the gains were worth it.
+often. Avoid short words, place important key words first, don't enter full
+sentences, etc. We dealt with it because the gains were worth it. GPT-3 feels
+similar.
 
-In short, I don't know where this leads, but there's *something* here.
+I don't know where this leads, but there's *something* here.
 
 
 I Now Expect Compute to Play a Larger Role, and See Room for Models to Grow
