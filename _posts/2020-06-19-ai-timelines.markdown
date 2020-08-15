@@ -252,7 +252,7 @@ machine that perfectly understands and replies to all questions might as well
 be the same as a person. People have also argued that compression is a proxy
 for intelligence.
 As argued on the [Hutter Prize](http://prize.hutter1.net/) website, to compress
-data, you must understand patterns in that data, and if you view pattern recognition
+data, you must recognize patterns in that data, and if you view pattern recognition
 as a key component of intelligence, then better compressors should be more
 intelligent.
 
@@ -308,14 +308,16 @@ very quickly implement the code changes that add that dimension to the search
 space. Well, those methods sure look more promising!
 
 There are certainly problems with GPT-3. It has a fixed attention
-window, it doesn't have a way to learn anything it doesn't already know, and
-determining what it does know requires learning how to prompt GPT-3 to give
-the outputs you want. But, again, this reminds me a lot of early search engines.
+window. It doesn't have a way to learn anything it hasn't already learned from
+trying to predict the next character of text.
+Determining what it does know requires learning how to prompt GPT-3 to give
+the outputs you want.
+But, again, this reminds me a lot of early search engines.
 As a kid, I was
 taught ways to structure my search queries to make good results appear more
 often. Avoid short words, place important key words first, don't enter full
-sentences, etc. We dealt with it because the gains were worth it. GPT-3 feels
-similar.
+sentences. We dealt with it because the gains were worth it. GPT-3 feels like
+it could be similar.
 
 I don't know where this leads, but there's *something* here.
 
@@ -329,9 +331,12 @@ extrapolate the two out, and declare that AGI will happen when the two curves
 intersect. I believe they oversimplify the discussion.
 
 However, it's undeniable that compute plays a role in ML progress. But how much
-are AI capabilities driven by scaling up existing models, and how much is driven
-by new ML ideas? In 2015, my guess was that 50% of AGI progress would come from
-compute and 50% would come from better algorithms. There were several things
+are AI capabilities driven by better hardware letting us scale existing models, and how much is driven
+by new ML ideas? This is a complicated question, especially because the two
+are not independent. New ideas enable better usage of hardware, and more hardware
+lets you try more ideas. My 2015 answer to the horrid simplification was that
+50% of AGI progress would come from
+compute, and 50% would come from better algorithms. There were several things
 missing between 2015 models, and something that put the "general" in
 artificial general intelligence. I was not convinced more compute would fix that.
 
@@ -341,19 +346,21 @@ many human-like learning behaviors could just be emergent properties of larger
 models. I also suspect that many things humans view as
 "intelligent" or "intentional" are neither. We just want to think we're
 intelligent and intentional. We're not, and the bar ML models need to cross is
-not as high as we think. That speeds up timelines, because ML ideas are bottlenecked
-by the size of the ML community, whereas faster hardware is powered by
-worldwide consumer demand.
+not as high as we think.
+
+If compute plays a larger role, that speeds up timelines. ML ideas are bottlenecked
+by the size and growth of the ML community, whereas faster hardware is powered by
+worldwide consumer demand. The latter is a much wider bottleneck.
 
 Let's go back to GPT-3 for a moment. GPT-3 is not the largest Transformer
 you could build, and there are reasons to build a larger one.
 If the performance of large Transformers scaled for 2 orders of magnitude
 (1.5B params for GPT-2, 175B params for GPT-3), then it wouldn't be too weird
 if they scaled for another 2 orders of magnitude. Of course, it might not,
-but I don't see a good argument why it shouldn't. Such a 100x model could
-once again have qualitative differences in behavior.
+but I don't see a good argument why we should be confident it shouldn't.
+Such a 100x model could once again have qualitative differences in behavior.
 
-There's certainly enough data for this.
+There's certainly enough data to train such a model.
 Focusing on GPT-3's text generation is missing the main plot thread.
 If you believe [the rumors](https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/),
 OpenAI has been working towards large scale multi-modal learning. So far, their
@@ -403,6 +410,21 @@ associate with human-level intelligence.
 If you ask 2020-me how we'd build AGI, I still see a lot of gaps, but I have
 *some* idea how it could happen, assuming you get lucky. That feels like the
 biggest shift.
+
+There is longstanding disagreement over what it means for an AI to learn
+something, or to understand something. I thought
+[To Dissect an Octopus](https://blog.julianmichael.org/2020/07/23/to-dissect-an-octopus.html)
+was a good summary of one such disagreement. There is also a longstanding
+tradition of finding ML models wasteful if they cost a lot of money and
+computing time to generate.
+
+Questions like that are good at driving discussion for places models fall
+short compared to humans, and poking at ways our existing models may be
+fundamentally deficient, but overall, I'm firmly on the side of "these questions
+may not even matter." Our understanding of how humans learn is still incomplete,
+but we still took over the planet. Similarly, we don't need to have fine-grained
+agreement on what "understanding" or "knowledge" means for AI systems to have
+far-reaching impacts on the world.
 
 Assuming AGI is possible without many more new ideas (and that's a big
 assumption), here is one way it could happen:
@@ -457,12 +479,13 @@ energy usage, and maintenance. The scaling hypothesis has to keep being true,
 and unsupervised learning has to keep performing better.
 
 The most likely issue I see is if unsupervised learning is harder for domains
-besides language. In 2015, unsupervised learning was given word vectors for
-text, and nothing at that level for images. Perhaps the compositional properties
+besides language. In 2015, unsupervised learning gave us word vectors for text,
+and nothing great for images.
+One reasonable hypothesis is that the compositional properties
 of language make it well suited to unsupervised learning, in a way that isn't
-as true for image data. In other words, I may be overestimating research by
+as true for image data. If that's true, I may be overestimating research by
 only looking at problems where it's more likely to succeed.
 
 I entirely expect something to go wrong in the research agenda. That's why I'm
-only adjusting my estimates by a few years. But so far, I have mostly seen reasons
-to speed up my estimates, rather than slow them down.
+only adjusting my estimates by a few years. But so far, I have mostly seen
+reasons to speed up my estimates, rather than slow them down.
