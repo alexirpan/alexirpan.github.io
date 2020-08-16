@@ -349,26 +349,21 @@ behavior by exploring lots of random simulations, but that model only got there
 because of the human effort spent
 determining which randomizations were worth implementing.
 
-Now imagine that whenever you discovered a new unknown unknown in your simulator,
-you could
-very quickly implement the code changes that add it to your doman randomization
-search space. Well, those methods sure look more promising!
+Now imagine that whenever you discovered a new unknown unknown, you could
+very quickly implement the code changes that add that dimension to the search
+space. Well, those methods sure look more promising!
 
 There are certainly problems with GPT-3. It has a fixed attention
 window. It doesn't have a way to learn anything it hasn't already learned from
 trying to predict the next character of text.
 Determining what it does know requires learning how to prompt GPT-3 to give
-the outputs you want, and those prompts may be very convoluted. Finally, it
-has no notion of intent or agency. It's a next-word predictor. That's all it's
-trying to be, and I'd guess that trying to change its training loss to add
-intent or agency would be much, much more difficult than it sounds. (And it
-already sounds quite difficult to me!)
-
+the outputs you want.
 But, again, this reminds me a lot of early search engines.
 As a kid, I was
 taught ways to structure my search queries to make good results appear more
 often. Avoid short words, place important key words first, don't enter full
-sentences. We dealt with it because the gains were worth it. GPT-3 feels similar.
+sentences. We dealt with it because the gains were worth it. GPT-3 feels like
+it could be similar.
 
 I don't know where this leads, but there's *something* here.
 
@@ -401,29 +396,23 @@ not as high as we think.
 
 If compute plays a larger role, that speeds up timelines. ML ideas are bottlenecked
 by the size and growth of the ML community, whereas faster hardware is powered by
-worldwide consumer demand for hardware. The latter is a much stronger force.
+worldwide consumer demand. The latter is a much wider bottleneck.
 
 Let's go back to GPT-3 for a moment. GPT-3 is not the largest Transformer
 you could build, and there are reasons to build a larger one.
 If the performance of large Transformers scaled for 2 orders of magnitude
 (1.5B params for GPT-2, 175B params for GPT-3), then it wouldn't be too weird
-if they scaled for another 2 orders of magnitude. Of course, it might not.
-The [(Kaplan et al, 2020)](https://arxiv.org/abs/2001.08361) scaling laws are
-supposed to start contradicting each other starting around $$10^{12}$$ parameters.
-which is less than 1 order of magnitude away from GPT-3. That doesn't mean the
-model will stop improving though. It just means it'll improve at a different
-rate. I don't see a good argument why we should be confident a 100x model
-wouldn't do better, and it could once again have qualitative diferences in
-behavior.
+if they scaled for another 2 orders of magnitude. Of course, it might not,
+but I don't see a good argument why we should be confident it shouldn't.
+Such a 100x model could once again have qualitative differences in behavior.
 
-This is especially true if you move towards multi-modal learning.
+There's certainly enough data to train such a model.
 Focusing on GPT-3's text generation is missing the main plot thread.
 If you believe [the rumors](https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/),
-OpenAI has been working towards incorporating audio and visual data into their
-large models. So far, their
+OpenAI has been working towards large scale multi-modal learning. So far, their
 research output is consistent with that.
 [MuseNet](https://openai.com/blog/musenet/) was a generative model for
-audio, based on large transformers. The recent [Image GPT](https://openai.com/blog/image-gpt/)
+audio, based on large transformers. More recently, [Image GPT](https://openai.com/blog/image-gpt/)
 was a generative model for images, also based on large transformers.
 
 Was MuseNet state-of-the-art at audio synthesis when it came out? No. Is Image-GPT state-of-the-art
@@ -431,18 +420,13 @@ for image generation? Also no. Models with more inductive priors did better
 than both.
 However, these questions miss the point OpenAI is making:
 *a large enough Transformer is not state-of-the-art, but it does well enough
-on these very different data formats.*
-Processing audio + image + text
+on these very different data formats.* By default I assume it's hard
+to learn across multimodal inputs, but processing audio + image + text
 simultanenously should be easier if it all goes through a similar neural net
-architecture, and this research implies Transformer do a good-enough job that
-it's worth trying.
-
-It helps that OpenAI can leverage any intuition they already have
+architecture. It helps that OpenAI can leverage any intuition they already have
 about very large Transformers. Once you add in other data streams, there should
-definitely be enough data to train much larger unsupervised models. Sure, you
-could use just text, but you could also use all that web text *and* all the
-videos *and* all the audio. There shouldn't be a trade-off, as long as you can
-scale large enough.
+definitely be enough data to train much larger unsupervised models, assuming
+scaling laws hold up.
 
 Are large Transformers the last model architecture we'll use? No, probably not.
 But I do see room for them to do more than they've done so far.
@@ -473,121 +457,81 @@ If you ask 2020-me how we'd build AGI, I still see a lot of gaps, but I have
 *some* idea how it could happen, assuming you get lucky. That feels like the
 biggest shift.
 
-There have always been disagreements over what large-scale
-statisical ML means for AI. The deep learning detractors can't deny they've
-been very useful, but deep learning advocates can't deny they've been
-very expensive, and there's a grand tradition of pointing out how much
-compute goes into state-of-the-art models.
+There is longstanding disagreement over what it means for an AI to learn
+something, or to understand something. I thought
+[To Dissect an Octopus](https://blog.julianmichael.org/2020/07/23/to-dissect-an-octopus.html)
+was a good summary of one such disagreement. There is also a longstanding
+tradition of finding ML models wasteful if they cost a lot of money and
+computing time to generate.
 
-Arguments like that are good at driving discussion for places models fall
+Questions like that are good at driving discussion for places models fall
 short compared to humans, and poking at ways our existing models may be
-fundamentally deficient, but I feel these arguments are too human-centered.
-Our understanding of how humans learn is still incomplete, but we still took
-over the planet.
-Similarly, we don't need to have fine-grained
+fundamentally deficient, but overall, I'm firmly on the side of "these questions
+may not even matter." Our understanding of how humans learn is still incomplete,
+but we still took over the planet. Similarly, we don't need to have fine-grained
 agreement on what "understanding" or "knowledge" means for AI systems to have
-far-reaching impacts on the world. And we don't have to build AI systems
-that learn like humans do. If they're capable of doing most human-level
-tasks, economics is going to do the rest, whether or not those systems are
-made in our own image.
+far-reaching impacts on the world.
 
+Assuming AGI is possible without many more new ideas (and that's a big
+assumption), here is one way it could happen:
+someone eventually develops an app so useful that
+models of GPT-3's size or larger are huge productivity multipliers. Imagine
+the first computers, or Lotus Notes, or Microsoft Excel taking over the
+business world.
+It's valuable enough that the economics actually work out, and people are
+willing to pay enough to cover the inference costs and turn a profit.
+That funds buying more hardware, which enables even larger training runs.
+As we've seen with cloud computing, you buy excess hardware to anticipate spikes in
+consumer demand, but can then sell access to the extra hardware to earn money -
+except in this scenario, instead of a cloud computing service, you just give
+the excess compute capacity to research.
 
-Trying Hard To Say No
--------------------------------------------------------------------------------
-
-The AGI debate is always a bit of a crapshoot, because people have wildly
-divergent beliefs over what matters. One useful exercise is to assume AGI
-is possible in the short term, determine what could be true in that hypothetical,
-then evaluate whether it sounds reasonable.
-
-This is crucially *very* different from arguing reasons why AGI can't happen,
-because there are tons of arguments why it can't happen. There are also tons
-of arguments why it can happen. This exercise is about putting more effort into
-the latter, and seeing how hard it is to say "no" to all of them. This lets you
-focus on the counterarguments that are actually relevant.
-
-Let me take a shot at it. If AGI is possible soon, how might that happen? Well,
-it would require not needing many more new ideas. It would likely be based
-on scaling existing models, because I don't think there's much time for the
-field to do a full-scale paradigm shift. And, it's going to need lots of
-funding, because it's based on scaling, and scaling needs funding.
-
-Perhaps someone develops an app or tool, using a model of GPT-3's size or
-larger, that's a huge producitivity multiplier. Imagine the first computers,
-Lotus Notes, or Microsoft Excel taking over the business world. Remember,
-tools drive progress! If you code 2x faster, that's probably 1.5x as much
-research output (shift up or down depending on how often you're bottlenecked
-by implementation.)
-
-If that productivity boost is valuable enough to make the economics work out,
-and you can earn net profit once you account for inference and training costs,
-then you're in business - literally. Paying customers drives more funding
-and investment, which pays for more hardware, which enables even larger
-training runs.
-In cloud computing,
-you buy excess hardware to anticipate spikes in
-consumer demand, then sell access to the extra hardware to earn money. In
-this scenario, you buy excess hardware to anticipate spikes in consumer
-inference needs, then give excess compute capacity to research to see what
-they come up with.
-
-On top of this, let's assume cross-modality learning turns out to be easier than
-expected at scale. Similar emergent properties as GPT-3 show up.
-Object tracking and intuitive
+Meanwhile, cross-modality learning turns out to be easier than expected at scale,
+and we discover similar emergent properties. Object tracking and intuitive
 physics turn out to be naturally occuring phenemena that are learnable just
-from images, without direct environment interaction or embodiment. With more
-tweaks, even larger models, and even more data, you end up with a rich feature
-space for
+from images, without direct environment interaction. With more tweaks, even
+larger models, and even more data, you end up with a rich feature space for
 images, text, and audio. It quickly becomes unthinkable to train anything from
-scratch. Why would you?
-
-Much of the prior work in several fields gets obsoleted,
+scratch. Why would you? Much of the prior work in several fields gets obsoleted,
 going the way of
 [SIFT features](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform)
 for vision, [parse trees](https://en.wikipedia.org/wiki/Parse_tree) for
 machine translation, and
 [phoneme decoding steps](https://en.wikipedia.org/wiki/Phoneme) for speech
-recognition. Deep learning has already killed these methods. People who don't
-know any of those techniques are working on neural nets that achieve
-state-of-the-art results in all those domains. That's faintly sad, because
-some of those ideas are really cool decompositions of how we understand
-language and speech, but it is what it is.
+recognition. People who don't know any of those techniques are working on
+neural nets that solve the task anyways, and that's faintly sad, but it is what
+it is.
 
 As models grow larger, and continue to demonstrate improved performance,
 research coalesces around a small pool of methods that have been shown to scale
-with compute. Again, that happened and is still happening with deep learning.
-When lots of fields
-use the same set of techniques, you get more knowledge sharing, and that
+with compute. That's still happening with deep learning. When lots of fields
+use the same set of techniques, you get more knowledge sharing and that
 drives better research. CNNs have heavy priors towards considering nearby
-values. They were first useful for image recognition, but now have implications for
+values, were first useful for image recognition, but now have implications for
 genomics and music generation. Transformers are a sequence model that first
-happened for language modeling. They were later applied to video understanding.
-This trend is likely to continue. Machine learning has hit a point where
-describing something as "deep learning" is practically meaningless, since
-multilayer perceptions have integrated with so much of the field.
+happened for language modelling, but can also be applied to video understanding.
+That trend is likely to continue.
 
-If this model is good at language, speech, and visual data, what sensor inputs
-do humans have that this doesn't? It's just the sensors tied to physical
-embodiment, like taste and touch. Can we claim intelligence is bottlenecked
-on those stimuli? Maybe, but I don't think it is, and you arguably only need
-text to pretend to be human.
+At that point, what sensor inputs do humans have, that this hypothetical model
+doesn't? I believe it's mostly the sensors tied to physical embodiment,
+like taste, touch, and smell. I think it's entirely plausible that intelligence
+doesn't require any of that. That starts looking eerily close to AGI to me.
 
-A lot has to go right in this scenario above. Multi-modal learning has to work.
-Behaviors need to continue to emerge out of scaling, because your researcher
-timer is mostly going into ideas that help you scale, rather than
-inductive priors. Hardware has to match pace, which includes green energy usage
-and fixing your ever-increasing hardware fleet. Overall, the number of things
-that have to go right makes me think it's unlikely, but plausible.
+There's a lot that has to go right for that path to work. You need multimodal
+learning to be easier than expected. You need to continue to have more behaviors
+emerge out of scaling, because your researcher time is primarily going into
+ideas that help you scale. Hardware has to match pace, which includes funding,
+energy usage, and maintenance. The scaling hypothesis has to keep being true,
+and unsupervised learning has to keep performing better.
 
-The most likely issue I see with my story is that unsupervised learning could
-be way harder for anything besides text. Remember, unsupervised learning gave
-us word vectors in 2015, and nothing great for images. One reasonable hypothesis
-is that the compositional properties of language make it well suited to
-unsupervised learning, in a way that isn't true for other input modalities.
-If that's true, I could be overestimating research by paying too much attention
-to the succeses.
+The most likely issue I see is if unsupervised learning is harder for domains
+besides language. In 2015, unsupervised learning gave us word vectors for text,
+and nothing great for images.
+One reasonable hypothesis is that the compositional properties
+of language make it well suited to unsupervised learning, in a way that isn't
+as true for image data. If that's true, I may be overestimating research by
+only looking at problems where it's more likely to succeed.
 
-It's for those reasons that I'm only adjusting my estimates by a few years.
-I don't think GPT-3, by itself, is a reason to radically adjust what I believe
-to be possible. But so far, I've mostly seen reasons to speed up my estimates,
-rather than slow them down.
+I entirely expect something to go wrong in the research agenda. That's why I'm
+only adjusting my estimates by a few years. But so far, I have mostly seen
+reasons to speed up my estimates, rather than slow them down.
