@@ -590,9 +590,11 @@ It's a picture of the first TPU, and as explained in a [Google blog post](https:
 
 > Although Google considered building an Application-Specific Integrated Circuit (ASIC) for neural networks as early as 2006, the situation became urgent in 2013. That’s when we realized that the fast-growing computational demands of neural networks could require us to double the number of data centers we operate.
 
-Google needed to run more neural nets in production, which drove more hardware
-investment, and now we're on TPUv3, with rumors that [Facebook is hiring in hardware
-to build custom silicon for AR devices](https://www.digitaltrends.com/computing/facebook-augmentedreality-glasses-custom-silicon/). So at least the demand for hardware seems plausible.
+Google needed to run more neural nets in production. This drove more hardware
+investment. A few years later, and we're now on TPUv3, with rumors that [Facebook is hiring in hardware
+to build custom silicon for AR devices](https://www.digitaltrends.com/computing/facebook-augmentedreality-glasses-custom-silicon/). So the story for hardware demand seems not just plausible,
+but likely to be true. If you can scale to do something impractically, that
+sparks research into making it practical.
 
 On top of this, let's assume cross-modality learning turns out to be easier than
 expected at scale. Similar emergent properties as GPT-3 show up.
