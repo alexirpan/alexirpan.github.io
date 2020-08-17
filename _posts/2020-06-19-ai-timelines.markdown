@@ -237,7 +237,7 @@ model size that grows sublinearly with dataset size.
 > $$s(m) \propto \alpha m^{\beta_p}$$, where $$s(m)$$ is the required model
 > size to fit a training set of size $$m$$.
 
-(from Section 2.2)
+(From Section 2.2)
 {: .centered }
 
 Different problem settings have different coefficients. Image classification
@@ -247,8 +247,8 @@ $$\beta_p \approx 0.72$$ line.
 ![Scaling law lines](/public/ai-timelines/hestness_combined.png)
 {: .centered }
 
-Derived trendlines for image classification (left) and language modelling (right).
-Combined from Figures 2 and 4 of [(Hestness et al, 2017)](https://arxiv.org/abs/1712.00409).
+Derived trendlines for image classification (left) and language modelling (right)
+from [(Hestness et al, 2017)](https://arxiv.org/abs/1712.00409)
 {: .centered }
 
 Inverting this suggests dataset size should grow *superlinearly* with model
@@ -270,16 +270,24 @@ Are the data needs above or below the linear line?
 The difference between the two numbers happens because the Kaplan result is
 derived assuming a fixed computational budget. One of the key results they found
 was that it was more efficient to train a very large model for a short amount
-of time, rather than train a smaller model to convergence. Meanwhile, the Hestness
-results are always on models trained to convergence, as far as I could tell.
+of time, rather than train a smaller model to convergence. Meanwhile, as far
+as I could tell, the Hestness results are always on models trained to convergence.
 
-That was a bit of a digression, but if we plug the numbers in, we get that a
-10x increase in model size should requires a 4x-50x increase in dataset size,
-depending on your goals. Let's assume the 4x side to be generous. A 4x factor
-for label needs is definitely way better than a 10x factor, but it still
-feels like a lot.
+![Kaplan compute graph](/public/ai-timelines/kaplan_compute.png)
+{: .centered }
 
-Enter unsupervised learning. As these methods get better, what "label" means
+Figure 2 of [(Kaplan and Candlish, 2020)](https://arxiv.org/abs/2001.08361)
+{: .centered }
+
+That was a bit of a digression, but after plugging the numbers in,
+we get that a
+10x increase in model size should requires between a 4x and 50x increase in dataset size.
+Let's assume the 4x side to be generous. A 4x factor
+for label needs is definitely way better than a 10x factor, but it's still a
+lot.
+
+Enter unsupervised learning. These methods are getting better, and
+what "label" means
 is shifting towards something easier to obtain. GPT-3 is trained on a bunch of
 web crawling data, and although some input processing was required, it didn't
 need a human to verify every sentence of text before it went into model training.
@@ -296,11 +304,11 @@ A lot of Big Data hype was driven by plots showing data was getting created
 faster than Moore's Law. Much of the hype fizzled out because uninformed
 executives didn't understand that having data is not the same as having *useful*
 data for machine learning.
-The true amount of usable data was much smaller
-than at first glance. The research community had a big laugh, but the joke will
+The true amount of usable data was much smaller.
+The research community had a big laugh, but the joke will
 be on us if unsupervised learning gets better and even junk data becomes marginally useful.
 
-Is unsupervised learning good enough to make junk data useful? Definitely not. 100% not. It *is* closer than
+Is unsupervised learning already good enough? Definitely not. 100% not. It *is* closer than
 I expected it to be. I expect to see more papers use data sources that aren't
 relevant to their target task, and more "ImageNet moments" where applications
 are built by standing on the shoulders of someone else's GPU time.
@@ -324,12 +332,12 @@ as a key component of intelligence, then better compressors should be more
 intelligent.
 
 To clarify: these are nowhere near universal NLP opinions! There's lively
-debate over what [language understanding even means](https://blog.julianmichael.org/2020/07/23/to-dissect-an-octopus.html). I mention them because these opinions are reasonable, and recent
-results support them.
+debate over what [language understanding even means](https://blog.julianmichael.org/2020/07/23/to-dissect-an-octopus.html). I mention them because these opinions are reasonable, and the
+GPT-3 results support them.
 
 GPT-3 is many things, but its core is a system that uses lots of
 training time to compress a very large corpus of text into a smaller set of
-Transformer weights. The end result demonstrates a surpisingly wide breadth
+[Transformer](https://en.wikipedia.org/wiki/Transformer_(machine_learning_model) weights. The end result demonstrates a surpisingly wide breadth
 of knowledge, that can be narrowed into many different tasks, as long as
 you can turn that task into a prompt of text to seed the model's output. It
 has flaws, but the breadth of tech demos is kind of absurd.
@@ -341,8 +349,11 @@ and it's a sign of the first section (better tooling).
 Although there's a lot of fun stuff in story generation, I'm most interested
 in the [code generation demonstrations](https://twitter.com/sharifshameem/status/1282676454690451457).
 They look like early signs of a "Do What I Mean" programming interface.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">This is mind blowing.<br><br>With GPT-3, I built a layout generator where you just describe any layout you want, and it generates the JSX code for you.<br><br>W H A T <a href="https://t.co/w8JkrZO4lk">pic.twitter.com/w8JkrZO4lk</a></p>&mdash; Sharif Shameem (@sharifshameem) <a href="https://twitter.com/sharifshameem/status/1282676454690451457?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 If the existing tech demos could be made 5x better, I wouldn't be surprised if
-they become critical productivity boosters for nuts-and-bolts programming.
+they turned into critical productivity boosters for nuts-and-bolts programming.
 Systems design and debugging will likely stick to humans, but a lot of
 programming is just coloring inside the lines. Even low levels of capability
 could be a game changer, in the same way that pre-2000 search engines were
@@ -354,7 +365,7 @@ Google/Bing/DuckDuckGo can do now.
 One specific way I could see code generation being useful is for ML for ML
 efforts, like
 neural architecture search and black-box hyperparameter optimization. One of
-the common arguments around AGI is intelligence explosion, and that class
+the common arguments around AGI is [intelligence explosion](https://en.wikipedia.org/wiki/Technological_singularity), and that class
 of black-box methods has been viewed as a potential intelligence explosion mechanism.
 However, they've long had a key limitation: even if you assume infinite
 compute, someone has to implement
@@ -387,13 +398,14 @@ the outputs you want, and those prompts may be very convoluted. Finally, it
 has no notion of intent or agency. It's a next-word predictor. That's all it's
 trying to be, and I'd guess that trying to change its training loss to add
 intent or agency would be much, much more difficult than it sounds. (And it
-already sounds quite difficult to me!)
+already sounds quite difficult to me! Never underestimate the inertia of
+a working ML research project.)
 
 But, again, this reminds me a lot of early search engines.
 As a kid, I was
 taught ways to structure my search queries to make good results appear more
 often. Avoid short words, place important key words first, don't enter full
-sentences. We dealt with it because the gains were worth it. GPT-3 feels similar.
+sentences. We dealt with it because the gains were worth it. GPT-3 could be similar.
 
 I don't know where this leads, but there's *something* here.
 
@@ -403,7 +415,7 @@ I Now Expect Compute to Play a Larger Role, and See Room for Models to Grow
 
 For reasons I don't want to get into in this post, I don't like arguments where
 people make up a compute estimate of the human brain, take a Moore's Law curve,
-extrapolate the two out, and declare that AGI will happen when the two curves
+extrapolate the two out, and declare that AGI will happen when the two lines
 intersect. I believe they oversimplify the discussion.
 
 However, it's undeniable that compute plays a role in ML progress. But how much
@@ -438,8 +450,7 @@ supposed to start contradicting each other starting around $$10^{12}$$ parameter
 which is less than 1 order of magnitude away from GPT-3. That doesn't mean the
 model will stop improving though. It just means it'll improve at a different
 rate. I don't see a good argument why we should be confident a 100x model
-wouldn't do better, and it could once again have qualitative diferences in
-behavior.
+wouldn't have new qualitative differences in behavior.
 
 This is especially true if you move towards multi-modal learning.
 Focusing on GPT-3's text generation is missing the main plot thread.
@@ -448,19 +459,25 @@ OpenAI has been working towards incorporating audio and visual data into their
 large models. So far, their
 research output is consistent with that.
 [MuseNet](https://openai.com/blog/musenet/) was a generative model for
-audio, based on large transformers. The recent [Image GPT](https://openai.com/blog/image-gpt/)
+audio, based on large Transformers.
+The recent [Image GPT](https://openai.com/blog/image-gpt/)
 was a generative model for images, also based on large transformers.
 
 Was MuseNet state-of-the-art at audio synthesis when it came out? No. Is Image-GPT state-of-the-art
-for image generation? Also no. Models with more inductive priors did better
-than both.
-However, these questions miss the point OpenAI is making:
+for image generation? Also no. Model architectures designed specifically for
+audio and image generation do better than both MuseNet and Image GPT.
+Focusing on that is missing the point OpenAI is making:
 *a large enough Transformer is not state-of-the-art, but it does well enough
-on these very different data formats.*
-Processing audio + image + text
-simultanenously should be easier if it all goes through a similar neural net
-architecture, and this research implies Transformer do a good-enough job that
-it's worth trying.
+on these very different data formats.* There's better things than MuseNet, but
+it's still good enough to power some silly yet maybe useful audio completions.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jSgv2cuqK_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+So, if you've got proof that a large Transformer can handle audio, image, and
+text in isolation, why not try doing so on all three simultaneously.
+Presumably this multi-modal learning will be easier if all the modalities
+go through a similar neural net architecture, and their research implies
+Transformers at least do a good-enough job.
 
 It helps that OpenAI can leverage any intuition they already have
 about very large Transformers. Once you add in other data streams, there should
@@ -473,14 +490,15 @@ Are large Transformers the last model architecture we'll use? No, probably not.
 But I do see room for them to do more than they've done so far.
 Model architectures are only
 going to get better, so the capabilities of scaling up current models must be
-a lower bound on what could be possible 10 or 20 years from now - and what looks
+a lower bound on what could be possible 10 or 20 years from now, with scaled
+up versions of stronger model architectures. What's
 possible right now is already interesting and slightly worrying.
 
 
 The Big Picture
 ----------------------------------------------------------------------------
 
-In ["You and Your Research"](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html),
+In ["You and Your Research"](https://d37ugbyn3rpeym.cloudfront.net/stripe-press/TAODSAE_zine_press.pdf),
 Richard Hamming has a famous piece of advice: "what are the important problems
 in your field, and why aren't you working on them?" Surely AGI is one of the
 most important problems for machine learning.
@@ -499,10 +517,17 @@ If you ask 2020-me how we'd build AGI, I still see a lot of gaps, but I have
 biggest shift.
 
 There have always been disagreements over what large-scale
-statisical ML means for AI. The deep learning detractors can't deny they've
-been very useful, but deep learning advocates can't deny they've been
-very expensive, and there's a grand tradition of pointing out how much
-compute goes into state-of-the-art models.
+statisical ML means for AI. The deep learning detractors can't deny large
+statisical ML models have been very useful, but deep learning advocates can't
+deny they've been very expensive. There's a grand tradition of pointing out
+how much compute goes into state-of-the-art models. See this image that made
+the rounds on Twitter:
+
+![Compute comparison](/public/ai-timelines/alphago.jpg)
+{: .centered }
+
+(By [@samim](https://twitter.com/samim/status/707420890087202817))
+{: .centered }
 
 Arguments like that are good at driving discussion for places models fall
 short compared to humans, and poking at ways our existing models may be
@@ -511,7 +536,7 @@ Our understanding of how humans learn is still incomplete, but we still took
 over the planet.
 Similarly, we don't need to have fine-grained
 agreement on what "understanding" or "knowledge" means for AI systems to have
-far-reaching impacts on the world. And we don't have to build AI systems
+far-reaching impacts on the world. We also don't have to build AI systems
 that learn like humans do. If they're capable of doing most human-level
 tasks, economics is going to do the rest, whether or not those systems are
 made in our own image.
@@ -522,14 +547,14 @@ Trying Hard To Say No
 
 The AGI debate is always a bit of a crapshoot, because people have wildly
 divergent beliefs over what matters. One useful exercise is to assume AGI
-is possible in the short term, determine what could be true in that hypothetical,
-then evaluate whether it sounds reasonable.
+is possible in the short term, determine what could be true in that hypothetical
+future, then evaluate whether it sounds reasonable.
 
-This is crucially *very* different from arguing reasons why AGI can't happen,
+This is crucially *very* different from coming up with reasons why AGI can't happen,
 because there are tons of arguments why it can't happen. There are also tons
 of arguments why it can happen. This exercise is about putting more effort into
-the latter, and seeing how hard it is to say "no" to all of them. This lets you
-focus on the counterarguments that are actually relevant.
+the latter, and seeing how hard it is to say "no" to all of them. This helps
+you focus in on the counterarguments that are actually important.
 
 Let me take a shot at it. If AGI is possible soon, how might that happen? Well,
 it would require not needing many more new ideas. It would likely be based
@@ -541,8 +566,8 @@ Perhaps someone develops an app or tool, using a model of GPT-3's size or
 larger, that's a huge producitivity multiplier. Imagine the first computers,
 Lotus Notes, or Microsoft Excel taking over the business world. Remember,
 tools drive progress! If you code 2x faster, that's probably 1.5x as much
-research output (shift up or down depending on how often you're bottlenecked
-by implementation.)
+research output. Shift up or down depending on how often you're bottlenecked
+by implementation.
 
 If that productivity boost is valuable enough to make the economics work out,
 and you can earn net profit once you account for inference and training costs,
@@ -555,6 +580,19 @@ consumer demand, then sell access to the extra hardware to earn money. In
 this scenario, you buy excess hardware to anticipate spikes in consumer
 inference needs, then give excess compute capacity to research to see what
 they come up with.
+
+This mechanism is already playing out. You might recognize the chip below.
+
+![Picture of first TPU](/public/ai-timelines/tpu.png)
+{: .centered }
+
+It's a picture of the first TPU, and as explained in a [Google blog post](https://cloud.google.com/blog/products/gcp/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu),
+
+> Although Google considered building an Application-Specific Integrated Circuit (ASIC) for neural networks as early as 2006, the situation became urgent in 2013. That’s when we realized that the fast-growing computational demands of neural networks could require us to double the number of data centers we operate.
+
+Google needed to run more neural nets in production, which drove more hardware
+investment, and now we're on TPUv3, with rumors that [Facebook is hiring in hardware
+to build custom silicon for AR devices](https://www.digitaltrends.com/computing/facebook-augmentedreality-glasses-custom-silicon/). So at least the demand for hardware seems plausible.
 
 On top of this, let's assume cross-modality learning turns out to be easier than
 expected at scale. Similar emergent properties as GPT-3 show up.
@@ -585,28 +623,32 @@ When lots of fields
 use the same set of techniques, you get more knowledge sharing, and that
 drives better research. CNNs have heavy priors towards considering nearby
 values. They were first useful for image recognition, but now have implications for
-genomics and music generation. Transformers are a sequence model that first
-happened for language modeling. They were later applied to video understanding.
+genomics [(Nature Genetics, 2019)](https://www.nature.com/articles/s41588-018-0328-0),
+as well as music generation [(van den Oord et al, 2016)](https://deepmind.com/blog/article/wavenet-generative-model-raw-audio). Transformers are a sequence model that first
+happened for language modeling. They were later applied to video understanding [(Sun et al, 2019)](https://arxiv.org/abs/1906.05743).
 This trend is likely to continue. Machine learning has hit a point where
 describing something as "deep learning" is practically meaningless, since
-multilayer perceptions have integrated with so much of the field.
+multilayer perceptions have integrated with enough of the field that you're
+no longer specifying anything.
 
 If this model is good at language, speech, and visual data, what sensor inputs
 do humans have that this doesn't? It's just the sensors tied to physical
 embodiment, like taste and touch. Can we claim intelligence is bottlenecked
-on those stimuli? Maybe, but I don't think it is, and you arguably only need
+on those stimuli? Sure, but I don't think it is, and you arguably only need
 text to pretend to be human.
 
 A lot has to go right in this scenario above. Multi-modal learning has to work.
 Behaviors need to continue to emerge out of scaling, because your researcher
 timer is mostly going into ideas that help you scale, rather than
-inductive priors. Hardware has to match pace, which includes green energy usage
+inductive priors. Hardware efficiency has to match pace, which includes green energy usage
 and fixing your ever-increasing hardware fleet. Overall, the number of things
-that have to go right makes me think it's unlikely, but plausible.
+that have to go right makes me think it's unlikely, but still a
+possibility worth taking seriously.
 
 The most likely issue I see with my story is that unsupervised learning could
-be way harder for anything besides text. Remember, unsupervised learning gave
-us word vectors in 2015, and nothing great for images. One reasonable hypothesis
+be way harder for anything outside of language. Remember, in 2015,
+unsupervised learning gave
+us word vectors for language, and nothing great for images. One reasonable hypothesis
 is that the compositional properties of language make it well suited to
 unsupervised learning, in a way that isn't true for other input modalities.
 If that's true, I could be overestimating research by paying too much attention
@@ -614,5 +656,6 @@ to the succeses.
 
 It's for those reasons that I'm only adjusting my estimates by a few years.
 I don't think GPT-3, by itself, is a reason to radically adjust what I believe
-to be possible. But so far, I've mostly seen reasons to speed up my estimates,
-rather than slow them down.
+to be possible. I think transfer learning being harder than anticipated is
+also a damper on things. But on net, I've mostly seen reasons to speed up my
+estimates, rather than slow them down.
