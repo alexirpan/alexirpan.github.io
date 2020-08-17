@@ -4,13 +4,12 @@ title:  "My AI Timelines Have Sped Up"
 date:   2020-06-19 15:06:00 -0700
 ---
 
-(For this post, I'm going to take artificial general intelligence to mean
+For this post, I'm going to take artificial general intelligence (AGI) to mean
 an AI system that matches or exceeds humans at almost all economically valuable
 work. I prefer this definition because it focuses on what causes the most
-societal change, rather than how we get there.)
+societal change, rather than how we get there.
 
-In 2015, I made the following forecasts about artificial general intelligence
-(AGI).
+In 2015, I made the following forecasts about when AGI could happen.
 
 * 10% chance by 2045
 * 50% chance by 2050
@@ -35,14 +34,16 @@ Let's start with the easy part first.
 I Should Have Been More Uncertain
 -------------------------------------------------------------------------------
 
-It would be incredibly weird if I was never surprised by ML research.
+It would be incredibly weird if I was never surprised by machine learning (ML)
+research.
 Historically, it's very hard to predict the trajectory a research field will
 take, and if I were never surprised, I'd take that as a personal failing to
 not consider large enough ideas.
 
 At the same time, when I think back on the past 5 years, I believe I was
 surprised more often than I expected. It wasn't all in a positive direction.
-Unsupervised learning got better way faster than I expected, deep RL got better
+Unsupervised learning got better way faster than I expected, deep reinforcement
+learning got better
 a little faster than I expected, and transfer learning was slower than
 expected. Combined, I've decided I should widen the distribution of outcomes,
 so now I'm allocating 35 years to the 10%-90% interval instead of 25 years.
@@ -92,11 +93,12 @@ AGI.
 This is a bad argument because your extrapolation needs to account for
 research tools also improving over time.
 
-What "tool" means is a bit vague,
+What "tool" means is a bit fuzzy,
 but one example is feature engineering for computer vision. When was the
-last time anyone talked about SIFT features for computer vision? Ages ago,
-they're obsolete. But model tuning didn't disappear, it just turned into
-CNN architecture tuning instead. SIFT features were the old tool,
+last time anyone talked about [SIFT features](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform) for computer vision? Ages ago,
+they're obsolete. But feature engineering didn't disappear, it just turned into
+[convolutional neural net](https://en.wikipedia.org/wiki/Convolutional_neural_network) architecture tuning instead.
+SIFT features were the old tool,
 convolutional neural nets are the new tool, and computer vision is the application
 that's been supercharged by the better tool.
 
@@ -107,18 +109,25 @@ inputs are the most flexible input space. So for me, computer vision is the tool
 is the application, and the improvements in computer vision have driven many
 promising robot learning results.
 
+![AlexNet conv filters](/public/ai-timelines/filters.png)
+{: .centered }
+
+(Filters learned by [AlexNet](https://en.wikipedia.org/wiki/AlexNet), which has
+itself been obsoleted by the better tool, [ResNet](https://en.wikipedia.org/wiki/Residual_neural_network).)
+{: .centered }
+
 I'm a big advocate for research tools. I think on average, people underestimate
-their impact. So after reading that hypothesis that people don't forecast
+their impact. So after reading the hypothesis that people don't forecast
 tool improvement properly, I thought for a bit, and decided I hadn't properly
 accounted for it either. That deserved shaving off a few years.
 
 In the more empirical sides of ML, the obvious components of progress are your
 ideas and computational budget, but there are less obvious ones too, like
-your coding skills, debugging skills, and ability to utilize your compute.
+your coding and debugging skills, and your ability to utilize your compute.
 It doesn't matter how many processors you have per machine, if your code doesn't
 use all the processors available.
-There are a surprising number of ML applications where the main value-add is
-better data management and data summarization, rather than any learned model,
+There are a surprising number of ML applications where the main value-add
+comes from better data management and data summarization,
 because those tools free up decision making time for the rest of the
 research.
 
@@ -134,11 +143,19 @@ Improvements continually happen across the entire research stack, and most of
 these improvments have multiplicative benefits. Multiplicative factors
 can be very powerful.
 One simple example is that to get 10x better results, you can either make one
-thing with a 10x better paradigm shift, or you can make ten different things
-[1.26x better](https://www.google.com/search?&q=1.26^10), and they'll combine to
-a 10x total improvement. The latter is just as transformative, but can be much
-easier, especially if you get 10 experts with different skill sets
+thing with a 10x better paradigm shift, or you can make ten different
+things
+[1.26x better](https://www.google.com/search?&q=1.26^10), and they'll combine
+to a 10x total improvement.
+The latter is just as transformative, but can be much easier,
+especially if you get 10 experts with different skill sets
 to work together on a common goal. This is how corporations become a thing.
+
+![Tiny gains graph](/public/ai-timelines/tiny-gains-graph.jpg)
+{: .centered }
+
+(From [JamesClear.com](https://jamesclear.com/marginal-gains))
+{: .centered }
 
 
 Semi-Supervised and Unsupervised Learning are Getting Better
@@ -152,16 +169,18 @@ On the one hand, humans don't have labels for most things they learn,
 so ML systems shouldn't need labels either. On the other hand, the
 deep learning boom of 2015 was mostly powered by supervised learning on
 large, labeled datasets.
-Richard Socher had a notable tweet at the time:
+Richard Socher made a notable tweet at the time:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Rather than spending a month figuring out an unsupervised machine learning problem, just label some data for a week and train a classifier.</p>&mdash; Richard Socher (@RichardSocher) <a href="https://twitter.com/RichardSocher/status/840333380130553856?ref_src=twsrc%5Etfw">March 10, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Not to say that unsupervised learning was never useful. In 2010, it was
+I wouldn't say unsupervised learning has always been useless. In 2010, it was
 common wisdom that deep networks should go through an unsupervised pre-training
 step before starting supervised learning. See [(Erhan et al, JMLR 2010)](https://jmlr.csail.mit.edu/papers/volume11/erhan10a/erhan10a.pdf).
-Around 2015, self-supervised word vectors like [GloVe](https://nlp.stanford.edu/projects/glove/)
-and [word2vec](https://en.wikipedia.org/wiki/Word2vec) were also doing
-interesting things. To me, these felt like exceptions to the rule - most other
+In 2015 self-supervised word vectors like [GloVe](https://nlp.stanford.edu/projects/glove/)
+and [word2vec](https://en.wikipedia.org/wiki/Word2vec) were automatically
+learning interesting relationships between words.
+As someone who started ML around the 2015 years,
+these unsupervised successes felt like exceptions to the rule. Most other
 applications were driven by supervised learning. Pretrained ImageNet features
 were the closest thing to general behavior, and those features were learnt
 though labeled classification.
@@ -211,8 +230,8 @@ a laissez-faire labeling system isn't going to fly anymore.)
 Okay. Well, if 10x labels is a problem, are there ways around that problem?
 One way is if you don't need 10x as many labels to train a 10x larger model.
 The messaging on that is mixed. One scaling law paper,
-[(Hestness et al, 2017)](https://arxiv.org/abs/1712.00409), finds that model
-size grows sublinearly with dataset size.
+[(Hestness et al, 2017)](https://arxiv.org/abs/1712.00409), recommends a
+model size that grows sublinearly with dataset size.
 
 > We expect that number of model parameters to fit a data set should follow
 > $$s(m) \propto \alpha m^{\beta_p}$$, where $$s(m)$$ is the required model
@@ -225,14 +244,20 @@ Different problem settings have different coefficients. Image classification
 followed a $$\beta_p=0.573$$ power law, while language modelling followed a
 $$\beta_p \approx 0.72$$ line.
 
-(ADD PAPER IMAGES HERE)
+![Scaling law lines](/public/ai-timelines/hestness_combined.png)
+{: .centered }
+
+Derived trendlines for image classification (left) and language modelling (right).
+Combined from Figures 2 and 4 of [(Hestness et al, 2017)](https://arxiv.org/abs/1712.00409).
+{: .centered }
 
 Inverting this suggests dataset size should grow *superlinearly* with model
 size - a 10x larger image classification model should use $$10^{1/0.573} = 55.6x$$
 times as much data! That's awful news!
 
-But, then [(Kaplan and Candlish, 2020)](https://arxiv.org/abs/2001.08361)
-suggest the inverse relationship - that dataset size should grow *sublinearly*
+But, the [(Kaplan and Candlish, 2020)](https://arxiv.org/abs/2001.08361)
+paper
+suggests the inverse relationship - that dataset size should grow *sublinearly*
 with model size. They only examine language modelling, but state in Section 6.3
 that
 
