@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "My AI Timelines Have Sped Up"
-date:   2020-08-18 01:47:00 -0700
+date:   2020-08-18 15:08:00 -0700
 ---
 
 For this post, I'm going to take artificial general intelligence (AGI) to mean
-an AI system that matches or exceeds humans at almost all economically valuable
-work. I prefer this definition because it focuses on what causes the most
-societal change, rather than how we get there.
+an AI system that matches or exceeds humans at almost all (95%+)
+economically valuable work. I prefer this definition because it focuses on what
+causes the most societal change, rather than how we get there.
 
 In 2015, I made the following forecasts about when AGI could happen.
 
@@ -84,10 +84,10 @@ I decided it wasn't worth my time to read it.
 (If you haven't heard the common knowledge arguments, here's the quick
 version: it's possible for the majority to believe AI safety is
 worthwhile, even if no one says so publicly, because each individual could be
-afraid everyone else will call them crazy if they speak out. This can happen
+afraid everyone else will call them crazy if they argue for drastic action. This can happen
 even if literally everyone agrees, because they don't know that everyone agrees.)
 
-Digression aside, I ended up reading it several years later out of boredom, and
+I read the post several years later out of boredom, and
 I now need to retroactively complain to all my Facebook friends who only
 shared the historical events and common knowledge arguments. Although
 that post summary is *correct*, the ideas I found useful were all
@@ -102,12 +102,14 @@ AGI because the available tools aren't good enough.
 This is a bad argument, because your extrapolation needs to account for
 research tools also improving over time.
 
-What "tool" means is a bit fuzzy,
-but one example is feature engineering for computer vision. When was the
+What "tool" means is a bit fuzzy. One clear example is our coding libraries.
+People used to write neural nets in Caffe, MATLAB, and Theano. Now it's mostly
+TensorFlow and PyTorch. A less obvious example is
+feature engineering for computer vision. When was the
 last time anyone talked about [SIFT features](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform) for computer vision? Ages ago,
 they're obsolete. But feature engineering didn't disappear, it just turned into
 [convolutional neural net](https://en.wikipedia.org/wiki/Convolutional_neural_network) architecture tuning instead.
-SIFT features were the old tool,
+For a computer vision researcher, SIFT features were the old tool,
 convolutional neural nets are the new tool, and computer vision is the application
 that's been supercharged by the better tool.
 
@@ -147,7 +149,8 @@ that didn't exist three months ago. So, your current
 research tools will *always* feel janky, and you shouldn't be using that to
 argue anything about timelines.
 
-Improvements continually happen across the entire research stack, and most of
+The research stack has lots of parts, improvements continually happen across that
+entire stack, and most of
 these improvements have multiplicative benefits. Multiplicative factors
 can be very powerful.
 One simple example is that to get 10x better results, you can either make one
@@ -191,9 +194,9 @@ and [word2vec](https://en.wikipedia.org/wiki/Word2vec) were automatically
 learning interesting relationships between words.
 As someone who started ML around 2015,
 these unsupervised successes felt like exceptions to the rule. Most other
-applications were driven by supervised learning. Pretrained ImageNet features
+applications relied on labels. Pretrained ImageNet features
 were the closest thing to general behavior, and those features were learned
-through labeled classification.
+from scratch through only supervised learning.
 
 I've long agreed that unsupervised learning is the future, and the right way
 to do things, as soon as we figure out how to do so.
@@ -279,7 +282,7 @@ that
 > and $$N$$ is model size].
 
 This is strange when compared to the Hestness result of $$D \propto N^{1/0.72}$$ .
-Are the data needs above or below the linear line?
+Should the dataset grow faster or slower than the model?
 
 The difference between the two numbers happens because the Kaplan result is
 derived assuming a fixed computational budget. One of the key results they found
@@ -495,7 +498,7 @@ If you've got proof that a large Transformer can handle audio, image, and
 text in isolation, why not try doing so on all three simultaneously?
 Presumably this multi-modal learning will be easier if all the modalities
 go through a similar neural net architecture, and their research implies
-Transformers at least do a good-enough job.
+Transformers are good-enough job to be that architecture.
 
 It helps that OpenAI can leverage any intuition they already have
 about very large Transformers. Once you add in other data streams, there should
@@ -686,4 +689,4 @@ also a damper on things. But on net, I've mostly seen reasons to speed up my
 estimates, rather than slow them down.
 
 *Thanks to all the people who gave feedback on earlier drafts, including: James
-Bradbury, Ethan Caballero, Ajeya Cotra, David Krueger, Simon Ramstedt, and Alex Ray.*
+Bradbury, Ethan Caballero, Ajeya Cotra, William Fedus, David Krueger, Simon Ramstedt, and Alex Ray.*

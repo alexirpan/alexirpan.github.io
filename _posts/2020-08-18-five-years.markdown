@@ -1,18 +1,18 @@
 ---
 layout: post
 title:  "Five Years Later"
-date:   2020-08-18 01:59:00 -0700
+date:   2020-08-18 10:59:00 -0700
 ---
 
 *Sorta Insightful* turns five years old today! That feels kinda weird,
 because it's the longest I've spent sustaining one thing. Elementary
 school was five years, middle school was three years, high school was
-four years. Then undergrad was four years, and I've since been working
+four years. Undergrad was four years, and I've since been working
 at Google for another four years.
 
 Thanks for reading.
 If you haven't read my previous anniversary posts, I do a meta-post
-every year about blogging. This year's is, once again, a bit rushed,
+every year about blogging. This year's meta-post is, once again, a bit rushed,
 because I've been working on another post about [AI timelines]({% post_url 2020-08-18-ai-timelines %}),
 which I'm also releasing today.
 
@@ -43,9 +43,11 @@ This year, I wrote **32,161** words.
 I'm pleasantly surprised to see it's so much larger. I suspect it's because
 of the very long posts I wrote about puzzlehunts. Due to running a hunt this year,
 I had spent a lot of time thinking about puzzlehunt design, which made those
-posts relatively easy to write. Traditionally, I count posts written on August
-18 for the next year's count, so I have a good head start for next year. (The
-AI timelines post is about 5700 words long.)
+posts relatively easy to write.
+
+Traditionally, I count posts written on August
+18 for the next year's count, so the AI timelines post is not included and I'll
+have a good start for next year.
 
 Post length is a bad measure of output, for the same reason that lines of
 code changed is a bad software engineering metric. As the Mark Twain quote goes, "If
@@ -53,7 +55,7 @@ I had more time, I would have written a shorter letter." I do think it's
 a reasonable measure though, as long as I stay aware of how much time I spent
 editing each post.
 
-(Funnily enough, I just noticed I shared a Woodrow Wilson quote with the
+(I just noticed I shared a Woodrow Wilson quote with the
 same sentiment [last year]({% post_url 2019-08-18-four-years %}). Incredible.
 Amazing. Next year I'll find a new person to cite for this. [I put odds on
 using either Blaise Pascal, or Benjamin Franklin](https://quoteinvestigator.com/2012/04/28/shorter-letter/).)
@@ -62,11 +64,11 @@ I wrote 13 posts this year, counting the Mystery Hunt post which was split
 into 2 parts. This is just over my trend of 1 post per month. Again, pleasantly
 surprised by that. I can't even credit the coronavirus for this.
 In general I have been
-much less productive, due to having my goof-off space and work space so
+much less productive during the pandemic, due to having my goof-off space and work space so
 close to one another. The Bay Area shelter in place order started March 17.
 It has been 5 months since that order, 5 posts were written in those five months
-and 8 posts were written in the seven preceding months. So yes, I was less
-productive for blog writing too, but not by much.
+and 8 posts were written in the seven preceding months. So it looks like my
+blog writing was less productive as well, but not by much.
 
 # View Counts
 
@@ -89,13 +91,16 @@ this year.
   262 2020-06-24-openai-lp.markdown  
 {% endhighlight %}
 
-This is a pretty consistent drop in view count compared to last year, about 1/3rd
-the views from last year, but I don't
-think that's too crazy. Many of my posts were about more obscure topics.
-I'm a bit bummed my contact tracing post got so few views though, I felt that
-could have been one of my more important posts. The US response has been
-dysfunctional enough that it didn't really change anything, but hey, I tried.
-(Not a lot, but I tried.)
+This is a big drop in view count compared to last year, about 1/3rd
+the views from last year.
+Many of my posts were about more obscure topics, so it makes sense.
+I'm a bit bummed my contact tracing post got so few views though, I put a lot of work
+into it and felt it could have been one of my more important posts if it changed
+someone's mind about contact tracing. However, the US response has been
+so dysfunctional that we don't have the centralized contact tracing app I envisioned.
+We instead of a lot of independent efforts with low install rates, and country wide
+reopenings that are happening for economic reasons, even though the $$R_0$$ is above 1.
+What a mess.
 
 
 ## Time Spent Writing
@@ -104,9 +109,11 @@ Excluding time spent on this post, but including time spent on the AI timelines
 post, I spent **116 hours, 36 minutes** writing for my blog this year. This is
 more than last year but less than 2 years ago. That feels about right.
 
-(Side note #2: Not only did I quote Woodrow Wilson / Mark Twain / whatever
-in this section last year, I also made the exact same joke that it's unclear
-who the quote is first attributed to! What the heck, am I really that predictable?
+(Side note #2: On a reread of last year's meta-post, I found that not only did
+I quote Woodrow Wilson / Mark Twain / whoever last year, I also made the exact
+same ["quote attribution unclear"](https://quoteinvestigator.com/2012/04/28/shorter-letter/)
+joke, with the exact same link!
+What the heck, am I really that predictable?
 I really should remove both this side note and the previous one, but you know
 what, I'm keeping it, the fact my mind is so repetitive is pretty interesting.)
 
@@ -134,7 +141,7 @@ wanted to express are already known to the people that care about it, which make
 me less motivated to write this. I still believe it's an important topic though!
 
 **Post about Gunnerkrigg Court:** 25% odds of writing before end of 2019 (I didn't), 70%
-odds of writing eventually
+odds of writing eventually.
 
 New odds of writing eventually: 50%
 
@@ -142,11 +149,11 @@ New odds of writing eventually: 50%
 odds of writing eventually.
 
 New odds of writing eventually: 90%. It's coming I swear. I thought I would be
-done with My Little Pony by now, but every time I think it's over they pull
+done with My Little Pony by now, but every time I think it's over, they pull
 me back in.
 
 **Post about Dominion Online:** 35% odds of writing before end of 2019 (I didn't), 85%
-odds of writing eventually
+odds of writing eventually.
 
 New odds of writing eventually: 65%. The draft is untouched since last year,
 but I can see myself visiting it again.
