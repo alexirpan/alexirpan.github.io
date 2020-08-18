@@ -127,7 +127,7 @@ your coding and debugging skills, and your ability to utilize your compute.
 It doesn't matter how many processors you have per machine, if your code doesn't
 use all the processors available.
 There are a surprising number of ML applications where the main value-add
-comes from better data management and data summarization,
+comes from better data management and data summarizing,
 because those tools free up decision making time for the rest of the
 research.
 
@@ -140,7 +140,7 @@ research tools will *always* feel janky, and you shouldn't be using that to
 argue anything about timelines.
 
 Improvements continually happen across the entire research stack, and most of
-these improvments have multiplicative benefits. Multiplicative factors
+these improvements have multiplicative benefits. Multiplicative factors
 can be very powerful.
 One simple example is that to get 10x better results, you can either make one
 thing with a 10x better paradigm shift, or you can make ten different
@@ -182,8 +182,8 @@ learning interesting relationships between words.
 As someone who started ML around the 2015 years,
 these unsupervised successes felt like exceptions to the rule. Most other
 applications were driven by supervised learning. Pretrained ImageNet features
-were the closest thing to general behavior, and those features were learnt
-though labeled classification.
+were the closest thing to general behavior, and those features were learned
+through labeled classification.
 
 I've long felt that unsupervised learning is the future, as soon as we figure
 out how to get there, but man, we have spent a long time trying to get there.
@@ -196,7 +196,7 @@ on that, and Bootstrap Your Own Latent [(Grill, Strub, Altché, Tallec, Richemon
 has improved on that. And then there's [GPT-3](https://arxiv.org/abs/2005.14165),
 but I'll get to that later.
 
-When I was thinking through what made ML hard, the trendlines were pointing to larger
+When I was thinking through what made ML hard, the trend lines were pointing to larger
 models and larger labeled datasets. They're still pointing that way now.
 I concluded that future ML progress would be bottlenecked by labeling requirements.
 Defining a 10x bigger model is easy. *Training* a 10x bigger model is harder, but
@@ -218,7 +218,7 @@ sustained effort to generate. There's a reason [ImageNet won the Test of Time
 award at CVPR 2019](https://www.computer.org/publications/tech-news/events/ieee-cvpr-conference-on-computer-vision-and-pattern-recognition-2019-awards-records) -
 the authors of that paper went out and did the work.
 If ML needed
-ever larger labelled datasets to push performance, and models kept growing
+ever larger labeled datasets to push performance, and models kept growing
 by orders of magnitude, then you'd hit a point where the amount of human
 supervision needed to make progress would be insane.
 
@@ -241,13 +241,13 @@ model size that grows sublinearly with dataset size.
 {: .centered }
 
 Different problem settings have different coefficients. Image classification
-followed a $$\beta_p=0.573$$ power law, while language modelling followed a
+followed a $$\beta_p=0.573$$ power law, while language modeling followed a
 $$\beta_p \approx 0.72$$ line.
 
 ![Scaling law lines](/public/ai-timelines/hestness_combined.png)
 {: .centered }
 
-Derived trendlines for image classification (left) and language modelling (right)
+Derived trend lines for image classification (left) and language modeling (right)
 from [(Hestness et al, 2017)](https://arxiv.org/abs/1712.00409)
 {: .centered }
 
@@ -258,7 +258,7 @@ times as much data! That's awful news!
 But, the [(Kaplan and Candlish, 2020)](https://arxiv.org/abs/2001.08361)
 paper
 suggests the inverse relationship - that dataset size should grow *sublinearly*
-with model size. They only examine language modelling, but state in Section 6.3
+with model size. They only examine language modeling, but state in Section 6.3
 that
 
 > To keep overfitting under control, the results of Section 4 imply we should
@@ -337,7 +337,7 @@ GPT-3 results support them.
 
 GPT-3 is many things, but its core is a system that uses lots of
 training time to compress a very large corpus of text into a smaller set of
-[Transformer](https://en.wikipedia.org/wiki/Transformer_(machine_learning_model) weights. The end result demonstrates a surpisingly wide breadth
+[Transformer](https://en.wikipedia.org/wiki/Transformer_(machine_learning_model) weights. The end result demonstrates a surprisingly wide breadth
 of knowledge, that can be narrowed into many different tasks, as long as
 you can turn that task into a prompt of text to seed the model's output. It
 has flaws, but the breadth of tech demos is kind of absurd.
@@ -364,7 +364,7 @@ Google/Bing/DuckDuckGo can do now.
 
 One specific way I could see code generation being useful is for ML for ML
 efforts, like
-neural architecture search and black-box hyperparameter optimization. One of
+[neural architecture search](https://en.wikipedia.org/wiki/Neural_architecture_search) and [black-box hyperparameter optimization](https://en.wikipedia.org/wiki/Hyperparameter_optimization). One of
 the common arguments around AGI is [intelligence explosion](https://en.wikipedia.org/wiki/Technological_singularity), and that class
 of black-box methods has been viewed as a potential intelligence explosion mechanism.
 However, they've long had a key limitation: even if you assume infinite
@@ -380,14 +380,14 @@ This was my
 main criticism of the [OpenAI Rubik's Cube result]({% post_url 2019-10-30-openai-rubiks %}).
 The paper read like a year long discovery of the Rubik's Cube
 domain randomization search space, rather than any generalizable robot
-learning lesson. The end result is based on a model learning generalizable
-behavior by exploring lots of random simulations, but that model only got there
+learning lesson. The end result is based on a model learning correctly generalizing
+from lots of random simulations, but that model only got there
 because of the human effort spent
 determining which randomizations were worth implementing.
 
 Now imagine that whenever you discovered a new unknown unknown in your simulator,
 you could
-very quickly implement the code changes that add it to your doman randomization
+very quickly implement the code changes that add it to your domain randomization
 search space. Well, those methods sure look more promising!
 
 There are certainly problems with GPT-3. It has a fixed attention
@@ -563,7 +563,7 @@ field to do a full-scale paradigm shift. And, it's going to need lots of
 funding, because it's based on scaling, and scaling needs funding.
 
 Perhaps someone develops an app or tool, using a model of GPT-3's size or
-larger, that's a huge producitivity multiplier. Imagine the first computers,
+larger, that's a huge productivity multiplier. Imagine the first computers,
 Lotus Notes, or Microsoft Excel taking over the business world. Remember,
 tools drive progress! If you code 2x faster, that's probably 1.5x as much
 research output. Shift up or down depending on how often you're bottlenecked
@@ -599,7 +599,7 @@ sparks research into making it practical.
 On top of this, let's assume cross-modality learning turns out to be easier than
 expected at scale. Similar emergent properties as GPT-3 show up.
 Object tracking and intuitive
-physics turn out to be naturally occuring phenemena that are learnable just
+physics turn out to be naturally occurring phenomena that are learnable just
 from images, without direct environment interaction or embodiment. With more
 tweaks, even larger models, and even more data, you end up with a rich feature
 space for
@@ -654,10 +654,13 @@ us word vectors for language, and nothing great for images. One reasonable hypot
 is that the compositional properties of language make it well suited to
 unsupervised learning, in a way that isn't true for other input modalities.
 If that's true, I could be overestimating research by paying too much attention
-to the succeses.
+to the successes.
 
 It's for those reasons that I'm only adjusting my estimates by a few years.
 I don't think GPT-3, by itself, is a reason to radically adjust what I believe
 to be possible. I think transfer learning being harder than anticipated is
 also a damper on things. But on net, I've mostly seen reasons to speed up my
 estimates, rather than slow them down.
+
+*Thanks to all the people who gave feedback on earlier drafts, including: James
+Bradbury, Ethan Caballero, Ajeya Cotra, David Krueger, Simon Ramstedt, and Alex Ray.*
