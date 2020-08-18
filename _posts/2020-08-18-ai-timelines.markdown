@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My AI Timelines Have Sped Up"
-date:   2020-08-18 01:39:00 -0700
+date:   2020-08-18 01:47:00 -0700
 ---
 
 For this post, I'm going to take artificial general intelligence (AGI) to mean
