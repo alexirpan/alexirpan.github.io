@@ -688,5 +688,5 @@ to be possible. I think transfer learning being harder than anticipated is
 also a damper on things. But on net, I've mostly seen reasons to speed up my
 estimates, rather than slow them down.
 
-*Thanks to all the people who gave feedback on earlier drafts, including: James
-Bradbury, Ethan Caballero, Ajeya Cotra, William Fedus, David Krueger, Simon Ramstedt, and Alex Ray.*
+*Thanks to all the people who gave feedback on earlier drafts, including: Michael Andregg, James
+Bradbury, Ethan Caballero, Ajeya Cotra, William Fedus, Nolan Kent, David Krueger, Simon Ramstedt, and Alex Ray.*
