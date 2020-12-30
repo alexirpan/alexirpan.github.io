@@ -1,0 +1,219 @@
+---
+layout: post
+title:  "The Carbon Footprint of Buying a Car"
+date:   2020-01-13 00:20:00 -0700
+---
+
+My car's dead. It went through a long series of death throes, almost making it
+all the way through the pandemic, but now it's dead (or rather, expensive enough
+to fix that it's not worth it, compared to the value of the car).
+
+I still need a car! Although you can skip one in SF, South Bay is
+still a sprawling suburban hellscape if you don't have a car.
+
+I also want to consider the carbon footprint of my decision. What should I do?
+
+In a bid to be more environmentally conscious, I want to reduce the carbon
+footprint of the replacement car. What should I do?
+
+\* \* \*
+{: .centered }
+
+Let's start with some crude estimates to figure out the trade-offs, and continue
+from there.
+
+First off - electric, hybrid, or gas? This is supposed to be obvious, but maybe
+it's not. In high school, one of my teachers claimed that a new Toyota Prius was
+worse for the environment than a new Hummer over the course of its lifetime,
+because the CO2 emitted during production time was much higher. I never checked
+this claim, and it was 10 years ago. Let's see if we can find some sources.
+
+The European Parliament has [an infographic](https://www.europarl.europa.eu/news/en/headlines/society/20200109STO69925/understanding-the-gender-pay-gap-definition-and-causes)
+for lifetime CO2 emissions from different kinds of cars, from 2014.
+
+https://www.europarl.europa.eu/news/en/headlines/priorities/climate-change/20190313STO31218/co2-emissions-from-cars-facts-and-figures-infographics
+
+IMAGE HERE
+
+The green bars are the share from vehicle production. The top bar is a gasoline car,
+the second bar is a diesel car, and the last 3 are electric cars under different
+assumptions of clean power.
+Lifetime CO2 emissions are measured in g/km, assuming a 150,000 km mileage. This
+is about 93,000 miles for the Americans out there. Unfortunately I wasn't able
+to find the primary source for this chart, but at a glance, electric cars do pay a
+higher up-front cost in CO2 emissions. It looks like about 62.5g CO2/km versus
+50g CO2/k, a 25% increase. However, this is later offset by the decreased emissions
+from power generation. The exact difference depends on how clean your electricity is.
+At the extreme ends, an electric car powered by electricity from coal is worse than a
+gasoline car! However, the average EU resident can expect about 170 g/km for an electric
+car and 220 g/km for a gasoline car.
+
+Other sources (FIND THEM) give a similar conclusion: the short-term boost in emissions is
+offset by the long-term ownership of the car. A lifetime mileage of 93,000 strikes me as an
+underestimate, given that many EV manufacturers offer 100,000 mile warranties on their batteries,
+so owning an electric vehicle should be better than the numbers shown.
+
+The [Alternative Fuels Data Center](https://afdc.energy.gov/vehicles/electric_emissions.html)
+from the Department of Energy has a tool that lets you estimate annual
+emissions for different kinds of vehicles, with breakdowns by state.
+Their estimate is that a gasoline car produces 11,435 pounds of CO2 (5.19
+tonnes, more than the EPA's estimate). For the average US power grid,
+a hybrid produces 6,258 pounds of CO2 annually (2.84 tonnes), and an electric car produces
+4,358 pounds of CO2 annually (1.98 tonnes).
+
+This doesn't even get into the argument for electric vehicles I find most compelling:
+gas vehicles are forever locked into using gasoline, whereas electric vehicles will become
+greener over time as power grids move towards renewable energy. Electricity is inherently
+more fungible, it doesn't matter where it comes from, and that helps avoid situations
+where suboptimal technology gets locked in early. Even if electric vehicles were on par
+with gasoline cars for lifetime emissions, it would still be better for the environment
+to get an electric car.
+
+In California, on average, an all electric car
+produces 2,117 pounds of CO2 annually - less than half the national average, thanks
+to heavier usage of solar and hydropower. I expect electricity to become greener
+over time. There's enough pressure from climate protestors that I believe we're
+going to see power companies do environmentally friendly things for PR reasons,
+even if they don't particularly care about the environment. This is similar to
+how some companies figured out that paying lip service to LGBT rights was good
+PR - it's not the ideal scenario, but it's better than nothing.
+
+Interestingly, some sources find that right now, hybrids are better for the
+environment than an electric car. [CarbonBrief](https://www.carbonbrief.org/factcheck-how-electric-vehicles-help-to-tackle-climate-change)
+has some charts summarizing a few sources, showing how lifetime emissions drastically
+change depending which country's power grid you use. However, if you get a car
+that's partly gas-powered, tailpipe emissions are never going to drop, while
+power grid emissions could drop with development of new technology.
+
+
+\* \* \*
+{: .centered }
+
+Okay. So, we've established that the obvious answer of buying hybrid or electric
+cars is better for the environment. However, this ignores another important
+question: used or new?
+
+Consider the chart from before. For both gas and electric cars, a sizeable chunk
+(25-30%) of the CO2 emissions comes from production. If you buy a used car instead
+of a new one, then it's an immediate 25% drop in emissions. Right?
+
+Well, it depends how far you want to carry out the consequentialist chain. Say
+you buy a used car directly from someone else. That person may choose to have
+no car, or they may choose to get a replacement car. If they replace it with a new
+car, then you haven't changed anything - in the end you caused 1 new car to be
+produced, and all the emissions that entails.
+
+In reality, not everyone will replace their car, and buying a used car is equivalent
+to producing some *fraction* of a new car. If that fraction is $$p$$, then you
+save $$p\cdot 25\%$$ of the emissions. But what's $$p$$? Intuitively, $$p$$ is probably
+close to 100%, since people need transportation, but is there a way we can estimate it?
+
+As a simple model, let's assume that everyone owns 0 or 1 car, and everyone acts the same
+way. Let's say that after buying a used car from someone, they have a XX% chance of not replacing it, a YY% chance of buying a new car, and a
+ZZ% chance of buying a used car from a third person. If the last case happens, that third person no
+longer has a car, and must make the same decision: don't replace, buy new, or buy used. Then the
+fraction of new cars that leads to is
+
+$$
+p = x \cdot 0 + y \cdot 1 + z \cdot p
+$$
+
+which solves to $$p = y/(1-z) = y / (x+y)$$. In other words, it's the number of new car sales,
+divided by (new cars + people who don't replace their car). Counting new car sales is easy: it's
+projected to be [14.4 million](https://www.dbusiness.com/daily-news/2020-u-s-new-vehicle-sales-projected-at-14-4m-decline-of-15-5-from-2019/)
+for 2020. We can then check numbers
+from the [Bureau of Transportation Statistics](https://www.bts.gov/content/number-us-aircraft-vehicles-vessels-and-other-conveyances).
+Between 2013 and 2018, the number of vehicle registrations increased by 18 million, so let's say
+3.6 million vehicle registrations per year. That means that each year, 14.4 million new cars
+are produced, and 14.4 - 3.6 = 10.8 million vehicles leave the road. That gives
+
+$$
+p = 14.4 / (14.4 + 10.8) = 0.57
+$$
+
+which is actually a lot smaller than I expected. I expect it to be closer to 0.8.
+
+
+
+This means about $$1/12$$ vehicles leave the road each year, and $$1% + 1/12$$
+new vehicles are produced each year. This latter value should be $$y$$
+
+The net increase in vehicle registration should be $$y - x$$, 
+
+One simple model we could use is this: after buying a used car from someone,
+they have a XX% chance of not replacing it, a YY% chance of buying a new car, and a
+ZZ% chance of buying a used car from a third person. That third person then has the same
+decision: don't replace, buy new, or buy used. This chain continues unrolling until someone decides
+not to get a replacement car, or they buy a new car.
+
+Assuming everyone acts with the same odds, and each person in this model has 0 or 1 car,
+we can let $$k$$ by the number of new cars you cause to be bought if you buy a used car.
+Solving for $$k$$ gives $$k = y / (x+y)$$, as mentioned above.
+
+If you carry the chain of car-buys out,
+then the 
+re-entering the loop. In that model, if we let
+$$k$$ be the number of new cars you cause to be bought, you get
+
+$$
+k = x * 0 + y * 1 + z * k
+$$
+
+which solves to $$k = y / (1-z) = y / (x+y)$$. (Yes, there's a lot this model doesn't cover, but
+I'm only looking for a rough estimate.) That leaves figuring out what $$y$$ and $$z$$
+are. I didn't find good direct estimates of this, but we could try to derive it from other stats.
+
+We could look at the fraction of used cars sold, compared to new cars. However, this only tells
+us how much larger one is *relative* to the other. We need to get an approximation of how many
+people choose not to replace their cars every year.
+
+I haven't found a great estimate for that. We could look at what fraction of households don't have
+access to a vehicle - recent numbers put that at (https://www.valuepenguin.com/auto-insurance/car-ownership-statistics)
+8.7%, with it staying fairly steady since 2016. This isn't exactly what we want, because households
+aren't people and often have more than 1 car. We could check how many total vehicle registrations there
+are.
+
+Based on numbers from [Statista](https://www.statista.com/statistics/183505/number-of-vehicles-in-the-united-states-since-1990/),
+new vehicle registration grows at about 1% per year. Meanwhile, the average age of vehicles in the US is 11.9 years, as of 2020. (https://www.cnbc.com/2020/07/28/25percent-of-cars-in-us-are-at-least-sixteen-years-old----record-high.html)
+
+That means that approximately 1 in 12 cars go off the road each year. Since
+
+(net increase in vehicle registration) = (increase in new cars bought) - (cars that go off the road each year)
+
+1% = ?% - 1/12
+
+Meanwhile, Americans are changing cars about every 7 years on average (estimates seem to range
+from 6 to 8 years, with an upward trend since 2010 thanks to the Great Recession). Meanwhile,
+the number of registered vehicles in the US grows fairly slowly (an increase of about 1% a year
+based on  https://www.statista.com/statistics/183505/number-of-vehicles-in-the-united-states-since-1990/)
+
+1/12 cars leave the road every year
+1% new registrations each year
+so 1/12 + 1%
+
+(1% more new cars per year) = (1/12 new car purchases) - (
+(fraction new cars) =
+
+So, one way to view this is that every year, 1 in 7 Americans replace their car, and 1 in 12 Americans
+buy a new car. We know that (car replacements) = (used car transactions) + (new car transactions)
+
+new cars
+
+
+other stats.
+
+* Median number of times a car has been owned.
+* Fraction of used cars vs new cars
+
+This [Guardian article](https://www.theguardian.com/environment/green-living-blog/2010/sep/23/carbon-footprint-new-car)
+from 2010 says that purchasing a medium-sized new car is about
+17 tonnes of CO2. The [EPA greenhouse gas guidlines](https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle)
+from 2020 estimates that a gasoline car emits about 4.6 tonnes of CO2 per year.
+Now obviously we're comparing 2010 production numbers to 2020 estimates,
+so it's not super accurate, but this suggests that buying a new car is worth
+about 3.7 years of driving it.
+
+Let's say a car lasts about 10 years. Taking $$3.7 / (10+3.7)$$ gives
+27% of a gasoline car's emissions comes from initial production, and the
+rest comes from fuel. So how do hybrid and electric car production emissions
+compare to that?
