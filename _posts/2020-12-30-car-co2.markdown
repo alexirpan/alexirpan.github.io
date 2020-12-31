@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Carbon Footprint Comparison for Gas and Electric Cars"
-date:   2020-01-13 00:20:00 -0700
+date:   2020-12-30 18:38:00 -0700
 ---
 
 My car's dead. It went through a long series of death throes, almost making it
