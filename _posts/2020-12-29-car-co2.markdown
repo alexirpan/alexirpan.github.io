@@ -20,11 +20,9 @@ First off - electric, hybrid, or gas? This is supposed to be obvious, but maybe
 it's not. In high school, one of my teachers claimed that a new Toyota Prius was
 worse for the environment than a new Hummer over the course of its lifetime,
 because the CO2 emitted during production time was much higher and the gas savings
-didn't make up the difference. I never checked this claim, and it was 10 years ago. There's
-been several advances in battery production since then, but it does demonstrate you should care about
-factory-to-driver emissions, not just driver emissions.
+didn't make up the difference. I never checked this claim, and it was 10 years ago.
+Let's see if it still holds up with the advances in battery production.
 
-Let's see if we can find some sources.
 The European Parliament has
 [an infographic](https://www.europarl.europa.eu/news/en/headlines/priorities/climate-change/20190313STO31218/co2-emissions-from-cars-facts-and-figures-infographics)
 for lifetime CO2 emissions from different kinds of cars, from 2014.
@@ -37,9 +35,9 @@ the second bar is a diesel car, and the last 3 are electric cars under different
 assumptions of clean power.
 Lifetime CO2 emissions are measured in g/km, assuming a 150,000 km mileage. This
 is about 93,000 miles for the Americans out there. Unfortunately I wasn't able
-to find the primary source for this chart, but at a glance, electric cars do pay a
+to find the primary source for this chart, but at a glance electric cars do pay a
 higher up-front cost in CO2 emissions. It's 62.5g CO2/km versus
-50g CO2/k, a 25% increase. However, this is later offset by the decreased emissions
+50g CO2/km, a 25% increase. However, this is later offset by the decreased emissions
 from power generation. The exact difference depends on how clean your electricity is.
 At the extreme ends, an electric car powered by electricity from coal is worse than a
 gasoline car! On average though, it looks good for the electric car, 170 g/km compared to
@@ -54,29 +52,29 @@ found similar conclusions. They compared an average conventional car, an efficie
 
 Electric vehicles should have larger gains than the ones shown here, because these numbers
 are based on a lifetime mileage of 93,000 miles. Most EVs I've looked at come with a 8 year, 100,000 mile
-warranty on their batteries, and because power grid electricity is greener than burning gasoline, these
-charts should be an underestimate of the impact.
+warranty on their batteries. Power grid electricity is greener than burning gasoline, so underestimates
+of mileage are worse for electric cars when comparing their emissions.
 
 Interestingly, for Germans, an electric car is only on par with an efficient gas car, since their power
-grid is more carbon heavy. This leads to the argument for electric vehicles I find most compelling:
+grid is more carbon heavy. For the French and Norwegians, it's amazing, and this is part of the argument for electric vehicles I find most compelling:
 **gas vehicles are forever locked into using gasoline, whereas electric vehicles will become
 greener over time as power grids move towards renewable energy.** Electricity is inherently
 more fungible, it doesn't matter where it comes from, and if more of the transportation network
-moves to electric, it can reduce lock in of suboptimal technology.
+moves to electric, it reduces lock in of suboptimal technology.
 
 If you live in the US and are curious, the [Alternative Fuels Data Center (AFDC)](https://afdc.energy.gov/vehicles/electric_emissions.html)
 from the Department of Energy has a tool that lets you estimate annual
 emissions for different kinds of vehicles, with breakdowns by state.
 Their US average says a gas car produces 11,435 pounds of CO2
 annually, a hybrid produces 6,258 pounds of CO2 annually, and an electric car produces
-4,091 pounds of CO2 annually. In California, the electric car is estimated at 1,960
+4,091 pounds of CO2 annually. In California, the electric car produces 1,960
 pounds of CO2 annually, less than half the national average, thanks to heavier usage of solar
 and hydropower.
 
 \* \* \*
 {: .centered }
 
-We've now established that the obvious answer is the correct one: hybrid and electric cars are
+We've now established that the obvious answer is the correct one: electric cars
 produce less CO2 over their lifetime. Now, used or new?
 
 Consider the chart from before. Around $$50/220 \approx 25\%$$ of the lifetime emissions for a gas car
@@ -86,12 +84,13 @@ finds that producing a medium-sized car produces 17 tonnes of CO2.
 The [EPA greenhouse gas guidelines](https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle)
 from 2020 estimates gas cars emit 4.6 tonnes of CO2 per year. The average age of
 cars in the US is [11.9 years](https://www.cnbc.com/2020/07/28/25percent-of-cars-in-us-are-at-least-sixteen-years-old----record-high.html),
-an all-time high. So the lifetime share coming from manufacturing is
-$$17 / (17 + 4.6 \cdot 11.9) = 23.7\% \approx 25\%$$
-Getting to 25% in two different ways makes me more confident in these numbers.
+an all-time high. Using those numbers gives
+$$17 / (17 + 4.6 \cdot 11.9) = 23.7\%$$ for gas cars, which is close enough
+to $$25\%$$.
 
-The three Rs go reduce, reuse, recycle, and that's the order of priority. If you buy
-a used car, and that offsets producing 1 new car, then you've immediately cut your
+The three Rs go reduce, reuse, recycle, and that's the order of priority. If you don't
+need a car, that's still the best, but reusing an old car
+offsets producing 1 new car. That immediately cuts your
 environmental impact by 25%-35%. Right?
 
 Well, it depends how far you want to carry out the consequentialist chain. Say
@@ -99,7 +98,6 @@ you buy a used car directly from someone else. That person likely needs a replac
 car. If they replace it with a new
 car, then you haven't changed anything. You still caused 1 new car to be
 manufactured, along with all the emissions that entails.
-
 In reality, not everyone will replace their car, so buying a used car is equivalent
 to producing some *fraction* of a new car. If that fraction is $$p$$, then you
 save $$p\cdot 30\%$$ of the emissions. But what's $$p$$? Intuitively, $$p$$ is probably
@@ -108,7 +106,7 @@ close to 100%, since people need transportation, but is there a way we can estim
 As a simple model, let's assume that everyone owns 0 or 1 car, and everyone acts identically.
 After someone sells their car, they have a XX% chance of not replacing it, a YY% chance of buying a new car, and a
 ZZ% chance of buying a used car from a third person. If the last case happens, that third person no
-longer has a car, and has the same choice of if and how they want to replace the car they just sold.
+longer has a car, and has the same choice of if and how they want to replace it.
 We can define the fraction of new cars ($$p$$) in a recursive way, where the first two cases are base cases.
 
 $$
@@ -123,7 +121,7 @@ in 2018. Counting people who don't replace their car is harder, but we can use n
 from the [Bureau of Transportation Statistics](https://www.bts.gov/content/number-us-aircraft-vehicles-vessels-and-other-conveyances).
 There are fluctuations between each year, but if we consider the 2013-2018 time span,
 the number of vehicle registrations increased by 18 million. So let's say
-3.6 million vehicle registrations per year. This is the net increase, so 17.3-3.6 = 13.7
+3.6 million vehicle registrations per year. This is the net increase, so $$17.3-3.6 = 13.7$$
 million vehicles leave the road each year. Let's treat 13.7 million as the number of cars that
 don't get replaced. Then we get
 
@@ -132,9 +130,9 @@ p = 17.3 / (17.3 + 13.7) = 0.558
 $$
 
 This is a lot smaller than I expected, I thought it would be closer to 0.8 than 0.5.
-I'm overestimating the number of vehicles that leave the road each year, since the BTS numbers
-include aircraft and boats as well. A overestimate in the denominator means I'm underestimating
-$$p$$, so let's round up and say buying a used car leads to about 0.6 new cars.
+The Transportation Statistics numbers include aircraft and boats in their vehicle registrations,
+so I'm likely overestimating the denominator, meaning I'm underestimating $$p$$.
+Let's round up and say buying a used car leads to about 0.6 new cars.
 This saves 0.4 new cars of production, and you can expect a $$0.4 \cdot 30 = 12\%$$ cut to
 environmental impact.
 
@@ -144,14 +142,15 @@ environmental impact.
 Combining it all together, even if you use the most efficient gas vehicle, and buy it used, you will
 struggle to do as good for the environment as buying a new electric vehicle. The ICCT brief estimates a
 60+ mpg conventional car at 180 g CO2/km. Buying it used gives a 12% cut, to 158.4 g CO2/km. The same ICCT brief
-estimates electric vehicles at 130 g CO2/km, while the infographic from EU parliament estimates 170 g CO2/km.
+estimates electric vehicles at 130 g CO2/km, while the EU parliament infographic estimates them at 170 g CO2/km.
 Perhaps you'll do better, but it won't be by much.
 
-California residents can expect their electric cars to be much better for the environment. Other states
-may not get as big gains, but I would estimate a 30%-50% reduction in lifetime CO2 emissions. Additionally,
-the manufacturing emissions mostly come from energy needs, so the CO2 from that should also drop over time.
+California residents can expect their electric cars to be much better for the environment, thanks to
+more investment in green power. Other states
+may get smaller gains, but I estimate a 25%-50% reduction in lifetime CO2 emissions compared to a conventional
+car.
 
-If you're concerned about how well you can charge your car (like me), then you could consider a plug-in
+If you're concerned about how regularly you can charge your car (like me), then you could consider a plug-in
 hybrid. These cars come with a smaller battery that lets them use electric power for short drives, then
 switch to hybrid mode (using gas) once that runs out. The CO2 emissions will depend on how diligent you
 are about charging the battery, but if your commute is short, it'll be almost equivalent to a pure electric
