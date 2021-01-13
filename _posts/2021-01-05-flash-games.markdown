@@ -29,8 +29,95 @@ through parts of the archive I remembered.
 
 A bunch of them have not aged well. Game design has evolved a lot, generally for the better,
 and now that I'm playing them as an adult, it's obvious how many of the games I played had filler
-content. Nonetheless, I wanted to share some of the highlights. Fair warning: I have a lot of
-nostalgia for these games, but I'm also going to ruthless about parts I don't like.
+content. Nonetheless, I wanted to share some of the ones that held up for me.
+
+
+Super Mario 63
+--------------------------------------------------------------------------------------
+
+Super Mario 63 is a 2D fangame, that mashes up three of the 3D Marios: Super Mario 64,
+Super Mario Sunshine, and Super Mario Galaxy. On one hand, it shouldn't be surprising that
+the game is so good. It's stealing mechanics and levels from three of the best platformers of
+all time. On the other hand, there's still a lot of work required to execute that roadmap
+properly, especially in a 2D world.
+
+There's a lot of hidden secrets in the hub area, and the movement system is great. The story
+is pretty fanfiction-y, but that isn't the focus of this game. My one complaint is that
+Mario is *too* powerful. Many platforming sections are designed to be beatable without the FLUDD,
+likely because it's not guaranteed you have FLUDD. But, the FLUDD comes with so much water that
+you probably still have it, making many of the platforming sections a joke. Meanwhile, there's
+0 cooldown on the spin attack, so if you spam the spin attack button you'll be practically
+invincible. Still, in single player games, it can be fun to be overpowered.
+
+
+Sonny
+------------------------------------------------------------------------------------------
+
+Sonny and Sonny 2 are two RPG games. You play as Sonny, an amnesiac zombie that maintains mental capacity
+and doesn't want to eat people. Your travel the world with two goals: figure out how you got
+turned into a zombie, and survive. It's a turn-based game with a level-up system, skill tree, and
+equipment.
+
+Part of Sonny's strength is its high production value. The game has a distinctive art style, voice acting,
+music, and well-done sound effects. However, I love this game because of the creativity and flexibility of its combat
+system. Sonny has access to a ton of tools. A lot of RPGs have skill trees that are basically
+variants of "do more damage" or "attack with this element". Most of the skills are clearly better than
+other ones, and the progression is about grinding EXP to learn the more powerful ones.
+Sonny avoids this problem by making all your skills slightly different. Some will stun the enemy, some will
+apply debuffs, some dispel enemy buffs, and so on. The game UI (usually) spells out exactly
+what enemy buffs and debuffs do, making it clear what your opponents are able to do and giving you all the
+information needed to figure out how to counter it.
+It gives the game a puzzle feel, where gameplay is more about finding good skill
+combos and synergies, rather than brute-force leveling. In fact, in Sonny 2, one of the bonus areas is only unlocked
+if you do a low% run on the hardest difficulty. The game is designed to make this doable.
+
+I will say that once you know the best skill combos, it can be hard to play the game casually, especially
+when the bonus bosses practically require using the broken combinations. That reduces the replay value.
+Additionally, the praise is mostly for Sonny 2. Sonny 1 has a bit of the same flavor, but a lot of skills
+in Sonny 1 just aren't worth the time, and are closer to a typical RPG. This also isn't the game for you
+if you don't like reading. The skills are complex and you have to read their full description to figure out
+how they might work together.
+
+
+Epic Battle Fantasy
+-------------------------------------------------------------------------------------------
+
+Okay. Okay okay okay. First things first: the series has really juvenille humor. It's like the game was
+written by a horny teenage boy, and then it never evolved past that.
+
+If you can ignore that, then you'll find a quality JRPG. Epic Battle Fantasy 1 and 2 are perfectly
+playable, but they're basically boss rushes. Starting from the 3rd entry, you get a real JRPG. There's an
+overworld, small puzzles, treasure chests, crafting, a level up system, bosses, the whole works. I wouldn't pay
+for it, but it's pretty high quality for a free RPG.
+
+Epic Battle Fantasy isn't trying to rock the boat, or do anything crazy to the JRPG genre, but I think that's
+fine. The one thing it does different is its equipment system. Instead of giving flat stats, all weapons and
+armors grant percentage based stats. So for example, a weapon could give +30% attack and +15% defense, or +50%
+attack and -20% defense. Similar to Sonny, old weapons are never strictly worse, because they all scale with
+your stats as you level up. Your equipment choice is therefore more about what passives you want, what playstyle
+you prefer, and what elemental weaknesses your foes have.
+
+This is another game where you need to be willing to read, although not to the same extent as Sonny 2. The reading
+in this game is more about scanning for elemental weaknesses than complicated skills.
+
+
+Amorphous+
+---------------------------------------------------------------------------------------------
+
+This game has one button: attack. That's pretty much it. Despite that, it's a surprisingly deep arcade game.
+Your goal is to kill Glooples with your giant sword. It attacks in a wide arc in front of you. The range
+is traded off with recovery time where you aren't able to move.
+Different Glooples have different attack patterns and interactions with other Glooples, and although many aren't
+lethal, you only get one life.
+
+It's an action game with minimal upgrades. You unlock rewards based on your achievements, but can only equip at
+most 2, so you get to a good setup pretty quickly and the rest of the game is solely about your skill at playing
+the game. And if you want to get better, there's a practice mode where you can spawn all the hard enemies you
+want, until you learn their patterns well enough to handle them for real.
+
+After playing for a bit on your own, I highly recommend using a guide to look up what achivements there are. Many
+of the achievements are hard to discover on your own. I wouldn't use a guide right away though, because this
+game is basically a roguelike, and part of the roguelike experience is learning the mechanics on your own.
 
 
 Motherload
