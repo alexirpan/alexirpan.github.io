@@ -101,6 +101,24 @@ This is another game where you need to be willing to read, although not to the s
 in this game is more about scanning for elemental weaknesses than complicated skills.
 
 
+Mastermind: World Conqueror
+------------------------------------------------------------------------------------------------
+
+It's been over 10 years since I played this game, and I still feel the same way about it, in a good way.
+Mastermind: World Conqueror is a real-time strategy game, where you play a villain trying to take over the world.
+Recruit minions, send them on missions to earn money, advance through the tech tree, upgrade your base,
+and fight off the good guys that try to stop you.
+
+A lot of the features are sort of useless, or aren't cost effective. For example, in my many plays through the game, I've never found a use for the
+henchmen. I also don't like that you can only plan and execute 1 mission at a time. It really limits the potential
+multitasking, and once you're in the late game you're mostly just waiting for loading bars to finish and watching your minions
+mow down enemy forces.
+Despite this, something about the core gameplay loop
+of steal cash -> use cash to buy upgrades and plan other missions -> repeat works for me. The game is on the easy side,
+but I don't think that's a bad thing.
+
+
+
 Amorphous+
 ---------------------------------------------------------------------------------------------
 
@@ -111,13 +129,18 @@ Different Glooples have different attack patterns and interactions with other Gl
 lethal, you only get one life.
 
 It's an action game with minimal upgrades. You unlock rewards based on your achievements, but can only equip at
-most 2, so you get to a good setup pretty quickly and the rest of the game is solely about your skill at playing
-the game. And if you want to get better, there's a practice mode where you can spawn all the hard enemies you
+most 2, so you reach max power without much playtime and the rest of the game is solely about your skill.
+And if you want to get better, there's a practice mode where you can spawn all the hard enemies you
 want, until you learn their patterns well enough to handle them for real.
 
-After playing for a bit on your own, I highly recommend using a guide to look up what achivements there are. Many
-of the achievements are hard to discover on your own. I wouldn't use a guide right away though, because this
-game is basically a roguelike, and part of the roguelike experience is learning the mechanics on your own.
+I recommend treating this game as a roguelike, because, well, it basically is one, and part of the roguelike
+experience is learning the mechanics on your own. Then once you've seen most of the monsters, look up a guide
+if you want to go for 100% completion.
+Many of the achievements require engineering pretty weird scenarios that don't come up in normal play.
+I also recommend using the glitch that lets you earn achievements in Practice Mode, unless you want to play
+several hours waiting for the right rare Gloople to spawn. My first time through, I didn't use the glitch
+becaause I wanted to be honorable, but that was a mistake. There's no skill in playing runs until you
+get the right rare enemy to spawn.
 
 
 Motherload
@@ -133,7 +156,8 @@ when you run out of gas to refuel, sell your ore, and buy upgrades, which helps 
 and mine more material. Rinse and repeat until you get to the end. Not a lot of depth, but
 there's a Zen feeling in figuring out the shortest path to each ore. It's important that you
 can't drill upwards, since if you drill poorly, you can easily make it much harder to mine
-the ore you want. It's just enough thinking to stop it from being totally mindless.
+the ore you want. It's just enough thinking to stop it from being totally mindless. Kinda
+like Bejeweled, except with an upgrade system and resource management.
 
 My main issue with the game is that dying has an insane penalty. If you die, you go back to
 your last save point, but all drilled holes will be reset. So if you die in the late game,
@@ -148,6 +172,64 @@ invisible stat check and players don't know they exist until they hit it.
 
 Once you know how to deal with gas pockets, the game doesn't have many surprises, and it's
 pretty easy to reach the end in a practically invincible state.
+
+
+Elements of Arkandia
+--------------------------------------------------------------------------------------------
+
+This game really shouldn't work. The mechanics are really poorly explained. Stats have
+incorrect descriptions. Art assets get reused across equipment - you'll have multiple shields
+that look exactly the same, with wildly different stats. There are massive difficulty spikes.
+And most importantly, who uses Impact font this much? I'm not even kidding, the font usage
+in this game is really bad and it makes a ton of things harder to read than they should.
+
+Despite all of those issues, I like this game. It's a mashup of mechanics from
+two games: Puzzle Quest, and Recettear: An Item Shop's Tale.
+
+You start the game with a large debt, that accumulates interest every day. To pay off the
+debt, you need to go on dungeon adventures, find loot, then sell that loot in your shop.
+
+Battles are done through a Bejeweled board. You try to match 3 gems of the same color together.
+Forming a group of 4 or 5 gives an extra turn. Gems either grant mana, give gold, give
+treasure, or give rage. Mana can be used to cast spells that affect the board. For example,
+there's a spell that changes all gold gems to treasure gems, making it easier to line up groups
+of 4 to get more extra turns. Rage can be spent to attack with your weapon, which is usually
+your main damage source.
+
+The shop stocking is Recetter without the haggling. You stock loot in your store, pick crests
+that increase the odds of selling certain items, then open your store and see what sales you
+can make. Everything in Elements of Arkandia revolves around money. You need to balance
+paying off your debt, upgrading your store, and buying battle upgrades that enable clearing
+harder dungeons. Then battles themselves are about figuring out what types of mana are
+easy or hard to achieve, and using that to decide what kind of spells you're going to aim for.
+
+It's not as good as Puzzle Quest, and it's not as good as Recettear, but it's still fun,
+albeit with a really grindy endgame. Two bits
+of advice. One: you can choose to play without debt, but you should play with debt. If you
+play without debt, you remove all the interesting trade-offs on how to spend your money,
+making the gameplay really boring. Two: if you want, you can try to min-max every move,
+since there are no turn timers. I don't think you should do this. Battles are long enough
+that trying to min-max every board will just drive you insane. Just aim for an acceptable
+move and keep going.
+
+
+Portal: The Flash Version
+--------------------------------------------------------------------------------------------
+
+There's an interesting story behind this game.
+
+The creators of the game watched the trailers for Portal 1, and were SUPER PSYCHED. They were
+so excited that they implemented Portal's mechanics in Flash, creating puzzles based on what
+they saw from the trailer. After fleshing it out more, they got good feedback from friends and
+family, so they released it publicly, 1 day before the official game came out.
+
+The end result is missing Portal's sharp writing, but the puzzles are uncannily accurate. The
+mechanics they added themselves also work quite well, and the overall package is pretty good.
+The main problem the game has is that sometimes, you know exactly what you need to do, and
+executing the portal shots in the required time window is the hard part. These execution
+tests are tighter than any from Portal proper, so you need to adjust your expectations going
+in. The QA is also worse, sometimes objects get bumped through walls they shouldn't, but I never
+experienced a game breaking bug.
 
 
 Shift series
@@ -168,4 +250,6 @@ the series get better about this.
 Ghost Hacker
 --------------------------------------------------------------------------------------
 
-Ghost Hacker
+Ghost Hacker is a tower defense game, and I'll be honest, it probably shouldn't be listed over
+some of the other famous ones, like Bloons Tower Defense or Kingdom Rush.
+
