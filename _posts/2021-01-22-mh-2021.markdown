@@ -1,0 +1,171 @@
+---
+layout: post
+title:  "MIT Mystery Hunt 2021"
+date:   2020-12-30 18:38:00 -0700
+---
+
+I had two reactions at the end of Hunt this year.
+
+* Wow, that hunt was amazing.
+* Wow, that hunt was enormous.
+
+It is completely insane that ✈️✈️✈️Galactic Trendsetters✈️✈️✈️
+managed to pull the MMO idea together. Game development has one of the worst
+ratios for time-spent-creating to time-spent-experiencing. It's this unholy
+mixture of animation, programming, environment design, and level design.
+There's a certain level of detail needed to make the world feel immersive,
+rather than shallow, and when you throw multiplayer into the mix, it gets worse.
+For Teammate Hunt, we were already sweating a bit at making 8 Playmate games
+work, and those were limited to 6-player instances
+So the fact the MMO worked at all astounds me, but then the space was richly
+decorated, and had its own share of secrets that rewarded exploration and poking at
+the underlying systems. perpIW didn't *have* to have MITHenge, but it did.
+
+Funnily enough, I felt I got more out of the MIT part of MIT Mystery Hunt this year,
+despite the Hunt running remotely. I've solved with teammate the past few years, which
+usually has a lot of current MIT affliation. Because of this, whenever we have a puzzle
+that uses something on campus, I defer to people who actually know the MIT campus
+layout. For this Hunt, perpIW was knew to everybody, and although the MIT allusions were
+obvious, I found it way harder to get lost when I had a minimap I could check at all
+times. (Why can't the real MIT campus have a minimap, or a quickwarp function...)
+That meant I did more of the "onsite" interactions, and the process of doing so helped me
+learn the MIT building layout a bit better.
+
+That being said, I missed out on almost all of the Students round, thanks to getting sucked
+in by the Infinite Corridor - by the time I got out, I ended up drifting to non-Students
+puzzles and rounds. That meant I didn't do as much of the exploration, aside from mapping
+out a lot of Tunnels, and travelling within Giga/Kilo/Milli.
+
+I'd say most of my time this hunt was spent in the rounds with crazy structures, and that
+was totally fine. The puzzles were pretty clean and hit a bunch of random niches
+(finally, a puzzle about Worm!). But wow, there was a lot of them.
+
+Last year, I already said that I didn't think the scale of Hunt was sustainable, and now I
+feel it *definitely* isn't sustainable. Galactic pulled it off, but Galactic Trendsetters
+is a team that's consistently proven they're willing to go to insane lengths and bend over
+backwards to make the puzzlehunt they want to make, even if they have to write a conlang,
+go nuts on interactive content, and run shifts for 24/7 hint support.
+I get the impression that they had an inkling of how
+much work the MMO theme would take, and decided "yeah we're doing it anyways". Balancing
+both a record-setting number of puzzles and MMO development sounds like a nightmare, and
+I have trouble imagining the writing process for something that tops this. On the other
+hand, perhaps that's a blessing in disguise. There's no shame in setting your sights lower
+than this Hunt.
+
+Pre-Hunt
+------------------------------------------------------------------------------------
+
+Normally, my pre-Hunt week is spent flying into Boston, which throws a wrench into my
+producitivity for work. Since Hunt was remote this year, that was less of a problem, and
+the main challenge was adjusting my sleep schedule to wake up at 9 AM West Coast time.
+
+To handle remote solving better, teammate did some investment into our online tooling. Normally,
+we use Google Sheets to manage things, Discord for some coordination, and then create text
+channels on demand. This year, since everyone was remote, we made a bot that auto-created
+text and voice channels for every new puzzle, along with a small webapp with Discord integration
+to auto-close channels after puzzles got solved. There were some rough edges, but it helped
+a lot, and although it was certainly different from in-person solving, I felt about as effective
+as normal.
+
+A bunch of teammates got into [NERTS! Online](https://store.steampowered.com/app/1131190/NERTS_Online/)
+before Hunt. It's fun! But I think you need at least 3 people to make it worthwhile, as well as
+fast, precise mouse movement.
+
+I was dismayed at the lack of #ambiguous-shitposting this year, so I made a Conspiracies puzzle,
+partly to test our web stack, but mostly because I wanted to make up some conspiracies.
+We were considering Baba Is You (because Barbara Yew) and
+Doctor Who (because the site was space themed, the 404 page said "in another dimension", and dimension
+is the D in TARDIS) for themes. Meanwhile, we knew people from Galactic had contributed NYT crosswords
+that got published on 6/28 and 9/9, both of which seemed like nice dates (Tau day, and...Cirno Day, I guess?).
+It was all garbage! I expected it to be garbage. All is right with the world.
+
+The opening skit plays, and, well, we still aren't sure about the plot, but we do learn that
+automated answer checkers are back, and the rate limit is 3 per 5 minutes across the entire round. Last year,
+teammate had a much-memed 10% guess threshold, and we didn't think that would work with the new rate-limit.
+We ended up going with a similar system - guessing is decentralized, use a 30% guess threshold, and if you're
+rate-limited, let the team know and we'll coordinate it then. Otherwise, the time spent coordinating isn't worth
+it. In practice, there was usually only 1 puzzle in a round where we wanted to spam guesses, so the per-round
+limit was much closer to a per-puzzle limit, and almost never throttled us.
+
+The other fun thing I did was dig into the source code. (For the record, this was before the warning to never reverse-engineer
+the Projection Device.) I found a [solve-sounds.js](view-source:https://perpendicular.institute/static/scripts/solve-sounds.js)
+file, with human-readable code building the audio asset filenames. So, before puzzle release, we knew that solve sounds
+were back, Megalovania was a solve sound for something, the EC Fire Alarm remix was going to show up somewhere, and so on.
+We organized them into round theme guesses, that were *kind of* right but mostly wrong.
+
+![Solve sound round guesses](/public/mh21/solvesounds.png)
+{: .centered }
+
+Some are either debug sounds, or deliberate red herrings. Of the unused ones,
+[5.mp3](https://perpendicular.institute/static/audio/5.mp3) is You Are a Pirate from Lazy Town,
+which could map to Charles River events. [8.mp3](https://perpendicular.institute/static/audio/8.mp3) is Super Mario 64 Endless Stairs,
+which *definitely* feels like an Infinite Corridor placeholder. [11.mp3](https://perpendicular.institute/static/audio/11.mp3) is from Super Mario Galaxy, which made us think there would be a Mario round when combined with 8.mp3, but it also could have been space (perhaps the Giga/Milli/Nano round).
+
+
+Yew Labs
+---------------------------------------------------------------------------------
+
+Puzzles I worked on
+
+[Don't Let Me Down](https://perpendicular.institute/puzzle/dont-let-me-down/) - I got directed to this puzzle
+because "OMG, Alex Don't Let Me Down has Twilight Sparkle in it!" I took a look, and went "Oh this is the
+scene where she's holding on to Tempest Shadow. Oh, that fits the blanks, I get how this puzzle works." It
+was pretty fast from there.
+
+[✏️✉️➡️3️⃣5️⃣1️⃣➖6️⃣6️⃣6️⃣➖6️⃣6️⃣5️⃣5️⃣](https://perpendicular.institute/puzzle/%E2%9C%8F/) - This was just a ton of fun. The rate
+limiting on the text replies got pretty bad, and the optimal strategy would have been for me to move to
+another puzzle, but I was having fun and had to see how the emojis were going to end.
+
+By the time that finished, we had made a lot of progress on the round, and I was surprised we didn't
+have the meta unlocked yet. Going into hunt, I wasn't sure if Galactic would keep their metas gated at the
+last unlock in the round, or if they would open them early and allow for potential early solves. For the
+intro round, we definitely could have gotten the meta earlier if the site had let us do so, and I was worried
+that would continue in the future rounds. In practice that was never really a concern - the meta unlocks were
+the last ones in the round, but they were tuned such that we usually didn't have the answers to solve them
+when they first unlocked.
+
+[Unmasked](https://perpendicular.institute/puzzle/unmasked/) - Hey, a Worm puzzle! I saw it was tagged as
+"worm, parahumans ID", but all the cape and civilian names were done by time I showed up. My contribution was reading
+the flavortext and pointing out we should track the survivors of the Leviathan fight.
+
+(A fun bit of Worm trivia: in the debrief meeting before the Leviathan fight, one of the leaders says that
+statistically, they expect 1 in 4 capes to die. This was real - the author rolled dice for every character,
+including the protagonist, and wrote the story around the deaths. No one was safe. If Taylor died, the
+protagonist would have shifted to someone in the Wards.)
+
+
+Infinite Corridor
+----------------------------------------------------------------------------------
+
+This was my favorite round of the Hunt. It was just so *weird*. I had a lot of fun going through
+Cafe Five, and cataloguing the differences between different instances of the same puzzle family.
+I was also aware that everyone working on Infinite Corridor was developing their own language
+on-the-fly to describe the round, and the later in the round we got, the more incomprehensible
+our discussions were to newcomers.
+
+Infinite Corridor also broke our new puzzle bot. In Discord, we used categories to bundle all channels for
+a round. The limit per category is 50 channels, but it's not like we're going to have a round with
+over 50 puzzles in it, right?
+
+
+
+in this round, but grasped its mechanics pretty quickly
+
+
+
+Illiterate Programming
+
+All of Infinite Corridor
+Not much on Library of Images, got stuck on Unchained, but helped determine strategy after ICS solve.
+
+Dolphin
+Complexity Evlauation (bounced off of it)
+Green Building (but mostly failed at Tetrising and spent it trying to backsolve instead)
+
+Extensive
+
+looked at giga meta
+then how to run a pzuzlehunt (kinda failed)
+kilo meta
+then nutraumatic
+then milli meta
