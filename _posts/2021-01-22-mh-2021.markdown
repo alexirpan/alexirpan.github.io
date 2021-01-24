@@ -147,16 +147,76 @@ Infinite Corridor also broke our new puzzle bot. In Discord, we used categories 
 a round. The limit per category is 50 channels, but it's not like we're going to have a round with
 over 50 puzzles in it, right?
 
+There was something vaguely meditative about solving Cafe Five. Nothing complicated, just serve
+the customers. You earned comps by serving more customers, which you use as freebies - generally
+we saved comps for Rief and for big crosswords that we failed to do by hand.
+
+We had the idea on Library of Images pretty quickly (although I'm still not sure how we got the
+right intuition). I was pretty unhelpful on this puzzle, my image manipulation skills are not very
+good, but we mapped out about half the letters and that was enough to solve one of the one letter
+answers. Meanwhile we were getting nowhere on Unchained. We had figured out the lyrics for a few
+instances, but didn't understand how to extract from it. That left Make Your Own Word Search,
+which annoyingly did not check off the "Make your own logic puzzle" Bingo square. Although, in some
+ways, creating the word search sort of was a logic puzzle...
+
+Our strategy was to unlock around 5 different Make Your Own Word Search puzzles, check all their
+rules, then solve just the one that seemed easiest. We ended up picking a Letter Bag constraint
+where all words needed to be 5 letters long. It felt hard at the start, but by aggrressively sharing
+letters we were able to construct it without much effort, and that unlocked Infinite Corridor
+Simulator for us (which I started calling ICS for short.)
+
+Doing frequency analysis on Unchained answers in ICS got us ZITHER as a potential backsolve candidate
+for the real Unchained puzzle. That was correct, so one group of us tried to figure out how to
+reconstruct ZITHER, while the other group tried to extract ICS. Mostly, we got stuck, and the group in
+the ICS chat pulled us back because they had figured out 4 of the 5 extractions. Once we got the first
+ICS solve, we sketched out how to optimize for minimum number of puzzle solves in the real corridor.
+Our strategy was to use the third letter of the ordinal, since
+
+FIRST
+SECOND
+THIRD
+FOURTH
+FIFTH
+
+all have unique 3rd letters. Then for the number,
+
+ZERO
+ONE
+TWO
+THREE
+FOUR
+FIVE
+SIX
+SEVEN
+EIGHT
+NINE
+
+we found that the 3rd letter again had the best odds of not requiring another letter (two Rs, two Vs, the
+rest are unique). Unchained was hopeless, but by process of elimination we determined it would give
+the 4th digit. Cafe Five, Library of Images, and Infinite Corridor Simulator got solved exactly, but
+the few of us who did Make Your Own Word Search warned that the word searches were all going to be
+time consuming and doing one didn't make you any faster than the rest. I'm not sure how true that
+was, but we did just enough word searches to restrict that digit to 4 options, opened 40 rooms
+(accounting for the unknown Unchained digit), and solved all the ICS puzzles we found. We got it on
+the 3rd one. (Unfortunately, since we were solving ICS by script, none of us noticed that room
+73178 was an exact replica of the real Infinite Corridor.)
+
+I like this round the most because there was this perpetual sense of mystery. How are we going to
+have several versions of the same puzzle? How are we supposed to learn the meta mechanic for a
+100k puzzle round? That question getting resolved by a recursive puzzle was amazing, and it still
+left optimization for the "true" meta of solving the round with as few puzzle solves as possible.
+One of the cool things about Mystery Hunt is that you're continually evaluating what rounds are
+important / not important to funnel work towards, and it was neat that Infinite Corridor was a small
+version of that kind of planning, embedded within a larger Hunt.
+
+We didn't get the low% clear for fewest solves before Infinite Corridor meta. Puzzkill got there with
+1 fewer solve :(. We did get the first main round meta solve though, and I'm proud of that.
 
 
-in this round, but grasped its mechanics pretty quickly
-
-
+Green Building
+-------------------------------------------------------------------------------------
 
 Illiterate Programming
-
-All of Infinite Corridor
-Not much on Library of Images, got stuck on Unchained, but helped determine strategy after ICS solve.
 
 Dolphin
 Complexity Evlauation (bounced off of it)
@@ -169,3 +229,13 @@ then how to run a pzuzlehunt (kinda failed)
 kilo meta
 then nutraumatic
 then milli meta
+
+Thinking
+Tunnels mapping
+Bingo (and the stories within)
+
+Altered Beasts (oh no)
+Balancing Act (also pretty hardstuck)
+did I even look at anything else here.
+
+Students meta, card red herring
