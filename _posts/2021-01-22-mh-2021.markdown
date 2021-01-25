@@ -196,7 +196,8 @@ rest are unique). Unchained was hopeless, but by process of elimination we deter
 the 4th digit. Cafe Five, Library of Images, and Infinite Corridor Simulator got solved exactly, but
 the few of us who did Make Your Own Word Search warned that the word searches were all going to be
 time consuming and doing one didn't make you any faster than the rest. I'm not sure how true that
-was, but we did just enough word searches to restrict that digit to 4 options, opened 40 rooms
+was, but we did just enough word searches to restrict that digit to 4 options, navigated to
+the 40 possible rooms
 (accounting for the unknown Unchained digit), and solved all the ICS puzzles we found. We got it on
 the 3rd one. (Unfortunately, since we were solving ICS by script, none of us noticed that room
 73178 was an exact replica of the real Infinite Corridor.)
@@ -216,26 +217,193 @@ We didn't get the low% clear for fewest solves before Infinite Corridor meta. Pu
 Green Building
 -------------------------------------------------------------------------------------
 
-Illiterate Programming
+After Infinite Corridor, I moved to Green Building, which had a lot of progress.
 
-Dolphin
-Complexity Evlauation (bounced off of it)
-Green Building (but mostly failed at Tetrising and spent it trying to backsolve instead)
+[Dolphin](https://perpendicular.institute/puzzle/dolphin/) - A fun puzzle about Gamecube trivia.
+I helped on the first subpuzzle after we got the a-ha, then set up formulas for the final
+extraction. We got stuck a bit by assuming we wanted the face that touched the Gamecube, rather than
+the number that was face-up, but we got there evenutally.
 
-Extensive
+[Green Building](https://perpendicular.institute/puzzle/green-building/) - We got the Tetris a-ha
+pretty quickly, without the 5-bit binary hint. I think LJUBLJANA was the one that confirmed our suspicions.
+After doing a few grids, we went down an enormous rabbit hole, where we assumed we would find the number
+of lines we attacked with according to standard Tetris rules, indexing that number into the answer.
+This actually gave okay letters, our partial started AMAR???T????. The Green Building round page was arranged
+with Switch #1 on the bottom, so we thought it could be reversed and we might get a phrase ending in DRAMA.
+Indexing by attack into LJUBLJANA gave a J, but the solution for LJUBLJANA was especially weird, so we thought
+the answer might go to a switch we didn't have yet. Eventually someone pointed out first letters spelled
+"CLEAR ALL V" and we got there.
 
-looked at giga meta
-then how to run a pzuzlehunt (kinda failed)
-kilo meta
-then nutraumatic
-then milli meta
+I did a lot of staring at [Complexity Evaluation](https://perpendicular.institute/puzzle/complexity-evaluation/) and [Voltage-Controlled](https://perpendicular.institute/puzzle/voltage-controlled/), where we had most of the data
+for a while, but we got stuck on extraction and needed a hint request on both to finish them.
 
-Thinking
+
+Stata Center
+----------------------------------------------------------------------------------------
+
+[Extensive](https://perpendicular.institute/puzzle/extensive/) - This was the only puzzle I looked at
+in this round. It played well with my skill sets (willingness to try a lot of garbage ideas on
+technical data). After working at it a bit, we had all the letters except for the MIDI file and DOC
+file. The DOC file was partially done, and we were half-convinced it didn't have a 3rd letter, which
+made our Nutrimatic attempts a lot worse. We got there eventually.
+
+![12 guesses on Extensive](/public/mh21/stata.png)
+{: .centered }
+
+We did have some tech issues around opening the .doc file. I think it was especially pronounced for us
+because this was a tech puzzle, so the people who self-selected for it were more likely to have Linux.
+OpenOffice worked for some people and didn't work for others.
+
+⊥IW.giga/kilo/nano
+-----------------------------------------------------------------------------------------
+
+teammate had an unusually easy time with this round. It's odd to say "unusually easy" when it took
+our team 12 hours to break through the first level of puzzle, but the next fastest team needed
+24 hours...
+
+I'd say we mostly got lucky with our intuitions and our data. At the time we broke through, we had solved
+every puzzle except Twins (the backsolve), and A Routine Matter. We knew that Rule of Three had
+auto-solved on unlock, and knew we wanted to backsolve Twins. There was some forward solve progress,
+but we decided it wasn't forward solvable because the image was too small, didn't have clear
+steganography in-roads, and every other puzzle in the round looked solvable forward.
+
+We had already made the leap to planetary syzygies, which we found by searching a few of the dates
+and looking for space / planet-based results. We also correctly guessed that the backsolve answer
+would correspond to Earth. If you read the solution, every syzygy used either the Twins answer,
+or the A Routine Matter answer, so we had zero confirmation of any extraction mechanic...however,
+we did have the answer TWIX, and saw it was the center planet for the X in GALAXY, so that got
+us thinking about ways to generate extraction locations that would get the X out of TWIX. Luckily,
+the errors in syzygy identification didn't touch that entry.
+
+A teammate proposed the "common letter gives index" extraction, but wasn't sure about it. Another
+group cleaned up our data, and noted that if the 2nd letter of A Routine Matter's answer was O, then
+this extraction idea would give the LA of GALAXY. A third person saw the letter constraint on Twins
+were G???E\*, and YOLO-guessed GLOBE, which was correct.
+
+Maybe that sounds reasonable, but each step of the process was a leap made on top of other ambiguity.
+Doing so is the way to solve puzzles more quickly, but it's also the exact same way to jump into the
+wrong rabbit hole. In a clean solve everyone is sure how the mechanic works as they carry it out. In
+our solve, it was more like three groups, each with 1/3rd of the right idea, all deciding to follow
+through because we didn't have better ideas.
+
+Once we got to the next round, the later puzzles weren't too bad. We mentioned the right idea for Twins
+within a few minutes of unlocking it, but decided to try a wrong idea first. I looked at
+[How to Run a Puzzlehunt](https://perpendicular.institute/puzzle/how-to-run-a-puzzlehunt/),
+but didn't solve it. In my defense, it was 3 AM, and we had convinced ourselves the GPH repo
+wasn't important, because we didn't recognize the commit messages in the fork we made for Teammate Hunt.
+There was some argument for why the gph-site repo wasn't important...and it was wrong so we never
+foward-solved the puzzle. Oops.
+
+We got Twins, I did some Projection Device button holding to help people unlock
+puzzles, then jumped on [Nutraumatic](https://perpendicular.institute/puzzle/nutraumatic/)
+with some other people. After getting that solve, we tried to break [Level One](https://perpendicular.institute/puzzle/level-one/), because we realized after-the-fact that we could have solved Twins with 0 feeders
+if we had just tried in more earnest. The MIT presence on our team helped ID one.mit, and I used some
+metaknowledge to figure out the MIT alums. (My thought procss was, if we need to backsolve a puzzle, then 1 letter
+is not sufficient. Therefore, we need semantic information, and it'll probably be related to MIT.)
+We had two answers, INTERSTELLAR TRADE and BUZZFEED, and were trying to figure out how to use the enormously
+long arrow. One teammate declared "if they aren't from the centers, then they're offsets". Another teammate
+tried centering the circle on Paul Krugman, and got this
+
+![Nano extraction](/public/mh21/nano2.png)
+{: .centered }
+
+Well, that's as much of a smoking gun as you can get - it both gave the E and explained the especially
+long arrow. Since the backsolve was intended, we suspected that there would be a famous MIT grad at one of the
+4 backward arrows branching out of the Y. Otherwise, the backsolve would be too unreasonable. I had zero qualms
+about checking the other 4 locations by hand, and Feynman wasn't too hard to spot when we looked more seriously.
+We played around with trying to backsolve the other puzzles, but decided that the non-intended backsolves wouldn't
+clue anyone as famous as Feynman, and when multipled by the semantic degrees of freedom, it seemed too hard
+to be worth it. That being said....we definitely should have backsolved Questionable Answers.
+
+
+Clusters
+----------------------------------------------------------------------------------
+
+My time in this round was pain. Not because the puzzles in this round were bad! I was bummed I missed out
+on Game Ditty Quiz. But of the puzzles I worked on, I somehow picked the two puzzles we solved last.
+
+[Altered Beasts](https://perpendicular.institute/puzzle/altered-beasts/) - Okay, this one was my fault.
+I saw it was Transfprmers, and mentioned there's a Transformers: Beast Wars series. Every Transformer
+in that series has a Beast Mode, so we could try applying the same transforms to the beast mode for each
+Transformer. We had trouble finding unambiguous sources for some of them, which should have tipped us off, but
+personally I thought it was a Powerful Metamorphers scenario, where it was only ambiguous due to
+unfamiliarity with the source material. Long, long after I contributed to this puzzle, we figured out
+that Beast Modes were a red herring.
+
+[Balancing Act](https://perpendicular.institute/puzzle/balancing-act/) - This one, we were just stuck
+on how to do the chemstiry, but after spending a hint we it wasn't too bad.
+
+[Clusters](https://perpendicular.institute/round/clusters/) - We were pretty confident in our
+root translations, but spent some time trying to place words in the nicely gridded building layout on
+the main round page. We noticed the starting letters, and it looked promising, but we didn't have a good
+reason why there was one C and two Ds. Someone went to take a shower, came back and said "GUYS THE GREEK
+ALPHABET GOES ABGDE", and that fixed everything. Showers: the undefeated champion of inspiration.
+
+
+Students
+----------------------------------------------------------------------------------------
+
+I actually did pretty much nothing in this round, aside from staring at the Students meta. For a
+long, long time, we thought it was going to be about playing cards. On the round page, the order
+of meta answers was Dorm Row, Simmons Hall, EAsT camPUS, and Random Hall. Their first letters
+spelled CARD. There were 54 students, which could map to a deck of cards with 2 jokers. There were
+13 unique clubs, for thirteen ranks. Groups of 4 could be a trick taking game, and an answer with
+BRIDGE in it could be thematic and answer the question of "How can we connect?"
+
+It all seemed very plausible. We hadn't connected the four dorm answers to the four Greek elements,
+and if I remember right, we eventually got elements from "strangely shaped table", since tables used
+for playing cards are generally not strangely shaped.
+
+Oh, one more story: we solved the Dorm Row meta without noticing the Game of Thrones connection
+at all. One person shuffled some words around, and found that Roar -> RICHARDTHEFIRST, Family -> RAINBOW,
+and Winter -> WHITEFANG made a phrase that looked like it could end in DRAGONS. They
+"just really want dragons to happen, man 🐉",
+and fixing those 3 answers was enough to nutrimatic out the answer from the potential assignments
+of the other 4 answers. Thus continues a teammate tradition - every year, there is
+at least one puzzle we solve without understanding why.
+
+
+Tunnels
+------------------------------------------------------------------------------------------
+
+I was waiting the entire Hunt for Megalovania to show up, and it finally happened! Hooray!
+This was the round I used the Projection Device for the most, building up a map of ghost
+mechanics for each passage way.
+
+[🤔](https://perpendicular.institute/puzzle/%F0%9F%A4%94/)
+- This grid is both garbage and beautiful. It is the transcendent horror and admiration you
+get from a Neil Ciernage mashup. Helped ID the Steamed Hams Puflantu clip, then swapped
+back to trying to finish Altered Beasts, but 10/10 concept.
+
+[Bingo](https://perpendicular.institute/puzzle/bingo/) - I'll let the Discord logs speak for
+themselves.
+
+![Bingo unlock reaction](/public/mh21/bingounlock.png)
+{: .centered }
+
+For some time, I've had an inkling of an idea to use my Bingo page in a Mystery Hunt puzzle,
+whenever I got a chance to write for Hunt. So, finding out I got scooped was incredibly
+shocking, especially because my site specifically said it wasn't a puzzle. Astute readers will
+note that although my website isn't a puzzle, the Bingo on the Hunt page doesn't, so making
+a copy is fair game. Fine. FINE. I got trolled, well played. I'm honored I got referenced in a
+Mystery Hunt.
+
+The puzzle itself was neat - we usually do #science on our team log after Hunt, but it was
+interesting to do so during Hunt to resolve Bingo statements. At the time we unlocked Bingo,
+we had already shitposted many, many terrible backsolve attempts for Voltage-Controlled.
+Seeing "Made more than 27 guesses on a single puzzle." made us very suspicious, especially
+when we confirmed Voltage-Controlled had 28 guesses on it.
+
+We got stuck on scanning the QR code
+though. Our eventual
+solve was done by splitting questions into three tiers: statements that had to be TRUE/FALSE to
+fit QR code structure, statements with concrete examples, and statements that we believed were
+TRUE/FALSE, but hadn't exhaustively verified. Then we split up and toggled statements from the
+3rd tier in parallel, until the code scanned. I got the eventual solve, which seemed fitting.
+
+
 Tunnels mapping
 Bingo (and the stories within)
 
-Altered Beasts (oh no)
-Balancing Act (also pretty hardstuck)
-did I even look at anything else here.
 
 Students meta, card red herring
