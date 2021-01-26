@@ -4,6 +4,8 @@ title:  "MIT Mystery Hunt 2021"
 date:   2020-12-30 18:38:00 -0700
 ---
 
+*This has spoilers for MIT Mystery Hunt 2021*
+
 I had two reactions at the end of Hunt this year.
 
 * Wow, that hunt was amazing.
@@ -161,84 +163,74 @@ Infinite Corridor
 
 This was my favorite round of the Hunt. It was just so *weird*. I had a lot of fun
 cataloguing the differences between different instances of the same puzzle family.
-I was also aware that everyone working on Infinite Corridor was developing their own language
-on-the-fly to describe the round, and the later in the round we got, the more incomprehensible
-our discussions were to newcomers.
+I'm also glad I jumped on this round early, because the later in the round we got, the
+more incomprehensible our discussion were to newcomers.
 
-Infinite Corridor also broke our new puzzle bot. Our Discord server grouped all puzzles for a round
+This round also broke our new puzzle bot. Our Discord server grouped all puzzles for a round
 into a single category. Each category is limited to 50 channels, but it's not like we're going to
-have ea round with over 50 puzzles in it, right?
+have a round with over 50 puzzles in it, right?
 
 [**Cafe Five**](https://perpendicular.institute/puzzle/infinite-1/) -
 There was something vaguely meditative about solving Cafe Five. Nothing complicated, just serve
-the customers. It is admittedly similar to [Race for the Galaxy](https://2019.galacticpuzzlehunt.com/puzzle/race-for-the-galaxy.html) from GPH 2019, but having comps and less punishing penalties on failure
-helped make it more fun.
+the customers, and do it fast. It is admittedly similar to [Race for the Galaxy](https://2019.galacticpuzzlehunt.com/puzzle/race-for-the-galaxy.html) from GPH 2019, but having comps
+and less punishing penalties on failure helped make it more fun.
 We successfully served L. Rafael Reif once, and comped him every other time.
 
 [**Library of Images**](https://perpendicular.institute/puzzle/infinite-2/) - I'm still not sure how
-we got the right ideas on this puzzle. We were also pretty confused when our single letter
-answer was correct. I understand why it was necessary, but it doesn't change the surprise when your answer of H
-is correct.
+we got the right ideas for this puzzle. We were also pretty confused when our single letter
+answer was correct. I understand why after the fact, but good thing we had something willing to
+submit H as an answer.
 
-[**Unchained**](https://perpendicular.institute/puzzle/infinite-3/)
-answers. Meanwhile we were getting nowhere on Unchained. We had figured out the lyrics for a few
-instances, but didn't understand how to extract from it. That left Make Your Own Word Search,
-which annoyingly did not check off the "Make your own logic puzzle" Bingo square. Although, in some
-ways, creating the word search sort of was a logic puzzle...
+[**Unchained**](https://perpendicular.institute/puzzle/infinite-3/) - We never figured out
+this puzzle, even when we tried to forward solve it knowing the answer.
+In retropsect, our main issue was that we weren't counting the right things, and maybe
+should have listened to the songs more, rather than just looking at their lyrics.
 
-Our strategy was to unlock around 5 different Make Your Own Word Search puzzles, check all their
-rules, then solve just the one that seemed easiest. We ended up picking a Letter Bag constraint
-where all words needed to be 5 letters long. It felt hard at the start, but by aggrressively sharing
-letters we were able to construct it without much effort, and that unlocked Infinite Corridor
-Simulator for us (which I started calling ICS for short.)
+[**Make Your Own Word Search**](https://perpendicular.institute/puzzle/infinite-27/) - Annoyingly,
+the Bingo teammate used this year had "Make your own logic puzzle" as a Bingo square, and
+this puzzle didn't count because a Word Search wasn't a logic puzzle, but creating a word search
+that fit the constraints was very similar to a logic puzzle. Our strategy was to unlock around
+5 different Make Your Own Word Search instances, check all their rules, then solve just the one
+that seemed easiest. We ended up going for Puzzle 27. (Everyone loves 27, it is truly the best
+number.) By aggressively sharing letters between words, we were able to build it with a lot
+of unused space that was easy to fill, and that unlocked...
 
-Doing frequency analysis on Unchained answers in ICS got us ZITHER as a potential backsolve candidate
-for the real Unchained puzzle. That was correct, so one group of us tried to figure out how to
-reconstruct ZITHER, while the other group tried to extract ICS. Mostly, we got stuck, and the group in
-the ICS chat pulled us back because they had figured out 4 of the 5 extractions. Once we got the first
-ICS solve, we sketched out how to optimize for minimum number of puzzle solves in the real corridor.
-Our strategy was to use the third letter of the ordinal, since
+[**Infinite Corridor Simulator**](https://perpendicular.institute/puzzle/infinite-5/) - We
+started by doing a ton of frequency analysis, which helped us backsolve one of the Unchained
+instances. I joined the group that tried to reconstruct the Unchained solve, while the other
+group tried to extract ICS. The Unchained group got stuck and I drifted back to the ICS
+puzzle, which had figured out 4 of the 5 extractions and was close on the 5th.
 
-FIRST
-SECOND
-THIRD
-FOURTH
-FIFTH
+[**Infinite Corridor**](https://perpendicular.institute/round/infinite/) - I feel we split
+up work pretty well on this puzzle. One person wrote a scraper to programmatically build a
+list of all Infinite Corridor puzzles. Around three of us were strategizing which puzzles
+to solve, usually turning into something like the Nth instance of Library Images / Cafe Five / etc.
+Another group was manning the Cafe, since we knew we were going to need more tokens. Our
+strategy was to find the 3rd letter of FIRST / SECOND / THIRD / FOURTH / FIFTH, since that
+uniquely identifies between the five. Then, the 3rd letter of ZERO / ONE / TWO / THREE / SIX / SEVEN
+/ EIGHT / NINE identifies the digit uniquely in 6/10 cases, and needs one more letter check to
+clear up the last 4/10 caess.
 
-all have unique 3rd letters. Then for the number,
+Unchained was stuck, and we thought solving more Word Searches would take time, so our aim was
+to get the other 3 digits exactly, narrow the round down to 100 rooms, find all the rooms
+in parallel, then solve all ICS
+puzzles in that set of 100. We ended up solving a second strategic Make Your Own Word Search,
+narrowing the room set down to 40, leaving just 8 ICS puzzles on average. We got the meta
+on the 3rd one.
+Unfortunately, since we were solving ICS by script, none of us noticed that room
+73178 was an exact replica of the real Infinite Corridor.
 
-ZERO
-ONE
-TWO
-THREE
-FOUR
-FIVE
-SIX
-SEVEN
-EIGHT
-NINE
+I like this round the most because it had this perpetual sense of mystery. How are we going to
+have several versions of the same puzzle? How would a 100k puzzle meta even work? It was neat that
+the answer got answered recursively, in a way that still left the "true" meta of how to repeat
+the extraction without 100k answers.
 
-we found that the 3rd letter again had the best odds of not requiring another letter (two Rs, two Vs, the
-rest are unique). Unchained was hopeless, but by process of elimination we determined it would give
-the 4th digit. Cafe Five, Library of Images, and Infinite Corridor Simulator got solved exactly, but
-the few of us who did Make Your Own Word Search warned that the word searches were all going to be
-time consuming and doing one didn't make you any faster than the rest. I'm not sure how true that
-was, but we did just enough word searches to restrict that digit to 4 options, navigated to
-the 40 possible rooms
-(accounting for the unknown Unchained digit), and solved all the ICS puzzles we found. We got it on
-the 3rd one. (Unfortunately, since we were solving ICS by script, none of us noticed that room
-73178 was an exact replica of the real Infinite Corridor.)
-
-I like this round the most because there was this perpetual sense of mystery. How are we going to
-have several versions of the same puzzle? How are we supposed to learn the meta mechanic for a
-100k puzzle round? That question getting resolved by a recursive puzzle was amazing, and it still
-left optimization for the "true" meta of solving the round with as few puzzle solves as possible.
-One of the cool things about Mystery Hunt is that you're continually evaluating what rounds are
-important / not important to funnel work towards, and it was neat that Infinite Corridor was a small
-version of that kind of planning, embedded within a larger Hunt.
+One of the cool things about MIT Mystery Hunt is that you're continually evaluating what rounds are
+important / not important to funnel work towards. It was neat that Infinite Corridor was a small
+version of that kind of planning, embedded within a single round of the Hunt.
 
 We didn't get the low% clear for fewest solves before Infinite Corridor meta. Puzzkill got there with
-1 fewer solve :(. We did get the first main round meta solve though, and I'm proud of that.
+1 fewer solve 😞. We did get the first main round meta solve though, and I'm proud of that.
 
 
 Green Building
@@ -246,12 +238,12 @@ Green Building
 
 After Infinite Corridor, I moved to Green Building, which had a lot of progress.
 
-[Dolphin](https://perpendicular.institute/puzzle/dolphin/) - A fun puzzle about Gamecube trivia.
+[**Dolphin**](https://perpendicular.institute/puzzle/dolphin/) - A fun puzzle about Gamecube trivia.
 I helped on the first subpuzzle after we got the a-ha, then set up formulas for the final
 extraction. We got stuck a bit by assuming we wanted the face that touched the Gamecube, rather than
 the number that was face-up, but we got there evenutally.
 
-[Green Building](https://perpendicular.institute/puzzle/green-building/) - We got the Tetris a-ha
+[**Green Building**](https://perpendicular.institute/puzzle/green-building/) - We got the Tetris a-ha
 pretty quickly, without the 5-bit binary hint. I think LJUBLJANA was the one that confirmed our suspicions.
 After doing a few grids, we went down an enormous rabbit hole, where we assumed we would find the number
 of lines we attacked with according to standard Tetris rules, indexing that number into the answer.
@@ -268,7 +260,7 @@ for a while, but we got stuck on extraction and needed a hint request on both to
 Stata Center
 ----------------------------------------------------------------------------------------
 
-[Extensive](https://perpendicular.institute/puzzle/extensive/) - This was the only puzzle I looked at
+[**Extensive**](https://perpendicular.institute/puzzle/extensive/) - This was the only puzzle I looked at
 in this round. It played well with my skill sets (willingness to try a lot of garbage ideas on
 technical data). After working at it a bit, we had all the letters except for the MIDI file and DOC
 file. The DOC file was partially done, and we were half-convinced it didn't have a 3rd letter, which
