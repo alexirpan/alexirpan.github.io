@@ -419,7 +419,7 @@ there was content outside the orange circle.
 One teammate declared "if they aren't from the centers, then they're offsets", which just did not
 parse to me, but then someone made this image:
 
-![Nano extraction](/public/mh21/nano.png)
+![Nano extraction](/public/mh21/nano2.png)
 {: .centered }
 
 and I was convinced.
