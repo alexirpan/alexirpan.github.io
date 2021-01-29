@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MIT Mystery Hunt 2021"
-date:   2020-12-30 18:38:00 -0700
+date:   2021-01-29 10:00:00 -0700
 ---
 
 *This has spoilers for MIT Mystery Hunt 2021, up through the endgame.*
@@ -447,7 +447,7 @@ a name for this kind of puzzle. I've started calling them "figure out the black 
 They're usually a good time, they allow for a wide variety of solutions and make it easy for the
 solver to take ownership of their solve path. (Whereas in other puzzle types, your solve path
 is more pre-ordained, and can be less interesting when you foresee more of it.) I think it's
-pretty funny that both Mystery Hunt and Teammate Hunt had a puzzle that referenced Nutrimatic.
+pretty funny that both Mystery Hunt and Teammate Hunt had a puzzle that referenced nutrimatic.
 To be honest, it's an absurdly busted tool once you get comfortable with it.
 
 [**⊥IW.nano**](https://perpendicular.institute/puzzle/%E2%8A%A5IW.nano/) - We looked at Level One
@@ -599,7 +599,7 @@ peak anime watching in high school and then stopped afterwards, okay?)
 [**Tunnels**](https://perpendicular.institute/puzzle/tunnels/) - All I did on this meta was encourage people to
 consider Undertale. We had the FLOWER GIRL answer by this point so I was definitely looking into
 some Flowey stuff, checking the number of Undertale endings, wondering if it was RGB due to red stop signs /
-green circls / blue eyes from Sans, etc. All garbage! 
+green circles / blue eyes from Sans, etc. All garbage!
 
 
 Interactions
@@ -657,7 +657,7 @@ for Infinite Corridor, given that we used < 50000 answers. Then we got it for re
 wasn't up for debate.
 
 Funnily enough, I felt I got more out of the MIT part of MIT Mystery Hunt this year,
-despite the Hunt running remotely. teammate normally has plenty of MIT affliation, so I usually
+despite the Hunt running remotely. teammate normally has plenty of MIT affiliation, so I usually
 defer on-campus puzzles to people who actually know MIT campus. In this Hunt, it still helped to
 know the MIT layout...but there was also a minimap.
 Seriously, the minimap probably 3x-ed my enjoyment of the Projection Device, I would have been so
