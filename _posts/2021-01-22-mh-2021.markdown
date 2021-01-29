@@ -667,10 +667,10 @@ Why can't real life have fast travel, and maps that work well when your phone is
 I had a great time, and hopefully next year the world will be in a good enough place to run Hunt in person.
 It's hard to say for sure...but I think it should be. Until next time.
 
-![Teammate art](/public/mh21/team_withnames.png)
+![Red herring](/public/mh21/redherring.png)
 {: .centered }
 
-![Red herring](/public/mh21/redherring.png)
+![Teammate art](/public/mh21/team_withnames.png)
 {: .centered }
 
 Oh, one last thing...
