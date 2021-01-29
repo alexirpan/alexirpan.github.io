@@ -234,7 +234,7 @@ was surprised we didn't have the meta yet. Going into hunt, I wasn't sure how mu
 metas. The intro round made me worried that we'd be hard gated well after we could have figured out
 the meta if it were open from the start of the round, since we had the mechanic early and just needed the
 keyboard image to resolve the last bit of uncertainty.
-This never ended up being an issue for us - at the tiem of meta unlock, we usually still needed more
+This never ended up being an issue for us - at the time of meta unlock, we usually still needed more
 feeders to solve them.
 (Aside from Giga/Kilo/Milli, but I'll get to that later.)
 
@@ -279,7 +279,7 @@ this puzzle, even when we tried to forward solve it knowing the answer.
 In retrospect, our main issue was that we weren't counting the right things, and maybe
 should have listened to the songs more, rather than just looking at their lyrics.
 
-[**Make Your Own Word Search**](https://perpendicular.institute/puzzle/infinite-27/) - Annoyingly,
+[**Make Your Own Word Search**](https://perpendicular.institute/puzzle/infinite-6/) - Annoyingly,
 the Bingo teammate used this year had "Make your own logic puzzle" as a Bingo square, but
 a word search isn't a logic puzzle.
 Our strategy was to unlock
@@ -406,6 +406,7 @@ every syzygy uses either Twins or A Routine Matter...which were exactly the two 
 We did, however, have TWIX, and saw it was the center planet for the X in GALAXY. Here is the first
 stroke of luck - we had errors in our other syzygies, but they weren't on the X that sparked the later ideas.
 
+Rule of Three didn't have the image during our solve, so we were flying blind on what to do next.
 A teammate proposed the "common letters give index" extraction, but wasn't sure about it. However,
 someone else noted that if assumed the 2nd letter of A Routine matter was O, then it would extract both
 the L and A
