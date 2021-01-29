@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MIT Mystery Hunt 2021"
-date:   2021-01-29 10:00:00 -0700
+date:   2021-01-29 10:29:00 -0700
 ---
 
 *This has spoilers for MIT Mystery Hunt 2021, up through the endgame.*
@@ -29,7 +29,8 @@ they kind of *did*, because it's those Easter eggs that make players feel reward
 for exploration, outside of just unlocking puzzles. Adding those details take time.
 Throwing multiplayer into the mix just makes it worse.
 For Teammate Hunt, we were already sweating at making 8 Playmate games work, and those were
-limited to 6-player instances. MIT Mystery Hunt was 3x more participants with way more features.
+limited to 6-player instances. MIT Mystery Hunt was 3x more participants with way more features
+and a much larger world.
 
 ![MITHenge](/public/mh21/icsunlight.png)
 {: .centered }
@@ -56,7 +57,7 @@ year.
 
 MIT Mystery Hunt has grown before - it's not like it's always been this big. So let's
 play devil's advocate. Why shouldn't we just make Hunt bigger?
-I'd argue that's bad because people don't want to make their teams much bigger.
+I'd argue that people don't want to make their teams much bigger.
 Here's the team size graph from this year.
 
 ![Solves vs team size](/public/mh21/emoji_teamsize_solves.png)
@@ -67,7 +68,7 @@ constructing teams have warned that Hunt may be less fun above 80 people, and pa
 because logistics and team culture get harder to cultivate after that size.
 It's basically [Dunbar's number](https://en.wikipedia.org/wiki/Dunbar%27s_number).
 Not everyone likes hunting in a large team, and there's not much room for the large teams to grow.
-Normally, teammate uses a "invite your friends" system, and through friend-of-friend-of-friends
+teammate uses a "invite your friends" system, and through friend-of-friend-of-friends
 we end up with a sizable Mystery Hunt crew. I think this is the first year where we advised people
 to slow down their invites, because of concerns we were growing too big.
 
@@ -85,9 +86,9 @@ and eating at some Cambridge restaurant I only see once a year. None of that was
 year, so I got a lot more work done - the main challenge was adjusting to a 9 AM start.
 
 This year, since everyone was remote, we spent more time on our remote solver tooling,
-moving from a heavily scripted Google Sheet
+moving from a heavily scripted master Google Sheet
 to a mini webapp with Discord integration. There were some rough edges, but it helped a lot.
-The killer app was that when unlocked a puzzle, the bot would auto-create text and voice
+The killer app was that when we unlocked a puzzle, the bot would auto-create text and voice
 channels, and when we solved a puzzle it would auto-close those channels.
 
 A bunch of teammates got into [NERTS! Online](https://store.steampowered.com/app/1131190/NERTS_Online/)
@@ -101,7 +102,8 @@ speaks to you,
 [Source](https://xkcd.com/290/)
 {: .centered }
 
-then consider adding Nerts as a new source of "NO I NEEDED THAT".
+then consider adding Nerts as a new source of good-natured profanity where you scream
+"NO I NEEDED THAT".
 
 I was dismayed at the lack of #ambiguous-shitposting this year, so I made a Conspiracies puzzle.
 I claimed this was to test our new tooling, but no, it was mostly for the conspiracies.
@@ -110,13 +112,13 @@ and Doctor Who was because of the space theme and mention of [different dimensio
 for 6/28 (Tau day) and 9/9 (...Cirno day?). Our conspiracies were all garbage. I expected
 them to be garbage. All is right with the world.
 
-Once the Hunt site proper was opened up, we learned
+Once the Hunt site opened, we learned
 automated answer checkers were back, with a rate limit of 3 per 5 minutes across the entire round. Last year,
 teammate had a much-memed 10% confidence threshold for guessing, and we didn't think that would work with the new rate-limit.
 We had some time to hash out our strategy, and decided that any coordination would spend more time than figuring
 out the throttling if and only if we needed to.
 So we mostly used a similar system - anyone guess anything
-you want, and if you're rate-limited, let the team know and we'll coordinate it then. This time we suggested
+you want, and if you're rate-limited, let the team know and we'll coordinate it then. This year we suggested
 a 30% confidence threshold, and that seemed to work fine - we were sometimes rate-limited, but never in an
 important way.
 
@@ -250,7 +252,7 @@ plot armor, now you know.
 Infinite Corridor
 ----------------------------------------------------------------------------------
 
-This was my favorite round of the Hunt. It was just so *weird*. The round technically has 100000
+This was my favorite round of the Hunt. It was just so *weird*. The round technically has 100,000
 puzzles, but really those 100,000 puzzles are variations of 5 different types of puzzles.
 I had a lot of fun
 cataloguing the differences between different instances of the same puzzle family.
@@ -394,7 +396,8 @@ and [**A Routine Matter**](https://perpendicular.institute/puzzle/a-routine-matt
 Based on [**Rule of Three**](https://perpendicular.institute/puzzle/rule-of-three/) auto-solving on
 unlock, we correctly inferred that Twins needed to be backsolved. Or more specifically, every other
 puzzle looked forward solvable, and Twins did not. (This did not stop people from trying, but the
-image was just too small and didn't have clear steganography inroads.)
+image was just too small, didn't have clear steganography inroads, and we were making progress
+on everything else.)
 
 In my opinion, our solve was very lucky.
 Based on searching a few of the dates, the team had figured out planetary syzygies, and due to
@@ -413,7 +416,8 @@ Maybe that solve doesn't sound too crazy, but each step taken was an unsteady le
 unsteady leap. These leaps are the way to solve puzzles quickly, but they're also the exact way
 you jump into the wrong rabbit hole. It was important that we had the answer TWIX, that we didn't
 have errors in our data for that syzygy, that we took the proposed extraction mechanism seriously
-even as the person proposing it later admitted they didn't think it would work.
+even as the person proposing it later admitted they didn't think it would work, and that
+we had someone willing to try low confidence guesses.
 It's a very weird situation - normally, at least one person in a solve has conviction in all the
 mechanics. In our case, it was more like three camps with 1/3rd of the conviction, pooling it
 together because we didn't have better ideas.
@@ -445,14 +449,14 @@ and only one sister city of the two matches the (3 5) enumeration.
 [**Nutraumatic**](https://perpendicular.institute/puzzle/nutraumatic/) - I don't know if there's
 a name for this kind of puzzle. I've started calling them "figure out the black box" puzzles.
 They're usually a good time, they allow for a wide variety of solutions and make it easy for the
-solver to take ownership of their solve path. (Whereas in other puzzle types, your solve path
-is more pre-ordained, and can be less interesting when you foresee more of it.) I think it's
+solver to take ownership of their solve path. Whereas in other puzzle types, your solve path
+is more pre-ordained, and can be less interesting when you foresee more of it. I think it's
 pretty funny that both Mystery Hunt and Teammate Hunt had a puzzle that referenced nutrimatic.
 To be honest, it's an absurdly busted tool once you get comfortable with it.
 
 [**⊥IW.nano**](https://perpendicular.institute/puzzle/%E2%8A%A5IW.nano/) - We looked at Level One
 early, in case it was a puzzle we could get early, like Twins. This was a round where having
-recent MIT students really helped. We found One.MIT quite early, just based on the title,
+recent MIT students really helped. We found One.MIT quite early, just based on the title.
 Then with
 some metaknowledge, I got the MIT alums. (My thought process was, if we need to backsolve a puzzle, then 1 letter
 is not sufficient. Therefore, we need semantic information. That semantic information is probably related
@@ -461,7 +465,7 @@ to MIT - let me see if I can find connections between MIT and BuzzFeed...)
 Like other teams, we were quite confused about the enormously long arrow, because it didn't seem like
 there was content outside the orange circle.
 One teammate declared "if they aren't from the centers, then they're offsets", which just did not
-parse to me, but then someone made this image for Paul Krugman:
+parse to me, but then they made this image for Paul Krugman:
 
 ![Nano extraction](/public/mh21/nano2.png)
 {: .centered }
@@ -492,7 +496,8 @@ We had trouble finding unambiguous sources for some of them, which should have t
 was a red herring, but I thought it was a
 [Powerful Metamorphers](https://teammatehunt.com/puzzles/powerful-metamorphers) scenario, where it was
 only ambiguous due to unfamiliarity with the source material. Despite proposing the idea, I only knew
-about Beast Wars because of Hasbro knowledge leaking through MTG and MLP. It took us a long, long time
+about Beast Wars because of Hasbro knowledge leaking through MTG and MLP, so I wasn't much help there.
+It took us a long, long time
 to decide the beast modes were fake. On the upside, my red herring managed to pollute two teammates'
 recommendation profiles.
 
@@ -586,18 +591,19 @@ until it finished. The first two letters
 I got were K and Z, so I really wasn't sure we were doing the right thing - luckily the next letters we got looked
 much better.
 
-Also psssst go watch the [TikTok](https://www.tiktok.com/@abhijitmudigonda/video/6918690407828311301?lang=en&is_from_webapp=v1&is_copy_url=1) we submitted, it's actually so good.
+Also psssst go watch the [TikTok](https://www.tiktok.com/@abhijitmudigonda/video/6918690407828311301?lang=en&is_from_webapp=v1&is_copy_url=1) we submitted, it's so good.
 
 [**Foundation's Collection**](https://perpendicular.institute/puzzle/foundations-collection/) - All I did for this
 puzzle was link the GOOD SMILE company webpage with a comment that "this looks weeb as f\*\*\*", then I dipped to
-work on something else, because I swear I'm not a weeb. (No, seriously, I haven't watched an anime in 3 years,
+work on something else, because I swear I'm not a weeb. (No, seriously, I haven't watched anime in 3 years,
 and the ones I have watched are pretty basic. The only one that isn't is Bokurano, which is a MESSED UP anime,
 just incredibly unsettling, but it has some interesting thoughts on morality and mortality and...look, I hit
 peak anime watching in high school and then stopped afterwards, okay?)
 
 
-[**Tunnels**](https://perpendicular.institute/puzzle/tunnels/) - All I did on this meta was encourage people to
-consider Undertale. We had the FLOWER GIRL answer by this point so I was definitely looking into
+[**Tunnels**](https://perpendicular.institute/puzzle/tunnels/) - I encouraged a lot of Undertale
+tinfoil hatting on this meta.
+We had the answer FLOWER GIRL, so I was definitely looking into
 some Flowey stuff, checking the number of Undertale endings, wondering if it was RGB due to red stop signs /
 green circles / blue eyes from Sans, etc. All garbage!
 
