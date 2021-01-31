@@ -162,7 +162,7 @@ rewards without changing the expectation.
 
 $$
     \sum_i \left(\mathbb{E}[(R_{i:\infty} - b(s_i))\nabla_\theta \log \pi(a_i|s_i)]   \right)
-    = g - \sum_i \left(b(s_i)\nabla_\theta \log \pi(a_i|s_i)]   \right)
+    = g - \sum_i \left(\mathbb{E}[b(s_i)\nabla_\theta \log \pi(a_i|s_i)]   \right)
     = g
 $$
 
