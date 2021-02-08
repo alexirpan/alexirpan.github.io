@@ -7,9 +7,13 @@ date:   2020-12-30 18:38:00 -0700
 As someone "from the Internet", Flash was my childhood.
 
 No, I'm not sure you understand. Flash *was* my childhood. I've easily spent thousands of
-hours playing Flash games, and the death of Flash has been a sad thing. The
-[Flash Games Postmortem](https://www.youtube.com/watch?v=65crLKNQR0E) at GDC 2017 is still
-an amazing talk if you want to understand that era.
+hours playing Flash games, and the death of Flash has been a sad thing.
+If you don't have much time, [Flash Game History](https://www.flashgamehistory.com/)
+is an excellent short article that captures the feel and influence of Flash games.
+If you have more time, the
+[Flash Games Postmortem](https://www.youtube.com/watch?v=65crLKNQR0E) from GDC 2017 is
+an amazing talk that goes into why Flash became popular, as well as the logistics
+of how those games were made and distributed.
 
 There isn't a short version of the talk, but if I had to pick one key point, it would be that
 Flash thrived because it ran on almost everything, and it would run the same *way* on almost
@@ -28,26 +32,32 @@ It's an archive of several thousand Flash games and animations, and I had a bunc
 through parts of the archive I remembered.
 
 A bunch of them have not aged well. Game design has evolved a lot, generally for the better,
-and now that I'm playing them as an adult, it's obvious how many of the games I played had filler
-content. Nonetheless, I wanted to share some of the ones that held up for me.
+and now that I'm playing them as an adult, it's obvious how much filler content these games had,
+and how they suck me in anyways. I've installed no games on my smartphone, not because I'm too
+good for them, but because I'm too weak - I know that all the tricks to keep people playing
+work on me, and that's not how I want to spend my time.
+
+So, instead, let's just reminesce about the good stuff. Here are some Flash games that held
+up for me when I replayed them.
 
 
 Super Mario 63
 --------------------------------------------------------------------------------------
 
-Super Mario 63 is a 2D fangame, that mashes up three of the 3D Marios: Super Mario 64,
+Super Mario 63 is a 2D fangame that mashes up three of the 3D Marios: Super Mario 64,
 Super Mario Sunshine, and Super Mario Galaxy. On one hand, it shouldn't be surprising that
-the game is so good. It's stealing mechanics and levels from three of the best platformers of
+the game is fun. It's stealing mechanics and levels from three of the best platformers of
 all time. On the other hand, there's still a lot of work required to execute that roadmap
 properly, especially in a 2D world.
 
 There's a lot of hidden secrets in the hub area, and the movement system is great. The story
 is pretty fanfiction-y, but that isn't the focus of this game. My one complaint is that
 Mario is *too* powerful. Many platforming sections are designed to be beatable without the FLUDD,
-likely because it's not guaranteed you have FLUDD. But, the FLUDD comes with so much water that
-you probably still have it, making many of the platforming sections a joke. Meanwhile, there's
-0 cooldown on the spin attack, so if you spam the spin attack button you'll be practically
-invincible. Still, in single player games, it can be fun to be overpowered.
+likely because it's not guaranteed you have it, but the FLUDD comes with so much water that it's
+hard to run out unless you try to. That makes most of the platforming sections super easy.
+Meanwhile, the spin attack from Galaxy has 0 cooldown, so if you spam the spin attack button
+you're practically invincible. Still, in single player games it can be fun to be overpowered,
+and the overall package is fun to move through with plenty of content.
 
 
 Sonny
@@ -61,34 +71,34 @@ equipment.
 Part of Sonny's strength is its high production value. The game has a distinctive art style, voice acting,
 music, and well-done sound effects. However, I love this game because of the creativity and flexibility of its combat
 system. Sonny has access to a ton of tools. A lot of RPGs have skill trees that are basically
-variants of "do more damage" or "attack with this element". Most of the skills are clearly better than
+variants of "do more damage" or "attack with this element". Most of the skills are strictly better than
 other ones, and the progression is about grinding EXP to learn the more powerful ones.
 Sonny avoids this problem by making all your skills slightly different. Some will stun the enemy, some will
 apply debuffs, some dispel enemy buffs, and so on. The game UI (usually) spells out exactly
-what enemy buffs and debuffs do, making it clear what your opponents are able to do and giving you all the
-information needed to figure out how to counter it.
+what enemy buffs and debuffs do, making it clear what your opponents are able to do,
+and giving you all the information needed to figure out how to counter it.
 It gives the game a puzzle feel, where gameplay is more about finding good skill
-combos and synergies, rather than brute-force leveling. In fact, in Sonny 2, one of the bonus areas is only unlocked
-if you do a low% run on the hardest difficulty. The game is designed to make this doable.
+combos and synergies, rather than brute-force leveling. In fact, in Sonny 2, one bonus area is only unlocked
+if you beat the game on the hardest difficulty, at the lowest possible level (skip all optional fights).
+The game's designed to make this doable.
 
-I will say that once you know the best skill combos, it can be hard to play the game casually, especially
-when the bonus bosses practically require using the broken combinations. That reduces the replay value.
-Additionally, the praise is mostly for Sonny 2. Sonny 1 has a bit of the same flavor, but a lot of skills
-in Sonny 1 just aren't worth the time, and are closer to a typical RPG. This also isn't the game for you
-if you don't like reading. The skills are complex and you have to read their full description to figure out
-how they might work together.
+I will say that once you figure out the best skill combos, it becomes hard to play the game casually,
+especially when the bonus bosses practically require using the broken combinations. That reduces the replay value.
+Additionally, the praise is mostly for Sonny 2. Sonny 1 has a bit of the same flavor, but its skill tree has
+less depth, and it's closer to a typical RPG.
+This also isn't the game for you if you don't like reading. The skills are complex, and you have to read their
+full description to figure out how they work together.
 
 
 Epic Battle Fantasy
 -------------------------------------------------------------------------------------------
 
-Okay. Okay okay okay. First things first: the series has really juvenille humor. It's like the game was
-written by a horny teenage boy, and then it never evolved past that.
+Okay. Okay okay okay. First things first: the series has really juvenille humor. Basically the series was
+started by a horny teenage boy who liked anime, and the humor never evolved past that.
 
-If you can ignore that, then you'll find a quality JRPG. Epic Battle Fantasy 1 and 2 are perfectly
-playable, but they're basically boss rushes. Starting from the 3rd entry, you get a real JRPG. There's an
-overworld, small puzzles, treasure chests, crafting, a level up system, bosses, the whole works. I wouldn't pay
-for it, but it's pretty high quality for a free RPG.
+If you can ignore that issue, then you'll find a quality JRPG. Epic Battle Fantasy 1 and 2 are pure boss
+rushes, but from the 3rd entry on you get an overworld, block pushing puzzles, treasure chests, an equipment
+upgrade system, the whole works. I wouldn't pay for it, but it's pretty high quality for a free game.
 
 Epic Battle Fantasy isn't trying to rock the boat, or do anything crazy to the JRPG genre, but I think that's
 fine. The one thing it does different is its equipment system. Instead of giving flat stats, all weapons and
@@ -110,7 +120,8 @@ Recruit minions, send them on missions to earn money, advance through the tech t
 and fight off the good guys that try to stop you.
 
 A lot of the features are sort of useless, or aren't cost effective. For example, in my many plays through the game, I've never found a use for the
-henchmen. I also don't like that you can only plan and execute 1 mission at a time. It really limits the potential
+henchmen, they're too expensive compared to just buying more guys after they die in combat.
+I also don't like that you can only plan and execute 1 mission at a time. It really limits the potential
 multitasking, and once you're in the late game you're mostly just waiting for loading bars to finish and watching your minions
 mow down enemy forces.
 Despite this, something about the core gameplay loop
@@ -146,32 +157,34 @@ get the right rare enemy to spawn.
 Motherload
 -------------------------------------------------------------------------------------------
 
-I struggled to get far in Motherload without cheats, because I never wanted to make an
-XGenStudios account to save my progress, and the game is surprisingly long. I eventually caved
-in and made one with a really obvious username and password, so obvious that other users
-successfully guessed it and took over my save file.
+I almost didn't include this one...but it's iconic, and I played it through to the end when I tried it
+again, so I'll give it a shout out.
 
-There isn't a lot to say about the mechanics. Drill down to pick up ore. Fly back to the surface
-when you run out of gas to refuel, sell your ore, and buy upgrades, which helps you go deeper
-and mine more material. Rinse and repeat until you get to the end. Not a lot of depth, but
-there's a Zen feeling in figuring out the shortest path to each ore. It's important that you
-can't drill upwards, since if you drill poorly, you can easily make it much harder to mine
-the ore you want. It's just enough thinking to stop it from being totally mindless. Kinda
-like Bejeweled, except with an upgrade system and resource management.
+The mechanics are very simple.
+Drill down to pick up ore. Fly back to the surface
+when you run out of gas to refuel, sell your ore, and buy upgrades. The upgrades help you dig
+deeper to mine more valuable ores, and you rinse and repeat until you reach the bottom.
+Not a lot of depth, but there's a Zen feeling in figuring out the shortest path to each ore.
+The key that makes the entire game work is that you can't drill upwards. Because of this, you
+can make ore inaccessible if you drill poorly, and that's just enough thinking to stop it from
+being totally mindless. It's a bit like Bejeweled in that sense, although Bejeweled didn't have
+an upgrade system or resource management.
 
-My main issue with the game is that dying has an insane penalty. If you die, you go back to
-your last save point, but all drilled holes will be reset. So if you die in the late game,
+My main issue with the game is that dying has an insane penalty. If you die, all drilled holes
+are reset. So if you die in the late game,
 get ready to hold down for several minutes to get back to where you were before. This wouldn't
-be so bad if gas pockets weren't a thing. After a certain depth, dirt blocks will randomly
-have gas pockets. You're warned about them once, but the game doesn't emphasize how
-destructive they can be. Gas pockets are 100% undetectable, can't be avoided, do massive amounts of damage,
-and are a one-hit kill if you don't have enough HP and defense upgrades. Meanwhile, the game
-heavily incentivizes digging deeper. Rare ores appear more often at high depths and each tier
-trades in for much more than the previous one. So basically, gas pockets are just an
-invisible stat check and players don't know they exist until they hit it.
+be so bad if gas pockets weren't a thing. After a certain depth, dirt blocks have a random
+chance of exploding.
+You're warned about them once, but the game doesn't emphasize how
+destructive the gas pockets are. They are 100% undetectable, can't be avoided, and do massive amounts of damage,
+to the point that they're a
+one-hit kill if you don't have enough HP and defense upgrades.
+So basically, gas pockets are just an
+invisible stat check, players don't know they exist until they hit them, and if they fail
+the stat check they don't see coming, they have to redrill all the way back down.
 
-Once you know how to deal with gas pockets, the game doesn't have many surprises, and it's
-pretty easy to reach the end in a practically invincible state.
+Once you know how to deal with gas pockets, the game doesn't have many surprises. The late game
+ores are so lucrative that it's pretty easy to reach the end in a practically invicible state.
 
 
 Elements of Arkandia
@@ -184,7 +197,8 @@ And most importantly, who uses Impact font this much? I'm not even kidding, the 
 in this game is really bad and it makes a ton of things harder to read than they should.
 
 Despite all of those issues, I like this game. It's a mashup of mechanics from
-two games: Puzzle Quest, and Recettear: An Item Shop's Tale.
+two games: Puzzle Quest, and Recettear: An Item Shop's Tale. And, well, it's not as good
+as either individual game, but it's still fun, albeit with a really grindy endgame.
 
 You start the game with a large debt, that accumulates interest every day. To pay off the
 debt, you need to go on dungeon adventures, find loot, then sell that loot in your shop.
@@ -203,8 +217,7 @@ paying off your debt, upgrading your store, and buying battle upgrades that enab
 harder dungeons. Then battles themselves are about figuring out what types of mana are
 easy or hard to achieve, and using that to decide what kind of spells you're going to aim for.
 
-It's not as good as Puzzle Quest, and it's not as good as Recettear, but it's still fun,
-albeit with a really grindy endgame. Two bits
+Two bits
 of advice. One: you can choose to play without debt, but you should play with debt. If you
 play without debt, you remove all the interesting trade-offs on how to spend your money,
 making the gameplay really boring. Two: if you want, you can try to min-max every move,
@@ -251,5 +264,48 @@ Ghost Hacker
 --------------------------------------------------------------------------------------
 
 Ghost Hacker is a tower defense game, and I'll be honest, it probably shouldn't be listed over
-some of the other famous ones, like Bloons Tower Defense or Kingdom Rush.
+Bloons Tower Defense or Kingdom Rush. But I like how it's designed.
+
+In Ghost Hacker, the money resource is called Memory. Placing a tower costs memory, killing enemies
+gives memory, kill enemies to afford more towers and tower upgrades to kill stronger enemies, etc.
+The way Ghost Hacker differs is that towers are upgraded through *modifiers*. For example, in a standard
+tower defense game, you might have one tower that slows down enemies. In Ghost Hacker, there's
+a slow-enemy modifier, which can be applied to *any* tower, and then it's on the player to (for
+example) realize that you get the most utlity if you attach a slow-enemy modifier to a tower that
+does splash damage.
+
+The other key part of Ghost Hacker's design is that you can never, ever lose memory. Often, a
+tower defense game will refund part of the cost if you sell a tower. This makes it feel bad to
+sell a tower, which can feel really punishing - misplace a tower early, and you pay for your
+mistake forever. In Ghost Hacker, you can always sell a tower and get the full cost
+refunded...eventually. Any time you earn memory, instead of receiving it instantly, you get some of it
+every tick. In principle, that means you can completely change up your towers between waves, as long
+as you have time to get back your memory and re-spend it. Pretty simple mechanic, but it goes a long
+way to making the game feel less punishing if you make a bad decision.
+
+
+Exploit
+-----------------------------------------------------------------------------------------
+
+This game's okay. It's a puzzle game themed around hacking, where you can shoot packets into a system
+and your goal is to shoot a packet into a target node (the green pyramid). Many of the puzzles are
+based not only on sequencing, they're also based on clicking with the right iming, which can be annoying
+if you just want the puzzle to be done after you figure out the solution.
+
+The only reason I mention Exploit is that the game has a legitimate infinite loop if you arrange
+4 splitters in the right configuration, and the creator made a few puzzles that require starting
+the loop to solve it. I just think that's neat. They also added a custom block to the level editor
+which doesn't show up anywhere in the campaign or the bonus puzzles, just because a fan told them that
+their game would be Turing-complete if they did so.
+
+
+Cursor\*10
+---------------------------------------------------------------------------------------------------
+
+A game about collaborating with yourself. Best played blind! It's pretty short, and I think the core
+mechanic is neat.
+
+
+Fancy Pants Adventure
+---------------------------------------------------------------------------------------------------
 
