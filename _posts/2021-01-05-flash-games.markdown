@@ -7,42 +7,49 @@ date:   2020-12-30 18:38:00 -0700
 As someone "from the Internet", Flash was my childhood.
 
 No, I'm not sure you understand. Flash *was* my childhood. I've easily spent thousands of
-hours playing Flash games, and the death of Flash has been a sad thing.
+hours playing Flash games, and it's shaped my thoughts on what games *can* be and what games
+*should* be. The death of Flash has been sad in ways that are hard to describe.
+
 If you don't have much time, [Flash Game History](https://www.flashgamehistory.com/)
-is an excellent short article that captures the feel and influence of Flash games.
+is an excellent short article that captures the influence of Flash games on game development.
 If you have more time, the
 [Flash Games Postmortem](https://www.youtube.com/watch?v=65crLKNQR0E) from GDC 2017 is
-an amazing talk that goes into why Flash became popular, as well as the logistics
-of how those games were made and distributed.
+an long, worthwhile talk that goes into why Flash became popular, with a deeper look at the
+logistics of how those games were made and distributed.
 
-There isn't a short version of the talk, but if I had to pick one key point, it would be that
-Flash thrived because it ran on almost everything, and it would run the same *way* on almost
-everything. It was an interesting era, where everyone knew Flash had problems, but they
-understood them, and I don't think the circumstances behind that era can be reproduced.
-I believe Flash's success came because it was everywhere and so easily sharable, making a
-uniform experience. Now the online experience is fundamentally split between desktop, mobile,
-and native apps, all with slightly different character. The monetization strategies are also
-different - if you're an independent game developer trying to make a living, you're really
-incentivized to go for parasitic free-to-play transactions.
+There isn't a short version of either of the previous links (and I heavily encourage watching
+them yourself),
+but if I had to pick one key point, it's this: Flash thrived because it ran the same
+way on any platform in the world. Everyone knew Flash had problems, but they understood them,
+and out of that we got an incredible free library of creativity and expression.
 
-The Flash Games Postmortem talk ended with a Q&A section where someone asked, what's the plan
-to preserve the Flash game history, when browser support ends? At the time, it wasn't clear,
-but now the frontrunner solution is [BlueMaxima's Flashpoint](https://bluemaxima.org/flashpoint/).
-It's an archive of several thousand Flash games and animations, and I had a bunch of fun playing
-through parts of the archive I remembered.
+I'm not sure the Flash era can be reproduced. The Internet was less of a walled garden at the
+time, and Flash guaranteed a uniform, easily sharable experience.
+Now the online experience is fundamentally split between desktop, mobile,
+and native apps, all with slightly different character, and monetization has further
+homogenized around parasitic free-to-play transactions, rather than advertisements on a Flash
+game portal. It's not that F2P is new...it's more that it's eating the world and I don't like
+the games it leads to.
 
-A bunch of them have not aged well. Game design has evolved a lot, generally for the better,
-and now that I'm playing them as an adult, it's obvious how much filler content these games had,
-and how they suck me in anyways. I've installed no games on my smartphone, not because I'm too
-good for them, but because I'm too weak - I know that all the tricks to keep people playing
-work on me, and that's not how I want to spend my time.
+With Flash officially unsupported, the best avenue for playing Flash games is
+[BlueMaxima's Flashpoint](https://bluemaxima.org/flashpoint/). It's an archive of several
+thousand Flash games and animations, and I had a bunch of fun playing through the parts of the
+archive I remembered.
 
-So, instead, let's just reminesce about the good stuff. Here are some Flash games that held
-up for me when I replayed them.
+A bunch of Flash games have not aged well...game design has evolved a lot, and as an adult it's
+obvious how much filler content many of these games had. Yet they suck me in anyways.
+I don't install games on my phone, not because I'm too good for them, but because I'm too
+weak - I know that all the tricks to keep people playing work on me, and that's not how I want to spend my time.
+
+So, after doing a lot of research (read: playing a ton of old Flash games), here are ones I'd
+recommend checking out, or replaying if you didn't play them before.
 
 
 Super Mario 63
 --------------------------------------------------------------------------------------
+
+![Super Mario 63](/public/flash-games/sm63.png)
+{: .centered }
 
 Super Mario 63 is a 2D fangame that mashes up three of the 3D Marios: Super Mario 64,
 Super Mario Sunshine, and Super Mario Galaxy. On one hand, it shouldn't be surprising that
@@ -50,69 +57,57 @@ the game is fun. It's stealing mechanics and levels from three of the best platf
 all time. On the other hand, there's still a lot of work required to execute that roadmap
 properly, especially in a 2D world.
 
-There's a lot of hidden secrets in the hub area, and the movement system is great. The story
+There's a lot of hidden secrets in the hub area, tied together with a fun movement system. The story
 is pretty fanfiction-y, but that isn't the focus of this game. My one complaint is that
 Mario is *too* powerful. Many platforming sections are designed to be beatable without the FLUDD,
 likely because it's not guaranteed you have it, but the FLUDD comes with so much water that it's
 hard to run out unless you try to. That makes most of the platforming sections super easy.
 Meanwhile, the spin attack from Galaxy has 0 cooldown, so if you spam the spin attack button
 you're practically invincible. Still, in single player games it can be fun to be overpowered,
-and the overall package is fun to move through with plenty of content.
+and the overall package is fun to play with plenty of content.
 
 
-Sonny
+Sonny + Sonny 2
 ------------------------------------------------------------------------------------------
 
-Sonny and Sonny 2 are two RPG games. You play as Sonny, an amnesiac zombie that maintains mental capacity
-and doesn't want to eat people. Your travel the world with two goals: figure out how you got
-turned into a zombie, and survive. It's a turn-based game with a level-up system, skill tree, and
-equipment.
+![Sonny 2](/public/flash-games/sonny.png)
+{: .centered }
+
+Sonny and Sonny 2 are RPGs. You play as Sonny, a person who turned into a zombie, has
+amnesia, and doesn't remember anything before being a zombie. You travel with two goals: figure out how you got
+turned into a zombie, and survive.
 
 Part of Sonny's strength is its high production value. The game has a distinctive art style, voice acting,
-music, and well-done sound effects. However, I love this game because of the creativity and flexibility of its combat
-system. Sonny has access to a ton of tools. A lot of RPGs have skill trees that are basically
+music, and well-done sound effects. However, I love this game because it really rewards digging into
+the combat system.
+A lot of RPGs have skill trees that are basically
 variants of "do more damage" or "attack with this element". Most of the skills are strictly better than
 other ones, and the progression is about grinding EXP to learn the more powerful ones.
-Sonny avoids this problem by making all your skills slightly different. Some will stun the enemy, some will
-apply debuffs, some dispel enemy buffs, and so on. The game UI (usually) spells out exactly
-what enemy buffs and debuffs do, making it clear what your opponents are able to do,
-and giving you all the information needed to figure out how to counter it.
+Sonny doesn't do this. Instead, all your skills slightly different. Some will stun the enemy, some will
+apply debuffs, some dispel enemy buffs, some grant stats at the cost of other stats, and so on.
+The game UI (usually) spells out exactly what enemy buffs and debuffs do, making it clear what the current
+battle state is, and giving you all the information needed to figure out how to counter it.
+
 It gives the game a puzzle feel, where gameplay is more about finding good skill
-combos and synergies, rather than brute-force leveling. In fact, in Sonny 2, one bonus area is only unlocked
-if you beat the game on the hardest difficulty, at the lowest possible level (skip all optional fights).
-The game's designed to make this doable.
+combos and synergies, rather than brute-force leveling. In fact, Sonny 2 has a series of bonus bosses that you can only
+unlock if you beat the game on the hardest difficulty, at the lowest possible level (skip all optional
+fights), and this is entirely possible once you figure out the right tools for each fight.
 
 I will say that once you figure out the best skill combos, it becomes hard to play the game casually,
-especially when the bonus bosses practically require using the broken combinations. That reduces the replay value.
-Additionally, the praise is mostly for Sonny 2. Sonny 1 has a bit of the same flavor, but its skill tree has
-less depth, and it's closer to a typical RPG.
-This also isn't the game for you if you don't like reading. The skills are complex, and you have to read their
-full description to figure out how they work together.
-
-
-Epic Battle Fantasy
--------------------------------------------------------------------------------------------
-
-Okay. Okay okay okay. First things first: the series has really juvenille humor. Basically the series was
-started by a horny teenage boy who liked anime, and the humor never evolved past that.
-
-If you can ignore that issue, then you'll find a quality JRPG. Epic Battle Fantasy 1 and 2 are pure boss
-rushes, but from the 3rd entry on you get an overworld, block pushing puzzles, treasure chests, an equipment
-upgrade system, the whole works. I wouldn't pay for it, but it's pretty high quality for a free game.
-
-Epic Battle Fantasy isn't trying to rock the boat, or do anything crazy to the JRPG genre, but I think that's
-fine. The one thing it does different is its equipment system. Instead of giving flat stats, all weapons and
-armors grant percentage based stats. So for example, a weapon could give +30% attack and +15% defense, or +50%
-attack and -20% defense. Similar to Sonny, old weapons are never strictly worse, because they all scale with
-your stats as you level up. Your equipment choice is therefore more about what passives you want, what playstyle
-you prefer, and what elemental weaknesses your foes have.
-
-This is another game where you need to be willing to read, although not to the same extent as Sonny 2. The reading
-in this game is more about scanning for elemental weaknesses than complicated skills.
+especially when the bonus bosses practically require using the broken combinations. The praise is also mostly
+for Sonny 2. Sonny 1 has some of the same flavor, but its skill tree has less depth to it.
+My main criticism is that at times the skills are *too* complicated. Practically every attack in the game has a
+side effect, and a bunch of my early playtime was spent just reading all the skill descriptions to figure out what
+build I wanted to make. I find that fun, but I know not everyone does. I think the complexity could have been
+toned down without compromising on depth. On the other hand, the complexity is why I like it...so perhaps
+it's fine as is.
 
 
 Mastermind: World Conqueror
 ------------------------------------------------------------------------------------------------
+
+![Mastermind](/public/flash-games/mastermind.png)
+{: .centered }
 
 It's been over 10 years since I played this game, and I still feel the same way about it, in a good way.
 Mastermind: World Conqueror is a real-time strategy game, where you play a villain trying to take over the world.
@@ -129,15 +124,40 @@ of steal cash -> use cash to buy upgrades and plan other missions -> repeat work
 but I don't think that's a bad thing.
 
 
+Epic Battle Fantasy 3 + 4 + 5
+-------------------------------------------------------------------------------------------
+
+![Epic Battle Fantasy 5](/public/flash-games/ebf.png)
+{: .centered }
+
+Okay. Okay okay okay. First things first: the series has really juvenille humor. Basically the series was
+started by a horny teenage boy who liked anime, and the humor never evolved past that.
+
+If you can ignore that issue, then you'll find a quality JRPG. Epic Battle Fantasy 1 and 2 are pure boss
+rushes, but from the 3rd entry on you get an overworld, block pushing puzzles, treasure chests, an equipment
+upgrade system, the whole works.
+
+Epic Battle Fantasy isn't trying to rock the boat, or do anything crazy to the JRPG genre, but I think that's
+fine. The one thing it does different is its equipment system. Instead of giving flat stats, all weapons and
+armors grant percentage based stats. So for example, a weapon could give +30% attack and +15% defense, or +50%
+attack and -20% defense. Similar to Sonny, old weapons are never strictly worse, because percentages naturally
+scale with your stats as you level up. Your equipment choice is therefore more about what passives you want, what playstyle
+you prefer, and what elemental weaknesses your foes have.
+This is another game where you need to be willing to read, although not to the same extent as Sonny 2. The
+puzzle feel here is more about your equipment choices, rather than your skill tree.
+
 
 Amorphous+
 ---------------------------------------------------------------------------------------------
 
-This game has one button: attack. That's pretty much it. Despite that, it's a surprisingly deep arcade game.
+![Amorphous](/public/flash-games/amorphous1.png)
+{: .centered }
+
+This game has one button: attack. That's it. Despite that, it's a surprisingly deep arcade game.
 Your goal is to kill Glooples with your giant sword. It attacks in a wide arc in front of you. The range
-is traded off with recovery time where you aren't able to move.
-Different Glooples have different attack patterns and interactions with other Glooples, and although many aren't
-lethal, you only get one life.
+is traded off with a long recovery time where you can't move and are vulnerable to attack.
+Different Glooples have different attack patterns and interactions with other Glooples, and you get one life
+to clear all the enemies.
 
 It's an action game with minimal upgrades. You unlock rewards based on your achievements, but can only equip at
 most 2, so you reach max power without much playtime and the rest of the game is solely about your skill.
@@ -145,20 +165,24 @@ And if you want to get better, there's a practice mode where you can spawn all t
 want, until you learn their patterns well enough to handle them for real.
 
 I recommend treating this game as a roguelike, because, well, it basically is one, and part of the roguelike
-experience is learning the mechanics on your own. Then once you've seen most of the monsters, look up a guide
-if you want to go for 100% completion.
+experience is learning the mechanics on your own. Then, once you've seen most of the monsters, you can look
+up a guide if you're struggling on something.
+If you're aim is 100% completion, a guide is practically mandatory.
 Many of the achievements require engineering pretty weird scenarios that don't come up in normal play.
-I also recommend using the glitch that lets you earn achievements in Practice Mode, unless you want to play
-several hours waiting for the right rare Gloople to spawn. My first time through, I didn't use the glitch
-becaause I wanted to be honorable, but that was a mistake. There's no skill in playing runs until you
-get the right rare enemy to spawn.
+I also recommend using the glitch that lets you earn achievements in Practice Mode. I didn't do this when I
+first played the game, out of a sense of honor, but this was a mistake. All my honor led to was spending
+many, many hours waiting for the right rare Gloople to spawn, just so I could get the "kill X copies of
+(super rare enemy)" achievements.
 
 
 Motherload
 -------------------------------------------------------------------------------------------
 
-I almost didn't include this one...but it's iconic, and I played it through to the end when I tried it
-again, so I'll give it a shout out.
+![Motherload](/public/flash-games/motherload.png)
+{: .centered }
+
+I almost didn't include this one...but it's iconic, and I found it weirdly captivating, so
+I'll give it a shout out.
 
 The mechanics are very simple.
 Drill down to pick up ore. Fly back to the surface
@@ -189,6 +213,9 @@ ores are so lucrative that it's pretty easy to reach the end in a practically in
 
 Elements of Arkandia
 --------------------------------------------------------------------------------------------
+
+![Elements of Arkandia](/public/flash-games/arkandia.png)
+{: .centered }
 
 This game really shouldn't work. The mechanics are really poorly explained. Stats have
 incorrect descriptions. Art assets get reused across equipment - you'll have multiple shields
@@ -229,8 +256,10 @@ move and keep going.
 Portal: The Flash Version
 --------------------------------------------------------------------------------------------
 
-There's an interesting story behind this game.
+![Portal flash version](/public/flash-games/portal.png)
+{: .centered }
 
+There's an interesting story behind this game.
 The creators of the game watched the trailers for Portal 1, and were SUPER PSYCHED. They were
 so excited that they implemented Portal's mechanics in Flash, creating puzzles based on what
 they saw from the trailer. After fleshing it out more, they got good feedback from friends and
@@ -238,30 +267,42 @@ family, so they released it publicly, 1 day before the official game came out.
 
 The end result is missing Portal's sharp writing, but the puzzles are uncannily accurate. The
 mechanics they added themselves also work quite well, and the overall package is pretty good.
-The main problem the game has is that sometimes, you know exactly what you need to do, and
-executing the portal shots in the required time window is the hard part. These execution
-tests are tighter than any from Portal proper, so you need to adjust your expectations going
-in. The QA is also worse, sometimes objects get bumped through walls they shouldn't, but I never
-experienced a game breaking bug.
+The main problem the game has is that sometimes you know exactly what you need to do, but
+then you mistime the portal shot and have to start all over. The timings are tighter than
+Portal proper, so adjust your expectations going in. Objects will sometimes get bumped through
+walls as well, but I never experienced a game breaking bug.
 
 
-Shift series
+SHIFT
 -------------------------------------------------------------------------------------
 
-The Shift series is based around one concept.
+![Shift 4](/public/flash-games/shift.png)
+{: .centered }
 
-GIF
-
-There are a few games in the series. The first one is a good showcase of the idea, but in retrospect,
-the puzzle gameplay isn't very good. A lot of the levels have a problem where there's one clear
+There are a few games in the series, and they all try to ride the wave of Portal's popularity:
+a puzzle game with jokey, vaguely antagonistic writing from whoever's making you solve these
+puzzles. In retrospect, the puzzle gameplay isn't that interesting.
+A lot of the levels have a problem where there's one clear
 move at the start, then after you do that there's another clear move, and another one after that,
-and then you hit the exit door without ever thinking about how to get there. Later games in
-the series get better about this.
+and then you reach the exit just by going through the motions. Games later in the series get
+better about this and include more branching paths that you have to reason through to solve.
 
+
+Cursor\*10
+---------------------------------------------------------------------------------------------------
+
+![Cursor\*10](/public/flash-games/cursor.png)
+{: .centered }
+
+A game about collaborating with yourself. Best played blind! It's pretty short, you'll see how it
+works.
 
 
 Ghost Hacker
 --------------------------------------------------------------------------------------
+
+![Ghost Hacker](/public/flash-games/ghosthacker.png)
+{: .centered }
 
 Ghost Hacker is a tower defense game, and I'll be honest, it probably shouldn't be listed over
 Bloons Tower Defense or Kingdom Rush. But I like how it's designed.
@@ -284,28 +325,120 @@ as you have time to get back your memory and re-spend it. Pretty simple mechanic
 way to making the game feel less punishing if you make a bad decision.
 
 
-Exploit
------------------------------------------------------------------------------------------
-
-This game's okay. It's a puzzle game themed around hacking, where you can shoot packets into a system
-and your goal is to shoot a packet into a target node (the green pyramid). Many of the puzzles are
-based not only on sequencing, they're also based on clicking with the right iming, which can be annoying
-if you just want the puzzle to be done after you figure out the solution.
-
-The only reason I mention Exploit is that the game has a legitimate infinite loop if you arrange
-4 splitters in the right configuration, and the creator made a few puzzles that require starting
-the loop to solve it. I just think that's neat. They also added a custom block to the level editor
-which doesn't show up anywhere in the campaign or the bonus puzzles, just because a fan told them that
-their game would be Turing-complete if they did so.
-
-
-Cursor\*10
----------------------------------------------------------------------------------------------------
-
-A game about collaborating with yourself. Best played blind! It's pretty short, and I think the core
-mechanic is neat.
-
-
 Fancy Pants Adventure
 ---------------------------------------------------------------------------------------------------
 
+![Fancy Pants](/public/flash-games/fancypants.png)
+{: .centered }
+
+Another platforming game. You can slide, you can wall jump, the levels are really open-ended and
+filled with collectibles, and at the same time you can beat the game very quickly if you don't care
+about any of that. The entire series is worth playing, but I'd say it really hits its stride starting
+from World 2. And the animation for everything is super smooth.
+
+
+Level Up!
+-------------------------------------------------------------------------------------------------
+
+![Level Up!](/public/flash-games/levelup.png)
+{: .centered }
+
+(You want the one by Nifty Hat. Level UP! is a different game.)
+
+It's a little hard to categorize this game, but the closest approximation is "platformer collect-a-thon".
+As the name suggests, the game is about leveling up, and it does so with a pretty unique system - the
+more you do something, the better you get at it. If you jump a lot, you learn to jump higher. Run
+more and you learn to run faster. Get hit a lot, and you learn to take less damage. Stand in place
+for a while, and you learn new ways to waste time (unlock new idle animations). It all feels
+very realistic to real-life learning.
+
+Exploring the game world gives you gems, which you can use to buy new skills, making it easier to
+reach other gems, and the final goal is to hit the max level for every skill. You only get so much
+time to explore each day, so the game eventually takes on a time-loop feel where you're trying to get
+faster at going everywhere you need to go each cycle.
+
+The sequel teased in the game's 100% ending was never completed, so don't go looking for it.
+
+"Meta" Games
+-----------------------------------------------------------------------------------------------
+
+![Achivement Unlocked](/public/flash-games/achievement.png)
+{: .centered }
+
+![You Only Live Once](/public/flash-games/yolo.png)
+{: .centered }
+
+A scattering of games that play with game mechanics and tickle my self-referential soft spots.
+
+In no particular order: **Upgrade Complete** (upgrade all the things!), **Achievement Unlocked** (unlock all the achievements!), **This is the Only Level** (finish the same level over and over!), and **You Only Live Once** (you only live once!). Parts of Achievement Unlocked 2 may not work well with the Flashpoint
+archive. It would be a spoiler to say what part, but I didn't figure out a workaround for it.
+
+
+jmtb02 Games
+----------------------------------------------------------------------------------------------
+
+![Exit Path](/public/flash-games/exitpath.png)
+{: .centered }
+
+![Elephant Rave](/public/flash-games/rave.png)
+{: .centered }
+
+jmtb02 is the dev handle of John Cooney, a prolific Flash game developer who made a lot of games
+I liked. In retrospect, the reason I like his games is that they usually avoid filler or grinding.
+It felt like he understood the niche of Flash gaming and made many well-polished short experiences
+that didn't try to overstay their welcome.
+
+**Achievement Unlocked** and **This is the Only Level** were both by him, and in no particular
+order I would also recommend **Hedgehog Launch**, **Elephant Quest**, **Sixty**, **Exit Path**,
+**Soviet Rocket Giraffe**, **Epic Combo**, and **Elephant Rave HD**.
+
+
+Don't Look Back
+-----------------------------------------------------------------------------------------------
+
+![Don't Look Back](/public/flash-games/dontlookback.png)
+{: .centered }
+
+A game by Terry Cavanagh, who later became well known for VVVVVV, Super Hexagon, and Dicey
+Dungeons. I thought all three of those games were fun, although Dicey Dungeons isn't as good
+as other deckbuilder roguelikes.
+
+Don't Look Back is one of those games that tries to express a narrative through gameplay. The
+controls aren't that tight, but the moment where you realize what story the game is telling
+is pretty cool.
+
+
+Fisher Diver
+---------------------------------------------------------------------------------------------
+
+![Fisher Diver](/public/flash-games/fisherdiver.png)
+{: .centered }
+
+Fisher Diver is a game by 2DArray, and they're most known for The Company of Myself. I find it hard
+to recommend Compay of Myself these days - it has one very cool moment, but the rest of the narration
+doesn't land for me the same way it did before. However, Fisher Diver does land the same way
+on a replay.
+
+It's a game about fishing, but I see it more as commentary about the morality of fishing. You earn
+money by catching fish. Every time you attack a fish, it costs oxygen and breaks the fish apart.
+You earn more money if the fish is more intact. The natural conclusion? You should attack just
+enough to deal a lethal wound, then wait next to the fish and watch it bleed to death.
+It's a cold-hearted callousness that's both more realistic and *really different* from how a fishing game
+normally works. The description of a shop upgrade puts it best: "it wouldn't be hunting if they
+stood a chance".
+
+
+Winnie the Pooh's Home Run Derby
+----------------------------------------------------------------------------------------------
+
+![Winnie the Pooh](/public/flash-games/pooh.png)
+{: .centered }
+
+Okay, I'll be honest, I haven't played much of this game. I played enough to confirm the memes
+about its difficulty, then decided I didn't want to finish it. This game is horseshit in a way
+that doesn't feel fair. I can't recommend anyone play it for fun, but the memes are
+excellent.
+
+<div class="centered">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6F3WyFYVj10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
