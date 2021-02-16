@@ -26,7 +26,7 @@ and out of that we got an incredible free library of creativity and expression.
 I'm not sure the Flash era can be reproduced. The Internet was less of a walled garden at the
 time, and Flash guaranteed a uniform, easily sharable experience.
 Now the online experience is fundamentally split between desktop, mobile,
-and native apps, all with slightly different character, and monetization has further
+and native apps, all with slightly different character, and monetization has
 homogenized around parasitic free-to-play transactions, rather than advertisements on a Flash
 game portal. It's not that F2P is new...it's more that it's eating the world and I don't like
 the games it leads to.
@@ -36,13 +36,14 @@ With Flash officially unsupported, the best avenue for playing Flash games is
 thousand Flash games and animations, and I had a bunch of fun playing through the parts of the
 archive I remembered.
 
-A bunch of Flash games have not aged well...game design has evolved a lot, and as an adult it's
+A bunch of Flash games have not aged well. Game design has evolved a lot, and as an adult it's
 obvious how much filler content many of these games had. Yet they suck me in anyways.
-I don't install games on my phone, not because I'm too good for them, but because I'm too
-weak - I know that all the tricks to keep people playing work on me, and that's not how I want to spend my time.
+This is why I don't install games on my phone. It's not that I'm too good for them, it's that
+I'm too weak. All the tricks to keep people playing work on me, and that's not how I want to
+spend my time.
 
-So, after doing a lot of research (read: playing a ton of old Flash games), here are ones I'd
-recommend checking out, or replaying if you didn't play them before.
+Let's just reminesce about the good stuff. After doing a lot of research (read: playing a
+ton of old Flash games), here are some I still like.
 
 
 Super Mario 63
@@ -114,14 +115,13 @@ Mastermind: World Conqueror is a real-time strategy game, where you play a villa
 Recruit minions, send them on missions to earn money, advance through the tech tree, upgrade your base,
 and fight off the good guys that try to stop you.
 
-A lot of the features are sort of useless, or aren't cost effective. For example, in my many plays through the game, I've never found a use for the
-henchmen, they're too expensive compared to just buying more guys after they die in combat.
-I also don't like that you can only plan and execute 1 mission at a time. It really limits the potential
-multitasking, and once you're in the late game you're mostly just waiting for loading bars to finish and watching your minions
-mow down enemy forces.
-Despite this, something about the core gameplay loop
-of steal cash -> use cash to buy upgrades and plan other missions -> repeat works for me. The game is on the easy side,
-but I don't think that's a bad thing.
+A lot of the features are sort of useless. For example, in my many plays through the game, I've never found a use for the
+henchmen. They're too expensive compared to just buying more guys after they die in combat.
+I also don't like that you can only plan and execute 1 mission at a time. It really limits the multitasking
+ceiling, and once you're in the late game you're mostly waiting for progress bars to finish.
+Besides that, I don't have complaints about the game. The core gameplay loop
+of steal cash -> use cash to buy upgrades and plan other missions -> repeat
+works for me, and the theming is on point. It's just plain *fun* to play the villain.
 
 
 Epic Battle Fantasy 3 + 4 + 5
@@ -134,45 +134,46 @@ Okay. Okay okay okay. First things first: the series has really juvenille humor.
 started by a horny teenage boy who liked anime, and the humor never evolved past that.
 
 If you can ignore that issue, then you'll find a quality JRPG. Epic Battle Fantasy 1 and 2 are pure boss
-rushes, but from the 3rd entry on you get an overworld, block pushing puzzles, treasure chests, an equipment
+rushes, and they're fun enough, but from the 3rd entry on you get an overworld, block pushing puzzles, treasure chests, an equipment
 upgrade system, the whole works.
 
-Epic Battle Fantasy isn't trying to rock the boat, or do anything crazy to the JRPG genre, but I think that's
+Epic Battle Fantasy isn't trying to do anything crazy to the JRPG genre, but I think that's
 fine. The one thing it does different is its equipment system. Instead of giving flat stats, all weapons and
 armors grant percentage based stats. So for example, a weapon could give +30% attack and +15% defense, or +50%
 attack and -20% defense. Similar to Sonny, old weapons are never strictly worse, because percentages naturally
 scale with your stats as you level up. Your equipment choice is therefore more about what passives you want, what playstyle
-you prefer, and what elemental weaknesses your foes have.
-This is another game where you need to be willing to read, although not to the same extent as Sonny 2. The
-puzzle feel here is more about your equipment choices, rather than your skill tree.
+you prefer, and what elemental weaknesses your foes have, rather than pure stats. I appreciate this - it's nice
+to not have a ton of old items clogging up my inventory.
 
 
 Amorphous+
 ---------------------------------------------------------------------------------------------
 
-![Amorphous](/public/flash-games/amorphous1.png)
+![Amorphous](/public/flash-games/amorphous2.png)
 {: .centered }
 
 This game has one button: attack. That's it. Despite that, it's a surprisingly deep arcade game.
-Your goal is to kill Glooples with your giant sword. It attacks in a wide arc in front of you. The range
-is traded off with a long recovery time where you can't move and are vulnerable to attack.
-Different Glooples have different attack patterns and interactions with other Glooples, and you get one life
-to clear all the enemies.
+Your goal is to kill Glooples with your giant sword. You attack in a wide arc in front of you, but every
+attack comes with a long recovery time where you can't move and are vulnerable to attack.
+Different Glooples have different attack patterns, Glooples can interact with each other, and you get
+one life to clear all the enemies. If you die, you start over.
 
 It's an action game with minimal upgrades. You unlock rewards based on your achievements, but can only equip at
-most 2, so you reach max power without much playtime and the rest of the game is solely about your skill.
+most 2, so you reach max power pretty early and the rest of the game is solely about learning attack patterns
+and getting better at dodging.
 And if you want to get better, there's a practice mode where you can spawn all the hard enemies you
-want, until you learn their patterns well enough to handle them for real.
+want.
 
 I recommend treating this game as a roguelike, because, well, it basically is one, and part of the roguelike
 experience is learning the mechanics on your own. Then, once you've seen most of the monsters, you can look
 up a guide if you're struggling on something.
 If you're aim is 100% completion, a guide is practically mandatory.
 Many of the achievements require engineering pretty weird scenarios that don't come up in normal play.
-I also recommend using the glitch that lets you earn achievements in Practice Mode. I didn't do this when I
+
+If you do go for 100%, I recommend using the glitch that lets you earn achievements in Practice Mode. I didn't do this when I
 first played the game, out of a sense of honor, but this was a mistake. All my honor led to was spending
 many, many hours waiting for the right rare Gloople to spawn, just so I could get the "kill X copies of
-(super rare enemy)" achievements.
+(super rare enemy)" achievements. There's no honor in waitng for the right RNG roll.
 
 
 Motherload
@@ -181,13 +182,13 @@ Motherload
 ![Motherload](/public/flash-games/motherload.png)
 {: .centered }
 
-I almost didn't include this one...but it's iconic, and I found it weirdly captivating, so
-I'll give it a shout out.
+I almost didn't include this one...but it's iconic, and I found it weirdly captivating on a replay,
+so I'll give it a shout out.
 
 The mechanics are very simple.
 Drill down to pick up ore. Fly back to the surface
-when you run out of gas to refuel, sell your ore, and buy upgrades. The upgrades help you dig
-deeper to mine more valuable ores, and you rinse and repeat until you reach the bottom.
+when you run out of gas to refuel. Sell your ore to pay for refueling, and to buy upgrades that let
+you dig deeper for more valuable ores. Rinse and repeat.
 Not a lot of depth, but there's a Zen feeling in figuring out the shortest path to each ore.
 The key that makes the entire game work is that you can't drill upwards. Because of this, you
 can make ore inaccessible if you drill poorly, and that's just enough thinking to stop it from
@@ -198,14 +199,14 @@ My main issue with the game is that dying has an insane penalty. If you die, all
 are reset. So if you die in the late game,
 get ready to hold down for several minutes to get back to where you were before. This wouldn't
 be so bad if gas pockets weren't a thing. After a certain depth, dirt blocks have a random
-chance of exploding.
+chance of having explosive gas pockts.
 You're warned about them once, but the game doesn't emphasize how
-destructive the gas pockets are. They are 100% undetectable, can't be avoided, and do massive amounts of damage,
+destructive they are. Gas pockets are 100% undetectable, can't be avoided, and do massive amounts of damage,
 to the point that they're a
 one-hit kill if you don't have enough HP and defense upgrades.
-So basically, gas pockets are just an
-invisible stat check, players don't know they exist until they hit them, and if they fail
-the stat check they don't see coming, they have to redrill all the way back down.
+So basically, gas pockets are an
+invisible stat check, you have no way of knowing what stats you need ahead of time, and if you fail the
+stat check then you have to redrill all the way back down.
 
 Once you know how to deal with gas pockets, the game doesn't have many surprises. The late game
 ores are so lucrative that it's pretty easy to reach the end in a practically invicible state.
@@ -217,29 +218,32 @@ Elements of Arkandia
 ![Elements of Arkandia](/public/flash-games/arkandia.png)
 {: .centered }
 
-This game really shouldn't work. The mechanics are really poorly explained. Stats have
+This game should not work. The mechanics are poorly explained. Stats have
 incorrect descriptions. Art assets get reused across equipment - you'll have multiple shields
-that look exactly the same, with wildly different stats. There are massive difficulty spikes.
+that look exactly the same, with wildly different stats, which is a problem when deciding what
+to sell. There are massive difficulty spikes.
 And most importantly, who uses Impact font this much? I'm not even kidding, the font usage
-in this game is really bad and it makes a ton of things harder to read than they should.
+in this game is awful and it makes a ton of things harder to read than they should.
 
 Despite all of those issues, I like this game. It's a mashup of mechanics from
 two games: Puzzle Quest, and Recettear: An Item Shop's Tale. And, well, it's not as good
-as either individual game, but it's still fun, albeit with a really grindy endgame.
+as either individual game, but there's a kernel of fun that carries all the weird presentation.
 
 You start the game with a large debt, that accumulates interest every day. To pay off the
-debt, you need to go on dungeon adventures, find loot, then sell that loot in your shop.
-
-Battles are done through a Bejeweled board. You try to match 3 gems of the same color together.
-Forming a group of 4 or 5 gives an extra turn. Gems either grant mana, give gold, give
-treasure, or give rage. Mana can be used to cast spells that affect the board. For example,
-there's a spell that changes all gold gems to treasure gems, making it easier to line up groups
+debt, you need to go on dungeon adventures to find loot.
+Battles are done through a Bejeweled board. Matching gems of the same color gives mana,
+gold, treasure, or rage, and forming a group of 4 or 5 gives an extra turn.
+Mana can be used to cast spells that affect the board or do damage. For example,
+there's a spell that changes all gold gems to treasure gems, making it easier to form groups
 of 4 to get more extra turns. Rage can be spent to attack with your weapon, which is usually
 your main damage source.
 
-The shop stocking is Recetter without the haggling. You stock loot in your store, pick crests
-that increase the odds of selling certain items, then open your store and see what sales you
-can make. Everything in Elements of Arkandia revolves around money. You need to balance
+Once you find loot, you need to stock it in your shop. It's Recettear, but without the
+haggling - you have no control over what price items sell for, but you can pick crests that
+increase the odds of selling certain items, and depending on market conditions some items
+will be more popular than other ones.
+
+Everything in Elements of Arkandia revolves around money. You need to balance
 paying off your debt, upgrading your store, and buying battle upgrades that enable clearing
 harder dungeons. Then battles themselves are about figuring out what types of mana are
 easy or hard to achieve, and using that to decide what kind of spells you're going to aim for.
@@ -261,12 +265,13 @@ Portal: The Flash Version
 
 There's an interesting story behind this game.
 The creators of the game watched the trailers for Portal 1, and were SUPER PSYCHED. They were
-so excited that they implemented Portal's mechanics in Flash, creating puzzles based on what
-they saw from the trailer. After fleshing it out more, they got good feedback from friends and
-family, so they released it publicly, 1 day before the official game came out.
+so excited that they implemented Portal's mechanics in Flash, creating puzzles based on all
+pre-release content they could find.
+After fleshing it out more, they got good feedback from friends and
+family, so they released it publicly 1 day before the official game came out.
 
 The end result is missing Portal's sharp writing, but the puzzles are uncannily accurate. The
-mechanics they added themselves also work quite well, and the overall package is pretty good.
+mechanics they added themselves also work quite well.
 The main problem the game has is that sometimes you know exactly what you need to do, but
 then you mistime the portal shot and have to start all over. The timings are tighter than
 Portal proper, so adjust your expectations going in. Objects will sometimes get bumped through
@@ -279,13 +284,18 @@ SHIFT
 ![Shift 4](/public/flash-games/shift.png)
 {: .centered }
 
-There are a few games in the series, and they all try to ride the wave of Portal's popularity:
+There are four games in the series, and they all try to ride the wave of Portal's popularity:
 a puzzle game with jokey, vaguely antagonistic writing from whoever's making you solve these
-puzzles. In retrospect, the puzzle gameplay isn't that interesting.
+puzzles. SHIFT does so with some fourth-wall breaking commentary, surrounding the core puzzles.
+
+In retrospect, the puzzle gameplay isn't that interesting.
 A lot of the levels have a problem where there's one clear
 move at the start, then after you do that there's another clear move, and another one after that,
-and then you reach the exit just by going through the motions. Games later in the series get
-better about this and include more branching paths that you have to reason through to solve.
+and then you reach the exit just by going through the motions. But this is kind of a universal
+puzzle game problem - very few successfully avoid this trap, and the ones that do usually
+end up being bigger experiences than what you'd expect from a Flash game. I don't have a problem
+with it. Later games in the SHIFT series get better about this, by including more branching
+paths that make trial-and-error more time consuming.
 
 
 Cursor\*10
@@ -294,7 +304,7 @@ Cursor\*10
 ![Cursor\*10](/public/flash-games/cursor.png)
 {: .centered }
 
-A game about collaborating with yourself. Best played blind! It's pretty short, you'll see how it
+A game about collaborating with yourself. Best played blind! It's short, you'll see how it
 works.
 
 
@@ -304,22 +314,23 @@ Ghost Hacker
 ![Ghost Hacker](/public/flash-games/ghosthacker.png)
 {: .centered }
 
-Ghost Hacker is a tower defense game, and I'll be honest, it probably shouldn't be listed over
-Bloons Tower Defense or Kingdom Rush. But I like how it's designed.
+Ghost Hacker is a tower defense game, and I'll be honest, it shouldn't be listed over
+classics like Bloons Tower Defense or Kingdom Rush. But I like how it's designed, and fewer
+people have heard of it.
 
-In Ghost Hacker, the money resource is called Memory. Placing a tower costs memory, killing enemies
+In Ghost Hacker, your main resource is memory. Placing a tower costs memory, killing enemies
 gives memory, kill enemies to afford more towers and tower upgrades to kill stronger enemies, etc.
 The way Ghost Hacker differs is that towers are upgraded through *modifiers*. For example, in a standard
 tower defense game, you might have one tower that slows down enemies. In Ghost Hacker, there's
-a slow-enemy modifier, which can be applied to *any* tower, and then it's on the player to (for
-example) realize that you get the most utlity if you attach a slow-enemy modifier to a tower that
-does splash damage.
+a slow-enemy modifier, which can be applied to *any* tower. Then it's up to the player to (for
+example) realize that you get more utlity from your slow-enemy modifier if you attach it to a
+tower that does splash damage, since it makes the slow apply to everything in splash range.
 
-The other key part of Ghost Hacker's design is that you can never, ever lose memory. Often, a
-tower defense game will refund part of the cost if you sell a tower. This makes it feel bad to
-sell a tower, which can feel really punishing - misplace a tower early, and you pay for your
-mistake forever. In Ghost Hacker, you can always sell a tower and get the full cost
-refunded...eventually. Any time you earn memory, instead of receiving it instantly, you get some of it
+The other key part of Ghost Hacker's design is that you can never, ever lose memory. Often,
+tower defense games will only refund part of the cost if you sell a tower. This can feel really
+punishing - misplace a tower early, and you either have to settle for the suboptimal placement, or
+sell and rebuild your tower, losing out on the sell cost.
+In Ghost Hacker, selling a tower always gives back the full price...eventually. Any time you earn memory, instead of receiving it instantly, you get some of it
 every tick. In principle, that means you can completely change up your towers between waves, as long
 as you have time to get back your memory and re-spend it. Pretty simple mechanic, but it goes a long
 way to making the game feel less punishing if you make a bad decision.
