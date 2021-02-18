@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Reliving Flash Game History"
-date:   2020-12-30 18:38:00 -0700
+date:   2021-02-18 02:03:00 -0700
 ---
 
 As someone "from the Internet", Flash was my childhood.
