@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Reliving Flash Game History"
-date:   2021-02-18 02:03:00 -0700
+date:   2021-02-18 02:20:00 -0700
 ---
 
 As someone "from the Internet", Flash was my childhood.
@@ -28,21 +28,21 @@ time, and Flash guaranteed a uniform, easily shareable experience.
 Now the online experience is fundamentally split between desktop, mobile,
 and native apps, all with slightly different character, and monetization has
 homogenized around parasitic free-to-play transactions, rather than advertisements on a Flash
-game portal. It's not that F2P is new...it's more that it's eating the world and I don't like
-the games it leads to.
+game portal. It's not that F2P is new...it's more that it's eating more of the world,
+and I don't like the games it leads to.
 
 With Flash officially unsupported, the best avenue for playing Flash games is
 [BlueMaxima's Flashpoint](https://bluemaxima.org/flashpoint/). It's an archive of several
 thousand Flash games and animations, and I had a bunch of fun playing through some old memories.
 
 Many Flash games have not aged well. Game design has evolved a lot, and as an adult it's
-obvious how much filler content many of these games had. Yet they suck me in anyways.
+obvious how much filler many of these games had. Yet they suck me in anyways.
 This is why I don't install games on my phone. It's not that I'm too good for them, it's that
-I'm too weak. All the tricks to keep people playing work on me, and that's not how I want to
+I'm too weak. All the psychological tricks to keep people playing work on me, and that's not how I want to
 spend my time.
 
 Let's just reminisce about the good stuff. After doing a lot of research (read: replaying a
-ton of games), here are some I still like.
+ton of games), here are some I recommend.
 
 
 Super Mario 63
@@ -79,7 +79,7 @@ turned into a zombie, and survive.
 
 Part of Sonny's strength is its high production value. The game has a distinctive art style, voice acting,
 music, well-done sound effects, and a solid overarching story (that admittedly gets very silly at times).
-However, I love this game is because of the depth of its combat system.
+However, I love this game because of the depth of its combat system.
 
 A lot of RPGs have skill trees that are basically
 variants of "do more damage" or "attack with this element". Most of the skills are strictly better than
@@ -94,16 +94,16 @@ really stretches the limits of your available options.
 
 This complexity extends to the enemies as well. Their attacks also apply complicated buffs and debuffs,
 and the game UI (usually) spells out exactly what they do, so you have all the information needed to
-decide how to deal with the current battle state. Enemy AI is also simple enough that you
-often have a good feel for what attacks enemies are going to do, it's expected that you exploit
-these patterns to beat the game. For example, one enemy alternates between doing 3x more damage, and
-taking 3x more damage, on a fixed timer. So strategy in that fight is about figuring out how to
-survive the first phase, then retaliate in the 2nd. The fights can get sort of gimmicky, but I think
-it's gimmicky in a good way. The gimmicks force fights to play out differently.
+decide how to deal with the current battle state. Enemy AI also follows simple patterns that you're
+expected to figure out and exploit to beat the game.
+For example, one enemy alternates between doing 3x more damage, and
+taking 3x more damage. So strategy in that fight is about figuring out how to
+survive the first phase, to let you retaliate in the second. The fights can be gimmicky, but I think
+they're gimmicky in a good way, they force fights to play out differently.
 
 I will say that once you figure out the best skill combos, it becomes hard to play the game casually.
-Skills in Sonny are not *strictly* worse than other skills, but there are definitely skills that
-are way stronger/weaker than their counterparts. Additionally, my praise is mostly for Sonny 2.
+Skills in Sonny are not *strictly* better than other skills, but there are definitely skills that
+are way stronger in most scenarios. Additionally, my praise is mostly for Sonny 2.
 Sonny 1 has some of the same flavor, but the skill tree isn't as varied as it is in Sonny 2. I
 think the second game improves on the first on every way, so you may want to start there, but
 Sonny 1 is a fine game as well.
@@ -128,7 +128,7 @@ Recruit minions, send them on missions to earn money, then spend money on other 
 advance you through the tech tree. The more missions you do, the more attention you attract from
 the good guys, and the more money you'll need to invest into your base defenses to fight them off.
 
-A lot of the features in this game aren't that effective. I'm still not convinced any of the henchmen
+A lot of the features in this game aren't that cost-effective. I'm still not convinced any of the henchmen
 are worth hiring, compared to just buying more guys after they die in combat.
 I also don't like that you can only plan and execute 1 mission at a time. It really limits the multitasking
 ceiling, and once you're in the late game you're mostly waiting for progress bars to finish.
@@ -148,7 +148,7 @@ Okay. Okay okay okay. First things first: the series has really juvenile humor. 
 started by a horny teenage boy who liked anime, and the humor never evolved past that. And the plot
 is an excuse plot that revolves around the main characters being idiots.
 
-If you can ignore that issue, then you'll find a quality JRPG. Epic Battle Fantasy 1 and 2 are pure boss
+If you can ignore those issues, then you'll find a quality JRPG. Epic Battle Fantasy 1 and 2 are pure boss
 rushes, and they're fun enough, but from the 3rd entry on you get an overworld, block pushing puzzles, treasure chests, an equipment
 upgrade system, the whole works.
 
@@ -158,8 +158,7 @@ armors grant percentage based stats. So for example, a weapon could give +30% at
 attack and -20% defense. Old weapons are never strictly worse, because percentages naturally
 scale with your stats as you level up. Your equipment choice is therefore more about what passives you want, what playstyle
 you prefer, and what elemental weaknesses your foes have, rather than pure stats. I appreciate this - it's nice
-to not have a ton of old items clogging up my inventory. And similar to Sonny, the best equipment layout
-for each fight depends a lot on what elements they're weak to and what statuses they can apply.
+to not have a ton of old useless items clogging up my inventory, and it leads to a lot of flexibility.
 
 
 Amorphous+
