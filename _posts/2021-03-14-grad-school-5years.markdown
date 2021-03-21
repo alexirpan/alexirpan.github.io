@@ -133,5 +133,42 @@ take people who don't have PhDs, but this may not last forever. (Ask people in
 electrical engineering.) If you're confident you want to keep doing research, getting a PhD
 is the safest option. This is the consistent advice everyone I know has gotten.
 
-When I got the AI residency offer, I treated it as a 1 year pause while I figured out if
-I wanted to keep doing research or not.
+When I got the AI residency offer, I treated it as a 1 year trial run of whether I wanted
+to keep doing research, and when I stayed on, I planned to get enough publications out to
+make it such that no one would care that I didn't officially have a PhD.
+That hasn't panned out the way I expected.
+
+There's two kinds of research reputation: word of mouth, and publications. Word of mouth
+is easier to get - you give a good talk, you make a good impression on someone when
+you mingle at a conference, or you have fruitful discussions within your lab. But word
+of mouth isn't permanant. It's tied to the institution, or the people you work
+with most closely. People change jobs, fortunes turn - it's not a good foundation.
+
+It certainly isn't worthless! But I believe you want publications and citations to be the
+base of your reputation, because it's absolute and no one can take it away from you. And
+you'll get more publications in a PhD program. Publish or perish, as they say.
+They won't all be good papers, but they will be out there.
+
+On that front, I haven't been on too many papers. I have been asked to review for conferences,
+but I get the feeling that reviews are so starved that practically everyone in the research
+community gets asked for those. Funnily enough, this blog is probably the biggest reputation
+boost I have. More people should start blogs! I don't know why they don't. Maybe they're
+too busy writing papers or something 😛. Jokes on Tthem, I get to use emojis and they don't.
+
+
+Ability
+-----------------------------------------------------------------------------------
+
+This is the hardest to judge. I definitely got better at research but I really don't know
+if I'd have gotten better faster in a PhD program or not.
+
+Getting a PhD isn't about getting a lot of publications, it's about learning how to form and
+attack a long term research thesis. Now, getting the publications is a necessary side effect
+of that, but the aim of a good advisor is that they help you figure out what problem you
+should try next, explain why that decision makes sense, and repeat until you figure out
+how to do it yourself. If a professor doesn't do this, then they aren't a good advisor,
+and professors want to be good advisors. It's how they get *their* own reputation.
+
+I got a similar kind of mentorship in my job, but no one was required to teach it to me.
+Industry labs can have a taller job ladder, which can lead to more top-down direction.
+
