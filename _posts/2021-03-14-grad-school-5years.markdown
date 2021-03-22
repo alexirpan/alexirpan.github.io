@@ -13,19 +13,20 @@ I did so after the fact.
 
 I wrote that post to try to express the stress and thoughts I had before making
 that decision, for myself if not for anyone else. It resonated with a few
-people and I'm happy that it did. Now it's 2021, about 5 years since that
-decision, and given that the average computer science PhD is 5 years long,
-I thought it'd be interesting to see where I ended up.
+people and I'm happy that it did.
 
-If you don't know me, I went to UC Berkeley for undergrad, did some research
-(mostly in reinforcement learning), then joined Google Brain through their
-AI residency program. I did that for a year, then stayed there ever since,
-and now I work on the Robotics team. I still do ML research, primarily on
+Since then, I joined the Brain team at Google Research through their AI
+residency program. I did that for a year, then stayed there since. I
+now work on the Robotics team, and still do ML research, primarily on
 applying imitation learning and reinforcement learning to robot manipulation
 problems.
 
+As such, we've got an interesting counterfactual. It's been 5 years since I
+decided not to apply to a PhD program, and 5 years is the average length of
+a computer science PhD. So how have things differed?
 
-Interest
+
+Research Interest
 -----------------------------------------------------------------------
 
 > I discovered over the past 5 years that I love being a spectator of
@@ -169,6 +170,41 @@ should try next, explain why that decision makes sense, and repeat until you fig
 how to do it yourself. If a professor doesn't do this, then they aren't a good advisor,
 and professors want to be good advisors. It's how they get *their* own reputation.
 
-I got a similar kind of mentorship in my job, but no one was required to teach it to me.
-Industry labs can have a taller job ladder, which can lead to more top-down direction.
+No one is required to give you this kind of mentorship in an industry lab. (This is especially
+true for labs that are more top-down in research direction, since the path will be paved
+for you.)
+On the other hand,
+your peer group will have more people who *could* give you that mentorship. Basically,
+if you're in a PhD program, you have your advisor and then a bunch of grad students trying
+to figure it out themselves. If your advisor has time, they're great! If they don't, then
+you might be stuck figuring it out your labmates. (The latter seems more common, based on
+talking to research scientists at Brain...) If you're stuck figuring it out with your
+labmates, then, well, in an industry lab some of your labmates will have finished their PhD
+and been in the game for longer.
+
+I got lucky and had mentors who encouraged me about research direction, so I think this
+was about the same.
+
+https://training.kalzumeus.com/newsletters/archive/do-not-end-the-week-with-nothing
+
+
+Conclusion
+---------------------------------------------------------------------------------------
+
+I don't have regrets about my decision. Given what I knew about myself at the time, it was the
+right choice.
+
+I think the standard advice for rising undergrads is that they should mentally downweight your enthusiasm
+for grad school: if you're very excited about grad school, you should only be moderately excited,
+and if you're unsure about it, then you shouldn't go. This is definitely true in general, but
+I would add a big addendum: **try getting a full-time research job during the summer.**
+I chose not to do this, and in hindsight, juggling both research and course work was *very*
+different from full-time research.
+
+If you can get an offer out of undergrad for the top industry labs, and know you'll get a chance
+to publish, it's a compelling offer and I would take it seriously. I personally think I was
+very lucky to get the offer I did. 2015-2016 was a crazy year for deep learning. AlphaGo
+had just won against Lee Sedol, OpenAI was founded, companies were going crazy on hiring,
+and I had the right experience to capitalize on that.
+
 
