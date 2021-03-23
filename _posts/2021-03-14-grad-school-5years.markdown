@@ -4,19 +4,19 @@ title:  "The 5 Year Update on Skipping Grad School"
 date:   2021-03-14 02:20:00 -0700
 ---
 
-In the fall semester of 2015, I was in my last year of undegrad and had a
+In the fall semester of 2015, I was in my last year of undergrad and had a
 lot of angst about whether I should apply to PhD programs, whether I wanted to
-do a PhD at all, or if I just wanted to go work in industry or do something
-completely different. I ended up choosing to go to industry,
-writing a [6000 word blog post]({% post_url 2016-01-03-grad-school %}) about why
-I did so after the fact.
+do a PhD at all, or if I was done with all of that.
+I ended up choosing to not apply to PhD programs,
+writing a [6000 word blog post]({% post_url 2016-01-03-grad-school %})
+explaining why.
 
-I wrote that post to try to express the stress and thoughts I had before making
-that decision, for myself if not for anyone else. It resonated with a few
-people and I'm happy that it did.
+That post wasn't really meant to be educational...it was more an expression of
+my stress and feelings, written for myself rather than anyone else. But I know
+it resonated with a few people, and I'm happy it did.
 
-Since then, I joined the Brain team at Google Research through their AI
-residency program. I did that for a year, then stayed there since. I
+After that, I joined the Brain team at Google Research through their AI
+residency program, then stayed there ever since. I
 now work on the Robotics team, and still do ML research, primarily on
 applying imitation learning and reinforcement learning to robot manipulation
 problems.
@@ -26,6 +26,24 @@ decided not to apply to a PhD program, and 5 years is the average length of
 a computer science PhD. So how have things differed?
 
 
+Desire to do a PhD
+----------------------------------------------------------------------
+
+The common wisdom is that you can jump back to a PhD after 1 year in industry,
+and it gets exponentially less likely after that.
+
+This is definitely true, but it's not because your resarch skills decay. It's
+more that once you leave an environment where lots of people are going to PhD
+programs, you need to be a much weirder person to decide you want to go to grad
+school. I'm not that weird of a person. Well, I mean, I am weird. Just not
+weird in that way.
+
+Right now, I feel I can achieve my goals without going back
+to get a PhD, and although formally having the degree would be nice, I don't
+feel a strong obligation to get the piece of paper. What I want is what
+the piece of paper represents. More on that later.
+
+
 Research Interest
 -----------------------------------------------------------------------
 
@@ -33,26 +51,26 @@ Research Interest
 > research, but the burden of being a continual producer of new research is
 > just too great for me.
 
-This is a quote from the Ph.D. Grind, which I agreed with pretty strongly.
+This is a quote from the Ph.D. Grind, and 2015-me agreed with this as-is.
 Learning about new research is awesome, in the same way that taking classes
 is awesome, because someone has taken care to deliver a packet of knowledge
 as quickly and clearly as possible into your head.
-
-Reality is unfortunately not set up to give you insights at every step,
+Reality is unfortunately not set up this way,
 and since research is about understanding reality, it's much more time
-consuming and draining to learn something new. I think in 2016 I 100% agree
-with this quote, but now I would amend it to,
+consuming and draining to learn something new.
+
+I would now amend it to,
 
 > The burden of being a continual producer of new research is too great
 > without careful management.
 
-In hindsight, my biggest shift is getting better at work-life balance. I think
-I got more done in university, but it wasn't sustainable for my mental health.
-There's a sweet spot where I feel like I can make research progress without
-burning out, and in that sweet spot research is great.
-
-Now, I'm pretty sure I'm not at my max potential, and I could be doing a lot
-more if I worked more. I just choose not to because life is more fun that way.
+I got much better at work-life balance once I left univerisity. This is
+definitely at the cost of my productivity. I got more done in school, but
+it wasn't sustainable for my mental health.
+There's a sweet spot where I feel I can do research without
+burning out, and in that sweet spot research is great. In short, I'm not
+at my max potential, I could be doing more if I worked more, and I just
+choose not to because life is more fun that way.
 
 Another big factor was that I didn't make much progress on any of my undergrad
 progress, and that left me very uncertain about whether I wanted to keep
@@ -78,36 +96,35 @@ I also might have kept up the same habits as undergrad, which would have kept me
 burnt out.
 
 
-Confidence
+Research Confidence
 ----------------------------------------------------------------------
 
 Another reason I didn't apply to PhD programs was that I wasn't sure
-I was in the same weight class for research ability as my peers. My research was
+I was in the same weight class for research ability as my peers. My results were
 nowhere near good enough to publish, meetings felt like I was desperately
 trying not to drown in new topics and iedas, and it was all just a bit much.
 Friends in my year said they thought I'd do well in grad school. I disagreed.
 
-In hindsight....well, they weren't wrong. I'm not sure if they were *right*. I've done
-okay in industy research, but working in an industry research lab is different from
-grad school.
-Working
-in an industry research lab is different from grad school. But if I had gone to
-grad school, I think I could have held my own. It's surprising how much easier it
-got after bashing through the first few walls.
+In hindsight...I'm not sure if they were *right*, but they weren't wrong.
+I've seen many PhD interns each year, and with better calibration on my abilities,
+I definitely think I could have held my own. Definitely not superstar tier though.
 
+It's surprising how much easier research got after bashing through the first few
+walls.
 Let's call this a wash. My research self-confidence was at a near bottom in
-undergrad and it would have improved regardless of where I went.
+undergrad and it would have improved regardless of where I went. I was getting
+better, I just didn't realize it yet.
 
 
 Social Life
 --------------------------------------------------------------------------
 
-This is pretty clearly worse. I'm more towards the introverted side and didn't
+This is pretty clearly worse. I'm more of an introvert and didn't
 talk to a lot of people growing up. I'm not depressed or unhappy by any means.
 Through practice, I've developed a long, winding maze of entertainment and side projects
-that keep me busy if I don't have the energy for socializing. The problem is that the maze
-is too efficient, sometimes it takes a long time to get out, and when I do I usually
-wish I socialized more.
+that keep me busy if I don't have the energy to catch up with friends. The problem is that the maze
+is too effective, sometimes it takes a long time to get out, and when I do I usually
+wish I had socialized more and exited the maze sooner.
 
 University life shakes that maze in a way that working life doesn't.
 When everyone lives near campus, everyone goes to campus for whatever event's happening,
@@ -119,11 +136,11 @@ to the same degree. Also, the demographics are different. I just find it easier 
 with people in the same age bracket and it's a lot more diverse outside of PhD programs.
 
 
-Reputation
+Research Reputation
 ----------------------------------------------------------------------
 
-By reputation, I roughly mean this: how often are you asked to review for a conference or
-journal? Are you asked to area chair? If you went to give a talk somewhere, what fraction
+By reputation, I mean things liks this: how often are you asked to review for a conference or
+journal? Are you asked to area chair for reviewing? If you went to give a talk somewhere, what fraction
 of people would go because of your name, rather than the subject of your talk?
 
 I find it all kinda grimey to think about, but it does matter, especially for research.
@@ -131,7 +148,9 @@ Getting a PhD is tough and painful, but publishing papers and getting that stamp
 is the most durable form of reputation if you want to keep doing research. Right now, the
 demand for ML / AI talent is still way bigger than the supply of PhDs, so companies will
 take people who don't have PhDs, but this may not last forever. (Ask people in
-electrical engineering.) If you're confident you want to keep doing research, getting a PhD
+electrical engineering - I've heard EE companies used to take anyone they thought was
+qualified, and now it's hard to get in without at least a master's.)
+If you're confident you want to keep doing research, getting a PhD
 is the safest option. This is the consistent advice everyone I know has gotten.
 
 When I got the AI residency offer, I treated it as a 1 year trial run of whether I wanted
@@ -157,7 +176,7 @@ boost I have. More people should start blogs! I don't know why they don't. Maybe
 too busy writing papers or something 😛. Jokes on Tthem, I get to use emojis and they don't.
 
 
-Ability
+Research Ability
 -----------------------------------------------------------------------------------
 
 This is the hardest to judge. I definitely got better at research but I really don't know
@@ -186,6 +205,25 @@ I got lucky and had mentors who encouraged me about research direction, so I thi
 was about the same.
 
 https://training.kalzumeus.com/newsletters/archive/do-not-end-the-week-with-nothing
+
+
+Research Direction
+---------------------------------------------------------------------------------------
+
+I started undergrad planning to double major in math and CS, and tend to like theoretical CS.
+I suspect there's a real chance I would have ended up in TCS or learning theory if I had
+started research under a different professor.
+
+Industry labs have many good theory people, but on average an industry lab will be more experimental.
+The argument is, industry labs have access to bigger computing clusters that academia, therefore it's more
+scientifically interesting if they work on projects thqt exploit those clusters, because such research
+is of a different flavor than academic research. This is all very reasonable, but it puts pressure
+on the theory side - if all you're doing is pure theory, it's not exploting any of indusry's comparative
+advantages, so why not do it in academia? It's not like you need anything besides your brain.
+
+I would probably be doing more theory if I had gone to a PhD program, since my research interests
+aren't perfectly aligned with my day-to-day work, but it's not that different and I'm willing to
+take the trade-offs it comes with.
 
 
 Conclusion
