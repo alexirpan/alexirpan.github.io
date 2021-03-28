@@ -30,9 +30,9 @@ instead?
 Disclaimers
 ---------------------------------------------------------------------
 
-* I did not do a PhD. This is based off what I believe grad school is like,
+* This is based off what I believe grad school is like,
 but my model could be incorrect.
-* Industry research labs are not identical - my experience may not be typical.
+* Industry research labs are not identical and my experience may not be typical.
 * This is specific to machine learning PhDs. ML is in a very unique position
 that doesn't generalize to other fields. Extrapolate with caution.
 
@@ -45,24 +45,26 @@ and it gets exponentially less likely after that.
 
 This is definitely true, but it's not because your research skills decay. It's
 that bandwagon effects are real. You're going from an environment where many people
-are considering PhD programs, to one where most people people have no plans to
+are considering PhD programs, to one where most people have no plans to
 go back to school. You need to be a much weirder person to decide to do a PhD
-despite that. I'm not that weird of a person. Well, I mean, I am weird. Just
+once you've settled into a work routine.
+I'm not that weird of a person. Well, I mean, I am weird. Just
 not weird in that way.
 
 Right now, I feel I can achieve my goals without going back
 to get a PhD, and although formally having the degree would be nice, I don't
-want the diploma. I want what the diploma represents. More on that later.
+want the diploma. I want what the diploma represents, and there are ways to
+get it outside grad school.
 
 
 Research Confidence
 ----------------------------------------------------------------------
 
 One reason I didn't apply to PhD programs was that I wasn't sure
-I was in the same weight class for research ability as my peers. My undegrad
-research was never anywhere near good enough to publish.
+I was in the same weight class for research ability as my peers. My undergrad
+research was never good enough to publish.
 Meetings felt like I was desperately
-trying not to drown in new topics and iedas. It was all just a bit much.
+trying not to drown in new topics and ideas. It was all a bit much.
 Friends in my year said they thought I'd do well in grad school, and I disagreed.
 
 In hindsight...I'm not sure if they were *right*, but they weren't wrong. I'm
