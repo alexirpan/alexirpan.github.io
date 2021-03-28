@@ -43,7 +43,7 @@ Desire to do a PhD
 The common wisdom is that you can jump back to a PhD after 1 year in industry,
 and it gets exponentially less likely after that.
 
-This is definitely true, but it's not because your resarch skills decay. It's
+This is definitely true, but it's not because your research skills decay. It's
 that bandwagon effects are real. You're going from an environment where many people
 are considering PhD programs, to one where most people people have no plans to
 go back to school. You need to be a much weirder person to decide to do a PhD
@@ -186,7 +186,7 @@ much of the interest would be driven by your name, rather than the subject of yo
 People usually call this "status". I'm using reputation because it's alliterative.
 
 I find it all kinda grimey to think about, but it does matter, especially for research.
-Reputattion matters because it's the way you stay employed. If you want to keep doing research,
+Reputation matters because it's the way you stay employed. If you want to keep doing research,
 you need to both be good at research, and be known as someone who's good at research.
 Right now, the
 demand for ML / AI talent is still way bigger than the supply of PhDs, so companies will
@@ -199,8 +199,8 @@ interesting!
 
 There's two kinds of research reputation: word of mouth, and publications. Word of mouth
 is easier to get - you give a good talk, you make a good impression on someone when
-you mingle at a conference, you contribute good ideas during a resarch brainstorm within your lab.
-But word of mouth isn't permanant. It's tied to the people you work with and the institution you
+you mingle at a conference, you contribute good ideas during a research brainstorm within your lab.
+But word of mouth isn't permanent. It's tied to the people you work with and the institution you
 work at. People change jobs, fortunes turn - word of mouth alone is not a good foundation.
 It certainly isn't worthless! It helps to be "the one who knows how X works". But word alone
 is not enough, because lots of people "know a guy", and this means nothing unless the person
@@ -311,7 +311,7 @@ right choice.
 I also don't have any plans to go back to academia. I'm not saying it'll never happen, but it would
 take something seismic for me to change my mind.
 
-The standard advice for rising undergrads is that they should mentally downweight their enthusiasm
+The standard advice for rising undergrads is that they should mentally downweigh their enthusiasm
 for grad school: if you're very excited about grad school, you should only be moderately excited,
 and if you're unsure about it, then you shouldn't go. I still agree with this, but I probably would have
 gotten *more* enthusiastic about research if I had gone to grad school. **This is not normal,**
