@@ -34,8 +34,7 @@ Disclaimers
 but my model could be incorrect.
 * Industry research labs are not identical - my experience may not be typical.
 * This is specific to machine learning PhDs. ML is in a very unique position
-that doesn't generalize to other fields. If you're considering a PhD in a different
-field, extrapolate with caution.
+that doesn't generalize to other fields. Extrapolate with caution.
 
 
 Desire to do a PhD
