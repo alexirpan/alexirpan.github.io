@@ -90,7 +90,7 @@ Research Interest
 
 This is a quote from the Ph.D. Grind, and 2015-me agreed with this as-is.
 Learning about new research is awesome, in the same way that taking classes
-is awesome, because the paper authors / teachers has thought about how to
+is awesome, because the paper authors / teachers have thought about how to
 deliver knowledge as quickly and clearly as possible into your head.
 If the paper's confusing, or the course doesn't cover the right topics,
 they've failed.
@@ -149,7 +149,7 @@ Money
 I definitely get paid more in industry. Money isn't my first priority,
 but I'm not going to ignore it.
 
-In academia, more funding tends to give you more freedom. At the low end, if you're
+In academia, more funding tends to give you more freedom. At the low end, if your
 funding's bad, you may need to do things for the money rather than genuine interest,
 like signing up for more teaching, taking part-time work outside of grad school, and so on.
 If you like teaching, that's great! But it shouldn't be your top priority during a PhD.
