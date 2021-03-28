@@ -359,8 +359,7 @@ The standard advice for rising undergrads is that they should mentally downweigh
 for grad school: if you're very excited about grad school, you should only be moderately excited,
 and if you're unsure about it, then you shouldn't go. I still agree with this, but I probably would have
 gotten *more* enthusiastic about research if I had gone to grad school. **This is not normal,**
-and even if it worked out for me, I would not recommend using a PhD to figure out what you want
-to do.
+and even if it worked out for me, I would not recommend using a PhD to figure out your life.
 
 If you can get an offer out of undergrad for a good industry lab, and know you'll get a chance
 to publish, it's a compelling offer and I would take it seriously. It worked out for me.
