@@ -137,6 +137,24 @@ papers, each with smaller impact, and that would have been less fulfilling.
 I also might have kept up the same unhealthy habits as undergrad.
 
 
+Money
+------------------------------------------------------------------------------
+
+I definitely get paid more in industry. This isn't my first priority,
+but I'm not going to turn down free money.
+
+In academia, more funding tends to give you more freedom. At the low end, if you have
+bad funding, you may need more money to live (i.e. signing up for more teaching, part-time
+work outside of grad school, and son on.)
+At the higher end, if you have more funding, you can do more of what you want, but
+I think this is more about the number and nature of your funding sources rather than
+the absolute pay.
+If you're getting a stipend from your professor, grants from things like the
+NSF fellowship, and the grants are general in scope, then you're less tied to any
+single one. Industry labs have one source of funding (the company), so you won't
+have radical freedom, but you also won't have to think about side hustles.
+
+
 Social Life
 --------------------------------------------------------------------------
 
@@ -290,15 +308,15 @@ Conclusion
 I don't have regrets about my decision. Given what I knew about myself at the time, it was the
 right choice.
 
-I also don't have any plans to go back to academia, but it would take something seismic for me
-to change my mind.
+I also don't have any plans to go back to academia. I'm not saying it'll never happen, but it would
+take something seismic for me to change my mind.
 
 The standard advice for rising undergrads is that they should mentally downweight their enthusiasm
 for grad school: if you're very excited about grad school, you should only be moderately excited,
 and if you're unsure about it, then you shouldn't go. I still agree with this, but I probably would have
-gotten *more* enthusiastic about research if I had gone to grad school. I think this isn't normal,
-and if you're currently unsure about grad school, I wouldn't rely on starting a PhD to fix that
-problem.
+gotten *more* enthusiastic about research if I had gone to grad school. **This is not normal,**
+and even if it worked out for me, I would not recommend using a PhD to figure out what you want
+to do.
 
 If you can get an offer out of undergrad for a good industry lab, and know you'll get a chance
 to publish, it's a compelling offer and I would take it seriously. It worked out for me.
