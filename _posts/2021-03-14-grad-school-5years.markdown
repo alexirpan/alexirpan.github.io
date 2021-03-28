@@ -327,6 +327,25 @@ in the real world makes you directly hit problems that have to be solved for ML 
 useful. The bad part is that you have to deal with the real world.
 
 
+Type of Work Done
+--------------------------------------------------------------------------------------
+
+In a PhD program, if there's non-research work that needs to be done, like fixing your NumPy
+installation, you'll usually do it yourself.
+
+In an industry lab, if there's non-research work that needs to be done, like fixing your NumPy
+installation...you'll also usually do it yourself.
+
+When I talk to people considering skipping a PhD, a common worry they have is that if they join
+an industry research lab, they'll be expected to do more software engineering work and less research.
+I do think it's more likely you'll do more grunt SWE work if you don't have a PhD, but 1) it depends
+on the team, and 2) even if you have a PhD, you'll probably do grunt SWE work.
+
+I've said this before, but research tools will always feel deficient, because your research will
+uncover new problems, and it's unlikely the perfect tool exists for a problem no one but you has
+seen before. A PhD will not save you - you will be debugging garbage your entire life.
+
+
 Conclusion
 ---------------------------------------------------------------------------------------
 
