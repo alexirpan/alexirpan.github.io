@@ -319,11 +319,14 @@ better advisors.
 
 Everyone I know who's left Google did so because
 they didn't get along with their manager, and to me it feels like a cosmic roll of the dice
-whether that happens or not. I don't have reason to believe the grad student $$\rightarrow$$ advisor
-relationship is any different, aside from visit days.
+whether that happens or not. The grad student $$\rightarrow$$ advisor relationship is a better
+roll of the dice, since visit days give you a chance to talk to the grad students mentored by
+your potential advisor, but that doesn't feel like it guarantees the advising relationship
+will work out.
+
 I got lucky and had mentors who encouraged me to consider
-where the field was going, so I think this would be about the same if I was in a PhD
-program.
+where the field was going. I think on expectation, my research ability would be about the same if I
+was in a PhD program, but there would be high variance on how it played out.
 
 
 Research Direction
@@ -349,10 +352,10 @@ pure theory work is rare, unless there is a high certainty path between that the
 revenue generating. In those scenarios, it's important for the company to hire theory people to
 stay on the cutting edge.
 
-I would probably be doing more theory if I had gone to a PhD program, since my research interests
+I would probably be doing more theory if I had gone to a PhD program. My research interests
 aren't perfectly aligned with my day-to-day work, but it's not that different and I'm willing to
 take the trade-offs it comes with. The good part of robot learning is that getting things to work
-in the real world makes you directly hit problems that have to be solved for ML research to be
+in the real world makes you directly hit hard, interesting problems that have to be solved for ML research to be
 useful. The bad part is that you have to deal with the real world.
 
 
