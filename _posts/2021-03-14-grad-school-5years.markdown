@@ -5,26 +5,28 @@ date:   2021-03-14 02:20:00 -0700
 ---
 
 In the fall semester of 2015, I was in my last year of undergrad and had a
-lot of angst about whether I should apply to PhD programs, whether I wanted to
-do a PhD at all, or if I was done with research.
-I ended up not applying to PhD programs,
+lot of angst about whether I should apply to PhD programs.
+I ended up not applying,
 writing a [6000 word blog post]({% post_url 2016-01-03-grad-school %})
-explaining why.
+explaining why. The short version is: lots of imposter syndrome, disillusionment
+about whether I could handle the marathon of research, wavering faith in
+doing research at all, and an eventual decision that if I wasn't sure about research,
+I couldn't turn down the money and steady work that industry offered.
 
 That post wasn't really meant to be educational. It was more an expression of
 my stress and feelings, written for myself rather than anyone else. But I know
 it resonated with a few people, and I'm happy it did.
 
-After that, I joined Google Research through their AI
-residency program, then stayed there full-time. I
-now work on the Robotics team, and still do ML research, primarily on
+After that, I interviewed around, got an AI residency offer from Google Research,
+and did that for a year. I then stayed there full-time and
+now work on the Robotics team, as a research engineer. I primarily work on
 applying imitation learning and reinforcement learning to robot manipulation
 problems.
 
-This leaves an interesting counterfactual. It's been 5 years since I
+It's been 5 years since I
 decided not to apply to a PhD program, and 5-6 years is about the length of
-a computer science PhD. How might things have played out if I had done a PhD
-instead?
+a computer science PhD. There's a nice symmetry there, so I figured I'd write an
+update on how things have gone, in case people in a similar position find it useful.
 
 
 Disclaimers
@@ -35,6 +37,12 @@ but my model could be incorrect.
 * Industry research labs are not identical and my experience may not be typical.
 * This is specific to machine learning PhDs. ML is in a very unique position
 that doesn't generalize to other fields. Extrapolate with caution.
+* 2015-2016 was a crazy year for
+deep learning. AlphaGo had just won against Lee Sedol, OpenAI was founded, and companies were
+going crazy on hiring. I personally think I was very lucky to get the offer I did -
+Google had never done an AI residency before so it was less competitive. I'm not sure
+I would have gotten in if I applied 1 year later, and things would be very different if
+I had done a generic SWE job instead.
 
 
 Desire to do a PhD
@@ -43,13 +51,17 @@ Desire to do a PhD
 The common wisdom is that you can jump back to a PhD after 1 year in industry,
 and it gets exponentially less likely after that.
 
-This is definitely true, but it's not because your research skills decay. It's
+This is definitely true, but it's not because your research skills decay that quickly. It's
 that bandwagon effects are real. You're going from an environment where many people
 are considering PhD programs, to one where most people have no plans to
 go back to school. You need to be a much weirder person to decide to do a PhD
 once you've settled into a work routine.
 I'm not that weird of a person. Well, I mean, I am weird. Just
 not weird in that way.
+
+Additionally, professor recommendations are a large part of PhD applications.
+Your research skills may not decay that quickly, but your professor's memory of
+those skills might.
 
 Right now, I feel I can achieve my goals without going back
 to get a PhD, and although formally having the degree would be nice, I don't
@@ -76,7 +88,8 @@ few walls is the hardest. It's surprising how much easier research got after tha
 It's still hard, but I have a better handle on how projects organize themselves
 (as well as how they fall apart, which is an unfortunate but inevitable lesson).
 
-Let's call this a wash. My research self-confidence was at a near bottom in
+When I imagine the world where I did a PhD instead, it feels like a wash.
+My research self-confidence was at a near bottom in
 undergrad and it would have improved regardless of where I went. I was getting
 better, I just didn't realize it yet.
 
@@ -143,53 +156,60 @@ don't tend to come out of academic ML labs. In a PhD setting, I likely would hav
 papers, each with smaller impact, and that would have been less fulfilling.
 
 
-Money
+Money and Freedom
 ------------------------------------------------------------------------------
 
 I definitely get paid more in industry. Money isn't my first priority,
-but I'm not going to ignore it.
+but I'm not going to ignore it. If you only care about the money, doing an ML PhD just doesn't
+make sense. You can make good money as an ML engineer / data scientist. Spending 5-6
+years on a PhD stipend is not going to make up for that unless you discover something
+[revolutionary that starts a bidding war.](https://www.wired.com/story/secret-auction-race-ai-supremacy-google-microsoft-baidu/)
 
-In academia, more funding tends to give you more freedom. At the low end, if your
-funding's bad, you may need to do things for the money rather than genuine interest,
-like signing up for more teaching, taking part-time work outside of grad school, and so on.
+You don't do a PhD for the money, but money tends to correlate with freedom, and on
+that front friends in academia have told me *very* mixed things about funding. Some have said they
+felt they could do anything, while others have told me about grad students that had to spend
+most of their time teaching or doing part-time work outside of grad school to pay the bills.
 If you like teaching, that's great! But it shouldn't be your top priority during a PhD.
 
-If you have more funding, you can do more of what you want, but
-I think this is more about the number and nature of your funding sources rather than
-the absolute pay.
-If you're getting a stipend from your professor, grants from things like the
-NSF fellowship, and the grants are general in scope, then you're less tied to any
-single one.
+The main constant thread I've heard is that PhD students should try to get as much unconditional
+funding as they can. Usually, this means fellowships from NSF or other places. Having your
+advisor as your sole source of funding is a risk because that money is coming from a grant,
+which comes from a proposal, and there's a chance you'll need to do work that matches the
+proposal rather than the research you're supposed to be doing. A good advisor tries to shield
+their grad students from this by getting flexible grants, but it depends on the professor.
 
-Industry labs have one source of funding (the company), and it'll pay more than any
-PhD program. You won't have radical freedom, but you also won't have to think about
-side hustles.
+In contrast, industry labs have one source of funding (the company), and it'll pay more than any
+PhD program. You won't have to think about side hustles, and will probably get to focus on
+research more, but you won't have radical freedom, and it's possible your company will lay-off your
+research lab without much recourse. To give recent examples,
+Microsoft closed their Silicon Valley research lab in 2014, and in 2020 UberAI downsized and Alphabet
+shut down Loon. The freedom's not obviously better than a PhD, but it's not obviously worse either.
 
 
 Social Life
 --------------------------------------------------------------------------
 
-This is pretty clearly worse. I'm more of an introvert, and didn't
+I'm more of an introvert, and didn't
 talk to a lot of people growing up. I'm not depressed or unhappy by any means.
 Through practice, I've developed a long, winding maze of entertainment and side projects
 that keep me busy if I don't have the energy to catch up with friends. The problem is that the maze
 is too effective, sometimes it takes a long time to get out, and when I do I usually
 wish I had exited the maze sooner and socialized more.
 
-University life shakes that maze in a way that working life doesn't.
+Undergrad life shook that maze in a way that working life didn't.
 When everyone lives near campus, everyone goes to campus whenever an event's happening,
 and you can serendipitously run into friends in the street, it's just a lot easier to meet people
 and hang out.
 
 Those things happen in industry too (there's a reason water cooler chat is a thing), it just doesn't
-happen to the same degree. Also, the demographics are different. I just find it easier to hang out
-with people in the same age bracket as me, probably because the Internet's corrupted me into
-a sea of memes. Age-wise it's a lot more diverse out of school, which is cool for learning different
-perspectives, but I find it harder to relate when people talk about their kids, or buying a new house.
+happen to the same degree. The demographics are also different. I find it harder to relate when
+people talk about their kids, or buying a new house.
 
-Note that in grad school, you'll take fewer classes, and will spend more time in your lab,
-so you won't get the chance to meet as many people as you would in undergrad. I still think your
-socializing will be better on average than working at a company.
+Based on talking to friends, everyone socializes less after undergrad. If you go into industry, you'll mostly
+see people on your team.If you go to grad school, you'll take fewer classes and mostly be spending
+time in your lab. In both cases you get fewer chances to meet new people. I think the largest
+factor is going to be whether you live in a city, or near people who like to host events, and
+industry vs grad school is secondary.
 
 
 Research Reputation
@@ -219,14 +239,22 @@ But word of mouth isn't permanent. It's tied to the people you work with and the
 work at. People change jobs, fortunes turn, and if everyone who knows you leaves, then you're
 left with nothing.
 
-It certainly isn't worthless! It helps to be "the dude who knows how X works". But word alone
-is not enough, because lots of people "know a guy", and this means nothing unless the person
-hiring you (hiring manager, professor, etc.) knows how calibrated the recommender is.
-[Don't End the Week With Nothing](https://training.kalzumeus.com/newsletters/archive/do-not-end-the-week-with-nothing)
-is a nice thesis of why it is important to have concrete, visible proof of your skills.
+Word of mouth *can* be very useful, if you have it from the right person. If a well-known
+professor is willing to vouch for you, that means a lot, because they've seen many prospective
+students, are calibrated on what a good researcher looks like, and it's common knowledge that
+they're calibrated. That means they can make pretty strong cases in your favor if they think you
+deserve them, and is why recommendations are important when applying for PhD programs. A
+recommendation from an industry lab higher-up can be good for similar reasons.
 
-If you're confident you want to keep doing research for the rest of your life, you want to
-publish. And getting a PhD is a surefire way to force you to publish. It'll be tough and painful, and
+Outside of these cases, most recommendations don't mean much. Being known as "the dude who
+knows X well" is nice, but word alone is not enough, because lots of people "know a guy",
+that recommendation only means something if the person hiring you knows how calibrated the
+recommender is, and they only know the calibration if the recommender is pretty well-known.
+Word of mouth has a short reach.
+
+If you're confident you want to keep doing research for the rest of your life, you want to have
+concrete, visible proof of your skills. For research, that means publishing,
+snd getting a PhD is a surefire way to force you to publish. It'll be tough and painful, and
 your papers may not be the best, but they'll be out there, and once the papers are out there,
 no one can take them away from you.
 
@@ -246,12 +274,13 @@ this blog is probably the biggest reputation boost I have. My [post about deep R
 and I'd like to think it helps get my foot in the door.
 
 My reputation would have probably been equal if I
-had gone to a PhD program, because I would have written for this blog either way and evidently
+had gone to a PhD program, because I would have written for this blog either way, and evidently
 it's the main reason people know who I am. My takeaway is that more people should
 start blogs! I don't know why they don't.
 Maybe they're
 too busy writing papers or something 😛. Jokes on
-them, I get to use emojis and they don't.
+them, I get to use emojis and they don't. If I didn't have this blog, my reputation would probably be a bit better
+in a PhD program.
 
 
 Research Ability
@@ -358,12 +387,9 @@ take something seismic for me to change my mind.
 The standard advice for rising undergrads is that they should mentally downweigh their enthusiasm
 for grad school: if you're very excited about grad school, you should only be moderately excited,
 and if you're unsure about it, then you shouldn't go. I still agree with this, but I probably would have
-gotten *more* enthusiastic about research if I had gone to grad school. **This is not normal,**
-and even if it worked out for me, I would not recommend using a PhD to figure out your life.
+gotten *more* enthusiastic about research if I had gone to grad school. **This is not normal.**
+Even if I think doing a PhD would have worked out for me, I would never recommend using a PhD to figure
+out your life.
 
 If you can get an offer out of undergrad for a good industry lab, and know you'll get a chance
-to publish, it's a compelling offer and I would take it seriously. It worked out for me.
-I personally think I was
-very lucky to get the offer I did. 2015-2016 was a crazy year for deep learning. AlphaGo
-had just won against Lee Sedol, OpenAI was founded, companies were going crazy on hiring,
-and I was in the right place at the right time.
+to publish, it's a compelling offer and I would take it seriously.
