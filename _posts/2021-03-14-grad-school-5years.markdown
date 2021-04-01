@@ -25,7 +25,7 @@ problems.
 
 It's been 5 years since I
 decided not to apply to a PhD program, and 5-6 years is about the length of
-a computer science PhD. There's a nice symmetry there, so I figured I'd write an
+a computer science PhD. There's a nice parallel there, so I figured I'd write an
 update on how things have gone, in case people in a similar position find it useful.
 
 
@@ -77,7 +77,8 @@ I was in the same weight class of research ability as my peers. My undergrad
 research was never good enough to publish.
 Meetings felt like I was desperately
 trying not to drown in new topics. It was all a bit much.
-Friends in my year said they thought I'd do well in grad school, and I disagreed.
+When I talked to friends in my year, they reassured me and said I'd do well in grad school.
+I disagreed.
 
 In hindsight...I'm not sure if they were *right*, but they weren't wrong. I'm
 more calibrated on my abilities now and think I definitely could have kept up,
@@ -153,22 +154,25 @@ my work and changes in the research landscape makes it easier to keep going.
 I'm guessing my interest is higher than it would have been if I went to grad school.
 The papers I was on that made a big splash were from large projects with 10+ authors. Those
 don't tend to come out of academic ML labs. In a PhD setting, I likely would have worked on more
-papers, each with smaller impact, and that would have been less fulfilling.
+papers that each had smaller impact, and that would have been less fulfilling.
 
 
 Money and Freedom
 ------------------------------------------------------------------------------
 
-I definitely get paid more in industry. Money isn't my first priority,
-but I'm not going to ignore it. If you only care about the money, doing an ML PhD just doesn't
-make sense. You can make good money as an ML engineer / data scientist. Spending 5-6
-years on a PhD stipend is not going to make up for that unless you discover something
-[revolutionary that starts a bidding war.](https://www.wired.com/story/secret-auction-race-ai-supremacy-google-microsoft-baidu/)
+Money isn't my first priority, but I'm not going to ignore it.
 
-You don't do a PhD for the money, but money tends to correlate with freedom, and on
-that front friends in academia have told me *very* mixed things about funding. Some have said they
-felt they could do anything, while others have told me about grad students that had to spend
-most of their time teaching or doing part-time work outside of grad school to pay the bills.
+If you only care about the money, doing an ML PhD just doesn't
+make sense.
+Unless you discover something [revolutionary that starts a bidding war](https://www.wired.com/story/secret-auction-race-ai-supremacy-google-microsoft-baidu/),
+5-6 years of ML engineer / data scientist salary + compounding returns from investing that
+in index funds will get you more than most post-PhD jobs.
+
+You don't do a PhD for the money, but money tends to correlate with freedom, and it's common
+for people to do a PhD to get the freedom to research what they find interesting and important.
+On that front, friends in academia have told me *very* mixed things. Some told me they felt they
+could do anything, while others told me about labmates who
+had to spend most of their time teaching or doing part-time work outside of grad school to pay the bills.
 If you like teaching, that's great! But it shouldn't be your top priority during a PhD.
 
 The main constant thread I've heard is that PhD students should try to get as much unconditional
@@ -176,14 +180,20 @@ funding as they can. Usually, this means fellowships from NSF or other places. H
 advisor as your sole source of funding is a risk because that money is coming from a grant,
 which comes from a proposal, and there's a chance you'll need to do work that matches the
 proposal rather than the research you're supposed to be doing. A good advisor tries to shield
-their grad students from this by getting flexible grants, but it depends on the professor.
+their grad students from this by getting uncondtional grants, but it depends on the professor.
 
-In contrast, industry labs have one source of funding (the company), and it'll pay more than any
+In contrast, industry labs have one source of funding (the company), and they'll pay more than any
 PhD program. You won't have to think about side hustles, and will probably get to focus on
 research more, but you won't have radical freedom, and it's possible your company will lay-off your
 research lab without much recourse. To give recent examples,
 Microsoft closed their Silicon Valley research lab in 2014, and in 2020 UberAI downsized and Alphabet
 shut down Loon. The freedom's not obviously better than a PhD, but it's not obviously worse either.
+There's a wide range of overlap between the two distributions, and I only feel confident about saying this:
+academia is biased towards freedom more than industry labs, so if you compare PhD programs and industry
+labs of similar strength, expect the PhD program to have more freedom on average. If you are comparing
+things of different strength
+
+(REWORD THIS PART, it's tricky and I'm not sure what's true...)
 
 
 Social Life
@@ -308,23 +318,23 @@ are very broad theses, more of the research direction is already sketched out by
 team lead.
 That leaves less research direction for you to figure out.
 
-On the other hand,
-in industry your peer group will have more people who *could* give you research mentorship. Basically,
-in a PhD program, you have your advisor and then a bunch of grad students trying
-to learn how to do research. If your advisor has time, great! If they don't,
-you might be stuck figuring it out your labmates. Based on talking to research scientists at
-Brain, the latter seems more common. If you're stuck figuring it out with your
-labmates, then industry labs employ people who've finished their PhDs, so your labmates can be
-better advisors.
+On the other hand, it's possible your advisor in a PhD program doesn't mentor
+you either! Based on talking to research scientists at Brain, a surprising number have said
+their professors were too busy to help them much, compared to their labmates. And
+if you're stuck figuring it out with your labmates, then your labmates in
+an industry lab will include people who've finished a PhD. Fewer people are *obligated* to
+give you mentorship, but more people *could* give you mentorship.
 
+The obvious answer is, "make sure your boss / advisor will be good before making
+a decision", but that's easier said than done.
 Everyone I know who's left Google did so because
 they didn't get along with their manager, and to me it feels like a cosmic roll of the dice
 whether that happens or not. The grad student $$\rightarrow$$ advisor relationship is a better
 roll of the dice, since visit days give you a chance to talk to the grad students mentored by
-your potential advisor, but that doesn't feel like it guarantees the advising relationship
+your potential advisor, but I don't think it guarantees the advising relationship
 will work out.
 
-I got lucky and had mentors who encouraged me to consider
+I got lucky and had mentors in industry who encouraged me to consider
 where the field was going. I think on expectation, my research ability would be about the same if I
 was in a PhD program, but there would be high variance on how it played out.
 
