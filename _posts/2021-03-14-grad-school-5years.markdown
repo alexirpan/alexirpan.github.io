@@ -61,7 +61,8 @@ not weird in that way.
 
 Additionally, professor recommendations are a large part of PhD applications.
 Your research skills may not decay that quickly, but your professor's memory of
-those skills might.
+those skills might. For that reason, it's better to apply first and defer the offers
+you get if you want to keep your options open.
 
 Right now, I feel I can achieve my goals without going back
 to get a PhD, and although formally having the degree would be nice, I don't
@@ -168,32 +169,36 @@ Unless you discover something [revolutionary that starts a bidding war](https://
 5-6 years of ML engineer / data scientist salary + compounding returns from investing that
 in index funds will get you more than most post-PhD jobs.
 
-You don't do a PhD for the money, but money tends to correlate with freedom, and it's common
-for people to do a PhD to get the freedom to research what they find interesting and important.
+You don't do a PhD for the money, but money tends to correlate with freedom. One of the reasons
+people apply to PhD programs is to get the freedom to research what they find interesting and
+important.
 On that front, friends in academia have told me *very* mixed things. Some told me they felt they
 could do anything, while others told me about labmates who
-had to spend most of their time teaching or doing part-time work outside of grad school to pay the bills.
-If you like teaching, that's great! But it shouldn't be your top priority during a PhD.
+had to teach courses they didn't want to teach or do part-time work outside of grad school to pay the bills.
 
-The main constant thread I've heard is that PhD students should try to get as much unconditional
-funding as they can. Usually, this means fellowships from NSF or other places. Having your
-advisor as your sole source of funding is a risk because that money is coming from a grant,
-which comes from a proposal, and there's a chance you'll need to do work that matches the
+The common thread I've heard is that PhD students should try to get as much unconditional
+funding as possible. Usually, this means fellowships from NSF or other places. Having your
+advisor as your sole source of funding is a risk, because that money comes from grants,
+which are tied to proposals, and there's a chance you'll need to do work that matches the
 proposal rather than the research you're supposed to be doing. A good advisor tries to shield
 their grad students from this by getting uncondtional grants, but it depends on the professor.
+Having more unconditional grants can help you get out of bad situations.
 
-In contrast, industry labs have one source of funding (the company), and they'll pay more than any
-PhD program. You won't have to think about side hustles, and will probably get to focus on
-research more, but you won't have radical freedom, and it's possible your company will lay-off your
+In contrast, industry labs have one source of funding (the company), and it'll pay enough that you
+won't need to think about side hustles. You will probably get to focus on research more, but you
+won't have radical freedom. I remember a dinner at NeurIPS, where a professor said that sometimes
+the best thing for a grad student is to have them go read textbooks for 9 months to learn all the
+math foundation they need for their research interests. This is the sort of thing you can do
+in academia, that you can't really do in industry.
+
+It's also possible that your company will lay-off your
 research lab without much recourse. To give recent examples,
-Microsoft closed their Silicon Valley research lab in 2014, and in 2020 UberAI downsized and Alphabet
-shut down Loon. The freedom's not obviously better than a PhD, but it's not obviously worse either.
-There's a wide range of overlap between the two distributions, and I only feel confident about saying this:
-academia is biased towards freedom more than industry labs, so if you compare PhD programs and industry
-labs of similar strength, expect the PhD program to have more freedom on average. If you are comparing
-things of different strength
+in 2014 Microsoft closed their entire Silicon Valley research lab. In 2020, UberAI downsized and Alphabet
+shut down Loon.
 
-(REWORD THIS PART, it's tricky and I'm not sure what's true...)
+The freedom in an industry lab isn't obviously worse than a PhD. A person with stable funding in an
+industry lab likely has more research freedom and time than a PhD student with unstable funding.
+On average though, I'd say that PhD programs have the edge.
 
 
 Social Life
@@ -363,10 +368,15 @@ revenue generating. In those scenarios, it's important for the company to hire t
 stay on the cutting edge.
 
 I would probably be doing more theory if I had gone to a PhD program. My research interests
-aren't perfectly aligned with my day-to-day work, but it's not that different and I'm willing to
+aren't perfectly aligned with my day-to-day work, but they're reasonably aligned and I'm willing to
 take the trade-offs it comes with. The good part of robot learning is that getting things to work
 in the real world makes you directly hit hard, interesting problems that have to be solved for ML research to be
 useful. The bad part is that you have to deal with the real world.
+
+Figuring out a research direction is one of the most helpful deciding factors when choosing
+between industry and research. The subfield you pick affects the number of job openings industry
+will have for you. If you want to work in a less popular subfield, academia may be your only option.
+It's up to you how much you're willing to bend.
 
 
 Type of Work Done
@@ -380,12 +390,69 @@ installation...you'll also usually do it yourself.
 
 When I talk to people considering skipping a PhD, a common worry they have is that if they join
 an industry research lab, they'll be expected to do more software engineering work and less research.
-I do think it's more likely you'll do more grunt SWE work if you don't have a PhD, but 1) it depends
-on the team, and 2) even if you have a PhD, you'll probably do grunt SWE work.
-
-I've said this before, but research tools will always feel deficient, because your research will
+The first piece of advice I'd give is that even if you have a PhD, you'll probably do grunt SWE work.
+Research tools will always feel deficient, because your research will
 uncover new problems, and it's unlikely the perfect tool exists for a problem no one but you has
 seen before. A PhD will not save you - you will be debugging garbage your entire life.
+
+The second piece of advice is that I think getting boxed into non-research work is a real, valid
+concern. Unfortunately, every industry lab is different, so I don't have much advice besides
+asking friends who work in those labs, if you know any. In my experience, if you like a project,
+you probably won't mind the SWE work, so I'd optimize for that first.
+
+Coming in through the AI residency program meant I did research from day 1, and by the end of that
+year I had convinced enough people to keep getting central roles in future research projects.
+However, I've also done a lot of SWE work for each project, because they usually involved
+large distributed systems that were tricky to understand, build, and debug. I think my day-to-day
+work would have been similar in academia, I'd just be debugging different kinds of distributed
+systems.
+
+
+Skills Learned
+---------------------------------------------------------------------------------------
+
+In an industry lab, you'll learn software engineering best practices. Or rather, you'll be
+forced to do code reviews, write unit tests, etc., because otherwise your code isn't getting
+checked into the repository.
+
+Most PhD programs don't do this. I understand why, but...okay, I'm going to rant for a bit.
+Pardon the side track.
+
+Research code is, as a rule, not very good. I used to think this was fine and even
+desirable. I no longer think this is true.
+
+There is this longstanding idea that research code is bad because researchers don't know if
+their ideas will work. If the idea doesn't work out, then time spent cleaning up the
+implementation is wasted, compared to spending the time on new ideas. I 100% agree with
+this, all the very good researchers I know try lots of ideas. (Pure volume isn't enough,
+they try their ideas with purpose, but they try a lot of ideas with purpose.)
+
+My issue is that people take this too far. Look, writing beautiful code takes time. Writing
+*legible* code does not take much more time. Cleaner code (with real variable names)
+reduces the complexity of the mental model of your code, which makes it easier to catch bugs.
+This is especially important in machine learning, where bugs don't surface as compiler
+errors, they surface as 20% drops in performance that could come from bugs, or bad data,
+or a bad model, and you want to make sure that bugs are easy to quickly disprove. *It
+will save time in the long run, even if you're the only one who looks at your research code,* and if you
+ever work with collaborators, they'll thank you. This is especially true if your
+collaborator is future-you, replying to a reviewer rebuttal asking for a new experiment
+2 months after you've looked at any of your paper's code.
+
+You'll get better at coding in an industry lab. It's a bit of an osmosis thing - you're
+embedded in a company with non-researcher SWEs and will happen to pick up good habits from them.
+And this will make you a better researcher.
+
+Now on the flip side, you're not going to teach many classes in industry. Depending on the
+company, you have the chance to teach some, but you'll have many more chances in academia.
+And teaching will also make you a better researcher, because it will force you to clarify
+ideas until newcomers can understand them, which is the exact skill you need when writing papers.
+
+Academia will also provide more mentorship opportunities. In academia, the totem pole
+is professor > postdoc > grad student > undergrad. Going to a PhD program means you aren't on the
+bottom anymore, and you'll get to mentor undergrads that are looking to get into research.
+Whereas in industry, if you join out of undergrad, you're entering at the bottom of the totem
+pole again and will have fewer mentoring opportunities until the interns come, which is a seasonal
+thing.
 
 
 Conclusion
@@ -397,7 +464,7 @@ right choice.
 I also don't have any plans to go back to academia. I'm not saying it'll never happen, but it would
 take something seismic for me to change my mind.
 
-The standard advice for rising undergrads is that they should mentally downweigh their enthusiasm
+The standard advice for students near the end of undergrad is that they should mentally downweigh their enthusiasm
 for grad school: if you're very excited about grad school, you should only be moderately excited,
 and if you're unsure about it, then you shouldn't go. I still agree with this, but I probably would have
 gotten *more* enthusiastic about research if I had gone to grad school. **This is not normal.**
