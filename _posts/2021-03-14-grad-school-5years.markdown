@@ -247,7 +247,7 @@ the Real World Reinforcement Learning workshop, ["if there is one piece of machi
 learning that's going to crash, it's going to be reinforcement learning"](https://slideslive.com/38917654/a-real-world-reinforcement-learning-revolution).
 Unfortunate for me, given what problems I find interesting!
 
-There's two kinds of research reputation: word of mouth, and publications. Word of mouth
+There's two kinds of research reputation: word of mouth, and influence through publications. Word of mouth
 is easier to get. You can give a good talk, make an impression on someone when
 you mingle at a conference, or contribute useful ideas during a research brainstorm within your lab.
 But word of mouth isn't permanent. It's tied to the people you work with and the institution you
@@ -268,8 +268,10 @@ recommender is, and they only know the calibration if the recommender is pretty 
 Word of mouth has a short reach.
 
 If you're confident you want to keep doing research for the rest of your life, you want to have
-concrete, visible proof of your skills. For research, that means publishing,
-snd getting a PhD is a surefire way to force you to publish. It'll be tough and painful, and
+concrete, visible proof of your skills. For research, that means publishing. h-index isn't
+a prefect metric, but people do care about it when hiring. Getting a higher h-index requires
+having lots of papers, snd getting a PhD is a surefire way to force you to publish.
+It'll be tough and painful, and
 your papers may not be the best, but they'll be out there, and once the papers are out there,
 no one can take them away from you.
 
@@ -286,7 +288,8 @@ is good for driving the field, but the papers that come out of them are often tr
 paper" or "the Uber paper", rather than "the paper by X & Y".
 Funnily enough,
 this blog is probably the biggest reputation boost I have. My [post about deep RL]({% post_url 2018-02-14-rl-hard %}) is still my most viewed post,
-and I'd like to think it helps get my foot in the door.
+and I'd like to think it helps get my foot in the door. In the end, what matters is influence
+on the research community, which is tied to citations but also acheivable via other means.
 
 My reputation would have probably been equal if I
 had gone to a PhD program, because I would have written for this blog either way, and evidently
@@ -330,18 +333,21 @@ if you're stuck figuring it out with your labmates, then your labmates in
 an industry lab will include people who've finished a PhD. Fewer people are *obligated* to
 give you mentorship, but more people *could* give you mentorship.
 
-The obvious answer is, "make sure your boss / advisor will be good before making
-a decision", but that's easier said than done.
+If you figure out whether your boss / advisor will be good before making
+a decision, that solves everything, but doing so is easier said than done.
 Everyone I know who's left Google did so because
 they didn't get along with their manager, and to me it feels like a cosmic roll of the dice
-whether that happens or not. The grad student $$\rightarrow$$ advisor relationship is a better
-roll of the dice, since visit days give you a chance to talk to the grad students mentored by
-your potential advisor, but I don't think it guarantees the advising relationship
-will work out.
+whether that happens or not. Getting a good advisor is a similar roll, except with higher stakes
+- a PhD advisor has more power than a manager does.
+
+I think the grad student $$\rightarrow$$ advisor relationship can be felt out more if you
+make good use of visit days. The trick is to ask the PhD students, rather than the professor.
+So you do have slightly better odds. That level of access is harder to get when considering
+industry offers, unless you're good at being persistent with recruiters.
 
 I got lucky and had mentors in industry who encouraged me to consider
 where the field was going. I think on expectation, my research ability would be about the same if I
-was in a PhD program, but there would be high variance on how it played out.
+was in a PhD program, but there would be high variance on how it could've played out.
 
 
 Research Direction
@@ -398,7 +404,7 @@ seen before. A PhD will not save you - you will be debugging garbage your entire
 The second piece of advice is that I think getting boxed into non-research work is a real, valid
 concern. Unfortunately, every industry lab is different, so I don't have much advice besides
 asking friends who work in those labs, if you know any. In my experience, if you like a project,
-you probably won't mind the SWE work, so I'd optimize for that first.
+you won't mind the grunt work as much, so I'd optimize for that first.
 
 Coming in through the AI residency program meant I did research from day 1, and by the end of that
 year I had convinced enough people to keep getting central roles in future research projects.
@@ -428,22 +434,23 @@ this, all the very good researchers I know try lots of ideas. (Pure volume isn't
 they try their ideas with purpose, but they try a lot of ideas with purpose.)
 
 My issue is that people take this too far. Look, writing beautiful code takes time. Writing
-*legible* code does not take much more time. Cleaner code (with real variable names)
+*legible* code does not take much more time. Using real variable names and adding useful
+comments
 reduces the complexity of the mental model of your code, which makes it easier to catch bugs.
 This is especially important in machine learning, where bugs don't surface as compiler
-errors, they surface as 20% drops in performance that could come from bugs, or bad data,
-or a bad model, and you want to make sure that bugs are easy to quickly disprove. *It
-will save time in the long run, even if you're the only one who looks at your research code,* and if you
+errors, they surface as 20% drops in performance. Since that performance drop could come
+from bugs, or bad data, or a bad model, you want to make sure that bugs are easy to quickly disprove. *Doing
+some code cleanup  will save time in the long run, even if you're the only one who looks at your research code,* and if you
 ever work with collaborators, they'll thank you. This is especially true if your
-collaborator is future-you, replying to a reviewer rebuttal asking for a new experiment
-2 months after you've looked at any of your paper's code.
+collaborator is future-you trying to run an experiment for a reviewer rebuttal 2 months after you've
+touched any of the relevant code.
 
-You'll get better at coding in an industry lab. It's a bit of an osmosis thing - you're
-embedded in a company with non-researcher SWEs and will happen to pick up good habits from them.
-And this will make you a better researcher.
+You'll get better at coding in an industry lab, and this will make you a better researcher.
+It's an osmosis thing - even if no one teaches you good habits, you're
+embedded in a company with non-researcher SWEs and will naturally acquire good habits.
 
 Now on the flip side, you're not going to teach many classes in industry. Depending on the
-company, you have the chance to teach some, but you'll have many more chances in academia.
+company, you may have the chance to teach some, but you'll have many more chances in academia.
 And teaching will also make you a better researcher, because it will force you to clarify
 ideas until newcomers can understand them, which is the exact skill you need when writing papers.
 
@@ -451,8 +458,15 @@ Academia will also provide more mentorship opportunities. In academia, the totem
 is professor > postdoc > grad student > undergrad. Going to a PhD program means you aren't on the
 bottom anymore, and you'll get to mentor undergrads that are looking to get into research.
 Whereas in industry, if you join out of undergrad, you're entering at the bottom of the totem
-pole again and will have fewer mentoring opportunities until the interns come, which is a seasonal
-thing.
+pole and will have fewer mentoring opportunities until interns come, which is a seasonal
+thing. If you really value research mentorship, you probably want a faculty position, in which
+case you should go for a PhD.
+
+Personally, I believe in all of coding, teaching, and mentorship, but right now my time is
+more weighted to coding + teaching, where teaching means writing blog posts.
+In a PhD program, it'd likely be weighted towards teaching +
+mentorship, where teaching means TAing a class. And then the research skills learned would be
+similar between the two.
 
 
 Conclusion
