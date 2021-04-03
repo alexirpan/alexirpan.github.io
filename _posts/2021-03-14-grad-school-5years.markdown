@@ -48,6 +48,7 @@ experience is typical. The space of outcomes is too big. Even if you can't relat
 my experience, I hope it conveys the *potential* outcomes enough to be useful.
 My aim for this post is
 to convey the *potential* outcomes.
+* For that reason, this post is long. Sorry. I tried to make it shorter and I failed.
 
 
 Desire to do a PhD
