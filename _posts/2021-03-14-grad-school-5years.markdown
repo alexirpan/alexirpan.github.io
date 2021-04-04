@@ -23,8 +23,9 @@ now work on the Robotics team. I primarily work on
 applying imitation learning and reinforcement learning to robot manipulation
 problems.
 
-It's been 5 years since I
-decided not to apply to a PhD program, and 5-6 years is about the length of
+I don't have regrets about deciding to skip a PhD. Given what I knew about myself at the time,
+it was the right choice.
+But it's been 5 years since then, and 5-6 years is about the length of
 a computer science PhD. There's a nice parallel there, so I figured I'd write an
 update on how things have gone, as well as how my life may have differed if I did a PhD
 instead.
@@ -48,7 +49,7 @@ I had done a generic SWE job instead.
 experience is **wildly** different. My experience won't be typical because no one's
 experience is typical. The space of outcomes is too big. Even if your outcome doesn't
 line up with mine, I hope this post conveys the *potential* outcomes.
-* For that reason, this post is long. Sorry. I tried to make it shorter and I failed.
+* Conveying those outcomes made this post long. Sorry. I tried to make it shorter and I failed.
 
 
 Research Confidence
@@ -466,31 +467,30 @@ to a university near a city or not, rather than industry vs grad school.
 So, Should You Do a PhD?
 ---------------------------------------------------------------------------------------
 
-I don't have regrets about my decision. Given what I knew about myself at the time, it was the
-right choice.
-
-I also don't have any plans to go back to academia. I'm not saying it'll never happen, but it would
-take something seismic for me to change my mind. Here's a summary of the previous sections.
-
+Section | Verdict
+-----------|-----------------
 Research Confidence | About equal
 Research Interest | Higher from industry
-Research Reputation | about equal
+Research Reputation | About equal
 Research Ability | About equal, but high variance
 Money | Much better
-Freedom | Slightly better in PhD program (but might depend on getting into a top tier CS program to outdo current freedom)
-Research Direction | Slightly skewed but still pretty aligned
+Freedom | Slightly worse than PhD program (if I got into top tier school)
+Research Direction | Slightly misaligned but not by a lot
 Day-to-day work | Similar
 Non-research skills | Less mentoring, more coding
 Social Life | Very dependent on location, hard to say
 
-After totalling this up, I'd say I came out ahead by skipping a PhD. However, it's easy for me to see
-the decision shifting if I changed how I weighted some of the axes.
-Right now, I feel I can achieve my goals without going back
-to get a PhD, and although formally having the degree would be nice, I'm going to keep trying to
+After totalling this up, I'd say I came out ahead by skipping a PhD.
+I don't have any plans to go back to academia. I'm not saying it'll never happen, but
+right now I feel I can achieve my goals without going back to get a PhD.
+Formally having the degree would be nice, but I'm going to keep trying to
 get what the degree represents through industry research instead.
 
-The common wisdom is that you can jump back to a PhD after 1 year in industry,
-and it gets exponentially less likely after that.
+Although it worked out for me, I can easily see why someone would choose to go back. It's
+all about the weighting of each feature and my weights happen to end with not going back.
+
+The common wisdom is that going from industry to PhD is straightforward after 1 year, and
+exponentially less likely afterwards.
 This is definitely true, but it's not because your research skills decay that quickly. It's
 that bandwagon effects are real. You're going from an environment where many people
 are considering PhD programs, to one where most people have no plans to
