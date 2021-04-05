@@ -241,7 +241,7 @@ If a professor doesn't do this, then they aren't a good advisor,
 and professors want to be good advisors. It's how they get *their* reputation.
 
 No one is required to give you this mentorship in an industry lab. The more top-down the
-lab, the truer this is. Industry labs tend organize themselves around a grand vision, like
+lab, the truer this is. Industry labs tend to organize themselves around a grand vision, like
 "we can build a quantum computer", or "all AI needs is good scaling", and although these
 are very broad theses, more of the research direction is already sketched out by the
 team lead.
