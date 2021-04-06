@@ -43,7 +43,7 @@ deep learning. AlphaGo had just won against Lee Sedol, OpenAI was founded, and c
 going crazy on hiring. I personally think I was very lucky to get a research
 offer.
 Google had never done an AI residency before, so it was less competitive. I'm not sure
-I would have gotten in if I applied 1 year later, and things would be very different if
+I would have gotten in if I applied 1 year later, and things would be different if
 I had done a generic SWE job instead.
 * Researching this post has taught me that everyone's academic and industry lab
 experience is **wildly** different. My experience won't be typical because no one's
@@ -159,8 +159,18 @@ and now it's hard to get anywhere without at least a master's.
 Machine learning might also be in a bubble, in which case the change could come very
 suddenly. To quote John Langford at
 the Real World Reinforcement Learning workshop, ["if there is one piece of machine
-learning that's going to crash, it's going to be reinforcement learning"](https://slideslive.com/38917654/a-real-world-reinforcement-learning-revolution).
+learning which is going to crash, it's going to be reinforcement learning"](https://slideslive.com/38917654/a-real-world-reinforcement-learning-revolution).
 Unfortunate for me, given what problems I find interesting!
+
+<div id="presentation-embed-38917654"></div>
+<script src='https://slideslive.com/embed_presentation.js'></script>
+<script>
+    embed = new SlidesLiveEmbed('presentation-embed-38917654', {
+        presentationId: '38917654',
+        autoPlay: false, // change to true to autoplay the embedded presentation
+        verticalEnabled: true
+    });
+</script>
 
 There's two kinds of research reputation: endorsement, and influence through publications.
 Endorsements are easier to get. You can give a good talk, make an impression on someone when
@@ -184,6 +194,9 @@ calibrated. A letter from a software internship saying you're the best intern th
 had means little to a PhD program. A letter from a professor that just says "they're a genius"
 can be enough by itself. It was for [John Nash](https://academia.stackexchange.com/questions/29642/will-a-recommendation-letter-such-as-that-written-for-john-f-nash-be-convincing).
 
+![John Nash letter of recommendation](/public/grad-school-5years/johnnash.webp)
+{: .centered }
+
 If you're confident you want to keep doing research for the rest of your life, you need
 concrete, visible proof of your skills. For research, that means publishing. Using *h*-index as
 a filter isn't perfect, but it tracks enough that people use it all the time in hiring.
@@ -200,8 +213,10 @@ body of work. If I got there, no one would care I didn't formally have a PhD. Th
 qualify me for any faculty positions, but I was okay with that.
 
 That plan hasn't gone perfectly. I've been on some papers, but not that many.
-I've reviewed for conferences, but I get the feeling that the reviewer pool is so
-starved that organizers are asking anyone they can get to review for them. Working on big projects
+I've reviewed for conferences, but I get the feeling that the ML reviewer pool is so
+starved that organizers are continually scrambling for any reviewer they can get, so it doesn't
+mean much.
+Working on big projects
 is good for driving the field, but the papers that come out of them are often treated as "the Apple
 paper" or "the Uber paper", rather than "the paper by X & Y".
 
@@ -292,7 +307,7 @@ had to teach courses they didn't want to teach, or do research they didn't want 
 
 The common thread in those stories was that PhD students should get as much unconditional
 funding as possible. Students in good situations had NSF fellowships and enough unconditional grant money
-from their advisor to do whatever they wanted if they lived frugally. Students in bad situations had more of their funding from grants with narrow
+from their advisor to do whatever they wanted if they lived frugally. Students in bad situations had more of their funding come from grants with narrow
 proposals, requiring them to do work that matched the proposal rather than the research they
 were most interested in. Good advisors try to shield their grad students from these situations,
 but not all professors get unconditional grants.
@@ -301,7 +316,7 @@ In contrast, ML industry labs have one source of funding (the company), and it'l
 won't need to think about side hustles. You will probably have fewer responsibilities outside
 of research, but you won't have radical freedom. I remember a dinner at NeurIPS, where a professor said that sometimes
 the best thing for a grad student is to have them go read textbooks for 9 months to learn all the
-math foundation they need for their research interests. This is an example of the sort of thing you
+math foundation they need for their research interests. This is an example of something you
 can do in academia that you can't really do in industry.
 
 It's also possible that your company will lay-off your
@@ -342,7 +357,7 @@ Speaking more generally, the subfield you pick affects the number of job opening
 have for you. If you can't be happy unless you're in a niche subfield that industry doesn't value
 yet, academia might be your only option.
 
-Personally, my research interested aren't perfectly aligned with my day-to-day work, but it's
+Personally, my research interests aren't perfectly aligned with my day-to-day work, but it's
 aligned enough that I'm willing to bend in favor of the trade-offs it comes with.
 The good part of robot learning is that getting things to work
 in the real world makes you directly hit hard, interesting problems that have to be solved for ML research to be
@@ -350,7 +365,7 @@ useful. The bad part is that you have to deal with the real world.
 
 I'd probably have done more theory if I had gone to a PhD program, but it's hard to say whether
 that would have continued long-term, or if it would be a summer fling before going back to
-more practical work. Most likely, I'd be working on the same problems with a
+more practical work. Most likely, I'd be working on the same problems I am now with a
 different perspective on how to attack them.
 
 
@@ -364,6 +379,12 @@ Research tools will always feel deficient, because your research will
 uncover new problems, and it's unlikely the perfect tool exists for a problem no one but you has
 seen before. Doing a PhD will not save you - you will be debugging garbage your entire life.
 
+![xkcd debugging](/public/grad-school-5years/computer_problems.png)
+{: .centered }
+
+(from [xkcd](https://xkcd.com/722/))
+{: .centered }
+
 The second piece of advice is that I think getting boxed into non-research work is a real, valid
 concern. Unfortunately, every industry lab is different, so I can't recommend much besides
 asking friends who work in those labs, if you know any. In my experience, if you like a project,
@@ -371,7 +392,7 @@ you won't mind the grunt work as much, so I'd optimize for that first.
 
 Coming in through the AI residency program meant I did research from day 1, and by the end of that
 year I had convinced enough people to get research roles in future projects.
-However, I've also done a lot of SWE work for my projects, because they usually used
+However, I've also done a lot of SWE work for that research, because those projects often used
 large distributed systems that were tricky to understand, build, and debug. I think my day-to-day
 work would've been similar in academia, I'd just be debugging different sorts of distributed
 systems.
@@ -395,25 +416,34 @@ desirable. I no longer think this is true.
 
 There is this longstanding idea that research code is bad because researchers don't know if
 their ideas will work. If the idea doesn't work out, then time spent cleaning up the
-implementation is wasted, compared to spending the time on new ideas. I 100% agree with
-this, all the very good researchers I know try lots of ideas. (Pure volume isn't enough,
+implementation is wasted, compared to spending time on new ideas. I 100% agree with
+this. All the very good researchers I know try lots of ideas. (Pure volume isn't enough,
 they try their ideas with purpose, but they try a lot of ideas with purpose.)
 
 My issue is that people take this too far. Look, writing beautiful code takes time. Writing
-*legible* code does not. Using real variable names and adding useful
-comments
-reduces the complexity of the mental model of your code, which makes it easier to catch bugs.
+*legible* code does not. Real variable names and useful
+comments reduce the complexity of the mental model of your code, which makes it easier to catch bugs.
 This is especially important in machine learning, where bugs don't surface as compiler
-errors, they surface as 20% drops in performance. Since that performance drop could come
-from bugs, or bad data, or a bad model, you want to make sure that bugs are easy to quickly disprove. *Doing
-some code cleanup  will save time in the long run, even if you're the only one who looks at your research code,* and if you
-ever work with collaborators, they'll thank you. This is especially true if your
-collaborator is future-you trying to run an experiment for a reviewer rebuttal 2 months after you've
+errors, they surface as 20% drops in performance.
+
+![Dota 2 reward curve](/public/grad-school-5years/bug-comparison.png)
+{: .centered }
+
+(DotA 2 skill of [OpenAI Five](https://openai.com/blog/openai-five/), before and after fixing a bug where the agent was heavily *penalized*
+for reaching level 25.)
+{: .centered }
+
+Since performance drops could come
+from bugs, or bad data, or a bad model, you want to make sure bugs are easy to quickly disprove. *Doing
+some code cleanup  will save time in the long run, even if you're the only one who looks at your research code.*
+Your collaborators will thank you.
+This is especially true if your
+"collaborator" is future-you trying to run an experiment for a reviewer rebuttal 2 months after you've
 thought about any of the relevant code.
 
-Now, do you need code review to write good code? I don't think so. If you're a good PhD
-student, you're perfectly capable of being your own code reviewer. You just have to *actually
-do it.* Please.
+Now, do you need code review to write good code? I don't think so. Another set of eyes helps,
+but PhD students have good technical skills and are perfectly capable of reviewing their own code.
+Just, *actually do it.* Please.
 
 (end rant)
 
@@ -421,6 +451,12 @@ Now on the flip side, a PhD program may not teach you coding, but an industry jo
 let you teach a course. You may have some chances based on the company, but you'll have many
 more chances in academia. Teaching will also make you a better researcher, because it forces you
 to clarify ideas until newcomers can understand them, which is the exact skill you need when writing papers.
+
+![Why TA?](/public/grad-school-5years/phd_ta.gif)
+{: .centered }
+
+[from PhD Comics](http://phdcomics.com/comics/archive.php?comicid=1085)
+{: .centered }
 
 A PhD program will also provide more mentorship opportunities. In academia, the totem pole
 is professor > postdoc > grad student > undergrad. Going to a PhD program means you aren't on the
