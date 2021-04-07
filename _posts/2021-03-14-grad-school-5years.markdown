@@ -34,7 +34,7 @@ life may have differed if I had done a PhD instead.
 Disclaimers
 ---------------------------------------------------------------------
 
-* This is based off what I believe grad school is like,
+* This is based on what I believe grad school is like,
 but my model could be incorrect.
 * This is specific to machine learning PhDs. ML is in a very unique position
 that doesn't generalize to other fields. Extrapolate with caution.
@@ -133,7 +133,7 @@ my work and changes in the research landscape makes it easier to keep going.
 I'm guessing my interest is higher than it would have been if I went to grad school.
 The papers I was on that made big splashes were from large projects with 10+ authors. Those
 don't tend to come out of academic ML labs. In a PhD setting, I likely would have worked on more
-papers that each had smaller impact, and although that might add up to a large total impact,
+papers that each had a smaller impact, and although that might add up to a large total impact,
 it would have been less fulfilling because I wouldn't notice it as easily.
 
 
@@ -298,7 +298,7 @@ Money isn't my first priority, but I'm not going to ignore it.
 If you only care about the money, doing an ML PhD just doesn't
 make sense.
 Unless you discover something [revolutionary that starts a bidding war](https://www.wired.com/story/secret-auction-race-ai-supremacy-google-microsoft-baidu/),
-5-6 years of ML engineer / data scientist salary + compounding returns from investing that
+5-6 years of ML engineer / data scientist salary + compounding returns from investing
 in index funds will get you more than most post-PhD jobs.
 
 You don't do a PhD for the money, but money tends to correlate with freedom, which is one reason
@@ -428,17 +428,20 @@ My issue is that people take this too far. Look, writing beautiful code takes ti
 *legible* code does not. Real variable names and useful
 comments reduce the complexity of the mental model of your code, which makes it easier to catch bugs.
 This is especially important in machine learning, since bugs don't surface as compiler
-errors, they surface as mysterious 20% drops in performance.
+errors, they surface as mysterious 20% drops in performance in a pipeline that mostly works.
 
-![Dota 2 reward curve](/public/grad-school-5years/bug-comparison.png)
-{: .centered }
+<p class="centered">
+<img style="width:75%" src="/public/grad-school-5years/bug-comparison.png" alt="Dota 2 reward curve">
+</p>
 
-(DotA 2 skill of [OpenAI Five](https://openai.com/blog/openai-five/), before and after fixing a bug where the agent was heavily *penalized*
+(Learning curve of [OpenAI Five](https://openai.com/blog/openai-five/), before and after fixing a bug where the agent was heavily *penalized*
 for reaching level 25.)
 {: .centered }
 
-Since performance drops could come
-from bugs, or bad data, or a bad model, you want to make sure bugs are easy to quickly disprove. *Doing
+Since
+[performance drops could come from bugs, or bad data, or a bad model](http://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html),
+you want to make sure bugs are easy to quickly prove or disprove, since those can be fixed the
+fastest. *Doing
 some code cleanup  will save time in the long run, even if you're the only one who looks at your research code.*
 Your collaborators will thank you.
 This is especially true if your
@@ -455,6 +458,7 @@ A PhD program may not teach you coding, but on the flip side, an industry job li
 let you teach a course. You may have some chances based on the company, but you'll have many
 more chances in academia. Teaching will also make you a better researcher, because it forces you
 to clarify ideas until newcomers can understand them, which is the exact skill you need when writing papers.
+Not to mention it can be rewarding by itself.
 
 ![Why TA?](/public/grad-school-5years/phd_ta.gif)
 {: .centered }
@@ -463,7 +467,7 @@ to clarify ideas until newcomers can understand them, which is the exact skill y
 {: .centered }
 
 A PhD program will also provide more mentorship opportunities. In academia, the totem pole
-is professor > postdoc > grad student > undergrad / master's students. Going to a PhD program means you aren't on the
+is professor > postdoc > grad student > undergrad or master's students. Going to a PhD program means you aren't on the
 bottom anymore, and you'll get to mentor undergrads that want to try research.
 Whereas in industry, if you join out of undergrad, you're entering at the bottom of the totem
 pole and will have fewer mentoring opportunities until interns come, which is a seasonal
@@ -507,18 +511,56 @@ to a university near a city or not, rather than industry vs grad school.
 So, Should You Do a PhD?
 ---------------------------------------------------------------------------------------
 
-Section | Verdict
------------|-----------------
-Research Confidence | About equal
-Research Interest | Higher from industry
-Research Reputation | About equal
-Research Ability | About equal, but high variance
-Money | Much better
-Freedom | Slightly worse (compared to top CS program)
-Research Direction | Slightly misaligned, but not by much
-Day-to-day work | Similar
-Non-research skills | Less mentoring, more coding
-Social Life | Very dependent on location, hard to say
+<table style="margin-left: auto; margin-right: auto; border-collapse: collapse; margin-bottom: 15px;">
+  <thead>
+    <tr>
+      <th style="border-bottom: 1px solid black;">Section</th>
+      <th style="border-bottom: 1px solid black;">Verdict</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding-right: 3em;">Research Confidence</td>
+      <td>About equal</td>
+    </tr>
+    <tr>
+      <td style="padding-right: 3em;">>Research Interest</td>
+      <td>Higher from industry</td>
+    </tr>
+    <tr>
+      <td style="padding-right: 3em;">>Research Reputation</td>
+      <td>About equal</td>
+    </tr>
+    <tr>
+      <td style="padding-right: 3em;">>Research Ability</td>
+      <td>About equal, but high variance</td>
+    </tr>
+    <tr>
+      <td style="padding-right: 3em;">>Money</td>
+      <td>Much better</td>
+    </tr>
+    <tr>
+      <td style="padding-right: 3em;">>Freedom</td>
+      <td>Slightly worse (compared to top CS program)</td>
+    </tr>
+    <tr>
+      <td style="padding-right: 3em;">>Research Direction</td>
+      <td>Slightly misaligned, but not by much</td>
+    </tr>
+    <tr>
+      <td style="padding-right: 3em;">>Day-to-day work</td>
+      <td>Similar</td>
+    </tr>
+    <tr>
+      <td style="padding-right: 3em;">>Non-research skills</td>
+      <td>Less mentoring, more coding</td>
+    </tr>
+    <tr>
+      <td style="padding-right: 3em;">>Social Life</td>
+      <td>Very dependent on location, hard to say</td>
+    </tr>
+  </tbody>
+</table>
 
 After totalling this up, I'd say I came out ahead by skipping a PhD.
 I don't have any plans to go back to academia. I'm not saying it'll never happen, but
@@ -544,7 +586,7 @@ Letters of recommendation are a big part of PhD applications, so if you're on th
 it's better to apply first and defer the offers you get if you want to keep your options
 open.
 
-One piece of advice my friend gave me is that undergrads should mentally downweigh their enthusiasm
+One piece of advice my friend gave me is that undergrads should mentally downweight their enthusiasm
 for grad school. If they're very excited about grad school, they should only be moderately excited,
 and if they're unsure about it, they probably shouldn't go. I still agree with this, but I probably would have
 gotten *more* enthusiastic about research if I had gone to grad school. **This is not normal.**
