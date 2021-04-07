@@ -524,39 +524,39 @@ So, Should You Do a PhD?
       <td>About equal</td>
     </tr>
     <tr>
-      <td style="padding-right: 3em;">>Research Interest</td>
+      <td style="padding-right: 3em;">Research Interest</td>
       <td>Higher from industry</td>
     </tr>
     <tr>
-      <td style="padding-right: 3em;">>Research Reputation</td>
+      <td style="padding-right: 3em;">Research Reputation</td>
       <td>About equal</td>
     </tr>
     <tr>
-      <td style="padding-right: 3em;">>Research Ability</td>
+      <td style="padding-right: 3em;">Research Ability</td>
       <td>About equal, but high variance</td>
     </tr>
     <tr>
-      <td style="padding-right: 3em;">>Money</td>
+      <td style="padding-right: 3em;">Money</td>
       <td>Much better</td>
     </tr>
     <tr>
-      <td style="padding-right: 3em;">>Freedom</td>
+      <td style="padding-right: 3em;">Freedom</td>
       <td>Slightly worse (compared to top CS program)</td>
     </tr>
     <tr>
-      <td style="padding-right: 3em;">>Research Direction</td>
+      <td style="padding-right: 3em;">Research Direction</td>
       <td>Slightly misaligned, but not by much</td>
     </tr>
     <tr>
-      <td style="padding-right: 3em;">>Day-to-day work</td>
+      <td style="padding-right: 3em;">Day-to-day work</td>
       <td>Similar</td>
     </tr>
     <tr>
-      <td style="padding-right: 3em;">>Non-research skills</td>
+      <td style="padding-right: 3em;">Non-research skills</td>
       <td>Less mentoring, more coding</td>
     </tr>
     <tr>
-      <td style="padding-right: 3em;">>Social Life</td>
+      <td style="padding-right: 3em;">Social Life</td>
       <td>Very dependent on location, hard to say</td>
     </tr>
   </tbody>
