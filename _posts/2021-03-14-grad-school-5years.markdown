@@ -514,8 +514,8 @@ Research Interest | Higher from industry
 Research Reputation | About equal
 Research Ability | About equal, but high variance
 Money | Much better
-Freedom | Slightly worse than PhD program (if I got into top tier school)
-Research Direction | Slightly misaligned but not by a lot
+Freedom | Slightly worse (compared to top CS program)
+Research Direction | Slightly misaligned, but not by much
 Day-to-day work | Similar
 Non-research skills | Less mentoring, more coding
 Social Life | Very dependent on location, hard to say
@@ -527,7 +527,7 @@ Formally having the degree would be nice, but I'm going to keep trying to
 get what the degree represents through industry research instead.
 
 Although it worked out for me, I can easily see why someone would choose to go back. It's
-all about the weighting of each feature and my weights happen to end with not going back.
+easy to see how different weightings of each feature could change the decision.
 
 The common wisdom is that going from industry to PhD is straightforward after 1 year, and
 exponentially less likely afterwards.
@@ -539,7 +539,7 @@ once you get paid and settled into a work routine.
 I'm not that weird of a person. Well, I mean, I am weird. Just
 not weird in that way.
 
-Now, your research skills may not decay, but your professor's memory of those skills might.
+Your research skills may not decay, but your professor's memory of those skills might.
 Letters of recommendation are a big part of PhD applications, so if you're on the fence,
 it's better to apply first and defer the offers you get if you want to keep your options
 open.
@@ -548,11 +548,15 @@ One piece of advice my friend gave me is that undergrads should mentally downwei
 for grad school. If they're very excited about grad school, they should only be moderately excited,
 and if they're unsure about it, they probably shouldn't go. I still agree with this, but I probably would have
 gotten *more* enthusiastic about research if I had gone to grad school. **This is not normal.**
-Even if I think doing a PhD would have workedjout for me, I would never recommend using a PhD to figure
+Even if I think doing a PhD would have worked out for me, I would never recommend using a PhD to figure
 out your life.
 
 If you can get a full-time offer out of undergrad for a good industry lab, along with a reassurance you'll get
-a chance to publish, it's a compelling offer and I would take it seriously. Just think about it first,
-there are a lot of facets to these decisions and the right choice will depend on what weight you
-place on everything.
+a chance to publish, it's a compelling offer and I would take it seriously.
 
+Despite all my grad school angst, all the knotted up emotions and trains of thought,
+time has made it easier to evaluate and feel at ease with the choices I made. So I think the main
+thing I'd tell myself (or anyone else considering these questions) is that it's okay to be stressed out,
+and to take all the time you need. This too shall pass.
+
+*Thanks to the many early readers, including: Ethan Caballero, Victoria Dean, Chelsea Finn, Anna Goldie, Shane Gu, Alvin Jin, David Krueger, Bai Li, Maithra Raghu, Rohin Shah, Shaun Singh, Richard Song, Gokul Swamy, Patrick Xia, and Mimee Xu*
