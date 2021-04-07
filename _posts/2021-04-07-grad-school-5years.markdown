@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The 5 Year Update on Skipping Grad School (and Whether I'd Recommend It)"
-date:   2021-03-14 02:20:00 -0700
+date:   2021-04-07 02:30:00 -0700
 ---
 
 In 2015, I was in my last year of undergrad and had a
