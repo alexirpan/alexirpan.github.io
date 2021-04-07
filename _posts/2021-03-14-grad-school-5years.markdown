@@ -14,7 +14,7 @@ doing research at all, and an eventual decision that if I wasn't sure about rese
 I couldn't turn down the money and steady work I could get from industry.
 
 That post wasn't really meant to be educational. It was more an expression of
-the feelings I had, written for myself rather than anyone else. But I know
+the feelings I had, written for myself rather than anyone else. But
 it resonated with a few people, and I'm happy it did.
 
 After that, I interviewed around, got an AI residency offer from Google Research,
@@ -27,8 +27,8 @@ I don't have regrets about deciding to skip a PhD. Given what I knew about mysel
 it was the right choice.
 But it's been 5 years since then, and 5-6 years is about the length of
 a computer science PhD. There's a nice parallel there, so I figured I'd write an
-update on how things have gone. In particular, I wanted to figure out how my
-life may have differed if I had done a PhD instead.
+update on how things have gone. In particular, I wanted to take a step back and
+evaluate how my life's differed by starting in industry instead of a PhD program.
 
 
 Disclaimers
@@ -43,13 +43,13 @@ deep learning. AlphaGo had just won against Lee Sedol, OpenAI was founded, and c
 going crazy on hiring.
 Google had never done an AI residency before, so they didn't fully know how it
 would go and it was less competitive to get in. Things would be different if
-I had done a generic SWE job instead.
+I had taken a generic SWE job offer instead.
 * Working on this post has taught me that everyone's academic and industry lab
-experience is **wildly** different. Like, completely contradictory across every
+experience is **wildly** different. Like, completely contradictory along every
 axis. My experience won't be typical because no one's
 experience is typical. The space of outcomes is too big. Even if your outcome doesn't
-line up with mine, I hope this post conveys the *potential* outcomes.
-* Conveying those outcomes made this post long. Sorry. I tried to make it shorter and I failed.
+line up with mine, I hope this post conveys the possibilities.
+* Conveying the possibilities made this post long. Sorry. I tried to make it shorter and I failed.
 
 
 Research Confidence
@@ -69,8 +69,9 @@ albeit not superstar tier.
 
 I think the reason I underestimated my ability is that getting through the first
 few walls is the hardest. It's surprising how much easier research got with experience.
-It's still hard, but I have a better handle on how projects organize themselves.
-(As well as how they fall apart, which is an unfortunate lesson that everyone
+It's still hard, but I have a better handle on how projects organize themselves and
+how to follow them through.
+(As well as how they can fall apart, which is an unfortunate lesson that everyone
 learns eventually.)
 
 When I imagine the world where I did a PhD instead, I don't think my research self-confidence would
@@ -89,7 +90,7 @@ Research Interest
 This is a quote from the Ph.D. Grind, and 2015-me agreed with this as-is.
 Learning about new research is awesome, in the same way that taking classes
 is awesome. Paper authors and teachers think carefully about how to deliver knowledge
-as quickly and clearly as possible into your head.
+as quickly and clearly as possible to your brain.
 If the paper's confusing, or they taught the course poorly, they've failed.
 
 Reality is unfortunately not set up this way,
@@ -156,8 +157,10 @@ Ask people in electrical
 engineering. I've heard EE companies used to hire straight out of undergrad,
 and now it's hard to get anywhere without at least a master's.
 
-Machine learning might also be in a bubble. If it is, the change could come very
-suddenly, so I'm reluctant to rely too much on the past when planning my future.
+Machine learning might also be in a bubble. I'm not going to claim anything about whether
+that's true, but if it is,
+then the climate could change very quickly.
+Therefore, I'm reluctant to rely too much on the past when planning my future.
 To quote John Langford at
 the Real World Reinforcement Learning workshop, ["if there is one piece of machine
 learning which is going to crash, it's going to be reinforcement learning"](https://slideslive.com/38917654/a-real-world-reinforcement-learning-revolution).
@@ -188,11 +191,11 @@ deserve them. It's why letters of recommendation are important for PhD applicati
 recommendation from a senior industry researcher can be good for similar reasons.
 
 Outside of these cases, most recommendations mean very little. Being known as "the person who
-really knows X" is nice, but this alone is not enough, because lots of people "know a guy".
+knows X" is nice, but this alone is not enough, because lots of people "know a guy".
 The recommendation only means something if the person hiring you knows how calibrated the
 recommender is, and only a small number of people have seen enough researchers to *be*
 calibrated. For a PhD program, a letter from a software internship saying you're the best intern they've ever
-had means little. A letter from a professor that just says "they're a genius"
+had means little. A letter from a professor that says "they're a genius"
 can be enough by itself. It was for [John Nash](https://academia.stackexchange.com/questions/29642/will-a-recommendation-letter-such-as-that-written-for-john-f-nash-be-convincing).
 
 ![John Nash letter of recommendation](/public/grad-school-5years/johnnash.webp)
@@ -208,7 +211,7 @@ Your papers may not be the best, but they'll be out there, and once the papers a
 no one can take them away from you.
 
 When I got the AI residency offer, I treated it as a 1 year trial run of whether I wanted
-to keep doing research. After that year, I decided that yeah, research was cool, and I liked Brain,
+to keep doing research. After that year, I decided that yeah, research was cool, and I liked Google,
 so I went for a
 riskier plan: get enough publications out of my industry research to create a PhD-equivalent
 body of work. If I got there, no one would care I didn't formally have a PhD. This wouldn't
@@ -252,7 +255,7 @@ This counterfactual is the hardest for me to judge, because advising in industry
 academia is so different.
 
 A good advisor will help you figure out what problem you should try tackling next, explain
-why that decision makes sense, and repeat this process until you figure out how to do it
+why that decision makes sense, and repeat this process until you can do it
 yourself. This is what people mean when they say you'll develop research taste.
 If a professor doesn't do this, then they aren't a good advisor,
 and professors want to be good advisors. It's how they get *their* reputation.
@@ -281,7 +284,7 @@ A PhD advisor has more power over your life than a manager does.
 I think the grad student $$\rightarrow$$ advisor relationship can be felt out more if you
 make good use of visit days, and talk to current PhD students to get their take on how
 things are going.
-So the stakes are higher, but you do have slightly better odds. (Although you might be able to
+So the stakes are higher, but you have slightly better odds. (You might be able to
 get the same level of access for industry if you're good at pestering recruiters.)
 
 I got lucky and had mentors in industry who encouraged me to consider
@@ -303,9 +306,9 @@ in index funds will get you more than most post-PhD jobs.
 
 You don't do a PhD for the money, but money tends to correlate with freedom, which is one reason
 people do a PhD.
-On that front, friends in academia have told me *very* different stories. Some told me they felt they
+On that front, friends in academia have told me **very** different stories. Some told me they felt they
 could do anything, while others told me about labmates who
-had to teach courses they didn't want to teach, or do research they didn't want to do to pay the bills.
+had to teach courses they didn't want to teach, or do research separate from their thesis to pay the bills.
 
 The common thread in those stories was that PhD students should get as much unconditional
 funding as possible. Students in good situations had NSF fellowships and enough unconditional grant money
@@ -380,7 +383,8 @@ an industry research lab, they'll be expected to do more software engineering wo
 The first piece of advice I'd give is that even if you get a PhD, you'll probably do grunt SWE work.
 Research tools will always feel deficient, because your research will
 uncover new problems, and it's unlikely the perfect tool exists for a problem no one but you has
-seen before. Doing a PhD will not save you - you will be debugging garbage your entire life.
+seen before. These tools will therefore almost always have sharp edges that cut you a few times.
+Doing a PhD will not save you - you will be debugging garbage your entire life.
 
 ![xkcd debugging](/public/grad-school-5years/computer_problems.png)
 {: .centered }
@@ -435,14 +439,14 @@ errors, they surface as mysterious 20% drops in performance in a pipeline that m
 </p>
 
 (Learning curve of [OpenAI Five](https://openai.com/blog/openai-five/), before and after fixing a bug where the agent was heavily *penalized*
-for reaching level 25.)
+for reaching level 25. Learns anyways because machine learning finds a way.)
 {: .centered }
 
 Since
 [performance drops could come from bugs, or bad data, or a bad model](http://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html),
-you want to make sure bugs are easy to quickly prove or disprove, since those can be fixed the
+you want to make sure bugs are easy to quickly prove or disprove, since they can be fixed the
 fastest. *Doing
-some code cleanup  will save time in the long run, even if you're the only one who looks at your research code.*
+some code cleanup will save time in the long run, even if you're the only one who looks at your research code.*
 Your collaborators will thank you.
 This is especially true if your
 "collaborator" is future-you trying to run an experiment for a reviewer rebuttal 2 months after you've
@@ -455,7 +459,7 @@ Just, *actually do it.* Please.
 (end rant)
 
 A PhD program may not teach you coding, but on the flip side, an industry job likely won't
-let you teach a course. You may have some chances based on the company, but you'll have many
+let you teach a course. You may have some chances depending on the company, but you'll have many
 more chances in academia. Teaching will also make you a better researcher, because it forces you
 to clarify ideas until newcomers can understand them, which is the exact skill you need when writing papers.
 Not to mention it can be rewarding by itself.
@@ -478,8 +482,9 @@ Personally, I believe in all of coding, teaching, and mentorship, but right now 
 more coding + teaching, where teaching is defined broadly enough to cover
 writing blog posts and presenting in reading groups.
 In a PhD program, it'd likely be weighted towards teaching + mentorship instead,
-where teaching means TAing a class. I did do a bunch of SWE internships in undergrad
-though, so I could see myself becoming the SWE proselytizer in a PhD program. Who knows?
+where teaching means TAing a class. I did like my SWE internships in undergrad
+though, so I could see myself getting into coding and becoming a SWE proselytizer in a PhD program.
+Who knows?
 
 
 Social Life
@@ -503,9 +508,9 @@ people talk about their kids, or buying a new house.
 
 If you go into industry, you'll mostly
 see people on your team. If you go to grad school, you'll take fewer classes and mostly be spending
-time in your lab. In both cases you get fewer chances to meet new people than undergrad. My social life would
-likely be identical had I done a PhD, but the largest factor would probably have been whether I went
-to a university near a city or not, rather than industry vs grad school.
+time in your lab. In both cases you get fewer chances to meet new people than undergrad.
+I suspect the largest factor for social life is location, rather than industry vs grad school,
+so it's hard to say how this would go.
 
 
 So, Should You Do a PhD?
@@ -563,13 +568,13 @@ So, Should You Do a PhD?
 </table>
 
 After totalling this up, I'd say I came out ahead by skipping a PhD.
-I don't have any plans to go back to academia. I'm not saying it'll never happen, but
-right now I feel I can achieve my goals without going back to get a PhD.
+I don't have any plans to go back to academia. I still can't say I'll never go back, but
+right now I feel I can achieve my goals outside that system.
 Formally having the degree would be nice, but I'm going to keep trying to
 get what the degree represents through industry research instead.
 
-Although it worked out for me, I can easily see why someone would choose to go back. It's
-easy to see how different weightings of each feature could change the decision.
+Although it worked out for me, I can easily see why someone *would* go back. A few
+different weightings on each feature would be enough to change the decision.
 
 The common wisdom is that going from industry to PhD is straightforward after 1 year, and
 exponentially less likely afterwards.
@@ -584,7 +589,8 @@ not weird in that way.
 Your research skills may not decay, but your professor's memory of those skills might.
 Letters of recommendation are a big part of PhD applications, so if you're on the fence,
 it's better to apply first and defer the offers you get if you want to keep your options
-open.
+open. (That way, if you do want to go back, your professors can always recycle their
+previous rec letter if they forgot what you did.)
 
 One piece of advice my friend gave me is that undergrads should mentally downweight their enthusiasm
 for grad school. If they're very excited about grad school, they should only be moderately excited,
@@ -601,4 +607,4 @@ time has made it easier to evaluate and feel at ease with the choices I made. So
 thing I'd tell myself (or anyone else considering these questions) is that it's okay to be stressed out,
 and to take all the time you need. This too shall pass.
 
-*Thanks to the many early readers, including: Ethan Caballero, Victoria Dean, Chelsea Finn, Anna Goldie, Shane Gu, Alvin Jin, David Krueger, Bai Li, Maithra Raghu, Rohin Shah, Shaun Singh, Richard Song, Gokul Swamy, Patrick Xia, and Mimee Xu*
+*Thanks to the many early readers, including: Ethan Caballero, Victoria Dean, Chelsea Finn, Anna Goldie, Shane Gu, Alvin Jin, David Krueger, Bai Li, Maithra Raghu, Rohin Shah, Shaun Singh, Richard Song, Gokul Swamy, Patrick Xia, and Mimee Xu.*
