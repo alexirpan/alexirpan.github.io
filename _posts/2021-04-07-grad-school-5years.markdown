@@ -589,8 +589,8 @@ not weird in that way.
 Your research skills may not decay, but your professor's memory of those skills might.
 Letters of recommendation are a big part of PhD applications, so if you're on the fence,
 it's better to apply first and defer the offers you get if you want to keep your options
-open. (That way, if you do want to go back, your professors can always recycle their
-previous rec letter if they forgot what you did.)
+open. That way, if you do want to go back, your professors can always recycle their
+previous rec letter if they forgot what you did.
 
 One piece of advice my friend gave me is that undergrads should mentally downweight their enthusiasm
 for grad school. If they're very excited about grad school, they should only be moderately excited,
