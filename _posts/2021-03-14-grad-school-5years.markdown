@@ -214,7 +214,7 @@ riskier plan: get enough publications out of my industry research to create a Ph
 body of work. If I got there, no one would care I didn't formally have a PhD. This wouldn't
 qualify me for any faculty positions, but I was okay with that.
 
-That plan hasn't gone perfectly. I've been on some papers, but not that many.
+That plan hasn't gone perfectly. I've been on [some papers](https://scholar.google.com/citations?user=ZZNxNAYAAAAJ&hl=en), but not that many.
 I've reviewed for conferences, but I get the feeling that the ML reviewer pool is so
 starved that organizers are continually scrambling for any reviewer they can get, so it doesn't
 mean much.
@@ -222,8 +222,8 @@ Working on big projects
 is good for driving the field, but the papers that come out of them are often treated as "the Apple
 paper" or "the Uber paper", rather than "the paper by X & Y".
 
-However, during that time, I started writing for this blog more seriously, and somehow this blog
-is now the biggest reputation boost I have.
+However, I have written for this blog more seriously, and somehow my blog is
+now the biggest reputation boost I have.
 It's not the same as a paper,
 but it's another way for me to put out work that demonstrates how I think through research problems.
 My [post about deep RL]({% post_url 2018-02-14-rl-hard %}) is still my most viewed post,
@@ -235,14 +235,14 @@ I would have written for this blog either way, and evidently
 it's the main reason people know who I am. My takeaway is that more people should
 start blogs! I don't know why they don't.
 Maybe they're
-too busy writing papers or something 😛. Jokes on
+too busy writing papers or something 😛. Joke's on
 them, I get to use emojis and they don't.
 
 
 Research Ability
 -----------------------------------------------------------------------------------
 
-I realize I just spent a section saying grad students need to publish, but
+I realize I just spent a section saying people should publish, but
 a PhD isn't about getting a lot of publications. It's about learning how to form and
 attack a long term research thesis, with publications as a natural byproduct. To borrow
 fighting game advice, practice isn't about winning, it's about learning something, and that
@@ -261,27 +261,28 @@ No one is required to give you this mentorship in an industry lab. The more top-
 lab, the truer this is. Industry labs tend to organize themselves around a grand vision, like
 "we can build a quantum computer", or "all AI needs is good scaling", and although these
 are very broad theses, more of the research direction is already sketched out by the
-team lead.
+team leads.
 That leaves less research direction for you to figure out.
 
 So, you might not have a mentor in industry, but in a PhD program, it's possible your advisor doesn't mentor
 you either! Based on talking to research scientists at Brain, a surprising number have said
 their professors were too busy to help them much, compared to their labmates. And
 if you're stuck figuring out research with your labmates, then your labmates in
-an industry lab will include people who've finished a PhD. Fewer people are *obligated* to
+an industry lab will include people who've already navigated a PhD. Fewer people are *obligated* to
 give you mentorship, but more people *could* give you mentorship.
 
-If you figure out whether your boss / advisor will be good before making
-a decision, that solves everything, but doing so is easier said than done.
+If you figure out whether your boss / advisor will be good before signing
+anything, that solves everything, but doing so is easier said than done.
 Everyone I know who's left Google did so because
 they didn't get along with their manager, and to me it feels like a cosmic roll of the dice
 whether that happens or not. Getting a good professor is a similar roll with higher stakes.
 A PhD advisor has more power over your life than a manager does.
 
 I think the grad student $$\rightarrow$$ advisor relationship can be felt out more if you
-make good use of visit days, and talk to current PhD students instead of the professor.
-That gives you slightly better odds than industry offers (although you might be able to
-get the same level of access if you're good at pestering recruiters).
+make good use of visit days, and talk to current PhD students to get their take on how
+things are going.
+So the stakes are higher, but you do have slightly better odds. (Although you might be able to
+get the same level of access for industry if you're good at pestering recruiters.)
 
 I got lucky and had mentors in industry who encouraged me to consider
 where the field was going. I think on expectation, if I was in a PhD program,
@@ -300,16 +301,15 @@ Unless you discover something [revolutionary that starts a bidding war](https://
 5-6 years of ML engineer / data scientist salary + compounding returns from investing that
 in index funds will get you more than most post-PhD jobs.
 
-You don't do a PhD for the money, but money tends to correlate with freedom. One of the reasons
-people do a PhD is to get the freedom to research what they find interesting and
-important.
+You don't do a PhD for the money, but money tends to correlate with freedom, which is one reason
+people do a PhD.
 On that front, friends in academia have told me *very* different stories. Some told me they felt they
 could do anything, while others told me about labmates who
 had to teach courses they didn't want to teach, or do research they didn't want to do to pay the bills.
 
 The common thread in those stories was that PhD students should get as much unconditional
 funding as possible. Students in good situations had NSF fellowships and enough unconditional grant money
-from their advisor to do whatever they wanted if they lived frugally. Students in bad situations had more of their funding come from grants with narrow
+from their advisor to do whatever they wanted. Students in bad situations had more of their funding come from grants with narrow
 proposals, requiring them to do work that matched the proposal rather than the research they
 were most interested in. Good advisors try to shield their grad students from these situations,
 but not all professors get unconditional grants.
@@ -355,8 +355,8 @@ pure theory work is rare, unless there is a high certainty path between that the
 revenue generating. In those scenarios, it's important for the company to hire theory people to
 stay on the cutting edge.
 
-Speaking more generally, the subfield you pick affects the number of job openings industry will
-have for you. If you can't be happy unless you're in a niche subfield that industry doesn't value
+Speaking more generally, the subfield you pick affects the number of job openings you'll find in
+industry. If you can't be happy unless you're in a niche subfield that industry doesn't value
 yet, academia might be your only option.
 
 Personally, my research interests aren't perfectly aligned with my day-to-day work, but it's
@@ -367,7 +367,7 @@ useful. The bad part is that you have to deal with the real world.
 
 I'd probably have done more theory if I had gone to a PhD program, but it's hard to say whether
 that would have continued long-term, or if it would be a summer fling before going back to
-more practical work. Most likely, I'd be working on the same problems I am now with a
+more practical work. Most likely, I'd be working on the same problems I am now, with a
 different perspective on how to attack them.
 
 
@@ -376,6 +376,7 @@ Day-to-Day Work
 
 When I talk to people considering skipping a PhD, a common worry they have is that if they join
 an industry research lab, they'll be expected to do more software engineering work and less research.
+
 The first piece of advice I'd give is that even if you get a PhD, you'll probably do grunt SWE work.
 Research tools will always feel deficient, because your research will
 uncover new problems, and it's unlikely the perfect tool exists for a problem no one but you has
@@ -397,7 +398,7 @@ year I had convinced enough people to get research roles in future projects.
 However, I've also done a lot of SWE work for that research, because those projects often used
 large distributed systems that were tricky to understand, build, and debug. I think my day-to-day
 work would've been similar in academia, I'd just be debugging different sorts of distributed
-systems.
+systems. Such is the fate of using deep learning.
 
 
 Non-Research Skills Learned
@@ -405,13 +406,14 @@ Non-Research Skills Learned
 
 There are many skills outside of direct research that will help you with your research.
 
-For example, software engineering. Industry will teach you more software engineering. If you don't do code reviews or write unit
+For example, software engineering. Industry will teach you how to write better code. If you don't do code reviews or write unit
 tests, your code isn't getting checked into the repository. Even if no one teaches you good
 code habits, you're embedded in a company with non-researcher SWEs and will naturally acquire
 good habits through osmosis.
 
-Better coding will make you a better researcher. Most PhD programs don't teach software engineering,
-nor these coding polices. I understand why, but...okay, I'm going to rant for a bit. Pardon the side track.
+Better coding will make you a better researcher. Most PhD programs don't teach software engineering
+or best practices. I understand why, you're supposed to learn it in undergrad, but...okay, I'm
+going to rant for a bit. Pardon the side track.
 
 Research code is, as a rule, not very good. I used to think this was fine and even
 desirable. I no longer think this is true.
@@ -425,8 +427,8 @@ they try their ideas with purpose, but they try a lot of ideas with purpose.)
 My issue is that people take this too far. Look, writing beautiful code takes time. Writing
 *legible* code does not. Real variable names and useful
 comments reduce the complexity of the mental model of your code, which makes it easier to catch bugs.
-This is especially important in machine learning, where bugs don't surface as compiler
-errors, they surface as 20% drops in performance.
+This is especially important in machine learning, since bugs don't surface as compiler
+errors, they surface as mysterious 20% drops in performance.
 
 ![Dota 2 reward curve](/public/grad-school-5years/bug-comparison.png)
 {: .centered }
@@ -443,13 +445,13 @@ This is especially true if your
 "collaborator" is future-you trying to run an experiment for a reviewer rebuttal 2 months after you've
 thought about any of the relevant code.
 
-Now, do you need code review to write good code? I don't think so. Another set of eyes helps,
+Now, do you need to go full code review to write good code? No, I don't think so. Another set of eyes helps,
 but PhD students have good technical skills and are perfectly capable of reviewing their own code.
 Just, *actually do it.* Please.
 
 (end rant)
 
-Now on the flip side, a PhD program may not teach you coding, but an industry job likely won't
+A PhD program may not teach you coding, but on the flip side, an industry job likely won't
 let you teach a course. You may have some chances based on the company, but you'll have many
 more chances in academia. Teaching will also make you a better researcher, because it forces you
 to clarify ideas until newcomers can understand them, which is the exact skill you need when writing papers.
@@ -461,17 +463,17 @@ to clarify ideas until newcomers can understand them, which is the exact skill y
 {: .centered }
 
 A PhD program will also provide more mentorship opportunities. In academia, the totem pole
-is professor > postdoc > grad student > undergrad. Going to a PhD program means you aren't on the
+is professor > postdoc > grad student > undergrad / master's students. Going to a PhD program means you aren't on the
 bottom anymore, and you'll get to mentor undergrads that want to try research.
 Whereas in industry, if you join out of undergrad, you're entering at the bottom of the totem
 pole and will have fewer mentoring opportunities until interns come, which is a seasonal
 thing. Mentoring helps because it exposes you to a wider variety of thinking, and sometimes
 solving a research problem just requires the right perspective.
 
-Personally, I believe in all of coding, teaching, and mentorship, but right now I get
-learn more coding + teaching, where teaching is defined broadly enough to cover
+Personally, I believe in all of coding, teaching, and mentorship, but right now I do
+more coding + teaching, where teaching is defined broadly enough to cover
 writing blog posts and presenting in reading groups.
-In a PhD program, it'd likely be weighted towards learning teaching + mentorship instead,
+In a PhD program, it'd likely be weighted towards teaching + mentorship instead,
 where teaching means TAing a class. I did do a bunch of SWE internships in undergrad
 though, so I could see myself becoming the SWE proselytizer in a PhD program. Who knows?
 
@@ -486,7 +488,7 @@ that keep me busy if I don't have the energy to catch up with friends. The probl
 is too effective, sometimes it takes a long time to get out, and when I do I usually
 wish I had exited the maze sooner and socialized more.
 
-Undergrad life shook that maze in a way that working life didn't.
+Undergrad life shook that maze in a way that working life hasn't.
 When everyone lives near campus, everyone goes to campus whenever an event's happening,
 and you can serendipitously run into friends in the street, it's just a lot easier to meet people
 and hang out.
