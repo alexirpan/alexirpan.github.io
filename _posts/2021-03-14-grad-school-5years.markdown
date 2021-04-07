@@ -11,7 +11,7 @@ writing a [6000 word blog post]({% post_url 2016-01-03-grad-school %})
 explaining why. The short version is: lots of imposter syndrome, disillusionment
 about whether I could handle the marathon of research, wavering faith in
 doing research at all, and an eventual decision that if I wasn't sure about research,
-I couldn't turn down the money and steady work that industry offered.
+I couldn't turn down the money and steady work I could get from industry.
 
 That post wasn't really meant to be educational. It was more an expression of
 the feelings I had, written for myself rather than anyone else. But I know
@@ -27,8 +27,8 @@ I don't have regrets about deciding to skip a PhD. Given what I knew about mysel
 it was the right choice.
 But it's been 5 years since then, and 5-6 years is about the length of
 a computer science PhD. There's a nice parallel there, so I figured I'd write an
-update on how things have gone, as well as how my life may have differed if I did a PhD
-instead.
+update on how things have gone. In particular, I wanted to figure out how my
+life may have differed if I had done a PhD instead.
 
 
 Disclaimers
@@ -38,15 +38,15 @@ Disclaimers
 but my model could be incorrect.
 * This is specific to machine learning PhDs. ML is in a very unique position
 that doesn't generalize to other fields. Extrapolate with caution.
-* 2015-2016 was a crazy year for
+* I was pretty lucky to get an industry lab research offer. 2015-2016 was a crazy year for
 deep learning. AlphaGo had just won against Lee Sedol, OpenAI was founded, and companies were
-going crazy on hiring. I personally think I was very lucky to get a research
-offer.
-Google had never done an AI residency before, so it was less competitive. I'm not sure
-I would have gotten in if I applied 1 year later, and things would be different if
+going crazy on hiring.
+Google had never done an AI residency before, so they didn't fully know how it
+would go and it was less competitive to get in. Things would be different if
 I had done a generic SWE job instead.
-* Researching this post has taught me that everyone's academic and industry lab
-experience is **wildly** different. My experience won't be typical because no one's
+* Working on this post has taught me that everyone's academic and industry lab
+experience is **wildly** different. Like, completely contradictory across every
+axis. My experience won't be typical because no one's
 experience is typical. The space of outcomes is too big. Even if your outcome doesn't
 line up with mine, I hope this post conveys the *potential* outcomes.
 * Conveying those outcomes made this post long. Sorry. I tried to make it shorter and I failed.
@@ -68,7 +68,7 @@ more calibrated on my abilities now and think I definitely could have kept up,
 albeit not superstar tier.
 
 I think the reason I underestimated my ability is that getting through the first
-few walls is the hardest. It's surprising how much easier research got after that.
+few walls is the hardest. It's surprising how much easier research got with experience.
 It's still hard, but I have a better handle on how projects organize themselves.
 (As well as how they fall apart, which is an unfortunate lesson that everyone
 learns eventually.)
@@ -90,7 +90,7 @@ This is a quote from the Ph.D. Grind, and 2015-me agreed with this as-is.
 Learning about new research is awesome, in the same way that taking classes
 is awesome. Paper authors and teachers think carefully about how to deliver knowledge
 as quickly and clearly as possible into your head.
-If the paper's confusing, or they don't teach courses well, they've failed.
+If the paper's confusing, or they taught the course poorly, they've failed.
 
 Reality is unfortunately not set up this way,
 and since research is about understanding reality, it's much more time
@@ -125,13 +125,13 @@ made me very pessimistic I would do anything meaningful in research.
 I've since been part of some noteworthy papers like [QT-Opt](https://ai.googleblog.com/2018/06/scalable-deep-reinforcement-learning.html) and
 [GraspGAN](https://ai.googleblog.com/2017/10/closing-simulation-to-reality-gap-for.html),
 and that's helped me believe in myself.
-When I got my first email asking for help reproducing a paper, I was pretty excited - they
+When I got my first email asking for help reproducing a paper, I was pretty excited. They
 wouldn't be asking unless they were paying attention!
-Seeing that concrete thread of influence between
+Seeing concrete threads of influence between
 my work and changes in the research landscape makes it easier to keep going.
 
 I'm guessing my interest is higher than it would have been if I went to grad school.
-The papers I was on that made a big splash were from large projects with 10+ authors. Those
+The papers I was on that made big splashes were from large projects with 10+ authors. Those
 don't tend to come out of academic ML labs. In a PhD setting, I likely would have worked on more
 papers that each had smaller impact, and although that might add up to a large total impact,
 it would have been less fulfilling because I wouldn't notice it as easily.
@@ -153,11 +153,12 @@ demand for ML / AI talent is still way bigger than the supply of PhDs, so compan
 take anyone they think can do the work. This won't last forever, and credentials are the
 first filter that'll appear when it stops.
 Ask people in electrical
-engineering - I've heard EE companies used to hire straight out of undergrad,
+engineering. I've heard EE companies used to hire straight out of undergrad,
 and now it's hard to get anywhere without at least a master's.
 
-Machine learning might also be in a bubble, in which case the change could come very
-suddenly. To quote John Langford at
+Machine learning might also be in a bubble. If it is, the change could come very
+suddenly, so I'm reluctant to rely too much on the past when planning my future.
+To quote John Langford at
 the Real World Reinforcement Learning workshop, ["if there is one piece of machine
 learning which is going to crash, it's going to be reinforcement learning"](https://slideslive.com/38917654/a-real-world-reinforcement-learning-revolution).
 Unfortunate for me, given what problems I find interesting!
@@ -189,9 +190,9 @@ recommendation from a senior industry researcher can be good for similar reasons
 Outside of these cases, most recommendations mean very little. Being known as "the person who
 really knows X" is nice, but this alone is not enough, because lots of people "know a guy".
 The recommendation only means something if the person hiring you knows how calibrated the
-recommender is, and only a small number of people have seen enough researchers to be
-calibrated. A letter from a software internship saying you're the best intern they've ever
-had means little to a PhD program. A letter from a professor that just says "they're a genius"
+recommender is, and only a small number of people have seen enough researchers to *be*
+calibrated. For a PhD program, a letter from a software internship saying you're the best intern they've ever
+had means little. A letter from a professor that just says "they're a genius"
 can be enough by itself. It was for [John Nash](https://academia.stackexchange.com/questions/29642/will-a-recommendation-letter-such-as-that-written-for-john-f-nash-be-convincing).
 
 ![John Nash letter of recommendation](/public/grad-school-5years/johnnash.webp)
@@ -199,7 +200,8 @@ can be enough by itself. It was for [John Nash](https://academia.stackexchange.c
 
 If you're confident you want to keep doing research for the rest of your life, you need
 concrete, visible proof of your skills. For research, that means publishing. Using *h*-index as
-a filter isn't perfect, but it tracks enough that people use it all the time in hiring.
+a filter isn't perfect, and everyone knows it isn't perfect, but it's used all
+the time anyways.
 Getting a higher *h*-index requires publishing,
 and getting a PhD is a surefire way to force you to publish.
 Your papers may not be the best, but they'll be out there, and once the papers are out there,
