@@ -607,4 +607,4 @@ time has made it easier to evaluate and feel at ease with the choices I made. So
 thing I'd tell myself (or anyone else considering these questions) is that it's okay to be stressed out,
 and to take all the time you need. This too shall pass.
 
-*Thanks to the many early readers, including: Ethan Caballero, Victoria Dean, Chelsea Finn, Anna Goldie, Shane Gu, Alvin Jin, David Krueger, Bai Li, Maithra Raghu, Rohin Shah, Shaun Singh, Richard Song, Gokul Swamy, Patrick Xia, and Mimee Xu.*
+*Thanks to the many early readers for giving feedback, including: Ethan Caballero, Victoria Dean, Chelsea Finn, Anna Goldie, Shane Gu, Alvin Jin, David Krueger, Bai Li, Maithra Raghu, Rohin Shah, Shaun Singh, Richard Song, Gokul Swamy, Patrick Xia, and Mimee Xu.*
