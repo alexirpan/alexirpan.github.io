@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A New Online Dominion Client Approaches"
-date:   2021-05-23 02:30:00 -0700
+date:   2021-05-23 15:30:00 -0700
 ---
 
 Online Dominion is getting yet another online implementation!
@@ -62,8 +62,8 @@ a few months to figure out, probably more in practice. Most of the side projects
 * As far as I know, the Temple Gates implementation is the first one that doesn't use
 hardcoded play rules. Instead, it allows the agent to choose what to do at every choice
 point. This is *really* important at high-level Dominion. It's important enough that
-[I wrote an article about it](https://dominionstrategy.com/2018/08/16/five-ways-to-get-more-out-of-your-turns/)
-that barely scratches the surface of tactical play. One of the main reasons Dominion simulators
+[I wrote an article about it](https://dominionstrategy.com/2018/08/16/five-ways-to-get-more-out-of-your-turns/).
+One of the main reasons Dominion simulators
 fell out of favor was that their hardcoded card-playing heuristics stopped matching up with
 high level play, and this placed hard limitations on how realistic the simulations could be. Every AI attempt
 since then has ignored play order and had the same problem. This new approach seems like the first one
@@ -89,9 +89,12 @@ Additionally, although
 they could potentially learn the engine play that dominates high-level gameplay, it seems like
 it could be tricky for the bot to successfully explore those options. I think it is doable, if the bot learns
 to play obvious engines (like Village-Wharf), and then slowly learns the less obvious engines. But
-that seems like the threshold that will be trickiest to cross. They've mentioned the bot is already
-quite good at Big Money + a few action card strategies, which is a good sign, but these strategies
-are the easiest to discover. We'll see how it does.
+it also seems likely for the bot to get stuck in the local optima of money strategies, since they're
+easy to discover.
+They've mentioned the bot is already
+quite good at Big Money + a few action card strategies, which is a good sign given that it learned
+from scratch, but that's not much above the bar of existing Dominion bots, and I believe the AlphaZero-style
+methods should be able to outperform that baseline. We'll see how it does.
 
 Beta signups are [open now](https://twitter.com/Temple_Gates/status/1395073608297242625), so if
 you like Dominion, go check it out!
