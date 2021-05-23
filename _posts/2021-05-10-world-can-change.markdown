@@ -47,12 +47,8 @@ won't. But no one can say they didn't try to make the world care more about
 squirrels.
 
 Yes, okay, this is a silly example. However, to me the broad strokes describe pretty
-much every successful political movement. They're all campaigns to shift public opinion
-in your preferred direction. It strikes me that during election season, every politician
-gives essentially the same speech at every rally. If you believe in your message, then
-you have to be willing to repeat it over and over, even if it's boring or tedious, because
-[not everyone will have heard it before](https://xkcd.com/1053/). It's the way you change
-the world.
+much every successful political movement. At its core, politics is a contest over how the
+world should work.
 
 Basically, if the status quo sucks, you don't have to just complain about it
 with your friends. I mean, you should *totally* still complain about it. Complaining
