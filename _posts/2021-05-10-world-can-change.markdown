@@ -1,68 +1,55 @@
 ---
 layout: post
-title:  "Sometimes, the World Can Change For You"
+title:  "Sometimes, the World Can Change"
 date:   2021-05-10 02:30:00 -0700
 ---
 
-A few years ago, a friend asked me what I expected to happen in the next 10 years,
-and when I made my best guess, he said it didn't sound like I was a part of the
-storyline.
+Once, a friend asked me what I expected to happen in the next 10 years.
+When I made my best guess, he observed that it sounded like I was narrating the
+work of other people, rather than placing myself in the narrative.
 
-I think this is something I'm still working through. A lot of my life has revolved
-around two general principles.
+I'd say this is one of the main mental blocks I've been working through.
 
-1. Understand the rules of the system around me.
-2. Figure out how to achieve my goals based on those rules.
+Normally, I mentally bucket everything into two categories: things I can change,
+and things I can't. If I can't change something then it's not worth thinking
+about it, so I push it out of my mind. Then I just focus on the things that are
+under my control and do the best I can.
 
-It's part of why I like video
-games. Usually, these games are built to slowly teach you their rules, then give
-you challenges based on applying what you've learned, whether you realize the game
-was teaching you or not.
+And I mean, this isn't an awful strategy. It works fantastically for video games,
+because in most games you can't change how they work. It's fixed programming with
+the same source code, and although there might be exploits *within* that code,
+you can't change the code itself. The systems of the game are God, and what
+happens happens. It's good to understand how those systems work, but it's useless
+to try to change them. You're better off finding another game if you have
+disagreements with a game's systems.
 
-But games aren't reality. They're games. The thing with video games is that their
-rules can't be broken. It's the same programming, the same source code. Maybe there
-are exploits *within* that code, but it's still the same substrate. The systems are
-God and what happens happens.
+In the real world, the systems are *not* God.
+They could be fair or cruel, well-reasoned or nonsensical, but they aren't static.
+We made them, and we can change them too. Sometimes I forget that.
 
-The part I'm working on, is understanding when I'm treating something like an
-unviolatable rule, even when it isn't.
+I think some people don't have this issue. They have some base level of arrogance that
+if the world doesn't work the way they think it should, then they'll spend their
+time trying to change the world until it aligns with their expectations.
 
-Well, maybe that's not the way to put it.
+Here is an example: suppose there's a person that only cares about squirrels. They
+think they're super neat, and want more! They want squirrels
+*everywhere*.
 
-When I consider the world around me, I tend to mentally bucket them into two
-categories: things I can change, and things I can't. I split the world, push
-the "can't control" bucket out of mind, and just think about the things I can
-control. And for much of my life, I've treated "things I can change" as things I
-could personally do. Cleaning up my own desk, taking better notes, trying
-better sleep schedules, and so on. There was me and the world, and once I
-understood the world enough, I'd accept it and keep going, whether or not the
-world's rules were fair or made sense.
+Most people do not care about squirrels. The world is not set up to reward squirrel
+enthusiasm. And they could accept this and just go on their merry way, and honestly,
+their life will probably be just fine. Alternatively, they could
+Another option is that they write essays and give speeches and cold-email environmentalists
+explaining why squirrels are excellent. This will probably piss off a bunch of people
+who don't want to listen to Yet Another Squirrel Stump Speech, but it'll drum up
+support too. Maybe their dreams of a squirrel-filled world will come true. Maybe they
+won't. But no one can say they didn't try to make the world care more about
+squirrels.
 
-That's not how the world has to work! Some people look at the world, figure out its
-rules, say "these rules are GARBAGE", and then spend their time trying to change
-the world until its rules work the way they want them to.
+Yes, okay, this is a silly example. However, to me the broad strokes describe pretty
+much every succesful political movement. They're all campaigns to shift public opinion
+in your preferred direction.
 
-It's the difference between someone who goes to an office job because their
-passion doesn't pay the bills, and someone who decides that they're going to spend
-their time convincing people their passion *is* worth money, so that they can do
-their passion instead.
-
-It's the difference between a one-issue voter who votes for the candidate that seems
-closest every 2 years, and a one-issue voter who decides to start a movement to make
-their one issue big enough that candidates *have* to care about it.
-
-It takes a different kind of mindset to believe - *genuinely believe* - that you
-can become the President of the United States, earn a billion dollars, or remake
-the world's transportation infrastructure, to name a few lofty goals. None of these
-feel like things you can achieve by taking the world as it comes to you. It's more like
-dragging the world along until it organizes itself in a way where you *have* to be President
-or *have* to be a billionaire for the world to make sense.
-
-The dark side of this mindset is that I think it is *super super easy* to become an
-asshole completely untethered from reality. You can tell people they're dumb if they don't
-believe in your vision. That doesn't mean you're right.
-You can try to change everything. That
-doesn't mean you'll actually succeed. And surrounding yourself with people who will
-only tell you you'll succeed, sounds like one of the surest ways to guarantee you won't.
-
-
+Basically, if the status quo sucks, you don't have to just complain about it
+with your friends. I mean, you should *totally* still complain about it. Complaining
+is fun. But you can (and should) also take agency to fix it. My guess is that most
+people reading this have more power than they realize.
