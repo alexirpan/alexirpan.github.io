@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Sometimes, the World Can Change"
-date:   2021-05-10 02:30:00 -0700
+title:  "Sometimes It's Worth Trying to Change the World"
+date:   2021-05-23 02:23:00 -0700
 ---
 
 Once, a friend asked me what I expected to happen in the next 10 years.
@@ -25,7 +25,8 @@ disagreements with a game's systems.
 
 In the real world, the systems are *not* God.
 They could be fair or cruel, well-reasoned or nonsensical, but they aren't static.
-We made them, and we can change them too. Sometimes I forget that.
+We made those systems, and we can change them too. Sometimes I forget that and
+overoptimize according to rules that shouldn't exist.
 
 I think some people don't have this issue. They have some base level of arrogance that
 if the world doesn't work the way they think it should, then they'll spend their
@@ -53,3 +54,6 @@ Basically, if the status quo sucks, you don't have to just complain about it
 with your friends. I mean, you should *totally* still complain about it. Complaining
 is fun. But you can (and should) also take agency to fix it. My guess is that most
 people reading this have more power than they realize.
+
+Not every battle is worth fighting, but that doesn't mean you should ignore the battles
+you could be fighting.
