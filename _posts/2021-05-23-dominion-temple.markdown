@@ -83,7 +83,7 @@ game AIs should use, but I think anyone who's worked with game AI knows that a *
 of reasonable-sounding heuristics don't actually help for inexplicable reasons.
 
 So, color me interested. The main dangers I see is that although Dominion doesn't have the
-bluffing mechanics of poker, it does have the heavy amounts of randomness that could make it hard to
+bluffing mechanics of poker, it does have the heavy randomness that could make it hard to
 get low variance estimates of win rate, creating very noisy updates during the learning process.
 Additionally, although
 they could potentially learn the engine play that dominates high-level gameplay, it seems like
