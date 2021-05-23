@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sometimes It's Worth Trying to Change the World"
-date:   2021-05-23 15:58:00 -0700
+date:   2021-05-23 16:09:00 -0700
 ---
 
 Once, a friend asked me what I expected to happen in the next 10 years.
@@ -55,8 +55,8 @@ with your friends. I mean, you should *totally* still complain about it. Complai
 is fun, and if you have friends that push back on your BS, you'll learn if your
 complaints are justified.
 But after you're done with that, you can (and should) take agency to fix it. Like,
-*actually* fix it. Don't stop after you come up with the first reason things couldn't
-be better. (Or the second, or third.)
+*actually* fix it. Don't stop after you come up with the first reason things can't
+be better. Or the second, or third.
 
 My guess is that most people reading this have more power than they realize.
 Not every battle is worth fighting, but that doesn't mean you should ignore the battles
