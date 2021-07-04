@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "Why Don't I Have Ads?"
+date:   2021-07-03 16:09:00 -0700
+---
+
+Why doesn't this blog have ads?
+Well, the answer's pretty simple: zt my current view count, it isn't worth it. And I don't mean that it's not worth the
+time I'd spend setting it up. I mean that if someone offered to do it for free,
+I would still turn them down.
+
+Let's make a very rough [Fermi estimation](https://en.wikipedia.org/wiki/Fermi_problem)
+of how much revenue I could get. Google Analytics says I get about 5000 sessions
+per month. According to [this blog](https://blog.taboola.com/how-much-do-websites-make-from-ads/),
+the clickthrough rate of display ads is 0.05%, but is 8.8x higher for native ads. Let's
+be optimistic and say it's 10x, so 0.5% clickthrough. Average cost per click is $0.58.
+In total, the optimistic estimate is:
+
+$$
+    5000 \times 0.5\% \times \$1 = \$14.50
+$$
+
+about $14.50 a month. And sure, that's some potential money. However, ads also come at a cost
+to readership. Based on [analysis by Gwern](https://www.gwern.net/Ads), running ads drops views
+by about 10%, and a drop of that size has been replicated independently across several
+organizations.
+
+So really, the question is, would I rather earn an extra $14.50 a month, or would I rather
+have 500 more readers? Seems pretty clearly in favor of the readers side to me.
+
+\* \* \*
+
+If finance has taught me anything, it's that you can always take the inverse of a bet. If
+I value 500 readers more than $14.50 a month, why don't I run ads myself to get more readers?
+
+On one hand, I want to say this is dumb, and stupid, and I shouldn't.
+On the other hand, I'm having a hard time coming up with a counterargument.
+It wouldn't affect the reader experience, because my site's content wouldn't change.
+I do care about viewership stats. I could even claim the AdWords credit that
+Google Analytics keeps pushing me to take.
+
+I've thought about it a lot more than this post would suggest, and I think the main problem
+is that I don't know how I would even structure the ads - what it would look like, and
+where I would place it. Normally, people are trying to sell a product. which lets you create
+a clear ad for that product. The "product" of this blog is the writing, which deliberately
+has no topic focus besides "the things Alex wants to write about". Therefore, I don't have a
+clear search query in mind that I'd want to run ads for. Anyone who searches my name will
+find my website pretty quickly anyways (the benefits of having a novel last name). I would
+also be worried about follow-on effects where a reader might treat the site differently if
+they clicked through from a sponsored link, rather than a native search result. As for a
+banner ad, I'm not even sure what image would make sense for a personal blog. It's kind
+of like asking for a picture that summarizes your entire life - it doesn't exist.
+
+I don't think I've ever seen anyone run ads for a personal blog before, so to me that
+indicates it probably doesn't make sense. Open to the idea though!
