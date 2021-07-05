@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "Why Don't I Have Ads?"
+date:   2021-07-05 01:04:00 -0700
+---
+
+Why doesn't this blog have ads?
+Well, the answer's simple: at my current view count, it isn't worth it. And I don't mean that it's not worth the
+time to set it up. I mean that if someone offered to do it for free,
+I would still turn them down.
+
+Let's do a very rough [Fermi estimation](https://en.wikipedia.org/wiki/Fermi_problem)
+of how much revenue I could get. Google Analytics says I get about 5000 sessions
+per month. According to [this blog](https://blog.taboola.com/how-much-do-websites-make-from-ads/),
+the clickthrough rate of display ads is 0.05%, but is 8.8x higher for native ads. I don't
+want to do native ads, but let's get an upper bound by assuming I did use native ads,
+and they have 10x clickthrough, so 0.5%. Average cost per click is $0.58.
+In total, the optimistic estimate is:
+
+$$
+    5000 \times 0.5\% \times \$0.58 = \$14.50
+$$
+
+Sure, that's some money. However, ads also come at a cost
+to readership. Based on [analysis by Gwern](https://www.gwern.net/Ads), running ads drops views
+by about 10%, and a drop of that size has been replicated independently across several
+organizations.
+
+So really, the question is, would I rather earn at most $14.50 a month (likely much less),
+or would I rather have 500 more readers? Seems pretty clearly in favor of the readers side to me.
+
+\* \* \*
+{: .centered }
+
+If finance has taught me anything, it's that you can always take the inverse of a bet. If
+I value readers more than money, why don't I pay money to run ads to direct people to my site?
+
+At first, I thought it was dumb and stupid, but when I thought about it more I realized I
+didn't have a good argument for why it was dumb, and I needed to take it seriously. I have free unclaimed AdWords credit, which Google offers to new accounts. Ads would increase viewership. They wouldn't even affect the
+reader experience, because the ads would be on other people's sites, not my own.
+
+I think the main problem is that ads don't really work for a personal blog. If your blog
+has a specific focus, you can advertise towards that specific form of content.
+My blog deliberately has no focus besides the things I want to write about, and I have no
+interest in changing that. There's no clear search queries I'd want to sponsor.
+If someone searches my name, they find this site with ease (the benefits of having a novel last name),
+so it's not like I need to pay for better placement.
+As for a banner ad, I don't even know what image I would use. It's like asking me to come up
+with a picture that summarizes my entire life.
+
+There also could be follow-on effects, where someone views my blog differently if they clicked
+a sponsored link to get there. For example, [I lost all trust in mattress recommendation
+websites after learning how online mattress advertising works](https://www.fastcompany.com/3065928/sleepopolis-casper-bloggers-lawsuits-underside-of-the-mattress-wars).
+Most importantly, you can pay for views, but the rate isn't great.
+At the previously mentioned price of $0.58 per click, a budget of $14.50/month only leads to
+25 clicks per month. Much worse than the 500 views sacrificed if I did it the other way around!
+In retrospect, given how ads work, the price per click has to be based on the revenue of the
+products people advertise, and if I don't sell anything, I'm priced out by everyone who does.
+
+Given that I've never ever seen an ad for a personal blog, it probably doesn't make sense
+to do so. Still, fun exercise to think through.

@@ -9,3 +9,4 @@ _site
 # Sometimes things crash
 *.exe.stackdump
 feedback
+Gemfile.lock
