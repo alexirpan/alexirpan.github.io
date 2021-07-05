@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why Don't I Have Ads?"
-date:   2021-07-05 00:51:00 -0700
+date:   2021-07-05 01:04:00 -0700
 ---
 
 Why doesn't this blog have ads?
