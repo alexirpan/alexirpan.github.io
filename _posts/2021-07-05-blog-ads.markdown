@@ -42,8 +42,8 @@ reader experience, because the ads would be on other people's sites, not my own.
 I think the main problem is that ads don't really work for a personal blog. If your blog
 has a specific focus, you can advertise towards that specific form of content.
 My blog deliberately has no focus besides the things I want to write about, and I have no
-interest in changing that. There's no clear search queries I'd want to sponsor. Besides,
-if someone searches my name, they find this site with ease (the benefits of having a novel last name),
+interest in changing that. There's no clear search queries I'd want to sponsor.
+If someone searches my name, they find this site with ease (the benefits of having a novel last name),
 so it's not like I need to pay for better placement.
 As for a banner ad, I don't even know what image I would use. It's like asking me to come up
 with a picture that summarizes my entire life.
