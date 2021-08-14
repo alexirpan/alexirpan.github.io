@@ -1,0 +1,179 @@
+---
+layout: post
+title:  "Five Years Later"
+date:   2020-08-18 10:59:00 -0700
+---
+
+*Sorta Insightful* turns six years old today!
+
+If you're new, every blogging anniversary, I do a meta-post about how
+my past year of posts. I'll be honest - I've had a lot less motivation
+to write this past year.
+
+I wouldn't say there's a single reason, it's more like a few.
+
+# More Time on Social Media
+
+I haven't checked how much time I've been spending on YouTube and Reddit, but it's
+definitely on the rise. Recommender algorithms keep getting better.
+
+I know these systems work well on me, so I try to avoid adding social media streams.
+I don't want to add any more doomscrolling into my life. That means no TikTok, no Instagram,
+and minimal Twitter. We'll see how long that lasts. For better or worse, those are
+the new communication mediums of today, and their culture goes forward with or without
+you.
+
+# Puzzlehunt Obligations
+
+This past year, I've been doing more work for puzzlehunts. It's hard work, but it's fun,
+and I would say it's acting as my main creative outlet.
+
+To me, the interesting part of puzzle construction is that you're trying to tell a story,
+but you intentionally have minimal control over how the story plays out. You're trying
+to convey a solve path, but if you drop too many hints then it isn't interesting.
+
+The more relevant part is that it's a team project, it has a hard deadline, and I can
+read comments from people who are looking forward to particapting. I feel more
+responsibility to constructing the hunt, and more urgency to hit our deadlines. By
+comparison, blogging is a much more personal affair with no strict deadlines.
+
+# Cooling Down Interests in my Hobbies
+
+A number of my posts were me writing about something I was passionate about. I wrote
+a post about a My Little Pony x Doctor Who crossover I liked, and a post about Neopets.
+Only, I'm less into MLP now, and I'm also less into Neopets. I still like them, and
+keep up-to-date on what's happening in those spaces, but they are a smaller part of my
+life than before.
+
+So when I think about writing a grand post explaining why I got into My Little Pony,
+it's a lot harder to do so. When I think about writing a post about why *Gunnerkrigg
+Court* is great, it's harder since I think about it a lot less. I'm basically
+retired from Dominion at this point, so that post is also sort of in limbo.
+
+What I'm realizing is that it is not just about the content of the post - there's also
+a right time for such posts to be written. I talked about writing an "Offline RL
+Manifesto" for a few years, because I thought it was criminally understudied, but it's
+since become a reasonably sized research field and it no longer feels as important to
+say something about it. I wanted to write a post about measurement, but by now all the
+people working on fairness / interepretability / AI safety have said the things I
+wanted to say. And so on. I feel much of my motivation for writing is derived from saying
+things that I haven't seen online, rather than adding or emphasizing a point I've seen
+before. So when I'm spending more time reading instead of writing...well, I see more things,
+which means I want to write about fewer things.
+
+I realize this isn't how writing has to work. Preaching to the choir is fun, after all.
+However, it's how I'm approaching writing right now.
+
+# Settling Into Patterns
+
+I feel like more of my life has "normalized", for lack of a better word. By this, I mean
+that if I picked some arbitrary week 1 month in the future, and made a prediction for what
+I would do that week, it would be more accurate than it was a few years ago.
+
+There's just fewer surprises. I'm not meeting as many people and doing fewer new things.
+This is all quite terrifying to be honest, because I'm way too young to settle down. I'm
+still figuring out what to do there, but that means I've had less inspiration for blogging.
+
+> It doesn't do you much good to draw unless you have something to draw, and the only place you're
+> getting anything to draw is out of that head. And the only way you can exercise the mind
+> is by bringing new ideas to it so it'll be surprised, and say "God I didn't know that."
+> That's the greatest thing in the world, that "Gee I didn't know that." And there you are,
+> you know?
+
+(Chuck Jones, director of several classic Looney Tunes cartoons. I recommend this [Every Frame a Painting](https://www.youtube.com/watch?v=kHpXle4NqWI) video, if you haven't seen it before.)
+{: .centered }
+
+# General Tiredness with COVID-19
+
+I stopped blogging about COVID at some point, but I remember believing that things would go
+back to normal after vaccines were widely available. However, I didn't account for the levels of vaccine
+hesitation we'd see, as well as the slower rollout of vaccines worldwide enabling evolution of variants
+that (might) escape vaccines developed so far.
+
+Essentially, last year, I could point to a clear future event (conclusion of widescale vaccine trials).
+Whereas now, I don't have anything to point to besides worldwide vaccination rates.
+
+# Statistics
+
+## Word Count
+
+Last year, I wrote [32,161 words]({% post_url 2020-08-18-five-years %}).
+This year, I wrote **26,955** words.
+
+{% highlight python %}
+5812 2020-08-18-ai-timelines.markdown  
+1112 2020-08-18-five-years.markdown  
+1549 2020-12-30-car-co2.markdown  
+6597 2021-01-29-mh-2021.markdown  
+4249 2021-02-18-flash-games.markdown  
+5420 2021-04-07-grad-school-5years.markdown  
+1018 2021-05-23-dominion-temple.markdown  
+ 587 2021-05-23-world-can-change.markdown  
+ 611 2021-07-05-blog-ads.markdown  
+26955 total
+{% endhighlight %}
+
+I wrote 9 posts this year. Some were quite long (average of 3000 words per post,
+wheras last year it was about 2500 words per post).
+
+# View Counts
+
+These are the view counts from August 18, 2019 to today, for the posts I've written
+this year.
+
+{% highlight python %}
+12426 2020-08-18-ai-timelines.markdown  
+  277 2020-08-18-five-years.markdown  
+ 1912 2020-12-30-car-co2.markdown  
+  912 2021-01-29-mh-2021.markdown  
+  167 2021-02-18-flash-games.markdown  
+ 2367 2021-04-07-grad-school-5years.markdown  
+  102 2021-05-23-dominion-temple.markdown  
+  210 2021-05-23-world-can-change.markdown  
+   86 2021-07-05-blog-ads.markdown  
+{% endhighlight %}
+
+This mostly tracks what I expected, although I'm surprised the post about Flash games
+has so few views. Maybe fewer people have nostalgia about Flash games than I expected.
+
+
+## Time Spent Writing
+
+Excluding time spent on this post, but including time spent on the AI timelines
+post, I spent **116 hours, 36 minutes** writing for my blog this year. This is
+more than last year but less than 2 years ago. That feels about right.
+
+
+# Posts in Limbo
+
+**Post about measurement:**
+
+Odds of writing this year: 20%
+Odds of writing eventually: 30%
+
+**Post about Gunnerkrigg Court:**
+
+Odds of writing this year: 45%
+Odds of writing eventually: 50%
+
+(Basically I am saying that if I don't do it this year, I don't think it will ever happen.)
+
+**Post about My Little Pony:**
+
+Odds of writing this year: 50%
+Odds of writing eventually: 90%
+
+I cannot see myself never writing about the My Little Pony fandom. It was a huge part of my life,
+but I'm ready to describe it as *was*, rather than *is*. Of course I say this when a lot of my
+music history is pony EDM...but outside of a few music artists I found via MLP, I don't care much
+about a lot of the MLP fan scene.
+
+**Post about Dominion Online:**
+
+Odds of writing this year: 25%
+Odds of writing eventually: 50%
+
+**Post about puzzlehunts:**
+
+Odds of writing this year: 70%
+Odds of writing eventually: 90%
