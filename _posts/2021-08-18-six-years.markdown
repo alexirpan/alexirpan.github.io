@@ -1,78 +1,88 @@
 ---
 layout: post
 title:  "Five Years Later"
-date:   2020-08-18 10:59:00 -0700
+date:   2021-08-18 00:01:00 -0700
 ---
 
 *Sorta Insightful* turns six years old today!
 
-If you're new, every blogging anniversary, I do a meta-post about how
-my past year of posts. I'll be honest - I've had a lot less motivation
-to write this past year.
-
-I wouldn't say there's a single reason, it's more like a few.
+If you're new, every year I do a meta-post about how my blogging went
+that year. I'll be honest - I've had a lot less motivation
+to write this past year. I wouldn't say there's a single reason, it's more like a few
+reasons compounding together.
 
 # More Time on Social Media
 
 I haven't checked how much time I've been spending on YouTube and Reddit, but it's
-definitely on the rise. Recommender algorithms keep getting better.
+definitely on the rise. Recommendation algorithms keep getting better.
 
 I know these systems work well on me, so I try to avoid adding social media streams.
 I don't want to add any more doomscrolling into my life. That means no TikTok, no Instagram,
 and minimal Twitter. We'll see how long that lasts. For better or worse, those are
-the new communication mediums of today, and their culture goes forward with or without
-you.
+the communication mediums of today, and culture goes forward with or without you.
 
 # Puzzlehunt Obligations
 
-This past year, I've been doing more work for puzzlehunts. It's hard work, but it's fun,
-and I would say it's acting as my main creative outlet.
+This past year, I've been doing more work for puzzlehunts. It's hard work, but it's fun.
+I'd say it's acting as my main creative outlet.
 
 To me, the interesting part of puzzle construction is that you're trying to tell a story,
 but you intentionally have minimal control over how the story plays out. You're trying
-to convey a solve path, but if you drop too many hints then it isn't interesting.
+to convey a solve path, but if you make it too obvious then the solve is no longer interesting.
 
-The more relevant part is that it's a team project, it has a hard deadline, and I can
-read comments from people who are looking forward to particapting. I feel more
-responsibility to constructing the hunt, and more urgency to hit our deadlines. By
-comparison, blogging is a much more personal affair with no strict deadlines.
+The more relevant part to this blog is that puzzle constructing takes a while. It's kind of like
+game development, where you place the solver in a system, they'll stretch it weird ways, and
+you just have to run around patching up all the holes that result. It's also a team project
+with a hard deadline where I can read comments from people who are looking forward to participating.
+That means a greater feeling of responsibility and urgency. Whereas this blog is a
+more personal affair with no strict deadlines.
 
-# Cooling Down Interests in my Hobbies
+To put hard numbers on this, based on my time tracker, last year I spent about 100 hours on
+blogging and about 435 hours on puzzlehunt construction. It's a pretty stark difference.
 
-A number of my posts were me writing about something I was passionate about. I wrote
-a post about a My Little Pony x Doctor Who crossover I liked, and a post about Neopets.
-Only, I'm less into MLP now, and I'm also less into Neopets. I still like them, and
-keep up-to-date on what's happening in those spaces, but they are a smaller part of my
-life than before.
+# Interest in my Hobbies are Cooling Down
+
+A number of my posts were me writing about something I was passionate about. I had
+a post about a [My Little Pony x Doctor Who crossover]({% post_url 2015-09-24-how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy %}),
+a post about a [My Little Pony x Euclidean Geometry crossover]({% post_url 2015-11-02-friendship-games-geometry %}),
+and a post about [Neopets]({% post_url 2018-11-10-neopets-economy %}). It made sense
+for me to write them at the time, but I'm less into MLP now, and I'm less into Neopets
+now, and I'm just not into fandom as aggressively as I was in 2015/2016. I still like
+them, and keep up-to-date on what happens in those spaces, but they're a smaller part
+of my life.
 
 So when I think about writing a grand post explaining why I got into My Little Pony,
-it's a lot harder to do so. When I think about writing a post about why *Gunnerkrigg
-Court* is great, it's harder since I think about it a lot less. I'm basically
-retired from Dominion at this point, so that post is also sort of in limbo.
+it's a lot harder to do so. When I consider starting a post about why you should
+read *Gunnerkrigg Court*, it's hard because I think about *Gunnerkrigg* a lot less.
+There's always Dominion, but at this point I'm basically retired.
 
-What I'm realizing is that it is not just about the content of the post - there's also
-a right time for such posts to be written. I talked about writing an "Offline RL
-Manifesto" for a few years, because I thought it was criminally understudied, but it's
-since become a reasonably sized research field and it no longer feels as important to
-say something about it. I wanted to write a post about measurement, but by now all the
-people working on fairness / interepretability / AI safety have said the things I
-wanted to say. And so on. I feel much of my motivation for writing is derived from saying
-things that I haven't seen online, rather than adding or emphasizing a point I've seen
-before. So when I'm spending more time reading instead of writing...well, I see more things,
-which means I want to write about fewer things.
+What I've realized is that most of my posts are not long-burning posts. They are almost
+always works of passion - I bash them out in a few days, or I don't finish them at all.
+Sometimes, that passion is a function of the time, rather than anything intrinsic
+about myself. I told a few people I was going to write an "offline RL manifesto"
+back in 2018, since I thought it was criminally understudied, but it's since become
+a reasonably sized research area and that manifesto no longer feels as important.
+The post I wanted to write about measurement feels less important now that
+fairness / interpretability / AI safety has gotten more accepted.
+
+I know I just said blogging is a personal activity, but I guess one of my personal
+activities is writing up hot takes, and takes can't be hot if you feel they're
+already known. It somehow feels more rewarding to create a new point of discussion,
+rather than adding to or emphasizing an existing one.
 
 I realize this isn't how writing has to work. Preaching to the choir is fun, after all.
-However, it's how I'm approaching writing right now.
+However, it's how I'm approaching writing right now. This is likely why I've found
+puzzle construction to be pretty fun - puzzles deliberately aim to be novel.
 
 # Settling Into Patterns
 
 I feel like more of my life has "normalized", for lack of a better word. By this, I mean
 that if I picked some arbitrary week 1 month in the future, and made a prediction for what
-I would do that week, it would be more accurate than it was a few years ago.
+I would do that week, it would be more accurate than it would be a few years ago.
 
 There's just fewer surprises. I'm not meeting as many people and doing fewer new things.
-This is all quite terrifying to be honest, because I'm way too young to settle down. I'm
-still figuring out what to do there, but that means I've had less inspiration for blogging.
+This is all quite terrifying, to be honest. I'm still figuring out what to do there, but
+seeing less means I've had less inspiration for blogging.
 
 > It doesn't do you much good to draw unless you have something to draw, and the only place you're
 > getting anything to draw is out of that head. And the only way you can exercise the mind
@@ -91,7 +101,16 @@ hesitation we'd see, as well as the slower rollout of vaccines worldwide enablin
 that (might) escape vaccines developed so far.
 
 Essentially, last year, I could point to a clear future event (conclusion of widescale vaccine trials).
-Whereas now, I don't have anything to point to besides worldwide vaccination rates.
+Whereas now, I don't have anything to point to besides rising vaccination rates (yay!) and new
+variants (boo), with an unclear sense on which way they'll trend. And that's sapped a lot of
+energy out of my life in general.
+
+\* \* \*
+{: .centered }
+
+I've considered whether all this means I should stop blogging. Right now, if I imagine never updating
+this blog again, it feels really bad, so I do care about blogging and will be trying to slice out
+more time towards working on it.
 
 # Statistics
 
@@ -134,14 +153,17 @@ this year.
 {% endhighlight %}
 
 This mostly tracks what I expected, although I'm surprised the post about Flash games
-has so few views. Maybe fewer people have nostalgia about Flash games than I expected.
+has so few views. Fewer people have nostalgia about Flash games than I expected.
 
 
 ## Time Spent Writing
 
-Excluding time spent on this post, but including time spent on the AI timelines
-post, I spent **116 hours, 36 minutes** writing for my blog this year. This is
-more than last year but less than 2 years ago. That feels about right.
+I spent **98 hours, 44 minutes** writing for my blog this year, which is about
+20 hours less than I spent last year.
+
+That rounds to 15-16 minutes per day, which is actually not too bad for a time
+commitment (although in practice my blogging is very bursty, rather than writing
+a few minutes each day).
 
 
 # Posts in Limbo
@@ -151,12 +173,14 @@ more than last year but less than 2 years ago. That feels about right.
 Odds of writing this year: 20%
 Odds of writing eventually: 30%
 
+If I don't write this next year I'm going to remove it from my list of pending ideas.
+
 **Post about Gunnerkrigg Court:**
 
 Odds of writing this year: 45%
 Odds of writing eventually: 50%
 
-(Basically I am saying that if I don't do it this year, I don't think it will ever happen.)
+Basically I am saying that if I don't do it this year, I don't think it will ever happen.
 
 **Post about My Little Pony:**
 
@@ -165,8 +189,9 @@ Odds of writing eventually: 90%
 
 I cannot see myself never writing about the My Little Pony fandom. It was a huge part of my life,
 but I'm ready to describe it as *was*, rather than *is*. Of course I say this when a lot of my
-music history is pony EDM...but outside of a few music artists I found via MLP, I don't care much
-about a lot of the MLP fan scene.
+music history is pony EDM...but outside of a few music artists I found via MLP, I've stopped
+caring about a lot of the MLP fan scene. A lot of my enjoyment of MLP was dervied from new
+episodes coming out, and so far I have zero hype about Generation 5.
 
 **Post about Dominion Online:**
 
