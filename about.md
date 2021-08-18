@@ -27,7 +27,7 @@ the introductory discrete math and probability course.
 During undergrad, I was
 very unsure whether I wanted to keep doing research, so I applied to the Google
 AI Residency Program. After I got in, I decided I'd try it for a year, then
-decide what to do. I ended up deciding to stay at Google full-time.
+decide what to do. I ended up staying at Google full-time.
 
 In 2016, I was an Honorable Mention for the NSF Graduate Research Fellowship
 Program.
@@ -45,7 +45,7 @@ month.
 In my free time, I primarily play card games, play video games, or participate
 in puzzle hunts.
 My main game is Dominion, which I play competitively. At my best, I was in
-the top 20 worldwide. I'm also prone to joining fandoms. I watch
+the top 20 worldwide. I'm also prone to joining fandoms. I'm a fan of
 *My Little Pony: Friendship is Magic* (which has officially concluded),
 and most of my music library is still made of Touhou music.
 
