@@ -14,7 +14,18 @@ Puzzles come in all sorts of forms, but will always result in an answer, which i
 usually an English word or phrase. See [this post](https://blog.vero.site/post/puzzlehunts)
 for a more detailed introduction.
 
-I have been solving puzzlehunts since 2010, and have written some puzzles too.
+I've been solving puzzlehunts since 2010, and normally try to fly in for MIT Mystery Hunt, which is the biggest puzzlehunt of the year.
+Here are some Mystery Hunt related things I've written:
+
+* [Mystery Hunt Bingo](https://www.alexirpan.com/mystery-hunt-bingo/)
+* Write-ups for past Mystery Hunts:
+    * [2017]({% post_url 2017-01-20-mh-2017 %})
+    * [2018]({% post_url 2018-01-18-mh-2018 %})
+    * [2019]({% post_url 2019-01-26-mh-2019 %})
+    * [2020]({% post_url 2020-01-22-mh-2020 %})
+    * [2021]({% post_url 2021-01-29-mh-2021 %})
+
+I've also written some puzzles.
 My more recent puzzles are better than my old ones, but I'm including everything for
 completeness.
 
