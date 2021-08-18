@@ -19,6 +19,8 @@ header_links:
       title: "Reviews"
     - url: "/projects/"
       title: "Projects"
+    - url: "/puzzles/"
+      title: "Puzzles"
     - url: "/archive/"
       title: "Archive"
     - url: "/research/"
