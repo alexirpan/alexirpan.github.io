@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Six Years Later"
-date:   2021-08-18 00:01:00 -0700
+date:   2021-08-18 00:18:00 -0700
 ---
 
 *Sorta Insightful* turns six years old today!
