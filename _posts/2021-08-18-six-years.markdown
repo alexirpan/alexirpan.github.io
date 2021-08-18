@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Five Years Later"
+title:  "Six Years Later"
 date:   2021-08-18 00:01:00 -0700
 ---
 
@@ -8,34 +8,35 @@ date:   2021-08-18 00:01:00 -0700
 
 If you're new, every year I do a meta-post about how my blogging went
 that year. I'll be honest - I've had a lot less motivation
-to write this past year. I wouldn't say there's a single reason, it's more like a few
+to write this past year. There isn't a single reason for this. It's more like a few
 reasons compounding together.
 
 # More Time on Social Media
 
 I haven't checked how much time I've been spending on YouTube and Reddit, but it's
-definitely on the rise. Recommendation algorithms keep getting better.
+definitely rising. Recommendation algorithms keep getting better.
 
 I know these systems work well on me, so I try to avoid adding social media streams.
-I don't want to add any more doomscrolling into my life. That means no TikTok, no Instagram,
-and minimal Twitter. We'll see how long that lasts. For better or worse, those are
+I don't have a TikTok or Instagram or Snapchat, since I don't want to add any many
+mindless scrolling into my life if I can help it. We'll see how long that lasts.
+For better or worse, those are
 the communication mediums of today, and culture goes forward with or without you.
 
 # Puzzlehunt Obligations
 
-This past year, I've been doing more work for puzzlehunts. It's hard work, but it's fun.
-I'd say it's acting as my main creative outlet.
+This past year, I've been doing more work for [puzzlehunts](/puzzles/). It's hard work, but it's fun.
 
-To me, the interesting part of puzzle construction is that you're trying to tell a story,
-but you intentionally have minimal control over how the story plays out. You're trying
+I see puzzle construction as trying to tell a story where you have minimal control over
+how the story plays out. You're trying
 to convey a solve path, but if you make it too obvious then the solve is no longer interesting.
 
-The more relevant part to this blog is that puzzle constructing takes a while. It's kind of like
-game development, where you place the solver in a system, they'll stretch it weird ways, and
-you just have to run around patching up all the holes that result. It's also a team project
+The more relevant part re: this blog is that puzzle constructing is time consuming. It's like
+game development. You place the solver in a system, they'll stretch it in ways you never thought of,
+and you just have to run around patching up all the holes that become apparent. It's also a team project
 with a hard deadline where I can read comments from people who are looking forward to participating.
-That means a greater feeling of responsibility and urgency. Whereas this blog is a
-more personal affair with no strict deadlines.
+In comparison, this blog is a personal affair, with no strict deadlines or hype trains.
+That means I've felt greater feelings of responsibility and urgency for puzzlehunt writing compared
+to blogging.
 
 To put hard numbers on this, based on my time tracker, last year I spent about 100 hours on
 blogging and about 435 hours on puzzlehunt construction. It's a pretty stark difference.
@@ -44,11 +45,12 @@ blogging and about 435 hours on puzzlehunt construction. It's a pretty stark dif
 
 A number of my posts were me writing about something I was passionate about. I had
 a post about a [My Little Pony x Doctor Who crossover]({% post_url 2015-09-24-how-an-audio-play-about-a-time-traveling-pony-turned-me-into-a-fanboy %}),
-a post about a [My Little Pony x Euclidean Geometry crossover]({% post_url 2015-11-02-friendship-games-geometry %}),
+a post about a [My Little Pony x Euclidean geometry crossover]({% post_url 2015-11-02-friendship-games-geometry %}),
 and a post about [Neopets]({% post_url 2018-11-10-neopets-economy %}). It made sense
 for me to write them at the time, but I'm less into MLP now, and I'm less into Neopets
-now, and I'm just not into fandom as aggressively as I was in 2015/2016. I still like
-them, and keep up-to-date on what happens in those spaces, but they're a smaller part
+ever since the site redesign,
+and I'm just not into fandom as aggressively as I was in 2015 or 2016. I still like
+MLP and Neopets, and keep up-to-date on what happens in those spaces, but they're a smaller part
 of my life.
 
 So when I think about writing a grand post explaining why I got into My Little Pony,
@@ -56,31 +58,31 @@ it's a lot harder to do so. When I consider starting a post about why you should
 read *Gunnerkrigg Court*, it's hard because I think about *Gunnerkrigg* a lot less.
 There's always Dominion, but at this point I'm basically retired.
 
-What I've realized is that most of my posts are not long-burning posts. They are almost
-always works of passion - I bash them out in a few days, or I don't finish them at all.
+What I've realized is that most of my posts are not long-burning posts. They're
+works of passion - I bash them out in a few days, or I don't finish them at all.
 Sometimes, that passion is a function of the time, rather than anything intrinsic
 about myself. I told a few people I was going to write an "offline RL manifesto"
 back in 2018, since I thought it was criminally understudied, but it's since become
 a reasonably sized research area and that manifesto no longer feels as important.
 The post I wanted to write about measurement feels less important now that
-fairness / interpretability / AI safety has gotten more accepted.
+fairness / interpretability / AI safety is more widely accepted.
 
 I know I just said blogging is a personal activity, but I guess one of my personal
 activities is writing up hot takes, and takes can't be hot if you feel they're
-already known. It somehow feels more rewarding to create a new point of discussion,
+already known. I somehow find it more rewarding to create a new point of discussion,
 rather than adding to or emphasizing an existing one.
 
 I realize this isn't how writing has to work. Preaching to the choir is fun, after all.
 However, it's how I'm approaching writing right now. This is likely why I've found
-puzzle construction to be pretty fun - puzzles deliberately aim to be novel.
+puzzle construction to be nice - puzzles deliberately aim to be novel.
 
 # Settling Into Patterns
 
 I feel like more of my life has "normalized", for lack of a better word. By this, I mean
 that if I picked some arbitrary week 1 month in the future, and made a prediction for what
-I would do that week, it would be more accurate than it would be a few years ago.
+I would do that week, it'd be more accurate than if I did the same exercise a few years ago.
 
-There's just fewer surprises. I'm not meeting as many people and doing fewer new things.
+There's just fewer surprises. I'm not meeting as many people, and I'm doing fewer new things.
 This is all quite terrifying, to be honest. I'm still figuring out what to do there, but
 seeing less means I've had less inspiration for blogging.
 
@@ -93,24 +95,28 @@ seeing less means I've had less inspiration for blogging.
 (Chuck Jones, director of several classic Looney Tunes cartoons. I recommend this [Every Frame a Painting](https://www.youtube.com/watch?v=kHpXle4NqWI) video, if you haven't seen it before.)
 {: .centered }
 
+I am spending more time on social media...but that doesn't seem to drive much inspiration
+for me.
+
 # General Tiredness with COVID-19
 
 I stopped blogging about COVID at some point, but I remember believing that things would go
-back to normal after vaccines were widely available. However, I didn't account for the levels of vaccine
-hesitation we'd see, as well as the slower rollout of vaccines worldwide enabling evolution of variants
+back to normal after vaccines were widely available. However, I didn't account for the degree of vaccine
+hesitation, as well as the slower rollout of vaccines worldwide enabling evolution of variants
 that (might) escape vaccines developed so far.
 
-Essentially, last year, I could point to a clear future event (conclusion of widescale vaccine trials).
-Whereas now, I don't have anything to point to besides rising vaccination rates (yay!) and new
-variants (boo), with an unclear sense on which way they'll trend. And that's sapped a lot of
+My expectation is that things are and **will** get better, but
+last year, I could point to a clear future event (conclusion of widescale vaccine trials).
+Whereas this year, I don't have anything to point to besides rising vaccination rates (yay!) and new
+variants (boo), with an unclear sense on how both will evolve. That's sapped a lot of
 energy out of my life in general.
 
 \* \* \*
 {: .centered }
 
-I've considered whether all this means I should stop blogging. Right now, if I imagine never updating
-this blog again, it feels really bad, so I do care about blogging and will be trying to slice out
-more time towards working on it.
+I've considered whether all this means I should stop blogging. As an exercise, I've tried imagining
+the world where I never update this blog again...and it feels really bad. I do care about blogging,
+so I'll try to slice out more time towards working on it.
 
 # Statistics
 
@@ -132,12 +138,12 @@ This year, I wrote **26,955** words.
 26955 total
 {% endhighlight %}
 
-I wrote 9 posts this year. Some were quite long (average of 3000 words per post,
-wheras last year it was about 2500 words per post).
+I wrote 9 posts this year. Some were quite long - this year I averaged 3000 words per post,
+compared to about 2500 words per post last year.
 
 # View Counts
 
-These are the view counts from August 18, 2019 to today, for the posts I've written
+These are the view counts from August 18, 2020 to today, for the posts I've written
 this year.
 
 {% highlight python %}
@@ -153,15 +159,15 @@ this year.
 {% endhighlight %}
 
 This mostly tracks what I expected, although I'm surprised the post about Flash games
-has so few views. Fewer people have nostalgia about Flash games than I expected.
+has so few views. Maybe my nostalgia about Flash games is narrower than I thought.
 
 
 ## Time Spent Writing
 
-I spent **98 hours, 44 minutes** writing for my blog this year, which is about
+I spent **100 hours, 11 minutes** writing for my blog this year, which is about
 20 hours less than I spent last year.
 
-That rounds to 15-16 minutes per day, which is actually not too bad for a time
+That rounds to 16-17 minutes per day, which is actually not too bad for a time
 commitment (although in practice my blogging is very bursty, rather than writing
 a few minutes each day).
 
@@ -170,35 +176,36 @@ a few minutes each day).
 
 **Post about measurement:**
 
-Odds of writing this year: 20%
+Odds of writing this year: 20%  
 Odds of writing eventually: 30%
 
 If I don't write this next year I'm going to remove it from my list of pending ideas.
 
 **Post about Gunnerkrigg Court:**
 
-Odds of writing this year: 45%
+Odds of writing this year: 45%  
 Odds of writing eventually: 50%
 
-Basically I am saying that if I don't do it this year, I don't think it will ever happen.
+Basically I am saying that if I don't do it this year, I don't think it will ever happen
+and will remove it from this list.
 
 **Post about My Little Pony:**
 
-Odds of writing this year: 50%
+Odds of writing this year: 50%  
 Odds of writing eventually: 90%
 
 I cannot see myself never writing about the My Little Pony fandom. It was a huge part of my life,
 but I'm ready to describe it as *was*, rather than *is*. Of course I say this when a lot of my
 music history is pony EDM...but outside of a few music artists I found via MLP, I've stopped
-caring about a lot of the MLP fan scene. A lot of my enjoyment of MLP was dervied from new
-episodes coming out, and so far I have zero hype about Generation 5.
+caring about a lot of the brony fan scene. Much of my enjoyment of MLP was derived from seeing
+how new episodes were interpreted by the fandom, and so far I have zero hype about Generation 5.
 
 **Post about Dominion Online:**
 
-Odds of writing this year: 25%
+Odds of writing this year: 25%  
 Odds of writing eventually: 50%
 
 **Post about puzzlehunts:**
 
-Odds of writing this year: 70%
+Odds of writing this year: 70%  
 Odds of writing eventually: 90%
