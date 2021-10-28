@@ -5,69 +5,60 @@ date:   2021-08-18 00:18:00 -0700
 ---
 
 How to Invent Everything is a book by Ryan North, of Dinosaur Comics fame. Its
-premise is pretty simple - suppose your time machine broke, and you got stranded
-in the past. You want to
+premise is pretty simple - time travel is real! You've just used your time machine to go to the past,
+but now it's broken and you're stranded there. You want to:
 
 1. Not die.
 2. Recreate your modern life of luxury.
 
-The book doesn't literally cover everything, but you can think of it as a civilization
-reference book.
-It starts from basic survival tip, building up to important
-technologies like smelting metal, and then discussing fundamental science concepts
-to relay to contemporary scientists to leapfrog several centuries of scientific progress.
+How to Invent Everything doesn't literally cover everything, but you can view it as a book about
+the highlights of civilization. It covers basic survival tips, building up to important technologies
+like charcoal and the compass, then ending with fundamental science concepts and a basic intro to
+computing and logic gates. Its main thesis is that with the right reference text (itself),
+you could reproduce 12000 years of human progress in about 5 years of work.
 
-The main reason I like this book a lot is that it's very, very reductionist. For example,
-let's say you're sent back to the 1400s. Then you can pretty easily invent the steam engine as long
-as you can describe how it works, because the requisite techonlogies have been invented already.
-But what if you're in prehistoric times, before smelting was invented? You'll need to invent that first.
-But you'll also need to invent the technology to produce precisely shaped metal, to make the pistons
-of your steam engine air-tight. To do that, you need standardized units of measure, so you'll need to
-invent that too, and so on. That's not to say there are no abstractions. The premise is mostly an
-excuse to talk about key inventions in history and when + how they were invented, and deliberately
-ignores questions of how you convince people to build your designs.
+Odds you're ever in the exact scenario of being trapped in the past? Vanishingly small. Still, it's
+a fun read if you're interested in exploring how humanity improved its quality of life from first
+principles.
 
-Another reason is that it emphasizes the importance of information. One point the book hammers over
-and over again is that many inventions could have been invented decades or centuries earlier than
-they were, and the only reason is because people did not have the right ideas. It would be easy
-to take away the theory that humans are dumb, and in some sense that's true. If you assume that
-evolution increase intelligence very slowly, then the natural conclusion is that humanity
-is the dumbest species that's smart enough to create civilization. So yes, we're dumb. But on
-the other hand, when you read the "solution" to different technologies, it's sometimes hard to
-fault humanity.
+\* \* \*
+{: .centered }
 
-Take crop rotation for instance. If you grow the same crop every year without any fertilizer, those
-crops will use up all the nitrogen in the soil. This makes crops grow worse each year until they
-stop growing entirely. To fix this, you need to let the soil recover. The first way humanity fixed this
-was to only grow crops every other year. On the other year, they let animals graze instead. The animal
-poop reintroduced nitrogen to the soil, enabling a sustainable food supply. The main issue is that
-now you're only achieving 50% efficiency, but eventually people learned that planting legumes like
-clover helped replenish nitrogen thanks to their symbiotic relationship with nitrogen-fixing bacteria.
+The main reason I like this book a lot is that it's very, very reductionist. That necessarily falls from
+the premise, but it makes it easy to trace the links between technological innovation. Steam engines
+rely on precision engineering to make airtight pistons. That requires knowing how to make steel, and a standard set of
+units for manufacturing. Steel requires knowing how to smelt iron, and that requires charcoal.
+Sure, there are a lot of details to handle for getting the raw materials, and convincing people to
+help you, but having the road map to the core of the Industrial Revolution is a big deal, and in reality
+it took millenia to get from charcoal to steam.
 
-Now imagine you are a generic human around 10000 BC, the current estimate for when agriculture was invented.
-You've just gotten a stable food supply, and know nothing about any of this nitrogen chemistry. Now someone
-tells you that, no actually you aren't allowed to plant wheat yet, first you have to plant some legumes.
-I
-can't plant wheat
-yet, you've got to plant a legume, but don't worry it'll make the soil last longer. 
+This ties into a central theme of the book: over and over again, it points out the difference between
+when inventioned were invented, and when they *could* have been invented. Often, the gap is many decades or
+centuries. It'd be easy to conclude that humans are dumb, and in some sense that's true.
+If you assume that evolution increase intelligence very slowly, and civilization appears as soon as an
+organism is smart enough to make it,
+then the natural conclusion is that humanity is the *dumbest* species that's smart enough to create civilization. So yes, we're dumb.
 
+On the other hand, when you read the "solution" to different technologies, it's sometimes hard to fault
+humanity. The prerequisites for the bicycle were around for a long time, but considering the design, it's
+easy to see how minor changes can make the bicycle just a novelty, rather than a more efficient means of
+transportation. (See [this post](https://rootsofprogress.org/why-did-we-wait-so-long-for-the-bicycle) by
+Jason Crawford for more analysis.)
 
+It's also easy to see how environmental factors might hamper innovtation.
+Take crop rotation for instance. The core idea of crop rotation is that if you grow the same crop every
+year, and haven't invented fertilizer yet, your crops
+will use up all the nitrogen in the soil. The next year's crop is worse, and eventually the soil is no
+longer fertile. To fix this, you can take years off and let grazing animals live there, since their
+poop will reintroduce nitrogen. Alternatively, you can plant legumes like clover, which replenish nitrogen
+thanks to their symbiotic relationship with nitrogen-fixing bacteria.
 
+But, imagine you are a generic human around 10000 BC. You've just discovered the basics of farming, and
+have reached an uneasy level of food security. Now some bozo is telling you to leave a perfectly good field alone
+for long term sustainability. Are you going to listen to them?
 
-Information is Everything
------------------------------------------------------------------------
-
-Okay, I am 95% sure this was an intended takeaway.
-
-How to Invent Everything has its origins in a smaller scale thought experiment: if you were
-teleported back in time, and could introduce one new idea, at what point in time would you
-have the biggest impact on the trajectory of human life?
-
-Now
-
-Ryan eventually gave a TED talk
-about this, and given his computational linguistics background he somewhat obviously concluded
-that language was the most important.
-
-The thing is, I'm not sure he's wrong.
-
+Keep in mind that any crop experimenting is going to have a long delay to payoff, and if you mess it up,
+people go hungry. It's easy to see why we don't have evidence of two-field crop rotation until 6000 BC,
+and four-field crop rotation wasn't invented until around the [17th century](https://en.wikipedia.org/wiki/British_Agricultural_Revolution).
+If you don't know any of the nitrogen chemistry, it seems very hard to discover the causal link between
+crop sequencing and crop yields, especially given confounding factors like weather and rainfall.
