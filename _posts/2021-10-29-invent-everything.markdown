@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Review: How To Invent Everything"
-date:   2021-10-29 02:21:00 -0700
+date:   2021-10-29 02:27:00 -0700
 ---
 
-*How to Invent Everything* is a book by Ryan North, of [Dinosaur Comics](qwantz.com/) fame. Its
+*How to Invent Everything* is a book by Ryan North, of [Dinosaur Comics](https://qwantz.com/) fame. Its
 premise - time travel is real! You've just used your time machine,
 but now it's broken and you're stuck in the past. You want to:
 
