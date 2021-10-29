@@ -27,8 +27,9 @@ principles.
 The main reason I like this book a lot is that it's very, very reductionist. That necessarily falls from
 the premise, but it makes it easy to trace the links between technological innovation. Steam engines
 rely on precision engineering to make airtight pistons. That requires knowing how to make steel, and a standard set of
-units for manufacturing. Steel requires knowing how to smelt iron, and that requires charcoal.
-Sure, there are a lot of details to handle for getting the raw materials, and convincing people to
+units for manufacturing. Steel requires knowing how to smelt iron, and that requires kilns. Getting a kiln
+to high enough temperature needs brick, and bricks need charcoal (again, to reach high enough temperature).
+There are a lot of details to handle for getting the raw materials, and convincing people to
 help you, but having the road map to the core of the Industrial Revolution is a big deal, and in reality
 it took millenia to get from charcoal to steam.
 
@@ -45,7 +46,7 @@ easy to see how minor changes can make the bicycle just a novelty, rather than a
 transportation. (See [this post](https://rootsofprogress.org/why-did-we-wait-so-long-for-the-bicycle) by
 Jason Crawford for more analysis.)
 
-It's also easy to see how environmental factors might hamper innovtation.
+It's also easy to see how environmental factors might hamper innovation.
 Take crop rotation for instance. The core idea of crop rotation is that if you grow the same crop every
 year, and haven't invented fertilizer yet, your crops
 will use up all the nitrogen in the soil. The next year's crop is worse, and eventually the soil is no
@@ -62,3 +63,53 @@ people go hungry. It's easy to see why we don't have evidence of two-field crop 
 and four-field crop rotation wasn't invented until around the [17th century](https://en.wikipedia.org/wiki/British_Agricultural_Revolution).
 If you don't know any of the nitrogen chemistry, it seems very hard to discover the causal link between
 crop sequencing and crop yields, especially given confounding factors like weather and rainfall.
+
+I don't want to give humanity too much credit, so I'll also mention that hot air balloons took an embarassingly
+long time to invent, given that baskets, controlled fire, and fabric all existed for centuries. There's also
+a fun anecdote about the Pelton wheel, a more efficient waterwheel invented in the 1870s. We have evidence of
+waterwheels from the year 400. There are only two differences - the water is pressured by feeding it through a narrow
+pipe, and the shape of the paddles is changed. It *really* doesn't feel like it should have taken 1400 years to
+discover those improvements...and it's made worse when the book cites a [source](https://trove.nla.gov.au/newspaper/article/200979544)
+that Pelton was inspired by spraying a cow in the face.
+
+
+
+\* \* \*
+{: .centered }
+
+Does How to Invent Everything offer any greater truths about the universe? Well, maybe. I came away with a few takeaways.
+
+**Models don't have to be correct to be useful**. Many times, people had the wrong idea about why
+a technology worked, but that didn't stop it from working. For thousands of years, no one knew where alcohol
+came from in beer, but people brewed it anyways. Similarly, there is evidence that Egyptians knew that
+eating liver helped them see in the dark, but it would take many years to learn this was because livers are
+heavy in vitamin A.
+
+**Technology can be lost**. [Rongorongo](https://en.wikipedia.org/wiki/Rongorongo) is a set of glyphs
+found on Easter Island that might be an independent invention of writing, but it's hard to tell because no one knows how to read it.
+The Rapa Nui culture said only the privileged few could be taught how to read and write, and by the time
+a smallpox epidemic went through the island, anyone literate was dead and the symbols were just that - symbols.
+
+As another example, the cure for scurvy was lost and rediscovered *seven* different times between 1400 and its final
+discovery in 1907. That's *crazy*. You wouldn't think "eat a fresh orange" would be so hard for a society to
+remember, and yet there it is.
+
+**Society advances when information spreads easily**. One question *How To Invent Everything* toys with
+what point in history would let you most influence the trajectory of humanity.
+It concludes that the answer is either introducing spoken language, or introducing writing. Spoken language
+allowed humanity to share complex concepts with each other, which let ideas live after death. Writing (and later,
+the printing press) allowed people to share those concepts further than their community. Even if an entire
+civilization disappeared, if their writing remained, their ideas could persist.
+
+They are so incredibly useful to society that it's hard to see how progress was made before their invention.
+And they look a *long* time to invent. Anatomically modern humans are estimated at 200,000 years ago,
+spoken language is estimated at 50,000 years ago, and writing is estimated at around 3200 BC.
+Again, I don't fault humanity for this. Getting a community to agree on the meanings of arbitrary sounds seems *really*
+hard. Getting that same group to agree on how those sounds map to glyphs seems *extra* hard. Doing so gives the
+world.
+
+If the engine of invention is powered by people sharing random ideas until good ones emerge, then
+I can't help but wonder if the best inventions are ones that make sharing ideas easier. Social media's gotten a beating
+every since 2016, but I am coming around to the [argument](https://stratechery.com/2020/zero-trust-information/) that it
+has increased the volume of both bad information and valuable information. In this view, you can argue for free speech
+both morally (people should not have to self-censor) and practically (some important ideas used to be heretical).
