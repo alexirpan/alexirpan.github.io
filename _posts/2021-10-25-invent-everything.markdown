@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Review: How To Invent Everything"
-date:   2021-08-18 00:18:00 -0700
+date:   2021-10-29 02:21:00 -0700
 ---
 
 *How to Invent Everything* is a book by Ryan North, of [Dinosaur Comics](qwantz.com/) fame. Its
