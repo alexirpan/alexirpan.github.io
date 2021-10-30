@@ -4,7 +4,7 @@ title: Puzzles
 permalink: /puzzles/
 ---
 
-*Last updated August 18, 2021.*
+*Last updated October 30, 2021.*
 
 One of my main hobbies is puzzlehunts. They're a little hard to describe,
 but generally, a puzzlehunt puzzle is some data that usually
@@ -29,6 +29,15 @@ Here are some Mystery Hunt related things I've written:
 I've also written some puzzles.
 My more recent puzzles are better than my old ones, but I'm including everything for
 completeness.
+
+# 2021
+
+* Teammate Hunt 2021
+    * [Objection!](https://teammatehunt.com/puzzles/objection), with Ivan Wang
+    * [All That's Left To Do is Extract](https://teammatehunt.com/puzzles/all-thats-left-to-do-is-extract), with Ivan Wang and Rachel Wei
+    * [Marquee Fonts](https://teammatehunt.com/puzzles/marquee-fonts), with Olga Vinogradova and Rachel Wei
+    * [Plagiarism](https://teammatehunt.com/puzzles/plagiarism)
+    * [The Mystical Plaza](https://teammatehunt.com/puzzles/the-mystical-plaza) (meta), with Olga Vinogradova and Rachel Wei
 
 # 2020
 
