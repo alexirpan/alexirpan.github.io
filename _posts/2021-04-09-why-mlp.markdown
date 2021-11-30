@@ -31,7 +31,8 @@ first.
 
 And boy is that complicated.
 
-2010-2011: The Beginning
+
+The Beginning
 -------------------------------------------------------------------------------------
 
 The first thing to explain about My Little Pony is that it was never supposed to be as successful
@@ -76,15 +77,64 @@ Make no mistake, it is a good show, but good shows don't necessarily lead to lar
 can be hard to predict.
 
 I think the reason it grew so big was that the premise was incredibly novel. Not the premise of the show:
-the premise of the fandom. "Several men, age 15 to 30, swear up and down that the new My Little Pony
-show is worth watching" was such a strange idea that it convinced people to try watching the show.
-The meme was contagious enough to get people to overcome their existing aversions to watching a cartoon
-marketed towards 7 year old girls, and every pony avatar and pony edit created afterwards fed the cycle.
+the premise of the fandom. "Several 15 to 30 year old men swear up and down that the new My Little Pony
+show is worth watching" was such a strange, bizarre idea that it got people to overcome their
+existing aversions towards watching a cartoon marketed towards 7 year old girls. That was how I
+got into it, and every pony avatar and pony edit created afterwards fed the cycle.
 When people talk about the "golden age" of the brony fandom, they usually mean fan work from this time.
-[Ponycraft 2](https://www.youtube.com/watch?v=JJbAT1wzS8U)
+I legitimately think [Ponycraft 2](https://www.youtube.com/watch?v=JJbAT1wzS8U) still holds up today
+as an MLP edit of the Starcraft II trailer.
 
 https://www.youtube.com/watch?v=Mw2c9dXtr5k
 https://www.youtube.com/watch?v=O8Eyf07vmKc
+
+The way I see fan content in general is that it's like painting a tapestry, but instead of the standard
+colors like red and blue, you get more exotic colors like Papyrus or Reimu. This makes it much harder
+for other people to appreciate the art, but if you understand the references, it lets the work
+convey much more specific feelings and ideas.
+
+My Little Pony has a very, *very* deep well of characterization, as well as untapped potential in its
+worldbuilding. There's a lot of options in the creativity sandbox without ever straying too far from
+MLP canon. So when the MLP fandom does something, it goes **hard**. Make a 9 hour Ace Attorney x MLP
+crossover video series? Sure, why not - they talk slow but the resolution of the case is excellent.
+There are countless examples of fans spending tons of time making something purely for other bronies,
+and although Sturgeon's Law applies, there's *so much* fan content that the 10% good is plentiful,
+and the top 1% is exceptional. I've grown a little tired of the Fallout Equestria verse, but the
+original is still a nice case study in how to write a protagonist who use all their abilities
+to their limit.
+
+
+
+Backlash
+-------------------------------------------------------------------------------------
+
+One thing I'll always remember from my high school history teachers is that when you have one
+culture / social niche, there's always a counterculture that forms and defines itself against it.
+Brony culture is no different, and it got hit especially bad because
+
+1) It grew very quickly, to the point that almost everybody had heard about it.
+2) It was incredibly easy to make fun of.
+
+
+In the Big Five personality trait model, one of the dimensions is "openness to experience". If a grown
+man decides to watch MLP, it's a pretty blatant declaration that they're opening to trying new things.
+
+
+
+Your Words Have No Power
+---------------------------------------------------------------
+
+> When kids these days like something, they call themselves the trash of that thing.
+
+There is a grand tradition of groups taking slurs and adopting them for themselves. ["Queer"](https://www.cjr.org/language_corner/queer.php)
+used to be used in contempt. Now it's part of the LGBTQ acronym. There aren't really similar slurs
+for the brony community (the worst I can think of is pony f**ker), but I'd say many bronies (myself included)
+felt a sense of pride when they said they watched the show in the face of disgust.
+
+Mihaela Popa-Wyatt [has written some essays about times groups repurpose slurs](https://philarchive.org/archive/POPRTB).
+The theory is that slurs are way to assign low power to a group. (You do not deserve to be named the way
+you want to be.) When a group reclaims a slur and uses it to self-label themselves, it disarms the attack
+
 
 
 
@@ -116,3 +166,29 @@ turns into a magical girl anime. But you know, with ponies.
 
 \* \* \*
 {: .centered }
+
+Things to cover:
+
+* MLP fan music scene
+* mandarinorange PMVs / SimGretina, people leaving the community out of shame or bad feelings, pony archive project.
+* "hey follow my new work"
+* Tension between people creating overt pony references and pony inspired work.
+* "At least we're still relevant enough to be made fun of"
+* The way in which peope took degeneracy / the disgust of others as a point of pride, that other
+ people didn't "get it".
+* The whole "join the herd" and the whoe cult-like obsessions (but the joke is that most people
+are in the joke)
+* The occasional alt-right tendencies, and how this is most exaggerated at the conventions which
+are the most concentrated form of people who don't fit into society (whether through neurodivergence,
+not knowing how to relate to people, etc.)
+* "Fandoms don't die, they just slow down"
+* The shift from hipster-ism to just treating it as a normal thing.
+* Big fish in a small pond, vanity pond, fighting for clout, Phil Fish video.
+* PonyTown, PonyFest concert.
+* Fandom as a means of escapism from a cruel world (for people who don't find something in the world that gives them meaning, fan work can create its own meaning.)
+* Is Fandom good/bad? My sense is that it's at times distasteful and weird, but is less destructive than
+other things - it is better than it meant something, even if it ended in pain, rather than not meaning
+anything at all. As for whether one fandom is better or worse than another one, that depends on if you can
+live with its ethos.
+* Accepting a label with all its baggage. "i'm not a brony, but I watch MLP", "i'm not a furry but I
+understand why some people are", etc.
