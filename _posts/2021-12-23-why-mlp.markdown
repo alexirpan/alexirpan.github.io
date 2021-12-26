@@ -86,62 +86,8 @@ stronger now compared to 2006, given a bigger Internet and stronger recommendati
 
 In most realities, My Little Pony: Friendship is Magic never attracts a large audience. It's a
 quietly successful cartoon, sells a bunch of toys, and otherwise leaves no mark on pop culture.
-In our reality, it didn't. That's thanks to 4chan,
-and that's as good a segue as I'm going to get to discuss that.
-
-
-"I Know My Horse Will Never Come In"
-----------------------------------------------------------------------------------------------
-
-I don't go to 4chan. In my entire time on the Internet, 4chan's been known as the cesspool of the
-Internet, and I'm sure the 4chan users would agree. I'm not interested in doing a deep dive on
-4chan culture, I quite liked [Dale Beran's](https://medium.com/@DaleBeran/4chan-the-skeleton-key-to-the-rise-of-trump-624e7cb798cb)
-essay about 4chan and Trump, which I will briefly quote below.
-
-> In Bukowski’s novel **Factotum**, the main character, Hank Chinaski, drifts through various demeaning blue-collar jobs until he ends up working the stockroom of an autoparts store. The job is no better than any of the others, except for one important difference: It ends early enough for Chinaski and another worker, Manny, to race to the track for the last bet of the day. Soon the other workers in the warehouse hear of the scheme and ask Hank to put down their bets, too.
->
-> At first Hank objects. He doesn’t have time to make their petty bets before the track closes. But Manny has a different idea.
->
-> “We don’t bet their money, we keep their money.” he tells Hank.
-> 
-> “Suppose they win?” Hank asks.
-> 
-> “They won’t win. They always pick the wrong horse. They have a way of always picking the wrong horse.”
-> 
-> “Suppose they bet our horse?”
-> 
-> “Then we know we’ve got the wrong horse.”
-> 
-> Soon Chinaski and Manny are flush with money, not from working for the $1.25 an hour at the warehouse or even making smart bets themselves, but from taking the money of the other workers and not betting it. That is, after all, why those same men handing over their bets work in the factory; they are defined by their bad decisions, by the capacity for always getting a bad deal.
-> 
-> [...]
->
-> These Trump supporters hold a different sort of ideology, not one of “when will my horse come in”, but a trolling self-effacing, “I know my horse will never come in”. That is to say, younger Trump supporters know they are handing their money to someone who will never place their bets — only his own — because, after all, it’s plain as day there was never any other option.
-
-In short, 4chan is the home of mostly men who hopelessness runs so deep that they cannot find solace anywhere else.
-(Just in case a 4channer does run across this - yes, I know that /pol/ is not all of 4chan, and not
-everyone on 4chan is part of the alt-right. The relevant part is the learned helplessness, the kind
-that lives in a 2016-era Sanders-or-Trump voter.)
-
-What does this have to do with My Little Pony? Well, according to legend, the brony fandom
-grew out of /co/, 4chan's board about comics and cartoons. An anon shared [an article](https://web.archive.org/web/20101207135530/https://www.cartoonbrew.com/ideas-commentary/the-end-of-the-creator-driven-era.html)
-titled "The End of the Creator-Driven Era in TV Animation". It mentions that Lauren Faust
-(showrunner for popular cartoons like *Powerpuff Girls* and *Foster's Home for Imaginary Fans*)
-is leading a My Little Pony reboot, and this is signalling the end of true creative expression
-in animation as an art form. The future of animation is corporate suits pushing out bland products.
-It get some traction in /co/, and a few decide to hate-watch MLP. Get some free Internet points
-by shitting on trash, maybe get a few memes out of it to troll other parts of 4chan.
-
-They get a few episodes in and realize, with dawning horror, that the show's actually pretty good.
-
-From there, word spreads quickly, 4chan mods have to make a /mlp/ containment board to stop it
-from polluting the serious and dignified discussion of other cartoons, it leaks out of 4chan
-into the wider word, and you know the rest.
-
-The vast majority of bronies have little if any connection to 4chan. Once the fandom got going, once
-it won the cosmic lottery of getting people to give it a chance, it became self-sustaining.
-The premise was too novel to ignore. Not the premise of the show: the premise of the
-*fandom*.
+In our reality, it didn't. After winning the cosmic lottery, the premise was too novel to ignore.
+Not the premise of the show: the premise of the *fandom*.
 "Several 15 to 30 year old men swear up and down that the new My Little Pony
 show is worth watching" was a bizarre enough idea to overpower many existing aversions.
 The only reason I gave MLP a chance was because
@@ -151,10 +97,10 @@ forums.
 Lauren Faust moved on from the show after Season 2, but she came back to do a panel for the last BronyCon.
 In the Q&A section, she and a writer (M. A. Larson) talked about
 the moment
-they knew the brony fandom was for real - the writers were watching a video of Russian men,
-some in military camo, singing along to *Winter Wrap-Up*.
+they knew the brony fandom was for real - [the day they watched a bunch of Russian teenagers](https://www.reddit.com/r/IAmA/comments/cezmyc/yo_reddit_im_ma_larson_writer_on_my_little_pony/eu688z7/?context=8&depth=9) singing
+along to *Winter Wrap-Up*.
 
-https://www.reddit.com/r/IAmA/comments/cezmyc/yo_reddit_im_ma_larson_writer_on_my_little_pony/eu688z7/
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YC-p7HvdwbE?start=458" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 "Fans are Great. Fandom is Weird"
@@ -199,9 +145,15 @@ the writers have to write it into the show, whether they want to or not. No conf
 but there's a rumor that Season 3's finale was so rushed because the writers couldn't get
 executives to sign off on a 2-part episode. Sometimes, the writers just drop the ball and put out
 a bad episode. And since it has to stay family-friendly, there's inherent constraints on what the
-show staff can do.
+show staff is allowed to do.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">My fave note on <a href="https://twitter.com/hashtag/MLPSeason4Finale?src=hash&amp;ref_src=twsrc%5Etfw">#MLPSeason4Finale</a> “We cannot show Twilight punch Tirek in the face”</p>&mdash; Meghan McCarthy (@MMeghanMcCarthy) <a href="https://twitter.com/MMeghanMcCarthy/status/465144750446624768?ref_src=twsrc%5Etfw">May 10, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+![Storyboard of original moment](/public/why-mlp/storyboard.jpeg)
+{: .centered }
+
+(Storyboard of Twilight v Tirek fight, before edits.)
+{: .centered }
 
 In addition, the ensemble cast made it easy for
 fans to find some character they found compelling, and the show has a nasty habit of hinting at the
@@ -214,7 +166,9 @@ Looking back,
 I still think the editing on [Ponycraft 2](https://www.youtube.com/watch?v=JJbAT1wzS8U),
 [Shingeki no Pony](https://www.youtube.com/watch?v=3sj4yJ4MPYA), and
 [The Stars Will Aid in Her Escape](https://www.youtube.com/watch?v=PdhSb-L3hf8) is all
-really well done.
+really well done. For the last one in particular, it's open to interpretation, but it's interesting to
+realize that in a fight between the day and night, a character named Twilight was the one who
+brought peace.
 
 In some ways, I feel fan content can be better than original content.
 Fanwork is like painting a tapestry, but instead of the standard
@@ -246,6 +200,41 @@ seconds of footage per day.
 
 (Another GIF here)
 
+The deeper you go, the more examples you can find of fans building off other fans. Fallout Equestria
+has not one, but [two](https://absolutelyeverything.org/) different [print](https://www.ministryofimage.net/)
+projects (the latter with a wider selection of MLP fiction, if you're willing to stomach the shipping cost
+from Russia).
+
+Much of my interaction with the fandom now is just through the pony brony music scene (which yes, is a thing).
+You've got [Ponies at Dawn](https://poniesatdawn.bandcamp.com/) as the
+"big" label, but then there are smaller labels like [Equinity](https://equinity.bandcamp.com/) and
+new labels like [VibePoniez](https://vibeponiez.bandcamp.com/) curating more lofi music. Which all feeds into
+sites like the [Equestrian Trot 100](http://trot100.blogspot.com/) (now deprecated), or [Horse Music Herald](https://horsemusicherald.com/)
+which shares new releases.
+
+https://xkcd.com/1095/
+
+These songs get a few thousand views. The launch parties get around 100 to 200 listeners. Nothing too crazy,
+but good enough for people to keep tuning in. Sometimes you have to animate something. Sometimes you have
+to write a song. That's how creative work goes. If My Little Pony is the way to push over the activation
+energy? Screw it, why not. On Hold by YourEnigma slaps. The acoustic cover of it by the Wasteland
+Wailers' is a banger. It's the same thing as "real" [acoustic remixes of rap songs](https://www.youtube.com/watch?v=a8pbCtJjuqo), localized entirely within
+the pony fandom. Who are we to say that doesn't make it real?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LbTu2OzYhPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+*Fighting is Magic* was a 2D fighting game made by a group of fans who knew what they were doing, making
+enough progress to show it off at side events for Evo, one of the biggest fighting game tournaments in the
+world. They were hit with a cease and desist letter from Hasbro, renamed to *Them's Fightin' Herds*, redid
+all their work with new IP in a new engine, and successfully released after an Indiegogo campaign, 6 years after
+their first build. The game still receives updates today, and its existence is a bit of a miracle.
+
+> I dunno how familiar people are with fan projects, but there are probably hundreds of ideas for fan projects starting every day. I would say 99% of them never go beyond the idea phase. It’s exceedingly unlikely that any given fan project will go anywhere at all, let alone stick together for as long as we have. Of the ones that do get past the idea phase, most of them are filled with passion, but are lacking skills. [...] The tiny team we started with, from a random collection of people who happened to see a single post on a single forum at a certain time happened to get along and have the drive and skills that complemented each other and most of the gaps were filled right off the bat.
+
+[(Interview with TFH dev team, circa 2015)](https://www.themarysue.com/lauren-faust-and-mane6-on-thems-fightin-herds)
+{: .centered }
+
+
 There was a certain energy in the fandom at that time, where people felt empowered to make whatever
 they wanted, along with an assuredness worn by fans who knew the community would keep growing and
 last forever. And like every group in history, they were wrong.
@@ -255,10 +244,8 @@ https://web.archive.org/web/20150120223532/http://www.researchismagic.org/2014/0
 https://blogs.loc.gov/thesignal/2014/08/research-is-magic-an-interview-with-ethnographers-jason-nguyen-kurt-baer/
 
 
-
-"Sometimes We're Self-Conscious About Our Stupid Sport"
+"Our Cabinet's Fractured Into Factions"
 ---------------------------------------------------------------------------------------
-
 
 Compared to what it was in the early years, the brony fandom's a shell of what it was. The golden age
 is over and what's left is much less definable.
@@ -289,47 +276,173 @@ from the point of view of people within that culture.)
 >
 > Once Kurt and I decided we were going to do research on bronies, then the community became a “thing” for us…but it also meant that we at that same moment already had identities vis-a-vis that thing: brony **researchers**. Having produced the relationship with the fandom as one of a scholarly gaze, it’s been difficult to take on the brony label, even though we’re often doing exactly the same thing bronies are. The way the imagined community is imagined, the moment at which it is imagined, and a person’s relationship to that imagined thing all become important considerations.
 
+[Source](https://web.archive.org/web/20150120223532/http://www.researchismagic.org/2014/04/what-sort-of-group-are-bronies/#more-520)
+{: .centered }
+
 When I went through the feedback for [My Little Pony: Puzzles are Magic](https://www.puzzlesaremagic.com/), I saw all kinds
 of responses along these lines. A person said they've seen every MLP episode, but don't consider themselves a brony. A BABSCon
 attendee (Bay Area Brony Spectacular) said they were 2 seasons behind. A couple said they and their partner called each other
 Flutter Butter and Dashie, but they didn't consider themselves bronies.
 
-As much as I've consumed MLP content, I never really found the sense of fellowship that so many people said
-they found in the fandom. To me, it was something fun to watch, but I didn't feel the need to go-to-bat for a generic
+As much as I've consumed MLP content (both canon and fanon), I never really found the sense of fellowship that so many people said
+they found in the fandom. To me, it was something fun to watch, but I didn't feel the need to go to bat for a generic
 imagined brony, nor did I feel like I'd get anything if I did call myself a brony. So I didn't.
 
+There are parts of brony fandom that I stay away from. It's impossible to talk about bronies without
+talking about 4chan, and in my
+entire time on the Internet, 4chan's always been known as a cesspool. I'm sure the 4chan users would
+agree. If you want a deep dive on 4chan culture, I
+quite liked [Dale Beran's](https://medium.com/@DaleBeran/4chan-the-skeleton-key-to-the-rise-of-trump-624e7cb798cb)
+essay, written shortly after Trump won the 2016 election.
+
+What does this have to do with My Little Pony? Well, according to legend, the brony fandom
+grew out of /co/, 4chan's board about comics and cartoons. An anon shared [an article](https://web.archive.org/web/20101207135530/https://www.cartoonbrew.com/ideas-commentary/the-end-of-the-creator-driven-era.html)
+titled "The End of the Creator-Driven Era in TV Animation". It mentions that Lauren Faust
+(showrunner for popular cartoons like *Powerpuff Girls* and *Foster's Home for Imaginary Fans*)
+is leading a My Little Pony reboot, and this is signalling the end of true creative expression
+in animation as an art form. The future of animation is corporate suits pushing out bland products.
+It get some traction in /co/, and a few decide to hate-watch MLP. Get some free Internet points
+by shitting on trash.
+
+They get a few episodes in and realize, with dawning horror, that they're liking it on a non-ironic
+level.
+
+It spreads quickly. MLP simultaneously becomes a way to troll non-fans (hijack threads with pony pictures)
+and fans (here's porn of MLP characters, oh it disgusts you, I guess you aren't a true fan). The mods make
+a /mlp/ containment board to stop the pollution of serious and dignified cartoon discussion, it leaks
+out of 4chan to the wider world, and you know the rest.
+
+> In Bukowski’s novel **Factotum**, the main character, Hank Chinaski, drifts through various demeaning blue-collar jobs until he ends up working the stockroom of an autoparts store. The job is no better than any of the others, except for one important difference: It ends early enough for Chinaski and another worker, Manny, to race to the track for the last bet of the day. Soon the other workers in the warehouse hear of the scheme and ask Hank to put down their bets, too.
+>
+> At first Hank objects. He doesn’t have time to make their petty bets before the track closes. But Manny has a different idea.
+>
+> “We don’t bet their money, we keep their money.” he tells Hank.
+> 
+> “Suppose they win?” Hank asks.
+> 
+> “They won’t win. They always pick the wrong horse. They have a way of always picking the wrong horse.”
+> 
+> “Suppose they bet our horse?”
+> 
+> “Then we know we’ve got the wrong horse.”
+> 
+> Soon Chinaski and Manny are flush with money, not from working for the $1.25 an hour at the warehouse or even making smart bets themselves, but from taking the money of the other workers and not betting it. That is, after all, why those same men handing over their bets work in the factory; they are defined by their bad decisions, by the capacity for always getting a bad deal.
+> 
+> [...]
+>
+> These Trump supporters hold a different sort of ideology, not one of “when will my horse come in”, but a trolling self-effacing, “I know my horse will never come in”. That is to say, younger Trump supporters know they are handing their money to someone who will never place their bets — only his own — because, after all, it’s plain as day there was never any other option.
+
+(Just in case a 4channer runs across this - yes, I know that /pol/ is not all of 4chan, not
+everyone on 4chan is part of the alt-right, and parts can be surprisingly civil, but let's be honest.
+Is "I'm on the good parts of 4chan" really a good defense?)
+
+4chan's the home of (mostly) men, whose hopelessness runs so deep they can't find solace anywhere else.
+Shock humor rules the day, and community there is powered by rapidly making new memes, calling everyone
+who doesn't get it "normies", then immediately moving to a new one to try to feel special in a world that
+thinks they aren't.
+
+The issue I've had is that as the brony fandom cooled down, a lot of the reasonable people evaporated away.
+Maybe they still watch the show on Netflix and privately enjoy it, but active content creators are now
+mostly weird memers who don't want to let go. I suppose I'm one of them.
+
+At BABSCon, one of the Q&A panel questions was, "If you could ship Twilight Sparkle with any pre-2000
+US President, which would you pick?" Every year, BABSCon runs a charity auction and they take items from anyone.
+Sometimes it's good stuff and sometimes it's stuff like an empty box of Froot Loops.
+
+![Toucan Sam](/public/why-mlp/toucan.jpg)
+{: .centered }
+
+Or a bunch of Tide pods with a dabbing Ugandan Knuckes, back when that was a thing.
+
+![Tide pods and Knuckes](/public/why-mlp/knuckles.jpg)
+{: .centered }
+
+Or someone doing a live rendition of "We Are Number One" in Robbie Rotten cosplay, which I always regret
+not saving at the time.
+You know if this type
+of humor works for you. For me it does! But as I spent more time in these convention spaces, I started to see the dreary plain white
+conference room walls instead of the magic. I saw people getting hype about a Them's Fightin' Herds
+match without knowing anything about the game - they just wanted something to yell about. Content
+creators whose work I respected just acting like total assholes in person, living off the little
+clout still left in horse fame.
+It felt
+like too many people were there just to feel something, to get excited about being part of something greater, even if that something greater was ponies. I was uncomfortable with people who lacked perspective on
+the fandom, and such people are overrepresented at cons, where for a brief weekend the fandom
+*is* the real world and as all-encompassing as people want it to be. I'm okay with coming back to
+reality after a weekend. I'm not okay with people who can't accept that. Every time drama happens
+in the brony fandom (and there is *always* drama), I
+wish I could force everyone involved to watch and understand "This is Phil Fish".
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PmTUW-owa2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> Imagine you're at some Manhattan cocktail party, and in conversation with a stranger you've only
+> just met, you say, "Can you believe this bullshit Phil Fish said on Twitter?" Do you think the
+> more plausible response is
+>
+> A: God I know, what an asshole, or
+> B: I don't really care.
+>
+> The correct answer is C: Who the hell is Phil Fish? Phil is not famous the way we are used to
+> thinking about celebrities. Despite being in a movie (a documentary about video games), the average
+> random passerby has no idea who he is. [...] The world at large does not know or care who makes video
+> games. FEZ has shipped a million units, so in a random sampling of 7000 strangers, it would have been
+> played by 1 of them. Phil is subculturally important, not culturally important. He's only famous to us.
+
+Maybe more people get this than I think. If they do, they sure don't make it obvious.
 
 
+"Sometimes We're Self-Conscious About Our Dumb Sport"
+---------------------------------------------------------------------------------------
 
+I'm not sure how this happened, but I've found parallels in an unlikely source: MMA.
+"Fighting in the Age of Loneliness" is a documentary about the history of fighting, narrated by
+Felix Biederman, a podcaster for the very leftist podcast [Chapo Trap House](https://en.wikipedia.org/wiki/Chapo_Trap_House). It's long and meandering, but it's a good story about why Felix felt MMA had
+hollowed out and lost the magic that captivated him before.
 
-https://web.archive.org/web/20150120223532/http://www.researchismagic.org/2014/04/what-sort-of-group-are-bronies/#more-520
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-DoaUyMGPWI?start=5065" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Of course, there was drama. There's always drama.
-
-I've thought about this a lot over the years. Funnily enough, I found an explanation from an
-unlikely source: MMA.
-
-https://www.youtube.com/watch?v=-DoaUyMGPWI
+> There's no magic out there when it comes to the contest over resources that governs our lives
+> and the lives of our children.
+> The magic that we wish we saw everywhere else was in the cage, because it was conjured by
+> people who were just too f\*\*ked up to make it in the world outside. In a world where everything
+> seemed to get slightly better then slightly worse at a more constant rate, at least there was one place where
+> unthinkable things actually happened. At least if you put two weird people with incredible abilities
+> in front of each other, their combined experiences and opposing martial abilities would create a
+> beautiful, maddening story.
 
 1:24:33
 
+> Dana White is an MMA fan, and there's a very real insecurity in MMA fans. Whether you're watching
+> a shitty UK stream on your friend's off-brand tablet, or you're the president of the world's biggest
+> promotion, sometimes you may feel a little self-conscious about our dumb sport.
+>
+> Everyone who loves this sport has had a moment where they watch an event with a friend, a family
+> member, or a romantic partner. It was probably during the pay-per-view golden age of the late 2000s,
+> where the person you hoped would become just as obsessed as you saw men in awful tattoos wearing shorts
+> that said Condom Depot in huge letters on them, push one another against a fence for 15 minutes. [...]
+> Your target audience found it too weird, too boring, too terrifying, or all three. And the cultural
+> image of MMA fighters is a bunch of enormous, angry men, with weird tattoos, who always seem to be yelling.
+> And the image of fans is a sea of guys with big guts and chiselled arms, wearing Affliction shirts and
+> getting wasted before insulting random passersby. But does it matter? We love this sport! [...] We love it,
+> and that's all that should matter. And who gives a shit if we don't have hundreds of millions of people watching with
+> us every time. And why do we care if people think we're weird or f\*\*ked up for watching it? We know what
+> our sport is, and we know who we are! From the most stereotypical ones, to the grandmas and grad students
+> who get just as excited as the Affliction shirt guys.
+
+1:28:00
+
 (quote here)
 
-Felix's comments were eerily reminiscent of the brony fandom. Pastel colored ponies and MMA
-fighters were so far apart that they met at the point at infinity. If every MMA fan has tried to
-convert people before realizing that a fighter advertising Condom Depot is a weird look, then
-every MLP fan has shown an episode to a begrudging friend who is watching more out of friendship
-rather than true interest. Maybe there is artistry in the animation or the fighting, but the
-trappings around it are only special to cultural insiders, and to everyone else they're strange
-enough that watching is harder than looking away.
+I remember trying to get a friend into MLP by pointing him to "Dragonshy". Didn't work. I watched the
+series finale with a friend who had stopped watching the show. They thought it was fine, but didn't
+feel much reason to catch up on everything in between. I have long given up on getting anyone else
+into pony fandom, something strange enough that observing it is harder than pretending it doesn't
+exist.
 
-If there's a real insecurity in MMA fans, there's a similar one in bronies. If you look for it,
-you'll find tons of brony thinkpieces examining why people won't give the show a chance, why
-bronies are often the butt of the joke, and how to help others deal with the comically easy
-bullying they might face. I've only been asked why I watch MLP three times in the past 10 years,
-thanks to living in a pretty accepting culture bubble, and even then I still don't feel like I have good
-answer for why I invested so mich time into this fandom. There are standard cures - make fun of
-yourself, call yourself trash, and move on.
+Search for it, and you'll
+you'll find tons of brony thinkpieces examining why people won't give the show a chance, and why
+bronies are often the butt of the joke. There are no good answers here, so accept the standard
+cure - make fun of yourself by saying your trash, and move on. It's a well-tested [play](https://en.wikipedia.org/wiki/Reappropriation).
 
 > The kids, when they like something on the Internet, they call themselves the trash of the thing.
 
