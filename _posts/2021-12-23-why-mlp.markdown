@@ -341,9 +341,33 @@ Shock humor rules the day, and community there is powered by rapidly making new 
 who doesn't get it "normies", then immediately moving to a new one to try to feel special in a world that
 thinks they aren't.
 
-The issue I've had is that as the brony fandom cooled down, a lot of the reasonable people evaporated away.
-Maybe they still watch the show on Netflix and privately enjoy it, but active content creators are now
-mostly weird memers who don't want to let go. I suppose I'm one of them.
+As the brony fandom cooled down, a lot of the reasonable people evaporated away,
+and the people left are either my people, weird in the same ways I am, and people I never want to interact
+with in my life. I feel it's similar to my relations with Bay Area rationalists. There was a moment in time
+where the "brony" label felt like it symbolized something cohesive in my mind, and now it means many different
+things. The subcultures nest infinitely and not all the branches like each other.
+
+I suspect it was always like this. Most MLP fans are aggressively liberal,
+proud Black Lives Matters supporters, and often LGBTQ themselves, but its 4chan roots means there's
+always that fraction of Blue Lives Matter supporters who
+argue My Little Pony supports the white supremicist belief that the world would be better if
+different races lived segregated from one another.
+(Or, you have the faction who belives their right to make edgy "master race" jokes is okay, even if
+it provides cover for real racists.)
+It shouldn't be surprising that people from opposite sides of the political spectrum
+can both enjoy a show. Parasite has been read as both [a critique of the current class system](https://www.vox.com/culture/2019/9/13/20864365/parasite-review-bong-joon-ho) and [a cautionary tale for the rich to choose their
+employees well](https://marginalrevolution.com/marginalrevolution/2020/06/the-gaslighting-of-parasite.html).
+But success, growth, and excitement has a way of masking over these problems. It's only in the decline
+that people notice what's wrong.
+
+As I spent more time in these convention spaces, I started to see the dreary plain white conference room walls instead of fans. I did quick headcounts at panels and saw it was
+low. Content creators whose work I respected just acting like total assholes in person, living
+off the meager clout still achievable in horse fame.
+It felt
+like too many people were there just to feel something, to get excited about being part of something greater, even if that something greater was ponies. In some downtime at the last BronyCon, I sat in the games room,
+watching a match from the *Them's Fightin' Herds* tournament. One person there was yelling and getting
+hype about everything, and it was quickly clear he didn't know anything about the game. He just wanted
+something to yell about.
 
 At BABSCon, one of the Q&A panel questions was, "If you could ship Twilight Sparkle with any pre-2000
 US President, which would you pick?" Every year, BABSCon runs a charity auction and they take items from anyone.
@@ -358,18 +382,22 @@ Or a bunch of Tide pods with a dabbing Ugandan Knuckes, back when that was a thi
 {: .centered }
 
 Or someone doing a live rendition of "We Are Number One" in Robbie Rotten cosplay, which I always regret
-not saving at the time.
-You know if this type
-of humor works for you. For me it does! But as I spent more time in these convention spaces, I started to see the dreary plain white
-conference room walls instead of the magic. I saw people getting hype about a Them's Fightin' Herds
-match without knowing anything about the game - they just wanted something to yell about. Content
-creators whose work I respected just acting like total assholes in person, living off the little
-clout still left in horse fame.
-It felt
-like too many people were there just to feel something, to get excited about being part of something greater, even if that something greater was ponies. I was uncomfortable with people who lacked perspective on
-the fandom, and such people are overrepresented at cons, where for a brief weekend the fandom
-*is* the real world and as all-encompassing as people want it to be. I'm okay with coming back to
-reality after a weekend. I'm not okay with people who can't accept that. Every time drama happens
+not saving.
+
+You know if this type of humor works for you. For me it does! Still, I don't want memes to be my
+entire personality. Doing it too much is to fall into the 4chan trap of keeping up with everything
+not because you want to, but because you need to in order to fit in.
+Fandom is about keeping up with memes on some level and I don't want fandom to be the only thing in
+my life.
+I'm perfectly okay with
+spending an irresponsible amount of time on MLP, as long as I know it's irresponsible. Some people
+don't.
+
+Unfortunately, those people are the ones that always go to cons, the places where,
+for a brief weekend, the fandom *is* the real world and as all-encompassing as people want it to be.
+When your entire world is fandom, petty drama becomes a life-threatening attack, bad episodes become
+existential threats, and things get blown up more important than they should be.
+Every time drama happens
 in the brony fandom (and there is *always* drama), I
 wish I could force everyone involved to watch and understand "This is Phil Fish".
 
@@ -394,7 +422,56 @@ Maybe more people get this than I think. If they do, they sure don't make it obv
 "Sometimes We're Self-Conscious About Our Dumb Sport"
 ---------------------------------------------------------------------------------------
 
-I'm not sure how this happened, but I've found parallels in an unlikely source: MMA.
+The brony fandom's cheated me out of $5.
+
+I was wandering the vendor hall, on a dark and stormy night. (Well, okay, it was a bright and
+sunny April afternoon.) Someone was selling Arduineighs - a pony-themed Arduino clone. Except, they
+were *also* themed after Twilight Sparkle's Secret Shipfic Folder, a PG rated board game making fun of
+tropes in shipping fanfiction.
+
+![Arduineigh](/public/why-mlp/tsssf.jpg)
+{: .centered }
+
+I bought one, and regretted it about an hour later. I wasn't planning to mess with the board, and
+the coolness of the plain metallic look wore off for me pretty quickly in favor of the original colored
+art.
+
+Everything else? No regrets. I don't regret the plushies, the prints, or the laser-cut wood. I don't
+regret the badge of Flurry Heart labeled "DEMON BABY", bought from a teenager who offered 10% off if
+I subbed to Pewdiepie. (I didn't.)
+
+Despite everything, the rise and the fall in popularity, the content creators who moved on and see
+their pony work as an old shame, the outing of community figureheads as racists or sexual abusers,
+I still feel some sense of connection to the fandom. Enough that although I wouldn't call myself a brony,
+if someone did, I wouldn't feel the need the correct them.
+
+In the late 2000s, there was a Youtuber named ChaosAngel, who uploaded metal remixes of Touhou songs
+from doujin circles at the time. The Touhou music is without question the largest fan music in the
+world, and he uploaded remixes from all sorts of doujin circles, from prog rock to black metal, a sort
+of "best of the best".
+
+His channel was hit with copyright strikes and taken down without appeal.
+
+In response, he created a new channel, replacing the offending videos, and reuploading all songs
+posted before. To announce the channel, he uploaded a ["song 0"](https://www.youtube.com/watch?v=un8y1IbbMno) - a remix of Reincarnation, a song whose original was from 1997 (thirteen years old then, and twenty four
+years old now.) He had this to say.
+
+> What were the reasons of the evil spirit Mima for her wish to destroy humankind, and why she goes from light to darkness was never known. Mima always denied her death, and she claims to be just a wandering spirit instead of a ghost, while she found the way to revive herself.
+>
+> So let us continue what she couldn't accomplish, by reviving ourselves.
+>
+> Thanks for watching.
+>
+> "No one shall be able to drive us from the wonderland that ZUN created for us."
+
+I suspect the power doesn't come through, unless you there at the time.
+
+I'm still in the pony fandom because it's cool. I still get something out of it. I'm here because other
+people who also get something out of it are still here. Sure, Hasbro's the ones who created Wonderland, but
+we're the ones who made it a place worth visting. Together we've created a bizarre cathedral of horses
+and magic that needs someone to bear witness.
+
+I've found parallels in an unlikely source: MMA.
 "Fighting in the Age of Loneliness" is a documentary about the history of fighting, narrated by
 Felix Biederman, a podcaster for the very leftist podcast [Chapo Trap House](https://en.wikipedia.org/wiki/Chapo_Trap_House). It's long and meandering, but it's a good story about why Felix felt MMA had
 hollowed out and lost the magic that captivated him before.
@@ -402,7 +479,7 @@ hollowed out and lost the magic that captivated him before.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-DoaUyMGPWI?start=5065" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > There's no magic out there when it comes to the contest over resources that governs our lives
-> and the lives of our children.
+> and the lives of our children. [...]
 > The magic that we wish we saw everywhere else was in the cage, because it was conjured by
 > people who were just too f\*\*ked up to make it in the world outside. In a world where everything
 > seemed to get slightly better then slightly worse at a more constant rate, at least there was one place where
@@ -431,52 +508,42 @@ hollowed out and lost the magic that captivated him before.
 
 1:28:00
 
-(quote here)
+I've long given up on getting anyone else into pony fandom, this entity strange enough that observing
+it is harder than pretending it doesn't exist. I've quietly accepted that almost none of my friends would
+call themselves bronies, and that's fine. This doesn't have to be a thing that people understand.
+It just has to be something they accept. If they can't, they can go to hell.
 
-I remember trying to get a friend into MLP by pointing him to "Dragonshy". Didn't work. I watched the
-series finale with a friend who had stopped watching the show. They thought it was fine, but didn't
-feel much reason to catch up on everything in between. I have long given up on getting anyone else
-into pony fandom, something strange enough that observing it is harder than pretending it doesn't
-exist.
-
-Search for it, and you'll
-you'll find tons of brony thinkpieces examining why people won't give the show a chance, and why
-bronies are often the butt of the joke. There are no good answers here, so accept the standard
-cure - make fun of yourself by saying your trash, and move on. It's a well-tested [play](https://en.wikipedia.org/wiki/Reappropriation).
+Over time, I've come around to the "relentless march of the normal" theory. Any culture that gets
+big - any culture *at all* - gets two choices. One: maintain popularity by appealing to a wide
+swatch of people. Sand off all the pointy edges that appeal to one person while alienating another.
+Lose your unique charm, and become another building block in the background. Or two: accept that
+the world will never be ready for you. Watch it shrink in size, and congeal into its own, funnily
+shaped thing. We all wish we could get both the charm and the popularity. I've yet to see anything
+succeed at doing so. All those early brony thinkpieces examining why people don't watch the show,
+scheming ways to get more people into pony? Useless. Dust in the wind. If they had succeeded,
+we wouldn't recognize what came out. It's not worth fighting for legitimacy, so accept
+the standard cure - make fun of yourself by calling yourself trash, and move on.
 
 > The kids, when they like something on the Internet, they call themselves the trash of the thing.
 
-[(Source)](https://youtu.be/6oQyCFOyRcA?t=14)
+[- Lin Manuel Miranda](https://youtu.be/6oQyCFOyRcA?t=14)
 {: .centered }
 
-Mihaela Popa-Wyatt [has written papers about how groups repurpose slurs as identities](https://philarchive.org/archive/POPRTB).
-The idea is that people use slurs as a power move, so when a group reclaims a slur to self-label
-themselves, it disarms the power move. You calling us trash means nothing if we already call ourselves
-trash. WallStreetBets calls themselves autists, some Trump supporters called themselves "deplorables"
-during the 2016 election. The [list](https://en.wikipedia.org/wiki/Reappropriation) goes on.
-Reappropriation helps soothe the sting, but it never cures it entirely.
+The brony fandom isn't separate from reality. It's more like an exaggeration of reality.
+The drama, the weirdos, the cool content creators, the jerk content creators, all circling pony,
+all equally inextricable, and at the end of the day we acknowledge it's its own world and go
+back to something more tangible. Even if it was fake, the cathedrals were important to us.
 
-The best answer I can give, is that I'm here because other people are here, and together, we've created
-a strange cathedral of horses and magic that needs someone to bear witness.
+I spent much of my free time in 2019 working on a [My Little Pony themed puzzlehunt](https://www.puzzlesaremagic.com/). It was around
+340 hours of work, took up much of my daydreaming time, and ruined my ability to make small
+talk with anyone. It stressed me out, cost me sleep, and by the end I was down about $100
+in server costs with no expectation of getting any of that money back.
 
-I'veDuring 2019, I spent much of my free time working on a My Little Pony themed puzzlehunt. I have a timetracker for this,
-and found I spent XXX hours on this. ForFor an event I was panning to run for free, that would be appreciated by very
-few people.
-It stressed me out, cost me sleep, and by the end I was down about $100 on server costs.
+Why? I had to. I knew I wouldn't be happy with myself until I did.
 
-I once knew someone who was writing a book, and
-they observed that when they talked to non-authors, they'd say "Congrats, good luck!", whereas
-already-published authors would say "Oh no, I'm so sorry, how's it going?" So, if you ask me
-*why*? I had to. That's just the way it is.
-
-The brony fandom isn't separate from reality. It's more like...like an exaggeration of reality.
-You've got your drama, your weirdos you'd never want to hang out with, content creators that are
-shitty when you get to meet them, content creators that are as cool as you hoped they'd be,
-clout chasers fighting for wahtever meager status they can wring out of pony stardom because that's all they've got,
-memes galore. All circling pony, all equally inextricable, and at the end of the day we acknowledge none of it's real and go back to something will  with more tangibility.
-
-The experiences were real, and the cathedrals we made were important to us, even if only because we imbued them with meaning
-by looking too closely at something that truthfully wasn't that complicated.
+Once upon a time, I knew someone working on a book. They observed that when they said this
+to non-authors, they'd say "Congrats, good luck!" Whereas when they talked to already-published
+authors, they'd say "Oh no, I'm so sorry, how's it going?"
 
 In mid-2020, during the depths of the pandemic, I watched the 6-part Seattle Mariners documentary by Secret Base. Despite having
 no interest in baseball, I got drawn into the story of the Mariners, a team that has hit the highest highs (most wins
@@ -513,26 +580,10 @@ The above is from [an interview with two ethnographers](https://blogs.loc.gov/th
 view of what it's like for insiders - which is why they have pony OCs.)
 If you're interested in the origins of the fandom, I think most of their analysis is correct.
 
-My 10th grade history teacher said that every culture creates its counterculture. Bronies are
-no different. Between how easy it was to make fun of watching MLP, and the adjacency to furries (the
-other laughing stock of the Internet in the early 2010s), bronies got a lot of hate.
-There are many, many articles (usually written by bronies) that try to explain why liking Friendship
-is Magic isn't weird, and I feel this is arguing from the wrong direction. Remember the rule:
-FiM fans are great, FiM *fandom* is weird. There are very few objective criteria that explain why
-it isn't weird to go crazy about a 5 second background cameo of a grey pegasus that didn't even say
-anything, that explain why everything has to be "brohoof" or "welcome to the herd". These are not
-things that come from the show - they are things that come from the fans surrounding the show, and
-they are *weird*.
-
 The distinction is not whether bronies are weird, because they are. It's not whether they deserve to be
 made fun of, because they do. It's about whether they deserve to be the subject of hate, bad-natured
 humor, and punch down comedy. Most fandoms are islands of misfit toys. Look closely enough at any of them,
 and you'll find some truly messed up things.
-
-A decent fraction of male bronies
-had internal struggles about whether it was okay for them to enjoy a 
-
-> The fact that causal explanations that answer why you are a brony are central to the narratives of many bronies does not really indicate too much about their truth value, but they are a useful indicator of where society draws its lines and how people who find themselves on the wrong sides of social lines create meaning based on their situations.
 
 
 
