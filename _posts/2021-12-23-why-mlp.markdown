@@ -1,13 +1,8 @@
 ---
 layout: post
-title:  Pony-Scarred for Life
+title:  "My Soul is Pony-Scarred for Life Because of You"
 date:   2021-12-23 02:30:00 -0700
 ---
-
-> Letting go is harder than it seems
-> I still wonder if you remember me
-
-https://www.youtube.com/watch?v=r8JLa4X7yXQ&list=RDGMEMJQXQAmqrnmK1SEjY_rKBGA&index=4
 
 I've really put off writing this post.
 
@@ -29,7 +24,7 @@ Just so we're clear, I'm not trying to get anybody into the show with this post.
 that it wasn't worth doing so. But, I can't explain what the My Little Pony: Friendship is Magic
 fandom means to me if I don't explain its appeal.
 
-Like a lot of bronies, I started around 2011, in the hiatus between Season 1 and 2. I was
+I started around 2011, in the hiatus between Season 1 and 2. I was
 a high school student attending Canada/USA Mathcamp that summer.
 Mathcamp is a summer math program that introduces talented high school students to interesting
 university level maths, like topology or complexity theory. One thing special about Mathcamp is that
@@ -142,7 +137,7 @@ For their part, the show staff supported the fandom, and Hasbro said they didn't
 down, given it was free publicity. They made a poster for San Diego Comic Con 2011, and starting with
 Season 2, they made slight nods to the adult fandom here and there.
 
-![Pony poster](/public/mlp/ponyposter.jpg)
+![Pony poster](/public/why-mlp/ponyposter.jpg)
 {: .centered }
 
 I don't think Hasbro could have shut down the fandom even if they wanted to. It was bigger than them
@@ -259,9 +254,9 @@ Six years after their first build, they released on Steam in early access. The g
 
 The game has been divorced from its My Little Pony origins for years, but its thanks to the show
 that it exists at all, and I'm happy its moving towards its own identity. They released their
-first new character this year, and Shanty is **sick**.
+first new character this year, and she's **sick**.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mV1FNzORTRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hiw3kMTAVFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I think this is most exemplified by
 [Lullaby for a Princess](https://www.youtube.com/watch?v=i7PQ9IO-7fU), an animation by WarpOut. It's only
@@ -275,7 +270,15 @@ and decided to animate it with an exceptionally high quality bar. The animation 
 The backgrounds are watercolor - as in, some are watercolor on physical paper.
 The meat and potatoes of animating was done by one person, averaging 0.5 seconds of footage per day.
 
-(Another GIF here)
+<video width="560" controls muted autoplay loop>
+    <source src="lullaby1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<video width="560" controls muted autoplay loop>
+    <source src="lullaby2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 Much of my interaction with the fandom now is just through the pony brony music scene (which yes, is a thing).
 You've got [Ponies at Dawn](https://poniesatdawn.bandcamp.com/) as the
@@ -587,7 +590,8 @@ rest. To announce the channel, he uploaded a ["song 0"](https://www.youtube.com/
 > "No one shall be able to drive us from the wonderland that ZUN created for us."
 
 Sure, Hasbro's the ones who created Wonderland, but its fans that make it a place worth visiting.
-Together we've created bizarre cathedrals of horses and magic that needs someone to bear witness.
+Together we've created bizarre cathedrals of horses and magic and cringeworthy stained glass windows,
+and it needs someone to bear witness.
 As long as people maintain it, I'll check in from time to time, even if it's only out of nostalgia.
 Even if it's all fake compared to the real world, the cathedrals were important to us.
 
@@ -669,5 +673,16 @@ actually might never die. Where are these people even coming from?
 Sure, Generation 4 is over, but there's always going to be this core group of hardcore
 fans that have transcended the show, doing what makes them happy. The recursive engine of
 fan art of fan art is going to keep spinning. The Generation 5 movie kick started things a little bit.
-Maybe the TV series will be good. Maybe it won't. Either way, we'll have our stories.
+Maybe the TV series will be good. Maybe it won't. It doesn't matter either way.
 Once you're in, a part of you never leaves.
+
+> Letting go is harder than it seems  
+> I still wonder if you remember me  
+>
+> It's been so long, you've gone so far  
+> Through space and time between us in my heart  
+> I've lost my way, now I can't see  
+> I still wonder if you remember me
+
+[Remember Me, by PrinceWhateverer](https://www.youtube.com/watch?v=r8JLa4X7yXQ)
+{: .centered }
