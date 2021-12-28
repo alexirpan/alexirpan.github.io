@@ -591,9 +591,10 @@ Together we've created bizarre cathedrals of horses and magic that needs someone
 As long as people maintain it, I'll check in from time to time, even if it's only out of nostalgia.
 Even if it's all fake compared to the real world, the cathedrals were important to us.
 
-I've found parallels in an unlikely source: the MMA documentary
-"Fighting in the Age of Loneliness", narrated by Felix Biederman, a podcaster for the very leftist [Chapo Trap House](https://en.wikipedia.org/wiki/Chapo_Trap_House). It's long and meandering, but it has
-some gems.
+I've found parallels in the MMA documentary
+["Fighting in the Age of Loneliness"](https://www.youtube.com/watch?v=-DoaUyMGPWI) by Felix Biederman and Jon Bois,
+and the baseball documentary ["The History of the Seattle Mariners"](https://www.youtube.com/watch?v=TIgK56cAjfY) by Jon Bois and Alex Rubenstein. Both are long and meandering, but among their stories are good gems on
+what it means to be a fan.
 
 > There's no magic out there when it comes to the contest over resources that governs our lives
 > and the lives of our children. [...]
@@ -603,6 +604,9 @@ some gems.
 > unthinkable things actually happened. At least if you put two weird people with incredible abilities
 > in front of each other, their combined experiences and opposing martial abilities would create a
 > beautiful, maddening story.
+
+(Fighting in the Age of Loneliness, 1:24:20)
+{: .centered }
 
 > Dana White is an MMA fan, and there's a very real insecurity in MMA fans. Whether you're watching
 > a shitty UK stream on your friend's off-brand tablet, or you're the president of the world's biggest
@@ -621,9 +625,16 @@ some gems.
 > our sport is, and we know who we are! From the most stereotypical ones, to the grandmas and grad students
 > who get just as excited as the Affliction shirt guys.
 
-(The documentary itself is a lot more depressing and existential than these quotes indicate. Fair warning.)
+(Fighting in the Age of Loneliness, 1:27:30)
+{: .centered }
 
-I've long given up on getting anyone else into this fandom where observing it is harder than pretending
+> With the benefit of hindsight, we know that on-field contention wasn't in the cards for the Seattle
+> Mariners, and has never been to this day. That was never happening. The only fight left was for happiness.
+
+(The History of the Seattle Mariners, 2:44:50)
+{: .centered }
+
+I've long given up on getting anyone else into this fandom, this thing where observing it is harder than pretending
 it doesn't exist. That's fine.
 They don't have to see it or understand it. They just have to accept it.
 If they can't, they can go to hell.
@@ -650,7 +661,7 @@ some organizers set up [PonyFest](https://ponyfest.horse/), a free online brony 
 remote panels and a vendor hall hosted in Discord. I checked out the music concert hosted in
 [Pony Town](https://www.youtube.com/watch?v=3NpEgOXZoTQ), a social MMORPG where people can make
 pony OCs to hang out, and when I counted how many people were online, I realized this fandom
-actually might never die.
+actually might never die. Where are these people even coming from?
 
 ![Ponyfest](/public/why-mlp/ponyfest.png)
 {: .centered }
@@ -658,30 +669,5 @@ actually might never die.
 Sure, Generation 4 is over, but there's always going to be this core group of hardcore
 fans that have transcended the show, doing what makes them happy. The recursive engine of
 fan art of fan art is going to keep spinning. The Generation 5 movie kick started things a little bit.
-Maybe the TV series will be good. Maybe it won't. Who's to say? Maybe, after you're in, a part
-of you never leaves.
-
-
-I watched the 6-part Seattle Mariners documentary by Secret Base. Despite having
-no interest in baseball, I got drawn into the story of the Mariners, a team that has hit the highest highs (most wins
-in a Major League Baseball seasons), and the lowest lows (only team to never play in a World Series, longest
-active playoff drought). They're often called the most tragic team in baseball. Yet despite this, they have fans, legends,
-and heroes.
-
-https://www.youtube.com/watch?v=TIgK56cAjfY&t=8356s
-
-2:25:09
-2:45:00
-
-> The Mariners aren't special on account of their lack of success, it's just that success is entirely irrelevant. We've
-> entered another realm here, one that's far larger and doesn't operate on the dead currency of winning and losing. Unless
-> you let those limits go, you're an astronaut who brought your wallet. The Seattle Mariners aren't competitors. They're
-> protagonists. With the benefit of hindsight, we know that on-field contention wasn't in the cards for the Seattle
-> Mariners, and has never been to this day. That was never happening. The only fight left was for happiness.
->
-> [After their last at-bats of the 2009 season], teammates threw Ichiro and Junior up on their shoulders and paraded them back to
-> the dugout. [...] You're looking right now at a team that isn't going to the playoffs. They didn't even really come close,
-> but they're getting a standing ovation and waving their caps in gratitude. This is Whoville! I have never ever seen another
-> team do this. This team and these fans aren't celebrating any kind of on-field accomplishment. They're celebrating one another.
-> They're celebrating themselves.
-
+Maybe the TV series will be good. Maybe it won't. Either way, we'll have our stories.
+Once you're in, a part of you never leaves.
