@@ -271,12 +271,12 @@ The backgrounds are watercolor - as in, some are watercolor on physical paper.
 The meat and potatoes of animating was done by one person, averaging 0.5 seconds of footage per day.
 
 <video width="560" controls muted autoplay loop>
-    <source src="lullaby1.mp4" type="video/mp4">
+    <source src="/public/why-mlp/lullaby1.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
 
 <video width="560" controls muted autoplay loop>
-    <source src="lullaby2.mp4" type="video/mp4">
+    <source src="/public/why-mlp/lullaby2.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
 
