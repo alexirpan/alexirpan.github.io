@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My Soul is Pony-Scarred for Life Because of You"
+title:  "\"My Soul is Pony-Scarred for Life Because of You\""
 date:   2021-12-23 02:30:00 -0700
 ---
 
@@ -29,7 +29,7 @@ a high school student attending Canada/USA Mathcamp that summer.
 Mathcamp is a summer math program that introduces talented high school students to interesting
 university level maths, like topology or complexity theory. One thing special about Mathcamp is that
 it encourages student-organized events. As long as you get enough staff to agree to supervise,
-students can organize anything they want. The brony phenemenon was in full swing, a few students were fans,
+students can organize anything they want. The brony phenomenon was in full swing, a few students were fans,
 some *staff* were fans, and they organized a watch party. I went, watched a few episodes, saw the appeal,
 and resolved to catch up on the season later.
 
@@ -50,7 +50,7 @@ Of course, people got mad or got the wrong idea. *No*, it's not about the 1980s 
 it's almost exclusively about Friendship is Magic, the Generation 4 cartoon. *No*, it's not some fetish thing,
 most of the fandom just likes the show. (There was some porn, because people are always horny, but it
 wasn't a focal point.) *No*, it wasn't some elaborate gaslighting ironic joke. Maybe for some it was,
-but people just genuninely liked the show.
+but people just genuinely liked the show.
 
 There was other criticism too. "I can't believe you're watching a kid's show."
 When people said this, I don't think they actually mean "shows made
@@ -88,7 +88,7 @@ recommendation systems.
 
 In most realities, My Little Pony: Friendship is Magic is a
 quietly successful cartoon, that sells a bunch of toys, and otherwise leaves no mark on popular culture,
-outside a bit of nostlagia many years later.
+outside a bit of nostalgia many years later.
 In our reality, it won the cosmic lottery. The premise and size made it too novel to ignore.
 Not the premise of the show: the premise of the *fandom*.
 "Several 13 to 30 year old men swear up and down that the new My Little Pony
@@ -120,7 +120,7 @@ You know the old saying:
 
 > "Fans are great. Fandom is weird."
 
-(Terry Pratchett, supposedy, but I haven't found a primary source.)
+(Terry Pratchett, supposedly, but I haven't found a primary source.)
 {: .centered }
 
 I've yet to see any fandom
@@ -135,10 +135,12 @@ were copy-pasted in the backgrounds of different episodes to save on animation c
 made up entire names and backstories for those characters, before any of them had gotten a
 speaking line. The character designs for Derpy, Lyra, Bon-Bon, Octavia, and Vinyl were set instantly,
 but all the canon stories afterwards were influenced heavily by what fans wanted to see.
-Then there was the endless fan music sampling
-vocal pony chops. Elements of this appear in a lot of fandoms, but brony fandom was unusually
-prolific. The only good explanation for this level of content is passion, but this isn't a good
-explanation at all, because it just punts the question to why people were so passionate about
+Then there was the endless fan music, that ranged from remixing musical numbers from the show,
+to original music that used pony vocal chops, to instrumental music that was just inspired by the show.
+
+Elements of this appear in many fandoms, but brony fandom was unusually
+prolific. The only good explanation for this level of content is passion, but that's not a very
+satisfying answer. It just punts the question to why people were so passionate about
 a show that was good, but certainly not the Second Coming of Jesus.
 
 For their part, the show staff supported the fandom, and Hasbro said they didn't plan to shut the fandom
@@ -154,18 +156,17 @@ now.
 \* \* \*
 {: .centered }
 
-I've come to realize that I put a lot of respect on people who take a nonsense idea, with minimal
-usefulness to the real world, and just run with it to completion because they want to. There's too
-many people who drop things at the first signs of resistance, and I'd rather live in a world where people follow
-through.
-
-In general, fandom is driven by untapped potential. If someone does good worldbuilding,
+I think the explosion of MLP fan content is most easily explained by the MLP universe's untapped potential.
+If someone does good worldbuilding,
 you bet people are going do more things in that world. In this
 respect, Friendship is Magic was almost hyperoptimized for fandom.
 The ensemble cast made it easy for
-fans to find some character they found compelling. The show makes frequent allusions to world
-mythology, the history of Equestria, and kingdoms never shown in the show. These are rightly
-skipped because they don't serve the plot, but unanswered questions beg answers.
+fans to find some character they found compelling. The simple character templates made it easy for
+people to make original characters.
+The show makes frequent allusions to world
+mythology, the history of Equestria, and other kingdoms besides the pony one, but rarely dwells
+on them for too long because they don't serve the plot. This is the right move from a storytelling
+point of view, but unanswered questions beg answers.
 
 There are also out-of-universe factors. When Hasbro wants a new toy line, the writers have to write
 it into the show, whether it makes sense or not. According to rumor, the Season 3 finale felt so
@@ -183,7 +184,7 @@ show staff is allowed to depict.
 (Original storyboard of Twilight v Tirek fight.)
 {: .centered }
 
-There's untapped potential everywhere in Friendship is Magic, and you couldn't ask for a better sandbox to
+You couldn't ask for a better sandbox to
 play in. And fans did play in it. They did all kinds of crazy shit. Sturgeon's Law still applies, but
 MLP fandom was prolific enough for lots of solid content.
 
@@ -206,7 +207,7 @@ Although they were definitely made separately, it's a cool discovered associatio
 and the series opening, especially with the drawn parallels between Twilight and Luna, and the observation
 that both twilight the time and Twilight the character act as the bridge between Sun and Moon.
 
-In some ways, I feel fan content can be better than original content.
+In some ways, fan content can be better than original content.
 Fanwork is like painting a tapestry, but instead of the standard
 colors like red and blue, you get more exotic colors like Reimu or Papyrus. This is inherently
 more limiting, and cuts off the target audience, but in exchange, that fan work can convey very
@@ -223,12 +224,10 @@ you like.
 Falling Down the Rabbit Hole
 ---------------------------------------------------------------------------------
 
-*Why?* Why does any of fan content exist? I've touched on it earlier, but I'll repeat why: people
-wanted to make it. Perhaps it's silly that fans
-ascribed so much meaning to an IP that could carry on without them, and which has minimal real-life
-value. Personally though, I think this world is inherently a pretty brutal place. It's easy for
-people to get beaten down and get nihilistic in an uncaring universe. Anything that fights against that
-is good.
+Perhaps it's silly that bronies ascribed so much meaning to an IP that has minimal real-world value,
+and could carry on without them. But, again, they like what they like. *We* like what we like.
+This world is inherently a pretty brutal place. The universe really doesn't care about anything.
+When faced with an unstoppable meaning-eating monster, anything that fights against that is good.
 
 > I remember during the aughts, when I was first trying to work my way into sports media, the popular line among the cool kids was that things like sports are a distraction that monopolizes peoples’ attention and energy that otherwise would go into enacting real political change. But things like sports are the fucking point! MMA, or learning how to play the lap steel, or thrift fashion, or Counter-Strike, or Scrubs fan fiction, or whatever in the world it is for you. That’s what you’re fighting for, if you’re fighting. Every hour you get to spend in that world is your victory against all this.
 
@@ -236,24 +235,29 @@ is good.
 {: .centered }
 
 I've come to realize that I put a lot of respect on people who take a nonsense idea, with minimal
-usefulness to the real world, and just run with it to completion because they want to. Their lack of
+usefulness to the real world, and just run with it to completion because they want to. The lack of
 usefulness is almost the entire point. *No*, this doesn't make me real money. It doesn't make me
-more intelluctual. It's just a thing I do, in the time I have. Nonsense only exists because we're
-serious about making it. There's too many things that get dropped when it gets hard, and I'd rather
-live in a world where people keep going.
+smarter.
+It's just a thing I do, in the time I have. Nonsense only exists because we're
+serious about making it. There's too many things that get dropped at the first sign of resistance,
+and I'd rather live in a world where people follow through on what they're passionate about.
 
-The deeper you go, the more examples you can find of fans building off other fans, engines of creation
-spinning further away from show canon. Fallout Equestria inpired
-not one, but [two](https://absolutelyeverything.org/) different fanfiction [print projects](https://www.ministryofimage.net/).
+When it comes to fandom in particular, it's interesting because a critical mass of fans produces
+enough content to bring in more fans. That leads to these engines of creation, twirling further
+and further away from show canon. It's fun to trace the web of inspiration.
+Fallout Equestria was an influential fanfic, which then spawned
+its own subgenre, a few game making projects, and not one but [two](https://absolutelyeverything.org/) different fanfiction [print projects](https://www.ministryofimage.net/).
 The former focuses on just the Fallout Equestria universe, while the latter takes its name from FoE and
 prints a wider selection MLP fanfic, if you can stomach the shipping cost from Russia).
 
 *Fighting is Magic* was a 2D fighting game made by a group of fans who knew what they were doing, making
 enough progress to show it off at side events for Evo, one of the biggest fighting game tournaments in the
 world. They were hit with a cease and desist letter from Hasbro, and they complied, shutting down all development.
-In response, Lauren Faust offered to do some character design work, Skullgirls licensed their engine to the
-team thanks to a Kickstarter goal, and they redid all their work, renaming themselves to *Them's Fightin' Herds*.
-Six years after their first build, they released on Steam in early access. The game still receives updates today, and although many features are still in development, its existence at all is a bit of a miracle.
+In response, Lauren Faust offered to do some character design work, and Skullgirls licensed their engine for
+free thanks to a Kickstarter goal.
+Faced with having to redo all their work, they rename to *Them's Fightin' Herds*, run a crowdfunding campaign,
+and release in early access on Steam, six years after their first build.
+The game still receives updates today, and although story mode (still) isn't done, its existence at all is a bit of a miracle.
 
 > I dunno how familiar people are with fan projects, but there are probably hundreds of ideas for fan projects starting every day. I would say 99% of them never go beyond the idea phase. It’s exceedingly unlikely that any given fan project will go anywhere at all, let alone stick together for as long as we have. Of the ones that do get past the idea phase, most of them are filled with passion, but are lacking skills. [...] The tiny team we started with, from a random collection of people who happened to see a single post on a single forum at a certain time happened to get along and have the drive and skills that complemented each other and most of the gaps were filled right off the bat.
 
@@ -266,17 +270,17 @@ first new character this year, and she's **sick**.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hiw3kMTAVFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-I think this is most exemplified by
-[Lullaby for a Princess](https://www.youtube.com/watch?v=i7PQ9IO-7fU), an animation by WarpOut. It's only
-7 minutes long, and there's a good argument that it's the best thing the fandom's ever done.
+Sometimes, you don't have a team, it's just one crazy person. I think this is most exemplified by
+[Lullaby for a Princess](https://www.youtube.com/watch?v=i7PQ9IO-7fU), an animation by WarpOut. It's
+7 minutes long, and you could make a good argument that it's the best thing the fandom's ever made.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/i7PQ9IO-7fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The backing song "Lullaby for a Princess" by ponyphonic, another fan artist
 who imagined a song Celestia would sing to Luna after banishing her to the moon. WarpOut got inspired,
-and decided to animate it with an exceptionally high quality bar. The animation is handmade, frame by frame.
-The backgrounds are watercolor - as in, some are watercolor on physical paper.
-The meat and potatoes of animating was done by one person, averaging 0.5 seconds of footage per day.
+and decided to animate it with an exceptionally high quality bar. Although the music and backgrounds are
+done by other artists, the meat and potatoes of animating was done by one person, frame by frame,
+averaging 0.5 seconds of footage per day.
 
 <video width="560" controls muted autoplay loop>
     <source src="/public/why-mlp/lullaby1.mp4" type="video/mp4">
@@ -287,6 +291,11 @@ The meat and potatoes of animating was done by one person, averaging 0.5 seconds
     <source src="/public/why-mlp/lullaby2.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
+
+(There are videos of the animating process here, they don't show up in Github's markdown renderer)
+
+[Footage from behind the scenes video](https://www.youtube.com/watch?v=UOYL1HxSsYI)
+{: .centered }
 
 Much of my interaction with the fandom now is just through the pony brony music scene (which yes, is a thing).
 You've got [Ponies at Dawn](https://poniesatdawn.bandcamp.com/) as the
@@ -304,9 +313,18 @@ which shares new releases.
 These songs get a few thousand views. The launch parties get around 100 to 200 listeners. Nothing crazy,
 but good enough for people to keep tuning in. Sometimes, you have to write a song. If My Little Pony is
 the inspiration, so be it. Maybe somewhat fittingly, my favorite song from the pony music community is
-also a remix of another fan song - Wasteand Wailers' acoustic cover of On Hold by YourEnigma.
+also a remix of another fan song - Wasteland Wailers' acoustic cover of On Hold by YourEnigma.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LbTu2OzYhPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+When making this post, as an exercise I tried drawing out the web of MLP fan content I coud recall off the top
+of my head. I didn't get very far before realizing this was insane and I needed to stop.
+
+[![Diagram of fan content](/public/why-mlp/fandomweb.svg)](/public/why-mlp/fandomweb.svg)
+{: .centered }
+
+(Click for full size)
+{: .centered }
 
 There was a certain energy in the fandom, where people felt empowered to make whatever
 they wanted, along with an assuredness worn by fans who knew the community would keep growing and
@@ -324,7 +342,9 @@ You could try to blame it on Season 3. Controversial at the time, and still near
 ["best season" polls](https://www.equestriadaily.com/2018/12/poll-results-what-is-best-season-of-my.html).
 You could blame it on the shifts in the show's tone. As the show evolved, it
 "grew up", making more nods to the adult audience, which not everybody liked. Some felt this cheapened
-the innocence of the show, or that giving fans what they wanted made the show worse for non-fans.
+the innocence of the show, or that giving fans what they wanted made the show worse for non-fans. Or,
+maybe it's just seasonal rot. Slice of life shows tend to suffer after they exhaust the obvious
+storylines.
 I think the most likely explanation is that it's the same thing that happened to
 Pokemon Go. For a short time, the world collectively had a fever dream and got in on the hype.
 Then the hype faded and the world moved on.
@@ -345,39 +365,44 @@ I will let the defunct ethnography blog [Research is Magic](https://web.archive.
 >
 > Once Kurt and I decided we were going to do research on bronies, then the community became a “thing” for us…but it also meant that we at that same moment already had identities vis-a-vis that thing: brony **researchers**. Having produced the relationship with the fandom as one of a scholarly gaze, it’s been difficult to take on the brony label, even though we’re often doing exactly the same thing bronies are. The way the imagined community is imagined, the moment at which it is imagined, and a person’s relationship to that imagined thing all become important considerations.
 
-[Source](https://web.archive.org/web/20150120223532/http://www.researchismagic.org/2014/04/what-sort-of-group-are-bronies/#more-520)
+[Research is Magic: "What Sort of Group are Bronies?"](https://web.archive.org/web/20150120223532/http://www.researchismagic.org/2014/04/what-sort-of-group-are-bronies/#more-520)
 {: .centered }
 
 I've always preferred calling myself an "MLP fan" or "member of the fandom", and I know I'm not alone.
 When I went through the feedback for Puzzles are Magic, I saw someone say they've seen every episode, but don't
 consider themselves a brony. Or a couple said they and their partner called each other Flutter Butter and Dashie,
 but they didn't consider themselves bronies. And then meanwhile, I go to a pony convention, where you would
-assume everyone self-identifies as a brony, and they mention they're 2 seasons behind the show, when you'd
-think watching the whole show would be a pre-requisite.
+assume everyone self-identifies as a brony, and an attendee says they're 2 seasons behind the show, and a panel
+gives a warning that their presentation includes spoilers for the currently running season, when you'd
+think catching up on the show would be a pre-requisite of showing up.
 
-The people who call themselves bronies are the ones who found a sense of fellowship in adopting the label. I
-never really found that sense of belonging. It was fun to watch the show, and watch fan content, but I never
-took the jump to make a forum account, actively participate in fandom discussion, or work on fan projects
-with people I didn't know IRL.
+The people who call themselves bronies are the ones who get use out of calling themselves bronies. More
+specifically, they found a sense of fellowship in adopting the label. I
+never found that fellowship. It was fun to watch the show, and watch fan content, but I never felt
+the need to go to bat for a generic brony, nor did I
+ever take the jump to actively participate in fandom discussion, or work on fan projects
+with people I hadn't met before IRL.
 
 It's for these reasons that I found myself having less fun at brony conventions. The first one was great,
 but afterwards, not so much.
-Most fandoms have this pyramid of intensity. Of all the viewers, some become fans. Of those fans,
+Fandoms all have a pyramid of intensity. Of all the viewers, some become fans. Of those fans,
 some produce content or go to fan sites. Of people there, only some go to conventions. So at conventions,
-you don't meet the average fan. You meet the super hardcore fans. Which to me is split between very cool
-people, and people I never want to interact with in my life. (I feel I have a similar reaction to Bay
-Area rationalists.) Dealing with the people I don't want to interact with takes up all the energy I have
+you don't meet the average fan. You meet the super hardcore fans. Which, to me, is split between very cool
+people, and people I never want to interact with in my life.
+Dealing with the people I don't want to interact with takes up all the energy I have
 to meet everyone else.
+(I feel I have a similar reaction to Bay Area rationalists.)
 
-The people I get along with realize the absurdity of the situation, and just go along with it. They
+The fans I get along with realize the absurdity of the brony fandom, and just go along with it. They
 can seamlessly jump between hating on your favorite pony, and asking if you want to join them for
-lunch. Maybe they acknowledge that they're only sort of there for the ponies. Or, they come up with
+lunch. Maybe they acknowledge that they're sort of there for the ponies, but really there for the
+people. Or, they come up with
 genuinely impressive surrealist humor. I have yet to hear a more brain-stopping question than
 "If you could ship Twilight Sparkle with any pre-2000 US President, which would you pick?"
 
 Maybe it's just because of the demographics, but man is there a lot of shitposting. Like donating
-an empty box of Froot Loops for the charity auction (except it's signed by the Toucan Sam
-voice actor, which gives it some value).
+an empty box of Froot Loops for the charity auction. It is at least signed by the Toucan Sam
+voice actor, but it's also a cereal box.
 
 ![Toucan Sam](/public/why-mlp/toucan.jpg)
 {: .centered }
@@ -388,45 +413,48 @@ Or, well, this nonsense from 2018.
 {: .centered }
 
 (A dabbing Ugandan Knuckles, spinning fidget spinners while eating a Tide pod, attached to a container
-of Tide pods.)
+of Tide pods not to be opened until after Friendship is Magic ends.)
 {: .centered }
 
-You know if this kind of humor works for you. For me, it does. I appreciated getting to watch someone
+You know if this kind of humor works for you. For me, it does! I appreciated getting to watch someone
 do a live rendition of "We Are Number One" in full Robbie Rotten cosplay.
+But, memes often don't have any deeper meaning, and trying to live off just memes is like trying to
+live on only french fries.
 
-But, memes often don't have any deeper meaning.
 The more I spent more time in these convention spaces, the
 more I started to see the dreary plain white conference room walls instead of the magic. Going to a panel
-and watching someone who couldn't work a room address a room at 1/3rd capacity just felt depressing.
-Not to mention seeing content creators whose work I respected just acting like assholes, or seeing
-people that seemed like they were living off the meager clout still achievable in horse fame.
+and watching someone who couldn't work a room address a 1/3rd full seating area just felt depressing.
+Not to mention seeing content creators whose work I respected acting like assholes, or going to panels
+where it was obvious they were living off the meager clout still achievable in horse fame.
 
-It was too many people who were there just to feel something, to get excited about being part of something greater, and having no avenue for that besides ponies. A sort of repressed nerddom, all exploding out at once,
+It was too many people who were there just to feel something, to get excited about being part of something greater, and having no avenue for that besides ponies. A sort of repressed nerddom exploding out at once,
 with no sense of perspective or self-awareness on what it meant in the grand scheme of things - absolutely nothing.
 Ponies are cool, but I don't want them to be the only thing in my life.
 I'm perfectly okay with
 spending an irresponsible amount of time on MLP, as long as I know it's irresponsible.
 
-Unfortunately, the people who don't know it's irresponsible, or who can't leave the MLP community
-because all their friendships and community is based on MLP, are also the people who always, always
+Unfortunately, there are people who don't know it's irresponsible, or who can't leave the MLP community
+because all their friendships and communities are based on MLP. They are also the people who always, always
 go to conventions. Horse conventions are their
 churches. The places where, for one brief
 weekend, the fandom *is* the real world, and as all-encompassing as people want it to be.
 
 This is a subtle point, and I want to be very clear about it: I don't have a problem with people like
-this existing. I think, on some level, every one of these rabid fandoms have some people who genuinely
-didn't have any friends or community before discovering the fandom. There are tons of stories of
-people who were depressed, or suicidal, who had reasonably high chances of taking their own life
-before they found something to live for, in something as wonderfully goofy as My Little Pony.
+this existing. I think, on some level, every one of these rabid fandoms have some people who truly
+had no friend, community, or stable family situation before discovering the fandom. There are tons of stories of
+people who went through dark times and had reasonably high chances of taking their own life if
+they hadn't found
+something to live for, in something as wonderfully goofy as My Little Pony.
 
-I think it's clearly good that that happened.
+It is clearly good that that happened.
 
 > "People have come together and formed relationships and got married and had kids during the course of the show, because of the show ... and we were wondering, how many kids owe their existence to this show?"
 
-[(Jayson Thiessen, chief director of My Little Pony for many seasons)](https://www.npr.org/2019/08/14/750595032/the-friends-we-made-along-the-way-after-9-years-bronycon-calls-it-quits)
+[(Jayson Thiessen, chief director of My Little Pony for multiple seasons, when asked about the show's impact)](https://www.npr.org/2019/08/14/750595032/the-friends-we-made-along-the-way-after-9-years-bronycon-calls-it-quits)
 {: .centered }
 
-I just don't want to talk with such people. Maybe that makes me stupid, or selfish. I don't know.
+I just don't want to talk with such people. Maybe that makes me stupid, or selfish, or hypocritical to be
+so judgmental in a fandom whose motto is "love and tolerate". I don't know.
 
 When your entire world is fandom, petty drama becomes a life-threatening attack. Bad episodes become
 existential threats. Every time drama happens in the brony fandom (and there is *always* drama), I
@@ -463,15 +491,13 @@ One Last Ride
 BronyCon was **the** largest My Little Pony convention. Starting from small meetups in the New York City
 area, it later moved to New Jersey, then Baltimore, reaching 10,000 attendees by 2015.
 
-I say was, because BronyCon 2019 was the last BronyCon. There were a few factors going into it. Attendance
+I say was, because BronyCon ended in 2019. There were a few factors going into it. Attendance
 was declining about 20% year-over-year since the peak in 2015. Friendship is Magic's final season was
 slated for 2019, and since being the biggest con was part of BronyCon's identity, organizing staff
 decided they would rather end BronyCon with one big finale coinciding with the last season, rather
 than carrying on and watching it grow smaller each year.
-
 Given that there are other MLP conventions, which announced they had no intention of stopping, I thought
-it was a good call. I had never gone to BronyCon, since I could never justify the travel cost, but
-come on, it's the last one. If there's one to go to, it's that.
+it was a good call.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CtuKJzeNctE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -479,36 +505,40 @@ come on, it's the last one. If there's one to go to, it's that.
 {: .centered }
 
 Evidently, others had the same idea. In 2018, they got 5,465 attendees. Knowing it was the last BronyCon,
-organizers expected a bump to around 7,000 or 8,000. They got 10,000 again. All sorts of people turned out.
+organizers expected a bump to around 7,000 or 8,000. They got 10,000. All sorts of people turned out.
 Lauren Faust, who had
 moved on from the show after Season 2. Old fandom members, who got super into it, then stopped making
 content in 2014, coming back for 1 weekend because it felt right. New fans who started just 1 or 2 years
-ago, well after the hype had faded. There were all sorts of international people, which is true
-every year, but this time, everyone had an excuse to splurge on the more expensive flights.
+ago, well after the hype had faded. My Little Pony is now at the stage where kids in the target demographic
+of 6-7 years old at the start are almost adults now, and a bunch stayed and grew up with the show in the
+same way as Harry Potter for my generation. Every year has international attendance, but this year, it's
+the last one. If there was a time to splurge on international flights, it was for this one.
+
+I waffled back and forth over whether to go, and decided that if I didn't go, I would regret it for the rest of
+my life. So I went.
 
 It. Was. *Nuts.*
 
 I felt the fandom had told itself a collective story: the show's ending. People's lives are moving on.
-There will always be a core group of fans, like the Trekkies, but that'll be it. It didn't feel like the
-fandom was capable of pulling of conventions like BronyCon 2019 anymore, and the entire weekend was about
-proving that wrong.
+There will always be a core group of fans keeping the fire lit, like the Trekkies between the Original Series and Next Generation, but that'll be it.
+The fandom believed it was not
+capable of pulling off big conventions, and the entire weekend was spent proving that wrong.
 
-There was no way this was going to last. I think most people knew that it was only so big because of FOMO.
+We all knew this wouldn't last. BronyCon was only so big because of the FOMO.
 Still, that didn't make it any less entertaining. At the vendor hall, I talked to one of the few Asians
 I saw, snagging the literal last Kirin shirt they had available in black. It was a little short, and I
 heavily suspected it'd be too small for me after going through the wash, but there wasn't any choice. They
-had run out on the first day.
+had run out of merch on the first day.
 
 ![Kirin](/public/why-mlp/kirin.jpg)
 {: .centered }
 
-They had a panel about the South East Asia brony scene, which I said I'd check out, and then didn't. Oops.
-Its mostly centered in the United States, but the fandom is definitely international.
+They told me to come to their panel about the South East Asia brony scene, which definitely sounded interesting,
+but I completely forgot to. Sorry!
 
 I did talk to another Asian brony in the games room, while watching a *Them's Fightin' Herds*
 tournament match. While people in the background were yelling about a game they obviously didn't
-understand, he talked to me about the Chinese brony scene. A lot of the Chinese fanbase is younger, like
-10 years or fewer, but they still pulled in around 1200 attendees at their most recent convention. He was
+understand, he talked to me about the Chinese brony scene. A lot of the Chinese fanbase is younger (like 10 uears old), but there are still adult fans and they pulled in around 1200 attendees at their most recent convention. He was
 from Shenzhen, and was part of a group of 30 that made it past the visa issues. He was spending his time
 getting merch to bring back for everyone who wasn't able to make it. I suspected he was from a rich
 family, since he was only 18 and lived in Shenzhen, yet he had gotten a sponsor tier badge ($250+, guarantees shorter lines and other perks), was carrying around a really high quality Starlight plushie (which he said cost $530 to commission), and he offered me $50 if I'd stand in line to get Lauren Faust's autograph. Given that said line
@@ -523,15 +553,16 @@ I went to one of the nighttime 18+ panels about the history of pony conventions,
 pony-themed cocktail, and listened to a bunch of organizers talk about how they got here, and all
 the horror stories of past cons. The one with the fire, the one where the organizers ran out of
 money and were completely gone while shit was hitting the fan...
-(Cocktail was vodka, apple juice, triple sec, cranberry syrup, and small pieces of strawberry. Way,
-way too sweet. Shouldn't have been surprised.)
+(Cocktail was vodka, apple juice, triple sec, cranberry syrup, and small pieces of strawberry.
+Way too sweet. Shouldn't have been surprised.)
 
 A number of brony conventions run concert series where fan musicians can play their music to a crowd.
 Sometimes they play remixes of songs from the show, but more frequently they play original music that wouldn't
 be out of place at an indie EDM concert. Because pony is what brought people together, but it's not the reason
 people stay.
 
-Usually, these events suck. It's a bunch of awkward people, in a room that's far too big, where no one's brave
+Usually, these events suck. *Hard*. Not by any fault of the music acts, it's just that usually
+you have a bunch of awkward people, in a room that's far too big, where no one's brave
 enough to dance. The one at the final BronyCon? The Last Ride? It was *lit*. Okay, well, not by the standard
 of a real nightclub or music concert. Still, it was packed at 2 AM. Someone was waving an enormous Equestria
 flag. A person starts an impromptu conga line, yelling "JOIN US! IT'S OKAY! We're all retarded." Someone
@@ -553,10 +584,8 @@ if someone did, I wouldn't feel the need to correct them. It'd be too hard to ex
 
 I don't have any plans to go to another con. None of them are going to top BronyCon anyways.
 
-I probably won't watch any of Generation 5 either. I'm just not feeling much motivation to do so.
-
-And, I'm not sure how much longer I'll stay in the fandom. The points of rides is to stop. It's okay
-for them to stop. Or, at least, it's okay for me to get off it if I want to. I think that'll happen
+I probably won't watch any of Generation 5 either. I'm not sure how much longer I'll stay in the fandom. The points of rides is to stop. It's okay
+for them to stop. Or, it's at least okay for me to get off it if I want to. I think that'll happen
 one day. For now, I still get something out of listening to new songs from the pony music community,
 and fan art pushes the right buttons.
 
@@ -569,8 +598,8 @@ tropes in shipping fanfiction.
 ![Arduineigh](/public/why-mlp/tsssf.jpg)
 {: .centered }
 
-I bought one, and regretted it almost immediately. I had no plans to build off the board, and the
-coolness of the plain metallic look wore off pretty quickly.
+I bought one, and regretted it almost immediately. I've never soldered in my life, what am I doing
+with an Arduino board? The coolness of the plain metallic look wore off pretty quickly.
 
 Everything else? No regrets. I don't regret the plushies, the prints, the shadow box, the
 badge of Flurry Heart labeled "DEMON BABY" that I bought from a teenager who offered 10% off if
@@ -579,15 +608,18 @@ I subbed to Pewdiepie on YouTube. (I didn't.)
 I come back to this question of what MLP all meant to me, and I've decided that's just the wrong
 question to ask.
 Pony fandom was a sizable part of my life for 10 years.
-It wasn't separate from reality, it was an exaggeration of reality, at its worst and and its best.
-The drama, the weirdos, the cool content creators, the jerk content creators, all of it.
+It wasn't separate from reality, it was an exaggeration of reality, at its worst and at its best.
+The drama, the weirdos, the cool content creators, the jerk content creators, the toxic
+arguments, the jaw-dropping quality of fan work, all of it.
 My thoughts on it don't fit in a nice tidy box, because life doesn't fit in a nice tidy box.
 
 In the late 2000s, there was a Youtuber named ChaosAngel. He uploaded metal remixes of Touhou songs,
 from prog rock to black metal, and his work was pretty influential on my music tastes growing up.
-His channel was hit with copyright strikes and taken down without appeal.
-In response, he created a new channel, replaced the offending songs, and reuploaded the
-rest. To announce the channel, he uploaded a ["song 0"](https://www.youtube.com/watch?v=un8y1IbbMno) - a remix of Mima's theme Reincarnation.
+His channel was hit with copyright strikes from the doujin circles, sometimes automatic and
+sometimes not, and it was eventually taken down without appeal.
+
+In response, he created a new channel, reuploading every song except the ones with copyright strikes.
+To announce the channel, he uploaded a ["song 0"](https://www.youtube.com/watch?v=un8y1IbbMno) - a remix of Mima's theme Reincarnation.
 
 > What were the reasons of the evil spirit Mima for her wish to destroy humankind, and why she goes from light to darkness was never known. Mima always denied her death, and she claims to be just a wandering spirit instead of a ghost, while she found the way to revive herself.
 >
@@ -597,16 +629,14 @@ rest. To announce the channel, he uploaded a ["song 0"](https://www.youtube.com/
 >
 > "No one shall be able to drive us from the wonderland that ZUN created for us."
 
-Sure, Hasbro's the ones who created Wonderland, but its fans that make it a place worth visiting.
-Together we've created bizarre cathedrals of horses and magic and cringeworthy stained glass windows,
+Sure, Hasbro's the ones who created Wonderland, but its fans make it a place worth visiting.
+Together we've created bizarre cathedrals of horses and magic with cringeworthy stained glass windows,
 and it needs someone to bear witness.
 As long as people maintain it, I'll check in from time to time, even if it's only out of nostalgia.
-Even if it's all fake compared to the real world, the cathedrals were important to us.
+Even if it's all fake compared to the real world, the cathedrals were real to us.
 
-I've found parallels in the MMA documentary
-["Fighting in the Age of Loneliness"](https://www.youtube.com/watch?v=-DoaUyMGPWI) by Felix Biederman and Jon Bois,
-and the baseball documentary ["The History of the Seattle Mariners"](https://www.youtube.com/watch?v=TIgK56cAjfY) by Jon Bois and Alex Rubenstein. Both are long and meandering, but among their stories are good gems on
-what it means to be a fan.
+Maybe you have a brony fandom of your own. Something you're a fan of, that you can't explain. I think
+it's more common than people think. See: watching MMA
 
 > There's no magic out there when it comes to the contest over resources that governs our lives
 > and the lives of our children. [...]
@@ -617,7 +647,7 @@ what it means to be a fan.
 > in front of each other, their combined experiences and opposing martial abilities would create a
 > beautiful, maddening story.
 
-(Fighting in the Age of Loneliness, 1:24:20)
+["Fighting in the Age of Loneliness", 1:24:20](https://www.youtube.com/watch?v=-DoaUyMGPWI)
 {: .centered }
 
 > Dana White is an MMA fan, and there's a very real insecurity in MMA fans. Whether you're watching
@@ -637,60 +667,65 @@ what it means to be a fan.
 > our sport is, and we know who we are! From the most stereotypical ones, to the grandmas and grad students
 > who get just as excited as the Affliction shirt guys.
 
-(Fighting in the Age of Loneliness, 1:27:30)
+["Fighting in the Age of Loneliness", 1:27:30](https://www.youtube.com/watch?v=-DoaUyMGPWI)
 {: .centered }
+
+Or, watching the Seattle Mariners, possibly the most tragic team in baseball
 
 > With the benefit of hindsight, we know that on-field contention wasn't in the cards for the Seattle
 > Mariners, and has never been to this day. That was never happening. The only fight left was for happiness.
 
-(The History of the Seattle Mariners, 2:44:50)
+["The History of the Seattle Mariners", 2:44:50](https://www.youtube.com/watch?v=TIgK56cAjfY)
 {: .centered }
 
-I've long given up on getting anyone else into this fandom, this thing where observing it is harder than pretending
-it doesn't exist. That's fine.
+I've long given up on getting anyone else into this fandom, this thing where observing it is hard and
+pretending it doesn't exist is easy.
+That's fine.
 They don't have to see it or understand it. They just have to accept it.
 If they can't, they can go to hell.
 
 Over time, I've come around to the "relentless march of the normal" theory. Any culture that gets
-big - any culture *at all* - either grows big enough to lose its unique charm and become another
-building block in the background, or stays small enough to protect itself from everything else.
+big - any culture at all - cannot grow and stay big without losing its unique charm, because that
+unique charm can't last in a culture that tries to appeal to everyone.
+So that culture has a choice: accept that'll happen, or find a way to grow slowly enough to protect
+itself.
 We all wish we could get both the charm and the popularity. I've yet to see anything succeed.
 All those early brony thinkpieces examining why people don't watch the show were a waste of time.
 If they had succeeded, we wouldn't recognize what came out. Sometimes it's worth fighting for
 legitimacy, but bronies lost that fight ages ago.
-Make fun of yourself by saying your trash, and move on.
+Make fun of yourself by saying you're trash, and move on.
 
 > The kids, when they like something on the Internet, they call themselves the trash of the thing.
 
 [- Lin Manuel Miranda](https://youtu.be/6oQyCFOyRcA?t=14)
 {: .centered }
 
-BronyCon was lucky, that their final run was the year before COVID-19 swept through and cancelled
+BronyCon was lucky that their final run was the year before COVID-19 swept through and cancelled
 all pony conventions for 2020. It was really unclear how the brony ecosystem would fare. Cons
 had to strike deals with hotels, and artists who rely on con sales as supplementary income were
 in trouble. In response,
 some organizers set up [PonyFest](https://ponyfest.horse/), a free online brony convention with
-remote panels and a vendor hall hosted in Discord. I checked out the music concert hosted in
+remote panels and a vendor hall hosted in Discord. Cool idea, a lot of work. I ended up getting
+some MLP-themed boba stickers.
+
+Once again, they held a music concert, but this one was virtual in
 [Pony Town](https://www.youtube.com/watch?v=3NpEgOXZoTQ), a social MMORPG where people can make
-pony OCs to hang out, and when I counted how many people were online, I realized this fandom
-actually might never die. Where are these people even coming from?
+pony OCs to chat and hang out. Looking at that concert of fan music, streamed live into a fan
+game, I realized  this fandom actually might never die. Where are these people even coming from?
 
 ![Ponyfest](/public/why-mlp/ponyfest.png)
 {: .centered }
 
-Sure, Generation 4 is over, but there's always going to be this core group of hardcore
-fans that have transcended the show, doing what makes them happy. The recursive engine of
-fan art of fan art is going to keep spinning. The Generation 5 movie kick started things a little bit.
-Maybe the TV series will be good. Maybe it won't. It doesn't matter either way.
-Once you're in, a part of you never leaves.
+Sure, Generation 4 is over, but the fans left
+transcended the show. They're doing what makes them happy. The recursive engine of
+fan art of fan art is going to keep spinning. The Generation 5 movie kick started things a little bit,
+and maybe the TV series will be good. Maybe it won't. It doesn't matter either way. Friendship will
+always be magic, and once you're in, a part of you never leaves.
 
-> Letting go is harder than it seems  
-> I still wonder if you remember me  
+> [Letting go is harder than it seems](https://www.youtube.com/watch?v=TIgK56cAjfY)  
+> [I still wonder if you remember me](https://www.youtube.com/watch?v=TIgK56cAjfY)  
 >
-> It's been so long, you've gone so far  
-> Through space and time between us in my heart  
-> I've lost my way, now I can't see  
-> I still wonder if you remember me
-
-[Remember Me, by PrinceWhateverer](https://www.youtube.com/watch?v=r8JLa4X7yXQ)
-{: .centered }
+> [It's been so long, you've gone so far](https://www.youtube.com/watch?v=TIgK56cAjfY)  
+> [Through space and time between us in my heart](https://www.youtube.com/watch?v=TIgK56cAjfY)  
+> [I've lost my way, now I can't see](https://www.youtube.com/watch?v=TIgK56cAjfY)  
+> [I still wonder if you remember me](https://www.youtube.com/watch?v=TIgK56cAjfY)
