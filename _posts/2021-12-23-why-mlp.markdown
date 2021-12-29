@@ -722,10 +722,14 @@ fan art of fan art is going to keep spinning. The Generation 5 movie kick starte
 and maybe the TV series will be good. Maybe it won't. It doesn't matter either way. Friendship will
 always be magic, and once you're in, a part of you never leaves.
 
-> [Letting go is harder than it seems](https://www.youtube.com/watch?v=TIgK56cAjfY)  
-> [I still wonder if you remember me](https://www.youtube.com/watch?v=TIgK56cAjfY)  
->
-> [It's been so long, you've gone so far](https://www.youtube.com/watch?v=TIgK56cAjfY)  
-> [Through space and time between us in my heart](https://www.youtube.com/watch?v=TIgK56cAjfY)  
-> [I've lost my way, now I can't see](https://www.youtube.com/watch?v=TIgK56cAjfY)  
-> [I still wonder if you remember me](https://www.youtube.com/watch?v=TIgK56cAjfY)
+<blockquote>
+  <a href="https://www.youtube.com/watch?v=TIgK56cAjfY">
+  <p>Letting go is harder than it seems<br>
+  I still wonder if you remember me</p>
+
+    <p>It’s been so long, you’ve gone so far<br>
+    Through space and time between us in my heart<br>
+    I’ve lost my way, now I can’t see<br>
+    I still wonder if you remember me</p>
+    </a>
+</blockquote>
