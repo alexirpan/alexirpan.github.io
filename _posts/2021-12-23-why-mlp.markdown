@@ -11,7 +11,7 @@ I've really put off writing this post.
 I've been watching My Little Pony for literally 10 years. **10 years.** Good lord, that's
 a long time. I thought I would leave the fandom in 2019, after the Friendship is Magic series
 finale. Then
-I thought I would stop watching in 2020. Then I thought I would stop in 2021...and here I am.
+I thought I would stop watching in 2020, after finshing my fan projects. Then I thought I would stop in 2021...and here I am.
 
 I've known for a long time that I wanted to write something about what My Little Pony means
 to me, but I've put it off for a long time because it brings up a complicated group of emotions and
@@ -109,7 +109,9 @@ during Season 1, and in particular,
 along to *Winter Wrap-Up*. In that moment, the brony fandom they never predicted clarified into something
 real. The only thing left was deciding what to do about it.
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YC-p7HvdwbE?start=458" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 
 "Fans are Great. Fandom is Weird"
@@ -179,7 +181,9 @@ put out a stinker.
 And, since Friendship is Magic has to stay family-friendly, there's inherent constraints on what the
 show staff is allowed to depict.
 
+<div class="centered">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">My fave note on <a href="https://twitter.com/hashtag/MLPSeason4Finale?src=hash&amp;ref_src=twsrc%5Etfw">#MLPSeason4Finale</a> “We cannot show Twilight punch Tirek in the face”</p>&mdash; Meghan McCarthy (@MMeghanMcCarthy) <a href="https://twitter.com/MMeghanMcCarthy/status/465144750446624768?ref_src=twsrc%5Etfw">May 10, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+</div>
 
 ![Storyboard of original moment](/public/why-mlp/storyboard.jpeg)
 {: .centered }
@@ -280,20 +284,26 @@ The game has been divorced from its My Little Pony origins for years, but its th
 that it exists at all, and I'm happy its moving towards its own identity. They released their
 first new character this year, and she's **sick**.
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hiw3kMTAVFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-Sometimes, you don't have a team, it's just one crazy person. I think this is most exemplified by
+Sometimes, you don't have a team, it's just one crazy person. Consider
 [Lullaby for a Princess](https://www.youtube.com/watch?v=i7PQ9IO-7fU), an animation by WarpOut. It's
 7 minutes long, and you could make a good argument that it's the best thing the fandom's ever made.
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/i7PQ9IO-7fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-The backing song "Lullaby for a Princess" by ponyphonic, another fan artist
-who imagined a song Celestia would sing to Luna after banishing her to the moon. WarpOut got inspired,
+The backing song "Lullaby for a Princess" is by ponyphonic, a duo
+who imagined a song Celestia would sing to Luna after banishing her to the moon. WarpOut was inspired
+by the song,
 and decided to animate it with an exceptionally high quality bar. Although the music and backgrounds are
 done by other artists, the meat and potatoes of animating was done by one person, frame by frame,
 averaging 0.5 seconds of footage per day.
 
+<div class="centered">
 <video width="560" controls muted autoplay loop>
     <source src="/public/why-mlp/lullaby1.mp4" type="video/mp4">
     Your browser does not support the video tag.
@@ -303,6 +313,7 @@ averaging 0.5 seconds of footage per day.
     <source src="/public/why-mlp/lullaby2.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
+</div>
 
 [Footage from behind the scenes video](https://www.youtube.com/watch?v=UOYL1HxSsYI)
 {: .centered }
@@ -312,7 +323,7 @@ You've got [Ponies at Dawn](https://poniesatdawn.bandcamp.com/) as the
 "big" label, but then there are smaller labels like [Equinity](https://equinity.bandcamp.com/) and
 new labels like [VibePoniez](https://vibeponiez.bandcamp.com/) curating more lofi music. Which all feeds into
 sites like the [Equestrian Trot 100](http://trot100.blogspot.com/) (no longer maintained), or [Horse Music Herald](https://horsemusicherald.com/)
-which shares new releases.
+which shares new releases, as well as pony radio stations like [PonyvilleFM](https://ponyvillefm.com/).
 
 ![xkcd comic about fractal subcultures](/public/why-mlp/crazy_straws.png)
 {: .centered }
@@ -323,9 +334,11 @@ which shares new releases.
 These songs get a few thousand views. The launch parties get around 100 to 200 listeners. Nothing crazy,
 but good enough for people to keep tuning in. Sometimes, you have to write a song. If My Little Pony is
 the inspiration, so be it. Maybe somewhat fittingly, my favorite song from the pony music community is
-also a remix of another fan song - Wasteland Wailers' acoustic cover of On Hold by YourEnigma.
+itself a remix of another fan song - The Wasteland Wailers's acoustic cover of On Hold by YourEnigma.
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LbTu2OzYhPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 When making this post, as an exercise I tried drawing out the web of MLP fan content I coud recall off the top
 of my head. I didn't get very far before realizing this was insane and I needed to stop.
@@ -352,7 +365,8 @@ You could try to blame it on Season 3. Controversial at the time, and still near
 ["best season" polls](https://www.equestriadaily.com/2018/12/poll-results-what-is-best-season-of-my.html).
 You could blame it on the shifts in the show's tone. As the show evolved, it
 "grew up", making more nods to the adult audience, which not everybody liked. Some felt this cheapened
-the innocence of the show, or that giving fans what they wanted made the show worse for non-fans. Or,
+the innocence of the show, or that giving fans what they wanted made the show worse on an objective level.
+Or,
 maybe it's just seasonal rot. Slice of life shows tend to suffer after they exhaust the obvious
 storylines.
 I think the most likely explanation is that it's the same thing that happened to
@@ -361,7 +375,7 @@ Then the hype faded and the world moved on.
 
 I've long hesitated to call myself a brony, even though I've watched the entire series, read about
 2 million words of fanfic,
-created a custom Dominion expansion that I tried to get into Equestria Daily, and most recently
+created a custom MLP-themed Dominion expansion that I tried to get into Equestria Daily, and most recently
 led writing for [My Little Pony: Puzzles are Magic](https://www.puzzlesaremagic.com/), an MLP-themed
 puzzlehunt.
 
@@ -401,7 +415,7 @@ you don't meet the average fan. You meet the super hardcore fan. Which, to me, i
 people, and people I never want to interact with in my life.
 Dealing with the people I don't want to interact with takes up all the energy I have
 to meet everyone else.
-(I feel I have a similar reaction to Bay Area rationalists.)
+(I feel I have a similar relation with Bay Area rationalists.)
 
 The fans I get along with realize the absurdity of the brony fandom, and just go along with it. They
 can seamlessly jump between hating on your favorite pony, and asking if you want to join them for
@@ -429,13 +443,13 @@ of Tide pods not to be opened until after Friendship is Magic ends.)
 You know if this kind of humor works for you. For me, it does! I appreciated getting to watch someone
 do a live rendition of "We Are Number One" in full Robbie Rotten cosplay.
 But, memes often don't have any deeper meaning, and trying to live off just memes is like trying to
-live on only french fries.
+live on only french fries. (And talking to someone who only lives off memes is even worse.)
 
-The more I spent more time in these convention spaces, the
+The more I spent time in these convention spaces, the
 more I started to see the dreary plain white conference room walls instead of the magic. Going to a panel
 and watching someone who couldn't work a room address a 1/3rd full seating area just felt depressing.
 Not to mention seeing content creators whose work I respected acting like assholes, or going to panels
-where it was obvious they were living off the meager clout still achievable in horse fame.
+where it was obvious they were hoarding the meager clout still achievable in horse fame.
 
 It was too many people who were there just to feel something, to get excited about being part of something greater, and having no avenue for that besides ponies. A sort of repressed nerddom exploding out at once,
 with no sense of perspective or self-awareness on what it meant in the grand scheme of things - absolutely nothing.
@@ -444,10 +458,10 @@ I'm perfectly okay with
 spending an irresponsible amount of time on MLP, as long as I know it's irresponsible.
 
 Unfortunately, there are people who don't know it's irresponsible, or who can't leave the MLP community
-because all their friendships and communities are based on MLP. They are also the people who always, always
+because all their friendships and communities are based on MLP. They are also the people who always
 go to conventions. Horse conventions are their
 churches. The places where, for one brief
-weekend, the fandom *is* the real world, and as all-encompassing as people want it to be.
+weekend, the fandom *is* the real world, and as all-encompassing as they want it to be.
 
 This is a subtle point, and I want to be very clear about it: I don't have a problem with people like
 this existing. I think every hardcore fandom has some people who truly
@@ -467,7 +481,7 @@ I wish them all the best. I just don't want to talk to them.
 Maybe that makes me stupid, or selfish, or hypocritical to be
 so judgmental in a fandom whose motto is "love and tolerate". I don't know.
 That's always been one of the struggles in MLP fandom. The show drew together
-people from across the political spectrum, and when the far left and far right
+people from across the political spectrum, and when the highly online far left and far right
 learn about each other, the peace can only stay for so long.
 
 When your entire world is fandom, small conflicts become life-threatening attacks. Bad episodes become
@@ -476,7 +490,9 @@ wish I could force everyone involved to watch and understand "This is Phil Fish"
 on Internet fame (or more specifically, what it's like to be a media object defined by people hating
 you).
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PmTUW-owa2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 > Imagine you're at some Manhattan cocktail party, and in conversation with a stranger you've only
 > just met, you say, "Can you believe this bullshit Phil Fish said on Twitter?" Do you think the
@@ -495,8 +511,9 @@ you).
 >
 > He's only famous to us.
 
-Towards the end of 2019, I was planning to move on from My Little Pony. It was getting smaller,
-I'd seen what conventions had to offer, I had some merch to remember it by. What else was there to do?
+In 2019, I had given myself a resolution: after I finished Puzzles are Magic, I'd move on from
+My Little Pony. It was getting smaller, I'd seen everything conventions had to offer, and
+I had some merch to remember it by. What else was there to do?
 
 
 One Last Ride
@@ -506,17 +523,23 @@ BronyCon was **the** largest My Little Pony convention. Starting from small meet
 area, it later moved to New Jersey, then Baltimore, reaching 10,000 attendees by 2015.
 
 I say was, because BronyCon ended in 2019. There were a few factors going into it. Attendance
-was declining about 20% year-over-year since the peak in 2015. Friendship is Magic's final season was
-slated for 2019, and since being the biggest con was part of BronyCon's identity, organizing staff
+was declining about 20% year-over-year from its peak in 2015. Friendship is Magic's final season was
+airing that October, just over 9 years after its first episode.
+Being the biggest con was part of BronyCon's identity, and organizing staff
 decided they would rather end BronyCon with one big finale coinciding with the last season, rather
 than carrying on and watching it grow smaller each year.
-Given that there are other MLP conventions, which announced they had no intention of stopping, I thought
+Given there were other MLP conventions with no plans of stopping, I thought
 it was a good call.
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CtuKJzeNctE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-(Required viewing prior to every con)
+(To this day, my favorite video about conventions, from any fandom)
 {: .centered }
+
+I waffled back and forth over whether to go, and decided that if I didn't go, I would regret it for the rest of
+my life. So I went.
 
 Evidently, others had the same idea. In 2018, they got 5,465 attendees. Knowing it was the last BronyCon,
 organizers expected a bump to around 7,000 or 8,000. They got 10,000. All sorts of people turned out.
@@ -524,14 +547,13 @@ Lauren Faust, who had
 moved on from the show after Season 2. Old fandom members, who got super into it, then stopped making
 content in 2014, coming back for 1 weekend because it felt right. New fans who started just 1 or 2 years
 ago, well after the hype had faded. My Little Pony is now at the stage where kids in the target demographic
-of 6-7 years old at the start are almost adults now, and a bunch stayed and grew up with the show in the
-same way as Harry Potter for my generation. Every year has international attendance, but this year, it's
-the last one. If there was a time to splurge on international flights, it was for this one.
+of 6-7 years old at the start are almost adults now, and a bunch grew up with the show in the
+same way my genereation grew up with Harry Potter. Every year, BronyCon got international attendance, but this year was the last one. If there was a time to splurge on international flights, now was it.
 
-I waffled back and forth over whether to go, and decided that if I didn't go, I would regret it for the rest of
-my life. So I went.
+BronyCon. Was. *Nuts.*
 
-It. Was. *Nuts.*
+![Trash](/public/why-mlp/trash.jpg)
+{: .centered }
 
 I felt the fandom had told itself a collective story: the show's ending. People's lives are moving on.
 There will always be a core group of fans keeping the fire lit, like the Trekkies between the Original Series and Next Generation, but that'll be it.
@@ -542,7 +564,12 @@ People just needed a reason to come out of the woodwork.
 We all knew this wouldn't last. BronyCon was only so big because of the FOMO
 from existing fans, not new ones. It wasn't going to kickstart a new wave of
 growth.
-Still, that didn't make it any less entertaining. At the vendor hall, I talked to one of the few Asians
+Still, that didn't make it any less entertaining. I saw a fan show off his Rainbow Dash decaled
+Ford Mustang. The Chipotle across the street seemed to have at least one person in a pony T-shirt
+at all hours of the day. One member of the furry contingent carried around a "Pony is Over, Upgrade
+to Furry Now" sign, which I thought was hilarious.
+
+At the vendor hall, I talked to one of the few Asians
 I saw, buying the literal last Kirin shirt they had available in black. It was a little short, and I
 heavily suspected it'd be too small for me after going through the wash, but there wasn't any choice. They
 had run out of merch on the first day.
@@ -567,21 +594,26 @@ the [Rubik's Cube National Championships](https://www.cubingusa.org/nationals/20
 walking through the same halls, and can only imagine what they were thinking when passing by the occasional
 fursuit.
 
-I went to one of the nighttime 18+ panels about the history of pony conventions, got a
+![tote bag](/public/why-mlp/tote.jpg)
+{: .centered }
+
+I had privately made the Elements of Harmony ↔ Infinity Stones connection before BronyCon, and was gratified to see someone else had done the same.
+
+In the evening, I went to one of the nighttime 18+ panels about the history of pony conventions, got a
 pony-themed cocktail, and listened to a bunch of organizers talk about how they got here, and all
 the horror stories of past cons. The one with the fire, the one where the organizers ran out of
 money and were completely gone while shit was hitting the fan, and so on. You
 know what they say, shared trauma brings everyone together.
-(The cocktail was vodka, apple juice, triple sec, cranberry syrup, and small pieces of strawberry.
-Way too sweet. Shouldn't have been surprised.)
+The cocktail was vodka, apple juice, triple sec, cranberry syrup, and small pieces of strawberry,
+and was way too sweet. Shouldn't have been surprised.
 
 A number of brony conventions run concert series where fan musicians can play their music to a crowd.
 Sometimes they play remixes of songs from the show, but more frequently they play original music that wouldn't
 be out of place at an indie EDM concert. Because pony is what brought people together, but it's not the reason
 people stay.
 
-Usually, these events suck. *Hard*. Not by any fault of the music acts, it's just that usually
-you have a bunch of awkward people, in a room that's far too big, where no one's brave
+Usually, these events suck. *Hard*. Not by any fault of the music acts, it's just that they're
+filled with a bunch of awkward people, in a room that's far too big, where no one's brave
 enough to dance. The one at the final BronyCon? The Last Ride? It was *lit*. Okay, well, not by the standard
 of a real nightclub or music concert, but it was packed at 2 AM. Someone was waving an enormous Equestria
 flag. A person starts an impromptu conga line, yelling "JOIN US! IT'S OKAY! We're all retarded." Someone
@@ -589,8 +621,12 @@ else signals everyone to clear a circle, and when we do, he starts showing off h
 Between the insane circumstances, and the casual self-directed use of "retard" in the year 2019, I'm
 not sure I could give a better summary of the state of the fandom.
 
-![BronyCon Concert](/public/why-mlp/concert.png)
-{: .centered }
+<div class="centered">
+<video width="560" controls muted autoplay loop>
+    <source src="/public/why-mlp/concert.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+</div>
 
 Despite everything, the rise and the fall in popularity, the content creators who moved on and see
 their pony work as an old shame, the outing of community figureheads as racists or sexual abusers,
@@ -603,16 +639,16 @@ if someone did, I wouldn't feel the need to correct them. It'd be too hard to ex
 
 I don't have any plans to go to another con. None of them are going to top BronyCon anyways.
 
-I probably won't watch any of Generation 5 either. I'm not sure how much longer I'll stay in the fandom. We called it a ride because the MLP fandom loves horse puns, but
+I probably won't watch Generation 5. I'm not sure how much longer I'll stay in the fandom. We called it a ride because the MLP fandom loves horse puns, but
 it's a fitting name. The point of rides is to stop. It's okay
 for them to stop. Or, at least it's okay for me to get off it if I want to. I think that'll happen
 one day. For now, I still get something out of listening to new songs from the pony music community, and the few fan artists I follow.
 
 I have spent an irrational amount of time and money on My Little Pony paraphernalia, and there is
-only one thing I regret. I was wandering the vendor tables, and saw someone
-was selling Arduineighs - a pony-themed Arduino clone. They
+only one thing I regret. Once, I was wandering vendor tables, and saw someone
+was selling Arduineighs - a pony-themed Arduino board. They
 were themed after Twilight Sparkle's Secret Shipfic Folder, a PG rated board game making fun of
-tropes in shipping fanfiction.
+tropes in poorly written romantic fanfiction.
 
 ![Arduineigh](/public/why-mlp/tsssf.jpg)
 {: .centered }
@@ -623,7 +659,10 @@ metallic look wore off pretty quickly.
 
 Everything else? No regrets. I don't regret the plushies, the prints, the shadow box, the
 badge of Flurry Heart labeled "DEMON BABY" that I bought from a teenager who offered 10% off if
-I subbed to Pewdiepie on YouTube. (I didn't.)
+I subbed to Pewdiepie on YouTube. (I didn't.) I don't regret the time spent carefully trawling the
+MLP wiki for the perfect Lyra thumbnail. I certainly don't regret spending most of my senior year writing
+terrible Java applets for Equestria Dominion - eventually, I parlayed that into a SWE internship
+interview.
 
 I come back to this question of what MLP all meant to me, and I've decided that's just the wrong
 question to ask.
@@ -733,26 +772,27 @@ treasuries took a big hit, and artists who rely on con sales as supplementary in
 in trouble. In response,
 some organizers set up [PonyFest](https://ponyfest.horse/), a free online brony convention with
 remote panels and a vendor hall hosted in Discord. Cool idea, a lot of work required. I ended up getting
-some MLP-themed boba stickers.
-
-(image here?)
+some cute MLP-themed boba stickers.
 
 Once again, they held a music concert, but this one was virtual in
 [Pony Town](https://www.youtube.com/watch?v=3NpEgOXZoTQ), a social MMORPG where people can make
 pony OCs to chat and hang out. Looking at that concert of fan music, streamed live into a fan
-game, I realized  this fandom actually might never die. Where are these people even coming from?
+game receiving active developement, I realized this fandom actually might never die. Where are these people even coming from?
 
-![Ponyfest](/public/why-mlp/ponyfest.png)
+[![Ponyfest](/public/why-mlp/ponyfest.png)](/public/why-mlp/ponyfest.png)
 {: .centered }
 
-Sure, Generation 4 is over, but the fans left
+{Click for full size)
+{: .centered }
+
+Sure, Friendship is Magic is over, but the fans left have
 transcended the show. They're doing what makes them happy. The recursive engine of
-fan art of fan art is going to keep spinning. The Generation 5 movie kick started things a little bit,
+fan art of fan art is going to keep spinning. The Generation 5 movie kick-started things a little bit,
 and maybe the TV series will be good. Maybe it won't. It doesn't matter either way. Friendship will
 always be magic. Once you're in, a part of you never leaves.
 
 <blockquote>
-  <a href="https://www.youtube.com/watch?v=TIgK56cAjfY">
+  <a href="https://www.youtube.com/watch?v=r8JLa4X7yXQ">
   <p>Letting go is harder than it seems<br>
   I still wonder if you remember me</p>
 
