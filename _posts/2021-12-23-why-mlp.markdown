@@ -15,7 +15,7 @@ I thought I would stop watching in 2020. Then I thought I would stop in 2021...a
 
 I've known for a long time that I wanted to write something about what My Little Pony means
 to me, but I've put it off for a long time because it brings up a complicated group of emotions and
-ideas that are hard to explain. At the same time, I knew I had to write this post. So let's get
+ideas that are hard to explain. At the same time, I knew I would have to write this post some day. So let's get
 started.
 
 
@@ -23,7 +23,7 @@ How Did I Get Into My Little Pony?
 ----------------------------------------------------------------------------------------
 
 I'm not trying to get anybody into the show with this post. I decided long ago
-that it wasn't worth doing so. But, I can't explain what the My Little Pony: Friendship is Magic
+that it wasn't worth doing so. But, I can't explain what the *My Little Pony: Friendship is Magic*
 fandom means to me if I don't explain its appeal.
 
 I started around 2011, in the hiatus between Season 1 and 2. I was
@@ -33,26 +33,27 @@ university level maths, like topology or complexity theory. One thing special ab
 it encourages student-organized events. As long as you get enough staff to agree to supervise,
 students can organize anything they want. The brony phenomenon was in full swing, a few students were fans,
 some *staff* were fans, and they organized a watch party. I went, watched a few episodes, saw the appeal,
-and resolved to catch up on the season later.
+and resolved to watch the rest of ths show later.
 
-Not everyone who went got it. I distinctly remember one staff who wanted to give the show a chance,
-but was competely baffled why it was popular after watching a few episodes. We had just finished
-"Cal of the Cutie", so we all called him a blank flank, which just sparked more confusion.
+Not everyone who went got it. I distinctly remember one staff member who wanted to give the show a chance,
+but was competely baffled why MLP was popular after watching a few episodes. We had just finished
+"Call of the Cutie", so we all called him a blank flank, which just sparked more confusion.
 Good times.
 
-Season 2 started out really strong, and I stuck with the show all the way until its finale in 2019.
+Season 2 started out really strong, and I stuck with the show all the way until its final
+season in 2019.
 Friendship is Magic has its ups
 and downs, but at its core it's a wholesome, well-animated cartoon that shifts between light
 low continuity slice of life episodes, and high fantasy adventures where the fate of the world is at
 stake. The characters have fun personalities, they play off each other well, and then occasionally it
-turns into a magical girl anime with big laser beam fights.
+turns into a magical girl anime with big rainbow laser beams.
 What's not to like?
 
 Of course, people got mad or got the wrong idea. *No*, it's not about the 1980s Generation 1 cartoon,
-it's almost exclusively about Friendship is Magic, the Generation 4 cartoon. *No*, it's not some fetish thing,
-most of the fandom just likes the show. (There was some porn, because people are always horny, but it
-wasn't a focal point.) *No*, it wasn't some elaborate gaslighting ironic joke. Maybe for some it was,
-but people just genuinely liked the show.
+it's almost exclusively about the Friendship is Magic cartoon from 2010. *No*, it's not some fetish thing,
+most of the fandom just likes the show. (There is some porn, because people are always horny, but it's
+not a focal point.) *No*, it wasn't some elaborate gaslighting ironic joke. Maybe for some it was,
+but most just genuinely liked the show.
 
 There was other criticism too. "I can't believe you're watching a kid's show."
 When people said this, I don't think they actually mean "shows made
@@ -62,7 +63,8 @@ no substance if you market it to kids. A lot of people mentally bucketed My Litt
 of those shows. That may have been true before (Generation 3.5 is legendarily bad), but every
 reboot is another chance to make things right.
 
-In short, yeah, *My Little Pony: Friendship is Magic* is an advertising vehicle, but it's a fun advertising vehicle. Sometimes making something good is the right way to make money.
+In short, yeah, *My Little Pony: Friendship is Magic* is an advertising vehicle where the toys
+come first, but it's a fun advertising vehicle. Sometimes making something good is the right way to make money.
 I wouldn't say the writers succeeded all the time, some episodes are *really* bad,
 but the good ones are great. I'm not sure how well it works if you aren't
 invested in the characters, but "The Perfect Pear"? *So good*.
@@ -70,7 +72,7 @@ invested in the characters, but "The Perfect Pear"? *So good*.
 ![Perfect Pear](/public/why-mlp/pear.webp)
 {: .centered }
 
-Even so, a good show doesn't explain why the fandom got so big during 2010-2013. I've heard a brony
+Even so, a good show doesn't explain why the fandom blew up during 2010-2013. I've heard a brony
 describe it as a lightning in a bottle, and I think that's true. It was dumb luck, amplified
 through the Internet until it could run on its own.
 
@@ -83,8 +85,9 @@ were allowed to see rankings from previous participants.
 The [paper](http://www.princeton.edu/~mjs3/salganik_dodds_watts06_full.pdf) is here, and
 the short version is that song popularity was just genuinely unpredictable. A popular song in one group
 would be less popular with the next. Interestingly, the more people observed other people's rankings,
-the more volatile the popularity would be. The theory is that there is always some level of herd
-mentality - if it's popular, it's more likely to retain popularity.
+the more volatile the popularity would be. That suggests some level of herd
+mentality - initial popularity is very random, but once you get it, popular things are more likely to
+retain popularity.
 I assume these dynamics are even stronger now compared to 2006, given a bigger Internet and stronger
 recommendation systems.
 
@@ -99,10 +102,11 @@ The only reason I gave MLP a chance was because
 I was into Homestuck at the time, and MLP profile pics and references were appearing on the MSPA
 forums.
 
-The show staff certainly didn't expect it. The last BronyCon was in 2019, and in a panel with showrunner
-Lauren Faust and writer M. A. Larson, they talked about
+The show staff certainly didn't expect it. In a panel with showrunner
+Lauren Faust and writer M. A. Larson, they talked about what it was like to work on the show
+during Season 1, and in particular,
 [the day they watched a bunch of Russian teenagers](https://www.reddit.com/r/IAmA/comments/cezmyc/yo_reddit_im_ma_larson_writer_on_my_little_pony/eu688z7/?context=8&depth=9) singing
-along to *Winter Wrap-Up*. In that moment, this thing they never predicted clarified into something
+along to *Winter Wrap-Up*. In that moment, the brony fandom they never predicted clarified into something
 real. The only thing left was deciding what to do about it.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YC-p7HvdwbE?start=458" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -111,13 +115,13 @@ real. The only thing left was deciding what to do about it.
 "Fans are Great. Fandom is Weird"
 -------------------------------------------------------------------------------------
 
-Of course, there were haters. Every culture creates its counterculture, and bronies are no different.
+Of course, there were haters. Every culture creates its couiterculture, and bronies are no different.
 Even so, bronies got it especially bad. It was astoundingly difficult for fans to explain the appeal
-to outsiders, and it was incredibly easy to write off the whole thing as a bunch of weirdos.
+to outsiders, and even if they explained, it was incredibly easy to write off the whole thing as a bunch of weirdos.
 
 This may be an unpopular opinion, but the MLP fandom *totally* deserved it. Kids didn't deserve to
 be bullied for liking My Little Pony, but the fandom as a whole definitely deserved some gentle
-ribbing.
+teasing.
 You know the old saying:
 
 > "Fans are great. Fandom is weird."
@@ -128,14 +132,14 @@ You know the old saying:
 I've yet to see any fandom
 that wasn't weird in one way or another. I mean this in the most endearing way
 possible, but I've been in Touhou fandom. I've been in Homestuck fandom. Let's say
-I have a *pretty calibrated* sense of how weird fandoms can get. MLP fandom was and is **weird**,
-and that's why I love it.
+I have a *pretty calibrated* sense of how weird fandoms can get. MLP fandom was and is **weird**.
+That's why I love it.
 
 We'll see more examples later, but for example, it was a meme to say "welcome to the herd" when
 someone declared they were a new member of the fandom. During the animating process, ponies
 were copy-pasted in the backgrounds of different episodes to save on animation costs. The fandom
 made up entire names and backstories for those characters, before any of them had gotten a
-speaking line. The character designs for Derpy, Lyra, Bon-Bon, Octavia, and Vinyl were set instantly,
+speaking line. The character designs for Derpy, Lyra, Bon-Bon, Octavia, Vinyl, and others were set instantly,
 but all the canon stories afterwards were influenced heavily by what fans wanted to see.
 Then there was the endless fan music, that ranged from remixing musical numbers from the show,
 to original music that used pony vocal chops, to instrumental music that was just inspired by the show.
@@ -155,9 +159,6 @@ Season 2, they made slight nods to the adult fandom here and there.
 I don't think Hasbro could have shut down the fandom even if they wanted to. It was bigger than them
 now.
 
-\* \* \*
-{: .centered }
-
 I think the explosion of MLP fan content is most easily explained by the MLP universe's untapped potential.
 If someone does good worldbuilding,
 you bet people are going do more things in that world. In this
@@ -168,13 +169,13 @@ people to make original characters.
 The show makes frequent allusions to world
 mythology, the history of Equestria, and other kingdoms besides the pony one, but rarely dwells
 on them for too long because they don't serve the plot. This is the right move from a storytelling
-point of view, but unanswered questions beg answers.
+point of view, but unanswered questions beg fan answers.
 
 There are also out-of-universe factors. When Hasbro wants a new toy line, the writers have to write
 it into the show, whether it makes sense or not. According to rumor, the Season 3 finale felt so
 rushed because the writers begged (and failed) to get network executives to sign off on a 2-part
-episode. Sometimes, it isn't even the executive's faults - the writers just drop the ball and
-put out a bad episode.
+episode. Sometimes, it isn't even the executives' faults - the writers just drop the ball and
+put out a stinker.
 And, since Friendship is Magic has to stay family-friendly, there's inherent constraints on what the
 show staff is allowed to depict.
 
@@ -191,7 +192,7 @@ play in. And fans did play in it. They did all kinds of crazy shit. Sturgeon's L
 MLP fandom was prolific enough for lots of solid content.
 
 Want a voice-acted 9 hour [Ace Attorney x MLP crossover video series](https://www.youtube.com/watch?v=yUDfoZGhLjE)?
-Sure, why not. *Turnabout Storm* is slow at times, but it does a great job at capturing the tone of
+Sure, why not. Turnabout Storm is slow at times, but it does a great job at capturing the tone of
 Ace Attorney, has lots of shout-outs to both IPs, and the case's resolution is excellent. Similarly, when I reread
 [Fallout Equestria](https://www.fimfiction.net/story/119190/fallout-equestria),
 I felt it still held up as a case study in how to write a protagonist who uses their abilities to
@@ -202,21 +203,28 @@ are playing in the what-if space of "what if My Little Pony was a darker, more v
 crossing over with Starcraft and Attack on Titan respectively, and there's some inherent humor
 in the juxtaposition between the two.
 
+![Mad Max: Fury Road x MLP](/public/why-mlp/madpony.jpg)
+{: .centered }
+
+[Mad Pony: Friendship road, by Yulyeen](https://www.deviantart.com/yulyeen/art/Mad-Pony-Friendship-Road-555555629)
+{: .centered }
+
 Want something without a crossover? Well, it's not as popular, but I'll always talk up
 the pony music video [The Stars Will Aid in Her Escape](https://www.youtube.com/watch?v=PdhSb-L3hf8).
 set to "Cosmic Love" by Florence and the Machine.
-Although they were definitely made separately, it's a cool discovered association between the song
-and the series opening, especially with the drawn parallels between Twilight and Luna, and the observation
+It's a cool discovered association between the song's lyrics
+and Luna's turn to Nightmare Moon. The pairing between
+"The stars, the moon, they have all been blown out, You left me in the dark" and Luna's
+circumstances is uncanny,
+as well as the observation
 that both twilight the time and Twilight the character act as the bridge between Sun and Moon.
 
 In some ways, fan content can be better than original content.
 Fanwork is like painting a tapestry, but instead of the standard
 colors like red and blue, you get more exotic colors like Reimu or Papyrus. This is inherently
-more limiting, and cuts off the target audience, but in exchange, that fan work can convey very
-specific feelings or ideas to fans that understand the references. Or, put another way: original
-work can include references and allusions if it wants to, but it can rarely make those allusions
-central to their experience, whereas fan work can be written for very specific niches and assume
-that most viewers have the requisite background.
+more limiting, and narrows the target audience to niche audiences, but in exchange, that fan work can convey very
+specific feelings or ideas to fans that have the required background.
+Original work can't do this, or at least not to the same degree.
 
 It may not objectively be higher
 quality, but it can subjectively be better, and when it comes to entertainment, you like what
@@ -228,7 +236,7 @@ Falling Down the Rabbit Hole
 
 Perhaps it's silly that bronies ascribed so much meaning to an IP that has minimal real-world value,
 and could carry on without them. But, again, they like what they like. *We* like what we like.
-This world is inherently a pretty brutal place. The universe really doesn't care about anything.
+The real world is inherently a pretty brutal place. The universe really doesn't care about anything.
 When faced with an unstoppable meaning-eating monster, anything that fights against that is good.
 
 > I remember during the aughts, when I was first trying to work my way into sports media, the popular line among the cool kids was that things like sports are a distraction that monopolizes peoples’ attention and energy that otherwise would go into enacting real political change. But things like sports are the fucking point! MMA, or learning how to play the lap steel, or thrift fashion, or Counter-Strike, or Scrubs fan fiction, or whatever in the world it is for you. That’s what you’re fighting for, if you’re fighting. Every hour you get to spend in that world is your victory against all this.
@@ -238,27 +246,29 @@ When faced with an unstoppable meaning-eating monster, anything that fights agai
 
 I've come to realize that I put a lot of respect on people who take a nonsense idea, with minimal
 usefulness to the real world, and just run with it to completion because they want to. The lack of
-usefulness is almost the entire point. *No*, this doesn't make me real money. It doesn't make me
-smarter.
+usefulness is almost the entire point. This doesn't make me real money. It doesn't make me
+smarter. It doesn't help me on dates.
 It's just a thing I do, in the time I have. Nonsense only exists because we're
 serious about making it. There's too many things that get dropped at the first sign of resistance,
 and I'd rather live in a world where people follow through on what they're passionate about.
 
-When it comes to fandom in particular, it's interesting because a critical mass of fans produces
-enough content to bring in more fans. That leads to these engines of creation, twirling further
+When it comes to fandom in particular, it's interesting because a critical mass of passion leads to
+content that brings in more fans, leading to more content, and more fans, and so on.
+You get these engines of creation that twirl further
 and further away from show canon. It's fun to trace the web of inspiration.
 Fallout Equestria was an influential fanfic, which then spawned
-its own subgenre, a few game making projects, and not one but [two](https://absolutelyeverything.org/) different fanfiction [print projects](https://www.ministryofimage.net/).
+its own subgenre, a few game making projects, and not one but
+two different fanfiction [print](https://absolutelyeverything.org/) [projects](https://www.ministryofimage.net/).
 The former focuses on just the Fallout Equestria universe, while the latter takes its name from FoE and
-prints a wider selection MLP fanfic, if you can stomach the shipping cost from Russia).
+prints a wider selection MLP fanfic, if you can stomach the shipping cost from Russia.
 
 *Fighting is Magic* was a 2D fighting game made by a group of fans who knew what they were doing, making
 enough progress to show it off at side events for Evo, one of the biggest fighting game tournaments in the
 world. They were hit with a cease and desist letter from Hasbro, and they complied, shutting down all development.
-In response, Lauren Faust offered to do some character design work, and Skullgirls licensed their engine for
-free thanks to a Kickstarter goal.
-Faced with having to redo all their work, they rename to *Them's Fightin' Herds*, run a crowdfunding campaign,
-and release in early access on Steam, six years after their first build.
+In response, Lauren Faust offered to do some character design work, and Skullgirls licensed their engine to
+the team for free thanks to meeting a crowdfunding goal for [Skullgirls DLC](https://skullgirls.fandom.com/wiki/Keep_Skullgirls_Growing).
+Given a lifeline conditioned on redoing all art assets and implementation in the new engine, they renamed to *Them's Fightin' Herds*, ran a crowdfunding campaign,
+and released in early access on Steam in 2018, about 6 years after their first build.
 The game still receives updates today, and although story mode (still) isn't done, its existence at all is a bit of a miracle.
 
 > I dunno how familiar people are with fan projects, but there are probably hundreds of ideas for fan projects starting every day. I would say 99% of them never go beyond the idea phase. It’s exceedingly unlikely that any given fan project will go anywhere at all, let alone stick together for as long as we have. Of the ones that do get past the idea phase, most of them are filled with passion, but are lacking skills. [...] The tiny team we started with, from a random collection of people who happened to see a single post on a single forum at a certain time happened to get along and have the drive and skills that complemented each other and most of the gaps were filled right off the bat.
@@ -294,12 +304,10 @@ averaging 0.5 seconds of footage per day.
     Your browser does not support the video tag.
 </video>
 
-(There are videos of the animating process here, they don't show up in Github's markdown renderer)
-
 [Footage from behind the scenes video](https://www.youtube.com/watch?v=UOYL1HxSsYI)
 {: .centered }
 
-Much of my interaction with the fandom now is just through the pony brony music scene (which yes, is a thing).
+Much of my interaction with the fandom now is just through the pony music scene (which, yes, is a thing).
 You've got [Ponies at Dawn](https://poniesatdawn.bandcamp.com/) as the
 "big" label, but then there are smaller labels like [Equinity](https://equinity.bandcamp.com/) and
 new labels like [VibePoniez](https://vibeponiez.bandcamp.com/) curating more lofi music. Which all feeds into
