@@ -11,12 +11,11 @@ I've really put off writing this post.
 I've been watching My Little Pony for literally 10 years. **10 years.** Good lord, that's
 a long time. I thought I would leave the fandom in 2019, after the Friendship is Magic series
 finale. Then
-I thought I would stop watching in 2020, after finshing my fan projects. Then I thought I would stop in 2021...and here I am.
+I thought I would stop watching in 2020, after finishing my fan projects. Then I thought I would stop in 2021...and here I am.
 
 I've known for a long time that I wanted to write something about what My Little Pony means
 to me, but I've put it off for a long time because it brings up a complicated group of emotions and
-ideas that are hard to explain. At the same time, I knew I would have to write this post some day. So let's get
-started.
+ideas that are hard to explain. This post is going to long, so let's get started.
 
 
 How Did I Get Into My Little Pony?
@@ -29,14 +28,14 @@ fandom means to me if I don't explain its appeal.
 I started around 2011, in the hiatus between Season 1 and 2. I was
 a high school student attending Canada/USA Mathcamp that summer.
 Mathcamp is a summer math program that introduces talented high school students to interesting
-university level maths, like topology or complexity theory. One thing special about Mathcamp is that
+university level math, like topology or complexity theory. One thing special about Mathcamp is that
 it encourages student-organized events. As long as you get enough staff to agree to supervise,
 students can organize anything they want. The brony phenomenon was in full swing, a few students were fans,
 some *staff* were fans, and they organized a watch party. I went, watched a few episodes, saw the appeal,
-and resolved to watch the rest of ths show later.
+and resolved to watch the rest of the show later.
 
 Not everyone who went got it. I distinctly remember one staff member who wanted to give the show a chance,
-but was competely baffled why MLP was popular after watching a few episodes. We had just finished
+but was completely baffled why MLP was popular after watching a few episodes. We had just finished
 "Call of the Cutie", so we all called him a blank flank, which just sparked more confusion.
 Good times.
 
@@ -56,7 +55,7 @@ not a focal point.) *No*, it wasn't some elaborate gaslighting ironic joke. Mayb
 but most just genuinely liked the show.
 
 There was other criticism too. "I can't believe you're watching a kid's show."
-When people said this, I don't think they actually mean "shows made
+When people said this, I don't think they actually meant "shows made
 for kids can't be good." All of Pixar and Disney's best work is a clear counterexample.
 I think they really meant that it's easier to get away with a bad cartoon that's all flash and
 no substance if you market it to kids. A lot of people mentally bucketed My Little Pony as one
@@ -92,7 +91,7 @@ I assume these dynamics are even stronger now compared to 2006, given a bigger I
 recommendation systems.
 
 In most realities, My Little Pony: Friendship is Magic is a
-quietly successful cartoon, that sells a bunch of toys, and otherwise leaves no mark on popular culture,
+quietly successful cartoon that sells a bunch of toys, and otherwise leaves no mark on popular culture,
 outside a bit of nostalgia many years later.
 In our reality, it won the cosmic lottery. The premise and size made it too novel to ignore.
 Not the premise of the show: the premise of the *fandom*.
@@ -117,7 +116,7 @@ real. The only thing left was deciding what to do about it.
 "Fans are Great. Fandom is Weird"
 -------------------------------------------------------------------------------------
 
-Of course, there were haters. Every culture creates its couiterculture, and bronies are no different.
+Of course, there were haters. Every culture creates its counterculture, and bronies are no different.
 Even so, bronies got it especially bad. It was astoundingly difficult for fans to explain the appeal
 to outsiders, and even if they explained, it was incredibly easy to write off the whole thing as a bunch of weirdos.
 
@@ -143,7 +142,7 @@ were copy-pasted in the backgrounds of different episodes to save on animation c
 made up entire names and backstories for those characters, before any of them had gotten a
 speaking line. The character designs for Derpy, Lyra, Bon-Bon, Octavia, Vinyl, and others were set instantly,
 but all the canon stories afterwards were influenced heavily by what fans wanted to see.
-Then there was the endless fan music, that ranged from remixing musical numbers from the show,
+Then there was the endless fan music, which ranged from remixing musical numbers from the show,
 to original music that used pony vocal chops, to instrumental music that was just inspired by the show.
 
 Elements of this appear in many fandoms, but brony fandom was unusually
@@ -163,7 +162,7 @@ now.
 
 I think the explosion of MLP fan content is most easily explained by the MLP universe's untapped potential.
 If someone does good worldbuilding,
-you bet people are going do more things in that world. In this
+you bet people are going to do more things in that world. In this
 respect, Friendship is Magic was almost hyperoptimized for fandom.
 The ensemble cast made it easy for
 fans to find some character they found compelling. The simple character templates made it easy for
@@ -264,7 +263,7 @@ Fallout Equestria was an influential fanfic, which then spawned
 its own subgenre, a few game making projects, and not one but
 two different fanfiction [print](https://absolutelyeverything.org/) [projects](https://www.ministryofimage.net/).
 The former focuses on just the Fallout Equestria universe, while the latter takes its name from FoE and
-prints a wider selection MLP fanfic, if you can stomach the shipping cost from Russia.
+prints a wider selection of MLP fanfic, if you can stomach the shipping cost from Russia.
 
 *Fighting is Magic* was a 2D fighting game made by a group of fans who knew what they were doing, making
 enough progress to show it off at side events for Evo, one of the biggest fighting game tournaments in the
@@ -280,8 +279,8 @@ The game still receives updates today, and although story mode (still) isn't don
 [(Interview with TFH dev team, circa 2015)](https://www.themarysue.com/lauren-faust-and-mane6-on-thems-fightin-herds)
 {: .centered }
 
-The game has been divorced from its My Little Pony origins for years, but its thanks to the show
-that it exists at all, and I'm happy its moving towards its own identity. They released their
+The game has been divorced from its My Little Pony origins for years, but it's thanks to the show
+that it exists at all, and I'm happy it's moving towards its own identity. They released their
 first new character this year, and she's a **pirate goat** that can wallcling *how is this not
 the greatest*?
 
@@ -300,7 +299,7 @@ Sometimes, you don't have a team. You have one crazy person. Consider
 The backing song "Lullaby for a Princess" is by ponyphonic, a duo
 who imagined a song Celestia would sing to Luna after banishing her to the moon. WarpOut was inspired
 by the song,
-and decided to animate it with an exceptionally high quality bar. Although the music and backgrounds are
+and decided to animate it with an exceptionally high quality bar. Although the music and backgrounds were
 done by other artists, the meat and potatoes of animating was done by one person, frame by frame,
 averaging 0.5 seconds of footage per day.
 
@@ -341,7 +340,7 @@ itself a remix of another fan song - The Wasteland Wailers's acoustic cover of O
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LbTu2OzYhPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-When making this post, as an exercise I tried drawing out the web of MLP fan content I coud recall off the top
+When making this post, as an exercise I tried drawing out the web of MLP fan content I could recall off the top
 of my head. I didn't get very far before realizing this was insane and I needed to stop.
 
 [![Diagram of fan content](/public/why-mlp/fandomweb.svg)](/public/why-mlp/fandomweb.svg)
@@ -399,7 +398,7 @@ consider themselves a brony. Or a couple said they and their partner called each
 but they didn't consider themselves bronies. And then meanwhile, I go to a pony convention, where you would
 assume everyone self-identifies as a brony, and an attendee says they're 2 seasons behind the show, and a panel
 gives a warning that their presentation includes spoilers for the currently running season, when you'd
-think catching up on the show would be a pre-requisite of showing up.
+think catching up on the show would be a prerequisite of showing up.
 
 The people who call themselves bronies are the ones who get use out of calling themselves bronies.
 They get a sense of fellowship in adopting the label. I
@@ -452,7 +451,7 @@ and watching someone who couldn't work a room address a 1/3rd full seating area 
 Not to mention seeing content creators whose work I respected acting like assholes, or going to panels
 where it was obvious they were hoarding the meager clout still achievable in horse fame.
 
-It was too many people who were there just to feel something, to get excited about being part of something greater, and having no avenue for that besides ponies. A sort of repressed nerddom exploding out at once,
+There were too many people who were there just to feel something, to get excited about being part of something greater, and having no avenue for that besides ponies. A sort of repressed nerddom exploding out at once,
 with no sense of perspective or self-awareness on what it meant in the grand scheme of things - absolutely nothing.
 Ponies are cool, but I don't want them to be the only thing in my life.
 I'm perfectly okay with
@@ -523,7 +522,7 @@ One Last Ride
 BronyCon was **the** largest My Little Pony convention. Starting from small meetups in the New York City
 area, it later moved to New Jersey, then Baltimore, reaching 10,000 attendees by 2015.
 
-I say was, because BronyCon ended in 2019. There were a few factors going into it. Attendance
+I say "was", because BronyCon ended in 2019. There were a few factors going into it. Attendance
 was declining about 20% year-over-year from its peak in 2015. Friendship is Magic's final season was
 airing that October, just over 9 years after its first episode.
 Being the biggest con was part of BronyCon's identity, and organizing staff
@@ -549,7 +548,7 @@ moved on from the show after Season 2. Old fandom members, who got super into it
 content in 2014, coming back for 1 weekend because it felt right. New fans who started just 1 or 2 years
 ago, well after the hype had faded. My Little Pony is now at the stage where kids in the target demographic
 of 6-7 years old at the start are almost adults now, and a bunch grew up with the show in the
-same way my genereation grew up with Harry Potter. Every year, BronyCon got international attendance, but this year was the last one. If there was a time to splurge on international flights, now was it.
+same way my generation grew up with Harry Potter. Every year, BronyCon got international attendees, but this year was the last one. If there was a time to splurge on international flights, now was it.
 
 BronyCon. Was. *Nuts.*
 
@@ -589,7 +588,7 @@ getting merch to bring back for everyone who couldn't come. I suspected he was f
 family, since he was only 18, but he lived in Shenzhen, had gotten a sponsor tier badge ($250+, guarantees shorter lines and other perks), was carrying around a really high quality Starlight plushie (which he said cost $530 to commission), and he offered me $50 if I'd stand in line to get Lauren Faust's autograph. Given that said line
 was 4 hours long because everyone wanted to tell Lauren Faust their life story, I declined.
 
-Of course, the convention center was getting used by other events too. That year, it was colocated with
+Of course, the convention center was getting used by other events too. That year, it was co-located with
 the [Rubik's Cube National Championships](https://www.cubingusa.org/nationals/2019). I saw some cubers
 walking through the same halls, and can only imagine what they were thinking when passing by the occasional
 fursuit.
@@ -659,7 +658,7 @@ metallic look wore off pretty quickly.
 
 Everything else? No regrets. I don't regret the plushies, the prints, the shadow box, the
 badge of Flurry Heart labeled "DEMON BABY" that I bought from a teenager who offered 10% off if
-I subbed to Pewdiepie on YouTube. (I didn't.) I don't regret the time spent carefully trawling the
+I subscribed to Pewdiepie on YouTube. (I didn't.) I don't regret the time spent carefully trawling the
 MLP wiki for the perfect Lyra thumbnail. I certainly don't regret spending most of my senior year writing
 terrible Java applets for Equestria Dominion - eventually, I parlayed that into a SWE internship
 interview.
@@ -721,7 +720,7 @@ it's more common than people think. Maybe you watch MMA.
 > that said Condom Depot in huge letters on them, [pushing] one another against a fence for 15 minutes. [...]
 > Your target audience found it too weird, too boring, too terrifying, or all three. And the cultural
 > image of MMA fighters is a bunch of enormous, angry men, with weird tattoos, who always seem to be yelling.
-> And the image of fans is a sea of guys with big guts and chiselled arms, wearing Affliction shirts and
+> And the image of fans is a sea of guys with big guts and chiseled arms, wearing Affliction shirts and
 > getting wasted before insulting random passersby. But does it matter? We love this sport! [...] We love it,
 > and that's all that should matter. And who gives a shit if we don't have hundreds of millions of people watching with
 > us every time. And why do we care if people think we're weird or fucked up for watching it? We know what
@@ -735,7 +734,7 @@ Maybe you're watching the Seattle Mariners, possibly the most tragic team in bas
 and are trying to explain why you don't cheer for someone else.
 
 > The Mariners aren't special on account of their lack of success, it's just that
-> succcess is entirely irrelevant. We've entered another realm here, one that's
+> success is entirely irrelevant. We've entered another realm here, one that's
 > far larger and doesn't operate on the dead currency of winning and losing. [...]
 >
 > With the benefit of hindsight, we know that on-field contention wasn't in the cards for the Seattle
@@ -777,7 +776,7 @@ some cute MLP-themed boba stickers.
 Once again, they held a music concert, but this one was virtual in
 [Pony Town](https://www.youtube.com/watch?v=3NpEgOXZoTQ), a social MMORPG where people can make
 pony OCs to chat and hang out. Looking at that concert of fan music, streamed live into a fan
-game receiving active developement, I realized this fandom actually might never die. Where are these people even coming from?
+game receiving active development, I realized this fandom actually might never die. Where are these people even coming from?
 
 [![Ponyfest](/public/why-mlp/ponyfest.png)](/public/why-mlp/ponyfest.png)
 {: .centered }
