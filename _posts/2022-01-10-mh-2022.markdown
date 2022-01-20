@@ -1,0 +1,116 @@
+---
+layout: post
+title:  "MIT Mystery Hunt 2022"
+date:   2021-01-29 10:29:00 -0700
+---
+
+*This has spoilers for MIT Mystery Hunt 2022. Spoilers are interspersed and will
+not be labeled ahead of time.*
+
+So, teammate won Mystery Hunt.
+
+Since the winner of MIT Mystery Hunt has to write the next year's hunt, things will
+be...*interesting* for the next year. I still need to decide what level of involvement
+I'll have in that, but to be safe this post isn't going to do any speculation about the
+future of Hunt.
+
+This year was the first year where teammate didn't do open signups. In previous years,
+teammate was around 60-80 people, and based on a team survey after Mystery Hunt 2021,
+people generally felt the team was growing too big. So, for 2022, the team was limited
+to dedicated team members, which was defined as people who helped write Teammate Hunt,
+or had hunted with teammate in 2021 and at least one previous year. I think this is
+always a tricky thing to navigate, since the natural state of hunt teams is to grow larger
+over time, and people will always end up close to whatever line you draw.
+
+That means this year, we fielded 53 people, which puts us around the size of Left Out.
+And this year was *really* close. Left Out was basically tied with us all through Saturday,
+and Death & Mayhem was ahead of us until they slowed down around Sunday 4 AM.
+(We...kept going.)
+
+I don't think we made any big changes from last year with regards to
+Sheets norms or remote solving tools.
+Based on what Wei-Hwa said in the afterparty Discord, I think the reason teammate edged
+out Left Out was that we were more gung ho about going for the win, whereas Left Out
+was more uncertain and didn't decide to fully go for it until the end. More specifically,
+Left Out saved all 3 free answers until they were sure about things, hammering them all
+on Sci-Ficisco. We had used one free answer in New You City (on a puzzle that had been
+open for a while with no progress), and two free answers in Howtoona, based on our
+observation that after we solved the meta, it would be pretty easy to backsolve the rest of
+the round and quickly unlock everything in Sci-Fi. That likely sped up our meta solves /
+let us make up for our slightly slower puzzle solving average.
+
+I'm not sure how this compares to other teams, but teammate has always had a decent number
+of people who *really* like the meta-level strategizing of how to get from the start of
+Hunt to the end as effectively as possible, and team policy has always been that it's
+okay to hunt this way. This means that, for example, you never need to ask permission to
+backsolve, and every year we've had a puzzle that got sniped from someone who was about
+to finish their forward solve. Depending on viewpoint, this is either fine or horrifying.
+But, well, it does *work*, and there's some fun in figuring out the right speedrun route.
+
+
+Thoughts on Hunt
+----------------------------------------------------------------------------------
+
+Good hunt.
+
+Fun theming, many puns, solid puzzles, and cool that there was an intermediate tier of accomplishment between
+the first round and Pen Station. I would have preferred the team interactions to not be
+recorded ahead of time, since I felt that made it easier to skip the story, but I realize that
+it's logistically a lot harder to make that happen.
+
+So still. Good hunt.
+
+
+Pre-Hunt
+----------------------------------------------------------------------------------
+
+Our pre-hunt socials were mostly different groups of 2-4 people doing independent Star
+Rats solves, and despite doing this many times, I think literally every group backsolved
+The Rescuers. This probably says something about what puzzles we tend to start working on
+first. We also played some [escape room games](https://store.steampowered.com/app/1435790/Escape_Simulator/) and other board games.
+
+Like last year, we had a #conspiracies Discord channel, where I claimed that it would be
+important that MLK day was a full moon (it wasn't), but a [Scriptnotes](https://johnaugust.com/2021/scriptnotes-episode-485-unions-and-guilds-transcript)
+episode we found seemed too good to be true. It mentioned puzzles, and palindromes, and
+"anagrams of MATE", and a tweet made on January 17, which was MLK day this year.
+Based on that and the mention of crossword alignment charts, it really seemed like it
+was seeding puzzle content. It wasn't, and in retrospect, the date of the podcast
+(2 weeks after winning Hunt) should have been a sign that it probably wasn't important.
+
+For this hunt, we did three optional in-person hubs, with one in Bay Area,
+one in Seattle, and one in Boston. This was a bit risky, but I went to the Bay Area one
+since I felt it was within my risk tolerance. No
+one was flying in, everyone attending had gotten a booster, masks required, it was in
+South Bay where people generally take COVID pretty seriously, and you had to show a
+negative rapid test day of. I'm actually not sure how much the in-person hub helped solving,
+aside from the two physical puzzles I worked on, but it definitely helped then.
+
+I had been working through the Ace Attorney series prior to Hunt. Right now, I'm on
+the 2nd case of Apollo Justice, which features a noodle shop called Eldoon's Noodles.
+The characters say it's an almost-palindrome in game, and even talk about "Team Meat"
+when you inspect the evidence. A pretty eerie coincidence.
+
+![Ace Attorney](/public/mh-22/aa.png)
+{: .centered }
+
+
+The Investigation
+-----------------------------------------------------------------------------------
+
+**The Missing Piece** - First puzzle I worked on in Hunt. I recognized the Palindrome name badge
+theming right away (although that isn't a big deal for the puzzle). During the solve process,
+I looked up past Palindrome name badges, and found the 2009 Star Rats badge, which was a bit
+of a trip, but I figured there was no way Palindrome would make a puzzle in the first round
+depend on previous real-world badges. We never figured out what the years meant - after we
+counted the lanyard overlaps, we were pretty sure that was correct and figured we had skipped
+a step somewhere (but in reality the years were just an extra check if you ever tried sorting
+the badges by alpha).
+
+**Where the Wild Things Are** - This was the first physical puzzle, and mostly got claimed by the
+Boston Hub, but the Bay Area group claimed the jigsaw puzzle - which ended up being one of the
+longer ones. With no patterned edges, pairing pieces up was pretty tough. We figured out all of the
+mechanics, but our data was incomplete and the meta got solved before we could patch it up.
+
+
+The Ministry
+------------------------------------------------------------------------------------
