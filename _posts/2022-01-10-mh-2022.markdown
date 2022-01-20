@@ -45,7 +45,7 @@ Hunt to the end as effectively as possible, and team policy has always been that
 okay to hunt this way. This means that, for example, you never need to ask permission to
 backsolve, and every year we've had a puzzle that got sniped from someone who was about
 to finish their forward solve. Depending on viewpoint, this is either fine or horrifying.
-But, well, it does *work*, and there's some fun in figuring out the right speedrun route.
+But, well, it does *work*, and it can be fun to improvise a good speedrun route.
 
 
 Thoughts on Hunt
@@ -107,10 +107,42 @@ a step somewhere (but in reality the years were just an extra check if you ever 
 the badges by alpha).
 
 **Where the Wild Things Are** - This was the first physical puzzle, and mostly got claimed by the
-Boston Hub, but the Bay Area group claimed the jigsaw puzzle - which ended up being one of the
+Boston Hub, but the Bay Area group claimed the jigsaw puzzle, which ended up being one of the
 longer ones. With no patterned edges, pairing pieces up was pretty tough. We figured out all of the
 mechanics, but our data was incomplete and the meta got solved before we could patch it up.
 
 
 The Ministry
 ------------------------------------------------------------------------------------
+
+**Harold and the Purple Crayon** - fun dataset, although I came in after most of the IDing was done and mostly threw around extraction ideas with other people. I don't love that you're actually supposed to throw out the ones that don't fit, but it is neat to see the final step.
+
+**Oxford Children's Dictionary** - We pretty quickly decided that "one side will be regular definitions, and one side will be jank definitions", but it took us a long time to determine exactly what form of jank it would be. Once we got a few examples, it was pretty fun to figure out the clues, although we ended up skipping about half of the letters out of difficulty.
+
+**Dinotopia** - I like to see puzzles as creating order out of chaos. To borrow an analogy from Alex Rubenstein's talk, it is a coincidence that the number of piano keys matches the number of constellations, but once you know this coincidence exists, you kind of have to make a puzzle that pretends this coincidence is vitally important. Sometimes you have to do a bunch of work to make the contrived coincidence work, but sometimes the pieces are already there and it feels like you're just discovering it.
+
+In this sense, it's really cool that the writing system referenced in this puzzle is inherently ambiguous if you arrange the symbols in the right way, and that parsing out readable text is a satisfying challenge. I mostly figured out a-has of what we were supposed to do and how to extract, then got lunch while watching other people do all the work, which is really a 10/10 solve experience, would recommend.
+
+**The Ministry** - When we unlocked The Ministry, we had 25/25 feeders thanks to backsolves. We noticed "bit = binary" right away, and I mentioned that COLORFUL HEAD could be a predicate for "starts with ROYGBIV", at which point we quickly inferred all 5 mechanics, and since this was the only puzzle we had left, I got to see the terrifying sight of Sheets locusts descend on the 5 x 25 bit matrix. I think we filled out all the bits in a minute. Very scary.
+
+**Fruit Around** - We didn't pre-solve the "hungry caterpillar" connection before The Ministry, but we had a few minutes between solving The Ministry and doing the interaction with Palindrome, and we guessed "bookwyrm = very hungry caterpillar" in that gap, so Fruit Around was pretty straightforward for us.
+
+In general, the construction of The Ministry is pretty impressive. I didn't even realize that the meta answers were also semantic descriptions of the bookwyrm until after we finished Hunt, but there are a lot of levels of constraints going on and it's nice that it all fits together.
+
+
+Noirleans
+-----------------------------------
+
+I mostly missed this round, aside from...
+
+**Curious and Determined** - We ended up having to backsolve this puzzle, since we didn't see the way to map letters to each clue. However, the realization that "wait it's *these* colors" was great, and I thought it was funny when we said "The Shawshank Redemption isn't really any color aside from blue and orange, in the same way that every movie poster is blue and orange. I guess the main character's named Red...wait a second."
+
+
+Lake Eerie
+----------------------------------
+
+**Large-scale Anthropomorphism** - after IDing a few of the animals, we dumped all of the animals into Google at once, and got search results for taikyoku shogi, which translates to "ultimate chess", a terrifyingly complicated game played on a 36x36 board. We IDed the appropriate adjectives, guessed the Chinese (well, Japanese) numerals were cluing rows, and figured it was a taikyoku shogi chess puzzle. That seemed like *exactly* the kind of ridiculous thing we'd need to do for a Mystery Hunt puzzle.
+
+Now, if you solved the puzzle yourself, you might have noticed one issue - the game that's used is actually dai shogi, which is played on a 15x15 board where rows are labeled with Japanese numerals (rather than letters). Most piece movement is the same, but notably, the king in taikyoku shogi is allowed to move up to 2 spaces, which made it significantly harder to decide on the best reply. When we got the king out of checkmate, we figured we had made an error somewhere.
+
+Interestingly, whether you interpret it as taikyoku shogi or dai shogi, you extract FIC first either way, and we said "it's probably something like FICTION or FICTIONAL or FICKLE" many times. We tried the first two, came back after someone found dai shogi, and also extracted FIC followed by weird letters as we went down a non-optimal mate. After a closer reading of the rules, we figured out the *igui* rule to take a piece without moving out of the pin.
