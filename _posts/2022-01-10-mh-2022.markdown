@@ -53,7 +53,7 @@ Thoughts on Hunt
 
 Good hunt.
 
-Fun theming, many puns, solid puzzles, and cool that there was an intermediate tier of accomplishment between
+Fun theming, many puns, solid puzzles, good art, and cool that there was an intermediate tier of accomplishment between
 the first round and Pen Station. I would have preferred the team interactions to not be
 recorded ahead of time, since I felt that made it easier to skip the story, but I realize that
 it's logistically a lot harder to make that happen.
@@ -127,22 +127,87 @@ In this sense, it's really cool that the writing system referenced in this puzzl
 
 **Fruit Around** - We didn't pre-solve the "hungry caterpillar" connection before The Ministry, but we had a few minutes between solving The Ministry and doing the interaction with Palindrome, and we guessed "bookwyrm = very hungry caterpillar" in that gap, so Fruit Around was pretty straightforward for us.
 
-In general, the construction of The Ministry is pretty impressive. I didn't even realize that the meta answers were also semantic descriptions of the bookwyrm until after we finished Hunt, but there are a lot of levels of constraints going on and it's nice that it all fits together.
+In general, the construction of The Ministry is pretty impressive. I didn't even realize that the meta answers were also semantic descriptions of the bookwyrm until after we finished Hunt, but there are a lot of layers of constraints going on and it's nice how it all comes together.
 
 
 Noirleans
------------------------------------
+------------------------------------------
 
 I mostly missed this round, aside from...
 
-**Curious and Determined** - We ended up having to backsolve this puzzle, since we didn't see the way to map letters to each clue. However, the realization that "wait it's *these* colors" was great, and I thought it was funny when we said "The Shawshank Redemption isn't really any color aside from blue and orange, in the same way that every movie poster is blue and orange. I guess the main character's named Red...wait a second."
+**Curious and Determined** - We ended up having to backsolve this puzzle, since we didn't see the way to map letters to each clue. However, the realization that "wait it's *these* colors" was fantastic, and I thought it was funny when we said "The Shawshank Redemption isn't really any color aside from blue and orange, in the same way that every movie poster is blue and orange. I guess the main character's named Red...wait a second."
 
 
 Lake Eerie
-----------------------------------
+-----------------------------------------
 
 **Large-scale Anthropomorphism** - after IDing a few of the animals, we dumped all of the animals into Google at once, and got search results for taikyoku shogi, which translates to "ultimate chess", a terrifyingly complicated game played on a 36x36 board. We IDed the appropriate adjectives, guessed the Chinese (well, Japanese) numerals were cluing rows, and figured it was a taikyoku shogi chess puzzle. That seemed like *exactly* the kind of ridiculous thing we'd need to do for a Mystery Hunt puzzle.
 
+![Taikyoku Shogi](/public/mh-22/taikyoku.png)
+{: .centered }
+
 Now, if you solved the puzzle yourself, you might have noticed one issue - the game that's used is actually dai shogi, which is played on a 15x15 board where rows are labeled with Japanese numerals (rather than letters). Most piece movement is the same, but notably, the king in taikyoku shogi is allowed to move up to 2 spaces, which made it significantly harder to decide on the best reply. When we got the king out of checkmate, we figured we had made an error somewhere.
 
-Interestingly, whether you interpret it as taikyoku shogi or dai shogi, you extract FIC first either way, and we said "it's probably something like FICTION or FICTIONAL or FICKLE" many times. We tried the first two, came back after someone found dai shogi, and also extracted FIC followed by weird letters as we went down a non-optimal mate. After a closer reading of the rules, we figured out the *igui* rule to take a piece without moving out of the pin.
+Interestingly, whether you interpret it as taikyoku shogi or dai shogi, you extract FIC first either way, and we said "it's probably something like FICTION or FICTIONAL or FICKLE" many times. We tried the first two, came back after someone found dai shogi, and also extracted FIC followed by weird letters as we went down a non-optimal mate. After a closer reading of the rules, we figured out the *igui* rule to take a piece without moving out of the pin,
+extracting a K, and realized it was FICKLE an hour after we talked about guessing it. On one hand, we could have saved a lot of grief, but we also found the most unique part of the shogi logic, so I'm not too upset in the end.
+
+**The Graveyard** - If I remember correctly, this was a meta that was only unlocked partway through the round. I took a look when it opened, stared a bit, tried to think of appropriately eerie connections, then said "hang on, aren't these the Pacman ghost colors?" I confirmed the year lined up, someone else found the Japanese ghost names, and then we started going on a backsolve spree. It was a little fuzzy, I believe we ended up solving from ROFA, TIONS, and a penciled in irapp on the group we had 3/4 on. (I do think it's a little odd that the Ghostbusters group was ordered by credits, when the names appear after 1/2/3/4 letters of the string.)
+
+
+The Quest Coast
+------------------------------------------------------
+
+**A Number of Games** - When this unlocked, I figured I would have to work on it because I'd done a bit of combinatorial game theory before. But then it turned out teammate is just a bunch of nerds, because lots of us had done combinatorial game theor before. I drifted off of this puzzle in favor for...
+
+**Something Command** - I'm heavily biased, but this might be my favorite puzzle from Hunt. We did the math on the Eldrazi one first, in case the indexing was based on how much over lethal you could get
+After getting lethal exactly with 2 different lines (attacking with Nettle Drone or not), we believed the extraction would only be based on the missing card name, and figured out the extraction idea at 4/7.
+I think the puzzle is approachable if you don't know MTG, but knowing MTG definitely made it faster, and it was cool that you could intuit your way to figuring out the missing card even if you didn't exactly work out all the math.
+
+**Sorcery for Dummies** - Cool puzzle - I mostly came in after all the individual letters were IDed, to try to figure out paths for each monster. This ended up overlapping with technical difficulties that took down interactive puzzles though, and during the downtime I started something else. By the time we finished that, this puzzle had been completed as well.
+
+**Once Upon a Time in the Quest** - When I went to bed around 3 AM Saturday morning, we hadn't made much progress
+on this meta. I woke up at 7 AM, earlier than I planned to, seeing a message asking if anyone knew how Dinotopia work. The overnight crew had broken into the mechanic. I got on voice chat, described Dinotopia, then went back to sleep for an hour. Waking up to more forward solves in Quest, I read over the work, saw that THE DARK hadn't been
+done yet, considered clue phrases that needed to start "THE DARK" instead of just "DARK", proposed "The Dark Knight", and skipped doing the work for that puzzle. That got us to 6/8 Step 3s which was enough to wheel of fortune the answer.
+
+
+New You City
+----------------------------------------------------------------------
+
+**Does Any Kid Still Do This Anymore?** - I did this as my last puzzle before sleeping for Saturday, so it was mostly about grinding trigrams in a daze. I got Antioch in the first one from Nutrimatic, and decided that was fake until we did a few more examples. I remember saying, "I can confirm that kids still take the BART". That's technicaly true, but the meaning of the title became clearer after we got the main a-ha.
+
+**Bad Beginnings** - We didn't get this until after we won Hunt, but I'm mentioning it here anyways because the dataset used is great.
+
+**Proof by Induction** - I came in at the end, after all the ideas were figured out, to help ID some of the missing lines. I hadn't heard of this language before and it's a pretty good one.
+
+
+Recipeoria
+----------------------------------------------------------------------
+
+**Sunday Dinner** - Okay, I didn't actually work on this puzzle, but I got the final answer. The call for help was "cluephrase EIGHT PAST, about NYT Sunday crossword with a food theming". I tossed some terms into Google and said ["SPAGHETTI?"](https://www.wordplays.com/crossword-solver/food-prepared-past-eight%3F)? It was right.
+
+
+Heartford
+------------------------------------------------------------------------
+
+Somehow I saw nothing in this round.
+
+
+Whoston
+------------------------------------------------------------------------
+
+**Rotten Little Scamps** - I pitched in a bit to some of this puzzle, which sparked an ask for "does anyone
+have an Icelandic Nutrimatic", which might be the best request I heard all Hunt. We did not find an Icelandic Nutrimatic.
+
+
+Reference Point
+-----------------------------------------------------------------------
+
+**You Took the Fifth** - I got tagged to work on this puzzle the moment it opened. More of a word puzzle than
+an Ace Attorney puzzle, but still good, and it was cool once we figured out the reason it was presented as an
+objection.lol. It did take us quite a while to decide on the right interpretation of each line, but I believe
+that was intentional.
+
+**On Second Thought** - Now that I think about it, I haven't seen the phonetic step in very many puzzles before, but it didn't feel too difficult when we were working on this puzzle. The puzzle is kinda ISISy, but not in a bad way.
+
+**Diced Turkey Hash** - Something Command was my favorite puzzle of the Hunt, but Diced Turkey Hash was by far the most memorable. This was the second physical puzzle, and I do think it's a shame it unlocked so late. We figured out the binary grid pretty quickly, as well as the Mayan numerals and Tarot symbols. A bit more work got us the
+Dzonghka numbers as well.
