@@ -86,10 +86,12 @@ negative rapid test day of. I'm not too sure how much the in-person hub helped s
 because we still needed to join voice chat to talk to people outside the Bay Area, but
 it definitely helped on the physical puzzles.
 
-I've been playing through the Ace Attorney series prior to Hunt. Right now, I'm on
+I had been playing through the Ace Attorney series prior to Hunt. Right now, I'm on
 the 2nd case of Apollo Justice, which features a noodle shop called Eldoon's Noodles.
 The characters mention it's an almost-palindrome in game, and even talk about "Team Meat"
-when you inspect it more closely. An eerie pre-hunt coincidence.
+when you inspect it more closely, which added up to an eerie pre-hunt coincidence. And then
+the first round was called The Investigation! Please, try to convince me this wasn't
+a work of the divine.
 
 ![Ace Attorney](/public/mh-22/aa.png)
 {: .centered }
@@ -147,17 +149,17 @@ Lake Eerie
 -----------------------------------------
 
 **Large-scale Anthropomorphism** - after IDing a few of the animals, we dumped all of the animals into Google at once, and got search results for taikyoku shogi, which translates to "ultimate chess", a terrifyingly complicated game played on a 36x36 board. We IDed the appropriate adjectives, guessed the Chinese (well, Japanese) numerals were cluing rows, and figured it was a taikyoku shogi chess problem from hell.
-That seemed like *exactly* the kind of ridiculous thing we'd need to do for Mystery Hunt.
+That seemed like *exactly* the level of ridiculousness to expect from Mystery Hunt.
 
 ![Taikyoku Shogi](/public/mh-22/taikyoku.png)
 {: .centered }
 
-Now, if you solved the puzzle yourself, you might have noticed one issue - the game that's used is actually *dai* shogi, which is played on a 15x15 board where rows are labeled with Japanese numerals (rather than letters). Most piece movement is the same, but notably, the king in taikyoku shogi is allowed to move up to 2 spaces, which made it significantly harder to decide on the best reply. When we got the king out of checkmate according to taikyoku rues, we figured we had made an error somewhere.
+Now, if you solved the puzzle yourself, you might have noticed one issue - the game that's used is actually *dai* shogi, which is played on a 15x15 board. Most piece movement is the same, but notably, the king in taikyoku shogi is allowed to move up to 2 spaces, which made it significantly harder to decide on the best reply. When we got the king out of checkmate according to taikyoku rues, we figured we had made an error somewhere.
 
-Interestingly, whether you interpret it as taikyoku shogi or dai shogi, you extract FIC first, and we said "it's probably something like FICTION or FICTIONAL or FICKLE" many times. We tried the first two, came back after someone found dai shogi, then got stuck with weird letters from a non-optimal mate where the
+Interestingly, whether you interpret it as taikyoku shogi or dai shogi, you extract FIC first, and we said "it's probably something like FICTION or FICTIONAL or FICKLE" many times. We tried the first two, came back after someone told us we were using the wrong game, then got stuck with weird letters from a non-optimal mate where the
 falcon didn't capture anything.
 After a closer reading of the rules, we figured out the *igui* rule to take a piece without moving out of the pin,
-extracting a K, and realized it was FICKLE an hour after we talked about guessing it. On one hand, we could have saved a lot of grief, but we also found the most unique part of the shogi logic, so I'm not too upset in the end.
+extracted a K, and realized it was FICKLE an hour after we talked about guessing it. On one hand, we could have saved a lot of grief, but we also found the most unique part of the shogi logic, so I'm not too upset in the end.
 
 **The Graveyard** - If I remember correctly, this was a meta that was only unlocked partway through the round. I took a look when it opened, stared a bit, tried to think of appropriately eerie connections, then said "hang on, aren't these the Pacman ghost colors?" I confirmed the year lined up, someone else found the Japanese ghost names, and then we went on a backsolve spree. It was a little fuzzy, I believe we ended up solving from ROFA, TIONS, and a penciled in IRAPP on the group we had 3/4 on. I do think it's a little odd that the Ghostbusters group was ordered by credits, when the names appear after 1/2/3/4 letters of the string.
 
@@ -168,8 +170,8 @@ The Quest Coast
 **A Number of Games** - When this unlocked, I figured I would have to work on it because I'd done some combinatorial game theory before. But then it turned out teammate is just a bunch of nerds, because lots of us had done combinatorial game theory before. I drifted off of this puzzle in favor for...
 
 **Something Command** - I'm heavily biased, but this is my favorite puzzle from Hunt. We did the math on the Eldrazi one first, in case the indexing was based on how much over lethal you could get
-After getting lethal exactly with 2 different lines (attacking with Nettle Drone or not), we believed the extraction would only be based on the missing card name, solving at 4/7 correct cards (remaining card guesses were incorrect).
-I think the puzzle is approachable if you don't know MTG, but knowing MTG definitely made it faster, and it was cool that you could intuit your way to figuring out the missing card even if you didn't exactly work out all the math.
+After getting lethal exactly with 2 different lines (attacking with Nettle Drone or not), we believed the extraction would only be based on the missing card name, solving at 4/7 correct cards.
+I think the puzzle is doable if you don't know MTG, but knowing MTG definitely made it faster, and it was cool that you could intuit your way to figuring out the missing card even if you didn't exactly work out all the math.
 
 **Sorcery for Dummies** - Cool puzzle - I mostly came in after all the individual letters were IDed, to try to figure out paths for each monster. This ended up overlapping with technical difficulties that took down interactive puzzles though, and during the downtime I started on another puzzle. Once the backend went back-up, I decided I'd rather finish what I started and this puzzle was completed by the time I looked at it again.
 
@@ -182,7 +184,7 @@ wheel of fortune the answer. I still think it's a bit weird that there's an extr
 New You City
 ----------------------------------------------------------------------
 
-**Does Any Kid Still Do This Anymore?** - I did this as my last puzzle before sleeping for Saturday, so it was mostly about grinding trigrams in a daze. I got Antioch in the first one from Nutrimatic, and decided that was fake until we did a few more examples. I remember saying, "I can confirm that kids still take the BART". That's technicaly true, but the meaning of the title became clearer after we got the main a-ha.
+**Does Any Kid Still Do This Anymore?** - I did this as my last puzzle before sleeping for Saturday, so it was mostly about grinding trigrams in a daze. I got Antioch in the first one from Nutrimatic, and decided that was fake until we did a few more examples. I remember saying, "I can confirm that kids still take the BART." That's technicaly true, but the meaning of the title became clearer after we got the main a-ha.
 
 **Bad Beginnings** - We didn't get this until after we won Hunt, but I'm mentioning it here anyways because the dataset used is great and it's worth revisiting.
 
@@ -198,7 +200,7 @@ Recipeoria
 Heartford
 ------------------------------------------------------------------------
 
-Somehow I saw nothing in this round.
+Somehow I saw nothing in this round, not even the meta.
 
 
 Whoston
@@ -236,7 +238,7 @@ The most extreme argument was when did the Tarot dice. We aimed for a path throu
 in descending order, taking the shortest path when possible. At one point, the
 two primes were on completely opposite faces, and there was no unique shortest path, but I argued that
 "be a walker, not a rider - but do not wait" could be interpreted as "take the shortest path that does not go through The Chariot", which left only one path on the d20. This ended up being complete garbage, but it did lead
-us to writing down the correct pairing (along a circuitous route).
+us to writing down the correct pairing (via a circuitous route).
 
 The other rabbit hole is something Palindrome *definitely* did not predict. We
 had rolled the dice, and didn't spot anything weird in what face it landed on,
@@ -425,4 +427,5 @@ that are likely to get pushed the hardest by working on Mystery Hunt of all thin
 
 The opportunity to write for Mystery Hunt doesn't come around very often, which makes me think I
 should go for it, but I'm not expecting to write anything super crazy. Hunt is Hunt, and I am cautiously
-optimistic that I have enough experience with the weight of expectations to get through things okay.
+optimistic that I have enough experience with the weight of expectations to get through the writing
+process okay.
