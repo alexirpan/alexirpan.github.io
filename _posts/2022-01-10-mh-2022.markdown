@@ -119,6 +119,8 @@ The Ministry
 
 **Oxford Children's Dictionary** - We pretty quickly decided that "one side will be regular definitions, and one side will be jank definitions", but it took us a long time to determine exactly what form of jank it would be. Once we got a few examples, it was pretty fun to figure out the clues, although we ended up skipping about half of the letters out of difficulty.
 
+**The Talking Tree** - Pretty cute puzzle, and somehow these diagrams were a lot easier to fill out by intuition than the ones in the similar puzzle from Silph Puzzle Hunt. I did think it was funny that one person solving had written a phonetics puzzle in Teammate Hunt.
+
 **Dinotopia** - I like to see puzzles as creating order out of chaos. To borrow an analogy from Alex Rubenstein's talk, it is a coincidence that the number of piano keys matches the number of constellations, but once you know this coincidence exists, you kind of have to make a puzzle that pretends this coincidence is vitally important. Sometimes you have to do a bunch of work to make the contrived coincidence work, but sometimes the pieces are already there and it feels like you're just discovering it.
 
 In this sense, it's really cool that the writing system referenced in this puzzle is inherently ambiguous if you arrange the symbols in the right way, and that parsing out readable text is a satisfying challenge. I mostly figured out a-has of what we were supposed to do and how to extract, then got lunch while watching other people do all the work, which is really a 10/10 solve experience, would recommend.
@@ -205,9 +207,53 @@ Reference Point
 **You Took the Fifth** - I got tagged to work on this puzzle the moment it opened. More of a word puzzle than
 an Ace Attorney puzzle, but still good, and it was cool once we figured out the reason it was presented as an
 objection.lol. It did take us quite a while to decide on the right interpretation of each line, but I believe
-that was intentional.
+that was part of the intended difficulty.
 
 **On Second Thought** - Now that I think about it, I haven't seen the phonetic step in very many puzzles before, but it didn't feel too difficult when we were working on this puzzle. The puzzle is kinda ISISy, but not in a bad way.
 
 **Diced Turkey Hash** - Something Command was my favorite puzzle of the Hunt, but Diced Turkey Hash was by far the most memorable. This was the second physical puzzle, and I do think it's a shame it unlocked so late. We figured out the binary grid pretty quickly, as well as the Mayan numerals and Tarot symbols. A bit more work got us the
-Dzonghka numbers as well.
+Dzonghka numbers as well. From there, we figured that "face-to-face" was a clue indicating we should take a walk between adjacent faces of the d20s.
+Based on the given text, we started identifying mappings between pairs of dice, noticing more relevant text every time we reread the given text.
+It's impressively dense how many clues there are, especially after we figured out what "director's chair" meant.
+
+It was definitely hard (evidently one of the least solved puzzles in Hunt),
+but it was pretty satisfying to figure out the right interpretation of all the text.
+We did end up running into two rabbit holes. One is that the flavor about going
+on a journey really felt like we needed to trace a path along both pairs of dice,
+but the final extraction only relies on the mapping between the two dice, whose
+final read order doesn't depend on face topology. The specifics definitely
+helped us confirm we had the right pairings and numberings, but we also managed
+to argue a reasonably unique path that visited every face once. (Probably the most extreme part was when did the Tarot dice. We aimed for a path through all prime numbers
+in descending order, taking the shortest path when possible. At one point, the
+two primes were on completely opposite faces, but I argued that "be a walker, not a rider - but do not wait" could be interpreted as "take the shortest path that does not go through The Chariot", which actually is unique on the d20.)
+
+The other rabbit hole is something Palindrome *definitely* did not predict. We
+had rolled the dice a few times to see if they were weighted. The outputs looked
+reasonable, but then we decided to try rolling them into water, since that would
+magnify any weight differences. To our surprise, there **was** a consistent face
+that would point up.
+
+That led to a big debate on whether this was important puzzle content, or
+whether this was a manufacturing defect. Points for puzzle content was that the
+dice felt high quality and likely didn't have defects, and come on, look it keeps pointing this way up. Points
+for manufacturing defect was that if the dice were weighted, it was only easily
+detectable by rolling them into water, and everything else we'd discovered so
+far had nothing to do with the dice's output distribution. During this debate,
+one teammate drove home and back just to get a fair d20 as a control variable, and
+we asked several remote teammates to roll any d20s *they* had into water to see
+if they had the same phenemenon. They didn't, but the "weighting doesn't matter"
+contingent wasn't convinced that meant the weighting was important. Eventually,
+we decided to settle it by seeing whether the virtual version of Diced Turkey Hash
+left any way for a virtual solver to learn the dice were weighted. The virtual
+version wouldn't unlock for another hour, and eventually we learned that no,
+the weighting didn't matter.
+
+It wasn't real, and it wasn't intentional, but it was a very entertaining argument,
+so thanks Palindrome (and thanks HRT for manufacturing slightly unfair dice).
+
+**Reference Desk** - We random anagrammed the answer, and just could not figure out
+the ordering step when trying to figure out backsolves. Without the ordering realization,
+backsolving was pretty impossible, so we just left the round incomplete. We
+thought we were being fairly completionist, but based on solve charts, we had
+fewer solves than a lot of other teams. Our guess is that the difference comes
+from solving with fewer feeders in rounds that were hard to backsolve.
