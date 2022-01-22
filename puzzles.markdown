@@ -4,7 +4,7 @@ title: Puzzles
 permalink: /puzzles/
 ---
 
-*Last updated October 30, 2021.*
+*Last updated January 22, 2022.*
 
 One of my main hobbies is puzzlehunts. They're a little hard to describe,
 but generally, a puzzlehunt puzzle is some data that usually
@@ -25,6 +25,7 @@ Here are some Mystery Hunt related things I've written:
     * [2019]({% post_url 2019-01-26-mh-2019 %})
     * [2020]({% post_url 2020-01-22-mh-2020 %})
     * [2021]({% post_url 2021-01-29-mh-2021 %})
+    * [2022]({% post_url 2022-01-22-mh-2022 %})
 
 I've also written some puzzles.
 My more recent puzzles are better than my old ones, but I'm including everything for
