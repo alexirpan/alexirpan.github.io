@@ -253,7 +253,132 @@ so thanks Palindrome (and thanks HRT for manufacturing slightly unfair dice).
 
 **Reference Desk** - We random anagrammed the answer, and just could not figure out
 the ordering step when trying to figure out backsolves. Without the ordering realization,
-backsolving was pretty impossible, so we just left the round incomplete. We
-thought we were being fairly completionist, but based on solve charts, we had
-fewer solves than a lot of other teams. Our guess is that the difference comes
-from solving with fewer feeders in rounds that were hard to backsolve.
+backsolving was pretty impossible, so we just left the round incomplete. This likely
+contributed to our lower total solve count in the end.
+
+
+Howtoona
+---------------------------------------------------------------
+
+**How to Install a Handle** - The moment this unlocked, I scrolled down the page, and said "YOOOOO IT'S MATHDANIEL SQUIRREL". I had actually emailed the relevant dataset to Ryan North a week before Hunt thanks to [this Dinosaur Comics](https://www.qwantz.com/index.php?comic=3844), so it was fresh in my mind. I can confirm that he didn't know about the bracket before, but does now.
+
+**How to Make the Right Move** - The pair of us that first looked at this puzzle immediately figured out the
+puzzle mashup, then tagged other people to work on it. I credit working on the Sleeping Beauty meta from
+Inception Hunt. I also believe we sent an errata request about board 9, claiming it was impossible. It wasn't,
+we figured it out eventualy.
+
+**How to Require Some More Assembly (Picture Puzzle 3)**: I got to come in to save extraction, which is always fun. Saw a completed grid and a highlighted entry, interpreted it slightly different than the previous group, and then we solved. Although it took us a while because we read "invert Y" as "flip across Y-axis", which made the final image look more like a vampire bat than the actual answer.
+
+**How to Do Quality Reviews** - Helped with initial data entry, but then it hit the part of the puzzle that
+was not very parallelizable and I drifted back to...
+
+**How to Find a Component** - I opened the meta at the start of the round, didn't see how to do anything,
+and left. A while later, I opened our meta sheet again, and saw someone had written "these numbers are the
+alphabetical permutation of the given words". Seeing that all our answers were 9 letters long with unique
+letters, I wrote up all my theories for how I wanted the meta to work, tried starting from 3/9 (wasn't enough
+to connect any pieces together), then wrote some code to check how constraining the meta would be on our answers.
+After applying the constraints that the answer was 9 letters, all letters were unique, and numbers in each column should be unique, I found my Scrabble dictionary was reduced to just 226 words. A teammate and I then spent the next 30 minutes trying to find thematic backsolves to puzzles in the round. We failed all our backsolves and split to
+work on forward solves instead. In retrospect, most of the puzzle answers were not very thematic and I suspect
+this was intentional. The constraints are *really* strong if you squeeze for them.
+
+Around this time, we were down to 1 manuscrip left, and win-comm (the group watching overall strategy) proposed
+using the free answer in Howtoona. We had 5/9 answers and our estimate was that we'd need 1 more answer to crack
+the meta open. However, multiple puzzles in Howtoona were moving forward without getting stuck, and if one of those
+got finished, we could instead have an extra feeder in Sci-Fi.
+We knew that
+teammate was in contention to win (since we had gotten a phone call saying so), but we were *not* in the lead
+on unlock progress (because one puzzle had an errata issued 30 minutes before we saw it). After some discussion,
+we said to give us 15-20 minutes then ask again. About 20 minutes later, we were still at 5/9, increasingly
+confident we'd need a 6th answer, and unwilling to backsolve for it because our candidate word list was
+too big. Given that, we pulled the trigger and redeemed our manuscrip on a Howtoona puzzle no one was looking at...right as the 6th feeder was forward solved. At 7/9 it was pretty trivial to backsolve the remaining answers and we finished the meta in 5 more minutes.
+
+I think the win-Hunt play would have been to use the manuscrip 20 minutes before we did, and the max-fun
+play would have been to use it on a Sci-Fi puzzle and let people finish their Howtoona puzzles.
+Instead we did something in-between that was somewhat unsatisfying on both ends. It wasn't a perfect call, but
+it was a tricky decision given that teammate agreed we were both going to have fun and go for the win, and I
+think we came out the other end okay.
+
+(In case you were wondering, that previous section is what I mean by "meta-level strategizing". A conversation
+like that tends to happens every year.)
+
+
+The Plot Device
+---------------------------------------------------------------------
+
+(This is wildly non-chronological, because I worked on this throughout the Hunt, but this felt like
+the approximate time where I did the most work on it.)
+
+**Narnia Beeswax** - We got our first Plot Device solve in the middle of this puzzle. My understanding is
+that the group working on Order of Apparitions was getting really fed up with the "cluephrase" they had,
+and tried guessing the whole thing in frustration. In Narnia, we confirmed that we could submit single
+answers, and good thing too, it took us so many tries to solve EQUALLY SNUG. In general, the answer guess
+timeout was more annoying in this round, and we often spent 5 minutes locked out from guesses.
+
+**A Crying Shamus** - I was not good enough to help on any of the cryptics, but I was good enough at searching allt he words with "mystery" and "detective" to figure out the answer ordering. I was also good enough at reading
+last letters to finish the puzzle (for whatever reason the last letters popped out for me more than the first
+ones.)
+
+**Synonym Toast** - Just a nice word puzzle in general, although we ran into an errata on enumeration. I think
+we explained the issue to Palindrome quite poorly, because it took a few iterations for us to explain what we
+thought the error was. Sorry!
+
+**Step by Step Ladder** - We had tried to presolve the Plot Device meta by building a word ladder, so when we unlocked the
+puzzle that was *actually* a word ladder, we sped through it pretty quickly (10 minutes based on our solve info).
+
+
+Sci-Ficisco
+---------------------------------------------------------------------
+
+I missed everything from this round aside from the meta, but I've heard good things about both **Replicator Droid**
+and **Lists of Large Integers**
+
+**Communicating With the Aliens** - When we got to this puzzle, it was about 3:30 AM on the West Coast, and
+I was listening to ideas about lines of symmetry without really having much input. I felt I needed some sleep
+but also knew we were really close to finishing, so I decided to take a 30 minute nap and hope we'd have 1 or
+2 more feeders by the time I woke up. I set one alarm (and 5 backup alarms offset 5 minutes apart), woke
+back up, and tried again. It took us an embarassingly long time to reorder our puzzles in the given round order,
+and after doing so it also took a while to get just 1 of our answers in the grid. We had a lot of competing
+theories about what the symbols meant, none of which let us place the DES MOINES answer. Eventually,
+we got it in, and once we noticed how the three-dot symbols lined up, the rest was pretty fast. I started
+building the Nutrimatic query for unused squares, and mentioned that a lot of the regexes were resolving to
+phrases starting with FIRST, which oriented us to the right pun idea.
+
+
+Endgame
+------------------------------------------------------------------------------------------------
+
+We entered endgame knowing that the coin hadn't been found yet, but we also knew it was probably very close
+given that we were behind at least one other team on puzzle unlocks. Our best hope was to assume we figured out
+the metas faster, leapfrogged other teams, and could finish endgame before they caught up.
+
+**Battery Pack** - Unlike other teams, we did not pre-solve the Plot Device meta, but it was pretty clear
+what to do once we saw the shape on the meta page. We complicated it for ourselves a bit by assuming it
+would mix-and-match across all answers, rather than coming pre-grouped.
+
+**The Tollbooth** - It took us about 1.5 hours to finish this puzzle. We split into three groups: one to find
+books, one to solve book titles, and one to solve the printer's devilry clues. We got most of the data,
+and assumed the extraction would be based on the puzzles described on each page of the book. When we failed to
+notice anything special between each pair of answers, we tried increasingly conspiratorial ideas, including
+"take random letters out of each word to spell a punny phrase", which got surprisingly far on building
+a competely incorrect answer.
+
+With the entire Hunt as a potential data source, we tried a bunch of things, like the number of lines on
+each PDF, or the map on the Pen Station round page. After what felt like an eternity, someone noticed the
+borders were different between pages, did the indexing, and won Hunt.
+
+Personally, it didn't really feel real. For me, it felt like, "oh, we won, wooooo, I'm going to sleep."
+Even now, Hunt feels like this thing that doesn't exist yet, and it's hard for me to feel something about
+it before it becomes more solid.
+
+Maybe I'm a little jaded, but winning Mystery Hunt didn't light any big fires of motivation for me. I
+feel I've already exorcised all my puzzle demons and written the puzzles I *had* to write.
+The ones left in my puzzle ideas file are generally uninspiring and don't feel good enough for Mystery
+Hunt. After writing puzzles fairly continuously for 3 years (MLP: Puzzles are Magic into Teammate
+Hunt 2020 into Teammate Hunt 2021), I have a better sense of how easy it is for me to spend my
+daydream time thinking about puzzles instead of anything else, and how it ruins my ability to
+make small talk or start any other bigger projects. Sure, it's rewarding, but lots of things are rewarding,
+and I feel I need to set stricter boundaries on the time I allocate to puzzles - boundaries that are
+likely to get pushed the hardest by working on Mystery Hunt of all things.
+
+The opportunity to write for Mystery Hunt doesn't come around very often, and I'm still going to go for it,
+but I'm not expecting to write anything super crazy.
