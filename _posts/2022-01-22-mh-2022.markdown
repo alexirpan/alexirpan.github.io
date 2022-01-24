@@ -154,7 +154,7 @@ That seemed like *exactly* the level of ridiculousness to expect from Mystery Hu
 ![Taikyoku Shogi](/public/mh-22/taikyoku.png)
 {: .centered }
 
-Now, if you solved the puzzle yourself, you might have noticed one issue - the game that's used is actually *dai* shogi, which is played on a 15x15 board. Most piece movement is the same, but notably, the king in taikyoku shogi is allowed to move up to 2 spaces, which made it significantly harder to decide on the best reply. When we got the king out of checkmate according to taikyoku rues, we figured we had made an error somewhere.
+Now, if you solved the puzzle yourself, you might have noticed one issue - the game that's used is actually *dai* shogi, which is played on a 15x15 board. Most piece movement is the same, but notably, the king in taikyoku shogi is allowed to move up to 2 spaces, which made it significantly harder to decide on the best reply. When we got the king out of checkmate according to taikyoku rules, we figured we had made an error somewhere.
 
 Interestingly, whether you interpret it as taikyoku shogi or dai shogi, you extract FIC first, and we said "it's probably something like FICTION or FICTIONAL or FICKLE" many times. We tried the first two, came back after someone told us we were using the wrong game, then got stuck with weird letters from a non-optimal mate where the
 falcon didn't capture anything.
@@ -169,7 +169,7 @@ The Quest Coast
 
 **A Number of Games** - When this unlocked, I figured I would have to work on it because I'd done some combinatorial game theory before. But then it turned out teammate is just a bunch of nerds, because lots of us had done combinatorial game theory before. I drifted off of this puzzle in favor for...
 
-**Something Command** - I'm heavily biased, but this is my favorite puzzle from Hunt. We did the math on the Eldrazi one first, in case the indexing was based on how much over lethal you could get
+**Something Command** - I'm heavily biased, but this is my favorite puzzle from Hunt. We did the math on the Eldrazi one first, in case the indexing was based on how much over lethal you could get.
 After getting lethal exactly with 2 different lines (attacking with Nettle Drone or not), we believed the extraction would only be based on the missing card name, solving at 4/7 correct cards.
 I think the puzzle is doable if you don't know MTG, but knowing MTG definitely made it faster, and it was cool that you could intuit your way to figuring out the missing card even if you didn't exactly work out all the math.
 
@@ -184,7 +184,7 @@ wheel of fortune the answer. I still think it's a bit weird that there's an extr
 New You City
 ----------------------------------------------------------------------
 
-**Does Any Kid Still Do This Anymore?** - I did this as my last puzzle before sleeping for Saturday, so it was mostly about grinding trigrams in a daze. I got Antioch in the first one from Nutrimatic, and decided that was fake until we did a few more examples. I remember saying, "I can confirm that kids still take the BART." That's technicaly true, but the meaning of the title became clearer after we got the main a-ha.
+**Does Any Kid Still Do This Anymore?** - I did this as my last puzzle before sleeping for Saturday, so it was mostly about grinding trigrams in a daze. I got Antioch in the first one from Nutrimatic, and decided that was fake until we did a few more examples. I remember saying, "I can confirm that kids still take the BART." That's technically true, but the meaning of the title became clearer after we got the main a-ha.
 
 **Bad Beginnings** - We didn't get this until after we won Hunt, but I'm mentioning it here anyways because the dataset used is great and it's worth revisiting.
 
@@ -233,11 +233,11 @@ but the final extraction only relies on the mapping between the two dice, which 
 determined without looking at the face topology.
 The given text about the journey
 definitely helped us confirm we were doing the right thing, but we also managed to translate it
-into a reasonbly unique path that visited each face once.
-The most extreme argument was when did the Tarot dice. We aimed for a path through all prime numbers
+into a reasonably unique path that visited each face once.
+The most extreme argument was when we did the Tarot dice. We aimed for a path through all prime numbers
 in descending order, taking the shortest path when possible. At one point, the
 two primes were on completely opposite faces, and there was no unique shortest path, but I argued that
-"be a walker, not a rider - but do not wait" could be interpreted as "take the shortest path that does not go through The Chariot", which left only one path on the d20. This ended up being complete garbage, but it did lead
+"be a walker, not a rider - but do not wait" could be interpreted as "take the shortest path that does not go through The Chariot", which left only one path on the d20. This was not the intention of that text, but it did lead
 us to writing down the correct pairing (via a circuitous route).
 
 The other rabbit hole is something Palindrome *definitely* did not predict. We
@@ -255,7 +255,7 @@ video below.
 </div>
 
 I was still not convinced, and argued that other d20s might show the same behavior, even if they
-were fair. One person drove home and back to bring control groups d20s, while we recruited help from remote
+were fair. One person drove home and back to bring control group d20s, while we recruited help from remote
 solvers.
 
 ![Discord screenshot](/public/mh-22/discord.png)
@@ -319,7 +319,7 @@ After applying the constraints that the answer was 9 letters, all letters were u
 
 A teammate and I spent the next 30 minutes looking for thematic backsolves on abandoned puzzles, and failed to
 backsolve anything. In retrospect, most of the puzzle answers were not very thematic, and I suspect
-this was intentional. The constraints are *really* strong if you squeeze for them.
+this was intentional. The constraints are *really* strong if you squeeze them for everything you can.
 
 Around this time, we were down to 1 manuscrip left, and win-comm (the group watching overall strategy) proposed
 using the free answer in Howtoona. We had gone up to 5/9 Howtoona answers, and our estimate was that we'd need 1 more answer to crack
@@ -338,8 +338,8 @@ Instead we did something in-between that was somewhat unsatisfying on both ends.
 it was a tricky decision given that teammate agreed we were both going to have fun and go for the win. I
 think the one we came to was acceptable.
 
-(In case you were wondering, that previous section is what I mean by "meta-level strategizing". A conversation
-like that tends to happens every year.)
+In case you were wondering, that previous section is what I mean by "meta-level strategizing". A conversation
+like that tends to happens every year.
 
 
 The Plot Device
@@ -356,7 +356,7 @@ timeout was more annoying in this round, and we often spent 5 minutes locked out
 
 **A Crying Shamus** - I was not good enough to help on any of the cryptics, but I was good enough at searching all the words with "mystery" and "detective" to figure out the answer ordering. I was also good enough at reading
 last letters to finish the puzzle. For whatever reason the last letters popped out for me more than the first
-one.
+ones.
 
 **Synonym Toast** - Just a neat word puzzle in general, although we ran into an errata on enumeration. I think
 we explained the issue to Palindrome quite poorly, because it took a few iterations for us to explain what we
