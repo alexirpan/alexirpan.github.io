@@ -1,0 +1,76 @@
+---
+layout: post
+title:  "The Rise of Do What I Mean"
+date:   2022-04-11 02:17:00 -0700
+---
+
+Boy, it's been a busy week for deep learning. Let's start with the paper I worked on.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ysFav0b472w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+SayCan is a robot learning system that we've been developing for about the past year. The
+paper is on arXiv [here](https://arxiv.org/abs/2204.01691), and it builds on a lot of past
+work that's been done in conditional imitation learning and reinforcement learning.
+
+In short: suppose you have a robot that can do some tasks we tell it to do in natural language,
+like "pick up the apple" or "go to the trash can". If you have these primitive tasks, you can
+chain them together into more complex tasks. If I want the robot to throw away the apple, I could say,
+"pick up the apple, then go to the trash can, then place it in the trash can", and assuming those
+three primitives are learned well, the robot will complete the task.
+
+Now, you wouldn't want to actually say "pick up the apple, then go to the trash can, then place it
+in the trash can". We'd like to just say "throw away the apple" and have the rest be done automatically.
+Well, in the past few years, large language models (LLMs) have shown they can do reasonably well at many
+problems, as long as you can describe the input and output with just language. And this problem of
+mappining "throw away the apple" to "pick / go to trash / place" fits that description exactly!
+
+IMAGE HERE
+
+Now, there are some details to fill in here. The LLM is not aware of the robot's surroundings or capabilities,
+so using it naively may generate sentences the robot isn't capable of performing. This is handled with
+a two-pronged approach.
+
+1. The language generation is constrained to the primitives the robot can (currently) perform.
+2. The generated primitive is scored based on a learned value function, which maps the image + language to
+the estimated probability the robot can complete the task.
+
+You can view this as the LLM estimating the probability an instruction helps the high-level goal assuming a perfect
+robot, and the value function acting as a correction to drive behavior towards things the robot can do.
+
+This glosses over a lot of work on how to learn the value function, how to learn the policy for the primitive tasks,
+prompt engineering for the large language model, and more. If you want more details, feel free to read the paper!
+My main takeaway is that LLMs are pretty good. The language generation is the easy part and its outputs are usually
+reasonable, while the value function + policy are the hard parts. Even assuming that LLMs don't get better, there is
+a lot of slack left for robot capabilities to get better and move towards robots that do what you mean, not just what
+you say.
+
+\* \* \*
+{: .centered }
+
+To what should be the surprise of no one, large language models have been getting better. I mean, this was explained in the
+GPT-3 paper, the trendlines didn't show any signs of stopping and there was room for at least 1 more order of magnitude.
+
+DeepMind put out a paper for their [Chinchilla model](TODO). Through
+more careful investigation, they found that training corpus size had not increased in size relative to parameter count
+as much as it should have. By using about 4x more training data (300 billion tokens --> 1.4 trillion tokens), they
+coud reduce model size 4x (280B parameters --> 70B parameters) while achieving better performance.
+
+Meanwhile, Google Brain announced their [PaLM](TODO) language model, trained with 540B parameters on 780 billion tokens,
+and again, we see something similar to GPT-3. Performance increases on many tasks that were already doing well, but on some
+tasks, there are discontinous improvements, where the increase in scale leads to a larger increase in performance than
+predicted from small scale experiments.
+
+IMAGE
+
+The emoji to movie and joke explanation results are especially interesting to me. They feel qualitatively better in a way
+that's hard to describe, often combining concepts with a higher level of complexity than I expect. ELABORATE?
+
+Neither of these works has shown signs they've hit a ceiling to model scaling, so it's good evidence for the model scaling
+crowd. It is entirely possible that we hit a scale ceiling in the next jump of model size, but I'm reminded that (LINK?)
+so far, no one is willing to predict whether we will continue to see qualitatively new capabilities from the next large
+language model, or what those capabilities will be. I also believe no one is willing to predict the easiest thing that
+the next large language model can't do. For existing tasks, you can at least try to forecast based on the trendlines,
+but for new capabilities? People genuinely don't know. ELABORATE?
+
+\* \* \*
+{: .centered }
