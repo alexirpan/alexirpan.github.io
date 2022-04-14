@@ -124,12 +124,18 @@ Everything is high-dimensional. Are we going to claim that language is not a hig
 in that regime, then diffusion models should be eating the ML world.
 
 Well, maybe they are. I've been messing around with Codex a bit, and would describe it as "occasionally amazing, often frustrating".
-It's great when it's correct and annoying when it's not. Almost-correct language is amusing. Almost-correct code is just wrong.
-In any case, there was a [recent announcement](https://openai.com/blog/gpt-3-edit-insert/) of enabling these models to edit and insert
-text, instead of just completing it, and in hindsight it seems likely it's based on similar core technology to the DALL-E image
-editing examples. It's the same problem after all.
+It's great when it's correct and annoying when it's not. Almost-correct language is amusing. Almost-correct code is just wrong, and
+I found it annoying to continually delete bad completions when trying to coax the model to generate better ones.
+There was a [recent announcement](https://openai.com/blog/gpt-3-edit-insert/) of enabling these models to edit and insert
+text, instead of just completing it. This is nice for better UX, but in hindsight, it's likely using the same core technology DALL-E uses for image editing.
 
-IMAGES
+![Edit examples](/public/do-what-i-mean/edit.png)
+{: .centered }
+
+It is the same problem after all. Take some existing content, and transform it based on a given instruction.
+
+\* \* \*
+{: .centered }
 
 Where does this leave us?
 
