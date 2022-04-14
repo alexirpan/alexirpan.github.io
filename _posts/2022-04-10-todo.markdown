@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Rise of Do What I Mean"
+title:  "The Dawn of Do What I Mean"
 date:   2022-04-11 02:17:00 -0700
 ---
 
@@ -70,13 +70,13 @@ Estimated compute-optimal scaling, using larger datasets and fewer parameters th
 
 Meanwhile, Google Brain announced their [PaLM](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html) language model, trained with 540B parameters on 780 billion tokens,
 and again, we see something similar to GPT-3. Performance increases on many tasks that were already doing well, but on some
-tasks, there are discontinous improvements, where the increase in scale leads to a larger increase in performance than
+tasks, there are discontinuous improvements, where the increase in scale leads to a larger increase in performance than
 predicted from small scale experiments.
 
 ![PaLM result curves](/public/do-what-i-mean/palm.png)
 {: .centered }
 
-Figure 5 of PaLM paper. Each plots shows model performance on a set of tasks where PaLM's performance vs model size is log-linear (left), "discontinous" (middle), or relatively flat (right). I'm not even sure the flat examples are even that flat, they look slightly under log-linear at worst.
+Figure 5 of PaLM paper. Each plots shows model performance on a set of tasks where PaLM's performance vs model size is log-linear (left), "discontinuous" (middle), or relatively flat (right). I'm not even sure the flat examples are even that flat, they look slightly under log-linear at worst.
 
 The emoji to movie and joke explanation results are especially interesting to me. They feel qualitatively better in a way
 that's hard to describe, often combining concepts with a higher level of complexity than I expect.
@@ -135,8 +135,7 @@ Where does this leave us?
 
 In general, there is a lot of hype and excitement about models with a natural language API. There is a building consensus that text
 is a rich enough input space to describe our intentions towards ML models. It may not be the *only* input space, but it's hard to see anything ignoring it. If you believe the thesis that language unlocked humanity's ability to share complex ideas in short amounts of
-time, then computers learning what to do based on language should be viewed as a similar sea change in how we interact with ML
-models.
+time, then computers learning what to do based on language should be viewed as a similar sea change in how we interact with ML models.
 
 It feels like we are heading for a future where more computer systems are "do what I mean", where we hand more agency to models
 that we believe have earned the right to that agency. And we'll do so as long as
