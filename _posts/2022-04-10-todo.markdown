@@ -11,47 +11,51 @@ Boy, last week was busy for deep learning. Let's start with the paper I worked o
 </div>
 
 SayCan is a robot learning system that we've been developing for about the past year. The
-paper is on arXiv [here](https://arxiv.org/abs/2204.01691), and it builds on a lot of past
+paper is [here](https://say-can.github.io/), and it builds on a lot of past
 work that's been done in conditional imitation learning and reinforcement learning.
 
-In short: suppose you have a robot that can do some tasks we tell it to do in natural language,
-like "pick up the apple" or "go to the trash can". If you have these primitive tasks, you can
+Suppose you have a robot that can do some quick tasks we tell it to do in natural language,
+like "pick up the apple" or "go to the trash can". If you have these low-level tasks, you can
 chain them together into more complex tasks. If I want the robot to throw away the apple, I could say,
 "pick up the apple, then go to the trash can, then place it in the trash can", and assuming those
-three primitives are learned well, the robot will complete the task.
+three low-level tasks are learned well, the robot can complete the full task.
 
 Now, you wouldn't want to actually say "pick up the apple, then go to the trash can, then place it
 in the trash can". We'd like to just say "throw away the apple" and have the rest be done automatically.
-Well, in the past few years, large language models (LLMs) have shown they can do reasonably well at many
+Well, in the past few years, large language models (LLMs) have shown they can do well at many
 problems, as long as you can describe the input and output with just language. And this problem of
-mappining "throw away the apple" to "pick / go to trash / place" fits that description exactly!
+mapping "throw away the apple" to "pick / go to trash / place" fits that description exactly! With a proper prompt, the language model can generate the sequence of low-level
+tasks to perform.
 
 ![Diagram of the SayCan model](/public/do-what-i-mean/saycan.png)
 {: .centered }
 
-The LLM is not aware of the robot's surroundings or capabilities,
-so using it naively may generate sentences the robot isn't capable of performing. This is handled with
-a two-pronged approach.
+This, by itself, is not enough. Since the LLM is not aware of the robot's surroundings or capabilities,
+using it naively may generate sentences the robot isn't capable of performing.
+This is handled with a two-pronged approach.
 
-1. The language generation is constrained to the primitives the robot can (currently) perform.
-2. The generated primitive is scored based on a learned value function, which maps the image + language to
+1. The language generation is constrained to the skills the robot can (currently) perform.
+2. Each generated instruction is scored based on a learned value function, which maps the image + language to
 the estimated probability the robot can complete the task.
 
 You can view this as the LLM estimating the probability an instruction helps the high-level goal assuming a perfect
-robot, and the value function acting as a correction to drive behavior towards things the robot can do.
+robot, and the value function acting as a correction to that probability, such
+that in the end we pick something the robot can do that's useful towards the
+original goal.
 
 This glosses over a lot of work on how to learn the value function, how to learn the policy for the primitive tasks,
 prompt engineering for the large language model, and more. If you want more details, feel free to read the paper!
 My main takeaway is that LLMs are pretty good. The language generation is the easy part and its outputs are usually
 reasonable, while the value function + policy are the hard parts. Even assuming that LLMs don't get better, there is
-a lot of slack left for robot capabilities to get better and move towards robots that do what you mean, not just what
-you say.
+a lot of slack left for robot capabilities to get better and move towards robots that do what you mean.
 
 \* \* \*
 {: .centered }
 
-To what should be the surprise of no one, large language models have been getting better. I mean, this was explained in the
-GPT-3 paper, the trendlines didn't show any signs of stopping and there was room for at least 1 more order of magnitude.
+LLMs are not the bottleneck in SayCan, but they're still improving (which should
+be a surprise to no one).
+As explained in the GPT-3 paper, scaling trendlines showed room for at least
+1 order of magnitude, and recent work suggests there may be more.
 
 DeepMind put out a paper for their [Chinchilla model](https://www.deepmind.com/publications/an-empirical-analysis-of-compute-optimal-large-language-model-training). Through
 more careful investigation, they found that training corpus size had not increased in size relative to parameter count
@@ -80,17 +84,22 @@ that's hard to describe, often combining concepts with a higher level of complex
 ![Emoji movie explanation](/public/do-what-i-mean/emoji.png)
 {: .centered }
 
-Both of these works have noted we have yet to hit a ceiling on model scaling. As far as I know, no one is willing to
+Neither of these works have taken the full 1 order of magnitude suggested by prior
+work, and neither indicates we've hit a ceiling on model scaling. As far as I know, no one is willing to
 predict whether or what qualitatively new capabilities we'll see from the next large language model. This is worth
-emphasizing - people genuinely don't know. Before seeing the results of the PaLM paper, I *think* you could argue that
+emphasizing - people **genuinely don't know**. Before seeing the results of the PaLM paper, I *think* you could argue that
 language models would have more trouble learning math-based tasks, and the results corroborate this (both `navigate` and
-`mathematical_induction` are math-based). However, I don't think you could have predicted that `english_proverbs` and
-`logical_sequence` *in particular* would exceed log-linear in performance. You could predict that something would get better,
-but not what.
+`mathematical_induction` from the figure above are math-based). You could also have predicted that
+something could get qualitatively better. I don't see how you could have predicted
+that `english_proverbs` and `logical_sequence` *in particular* would improve
+faster than their power low curve.
 
-Note also that the Chinchilla curves project that given the PaLM compute budget, using 140B params with a big enough dataset
-would be more compute efficient. In other words, there is room for improvement without changing the model architecture,
-as long as you crawl more training data - a probem with far less research uncertainty than anything from the ML side.
+The blog post for the Chinchilla model notes that given the PaLM compute budget,
+they expect you could match it with 140B params if you got 3 trillion tokens
+of language.
+In other words, there's room for improvement without changing the model architecture,
+as long as you crawl more training data. I don't know how hard that is, but
+it has far less research uncertainty than anything from the ML side.
 
 Let's just say it's not a good look for anyone claiming deep learning models are plateauing.
 
@@ -125,9 +134,17 @@ IMAGES
 Where does this leave us?
 
 In general, there is a lot of hype and excitement about models with a natural language API. There is a building consensus that text
-is a rich enough input space to describe our intentiosn towards ML models, and although it may not be the *only* input space, it seems
-like a key component. If you believe the thesis that language unlocked humanity's ability to share complex ideas in short amounts of
+is a rich enough input space to describe our intentions towards ML models. It may not be the *only* input space, but it's hard to see anything ignoring it. If you believe the thesis that language unlocked humanity's ability to share complex ideas in short amounts of
 time, then computers learning what to do based on language should be viewed as a similar sea change in how we interact with ML
-models. It feels like we are heading for a future where more computer systems are "do what I mean", where we hand more agency to models
-that we believe have earned the right to that agency. That's something we'll need to be careful about. I hope people are paying
-attention.
+models.
+
+It feels like we are heading for a future where more computer systems are "do what I mean", where we hand more agency to models
+that we believe have earned the right to that agency. And we'll do so as long as
+we can convince ourselves that we understand how these systems work.
+
+I don't think anyone actually understands how these systems work. All the
+model disclosure analysis I've read feels more like it's poking the outside of
+the model, observing the black box responds this way or that, but without any
+generalizable lesson aside from "consider things carefully" - an approach that
+gets harder when your model is capable of more things. I hope people
+are paying attention.
