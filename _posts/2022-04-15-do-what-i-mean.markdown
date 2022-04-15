@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Dawn of Do What I Mean"
-date:   2022-04-11 02:17:00 -0700
+date:   2022-04-15 16:55:00 -0700
 ---
 
 Boy, last week was busy for deep learning. Let's start with the paper I worked on.
