@@ -38,14 +38,13 @@ This is handled with a two-pronged approach.
 2. Each generated instruction is scored based on a learned value function, which maps the image + language to
 the estimated probability the robot can complete the task.
 
-You can view this as the LLM estimating the probability an instruction helps the high-level goal, assuming a perfect
-robot, and the value function acting as a correction to that probability. They combine to pick a low-level
+You can view this as the LLM estimating the best-case probability an instruction helps the high-level goal,
+and the value function acting as a correction to that probability. They combine to pick a low-level
 task the robot can do that's useful towards the high-level goal. We then repeat the process unless the task is solved.
 
 This glosses over a lot of work on how to learn the value function, how to learn the policy for the primitive tasks,
 prompt engineering for the large language model, and more. If you want more details, feel free to read the paper!
-My main takeaway is that LLMs are pretty good. The language generation is the easy part and its outputs are usually
-reasonable, while the value function + policy are the hard parts. Even assuming that LLMs don't get better, there is
+My main takeaway is that LLMs are pretty good. The language generation is the easy part, while the value function + policy are the hard parts. Even assuming that LLMs don't get better, there is
 a lot of slack left for robot capabilities to get better and move towards robots that do what you mean.
 
 \* \* \*
@@ -68,7 +67,7 @@ Estimated compute-optimal scaling, using larger datasets and fewer parameters th
 {: .centered }
 
 Meanwhile, Google Brain announced their [PaLM](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html) language model, trained with 540B parameters on 780 billion tokens.
-That paper shows something similar to the GPT-2 → GPT-3 shift. Performance increases on many tasks that were already doing well, but on some
+That paper shows something similar to the GPT-2 → GPT-3 shift. Performance increases on many tasks that were already handled well, but on some
 tasks, there are discontinuous improvements, where the increase in scale leads to a larger increase in performance than
 predicted from small scale experiments.
 
