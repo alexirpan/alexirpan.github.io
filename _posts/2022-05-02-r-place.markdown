@@ -1,0 +1,238 @@
+---
+layout: post
+title:  "My 2022 r/place Adventure"
+date:   2022-05-02 00:17:00 -0700
+---
+
+Every April Fool's, Reddit runs a social experiment. I've always had fun checking them out,
+as part of my journey from "people are too hard, I'm just going to do math and CS", to
+"people are hard, but like, in a really interesting way?" The shift was
+realizing that culture is a decentralized distributed system of human interaction, and
+Reddit's April Fool's experiments are a smaller, easier to understand microcosm of
+that.
+
+Some have been pretty bad. [Second](https://www.reddit.com/r/Second/) was trash. I know people
+who liked [The Button](https://en.wikipedia.org/wiki/The_Button_(Reddit)) a lot, but r/place
+is easily their most popular one. Each user can place one pixel every 5 minutes in a canvas shared
+by the entire Internet. Alone, it's
+hard to do anything. But working together, you can create all kinds of pretty pixel art...that
+can then get griefed by anyone who wants to. It's all anarchy.
+
+I didn't contribute to r/place in 2017, but for the 2022 run I figured I would chip in a few pixels
+to the SSBM and My Little Pony projects, then mostly spectate. And yeah, that's how it started on the
+first day! The MLP
+subreddit put out a Rainbow Dash template on March 31, and when I checked in, I saw their location
+was right in the path of the ever-expanding Ukrainian flag.
+
+![Before...](/public/r-place/mlp_ukraine_1.png)
+{: .centered }
+
+![...and After](/public/r-place/mlp_ukraine_2.png)
+{: .centered }
+
+The irony of people fighting for r/place land while a real-world land grab was going on was not lost on
+me. I deliberately skipped joining the coordination Discord, because I had no interest in getting
+involved more than the surface level, but from what I heard, the MLP r/place Discord decided to play
+the long game. They believed that although the Ukraine flag was taking over space now, and although
+most subreddits supported Ukraine in the Russia-Ukraine conflict, the flag owners would eventually
+face too much pressure and would have to make concessions to allow some art within its borders.
+The MLP Discord wanted to maintain their provisional claim formed by Rainbow Dash's torso, to be
+expanded later. They were correct that the Ukraine flag would make
+concessions. They were wrong that My Little Pony would get to keep it. There's a whole saga of
+alliance and betrayal there, which eventually forced MLP to change locations, but I did not
+follow it and I'm sure someone else will tell that story. The one I want to tell is much smaller.
+
+For about 7 years, I've been a fan of [Dustforce](https://dustforce.com/), an indie platformer.
+When people ask what video games I've played recently, I always tell them I've been playing
+Dustforce, and they've always never heard of it. It's one of my favorite games of all time.
+Maybe I'll explain why in another post, but the short version is that Dustforce is the SSBM of
+platformers. Super deep movement system, practically infinite tech skill ceiling, levels that
+are hard but satisfying to finish, and a great replay system that always gives you tools to
+get better. It's not very big, but [it had representation in 2017's r/place](https://draemm.li/various/place-atlas/?id=373).
+
+![Dustman](/public/r-place/dustman.png)
+{: .centered }
+
+Lots of big communities have little interest in r/place, and lots of little communities have
+outsized presence in r/place.
+You don't need to be big, you just need a subset with
+enough r/place engagement and organizational will. Dustforce is *tiny*, speedrun livestreams get at most
+30 people, but we made it 5 years ago. I believed we could totally make it in 2022.
+The Dustforce Discord talked about doing something for r/place, but hadn't done anything, so I made
+a pixel art template in hopes it would get the ball rolling.
+
+![Dustkid](/public/r-place/dustkid_big.png)
+{: .centered }
+
+Dustkid, a character in Dustforce. We'll be seeing her a lot.
+{: .centered }
+
+Pixel art is *not* my strong suit. To make this, I downloaded the favicon for [dustkid.com](http://dustkid.com/),
+then translated the pixels to the r/place color palette.
+After scanning existing r/place pixel art, I realized our target image was somewhat big for our community size,
+so I prepared a smaller version instead. Any representation is better than none.
+
+![Dustkid, smaller](/public/r-place/dustkid_small.png)
+{: .centered }
+
+I wasn't interested in organizing r/place for Dustforce long term, but I'm a big believer that
+you get movements going by decreasing the initial effort required. Having a template gives a way
+for uninterested people to contribute their 1 pixel. I'm happy to report this plan succeeded!
+Although, it was a long journey to get there. To be honest, this is primarily the work of other community
+members who took up the mantle I started.
+
+\* \* \*
+{: .centered }
+
+We didn't want to take pixels away from established territory. I don't think we could have even if we
+wanted to. Our best odds were to find a small pocket of space that didn't have art yet. After some
+scouting, I proposed taking (1218, 135) to (1230, 148), a region right underneath the Yume Nikki
+character that looked uncontested. I also argued that even though we would mostly coordinate over
+Discord, it was important to make a post on the r/dustforce subreddit. Since r/place was a *Reddit*
+event, we needed a land claim on Reddit for discoverability. With that claim made,
+we started placing pixels.
+
+![The starts of Dustkid](/public/r-place/dustkid_start_1.png)
+{: .centered }
+
+The beginnings of the Dustkid hat
+{: .centered }
+
+As we continued, we noticed a problem pretty quickly. We had picked the same spot as r/Taiwan.
+
+![Uh oh](/public/r-place/dustkid_start_2.png)
+{: .centered }
+
+Someone tracked down [the r/Taiwan Reddit post](https://www.reddit.com/r/taiwan/comments/ttwuis/rplace_progress_updates/). Their aim was to add a
+flag of the World Taiwanese Congress. For Dustforce, this was baaaaaad news. Flags historically have a
+lot of power in r/place. Their simplicity makes it easy for randoms to contribute pixels (it's easy
+to fix errors in solid blocks of color), and patriotism is a good mobilizer to get more people to chip
+in. We were right in the middle of their flag, and it would take up all the available free space
+in that section. Maybe we could have negotiated living on their flag, but I highly doubt
+r/Taiwan would have agreed, and no one from r/dustforce even bothered asking.
+
+![r/Taiwan flag](/public/r-place/taiwan.png)
+{: .centered }
+
+Alright, back to square one. Other people in the community
+proposed alternate spots, without much luck. Any spot that opened up was quickly taken by other
+communities or bots. By and large, people on r/place will respect existing artwork, so once we got
+something down there was a good chance we could protect it. The problem was that in the time it
+took us to make something recognizable, other groups or bots would place pixels faster. By the end of
+Day 2, we had nothing. All our previous efforts were run over. We were simply outmatched, and
+I didn't think we'd make it.
+
+\* \* \*
+{: .centered }
+
+On the last day, Reddit doubled the size of the canvas once more, saying it would be the final
+expansion. With a new block of free space, that expansion represented our best chance of getting
+something into r/place. It's now or never.
+
+First, the expansion had increased the color palette, so we adjusted the template to be
+more game-accurate.
+
+![New template](/public/r-place/new_template.png)
+{: .centered }
+
+By this point I was content to leave organizing to others. They first reached
+out to the Celeste community, asking if we could fit Dustkid into their banner, seeing as how
+both Dustforce and Celeste are momentum-based precision platformers. After some discussion, they
+felt it would clash too much. This wasn't entirely fruitless however - during this discussion,
+they invited Dustforce to the r/place Indie Alliance. It was exactly what it sounded like: an r/place
+alliance between indie game communities.
+
+I joined the Indie Alliance Discord to stay in the loop, but quickly found it was too fast for me. Lots of shitposts,
+lots of @everyone pings, and lots of panicking whenever a big Twitch streamer went live and tried to
+force their will onto the r/place canvas. There were even accusations of spies and saboteurs trying
+to join the alliance. I never quite understood how having a spy in r/place would help things. In a real
+fight, there's fog of war, it takes time to mobilize forces, and intelligence on troop movements or
+new weapons can be a decisive edge. But in r/place, there's no fog of war because the
+entire canvas is public, people can "attack" (place pixels) anywhere they want with no travel
+time, and everyone knows how to find r/place bots if they want to. There's no real benefit to knowing an r/place attack
+is coming, nor is there much benefit in knowing a place will be defended - by default, *everything* is
+defended.
+
+Our eventual target was a space nearby the Celeste banner, currently occupied by AmongUs imposters.
+
+![Target location](/public/r-place/amongus.png)
+{: .centered }
+
+They laid out the argument: AmongUs crewmates were scattered all throughout r/place, usually
+to fill up space without compromising the overall artwork. Since there were so many crewmates, the
+odds any specific patch was fiercely defended was quite low. That meant AmongUs space looked more
+defended than it really was. If we blitzed the space fast enough, we likely wouldn't face retribution,
+since the AmongUs people likely wouldn't care. We went for it.
+
+![Dustkid, round 2](/public/r-place/dustkid_r2.png)
+{: .centered }
+
+We did run slightly afoul of r/avali, a subreddit for a furry species. Our art template and
+their art template overlapped by 1 pixel, and we both really wanted that pixel. In a dumb parody
+of the Israel-Palestine conflict, they wanted both
+an orange and indigo border around the Avali, but our pixel threatened the indigo border, and
+we really didn't like the aesthetic of having an indigo border everywhere besides that pixel.
+
+![Conflict](/public/r-place/conflict.png)
+{: .centered }
+
+Indie game-Furry mascot conflict, April 2022
+{: .centered }
+
+Now, if r/avali had decided to fight, we would have lost. Luckily, we figured out a solution before
+it came to that. If we shifted the
+Dustkid head diagonally down-right 1 pixel, it would resolve the dispute. Plus, we'd be more symmetric between
+the [Rocket League bot logo](https://rlbot.org/) towards our north and the Mona Lisa towards our
+south. We let r/avali know, and did the migration.
+
+![Conflict resolution](/public/r-place/conflict_resolution.png)
+{: .centered }
+
+With that, we made it! We even had time to adjust our template and fill in more space with
+Dustforce pixel art, adding the S+ icon we had last time r/place happened.<F10>
+
+![Final image](/public/r-place/final_image.png)
+{: .centered }
+
+It was surprisingly low on drama. Everyone nearby was friendly. The
+Go subreddit r/baduk to our
+right could have conflicted, but they [recognized our land claim](https://www.reddit.com/r/dustforce/comments/tupur1/rplace_template/i3a3fwh) and adjusted their template so that it wouldn't clash. We eventually made a heart connecting the two. A Minecraft wolf invaded the space where we planned our pixel art expansion, but
+we found it was all created by one user (!), so we offered to adopt and relocate the wolf to a
+separate corner, which they were happy with. [RLbot](https://rlbot.org/) to our north even offered
+to give us more space, since they had abandoned their logo a while back. We never took them up on that
+offer, since by the time we were done tuning things in our corner, r/place had ended.
+
+We really lucked out on our location, and were never the target of a community big enough to trample
+over us. The theory was that we were close to big art pieces like the Mona Lisa and One Piece, and
+although those art pieces weren't looking to expand, no one wanted to challenge them and this gave us
+protection by proxy. Perhaps you could call Dustforce a vassal state, but I'm not sure they even
+care about us.
+
+With Dustkid settled, I went back to helping cleanup My Little Pony art, which had been griefed enough
+that they had added a counter for "# of times we've rebuilt" to their template.
+
+![My Little Pony](/public/r-place/mlp.png)
+{: .centered }
+
+(It's the 22 on the middle of the right border, just above Rarity)
+{: .centered }
+
+I also helped a bit when someone from the Indie Alliance got raided. But that was small fry, compared
+to the work beforehand. I was happy to be done with r/place. It
+really took up more of my attention and time than I expected it to.
+
+There's this old quote from The Sandman. "Everybody has a secret world inside of them." Nowhere is that more true
+than r/place. The adventure to put a 15x15 Dustkid head was just one piece of the overall 2000x2000 canvas. There's all sorts of complexity,
+
+![Zoom 1](/public/r-place/zoom1.png)
+{: .centered }
+
+that gets lost,
+
+![Zoom 2](/public/r-place/zoom2.png)
+{: .centered }
+
+as you take in the bigger picture.
+
+![Zoom 3](/public/r-place/zoom3.png)
+{: .centered }
