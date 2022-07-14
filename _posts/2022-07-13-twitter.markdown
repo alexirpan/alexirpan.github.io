@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "I'm Bad at Twitter"
+date:   2022-07-13 00:17:00 -0700
+---
+
+![Twitter profile](/public/twitter/twitter.png)
+{: .centered }
+
+My Twitter profile is not set up to pull people in. If anything, it is deliberately
+adversarial.
+
+I'm bad at Twitter. I know I'm bad at Twitter. I don't know if I want to be good at Twitter.
+
+Every group seems to gravitate towards Twitter over time. There's a machine
+learning Twitter, a philosophy Twitter, a history Twitter, a My Little Pony Twitter,
+a Smash Bros Twitter. Those communities all have their subreddits and Facebook groups, but I
+get the sense those are stagnating. Being on Facebook is a deliberate decision.
+
+All those groups agree that Twitter is awful for having nuanced conversation,
+but people post there anyways. When I try to probe why, the common reply is that
+Twitter forces people to get to the point. I can see the logic, I'm certainly guilty of going on and on for no good reason. (I try not to! It's hard!)
+
+People tell me ML Twitter is worth it. Parts of it do seem good! It's just, I have trouble
+trusting social media in general. I don't have a TikTok. I know that if I set up
+TikTok, eventually I'll be spending an hour a day genuinely having fun watching random
+videos, with a small voice asking if I could be doing something else instead. It's
+not that I wouldn't get joy out of it, it's that I'd get joy that aligned me towards
+the kind of person TikTok would want me to be.
+Facebook and Reddit already did that to me. There is only so much time for dumb stuff.
+
+The issue, then, is that there's real benefit to hanging around ML Twitter. It is not just dumb stuff.
+The medium makes it easier to find the hot takes where
+someone deliberately challenges accepted wisdom, which is where interesting intellectual thought happens. It's easier to promote a paper on Twitter
+than it is to promote it at a conference - if anything, the two go hand-in-hand. The memes are specific enough to be excellent.
+
+It's quite likely that I'm losing out on both ML knowledge and career equity by not being more
+active on Twitter. But do I want to become more like the person Twitter wants me to be?
+I'm not sure people understand how good recommendation systems have gotten and how
+much work goes into improving them.
+
+"Try it for a bit, you can always change your mind later." And yet I feel like if I
+try it enough to give it a fair chance, then it might be too late for me.
+
+For now, I am okay with floating outside Twitter. Dipping in now and then, but not browsing idly.
+That could change in the
+future, but if it does, then I'll at least have this post to refer to. I'll at least
+have to explain why I changed my mind.
