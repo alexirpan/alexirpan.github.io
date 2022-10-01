@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Generative Modelling is Still Accelerating"
-date:   2022-10-01 00:04:00 -0700
+date:   2022-10-01 00:44:00 -0700
 ---
 
 DALL·E 2 was announced in April of this year. As a rule, by the time the paper
