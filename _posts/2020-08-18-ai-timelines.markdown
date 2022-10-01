@@ -666,7 +666,7 @@ text to pretend to be human.
 
 A lot has to go right in this scenario above. Multi-modal learning has to work.
 Behaviors need to continue to emerge out of scaling, because your researcher
-timer is mostly going into ideas that help you scale, rather than
+time is mostly going into ideas that help you scale, rather than
 inductive priors. Hardware efficiency has to match pace, which includes clean
 energy generation
 and fixing your ever-increasing hardware fleet. Overall, the number of things

@@ -43,7 +43,7 @@ were on the technology development curve, I'd say we're about here:
 I believe this for two reasons.
 
 Generative modeling in the past few years were primarily ruled by GANs. The developments
-in image generation are baesd not on a better GAN, but on diffusion methods,
+in image generation are based not on a better GAN, but on diffusion methods,
 an entirely different paradigm for viewing ML problems. Anytime you have a new paradigm,
 you should expect a lot of people to try it on their problem, and then watch some of
 those people succeed and breakthrough on problems that used to be hard.
