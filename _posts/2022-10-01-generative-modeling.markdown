@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Generative Modelling is Still Accelerating"
-date:   2022-10-01 00:44:00 -0700
+date:   2022-10-01 00:55:00 -0700
 ---
 
 DALL·E 2 was announced in April of this year. As a rule, by the time the paper
@@ -51,7 +51,7 @@ those people succeed and breakthrough on problems that used to be hard.
 More importantly, diffusion is a very
 general idea. The current AI news has been powered by images, but nothing about diffusion
 is image centric. It's just a generic method for learning a model to match one probability distribution
-to another one. The field is very practiced at turning life into match, and there's more to life than just images.
+to another one. The machine learning field is very practiced at turning life into math, and there's more to life than just images.
 
 When AlphaGo first beat Lee Sedol, I [said]({% post_url 2016-03-17-alphago-lsd %}) that
 it might be the end of turn-based perfect information games - all of them. Go was mountain top,
@@ -71,20 +71,20 @@ recognition system, I found this section especially interesting.
 > Many transcripts on the internet are not actually human-
 > generated but the output of existing ASR systems. Recent
 > research has shown that training on datasets of mixed human
-> and machine-generated data can significantly impair the per-
-> formance of translation systems (Ghorbani et al., 2021). In
+> and machine-generated data can significantly impair the performance
+> of translation systems (Ghorbani et al., 2021). In
 > order to avoid learning “transcript-ese”, we developed many
-> heuristics to detect and remove machine-generated tran-
-> scripts from the training dataset. Many existing ASR sys-
-> tems output only a limited subset of written language which
-> removes or normalizes away aspects that are difficult to pre-
-> dict from only audio signals such as complex punctuation
-> (exclamation points, commas, and question marks), format-
-> ting whitespace such as paragraphs, or stylistic aspects such
-> as capitalization. An all-uppercase or all-lowercase tran-
-> script is very unlikely to be human generated. While many
-> ASR systems include some level of inverse text normaliza-
-> tion, it is often simple or rule-based and still detectable from
+> heuristics to detect and remove machine-generated transcripts
+> from the training dataset. Many existing ASR systems output
+> only a limited subset of written language which
+> removes or normalizes away aspects that are difficult to predict
+> from only audio signals such as complex punctuation
+> (exclamation points, commas, and question marks), formatting
+> whitespace such as paragraphs, or stylistic aspects such
+> as capitalization. An all-uppercase or all-lowercase transcript
+> is very unlikely to be human generated. While many
+> ASR systems include some level of inverse text normalization,
+> it is often simple or rule-based and still detectable from
 > other unhandled aspects such as never including commas.
 
 As data-hungry as the Whisper model is, it is still better to exclude certain kinds of
