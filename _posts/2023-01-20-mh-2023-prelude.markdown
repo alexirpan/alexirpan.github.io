@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Prelude to the Inevitable Long Post About MIT Mystery Hunt 2023"
-date:   2023-01-17 02:17:00 -0700
+date:   2023-01-20 00:32:00 -0700
 ---
 
 The first time I ever wrote for a puzzlehunt was Mystery Hunt 2013. I had joined
