@@ -1,0 +1,80 @@
+---
+layout: post
+title:  "A Prelude to the Inevitable Long Post About MIT Mystery Hunt 2023"
+date:   2023-01-20 00:32:00 -0700
+---
+
+The first time I ever wrote for a puzzlehunt was Mystery Hunt 2013. I had joined
+Manic Sages in 2012 out of the Canada/USA Mathcamp pipeline. They won that year,
+and I figured, hey, I'll help write, why not. Writing sounds fun! I helped out on
+two puzzles. One was [good](https://puzzles.mit.edu/2013/coinheist.com/indiana/snow_day/index.html)
+and the other was [bad](https://puzzles.mit.edu/2013/coinheist.com/indiana/houston_we_have_liftoff/index.html).
+
+I did about zero work outside of those puzzles, aside from testsolving
+[Infinite Cryptogram](https://puzzles.mit.edu/2013/coinheist.com/sneakers/infinite_cryptogram/index.html).
+It took me 9 hours over the course of a week.
+I remember leaving feedback that it seemed long, but I had fun, and figured
+it would take a "real programmer" a lot less time. I had just started college and wasn't
+even 18 yet. Surely the real hunters would do better!
+
+During MLK weekend, I didn't fly into HQ (convincing my parents to let me
+do that didn't seem possible), but I helped man answer callbacks from my dorm room.
+As I called back with more "your answer is incorrect" calls, I could tell things were
+not going as planned.
+
+People didn't really realize what social media *was* in 2013, including me.
+I remember refreshing the #MysteryHunt hashtag a lot.
+In those days, the norm
+was not to avoid social media during a puzzlehunt. There were many live tweets
+during Hunt, almost never spoilery, but getting grumpier over time. Of course, some
+people were nice, and most acknowledged that Manic Sages did not intend to create
+a Hunt that went into Monday, but, well, you get one guess about which
+tweets I spent the most time reading.
+
+Suffice it to say my first puzzle writing experience was not a fun one.
+
+By the time
+I did my last answer callback (around 30 minutes before wrap-up), I was apologizing
+to the team that was calling, for decisions that I had little responsibility in making,
+but which I felt responsible for anyways. The person I called was a bit taken aback,
+but assured me that their team simply liked to call in guesses with low odds of success,
+and they were sure they'd feel dumb when the solution came out.
+
+Ten years later, teammate wrote another Mystery Hunt that went into Monday, with
+a similarly large number of free answers as MH 2013. (I don't remember exactly how many
+MH 2013 offered, but
+[an article](https://www.wired.com/2013/01/2013-the-year-the-mystery-hunt-broke/)
+from the time suggests at least 24.)
+
+I don't think there was any single reason that
+Mystery Hunt was so hard this year, but there was definitely a systematic underestimation of difficulty
+and length. Drawing a comparison to the 2018 Mystery Hunt, the original theme document proposed a Museum of easy-ish
+puzzles like the Emotions rounds, a simultaneous Factory of medium puzzles, and then AI-gimmicked
+rounds with intricate structures that could go to eleven. This would have been fewer puzzles than last year, with a larger
+fraction of feeders at the level of The Investigation / The Ministry.
+
+We ended up with a Museum of medium puzzles, a Factory of medium-to-hard
+puzzles, and AI-gimmicked rounds that went to thirteen. So, yeah.
+
+(Well, at least next year's job of writing a shorter Hunt will be easier!)
+
+I'm better at managing myself than I was 10 years ago, so I'll be fine. I restarted writing puzzles
+three years ago,
+and since then I've written enough stinkers and highlights to know what I can do as a
+puzzle constructor. My body of work is long enough that any individual puzzle isn't as big a deal.
+
+However, there are some first-time constructors on teammate this year, where their Hunt puzzles are
+their first puzzles for the public.
+Just, try not to be too mean? I've been pleasantly surprised the response to Hunt so far is
+not as vitriolic as it was in 2013.
+Maybe the Internet is nicer these days. It's a bit more obvious
+that online discourse has real-life impact and vice versa.
+
+It's very important that people submit feedback about Hunt, and explain their lived
+experience. It's a key part of how we keep improving Hunt each year. At the same time, avoid making
+too many assumptions about teammate's lived experience.
+
+As for my play-by-play construction story, that'll come later. I signed on aiming to do around 10
+hrs/week of work for Hunt, and ended up averaging 20 hrs/week, including some 100 hour weeks towards
+the end. I'm pretty sure I've spent more time on Hunt this year than I spent in all my past puzzle writing
+combined. There'll be a lot to talk about.
