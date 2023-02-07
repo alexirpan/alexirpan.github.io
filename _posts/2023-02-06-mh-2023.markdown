@@ -1,0 +1,93 @@
+---
+layout: post
+title:  "Writing MIT Mystery Hunt 2023"
+date:   2023-02-06 00:32:00 -0700
+---
+
+There are a few things they warn you about before you start writing a Mystery Hunt, but
+one thing they don't warn you about is how much it will destroy your ability to make
+small talk.
+
+"What did you do this weekend?"
+
+Me, internally: I worked a 10-hour shift painting strips of wood as part of a puzzle
+construction assembly line.
+
+Me: "Oh, not much."
+
+I feel like every puzzle aficionado goes through at least one conversation where they try
+to explain what puzzlehunts are, and why they're fun, and this conversation goes poorly.
+Usually I end up saying they're like escape rooms, and this is sufficient for most people,
+but in many ways puzzlehunts are *not* like escape rooms?
+People do not excitedly edit a spreadsheet for 3 hours in any escape room I've been to.
+
+Even if you are talking to someone who does puzzlehunts regularly, you can't talk about
+Hunt with them very much, because you're trying to avoid spoilers! It turns into this
+very weird *thing*, where a lot of people don't get it and you can't fully share your
+work with people who do get it, not until the end. The act of puzzle writing has lots
+of its payoff heavily concentrated at the end, and if that goes poorly, it can really
+drain a lot of the fulfillment.
+
+Even if you
+So, there is 
+Still,
+
+So
+
+My previous Mystery Hunt posts have just skipped over this question of "why puzzles?"
+and assume that everyone reading is already onboard. However, the question of "why
+write *your own* puzzle" is, I think, a lot more interesting and a lot more important.
+So, those of you looking for just the details about Hunt: pardon the transgression.
+
+
+Why Solve Puzzles?
+---------------------------------------------------------------------------------
+
+Well, because they're fun, that's why?
+
+But, why are puzzles fun? I'm going to put on my machine learning researcher hat
+for a bit, meaning I'm going to make wildly broad generalizations about cognition
+that will make some people very angry.
+
+In any puzzlehunt puzzle, you start with a bunch of data.
+A list of clues, a small game, a bunch of images, whatever. The puzzle does not
+directly tell you what to do with that data, but there is this guiding contract
+between the puzzle setter and puzzle solver: "this puzzle has a solution".
+Based on that contract, you work at the puzzle until you solve it, usually distilling
+the data into an English word or phrase.
+
+If the puzzle doesn't explain what to do, what does it even mean for it to have
+a solution? Usually, what this means is that **there is exactly one explanation
+for all the data**, that fits much better than every alternate one.
+
+One way I've described puzzles is that they're like research projects, except you
+know you can finish them in a few hours rather than a few months or years. I
+suspect this is why programmers and professors are so overrepresented. The act
+of debugging or doing research stretches a very similar muscle.
+
+To put on my machine learning researcher hat for a bit, a puzzle is something
+that compresses very well.
+Discovering the compression algorithm (often called "breaking in" or "finding the a-ha")
+is what triggers the dopamine rush that makes solvers want to keep doing
+puzzles.
+
+This gets at the core tension between solver and constructor. Puzzlehunts are special
+because their solutions are not obvious. The solutions *have* to be indirect, because
+you need to leave enough space for solvers to work with the puzzle and discover the
+answer for themselves. If you don't give mental space, and railroad solvers from start
+to finish, then it loses the reward - it's just following directions.
+
+Or, put another way: if it's impossible to get completely lost, then it's not a puzzle,
+but if it's possible to get completely lost, not everyone is going to get the full
+experience.
+
+Take the duck konundrum. It's literally a series of directions. They're hit-or-miss
+as a puzzle type, but when they hit, it is usually because following the directions is
+hard for some reason. What if we misread a line?
+What if we have to start over? That tension is the chance for failure that makes a
+puzzle a puzzle.
+
+(does the section above even fit here)
+
+December 2022
+----------------------------------------------------------------------
