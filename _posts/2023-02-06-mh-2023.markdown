@@ -1207,3 +1207,9 @@ As for exactly how that would all work? Boy was there a lot to figure out.
 
 ![Breakout brainstorm](/public/mh-2023/breakoutplanning.png)
 {: .centered }
+
+There was a fairly serious proposal that the "hole" between the Museum and Factory would only exist on the puzzle page where
+you first solved the loading animation. You'd be able to visit the URL directly once you knew it, but
+for within-site navigation, you'd go through one and every team would have their own "puzzle we broke
+out on". I liked this a lot, but we dropped it because it a lot of both art and tech complexity.
+
