@@ -1136,16 +1136,19 @@ looping puzzle before unlocking the blank puzzles, then they could solve the 3rd
 unlock, which seemed like far too much cheesing. But we kept the pattern in mind as a potential nerf to make down
 the line.
 
-The metameta test passed, and we were able to release all the Wyrm feeder answers ahead of the
-in-person writing retreat planned for early July. The goal was to get together, test drafts of physical
-puzzles and events, and start puzzle drafts for AI round puzzles that we expected to need larger
-groups of people to construct. So it was pretty important to get Wyrm metas out the door before then.
+The metameta test passed, and we were able to release all the Wyrm feeder answers. The Museum metas
+were finished shortly, letting us release a bunch of feeders before the in-person writing retreat. The
+retreat got scheduled for late-August. The goal was to get together, test drafts of physical
+puzzles and events, and start puzzle drafts for AI round puzzles that we expected to be hard to
+write solo. We were also planning to do a team solve of a good chunk of Act I, so it was pretty
+important to get Wyrm metas and Museum metas out the door early enough to give time to construct
+those Museum puzzles.
 
 However, the true goal of the in-person retreat was a more closely-held secret. And I was in the thick
 of that conspiracy.
 
 
-June 2022 - It's Also Breakout O'Clock
+July 2022 - It's Breakout O'Clock
 -----------------------------------------------------------------------------------------------
 
 "Breakout" was our internal name for what would eventually become the Loading Puzzle. It was the
@@ -1173,20 +1176,20 @@ of the in-person retreat was to do a testsolve of Act 1 puzzles, with a testsolv
 the background for everyone who wasn't spoiled on its existence. After the team broke out, we'd stop
 the Act 1 testsolve and reveal the story of the Hunt to those unspoiled on the theme.
 
-To do that however, the breakout would need to exist.
+To do that however, the breakout would need to exist by retreat.
 
 
 Loading Puzzle...
 -----------------------------------------------------------------------------------------------
 
-During one of the weekly meetings, I was asked if I could join a brainstorm group for "a small puzzle".
-Said brainstorm group was Jacqui (creative lead) and Ivan (tech lead).
+During one of the weekly general meetings, I was asked if I could join a brainstorm group for "a small puzzle".
+Said brainstorm group had Jacqui (creative lead) and Ivan (tech lead).
 
 Having been in the trenches with Jacqui and Ivan on many an occasion for tech-heavy puzzlehunt
 story integrations,
 I was, like, 80% sure this "small puzzle" was breakout, and 100% sure it would be small to solve
-but take a stupidly long time to construct. I want it for the record that I totally called what I
-was getting into, and chose to get into it anyways.
+but take a stupidly long time to make. I want it for the record that I was right on both counts. I joined
+an in-progress brainstorm in June and we weren't done until August.
 
 Over the course of a few months, we and other authors of the breakout puzzle brainstormed how to
 create a puzzle that looked innocent at first glance, and became more suspicious the more you looked at it.
@@ -1210,6 +1213,243 @@ As for exactly how that would all work? Boy was there a lot to figure out.
 
 There was a fairly serious proposal that the "hole" between the Museum and Factory would only exist on the puzzle page where
 you first solved the loading animation. You'd be able to visit the URL directly once you knew it, but
-for within-site navigation, you'd go through one and every team would have their own "puzzle we broke
-out on". I liked this a lot, but we dropped it because it a lot of both art and tech complexity.
+for within-site navigation, you'd need to memorize which puzzle you first found the factory from.
+I liked this a lot, but we dropped it due to complexity concerns.
+
+Previous Teammate Hunts have always had a rule that solvers can look at source code if they want,
+because we trust in our ability to hide things from the client. For the loading animation, it meant
+the animation was drawn using CSS rather than a video file, since we did not want solvers to
+right-click -> "Download Video" and solve the animation offline. The first idea proposed was to
+create a conveyor belt of puzzle pieces, and entering STOP would cause the conveyor belt to
+break down. (Technically, the answer at the time was TERMINATE, due to its similarity to
+TEAMMATE.)
+
+![Early breakout version](/public/mh-2023/breakout_old.png)
+{: .centered }
+
+This was later changed to the version that went in the Hunt, since having letters on the puzzle pieces
+was deemed too obvious. At the same time, we didn't want it to be too *non*-obvious.
+
+VIDEO HERE
+
+Our testing process for this was pretty goofy. We would take groups of people spoiled on the
+existence of breakout, and tell them that we wanted to test the unlock structure and backend of the
+hunt website, using fake puzzles that would ask you to wait for 60 seconds, then immediately give
+the answer.
+
+![Fake puzzles](/public/mh-2023/fakepuzzles.png)
+{: .centered }
+
+This testsolved correctly, but we knew the real test would be at the retreat, when we had real puzzles.
+
+Meanwhile, we were working on the collaborative jigsaw that appeared after solving the loading
+puzzle. There are a few principles that guide teammate's approach to storytelling. I don't want to
+put words in the mouth of the story team, which I've never been on, but in my opinion the key points are:
+
+* Decide on the story you want to tell, then make sure as much of the Hunt as possible acts
+consistently with that story. This will take a long time to polish - do so anyways.
+* Tie changes in narrative or story state to actions the solvers take. These actions are usually
+solving puzzles, but they don't have to be.
+* Use bottlenecks to direct team attention towards the same point, then put the most
+important story revelations at those bottlenecks.
+
+The breakout puzzle acts the bottleneck into the Puzzle Factory, but the main thing we wanted to
+avoid was one rogue team member solving the puzzle, finding the Factory, and leaving the rest of
+the team in confusion about what was going on. Our solution was to have the second part of the
+puzzle be a "teamwork time" puzzle (borrowing a term from MIT Mystery Hunt 2020), where collaborating
+with others would make it go faster. We then would require each user to enter STOP on the loading
+animation individually before they could access the jigsaw puzzle's URL, to force a flow where
+early solvers would need to tell others how to break out of the Museum if they wanted to *have*
+collaborators.
+
+The collaborative jigsaw itself married three of the worst parts of frontend development:
+handling different screen sizes, live updates of other people's actions, and non-rectangular
+click regions. Many thanks to Ivan for figuring out the design of those details.
+Internally,
+what happens is that every user fires a cursor location update in Websockets every 150ms,
+and the team-wide cursor state is broadcasted back to all viewers, using [a spring animation](https://liveblocks.io/blog/how-to-animate-multiplayer-cursors)
+to make cursor movement smoother by respecting momentum. The click regions are then based on SVG
+regions with some custom hooks on mouse-enter and mouse-leave to track which puzzle piece the
+user is working with. I mostly played QA testing on checking
+it worked properly on Firefox and Safari,
+and making sure puzzle pieces couldn't get stranded by phantom cursors. (Fun fact:
+did you know that browsers can sometimes fire a 2nd mouse-enter while you're in the middle of entering
+an element? It's true! It happens entirely randomly, and when it does it fires a mouse-leave while you're still
+entering said element. I'm sure this won't cause a bug that take 5 hours to root-cause.)
+
+At one point, we planned to implement an adversarial UI, where pieces would move on their own, wiggle out
+of their position, etc. The story justification would be that MATE was trying to stop you from getting
+into the Factory. We ended up cutting this because it was more work, and also in internal testing
+we got trolled enough by our own team members that we decided we didn't need to make solving the jigsaw
+any harder.
+
+![Conversation during Discord testing](/public/mh-2023/breakout_discord.png)
+{: .centered }
+
+In the live Hunt, a few teams somehow managed to drag a puzzle piece offscreen, and we had to manually
+advance them past the jigsaw puzzle. I still don't understand exactly what happened there,
+we never saw it in testing after adding bounds on the drag region.
+
+\* \* \*
+{: .centered }
+
+The other thing we needed for retreat was enough Act I feeders to fill out the start of the Museum
+round. As part of prep, we started really ramping up puzzle production, along with a "hack weekend"
+where we'd try to draft a puzzle within a weekend. That weekend was where we ended up writing all of:
+
+Museum Rules
+---------------------------------------------------------------------------------------------
+
+There isn't really too much of a story with this one. The brainstorm group I was was randomly
+assigned a feeder answer, and we tried to brainstorm ideas based on that. That landed on doing
+something with a list of rules placed in the reception of the Museum in-story. After the US
+states idea, the idea of extracting from Supreme Court seals felt like a more suitable way
+of using the puzzle information, and the puzzle presentation was stolen directly from
+[Storytime](https://2020.teammatehunt.com/puzzles/storytime) in Teammate Hunt 2020.
+
+The puzzle was written in about 2 days - I worked on creating the seal overlay extraction,
+Catherine did the drawings, and Harrison did the factchecking + research of weird laws. I'd
+say this puzzle was the strongest stretch of deciding whether to use true laws, or easy to
+search laws. Some laws were deliberately misinterpreted for humor, like "no marathon dancing",
+but other ones like "killing a fly next to a church" were not supported by any part of the
+Ohioan legal code. Meanwhile, I know that
+[New York has a specific child labor law exception for working as a bridge caddie in a bridge tournament](https://law.onecle.com/new-york/labor/LAB0130_130.html). Is anyone else going to be able to research that?
+Maybe, but better not to risk it. Around 30% of the laws used in the puzzle are not actually real weird laws.
+
+Really my main regret is that we didn't figure out a way to cleanly push to Supreme Court seals
+rather than state seals. The ambiguity came up in testing, but we didn't get around to a fix making
+it more obvious.
+
+
+Interpretive Art
+-------------------------------------------------------------------------------------------
+
+As mentioned in this solution, this puzzle started from a shitpost someone posted on Facebook.
+
+Me: "haha. Wait this isn't a bad puzzle idea."
+
+One of the common tools a puzzle constructor reaches for is "does this have a small, canonical
+dataset"? Such things are easier to search and usually give a pre-built Eureka moment when
+solvers discover the canonical dataset. Accordingly, the first idea on this puzzle was to
+use only songs from the Guardians of the Galaxy soundtrack. It was a good intersection of
+pop music and alien interpretations of that music.
+
+After I realized the GotG soundtrack did not have Never Gonna Give You Up or All Star, I decided
+that was a bad idea, and we switched to "literally any popular song". If you cannot meme in
+a puzzle, what are you even doing? My proudest moment of the puzzle was in the first testsolve,
+where testsolvers solved NA NA NA NA NA NA NA NA NA NA NA HEY JUDE, and placed it while saying
+"what an absolute shitpost".
+
+For a puzzle written so quickly, this puzzle got insane fun ratings in testing and seems
+popular with Hunt participants as well. Between this and [Young Artists](https://2021.galacticpuzzlehunt.com/puzzle/young-artists) from GPH 2022, I'm guessing that any puzzle that riffs on pop music is
+going to be a fan favorite.
+
+
+Conglomerate
+-----------------------------------------------------------------------------------------
+
+On this puzzle, I did less work. The story is that chuttiekang came up with the overall
+skeleton of the puzzle, but wanted help brainstorming and writing minipuzzles. So
+Nishant and I got recruited to do so. I ended up writing Birdhouse Kit, Camera, Microphone,
+Quilt, and Telescope. I also helped on a revision of Fishing Rod.
+Some of you may remember me saying that I'd try to do fewer minipuzzles for Mystery Hunt,
+but if someone else is designing their inclusion, then sure I'll help out.
+The sheer quantity did make construction a bit difficult, since we wanted to avoid
+repeating encodings or extraction mechanisms. That left fewer options after we exhausted
+binary, semaphore, Braille - you know, the old standbys.
+
+This puzzle
+had more errata than I'd like, and that ties into part of the reason I've been trying to avoid
+minipuzzles. The amount of content you need to create is a lot larger, and your exposure
+to missing something in factchecking is larger as well.
+
+
+August 2022 - Retreat (but Also Other Puzzles)
+------------------------------------------------------------------------------------------
+
+As the date for retreat approached, most of my work was on fixing parts of the Loading
+Puzzle, which was getting updated up to the day of retreat. However, puzzle writing is
+a constant process during the year, so August was also the time of writing:
+
+
+Lost to Time
+----------------------------------------------------------------------------------------
+
+Whenever I wrote a puzzle, I did a search in the /dev/joe index to double check it's not
+too close to a prior Mystery Hunt puzzle. At one point, I opened a link to the 1995 Mystery
+Hunt, and got really confused why the solution page redirected to devjoe's domain. I mentioned it
+in #puzzle-ideas and kept going.
+
+About a week later, Bryan said it was turning into a real puzzle and I should help out since
+I'd already be too spoiled to test. The plan was to pretend we found all the missing parts of the
+1995 Mystery Hunt in the Puzzle Factory basement, and we'd turn them into a puzzle answer. Given
+how niche the idea was, it seemed like a shame to leave any stone unturned, so we aimed to use
+as much of the missing content as possible. That meant writing 8 minipuzzles, based on the
+constraints given by devjoe's writeup and the 1995 Hunt document. We landed on the idea of writing
+puzzles with two answers, one for the 1995 Hunt and one for the 2023 Hunt, where knowing the
+1995 answer is helpful for solving the 2023 answer, then having them feed into a meta based
+on the 1995 Hunt meta.
+
+This definitely contributed to the length of the final puzzle. We knew it was reallllly pushing
+it for a puzzle in the FActory, but decided it could be okay if it was a one-off exception. As a
+microcosm of the entire Hunt, it made sense to have as many minipuzzles as we did, but each minipuzzle
+needed to be easier. (Not shorter, easier. We were constrained in length by the original 1995
+Hunt.) I know an old Dan Katz post speculated whether an entire early Mystery Hunt could act
+as one puzzle in a modern Hunt. I think this puzzle shows that no, it can't, but it's kind of close.
+
+The minipuzzles I directly made were the conundrum and the screenshot of Rick Astley, but in general
+I helped out on the presentation or brainstorming of other minipuzzles as well.
+In the vein of [Cruelty Squad](https://store.steampowered.com/app/1388770/Cruelty_Squad/), we
+spent a lot of time trying to make everything look as bad as possible. Well, "dated" would
+be the more accurate term. Every image in the puzzle was saved as a JPEG with lower resolution
+and image compression dialed up to the maximum. The conundrum was printed out on a piece of paper,
+which I cut by hand and then scanned. The scanner I used was too good though, so we had to
+JPEG-ify it a bit. Last, we planned to run the video through a filter to add VHS lines, but this
+got dropped because none of the premade filters we found matched our desired aesthetic, and
+making a custom one was definitely not worth it.
+Shoutouts to
+"The Boston Paper". I briefly considered buying a [newspapers.com](https://www.newspapers.com/)
+subscription to track down the original newspaper used for the 1995 Hunt, and then realized that
+it would be much better if the puzzle did not suggest looking up historical newspapers. That
+being said, I bet you could find what the original puzzle looked like if you dug hard enough.
+
+I'm a bit disappointed this wasn't solved more, but I understand given its length and placement
+in the Hunt. It's also interesting to write a puzzle that will potentially be broken if
+anyone finds more material about the 1995 Mystery Hunt. I'm usually rooting for better archiving.
+This is a rare example where I hope it stays in a steady state!
+
+\* \* \*
+{: .centered }
+
+I also did an internal test on a paper version of Weaver around this time. I failed to understand
+the final cluephrase even with the correct extraction, so it got revised. I also remember commenting
+that it might be 1 weave too long, but we didn't plan any changes before retreat. The main goal was
+to get it validated enough to create the physical prototype.
+
+
+This was also around the time where we were more seriously working on Hunt tech. (Move sections from
+above to down here).
+
+One interesting thing about tech for Mystery Hunt in particular is that there's greater emphasis on
+creating internal tooling. In a smaller Hunt, it's possible for a small number of tech-inclined
+people to get all the puzzles into the Hunt website. In Mystery Hunt, this is less true, just because
+of the scale. We knew the end of Hunt writing would be busy with art and puzzle postproduction, so
+any tools we wanted were best planned and coded early, before art and puzzle drafts were done.
+
+Top of our list was improving our postproduction flow, given Palindrome's comments that they
+had a postproduction crunch. We also wanted a better puzzle icon placement system.
+Icon placement is a field on the Puzzle object in the database, which lets artists change its
+location without needing to write a commit, but the flow of adjusting a random number was kinda
+painful in Teammate Hunt 2021.
+
+For postproduction, Ivan proposed an "auto-postprod" system. Given a Google Doc link, this tool
+would load the page, retrieve the HTML within the Google Doc, and auto-create a commit and pull
+request for that puzzle draft. I said "sure", not really expecting it to ever exist. Imagine my
+surprise when it actually got built! It wasn't perfect. It didn't handle Google Sheets, it
+would sometimes timeout if a Google Doc had an especially large image, there was an issue with
+HTTP link escaping at one point, and in general if it errored on a puzzle it would have fits
+when trying to auto-create the commit for the postprodded puzzle. It was still quite helpful.
+You don't realize how long it takes to mechanically copy-paste paragraphs from Google Docs
+and wrap them in `<p>` tags until you've done it thousands of times.
+
 
