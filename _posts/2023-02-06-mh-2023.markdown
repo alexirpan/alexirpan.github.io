@@ -1340,7 +1340,7 @@ a puzzle, what are you even doing? My proudest moment of the puzzle was in the f
 where testsolvers solved NA NA NA NA NA NA NA NA NA NA NA HEY JUDE, and placed it while saying
 "what an absolute shitpost".
 
-For a puzzle written so quickly, this puzzle got insane fun ratings in testing and seems
+For a puzzle written so quickly, this puzzle got insanely high fun ratings in testing and seems
 popular with Hunt participants as well. Between this and [Young Artists](https://2021.galacticpuzzlehunt.com/puzzle/young-artists) from GPH 2022, I'm guessing that any puzzle that riffs on pop music is
 going to be a fan favorite.
 
@@ -1426,7 +1426,6 @@ the final cluephrase even with the correct extraction, so it got revised. I also
 that it might be 1 weave too long, but we didn't plan any changes before retreat. The main goal was
 to get it validated enough to create the physical prototype.
 
-
 This was also around the time where we were more seriously working on Hunt tech. (Move sections from
 above to down here).
 
@@ -1453,3 +1452,179 @@ You don't realize how long it takes to mechanically copy-paste paragraphs from G
 and wrap them in `<p>` tags until you've done it thousands of times.
 
 
+Retreat!!!
+-------------------------------------------------------------------------------------
+
+Retreat was held in late August, in a big AirBnB in the Bay Area. Going in, there were four
+public priorities:
+
+* Testsolve physical puzzles
+* Test events
+* Draft a new event
+* Start drafting 2+ AI round puzzles
+
+along with the secret priority of
+
+* Testsolve breakout
+
+Friday
+----------------------------------------------------------------------------------
+
+![Retreat schedule, Friday + Saturday](/public/retreat_friday.png)
+{: .centered }
+
+Accordingly, retreat started with a group testsolve of all the Act 1 puzzles and physical
+puzzles. We aimed to frontload all the physical puzzles, based on feedback that
+[Diced Turkey Hash](https://puzzles.mit.edu/2022/puzzle/diced-turkey-hash/) showed up late
+last year, so most physical puzzles were in Act 1 anyways.
+
+Almost immediately, we started hitting technical problems. A few were real software bugs,
+but most of them were tied to trying to have ~20 laptops and ~20 phones all connect to
+the same WiFi, and this...not working that reliably. I switched to using a WiFi hotspot
+from my phone. The other issue was that we provisioned a smaller server for testing,
+and it turned out that server was fine for 3-5 people and less fine for 20.
+
+So, we also immediately got evidence that if your site is slow, then people assume the
+loading animation is just a real problem with the site. We also saw that as load times
+increased, teammates from teammate would get in the habit of opening every puzzle at once in a
+separate tab, then looking elsewhere while waiting for the puzzle to load. Which also
+wasn't great. The loading puzzle was not getting solved, teams were not breaking out.
+
+In an attempt to get people to look at the loading animation more, the editors-in-chief
+nudged testsolvers towards puzzles that unlocked later (had longer load times). Meanwhile,
+on the tech side we did a number of deploys to "fix a bug", that was *actually* just
+increasing the time of the loading animation and encouraging solvers to refresh their
+pages to get the "bug fix" (see the loading animation for longer). Testsolvers were progressing
+through Act I slower than expected, so the load time curve needed to get adjusted.
+
+(I can see some of you yelling about the "slower than expected" part, and in hindsight,
+yes that should have been considered more seriously. But we had already marked retreat as
+our one good testsolve of breakout, and it was *not working*. We were of the mindset that
+we'd lock in all details of breakout by today, and if breakout didn't work then the
+entire Hunt's design was in jeopardy. I don't even think that's wrong.
+In comparison, many of the Act I puzzles were on their 1st draft and would likely get easier as they got polished.
+Again, I think "puzzles get easier as clues are cleaned up" is also totally true!
+The error may have been in the estimate for how *much* the solve time would drop in
+future puzzle revisions.)
+
+In between trying to ramp up loading times, I testsolved many puzzles, including
+[Exhibit of Colors](https://interestingthings.museum/puzzles/exhibit-of-colors) (solved the
+flower puzzle and got the animal a-ha), [Tissues](https://puzzlefactory.place/factory-floor/tissues)
+(gave the authors an aneurysm by getting on a four Greek elements tangent and suggesting we
+burn or soak the tissues in water), [Dropypasta](https://interestingthings.museum/puzzles/dropypasta)
+(complained heavily about the old Pokemon Stadium mechanic - it got changed to the idea our testsolve
+group had first), and [Brain Freeze](https://interestingthings.museum/puzzles/brain-freeze). At
+the end of Brain Freeze, someone asked why it had such a garbage answer, and I had to stay silent
+knowing I was responsible for pushing that garbage answer to completion.
+
+(meme image here?)
+
+After that, Collage got unlocked! Except, it was totally broken. Oh no. One teammate meme
+during writing was "bamboozle insurance". You offer bamboozle insurance when you want to assure
+people something will be true, and you pay bamboozle bucks when you are wrong. The nature of writing
+puzzlehunts is that you'll be wrong quite often. Example uses include:
+
+"This meta testsolve needs 2+ hours but it will be worth your time, you can buy bamboozle insurance from me"
+
+"Can I get bamboozle insurance the loading animation time won't change, I'll have to redo math if it does"
+
+DALL-E and other image generation models were quite hot at the time and we used them accordingly. Although
+a surprisingly large fraction of teammate works in machine learning or related fields, the choice to
+have an AI-themed puzzlehunt in the year generative models became commercially viable was entirely
+coincidental.
+
+![Bamboozle emoji generations](/public/mh-2023/bamboozle.png)
+{: .centered }
+
+I bring this all up to say that I offered bamboozle insurance that Collage would be fine,
+since we literally testsolved it a few weeks ago, and then it wasn't.
+It turned out the issue was that the loading animation was conflicting with the startup of
+the interactive puzzle content, replacing it entirely rather than making it hidden, and this
+caused the async initialization requests for Collage to never fire. We spun up a hotfix
+to get Collage working, and got it going enough to run a testsolve, but this fed
+into the narrative of "the site is struggling, so the loading animation isn't special".
+
+The original plan was to get to breakout by around the evening (8 PM to 10 PM), then leave time for
+board games and socializing. Instead, at 1:40 AM, the Act I testsolve was officially put on pause,
+and then a bunch of hunt exec and breakout authors shuffled into a meeting room, where we
+discussed what nerfs we wanted to add before the testsolve resumed Saturday morning.
+
+The additions we landed on were:
+
+* Be much more aggressive on hinting with the messages MATE sent during loading ("It's puzzling
+why this is taking so much time.")
+* Stop interleaving the pieces of each color, just show all the pieces in order.
+
+![New puzzle piece order](/public/mh-2023/neworder.png)
+{: .centered }
+
+By the time this was resolved and implemented, it was 4 AM. I went to go collapse on an air
+mattress so that I could be sort-of awake tomorrow.
+
+Saturday
+---------------------------------------------------------------------------------
+
+The Act I testsolve was still running in the testsolve, but we did want to do the originally
+scheduled events, so the morning was dedicated to event testsolving and Act 3 puzzle drafting.
+In Saturday morning, we started writing what would eventually become:
+
+
+We Made a Quiz Bowl Packet but Somewhere Things Went Horribly Wrong
+---------------------------------------------------------------------------------
+
+Okay. I know this puzzle isn't that popular, but all puzzles will have their stories told.
+
+We were given the feeder answer for this puzzle, and after investigating various pyramid options,
+we laneded on pyramidal quiz bowl questions, partly because some of the authors were fans of
+quiz bowl. The idea of extracting based on diagonalizing words based on a Hamiltonian path of
+the United States seemed like a good way to tie into both the feeder answer and the structure
+of a quizbowl question, so we started with constructing a suitable quiz bowl question for
+the final answer. Since solvers had access to the Internet, and we knew this would be towards
+the end of the Wyrm round, we ended up using a very loose searchability bar (which was one
+of the big causes of the puzzle's length).
+
+Originally, the plan was that every question would semantically clue a state in the Union.
+This was thrown out pretty quickly when we tried to tie DADDY LONGLEGS to South Carolina, and
+the best we could come up with was a South Carolinian high school's rendetion of the musical,
+which was a bridge too far.
+
+A sketch of 4 sentences per clue x 48 clues was, in hindsight, a lot. Part of the justification
+was that unlike many other difficult puzzles, this was the sort of puzzle that parallelized
+well and was easy to jump in and out of. There wasn't a lot of puzzle-specific context you
+needed to absorb to make progress. With so many puzzles trending in the direction of serial
+deductions + not much branching, it seemed okay to have a big puzzle that could run in the background.
+
+Over the course of a few weeks, we started filling out the draft. It was clear that the puzzle
+skeleton would work mechanically, but we were quite unsure if the puzzle would be fun. It
+seemed like the solve process would be that you Googled a bunch of phrases, reordered,
+indexed the way you were told to, then followed the instruction you were given. You'd then
+be done without really having an a-ha anywhere. Given the structure, the easiest place to
+add an a-ha was in the 1st step of Googling everything. That motivated the decision to
+obscure questions by pretending they were always talking about a location. In this way,
+although the bulk of the puzzle would still be Googling, there'd be a local a-ha in deciding
+how to reinterpret the clues when formulating that search. "Cryptic-like" is the right analogy
+here. Cryptics work because you need to decide what is wordplay and what is definition,
+and similarly you'd need to decide what parts to read straight and what parts were location
+wordplay.
+
+This made the puzzle...a *lot* harder, which got corroborated by testsolving. To paraphrase, the
+feedback was "this was really fun at the start, then unfun after we got really stuck".
+I am
+not tying to be flippant here, this was not a [sour grapes](https://www.merriam-webster.com/dictionary/sour%20grapes) problem. There are puzzles where you get stuck, and it's a pleasing stuckness to try to
+figure out what idea you're missing. In this puzzle, that was less true.
+
+(I suspect the issue is worse if you are solving puzzles from a mindset of trying to 100%
+every step before doing the next one. The intermediate cluephrase is really helpful for
+constraining how sentences can pair up and trying to solve for it sooner does a lot for
+the solve experience.)
+
+My suspicion is that if you remove the obfuscation, the puzzle gets even more mechanical
+and it doesn't really save the design.
+The right fix would have been to keep the obfuscation, but cut the puzzle size in
+half and brainstorm a new extraction. That way, the disparity between easiest and hardest clue
+would have been smaller, the matching problem would have been easier, and it would be more
+likely you'd hit the cluephrase before the puzzle overstayed its welcome. The fun ratings
+weren't great, but they weren't bad either, so it went in without many changes.
+
+\* \* \*
+{: .centered }
