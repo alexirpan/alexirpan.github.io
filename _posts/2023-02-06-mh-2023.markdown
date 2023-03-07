@@ -1831,3 +1831,185 @@ October 2022 - How About a Nice Game of Chess?
 
 By this point I had finished design work on all puzzles that I had motivation to write, and was planning
 to mostly due token tech tasks until the end of Hunt. All of them, except for one.
+
+
+5D Barred Diagramless with Multiverse Time Travel
+-----------------------------------------------------
+
+This puzzle may be my magnum opus. From a fun standpoint, I suspect Interpretive Art wins.
+From a solve experience standpoint, I'm guessing Puzzle Not Found wins. But, from a
+construction and spectacle standpoint, I would picked 5D Barred Diagramless. It
+is really stupendously long, but I claim it is both entirely fair and very up-front
+on what you're getting into.
+
+As mentioned way near the start of the post, the first draft of this puzzle was written in
+February for an internal puzzle potluck, and did not include any 5D Chess elements. I just really liked the joke, and knew that
+[it would be an inherently terrifying puzzle title](https://dp.puzzlehunt.net/team/5D+Crosswords+With+Multiverse+Time+Travel.html).
+Since the puzzle had started
+design from the [Clinton/Bob Dole](http://www.alaricstephen.com/main-featured/2017/7/3/the-clintonbobdole-crossword)
+crossword, the first version went all-out on pushing that idea as far as possible.
+
+In any puzzle where clues solve to a pair of answers, you either need a way to order the pair,
+or you need to pick an extraction method that uses both answers of the pair in an unordered way.
+I first realized this when solving [Split the Reference](https://2018.galacticpuzzlehunt.com/puzzle/split-the-reference.html)
+in GPH 2018, but then started noticing that pattern all over the place.
+
+After doing some fudging to get JOSEPHBIDEN/DONALDTRUMP to line up, I noticed that JOJORGENSEN
+*also* happened to be 11 letters long, and, I mean, come on, you have to try doing something with that.
+Two timelines would be clued by the grid, and then the 3rd timeline would provide the extraction content.
+I had trouble finding other presidential elections where the two parties' candidates could also be
+forced to 11 letters, but was able to make it work for a bunch of years if I allowed dipping into
+the many 3rd-party candidates. It still felt wrong...but, the potluck deadline was coming soon, so I
+decided to just go for it and figure out a fix later.
+
+The grid fill went well, the extraction less so. I needed to give a hint that the 3rd timeline
+existed. Still, it seemed promising. I then moved on to lots of other work.
+
+Fastforward to 8 months later. In a team meeting, the EICs mentioned we could use more crosswords in
+the Hunt for puzzle variety. Hey, I have an unfinished crossword idea! Let's see if we can fix it.
+
+I reflected on the design, and came away with these notes.
+
+* As much as possible, I wanted
+the puzzle to look like a single grid. A 5D crossword should only have one 5D grid! (With that grid
+having many projections into 2D space.) More specifically, the given borders and black squares should
+match across all of the 2D grids.
+* If the extraction is only based on alternate timeline entries, then those are the only parts
+of the grid that matter to extraction, and that's a bit disappointing if you worked on the fill
+elsewhere. (This was one of the bits of feedback I remember from [Cross Eyed](https://www.puzzlesaremagic.com/puzzle/cross-eyed.html)
+years before.)
+* If the extraction uses letters from the entries that are time-dependent, then I'd need to call them out
+or indicate them in some way, which I wasn't too fond of. Doing so would remove the mini a-ha
+for how to fill those entries. For similar reasons I didn't want to label the alternate timeline entries.
+* Really, it's a shame the puzzle doesn't use 5D Chess in any way, given how directly it's called
+out in the title.
+
+Remembering [✅ ](https://2020.galacticpuzzlehunt.com/puzzle/check.html)
+from GPH 2020, I considered the 5D Chess point more seriously. You'd want to solve the entire grid before
+doing the chess, because chess pieces and the extracted letters would be all over the grid. The puzzle
+wouldn't need to label any of the special entries, preserving the a-ha during the grid fill. Thematically
+and mechanically, it just made sense to make it a chess puzzle. Making it barred would let me fill
+every square, and making it diagramless would led me keep the given borders identical (since there wouldn't
+*be* any).
+
+Great, problem solved! Time to learn how 5D Chess works. How hard could it be?
+
+The editors assigned me an answer from Bootes, with the reasoning that a 5D puzzle could accomodate
+a 2D answer. The answer I got assigned had some punctuation characters in it, which I agreed to try
+fitting into the puzzle. I said that I could plausibly do things with rebuses, like cluing
+GAIL PARENT and filling it in as GAI(T. The answer options weren't great, but were workable.
+
+Over the span of about 4 weeks, I put increasingly deranged comments into the puzzle brainstorm channel.
+I'd say the default state of the editors was "confusion", as I monologued my struggle learning 5D chess
+to people who only sort of understood what I was struggling with.
+I initially
+tried to learn the rules by watching gameplay videos. Within an hour I decided that it would
+be more efficient to buy the game, so I did. I mostly paid for Mystery Hunt with time. This
+was the rare puzzle where I spent money.
+
+I have yet to play a full game of 5D Chess with Multiverse Time Travel. Instead I played the in-game
+puzzles, which are specifically constructed to teach you the rules. After getting a basic understanding,
+I decided to have the puzzle only use bishops, knights and kings. Rooks were too boring in 5D, pawns could introduce
+questions about whether they had been moved yet or not, and queens were terrifying. A single queen in
+5D chess has, like, 60 possible moves. There are arrangements where one queen can mate a king in 7 different ways. Trust me it would have been a bad time.
+
+I made a 5D chess problem, filling the rest of the grid with random letters to get early feedback on
+just the chess step.
+What was immediately clear from those tests was that it was very easy for someone to read a 5D chess guide
+fairly quickly, come away with 50% of the rules, and then attempt to solve the chess puzzle incorrectly.
+As a solver, there is really no way to distinguish "I do not understand the rules" from "I understand
+the rules and am just bad". Like, they would be 50 minutes in, asking for hints and we'd have a conversation
+like this:
+
+![A conversation about 5D chess rules](/public/mh-2023/thefuture.png)
+{: .centered }
+
+"The future doesn't exist yet" is really such a great line. I recommend using it without context, it can
+apply to so many things.
+
+In response to the pre-test, I created some 5D chess examples that could not be solved without understanding
+the base rules of timeline creation and branching. This was part inspired by Time Conundrum,
+and part inspired by [Cryptoornithology](https://ecph.site/puzzle/cryptoornithology.html) from EC Puzzle Hunt.
+
+Anyways, when factchecking that testsolve on what mates were correct / not, I decided to double-check my
+work and found they had found a checkmate that I missed! At that point I decided that okay,
+I need to write code to verify this, I'm not going to be able to trust my 5D chess solving ever again.
+
+I reimplemented the rules engine in Python. Not the full engine, but enough to test for mate-in-ones.
+I went back and forth between my code and the in-game puzzles until I got them to agree with each other,
+discovering a few other edge cases along the way.
+
+At the same time, I sent a question upwards: if I clue the answer directly, do my letters need to be
+aligned exactly like the answer, or would it be okay to assume solvers would find the correct whitespace
+themselves? My question went to the editors, who sent it to meta authors, who sent a reply back through
+the editors, and the answer was: yes, if you aren't using a cluephrase the spacing needs to line up
+exactly.
+
+Well okay then I'm not going to be able to get the extraction to work that way, it's too constrained, so
+I dropped the rebus ideas and started digging for cluephrases. Finding a new cluephrase of the same
+length, I went back to my code, this time modifying it to place pieces for me. By this point, I had
+realized a constraint that was not obvious beforehand.
+
+As designed, chess pieces can only differ
+between the two timelines if they appear in the alternative timeline entries that have 2 answers.
+Given the construction, I was only planning to have 3-4 of those entries across all grids, since each one
+took a lot of real estate to support. (The down clues that cross them take up about 25% of the grid squares
+per entry.)
+If an extraction square appears in the same spot in both timelines, then those letters are forced to
+match in the cluephrase, which would add annoying constraints on how many mates needed to exist in each timeline.
+To maintain flexibility, I wanted extraction to never agree between timelines, but this was only possible if
+I concentrated as many chess letters into the alternate timeline entries, since that was only source
+fot timeline deviation.
+
+Does any of that previous paragraph make sense? No? Don't worry about it. The short version is that
+every alternative timeline pair needed to satisfy at least one of the following:
+
+* One has kings (K), the other does not.
+* One has bishops (B), the other does not.
+* One has knights (?), the other does not.
+
+This is pretty much the only reason that the 2008 entry was BEIJING / BANGKOK, even though Bangkok
+failed in the very first round of IOC evaluation.
+I really, desperately
+needed to have an alternate timeline entry where kings existed in one half but not the other.
+For a similar reason, the Kentucky Derby was picked just because it was easy to find a historical
+winner with a K in its name.
+
+This requirement also influenced the decision to make knights be represented as Js. I knew using N
+would make the crossword fill way too difficult. Using J both made the fill easier, and created
+differing pieces in the JOSEPHBIDEN / DONALDTRUMP and KENJENNINGS / LEVARBURTON pair. (I wanted
+to use MAYIMBIALIK / LEVARBURTON originally, since it seemed like a fun bit of trivia to use "the person who wasn't Ken", but having a shared B in the same spot created too many problems.)
+
+With a better understanding of the requirements, I placed my seed entries in the grid, then had my code
+greedily place kings until it had achieved 22 checkmates. It failed to do so. The first king
+placed created 17 checkmates, and from that position it had a parity issue where I could get either
+21 or 23 checkmates, but not 22.
+
+Hang on, 17 checkmates from one king? That seems wrong.
+I added tons of debug print statements to track down the bug. That was how
+I learned it wasn't a bug at all. My brute forcer had correctly found a discovered mate.
+
+I verified it in game, and went "holy crap that's so cool." But should it be in the puzzle? I tried
+banning my code from using it, and found it made construction impossible without adding more alt-timeline pairs
+into the last grid. Essentially, there are around
+30-40 different moves possible from the alternative timeline entries, and you literally can't distribute 20+ checkmates among them unless you use discovered mates.
+
+With an understanding of what was going on, I created the final chess position by hand, arranging
+half of the seed entries to create the discovered mates, and placing the other half to fix the parity
+issue. Now that the full chess puzzle was created, I sent it to another round of testing just the chess.
+
+This testsolve went a bit better thanks to the examples, but still had some trouble due to confusion
+on how to set up the chess problem and what "one move" meant. In response I prepared many more seed entries
+describing aspects of 5D chess. By this point the puzzle had evolved from "solve a crossword, get an answer"
+to "solve a crossword, congrats you're 50% done", and it felt like it was on the edge of unreasonably
+long. I expressed these feelings of uncertainty to testsolvers, at which point they said 5D Chess was
+"exactly the bullshit I expect to see in Mystery Hunt". I'd say a stronger statement is true: I don't think
+this puzzle could exist outside of Mystery Hunt.
+
+So really, the question was whether I wanted it to exist. I think people believe that, like, I was super
+gung-ho about getting 5D Chess into Mystery Hunt, and I really wasn't! I was only motivated to do so
+after sinking weeks and weeks into understanding 5D Chess enough to appreciate its design. All I wanted
+was a multi-dimensional crossword with a suitable extraction, and all roads for that led to chess.
+There may be a world where the puzzle is just a 5D Chess puzzle, no frills, but I don't think there's
+a world where the puzzle is a 5D crossword without a chess step.
+
