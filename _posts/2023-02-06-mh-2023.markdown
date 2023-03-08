@@ -2013,3 +2013,82 @@ was a multi-dimensional crossword with a suitable extraction, and all roads for 
 There may be a world where the puzzle is just a 5D Chess puzzle, no frills, but I don't think there's
 a world where the puzzle is a 5D crossword without a chess step.
 
+With the chess position constructed and two pretests of the chess step done, the puzzle still hadn't had a fully unhinted solve of the chess,
+but the crossword was already 1/3rd filled, and I decided to guess that any future chess nerfs could be applied
+after the grid was completed. I spent the next week completing the fill and writing clues. Around the middle of
+the fill, I realized I had created some 1-wide columns, which I wasn't too happy about. But fixing it would
+have required changing the placement of the alternate timeline entries, which would require regenerating
+the chess position, which would have meant restarting from scratch. And the chess problem given
+had already gone through one partial testsolve...I decided I didn't have time to fix it.
+
+By now it was late October, where I had spent my entire month of Mystery Hunt time trying to make 5D Diagramless
+a reality. I would guess I was at the 60 hour mark and we were just getting to the first full testsolve.
+In that testsolve, the grid fill went great! The chess continued to go less well. This time the solvers did not understand the rules for how chess timelines are arranged, as well as some other details about setting up the
+chess problem. I let them flounder for a while, realized they were never going to fix it, and
+revised the critical 55-Across clue to be extra explicit about timeline arrangement. I also changed
+the clue for TWO into a seed clue reinforcing the rules of 5D chess. It was a stroke of good luck that TWO was already in the fill,
+although perhaps having it appear in one of three random 13x13 diagramless puzzles isn't too rare.
+
+Once I had hinted the testsolvers to the correct timeline arrangement, and after giving the total number of
+checkmates, they solved the chess without any more guidance. I'd say that was the first moment I
+started to believe the end of puzzle construction was in sight. I was originally hesitant to give the
+total number of checkmates out of cheese concerns. If you find all squares that pieces *could* move to,
+then construct a regex to drop out letters until you get to 22 letters, then the phrase is mostly readable
+from nutrimatic and you can skip the chess puzzle. In practice, the chess theming is strong enough that
+very few people attempt to cheese the puzzle. The goal of giving the number of checkmates was to
+give a minor hint towards the discovered mates. Only 5 mates can be found without it. If you make mistakes on
+checkmates, maybe you get 1-3 more. It's far enough away from 22 that eventually you're forced
+to confront the possibility that you are entirely missing a key idea.
+
+The 2nd testsolve of the full puzzle went well, and I was looking to do a 3rd testsolve, given that I'd made
+changes to the chess step in the 1st full testsolve and it had yet to go through 2 fully unhinted tests.
+However, the editors decided that between the 1 fully clean solve, and the 3 previous partly-hinted solves,
+the value of another test wasn't worth it compared to spending the testsolve time on other puzzles.
+
+By this point, the puzzle had become a bit of a meme. About 1/3rd of teammate had testsolved it and another
+1/3rd had heard a rumor that there was a "five-dimensional puzzle". This was shortly after 4D Geo finished
+testsolving, and it was funny to realize that our hunt had a 3D puzzle, a 4D puzzle, a 5D puzzle, and
+a non-integer dimension cameo in Period of Wyrm. "We have too many dimensional puzzles, new dimensional puzzles are banned."
+
+Internally, as we ramped up postproduction and factchecking, this puzzle got flagged as being especially
+scary on both fronts. Many thanks to Holly for factchecking all the crossword clues, and Evan for creating
+all the chess diagrams with hundreds of lines of [Asymptotte](https://asymptote.sourceforge.io/) code.
+
+The chess factchecking was easily the most terrifying factchecking experience of my life. I had
+researched and installed a mod for 5D Chess that let me load arbitrary positions, but the game is hardcoded
+to only work for boards up to 8x8, so the final check had to be done by hand. Here's a list of
+things I did not know until after testsolving was finished:
+
+* A player can delay an inevitable mate by branching back in time, unless they have timeline disadvantage.
+* A player can mate a king in an active board if they fork two active kings.
+
+The first was only fine because I decided to have black make a timeline instead of white. If I had
+messed up that coin flip a month earlier, it would have completely invalidated the chess problem and I would have had to reconstruct the entire puzzle + retest the chess puzzle.
+None of the testsolvers caught this, because none of them had actually learned 100% of the rules of 5D Chess.
+Instead they had learned the 90% needed to solve the puzzle. But for a Mystery Hunt, 90% isn't good enough.
+You never know how far solvers will go.
+
+The check for forks was also really close to failing, although I think my odds of failure were more
+like 20% rather than 50%.
+As for the analysis on moving two pieces in one move, I had some backups in mind if that didn't work,
+but thankfully it did.
+
+Factchecking the Appendix was a casualty of the last-minute push to get Hunt ready in time. Although
+it wasn't independently verified, we were willing to say it was unlikely solvers would go as
+in-depth as I did on checkmate verification, Evan hadn't noticed any errors when reading through the solution
+for postprodding, and there were puzzles in more dire need of factchecking.
+
+The solution ended up at around 8000 words of just complete, utter absurdity. I'd say that's why I consider
+it my most important work. It is this perfect encapsulation of what it's like to fall down a puzzle construction
+rabbit hole by taking a joke way too far, and come out the other side with a coherent, self-consistent, and
+beautifully terrifying puzzle. Only two teams solved it forward, but I was expecting at most 10 teams to
+finish it, so I'm really not too torn up about it. I got most of my enjoyment from making it,
+not watching it get solved. (It helps knowing that one of the forward solvers said it made their top 5 puzzles ever.)
+
+The one regret I have is that one of the examples could have
+relied on a discovered mate to make the endgame extraction flow smoother.
+As a standalone puzzle I believe it is better without a hint in the examples, but in the context of Hunt,
+including it would have given most of the Eureka moment while making it less likely teams got stuck at the end.
+
+\* \* \*
+{: .centered }
