@@ -2092,3 +2092,226 @@ including it would have given most of the Eureka moment while making it less lik
 
 \* \* \*
 {: .centered }
+
+
+November 2022 - AH YES, WEBSITES ARE A THING
+---------------------------------------------------------------------------------------------
+
+There were a...concerning number of things to figure out for the Hunt website.
+
+A lot of it was classic stuff. Figuring out how to make the Factory round page meet the design
+spec, supporting different site themes per round, etc. *Yawn*. Like, the problems were straightforwardly
+solvable. There were just a lot of them and concerningly few people to work on them. My understanding is
+that a lot of people who planned to do tech were either busier with real life than expected, or sucked
+into the Conjuri rabbit hole. This left a lot of infra tasks on the table.
+
+With 5D Chess wrapping up, I decided I was mostly done with starting new puzzles, and offered to
+go more all-in on tech, given my experience with tph-site internals.
+
+
+Events
+-----------------------------------------------------------------------------------
+
+This was less tech work, and more design for how we wanted to represent events in our codebase.
+
+We decided events would act like globally unlocked puzzles, with some event-specific metadata to manually open them
+when the event was completed. We considered how to do event accounting, with the goal of minimizing
+logistical overhead, and decided to have every event solve to an answer that teams would enter themselves.
+Pretty much every recent Mystery Hunt has used this system, it just works.
+
+There was no plan to have an events round like 2019 Mystery Hunt, so what should events do? EICs decided that
+events should act as either free answers (manuscrip) or free unlocks (Penny Passes), with free answers
+only usable in non-AI rounds and free unlocks usable everywhere. We wanted event rewards to be useful at
+all stages of the hunt, but didn't want teams breaking into the AI round gimmicks with free answers.
+
+(The church bells of dramatic irony are ringing. We'll get there, I promise.)
+
+I asked some pointed questions about edge cases. How do free unlocks affect meta unlock? Is all of Museum
+one round for unlock purposes or not? The real reason I was asking was because I wanted to figure out
+requirements for the real tech blocker:
+
+
+Unlock System
+---------------------------------------------------------------------------------
+
+gph-site and tph-site use a concept called "deep". I don't know why it's called deep. Maybe because of
+GPH 2019's starter theme about an excavation? In any case, "deep" is a measure of how far you are in
+a Hunt, but how that is measured can be done in different ways.
+
+The 2022 Mystery Hunt chose to have a fixed, single track unlock order. All puzzles, both feeders and
+metas, were on that track. The 2021 Mystery Hunt had per-round tracks, where each puzzle gave a lot of
+JUICE to its round and some JUICE to smaller rounds.
+
+Our Hunt was looking like it would be more like JUICE, escept weirder. AI rounds were going to have
+independent unlocks, since each was its own hunt in-story. Oh except we wanted new AI round unlocks to
+be based on Act 3 solve progress. The Museum was slated to have a shared
+unlock track between all rounds, but with a min-solves-in-round threshold for metas. Factory rounds were
+going to be mostly normal. Oh, and the number of puzzles initially visible in the Factory was going to scale with the number of Museum solves teams had before unlocking it.
+
+I decided that, you know what, we don't know what our unlock system is yet, it could change wildly,
+so I am just going to implement the most generic unlock system I can think of. I arrived at what I'd
+call the "deep key" system.
+
+* Every puzzle has a deep key (an arbitrary string), and a deep value (an arbitrary integer). A puzzle
+unlocks if the team's deep for a deep key is at least the deep value.
+* By default, solving a puzzle contributes 100 deep to its round name.
+* It would also support two different overrides: a round-level override (changes deep-on-solve for the round)
+and a puzzle-level override (changes deep-on-solve for that puzzle).
+* Solving a puzzle can contribute any amount of deep to any number of deep keys.
+
+To justify it, I gave examples of how to implement all of the proposals.
+
+* Museum rounds: Every museum puzzle contributes 100 to "museum" and 1 to "X-meta" where X is its round. The meta for each round has deep key "X-meta" and all other puzzles have deep key "museum"
+* Unlock an AI round after N solves in Act 3: each AI round puzzle contributes 100 to its own round and 1 to "act3-progress", the round opens at N act3-progress, then solves within the round contribute 100 to itself.
+* Breakout: starting Museum puzzles could contribute 1 to "factory". The breakout puzzle would contribute 100 to
+factory, then the starting set of Factory puzzles could open at 100 + N depending on how many we wanted open at the start.
+
+This is essentially a generalization of JUICE, or a generalization of Puzzlehunt CMU's "solve K of N"
+system. Each puzzle's database entry would only need to store 2 fields, making it easier to scan in Django
+admin, with the heavy lifting of the logic done in Python. In the design notes, I mentioned that
+arbitrary string keys could potentially be hard to maintain, but I expected us to have at most 20-30 different
+keys and for the key names to be mostly self-explanatory, and that max flexibility now would let us adapt
+more later.
+
+I didn't get any pushback, and spent a day or so implementing it. Along the way, I implemented a "deep floor" system, basically our version of time unlocks. A deep floor is a Django model that essentially says, "team X should
+always have at least this much deep for this deep key". Floors were created in a default-off state, and could
+be turned on whenever we wanted to time unlock something, along with an option for a "global deep floor" that
+would force a minimum deep for all teams. I also attached a UUID to each deep floor, along with a magic endpoint that a team could hit to opt into a deep floor. This was to support optional time unlocks similar to what
+Palindrome did. (I asked Palindrome's team where this was implemented in their codebase, and they told
+me it was implemented very rapidly during Hunt and I should just redo it on my own.)
+
+
+"Wyrm is a Special Child"
+--------------------------------------------------------------------------------------------
+
+In the middle of me working on time unlocks, Ivan reached out and asked if I could help on making the
+Hunt "feature complete" by December 1st. This was an internal deadline we'd set for creating a minimally
+viable Hunt, where a team could go in, solve puzzles, progress through the Hunt story, and reach the end
+of Hunt assuming they had all puzzle answers.
+
+When I looked into the TODOs, there was a rather terrifying list of things to implement, including:
+
+* How do we represent repeated Wyrm puzzles across the Museum and Wyrmhole?
+* All the logic around team interactions for physical puzzle pickup, and Reactivation, including
+the story state changes required for that.
+* Connecting the story state to the Factory's display code to support shutting down the Factory and
+slowly reactivating it.
+* Implementing the teamwide dialogues and connecting them into the unlock and story advancement logic.
+
+I decided to take the Wyrm and story consistency issues, while Ivan set up the dialogue logic ("it's just
+Kyoryuful Boyfriend all over again"). The Wyrm logic was especially wild, since each puzzle is actually
+displayed in up to 3 contexts:
+
+1. As a puzzle in the Museum.
+2. As a puzzle on the conveyor belt in the shutdown Factory.
+3. As a puzzle in the Wyrmhole.
+
+Each context needed to display the puzzle differently and uses a different URL and puzzle icon. Additionally, we decided that the errata and hint
+state should be identical across a puzzle and its copy, but their guess states needed to differ, since the
+Museum puzzle would unlock different things than the Wyrmhole puzzle. We *also* needed to make sure you
+couldn't use free unlocks in the Wyrmhole round until after you met Wyrm post-shutdown. Internally solvers
+unlock the Wyrmhole round as soon as the teammate interaction is done, because that is easiest for puzzle
+management, but externally solvers don't know the Wyrmhole round exists yet, so we had to add an edge case
+for that. The List of Puzzles page also needed to redact the
+name of the Wyrmhole round until you met Wyrm again, which also needed to propagate to the navbar, and this
+all needed to be tied to story progress not solve progress because you are at 2 Wyrmhole solves both before
+and after talking to Wyrm...in short, there was an inordinate amount of work done for a section of Hunt
+most teams sped through in 3 minutes. :sadwyrm: was definitely the most used Wyrm emote in the server,
+used whenever "yet another Wyrm edgecase" was added.
+
+You might ask, was this all *really* necessary? And the answer is pretty much, yes, it was. Remember what
+I said earlier: the way you make a Hunt story work is by considering every aspect of Hunt and making
+it self-consistent with where solvers are in the story. I don't regret making this happen. (I do want to point out
+that this is case where choosing to repeat puzzles 3 months ago led to an extra ~10-20 hours of tech work down the line.)
+
+Aside from Wyrm stuff, I went through the spoilr code and cleaned up a lot of the interaction handling to
+fit our use case, and created triggers on interaction completion to fire updates to the story state,
+as well as Discord alerting for those story states. We realized that as implemented, story state had
+to contribute to puzzle deep, because after Reactivation, teams would either be before or after teammate arriving
+to their HQ. If unlocks were only based on puzzle solves, there'd be no way to distinguish before and after.
+Our travel time to team HQs would also vary, so a timer wouldn't work. So, the unlock system got modified
+to allow arbitrary story interactions to either add deep to a team, or create a minimum deep floor for a team.
+
+Tied to this was live updates of round pages without needing to refresh the site. This was originally
+labeled as a "nice to have" issue, but I raised the point that shutting down Mystery Hunt *does not* work
+if the site didn't live-update. Imagine that you talk to MATE, and the conversation stops, but
+the Factory is still brightly lit and everything is interactable until you refresh the page. Doesn't that
+really break the immersion? Ivan went "oh shoot you're right" and we immediately bumped it up to
+site blocking.
+
+Very quickly, I was sure that I wanted to make as few changes to existing code as possible. I was already
+making wide-reaching changes to support Wyrm edge cases and really did not want to add more complexity.
+The frontend gets its state initialized by an API call against the server that populates various
+React components, and we decided the easiest solution was to add a websocket-based trigger that resent
+the API call.
+
+"Wait, but do we need to worry about self DDOS-ing our site"?
+
+Assuming an entire 100-person team was watching the story, we'd get a quick burst of 100 requests, which
+we decided was fine. What would not be fine would be if every tab from that team fired at the same time,
+since that could look more like 3000 requests at once instead, so we added some logic to only live-update
+the tab when it became active.
+
+
+December 2022 - The End is Never The End is Never The End is Never
+-----------------------------------------------------------------------------------------------
+
+Near the end of Hunt, one of the team leads said Wyrm was intended to be the AI round with the least
+tech work involved. Bootes and Eye would have really weird answer checkers, and Conjuri was clearly
+going to be a lot of work, but Wyrm would mostly have normal puzzles.
+
+This...did not end up being true. Surprisingly Eye ended up as the most straightforward rounds, since its
+round art could mostly be shared with the Museum code. Sure, there was diacritic and language
+canonicalization hell, but it wasn't too bad. In comparison, Wyrm had all these subrounds, puzzles that
+were either metas or not depending where you were in the round, and five different sets of avatars that
+were unlocked in tandem with each round.
+
+IMAGES HERE
+
+Hunt was becoming more real - people outside teammate are talking about it, wow! Boy they sure seem excited.
+Meanwhile I was working longer and longer hours on Hunt, and it was accurate to describe it as work. My job
+has a cap on vacation hours, and I started taking days off to make sure I wouldn't hit the cap, but most
+of those days off were spent working full time on Hunt instead. It was feeling like I was always spending
+my time running for something, work or Hunt or this blog, and it had been a while since I stopped.
+
+There was a robot learning conference in New Zealand
+that I'd be going to in December. I let people on teammate know I would be travelling for work for a week,
+then taking a *real* vacation for another week. But before that:
+
+Walking Tour
+------------------------------------------------------------------------
+
+We'd actually started ideating this puzzle at a Bay Area puzzle writing meetup in October. It was a pretty
+interesting meetup, since the first thing we did was testsolve Hall of Innovation. We were given most of the
+feeders for the Factory Floor meta. After getting nowhere, we were
+told "by the way, your team has unlocked a new round". We did all of Hall of Innovation, then were told
+"Congrats! The Factory Floor meta isn't ready yet, come back in a few weeks". Really one of the most
+trippy testsolving experiences I've ever had. I'm pretty sure they were trying to test whether we would
+solve the Factory Floor meta without the Innovation answers or the Blueprint diagram. We didn't, which
+was good, but it's still wild that we were told to testsolve a meta, was given an entirely separate
+round of puzzles, and then were told we couldn't continue testsolving the meta until they'd finished
+doing more art.
+
+But! We are not here to talk about innovation in Museum design. We are here to talk about innovation
+in the Tower of Eye. A number of Eye puzzles were written at in-person meetups like this one, since
+they were harder to design and needed more manpower to brainstorm. Our group aimed to come up with
+a suitable Dutch puzzle. We considered many things: Dutch auctions, Double Dutch, something with
+tulips, etc. A teammate mentioned KLM Royal Dutch Airlines gives out Delft Blue house souvenirs that
+correspond to real locations in Amsterdam, bringing out the Delft Blue houses they owned. (We were at their
+place. They didn't, like, carry this around on a day-to-day basis.) There was a canonical list of KLM
+houses, with their number, year of release, and corresponding Amsterdam address on Wikipedia.
+For any puzzle constructor, having a canonical dataset is immedaite puzzle bait. That was how we arrived
+at a Google Maps runaround in Amsterdam, where the first a-ha was that you were in Amsterdam, and the
+second a-ha was figuring out KLM houses existed.
+
+
+Funnily enough, there was a puzzlehunt at the conference! The puzzlehunt was a student outreach event,
+but was open to everyone. It also...had real prizes? Like, $400 NZD (= $244 USD) for
+the first team that finished. I caught up with the organizers later. They said that the conference gave them a budget and
+most of the budget was turned into prize money. I did the puzzlehunt, and it had all the classic first-time
+constructor mistakes, but I had fun and ended up placing 3rd which was enough for a $100 NZD gift card that
+I used to subsidize my travel.
+
+The vacation really helped - I needed a few days to get into the headspace of "you have no obligations today",
+but once I did it was nice to have no stress about deadlines for a bit. Of course, I wasn't able to
+fully disengage from Hunt, and ended up idly working out design for the last puzzle I'd write
