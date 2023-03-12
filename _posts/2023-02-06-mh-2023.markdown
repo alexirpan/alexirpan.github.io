@@ -2528,7 +2528,55 @@ I don't think many teams made it all the way through the puzzle without relying 
 was unfortunate. There were differences between the paint-by-hand and mass produced version, and I would guess
 the coat of paint was less thick. Paint naturally flaked off when you messed with the strips (remember,
 you can't put a top coat since the water has to reach the hydrochromic layer for the puzzle to work), so a bunch
-of teams lost too much paint by the end to do it as intended. Hopefully the middle step was exciting enough
+of teams lost too much paint by the end to do it as intended. Hopefully the intermediate a-ha was exciting enough
 to make up for the deficits of material science. If a team asked for the answer after putting the weave
-underwater and putting effort into the last step, we were usually willing to just give them a picture of
-what the final basket should look like.
+underwater and putting effort into the last step, we just gave them a picture of what the final basket
+should look like.
+
+\* \* \*
+{: .centered }
+
+
+January 1-7, 2023 - An Exercise in Juggling
+------------------------------------------------------------------------------------------
+
+> There are decades where nothing happens; and there are weeks where decades happen.
+
+As we get closer to the start of Hunt, I'm going to need to segment things more.
+
+Puzzle postproduction and factchecking was continuing at a breakneck pace. I caught up on writing a bunch
+of solutions that I'd been putting off for a while - Bingo, 5D Barred Diagramless, etc. But after doing so,
+I did not do many more postprods or factchecks, because I had more important things to do with my time.
+
+At this point I am juggling three main action items.
+
+1. The interface for the Wyrmhole round. The art spec is that some rounds will have tessalated puzzle
+icons, and we need those icons to do something on-hover. We've already gone back and forth several times
+on how to balance the needs between showing off art and clarifying puzzle state, and had decided to
+only show puzzle title and answer on hover. But, this still required adding non-rectanguler non-convex puzzle
+icon regions that handle mouse events properly and work at multiple screen sizes.
+
+2. Load testing. I had been telling tech we should do load testing, since if chat went down the
+entire Hunt is in trouble. We all agreed it was important, but put it off until later. It was now later.
+
+3. Just, a bunch of other small miscellanous tech issues around unlock conditions, round display, etc. None
+were a lot of work, but there were a lot of them to do.
+
+Our planned implementation for the Wyrm round was to use SVGs to define clip paths, the same way that
+breakout jigsaw pieces worked. We did a few tests and it handled disconnected components just fine. However,
+when we retried it with more of the art done, the result was noticably laggier, especially on the fish layer.
+The problem was that if we had 7 puzzles in that layer, then each puzzle icon was a 1024 x 768 image. Sure, it
+got cut into a smaller area, but we still needed to send seven images of that size.
+
+We realized that if we hardcoded unlock order, then we wouldn't need to send seven separate images. Instead
+we could send one image for the entire round, with that image changing depending on round unlock state.
+The SVGs defining the cut region were tiny, and the highlighting CSS was also tiny, so that would make it
+exactly as fast as every other layer. It just complicated the backend a bit.
+
+As for the click regions, I told round artists what I needed, they sent back SVGs of cut out areas, and
+then I did some manual surgery to turn them into click regions compatible with the frontend code. It was
+incredibly tedious chasing down all the visual bugs, but I was responsible for the Wyrm tech implementation
+and somewhere along the way it had turned into my baby and I was going to be damned if we didn't pull it off.
+
+The number of pull requests getting sent and merged was rising at a ridiculous rate, and the reason was
+because we were doing a full hunt speedrun at the last team meeting before Mystery Hunt.
