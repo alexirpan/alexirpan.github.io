@@ -6,6 +6,7 @@ date:   2023-02-06 00:32:00 -0700
 
 *This post is XXX words long, and is riddled with spoilers about pretty much every aspect of MIT Mystery Hunt 2023. There are no spoiler bars. You have been warned.*
 
+<div class="shaded" markdown="1">
 Throughout the year, I've had many, many work conversations that go like this:
 
 Them: "What did you do this weekend?"
@@ -14,6 +15,7 @@ Me, internally: I worked 12 hours a day painting strips of wood with special pai
 a puzzle I can't talk about for another few months.
 
 Me: "Oh, not much."
+</div>
 
 I feel like every puzzle aficionado goes through at least one conversation where they try
 to explain what puzzlehunts are, and why they're fun, and this conversation goes poorly.

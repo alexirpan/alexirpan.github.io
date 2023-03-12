@@ -292,3 +292,12 @@ strong {
 audio.player {
     width: 66%;
 }
+
+.shaded {
+    background-color: $grey-color-light;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0.1px;  // Enough to get the paragraph's default margin to get the background applied to the margin
+    margin-bottom: 15px;  // Reproduce the margin that should exist
+}
