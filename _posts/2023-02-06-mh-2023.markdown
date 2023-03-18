@@ -2331,6 +2331,9 @@ one about alcohol to make the break-in for the 2nd part a bit easier.
 {: .centered }
 
 We finished writing the draft of Walking Tour the day before I started travelling.
+Although, on the flight over, I did spend a solid chunk of it working on the Appendix of the 5D Barred
+Diagramless solution.
+
 Funnily enough, there was a puzzlehunt at the conference! The puzzlehunt was a student outreach event,
 but was open to everyone. It also...had real prizes? Like, $400 NZD (= $244 USD) for
 the first team that finished. I caught up with the organizers later. They said that the conference gave them a budget and
@@ -2445,18 +2448,14 @@ of course the answer is going to be another puzzlehunt in-joke.
 \* \* \*
 {: .centered }
 
-Now, I said Bingo was the last puzzle I'd write for Hunt. *I lied.*
-
-MEME
-
-There was still one last thing to create.
-
+There were two other major things to work on before December. First was physical production of a puzzle
+that was a long time coming.
 
 Weaver
 ------------------------------------------------------------------------------------------------
 
 They say all good stories end where they began. Well, Weaver was one of
-the first feeder puzzles I helped brainstorm, and the last one I'd help make.
+the first feeder puzzles I helped brainstorm, and now it was one of the last I'd help make.
 
 "Make" is a very literal word here. Much of the puzzle idea and design was done by Brian. At most
 I pointed in the direction of weaving patterns and testsolved a few versions on paper. Meanwhile, Brian
@@ -2536,8 +2535,124 @@ should look like.
 \* \* \*
 {: .centered }
 
+The other major thing to work on was preparing the site for the 1st of many full hunt speedruns.
 
-January 1-7, 2023 - An Exercise in Juggling
+I think pretty much every Mystery Hunt does this at some point. The idea of a full hunt speedrun is not to
+testsolve the puzzles. It's to test the overall logic of the Hunt structure and site. Teams enter
+puzzle answers as soon as they unlock, and report any bugs they find in the unlock logic or site behavior.
+Our site had a ton of intermediate states, especially in the Puzzle Factory. Monitors in the Factory
+would display different content based on story progress (as measured by solve state and story interactions
+completed),
+the scrollable region within the Factory would rely on this as well, and puzzle display could be
+very conditional on solve progress as well. So, this step was extra important for us.
+
+I had implemented the unlock system by this point, so most issues were a matter of adjusting constants in
+a config file, AKA work that I shouldn't be doing. What needed more love was the internal HQ flow.
+A good way to view Hunt tech is that you spend the entire year designing processes and user experience
+flows to make running Hunt itself as smooth as possible. Running Hunt HQ is hectic and mentally draining, so
+you are trying to think up good tools now to reduce thinking later.
+
+The main parts I was working on were connecting tph-site email handling code with spoilr's email flow. This
+was a classic case of two codebases having two different functions that did similar things, and needing to
+pick which one to keep and removing uses of the other. Along the way, I helped fix some longstanding bugs
+in our interactions flow (roughly, "a team wants to do something with HQ", make sure it creates an
+action item that someone can follow-up on to coordinate with that team), and setting up predefined
+email templates for puzzles that relied on user submissions. This was also where we put standard hint
+emails, like the one to send if a team asked why the loading animation in the Museum never finished.
+
+The other big piece I worked on was the Wyrm round page.
+The plan for the Wyrm art was to use tessalated puzzle icons, where some rounds would have multiple
+copies of a puzzle icon to play up the fractal / self-similar aspect of the round. Tech-wise, our plan
+was to have each puzzle icon be the same size as the round art, all overlapping each other. Each
+of those icons would then have an SVG mask applied to its click region. Whenever the mouse entered
+a click region, we'd display that puzzle's info on-hover.
+
+This broke one of the rules we'd placed on round art: that you could tell at a glance which puzzles
+were solved and which were not without interacting with the page. This was a rule put in place
+to improve legibility of the hunt state.
+In the Museum round, this was done by showing the answer below a puzzle's title if completed.
+In the Puzzle Factory rounds, the highlight color of the puzzle icon would shift. A subtle change,
+but better than doing nothing.
+
+For Wyrm, it seemed bad to draw puzzle titles onto the round art, and it also seemed bad to highlight
+puzzles differently. Either of those changes would need to carry over when zooming between layers,
+and it felt like it would distract from the existing art, which was already really cool. So we decided
+to break that rule, just this once. There would be a list of puzzles at the bottom anyways.
+
+From an implementation standpoint, the main issue was that we needed to have very custom puzzle icon code
+to make this work. "Tessalating puzzle icons" means that every icon's click region is both non-convex
+and disconnected. Luckily SVGs are magic and handled this fine. Each icon was overlaid + displayed
+normally, and made 50% brighter on hover. However, this had a different issue. It made the round
+noticably laggier.
+
+What we hadn't realized was that if you implement the round this way, each puzzle icon in a layer is
+a full 1024 x 768 image, since the network (and rendering) cost is based on the size of the image
+before trimming it to the clickable region. When zooming into or out of a layer, pop-in was a lot more
+obvious.
+
+IMAGE
+
+Our solution was to send a single image combining all icons in the layer into a single image, to cut
+the download requirements down. Then instead of brightening icons on hover, we created a 50% transparent
+white overlay, cut to shape of the puzzle icon, that would appear on hover. This could be done
+entirely in CSS and would be much faster, without needing to define a separate `<img>` tag per puzzle.
+
+I am leaving out many random details about manual surgery of SVGs, fixing z-index ordering issues,
+and other tedious visual bugs that were boring enough that I don't even remember them. It was a lot,
+and maybe someone with more CSS knowledge should have done it, but somewhere along the way Wyrm
+had turned into my baby and I was going to be damned if we didn't pull it off.
+
+IMAGE
+
+(Move the speedrun introduction down to here, segue into it from the Wyrmhole side)
+
+Much like the in-person retreat, the full site speedrun had its own set of secret objectives.
+
+The first was breakout. We had used up our one fully unspoiled test at retreat, but there were still
+plenty of people who knew breakout existed, but did not know where it was or the mechanics of how to
+solve it. That was ready, we'd done most of the action items shortly after retreat.
+
+The second was Hall of Innovation. This had been testsolved multiple times by now, but every testsolve
+group had been given a copy of the site where only the Factory Floor and Hall of Innovation rounds
+were complete. Now that a lot more puzzles and art assets were complete, the gizmos on the Factory
+Floor would be disguised better, and this was a place to test that they were still discoverable.
+(By now, team exec had decided to not do a structured full-hunt testsolve. There were already more
+pending testsolves than we had capacity to test, and coordinating everyone to meet at once would itself
+take time, so people were instead instructed to form groups and start testsolving any open puzzle
+whenever they were free.)
+
+The third and last secret objective was Wyrm backsolving. Long ago, we said we would test the backsolve
+step in a full Hunt testsolve. With that off the table, it wasn't clear where else we'd test the Wyrm
+backsolving. There was some miscommunication between Wyrm authors and EICs, where they thought
+the 4th layer would start with Collage shown as the meta immediately on unlock. After clarifying that
+wasn't how the round would work, it got added into the speedrun. But the more specific consequence
+was that a bunch of Wyrm art and tech deadlines got moved from "days before Hunt" to "2 weeks before Hunt".
+I'm very grateful to the artists of the Wyrm layers for getting art done for the layers so quickly after
+we told them the deadlines had moved up.
+
+The speedrun got up to Hall of Innovation. I recused myself to go eat dinner, and came back to my speedrun
+team in the middle of solving the round. They had found the gizmos that changed the puzzles, and submitted correct
+answers to some of them, and that was considered "good enough" to fastforward them to the next part of the
+speedrun.
+
+(This is an aspect of writing hunts that can be a bit disappointing. Your teammates write these really cool
+puzzles that you get to testsolve, but you don't get to testsolve most of them. Everyone testsolving
+all puzzles is super inefficient, but most people need to be spoiled on puzzles to prepare for writing hint
+responses and answering emails.)
+
+The speedrun made it up to the last layer of Wyrm, and we told them "this is now a testsolve, please figure out
+what to do". This was marked as the last part of the speedrun we'd do. The speedrun had run late, and had already
+surfaced a bunch of site issues that we needed to fix. Between all three teams, there were only 7-8 people who
+were unspoiled on the Wyrm metameta. Since we'd precommitted to only doing one test of the backsolving, we
+decided it was okay to pool all the unspoiled testsolvers into one voice call to let them figure it out.
+
+Two people in the spoiled group set privste messages about noticing the looping puzzle in the art, and the unspoiled
+group ended up looking at Collage due to noticing the triangle pattern in all the previous metas. They only
+noticed the looping art after backsolving ("oh god, we're dumb"), but I was mostly relieved that all the parts
+of breakout and Wyrmhole had tested the way we wanted.
+
+
+January 1-8, 2023 - An Exercise in Juggling
 ------------------------------------------------------------------------------------------
 
 > There are decades where nothing happens; and there are weeks where decades happen.
@@ -2548,35 +2663,583 @@ Puzzle postproduction and factchecking was continuing at a breakneck pace. I cau
 of solutions that I'd been putting off for a while - Bingo, 5D Barred Diagramless, etc. But after doing so,
 I did not do many more postprods or factchecks, because I had more important things to do with my time.
 
-At this point I am juggling three main action items.
+At this point I am just trying to go through the copious number of tech issues surfaced during the
+speedrun. "Wyrm should save its zoom level", "I hit a 404 on this link that showed up",
+"notifications are going off-screen", and so on. Each issue was prioritized and we went down them in order.
+Meanwhile puzzle postprods and factchecks are getting merged in at an absurd rate. Thank goodness for
+auto-postproduction, because boy were there just a lot of words words words to copy into code.
 
-1. The interface for the Wyrmhole round. The art spec is that some rounds will have tessalated puzzle
-icons, and we need those icons to do something on-hover. We've already gone back and forth several times
-on how to balance the needs between showing off art and clarifying puzzle state, and had decided to
-only show puzzle title and answer on hover. But, this still required adding non-rectanguler non-convex puzzle
-icon regions that handle mouse events properly and work at multiple screen sizes.
+This was all in preparation of a second full hunt speedrun, to happen the last weekend before Mystery Hunt.
+Not everyone was free for the first one (given it was in the middle of the holidays), and it wouldn't
+hurt to have another round of testing.
+For my part, I stopped working on the tech issues IDed last time to do another important bit of work: load testing.
 
-2. Load testing. I had been telling tech we should do load testing, since if chat went down the
-entire Hunt is in trouble. We all agreed it was important, but put it off until later. It was now later.
+This would be the 3rd time I'd done load testing for a puzzlehunt. Puzzlehunts are not *that* big, if anything
+they're quite small, but load is very bursty at the start of Hunt and POST requests are coming in all the time.
+In my experience, I've seen two classes of errors.
 
-3. Just, a bunch of other small miscellanous tech issues around unlock conditions, round display, etc. None
-were a lot of work, but there were a lot of them to do.
+* Your HTTP handlers are overloaded. In this scenario, requests to the server will be replied to very slowly,
+but the server and database will mostly not go down, it'll just be laggy. This is usually only a problem
+at the start of Hunt, and you can either ignore it or just make the server CPUs more beefy.
+* Your websocket handlers are overloaded. The websocket connection layer in tph-site is mediated by the database,
+and having too many websockets open at once causes the number of active database connections to rise. If the
+database connections go past a max limit, any DB query will fail and the entire site stops working. This
+is a much worse problem, because it's a configuration problem, not a server-size problem.
 
-Our planned implementation for the Wyrm round was to use SVGs to define clip paths, the same way that
-breakout jigsaw pieces worked. We did a few tests and it handled disconnected components just fine. However,
-when we retried it with more of the art done, the result was noticably laggier, especially on the fish layer.
-The problem was that if we had 7 puzzles in that layer, then each puzzle icon was a 1024 x 768 image. Sure, it
-got cut into a smaller area, but we still needed to send seven images of that size.
+The last two times, I load tested using [Locust](https://locust.io/), since there was example code
+in the Puzzlehunt CMU codebase. This time, I decided to switch to [k6](https://k6.io/), because I was most
+concerned about the websockets for chatting with MATE. The documentation for testing websockets in k6 was
+a lot more complete, and I had example code from a Huntinality script. k6 also describes user behavior in
+Javascript, and although I am more of a Python fan, the frontend of our site was in React, so there was
+less work needed to translate our site's code into load testing calls.
 
-We realized that if we hardcoded unlock order, then we wouldn't need to send seven separate images. Instead
-we could send one image for the entire round, with that image changing depending on round unlock state.
-The SVGs defining the cut region were tiny, and the highlighting CSS was also tiny, so that would make it
-exactly as fast as every other layer. It just complicated the backend a bit.
+Broadly, the way all these load testing libraries work (Locust, k6, etc.) is that you define the access
+patterns of a hypothetical user. "This user will login, wait a few seconds, open the list of puzzles,
+open a random puzzle, and submit a guess." Something like that. They will then provide utility functions
+that let you spin up users for some period of time, and provide statistics at the end. The main work for
+loadtesting is in setting up the mock requests.
 
-As for the click regions, I told round artists what I needed, they sent back SVGs of cut out areas, and
-then I did some manual surgery to turn them into click regions compatible with the frontend code. It was
-incredibly tedious chasing down all the visual bugs, but I was responsible for the Wyrm tech implementation
-and somewhere along the way it had turned into my baby and I was going to be damned if we didn't pull it off.
+The thing we were most concerned about for loadtesting was the collaborative jigsaw for breakout. Most
+teams would go through it during Hunt, the collaborative cursors were going to send a lot of websocket
+messages to sync cursor positions, and we wanted to make sure it wasn't too laggy. I set up some mock
+behaviors for chat, Collage, and the breakout jigsaw. The chat users would connect to MATE and send
+2 messages per second. The Collage users would load the puzzle, send 1 guess per second via HTTP, and verify
+receiving team-wide updates on recent guesses via websockets. Last, the breakout users
+would load the jigsaw, and attempt to move a random piece to a random location every 0.3 seconds.
+I verified that the proof of concept worked for simulating 1 user locally.
 
-The number of pull requests getting sent and merged was rising at a ridiculous rate, and the reason was
-because we were doing a full hunt speedrun at the last team meeting before Mystery Hunt.
+VIDEO HERE
+
+The load test scaled up to 10 users, then 25 users, at which point we noticed some slowdown. This was
+expected though, our cloud machine was still small scale and we hadn't provisioned the full-size Hunt
+machine yet.
+
+For this speedrun iteration, a small group of people acted as a mock HQ, and some puzzle answers would say
+"send a hint to get the answer", "request a physical puzzle pickup to get the answer", "oops this puzzle
+is impossible, redeem a free answer". This was to get all those aspects of site behavior tested as well.
+
+Once again, there was a secret objective: we would do a deploy to the site during the speedrun, to measure
+the length of the deploy when there were active users, and the amount of interruption from the solver's
+perspective. There was also an extra secret objective: load testing.
+I'm pretty sure the only person who knew I was planning to do this was Ivan.
+
+![The conspiracy](/public/mh-2023/50test.png)
+{: .centered }
+
+Essentially, I was concerned that our tech-only tests were a good but insufficient test of what a DDOSed
+site would feel like. So I would run a 50 user load test in secret, and take it down only if unaware
+testsolves complained.
+
+I noticed some slowdown on entering guesses on the site, but nothing major. However, as teams solved the loading
+puzzle and hit the collaborative jigsaw, the lag got a lot worse. It was to the point where one person would
+drag a piece, and it wouldn't show up on anyone else's screen until several seconds later.
+I confirmed I saw the same thing, then killed the load test. It was quite a sight to see 20 jigsaw pieces
+all snap into place as the other load went away.
+
+![Load test stats](/public/mh-2023/loadteststats.png)
+{: .centered }
+
+Brian was of the opinion that the stats would look much better if CPU load weren't at 100%, but he'd also take
+a look at breakout and Collage to see if there were easy performance wins. He found some places to batch
+websocket updates and add more caching, we tried another run of 50 users, and it did look better - but we
+made a note to try again with the full-size machine.
+
+
+January 9, 2023 - Four
+------------------------------------------------------------------------------------
+
+I had taken (another) week off work, but this time it was more justified. It's the week before Hunt,
+even when I am not writing Hunt I can't get much done those days. I left the Bay Area in the morning, to
+land in Boston in the evening.
+
+I was still in the mode of "optimizing how I use my time", so I prepared a bunch of work that I could
+do on the plane.
+
+It turned out my plane had in-flight WiFi (praise JetBlue). I had trouble connecting to it from my laptop
+for whatever reason, but I got my phone connected just fine, and ended up spending my flight doing code
+reviews from my phone. As I tapped out a comment on my 8th code review of the flight, a part of me
+acknowledged that trying to squeeze in Hunt to this many aspects of my life was really not a healthy
+thing to do.
+
+For the week before Hunt, teammate would have an informal HQ in an AirBnB we booked near campus. Around
+half the team would stay there and the other half had booked hotels, had nearby friends, etc. Our
+on-campus HQ would not be available until the Friday of Hunt, although we did get a classroom booked
+the Thursday before. When I landed, I asked for directions to the AirBnB, and was told the best balance
+of money and time was taking the Logan Express.
+
+So, I stood at the Logan Express stop, checking directions on my phone, and wondering why it claimed
+taking public transit would take 5 hours. A few searches later, I found that the last Logan Express
+of the day had left 10 minutes ago.
+
+Shit.
+
+Luckily calling a rideshare wasn't too bad, and I got there in time to see Ivan complain about
+responsive CSS and "why can't all computers have the same size screen". The Wyrm round art had a hardcoded
+width/height that didn't fit on everyone's computer during the speedrun, and I had pawned off
+fixing that to Ivan so I could focus on connecting Conjuri, Terminal, and other interactives puzzles
+to my load testing script. For me this was the best trade deal in history, I will take infrastructure
+over the complexities of frontend any day of the week, but I did feel bad about it.
+
+I finished writing up the appendix that I had worked on during the flight, and sent it off
+to postproduction, with the note that it would be really long. Then I went back to my hotel to
+sleep.
+
+
+January 10, 2023 - Three
+-----------------------------------------------------------------------------------
+
+This day was a bit quiet, since not everyone had flown in yet. Most of my time was spent
+addressing factcheck feedback and revising puzzles in turn.
+
+A few months back, we had set up Puzzup to auto-generate a factcheck template spreadsheet for each
+puzzle. Factcheckers would fill it out and it would auto-generate a comment in Puzzup when done.
+I'm not sure how helpful the comment was, we hit message length limits often, but the spreadsheet
+definitely helped!
+
+The complexity in how we displayed puzzles on the site definitely contributed to difficulty
+of factchecking and postproduction. I think this could be useful, so I'm actually going to just
+directly pull out the list of questions in our factchecking template.
+
+Instructions: Fill out this checklist. Completeness and Correctness are the most important points to check
+carefully. If it does not apply, note it can skipped.
+
+Completeness and Correctness
+
+* With the help of the solution, I solved the puzzle 100% (all clues, no nutrimatic, etc)
+* By using the solution, I did not need to think very hard to solve the puzzle.
+* If there is "uniqueness" invoked in the puzzle, uniqueness is checked. e.g.. uniqueness in a logic puzzle, answers to clues, etc.
+* Make sure facts are still true. **List info that could change on or before 1/13/2023 under Other Findings and set the status to TIME.**
+
+Puzzle
+
+* Copy to clipboard matches puzzle in both Firefox and Chrome
+* Second person (if there's any person at all), present tense narration
+* Flavortext is italicized. Non-puzzle info (e.g. controls, accessibility, and contacting HQ) should come with the "info icon" (Post-hunt note: this
+is the specific "i in a circle" icon that can be seen on Museum Rules)
+* Interactive components work for the intended solve path, doesn't crash on incorrect/malformed inputs, any shared team state is tested
+* No unintended source code leakage (inspecting code doesn't spoil puzzle)
+
+Display
+
+* Puzzle is displayed (post-prodded) correctly and tested on small/large window sizes, interactions tested on both Firefox and Chrome (or note which browser was tested)
+* Puzzle is displayed (post-prodded) correctly on a mobile device and fully navigable, if interactive, via touch
+* Act 1 only: Puzzle looks correct in the void, i.e. no white on light text (Post-hunt note: after solving Reactivation, teammate shuts down Mystery Hunt. Museum puzzles could still be accessed from the Puzzle Factory,
+but were put in "dark mode" to signify that they were in a void "outside of puzzlehunt space", so to speak. Sometimes a puzzle would hardcode text colors that worked in light mode, but not dark mode)
+
+
+Accessibility
+
+* Do all images with puzzle content have alt text? If there's text in the image, can it be typeset with CSS instead of an image?
+* Is the puzzle color-blind friendly? Does it rely on colors or can they be replaced with symbols or text?
+* Do audio clips have transcripts when possible? Do videos have synchronized subtitles?
+* For interactive puzzles, does it require very fine motor control? Is there an undo button if misclicks or typos will cause solvers to lose large amounts of work?
+* Does the puzzle use inclusive language? If the puzzle talks about people, does it contain a representative sample (gender, race, age, etc.)?
+* Print preview looks reasonable (can see all parts of crossword, clues, no unnecessary black backgrounds) on both Firefox and Chrome
+
+Solution
+
+* The answer is in Answerize format (bold + caps + monospace). All cluephrases are caps (not bold or monospace unless necessary).
+* If puzzle involves images/visuals, they are included in the solution
+* Solution is in first person plural ("we", "our", etc). It does not use terms like "the solver", etc
+* I've reported typos and grammatical mistakes in the solution.
+* Solution is displayed (post-prodded) correctly.
+
+Depending on the puzzle, there could be up to four different "versions" of it to check (the displayed puzzle,
+its display in dark mode, its display in print preview, and its copy-to-clipboard). I think almost every puzzle I helped on failed
+its first round of factchecking, aside from silly ones like the Wyrm backsolve puzzles. So a lot of my time was
+spent fixing CSS issues or adjusting clues.
+
+When looking for suitable background music, I learned that Demetori had released a new album just 2 weeks prior.
+(They're a Touhou circle and one of my favorite music groups of all time, mostly progressive metal.) It was pretty good
+and I spent most of the week playing it on repeat. The Youtube comments taught me facts no one should know ("corgi" is
+edit distance 2 away from "orgy"), but I couldn't help thinking about the album's closer - ["It's Better to Burn Out Than To Fade Away"](https://www.youtube.com/watch?v=VCHcSX3SX4Y).
+It seemed like a fitting sentiment for the final push towards Hunt.
+
+
+January 11, 2023 - Two
+------------------------------------------------------------------------------------
+
+The tech work continues!
+
+There were a rather worrying number of features left to implement, including fixing print previews,
+cleaning up more gaps in the interactions flow, and adding a Contact HQ + puzzle feedback flow.
+
+If we were not implementing it so late, Contact HQ would have been done properly, but we were doing
+it late and all bets were off on code cleanliness. Internally the Contact HQ page is implemented
+by having an internal, unsolvable puzzle, that does not show up in the list of all puzzles,
+starts with hints unlocked, and has no cap on number of open hints. Is this awful? Absolutely. But,
+it was the fastest thing to set up and we were at the point where everything needed to be speed.
+
+Speaking of speed, I was testing the speed on Conjuri under load. I had zero idea how the game worked,
+but got some pointers from the main Conjuri devs for how to start games and move within them. The
+load test was to login, connect to a Conjuri slot, then send a bunch of move commands (10/second,
+roughly the speed they fire if someone holds down the arrow key). Along the way I found a small security
+flaw that could have allowed teleporting anywhere in the map, including past locked doors (oops).
+My load test script would sometimes enter monster fights, and then immediately get stuck because
+you can't enter move commands in the middle of a fight, but I decided this was fine. The goal
+was to test load, and the server still had to respond to move commands even if you couldn't do
+them, so it was still simulating load of *some* kind.
+
+Brian had provisioned the full-size hunt server, and I hit it with 250 users. This immediately
+caused errors, but the site seemed fine, and the error message codes I was seeing looked
+more like networking issues. Having done this before, I asked if our AirBnB WiFi could handle
+250 fake people at once, and then immediately answered my own question "no of course it can't
+you should have remembered this the first time". (When loadtesting Puzzles are Magic, I spent
+two days trying to fix a bug that didn't exist, until I tried running load tests from
+my work WiFi instead of my puny home WiFi.)
+
+A teammate had a spare DigitalOcean machine they used for personal stuff, and we moved load
+testing there. The new 250 user test went fine. Great! Let's scale that up to 500 users.
+The CPU load looked fine, but we started seeing real site errors, ones that were breaking the site
+for people factchecking puzzles.
+
+Oh dear. I left it up for a bit so we could collect more stats, then turned it down. The errors
+were identical to the ones seen when I loadtested Playmate 3 years back, caused by having too
+many open database connections. We added back the same solution of using [PgBouncer](https://www.pgbouncer.org/)
+to do connection pooling, and swapping our Redis layer in Django Channels to a RedisPubSubChannelLayer.
+While Brain looks into how to do this, Alex Gotsis comes by with some news.
+
+He explains that the site sends us an email whenever we have a server error. Sent emails
+create and save an `Email` object to our database, to integrate with our email handlers later.
+So, suppose your site has no database connections left. It'll have an error, and the server will send an email.
+The Email object tries to get saved, but fails since the database has no connections left. So the site
+has an error, and will send an email. That email will try to get saved to the database, and fail, so the server
+will send an email. Which...you get the idea.
+
+I said "Oh no" and he said "Don't worry I'm fixing this". So, that got fixed and we removed a
+few thousand emails we spammed to ourselves. Phew.
+
+After all the websocket improvements were in, I reran the loadtest and the site no longer
+broke at 500 users. The Django Channels swap also appeared to cut our CPU usage by 3x, which
+was cool. Between both of those, I was willing to declare the site battle-ready.
+
+The one issue flagged was on Conjuri. All the Conjuri instances were running in the same
+server as the rest of the Hunt. The codebase had evolved that way and we did not have the
+time to both refactor it to a separate machine and adjust our deploys accordingly.
+I gave my opinion that 500 users continually submitting guesses and moving 10 times per second
+in Conjuri was likely a big overestimation. I was pretty sure our true load would be lower,
+and Conjuri wouldn't be seen until late Saturday or Sunday, which would have less load than
+Friday. That sounded fine to Conjuri devs - or at least, the TODOs on fixing game bugs were
+more obviously important than hardening against load.
+
+
+
+January 12, 2023 - One
+-------------------------------------------------------
+
+Thursday was the first day that we had a room on-campus. We were also
+starting to spot people who definitely-looked-like-Mystery-Hunters
+in nearby hotels.
+
+We first had a too-long conversation about whether we should draw the blinds on
+the windows for our room before we went into an incredibly spoiler-heavy
+presentation, and decided that no that was overkill. We then had a presentation
+about the story of Hunt, structure of the rounds, and different responsibilities
+that would need to be filled to man HQ. The previous day, a spreadsheet
+had been shared, and people were asked to fill it out, but today that request
+was now a demand. "Sign up for a slot or we will *find* a slot for you."
+
+I checked and had been pre-signed up for "tech on-call / contact", so problem solved.
+
+We then had a training session for how to use the hint and interactions
+interface, which I mostly tuned out because I'd been working on that flow for a while. The remaining time was allocated for people to finish up any
+last minute tasks they had.
+
+I went through the list of tech TODOs, which was now decidedly at the point
+where we knew we would not finish all of it and would need to decide what we
+wouldn't do. Solve sounds - cut. Easy way to see feedback sent during Hunt - cut.
+
+This made some people on teammate quite sad, but there were just too many other things. "We don't have bandwidth to do this. If you have bandwidth to help on tech, we'd prefer working on these prioritized issues, but if you implement a deprioritized feature and send a PR someone will probably review it."
+And that's why the Hunt has solve sounds, someone decided to do just that.
+
+To more directly hit the broader point, Mystery Hunt is an enormous thing.
+It is big enough that even individual people making it are not aware of
+all the things going on. Nor should they be, the coordination overhead
+would be too big if they were. But, the natural consequence of this is
+that sometimes people's beliefs of what is getting done differs from what's
+actually getting done. Tech is just one example of this. I
+got passed copy of the MATE tutorial we'd link between kickoff and
+puzzle release, and ended up rewriting a bunch of it because half of the
+example commands didn't pass our chat parser.
+
+Still, this is approximately the level of chaos I expected the day before Mystery
+Hunt, so I wasn't too concerned. Logistics got ironed out, more bugs got
+fixed, and the site was progressing well. We started organizing our tech on-call
+shifts, and I signed up for the 1 AM - 7 AM shift originally, before reconsidering and asking if I could take the one ending at 1 AM instead.
+
+As the last action item before Hunt, we did a "slowrun", where instead of solving
+puzzles as fast as possible, a group of us would solve puzzles one at a time,
+pause at every meaningful state change, and verify the site's behavior was
+consistent. The original target was 7 PM, but it got pushed back, and back,
+and back...
+
+The delay was bad enough that we were going to lose our room booking. It was going
+to be a long night. Everyone not involved in verifying the slowrun was told
+to get some sleep before Hunt, while the rest of us headed towards the AirBnB
+HQ.
+
+The slowrun officially started around midnight, and over the course
+of several hours we proofread all the site pages, checked that puzzles and round
+pages unlocked properly, that the Puzzle Factory was gated properly, that
+story updates and interactions appeared right when metas were solved, and so
+on. We also checked display issues similar to the factcheck spreadsheet -
+how the site worked at multiple screen sizes, were the Puzzle Factory monitors
+swapping properly as metametas (feature requests) were unlocked, etc. We *also*
+checked the logic that puzzles would start internally unlocking 1 hour before
+puzzle release (to reduce server load), while still being blocked from loading.
+We merged in some final visual touches as we went along the slowrun, and by the time
+we finished it was around 8 AM and kickoff was in a few hours.
+
+A few people started heading right to campus to prepare for kickoff, while I looked
+for a corner to take an hour long nap before Hunt got started. I really should have just
+gone to bed, but it's the first Mystery Hunt kickoff after two years of remote Hunts.
+Proper sleep can wait.
+
+
+Friday of Hunt
+-------------------------------------------------------------------------------------
+
+I arrived at Kresge a bit out of it, but intact enough to say hi to people lining up outside.
+I didn't have too much to say - talking about Hunt is something you do after, not before.
+
+Everyone was to wear their "Museum of Interesting Things" staff T-shirt. MATE was printed
+on the back, but we would only reveal this when MATE was revealed at kickoff. Basically
+this meant everyone needed to wear a long-sleeve shirt or hoodie that would hide the back.
+I helped usher people into the auditorium, and got the sense it was about as full as
+previous years, which I wasn't quite expecting. I figured there'd be less presence due to
+COVID concerns, but it didn't look that way to me.
+
+I saw kickoff for the first time with everyone else; I'd been too caught up in tech to
+see any of the rehearsals. The stage was decorated with a bunch of random decorations
+people owned or bought from Home Depot while getting construction supplies for set
+creation. Based on all the people taking pictures after kickoff, it looked like a few hunters were trying
+to image ID the decorations, just in case they were a puzzle.
+
+Now, we unfortunately did not have our official HQ in Building 10 booked at the start of Hunt.
+It would be available later that afternoon, so for now we'd be in two different spare rooms
+until then. This made the start of Hunt a bit more complicated, just more communication
+hurdles when people aren't in the same place.
+
+Once we got to our rooms, we had a fun time trying to connect to the Wi-Fi. MIT had
+planned a wireless network change to happen the Friday of Hunt. We were aware of this
+beforehand, but MIT Puzzle Club both did not have the cachet to delay the change, and
+was also assurred it would be fine.
+
+Well, it wasn't totally fine, because two things happened.
+
+* Anyone who'd connected to campus Wi-Fi before the transfer (i.e. literally everyone on teammate)
+could not connect until they'd told their devices to forget and re-remember the Wi-Fi
+network.
+* Discord calls that worked yesterday didn't work today. We were able to figure out it
+was a port issue - Discord uses a random UDP port from 50000-65535 for voice calls
+and the entire range was blocked on the guest Wi-Fi.
+
+Separately from that, I had the fun time of needing to enter a code that was sent to my phone
+or email to get my laptop connected, when my phone had no cell signal and I had no Wi-Fi signal.
+I was lucky enough to suddenly get a tiny bit of signal, and successfully bootstrapped from that to
+full Wi-Fi connection.
+
+People on the team started poking around the hunt HQ, and immediately found a bunch of errors
+and exceptions as they clicked internal links. This was disappointing, but not too surprising, since our speedruns
+and slowrun were all very focused on the solver experience, and didn't exercise our HQ backend
+to nearly the same level of scrutiny. Tech immediately starts preparing "hour one" patches, but
+they're definitely not getting deployed until after teams have solved for a bit.
+
+Puzzles go live! And no guesses come in for a bit, which made us paranoid that our site had not
+released puzzles properly. Then some guesses started coming in, and we breathed a sigh of relief.
+T minus...we'll find out, until the coin was found.
+
+I realize I have yet to describe what our Hunt weekend organization looks like. Here are the rough
+list of camps:
+
+* **Huntcomm:** People keeping an overall eye on the pulse of Hunt, comparing solve progress against
+different forecasts, and in charge of decisions for deciding on interventions to either speed up
+or slow down Hunt. Mostly made of people on hunt exec that are spoiled + have context on all the
+puzzles.
+* **Tech:** Self-explanatory. On-call to answer any questions about the site's functionality, from
+either solvers or HQ members.
+* **Physical Puzzles:** Handles giving physical puzzles to teams that ask for them.
+* **Phone:** Answer call-ins are gone, but we have a phone number! In charge of answering the phone.
+Duties were merged with other roles later in Hunt.
+* **Dispatcher:** Tracking point of contacts for tech, huntcomm, etc. The person to talk to if you
+are free and don't know what you can do to help run Hunt.
+* **Runners:** In charge of moving things between rooms. Generally not a dedicated role and only
+important at some hours of the day.
+* **Logistics:** Similar to dispatcher, but not the same. Roughly, dispatcher knows where everyone
+is, and logistics knows what those people are doing.
+* **Hints, Contact HQ, Email, etc:** Basically, everyone else. In charge of replying to hints, forwarding
+tricky emails to people with the right context, etc.
+
+These are not rigid roles, and very often the work to be done is quite fluid and picked up by
+whoever is free.
+
+Now, remember me mentioning we're split between two different rooms? This means that tech is half-split
+between rooms, huntcomm is partly split, and so on. Which makes things extra spicy when teammates
+start reporting they're having trouble loading the site.
+
+We try confirming whether this is an admin-only issue or a site-wide issue, and it starts to look like
+a site wide issue. Then the phone starts ringing. The room goes quiet, and someone picks up.
+
+"Hello?"
+
+"Yes, we know the site is down. We're working on it."
+
+("Do we have an ETA for a fix?" "No, but tell them to avoid spamming the site.")
+
+"For now, please avoid refreshing the site too much, that'll make it worse."
+
+\*click\*
+
+Before Hunt, a logistics member told me a story. They went to MIT Puzzle Club's storage, and found 10 phones.
+One of them was the correct phone for our phone number. The other nine were not. It took them a bit to figure
+out which phone was the correct one. Good to know that wasn't all in vain.
+
+(Why are there 10 phones in storage for Mystery Hunt? Well back when answers were called-in, phone calls
+would go in and get multiplexed across the phones to handle simultaneous answer submissions. I guess teams
+have always kept the phones, because why throw them away?)
+
+It does not take long for us to figure out why the site went down despite our load testing. The default
+behavior in tph-site is for all tabs from the same browser to connect to the same websocket. This is how
+live updates to one tab auto-apply to all other tabs. Ages and ages ago, we changed this default to
+do one websocket per tab, so that different tabs could persist different chat histories when talking to
+MATE.
+
+The load testing script modeled a user as opening one tab, spamming 10 requests per second for a bit, then closing
+the tab. This is not the right model. The correct model is one user opening 100 tabs, then spamming many fewer
+requests in just one of the tabs. So we are way over our margin of error on number of active Websocket connections.
+After checking CPU usage, we are way under our server's CPU limit, so it looks like we can fix it by just
+multiplying all our Websocket handling numbers by a factor of 10. If that causes CPU issues, we'll handle
+those later.
+
+The change goes in, we start deploying, and the site comes back up and stays back up. Phew, crisis avoided.
+
+(I just want to briefly point out the counterfactual, where if we hadn't made the websocket optimizations and
+email fix we did, we might have had much worse problems.)
+
+I didn't see any projections of Hunt time, but it did seem like people were going through the first round
+pretty slowly. Hints were originally planned to be opened in the evening, but huntcomm recommended we opened
+them earlier. The way hints worked in our Hunt was that they would open when it was both past the global
+hint release time, and a puzzle had been solved by at least N teams. The default setting for N was 25,
+but it was always planned to change based on how the Hunt went. It was still early enough in Hunt that
+teams had not separated much in number of solves, and releasing with the default N would have opened
+hints on everything, which seemed like too much.
+
+In spoilr, a bunch of hunt constants (including the ones for hint release) are saved in the database,
+rather than in the code. This allows anyone with admin access to adjust the hint timing without needing
+to redeploy the site. As the tech point of contact for the half of HQ I was in, I was asked to weigh in
+on the plan of changing N to whatever value would make hints unlock for the first 3 puzzles of the Hunt,
+which was N = 70 at the time.
+
+I told them that yes, this would work, but if they did this, huntcomm would be signing up to continually
+adjust N throughout the Hunt. Was that fine?
+
+"Yes."
+
+Okay then! But then the logistics person in the room immediately pointed out that we were about to switch
+rooms to our official HQ location. Releasing hints at the same time as everyone moving rooms was a bad,
+*bad* idea. Huntcomm really wanted to release hints *now*, so we pushed moving HQ back by an hour
+and opened hints instead. It was a gamble that no one would actually kick us out right when our room booking
+ended, and that was correct.
+
+As hints came in, it exposed a few more bugs in our HQ pages for hint management, which I started looking into.
+We also started getting our first emails from teams asking why puzzles were taking forever to load, which
+we started responding to with "Thanks for reporting this, we'll look into it. It's puzzling why it's taking
+so long to load." And then we got our first official breakout! Hooray! As the Puzzle Factory reveal cascaded,
+we started cleaning up to move to the next room.
+
+I was asked if I could carry the soda for Fountain (LINK). "It's in Matt.", they said, as they ran away.
+
+"Sorry, what?"
+
+We had named our temporary storage rooms Matt and Emma, and I did not know where either of them were.
+Luckily someone else knew the way and after doing a few trips we'd moved everything to our building 10
+HQ. With that, it was back to hint writing.
+
+Well, for most people, it was back to hint writing. A few teams were starting to email us that the
+collaborative jigsaw puzzle was stuck for them, with one piece missing, and we weren't able to
+reproduce the issue. I suspect there's some screen resizing edgecase that lets people drag the piece
+just far enough out of bounds to be unclickable, but we never figured it out, and we didn't have an easy
+way to reset the position of a single piece because, well, we never thought we would need it. The
+best solution we came up with was to skip the team past the jigsaw, by copying the
+jigsaw state from the admin team, and manually adjust the story state to the one marking Factory
+discovery.
+
+We would get a new "stuck on jigsaw" email around every 2-3 hours, so I decided to write a
+quick playbook for what to do (while everyone who knew the jigsaw backend was still awake).
+We also started getting emails reporting some of the known issues that we'd deprioritized in
+the slowrun - no volume slider on solve notifications, accessibility issues in navigating the
+Puzzle Factory rounds, and so on. I alternated between replying to the emails acknowledging
+the problem and asking other web devs how fixable the problems were. We did get a volume slider
+added during Hunt, and fixed the wild CSS bug that was causing the Puzzle Factory page to
+ignore arrow key inputs, but it turned out fixing the accessibilty bug introduced a new bug
+that broke print previews for all the Factory pages. (That bug we didn't learn about until
+reading devjoe's writeup a week after Hunt. In general, if people see a site bug in future
+Hunts, please email HQ! If we'd known about it during Hunt we could have fixed it in 15 minutes.)
+
+The first event happened and it sounded like solvers had fun. Huntcomm was still concerned about
+the pace of hunt, so they decided to give extra event rewards for this event, and allow remote
+teams to solve the event too. They asked if there was a way to see how many event rewards a team
+had used, to see if teams were using them or hoarding them, and I realized this wasn't well
+exposed on any of the HQ pages. I made a mental note to address this sometime.
+
+After I got dinner, Alex Gotsis came by, asked me how much sleep I'd gotten ("...1 hour?"),
+and basically relieved me of duty and told me to leave. I got back to my hotel room, but
+decided to set up Discord alerts whenever an event reward was used or puzzle feedback was
+sent.
+
+![Me failing to sleep](/public/mh-2023/fridaysleep.png)
+{: .centered }
+
+
+Saturday of Hunt
+---------------------------------------------------------------------------------
+
+Sleeping so early meant I woke up much earlier in the morning than usual, and I arrived at
+a mostly empty HQ. I caught up on overnight progress, then got back to answering hints.
+
+In the Palindrome AMA, they'd mentioned the initially unlocked puzzles made up around 30% of
+all hint requests, and that seemed accurate to us as well. When running a Hunt, it is very
+common to get new teams that essentially want to be handholded through the entire solve. Of
+course, we will answer the hints they send in, we're just trying to make sure those teams have
+fun, but it can be a bit tiring when a team sends a hint every time they solve a new cryptic in
+Inscryption or ID a new rule in Museum Rules. Luckily, there is a natural "get better with experience"
+phenomenon where handling hints on those puzzles gets a lot faster over time.
+
+Things were progressing, albeit more slowly than anyone had expected. Someone started drinking
+some of the soda set aside for Fountain. The physical puzzle distributor stopped them, and
+announced "Don't drink this soda, it's a puzzle", which is really the kind of sentence
+you can only hear and believe at Mystery Hunt.
+
+Running Hunt was simultaneously getting more boring and more exciting. Fewer things about the site
+were on fire, which was good. More teams were solving the fun submission puzzles. Our first tirades
+had come in Friday evening, but now a bunch of other teams were solving the tirades puzzle and
+sending in even wilder speeches.
+
+We did another round of team check-ins. Our first round was on Friday and went...okay. We sent out
+three groups of people, one with Mystery Hunt veterans and two with mostly newer people. The
+veteran group came back much later than the other ones. That group was much better at asking
+questions that got teams to give real feedback, rather than generically saying hunt is fun or not
+fun. The dispatcher (I think it was Edgar Chen?) had that group write up a guide for to run check-ins,
+get more specific feedback, and support teams that were newer or feeling stuck. The 2nd round of
+check-ins was told to read that guide before going, and I heard that round went a lot better. I
+didn't get to go on check-ins because I was the only person on tech in the room at the time
+and needed to be on-call.
+
+Speaking of tech, we had designed this entire interactions flow for team check-ins. We'd bulk
+unlock a check-in interaction for all teams, and have people mark a check-ins as done whenever they
+visited a team. This reused the hint answering flow that was very battle tested by this point.
+Unfortuantely, none of that check-in infrastructure got used. The main things missing from the
+dispatcher point of view:
+
+* Interactions were ordered by team name, but the important feature was ordering by location.
+Check-in squads were directed towards all teams in a certain part of campus, and there wasn't
+a great way to sort by that.
+* Some teams had special instructions (call this number first, knock first, please mask up and
+show us proof of a negative rapid test before coming into our room, etc.) and that wasn't
+easy to retrieve from the interaction..
+* Bulk opening a check-in for everyone didn't do a good job at ignoring teams that had
+self-reported they had stopped solving Hunt.
+
+So, a miss on Hunt tooling there. Check-ins were managed over Google Sheets instead.
+
+
