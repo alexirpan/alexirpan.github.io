@@ -3240,6 +3240,179 @@ easy to retrieve from the interaction..
 * Bulk opening a check-in for everyone didn't do a good job at ignoring teams that had
 self-reported they had stopped solving Hunt.
 
-So, a miss on Hunt tooling there. Check-ins were managed over Google Sheets instead.
+So, a miss on tooling there. Check-ins were managed over Google Sheets instead.
+
+There was an increasing drip feed of event rewards at this time, since teams were still behind
+where huntcomm wanted them to be. Now that event reward alerting was up, it was clear that a lot
+of teams were stockingpiling their rewards. Huntcomm tried a lot of alternate wordings on the
+event page to nudge teams to use event rewards more aggressively, and none of them seemed to do
+much. Eventually the event page was updated to say the Museum and Puzzle Factory were the first
+8 rounds of Hunt (at a time where no team had made it past Reactivation), and that seemed to
+be the right words to get event rewards used more often.
+
+The event reward flood was also exposing some bugs in our event handling code. In testing,
+I had never tried redeeming multiple event rewards at once. Puzzle unlock lazily in
+tph-site, they unlock on first page load after you refresh. So if a team spammed free unlocks
+without refreshing the page, they could be debited for many more rewards than they could
+use. I changed my code to force unlocks on event redemption, gave back event rewards to teams that
+reported the bug, and so on.
+
+Remember me saying running Hunt was getting more boring? Yeah, that was stopping pretty quick.
+Huntcomm continued to be concerned with the pace of Hunt, and had already shipped a bunch of
+puzzle unlock changes to open rounds sooner, release metas earlier, have more puzzles open within
+a round, and so on. They were now deciding that Hunt speedup needed to be even more drastic.
+Anyone with an AI round puzzle was asked to brainstorm ways to nerf their puzzle before teams unlocked
+it. If we didn't come up with a nerf, then huntcomm was going to do it for them.
+
+All of these nerfs were going in with zero testsolving, which restricted them almost exclusively
+to either flavortext nerfs, or complete removal of intermediate steps, rather than revisions to
+existing clues or designs. Quiz Bowl Packet was marked unnerfable (would have required rewriting
+clues). 5D Barred Diagramless was similarly hard to nerf, because understanding the game is hard
+even when linked to a good tutorial.
+But, some of the other puzzles I was
+on had easier nerfs. Period of Wyrm originally had only the professions of Astrologer, Laborer,
+etc. and we added the names. Walking Tour used to have an ordering step and we removed that
+completely.
+
+By now the hint threshold had been lowered to N = 15, and huntcomm was hesitant to lower it any
+further. Partly it seemed potentially unfair to bring N closer to teams that could be in contention
+to win the coin by Sunday, and partly it was unclear if we had the manpower to widen the hintstream
+more.
+
+(If every team was limited to one open hint at a time, shouldn't the number of total open
+hints not increase by much? Well, yes, that's true. But it will increase by a bit, since not
+all teams continually keep one hint open. More importantly, lowering N unlocks hints for
+puzzles that did not have hints open before. Newer puzzles take longer to hint than older ones.)
+
+I would say the biggest factor is that hints tend to be more fun for solvers, but they don't make
+Hunt end as fast as free answers do.
+One of the hypotheticals I've thought about after Hunt is what would have happened if we took N all the way
+down to 0 to open hints to leading teams, and I believe the consequence would have been an
+immediate bottleneck of the hint system as every top team sent in their partial work on the hardest
+puzzles in Hunt. We'd spend 10-20 minutes figuring out a good hint to give, then would immediately get a
+new hint the team wrote while waiting for their old hint. Essentially, we needed ways to push Hunt
+forward that didn't require us to be in-the-loop after intervention, and hints were not one of them.
+
+Saturday evening, huntcomm announced that we were going to change the Reactivation requirement
+to 3/4 input metas instead of 4/4. (The incoming meta requirements were the Office meta, Basement meta,
+Factory Floor meta, and Museum metameta.) We would also change the scavenger hunt to reward
+free answers that were usable in AI rounds. Then huntcomm came over to tech and asked "okay, how do
+we implement this?"
+
+Changing unlocks around the midpoint interactions for Reactivation was especially scary...this
+was probably the most complex part of our unlock structure, was the source of many bugs we fixed
+during the slowrun, and now we needed to change it. Once we sat down to actually check
+the details though, making it unlock on 3/4 was actually not too bad, since the majority of
+the complexity was on what happened after Reactivation, not before.
+
+AI round free answers on the other hand were a bit more complicated. Remember way back earlier,
+when we said AI round free answers wouldn't be supported, because we wanted teams to break into
+the answer gimmicks on their own? Yeah, well, now that was coming back to bite us, since we had
+to start thinking through any important edge cases that could go wrong.
+
+I found the event code I wrote a few months ago, and jury-rigged AI round free answers by
+doing a ton of copy-pasting of the old logic. I did not want to touch any of the existing
+logic if I could. Although we did not plan to release AI round free answers outside of the
+scavenger hunt yet, I decided to implement the functionality for it just in case that changed
+later.
+The implementation got in around 30 minutes before the first team solved
+Reactivation and unlocked the scavenger hunt.
+
+Speaking of Reactivation, people were rightfully very excited to go do the first Reactivation
+interaction. The way Reactivation worked was that when completed, teams would unlock a midpoint
+conversation with MATE. In the middle of the conversation with MATE, teammate would shut down the
+Puzzle Factory, and a few minutes later teammate would barge into that team's on-campus room
+to tell them Mystery Hunt was cancelled.
+
+*Logistically*, teams did not know we were going to do this, so teammate needed to know when
+a team was close to solving Reactivation. The transit time from our HQ to other team's HQ could
+be up to 15-20 minutes at the extremes, and although we wanted teams to have nothing but
+a shutdown Puzzle Factory for a few minutes, we didn't want them to *actually* be stuck.
+Our solution was to send a Discord alert when 3/4 Reactivation minipuzzles were solved (time
+to prepare) and 4/4 Reactivation minipuzzles (time to barge into HQ). Kind of like a
+"tornado watch" and "tornado warning" system.
+
+![Taco warning](/public/mh-2023/tacowarning.jpeg)
+{: .centered }
+
+At 3/4, teammate members would leave HQ and nonchalantly hangout near the team HQ, trying
+to not be too obvious. At 4/4, they would converge. Sometimes the gap would be very short,
+like Cardinality going from 3/4 to shutdown in 5 minutes.
+
+![5 minutes](/public/mh-2023/5minuteshutdown.png)
+{: .centered }
+
+Sometimes, it was not, like when TTBNL solved 3/4, half of hunt HQ immediately left, and they
+didn't solve the 4th minipuzzle for another 50 minutes. Meanwhile the hints were still coming
+in, except with half the staff available to reply. This made the logistics team very upset. They tried to get people
+who weren't directly acting to stay behind in HQ and join a later run (there'd be several
+throughout the weekend), but this seemed like a hopeless request.
+
+It was a bit hectic, but once MIT campus closed for the evening, I decided it would be better for me to
+sleep early so that I could stay awake through Sunday. Surely Hunt will end by then.
+
+(Here, "early" means 4 AM, I stayed up to make sure physical puzzle pickup didn't need tech
+help and to set up alerting on the new AI round free answers.)
 
 
+Sunday of Hunt
+-----------------------------------------------------------------------------------------
+
+I did not get much sleep.
+
+I woke up at 6 AM, planning to go back to sleep after checking the team Discord to see if
+there were any issues. There were, with the AI free answer redemption.
+As implemented, they were *only* usable in the AI rounds. In the 2 hours I'd been sleeping
+huntcomm had decided they would send strong event rewards to everyone, but wanted those
+rewards to be usable by all teams, including ones that had not unlocked AI rounds yet.
+
+"How urgently do you need this, like should I get out of bed right now?"
+
+"Yes please."
+
+So I got up and spent the next hour making that happen.
+
+Internally, the way I set up event rewards was the same way gph-site sets up hints. In gph-site,
+instead of directly storing the number of hints a team has left, the database stores the total
+number of hints a team has ever received. On every page load, the backend
+computes how many hints the team has used so far, then displayes the difference to
+the frontend. The advantage of this design is that you never need to worry about database
+transactions or keeping counts in sync across models. A hint is used if and only if the team
+has gotten back a useful hint response.
+
+A disadvantage of this design is that the more ways you can use hints, the more complicated
+it is to compute the number used so far. So similarly, the more overlap there is between
+how you can use event rewards, the more complicated the accounting logic gets.
+
+The new logic would iterate through any event reward usage the team had, compare it to their
+total regular + strong rewards, and greedily use the "weakest" reward required. This did
+require describing the logic really awkwardly on the event redemption page, but the idea was
+to make sure a team could never hit a gotcha of using a strong reward to solve a puzzle
+when a weak reward was available.
+
+Tested it, got it reviewed and deployed to production, and I said I'd stay up until I saw the first alert of
+a team using a strong reward. That happened about 10 minutes later and I told people I was
+going back to bed.
+
+I woke up a few hours later, decided that was as much as I'd reasonably get, and walked to
+hunt HQ. You might think the mood was more somber, now that we knew Hunt was wildly
+behind schedule, but it really wasn't. Maybe it was more panicky in huntcomm, but I thought
+the rest of HQ was holding up well and still running smoothly in an emergency.
+
+A group of people were going to [Tosci's](https://www.tosci.com/) to do a double-check for
+Eat Desserts on Main before lead teams unlocked Conjuri. They said they'd do a group order for ice cream for HQ, which I immediately
+jumped on. I don't remember what flavor I got but it was good. Also, now that we knew
+around how many teams would unlock Fountain, we had way too much soda, so a portion was
+set aside and declared "no longer a puzzle". A teammate on teammate complained that
+they would only drink the soda if it were a puzzle, so we relabeled the soda as "still a puzzle
+but okay to drink". They tasted the soda and described it as "perplexing".
+
+There was a continuing dripfeed of site issues, but they were fairly minor. There was
+an issue with Wyrmhole round links caused by colliding [React keys](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key).
+The keys were based on puzzle name - when would the list of all puzzles ever need to
+display the same puzzle multiple times? The realization that Wyrm was still causing
+problems in our site code was incredibly funny, especially given how well it
+echoed the in-Hunt story.
+
+We were also starting to get stories and screenshots of teams first reaction to the complete
+nonsense of Bootes round answers, which was pretty great.
