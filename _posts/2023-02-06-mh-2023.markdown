@@ -6,173 +6,92 @@ date:   2023-02-06 00:32:00 -0700
 
 *This post is XXX words long, and is riddled with spoilers about pretty much every aspect of MIT Mystery Hunt 2023. There are no spoiler bars. You have been warned.*
 
-<div class="shaded" markdown="1">
-Throughout the year, I've had many, many work conversations that go like this:
-
-Them: "What did you do this weekend?"
-
-Me, internally: I worked 12 hours a day painting strips of wood with special paint for
-a puzzle I can't talk about for another few months.
-
-Me: "Oh, not much."
-</div>
-
 I feel like every puzzle aficionado goes through at least one conversation where they try
 to explain what puzzlehunts are, and why they're fun, and this conversation goes poorly.
-Usually I end up saying they're like escape rooms, and this is sufficient for most people,
-but in many ways puzzlehunts are *not* like escape rooms?
-People do not excitedly edit a spreadsheet for 3 hours in any escape room I've been to.
+It's just a hard hobby to explain.
+Usually, I say something about escape rooms, and that works, but in many ways the typical
+puzzlehunt is *not* like an escape room? "Competitive collaborative spreadsheeting" is more
+accurate but less clear why people would find it entertaining.
 
-But then, even within the puzzle community, a lot of people don't have experience with
-writing puzzles.
-It turns puzzle writing into
-very weird *thing*, where many people don't get it, and the people who do get it don't want
-to be spoiled. I'll attempt to explain writing from both ends.
+Let me put on my machine learning researcher hat for a bit and try to explain puzzles
+differently. In a puzzlehunt, each puzzle is a bunch of data. In a good puzzle,
+that data has **exactly one good explanation**, one which fits better than every
+alternative. Your job as a solver is to find that explanation.
 
+A list of clues, a small game, a bunch of images, whatever. The explanation is usually
+not obvious and fairly indirect, but there is a guiding contract between the puzzle
+setter and puzzle solver that the puzzle can be solved. At the end of the puzzle,
+you usually get an English word or phrase, but that is more to give a puzzle its
+conclusion. The core appeal of a puzzle is figuring out what's going on, and when
+you find the explanation (get the a-ha), that's when you're having fun.
 
-Why Puzzles?
----------------------------------------------------------------------------------
+This is why puzzlehunting as a hobby is really biased towards professors and programmers.
+Research and debugging share a similar root of trying to explain the behavior
+of a confusing system. It stretches the same muscles.
 
-Well, because they're fun, that's why?
+Okay. That gives more of an answer to why people do puzzles. Why do people *write* puzzles?
+For me, Mystery Hunt escalated from a thing on the side, to a part-time job, to a full-time
+job.
+Writing a puzzlehunt is incredibly time consuming and stressful, you're usually not getting much money,
+and your work will, in the end, only be appreciated by a small group of people. It all
+seems pretty irrational.
 
-But, why are puzzles fun? I'm going to put on my machine learning researcher hat
-for a bit, meaning I'm going to make wildly broad generalizations about cognition
-that will make some people very angry.
-
-In any puzzlehunt puzzle, you start with a bunch of data.
-A list of clues, a small game, a bunch of images, whatever. The puzzle does not
-directly tell you what to do with that data, but there is this guiding contract
-between the puzzle setter and puzzle solver: "this puzzle has a solution".
-Based on that contract, you work at the puzzle until you solve it, usually distilling
-the data into an English word or phrase.
-
-If the puzzle doesn't explain what to do, what does it even mean for it to have
-a solution? Usually, what this means is that **there is exactly one explanation
-for all the data**, that fits much better than every alternate one.
-
-One way I've described puzzles is that they're like research projects, except you
-know you can finish them in a few hours rather than a few months or years. I
-suspect this is why programmers and professors are so overrepresented. The act
-of debugging or doing research stretches a very similar muscle.
-
-To put on my CS / machine learning researcher hat for a bit, a puzzle is something
-that compresses very well. Random data cannot be compressed well, because there is
-no underlying truth or explanantion. Scientific experiments compress a bit better,
-because there are often underlying physical or mathematical principles that explain how the
-world works. Puzzles are then at the very extreme end of the scale - they are designed
-to have most of their data pointing towards a key idea. "Breaking in" or finding
-that idea can be *hard*, but discovering that compression algorithm is what triggers
-the dopamine rush that makes solvers want to keep doing puzzles.
-
-If that's why people solve puzzles, why do people write puzzles? Well, some
-people do so because they've had fun solving puzzles, and want to try something new.
-I'd say that's why I first started.
-solving puzzles, and want to try doing so. I'd say this is how I first got started.
-Another reason is that you want to make a puzzle about one of your other niche
-interests or hobbies, since puzzle solving lends itself well to pushing people to
-research a topic in lots of detail. That's how I restarted writing puzzles.
-
-In the long run though, I find I get the most motivation from figuring out how to
-create an interesing solve path, and making the puzzle rhyme with itself as much as
-possible. Designing a puzzle is itself a puzzle, where
-you're trying to figure out what steps are interesting and guess what wrong turns
-a solver could make. In doing so, you're naturally constrained in what information
-you can give, because every bit of extra information is something that might point
-in a *different* direction than the idea you want the puzzle to express. It's
-challenging, but it can be very rewarding to find a way to solve design problems
-within the constraints you've created for yourself.
-
-On some puzzles I've made, I'd be satisfied
-if just 1 person had fun solving it end-to-end, understanding its design to the same
-level of depth that I did at construction time. I'd say this is my answer to
-[why people spend so much time creating such ephemeral experiences](https://mitadmissions.org/blogs/entry/two-hundred-puzzles-4/#fading-together).
-I get a lot of self-satisfication even before the puzzle goes live. Blogging is
-similar for me. There are things I get out of the writing experience that I'd
-still get if no one read my blog.
-
-And, in the same way as blogging, I still want to share my puzzles, because as much
-as I get from doing it for myself, there are things I get from broadcasting that
-I don't get anywhere else.
+Well...in some sense it is. That doesn't mean it's not worth doing.
 
 
-Solver Constructor Tension
--------------------------------------------------------------------------------------
+# Post Structure
 
-There is a core tension between puzzle solver and puzzle constructor. Puzzlehunts
-are at their best when their solutions are not obvious.
-The solutions *have* to be indirect. You want to leave enough space for the solvers
-to work with the puzzle and discover the answer for themselves. If you don't give
-that mental room, and railroad solvers from start to finish, then it's still an
-object with an answer, but it's not a puzzle anymore. It's more following directions.
+Oooh, a section of the post describing the post itself. How *fancy.* How *meta.*
 
-Or, put another way: if it's impossible to get completely lost, then it's not a puzzle.
+There are going to be spoilers for just about all aspects of Hunt. Much of Mystery Hunt is
+bled together in my mind and it's not easy to segment it into nice pieces.
 
-> The key to making a detective game fun to puzzle out is that you have to give the player as many opportunities as possible to be wrong. If you steer them through finding the clues and give away the answer anyway then they can never be wrong. If you give them three dialog options to pick from then it’s pretty easily brute forced. Meanwhile, [Return of the Obra Dinn] has you fill in multiple blanks that all have multiple possible entries, and there could be hundreds if not thousands of wrong combinations. And you can’t brute force that, your only recourse is to actually be smart enough to figure it out.
+I have tried to present everything chronologically, except when talking about the construction
+of specific puzzles I worked on, in which case I've grouped the discussion
 
-([Yahtzee Croshaw, "Great Detective Games Let You Fail Miserable"](https://www.escapistmagazine.com/great-detective-games-let-you-fail-miserably-extra-punctuation/))
-(: .centered }
+<div class="shaded" markdown="1">
+like so.
+</div>
 
-(Side note: Return of the Obra Dinn is excellent, even if you aren't "a video game person",
-definitely recommend.)
+Usually I was juggling multiple puzzles at once, so strict chronology would be more confusing
+than anything else.
 
-This, though, is where you have the tension. If it's possible to get completely lost in
-a puzzle, not everyone is going to get the full experience.
-
-but if it's possible to get completely lost, not everyone is going to get the full
-experience.
-
-Take the duck konundrum. It's literally a series of directions. They're hit-or-miss
-as a puzzle type, but when they hit, it is usually because following the directions is
-hard for some reason. What if we misread a line?
-What if we have to start over? That tension is the chance for failure that makes a
-puzzle a puzzle.
-
-(does the section above even fit here)
+I've decided to be complete rather than entertaining. I'm doing this because I'm not sure
+of the exact audience for this post, and figure it'd be useful if I just dumped everything I thought
+was relevant. Hopefully you find it entertaining anyways.
 
 
+# December 2021 - Oh Boy, Mystery Hunt is Soon!
 
-Post Structure
----------------------------------------------------------------------
+Writing and post-hunt tech work for [Teammate Hunt 2021](https://2021.teammatehunt.com/)
+has been done for a while. Life is good. Team leadership sends out a survey to see if the
+team has enough motivation to write Mystery Hunt.
 
-Oooh, a section of the post describing the post itself. How *fancy.* How *meta.* Okay
-I'll stop.
+I use a time tracker app for a few things in my life, and puzzle writing is one of them.
+My time spent on Teammate Hunt clocked in at 466 hours. I do some math and find it averaged
+to 15 hours/week. This is helpful when trying to decide how to answer the question for
+how much time I'd commit to Mystery Hunt if we won.
 
-The story of this Hunt is presented chronologically, but whenever I talk about the construction
-of a specific puzzle, I'll start a new section describing the entire process of writing that
-puzzle. Basically, at any given time I was juggling 1-5 different puzzles, so trying to
-present things exactly chronologically would be more confusing than anything else.
+I already had some misgivings around how much time and headspace Teammate Hunt took up for me.
+On the other hand, it is Mystery Hunt. Noting that I felt like I did too much for Teammate Hunt,
+I targeted 10 hours/week for Mystery Hunt.
 
-
-December 2021
-----------------------------------------------------------------------
-
-It had been a few months since writing and post-Hunt tech work for Teammate Hunt 2021
-wrapped up. I had spent 466 hours working on Teammate Hunt, and was trying to decide
-how to answer the team poll for "do you want to try to win Hunt this year, and if so
-how much time can you commit?"
-
-(Aside: time tracking apps are great, they're a nice way to track time spent on
-long-running projects.)
-
-I already had some misgivings around how much I had let Teammate Hunt rule over
-alternate ways of spending my time. On the other hand, it is Mystery Hunt. I did some
-math and decided to put down "10 hours a week". Over a year, that worked out to
-around 500-750 hours, which would still be a lot, but it would be spread out over 12 months.
-For comparison, Teammate Hunt was written in around 6-7 months, meaning I was averaging
-around 15 hrs/week, which felt like too much to me in retrospect.
-
-After teammate leadership announced we'd try to win Hunt, I removed "this is not a puzzle"
-from Mystery Hunt Bingo, just in case.
-I didn't want to have any [warrant canary](https://en.wikipedia.org/wiki/Warrant_canary)
-accusations in the event that we actually won.
+The survey results come in, and there is enough interest to go for the win. I have zero ideas
+for a puzzle using Mystery Hunt Bingo, but figure that *maybe* we'll win Hunt, and *maybe*
+there will be a puzzle using Mystery Hunt Bingo, so I'd better [remove the "this is not
+a puzzle"](https://github.com/alexirpan/mystery-hunt-bingo/commit/77842e1962ac791ce77c56d8a25d00f79227befc)
+warning early, just in case.
+I didn't want to face any [warrant canary](https://en.wikipedia.org/wiki/Warrant_canary)
+accusations if we actually won.
 
 
-January 2022
---------------------------------------------------------------------------
+# January 2022
+
+## The Game is Afoot
 
 Holy shit we won Hunt!!!!!
 
-I write a post about Mystery Hunt 2022, where I make a few predictions about how writing
+I write a post about [Mystery Hunt 2022]({% post_url 2022-01-22-mh-2022 %}), where I make a few predictions about how writing
 Mystery Hunt 2023 will go.
 
 > After writing puzzles fairly continuously for 3 years (MLP: Puzzles are Magic into Teammate
@@ -186,121 +105,40 @@ that are likely to get pushed the hardest by working on Mystery Hunt of all thin
 optimistic that I have enough experience with the weight of expectations to get through the writing
 process okay.
 
-Today it is January 2022, and that means it's time for Alex to set some personal guidelines.
+Before officially joining the writing Discord, I set myself some personal guidelines.
 
-* Hanging out with friends, socializing, etc. take priority over working on Hunt. A lot of puzzle
-writing can be done asynchronously and I'm annoyingly productive in the 12 AM - 2 AM time period.
-* No more interactive puzzles, or puzzles that require non-trivial amounts of code to construct.
-Making interactive puzzles always has really bad time-spent-creating to time-spent-solving ratios,
+**Socializing take priority over working on Mystery Hunt.** I know
+I can find time for Mystery Hunt if I really need to. A lot of puzzle writing can be done asynchronously,
+and I'm annoyingly productive in the 12 AM - 2 AM time period.
+
+**No more interactive puzzles, or puzzles that require non-trivial amounts of code to construct.**
+The goal is to make puzzles with good creation-time to solve-time ratios. Puzzles that require
+coding are usually a nightmare on this axis,
 since it combines the joys of fixing code with the joys of fixing broken puzzle design.
-* No more puzzles where I need to spend a large amount of time studying things before I can even
-start construction. Again, similar reason, this process is very time consuming for the payoff.
-As an example, I'd estimate I spent around 80 hours on
-[Marquee Fonts](https://2021.teammatehunt.com/puzzles/marquee-fonts), since I had to go from
-"know nothing about fonts" to "knowing too much".
-* No more puzzles made of minipuzzles. Coming up with many smaller ideas is sometimes easier than coming up
-with one big one, but executing on those smaller ideas tends to take longer, since the process of finding suitable
-clues is a bit independent of puzzle difficulty.
-* No more puzzles with very tight constraints. [The Mystical Plaza](https://2021.teammatehunt.com/puzzles/the-mystical-plaza) was my other major time sink of Teammate Hunt 2021. It looks short, and conceptually
-it *is* short, but it collectively took 60-100 person-hours to find a good-enough construction, and that
-was even with allowing The Error That Can't be Named. Usually the time spent fitting a tight constraint
-doesn't directly translate into puzzle content.
 
-These guidelines all had a common theme: keep Hunt managable, and work on puzzles that needed less time
+**No more puzzles where I need to spend a large amount of time studying things before I can even
+start construction.** Again, similar reason, this process is very time consuming for the payoff.
+I'd estimate I spent 80 hours on
+[Marquee Fonts](https://2021.teammatehunt.com/puzzles/marquee-fonts), since I started with knowing
+nothing about how fonts worked and ended with knowing much more than I'd ever need to know.
+
+**No more puzzles made of minipuzzles.** Minipuzzles are a scam. "Oh, we don't have any ideas that
+are big enough to fill one puzzle. Let's make a bunch of minipuzzles instead because it's easy to
+come up with small ideas!" Then you get halfway through, and realize that ideation of small puzzles
+is easy, but execution takes way longer since the process of finding suitable clues is somewhat
+independent of puzzle difficulty. I also felt it was a crutch I was relying on too often.
+
+**No more puzzles with very tight constraints.** It collectively took 60-100 person hours to
+find a good-enough construction for [Mystical Plaza](https://2021.teammatehunt.com/puzzles/the-mystical-plaza),
+even with breaking some puzzle rules along the way. Usually, the time spent fitting a tight constraint
+does not directly translate into puzzle content.
+
+These guidelines all had a common theme: keep Hunt managable, and make puzzles that needed less time
 to go from idea to final puzzle.
 
-I ended up breaking every one of these guidelines at least once.
+I would end up breaking every one of these guidelines.
 
-
-Aphorisms About Writing MIT Mystery Hunt
----------------------------------------------------------------------
-
-Although there are a lot of stories about Hunt, the main one is about its difficulty.
-
-I don't want the difficulty of Hunt to overshadow everything else, but I'd be lying if I tried
-to downplay the way it affected the solve experience. There is no one reason that Hunt went long. Like
-most engineering postmortems, it's more like there were many small things that accumulated, which either
-went unnoticed or were noticed at a point where it was too late to change.
-
-Perhaps the easiest way to tell that story, is to present my theory on what it's like to write Mystery Hunt,
-and we'll see how it played out.
-
-**Writing Mystery Hunt is fundamentally a game where you run out of time.** It seems like every Mystery Hunt,
-without fail, has lots of work happen in the week leading up to Hunt. That's not because every construction
-team sucks at time management. It's because the amount of work that *could* be put into a Mystery Hunt is
-essentially unbounded. You could always try to get more testsolve of a puzzle to get more data about
-sticking points, or replace a puzzle that has low fun ratings, or address a website bug, clean up an art
-asset. But you get one year to write Hunt. You don't have time to make things perfect, you have to ship.
-Move fast, and try not to break things. A team has to choose where it will not fully resolve things for
-the sake of getting other things done.
-
-**Decisions you make early can have big repurcussions later.** One example is theme selection, which is
-always done first but influences basically the entire year afterwards. The more notable example is the
-puzzles themselves. The writing order is metametas -> metas -> feeders, and
-they have to be done serially. Each metameta or set of metas is written simultaneously, so you're
-picking how many puzzles the Hunt will have long before they exist. It's not impossible to adjust puzzle counts
-later, but it's usually pretty hard to, especially if you're considering cutting a round with a meta
-that someone worked hard on.
-
-**Team member availability will always shift.** Some people will spend less time than they expected, some
-will spend more, and in general, there are always people who will have to drop out for good reasons.
-Everyone starts excited and motivated at the start of Hunt, when you are scoping things, but by the middle
-some people will have checked out.
-
-
-February 2022 - Puzzle Potluck
----------------------------------------------------------------------------------
-
-A Puzzle Potluck is announced, to happen in early March. The goal is to provide a low-stakes, casual venue for people to
-start writing puzzle ideas, especially first time puzzle writers. I start working on three ideas.
-One did not work despite lots of attempts to make it work, and I eventually shelved it. The other
-two were Quandle and an early form of 5D Barred Diagramless with Multiverse Time Travel.
-
-> No more interactive puzzles
-
-> No more puzzles where I need to spend a large amount of time studying before I can even start
-construction.
-
-I know. **I know.** But as soon as "Quantum Wordle" entered my head, I was convinced there was a
-good puzzle there and that I needed to make it. As for 5D, it wasn't using any chess yet.
-
-I found an [open-source Wordle clone](https://github.com/cwackerfuss/react-wordle) and got to work figuring out how to modify it to support a quantum superposition
-of target words. This took a while, since I started with the incorrect assumption that letters
-in a guess are independent of each other. If you guess LEVEE, and the target word is ENEMY, then
-the first two Es in LEVEE are yellow and the last is gray. When extended in the quantum direction,
-you can't determine the probability distribution of one E without considering the other Es. They're
-already entangled. (Grant Sanderson of 3Blue1Brown would [make the same mistake](https://www.youtube.com/watch?v=fRed0Xmc2Wg) shortly after I realized my error, so at least I'm in good company.)
-
-After botching the Wordle odds, I decided that no I did not know quantum mechanics well enough to do any clever extractions, certainly not in time for potluck.
-Instead, I would just pick arbitrary letters from words in an arbitrary order to make whatever
-cluephrase I wanted. Internally, the way the puzzle works is that the game starts with 50 realities.
-On each guess, the game computes the Wordle feedback for every target word, then sums that feedback
-across columns. When making an observation, it repeats the calculation to find
-every target word consistent with that observation, deletes all other realities, and recomputes
-the probabilities for all prior guesses. Are there optimizations? Probably. Do you need to optimize
-a 50 realities x 6 guesses x 5 letter problem? No, not really. This will become a running theme -
-for Hunt I optimized for speed of implementation over performance unless it became clear performance
-was a bottleneck.
-
-Once the underlying math was implemented, I made some tests with random sets of 50 words, and found
-that 1 observation was too little information to reliably constrain to 1 reality, while 2 observations
-gave much more information than needed. I tried a bit at constructing a special set of words where
-you could get to exactly 1 reality with just 1 observation, but it was hard to do so. Also, the lesson
-of Wordle is that it's more fun to give people more information than they need to win, because people are not
-information-maximizing agents [citation needed]. So I left it as-is.
-
-Before Potluck, I did a puzzle exchange with Brian, where they tested Quandle and I tested [Parsley Garden](https://puzzlefactory.place/office/parsley-garden). Around 90 minutes into the Quandle test, Brain mentioned he
-was stuck, and after asking a bunch of questions I figured out he'd never clicked a guess to open the
-observation pop-up. Oops. I added a prompt to suggest doing that and the solve was smooth from there.
-
-I've been told that technically, the quantum interpretation of Quandle is bad. The core
-issue is that you're not supposed to be able to observe the probability distribution of a letter before
-observing the outcome. Instead, it should collapse to a fixed outcome as soon as you look at it. This is probably all
-true and I don't care.
-
-
-January 2022 - Team Goals and Theme Proposals
-------------------------------------------------------------------------------------------------
+## Team Goals and Theme Proposals
 
 The very first thing we did for Hunt was run a survey to decide what Hunt teammate wanted to write. What
 was the teammate experience that we wanted solvers to have?
@@ -328,123 +166,238 @@ gotten too big. Before winning Hunt, we had already downsized and were around 60
 when they won last year. Correspondingly, we spent a while discussing how to create fewer puzzles while
 still creating a Hunt of satisfying length, as well as the importance of mid-Hunt milestones.
 
-After this, we started with theme proposals.
-Historically, at the start of theme writing I say I don't have theme ideas. Then I get the start of an idea
-late in the process and rush to turn it into a proposal at the end. This happened in Teammate Hunt 2021 and
-it happened for Mystery Hunt too.
-As mentioned elsewhere, the Puzzle Factory theme is recycled from
-an old Teammate Hunt 2021 proposal. (We talked a bit about whether this was okay, since some teammate
-members didn't want to write Hunt this year. In the end we decided it was fine. At most there would
-be plot spoilers, not meta spoilers.)
+We then held team elections for leadership roles. People ran for roles, wrote a short blurb, and
+we voted for each. I deliberately did not run for leadership roles, since they implied a baseline
+level of commitment that was above my 10 hr/week target.
 
-A few members with Hunt writing experience
-mentioned that theme ideation could get pretty contentious. People got invested in a theme,
-and spent lots of time polishing the theme proposal. People working on *other* themes would observe
-this, and feel obligated to invest more on their preferred themes. The end result was a theme
-arms race where lots of time was spent on themes that did not get picked.
-To try to avoid that failure case, a strict 1 page limit was placed on all theme proposals, and although people
-were free to read threads of longer freeform brainstorming, all the plot and structure proposals needed
-to fit in that 1 page.
+With elections done, we started on theme proposals. This is always an interesting time in hunt development,
+since it sets the agenda of the entire upcoming year. Things can change later, but writing a hunt is an
+especially top-down design process. You decide your story, which decides your metametas and metas,
+which decides your feeders, and all of this is handing off work to your future selves.
 
-Did this work? I would say "maybe". It definitely cut down on time spent picking a theme and polishing
-theme proposals, but it also necessarily forced theme proposals to be light on details, and team memes
-like "teammate is the villain" seemed to work its way into every serious theme proposal at some level.
-There may have been more diversity in theme ideas if they were written over a longer period of time.
+Historically, at the start of theme writing, I say I don't have theme ideas. Then I get an idea right
+before the deadline and rush out a theme proposal.
+This happened in Teammate Hunt 2021 and it happened for Mystery Hunt. The theme I pitched for Teammate
+Hunt 2021 was not revived for Mystery Hunt (I didn't think it scaled up correctly), but the Puzzle
+Factory theme is recycled from a Teammate Hunt 2021 proposal.
+We talked a bit about whether this was okay, since some organizers for Teammate Hunt 2021 were not
+writing Hunt this year. In the end we decided it was fine. At most there would
+be plot spoilers, not meta spoilers.
 
-I didn't observe the other consequences, but in our post-Hunt retrospective, members of the story team
-mentioned they were under a lot of pressure to fill in and develop plot details that weren't in the theme
-proposal, because, well, there wasn't space for them in the proposal! Even the details that do exist differ
-in many ways from where the story ended up. From the original Puzzle Factory proposal:
+A few members with past Mystery Hunt experience
+mentioned that theme ideation could get contentious. People naturally get invested in themes,
+and spend time polishing their theme proposal. People working on *other* themes would observe
+this, and feel obligated to polish their proposals. This could escalate into a theme arms race,
+where lots of time was spent on themes that would ultimately not get picked.
+
+To try to avoid this, a strict 1 page limit was placed on all theme proposals. People
+were free to read discussion threads of longer freeform brainstorming, but there would be no expectation
+to do so, and all plot and structure proposals needed to fit in 1 page.
+
+Did this work? I would say "maybe". It definitely cut down on theme selection time, and reduced work on
+discarded themes, but it also necessarily forced theme proposals to be light on details. Team memes
+like "teammate is the villain" seemed to work their way into every serious theme proposal at some level.
+Maybe that was genuinely the story we wanted to tell, but it could also have been an artifact of writing
+themes while the memes were fresh. There may have been more diversity in theme ideas if they were written
+over a longer period of time.
+
+I was not on the story team, but in our post-Hunt retrospective, members of the story team
+mentioned they were under a lot of pressure to fill in plot details that weren't in the theme
+proposal, because, well, there wasn't space for them in the proposal! Even the details that do exist
+differ a lot from where the story ended up. Here is how I would summarize the final version of the Hunt
+story.
+
+> teammate announces a Museum themed puzzlehunt written by MATE, a puzzle creating AI. teammate is
+> really concerned with making a "perfect" Mystery Hunt that isn't doing anything too crazy. The Museum
+> is Act I of the Hunt. Over the
+> course of solving, teams discover the Puzzle Factory, the place where Mystery Hunt puzzles are created.
+> The Puzzle Factory is not a place that solvers were supposed to discover, and teammate does their best
+> to pretend it doesn't exist when interacting with teams. The Puzzle Factory is Act II of the Hunt, and is
+> explored simultaneously with Act I. As they explore the factory, teams learn that
+> MATE is overworked, and other AIs that could have helped MATE were locked away by teammate due to being
+> too weird.
+>
+> Solvers reconnect the AIs, and this prompts teammate to shut down MATE, Mystery Hunt and the Puzzle Factory.
+> They berate teams for trying to turn on the old AIs, then leave.
+>
+> However, there is some lingering power after Mystery Hunt is shutdown, which solvers can use to slowly
+> turn the Puzzle Factory and other AIs back on. This starts Act III of the Hunt.
+> Each AI round is gimmicked in some way, ending in a feature request
+> that AI wants to add to the Puzzle Factory. When all AI rounds are complete, teammate comes back and
+> admits that they were wrong, and the Puzzle Factory makes one more puzzle, which has the coin.
+
+Now, here is the start of the original proposal:
 
 > Act I begins with the announcement of an AI called MATE that can generate an infinite stream of perfect puzzles, as well as provide real-time chat assistance for hints, puzzle-solving tools, etc). During kickoff, teammate gives a business presentation with MATE in the background– but at the end, the video feed glitches briefly and other AIs show up for a split second (“HELP I’M TRAPPED”); teammate doesn’t notice. Stylistically, the first round looks like a futuristic, cyberspace factory. As teams solve the initial round of puzzles, errata unlock (later discovered to be left by AIs locked deeper in the factory), hinting that there’s something “out of bounds”. No meta officially exists for this round (the round is “infinite”), but solving and submitting the answer in an unconventional way leads to breaking out. (To prevent teams from getting stuck forever, we can design the errata/meta clues to get more obvious the more puzzles they solve.) Solving this first meta also causes MATE to doubt their purpose and join you as an ally in act II.
 
-Kickoff did not show the other AIs at all, the surface theme was changed to something completely different, the
-"infinite stream of puzzles" was changed to a regular set of rounds due to design concerns, MATE doesn't quite doubt
-their purpose (they're just overworked)...really, aside from MATE, most things changed in some way.
-
-Maybe allowing some wasted effort is worth it if it gets the details filled out early? I honestly don't know.
+Quite a lot changed from the start to the end. The infinite stream idea was cut because we couldn't
+figure out the design. Kickoff did not show the other AIs at all. The surface theme was changed to something
+completely different. In a longer ideation process, perhaps more of this design work could be done by the entire team,
+rather than just the story team.
+Maybe allowing wasted effort is worth it if it gets the details filled out early?
 
 Themes were rated on
 a 1-5 scale, where 1 = "This theme would directly decrease my motivation to work on Hunt (only use if serious)" and 5 = "I'll put in the hours to make this theme work".
-I don't remember exactly how I voted, but I remember voicing some concerns about the theme, namely:
-
-1. The plot proposal seemed pretty complicated compared to previous Hunts. I wasn't sure how
+I don't remember exactly how I voted, but I remember voicing some concerns about the Puzzle Factory.
+The plot proposal seemed pretty complicated compared to previous Hunts. I wasn't sure how
 well we'd be able to convey the story - [You Get About Five Words](https://www.lesswrong.com/posts/4ZvJab25tDebB8FGE/you-get-about-five-words)
-felt accurate for Mystery Hunt, where lots of people speedrun the story in favor of seeing
-puzzles ASAP.
-2. I was hesitant about whether we'd have enough good AI ideas to fill out enough rounds in
-Act 3. It seemed like a good theme for a 40 puzzle hunt, but I didn't know if it scaled up
-to Mystery Hunt size.
+felt accurate for Mystery Hunt, where some people will speedrun the story in favor of focusing on
+puzzles. I was also hesitant about whether we'd have enough good ideas for gimmicks to fill out the AI rounds in
+Act III. It seemed like a good theme for a hunt with 40 puzzles, but I didn't know if it worked for
+a Hunt with 150+ puzzles.
 
-I'm happy I was wrong on both counts. Feedback on the storytelling and plot has been good for teams
-that got to see it, and the AIs we came up with were inspired. The difficulty was off, but that's
-not something you decide at theme time.
+I'm happy I was wrong on both counts. Feedback on the story has been good, and I feel the AI round gimmicks
+all justified themselves. I was imagining a Mystery Hunt where Act III was the size of Bookspace (~10 rounds)
+and limiting it to 4 rounds did a lot for feasibility.
 
-The Puzzle Factory did not win by a landslide, but it was the only theme with no 1s, and it had more 5s
-than any other proposal. Puzzle Factory it is!
+The Puzzle Factory did not win by a landslide, but it was the only theme with no votes of 1, and had more
+votes of 5 than any other theme. Puzzle Factory it is!
 
 
-Hunt Tech Infrastructure
----------------------------------------------------------------------------------------
+## Hunt Tech Infrastructure
 
-This post will talk a lot about hunt tech, a very niche topic of interest even within the puzzle
-community. Still, I'm going to do so anyways because one, it's my blog I get to write what I want.
-Two, by now I've worked with four different puzzlehunt codebases (Puzzlehunt CMU, gph-site, tph-site,
-and spoilr). I'd like to think I can claim to be an expert.
+I'm going to talk a lot about hunt tech, a very niche topic even within the puzzle niche.
+Still, I'm going to do so anyways because
 
-Very soon after getting a copy of [spoilr](https://github.com/Palindrome-Puzzles/2022-hunt) in March,
-the tech team had a meeting to decide what we wanted to do for our tech stack. We saw three options:
+1. It's my blog I get to write what I want.
+2. By now I've worked with four different puzzlehunt codebases (Puzzlehunt CMU, gph-site, tph-site,
+and spoilr) so I've got some perspective on the different design decisions.
 
-(Explain silenda here too.)
+The first choice we had to make was whether we'd use the hunt codebase from Palindrome, or use the tph-site
+codebase we'd built over Teammate Hunt 2020 and Teammate Hunt 2021. Our early plan is to mostly build
+off tph-site. The assumption we made is that most Mystery Hunt teams do not have an active codebase,
+and default to using the code from the previous Mystery Hunt. However, teammate had tph-site, knew how
+to use it, and in particular had accumulated a lot of helper code to make crossword grids, implement
+copy-to-clipboard, and create interactive puzzles.
 
-* Use tph-site, reimplementing things we liked in the spoilr code.
-* Use spoilr, reimplementing things we wanted from tph-site.
-* Combine both codebases together into one Django project.
+The only recent team that seemed like they'd face a similar decision was Galactic, who decided to
+build off the spoilr codebase into [silenda](https://github.com/YewLabs/silenda) rather than use gph-site.
+After asking some questions, it sounded like the reason this happened was because parts of the tech
+team were already familiar with spoilr. So for our situation, it seemed correct to use whatever code
+we knew best, which was tph-site.
 
-Oh, I haven't described what Django is! Uhhhhh, okay, super quick crash course.
+We start work on open-sourcing tph-site, partly because it's not too much work to do so and partly
+because [Huntinality](https://2022.huntinality.com/) is asking if they can see the work we did to
+convert our frontend to React.
 
-Django is a Python library for building web applications. You define Python classes (normally
-called models) that represent what you want the database to look like. You then define views,
-Python functions that take incoming requests, do processing that might query from or save to the
-database, and return a response. Finally, the output
-responses get rendered to the user in the frontend. I first learned Django 10 years ago and somehow
-every website I've worked on has used it in some way. All the tech stacks I've mentioned use Django,
-including tph-site.
+<div class="shaded" markdown="1">
+### A React Tangent
 
-Where tph-site differs from the other sites is on its frontend.
-Puzzlehunt CMU, gph-site, and Spoilr all use HTML template files that are rendered server side based
-on the database. This is what the Django tutorial recommend. Meanwhile, tph-site uses Django to drive
-a React + Next.js based front-end.
+Almost every hunt codebase is written in [Django](https://www.djangoproject.com/). It's
+a Python web framework that does a lot of work for you. Python code lets you define your
+database schema, user model, what backend code you want to run when users make a request,
+and what URLs you want everything to live at. Although it is helpful to know what happens under
+the hood, Django makes it possible to build a site without knowing what happens under the hood
+using just Python, one of the most friendly beginner languages.
+I first learned Django 11 years ago and it's still relevant today.
 
-Oh, I haven't described what React or Next.js are either! Uhhhhh, okay, round 2.
+The default recommended approach in Django is that when a request comes in, you render an
+HTML response based on a template file that lives on your backend. The template gets filled out
+on the server and then gets sent back as the viewed webpage.
 
-React is a Javascript library whose organizing principle is that you describe your page in components,
-that each either have internal state or state passed from whatever creates the components. Each
-components describe what it ought to look like based on its state, and whenever the state is updated,
-anything that could depend on that state is entirely rerendered. This adds extra layers between your
-code and the resulting HTML, but also makes it easier to build dynamic or interactive web pages.
-You can do the same with raw Javascript, but it'll involve more boilerplate and state management
-on your end. Next.js is then a web framework that makes it easier to pass React state from the server,
-rendering pages server-side when possible to make load times faster for the users. This is especially
-useful for puzzlehunts, where you want to do as many things server-side as possible to prevent spoilers
-leaking to the front-end.
+tph-site still uses Django as its backened, but differs in using a React + Next.js based frontend.
+React is a Javascript library whose organizing principle is that you describe your page in components.
+Each component either has internal state or state passed from whatever creates the components.
+A component describes what it ought to look like according to the current state, and whenever the
+state is updated, React will determine everything that could depend on that state and rerender it.
+The upside: dynamic or interactive web pages become a lot easier to build, since React will handle
+a lot of boilerplate Javascript and state management for you. The downside: extra layers of indirection
+between your code and the resulting HTML, and potentially larger network downloads depending on how
+you set up your site.
 
-The tph-site fork exists because teammate devs had experience with React, and for Teammate Hunt 2020
-implementing the Ninteamdo Playmate without React was declared a non-starter. Since then we've had
-multiple years of experience working with tph-site. Given the combination of story goals and familiarity
-with the code, we elected to stick with tph-site. At the same time, we liked parts of spoilr, so we
-decided to merge their spoilr HQ management code with the tph-site code.
+Next.js is then a web framework that makes it easier to pass React state from the server, and
+support rendering pages server-side. This is especially useful for puzzlehunts, where you want to
+do as many things server-side as possible to prevent spoilers from leaking to the frontend.
 
-Like most software integrations, the end result is a bit more complicated than both in isolation, and
-tph-site was already more complex than gph-site thanks to us merging Django code with React code. As of
-the writing of this post, we're still working on cleaning up the code into a releasable state.
+The tph-site fork exists because teammate devs wanted to use React to implement the Playmate in
+Teammate Hunt 2020. Porting gph-site to React was quite painful, but I don't think Playmate was
+getting implemented without it, and we've since used it to support other interactive puzzles.
+In general, I believe we made the codebase more powerful, but also increased the complexity by
+adding another framework / build system. (To use tph-site, you need to know both Django and React,
+instead of just Django.) For new puzzlehunt makers, I would generally recommend starting with a
+setup like gph-site, until they know they want a more complicated frontend.
+</div>
 
-In general, one of teammate's strengths is that we have a lot of tech literacy and software chops, so
-we're able to manage the higher tech complexity that enables the interactive puzzles and websites that
-we want to create. I'm not sure what TTBNL plans to use for their Hunt, but in general, I would only
-recommend tph-site if you have a need for lots of interactivity. Otherwise, using a purely Django
-setup like gph-site is fine. The various Galactic Puzzle Hunts prove that you can do plenty of
-interactive puzzles in that setup too.
+
+
+# February 2022
+
+## Puzzup
+
+TODO
+
+## Puzzle Potluck
+
+A puzzle potluck (no not [that one](https://puzzlepotluck.com/4)) is announced for early March.
+The goal is to provide a low-stakes, casual venue for people to start writing puzzle ideas.
+There's not much to do in tech yet, so I start working on three ideas. One does not work and does
+not make it into Hunt. One is an early form of 5D Barred Diagramless with Multiverse Time Travel.
+The last goes through mostly unchanged.
+
+<div class="shaded" markdown="1">
+### Quandle
+
+Perhaps you remember that I set a personal guideline for "no more interactive puzzles", and think
+it's strange that I was working on an interactive puzzle within a month.
+Yeah, uh, I don't know what to tell you.
+
+In my defense, as soon as "Quantum Wordle" entered my brain, I was convinced it would be a good
+puzzle and that I had to make it.
+I found an [open-source Wordle clone](https://github.com/cwackerfuss/react-wordle) and got to work figuring out how to modify it to support a quantum superposition
+of target words. This took a while, since I started with the incorrect assumption that letters
+in a guess are independent of each other. This isn't true. Suppose the Wordle is ENEMY, and you
+guess the word LEVEE. The Wordle algorithm will color the first two Es yellow, and the last one
+gray.
+When extended in the quantum direction,
+you can't determine the probability distribution of one E without considering the other Es. They're
+already dependent on each other. (Grant Sanderson of 3Blue1Brown would [put out a video admitting to
+a similar mistake](https://www.youtube.com/watch?v=fRed0Xmc2Wg) shortly after I realized my error, so at least I'm in good company.)
+
+After I got the proof of concept setup, I considered how to do puzzle extraction. I considered trying
+to have the extraction be based on finding all observations that forced exactly one reality, but after thinking
+about it more, I realized it was incredibly constraining on the wordlist. This certainly wasn't a
+mechanic I was going to figure out in time for potluck, so I went with an arbitrary order of words and
+an arbitrary letter from each one, to give me flexibility to make whatever cluephrase I wanted. Making
+that cluephrase point to specific words feels like the most interesting idea, and after a bit more
+brainstorming, the superposition idea came out.
+
+Internally, the way the puzzle works is that the game starts with 50 realities.
+On each guess, the game computes the Wordle feedback for every target word, then averages the feedback
+across all realities.
+When making an observation, it repeats the calculation to find
+every target word consistent with that observation, deletes all other realities, and recomputes
+the probabilities for all prior guesses. Are there optimizations? Probably. Do you need to optimize
+a 50 realities x 6 guesses x 5 letter problem? No, not really. This will become a running theme. For
+Hunt, I optimized for speed of implementation over performance unless it became clear performance
+was a bottleneck.
+
+The puzzle could have shown 50 blanks, revealing each blank when you solved a word, but I deliberately
+did not do that to make it harder to wheel-of-fortune the cluephrase.
+During exploration, I generated random sets of 50 words, to get a feel for how the game
+played.
+My conclusion was
+that 1 observation was too little information to reliably constrain to 1 reality, while 2 observations
+gave much more information than needed. I considered making the word list more adversarial, but in my
+opinion, the lesson
+of Wordle is that it's more fun to give people more information than they need to win. People are not
+information-maximizing agents [citation needed]. I left it as-is.
+
+As one of the first tests of our Puzzup setup, I did a puzzle exchange with Brian. He tested Quandle and I tested [Parsley Garden](https://puzzlefactory.place/office/parsley-garden). Around 60 minutes into the Quandle test, I
+ask how the puzzle is going. Brian says he's stuck, and after asking a bunch of questions, I figure
+out that he's never clicked a guess after making one, meaning he's never seen the probability
+distributions or used an observation. Oops. I added a prompt to suggest doing that, and the solve was better
+from there.
+
+After potluck, I asked for a five letter answer, but none were available. Instead I got an answer that
+was two five letter words. Aside from the design changes needed to make that work, the rest of the puzzle
+mechanics stayed the same, and the work later in the year was mostly figuring out how to share team state.
+
+I've been told that technically, the quantum interpretation of Quandle is bad. I believe the core
+issue is that you're not supposed to be able to observe the probability distribution of a letter before
+observing the outcome. The distribution should immediately collapse to a fixed outcome as soon as you look at it,
+and you certainly shouldn't be able to make an observation that collapses from one superposition of 50
+realities to another superposition of < 50 realities. This is probably all true, and I don't care.
+</div>
 
 
 March 2022 - Of Metas and MATEs
@@ -1467,7 +1420,7 @@ along with the secret priority of
 Friday
 ----------------------------------------------------------------------------------
 
-![Retreat schedule, Friday + Saturday](/public/retreat_friday.png)
+![Retreat schedule, Friday + Saturday](/public/mh-2023/retreat_friday.png)
 {: .centered }
 
 As an icebreaker, we went around saying what our favorite puzzle was. One person said, "134".
@@ -3941,3 +3894,169 @@ So, uh, ask me later? I care about puzzles
 a lot. I wouldn't have written for Hunt if I did not care. That continues to be true. Puzzles are cool.
 I'm just tired and want to do other things in my free time. Maybe I will write again, but right now
 I want a hobby, not a job. We climbed the mountain, and came back down.
+
+
+Cut Paragraphs
+----------------------------------------------------------------------
+
+To put on my CS / machine learning researcher hat for a bit, a puzzle is something
+that compresses very well. Random data cannot be compressed well, because there is
+no underlying truth or explanantion. Scientific experiments compress a bit better,
+because there are often underlying physical or mathematical principles that explain how the
+world works. Puzzles are then at the very extreme end of the scale - they are designed
+to have most of their data pointing towards a key idea. "Breaking in" or finding
+that idea can be *hard*, but discovering that compression algorithm is what triggers
+the dopamine rush that makes solvers want to keep doing puzzles.
+
+If that's why people solve puzzles, why do people write puzzles? Well, some
+people do so because they've had fun solving puzzles, and want to try something new.
+I'd say that's why I first started.
+solving puzzles, and want to try doing so. I'd say this is how I first got started.
+Another reason is that you want to make a puzzle about one of your other niche
+interests or hobbies, since puzzle solving lends itself well to pushing people to
+research a topic in lots of detail. That's how I restarted writing puzzles.
+
+In the long run though, I find I get the most motivation from figuring out how to
+create an interesing solve path, and making the puzzle rhyme with itself as much as
+possible. Designing a puzzle is itself a puzzle, where
+you're trying to figure out what steps are interesting and guess what wrong turns
+a solver could make. In doing so, you're naturally constrained in what information
+you can give, because every bit of extra information is something that might point
+in a *different* direction than the idea you want the puzzle to express. It's
+challenging, but it can be very rewarding to find a way to solve design problems
+within the constraints you've created for yourself.
+
+On some puzzles I've made, I'd be satisfied
+if just 1 person had fun solving it end-to-end, understanding its design to the same
+level of depth that I did at construction time. I'd say this is my answer to
+[why people spend so much time creating such ephemeral experiences](https://mitadmissions.org/blogs/entry/two-hundred-puzzles-4/#fading-together).
+I get a lot of self-satisfication even before the puzzle goes live. Blogging is
+similar for me. There are things I get out of the writing experience that I'd
+still get if no one read my blog.
+
+And, in the same way as blogging, I still want to share my puzzles, because as much
+as I get from doing it for myself, there are things I get from broadcasting that
+I don't get anywhere else.
+
+Solver Constructor Tension
+-------------------------------------------------------------------------------------
+
+There is a core tension between puzzle solver and puzzle constructor. Puzzlehunts
+are at their best when their solutions are not obvious.
+The solutions *have* to be indirect. You want to leave enough space for the solvers
+to work with the puzzle and discover the answer for themselves. If you don't give
+that mental room, and railroad solvers from start to finish, then it's still an
+object with an answer, but it's not a puzzle anymore. It's more following directions.
+
+Or, put another way: if it's impossible to get completely lost, then it's not a puzzle.
+
+> The key to making a detective game fun to puzzle out is that you have to give the player as many opportunities as possible to be wrong. If you steer them through finding the clues and give away the answer anyway then they can never be wrong. If you give them three dialog options to pick from then it’s pretty easily brute forced. Meanwhile, [Return of the Obra Dinn] has you fill in multiple blanks that all have multiple possible entries, and there could be hundreds if not thousands of wrong combinations. And you can’t brute force that, your only recourse is to actually be smart enough to figure it out.
+
+([Yahtzee Croshaw, "Great Detective Games Let You Fail Miserable"](https://www.escapistmagazine.com/great-detective-games-let-you-fail-miserably-extra-punctuation/))
+(: .centered }
+
+(Side note: Return of the Obra Dinn is excellent, even if you aren't "a video game person",
+definitely recommend.)
+
+This, though, is where you have the tension. If it's possible to get completely lost in
+a puzzle, not everyone is going to get the full experience.
+
+but if it's possible to get completely lost, not everyone is going to get the full
+experience.
+
+Take the duck konundrum. It's literally a series of directions. They're hit-or-miss
+as a puzzle type, but when they hit, it is usually because following the directions is
+hard for some reason. What if we misread a line?
+What if we have to start over? That tension is the chance for failure that makes a
+puzzle a puzzle.
+
+(does the section above even fit here)
+
+Aphorisms About Writing MIT Mystery Hunt
+---------------------------------------------------------------------
+
+Although there are a lot of stories about Hunt, the main one is about its difficulty.
+
+I don't want the difficulty of Hunt to overshadow everything else, but I'd be lying if I tried
+to downplay the way it affected the solve experience. There is no one reason that Hunt went long. Like
+most engineering postmortems, it's more like there were many small things that accumulated, which either
+went unnoticed or were noticed at a point where it was too late to change.
+
+Perhaps the easiest way to tell that story, is to present my theory on what it's like to write Mystery Hunt,
+and we'll see how it played out.
+
+**Writing Mystery Hunt is fundamentally a game where you run out of time.** It seems like every Mystery Hunt,
+without fail, has lots of work happen in the week leading up to Hunt. That's not because every construction
+team sucks at time management. It's because the amount of work that *could* be put into a Mystery Hunt is
+essentially unbounded. You could always try to get more testsolve of a puzzle to get more data about
+sticking points, or replace a puzzle that has low fun ratings, or address a website bug, clean up an art
+asset. But you get one year to write Hunt. You don't have time to make things perfect, you have to ship.
+Move fast, and try not to break things. A team has to choose where it will not fully resolve things for
+the sake of getting other things done.
+
+**Decisions you make early can have big repurcussions later.** One example is theme selection, which is
+always done first but influences basically the entire year afterwards. The more notable example is the
+puzzles themselves. The writing order is metametas -> metas -> feeders, and
+they have to be done serially. Each metameta or set of metas is written simultaneously, so you're
+picking how many puzzles the Hunt will have long before they exist. It's not impossible to adjust puzzle counts
+later, but it's usually pretty hard to, especially if you're considering cutting a round with a meta
+that someone worked hard on.
+
+**Team member availability will always shift.** Some people will spend less time than they expected, some
+will spend more, and in general, there are always people who will have to drop out for good reasons.
+Everyone starts excited and motivated at the start of Hunt, when you are scoping things, but by the middle
+some people will have checked out.
+
+Very soon after getting a copy of [spoilr](https://github.com/Palindrome-Puzzles/2022-hunt) in March,
+the tech team had a meeting to decide what we wanted to do for our tech stack. We saw three options:
+
+(Explain silenda here too.)
+
+* Use tph-site, reimplementing things we liked in the spoilr code.
+* Use spoilr, reimplementing things we wanted from tph-site.
+* Combine both codebases together into one Django project.
+
+Oh, I haven't described what Django is! Uhhhhh, okay, super quick crash course.
+
+Django is a Python library for building web applications. You define Python classes (normally
+called models) that represent what you want the database to look like. You then define views,
+Python functions that take incoming requests, do processing that might query from or save to the
+database, and return a response. Finally, the output
+responses get rendered to the user in the frontend. I first learned Django 10 years ago and somehow
+every website I've worked on has used it in some way. All the tech stacks I've mentioned use Django,
+including tph-site.
+
+Where tph-site differs from the other sites is on its frontend.
+Puzzlehunt CMU, gph-site, and Spoilr all use HTML template files that are rendered server side based
+on the database. This is what the Django tutorial recommend. Meanwhile, tph-site uses Django to drive
+a React + Next.js based front-end.
+
+Oh, I haven't described what React or Next.js are either! Uhhhhh, okay, round 2.
+
+React is a Javascript library whose organizing principle is that you describe your page in components,
+that each either have internal state or state passed from whatever creates the components. Each
+components describe what it ought to look like based on its state, and whenever the state is updated,
+anything that could depend on that state is entirely rerendered. This adds extra layers between your
+code and the resulting HTML, but also makes it easier to build dynamic or interactive web pages.
+You can do the same with raw Javascript, but it'll involve more boilerplate and state management
+on your end. Next.js is then a web framework that makes it easier to pass React state from the server,
+rendering pages server-side when possible to make load times faster for the users. This is especially
+useful for puzzlehunts, where you want to do as many things server-side as possible to prevent spoilers
+leaking to the front-end.
+
+The tph-site fork exists because teammate devs had experience with React, and for Teammate Hunt 2020
+implementing the Ninteamdo Playmate without React was declared a non-starter. Since then we've had
+multiple years of experience working with tph-site. Given the combination of story goals and familiarity
+with the code, we elected to stick with tph-site. At the same time, we liked parts of spoilr, so we
+decided to merge their spoilr HQ management code with the tph-site code.
+
+Like most software integrations, the end result is a bit more complicated than both in isolation, and
+tph-site was already more complex than gph-site thanks to us merging Django code with React code. As of
+the writing of this post, we're still working on cleaning up the code into a releasable state.
+
+In general, one of teammate's strengths is that we have a lot of tech literacy and software chops, so
+we're able to manage the higher tech complexity that enables the interactive puzzles and websites that
+we want to create. I'm not sure what TTBNL plans to use for their Hunt, but in general, I would only
+recommend tph-site if you have a need for lots of interactivity. Otherwise, using a purely Django
+setup like gph-site is fine. The various Galactic Puzzle Hunts prove that you can do plenty of
+interactive puzzles in that setup too.
