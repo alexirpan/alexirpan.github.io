@@ -322,9 +322,38 @@ setup like gph-site, until they know they want a more complicated frontend.
 
 # February 2022
 
-## Puzzup
+## PuzzUp
 
-TODO
+[PuzzUp](https://github.com/Palindrome-Puzzles/puzzup) is Palindrome's fork of [Puzzlord](https://github.com/galacticpuzzlehunt/puzzlord), and is a Django app for managing puzzles and testsolves. We considered
+giving it a teammate brand name and didn't because there were more important things to do.
+
+The mantra of puzzlehunt tech is that it's all about the processes. The later in the year it gets,
+the busier everyone is with puzzle writing, and good luck implementing feature requests during
+Hunt. Early in the year is therefore the best time to brainstorm ways to reduce friction in
+puzzle writing and hunt HQ management.
+
+The PuzzUp codebase had some initial Discord integrations to auto-create Discord channels when puzzles
+were created in PuzzUp. We wanted to extend this integration to auto-create testsolve channels for
+each puzzle. However, Discord limits servers to have a max of 500 channels. Based on an extrapolation
+from Teammate Hunt, we'd have more than 500 combined puzzle ideas + testsolve by the end of Mystery
+Hunt writing. (I just checked out of curiosity, and we hit 338 puzzle ideas and almost 500 testsolves by the
+end of Hunt.)
+
+We poked around and found Discord has much looser limits on threads! So anything that lets us permute
+channels into threads lets us get around the Discord limits.
+
+Here's what we landed on: all testsolves are threads. Each thread is made in a #testsolve-mute-me
+channel. Muting the channel disables all notifications from the channel. Whenever a testsolve session
+is created, the PuzzUp server would start a thread, tag everyone who should be in the testsolve,
+then immediately delete the message that linked to thread creation. The thread would still exist,
+and could be searched for, but no link would appear in the text channel. We also extended the codebase
+to have Google Drive integration, to auto-create testsolve spreadsheets for each new testsolve.
+
+I say "we" here but I did none of this work. I believe it was mostly done by Herman. Much later in
+the year, I updated the Google integration to auto-create a brainstorming spreadsheet for new puzzles,
+because I got annoyed at manually making one and linking it in PuzzUp each meeting. You don't know what will
+be tedious until you've done it for the 20th time.
+
 
 ## Puzzle Potluck
 
@@ -400,113 +429,171 @@ realities to another superposition of < 50 realities. This is probably all true,
 </div>
 
 
-March 2022 - Of Metas and MATEs
------------------------------------------------------------------------------------------------
+# March 2022
 
-Here is, very approximately, what the puzzle side of Hunt writing looks like.
+## Of Metas and MATEs
+
+The internal puzzle potluck runs! It goes well. Editors tell me that there were multiple Wordle-themed
+potluck ideas, the Hunt should only have one, and Quandle is the one they're going to go with. Hooray!
+I apologize to the other puzzles in the Wordle graveyard.
+
+Chat implementation for MATE and other AIs is coming along smoothly. teammate has multiple people with NLP experience,
+including with large language models, and for this reason we immediately know we are not going to touch
+those with a ten foot pole. We are going to stick to hardcoded chat responses, that trigger according
+to a hardcoded chat interaction graph, where at most we do a bit of NLP to determine chat intents. As
+a proof of concept, we use regex-based intents. Everyone involved with chat then gets busy, and we never
+move past regexes. I do wish we'd used one of the lightweight ML libraries for chat intents, to reduce
+the "sorry, I don't understand" replies, but I do think it was correct to deprioritize this.
+
+Meta writing is also now in earnest. I mean, it was going ever since theme finalization, but now it's
+*extra* going. Very approximately, these are the steps of writing Mystery Hunt puzzles.
 
 1. Decide on a theme.
 2. Figure out the major story beats that you want in the Hunt.
-3. In parallel, start soliciting meta proposals for rounds that aren't on the critical path of the
-story. Think, say, Lake Eerie in Mystery Hunt 2022. Good round? Absolutely! Was it critical to the
-story of that Hunt? No, not in the way that Investigation or Ministry was.
-4. Once the major story beats are decided, meta proposals for story-critical answers can begin.
-5. Release feeder answers for each meta.
+3. Ideally, your major story beats are tied to metapuzzles, since this connects the solving process
+to the narrative. Those metapuzzles block on story development. However, a bunch of
+metapuzzles are off that critical path. Think, say, [Lake Eerie](https://puzzles.mit.edu/2022/round/lake-eerie/) in Mystery Hunt 2022. Good round?
+Absolutely! Was its answer critical to the
+story of that Hunt? No, not in the way that [The Investigation](https://puzzles.mit.edu/2022/puzzle/the-investigation/) was.
+4. When story is decided, start writing the metas for story-critical answers.
+5. Once the major story beats are decided, meta proposals for story-critical answers can begin.
+6. Whenever a meta finishes testsolving, release all its feeder answers.
+7. When all your metas and feeders are done, your puzzles are done.
 
-Although I've described this as a list, all steps occur in parallel. Remember, the right model for
-writing Mystery Hunt is that you'll always run out of time somewhere. Accordingly, you don't want to block
-non story-critical metas on story, and you can release feeder answers incrementally as metas exit
-testsolving.
+Mystery Hunt writing is very fundamentally an exercise in running out of time, so everything that
+can be done in parallel *should* be done in parallel. Interestingly, for the Puzzle Factory, that
+means the AI rounds were ideated first, because their answers were not story-critical, whereas
+the Museum and Factory metas were. This was a good idea, since AI rounds were gimmicked
+for story reasons, and gimmicked rounds take longer to design.
 
-By early March, the major story beats are in the middle of design, but it's already been decided that
-each AI round in Act 3 will not be story-critical. So, interestingly, those were ideated first. This
-was good in the end, since story required every round to be gimmicked, and gimmicked rounds tend to
-take longer to write.
+There weren't too many guidelines on AI round proposals. They had to have a gimmick, and their
+final meta needed to be a feature request, but besides that anything went.
+It turns out asking teammate to come up with crazy round ideas is pretty easy! In teammate parlance,
+an "illegal" puzzle is a puzzle that breaks puzzle convention, and we like them a lot.
+I think we ended up with around 15 proposals for 4 slots.
 
-There weren't too many guidelines on AI round proposals. The main constraints were that they absolutely
-had to have a gimmick for story reasons, and their final meta answer needed to be a "feature request"
-that could be added the Puzzle Factory.
-
-It turns out asking teammate to come up with crazy ideas is pretty easy! There were a lot of round ideas,
-and the difficult part was doing the work to decide if an idea that sounded cool on paper would actually
+The difficult
+part was doing the work to decide if an idea that sounded cool on paper would actually
 work on closer inspection. One of my hobbies is Magic: the Gathering, and this issue comes up in custom
 Magic card design all the time. Very often, someone will create a card that tells a joke, or makes a cute
-reference, and it's cool to read. But if it were turned into a real card, it'd be miserable to play with.
-Similarly, we needed to find the line between round gimmicks that could support interesting puzzles
-and round gimmicks that were jokes or just made to show off.
+reference, and it's cool to read. But if it were turned into a real card, the joke wouldn't convert into
+fun gameplay.
+Similarly, we needed to find the line between round gimmicks that could support interesting puzzles,
+and round gimmicks that could not.
 
 For example, one of my round proposals was a round where every puzzle was contained entirely in its title.
-And it would involve doing some incredibly illegal things, like "the puzzle title is an animated GIF"
+It would involve doing some incredibly illegal things, like "the puzzle title is an animated GIF"
 or "the puzzle title changes whenever you refresh the page".
 There was some interest, but as soon as we sat down to design the thing, we realized the problem was
-that it was practically impossible to write a meta without designing the title for every feeder at the
-same time. The gimmick was forcing way too many constraints way too fast. So, the proposal died in a few
+that it was practically impossible to write the meta without designing the title for every feeder at the
+same time. The gimmick forced way too many constraints way too fast. So, the proposal died in a few
 hours, and as far as I'm concerned it should stay that way.
 
 There was a time loop proposal, where the round would periodically reset itself, you'd unlock different
-puzzles depending on what choices you made (what puzzles you solved), and would need to construct
-a perfect run for the meta. Thankfully it ended up losing steam.
+puzzles depending on what choices you made (what puzzles you solved), and the meta would be based
+on engineering a "perfect run". This idea lost steam, which is really for the best.
 
-In one brainstorming session, I mentioned off-hand that in a [Machine of Death](https://en.wikipedia.org/wiki/This_Is_How_You_Die) short story I read long ago, the brain scan
+In one brainstorming session, I off-handedly mentioned a [Machine of Death](https://en.wikipedia.org/wiki/This_Is_How_You_Die) short story I read long ago. In it, the brain scan
 of a Chinese woman named 愛 is confused with the backup of an AI, since both files were named "ai".
-I didn't think much of it at the time.
+I didn't think much of it at the time, but many people in that session went on to lead the Eye
+round, and I'd like to think I had some tiny contribution to that round.
 
-Carrying over a tradition from Teammate Hunt writing, we had a weekly general meeting on Thursday
-evenings. By mid-March, the story team had decided on the broad structure of story-critical metas:
-three metas in the Factory describing the alternate AIs teammate created, and one meta for the Museum
-to convey MATE's stress over writing Mystery Hunt. We split into groups to brainstorm the three
-Factory metas, which is where we came up with...
+The main round I got involved with was "Inset", which you know as Wyrm. But we'll get to that later.
 
-The Filing Cabinet
------------------------------------------------------------------------------------------------
+In one of our weekly general meetings, the plan for the Factory metas are announced. There will be
+three metas that need to deliver these story beats.
 
-I'm not sure how people normally come up with meta answers, but usually, I use RhymeZone to help look
-up rhymes and near-rhymes for puns. The brainstorm group I was in was for the Office meta, tasked with
-describing the plot point that teammate created multiple AIs before creating MATE. Looking for rhymes
-on "multiple" and "mate", we found "penultimate" in the rhyme search.
+1. There are multiple AIs.
+2. teammate discarded all AIs except for MATE.
+3. Remnants of the AIs are still causing strange things in the Mystery Hunt.
 
-> Oh, this puzzle writes itself! We'll find a bunch of lists, give a thing in the list, order by its
-> position then extract with the 2nd-last letter of the 2nd-last thing!
+We split into groups to brainstorm the three Factory metas, which is where we came up with...
 
-And, in fact, the puzzle idea did write itself! We tried a few variations, but nothing fit quite as
-well as the original version. What did not write itself was the search for feeders. A rule of thumb
+<div class="shaded" markdown="1">
+## The Filing Cabinet
+
+I'm not sure how people normally come up with meta puns. What I do is use [RhymeZone](https://www.rhymezone.com/)
+to look up rhymes and near-rhymes, then bounce back and forth until something good comes out.
+The brainstorm group I was in was focused on the "multiple AIs" story point. Looking for rhymes
+on "multiple" and "mate", we found "penultimate".
+
+At which point Patrick proclaimed, "Oh, this puzzle writes itself! We'll find a bunch of lists, give a thing
+in each list, and extract using the penultimate letter of the penultimate thing each list."
+
+And, in fact, the puzzle idea did write itself! Well, the idea did. The execution took a while to
+hammer out. A rule of thumb
 is that [there's a 10:1 ratio](https://www.ybrikman.com/writing/2018/08/12/the-10-to-1-rule-of-writing-and-programming/)
-for raw materials to final product in creative endeavors, and that held true here too - the 16 feeders
-chosen came from a set of around 140 different proposals. Our aim was to balance out the categories
-used, so not all music, not all literature, and not all things you'd consider as a well-known
-set of things (like the eight planets). We then tried to filter down to interesting phrases that
-ideally wouldn't need to be spelled letter by letter. Despite having the entire world as reference
+for raw materials to final product in creative endeavors, and that held true here too. The final puzzle
+uses 16 feeders, and this was sourced from around 140 different lists.
+Our aim was to balance out the categories used, which specifically meant not all music, not all
+literature, not all TV, and not all things you'd consider a well-known list (like the eight planets).
+Lists were further filtered down to interesting phrases that
+ideally wouldn't need to be spelled letter by letter, while still uniquely identifying their list from
+a single entry. The last point was the real killer of most lists. I liked [Ben Franklin's list
+of 13 virtues](https://fs.blog/the-thirteen-virtues/), but the words ended up being too generic.
+
+Despite having the entire world as reference
 material, some letters (especially the Ps) were really difficult to find. I remember arguing
 against SOLID YELLOW for a while, saying it was ambiguous between "green stripe" and "striped green"
-no matter what Wikipedia said, but didn't find a good enough replacement in the ~20 minutes I spent
-looking and decided I didn't care enough to argue more.
+no matter what Wikipedia said, but didn't find a good enough replacement in the 20 minutes I spent
+looking for an alternative, and decided I didn't care enough to argue more.
 
-It was a fun exercise in
-trying to sneak personal interests into a puzzle. I knew [FISH WHISPERER](https://vyletpony.bandcamp.com/album/can-openers-notebook-fish-whisperer)
-had zero chance of clearing the notability bar, and was a bit disappointed [MY VERY BEST FRIEND](https://www.google.com/search?q=madoka+magica+episodes)
-got bulldozed in the quest to fit at least 1 train station, but I'm happy
+I feel every puzzle author tries to shoehorn their personal interests into a puzzle, and this
+was a fun exercise in trying to do so.
+[FISH WHISPERER](https://vyletpony.bandcamp.com/album/can-openers-notebook-fish-whisperer) did not
+make the cut, but I knew it had zero chance of clearing the notability bar.
+[MY VERY BEST FRIEND](https://www.google.com/search?q=madoka+magica+episodes) was a funny answer
+line that got bulldozed in the quest to fit at least one train station into the puzzle, which was
+harder than you'd think. Not a great showing for stealth inserts, but I'm happy
 [WAR STORIES](https://en.wikipedia.org/wiki/Firefly_(TV_series)) stuck around until the end.
 
-Also, have a link to [Santa's reindeer fanart and fanfiction](https://holidappy.com/holidays/The-Personalities-of-Santas-Reindeer)
-discovered during testsolving, as a source for "Olive is Santa's 10th reindeer, because the
-song says 'Olive the other reindeer used to laugh and call him names'".
+Also, have a link to some [Santa's reindeer fanart and fanfiction](https://holidappy.com/holidays/The-Personalities-of-Santas-Reindeer)
+discovered during testsolving. Testsolvers cited it as a source for "Olive is Santa's 10th reindeer",
+a mondegreen from people who misheard the song as
+"Olive the other reindeer used to laugh and call him names".
 
 ![A conversation about reindeer](/public/mh-2023/reindeer.png)
 {: .centered }
+</div>
 
 
-Early April 2022 - Round and Round and Round and Round!
-------------------------------------------------------------------------------
+# Early April 2022
 
-By April, I had stopped working on other AI round proposals, in favor of the one codenamed
-as "Inset". You know them as Wyrm.
+## Round and Round and Round and Round!
 
-(Wyrm icon)
+![Wyrm](/public/mh-2023/wyrm_avatar5.png)
 
-From the start, Wyrm's proposal was "really cool fractal art", and the design around it
-was figuring out what an infinitely zooming round could look like. We had already
-testsolved a prototype of Period of Wyrm among the round authors and liked it, leaving
-the details of round structure.
+It's Wyrm time!
+
+Wyrm took *quite a while* to come together, but was started in earnest around April.
+From the start, the round proposal was "really cool fractal art", and the design around it
+was figuring out what an infinitely zooming fractal round could look like. This started with
+the metameta.
+
+<div class="shaded" markdown="1">
+### Period of Wyrm
+
+Really, I did not do much on this puzzle. The mechanics stayed the same throughout all
+testsolves. My main contributions were helping on feeder search during round writing,
+and writing a script to auto-search for equations that would give a desired period. I limited
+the search to linear functions, which was good enough most of the time.
+
+I learned a lot about how Mandelbrot periods work during this puzzle. Although we suspected that
+writing code would be the way most teams solved this puzzle, we wanted the puzzle to support
+non-coding solutions, given it was required to finish the Hunt. The way that Mandelbrot
+set periods work is based on the "bulbs" along the outer border of the Mandelbrot set. The central
+cardioid has period 1, and you can find any period by finding the right bulb connected to
+the cardioid. Each bulb is self-similar to the original set, so instead of only going around
+the central heart, you can use the bulb of a bulb. For example, to get a period of 6, you either
+use a 6-bulb, or a 3-bulb branching off a 2-bulb, or a 2-bulb branching off a 3-bulb. Long story
+short, composite periods are easier than prime ones.
+
+Qualitatively, the period converges faster if the point is towards the middle of the bulb, so
+we tried to do that when possible.
+We also aimed to use the largest bulb per period reduce precision needed to the solve the puzzle,
+and tried to have the points spread out across the border of the Mandelbrot Set (a holdover from
+an earlier version of the puzzle that hinted it less strongly).
+</div>
 
 We picked the cyclic round structure for the sake of making something easier to write. During
 the design process, I noted that our Hunt had a lot of similarities to Mystery Hunt 2018:
