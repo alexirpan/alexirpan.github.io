@@ -590,10 +590,47 @@ short, composite periods are easier than prime ones.
 
 Qualitatively, the period converges faster if the point is towards the middle of the bulb, so
 we tried to do that when possible.
-We also aimed to use the largest bulb per period reduce precision needed to the solve the puzzle,
-and tried to have the points spread out across the border of the Mandelbrot Set (a holdover from
-an earlier version of the puzzle that hinted it less strongly).
+We also aimed to use the largest bulb per period to reduce precision needed to the solve the puzzle,
+and spread the points across the border of the Mandelbrot set (a holdover from
+an earlier version of the puzzle that hinted the Mandelbrot set less strongly).
+
+The puzzle was very deliberately designed to be flexible enough for any answer, as long as we
+had a good enough set of feeders.
 </div>
+
+The round structure went through multiple iterations, done over Jamboard. Here's a version where
+every puzzle would be 1/4th of a future puzzle:
+
+[Wyrm brainstorm](/public/mh-2023/Inset Jam 6.png)
+{: .centered }
+
+Here's one where every puzzle's answer would depend on answers from the previous layer,
+such that one puzzle could be backsolved per layer.
+
+[Wyrm brainstorm 2](/public/mh-2023/Inset Jam 3.png)
+{: .centered }
+
+And here's one where the entire round would be serial, each puzzle would rely on the
+previous puzzle's answer, and you'd need to figure out how to bootstrap from nothing to solve
+the entire round.
+
+[Wyrm brainstorm 3](/public/mh-2023/inset_jam_line.png)
+{: .centered }
+
+Most of these ideas would have been quite tricky to pull off, especially given we needed to
+fit it within the Period of Wyrm constraints. This led to the cyclic round structure proposal.
+Each layer would be normal puzzles, building to a meta, which would then be 1 pre-solved feeder
+for the next layer's meta. The rounds would then form a cycle, where the last meta would be a feeder
+in the first layer. This restricted the "weirdness"
+to just the metas of each layer, and all regular feeders in each layer could be written without
+constraints besides the answer. The zoom direction of moving outwards rather than inwards was
+done to make it more distinct from [⊥IW.giga](https://puzzles.mit.edu/2021/round/giga/).
+
+Our first plan was to have one unsolvable puzzle in the first layer of puzzles, that would
+become solvable once you got to the last layer of puzzles. This idea got discarded pretty
+early because it didn't feel very impactful, it seemed hard to guarantee that a puzzle couldn't
+be backsolved, and giving teams an unsolvable puzzle would be pretty rude. That led to the
+road of a metapuzzle disguised as a feeder puzzle.
 
 We picked the cyclic round structure for the sake of making something easier to write. During
 the design process, I noted that our Hunt had a lot of similarities to Mystery Hunt 2018:
