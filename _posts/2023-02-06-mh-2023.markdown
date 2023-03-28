@@ -626,25 +626,26 @@ to just the metas of each layer, and all regular feeders in each layer could be 
 constraints besides the answer. The zoom direction of moving outwards rather than inwards was
 done to make it more distinct from [⊥IW.giga](https://puzzles.mit.edu/2021/round/giga/).
 
+[Wyrm last brainstrom](/public/mh-2023/Inset Jam 2.png)
+{: .centered }
+
 Our first plan was to have one unsolvable puzzle in the first layer of puzzles, that would
 become solvable once you got to the last layer of puzzles. This idea got discarded pretty
 early because it didn't feel very impactful, it seemed hard to guarantee that a puzzle couldn't
 be backsolved, and giving teams an unsolvable puzzle would be pretty rude. That led to the
-road of a metapuzzle disguised as a feeder puzzle.
+road of creating a metapuzzle disguised as a feeder puzzle, solvable from 0 feeders but still
+allowing for backsolving of feeders. Figuring out exactly what that meant would be a future problem.
 
-We picked the cyclic round structure for the sake of making something easier to write. During
-the design process, I noted that our Hunt had a lot of similarities to Mystery Hunt 2018:
-a goal to reduce raw puzzle counts, in favor of complex meta structures. Although I joined
-the Wyrm round late (after the metameta test), I ended up self-assigning myself a lot of
-work in figuring out the metas and answer constraints, since I didn't have any leadership
-responsibilities and tech was still on the slow side for now.
-
-As homework for the design, I spent a lot of time reading through the solutions for
-both the Sci-Fi round and Pokemon rounds from Mystery Hunt 2018, since they had a similar
-flavor of overlapping constraints between meta and metameta. When I solved the 2018 Hunt,
-I remembered finding [The Advertiser](http://puzzles.mit.edu/2018/full/puzzle/the_advertiser.html)
-a bit dull, but on a reread, I could appreciate that it was a way to limit the constraints
-placed on the answers.
+Since I didn't have any leadership responsibilities, and tech was still on the slow side,
+I ended up self-assigning myself a lot of work in brainstorming metas that fit the answer
+constraints.
+I noted that our Hunt had a lot of similarities to Mystery Hunt 2018:
+a goal to reduce raw puzzle counts, but including complex meta structures in their stead.
+As homework, I spent a lot of time reading through the solutions for
+both the Sci-Fi round and Pokemon rounds from Mystery Hunt 2018, since they also had
+overlapping constraints between metas and metametas. Going through each solution several times,
+I started to appreciate some 2018 metas that I found dull at the time, but which made the round
+construction possible when viewed through a constructor's lens.
 
 You can read more about the Wyrm answer design process in the AMA reply here, but in short,
 metas range between using answers semantically and using answers syntactically. Since the metameta
