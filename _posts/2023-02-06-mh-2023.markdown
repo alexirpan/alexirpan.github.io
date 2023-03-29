@@ -557,7 +557,7 @@ a mondegreen from people who misheard the song as
 </div>
 
 
-# Early April 2022
+# April 2022
 
 ## Round and Round and Round and Round!
 
@@ -647,27 +647,33 @@ overlapping constraints between metas and metametas. Going through each solution
 I started to appreciate some 2018 metas that I found dull at the time, but which made the round
 construction possible when viewed through a constructor's lens.
 
-You can read more about the Wyrm answer design process in the AMA reply here, but in short,
-metas range between using answers semantically and using answers syntactically. Since the metameta
-forced semantic constraints, almost all metas were based on brainstorming syntax based ideas.
-The first step was generating a list of categories for the metameta, to find answers that
-could also be good meta answers. This ended with a list of around 60 categories, of which 13 were used in the end.
-An early search turned up FELLOWSHIP = FELLOW SHIP for an
-answer that naturally lent itself to a pun, and INCEPTION as a good "teaser" answer for
-the rest of the round. From there, all the metas were written simultaneously, keeping an
-eye out for what categories a meta wanted to use, and trying to reduce the number of
-half-used categories as much as possible. For example, if the ship meta wanted to
-use MONTGOMERY BURNS from the "Socialist" category for the USS Montgomery, then we'd try
-to fit TODD DAVIS into a meta to reduce the spaghetti
-needed at the end.
+You can read more about the Wyrm answer design process in an AMA reply I wrote [here](https://www.reddit.com/r/mysteryhunt/comments/10iq756/comment/j5gehcg/). The short version is that all metas
+range between using answers semantically and using answers syntactically. The Period of Wyrm
+metameta forced semantic constraints, and the first Wyrm meta written (Lost at Sea) also used
+semantic constraints. This forced the remaining metas to be syntax based.
 
-Now, the example I just gave didn't actually get used, because we decided TODD DAVIS was too
-ambiguous, and large numbers forced awkward equations in the meta. INCEPTION got a free pass because
-it was too good of an answer, but we tried to keep the remaining numbers under 100. Too bad,
-since "Socialist" was my favorite category that didn't make the cut. The only category that
-was treated as required was Hausdorff, since we believed it was a key hint towards the
-metameta. (At the time, the only hint towards Mandelbrot Set was the flavor text and
-round structure.) Factchecking that particular category was a fun time.
+Over a few months, all the Wyrm metas were drafted and tested in parallel, using one central
+coordination spreadsheet to track the metameta categories used. Around 60 different categories
+were considered for the metameta, of which 13 were used, so more like a 5:1 ratio instead of
+a 10:1 ratio. Feeders were constantly shuffled between metas as we found better answers that
+satisfied the constraints, or changed meta designs to loosen their constraints enough
+to make feeders work.
+
+We knew early on that some categories would be fixed. The category that led to INCEPTION
+was just too good as a "teaser" answer for the rest of the round, and got quickly locked in
+as the answer to Wyrm's first layer. The FELLOWSHIP and EYE OF PROVIDENCE categories were
+locked in early as well, to fit the meta they went towards. My favorite category that didn't
+make it was "Socialist", for Social Security Numbers, using MONTGOMERY BURNS and TODD DAVIS.
+It got cut because we decided TODD DAVIS was a bit ambiguous with an "Athlete" category we
+were considering, and larger numbers would have forced awkward equations in the meta. Too bad,
+the juxtaposition of two capitalists getting labeled "Socialists" would have been great.
+
+The other category we wanted to force was Hausdorff, since at the time Period of Wyrm did not
+have as strong of a hint towards Mandelbrot Set. There were no names, just occupations, and
+the Mandelbrot Set needed to be inferred from the flavor and round structure. Thus, we wanted
+as many context clues pointing to fractals as possible.
+
+I factchecked that category, which was a fun time. I'll quote my despair directly.
 
 > aw man why have so many recreational math people tried to estimate the dimension of brocolli and cauliflower
 >
@@ -681,40 +687,37 @@ round structure.) Factchecking that particular category was a fun time.
 >
 > 2) "balls of crumpled paper", which is usually estimated at dimension 2.5 and I found a few different sites that repeat the same number (along with 1 site that didn't but the one that didn't was purely experimental whereas the wikipedia argument is a bit more principled)
 
-After more investigation, I found that the Hausdorff dimension of coastlines is only really well-defined
-for Great Britain, where both the original paper by Benoît Mandelbrot and almost all online sources
-agree it's 1.25-dimensional. Every other coastline in Wikipedia's list relied on a Springer book from
-1988 that was hard to verify, and online reproductions of the dimensions of Ireland, Norway, etc. gave
-different values than that book. Which was quite annoying, because it meant our uncuttable category had
-a mandatory answer.
+When I checked deeper, I found that actually the coastline paradox is well-known enough that multiple
+groups have checked the dimension of coastlines, getting different results, so those aren't canonical
+either. The only one that was consistent was Great Britain, whose dimension of 1.25 is repeated in both
+the original paper by Benoit Mandelbrot and all other online sources I could find.
 
 In my experience, factchecking is the most underappreciated part of the puzzle writing process.
 The aim of factchecking is to make sure that every clue in the puzzle is both true, and only
 has one unique solution. And even with the solution, this can take a long time to verify, on par with
 solving the puzzle forward.
 Although Wikipedia is the most likely source for puzzle information, Wikipedia
-isn't always correct, and it's important to verify multiple sources share consensus, because you never
+isn't always correct, and it's important to verify all reasonable sources share consensus. You never
 know what wild source a puzzler will use during Hunt.
 
 (Sometimes, that consensus can be wrong and you still have to go with
 it for the sake of solvability! See Author's Notes for
 [Hibernating and Flying South](https://2021.galacticpuzzlehunt.com/puzzle/hibernating-and-flying-south)
-from GPH 2022. It's unfortunate to propagate falsehoods, but sometimes that's how it goes.)
+from GPH 2022 for an example, or the Author's Notes for Museum Rules from Mystery Hunt 2023. It's
+unfortunate to propagate falsehoods, but sometimes that's how it goes.)
 
 
-Mid April 2022 - The First Writing Retreat
-------------------------------------------------------------------------------------------
+## The First Bay Area Retreat
 
-The first writing retreat was not a team-wide gathering. The logistics of gathering everyone was hard,
-and the COVID situation around April was also tenuous in many ways. We decided that instead, we would
-have smaller retreats around geographic hubs, one of them in the Bay Area. The aim was partly to
-do general puzzle writing, and partly to meet people on the team who lived nearby.
+This year teammate was spread out, with rough hubs around the Bay Area,
+Seattle, and New England. We held a meetup for Bay Area people, for people who felt the COVID exposure
+potential was within their risk tolerance.
 
-We started brainstorming the start of Weaver at this retreat. The full story will come later, but this
-was the first time where Brian mentioned wanting to make an underwater basket weaving puzzle, using
-special ink that dried white and became transparent when wet. The idea sounded **awesome**, so we did
-some brainstorming around what the mechanics should be (different weaving patterns, presumably), as
-well as some exploration into the costs. Then we came across an [Amazon review by one Daniel Egnor](https://www.amazon.com/gp/customer-reviews/R2HQQ7DWE56RY1/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086Q344PQ).
+We started brainstorming Weaver at this retreat. Much of the work would be done later, but April was when
+Brian first mentioned wanting to make an underwater basket weaving puzzle, using
+special hydrochromic ink that dried white and became transparent when wet. The idea sounded super cool,
+so we did some brainstorming around what the mechanics should be (different weaving patterns, presumably), as
+well as some exploration into the costs. I then found an [Amazon review by one Daniel Egnor](https://www.amazon.com/gp/customer-reviews/R2HQQ7DWE56RY1/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086Q344PQ).
 
 > I've tried a bunch of hydrochromic paints and they're all kinda like this one. It's a fun idea in theory -- a paint that goes on white when dry and turns clear when wet, so you can reveal something fun on your shower tile or umbrella or sidewalk.
 >
@@ -725,40 +728,52 @@ well as some exploration into the costs. Then we came across an [Amazon review b
 For those who don't know, [Puzzle Hunt Calendar](http://puzzlehuntcalendar.com/) is run by Dan Egnor.
 I assume they're the same person. This was possibly the most helpful Amazon review of all time, and
 it suggested our idea was dead in the water (pun intended).
+This was super sad, but underwater basket weaving was too compelling to discard entirely, so Brian
+ordered some to experiment with later.
 
-Still, underwater basket weaving was too compelling to discard entirely, so Brian ordered some to
-experiment with later.
+We then shifted gears to writing puzzles for the newly released Factory meta answers, finishing
+a draft of:
 
-We then moved on to writing a draft of another puzzle:
-
-Broken Wheel
-----------------------------------------------------------------------------------------------
+<div class="shaded" markdown="1">
+### Broken Wheel
 
 This is one of those puzzles generated entirely from the puzzle answer. There were a few
-actually-serious proposals about treating the answer as PSY CLONE and doing some Gangnam Style
-shitpost, but, I mean, there's already been one Gangnam Style Mystery Hunt puzzle, it doesn't need
-a second.
+half-serious proposals about treating the answer as PSY CLONE and doing a Gangnam Style
+shitpost, but they died after I said ["It's been done"](https://puzzles.mit.edu/2013/coinheist.com/feynman/sages_style/index.html).
 
-Alright, then what is a Psyclone? There are two amusement park rides named the Psyclone, one of which is a spinning ring.
-How about a circular crossword that spins?
+Alright, what is a Psyclone? There are two amusement park rides named the Psyclone, one of which is a spinning ring.
+How about a circular crossword that spins? That naturally led to the rotation mechanic.
 There were some
 concerns about constraints, but I cited [Remy](https://puzzles.mit.edu/2022/puzzle/remy/) from
 Mystery Hunt 2022 to argue that it'd be okay to not check every square of the crossword.
-This is the kind of puzzle that was easy to construct in parallel. I guess that shouldn't be
+The entire first draft was written in a few hours, since we had a lot of people and it was
+very easy to construct in parallel. I guess that shouldn't be
 surprising, since crosswords are easy to solve in parallel too.
 
 Enumerations were added in the middle of the first testsolve because it was too hard to get
 started without them. As for the final rotation, we went through many iterations of
 flavortext and clue highlighting, before settling on placing the important clue first and
 mentioning "Perhaps they can be rotated" directly in the flavortext. "Rotated"
-in particular (over "spin" or "realigned") seemed to be the magic word that got testers on the
-right idea.
+in particular (over "spin" or "realigned") seemed to be the magic word that got testers thinking
+about the right idea. It was a good reminder of how much subconscious processing people do
+in puzzlehunts.
+</div>
+
+## "I Have a Conspiracy"
+
+It is late April, and the round structure of Hunt is starting to solidify.
+
+* Five Museum rounds, that will combine into one metameta where both the metas and feeders are important.
+* Three Factory rounds, one of which will be about solvers "creating their own round" (this would
+later evolve into the Hall of Innovation)
+* Four AI rounds, where the four AIs are locked in as Wyrm, Boötes, Eye, and Conjuri. These are the
+four AI ideas that have the most partial progress. There wasn't a formal selection process for this,
+it was more that team effort needed to be directed elsewhere.
+
+The aim is to write a shorter Hunt of around 150-160 puzzles, rather than 190-200 puzzles. Sometime
+earlier in the year, we had a discussion
 
 
-Late April 2022 - "I Have a Conspiracy"
-------------------------------------------------------------------------------------------
-
-By now, the general shape of the AI rounds had been picked: Wyrm, Boötes, Eye, and Conjuri.
 Also around this time, the story team was brainstorming how to convey the midpoint capstone of the
 hunt, where solvers would reactivate old AIs, teammate would shut down Mystery Hunt, and solvers would
 repower the factory by solving scraps of puzzles leftover in the factory post-shutdown.
