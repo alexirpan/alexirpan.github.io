@@ -761,7 +761,7 @@ in puzzlehunts.
 
 ## "I Have a Conspiracy"
 
-It is late April, and the round structure of Hunt is starting to solidify.
+It is late April, and the round structure of Hunt is solidified.
 
 * Five Museum rounds, that will combine into one metameta where both the metas and feeders are important.
 * Three Factory rounds, one of which will be about solvers "creating their own round" (this would
@@ -770,45 +770,55 @@ later evolve into the Hall of Innovation)
 four AI ideas that have the most partial progress. There wasn't a formal selection process for this,
 it was more that team effort needed to be directed elsewhere.
 
-The aim is to write a shorter Hunt of around 150-160 puzzles, rather than 190-200 puzzles. Sometime
-earlier in the year, we had a discussion
+The aim is to end up with around 150-160 puzzles. At planning time, teammate was around 50 people and
+we thought we'd literally die if we tried to write a 190+ puzzle hunt. We still ended up doing a lot
+of external recruiting partway through the year to get over the finish line - I'd guess the writing team
+net grew by 25% between the start and the end, and this is accounting for people who dropped out due to
+life reasons.
 
+There were two lingering problems. One, the Wyrm round was significantly larger than all the other AI
+rounds. Two, the story team was figuring out details of the midpoint capstone interaction. At the midpoint
+of the Hunt,
 
-Also around this time, the story team was brainstorming how to convey the midpoint capstone of the
-hunt, where solvers would reactivate old AIs, teammate would shut down Mystery Hunt, and solvers would
-repower the factory by solving scraps of puzzles leftover in the factory post-shutdown.
-(This Puzzle Factory runs on puzzles, after all!)
+1. Solvers should reactivate the old AIs.
+2. This causes teammate to shutdown the Puzzle Factory and Mystery Hunt
+3. Solvers should then start powering up the Factory by solving puzzles that were in the process of getting
+created for Mystery Hunt.
+4. Which should then be enough to cause the old AIs to wake up and start writing their own puzzles, letting
+teams continue powering up the Factory until endgame.
 
-At the same time, the Wyrm round was significantly larger than all the other AI rounds.
-In one general meeting, the Wyrm round
+The question is, what are the puzzles in step 3?
+
+At one general meeting, the Wyrm round
 authors and Museum metameta authors were gathered into a meeting with the editors-in-chief and
-creative leads for a conspiracy: what if Act 1 feeders from the Museum repeated in Wyrm's round?
+creative leads for a conspiracy: what if Act I feeders from the Museum repeated in Wyrm's round?
 
-This would solve two problems at once:
+This proposal filled a lot of holes.
 
-* The time spent in Wyrm's round for Act 3 could be cut by 6 solves, bringing it in line with the
-other AI rounds.
-* The reused feeders could become the story justification for puzzles that teams solved after shutdown
-to start bringing power back to the Factory.
-
-Wyrm was also the best AI round for reusing feeders, since Boötes and Eye had answer gimmicks and
-Conjuri would not be able to finalize its answers until the game was more developed. It would also
-have other benefits:
-
+* Wyrm's round would be 6 puzzles shorter, bringing its size in line with other AI rounds. Between the
+repeated puzzles and backsolved puzzles, there would be around 13 "real" puzzles total.
+* The reused feeders could become the puzzles solved after shutdown. It would be reasonable for copies
+of those feeders to be leftover in the Factory.
+* The gimmick for Wyrm was in the structure, not the feeder answers. Out of the four AI rounds it was
+most suited to repeated feeders.
 * The overall hunt would require 6 fewer puzzles to write. Puzzle production was starting to fall
 under the target trendline of all puzzles written by December, and reducing feeders was one way to
 catch up.
 * If we could make that set of feeders fit 4 meta constraints (Museum meta, Museum metameta, Wyrm
 meta, Wyrm metameta), it'd be really cool.
 
-Making this happen would be quite hard. We needed to make a call on whether this
-was ambitious-but-doable, or too ambitious. We decided to go for it, with a backdoor of letting ourselves
-exit early if it ended up being impossible.
+Making this happen would be quite hard. The first step was a testsolve of the Museum metameta, so that we knew
+what we'd be signing up for. After getting spoiled on MATE's META. we discussed whether this was
+ambitious-but-doable, or too ambitious. It seemed very close to too ambitious, but we decided to go for it
+with a backup option of reversing the decision if it ended up being impossible.
 
-Although I'm happy we pulled it off, given another chance I would have argued against this.
+It made it to Hunt, so we *did* pull it off. I'm happy about that, but given a do-over chance I would
+have argued against this more strongly.
 First of all, I don't think many solvers really noticed the overlapping constraints. It leaned too
-hard towards "interesting design problem" without a corresponding "fun" payoff. The more problematic
-issue that I only realized in retrospect was what it did to feeder release.
+hard towards "showing you can solve an interesting design problem" without a big enough "fun" or
+"wow" payoff. (In contrast, the gimmicks of the AI rounds are much more obvious and easy to appreciate.)
+
+The more problematic issue that I only realized in retrospect was how much it delayed feeder release.
 To recap, here is the state of Hunt by this point:
 
 * The Office meta is done and its feeders are released.
