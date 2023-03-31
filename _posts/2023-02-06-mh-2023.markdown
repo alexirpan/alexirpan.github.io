@@ -184,6 +184,13 @@ We talked a bit about whether this was okay, since some organizers for Teammate 
 writing Hunt this year. In the end we decided it was fine. At most there would
 be plot spoilers, not meta spoilers.
 
+We liked the story structure of Mystery Hunt 2022 a lot, and almost all theme proposals were structured
+around a "three Act" framework, where Act I introduced the plot, Act II built up to a midpoint story event,
+and Act III resolved that event.
+
+![Theme proposal](/public/mh-2023/theme.png)
+{: .centered }
+
 A few members with past Mystery Hunt experience
 mentioned that theme ideation could get contentious. People naturally get invested in themes,
 and spend time polishing their theme proposal. People working on *other* themes would observe
@@ -818,204 +825,217 @@ First of all, I don't think many solvers really noticed the overlapping constrai
 hard towards "showing you can solve an interesting design problem" without a big enough "fun" or
 "wow" payoff. (In contrast, the gimmicks of the AI rounds are much more obvious and easy to appreciate.)
 
-The more problematic issue that I only realized in retrospect was how much it delayed feeder release.
-To recap, here is the state of Hunt by this point:
+The more problematic issue that was not clear until later was the way it delayed feeder release.
+Here is the rough state of Hunt by late April.
 
 * The Office meta is done and its feeders are released.
-* The Basement meta is on a final double-check round of testsolving, but its feeders have already
-been released and this is just to verify some minor edits.
-* Innovation and Factory Floor is doing its own crazy thing, and won't be ready for a while.
-* All AI rounds are in the middle of design, but it's already known that Bootes and Eye will have
-answer gimmicks that make their puzzles harder to write, and Conjuri feeders will likely be
-released last because the meta relies on developing the game.
-* The Museum metameta is roughly done, but the Museum metas have yet to be written.
-* The Wyrm metameta is roughly done, but the Wyrm metas still need to be written.
+* The Basement meta will go through more testsolving when the final art assets are in, but is essentially
+  finalized and its feeders are released.
+* All AI rounds are in the middle of design and are not ready to release feeders.
+* Innovation and Factory Floor is doing its own crazy thing, and won't be ready for some time.
 
-By connecting feeders between Act 1 and Act 3, we were creating a dependency between the
-5 Museum metas and 4 Wyrm metas. Including a retest of the 2 metametas after feeders were locked
-down, that's **eleven** metas blocking answer release. (Technically, ten metas, since Collage
-could be assembled after the other 3 Wyrm metas as long as all three were finalized.)
-All of those metas
-needed to get to a testsolved state before it would be safe to release any of their feeder answers.
-There were 53 feeders in that pool, which is approximately 40% of the feeders in the entire Hunt
-and a majority of the non-gimmicked feeders.
+In short, there were 2 rounds of feeders open for writing, and every other round
+was not. It is already known that Bootes and Eye will have answer gimmicks that make their puzzles harder to
+write, and Conjuri feeders will likely be released quite late since the meta relies on developing and
+designing the game.
 
-I'd estimate that the extra design constraints delayed the release of that pool of 53 feeders by 2-4 weeks, and this
-wasn't time we had. Perhaps in a more typical Hunt, this would have been fine, but the AI rounds
-had already spent a lot of complexity budget and this may have pushed it over. Instead of reusing
-feeders, we could have use silly incomplete puzzles like 2x2 Masyus, and still gotten the benefits
-of six fewer AI round puzzles with less work and fewer design complications.
+The status quo is that all the Museum feeders can't be released until five Museum metas pass testsolving,
+and all the Wyrm feeders can't be released until four Wyrm metas pass testsolving. Including retests of
+the metameta, this is 6 metas blocking Museum and 5 metas blocking Wyrm. Repeating feeders between Musem
+and Wyrm literally turned it up to 11 metas blocking both sets of feeders. There were 53 feeders in that
+pool, about 40% of the feeders in the whole Hunt.
 
-Hunt writing tends to follow a [Zipfian distribution](https://en.wikipedia.org/wiki/Zipf%27s_law).
-A small number of people will write many puzzles (or do a lot of leadership work), and a long tail
-of people will write a small number of puzzles each. Usually, that long tail is where all the
-new puzzle writers are. Put yourself in novice puzzle writer shoes. Do you want to write a puzzle
-where whitespace and capitalization matters, a puzzle that must be closely tied to a language, or a normal
-puzzle? Unless you're really excited about an idea for the gimmick, you'd probably prefer a normal
-puzzle answer. If you didn't get in on the two rounds that had feeders released, then you had to
-wait.
+Most of the non-gimmicked feeders were in that
+pool as well, leaving fewer slots for people who just wanted to write a normal puzzle. I don't have
+any numbers on whether teammate writers were more interested in writing regular puzzles or gimmicked
+puzzles, but I suspect most of the newer writers wanted to write puzzles with regular feeders, and did not have
+as much to do while the metas were getting worked out.
 
-This isn't quite as bad as I'm making it out to be.
-There's useful work that can be done without knowing the puzzle feeder. In general though, if you
-have a feeder from the start, you'll do less redundant work, it's easier to stay motivated if you're
-expected to pull through on a puzzle, and you can brainstorm ideas from the puzzle answer rather
-than trying to generate one from the ether.
+I'd estimate that the extra design constraints delayed the release of that pool of 53 feeders by 2-4 weeks.
+It forced more work on Museum meta designers who already needed to fit their meta pun and
+feeders into the metameta mechanic.
+Perhaps in a more typical Hunt, this would have been fine, but the AI rounds had already spent
+a lot of complexity budget and this probably put us in complexity debt.
 
 But, this is all said with hindsight. At the time, I did not realize the consequences and I'm
-not sure anyone else did either. Adding more complexity to round structures mostly seemed like a teammate thing to try doing, and we told
-ourselves that if we found it too hard we'd leave the option of reverting back if we couldn't make
-it work.
-
-People say "restrictions breed creativity", but what they don't say is that it's not necessarily
-*fun*. The process of finding feeders that fit both Wyrm and Museum metameta constraints took a
-long time, but interestingly writing The Legend around those feeders wasn't so bad.
+not sure anyone else did either. It did genuinely fix problems in the Hunt and story structure,
+it's just there were other ways to fix them that would have made things easier.
 
 
-The Legend
------------------------------------------------------------------------
+### The Legend
+
+Part of the deal for accepting the repeated feeders constraint was editors-in-chief signing up to
+help design and push the relevant metas. The Legend was the meta brainstormed to take all the
+repeated feeders, and needed to be designed to take pretty much any answer.
+
+People say "restrictions breed creativity". That's true, but what they don't say is that meeting those
+restrictions is not necessarily *fun*. It's work. Rewarding and interesting work, but still work.
 
 Before
-deciding to share feeders, I had sketched some ideas around using the Sierpinski triangle, after
+the decision to repeat feeders, I had sketched some ideas around using the Sierpinski triangle, after
 noticing INCEPTION was $$9 = 3^2$$ letters long. The shape is most commonly associated with
 Zelda in pop culture, so ideas naturally flowed that way.
 
 ![Prototype Legend triangle](/public/mh-2023/triangle.svg)
 {: .centered }
 
-The early prototype was reference heavy and not too satisfying, extracting one letter per
-triangle. After talking with Patrick a bit, he proposed turning it into a logic puzzle, by
-scaling up to 27 triangles, and cutting out all the intermediate steps. This was especially
-appealing because it meant we could take almost any feeders, as long as their total length
-was close to around 60. Around this time, Brian mentioned that TRIFORCE was a plausible answer
-for both the Museum and Wyrm metameta, so if we could make the Sierpinski idea work,
-everything would come together nicely for prepping the infinite loop.
+The early prototype associated one feeder per triangle, extracting letters via Zelda lore. It
+was reference heavy and not too satisfying.
+After talking with Patrick a bit, he proposed turning it into a logic puzzle, by scaling up to
+27 triangles, giving letters directly, and having feeders appear as paths in the fractal.
 
-This was all great, with one small problem: I'd never written a logic puzzle in my life.
+This was especially
+appealing because it meant we could take almost any feeders, as long as their total length
+was around 60-70 letters. Brian was spoiled on some of the Museum metas
+mentioned that TRIFORCE was a plausible answer for both the Museum and Wyrm metameta, so
+if we could make the Sierpinski idea work, we could do a "triangle shitpost" by making TRIFORCE
+the looping answer for the round.
+
+Cool! One small problem: I've never written a logic puzzle in my life.
+
 There are, broadly, two approaches to writing a logic puzzle.
 
-1. Start with an empty grid. Place a small number of given clues, then solve the logic puzzle forward
-until you can't make any more deductions. Add the clue you wish you had at that part of the solve,
-then solve forward again, until you've filled the entire grid. Then remove everything except the
-givens you placed along the way.
+1. Start with an empty grid and an idea for the key logical steps you want the puzzle to use.
+Place a small number of given clues, then solve the logic puzzle forward
+until you can't make any more deductions. Add the given clue you wish you had make progress,
+then solve forward again. Repeat until you've filled the entire grid. Then remove everything
+except the givens you placed along the way, and check it solves correctly.
 2. Implement the rules of the logic puzzle in code, and computer generate a solution.
 
-Option 1 tends to be favored by logic puzzle fans, because by starting from an empty grid you
-essentially create the solve path as you go. This makes it easier to create a novel interesting
-solve path. The computer approach tends to create what puzzle snobs call "computer generated crap".
-(See the many books of 500 random Sudokus that took two minutes to create and feel identical after
-the 10th one.) It may tend to be less interesting, but it was also *much* faster, and I knew I
-was going to eventually want a solver to verify uniqueness. So I went with option 2.
+Option 1 tends to be favored by logic puzzle fans. By starting from an empty grid, you
+essentially create the solve path as you go, and this makes it easier to design cool a-has.
 
-I started with [grilops](https://github.com/obijywk/grilops), then realized it didn't support
-custom grid shapes, so I ended up implementing the solver myself in Z3, a constraint satisfaction
-library that grilops uses.
-I then needed to figure out how to represent
-the Sierpinski triangle grid in code. After some exploration I figured out a very
-satisfying coordinate system. Let 0, 1, 2 be the top, left, or right corner of the triangle. Then
-a single letter could be described by the path you took at each level of the Sierpinski triangle,
-starting from the biggest triangle and working inward.
+Option 2 makes it way easier to mass produce puzzles if, like, you're running a newspaper and want
+to have one Sudoku in every issue. Puzzle snobs may call this "computer generated crap" because
+after you've done a few computer generated puzzles, you are usually going through the motions.
 
-(explanatory diagram)
+I knew I was going to eventually want a solver to verify uniqueness. So I went with option 2.
 
-With 27 triangles, each letter would be at $$(a, b, c, d)$$, and then to check if two letters
-are neighbors, we can also check this recursively.
+I have some familiarity with writing logic puzzle solvers in [Z3](https://github.com/Z3Prover/z3),
+since I like starting logic puzzles but am quite bad at finishing them. My plan was to use
+[grilops](https://github.com/obijywk/grilops), but I found it didn't support the custom grid shapes
+I wanted. Instead, I referred to the grilops implementation for how to encode path constraints, then
+wrote it myself.
 
-* If $$a$$ do not match, then it's enough to check the neighbors of the largest triangles.
-* If $$a$$ matches, then we can recursively check if $$(b, c, d)$$ are neighbors in the smaller
-Sierpinksi triangle.
+Figuring out how to represent a Sierpinski triangle grid in code was a bit of a trip. The solution
+I ended up at was pretty cool.
 
-(diagram 2)
+* A Sierpinski triangle of size 1 is a single triangle with points $$0, 1, 2$$.
+* A Sierpinski triangle of size 2 is three triangles with points $$(0,0), (0,1), (0,2), (1,0), (1,1)$$, and so
+on up to $$(2,2)$$.
+* A Sierpinski triangle of size N is three Sierpinski triangles of size N-1. Points are elements of
+$$\{0,1,2\}^N$$. The first entry decides which N-1 triangle you recurse into and the rest
+describe your position in the smaller triangle.
+
+![Coordinate diagram](/public/mh-2023/sierpinski_coord.png)
+{: .centered }
+
+Checking if two points are neighbors can then also be checked recursively.
+
+* If their first entries are the same, chop off the first entry and recursively check if the points
+are neighbors in the triangle one level smaller.
+* If their first entries differ, they are in different top-level triangles, and the only three cases are $$0111-1110$$, $$0222-2000$$, and
+$$1222-2111$$.
+
+![Adjacency diagram](/public/mh-2023/triangle_neighbor.svg)
+{: .centered }
 
 The first draft of my code took 3 hours to generate a puzzle, and the uniqueness check failed
-to finish. Still, when I sent it to other authors they found the same solution,
-so we sent it to testsolving to get early feedback while I worked on speeding up my solver.
+to finish when left overnight. Still, when I sent it to editors, they were able to find the same
+solution my code did by hand,
+so we sent it to testsolving to get early feedback while I worked on improving my solver.
 
 Testsolving went well. The first testsolve took pretty much exactly as long as we wanted it to
 (2 hours with 5/6 feeders), and solvers were able to use the Sierpinski structure to logic out
 deductions that combined into the final grid. Not too bad for a computer generated
-puzzle! This was a case where we "got lucky", and discovered a solve path that felt like
-a designed one.
+puzzle! This was very much a case of "getting lucky", where we discovered a logic puzzle format
+constrained enough that the solve path naturally felt a bit like a designed one.
 
-I found a way to describe the letter constraints in Z3 that made the solver run 10x faster
-(more precisely, I stopped describing constraints in a dumb way), and played around with the
-feeders until I got a solution that verified as unique. There were around 5 different fills,
-and I suspect all of them were unique, but I was only able to get my code to halt on one of them
-and didn't particularly feel like trying to prove the rest.
+I tried alternate means of encoding the constraint that every small triangle had to come from
+the given set of 27, and every triangle needed to be used exactly once. Swapping some ugly
+and-or clauses into if-else clauses got Z3 to generate fills 10x faster, but when switched to solve
+mode, it still failed to verify uniqueness.
 
-After the first draft, there were only two revisions. The first was deciding how much hinting to give
-towards the Sierpinski triangle, since that was the step with the largest leap of faith. In the
-end we decided to hint that all triangles should stay upright, and the final shape should
-be triangular, leaving the rest as an a-ha to find.
+At this point I decided to step in and mess around with different fills by hand. The goal was
+to minimize the number of triangles where 2+ letters were contributing to extraction. There were around
+5 different fills with different feeder lists, and I suspect all of them were unique,
+but my verifier was only able to halt on one of them. I didn't have much intuition for how to speed
+up the solver any more, so we stuck with that fill.
 
-The second isn't really a revision, but it's close. Although the penny puzzle from Mystery Hunt 2020
-was quite painful, we liked that in end we ended up with a bunch of small souvenirs that people could
-take home. Team leadership was not sure if Mystery Hunt would be on-campus or not, but if it was,
-it seemed cool to replicate the same experience. Much later, when we got the go for on-campus,
-the leads for physical puzzle production started estimating costs for laser cutting wood, and making
-prototypes to figure out how long it'd take to make enough sets. The actual laser cutting happened
-in December. It would have happened earlier, except the person who ordered the wood had their
-shipment of wood stolen from the mailroom and had to order a replacement. (Turns out stealing wood is...a thing
-people will do? The more you learn.)
+After that fill was found, there were only two revisions. The first was deciding how much hinting to give
+towards the Sierpinski triangle. This was the step with the largest leap of faith. In the
+end we decided to hint that all triangles should point upwards, and the final shape should
+be triangular, but no more than that.
 
-I'm not sure if teams use the wooden triangles as a souvenir in the way we imagined, but I hope shuffling
-wooden triangles was more fun than manipulating spreadsheets!
+The second isn't really a revision, it was more logistics. In Mystery Hunt 2020, teammate got stuck on
+the final penny puzzle for 7 hours. This was quite painful, given that we had literally no other relevant
+puzzles to do, but at the end of Hunt we liked that we ended up with a bunch of small souvenirs that people could
+take home. We had already observed some struggles with spreadsheeting the triangle grid, and since
+The Legend was so close to the story midpoint, it seemed cool if we could give out physical triangles.
+They could serve double duty as puzzle aid and puzzle souvenir.
+
+I'm not sure if teams used the wooden triangles as a souvenir in the way we imagined, but I hope
+shuffling wooden triangles was more fun than manipulating spreadsheets!
+</div>
 
 
-May 2022 - The Triangles Will Continue Until Morale Improves
---------------------------------------------------------------------------
+# May 2022
 
-Museum and AI round development is fully underway. The EICs have created a "bigram marketplace" puzzle,
-which is really just a placeholder puzzle to make it easy to create a Discord channel that's only open
-to certain authors. The bigram marketplace held every bigram used by the Museum metameta (MATE's META),
-along with a sketch of expected bigram extraction mechanisms. The repeated feeders in Wyrm were given
-top priority on claiming bigrams, and as Museum metas were proposed, the EICs compared their constraint
-levels to decide which got first rights to bigrams, and which needed to absorb the repeated feeders.
-I field questions from Museum meta authors. (Yes, someone needs to take the answer GEOMETRIC SNOW, we
-know it's not a great answer but haven't found an alternative that fits the double O constraint.
-Sorry, TRIFORCE can't change. Oh, this feeder isn't as tightly constrained, here's five options pick one.)
+## The Triangles Will Continue Until Morale Improves
 
-As part of this process, other Wyrm authors and I were fasttracked into first testsolves of
-every Museum meta draft, so that we could learn their feeder constraints without wasting our lack of knowledge.
-Meanwhile, testsolves of The Legend were biased towards Museum meta authors so that they could understand
-what we were doing. (The same was not done for the Wyrm metameta, because it already had two clean tests
-and we didn't want to do extra work.)
+The co-development of Museum and Wyrm metas is fully underway. The editors-in-chief have created a
+"bigram marketplace" spreadsheet, listing every bigram that MATE's META needs, along with a guess
+of expected bigram extraction mechanisms. Based on Museum meta drafts so far, editors ranked how
+tight their constraints were, and gave more constrained metas higher priority. The repeated feeders
+for Wyrm that we wanted in The Legend then got higher priority on top of that. Wyrm authors were
+directed towards testsolves of the Museum metas, so that we could help brainstorm alternate
+answers that were compatible with Wyrm constraints. Meanwhile, testsolves of The Legend
+were often biased towards Museum meta authors, so that they could know a bit about what was going on.
 
-As the bigrams settle down and The Legend feeders get more locked in, we start looking at how to
-make our own constraints work...
+I helped field questions from Museum meta authors. Yes, someone needs to take the answer GEOMETRIC SNOW, we
+know it's not a great answer but haven't found an alternative that fits the double O constraint. Yes,
+TRIFORCE can't change.
+To help aid in feeder search, I write a script that attempts all Museum metameta bigram mechanics, then feed
+as many Wyrm feeder ideas I can think of into the script to see what sticks. Eventually this converges
+to a set of repeat answers that is a bit greedy at taking good bigrams, but not too greedy.
 
-The Scheme
---------------------------------------------------------------------------
+As the bigram marketplace settle down and The Legend feeders get more locked in, we start pivoting to
+dealing with our own constraints.
 
-This was the 3rd Wyrm meta to get drafted. Lost at Sea had been tested, and although revisions were
-planned, EYE OF PROVIDENCE was locked in as the target answer for The Scheme.
+<div class="shaded" markdown="1">
+### The Scheme
 
-The original idea for The Scheme was based on an idea that I quite liked. We weren't able to make it
-work, partly because we didn't have the right skills in the construction group, but it's good enough
-that I don't want to reveal it.
+From the start of writing, we knew the meta answer was locked to EYE OF PROVIDENCE and it had to
+use the feeder INCEPTION in some way. There was a bit of brainstorming on whether we could
+exploit that teams would 100% have the INCEPTION answer, but we did not come up with anything good.
+
+The first serious idea I had for The Scheme was one I liked a lot. We weren't able to make the design
+work, but I'm not willing to give up on the idea, so I won't reveal it.
 
 After that idea fell apart, we noticed that the Eye of Providence was a triangle, and we had triangles
-in The Legend, so why don't we try to make this triangle Wyrm meme a reality? It wasn't a hard
-requirement, but it would be cool...
+in The Legend, so why don't we try to extend the triangle theming into this meta? It was a bit of a
+meme, but it would be cool...
 
-When researching Mystery Hunt 2018 to get ideas for constrained metas, I found
+When researching constrained metas, I found
 [Voltaik Bio-Electric Cell](http://puzzles.mit.edu/2018/full/puzzle/voltaik_bio_electric_cell.html),
-a triangular meta that mostly used feeder length, with the rest coming from shell. Well, we already
-had a 1 letter word in one of our feeders (at the time, it was V FOR VENDETTA). It seemed plausible
-we could make a full triangle out of words in our feeders, and a length constraint was light enough to not
-put too much pressure on the semantic categories from the metameta.
+a triangular meta with a hefty shell that used the lengths of its feeders as a constraints.
+Well, we already
+had a 1 letter word in one of our feeders (at the time, it was V FOR VENDETTA). There was no length
+constraint on our feeders yet (meaning it would be easier to fit), and
+It seemed plausible we could make a full triangle out of words in our feeders.
 
-We did a search for missing feeder lengths, made a version that picked letters out of the triangle with
-indices, and sent it for editor review. I was fully expecting it to get rejected, but to my surprise
-the editors for this puzzle thought the word triangle was pretty elegant, and only had token comments
-on the puzzle draft. (Perhaps the more accurate statement is that the editors knew what the Wyrm constraints
-were, most metas we'd proposed required a hefty shell, and this was one of the purer meta proposal we'd
-managed for Wyrm so far.)
+We did a search for missing feeder lengths, tossed together a version that picked letters out of the triangle with
+indices, and sent it for editor review. I was fully expecting it to get rejected, but to my surprise,
+editors liked the elegance of the word triangle, and thought it was neat enough to try testsolving.
+(Perhaps the more accurate statement is that the editors knew the difficulty of the Wyrm constraints
+were, most Wyrm metas we'd proposed needed shell, and this was closest we'd gotten to a pure meta for Wyrm
+so far.)
 
-The spiral index order was originally added because we were concerned a team could cheese the puzzle by
+The spiral index order was originally added because I was concerned a team could cheese the puzzle by
 taking the indices of all 6! orderings of the feeders. Doing so wouldn't give the answer, but it seemed possible
 you'd get out some readable partials that could be cobbled together.
-With hindsight, I don't think that was actually possible, but one of our testsolve
-groups did write code to bash all 6! orderings, so it was definitely worth considering.
+With hindsight, I don't think it was possible to get anything out of bruteforcing,
+but one of our testsolve groups did attempt the brute force, so we were right to think about it.
 We kept the spiral in the final version because it let the arrow diagram serve two purposes: the ordering of
 the numbers, and a hint towards the shape to create.
 
@@ -4210,3 +4230,50 @@ we want to create. I'm not sure what TTBNL plans to use for their Hunt, but in g
 recommend tph-site if you have a need for lots of interactivity. Otherwise, using a purely Django
 setup like gph-site is fine. The various Galactic Puzzle Hunts prove that you can do plenty of
 interactive puzzles in that setup too.
+
+Hunt writing tends to follow a long tail distribution, where a few people will do a lot of the work
+and a lot of people will do a bit of work. This is very consistent every year. Below are some plots of
+"hunt contribution", as measured by puzzles written. I know that there are many ways people
+work on Mystery Hunt besides writing puzzles, but puzzles are the easiest things to track.
+
+<table>
+    <tr>
+        <td style="width:50%">
+            <img src="/public/mh-2023/2018.png" alt="2018 contribution graph">
+        </td>
+        <td style="width:50%">
+            <img src="/public/mh-2023/2019.png" alt="2019 contribution graph">
+        </td>
+    </tr>
+    <tr>
+        <td style="width:50%">
+            <img src="/public/mh-2023/2020.png" alt="2020 contribution graph">
+        </td>
+        <td style="width:50%">
+            <img src="/public/mh-2023/2021.png" alt="2021 contribution graph">
+        </td>
+    </tr>
+    <tr>
+        <td style="width:50%">
+            <img src="/public/mh-2023/2022.png" alt="2022 contribution graph">
+        </td>
+        <td style="width:50%">
+            <img src="/public/mh-2023/2023.png" alt="2023 contribution graph">
+        </td>
+    </tr>
+</table>
+
+Hunt writing tends to follow a [Zipfian distribution](https://en.wikipedia.org/wiki/Zipf%27s_law).
+A small number of people will write many puzzles (or do a lot of leadership work), and a long tail
+of people will write a small number of puzzles each. Usually, that long tail is where all the
+new puzzle writers are. Put yourself in novice puzzle writer shoes. Do you want to write a puzzle
+where whitespace and capitalization matters, a puzzle that must be closely tied to a language, or a normal
+puzzle? Unless you're really excited about an idea for the gimmick, you'd probably prefer a normal
+puzzle answer. If you didn't get in on the two rounds that had feeders released, then you had to
+wait.
+
+This isn't quite as bad as I'm making it out to be.
+There's useful work that can be done without knowing the puzzle feeder. In general though, if you
+have a feeder from the start, you'll do less redundant work, it's easier to stay motivated if you're
+expected to pull through on a puzzle, and you can brainstorm ideas from the puzzle answer rather
+than trying to generate one from the ether.
