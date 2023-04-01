@@ -608,13 +608,13 @@ had a good enough set of feeders.
 The round structure went through multiple iterations, done over Jamboard. Here's a version where
 every puzzle would be 1/4th of a future puzzle:
 
-[Wyrm brainstorm](/public/mh-2023/Inset Jam 6.png)
+[Wyrm brainstorm](</public/mh-2023/Inset Jam 6.png>)
 {: .centered }
 
 Here's one where every puzzle's answer would depend on answers from the previous layer,
 such that one puzzle could be backsolved per layer.
 
-[Wyrm brainstorm 2](/public/mh-2023/Inset Jam 3.png)
+[Wyrm brainstorm 2](</public/mh-2023/Inset Jam 3.png>)
 {: .centered }
 
 And here's one where the entire round would be serial, each puzzle would rely on the
@@ -633,7 +633,7 @@ to just the metas of each layer, and all regular feeders in each layer could be 
 constraints besides the answer. The zoom direction of moving outwards rather than inwards was
 done to make it more distinct from [⊥IW.giga](https://puzzles.mit.edu/2021/round/giga/).
 
-[Wyrm last brainstrom](/public/mh-2023/Inset Jam 2.png)
+[Wyrm last brainstrom](</public/mh-2023/Inset Jam 2.png>)
 {: .centered }
 
 Our first plan was to have one unsolvable puzzle in the first layer of puzzles, that would
@@ -1039,77 +1039,91 @@ but one of our testsolve groups did attempt the brute force, so we were right to
 We kept the spiral in the final version because it let the arrow diagram serve two purposes: the ordering of
 the numbers, and a hint towards the shape to create.
 
-DIAGRAM
+![Diagram from The Scheme](/public/mh-2023/scheme.svg)
+{: .centered }
 
-In Puzzup, there were a list of tags we could assign to puzzles, to help editors gauge the puzzle balance
-across the Hunt. This puzzle got tagged as "Australian", which is shorthand for "a minimalistic puzzle with one key idea,
-where before you have that idea nothing makes sense, and after that idea you're essentially done." Our team
-uses that shorthand because puzzles like this tended to appear in the Australian puzzlehunts that used to
-show up every year (CiSRA / SUMS / MUMS). One of the tricky parts of such puzzles is that you get exceptionally
-few knobs to tweak difficulty. Basically all we got was the diagram and the flavortext.
-The other tricky part is that solve time can have incredible variance. The first test got the
-key idea in 20 minutes. The second test got horribly stuck and was given four different flavortext and diagram
-revisions before finding the idea 3.5 hours later.
-The second group did mention the meta answer an hour before the solve, in one of the
-best examples of dramatic irony I've ever seen.
+In Puzzup, there were a list of tags we could assign to puzzles. This was to help editors gauge the puzzle
+balance across the Hunt. This puzzle got tagged as "Australian". When I asked what it meant, I was told
+it's shorthand for "a minimalistic puzzle,
+where before you have the key idea there's little to do, and after that idea you're essentially done."
+Puzzles like this tended to appear in the Australian puzzlehunts that used to
+show up every year (CiSRA / SUMS / MUMS), and are a bit hit-of-miss. Usually, they hit if you get the idea
+and miss if you don't.
 
-(add the Discord screenshot here)
+One of the tricky parts of such puzzles is that you get exceptionally
+few knobs to tweak difficulty. This is a challenge of pure metas in general.
+The other tricky part of Australian puzzles is that solve time can have incredible variance. The first
+test got the key idea in 20 minutes. The second test got horribly stuck and was given four
+different flavortext + diagram combinations before getting the idea 3.5 hours later.
+The second group did mention the meta answer 2.5 hours into their solve, when despairing about their
+increasingly bad triangle conspiracies. It was the best dramatic irony I've ever seen.
 
-Maybe having an Australian puzzle as a bottlenecking meta was a bad idea. A high variance puzzle naturally means
-some teams *will* get it and some teams *will* get walled, and getting walled on a bottleneck is a sad time. This is
-on my shortlist of "puzzles I'd redo from scratch with hindsight", but at the time we decided to ship it so we could move on to feeder release. ["You get one AREPO per puzzle"](https://docs.google.com/presentation/d/166MkkDmij_4_XcA8JP8JcSztVPjHJeibDJxr9EUMEv4/edit#slide=id.p) - I'd say this is the one AREPO of the Wyrm metas.
+![Conspiracies](/public/mh-2023/eyeofprovidence.png)
+{: .centered }
 
-Even in batch testing, where teams solved The Scheme right after The Legend, none of our testsolves consider
+Even in batch testing, where teams solved The Scheme right after The Legend, none of our testsolves considered
 using the arrangement from The Legend when solving this puzzle. A few teams got caught on this during the Hunt -
 sorry about that! The fact that The Legend triangle had an outer perimeter of 45 was a complete coincidence,
-and if we'd discovered that early enough it would have been easy to swap BRITAIN / SEA OF DECAY back to GREAT BRITAIN / SEA OF CORRUPTION to make the triangle 55 letters rather than 45.
+and if we'd discovered that early enough it would have been easy to swap BRITAIN / SEA OF DECAY back to GREAT BRITAIN / SEA OF CORRUPTION to make the Scheme triangle 55 letters instead.
+
+Maybe having an Australian puzzle as a bottlenecking meta was a bad idea. A high variance puzzle naturally means
+some teams *will* get it immediately and some teams *will* get walled, and getting walled on a bottleneck is a sad time. This is
+on my shortlist of "puzzles I'd redo from scratch" with hindsight, but at the time we decided to ship it so we could move on to other work. ["You get one AREPO per puzzle"](https://docs.google.com/presentation/d/166MkkDmij_4_XcA8JP8JcSztVPjHJeibDJxr9EUMEv4/edit#slide=id.p) - I'd say this is the one AREPO of the Wyrm metas.
+</div>
 
 
-Lost at Sea
------------------------------------------------------------------------------
+<div class="shaded" markdown="1">
+### Lost at Sea
 
 Nominally, I'm an author on this puzzle. In practice I did not do very much. The first version provided the
 cycle of ships directly, and tested okay (albeit with some grumbling about indexing with digits).
 By the time I joined, the work left to do was finding a way to fit
-in triangles, and finding answers suitable for the metameta.
+in triangles, and finding answers suitable for the metameta. We were basically required to have triangles
+*somewhere* after The Scheme evolved the way it did.
 
-I looked a lot into the Bermuda triangle, but didn't find any reasonable puzzle fodder. So instead, we looked
-into triangular grids. Over a few rounds of iteration, the puzzle evolved into seeding a triangular
-[Yajilin](https://en.wikipedia.org/wiki/Yajilin) puzzle where feeders were written into the grid, black triangles
-gave a cluephrase hinting towards digit indexing, and ship information from the feeders gave direction for
-the Yajilin arrows.
+I looked a lot into the Bermuda triangle, as did others, but none of us found reasonable puzzle fodder.
+So instead, we looked
+into triangular grids. Over a few rounds of iteration, the puzzle evolved from a given cycle into a
+triangular [Yajilin](https://en.wikipedia.org/wiki/Yajilin) puzzle where feeders were written into the grid and
+the Yajilin solution would give a cluephrase towards the rest of the puzzle and extraction.
 
-It all sorta worked, but the design was getting unwieldly and we had a really hard time finding a way to
-clue all the mechanics properly in the flavortext. There were lots of facts about each ship, so the longer
-we made our flavortext, the more rabbit holes testsolvers considered. (It's the natural response: if you
-get more data, then maybe you need to research more data to solve.)
-I'd say my main contribution was suggesting we try cutting the Yajilin entirely and brainstorm something else.
+It all sorta worked, but the steps were a bit disconnected, the design was getting unwieldly,
+and we had a really hard time finding a way to
+clue all the mechanics properly in the flavortext. There were lots of facts about each ship that could
+be relevant, so the longer we made our flavortext, the more rabbit holes testsolvers considered.
+(It's the natural response: if you get more data, then maybe you need to research more data to solve.)
+
+My main contribution was suggesting we try removing the Yajilin entirely and brainstorm a different
+way to use triangular grids.
 The final version of the puzzle is the result of that brainstorm. I'm pretty happy with the way the puzzle
-guides towards the hull classification, self-confirms it with the USS Midas (ARB-5) thanks to A and B flags
-being weird, and then leaves the classification number suspiciously unused if you haven't figured out they're
-important.
+guides towards the hull classification, self-confirms it with the ARB classification code being weird,
+and then leaves the classification number suspiciously unused if you haven't figured out it's
+important yet.
 
-The other main contribution was helping find feeders. The first draft used MRS UNDERWOOD as a feeder, which
-*worked* but was really not a good answer. The S in MRS was needed for extract, but it looked so much like
-a cluephrase for Claire Underwood. Brian told me that it could be fixed if we added a feeder that clued
-San Francisco, which fit the metameta, and had an S as its 5th letter. We collectively spent 5-10 hours
+The other main contribution was helping find feeders. The first draft used MRS UNDERWOOD as a feeder, for
+indexing reasons. The answer worked, but was *really* not a good answer.
+The S in MRS was needed for extract, but it looked sooooooo much like
+a cluephrase for Claire Underwood. Brian told me that it could be changed to just UNDERWOOD if we added
+a feeder that clued San Francisco, which fit the metameta, and had an S as its 5th letter. We collectively spent 5-10 hours
 doing a search for one, before landing on the "stories" idea with SALESFORCE TOWER or
-TRANSAMERICA PYRAMID. The puzzle got rewritten around SALESFORCE TOWER, went through an entire testsolve
+TRANSAMERICA PYRAMID. The puzzle was rewritten with SALESFORCE TOWER, went through an entire testsolve
 with zero issues,
-and then we learned that [actually there are multiple Salesforce Towers](https://www.salesforce.com/company/ohana-floors/salesforce-tower-atlanta/) in a final runthrough of the metameta. Oops. Thank goodness we had
-a backup answer!
+and then we learned that [actually there are multiple Salesforce Towers](https://www.salesforce.com/company/ohana-floors/salesforce-tower-atlanta/) in literally the final runthrough of all metas and the metameta. Oops.
+Thank goodness we had a backup answer!
+</div>
 
 
-June 2022 - It's Collaging Time
------------------------------------------------------------------------------------
+# June 2022
 
-Wyrm feeders are almost ready for release. We've made the feeder constraints work, and every meta has gotten two clean
-testsolves. There are just two action items left:
+## My Favorite Part of Collage Was When Teams Said "It's Collaging Time"
+
+Wyrm feeders are *almost* ready for release. The Wyrm metas work. The shared feeders with Museum works. It
+all works, except for two action items:
 
 1. Write the 4th Wyrm meta.
 2. Do a batch solve of the entire round to get data on what it's like to solve each meta sequentially.
 
-We had multiple meetings about the 4th Wyrm meta starting all the way back in March.
+We had meetings about the 4th Wyrm meta starting all the way back in March.
 The design requirements were pretty tight:
 
 * The puzzle had to look like an regular Act 1 puzzle.
@@ -1117,40 +1131,54 @@ The design requirements were pretty tight:
 * Feeders had to be used in enough of way to allow for backsolving.
 * At the same time, the puzzle had to be solvable without knowing any of those feeders.
 
-The very first example for what this could look like was a [printer's devilry](https://en.wikipedia.org/wiki/Printer%27s_Devilry) style puzzle. Instead of each clue solving to the inserted word, inserting a word would complete a crossword clue with its own answer that you'd index from. The inserted words would then be the backsolved feeders.
+The very first example for what this could look like was a [printer's devilry](https://en.wikipedia.org/wiki/Printer%27s_Devilry) style puzzle. Instead of each clue solving to the inserted word, inserting a word would complete a crossword clue with its own answer that you'd index from. The inserted words would then be unused
+information that would be revealed as the backsolved feeders once you got to the end of the round.
 
-None of the authors were too excited by this, but it was important to prove to
-ourselves the design problem was solvable.
-we came up with it in March mostly to convince ourselves
-the design problem was solvable). Once we knew the answer was TRIFORCE in April, the idea died more officially
-because we could not longer do a 1 feeder -> 1 letter idea. Another idea proposed for this puzzle
-placed too many constraints on the feeders given the Wyrm metameta - that idea eventually turned into
+None of the authors were very excited by this, but it was important to prove to
+ourselves and editors that the design problem was solvable.
+Once we knew the meta answer was TRIFORCE, the idea died more officially, since TRIFORCE was 8 letters
+and we only had 6 feeders to work with.
+
+Another idea proposed for this puzzle may have worked, but was basically impossible to combine with the
+Wyrm metameta constraints. That idea eventually turned into
 [Word Press](https://puzzlefactory.place/factory-floor/word-press).
 
-One of the challenges was that the puzzle needed to embed some process for backsolving. But, that backsolving
-process might look like unused information during the initial forward solve, which could turn into
-a rabbit hole if teams got stuck. The round structure only really *worked* if almost all teams solved
-the Act 1 puzzle by the time they got to the end of Wyrm.
+The key design challenge was that the puzzle needed to embed some process for backsolving. But, that backsolving
+process would look like unused information during the initial forward solve. If a team got stuck, they
+could rabbit hole on that unused information.
+The round structure of Wyrm only really *worked* if almost all teams solved the 4th Wyrm meta at the start
+of Wyrm, so add two more constraints:
 
-In late-April, we came up with the word web idea, which I immediately started advocating for. Word webs
+* The puzzle should be very easy.
+* The puzzle should be attractive enough that teams won't skip it.
+
+And so, the ideas bounced back forth for another few weeks, until we landed on the word web idea in late
+April. I immediately started advocating for it. Word webs
 are the closest thing to guaranteed fun for puzzlehunts, and were a highlight of the now-defunct Google
-Games hunts run for university students.
-It solved all our backsolve problems because spamming guesses in a word web is just what you're supposed
-to do, and there was a natural way to solve around unknown nodes and guess them later. My main worry was
-that it'd take a while to construct.
+Games puzzlehunts.
+It solved our "solve from 0 feeders" problem, because
+spamming guesses and solving around hard nodes is just what you're supposed to do in a word web.
+Teams would also be unlikely to get stuck in the word web, as long as we gave it enough redundancy, so
+it would avoid the risk of teams paying too much attention to the content seeded for Wyrm.
 
-It was clear we *could* construct it though. We punted on doing so until the backsolve feeders were
-more certain. Well, now they were. Time to reap what we'd sown.
+My main worry was that it'd take a while to construct.
+It was clear we *could* construct it though, so we tentatively locked it in. We punted on doing the construction
+itself until the other Wyrm metas were written, so that we'd know exactly what backsolve feeders we needed to
+seed in the web. Well, now those Wyrm metas were written.
+Time to reap what we'd sown.
 
 
-Collage
--------------------------------------------------------------
+<div class="shaded" markdown="1">
+### Collage
 
-The first thing I did was reach out to David and Ivan to get the code they used to build [Word Wide Web](https://2020.teammatehunt.com/puzzles/word-wide-web). David ended up sending me a D3.js based HTML page that
-automatically layed out a given graph, with some drag-drop functionality to adjust node positions.
+The first thing I did was reach out to David and Ivan, the authors of [Word Wide Web](https://2020.teammatehunt.com/puzzles/word-wide-web), to see if they had any word web tools I could borrow.
+David sent me a D3.js based HTML page that
+automatically layed out a given graph, with some drag-drop functionality to adjust node positions,
+but told me there was no existing interactive code due to time reasons.
+
 I repurposed that code to create a proof-of-concept interactive version that ran locally. This quickly
-exposed some important UX things we'd want to support, like showing past guesses and allowing for some
-alternate spellings of the answer.
+exposed some important UX things to support, like showing past guesses and allowing for some
+alternate spellings of each answer..
 
 ![Prototype of filled out web](/public/mh-2023/webprototype1.png)
 {: .centered }
@@ -1158,347 +1186,427 @@ alternate spellings of the answer.
 ![Prototype of solvable web](/public/mh-2023/webprototype2.png)
 {: .centered }
 
-For unlocks, I decided to always recompute the web state whenever the list of solved words changed.
+For unlocks, I decided to recompute the entire web state whenever the list of solved words changed.
 This wasn't the most efficient, it could have been done incrementally, but in general I believe
 people underestimate how fast computers can be. Programmers will see something that looks like
 a software interview question, and get nerd sniped into solving that algorithms problem, while neglecting
-to fix their page loading a 7 MB image file. (And, the simpler the data, the easier it is to
-*recognize* it's an algorithms question, and the less likely it is to matter.)
-I figured recomputing the entire graph would be more robust,
-and didn't want to deal with errors caused by incremental updates failing.
+to fix their page loading a 7 MB image file it doesn't need to load. (If anything, the easier
+it is to recognize something is an algorithms question, the less likely it is to matter. The hard
+parts are usually in system design.)
+
+In short, I figured recomputing the entire graph would be more robust,
+and didn't want to deal with errors caused by messing up incremental updates.
 
 ![Advice on building the most robust thing](/public/mh-2023/braid.png)
 {: .centered }
 
-(From ["The Implementation of Rewind in Braid"](https://www.youtube.com/watch?v=8dinUbg2h70), a talk by Johnathan Blow)
+(From ["The Implementation of Rewind in Braid"](https://www.youtube.com/watch?v=8dinUbg2h70))
 {: .centered }
 
 From here, I worked on creating a pipeline that could convert Google Sheets into the web layout code. The
-goal was to remove tech from the flow of updating the word web, to make it easier to collaborate on.
+goal was to make tech literacy not be a blocker for making edits to the word web, and to make it easier
+to collaborate on the web creation.
 I added a bunch of deduplication and data filtering in my code to allow the source-of-truth spreadsheet
-to be messy, which paid off. Pretty sure around 10% of the edges appear twice in the raw data.
+to be as messy as it wanted, which paid off. Pretty sure around 10% of the edges appear twice in the
+raw data.
 
 ![Web spreadsheet](/public/mh-2023/webspreadsheet.png)
 {: .centered }
 
 The process of coming up with the words themselves took a while. Collage is the first time I've
-ever done this kind of thing, but my assumption going in was that word webs are best when there's a
+ever made a word web, but my assumption going in was that word webs are best when there's a
 high density of edges and vertices have large average degree. To get a sense for how big the web needed
 to be, I took the [Black Widow](https://puzzlepotluck.com/3/14) web from Puzzle Potluck 3 and collected
-some stats on number of vertices and edges to figure out the average degree I wanted to hit. Whenever I loaded
-a web into my code, I printed out stats on the graph, as well as how many leaf nodes there were, with
-the goal of having as few as possible. I gave very serious though to dusting off my [spectral graph
-theory](https://en.wikipedia.org/wiki/Spectral_graph_theory) to estimate if the web was an
+stats on connected that web was.
+I then referred to various metrics to check how the density of the current Collage draft compared.
+I gave very serious though to looking for my ancient [spectral graph
+theory](https://en.wikipedia.org/wiki/Spectral_graph_theory) notes from college to estimate if the web was an
 [expander graph](https://en.wikipedia.org/wiki/Expander_graph), but decided that was overkill.
-There was an initial "expansion" phase, where I put down literally anything I could think of starting
-from the backsolve feeders, and asked other authors to do the same. Then, after the web grew enough to
+
+There was an initial "expansion" phase, where starting from the backsolve feeders, I put down literally
+anything I could think. Other authors did the same. Then, after the web grew enough to
 have some collisions occur naturally, there was a "contraction" phase where I trimmed nodes that were
-hard to connect to the rest of the web, and tried to more directly brainstorm topics that could be embedded
-in the graph without adding too many new words. I'd estimate about 80% of the web is from me, and that's why
-there's so much My Little Pony and MLP-adjacent material in the web. I apologize for nothing.
+hard to connect to the rest of the web, and future brainstorming was directed towards reducing leaf nodes
+in the graph. I'd estimate about 90% of the web is from me and 10% is from other people.
+This is why there's so much My Little Pony and MLP-adjacent material in the web. I apologize for nothing.
 
-After the prototype got tested a bit, it was time to get it into the site for real. I'd written
-interactive puzzles before, but this was my first time implementing websockets for a puzzle, as well as
-using D3.js within React. (Websockets are what allow the puzzle to display updates when another solver
-on the team guesses a word. They're also how all the AI chat messages are managed.) I knew that I
-wanted to use websockets to sync team state on Quandle, and I wanted the zooming code in D3.js for
-the Wyrm round art, so I treated it as an investment that would save time later.
+After the prototype was tested a bit, it was time to get it into the site for real. I wrote some awful code
+to save and load node positions from the D3.js prototype, then set to work figuring out how to do
+teamwide live updates. This was my first time implementing websockets for a puzzle.
+(Websockets are a common approach for creating a persistent connection between user and server, where either
+the user or server can send messages to trigger events. We used them for solve notifications, the AI
+chats, and anything else where an update needed to trigger even if the solver isn't doing anything.)
 
-Thanks to us using a similar codebase as previous Teammate Hunts, it was straightforward for me to find
-previous websocket code in old teammate puzzles, and then implement something similar. Very broadly,
-the backend uses [Django Channels](https://channels.readthedocs.io/en/stable/) as a websocket
-management layer, handling team authentication and routing different websocket URLs to different puzzle endpoints. The frontend then defines helper functions to support connecting to either a user-specific channel,
-team-wide channel, or hunt-wide channel (although I don't think we ever used the hunt-wide channel).
-The main danger of using websockets is that they widen the set of things-that-can-go-wrong in the Hunt
-site, but given that we were already relying on chats with MATE as a key part of Hunt, we were going to
-eat that risk regardless.
+This was also my first time using D3.js, which made this puzzle have a lot of "firsts" for me. That contributed
+to how long this puzzle took to construct...but I knew I wanted to use websockets whenever I got to
+converting Quandle, and I wanted to use zoom from D3.js for the Wyrmhole round art, so I treated it
+as an investment.
 
-Polishing and factchecking this puzzle was a bit of a nightmare. It turns out graph layout is a really hard
-problem, and even after tuning D3.js force graph parameters a bunch, I needed to do several adjustments
-by hand to clean up collinear points and reduce overlaps. The click-to-highlight feature was a concession
-to the fact that getting to 0 overlaps was impossible in the given time. As for factchecking, the graph has over 300 words
-and I knew there was no way we were going to exhaustively verify all O(N^2) pairs of those words.
-I think we got most of them, but a few slipped through ("the princess bride" is somehow not connected to "bride").
+![Surprise tool meme](/public/mh-2023/surprise.png)
+{: .centered }
 
-I was happy to see
-that no one who testsolved Collage suspected a thing. Even during Hunt, most teams successfully got past
-the zero starting word hurdle without thinking too much of it. Thanks to Patrick for suggesting a hardcoded
-threshold of 90%, rather than revealing the goal node when its 3 neighbors were found, since the neighbors were usually revealed within the first 15% of the solve.
+Thanks to us reusing tph-site, it was easy for me to find websocket code examples from Teammate Hunt 2021.
+We had gone through a lot of pain setting it up initially, so the end API I had to deal with was not
+as bad as I feared.
 
-\*\*\*
+There was some danger in relying on such an interactive puzzle for a key part of Hunt. Websockets add
+complexity, and widen the set of things-that-can-go-wrong in the Hunt site. But, given that we were going
+to rely on websockets for chats with MATE, making Collage rely on them as well wasn't adding any additional risk.
+MATE and the Wyrm metas were going to live together or die together, and we were going to bet on "live".
 
-With all the Wyrm metas at first draft, we did a final batch test of all the Wyrm metas and the metameta.
-We debated back and forth on whether there was a way to have teams testsolve Collage when it was advertised
-as a "test of all the Wyrm metas". If we didn't test it before feeder release, and something went wrong
-in the true test, then we'd have a huge problem. But the only test of it that seemed like it'd
-accurately model the real Hunt would be having teams do testsolves of many random puzzles including
-Collage before they tested Wyrm metas. Those random puzzles didn't exist...because they were waiting
-on feeder release, which was waiting on testing the metas, which really wanted the random puzzles to
-exist, which...you get the idea.
+Polishing and factchecking this puzzle was a nightmare.
+It turns out graph layout is a really hard unsolved problem. Even after turning the D3.js force graph parameters a bunch, I needed to do several adjustments
+by hand to clean up collinear points and reduce overlaps. The manual cleanup pass still missed some collinearity
+The click-to-highlight feature was added when I recognized that getting to 0 overlaps would basically
+be impossible, to provide a stopgap for reading the web.
+As for factchecking, the graph has over 300 words, and I knew there was no way we were going to
+exhaustively verify all O(N^2) pairs of those words.
+I think we got most of them, but I know a few slipped through (somehow no one noticed that
+"the princess bride" wasn't connected to "bride").
+
+Across both testsolves, no one suspected the puzzle was seeding puzzle content, which I was happy about.
+Thanks to Patrick for suggesting a hardcoded threshold of 90% to solve the puzzle, rather than allowing
+the puzzle to be solved whenever all 3 neighbors of the goal node were revealed, since the latter usually
+happened by the 20% mark.
+</div>
+
+With Collage done, every Wyrm meta had gone through at least one clean testsolve, albeit with different
+feeders. That left doing one last batch test of all the Wyrm metas and metametas, with the finalized feeders
+for each.
+We debated back and forth on whether the batch test should testsolve the backsolving step of
+Collage during this test. Given that the testsolve was advertised as a "test of the Wyrm metas", it would
+be basically impossible to fit Collage into the test without arousing suspicion. The only test of Collage
+that seemed
+like it'd
+accurately model the real Hunt would be having the round page with prototype art, and having testsolvers
+test many random feeder puzzles, including Collage, before they tested the Wyrm metas. Those random puzzles didn't
+exist yet, because they were waiting on feeder release. Which was waiting on testing the metas. Which really
+wanted random feeder puzzles to exist. Which didn't because the metas weren't done. Which...you get the idea.
 
 Who knew making an ouroboros-style round would make it hard to find a starting point?
 
-There were arguments both ways, and the decision was to not test the gimmick. We did not have distractor
-puzzles to hide Collage, we didn't want to wait for real puzzles to get written to have distractors,
-and we certainly didn't want to write fake puzzles when we could spend the time writing real puzzles.
+There were strong arguments both ways, and the decision was to not test the gimmick. We would describe the
+backsolve step at the time the testsolve group unlocked the metameta, and we would push the backsolve
+testsolve to a much later hypothetical full hunt testsolve.
+
 The batch test group tested the Wyrm metas in sequence, starting with 4 feeders each and occasionally getting more
-if needed, and when they got to the metameta, we revealed the round gimmick and gave them the full set of
-answers.
+if needed, and when they got to the metameta, we gave them this diagram:
 
 ![Wyrm structure](/public/mh-2023/wyrmstructure.png)
 {: .centered }
 
-We did redact the title of Collage to something else, because there was no reason to reveal the name
-of the looping puzzle. The meta names used to follow a pattern of "The Legend", "The Scheme",
-"The Sea", and "The Collage" (redacted to "The Sage"). We ended up dropping the "The" pattern since we
-were concerned it might be too much hinting. If a team got suspicious of looping, and identified the
-looping puzzle before unlocking the blank puzzles, then they could solve the 3rd Wyrm meta immediately on
-unlock, which seemed like far too much cheesing. But we kept the pattern in mind as a potential nerf to make down
-the line.
+along with the backsolve feeders they would have had.
+We did redact the title of Collage to something else, because there was no reason to reveal which puzzle
+had the seeded content.
 
-The metameta test passed, and we were able to release all the Wyrm feeder answers. The Museum metas
-were finished shortly, letting us release a bunch of feeders before the in-person writing retreat. The
-retreat got scheduled for late-August. The goal was to get together, test drafts of physical
-puzzles and events, and start puzzle drafts for AI round puzzles that we expected to be hard to
-write solo. We were also planning to do a team solve of a good chunk of Act I, so it was pretty
-important to get Wyrm metas and Museum metas out the door early enough to give time to construct
-those Museum puzzles.
+One last bit of trivia: the four Wyrm metas used to be named "The Legend", "The Scheme",
+"The Sea", and "The Collage". We ended up dropping the "The".
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PEgk2v6KntY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+The concern was that the pattern in the titles was *too* strong. With all the other context clues, if a
+team figured out that the round would loop, they could potentially solve the 3rd Wyrm meta imemdiately
+on unlock. We kept the pattern in mind as a potential nerf to make down the line.
+
+(Two teams told me after Hunt that they suspected the Wyrmhole round would loop the whole time, but neither
+believed in it enough to attempt the cheese we were worried about. It's always weird to talk about
+puzzle skips that people didn't do. Sometimes I wonder if I shouldn't mention them so that future
+puzzle design is easier.)
+
+The batch test went well, and we were able to release all the Wyrm feeder answers.
+The Museum metas finished shortly after, and this officially opened the floodgates for regular writing.
+
+With this resolved, the other major announcement was the plan for a teamwide in-person writing retreat.
+The goal was to get together, test drafts of physical
+puzzles and events, and start brainstorming AI round puzzles with very constrained feeders (like Bootes
+and Eye). There would also be a fullhunt testsolve of the start of the Museum. The retreat was scheduled
+for August.
 
 However, the true goal of the in-person retreat was a more closely-held secret. And I was in the thick
 of that conspiracy.
 
 
-July 2022 - It's Breakout O'Clock
------------------------------------------------------------------------------------------------
+# July 2022
+
+## It's Breakout O'Clock
 
 "Breakout" was our internal name for what would eventually become the Loading Puzzle. It was the
-moment when teams would discover the Puzzle Factory. It was the goal we wanted all teams to see,
-and the key introduction to the entire story that would unfold.
+moment when teams would discover the Puzzle Factory hiding behind the Museum of Interesting Things.
+It was the goal we wanted all teams to see, and the key introduction to the entire story that would
+unfold over MLK weekend.
 
-And 80% of the team was spoiled on it by February.
+And 80% of the team was spoiled on its existence by February.
 
-This is always a risk you take with structure-level gimmicks. The transition to discovering the
-Puzzle Factory was a key part of the theme proposals, which were all heavily discussed. How do you
-testsolve something that heavily discussed?
+This is always the risk you take with structure-level gimmicks. The transition to discovering the
+Puzzle Factory was a key part of the theme proposal, which was heavily discussed early in the year.
+How do you testsolve the discovery of something that you already know exists?
 
-The traditional answer is external testsolves. We tested the Teammate Hunt 2021 gimmick on a testsolve
+In general, it is okay for people to testsolve puzzles even if they know the answer to it already.
+It's pretty easy to compartmentalize that knowledge. But for a gimmick this out there, we wanted
+as accurate a test as possible.
+
+The traditional answer to this problem is to recruit external testsolves. We tested the Teammate Hunt
+2021 gimmick on a testsolve
 team from Galactic, and Galactic tested the gimmick of Galactic Puzzle Hunt 2022 on some people from
 teammate. This is a lot harder to do for Mystery Hunt though.
 
-For Hunt, teammate did a lot of recruiting for puzzle writers. This was
-mostly because we were concerned about the workload we had in front of us. To get a sense of scale,
-we won hunt with about 60 people, not all of them decided to write, and we ended the writing process
-with around 70 people on the credits page. Approximately 30% of people joining partway through the year
-sounds right.
+For Hunt, teammate did a lot of external recruiting.
+To get a sense of scale, we won hunt with about 60 people, not all of them decided to write, and we ended
+the year with 70 people on the credits page.
+My estimate is that around 30% of people joined after theme selection.
 
-Any recruited person that joined after theme discussion was not spoiled on breakout. The true goal
-of the in-person retreat was to do a testsolve of Act 1 puzzles, with a testsolve of breakout running in
-the background for everyone who wasn't spoiled on its existence. After the team broke out, we'd stop
-the Act 1 testsolve and reveal the story of the Hunt to those unspoiled on the theme.
+Any recruited person that joined after theme discussion was not spoiled on breakout. Although the Museum
+fullhunt testsolve would use real puzzles, the true goal was to testsolve breakout on that group of 30%.
+After that testsolve, we'd treat the existence of breakout as not-a-spoiler and discuss it freely.
 
-To do that however, the breakout would need to exist by retreat.
+However, to make this plan work, the breakout would need to exist first.
 
 
-Loading Puzzle...
------------------------------------------------------------------------------------------------
+<div class="shaded" markdown="1">
+### Loading Puzzle...
 
 During one of the weekly general meetings, I was asked if I could join a brainstorm group for "a small puzzle".
 Said brainstorm group had Jacqui (creative lead) and Ivan (tech lead).
 
 Having been in the trenches with Jacqui and Ivan on many an occasion for tech-heavy puzzlehunt
 story integrations,
-I was, like, 80% sure this "small puzzle" was breakout, and 100% sure it would be small to solve
-but take a stupidly long time to make. I want it for the record that I was right on both counts. I joined
-an in-progress brainstorm in June and we weren't done until August.
+I was 80% sure this "small puzzle" was breakout, and 100% sure it would be small to solve
+but take a stupidly long time to make. I didn't mention my suspicions to anyone, I just said "sure", but I'd
+like it on the record that I was right on both counts (and agreed to help anyways because it sounded
+like it needed help). I joined the breakout group in June and we didn't finish until basically the
+day before the testsolve at retreat.
 
-Over the course of a few months, we and other authors of the breakout puzzle brainstormed how to
-create a puzzle that looked innocent at first glance, and became more suspicious the more you looked at it.
-A common theme was "peeling back the facade". Those of you readers who have every played an RPG should
-know the feeling of talking to NPCs until you see all the dialogue, or trying to run over a waist-high
-fence and running into an invisible wall. We wanted something in that vein, that rewarded exploring
-the contours of the world, and surprising you when the contours broke instead of holding firm.
+Over the course of those three months, we brainstormed how to create a puzzle that looked innocent at
+first glance, but became more suspicious the more you looked at it.
+A common theme in brainstorming was "peeling back the facade". Those of you who have played a JRPG video
+game should know the feeling of talking to NPCs until you see all the dialogue, or trying to run over a
+waist-high fence and running into an invisible wall. We wanted something in that vein, that rewarded
+exploring the contours of the hunt site, and surprising you when the contours broke instead of holding
+firm.
 
-Many of the early ideas from this would get repurposed for the final clickaround of the hunt,
-MATE's TEAM. But for breakout, we converged towards something like a loading animation. The loading
+Many of the early ideas from this were unused, but got repurposed for the final clickaround of the hunt,
+MATE's TEAM. For breakout, we converged towards something like a loading animation. The loading
 animation would represent MATE getting increasingly overworked trying to create puzzles, diegetically
 getting longer as teams solved puzzles and forced MATE to write new ones, and non-diegetically
-scaling up with solve progress as desired for hunt structure. It would be easy to have this loading
-animation appear on every puzzle, and that would increase the odds teams would notice what was
-going on.
+scaling up with solve progress to increase its obviousness and encourage teams to look more closely over
+time. The loading animation would appear on every puzzle.
 
-As for exactly how that would all work? Boy was there a lot to figure out.
+As for the details? Boy was there a lot to figure out. Here's a screenshot of the brainstorm spreadsheet.
 
 ![Breakout brainstorm](/public/mh-2023/breakoutplanning.png)
 {: .centered }
 
 There was a fairly serious proposal that the "hole" between the Museum and Factory would only exist on the puzzle page where
-you first solved the loading animation. You'd be able to visit the URL directly once you knew it, but
-for within-site navigation, you'd need to memorize which puzzle you first found the factory from.
-I liked this a lot, but we dropped it due to complexity concerns.
+you first solved the loading animation. The hole that appeared on the puzzle page would stay there,
+and although you could visit the Puzzle Factory URL directly, in-site navgiation would rely on
+visiting the puzzle where you first solved the animation. I liked this a lot, but we dropped it due
+to complexity concerns.
 
-Previous Teammate Hunts have always had a rule that solvers can look at source code if they want,
-because we trust in our ability to hide things from the client. For the loading animation, it meant
-the animation was drawn using CSS rather than a video file, since we did not want solvers to
-right-click -> "Download Video" and solve the animation offline. The first idea proposed was to
-create a conveyor belt of puzzle pieces, and entering STOP would cause the conveyor belt to
-break down. (Technically, the answer at the time was TERMINATE, due to its similarity to
-TEAMMATE.)
+Early prototypes were based on an infinite conveyor belt of pieces, except there would only be a few
+different ones. Screenshotting and assembling the pieces would spell out the answer, and entering it
+would cause the conveyor belt to breakdown. At the time, the answer was TERMINATE, due to its similarity
+to TEAMMATE.
 
 ![Early breakout version](/public/mh-2023/breakout_old.png)
 {: .centered }
 
-This was later changed to the version that went in the Hunt, since having letters on the puzzle pieces
-was deemed too obvious. At the same time, we didn't want it to be too *non*-obvious.
+Some early tests of this rated it as "okay but not exciting, a bit too obvious when letters exist
+on the pieces".
+This was later changed to the version that went in the Hunt, which avoided showing letters directly
+by making the letters drawn in paths. Here is the original version we shipped to the August retreat.
 
-VIDEO HERE
+<div class="centered">
+<video width="640" controls loop>
+    <source src="/public/mh-2023/breakout_old_video.mov">
+    Your browser does not support .mov files.
+</video>
+</div>
+
+Teammate Hunts have always had a rule that solvers can look at source code if they want, and Mystery Hunt
+usually has a similar one. We have a lot of trust in our ability to hide things from the client.
+For the loading animation, it meant the animation was drawn using CSS rather than a video file, with
+animation info coming from the server. This way solvers could not right-click -> "Download Video" and solve the animation offline.
 
 Our testing process for this was pretty goofy. We would take groups of people spoiled on the
 existence of breakout, and tell them that we wanted to test the unlock structure and backend of the
-hunt website, using fake puzzles that would ask you to wait for 60 seconds, then immediately give
-the answer.
+hunt website. The hunt site had many fake puzzles that would ask you to wait for 60 seconds, then
+give you the answer.
 
 ![Fake puzzles](/public/mh-2023/fakepuzzles.png)
 {: .centered }
 
-This testsolved correctly, but we knew the real test would be at the retreat, when we had real puzzles.
+This testsolved correctly in isolation, but we knew the real test would be at retreat.
 
-Meanwhile, we were working on the collaborative jigsaw that appeared after solving the loading
-puzzle. There are a few principles that guide teammate's approach to storytelling. I don't want to
-put words in the mouth of the story team, which I've never been on, but in my opinion the key points are:
+Meanwhile, we were working on the second part of the puzzle that would appear after the loading
+screen. There are a few principles that guide teammate's approach to storytelling. I don't want to
+put words in the mouth of the story team, but in my opinion the key points are:
 
-* Decide on the story you want to tell, then make sure as much of the Hunt as possible acts
-consistently with that story. This will take a long time to polish - do so anyways.
-* Tie changes in narrative or story state to actions the solvers take. These actions are usually
-solving puzzles, but they don't have to be.
+* Decide on the story you want to tell, then make sure as much of the Hunt as possible echos and
+is consistent with that story. This will take a long time to polish - do so anyways.
+* Tie changes in narrative or story state to actions the solvers take. Usually this means attaching
+it to puzzle solves.
 * Use bottlenecks to direct team attention towards the same point, then put the most
 important story revelations at those bottlenecks.
 
-The breakout puzzle acts the bottleneck into the Puzzle Factory, but the main thing we wanted to
-avoid was one rogue team member solving the puzzle, finding the Factory, and leaving the rest of
-the team in confusion about what was going on. Our solution was to have the second part of the
+The breakout puzzle acts the bottleneck into the Puzzle Factory, and we wanted to
+avoid one rogue team member solving the puzzle, finding the Factory, and leaving the rest of
+the team in confusion about what was going on.
+
+Our solution was to have the second part of the
 puzzle be a "teamwork time" puzzle (borrowing a term from MIT Mystery Hunt 2020), where collaborating
-with others would make it go faster. We then would require each user to enter STOP on the loading
+with others would make it go faster. This evolved into the collaborative jigsaw seen during
+Hunt. Each user was required to enter STOP on the loading
 animation individually before they could access the jigsaw puzzle's URL, to force a flow where
-early solvers would need to tell others how to break out of the Museum if they wanted to *have*
-collaborators.
+early solvers would need to tell others how to break out of the Museum if they wanted to have
+collaborators or share what was going on.
 
-The collaborative jigsaw itself married three of the worst parts of frontend development:
+The collaborative jigsaw married three of the worst parts of frontend development:
 handling different screen sizes, live updates of other people's actions, and non-rectangular
-click regions. Many thanks to Ivan for figuring out the design of those details.
-Internally,
-what happens is that every user fires a cursor location update in Websockets every 150ms,
+click regions. Many thanks to Ivan for figuring out most of those details.
+Internally, every cursor fires a location update in Websockets every 150ms,
 and the team-wide cursor state is broadcasted back to all viewers, using [a spring animation](https://liveblocks.io/blog/how-to-animate-multiplayer-cursors)
-to make cursor movement smoother by respecting momentum. The click regions are then based on SVG
-regions with some custom hooks on mouse-enter and mouse-leave to track which puzzle piece the
-user is working with. I mostly played QA testing on checking
-it worked properly on Firefox and Safari,
-and making sure puzzle pieces couldn't get stranded by phantom cursors. (Fun fact:
-did you know that browsers can sometimes fire a 2nd mouse-enter while you're in the middle of entering
-an element? It's true! It happens entirely randomly, and when it does it fires a mouse-leave while you're still
-entering said element. I'm sure this won't cause a bug that take 5 hours to root-cause.)
+to make cursor movement smoother by respecting momentum. The puzzle pieces are squares that have
+an SVG applied on top of them to cut them into the shape of the puzzle piece, with the SVG defining
+the click region for each piece. Custom hooks on mouse-enter and mouse-leave then track which
+puzzle piece the user is moving, which is also sent to the server and broadcasted back.
 
-At one point, we planned to implement an adversarial UI, where pieces would move on their own, wiggle out
-of their position, etc. The story justification would be that MATE was trying to stop you from getting
-into the Factory. We ended up cutting this because it was more work, and also in internal testing
-we got trolled enough by our own team members that we decided we didn't need to make solving the jigsaw
-any harder.
+![Cursors](/public/mh-2023/cursors.png)
+{: .centered }
+
+I played QA testing on checking it worked properly on Firefox and Safari,
+and debugging bugs like phantom cursors and puzzle pieces that claimed to be held when they weren't.
+(Fun fact:
+did you know that when you enter an element, browsers can sometimes fire a 2nd enter event in the middle
+of the first enter event? It's true! It happens entirely randomly, causing you to see 2 enters then 1 leave
+all at once. I'm sure this won't cause a bug that take 5 hours to root-cause.)
+
+At one point, we planned to implement an adversarial UI, where pieces would wiggle out
+of their position, try to run away, and more. The story justification would be that MATE was trying to
+stop you from getting
+into the Factory. We ended up cutting this because it was more work. Also, in internal testing,
+a teammate trolled us by dragging a puzzle piece 5000 pixels down the page, and we decided
+we didn't need to make solving the jigsaw any harder.
 
 ![Conversation during Discord testing](/public/mh-2023/breakout_discord.png)
 {: .centered }
 
-In the live Hunt, a few teams somehow managed to drag a puzzle piece offscreen, and we had to manually
-advance them past the jigsaw puzzle. I still don't understand exactly what happened there,
-we never saw it in testing after adding bounds on the drag region.
+We did end up adding a max draggable range. Somehow this caused a problem in the live Hunt, where some teams
+dragged pieces outside of the draggable range and couldn't move them again. I'm still not sure what
+happened there, because we tested it pretty thoroughly. I'm guessing something in the screen resizing
+logic caused problems? In any case, we had to figure out live on-the-fly fixes for this, which was
+"exciting".
+</div>
 
-\* \* \*
-{: .centered }
+Around this time, hunt leadership mentioned we were behind expected hunt progress, and organized a
+teamwide "hack weekend" where each group would try to draft and testsolve a puzzle within the weekend.
+In said weekend, this was written:
 
-The other thing we needed for retreat was enough Act I feeders to fill out the start of the Museum
-round. As part of prep, we started really ramping up puzzle production, along with a "hack weekend"
-where we'd try to draft a puzzle within a weekend. That weekend was where we ended up writing all of:
+<div class="shaded" markdown="1">
+### Museum Rules
 
-Museum Rules
----------------------------------------------------------------------------------------------
+There isn't really too much of a story with this one. We looked at the pool of open answers, picked
+one of them, then brainstormed ideas based on that. That landed on doing
+something with a list of rules, which we'd justify in story as rules for attending the Museum.
+After the laws idea, the idea of extracting from Supreme Court seals felt like a more suitable way
+of using the puzzle information than just indexing. The puzzle presentation was stolen directly from
+[Storytime](https://2020.teammatehunt.com/puzzles/storytime) in Teammate Hunt 2020 (as in, I found
+the code on my laptop and copy-pasted it into our Mystery Hunt repo).
 
-There isn't really too much of a story with this one. The brainstorm group I was was randomly
-assigned a feeder answer, and we tried to brainstorm ideas based on that. That landed on doing
-something with a list of rules placed in the reception of the Museum in-story. After the US
-states idea, the idea of extracting from Supreme Court seals felt like a more suitable way
-of using the puzzle information, and the puzzle presentation was stolen directly from
-[Storytime](https://2020.teammatehunt.com/puzzles/storytime) in Teammate Hunt 2020.
+The puzzle was written in about 2 days. I worked on creating the seal overlay extraction,
+Catherine did the drawings, and Harrison did the factchecking + research of weird laws. Harrison
+found that most weird laws did not have a solid primary source, but laws like "no killing a fly next
+to a church" were too funny to exclude. The urban legends were wrong, but they were at least
+*consistenly* wrong, so we decided to perpetuate a bit of inaccuracy for the sake of solvability,
+then confess our sins in the puzzle solution.
+Other laws were deliberately misinterpreted for humor, like "no marathon dancing".
 
-The puzzle was written in about 2 days - I worked on creating the seal overlay extraction,
-Catherine did the drawings, and Harrison did the factchecking + research of weird laws. I'd
-say this puzzle was the strongest stretch of deciding whether to use true laws, or easy to
-search laws. Some laws were deliberately misinterpreted for humor, like "no marathon dancing",
-but other ones like "killing a fly next to a church" were not supported by any part of the
-Ohioan legal code. Meanwhile, I know that
-[New York has a specific child labor law exception for working as a bridge caddie in a bridge tournament](https://law.onecle.com/new-york/labor/LAB0130_130.html). Is anyone else going to be able to research that?
-Maybe, but better not to risk it. Around 30% of the laws used in the puzzle are not actually real weird laws.
+My personal favorite weird law is that
+[New York has a specific child labor law exception for working as a bridge caddie in a bridge tournament](https://law.onecle.com/new-york/labor/LAB0130_130.html). We did not use it because it was just, not going to
+be searchable. (I learned about it through someone at [BEAM](https://www.beammath.org/) telling stories
+about verifying legal compliance.)
 
-Really my main regret is that we didn't figure out a way to cleanly push to Supreme Court seals
-rather than state seals. The ambiguity came up in testing, but we didn't get around to a fix making
-it more obvious.
+I do regret that we didn't figure out a way to cleanly push to Supreme Court seals
+rather than state seals. The ambiguity came up in testing, and we specifcally called out things that only existed in the Supreme Court seal when possible, but it was still a sticking point. We didn't get around
+to finding a way to make the relevant bit of flavortext more obvious.
+</div>
 
+The hack weekend brought us back to the on-target trajectory, although it didn't bring it back to
+surplus. I ended up working on two other puzzles in July.
 
-Interpretive Art
--------------------------------------------------------------------------------------------
+<div class="shaded" markdown="1">
+### Interpretive Art
 
 As mentioned in this solution, this puzzle started from a shitpost someone posted on Facebook.
 
+> "First I was afraid, I was petrified."
+>
+> - person losing a fight with Medusa
+
 Me: "haha. Wait this isn't a bad puzzle idea."
+
+I mentioned it in our puzzle-ideas channel, there was enough buzz to get a brainstorm going,
+and we were off.
 
 One of the common tools a puzzle constructor reaches for is "does this have a small, canonical
 dataset"? Such things are easier to search and usually give a pre-built Eureka moment when
 solvers discover the canonical dataset. Accordingly, the first idea on this puzzle was to
-use only songs from the Guardians of the Galaxy soundtrack. It was a good intersection of
-pop music and alien interpretations of that music.
+only use songs from the [Guardians of the Galaxy Awesome Mix](https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_(soundtrack)). It was a good intersection of pop music and alien interpretations of that music.
 
-After I realized the GotG soundtrack did not have Never Gonna Give You Up or All Star, I decided
-that was a bad idea, and we switched to "literally any popular song". If you cannot meme in
-a puzzle, what are you even doing? My proudest moment of the puzzle was in the first testsolve,
+After I realized the GotG Awesome Mix did not have Never Gonna Give You Up or All Star, I decided
+using it was a bad idea, and we switched to "literally any popular song". If you cannot meme in
+a puzzle, what are you even doing? An early version did not index words, and instead built up
+an eight word cluephrase by highlighting 8 squares of the fill. In testsolving, we didn't like that
+only the clues crossing those squares "mattered", so it was changed to indexing.
+
+My proudest moment of the puzzle was in the first testsolve,
 where testsolvers solved NA NA NA NA NA NA NA NA NA NA NA HEY JUDE, and placed it while saying
 "what an absolute shitpost".
 
 For a puzzle written so quickly, this puzzle got insanely high fun ratings in testing and seems
-popular with Hunt participants as well. Between this and [Young Artists](https://2021.galacticpuzzlehunt.com/puzzle/young-artists) from GPH 2022, I'm guessing that any puzzle that riffs on pop music is
+popular with Hunt participants as well. Between this and [Young Artists](https://2021.galacticpuzzlehunt.com/puzzle/young-artists) from GPH 2022, I suspect that any puzzle that riffs on pop music is
 going to be a fan favorite.
+</div>
 
 
-Conglomerate
------------------------------------------------------------------------------------------
+<div class="shaded" markdown="1">
+### Conglomerate
 
-On this puzzle, I did less work. The story is that chuttiekang came up with the overall
-skeleton of the puzzle, but wanted help brainstorming and writing minipuzzles. So
-Nishant and I got recruited to do so. I ended up writing Birdhouse Kit, Camera, Microphone,
-Quilt, and Telescope. I also helped on a revision of Fishing Rod.
-Some of you may remember me saying that I'd try to do fewer minipuzzles for Mystery Hunt,
-but if someone else is designing their inclusion, then sure I'll help out.
-The sheer quantity did make construction a bit difficult, since we wanted to avoid
-repeating encodings or extraction mechanisms. That left fewer options after we exhausted
-binary, semaphore, Braille - you know, the old standbys.
+Remember how I said I didn't want to write minipuzzles anymore?
+
+I still don't, but editors asked if I could help contribute to a puzzle skeleton
+chuttiekang came up with. The ideas were there, it just needed more hands. I suppose bending
+the rule to work on someone else's minipuzzles is okay.
+
+I ended up writing Birdhouse Kit, Camera, Microphone,
+Quilt, and Telescope, as well as a revision of Fishing Rod after the original mini failed.
+The sheer quantity of minipuzzles did make construction a bit difficult, since we wanted
+to avoid repeating encodings or extraction mechanisms. That left fewer options after we exhausted
+binary, semaphore, Braille - you know, the old standbys. The Quilt puzzle was computer generated,
+I wanted the puzzle done fast and figured people would forgive a computer generated Sudoku if
+it was just part of a puzzle.
 
 This puzzle
-had more errata than I'd like, and that ties into part of the reason I've been trying to avoid
-minipuzzles. The amount of content you need to create is a lot larger, and your exposure
-to missing something in factchecking is larger as well.
+had more errata than I'd like. I think this is expected for minipuzzles. You have to make
+more content,
+so your exposure to missing something in factchecking is larger as well.
+</div>
 
 
-August 2022 - Retreat (but Also Other Puzzles)
-------------------------------------------------------------------------------------------
+# August 2022
+
+## Archaeology
 
 As the date for retreat approached, most of my work was on fixing parts of the Loading
-Puzzle, which was getting updated up to the day of retreat. However, puzzle writing is
-a constant process during the year, so August was also the time of writing:
+Puzzle. Still, there was time to work on other puzzles long the way.
 
 
-Lost to Time
-----------------------------------------------------------------------------------------
+<div class="shaded" markdown="1">
+### Lost to Time
 
-Whenever I wrote a puzzle, I did a search in the /dev/joe index to double check it's not
+Whenever I wrote a puzzle for Hint, I did a search in the /dev/joe index to double check it's not
 too close to a prior Mystery Hunt puzzle. At one point, I opened a link to the 1995 Mystery
-Hunt, and got really confused why the solution page redirected to devjoe's domain. I mentioned it
-in #puzzle-ideas and kept going.
+Hunt, and got really confused why the solution page redirected to devjoe's domain. I posted a link
+in #puzzle-ideas and kept going on other work.
 
 About a week later, Bryan said it was turning into a real puzzle and I should help out since
 I'd already be too spoiled to test. The plan was to pretend we found all the missing parts of the
@@ -1537,9 +1645,7 @@ I'm a bit disappointed this wasn't solved more, but I understand given its lengt
 in the Hunt. It's also interesting to write a puzzle that will potentially be broken if
 anyone finds more material about the 1995 Mystery Hunt. I'm usually rooting for better archiving.
 This is a rare example where I hope it stays in a steady state!
-
-\* \* \*
-{: .centered }
+</div>
 
 I also did an internal test on a paper version of Weaver around this time. I failed to understand
 the final cluephrase even with the correct extraction, so it got revised. I also remember commenting
@@ -1572,8 +1678,7 @@ You don't realize how long it takes to mechanically copy-paste paragraphs from G
 and wrap them in `<p>` tags until you've done it thousands of times.
 
 
-Retreat!!!
--------------------------------------------------------------------------------------
+## Retreat!!!
 
 Retreat was held in late August, in a big AirBnB in the Bay Area. Going in, there were four
 public priorities:
