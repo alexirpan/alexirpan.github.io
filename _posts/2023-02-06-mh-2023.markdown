@@ -302,27 +302,30 @@ The default recommended approach in Django is that when a request comes in, you 
 HTML response based on a template file that lives on your backend. The template gets filled out
 on the server and then gets sent back as the viewed webpage.
 
-tph-site still uses Django as its backened, but differs in using a React + Next.js based frontend.
+tph-site still uses Django as its backend, but differs in using a React + Next.js based frontend.
 React is a Javascript library whose organizing principle is that you describe your page in components.
 Each component either has internal state or state passed from whatever creates the components.
 A component describes what it ought to look like according to the current state, and whenever the
 state is updated, React will determine everything that could depend on that state and rerender it.
 The upside: dynamic or interactive web pages become a lot easier to build, since React will handle
 a lot of boilerplate Javascript and state management for you. The downside: extra layers of indirection
-between your code and the resulting HTML, and potentially larger network downloads depending on how
-you set up your site.
+between your code and the resulting HTML.
 
 Next.js is then a web framework that makes it easier to pass React state from the server, and
 support rendering pages server-side. This is especially useful for puzzlehunts, where you want to
 do as many things server-side as possible to prevent spoilers from leaking to the frontend.
+(As for the merits of [SPAs](https://en.wikipedia.org/wiki/Single-page_application) versus a multi-page setup, I am not qualified enough to discuss the pros and cons.)
 
 The tph-site fork exists because teammate devs wanted to use React to implement the Playmate in
 Teammate Hunt 2020. Porting gph-site to React was quite painful, but I don't think Playmate was
 getting implemented without it, and we've since used it to support other interactive puzzles.
 In general, I believe we made the codebase more powerful, but also increased the complexity by
 adding another framework / build system. (To use tph-site, you need to know both Django and React,
-instead of just Django.) For new puzzlehunt makers, I would generally recommend starting with a
-setup like gph-site, until they know they want a more complicated frontend.
+instead of just Django.) One of teammate's strengths is that we have a lot of tech literacy and
+software engineering skills, so we're able to manage the higher tech complexity that enables the
+interactive puzzles and websites we want to make. For new puzzlehunt makers, I would generally
+recommend starting with a setup like gph-site, until they know they want to do something that
+justifies a more complicated frontend.
 </div>
 
 
@@ -1608,143 +1611,174 @@ too close to a prior Mystery Hunt puzzle. At one point, I opened a link to the 1
 Hunt, and got really confused why the solution page redirected to devjoe's domain. I posted a link
 in #puzzle-ideas and kept going on other work.
 
-About a week later, Bryan said it was turning into a real puzzle and I should help out since
-I'd already be too spoiled to test. The plan was to pretend we found all the missing parts of the
-1995 Mystery Hunt in the Puzzle Factory basement, and we'd turn them into a puzzle answer. Given
-how niche the idea was, it seemed like a shame to leave any stone unturned, so we aimed to use
-as much of the missing content as possible. That meant writing 8 minipuzzles, based on the
-constraints given by devjoe's writeup and the 1995 Hunt document. We landed on the idea of writing
-puzzles with two answers, one for the 1995 Hunt and one for the 2023 Hunt, where knowing the
-1995 answer is helpful for solving the 2023 answer, then having them feed into a meta based
-on the 1995 Hunt meta.
+About a week later, Bryan said it was turning into a real puzzle, and I could join if I wanted because
+I'd be too spoiled to testsolve it anyways. The plan was to pretend we found all the missing parts of the
+1995 Mystery Hunt in the Puzzle Factory basement.
+The core idea was to write puzzles with two answers, one for the 1995 Hunt and one for the 2023 Hunt,
+where knowing the 1995 answer would help to solve the 2023 answer.
 
-This definitely contributed to the length of the final puzzle. We knew it was reallllly pushing
-it for a puzzle in the FActory, but decided it could be okay if it was a one-off exception. As a
-microcosm of the entire Hunt, it made sense to have as many minipuzzles as we did, but each minipuzzle
-needed to be easier. (Not shorter, easier. We were constrained in length by the original 1995
-Hunt.) I know an old Dan Katz post speculated whether an entire early Mystery Hunt could act
-as one puzzle in a modern Hunt. I think this puzzle shows that no, it can't, but it's kind of close.
+Given how niche the idea was, it seemed like a
+shame to leave any stone unturned, so we aimed to use
+as much of the missing content as possible. That meant writing 8 minipuzzles, based on the
+constraints given by devjoe's writeup and the 1995 Hunt document.
+This definitely contributed to the length of the final puzzle. Even at planning time, we knew it was reallllly pushing
+it for a puzzle in Act II of the Hunt, but decided it could be okay if it was a one-off exception.
+In hindsight, I believe we were correct to use all the minipuzzles, but each minipuzzle should have been
+made much easier. At the same time, both testsolves were clean and gave it high fun ratings, so I don't
+think there was any way our systems were going to point us to revising the puzzle.
 
 The minipuzzles I directly made were the conundrum and the screenshot of Rick Astley, but in general
-I helped out on the presentation or brainstorming of other minipuzzles as well.
+I helped out on the presentation of other minipuzzles and the meta.
 In the vein of [Cruelty Squad](https://store.steampowered.com/app/1388770/Cruelty_Squad/), we
 spent a lot of time trying to make everything look as bad as possible. Well, "dated" would
 be the more accurate term. Every image in the puzzle was saved as a JPEG with lower resolution
-and image compression dialed up to the maximum. The conundrum was printed out on a piece of paper,
-which I cut by hand and then scanned. The scanner I used was too good though, so we had to
-JPEG-ify it a bit. Last, we planned to run the video through a filter to add VHS lines, but this
+and maximal image compression. For the conundrum, I printed it out, cut it by hand, scanned
+it, then JPEG-ified the output because the scanner I used was too high quality.
+Last, we planned to run the video through a filter to add VHS lines, but this
 got dropped because none of the premade filters we found matched our desired aesthetic, and
-making a custom one was definitely not worth it.
-Shoutouts to
-"The Boston Paper". I briefly considered buying a [newspapers.com](https://www.newspapers.com/)
+making a custom one too much work.
+
+For the newspaper puzzle,
+I briefly considered buying a [newspapers.com](https://www.newspapers.com/)
 subscription to track down the original newspaper used for the 1995 Hunt, and then realized that
-it would be much better if the puzzle did not suggest looking up historical newspapers. That
+it would be much better if the puzzle did not encourage solvers to find the original. Hence the
+name "The Boston Paper". That
 being said, I bet you could find what the original puzzle looked like if you dug hard enough.
 
 I'm a bit disappointed this wasn't solved more, but I understand given its length and placement
 in the Hunt. It's also interesting to write a puzzle that will potentially be broken if
 anyone finds more material about the 1995 Mystery Hunt. I'm usually rooting for better archiving.
 This is a rare example where I hope it stays in a steady state!
+I know an old Dan Katz post speculated whether an entire early Mystery Hunt equaled a single
+puzzle in a modern Hunt. I think this puzzle shows that no, it can't, but it's kind of close.
 </div>
 
-I also did an internal test on a paper version of Weaver around this time. I failed to understand
-the final cluephrase even with the correct extraction, so it got revised. I also remember commenting
-that it might be 1 weave too long, but we didn't plan any changes before retreat. The main goal was
-to get it validated enough to create the physical prototype.
+As more retreat prep, I did an internal test of a paper version of Weaver.
+I failed to understand the final cluephrase even with the correct extraction, so it got revised.
+I also remember commenting
+that it might be one weave too long, but we didn't plan any changes before retreat. Brian had done
+some experiments with the hydrochromic paint he'd ordered before, and was making a copy by hand
+for retreat.
 
-This was also around the time where we were more seriously working on Hunt tech. (Move sections from
-above to down here).
+## Working on the Hunt Site
+
+Hunt tech was also starting to ramp up. This was taking up more time. We had done many planning meetings
+about Hunt tech starting from the beginning of the year, but now we had a deadline: the hunt site needed
+to be in a good enough state to testsolve breakout.
+
+Most of the hunt tech meetings were done async, although it became more synchronous as we had more work.
+Earlier, I mentioned that we planned to stay close to tph-site, but after seeing Palindrome's
+release of [spoilr](https://github.com/Palindrome-Puzzles/2022-hunt), we revisited this plan. On a read
+of the code, Palindrome's copy of spoilr had more team management that was relevant to Mystery Hunt.
+We still wanted to keep our frontend, so we decided to merge tph-site and spoilr into one codebase,
+then separate out the updates posthunt. Many thanks to Alex Gotsis for signing up to go through
+integration hell.
+Like most software integrations, the end result is a bit more complicated than both in isolation.
 
 One interesting thing about tech for Mystery Hunt in particular is that there's greater emphasis on
 creating internal tooling. In a smaller Hunt, it's possible for a small number of tech-inclined
 people to get all the puzzles into the Hunt website. In Mystery Hunt, this is less true, just because
 of the scale. We knew the end of Hunt writing would be busy with art and puzzle postproduction, so
-any tools we wanted were best planned and coded early, before art and puzzle drafts were done.
+any tools we wanted were best planned and coded early.
 
 Top of our list was improving our postproduction flow, given Palindrome's comments that they
-had a postproduction crunch. We also wanted a better puzzle icon placement system.
-Icon placement is a field on the Puzzle object in the database, which lets artists change its
-location without needing to write a commit, but the flow of adjusting a random number was kinda
-painful in Teammate Hunt 2021.
+had a postproduction crunch. It had been a bit of a grind for us too in Teammate Hunt.
+Ivan proposed an "auto-postprod" system. Given a Google Doc link, the tool
+would load the page, retrieve the HTML within the Google Doc, create a puzzle file based on that
+HTML, and auto-create a commit plus pull request for that puzzle.
+I said "sure", not really expecting it to ever exist. Imagine my
+surprise when it actually got built!
 
-For postproduction, Ivan proposed an "auto-postprod" system. Given a Google Doc link, this tool
-would load the page, retrieve the HTML within the Google Doc, and auto-create a commit and pull
-request for that puzzle draft. I said "sure", not really expecting it to ever exist. Imagine my
-surprise when it actually got built! It wasn't perfect. It didn't handle Google Sheets, it
+It wasn't perfect. It didn't handle Google Sheets, it
 would sometimes timeout if a Google Doc had an especially large image, there was an issue with
-HTTP link escaping at one point, and in general if it errored on a puzzle it would have fits
-when trying to auto-create the commit for the postprodded puzzle. It was still quite helpful.
+URL escaping at one point, and if it errored on a puzzle it would require someone
+to clean up git history before it would work again.
+Despite all of this, it was still quite helpful.
 You don't realize how long it takes to mechanically copy-paste paragraphs from Google Docs
-and wrap them in `<p>` tags until you've done it thousands of times.
+and wrap them in `<p>` tags until you've done it literally thousands of times.
+
+We also wanted a better puzzle icon placement system. This also came out of Teammate Hunt 2021.
+In tph-site, icon placement is a field on the Puzzle model, meaning it's saved in the database and
+can be adjusted live via admin pages. This made it possible to change positioning without
+a commit, but it was kind of ass to alternate back and forth between the two. We didn't find
+any tooling in the 2022 Hunt code for this, so I coded a what-you-see-is-what-you-get drag/drop
+positioning tool. When logged in as the admin team, it drew this horrible, ugly red box that
+could be moved around, auto-saving the new position and size info to server.
+
+![Drag Drop UI](/public/mh-2023/dragdropui.png)
+{: .centered }
+
+It had a bunch of bugs I never figured out, but I hope it helped regardless. I didn't work on
+icon positioning myself, so I don't have much insight into how helpful this was.
 
 
 ## Retreat!!!
 
-Retreat was held in late August, in a big AirBnB in the Bay Area. Going in, there were four
-public priorities:
+Retreat was held in late August, in a big AirBnB in the Bay Area. I took Friday off work
+to attend in person, and people from East Coast would arrive over time each day.
 
-* Testsolve physical puzzles
-* Test events
-* Draft a new event
-* Start drafting 2+ AI round puzzles
-
-along with the secret priority of
-
-* Testsolve breakout
-
-Friday
-----------------------------------------------------------------------------------
+### Friday of Retreat
 
 ![Retreat schedule, Friday + Saturday](/public/mh-2023/retreat_friday.png)
 {: .centered }
 
-As an icebreaker, we went around saying what our favorite puzzle was. One person said, "134".
-Later I'd learn this was the puzzle ID for the Hall of Innovation meta, which was in the
-middle of taking over the lives of its constructors.
+It was great to see people from teammate in person, given how many people I had only met
+over Discord voice calls. It's really not the same as meeting in person.
 
-Retreat started with a group testsolve of all the Act 1 puzzles and physical
-puzzles. We aimed to frontload all the physical puzzles, based on feedback that
-[Diced Turkey Hash](https://puzzles.mit.edu/2022/puzzle/diced-turkey-hash/) showed up late
-last year, so most physical puzzles were in Act 1 anyways.
+As an icebreaker, we went around saying what our favorite puzzle was. I forgot what I
+said - I think it was [A Puzzle Consisting Entirely of Random Anagrams](https://puzzles.mit.edu/2015/puzzle/a_puzzle_consisting_entirely_of_random_anagrams/)?
+Vinjai said, "134". Later I'd learn this was the puzzle ID for the Hall of Innovation meta.
+He was one of the authors of that meta and it sounded like it was in the middle of taking over
+the lives of everyone involved.
+
+Retreat started with a group testsolve of all the Act I puzzles and physical
+puzzles. Most physical puzzles were in Act I anyways, based on 2022 feedback that puzzles
+like [Diced Turkey Hash](https://puzzles.mit.edu/2022/puzzle/diced-turkey-hash/) were placed
+pretty late last year.
 
 Almost immediately, we started hitting technical problems. A few were real software bugs,
 but most of them were tied to trying to have ~20 laptops and ~20 phones all connect to
-the same WiFi, and this...not working that reliably. I switched to using a WiFi hotspot
-from my phone. The other issue was that we provisioned a smaller server for testing,
-and it turned out that server was fine for 3-5 people and less fine for 20.
+the same WiFi. It...did not work that reliably. I switched to using a WiFi hotspot from my phone.
+The other issue was that our testing server was fine for 3-5 people, and less fine for 20+. The
+setup for tph-site assumes it runs on a single VM, so we were not connected to an autoscaling
+service and needed to migrate on our own.
 
-So, we also immediately got evidence that if your site is slow, then people assume the
-loading animation is just a real problem with the site. We also saw that as load times
-increased, teammates from teammate would get in the habit of opening every puzzle at once in a
-separate tab, then looking elsewhere while waiting for the puzzle to load. Which also
-wasn't great. The loading puzzle was not getting solved, teams were not breaking out.
+These tech problems made people assume that the loading animation was real, and that the site was
+just struggling. Which was useful data to have, it implied we *really* needed to land the prod
+version of the site. We also observed that when there were real puzzles instead of fake puzzles,
+teammates from teammate would get in the habit of opening every puzzle at once in a
+separate tab, then going back to a puzzle spreadsheet while waiting for the puzzle to load.
+That was less great. The loading puzzle was not getting solved and no one was suspicious.
 
 In an attempt to get people to look at the loading animation more, the editors-in-chief
 nudged testsolvers towards puzzles that unlocked later (had longer load times). Meanwhile,
-on the tech side we did a number of deploys to "fix a bug", that was *actually* just
-increasing the time of the loading animation and encouraging solvers to refresh their
-pages to get the "bug fix" (see the loading animation for longer). Testsolvers were progressing
-through Act I slower than expected, so the load time curve needed to get adjusted.
+on the tech side we did a number of deploys to "fix site bugs", that was *actually* just
+increasing the time of the loading animation and encouraging solvers to refresh the site
+to get the "bug fix".
 
-(I can see some of you yelling about the "slower than expected" part, and in hindsight,
-yes that should have been considered more seriously. But we had already marked retreat as
-our one good testsolve of breakout, and it was *not working*. We were of the mindset that
-we'd lock in all details of breakout by today, and if breakout didn't work then the
-entire Hunt's design was in jeopardy. I don't even think that's wrong.
-In comparison, many of the Act I puzzles were on their 1st draft and would likely get easier as they got polished.
-Again, I think "puzzles get easier as clues are cleaned up" is also totally true!
-The error may have been in the estimate for how *much* the solve time would drop in
-future puzzle revisions.)
+An added part of the difficulty was that testsolvers were progressing through Act I slower
+than expected, so our load time curve needed to be adjusted. I can see some of you yelling,
+and yes, in hindsight, this was an early sign our difficulty estimates were off. But the
+main goal of retreat was getting one good testsolve of breakout, and it was *not working*.
+If that didn't work, the entire Hunt design was in jeopardy.
+In comparison, many of the Act I puzzles were on their 1st draft and would likely
+get easier as they got polished or revised.
+
+I think both of these arguments were correct! We were correct to focus on breakout and
+also correct to assume puzzles would get easier over time as they got cleaned up. The
+error was in estimating how *much* the solve time would drop in future revisions. The magnitude
+of the effect was probably smaller than we were hoping for.
 
 In between trying to ramp up loading times, I testsolved many puzzles, including
 [Exhibit of Colors](https://interestingthings.museum/puzzles/exhibit-of-colors) (solved the
 flower puzzle and got the animal a-ha), [Dropypasta](https://interestingthings.museum/puzzles/dropypasta)
 (complained heavily about the old Pokemon Stadium mechanic - it got changed to what our testsolve
-group thought it would be), and [Brain Freeze](https://interestingthings.museum/puzzles/brain-freeze). At
+group thought it should be), and [Brain Freeze](https://interestingthings.museum/puzzles/brain-freeze). At
 the end of Brain Freeze, someone asked why it had such a garbage answer, and I had to stay silent
 knowing I was responsible for pushing that garbage answer into the Hunt.
 
-(meme image here?)
+![Shifty](/public/mh-2023/shifty.png)
+{: .centered }
 
 After that, Collage got unlocked! Except, it was totally broken. Oh no. One teammate meme
 during writing was "bamboozle insurance". You offer bamboozle insurance when you want to assure
@@ -4282,60 +4316,6 @@ will spend more, and in general, there are always people who will have to drop o
 Everyone starts excited and motivated at the start of Hunt, when you are scoping things, but by the middle
 some people will have checked out.
 
-Very soon after getting a copy of [spoilr](https://github.com/Palindrome-Puzzles/2022-hunt) in March,
-the tech team had a meeting to decide what we wanted to do for our tech stack. We saw three options:
-
-(Explain silenda here too.)
-
-* Use tph-site, reimplementing things we liked in the spoilr code.
-* Use spoilr, reimplementing things we wanted from tph-site.
-* Combine both codebases together into one Django project.
-
-Oh, I haven't described what Django is! Uhhhhh, okay, super quick crash course.
-
-Django is a Python library for building web applications. You define Python classes (normally
-called models) that represent what you want the database to look like. You then define views,
-Python functions that take incoming requests, do processing that might query from or save to the
-database, and return a response. Finally, the output
-responses get rendered to the user in the frontend. I first learned Django 10 years ago and somehow
-every website I've worked on has used it in some way. All the tech stacks I've mentioned use Django,
-including tph-site.
-
-Where tph-site differs from the other sites is on its frontend.
-Puzzlehunt CMU, gph-site, and Spoilr all use HTML template files that are rendered server side based
-on the database. This is what the Django tutorial recommend. Meanwhile, tph-site uses Django to drive
-a React + Next.js based front-end.
-
-Oh, I haven't described what React or Next.js are either! Uhhhhh, okay, round 2.
-
-React is a Javascript library whose organizing principle is that you describe your page in components,
-that each either have internal state or state passed from whatever creates the components. Each
-components describe what it ought to look like based on its state, and whenever the state is updated,
-anything that could depend on that state is entirely rerendered. This adds extra layers between your
-code and the resulting HTML, but also makes it easier to build dynamic or interactive web pages.
-You can do the same with raw Javascript, but it'll involve more boilerplate and state management
-on your end. Next.js is then a web framework that makes it easier to pass React state from the server,
-rendering pages server-side when possible to make load times faster for the users. This is especially
-useful for puzzlehunts, where you want to do as many things server-side as possible to prevent spoilers
-leaking to the front-end.
-
-The tph-site fork exists because teammate devs had experience with React, and for Teammate Hunt 2020
-implementing the Ninteamdo Playmate without React was declared a non-starter. Since then we've had
-multiple years of experience working with tph-site. Given the combination of story goals and familiarity
-with the code, we elected to stick with tph-site. At the same time, we liked parts of spoilr, so we
-decided to merge their spoilr HQ management code with the tph-site code.
-
-Like most software integrations, the end result is a bit more complicated than both in isolation, and
-tph-site was already more complex than gph-site thanks to us merging Django code with React code. As of
-the writing of this post, we're still working on cleaning up the code into a releasable state.
-
-In general, one of teammate's strengths is that we have a lot of tech literacy and software chops, so
-we're able to manage the higher tech complexity that enables the interactive puzzles and websites that
-we want to create. I'm not sure what TTBNL plans to use for their Hunt, but in general, I would only
-recommend tph-site if you have a need for lots of interactivity. Otherwise, using a purely Django
-setup like gph-site is fine. The various Galactic Puzzle Hunts prove that you can do plenty of
-interactive puzzles in that setup too.
-
 Hunt writing tends to follow a long tail distribution, where a few people will do a lot of the work
 and a lot of people will do a bit of work. This is very consistent every year. Below are some plots of
 "hunt contribution", as measured by puzzles written. I know that there are many ways people
@@ -4382,3 +4362,9 @@ There's useful work that can be done without knowing the puzzle feeder. In gener
 have a feeder from the start, you'll do less redundant work, it's easier to stay motivated if you're
 expected to pull through on a puzzle, and you can brainstorm ideas from the puzzle answer rather
 than trying to generate one from the ether.
+
+and we also should have adjusted
+the difficulty estimates of future puzzles. We did not have the time to rewrite existing puzzles
+to be easier, because the end goal is creating 150 units of "fun". In general, creating
+fun is harder than creating difficulty. So the more correct decision would have been to bias
+new puzzles (units of fun) to be easier, to make the average go down over time.
