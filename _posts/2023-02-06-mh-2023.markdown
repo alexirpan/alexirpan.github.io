@@ -1626,6 +1626,7 @@ it for a puzzle in Act II of the Hunt, but decided it could be okay if it was a 
 In hindsight, I believe we were correct to use all the minipuzzles, but each minipuzzle should have been
 made much easier. At the same time, both testsolves were clean and gave it high fun ratings, so I don't
 think there was any way our systems were going to point us to revising the puzzle.
+I'm a bit disappointed this wasn't solved more, but I understand given its length and placement in Hunt.
 
 The minipuzzles I directly made were the conundrum and the screenshot of Rick Astley, but in general
 I helped out on the presentation of other minipuzzles and the meta.
@@ -1645,8 +1646,7 @@ it would be much better if the puzzle did not encourage solvers to find the orig
 name "The Boston Paper". That
 being said, I bet you could find what the original puzzle looked like if you dug hard enough.
 
-I'm a bit disappointed this wasn't solved more, but I understand given its length and placement
-in the Hunt. It's also interesting to write a puzzle that will potentially be broken if
+It's also interesting to write a puzzle that will potentially be broken if
 anyone finds more material about the 1995 Mystery Hunt. I'm usually rooting for better archiving.
 This is a rare example where I hope it stays in a steady state!
 I know an old Dan Katz post speculated whether an entire early Mystery Hunt equaled a single
@@ -1780,41 +1780,55 @@ knowing I was responsible for pushing that garbage answer into the Hunt.
 ![Shifty](/public/mh-2023/shifty.png)
 {: .centered }
 
-After that, Collage got unlocked! Except, it was totally broken. Oh no. One teammate meme
+After that, Collage got unlocked! Except, it was entirely broken. Oh no.
+
+One meme in teammate
 during writing was "bamboozle insurance". You offer bamboozle insurance when you want to assure
-people something will be true, and you pay bamboozle bucks when you are wrong. The nature of writing
-puzzlehunts is that you'll be wrong quite often. Example uses include:
+people something will be true, and you pay bamboozle bucks when you are wrong.
+Example uses include:
 
 "This meta testsolve needs 2+ hours but it will be worth your time, you can buy bamboozle insurance from me"
 
 "Can I get bamboozle insurance the loading animation time won't change, I'll have to redo math if it does"
 
-DALL-E and other image generation models were quite hot at the time and we used them accordingly. Although
-a surprisingly large fraction of teammate works in machine learning or related fields, the choice to
-have an AI-themed puzzlehunt in the year generative models became commercially viable was entirely
-coincidental.
+The nature of writing
+puzzlehunts is that you'll be wrong quite often and I think everyone who offered
+insurance is in bamboozle buck bankruptcy. Here are some emojis we generated
+using DALL-E 2 when it was first announced.
 
 ![Bamboozle emoji generations](/public/mh-2023/bamboozle.png)
 {: .centered }
 
 I bring this all up to say that I offered bamboozle insurance that Collage would be fine,
-since we literally testsolved it a few weeks ago, and then it wasn't.
-It turned out the issue was that the loading animation was conflicting with the startup of
-the interactive puzzle content, replacing it entirely rather than making it hidden, and this
-caused the async initialization requests for Collage to never fire. We spun up a hotfix
-to get Collage working, and got it going enough to run a testsolve, but this fed
-into the narrative of "the site is struggling, so the loading animation isn't special".
+and then it wasn't. In my defense, it was fine when we testsolved it a few weeks
+ago.
+It turned out there was an issue where the loading animation was conflicting with the startup of
+the interactive puzzle content, and this
+caused the async initialization requests for Collage to never fire. We spun up
+a hotfix to get Collage working, and made a note to avoid interactive puzzles
+at the start of the final puzzle order.
+Unfortuately, this fed into the narrative of "the site is struggling, so the loading animation isn't special".
+It is the sort of thing where if you think about the loading animation for a
+bit, it does not make sense for a list of text to take longer to load than the
+loading animation itself, but that is not the mindset most people use unless
+prompted to.
 
 The original plan was to get to breakout by around the evening (8 PM to 10 PM), then leave time for
 board games and socializing. Instead, at 1:40 AM, the Act I testsolve was officially put on pause,
-and then a bunch of hunt exec and breakout authors shuffled into a meeting room, where we
-discussed what nerfs we wanted to add before the testsolve resumed Saturday morning.
+and hunt exec + breakout authors convened for a secret meeting in the basement.
+It felt a little like the Project Elrond scene from The Martian.
 
-The additions we landed on were:
+We concluded that all our intuitions about the loading puzzle were off, and it
+needed to be *way* easier, easy enough that we would not need to worry about
+the bottleneck it could have on Hunt. The additions we landed on were:
 
-* Be much more aggressive on hinting with the messages MATE sent during loading ("It's puzzling
-why this is taking so much time.")
-* Stop interleaving the pieces of each color, just show all the pieces in order.
+* Be much more aggressive on hinting with the messages MATE sent during loading.
+Instead of just giving a generic error, MATE would give messages that suggested
+the solution and say things like "It's puzzling why this is taking so much time."
+* The original version shuffled pieces of each color to disguise the letter forms.
+This was partly done because we did not want the puzzle to be solvable from
+a screenshot of the animation, we wanted to require teams look at the site to
+solve it. This was cut and the pieces were all shown in order.
 
 ![New puzzle piece order](/public/mh-2023/neworder.png)
 {: .centered }
@@ -1822,56 +1836,72 @@ why this is taking so much time.")
 By the time this was resolved and implemented, it was 4 AM. I went to go collapse on an air
 mattress so that I could be sort-of awake tomorrow.
 
-Saturday
----------------------------------------------------------------------------------
+### Saturday of Retreat
 
-The Act I testsolve was still running in the testsolve, but we did want to do the originally
-scheduled events, so the morning was dedicated to event testsolving and Act 3 puzzle drafting.
-In Saturday morning, we started writing what would eventually become:
+The Act I testsolve was still running, but we did want to do the originally
+scheduled events. People could continue the testsolves in downtime, but were
+told to prioritize event testsolves and AI round puzzle ideation.
+On Saturday morning we started work on:
 
-
-We Made a Quiz Bowl Packet but Somewhere Things Went Horribly Wrong
----------------------------------------------------------------------------------
+<div class="shaded" markdown="1">
+#### We Made a Quiz Bowl Packet but Somewhere Things Went Horribly Wrong
 
 Okay. I know this puzzle isn't that popular, but all puzzles will have their stories told.
 
 We were given the feeder answer for this puzzle, and after investigating various pyramid options,
-we laneded on pyramidal quiz bowl questions, partly because some of the authors were fans of
-quiz bowl. The idea of extracting based on diagonalizing words based on a Hamiltonian path of
-the United States seemed like a good way to tie into both the feeder answer and the structure
-of a quizbowl question, so we started with constructing a suitable quiz bowl question for
-the final answer. Since solvers had access to the Internet, and we knew this would be towards
-the end of the Wyrm round, we ended up using a very loose searchability bar (which was one
+we laneded on pyramidal quiz bowl questions. Some authors were fans of quiz bowl
+and it's a puzzle-adjacent hobby. That got pyramid into the theming.
+The idea of extracting based on diagonalizing words based on a Hamiltonian path of
+the United States seemed like a good way to tie America into the theming as well.
+We spent much of the morning working out mechanics in more details (how to
+connect answers to states, how to extract), and made a suitable quiz bowl question
+for the desired puzzle answer.
+Unlike regular quiz bowl, solvers would have access to the Internet, so we
+treated the puzzle as a "how well can you Google" puzzle. Since it was in an
+AI round, we decided to allow loose searchability bars as well (which was one
 of the big causes of the puzzle's length).
 
 Originally, the plan was that every question would semantically clue a state in the Union.
 This was thrown out pretty quickly when we tried to tie DADDY LONGLEGS to South Carolina, and
-the best we could come up with was a South Carolinian high school's rendetion of the musical,
+the best we could come up with was a South Carolinian high school's rendition of the musical,
 which was a bridge too far.
 
 A sketch of 4 sentences per clue x 48 clues was, in hindsight, a lot. Part of the justification
-was that unlike many other difficult puzzles, this was the sort of puzzle that parallelized
-well and was easy to jump in and out of. There wasn't a lot of puzzle-specific context you
-needed to absorb to make progress. With so many puzzles trending in the direction of serial
-deductions + not much branching, it seemed okay to have a big puzzle that could run in the background.
+was that this was not a puzzle that required a lot of context to make progress.
+It was something that parallelized well and was easy to jump in and out of.
+With other puzzles trending in the direction of serial deductions, it seemed
+okay to have a big puzzle that could run in the background.
 
 Over the course of a few weeks, we started filling out the draft. It was clear that the puzzle
-skeleton would work mechanically, but we were quite unsure if the puzzle would be fun. It
-seemed like the solve process would be that you Googled a bunch of phrases, reordered,
-indexed the way you were told to, then followed the instruction you were given. You'd then
-be done without really having an a-ha anywhere. Given the structure, the easiest place to
-add an a-ha was in the 1st step of Googling everything. That motivated the decision to
+skeleton would work mechanically, but we were quite unsure if the puzzle would be fun.
+For those unfamiliar with quiz bowl questions, the way they work is that they
+start obscure and become more obvious over time. Teams buzz in to interrupt the
+reader whenever they know the answer, which rewards teams with more obscure
+knowledge. But in this puzzle, you'd have search engines, and you'd have all
+text of all questions (albeit not in order).
+
+It seemed like the solve process would be that you Googled every last sentence,
+which would immediately solve to the list of words. Then for every word, you'd
+find every sentence that looked like it could describe that word, and searched
+it to quickly verify yes vs no for each. That would work and everything would
+be reordered and then you'd be done. It felt pretty mechanical, where you didn't
+have an a-ha anywhere and just shuffled words together until it solved. Like
+solving a jigsaw puzzle - not *necessarily* a problem, but probably not
+interesting.
+
+Given the structure, the easiest place to add an a-ha was in the 1st step of
+Googling everything. That motivated the decision to
 obscure questions by pretending they were always talking about a location. In this way,
-although the bulk of the puzzle would still be Googling, there'd be a local a-ha in deciding
-how to reinterpret the clues when formulating that search. "Cryptic-like" is the right analogy
+although the bulk of the puzzle would still be Googling, you'd start with a global
+a-ha that the location theming was misidrection. Then every sentence would
+have a local a-ha in deciding how to reinterpret the clue. "Cryptic-like" is the right analogy
 here. Cryptics work because you need to decide what is wordplay and what is definition,
 and similarly you'd need to decide what parts to read straight and what parts were location
 wordplay.
 
-This made the puzzle...a *lot* harder, which got corroborated by testsolving. To paraphrase, the
+This made the puzzle...a *lot* harder. which got corroborated by testsolving. To paraphrase, the
 feedback was "this was really fun at the start, then unfun after we got really stuck".
-I am
-not tying to be flippant here, this was not a [sour grapes](https://www.merriam-webster.com/dictionary/sour%20grapes) problem. There are puzzles where you get stuck, and it's a pleasing stuckness to try to
+To be fair, that is most puzzles, but there are puzzles where you get stuck, and it's a pleasing stuckness to try to
 figure out what idea you're missing. In this puzzle, that was less true.
 
 (I suspect the issue is worse if you are solving puzzles from a mindset of trying to 100%
@@ -4368,3 +4398,10 @@ the difficulty estimates of future puzzles. We did not have the time to rewrite 
 to be easier, because the end goal is creating 150 units of "fun". In general, creating
 fun is harder than creating difficulty. So the more correct decision would have been to bias
 new puzzles (units of fun) to be easier, to make the average go down over time.
+
+
+
+DALL-E and other image generation models were quite hot at the time and we used them accordingly. Although
+a surprisingly large fraction of teammate works in machine learning or related fields, the choice to
+have an AI-themed puzzlehunt in the year generative models became commercially viable was entirely
+coincidental.
