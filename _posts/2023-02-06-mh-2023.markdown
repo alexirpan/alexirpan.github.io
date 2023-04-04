@@ -61,7 +61,9 @@ of the exact audience for this post, and figure it'd be useful if I just dumped 
 was relevant. Hopefully you find it entertaining anyways.
 
 
-# December 2021 - Oh Boy, Mystery Hunt is Soon!
+# December 2021
+
+## Oh Boy, Mystery Hunt is Soon!
 
 Writing and post-hunt tech work for [Teammate Hunt 2021](https://2021.teammatehunt.com/)
 has been done for a while. Life is good. Team leadership sends out a survey to see if the
@@ -557,8 +559,7 @@ line that got bulldozed in the quest to fit at least one train station into the 
 harder than you'd think. Not a great showing for stealth inserts, but I'm happy
 [WAR STORIES](https://en.wikipedia.org/wiki/Firefly_(TV_series)) stuck around until the end.
 
-Also, have a link to some [Santa's reindeer fanart and fanfiction](https://holidappy.com/holidays/The-Personalities-of-Santas-Reindeer)
-discovered during testsolving. Testsolvers cited it as a source for "Olive is Santa's 10th reindeer",
+Also, have a link to some [Santa's reindeer fanart and fanfiction](https://holidappy.com/holidays/The-Personalities-of-Santas-Reindeer). Testsolvers cited it as a source for "Olive is Santa's 10th reindeer",
 a mondegreen from people who misheard the song as
 "Olive the other reindeer used to laugh and call him names".
 
@@ -572,6 +573,7 @@ a mondegreen from people who misheard the song as
 ## Round and Round and Round and Round!
 
 ![Wyrm](/public/mh-2023/wyrm_avatar5.png)
+{: .centered }
 
 It's Wyrm time!
 
@@ -611,13 +613,13 @@ had a good enough set of feeders.
 The round structure went through multiple iterations, done over Jamboard. Here's a version where
 every puzzle would be 1/4th of a future puzzle:
 
-[Wyrm brainstorm](</public/mh-2023/Inset Jam 6.png>)
+[Wyrm brainstorm](/public/mh-2023/Inset_Jam_6.png)
 {: .centered }
 
 Here's one where every puzzle's answer would depend on answers from the previous layer,
 such that one puzzle could be backsolved per layer.
 
-[Wyrm brainstorm 2](</public/mh-2023/Inset Jam 3.png>)
+[Wyrm brainstorm 2](/public/mh-2023/Inset_Jam_3.png)
 {: .centered }
 
 And here's one where the entire round would be serial, each puzzle would rely on the
@@ -636,7 +638,7 @@ to just the metas of each layer, and all regular feeders in each layer could be 
 constraints besides the answer. The zoom direction of moving outwards rather than inwards was
 done to make it more distinct from [⊥IW.giga](https://puzzles.mit.edu/2021/round/giga/).
 
-[Wyrm last brainstrom](</public/mh-2023/Inset Jam 2.png>)
+[Wyrm last brainstrom](/public/mh-2023/Inset_Jam_2.png)
 {: .centered }
 
 Our first plan was to have one unsolvable puzzle in the first layer of puzzles, that would
@@ -727,7 +729,7 @@ We started brainstorming Weaver at this retreat. Much of the work would be done 
 Brian first mentioned wanting to make an underwater basket weaving puzzle, using
 special hydrochromic ink that dried white and became transparent when wet. The idea sounded super cool,
 so we did some brainstorming around what the mechanics should be (different weaving patterns, presumably), as
-well as some exploration into the costs. I then found an [Amazon review by one Daniel Egnor](https://www.amazon.com/gp/customer-reviews/R2HQQ7DWE56RY1/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086Q344PQ).
+well as some exploration into the costs. I then found an [Amazon review](https://www.amazon.com/gp/customer-reviews/R2HQQ7DWE56RY1/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086Q344PQ).
 
 > I've tried a bunch of hydrochromic paints and they're all kinda like this one. It's a fun idea in theory -- a paint that goes on white when dry and turns clear when wet, so you can reveal something fun on your shower tile or umbrella or sidewalk.
 >
@@ -735,9 +737,10 @@ well as some exploration into the costs. I then found an [Amazon review by one D
 >
 > You *can* make it work, we *did* make it work for a puzzle application (invitation cards that reveal a secret design when wet) but I'd prefer not to use it again.
 
-For those who don't know, [Puzzle Hunt Calendar](http://puzzlehuntcalendar.com/) is run by Dan Egnor.
-I assume they're the same person. This was possibly the most helpful Amazon review of all time, and
-it suggested our idea was dead in the water (pun intended).
+The Amazon review was written by Daniel Egnor. For those who don't know, Dan Egnor runs [Puzzle Hunt Calendar](http://puzzlehuntcalendar.com/).
+This was easily the most helpful Amazon review I've ever seen.
+
+Unfortunately, it suggested our idea was dead in the water (pun intended).
 This was super sad, but underwater basket weaving was too compelling to discard entirely, so Brian
 ordered some to experiment with later.
 
@@ -864,7 +867,7 @@ But, this is all said with hindsight. At the time, I did not realize the consequ
 not sure anyone else did either. It did genuinely fix problems in the Hunt and story structure,
 it's just there were other ways to fix them that would have made things easier.
 
-
+<div class="shaded" markdown-"1">
 ### The Legend
 
 Part of the deal for accepting the repeated feeders constraint was editors-in-chief signing up to
@@ -1118,7 +1121,7 @@ Thank goodness we had a backup answer!
 
 # June 2022
 
-## My Favorite Part of Collage Was When Teams Said "It's Collaging Time"
+## My Favorite Part of Collage Was When Teams Said "It's Collaging Time" and Collaged All Over The Place
 
 Wyrm feeders are *almost* ready for release. The Wyrm metas work. The shared feeders with Museum works. It
 all works, except for two action items:
@@ -1547,7 +1550,7 @@ As mentioned in this solution, this puzzle started from a shitpost someone poste
 
 Me: "haha. Wait this isn't a bad puzzle idea."
 
-I mentioned it in our puzzle-ideas channel, there was enough buzz to get a brainstorm going,
+I mentioned it in our #puzzle-ideas channel, there was enough buzz to get a brainstorm going,
 and we were off.
 
 One of the common tools a puzzle constructor reaches for is "does this have a small, canonical
@@ -1563,7 +1566,8 @@ only the clues crossing those squares "mattered", so it was changed to indexing.
 
 My proudest moment of the puzzle was in the first testsolve,
 where testsolvers solved NA NA NA NA NA NA NA NA NA NA NA HEY JUDE, and placed it while saying
-"what an absolute shitpost".
+"what an absolute shitpost". It was! It was also intentionally a potential
+break-in point for starting the grid fill. A shitpost must be a bit serious to be good.
 
 For a puzzle written so quickly, this puzzle got insanely high fun ratings in testing and seems
 popular with Hunt participants as well. Between this and [Young Artists](https://2021.galacticpuzzlehunt.com/puzzle/young-artists) from GPH 2022, I suspect that any puzzle that riffs on pop music is
@@ -1600,13 +1604,13 @@ so your exposure to missing something in factchecking is larger as well.
 ## Archaeology
 
 As the date for retreat approached, most of my work was on fixing parts of the Loading
-Puzzle. Still, there was time to work on other puzzles long the way.
+Puzzle. Still, there was time to work on other puzzles along the way.
 
 
 <div class="shaded" markdown="1">
 ### Lost to Time
 
-Whenever I wrote a puzzle for Hint, I did a search in the /dev/joe index to double check it's not
+Whenever I wrote a puzzle for Hunt, I did a search in the /dev/joe index to double check it's not
 too close to a prior Mystery Hunt puzzle. At one point, I opened a link to the 1995 Mystery
 Hunt, and got really confused why the solution page redirected to devjoe's domain. I posted a link
 in #puzzle-ideas and kept going on other work.
@@ -1696,20 +1700,6 @@ to clean up git history before it would work again.
 Despite all of this, it was still quite helpful.
 You don't realize how long it takes to mechanically copy-paste paragraphs from Google Docs
 and wrap them in `<p>` tags until you've done it literally thousands of times.
-
-We also wanted a better puzzle icon placement system. This also came out of Teammate Hunt 2021.
-In tph-site, icon placement is a field on the Puzzle model, meaning it's saved in the database and
-can be adjusted live via admin pages. This made it possible to change positioning without
-a commit, but it was kind of ass to alternate back and forth between the two. We didn't find
-any tooling in the 2022 Hunt code for this, so I coded a what-you-see-is-what-you-get drag/drop
-positioning tool. When logged in as the admin team, it drew this horrible, ugly red box that
-could be moved around, auto-saving the new position and size info to server.
-
-![Drag Drop UI](/public/mh-2023/dragdropui.png)
-{: .centered }
-
-It had a bunch of bugs I never figured out, but I hope it helped regardless. I didn't work on
-icon positioning myself, so I don't have much insight into how helpful this was.
 
 
 ## Retreat!!!
@@ -1814,8 +1804,18 @@ loading animation itself, but that is not the mindset most people use unless
 prompted to.
 
 The original plan was to get to breakout by around the evening (8 PM to 10 PM), then leave time for
-board games and socializing. Instead, at 1:40 AM, the Act I testsolve was officially put on pause,
-and hunt exec + breakout authors convened for a secret meeting in the basement.
+board games and socializing. But it was still going. My original plan was to pick up my parents
+from the airport at midnight, then come back to the AirBnB. With how the testsolve was going,
+I called my parents to let them know I wouldn't be free, and they should make other plans.
+They did, and my parents informed me they tested positive for COVID the next day.
+Which left me with a *very weird*
+set of emotions around "I feel bad for cancelling on familial responsibility, but
+it's good that doing so let me dodge COVID exposure, and it's extra good I did not go
+the airport and come back to bring COVID exposure to retreat".
+
+At 1:40 AM, the Act I testsolve was still not done, but it was officially put on pause
+to encourage people to go to sleep.
+Hunt exec + breakout authors then convened for a secret meeting in the basement.
 It felt a little like the Project Elrond scene from The Martian.
 
 We concluded that all our intuitions about the loading puzzle were off, and it
@@ -1841,10 +1841,22 @@ mattress so that I could be sort-of awake tomorrow.
 The Act I testsolve was still running, but we did want to do the originally
 scheduled events. People could continue the testsolves in downtime, but were
 told to prioritize event testsolves and AI round puzzle ideation.
-On Saturday morning we started work on:
+
+At this time, I was starting to get questions from friends about whether Mystery Hunt would be
+on-campus this year, and I still could not tell them anything besides "we're working on it".
+The tentative signs were pointing to "yes", so we decided to plan as if we'd run on-campus,
+and events were correspondingly designed around in-person interaction.
+This was done knowing that the events wouldn't be doable without on-campus
+presence, which could hurt fully remote teams, but, well...in my opinion,
+it's called the MIT Mystery Hunt for a reason. I understand that not everyone can come in
+person and that this hurts accessibility, but after two years of remote-only events, it seemed
+appropriate to swing the pendulum back to in-person events. The events were made optional to
+finishing Hunt to make sure it still be possible to finish Hunt if a team was fully remote.
+Perhaps future Hunts will do more hybrid events - I'll leave that choice up to future organizers.
+
 
 <div class="shaded" markdown="1">
-#### We Made a Quiz Bowl Packet but Somewhere Things Went Horribly Wrong
+### We Made a Quiz Bowl Packet but Somewhere Things Went Horribly Wrong
 
 Okay. I know this puzzle isn't that popular, but all puzzles will have their stories told.
 
@@ -1901,160 +1913,175 @@ wordplay.
 
 This made the puzzle...a *lot* harder. which got corroborated by testsolving. To paraphrase, the
 feedback was "this was really fun at the start, then unfun after we got really stuck".
-To be fair, that is most puzzles, but there are puzzles where you get stuck, and it's a pleasing stuckness to try to
-figure out what idea you're missing. In this puzzle, that was less true.
+That is how most puzzles feel like when solving, but *relative* to those puzzles this puzzle
+was less fun to be stuck on because you cannot be saved by one good idea.
 
-(I suspect the issue is worse if you are solving puzzles from a mindset of trying to 100%
-every step before doing the next one. The intermediate cluephrase is really helpful for
-constraining how sentences can pair up and trying to solve for it sooner does a lot for
-the solve experience.)
+I've read a decent amount of negative feedback about the "all locations" aspect of the puzzle
+(some direct, some passive-aggressive). I am willing to die on the hill that it does improve
+the puzzle and shouldn't be removed. The better fix is to keep the obfuscation and delete half the clues.
+This way the a-has are still there, but pairing is much easier and less grindy, since there
+are 1/4th the number of possible pairs.
+</div>
 
-My suspicion is that if you remove the obfuscation, the puzzle gets even more mechanical
-and it doesn't really save the design.
-The right fix would have been to keep the obfuscation, but cut the puzzle size in
-half and brainstorm a new extraction. That way, the disparity between easiest and hardest clue
-would have been smaller, the matching problem would have been easier, and it would be more
-likely you'd hit the cluephrase before the puzzle overstayed its welcome. The fun ratings
-weren't great, but they weren't bad either, so it went through without many changes and
-never got revisited.
-
-\* \* \*
-{: .centered }
-
-The brainstorming for Quiz Bowl was running the same time as event testsolving. We still
-weren't sure if we could run Hunt in person during retreat, but decided to plan as if we'd be
-allowed to run on-campus. Accordingly, events were designed around in-person interaction.
-This was done with the understanding that the events wouldn't be doable without on-campus
-presence, and this would upset fully-remote teams, but, well...in my opinion,
-it's called the MIT Mystery Hunt for a reason. We had just done 2 years of remote-only events.
-Swinging the pendulum back to in-person events seemed appropriate. TTBNL is free to do what
-they want here.
-
-AFter lunch, priority shifted back to continuing the Act I testsolve. We had already pushed the
-4 AM fixes to the testing site, but embarassing we had to do another hotfix becaues we'd accidentally
-made the loading animation cover the answer box with an invisible div.
+AFter lunch, priority shifted from writing to continuing the Act I testsolve. The 4 AM fixes were
+now on the testing site, but embarassingly we had to do another hotfix because the loading
+animation had an invisible `<div>` that made the answer box unclickable.
 
 ![Invisible box](/public/mh-2023/answerboxcovered.png)
 {: .centered }
 
-Solving of the last few Act I puzzles continued...and the unspoiled testsolves still hadn't
-noticed anything. From our #puzzle-ideas channel during retreat:
+Solving of the last few Act I puzzles continued, and the pool of unspoiled testsolvers *still*
+weren't solving the loading puzzle.
+From our #puzzle-ideas channel during retreat:
 
 ![Someone saying the loading animation should be a puzzle](/public/mh-2023/itisapuzzle.png)
 {: .centered }
 
-Let's say it was an interesting time. They did solve it eventually, but I'm not sure if they
-found it organically or if we had to tell them to look at the loading animation for longer.
-Once again, the breakout authors and hunt exec went into another room to do a secret testsolve
-debrief, with the people who solved breakout. Their initial feedback was "yeah, this seems
-obvious, we should have noticed this earlier", to which we said, "You say this, but we have 12 hours of
-empirical feedback to the contrary."
+This was triggering some very strong *"what the f&ast;&ast;&ast; do we do"* reactions. What
+nerfs were even left to apply?
+
+I don't think the relevant pool of solvers ever solved the puzzle organically. Instead,
+hunt exec, breakout authors, and a few unspoiled solvers were all shuffled into the same
+basement room we were in last night. The unspoiled authors were told to look at the loading
+screen, and solved it in a few minutes. Their initial feedback was "yeah, this seems
+obvious, we should have noticed this earlier", to which we said, "You say this, but we have
+12 hours of empirical feedback saying the opposite."
 
 After some more Q&A on what made them believe it wasn't a puzzle, reasons why they didn't pay
 much attention to the animation, etc, we planned a few more changes:
 
 * The four green dots (used to give an ordering on the letters) would be moved out of the
-answer submission box. Their appearance within the submit box made it look like the answer submission
-field was "loading" and could not be submitted to.
-* Submitting an answer during loading would give a custom message ("Whatever you do, definitely don't submit anything until it's finished!").
+answer submission box. Appearing inside the submission box made it look like the answer submission
+field was "loading" and could not be interacted with.
+* Submitting an incorrect answer during loading would give a custom message ("Whatever you do, definitely don't submit anything until it's finished!"). Hopefully this would inspire some reverse psychology.
 * MATE would become increasingly depressed as loading continued, to entice people to keep
-watching the page to see what would come next. We planned to add this Friday night but the art
-assets couldn't get written overnight. (Much later, this led to the quote of "why does the animation look better when MATE is perpetually sad?")
-* Internally, we called the infinite loading time "the hammer" that would push teams to breakout.
-Evidently the hammer was not strong enough, so we designed a "megahammer". We'd add a
-time-unlock breakout, by sending an email to all teams with a video tutorial of how to solve the
-loading animation (explained in story by teammate wondering if MATE had a problem).
+watching the page to see what would come next. We planned to add this yesterday night,
+but the art assets didn't exist for it.
+(Much later, this led to the quote of "why does the animation look better when MATE is perpetually sad?")
 
-We weren't going to have another unspoiled testsolve of these elements, so we biased towards
-safety and would need to assume it would all be good enough.
+![sad MATE](/public/mh-2023/mate_sad.png)
+{: .centered }
+
+The most important consequence was the creation of the megahammer. Internally, "the hammer"
+was the time when teams would see infinitely loading puzzles. We envisioned this as the point
+that would force teams to solve the loading puzzle. "The hammer" would be time-unlocked
+to reveal the loading puzzle to all teams. Given that the hammer was too weak, we needed something
+bigger. Hence, the megahammer. The megahammer was an email that would contain a video tutorial
+of how to solve the loading animation. The story team would figure out how to justify it, and
+we would send the email an hour after the hammer, to give teams some chance to solve the puzzle
+on their own before being sent the solution.
+
+With all these changes planned, we assumed there was enough redundancy to go forward with the
+original plan of revealing the existence of breakout. After solving the loading puzzle, all
+"load times" were brought back to normal, and remaining testsolves could be continued without
+knowing the drama of what unfolded.
 
 With breakout resolved, we could go back to puzzle brainstorming and wrapping up testsolves. The
 [Teammating Dances event](https://interestingthings.museum/solutions/teammating-dances) was
-written and tested. I later joined a very-stuck testsolve of [Tissues](https://puzzlefactory.place/factory-floor/tissues). At the time, it did not have the TetraSYS hint. We got it partway through the testsolve,
-I mentioned there were four Greek elements (no idea why), and we gave the authors a bit of an
-aneurysm by saying we should dunk the tissues in water, or set them on fire. "We should go do it,
-even though it's likely not correct! If it's the wrong idea they'll stop us because we don't have
-any backups."
+written and tested entirely at retreat. Dinner arrived (I think it was Thai food?). After dinner,
+I joined a very-stuck testsolve of [Tissues](https://puzzlefactory.place/factory-floor/tissues). At the time, it did not have the TetraSYS hint. We were given various hints towards "four" during the testsolve,
+and I mentioned there were four Greek elements (no idea why). I then said something along the lines
+of, "it's a physical puzzle. We should do something that exploits the physicality", and someone
+mentioned setting the puzzle on fire or dunking the tissues in water. "We should go do it,
+even though it's likely not correct, because if it's wrong the authors watching us right now
+will stop us from destroying the puzzle." This gave the authors a bit of an aneurysm. "PLEASE
+DO NOT PUT THE TISSUES IN WATER why did you force us to clarify this??"
 
-(Meanwhile testsolvers for Weaver were dunking the puzzle in water.)
+(Meanwhile the testsolver group for Weaver was putting the puzzle in water.)
 
-We got up to the cluephrase, again quite late, and I decided to turn in for the night to catch up
-on sleep.
+After a number of other revisions, we were finally able to make it to the cluephrase of Tissues,
+but I decided to turn in for the night to catch up on sleep.
 
 
-Sunday
----------------------------------------------------------------------------------------
+### Sunday of Retreat
 
-I woke up and continued the Tissues testsolve while waiting for people to wake up. I did a few
-searches to prove that "Nikoli + black cells" was not enough to get to the next step, and
-although I eventually got
-"Nikoli + [dokodesu](https://www.google.com/search?q=dokodesu+in+english) + black cells",
-it wasn't very reliable for a step so late in the puzzle. By now other testsolvers were awake,
-so we had enough manpower to finish the last step in time for the State of Story meeting.
+I woke up and continued the Tissues testsolve while waiting for other people to wake up. Some
+authors of Tissues were awake as well, and I did a few searches of "Nikoli + black cells" in front
+of them to prove it was not unique. They decided to try the cluephrase "DOKODESU". I did searches
+of that and showed that no, whatever you're going for is not enough. Eventually some combination
+of "Nikoli + [dokodesu's English transition](https://www.google.com/search?q=dokodesu+in+english) + black cells"
+got there. I assume our testsolve was why this step got nerfed.
 
-The creative team presented the overall broad strokes of the Hunt story, the existence of
-breakout, and the broad art direction for each AI round. For breakout, an audience member asked
+With more people awake, we proceeeded with the scheduled State of Story meeting.
+The creative team presented the broad strokes of the Hunt story, the existence of
+breakout, our plans to make teams believe they shut down Mystery Hunt, and the broad art direction
+for each AI round. AI gimmicks were not revealed, since some still needed to be testsolved.
+Wyrm would be a precocious child with
+a construction paper aesthetic (since every explanation of a wormhole in fiction involved sticking
+a pencil through two pieces of paper). Bootes would be a meme-y ASCII art cat in space.
+Eye would be a noble, biblically accurate angel, with nods to the Tower of Babel. Conjuri would be a pixel
+art owl eager for new challengers. Only Eye's gimmick was spoiled widely at this time, since their
+puzzle ideas were most constrained and needed the most help for writing. The rest of the gimmicks
+were not spoiled to make testsolves of their puzzle act as if the team had not broken into the
+answer gimmick yet.
+
+There was then time for a Q&A at the end. An audience member who did not notice breakout asked
 "what's our plan if a team doesn't notice breakout?", which had *incredible* dramatic irony.
 We said we had a plan and moved on.
 
-Wyrm would be a precocious child with
-a construction paper aesthetic (since every explanation of a wormhole in fiction involved sticking
-a pencil through two pieces of paper). Bootes would be a meme-y ASCII art cat in space, because
-the answer gimmick involved characters and whitespace mattering. Eye would
-be a noble, biblically accurate angel, as a nod to the Tower of Babel. Conjuri would be a pixel
-art owl eager for new challengers, with pixels from gaming and owl as a suitable animal for the
-magic theming of the game. Eye's gimmick was spoiled at this time, since we needed
-more authors for Eye puzzles, but the rest of the gimmicks were not spoiled to save them for
-testsolving.
-
 We did a final round of puzzle brainstorming and testsolving. I remember getting pulled aside to
-a brainstorm meeting because we thought it'd be funny to write a puzzle with "the full house
+a puzzle brainstorm because we thought it'd be funny to write a puzzle with "the full house
 of Alexs over Brians" (Alex Gotsis, Alex Irpan, Alex Pei, Bryan Lee, Brian Shimanuki,) Don't let
-your memes be dreams! We got in a room, tried to start a puzzle for [l(a](https://en.wikipedia.org/wiki/L(a),
-spun in circles for an hour, and failed. The puzzle was officially killed a few weeks later. Some
-memes should stay dreams.
+your memes be dreams! We got in a room, tried to write a puzzle for [l(a](https://en.wikipedia.org/wiki/L(a),
+spun in circles for an hour, and failed. The puzzle idea was officially killed a few weeks later.
+Some memes should stay dreams.
 
-Retreat concluded with a bunch of board games. We played some rounds of Just Two (it's [Just One](https://en.wikipedia.org/wiki/Just_One_(board_game)) except a clue is only provided if exactly two people
+Retreat concluded with a bunch of board games. We played some rounds of Just Two. It's [Just One](https://en.wikipedia.org/wiki/Just_One_(board_game)) except a clue is only provided if exactly two people
 put it done. It's good for large groups and is a *lot* harder. I'm told that when the word "pony"
-showed up, the only clue that made it through was "Irpan" which, okay, fair's fair.
+showed up, the only clue that made it through was "Irpan".
 
-East Coasters flew back home, Europeans flew *really* back home, and we ramped up the main push
-towards finishing Hunt.
+East Coasters flew back home, Europeans flew *really* back home, and we ramped up the fall push
+for finishing Hunt.
 
 
-September 2022 - Ah Yes, Websites are a Thing
-------------------------------------------------------------------------------------
+# September 2022
+
+## Ah Yes, Websites are a Thing
 
 It's a bit disingenous to say that I started working on the site in September, becaues I had been
 working on parts of it starting even back in January. But I'd say my main ramp-up started around
 here.
 
 There were a number of tasks to do, and the main one I took was handling the Wyrm round page.
-Which ended up being a *lot* more complicated than I thought it would be. During Wyrm ideation,
+This ended up being a *lot* more complicated than I thought it would be. During Wyrm ideation,
 we discussed the [Zoomquilt](https://zoomquilt.org/) and its [sequel](https://zoomquilt2.com/)
 as both art inspiration and proof-of-concept that we could make a infinitely zooming round page.
 {I remember Huntinality 2022's [registration form](https://2022.huntinality.com/) also came up.)
 
 Each of the Wyrm layers was done by a different artist. Turns out that if you want every puzzle
 to have its own icon, it doesn't matter that 13 puzzles in the round are "fake" or repeats. You
-still need to draw 13 art assets. (Creatively, the art team did not want to reuse art assets
-between the Museum and Wyrm versions of the Act I puzzles, since the Museum aesthetics were
-intentionally not going to match the Wyrm aesthetics, to play up the difference between MATE-created
-puzzles and Wyrm-created puzzles.)
+still need to draw 13 art assets. Creatively, the art team did not want to reuse art assets
+between the Museum and Wyrm versions of the Act I puzzles, since even though they were the same
+puzzle, one would be in "MATE's Hunt" and one would be in "Wyrm's Hunt", with all the visual
+changes that implied. Much of the ideation was on fractals, self-symmetry, repeating patterns,
+and so on.
 
-As a very early proof of concept, I looked into making a barebones page that would smoothly
-zoom between different placeholder art, looking into how to add a zoom with D3.js. The default
-behavior of d3 is to both pan and zoom the content, so I needed to manually strip out
-the pan information before passing it into the d3 code. I also needed to figure out how to make
+![DeepDream inspo](/public/mh-2023/deepdream.png)
+{: .centered }
+
+With some discussion turning to fish tessallation patterns, tech was asked how hard it would be
+to support something where all fish of a certain type would link to the same puzzle, even if
+there were multiple fish in the round art. This would cause the click region to be both
+nonconvex and disconnected, but tentatively we believed it would be doable.
+
+I looked into creating a proof of concept for the round art and backend, using placholder
+art assets. My first step was to copy the D3.js zoom code that I'd made for Collage.
+
+![Surprise tool](/public/mh-2023/surprise.png)
+
+Investing in learning D3.js was starting to pay off. To make it work for the round page, I
+ended up stripping out the ability to drag the page, and the event listeners that responded
+to scroll wheel inputs. The user experience of
+scrolling down a page and then getting your scroll wheel eaten by the round art was not great,
+so I restricted the page to only work via hardcoded buttons.
+I also needed to figure out how to make
 the zoom level "roll over" once you passed the infinite threshold. I expected that to be a nightmare,
-and was pleasantly surprised when it wasn't.
+and was pleasantly surprised when it really wasn't.
 
-Based on the barebones version, I advised that tech would be easier if we had a consistent
-aspect ratio, each layer shared a common zoom point (likely the center), and the ratio of the
-zoom between layers was identical. I also decided to remove scroll wheel support. It was easy to
-add, but it was a slightly annoying user experience to have the round art steal your scroll wheel
-inputs when you wanted to move down the page. I hardcoded some placeholder puzzles to prove it
-worked. Then it was optimization time.
+Based on the barebones version, I asked if art could pick a fixed aspect ratio for all layers, along
+with always zooming in or out of the center of the art. They said yes.
+I hardcoded some placeholder puzzles to prove my server-side management worked at all stages of
+puzzle unlock. Then it was optimization time.
 
 > Based on the profiler call, current D3 setup is 11 ms to re-render all 4 layers when I do the 1 -> 2 zoom. (All 4 divs get re-rendered since they all look at scale variable). I set up the CSS transition for just layer 1 -> 2 and that was 8ms. The gap should get smaller when I make the CSS animation apply to all 4 layers.
 >
@@ -2062,51 +2089,63 @@ worked. Then it was optimization time.
 > I'll probably leave this for later based on the timing, in favor of some other things I need to fix in the prototype. But can keep it in mind as a performance win that may be more important when we have more assets in the round.
 
 Performance optimization is not really in my wheelhouse, but it's something we thought about
-a lot. Some of the choices we made (more art, structuring around [single page applications](https://en.wikipedia.org/wiki/Single-page_application)) naturally push towards downloading more data and doing more client-side rendering. To make the zoom work, we *really* needed the zoom implementation to look seamless.
+a lot for Wyrm.
+To make the zoom work, we *really* needed the zoom implementation to look seamless.
 The initial prototype was not. There was very noticeable pop-in as you swapped between layers,
 on both the background image and puzzle icons.
 
 It 100% seemed liked a solvable problem, given that Zoomquilt was seamless and I remember
 it looking seamless on 10 year old hardware. When I looked more closely, their code was based
 on using an HTML canvas. I was less excited about this, because HTML canvases don't use vector
-graphics and you can get weird rasterization artifacts when zooming text. (I tried a canvas
-briefly in Collage and switched back to SVGs afterwards.)
+graphics, and the default usage created weird rasterization artifacts when I tried using it
+in Collage.
 
-I asked the tech people with more frontend experience for advice, and they helped explain more
-of React's rendering logic and where I could run a profiler. It turned out the problem was that
+I asked the tech people with more frontend experience for advice, and they helped explain
+React's rendering logic and where I could run a profiler. It turned out the problem was that
 my prototype was taking fixed `<img>` tags and changing the `src` field based on what zoom level
-I was on. This effectively forced the image to clear and re-render every time I crossed layers,
-and no browsers are built to do this seamlessly. So instead, we redesigned it to create all the
+I was on. This effectively forced the image to clear and re-render every time I crossed layers.
+No browsers are built to do this seamlessly. We redesigned the layers to create all the
 `<img>` tags for all four layers at once, then use CSS and JS to adjust the zoom and
 [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) ordering of the static images.
-That way, the browser would only load + draw the images once, and the rest would just be image
-transforms. This fixed the bulk of the performance issues.
+This pushed the loading and drawing upfront, and the rest would just be image transforms, which
+were relatively cheap.
+This fixed the bulk of the performance issues.
 
 Next was fixing the blurriness. That was easy. When I set up the prototype, I defined the zooms
-as $$1, 8, 8^2, 8^3$$. But that meant you would sometimes see parts of a 64x magnified image
-during transitions, which looked just the worst, so I inverted the scale to $$1, 1/8, 1/8^2, 1/8^3$$.
+as $$1, 8, 8^2, 8^3$$. I found that easier to think about, but it meant you would sometimes see parts of a 64x magnified image during transitions. It looked awful. I inverted the scale to $$1, 1/8, 1/8^2, 1/8^3$$
+and things were fine.
 
-With that done, I decided the frontend had been proof-of-concepted enough, and moved towards
-other work. Over the past few months, we had made a list of feature requests and bugs on Github,
-and I started running through ones I knew how to do.
+The proof-of-concept now looked good enough that we were convinced the art concept was implementable,
+and I moved towards other work.
 
-The first was improving our puzzle icon placement system. In tph-site, the location and size of a puzzle
-icon is defined in the database, to make it adjustable without doing an entire deploy. But editing it still
-requires digging in Django admin pages, which can be a scary prospect given how many footguns it has,
-and the user flow of tabbing back and forth between the admin and site pages is pretty annoying.
-This was already a pain point in Teammate Hunt 2021, and was ready for improvement.
+## Feature Requests
 
-I coded a basic WYSIWYG tool, where if you logged in as admin, it would overlay a movable box whose
-size and position would correspond to each puzzle icon. Resizing or moving the box would move the
-puzzle with it and save the updates to the database, which we'd then download and commit into
-the codebase to keep a more permanent record. I think there are still some issues where the box isn't
-drawn consistently with the puzzle, but hopefully it helped.
+From the start of the year, we'd been dumping feature requests and bug reports into our Github issues
+list. With less pressing puzzle work, I ran through all the features I knew I could do.
 
-![Drag drop UI](/public/mh-2023/dragdropui.png)
+The first was improving our puzzle icon placement system.
+This also came out of Teammate Hunt 2021.
+In tph-site, icon placement is a field on the Puzzle model, meaning it's saved in the database and
+can be adjusted live via admin pages. This made it possible to change positioning without
+a commit, but in Teammate Hunt 2021 it was kind of ass to alternate back and forth between the admin
+page and round page, refreshing to check every adjustment since the page did not live-refresh.
+To fix this, I coded a what-you-see-is-what-you-get drag/drop positioning tool. When logged in as the admin team,
+it drew this horrible, ugly red box that
+could be moved around. Whenever it was moved it would auto-save the new position and size info to server.
+We'd then do one reconcile step at the end to export position data from the server and commit it into
+code to save a record of where puzzles should be.
+
+![Drag Drop UI](/public/mh-2023/dragdropui.png)
 {: .centered }
 
-Meanwhile, I did some work on postproduction of Quandle (to move the wordlist and game logic to
-server-side), and handling some of the TODOs tied to breakout's testsolve at retreat. I also got around
+The drag-drop tool had a bunch of bugs I never figured out, but I'd like to think it helped anyways.
+
+I also did some work on postproduction of Quandle (to move the wordlist and game logic to
+server-side), and handling some of the TODOs tied to breakout's testsolve at retreat.
+
+Galactic Puzzle Hunt 2022 ran around this time
+
+I also got around
 to adding a bug fix that Huntinality folks found in tph-site's websocket management, and stole - er, copy-pasted
 a k6 loadtesting script to test out later. (I didn't ask for it, it came up in
 a discussion about website issues GPH 2022 ran into in a Discord server.) It looked a lot
