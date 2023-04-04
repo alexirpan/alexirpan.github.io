@@ -2143,36 +2143,35 @@ The drag-drop tool had a bunch of bugs I never figured out, but I'd like to thin
 I also did some work on postproduction of Quandle (to move the wordlist and game logic to
 server-side), and handling some of the TODOs tied to breakout's testsolve at retreat.
 
-Galactic Puzzle Hunt 2022 ran around this time
-
-I also got around
-to adding a bug fix that Huntinality folks found in tph-site's websocket management, and stole - er, copy-pasted
-a k6 loadtesting script to test out later. (I didn't ask for it, it came up in
-a discussion about website issues GPH 2022 ran into in a Discord server.) It looked a lot
-nicer than the hodge-podged Locust code I had written for Teammate Hunt 2020.
+Galactic Puzzle Hunt 2022 ran around this time, notably with more tech issues than last time.
+In a spoilery discussion about GPH with some puzzlehunt devs, a dev from Huntinality shared
+a k6 loadtesting script they used for Huntinality, along with some optimizations
+and bug fixes they found in tph-site's websockets code. I immediately make a note to test this
+later. The loadtest script in particular looks nicer than the hodge-podged Locust code I had
+written to loadtest the Playmate in Teammate Hunt 2020.
 
 I also joined the brainstorm group for what we called the midpoint capstone puzzle, which you know as:
 
-Reactivation
--------------------------------------------------------------------------------------
+<div class="shaded" markdown="1">
+### Reactivation
 
 I'm on the author list for this puzzle but I really didn't do much. I was in the initial brainstorm
 meeting, where the creative team said they wanted each puzzle to be thematic to the AI. I shared some
 links to [turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics) for Wyrm, which matched
-the aspect of repeating patterns in the round, then stopped paying attention to this puzzle so I could
-go back to web development. That's it!
+the repeating patterns idea, then stopped paying attention to the puzzle. That's all I did.
+</div>
 
 
 
-October 2022 - How About a Nice Game of Chess?
---------------------------------------------------------------------------------------------
+# October 2022
+
+## How About a Nice Game of Chess?
 
 By this point I had finished design work on all in-progress puzzles that I was motivated to
 finish, and was planning to mostly due token tech tasks until the end of Hunt. All of them, except for one.
 
-
-5D Barred Diagramless with Multiverse Time Travel
------------------------------------------------------
+<div class="shaded" markdown="1">
+### 5D Barred Diagramless with Multiverse Time Travel
 
 This puzzle may be my magnum opus. From a fun standpoint, I suspect Interpretive Art wins.
 From a solve experience standpoint, I'm guessing Puzzle Not Found wins. But, from a
@@ -2427,9 +2426,7 @@ The one regret I have is that one of the examples could have
 relied on a discovered mate to make the endgame extraction flow smoother.
 As a standalone puzzle I believe it is better without a hint in the examples, but in the context of Hunt,
 including it would have given most of the Eureka moment while making it less likely teams got stuck at the end.
-
-\* \* \*
-{: .centered }
+</div>
 
 
 November 2022 - AH YES, WEBSITES ARE A THING
