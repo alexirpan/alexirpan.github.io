@@ -2296,44 +2296,46 @@ and quite fun and are specifically constructed to teach you the rules.
 After getting a basic understanding,
 I decided to have the puzzle only use bishops, knights and kings. Rooks were too boring in 5D, pawns could introduce
 questions about whether they had been moved yet or not, and queens were terrifying. A single queen in
-5D chess has, like, 60 possible moves. There are arrangements where one queen can mate a king in 7 different ways. Trust me it would have been a bad time.
+5D chess has, like, 60 possible moves. There are arrangements where if a queen and king are arranged
+properly, the queen can mate the king in 7 different ways. Trust me, using queens would have been a bad time.
 
-I made a 5D chess problem, filling the rest of the grid with random letters to get early feedback on
-just the chess step.
-What was immediately clear from those tests was that it was very easy for someone to read a 5D chess guide
-fairly quickly, come away with 50% of the rules, and then attempt to solve the chess puzzle incorrectly.
+To get early feedback on just the chess step, I ran some tests with a grid filled wtih random letters.
+What was immediately clear from those tests was that it was very easy for someone to skim a 5D chess guide,
+believe they knew 100% of the rules when they only knew 50% of the rules, and then attempt to solve the
+chess puzzle with incomplete information.
 As a solver, there is really no way to distinguish "I do not understand the rules" from "I understand
-the rules and am just bad". Like, they would be 50 minutes in, asking for hints and we'd have a conversation
+the rules and am just bad". Like, they would be 50 minutes in, asking for hints, and we'd have a conversation
 like this:
 
 ![A conversation about 5D chess rules](/public/mh-2023/thefuture.png)
 {: .centered }
 
-"The future doesn't exist yet" is really such a great line. I recommend using it without context, it can
-apply to so many things.
+"The future doesn't exist yet" is such a great line. I recommend using it in daily life without context.
 
 In response to the pre-test, I created some 5D chess examples that could not be solved without understanding
-the base rules of timeline creation and branching. This was part inspired by Time Conundrum,
+the basic rules of timeline creation and branching. This was part inspired by [Time Conundrum](http://puzzles.mit.edu/2013/coinheist.com/get_smart/time_conundrum/index.html),
 and part inspired by [Cryptoornithology](https://ecph.site/puzzle/cryptoornithology.html) from EC Puzzle Hunt.
 
-Anyways, when factchecking that testsolve on what mates were correct / not, I decided to double-check my
-work and found they had found a checkmate that I missed! At that point I decided that okay,
-I need to write code to verify this, I'm not going to be able to trust my 5D chess solving ever again.
+The pre-test also revealed that I had missed some checkmates that worked. At that point I decided that okay,
+I need to write code to verify my 5D chess solutions, because I'm not going to be able to trust my ability
+to verify 5D chess by hand.
 
-I reimplemented the rules engine in Python. Not the full engine, but enough to test for mate-in-ones.
-I went back and forth between my code and the in-game puzzles until I got them to agree with each other,
-discovering a few other edge cases along the way.
+Using the game as a reference, I reimplemented the basics of the rules engine in Python, just enough to
+check mate-in-ones. I went back and forth between my code and the in-game puzzles to check my work. For
+timeline ownership, I skipped implementing it since I assumed it wouldn't matter to the puzzle.
 
-At the same time, I sent a question upwards: if I clue the answer directly, do my letters need to be
-aligned exactly like the answer, or would it be okay to assume solvers would find the correct whitespace
-themselves? My question went to the editors, who sent it to meta authors, who sent a reply back through
-the editors, and the answer was: yes, if you aren't using a cluephrase the spacing needs to line up
-exactly.
+With this done, I worked on reconstructing the chess position. I sent a question upwards:
+if I clue the answer directly, would my letters need to be aligned exactly like the answer?
+The editors sent this to Bootes meta authors, and the reply was:
+yes, if you aren't using a cluephrase the spacing needs to line up exactly.
 
 Well okay then I'm not going to be able to get the extraction to work that way, it's too constrained, so
-I dropped the rebus ideas and started digging for cluephrases. Finding a new cluephrase of the same
-length, I went back to my code, this time modifying it to place pieces for me. By this point, I had
-realized a constraint that was not obvious beforehand.
+I dropped the rebus ideas and switched to a cluephrase. I was worried it would be too hard to search,
+but Holly and others who'd dipped out of 5D chess verified it was not too bad to find.
+
+Why was I reconstructing the chess position? Well, the previous one had errors, but by this point I
+had realized the previous position was not *constructable*. It was not that obvious
+
 
 As designed, chess pieces can only differ
 between the two timelines if they appear in the alternative timeline entries that have 2 answers.
