@@ -2330,152 +2330,202 @@ The editors sent this to Bootes meta authors, and the reply was:
 yes, if you aren't using a cluephrase the spacing needs to line up exactly.
 
 Well okay then I'm not going to be able to get the extraction to work that way, it's too constrained, so
-I dropped the rebus ideas and switched to a cluephrase. I was worried it would be too hard to search,
-but Holly and others who'd dipped out of 5D chess verified it was not too bad to find.
+I dropped the rebus ideas and switched to a cluephrase. I was worried it would be too hard to search, but editors tried it and didn't have too much trouble.
 
-Why was I reconstructing the chess position? Well, the previous one had errors, but by this point I
-had realized the previous position was not *constructable*. It was not that obvious
+During reconstruction of the chess position, I realized an important constraint
+that I hadn't before. In chess, almost all pieces attack symmetrically. A knight
+can attack by going up or down, a bishop can attack along any diagonal. The
+only exception was thw pawn, which I had already decided to exclude. This is true
+in 5D Chess as well. Suppose you have pieces in the same location in both timelines.
+Then, the checkmated squares across both timelines will also be identical.
 
+DIAGRAM
 
-As designed, chess pieces can only differ
-between the two timelines if they appear in the alternative timeline entries that have 2 answers.
-Given the construction, I was only planning to have 3-4 of those entries across all grids, since each one
-took a lot of real estate to support. (The down clues that cross them take up about 25% of the grid squares
-per entry.)
-If an extraction square appears in the same spot in both timelines, then those letters are forced to
-match in the cluephrase, which would add annoying constraints on how many mates needed to exist in each timeline.
-To maintain flexibility, I wanted extraction to never agree between timelines, but this was only possible if
-I concentrated as many chess letters into the alternate timeline entries, since that was only source
-fot timeline deviation.
+This is a problem for the puzzle, because as designed, almost all letters are
+the same across both timelines, but the cluephrase had very few repeated letters.
+Any instance of this would be a problem.
 
-Does any of that previous paragraph make sense? No? Don't worry about it. The short version is that
-every alternative timeline pair needed to satisfy at least one of the following:
+DIAGRAM
+
+The only way to avoid this was to add symmetry-breaking by changing piece locations
+between timelines. This can only occur via the two-timeline entries.
+I was only planning to have 3-4 of those entries since each
+entry took a lot of real estate to support. (It's about 25% of a grid per entry,
+once you account for the down crossings.)
+
+Are you following me? If not, don't worry about it. The short version is that
+The short version is that every alternative timeline pair needed to satisfy
+one of the following:
 
 * One has kings (K), the other does not.
 * One has bishops (B), the other does not.
 * One has knights (?), the other does not.
 
-This is pretty much the only reason that the 2008 entry was BEIJING / BANGKOK, even though Bangkok
-failed in the very first round of IOC evaluation.
+This meant the crossword fill and chess problem could not be constructed
+independently. The puzzle needed to start from the two-timeline entries and their
+placement, then the chess problem could be made, and only then could the fill
+be done.
+
+This is also the only reason the 2008 entry for "Olympics host city" was
+BEIJING / BANGKOK. Bangkok failed in the very first round of IOC evaluation,
+and was never a realistic host city, but
 I really, desperately
-needed to have an alternate timeline entry where kings existed in one half but not the other.
-For a similar reason, the Kentucky Derby was picked just because it was easy to find a historical
-winner with a K in its name.
+needed the Ks that BANGKOK would provide.
+Similarly the Kentucky Derby was picked for 1980 just because it was easy to
+find a historical winner with a K in its name.
 
-This requirement also influenced the decision to make knights be represented as Js. I knew using N
-would make the crossword fill way too difficult. Using J both made the fill easier, and created
-differing pieces in the JOSEPHBIDEN / DONALDTRUMP and KENJENNINGS / LEVARBURTON pair. (I wanted
-to use MAYIMBIALIK / LEVARBURTON originally, since it seemed like a fun bit of trivia to use "the person who wasn't Ken", but having a shared B in the same spot created too many problems.)
+For knights, this constraint also influenced choosing J for knights instead of N.
+Using N would have made grid fill way too hard, and J in particular appeared in
+both JOSEPHBIDEN / DONALDTRUMP and KENJENNINGS / LEVARBURTON to break symmetry.
+(I wanted
+to use MAYIMBIALIK / LEVARBURTON originally, since it seemed fun
+to use "the Jeopardy host that isn't Ken", but it caused problems due to sharing
+a B in the same position.)
 
-With a better understanding of the requirements, I placed my seed entries in the grid, then had my code
-greedily place kings until it had achieved 22 checkmates. It failed to do so. The first king
-placed created 17 checkmates, and from that position it had a parity issue where I could get either
-21 or 23 checkmates, but not 22.
+With a better understanding of the requirements, I placed my seed entries in the grid,
+then wrote some code to
+greedily place kings until it had achieved 22 checkmates. It failed! The checkmate
+count went 17, 21, then got stuck. For reasons I don't want to get into, there's
+a parity issue in most 5D chess grids that makes it hard to add an odd number
+of checkmates.
 
-Hang on, 17 checkmates from one king? That seems wrong.
-I added tons of debug print statements to track down the bug. That was how
-I learned it wasn't a bug at all. My brute forcer had correctly found a discovered mate.
+Hang on, 17 checkmates from one king? That had to be a bug.
+I added tons of debug print statements, and learned it wasn't a bug.
+My brute forcer was running the rules correctly and had found a discovered mate.
 
 I verified it in game, and went "holy crap that's so cool." But should it be in the puzzle? I tried
-banning my code from using it, and found it made construction impossible without adding more alt-timeline pairs
-into the last grid. Essentially, there are around
-30-40 different moves possible from the alternative timeline entries, and you literally can't distribute 20+ checkmates among them unless you use discovered mates.
+banning my code from using discovered mates, and found it made construction
+high-impossible without placing a ton more chess pieces, which would make the
+chess step even harder due to how many different moves you'd have available.
 
-With an understanding of what was going on, I created the final chess position by hand, arranging
-half of the seed entries to create the discovered mates, and placing the other half to fix the parity
-issue. Now that the full chess puzzle was created, I sent it to another round of testing just the chess.
+Essentially, I had two choices: use discovered mates and keep the search space
+as 30-40 possible moves, or ban discovered mates and make the search space
+100-200 moves. I went with the former.
 
-This testsolve went a bit better thanks to the examples, but still had some trouble due to confusion
-on how to set up the chess problem and what "one move" meant. In response I prepared many more seed entries
-describing aspects of 5D chess. By this point the puzzle had evolved from "solve a crossword, get an answer"
+Funnily enough, I started with making the chess position by hand, switched
+to making it by code in the middle, and ended with doing a bit of both.
+I first placed the two-timeline entries to engineer a discovered mate, then
+had my code augment it to a 23 checkmate position, then added some fudging
+to push it back down to 22 checkmates. With this done it was finally possible
+to send it to another chess-only testsolve.
+
+This testsolve went a bit better, but still had some trouble due to confusion
+on how to set up the chess problem and what "one move" meant.
+By this point the puzzle had evolved from "solve a crossword, get an answer"
 to "solve a crossword, congrats you're 50% done", and it felt like it was on the edge of unreasonably
-long. I expressed these feelings of uncertainty to testsolvers, at which point they said 5D Chess was
-"exactly the bullshit I expect to see in Mystery Hunt". I'd say a stronger statement is true: I don't think
-this puzzle could exist outside of Mystery Hunt.
+long. I expressed these feelings of uncertainty to testsolvers, at which point
+they said that even though they had been stuck for 2 hours, 5D Chess was
+"exactly the bullshit I expect to see in Mystery Hunt" and I should keep it.
+I'd say a stronger statement is true: I don't think this puzzle could exist
+outside of Mystery Hunt.
+The question was whether I wanted it to exist.
 
-So really, the question was whether I wanted it to exist. I think people believe that, like, I was super
-gung-ho about getting 5D Chess into Mystery Hunt, and I really wasn't! I was only motivated to do so
-after sinking weeks and weeks into understanding 5D Chess enough to appreciate its design. All I wanted
-was a multi-dimensional crossword with a suitable extraction, and all roads for that led to chess.
+I think people believe that, like, I was super
+gung-ho about getting 5D Chess into Mystery Hunt, and I really wasn't!
+All I wanted
+was a 5D time travelling crossword with a suitable extraction, and all roads for that led to chess.
 There may be a world where the puzzle is just a 5D Chess puzzle, no frills, but I don't think there's
-a world where the puzzle is a 5D crossword without a chess step.
+a world where the opposite is true.
 
-With the chess position constructed and two pretests of the chess step done, the puzzle still hadn't had a fully unhinted solve of the chess,
-but the crossword was already 1/3rd filled, and I decided to guess that any future chess nerfs could be applied
-after the grid was completed. I spent the next week completing the fill and writing clues. Around the middle of
-the fill, I realized I had created some 1-wide columns, which I wasn't too happy about. But fixing it would
-have required changing the placement of the alternate timeline entries, which would require regenerating
-the chess position, which would have meant restarting from scratch. And the chess problem given
-had already gone through one partial testsolve...I decided I didn't have time to fix it.
+I decided to keep the chess step, but added even more entries to the crossword
+fill to point towards the important 5D chess rules. The intention was that no
+one should need to learn all of 5D chess to solve the puzzle, just enough to
+get a readable extraction out. I was confident enough in the changes that
+I decided to go forward with completing the entire grid fill and testing the
+full puzzle on the next group.
 
-By now it was late October, where I had spent my entire month of Mystery Hunt time trying to make 5D Diagramless
-a reality. I would guess I was at the 60 hour mark and we were just getting to the first full testsolve.
-In that testsolve, the grid fill went great! The chess continued to go less well. This time the solvers did not understand the rules for how chess timelines are arranged, as well as some other details about setting up the
-chess problem. I let them flounder for a while, realized they were never going to fix it, and
-revised the critical 55-Across clue to be extra explicit about timeline arrangement. I also changed
-the clue for TWO into a seed clue reinforcing the rules of 5D chess. It was a stroke of good luck that TWO was already in the fill,
-although perhaps having it appear in one of three random 13x13 diagramless puzzles isn't too rare.
+Around the middle of the fill, I realized my placement of two-timeline entries
+had created some 1-wide columns, which I wasn't too happy about. It wasn't fully
+kosher to diagramless rules, but fixing it would have required regenerating
+the entire chess position that had already been testsolved...I decided I didn't have time to fix it.
+Getting to this point had taken me a month, I'm guessing around 60 hours of work
+so far, and we had yet to do one full testsolve.
 
-Once I had hinted the testsolvers to the correct timeline arrangement, and after giving the total number of
-checkmates, they solved the chess without any more guidance. I'd say that was the first moment I
-started to believe the end of puzzle construction was in sight. I was originally hesitant to give the
-total number of checkmates out of cheese concerns. If you find all squares that pieces *could* move to,
-then construct a regex to drop out letters until you get to 22 letters, then the phrase is mostly readable
-from nutrimatic and you can skip the chess puzzle. In practice, the chess theming is strong enough that
-very few people attempt to cheese the puzzle. The goal of giving the number of checkmates was to
-give a minor hint towards the discovered mates. Only 5 mates can be found without it. If you make mistakes on
-checkmates, maybe you get 1-3 more. It's far enough away from 22 that eventually you're forced
-to confront the possibility that you are entirely missing a key idea.
+In the first full testsolve, testsolvers' initial reaction was "oh no",
+which is pretty much what I was going for. The grid fill went great! The
+chess less so. We discovering ever more exciting ways to play 5D Chess
+incorrectly, this time on how to arrange the timelines of the puzzle. Luckily
+TWO was already in the crossword, and I gave them a revision that was extra
+explicit about rules of 5D Chess they'd missed.
 
-The 2nd testsolve of the full puzzle went well, and I was looking to do a 3rd testsolve, given that I'd made
-changes to the chess step in the 1st full testsolve and it had yet to go through 2 fully unhinted tests.
-However, the editors decided that between the 1 fully clean solve, and the 3 previous partly-hinted solves,
-the value of another test wasn't worth it compared to spending the testsolve time on other puzzles.
+Once hinted towards the correct initial state, they were able to solve the
+chess problem without intervention.
+I'd say that was the first moment I started to believe the puzzle could pass
+testsolving and be done.
+
+They did need to be given the total number of checkmates,
+which I initially did not give out of concerns you could use it to cheese
+the puzzle. If you find all squares that pieces *could* move to,
+and construct a regex to pull out exactly 22 letters, the extraction phrase is mostly readable
+from nutrimatic. Testsolvers told me that knowing they were missing so many
+checkmates was important for them to conclude that they did not have an important
+idea. Only 5 mates were findable without discovered mates, and you can assume
+that you're missing 1-3 if you've made some mistakes, but missing 3/4ths of the
+checkmates forces you to eventually confront the possibility you're missing
+an entire class of solutions.
+
+The 2nd testsolve of the full puzzle went well. At this point the grid fill had
+been cleanly tested twice, and the chess step had been messily tested twice and
+cleanly tested once.
+I was looking to do a 3rd testsolve, but was told that our testsolve bandwidth
+was running low, and this puzzle did not need testsolves as badly as other puzzles
+did.
 
 By this point, the puzzle had become a bit of a meme. About 1/3rd of teammate had testsolved it and another
-1/3rd had heard a rumor that there was a "five-dimensional puzzle". This was shortly after 4D Geo finished
-testsolving, and it was funny to realize that our hunt had a 3D puzzle, a 4D puzzle, a 5D puzzle, and
-a non-integer dimension cameo in Period of Wyrm. "We have too many dimensional puzzles, new dimensional puzzles are banned."
+1/3rd had heard a rumor that there was a "five-dimensional puzzle". We had another
+puzzle called 4D Geo, and it was funny to realize that our hunt had a 3D puzzle, a 4D puzzle,
+and a 5D puzzle.
+"We have too many dimensional puzzles, non-2D puzzles are banned."
 
-Internally, as we ramped up postproduction and factchecking, this puzzle got flagged as being especially
-scary on both fronts. Many thanks to Holly for factchecking all the crossword clues, and Evan for creating
-all the chess diagrams with hundreds of lines of [Asymptotte](https://asymptote.sourceforge.io/) code.
+The chess factchecking was easily the most terrifying factchecking experience of my life. When I'd
+set up my Python rules engine, I had ignored rules around timeline ownership in
+5D Chess, but they were actually criticially important to the correctness
+of the chess position. Now that I didn't even trust my code to be 100% correct,
+I decided to install a 5D Chess mod that would let me load arbitrary game
+positions from JSON.
+Unfortunately, the game is hardcoded to only work for boards up to 8x8, so I could
+only verify parts of the puzzle in-game.
 
-The chess factchecking was easily the most terrifying factchecking experience of my life. I had
-researched and installed a mod for 5D Chess that let me load arbitrary positions, but the game is hardcoded
-to only work for boards up to 8x8, so the final check had to be done by hand. Here's a list of
-things I did not know until after testsolving was finished:
+None of the testsolvers had bothered reading the rules around active and
+inactive timelines, nor had they checked any of these edge cases:
 
-* A player can delay an inevitable mate by branching back in time, unless they have timeline disadvantage.
-* A player can mate a king in an active board if they fork two active kings.
+* Leaving a timeline unplayable for the other player by not moving in that timeline.
+* Moving two pieces to coordinate a checkmate that was not doable by either
+piece individually.
+* Forking two kings on an active board.
 
-The first was only fine because I decided to have black make a timeline instead of white. If I had
-messed up that coin flip a month earlier, it would have completely invalidated the chess problem and I would have had to reconstruct the entire puzzle + retest the chess puzzle.
-None of the testsolvers caught this, because none of them had actually learned 100% of the rules of 5D Chess.
-Instead they had learned the 90% needed to solve the puzzle. But for a Mystery Hunt, 90% isn't good enough.
-You never know how far solvers will go.
+I did not realize any of these edge cases existed until after the puzzle had
+finished testsolving, and any of them could have threatened the correctness
+of the puzzle in a way that would have forced a complete rewrite of the
+chess position.
 
-The check for forks was also really close to failing, although I think my odds of failure were more
-like 20% rather than 50%.
-As for the analysis on moving two pieces in one move, I had some backups in mind if that didn't work,
-but thankfully it did.
+Thankfully, none of the edge cases were an issue. In the first, I had won a 50-50
+coinflip with having black own the 2nd timeline instead of white. In the second,
+there were no issues, but I wasn't expecting that to be an issue. The last
+was 1 square away from being a problem, but wasn't. In retrospect I think there
+was a 60% chance the puzzle was wrong, and I got *very* lucky I ended up in the
+40% outcome instead.
 
-Factchecking the Appendix was a casualty of the last-minute push to get Hunt ready in time. Although
-it wasn't independently verified, we were willing to say it was unlikely solvers would go as
-in-depth as I did on checkmate verification, Evan hadn't noticed any errors when reading through the solution
-for postprodding, and there were puzzles in more dire need of factchecking.
+In our PuzzUp setup, we can label puzzles by how difficult their postproductions
+will be. This puzzle was flagged right to the top. The puzzle was short, but
+the solution was an 8000 word monster filled with diagrams that our
+auto-postprod tool failed to handle.
+Many thanks to Holly for factchecking all the crossword clues, and Evan for
+cleaning up all the chess diagrams with hundreds of lines of [Asymptote](https://asymptote.sourceforge.io/) code.
 
-The solution ended up at around 8000 words of just complete, utter absurdity. I'd say that's why I consider
-it my most important work. It is this perfect encapsulation of what it's like to fall down a puzzle construction
-rabbit hole by taking a joke way too far, and come out the other side with a coherent, self-consistent, and
-beautifully terrifying puzzle. Only two teams solved it forward, but I was expecting at most 10 teams to
-finish it, so I'm really not too torn up about it. I got most of my enjoyment from making it,
+I'd say this level of excess is why I consider
+this my most important puzzle. It is this perfect encapsulation of what it's like to fall down a rabbit hole by taking a joke way too far, and come out the other side with a coherent, self-consistent puzzle.
+Only two teams solved it forward, but given how many free answers there were
+and how scary the title is, I'm really not too torn up about it.
+I'm really not too torn up about it. I got most of my enjoyment from making it,
 not watching it get solved. (It helps knowing that one of the forward solvers said it made their top 5 puzzles ever.)
 
-The one regret I have is that one of the examples could have
-relied on a discovered mate to make the endgame extraction flow smoother.
-As a standalone puzzle I believe it is better without a hint in the examples, but in the context of Hunt,
-including it would have given most of the Eureka moment while making it less likely teams got stuck at the end.
+The one regret I have is the difficulty of finding the discovered mate.
+Testsolvers told me to keep it without hints, but I think there was a bit of
+positive bias, since this came from people who finished the puzzle.
+As a standalone puzzle, I believe it is fine without changes. In the broader
+context of Hunt, including an example that was only solvable with a discovered
+mate would have made the ending a lot smoother and still given most of the a-ha.
 </div>
 
 
