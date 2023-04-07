@@ -3333,9 +3333,9 @@ websocket updates and add more caching. This made the next run of 50 users a lot
 made a note to try again with the full-size machine.
 
 
-# January 9, 2023
+# Monday Before Hunt
 
-## Monday
+## Hello, Boston
 
 I had taken (another) week off work, but this time it was more justified. Even in a year where I'm
 not writing Hunt, I have trouble being productive the week before Hunt starts.
@@ -3377,9 +3377,9 @@ over frontend any day of the week, but I did feel bad about it.
 I finished writing up the 5D Barred Diagramless appendix I had worked on during the flight, then
 went back to my hotel to sleep,
 
-# January 10, 2023
+# Tuesday Before Hunt
 
-## Tuesday
+## Factchecking
 
 This day was a bit quiet, since not everyone had flown in yet. Most of my time was spent
 addressing factcheck feedback to puzzles.
@@ -3451,12 +3451,14 @@ that fact.
 When looking for suitable work music, I learned that Demetori, my favorite music group of all
 time, had released a new album just 2 weeks ago. (They do Touhou remixes, msotly progressive metal.)
 I spent most of the week playing it on repeat. The Youtube comments taught me facts no one should know ("corgi" is
-edit distance 2 away from "orgy"), but I couldn't help thinking about the album's closer - ["It's Better to Burn Out Than To Fade Away"](https://www.youtube.com/watch?v=VCHcSX3SX4Y).
+edit distance 2 away from "orgy"), but I couldn't help thinking about the album's closer - "It's Better to Burn Out Than To Fade Away".
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iNnInh13tTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-# January 11, 2023
+# Wednesday Before Hunt
 
-## Wednesday
+## Load Testing
 
 The tech work continues!
 
@@ -3483,90 +3485,149 @@ apply. This still forced a reply of *some* kind for load testing.
 
 Brian had provisioned the full-size hunt server, and I hit it with 250 users. This immediately
 had errors, but the site seemed fine, and the error message codes I was seeing looked
-more like networking issues. Having done this before, I asked if our AirBnB WiFi could handle
-250 fake people at once, and then immediately answered my own question "no of course it can't
-you should have remembered this the first time". (When loadtesting Puzzles are Magic, I spent
-two days trying to fix a bug that didn't exist, until I tried running load tests from
-my work WiFi instead of my puny home WiFi.)
+more like networking issues. Having seen a similar error when loadtesting Puzzles are Magic, I asked if our AirBnB WiFi could handle
+250 fake people at once, and then immediately answered my own question with "no of course it can't".
+(When loadtesting Puzzles are Magic, I did not realize this class of error could exist, and spent
+two days trying to fix a bug that didn't exist, which was a painful experience.)
 
-A teammate had a spare DigitalOcean machine they used for personal stuff, and we moved load
+Alex Gotsis had a spare DigitalOcean machine they used for personal stuff, and we moved load
 testing there. The new 250 user test went fine. Great! Let's scale that up to 500 users.
 The CPU load looked fine, but we started seeing real site errors, ones that were breaking the site
-for people factchecking puzzles.
+for other people on teammate.
 
 Oh dear. I left it up for a bit so we could collect more stats, then turned it down. The errors
-were identical to the ones seen when I loadtested Playmate 3 years back, caused by having too
-many open database connections. We added back the same solution of using [PgBouncer](https://www.pgbouncer.org/)
-to do connection pooling, and swapping our Redis layer in Django Channels to a RedisPubSubChannelLayer.
-While Brain looks into how to do this, Alex Gotsis comes by with some news.
+were identical to the ones I'd seen when loadtesting Playmate from Teammate Hunt 2020. It was
+definitely a database connection issue. I went back to our 2020 docs (thanking the gods that
+we'd decided to write documentation in 2020), and told Brian to try setting up
+[PgBouncer](https://www.pgbouncer.org/) and optionally swapping our Redis layer in Django Channels
+to RedisPubSubChannelLayer (since someone on Huntinality had mentioned it made their load look
+better). While Brian set that up, Alex Gotsis came by with some news.
 
-He explains that the site sends us an email whenever we have a server error. Sent emails
-create and save an `Email` object to our database, to integrate with our email handlers later.
-So, suppose your site has no database connections left. It'll have an error, and the server will send an email.
-The Email object tries to get saved, but fails since the database has no connections left. So the site
-has an error, and will send an email. That email will try to get saved to the database, and fail, so the server
-will send an email. Which...you get the idea.
+He explains that the site sends us an email whenever we have a server error. This is the mechanism
+we use to make server errors more noticable for debugging.
+Sent emails create and save an `Email` object in our database, to integrate with our email handlers.
 
-I said "Oh no" and he said "Don't worry I'm fixing this". So, that got fixed and we removed a
-few thousand emails we spammed to ourselves. Phew.
+Now, suppose your site has no available database connections. It'll error out. The server will send an email
+to tell us about the error. This creates an Email object, which will fail to save because there
+are no databaes conenctions left. So the site has another error. Which sends another email. Which triggers
+another failed save. Which triggers a 3rd error. Which...you get the idea.
+
+I said "Oh no", and he said "Don't worry I'm fixing this". Once that was fixed, we removed a
+few thousand failed-to-send emails from our Hunt database and everything was fine. Phew.
 
 After all the websocket improvements were in, I reran the loadtest and the site no longer
-broke at 500 users. The Django Channels swap also appeared to cut our CPU usage by 3x, which
+broke at 500 users. The switch to RedisPubSubChannelLayer also appeared to cut our CPU usage by 3x, which
 was cool. Between both of those, I was willing to declare the site battle-ready.
 
 The one issue flagged was on Conjuri. All the Conjuri instances were running in the same
 server as the rest of the Hunt. The codebase had evolved that way and we did not have the
-time to both refactor it to a separate machine and adjust our deploys accordingly.
+time to refactor it to a separate machine and adjust our deploys accordingly.
 I gave my opinion that 500 users continually submitting guesses and moving 10 times per second
-in Conjuri was likely a big overestimation. I was pretty sure our true load would be lower,
-and Conjuri wouldn't be seen until late Saturday or Sunday, which would have less load than
-Friday. That sounded fine to Conjuri devs - or at least, the TODOs on fixing game bugs were
-more obviously important than hardening against load.
+in Conjuri was likely a big overestimation. I was pretty sure our true load would be a lot
+lower, and not too many teams should be on Conjuri at once anyways.
+That sounded fine to Conjuri devs - or at least, the game bugs to fix were more obviously
+important than hardening against load.
+
+## Physical Things
+
+While all this tech discussion was happening, there was a flurry of work on set construction,
+driving things from A to B, and building all the physical parts of the runaround. I got pulled into
+a charades testsolve in between some tech discussions.
+
+There were an incredible number of flight delays in the week before Hunt, which was quite scary
+for us. because every copy of Weaver was with one person. Thankfully their flight was fine.
+With loadtesting done, I could go back to some TODOs I had for the Wyrmhole round art, but
+before that point I stopped by the physical puzzle station and said, "I want a mindless
+task please give me something to do."
+
+"Great! Cut all these pieces of paper."
+
+It was for Tissues and I spent an hour using a paper cutter to slice large sheets into smaller
+sheets, and folding flat tissue boxes into box-shaped boxes.
+
+Meanwhile...
+
+> I'm about to wreck y'all's day.
+>
+> I probably can't drive tomorrow.
+>
+> I am currently largely fine, so don't flip out, but as I was walking back to my car, a car hit me
+> in a crosswalk.
+
+THANKS UNIVERSE THAT WAS A REALLY FUN CURVEBALL YOU JUST THREW. Luckily the driver was very apologetic
+and nice and the teammate hit was fine, aside from needing to have a leg in a cast for a while. We had
+enough spare cars that it wasn't a big deal for our logistics.
+
+## Wyrm Art, Again
+
+![Wyrmhole Final](/pubilc/mh-2023/wyrmholefinal.png)
+{: .centered }
+
+Ivan had figured out how to make the Wyrm round page scale with screen size, but there were a few
+lingering Wyrm art requests to handle.
+
+First, switching out the zoom buttons. To fit the papercraft aesthetic, the buttons were made by hand - as in,
+they were literally pictures of construction paper, laid out by hand, then photographed. It was a bit surreal to
+be working on a tech task, then glance over at a real-life instantiation of an art asset I knew I'd need
+to add into our hunt site an hour from now.
+
+Second, the background. There was yet another Wyrm edgecase needed, this one to make sure the triangular
+grid in the header lined up with the grid in the rest of the background. For reasons I don't want to
+get into, this did not work by default and needed to be hardcoded specifically for Wyrm, keeping
+up the theme of "Wyrm has an edge case for literally every part of Hunt"
+
+Last, the hole. The puzzles were supposed to appear out of the jagged hole. This required adding one final
+SVG cut out to the sight, slicing the outer rectangular image into the shape of the hole, and making
+sure it aligned properly *with* the hole. With this, Wyrm was now truly, finally done.
 
 
+# Thursday Before Hunt
 
-January 12, 2023 - One
--------------------------------------------------------
+## Hunt Hunt Hunt Hunt Hunt
 
 Thursday was the first day that we had a room on-campus. We were also
 starting to spot people who definitely-looked-like-Mystery-Hunters
 in nearby hotels.
 
+This time, we convened in a classroom on-campus, instead of the AirBnB.
 We first had a too-long conversation about whether we should draw the blinds on
-the windows for our room before we went into an incredibly spoiler-heavy
-presentation, and decided that no that was overkill. We then had a presentation
+the windows to our classroom before we went into an incredibly spoiler-heavy
+presentation. The decision was "no that's overkill". We then had a presentation
 about the story of Hunt, structure of the rounds, and different responsibilities
 that would need to be filled to man HQ. The previous day, a spreadsheet
 had been shared, and people were asked to fill it out, but today that request
 was now a demand. "Sign up for a slot or we will *find* a slot for you."
-
 I checked and had been pre-signed up for "tech on-call / contact", so problem solved.
 
 We then had a training session for how to use the hint and interactions
-interface, which I mostly tuned out because I'd been working on that flow for a while. The remaining time was allocated for people to finish up any
-last minute tasks they had.
+interface, which I mostly tuned out because I'd been fixing bugs there for several
+weeks. Team T-shirts were distributed, all with a picture of MATE on the back, and
+we were told to make sure we wore a hoodie or sweatshirt, something that hid the
+back of the shirt, until MATE was revealed at kickoff.
 
-I went through the list of tech TODOs, which was now decidedly at the point
-where we knew we would not finish all of it and would need to decide what we
-wouldn't do. Solve sounds - cut. Easy way to see feedback sent during Hunt - cut.
+The remaining time was allocated for people to finish up any last minute tasks for Hunt.
+I went through the list of tech TODOs, and it was very clearly at a point where we
+would not be able to finish all of it before Hunt. A lot of features were cut at this
+stage, including solve sounds.
 
-This made some people on teammate quite sad, but there were just too many other things. "We don't have bandwidth to do this. If you have bandwidth to help on tech, we'd prefer working on these prioritized issues, but if you implement a deprioritized feature and send a PR someone will probably review it."
+This made some people on teammate quite sad, but there were just too many other things. "We don't have bandwidth to do this. If you have bandwidth to help on tech, we'd prefer you'd work on these prioritized issues, but if you implement a deprioritized feature and send a PR someone will probably review it."
 And that's why the Hunt has solve sounds, someone decided to do just that.
 
-To more directly hit the broader point, Mystery Hunt is an enormous thing.
-It is big enough that even individual people making it are not aware of
-all the things going on. Nor should they be, the coordination overhead
+Mystery Hunt is an enormous thing. It is big enough that even team leads are not
+aware of all the things going on.
+Nor should they be. The coordination overhead
 would be too big if they were. But, the natural consequence of this is
-that sometimes people's beliefs of what is getting done differs from what's
+that sometimes, people's beliefs of what is getting done differs from what's
 actually getting done. Tech is just one example of this. I
-got passed copy of the MATE tutorial we'd link between kickoff and
-puzzle release, and ended up rewriting a bunch of it because half of the
-example commands didn't pass our chat parser.
+got passed copy of the MATE tutorial page that would be viewable before puzzle release,
+and ended up rewriting a bunch of it because it suggested using chat messages that would
+not pass our hardcoded parser. (The TODO to use an ML-based intent classifier had
+long been abandoned.)
 
-Still, this is approximately the level of chaos I expected the day before Mystery
+This is approximately the level of chaos I expected the day before Mystery
 Hunt, so I wasn't too concerned. Logistics got ironed out, more bugs got
-fixed, and the site was progressing well. We started organizing our tech on-call
-shifts, and I signed up for the 1 AM - 7 AM shift originally, before reconsidering and asking if I could take the one ending at 1 AM instead.
+fixed, and we'd made progress on the site. We started organizing our tech on-call
+shifts, and I signed up for the 1 AM - 7 AM shift originally, before reconsidering and asking if I could take the one *ending* at 1 AM instead.
 
 As the last action item before Hunt, we did a "slowrun", where instead of solving
 puzzles as fast as possible, a group of us would solve puzzles one at a time,
