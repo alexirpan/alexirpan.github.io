@@ -2860,6 +2860,8 @@ This inspired the core idea of creating a seeded bingo generator whose generator
 then using the same seed on my website to do the last step of the puzzle.
 I wrote up the sketch while on vacation, saying I could take any answer, but wouldn't be
 free to work on it until later. It got approved, and I was given "a meme answer".
+(The puzzle answer has appeared many times in the past few years, and was pushed
+into our Hunt just to continue the pattern.)
 
 My past
 experience with blackbox puzzles is that you don't need to be very tight on designing the solve path.
@@ -2896,61 +2898,74 @@ The functions needed to be noncommutative to give a unique order in the solution
 permutations. I figured they were a class of functions easier to derive from the data.
 
 As I messed around with permutations, I found I didn't have too much trouble designing the functions to
-make the letters for our grid and numbers called to be unique, but I had a lot of trouble designing the functions
-to make the opponent's grid unique. I was trying to have the functions apply identically to all three grids
-to reduce work, but it was just very hard to prove the opponent's grid would always win before our grid
-in every combination except one. So, I relented, and allowed letters to act differently between the opponent's grid and the other ones. I was concerned about changing the number of functions from 26 to 52 (combinatorial
-explosion is very scary), so as a compromise the opponent functions were forced to follow a stronger
-pattern. During design, we were planning to require all seeds to be 9 letters. Editors pointed out it
-could be really hard to break in without a lot of data, so we adjusted to 1-9 unique letters to make
-it easier to get started. The nature of most blackbox puzzles is that they start very hard and end
+give a unique solution for our grid + numbers called, but I had a lot of trouble designing the functions
+to make the opponent's grid unique. To reduce work at solve time, I tried
+to have all functions apply identically to each grid,
+but it was very hard to prove the opponent's grid would always win before our grid
+in every combination except one. So, I relented, and allowed letters to act differently between the opponent's grid and the other ones. This increased the number of functions
+from 26 to 52, which was scary (combinatorial explosion grows fast).
+To combat this, the opponent functions were made much simpler to make them
+easier to derive.
+
+During design, we were planning to require all seeds to be 9 letters. Editors pointed out it
+could be really hard to break in without a lot of data, since it'd be hard to
+examine functions in isolation. We adjusted to 1-9 unique letters to make
+it easier to get started.
+The nature of most blackbox puzzles is that they start very hard and end
 quite easy, and our thinking was that if you could enter 1 letter seeds, you'd be able to run any experiment
-you wanted without having to muddle through unknown intermediate transformations. That ended up working exactly the
-way we wanted in testing.
+you wanted without having to solve past unknown intermediate transformations.
+That ended up working exactly the way we wanted in testing.
 
-I will just spoil the reason I wrote this puzzle now: when you win the game,
-the puzzle directs you to reverse the winning seed. (I added the reverse step because I knew with 100%
-uncertainty that people would try to nutrimatic from 3 letters. All the testsolvers did it, the one
-Mystery Hunt writeup that mentioned Bingo did this - y'all are too predictable.)
-The reversed seed would point to the external Mystery Hunt Bingo site, and using that site would give
-the final answer. So, how did that work?
+When you win the game,
+the puzzle directs you to reverse the winning seed, to point you to Mystery
+Hunt Bingo, to solve the puzzle. This reversing step exists
+only to fight wheel-of-fortune attempts. All the testsolvers tried to nutrimatic
+from 3/9 letters, and the one [Hunt writeup](https://blog.vero.site/post/2023-hunt)
+that mentioned Bingo did the same thing. I mean this in the best way possible:
+y'all are too predictable.
 
-I obviously did not want to repeat the same logic as the puzzle. If anything, I wanted the bingo site
-to be as random as possible. If you check the source code, the incoming seed is passed through a hash
-function to generate the seed for a PRNG, which is used to sample from the list of phrases. By doing this it's
-practically impossible to reverse engineer a desired board. However, as the site maintainer, I have
-control over the order of the phrase list! The PRNG just outputs a list of indices, so after locking
-in the seed, I just changed the order of the phrase list in the code such that the generated indices
-lined up with the right phrases. It's been a long long time since I've done any crypto but I'm pretty
-sure this protocol isn't breakable even if you knew exactly what it was before Hunt.
+If you check the Mystery Hunt Bingo source code, the incoming seed is passed through a hash
+function to generate the seed for a PRNG, which is used to sample from the list of phrases.
+This makes it practically impossible to reverse engineer a desired board.
+However, as the site maintainer, I have
+control over the order of the phrase list! The PRNG outputs a list of indices, so after locking
+in the seed, I changed the order of the phrase list such that the generated indices
+lined up with the right phrases. It's been a long long time since I've done any
+cryptography, but I'm pretty sure this protocol isn't breakable even if you
+checked source before Hunt.
 
 The side effect is that right now, I can't adjust the phrase list without breaking my Mystery Hunt
-puzzle. I'll either hardcode the edge case or make a standalone copy of the bingo that can be hosted
-from the MIT webserver. One of the two.
+puzzle. Sometime I'll get around to hardcoding the edge case or making a
+standalone copy to be hosted in the Mystery Hunt archive. One of the two.
 
 In the actual Hunt, teams got more stuck on the last step than I expected. I have the stats on time
 between winnning seed and solve - they are all longer than the 2-4 minutes I wanted it to be.
-I think this was a victim of "people on teammate know what Mystery Hunt Bingo is, people outside less
-so", and I do wish the game win message was more direct about what the message meant.
-
-Fun fact: the answer for this puzzle was picked entirely as a joke reference to it appearing in so many
-recent puzzlehunts. I mean, the bingo eventually points to a puzzlehunt in-joke,
-of course the answer is going to be another puzzlehunt in-joke.
-
+We just never observed teams getting stuck on this step in testsolving, probably
+because a lot of teammate knows about Mystery Hunt Bingo, and I do wish the
+game win message was more direct about what to do.
 </div>
 
-There were two other major things to work on before December. First was physical production of a puzzle
-that was a long time coming.
+I landed back in the US a bit after Christmas. With no plans for holiday travel,
+I was free to help on physical production of a puzzle that was a long time
+coming.
 
-Weaver
-------------------------------------------------------------------------------------------------
+<div class="shaded" markdown="1">
+### Weaver
 
-They say all good stories end where they began. Well, Weaver was one of
-the first feeder puzzles I helped brainstorm, and now it was one of the last I'd help make.
+They say all good stories end where they began. Weaver was one of the first
+feeder puzzles I helped brainstorm, and now it was one of the last I'd help make.
 
-"Make" is a very literal word here. Much of the puzzle idea and design was done by Brian. At most
-I pointed in the direction of weaving patterns and testsolved a few versions on paper. Meanwhile, Brian
-was doing some experimentation with hydrochromic ink on different materials. He arrived at wooden reeds,
+"Make" is a very literal word here. I did very little of the puzzle *construction*.
+That was mostly done by Brian, and my role was more about internal testing
+of weaving patterns on paper.
+
+Meanwhile, Brian had done some experimentation with hydrochromic ink on different materials.
+Much earlier, we had read an Amazon review saying the ink was a bit chalky,
+and you needed to spread a lot of it to cover up the text it was hiding. However,
+since the paint dried white, it was much easier to hide white text.
+
+He arrived at wooden reeds,
+He wanted
 covered with a coat of hydrochromic ink, with regular white paint on top, and regular black paint on top
 of that. This sufficiently hid the underwater portion - the hydrochomic ink does feel a bit rough, but
 if the entire reed is rough then that isn't too out of place. We assumed teams would not make the reeds
@@ -3023,8 +3038,7 @@ to make up for the deficits of material science. If a team asked for the answer 
 underwater and putting effort into the last step, we just gave them a picture of what the final basket
 should look like.
 
-\* \* \*
-{: .centered }
+</div>
 
 The other major thing to work on was preparing the site for the 1st of many full hunt speedruns.
 
