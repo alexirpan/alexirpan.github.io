@@ -1423,7 +1423,7 @@ This was later changed to the version that went in the Hunt, which avoided showi
 by making the letters drawn in paths. Here is the original version we shipped to the August retreat.
 
 <div class="centered">
-<video width="640" controls loop autoplay>
+<video width="640" controls loop autoplay muted>
     <source src="/public/mh-2023/breakout_old_video.mov">
     Your browser does not support .mov files.
 </video>
@@ -2756,7 +2756,16 @@ and I had not had the time to stop.
 
 There was a [robot learning conference](https://corl2022.org/) in New Zealand this year, which I was
 attending for work. I let people on teammate know that I'd be away from Hunt for a week attending the
-conference, then away for another week when taking a *real* vacation from everything. But before that:
+conference, then away for another week when taking a *real* vacation from everything.
+
+But before that:
+
+<div class="shaded" markdown="1">
+### Bedtime Stories, Castle Grounds, Easy as Pie, Fire Starter, Follow Me, Robber Baron
+
+![Easieest +6 of my life](/public/mh-2023/blank_wyrm.png)
+{: .centered }
+</div>
 
 <div class="shaded" markdown="1">
 ### Walking Tour
@@ -2962,348 +2971,429 @@ of weaving patterns on paper.
 Meanwhile, Brian had done some experimentation with hydrochromic ink on different materials.
 Much earlier, we had read an Amazon review saying the ink was a bit chalky,
 and you needed to spread a lot of it to cover up the text it was hiding. However,
-since the paint dried white, it was much easier to hide white text.
+since the paint dried white, you needed much less paint to hide white text.
 
-He arrived at wooden reeds,
-He wanted
-covered with a coat of hydrochromic ink, with regular white paint on top, and regular black paint on top
-of that. This sufficiently hid the underwater portion - the hydrochomic ink does feel a bit rough, but
-if the entire reed is rough then that isn't too out of place. We assumed teams would not make the reeds
-wet until instructed to, because what if the paint washes away? (A few teams *did* immediately put the
-reeds in water to make them bendier, and sent a hint asking if they messed up. Answering those
-hint requests was pretty tricky.)
+The final version was wooden reeds of a tan color, covered with a coat of hydrochromic
+ink, then regular white paint on top, and regular black paint on top of that. The result
+very clearly felt painted, but since the entire strip was painted it wasn't seem
+too suspicious. The background layer of white would disappear when wet, leaving
+the regular white letters visible.
+We assumed teams would not wet the reeds wet until instructed to, because if the paint
+washed away, they would be in trouble.
+(A few teams *did* start the puzzle by putting the reeds in water to make them bendier.
+When they sent hints asking if they made a mistake, figuring out what to tell them
+was pretty tricky.)
 
-A version made by hand was successfully testsolved at retreat, which left figuring out how we were going
-to mass produce the puzzle. We spent some time looking for a company to do it, but weren't able to find
-one, which wasn't too surprising.
+The October retreat was tested with wooden reeds painted by hand. This left figuring out
+how to mass produce 80 copies for the live Hunt. Logistics people were looped in very
+early, and they were not able to find a company who understood and could handle all
+our constraints. That wasn't too surprising, but meant we'd need to do it ourselves.
 
-Over the course of a few months, different production designs and prototypes were made. The core idea
-in all the prototypes was building a stencil. There would be four different stencils, for front-white, front-black,
-back-white, back-black respectively. The reeds would be held inside a frame maintain consistent alignment.
-The frame was iterated a few times, with the last one being two flat pieces of wood, each etched with grooves
-where the reeds should go, that were held together with binder clips for easier assembly and disassembly.
+Over multiple Bay Area meetups, different production prototypes were created and sanity
+checked. The core idea in all prototypes was to build a stencil to send spray paint
+through. There would be four different stencils, for front-white, front-black,
+back-white, and back-black respectively. To maintain a consistent alignment, the reeds
+would be held inside a wooden frame. This frame was iterated several times,
+with the last one being two flat pieces of wood, each laser-etched with grooves where
+the reeds should go. The frames would be held together with binder clips for easier
+assembly and disassembly.
+A teammate with access to a makerspace in Berkeley ordered a bunch of wood, to laser cut the stencils,
+frames, and triangles for The Legend.
 
-A teammate who could get to a makerspace in Berkeley ordered a bunch of wood, to laser cut the stencils,
-frames, and triangles for The Legend. The wood arrived! It was then stolen from their mailroom. So they had
-to ship another order. I would ask "who steals a bunch of wood from a mailroom", but, well, clearly it
-was in high demand, and maybe it's easier to resell wood if you aren't stealing it for yourself.
-(Yes, this is why people read my blog, for the riveting package stealing commentary.)
+The wood arrived! It was then stolen from their mailroom. So they had to ship another order, which
+pushed production back a few weeks. I'd ask "who steals a bunch of wood from a mailroom", but, well,
+we were evidence that wood was in high demand. Maybe it's easier to resell wood on the black market.
+(This is why people read my blog, for the riveting package stealing commentary.)
 
-At a number of Bay Area retreats we'd tried making proof-of-concept stencils with the raw materials we had.
-The plan was to spray paint the regular letters, and the first small scale trial showed that spray paint
-would gum up the stencil holes really quickly. We'd either need to wash the stencil regularly to keep the holes
-clear, or do something else.
-We tried an airbrush owned by another teammate, and it did not have the same problem.
+Once the first stencils were made, we tried making a proof-of-concept.
+This trial showed that spray paint would dry and gum up the stencil holes really quickly.
+We'd either need to wash the stencil regularly to keep the holes clear, or do something else.
+If we had to wash the stencil repeatedly, it could not be made out of wood. Acrylic stencils
+were considered, but another teammate offered trying their airbrush instead. This did not
+have the same problem that spray paint did.
 
-In late December, after Christmas but before New Year's, everything was ready for the final
-mass production push. The Weaver assembly line (or puzzle factory, if you prefer) was set up in a garage to
+Most of us were off for holidays after Christmas, and those of us still in the Bay Area met up
+over two days to do the final mass production push.
+
+![Weaver production](/public/mh-2023/weaver0.jpg)
+{: .centered }
+
+The Weaver assembly line (or puzzle factory) was set up in a garage to
 allow paint fumes to escape, and had many steps.
 
-1. The reeds were delivered in large rolls. One person would cut the reeds to a reference length using a
+1\. The reeds were delivered in large rolls. One person would cut the reeds to a reference length using a
 tree cutter.
 
-IMAGE
+![Weaver reed cutting](/public/mh-2023/weaver1.jpg)
+{: .centered }
 
 The reference length was the size of the frame, plus a bit extra to give leniency.
 
-2. The cut reeds would be painted with a coat of hydrochromic ink by hand. We did this by hand because it
-was an even layer over the entire reed, so precision was not important. Saving ink was. The hydrochromic ink
-was produced in Europe, and we would not be able to ship another container of hydrochromic ink in time
-for Mystery Hunt. Our target was to produce 80 copies, but realistically we were going to make strips until
-we ran out of special paint.
+2\. The cut reeds would be painted with a coat of hydrochromic ink by hand. We did this by hand because it
+did not need to be precise, but we did need to save ink.
+The hydrochromic ink was manufactured in Europe, and we would not be able to ship another container of hydrochromic ink before Mystery Hunt. The ink we had was the only ink we'd get, and it needed to stretch until
+80 copies were made.
 
-3. The loose painted reeds were placed inside an "oven", which was a portable heater directed towards a cardboard box. This was to dry them out faster.
+![Reed painting](/public/mh-2023/weaver2_0.jpg)
+{: .centered }
+![Reed painting](/public/mh-2023/weaver2_1.jpg)
+{: .centered }
+![Reed painting](/public/mh-2023/weaver2_2.jpg)
+{: .centered }
 
-4. Once dry, the reeds were sent to a framer. Reeds that were too bent were thrown out. The remaining reeds
-were placed into a frame, then sent back to the painting station for touch-ups. It was hard to tell how
-much hydrochormic ink to apply the first time, because it applied clear and dried white. The more you painted,
-the more it looked like you were undoing your work, so we decided on a two-pass system.
+3\. The loose painted reeds were placed inside an "oven". This was a portable heater directed towards a cardboard tunnel, to dry the paint faster.
 
-5. After touch-ups, the frames were placed back in the oven for another round of drying.
+![Oven](/public/mh-2023/weaver3.jpg)
+{: .centered }
 
-6. The airbrushing station would take dried frames, and airbrush the remaining letters. One person manned
+4\. Once dry, the reeds were sent to a framer. Reeds that were too bent were thrown out. The remaining reeds
+were placed into a frame, then sent back to the painting station for touch-ups. Hydrochromic ink applies
+clear, so it's hard to tell if you covered every spot until it dries.
+
+![Frame](/public/mh-2023/weaver4.jpg)
+{: .centered }
+
+A completed frame going through touch-ups.
+{: .centered }
+
+Every frame went through two painting passes. The funny part of hydrochromic ink is that it if you paint
+it on top of itself, it makes the undercoat turn clear too, so even on the 2nd pass we
+had to remember where we had painted before.
+
+5\. After touch-ups, the frames were placed back in the oven for another round of drying.
+
+6\. The airbrushing station would take dried frames, and airbrush the remaining letters.
+
+![Airbrush](/public/mh-2023/weaver5.png)
+{: .centered }
+
+One person manned
 the airbrush, and a second person kept track of which stencil to use, did a final factcheck the letters
 were correct, and bagged the reeds into individual puzzles.
 
 The airbrush was the bottlenecking step, and it took 8 people manning the pipeline to saturate the
-airbrush. (4 painters, 1 framer, 1 airbrusher, 1 airbrush supporter / quality controller, and
-1 cutter / painter). We had enough paint to make 83 sets, which were painted over two 12-hour shifts (taking breaks for lunch and dinner). So, very rough order of magnitude was $$12 * 8 \approx 100 hours$$ for 40 sets = 2.5 hours per puzzle.
+airbrush. 4 painters, 1 framer, 1 airbrusher, 1 airbrush support / quality controller, and
+1 cutter / painter. We ended up working 12-hour shifts both days to finish the puzzle, creating
+83 sets. This gives a very rough estimate of 2.5 man-hours per puzzle.
+
+We decided to livestream Weaver creation into our writing Discord, saying people could come
+"watch paint dry". I don't think they actually saw much paint dry, since our camera angle didn't
+leave the oven in-frame.
+
+![Watching paint dry](/public/mh-2023/paintdry.png)
+{: .centered }
 
 I don't think many teams made it all the way through the puzzle without relying on the virtual version, which
-was unfortunate. There were differences between the paint-by-hand and mass produced version, and I would guess
-the coat of paint was less thick. Paint naturally flaked off when you messed with the strips (remember,
-you can't put a top coat since the water has to reach the hydrochromic layer for the puzzle to work), so a bunch
-of teams lost too much paint by the end to do it as intended. Hopefully the intermediate a-ha was exciting enough
+was unfortunate. The mass produced version was less readable than the paint-by-hand version. My guess is
+that some paint was lost by friction in the flight to Boston, and more was lost during weaving, so a
+bunch of teams lost too much paint by the end to do the last step.
+Hopefully the intermediate a-ha was exciting enough
 to make up for the deficits of material science. If a team asked for the answer after putting the weave
-underwater and putting effort into the last step, we just gave them a picture of what the final basket
-should look like.
-
+underwater and putting effort into the last step, we just gave it them.
 </div>
 
-The other major thing to work on was preparing the site for the 1st of many full hunt speedruns.
+## Email is Awful
 
-I think pretty much every Mystery Hunt does this at some point. The idea of a full hunt speedrun is not to
-testsolve the puzzles. It's to test the overall logic of the Hunt structure and site. Teams enter
-puzzle answers as soon as they unlock, and report any bugs they find in the unlock logic or site behavior.
-Our site had a ton of intermediate states, especially in the Puzzle Factory. Monitors in the Factory
-would display different content based on story progress (as measured by solve state and story interactions
-completed),
-the scrollable region within the Factory would rely on this as well, and puzzle display could be
-very conditional on solve progress as well. So, this step was extra important for us.
+We were trying to anticipate the tools that we would want
+to have on Hunt weekend, since we wouldn't have time to make them during Hunt itself. One of these
+tools was email. The tph-site codebase had an email flow, spoilr had another email flow, and
+they had been *sort of* but not really merged. I did some plumbing work to connect them together,
+and fixed some longstanding bugs in our interactions flow along the way.
+The main piece added was predefined email templates for puzzles that ended on teams submitting
+something to HQ, and standard hint templates for questions like "why is the loading animation
+not finishing?"
 
-I had implemented the unlock system by this point, so most issues were a matter of adjusting constants in
-a config file, AKA work that I shouldn't be doing. What needed more love was the internal HQ flow.
-A good way to view Hunt tech is that you spend the entire year designing processes and user experience
-flows to make running Hunt itself as smooth as possible. Running Hunt HQ is hectic and mentally draining, so
-you are trying to think up good tools now to reduce thinking later.
+The implementation for this was awful. I hope to never write code that writes Javascript via
+Django's template language ever again.
 
-The main parts I was working on were connecting tph-site email handling code with spoilr's email flow. This
-was a classic case of two codebases having two different functions that did similar things, and needing to
-pick which one to keep and removing uses of the other. Along the way, I helped fix some longstanding bugs
-in our interactions flow (roughly, "a team wants to do something with HQ", make sure it creates an
-action item that someone can follow-up on to coordinate with that team), and setting up predefined
-email templates for puzzles that relied on user submissions. This was also where we put standard hint
-emails, like the one to send if a team asked why the loading animation in the Museum never finished.
+## Wyrm (Continues) To Be a Special Child
 
-The other big piece I worked on was the Wyrm round page.
-The plan for the Wyrm art was to use tessalated puzzle icons, where some rounds would have multiple
-copies of a puzzle icon to play up the fractal / self-similar aspect of the round. Tech-wise, our plan
-was to have each puzzle icon be the same size as the round art, all overlapping each other. Each
-of those icons would then have an SVG mask applied to its click region. Whenever the mouse entered
-a click region, we'd display that puzzle's info on-hover.
+![Wyrmhole, v0](/public/mh-2023/wyrmholev0.png)
+{: .centered }
 
-This broke one of the rules we'd placed on round art: that you could tell at a glance which puzzles
-were solved and which were not without interacting with the page. This was a rule put in place
-to improve legibility of the hunt state.
-In the Museum round, this was done by showing the answer below a puzzle's title if completed.
+
+Now that more art assets were in, we could
+finish setting up the puzzle icons. Puzzle icons in the round were non-convex and could be
+disconnected (this is easiest to see on the layer of fish), and our plan was to make each puzzle
+icon the same size as the round art. Each icon would have an SVG mask that would cut out the icon
+and describe its click region.
+
+One of the rules we'd placed on round art was that you should be able to read puzzle state
+without interacting with the page. This rule was put in place to improve legibility of the hunt
+state. In the Museum round, this was done by showing the answer below a puzzle's title on solve.
 In the Puzzle Factory rounds, the highlight color of the puzzle icon would shift. A subtle change,
 but better than doing nothing.
 
-For Wyrm, it seemed bad to draw puzzle titles onto the round art, and it also seemed bad to highlight
-puzzles differently. Either of those changes would need to carry over when zooming between layers,
-and it felt like it would distract from the existing art, which was already really cool. So we decided
-to break that rule, just this once. There would be a list of puzzles at the bottom anyways.
+Neither of these fit for Wyrm. Any change would need to carry over when zooming between layers,
+and it felt like it would distract from the work put into making the round art transition
+nicely.
 
-From an implementation standpoint, the main issue was that we needed to have very custom puzzle icon code
-to make this work. "Tessalating puzzle icons" means that every icon's click region is both non-convex
-and disconnected. Luckily SVGs are magic and handled this fine. Each icon was overlaid + displayed
-normally, and made 50% brighter on hover. However, this had a different issue. It made the round
-noticably laggier.
+![Old Wyrm](/public/mh-2023/oldwyrm.png)
+{: .centered }
 
-What we hadn't realized was that if you implement the round this way, each puzzle icon in a layer is
-a full 1024 x 768 image, since the network (and rendering) cost is based on the size of the image
-before trimming it to the clickable region. When zooming into or out of a layer, pop-in was a lot more
-obvious.
+Early iteration of Wyrm art
+{: .centered }
 
-IMAGE
+We decided to break our rule, just this once, and make puzzle info only available on hover.
+There would be a list of puzzles at the bottom of the page as a fallback.
 
-Our solution was to send a single image combining all icons in the layer into a single image, to cut
-the download requirements down. Then instead of brightening icons on hover, we created a 50% transparent
-white overlay, cut to shape of the puzzle icon, that would appear on hover. This could be done
-entirely in CSS and would be much faster, without needing to define a separate `<img>` tag per puzzle.
+This had all worked back in October, but when trying it again in December with real art assets,
+the round was quite laggy. The problem was that in October, we had tested with 100 x 100
+icons of differnt shapes, but now we were using full 1024 x 768 images, one per puzzle. Pop-in
+was a lot more obvious.
 
-I am leaving out many random details about manual surgery of SVGs, fixing z-index ordering issues,
-and other tedious visual bugs that were boring enough that I don't even remember them. It was a lot,
-and maybe someone with more CSS knowledge should have done it, but somewhere along the way Wyrm
-had turned into my baby and I was going to be damned if we didn't pull it off.
+To solve this, we changed out code to send a single image for the entire background. Then,
+instead of brightening icons on hover, there would be six 100% transparent white rectangles,
+cut to the shape of each puzzle icon. Hovering over each dive would toggle the transparency
+to 50%. A white rectangle could be done entirely in CSS, reducing the network + render cost
+from six 1024 x 768 images down to one.
 
-IMAGE
-
-(Move the speedrun introduction down to here, segue into it from the Wyrmhole side)
-
-Much like the in-person retreat, the full site speedrun had its own set of secret objectives.
-
-The first was breakout. We had used up our one fully unspoiled test at retreat, but there were still
-plenty of people who knew breakout existed, but did not know where it was or the mechanics of how to
-solve it. That was ready, we'd done most of the action items shortly after retreat.
-
-The second was Hall of Innovation. This had been testsolved multiple times by now, but every testsolve
-group had been given a copy of the site where only the Factory Floor and Hall of Innovation rounds
-were complete. Now that a lot more puzzles and art assets were complete, the gizmos on the Factory
-Floor would be disguised better, and this was a place to test that they were still discoverable.
-(By now, team exec had decided to not do a structured full-hunt testsolve. There were already more
-pending testsolves than we had capacity to test, and coordinating everyone to meet at once would itself
-take time, so people were instead instructed to form groups and start testsolving any open puzzle
-whenever they were free.)
-
-The third and last secret objective was Wyrm backsolving. Long ago, we said we would test the backsolve
-step in a full Hunt testsolve. With that off the table, it wasn't clear where else we'd test the Wyrm
-backsolving. There was some miscommunication between Wyrm authors and EICs, where they thought
-the 4th layer would start with Collage shown as the meta immediately on unlock. After clarifying that
-wasn't how the round would work, it got added into the speedrun. But the more specific consequence
-was that a bunch of Wyrm art and tech deadlines got moved from "days before Hunt" to "2 weeks before Hunt".
-I'm very grateful to the artists of the Wyrm layers for getting art done for the layers so quickly after
-we told them the deadlines had moved up.
-
-The speedrun got up to Hall of Innovation. I recused myself to go eat dinner, and came back to my speedrun
-team in the middle of solving the round. They had found the gizmos that changed the puzzles, and submitted correct
-answers to some of them, and that was considered "good enough" to fastforward them to the next part of the
-speedrun.
-
-(This is an aspect of writing hunts that can be a bit disappointing. Your teammates write these really cool
-puzzles that you get to testsolve, but you don't get to testsolve most of them. Everyone testsolving
-all puzzles is super inefficient, but most people need to be spoiled on puzzles to prepare for writing hint
-responses and answering emails.)
-
-The speedrun made it up to the last layer of Wyrm, and we told them "this is now a testsolve, please figure out
-what to do". This was marked as the last part of the speedrun we'd do. The speedrun had run late, and had already
-surfaced a bunch of site issues that we needed to fix. Between all three teams, there were only 7-8 people who
-were unspoiled on the Wyrm metameta. Since we'd precommitted to only doing one test of the backsolving, we
-decided it was okay to pool all the unspoiled testsolvers into one voice call to let them figure it out.
-
-Two people in the spoiled group set privste messages about noticing the looping puzzle in the art, and the unspoiled
-group ended up looking at Collage due to noticing the triangle pattern in all the previous metas. They only
-noticed the looping art after backsolving ("oh god, we're dumb"), but I was mostly relieved that all the parts
-of breakout and Wyrmhole had tested the way we wanted.
+This is leaving out many tedious details about z-index ordering, manual surgery of SVGs, code
+that treated "fish.png" differently from "fish.PNG", and a long series of visual bugs. Suffice
+it to say that I learned much more about CSS than I
+ever wanted to, but somewhere along the way Wyrm had turned into my baby and I was going
+to be damned if we didn't pull it off.
 
 
-January 1-8, 2023 - An Exercise in Juggling
-------------------------------------------------------------------------------------------
+### Full Hunt Speedrun
+
+I think pretty much every Mystery Hunt does this at some point. The idea of a full hunt speedrun is not to
+testsolve the puzzles. It's to test the overall logic of the Hunt structure and site. Teams get all
+the answers, go through the site, and report any bugs they find in the site behavior.
+Our site had a ton of intermediate states, especially in how much of the Factory was accessible and
+what the Factory monitors displayed, so this was extra important for us to check.
+
+Much like the in-person retreat, the full site speedrun had its own set of secret testsolve objectives.
+
+* **Breakout:** Our fully unspoiled test at retreat was "used up", but a bunch of the team
+still didn't know how the puzzle actually worked. Now that we'd implemented all the post-retreat
+nerfs, we could do partially-spoiled tests during the speedrun.
+* **Hall of Innovation:** Testsolves of this round had always been done from a copy of the site
+where only the Factory Floor and Hall of Innovation rounds existed. With more puzzles and art
+assets complete, it would be harder to realize that the gizmos on the Factory Floor were what
+mattered to Innovation. Parts of the meta also relied on art, and it would be good to get
+a testsolve with the final art assets.
+* **Wyrmhole:** Due to limited testsolve bandwidth, EICs had cancelled full-hunt testsolves.
+Even if testsolvers only testsolved puzzles that hadn't been testsolved yet, it was looking
+dicey if every puzzle would get two clean testsolves before Hunt...This is not a situation
+any team wants to be in, but there were real TODOs more important than testsolving, like "fix
+game-breaking crashes in Conjuri's Quest".
+This was a major problem for Wyrm, since we'd planned to test the backsolve step in the
+recently cancelled full Hunt testsolve. There had been some miscommunication between Wyrm authors
+and EICs, where EICs though the last layer of puzzles would show Collage as the meta immediately
+on unlock and that the last step was trivial enough to not test. After clarifying this was not
+the case, it got added into the speedrun.
+
+The more specific consequence of this was that a bunch of Wyrm art and tech deadlines were moved
+up 2 weeks. I'm very grateful to the artists of the Wyrm layers for getting art done so quickly
+after the new deadlines were conveyed to them.
+All my work outside of Wyrm was spent on quashing bugs we'd found on our own before the speedrun, and
+making sure our dryrun before the speedrun worked.
+
+The speedrun itself went fine. We ended up splitting into three groups due to how many people showed
+up.
+Breakout got one clean test, one mostly clean test, and one group that
+needed to be given the megahammer email (but which solved it immediately after).
+My group got to Innovation, I recused myself to go eat dinner, and came back to my group
+figuring out which gizmos went to which puzzle. This was considered "good enough"
+"good enough" to fastforward them to the end.
+
+This is an aspect of writing hunts that can be a bit disappointing. Your teammates write these really cool
+puzzles that you get to testsolve, but you won't get to testsolve all of them.
+Everyone testsolving all puzzles is super inefficient. But everyone *does* need to be spoiled on most
+puzzles when writing hint responses and answering emails, so you are eventually forced to spoil yourself
+on things you don't get to experience normally.
+
+Once all three groups made it to Wyrm's last layer, they were merged into one big group. Between all
+three teams, there were
+only 7-8 people who
+were unspoiled on the Wyrm gimmick.
+Two people in the spoiled group set privste messages about noticing the looping puzzle in the art.
+The unspoiled group eventually broke in by noticing the triangle pattern in all previous metas, and
+looking for something triangular elsewhere, only noticing the looping art after backsolving
+("oh god, we're dumb").
+
+I was mostly relieved that all the parts of breakout and Wyrmhole had worked the way we wanted,
+and that we could move them into the "done" column.
+
+
+# January 1-8, 2023
+
+## Oh No, Mystery Hunt is Soon
 
 > There are decades where nothing happens; and there are weeks where decades happen.
 
 As we get closer to the start of Hunt, I'm going to need to segment things more.
 
-Puzzle postproduction and factchecking was continuing at a breakneck pace. I caught up on writing a bunch
-of solutions that I'd been putting off for a while - Bingo, 5D Barred Diagramless, etc. But after doing so,
-I did not do many more postprods or factchecks, because I had more important things to do with my time.
 
-At this point I am just trying to go through the copious number of tech issues surfaced during the
-speedrun. "Wyrm should save its zoom level", "I hit a 404 on this link that showed up",
-"notifications are going off-screen", and so on. Each issue was prioritized and we went down them in order.
-Meanwhile puzzle postprods and factchecks are getting merged in at an absurd rate. Thank goodness for
-auto-postproduction, because boy were there just a lot of words words words to copy into code.
+The full hunt speedrun had found many more tech issues than I thought we'd find going in.
+"Wyrm should save its zoom level", "I hit a 404 on this link that showed up",
+"Notifications are going off-screen", and so on. Each issue was prioritized and we went down them in order.
 
-This was all in preparation of a second full hunt speedrun, to happen the last weekend before Mystery Hunt.
+Meanwhile puzzle postprods and factchecks are getting merged in at an absurd rate.
+Thank goodness for the auto-postproduction script, because boy were there just a lot of words words words to copy into code.
+I caught up on writing a bunch
+of solutions that I'd been putting off for a while, but left their postproduction to other people
+since I was needed elsewhere.
+I did end up doing code reviews for most of the postproduction
+pull requests. It was a simple menial task to do, in between all the harder ones.
+
+The plan was to do a second full hunt speedrun, the last weekend before Mystery Hunt.
 Not everyone was free for the first one (given it was in the middle of the holidays), and it wouldn't
-hurt to have another round of testing.
-For my part, I stopped working on the tech issues IDed last time to do another important bit of work: load testing.
+hurt to have another round of testing after we'd found more bugs.
 
-This would be the 3rd time I'd done load testing for a puzzlehunt. Puzzlehunts are not *that* big, if anything
-they're quite small, but load is very bursty at the start of Hunt and POST requests are coming in all the time.
+However, by now I had shifted my focus to something complete different.
+
+## Load Testing
+
+This would be the third time I'd done load testing for a puzzlehunt. First I did it on my own for
+[Puzzles are Magic](https://www.puzzlesaremagic.com/). Then I was asked to do it for Teammate Hunt
+thanks to prior experience. And now I was still the person with most experience on how to set it up.
+
+Puzzlehunts are not *that* big. If
+anything they're quite small. My blog is fairly niche and got more page hits in a year than
+Teammate Hunt did.
+The difference is that puzzlehunts are very bursty in their load, where during the event you need to
+be firing on all cylinders.
 In my experience, I've seen two classes of errors.
 
 * Your HTTP handlers are overloaded. In this scenario, requests to the server will be replied to very slowly,
-but the server and database will mostly not go down, it'll just be laggy. This is usually only a problem
-at the start of Hunt, and you can either ignore it or just make the server CPUs more beefy.
-* Your websocket handlers are overloaded. The websocket connection layer in tph-site is mediated by the database,
-and having too many websockets open at once causes the number of active database connections to rise. If the
-database connections go past a max limit, any DB query will fail and the entire site stops working. This
-is a much worse problem, because it's a configuration problem, not a server-size problem.
+but the server and database will mostly not go down. They'll just be very laggy. This is usually only a problem
+at the start of Hunt. You can either ignore it, or make the server CPUs more beefy.
+* Your websocket handlers are overloaded. The websocket connection layer in tph-site uses Django Channels
+and is mediated by the database.
+Having too many websockets open at once causes the number of active database connections to rise. If the
+database connections go past a max limit, all new database queries will fail. This is a much worse problem,
+because websockets are designed to be persistent connections, and the most likely outcome is that everyone
+past the first N people will never be able to load the site. This is a configuration problem, not a
+server-size problem, so upgrading the server is not enough to fix it.
 
-The last two times, I load tested using [Locust](https://locust.io/), since there was example code
-in the Puzzlehunt CMU codebase. This time, I decided to switch to [k6](https://k6.io/), because I was most
-concerned about the websockets for chatting with MATE. The documentation for testing websockets in k6 was
-a lot more complete, and I had example code from a Huntinality script. k6 also describes user behavior in
-Javascript, and although I am more of a Python fan, the frontend of our site was in React, so there was
-less work needed to translate our site's code into load testing calls.
+I was not at all worried about the first, and quite worried about the second. All my previous load test
+adventures were done using [Locust](https://locust.io/), since I learned how to load test from reading
+example code in the [Puzzlehunt CMU codebase](https://github.com/dlareau/puzzlehunt_server).
+This time, I decided to try [k6](https://k6.io/), since I had example load testing code from
+Huntinality, and the documentation for testing websockets in k6 was
+a lot more complete.
 
-Broadly, the way all these load testing libraries work (Locust, k6, etc.) is that you define the access
+Broadly, the way all these load testing libraries work is that you define the access
 patterns of a hypothetical user. "This user will login, wait a few seconds, open the list of puzzles,
 open a random puzzle, and submit a guess." Something like that. They will then provide utility functions
 that let you spin up users for some period of time, and provide statistics at the end. The main work for
-loadtesting is in setting up the mock requests.
+loadtesting is in defining user behavior and making them send the same requests real users would.
 
-The thing we were most concerned about for loadtesting was the collaborative jigsaw for breakout. Most
-teams would go through it during Hunt, the collaborative cursors were going to send a lot of websocket
-messages to sync cursor positions, and we wanted to make sure it wasn't too laggy. I set up some mock
-behaviors for chat, Collage, and the breakout jigsaw. The chat users would connect to MATE and send
-2 messages per second. The Collage users would load the puzzle, send 1 guess per second via HTTP, and verify
-receiving team-wide updates on recent guesses via websockets. Last, the breakout users
-would load the jigsaw, and attempt to move a random piece to a random location every 0.3 seconds.
-I verified that the proof of concept worked for simulating 1 user locally.
+I created a few different user profiles:
 
-VIDEO HERE
+* Chatter: opens MATE, sends some chat messages, leaves.
+* Collager: opens Collage, sends 1 guess into collage per second for a few seconds, leaves.
+* Browser: opens each round page a few times, leaves.
+* Jigsawer: opens the collaborative jigsaw from the loading puzzle, drags pieces to a new location
+every 0.3 seconds, leaves.
 
-The load test scaled up to 10 users, then 25 users, at which point we noticed some slowdown. This was
-expected though, our cloud machine was still small scale and we hadn't provisioned the full-size Hunt
-machine yet.
+The last was the one we most wanted to test. In the collaborative jigsaw, cursor locations are broadcasted to
+every team member on the page, which requires O(N^2) messages per update, and they'd be sent frequently.
+The update frequency was rate-limited to 0.3 seconds per update, but this would still be a lot.
 
-For this speedrun iteration, a small group of people acted as a mock HQ, and some puzzle answers would say
+<div class="centered">
+<video width="640" controls loop autoplay muted>
+    <source src="/public/mh-2023/breakout_loadtest.mp4">
+    Your browser does not support .mov files.
+</video>
+</div>
+
+One mock user doing the jigsaw.
+{: .centered }
+
+I got the loadtest script done just before the second full hunt speedrun.
+For this speedrun, a small group of people acted as a mock HQ, and some puzzle answers would say
 "send a hint to get the answer", "request a physical puzzle pickup to get the answer", "oops this puzzle
 is impossible, redeem a free answer". This was to get all those aspects of site behavior tested as well.
 
-Once again, there was a secret objective: we would do a deploy to the site during the speedrun, to measure
-the length of the deploy when there were active users, and the amount of interruption from the solver's
-perspective. There was also an extra secret objective: load testing.
+Once again, there was a secret objective: tech would make a deploy to the site during the speedrun, to
+measure the length of the deploy during active usage, and check how noticable the interruption was.
+There was also an extra secret objective: I was going to spam the site with fake users during the
+speedrun.
 I'm pretty sure the only person who knew I was planning to do this was Ivan.
 
 ![The conspiracy](/public/mh-2023/50test.png)
 {: .centered }
 
-Essentially, I was concerned that our tech-only tests were a good but insufficient test of what a DDOSed
-site would feel like. So I would run a 50 user load test in secret, and take it down only if unaware
-testsolves complained.
-
-I noticed some slowdown on entering guesses on the site, but nothing major. However, as teams solved the loading
-puzzle and hit the collaborative jigsaw, the lag got a lot worse. It was to the point where one person would
-drag a piece, and it wouldn't show up on anyone else's screen until several seconds later.
-I confirmed I saw the same thing, then killed the load test. It was quite a sight to see 20 jigsaw pieces
-all snap into place as the other load went away.
+There was some slowdown on entering guesses on the site, but nothing too bad. There was much worse lag
+in the collaborative jigsaw.
+It was to the point where one person would
+drag a piece, and it wouldn't change on anyone else's screen for several seconds later.
+I confirmed I saw the same lag, then killed the load test. It was quite a sight to see 20 jigsaw pieces
+all snap into place at once after the other load went away.
 
 ![Load test stats](/public/mh-2023/loadteststats.png)
 {: .centered }
 
 Brian was of the opinion that the stats would look much better if CPU load weren't at 100%, but he'd also take
 a look at breakout and Collage to see if there were easy performance wins. He found some places to batch
-websocket updates and add more caching, we tried another run of 50 users, and it did look better - but we
+websocket updates and add more caching. This made the next run of 50 users a lot better, but we
 made a note to try again with the full-size machine.
 
 
-January 9, 2023 - Four
-------------------------------------------------------------------------------------
+# January 9, 2023
 
-I had taken (another) week off work, but this time it was more justified. It's the week before Hunt,
-even when I am not writing Hunt I can't get much done those days. I left the Bay Area in the morning, to
-land in Boston in the evening.
+## Monday
+
+I had taken (another) week off work, but this time it was more justified. Even in a year where I'm
+not writing Hunt, I have trouble being productive the week before Hunt starts.
+
+A bunch of teammate was flying in for Hunt. I left the Bay Area Monday morning. We'd been warned
+our Tim Tickets wouldn't work until closer to the event (and also that the Tim Ticket app was a mess).
 
 I was still in the mode of "optimizing how I use my time", so I prepared a bunch of work that I could
-do on the plane.
-
-It turned out my plane had in-flight WiFi (praise JetBlue). I had trouble connecting to it from my laptop
-for whatever reason, but I got my phone connected just fine, and ended up spending my flight doing code
+do without Internet to do on the plane.
+It turned out my plane had in-flight WiFi (praise JetBlue), but I had trouble connecting to it from my laptop
+for whatever reason. My phone worked just fine, so I ended up spending my flight doing code
 reviews from my phone. As I tapped out a comment on my 8th code review of the flight, a part of me
-acknowledged that trying to squeeze in Hunt to this many aspects of my life was really not a healthy
-thing to do.
+acknowledged that trying to squeeze Mystery Hunt writing into this many aspects of my life was really not
+a healthy thing to do.
 
 For the week before Hunt, teammate would have an informal HQ in an AirBnB we booked near campus. Around
-half the team would stay there and the other half had booked hotels, had nearby friends, etc. Our
+half the team would stay there, and the other half had booked hotels or were staying with friends. The
 on-campus HQ would not be available until the Friday of Hunt, although we did get a classroom booked
-the Thursday before. When I landed, I asked for directions to the AirBnB, and was told the best balance
-of money and time was taking the Logan Express.
+the Thursday before.
 
+When I landed, I asked for directions to the AirBnB, and was told the best balance
+of money and time was taking the Logan Express.
 So, I stood at the Logan Express stop, checking directions on my phone, and wondering why it claimed
 taking public transit would take 5 hours. A few searches later, I found that the last Logan Express
-of the day had left 10 minutes ago.
+of the night had left 10 minutes ago.
 
 Shit.
 
 Luckily calling a rideshare wasn't too bad, and I got there in time to see Ivan complain about
-responsive CSS and "why can't all computers have the same size screen". The Wyrm round art had a hardcoded
+responsive CSS and "why can't all computers have the same size screen". What a classic teammate
+puzzlehunt tech experience.
+
+The Wyrm round art had a hardcoded
 width/height that didn't fit on everyone's computer during the speedrun, and I had pawned off
-fixing that to Ivan so I could focus on connecting Conjuri, Terminal, and other interactives puzzles
-to my load testing script. For me this was the best trade deal in history, I will take infrastructure
-over the complexities of frontend any day of the week, but I did feel bad about it.
+fixing that to Ivan. This left me free to focus on connecting Conjuri, Terminal, and other interactives
+into my load testing script. For me, this was the best trade deal in history, I will take infrastructure
+over frontend any day of the week, but I did feel bad about it.
 
-I finished writing up the appendix that I had worked on during the flight, and sent it off
-to postproduction, with the note that it would be really long. Then I went back to my hotel to
-sleep.
+I finished writing up the 5D Barred Diagramless appendix I had worked on during the flight, then
+went back to my hotel to sleep,
 
+# January 10, 2023
 
-January 10, 2023 - Three
------------------------------------------------------------------------------------
+## Tuesday
 
 This day was a bit quiet, since not everyone had flown in yet. Most of my time was spent
-addressing factcheck feedback and revising puzzles in turn.
+addressing factcheck feedback to puzzles.
 
-A few months back, we had set up Puzzup to auto-generate a factcheck template spreadsheet for each
+A few months back, we had set up PuzzUp to auto-generate a factcheck template spreadsheet for each
 puzzle. Factcheckers would fill it out and it would auto-generate a comment in Puzzup when done.
 I'm not sure how helpful the comment was, we hit message length limits often, but the spreadsheet
 definitely helped!
 
 The complexity in how we displayed puzzles on the site definitely contributed to difficulty
-of factchecking and postproduction. I think this could be useful, so I'm actually going to just
-directly pull out the list of questions in our factchecking template.
+of factchecking and postproduction. I think this could be useful for other teams, so I'm actually
+going to just
+directly copy paste the questions in our factchecking template. (In retrospect, it looks a lot
+like a prompt you'd give to a large language model.)
 
 Instructions: Fill out this checklist. Completeness and Correctness are the most important points to check
 carefully. If it does not apply, note it can skipped.
@@ -3313,14 +3403,14 @@ Completeness and Correctness
 * With the help of the solution, I solved the puzzle 100% (all clues, no nutrimatic, etc)
 * By using the solution, I did not need to think very hard to solve the puzzle.
 * If there is "uniqueness" invoked in the puzzle, uniqueness is checked. e.g.. uniqueness in a logic puzzle, answers to clues, etc.
-* Make sure facts are still true. **List info that could change on or before 1/13/2023 under Other Findings and set the status to TIME.**
+* Make sure facts are still true. **List info that could change on or before 1/13/2023 under Other Findings.**
 
 Puzzle
 
 * Copy to clipboard matches puzzle in both Firefox and Chrome
 * Second person (if there's any person at all), present tense narration
-* Flavortext is italicized. Non-puzzle info (e.g. controls, accessibility, and contacting HQ) should come with the "info icon" (Post-hunt note: this
-is the specific "i in a circle" icon that can be seen on Museum Rules)
+* Flavortext is italicized. Non-puzzle info (e.g. controls, accessibility, and contacting HQ) should come with the "info icon"
+    * Post-hunt note: this is a specific "circle" icon that can be seen on puzzles like Museum Rules
 * Interactive components work for the intended solve path, doesn't crash on incorrect/malformed inputs, any shared team state is tested
 * No unintended source code leakage (inspecting code doesn't spoil puzzle)
 
@@ -3328,8 +3418,9 @@ Display
 
 * Puzzle is displayed (post-prodded) correctly and tested on small/large window sizes, interactions tested on both Firefox and Chrome (or note which browser was tested)
 * Puzzle is displayed (post-prodded) correctly on a mobile device and fully navigable, if interactive, via touch
-* Act 1 only: Puzzle looks correct in the void, i.e. no white on light text (Post-hunt note: after solving Reactivation, teammate shuts down Mystery Hunt. Museum puzzles could still be accessed from the Puzzle Factory,
-but were put in "dark mode" to signify that they were in a void "outside of puzzlehunt space", so to speak. Sometimes a puzzle would hardcode text colors that worked in light mode, but not dark mode)
+* Act 1 only: Puzzle looks correct in the void, i.e. no white on light text
+    * Post-hunt note: after solving Reactivation, teammate shuts down Mystery Hunt. Museum puzzles could still be accessed from the Puzzle Factory,
+but were put in dark mode (black background, white text) to signify that they were in a void "outside of puzzlehunt space", so to speak. Sometimes a puzzle would hardcode text colors that worked in light mode, but not dark mode.
 
 
 Accessibility
@@ -3346,47 +3437,52 @@ Solution
 * The answer is in Answerize format (bold + caps + monospace). All cluephrases are caps (not bold or monospace unless necessary).
 * If puzzle involves images/visuals, they are included in the solution
 * Solution is in first person plural ("we", "our", etc). It does not use terms like "the solver", etc
-* I've reported typos and grammatical mistakes in the solution.
+* There are no typos or grammatical mistakes in the solution.
 * Solution is displayed (post-prodded) correctly.
 
 Depending on the puzzle, there could be up to four different "versions" of it to check (the displayed puzzle,
 its display in dark mode, its display in print preview, and its copy-to-clipboard). I think almost every puzzle I helped on failed
-its first round of factchecking, aside from silly ones like the Wyrm backsolve puzzles. So a lot of my time was
-spent fixing CSS issues or adjusting clues.
+its first round of factchecking due to accessibilty or dark mode issues, so a lot of my time
+was spent fixing CSS issues, updating solutions, and writing better alt text.
 
-When looking for suitable background music, I learned that Demetori had released a new album just 2 weeks prior.
-(They're a Touhou circle and one of my favorite music groups of all time, mostly progressive metal.) It was pretty good
-and I spent most of the week playing it on repeat. The Youtube comments taught me facts no one should know ("corgi" is
+In the days before Hunt, I had stopped using my time tracker app, because it felt increasingly
+useless - all my waking hours were spent on Hunt anyways, I wasn't going to get insight from recording
+that fact.
+When looking for suitable work music, I learned that Demetori, my favorite music group of all
+time, had released a new album just 2 weeks ago. (They do Touhou remixes, msotly progressive metal.)
+I spent most of the week playing it on repeat. The Youtube comments taught me facts no one should know ("corgi" is
 edit distance 2 away from "orgy"), but I couldn't help thinking about the album's closer - ["It's Better to Burn Out Than To Fade Away"](https://www.youtube.com/watch?v=VCHcSX3SX4Y).
-It seemed like a fitting sentiment for the final push towards Hunt.
 
 
-January 11, 2023 - Two
-------------------------------------------------------------------------------------
+# January 11, 2023
+
+## Wednesday
 
 The tech work continues!
 
 There were a rather worrying number of features left to implement, including fixing print previews,
-cleaning up more gaps in the interactions flow, and adding a Contact HQ + puzzle feedback flow.
+cleaning up yet more bugs in interactions, and adding a Contact HQ + puzzle feedback flow.
 
 If we were not implementing it so late, Contact HQ would have been done properly, but we were doing
-it late and all bets were off on code cleanliness. Internally the Contact HQ page is implemented
-by having an internal, unsolvable puzzle, that does not show up in the list of all puzzles,
-starts with hints unlocked, and has no cap on number of open hints. Is this awful? Absolutely. But,
-it was the fastest thing to set up and we were at the point where everything needed to be speed.
+it late and all bets were off on code cleanliness. Internally, the Contact HQ page is implemented
+by having an internal, unsolvable puzzle, that does not show up in the list of all puzzles, which
+starts with hints unlocked, and has no cap on number of open hints.
+Is this awful? Absolutely. But, it was the fastest thing to set up and we were at the point where everything needed to be speed.
 
-Speaking of speed, I was testing the speed on Conjuri under load. I had zero idea how the game worked,
-but got some pointers from the main Conjuri devs for how to start games and move within them. The
+Speaking of speed, I was testing Conjuri's speed under load. I had zero idea how the game worked,
+or even how to fight any of the monsters,
+but I got some pointers from the main Conjuri devs for how to start games and move around. The
 load test was to login, connect to a Conjuri slot, then send a bunch of move commands (10/second,
-roughly the speed they fire if someone holds down the arrow key). Along the way I found a small security
+roughly the speed they fire if someone holds down the arrow key). Along the way I found a security
 flaw that could have allowed teleporting anywhere in the map, including past locked doors (oops).
+
 My load test script would sometimes enter monster fights, and then immediately get stuck because
-you can't enter move commands in the middle of a fight, but I decided this was fine. The goal
-was to test load, and the server still had to respond to move commands even if you couldn't do
-them, so it was still simulating load of *some* kind.
+you can't enter move commands in the middle of a fight. I decided this was fine. The goal
+was to test load, and the server responded with a no-op when given a move command that it couldn't
+apply. This still forced a reply of *some* kind for load testing.
 
 Brian had provisioned the full-size hunt server, and I hit it with 250 users. This immediately
-caused errors, but the site seemed fine, and the error message codes I was seeing looked
+had errors, but the site seemed fine, and the error message codes I was seeing looked
 more like networking issues. Having done this before, I asked if our AirBnB WiFi could handle
 250 fake people at once, and then immediately answered my own question "no of course it can't
 you should have remembered this the first time". (When loadtesting Puzzles are Magic, I spent
