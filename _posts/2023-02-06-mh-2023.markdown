@@ -3464,6 +3464,8 @@ The tech work continues!
 
 There were a rather worrying number of features left to implement, including fixing print previews,
 cleaning up yet more bugs in interactions, and adding a Contact HQ + puzzle feedback flow.
+Bryan had made a habit of speedrunning the Hunt daily for the past week, surfacing
+new site bugs whenever he found them.
 
 If we were not implementing it so late, Contact HQ would have been done properly, but we were doing
 it late and all bets were off on code cleanliness. Internally, the Contact HQ page is implemented
@@ -3621,61 +3623,67 @@ that sometimes, people's beliefs of what is getting done differs from what's
 actually getting done. Tech is just one example of this. I
 got passed copy of the MATE tutorial page that would be viewable before puzzle release,
 and ended up rewriting a bunch of it because it suggested using chat messages that would
-not pass our hardcoded parser. (The TODO to use an ML-based intent classifier had
-long been abandoned.)
+not pass our hardcoded parser. (The plan to try an ML-based intent classifier
+instead had long been abandoned.)
 
 This is approximately the level of chaos I expected the day before Mystery
 Hunt, so I wasn't too concerned. Logistics got ironed out, more bugs got
 fixed, and we'd made progress on the site. We started organizing our tech on-call
 shifts, and I signed up for the 1 AM - 7 AM shift originally, before reconsidering and asking if I could take the one *ending* at 1 AM instead.
 
+## Run (Slowly) Towards The Exit
+
 As the last action item before Hunt, we did a "slowrun", where instead of solving
 puzzles as fast as possible, a group of us would solve puzzles one at a time,
-pause at every meaningful state change, and verify the site's behavior was
-consistent. The original target was 7 PM, but it got pushed back, and back,
+pause at every meaningful state change, and verify the site's behavior matched
+expectations.
+The original target was 7 PM, but it got pushed back, and back,
 and back...
 
-The delay was bad enough that we were going to lose our room booking. It was going
-to be a long night. Everyone not involved in verifying the slowrun was told
+The delay was bad enough that we were going to lose our room reservation on
+campus. Everyone not involved in verifying the slowrun was told
 to get some sleep before Hunt, while the rest of us headed towards the AirBnB
-HQ.
+HQ. It was going to be a long night.
 
-The slowrun officially started around midnight, and over the course
-of several hours we proofread all the site pages, checked that puzzles and round
+The slowrun officially started around midnight. Over several hours, we
+proofread all the site pages, checked that puzzles and round
 pages unlocked properly, that the Puzzle Factory was gated properly, that
-story updates and interactions appeared right when metas were solved, and so
-on. We also checked display issues similar to the factcheck spreadsheet -
-how the site worked at multiple screen sizes, were the Puzzle Factory monitors
-swapping properly as metametas (feature requests) were unlocked, etc. We *also*
-checked the logic that puzzles would start internally unlocking 1 hour before
-puzzle release (to reduce server load), while still being blocked from loading.
-We merged in some final visual touches as we went along the slowrun, and by the time
-we finished it was around 8 AM and kickoff was in a few hours.
+story updates and interactions appeared at the right time and had the correct
+art assets and links, and more. There were around 10 "major" stopping points
+where we would go through the entire site, both Museum and Factory, to check
+nothing unlocked early and nothing unlocked late.
+We also checked display issues similar to the factcheck spreadsheet, like
+site functionality at different screen sizes. As we discovered bugs, we discussed
+if they were worth fixing, or if the site was going to go as-is. With some
+final visual touch-ups along the way, the slowrun finished around 8 AM.
 
-A few people started heading right to campus to prepare for kickoff, while I looked
-for a corner to take an hour long nap before Hunt got started. I really should have just
-gone to bed, but it's the first Mystery Hunt kickoff after two years of remote Hunts.
-Proper sleep can wait.
+Kickoff was in a few hours and some people in the slowrun needed to go straight
+to rehearsal. I was not one of those people, had been up for a solid 24 hours,
+and decided to find a corner to take an hour long nap before Hunt got started.
+I really should have just gone to bed, but it's the first Mystery Hunt kickoff
+after two years of remote Hunts. Proper sleep can wait.
 
 
-Friday of Hunt
--------------------------------------------------------------------------------------
+# Friday of Hunt
 
 I arrived at Kresge a bit out of it, but intact enough to say hi to people lining up outside.
 I didn't have too much to say - talking about Hunt is something you do after, not before.
 
-Everyone was to wear their "Museum of Interesting Things" staff T-shirt. MATE was printed
-on the back, but we would only reveal this when MATE was revealed at kickoff. Basically
-this meant everyone needed to wear a long-sleeve shirt or hoodie that would hide the back.
-I helped usher people into the auditorium, and got the sense it was about as full as
+One very minor upside of pulling an all-nighter is that I did not have to remember
+to bring my "Museum of Interesting Things" staff T-shirt. I had put it in my
+bag yesterday afternoon, and then never made it to my hotel room, so I could just
+put it on directly (along with a hoodie to hide MATE on the back).
+
+While ushering people into the auditorium, I got the sense it was about as full as
 previous years, which I wasn't quite expecting. I figured there'd be less presence due to
 COVID concerns, but it didn't look that way to me.
 
 I saw kickoff for the first time with everyone else; I'd been too caught up in tech to
 see any of the rehearsals. The stage was decorated with a bunch of random decorations
 people owned or bought from Home Depot while getting construction supplies for set
-creation. Based on all the people taking pictures after kickoff, it looked like a few hunters were trying
-to image ID the decorations, just in case they were a puzzle.
+creation. Based on all the people taking pictures after kickoff, it looked like
+a few hunters were trying to image ID the decorations, just in case they were a puzzle.
+I've heard one group actually succeeded.
 
 Now, we unfortunately did not have our official HQ in Building 10 booked at the start of Hunt.
 It would be available later that afternoon, so for now we'd be in two different spare rooms
