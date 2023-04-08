@@ -13,30 +13,41 @@ Usually, I say something about escape rooms, and that works, but in many ways th
 puzzlehunt is *not* like an escape room? "Competitive collaborative spreadsheeting" is more
 accurate but less clear why people would find it entertaining.
 
-Let me put on my machine learning researcher hat for a bit and try to explain puzzles
-differently. In a puzzlehunt, each puzzle is a bunch of data. In a good puzzle,
-that data has **exactly one good explanation**, one which fits better than every
-alternative. Your job as a solver is to find that explanation.
+Here is how I would explain it to my machine learning colleagues if I had more time.
+In a puzzlehunt, each puzzle is a bunch of data. Unlike puzzles you may be familiar with,
+these puzzles may not directly tell you want to do. However, if it's a good puzzle, it
+will have exactly one good explanation, one which fits better than every alternative.
+When done properly, every part of the puzzle will point to some core idea or ideas,
+in a way that can't be a coincidence.
+In other words, a puzzle is something that *compresses well*.
+As a solver, your job is to find out how.
 
-A list of clues, a small game, a bunch of images, whatever. The explanation is usually
+Puzzles can be a list of clues, a small game, a bunch of images, whatever. The explanation
+for how a puzzle works is usually
 not obvious and fairly indirect, but there is a guiding contract between the puzzle
-setter and puzzle solver that the puzzle can be solved. At the end of the puzzle,
-you usually get an English word or phrase, but that is more to give a puzzle its
-conclusion. The core appeal of a puzzle is figuring out what's going on, and when
-you find the explanation (get the a-ha), that's when you're having fun.
+setter and puzzle solver that the puzzle is solvable and its solution will be
+satisfying. At the end of the puzzle, you'll end with an English word or phrase, but that
+is more to give a puzzle its conclusion. People do not solve puzzles to declare "The
+answer is THE WOLF'S HOUR!". They solve puzzles because figuring out what's going on
+is fun, and when you find the explanation (get the a-ha), that's when you're having fun.
 
-This is why puzzlehunting as a hobby is really biased towards professors and programmers.
+As a hobby, puzzlehunting is really biased towards professors and programmers.
 Research and debugging share a similar root of trying to explain the behavior
-of a confusing system. It stretches the same muscles.
+of a confusing system. It stretches the same muscles. It's just that puzzles are about
+artificial systems designed to be fun, whereas research is about real systems where progress
+may not be fun.
 
 Okay. That gives more of an answer to why people do puzzles. Why do people *write* puzzles?
-For me, Mystery Hunt escalated from a thing on the side, to a part-time job, to a full-time
-job.
-Writing a puzzlehunt is incredibly time consuming and stressful, you're usually not getting much money,
-and your work will, in the end, only be appreciated by a small group of people. It all
+
+I have a harder time answering this question.
+
+When working on Mystery Hunt 2023, it started as a thing on the side, then evolved into a part-time job.
+Then a full-time job towards the end.
+Writing a puzzlehunt is incredibly time consuming. You're usually not getting much money,
+and your work will, in the end, only be appreciated by a small group of hobbyists. It all
 seems pretty irrational.
 
-Well...in some sense it is. That doesn't mean it's not worth doing.
+In some sense it is. That doesn't mean it's not worth doing.
 
 
 # Post Structure
@@ -4701,15 +4712,6 @@ I want a hobby, not a job. We climbed the mountain, and came back down.
 
 Cut Paragraphs
 ----------------------------------------------------------------------
-
-To put on my CS / machine learning researcher hat for a bit, a puzzle is something
-that compresses very well. Random data cannot be compressed well, because there is
-no underlying truth or explanantion. Scientific experiments compress a bit better,
-because there are often underlying physical or mathematical principles that explain how the
-world works. Puzzles are then at the very extreme end of the scale - they are designed
-to have most of their data pointing towards a key idea. "Breaking in" or finding
-that idea can be *hard*, but discovering that compression algorithm is what triggers
-the dopamine rush that makes solvers want to keep doing puzzles.
 
 If that's why people solve puzzles, why do people write puzzles? Well, some
 people do so because they've had fun solving puzzles, and want to try something new.
