@@ -4355,157 +4355,329 @@ live, but it's annoying to wrap up later. Given how long it took to package up T
 Teammate Hunt 2021, I am entirely unsurprised Mystery Hunt is taking a while to wrap up. But we do want it
 to wrap up.
 
+Static conversion of the site continues. Brian leads the push to get the
+relevant parts of the Python backend to work with [Pyodide](https://github.com/pyodide/pyodide), since there is absolutely zero chance we are going to rewrite any of the
+Python code. I mostly contribute to documentation and code review sanity checks.
+The small reviews I do send are for bugs I find in the static export, fixing
+some hardcoded URLs, bugs in the static answer checker, and making sure solve
+sounds still play in the static version of the site.
 
-Thoughts on Hunt
------------------------------------------------------------------------------------------------
+That brings us up to now.
 
-Obviously, some things went wrong.
+
+# Thoughts on Hunt
+
+Obviously, some things went wrong. I'm not going to deny that.
+
+The main thing this Mystery Hunt has reinforced for me is that expectations are
+the root of all suffering. "We normally see the entire Hunt, and didn't this year."
+"We wanted to solve the first meta, and didn't." "We thought Hunt to be easier
+due to your smaller team size recommendation, and it wasn't" Do you notice the
+expectation in each one? I think these are *reasonable* expectations to have,
+but they are expectations nonetheless. There is unfortunately very little feedback
+from new teams, but the feedback I have seen is more positive than you would
+think. They went in knowing Mystery Hunt was enormous, and were given an enormous
+Mystery Hunt.
 
 I think it'd be a shame if the only story of this Hunt in 10 years is "it was really hard". As someone who
-spent a lot of time on a bunch of non-puzzle aspects of Hunt, a lot of the stuff I'm most proud of is
-in the overarching structure of Hunt, and supporting its visual presentation. I never want to deal with
-responsive SVGs ever again, but my God, we figured out how to make the Wyrm round concept work.
-
-IMAGE
+spent a lot of time on non-puzzle aspects of Hunt, a lot of the stuff I'm most proud of is
+in supporting the structure and visual presentation of Hunt, rather than specific
+puzzles I designed. I never want to deal with responsive SVGs ever again, but
+my God we made them work for the jigsaw and for the Wyrmhole.
 
 That being said, I did write a lot of puzzles too. I wrote more puzzles this year than I have in
-the past 10. (That isn't saying much when there was a 7 year hiatus in between, but still.) If anything,
-it makes the criticism easier to go through. I've seen people simultanously put my puzzles as their
-favorite and least favorite puzzles of Hunt, and that makes it easy to tell it's not an attack on, like,
-my character or self-worth as a person.
+the past 10. (That isn't saying much, given I had a 7 year hiatus in between, but still,
+it was a lot.) If anything, this has made criticism easier to go through. I've seen people simultanously put my puzzles as their
+favorite and least favorite puzzles of Hunt, and this makes it easy to tell it's
+not an attack on my character or self-worth as a person.
 
-I am about to go into a big list of interventions that I think could have addressed the Hunt difficulty,
-but before doing so, I want it clear that I'm still proud of 80%-90% of the work I did for Hunt. It was a lot,
-and took over much of my life towards the end of the year, and I'm not sure I ever need or want to go
+## The AI Rounds
+
+In terms of planning, everything about the Hunt was building up to the AI rounds.
+I suspected that they'd spark extreme reactions (both good and bad), and I
+think that was mostly true, but I wouldn't have it any other way. Think of them
+as experiments into what puzzlehunts are allowed to be.
+
+Wyrm was pretty constrained, and earlier I have said it might have been too
+constrained for its own good, but I'd like to think the final reveal and art
+made up for this. From the start, the Wyrm pitch was "imagine all the cool
+art that we can put in this round", and it definitely delivered on that front.
+
+The Bootes was stupidly cursed, but I think the gimmick pulled its weight in
+creating novel extractions for its feeder puzzles. The nature of the round gimmick
+pushed towards weird extractions, and it certainly delivered on that front. The
+rise of emojis has taken ASCII emoticons out of popular Internet culture and I
+think it's cool we were able to do a throwback.
+
+Eye's art was quite popular. Its gimmick was a bit more of a mixed bag. My sense
+is that if you had someone who knew the culture of language, the puzzles
+hit *incredibly* well, and if you did not, then the puzzles did not hit as well.
+It was very research heavy, and I suppose this is why so many free answers
+were launched at this round. Puzzlehunting is a very Anglocentric hobby, but
+puzzlehunters are increasingly multicultural. Just compare the ethnicities from
+mindsports like competitive programming or logic puzzles, to the ethnicities in
+puzzlehunts - there's a clear difference between the two. Peking University
+is [running a puzzlehunt this year](https://pkupuzzle.art/), relying
+on Chinese culture and literacy, and I think this is a great step towards letting
+more people experience puzzlehunts.
+Spore Giants, a Singapore based team, unlocked How Come This Crossword Got No Grid One?
+and solved it 1.5 hours, finishing after the stats cutoff. This is 3x faster
+than the fastest forward solve from Galactic, and they were so excited that
+they asked if we could make an exception to get them onto the stats page.
+We didn't, but I'm glad they got to see a puzzle made for them.
+
+And then there's Conjuri. Even while implementing Conjuri, I know some authors
+were suspecting that only 10 teams or so were going to get to see it during
+Hunt. A lot more than 10 teams ended up playing Conjuri by the end, and aside
+from the lag, I hope the experience of doing runs over and over was an
+interesting one. I think it's a bit like Barbie's Murder Party at the House
+on the Hill, except with more complex progression.
+
+# Ways to Improve the 2023 Hunt
+
+I am about to go into a big list of interventions that I think could have
+addressed the Hunt difficulty and improved the Hunt.
+Before doing so, I want it clear that I'm still proud of the vast majority of the work I did for Hunt.
+It was a lot, and took over much of my life, and I'm not sure I ever need or want to go
 through the experience again, but I did it and a lot of it was cool.
 
 At the same time, I think it is important and interesting to consider where things started going wrong,
 because I think some of the errors were pretty subtle. It is not an easy explanation, like "teammate
-was inexperienced". teammate is a younger team, but collectively I believe members of teammate have run
-around 5-7 different puzzlehunts before this one. It's not quite "teammate did not account for being biased
-towards their own puzzles". This bias was a big topic in puzzle variety discussions, and is the reason
-the hunt is only half-littered with math and video game puzzles instead of completely-littered. There
-were other things going on.
+was inexperienced". It's a younger team, but collectively I believe members of teammate have run
+around 5-7 puzzlehunts before Mystery Hunt. It's not quite "teammate did not account for being biased
+towards their own puzzles". This bias was known and a big topic in puzzle
+variety discussions, and is the reason the hunt is only half-littered with math and video game puzzles instead of completely-littered.
 
+There's other things going on.
 
-Calibration
----------------------------------------------------------------------------------------------------
+## Calibration
 
-If you forced me to pick one thing that went wrong, it would easily be calibration. Puzzles were harder
-than their ratings across the board.
+If you forced me to pick one thing that went wrong, it would easily be calibration
+of difficulty. Puzzles were harder than their ratings across the board.
 
 But, it's interesting that they were *consistently* harder. The usual symptom of a Hunt that is undertestsolved
-is that some puzzles are much easier than expected and some are much harder than expected. When you don't
+is that some puzzles are much easier than expected, and some are much harder than expected. When you don't
 have enough testsolve data, errors tend to go both ways. Here the errors went one way.
 
-In Puzzup, puzzles are rated 1-6 in difficulty, and those ratings were actually pretty consistent with
-each other, they just weren't consistent with the stated rubric. A 3 on the scale is marked as "comparable
-to a puzzle in The Ministry". Looking at some puzzles that averaged a 3.0, they were certainly easier than
-a 4.0 puzzle, but they were certainly *not* Ministry difficulty. Like, even the inside baseball
-solve times of teammate testsolving teammate's puzzles seems too long.
+In Puzzup, puzzles are rated 1-6 in difficulty, and I believe those ratings
+are pretty consistent with each other.
+They just weren't consistent with the stated rubric. A 3 on the scale is marked as "comparable
+to a puzzle in The Ministry". Looking at some puzzles that averaged a 3.0, they
+were certaintly not Ministry difficulty. Even the inside baseball solve times
+of teammate testsolving teammate's puzzles seems too long. But they are easier
+than puzzles that got 4.0 difficulty.
 
-My sense is that when puzzle guidelines first came out, there was overextrapolation on what a full-size
-Mystery Hunt team could do, relative to the 3-4 person testsolve groups that were assembled per puzzle.
-So the recommended solve times for puzzles were started too high, puzzles got written to that bar, and then
-the bar stuck.
-I agree with [Eric Berlin's](https://www.ericberlin.com/2023/01/20/how-hard-is-your-hunt/) comments
-on Hunt difficulty, but I thought it was interesting that he casually mentioned testsolve teams of
-4-8 people. We would have killed to have a lower bound that started at four! Our lower bound was often
-2-3 people, and getting 5-6 people was logistically challenging enough that it only happened for puzzles
-that really needed it.
+My sense is that there was a lot of independent overextrapolation on what
+a full-size Mystery Hunt team could do, relative to the 3-4 person testsolve
+groups we had per puzzle. The very common description of Mystery Hunt is that it's
+big, and can support puzzles that can't exist outside Hunt, and a number of
+puzzles I testsolved felt like Teammate Hunt puzzles, except larger. I think
+what is now clear is that the average Mystery Hunt puzzle ought to be easier
+than the average Teammate Hunt puzzle. Recommended solve times for puzzles started
+too high, puzzles got written to that bar, revising them to be much easier would
+take time we did not have, and the bar stuck.
 
 If we had ever revisited a Ministry puzzle around the middle of the year, when feeders were getting
-written in earnest, it would have been very obvious. But why would you solve a puzzle from an old Mystery Hunt
-when there are a bunch of puzzles to testsolve for the upcoming Mystery Hunt? The clock is ticking,
-after all.
+written in earnest, it would have been very obvious that our difficulty
+calibration was off. But why would you solve a puzzle from an old Mystery Hunt,
+when there are a bunch of puzzles to testsolve for the upcoming Mystery Hunt?
+The clock is ticking, after all. Maybe the answer is that yes, you should
+actually go solve 1-2 old puzzles in the same conditions as your testsolves to
+calibrate your ratings. If you ever do this,
+let me know, because I have never, ever seen it done or heard of it being done.
+Usually, you assume your calibration is correct.
 
-Maybe that is the answer - go back to old Hunts and *actually* solve 1-2 of those puzzles in the same
-conditions as your other testsolves, and assume this will be worth your time? If you ever actually do this,
-let me know, because I have never seen it done or heard of it being done. Usually you assume your
-calibration is correct.
 
+## Calibration Part 2
 
-Calibration Part 2
-----------------------------------------------------------------------------------------------------
+The reason I point to calibration as the most important issue is because it
+has a lot of more silent downstream effects.
 
-One of the consequences of starting with a higher difficulty bar is that it's harder to design and
-testsolve puzzles.
+Throughout the year, we felt perpetually understaffed for testsolving.
+I agree with [Eric Berlin's](https://www.ericberlin.com/2023/01/20/how-hard-is-your-hunt/) comments
+on Hunt difficulty, where he says large fractions of your Hunt should testsolve in under
+2 hours. However, I thought it was interesting that he casually mentioned testsolve teams of
+four to eight people. We would have killed to regularly convene four testsolvers!
+Our lower bound was often two to three people, and getting 5+ people was logistically challenging
+enough that it only happened for puzzles where editors could really push
+their importance (metas, mostly).
 
 I think some people might have a mental model where making a puzzle is like placing one brick at a time,
 and you grow from a good 5 minute puzzle to a good 10 minute puzzle and so on, until you hit your time target.
 This is really not how puzzle writing works.
-As an art form (yes I am saying puzzles are art, no I
-am not taking questions), puzzles are partly defined by how well they fit together as a cohesive whole.
+As an art form, puzzles are partly defined by how well they fit together as a cohesive whole.
 You can have a multi-step puzzle with very disconnected steps, and it can even be fun, but it's
 not what people imagine when they think of a good puzzle.
 
 Usually what happens is that you start with some idea, and you try to expand it, as if you're inflating
 a balloon. Holes will appear and you'll tape over them, testsolvers will say it isn't fun and you switch
 out the material, but eventually it comes together. And at the end, you've got a puzzle.
+But this can make it quite hard to revise a puzzle to be shorter, because
+of how it builds on itself.
 
-The challenge with writing longer, more difficult puzzles is that you need to start with a bigger idea
-at the beginning. It has to be big enough that once it's filled to a complete whole, the completion will
-be a long enough puzzle. Then each round of iteration takes longer, since it takes longer to do the grunt
-work and testsolve. If you assume a constant number of puzzlemaking hours per Mystery Hunt year, and
-every puzzle starts harder than it should, the self-consistent conclusion is that every puzzle also
-gets fewer iterations of refinement than it should. You can't push one up without pulling the other
-down.
+I think it is reasonable to assume that every team has the same number of
+puzzlemaking hours per Mystery Hunt year. Out of curiosity, I looked up
+author data from 2018 to 2023, and plotted each author's writing contribution
+to that Hunt.
 
-A lot of the puzzles could have done with more editing, and many of them *were*, but the later in the
-year it got, the less prominent editing became. Much of the drumbeat during the year was "we are
-behind our puzzle projections", so editing became more perfunctory. If a puzzle got rated as fun,
-it went in, even if it may have been too long. This is 100% the correct decision, every time. Part of
+<table>
+    <tr>
+        <td style="width:50%">
+            <img src="/public/mh-2023/2018.png" alt="2018 contribution graph">
+        </td>
+        <td style="width:50%">
+            <img src="/public/mh-2023/2019.png" alt="2019 contribution graph">
+        </td>
+    </tr>
+    <tr>
+        <td style="width:50%">
+            <img src="/public/mh-2023/2020.png" alt="2020 contribution graph">
+        </td>
+        <td style="width:50%">
+            <img src="/public/mh-2023/2021.png" alt="2021 contribution graph">
+        </td>
+    </tr>
+    <tr>
+        <td style="width:50%">
+            <img src="/public/mh-2023/2022.png" alt="2022 contribution graph">
+        </td>
+        <td style="width:50%">
+            <img src="/public/mh-2023/2023.png" alt="2023 contribution graph">
+        </td>
+    </tr>
+</table>
+
+The 2018 Mystery Hunt is an outlier Hunt written by Death & Mayhem, one of the
+largest teams every year. Otherwise, Mystery Hunt is remarkable stable at around
+60-65 puzzle writers per year. Left Out and Setec were around 60 people, and
+ended with 60ish writers.
+Galactic was I believe around 80 people, and ended with 60ish writers.
+teammate won with around 50 people, then grew to 60ish writers.
+
+If you assume that puzzlemaking hours are constant each year, and teammate
+starts with a difficulty bar that is 1,5x harder than it should be, then every
+puzzles has to have 1.5x fewer testsolving iterations to fit
+in your time budget. You cannot push one up without pulling the other down.
+The standard bar for puzzlehunts is two clean testsolves, but it's worth
+considering why the bar isn't three or four clean testsolves. The answer is that
+time is finite, and to write a puzzlehunt you have to ship things.
+
+We started with a bar of two clean testsolves,
+had to relax it to two clean testsolves of every step midway through the year,
+and still ended with testsolving going to the wire.
+I suspect 1.5x fewer testsolve iterations is why.
+Much of the later testsolve iterations are the ones where you observe
+the long-tail of solve experiences and revise the puzzle to be shorter
+and cleaner. A lot of puzzles that could have been edited more were
+not, because they were written at the end of the year and editing for
+late puzzles became more perfunctory to catch up to our internal puzzle
+deadlines.
+
+If a puzzle got rated as fun, it probably went in as is, even if it may have been too long.
+Part of
 [following the fun](https://www.reddit.com/r/gamedesign/comments/hfqh8r/what_does_follow_the_fun_mean_how_do_you_follow/)
-is to not throw out things that testsolvers have told you are fun. The problems arose when
-a puzzle was rated as sort-of fun, where editing it would take a lot of time and require another
-testsolve when testsolve capacity was low.
-Puzzles that should have been edited got rounded to "let's
-ship it and move on" due to time pressure. The provocative way to put it is that we knew we had some clunkers,
-but we understood exactly how they were clunkers and needed warm bodies (puzzles).
+is to not throw out things that testsolvers have told you are fun, I think this
+is fine. The problems arose when a puzzle was rated as sort-of fun, and editing
+it would take a lot of time - those puzzles were rounded to "let's ship it
+and move on".
 
-(And then feedback comes in pointing out the same flaws that came up in testsolving, and you feel bad
-because you knew it existed, even if it made sense to ignore it at the time.
-This seems to be a common theme in not just puzzlehunts, but all creative endeavors:
-authors of a work know most of the problems in their work. I remember Palindrome saying that a lot of their posthunt
-feedback was framed as "I think you overlooked this problem" when they usually had not overlooked the problem.
-Please don't let this stop you from pointing out flaws though. It's useful to see what
-problems people consider important, even if they're already known.)
+The provocative way to put it is that we knew we had some clunkers,
+but we understood exactly how they were clunkers, and a clunker was better
+than no puzzle at all.
 
-The Conjuri feeders were the last ones written in Hunt, and when the feeders were released, they
-were specifically asked to be puzzles that would be easy to edit and iterate (read: closer to
-well-known puzzle archetypes). The shift to encouraging such puzzles should probably have happened much
-earlier.
+Although there was a miss on overall difficulty, most negative feedback I've
+seen on
+*individual* puzzles mentioned flaws that authors were already aware of. I
+remember Palindrome saying the same thing - that most feedback was framed
+as "you overlooked this problem", but they usually had not overlooked the
+problem and had left it alone to fix bigger problems. I think this feedback
+hurts the most, because you know the problem is there, and know why you
+did not fix it at the time, but that doesn't change that the problem is
+*there*.
+
+(Please don't let this stop you from pointing out flaws in puzzle feedback
+forms though. I think authors know what problems exist but don't always know
+what problems people will consider important - feedback forms are a way to
+see which problems are repeated most often.)
+
+What actionable advice would I give about this?
+
+1. Do difficulty sanity checks more often. Even if the estimates are
+incredibly noisy, take them seriously, because they're all you've got.
+2. If puzzle difficulty is either trending too easy or too hard, raise
+a warning early. The goal in a Hunt is to create 150+ units of fun (puzzles).
+Creating fun is harder than creating difficulty, but revising difficulty
+can be hard once you've made something fun. You will have better odds of
+success if you keep old puzzles as-is and update length requirements for
+new puzzles.
+3. It is okay to push for puzzles that are easier to iterate (closer
+to well-known puzzle archetypes). This was specific guidance given for Conjuri
+feeders, since that feeder pool was released last, and I think those puzzles
+came out better. The shift to encouraging such puzzles should probably have
+happened sooner. (Team leadership knew and considered this option, but
+chose to prod people to finish their existing drafts of complex puzzles, rather than
+start new drafts of simpler ones.)
 
 
+## Testsolve Affinity
 
-Testsolve Affinity
---------------------------------------------------------------------------------------------------------
+Okay let's get this out of the way. A team tends to do better at testsolving
+its own puzzles, because teams tend to grow around common interests, or people
+get pulled into other people's interests. This is a well-known effect, it is
+not that interesting.
 
+What *is* more interesting is that midway through the year, we created a
+"testsolving logistics" position. Normally, authors were responsible for soliciting
+testsolvers. This was starting to take up a lot of time, authors would feel bad
+if they only got 2 people to sign up for a puzzle that wanted 4+ solvers.
+So we created a testsolving lead. The testsolver lead volunteered to be spoiled
+on testsolving requirements for all puzzles in Hunt. Every team member filled out
+a survey with puzzle preferences and availability. Authors would describe their
+hours estimate and # people estimate, and the testsolving lead would connect
+A to B, scheduling testsolves and building + wrangling testsolve groups.
 
-For a lot of the year, authors were responsible for soliticiting testsolvers for their puzzles, usually at
-general meetings. This started taking up a lot of people's time, so we later had a "testsolving lead". Everyone
-filled out a survey with their puzzle preferences and availability. Authors would describe their hour estimate,
-what kind of puzzle it was, and how many testsolvers they wanted, and the testsolving lead would handle scheduling
-testsolves and wrangling testsolvers.
-
-This was pretty helpful, but it may have done too good a job of pairing testsolvers to puzzles. Math puzzles
+This was pretty helpful, it definitely saved time, but in retrospect it may have done *too* good a job of pairing testsolvers to puzzles. Math puzzles
 were routed to math people, geography puzzles were routed to geography fans, and so on. I'm not saying every
-puzzles was directly routed to people who'd have an easy time with the puzzle, but it was certainly biased that way.
+puzzles was directly routed to people who'd have an easy time with the puzzle, but
+that was definitely a bias of the selection process. Someone having a spreadsheet
+of everyone's preferences and availability is different from someone posting an async
+message and taking the first N people that sign up. It may have created the
+testsolve affinity problem at an individual level, rather than just the team level.
 
-There are other biases of the testsolving process. You are encouraged to stick with a puzzle, so that other people
-don't need to be spoiled. You usually are not solving with as much urgency as a live hunt, but you are also not
-as tired as a live hunt. You start with a group of people, rather than having one person start a puzzle and slowly pull
-in people over time. When testsolving Moral of the Story, I thought it seemed okay, but we had four people doing
-the first step and were able to speed through it pretty quickly. If you start the puzzle solo, you're going to have
-a bad time grinding through the start.
+I guess the advice is...don't do this? Don't create a role that will save you
+time because it will have subtle biasing effects? I don't know, that might be
+the correct conclusion, but recommending something that makes Hunt take longer to write sounds
+completely insane.
 
-Still, I think the main issue was large puzzles that reduced the number of testsolves doable to make
-every puzzle shipped in time.
-Every puzzle has inherent uncertainty to it, and you can think of a testsolve as reducting th
-- testsolves never
-exactly match real solvers, and this is especially true in Mystery Hunt where team sizes and makeups have
-such a wide range of variance. A team has to choose when it's worth investigating an uncertainty, and when
-you should leave it alone and assume it's not worth investing the time to make it more certain.
+The more obviously good advice is that you should make sure there are off-ramps
+for killing unproductive testsolves. The way we did testsolves was usually
+by letting testers flounder, giving them hints after they floundered enough,
+and continuing until they solved the puzzle. Then they gave feedback at the
+end. Odds are some testsolves should have just been killed early, or we should
+have asked for testsolve feedback throughout the solve. Asking for feedback
+only after solving may have biased difficulty estimates down.
+
+## Starting Big Puzzles Is Hard
+
+During testsolving, you are usually encouraged to stick with a puzzle, so that
+other people don't need to be spoiled and can be saved for future iterations.
+You also usually convene at a fixed time, and start a puzzle immediately.
+
+When testsolving Moral of the Story, I thought it seemed okay. We had four people doing
+the first step and were able to speed through it pretty quickly. Then the
+rest was very parallelizable after the a-ha. We did not have much trouble
+and rated it decently high on fun.
+
+In the live Hunt, it was less
+popular. Now, part of this is because the relevant Wikipedia page was edited
+after testsolving, in a way that made the puzzle much harder. But part of it is
+also that in a real Hunt, teams are roaming to decide what puzzle they want to
+work on, then puzzles accumulate people over time. The start of the puzzle is
+grindy in a way that was not exposed in testsolving, because both clean testsolves
+started with a larger group of people.
+
+It is a less important factor, but assume that tolerance for grind in a real Hunt
+is lower than tolerance for grind in testsolving.
 
 
 Complexity and Scope Creep
@@ -4860,7 +5032,9 @@ expected to pull through on a puzzle, and you can brainstorm ideas from the puzz
 than trying to generate one from the ether.
 
 and we also should have adjusted
-the difficulty estimates of future puzzles. We did not have the time to rewrite existing puzzles
+the difficulty estimates of future puzzles.
+
+We did not have the time to rewrite existing puzzles
 to be easier, because the end goal is creating 150 units of "fun". In general, creating
 fun is harder than creating difficulty. So the more correct decision would have been to bias
 new puzzles (units of fun) to be easier, to make the average go down over time.
