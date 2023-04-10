@@ -4,7 +4,7 @@ title:  "Writing MIT Mystery Hunt 2023"
 date:   2023-02-06 00:32:00 -0700
 ---
 
-*This post is XXX words long, and is riddled with spoilers about pretty much every aspect of MIT Mystery Hunt 2023. There are no spoiler bars. You have been warned.*
+*This post is about 53,000 words long, and is riddled with spoilers for pretty much every aspect of MIT Mystery Hunt 2023. There are no spoiler bars. You have been warned. Please pace yourselves accordingly.*
 
 I feel like every puzzle aficionado goes through at least one conversation where they try
 to explain what puzzlehunts are, and why they're fun, and this conversation goes poorly.
@@ -63,9 +63,9 @@ This post aims to be complete, and that means it may not be as entertaining.
 I'm not sure
 of the exact audience for this post, and figure it'd be useful if I just dumped everything I thought
 was relevant. If you are the kind of person who reads a Mystery Hunt retrospective that's posted
-in April, you probably care about some of the nitty gritty details anyways.
+in April, you might like some of the nitty gritty details anyways.
 
-Most of the post is going to be a play-by-play of things I worked on, and the Hunt-wide commentary
+Most of the post is going to be a play-by-play of things I worked on. The analysis and commentary
 is at the end.
 
 
@@ -625,20 +625,20 @@ had a good enough set of feeders.
 The round structure went through multiple iterations, done over Jamboard. Here's a version where
 every puzzle would be 1/4th of a future puzzle:
 
-[Wyrm brainstorm](/public/mh-2023/Inset_Jam_6.png)
+![Wyrm brainstorm](/public/mh-2023/Inset_Jam_6.png)
 {: .centered }
 
 Here's one where every puzzle's answer would depend on answers from the previous layer,
 such that one puzzle could be backsolved per layer.
 
-[Wyrm brainstorm 2](/public/mh-2023/Inset_Jam_3.png)
+![Wyrm brainstorm 2](/public/mh-2023/Inset_Jam_3.png)
 {: .centered }
 
 And here's one where the entire round would be serial, each puzzle would rely on the
 previous puzzle's answer, and you'd need to figure out how to bootstrap from nothing to solve
 the entire round.
 
-[Wyrm brainstorm 3](/public/mh-2023/inset_jam_line.png)
+![Wyrm brainstorm 3](/public/mh-2023/inset_jam_line.png)
 {: .centered }
 
 Most of these ideas would have been quite tricky to pull off, especially given we needed to
@@ -650,7 +650,7 @@ to just the metas of each layer, and all regular feeders in each layer could be 
 constraints besides the answer. The zoom direction of moving outwards rather than inwards was
 done to make it more distinct from [⊥IW.giga](https://puzzles.mit.edu/2021/round/giga/).
 
-[Wyrm last brainstrom](/public/mh-2023/Inset_Jam_2.png)
+![Wyrm last brainstrom](/public/mh-2023/Inset_Jam_2.png)
 {: .centered }
 
 Our first plan was to have one unsolvable puzzle in the first layer of puzzles, that would
@@ -711,7 +711,7 @@ I factchecked that category, which was a fun time. I'll quote my despair directl
 >
 > 2) "balls of crumpled paper", which is usually estimated at dimension 2.5 and I found a few different sites that repeat the same number (along with 1 site that didn't but the one that didn't was purely experimental whereas the wikipedia argument is a bit more principled)
 
-When I checked deeper, I found that actually the coastline paradox is well-known enough that multiple
+When I checked deeper, I found that the coastline paradox is well-known enough that multiple
 groups have checked the dimension of coastlines, getting different results, so those aren't canonical
 either. The only one that was consistent was Great Britain, whose dimension of 1.25 is repeated in both
 the original paper by Benoit Mandelbrot and all other online sources I could find.
@@ -879,7 +879,7 @@ But, this is all said with hindsight. At the time, I did not realize the consequ
 not sure anyone else did either. It did genuinely fix problems in the Hunt and story structure,
 it's just there were other ways to fix them that would have made things easier.
 
-<div class="shaded" markdown-"1">
+<div class="shaded" markdown="1">
 ### The Legend
 
 Part of the deal for accepting the repeated feeders constraint was editors-in-chief signing up to
@@ -1073,8 +1073,9 @@ few knobs to tweak difficulty. This is a challenge of pure metas in general.
 The other tricky part of Australian puzzles is that solve time can have incredible variance. The first
 test got the key idea in 20 minutes. The second test got horribly stuck and was given four
 different flavortext + diagram combinations before getting the idea 3.5 hours later.
-The second group did mention the meta answer 2.5 hours into their solve, when despairing about their
-increasingly bad triangle conspiracies. It was the best dramatic irony I've ever seen.
+The second group did mention the meta answer io their solve, when despairing about their
+increasingly bad triangle conspiracies. Watching them finish an hour later was the best payoff
+of dramatic irony I've ever seen.
 
 ![Conspiracies](/public/mh-2023/eyeofprovidence.png)
 {: .centered }
@@ -1121,7 +1122,7 @@ important yet.
 The other main contribution was helping find feeders. The first draft used MRS UNDERWOOD as a feeder, for
 indexing reasons. The answer worked, but was *really* not a good answer.
 The S in MRS was needed for extract, but it looked sooooooo much like
-a cluephrase for Claire Underwood. Brian told me that it could be changed to just UNDERWOOD if we added
+a cluephrase for CLAIRE UNDERWOOD instead. Brian told me that it could be changed to just UNDERWOOD if we added
 a feeder that clued San Francisco, which fit the metameta, and had an S as its 5th letter. We collectively spent 5-10 hours
 doing a search for one, before landing on the "stories" idea with SALESFORCE TOWER or
 TRANSAMERICA PYRAMID. The puzzle was rewritten with SALESFORCE TOWER, went through an entire testsolve
@@ -1328,8 +1329,8 @@ on unlock. We kept the pattern in mind as a potential nerf to make down the line
 
 (Two teams told me after Hunt that they suspected the Wyrmhole round would loop the whole time, but neither
 believed in it enough to attempt the cheese we were worried about. It's always weird to talk about
-puzzle skips that people didn't do. Sometimes I wonder if I shouldn't mention them so that future
-puzzle design is easier.)
+puzzle skips that people didn't do. Sometimes I wonder if I shouldn't mention them, because every
+solving tool makes it harder to design a solve path that cannot be shortcutted.)
 
 The batch test went well, and we were able to release all the Wyrm feeder answers.
 The Museum metas finished shortly after, and this officially opened the floodgates for regular writing.
@@ -1623,8 +1624,12 @@ Puzzle. Still, there was time to work on other puzzles along the way.
 ### Lost to Time
 
 Whenever I wrote a puzzle for Hunt, I did a search in the /dev/joe index to double check it's not
-too close to a prior Mystery Hunt puzzle. At one point, I opened a link to the 1995 Mystery
-Hunt, and got really confused why the solution page redirected to devjoe's domain. I posted a link
+too close to a prior Mystery Hunt puzzle. This has built a bit of a "Alex is the Mystery Hunt
+expert" reputation. At one point, I got a message with "I was told to ask you if you knew a
+puzzle about [Canine or Cuisine](https://www.npr.org/sections/thesalt/2016/03/11/470084215/canine-or-cuisine-this-photo-meme-is-fetching)", I said "IDK why you were told to ask me, but yes it was called Bark
+Ode", and it was a bit like "you just answered your own question".
+
+On one of those searches, I opened a 1995 Mystery Hunt puzzle, and got really confused why the solution page redirected to devjoe's domain. I posted a link
 in #puzzle-ideas and kept going on other work.
 
 About a week later, Bryan said it was turning into a real puzzle, and I could join if I wanted because
@@ -1796,7 +1801,7 @@ Example uses include:
 The nature of writing
 puzzlehunts is that you'll be wrong quite often and I think everyone who offered
 insurance is in bamboozle buck bankruptcy. Here are some emojis we generated
-using DALL-E 2 when it was first announced.
+using DALL-E 2.
 
 ![Bamboozle emoji generations](/public/mh-2023/bamboozle.png)
 {: .centered }
@@ -1949,8 +1954,7 @@ From our #puzzle-ideas channel during retreat:
 ![Someone saying the loading animation should be a puzzle](/public/mh-2023/itisapuzzle.png)
 {: .centered }
 
-This was triggering some very strong *"what the f&ast;&ast;&ast; do we do"* reactions. What
-nerfs were even left to apply?
+*What the hell do we do.* What nerfs are even left to apply?
 
 I don't think the relevant pool of solvers ever solved the puzzle organically. Instead,
 hunt exec, breakout authors, and a few unspoiled solvers were all shuffled into the same
@@ -1999,7 +2003,7 @@ even though it's likely not correct, because if it's wrong the authors watching 
 will stop us from destroying the puzzle." This gave the authors a bit of an aneurysm. "PLEASE
 DO NOT PUT THE TISSUES IN WATER why did you force us to clarify this??"
 
-(Meanwhile the testsolver group for Weaver was putting the puzzle in water.)
+(Meanwhile the testsolver group for Weaver was putting the weave in water.)
 
 After a number of other revisions, we were finally able to make it to the cluephrase of Tissues,
 but I decided to turn in for the night to catch up on sleep.
@@ -2348,13 +2352,15 @@ only exception was thw pawn, which I had already decided to exclude. This is tru
 in 5D Chess as well. Suppose you have pieces in the same location in both timelines.
 Then, the checkmated squares across both timelines will also be identical.
 
-DIAGRAM
+![chess board](/public/mh-2023/boardpre.png)
+{: .centered }
 
-This is a problem for the puzzle, because as designed, almost all letters are
-the same across both timelines, but the cluephrase had very few repeated letters.
-Any instance of this would be a problem.
+This is a problem for the puzzle, because in this case the letters are also the same,
+and this forces letters to repeat in the cluephrase. There were very few repeat
+letters in the cluephrase so any instance of this would be a problem.
 
-DIAGRAM
+![chess board with letters](/public/mh-2023/boardpost.png)
+{: .centered }
 
 The only way to avoid this was to add symmetry-breaking by changing piece locations
 between timelines. This can only occur via the two-timeline entries.
@@ -2368,7 +2374,7 @@ one of the following:
 
 * One has kings (K), the other does not.
 * One has bishops (B), the other does not.
-* One has knights (?), the other does not.
+* One has knights (J), the other does not.
 
 This meant the crossword fill and chess problem could not be constructed
 independently. The puzzle needed to start from the two-timeline entries and their
@@ -2386,10 +2392,10 @@ find a historical winner with a K in its name.
 For knights, this constraint also influenced choosing J for knights instead of N.
 Using N would have made grid fill way too hard, and J in particular appeared in
 both JOSEPHBIDEN / DONALDTRUMP and KENJENNINGS / LEVARBURTON to break symmetry.
-(I wanted
+I wanted
 to use MAYIMBIALIK / LEVARBURTON originally, since it seemed fun
 to use "the Jeopardy host that isn't Ken", but it caused problems due to sharing
-a B in the same position.)
+a B in the same position.
 
 With a better understanding of the requirements, I placed my seed entries in the grid,
 then wrote some code to
@@ -2840,11 +2846,16 @@ spent on food. The last few pesky dollars were sent to a pony convention crowdfu
 them fill a COVID-shaped hole in their finances.
 
 The vacation really helped - I needed a few days to get into the headspace of "you have no obligations today",
-but once I did, it was nice to have no stress about deadlines for a bit. I also learned that if a trail
-sign says "do not pass at high tide", you should check when high tide is instead of assuming things will
-be okay.
+but once I did, it was nice to have no stress about deadlines for a bit. I also learned that if a coastal
+trail sign says "do not pass at high tide", you should check when high tide is instead of assuming things will
+be okay. I wade through a half-mile of ankle and knee-deep water before deciding you know maybe I should turn
+around.
 
-IMAGE
+![Trailhead](/public/mh-2023/trail.jpg)
+{: .centered }
+
+The route I am supposed to take.
+{: .centered }
 
 Of course, I wasn't able to
 fully disengage from Hunt. One night, I ended up idly working out the design for the last puzzle I'd
@@ -3689,6 +3700,9 @@ While ushering people into the auditorium, I got the sense it was about as full 
 previous years, which I wasn't quite expecting. I figured there'd be less presence due to
 COVID concerns, but it didn't look that way to me.
 
+![Kickoff crowd](/public/mh-2023/kickoffcrowd.jpg)
+{: .centered }
+
 I saw kickoff for the first time with everyone else; I'd been too caught up in tech to
 see any of the rehearsals. The stage was decorated with a bunch of random decorations
 people owned or bought from Home Depot while getting construction supplies for set
@@ -3830,9 +3844,9 @@ As the tech point of contact for the half of HQ I was in, someone on huntcomm as
 on the plan of changing N to whatever value would make hints unlock for the first 3 puzzles of the Hunt,
 which was N = 70.
 I told them that yes, this would work, but if they did this, huntcomm would be signing up to continually
-track and adjust N throughout the Hunt. Was that fine?
+track solve counts and adjust N throughout the Hunt. Was that fine?
 
-"Yes."
+> "Yes."
 
 Okay then! But then the logistics person in our room immediately pointed out that we were about to switch
 rooms to our official HQ location. Releasing hints at the same time as everyone moving rooms was a bad,
@@ -3962,7 +3976,7 @@ was the right call.
 Teams were still behind huntcomm's projections, so they handed out more event rewards. With
 event reward alerting up, it was now very clear that lots of teams were stockpiling their
 rewards. Teams were making progress, but we needed teams to use free answers *despite
-making progress*. I understand why it was happening, but understanding didn't make it less
+making progress*. I understood why they weren't using free answers, but understanding didn't make it less
 stressful.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rgU4Oum8SLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -4069,7 +4083,12 @@ would be very short, like Cardinality going from 3/4 to shutdown in 5 minutes.
 {: .centered }
 
 Sometimes, it was not, like when TTBNL solved 3/4, half of hunt HQ immediately left, and didn't
-come back for an hour. Meanwhile, hints were still coming in, with only half of staff available
+come back for an hour because they were stuck on the last mini and guessing CONJUWU.
+
+![Conjuri uwu](/public/mh-2023/conjuri-uwu.png)
+{: .centered }
+
+Meanwhile, hints were still coming in, with only half of staff available
 to reply. This made the dispatcher very upset, and they tried to get people who weren't directly
 acting to stay behind in HQ and join a later run. But people were very excited to yell at
 teams, and I never expected that cat herding to be successful.
@@ -4089,9 +4108,9 @@ As implemented, they were *only* usable in the AI rounds. In the two hours I'd b
 huntcomm had decided they did want to send strong rewards to everyone. To make those
 rewards useful to everyone, strong rewards needed to be redeemable outside AI rounds too.
 
-"How urgently do you need this, like should I get out of bed right now?"
-
-"Yes please."
+> "How urgently do you need this, like should I get out of bed right now?"
+>
+> "Yes please."
 
 So I got up and spent the next hour making that happen.
 
@@ -4168,18 +4187,18 @@ solving any AI round puzzle, but some teams don't want to touch grass. What can 
 
 Teams were now doing runs in Conjuri's Quest, and we were getting concerning reports that
 it was lagging.
-In load testing, we assumed not too many teams would be doing Conjuri at once, not many teams
-would even *unlock* Conjuri before the coin was found, and that our sims overestimated server
-load. However, we'd made Conjuri unlock much earlier, and our websocket load was *higher* than
-our estimated load. Tha latency in Conjuri is bottlenecked on websocket load, since
-the whole game runs on websockets rather than HTTP requests.
+In load testing, we had assumed not too many teams would be doing Conjuri at once,
+and our sims overestimated websocket load. However, we'd made Conjuri unlock much earlier,
+and websocket load was higher than tested.
+That was the bottleneck for Conjuri latency, since
+the whole game runs on websockets.
 
 There was a very brief tech meeting where we tried to figure out if there was anything we
 could to relieve load. I aruged that at this point, we probably did not have time to
 improve our websocket code. The only reasonable fixes were to either heavily decrease
 websocket usage, or spin up another server.
 
-I was not expecting us to do anything about Conjuri, so an hour later I was surprised to
+I was not expecting either to be doable, so an hour later I was surprised to
 see huntcomm in the middle of migrating hunt progress to a second server. A lot of
 tph-site assumes it runs on a single server, so we would not be trying to sync databases
 between the two or auto-shard requests. Server load would instead be split manually.
@@ -4236,16 +4255,19 @@ This is quite sad.
 There are 4 timeslots for runarounds and more than 4 teams that finished. We end up grouping some of the
 later teams together as we try to make sure everyone who finished early enough gets to see everything.
 Then it's time to close up for real. The Puzzle Factory is disassembled - I take one of the gears
-as a hard-to-explain keepsake for later. With Hunt finally over, I start reading some of the discussion
-in puzzle Discords, but there's really still so much cleanup to do.
+as a hard-to-explain keepsake for later.
+
+![Gears](/public/mh-2023/gears.jpg)
+{: .centered }
 
 Wrap-up happens, and if teammate sounded a bit out of it, well, that is not unique to long Mystery Hunts.
 I think the default state of Mystery Hunt wrap-up is that the presenters have stayed up too late and
 are trying to compress a very long story into a very short presentation. This is not something I'm
 that good at, if this post is any indication.
-
 I will say that wrap-up does not go as badly as I thought it would. Some people are mad online but civil, friendly,
-or reassuring in real life. After wrap-up, I catch up with puzzlehunting friends that I haven't gotten to see all
+or reassuring in real life.
+
+After wrap-up, I catch up with puzzlehunting friends that I haven't gotten to see all
 week because I've been busy running Mystery Hunt. I'm happy to hear puzzles I worked on listed in people's
 favorites. People slowly file out of the room and soon it is just teammate. We do one more team photo
 for the memories, then disperse until dinner.
@@ -4619,14 +4641,13 @@ chose to prod people to finish their existing drafts of complex puzzles, rather 
 start new drafts of simpler ones.)
 
 
-## Testsolve Affinity
+## Testsolve Affinity and Bias
 
-Okay let's get this out of the way. A team tends to do better at testsolving
+A team tends to do better at testsolving
 its own puzzles, because teams tend to grow around common interests, or people
-get pulled into other people's interests. This is a well-known effect, it is
-not that interesting.
+get pulled into other people's interests.
 
-What *is* more interesting is that midway through the year, we created a
+Midway through the year, we created a
 "testsolving logistics" position. Normally, authors were responsible for soliciting
 testsolvers. This was starting to take up a lot of time, authors would feel bad
 if they only got 2 people to sign up for a puzzle that wanted 4+ solvers.
@@ -4743,7 +4764,8 @@ with respect to Hunt, and it is triggered directly by solving Reactivation, rath
 teammate described the story. This was heavily woven into how the site functioned, since solving Reactivation
 would force the Factory to shutdown and make the Museum site 404, saying "Team X broke Mystery Hunt".
 
-IMAGE
+![Broke mystery hunt](/public/mh-2023/brokehunt.jpg)
+{: .centered }
 
 We did not have an answer for how to time unlock a team past these changes, which were required to
 make site functionality work. A lesser but still important reason is that we had pulled a literal
@@ -4821,8 +4843,8 @@ unlock a new round with new puzzles instead of more Atrium puzzles.
 We did a lot to funnel teams towards unlocking the Puzzle Factory, including gating the release of the Atrium
 meta at > 7 solves, since 7 solves was the point the loading animation became infinite. I believe in the original
 hunt unlock spec, it is literally impossible to get enough Atrium solves to unlock the meta without solving
-the loading puzzle, since we wanted teams to explore the site and find the Puzzle Factory before going all-in
-on a meta. I know some teams were not happy about this, I think it just wasn't a raised concern at
+the loading puzzle, not enough Atrium puzzles are loadable to hit the unlock threshold. We wanted teams to explore the site and find the Puzzle Factory before going all-in
+on a meta. I know some teams were not happy about this, and I think it just wasn't a raised concern at
 unlock design time. Something like "Atrium meta unlocks at 5/9 solves + loading puzzle solve" probably would
 have worked (and this is effectively what it got changed to mid-hunt after team check-ins).
 
@@ -4889,18 +4911,18 @@ team contribution graphs again, they explain it better than I could.
     </tr>
 </table>
 
-  Remember to structure things such that the long tail of one-off contributors have something they can do.
+* Remember to structure things such that the long tail of one-off contributors have something they can do.
   You are going to want all the help you can get.
 * Hunts empirically need around 60 writers. If you're a team thinking of trying to win Hunt, and
   are smaller than 60 people...then, well, you should have an idea of who you'll try to recruit.
 * Absolutely do not feel obligated to do as much tech and art as teammate did in this Hunt. We went all-out
-on both because teammate has a lot of artists and a lot of software developers, as well as recent experience
+on both because teammate has a lot of artists and a lot of software developers, as well as active experience
 with running complex hunt websites. Out of recent Mystery Hunts, Galactic's and teammate's are easily the most tech-heavy.
 It is not a coincidence
 that both Hunts were written by teams that ran yearly puzzlehunts with a reputation for interactive puzzles.
 I do not
 think our Hunt site would have been possible if the tech team had not written puzzlehunt code in the same
-codebase for two straight years.
+codebase for two years straight.
 * Mystery Hunt got a *lot* more popular during the pandemic. For reference:
 the 2020 Hunt had 150 teams and the 2023 Hunt had 300 teams. Keep an eye on things that scale with number
 of teams (hints, answering emails, scavenger hunt judging). Make sure your flows there are seamless.
@@ -4946,7 +4968,7 @@ since that is what puzzlers live for, but that always opens the possibility for 
 > The key to making a detective game fun to puzzle out is that you have to give the player as many opportunities as possible to be wrong. If you steer them through finding the clues and give away the answer anyway then they can never be wrong. If you give them three dialog options to pick from then it’s pretty easily brute forced. Meanwhile, [Return of the Obra Dinn] has you fill in multiple blanks that all have multiple possible entries, and there could be hundreds if not thousands of wrong combinations. And you can’t brute force that, your only recourse is to actually be smart enough to figure it out.
 
 (["Great Detective Games Let You Fail Miserably"](https://www.escapistmagazine.com/great-detective-games-let-you-fail-miserably-extra-punctuation/). Also, play Return of the Obra Dinn, game's great.)
-(: .centered }
+{: .centered }
 
 If it's impossible to get completely lost, then it's not a puzzle. If you get
 completely lost, you will probably not appreciate the puzzle. That's how it goes.
@@ -4981,7 +5003,7 @@ them getting better. The main issue with GPT-3.5 was that it was really bad
 at mixing semantics and syntax, a key duality needed for puzzle solving. GPT-4
 is a lot better at this.
 
-Look, I'm not sure where this goes. I don't want to be depressing, but my
+I'm not sure where this goes. I don't want to be depressing, but my
 expectation is that at some point we will have ML models that are good enough
 to solve puzzles, and not good enough to generate interesting puzzles, and
 we'll have to decide how to adjust the current status quo where all computer
@@ -4996,13 +5018,12 @@ In the "do we want to win Hunt" survey, I said I did not expect Mystery Hunt to 
 then it did. I have, very continuously throughout the year, asked myself if
 this was all worth it. The answer was not clearly yes.
 
-Still, to flip the question on its head, if you asked me what deal I would have
-to take to agree to never write puzzles again, I'm not sure what it would be.
+Still, to flip the question on its head, if you asked me what deal I'd
+to take to agree to never write puzzles again, I'm not sure what it would have to be.
 Right now, if you offered me a thousand bucks, I would immediately say no.
 
-So, will you see me again in a hunt's author list? Uh, not sure. Ask me later.
+Will you see me again in a hunt's author list? Uh, not sure. Ask me later.
 I care about puzzles
 a lot. I wouldn't have written for Hunt if I did not care. That continues to be true. Puzzles are cool.
 I'm just tired and want to do other things in my free time. I want a hobby, not a job.
-We climbed the mountain, and came back down. Now there is just the plain of
-possibility.
+We climbed the mountain, and came back down. Everything afterwards is uncertain.
