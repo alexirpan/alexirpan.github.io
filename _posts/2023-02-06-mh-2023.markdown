@@ -4680,8 +4680,7 @@ It is a less important factor, but assume that tolerance for grind in a real Hun
 is lower than tolerance for grind in testsolving.
 
 
-Complexity and Scope Creep
-------------------------------------------------------------------------------------------------
+## Complexity and Scope Creep
 
 teammate wrote some **wild** puzzles this year. Some wack metas, some crazy feeders, all sorts of stuff.
 Let me go requote the team goals from the start of the year.
@@ -4691,303 +4690,177 @@ Let me go requote the team goals from the start of the year.
 > 3. High production value
 > 4. Build a great experience for small / less intense teams
 
-It's possible we overreached here. There's a certain amount of complexity budget you get, defined by your
-available manhours, and we spent a lot of it early when deciding to create the AI rounds. Then we spent more
-of it creating some more complicated metameta structures, and spent more of it connecting rounds
-together between the Museum and AI rounds. I have already mentioned how in retrospect, I think adding a dependency
-chain between Museum and the Wyrmhole was a bad idea, but I think there were some second order effects
-on late feeder release and relative lack of "normal" puzzle answers at the start of puzzle writing.
-The gimmicks also made it hard to shuffle puzzles between acts if they tested harder than expected.
-In previous Teammate Hunts, I've been in testsolves for puzzles that got moved from intro round to main
-round and vice versa. I'm not sure if that happened this year. You can't easily swap a Museum puzzle with
-a Bootes or Eye puzzle, their structural requirements are different.
+It's possible we overreached in trying to deliver innovation in both hunt structure and puzzles.
+Every year, you get a certain amount of complexity budget, limited by your available person-hours to
+design and testsolve puzzles. We spent a lot of it early when deciding to create the AI rounds,
+then spent more on the Musem metameta structure, then more on Innovation, then more on reusing
+puzzles between Museum and Wyrmhole.
 
-I'd say that in general, teammate does rise to the occasion, but not without a lot of effort and struggle,
-and usually with some scope creep along the way. Teammate Hunt 2020 started design with one Playmate game
-as the runaround, and ended with eight. Teammate Hunt 2021's design proposal for the Carnival Conundrum
-said "7-9 intro puzzles, 7-9 main round puzzles per half, 6-8 pairs of puzzles", and the final hunt picked
-9, 9, and 8 respectively, the top of each band. I was not in the design process for Hall of Innovation, but
-I remember someone telling me that when that was first designed, it was certainly not an entire round.
+The gimmicks also made it hard to shuffle puzzles between acts if they tested harder than expected,
+although I'd guess this effect was smaller. We have shuffled puzzles between intro and main rounds
+before in Teammate Hunt. I'm not sure if that happened for Mystery Hunt, but I would guess it didn't,
+since structural requirements differed more between rounds and puzzles often had to be designed
+for the round they fed into.
+
+I think there was a compounding effect, where creating more complicated hunt structures made
+feeders release later and created more time crunch for writing ambitious puzzles.
+Here is a message during team chats all the way back in January 2022, when we first started writing.
+
+![Unknown unknowns](/public/mh-2023/unknowns.png)
+{: .centered }
+
+teammate *does* rise to the occasion of the constraints we set for ourselves, but not without a lot of
+effort and struggle. Teammate Hunt 2020 started design with one Playmate game as the final runaround,
+and ended with eight games throughout the Hunt.
+Teammate Hunt 2021's design proposal for the Carnival Conundrum
+said "7-9 intro puzzles, 7-9 main round puzzles per half, 6-8 pairs of puzzles", and the final hunt ended
+with the top of each bad: 9 intro puzzles, 9 main round puzzles per side, 8 pairs of puzzles.
+I was not in the design process for Hall of Innovation, but I remember someone telling me it also grew
+in scope a lot from the initial proposals.
+
+I don't know if this is an issue other teams will have. As a team we were off a streak of creating two
+well-received puzzlehunts and had some internal pressure to one-up ourselves and dust off ideas that
+could only work in Mystery Hunt.
 
 My guess is that you can make a hunt with complex hunt structure, and you can make a hunt with complex
-puzzles, but you should give some pause before trying to do both. It's a bit tricky, because one of the
-common themes in survey feedback on what makes Mystery Hunt special is its grandiosity and scale. This is a
-very, very consistent sentiment. I would rather people try to push Mystery Hunt than feel required to play it
-safe.
+puzzles, but you should give some pause before trying to do a lot of both. Still, I would rather people
+try to push Mystery Hunt than feel required to play it safe.
 
 
-Time Unlocks
------------------------------------------------------------------------------------------------------
+## Time Unlocks
 
 This year, rounds were time unlocked as a whole, up until Reactivation, and no time unlocks were done past that
 point.
 I've seen some speculation that we did not time unlock past Reactivation because doing so would have spoiled
-the answers to Reactivation. Personally, I don't think that mattered. If a team wants to see more rounds
+the answers to Reactivation. Personally, no, I don't think that mattered. If a team wants to see more rounds
 they can probably live with skipping one puzzle of Hunt.
-
-Requoting myself, the way I view teammate's approach to story is:
-
-> * Decide on the story you want to tell, then make sure as much of the Hunt as possible acts
-> consistently with that story. This will take a long time to polish - do so anyways.
-> * Tie changes in narrative or story state to actions the solvers take. These actions are usually
-> solving puzzles, but they don't have to be.
-> * Use bottlenecks to direct team attention towards the same point, then put the most
-> important story revelations at those bottlenecks.
 
 I'd say the main
 reason we did not time unlock past Reactivation was because the story was integrated so strongly into the
-Hunt that we didn't have a good answer for how to time unlock past it. The entire conception
-of the story beat is that is is a breaking, irrevocable change in how solvers use the site, and the solvers'
-story objectives. You can't really have a team suddenly cause Mystery Hunt to be cancelled because it
-happens to be Sunday. This was similar to why we decided not to time unlock teams past the intro round
-in Teammate Hunt 2021.
+Hunt that we didn't have a good answer for how to time unlock past it. The entire point of Reactivation is
+is that it is a breaking, irrevocable change in how solvers use the site, and the solvers' objectives
+with respect to Hunt, and it is triggered directly by solving Reactivation, rather than a skit where
+teammate described the story. This was heavily woven into how the site functioned, since solving Reactivation
+would force the Factory to shutdown and make the Museum site 404, saying "Team X broke Mystery Hunt".
 
-To a smaller degree, we also had zero idea how the site would function if time unlocked past Reactivation.
-All across the codebase, there are differnt checks for solve progress and story progress. The two tracks
-are separate yet interconnected (think of them as "entangled" if you'd like). We had pulled a literal
-all-nighter making sure it worked properly for a team with no time unlocks and did not have time to
-verify any behavior of what happens if a team has a post-Reactivation solve state without the corresponding
-puzzle solves beforehand. Even the relaxation of 4/4 metas to 3/4 metas to unlock Reactivation caused some
-problems around Hall of Innovation that we had to fix live.
+IMAGE
 
-I think the devil's advocate argument is that not all teams care about story, but teammate is a team that
-*does*. We care about story enough to allow it to partially intrude on UX of the site. This isn't just about
-the shutdown of the website, but also the Museum puzzle list not listing Puzzle Factory puzzles, because
-from the Museum's perspective the Factory does not exist.
+We did not have an answer for how to time unlock a team past these changes, which were required to
+make site functionality work. A lesser but still important reason is that we had pulled a literal
+all-nighter verifying site behavior assuming the narrow path of a team progressing through the Hunt
+normally, and did not have any time to verify behavior if story state and solve state diverged
+out of that narrow region. Even the relaxation of 4/4 metas to 3/4 metas to unlock Reactivation
+caused Hall of Innovation to stop working, until we fixed it live.
+
+I think the devil's advocate argument is that not all teams care about story, and they would have gladly
+taken discordant UX to see new puzzles.
+But teammate is a team that *does* care about story, to the point that story is occasionally allowed to
+make the user experience of the site worse if it makes the story resonate better.
 
 There was probably a way to make time unlocks work, if we made them self-service, gated them on
-scheduling a team interaction with teammate where we could catch up on story beats teams were skipping, and did the tech
-work required to verify site behavior and allow for skipping certain cutscenes / bottlenecks.
-These are all solvable problems, that are not solvable in the middle of a Hunt that is going too long. I'm sorry
-that wasn't set up beforehand, there were just too many other things to work on.
+scheduling a team interaction with teammate where we could break the fourth wall and describe the story
+beats teams were skipping, and did the tech work required to support skipping required cutscenes and bottlenecks.
+They are all solvable problems that are not solvable when your team's top priority is getting Mystery
+Hunt to finish.
+
+Once again, I am not sure if this will be a challenge for other teams, but I think the only viable solution
+to this is keeping time unlocks in mind from the beginning of the design process. They were not in our tech
+spec, the time unlocking that does exist is only whatever I was able to set up in side project time, and
+this made it hard to retrofit time unlocks later.
 
 
-Difficulty Buckets
--------------------------------------------------------------------------------------------------------
+## Difficulty Buckets
 
 One of the common points of criticism is that the intro round was not really an intro round. Some of the puzzles
 were quite involved and difficult.
 
-I think it is more accurate to say that the Atrium was not designed as an intro round, but it was perceived
-that way. During writing, there were guidance for three difficulty bands: Museum puzzles, Factory puzzles,
+I think it is more accurate to say that the Atrium was not designed as an intro round.
+During writing, there were guidance for three difficulty bands: Museum puzzles, Factory puzzles,
 and AI round puzzles. There was then no further guidance within that, and puzzles were to be ordered afterwards
 by hunt exec. This has never been a problem in past Teammate Hunts, where the intro round was 8-9 puzzles.
+Ordering within the Museum was done over the two days before Hunt ran.
 
-There were 40 puzzles among the Museum rounds. If you don't try to funnel easy puzzles to one round, they'll
-get distributed roughly evenly. This left a trilemma where not all three could be true at once:
+There were 40 puzzles among the Museum rounds, and all rounds had some tricky puzzles in them.
+This left a trilemma where not all three could be true at once:
 
 * Puzzles are mostly ordered by difficulty.
 * A meta for a round is unlocked only after a solid fraction of its feeders are solved.
 * A meta is unlocked early in Hunt.
 
-The puzzle order picked for Hunt chose the last two. If teammate had known how hard Hunt was going to be,
-I think it's likely we would have picked the first and last instead. A number of our metas were not very
-backsolvable or doable from partial information, and I think it would have been safe to unlock those earlier.
-It's still not an ideal solution if a meta unlocks way before you can solve it but it's still psychologically
-more exciting.
+teammate ended up picking the last two, and this created the perception that Atrium was the intro round.
+but if we had known how hard Hunt was going to be, we probably would
+have picked the first and last instead.
+Some of the Museum metas are not very backsolvable or doable from partial information, and I think it would have been safe to unlock those earlier.
+It's still not an ideal solution if a meta unlocks way before you can realistically solve it,
+but it's still psychologically more exciting.
 
-Now, the real fix is to make sure you are not in this trilemma to begin with.
-One of the big conclusions of the internal retrospective was that
-round ordering should have been locked in much earlier so that people could know if their feeder was towards the start or
-end of Hunt. The curve would have been smoother if Atrium was easier for Museum puzzles and Wyrmhole
-was easier for AI round puzzles.
+Now, the real fix is to make sure you are not in this trilemma to begin with. Round ordering should have
+been locked in much earlier, and there should have been more divisions within the Museum / Factory / AI round
+buckets. The curve would have been smoother if Atrium was easier among Museum puzzles and Wyrmhole
+was easier among AI round puzzles. And maybe you just cannot have an intro round of more than 10 puzzles in
+a modern Hunt.
 
 (Just as one final point: although I am framing puzzle ordering as if you should order puzzles from easiest to
-hardest, this is just one of many criteria people can use for puzzle ordering. Variety of currently unlocked puzzles,
-avoiding too many grindy puzzles at once, avoiding too few grindy puzzles in case solvers want a menial
-straightforward task, difficulty walls, and so on are also all important points. These criteria often compete
-with each other, making optimizing all of them hard. I have literally been in 8 hour long meetings for puzzle ordering
-and unlock tuning, and that was for Teammate Hunt 2021, which was 1/4th the size.)
+hardest, this is just one of many criteria people can use for puzzle ordering. Variety of unlocked puzzles,
+avoiding too many grindy puzzles at once, avoiding too many a-ha reliant puzzles at once,
+dodging difficulty walls, and so on are also all important. These criteria often compete
+with each other, making optimizing all of them hard. I have literally been in 8 hour long meetings for ordering
+puzzles in hunts that were 1/4th the size of Mystery Hunt, so I don't place much blame on mistakes made here.)
 
 
-Small Team Objectives
-------------------------------------------------------------------------------------------------------
+## Small Team Objectives
 
-One of the experimental decisions we made all way back at theme proposal time was to have the discovery of the Puzzle
+One of the experimental decisions we made was to have the discovery of the Puzzle
 Factory be the equivalent of solving the 1st meta as a small team objective.
 
-How well this worked is probably directly related to how cool you found the Puzzle Factory and what expectations
+Setting aside difficulty of the opening puzzles, how well
+this worked is probably directly related to how cool you found the Puzzle Factory and what expectations
 you had around Hunt. If you went into Hunt with the goal of solving 1 meta, you may not have been hyped to
 unlock a new round with new puzzles instead of more Atrium puzzles.
 
 We did a lot to funnel teams towards unlocking the Puzzle Factory, including gating the release of the Atrium
-meta behind finding the Puzzle Factory. I believe it is literally impossible to get enough Atrium solves to
-get the meta without solving the loading puzzle, since we wanted teams to find the Puzzle Factory before focusing
-on a meta. The side effect was that the Atrium meta unlocked quite late.
+meta at > 7 solves, since 7 solves was the point the loading animation became infinite. I believe in the original
+hunt unlock spec, it is literally impossible to get enough Atrium solves to unlock the meta without solving
+the loading puzzle, since we wanted teams to explore the site and find the Puzzle Factory before going all-in
+on a meta. I know some teams were not happy about this, I think it just wasn't a raised concern at
+unlock design time. Something like "Atrium meta unlocks at 5/9 solves + loading puzzle solve" probably would
+have worked (and this is effectively what it got changed to mid-hunt after team check-ins).
 
-Story-wise, teammate is trying not to draw attention to the Puzzle Factory, and teams were supposed to feel like
+Story-wise, the in-story version of teammate is trying not to draw attention to the Puzzle Factory. Teams were supposed to feel like
 they were breaking the rules by exploring the Puzzle Factory. I think that created tension with how to make teams
-feel like they had done something important.
-There was a planned story interaction with MATE,
-where MATE would tell off solvers for entering the Factory, but let them explore anyways. I believe it got
-deprioritized, but it probably would have helped on this front.
+feel like they had done something important. The original theme proposal had a story interaction with MATE
+immediately on unlocking the Factory, where MATE would confront solvers but let them explore anyways.
+I think it got dropped among other TODOs, but probably would have helped here.
 
-I suspect future teams will not have this problem, because they will just make solving the 1st meta the objective
-for new teams.
+I suspect future teams will not have this problem, because they will just make solving the 1st meta the
+early objective for small teams.
+
+## Leadership Positions
+
+Although we had accessibility checks throughout our Hunt writing process, we didn't have an accessibility lead,
+and this was declared a mistake in retrospect. We cared about accessibility but it was something that
+people had to advocate for individually, and the benefit of having an accessibility lead is that it empowers
+someone to make a fuss.
+
+Our positions we wish we had in retrospect: a program manager to handle prioritizing tech issues, and
+a small / new teams advocate. We had someone unofficially argue for new teams during Hunt and I think it
+was helpful. As for a PM, maybe other teams will not need this if they do less tech than we did.
 
 
+# Unordered Advice
 
-Advice for Future Writers
--------------------------------------------------------------------------------------------------
+Here are some smaller points that I feel less need to elaborate on, which I think are still important. This is
+not good prose, but, whatever.
 
-I mean...
-
-In some sense, this entire post is advice for future writers. In some sense, I got too lazy to distill it down
-into actionable advice, and decided to just put my thoughts on everything and let people draw their own conclusions.
-I'll add some more things that I don't think were covered earlier though.
-
+* Hunt writing is very much a marathon. Make sure you are not burning out too early.
 * Pay attention to the processes you're creating. Hunt is big enough that there are pretty significant benefits
 to improving them early.
-* Hunt writing is very much a marathon. Make sure you are not burning out too early.
-* Disasters will happen, this is just what it is like to work on a big project. Usually they are fixable.
+* Disasters will happen, this is just what it is like to work on a big project. I would stay positive about them,
+usually they are fixable.
 * You will not always get your way, this is also just what happens in big projects. Try to deal with it.
-* Absolutely do not feel obligated to do as much tech and art as teammate did in this Hunt. We went all-out
-on both because we have a lot of artists, a lot of software developers, and pretty recent experience for both.
-Out of Mystery Hunts in the past 5 years, Galactic's and teammate's are easily the most tech-heavy. It is not a coincidence
-that both Hunts were written by teams that had recently ran puzzlehunts with many interactive puzzles. I do not
-think our Hunt site would have been possible if the tech team had not written puzzlehunt code in the same
-codebase for two years prior.
-* Make sure you have at least one round of easy puzzles!
-* Mystery Hunt got a *lot* more popular during the pandemic. It's shrunk a bit, but not a lot. For reference:
-the 2020 Hunt had 150 teams and the 2023 Hunt had 300 teams. The load for answering hints, emails, etc.
-scales with the number of teams. Make extra sure your flows there are seamless.
-* Mystery Hunt is also becoming more multicultural. There are a larger number of foreign teams where English
-is their second language. Maybe this is PTSD from hinting non-native speakers through Inscription, but
-consider having your intro puzzles not depend on fluency with English language or US culture. Otherwise something
-like this might happen.
-
-![Hints](/public/mh-2023/hints.png)
-{: .centered }
-* Although we had accessibility checks throughout our Hunt writing process, we didn't have an accessibility lead
-and we think this was a mistake in retrospect. The benefit of having an accessibility lead is that it empowers
-someone to make a fuss about accessibility issues. Consider if you want to have advocates for other groups as well.
-During Hunt we had someone unofficially start advocating for small teams while huntcomm was making
-decisions that would only affect top teams, and I think it was good that happened.
-* Read all the post-Hunt posts you can to see how people react to Hunt, then don't take them too seriously.
-The class of Mystery Hunt writers is usually biased towards top teams and doesn't reflect everyone.
-
-
-My Future of Puzzle Writing
-------------------------------------------------------------------------------
-
-I do not have any burning puzzle ideas left to write, but I told myself this at
-the start of Mystery Hunt. I said I did not expect Mystery Hunt to encourage me to work harder on puzzles, and
-then it did. I have, very continuously throughout the year, asked myself if
-this was all worth it, and the answer was not clearly yes.
-Still, if you offered me $1000 to never write another puzzle, I wouldn't take the money.
-
-So, uh, ask me later? I care about puzzles
-a lot. I wouldn't have written for Hunt if I did not care. That continues to be true. Puzzles are cool.
-I'm just tired and want to do other things in my free time. Maybe I will write again, but right now
-I want a hobby, not a job. We climbed the mountain, and came back down.
-
-
-Cut Paragraphs
-----------------------------------------------------------------------
-
-If that's why people solve puzzles, why do people write puzzles? Well, some
-people do so because they've had fun solving puzzles, and want to try something new.
-I'd say that's why I first started.
-solving puzzles, and want to try doing so. I'd say this is how I first got started.
-Another reason is that you want to make a puzzle about one of your other niche
-interests or hobbies, since puzzle solving lends itself well to pushing people to
-research a topic in lots of detail. That's how I restarted writing puzzles.
-
-In the long run though, I find I get the most motivation from figuring out how to
-create an interesing solve path, and making the puzzle rhyme with itself as much as
-possible. Designing a puzzle is itself a puzzle, where
-you're trying to figure out what steps are interesting and guess what wrong turns
-a solver could make. In doing so, you're naturally constrained in what information
-you can give, because every bit of extra information is something that might point
-in a *different* direction than the idea you want the puzzle to express. It's
-challenging, but it can be very rewarding to find a way to solve design problems
-within the constraints you've created for yourself.
-
-On some puzzles I've made, I'd be satisfied
-if just 1 person had fun solving it end-to-end, understanding its design to the same
-level of depth that I did at construction time. I'd say this is my answer to
-[why people spend so much time creating such ephemeral experiences](https://mitadmissions.org/blogs/entry/two-hundred-puzzles-4/#fading-together).
-I get a lot of self-satisfication even before the puzzle goes live. Blogging is
-similar for me. There are things I get out of the writing experience that I'd
-still get if no one read my blog.
-
-And, in the same way as blogging, I still want to share my puzzles, because as much
-as I get from doing it for myself, there are things I get from broadcasting that
-I don't get anywhere else.
-
-Solver Constructor Tension
--------------------------------------------------------------------------------------
-
-There is a core tension between puzzle solver and puzzle constructor. Puzzlehunts
-are at their best when their solutions are not obvious.
-The solutions *have* to be indirect. You want to leave enough space for the solvers
-to work with the puzzle and discover the answer for themselves. If you don't give
-that mental room, and railroad solvers from start to finish, then it's still an
-object with an answer, but it's not a puzzle anymore. It's more following directions.
-
-Or, put another way: if it's impossible to get completely lost, then it's not a puzzle.
-
-> The key to making a detective game fun to puzzle out is that you have to give the player as many opportunities as possible to be wrong. If you steer them through finding the clues and give away the answer anyway then they can never be wrong. If you give them three dialog options to pick from then it’s pretty easily brute forced. Meanwhile, [Return of the Obra Dinn] has you fill in multiple blanks that all have multiple possible entries, and there could be hundreds if not thousands of wrong combinations. And you can’t brute force that, your only recourse is to actually be smart enough to figure it out.
-
-([Yahtzee Croshaw, "Great Detective Games Let You Fail Miserable"](https://www.escapistmagazine.com/great-detective-games-let-you-fail-miserably-extra-punctuation/))
-(: .centered }
-
-(Side note: Return of the Obra Dinn is excellent, even if you aren't "a video game person",
-definitely recommend.)
-
-This, though, is where you have the tension. If it's possible to get completely lost in
-a puzzle, not everyone is going to get the full experience.
-
-but if it's possible to get completely lost, not everyone is going to get the full
-experience.
-
-Take the duck konundrum. It's literally a series of directions. They're hit-or-miss
-as a puzzle type, but when they hit, it is usually because following the directions is
-hard for some reason. What if we misread a line?
-What if we have to start over? That tension is the chance for failure that makes a
-puzzle a puzzle.
-
-(does the section above even fit here)
-
-Aphorisms About Writing MIT Mystery Hunt
----------------------------------------------------------------------
-
-Although there are a lot of stories about Hunt, the main one is about its difficulty.
-
-I don't want the difficulty of Hunt to overshadow everything else, but I'd be lying if I tried
-to downplay the way it affected the solve experience. There is no one reason that Hunt went long. Like
-most engineering postmortems, it's more like there were many small things that accumulated, which either
-went unnoticed or were noticed at a point where it was too late to change.
-
-Perhaps the easiest way to tell that story, is to present my theory on what it's like to write Mystery Hunt,
-and we'll see how it played out.
-
-**Writing Mystery Hunt is fundamentally a game where you run out of time.** It seems like every Mystery Hunt,
-without fail, has lots of work happen in the week leading up to Hunt. That's not because every construction
-team sucks at time management. It's because the amount of work that *could* be put into a Mystery Hunt is
-essentially unbounded. You could always try to get more testsolve of a puzzle to get more data about
-sticking points, or replace a puzzle that has low fun ratings, or address a website bug, clean up an art
-asset. But you get one year to write Hunt. You don't have time to make things perfect, you have to ship.
-Move fast, and try not to break things. A team has to choose where it will not fully resolve things for
-the sake of getting other things done.
-
-**Decisions you make early can have big repurcussions later.** One example is theme selection, which is
-always done first but influences basically the entire year afterwards. The more notable example is the
-puzzles themselves. The writing order is metametas -> metas -> feeders, and
-they have to be done serially. Each metameta or set of metas is written simultaneously, so you're
-picking how many puzzles the Hunt will have long before they exist. It's not impossible to adjust puzzle counts
-later, but it's usually pretty hard to, especially if you're considering cutting a round with a meta
-that someone worked hard on.
-
-**Team member availability will always shift.** Some people will spend less time than they expected, some
-will spend more, and in general, there are always people who will have to drop out for good reasons.
-Everyone starts excited and motivated at the start of Hunt, when you are scoping things, but by the middle
-some people will have checked out.
-
-Hunt writing tends to follow a long tail distribution, where a few people will do a lot of the work
-and a lot of people will do a bit of work. This is very consistent every year. Below are some plots of
-"hunt contribution", as measured by puzzles written. I know that there are many ways people
-work on Mystery Hunt besides writing puzzles, but puzzles are the easiest things to track.
+* Puzzle writing seems to be yet another thing that follows [Zipf's law](https://en.wikipedia.org/wiki/Zipf%27s_law),
+with lots of work on a few people and more work on the long tail. Let me just put in the
+team contribution graphs again, they explain it better than I could.
 
 <table>
     <tr>
@@ -5016,38 +4889,120 @@ work on Mystery Hunt besides writing puzzles, but puzzles are the easiest things
     </tr>
 </table>
 
-Hunt writing tends to follow a [Zipfian distribution](https://en.wikipedia.org/wiki/Zipf%27s_law).
-A small number of people will write many puzzles (or do a lot of leadership work), and a long tail
-of people will write a small number of puzzles each. Usually, that long tail is where all the
-new puzzle writers are. Put yourself in novice puzzle writer shoes. Do you want to write a puzzle
-where whitespace and capitalization matters, a puzzle that must be closely tied to a language, or a normal
-puzzle? Unless you're really excited about an idea for the gimmick, you'd probably prefer a normal
-puzzle answer. If you didn't get in on the two rounds that had feeders released, then you had to
-wait.
+  Remember to structure things such that the long tail of one-off contributors have something they can do.
+  You are going to want all the help you can get.
+* Hunts empirically need around 60 writers. If you're a team thinking of trying to win Hunt, and
+  are smaller than 60 people...then, well, you should have an idea of who you'll try to recruit.
+* Absolutely do not feel obligated to do as much tech and art as teammate did in this Hunt. We went all-out
+on both because teammate has a lot of artists and a lot of software developers, as well as recent experience
+with running complex hunt websites. Out of recent Mystery Hunts, Galactic's and teammate's are easily the most tech-heavy.
+It is not a coincidence
+that both Hunts were written by teams that ran yearly puzzlehunts with a reputation for interactive puzzles.
+I do not
+think our Hunt site would have been possible if the tech team had not written puzzlehunt code in the same
+codebase for two straight years.
+* Mystery Hunt got a *lot* more popular during the pandemic. For reference:
+the 2020 Hunt had 150 teams and the 2023 Hunt had 300 teams. Keep an eye on things that scale with number
+of teams (hints, answering emails, scavenger hunt judging). Make sure your flows there are seamless.
+I would be shocked if answer call-ins came back, no team is equipped to handle 2x the phone call volume.
+* Mystery Hunt is also becoming more multicultural. There are a larger number of foreign teams where English
+is their second language. Maybe this is PTSD from hinting non-native speakers through Inscription, but
+consider having your intro puzzles not depend on fluency with English language or US culture. Otherwise something
+like this might happen.
 
-This isn't quite as bad as I'm making it out to be.
-There's useful work that can be done without knowing the puzzle feeder. In general though, if you
-have a feeder from the start, you'll do less redundant work, it's easier to stay motivated if you're
-expected to pull through on a puzzle, and you can brainstorm ideas from the puzzle answer rather
-than trying to generate one from the ether.
+![Hints](/public/mh-2023/hints.png)
+{: .centered }
+* Read all the post-Hunt posts you can to see how people react to Hunt, then don't take them too seriously.
+The class of Mystery Hunt writers is usually biased towards top teams and doesn't reflect everyone.
 
-and we also should have adjusted
-the difficulty estimates of future puzzles.
+# So...Why Do People Write Puzzles?
 
-We did not have the time to rewrite existing puzzles
-to be easier, because the end goal is creating 150 units of "fun". In general, creating
-fun is harder than creating difficulty. So the more correct decision would have been to bias
-new puzzles (units of fun) to be easier, to make the average go down over time.
+Look, man, I don't know. It's a thing to do? This was touched on a bit in [CJ's post](https://mitadmissions.org/blogs/entry/two-hundred-puzzles-4/)
+about Mystery Hunt. That post argues that puzzlehunts are a passion projects made by fans. New
+hunts come from fans wanting to pay back towards the fun they've had before.
 
+I think this is partly true but missing some of the reasons that I personally write puzzles.
+Most of the reason I got back into puzzle writing was because I wanted to marry
+two [niche interests together](https://www.puzzlesaremagic.com/).
 
+In the long run though, I get the most motivation from the higher-level process of figuring
+out how to create an interesting solve path, and making a puzzle rhyme with itself
+as much as possible.
+Designing a puzzle is itself a puzzle, where
+you're trying to figure out what steps are interesting and guess what wrong turns
+a solver could make. It is a very direct exercise in identifying the first place a testsolve
+started going wrong, and finding what to do about it. It is a game where you are
+very limited in what information you can give, because the nature of puzzles is that
+every bit of extra information can be misleading.
+It's an artificial challenge, often made in a constraint prison of your own creation.
 
-DALL-E and other image generation models were quite hot at the time and we used them accordingly. Although
-a surprisingly large fraction of teammate works in machine learning or related fields, the choice to
-have an AI-themed puzzlehunt in the year generative models became commercially viable was entirely
-coincidental.
+It's fun to participate in that challenge, but the trade-off is that it's a pretty poor
+way of relating to people. The difficulty of design is hard to explain to people who
+did not live it. The core tension between puzzle solver and puzzle constructor is
+that puzzle solutions are not obvious. They *must* be indirect.
+You must leave enough space for solvers to work with the puzzle and discover the answer for themselves,
+since that is what puzzlers live for, but that always opens the possibility for failure.
 
-(If every team is limited to one open hint at a time, shouldn't the number of total open
-hints not increase by much? Well, yes, that's true. But it will increase by a bit, since not
-all teams continually keep one hint open. More importantly, new puzzles take longer to hint
-than old ones, since you need to relearn how to hint those puzzles. Every time N was shifted,
-there was sudden shock in the hint system, until the puzzle had been hinted a few times.)
+> The key to making a detective game fun to puzzle out is that you have to give the player as many opportunities as possible to be wrong. If you steer them through finding the clues and give away the answer anyway then they can never be wrong. If you give them three dialog options to pick from then it’s pretty easily brute forced. Meanwhile, [Return of the Obra Dinn] has you fill in multiple blanks that all have multiple possible entries, and there could be hundreds if not thousands of wrong combinations. And you can’t brute force that, your only recourse is to actually be smart enough to figure it out.
+
+(["Great Detective Games Let You Fail Miserably"](https://www.escapistmagazine.com/great-detective-games-let-you-fail-miserably-extra-punctuation/). Also, play Return of the Obra Dinn, game's great.)
+(: .centered }
+
+If it's impossible to get completely lost, then it's not a puzzle. If you get
+completely lost, you will probably not appreciate the puzzle. That's how it goes.
+On some puzzles I've written, I'd be satisfied if just 1 person had fun
+solving it end-to-end. There are things I get out of the puzzle construction
+experience that do not require the puzzle to be solved, in the same way I get
+things out of the writing experience that do not require people to read it.
+I'd say this is my answer to
+[why people spend so much time creating such ephemeral experiences](https://mitadmissions.org/blogs/entry/two-hundred-puzzles-4/#fading-together).
+
+And, in the same way as blogging, I would be lying if I said that was the only
+thing that mattered, because as much as I get from doing it for myself, there
+are things I get from broadcasting things as well.
+
+# AIs and Puzzles
+
+teammate has an unusually large number of people who work in machine learning,
+but I don't think this had any role in our decision to write a hunt about AIs.
+The rise of image-generating diffusion models and ChatGPT was convenient for making our hunt
+feel topical, but I did hear it caused late revisions on how to present the
+hunt's story in a time where automated creativity is a hot button issue.
+
+We tried using ML models to solve cryptics or write puzzles, and found they
+were quite bad. In general, people's intuitions about what ML
+models can do is incredibly bad. Much like 5D Chess, people really like
+to assume AI works according to their own conceptions of what it ought
+to work like, rather than the reality of what it is. Unlike 5D Chess,
+people are fascinated with AI and love to talk about it.
+
+Although models are pretty bad at solving puzzles right now, I can easily see
+them getting better. The main issue with GPT-3.5 was that it was really bad
+at mixing semantics and syntax, a key duality needed for puzzle solving. GPT-4
+is a lot better at this.
+
+Look, I'm not sure where this goes. I don't want to be depressing, but my
+expectation is that at some point we will have ML models that are good enough
+to solve puzzles, and not good enough to generate interesting puzzles, and
+we'll have to decide how to adjust the current status quo where all computer
+tools are fair game. But even then, MIT Mystery Hunt will continue. It is too
+resilient to break from something like that.
+
+# The Start of the Rest of My Life
+
+I do not have any burning puzzle ideas left to write, but I told myself this in
+January 2022.
+In the "do we want to win Hunt" survey, I said I did not expect Mystery Hunt to encourage me to work harder on puzzles, and
+then it did. I have, very continuously throughout the year, asked myself if
+this was all worth it. The answer was not clearly yes.
+
+Still, to flip the question on its head, if you asked me what deal I would have
+to take to agree to never write puzzles again, I'm not sure what it would be.
+Right now, if you offered me a thousand bucks, I would immediately say no.
+
+So, will you see me again in a hunt's author list? Uh, not sure. Ask me later.
+I care about puzzles
+a lot. I wouldn't have written for Hunt if I did not care. That continues to be true. Puzzles are cool.
+I'm just tired and want to do other things in my free time. I want a hobby, not a job.
+We climbed the mountain, and came back down. Now there is just the plain of
+possibility.
