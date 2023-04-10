@@ -28,8 +28,8 @@ not obvious and fairly indirect, but there is a guiding contract between the puz
 setter and puzzle solver that the puzzle is solvable and its solution will be
 satisfying. At the end of the puzzle, you'll end with an English word or phrase, but that
 is more to give a puzzle its conclusion. People do not solve puzzles to declare "The
-answer is THE WOLF'S HOUR!". They solve puzzles because figuring out what's going on
-is fun, and when you find the explanation (get the a-ha), that's when you're having fun.
+answer is THE WOLF'S HOUR!". They solve puzzles because figuring out why the answer
+is THE WOLF'S HOUR is fun, and when you find the explanation (get the a-ha), you feel good.
 
 As a hobby, puzzlehunting is really biased towards professors and programmers.
 Research and debugging share a similar root of trying to explain the behavior
@@ -3584,7 +3584,7 @@ enough spare cars that it wasn't a big deal for our logistics.
 
 ## Wyrm Art, Again
 
-![Wyrmhole Final](/pubilc/mh-2023/wyrmhole_final.png)
+![Wyrmhole Final](/public/mh-2023/wyrmhole_final.png)
 {: .centered }
 
 Ivan had figured out how to make the Wyrm round page scale with screen size, but there were a few
@@ -4628,7 +4628,7 @@ What actionable advice would I give about this?
 incredibly noisy, take them seriously, because they're all you've got.
 2. If puzzle difficulty is either trending too easy or too hard, raise
 a warning early. The goal in a Hunt is to create 150+ units of fun (puzzles).
-Creating fun is harder than creating difficulty, but revising difficulty
+Creating fun is harder than creating difficulty, and revising difficulty
 can be hard once you've made something fun. You will have better odds of
 success if you keep old puzzles as-is and update length requirements for
 new puzzles.
