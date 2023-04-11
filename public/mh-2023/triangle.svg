@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="210mm"
-   viewBox="0 0 210 210"
+   width="119.88984mm"
+   height="125.64581mm"
+   viewBox="0 0 119.88984 125.64581"
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="clue1.svg"
+   sodipodi:docname="triangle.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,20 +24,25 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.74118967"
-     inkscape:cx="397.33419"
-     inkscape:cy="346.06527"
+     inkscape:cx="288.05043"
+     inkscape:cy="250.27332"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <defs
      id="defs2" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-29.064623,-25.465132)">
     <circle
        id="path184"
        style="fill:#000000;stroke:#000000;stroke-width:0.264583"
