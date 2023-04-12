@@ -4,7 +4,7 @@ title: Puzzles
 permalink: /puzzles/
 ---
 
-*Last updated January 22, 2022.*
+*Last updated April 11, 2023.*
 
 One of my main hobbies is puzzlehunts. They're a little hard to describe,
 but generally, a puzzlehunt puzzle is some data that usually
@@ -30,6 +30,30 @@ Here are some Mystery Hunt related things I've written:
 I've also written some puzzles.
 My more recent puzzles are better than my old ones, but I'm including everything for
 completeness.
+
+# 2023
+
+* Mystery Hunt 2023
+    * Museum Rules, with Catherine Wu and Harrison Ho
+    * Loading Puzzle, with Catherine Wu, Ivan Wang, and Jacqui Fashimpaur
+    * Collage, with Brian Shimanuki and Jacqui Fashimpaur
+    * Interpretive Art, with Ivan Wang
+    * Conglomerate, with Katie "chuttiekang" Chung and Nishant Pappireddi
+    * Weaver, with Brian Shimanuki, Tracey Lin, Edgar Chen, Harrison Ho, Nathan Wong, Nishant Pappireddi, Mona Wang, Moor Xu, and Sylvia Jin
+    * Broken Wheel, with Brian Shimanuki, Nishant Pappireddi, Rahul Sridhar, and Tracey Lin
+    * Lost to Time, with Bryan Lee, Edgar Chen, and Nishant Pappireddi
+    * Quandle
+    * The Filing Cabinet, with Asher Walkover, Jacqui Fashimpaur, and Patrick Xia
+    * Reactivation, with Bryan Lee, Catherine Wu, Harrison Ho, Jacqui Fashimpaur, Liam Thomas, Olga Vinogradova, and Patrick Xia
+    * The Legend, with Brian Shimanuki, Patrick Xia, Jacqui Fashimpaur, Jordan Bunker, Lindsay Oliver, Mona Wang, Moor Xu, and Sylvia Jin
+    * The Scheme, with Brian Shimanuki and Olga Vinogradova
+    * We Made a Quiz Bowl Packet but Somewhere Things Went Horribly Wrong, with Alex Gotsis, Catherine Wu, Nishant Pappireddi, and Patrick Xia
+    * Lost at Sea, with Brian Shimanuki and Nishant Pappireddi
+    * Bedtime Stories / Castle Grounds / Easy as Pie / Fire Starter / Follow Me / Robber Baron, with Brian Shimanuki and Jacqui Fashimpaur
+    * Period of Wyrm, with Brian Shimanuki, Jacqui Fashimpaur, and Olga Vinogradova
+    * 5D Barred Diagramless with Multiverse Time Travel, with Holly Sipek and Evan Chen
+    * Walking Tour, with Brian Shimanuki, Bryan Lee, Edgar Chen, Moor Xu, Nishant Pappireddi, Taichi Akiyama, and Tracey Lin
+    * Win a Game of Bingo, with Justin Yokota
 
 # 2021
 

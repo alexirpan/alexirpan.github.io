@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-*Last updated April 11, 2022.*
+*Last updated April 11, 2023.*
 
 My current main research interest is deep reinforcement learning, with a bias towards its applications to robotics. Within that, I care about reducing real-world data needed for robot learning, improving reliability of RL systems, and thinking about problems that arise when applying reinforcement learning to real-world settings.
 
@@ -20,11 +20,19 @@ Papers:
 
 <p></p>
 
+### RT-1: Robotics Transformer for Real-World Control at Scale
+
+*Anthony Brohan, Noah Brown, Justice Carbajal, Yevgen Chebotar, Joseph Dabis, Chelsea Finn, Keerthana Gopalakrishnan, Karol Hausman, Alex Herzog, Jasmine Hsu, Julian Ibarz, Brian Ichter, Alex Irpan, Tomas Jackson, Sally Jesmonth, Nikhil J Joshi, Ryan Julian, Dmitry Kalashnikov, Yuheng Kuang, Isabel Leal, Kuang-Huei Lee, Sergey Levine, Yao Lu, Utsav Malla, Deeksha Manjunath, Igor Mordatch, Ofir Nachum, Carolina Parada, Jodilyn Peralta, Emily Perez, Karl Pertsch, Jornell Quiambao, Kanishka Rao, Michael Ryoo, Grecia Salazar, Pannag Sanketi, Kevin Sayed, Jaspiar Singh, Sumedh Sontakke, Austin Stone, Clayton Tan, Huong Tran, Vincent Vanhoucke, Steve Vega, Quan Vuong, Fei Xia, Ted Xiao, Peng Xu, Sichun Xu, Tianhe Yu, Brianna Zitkovich*
+
+Paper: [here](https://arxiv.org/abs/2212.06817)
+
 ### Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
 
 *Michael Ahn, Anthony Brohan, Noah Brown, Yevgen Chebotar, Omar Cortes, Byron David, Chelsea Finn, Keerthana Gopalakrishnan, Karol Hausman, Alex Herzog, Daniel Ho, Jasmine Hsu, Julian Ibarz, Brian Ichter, Alex Irpan, Eric Jang, Rosario Jauregui Ruano, Kyle Jeffrey, Sally Jesmonth, Nikhil J Joshi, Ryan Julian, Dmitry Kalashnikov, Yuheng Kuang, Kuang-Huei Lee, Sergey Levine, Yao Lu, Linda Luu, Carolina Parada, Peter Pastor, Jornell Quiambao, Kanishka Rao, Jarek Rettinghouse, Diego Reyes, Pierre Sermanet, Nicolas Sievers, Clayton Tan, Alexander Toshev, Vincent Vanhoucke, Fei Xia, Ted Xiao, Peng Xu, Sichun Xu, Mengyuan Yan*
 
 Paper: [here](https://arxiv.org/abs/2204.01691)
+
+*CoRL 2022, Special Innovation Award*
 
 ### BC-Z: Zero-Shot Task Generalization with Robotic Imitation Learning
 
