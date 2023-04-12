@@ -4648,7 +4648,7 @@ of how it builds on itself.
 I think it is reasonable to assume that every team has the same number of
 puzzlemaking hours per Mystery Hunt year. Out of curiosity, I looked up
 author data from 2018 to 2023, and plotted each author's writing contribution
-to that Hunt.
+to that Hunt. Authors are ordered from most prolific to least.
 
 <table>
     <tr>
