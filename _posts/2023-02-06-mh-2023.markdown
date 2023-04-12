@@ -3063,7 +3063,7 @@ standalone copy to be hosted in the Mystery Hunt archive. One of the two.
 In the actual Hunt, teams got more stuck on the last step than I expected. I have the stats on time
 between winning seed and solve - they are all longer than the 2-4 minutes I wanted it to be.
 We just never observed teams getting stuck on this step in testsolving, probably
-because a lot of teammate knows about Mystery Hunt Bingo, and I do wish the
+because a lot of teammate knows about Mystery Hunt Bingo. I do wish the
 game win message was more direct about what to do.
 </div>
 
@@ -3078,18 +3078,18 @@ They say all good stories end where they began. Weaver was one of the first
 feeder puzzles I helped brainstorm, and now it was one of the last I'd help make.
 
 "Make" is a very literal word here. I did very little of the puzzle *construction*.
-That was mostly done by Brian, and my role was more about internal testing
+That was done by Brian, and my role was more about internal testing
 of weaving patterns on paper.
 
-Meanwhile, Brian had done some experimentation with hydrochromic ink on different materials.
-Much earlier, we had read an Amazon review saying the ink was a bit chalky,
-and you needed to spread a lot of it to cover up the text it was hiding. However,
-since the paint dried white, you needed much less paint to hide white text.
+Through experimentation with the hydrochromic ink, Brian confirmed that the ink felt
+chalky, and you needed to spread a lot to make the coat of paint cover up text.
+However, you did not need as much to hide white text, since the hydrochormic ink dried
+white too.
 
 The final version was wooden reeds of a tan color, covered with a coat of hydrochromic
 ink, then regular white paint on top, and regular black paint on top of that. The result
-very clearly felt painted, but since the entire strip was painted it wasn't seem
-too suspicious. The background layer of white would disappear when wet, leaving
+very clearly felt painted, but since the entire strip was painted it wouldn't be too suspicious.
+The background layer of white would disappear when wet, leaving
 the regular white letters visible.
 We assumed teams would not wet the reeds wet until instructed to, because if the paint
 washed away, they would be in trouble.
@@ -3097,7 +3097,8 @@ washed away, they would be in trouble.
 When they sent hints asking if they made a mistake, figuring out what to tell them
 was pretty tricky.)
 
-The October retreat was tested with wooden reeds painted by hand. This left figuring out
+The October retreat was tested with wooden reeds painted by hand and solved the puzzle.
+This left figuring out
 how to mass produce 80 copies for the live Hunt. Logistics people were looped in very
 early, and they were not able to find a company who understood and could handle all
 our constraints. That wasn't too surprising, but meant we'd need to do it ourselves.
@@ -3118,11 +3119,11 @@ pushed production back a few weeks. I'd ask "who steals a bunch of wood from a m
 we were evidence that wood was in high demand. Maybe it's easier to resell wood on the black market.
 (This is why people read my blog, for the riveting package stealing commentary.)
 
-Once the first stencils were made, we tried making a proof-of-concept.
+Once the first stencils were made, we did a test run.
 This trial showed that spray paint would dry and gum up the stencil holes really quickly.
 We'd either need to wash the stencil regularly to keep the holes clear, or do something else.
 If we had to wash the stencil repeatedly, it could not be made out of wood. Acrylic stencils
-were considered, but another teammate offered trying their airbrush instead. This did not
+were considered, but another teammate offered their airbrush instead. This did not
 have the same problem that spray paint did.
 
 Most of us were off for holidays after Christmas, and those of us still in the Bay Area met up
@@ -3144,14 +3145,12 @@ The reference length was the size of the frame, plus a bit extra to give lenienc
 
 2\. The cut reeds would be painted with a coat of hydrochromic ink by hand. We did this by hand because it
 did not need to be precise, but we did need to save ink.
-The hydrochromic ink was manufactured in Europe, and we would not be able to ship another container of hydrochromic ink before Mystery Hunt. The ink we had was the only ink we'd get, and it needed to stretch until
+The hydrochromic ink was manufactured in Europe and out of stock. We would not be able to ship another container of hydrochromic ink before Mystery Hunt. The ink we had was the only ink we'd get, and it needed to stretch until
 80 copies were made.
 
 ![Reed painting](/public/mh-2023/weaver2_0.jpg)
 {: .centered }
 ![Reed painting](/public/mh-2023/weaver2_1.jpg)
-{: .centered }
-![Reed painting](/public/mh-2023/weaver2_2.jpg)
 {: .centered }
 
 3\. The loose painted reeds were placed inside an "oven". This was a portable heater directed towards a cardboard tunnel, to dry the paint faster.
@@ -3184,7 +3183,7 @@ One person manned
 the airbrush, and a second person kept track of which stencil to use, did a final factcheck the letters
 were correct, and bagged the reeds into individual puzzles.
 
-The airbrush was the bottlenecking step, and it took 8 people manning the pipeline to saturate the
+The airbrush was the bottleneck, and it took 8 people manning the pipeline to saturate the
 airbrush. 4 painters, 1 framer, 1 airbrusher, 1 airbrush support / quality controller, and
 1 cutter / painter. We ended up working 12-hour shifts both days to finish the puzzle, creating
 83 sets. This gives a very rough estimate of 2.5 man-hours per puzzle.
@@ -3196,19 +3195,20 @@ leave the oven in-frame.
 ![Watching paint dry](/public/mh-2023/paintdry.png)
 {: .centered }
 
-I don't think many teams made it all the way through the puzzle without relying on the virtual version, which
+Not many teams made it all the way through the puzzle without relying on the virtual version, which
 was unfortunate. The mass produced version was less readable than the paint-by-hand version. My guess is
-that some paint was lost by friction in the flight to Boston, and more was lost during weaving, so a
+that our coats of paint were lighter, some paint was lost by friction in the flight to Boston, and more was lost during weaving, so a
 bunch of teams lost too much paint by the end to do the last step.
 Hopefully the intermediate a-ha was exciting enough
-to make up for the deficits of material science. If a team asked for the answer after putting the weave
-underwater and putting effort into the last step, we just gave it them.
+to make up for the deficits of material science. If a team asked for the answer after placing the weave
+underwater and putting effort into the last step, we just gave it to them, but this policy wasn't
+advertised too well and probably should have been announced more.
 </div>
 
 ## Email is Awful
 
-We were trying to anticipate the tools that we would want
-to have on Hunt weekend, since we wouldn't have time to make them during Hunt itself. One of these
+We continued trying to anticipate the tools that we would want
+to have on Hunt weekend. One of these
 tools was email. The tph-site codebase had an email flow, spoilr had another email flow, and
 they had been *sort of* but not really merged. I did some plumbing work to connect them together,
 and fixed some longstanding bugs in our interactions flow along the way.
@@ -3872,7 +3872,23 @@ we'd advertised on the website. I'm guessing these phones date to when answers w
 you throw away perfectly good phones? That being said, we didn't expect to ever need to answer it.
 
 Remember me mentioning we were seated in two different rooms? This meant tech was half-split
-between rooms, huntcomm was half-split, and so on. Which makes things extra spicy when teammates
+between rooms, huntcomm was half-split, and so on. Which makes things extra spicy when we got
+reports that the Puzzle Factory was leaking.
+
+Many Hunt websites have an API endpoint that retrieves the list of all puzzles in JSON. We deliberately
+set up a non-user facing endpoint for this, to help any teams with coordination tools like
+[Jolly Roger](https://github.com/deathandmayhem/jolly-roger), [Galackboard](https://github.com/Galactic-Infrastructure/galackboard), or [Checkmate](https://github.com/bshimanuki/checkmate).
+Internally, all teams start with Factory puzzle unlocked, but they are not linked and not
+accessible until the team solves the Loading Puzzle. In all of our speedruns,
+we had checked user-facing site pages to verify we did not show those puzzles. We had neglected
+o make the puzzle API return only Museum puzzles, and a few teams sent emails asking if they were supposed to see
+puzzlefactory.place links.
+
+Nope! Nope nope nope. Nooooooope. We merge in a hotfix right away and thank teams for finding this.
+Luckily, knowing the URL does not let you access Factory puzzles early, it just spoils the title.
+
+Things are fine for around the next hour, until
+teammates
 start reporting they're having trouble loading the site. We start with triaging whether this is
 an admin-only issue or a site-wide issue. It's starting to look like a site wide issue.
 Then the phone started ringing.
@@ -3910,7 +3926,7 @@ while our number of Websocket connections is way over.
 
 We discuss a bit, and given that our CPU load is only hovering around 30%, we believe the site will be fine if we
 multiply all our Websocket handling numbers by a ton. If that causes use to run out of CPUs, we'll
-handle that later. The "hour one" fixes were bundled with these config updates, and once deployed,
+handle that later. Once deployed,
 the site comes back up and stays up. The CPU usage also looks fine. Phew, crisis resolved.
 (I just want to briefly point out that if we had not load tested as much, we would not have fixed
 the email self-DDoS loop we had, and things could have been a lot worse.)
