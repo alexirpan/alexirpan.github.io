@@ -4,7 +4,7 @@ title:  "Writing MIT Mystery Hunt 2023"
 date:   2023-02-06 00:32:00 -0700
 ---
 
-*This post is about 53,000 words long, and is riddled with spoilers for pretty much every aspect of MIT Mystery Hunt 2023. There are no spoiler bars. You have been warned. Please pace yourselves accordingly.*
+*This post is about 55,000 words long, and is riddled with spoilers for pretty much every aspect of MIT Mystery Hunt 2023. There are no spoiler bars. You have been warned. Please pace yourselves accordingly.*
 
 I feel like every puzzle aficionado goes through at least one conversation where they try
 to explain what puzzlehunts are, and why they're fun, and this conversation goes poorly.
