@@ -4177,11 +4177,12 @@ doing a ton of copy-pasting of the old logic. I did not want to touch any of the
 logic if I could. I decided to call them "strong rewards", because they were more powerful,
 and the name stuck because making a better one was the least of our worries.
 There were no plans to release strong rewards outside of the scavenger
-hunt yet, but I decided to implement the functionality for doing so now in case that changed later.
+hunt yet, but I decided to implement the functionality for doing so now, in case it was needed
+later.
 
 Our goal for all these changes was to get them into the site before any team unlocked the
 the scavenger hunt.
-The Reactivation and strong rewards changes made it in with around 30 minutes so spare.
+The Reactivation changes and strong rewards made it in with around 30 minutes to spare.
 
 Speaking of Reactivation, people were rightfully very excited to go do the first Reactivation
 interaction. When completed, teams would chat with MATE,
@@ -4379,7 +4380,7 @@ you can look [here](/public/mh-2023/wyrmhole-loop-fast.gif).
 # Monday of Hunt
 
 Multiple teams have finished the clickaround. We've sent an email saying "the coin will have been
-found", and schedule them for Monday morning which is...only a few hours from now.
+found", and schedule the runaround for Monday morning which is...only a few hours from now.
 
 I once again do not get much sleep and end up in HQ early to answer more hint requests. Perhaps
 in a more normal Hunt, this would be when we'd open the floodgates and time unlock everything and
@@ -4466,7 +4467,7 @@ I start looking at the Mystery Hunt feedback form, but seeing feedback like
 if I read any more feedback, I'm just going to get depressed, and the stats page will get delayed until March,
 and nobody wants that. I'll look later.
 
-First things first: figuring out what the *hell* we can measure in our Hunt. In a typical Hunt, solve times
+First things first: figuring out what we can even measure in our Hunt. In a typical Hunt, solve times
 and solve counts are pretty free, but in our case we have nonsense like Hall of Innovation. I don't find
 a clear place where this information is saved in the database, it looks like our stats page only reports
 the last time a team has solved the puzzle
@@ -4477,7 +4478,9 @@ the team and timestamp via some regular expressions on top.
 {: .centered }
 
 I also need to figure out how to merge solve data from the server spun up for Conjuri back into the main
-server. Brian sends me some pointers to the database dump, and I figure out that all our existing documentation
+server. We told teams only the main server would matter, but had little faith that teams would bother to
+resubmit the Conjuri feeders.
+Brian sends me some pointers to the database dump, and I figure out that all our existing documentation
 only applies to setting up a Postgres database from scratch. We don't have any docs on merging databases together,
 since this just isn't something we've done before. I end up loading both dumps locally and set up some hacky
 scripts to merge data appropriately.
@@ -4498,16 +4501,16 @@ I care about speed more than making the charts display nicely on mobile.
 
 As I generate the team size graph, I find it very cute that you can almost see the vertical lines where
 teams round their team size to the closest 5 or 10. It reminds me of an old Jon Bois video showing that
-football plays are biased towards starting from multiples of 10, due to refs having some leeway on certain
-penalties for where to place the ball. You can see the lines of scrimmage, until Death & Mayhem breaks the
+American football plays are biased towards starting from multiples of 10, due to refs having some leeway for
+where to place the ball. You can see the lines of scrimmage, until Death & Mayhem breaks the
 illusion with their reported team size of 133.
 
 ![Solves by team size](/public/mh-2023/solvechart.png)
 {: .centered }
 
-Over the rest of February, we figure out what we want the hunt tech to look like, whether we want to clean
-up our codebase or release it as-is, and the list of tech TODOs to make all the interactive puzzles continue
-working once the site is archived. Then I stop paying as much attention.
+Over the rest of February, we figure out what we want our code handoff to TTBNL to look like, whether we
+should clean up our code or release as-is, and the list of tech TODOs to make all the interactive parts
+of Hunt stay working once the site is archived. Then I stop paying as much attention.
 
 
 # March 2023
@@ -4517,15 +4520,15 @@ has moved on from talking about Mystery Hunt 2023. There is no one left to prove
 
 I suppose that's the deal. Write a tech-heavy hunt that strongly assumes a server exists, and it looks cool
 live, but it's annoying to wrap up later. Given how long it took to package up Teammate Hunt 2020 and
-Teammate Hunt 2021, I was entirely unsurprised Mystery Hunt was taking a while to wrap up.
+Teammate Hunt 2021, I was entirely unsurprised Mystery Hunt was not done with static conversion.
 
-Static conversion of the site continues. Brian leads the push to get the
+Brian leads the push to get the
 relevant parts of the Python backend to work with [Pyodide](https://github.com/pyodide/pyodide), since there is absolutely zero chance we are going to rewrite any of the
 Python code. I mostly contribute to documentation and code review sanity checks.
-The small reviews I do send are for bugs I find in the static export, fixing
+The small reviews I do send are for fixing
 some hardcoded URLs, bugs in the static answer checker, and making sure solve
 sounds still play in the static version of the site. A cleaned up version of our modified tph-site
-and spoilr is finally released. [here](https://github.com/teammatehunt/tph-site) and [here](https://github.com/teammatehunt/spoilr-teammate).
+and spoilr is finally released, [here](https://github.com/teammatehunt/tph-site) and [here](https://github.com/teammatehunt/spoilr-teammate).
 
 That brings us up to now.
 
@@ -4536,7 +4539,7 @@ Obviously, some things went wrong. I'm not going to deny that.
 
 The main thing this Mystery Hunt has reinforced for me is that expectations are
 the root of all suffering. "We normally see the entire Hunt, and didn't this year."
-"We wanted to solve the first meta, and didn't." "We thought Hunt to be easier
+"We wanted to solve the first meta, and didn't." "We thought Hunt would be easier
 due to your smaller team size recommendation, and it wasn't."
 
 Do you notice the
@@ -4571,8 +4574,8 @@ all came together.
 ## The AI Rounds
 
 In terms of planning, everything about the Hunt was building up to the AI rounds.
-I suspected that they'd spark extreme reactions (both good and bad), and I
-think that was mostly true, but I wouldn't have it any other way. Think of them
+I suspected that they would spark extreme reactions (both good and bad), and I
+think that was mostly true. I wouldn't have it any other way. Think of them
 as experiments into what puzzlehunts are allowed to be.
 
 ![AI avatars](/public/mh-2023/AI-avatars.png)
@@ -4581,20 +4584,21 @@ as experiments into what puzzlehunts are allowed to be.
 Wyrm was pretty constrained, and earlier I have said it might have been too
 constrained for its own good, but I'd like to think the final reveal and art
 made up for this. From the start, the Wyrm pitch was "imagine all the cool
-art that we can put in this round", and there was a lot of cool art.
+art that we can put in this round", and there was indeed a lot of cool art.
 
 Boötes was stupidly cursed, but I think the gimmick pulled its weight in
 creating novel extractions for its feeder puzzles. The nature of the round gimmick
 pushed in that direction, and it certainly delivered on that front. The
-rise of emojis has taken ASCII emoticons out of popular Internet culture and I
-think it's cool we were able to do a throwback.
+rise of emojis has taken ASCII emoticons out of popular Internet culture and it
+was fun to do a bit of a throwback.
 
 Eye's art was quite popular. Its gimmick was more of a mixed bag. My sense
 is that if you had someone who knew the language or culture, the puzzles
 hit *incredibly* well. If you did not, then the puzzles did not hit as well.
 The round concept pushed towards research heavy puzzles, and I suppose this is why so many free answers
-were launched at this round. Still, I think it was a good reminder that
-puzzlehunting is a very Anglocentric hobby, but puzzlehunters
+were launched at this round. Still, I think it was good to write puzzles that
+were deliberately not friendly towards English speakers.
+Puzzlehunting is a very Anglocentric hobby, but puzzlehunters
 are increasingly multicultural. Just compare the ethnicities from
 competitive programming or logic puzzles to the ethnicities in
 puzzlehunts, there's a clear difference. Peking University
@@ -4622,12 +4626,12 @@ through the experience again, but I did it and a lot of it was cool.
 
 At the same time, I think it is important and interesting to consider where things started going wrong,
 because I think some of the errors were pretty subtle. It is not an easy explanation, like "teammate
-was inexperienced". It's a younger team, but collectively I believe members of teammate have run
-around 5-7 puzzlehunts before Mystery Hunt. It's not quite "teammate did not account for being biased
+was inexperienced". We're a younger team, but collectively I believe members of teammate have run
+5-7 puzzlehunts before Mystery Hunt (some good, some bad). It's not quite "teammate did not account for being biased
 towards their own puzzles". This bias was known and a big topic in puzzle
 variety discussions, and is the reason the hunt is only half-littered with math and video game puzzles instead of completely-littered.
 
-There's other things going on.
+There were other things going on.
 
 ## Calibration
 
@@ -4641,7 +4645,7 @@ have enough testsolve data, errors tend to go both ways. Here the errors went on
 In Puzzup, puzzles are rated 1-6 in difficulty, and I believe those ratings
 were pretty consistent among our puzzle drafts.
 They just weren't consistent with the stated rubric. A 3 on the scale is marked as "comparable
-to a puzzle in The Ministry". Looking at some puzzles that averaged a 3.0, they
+to a puzzle in [The Ministry](https://puzzles.mit.edu/2022/round/the-ministry/)". Looking at some puzzles that averaged a 3.0, they
 were certainly not Ministry difficulty. Even the inside baseball solve times
 of teammate testsolving teammate's puzzles are longer than our Ministry solve times. But they are easier
 than puzzles that averaged 4.0 difficulty or higher.
@@ -4694,8 +4698,7 @@ out the material, but eventually it comes together. And at the end, you've got a
 But this can make it quite hard or time consuming to revise a puzzle to be shorter, because
 of how it builds on itself.
 
-I think it is reasonable to assume that every team has the same number of
-puzzlemaking hours per Mystery Hunt year. Out of curiosity, I looked up
+Out of curiosity, I looked up
 author data from 2018 to 2023, and plotted each author's writing contribution
 to that Hunt. Authors are ordered from most prolific to least.
 
@@ -4727,29 +4730,30 @@ to that Hunt. Authors are ordered from most prolific to least.
 </table>
 
 The 2018 Mystery Hunt is an outlier Hunt written by Death & Mayhem, one of the
-largest teams every year. Otherwise, Mystery Hunt is remarkable stable at around
+largest teams every year. Otherwise, Mystery Hunt is remarkably stable at around
 60-65 puzzle writers per year. Left Out and Setec won with around 60 people, and
 ended with 60ish writers.
 Galactic was I believe around 80 people at time of win, and ended with 60ish writers.
-teammate won with around 50 people, and grew to 60ish writers. And I'm going to
-say it's reasonable to assume every team goes equally hardcore on writing Mystery
-Hunt, and that a stable writing size implies a stable number of writing hours.
+teammate won with around 50 people, and grew to 60ish writers. If every team has
+60 writers, and teams work equally hard every year, and the distribution of work
+per person is similar, it seems reasonable to assume every
+year gets the same number of puzzlemaking hours.
 
 If puzzlemaking hours are constant each year, and teammate
 started with a difficulty bar that makes puzzles 1.5x longer than they should be, the only
 way that's possible is if every puzzle had 1.5x fewer testsolving iterations.
-There's no other way to fit it in into the fixed time budget,
-you cannot push one up without pulling the other down.
+There's no other way to fit it in into the fixed time budget.
+You cannot push one up without pulling the other down.
 
 The standard bar for puzzlehunts is two clean testsolves, but it's worth
 considering why the bar isn't three or four clean testsolves. The answer is that
 time is finite, and to write a puzzlehunt you have to ship things.
 We started with a bar of two clean testsolves,
-had to relax it to two clean testsolves of every step midway through the year,
-and still ended with testsolving going to the wire.
+but had to relax it to two clean testsolves of every step across all testsolves.
+Even still, testsolving ended up going to the wire.
 I suspect 1.5x fewer testsolve iterations is why.
 Much of the later testsolve iterations are the ones where you observe
-the long-tail of solve experiences and revise the puzzle to be shorter
+the long-tail of solve experiences and revise the puzzle to be smoother
 and cleaner. A lot of puzzles that could have been edited more were
 not, because they were written at the end of the year and editing for
 late puzzles became more perfunctory to catch up to our internal puzzle
@@ -4769,17 +4773,17 @@ than no puzzle at all.
 
 Although there was a miss on overall difficulty, most negative feedback I've
 seen on
-*individual* puzzles mentioned flaws that authors were already aware of. I
+*individual* puzzles mentioned flaws that authors knew about before Hunt. I
 remember Palindrome saying the same thing - that most feedback was framed
 as "you overlooked this problem", but they usually had not overlooked the
 problem and had left it alone to fix bigger problems. I think this feedback
-hurts the most, because you knew the problem was there, and know why you
+hurts the most, because you knew the problem existed, and know why you
 did not fix it at the time, but that doesn't change that the problem is
-*there* and made someone sad.
+*there* now and made someone sad.
 
 (Please don't let this stop you from pointing out flaws in puzzle feedback
 forms though. I think authors know what problems exist but don't always know
-what problems people will consider important - feedback forms are a way to
+what problems people will consider important. Feedback forms are a way to
 see which problems are repeated most often.)
 
 What actionable advice would I give about this?
@@ -4793,11 +4797,11 @@ can be hard once you've made something fun. You will have better odds of
 success if you keep old puzzles as-is and update length requirements for
 new puzzles to adjust the average.
 3. It is okay to push for puzzles that are easier to iterate (closer
-to well-known puzzle archetypes). This was specific guidance given for Conjuri
-feeders, since that feeder pool was released last, and I think those puzzles
+to well-known puzzle archetypes). Conjuri feeders were told to act this way,
+due to the late answer release, and I think those puzzles
 came out better. The shift to encouraging such puzzles should probably have
 happened sooner. (Team leadership knew and considered this option, but
-chose to prod people to finish their existing drafts of complex puzzles, rather than
+chose to spend hack weekends prodding people to finish their existing drafts of complex puzzles, rather than
 start new drafts of simpler ones.)
 
 
@@ -4805,18 +4809,18 @@ start new drafts of simpler ones.)
 
 A team tends to do better at testsolving
 its own puzzles, because teams tend to grow around common interests, or people
-get pulled into other people's interests.
+get pulled into interests of people on the team.
 
 I want to talk about something more specific.
 Midway through the year, we created a
 "testsolving logistics" position. Normally, authors were responsible for soliciting
-testsolvers. This was starting to take up a lot of time. Authors would feel bad
+testsolvers. This was taking up a lot of time. Authors would feel bad
 if they only got 2 people to sign up for a puzzle that wanted 4+ solvers, and
 not everyone is good at cat herding.
 So we created a testsolving lead. The testsolving lead volunteered to be spoiled
 on testsolving requirements for all puzzles in Hunt. Every team member filled out
 a survey with puzzle preferences and availability. Authors would describe their
-hours estimate and # people estimate, and the testsolving lead would connect
+hours estimate and number of people estimate, and the testsolving lead would connect
 A to B, scheduling testsolves and building + wrangling testsolve groups.
 
 This definitely saved time, but in retrospect it may have done *too* good a job of pairing testsolvers to puzzles. Math puzzles
@@ -4836,7 +4840,7 @@ The more obviously good advice is that you should make sure there are off-ramps
 for killing unproductive testsolves. The way we did testsolves was usually
 by giving hints when needed and doing formal feedback only after they solved the
 puzzle. Some testsolves got very stuck, and odds are they should have been killed
-early, or we should have asked for testsolve feedback throughout the solve. I tried to
+early, or we should have pushed people to write testsolve feedback throughout the solve. I tried to
 write feedback-so-far every time we paused a testsolve, but this was not a universal
 practice, and asking for feedback only after solving may have biased difficulty estimates down.
 
@@ -4844,7 +4848,8 @@ practice, and asking for feedback only after solving may have biased difficulty 
 
 During testsolving, you are usually encouraged to stick with a puzzle, so that
 other people don't need to be spoiled and can be saved for future iterations.
-You also usually convene at a fixed time, and start a puzzle immediately.
+You convene at a fixed time, and start a puzzle with your full group
+at once.
 
 When testsolving [Moral of the Story](https://puzzlefactory.place/puzzles/moral-of-the-story), I thought it seemed okay. We had four people doing
 the first step and were able to speed through it pretty quickly. Then the
@@ -4856,8 +4861,8 @@ popular. Now, part of this is because the relevant Wikipedia page was edited
 after testsolving, in a way that made the puzzle much harder. But part of it is
 also that in a real Hunt, teams are roaming to decide what puzzle they want to
 work on, then puzzles accumulate people over time. The start of the puzzle was
-grindy in a way that was not exposed in testsolving, because both clean testsolvwad
-started with a larger group of people.
+grindy in a way that was not exposed in testsolving, because both clean testsolves
+had started with a larger group of people.
 
 It is a less important factor, but assume that tolerance for grind in a real Hunt
 is lower than tolerance for grind in testsolving.
@@ -4873,7 +4878,7 @@ Let me go requote the team goals from the start of the year.
 3. High production value
 4. Build a great experience for small / less intense teams
 
-It's possible we overreached in trying to deliver innovation in both hunt structure and puzzles.
+It's possible we overreached in trying to deliver innovation in both puzzles and hunt structure.
 Every year, you get a certain amount of complexity budget, limited by your available person-hours to
 design and testsolve puzzles. We spent a lot of it early when deciding to create the AI rounds,
 then spent more on the Museum metameta structure, then more on Innovation, then more on reusing
@@ -4886,8 +4891,8 @@ Structural requirements differed more between rounds, and puzzles often had to b
 for the round they fed into.
 
 I think there was a compounding effect, where creating more complicated hunt structures made
-feeders release later, which created more time crunch for writing ambitious puzzles, and both
-grew over time. Here is a message from all the way back in January 2022, when we started theme ideation.
+feeders release later, which created more time crunch for writing ambitious puzzles, and the
+ambitions of both grew over time. Here is a message from all the way back in January 2022, when we started theme ideation.
 
 ![Unknown unknowns](/public/mh-2023/unknowns.png)
 {: .centered }
@@ -4897,7 +4902,7 @@ effort and struggle. Teammate Hunt 2020 started design with one Playmate game as
 and ended with eight games throughout the Hunt.
 Teammate Hunt 2021's design proposal for the Carnival Conundrum
 said "7-9 intro puzzles, 7-9 main round puzzles per half, 6-8 pairs of puzzles", and the final hunt ended
-with the top of each band: 9 intro puzzles, 9 main round puzzles per side, 8 pairs of puzzles, where
+with the top of each band: 9 intro puzzles, 9 main round puzzles per side, 8 pairs of puzzles, and
 each pair was more like 2.5 puzzles worth of effort.
 I was not in the design process for Hall of Innovation, but I remember someone telling me it also grew
 in scope a lot from the initial proposals. (It started writing in April 2022 and was still going
@@ -4932,13 +4937,14 @@ would force the Factory to shutdown and make the Museum site 404, saying "Team X
 {: .centered }
 
 We did not have an answer for how to time unlock a team past these changes, which were required to
-make site functionality work. You don't just make a site start 404-ing for no reason.
+make site functionality work. You don't just make a site start 404-ing without saying why
+beforehand.
 
 A lesser but still important reason is that we had pulled a literal
 all-nighter verifying site behavior assuming the narrow path of a team progressing through the Hunt
 normally, and did not have any time to verify behavior if story state and solve state diverged
 out of that narrow region. Even the relaxation of 4/4 metas to 3/4 metas to unlock Reactivation
-caused Hall of Innovation to stop working, until we fixed it live. This was part of why it took us a while
+caused Hall of Innovation to stop working in some edge cases until we fixed it live. This was part of why it took us a while
 to set up a public access team, we kept running into bugs tied to a team that had 100% of the story
 unlocks with 0% of the solves.
 
@@ -4970,7 +4976,7 @@ I think it is more accurate to say that the Atrium was not designed as an intro 
 During writing, there was guidance for three difficulty bands: Museum puzzles, Factory puzzles,
 and AI round puzzles. There was then no further guidance within that, and puzzles were to be ordered afterwards
 by hunt exec. This has never been a problem in past Teammate Hunts, where the intro round was 8-9 puzzles.
-Ordering within the Museum was done over the two days before Hunt ran.
+Ordering within the Museum was done about two days before Hunt ran.
 
 There were 40 puzzles among the Museum rounds, and all rounds had some tricky puzzles in them.
 This left a trilemma where not all three could be true at once:
@@ -4981,7 +4987,8 @@ This left a trilemma where not all three could be true at once:
 
 teammate ended up picking the last two, and this created the perception that Atrium was the intro round.
 If we had known how hard Hunt was going to be, we probably would
-have picked the first and last instead.
+have picked the first and last instead. This would have looked like starting with 3-5 rounds, where
+only their easy puzzles were unlocked.
 Some of the Museum metas are not very backsolvable or doable from partial information, and I think it would have been safe to unlock those earlier.
 It's still not an ideal solution if a meta unlocks way before you can realistically solve it,
 but it's still psychologically more exciting.
@@ -5019,8 +5026,8 @@ I know some teams were not happy about this,
 especially if they did not figure out the loading animation was a puzzle.
 
 I've been told this was discussed to death, and the conclusion was that if a meta was unlocked before the
-loading puzzle finished, the unlock crew was pretty sure teams would only look at that meta, and no one would
-look at the loading animation. I don't think the argument
+loading puzzle finished, the most likely outcome was that teams would only look at that meta, and
+no one would look at the loading animation for a while. I don't think the argument
 is wrong. But as implemented, even after solving the loading animation, teams were often 1-3 solves away
 from unlocking the Atrium meta, since they needed to solve the now-loaded Atrium puzzles to get
 the meta they wanted.
@@ -5034,7 +5041,7 @@ creating an awkward overhang.
 After we'd sent out the loading solution email,
 we did cut Atrium meta unlock down to 5/9, now that directing teams there mattered less.
 
-Story-wise, the in-story version of teammate is trying not to draw attention to the Puzzle Factory. Teams were supposed to feel like
+Story-wise, the in-story version of teammate is trying to not draw attention to the Puzzle Factory. Teams were supposed to feel like
 they were breaking the rules by exploring the Puzzle Factory. I think that created tension with how to make teams
 feel like they had done something important. The original theme proposal had a story interaction with MATE
 immediately on unlocking the Factory, where MATE would confront solvers but let them explore anyways.
@@ -5204,7 +5211,15 @@ resilient to break from something like that.
 I do not have any burning puzzle ideas left to write, but I told myself this in
 January 2022.
 In the "do we want to win Hunt" survey, I said I did not expect Mystery Hunt to encourage me to work harder on puzzles, and
-then it did. I have, very continuously throughout the year, asked myself if
+then it did. I claimed I would work 10 hours/week, and here is the true chart.
+
+![Time chart](/public/mh-2023/timegraph.png)
+{: .centered }
+
+(Excludes the week before Hunt, which was around 110 hours.)
+{: .centered }
+
+I have, very continuously throughout the year, asked myself if
 this was all worth it. The answer was not clearly yes.
 
 Still, to flip the question on its head, if you asked me what deal I'd
@@ -5216,5 +5231,5 @@ I care about puzzles
 a lot. I wouldn't have written for Hunt if I did not care. That continues to be true. Puzzles are cool.
 I'm just tired and want to do other things in my free time. I want a hobby, not a job.
 We climbed the mountain, and came back down. Everything afterwards is uncertain, but
-I am looking forward to putting Mystery Hunt 2023 behind me, and seeing what happens
-next year.
+I am looking forward to putting Mystery Hunt 2023 behind me, and I can't wait to see what
+happens next year.
