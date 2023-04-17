@@ -41,7 +41,7 @@ That gives more of an answer to why people do puzzles. Why do people *write* puz
 
 I have a harder time answering this question.
 
-When working on Mystery Hunt 2023, it started as a thing on the side, then evolved into a part-time job,
+Working on Mystery Hunt 2023 started as a thing on the side, then evolved into a part-time job,
 then a full-time job towards the end.
 Writing a puzzlehunt is incredibly time consuming. You're usually not getting much money,
 and your work will, in the end, only be appreciated by a small group of hobbyists with
@@ -286,8 +286,9 @@ votes of 5 than any other theme. Puzzle Factory it is!
 
 ## Hunt Tech Infrastructure
 
-I'm going to talk a lot about hunt tech, a very niche topic even within the puzzle niche.
-Still, I'm going to do so anyways because
+I'm going to talk a lot about hunt tech, a very niche topic within the puzzle niche. This won't
+be relevant to many people.
+Still, I'm going to do so because
 
 1. It's my blog I get to write what I want.
 2. By now I've worked with four different puzzlehunt codebases (Puzzlehunt CMU, gph-site, tph-site,
@@ -587,7 +588,7 @@ on "multiple" and "mate", we found "penultimate".
 At which point Patrick proclaimed, "Oh, this puzzle writes itself! We'll find a bunch of lists, give a thing
 in each list, and extract using the penultimate letter of the penultimate thing from each list."
 
-And, in fact, the puzzle idea did write itself! Well, the idea did. The execution took a while to
+And, in fact, the puzzle did write itself! Well, the idea did. The execution took a while to
 hammer out. A rule of thumb
 is that [there's a 10:1 ratio](https://www.ybrikman.com/writing/2018/08/12/the-10-to-1-rule-of-writing-and-programming/)
 for raw materials to final product in creative endeavors, and that held true here too. The final puzzle
@@ -780,13 +781,14 @@ from GPH 2022 for an example, or the Author's Notes for [Museum Rules](https://i
 unfortunate to propagate falsehoods, but sometimes that's how it goes.
 
 
-## A Bay Area Retreat
+## A Bay Area Meetup
 
 teammate has people all over, with rough hubs around the Bay Area,
-Seattle, and New England. We held a meetup for Bay Area people, for people who felt the COVID exposure was within their risk tolerance.
+Seattle, and New England. We held a meetup for Bay Area people in April, for anyone who felt the COVID exposure was within their risk tolerance.
 
-We started brainstorming Weaver at this retreat. Much of the work would be done later, but April was when
-Brian first mentioned wanting to make an underwater basket weaving puzzle, using
+We started brainstorming Weaver at this meetup. Much of the work would be done later, but this meetup
+was the first time
+Brian mentioned wanting to make an underwater basket weaving puzzle, using
 special hydrochromic ink that dried white and became transparent when wet. The idea sounded super cool,
 so we did some brainstorming around what the mechanics should be (different weaving patterns, presumably), as
 well as some exploration into the costs. I then found an [Amazon review](https://www.amazon.com/gp/customer-reviews/R2HQQ7DWE56RY1/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B086Q344PQ).
@@ -853,13 +855,12 @@ rounds. Two, the story team was figuring out details of the midpoint capstone in
 of the Hunt,
 
 1. Solvers should reactivate the old AIs.
-2. This causes teammate to shutdown the Puzzle Factory and Mystery Hunt
-3. Solvers should then start powering up the Factory by solving puzzles that were in the process of getting
-created for Mystery Hunt.
-4. Which should then be enough to cause the old AIs to wake up and start writing their own puzzles, letting
+2. This causes teammate to shutdown the Puzzle Factory and Mystery Hunt.
+3. Solvers should then start powering up the Factory by solving some puzzles.
+4. That is just enough to wake up the old AIs, who start writing their own puzzles, letting
 teams continue powering up the Factory until endgame.
 
-The question is, what are the puzzles in step 3?
+The question is, what are the puzzles in step 3? This hadn't been determined yet.
 
 The Wyrm round
 authors and Museum metameta authors were gathered into a meeting with the editors-in-chief (EICs) and
@@ -869,7 +870,7 @@ This proposal filled a lot of holes.
 
 * Wyrm's round would be 6 puzzles shorter, bringing its size in line with other AI rounds. Between the
 repeated puzzles and backsolved puzzles, there would be around 13 "real" puzzles left.
-* The reused feeders could become the puzzles solved after shutdown. It would be reasonable for solvers
+* The reused feeders could become the puzzles in step 3. It would be reasonable for solvers
 to find copies of Museum puzzles within the Factory, since the Factory created puzzles
 for the Museum.
 * The gimmick for Wyrm was in the structure, not the feeder answers. Out of the four AI rounds,
@@ -1440,7 +1441,7 @@ team from Galactic, and Galactic tested the gimmick of Galactic Puzzle Hunt 2022
 teammate. This is a lot harder to do for Mystery Hunt though.
 
 To write Mystery Hunt, teammate did a lot of external recruiting.
-To get a sense of scale, we won Hunt with about 55 people, not all of them decided to write, and we ended
+To get a sense of scale, we won Hunt with 53 people, not all of them decided to write, and we ended
 the year with about 60 writers and 70 people total on the credits page.
 My estimate is that around 30% of people joined after theme selection.
 
@@ -1818,7 +1819,8 @@ over Discord voice calls. It's really not the same as meeting in person.
 
 As an icebreaker, we went around saying what our favorite puzzle was. I forgot what I
 said - I think it was [A Puzzle Consisting Entirely of Random Anagrams](https://puzzles.mit.edu/2015/puzzle/a_puzzle_consisting_entirely_of_random_anagrams/)?
-Vinjai said, "134". Later I'd learn this was the puzzle ID for the Hall of Innovation meta.
+Vinjai said, "134". Later I'd learn this was the puzzle ID for the [Hall of Innovation](https://interestingthings.museum/rounds/innovation)
+and [The Blueprint](https://puzzlefactory.place/factory-floor/the-blueprint).
 He was one of the authors of that meta and it sounded like it was in the middle of taking over
 the lives of everyone involved.
 
@@ -1840,7 +1842,10 @@ version of the site. We also observed that when there were real puzzles instead 
 teammates from teammate would get in the habit of opening every puzzle at once in a
 separate tab, then go back to a puzzle spreadsheet while waiting for the puzzles to load
 instead of watching the animation.
-That was not good. The loading puzzle was not getting solved and no one was suspicious.
+That was not good. The loading puzzle was not getting solved and no one was suspicious. Jacqui
+tells me that two people who knew breakout existed tried to recruit her to "make
+the loading animation a puzzle", and she had to find a way to deflect them from pursuing the idea
+any further.
 
 In an attempt to get people to look at the loading animation more, the editors-in-chief
 nudged testsolvers towards puzzles that unlocked later (had longer load times). Meanwhile,
@@ -1877,7 +1882,7 @@ After that, Collage got unlocked! Except, it was entirely broken. Oh no.
 One meme in teammate
 during writing was "bamboozle insurance". You offer bamboozle insurance when you want to assure
 people something will be true, and you pay bamboozle bucks when you are wrong.
-Example uses include:
+Example uses in a sentence:
 
 "This meta testsolve needs 2+ hours but it will be worth your time, you can buy bamboozle insurance from me"
 
@@ -1902,11 +1907,11 @@ at the start of the final puzzle order.
 Unfortunately, this fed into the narrative of "the site is struggling, so the loading animation isn't special".
 It is the sort of thing where if you think about the loading animation for a
 bit, it does not make sense for a list of text to take longer to load than the
-loading animation itself, but that is not the mindset most people use unless
-prompted to.
+loading animation itself, but that is not the mindset most people use unless you
+prompt them to.
 
 The original plan was to get to breakout by around the evening (8 PM to 10 PM), then leave time for
-board games and socializing. But it was still going. My original plan was to pick up my parents
+board games and socializing. But the evening came around, and it was still going. My original plan was to pick up my parents
 from the airport at midnight, then come back to the AirBnB. With how the testsolve was going,
 I called my parents to let them know I wouldn't be free, and they should make other plans.
 They did, and my parents informed me they tested positive for COVID the next day.
@@ -1948,8 +1953,8 @@ At this time, I was starting to get questions from friends about whether Mystery
 on-campus this year, and I still could not tell them anything besides "we're working on it".
 The tentative signs were pointing to "yes", so we decided to plan as if we'd run on-campus,
 and events were correspondingly designed around in-person interaction.
-This was done knowing that the events wouldn't be doable without on-campus
-presence, which could hurt fully remote teams, but, well...in my opinion,
+This was done knowing that the events wouldn't be doable for fully
+remote teams, but, well...in my opinion,
 it's called the MIT Mystery Hunt for a reason. I understand that not everyone can come in
 person and that this hurts accessibility, but after two years of remote-only events, it seemed
 appropriate to swing the pendulum back to in-person events. The event rewards were
@@ -2046,7 +2051,7 @@ From our #puzzle-ideas channel during retreat:
 
 I don't think the relevant pool of solvers ever solved the puzzle organically. Instead,
 hunt exec, breakout authors, and a few unspoiled solvers were all shuffled into the same
-basement room we were in at 4 AM last night. The unspoiled authors were told to look at the loading
+room where we had held our 4 AM emergency meeting. The unspoiled authors were told to look at the loading
 screen, and solved it in a few minutes. Their initial feedback was "yeah, this seems
 obvious, we should have noticed this earlier", to which we said, "You say this, but we have
 12 hours of empirical feedback saying the opposite."
@@ -2113,9 +2118,8 @@ With more people awake, we proceeded with the scheduled State of Story meeting.
 The creative team presented the broad strokes of the Hunt story, the existence of
 breakout, our plans to make teams believe they shut down Mystery Hunt, and the art direction
 for each AI round. AI gimmicks were not revealed, since some still needed to be testsolved.
-Wyrm would be a precocious child with
-a construction paper aesthetic (since every explanation of a wormhole in fiction involved sticking
-a pencil through two pieces of paper). Boötes would be a meme-y ASCII art cat in space.
+Wyrm would be a precocious child that grew in length.
+Boötes would be a meme-y ASCII art cat in space.
 Eye would be a noble, biblically accurate angel, with nods to the Tower of Babel. Conjuri would be a pixel
 art owl eager for new challengers. Only Eye's gimmick was spoiled widely at this time, since their
 puzzle ideas were most constrained and needed the most help for writing. The rest of the gimmicks
@@ -2134,7 +2138,7 @@ spun in circles for an hour, and failed. The puzzle idea was officially killed a
 Some memes should stay dreams.
 
 Retreat concluded with a bunch of board games. We played some rounds of Just Two. It's [Just One](https://en.wikipedia.org/wiki/Just_One_(board_game)) except a clue is only provided if exactly two people
-put it done. It's good for large groups and is way harder. I'm told that when the word "pony"
+put it down. It's good for large groups and is way harder. I'm told that when the word "pony"
 showed up, the only clue that made it through was "Irpan".
 
 East Coasters flew back home, Europeans flew *really* back home, and we ramped up the fall push
@@ -2153,12 +2157,16 @@ we discussed the [Zoomquilt](https://zoomquilt.org/) and its [sequel](https://zo
 as both art inspiration and proof-of-concept that we could make a infinitely zooming round page.
 {I remember Huntinality 2022's [registration form](https://2022.huntinality.com/) also came up.)
 
-Each of the Wyrm layers was done by a different artist. Turns out that if you want every puzzle
+Art brainstorms for Wyrm had locked in a construction paper aesthetic,
+since every explanation of a wormhole in fiction involves sticking
+a pencil through two pieces of paper. There was a lot of work done for Wyrm on the art side.
+Turns out that if you want every puzzle
 to have its own icon, it doesn't matter that 13 puzzles in the round are "fake" or repeats. You
-still need to draw 13 art assets. Creatively, the art team did not want to reuse art assets
-between the Museum and Wyrm versions of the Act I puzzles, since even though they were the same
-puzzle, one would be in "MATE's Hunt" and one would be in "Wyrm's Hunt", with all the visual
-changes that implied. Much of the ideation was on fractals, self-symmetry, repeating patterns,
+still need to draw 13 art assets. The art team considered reusing art assets for the repeated
+Museum puzzles, but it was hard to make the same image
+look good in both the Museum and Wyrm round pages, especially when the Collage art in Wyrm needed
+to be very detailed. The icons were therefore made different. Story-wise, this was justified as one
+being in "MATE's Hunt" and the other being in "Wyrm's Hunt". Much of the ideation was on fractals, self-symmetry, repeating patterns,
 and so on.
 
 ![DeepDream inspo](/public/mh-2023/deepdream.png)
@@ -2306,7 +2314,7 @@ crossword into another dimension. If I extended Joe Biden to Joseph Biden, then
 I could make JOSEPHBIDEN / DONALDTRUMP be the equivalent of CLINTON / BOBDOLE.
 
 At this time, I had no plans to use [5D Chess with Multiverse Time Travel](https://www.5dchesswithmultiversetimetravel.com/),
-since I knew nothing about how the game work and had a limited amount of time
+since I knew nothing about how the game worked and had a limited amount of time
 before potluck. Most of my design time was spent on determining a placeholder
 extraction of any kind.
 
@@ -2627,7 +2635,7 @@ was a 60% chance the puzzle was wrong, and I got *very* lucky I ended up in the
 40% outcome instead.
 
 In our PuzzUp setup, we can label puzzles by how difficult their postproductions
-will be. This puzzle was flagged ad one of the hardest. The puzzle was short, but
+will be. This puzzle was flagged as one of the hardest. The puzzle was short, but
 the solution was an 8000 word monster filled with diagrams that our
 auto-postprod tool failed to handle.
 Many thanks to Holly for factchecking all the crossword clues, and Evan for
@@ -2680,7 +2688,7 @@ and starting picking up more tasks.
 
 We decided events would act like globally unlocked puzzles, with some event-specific metadata to
 manually open them when the event was completed. Although events would not contribute to a meta of
-any kind, having them act like a puzzle with a submitted was the easiest way to handle accounting
+any kind, having them act like a puzzle with an answer was the easiest way to handle accounting
 of which teams had solved the event. We would not need to track which teams showed up to each event.
 Instead we could just announce the answer and watch the submissions come in later.
 Pretty much every recent Mystery Hunt has used this system. It just works.
@@ -2917,13 +2925,12 @@ We'd actually started ideating this puzzle at a Bay Area meetup in October. It w
 interesting meetup, since the first thing we did was testsolve Hall of Innovation. We were given most of the
 feeders for the Factory Floor meta, and told to testsolve it. After getting nowhere, the authors
 said "by the way, your team has unlocked a new round", and we looked at the Innovation puzzles. We solved
-all of Hall of Innovation, then were told "Congrats! The Factory Floor meta you started with isn't ready
+all of Hall of Innovation, then the observers said "Congrats! The Factory Floor meta you started with isn't ready
 yet, come back in a few weeks". Really one of the most
 trippy testsolving experiences I've ever had. They were testing whether a team could solve Blueprint
 without the Innovation answers. We didn't, which
-was good, but it's still wild that we were told to testsolve a meta, was given an entirely separate
-round of puzzles, and then were told the testsolve was over before we could use any of our original
-feeders.
+was good, but it's still wild that we were told to testsolve a meta, were given an entirely separate
+round of puzzles, and then were told the testsolve was over before we could use any of our feeders.
 
 But! We are not here to talk about innovation in the Museum of Interesting Things. We are here to talk about innovation in the Tower of Eye. A number of Eye puzzles were written at in-person meetups like this one, since
 they needed more manpower to brainstorm. One of the major design requirements was that every Eye
@@ -3269,7 +3276,7 @@ Django's template language ever again.
 
 
 Now that more art assets were in, we could
-finish setting up the puzzle icons. In the Wymrhole, puzzle icons were non-convex and could be
+finish setting up the puzzle icons. In the Wyrmhole, puzzle icons were non-convex and could be
 disconnected (this is easiest to see on the layer of fish). To support this, our plan was to make each puzzle
 icon the same size as the round art. Each icon would have an SVG mask that would cut out the icon
 from the full size rectangle. Overlapping all the disjoint
@@ -3853,10 +3860,11 @@ COVID concerns, but it didn't look that way to me.
 
 I saw kickoff for the first time with everyone else; I'd been too caught up in tech to
 see any of the rehearsals. The stage was decorated with a bunch of random decorations
-people owned or bought from Home Depot while getting construction supplies for set
+bought from Home Depot while getting construction supplies for set
 creation. Based on all the people taking pictures after kickoff, it looked like
 a few hunters were trying to image ID the decorations, just in case they were a puzzle.
-I've heard one group actually succeeded.
+I've heard one group actually succeeded. The larger columns were painted cardboard
+wrapped around wood and pool noodles to give them rigidity.
 
 Now, we unfortunately did not have our official HQ in Building 10 available at the start of Hunt.
 It would be available later that afternoon. For now, our HQ was two separate classrooms
@@ -3926,7 +3934,7 @@ The phone was pretty interesting.
 Two days before Hunt, someone on logistics told me they'd gone to MIT Puzzle Club's storage, and found
 10 phones in a closet. It took them a bit to figure out which phone was the correct one for the number
 we'd advertised on the website. I'm guessing these phones date to when you needed 10 phones to handle
-answer call-ins, and had been sitting around ever since.. Why would
+answer call-ins, and had been sitting around ever since. Why would
 you throw away perfectly good phones?
 
 Remember me mentioning we were seated in two different rooms? This meant tech was half-split
@@ -3943,8 +3951,8 @@ the puzzle API existed, and a few teams sent emails asking if they were supposed
 puzzlefactory.place links.
 
 Nope! Nope nope nope. Nooooooope. We merged in a hotfix right away and thanked teams for finding this.
-Luckily, knowing the URL does not let you access Factory puzzles early, and at most they are spoiled
-on some titles and the upcoming theme.
+Luckily, knowing the URL does not let you access Factory puzzles early, and at most they spoil the
+puzzle titles and upcoming theme.
 
 Things are fine for around the next hour, until
 teammates
@@ -4251,7 +4259,7 @@ would be very short, like Cardinality going from 3/4 to shutdown in 5 minutes.
 ![5 minutes](/public/mh-2023/5minshutdown.png)
 {: .centered }
 
-Sometimes, it was not, like when TTBNL solved 3/4, half of hunt HQ immediately left, and didn't
+Sometimes, it was not, like when TTBNL solved 3/4, half of hunt HQ immediately left, and they didn't
 come back for an hour because TTBNL was stuck on the last mini and guessing CONJUWU.
 
 ![Conjuri uwu](/public/mh-2023/conjuri-uwu.png)
@@ -4336,8 +4344,9 @@ havoc in our codebase in the middle of Hunt, I broke down laughing. It echoed th
 We were also starting to get screenshots of teams first reaction to the complete
 nonsense of Boötes round answers, which was pretty great.
 
-![Realization](/public/mh-2023/realization.png)
-{: .centered }
+<p class="centered">
+    <img src="/public/mh-2023/realization.png" style="max-width:50%" alt="Realization">
+</p>
 
 It was unfortunate this was mostly via free answers, rather than solving the puzzles, but the
 reactions were everything I wanted.
@@ -4863,7 +4872,9 @@ a survey with puzzle preferences and availability. Authors would describe their
 hours estimate and number of people estimate, and the testsolving lead would connect
 A to B, scheduling testsolves and building + wrangling testsolve groups.
 
-This definitely saved time, but in retrospect it may have done *too* good a job of pairing testsolvers to puzzles. Math puzzles
+This definitely saved time, and people in off-peak hours (i.e. Europe and Asia timezones)
+felt having someone handle their logistics allowed them to testsolve more.
+However, in retrospect it may have done *too* good a job of pairing testsolvers to puzzles. Math puzzles
 were routed to math people, geography puzzles were routed to geography fans, and so on. I'm not saying every
 puzzle was directly routed to people who'd have an easy time with the puzzle, but
 that was definitely a bias of the selection process. Someone having a spreadsheet
@@ -4926,7 +4937,8 @@ puzzles between Museum and Wyrmhole.
 
 The gimmicks also made it hard to shuffle puzzles between acts if they tested harder than expected,
 although I'd guess this effect was smaller. We have shuffled puzzles between intro and main rounds
-before in Teammate Hunt, if they test much harder or easier than expected. I'm not sure if that happened much for Mystery Hunt.
+before in Teammate Hunt, if they test much harder or easier than expected. This happened a bit in
+Mystery Hunt, but not very much.
 Structural requirements differed more between rounds, and puzzles often had to be designed
 for the round they fed into.
 
@@ -5273,3 +5285,14 @@ I'm just tired and want to do other things in my free time. I want a hobby, not 
 We climbed the mountain, and came back down. Everything afterwards is uncertain, but
 I am looking forward to putting Mystery Hunt 2023 behind me, and I can't wait to see what
 happens next year.
+
+*Thanks to
+Jacqui Fashimpaur,
+Bryan Lee,
+Lumia Neyo,
+Nishant Pappireddi,
+Alex Pei,
+Olga Vinogradova,
+Ivan Wang,
+and Patrick Xia
+for providing feedback*.
