@@ -402,6 +402,8 @@ The last goes through mostly unchanged.
 <div class="shaded" markdown="1">
 ### Quandle
 
+**Puzzle Link:** [here](https://puzzlefactory.place/office/quandle)
+
 Perhaps you remember that I set a personal guideline for "no more interactive puzzles", and think
 it's strange that I worked on an interactive puzzle within a month.
 Yeah, uh, I don't know what to tell you.
@@ -575,6 +577,8 @@ We split into groups to brainstorm the three Factory metas. The group I was in c
 <div class="shaded" markdown="1">
 ## The Filing Cabinet
 
+**Puzzle Link:** [here](https://puzzlefactory.place/office/the-filing-cabinet)
+
 I'm not sure how people normally come up with meta puns. What I do is use [RhymeZone](https://www.rhymezone.com/)
 to look up rhymes and near-rhymes, then bounce back and forth until something good comes out.
 The brainstorm group I was in was focused on the "multiple AIs" story point. Looking for rhymes
@@ -635,6 +639,8 @@ the metameta.
 
 <div class="shaded" markdown="1">
 ### Period of Wyrm
+
+**Puzzle Link:** [here](https://puzzlefactory.place/factory-floor/period-of-wyrm)
 
 Really, I did not do much on this puzzle. The mechanics stayed the same throughout all
 testsolves. I testsolved the initial version, and my contributions afterwards were on searching
@@ -804,6 +810,8 @@ a draft of:
 <div class="shaded" markdown="1">
 ### Broken Wheel
 
+**Puzzle Link:** [here](https://puzzlefactory.place/basement/broken-wheel)
+
 This is one of those puzzles generated entirely from the puzzle answer. There were a few
 half-serious proposals about treating the answer as PSY CLONE and doing a Gangnam Style
 shitpost, but they died after I said ["It's been done"](https://puzzles.mit.edu/2013/coinheist.com/feynman/sages_style/index.html).
@@ -923,6 +931,8 @@ it's just there were other ways to fix them that would have had fewer bad side e
 
 <div class="shaded" markdown="1">
 ### The Legend
+
+**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/the-legend)
 
 Part of the deal for accepting the repeated feeders constraint was that editors-in-chief signed up to
 help design and push the Wyrm and Museum metas. The Legend was the meta brainstormed to take all the
@@ -1075,6 +1085,8 @@ dealing with our own constraints.
 <div class="shaded" markdown="1">
 ### The Scheme
 
+**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/the-scheme)
+
 From the start of writing, we knew the meta answer was locked to EYE OF PROVIDENCE and it had to
 use the feeder INCEPTION in some way. There was a bit of brainstorming on whether we could
 exploit that 100% of teams would have the INCEPTION answer, but we did not come up with anything good.
@@ -1146,6 +1158,8 @@ on my shortlist of "puzzles I'd redo from scratch" with hindsight, but at the ti
 
 <div class="shaded" markdown="1">
 ### Lost at Sea
+
+**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/lost-at-sea)
 
 Nominally, I'm an author on this puzzle. In practice I did not do very much. The first version provided the
 cycle of ships directly, and tested okay (albeit with some grumbling about indexing with digits).
@@ -1242,6 +1256,8 @@ Time to reap what we'd sown.
 
 <div class="shaded" markdown="1">
 ### Collage
+
+**Puzzle Link:** [here](https://interestingthings.museum/puzzles/collage) and [here](https://puzzlefactory.place/puzzles/collage-copy)
 
 The first thing I did was reach out to David and Ivan, the authors of [Word Wide Web](https://2020.teammatehunt.com/puzzles/word-wide-web), to see if they had any word web tools I could borrow.
 David sent me a D3.js based HTML page that
@@ -1438,6 +1454,8 @@ However, to make this plan work, the breakout would need to exist by retreat.
 <div class="shaded" markdown="1">
 ### Loading Puzzle...
 
+**Puzzle Link:** [here](https://interestingthings.museum/solutions/undefined)
+
 During one of the weekly general meetings, I was asked if I could join a brainstorm group for "a small puzzle".
 Said brainstorm group had Jacqui (creative lead) and Ivan (tech lead).
 
@@ -1581,6 +1599,8 @@ In said weekend, I helped write:
 <div class="shaded" markdown="1">
 ### Museum Rules
 
+**Puzzle Link:** [here](https://interestingthings.museum/puzzles/museum-rules)
+
 There isn't really too much of a story with this one. We looked at the pool of open answers, picked
 one of them, then brainstormed ideas based on that. That landed on doing
 something with a list of rules, which we'd justify in story as rules for attending the Museum.
@@ -1612,6 +1632,8 @@ surplus. I ended up working on two other puzzles in July.
 
 <div class="shaded" markdown="1">
 ### Interpretive Art
+
+**Puzzle Link:** [here](https://interestingthings.museum/puzzles/interpretive-art)
 
 As mentioned in this solution, this puzzle started from a shitpost someone posted on Facebook.
 
@@ -1649,6 +1671,8 @@ going to be a fan favorite.
 <div class="shaded" markdown="1">
 ### Conglomerate
 
+**Puzzle Link:** [here](https://interestingthings.museum/puzzles/conglomerate)
+
 Remember how I said I didn't want to write minipuzzles anymore?
 
 I still don't, but editors asked if I could help contribute to a puzzle skeleton
@@ -1680,6 +1704,8 @@ Puzzle. Still, there was time to work on other puzzles along the way.
 
 <div class="shaded" markdown="1">
 ### Lost to Time
+
+**Puzzle Link:** [here](https://puzzlefactory.place/basement/lost-to-time)
 
 Whenever I wrote a puzzle for Hunt, I did a search in the devjoe index to double check it was not
 too close to a prior Mystery Hunt puzzle. This has built a bit of a "Alex is the Mystery Hunt
@@ -1934,6 +1960,8 @@ Perhaps future Hunts will do more hybrid events - I'll leave that choice up to f
 
 <div class="shaded" markdown="1">
 ### We Made a Quiz Bowl Packet but Somewhere Things Went Horribly Wrong
+
+**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/we-made-a-quiz-bowl-packet-but-somewhere-things-went-horribly-wrong)
 
 Okay. I know this puzzle isn't that popular, but all puzzles will have their stories told.
 
@@ -2232,6 +2260,8 @@ I also joined the brainstorm group for what we called the midpoint capstone puzz
 <div class="shaded" markdown="1">
 ### Reactivation
 
+**Puzzle Link:** [here](https://puzzlefactory.place/factory-floor/reactivation)
+
 I'm on the author list for this puzzle but I really didn't do much. I have said this before,
 but this time it is serious.
 I was in the first brainstorm
@@ -2253,6 +2283,8 @@ except for one puzzle, which would become much bigger than I expected.
 
 <div class="shaded" markdown="1">
 ### 5D Barred Diagramless with Multiverse Time Travel
+
+**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/5d-barred-diagramless-with-multiverse-time-travel)
 
 I consider this puzzle my magnum opus.
 
@@ -2725,7 +2757,7 @@ The two tracks were handled independently, and this would be the source of many 
 the year.
 
 
-## Reactivation
+## Reactivation State Changes
 
 Before I finished setting up the flow for automatically creating deep floors for all teams that could use
 them, Ivan reached out and asked if I could help on making the
@@ -2870,12 +2902,16 @@ But before that:
 <div class="shaded" markdown="1">
 ### Bedtime Stories, Castle Grounds, Easy as Pie, Fire Starter, Follow Me, Robber Baron
 
+**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/bedtime-stories)
+
 ![Easieest +6 of my life](/public/mh-2023/blank_wyrm.png)
 {: .centered }
 </div>
 
 <div class="shaded" markdown="1">
 ### Walking Tour
+
+**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/walking-tour)
 
 We'd actually started ideating this puzzle at a Bay Area meetup in October. It was a pretty
 interesting meetup, since the first thing we did was testsolve Hall of Innovation. We were given most of the
@@ -2955,6 +2991,8 @@ fully disengage from Hunt. One night, I ended up idly working out the design for
 
 <div class="shaded" markdown="1">
 ### Win a Game of Bingo
+
+**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/win-a-game-of-bingo)
 
 I run [Mystery Hunt Bingo](https://www.alexirpan.com/mystery-hunt-bingo/). It's a tiny joke I
 threw together in an afternoon. Other people on teammate had asked me if I was writing a bingo puzzle this
@@ -3075,6 +3113,8 @@ coming.
 
 <div class="shaded" markdown="1">
 ### Weaver
+
+**Puzzle Link:** [here](https://interestingthings.museum/puzzles/weaver)
 
 They say all good stories end where they began. Weaver was one of the first
 feeder puzzles I helped brainstorm, and now it was one of the last I'd help make.
