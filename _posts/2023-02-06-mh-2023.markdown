@@ -4077,6 +4077,12 @@ arrow keys, and fixed that too. (Much later, a week after Mystery Hunt,
 we learned the accessibility fix in Factory CSS [broke printing on all Factory puzzles](https://devjoe.appspot.com/mitmh2023.html). In general, please contact HQ if you have an issue with the site! We can't do everything,
 but this specific issue only took 15 minutes to fix once we knew about it. We just never knew about it.)
 
+A few teams start reporting that they do not see the puzzle icon for [Cute Cats](https://interestingthings.museum/rounds/art), and are asking if that's relevant. We tell them it isn't, and start investigating.
+Do you want to know what happened? Part of our asset packing step generates random filenames
+based on image content, to do cache busting. The filename generated was
+`https://cdn.mitmh2023.com/media/ad/*.png` and this caused ad blockers to block the puzzle icon.
+Easily the most "I hate programming" moment of the Hunt.
+
 Huntcomm was still concerned about the pace of Hunt, so they decided to give extra event rewards
 for the first event.
 They asked if there was a way to see how many event rewards a team had used, because they
