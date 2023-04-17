@@ -3400,6 +3400,9 @@ the looping art after the solve ("oh god, we're dumb").
 I was mostly relieved that all the parts of breakout and Wyrmhole had worked the way we wanted,
 and that we could move them into the "done" column.
 
+![Collage test worked](/public/mh-2023/collagetest.png)
+{: .centered }
+
 
 # January 1-8, 2023
 
@@ -4286,7 +4289,11 @@ come back for an hour because TTBNL was stuck on the last mini and guessing CONJ
 Meanwhile, hints were still coming in, with only half of staff available
 to reply. This made the dispatcher very upset, and he tried to get people who weren't directly
 acting to stay behind in HQ and join a later run. But people were very excited to yell at
-teams, and I never expected the cat herding to succeed.
+teams, and I never expected the cat herding to succeed. I went back to answering hint requests,
+keeping an eye out for interesting ones.
+
+![Weaver hint request](/public/mh-2023/weaverthumbs.png)
+{: .centered }
 
 We had now crossed another MIT campus closure checkpoint. I packed my things and helped bring
 physical puzzles to a hotel pickup point, checked they didn't need tech help, and went to my
