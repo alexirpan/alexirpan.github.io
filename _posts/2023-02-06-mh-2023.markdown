@@ -63,7 +63,7 @@ This post aims to be complete, and that means it may not be as entertaining.
 I'm not sure
 of the exact audience for this post, and figured it'd be useful if I just dumped everything I thought
 was relevant. If you are the kind of person who reads a Mystery Hunt retrospective that's posted
-in April, you might like seeing the nitty gritty details anyways.
+in April, it's likely you'll want to see the nitty gritty details anyways.
 
 Most of the post is going to be a play-by-play of things I worked on. The analysis and commentary
 is at the end.
@@ -174,7 +174,7 @@ puzzle, but in general the goal was to be creative and avoid filler.
 **Innovation in hunt structure:** This is something that both previous [Teammate Hunts](https://2021.teammatehunt.com/) did, and as a team
 we have a lot of pride in creating puzzles that stretch the boundaries of what puzzles can be.
 
-**High production value:** teammate has both a lot of software engineers and a lot of art talent, which
+**High production value:** teammate has both a lot of software engineering and art talent, which
 let us make prettier websites and introduce innovations like copy-to-clipboard. We wanted to make a Hunt
 that lived up to the standards set by our previous hunts.
 
@@ -466,12 +466,12 @@ Aside from the design changes needed to make that work, the rest of the puzzle
 mechanics stayed the same, and the work later in the year was mostly figuring out how to embed it
 in our codebase and share team state.
 
-I've been told that technically, the quantum interpretation of Quandle is bad. I believe the core
+I've been told that technically, the quantum interpretation of Quandle is inaccurate. I believe the core
 issue is that you're not supposed to be able to observe the probability distribution of a letter before
 observing the outcome. The distribution should immediately collapse to a fixed outcome as soon as you look at it,
 and you certainly shouldn't be able to make an observation that collapses from one superposition of 50
 realities to another superposition of < 50 realities. This all sounds accurate to me and I don't care.
-Get your pedanticism out of here, I'm trying to make a puzzle.
+Get your pedantry out of here, I'm trying to make a puzzle.
 </div>
 
 
@@ -567,7 +567,7 @@ round, and I'd like to think I had some tiny contribution to that round.
 The main round I got involved with was "Inset", which you know as Wyrm. But we'll get to that later.
 
 A few weeks into this process, team leads announce that the story beats for the three Factory metas
-have been figured out. We need to deliver on metas for three ideas:
+have been figured out. We need to deliver on metas for three ideas, that could be discovered in any order:
 
 1. There are multiple AIs.
 2. teammate discarded all AIs except for MATE.
@@ -768,7 +768,7 @@ the original paper by Benoit Mandelbrot and all other online sources I could fin
 
 In my experience, factchecking is the most underappreciated part of the puzzle writing process.
 The aim of factchecking is to make sure that every clue in the puzzle is true, and only
-has one unique solution. The first is easy, the second is hard. Even with the puzzle solution written by the author, this can take a long time to verify, on par with
+has one unique solution. The first is easy, the second is hard. Even with the puzzle solution in hand, it can take a long time to check uniqueness, on par with
 solving the puzzle forward.
 Although Wikipedia is the most likely source for puzzle information, Wikipedia
 isn't always correct, and it's important to verify all reasonable sources share consensus. You never
@@ -784,9 +784,9 @@ unfortunate to propagate falsehoods, but sometimes that's how it goes.
 ## A Bay Area Meetup
 
 teammate has people all over, with rough hubs around the Bay Area,
-Seattle, and New England. We held a meetup for Bay Area people in April, for anyone who felt the COVID exposure was within their risk tolerance.
+Seattle, and New York. We held meetups at each hub in April, for anyone who felt the COVID exposure was within their risk tolerance.
 
-We started brainstorming Weaver at this meetup. Much of the work would be done later, but this meetup
+We started brainstorming Weaver at the Bay Area meetup. Much of the work would be done later, but this meetup
 was the first time
 Brian mentioned wanting to make an underwater basket weaving puzzle, using
 special hydrochromic ink that dried white and became transparent when wet. The idea sounded super cool,
@@ -875,8 +875,8 @@ to find copies of Museum puzzles within the Factory, since the Factory created p
 for the Museum.
 * The gimmick for Wyrm was in the structure, not the feeder answers. Out of the four AI rounds,
 it was the one most suited to repeated feeders.
-* The overall hunt would require 6 fewer puzzles to write. Puzzle production had fallen
-under the target trendline of all puzzles written by December 1st, and reducing feeders was one way to
+* The overall hunt would require 6 fewer puzzles to write. The target deadline for finishing all
+puzzles was December 1st, and we were behind schedule. Reducing feeders was one way to
 catch up.
 * If we could make that set of feeders fit 4 meta constraints (Museum meta, Museum metameta, Wyrm
 meta, Wyrm metameta), it'd be really cool.
@@ -918,7 +918,7 @@ any numbers on whether teammate writers were more interested in writing regular 
 puzzles, but I suspect most of the newer writers wanted to write puzzles with regular answers, and did not have
 as much to do while the metas were getting worked out. (There was an announcement to keep working
 on puzzle ideas before feeder release, but it is certainly easier to maintain motivation if you have
-a feeder you're working towards.)
+a feeder answer you're working towards.)
 
 I'd estimate that the extra design constraints delayed the release of that pool of 53 feeders by 2-4 weeks.
 It forced more work on Museum meta designers who already needed to fit their meta pun and
@@ -1040,7 +1040,7 @@ towards the Sierpinski triangle. This was the step with the largest leap of fait
 end we decided to hint that the corners would touch only at vertices, and the final shape would
 be triangular, but no more than that.
 
-The second isn't really a revision, it was more logistics. In Mystery Hunt 2020, teammate got stuck on
+The second revision was to make it a physical puzzle. In Mystery Hunt 2020, teammate got stuck on
 the final [penny puzzle](https://puzzles.mit.edu/2020/workshop/) for 7 hours. This was quite painful, given that we had literally no other relevant
 puzzles to do, but at the end of Hunt we liked that we ended up with a bunch of small souvenirs that people could
 take home. We had already observed some struggles with spreadsheeting the triangle grid, and since
@@ -1063,10 +1063,11 @@ of expected bigram extraction mechanisms. All Museum and Wyrm authors coordinate
 to make MATE's META come together.
 Based on Museum meta drafts so far, editors ranked how
 tight their constraints were, and gave more constrained metas higher priority. The repeated feeders
-for Wyrm that we wanted in The Legend then got higher priority on top of that. Wyrm authors were
-directed towards testsolves of the Museum metas, so that we could help brainstorm alternate
-answers that were compatible with Wyrm constraints. Meanwhile, testsolves of The Legend
-were often biased towards Museum meta authors, so that they could know a bit about what was going on.
+for Wyrm that we wanted in The Legend then got higher priority on top of that. Museum authors were
+asked to take 1-2 Wyrm answers each, to avoid concentrating them into one meta.
+Wyrm authors were fast-tracked to testsolves of the Museum metas, so that we could help brainstorm alternate
+answers that also fit the Wyrm constraints. Meanwhile, testsolves of The Legend
+were biased towards Museum meta authors, so that they could know a bit about what was going on.
 We did not expect to use each meta extraction mechanism an equal number of times, but aimed for
 the balance to not be too off-kilter.
 
@@ -1074,7 +1075,9 @@ I helped field questions from Museum meta authors. Yes, someone needs to take th
 know it's not a great answer but haven't found an alternative that fits the double O constraint. Yes,
 TRIFORCE can't change.
 To help aid in feeder search, I wrote a script that attempted all Museum metameta bigram mechanics on
-all Wyrm feeder ideas so far, to see what sticks. The feeder quality starts pretty awful. After discussing
+all Wyrm feeder ideas so far, to see what stuck.
+
+The feeder quality started pretty awful. After discussing
 with authors of MATE's META, editors add the glitch mechanic to that puzzle. Glitches erased parts
 of feeders before MATE's META acted on them, allowing mechanics like "first + last letters" to have many more options. Feeder quality starts going back up.
 
@@ -1502,6 +1505,9 @@ to TEAMMATE.
 ![Early breakout version](/public/mh-2023/breakout_old.png)
 {: .centered }
 
+![Terminate assembled](/public/mh-2023/terminate_assembled.png)
+{: .centered }
+
 Testsolvers rather this as "okay but not exciting, a bit too obvious when letters exist
 on the pieces".
 This was revised to the version that went in the Hunt, which avoided showing letters directly
@@ -1697,7 +1703,7 @@ so your exposure to missing something in factchecking is larger as well.
 
 # August 2022
 
-## Archaeology
+## Mining for Content
 
 As the date for retreat approached, most of my work was on fixing parts of the Loading
 Puzzle. Still, there was time to work on other puzzles along the way.
@@ -2300,11 +2306,11 @@ If you want to solve a fun puzzle, go solve [Interpretive Art](https://interesti
 solve experience, go solve [Puzzle Not Found](https://2020.teammatehunt.com/puzzles/puzzle-not-found). But, if you want a puzzle with
 spectacle that will strike fear into your heart, I can only recommend
 [5D Barred Diagramless with Multiverse Time Travel](https://puzzlefactory.place/puzzles/5d-barred-diagramless-with-multiverse-time-travel). It is very upfront about
-what you are getting into, and, to paraphrase Bennett Foddy,
-["I made this puzzle for a certain kind of person - to hurt them."](https://www.youtube.com/watch?v=wzjuQ3K72u4).
+what you are getting into, and, to quote our Office art, "sometimes, the point of a
+puzzle is to be fun, but other times it's to inspire fear".
 
-Okay I am exaggerating a bit for comedy. I think it's long, but actually not as difficult
-as the title suggests. Let's start from the beginning.
+Okay I am exaggerating a bit for comedy. I think it's long, but looks scarier than
+it is. Let's start from the beginning.
 
 The first draft of this puzzle was written in February for our internal puzzle potluck.
 I really liked the joke [made by a team in DP Puzzle Hunt](https://dp.puzzlehunt.net/team/5D+Crosswords+With+Multiverse+Time+Travel.html),
@@ -2598,9 +2604,11 @@ did.
 
 By this point, the puzzle had become a bit of a meme. I will admit that I deliberated
 cultivated that meme. About 1/3rd of teammate had testsolved it and another
-1/3rd had heard a rumor that there was a "5D puzzle". We had another
-puzzle called 4D Geo, and it was funny to realize that our hunt had a 3D puzzle, a 4D puzzle,
-and a 5D puzzle.
+1/3rd had heard a rumor that there was a "5D puzzle".
+It was funny to realize that our hunt had a 3D puzzle
+in [Some Assembly Required](https://puzzlefactory.place/factory-floor/some-assembly-required),
+a 4D puzzle in [4D Geo](https://puzzlefactory.place/puzzles/4d-geo)
+and now a 5D puzzle in this one.
 "We have too many dimensional puzzles, non-2D puzzles are banned."
 
 The chess factchecking was easily the most terrifying factchecking experience of my life. When I'd
@@ -3005,9 +3013,9 @@ threw together in an afternoon. Other people on teammate had asked me if I was w
 year, and I kept telling them I would if I had a good idea. I had not had any good ideas and stopped
 thinking about it to work on other puzzles.
 
-Well, it was December, and we were in our final puzzle writing push. The official answer claim deadline
-was December 1st, but it had gotten pushed to January 1st. The list of available feeders was dropping
-fast, so if I wanted to make a bingo puzzle, it was now or never.
+Well, it was December, and we were in our final puzzle writing push. The official puzzle draft
+deadline was December 1st, but it had gotten pushed to January 1st. The slots available were
+dropping fast, so if I wanted to make a bingo puzzle, it was now or never.
 It felt like an enormous missed opportunity if I didn't do something, so I figured I'd give it another
 shot.
 
@@ -3571,6 +3579,7 @@ going to just
 directly copy paste the questions in our factchecking template. (In retrospect, it looks a lot
 like a prompt you'd give to a large language model.)
 
+<div class="shaded" markdown="1">
 **Instructions:** Fill out this checklist. Completeness and Correctness are the most important points to check
 carefully. If it does not apply, note it can be skipped.
 
@@ -3615,6 +3624,7 @@ but were put in dark mode (black background, white text) to signify that they we
 * Solution is in first person plural ("we", "our", etc). It does not use terms like "the solver", etc
 * There are no typos or grammatical mistakes in the solution.
 * Solution is displayed (post-prodded) correctly.
+</div>
 
 Depending on the puzzle, there could be up to four different "versions" of it to check (the displayed puzzle,
 its display in dark mode, its display in print preview, and its copy-to-clipboard). I think almost every puzzle I helped on failed
@@ -3724,7 +3734,7 @@ task please give me something to do."
 It was for [Tissues](https://puzzlefactory.place/factory-floor/tissues) and I spent an hour using a paper cutter to slice large sheets into smaller
 sheets, and folding flat tissue boxes into box-shaped boxes.
 
-Meanwhile, one of our drivers / runners reported a problem.
+Meanwhile, one of our two drivers reported a problem.
 
 > I'm about to wreck y'all's day.
 >
@@ -3733,7 +3743,8 @@ Meanwhile, one of our drivers / runners reported a problem.
 > I am currently largely fine, so don't flip out, but as I was walking back to my car, a car hit me
 > in a crosswalk.
 
-THANKS UNIVERSE, THAT WAS A REALLY FUN CURVEBALL YOU JUST THREW AT US. JUST SWELL. Luckily the driver was very apologetic, immediately taking the teammate in the accident to the ER. They were able to show up for Hunt and help out, aside from needing to use crutches and have a leg in a cast. They were later diagnosed with a Grade 2 MCL sprain. As of April, it is still recovering, but the recovery looks promising.
+THANKS UNIVERSE, THAT WAS A REALLY FUN CURVEBALL YOU JUST THREW AT US. JUST SWELL. Luckily the person who hit them was very apologetic, immediately taking the teammate in the accident to the ER. They were able to show up for Hunt and help out, aside from needing to use crutches. Post-hunt, they were diagnosed with a Grade 2 MCL sprain,
+and as of April, it is still recovering but the recovery looks promising.
 
 ## Wyrm Art, Again
 
@@ -3829,8 +3840,9 @@ where we would go through the entire site, both Museum and Factory, to check
 nothing unlocked early and nothing unlocked late.
 We also checked display issues similar to the factcheck spreadsheet, like
 site functionality at different screen sizes. As we discovered bugs, we discussed
-if they were worth fixing, or if the site was going to go as-is. With some
-final visual touch-ups along the way, the slowrun finished eight hours later
+if they were worth fixing now, would be fixed during Hunt, or not fixed at all.
+Those who want the gory details can go [here](https://docs.google.com/document/d/1pjwkST6iQMGZfhMlVvx8yzZvCbFxGAc1knd_zElnVGU/edit?usp=sharing).
+With some final touch-ups along the way, the slowrun finished eight hours later
 at 8 AM.
 
 Kickoff was in a few hours and some people in the slowrun needed to go straight
@@ -4148,7 +4160,7 @@ self-reported they had stopped solving Hunt.
 The people managing check-ins had decided to do everything over Google Sheets instead.
 
 Teams were still behind huntcomm's projections, so they handed out more event rewards. With
-event reward alerting up, it was now very clear that lots of teams were stockpiling their
+reward alerting up, it was now very clear that lots of teams were stockpiling their
 rewards. Teams were making progress, but we needed teams to use free answers *despite
 making progress*. I understood why they weren't using free answers, but understanding didn't make it less
 stressful.
@@ -4186,7 +4198,7 @@ intermediate steps rather than changes to existing clues and designs.
 [We Made a Quiz Bowl Packet](https://puzzlefactory.place/puzzles/we-made-a-quiz-bowl-packet-but-somewhere-things-went-horribly-wrong) was marked unnerfable due to requiring clue rewrites.
 [5D Barred Diagramless](https://puzzlefactory.place/puzzles/5d-barred-diagramless-with-multiverse-time-travel) was also basically unnerfable.
 But, some of the other puzzles I worked on had easier nerfs. [Period of Wyrm](https://puzzlefactory.place/factory-floor/period-of-wyrm) was given a more direct
-hint towards the Mandelbrot Set with the names of the people, and [Walking Tour](https://puzzlefactory.place/puzzles/walking-tour) had a reordering step removed.
+hint towards the Mandelbrot set with the names of the people, and [Walking Tour](https://puzzlefactory.place/puzzles/walking-tour) had a reordering step removed.
 
 By now the hint threshold had been lowered to N = 15, and huntcomm was hesitant to lower it any
 further. Partly it seemed unfair to bring N closer to teams that could be in contention
@@ -4241,9 +4253,9 @@ to tell them Mystery Hunt was cancelled.
 Shutting down the Factory was automated, but showing up on-campus was not.
 *Logistically*, teams did not know we would be coming to their rooms, so we needed to know when
 a team was close to solving Reactivation. The transit time from our HQ to another team's HQ could
-be up to 15-20 minutes at the extremes, and although we wanted teams to have nothing but
-a shutdown Puzzle Factory until we got there, we didn't want teams to *actually* be stuck
-waiting for teammate.
+be up to 15-20 minutes at the extremes. We wanted teams to have nothing but
+a shutdown Puzzle Factory, to sit with the consequences of their actions, but we didn't want teams
+to *actually* be stuck waiting for teammate.
 
 Our solution was to send a Discord alert when 3/4 Reactivation minipuzzles were solved (time
 to prepare) and 4/4 Reactivation minipuzzles were solved (time to barge into HQ). Kind of like a
@@ -5034,7 +5046,8 @@ There were 40 puzzles among the Museum rounds, and all rounds had some tricky pu
 This left a trilemma where not all three could be true at once:
 
 * Puzzles are mostly ordered by difficulty.
-* A meta for a round is unlocked only after a solid fraction of its feeders are solved.
+* A meta for a round is unlocked only after all its feeders have unlocked and a solid fraction of
+those feeders are solved.
 * A meta is unlocked early in Hunt.
 
 teammate ended up picking the last two, and this created the perception that Atrium was the intro round.
