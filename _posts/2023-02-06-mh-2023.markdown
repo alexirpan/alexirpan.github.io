@@ -226,7 +226,7 @@ discarded themes, but it also necessarily forced theme proposals to be light on 
 like "teammate is the villain" seemed to work their way into every serious theme proposal.
 Maybe that was genuinely the story we wanted to tell, but it could also have been an artifact of proposing
 themes while the memes were fresh. There may have been more diversity in theme ideas if they were written
-over a longer period of time. Palindrome's theme was picked by end of February, [according to Justin Ladia](https://www.justinladia.com/miscellaneous/%E2%8A%A5ornados-intertextuality-and-weird-al-yankovic-the-obligatory-wrap-up-post-for-mit-mystery-hunt-2022-by-a-member-of-team-palindrome/#part-2). Galactic's theme was picked February
+over a longer period of time. Palindrome's theme was picked by the end of February, [according to Justin Ladia](https://www.justinladia.com/miscellaneous/%E2%8A%A5ornados-intertextuality-and-weird-al-yankovic-the-obligatory-wrap-up-post-for-mit-mystery-hunt-2022-by-a-member-of-team-palindrome/#part-2). Galactic's theme was picked February
 26, [according to CJ Quines](https://mitadmissions.org/blogs/entry/two-hundred-puzzles-2/#theme-proposal-and-selection). teammate's theme was selected the evening of January 31.
 
 I was not on the story team, but in our post-Hunt retrospective, members of the story team
@@ -330,7 +330,7 @@ tph-site still uses Django as its backend, but differs in using a React + Next.j
 React is a Javascript library whose organizing principle is that you describe your page in components.
 Each component either has internal state or state passed from whatever creates the components.
 A component describes what it ought to look like according to the current state, and whenever the
-state is updated, React will determine everything that could depend on that state and rerender it.
+state is updated, React will determine everything that could depend on that state and re-render it.
 The upside: dynamic or interactive web pages become a lot easier to build, since React will handle
 a lot of boilerplate Javascript and state management for you. The downside: extra layers of indirection
 between your code and the resulting HTML.
@@ -485,12 +485,12 @@ Apologies to the other puzzles in the Wordle graveyard.
 
 Chat implementation for MATE and other AIs is coming along smoothly. teammate has multiple people with NLP experience,
 including with large language models, and for this reason we immediately know we are not going to touch
-them with a ten foot pole. We are going to stick to hardcoded chat responses, that trigger according
-to a hardcoded chat interaction graph, where at most we do a bit of NLP to determine chat intents. As
+them with a ten foot pole. We are going to stick to hardcoded chat responses that trigger according
+to a hardcoded chat interaction graph. At most we use NLP to determine chat intents, no more. As
 a proof of concept, we use text-adventure style intents, where only specific keywords will trigger
 the right behavior.
-Everyone involved with chat then gets busy, and we never move past this. I do wish we'd used one of the lightweight ML libraries for chat intents, to reduce
-the "sorry, I don't understand" replies, but I do think it was correct to deprioritize this.
+Everyone involved with chat then gets busy, and we never move past this. I do wish we'd used one of the lightweight ML libraries, to reduce
+the "sorry, I don't understand" replies, but it was correct to deprioritize this.
 
 > **User:** hi
 >
@@ -745,7 +745,7 @@ the juxtaposition of two capitalists getting labeled "Socialists" would have bee
 
 The other category we wanted to force was Hausdorff, since it was too thematic to not
 use. We wanted as many context clues pointing to fractals as possible, since the original
-metameta required Mandelbrot set inferred from flavor and round structure.
+metameta required Mandelbrot set to be inferred from flavor and round structure.
 
 I factchecked the Hausdorff answers, which was a fun time. I'll quote my despair directly.
 
@@ -855,7 +855,7 @@ rounds. Two, the story team was figuring out details of the midpoint capstone in
 of the Hunt,
 
 1. Solvers should reactivate the old AIs.
-2. This causes teammate to shutdown the Puzzle Factory and Mystery Hunt.
+2. This causes teammate to shut down the Puzzle Factory and Mystery Hunt.
 3. Solvers should then start powering up the Factory by solving some puzzles.
 4. That is just enough to wake up the old AIs, who start writing their own puzzles, letting
 teams continue powering up the Factory until endgame.
@@ -958,7 +958,7 @@ After talking with Patrick a bit, he proposed turning it into a logic puzzle, by
 This was especially
 appealing because it meant we could take almost any feeders, as long as they didn't have
 double letters and their total length
-was around 60-70 letters. Brian, who was spoiled on some of the Museum metas,
+was around 50-70 letters. Brian, who was spoiled on some of the Museum metas,
 mentioned that TRIFORCE was a plausible answer for both the Museum and Wyrm metameta, so
 if we could make the Sierpinski idea work, we could do a "triangle shitpost" by making TRIFORCE
 the looping answer for the round.
@@ -1278,9 +1278,9 @@ alternate spellings of each answer.
 For unlocks, I decided to recompute the entire web state whenever the list of solved words changed.
 This wasn't the most efficient, it could have been done incrementally, but in general I believe
 people underestimate how fast computers can be. Programmers will see something that looks like
-a software interview question, and get nerd sniped into solving that algorithms problem, while neglecting
+an algorithms problem, and get nerd sniped into solving that algorithms problem, while neglecting
 to fix their page loading a 7 MB image file it doesn't need to load. (If anything, the easier
-it is to recognize something is an algorithms question, the less likely it is to matter. The hard
+it is to recognize something is an algorithms problem, the less likely it is to matter. The hard
 parts are usually in system design.)
 
 In short, I figured recomputing the entire graph would be more robust,
@@ -1373,7 +1373,7 @@ like it'd
 accurately model the real Hunt would be having the round page with prototype art, and having testsolvers
 test many random feeder puzzles, including Collage, before they tested the Wyrm metas. Those random puzzles didn't
 exist yet, because they were waiting on feeder release. Which was waiting on testing the metas. Which
-wanted random feeder puzzles to exist first. Which didn't, because the metas weren't tested yet.
+wanted random feeder puzzles to exist first. And they didn't, because the metas weren't tested yet.
 
 Who knew making an ouroboros-style round would make it hard to find a starting point?
 
@@ -1432,7 +1432,7 @@ of something that you already know exists?
 This is always the risk you take with structure-level gimmicks. The transition to discovering the
 Puzzle Factory was a key part of the theme proposal, which was heavily discussed early in the year.
 In general, it is okay for people to testsolve puzzles even if they know the answer to it already.
-It's pretty easy to compartmentalize that knowledge. But for a gimmick this out there, we wanted
+It's pretty easy to compartmentalize that knowledge. But for a gimmick this out-there, we wanted
 as accurate a test as possible.
 
 The traditional answer to this problem is to recruit external testsolves. We tested the Teammate Hunt
@@ -1496,7 +1496,7 @@ to complexity concerns.
 
 Early prototypes were based on an infinite conveyor belt of pieces, except there would only be a few
 different ones. Screenshotting and assembling the pieces would spell out the answer, and entering it
-would cause the conveyor belt to breakdown. At the time, the answer was TERMINATE, due to its similarity
+would cause the conveyor belt to break down. At the time, the answer was TERMINATE, due to its similarity
 to TEAMMATE.
 
 ![Early breakout version](/public/mh-2023/breakout_old.png)
@@ -1829,9 +1829,9 @@ puzzles. Most physical puzzles were in Act I anyways, based on 2022 feedback tha
 like [Diced Turkey Hash](https://puzzles.mit.edu/2022/puzzle/diced-turkey-hash/) were placed
 later than teams liked..
 
-Almost immediately, we started hitting technical problems. A few were real software bugs,
-but most of them were tied to trying to have ~20 laptops and ~20 phones all connect to
-the same WiFi. It...did not work that reliably. I switched to using a WiFi hotspot from my phone.
+Almost immediately, we started hitting technical problems. The main issue
+was trying to connect 20 laptops and 20 phones to the same WiFi.
+It...did not work that reliably. I switched to using a WiFi hotspot from my phone.
 The other issue was that our testing server was fine for 3-5 people, and less fine for 20+. The
 setup for tph-site assumes it runs on a single VM, so we were not connected to an autoscaling
 service and needed to migrate on our own.
@@ -1975,7 +1975,7 @@ we landed on pyramidal quiz bowl questions. Some authors were fans of quiz bowl
 and it's a puzzle-adjacent hobby. That got pyramid into the theming.
 The idea of extracting based on diagonalizing words based on a Hamiltonian path of
 the United States seemed like a good way to tie America into the theming as well.
-We spent much of the morning working out mechanics in more details (how to
+We spent much of the morning working out mechanics in more detail (how to
 connect answers to states, how to extract), and made a suitable quiz bowl question
 for the desired puzzle answer.
 Unlike regular quiz bowl, solvers would have access to the Internet, so we
@@ -2017,8 +2017,8 @@ obscure questions by pretending they were always talking about a location. In th
 although the bulk of the puzzle would still be Googling, you'd start with a global
 a-ha that the location theming was misdirection. Then every sentence would
 have a local a-ha in deciding how to reinterpret the clue. "Cryptic-like" is the right analogy
-here. Cryptics work because you need to decide what is wordplay and what is definition,
-and similarly you'd need to decide what parts to read straight and what parts were location
+here. Cryptics work because you need to decide what is wordplay and what is definition.
+Similarly, you'd need to decide what parts were straight and what parts were location
 wordplay.
 
 This made the puzzle...a *lot* harder. which got corroborated by testsolving. To paraphrase, the
@@ -2047,7 +2047,7 @@ From our #puzzle-ideas channel during retreat:
 ![Someone saying the loading animation should be a puzzle](/public/mh-2023/itisapuzzle.png)
 {: .centered }
 
-*What the hell do we do.* What nerfs are even left to apply?
+*What the hell do we do?* What nerfs are even left to apply?
 
 I don't think the relevant pool of solvers ever solved the puzzle organically. Instead,
 hunt exec, breakout authors, and a few unspoiled solvers were all shuffled into the same
@@ -2154,7 +2154,7 @@ I'd say my main ramp-up on Hunt tech started around here.
 There were a number of tasks to do, and the main one I took was handling the Wyrm round page.
 This ended up being a *lot* more complicated than I thought it would be. During Wyrm ideation,
 we discussed the [Zoomquilt](https://zoomquilt.org/) and its [sequel](https://zoomquilt2.com/)
-as both art inspiration and proof-of-concept that we could make a infinitely zooming round page.
+as both art inspiration and proof-of-concept that we could make an infinitely zooming round page.
 {I remember Huntinality 2022's [registration form](https://2022.huntinality.com/) also came up.)
 
 Art brainstorms for Wyrm had locked in a construction paper aesthetic,
@@ -2207,7 +2207,7 @@ To make the zoom work, we needed the zoom implementation to look seamless.
 The initial prototype was not. There was very noticeable pop-in as you swapped between layers,
 on both the background image and puzzle icons.
 
-It 100% seemed liked a solvable problem, given that Zoomquilt was seamless and I remember
+It 100% seemed like a solvable problem, given that Zoomquilt was seamless and I remember
 it looking seamless on 10 year old hardware. When I looked more closely, their code was based
 on using an HTML canvas. I was less excited about this, because HTML canvases don't use vector
 graphics, and the default usage created weird rasterization artifacts when I tried using it
@@ -2244,7 +2244,7 @@ a commit, but in Teammate Hunt 2021 it was kind of ass to alternate back and for
 page and round page, refreshing to check every adjustment since the page did not live-refresh.
 To fix this, I coded a what-you-see-is-what-you-get drag/drop positioning tool. When logged in as the admin team,
 it drew this horrible, ugly red box that
-could be moved around. Dragging the box would drag the puzzle icon, and whenever it was dropped it would auto-save the new position and size info to server.
+could be moved around. Dragging the box would drag the puzzle icon, and whenever it was dropped it would auto-save the new position and size info to the server.
 We'd then do one reconcile step at the end to export position data from the server and commit it into
 code.
 
@@ -2258,10 +2258,10 @@ server-side), and handling some of the revisions tied to breakout's testsolve at
 
 Galactic Puzzle Hunt 2022 ran around this time, notably with more tech issues than last time.
 In a spoilery discussion about GPH with some puzzlehunt devs, a dev from Huntinality shared
-a k6 loadtesting script they used for Huntinality, along with some optimizations
+a k6 load testing script they used for Huntinality, along with some optimizations
 and bug fixes they found in tph-site's websockets code. I immediately make a note to test their
-bug fix later. The loadtest script in particular looks nicer than the hodge-podged Locust code I had
-written to loadtest the Playmate in Teammate Hunt 2020.
+bug fix later. The load test script in particular looks nicer than the hodge-podged Locust code I had
+written to load test the Playmate in Teammate Hunt 2020.
 
 I also joined the brainstorm group for what we called the midpoint capstone puzzle, which you know as:
 
@@ -2275,7 +2275,7 @@ but this time it is serious.
 I was in the first brainstorm
 meeting, where the creative team said they wanted each puzzle to be thematic to the AI. I shared some
 links to [turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics) for Wyrm, which matched
-the repeating patterns idea, then stopped paying attention to any of puzzle construction. That's all I did.
+the repeating patterns idea, then stopped paying attention to the puzzle construction. That's all I did.
 </div>
 
 
@@ -2336,7 +2336,7 @@ well.)
 This seemed like a *horribly* tight set of constraints, but I had no better ideas
 and went forward with construction, using a cryptic crossword shaped grid to cut
 required work in half. After reading even more presidential election Wikipedia
-articles (again, would not recommended), I found two other years where I could
+articles (again, would not recommend), I found two other years where I could
 finagle three candidates that all had eleven letter names. It required dipping into
 the endless sea of 3rd party candidates and was awful, but it was good enough
 for a proof of concept.
@@ -2354,7 +2354,7 @@ I reflected on the design, and came away with these goals.
 * As much as possible, I wanted
 the puzzle to look like a single grid. A 5D crossword can have many different
 projections into 2D space, but it should be viewable as a single crossword if you
-adopted a 5D perspective.
+had a 5D perspective.
 More specifically, the given borders and black squares should
 match across all of the 2D grids.
 * The potluck version extracted with just the alternate timeline entries.
@@ -2388,10 +2388,10 @@ with a blank square).
 Great, problem solved! Time to learn how 5D Chess works. How hard could it be?
 
 Neither of the editors had played 5D Chess before, but they said this all sounded
-good and assigned me an answer from Boötes, with the reasoning that a 5D puzzle could accomodate
-a 2D answer. The answer I got had some punctuation in it, which I agreed to try
-fitting into the puzzle. I played around with having some rebus entries,
-like cluing the actor GAI**L PAREN**T and filling it in the grid as GAI(T. The
+good and assigned me an answer from Boötes, with the reasoning that a 5D puzzle could accommodate
+a 2D answer. The answer I got had punctuation in it, which I agreed to try
+fitting into the puzzle. I played around with rebus entries,
+like cluing the screenwriter GAI**L PAREN**T and filling it in the grid as GAI(T. The
 answer options weren't great, but it wasn't impossible.
 
 The much bigger problem was the chess.
@@ -2415,7 +2415,7 @@ questions about whether they had been moved yet or not, and queens were terrifyi
 5D chess has, like, 60 possible moves. There are arrangements where if a queen and king are arranged
 properly, the queen can mate the king in 7 different ways. Trust me, using queens would have been a bad time.
 
-To get early feedback on just the chess step, I ran some tests with a grid filled wtih random letters.
+To get early feedback on just the chess step, I ran some tests with a grid filled with random letters.
 What was immediately clear from those tests was that it was very easy for someone to skim a 5D chess guide,
 believe they knew 100% of the rules when they only knew 50% of the rules, and then attempt to solve the
 chess puzzle with incomplete information.
@@ -2488,7 +2488,7 @@ one of the following:
 
 This meant the crossword fill and chess problem could not be constructed
 independently. The puzzle needed to start from the two-timeline entries and their
-placement, and only then could the chess problem could be made.
+placement, and only then could the chess problem be made.
 
 This is the only reason the 2008 entry for "Olympics host city" was
 BEIJING / BANGKOK. Bangkok failed in the very first round of IOC evaluation,
@@ -2536,7 +2536,7 @@ to send it to another chess-only testsolve.
 This testsolve went a bit better, but still had some trouble due to confusion
 on how to set up the chess problem and what "one move" meant.
 By this point the puzzle had evolved from "solve a crossword, get an answer"
-to "solve a crossword, congrats you're 50% done", and it felt like it was on the edge of unreasonably
+to "solve a crossword, congrats you're 50% done", and it felt like it was on the edge of being unreasonably
 long. I expressed these feelings of uncertainty to testsolvers, at which point
 they said that even though they had been stuck for 2 hours, 5D Chess was
 "exactly the bullshit I expect to see in Mystery Hunt" and I should keep it
@@ -2628,7 +2628,7 @@ The only recourse was for me to do what testsolve had not: take my 90%
 knowledge of 5D Chess rules and do the work to bring it up to 100%.
 
 It took me another month to analyze the puzzle enough to conclude that none of the edge cases were an issue. For the first, I had won a 50-50
-coinflip with having black own the 2nd timeline instead of white. For the second,
+coin flip with having black own the 2nd timeline instead of white. For the second,
 there were no issues, but I wasn't expecting that to be an issue. The last edge
 case was 1 square away from being a problem, but wasn't. In retrospect I think there
 was a 60% chance the puzzle was wrong, and I got *very* lucky I ended up in the
@@ -2675,14 +2675,14 @@ was stored in a spreadsheet.
 Artists would edit that spreadsheet, and our code would download it, parse it, and
 then compute what sprites should appear on the page and how they should move. This CSV was a
 nightmare, but was no less ugly than any other configuration system would have been. It was done
-over Google Sheets to get tech team out of the loop of icon positioning. Later I'd learn we'd
+over Google Sheets to get the tech team out of the loop of icon positioning. Later I learned we'd
 independently recreated a system similar to one used in Super Smash Bros. Ultimate's development,
 although they used Excel instead of Google Sheets.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nGaajB8m5Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The Factory round page seemed well handled, so I offered to go more all-in on other tasks
-and starting picking up more tasks.
+and started picking up more tasks.
 
 ## Events
 
@@ -2695,7 +2695,7 @@ Pretty much every recent Mystery Hunt has used this system. It just works.
 
 If there is no events meta, what should events do? Editors-in-chief decided that
 events should act as either free answers (manuscrip) or free unlocks (Penny Passes). Free answers
-would only usable in non-AI rounds, and free unlocks would be usable everywhere. We wanted event rewards
+would only be usable in non-AI rounds, and free unlocks would be usable everywhere. We wanted event rewards
 to be useful at all stages of the hunt, but didn't want teams breaking into the AI round gimmicks
 by redeeming free answers.
 
@@ -2796,7 +2796,7 @@ Note there are 0 puzzle solves between any of these events. It all needs to be h
 triggers.
 
 Tied to this was supporting live updates of round pages without requiring page refresh. This was
-originally labeled as a "optional but nice to have" issue, but I raised the point that shutting down Mystery Hunt *would not work* if the site didn't live-update. Imagine that you talk to MATE, and the conversation stops, but
+originally labeled as an "optional but nice to have" issue, but I raised the point that shutting down Mystery Hunt *would not work* if the site didn't live-update. Imagine that you talk to MATE, and the conversation stops, but
 the Factory is still brightly lit and everything is interactable. Only when you refresh the page does
 everything go dark. Doesn't that really break the immersion?
 
@@ -2809,10 +2809,9 @@ that said "resend your initial API call and update your component state with the
 "Wait, do we need to worry about self DDOS-ing our site"?
 
 Assuming an entire 100-person team was watching the story, we'd get a quick burst of 100 requests. That
-seemed fine. What would not be fine would be if every tab from that team fired at the same time, since
-that looked more like 3000 requests at once. To handle this, the site only resends the API call if
-the tab is active. We then added a listener that delayed any other API requests until the tab was made
-active.
+seemed fine. If every *tab* from that team fired at once, the burst would be more like 3000 requests
+at once, which seemed less fine.
+To handle this, the API call was put in a queue, and fired only when each tab was made active.
 
 
 ## "Wyrm is a Special Child"
@@ -2861,7 +2860,7 @@ not puzzle triggers, since the state change needed to occur during the Wyrm inte
 no puzzle was getting solved.
 
 In short, there was an inordinate amount of work done for a section of Hunt
-most teams sped through in 3 minutes. Of the Wyrm emotes, :sadwyrm: was definitely used the most,
+most teams sped through in 3 minutes. Of the Wyrm emotes, ":sadwyrm:" was definitely used the most,
 whenever "yet another Wyrm edgecase" appeared.
 
 ![Wyrm sad](/public/mh-2023/wyrm_sad.png)
@@ -3055,10 +3054,10 @@ This doesn't inherently mean "easy", but it's usually faster to design a puzzle 
 of two.
 
 Justin suggested that in any game of Bingo, there were going to be three parties: you, your opponents, and
-the person calling out numbers. Nine splits into three nicely, so each letter could as a function on one of the three parties. That decreased the "depth" of the puzzle, since you'd only need to reason up to 3 functions deep
+the person calling out numbers. Nine splits into three nicely, so each letter could act as a function on one of the three parties. That decreased the "depth" of the puzzle, since you'd only need to reason up to 3 functions deep
 once you understood what was going on. He also suggested the core idea used in the puzzle: numbers in our
 grid should satisfy some property X (like "even"), numbers in our opponent's grid should satisfy some disjoint
-property Y (like "odd"), and the numbers called should be very biased towards Y. The functions should then generally keep property Y true, except for a small number that pushed numbers towards X, and we'd use that
+property Y (like "odd"), and the numbers called should be very biased towards Y. The functions should then generally keep property Y true, except for a small number that push numbers towards X, and we'd use that
 to engineer a unique solution.
 
 Based on that I decided it'd be easiest if our numbers started low and the opponent's numbers + numbers called started high, with most functions adding and only a few functions subtracting.
@@ -3089,7 +3088,7 @@ When you win the game,
 the puzzle directs you to reverse the winning seed, which points you to Mystery
 Hunt Bingo, which solves the puzzle. This reversing step exists
 only to fight wheel-of-fortune attempts. All the testsolvers tried to nutrimatic
-from 3/9 letters, and the one [Hunt writeup](https://blog.vero.site/post/2023-hunt)
+from 3/9 letters, and the one [Hunt write-up](https://blog.vero.site/post/2023-hunt)
 that mentioned Bingo did the same thing. I mean this in the best way possible:
 y'all are too predictable.
 
@@ -3101,7 +3100,7 @@ control over the order of the phrase list! The PRNG outputs a list of indices, s
 in the seed, I changed the order of the phrase list such that the generated indices
 lined up with the right phrases. It's been a long long time since I've done any
 cryptography, but I'm pretty sure this protocol isn't breakable even if you
-checked source before Hunt.
+read the code before Hunt.
 
 The side effect is that right now, I can't adjust the phrase list without breaking my Mystery Hunt
 puzzle. Sometime I'll get around to hardcoding the edge case or making a
@@ -3132,7 +3131,7 @@ of weaving patterns on paper.
 
 Through experimentation with the hydrochromic ink, Brian confirmed that the ink felt
 chalky, and you needed to spread a lot to make the coat of paint cover up text.
-However, you did not need as much to hide white text, since the hydrochormic ink dried
+However, you did not need as much to hide white text, since the hydrochromic ink dried
 white and disguised it naturally.
 
 The final version was wooden reeds of a tan color, covered with a coat of hydrochromic
@@ -3160,11 +3159,11 @@ would be held inside a wooden frame. This frame was iterated several times,
 with the last one being two flat pieces of wood, each laser-etched with grooves where
 the reeds should go. The frames would be held together with binder clips for easier
 assembly and disassembly.
-A teammate with access to a makerspace in Berkeley ordered a bunch of wood, to laser cut the stencils,
+A teammate with access to a makerspace in Berkeley ordered a bunch of wood to laser cut the stencils,
 frames, and triangles for The Legend.
 
 The wood arrived! It was then stolen from their mailroom. So they had to ship another order, which
-pushed production back a few weeks. I'd ask "who steals a bunch of wood from a mailroom", but, well,
+pushed production back a few weeks. I'd ask "who steals a bunch of wood", but, well,
 we were evidence that wood was in high demand. Maybe it's easier to resell wood on the black market.
 (This is why people read my blog, for the riveting package stealing commentary.)
 
@@ -3298,8 +3297,8 @@ nicely.
 Early iteration of Wyrm art
 {: .centered }
 
-We decided to break our rule, just this once, and make puzzle title + answer only show on hover.
-There would be a list of puzzles at the bottom of the page as a fallback for showing solve
+We decided to break our rule, just this once, and make the puzzle title + answer only show on hover.
+There would be a list of puzzles at the bottom of the page as a fallback for showing the solve
 state.
 
 The puzzle icons had all worked back in October, but when trying it again in December with real art assets,
@@ -3307,7 +3306,7 @@ the round was quite laggy. The problem was that in October, we had tested with 1
 icons of different shapes, but now we were using full 1024 x 768 images, one per puzzle. Pop-in
 was a lot more obvious.
 
-To solve this, we changed out code to send a single image for the entire background. Then,
+To solve this, we changed our code to send a single image for the entire background. Then,
 instead of brightening icons on hover, there would be six 100% transparent white rectangles,
 cut to the shape of each puzzle icon. Hovering over each dive would toggle the transparency
 to 50%. A white rectangle could be done entirely in CSS, reducing the network + render cost
@@ -3367,10 +3366,10 @@ Everyone testsolving all puzzles is super inefficient. But everyone *does* need 
 puzzles when writing hint responses and answering emails, so you are eventually forced to spoil yourself
 on things you don't get to experience normally.
 
-There were a number of speed issues reported in the Factory round page, that
-hadn't shown up within the tech team. We asked for everyone with slowdown to
+There were a number of speed issues reported in the Factory round page that
+hadn't shown up within the tech team. We asked everyone with slowdown to
 report their OS and browser, which did not expose any clear patterns. This
-was itself useful information that the root of the issue lay elsewhere - it
+was itself useful information that the root of the issue lay elsewhere. It
 was finally debugged to inconsistent enabling of hardware acceleration. People
 with slowdown confirmed it got better when forced on, but unfortunately this was
 a fix solvers would need to apply themselves. We added an info icon with instructions
@@ -3406,7 +3405,7 @@ The full hunt speedrun had found many more tech issues than I thought we'd find.
 "Wyrm should save its zoom level", "I hit a 404 on this link that showed up",
 "Notifications are going off-screen", and so on. Each issue was prioritized and we went down them in order.
 
-Meanwhile puzzle postprods and factchecks were getting merged in at an absurd rate.
+Meanwhile puzzle postprods and factchecks were getting merged into the codebase at an absurd rate.
 Thank goodness for the auto-postproduction script, because boy were there just a lot of words words words to copy into HTML.
 I caught up on writing a bunch
 of solutions that I'd been putting off for a while, but left their postproduction to other people
@@ -3425,7 +3424,7 @@ different.
 
 This would be the third time I'd done load testing for a puzzlehunt. First I did it on my own for
 [Puzzles are Magic](https://www.puzzlesaremagic.com/). Then I was asked to do it for Teammate Hunt
-thanks to prior experience. And now I was still the person with most experience on how to set it up.
+thanks to prior experience. And now I was still the person with the most experience on how to set it up.
 
 Puzzlehunts are not *that* big. If
 anything, they're quite small. My blog is fairly niche and got more page hits in a year than
@@ -3448,21 +3447,21 @@ server-size problem, and upgrading the server CPUs is not enough to fix it.
 I was not at all worried about the first, and quite worried about the second. All my previous load test
 adventures were done using [Locust](https://locust.io/), since I learned how to load test from reading
 example code in the [Puzzlehunt CMU codebase](https://github.com/dlareau/puzzlehunt_server).
-This time, I decided to try [k6](https://k6.io/), since I had an example loadtesting
-script from Huntinality, and the documentation for testing websockets in k6 was
-a lot more complete.
+This time, I decided to try [k6](https://k6.io/), based on a load testing script from Huntinality.
+The documentation for testing websockets in k6 was a lot more complete, and writing tests in JS
+made it easier to mock our React frontend.
 
 Broadly, the way all these load testing libraries work is that you define the access
 patterns of a hypothetical user. "This user will login, wait a few seconds, open the list of puzzles,
 open a random puzzle, and submit a guess." Something like that. The libraries then provide utility functions
 that let you spin up users according to some schedule, and provide statistics at the end. The main work for
-loadtesting is in defining user behavior and mocking the same requests real users
+load testing is in defining user behavior and mocking the same requests real users
 would send.
 
 I created a few different user profiles:
 
 * Chatter: opens MATE, sends some chat messages, then leaves.
-* Collager: opens Collage, sends 1 guess into collage per second for a few seconds, then leaves.
+* Collager: opens Collage, sends 1 guess into Collage per second for a few seconds, then leaves.
 * Browser: opens each round page to load art assets, then leaves.
 * Jigsawer: opens the collaborative jigsaw from the loading puzzle, drags pieces to a new location
 every 0.3 seconds, then leaves.
@@ -3481,13 +3480,13 @@ The update frequency was rate-limited to 0.3 seconds per update, but this would 
 One mock user doing the jigsaw.
 {: .centered }
 
-I got the loadtest script done just before the second full hunt speedrun.
+I got the load test script done just before the second full hunt speedrun.
 For this speedrun, a small group of people acted as a mock HQ, and some puzzle answers would say
 "send a hint to get the answer", "request a physical puzzle pickup to get the answer", "oops this puzzle
 is impossible, redeem a free answer". This was to get all those aspects of site behavior tested as well.
 
 Once again, there was a secret objective: tech would make a deploy to the site during the speedrun, to
-measure the length of the deploy during active usage, and check how noticable the interruption was.
+measure the length of the deploy during active usage, and check how noticeable the interruption was.
 There was also an extra secret objective: I was going to spam the site with fake users.
 I'm pretty sure the only person who knew I was planning to do this was Ivan.
 
@@ -3573,7 +3572,7 @@ directly copy paste the questions in our factchecking template. (In retrospect, 
 like a prompt you'd give to a large language model.)
 
 **Instructions:** Fill out this checklist. Completeness and Correctness are the most important points to check
-carefully. If it does not apply, note it can skipped.
+carefully. If it does not apply, note it can be skipped.
 
 **Completeness and Correctness**
 
@@ -3646,7 +3645,7 @@ new site bugs whenever he found them.
 
 All bets were off on code cleanliness, so the Contact HQ page was implemented by reusing our
 hint code. There was an internal puzzle called "Contact HQ", which did not show up on the list of
-puzzles or contribute to unlock progress. It started with hints unlocked and had no cap on number
+puzzles or contribute to unlock progress. It started with hints unlocked and had no cap on the number
 of open hints. Contact HQ requests would then fire alerts in our hints channel, where they could
 be claimed and resolved. Is this awful? Absolutely. But, it was the fastest thing to set up and we were at the point where everything needed to be speed.
 
@@ -3664,9 +3663,9 @@ apply. This still forced a reply of *some* kind, which is all I wanted to test.
 
 Brian had provisioned the full-size hunt server, and I hit it with 250 users. This immediately
 had errors, but the site seemed fine, and the error message codes I was seeing looked
-more like networking issues. Having seen a similar error when loadtesting Puzzles are Magic, I asked if our AirBnB WiFi could handle
+more like networking issues. Having seen a similar error when load testing Puzzles are Magic, I asked if our AirBnB WiFi could handle
 250 fake people at once, and then immediately answered my own question with "no of course it can't".
-(When loadtesting Puzzles are Magic, it took me a while to realize this was a possibility, and spent
+(When load testing Puzzles are Magic, it took me a while to realize this was a possibility, and I spent
 two days trying to fix a bug that didn't exist, which was a painful experience.)
 
 Alex Gotsis had a spare DigitalOcean machine for personal stuff, and we moved load
@@ -3675,7 +3674,7 @@ The CPU load looked fine, but we started seeing real site errors, ones that were
 for other people on teammate.
 
 Oh dear. I left it up for a bit so we could collect more stats, then turned it down. The errors
-were identical to the ones I'd seen when loadtesting Playmate from Teammate Hunt 2020. It was
+were identical to the ones I'd seen when load testing Playmate from Teammate Hunt 2020. It was
 definitely a database connection issue. I went back to our 2020 docs (thanking the gods that
 we'd decided to write documentation in 2020), and told Brian to try setting up
 [PgBouncer](https://www.pgbouncer.org/) and optionally swapping our Redis layer in Django Channels
@@ -3695,11 +3694,11 @@ triggers a 3rd error, and a 3rd email, and a 4th error, and a 4th email...
 I said "Oh no", and he said "Don't worry I'm fixing this". Once that was fixed, we removed
 several thousand failed-to-send emails from our Hunt database and everything was fine. Phew.
 
-After all the websocket improvements were in, I reran the loadtest and the site no longer
+After all the websocket improvements were in, I reran the load test and the site no longer
 broke at 500 users. The switch to RedisPubSubChannelLayer looked like it cut our CPU usage by 3x, which
 was cool. Between both of those, I was willing to declare the site battle-ready.
 
-The one issue flagged was on Conjuri. All the Conjuri instances were running in the same
+The one issue flagged was on Conjuri. All the Conjuri instances were running on the same
 server as the rest of the Hunt. The codebase had evolved that way and we did not have the
 time to refactor it to a separate machine and adjust our deploys accordingly.
 I gave my opinion that 500 users continually submitting guesses and moving 10 times per second
@@ -3716,7 +3715,7 @@ a charades testsolve in between some tech discussions.
 
 There were an incredible number of flight delays in the week before Hunt, which was quite scary
 for us. because every copy of Weaver was with one person. Thankfully their flight was fine.
-With loadtesting done, I could go back to some TODOs I had for the Wyrmhole round art, but
+With load testing done, I could go back to some TODOs I had for the Wyrmhole round art, but
 before that point I stopped by the physical puzzle station and said, "I want a mindless
 task please give me something to do."
 
@@ -3775,7 +3774,7 @@ about the story of Hunt, structure of the rounds, and different responsibilities
 that would need to be filled to man HQ. The previous day, a spreadsheet
 had been shared, and people were asked to fill it out, but today that request
 was now a demand. "Sign up for a slot or we will *find* a slot for you."
-I checked and had been pre-signed up for "tech on-call / contact", so problem solved.
+I checked and had been pre-signed up for "tech on-call / contact". Problem solved.
 
 We then had a training session for how to use the hint and interactions
 interface, which I mostly tuned out because I'd been fixing bugs there for several
@@ -3797,7 +3796,7 @@ Nor should they be. The coordination overhead
 would be too big if they were. But, the natural consequence of this is
 that sometimes, people's beliefs of what is getting done differs from what's
 actually getting done. Tech is just one example of this. I
-got passed copy of the MATE tutorial page that would be viewable before puzzle release,
+got a copy of the MATE tutorial page that would be viewable before puzzle release,
 and ended up rewriting a bunch of it because it suggested using chat messages that would
 not pass our hardcoded parser. (The plan to try an ML-based intent classifier
 instead had long been abandoned.)
@@ -3876,7 +3875,7 @@ hurdles when people aren't in the same room.
 Once we got to our rooms, we had a fun time trying to connect to the Wi-Fi. MIT had
 scheduled a wireless network change to happen the Friday of Hunt. We were aware of this
 beforehand, but MIT Puzzle Club both did not have the cachet to delay the change, and
-was also assurred the migration would be fine.
+was also assured the migration would be fine.
 
 Well, it wasn't totally fine, because two things happened.
 
@@ -3899,9 +3898,9 @@ and we hadn't exercised our HQ backend
 to nearly the same level of scrutiny. Tech immediately started preparing "hour one" patches, to
 merge in after puzzle release was deemed stable.
 
-Puzzles go live! No guesses come in for a bit, which made us paranoid that our site had not
+Puzzles go live! No guesses came in for a bit, which made us paranoid that our site had not
 released puzzles properly. Then some guesses started coming in, and we breathed a sigh of relief.
-T minus...we'll find out, until the coin was found.
+T minus...we'll find out, until the coin is found.
 
 I realize I have yet to describe what our Hunt weekend organization looks like. Here is the list
 of roles:
@@ -3919,7 +3918,7 @@ We did not expect many phone calls, so this was merged with other roles.
 Tracks the point-of-contacts for tech, huntcomm, and other roles with on-call rotations.
 * **Runners:** In charge of moving things between rooms. Generally not a dedicated role and only
 important at certain points of Hunt.
-* **Logistics:** Very similar to dispatcher, but not exactly the same. Roughly, dispatcher knows where
+* **Logistics:** Very similar to dispatcher, but not exactly the same. Roughly, the dispatcher knows where
 everyone is, while logistics knows what those people are doing. But if you want, feel free to treat
 dispatcher and logistics as one big group.
 * **Food:** Handled group orders for meals. Catering had already been ordered for the entire weekend
@@ -3950,7 +3949,8 @@ we had checked user-facing site pages to verify we did not show those puzzles. W
 the puzzle API existed, and a few teams sent emails asking if they were supposed to see
 puzzlefactory.place links.
 
-Nope! Nope nope nope. Nooooooope. We merged in a hotfix right away and thanked teams for finding this.
+Nope! Nope nope nope. Nooooooope. We merged in a hotfix right away and thanked teams for reporting the
+problem.
 Luckily, knowing the URL does not let you access Factory puzzles early, and at most they spoil the
 puzzle titles and upcoming theme.
 
@@ -3992,8 +3992,8 @@ This was not the right model for Hunt. The correct model is one user opening 100
 requests in just one of the tabs. Our server's CPU load was way under the load we saw in load testing,
 while our number of websocket connections was way over. We are, once again, out of database connections.
 
-We discuss a bit, and given that our CPU load was only hovering around 30%, we believe the site will be fine if we
-multiply all our websocket handling numbers by a ton. If that causes use to run out of CPUs, we'll
+We discuss a bit, and given that our CPU load was only around 30%, we believe the site will be fine if we
+multiply all our websocket handling numbers by a ton. If that causes us to run out of CPUs, we'll
 handle that later. Once deployed,
 the site comes back up and stays up. CPU usage does rise, but is well within bounds. Phew, crisis resolved.
 (I just want to briefly point out that if we had not load tested as much, we would have just
@@ -4062,10 +4062,10 @@ acknowledging problems, and asking other web devs if they thought it was fixable
 The volume slider was deemed doable, and got fixed. After a deep dive through the code,
 we figured out the complicated CSS bug that caused Factory puzzles to not be scrollable with
 arrow keys, and fixed that too. (Much later, a week after Mystery Hunt,
-we learned the accessibility fix in Factory CSS [broke printing on all Factory puzzles](https://devjoe.appspot.com/mitmh2023.html). In general, please contact HQ if you hit an issue with the site! We can't do everything,
+we learned the accessibility fix in Factory CSS [broke printing on all Factory puzzles](https://devjoe.appspot.com/mitmh2023.html). In general, please contact HQ if you have an issue with the site! We can't do everything,
 but this specific issue only took 15 minutes to fix once we knew about it. We just never knew about it.)
 
-Huntcomm was still concerned about the pace of hunt, so they decided to give extra event rewards
+Huntcomm was still concerned about the pace of Hunt, so they decided to give extra event rewards
 for the first event.
 They asked if there was a way to see how many event rewards a team had used, because they
 wanted to see if teams were using event rewards or hoarding them. I pointed to the internal
@@ -4164,7 +4164,7 @@ update.
 
 The event reward flood had also exposed new edge cases in our event handling code. In testing,
 I had never tried redeeming multiple event rewards at once. Puzzles don't unlock immediately
-in tph-site, they unlock lazily on first page load after you've advanced the unlock track.
+in tph-site, they unlock lazily on the first page load after you've advanced the unlock track.
 The reward redemption page did not update puzzle unlocks in between event usages,
 so if a team spammed all their unlocks without refreshing, they could be debited more rewards
 than they could actually use.
@@ -4228,7 +4228,7 @@ There were no plans to release strong rewards outside of the scavenger
 hunt yet, but I decided to implement the functionality for doing so now, in case it was needed
 later.
 
-Our goal for all these changes was to get them into the site before any team unlocked the
+Our goal for all these changes was to get them into the site before any team unlocked
 the scavenger hunt.
 The Reactivation changes and strong rewards made it in with around 30 minutes to spare.
 
@@ -4240,7 +4240,7 @@ to tell them Mystery Hunt was cancelled.
 
 Shutting down the Factory was automated, but showing up on-campus was not.
 *Logistically*, teams did not know we would be coming to their rooms, so we needed to know when
-a team was close to solving Reactivation. The transit time from our HQ to other team's HQ could
+a team was close to solving Reactivation. The transit time from our HQ to another team's HQ could
 be up to 15-20 minutes at the extremes, and although we wanted teams to have nothing but
 a shutdown Puzzle Factory until we got there, we didn't want teams to *actually* be stuck
 waiting for teammate.
@@ -4272,7 +4272,7 @@ teams, and I never expected the cat herding to succeed.
 
 We had now crossed another MIT campus closure checkpoint. I packed my things and helped bring
 physical puzzles to a hotel pickup point, checked they didn't need tech help, and went to my
-room to set up alerting on strong reward redemption. I decided to sleep early ("early" = "4 AM")
+room to set up alerts on strong reward redemption. I decided to sleep early ("early" = "4 AM")
 so that I could stay awake through Sunday. Surely Mystery Hunt will end by then.
 
 
@@ -4302,7 +4302,7 @@ transactions or keeping counts in sync across models. A hint is used if and only
 has gotten back a useful hint response. Event rewards did not originally work this way,
 but on Saturday we'd had a bug where a team lost an event reward because an exception triggered
 during event answer handling, causing them to solve the event but not get the reward they
-should have gotten. So I'd rewritten the logic to match the gph-site design.
+should have gotten. To fix this, I swapped the logic to match the gph-site design.
 
 A disadvantage of this design is that the more ways you can use hints, the more complicated
 it is to compute hints live. For example, gph-site supports intro-round only hints, so a pure
@@ -4341,7 +4341,7 @@ the same round.
 The fix was easy, the bug was minor, but when I realized that Wyrm was *still* causing
 havoc in our codebase in the middle of Hunt, I broke down laughing. It echoed the story so well!
 
-We were also starting to get screenshots of teams first reaction to the complete
+We were also starting to get screenshots of teams' first reaction to the complete
 nonsense of Boötes round answers, which was pretty great.
 
 <p class="centered">
@@ -4351,7 +4351,7 @@ nonsense of Boötes round answers, which was pretty great.
 It was unfortunate this was mostly via free answers, rather than solving the puzzles, but the
 reactions were everything I wanted.
 
-The dripfeed of strong answers continued, along with nerfs delivered via errata.
+The drip feed of strong answers continued, along with nerfs delivered via errata.
 I've seen a bit of speculation about why we used errata to send nerfs. The deployment process
 for Hunt was based on Docker and includes a step where Next.js needs to build
 the application. Blah blah blah, tech tech tech, the short version is rebuilding and deploying
@@ -4428,8 +4428,8 @@ you can look [here](/public/mh-2023/wyrmhole-loop-fast.gif).
 
 # Monday of Hunt
 
-Multiple teams have finished the clickaround. We've sent an email saying "the coin will have been
-found", and schedule the runaround for Monday morning which is...only a few hours from now.
+Multiple teams finished the clickaround overnight. We send an email saying "the coin will have been
+found", and schedule runarounds for Monday morning, which is...only a few hours from now.
 
 I once again do not get much sleep and end up in HQ early to answer more hint requests. Perhaps
 in a more normal Hunt, this would be when we'd open the floodgates and time unlock everything and
@@ -4544,8 +4544,8 @@ The spoilr HQ page has some built-in solve charts based on chart.js, which solve
 introducing other ones. I get confused that the given chart.js code doesn't match the chart.js
 documentation. Then, I figure out the chart.js version is out of date. There's a feature I want that's
 only in the most recent chart.js release, so I migrate past a breaking API change to get access to it.
-*Then* I learn that actually [there is an undiagnosed performance bug](https://github.com/chartjs/Chart.js/issues/10073)
-in the newest version of chart.js that is causing the charts to render 2x slower, and I sigh as I undo all my migration work.
+*Then* I learn that [there is an undiagnosed performance bug](https://github.com/chartjs/Chart.js/issues/10073)
+in the newest version of chart.js that is causing the charts to render 2x slower, and sigh as I undo all my migration work.
 I care about speed more than making the charts display nicely on mobile.
 
 As I generate the team size graph, I find it very cute that you can almost see the vertical lines where
@@ -4564,12 +4564,12 @@ of Hunt stay working once the site is archived. Then I stop paying as much atten
 
 # March 2023
 
-The site is not converted yet. It turns out it is a lot harder to work on Mystery Hunt 2023 when the world
+The site is not converted by March. It turns out it is a lot harder to work on Mystery Hunt 2023 when the world
 has moved on from talking about Mystery Hunt 2023. There is no one left to prove things to.
 
 I suppose that's the deal. Write a tech-heavy hunt that strongly assumes a server exists, and it looks cool
 live, but it's annoying to wrap up later. Given how long it took to package up Teammate Hunt 2020 and
-Teammate Hunt 2021, I was entirely unsurprised Mystery Hunt was not done with static conversion.
+Teammate Hunt 2021, I was entirely unsurprised that Mystery Hunt was not done with static conversion.
 
 Brian leads the push to get the
 relevant parts of the Python backend to work with [Pyodide](https://github.com/pyodide/pyodide), since there is absolutely zero chance we are going to rewrite any of the
@@ -4606,7 +4606,7 @@ my God we made them work for the jigsaw and for the Wyrmhole.
 
 That being said, I did write a lot of puzzles too. I wrote more puzzles this year than I have in
 the past 10. (That isn't saying much, given I had a 7 year hiatus in between, but still,
-it was a lot.) If anything, this has made criticism easier to go through. I've seen people simultanously put my puzzles as their
+it was a lot.) If anything, this has made criticism easier to go through. I've seen people simultaneously put my puzzles as their
 favorite and least favorite puzzles of Hunt, and this makes it easy to tell it's
 not an attack on my character or self-worth as a person.
 
@@ -4654,7 +4654,7 @@ puzzlehunts, there's a clear difference. Peking University
 is [running a puzzlehunt this year](https://pkupuzzle.art/) that will be harder
 if you're not a native Chinese speaker, and I think this is super cool.
 Spore Giants, a Singapore based team, unlocked [How Come This Crossword Got No Grid One?](https://puzzlefactory.place/puzzles/how-come-this-crossword-got-no-grid-one)
-and solved it 1.5 hours. They didn't make the stats cutoff, but this is 3x faster
+and solved it in 1.5 hours. They didn't make the stats cutoff, but this is 3x faster
 than the fastest non-free answer solve, and they were so excited that
 they asked if we could make an exception to get them onto the stats page.
 We didn't, but I'm glad they got to see a puzzle made for them.
@@ -4783,7 +4783,7 @@ largest teams every year. Otherwise, Mystery Hunt is remarkably stable at around
 60-65 puzzle writers per year. Left Out and Setec won with around 60 people, and
 ended with 60ish writers.
 Galactic was I believe around 80 people at time of win, and ended with 60ish writers.
-teammate won with around 50 people, and grew to 60ish writers. If every team has
+teammate won with around 55 people, and grew to 60ish writers. If every team has
 60 writers, and teams work equally hard every year, and the distribution of work
 per person is similar, it seems reasonable to assume every
 year gets the same number of puzzlemaking hours.
@@ -4791,7 +4791,7 @@ year gets the same number of puzzlemaking hours.
 If puzzlemaking hours are constant each year, and teammate
 started with a difficulty bar that makes puzzles 1.5x longer than they should be, the only
 way that's possible is if every puzzle had 1.5x fewer testsolving iterations.
-There's no other way to fit it in into the fixed time budget.
+There's no other way to fit it into the fixed time budget.
 You cannot push one up without pulling the other down.
 
 The standard bar for puzzlehunts is two clean testsolves, but it's worth
@@ -4812,7 +4812,7 @@ If a puzzle got rated as fun, it probably went in as is, even if it may have bee
 Part of
 [following the fun](https://www.reddit.com/r/gamedesign/comments/hfqh8r/what_does_follow_the_fun_mean_how_do_you_follow/)
 is to not throw out things that testsolvers have told you are fun.
-I think that it totally fine. The problems arose when a puzzle was rated as sort-of fun, and editing
+I think that is totally fine. The problems arose when a puzzle was rated as sort-of fun, and editing
 it would take a lot of time - those puzzles were rounded to "let's ship it
 and move on".
 
@@ -4828,7 +4828,7 @@ as "you overlooked this problem", but they usually had not overlooked the
 problem and had left it alone to fix bigger problems. I think this feedback
 hurts the most, because you knew the problem existed, and know why you
 did not fix it at the time, but that doesn't change that the problem is
-*there* now and made someone sad.
+still *there* and made someone sad.
 
 (Please don't let this stop you from pointing out flaws in puzzle feedback
 forms though. I think authors know what problems exist but don't always know
@@ -4872,7 +4872,7 @@ a survey with puzzle preferences and availability. Authors would describe their
 hours estimate and number of people estimate, and the testsolving lead would connect
 A to B, scheduling testsolves and building + wrangling testsolve groups.
 
-This definitely saved time, and people in off-peak hours (i.e. Europe and Asia timezones)
+This definitely saved time, and people in off-peak hours (i.e. Europe and Asia time zones)
 felt having someone handle their logistics allowed them to testsolve more.
 However, in retrospect it may have done *too* good a job of pairing testsolvers to puzzles. Math puzzles
 were routed to math people, geography puzzles were routed to geography fans, and so on. I'm not saying every
@@ -4888,12 +4888,12 @@ the correct conclusion, but recommending something that makes Hunt take *longer*
 completely insane.
 
 The more obviously good advice is that you should make sure there are off-ramps
-for killing unproductive testsolves. The way we did testsolves was usually
-by giving hints when needed and doing formal feedback only after they solved the
+for killing unproductive testsolves. In testsolving,
+we only did formal feedback after groups had solved the
 puzzle. Some testsolves got very stuck, and odds are they should have been killed
 early, or we should have pushed people to write testsolve feedback throughout the solve. I tried to
 write feedback-so-far every time we paused a testsolve, but this was not a universal
-practice, and asking for feedback only after solving may have biased difficulty estimates down.
+practice, and asking for puzzle ratings right after the solve may have biased difficulty estimates down.
 
 ## Starting Big Puzzles Is Hard
 
@@ -5064,7 +5064,7 @@ puzzles in hunts that were 1/4th the size of Mystery Hunt, so I don't place much
 One of the experimental decisions we made was to have the discovery of the Puzzle
 Factory be the equivalent of solving the 1st meta as a small team objective.
 
-Setting aside difficulty of the opening puzzles, how well
+Setting aside the difficulty of the opening puzzles, how well
 this worked is probably directly related to how cool you found the Puzzle Factory and what expectations
 you had around Hunt. If you went into Hunt with the goal of solving 1 meta, you may not have been hyped to
 unlock a new round with new puzzles instead of more Atrium puzzles.
@@ -5170,7 +5170,7 @@ I do not
 think our Hunt site would have been possible if the tech team had not written puzzlehunt code in the same
 codebase for much of 2020 and 2021.
 * Mystery Hunt got a *lot* more popular during the pandemic. For reference:
-the 2020 Hunt had 150 teams and the 2023 Hunt had 300 teams. Keep an eye on things that scale with number
+the 2020 Hunt had 150 teams and the 2023 Hunt had 300 teams. Keep an eye on things that scale with the number
 of teams (hints, answering emails, scavenger hunt judging). Make sure your flows there are seamless.
 I would be shocked if answer call-ins came back, no team is equipped to handle 2x the phone call volume.
 * Mystery Hunt is also becoming more multicultural. There are a larger number of foreign teams where English
@@ -5274,8 +5274,8 @@ then it did. I claimed I would work 10 hours/week, and here is the true chart.
 I have, very continuously throughout the year, asked myself if
 this was all worth it. The answer was not clearly yes.
 
-Still, to flip the question on its head, if you asked me what deal I'd
-to take to agree to never write puzzles again, I'm not sure what it would have to be.
+Still, to flip the question on its head, if you asked me what deal I would
+take to agree to never write puzzles again, I'm not sure what it would have to be.
 Right now, if you offered me a thousand bucks, I would immediately say no.
 
 Will you see me again in a hunt's author list? Uh, not sure. Ask me later.
