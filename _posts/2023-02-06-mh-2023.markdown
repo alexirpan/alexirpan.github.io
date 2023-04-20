@@ -5106,9 +5106,11 @@ different rounds, rounds would somtimes have all feeders solved but no meta open
 there was no way for a team to concentrate effort in a single round if they wanted to crack a meta.
 This feedback made hunt leadership change their mind and adjust unlocks to the current Hunt, and
 this is now pretty conclusively considered a mistake. I think this is easy to say in retrospect though.
-There's a universe where the ordering doesn't change, solves are scattered across 5 rounds,
-and teams that normally solve 20 puzzles get upset they never have enough data to solve any metas.
-(This did happen to some teams for the Emotions round in [Mystery Hunt 2018](https://puzzles.mit.edu/2018/full/island/index.html), but I don't know how they felt about it.)
+In the universe where the ordering doesn't change,
+teams that normally solve 20 puzzles are likely upset their puzzles are scattered across 5 rounds and
+they never have enough data to solve any metas.
+(This did happen to some teams for the Emotions round in [Mystery Hunt 2018](https://puzzles.mit.edu/2018/full/island/index.html), for what it's worth.) The ordering change did avoid that - by creating a bigger problem
+in its place.
 
 Now, the real fix is to make sure you are not in this trilemma to begin with. Three buckets was not
 enough buckets - there should have been more difficulty divisions within the Museum / Factory / AI round
