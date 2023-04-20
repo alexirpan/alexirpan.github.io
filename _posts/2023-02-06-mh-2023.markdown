@@ -5113,7 +5113,7 @@ they never have enough data to solve any metas.
 in its place.
 
 Now, the real fix is to make sure you are not in this trilemma to begin with. Three buckets was not
-enough buckets - there should have been more difficulty divisions within the Museum / Factory / AI round
+enough buckets. There should have been more difficulty divisions within the Museum / Factory / AI round
 puzzles. The curve would have been smoother if Atrium was easier among Museum puzzles, Factory Floor
 was easier for Factory, and Wyrmhole was easier among AI round puzzles. And maybe you just cannot have an
 intro round of more than 10 puzzles in a modern Hunt.
