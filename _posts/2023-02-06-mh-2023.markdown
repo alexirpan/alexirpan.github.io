@@ -31,7 +31,7 @@ is more to give a puzzle its conclusion. People do not solve puzzles to declare 
 answer is THE WOLF'S HOUR!". They solve puzzles because figuring out why the answer
 is THE WOLF'S HOUR is fun, and when you find the explanation (get the a-ha), you feel good.
 
-As a hobby, puzzlehunting is really biased towards professors and programmers.
+There's a reason professors and programmers are overrepresented among puzzlehunters.
 Research and debugging share a similar root of trying to explain the behavior
 of a confusing system. It stretches the same muscles. It's just that puzzles are about
 artificial systems designed to be fun and solvable in a few hours, whereas research is about real
@@ -307,9 +307,9 @@ After asking some questions, it sounded like the reason this happened was becaus
 team were already familiar with spoilr. So for our situation, it seemed correct to use whatever code
 we knew best, which was tph-site.
 
-We start work on open-sourcing tph-site, partly because it's not too much work to do so and partly
-because a few writers from [Huntinality 2.0](https://2022.huntinality.com/) are asking if they can see
+A few writers from [Huntinality 2.0](https://2022.huntinality.com/) are asking if they can see
 the work we did to convert our frontend to React.
+This motivated us to start open-sourcing [tph-site](https://github.com/teammatehunt/tph-site). It's not too much work, and feels like a good thing to do.
 
 <div class="shaded" markdown="1">
 ### A React Tangent
@@ -327,7 +327,7 @@ HTML response based on a template file that lives on your backend. The template 
 on the server and then gets sent back as the viewed webpage.
 
 tph-site still uses Django as its backend, but differs in using a React + Next.js based frontend.
-React is a Javascript library whose organizing principle is that you describe your page in components.
+[React](https://react.dev/) is a Javascript library whose organizing principle is that you describe your page in components.
 Each component either has internal state or state passed from whatever creates the components.
 A component describes what it ought to look like according to the current state, and whenever the
 state is updated, React will determine everything that could depend on that state and re-render it.
@@ -335,7 +335,7 @@ The upside: dynamic or interactive web pages become a lot easier to build, since
 a lot of boilerplate Javascript and state management for you. The downside: extra layers of indirection
 between your code and the resulting HTML.
 
-Next.js is then a web framework that makes it easier to pass React state from the server, and
+[Next.js](https://nextjs.org/) is then a web framework that makes it easier to pass React state from the server, and
 support rendering pages server-side. This is especially useful for puzzlehunts, where you want to
 do as many things server-side as possible to prevent spoilers from leaking to the frontend.
 (As for the merits of [SPAs](https://en.wikipedia.org/wiki/Single-page_application) versus a multi-page setup, I am not qualified enough to discuss the pros and cons.)
