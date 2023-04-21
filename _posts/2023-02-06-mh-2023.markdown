@@ -79,7 +79,7 @@ is at the end.
 
 Writing and post-hunt tech work for [Teammate Hunt 2021](https://2021.teammatehunt.com/)
 is over and has been over for a while. Life is good. Team leadership sends out a survey to
-see if the team has enough motivation to write Mystery Hunt.
+see if teammate has enough motivation to write Mystery Hunt.
 
 I use a time tracker app for a few things in my life, and puzzle writing is one of them.
 My time spent on Teammate Hunt clocked in at 466 hours. I do some math and find it averaged
@@ -132,15 +132,15 @@ since it combines the joys of fixing code with the joys of fixing broken puzzle 
 
 **No more puzzles where I need to spend a large amount of time studying things before I can even
 start construction.** Again, similar reason, this process is very time consuming for the payoff.
-I'd estimate I spent 80 hours on
+I'd estimate I spent 80 hours writing
 [Marquee Fonts](https://2021.teammatehunt.com/puzzles/marquee-fonts), since I started with knowing
 nothing about how fonts worked at the start, and had to teach myself much more about fonts than I'd
-ever wanted to know to make the puzzle work.
+ever wanted to know to make the puzzle a reality.
 
 **No more puzzles made of minipuzzles.** Minipuzzles are a scam. "Oh, we don't have any ideas that
 are big enough to fill one puzzle. Let's make a bunch of minipuzzles instead because it's easy to
 come up with small ideas!" Then you get halfway through, and realize that ideation of small puzzles
-is easy, but execution takes way longer since the process of finding suitable clues is somewhat
+is easy, but execution takes way longer. The process of finding suitable clues is somewhat
 independent of puzzle difficulty, and you have to do way more of it. I also felt it was a crutch
 I was relying on too often when designing puzzles.
 
@@ -174,7 +174,7 @@ puzzle, but in general the goal was to be creative and avoid filler.
 **Innovation in hunt structure:** This is something that both previous [Teammate Hunts](https://2021.teammatehunt.com/) did, and as a team
 we have a lot of pride in creating puzzles that stretch the boundaries of what puzzles can be.
 
-**High production value:** teammate has both a lot of software engineering and art talent, which
+**High production value:** teammate has a lot of software engineering and art talent, which
 let us make prettier websites and introduce innovations like copy-to-clipboard. We wanted to make a Hunt
 that lived up to the standards set by our previous hunts.
 
@@ -191,9 +191,9 @@ I deliberately did not fill out the form, because it implied a baseline level of
 above my 10 hr/week target.
 
 The next step was theme proposals. This is always an interesting time in hunt development,
-since it sets the agenda of the entire upcoming year. Things can change later, but writing a hunt is an
+since it sets the agenda of the entire upcoming year. Things can change later, but writing a puzzlehunt is an
 especially top-down design process. You decide your story, which decides your metametas and metas,
-which decides your feeders, and all of this is handing off work to your future selves.
+which decides your feeders. It's all handing off work to your future selves.
 
 Historically, at the start of theme writing, I say I don't have theme ideas. Then I get an idea right
 before the deadline and rush out a theme proposal.
@@ -208,7 +208,7 @@ We liked the story structure of Mystery Hunt 2022 a lot, and almost all theme pr
 around a "three Act" framework, where Act I introduced the plot, Act II built up to a midpoint story event,
 and Act III resolved that event.
 
-![Theme proposal](/public/mh-2023/theme.png)
+![Mystery Hunt theme proposal: a hunt about cats where cats proliferate eyerywhere](/public/mh-2023/theme.png)
 {: .centered }
 
 A few members with past Mystery Hunt experience
@@ -249,8 +249,9 @@ story.
 > They berate teams for trying to turn on the old AIs, then leave and declare Mystery Hunt is cancelled.
 >
 > However, there is some lingering power after Mystery Hunt is shutdown, which solvers can use to slowly
-> turn the Puzzle Factory and other AIs back on. This starts Act III of the Hunt.
-> Each AI round is written by a different AI and gimmicked in some way, ending in a feature request
+> turn the Puzzle Factory and other AIs back on. This starts Act III of the Hunt, with puzzles written
+> by the old AIs.
+> Each AI round is gimmicked in some way, ending in a feature request
 > that the AI wants to add to the Puzzle Factory. When all AI rounds are complete, MATE comes back,
 > and after solving a final capstone, teammate comes back and
 > admits that they were wrong about the old AIs. The Puzzle Factory makes one more puzzle, which has the coin,
