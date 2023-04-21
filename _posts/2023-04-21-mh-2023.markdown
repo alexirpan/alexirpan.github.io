@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Writing MIT Mystery Hunt 2023"
-date:   2023-02-06 00:32:00 -0700
+date:   2023-04-21 15:09:00 -0700
 ---
 
 *This post is about 55,000 words long, and is riddled with spoilers for pretty much every aspect of MIT Mystery Hunt 2023. There are no spoiler bars. You have been warned. Please pace yourselves accordingly.*
