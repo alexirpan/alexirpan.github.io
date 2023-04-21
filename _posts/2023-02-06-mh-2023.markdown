@@ -5108,8 +5108,9 @@ much later, but having the meta is at least more exciting psychologically.
 
 I've been told puzzles *were* ordered by difficulty in the December speedrun. There was
 feedback that it was weird that solving a puzzle in a round would unlock puzzles in totally
-different rounds, rounds would somtimes have all feeders solved but no meta open, and
-there was no way for a team to concentrate effort in a single round if they wanted to crack a meta.
+different rounds, rounds would somtimes have all-but-one feeders solved with no meta open, and
+there was no way for a team to concentrate effort in a single round if they wanted to focus on solving
+that round's meta.
 This feedback made hunt leadership change their mind and adjust unlocks to the current Hunt, and
 this is now pretty conclusively considered a mistake. I think this is easy to say in retrospect though.
 In the universe where the ordering doesn't change,
