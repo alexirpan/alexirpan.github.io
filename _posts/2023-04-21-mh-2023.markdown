@@ -3340,7 +3340,7 @@ was a lot more obvious.
 
 To solve this, we changed our code to send a single image for the entire background. Then,
 instead of brightening icons on hover, there would be six 100% transparent white rectangles,
-cut to the shape of each puzzle icon. Hovering over each dive would toggle the transparency
+cut to the shape of each puzzle icon. Hovering over each div would toggle the transparency
 to 50%. A white rectangle could be done entirely in CSS, reducing the network + render cost
 from six 1024 x 768 images down to one.
 
