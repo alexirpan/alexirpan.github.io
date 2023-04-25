@@ -35,26 +35,26 @@ completeness.
 # 2023
 
 * Mystery Hunt 2023
-    * [Museum Rules](https://interestingthings.museum/puzzles/museum-rules), with Catherine Wu and Harrison Ho
-    * [Loading Puzzle](https://interestingthings.museum/solutions/undefined), with Catherine Wu, Ivan Wang, and Jacqui Fashimpaur
-    * [Collage](https://interestingthings.museum/puzzles/collage), with Brian Shimanuki and Jacqui Fashimpaur
-    * [Interpretive Art](https://interestingthings.museum/puzzles/interpretive-art), with Ivan Wang
-    * [Conglomerate](https://interestingthings.museum/puzzles/conglomerate), with Katie "chuttiekang" Chung and Nishant Pappireddi
-    * [Weaver](https://interestingthings.museum/puzzles/weaver), with Brian Shimanuki, Tracey Lin, Edgar Chen, Harrison Ho, Nathan Wong, Nishant Pappireddi, Mona Wang, Moor Xu, and Sylvia Jin
-    * [Broken Wheel](https://puzzlefactory.place/basement/broken-wheel), with Brian Shimanuki, Nishant Pappireddi, Rahul Sridhar, and Tracey Lin
-    * [Lost to Time](https://puzzlefactory.place/basement/lost-to-time), with Bryan Lee, Edgar Chen, and Nishant Pappireddi
-    * [Quandle](https://puzzlefactory.place/office/quandle)
-    * [The Filing Cabinet](https://puzzlefactory.place/office/the-filing-cabinet), with Asher Walkover, Jacqui Fashimpaur, and Patrick Xia
-    * [Reactivation](https://puzzlefactory.place/factory-floor/reactivation), with Bryan Lee, Catherine Wu, Harrison Ho, Jacqui Fashimpaur, Liam Thomas, Olga Vinogradova, and Patrick Xia
-    * [The Legend](https://puzzlefactory.place/puzzles/the-legend), with Brian Shimanuki, Patrick Xia, Jacqui Fashimpaur, Jordan Bunker, Lindsay Oliver, Mona Wang, Moor Xu, and Sylvia Jin
-    * [The Scheme](https://puzzlefactory.place/puzzles/the-scheme), with Brian Shimanuki and Olga Vinogradova
-    * [We Made a Quiz Bowl Packet but Somewhere Things Went Horribly Wrong](https://puzzlefactory.place/puzzles/we-made-a-quiz-bowl-packet-but-somewhere-things-went-horribly-wrong), with Alex Gotsis, Catherine Wu, Nishant Pappireddi, and Patrick Xia
-    * [Lost at Sea](https://puzzlefactory.place/puzzles/lost-at-sea), with Brian Shimanuki and Nishant Pappireddi
-    * [Bedtime Stories](https://puzzlefactory.place/puzzles/bedtime-stories) / [Castle Grounds](https://puzzlefactory.place/puzzles/castle-grounds) / [Easy as Pie](https://puzzlefactory.place/puzzles/easy-as-pie) / [Fire Starter](https://puzzlefactory.place/puzzles/fire-starter) / [Follow Me](https://puzzlefactory.place/puzzles/follow-me) / [Robber Baron](https://puzzlefactory.place/puzzles/robber-baron), with Brian Shimanuki and Jacqui Fashimpaur
-    * [Period of Wyrm](https://puzzlefactory.place/factory-floor/period-of-wyrm), with Brian Shimanuki, Jacqui Fashimpaur, and Olga Vinogradova
-    * [5D Barred Diagramless with Multiverse Time Travel](https://puzzlefactory.place/puzzles/5d-barred-diagramless-with-multiverse-time-travel), with Holly Sipek and Evan Chen
-    * [Walking Tour](https://puzzlefactory.place/puzzles/walking-tour), with Brian Shimanuki, Bryan Lee, Edgar Chen, Moor Xu, Nishant Pappireddi, Taichi Akiyama, and Tracey Lin
-    * [Win a Game of Bingo](https://puzzlefactory.place/puzzles/win-a-game-of-bingo), with Justin Yokota
+    * [Museum Rules](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/museum-rules), with Catherine Wu and Harrison Ho
+    * [Loading Puzzle](https://puzzles.mit.edu/2023/interestingthings.museum/solutions/undefined), with Catherine Wu, Ivan Wang, and Jacqui Fashimpaur
+    * [Collage](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/collage), with Brian Shimanuki and Jacqui Fashimpaur
+    * [Interpretive Art](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/interpretive-art), with Ivan Wang
+    * [Conglomerate](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/conglomerate), with Katie "chuttiekang" Chung and Nishant Pappireddi
+    * [Weaver](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/weaver), with Brian Shimanuki, Tracey Lin, Edgar Chen, Harrison Ho, Nathan Wong, Nishant Pappireddi, Mona Wang, Moor Xu, and Sylvia Jin
+    * [Broken Wheel](https://puzzles.mit.edu/2023/puzzlefactory.place/basement/broken-wheel), with Brian Shimanuki, Nishant Pappireddi, Rahul Sridhar, and Tracey Lin
+    * [Lost to Time](https://puzzles.mit.edu/2023/puzzlefactory.place/basement/lost-to-time), with Bryan Lee, Edgar Chen, and Nishant Pappireddi
+    * [Quandle](https://puzzles.mit.edu/2023/puzzlefactory.place/office/quandle)
+    * [The Filing Cabinet](https://puzzles.mit.edu/2023/puzzlefactory.place/office/the-filing-cabinet), with Asher Walkover, Jacqui Fashimpaur, and Patrick Xia
+    * [Reactivation](https://puzzles.mit.edu/2023/puzzlefactory.place/factory-floor/reactivation), with Bryan Lee, Catherine Wu, Harrison Ho, Jacqui Fashimpaur, Liam Thomas, Olga Vinogradova, and Patrick Xia
+    * [The Legend](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/the-legend), with Brian Shimanuki, Patrick Xia, Jacqui Fashimpaur, Jordan Bunker, Lindsay Oliver, Mona Wang, Moor Xu, and Sylvia Jin
+    * [The Scheme](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/the-scheme), with Brian Shimanuki and Olga Vinogradova
+    * [We Made a Quiz Bowl Packet but Somewhere Things Went Horribly Wrong](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/we-made-a-quiz-bowl-packet-but-somewhere-things-went-horribly-wrong), with Alex Gotsis, Catherine Wu, Nishant Pappireddi, and Patrick Xia
+    * [Lost at Sea](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/lost-at-sea), with Brian Shimanuki and Nishant Pappireddi
+    * [Bedtime Stories](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/bedtime-stories) / [Castle Grounds](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/castle-grounds) / [Easy as Pie](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/easy-as-pie) / [Fire Starter](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/fire-starter) / [Follow Me](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/follow-me) / [Robber Baron](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/robber-baron), with Brian Shimanuki and Jacqui Fashimpaur
+    * [Period of Wyrm](https://puzzles.mit.edu/2023/puzzlefactory.place/factory-floor/period-of-wyrm), with Brian Shimanuki, Jacqui Fashimpaur, and Olga Vinogradova
+    * [5D Barred Diagramless with Multiverse Time Travel](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/5d-barred-diagramless-with-multiverse-time-travel), with Holly Sipek and Evan Chen
+    * [Walking Tour](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/walking-tour), with Brian Shimanuki, Bryan Lee, Edgar Chen, Moor Xu, Nishant Pappireddi, Taichi Akiyama, and Tracey Lin
+    * [Win a Game of Bingo](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/win-a-game-of-bingo), with Justin Yokota
 
 # 2021
 

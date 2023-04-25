@@ -406,7 +406,7 @@ The last goes through mostly unchanged.
 <div class="shaded" markdown="1">
 ### Quandle
 
-**Puzzle Link:** [here](https://puzzlefactory.place/office/quandle)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/puzzlefactory.place/office/quandle)
 
 Perhaps you remember that I set a personal guideline for "no more interactive puzzles", and think
 it's strange that I worked on an interactive puzzle within a month.
@@ -457,7 +457,7 @@ opinion, the lesson
 of Wordle is that it's fine to give people more information than they need to win. People are not
 information-maximizing agents [citation needed]. I left it as-is.
 
-As one of the first tests of our PuzzUp setup, I did a puzzle exchange with Brian. He tested Quandle and I tested [Parsley Garden](https://puzzlefactory.place/office/parsley-garden). Around 60 minutes into the Quandle test, I
+As one of the first tests of our PuzzUp setup, I did a puzzle exchange with Brian. He tested Quandle and I tested [Parsley Garden](https://puzzles.mit.edu/2023/puzzlefactory.place/office/parsley-garden). Around 60 minutes into the Quandle test, I
 asked how the puzzle was going. Brian said he was stuck, and after asking a bunch of questions, I figured
 out that he has never clicked a guess after making one, meaning he's never seen the probability
 distributions or used an observation. Oops. I added a prompt to suggest doing that, and the solve was better
@@ -591,7 +591,7 @@ We split into groups to brainstorm those, and the group I was in came up with:
 <div class="shaded" markdown="1">
 ## The Filing Cabinet
 
-**Puzzle Link:** [here](https://puzzlefactory.place/office/the-filing-cabinet)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/puzzlefactory.place/office/the-filing-cabinet)
 
 I'm not sure how people normally come up with meta puns. What I do is use [RhymeZone](https://www.rhymezone.com/)
 to look up rhymes and near-rhymes, then bounce back and forth until something good comes out.
@@ -654,7 +654,7 @@ the metameta.
 <div class="shaded" markdown="1">
 ### Period of Wyrm
 
-**Puzzle Link:** [here](https://puzzlefactory.place/factory-floor/period-of-wyrm)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/puzzlefactory.place/factory-floor/period-of-wyrm)
 
 Really, I did not do much on this puzzle. The mechanics stayed the same throughout all
 testsolves. I testsolved the initial version, and my contributions afterwards were on searching
@@ -790,7 +790,7 @@ know what wild source a puzzler will use during Hunt.
 Sometimes, that consensus can be wrong and you still have to go with
 it for the sake of solvability! See Author's Notes for
 [Hibernating and Flying South](https://2021.galacticpuzzlehunt.com/puzzle/hibernating-and-flying-south)
-from GPH 2022 for an example, or the Author's Notes for [Museum Rules](https://interestingthings.museum/puzzles/museum-rules) from Mystery Hunt 2023. It's
+from GPH 2022 for an example, or the Author's Notes for [Museum Rules](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/museum-rules) from Mystery Hunt 2023. It's
 unfortunate to propagate falsehoods, but sometimes that's how it goes.
 
 
@@ -799,7 +799,7 @@ unfortunate to propagate falsehoods, but sometimes that's how it goes.
 teammate has people all over, with rough hubs around the Bay Area,
 Seattle, and New York. We held meetups at each hub in April, for anyone who felt the COVID exposure was within their risk tolerance.
 
-We started brainstorming [Weaver](https://interestingthings.museum/puzzles/weaver) at the Bay Area meetup. Much of the work would be done later, but this meetup
+We started brainstorming [Weaver](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/weaver) at the Bay Area meetup. Much of the work would be done later, but this meetup
 was the first time
 Brian mentioned wanting to make an underwater basket weaving puzzle, using
 special hydrochromic ink that dried white and became transparent when wet. The idea sounded super cool,
@@ -825,7 +825,7 @@ a draft of:
 <div class="shaded" markdown="1">
 ### Broken Wheel
 
-**Puzzle Link:** [here](https://puzzlefactory.place/basement/broken-wheel)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/puzzlefactory.place/basement/broken-wheel)
 
 This is one of those puzzles generated entirely from the puzzle answer. There were a few
 half-serious proposals about treating the answer as PSY CLONE and doing a Gangnam Style
@@ -896,7 +896,7 @@ catch up.
 meta, Wyrm metameta), it'd be really cool.
 
 Making this happen would be quite hard. The first step was Wyrm authors testsolving the Museum metameta, so that we knew
-what we'd be signing up for. After getting spoiled on [MATE's META](https://puzzlefactory.place/factory-floor/mates-meta). we discussed whether this was
+what we'd be signing up for. After getting spoiled on [MATE's META](https://puzzles.mit.edu/2023/puzzlefactory.place/factory-floor/mates-meta). we discussed whether this was
 ambitious-but-doable, or too ambitious. It seemed very close to too ambitious, but we decided to go for it
 with a backup option of reversing the decision if it ended up being impossible.
 
@@ -947,7 +947,7 @@ it's just there were other ways to fix them that would have had fewer bad side e
 <div class="shaded" markdown="1">
 ### The Legend
 
-**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/the-legend)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/the-legend)
 
 Part of the deal for accepting the repeated feeders constraint was that editors-in-chief signed up to
 help design and push the Wyrm and Museum metas. The Legend was the meta brainstormed to take all the
@@ -1104,7 +1104,7 @@ dealing with our own constraints.
 <div class="shaded" markdown="1">
 ### The Scheme
 
-**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/the-scheme)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/the-scheme)
 
 From the start of writing, we knew the meta answer was locked to EYE OF PROVIDENCE and it had to
 use the feeder INCEPTION in some way. There was a bit of brainstorming on whether we could
@@ -1178,7 +1178,7 @@ on my shortlist of "puzzles I'd redo from scratch" with hindsight, but at the ti
 <div class="shaded" markdown="1">
 ### Lost at Sea
 
-**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/lost-at-sea)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/lost-at-sea)
 
 Nominally, I'm an author on this puzzle. In practice I did not do very much. The first version provided the
 cycle of ships directly, and tested okay (albeit with some grumbling about indexing with digits).
@@ -1246,7 +1246,7 @@ and we only had 6 feeders to work with.
 
 Another idea proposed for this puzzle may have worked, but was basically impossible to combine with the
 Wyrm metameta constraints. That idea eventually turned into
-[Word Press](https://puzzlefactory.place/factory-floor/word-press).
+[Word Press](https://puzzles.mit.edu/2023/puzzlefactory.place/factory-floor/word-press).
 
 The key design challenge was that the puzzle needed to embed some process for backsolving. But, that backsolving
 process would look like unused information during the initial forward solve. If a team got stuck, they
@@ -1276,7 +1276,7 @@ Time to reap what we'd sown.
 <div class="shaded" markdown="1">
 ### Collage
 
-**Puzzle Link:** [here](https://interestingthings.museum/puzzles/collage) and [here](https://puzzlefactory.place/puzzles/collage-copy)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/collage) and [here](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/collage-copy)
 
 The first thing I did was reach out to David and Ivan, the authors of [Word Wide Web](https://2020.teammatehunt.com/puzzles/word-wide-web), to see if they had any word web tools I could borrow.
 David sent me a D3.js based HTML page that
@@ -1473,7 +1473,7 @@ However, to make this plan work, the breakout puzzle would need to exist by retr
 <div class="shaded" markdown="1">
 ### Loading Puzzle...
 
-**Puzzle Link:** [here](https://interestingthings.museum/solutions/undefined)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/interestingthings.museum/solutions/undefined)
 
 During one of the weekly general meetings, I was asked if I could join a brainstorm group for "a small puzzle".
 Said brainstorm group had Jacqui (creative lead) and Ivan (tech lead).
@@ -1495,7 +1495,7 @@ exploring the contours of the hunt site, surprising you when the contours broke 
 firm.
 
 Many of the early ideas from this were unused, but got repurposed for the final clickaround of the hunt,
-[MATE's TEAM](https://puzzlefactory.place/factory-floor/mates-team). For breakout, we converged towards something like a loading animation. The loading
+[MATE's TEAM](https://puzzles.mit.edu/2023/puzzlefactory.place/factory-floor/mates-team). For breakout, we converged towards something like a loading animation. The loading
 animation would represent MATE getting increasingly overworked trying to create puzzles, diegetically
 getting longer as teams solved puzzles and forced MATE to write new ones, and non-diegetically
 scaling up with solve progress to increase its obviousness and encourage teams to look more closely over
@@ -1622,7 +1622,7 @@ In said weekend, I helped write:
 <div class="shaded" markdown="1">
 ### Museum Rules
 
-**Puzzle Link:** [here](https://interestingthings.museum/puzzles/museum-rules)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/museum-rules)
 
 There isn't really too much of a story with this one. We looked at the pool of open answers, picked
 one of them, then brainstormed ideas based on that. That landed on breaking
@@ -1656,7 +1656,7 @@ surplus. More puzzles were needed, and I worked on two other ones in July.
 <div class="shaded" markdown="1">
 ### Interpretive Art
 
-**Puzzle Link:** [here](https://interestingthings.museum/puzzles/interpretive-art)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/interpretive-art)
 
 As mentioned in the solution, this puzzle started from a shitpost someone posted on Facebook.
 
@@ -1694,7 +1694,7 @@ going to be a fan favorite.
 <div class="shaded" markdown="1">
 ### Conglomerate
 
-**Puzzle Link:** [here](https://interestingthings.museum/puzzles/conglomerate)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/conglomerate)
 
 Remember how I said I didn't want to write minipuzzles anymore?
 
@@ -1728,7 +1728,7 @@ Puzzle. Still, there was time to work on other puzzles along the way.
 <div class="shaded" markdown="1">
 ### Lost to Time
 
-**Puzzle Link:** [here](https://puzzlefactory.place/basement/lost-to-time)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/puzzlefactory.place/basement/lost-to-time)
 
 Whenever I wrote a puzzle for Hunt, I did a search in the devjoe index to double check it was not
 too close to a prior Mystery Hunt puzzle. This has built a bit of a "Alex is the Mystery Hunt
@@ -1841,8 +1841,8 @@ over Discord voice calls. It's really not the same as meeting in person.
 
 As an icebreaker, we went around saying what our favorite puzzle was. I forgot what I
 said - I think it was [A Puzzle Consisting Entirely of Random Anagrams](https://puzzles.mit.edu/2015/puzzle/a_puzzle_consisting_entirely_of_random_anagrams/)?
-Vinjai said, "134". Later I'd learn this was the puzzle ID for the [Hall of Innovation](https://interestingthings.museum/rounds/innovation)
-and [The Blueprint](https://puzzlefactory.place/factory-floor/the-blueprint).
+Vinjai said, "134". Later I'd learn this was the puzzle ID for the [Hall of Innovation](https://puzzles.mit.edu/2023/interestingthings.museum/rounds/innovation)
+and [The Blueprint](https://puzzles.mit.edu/2023/puzzlefactory.place/factory-floor/the-blueprint).
 He was one of the authors of that meta and it sounded like it was in the middle of taking over
 the lives of everyone involved.
 
@@ -1889,10 +1889,10 @@ error was in estimating how *much* the solve time would drop in future revisions
 of the effect was probably smaller than we were hoping for.
 
 In between trying to ramp up loading times, I testsolved many puzzles, including
-[Exhibit of Colors](https://interestingthings.museum/puzzles/exhibit-of-colors) (solved the
-flower puzzle and got the animal a-ha), [Dropypasta](https://interestingthings.museum/puzzles/dropypasta)
+[Exhibit of Colors](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/exhibit-of-colors) (solved the
+flower puzzle and got the animal a-ha), [Dropypasta](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/dropypasta)
 (complained heavily about the old Pokemon Stadium mechanic - it got changed to what our testsolve
-group thought it should be), and [Brain Freeze](https://interestingthings.museum/puzzles/brain-freeze). At
+group thought it should be), and [Brain Freeze](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/brain-freeze). At
 the end of Brain Freeze, someone asked why it had such a garbage answer, and I had to stay silent
 knowing it was from Wyrm and I was responsible for pushing that garbage answer into the Hunt.
 
@@ -1991,7 +1991,7 @@ Perhaps future Hunts will do more hybrid events - I'll leave that choice up to f
 <div class="shaded" markdown="1">
 ### We Made a Quiz Bowl Packet but Somewhere Things Went Horribly Wrong
 
-**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/we-made-a-quiz-bowl-packet-but-somewhere-things-went-horribly-wrong)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/we-made-a-quiz-bowl-packet-but-somewhere-things-went-horribly-wrong)
 
 Okay. I know this puzzle isn't that popular, but all puzzles will have their stories told.
 
@@ -2113,9 +2113,9 @@ original plan of revealing the existence of breakout. After solving the loading 
 knowing the drama of what unfolded.
 
 With breakout resolved, we could go back to puzzle brainstorming and wrapping up testsolves. The
-[Teammating Dances event](https://interestingthings.museum/solutions/teammating-dances) was
+[Teammating Dances event](https://puzzles.mit.edu/2023/interestingthings.museum/solutions/teammating-dances) was
 written and tested entirely at retreat. Dinner arrived (I think it was Thai food?). After dinner,
-I joined a very-stuck testsolve of [Tissues](https://puzzlefactory.place/factory-floor/tissues). At the time, it did not have the TetraSYS hint. We were given various hints towards "four" during the testsolve,
+I joined a very-stuck testsolve of [Tissues](https://puzzles.mit.edu/2023/puzzlefactory.place/factory-floor/tissues). At the time, it did not have the TetraSYS hint. We were given various hints towards "four" during the testsolve,
 and I mentioned there were four Greek elements (no idea why). I then said something along the lines
 of, "it's a physical puzzle. We should do something that exploits the physicality", and someone
 mentioned setting the puzzle on fire or dunking the tissues in water. "We should go do it,
@@ -2295,7 +2295,7 @@ I also joined the brainstorm group for what we called the midpoint capstone puzz
 <div class="shaded" markdown="1">
 ### Reactivation
 
-**Puzzle Link:** [here](https://puzzlefactory.place/factory-floor/reactivation)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/puzzlefactory.place/factory-floor/reactivation)
 
 I'm on the author list for this puzzle but I really didn't do much. I have said this before,
 but this time it is serious.
@@ -2319,14 +2319,14 @@ except for one puzzle, which would become much bigger than I expected.
 <div class="shaded" markdown="1">
 ### 5D Barred Diagramless with Multiverse Time Travel
 
-**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/5d-barred-diagramless-with-multiverse-time-travel)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/5d-barred-diagramless-with-multiverse-time-travel)
 
 I consider this puzzle my magnum opus.
 
-If you want to solve a fun puzzle, go solve [Interpretive Art](https://interestingthings.museum/puzzles/interpretive-art). If you want a novel
+If you want to solve a fun puzzle, go solve [Interpretive Art](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/interpretive-art). If you want a novel
 solve experience, go solve [Puzzle Not Found](https://2020.teammatehunt.com/puzzles/puzzle-not-found). But, if you want a puzzle with
 spectacle that will strike fear into your heart, I can only recommend
-[5D Barred Diagramless with Multiverse Time Travel](https://puzzlefactory.place/puzzles/5d-barred-diagramless-with-multiverse-time-travel). It is very upfront about
+[5D Barred Diagramless with Multiverse Time Travel](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/5d-barred-diagramless-with-multiverse-time-travel). It is very upfront about
 what you are getting into, and, to quote our Office art, "sometimes, the point of a
 puzzle is to be fun, but other times it's to inspire fear".
 
@@ -2629,9 +2629,9 @@ By this point, the puzzle had become a bit of a meme. I will admit that I delibe
 cultivated that meme. About 1/3rd of teammate had testsolved it and another
 1/3rd had heard a rumor that there was a "5D puzzle".
 It was funny to realize that our hunt had a 3D puzzle
-in [Some Assembly Required](https://puzzlefactory.place/factory-floor/some-assembly-required),
-a 4D puzzle in [4D Geo](https://puzzlefactory.place/puzzles/4d-geo),
-a fractional-D cameo in [Period of Wyrm](https://puzzlefactory.place/factory-floor/period-of-wyrm),
+in [Some Assembly Required](https://puzzles.mit.edu/2023/puzzlefactory.place/factory-floor/some-assembly-required),
+a 4D puzzle in [4D Geo](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/4d-geo),
+a fractional-D cameo in [Period of Wyrm](https://puzzles.mit.edu/2023/puzzlefactory.place/factory-floor/period-of-wyrm),
 and now a 5D puzzle. "We have too many dimensional puzzles, non-2D puzzles are banned."
 
 The chess factchecking was easily the most terrifying factchecking experience of my life. When I'd
@@ -2941,7 +2941,7 @@ But before that:
 <div class="shaded" markdown="1">
 ### Bedtime Stories, Castle Grounds, Easy as Pie, Fire Starter, Follow Me, Robber Baron
 
-**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/bedtime-stories)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/bedtime-stories)
 
 ![Easiest +6 of my life](/public/mh-2023/blank_wyrm.png)
 {: .centered }
@@ -2950,7 +2950,7 @@ But before that:
 <div class="shaded" markdown="1">
 ### Walking Tour
 
-**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/walking-tour)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/walking-tour)
 
 We'd actually started ideating this puzzle at a Bay Area meetup in October. It was a pretty
 interesting meetup, since the first thing we did was testsolve Hall of Innovation. We were given most of the
@@ -3030,7 +3030,7 @@ fully disengage from Hunt. One night, I ended up idly working out the design for
 <div class="shaded" markdown="1">
 ### Win a Game of Bingo
 
-**Puzzle Link:** [here](https://puzzlefactory.place/puzzles/win-a-game-of-bingo)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/win-a-game-of-bingo)
 
 I run [Mystery Hunt Bingo](https://www.alexirpan.com/mystery-hunt-bingo/). It's a tiny joke I
 threw together in an afternoon. Other people on teammate had asked me if I was writing a bingo puzzle this
@@ -3152,7 +3152,7 @@ coming.
 <div class="shaded" markdown="1">
 ### Weaver
 
-**Puzzle Link:** [here](https://interestingthings.museum/puzzles/weaver)
+**Puzzle Link:** [here](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/weaver)
 
 They say all good stories end where they began. Weaver was one of the first
 feeder puzzles I helped brainstorm, and now it was one of the last I'd help make.
@@ -3583,7 +3583,7 @@ puzzlehunt tech experience.
 
 The Wyrm round art had a hardcoded
 width/height that didn't fit on everyone's computer during the speedrun, and I had pawned off
-fixing that to Ivan. This left me free to focus on connecting Conjuri, [Terminal](https://puzzlefactory.place/puzzles/terminal), and other interactives
+fixing that to Ivan. This left me free to focus on connecting Conjuri, [Terminal](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/terminal), and other interactives
 into my load testing script. For me, this was the best trade deal in history. I will take infrastructure
 over responsive frontends any day of the week, but I did feel bad about abandoning frontend hell.
 
@@ -3760,7 +3760,7 @@ task please give me something to do."
 
 "Great! Cut all these pieces of paper."
 
-It was for [Tissues](https://puzzlefactory.place/factory-floor/tissues) and I spent an hour using a paper cutter to slice large sheets into smaller
+It was for [Tissues](https://puzzles.mit.edu/2023/puzzlefactory.place/factory-floor/tissues) and I spent an hour using a paper cutter to slice large sheets into smaller
 sheets, and folding flat tissue boxes into box-shaped boxes.
 
 Meanwhile, one of our two drivers reported a problem.
@@ -3990,7 +3990,7 @@ Internally, all teams start with Factory puzzles unlocked, but they are not link
 accessible until the team solves the Loading Puzzle. In all of our speedruns,
 we had checked user-facing site pages to verify we did not show those puzzles. We had forgotten
 the puzzle API existed, and a few teams sent emails asking if they were supposed to see
-puzzlefactory.place links.
+puzzles.mit.edu/2023/puzzlefactory.place links.
 
 Nope! Nope nope nope. Nooooooope. We merged in a hotfix right away and thanked teams for reporting the
 problem.
@@ -4111,7 +4111,7 @@ arrow keys, and fixed that too. (Much later, a week after Mystery Hunt,
 we learned the accessibility fix in Factory CSS [broke printing on all Factory puzzles](https://devjoe.appspot.com/mitmh2023.html). In general, please contact HQ if you have an issue with the site! We can't do everything,
 but this specific issue only took 15 minutes to fix once we knew about it. We just never knew about it.)
 
-A few teams start reporting that they do not see the puzzle icon for [Cute Cats](https://interestingthings.museum/rounds/art), and are asking if that's relevant. We tell them it isn't, and start investigating.
+A few teams start reporting that they do not see the puzzle icon for [Cute Cats](https://puzzles.mit.edu/2023/interestingthings.museum/rounds/art), and are asking if that's relevant. We tell them it isn't, and start investigating.
 Do you want to know what happened? Part of our asset packing step generates random filenames
 based on image content, to do cache busting. The filename generated was
 `https://cdn.mitmh2023.com/media/ad/*.png` and this caused ad blockers to block the puzzle icon.
@@ -4155,7 +4155,7 @@ That was looking true for us as well. When running a Hunt, it is very
 common to get new teams that essentially want to be handholded through the entire solve. Of
 course, we will answer the hints they send in, that's how those teams want to have fun,
 but it did get a bit tiring when teams sent a new hint every time they wanted to confirm a single
-cryptic in [Inscription](https://interestingthings.museum/puzzles/inscription) or a single state in [Museum Rules](https://interestingthings.museum/puzzles/museum-rules).
+cryptic in [Inscription](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/inscription) or a single state in [Museum Rules](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/museum-rules).
 Luckily, answering hints has a natural "get better with experience" phenomenon, where after your
 10th hint on a puzzle, you can quickly figure out where a team is stuck and what to tell them.
 
@@ -4163,12 +4163,12 @@ Things were progressing, albeit more slowly than anyone had expected. Someone op
 the soda I had helped carry yesterday, and the physical puzzle distributor stopped them, saying
 "Don't drink this soda, it's a puzzle." This is really the kind of sentence
 you can only hear and believe at Mystery Hunt. I was as surprised as anyone, nobody told me
-it was for [Fountain](https://puzzlefactory.place/puzzles/fountain). I had placed it next to all
+it was for [Fountain](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/fountain). I had placed it next to all
 the other food and drinks.
 
 Running Hunt was simultaneously getting more boring and more exciting. Fewer things about the site
 were on fire, which was good. More teams were solving the fun submission puzzles. Our first tirades
-from [A Twisted Theory](https://interestingthings.museum/puzzles/a-twisted-theory)
+from [A Twisted Theory](https://puzzles.mit.edu/2023/interestingthings.museum/puzzles/a-twisted-theory)
 had come in Friday evening, but now a bunch of other teams were solving the tirades puzzle and
 sending in even wilder speeches about Tim Tickets and Taylor Swift.
 
@@ -4237,10 +4237,10 @@ All of these nerfs would not be testsolved (everyone who could is busy answering
 so this restricted nerfs almost exclusively to flavortext nerfs or removal of
 intermediate steps rather than changes to existing clues and designs.
 
-[We Made a Quiz Bowl Packet](https://puzzlefactory.place/puzzles/we-made-a-quiz-bowl-packet-but-somewhere-things-went-horribly-wrong) was marked unnerfable due to requiring clue rewrites.
-[5D Barred Diagramless](https://puzzlefactory.place/puzzles/5d-barred-diagramless-with-multiverse-time-travel) was also basically unnerfable.
-But, some of the other puzzles I worked on had easier nerfs. [Period of Wyrm](https://puzzlefactory.place/factory-floor/period-of-wyrm) was given a more direct
-hint towards the Mandelbrot set with the names of the people, and [Walking Tour](https://puzzlefactory.place/puzzles/walking-tour) had a reordering step removed.
+[We Made a Quiz Bowl Packet](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/we-made-a-quiz-bowl-packet-but-somewhere-things-went-horribly-wrong) was marked unnerfable due to requiring clue rewrites.
+[5D Barred Diagramless](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/5d-barred-diagramless-with-multiverse-time-travel) was also basically unnerfable.
+But, some of the other puzzles I worked on had easier nerfs. [Period of Wyrm](https://puzzles.mit.edu/2023/puzzlefactory.place/factory-floor/period-of-wyrm) was given a more direct
+hint towards the Mandelbrot set with the names of the people, and [Walking Tour](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/walking-tour) had a reordering step removed.
 
 By now the hint threshold had been lowered to N = 15, and huntcomm was hesitant to lower it any
 further. Partly it seemed unfair to bring N closer to teams that could be in contention
@@ -4384,9 +4384,9 @@ behind schedule, but it really wasn't. Maybe it was more panicky in huntcomm, bu
 the rest of HQ was holding up well and still running smoothly in an emergency.
 
 A group of people were going to [Tosci's](https://www.tosci.com/) to do a double-check for
-[Eat Desserts on Main](https://puzzlefactory.place/puzzles/eat-desserts-on-main) before leading teams unlocked Conjuri. They said they'd do a group order for ice cream for HQ, which I immediately
+[Eat Desserts on Main](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/eat-desserts-on-main) before leading teams unlocked Conjuri. They said they'd do a group order for ice cream for HQ, which I immediately
 jumped on. I don't remember what flavor I got, but it was good. Also, now that we knew
-around how many teams would unlock [Fountain](https://puzzlefactory.place/puzzles/fountain), we knew we had way too much soda. A
+around how many teams would unlock [Fountain](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/fountain), we knew we had way too much soda. A
 portion of puzzle soda was declared "no longer a puzzle, please drink", but a teammate
 complained that they'd only drink the soda if it were a puzzle.
 It was relabeled as "puzzle soda that's okay to drink". Drinking the soda, they described it
@@ -4415,7 +4415,7 @@ for Hunt was based on Docker and includes a step where Next.js needs to build
 the application. Blah blah blah, tech tech tech, the short version is rebuilding and deploying
 our site after a code change took around 15 minutes, whereas errata is viewable immediately.
 It just looks a bit weird.
-I remember not liking the nerf given for [The Scheme](https://puzzlefactory.place/puzzles/the-scheme), it felt like it was just removing the
+I remember not liking the nerf given for [The Scheme](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/the-scheme), it felt like it was just removing the
 puzzle entirely compared to other flavortext nerfs. It probably was helpful to push off the rabbit hole of reusing
 the layout from The Legend though.
 
@@ -4423,7 +4423,7 @@ Sunday continued on and on, with no team finishing Hunt. We did see teams spendi
 answer on the scavenger hunt to get two free answers in return, which was simultaneously
 disappointing and delightful. It was like we'd given teams a free money hack in the universe.
 I mean, it was not actually free money, doing the scavenger hunt was probably easier than
-solving any AI round puzzle, but some teams don't want to [touch grass](https://puzzlefactory.place/puzzles/touch-grass-challenge-impossible). What can you do?
+solving any AI round puzzle, but some teams don't want to [touch grass](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/touch-grass-challenge-impossible). What can you do?
 
 A funny property of the scavenger hunt is that teams almost always overprepare for the
 scavenger hunt. Teams don't know how harsh the judging will be, and want to leave wiggle room.
@@ -4711,7 +4711,7 @@ competitive programming or logic puzzles to the ethnicities in
 puzzlehunts, there's a clear difference. Peking University
 is [running a puzzlehunt this year](https://pkupuzzle.art/) that will be harder
 if you're not a native Chinese speaker, and I think this is super cool.
-Spore Giants, a Singapore based team, unlocked [How Come This Crossword Got No Grid One?](https://puzzlefactory.place/puzzles/how-come-this-crossword-got-no-grid-one)
+Spore Giants, a Singapore based team, unlocked [How Come This Crossword Got No Grid One?](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/how-come-this-crossword-got-no-grid-one)
 and solved it in 1.5 hours. They didn't make the stats cutoff, but this is 3x faster
 than the fastest non-free answer solve, and they were so excited that
 they asked if we could make an exception to get them onto the stats page.
@@ -4962,7 +4962,7 @@ other people don't need to be spoiled and can be saved for future iterations.
 You convene at a fixed time, and start a puzzle with your full group
 at once.
 
-When testsolving [Moral of the Story](https://puzzlefactory.place/puzzles/moral-of-the-story), I thought it seemed okay. We had four people doing
+When testsolving [Moral of the Story](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/moral-of-the-story), I thought it seemed okay. We had four people doing
 the first step and were able to speed through it pretty quickly. Then the
 rest was very parallelizable after the a-ha. We did not have much trouble
 and rated it decently high on fun.
