@@ -38,7 +38,7 @@ during Hunt.
 This was pretty controversial, since people wanted to see their work in Mystery Hunt, and cutting the
 puzzles meant that wouldn't happen. When this decision was announced, team leadership asked everyone to
 keep it a secret until they had met with the affected authors and decided what would happen to the
-removed puzzles. Most authors were interested in running them as a puzzlehunt later in year, so the secrecy
+removed puzzles. Most authors were interested in running them as a puzzlehunt later in the year, so the secrecy
 stuck until we were ready to announce everything.
 
 Knowing about Boötes made the "teammate should have run the AI rounds as a separate hunt" chatter
@@ -51,9 +51,8 @@ during solving.
 
 There is the argument that more people would have solved the AI round puzzles if they were run separately
 from Hunt, rather than nuked by free answers. I think the flip side is that many fewer people would
-know the AI round puzzles existed. There are plenty of people who only do MIT Mystery Hunt and are
-broadly ignorant of other puzzles. As a reference point, I did four Mystery Hunts before
-I did my first [P&A magazine](https://pandamagazine.com/).
+know the AI round puzzles existed. There are plenty of people who only do MIT Mystery Hunt and nothing
+else. As a reference point, I did four Mystery Hunts before I did my first [P&A magazine](https://pandamagazine.com/).
 
 We've approached this puzzlehunt from
 the standpoint of minimizing extra work needed to run it, while still preparing the experience we want
