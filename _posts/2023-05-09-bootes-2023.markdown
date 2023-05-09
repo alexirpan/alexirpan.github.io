@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "A Boötes Shaped Addendum to Writing Mystery Hunt"
-date:   2023-05-08 00:55:00 -0700
+title:  "A Boötes Shaped Addendum to Writing Mystery Hunt 2023"
+date:   2023-05-08 01:34:00 -0700
 ---
 
 I promise this will not be as long as the [previous post]({% post_url 2023-04-21-mh-2023 %}),
@@ -29,11 +29,12 @@ if it turned out their Students puzzles were a lot harder instead of a little ha
 they would have already had 90% of the round written, and I don't know how much room they would have
 had to steer difficulty.
 
-Now, on to the main reason I'm writing this post: we just announced [Admiral Boötes’ Cosmic Discovery Expedition:
+Now, on to the main reason I'm writing this post: teammate just announced [Admiral Boötes’ Cosmic Discovery Expedition:
 Further Galaxies](https://abcde.puzzlefactory.place/).
 
 As the FAQ mentions, the puzzles in that puzzlehunt were originally going to appear in Mystery Hunt
-2023. However, as a response to the Hunt going long, huntcomm decided to scope down the Boötes round.
+2023. However, as a response to the Hunt going long, huntcomm decided to scope down the Boötes round
+during Hunt.
 
 This was pretty controversial, since people wanted to see their work in Mystery Hunt, and cutting the
 puzzles meant that wouldn't happen. When this decision was announced, team leadership asked everyone to
@@ -50,15 +51,15 @@ within a few hours, and explain why the already-manufactured coin had characters
 during solving.
 
 There is the argument that more people would have solved the AI round puzzles if they were run separately
-from Hunt, rather than nuked by free answers, but I think the flip side is that many fewer people would
+from Hunt, rather than nuked by free answers. I think the flip side is that many fewer people would
 know the AI round puzzles existed. There are plenty of people who only do MIT Mystery Hunt and are
 broadly ignorant of other puzzles. As a reference point, I did four Mystery Hunts before
 I did my first [P&A magazine](https://pandamagazine.com/).
 
-We've approached this hunt from
+We've approached this puzzlehunt from
 the standpoint of minimizing extra work needed to run it, while still preparing the experience we want
 teams to see.
-I'm especially curious what the uptake will be on this puzzlehunt. We talked a bit about writing
+I'm especially curious what the uptake will be. We talked a bit about writing
 new rounds that would ramp up in difficulty to ABCDE, but quickly found there wasn't enough interest
 to make that happen, so everything is going to be hard Mystery Hunt level. Is there appetite for puzzles
 this hard at an event outside Mystery Hunt? The closest analogue I know of is
