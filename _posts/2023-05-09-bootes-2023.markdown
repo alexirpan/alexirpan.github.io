@@ -1,0 +1,74 @@
+---
+layout: post
+title:  "A Boötes Shaped Addendum to Writing Mystery Hunt 2023"
+date:   2023-05-08 01:34:00 -0700
+---
+
+I promise this will not be as long as the [previous post]({% post_url 2023-04-21-mh-2023 %}),
+but I will assume you've read it.
+
+First, when discussing calibration in Mystery Hunt, I wrote the following:
+
+> If we had ever revisited a Ministry puzzle around the middle of the year, when feeders were getting
+> written in earnest, it would have been very obvious that our difficulty
+> calibration was off. But why would you solve a puzzle from an old Mystery Hunt,
+> when there are a bunch of puzzles to testsolve for the upcoming Mystery Hunt?
+> The clock is ticking, after all. Maybe the answer is that yes, you should
+> actually go solve 1-2 old puzzles in the same conditions as your testsolves to
+> calibrate your ratings. If you ever do this,
+> let me know, because I have never, ever seen it done or heard of it being done.
+
+I've since had two people from Galactic tell me that they did this for the Students round in
+Mystery Hunt 2021. For their big testsolve of that round, 5 Students puzzles were not ready yet,
+so they took 5 random Fish puzzles from Mystery Hunt 2015 and put them in as placeholders.
+After the testsolve, they checked solve times and found their Students puzzles were only a little
+harder than the Fish puzzles.
+
+So, someone has done this before! That being said, I'm not sure what Galactic would have done
+if it turned out their Students puzzles were a lot harder instead of a little harder. By this point
+they would have already had 90% of the round written, and I don't know how much room they would have
+had to steer difficulty.
+
+Now, on to the main reason I'm writing this post: teammate just announced [Admiral Boötes’ Cosmic Discovery Expedition:
+Further Galaxies](https://abcde.puzzlefactory.place/).
+
+As the FAQ mentions, the puzzles in that puzzlehunt were originally going to appear in Mystery Hunt 2023. However, as a response to the Hunt going long, huntcomm decided to scope down the Boötes round
+during Hunt.
+
+This was pretty controversial, since people wanted to see their work in Mystery Hunt, and cutting the
+puzzles meant that wouldn't happen. When this decision was announced, team leadership asked everyone to
+keep it a secret until they had met with the affected authors and decided what would happen to the
+removed puzzles. Most authors were interested in running them as a puzzlehunt later in year, so the secrecy
+stuck until we were ready to announce everything.
+
+Knowing about Boötes made the "teammate should have run the AI rounds as a separate hunt" chatter
+interesting to think about. Congrats, you've (sort of) got your wish.
+I've been told that cutting all AI rounds during Hunt *was* on the table
+in huntcomm discussions, but was quickly deemed too drastic. Hopefully you can appreciate how hard it
+would have been to decide to cut 4 rounds in the middle of Hunt, remake all of endgame and runaround
+within a few hours, and explain why the already-manufactured coin had characters you'd never seen
+during solving.
+
+There is the argument that more people would have solved the AI round puzzles if they were run separately
+from Hunt, rather than nuked by free answers. I think the flip side is that many fewer people would
+know the AI round puzzles existed. There are plenty of people who only do MIT Mystery Hunt and are
+broadly ignorant of other puzzles. As a reference point, I did four Mystery Hunts before
+I did my first [P&A magazine](https://pandamagazine.com/).
+
+We've approached this puzzlehunt from
+the standpoint of minimizing extra work needed to run it, while still preparing the experience we want
+teams to see.
+I'm especially curious what the uptake will be. We talked a bit about writing
+new rounds that would ramp up in difficulty to ABCDE, but quickly found there wasn't enough interest
+to make that happen, so everything is going to be hard Mystery Hunt level. Is there appetite for puzzles
+this hard at an event outside Mystery Hunt? The closest analogue I know of is
+[CRUMS Puzzlehunt](https://crumspuzzlehunt.com/), a hunt with 6 puzzles + a meta with every puzzle
+targeting Galactic Puzzle Hunt or Teammate Hunt difficulty.
+
+Will big teams reconvene for this, or split up? Will we get new solvers that want to jump in the deep end? When will
+the first team finish? These are all hard questions to answer, because it's really unclear what the solve
+power of teams will be and whether people will be available during a random part of June. One advantage
+of Mystery Hunt always running MLK weekend is that anyone who wants to attend has ample warning time to
+clear their calendar.
+
+It's all very unprecedented. I'm excited to see how people feel about it!
