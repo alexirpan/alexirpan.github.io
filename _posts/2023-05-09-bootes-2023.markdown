@@ -32,8 +32,7 @@ had to steer difficulty.
 Now, on to the main reason I'm writing this post: teammate just announced [Admiral Boötes’ Cosmic Discovery Expedition:
 Further Galaxies](https://abcde.puzzlefactory.place/).
 
-As the FAQ mentions, the puzzles in that puzzlehunt were originally going to appear in Mystery Hunt
-2023. However, as a response to the Hunt going long, huntcomm decided to scope down the Boötes round
+As the FAQ mentions, the puzzles in that puzzlehunt were originally going to appear in Mystery Hunt 2023. However, as a response to the Hunt going long, huntcomm decided to scope down the Boötes round
 during Hunt.
 
 This was pretty controversial, since people wanted to see their work in Mystery Hunt, and cutting the
