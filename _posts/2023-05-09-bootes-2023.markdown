@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Boötes Shaped Addendum to Writing Mystery Hunt 2023"
-date:   2023-05-08 01:34:00 -0700
+date:   2023-05-09 01:34:00 -0700
 ---
 
 I promise this will not be as long as the [previous post]({% post_url 2023-04-21-mh-2023 %}),
@@ -68,7 +68,7 @@ targeting Galactic Puzzle Hunt or Teammate Hunt difficulty.
 Will big teams reconvene for this, or split up? Will we get new solvers that want to jump in the deep end? When will
 the first team finish? These are all hard questions to answer, because it's really unclear what the solve
 power of teams will be and whether people will be available during a random part of June. One advantage
-of Mystery Hunt always running MLK weekend is that anyone who wants to attend has ample warning time to
+of Mystery Hunt always happening on MLK weekend is that anyone who wants to attend has ample warning time to
 clear their calendar.
 
 It's all very unprecedented. I'm excited to see how people feel about it!
