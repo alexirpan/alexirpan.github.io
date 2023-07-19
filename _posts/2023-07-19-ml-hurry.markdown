@@ -5,61 +5,60 @@ date:   2023-05-09 01:34:00 -0700
 ---
 
 Three months ago, I was at a "Intersection of AI and My Little Pony Fandom" panel. It was a panel about the
-ways the MLP fandom has used AI to generate creative work, starting from old finetuned instances of GPT-2,
-through state-of-the-art voice synthesis via [15.ai](https://twitter.com/fifteenai?lang=en), and ending
-with, of course, Stable Diffusion. More specifically, the [finetuned Pony Diffusion](https://huggingface.co/AstraliteHeart/pony-diffusion) checkpoint, whose finetuning cost is estimated as tens of thousands of dollars. The talk
-ended with a Twitter demo of a Discord bot that roleplayed a pony, via GPT-3.5. Chat history was used to persist
-a persona, and the bot's avatar was updated to different in-painted elaborations on a Pony Diffusion generation,
-with emotion inferred from text embeddings of chat.
+ways the MLP fandom has used AI to generate creative work, starting from finetuned GPT-2 in 2020,
+through voice synthesis via [15.ai](https://twitter.com/fifteenai?lang=en), and ending
+with, of course, Stable Diffusion. More specifically, the [finetuned Pony Diffusion](https://huggingface.co/AstraliteHeart/pony-diffusion) checkpoint, whose finetuning cost is estimated as tens of thousands of dollars.
+The talk ended with a proof-of-concept of a Discord bot that roleplayed a pony, via GPT-3.5, whose avatar
+was in-painted to different expressions based on emotions inferred from chat history.
 
-As I asked questions about compute resources, how the presenter felt about the ethics of AI art, and the ways
-generative models have made online moderation more difficult, I had a moment of realization where I remembered
-that I was at *a pony convention*, why are we talking about whether a RTX 3090 is big enough to finetune a LLaMa
-checkpoint? How am I learning names of new open source LLM checkpoints while people are dressed up in cosplay
-three doors down?
+As I asked questions about compute resources and the presenter's position on generative AI ethics,
+I had a moment of realization.
+I was at *a pony convention*. Why are we talking about whether an RTX 3090 is big enough to finetune a LLaMa
+checkpoint? *How* am we talking about Vicuna, here of all places, while people are dressed up in cosplay
+next door?
 
-> You've taken your first step into a larger world.
+![A pony generated from Pony Diffusion](/public/ml-hurry/pony.jpg)
+{: .centered }
 
-When people talk about technology improving more quickly, it usually evokes thoughts of the singularity,
-technology indistinguishable from magic, making it easier to create more magic. "Let's make a thing-inventor",
-said the thing-inventor-inventor.
-
+When people talk about technology improving more quickly, it usually evokes thoughts of the singularity.
+Technology indistinguishable from magic, making it easier to create more magic.
 But, culture and communication are technologies too. The much easier and less-speculative way for a field
-to get more ideas is *to have more people working in that field*, along with a communication medium that allows quick flow of
-knowledge. This is a point that I took away from reading [*How to Invent Everything*]({% post_url 2021-10-29-invent-everything %})
+to move faster is by *having more people working in that field*. If research is an API call away, then
+congratulations, we've democratized ML, as long as you're willing to pay for access.
+Combine that with the adoption of low-friction social media (aka Twitter), and you've got something going.
 
 > If the engine of invention is powered by people sharing random ideas until good ones emerge, then
 > I can't help but wonder if the best inventions are ones that make sharing ideas easier.
 
-This field is just so *big*. Things change so fast! I remember being a young whippersnapper, reading my first papers
-during the deep learning waves of 2015, being part of the new guard. "You can't just take an old idea, do it with
-a neural net, and call it deep learning", as researchers took old ideas and tossed them through a multilayer perceptron.
-Now people do this with LLMs and I am the old one. Well, I'm not old, but I have noticed I spend much more time
-deciding tradeoffs between studying weird details of foundation models vs papers more directly relevant to my robotics
-work.
+[(Previous post about *How to Invent Everything*)]({% post_url 2021-10-29-invent-everything %})
+{: .centered }
 
-The flood is growing, and my time to devote to it is the same.
+This field is just getting so *big*. Things change so fast! The MLP AI enthusiasts mentioned some
+pretrained LLMs that I had not even heard of. It's not my field, but, like, I do this for a living.
+I was easily top 1% generative AI knowledge among bronies in 2020. Now I'm like, top 5%?
+A 5x increase sounds right. I can only attribute the growth to one truth: there are signs of life, and people are hungry.
 
-I am noticing a trend of people posting LLM-generated summaries of papers, always attributed to the LLM, but never
-fact-checked. I try to skim the original paper to make sure I am not reading an incorrect summary. This usually
-fails due to time reasons. A long history of learning that [the map is not the territory](https://en.wikipedia.org/wiki/Map%E2%80%93territory_relation)
-has primed me to try to understand the territory when everyone just wants to talk about maps. This is probably
-why I have had a hard time really, seriously getting foundation models into my daily work. I know there is
-value there, but breaking and remaking my habits around a changing blob of next-word prediction feels like
-it would add layers of indirection between the keys I type and the actions that occur. From a standpoint of
-wanting to understand what I'm doing, adding a poorly explained LLM to the loop...does not help things.
+I remember being a young whippersnapper, in
+the deep learning wave of 2015. Then I was the new guard. The old guard would complain that
+"You can't just take an old idea, do it with a neural net, call it deep learning, and claim the entire
+field of ML is deep learning", as researchers continued to take old ideas and reshape the field around
+a different MLP: the multilayer perceptron. Now people do the same thing with LLMs.
 
-The bitter lesson *I* am taking is that I will have to do this. I will not be able to escape having to learn
-all the random tricks people have found for LLM prompting to make them act better. I will have to rely more on primary texts
-mediated via AI rather than primary texts. Doing knowledge work is just not going to be possible without leaning
-on these tools.
+The flood is growing, and my time to drink from it is the same. Deciding what to drink is getting harder.
 
-"But why is the system prompt so effective? Do we know how much can we trust the RLHF's extrapolation of reward from
-preference labels?"
+I'm noticing a trend of people posting LLM summaries of papers, talks, etc. They're always attributed to the LLM, and
+they're never fact-checked. I have a long history of learning and appreciating
+that [the map is not the territory](https://en.wikipedia.org/wiki/Map%E2%80%93territory_relation), and this trend
+is a bit like if people who loved maps got access to a map-making tool and created a billion maps.
+It is not even that they understand they're working with approximations of reality. That would be better
+than the truth: that they don't care they're on an approximation of reality. If you like searching for
+truth, it is a very personal kind of hell.
 
-["The stuff is what the stuff is, brother!"](https://youtu.be/ajGX7odA87k?t=817)
+The bitter lesson I'm taking is that I will have to get used to this. I will have to use an LLM where I can explain the
+loss function, but can't explain the emergent phenomena. I will have to learn all the random tricks people have found
+for LLM prompting. There is going to be too much content to accept any non-augmented workflow. Such is the future of knowledge work.
 
-Deep dives will become ever more precious, as
+"But why is this prompt so effective? Do we have a way to inspect what preferences the RLHF reward has extrapolated, given
+the preference labels we have?"
 
-This is not a *new* lesson, it's one that every business leader goes through. But I think it will be interesting,
-that
+["The stuff is what the stuff is, brother! Accept the mystery."](https://youtu.be/ajGX7odA87k?t=817)
