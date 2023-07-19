@@ -50,8 +50,8 @@ I'm noticing a trend of people posting LLM summaries of papers, talks, etc. They
 they're never fact-checked. I have a long history of learning and appreciating
 that [the map is not the territory](https://en.wikipedia.org/wiki/Map%E2%80%93territory_relation), and this trend
 is a bit like if people who loved maps got access to a map-making tool and created a billion maps.
-It is not even that they understand they're working with approximations of reality. That would be better
-than the truth: that they don't care they're on an approximation of reality. If you like searching for
+It is not even that they understand they're working with approximations of reality. That would be better.
+What's happening is that they don't care they're on an approximation of reality. If you like searching for
 truth, it is a very personal kind of hell.
 
 The bitter lesson I'm taking is that I will have to get used to this. I will have to use an LLM where I can explain the
