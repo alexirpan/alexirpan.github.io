@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "Maching Learning Got Itself in a Big Damn Hurry"
+date:   2023-05-09 01:34:00 -0700
+---
+
+Three months ago, I was at a "Intersection of AI and My Little Pony Fandom" panel. It was a panel about the
+ways the MLP fandom has used AI to generate creative work, starting from old finetuned instances of GPT-2,
+through state-of-the-art voice synthesis via [15.ai](https://twitter.com/fifteenai?lang=en), and ending
+with, of course, Stable Diffusion. More specifically, the [finetuned Pony Diffusion](https://huggingface.co/AstraliteHeart/pony-diffusion) checkpoint, whose finetuning cost is estimated as tens of thousands of dollars. The talk
+ended with a Twitter demo of a Discord bot that roleplayed a pony, via GPT-3.5. Chat history was used to persist
+a persona, and the bot's avatar was updated to different in-painted elaborations on a Pony Diffusion generation,
+with emotion inferred from text embeddings of chat.
+
+As I asked questions about compute resources, how the presenter felt about the ethics of AI art, and the ways
+generative models have made online moderation more difficult, I had a moment of realization where I remembered
+that I was at *a pony convention*, why are we talking about whether a RTX 3090 is big enough to finetune a LLaMa
+checkpoint? How am I learning names of new open source LLM checkpoints while people are dressed up in cosplay
+three doors down?
+
+> You've taken your first step into a larger world.
+
+When people talk about technology improving more quickly, it usually evokes thoughts of the singularity,
+technology indistinguishable from magic, making it easier to create more magic. "Let's make a thing-inventor",
+said the thing-inventor-inventor.
+
+But, culture and communication are technologies too. The much easier and less-speculative way for a field
+to get more ideas is *to have more people working in that field*, along with a communication medium that allows quick flow of
+knowledge. This is a point that I took away from reading [*How to Invent Everything*]({% post_url 2021-10-29-invent-everything %})
+
+> If the engine of invention is powered by people sharing random ideas until good ones emerge, then
+> I can't help but wonder if the best inventions are ones that make sharing ideas easier.
+
+This field is just so *big*. Things change so fast! I remember being a young whippersnapper, reading my first papers
+during the deep learning waves of 2015, being part of the new guard. "You can't just take an old idea, do it with
+a neural net, and call it deep learning", as researchers took old ideas and tossed them through a multilayer perceptron.
+Now people do this with LLMs and I am the old one. Well, I'm not old, but I have noticed I spend much more time
+deciding tradeoffs between studying weird details of foundation models vs papers more directly relevant to my robotics
+work.
+
+The flood is growing, and my time to devote to it is the same.
+
+I am noticing a trend of people posting LLM-generated summaries of papers, always attributed to the LLM, but never
+fact-checked. I try to skim the original paper to make sure I am not reading an incorrect summary. This usually
+fails due to time reasons. A long history of learning that [the map is not the territory](https://en.wikipedia.org/wiki/Map%E2%80%93territory_relation)
+has primed me to try to understand the territory when everyone just wants to talk about maps. This is probably
+why I have had a hard time really, seriously getting foundation models into my daily work. I know there is
+value there, but breaking and remaking my habits around a changing blob of next-word prediction feels like
+it would add layers of indirection between the keys I type and the actions that occur. From a standpoint of
+wanting to understand what I'm doing, adding a poorly explained LLM to the loop...does not help things.
+
+The bitter lesson *I* am taking is that I will have to do this. I will not be able to escape having to learn
+all the random tricks people have found for LLM prompting to make them act better. I will have to rely more on primary texts
+mediated via AI rather than primary texts. Doing knowledge work is just not going to be possible without leaning
+on these tools.
+
+"But why is the system prompt so effective? Do we know how much can we trust the RLHF's extrapolation of reward from
+preference labels?"
+
+["The stuff is what the stuff is, brother!"](https://youtu.be/ajGX7odA87k?t=817)
+
+Deep dives will become ever more precious, as
+
+This is not a *new* lesson, it's one that every business leader goes through. But I think it will be interesting,
+that
