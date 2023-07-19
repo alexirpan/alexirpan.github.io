@@ -1,20 +1,20 @@
 ---
 layout: post
 title:  "Maching Learning Got Itself in a Big Damn Hurry"
-date:   2023-05-09 01:34:00 -0700
+date:   2023-07-19 04:41:00 -0700
 ---
 
-Three months ago, I was at a "Intersection of AI and My Little Pony Fandom" panel. It was a panel about the
+Three months ago, I was at an "Intersection of AI and My Little Pony Fandom" panel. It was a panel about the
 ways the MLP fandom has used AI to generate creative work, starting from finetuned GPT-2 in 2020,
 through voice synthesis via [15.ai](https://twitter.com/fifteenai?lang=en), and ending
 with, of course, Stable Diffusion. More specifically, the [finetuned Pony Diffusion](https://huggingface.co/AstraliteHeart/pony-diffusion) checkpoint, whose finetuning cost is estimated as tens of thousands of dollars.
 The talk ended with a proof-of-concept of a Discord bot that roleplayed a pony, via GPT-3.5, whose avatar
-was in-painted to different expressions based on emotions inferred from chat history.
+was in-painted to diffe1ent expressions based on emotions inferred from chat history.
 
 As I asked questions about compute resources and the presenter's position on generative AI ethics,
 I had a moment of realization.
 I was at *a pony convention*. Why are we talking about whether an RTX 3090 is big enough to finetune a LLaMa
-checkpoint? *How* am we talking about Vicuna, here of all places, while people are dressed up in cosplay
+checkpoint? *How* are we talking about Vicuna, here of all places, while people are dressed up in cosplay
 next door?
 
 ![A pony generated from Pony Diffusion](/public/ml-hurry/pony.jpg)
@@ -62,3 +62,4 @@ for LLM prompting. There is going to be too much content to accept any non-augme
 the preference labels we have?"
 
 ["The stuff is what the stuff is, brother! Accept the mystery."](https://youtu.be/ajGX7odA87k?t=817)
+{: .centered }
