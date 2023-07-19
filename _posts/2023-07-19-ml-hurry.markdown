@@ -40,8 +40,8 @@ A 5x increase sounds right. I can only attribute the growth to one truth: there 
 
 I remember being a young whippersnapper, in
 the deep learning wave of 2015. Then I was the new guard. The old guard would complain that
-"You can't just take an old idea, do it with a neural net, call it deep learning, and claim the entire
-field of ML is deep learning", as researchers continued to take old ideas and reshape the field around
+"You can't just take an old idea, do it with a neural net, call it deep learning, and claim that
+part of ML for deep learning", as researchers continued to take old ideas and reshape the field around
 a different MLP: the multilayer perceptron. Now people do the same thing with LLMs.
 
 The flood is growing, and my time to drink from it is the same. Deciding what to drink is getting harder.
