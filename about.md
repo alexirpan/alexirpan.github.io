@@ -4,18 +4,18 @@ title: About
 permalink: /about/
 ---
 
-*Last updated June 11, 2022.*
+*Last updated August 4, 2023.*
 
-I currently work as a Software
-Engineer on the Robotics @ Google team, which is part of Google Brain. The views expressed on this blog are
+I currently work as a Research
+Scientist on the Robotics@Google team, which is part of Google DeepMind. The views expressed on this blog are
 personal opinions, and do not reflect the opinions of my employer.
 
 My main research interest is deep reinforcement learning and imitation learning, as
 applied to robotics.
 In general, I like thinking about what's necessary to make robot learning work
 for real-world problems. Much of my work has been based on how to most efficiently
-use real robot time, and how to leverage external data sources that aren't bottlenecked
-by real robot hardware, such as simulation or large language / video models.
+use real robot time, how to leverage external data sources that aren't bottlenecked
+by real robot hardware, and the challenges of longterm agent-centric data collection.
 
 I graduated from the UC Berkeley Computer Science program in 2016, doing undergraduate
 research in the [Berkeley Artificial Intelligence
@@ -39,20 +39,23 @@ theoretical computer science. Outside of machine learning, I enjoy
 complexity theory, theoretical cryptography, and mathematical logic, although I'm
 not as good at those subjects as I used to be.
 
-This site double as my personal blog.
+This site doubles as my personal blog.
 Posts range from discussion about machine learning to observations
 of my life and stupid jokes. I post whenever I have the time and motivation to
 do so, meaning not very often. Historically I average about one post per
 month.
 
 In my free time, I primarily play card games and video games.
-My main game is Dominion, which I play competitively. At my best, I was in
-the top 20 worldwide. (These days it's more like top 500.) I'm a fan of
-*My Little Pony: Friendship is Magic*,
-and most of my music library is still made of [MLP or Touhou fan music](/recs).
-I also do puzzlehunts. I've helped write multiple [hunts](/puzzles/), and am currently writing
-MIT Mystery Hunt 2023 - which unfortunately is really cutting down on my blogging
-time.
+My main games are Magic: the Gathering and Dominion. I've never been very good at MTG,
+but at my peak I was top 20 worldwide at Dominion. (These days it's more like top 500.)
+
+I'm a lapsed fan of *My Little Pony: Friendship is Magic*. "Lapsed" because, well,
+it's complicated, [I have a post]({% post_url 2021-12-31-why-mlp %}) covering why. I keep up with
+little of the fandom these days, but much of my music library is still made of [MLP or Touhou fan music](/recs).
+
+My other main hobby is puzzlehunts. I've solved them for around 10 years, and I've helped
+write multiple hunts, including MIT Mystery Hunt 2023. A list of puzzles
+I've written is [here](/puzzles/).
 
 If you're here for my blog, you're probably here for my
 [post about why deep RL doesn't work]({% post_url 2018-02-14-rl-hard %}),
