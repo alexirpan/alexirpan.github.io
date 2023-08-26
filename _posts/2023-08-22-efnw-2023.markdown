@@ -1,0 +1,121 @@
+---
+layout: post
+title:  "Everfree Northwest 2023"
+date:   2023-08-18 00:00:01 -0700
+---
+
+Everfree Northwest is a My Little Pony convention in the Seattle area that's been held every year for
+11 years.
+
+I'd never been to Everfree Northwest, and in fact I'd told myself I wasn't going to any more MLP
+cons after BronyCon 2019. I didn't have long term friendships or connections rooted in brony fandom - what
+I learned long ago is that conventions are a good way to make introductions and meet people with
+common interests, but they don't handle the work of actually keeping up with people and maintaining
+friendships. Unsurprisingly, this has been convered in MLP: Friendship is Magic a few times, in Amending Fences
+in particular.
+So, absent catching up with friends, it didn't feel like there was much cons had to offer
+with the show ending.
+
+...Except, well, online pony cons were easy to attend. BABSCon 2023 was only half an hour away, and there
+was a tiny Googler brony meetup that I wanted to show up to. With the end of BronyCon, I was told that
+Everfree Northwest was the largest MLP convention left. I'd never been to Everfree Northwest before,
+I knew enough people in the Seattle area to turn it into a catch-up-with-friends trip, and I was just
+plain curious what the state of the fandom was. So after self-declaring I was done with MLP conventions,
+I booked a trip to yet another MLP convention.
+
+My end of con reaction was basically "oh no, I had fun". Everfree Northwest was not that much better
+that BABSCon - I'd say it was about 40% bigger and 30% better. But, that was enough to push it from
+"I'm done" to "okay, maybe I'll come back next year". Against all odds, Everfree Northwest
+is *growing*. It had 1740 attendees last year and 1800 attendees this year. Am I just,
+attending pony conventions for the rest of my life? Am I one of the new age Trekkies? IS THIS MY LIFE
+NOW?
+
+> "Steve, do you know the first thing I said to myself when I realized I was a brony?"
+>
+> "What?"
+>
+> I look him dead in the eye, and say "Shit."
+
+[ACRacebest, describing his appearance on "Is it Weird?" on The Steve Harvey Show](https://www.youtube.com/watch?v=Jpu3Wf8322w)
+
+
+"I am Cringe, but I am Free" - Socrates, probably
+----------------------------------------------------------------------------------------------
+
+The classic first sight at any MLP convention is someone in a fursuit. Every brony will tell you that
+bronies are not necessarily furries, but every 2023 brony will tell you that there's a pretty strong overlap.
+
+Still, these cons are a low judgment zone. Not zero, but low. There's definitely a vibe of "finally, I can
+express myself". I don't really try to hide my brony fandom, but I don't go out of my way to express it either.
+During the con, I talked to one person who felt similarly, although he said he doesn't wear pony shirts because
+he lives in a red state, and would get worried about his personal safety if he was more "out" about it.
+
+The other thing about MLP conventions is that there's a little bit of "nerd bleedover", so to speak.
+One of the first panels held was basically a pure meet-and-greet "make new friends" panel, for people willing
+to talk to new people but unsure how to start conversations. And well, I ended up in many more Marvel,
+gaming, and comic book discussions than expected.
+
+This year, most of the people giving autographs are from G5. A quick recap: the My Little Pony franchise
+is split into different "generations", with Generation 1 starting in the 1980s. My Little Pony: Friendship is Magic
+is the one that went viral, but is often shorthanded to G4, for Generation 4. G5 is the new MLP series, which...is controversial. I watched the movie, and it struck me as "just okay, has obvious flaws, but glimmers of
+true quality." I don't like that it tries to share continuity with G4, it feels like it's trying to have its cake
+and eat it too. Still, I know the G4 movie doesn't reflect the parts of the show that I like, so I'm trying
+to reserve judgment on the cartoon proper.
+
+Although cons and fan artists have been starting to move towards G5, the G4 mainstays still have a big chokehold.
+The surprise guests this year were Nicole Oliver and Tabitha St. Germain, two of the Friendship is Magic
+voice actors, and the lines for them were considerably larger than the G5 voice actor lines, or The Owl House
+autograph lines. I have heard nothing but good things about The Owl House - but people aren't fans of The
+Owl House in quite the same way they're fans of My Little Pony.
+
+The next event I went to was the Pony Programming Panel. Again, there are a lot of software engineers in the fandom,
+and there were three presentaitons of MLP-based programming projects. One was for [PonyGuessr](https://ponyguessr.com/),
+a game about IDing an MLP episode from a single still frame. I've tried this for fun, and can manage a 50% hit rate
+if I give myself infinite time. Meanwhile, I watched people at the con hit 90% accuracy within 10 seconds. Truly
+terrifying.
+
+![PonyGuessr](/public/efnw-2023/ponyguessr.png)
+{: .centered }
+
+The second was from someone trying to finetune an LLM to act as CelestAI from the Friendship is Optimal-verse.
+To very briefly paraphrase the presenter, "Friendship is Optimal is a fanfiction series where a superintelligence
+is put in charge of a My Little Pony MMO, and tries to maximize users through ponies. So, I decided I wanted that
+in my life..." Not *quite* sure that's the right reaction. It was interesting to see that they reinvented a
+synthetic data setup.
+
+Friendship is Optimal fanfiction --> finetuned LLM --> generate FiO style dialogues --> human filtering step --> continue tuning LLM
+
+The last was, well, I'd describe it as more of a therapy session than anything else. The presenter self-introduced
+as "an Amazon engineer that works on things that don't matter", then went on a rant about 8 years of tech debt in
+the pony-themed Discord bot they wrote. I learned nothing.
+
+
+Twilight's Book Nook
+-----------------------------------------------------------------------------------------------------
+
+The MLP fandom has produced a lot of fanfiction. There are at least 3 different fan projects based on publishing
+fanfiction at-cost. I'd say the big one I was following was Ministry of Image (named after an org in kkat's Fallout Equestria).
+I've had my eye on their books for
+a while - the main issue is that they ship out of Russia, which meant a large shipping cost pre-Ukraine and
+a vague "uhhhhh" post-Ukraine.
+
+[Twilight's Book Nook](https://twilightsbooknook.com/) is, roughly, an aggregator that gets books from the different
+publishing projects, and then goes to conventions to advertise and sell them. I went back and forth on buying them,
+they're not actually cheaper because they pass on the Russian shipping cost. But eventually the vibe of "spend your
+money" won me over and I bought two.
+
+IMAGE
+
+I have read Eakin's Time Loop Trilogy before, but haven't read Prey and got it almost exclusively off the back of
+kkat's name. Hopefully it's good. One thing I appreciate about both Eakin and kkat is that they keep things short. Their
+stories are concise in their word choice, in a way that lots of serial fanfiction is not.
+
+
+"How Long Are You Out Again?"
+-----------------------------------------------------------------------------------------------------
+
+All the pony conventions I've been to have had raves in the evening, always with a horse pun. Everfree Northwest's
+is called Ponystock.
+
+Are these raves good? Ehhhhhhh. If you want drugs, there's fewer drugs (being held in a hotel means the rules are
+much stricter than an open air music festival).
