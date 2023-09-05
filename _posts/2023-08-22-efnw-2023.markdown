@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Everfree Northwest 2023"
-date:   2023-09-05 00:02:06 -0700
+date:   2023-09-05 00:02:16 -0700
 ---
 
 [Everfree Northwest](https://everfreenw.com) is a My Little Pony convention in the Seattle area. It's been running for
@@ -83,11 +83,11 @@ experience, meet fans, and sell autographs. This year, most of the people giving
 A quick recap: the My Little Pony franchise
 is split into different "generations". The original 1980s show is retroactively called Generation 1, and it's counted
 up since then. *My Little Pony: Friendship is Magic*
-is Generation 4, or G4, and is the one that kicked off the brony fandom. That fandom had some people who
+is Generation 4, or G4, and is the one that kicked off the brony fandom. Some people who
 continued to the G5 reboot, and...it's controversial.
 I watched the movie, and it struck me as "obviously flawed, but has glimmers of true quality."
-I am very basic so Izzy's my favorite. (If you watched G4, she's Pinkie Pie, except she's a unicorn and more grounded.
-If you haven't, think Luna Lovegood.)
+I am very basic so Izzy's my favorite. If you watched G4, she's Pinkie Pie, except she's a unicorn and more grounded.
+If you haven't, think Luna Lovegood.
 
 <div class="centered">
 <video width="640" muted loop autoplay playsinline controls>
@@ -96,17 +96,18 @@ If you haven't, think Luna Lovegood.)
 </video>
 </div>
 
-I haven't watched anything else from G5 yet because I've heard it's very mixed and not up to G4 standards. Still,
-it's found its fans, and I've heard the quality of the cartoon series is trending up.
+I haven't watched anything else from G5 yet because people told me it's not up to G4 standards. Still,
+it's found its fans, and I've heard the quality is trending up.
 
 Cons and fan artists have started featuring more G5 content, but the G4 mainstays still have a big chokehold.
 The surprise guests this year were Nicole Oliver and Tabitha St. Germain, two of the Friendship is Magic
 voice actors, and their lines were very obviously longer than any of the G5 voice actor lines. Some voice actors
-from *The Owl House* got invited too. Their lines were also short. People like The Owl House, there's lots of overlap
-between the fanbases. They just aren't fans of The Owl House in quite the way they're fans of Friendship is Magic.
+from *The Owl House* got invited too. Their lines were also short. People like *The Owl House*, I have yet to
+hear anything bad and there's lots of fanbase overlap. But people just aren't fans of
+*The Owl House* in the way they're fans of *Friendship is Magic*.
 
 In the future, it's possible cons will continue to drift towards generic animation to help pay the bills. I think
-this is a bit sad, but may be a necessary tax to keep the Friendship is Magic parts going.
+this is a bit sad, but may be a necessary tax to keep the *Friendship is Magic* parts going.
 
 A Programming Break
 --------------------------------------------------------------------------------------------------------------
@@ -122,9 +123,12 @@ is enough to narrow down the exact episode by brute force.)
 Of course there is a [speedrun category](https://www.speedrun.com/ponyguessr), it was
 kicked off by Tridashie putting up a $2000 prize pool for fastest times.
 It is already terrifyingly optimized and at the con I saw people hitting 90% accuracy with 10 seconds of thinking
-time.
+time - which is not at all competitive with world record runs.
 
-![PonyGuessr](/public/efnw-2023/ponyguessr.png)
+[![PonyGuessr](/public/efnw-2023/ponyguessr.png)](/public/efnw-2023/ponyguessr.png)
+{: .centered }
+
+(click for full size)
 {: .centered }
 
 Another project was from someone trying to finetune an LLM to act as CelestAI from the Friendship is Optimal-verse.
@@ -225,7 +229,7 @@ for itself and where it came from. At the vendor hall, I came across someone res
 age overlap reasons than fandom overlap reasons.
 
 <p class="centered">
-<img alt="Neopets" src="/public/efnw-2023/neopets.jpg" style="max-width: 40%"/>
+<img alt="Neopets" src="/public/efnw-2023/neopets.jpg" style="max-width: 60%"/>
 </p>
 
 
