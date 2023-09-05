@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Everfree Northwest 2023"
-date:   2023-09-05 00:02:00 -0700
+date:   2023-09-05 00:02:06 -0700
 ---
 
 [Everfree Northwest](https://everfreenw.com) is a My Little Pony convention in the Seattle area. It's been running for
@@ -87,11 +87,11 @@ is Generation 4, or G4, and is the one that kicked off the brony fandom. That fa
 continued to the G5 reboot, and...it's controversial.
 I watched the movie, and it struck me as "obviously flawed, but has glimmers of true quality."
 I am very basic so Izzy's my favorite. (If you watched G4, she's Pinkie Pie, except she's a unicorn and more grounded.
-If you've watched no MLP, think Luna Lovegood.)
+If you haven't, think Luna Lovegood.)
 
 <div class="centered">
-<video width="640" muted loop autoplay>
-    <source src="/public/efnw-2023/izzy.webm" type="video/xwebm">
+<video width="640" muted loop autoplay playsinline controls>
+    <source src="/public/efnw-2023/izzy.webm" type="video/webm">
     Your browser does not support .webm files.
 </video>
 </div>
@@ -219,9 +219,9 @@ I was out until 2 AM every night, to the consternation of the people I was stayi
 
 By the way, if you haven't seen the music video for ANTONYMPH yet, and were someone who grew up on the Internet in the
 2000s or early 2010s, I highly recommend watching it. It has many very targeted references to that era of
-viral culture. ANTONYMPH has had a surprisingly strong impact on the fandom (I saw some ANTONYMPH specific
+viral culture. ANTONYMPH has had a surprisingly strong impact on the fandom (I saw some ANTONYMPH music video
 cosplays this year), and I'd say it's because the brony fandom has existed long enough to have nostalgia
-for itself and the age it came from. At the vendor hall, I came across someone reselling Neopets merch, and I'd say that's more for
+for itself and where it came from. At the vendor hall, I came across someone reselling Neopets merch, and I'd say that's more for
 age overlap reasons than fandom overlap reasons.
 
 <p class="centered">
@@ -260,7 +260,7 @@ HYDRATE" every so often, and insist they aren't a cult. You know, standard stuff
 ![Berry Punch in reality](/public/efnw-2023/berrypunch.jpg)
 {: .centered }
 
-I got the origins from socializing with a regular. "Yeah, we have people from all over. A few people from Europe. No Asians though-"
+I learned all this from socializing with a member. "Yeah, we have people from all over. A few people from Europe. No Asians though-"
 
 At which point a BerryTube regular said "OH MY GOD how can you say that to an Asian person" and then we laughed
 as he desperately tried to clarify the context and failed. The
@@ -327,4 +327,4 @@ mild fever and cough. The part I did not account for was that I'd have to cancel
 That sucked. The COVID risk was low but the FOMO risk was high.
 
 I definitely still would have gone to the con if I had given it more consideration, but I would have been a bit more diligent about
-masking protocols. Ah well. It certainly dampened things a bit, but there's still a decent chance I'll be back next year.
+masking protocols. Ah well. It certainly dampened things a bit, but I will (probably) still be back next year.
