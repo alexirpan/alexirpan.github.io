@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Everfree Northwest 2023"
-date:   2023-08-18 00:00:01 -0700
+date:   2023-09-05 00:02:00 -0700
 ---
 
 [Everfree Northwest](https://everfreenw.com) is a My Little Pony convention in the Seattle area. It's been running for
@@ -10,7 +10,7 @@ date:   2023-08-18 00:00:01 -0700
 I told myself I was done with pony conventions after BronyCon 2019.
 I didn't have long term friendships in brony fandom - what I learned long ago is that conventions are a
 good way to make introductions and meet people, but they don't substitute the work of actually keeping up
-with people and maintaining friendships. (This has come up in the show itself - see Amending Fences, which is
+maintaining friendships. (This has come up in the show itself - see Amending Fences,
 a common fan favorite episode.)
 
 Absent catching up with people I "only see at cons", it didn't feel like there was much cons had left to
@@ -38,7 +38,7 @@ I thought I was done with these events! IS THIS MY LIFE NOW???
 
 OH NO
 
-![The ride never stops](/public/mh-2023/rideneverstops.png)
+![The ride never stops](/public/efnw-2023/rideneverstops.png)
 {: .centered }
 
 > "Steve, do you know the first thing I said to myself when I realized I was a brony?"
@@ -48,43 +48,62 @@ OH NO
 > I look him dead in the eye, and say "Shit."
 
 [ACRacebest, describing his appearance on "Is it Weird?" on The Steve Harvey Show](https://www.youtube.com/watch?v=Jpu3Wf8322w)
+{: .centered }
 
 
 "I am Cringe, but I am Free" - Socrates, probably
 ----------------------------------------------------------------------------------------------
 
-The classic first sight at any MLP convention is someone in a fursuit. Every brony will tell you that
+The classic first sight at any MLP convention is a furry in a fursuit. Every brony will tell you that
 bronies are not furries. Every 2023 brony will tell you that at this point there's a pretty strong overlap.
 
 Still, these cons are a low judgment zone. Not zero, but low. There's definitely a vibe of "finally, I can
 express myself". I don't really try to hide my brony fandom, but I don't go out of my way to express it either.
-During the con, I talked to one person who felt similarly, although he said he doesn't wear pony shirts because
-he lives in a red state, and would get worried about his personal safety if he was more "out" about it.
+During the con, I talked to one person who felt similarly, although he said he doesn't wear pony shirts for
+personal safety reasons. He lives in a red state and isn't sure what would happen if he was more "out" about it.
+My suspicion is that the majority of people would not care, there are plenty of out-and-proud bronies that
+live in Republican areas, have served in the military, etc. However, this is one of those things with
+"few idiots ruin everything" dynamics, and I can understand their choice.
 
 These cons always have a bit of "nerd bleedover", so to speak.
-One of the first panels of the con was purely a meet-and-greet "make new friends" panel, for people willing
+One of the first events of the con was purely a meet-and-greet "make new friends" panel, for people willing
 to meet new people but unsure how to start conversations. ("I'm in this photo and I don't like it.")
 I ended up in many, many more Marvel and gaming discussions than expected.
 
+![Cringe](/public/efnw-2023/cringe.jpg)
+{: .centered }
+
+
+Guests of Honor
+-------------------------------------------------------------------------------------------
+
 If you've never been to a fan convention at all, one commonality is actors coming to talk about their show
-experience, meet fans, and sell autographs. This year, most of the people giving autographs are from G5.
+experience, meet fans, and sell autographs. This year, most of the people giving autographs were from G5.
 
 A quick recap: the My Little Pony franchise
-is split into different "generations", with Generation 1 starting in the 1980s. My Little Pony: Friendship is Magic
-is Generation 4, or G4, and is the one that kicked off the brony fandom. The G5 reboot is...controversial.
-I watched the movie, and it struck me as "just okay, obviously flawed, but glimmers of true quality."
-Like a very basic person, Izzy's my favorite.
+is split into different "generations". The original 1980s show is retroactively called Generation 1, and it's counted
+up since then. *My Little Pony: Friendship is Magic*
+is Generation 4, or G4, and is the one that kicked off the brony fandom. That fandom had some people who
+continued to the G5 reboot, and...it's controversial.
+I watched the movie, and it struck me as "obviously flawed, but has glimmers of true quality."
+I am very basic so Izzy's my favorite. (If you watched G4, she's Pinkie Pie, except she's a unicorn and more grounded.
+If you've watched no MLP, think Luna Lovegood.)
 
-GIF
+<div class="centered">
+<video width="640" muted loop autoplay>
+    <source src="/public/efnw-2023/izzy.webm" type="video/xwebm">
+    Your browser does not support .webm files.
+</video>
+</div>
 
 I haven't watched anything else from G5 yet because I've heard it's very mixed and not up to G4 standards. Still,
 it's found its fans, and I've heard the quality of the cartoon series is trending up.
 
-Cons and fan artists have been starting to move towards G5 content, but the G4 mainstays still have a big chokehold.
+Cons and fan artists have started featuring more G5 content, but the G4 mainstays still have a big chokehold.
 The surprise guests this year were Nicole Oliver and Tabitha St. Germain, two of the Friendship is Magic
 voice actors, and their lines were very obviously longer than any of the G5 voice actor lines. Some voice actors
-from The Owl House got invited too. Their lines were also short. People like The Owl House, there's lots of overlap
-between the fanbases. They just aren't fans of The Owl Hosue in quite the way they're fans of Friendship is Magic.
+from *The Owl House* got invited too. Their lines were also short. People like The Owl House, there's lots of overlap
+between the fanbases. They just aren't fans of The Owl House in quite the way they're fans of Friendship is Magic.
 
 In the future, it's possible cons will continue to drift towards generic animation to help pay the bills. I think
 this is a bit sad, but may be a necessary tax to keep the Friendship is Magic parts going.
@@ -99,19 +118,22 @@ At the Pony Programming Panel, there were multiple presentations on MLP projects
 [PonyGuessr](https://ponyguessr.com/), a game about IDing My Little Pony episodes from a single still frame. I've
 tried playing this for fun, and without Google I can manage a 50% hit rate if I give myself infinite time to
 make a best guess. (You can access all episode titles and synopses, so even a vague guess on the season or plot
-is enough to narrow down the exact episode.) At the con, I saw people hit 90% accuracy with 10 seconds of thinking
-time, which was truly terrifying.
+is enough to narrow down the exact episode by brute force.)
+Of course there is a [speedrun category](https://www.speedrun.com/ponyguessr), it was
+kicked off by Tridashie putting up a $2000 prize pool for fastest times.
+It is already terrifyingly optimized and at the con I saw people hitting 90% accuracy with 10 seconds of thinking
+time.
 
 ![PonyGuessr](/public/efnw-2023/ponyguessr.png)
 {: .centered }
 
 Another project was from someone trying to finetune an LLM to act as CelestAI from the Friendship is Optimal-verse.
 To very briefly paraphrase the presenter, "Friendship is Optimal is a fanfiction series set on Earth,
-where a superintelligent AGI named CelestAI is put in charge of a My Little Pony MMO. Its told to maximize user
+where a superintelligent AGI named CelestAI is put in charge of a My Little Pony MMO. It's told to maximize user
 satisfaction through ponies." There is an entire subgenre of "people concerned about AI alignment write fanfiction"
-and the story unfolds in the way you'd expect. Now, this project in particular was born from some deciding they
-wanted CelestAI in their life. I'm not *quite* sure that's the right reaction, but it was interesting to
-see someone reinvent a synthetic data pipeline.
+and the story unfolds in the way you'd expect of that genre. Now, this project in particular was born from someone
+deciding they wanted CelestAI in their life. I'm not *quite* sure that's the right reaction to have after
+reading Friendship is Optimal, but it was interesting to see someone reinvent a synthetic data pipeline.
 
 ![Training diagram](/public/efnw-2023/traindiagram.png)
 {: .centered }
@@ -121,7 +143,6 @@ ponies.
 
 ![CelestAI test](/public/efnw-2023/celestai.png)
 {: .centered }
-
 
 I've talked about [generative AI in My Little Pony]({% post_url 2023-07-19-ml-hurry %}) before, and I think the
 reason these projects come from the fandom is that the MLP fandom has the right combination of appetite
@@ -144,25 +165,27 @@ which meant a large shipping cost pre-Ukraine and an "uhhhhh" post-Ukraine.
 
 [Twilight's Book Nook](https://twilightsbooknook.com/) is, roughly, an aggregator that gets books from the different
 publishing projects, and then goes to conventions to advertise and sell them. The books aren't actually cheaper, they
-pass on the Russian shipping cost to con-goers, but I decided to take the change to pick up some copies I was
+pass on the Russian shipping cost to con-goers, but I decided to take the chance to pick up some copies I was
 interested in.
 
-IMAGE
+![Books](/public/efnw-2023/books.jpg)
+{: .centered }
 
 I haven't read Prey yet, and got it almost exclusively off it being written by kkat. Fallout Equestria is easily my
-favorite MLP fanfic and I'll defend it as well-written in general.) Hopefully Prey lives up to those expectations.
-The thing I appreciate about both Eakin and kkat is their concise style and character building, avoiding the meandering
+favorite MLP fanfic and I'll defend it as genuinely high quality outside its fanfiction trappings. "We were racing
+apotheosis and we were losing" still lives rent-free in my head.
+Hopefully Prey lives up to those expectations.
+The thing I appreciate about kkat is their concise style and character building, avoiding the meandering
 fluff that tends to plague fanfic.
 
 
 "How Long Are You Out Again?"
 -----------------------------------------------------------------------------------------------------
 
-All the pony conventions I've been to have had raves in the evening, always with a horse pun. Everfree Northwest's
-is called Ponystock.
+All the pony conventions I've been to have raves at night. Everfree Northwest's was called Ponystock.
 
 Are these raves good? Ehhhhhhh. I'd say that question is missing the point. The point of these events is to give
-people an experience they wouldn't get elsewhere. The average brony is not going to go to an EDM concert, the
+people an experience they wouldn't get elsewhere. The average brony is not going to go to an EDM concert, and the
 average brony musician is not going to get a chance to perform for such a specific crowd of pony enthusiasts. I
 went to one of the "My Little Karoake" sessions and it was great. Where else will you get a group singalong of
 ["You'll Play Your Part"](https://www.youtube.com/watch?v=twh3jscQrOc)?
@@ -170,103 +193,138 @@ went to one of the "My Little Karoake" sessions and it was great. Where else wil
 Even then, the amount of "pony music" is always a point of contention. People tend to assume that "pony concert"
 means "remixes of pony songs", or at least "overt references to My Little Pony". These days, most of the pony
 musicians are people who take inspiration from the show, but basically write whatever music they want. It is
-very common for people to just do instrumental music, or songs that could be about anything.
+very common for people to do instrumental music with no clear connection to MLP at all. People who met for
+different reasons but now celebrate each other.
 
-> I wrote the Lyrics myself which also was a first time for me and I wanted the song to be something where anybody can imagine someone special who this song is for. So at first it doesn't feel like a pony song and you could play it in front of a big crowd and people will love it.
+> I wrote the lyrics myself which also was a first time for me and I wanted the song to be something where anybody can imagine someone special who this song is for. So at first it doesn't feel like a pony song and you could play it in front of a big crowd and people will love it.
 >
 > But secretly I wrote this song about Twilight haha ;)
 
 [AnNy Tr3e, on "You Are My Star"](https://www.youtube.com/watch?v=bXuhkX96n30&lc=Ugz_WALD-VqZd9Vk3DZ4AaABAg)
 {: .centered }
 
-If you haven't been following the brony music scene, then this can be a bit disconcerting. For me,
+If you haven't been following the brony music scene, this can be a bit disconcerting. Personally
 the brony music scene is one of the few parts of the fandom I keep up to date with, so it works out for me.
-I used to look down on the pony EDM raves, because they looked really lame, and then over time decided that
-I should stop worrying about that and just go dance poorly with everyone else. Which I did! Until 2 AM, to
-the mild worry of the people I was staying with. To quote ANTONYMPH,
+I used to look down on the pony raves, because they look lame, and then over time decided that
+I should stop worrying about that and just go dance poorly with everyone else.
+To quote ANTONYMPH,
 
 > Don't care you think it's cringe, because it's not your life
 
+<div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CNPdO5TZ1DQ?si=6xgksDKENdMQhjM-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
-If you haven't seen the music video for ANTONYMPH yet, and were someone who grew up on the Internet in the
-2000s or early 2010s, I highly recommend watching it. It has a bunch of very targeted millenial Internet humor shoutouts.
-ANTONYMPH has had a surprisingly strong impact on the fandom, I've seen both cosplay and follow-on fan remixes,
-and I think it's because the brony fandom has existed long enough to have nostalgia for itself and the age
-it came from. At the vendor hall, I came across someone reselling Neopets merch, and I'd say that's more for
+I was out until 2 AM every night, to the consternation of the people I was staying with.
+
+By the way, if you haven't seen the music video for ANTONYMPH yet, and were someone who grew up on the Internet in the
+2000s or early 2010s, I highly recommend watching it. It has many very targeted references to that era of
+viral culture. ANTONYMPH has had a surprisingly strong impact on the fandom (I saw some ANTONYMPH specific
+cosplays this year), and I'd say it's because the brony fandom has existed long enough to have nostalgia
+for itself and the age it came from. At the vendor hall, I came across someone reselling Neopets merch, and I'd say that's more for
 age overlap reasons than fandom overlap reasons.
 
-IMAGE
+<p class="centered">
+<img alt="Neopets" src="/public/efnw-2023/neopets.jpg" style="max-width: 40%"/>
+</p>
 
 
 Tonight We Gonna Party Til The Party Don't Stop
 --------------------------------------------------------------------------------------------------------
 
-One thing that most people don't know about pony cons is that some have dedicated "party floors". Not everyone
-at a pony con is over 21, but you get enough adults of the right age together and some people will want to drink.
+Not everyone
+at a pony con is over 21, but you get enough adults of the right age together and people will want to drink.
 
-The way Everfree Northwest handles it is with a dedicated "party floor". A few conference suites are designed
-as party rooms, and community organizers will host late night parties out of those rooms. The idea is to control
-the degeneracy and make sure people can have a good time without getting too drunk. All these parties will
+The way Everfree Northwest handles this is with a dedicated "party floor". A few conference suites at the hotel
+hosting the event are designated as party rooms. Community organizers will host late night parties out of those
+rooms. The idea is to control
+the degeneracy, by centralizing the drinking in a place with good norms. All these parties will
 have the same rules:
 
-* Everyone is carded, no exceptions.
+* Everyone's ID gets checked. No exceptions.
 * If you take a drink, you finish it or pour it out before leaving the room. There are plenty
 of minors at pony conventions and con staff wants no part in enabling underage drinking.
-* Someone trained on how to care for people who get too drunk will be around all night.
-* No one can charge for alcohol. This has to do with liquor license reasons I believe, but it means that all
+* Someone trained on first-aid for drunk people will be around all night.
+* No one can charge for alcohol. I believe this is because of liquor license reasons, so it means all
 rooms run on a donation-only system.
 
 You run into some weird people at these parties. The Bay Area pony convention often has a party run by a
 group of Trekkies who decorate the room in Klingon gear. I've been told it's part of their conversion
 process for spreading the good word? And then at Everfree I ended up in the BerryTube room, which grew from
-a My Little Pony drinking game to a bunch of people who group watch random MLP-adjacent videos, chant "HAIL
-HYDRATE" every so often, and insist they aren't a cult. You know, standard stuff.
+a weekly My Little Pony drinking game to a bunch of people who group watch random MLP-adjacent videos, chant "HAIL
+HYDRATE" every so often, and insist they aren't a cult. You know, standard stuff. They're named after Berry Punch, the character that's an alcoholic (or at least, as far as you can imply that in a kid's show).
 
-IMAGE
+![Berry Punch from show](/public/efnw-2023/berrypunchshow.webp)
+{: .centered }
 
-"Yeah, we have people from all over. A few people from Europe. No Asians though-"
+![Berry Punch in reality](/public/efnw-2023/berrypunch.jpg)
+{: .centered }
+
+I got the origins from socializing with a regular. "Yeah, we have people from all over. A few people from Europe. No Asians though-"
 
 At which point a BerryTube regular said "OH MY GOD how can you say that to an Asian person" and then we laughed
-as he desperately tried to clarify the distinction between "person who lives in Asia" from "Asian ethnicity". The
-interruptor said I shouldn't worry, *she* couldn't be racist towards Asians because she had a black trans boyfriend who was really into K-pop.
-I mentioned that I was friends with a black gay guy who was into K-pop, and we briefly bonded over our token black LGBT Koreaboos.
+as he desperately tried to clarify the context and failed. The
+interrupter said I shouldn't worry, *she* couldn't be racist towards Asians because she had a black trans boyfriend who was really into K-pop.
+I mentioned that I was friends with a black gay guy who was into K-pop, and we briefly shared common ground
+over our token black LGBT Koreaboos.
 
 
 There Was a MLP Card Game?
 -------------------------------------------------------------------------------------------------------
 
 Yes! It also...has a surprising amount of complexity to it?
-As far as I can tell the competitive scene is basically running on life support,
-but it's still going.
 
 I went to one of the "learn to play" events since I had the free time and was curious. And, I don't think
 there's an easy summary of how the game works. It's a little like Commander, where every deck has a double-sided
-"Mane Character" that starts weak and can become stronger. It's a little like Marvel Snap, where there are
-two zones that you compete over and earn points if your total power is stronger. But then there are a bunch
-more rules on top of that, which makes it different from either. If I actually had someone to regularly play it with,
+"Mane Character" that always starts in play, but it can "level up" when you meet a condition.
+It's a little like Marvel Snap, where there are
+zones that you compete over and earn points if your total power is stronger, but the zones are determined by your deck,
+so an aggro / control deck can pick zones appropriately. Then there's way more rules on top of that.
+If I actually had someone to regularly play it with,
 maybe I'd buy the cards for it, but I don't and the game's out of print anyways. Still a bit of a trip to
 hear about a Princess Cadance Reanimator deck though. Those are not the words I expected to fit together.
 
 
-Ending with an Auction
+The Charity Auction
 ---------------------------------------------------------------------------------------------------------
 
 The last event before closing ceremonies was a charity auction. This happens at other cons too. Each year the con picks a charity,
 people donate items to auction off, and they get sold in one big event at the end.
 
-It's a long-running observation that a lot of furries work in tech. Bronies are no different. Combine disposable income with
-"the money goes to charity" and a desire to flex, and you have a recipe for really high bids.
+It's a long-running observation that a lot of furries work in tech. A lot of bronies are in tech too. Combine disposable income with
+"the money goes to charity" and a desire to flex at a public auction, and you have a recipe for really high bids.
 $500, for an autographed photo of Tara Strong! $250, for a jar of honey! I have always tried to make these events, because
-you see cool things. I have never walked away with anything, because my price tolerance is not high enough to compete with people.
-I saw a huge bid for some pony themed license plates, and later learned the winner lived in Palo Alto and had a car restoration
-hobby, so you can imagine the money that went into that.
+you see cool things go up for bidding. I have never walked away with anything, because my price tolerance is not high enough to compete.
+I saw a huge bid for some pony themed license plates, and later learned the winner lived in Palo Alto and has a car restoration
+hobby. You can fill in the blanks from there.
 
-There were only two items where I thought I had a shot. The first was a signed copy of [Ponies: The Galloping](https://mtg.fandom.com/wiki/Ponies:_The_Galloping),
-a Magic: The Gathering x My Little Pony crossover. I knew they sold on eBay for about $200, I set a personal bidding cap of
-$300, and they sold for $500. The second was a set of red envelopes with My Little Pony characters on the front, made to
-promote the MLP movie in China. (There is a decently big Chinese brony scene, which only lightly interacts with the English scene.
-I don't know much about them, besides that it exists, and that it trends on the younger side than the English fandom.) They're
-red envelopes, they're cheap! Sure, they're signed by the voice actor, but I figured that I could irresponsibly go up to $100 and have a shot.
+I was only willing to overpay on two items.
+The first was a signed copy of [Ponies: The Galloping](https://mtg.fandom.com/wiki/Ponies:_The_Galloping),
+the Magic: The Gathering x My Little Pony crossover. They only printed it once, and I knew they sold on eBay for about $200. So I set a
+personal bidding cap of $300, and they sold for $500.
 
-They ended up going for $350. Ah well. There are ways I can signal allegiance without spending money.
+The second was a plushie and set of red envelopes with My Little Pony characters on the front, signed by a voice actor
+when they were promoting the MLP movie in China.
+They're red envelopes, they're cheap! Sure, there's an autograph premium, but I figured
+that I could irresponsibly go up to $100 and have a shot.
+
+They ended up going for $350. Ah well. There are ways to signal allegiance besides money.
+
+Speaking of the Chinese brony scene, it only lightly interacts with the English scene and I don't know much about it.
+The one native Chinese brony I've met said it trends younger, and the scene can face visa troubles when going to the US.
+I also have a link to a [MLP bilibili slang spreadsheet](https://docs.google.com/spreadsheets/d/1Q6_zh2aOWNkY8bGbn0jgrSjlRIr-xRrJEPA3Kl5ic4U/edit#gid=0)
+that's *very* excellent. Nicknaming Starlight Glimmer "Communist Secretary" hits different when someone from China does it.
+
+
+FOMO
+----------------------------------------------------------------------------------------------------------
+
+Unfortunately, I ended up catching COVID from the con.
+
+Now, ahead of time, I had considered the COVID risk and considered it within my risk tolerance. Adaptations of recent strains to
+be more mild, full vaccination suite with bivalent booster, etc. Symptom-wise, that all played out fine, I essentially just had a
+mild fever and cough. The part I did not account for was that I'd have to cancel all my planned social meetups while staying-in-place.
+That sucked. The COVID risk was low but the FOMO risk was high.
+
+I definitely still would have gone to the con if I had given it more consideration, but I would have been a bit more diligent about
+masking protocols. Ah well. It certainly dampened things a bit, but there's still a decent chance I'll be back next year.
