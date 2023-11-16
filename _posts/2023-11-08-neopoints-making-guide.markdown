@@ -113,4 +113,26 @@ challengers in the battledome and is a common "starter" challenger to fight
 while training for tougher ones.
 * The premium challengers (Space Faerie, CHECK), which are only available to
 Neopets premium users, but which drop Nerkmids and Giant Bubbling Space Fungus, both valuable items.
-*
+The first can be gambled for paint brushes at the Alien Vending Machine, and the
+latter is a stat-boosting item for Battledome trainers.
+* The Snowager, which is by far strongest enemy you could fight, but which has a
+small chance of dropping Frozen Neggs. These can be directed traded for Negg points,
+which essentially makes them as valuable as the most expensive Negg. The most
+expensive Negg is usally the Snegg, since top 1% rich Neopians compete on who
+can get the most HP, and Sneggs are one of the few effective ways to do so if
+money is no object.
+
+The profit depends on market prices of the items, but on average,
+
+Snowager > Premium Challengers > Walrein > Koi Warrior > Kreludor
+
+This, coincidentally, is also the order of difficulty for how hard they are to fight.
+
+Fighting the Snowager is the highest variance, since your profit is all based on
+Frozen Negg drops. You get 15 item drops per day, and based on stats, you can
+expect to see around 10 Frozen Neggs per **month**. But right now, Frozen Neggs
+cost 450k. Assuming you can sell for that much, it should average 150k NP per day,
+and this is ignoring the random Codestone drops along the way.
+
+Unfortunately you'll need to train a Neopet for several months to get to the point
+of fighting the Snowager. I believe
