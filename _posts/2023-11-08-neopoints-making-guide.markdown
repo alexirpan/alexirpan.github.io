@@ -134,5 +134,36 @@ expect to see around 10 Frozen Neggs per **month**. But right now, Frozen Neggs
 cost 450k. Assuming you can sell for that much, it should average 150k NP per day,
 and this is ignoring the random Codestone drops along the way.
 
+If you can't beat the Snowager, and don't pay for premium, you can still get NP from
+Codestone drops. Codestone prices change but right now (put in the math here) and
+you can expect to get N codestones a day.
+
 Unfortunately you'll need to train a Neopet for several months to get to the point
-of fighting the Snowager. I believe
+of fighting the Snowager. Training a Neopet takes a lot of time and money (see Codestone
+prices above), but if you want to train for other reasons, you might as well set a goal
+of getting to the Snowager tier. I recommend using the "rush to level 250" strategy
+described here. It has more set-up time but is more efficient at getting to max stats
+in both time and money.
+
+The Stock Market
+
+Ahh, the stock market. According to legend, stock prices used to be driven by user behavior.
+Then some users coordinated a stock pump and dump, so it got changed to be entirely random.
+This doesn't stop people from posting "to the mooooon", especially during the Gamestop
+craze of 2020.
+
+Each day, you can buy up to 1000 shares of stock. You're only allowed to buy stock that's
+15 NP/share (or 10 NP/share if you have the Battleground boon - more on that later).
+You can sell as much stock as you want,
+paying a 20 NP commission per transaction. (In practice this commission is basically zero
+and I'll be treating it as such.)
+
+If stock motion is entirely random, how can you make money? You can think of stock prices
+like a random walk. Sometimes they drift up, sometimes they drift down, but average motion
+is zero. However, you only realize gains or losses at the time you sell.
+So you simply hold all the stocks that go down, and sell the lucky stocks that go up.
+Every stock will *eventually* cross into profitable territory, it just might take a while.
+
+The common advice is to set a sell threshold (common recommendations are 30 NP/share, 45 NP/share,
+and 60 NP/share depending on patience), and sell whenever the stock crosses that price. Generally I would
+recommend
