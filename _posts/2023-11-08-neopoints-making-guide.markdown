@@ -145,6 +145,24 @@ of getting to the Snowager tier. I recommend using the "rush to level 250" strat
 described here. It has more set-up time but is more efficient at getting to max stats
 in both time and money.
 
+TABLE
+
+Bank Interest
+
+In real life, the interest rate you get in a savings account is driven by the Treasury's
+interest rate, which is based on a bunch of complicated factors over what they want the
+economy to look like.
+
+In Neopets it's driven by how many Neopoints you deposit. The more you store, the more interest
+you get. At the top-most bracket (10 million Neopoints), you earn 12.5% interest per year.
+
+You may be thinking "doesn't this promote rich-get-richer?" and yep you're entirely right. You
+may also be thinking "isn't 12.5% interest per year a lot?" and yep, you're also right.
+
+This is never going to be a big part of your daily income unless you have a ton of money already,
+and if you already have a ton of money I don't know why you're reading this guide. I mention it because
+it is the floor for any investments made (where usually this means "rare items").
+
 The Stock Market
 
 Ahh, the stock market. According to legend, stock prices used to be driven by user behavior.
@@ -159,11 +177,132 @@ paying a 20 NP commission per transaction. (In practice this commission is basic
 and I'll be treating it as such.)
 
 If stock motion is entirely random, how can you make money? You can think of stock prices
-like a random walk. Sometimes they drift up, sometimes they drift down, but average motion
-is zero. However, you only realize gains or losses at the time you sell.
+like a random walk. Sometimes they drift up, sometimes they drift down,
+but you only realize gains or losses at the time you sell.
 So you simply hold all the stocks that go down, and sell the lucky stocks that go up.
 Every stock will *eventually* cross into profitable territory, it just might take a while.
 
-The common advice is to set a sell threshold (common recommendations are 30 NP/share, 45 NP/share,
-and 60 NP/share depending on patience), and sell whenever the stock crosses that price. Generally I would
-recommend
+The common advice is to set a sell threshold, and sell only when the stock crosses that price.
+Conventional wisdom is to sell at 60 NP/share. But how accurate is this wisdom?
+A *lot* of analysis has been done by users over the years, including:
+
+* A histogram of price movements from [JellyNeo](https://www.jellyneo.net/?go=neopian_stock_market).
+* A [neostocks.info](https://neostocks.info/) site that lets you check historical stock prices
+* Corresponding analysis of [neostocks data](https://www.reddit.com/r/neopets/comments/af8p38/comment/edwe8lo/) by u/not-the-artist on Reddit.
+
+This data all suggests the conventional wisdom of selling at 60 NP/share is correct, since price movement
+seems dependent on current price, and the 61-100 NP range is where average price movement changes from
+0 to slightly negative. The cause of this was eventually revealed by u/neo\_truths's leak of the Stock
+Market [pricing algorithm](https://www.reddit.com/r/neopets/comments/xrlfd3/stock_market/).
+
+> Set max move to current price / 20
+> Set max move to current price / 50 if current price > 100
+> Set max move to current price / 200 if current price > 500
+> Set max move to current price / 400 if current price > 1000
+> Round up max move
+>
+> Set variation to random between 1 and max move * 2 - 1. Randomly add +1 to variation with 1/20 chance. Randomly subtract 1 with 1/20 chance.
+>
+> If current price >= 10 and current price / opening price > 1.15 [subtract] max move / 4 rounded down from variation
+> If current price >= 10 and current price / opening price > 1.3 [subtract] max move / 4 rounded down from variation
+>
+> Set points to variation - max move rounded down
+> Set p to min(current price * 10, 100)
+> If points + current price > 5, change stock price to current price + points with p% chance
+
+Some re-analysis by u/not-the-artist is [here](https://www.reddit.com/r/neopets/comments/xrlfd3/comment/itjn5de/),
+confirming this leak is consistent with what was seen before. The TL;DR is that the only lines that cause net price
+drops are
+
+> If current price >= 10 and current price / opening price > 1.15 [substract] max move / 4 rounded down
+> If current price >= 10 and current price / opening price > 1.3 [substract] max move / 4 rounded down
+
+Thanks to rounding, these conditions only fire when `max move` is at least 4, and if we look above, this
+only starts happening in the 61-100 NP range.
+
+Using a 60 NP sell threshold will lead to an average holding time of 399 days. When bank interest is accounted for,
+1000 shares of 15 NP stock is worth around 29.5k NP. (It is lower than 60k NP because you miss on 399 days of bank
+interest - full math is done [here](https://www.reddit.com/r/neopets/comments/y8bqig/leaked_code_determining_best_stock_selling_price/) for the curious).
+This gives a profit of 14.5k NP per day, assuming you can pay for 1000 shares/day and are patient enough.
+
+Note this is less than Trudy's Surprise. Yeah we're falling into the weeds now.
+
+Coconut Shy
+
+This is one of many gambling minigames themed around ones you'd see in amusement parks. Like amusement parks, most
+of the games are scams. Coconut Shy is one of the few exceptions.
+
+You can throw 20 balls per day for 100 NP each, earning one of five outcomes.
+
+* A miss (0 NP)
+* A small hit (50 NP)
+* A strong hit that doesn't knock over a coconut (300 NP)
+* Knock over a coconut (10,000 NP + a random Evil Coconut)
+* The coconut explodes (Jackpot - 500,000 NP)
+
+The two outcomes worth money are the last two. The jackpot is obviously good, but the Evil Coconuts are actually
+worth *more*. The Evil Coconuts are stamps, and some Neopets users love collecting stamps. The Coconuts actually
+sell for more than the Jackpot right now - current price looks like it is between 750k-1 million per Coconut.
+
+Coconut Shy odds were leaked by u/a\_neopian\_with\_info in this [Reddit post](https://www.reddit.com/r/neopets/comments/wc4nsi/deserted_fairground_games_odds/).
+Let's assume you use the Halloween site theme, which slightly improves your odds. The payout table is
+
+| Payout | Probability |
+| ------ | ----------- |
+| 0 NP   | 20% |
+| 50 NP  | 65% |
+| 300 NP | 14.9% |
+| 10,000 NP + Evil Cocunut (estimated value 750,000 NP) | 0.99% |
+| 500,000 NP | 0.01% |
+
+Combined this gives an expected payout of 834.6 NP per throw. Each throw costs 100 NP, so doing 20 throws per day
+gives 14,692 NP expected profit per day. Again, this is high variance though, all your payout is on winning a coconut
+or hitting the Jackpot, which happens every 50 days on average.
+
+If you decide to go Coconut throwing, you won't be able to throww it by clicking the site, but you can still play
+the game by visiting the direct link mentioned on [JellyNeo](https://www.jellyneo.net/?go=coconut_shy). I am honestly
+surprised the Evil Coconuts are still so expensive. My guess is that most users don't know Coconut Shy is net profitable,
+or the ones that do can't be bothered to do it.
+
+Faerie Caverns
+--------------------------------
+
+The Faerie Caverns are a daily where you pay 400 NP to enter the cave, and win a prize if you make it to the
+end. You have a 1 in 8 chance of doing so (you have to win three 50-50 coin flips in a row), and can attempt
+once per day.
+
+People do this daily because of the Faerie Caverns stamp, which is only available from this daily and sells for
+around 50 million NP. However, your odds of winning it are *very* slim. According to a u/neo\_truths [leak](https://www.reddit.com/r/neopets/comments/xwyrf0/faerie_caverns_grave_danger/),
+if you win the 1 in 8 and get to the end, your payouts are
+
+| Payout | Probability |
+| ------ | ----------- |
+| 500 NP to 2,500 NP   | 89.9% |
+| 5,000 NP | 4.9% |
+| 10,000 NP | 5.1% |
+| 25,000 NP + item prize | 0.1% |
+
+Of the item prizes, you have a 10% chance of getting a Faerie Paint Brush, and a 90% chance of winning one of Beautiful Glowing Wings,
+Patamoose, Faerie Caverns Background, or Faerie Caverns Stamp. You can see in the odds that Faerie Paint Brush is
+considered the best prize, so it's funny that every other prize is worth more.
+
+TABLE HERE
+
+If you do the expected value math, then doing Faerie Caverns is net profitable. However I personally don't do this
+daily.
+
+
+The Neopian Lottery
+-------------------------------
+
+Okay, no you should not do this one, but it's funny so I'll give it a quick shoutout.
+
+In the Neopian lottery, you can buy tickets (up to a limit) with different
+numbers, and the jackpot is paid to the user with the most matching numbers (or split among
+all such users in the case of a tie). Importantly the lottery jackpot is 100% of all ticket
+sales + a 5k starting pot. Since the lottery *always* pays out, it's technically positive
+expected value to buy a lottery ticket.
+
+The expected value is like, 1 NP/ticket at best, and you will easily earn more playing a Flash
+game. But I think it is just a perfect symbol of Neopets dailies. It's a random slot machine,
+but unlike a real casino the odds are very slightly in your favor.
