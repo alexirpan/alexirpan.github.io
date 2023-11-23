@@ -20,7 +20,7 @@ many with the same question: how do I afford anything?
 
 **Buddy do I have the post for you!**
 
-You know how much time I have spent studying how to squeeze Neopoints water out of the Neopets stone? WAY TOO MUCH TIME. Like really it's too much. I should stop.
+You know how much time I have spent studying how to squeeze Neopoints water out of the Neopets stone? WAY TOO MUCH TIME. Like really I've spent too too much. I should stop.
 
 Part of your duty to humanity is that if you spend a bunch of time learning something, you should teach what you've learned so that other people
 don't have to go through the same struggle. Yes, even if it's about Neopets.
@@ -32,16 +32,20 @@ you can turn it into lots of Neopoints. Also like real finance, doing so require
 on item prices, haggle for good deals, and get a sense for when a price spike is real or someone trying to manipulate the market.
 There is no regulation, with all the upsides and downsides that implies.
 
-This post is *not* about that.
+This post is *not* about that, because,
 
 ![Ain't nobody got time for that](/public/np-guide/notime.gif)
 {: .centered }
 
 Instead, this post is about ways to extract value from the built-in site features of Neopets.
-Everything here is doable without having to directly interact with another Neopets user, aside from selling items for profit.
+We are going to do *honest work* and fail to ever reach the market-moving elite
+class and we are going to be *fine with that*.
+Everything here is doable without direct interaction with any other Neopets user,
+aside from selling items for profit.
 
-I have ordered this post from most to least impactful. This means I am leaving out *tons* of site actions that give you free stuff, because a lot of
-it just isn't worth your time. Still, even many of the things in this post aren't worth your time.
+I've tried to limit this to just things that I think are worth your time.
+There are *tons* of site actions that give you free stuff, except the stuff is all
+junk.
 
 
 # Daily Quests
@@ -59,64 +63,131 @@ launch, my weekly reward was a book valued at 40 million NP. By the time I got i
 considerably, and I ended up selling it for 450k NP, but that was still 64.2k NP / day of profit for very little work.
 
 As you might imagine, this caused a lot of upheavel in the economy. That book I sold for 450k NP is now selling
-for 200k NP, and the price will likely keep dropping. My guess is that prizes will end up somewhere around 150k NP,
-and if we include the daily reward in that, we get an estimate of
+for 200k NP, and the price will likely keep dropping. My guess is that prizes will end up somewhere around 150k NP.
+If we assume the daily reward gives 25k NP per day, we get an estimate of
 
 $$
     25,000 + 150,000/7 \approx 46,400 NP/day
 $$
 
-Neopets has an inflation problem. For various reasons, money doesn't leave the Neopets ecosystem as fast as it should. It's not a total disaster, but
+## Aside: Item Inflation
+
+For various reasons, money doesn't leave the Neopets ecosystem as fast as it should, and some items are rarer
+than they should be.
+It's not a total disaster, but
 it is bad. There are some nice plots made by [u/UniquePaleontologist on Reddit](https://www.reddit.com/r/neopets/comments/16madug/lets_talk_about_inflation/) charting
-item prices going back to 2008, which is almost 15 years of data! To quote the post,
+item prices going back to 2008, showing trends over 15 years of data! To quote the post,
 
 > my background is in biology and data science not economics but I do love my broken html pet simulator
 
 ![Chart of prices](/public/np-guide/inflation.webp)
 {: .centered }
 
-This is a plot of paintbrush prices over time. Prices are in log scale, paintbrush prices are the red curve,
-and a random basket of 1000 items is the gray curve. We see that random items have trended down over time, but
-paintbrushes have gone crazy. Looking from 2014 to 2023, paintbrush prices have increased by 7.4x, corresponding
-to almost a 25% year-over-year increase.
+This chart is inspired by the [consumer price index](https://en.wikipedia.org/wiki/Consumer_price_index), and plots
+paintbrush prices over time.
+Paintbrush prices are the red curve, and a random basket of 1000 items is the gray curve.
+This is in log scale, with every increase of 1 corresponding to a 2.7x
+increase.
 
-The weekly reward is the thing that makes daily quests so appealing.. Wjem TNT launched the weekly pool, they aimed SUPER HIGH on the item pool. The weekly reward I had when they launched was a book that had market price of 40 million.
+We see that random items have trended down over time, but
+paintbrushes have gone crazy. Looking from 2014 to 2023, paintbrush prices have increased by around
+7.4x. This is almost a 25% year-over-year increase.
 
-Or rather, I should say it used to be 40 million, by the time I got it they were selling for only around 400k. This is TNT's direct shot against item inflation. A large set of items are expensive because of scarcity rather than demand. Not that there's zero demand, just that the demand is small but  supply is even smaller.
+The common interpretation of the weekly quests is that TNT is firing a direct
+shot against item inflation, by picking a few desirable items and punching up
+their supply. You could interpret this as TNT listening to their userbase and making
+items more accessible, or you could view it as TNT desperately trying to get users
+interested in playing again. The two are not mutually exclusive!
 
-It's unclear where exactly the prices of weekly reawrd items will land, but right now I'd estimate it averages as about 50k-100k NP per day averaged over the entire item pool if you get to the weekly reward every day.
+My interpretation is closer to the latter. The way weekly quests are implemented
+feels straight out of a gacha game. You have to play every day, you do minor tasks
+that each feel like they don't take time but add up to real time in total, and
+the quests direct you to play Flash games and customize your pet. Flash games were
+what sucked many early 2000s kids in, and pet customization is a major driver of
+real-money revenue for Neopets.
+It really feels like weekly quests were designed to maximize retention. I've
+already been tricked into playing a Flash game for only the quest, then playing
+it again to try to beat my score.
+
+Still, if they are going to pander to me with good items, then I will take the good
+items. I never said these gacha-style techniques didn't work.
 
 # Food Club
 
-We move to the exact oposite of Daily Quests. Daily Quersts were created right now, to directly combat inflation, via a daily system straight out of a mobile gaming playbook to increase retention.
+We now move to the exact oposite of Daily Quests. Daily Quests were created
+incredibly recently, with a partial goal of fighting item inflation, smartly
+using techniques straight out of a mobile gaming playbook.
 
-Food Club is a dumb system made 20 years made 20 years ago, with no long term planning, and is now the major source of inflation on its own.
+Food Club is a dumb system, made 20 years ago with no long term planning,
+and is a major reason item inflation exists.
 
-I'm getting ahead of myself. How does this work?
+Think of Food Club as like betting on horse racing. No, scratch that, it's literally
+betting on horse racing. Except the horses are pirates and the race is competitive
+eating. There are 5 arenas, each with 4 pirates that compete for who can eat the
+most food. You can make 10 bets a day, and earn Neopoints if your bets are correct.
 
-Think of food club as like horse racing. it's like horse racing. There are 5 arenas, where 4 pirates compete in each for who can eat the most food. There is some hidden formula defining win rate that I'm sure you could derive from data if you wanted to, but, in general, you can assume the odds for a pirate corresponds to its win probabilitiy.
-A 4:1 pirate will have a win rate of about 25% and on average, betting on them will neither win nor lose Neopoints.
+There is some hidden formula defining win rate that I'm sure someone has derived
+from data, but, in general, Neopets displays the odds for each pirate and you
+can assume the odds for a pirate match its win probabilitiy.
+A 4:1 pirate will have a win rate of about 25%, and betting on them is zero
+expected value.
 
-However, Neopets does something weird. The payout for a Pirate is always rounded to the nearest integer, cannot go lower than 2:1, and cannot go higher to 13:1. So, suppose you have an arena like this:
+However, Neopets does something weird. Pirate odds are always rounded to the nearest integer, cannot go lower than 2:1, and cannot go higher to 13:1. We
+can use this to our advantage.
+
+Suppose we have an arena like this:
 
 2:1
-8:1
-10:1
+6:1
+13:1
 13:1
 
-We know that (math goes here). The end result is that, the 2:1 pirate has win probability much higher than 50%.
+This is a real arena from today's Food Club, at time of writing. Let's figure
+out the 2:1 pirate's win probability. We know the 6:1 pirate wins around 1/6 of the
+time, and the two 13:1 pirates win around 1/13 of the time. (Possibly less, but
+let's be generous.) The 2:1 pirate wins in all other outcomes, so their win
+probabilitiy should be around
 
-Food club allows you to make 10 bets, and strategy corresponds to identifying these positive expected value pirates, and exploiting them as much as possible. There are varied strategies for how to do this, but typical strategies average a 70%-90% profit on average. If you don't want to learn strategy, there are plenty of "Food Club influencers" who publicly post their
-bets each day, and you can just copy one of them.
+$$
+1 - \frac{1}{6} - \frac{1}{13} - \frac{1}{13} = 67.9\%
+$$
 
-The maximum bet size you can make is 50, pluse 2 for every day your account has been on Neopets. Who knows why they picked this?Now, suppoose that many accounts on Neopets are over 15 years old, such that people can regularly make 10k+ sized bets. At 10 bets per day, this gets you to 40k-90k of profit a day.
+The true payout for this pirate should be around 1.47:1, but thanks to rounding,
+it's 2:1 instead, and betting on this pirate should give an expected profit of 36%.
 
-This is a pretty insane amount of money, because it's pure NP. It's not driven by the market price of items. It's just, money flowing into the economy.
-It's also incredibly easy to automate. u/neo_truths is a grey had hacker who has access to Neopets source code, and oaccsionally does deep dives into Neopets database logs. They've disclosed that there is a Food Club botter,.
-Using one of the (many) Neopets data breaches, they've built a bot net of several thousand Neopets users, using old abandoned accounts, then had them all play Food Club.
+Food Club strategy is based on identifying the positive expected value pirates
+and exploiting them as much as possible. Finding them is easy (you just do the math
+above for each arena), but deciding how risky you want to play it is where strategy
+comes in. If you don't want to learn strategy,
+there are plenty of "Food Club influencers" who publicly post their bets each
+day on Reddit or Discord, and you can just copy one of them. Generally you can expect
+an average profit of 70%-90% of what you bet each day.
 
-It's a real problem, but I'm not sure TNT has an easy way pout of it. Food Club is basically the recommended NP making tool for anyone who comes back to the site, and
-I think there'd be riots if they got rid of it. For now, go bet on those pirates.
+The maximum bet size you can make is 50 plus 2 for every day your account has been on Neopets.
+Let's suppose you successfully recover your account that's 15 years old. Then you
+can bet 11,000 NP per bet. With 10 bets per day and an 80% profit,
+you'll net
+
+$$
+10 \frac{bets}{day} * \frac{11,000 NP}{bet} * 0.8 = 88,000 NP/day
+$$
+
+This is a *lot*. Who knows why TNT decided to make bet size dependent on account age,
+but it creates a real divide between users who recover their old account and
+users who give up and start fresh. It's also incredibly easy to automate.
+u/neo_truths is a grey had hacker who has access to Neopets source code and database
+logs, and occasionally discloses deep dives into Neopets database logs. They've revealed
+that based on IP logs, it's very likely there is a Food Club botter.
+Using one of the (many) Neopets data breaches, this botter has built a bot net of several thousand abandoned accounts, and had them all play Food Club, pumping extra millions
+into the economy each day. It's pretty likely that this is why item inflation
+has risen so much recently.
+
+It's a real problem, but I'm not sure TNT has an easy way out. Food Club is
+*the* recommended NP making tool for anyone who comes back to the site, and
+I think there'd be riots if they got rid of it. They might revamp Food Club,
+but for now, go bet on those pirates.
+
+SPLASH IMAGE
 
 # Trudy's Surprise
 
