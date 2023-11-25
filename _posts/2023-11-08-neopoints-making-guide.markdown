@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "A Neopoints Making Guide For The Busy Adult"
+title:  "Far More Research Into Making Neopoints Than Anyone Needs to Know"
 date:   2023-11-08 00:02:16 -0700
 ---
 
 The new management of Neopets is trying to start a Neopets Renaissance. They've brought back Flash games, thanks to [Ruffle](https://ruffle.rs/), a Flash emulator written in Rust.
-New content is coming out, with an acknowledgement that the playerbase is mostly nostalgic adults rather than new kids.
+New content is coming out, with an acknowledgement that the player base is mostly nostalgic adults rather than new kids.
 Although the site aims to maintain its kid-friendly exterior, the inside has changed. The most recent Faerie
 Festival was incredibly queer coded and I think that was intentional.
 These days, the typical Neopets user is a mid 20s woman that's more likely to be LGBT than straight. See
@@ -27,21 +27,23 @@ don't have to go through the same struggle. Yes, even if it's about Neopets.
 
 Most mega-rich Neopians made money from playing the item market. Figure out the cost of items, buy low sell high,
 read trends based on upcoming site events, and so forth.
-When done properly, this will make you more Neopoints than anything else. Like real-world finance, if you have the right idea before anyone else,
-you can turn it into lots of Neopoints. Also like real finance, doing so requires a baseline level of dedication and activity to keep up-to-date
-on item prices, haggle for good deals, and get a sense for when a price spike is real or someone trying to manipulate the market.
-There is no regulation, with all the upsides and downsides that implies.
+When done properly, this makes you more Neopoints than anything else. It's similar to real-world finance, where
+there can be very short feedback loops between having the right idea and executing on that idea for profit.
 
-This post is *not* about that, because,
+Also like real finance, doing so requires a baseline level of dedication and activity to keep up-to-date
+on item prices, haggle for good deals, and get a sense for when a price spike is real or when it's someone trying
+to manipulate the market. There is no regulation, with all the upsides and downsides that implies.
+
+This post is *not* about playing the market, because that advice is very ephemeral, and also,
 
 ![Ain't nobody got time for that](/public/np-guide/notime.gif)
 {: .centered }
 
-Instead, this post is about ways to extract value from the built-in site features of Neopets.
+Instead, this is about ways to extract value from the built-in site features of Neopets.
 We are going to do *honest work* and fail to ever reach the market-moving elite
 class and we are going to be *fine with that*.
 Everything here is doable without direct interaction with any other Neopets user,
-aside from selling items for profit.
+aside from putting items in your shop to turn them into pure Neopoints.
 
 I've tried to limit this to just things that I think are worth your time.
 There are *tons* of site actions that give you free stuff, except the stuff is all
@@ -58,17 +60,14 @@ Doing all 5 dailies gives a 20k NP bonus. I'd say you can expect to get about 25
 on how many NP rewards you get.
 
 The weekly reward is the thing that made the news. If you do all daily quests 7 days in a row, you get a
-weekly reward, and the weekly rewards are *insane*. The prices are still adjusting rapidly, but at time of
-launch, my weekly reward was a book valued at 40 million NP. By the time I got it, the price had dropped
-considerably, and I ended up selling it for 450k NP, but that was still 64.2k NP / day of profit for very little work.
+weekly reward, and the weekly rewards are *insane*. The prices are still adjusting rapidly, but when they
+first launched, my weekly reward was a book valued at 40 million NP. By the time I got it, the price had
+dropped like a rock, and I sold it for 450k NP. That book now sits at 200k NP.
 
-As you might imagine, this caused a lot of upheavel in the economy. That book I sold for 450k NP is now selling
-for 200k NP, and the price will likely keep dropping. My guess is that prizes will end up somewhere around 150k NP.
-If we assume the daily reward gives 25k NP per day, we get an estimate of
+The prices of weekly rewards will likely keep dropping, and my guess is that the weekly prize will end up around
+150k NP on average. If we assume the daily quests give 25k NP per day, and do them every day for week, we get an
+average of (25,000 + 150,000/7) = **46,400 NP/day**.
 
-$$
-    25,000 + 150,000/7 \approx 46,400 NP/day
-$$
 
 ## Aside: Item Inflation
 
@@ -86,40 +85,44 @@ item prices going back to 2008, showing trends over 15 years of data! To quote t
 This chart is inspired by the [consumer price index](https://en.wikipedia.org/wiki/Consumer_price_index), and plots
 paintbrush prices over time.
 Paintbrush prices are the red curve, and a random basket of 1000 items is the gray curve.
-This is in log scale, with every increase of 1 corresponding to a 2.7x
-increase.
+This is in log scale, so increasing the y-axis by 1 means multiplying the price by 2.7x.
 
 We see that random items have trended down over time, but
 paintbrushes have gone crazy. Looking from 2014 to 2023, paintbrush prices have increased by around
-7.4x. This is almost a 25% year-over-year increase.
+7.4x. This is almost a 25% year-over-year increase. A similar trend appears in stamps and
+other rare collectibles.
 
-The common interpretation of the weekly quests is that TNT is firing a direct
-shot against item inflation, by picking a few desirable items and punching up
-their supply. You could interpret this as TNT listening to their userbase and making
+The common interpretation of the weekly quests is that TNT is directly fighting item inflation,
+by picking rare desirable items and drastically increasing their supply.
+You could interpret this as TNT listening to their userbase and making
 items more accessible, or you could view it as TNT desperately trying to get users
 interested in playing again. The two are not mutually exclusive!
 
 My interpretation is closer to the latter. The way weekly quests are implemented
 feels straight out of a gacha game. You have to play every day, you do minor tasks
 that each feel like they don't take time but add up to real time in total, and
-the quests direct you to play Flash games and customize your pet. Flash games were
-what sucked many early 2000s kids in, and pet customization is a major driver of
-real-money revenue for Neopets.
-It really feels like weekly quests were designed to maximize retention. I've
-already been tricked into playing a Flash game for only the quest, then playing
-it again to try to beat my score.
+the quests direct you to interact with parts of the site that could either keep you
+around (Flash games) or encourage you to spend money (pet customization).
+I've already been tricked into playing a Flash game to clear a daily quest, then playing
+it again to try to get a high score.
 
-Still, if they are going to pander to me with good items, then I will take the good
+Still, if they are going to pander to me with good items, I will take the good
 items. I never said these gacha-style techniques didn't work.
+
+![A weekly reward tracker with 1 of 7 books filled](/public/np-guide/dailyquest.png)
+{: .centered }
+
+Six more days...
+{: .centered }
 
 # Food Club
 
-We now move to the exact oposite of Daily Quests. Daily Quests were created
-incredibly recently, with a partial goal of fighting item inflation, smartly
-using techniques straight out of a mobile gaming playbook.
+We now move to the exact opposite of Daily Quests. Daily Quests were created
+incredibly recently, with a partial goal of fighting item inflation, and intelligently
+use techniques straight out of a mobile gaming playbook.
 
-Food Club is a dumb system, made 20 years ago with no long term planning,
-and is a major reason item inflation exists.
+Food Club is a dumb system, made 20 years ago without any conception towards the long-term
+health of the site, and is a major reason the economy has so much inflation.
 
 Think of Food Club as like betting on horse racing. No, scratch that, it's literally
 betting on horse racing. Except the horses are pirates and the race is competitive
@@ -128,146 +131,332 @@ most food. You can make 10 bets a day, and earn Neopoints if your bets are corre
 
 There is some hidden formula defining win rate that I'm sure someone has derived
 from data, but, in general, Neopets displays the odds for each pirate and you
-can assume the odds for a pirate match its win probabilitiy.
+can assume the odds for a pirate match its win probability.
 A 4:1 pirate will have a win rate of about 25%, and betting on them is zero
 expected value.
 
-However, Neopets does something weird. Pirate odds are always rounded to the nearest integer, cannot go lower than 2:1, and cannot go higher to 13:1. We
+(Normally, gambling odds account for returning your wager, and 5:1 odds pays out 5+1=6 on a win and 0 on a loss,
+corresponding to a 1/6 win probability. Food Club never returns your wager, so 4:1 pays out 4 and means a 1/4
+win probability.)
+
+Neopets always rounds pirate odds to the nearest integer, and never lets them go lower than 2:1 or higher than 13:1. We
 can use this to our advantage.
 
 Suppose we have an arena like this:
 
-2:1
-6:1
-13:1
-13:1
+Pirate 1 - 2:1  
+Pirate 2 - 6:1  
+Pirate 3 - 13:1  
+Pirate 4 - 13:1  
 
 This is a real arena from today's Food Club, at time of writing. Let's figure
 out the 2:1 pirate's win probability. We know the 6:1 pirate wins around 1/6 of the
 time, and the two 13:1 pirates win around 1/13 of the time. (Possibly less, but
-let's be generous.) The 2:1 pirate wins in all other outcomes, so their win
-probabilitiy should be around
+let's be generous.) The 2:1 pirate wins the rest of the time, so their win
+probability should be around
 
 $$
 1 - \frac{1}{6} - \frac{1}{13} - \frac{1}{13} = 67.9\%
 $$
 
-The true payout for this pirate should be around 1.47:1, but thanks to rounding,
-it's 2:1 instead, and betting on this pirate should give an expected profit of 36%.
+If Neopets didn't round, the true payout for this pirate should be around 1.47:1. But thanks to
+rounding, the payout is 2:1 and betting on this pirate is positive expected value.
+We'd get an expected profit of 35.8%.
 
 Food Club strategy is based on identifying the positive expected value pirates
-and exploiting them as much as possible. Finding them is easy (you just do the math
+and exploiting them as much as possible. Finding them is easy (you do the math
 above for each arena), but deciding how risky you want to play it is where strategy
 comes in. If you don't want to learn strategy,
 there are plenty of "Food Club influencers" who publicly post their bets each
 day on Reddit or Discord, and you can just copy one of them. Generally you can expect
-an average profit of 70%-90% of what you bet each day.
+an average profit of 70%-90% of what you bet each day, although you should only
+start doing Food Club when you have enough of a bankroll to absorb losses. Around 50x your
+max bet size should be good enough (covers up to 5 straight days of total busts).
 
 The maximum bet size you can make is 50 plus 2 for every day your account has been on Neopets.
 Let's suppose you successfully recover your account that's 15 years old. Then you
-can bet 11,000 NP per bet. With 10 bets per day and an 80% profit,
-you'll net
+can bet 11,000 NP per bet. With 10 bets per day and an 80% profit, that's
+(10 * 11,000 * 0.8) = **88,000 NP/day**.
 
-$$
-10 \frac{bets}{day} * \frac{11,000 NP}{bet} * 0.8 = 88,000 NP/day
-$$
-
-This is a *lot*. Who knows why TNT decided to make bet size dependent on account age,
+This is a *lot*. Who knows why TNT decided to make max bet size dependent on account age,
 but it creates a real divide between users who recover their old account and
 users who give up and start fresh. It's also incredibly easy to automate.
 u/neo_truths is a grey had hacker who has access to Neopets source code and database
-logs, and occasionally discloses deep dives into Neopets database logs. They've revealed
-that based on IP logs, it's very likely there is a Food Club botter.
-Using one of the (many) Neopets data breaches, this botter has built a bot net of several thousand abandoned accounts, and had them all play Food Club, pumping extra millions
-into the economy each day. It's pretty likely that this is why item inflation
-has risen so much recently.
+logs, and occasionally discloses deep dives into Neopets data. They've revealed
+that based on request logs, it's very likely there is a Food Club botnet.
+Thanks to the (many) Neopets data breaches, and lax Neopets security standards, there
+are a lot of vulnerable accounts out there. The botter has presumably broken into
+many old, abandoned accounts, took everything they had, and converted them
+into Food Club players.
 
+> 1. They have stolen over 40k accounts already (started late 2021) and keep stealing hundreds every week
+>
+> 2. Sum of historic food club profit having profit > 100k: 224b with 14.5k accounts
+>
+> 3. Sum of bank balance having balance > 100k: 51b with 14.5k accounts
+>
+> 4. Sum of on hand balance having balance > 100k: 2b with 1.5k accounts
+>
+> 5. Sum of shop balance having balance > 100k: 4b with 125 accounts
+
+From [here](https://www.reddit.com/r/neopets/comments/138swva/richest_neopian/)
+{: .centered }
+
+This botnet is pumping literally billions of NP into the economy each day,
+and it's pretty likely this is why item inflation has took off.
 It's a real problem, but I'm not sure TNT has an easy way out. Food Club is
 *the* recommended NP making tool for anyone who comes back to the site, and
-I think there'd be riots if they got rid of it. They might revamp Food Club,
+taking away free money is hard. They might revamp Food Club,
 but for now, go bet on those pirates.
 
-SPLASH IMAGE
+![Food Club image](/public/np-guide/foodclub.png)
+{: .centered }
 
 # Trudy's Surprise
 
-This feature was added a few years ago, and is basically a pure NP giveeaway. Like other dailies released recently, it rewards frequent play. If you visit Trudy's Surprise every day, you are guaranteed to get a 100k payout on day 25. Even before then, you get around 16k per day at minimum once you get to the 7 day streak. See JellyNeo's table.
+This is a daily they added in 2015, and just gives away more Neopoints.
 
-# Wishing Well
+Each day, you spin the slot machine and get NP based on how many icons you match.
+Matching 0 icons vs all 4 icons is only a difference of 2k to 3k NP - the main trick
+is that the base Neopoints value quickly rises with the length of your streak, reaching
+18.5k NP/day starting at day 10 and a guaranteed payout of 100k on day 25. The streak then
+resets.
 
-We now get into the more pure gambling aspects of the site.
+Trudy's Surprise also gives items for 7 day streaks, but these items are usually junk and
+not worth anything.
 
-The Wishing Well is a place where you can toos in Neopeoints and wish for a specific item. All items of rarity below (XX) are allowed, and you can make 14 swishes per day (7 in the morning and 6 in the evening). Each wish costs 21 NP and throwing in more doesn't affect the odds at all.
+The payout table is listed on [JellyNeo](https://www.jellyneo.net/?go=trudys_surprise). We'll
+assume that you make 0 matches every day and get to day 25 of the streak. This will include
+one Bad Luck Bonus, an extra 2.5k paid the first time you get 0 matches during a streak.
 
-Each day the well picks 240 winners. The winning item
-
-What makes the wishing well profitable is that the most expensive rarity XX item is usuallly way, way more epensive than the wishing cost. In the past teh cost of such items was around 300k. Now the most expensive items are around 1 million. You can usually find what to wish for by seeing whats most common in the winner list from yesterday.
-
-Given that it only costs 140 NP a day, you only need a 1 in 3000 (CHECK MATH)) chance of winning to make this worth it. What are your true odds of winning?
-Well, I haven't done the math or stats tracking, but at current user activity, I usually win a few times per year.
-
-This is naturally something that will get less profitable wiif more peopel know about it, and I have genuinelye considered not mentioning it, but I figure the effect isn't that big a deal and I have enough NP that I don't mind telling the secret.
-(It's not even much of a secret anyways.)
-
-Assuming a hit rate of 2 prizes per year, this averages out to TODO profit per day on average. Expect to get less profit if you're trying to quick-sell items to convert them into pure cash (Neopoints) though.
+Averaging over the payout table, we get to **17,915 NP/day** on average. Most of the money is made in
+the days 10-25 section of the streak.
 
 # Battledome
 
 Ah, the Battledome. You play long enough, you end up with one high-end outlet. For me that was the Battledome. Top tier items can literally extend up to over a billion Neopoints.
 
-The Battledome went through a revamp in XXXX, which diehard fans usually don't like because it both removed HP increase and introduced a bunch of broken abilities that need to be banned in competitive play for balance purposes. However, it did introduce a new way to get rewards from fighting CPU opponents - that's what we're focusing on here.
+The Battledome went through a revamp in 2013. Diehard fans usually don't like this revamp. It removed
+HP increase from 1-player, destroying most single-player competition on how far you could go, and
+introduced Faerie abilities so broken that most need to be banned from 2-player.
 
-The exact mechanics and drop rates from challengers is not fully known, but here's what is known. There is a global pool of items, that all challengers drop. That pool depends on the
-arena a challenger is in. There's a challenger specific pool, which gets added to that pool. The drop rates vary but it appears that certain arenas are more likely to drop from the global pool than other ones. (Link the reddit post here.)
+The one good thing it brought was fight rewards. When you win against CPU opponents, you earn a small
+amount of Neopoints and an item drop. The item drops can include codestones, which you can use to train
+your pet. Or, you could just sell them directly.
 
-(Link the neo truths post here too)
+For a long time, the exact mechanics of drop rates was not fully known, aside from users quickly finding
+that the Koi Warrior dropped codestones way more often. Over time, people found that each user gets
+15 item drops per day. There are arena-wide drops, which come from every challenger in that arena,
+and challenger-specific drops, which depends on which challenger you fight.
 
-The only valuable items in the global pool are codestones, the currency used for battledome training. The Water Dome also drops dubloons, which can also be used for training but are pretty marginal. **Most** challenger specific pools do not have good items, so the recommendation is usually to fight
+There are a few sources of Battledome drop data:
 
-* Koi Warrior, any difficulty
-* Giant Mutant Spectral Walrein, medium difficulty
+* A list of Battledome prizes run by [JellyNeo's Battlepedia](https://battlepedia.jellyneo.net/?go=battle_prizes),
+which lists all arena-specific and challenger-specific prizes, but without their drop rates.
+* A crowdsourced dataset of Battledome drops summarized [here](https://www.reddit.com/r/neopets/comments/5alvls/battledome_loot_breakdown/).
+This gives exact rates for codestone drops, but only aggregates the data into "codestone" versus "not-codestone".
+Through this, they find the arena of the opponent is the most important factor for codestone drops, and
+there's little variation in what challenger you fight. This corroborated the conventional wisdom to fight
+the Koi Warrior, which is the easiest Dome of the Deep challenger.
+* A u/neo\_truths leak on the drop rates and drop algorithm, linked [here](https://www.reddit.com/r/neopets/comments/yc488a/battledome_dome_loot/).
+This gives exact rates for the arena-wide drops, but has no data on challenger specific drops.
 
-since they have the smallest pool of specific items and therefore are most likely to give codestones. However, on occasion it's worth fighting other challengers for their specific drops.
+First let's check the validity of this leak. Using data from that post, I coded a Battledome
+drop simulator, and ran it to sample 100k items from each arena. Let's compare this to the
+crowdsourced codestone drop rates.
 
-* The Kreludor Robot, which rarely drops Armored Neggs. Those Neggs are a stat
-boosting item and often sell for a lot. The Kreludor Robot is also one of the easiest
-challengers in the battledome and is a common "starter" challenger to fight
-while training for tougher ones.
-* The premium challengers (Space Faerie, CHECK), which are only available to
-Neopets premium users, but which drop Nerkmids and Giant Bubbling Space Fungus, both valuable items.
-The first can be gambled for paint brushes at the Alien Vending Machine, and the
-latter is a stat-boosting item for Battledome trainers.
-* The Snowager, which is by far strongest enemy you could fight, but which has a
-small chance of dropping Frozen Neggs. These can be directed traded for Negg points,
-which essentially makes them as valuable as the most expensive Negg. The most
-expensive Negg is usally the Snegg, since top 1% rich Neopians compete on who
-can get the most HP, and Sneggs are one of the few effective ways to do so if
-money is no object.
+<table style="margin-left: auto; margin-right: auto;">
+  <thead>
+    <tr>
+      <th>Arena</th>
+      <th>Codestone Drop Rate (crowdsourced)</th>
+      <th>Codestone (simulator)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Frost Arena</td>
+      <td>17%</td>
+      <td>19.9%</td>
+    </tr>
+    <tr>
+      <td>Cosmic Dome</td>
+      <td>15%</td>
+      <td>17.1%</td>
+    </tr>
+    <tr>
+      <td>Pango Palladium</td>
+      <td>14%</td>
+      <td>16.6%</td>
+    </tr>
+    <tr>
+      <td>Rattling Cauldron</td>
+      <td>24%</td>
+      <td>25.0%</td>
+    </tr>
+    <tr>
+      <td>Central Arena</td>
+      <td>11%</td>
+      <td>12.0%</td>
+    </tr>
+    <tr>
+      <td>Neocola Centre</td>
+      <td>18%</td>
+      <td>20.3%</td>
+    </tr>
+    <tr>
+      <td>Dome of the Deep</td>
+      <td>30%</td>
+      <td>34.1%</td>
+    </tr>
+    <tr>
+      <td>Ugga Dome</td>
+      <td>14%</td>
+      <td>15.3%</td>
+    </tr>
+  </tbody>
+</table>
 
-The profit depends on market prices of the items, but on average,
+Overall the leak looks pretty legitimate! The simulator consistently overestimates the rate of codestone
+drops, but this makes sense because it pretends challenger-specific drops don't exist. Intuitively, every
+time you get a challenger-specific drop, you miss out on an arena-wide drop, and codestones only appear
+in the arena-wide item pool. On average the simulator drop rate is around 89% of the true crowdsourced
+drop rate, so for upcoming analysis I'll multiply all drop rates from my simulator by 89%. (This
+is like assuming 11% of item drops are challenger-specific, and all such items are worth 0 NP.)
+To further simplify things, I'll only count a few major items.
 
-Snowager > Premium Challengers > Walrein > Koi Warrior > Kreludor
+* The codestones dropped by every arena. Usable for pet training.
+* The Dubloon coins dropped in Dome of the Deep. Usable for pet training.
+* The Armoured Negg dropped in Neocola Centre. Also usable for pet training (gives +1 Defense)
+* The Neocola tokens dropped in Neocola Centre and the Cosmic Dome. Can be gambled at the Neocola Machine,
+where you could win a Transmogrification Potion.
+* The Nerkmids from the Neocola Centre and Cosmic Dome. Can be gambled at the Alien Aisha Vending Machine, where you could win
+a Paint Brush.
+* The Cooling Ointment from the Frost Arena. Can cure any disease from your Neopet.
 
-This, coincidentally, is also the order of difficulty for how hard they are to fight.
+Using JellyNeo's estimated item prices at time of writing, we can find which arena gives the most profit, assuming
+15 item drops per day.
 
-Fighting the Snowager is the highest variance, since your profit is all based on
-Frozen Negg drops. You get 15 item drops per day, and based on stats, you can
-expect to see around 10 Frozen Neggs per **month**. But right now, Frozen Neggs
-cost 450k. Assuming you can sell for that much, it should average 150k NP per day,
-and this is ignoring the random Codestone drops along the way.
+<table style="margin-left:auto; margin-right:auto;">
+  <thead>
+    <tr>
+      <th>Arena</th>
+      <th>Expected Profit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Central Arena</td>
+      <td>26,813 NP/day</td>
+    </tr>
+    <tr>
+      <td>Ugga Dome</td>
+      <td>27,349 NP/day</td>
+    </tr>
+    <tr>
+      <td>Frost Arena</td>
+      <td>35,428 NP/day</td>
+    </tr>
+    <tr>
+      <td>Pango Palladium</td>
+      <td>38,904 NP/day</td>
+    </tr>
+    <tr>
+      <td>Rattling Cauldron</td>
+      <td>48,521 NP/day</td>
+    </tr>
+    <tr>
+      <td>Neocola Centre</td>
+      <td>57,408 NP/day</td>
+    </tr>
+    <tr>
+      <td>Dome of the Deep</td>
+      <td><strong>69,046 NP/day</strong></td>
+    </tr>
+    <tr>
+      <td>Cosmic Dome</td>
+      <td><strong>135,557 NP/day</strong></td>
+    </tr>
+  </tbody>
+</table>
 
-If you can't beat the Snowager, and don't pay for premium, you can still get NP from
-Codestone drops. Codestone prices change but right now (put in the math here) and
-you can expect to get N codestones a day.
+I should warn you that getting to 15 items a day requires a *lot* of clicks, but the profit
+available is very real. The Cosmic Dome is clearly best, but you can only fight those challengers if
+you have Neopets Premium. Assuming you don't, you'll want to fight in the Dome of the Deep instead.
 
-Unfortunately you'll need to train a Neopet for several months to get to the point
-of fighting the Snowager. Training a Neopet takes a lot of time and money (see Codestone
-prices above), but if you want to train for other reasons, you might as well set a goal
-of getting to the Snowager tier. I recommend using the "rush to level 250" strategy
-described here. It has more set-up time but is more efficient at getting to max stats
-in both time and money.
+A default untrained pet won't be able to defeat the Koi Warrior (the easiest Dome of the Deep enemy). If you are just getting started, my recommendation is to start with the
+S750 Kreludan Defender Robot. It's in the Neocola Centre, and at just 14 HP it's an easy fight
+that still gives 57k NP/day.
+Then, you can
+train your way up to fighting the Koi Warrior if you're so inclined. There are a bunch of guides
+for how to train and what weapons are good to use. I recommend the ones hosted by the Battlepedia.
+It looks like the [recommended weapon page](https://battlepedia.jellyneo.net/?go=weapon_recommendations) already got updated to account for daily quests making some items much cheaper, which I find pretty impressive.
 
-TABLE
+One last thing. There are two challengers whose challenger-specific items are valuable.
+First is the Giant Space Fungus.
+The Giant Space Fungus in the Cosmic Dome can drop Bubbling Fungus, but only on Hard.
+This is a stat boosting
+item, and sells for 136k NP each. The crowd-sourced post from earlier found that Bubbling Fungus
+was 1% of the item drops. This gives 0.15 Bubbling Fungus per day, or 20.4k NP/day extra.
+
+The second is the Snowager
+in the Frost Arena, which can drop Frozen Neggs. A few people believe that fighting the Snowager
+is the most profitable enemy, since Frozen Neggs sell for a lot, 450k NP each at time of writing.
+They're so expensive because they can be directly traded for Negg points.
+High-end users interested in having the highest HP pet will use Sneggs to supplement
+their training, and the main way to buy Sneggs is by trading in Negg points.
+
+Unfortunately there is not much data around on Frozen Negg drop rates. The best I found is
+[this Reddit post](https://www.reddit.com/r/neopets/comments/13xq7qu/snowager_battledome_results_when_it_dropped/)
+where they fought the Snowager every day between March 30th and June 1st. They got 24
+Frozen Neggs in that time, averaging 0.375 Frozen Neggs per day. That leads to an extra
+168750 NP/day. On top of the other Frost Arena items, you're looking at 200k NP/day!
+
+The one snag is both of these enemies are some of the hardest challengers in the game. The
+Giant Space Fungus on Hard has 632 HP. The Snowager on Easy has 650 HP.
+If you are new to pet training, it could literally take you a year and millions of NP to get your
+pet strong enough beat the Snowager. If your only goal is to earn money, it will pay off
+eventually, but you'll need to be patient. I recommend the [Battlepedia](https://battlepedia.jellyneo.net/?go=beginners_guide_to_training)
+training guide. To be specific, I would shoot for level 100 and the 200 strength + defense boost,
+then train only level up to level 250, then catch up on the other stats at the Secret Ninja Training
+School. It will save you both time and money.
+
+In summary,
+
+* The Battledome can give you a lot of Neopoints per day if you sell all the items you earn.
+* The profit order is Snowager > Giant Space Fungus (Hard) > any Cosmic Dome enemy > any Dome of the Deep enemy > S750 Kreludan Defender Robot
+* Most players who don't have premium will stop at Dome of the Deep and reach 69k NP/day, but if you
+are willing to commit to training up to Snowager levels you can earn 200k NP/day instead.
+
+# Wishing Well
+
+The Wishing Well is a place where you toss in Neopoints to make wishes. If you're lucky, your wish will be granted!
+
+Each wish costs 21 NP, and you can make up to 14 wishes a day (7 in the morning and 7 at night).
+You may wish for any item rarity 89 and below.
+
+What makes the Wishing Well profitable is that the most expensive rarity 89 or below item is usually way, way more expensive than the wishing cost.
+When I started doing the Wishing Well, the price of such items was around 300k, but now it's regularly over 1 million.
+You can usually find what to wish for by seeing what's most common in the winner list from yesterday.
+
+As for why it's so high? The Wishing Well only gives out 20 items a day, and this isn't enough to
+make a dent in demand, especially when Neopets keeps releasing new items. Case in point - for
+Neopets's 24th birthday, shops started selling a Neopets 24th Birthday Goodie Bag. They didn't
+release enough of them, but people figured out they were a r79 item, so now everyone's
+wishing for them and people are asking for 7 million NP on the Trading Post.
+
+![Wishing well wishes](/public/np-guide/wishing.png)
+{: .centered }
+
+Getting 7 million NP for a wishing well cannot last. For profit purposes, let's assuming a Wishing
+Well item is worth 1 million NP. I'd say I win an item from the Wishing Well about 3 times a year.
+Then the expected earnings are 3 million NP per year, or 8,219 NP/day. Subtracting the cost of the wishes we
+get to 7,925 NP/day.
+
+The more people who make wishes, the less frequently anyone's wishes will be granted. I did consider not
+mentioning the Wishing Well to preserve profit for myself, but I figure the effect isn't that big, and
+it's not that much of a secret anyways.
+
 
 # Bank Interest
 
@@ -283,7 +472,7 @@ may also be thinking "isn't 12.5% interest per year a lot?" and yep, you're also
 
 This is never going to be a big part of your daily income unless you have a ton of money already,
 and if you already have a ton of money I don't know why you're reading this guide. I mention it because
-it is the floor for any investments made (where usually this means "rare items").
+it's the floor for any money making method that doesn't convert into cash on hand. Such as...
 
 # The Stock Market
 
@@ -317,26 +506,26 @@ seems dependent on current price, and the 61-100 NP range is where average price
 0 to slightly negative. The cause of this was eventually revealed by u/neo\_truths's leak of the Stock
 Market [pricing algorithm](https://www.reddit.com/r/neopets/comments/xrlfd3/stock_market/).
 
-> Set max move to current price / 20
-> Set max move to current price / 50 if current price > 100
-> Set max move to current price / 200 if current price > 500
-> Set max move to current price / 400 if current price > 1000
-> Round up max move
+> Set max move to current price / 20  
+> Set max move to current price / 50 if current price > 100  
+> Set max move to current price / 200 if current price > 500  
+> Set max move to current price / 400 if current price > 1000  
+> Round up max move  
 >
 > Set variation to random between 1 and max move * 2 - 1. Randomly add +1 to variation with 1/20 chance. Randomly subtract 1 with 1/20 chance.
 >
-> If current price >= 10 and current price / opening price > 1.15 [subtract] max move / 4 rounded down from variation
-> If current price >= 10 and current price / opening price > 1.3 [subtract] max move / 4 rounded down from variation
+> If current price >= 10 and current price / opening price > 1.15 [subtract] max move / 4 rounded down from variation  
+> If current price >= 10 and current price / opening price > 1.3 [subtract] max move / 4 rounded down from variation  
 >
-> Set points to variation - max move rounded down
-> Set p to min(current price * 10, 100)
+> Set points to variation - max move rounded down  
+> Set p to min(current price * 10, 100)  
 > If points + current price > 5, change stock price to current price + points with p% chance
 
 Some re-analysis by u/not-the-artist is [here](https://www.reddit.com/r/neopets/comments/xrlfd3/comment/itjn5de/),
 confirming this leak is consistent with what was seen before. The TL;DR is that the only lines that cause net price
 drops are
 
-> If current price >= 10 and current price / opening price > 1.15 [substract] max move / 4 rounded down
+> If current price >= 10 and current price / opening price > 1.15 [substract] max move / 4 rounded down  
 > If current price >= 10 and current price / opening price > 1.3 [substract] max move / 4 rounded down
 
 Thanks to rounding, these conditions only fire when `max move` is at least 4, and if we look above, this
@@ -345,9 +534,8 @@ only starts happening in the 61-100 NP range.
 Using a 60 NP sell threshold will lead to an average holding time of 399 days. When bank interest is accounted for,
 1000 shares of 15 NP stock is worth around 29.5k NP. (It is lower than 60k NP because you miss on 399 days of bank
 interest - full math is done [here](https://www.reddit.com/r/neopets/comments/y8bqig/leaked_code_determining_best_stock_selling_price/) for the curious).
-This gives a profit of 14.5k NP per day, assuming you can pay for 1000 shares/day and are patient enough.
+This gives a profit of 14.5k NP per day, although you will have to wait over a year for it to turn back into cash-on-hand.
 
-Note this is less than Trudy's Surprise. Yeah we're falling into the weeds now.
 
 # Coconut Shy
 
@@ -407,35 +595,64 @@ Of the item prizes, you have a 10% chance of getting a Faerie Paint Brush, and a
 Patamoose, Faerie Caverns Background, or Faerie Caverns Stamp. You can see in the odds that Faerie Paint Brush is
 considered the best prize, so it's funny that every other prize is worth more.
 
-TABLE HERE
+| Prize | Estimated Price |
+|-------|-----------------|
+| Faerie Paint Brush | 1,200,000 NP |
+| Beautiful Glowing Wings | 2,000,000 NP |
+| Patamoose | 3,000,000 NP |
+| Faerie Caverns Background | 2,000,000 NP |
+| Faerie Caverns Stamp | 50,000,000 NP |
 
-If you do the expected value math, then doing Faerie Caverns is net profitable. However I personally don't do this
-daily because of how top-heavy it is. It's only net profitable if you win an item prize, which will happen
-1 in 8000 days on average. Someone could legitimately have played Faerie Caverns every day for *the entire lifetime of the site*
-and not won an item prize.
+If you do the expected value math, then doing Faerie Caverns is net profitable. It costs $$8 * 400 = 3,200$$
+NP to get a payout. Assuming you get 500 NP in the "500 to 2500 NP" case, your expected payout is 14,174 NP,
+so going into the Faerie Caverns is worth 10,974 NP/day.
 
-Still, if you have the time, go ahead. 400 NP a day is pretty cheap.
+However, this relies heavily on winning the 1 in 1000 item prize. Given that you only get a payout once every
+8 days, it's 1 in 8000 days on average to win an item. Neopets is 8760 days old. You could legitimately have
+played Faerie Caverns every day for Neopets's *entire existence* and not won an item prize. For this reason,
+I don't do Faerie Caverns.
+
+Still, it is technically worth it if you have higher risk tolerance. 400 NP a day is pretty cheap.
 
 # Battleground Boons
 
 The Tyrannian Battleground is an ongoing site-wide event. Every 2 weeks, you can sign up for a team,
 and for the week after that each team competes to see who can defeat the most enemies from the other team.
-(You fight CPU enemies, not other players.)
 If you fought at least 10 battles, and your team wins, then you get to choose a boon that lasts for 1 week.
-
 Some of these boons are important modifiers for earning money.
 
 * The Bank Bribery boon increase bank interest by 3%.
-* The Cartogriphication boon guarantees you make it to the end of the Faerie Caverns, which flips it from
-"high variance positive EV" to "guaranteed money".
+* The Cartogriphication boon guarantees you make it to the end of the Faerie Caverns, making your payout chance
+100% instead of 12.5%.
 * The Cheaper by the Dozen boon lets you buy stocks at 10 NP instead of 15 NP.
 
-In general, these boons are nice but I don't think they're worth going for. The way the battleground works
-is that it picks the team with highest *average* contribution, not highest total contribution. The boons
-available to each team are different, and usually the team with the best boons gets the most members that
-do the bare minimum and hope to get carried to a win. So there's no guarantee you even get a boon
-in the first place. You could try to become a dedicated member to give yourself good odds of winning a boon,
-but I think this is more trouble than it's worth.
+In general, these boons are nice but I don't think they're worth going for. We can math them out as follows.
+
+Ignoring compound interest effects, Bank Bribery is approximately worth
+
+$$
+    net worth \times \fract{3% interest}{year} \times \frac{1 year}{365 days} = 0.0000822 \times net worth
+$$
+
+For Cartogrphication, the expected payout is still 14,174 NP, but your expected cost of getting that payout
+drops from 3,200 NP to 400 NP. So this is worth (3,200 - 400) = 2,800 NP/day.
+
+The Cheaper by the Dozen boon will make thee 1,000 shares of stock cost 10k instead of 15k, so you'll save
+5,000 NP / day.
+
+Based on this math, we see that Cheaper by the Dozen is the best boon, until your net worth is over 60.8 million,
+at which point the Bank Interest is worth more than 5k/day. But relative to the other methods mentioned so
+far, this just isn't that much. At best, you only have the boon every other week, and it's not even guaranteed
+you win a boon! The winning team in the battleground is the team with highest *average* contribution, not highest
+total contribution. Very often, the team with the best boons has the most freeloaders that do the bare
+minimum and hope to get carried to a win.
+
+There is one very narrow use case where I'd say the Battleground boons are worth it. The Reddit user
+u/throwawayneopoints did a [detailed analysis](https://www.reddit.com/r/neopets/comments/lah877/toil_and_trouble_testing_out_the_orders_double/)
+of the Double Bubble boon. This boon will occasionally let you get a 2nd use out of a single use consumable potion.
+People assumed this only applied to healing potions, which would be worthless, but it also applies to stat-boosting
+potions and morphing potions. The refill rate is 25%, so if you're using these potions, it's pretty easy to
+make Double Bubble worth it.
 
 
 # The Neopian Lottery
@@ -448,6 +665,23 @@ all such users in the case of a tie). Importantly the lottery jackpot is 100% of
 sales + a 5k starting pot. Since the lottery *always* pays out, it's technically positive
 expected value to buy a lottery ticket.
 
-The expected value is like, 1 NP/ticket at best, and you will easily earn more playing a Flash
-game. But I think it is just a perfect symbol of Neopets dailies. It's a random slot machine,
-but unlike a real casino the odds are very slightly in your favor.
+These days the lottery sells about 4000 to 5000 tickets per day, so the expected value is like,
+1 NP/ticket. You will easily earn more playing a Flash game. But I think it is just a perfect
+symbol of Neopets dailies. It's a random slot machine, that is slightly rigged in your favor.
+
+# If You Do Everything...
+
+<table>
+<tr><td>Daily Quests</td><td>46,400 NP/day</td></tr>
+<tr><td>Food Club (assuming 15 year old account)</td><td>88,000 NP/day</td></tr>
+<tr><td>Trudy's Surprise</td><td>17,915 NP/day</td></tr>
+<tr><td>Battledome (Dome of the Deep)</td><td>69,046 NP/day</td></tr>
+<tr><td>Wishing Well</td><td>7,925 NP/day</td></tr>
+<tr><td>Stock Market</td><td>14,500 NP/day</td></tr>
+<tr><td>Coconut Shy</td><td>14,692 NP/day</td></tr>
+<tr><td>Faerie Caverns</td><td> 10,974 NP/day</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>269,452 NP/day</strong></td></tr>
+</table>
+
+In total, we are looking at 8 million NP/month if you commit to doing everything. It's a good deal better
+than just playing Flash games, that's for sure.
