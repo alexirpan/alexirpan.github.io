@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Far More Research Into Making Neopoints Than Anyone Needs to Know"
-date:   2023-11-08 00:02:16 -0700
+date:   2023-11-25 00:33:00 -0800
 ---
 
 The new management of Neopets is trying to start a Neopets Renaissance. They've brought back Flash games, thanks to the
