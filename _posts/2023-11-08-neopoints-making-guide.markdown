@@ -225,8 +225,7 @@ is that the base Neopoints value quickly rises with the length of your streak, r
 resets. Trudy's Surprise also gives items for 7 day streaks, but these items are usually junk and
 not worth anything.
 
-![Trudy's Surprise](/public/np-guide/trudy.png)
-{: .centered }
+<p class="centered"><img src="/public/np-guide/trudys.png" alt="Trudy's Surprise" style="width: 66%;"></p>
 
 The payout table is listed on [JellyNeo](https://www.jellyneo.net/?go=trudys_surprise). We'll
 assume that you make 0 matches every day and get to day 25 of the streak. This will include
@@ -258,7 +257,7 @@ There are a few sources of Battledome drop data:
 which lists all arena-specific and challenger-specific prizes, but without their drop rates.
 * A crowdsourced dataset of Battledome drops summarized [here](https://www.reddit.com/r/neopets/comments/5alvls/battledome_loot_breakdown/).
 This gives exact rates for codestone drops, but only aggregates the data into "codestone" versus "not-codestone".
-Through this, they find the arena of the opponent is the most important factor for codestone drops, and
+Through this, we know find the arena of the opponent is the most important factor for codestone drops, and
 there's little variation in drop rate for different challengers in that arena. The Koi Warrior is in
 the Dome of the Deep, the arena with highest codestone drop rate, proving the conventional wisdom
 is good.
@@ -325,9 +324,14 @@ Let's compare this to the crowdsourced codestone drop rates.
 Overall the leak looks pretty legitimate! The simulator consistently overestimates the rate of codestone
 drops, but this makes sense because it pretends challenger-specific drops don't exist. Every
 time you get a challenger-specific drop, you miss out on an arena-wide drop, and codestones only appear
-in the arena-wide item pool. On average the simulator drop rate is around 89% of the true crowdsourced
-drop rate, so for upcoming analysis I'll multiply all drop rates from my simulator by 89%. (In this model,
-challenger drop rates appear 11% of the time and we assume they're all worth 0 NP.)
+in the arena-wide item pool.
+
+The reason I care about verifying this leak is that the Battledome drops more than just codestones, and I wwant
+a more exact estimate of expected value from Battledoming.
+Before going forward, we'll need to make some adjustments.
+On average, the simulator codestone drop rate is around 89% of the true crowdsourced
+drop rate. So for upcoming analysis, I'll multiply all drop rates from my simulator by 89%. (One way to
+view this is that it assumes challenger drops are 11% of all item drops, and all such drops are worth 0 NP.)
 To further simplify things, I'll only count a few major items.
 
 * Codestones dropped by every arena. Training school currency.
@@ -402,7 +406,7 @@ First is the Giant Space Fungus.
 The Giant Space Fungus is in the Cosmic Dome, and when fought on Hard it will sometimes drop
 Bubbling Fungus, which can be consumed to increase Strength.
 They sell for 136k NP each. The crowdsourced post from earlier found that Bubbling Fungus
-was 1% of the item drops. Fighting it gives 0.15 Bubbling Fungus per day, or 20.4k NP/day extra.
+was 1% of the item drops. Fighting it gives 0.15 Bubbling Fungus per day, or 20,400 NP/day extra.
 
 ![Bubbling Fungus](/public/np-guide/fungus.gif)
 {: .centered }
@@ -836,4 +840,5 @@ believe I've covered everything important, but if you think I missed something, 
 comment. I'm hoping this post was a helpful resource for your Neopets needs. Or your needs
 to...see someone do a lot of research into things that don't matter? I've watched
 [Unraveled](https://www.youtube.com/playlist?list=PLaDrN74SfdT7Ueqtwn_bXo1MuSWT0ji2w), I
-understand the appeal. In any case, good luck on your journey to accumulate wealth.
+understand the appeal. Whichever need it was, I wish you luck on your wealth
+accumulating journey.
