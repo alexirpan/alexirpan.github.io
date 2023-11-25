@@ -389,41 +389,44 @@ S750 Kreludan Defender Robot. It's in the Neocola Centre, and at just 14 HP it's
 that still gives 57k NP/day.
 Then, you can
 train your way up to fighting the Koi Warrior if you're so inclined. There are a bunch of guides
-for how to train and what weapons are good to use. I recommend the ones hosted by the Battlepedia.
-It looks like the [recommended weapon page](https://battlepedia.jellyneo.net/?go=weapon_recommendations) already got updated to account for daily quests making some items much cheaper, which I find pretty impressive.
+for how to train and what weapons are good to use. I recommend the ones hosted by the Battlepedia,
+[which are already updated](https://battlepedia.jellyneo.net/?go=weapon_recommendations) to account for daily quests making some items much cheaper.
 
-One last thing. There are two challengers whose challenger-specific items are valuable.
+One last thing. All analaysis earlier assumes challenger-specific items are worthless.
+There are two major exceptions.
 First is the Giant Space Fungus.
-The Giant Space Fungus in the Cosmic Dome can drop Bubbling Fungus, but only on Hard.
-This is a stat boosting
-item, and sells for 136k NP each. The crowd-sourced post from earlier found that Bubbling Fungus
-was 1% of the item drops. This gives 0.15 Bubbling Fungus per day, or 20.4k NP/day extra.
+The Giant Space Fungus is in the Cosmic Dome, and when fought on Hard it will sometimes drop
+Bubbling Fungus.
+That fungus is a stat boosting
+item, and sells for 136k NP each. The crowdsourced post from earlier found that Bubbling Fungus
+was 1% of the item drops. Fighting it gives 0.15 Bubbling Fungus per day, or 20.4k NP/day extra.
 
-The second is the Snowager
-in the Frost Arena, which can drop Frozen Neggs. A few people believe that fighting the Snowager
-is the most profitable enemy, since Frozen Neggs sell for a lot, 450k NP each at time of writing.
-They're so expensive because they can be directly traded for Negg points.
-High-end users interested in having the highest HP pet will use Sneggs to supplement
-their training, and the main way to buy Sneggs is by trading in Negg points.
+The second is the Snowager. It's in the Frost Arena, and
+can drop Frozen Neggs. These can be traded directly for Negg points, meaning they can get
+traded for Sneggs which boost HP. Of all stat boosters, HP increasers are the most expensive,
+since it's the only stat that can be increased without limit, and some high-end users like to
+compete on having the strongest pet. Each Frozen Negg sells for 450k NP at time of writing.
 
 Unfortunately there is not much data around on Frozen Negg drop rates. The best I found is
 [this Reddit post](https://www.reddit.com/r/neopets/comments/13xq7qu/snowager_battledome_results_when_it_dropped/)
 where they fought the Snowager every day between March 30th and June 1st. They got 24
-Frozen Neggs in that time, averaging 0.375 Frozen Neggs per day. That leads to an extra
-168750 NP/day. On top of the other Frost Arena items, you're looking at 200k NP/day!
+Frozen Neggs in that time, which is an average of 0.375 Frozen Neggs per day. Assuming that
+rate holds, the Snowager gives an extra 168,750 NP/day.
+On top of the other Frost Arena items, you're looking at 200k NP/day!
 
-The one snag is both of these enemies are some of the hardest challengers in the game. The
+The one snag is that both of these enemies are among the hardest challengers in the game. The
 Giant Space Fungus on Hard has 632 HP. The Snowager on Easy has 650 HP.
 If you are new to pet training, it could literally take you a year and millions of NP to get your
 pet strong enough beat the Snowager. If your only goal is to earn money, it will pay off
 eventually, but you'll need to be patient. I recommend the [Battlepedia](https://battlepedia.jellyneo.net/?go=beginners_guide_to_training)
 training guide. To be specific, I would shoot for level 100 and the 200 strength + defense boost,
-then train only level up to level 250, then catch up on the other stats at the Secret Ninja Training
-School. It will save you both time and money.
+then train only level up to level 250 to unlock the Secret Ninja Training School, then catch up
+on the other stats. It will save you both time and money.
 
 In summary,
 
-* The Battledome can give you a lot of Neopoints per day if you sell all the items you earn.
+* The Battledome can give you a lot of Neopoints per day if you fight until you get 15 items and
+sell them each day.
 * The profit order is Snowager > Giant Space Fungus (Hard) > any Cosmic Dome enemy > any Dome of the Deep enemy > S750 Kreludan Defender Robot
 * Most players who don't have premium will stop at Dome of the Deep and reach 69k NP/day, but if you
 are willing to commit to training up to Snowager levels you can earn 200k NP/day instead.
@@ -441,17 +444,18 @@ You can usually find what to wish for by seeing what's most common in the winner
 
 As for why it's so high? The Wishing Well only gives out 20 items a day, and this isn't enough to
 make a dent in demand, especially when Neopets keeps releasing new items. Case in point - for
-Neopets's 24th birthday, shops started selling a Neopets 24th Birthday Goodie Bag. They didn't
-release enough of them, but people figured out they were a r79 item, so now everyone's
-wishing for them and people are asking for 7 million NP on the Trading Post.
+Neopets's 24th birthday, shops started stocking a Neopets 24th Birthday Goodie Bag. It was pretty
+hard to obtain one thanks to restock botters, but people figured out they were a r79 item and just
+started wishing for them.
 
 ![Wishing well wishes](/public/np-guide/wishing.png)
 {: .centered }
 
-Getting 7 million NP for a wishing well cannot last. For profit purposes, let's assuming a Wishing
+People are asking for 7 million NP on the Trading Post for these bags. I don't think that will last.
+For the purposes of estimating value, let's assuming a Wishing
 Well item is worth 1 million NP. I'd say I win an item from the Wishing Well about 3 times a year.
-Then the expected earnings are 3 million NP per year, or 8,219 NP/day. Subtracting the cost of the wishes we
-get to 7,925 NP/day.
+Then the expected earnings are 3 million NP per year, or 8,219 NP/day. It costs 294 NP to make the wishes,
+so this is **7,925 NP/day**.
 
 The more people who make wishes, the less frequently anyone's wishes will be granted. I did consider not
 mentioning the Wishing Well to preserve profit for myself, but I figure the effect isn't that big, and
@@ -466,9 +470,11 @@ economy to look like.
 
 In Neopets it's driven by how many Neopoints you deposit. The more you store, the more interest
 you get. At the top-most bracket (10 million Neopoints), you earn 12.5% interest per year.
-
 You may be thinking "doesn't this promote rich-get-richer?" and yep you're entirely right. You
 may also be thinking "isn't 12.5% interest per year a lot?" and yep, you're also right.
+
+![Different kings of bank accounts](/public/np-guide/bank.png)
+{: .centered }
 
 This is never going to be a big part of your daily income unless you have a ton of money already,
 and if you already have a ton of money I don't know why you're reading this guide. I mention it because
@@ -477,12 +483,12 @@ it's the floor for any money making method that doesn't convert into cash on han
 # The Stock Market
 
 Ahh, the stock market. According to legend, stock prices used to be driven by user behavior.
-Then some users coordinated a stock pump and dump, so it got changed to be entirely random.
-This doesn't stop people from posting "to the mooooon", especially during the Gamestop
-craze of 2020.
+Then some users coordinated a stock pump, and it got changed to be entirely random.
+This doesn't stop people from posting "to the mooooon" on the message boards, especially
+during the Gamestop craze of 2021.
 
-Each day, you can buy up to 1000 shares of stock. You're only allowed to buy stock that's
-15 NP/share (or 10 NP/share if you have the Battleground boon - more on that later).
+Each day, you can buy up to 1,000 shares of stock. You're only allowed to buy stock that's
+at least 15 NP/share (or 10 NP/share if you have the Battleground boon - more on that later).
 You can sell as much stock as you want,
 paying a 20 NP commission per transaction. (In practice this commission is basically zero
 and I'll be treating it as such.)
@@ -502,7 +508,7 @@ A *lot* of analysis has been done by users over the years, including:
 * Corresponding analysis of [neostocks data](https://www.reddit.com/r/neopets/comments/af8p38/comment/edwe8lo/) by u/not-the-artist on Reddit.
 
 This data all suggests the conventional wisdom of selling at 60 NP/share is correct, since price movement
-seems dependent on current price, and the 61-100 NP range is where average price movement changes from
+is dependent on current price, and the 61-100 NP range is where average price movement changes from net
 0 to slightly negative. The cause of this was eventually revealed by u/neo\_truths's leak of the Stock
 Market [pricing algorithm](https://www.reddit.com/r/neopets/comments/xrlfd3/stock_market/).
 
@@ -522,20 +528,26 @@ Market [pricing algorithm](https://www.reddit.com/r/neopets/comments/xrlfd3/stoc
 > If points + current price > 5, change stock price to current price + points with p% chance
 
 Some re-analysis by u/not-the-artist is [here](https://www.reddit.com/r/neopets/comments/xrlfd3/comment/itjn5de/),
-confirming this leak is consistent with what was seen before. The TL;DR is that the only lines that cause net price
-drops are
+confirming this leak is consistent with what was seen before. The TL;DR for why 60 NP is the magic number comes from
+these two lines.
 
-> If current price >= 10 and current price / opening price > 1.15 [substract] max move / 4 rounded down  
-> If current price >= 10 and current price / opening price > 1.3 [substract] max move / 4 rounded down
+> If current price >= 10 and current price / opening price > 1.15 [subtract] max move / 4 rounded down  
+> If current price >= 10 and current price / opening price > 1.3 [subtract] max move / 4 rounded down
 
+These are the only sections of the pricing algorithm that are negative on average.
 Thanks to rounding, these conditions only fire when `max move` is at least 4, and if we look above, this
 only starts happening in the 61-100 NP range.
 
 Using a 60 NP sell threshold will lead to an average holding time of 399 days. When bank interest is accounted for,
-1000 shares of 15 NP stock is worth around 29.5k NP. (It is lower than 60k NP because you miss on 399 days of bank
+1,000 shares of 15 NP stock is worth around 29,550k NP. (It is lower than 60k NP because you miss on 399 days of bank
 interest - full math is done [here](https://www.reddit.com/r/neopets/comments/y8bqig/leaked_code_determining_best_stock_selling_price/) for the curious).
-This gives a profit of 14.5k NP per day, although you will have to wait over a year for it to turn back into cash-on-hand.
+This gives a profit of **14,550 NP/day**, although you will have to wait over a year per buy to convert it back to cash-on-hand.
 
+Look at it this way - you're making your money work for you. Also there's a free avatar for getting to 1 million NP
+in the stock market, which you'll easily hit if you wait until 60 NP to sell.
+
+![Stock Market avatar GIF](/public/np-guide/stockavatar.gif)
+{: .centered }
 
 # Coconut Shy
 
@@ -548,70 +560,149 @@ You can throw 20 balls per day for 100 NP each, earning one of five outcomes.
 * A small hit (50 NP)
 * A strong hit that doesn't knock over a coconut (300 NP)
 * Knock over a coconut (10,000 NP + a random Evil Coconut)
-* The coconut explodes (Jackpot - 500,000 NP)
+* The coconut explodes (Jackpot! 500,000 NP)
 
 The two outcomes worth money are the last two. The jackpot is obviously good, but the Evil Coconuts are actually
-worth *more*. The Evil Coconuts are stamps, and some Neopets users love collecting stamps. The Coconuts actually
-sell for more than the Jackpot right now - current price looks like it is between 750k-1 million per Coconut.
+worth *more*. Every Evil Coconut is a stamp, and some Neopets users love collecting stamps. Right now, a given Evil
+Coconut sells for between 750,000 NP and 1,000,000 NP.
 
 Coconut Shy odds were leaked by u/a\_neopian\_with\_info in this [Reddit post](https://www.reddit.com/r/neopets/comments/wc4nsi/deserted_fairground_games_odds/).
 Let's assume you use the Halloween site theme, which slightly improves your odds. The payout table is
 
-| Payout | Probability |
-| ------ | ----------- |
-| 0 NP   | 20% |
-| 50 NP  | 65% |
-| 300 NP | 14.9% |
-| 10,000 NP + Evil Cocunut (estimated value 750,000 NP) | 0.99% |
-| 500,000 NP | 0.01% |
+<table style="margin-left:auto; margin-right:auto;">
+  <thead>
+    <tr>
+      <th>Payout</th>
+      <th>Probability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0 NP</td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td>50 NP</td>
+      <td>65%</td>
+    </tr>
+    <tr>
+      <td>300 NP</td>
+      <td>14.9%</td>
+    </tr>
+    <tr>
+      <td>10,000 NP + Evil Cocunut</td>
+      <td>0.99%</td>
+    </tr>
+    <tr>
+      <td>500,000 NP</td>
+      <td>0.01%</td>
+    </tr>
+  </tbody>
+</table>
 
-Combined this gives an expected payout of 834.6 NP per throw. Each throw costs 100 NP, so doing 20 throws per day
-gives 14,692 NP expected profit per day. Again, this is high variance though, all your payout is on winning a coconut
-or hitting the Jackpot, which happens every 50 days on average.
+If we value evil coconuts at 750k NP, this is an expected payout of 834.6 NP per throw. Each throw costs 100 NP, so it's
+734.6 NP profit per throw, and doing 20 throws gives **14,692 NP/day**.
+This is pretty high variance though. You'll only win a worthwhile prize every 50 days on average.
 
-If you decide to go Coconut throwing, you won't be able to throww it by clicking the site, but you can still play
-the game by visiting the direct link mentioned on [JellyNeo](https://www.jellyneo.net/?go=coconut_shy). I am honestly
-surprised the Evil Coconuts are still so expensive. My guess is that most users don't know Coconut Shy is net profitable,
-or the ones that do can't be bothered to do it.
+If you decide to go Coconut throwing, you'll need to use the direct link from
+[JellyNeo](https://www.jellyneo.net/?go=coconut_shy). The original game used Flash, and it was never converted
+after the death of Flash, but you can still directly hit the backend URL that the Flash game would have
+hit.
+
+I am honestly surprised the Evil Coconuts are still so expensive. My guess is that most users don't know
+Coconut Shy is net profitable, or the ones that do can't be bothered to do it.
 
 # Faerie Caverns
 
-The Faerie Caverns are a daily where you pay 400 NP to enter the cave, and win a prize if you make it to the
-end. You have a 1 in 8 chance of doing so (you have to win three 50-50 coin flips in a row), and can attempt
-once per day.
+Spoiler alert: Faerie Caverns are just a more extreme version of Coconut Shy.
+
+Each day, you can pay 400 NP for the right to enter the caverns.
+The Faerie Caverns are a daily where you pay 400 NP to enter the cave. You'll face
+three "left or right?" choices in the cave, each with a 50-50 chance that's entirely random.
+If you guess right all three times, you win a prize!
+
+![A treasure chest in the cave](/public/np-guide/faerie_cave_success.gif)
+{: .centered }
+
+If you don't, you get nothing and have to try again tomorrow.
 
 People do this daily because of the Faerie Caverns stamp, which is only available from this daily and sells for
-around 50 million NP. However, your odds of winning it are *very* slim. According to a u/neo\_truths [leak](https://www.reddit.com/r/neopets/comments/xwyrf0/faerie_caverns_grave_danger/),
-if you win the 1 in 8 and get to the end, your payouts are
+around 50 million NP. However, your odds of winning it are *very* slim. You have a 1 in 8 chance of winning
+treasure, and according to a u/neo\_truths [leak](https://www.reddit.com/r/neopets/comments/xwyrf0/faerie_caverns_grave_danger/),
+the payouts for doing so are as follows.
 
-| Payout | Probability |
-| ------ | ----------- |
-| 500 NP to 2,500 NP   | 89.9% |
-| 5,000 NP | 4.9% |
-| 10,000 NP | 5.1% |
-| 25,000 NP + item prize | 0.1% |
+<table style="margin-left: auto; margin-right: auto;">
+  <thead>
+    <tr>
+      <th>Payout</th>
+      <th>Probability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>500 NP to 2,500 NP</td>
+      <td>89.9%</td>
+    </tr>
+    <tr>
+      <td>5,000 NP</td>
+      <td>4.9%</td>
+    </tr>
+    <tr>
+      <td>10,000 NP</td>
+      <td>5.1%</td>
+    </tr>
+    <tr>
+      <td>25,000 NP + item prize</td>
+      <td>0.1%</td>
+    </tr>
+  </tbody>
+</table>
 
 Of the item prizes, you have a 10% chance of getting a Faerie Paint Brush, and a 90% chance of winning one of Beautiful Glowing Wings,
 Patamoose, Faerie Caverns Background, or Faerie Caverns Stamp. You can see in the odds that Faerie Paint Brush is
 considered the best prize, so it's funny that every other prize is worth more.
 
-| Prize | Estimated Price |
-|-------|-----------------|
-| Faerie Paint Brush | 1,200,000 NP |
-| Beautiful Glowing Wings | 2,000,000 NP |
-| Patamoose | 3,000,000 NP |
-| Faerie Caverns Background | 2,000,000 NP |
-| Faerie Caverns Stamp | 50,000,000 NP |
+<table style="margin-left: auto; margin-right: auto;">
+  <thead>
+    <tr>
+      <th>Prize</th>
+      <th>Estimated Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Faerie Paint Brush</td>
+      <td>1,200,000 NP</td>
+    </tr>
+    <tr>
+      <td>Beautiful Glowing Wings</td>
+      <td>2,000,000 NP</td>
+    </tr>
+    <tr>
+      <td>Patamoose</td>
+      <td>3,000,000 NP</td>
+    </tr>
+    <tr>
+      <td>Faerie Caverns Background</td>
+      <td>2,000,000 NP</td>
+    </tr>
+    <tr>
+      <td>Faerie Caverns Stamp</td>
+      <td>50,000,000 NP</td>
+    </tr>
+  </tbody>
+</table>
 
-If you do the expected value math, then doing Faerie Caverns is net profitable. It costs $$8 * 400 = 3,200$$
-NP to get a payout. Assuming you get 500 NP in the "500 to 2500 NP" case, your expected payout is 14,174 NP,
-so going into the Faerie Caverns is worth 10,974 NP/day.
+If you do the expected value math, then doing Faerie Caverns is net profitable. The expected earnings work
+out to 1,772 NP/day. After accounting for the 400 NP cost, the Faerie Caverns are worth **1,372 NP/day**.
 
-However, this relies heavily on winning the 1 in 1000 item prize. Given that you only get a payout once every
-8 days, it's 1 in 8000 days on average to win an item. Neopets is 8760 days old. You could legitimately have
-played Faerie Caverns every day for Neopets's *entire existence* and not won an item prize. For this reason,
-I don't do Faerie Caverns.
+This really isn't that much, it's the same as playing some Flash games but with more gambling involved.
+The positive expected value is entirely dependent on winning an item prize, which is a 1 in 1000 chance
+after passing a 1 in 8 chance of reaching the treasure. Neopets is about 8700 days old.
+You could have played Faerie Caverns every day for Neopets's *entire existence*, and it would not be surprising
+if you never saw an item prize.
 
+For that reason, I don't do Faerie Caverns.
 Still, it is technically worth it if you have higher risk tolerance. 400 NP a day is pretty cheap.
 
 # Battleground Boons
@@ -622,65 +713,63 @@ If you fought at least 10 battles, and your team wins, then you get to choose a 
 Some of these boons are important modifiers for earning money.
 
 * The Bank Bribery boon increase bank interest by 3%.
-* The Cartogriphication boon guarantees you make it to the end of the Faerie Caverns, making your payout chance
-100% instead of 12.5%.
+* The Cartogriphication boon tells you which direction to go in the Faerie Caverns, making your odds of
+treasure 100% instead of 12.5%.
 * The Cheaper by the Dozen boon lets you buy stocks at 10 NP instead of 15 NP.
 
 In general, these boons are nice but I don't think they're worth going for. We can math them out as follows.
 
-Ignoring compound interest effects, Bank Bribery is approximately worth
+* Ignoring compound interest effects, Bank Bribery is approximately worth (3% / 365) * (net worth) per day.
+* For Cartogriphication, your expected payout gets multiplied by 8. That leads to 14,174 NP/day in expectation,
+or an increase of 12,402 NP/day in expected value compared to doing Faerie Caverns without the boon.
+* The Cheaper by the Dozen boon will save 5,000 NP/day when buying stock.
 
-$$
-    net worth \times \fract{3% interest}{year} \times \frac{1 year}{365 days} = 0.0000822 \times net worth
-$$
+We see that Cartographication is the best boon if you are risky, Cheaper by the Dozen
+is the best boon if you aren't, and Bank Bribery is the best boon if you are rich. You'll need to have over
+60.8 million to see an increase bigger than Cheaper by the Dozen, or 150.9 million to see an increase bigger
+than Cartogriphication.
 
-For Cartogrphication, the expected payout is still 14,174 NP, but your expected cost of getting that payout
-drops from 3,200 NP to 400 NP. So this is worth (3,200 - 400) = 2,800 NP/day.
-
-The Cheaper by the Dozen boon will make thee 1,000 shares of stock cost 10k instead of 15k, so you'll save
-5,000 NP / day.
-
-Based on this math, we see that Cheaper by the Dozen is the best boon, until your net worth is over 60.8 million,
-at which point the Bank Interest is worth more than 5k/day. But relative to the other methods mentioned so
-far, this just isn't that much. At best, you only have the boon every other week, and it's not even guaranteed
+At best, you'll only have a battleground boon every other week, and it's not even guaranteed
 you win a boon! The winning team in the battleground is the team with highest *average* contribution, not highest
 total contribution. Very often, the team with the best boons has the most freeloaders that do the bare
-minimum and hope to get carried to a win.
+minimum and hope to get carried to a win, but every freeloader makes it harder to win. I don't rely on this
+and have mostly stopped trying to go for boons.
 
 There is one very narrow use case where I'd say the Battleground boons are worth it. The Reddit user
 u/throwawayneopoints did a [detailed analysis](https://www.reddit.com/r/neopets/comments/lah877/toil_and_trouble_testing_out_the_orders_double/)
 of the Double Bubble boon. This boon will occasionally let you get a 2nd use out of a single use consumable potion.
-People assumed this only applied to healing potions, which would be worthless, but it also applies to stat-boosting
-potions and morphing potions. The refill rate is 25%, so if you're using these potions, it's pretty easy to
-make Double Bubble worth it.
+People assumed this only applied to healing potions, which would be worthless, but that analysis showed it also applies to stat-boosting
+potions and morphing potions. The refill rate is 25%, and stat boosters can be pretty expensive, so
+it's pretty easy to make Double Bubble worth it. (For example, if you use 10 Bubbling Funguses for
+pet training, Double Bubble will save you around 340,000 NP on average.)
 
 
 # The Neopian Lottery
 
 Okay, no you should not do this one, but it's funny so I'll give it a quick shoutout.
 
-In the Neopian lottery, you can buy tickets (up to a limit) with different
-numbers, and the jackpot is paid to the user with the most matching numbers (or split among
-all such users in the case of a tie). Importantly the lottery jackpot is 100% of all ticket
-sales + a 5k starting pot. Since the lottery *always* pays out, it's technically positive
-expected value to buy a lottery ticket.
+The Neopian lottery is a very classic lottery where you buy tickets to contribute to a common
+jackpot paid to the winners. You pick six numbers between 1 to 30, then hope. What makes
+the Neopian lottery special is that it **always** pays out, splitting the jackpot evenly
+among winners in the case of a tie in number of matching numbers.
 
-These days the lottery sells about 4000 to 5000 tickets per day, so the expected value is like,
-1 NP/ticket. You will easily earn more playing a Flash game. But I think it is just a perfect
+The jackpot has a 5k starting pot, so, *very technically*, this is a positive expected value
+lottery. A lottery these days will have around 4000-5000 tickets sold, so your expected value
+is like, 1 NP/ticket, which is really not worth your time. But I think it is just a perfect
 symbol of Neopets dailies. It's a random slot machine, that is slightly rigged in your favor.
 
 # If You Do Everything...
 
-<table>
+<table style="margin-left: auto; margin-right: auto;">
 <tr><td>Daily Quests</td><td>46,400 NP/day</td></tr>
 <tr><td>Food Club (assuming 15 year old account)</td><td>88,000 NP/day</td></tr>
 <tr><td>Trudy's Surprise</td><td>17,915 NP/day</td></tr>
 <tr><td>Battledome (Dome of the Deep)</td><td>69,046 NP/day</td></tr>
 <tr><td>Wishing Well</td><td>7,925 NP/day</td></tr>
-<tr><td>Stock Market</td><td>14,500 NP/day</td></tr>
+<tr><td>Stock Market</td><td>14,550 NP/day</td></tr>
 <tr><td>Coconut Shy</td><td>14,692 NP/day</td></tr>
-<tr><td>Faerie Caverns</td><td> 10,974 NP/day</td></tr>
-<tr><td><strong>Total</strong></td><td><strong>269,452 NP/day</strong></td></tr>
+<tr><td>Faerie Caverns</td><td>1,372 NP/day</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>259,900 NP/day</strong></td></tr>
 </table>
 
 In total, we are looking at 8 million NP/month if you commit to doing everything. It's a good deal better
