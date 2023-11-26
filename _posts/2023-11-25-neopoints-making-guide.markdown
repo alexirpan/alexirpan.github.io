@@ -326,7 +326,7 @@ drops, but this makes sense because it pretends challenger-specific drops don't 
 time you get a challenger-specific drop, you miss out on an arena-wide drop, and codestones only appear
 in the arena-wide item pool.
 
-The reason I care about verifying this leak is that the Battledome drops more than just codestones, and I wwant
+The reason I care about verifying this leak is that the Battledome drops more than just codestones, and I want
 a more exact estimate of expected value from Battledoming.
 Before going forward, we'll need to make some adjustments.
 On average, the simulator codestone drop rate is around 89% of the true crowdsourced
