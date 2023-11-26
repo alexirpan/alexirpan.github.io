@@ -259,8 +259,7 @@ which lists all arena-specific and challenger-specific prizes, but without their
 This gives exact rates for codestone drops, but only aggregates the data into "codestone" versus "not-codestone".
 Through this, we know find the arena of the opponent is the most important factor for codestone drops, and
 there's little variation in drop rate for different challengers in that arena. The Koi Warrior is in
-the Dome of the Deep, the arena with highest codestone drop rate, proving the conventional wisdom
-is good.
+the Dome of the Deep, the arena with highest codestone drop rate.
 * Much later, u/neo\_truths posted a leak on the [drop rates and drop algorithm](https://www.reddit.com/r/neopets/comments/yc488a/battledome_dome_loot/).
 This gives exact rates for the arena-wide drops, but has no data on challenger specific drops.
 
@@ -526,7 +525,7 @@ it's the floor for any money making method that doesn't convert into cash on han
 
 Ahh, the stock market. According to legend, stock prices used to be driven by user behavior.
 Then some users coordinated a stock pump, and it got changed to be entirely random.
-This doesn't stop people from posting "to the mooooon" on the message boards, especially
+This didn't stop people from posting "to the mooooon" on the message boards, especially
 during the Gamestop craze of 2021.
 
 Each day, you can buy up to 1,000 shares of stock. You're only allowed to buy stock that's
