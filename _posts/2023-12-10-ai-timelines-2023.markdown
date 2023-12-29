@@ -4,3 +4,144 @@ title:  "My AI Timelines Have Sped Up (Again)"
 date:   2020-08-18 15:08:00 -0700
 ---
 
+In August 2020, I wrote a post about [my AI timelines]({% post_url 2020-08-18-ai-timelines %}).
+My forecast at the time was:
+
+* 10% chance by 2035
+* 50% chance by 2045
+* 90% chance by 2070
+
+Now I would say it's more like
+
+* 10% chance by 2028 (i.e. 5 years away)
+* 50% chance by 2043
+* 90% chance by 2070
+
+Like last time, there is no hard "X happened so I will subtract Y years" logic going on. It
+is a vibes-based adjustment. The TL;DR reasoning is that in 2020, I noted some trends that
+made me think near-term AGI was unlikely but more plausible. Since then, some events I considered
+unlikely came to pass, and the new trends are pushing towards faster progress.
+
+I think it would be most instructive if I directly compared my 2020 post to my new one, since it's
+a rare opportunity to directly rate how I did at forecasting.
+
+
+The Role of Compute
+---------------------------------------------------------------
+
+> How much
+> are AI capabilities driven by better hardware letting us scale existing models, and how much is driven
+> by new ML ideas? This is a complicated question, especially because the two
+> are not independent. New ideas enable better usage of hardware, and more hardware
+> lets you try more ideas. My 2015 guess to the horrid simplification was that
+> 50% of AGI progress would come from
+> compute, and 50% would come from better algorithms. There were several things
+> missing between 2015 models, and something that put the "general" in
+> artificial general intelligence. I was not convinced more compute would fix that.
+>
+> Since then, there have been many successes powered by scaling up models, and I
+> now think the balance is more like 65% compute, 35% algorithms. I suspect that
+> many human-like learning behaviors could just be emergent properties of larger
+> models. I also suspect that many things humans view as
+> "intelligent" or "intentional" are neither. We just want to think we're
+> intelligent and intentional. We're not, and the bar ML models need to cross is
+> not as high as we think.
+
+(2020 post)
+{: .centered }
+
+Now that it's 2023, do I get to say I called it? The view of "things emerge
+at scale" is significantly more mainstream these days. I know a few people said
+scale would just give a better sequence predictor, and people still say that now,
+but every day it gets harder to argue it's impossible to brute force the step-function
+between toy and product with just scale and the right dataset.
+
+My rating is that I get to claim a big yet partial win here. I've been converted to the
+compute hype-train and think it's like 80% compute 20% algorithms, but I know other
+people were on that hype train a while ago.
+
+Just to put some counterweight, although the big story has been scale, there
+have been relevant algorithmic advances. The finding that [instruction fine-tuning lets
+a 1B model outperform an untuned 175B model](https://openai.com/research/instruction-following)
+was basically what made ChatGPT possible at current compute, and ideas like chain-of-thought
+prompting have been very influential due to how much they help.
+
+![InstructGPT chart](/public/ai-timelines-2023/instructgpt.png)
+{: .centered }
+
+(Pedantically, I don't know if I'd call chain-of-thought prompting an algorithm. It's
+better to cast the division as "compute vs ideas", and in that respect, better prompting
+is still an ideas game. At least for now - [see experiments](https://openreview.net/forum?id=92gvk82DE-).) on [LLM-driven prompt optimization](https://arxiv.org/abs/2309.03409). Honestly
+it wouldn't shock me if a lot of automatic prompt generation happens right now and just
+doesn't get published, based on [what people have figured out about DALL-E 3](https://simonwillison.net/2023/Oct/26/add-a-walrus/).)
+
+
+Unsupervised Learning
+------------------------------------------------------------------
+
+> Unsupervised learning got better way faster than I expected. Deep reinforcement
+> learning got better
+> a little faster than I expected. Transfer learning has been slower than
+> expected.
+
+(2020 post)
+{: .centered }
+
+Ah, transfer learning. I remember the good old days, where people got excited about
+a paper that did like, 5 tasks, and showed you could speed up learning at a 6th task. Now it is
+all about large internet-scale models that have gone through enough rounds of next token
+prediction to zero-shot a wide class of tasks. Or to quote work from my colleagues,
+"[large language models are general pattern machines](https://arxiv.org/abs/2307.04721)".
+As far as I know, the dedicated transfer learning techniques like [PCGrad](https://arxiv.org/abs/2001.06782) are just, not used anymore.
+
+Suffice it to say that unsupervised and self-supervised methods have continued to shine as
+the dark matter powering every large language and multimodal model. They still appear to
+be the best methods for vaccuuming up compute.
+
+As for deep reinforcement learning, it certainly has less hype behind it. I felt like there used
+to be a new "standard RL algorithm" every 3-4 years, but nowadays I mostly see SAC or PPO, which date to 2018.
+I haven't worked with RLHF myself, but when talking to people about it, they think pretty much
+any RL algorithm will give you okay results as long as you have good preference data.
+I still think
+better generic RL algorithms are out there, but it's harder to justify searching for them when you
+could spend the marginal compute on extra pretraining or supervised fine-tuning instead. Robot
+learning in particular has drifted towards imitation learning because it's easier to work with
+and uses compute more effectively.
+At least
+in my research bubble, the field seems to be moving towards RL methods that exploit the structure of preference
+data, like [DPO](https://arxiv.org/abs/2305.18290) and its siblings.
+
+
+Better Tooling
+--------------------------------------------------
+
+> In the more empirical sides of ML, the obvious components of progress are your
+> ideas and computational budget, but there are less obvious ones too, like
+> your coding and debugging skills, and your ability to utilize your compute.
+> It doesn't matter how many processors you have per machine, if your code doesn't
+> use all the processors available.
+>
+> [...]
+>
+> The research stack has lots of parts, improvements continually happen across that
+> entire stack, and most of
+> these improvements have multiplicative benefits.
+
+(2020 post)
+{: .centered }
+
+I'd say that nothing in the tooling department has really *surprised* me. However, as
+more people have moved to Transformers-by-default, the specialization of the tooling
+has gotten more concetrated. Stuff like [FlashAttention](https://github.com/Dao-AILab/flash-attention)
+wouldn't be as much of a thing if it weren't relevant to like, literally every modern
+deep learning project.
+
+There is also the wider adoption of HuggingFace, but if I had to pick something I missed,
+it would be the rise of "research via API calls". API owners have a wider audience of
+hobbyists, developers, and researchers, which justifies focusing more on user experience.
+I also liked [Pete Warden's](https://petewarden.com/2023/10/15/the-unstoppable-rise-of-disposable-ml-frameworks/)
+take, that people are increasingly interested in "the codebase that's already integrated
+LLaMa or Whisper", rather than generic ML frameworks.
+
+
+
