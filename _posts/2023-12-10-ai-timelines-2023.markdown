@@ -207,7 +207,7 @@ Speaking of...
 Rise of the Product Cycle
 ------------------------------------------------------------------------------
 
-In 2020, I did an exercise I called "trying hard to say no". I decided to start from
+As part of the 2020 post, I did an exercise I called "trying hard to say no". I decided to start from
 the base assumption that short-term AGI was possible, put forward my best guess as to
 how we'd end up in that world, then see how plausible I found that story to be.
 The reason to do this is because if you want to be correct that AGI is far away,
@@ -239,10 +239,6 @@ Since this idea would be based on scale, it would imply the concentration of res
 > When lots of fields
 > use the same set of techniques, you get more knowledge sharing, and that
 > drives better research.
-
-And then, you know, maybe we'll stop saying the phrase "deep learning" in favor
-of something more popular.
-
 > Maybe five years from now, we'll have a new buzzword that takes deep learning's place.
 
 I thought this was a helpful exercise, and concluded by saying
@@ -388,9 +384,9 @@ There's a fun quote near the end:
 > AI is at peak hype, and everyone in the community knows it.
 
 Here's the Google search trends for "artificial intelligence" and "AI" since 2016. Both are scaled
-out of 100, with 100 matching peak search interest.
+out of 100, with 100 matching peak search interest. Let's see how peak 2016 hype compares to now.
 
-![Artificial intelligence chart](/public/ai-timelines-2023/artificialintelligencesearchtrend.png)
+![Artificial intelligence chart](/public/ai-timelines-2023/artificialsearchtrend.png)
 {: .centered }
 
 ![AI chart](/public/ai-timelines-2023/aisearchtrend.png)
@@ -400,4 +396,13 @@ Oh, what naive children we were! I do think it's funny that AI is one of only a 
 where people try to play down hype for the sake of the conversational commons. Imagine feeling like
 you need to push people away from being interested in your research. There's a real privilege there.
 
+I have really really tried to avoid getting caught up in hype, but I do think AGI could be soon.
+The routes for improvement are clear, it's just a question of if they can't work or if they can work
+assuming billions of dollars of funding.
+In AI, models can **never** do everything people claim they can, but what the models **can** do is ever-growing
+and never slides backward. Today is the worst AI will ever be. Even if all the VC companies bust and LLMs
+dry up, we'll still have the models that are already trained and the ideas already derived. There is no going back.
+I'd recommend people think about what that means.
 
+> Everything has been changing since last generation was born  
+> And they won't try to take in change is a two edged sword
