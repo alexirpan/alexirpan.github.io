@@ -5,33 +5,40 @@ date:   2023-12-29 15:08:00 -0700
 ---
 
 In August 2020, I wrote a post about [my AI timelines]({% post_url 2020-08-18-ai-timelines %}).
+Using the following definition of AGI:
+
+> An AI system that matches or exceeds humans at almost all (95%+)
+> economically valuable work.
+
 My forecast at the time was:
 
 * 10% chance by 2035
 * 50% chance by 2045
 * 90% chance by 2070
 
-Now I would say it's more like
+Now I would say it's more like:
 
 * 10% chance by 2028 (5ish years)
 * 25% chance by 2035 (10ish years)
 * 50% chance by 2045
 * 90% chance by 2070
 
-Like last time, there is no hard "X happened so I will subtract Y years" logic going on. It
-is a vibes-based adjustment. Please hold all criticism that this is not a well-founded reasoning
-strategy, I already know it isn't. If you want to disqualify all AI predictions based on fuzzy
-principles, you'd have to throw out 90% of writing on the subject.
-
-The TL;DR reasoning is that in 2020, I noted some trends that
-made me think near-term AGI was unlikely but more plausible. Now, some events I considered
-unlikely came to pass, and that is pushing probability mass closer in time.
-I think it would be most instructive if I directly compared my 2020 post to my new one, because
-it's a fun time capsule into what things were like 4 years ago.
+To explain why, I think it would be most instructive to directly compare my 2020 post to my current
+one.
 
 
-The Role of Compute
----------------------------------------------------------------
+Why?
+----------------------------------------------------------------------------
+
+When I thought about AGI before, I saw two bimodal hypotheses.
+
+**Hypothesis 1:** Scaling is enough for AGI. Many problems we consider challenging will disappear
+at scale. Making models bigger won't be easy, but the challenges behind scaling up models will be tackled and solved sooner rather than later, and the rest will follow.
+
+**Hypothesis 2:** Scaling current methods is not the right paradigm. We will reach the limits
+of what scale can do, find we are not at AGI, and need new clever ideas to even find the correct next hill to climb. Doing so will take a while.
+
+To be precise, let me quote myself from 2020.
 
 > How much
 > are AI capabilities driven by better hardware letting us scale existing models, and how much is driven
@@ -54,11 +61,17 @@ The Role of Compute
 (2020 post)
 {: .centered }
 
-Do I get to say I called it? The view of "things emerge
-at scale" is significantly more mainstream these days. I totally called it.
+Most of the reason I started believing in faster timelines in 2020 was because I thought
+hypothesis 1 (the scaling hypothesis) had proved it had real weight behind it. Not enough to
+declare it had won, but enough that it deserved attention.
 
-Well, to be fair, I think I only get to claim a partial win. I assumed
-next token prediction would be hard to use in new use cases.
+Now that it's 2024, do I get to say I called it? The view of "things emerge
+at scale" is significantly more mainstream these days. I totally called it. This is the main
+reason that I feel compelled to keep my 50% / 90% numbers the same but stretch my 10% number
+forward. If scaling stops then it'll take a while, and if it keeps going I don't think
+it'll take that long.
+
+If there is something I did not call, it would be the flexibility of next token prediction.
 
 > There are certainly problems with GPT-3. It has a fixed attention
 > window. It doesn't have a way to learn anything it hasn't already learned from
@@ -69,10 +82,13 @@ next token prediction would be hard to use in new use cases.
 > is, and I'd guess that trying to change its training loss to add
 > intent or agency would be much, much more difficult than it sounds.
 
-It turned out that next token prediction was enough to pretend to follow intent,
-if you finetuned on enough "instruction: example" data, and LLMs are good enough
-at pretending to make it close enough to actually following intent. The same supervised
-loss was good enough, and it was not much more difficult than that.
+(2020 post)
+{: .centered }
+
+It turned out that next token prediction was enough to *pretend* to follow intent,
+if you finetuned on enough "instruction: example" data, and pretending to follow intent is
+close enough to actually following intent.
+Supervised finetuning with the same loss was good enough and it was not much more difficult than that.
 The finding that [instruction fine-tuning let
 a 1.5B model outperform an untuned 175B model](https://openai.com/research/instruction-following)
 was basically what made ChatGPT possible at current compute.
