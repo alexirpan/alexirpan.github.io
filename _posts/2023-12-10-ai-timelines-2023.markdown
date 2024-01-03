@@ -27,18 +27,19 @@ To explain why, I think it would be most instructive to directly compare my 2020
 one.
 
 
-Why?
+The Role of Compute
 ----------------------------------------------------------------------------
 
-When I thought about AGI before, I saw two bimodal hypotheses.
+When I thought about AGI before, I saw two broad theories about the world.
 
 **Hypothesis 1:** Scaling is enough for AGI. Many problems we consider challenging will disappear
 at scale. Making models bigger won't be easy, but the challenges behind scaling up models will be tackled and solved sooner rather than later, and the rest will follow.
 
-**Hypothesis 2:** Scaling current methods is not the right paradigm. We will reach the limits
+**Hypothesis 2:** Scaling current methods is not the right paradigm. It is undeniably important,
+but we will reach the limits
 of what scale can do, find we are not at AGI, and need new clever ideas to even find the correct next hill to climb. Doing so will take a while.
 
-To be precise, let me quote myself from 2020.
+Quoting myself from 2020,
 
 > How much
 > are AI capabilities driven by better hardware letting us scale existing models, and how much is driven
@@ -69,7 +70,7 @@ Now that it's 2024, do I get to say I called it? The view of "things emerge
 at scale" is significantly more mainstream these days. I totally called it. This is the main
 reason that I feel compelled to keep my 50% / 90% numbers the same but stretch my 10% number
 forward. If scaling stops then it'll take a while, and if it keeps going I don't think
-it'll take that long.
+it'll take that long. The evidence so far suggests that the scaling hypothesis is more likely to be true.
 
 If there is something I did not call, it would be the flexibility of next token prediction.
 
@@ -104,14 +105,23 @@ I was correct in claiming
 that something very important was happening at scale. I was wrong in how many
 ideas would be needed to exploit it.
 
+(Move this to later.)
+
+This is not to say that it's just "numbers go up, use more hardware, hurr durr new state-of-the-art".
+A friend reminded me that for every LLaMa, there's a [Meta OPT](https://ai.meta.com/blog/democratizing-access-to-large-scale-language-models-with-opt-175b/) that doesn't live up to expectations.
+If you're bored one day, the team behind OPT released a [very detailed logbook](https://github.com/facebookresearch/metaseq/tree/main/projects/OPT/chronicles) of the issues
+they ran into. Gradient overflows during Thanksgiving, mysterious activation norm spikes that
+traced to an accidental library upgrade, and more. There are problems to solve there.
+
+
 Every day it gets harder to argue it's impossible to brute force the step-functions
 between toy and product with just scale and the right dataset.
 I've been converted to the compute hype-train and think the fraction is like 80% compute
 20% better ideas. Ideas are still important - things like chain-of-thought have been
 especially influential, and in that respect, leveraging LLMs better is still an ideas game.
-(At least for now - [see experiments](https://openreview.net/forum?id=92gvk82DE-) on [LLM-driven prompt optimization](https://arxiv.org/abs/2309.03409). Honestly
+At least for now - [see experiments](https://openreview.net/forum?id=92gvk82DE-) on [LLM-driven prompt optimization](https://arxiv.org/abs/2309.03409). Honestly
 it wouldn't shock me if a lot of automatic prompt generation happens right now and just
-doesn't get published, based on [what people have figured out about DALL-E 3](https://simonwillison.net/2023/Oct/26/add-a-walrus/).)
+doesn't get published, based on [what people have figured out about DALL-E 3](https://simonwillison.net/2023/Oct/26/add-a-walrus/).
 
 
 Unsupervised Learning
@@ -135,7 +145,8 @@ only unused, they don't get much further research either.
 
 Suffice it to say that unsupervised and self-supervised methods have continued to shine as
 the dark matter powering every large language and multimodal model. They still appear to
-be the best methods for vaccuuming up compute and data.
+be the best methods for vaccuuming up compute and data. Throw everything in the hole
+and the hole will provide.
 
 > If you've got proof that a large Transformer can handle audio, image, and
 > text in isolation, why not try doing so on all three simultaneously?
@@ -146,21 +157,33 @@ be the best methods for vaccuuming up compute and data.
 (2020 post)
 {: .centered }
 
-As for deep reinforcement learning, it certainly has less hype behind it.
-I haven't worked with RLHF myself, but when talking to people about it, they think pretty much
-any RL algorithm will give you okay results as long as you have good preference data. The
-important questions are the ones surrounding the RL algorithm.
+There is still a role for supervised learning and reinforcement learning, but they certainly
+have less hype behind them. I remember when deep reinforcement learning was at peak
+hype, people accused it of being horribly inefficient. Which it was! The reply I'd always give
+was that deep RL from scratch was insane, but it was a useful way to benchmark RL methods.
+The long run would eventually look like doing RL on top of a model trained via
+other means.
+
+Fast forward to now, and I got my wish, except I'm not happy about it. RLHF people tell me that they think pretty
+much any RL algorithm will give okay results as long as you have good preference data, and
+the most important questions are the ones surrounding the RL algorithm.
+
+![Yann LeCun cake slide](/public/ai-timelines-2023/yanncake.webp)
+{: .centered }
+
+Calling back to the famous cake slide from [Yann LeCun's NeurIPS 2016](https://www.youtube.com/watch?v=Ount2Y4qxQo) talk on predictive learning, people respect the cherry but it's natural
+for people to care more about the cake. The slide is "slightly offensive" but I'd say it
+came slightly true.
 
 I still think
-better generic RL algorithms are out there, but it's harder to justify searching for them when you
+better generic RL algorithms are out there, and they would make RLHF better, but it's harder to justify searching for them when you
 could spend the marginal compute on extra pretraining or supervised fine-tuning instead. Robot
 learning in particular has drifted towards imitation learning because it's easier to work with
 and uses compute more effectively.
 At least
-in my research bubble, the field seems to be moving from generic RL methods to ones that exploit
+in my research bubble, the field is drifting from generic RL methods to ones that exploit
 the structure of preference data, like [DPO](https://arxiv.org/abs/2305.18290) and its siblings.
-Still, I feel obligated to plug [Q-Transformer](https://qtransformer.github.io/), an RL + Transformers
-paper I worked on this year.
+Still, I feel obligated to plug [Q-Transformer](https://qtransformer.github.io/), a generic RL + Transformers paper I worked on this year.
 
 
 Better Tooling
@@ -187,7 +210,7 @@ and concentrated. Stuff like [FlashAttention](https://github.com/Dao-AILab/flash
 wouldn't be as much of a thing if it weren't relevant to like, literally every modern
 ML project.
 
-I had to pick something I missed,
+If I had to pick something I missed,
 it would be the rise of "research via API calls". API owners have a wider audience of
 hobbyists, developers, and researchers, which justifies focusing more on user experience.
 I also liked [Pete Warden's](https://petewarden.com/2023/10/15/the-unstoppable-rise-of-disposable-ml-frameworks/)
@@ -195,27 +218,32 @@ take, that people are increasingly interested in "the codebase that's already in
 LLaMa or Whisper", since they don't need everything a generic ML framework provides.
 
 Overall I'd say tools are progressing as expected and don't impact my timeline opinions.
+I may have been surprised at *when* LLM assistants appeared, but I always expected something
+like them to arrive.
 
 
 Scaling Laws
 -----------------------------------------------------
 
-At the time I wrote the original post, the accepted scaling laws were from [(Kaplan et al, 2020)](https://arxiv.org/abs/2001.08361), and still had
+At the time I wrote the original post, the accepted scaling laws were from [Kaplan et al, 2020](https://arxiv.org/abs/2001.08361), and still had
 room for a few orders of magnitude.
 
-Two years after that post, [(Hoffman et al, 2022)](https://arxiv.org/abs/2203.15556) announced Chinchilla scaling laws showing that models could be much smaller given a fixed FLOPs budget, as long as you had a larger dataset.
-An important detail is that Chincilla scaling laws were estimated assuming that you train a model, then run inference once on your benchmark. However, in a world where most large models are run for inference many times (as part of products or APIs), it's more compute optimal to train for longer than Chinchilla recommends, once you account for inference cost. Even ignoring this,
-further [analysis from Thaddée Yann TYL's blog](https://espadrine.github.io/blog/posts/chinchilla-s-death.html) suggests model sizes could potentially be even lower than
-previously assumed.
+Two years after that post, [Hoffman et al, 2022](https://arxiv.org/abs/2203.15556) announced Chinchilla scaling laws showing that models could be much smaller given a fixed FLOPs budget, as long as you had a larger dataset.
+An important detail is that Chincilla scaling laws were estimated assuming that you train a model, then run inference once on your benchmark. However, in a world where most large models are run for inference many times (as part of products or APIs), it's more compute optimal to train for longer than Chinchilla recommends, once you account for inference cost. Further [analysis from Thaddée Yann TYL's blog](https://espadrine.github.io/blog/posts/chinchilla-s-death.html) suggests model sizes could potentially be even lower than previously assumed.
 
 Despite the dramatic reductions in model size, I don't think the adjustments to scaling laws are that important to
-model capabilities. I think the Pareto frontier has bent slightly, but not in a dramatic way. Maybe I am wrong, I have not seen the hard numbers because it seems like literally every
+model capabilities. I'm guessing the Pareto frontier has bent slightly, but not in a dramatic way. Maybe I am wrong, I have not seen the hard numbers because it seems like literally every
 lab with the resources has decided that scaling laws are now need-to-know trade secrets. But for now, I am assuming that FLOPs and data are the bottleneck,
-and when controlled for FLOPs we are only slightly more efficient.
+and if you control for both we are only slightly more efficient and new scaling laws haven't
+affected timelines too much.
 
-I'd say the most important consequence is that *inference times are much smaller than previously assumed*, which has implications for latency in products. In the early 2010s, Google did a lot
-of research into how much delays impact search engine usage, and the conclusion was ["it matters a ton"](https://www.thinkwithgoogle.com/future-of-marketing/digital-transformation/the-google-gospel-of-speed-urs-hoelzle/). This led to a heavy focus on minimizing search latency.
-ML products are no different. People are impatient.
+I'd say the most important consequence is that *inference times are much smaller than previously projected*.
+In combination with smaller model sizes, there's been a lot of progress in quantization
+to make those models even smaller in scenarios where you're time or memory limited.
+That's made products faster than they otherwise would be pre-Chinchilla.
+In the early 2010s, Google did a lot
+of research into how much delays impact search engine usage, and the conclusion was ["it matters a ton"](https://www.thinkwithgoogle.com/future-of-marketing/digital-transformation/the-google-gospel-of-speed-urs-hoelzle/). When search engines are slow, people use them less, even if the
+quality is worth waiting for. ML products are no different.
 
 Speaking of...
 
@@ -273,15 +301,15 @@ I'd split the difference and say most AI services could be profitable, but run a
 of growth.
 
 This has driven tech giants and VCs to throw billions at hardware and ML talent hiring.
-Deep learning is old news - now everyone says "LLM" or "prompt engineering". [Masked Autoencoders](https://openreview.net/forum?id=MAMOi89bOL) are handling audio,
-multimodal Gemini and GPT-4V handle vision, and a few video generation models are uncanny
+Deep learning is old news - now everyone says "LLM" or "generative AI" or "prompt engineering". [Masked Autoencoders](https://openreview.net/forum?id=MAMOi89bOL) are handling audio,
+multimodal Gemini and GPT-4V handle vision, and a few [video generation](https://makepixelsdance.github.io/) models are uncanny
 but making good progress.
 
 To me it now seems completely obvious that transformers will be pushed much, much further
 than any other model architecture in the history of machine learning. There is too much
-hype, the scaling is inevitable, and even if the doomers' point of view become more popular,
+hype, the scaling is inevitable, and even if the doomers' point of view becomes more popular,
 there are enough optimists that I expect *somebody* will push forward,
-safety and alignment be damned.
+safety and alignment and fairness concerns be damned.
 To borrow a point from [Gwern's essay on timing](https://gwern.net/timing),
 speculative technology is created by the experts with the
 most faith that it will succeed. It will always seem insane
@@ -297,21 +325,25 @@ Trying to Say No, Again
 Let's run this exercise of "let's assume near-term AGI is possible, how do we get there" again,
 to see what's changed.
 
-Once again, progress should be driven primarily by larger compute budgets and scale.
+Once again, we'd assume progress comes primarily from larger compute budgets and scale.
 Maybe it's not transformers, maybe one of the
-"transformer replacements" that claims to be more efficient will finally win. (I know some people are excited about [state-space models](https://arxiv.org/abs/2312.00752).)
+"transformer replacements" that claims to be more efficient will finally win. (I know some people are excited about [Mamba and other state-space models](https://arxiv.org/abs/2312.00752).)
 Increasing parameter count is very easy if you
-have the compute and data to exploit it, so let's assume the bottlenecks are there.
-We can take "ML powers products powers funding powers ML" as a given. That's just
-what's happening.
+have the compute and data to exploit it, so let's assume the bottlenecks are on compute
+and data. We can take "ML powers products powers funding powers ML" as a given. That's just
+what's happening. The question is whether something will make scaling fail.
 
 I don't really know enough about hardware to discuss it in any detail, so let's just assume
 it'll continue to grow. Chips have gotten more expensive, given that everyone is keeping their eyes on it,
-including nation states. Still, computers are useful, ML models are useful, seems reasonable
-to assume the competing factions will figure something out. The silicon must flow, after all.
+including nation states. Still, computers are useful, ML models are useful, and even if
+models fail to scale, people will want to fit GPT-4 sized models on their phone.
+It seems reasonable to assume the competing factions will figure something out. The silicon must flow, after all.
 
-We have already crossed the event horizon of training on everything we can find on the Internet.
-To me, I think the main question is on the high-quality data to augment it.
+Data seems like the harder question. (Or at least the one I feel qualified talking about.)
+We have already crossed the event horizon of trying to train on everything on the Internet.
+It's increasingly difficult for labs to differentiate themselves on publicly available data.
+Differentiation is instead coming from non-public high-quality data to augment public
+low quality data.
 The rumor is that GPT-4 is good at coding in part because
 OpenAI spent a lot of time, effort, and money on acquiring good coding data. Adobe
 [put out an ad asking for "500 to 1000 photos of bananas in real life situations"](https://petapixel.com/2023/10/04/adobe-wants-1000-photos-of-bananas-to-help-train-its-ai-image-generator/)
@@ -320,19 +352,15 @@ Anthropic has a dedicated ["tokens" team to acquire and understand data](https:/
 Everyone wants good data, and they're willing to pay for it, because people trust
 the models can use that data effectively as long as they can get it.
 
-Getting this data by hand doesn't seem good enough. Trying to manually fight up a
-power law sounds awful.
-However, there's growing interest in synthetic data. There was an entire [NeurIPS workshop](https://openreview.net/group?id=NeurIPS.cc/2023/Workshop/SyntheticData4ML#tab-accept-poster) about it.
-One of the early results around GPT-4 by [(Pan, Chan, Zou et al)](https://arxiv.org/abs/2304.03279)
-was that GPT-4's label accuracy was competitive with human crowdworkers. Diffusion based
-image augmentation has been shown to improve [robot learning](https://diffusion-rosie.github.io/),
-and Anthropic has based a lot of its branding on constitutional AI and "RL from AI feedback".
+All the scaling laws have followed power laws so far, including dataset size. Getting
+more data by hand doesn't seem good enough to cross to the next thresholds. We need better
+means.
 
 A long time ago, when OpenAI still did RL in games / simulation, they were very into [self-play](https://openai.com/research/competitive-self-play). You run agents against copies of themselves, score
 their interactions, and update the models towards interactions with higher reward.
 Given enough time, they learn complex strategies through competition.
 At the time, I remember Ilya said they cared because self-play was a method to turn compute into
-data. You run your model, get model-generated data, funnel it back in, and get an exponential
+data. You run your model, get data from your model's interactions with the environment, funnel it back in, and get an exponential
 improvement in your Elo curves. What was quickly clear was that this was true,
 but only in the narrow regime where self-play was possible. In practice that usually meant
 game-like environments, with at most a few hundred different entities, a ground truth reward function
@@ -340,28 +368,111 @@ that was not too easy or hard, and easy ability to reset and run faster than rea
 all those qualities, self-play sputtered and died with nothing to show for it besides
 warmer GPUs.
 
-I think it's possible we're at the start of a world where self-play or self-play-like ideas work on any text generation task.
-A world where direct human feedback is only used to bootstrap reward models or sanity check
-new ones. Everything else is model-generated and model-supervised.
-Model-generated data, model-based rewards, feeding the same engine.
-Even if it the accuracy of synthetic labels is worse, it's often cheaper. Think harder, then
-teach yourself to come up with that idea the first time.
-If that's true, and
-data becomes untethered from human effort, then progress just fully turns into how many FLOPs you
-can shovel into the system.
+I think it's possible we're at the start of a world where self-play or self-play-like ideas work on any text generation task. Drawing an analogy, the
+environment is the dialogue, actions are text generated from an LLM, and the reward is from whatever
+reward model you have. Instead of using ground truth data, our models may be at a point
+where they can generated synthetic data that's good enough to train on.
 
-Mix some search algorithms on top, and you're in business. During the Sam Altman drama, there was
-mention of some kind of method called Q\*, driving a lot of hype. Eventually
-Yann LeCun put out a post saying people really needed to cool down, since literally every lab has
+There's a lot of interest in ideas along this vein.
+One of the early results around GPT-4 by [Pan, Chan, Zou et al](https://arxiv.org/abs/2304.03279)
+was that GPT-4's label accuracy was competitive with human crowdworkers.
+Diffusion based
+image augmentation has been shown to improve [robot learning](https://diffusion-rosie.github.io/),
+and Anthropic has based a lot of its branding on [constitutional AI](https://www.anthropic.com/index/constitutional-ai-harmlessness-from-ai-feedback) and "RL from AI feedback".
+NeurIPS had [a workshop](https://openreview.net/group?id=NeurIPS.cc/2023/Workshop/SyntheticData4ML#tab-accept-poster) on it too.
+
+If the models don't eat their own tail, the end result is a world where data becomes
+increasingly untethered from human effort, and progress just fully turns into how
+many FLOPs you can shovel into the system.
+A world where direct human feedback is only used to bootstrap reward models for new use
+cases or sanity check data generated for existing ones.
+Everything else is model-generated and model-supervised.
+Model-generated data, model-based rewards, feeding back into itself.
+Even if it the accuracy of synthetic labels is worse, it's often cheaper.
+
+Back in 2016, people tried using GANs to generate data for image classification,
+and showed it worked if you were in a low-data regime. [One of my first accepted papers](https://sites.google.com/view/graspgan) was on the subject. If "every image on the Internet" is now
+a "low-data" regime, that doesn't mean people give up. It means they'll try to find a way.
+
+Language models are a [blurry JPEG of the Internet](https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web) now, but that is because we believed LLM text was bad
+for training, so giving them the Internet was the best we could do.
+What happens if that changes, and LLMs become blurry JPEGs of something clearer than we can imagine?
+
+
+Search and Q\*
+----------------------------------------------------------------------------------
+
+I don't have too much to say about search, but I should mention it briefly.
+
+During the Sam Altman drama, [Reuters reported](https://www.reuters.com/technology/sam-altmans-ouster-openai-was-precipitated-by-letter-board-about-ai-breakthrough-2023-11-22/)
+a method called "Q\*", creating a lot of speculation. In the circles I was in, the
+assumption was that it was some Q-learning driven search process, since it was named
+similarly to [A\* search](https://en.wikipedia.org/wiki/A*_search_algorithmhttps://en.wikipedia.org/wiki/A*_search_algorithm).
+Eventually Yann LeCun put out a post saying people really needed to cool down, since
+literally every lab has
 looked into combining search with LLMs, and it would not be that surprising if someone made it work.
 
 He was 100% correct. It is a very obvious idea to try. DeepMind put out a preprint that
 [CNNs are good evaluators of Go moves](https://arxiv.org/abs/1412.6564) in December 2014, added search
 via MCTS, and turned it into AlphaGo within a year. It was the ML success story of the decade.
 People do not forget the lessons from machine learning's crowning achievements.
-There are details from here to there, on whether it can justify its computational inefficiency and
-whether our base models are good enough to act as good search subroutines. But it really ought to
-work, and will always be there to eat marginal FLOPs if people don't have any better ideas.
+
+Search methods are usually very computationally inefficient, and I don't know if our base models
+are good enough to use as search subroutines. But one benefit of search is that it really
+ought to work. It is one of the most reliable ideas in machine learning. The reason we
+use search less now is because we've come up with better ideas for how to use compute. Search
+will always be there to eat marginal FLOPs if we run out of better ideas.
+Think harder, then teach yourself to come up with your final result the first time.
+
+
+How Believable is All This?
+---------------------------------------------------------------------------------
+
+Overall I think it's plausible that we'll continue to scale, that some of the perceived bottlenecks won't
+matter, and we'll discover ways to use current models to widen the ones that do.
+I'm finding it increasingly hard to refute that view of the world.
+
+This theory of the world does rely heavily on model-generated data panning out.
+It's possible that doesn't play out. Or, that it leads to some gains, but runs into
+diminishing marginal returns.
+
+Still, let me know when you *see* the scaling laws hit a wall, instead of talking about why they ought to stop. So far, I don't think they have.
+
+
+The Bull and the Bears
+-------------------------------------------------------------------------------
+
+When getting feedback on early drafts of this post, the main lesson I learned is that
+for AGI, there is one bull and many bears.
+The bull is to say that we can fix the problems with scaling and doing so will fix the rest. The
+bears are to declare X, Y, or Z as either fundamental blockers or reasons progress will slow down.
+This makes it tricky to write a post about AGI timelines, because everyone's bear is
+different.
+
+![Bears](/public/ai-timelines-2023/bears.webp)
+{: .centered }
+
+(Or one. I think it's totally fine to be bearish on AGI.)
+{: .centered }
+
+I feel obligated to address as many bears as possible, but I also don't want this
+post to become super long. So I'll try to be quick. If I don't mention your bear,
+I apologize.
+
+## Data Poisoning and Provenance
+
+There are few papers exploring the idea of whether you could poison the Internet for model
+training, by generating lots of content that you know will be bad for model training and spamming
+it on commonly crawled sites.
+
+
+
+
+When I sent this post around
+
+The part I am really not sure about is how long that will be true, or how easy it will be to
+make progress in a world where
+work with
 
 If that plays out, it just leaves the question of whether intelligence is bottlenecked on physical
 embodiment.
@@ -380,12 +491,6 @@ given that I work in robot learning but don't have much of an embodiment religio
 obvious that robotics data should help with spatial understanding, and is inherently agentic in nature.
 It is very non-obvious that embodiment is the only route towards more agentic goal-directed
 systems. To me it feels like it is just one route out of many. (But see [alternative views hera](https://keerthanapg.com/tech/embodiment-agi/).)
-
-Overall I think it's plausible that we'll continue to scale, some of the perceived bottlenecks won't
-matter, and we'll use weaker ML models to widen the ones that do. I'm finding it increasingly hard to
-refute that view of the world. Of course, it could all cap out - but
-let me know when you *see* the scaling laws hit a wall, instead of talking about why they ought to
-stop. Since so far, I don't think they have.
 
 
 On Hype
