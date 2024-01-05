@@ -459,22 +459,74 @@ I feel obligated to address as many bears as possible, but I also don't want thi
 post to become super long. So I'll try to be quick. If I don't mention your bear,
 I apologize.
 
-## Data Poisoning and Provenance
+## Data Poisoning Bear
 
-There are few papers exploring the idea of whether you could poison the Internet for model
-training, by generating lots of content that you know will be bad for model training and spamming
-it on commonly crawled sites.
+> Generative AI is creating spam, polluting its own data well, and will eventually choke its own growth.
+
+This
+[article from Scientific American](https://www.scientificamerican.com/article/ai-generated-data-can-poison-future-ai-models/) asks whether generative AI is making itself harder to train. For
+a more malicious angle, some papers have explored whether you can poison
+datasets by deliberate data injection - see [Carlini et al, 2023](https://arxiv.org/abs/2302.10149).
+
+Right now, I think this is important to be aware of, but will get worked around in the short
+term. The entire "AI self-play" thesis assumes that we have reward models that can
+separate "good" data from "bad" data. So far I don't have reasons to believe that's impossible.
 
 
+## Overhangs Bear
+
+> We've caught up on all the big overhangs and the rate of progress will slow down.
+
+For people unfamiliar with the term as it's used in AGI discussion, an overhang is when
+the ideas to create really good AI exists, but people don't know it works yet.
+There is an overhang between the best model creatable with present resources,
+and the best models we actually have. Once people believe in the ideas, you see a rapid
+increase in capabilities as researcher quickly assemble the right ideas together and fill
+in the overhang.
+
+I think this view of the world is correct in describing how technology evolves, but doesn't
+give great guidance on when the next overhang will appear.
+"There are important combinations of ideas people have not put together yet" is just
+what day-to-day work is in research. Progress tends to look like a series of sigmoid
+curves, where every so often you go through an inflection point. Making a projection based on
+what the curve looks like at the inflection point is wrong, but making a projection based on
+the flatter region after the inflection point is wrong too.
+
+![Sigmoid curve](/public/mh-2023/sigmoid.png)
+{: .centered }
+
+As I mentioned earlier, I'm not sure how good scaled up transformers can get, but
+we're not done with trying to scale them up, and it's possible the next big inflection
+point lies in better computers rather than better neural nets. I have a friend who runs
+an ML compute startup, and he used to ask me "what would you do with 1000x more
+FLOPs and 1000x more memory?" He stopped asking me this question after GPT-3, I think he
+knew my answer by then.
 
 
-When I sent this post around
+## The Agentic Bear
 
-The part I am really not sure about is how long that will be true, or how easy it will be to
-make progress in a world where
-work with
+> LLMs are not agentic enough to qualify as proto-AGI. Scaling them up won't lead
+> to an AGI agent.
 
-If that plays out, it just leaves the question of whether intelligence is bottlenecked on physical
+There's, just, a ton of people working on trying to turn LLMs into agents.
+I was [working on it myself in 2023](https://auto-rt.github.io/)! My verdict so far
+is that it's still a research prototype, but there's something there.
+
+Earlier in this post, I said:
+
+> It turned out that next token prediction was enough to *pretend* to follow intent,
+> if you finetuned on enough "instruction: example" data, and pretending to follow intent is
+> close enough to actually following intent.
+
+(Ugh you know the post is getting too long when you feel like it needs to quote itself.)
+
+After seeing instruction finetuning work, I'm hesitant to say that agentic behavior cannot
+emerge at scale with the right training dataset.
+
+
+## The Physically Embodied Bear
+
+One of the classic questions in ML is whether intelligence is bottlenecked on physical
 embodiment.
 
 > If this model is good at language, speech, and visual data, what sensor inputs
@@ -485,12 +537,43 @@ embodiment.
 (2020 post)
 {: .centered }
 
-My impression is that people outside robotics have a religion of disembodiment, and people in
-robot learning have a religion of embodiment. Which has always left me a bit of an odd duck,
-given that I work in robot learning but don't have much of an embodiment religion. I think it's very
-obvious that robotics data should help with spatial understanding, and is inherently agentic in nature.
-It is very non-obvious that embodiment is the only route towards more agentic goal-directed
-systems. To me it feels like it is just one route out of many. (But see [alternative views hera](https://keerthanapg.com/tech/embodiment-agi/).)
+Humans grow up and learn from a huge host of stimuli and sensors. Models are doing
+it differently. Large ML models do not have to learn the same ways humans do - but
+is it possible to learn tasks that require real-world actions if you are not embodied
+in the world where those actions will occur? The the
+
+Or, using fewer fancy words: let's say you've never played tennis. If you read and
+watch everything there is to know about tennis, then put your mind into the body
+of Roger Federer, would you play tennis as well as Roger Federer?
+
+This is the kind of thought experiment that is basically disprovable, making it a wonderful
+topic if you want to say a lot of words about stuff. In robot learning, it's common to say
+"no of course not". Conference of Robot Learning 2022 was held in Auckland, and while there
+I had a chat with a professor who worked in ML, but didn't do any robotics. He was visiting
+just because he worked nearby and thought it'd be interesting. We got on the topic
+of embodiment, and he said "robotics researchers have a religion of embodiment", which I
+quickly agreed was true.
+
+This has always left me a bit of an odd duck in robotics, because I'm not a member of the
+Church of Embodiment.
+I'm not as far as the "embodiment is a waste of time" crowd. It's very obvious to me
+that embodied data is special. It's inherently agentic, but also places a lot of focus
+on physical reasoning. It's not obvious to me that embodied data is the only way to get
+the capabilitie
+
+It's very *not-obvious* to me that embodiment data is the only way for a model
+is the only route
+towards understanding how to take actions in the real world.
+(But see [alternative views hera](https://keerthanapg.com/tech/embodiment-agi/).)
+
+The analogy is that
+
+AI safety people I know are often concerned about whether larger and larger transformers
+will eventually attain the notion of understanding they are an agent in the world, that is
+trained and deployed a certain way. They're concerned because it could promote deceptive
+behavior, or hiding bad behavior at evalution time like the
+[Volkswagen emissions scandal](https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal).
+
 
 
 On Hype
