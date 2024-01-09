@@ -98,7 +98,7 @@ was basically what made ChatGPT possible at current compute.
 ![InstructGPT chart](/public/ai-timelines-2023/instructgpt.png)
 {: .centered }
 
-Diagram from InstructGPT analysis, with relevant line comparing the 1.5B supervised finetuned model
+Diagram from InstructGPT analysis, with added line comparing the 1.5B supervised finetuned model
 to an untuned 175B model. Feel free to ignore the blue line that includes RLHF.
 {: .centered }
 
@@ -137,7 +137,7 @@ only unused, they don't get much further research either.
 
 Suffice it to say that unsupervised and self-supervised methods have continued to shine as
 the dark matter powering every large language and multimodal model. They still appear to
-be the best methods for vaccuuming up compute and data. Throw everything in the hole
+be the best methods for vacuuming up compute and data. Throw everything in the hole
 and the hole will provide.
 
 > If you've got proof that a large Transformer can handle audio, image, and
@@ -210,7 +210,7 @@ take, that people are increasingly interested in "the codebase that's already in
 LLaMa or Whisper", since they don't need everything a generic ML framework provides.
 
 Overall I'd say tools are progressing as expected and don't impact my timeline opinions.
-I may have been surprised at *when* LLM assistants appeared, but I always expected something
+I may have been surprised *when* LLM assistants appeared, but I always expected something
 like them to arrive.
 
 
@@ -221,7 +221,7 @@ At the time I wrote the original post, the accepted scaling laws were from [Kapl
 room for a few orders of magnitude.
 
 Two years after that post, [Hoffman et al, 2022](https://arxiv.org/abs/2203.15556) announced Chinchilla scaling laws showing that models could be much smaller given a fixed FLOPs budget, as long as you had a larger dataset.
-An important detail is that Chincilla scaling laws were estimated assuming that you train a model, then run inference once on your benchmark. However, in a world where most large models are run for inference many times (as part of products or APIs), it's more compute optimal to train for longer than Chinchilla recommends, once you account for inference cost. Further [analysis from Thaddée Yann TYL's blog](https://espadrine.github.io/blog/posts/chinchilla-s-death.html) suggests model sizes could potentially be even lower than previously assumed.
+An important detail is that Chinchilla scaling laws were estimated assuming that you train a model, then run inference once on your benchmark. However, in a world where most large models are run for inference many times (as part of products or APIs), it's more compute optimal to train for longer than Chinchilla recommends, once you account for inference cost. Further [analysis from Thaddée Yann TYL's blog](https://espadrine.github.io/blog/posts/chinchilla-s-death.html) suggests model sizes could potentially be even lower than previously assumed.
 
 Despite the dramatic reductions in model size, I don't think the adjustments to scaling laws are that important to
 model capabilities. I'm guessing the Pareto frontier has bent slightly, but not in a dramatic way. Maybe I am wrong, I have not seen the hard numbers because it seems like literally every
@@ -288,12 +288,12 @@ and inspired a large cast of competitors. It is not a huge productivity booster,
 it's enough of one that people are willing to pay for it.
 Supposedly [Microsoft loses $20/user on
 Copilot](https://aibusiness.com/nlp/github-copilot-loses-20-a-month-per-user), but
-[David Holz's has claimed Midjourney is already profitable](https://www.theregister.com/2022/08/01/david_holz_midjourney/).
+[David Holz has claimed Midjourney is already profitable](https://www.theregister.com/2022/08/01/david_holz_midjourney/).
 I'd split the difference and say most AI services could be profitable, but run at a loss in the name
 of growth.
 
 This has driven tech giants and VCs to throw billions at hardware and ML talent hiring.
-Deep learning is old news - now everyone says "LLM" or "generative AI" or "prompt engineering". [Masked Autoencoders](https://openreview.net/forum?id=MAMOi89bOL) are handling audio,
+Deep learning is old news - now everyone says "LLM" or "generative AI" or "prompt engineering". [Masked Autoencoders](https://openreview.net/forum?id=MAMOi89bOL) can handle audio,
 multimodal Gemini and GPT-4V handle vision, and a few [video generation](https://makepixelsdance.github.io/) models are uncanny
 but making good progress.
 
@@ -365,7 +365,7 @@ LLM capabilities.
 Drawing an analogy, the
 environment is the dialogue, actions are text generated from an LLM, and the reward is from whatever
 reward model you have. Instead of using ground truth data, our models may be at a point
-where they can generated synthetic data that's good enough to train on.
+where they can generate synthetic data that's good enough to train on.
 
 There are papers exploring this already, usually under the umbrella term "synthetic data".
 One of the early results around GPT-4 by [Pan, Chan, Zou et al](https://arxiv.org/abs/2304.03279)
@@ -387,7 +387,7 @@ which is a bit crazy to think about.
 If the models don't eat their own tail, the end result is a world where data becomes
 increasingly untethered from human effort, and progress just fully turns into how
 many FLOPs you can shovel into the system.
-Even if it the accuracy of synthetic labels is worse, it's often cheaper.
+Even if the accuracy of synthetic labels is worse, it's often cheaper.
 I expect these ideas to work, although I'm uncertain on the time scale, and the result
 will be a world where direct human feedback is only used to bootstrap reward models for new use
 cases or sanity check data generated for existing ones.
@@ -438,7 +438,7 @@ matter, and we'll discover ways to use current models to widen the ones that do.
 I'm finding it increasingly hard to refute that view of the world.
 
 This theory of the world does rely heavily on model-generated data panning out.
-It's possible that doesn't play out. Or, that it leads to some gains, but runs into
+It's possible that theory doesn't play out. Or, that it leads to some gains, but runs into
 diminishing marginal returns.
 
 Still, let me know when you *see* the scaling laws hit a wall, instead of talking about why they ought to stop. So far, I don't think they have.
@@ -506,7 +506,7 @@ a more malicious angle, some papers have explored whether you can poison
 datasets by deliberate data injection - see [Carlini et al, 2023](https://arxiv.org/abs/2302.10149).
 
 As I've argued earlier, I think this is very important in the short term, but will be worked around
-and becomes less important later.
+and become less important later.
 The entire "AI self-play" thesis assumes that we will cross a tipping point where LLM text
 (filtered in some way) is good enough to train with.
 
@@ -524,11 +524,11 @@ For people unfamiliar with the term as it's used in AGI discussion, an overhang 
 the ideas to create really good AI exists, but people don't know it works yet.
 There is an overhang between the best model creatable with present resources,
 and the best models we actually have. Once people believe in the ideas, you see a rapid
-increase in capabilities as researcher quickly assemble the right ideas together and fill
+increase in capabilities as researchers quickly assemble the right ideas together and fill
 in the overhang.
 
 The implication is that progress relative to compute will be faster than it "should be" *while* the overhangs are filled.
-Extrapolating that progress would overestimate future progress.
+Extrapolating progress during overhang filling would overestimate future progress.
 
 I think this view of the world is correct in describing how technology evolves and I'd agree
 that there are fewer overhangs in 2024 compared to 2020.
@@ -563,12 +563,12 @@ It requires not just ML expertise, but a more specific expertise that (I assume)
 mostly by experience rather than reading papers.
 
 So, one theory you could have is that figuring out how to scale ML model training becomes
-a research problem of its own, that is not solved by scale, and eventually we get some
-claim like "solving scaling is AGI complete".
+a research problem of its own, that is not solved by scale, and eventually becomes so intractable
+that progress stalls.
 
 I don't find this theory particularly likely, given the history of scaling compute so far,
 and scaling of other big projects like the Apollo program (support bigger rockets) and Manhattan
-Project (get more enriched uranium). But I don't have any argument against it past that.
+Project (get more enriched uranium). But I don't have any specific argument against it.
 
 
 ## The Physically Embodied Bear
@@ -594,7 +594,7 @@ the argument goes like this:
 > economically valuable work.
 
 2. 95%+ will include taking physical, real-world actions. (Quick estimates I've
-found say manufacturing is 10% to 30% of jobs, depending on country.)
+found say manufacturing is 10% to 30% of jobs, depending on the country.)
 3. Right now, the majority of data feeding models is not embodied. If we assume scale
 is the answer, lack of embodied data will make it hard to scale.
 
