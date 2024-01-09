@@ -95,7 +95,7 @@ The finding that [instruction fine-tuning let
 a 1.5B model outperform an untuned 175B model](https://openai.com/research/instruction-following)
 was basically what made ChatGPT possible at current compute.
 
-![InstructGPT chart](/public/ai-timelines-2023/instructgpt.png)
+![InstructGPT chart](/public/ai-timelines-2024/instructgpt.png)
 {: .centered }
 
 Diagram from InstructGPT analysis, with added line comparing the 1.5B supervised finetuned model
@@ -165,7 +165,7 @@ Fast forward to now, and I got my wish, except I'm not happy about it. RLHF peop
 much any RL algorithm will give okay results as long as you have good preference data, and
 the most important questions are the ones surrounding the RL algorithm.
 
-![Yann LeCun cake slide](/public/ai-timelines-2023/yanncake.webp)
+![Yann LeCun cake slide](/public/ai-timelines-2024/yanncake.webp)
 {: .centered }
 
 Calling back to the famous cake slide from [Yann LeCun's NeurIPS 2016](https://www.youtube.com/watch?v=Ount2Y4qxQo) talk on predictive learning, people respect the cherry but it's natural
@@ -469,7 +469,7 @@ There's a fun quote near the end:
 Here's the Google search trends for "AI" since 2016, scaled out of 100.
 Let's see how peak 2016 hype compares to now.
 
-![AI chart](/public/ai-timelines-2023/aisearchtrend.png)
+![AI chart](/public/ai-timelines-2024/aisearchtrend.png)
 {: .centered }
 
 Oh, what naive children we were! I do think it's funny that AI is one of only a few research topics
@@ -504,7 +504,7 @@ solve all the other hard problems. The
 bears are to declare X, Y, or Z as reasons progress will slow down or stop. And everyone has
 a different bear.
 
-![Bears](/public/ai-timelines-2023/bears.webp)
+![Bears](/public/ai-timelines-2024/bears.webp)
 {: .centered }
 
 I ignored these bears in the main text because I felt it disrupted the flow of the argument,
@@ -555,7 +555,7 @@ what day-to-day work is in research. To me, "overhangs exists" sounds the same a
 Making a projection during the inflection point is wrong, but so is doing so after the
 inflection point. The important question is how often the field reaches new inflection points.
 
-![Sigmoid curve](/public/ai-timelines-2023/sigmoid.png)
+![Sigmoid curve](/public/ai-timelines-2024/sigmoid.png)
 {: .centered }
 
 I'm not sure how good scaled up transformers can get, but
