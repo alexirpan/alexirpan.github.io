@@ -30,14 +30,15 @@ one.
 The Role of Compute
 ----------------------------------------------------------------------------
 
-When I thought about AGI before, I saw two broad theories about the world.
+The last time I seriously thought about AGI, I saw two broad theories about the world.
 
 **Hypothesis 1:** Scaling is enough for AGI. Many problems we consider challenging will disappear
 at scale. Making models bigger won't be easy, but the challenges behind scaling up models will be tackled and solved sooner rather than later, and the rest will follow.
 
 **Hypothesis 2:** Scaling current methods is not the right paradigm. It is undeniably important,
 but we will reach the limits
-of what scale can do, find we are not at AGI, and need new clever ideas to even find the correct next hill to climb. Doing so will take a while.
+of what scale can do, find we are not at AGI, and need new ideas that are far from current state-of-the-art
+methods to make further progress. Doing so will take a while.
 
 Quoting myself from 2020,
 
@@ -104,15 +105,6 @@ to an untuned 175B model. Feel free to ignore the blue line that includes RLHF.
 I was correct in claiming
 that something very important was happening at scale. I was wrong in how many
 ideas would be needed to exploit it.
-
-(Move this to later.)
-
-This is not to say that it's just "numbers go up, use more hardware, hurr durr new state-of-the-art".
-A friend reminded me that for every LLaMa, there's a [Meta OPT](https://ai.meta.com/blog/democratizing-access-to-large-scale-language-models-with-opt-175b/) that doesn't live up to expectations.
-If you're bored one day, the team behind OPT released a [very detailed logbook](https://github.com/facebookresearch/metaseq/tree/main/projects/OPT/chronicles) of the issues
-they ran into. Gradient overflows during Thanksgiving, mysterious activation norm spikes that
-traced to an accidental library upgrade, and more. There are problems to solve there.
-
 
 Every day it gets harder to argue it's impossible to brute force the step-functions
 between toy and product with just scale and the right dataset.
@@ -354,7 +346,7 @@ the models can use that data effectively as long as they can get it.
 
 All the scaling laws have followed power laws so far, including dataset size. Getting
 more data by hand doesn't seem good enough to cross to the next thresholds. We need better
-means.
+means to get good data.
 
 A long time ago, when OpenAI still did RL in games / simulation, they were very into [self-play](https://openai.com/research/competitive-self-play). You run agents against copies of themselves, score
 their interactions, and update the models towards interactions with higher reward.
@@ -363,40 +355,48 @@ At the time, I remember Ilya said they cared because self-play was a method to t
 data. You run your model, get data from your model's interactions with the environment, funnel it back in, and get an exponential
 improvement in your Elo curves. What was quickly clear was that this was true,
 but only in the narrow regime where self-play was possible. In practice that usually meant
-game-like environments, with at most a few hundred different entities, a ground truth reward function
-that was not too easy or hard, and easy ability to reset and run faster than real time. Without
-all those qualities, self-play sputtered and died with nothing to show for it besides
+game-like environments with at most a few hundred different entities, plus a ground truth reward function
+that was not too easy or hard, and an easy ability to reset and run faster than real time.
+Without all those qualities, self-play sputtered and died with nothing to show for it besides
 warmer GPUs.
 
-I think it's possible we're at the start of a world where self-play or self-play-like ideas work on any text generation task. Drawing an analogy, the
+I think it's possible we're at the start of a world where self-play or self-play-like ideas work to improve
+LLM capabilities.
+Drawing an analogy, the
 environment is the dialogue, actions are text generated from an LLM, and the reward is from whatever
 reward model you have. Instead of using ground truth data, our models may be at a point
 where they can generated synthetic data that's good enough to train on.
 
-There's a lot of interest in ideas along this vein.
+There are papers exploring this already, usually under the umbrella term "synthetic data".
 One of the early results around GPT-4 by [Pan, Chan, Zou et al](https://arxiv.org/abs/2304.03279)
 was that GPT-4's label accuracy was competitive with human crowdworkers.
 Diffusion based
 image augmentation has been shown to improve [robot learning](https://diffusion-rosie.github.io/),
 and Anthropic has based a lot of its branding on [constitutional AI](https://www.anthropic.com/index/constitutional-ai-harmlessness-from-ai-feedback) and "RL from AI feedback".
-NeurIPS had [a workshop](https://openreview.net/group?id=NeurIPS.cc/2023/Workshop/SyntheticData4ML#tab-accept-poster) on it too.
+NeurIPS had [a workshop](https://openreview.net/group?id=NeurIPS.cc/2023/Workshop/SyntheticData4ML#tab-accept-poster) on synthetic
+data as well. Other papers more directly use self-play terminology - see [Improving Language Model
+Negotiation](https://arxiv.org/abs/2305.10142) from Fu et al and [Self-Play Fine-Tuning](https://arxiv.org/abs/2401.01335)
+from Chen et al.
+
+Language models in 2024 remind me of image classification in 2016, where people turned to GANs to augment
+their datasets.
+[One of my first papers](https://sites.google.com/view/graspgan) was on the subject, and
+we showed it worked in low-data regimes. "Every image on the Internet" is now arguably a low-data regime,
+which is a bit crazy to think about.
 
 If the models don't eat their own tail, the end result is a world where data becomes
 increasingly untethered from human effort, and progress just fully turns into how
 many FLOPs you can shovel into the system.
-A world where direct human feedback is only used to bootstrap reward models for new use
-cases or sanity check data generated for existing ones.
-Everything else is model-generated and model-supervised.
-Model-generated data, model-based rewards, feeding back into itself.
 Even if it the accuracy of synthetic labels is worse, it's often cheaper.
+I expect these ideas to work, although I'm uncertain on the time scale, and the result
+will be a world where direct human feedback is only used to bootstrap reward models for new use
+cases or sanity check data generated for existing ones.
+Everything else will be model-generated and model-supervised, feeding back into itself, with
+increasingly indirect human supervision.
 
-Back in 2016, people tried using GANs to generate data for image classification,
-and showed it worked if you were in a low-data regime. [One of my first accepted papers](https://sites.google.com/view/graspgan) was on the subject. If "every image on the Internet" is now
-a "low-data" regime, that doesn't mean people give up. It means they'll try to find a way.
-
-Language models are a [blurry JPEG of the Internet](https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web) now, but that is because we believed LLM text was bad
-for training, so giving them the Internet was the best we could do.
-What happens if that changes, and LLMs become blurry JPEGs of something clearer than we can imagine?
+Language models are a [blurry JPEG of the Internet](https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web), but that is because
+current LLM text is bad for training. Blurrifying the Internet was the best we could do.
+What happens if that changes, and LLMs become blurry JPEGs of something clearer than the Internet?
 
 
 Search and Q\*
@@ -418,7 +418,12 @@ via MCTS, and turned it into AlphaGo within a year. It was the ML success story 
 People do not forget the lessons from machine learning's crowning achievements.
 
 Search methods are usually very computationally inefficient, and I don't know if our base models
-are good enough to use as search subroutines. But one benefit of search is that it really
+are good enough to use as search subroutines. Taking [MuZero](https://arxiv.org/pdf/1911.08265.pdf) as a data point,
+
+> For each board game, we used 16 TPUs for training and 1000 TPUs for selfplay.
+
+This is about a 100x increase in compute hardware. Still,
+one benefit of search is that it really
 ought to work. It is one of the most reliable ideas in machine learning. The reason we
 use search less now is because we've come up with better ideas for how to use compute. Search
 will always be there to eat marginal FLOPs if we run out of better ideas.
@@ -439,38 +444,71 @@ diminishing marginal returns.
 Still, let me know when you *see* the scaling laws hit a wall, instead of talking about why they ought to stop. So far, I don't think they have.
 
 
-The Bull and the Bears
--------------------------------------------------------------------------------
+On Hype
+--------------------------------------------------------------------------------
+
+In 2016, a few prominent ML researchers decided to pull a prank. They set up a site for
+"Rocket AI", based on some mysterious method called "Temporally Recurrent Optimal Learning",
+then all coordinated stories about a wild launch party at NeurIPS 2016 that ended with policy
+involvement. It was all fake, as [detailed in this postmortem](https://medium.com/the-mission/rocket-ai-2016s-most-notorious-ai-launch-and-the-problem-with-ai-hype-d7908013f8c9).
+There's a fun quote near the end:
+
+> AI is at peak hype, and everyone in the community knows it.
+
+Here's the Google search trends for "AI" since 2016, scaled out of 100.
+Let's see how peak 2016 hype compares to now.
+
+![AI chart](/public/ai-timelines-2023/aisearchtrend.png)
+{: .centered }
+
+Oh, what naive children we were! I do think it's funny that AI is one of only a few research topics
+where people try to play down hype for the sake of the conversational commons. Imagine feeling like
+you need to push people away from being interested in your research. There's a real privilege there.
+
+I have really really tried to avoid getting caught up in hype, but I do think AGI could be soon.
+The routes for improvement are clear, it's just a question of if they can't work or if they can work
+assuming billions of dollars of funding.
+In AI, models can **never** do everything people claim they can, but what the models **can** do is ever-growing
+and never slides backward. Today is the worst AI will ever be. Even if all the VC companies bust and LLMs
+dry up, we'll still have the models that are already trained and the ideas already derived. There is no going back.
+I'd recommend people think about what that means.
+
+> Everything has been changing since last generation was born  
+> And they won't try to take in change is a two edged sword
+
+(ADD ACKNOWLEDGEMENTS HERE)
+
+
+Appendix - The Bull and the Bears
+-----------------------------------------------------------------------------------------
 
 When getting feedback on early drafts of this post, the main lesson I learned is that
 for AGI, there is one bull and many bears.
 The bull is to say that we can fix the problems with scaling and doing so will fix the rest. The
 bears are to declare X, Y, or Z as either fundamental blockers or reasons progress will slow down.
-This makes it tricky to write a post about AGI timelines, because everyone's bear is
-different.
 
 ![Bears](/public/ai-timelines-2023/bears.webp)
 {: .centered }
 
-(Or one. I think it's totally fine to be bearish on AGI.)
-{: .centered }
+I ignored these bears in the main text because I felt it disrupted the flow of the argument,
+but I do want to acknowledge and reply to the bearish counterarguments I've come across. If
+I don't mention your bear, I apologize.
 
-I feel obligated to address as many bears as possible, but I also don't want this
-post to become super long. So I'll try to be quick. If I don't mention your bear,
-I apologize.
-
-## Data Poisoning Bear
-
-> Generative AI is creating spam, polluting its own data well, and will eventually choke its own growth.
+## Data Provenance Bear
 
 This
-[article from Scientific American](https://www.scientificamerican.com/article/ai-generated-data-can-poison-future-ai-models/) asks whether generative AI is making itself harder to train. For
+[article from Scientific American](https://www.scientificamerican.com/article/ai-generated-data-can-poison-future-ai-models/) asks whether generative AI is making itself harder to train,
+by polluting the Internet with junk LLM text.
+For
 a more malicious angle, some papers have explored whether you can poison
 datasets by deliberate data injection - see [Carlini et al, 2023](https://arxiv.org/abs/2302.10149).
 
-Right now, I think this is important to be aware of, but will get worked around in the short
-term. The entire "AI self-play" thesis assumes that we have reward models that can
-separate "good" data from "bad" data. So far I don't have reasons to believe that's impossible.
+As I've argued earlier, I think this is very important in the short term, but will be worked around
+and becomes less important later.
+The entire "AI self-play" thesis assumes that we will cross a tipping point where LLM text
+(filtered in some way) is good enough to train with.
+
+One thing this does impact is our ability to evaluate models.
 
 
 ## Overhangs Bear
@@ -501,6 +539,26 @@ point lies in better computers rather than better neural nets. I have a friend w
 an ML compute startup, and he used to ask me "what would you do with 1000x more
 FLOPs and 1000x more memory?" He stopped asking me this question after GPT-3, I think he
 knew my answer by then.
+
+
+## The "Scaling is a Research Problem" Bear
+
+A friend reminded me that for every LLaMa, there's a [Meta OPT](https://ai.meta.com/blog/democratizing-access-to-large-scale-language-models-with-opt-175b/) that doesn't live up to expectations.
+If you're bored one day, the team behind OPT released a [very detailed logbook](https://github.com/facebookresearch/metaseq/tree/main/projects/OPT/chronicles) of the issues
+they ran into. It features gradient overflows during Thanksgiving, mysterious activation norm
+spikes that traced to an accidental library upgrade, and more.
+
+Scaling isn't exactly a "numbers go up, use more hardware, oops we have state-of-the-art" game.
+It requires not just ML expertise, but a more specific expertise that (I assume) is learned
+mostly by experience rather than reading papers.
+
+So, one theory you could have is that figuring out how to scale ML model training becomes
+a research problem of its own, that is not solved by scale, and eventually we get some
+claim like "solving scaling is AGI complete".
+
+I don't find this theory particularly likely, given the history of scaling compute so far,
+and scaling of other big projects like the Apollo program (support bigger rockets) and Manhattan
+Project (get more enriched uranium). But I don't have any argument against it past that.
 
 
 ## The Agentic Bear
@@ -573,40 +631,3 @@ will eventually attain the notion of understanding they are an agent in the worl
 trained and deployed a certain way. They're concerned because it could promote deceptive
 behavior, or hiding bad behavior at evalution time like the
 [Volkswagen emissions scandal](https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal).
-
-
-
-On Hype
---------------------------------------------------------------------------------
-
-In 2016, a few prominent ML researchers decided to pull a prank. They set up a site for
-"Rocket AI", based on some mysterious method called "Temporally Recurrent Optimal Learning",
-then all coordinated stories about a wild launch party at NeurIPS 2016 that ended with policy
-involvement. It was all fake, as [detailed in this postmortem](https://medium.com/the-mission/rocket-ai-2016s-most-notorious-ai-launch-and-the-problem-with-ai-hype-d7908013f8c9).
-There's a fun quote near the end:
-
-> AI is at peak hype, and everyone in the community knows it.
-
-Here's the Google search trends for "artificial intelligence" and "AI" since 2016. Both are scaled
-out of 100, with 100 matching peak search interest. Let's see how peak 2016 hype compares to now.
-
-![Artificial intelligence chart](/public/ai-timelines-2023/artificialsearchtrend.png)
-{: .centered }
-
-![AI chart](/public/ai-timelines-2023/aisearchtrend.png)
-{: .centered }
-
-Oh, what naive children we were! I do think it's funny that AI is one of only a few research topics
-where people try to play down hype for the sake of the conversational commons. Imagine feeling like
-you need to push people away from being interested in your research. There's a real privilege there.
-
-I have really really tried to avoid getting caught up in hype, but I do think AGI could be soon.
-The routes for improvement are clear, it's just a question of if they can't work or if they can work
-assuming billions of dollars of funding.
-In AI, models can **never** do everything people claim they can, but what the models **can** do is ever-growing
-and never slides backward. Today is the worst AI will ever be. Even if all the VC companies bust and LLMs
-dry up, we'll still have the models that are already trained and the ideas already derived. There is no going back.
-I'd recommend people think about what that means.
-
-> Everything has been changing since last generation was born  
-> And they won't try to take in change is a two edged sword
