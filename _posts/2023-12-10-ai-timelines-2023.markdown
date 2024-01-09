@@ -484,8 +484,10 @@ Appendix - The Bull and the Bears
 
 When getting feedback on early drafts of this post, the main lesson I learned is that
 for AGI, there is one bull and many bears.
-The bull is to say that we can fix the problems with scaling and doing so will fix the rest. The
-bears are to declare X, Y, or Z as either fundamental blockers or reasons progress will slow down.
+The bull is to say that we can figure out how to scale models, and scaled up models will
+solve all the other hard problems. The
+bears are to declare X, Y, or Z as reasons progress will slow down or stop. And everyone has
+a different bear.
 
 ![Bears](/public/ai-timelines-2023/bears.webp)
 {: .centered }
@@ -508,12 +510,15 @@ and becomes less important later.
 The entire "AI self-play" thesis assumes that we will cross a tipping point where LLM text
 (filtered in some way) is good enough to train with.
 
-One thing this does impact is our ability to evaluate models.
+One thing this does impact is our ability to evaluate models. I feel like every surprising
+LLM result gets accused of test set leakage these days, because it has happened before and is
+increasingly hard to verify it isn't happening. That does drag on research, especially as running evals
+at all becomes expensive. But, coming from robot learning I am quite biased
+to think that will be annoying rather than existential. In robot learning "our benchmarks are both
+expensive and bad" has been true for a long time.
 
 
 ## Overhangs Bear
-
-> We've caught up on all the big overhangs and the rate of progress will slow down.
 
 For people unfamiliar with the term as it's used in AGI discussion, an overhang is when
 the ideas to create really good AI exists, but people don't know it works yet.
@@ -522,26 +527,31 @@ and the best models we actually have. Once people believe in the ideas, you see 
 increase in capabilities as researcher quickly assemble the right ideas together and fill
 in the overhang.
 
-I think this view of the world is correct in describing how technology evolves, but doesn't
+The implication is that progress relative to compute will be faster than it "should be" *while* the overhangs are filled.
+Extrapolating that progress would overestimate future progress.
+
+I think this view of the world is correct in describing how technology evolves and I'd agree
+that there are fewer overhangs in 2024 compared to 2020.
+Where it breaks down for me is that this view doesn't
 give great guidance on when the next overhang will appear.
 "There are important combinations of ideas people have not put together yet" is just
-what day-to-day work is in research. Progress tends to look like a series of sigmoid
-curves, where every so often you go through an inflection point. Making a projection based on
-what the curve looks like at the inflection point is wrong, but making a projection based on
-the flatter region after the inflection point is wrong too.
+what day-to-day work is in research. To me, "overhangs exists" sounds the same as
+"progress is a series of sigmoid curves", where every so often you go through an inflection point.
+Making a projection during the inflection point is wrong, but so is doing so after the
+inflection point. The important question is how often the field reaches new inflection points.
 
-![Sigmoid curve](/public/mh-2023/sigmoid.png)
+![Sigmoid curve](/public/ai-timelines-2023/sigmoid.png)
 {: .centered }
 
-As I mentioned earlier, I'm not sure how good scaled up transformers can get, but
-we're not done with trying to scale them up, and it's possible the next big inflection
+I'm not sure how good scaled up transformers can get, but
+we're not done with trying to scale them up. It's possible the next big inflection
 point lies in better computers rather than better neural nets. I have a friend who runs
-an ML compute startup, and he used to ask me "what would you do with 1000x more
-FLOPs and 1000x more memory?" He stopped asking me this question after GPT-3, I think he
+an ML computing startup, and he used to ask me "what would you do if you magically had 1000x more
+FLOPs and 1000x more memory?" He stopped asking me this question after GPT-3. I think he
 knew my answer by then.
 
 
-## The "Scaling is a Research Problem" Bear
+## The "Scaling is Hard" Bear
 
 A friend reminded me that for every LLaMa, there's a [Meta OPT](https://ai.meta.com/blog/democratizing-access-to-large-scale-language-models-with-opt-175b/) that doesn't live up to expectations.
 If you're bored one day, the team behind OPT released a [very detailed logbook](https://github.com/facebookresearch/metaseq/tree/main/projects/OPT/chronicles) of the issues
@@ -561,27 +571,6 @@ and scaling of other big projects like the Apollo program (support bigger rocket
 Project (get more enriched uranium). But I don't have any argument against it past that.
 
 
-## The Agentic Bear
-
-> LLMs are not agentic enough to qualify as proto-AGI. Scaling them up won't lead
-> to an AGI agent.
-
-There's, just, a ton of people working on trying to turn LLMs into agents.
-I was [working on it myself in 2023](https://auto-rt.github.io/)! My verdict so far
-is that it's still a research prototype, but there's something there.
-
-Earlier in this post, I said:
-
-> It turned out that next token prediction was enough to *pretend* to follow intent,
-> if you finetuned on enough "instruction: example" data, and pretending to follow intent is
-> close enough to actually following intent.
-
-(Ugh you know the post is getting too long when you feel like it needs to quote itself.)
-
-After seeing instruction finetuning work, I'm hesitant to say that agentic behavior cannot
-emerge at scale with the right training dataset.
-
-
 ## The Physically Embodied Bear
 
 One of the classic questions in ML is whether intelligence is bottlenecked on physical
@@ -595,39 +584,28 @@ embodiment.
 (2020 post)
 {: .centered }
 
-Humans grow up and learn from a huge host of stimuli and sensors. Models are doing
-it differently. Large ML models do not have to learn the same ways humans do - but
-is it possible to learn tasks that require real-world actions if you are not embodied
-in the world where those actions will occur? The the
+Humans grow up and learn from a huge host of stimuli and sensors. Models learn
+differently. Large ML models do not have to learn the same ways humans do, but
+the argument goes like this:
 
-Or, using fewer fancy words: let's say you've never played tennis. If you read and
-watch everything there is to know about tennis, then put your mind into the body
-of Roger Federer, would you play tennis as well as Roger Federer?
+1. Our AGI definition is
 
-This is the kind of thought experiment that is basically disprovable, making it a wonderful
-topic if you want to say a lot of words about stuff. In robot learning, it's common to say
-"no of course not". Conference of Robot Learning 2022 was held in Auckland, and while there
-I had a chat with a professor who worked in ML, but didn't do any robotics. He was visiting
-just because he worked nearby and thought it'd be interesting. We got on the topic
-of embodiment, and he said "robotics researchers have a religion of embodiment", which I
-quickly agreed was true.
+> An AI system that matches or exceeds humans at almost all (95%+)
+> economically valuable work.
 
-This has always left me a bit of an odd duck in robotics, because I'm not a member of the
-Church of Embodiment.
-I'm not as far as the "embodiment is a waste of time" crowd. It's very obvious to me
-that embodied data is special. It's inherently agentic, but also places a lot of focus
-on physical reasoning. It's not obvious to me that embodied data is the only way to get
-the capabilitie
+2. 95%+ will include taking physical, real-world actions. (Quick estimates I've
+found say manufacturing is 10% to 30% of jobs, depending on country.)
+3. Right now, the majority of data feeding models is not embodied. If we assume scale
+is the answer, lack of embodied data will make it hard to scale.
 
-It's very *not-obvious* to me that embodiment data is the only way for a model
-is the only route
-towards understanding how to take actions in the real world.
-(But see [alternative views hera](https://keerthanapg.com/tech/embodiment-agi/).)
+Right now, I don't think intelligence is bottlenecked on having data from physical stimuli,
+but performing well at real tasks likely is.
 
-The analogy is that
-
-AI safety people I know are often concerned about whether larger and larger transformers
-will eventually attain the notion of understanding they are an agent in the world, that is
-trained and deployed a certain way. They're concerned because it could promote deceptive
-behavior, or hiding bad behavior at evalution time like the
-[Volkswagen emissions scandal](https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal).
+There are recent efforts on improving availability of real robotics data, like [Open X-Embodiment](https://robotics-transformer-x.github.io/),
+and I don't see a reason you can't use models to generate your way out of the limited
+embodied data that exists right now. People are exploring this right now - see Universal
+Policies from [Du and Yang et al, 2023](https://universal-policy.github.io/unipi/).
+One of the big reasons I thought [AutoRT](https://auto-rt.github.io/) was important
+to work on was to explore what embodied foundation models looked like and push towards
+more embodied data - because I would much rather have a dumb physical assistant than
+a superintelligent software assistant. I find the latter more worrying than the former.
