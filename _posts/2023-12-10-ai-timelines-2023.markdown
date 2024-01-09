@@ -136,7 +136,8 @@ As far as I know, the dedicated transfer learning techniques like [PCGrad](https
 only unused, they don't get much further research either.
 
 Suffice it to say that unsupervised and self-supervised methods have continued to shine as
-the dark matter powering every large language and multimodal model. They still appear to
+the dark matter powering every large language and multimodal model.
+They still appear to
 be the best methods for vacuuming up compute and data. Throw everything in the hole
 and the hole will provide.
 
@@ -149,9 +150,13 @@ and the hole will provide.
 (2020 post)
 {: .centered }
 
+I don't think there are sufficient advances at the algorithms level of unsupervised learning
+to affect my timelines. It feels compute driven to me.
+
+What about other learning algorithms?
 There is still a role for supervised learning and reinforcement learning, but they certainly
-have less hype behind them. I remember when deep reinforcement learning was at peak
-hype, people accused it of being horribly inefficient. Which it was! The reply I'd always give
+have less hype behind them. When deep reinforcement learning was at peak
+hype, I remember people accused it of being horribly inefficient. Which it was! The reply I'd always give
 was that deep RL from scratch was insane, but it was a useful way to benchmark RL methods.
 The long run would eventually look like doing RL on top of a model trained via
 other means.
@@ -169,13 +174,15 @@ came slightly true.
 
 I still think
 better generic RL algorithms are out there, and they would make RLHF better, but it's harder to justify searching for them when you
-could spend the marginal compute on extra pretraining or supervised fine-tuning instead. Robot
+could spend the marginal compute on extra pretraining or supervised fine-tuning instead. It's what
+you turn to after you've done both of the former.
+Robot
 learning in particular has drifted towards imitation learning because it's easier to work with
 and uses compute more effectively.
 At least
 in my research bubble, the field is drifting from generic RL methods to ones that exploit
 the structure of preference data, like [DPO](https://arxiv.org/abs/2305.18290) and its siblings.
-Still, I feel obligated to plug [Q-Transformer](https://qtransformer.github.io/), a generic RL + Transformers paper I worked on this year.
+Still, I feel obligated to plug [Q-Transformer](https://qtransformer.github.io/), a generic RL + Transformers paper I worked on in 2023.
 
 
 Better Tooling
@@ -204,14 +211,16 @@ ML project.
 
 If I had to pick something I missed,
 it would be the rise of "research via API calls". API owners have a wider audience of
-hobbyists, developers, and researchers, which justifies focusing more on user experience.
+hobbyists, developers, and researchers, giving more economic justification to improve user experience.
 I also liked [Pete Warden's](https://petewarden.com/2023/10/15/the-unstoppable-rise-of-disposable-ml-frameworks/)
-take, that people are increasingly interested in "the codebase that's already integrated
-LLaMa or Whisper", since they don't need everything a generic ML framework provides.
+take, that people are now more interested in "the codebase that's already integrated
+LLaMa or Whisper" over generic ML frameworks.
 
-Overall I'd say tools are progressing as expected and don't impact my timeline opinions.
+Overall I'd say tools are progressing as expected.
 I may have been surprised *when* LLM assistants appeared, but I always expected something
 like them to arrive.
+However, I missed that the pool of people providing research ideas grows as AI becomes more
+popular and accessible, which is reason to assume timelines are faster than I thought.
 
 
 Scaling Laws
@@ -244,10 +253,11 @@ Rise of the Product Cycle
 ------------------------------------------------------------------------------
 
 As part of the 2020 post, I did an exercise I called "trying hard to say no". I decided to start from
-the base assumption that short-term AGI was possible, put forward my best guess as to
-how we'd end up in that world, then see how plausible I found that story to be.
+the base assumption that short-term AGI was possible, describe my best guess as to
+how we ended up in that world, then see how plausible I found that story after writing it.
 The reason to do this is because if you want to be correct that AGI is far away,
-you have to refute the strongest argument in favor of short-term AGI - so you should at least be able to refute the strongest argument you come up with yourself.
+you have to refute the strongest argument in favor of short-term AGI. So, you should at least be able to
+refute the strongest argument you come up with yourself.
 
 At the time, I described a hypothetical future where not many ideas would be needed,
 aside from scale. I assumed someone developed an AI-powered app that's useful enough for
@@ -320,13 +330,13 @@ to see what's changed.
 Once again, we'd assume progress comes primarily from larger compute budgets and scale.
 Maybe it's not transformers, maybe one of the
 "transformer replacements" that claims to be more efficient will finally win. (I know some people are excited about [Mamba and other state-space models](https://arxiv.org/abs/2312.00752).)
-Increasing parameter count is very easy if you
+Increasing parameter count in code is easy if you
 have the compute and data to exploit it, so let's assume the bottlenecks are on compute
 and data. We can take "ML powers products powers funding powers ML" as a given. That's just
 what's happening. The question is whether something will make scaling fail.
 
 I don't really know enough about hardware to discuss it in any detail, so let's just assume
-it'll continue to grow. Chips have gotten more expensive, given that everyone is keeping their eyes on it,
+it'll continue to grow. Computer chips have gotten more expensive, given that everyone is keeping their eyes on them,
 including nation states. Still, computers are useful, ML models are useful, and even if
 models fail to scale, people will want to fit GPT-4 sized models on their phone.
 It seems reasonable to assume the competing factions will figure something out. The silicon must flow, after all.
@@ -335,7 +345,7 @@ Data seems like the harder question. (Or at least the one I feel qualified talki
 We have already crossed the event horizon of trying to train on everything on the Internet.
 It's increasingly difficult for labs to differentiate themselves on publicly available data.
 Differentiation is instead coming from non-public high-quality data to augment public
-low quality data.
+low-quality data.
 The rumor is that GPT-4 is good at coding in part because
 OpenAI spent a lot of time, effort, and money on acquiring good coding data. Adobe
 [put out an ad asking for "500 to 1000 photos of bananas in real life situations"](https://petapixel.com/2023/10/04/adobe-wants-1000-photos-of-bananas-to-help-train-its-ai-image-generator/)
@@ -365,7 +375,7 @@ LLM capabilities.
 Drawing an analogy, the
 environment is the dialogue, actions are text generated from an LLM, and the reward is from whatever
 reward model you have. Instead of using ground truth data, our models may be at a point
-where they can generate synthetic data that's good enough to train on.
+where they can generate data that's good enough to train on.
 
 There are papers exploring this already, usually under the umbrella term "synthetic data".
 One of the early results around GPT-4 by [Pan, Chan, Zou et al](https://arxiv.org/abs/2304.03279)
@@ -380,7 +390,7 @@ from Chen et al.
 
 Language models in 2024 remind me of image classification in 2016, where people turned to GANs to augment
 their datasets.
-[One of my first papers](https://sites.google.com/view/graspgan) was on the subject, and
+One of my first papers, [GraspGAN](https://sites.google.com/view/graspgan), was on the subject, and
 we showed it worked in low-data regimes. "Every image on the Internet" is now arguably a low-data regime,
 which is a bit crazy to think about.
 
@@ -448,9 +458,10 @@ On Hype
 --------------------------------------------------------------------------------
 
 In 2016, a few prominent ML researchers decided to pull a prank. They set up a site for
-"Rocket AI", based on some mysterious method called "Temporally Recurrent Optimal Learning",
-then all coordinated stories about a wild launch party at NeurIPS 2016 that ended with policy
-involvement. It was all fake, as [detailed in this postmortem](https://medium.com/the-mission/rocket-ai-2016s-most-notorious-ai-launch-and-the-problem-with-ai-hype-d7908013f8c9).
+"Rocket AI", based on some mysterious method called "Temporally Recurrent Optimal Learning" (TROL),
+then all coordinated stories about a wild launch party at NeurIPS 2016 that got shut down by the
+police.
+It was all fake, as [detailed in this postmortem](https://medium.com/the-mission/rocket-ai-2016s-most-notorious-ai-launch-and-the-problem-with-ai-hype-d7908013f8c9).
 There's a fun quote near the end:
 
 > AI is at peak hype, and everyone in the community knows it.
@@ -463,11 +474,15 @@ Let's see how peak 2016 hype compares to now.
 
 Oh, what naive children we were! I do think it's funny that AI is one of only a few research topics
 where people try to play down hype for the sake of the conversational commons. Imagine feeling like
-you need to push people away from being interested in your research. There's a real privilege there.
+you need to discourage people from being interested in your research. There's a real privilege there.
 
-I have really really tried to avoid getting caught up in hype, but I do think AGI could be soon.
-The routes for improvement are clear, it's just a question of if they can't work or if they can work
-assuming billions of dollars of funding.
+I have really really tried to avoid getting caught up in hype. I don't like AI Twitter for reasons
+[I've explained here](http://localhost:4000/2022/07/14/twitter.html), but I *especially* do not AI twitter
+post-ChatGPT. So I want it clear that when I say I think AGI could be soon, I am not doing it for
+street cred, or to fit in. It is something that feels genuinely possible.
+The routes for improvement are clear, it's just a question of if they will fail assuming billions of dollars
+of funding.
+
 In AI, models can **never** do everything people claim they can, but what the models **can** do is ever-growing
 and never slides backward. Today is the worst AI will ever be. Even if all the VC companies bust and LLMs
 dry up, we'll still have the models that are already trained and the ideas already derived. There is no going back.
@@ -608,4 +623,5 @@ Policies from [Du and Yang et al, 2023](https://universal-policy.github.io/unipi
 One of the big reasons I thought [AutoRT](https://auto-rt.github.io/) was important
 to work on was to explore what embodied foundation models looked like and push towards
 more embodied data - because I would much rather have a dumb physical assistant than
-a superintelligent software assistant. I find the latter more worrying than the former.
+a superintelligent software assistant. The latter would certainly be helpful, but I find it
+more concerning than the former.
