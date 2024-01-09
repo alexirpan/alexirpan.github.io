@@ -491,7 +491,14 @@ I'd recommend people think about what that means.
 > Everything has been changing since last generation was born  
 > And they won't try to take in change is a two edged sword
 
-(ADD ACKNOWLEDGEMENTS HERE)
+*Thanks to all the people who gave feedback on earlier drafts, including:
+Diogo Almeida,
+(Kitt Hirasaki),
+Vibhor Kumar,
+(Chris Lengerich),
+Matthew P. McAteer,
+Patrick Xia,
+and Hugh Zhang.*
 
 
 Appendix - The Bull and the Bears
