@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My AI Timelines Have Sped Up (Again)"
-date:   2023-12-29 15:08:00 -0700
+date:   2024-01-11 00:47:00 -0400
 ---
 
 In August 2020, I wrote a post about [my AI timelines]({% post_url 2020-08-18-ai-timelines %}).
