@@ -137,8 +137,7 @@ only unused, they don't get much further research either.
 
 Suffice it to say that unsupervised and self-supervised methods have continued to shine as
 the dark matter powering every large language and multimodal model.
-They still appear to
-be the best methods for vacuuming up compute and data. Throw everything in the hole
+They're still the best methods for vacuuming up compute and data. Throw everything in the hole
 and the hole will provide.
 
 > If you've got proof that a large Transformer can handle audio, image, and
@@ -210,7 +209,7 @@ wouldn't be as much of a thing if it weren't relevant to like, literally every m
 ML project.
 
 If I had to pick something I missed,
-it would be the rise of "research via API calls". API owners have a wider audience of
+it would be the rise of research via API calls. API owners have a wider audience of
 hobbyists, developers, and researchers, giving more economic justification to improve user experience.
 I also liked [Pete Warden's](https://petewarden.com/2023/10/15/the-unstoppable-rise-of-disposable-ml-frameworks/)
 take, that people are now more interested in "the codebase that's already integrated
@@ -220,7 +219,7 @@ Overall I'd say tools are progressing as expected.
 I may have been surprised *when* LLM assistants appeared, but I always expected something
 like them to arrive.
 However, I missed that the pool of people providing research ideas grows as AI becomes more
-popular and accessible, which is reason to assume timelines are faster than I thought.
+popular and accessible, which should account for some speedup.
 
 
 Scaling Laws
@@ -266,6 +265,9 @@ the average person.
 > Perhaps someone develops an app or tool, using a model of GPT-3's size or
 > larger, that's a huge productivity multiplier. Imagine the first computers,
 > Lotus Notes, or Microsoft Excel taking over the business world.
+
+(2020 post)
+{: .centered }
 
 This hypothetical app would bring enough revenue to fund its own improvement.
 
@@ -391,7 +393,7 @@ from Chen et al.
 Language models in 2024 remind me of image classification in 2016, where people turned to GANs to augment
 their datasets.
 One of my first papers, [GraspGAN](https://sites.google.com/view/graspgan), was on the subject, and
-we showed it worked in low-data regimes. "Every image on the Internet" is now arguably a low-data regime,
+we showed it worked in the low-data regime of robotics. "Every image on the Internet" is now arguably a low-data regime,
 which is a bit crazy to think about.
 
 If the models don't eat their own tail, the end result is a world where data becomes
@@ -415,9 +417,8 @@ Search and Q\*
 I don't have too much to say about search, but I should mention it briefly.
 
 During the Sam Altman drama, [Reuters reported](https://www.reuters.com/technology/sam-altmans-ouster-openai-was-precipitated-by-letter-board-about-ai-breakthrough-2023-11-22/)
-a method called "Q\*", creating a lot of speculation. In the circles I was in, the
-assumption was that it was some Q-learning driven search process, since it was named
-similarly to [A\* search](https://en.wikipedia.org/wiki/A*_search_algorithmhttps://en.wikipedia.org/wiki/A*_search_algorithm).
+a method called Q\*, creating a lot of speculation. In the circles I was in, the
+assumption was that it was some Q-learning driven search process.
 Eventually Yann LeCun put out a post saying people really needed to cool down, since
 literally every lab has
 looked into combining search with LLMs, and it would not be that surprising if someone made it work.
@@ -450,7 +451,6 @@ I'm finding it increasingly hard to refute that view of the world.
 This theory of the world does rely heavily on model-generated data panning out.
 It's possible that theory doesn't play out. Or, that it leads to some gains, but runs into
 diminishing marginal returns.
-
 Still, let me know when you *see* the scaling laws hit a wall, instead of talking about why they ought to stop. So far, I don't think they have.
 
 
@@ -493,9 +493,8 @@ I'd recommend people think about what that means.
 
 *Thanks to all the people who gave feedback on earlier drafts, including:
 Diogo Almeida,
-(Kitt Hirasaki),
 Vibhor Kumar,
-(Chris Lengerich),
+Chris Lengerich,
 Matthew P. McAteer,
 Patrick Xia,
 and Hugh Zhang.*
@@ -518,7 +517,7 @@ I ignored these bears in the main text because I felt it disrupted the flow of t
 but I do want to acknowledge and reply to the bearish counterarguments I've come across. If
 I don't mention your bear, I apologize.
 
-## Data Provenance Bear
+## The Data Provenance Bear
 
 This
 [article from Scientific American](https://www.scientificamerican.com/article/ai-generated-data-can-poison-future-ai-models/) asks whether generative AI is making itself harder to train,
@@ -537,13 +536,13 @@ LLM result gets accused of test set leakage these days, because it has happened 
 increasingly hard to verify it isn't happening. That does drag on research, especially as running evals
 at all becomes expensive. But, coming from robot learning I am quite biased
 to think that will be annoying rather than existential. In robot learning "our benchmarks are both
-expensive and bad" has been true for a long time.
+expensive and bad" has been true ever since 2016. and we've still found ways to go forward.
 
 
-## Overhangs Bear
+## The Overhangs Bear
 
 For people unfamiliar with the term as it's used in AGI discussion, an overhang is when
-the ideas to create really good AI exists, but people don't know it works yet.
+the ideas to create really good AI exists, but people don't know it yet.
 There is an overhang between the best model creatable with present resources,
 and the best models we actually have. Once people believe in the ideas, you see a rapid
 increase in capabilities as researchers quickly assemble the right ideas together and fill
@@ -557,7 +556,7 @@ that there are fewer overhangs in 2024 compared to 2020.
 Where it breaks down for me is that this view doesn't
 give great guidance on when the next overhang will appear.
 "There are important combinations of ideas people have not put together yet" is just
-what day-to-day work is in research. To me, "overhangs exists" sounds the same as
+always true and part of why people do research. To me, "overhangs exists" sounds the same as
 "progress is a series of sigmoid curves", where every so often you go through an inflection point.
 Making a projection during the inflection point is wrong, but so is doing so after the
 inflection point. The important question is how often the field reaches new inflection points.
@@ -612,8 +611,8 @@ the argument goes like this:
 
 1. Our AGI definition is
 
-> An AI system that matches or exceeds humans at almost all (95%+)
-> economically valuable work.
+    > An AI system that matches or exceeds humans at almost all (95%+)
+    > economically valuable work.
 
 2. 95%+ will include taking physical, real-world actions. (Quick estimates I've
 found say manufacturing is 10% to 30% of jobs, depending on the country.)
@@ -623,12 +622,13 @@ is the answer, lack of embodied data will make it hard to scale.
 Right now, I don't think intelligence is bottlenecked on having data from physical stimuli,
 but performing well at real tasks likely is.
 
-There are recent efforts on improving availability of real robotics data, like [Open X-Embodiment](https://robotics-transformer-x.github.io/),
-and I don't see a reason you can't use models to generate your way out of the limited
+There are recent efforts on improving availability of embodied data in robot learning, like [Open X-Embodiment](https://robotics-transformer-x.github.io/), as well
+as prior datasets like [Something-Something](https://paperswithcode.com/dataset/something-something-v2) and [Ego4D](https://ego4d-data.org/).
+These might not be big enough, but I don't see a reason you can't use models to generate your way out of the limited
 embodied data that exists right now. People are exploring this right now - see Universal
 Policies from [Du and Yang et al, 2023](https://universal-policy.github.io/unipi/).
-One of the big reasons I thought [AutoRT](https://auto-rt.github.io/) was important
-to work on was to explore what embodied foundation models looked like and push towards
-more embodied data - because I would much rather have a dumb physical assistant than
+One of the big reasons I co-led [AutoRT](https://auto-rt.github.io/) was because I thought
+it was important to explore what embodied foundation models looked like and push towards
+getting more embodied data - because I would much rather have a dumb physical assistant than
 a superintelligent software assistant. The latter would certainly be helpful, but I find it
-more concerning than the former.
+more concerning.
