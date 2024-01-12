@@ -477,7 +477,8 @@ where people try to play down hype for the sake of the conversational commons. I
 you need to discourage people from being interested in your research. There's a real privilege there.
 
 I have really really tried to avoid getting caught up in hype. I don't like AI Twitter for reasons
-[I've explained here](http://localhost:4000/2022/07/14/twitter.html), but I *especially* do not AI twitter
+[I've explained here]({% post_url 2022-07-14-twitter %}),
+but I *especially* do not AI twitter
 post-ChatGPT. So I want it clear that when I say I think AGI could be soon, I am not doing it for
 street cred, or to fit in. It is something that feels genuinely possible.
 The routes for improvement are clear, it's just a question of if they will fail assuming billions of dollars
