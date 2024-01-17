@@ -1,0 +1,72 @@
+---
+layout: post
+title:  "MIT Mystery Hunt 2024"
+date:   2022-01-19 20:23:00 -0700
+---
+
+*This has spoilers for MIT Mystery Hunt 2024. Spoilers are not labeled. I will try to add puzzle
+links once there's a stable link to them.*
+
+I often wait a bit to write about Mystery Hunt, but this year I'm quite busy in January so I'm going
+to go before everything's fully static-fied.
+
+Pre-Hunt
+------------------------------------------
+
+This year, I decided to get to Boston much earlier than usual. This was in-part because the company
+I work for does limited vacation, which I'm bad at using. I needed to use some vacation to not
+lose out on more, and what better time than Mystery Hunt? This made my Hunt much more relaxed than usual, since I got a few days to adjust to East Coast time and was able to schedule visits to Level99 and Boxaroo before Hunt.
+We only went to Level99 because of [Dan Katz's post](https://puzzlvaria.wordpress.com/2023/09/12/challenge-frustration-and-balancing-user-expectations-level99-boda-borg-celeste-and-mao/)
+on the subject. Let it be known that we had fun, I would recommend it too, and that post is fun to read
+now that I know what some of the challenge rooms are. (My group also took a hint on Pirates Brig,
+and had the same "yes, really do what you think we want you to do" reaction. I have three stars
+because we figured out how to do it without much athleticism.)
+
+As for Boxaroo, we had two groups doing two rooms, running a friendly contest on who could complete the rooms faster. The Boxaroo organizers knew we were doing this, so they:
+
+* Invited mutual friends to spectate our attempts.
+* Told us we were "3 minutes slower" when we did the second room, instead of our actual time.
+
+When we compared notes afterwards, our total time for both rooms was within 20 seconds of the other group. I guess that's like not finding the coin by 10 minutes after the end of a long Mystery Hunt.
+
+We also got shown a backstage tour of the room, due to finishing early. Some non-spoilery notes are that the room we did has dynamic extra puzzles depending on if you solve intermediate steps fast enough, and the room has a "wedding proposal mode".
+
+Finally, we did Puzzled Pint, except, being silly people, we decided to make it more interesting by doing it "all brain". No writing implements allowed, and each puzzle must be solved serially before you
+can do the next one. With 8 people, this *seemed* doable, but then the first puzzle was a nonogram, prompting a "OH NO IT'S SO OVER". We didn't solve the nonogram, but we did solve the puzzle, and eventually the entire set. Here's the puzzle from "Animal Casino" if you're curious.
+
+IMAGE
+
+
+Big Picture Thoughts
+-----------------------------------------------------
+
+Hunt went long again this year, although this time it was more because of puzzle count
+than puzzle difficulty. If you were forced to pick a way Hunt runs long, I think most people would
+pick the "too many puzzles" side of Mystery Hunt 2024 over the "too hard puzzles" side of Mystery
+Hunt 2023.
+
+Still, my preferred Hunt ending time is Sunday morning. When our team captain was told that hunt was projected
+to end Sunday evening by TTBNL, I got concerned we wouldn't finish when no "coin has been found" email
+had come out by Sunday 10 PM. I came in planning to have a more relaxed hunt experience, and pulling an all-nighter
+on Sunday to try to push towards a finish dashed those plans. We didn't quite get there, with missing solves on
+the Sedona, AZ and Nashville, TN metas at the end.
+
+Running a Hunt with 237 puzzles is just...an insane number of puzzles. It's perfectly possible
+to write such a Hunt that finishes on Sunday, if the difficulty was lower per puzzle. A quick estimate: in 2022,
+Death & Mayhem was the first team to finish the Ministry, at [Friday 18:47 EST](https://puzzles.mit.edu/2022/stats/),
+or 5.5 hours from puzzle release. The Investigation and the Ministry is approximately 40 puzzles. A very naive
+linear extrapolation of (237 puzzles / 40 puzzles * 5.5 hours) gives a 33 hour finish time of Sunday 1 AM.
+This goes to show that if you targeted that difficulty level, you could write 237 puzzles and still end on Sunday
+assuming some overshooting on difficulty.
+
+In practice, the "fish" puzzles in Hole were a bit harder than I expected "fish" puzzles to be, and the killers
+in this Hunt were just as hard as killers in other Mystery Hunts I've done. I still had a ton of fun, the majority
+of puzzles I did were clean and had cool ideas, and the fraction of "meh" puzzles was no higher than previous
+years. There was just a lot of them.
+
+I really like that TTBNL did in-person interactions each Overworld meta, to the point that I think we
+should have done so in 2023 instead of assuming doing so would break our HQ staffing quota. And when TTBNL decided
+to give out free answers on each meta interaction, doing so with a "you need to use it now" caveat was a great way
+to avoid the "teams stockpile free answers" problem we ran into during 2023. Between the events giving 2 free answers
+instead of 1, and the gifted free answers, I believe we used around 15 free answers by the end of Hunt.
+This still created some anticlimax
