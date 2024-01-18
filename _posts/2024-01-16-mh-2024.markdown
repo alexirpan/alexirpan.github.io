@@ -41,15 +41,15 @@ Big Picture Thoughts
 -----------------------------------------------------
 
 Hunt went long again this year, although this time it was more because of puzzle count
-than puzzle difficulty. If you were forced to pick a way Hunt runs long, I think most people would
+than puzzle difficulty. If you were forced to pick how a Mystery Hunt runs long, I think most people would
 pick the "too many puzzles" side of Mystery Hunt 2024 over the "too hard puzzles" side of Mystery
 Hunt 2023.
 
-Still, my preferred Hunt ending time is Sunday morning. When our team captain was told that hunt was projected
-to end Sunday evening by TTBNL, I got concerned we wouldn't finish when no "coin has been found" email
-had come out by Sunday 10 PM. I came in planning to have a more relaxed hunt experience, and pulling an all-nighter
-on Sunday to try to push towards a finish dashed those plans. We didn't quite get there, with missing solves on
-the Sedona, AZ and Nashville, TN metas at the end.
+Still, my preferred Hunt ending time is Sunday morning. On Saturday, TTBNL told our team captain that hunt was
+projected to end Sunday evening, and while this was great for planning sleep, it did make me a bit worried we wouldn't
+finish. After no "coin has been found" email came by Sunday 10 PM, I was *extra* concerned.
+I ended up pulling almost an all-nighter on Sunday to try to push towards a finish, which we missed by two metas,
+Sedona, AZ and Nashville, TN.
 
 Running a Hunt with 237 puzzles is just...an insane number of puzzles. It's perfectly possible
 to write such a Hunt that finishes on Sunday, if the difficulty was lower per puzzle. A quick estimate: in 2022,
@@ -59,14 +59,130 @@ linear extrapolation of (237 puzzles / 40 puzzles * 5.5 hours) gives a 33 hour f
 This goes to show that if you targeted that difficulty level, you could write 237 puzzles and still end on Sunday
 assuming some overshooting on difficulty.
 
-In practice, the "fish" puzzles in Hole were a bit harder than I expected "fish" puzzles to be, and the killers
+The issue is that you are really creating a harder problem for yourself than you need to. TTBNL was a big enough
+team that I could see it working out, but in practice the difficulty trended up higher than the structure allowed.
+The "fish" puzzles in Hole were a bit harder than I expected "fish" puzzles to be, and the killers
 in this Hunt were just as hard as killers in other Mystery Hunts I've done. I still had a ton of fun, the majority
 of puzzles I did were clean and had cool ideas, and the fraction of "meh" puzzles was no higher than previous
 years. There was just a lot of them.
 
 I really like that TTBNL did in-person interactions each Overworld meta, to the point that I think we
-should have done so in 2023 instead of assuming doing so would break our HQ staffing quota. And when TTBNL decided
+should have done so in 2023 and found a way to handle the logistics hell it would create. And when TTBNL decided
 to give out free answers on each meta interaction, doing so with a "you need to use it now" caveat was a great way
 to avoid the "teams stockpile free answers" problem we ran into during 2023. Between the events giving 2 free answers
-instead of 1, and the gifted free answers, I believe we used around 15 free answers by the end of Hunt.
-This still created some anticlimax
+instead of 1, and the gifted free answers, I believe we used around 15 free answers by the end of Hunt. It still does
+not feel great to free answer your ways to metas, but it feels a little better when it's more gradual rather than
+the team nuking a round at the end.
+
+
+Thursday
+------------------------------------------------------------------
+
+I hunted with teammate again this year, because there is nothing quite like writing a Mystery Hunt to forge friends
+through fire.
+
+Instead of going straight to the team social, I stopped by the Mathcamp reunion, which I failed to go to last year
+due to writing Hunt. I was very amused to see one group playing [Snatch](https://boardgamegeek.com/boardgame/9556/snatch)
+and another group playing [Set](https://boardgamegeek.com/boardgame/1198/set), because these are *exactly* the
+two games supported by teammate's Discord bot. I got back to the team social in time to play a custom Only Connect
+game where I got flamed for losing a race to identify PINKIE PIE in a Missing Vowels round. I *knew the answer*.
+My reaction time is *bad*. Gimme some slack.
+
+
+Kickoff and Tech
+-----------------------------------------------------------------------------
+
+I enjoyed kickoff a lot. The flight safety health & safety video was excellent, and asking Mike Brown (author of
+["How I Killed Pluto and Why It Had It Coming"](https://web.gps.caltech.edu/~mbrown/howikilled.html)) was a nice
+touch. TTBNL has a number of Caltech people, so it makes sense they could do it, but it was still funny.
+
+As we walk towards our classrooms, I try to login to the hunt site from my phone, and manage to do so once but see
+a 500 error on a refresh. That's not a great sign. Once we get to our rooms, the 500 errors persist, and...now it is time for a tangent.
+
+<div class="shaded" markdown="1">
+## The tph-site Rabbit Hole
+
+I am sure TTBNL will get asked about tech during the AMA, but I have an unusually informed view on what happened - or
+rather, the extent it's known what happened.
+
+Early in the hunt handoff period, TTBNL decided they wanted to use the 2023 hunt code, rather than prior years. We
+cleaned it up, released it as the next iteration of [tph-site](https://github.com/teammatehunt/tph-site), and gave
+advice during the year on debugging Docker errors, connecting the site, providing examples of interactive
+puzzles, and so on. As Hunt got closer, the messages changed into how we handled email, webserver parameters, and size
+of the machine used in Google Compute Engine. Most of our recommendations at this time are "use money to pay your way
+out of problems, running a server for a weekend is not that expensive if you just want CPUs", and so they use a
+48-core machine with similar parameters to us.
+
+When the hunt site locks up and fails to recover, everyone who worked on tech infra knows *exactly* what's happened -
+traffic is eating up all the database connections and not letting go. This has been a persistent problem with tph-site's usage
+of websockets via [Django Channels](https://channels.readthedocs.io/en/latest/), where it's super hungry on database
+connections. We've never fully resolved this, but intuitively there's no way a site with a few thousand concurrent users
+should need over 500 Postgres connections. It just...no, something smells wrong there on the math. It's caused issues for us
+in the past, but we've worked around the issue by using [PgBouncer](https://www.pgbouncer.org/) to do [connection pooling](https://stackoverflow.blog/2020/10/14/improve-database-performance-with-connection-pooling/), then using load tests to verify we can open enough database connections to handle the load.
+
+We're pretty invested in getting Hunt fixed, so a few teammate people drop into the handoff server to help debug. There isn't
+too much we can do aside from passing along sample queries we used for diagnostics, asking questions about server state
+and configs, and recommending ways to reduce Websocket load.
+
+Over a few back and forths, we find the following:
+
+* TTBNL ran a load test before Hunt. The server worked, with an initial spike of delay that recovered later.
+* The live server is behaving different from that load test. Instead of recovering, it becomes completely unresponsive. (!!)
+* The typical locations that should contain error logs contain nothing (???!!!)
+* CPU and RAM usage are high, but not near limits.
+* The number of database connection is also high, but not near limits.
+
+This makes debugging the issue really hard, since there are no logs, there is no reproduction setup aside from prod, and
+the server isn't hitting any obvious bottlenecks. And so the best routes we can recommend to TTBNL are to just strip out
+all non-essential Websockets and apply random changes to the database config until something works.
+
+While reading PgBouncer documentation beteen deploys, those of us on the teammate side start wondering if our PgBouncer config numbers are
+wrong (we seem to have `default_pool_size == max_client_conn` but this doesn't make much sense). We consider telling TTBNL
+to try removing the PgBouncer layer entirely, but decide not to because we're not confident it'll help or do anything.
+Meanwhile, TTBNL independently decides something is fishy enough with PgBouncer to try a deploy without it.
+
+Surprisingly, this *works* and the site stops failing immediately.
+</div>
+
+
+
+
+Hunt!
+-----------------------------------------------------------------------------
+
+We very definitely did not want to win this year (it wasn't even asked on the team survey),
+and so we had a #losecomm to figure out a way the most reasonable way to do so while still having fun.
+
+The solution they arrived at was that no one was allowed to start or even look at a metapuzzle until all feeders
+in the round had been forwardsolved. This could be overruled at the discretion of losecomm. For example, if the last feeder
+was super stuck or grindy, we'd skip it for the sake of fun. We would also avoid using free answers. Otherwise, hints
+and wild guesses were all fair game.
+
+This policy is really more restrictive than it sounds, because the meta solvers on teammate
+are pretty overpowered and solving at 70% of the feeders is often like getting to skip 50% of the work. It also implicitly
+means no backsolving, because you'll never be in a position to do so.
+
+The policy also died by Saturday morning. I'm told that TTBNL visited us, losecomm asked where we were in the leaderboard,
+and learned we were outside the top 10. That prompted an "oh shit we might not finish" and we pulled off all the brakes
+throuh Saturday, Sunday, and Monday. I think I still did not try-hard as much as I could have - it took me a while to look
+at metas and I didn't even try to backsolve anything this Mystery Hunt, but I've heard most of the Overworld metas were hard to backsolve anyays.
+
+**Herc-U-Lease** - Ah, the scavenger hunt! We started doing this, but did a cost-benefit analysis and decided the effort
+needed to get enough drachma was too high. By the time the nerf came in Saturday, we had a lot of open puzzles and the cost-benefit
+still seemed too small.
+
+Looking at past Mystery Hunts, the [2022 scav hunt](https://puzzles.mit.edu/2022/round/the-ministry/book-reports/) maxed out at 100 points, with 10 points for the hardest tasks.
+The [2023 scav hunt](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/touch-grass-challenge-impossible) maxed out at 90 points, with 30 points for the hardest tasks, although I'm guessing most teams did the 10-15 point tasks. That's around 10 hard tasks for both hunts if you're on a big team.
+The 2024 scav hunt maxed out at 60 drachma and gave 3 drachma for the hardest tasks, or 20 hard tasks, twice as many.
+Even post nerf to 45 drachma, it was still longer than recent scavenger hunts. Given that the goal of scavenger hunts is to
+get teams to do goofy things, I'd err on the side of easier and would recommend future teams target 10 hard tasks per Hunt
+as their maximum.
+
+I'll still include our video for "throw something through 12 rings, each held by a different person", because it never saw
+the light of day. The people coordinating scav hunt asked the room to take 1 minute to help them do a task. To make it easier, we put
+all the rings close to one another, but the person holding the last ring didn't have anywhere to stand except for right in front of the rings.
+Holding the last ring, he said "sure I'm ready to get hit by something" right before the most predictable thing happened.
+
+VIDEO
+
+
