@@ -88,6 +88,18 @@ two games supported by teammate's Discord bot. I got back to the team social in 
 game where I got flamed for losing a race to identify PINKIE PIE in a Missing Vowels round. I *knew the answer*.
 My reaction time is *bad*. Gimme some slack.
 
+We very definitely did not want to win this year (it wasn't even asked on the team survey), so we had a #losecomm
+this year to figure out a way the most reasonable way to do so while still having fun.
+
+The solution they arrived at was that no one was allowed to start or even look at a metapuzzle until all feeders
+in the round had been forwardsolved. This could be overruled at the discretion of losecomm. For example, if the last feeder
+was super stuck or grindy, we'd skip it for the sake of fun. We would also avoid using free answers. Otherwise, hints
+and wild guesses were all fair game.
+
+This policy is really more restrictive than it sounds, because the meta solvers on teammate
+are pretty overpowered and solving at 70% of the feeders is often like getting to skip 50% of the work. It also implicitly
+means no backsolving, because you'll never be in a position to do so.
+
 
 Kickoff and Tech
 -----------------------------------------------------------------------------
@@ -100,10 +112,7 @@ As we walk towards our classrooms, I try to login to the hunt site from my phone
 a 500 error on a refresh. That's not a great sign. Once we get to our rooms, the 500 errors persist, and...now it is time for a tangent.
 
 <div class="shaded" markdown="1">
-## The tph-site Rabbit Hole
-
-I am sure TTBNL will get asked about tech during the AMA, but I have an unusually informed view on what happened - or
-rather, the extent it's known what happened.
+## The Tech Rabbit Hole
 
 Early in the hunt handoff period, TTBNL decided they wanted to use the 2023 hunt code, rather than prior years. We
 cleaned it up, released it as the next iteration of [tph-site](https://github.com/teammatehunt/tph-site), and gave
@@ -113,18 +122,20 @@ of the machine used in Google Compute Engine. Most of our recommendations at thi
 out of problems, running a server for a weekend is not that expensive if you just want CPUs", and so they use a
 48-core machine with similar parameters to us.
 
-When the hunt site locks up and fails to recover, everyone who worked on tech infra knows *exactly* what's happened -
-traffic is eating up all the database connections and not letting go. This has been a persistent problem with tph-site's usage
-of websockets via [Django Channels](https://channels.readthedocs.io/en/latest/), where it's super hungry on database
+When the hunt site locks up and fails to recover, everyone who worked on tech infra for teammate starts suspecting
+a database connection issue. This has been a persistent problem with tph-site's usage of websockets via
+[Django Channels](https://channels.readthedocs.io/en/latest/), where it's super hungry on database
 connections. We've never fully resolved this, but intuitively there's no way a site with a few thousand concurrent users
-should need over 500 Postgres connections. It just...no, something smells wrong there on the math. It's caused issues for us
-in the past, but we've worked around the issue by using [PgBouncer](https://www.pgbouncer.org/) to do [connection pooling](https://stackoverflow.blog/2020/10/14/improve-database-performance-with-connection-pooling/), then using load tests to verify we can open enough database connections to handle the load.
+should need 600+ Postgres connections. It just...no, something smells wrong there on the math. It's caused issues for us
+in the past, but we've worked around the issue via [connection pooling](https://stackoverflow.blog/2020/10/14/improve-database-performance-with-connection-pooling/)
+and paying for larger servers.
 
-We're pretty invested in getting Hunt fixed, so a few teammate people drop into the handoff server to help debug. There isn't
-too much we can do aside from passing along sample queries we used for diagnostics, asking questions about server state
-and configs, and recommending ways to reduce Websocket load.
+We're pretty invested in getting Hunt fixed, so once it becomes clear this is not a normal hiccup, a few teammate people
+drop into the handoff server to help debug with TTBNL.
+There isn't too much we can do aside from passing along sample queries we used for diagnostics, asking questions about
+server configuration, and recommending ways to reduce websocket load.
 
-Over a few back and forths, we find the following:
+Over a few back and forths, we find that:
 
 * TTBNL ran a load test before Hunt. The server worked, with an initial spike of delay that recovered later.
 * The live server is behaving different from that load test. Instead of recovering, it becomes completely unresponsive. (!!)
@@ -132,42 +143,51 @@ Over a few back and forths, we find the following:
 * CPU and RAM usage are high, but not near limits.
 * The number of database connection is also high, but not near limits.
 
-This makes debugging the issue really hard, since there are no logs, there is no reproduction setup aside from prod, and
-the server isn't hitting any obvious bottlenecks. And so the best routes we can recommend to TTBNL are to just strip out
+This makes debugging the issue really hard, since there are no logs, there is no reproduction of the error outside prod,
+and the server isn't hitting any obvious bottlenecks. And so the best routes we can recommend to TTBNL are to just strip out
 all non-essential Websockets and apply random changes to the database config until something works.
 
-While reading PgBouncer documentation beteen deploys, those of us on the teammate side start wondering if our PgBouncer config numbers are
-wrong (we seem to have `default_pool_size == max_client_conn` but this doesn't make much sense). We consider telling TTBNL
-to try removing the PgBouncer layer entirely, but decide not to because we're not confident it'll help or do anything.
-Meanwhile, TTBNL independently decides something is fishy enough with PgBouncer to try a deploy without it.
+TTBNL will probably go into more detail in their AMA, but my rough understanding is that they figure out the request
+queue is the reason the server crashes and stops responding, so they deploy a change that caps the queue size and force the server to
+respond with 500s instead of stalling. (This is later explained as "fixing the server by making it fail faster".)
+This makes the site slightly dodgy but also makes it actually stay up, and although the resource leak isn't root-caused,
+the site is stable enough that it will keep working if it's restarted once an hour.
 
-Surprisingly, this *works* and the site stops failing immediately.
+XKCD COMIC
+{: .centered }
+
+We got a very brief shout-out at wrap-up for helping fix the server. I don't think we actually did much besides moral support.
+
+I've been poking into tph-site post-hunt, and I still don't
+understand why the load test pre-Hunt failed to capture the during Hunt behavior. Maybe the extra Hunt participants pushed things over the edge? Maybe
+a team's hunt management software hammered the backend too hard? Maybe MIT Guest Wi-Fi does something weird? I know
+I kept seeing intermittent "Blocked Page" errors on their network when I tried to Google search on Firefox, and needing to use an incognito window
+to fix it.
+
+Still, I suspect that this is a problem that is better cut at the source. By now, both GPH 2022 and Mystery Hunt have had
+server issues tied to websockets via Django Channels. There is definitely a way to make it work (I've found claims of scaling
+Channels to millions of users), but, there is something fishy going on there.
+
+Of the websocket heavy puzzlehunts, the Projection Device used a Go backend IIRC, and Galactic [entirely rewrote their backend for GalactiCardCaptors](https://2023.galacticpuzzlehunt.com/wrapup) to avoid Channels because they lost trust in its scaling. I think the platonic ideal hunt server would do the
+same and stop using Channels, but I'm not sure the migration work would be worth it.
+[Silenda](https://github.com/YewLabs/silenda) from Mystery Hunt 2021 used Django Channels.
+So does [Spoilr](https://github.com/Palindrome-Puzzles/2022-hunt) from Mystery Hunt 2022 and [tph-site](https://github.com/teammatehunt/tph-site)
+from Mystery Hunt 2023. Real companies have made Django Channels work for them, and this might be a case of
+preferring the devil that's already implemented over the one that's not.
 </div>
 
 
-
-
-Hunt!
+Hunt! (Friday)
 -----------------------------------------------------------------------------
 
-We very definitely did not want to win this year (it wasn't even asked on the team survey),
-and so we had a #losecomm to figure out a way the most reasonable way to do so while still having fun.
+With the site fixed, it's time to get into the puzzles proper.
 
-The solution they arrived at was that no one was allowed to start or even look at a metapuzzle until all feeders
-in the round had been forwardsolved. This could be overruled at the discretion of losecomm. For example, if the last feeder
-was super stuck or grindy, we'd skip it for the sake of fun. We would also avoid using free answers. Otherwise, hints
-and wild guesses were all fair game.
+## The Throne Room
 
-This policy is really more restrictive than it sounds, because the meta solvers on teammate
-are pretty overpowered and solving at 70% of the feeders is often like getting to skip 50% of the work. It also implicitly
-means no backsolving, because you'll never be in a position to do so.
+**Herc-U-Lease** - Ah, the scavenger hunt! Technically not in this round but I'll put it here since
+I barely touched anything in this round (aside from gruntwork clues in Annual International Fictionary Night).
 
-The policy also died by Saturday morning. I'm told that TTBNL visited us, losecomm asked where we were in the leaderboard,
-and learned we were outside the top 10. That prompted an "oh shit we might not finish" and we pulled off all the brakes
-throuh Saturday, Sunday, and Monday. I think I still did not try-hard as much as I could have - it took me a while to look
-at metas and I didn't even try to backsolve anything this Mystery Hunt, but I've heard most of the Overworld metas were hard to backsolve anyays.
-
-**Herc-U-Lease** - Ah, the scavenger hunt! We started doing this, but did a cost-benefit analysis and decided the effort
+We started doing this, but did a cost-benefit analysis and decided the effort
 needed to get enough drachma was too high. By the time the nerf came in Saturday, we had a lot of open puzzles and the cost-benefit
 still seemed too small.
 
@@ -181,8 +201,43 @@ as their maximum.
 I'll still include our video for "throw something through 12 rings, each held by a different person", because it never saw
 the light of day. The people coordinating scav hunt asked the room to take 1 minute to help them do a task. To make it easier, we put
 all the rings close to one another, but the person holding the last ring didn't have anywhere to stand except for right in front of the rings.
-Holding the last ring, he said "sure I'm ready to get hit by something" right before the most predictable thing happened.
+Holding the last ring, he said "sure, I'm ready to get hit by something" right before the most predictable thing happened.
 
 VIDEO
 
+
+## The Underworld Court
+
+This round was released via Google Docs to teams, using phone callbacks.
+I don't really miss them but it was a fun throwback.
+
+**Badges Badges Badges** - The first puzzle I worked on while waiting for puzzle release. Honestly I'm surprised this is the first time someone made
+the nametags a puzzle, but they *have* only been a thing for 3 years. I quickly recognize mine is NATO, but by the
+time I figure out what "echo" is, someone else has already solved the full badge. Then I get sidetracked into tech debugging and stop paying attention to this puzzle.
+
+**Roguelikes with a K** - Listen, I'm always down to try a roguelike. I quickly learn I'm bad at
+roguelikes relative to teammate, and busy myself with organizing the sheet instead. We submit (well, call-in) what we think is the final answer, but realize the next step before TTBNL calls us back.
+I still have objections to some of the interpretations, they felt a bit loose. We considered Wordle to have resource management, since you had a limited number of guesses, but figured out it needed to be "false" during our error correction tweaking. Overall, cool idea, just wish it was tighter.
+
+**Dating Stars** - By the time I got to the puzzle, they had figured out the Chinese zodiac a-ha, but not anything else. In a desperate attempt to fit the Western zodiac, I was asked to check if anything might be
+related to Homestuck. I read over the puzzle and said "definitely not, also why did you think of Homestuck???" They broke-in after I left.
+
+**Judges of the Underworld (meta)** - We broke in on the mechanic pretty much immediately, and having all the answers was definitely not helpful. Two of us (including me) were convinced that the heights of the pillars on the round page would be important for ordering, and got confused why it was reading so poorly, right up until someone resorted the sheet.
+
+## Rivers of the Dead
+
+**Why the Romans Never Invented Logic Puzzle** - This idea was both cursed and a lot of fun. Three of us were working on a grid, slowly making deductions and trying to fix our mistakes when we hit a contradiction, and then Lumia says "okay, I've solved the logic puzzle" and drops the completed grid into the sheet.
+This is common enough that I've stopped questioning it.
+
+Initially, the large fractions of Js in the cluephrase makes me think we need to filter it with the Latin alphabet (i.e. there are no Js in Latin so ignore all Js). This doesn't work, but I eventually decide that it really ought to be a do-it-again, spot the matching strings, and help solve it from there.
+After finding it harder than expected, I get tempted to write a Python brute force script instead. By the time I finish typing up the Roman numeral constants, the puzzle's been solved.
+
+**Two Outs, Two Strikes, and...** - I didn't solve this puzzle, just here to say it was pretty funny..
+
+**temporary name** - We solve the answer to puzzle matching pretty quickly, and I volunteer to enter it into the site. It fails to do anything, and I say we need to do something else. Later, someone else tries our answers and it works, unlocking part 2. Oops guess I filled out the form wrong.
+
+The policy also died by Saturday morning. I'm told that TTBNL visited us, losecomm asked where we were in the leaderboard,
+and learned we were outside the top 10. That prompted an "oh shit we might not finish" and we pulled off all the brakes
+throuh Saturday, Sunday, and Monday. I think I still did not try-hard as much as I could have - it took me a while to look
+at metas and I didn't even try to backsolve anything this Mystery Hunt, but I've heard most of the Overworld metas were hard to backsolve anyays.
 
