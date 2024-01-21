@@ -1,0 +1,794 @@
+---
+layout: post
+title:  "MIT Mystery Hunt 2024"
+date:   2024-01-21 01:41:00 -0700
+---
+
+*This has spoilers for MIT Mystery Hunt 2024. Spoilers are not labeled. I will add puzzle
+links once there's a stable link to them.*
+
+I hunted with teammate again this year, because there is nothing quite like writing a Mystery Hunt to forge friends through fire.
+
+Pre-Hunt
+------------------------------------------
+
+This year, I got to Boston much earlier than usual. This was in-part because the company
+I work for does limited vacation, which I'm bad at using. I needed to spend some to avoid hitting
+the vacation cap, and what better time than Mystery Hunt?
+
+This made my Hunt much more relaxed than usual, since I got a few days to adjust to East Coast time, and was able to schedule visits to Level99 and Boxaroo before Hunt.
+We only went to Level99 because of [Dan Katz's post](https://puzzlvaria.wordpress.com/2023/09/12/challenge-frustration-and-balancing-user-expectations-level99-boda-borg-celeste-and-mao/)
+on the subject. Let it be known that we had fun, puzzle blog recommendations are good, and I would recommend it too. Now that I know what the
+challenge rooms are, the Puzzlvaria post reads so differently.
+(My group also took a hint on Pirates Brig, with the same "yes, really do what you think
+you should do" reaction. However we figured out a way to three-star the room
+without much athleticism.)
+
+For Boxaroo, we did a friendly competition with another group from teammate. We'd each do two
+escape rooms, fastest combined time ins. The Boxaroo organizers knew we were doing this, so they:
+
+* Invited mutual friends spoiled on the rooms to spectate and heckle our attempts.
+* Told us we were "3 minutes slower than the other group" instead of our actual time.
+
+When we compared notes afterwards, we lost 😔. It was very close though, with our total time
+only 30 seconds slower. I guess that's like getting 2nd at Mystery Hunt by 10 minutes.
+
+We also got shown a backstage tour of the room, due to finishing early. Some non-spoilery notes are that the room had dynamic extra puzzles that trigger if the group
+is solving it quickly, and the room has a "wedding proposal mode".
+
+Finally, we did Puzzled Pint, except, being silly people, we decided to make it more interesting by doing it "all brain". No writing implements allowed, and each puzzle must be solved before looking at the next one.
+With 8 people, this *seemed* doable, but then the first puzzle was a nonogram, prompting a "OH NO IT'S SO OVER". We didn't solve the nonogram, but we did solve the puzzle, and eventually the entire set. Here's the puzzle from "Animal Casino" if you want to attempt the same challenge.
+
+![A puzzle from Puzzled Pint](/public/mh-2024/craps.png)
+{: .centered }
+
+
+Big Picture Thoughts
+-----------------------------------------------------
+
+Hunt went long again this year, although this time it was more because of puzzle count
+than puzzle difficulty. If you were forced to pick how a Mystery Hunt runs long, I think most people would
+pick the "too many puzzles" side of Mystery Hunt 2024 over the "too difficult puzzles" side of Mystery
+Hunt 2023.
+
+Still, my preferred Hunt ending time is Sunday morning. On Saturday, TTBNL told our team captain that hunt was
+projected to end Sunday evening, and while this was great for planning sleep, it did make me a bit worried we wouldn't
+finish. After no "coin has been found" email came by Sunday 10 PM, I was *extra* concerned.
+I ended up pulling an all-nighter to try to push towards a finish, which we missed by two metas,
+Sedona and Nashville.
+
+Running a Hunt with 237 puzzles is just...an insane number of puzzles. It is not necessarily a *problem*.
+One minor complaint I have about hunt discourse is when people say "puzzle count" when they really mean
+"length of hunt" or "difficulty of hunt".
+It's perfectly possible to write a Hunt with 237 puzzles that ends on Sunday if the difficulty is tuned correctly. A quick estimate: in 2022,
+Death & Mayhem was the first team to finish the Ministry, at [Friday 18:47 EST](https://puzzles.mit.edu/2022/stats/),
+or 5.5 hours from puzzle release. The Investigation and the Ministry is approximately 40 puzzles. A very naive
+linear extrapolation of (237 puzzles / 40 puzzles * 5.5 hours) gives a 33 hour finish time of Sunday 1 AM. You could
+target that difficulty, overshoot a bit, and still end with a reasonable end time.
+
+The issue is more that you are really creating a harder problem for yourself than you need to. Puzzle creation time isn't linear to difficulty,
+and you need a lot of hands on deck if you start with a high puzzle count.
+TTBNL was a big enough team that I could see it working out, and understand why the team thought it
+would work out. But in practice, the difficulty trended up higher than the structure allowed.
+The "fish" puzzles in Hole were a bit harder than I expected "fish" puzzles to be, and the killers
+in this Hunt were just as hard as killers in other Mystery Hunts I've done. I still had a ton of fun, the majority
+of puzzles I did were clean and had cool ideas, and the fraction of "meh" puzzles was no higher than previous
+years. There was just a lot of them.
+
+I really like that TTBNL did in-person interactions each Overworld meta, to the point that I think we
+should have done so in 2023 and found a way to handle the logistics hell it would create. And when TTBNL decided
+to give out free answers on each meta interaction, doing so with a "you need to use it now" caveat was a great way
+to avoid the "teams stockpile free answers" problem we ran into during 2023. Between the events giving 2 free answers
+instead of 1, and the gifted free answers, I believe we used around 15 free answers by the end of Hunt. It still does
+not feel great to free answer your way to metas, but it feels a little better when it's gradual
+rather than nuking a round at the end.
+
+
+Thursday
+------------------------------------------------------------------
+
+Instead of going straight to the team social, I stopped by the Mathcamp reunion, which I failed to go to last year
+due to writing Hunt. I was very amused to see one group playing [Snatch](https://boardgamegeek.com/boardgame/9556/snatch)
+and another group playing [Set](https://boardgamegeek.com/boardgame/1198/set), because these are *exactly* the
+two games supported by teammate's Discord bot. I got back to the team social in time to play a custom Only Connect game. The Missing Vowels round included a "famous horses" section, and I got flamed for losing a race to identify PINKIE PIE. I *knew the answer*. My reaction time is *bad*. Gimme some slack.
+
+We very definitely did not want to win this year (it wasn't even asked on the team survey), so we had a #losecomm
+this year to figure out the most reasonable way to do so while still having fun.
+
+The solution they arrived at was that no one was allowed to start or even look at a metapuzzle until all feeders
+in the round had been forwardsolved. This could be overruled at the discretion of losecomm. For example, if the last feeder
+was super stuck or grindy, we'd skip it for the sake of fun. We would also avoid using free answers. Otherwise, hints
+and wild guesses were all fair game.
+
+This policy is really more restrictive than it sounds, because the meta solvers on teammate
+are pretty overpowered and solving at 70% of the feeders is often like getting to skip 50% of the work. It also implicitly
+means no backsolving, because you'll never be in a position to do so. That further reduces your
+puzzle width, assuming that the hunt structure awards unlocks to backsolves.
+
+
+Kickoff and Tech
+-----------------------------------------------------------------------------
+
+I enjoyed kickoff a lot. The flight safety health & safety video was excellent, and getting Mike Brown (author of
+["How I Killed Pluto and Why It Had It Coming"](https://web.gps.caltech.edu/~mbrown/howikilled.html)) was a nice
+touch. TTBNL has a number of Caltech people, so it makes sense they could do it, but it was still funny.
+
+As we walk towards our classrooms, I try to login to the hunt site from my phone, and manage to do so once but see
+a 500 error on a refresh. That's not a great sign. Once we get to our rooms, the 500 errors persist, and...now it is time for a tangent.
+
+<div class="shaded" markdown="1">
+## The Tech Rabbit Hole
+
+Early in the handoff between 2023 and 2024, TTBNL decided they wanted to use the 2023 hunt code.
+We
+cleaned it up, released it as the next iteration of [tph-site](https://github.com/teammatehunt/tph-site), and gave
+advice during the year on debugging Docker errors, setting up registration, providing examples of interactive
+puzzles, and so on. As Hunt got closer, these messages got more frequent and shifted to email handling,
+webserver parameters, and server sizing.
+Most of our recommendations at this time were "use money to pay your way
+out of problems, running a server for a weekend is not that expensive if you just want CPUs", and so they used the same specs we did: a 48-core machine with a ton of RAM and similar webserver settings.
+
+When tph-site is under load, it's common for the server to stall for a bit, eventually respond, and
+recover from there. When the hunt site does not recover, everyone who's done
+tech infra for teammate starts suspecting an issue with too many database connections. This has been a persistent problem with tph-site's usage of websockets via
+[Django Channels](https://channels.readthedocs.io/en/latest/), where the codebase is super
+hungry on database connections when many websockets are open.
+We've never fully resolved this, but intuitively there's no way a site with a few thousand concurrent users
+should need 600+ Postgres connections. It just...no, something smells wrong there on the math. This
+issue has burnede us in the past,
+but we've always found a way around it with [connection pooling](https://stackoverflow.blog/2020/10/14/improve-database-performance-with-connection-pooling/) and using bigger servers.
+
+We're pretty invested in getting Hunt fixed so that we can do puzzles. A few teammate people
+drop into the #tech channele of the handoff server to help debug with TTBNL.
+There isn't too much we can do, aside from passing along sample queries we used for diagnostics,
+asking questions about server configuration, and recommending TTBNL remove all non-essential
+websockets.
+
+In discussions with the tech team, we find that:
+
+* TTBNL ran a load test before Hunt. The server worked, with an initial spike of delay that recovered later, similar to tests we saw before.
+* The live server is behaving differently from that load test, becoming unresponsive.
+* The typical locations that should contain error logs contain nothing (???!!!)
+* CPU and RAM usage are high, but not near their limits.
+* Although the site is not responding, TTBNL is able to directly connect to the Postgres
+database and finds the database connection rate is high, but also not at the maximum set
+in the config files.
+
+This makes debugging the issue really hard, since there are no logs, there is no reproduction of the error outside prod,
+and the server isn't hitting any obvious bottlenecks. And so the best routes we can recommend to TTBNL are to apply random changes to the database config while we all read webserving documentation
+to see if there's something we missed.
+
+TTBNL will probably go into more detail in their AMA, but my rough understanding is that they figure out the request
+queue is the reason the server crashes and stops responding. As a temporary measure, they deploy
+a change that caps the request queue size, causing the serveer to throw more 500s immediately
+instead of trying to queue them.
+(This is later explained to teams as "fixing the server by making it fail faster".)
+It still seems likely there's a resource leak, and the root cause isn't traced, but the site
+is now stable enough that it will keep working as long as it's restarted occasionally,
+which is good enough to make Hunt go forward.
+
+![xkcd comic about how restarting a server every 24 hours is easier than debugging the root cause](/public/mh-2024/hard_reboot.png)
+{: .centered }
+
+(From [xkcd](https://xkcd.com/1495/))
+{: .centered }
+
+We got a very brief shout-out at wrap-up for helping fix the server. I don't think we did much besides moral support.
+
+I will say that I'm not sure we would have done better in TTBNL's position.
+Whatever happened is mysterious enough that we haven't seen it before.
+I've been poking into tph-site post-hunt, and I still don't
+understand why the load test pre-Hunt failed to capture the during-Hunt behavior. Maybe the 15% moree Hunt participants this year pushed things over the edge? Maybe
+a new team's hunt management software hammered the backend too hard? Maybe MIT Guest Wi-Fi does something weird?
+I kept seeing "Blocked Page" errors on MIT Guest Wi-Fi when I tried to use Google search on Firefox,
+unless I used Private Browsing, so they're definitely doing *something* different than normal
+Wi-Fi.
+
+Whatever the cause, I suspect that this is a problem that is better cut at the source. By now, both GPH 2022 and Mystery Hunt have had server issues tied to websockets via Django Channels.
+For GPH 2023, Galactic [entirely rewrote their backend for GalactiCardCaptors](https://2023.galacticpuzzlehunt.com/wrapup) to avoid Channels because they didn't understand why it broke for them
+and lost trust in its scaling. And for the
+Projection Device, although avoiding Channels wasn't the intention, the backend for it was written in Go instead.
+
+I think the platonic ideal hunt server would remove Django Channels from the codebase and use
+an alternate solution for websockets. That is the ideal, but I'm not sure the migration work
+would be worth it.
+The Projection Device may not have used Channels, but the core hunt site of
+[Silenda](https://github.com/YewLabs/silenda) from that year did.
+So did [Spoilr](https://github.com/Palindrome-Puzzles/2022-hunt), the codebase for Mystery Hunt 2022, and [tph-site](https://github.com/teammatehunt/tph-site)
+from Mystery Hunt 2023.
+Real companies have made Django Channels work for them, and past hunts have used it without
+major issues. This might be a case of preferring the devil that's already implemented over
+the one that's not.
+</div>
+
+
+Hunt! (Friday)
+-----------------------------------------------------------------------------
+
+With the site fixed, it's time to get into the puzzles proper.
+
+## The Throne Room
+
+**Herc-U-Lease** - Ah, the scavenger hunt! Technically not in this round but I'll put it here since
+I didn't do anything in this aside from getting nowhere on Annual International Fictionary Night.
+
+We did a few tasks, but on doing a cost-benefit analysis, we decided the effort
+needed to get enough drachma was too high for the reward. By the time the nerf came in Saturday, we had a lot of open puzzles to work on, and the cost post-nerf was still too high for us.
+
+Looking at past Mystery Hunts, the [2022 scav hunt](https://puzzles.mit.edu/2022/round/the-ministry/book-reports/) maxed out at 100 points, with 10 points for the hardest tasks.
+The [2023 scav hunt](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/touch-grass-challenge-impossible) maxed out at 90 points, with 30 points for the hardest tasks, although I'm guessing most teams did the 10-15 point tasks. That's around 10 hard tasks for both hunts if you're on a big team.
+The 2024 scav hunt maxed out at 60 drachma and gave 3 drachma for the hardest tasks, or 20 hard tasks, twice as many.
+Even post nerf to 45 drachma, it was still 1.5x longer. Given that the goal of scavenger hunts is to
+get teams to do goofy things for your and their entertainment, I'd recommend future teams trend easier and target 10 hard tasks as their maximum.
+
+I'll still include our video for "throw something through 12 rings, each held by a different person", because it never saw the light of day.
+
+<div class="centered">
+<video width="640" controls>
+    <source src="/public/mh-2024/scavenger.mov">
+    Your browser does not support .mov files.
+</video>
+</div>
+
+Everyone knew that tangerine was going to hit someone.
+
+
+## The Underworld Court
+
+This round was released via Google Docs to teams, using phone callbacks.
+I don't really miss them but it was a fun throwback.
+
+**Badges Badges Badges** - The first puzzle I worked on while waiting for puzzle release. Honestly I'm surprised this is the first time someone made
+the nametags a puzzle, but they *have* only been a thing for 3 years. I quickly recognized mine was NATO, but by the
+time I figured out what "echo" is, someone else has already solved the full badge. Then I got sidetracked into tech debugging.
+
+**Roguelikes with a K** - Listen, I'm always down to try a roguelike. I quickly learn I'm bad at
+roguelikes relative to teammate, and busy myself with organizing the sheet instead. We submit (well, call-in) what we think is the final answer, but realize the next step before TTBNL calls us back.
+I still have objections to some of the interpretations, they felt a bit loose. We considered Wordle to have resource management, since you had a limited number of guesses, but figured out it needed to be "false" during our error correction tweaking. Overall, cool idea, just wish it was tighter.
+
+**Dating Stars** - The solvers of this puzzle had figured out the Chinese zodiac, but not anything
+else in the virgin vs chad memes. They were convinced the Western zodiac would be
+relevant, and in an increasingly desperate attempt, they asked a Homestuck consultant (me) to check if
+anything lined up with the trolls.
+I read over the puzzle and said "definitely not, also what in this puzzle would clue Homestuck???" They broke-in after I left.
+
+![chads](/public/mh-2024/chads.png)
+{: .centered }
+
+**Judges of the Underworld (meta)** - Two of us (including me) were convinced that the heights of the pillars on the round page would be important for ordering, and got confused why it was reading so poorly, right up until someone resorted the sheet. We definitely did not need all the feeders to
+solve this meta, but those are the rules.
+
+## Rivers of the Dead
+
+**Why the Romans Never Invented Logic Puzzles** - This idea was both cursed and a lot of fun. Three of us were working on a grid, slowly making deductions and backtracking through mistakes,
+and then Lumia says "okay, I've solved the logic puzzle" and drops the completed grid into the spreadsheet.
+This has happened to me enough times that I've stopped questioning it.
+
+Initially, the large fractions of Js in the cluephrase makes me think we need to filter it with the Latin alphabet (i.e. there are no Js in Latin so ignore all Js). This doesn't work, but I eventually decide that it really ought to be a do-it-again. We notice the self-confirming step
+and solve it from there.
+I get annoyed enough at the puzzle to start writing code to bash the finale, but the puzzle
+is finished before I get my code going.
+
+**Two Outs, Two Strikes, and...** - I didn't work on this puzzle, but want to call it out as very funny.
+
+**temporary name** - We solve the answer matching pretty quickly. I volunteer to enter it into the site. It fails to do anything, and announce we're missing something.
+Around 10 minutes later, someone else resubmits the same answers to the website and it works, unlocking part 2. I guess I filled out the form wrong? Oops.
+
+**Do You Like Wordle?** - This was a very infamous puzzle to me, because it was our last feeder in all the Underworld rounds. We initially ignored
+the puzzle due to the warning notice in errata. That meant that when we got back to it, we had very little progress on it, and effectively the entire team was forced to play Wordle due to
+our losecomm policies of forwardsolving everything.
+We split into two rough teams. One team played a bunch of Wordle games and shared screenshots into Discord, while the second team studied the screenshots to try to determine when a game would solve to a blue square or green square.
+
+![Wordle screenshot](/public/mh-2024/wordle.png)
+{: .centered }
+
+I asked some people to try games where all 26 letters were used. After finding this always led to blue games, they proposed
+the correct extraction idea - that a game was blue if the target letter appeared in any guess, and green if it appeared in no guesses.
+
+I was skeptical of this, because the letters we had were starting `..i[phcdn][gk]hq`, and I wanted
+it to form a 5x6 grid in the end instead of a 30 letter cluephrase.
+But teammates were adamant that this was the start of "BRING HQ ...". Seeing it continue `[vx]sm` did not give me much confidence, but I had no better ideas and the theory was looking consistent, so I started grinding out letters while saying "there's a chance we're doing everything wrong" every few minutes.
+Eventually we got enough to read out the cluephrase.
+
+I have mixed feelings on this puzzle. The place it had in our unlock progress was always going to make
+me get annoyed with it, no matter the quality of the puzzle, but it did feel especially grindy.
+As the author of [Quandle](https://puzzles.mit.edu/2023/puzzlefactory.place/office/quandle), a puzzle that asks you to solve 50 Wordles, I realize how hypocritical it is of me to say this. I think for me it came down to this puzzle outstaying its welcome. Generally, I found I needed to play 3-4 games per board to restrict the letter enough in our regex to move on. That works out to 90-120 Wordles for the entire puzzle. I think Quandle is solvable at around 40-45 Wordles in comparison, and those
+extra 50 Wordles made the difference.
+Additionally, the game sometimes messed with my ability to generate useful runs.
+I'd start a game thinking "this time, I will use S and T but not R", eventually realize the winning
+word was ROAST, and go "goddamnit", losing the sense of control I associate with video games and interactive puzzles. In short, idea cool, but execution a bit too
+much of a drag.
+
+Solving Wordle got us to the meta, and the runaround. I decided to go spectate the runaround with a bunch of other teammates, but when I realized this was going to look like someone reading a page aloud for many minutes, I bailed. People at our HQ told us TTBNL was going to unlock new rounds for us while the runaround ran, and I realized I came to Mystery Hunt to do puzzles, not
+watch people do puzzles.
+
+## The Hole in the Ceiling of Hades
+
+I personally liked that puzzles unlocked in Hole throughout the Hunt,
+and know a bunch of people on teammate declared themselves "no Overworld, only fish" during the weekend.
+However, when the story page said
+"you are quite sure whatever’s up there isn’t necessary for getting out of Hades", many of us interpreted it as "this round is not needed for Hunt completion at all", and thought it was an optional
+round. This doesn't make sense on reflection (why would a team write 50 optional puzzles),
+but, it's what we thought.
+
+![Discussion on whether to use an event reward on a fish puzzle](/public/mh-2024/fishmetaunlock.png)
+{: .centered }
+
+The fact that we had over 40 solves in
+the round despite believing it was optional is a testament to the joy people got from doing easier
+puzzles in between Overworld puzzles.
+
+It also meant I did almost none of this round. Oops! At least I'll have a lot of things to go back
+to.
+
+**Streams of Numbers** - I worked on this puzzle before we knew the round was supposed to be easy.
+That is my excuse for everything that went wrong.
+
+After the initial ID of the numbers, we got very stuck on extraction.
+OEIS didn't turn up anything, and after some shitposts like "it's a fluid dynamics puzzle",
+I decided to try extrapolating the sequences. How? Well, I guess I could extend the polynomial defined by the points...
+
+I fit a polynomial to the first sequence, treating the values $$a_1, a_2, a_3, \cdots, a_n$$ as points
+$$(1, a_1), (2, a_2), (3, a_3), \cdots, (n, a_n)$$, then evaluating the polynomial at $$n+1$$. This
+gave back another integer. I tried it on another sequence and saw the same thing, so I excitedly
+shared this fact and we derived numbers for the rest. They were again all integers. In puzzle solving,
+you are often looking for the coincidence that isn't a coincidence, the designed structure that suggests you've found something important. Getting integers for every sequence? Yeah, that had to be
+puzzle content.
+
+Or was it? After failing to extract from values like -12335, the two of us working on the puzzle
+started to suspect that any polynomial defined by integer y-values would extrapolate to
+further integer y-values. "It's finite differences right?"
+I considered this, said "Yeah you're right", but we both agreed that we were bad at math and should ask people better at math for a second opinion.
+
+Upon asking the room, the responses were 50% "IDK sounds like you know the math better than
+we do" and 50% "no this has to be puzzle content". I asked for a counterexample where integer points
+led to non-integer extrapolations, showing that typing random integers into Wolfram Alpha's polynomial interpolation solver kept giving back new integers.
+This ended when someone new looked at the puzzle, and proclaimed "I don't know the math, but I do know this puzzle is definitely not about polynomial interpolation".
+
+We abandoned the puzzle and it got extracted by fresh eyes a while later.
+
+<div class="shaded" markdown="1">
+### So, Is This Guaranteed by Math?
+
+Yes, and it's exactly because of the method of finite differences.
+If you haven't seen it before, it's pretty cool, albeit mostly useful in high-school math competitions that are long behind me. Do we have time for math? Of course we have time for math, what a silly question.
+
+If you have values $$a,b,c,\cdots$$ that you suspect are generated
+by a polynomial, then you can take consecutive differences $$b-a, c-b, \cdots$$, take the consecutive
+differences of that, and repeat. Eventually you will end at a sequence of all constants.
+<pre>
+1 4 9 16 25
+ 3 5 7 9
+  2 2 2
+</pre>
+
+If you extend the constants, and propagate the difference back up, you get the next value of the polynomial. I'll mark the new values in parens.
+
+<pre>
+1 4 9 16 25 (25+11=36)
+ 3 5 7 9 (9+2=11)
+  2 2 2 (2)
+</pre>
+
+Since this is all addition and subtraction, each step always ends at another integer, so the
+next value of $$f(x)$$ must be an integer too.
+
+As for why this is the case, the short version is that if you have an $$n$$-degree polynomial $$f$$, then the polynomial $$g$$ defined by $$g(x) = f(x+1) - f(x)$$ is at most an $$(n-1)$$-degree polynomial (all the $$x^n$$ terms cancel out).
+The first line is writing out the values of said $$g$$. The second line is the values of the $$(n-2)$$-degree polynomial $$g_2(x) = g(x+1) - g(x)$$. Repeating this keeps reducing the degree, ending at a 0-degree (constant) polynomial.
+Extending the constant and propagating the sum back up is the same as backtracking through the series of $$g$$ polynomials back to $$f$$.
+
+In fact, you can derive the closed form of $$f(x)$$ from any such difference table, but if you want know how, you should really just read the [Brilliant](https://brilliant.org/wiki/method-of-differences/) article about finite differences instead. It has rigorous proofs for all these steps.
+</div>
+
+What were we talking about? Oh right, puzzles! Unfortunately that was the only puzzle I did
+in this round. I was asked to solve some stuck clues in 🤞📝🧩 but was just as stuck on them
+as other teammates. And I didn't look at the meta for this round.
+
+
+Hunt! (Saturday)
+--------------------------------------------------------------------------------
+
+I got to HQ at 8 AM the next day. Losecomm announced that the "forward solve" everything policy
+was gone. We were now allowed to backsolve, abandon hard puzzles, look at metas early,
+use free answers, and generally solve as fast as possible, with losecomm transitioning to a wincomm posture
+until further notice.
+
+This felt early to me, but after Hunt ended, I got the full story: TTBNL did an HQ visit, and
+losecomm took the opportunity to ask TTBNL if they could tell us where we were in the leaderboard.
+We were told we were outside the top 10. Historically, teams outside the top 10 don't finish Hunt. Our
+handicaps were too strong and we needed to speed up if we wanted to see everything.
+
+I still did not try-hard as much as I could have, since I was approaching Hunt from a "forward
+solve cool things" standpoint. This is the first hunt in a while where I tried
+zero backsolves. Well, I've heard most of the Overworld metas
+were hard to backsolve anyways.
+
+
+## Minneapolis-Saint Paul, MN
+
+**Triangles** - Oh boy, this puzzle. We started the puzzle on the D&D side, except I had no
+appetite to search up D&D rules, so instead I looked into the wordplay clues. We knew we wanted
+groups of 5 assembling a D20 from the beginning, but making it work was pretty tricky given
+the (intentional) ambiguity. Still, we were able to break in on some easier categories like
+single letters and the NATO alphabet. Once we got about half the categories, we started assembling
+the D20, using it to aid the wordplay. By the end, we had the D20 assembled despite only figuring
+out 10 of 12 groupings. My favorite moment was when we knew "Web browser feature" went to the
+"ARCHITECTURE + LITERATURE + PHYSICS" category, but just could not get it. Out of exasperation,
+I looked at my Firefox window and spoke everything I could see out loud. "Forward, back, refresh, home, tab, toolbar, extension, bookmark, history - WAIT, HISTORY".
+
+With the wordplay done, we figured out the ordering of D&D rules, mostly from me
+inspecting network traffic and getting suspicious why the request was including the count of rules seen so far. After much effort, we got all the D&D data to be consistent with the checksums,
+but became convinced that the numbering on the D20 would be driven by combining the wordplay half
+with the D&D half, rather than from just the wordplay half. Looking at the hints, I don't think we ever would have gotten it, and
+we were pretty willing to move on after being stuck for many hours. (The assembled D20 was stomped flat
+and tossed into a trash can at end of Hunt. No one wanted to bring it home.)
+
+In a more normal Hunt I would be upset, but we were just trying to have fun and the wordplay part
+of the solve was rewarding enough.
+
+## Yellowstone, WY
+
+**The 10,000 Commit Git Repository** -
+
+\*puzzle unlocks\*
+
+Brian + Alex Gotsis from teammate tech team: "Do you want to work on this puzzle?"
+
+Me: "Sounds terrifying. I'm in the middle of this Triangles solve, but I'll come by after we finish or get stuck."
+
+(Entire Git puzzle is started and solved in the time it takes us to get 1/4th of the way through Triangles.)
+
+## Hell, MI
+
+I missed this entire round. The bits and pieces I saw of it looked cool, I'll have to take another look later. The majority of this round was solved between Saturday 1 AM - Saturday 5 AM, and then the meta was handed off to people who'd actually gotten sleep.
+
+## Las Vegas, NV
+
+**The Strat** - An amusing early morning solve. Came in, solved some clues, wrote a small code
+snippet to help assist in building the word ladders, and broke-in on the central joke of the puzzle.
+We then got stuck on extraction for a long, long time. We managed to solve it eventually by shitposting
+enough memes about the subject to notice a few key words, saving the people who were studying
+real-life evolutionary trees.
+
+I feel like this puzzle would have worked if the enumerations were either removed, or changed to
+be total length ignoring spaces. They helped confirm things once we knew what we were doing, but were quite
+misleading beforehand. We spent a long time looking at the "breakpoints" implied by the enumerations.
+
+**Luxor** - did some IDing, but quickly left when I realized I was not interested in researching the
+subject matter.
+
+**Mandalay Bay** -
+
+![Gambling](/public/mh-2024/gambling.png)
+{: .centered }
+
+In my heart of hearts, I am a gambler. But I understand my flaws and don't want to get into
+gambling in cases where it could lead to me losing real money.
+So instead I clicked the Mandalay Bay slot machine a few hundred times to contribute data.
+
+We figured
+out the mechanic pretty quickly, although we did hit some contradictions in the emoji-to-letter
+mapping that we had to backtrack a bit to resolve. After assigning most of the letters,
+the distribution analysis people came back with the outlier emojis and we solved.
+
+Our main objection at the time was the lack of a "roll 10x" or roll 100x" button as seen in puzzles
+like [Thrifty/Thrifty](https://2020.galacticpuzzlehunt.com/puzzle/thrifty-thrifty). I suppose
+it wasn't a huge deal though, we didn't need as many rolls to break-in as that puzzle.
+
+**Planet Hollywood** - I helped on the clue solving and ordering. For the extraction, right before
+Mystery Hunt we had run an internal puzzle event with an identical "connect the dots" mechanic as this one. That one clued spots in a specific shopping mall, and we initially thought we needed to find the
+locations of each restaurant within the Planet Hollywood resort.
+I bailed, but looking back I see the extraction was less painful than I thought.
+
+## Everglades, FL
+
+Oh boy, we really overcomplicated the Hydra meta and almost full-solved the round before
+finishing it. This was when we started using our free answers to strategically direct solves towards specific metas.
+
+**How to Quadruple Your Money in Hollywood** - Originally, I thought this puzzle was going to
+be a joke about Hollywood perpetually remaking movies, recycling plots to sell the same idea
+multiple times. I still don't understand why the 2nd last entry is formatted like letters rather
+than email - is this supposed to be because the movie for this clue predated widespread email?
+
+**Isle of Misfit Puzzles** - The minipuzzles I did (East Stony Mountaion, Kitchen Island, CrXXXXgrXm Island) were fun, although I did spend a bunch of time meticulously coloring cells in Sheets
+to match the Clue board and then saw it get unused in extraction. If it got used in numeral
+extraction, we skipped that for most minipuzzles. We were confident enough in the Hashi idea that
+most minis only had 2-3 possible numerals, and we brute-forced the numbers via the answer
+checker. I generally appreciated partial confirms but think this was one case that went too
+far. Final step was still cool though.
+
+**The Champion** - I keep doing puzzles thinking they'll be Magic: the Gathering puzzles, and
+then get baited into doing something else. We started by IDing the combat tricks. I am still embarrassed
+that our last ID was Gods Willing, I literally play that card in [competitive](https://www.channelfireball.com/article/Boros-Heroic-is-Still-the-Best-Budget-Deck-in-Pioneer-MTG/f7be7c49-2b84-4493-be48-857f67ebe4df/).
+
+From there, we got Yoked Ox first, and I did the right Scryfall query to break in on the right
+set of 16 cards to use. This then led to a surprisingly difficult step of pairing flavor text
+to puzzle content. In retrospect, identifying a few matching words across 16 paragraphs of text
+was always going to be a bit tricky.
+
+What then proceeded was a total struggle of trying to pair The Iliad to The Theriad. I tried to do
+this, and mostly failed, getting distracted by Sumantle instead. The two of us who'd done all the
+MTG identification were both going to an event, so we called for help to fix our data while heading
+to the Student Center
+
+> "what are you doing?"  
+> "fact checking the iliad"
+
+**Nero Says** - I have done Mystery Hunt for over 10 years and this is the first time I've
+done an event. Exciting! Normally I skip events for puzzles, but this year I wanted to try
+something new.
+
+I got picked for the "detail-oriented" event, which ended up being a game of Simon Says in a time loop. Featuring many gotcha moments, it was very unlikely you'd clear it the first time, but upon
+losing the first time we got a worksheet that hinted at actions we should take to solve the event
+and break out of the time loop. Every now and then, you'd have things like "find someone with the
+same birth month as you, then tie at rock-paper-scissors", and the intention was that you'd remember to pair with each other again
+the next loop.
+
+One item on the worksheet was "what secret phrase will you unlock if everyone fails the first
+instruction", and, in very predictable fashion, every time we tried to achieve a few people trolled by not messing up the first instruction. On around the 5th try, TTBNL decided to declare that we'd done it, although
+I definitely spotted one troll trying to keep going.
+
+We wheel-of-fortuned the answer before the event finished, but decided to stick around to see
+more silly stuff.
+
+**The Champion, Redux** - Coming back to the sheet, we saw the ordering had changed a lot. We didn't fully ID
+everything, but had enough right to use the bracket to error correct. I set up the VLOOKUP
+to do extraction (cute cluephrase), and we finished the puzzle. We were *very* thankful
+this puzzle got solved. This is one of those puzzles where I would have hated it
+if we got stuck, but didn't because we didn't.
+
+**5050 Matchups** - Every few puzzlehunts, I assume something is RPS-101 when it isn't. This
+time it actually was RPS-101! The consequence is that I ended up solving, like, ten copies of
+5050 Matchups, while taking breaks from...
+
+**Sumantle** - This puzzle was cool at the beginning, but I have no idea what model got used for
+this, the scoring was incredibly weird. Our guess was that it was a pretty lightweight model,
+because the semantic scoring seemed worse than state-of-the-art.
+For many words in the first layer of the bracket, we had a ton of guesses in the 2-20 range without landing on the exact target word.
+The people on the team with ML experience (including me) tried importing multiple off-the-shelf
+word embedders, to search for new guesses via code, but we couldn't find one consistent with the website.
+Word2vec didn't match, GloVe didn't match, and overall it just got very frustrating to be close but
+have no real recourse besides guessing more random words. We started joking about a "Sumantle
+tax", where you were obligated to throw some guesses into Sumantle every hour.
+
+I feel this puzzle would have been a lot better with a pity option if you guessed enough words
+near the target word. Having one would have reduced frustration and probably cut our solve time from 5 hours to like,
+2 hours.
+
+
+## Mississippi River
+
+**The Hermit Crab** - We needed a hint to understand what to do (trying to break-in from the last
+one was a mistake), but this was a cool way to use previous Mystery Hunt puzzles once
+we understood what we were doing. Was very funny when we figured out how to use Random Hall.
+I ended up solving Story 1, 2, 3, and 4, although I had to recruit
+logic puzzle help to check some theories on how story 4 worked. For story 10, I got the
+initial break-in, but needed help on extract. Personally not a fan of classifying SAMSUNG NOTE SEVENS as "fire", but it is defendable.
+We also needed a hint on how to reuse the final shell - I think it was fair but would
+have taken us a while to figure out.
+
+**99% of Mystery Hunt Teams Cannot Solve This** - LOL that this puzzle unlocked while our
+[math olympiad coach](https://web.evanchen.cc/) was eating dinner. That is all.
+
+## Newport, RI
+
+**Najaf to...** - teammate has a few geography fans, who write puzzles like [First You Visit MIT](https://archives.mitmh2023.com/2023/abcde.puzzlefactory.place/puzzles/first-you-visit-mit)
+and play GeoGuessr Duels. Many times in this Hunt, the "Geovengers" assembled and disassembled
+as puzzles that looked like geography turned into not-geo puzzles. This was the puzzle that
+finally made the Geovengers stick together for a puzzle.
+
+How does it work? Oh I have no idea. I didn't work on it.
+
+**Augmented Raility** - video game puzzle video game puzzle video game puzzle.
+
+teammate is the kind of team that takes this puzzle and identifies all the games and 80% of the maps in the games in 5 minutes without using search engines.
+Finding the exact positions took longer, but not too long, and we nutrimatic-ed the answwer at
+5/10 letters. I wonder if choosing Streets for GoldenEye 64 was a reference to [Streets 1:12](https://www.youtube.com/watch?v=oYmqJl4MoNI) (slightly NSFW due to language).
+
+**Von Schweetz's Big Question** - We did the first step, which reminded me a lot of [Anthropology](https://www.puzzlesaremagic.com/puzzle/anthropology) from Puzzles are Magic, and then
+started the second step, which also reminded me of Anthropology from Puzzles are Magic - not
+mechnically, more that
+I suspected the 1st step was an artificial excuse to make indices more interesting for the 2nd step.
+Unfortunately we didn't finish this one since the meta for the round was solved before we got very far.
+
+## Nashville, TN
+
+**Sorry Not Sorry** - Incredible puzzle idea. Not sure I like that it's such a sprase
+"diagramless" but we were cackling for most of the solve.
+
+**Duet (meta)** - We understood the round structure of Nashville, and that there was likely
+something after Duet,
+but that didn't make doing so easy. There was pretty significant despair at the midway
+point of this puzzle, which we got to at like Monday 5 AM. The people working on this meta
+needed a hint to remember that this was a video puzzle with information not seen in the
+transcript.
+
+## Oahu, HI
+
+I did not work on this round. My impression of this round was entirely colored by
+Fren Amis unlocking, and every cryptics person leaving their puzzle to join the Brazilian
+cashewfruit rabbit hole for 12 hours.
+
+> "help i am trapped in a foreign language cryptic and it is eating me like a sad cold blob of paneer"
+
+## New York City, NY
+
+New York City was the round where we started think we'd unlocked the last round of the Hunt.
+It was not, we still had 3 rounds ahead of us.
+This hunt made me appreciate the design of the [Pen Station round page](https://puzzles.mit.edu/2022/pen-station/) in Mystery Hunt 2022, where you could see there was room for 10 regions in
+Bookspace. I'm starting to believe that it's okay for Mystery Hunts to more transparent on their
+hunt structure than they normally are. The people who like optimizing Hunt unlocks can go solve
+their optimization problem, and the people who don't will appreciate knowing where they are in Hunt.
+This is something that Mystery Hunt 2024 was worse at. (As a side note, I was also sad that
+there was no activity log, but we skipped implementing it in the 2023 codebase for time, so I
+guess I can only blame myself.)
+
+**A More 6 ∪ 28 ∪ 496 ∪ …** - Featured my favorite hint response:
+
+> The puzzle is not about chemistry. It is about the US government.
+
+**Intelligence Collection** - Codenames is always a good time. We found the assassins pretty
+early, and initially thought it would be a do-it-again using the clue words to make a new
+Codenames grid.
+This felt unlikely, since it threw away a lot of information, so that part of the sheet
+was labeled "copium meta". I had to explain what "copium" meant to someone unfamiliar with the
+word. This was a definite lowlight in my journey of realizing where I fall on the degeneracy scale. At least we figured out the colors from the copium meta!
+
+**Queen Marchesa to g4** - Two Magic: the Gathering puzzles in one puzzlehunt? Surely this is
+illegal. Well, I won't complain. I was hopelessly lost on most of the chess steps and mostly played
+MTG rules consulting and identification of the high-level objective. I was quite proud of
+figuring out the correct interpretation of the Time Walk puzzle, but this definitely paled to
+the bigbrain solutions for the Rage Nimbus and Arctic Nishoba boards. This puzzle was HARD but
+I felt it justified itself.
+
+## Olympic Park, WA
+
+**Oil Paintings** -
+
+<p class="centered">
+    <img src="/public/mh-2024/peanut.jpg" style="max-width:50%" alt="An image that is definitely of Mr. Peanut, not the Boston Celtics leprechaun">
+</p>
+
+Yeah IDK I'm still pretty confident this is Mr. Peanut.
+
+**Transylvanian Math** - This is the kind of puzzle that on its surface could be really annoying
+to solve, but ended up being really fun because the source material was so good. I'm curious,
+did anyone else break-in by finding a 2003 forum post written by a fan of Britney Spears?
+
+**ENNEAGRAM** - I was recruited to help unstick this puzzle. As preparation,
+they made a clean version of the sheet, excluding exactly the part of the dataset that was
+needed to extract, hence I didn't get anywhere. If you're new, don't worry, this happens
+all the time. Shoutouts to this flyer many of us saw when walking back to hotels.
+
+<p class="centered">
+    <img src="/public/mh-2024/enneagram.jpg" style="max-width:50%" alt="A flyer for an enneagram class">
+</p>
+
+**Gaia (meta)** - This was by far the most memorable meta solve of Hunt for me, so, strap in,
+this'll take a while.
+
+On opening the puzzle, we dragged a few stars around, noted some things, and identified the
+Vulpecula constellation. I figured out the Gaia catalogues connection, and started digging
+into the database to see what we could find. We tried to recruit astronomy help, and learned
+that:
+
+1. This year teammate had someone who looks for exoplanets in their spare time.
+2. They had already left and were travelling home.
+
+So, we're on our own.
+
+We start by transcribing position and motion data of the stars in Vulpecula, to figure out
+the mapping between puzzle coordinates and star coordinates. After dealing with the horrors
+of understanding the sexagesimal system, and how to convert between hours and degrees, we
+muddle our way towards understanding the puzzle coordinates are just
+milliarcseconds from Earth's perspective.
+
+By now, we've realized that there are 10 unique letters that we want to map to digits, so that
+we can get new motion vectors for the stars. But, we don't know how to do so. I propose that
+the "= X" for each answer is the sum of the letters in the answer, but this gets shot down because
+it feels too constrained (the value for ENNEAGRAM's answer is very low for its length).
+
+I take a break to get some water, and, thinking about the meta, decide that it's still worth trying.
+I don't have any better ideas on how to use the answers, and I know how to write a Z3 solver
+to bash it with code. I'm confident I can prove the idea is 100% correct or 100% wrong in at most
+30 minutes.
+
+By the time I come back, the other Gaia meta people have indepedently decided it's worth trying
+the "sum of letters" idea.
+What follows is a teammate classic: can the programmer make their code work faster than the people
+working by hand? I win the race and find our 4/6 answers only gives two solutions.
+
+Excitedly we find that one works and one does not, so we're clearly on the right track. We split up the work:
+one person generates the IDs ("I can write a VLOOKUP"), a 2nd generates the
+target positions ("I understand milliarcseconds"), and a 3rd drags the stars into place
+("I have a high-quality mouse"). This gets us to Columba, we extract letters from the Greek...and
+get stuck.
+
+We have all the right letters, and we even realize that it's possible the Gaia star contributes to the answer. However, we assume that if it does, its extraction works in the same way as the other stars. (Solving with this assumption gives that the 5th letter of the Gaia answer must equal the
+"alpha" letter, or 1st letter, of the Gaia answer. It's weird logic, but can be uniquely defined.)
+Our lack of astronomy knowledge comes back to bite us, and no one on teammate thinks to look more closely at α Columbae until
+TTBNL gives us a hint at Monday 5:30 AM that the Gaia star contributes 5 letters to the meta
+answer.
+
+The puzzle was all fair, and I had a lot of fun up to the end, but I do wish the ending was a little
+more direct on using Gaia. We were stuck at "BE NEON?" for about 6 hours.
+
+## Sedona, AZ
+
+![A Discord message saying "Sedona round unlocked", with various "NotLikeThis" reactions](/public/mh-2024/sedona.png)
+{: .centered }
+
+I didn't work in this round, it passed me by while I was working on the Gaia meta. I did look at
+the meta, which we seem close on, but this is one of the 2 metas we didn't solve by
+end of Hunt.
+
+Still, one story that doesn't fit anywhere else. Around Monday 12:20 AM, we realized it would be
+the last time we could get HQ interactions for the night, so we sent this:
+
+> Hi Benevolent Gods and HQ,
+>
+> Us mortals of teammate would like to express our willingness to assist the gods with any tasks that they may need, perhaps in exchange for another "free answer"?
+
+TTBNL obliged, giving us the Hera interaction early.
+
+"So, how long have you been working on the Hera meta? It's a tricky one."
+
+"We just unlocked it."
+
+"Oh. ...The gods have decided to give you **two** free answers!"
+
+"Can you do three?"
+
+"Sure we can do three."
+
+And that's how we finessed three free answers right before getting kicked off campus.
+
+![Heart made of shadow puppets](/public/mh-2024/hera.jpg)
+{: .centered }
+
+Part of the Hera interaction, where we played charades via shadow puppets.
+{: .centered }
+
+## Texas
+
+There's another round? Yep, there's another round. This time we were pretty confident it
+was the last one, since we knew how many puzzles it would have and we were no longer unlocking
+things as we redeemed free answers elsewhere.
+
+Since we unlocked it so late, most of the work here was done out of hotel rooms. Across
+teammate, we designed some hotel rooms as "sleeping rooms",
+and others as "working rooms", shuffling people around depending on desire and abilitiy to
+stay awake. I didn't come to Mystery Hunt planning to pull an all-nighter, but with us being in reaching
+distance of an ending, I decided to stay up.
+
+**Halloween TV Guide** - I keep telling people that My Little Pony is a smaller part of my life now,
+but the first clue I solved was the MLP reference. I am never beating the brony allegations. I
+left this puzzle after the "octal-dec" break-in since I didn't want to grind TV show identification,
+but I did successfully use Claude to identify some TV shows from short descriptions.
+
+**Appease the Minotaur (meta)** - It was nice to see a metapuzzle unlock from the start of the
+round. I broke in on beef grades, helped transcribe the maze borders into Sheets, then dozed off
+in the way you do when your body wants to sleep but you're trying not to. We knew what we were doing
+the whole time, so we decided to drop it and work on other metas, waiting for free answers to
+get full data before trying extract. I bet that if we had really tried, we could have finished
+at 5/8 feeders, but solved at 8/8 instead.
+
+
+A Finale of Sorts
+-------------------------------------------------------------------
+
+Coming back to campus in the morning, solving had mostly slowed down to chipping away at metas
+and waiting for increasingly delayed hints. Once the "coin has been found" email came out,
+we got a call from TTBNL giving the runaround cutoff time. They said that based on our solve
+progress, we likely wouldn't make it.
+This really killed the solving motivation to start work on the last part of Nashville we just
+unlocked, so many of us decided to start cleaning up HQ instead.
+
+Stats aren't out yet, but I believe with our final push we got to around 7th. A bit disappointed
+we didn't finish, but we had a good showing. Looking forward to next year!
+
+![An image of Tame Meat, flying](/public/mh-2024/tamemeat.jpg)
+{: .centered }
+
+(Tame Meat enjoying a brief period of flight.)
+{: .centered }
