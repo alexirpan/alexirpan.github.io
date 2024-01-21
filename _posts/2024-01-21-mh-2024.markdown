@@ -51,14 +51,14 @@ than puzzle difficulty. If you were forced to pick how a Mystery Hunt runs long,
 pick the "too many puzzles" side of Mystery Hunt 2024 over the "too difficult puzzles" side of Mystery
 Hunt 2023.
 
-Still, my preferred Hunt ending time is Sunday morning. On Saturday, TTBNL told our team captain that hunt was
+Still, my preferred Hunt ending time is Sunday morning. On Saturday, TTBNL told our team captain that Hunt was
 projected to end Sunday evening, and while this was great for planning sleep, it did make me a bit worried we wouldn't
 finish. After no "coin has been found" email came by Sunday 10 PM, I was *extra* concerned.
 I ended up pulling an all-nighter to try to push towards a finish, which we missed by two metas,
 Sedona and Nashville.
 
 Running a Hunt with 237 puzzles is just...an insane number of puzzles. It is not necessarily a *problem*.
-One minor complaint I have about hunt discourse is when people say "puzzle count" when they really mean
+One minor complaint I have about Hunt discourse is when people say "puzzle count" when they really mean
 "length of hunt" or "difficulty of hunt".
 It's perfectly possible to write a Hunt with 237 puzzles that ends on Sunday if the difficulty is tuned correctly. A quick estimate: in 2022,
 Death & Mayhem was the first team to finish the Ministry, at [Friday 18:47 EST](https://puzzles.mit.edu/2022/stats/),
@@ -73,9 +73,9 @@ would work out. But in practice, the difficulty trended up higher than the struc
 The "fish" puzzles in Hole were a bit harder than I expected "fish" puzzles to be, and the killers
 in this Hunt were just as hard as killers in other Mystery Hunts I've done. I still had a ton of fun, the majority
 of puzzles I did were clean and had cool ideas, and the fraction of "meh" puzzles was no higher than previous
-years. There was just a lot of them.
+years. There were just a lot of them.
 
-I really like that TTBNL did in-person interactions each Overworld meta, to the point that I think we
+I really like that TTBNL did in-person interactions for each Overworld meta, to the point that I think we
 should have done so in 2023 and found a way to handle the logistics hell it would create. And when TTBNL decided
 to give out free answers on each meta interaction, doing so with a "you need to use it now" caveat was a great way
 to avoid the "teams stockpile free answers" problem we ran into during 2023. Between the events giving 2 free answers
@@ -135,11 +135,11 @@ tech infra for teammate starts suspecting an issue with too many database connec
 hungry on database connections when many websockets are open.
 We've never fully resolved this, but intuitively there's no way a site with a few thousand concurrent users
 should need 600+ Postgres connections. It just...no, something smells wrong there on the math. This
-issue has burnede us in the past,
+issue has burned us in the past,
 but we've always found a way around it with [connection pooling](https://stackoverflow.blog/2020/10/14/improve-database-performance-with-connection-pooling/) and using bigger servers.
 
 We're pretty invested in getting Hunt fixed so that we can do puzzles. A few teammate people
-drop into the #tech channele of the handoff server to help debug with TTBNL.
+drop into the #tech channel of the handoff server to help debug with TTBNL.
 There isn't too much we can do, aside from passing along sample queries we used for diagnostics,
 asking questions about server configuration, and recommending TTBNL remove all non-essential
 websockets.
@@ -160,7 +160,7 @@ to see if there's something we missed.
 
 TTBNL will probably go into more detail in their AMA, but my rough understanding is that they figure out the request
 queue is the reason the server crashes and stops responding. As a temporary measure, they deploy
-a change that caps the request queue size, causing the serveer to throw more 500s immediately
+a change that caps the request queue size, causing the server to throw more 500s immediately
 instead of trying to queue them.
 (This is later explained to teams as "fixing the server by making it fail faster".)
 It still seems likely there's a resource leak, and the root cause isn't traced, but the site
@@ -178,7 +178,7 @@ We got a very brief shout-out at wrap-up for helping fix the server. I don't thi
 I will say that I'm not sure we would have done better in TTBNL's position.
 Whatever happened is mysterious enough that we haven't seen it before.
 I've been poking into tph-site post-hunt, and I still don't
-understand why the load test pre-Hunt failed to capture the during-Hunt behavior. Maybe the 15% moree Hunt participants this year pushed things over the edge? Maybe
+understand why the load test pre-Hunt failed to capture the during-Hunt behavior. Maybe the 15% more Hunt participants this year pushed things over the edge? Maybe
 a new team's hunt management software hammered the backend too hard? Maybe MIT Guest Wi-Fi does something weird?
 I kept seeing "Blocked Page" errors on MIT Guest Wi-Fi when I tried to use Google search on Firefox,
 unless I used Private Browsing, so they're definitely doing *something* different than normal
@@ -271,7 +271,7 @@ is finished before I get my code going.
 
 **Two Outs, Two Strikes, and...** - I didn't work on this puzzle, but want to call it out as very funny.
 
-**temporary name** - We solve the answer matching pretty quickly. I volunteer to enter it into the site. It fails to do anything, and announce we're missing something.
+**temporary name** - We solve the answer matching pretty quickly. I volunteer to enter it into the site. It fails to do anything, and I announce we're missing something.
 Around 10 minutes later, someone else resubmits the same answers to the website and it works, unlocking part 2. I guess I filled out the form wrong? Oops.
 
 **Do You Like Wordle?** - This was a very infamous puzzle to me, because it was our last feeder in all the Underworld rounds. We initially ignored
@@ -377,7 +377,7 @@ As for why this is the case, the short version is that if you have an $$n$$-degr
 The first line is writing out the values of said $$g$$. The second line is the values of the $$(n-2)$$-degree polynomial $$g_2(x) = g(x+1) - g(x)$$. Repeating this keeps reducing the degree, ending at a 0-degree (constant) polynomial.
 Extending the constant and propagating the sum back up is the same as backtracking through the series of $$g$$ polynomials back to $$f$$.
 
-In fact, you can derive the closed form of $$f(x)$$ from any such difference table, but if you want know how, you should really just read the [Brilliant](https://brilliant.org/wiki/method-of-differences/) article about finite differences instead. It has rigorous proofs for all these steps.
+In fact, you can derive the closed form of $$f(x)$$ from any such difference table, but if you want to know how, you should really just read the [Brilliant](https://brilliant.org/wiki/method-of-differences/) article about finite differences instead. It has rigorous proofs for all these steps.
 </div>
 
 What were we talking about? Oh right, puzzles! Unfortunately that was the only puzzle I did
@@ -421,7 +421,7 @@ inspecting network traffic and getting suspicious why the request was including 
 but became convinced that the numbering on the D20 would be driven by combining the wordplay half
 with the D&D half, rather than from just the wordplay half. Looking at the hints, I don't think we ever would have gotten it, and
 we were pretty willing to move on after being stuck for many hours. (The assembled D20 was stomped flat
-and tossed into a trash can at end of Hunt. No one wanted to bring it home.)
+and tossed into a trash can at the end of Hunt. No one wanted to bring it home.)
 
 In a more normal Hunt I would be upset, but we were just trying to have fun and the wordplay part
 of the solve was rewarding enough.
@@ -440,7 +440,7 @@ Me: "Sounds terrifying. I'm in the middle of this Triangles solve, but I'll come
 
 ## Hell, MI
 
-I missed this entire round. The bits and pieces I saw of it looked cool, I'll have to take another look later. The majority of this round was solved between Saturday 1 AM - Saturday 5 AM, and then the meta was handed off to people who'd actually gotten sleep.
+I missed this entire round. The bits and pieces I saw looked cool, I'll have to take another look later. The majority of this round was solved between Saturday 1 AM - Saturday 5 AM, and then the meta was handed off to people who'd actually gotten sleep.
 
 ## Las Vegas, NV
 
@@ -582,18 +582,18 @@ How does it work? Oh I have no idea. I didn't work on it.
 **Augmented Raility** - video game puzzle video game puzzle video game puzzle.
 
 teammate is the kind of team that takes this puzzle and identifies all the games and 80% of the maps in the games in 5 minutes without using search engines.
-Finding the exact positions took longer, but not too long, and we nutrimatic-ed the answwer at
+Finding the exact positions took longer, but not too long, and we nutrimatic-ed the answer at
 5/10 letters. I wonder if choosing Streets for GoldenEye 64 was a reference to [Streets 1:12](https://www.youtube.com/watch?v=oYmqJl4MoNI) (slightly NSFW due to language).
 
 **Von Schweetz's Big Question** - We did the first step, which reminded me a lot of [Anthropology](https://www.puzzlesaremagic.com/puzzle/anthropology) from Puzzles are Magic, and then
 started the second step, which also reminded me of Anthropology from Puzzles are Magic - not
-mechnically, more that
+mechanically, more that
 I suspected the 1st step was an artificial excuse to make indices more interesting for the 2nd step.
 Unfortunately we didn't finish this one since the meta for the round was solved before we got very far.
 
 ## Nashville, TN
 
-**Sorry Not Sorry** - Incredible puzzle idea. Not sure I like that it's such a sprase
+**Sorry Not Sorry** - Incredible puzzle idea. Not sure I like that it's such a sparse
 "diagramless" but we were cackling for most of the solve.
 
 **Duet (meta)** - We understood the round structure of Nashville, and that there was likely
@@ -673,7 +673,7 @@ into the database to see what we could find. We tried to recruit astronomy help,
 that:
 
 1. This year teammate had someone who looks for exoplanets in their spare time.
-2. They had already left and were travelling home.
+2. They had already left and were traveling home.
 
 So, we're on our own.
 
@@ -693,7 +693,7 @@ I don't have any better ideas on how to use the answers, and I know how to write
 to bash it with code. I'm confident I can prove the idea is 100% correct or 100% wrong in at most
 30 minutes.
 
-By the time I come back, the other Gaia meta people have indepedently decided it's worth trying
+By the time I come back, the other Gaia meta people have independently decided it's worth trying
 the "sum of letters" idea.
 What follows is a teammate classic: can the programmer make their code work faster than the people
 working by hand? I win the race and find our 4/6 answers only gives two solutions.
@@ -757,7 +757,7 @@ things as we redeemed free answers elsewhere.
 
 Since we unlocked it so late, most of the work here was done out of hotel rooms. Across
 teammate, we designed some hotel rooms as "sleeping rooms",
-and others as "working rooms", shuffling people around depending on desire and abilitiy to
+and others as "working rooms", shuffling people around depending on desire and ability to
 stay awake. I didn't come to Mystery Hunt planning to pull an all-nighter, but with us being in reaching
 distance of an ending, I decided to stay up.
 
@@ -781,7 +781,7 @@ Coming back to campus in the morning, solving had mostly slowed down to chipping
 and waiting for increasingly delayed hints. Once the "coin has been found" email came out,
 we got a call from TTBNL giving the runaround cutoff time. They said that based on our solve
 progress, we likely wouldn't make it.
-This really killed the solving motivation to start work on the last part of Nashville we just
+This really killed the motivation to start work on the last part of Nashville we just
 unlocked, so many of us decided to start cleaning up HQ instead.
 
 Stats aren't out yet, but I believe with our final push we got to around 7th. A bit disappointed
