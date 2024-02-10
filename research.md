@@ -23,7 +23,7 @@ Papers:
 ### AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents
 
 *Michael Ahn, Debidatta Dwibedi, Chelsea Finn, Montse Gonzalez Arenas, Keerthana
-Gopalakrishnan, Karol Hausman, Brian Ichter, Alex Irpan, Nikhil Joshi, Ryan Julian, Sean
+Gopalakrishnan\*, Karol Hausman, Brian Ichter, Alex Irpan\*, Nikhil Joshi, Ryan Julian, Sean
 Kirmani, Isabel Leal, Edward Lee, Sergey Levine, Yao Lu, Isabel Leal, Sharath Maddineni,
 Kanishka Rao, Dorsa Sadigh, Pannag Sanketi, Pierre Sermanet, Quan Vuong, Stefan Welker,
 Fei Xia, Ted Xiao, Peng Xu, Steve Xu, Zhuo Xu*
