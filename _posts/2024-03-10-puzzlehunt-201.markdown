@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "Puzzlehunting 201"
+date:   2024-01-21 01:41:00 -0700
+---
+
+I'd like to think I'm good at puzzlehunts. Evidence for:
+
+* Placed 2nd at the recent Who Killed Ickey? Treasure Hunt.
+* Got 1st place at a Microsoft College Puzzle Challenge in 2016. (For that campus, not globally.)
+* Was on the winning MIT Mystery Hunt team, twice.
+
+This covers the span of easy hunts where the main bottleneck is moving fast (Ickey), and hard hunts where the bottleneck is having good ideas (MIT Mystery Hunt).
+I've been doing puzzlehunts for about 13 years and have picked up a few ideas along the way. Now I'm going to share them.
+
+Most of these ideas are not original. Many of them are tricks borrowed from other people. The target
+audience for this post is someone who's done multiple puzzlehunts and is interested in getting faster at them,
+so **I will not be trying to introduce what puzzlehunts are, or how puzzlehunt-style puzzles work**. People interested
+in that should read these introductions, or (better) solve some hunts like DP Puzzle Hunt or recent iterations of
+CMU Puzzlehunt.
+
+
+Disclaimer
+--------------------------------------------------------------------------
+
+Do you really want to get better at puzzles?
+
+I'm serious. I think they're a ton of fun, but they are very definitely artificial. I will
+usually claim that puzzlehunts are a good way to practice data analysis and organization,
+research hypothesis testing, and generic problem solving. That's all true, but it's true only up
+to a point. At some point it turns into practicing the very narrow skills of things that are
+acceptable in puzzlehunt style puzzles, rather than learning something more general. It's like
+how high school math contests are correlated with doing math research, but aren't *actually*
+math research.
+
+And in particular, some skills that make you faster at puzzles could be bad in real life.
+Much like engineer's induction, a lot of puzzlehunt tricks are driven by assuming there's a
+simple satisfying explanation - which is true for both puzzles and for conspiracy theorists.
+
+(I should probably cut this section I don't actually have a point past this.)
+
+
+My Puzzle Solving Theory
+----------------------------------------------------------------------
+
+Anecdotally, I know someone who's joked that puzzle solving is the processing of
+turning a document into a spreadsheet. But that is pretty true! Spreadsheets are a nice way
+to format structured data, and puzzles are about taking seemingly random data and finding
+the structure within it.
+
+To elaborate a bit more: a puzzle is some set of data, where the designer has
+To spell this out a bit more: 
+
+A puzzle is commonly described as some pile of data
