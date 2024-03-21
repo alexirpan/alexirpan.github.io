@@ -17,11 +17,14 @@ The strategy for these events can be pretty involved! Some of the considerations
 in [this video](https://www.youtube.com/watch?v=Q_yteloGGJo). Briefly,
 
 * Fighting game character matchups are asymmetric. If it's a Melee crew battle and you send out
-a Jigglypuff player, you're probably getting replied with a Fox player, because Fox is a good counter.
-So you might avoid sending in your Jigglypuff player in until the Fox players are eliminated.
-* *Players* can be asymmetric. Usually the strongest player on a team is saved for last, because
-they have to face the highest pressure, but some people's play styles may match up unusually well
-against others.
+a Jigglypuff player, you're probably getting replied with a Fox player, because Fox is a good counter
+to Puff. That means you may want to avoid sending your Jigglypuff playeer in until all Fox players
+are eliminated.
+* *Players* can be asymmetric. Sometimes one player's play style matches up unusually well against
+someone else.
+* It can be hard to decide when to send in your strong players. It's common wisdom to save the
+strongest player player for last, since they'll be under the highest stress. But when should you
+send in your 2nd-best player? Or your worst player?
 
 I don't play fighting games myself that much, I just watch them. My impression is that
 unless counterpicks are in play, the losing team usually sends in someone that's *close* in skill-level
@@ -66,7 +69,24 @@ Example: RPS Crew Battle
 
 Let's consider this rock-paper-scissors crew battle again.
 
-MATRIX
+<table class="table-bordered">
+<tr><td></td><td><strong>B 1</strong></td><td><strong>B 2</strong></td><td><strong>B 3</strong></td></tr>
+  <tr>
+  <td><strong>A 1</strong></td>    <td>0.5</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+  <td><strong>A 2</strong></td>    <td>1</td>
+    <td>0.5</td>
+    <td>0</td>
+  </tr>
+  <tr>
+  <td><strong>A 3</strong></td>    <td>0</td>
+    <td>1</td>
+    <td>0.5</td>
+  </tr>
+</table>
 
 Each team has three players: rock, paper, and scissors. Rock beats paper, paper
 beats scissors, and scissors beats rock. Since retries aren't part of a crew
@@ -121,15 +141,17 @@ since the current player defines whose turn it is, but it'll be easier to explai
 
 Such an $$f$$ can be defined recursively. We have the following base cases.
 
+(EDIT THIS TO INCLUDE CURRENT TEAM)
+
 * $$f(a_i, S_A, \emptyset) = 1$$. (Team A wins if team B has no players left and the player left is from team A.)
 * $$f(b_j, \emptyset, S_B) = 0$$. (The reverse.)
 
 We then have these recursive cases:
 
-* $$f(a_i, S_A, S_B) = \min_j p_{ij} f(a_i, S_A, S_B - \{b_j\}) + (1-p_{ij}) f(b_j, S_A, S_B - \{b_j\})
+* $$f(a_i, S_A, S_B) = \min_{j \in S_B} p_{ij} f(a_i, S_A, S_B - \{b_j\}) + (1-p_{ij}) f(b_j, S_A, S_B - \{b_j\})
 (It is Team B's turn. They want to play the player $$b_j$$ that minimizes the probability that team A wins.
 The current player will either stay $$a_i$$ or change to $$b_j$$, depending on how the match goes.)
-* $$f(b_j, S_A, S_B) = \max_i p_{ij} f(a_i, S_A - \{a_i\}, S_B) + (1-p_{ij}) f(b_j, S_A - \{a_i\}, S_B)
+* $$f(b_j, S_A, S_B) = \max_{i \in S_A} p_{ij} f(a_i, S_A - \{a_i\}, S_B) + (1-p_{ij}) f(b_j, S_A - \{a_i\}, S_B)
 (The reverse, where it's team A's turn and they want to maximize win probability.)
 
 One question you may have is that this definition assumes each player acts deterministically.
@@ -152,5 +174,85 @@ payoff matrix, as long as you can compute $$f$$. Computing $$f$$ is a different 
 equations above it can be done with dynamic programming in $$O(n^22^n)$$. It's not going to work at big scales,
 but if teams are like, 3-5 players, this is totally doable.
 
-So I coded up a random generator of 4-player crew battles (generate random win matrices), computed $$f$$ for
-each of them, and dug in to see what strategies were there.
+
+Simulating Crew Battles
+--------------------------------------------------------------------------
+
+Following the definitions above, I wrote a solver to take the individual player matchups,
+and compute the crew battle match-up matrix. For each choice of starting player, I computed
+the win probability for team A assuming each taem sends in players optimally.
+
+For example, here's the one for the rock-paper-scissors crew battle.
+
+MATRIX
+
+No, that's not a bug. It turns out the RPS crew battle is identical to an individual RPS game.
+But let's consider this version, where instead of rock beating scissors 100% of the time, it's
+only favored to win.
+
+MATRIX
+
+Here's the log of an example game.
+
+LOG
+
+For good measure, here's a random matchup matrix and the corresponding game matrix.
+
+MATRIX
+
+MATRIX
+
+Alright. Let's try something new. What if all player matchups are transitive?
+There are no rock-paper-scissor triangles. Instead,
+each player has a certain power level $$p$$, and if players of power levels $$p$$ and $$q$$
+fight, the win probability is $$p/(p+q)$$.
+
+Here's an example random matchup chart.
+
+MATRIX
+
+And here's the crew battle outcome matrix
+
+MATRIX
+
+Hang on. This implies that *it doesn't matter who each team sends out first*. The probability
+of winning the crew battle is the same. (Trying this with several random 3x3s reveals the same pattern.)
+
+Maybe this is a property of 3-player teams? Let's try this on something bigger, like 5-player teams
+
+MATRIX
+
+MATRIX
+
+Huh. Well, let's play a sample game. Surely the choices of who to send out against who matter?
+
+LOG
+
+I found this pretty surprising! Like, I assumed that you'd want to at least make some decision based on
+how generically good your opponent is. Yet these results suggest it doesn't matter at all.
+
+Just to verify, what if only one team follows power levels, and the other does not? Imagine a team
+of all Foxes against a bunch of other characters with varying Fox matchups. Here's what that would look like - in this example, team B is all the same character.
+
+MATRIX
+
+MATRIX
+
+Now the ordering matters again.
+
+Let's write up this observation more formally.
+
+**Conjecture:** Suppose you have an $$N$$ player crew battle, with players $$A = \{a_1, a_2, \cdots, a_N\}$$ and $$B = \{b_1, b_2, \cdots, b_N\}$$. A team is transitive if there is a way to order players on that team by strength. More formally, there's an ordering $$\{a_1, a_2, \cdots, a_N\}$$ such that for all pairs $$i,j$$, if $$i > j$$, then $$Pr(a_i > b) \ge Pr(a_j > b)$$ for any opponent $$b$$. If both teams A and B are transitive, then the probability
+of winning the crew battle does not depend on strategy.
+
+I haven't proved this myself, but it feels very provable. (My first instinct would be a proof by induction on the number of remaining players.)
+I'll leave it up to someone else to carry out the details.
+
+Assuming this conjecture is true, what does that imply about real crew battles? I believe it means **you should entirely
+ignore player strength when picking players, and should only focus on counter-picks**. If your anchor has a good counter-pick,
+don't save them for last, just send them out there. Of course, there are all sorts of psychological factors at play. Maybe your
+best player does have the best nerves of steel, and should still be saved for last because anyone else there would get worse with
+pressure. And, although the math suggests it doesn't matter to send your weakest player against their strongest player, you
+probably shouldn't just for morale reasons.
+
+
