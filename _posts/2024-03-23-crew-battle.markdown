@@ -352,7 +352,7 @@ I found this pretty surprising! Going into this I assumed there would be some ru
 tied to difference in skill level. I certainly didn't expect it to not matter at all.
 This result does depend on how we've modeled skill, that player with skill $$p$$ beats player with skill $$q$$ with probability $$p/(p+q)$$.
 However, this model is very common. It's called the [Bradley-Terry model](https://en.wikipedia.org/wiki/Bradley%E2%80%93Terry_model) and
-is the basis of Elo ratings. (And the basis for tuning AI chatbot responses based on human feedback, for what it's worth.)
+is the basis of Elo ratings. (And the basis for tuning AI chatbot responses based on human feedback.)
 
 Let's write up this observation more formally.
 
