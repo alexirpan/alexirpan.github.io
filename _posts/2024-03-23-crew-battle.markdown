@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Solving Crew Battle Strategy With Math"
-date:   2024-03-17 01:41:00 -0700
+date:   2024-03-23 22:11:00 -0700
 ---
 
 In Super Smash Bros tournaments, there's occasionally an event called a crew battle. (They show up in other
