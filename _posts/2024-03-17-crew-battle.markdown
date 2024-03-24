@@ -1,258 +1,377 @@
 ---
 layout: post
-title:  "The Crew Battle Problem"
+title:  "Solving Crew Battle Strategy With Math"
 date:   2024-03-17 01:41:00 -0700
 ---
 
-In fighting game tournaments, there's occasionally an event called a crew battle. Two teams of players compete
-in a series of 1v1 matches. For the first match, each team picks their starter simultaneously.
-After the first match, the winning player stays in, and the losing player is eliminated. The losing team
-picks a player to go in, and it repeats until one team runs out of players.
+In Super Smash Bros tournaments, there's occasionally an event called a crew battle. (They show up in other
+fighting games too, but I mostly watch Smash.) Two teams of players compete in a series of 1v1 matches.
+For the first match, each team picks a player simultaneously. They fight, and the loser is eliminated, while
+the winner stays in. The losing team then gets to pick a player to go in, and this repeats until one team
+is out of players.
 
 These events are always pretty hype. People like team sports!
 They're also often structured in a regional way (i.e. US vs Canada, West Coast vs East Coast), which
-can emphasize and play up regional rivalries.
+can emphasize and play up regional rivalries. The strategy for deciding who to send in can be complicated,
+and although it's usually done by intuition, I've always wondered what optimal strategy would be.
 
-The strategy for these events can be pretty involved! Some of the considerations are discussed
-in [this video](https://www.youtube.com/watch?v=Q_yteloGGJo). Briefly,
-
-* Fighting game character matchups are asymmetric. If it's a Melee crew battle and you send out
-a Jigglypuff player, you're probably getting replied with a Fox player, because Fox is a good counter
-to Puff. That means you may want to avoid sending your Jigglypuff playeer in until all Fox players
-are eliminated.
-* *Players* can be asymmetric. Sometimes one player's play style matches up unusually well against
-someone else.
-* It can be hard to decide when to send in your strong players. It's common wisdom to save the
-strongest player player for last, since they'll be under the highest stress. But when should you
-send in your 2nd-best player? Or your worst player?
-
-I don't play fighting games myself that much, I just watch them. My impression is that
-unless counterpicks are in play, the losing team usually sends in someone that's *close* in skill-level
-to the current player. Informally, you want to save your best player for their best player. This makes
-intuitive sense, and it's exciting for spectators because close matches are more fun to watch,
-but I've always wondered if it's actually correct. **What is the optimal crew battle strategy?**
+The reason it's complicated is that fighting game character matchups aren't perfectly balanced. Some
+characters counter other characters. Sometimes players are unusually good at a specific matchup - a Fox v Fox
+matchup is *theoretically* 50-50 but some players have earned a reputation for being really good at
+Fox dittos. And how about generic player strength? Typical rule of thumb is to keep your strongest player
+(the anchor)
+for last, because the last player faces the most psychological pressure. But if we ignored those factors,
+is that actually correct? When do you send in your 2nd strongest player, or weakest player?
+**What is the optimal crew battle strategy?**
 
 
 Theory
 -------------------------------------------------------------------------------------
 
-Let's formalize the problem a bit.
+Let's formalize the problem a bit. For the sake of simplicity, I will ignore stocks and assume each
+match is a best-of-1 1-stock match. I expect the conclusions to be similar anyways.
 
-There are $$N$$ players on each team. I've used Smash Bros. as an example, where each player
-has multiple stocks (lives), and stocks carry over between fights. For simplicity, let's ignore
-this and assume players can't get "partially defeated".
+Let's call the teams $$A$$ and $$B$$. There are $$n$$ players on each team, denoted as $$\{a_1, a_2, \cdots, a_n\}$$
+and $$\{b_1, b_2, \cdots, b_n\}$$. Each player has a certain chance of beating each other player
+which can be described as an $$n x n$$ matrix of probabilities, where row $$i$$ column $$j$$ is
+the probability $$a_i$$ beats $$b_j$$. We'll denote that as $$\Pr(a_i > b_j)$$.
+This matrix doesn't need to be symmetric, or have its rows or columns sum to 1.
 
-In that case, we can describe the win probabilities between players as an $$N x N$$ matrix $$A$$,
-where $$A_{ij}$$ is the probability player $$i$$ from team 1 beats player $$j$$ of team 2. Since
-player strength varies, note this matrix doesn't need to be symmetric, or have its rows / columns
-sum to 1.
+$$
+\begin{bmatrix}
+    \Pr(a_1 > b_1) & \Pr(a_1 > b_2) & \cdots & \Pr(a_1 > b_n) \\
+    \Pr(a_2 > b_1) & \Pr(a_2 > b_2) & \cdots & \Pr(a_2 > b_n) \\
+    \vdots & \vdots & \ddots & \vdots \\
+    \Pr(a_n > b_1) & \Pr(a_n > b_2) & \cdots & \Pr(a_n > b_n)
+\end{bmatrix}
+$$
 
-EXAMPLE
+We'll call this the **matchup matrix**. Each team knows the matchup matrix, and has a goal of
+maximizing their team's win probability. To make this concrete, we could take the example
+of a rock-paper-scissors crew battle. Each team has 3 players: a rock player, a paper player,
+and a scissors player. That would give the following matchup matrix.
 
-Each team's goal is to maximize the probability their team wins.
+$$
+\begin{array}{c|ccc}
+    & \textbf{rock} & \textbf{paper} & \textbf{scissors} \\ \hline
+    \textbf{rock} & 0.5 & 0 & 1 \\
+    \textbf{paper} & 1 & 0.5 & 0 \\
+    \textbf{scissors} & 0 & 1 & 0.5
+\end{array}
+$$
 
-First off: should we expect there to be an efficient algorithm that solves this?
+Normally, in RPS you'd play again on a tie. Since there are no ties in crew battles, we'll instead
+say that if both players match, we pick a winner randomly. One example game could be this:
 
-I have not thought about it that much, but my suspicion is, probably not. Maximizing win probability
-here sounds very similar to picking an optimal order of the $$N$$ players, which immediately
-sets off [travelling salesman](https://en.wikipedia.org/wiki/Travelling_salesman_problem) alarms
-in my head. I hadn't looked into complexity of game theory before this post, but this crew
-battle problem is essentially a more complex version of a typical game where you'd be allowed
-to send in the same player multiple times. Finding the Nash equilbrium of even those games
-is part of a complexity class called PPAD, which isn't quite NP-complete but expected to hold
-hard problems within it. See [Daskalakis, Goldberg, Papadimitriou 2009](https://people.csail.mit.edu/costis/simplified.pdf)
-for more.
+<pre>
+A picks rock, B picks scissors
+A rock beats B scissors
+B sends in paper
+A rock loses to B paper
+A sends in scissors
+A scissors beats B paper
+B sends in rock
+A scissors loses to B rock
+A sends in paper
+A paper beats B rock
+B is out of players - A wins.
+</pre>
+
+This is a pretty silly crewbattle because of the lack of drama, but we'll come back to this
+example over the course of the post.
+
+First off: given a generic matchup matrix, should we expect there to be an efficient algorithm that solves crew battles?
+
+My suspicion is, probably not. Finding the optimal strategy is at some level similar to picking
+the optimal order of the $$N$$ players on each team, which immediately
+sets off [travelling salesman](https://en.wikipedia.org/wiki/Travelling_salesman_problem) alarm
+bells in my head. Solving crew battles seems like a strictly harder version of solving regular
+matrix payoff games, where you only have 1 round of play, and a quick search I did indicates those
+are already suspected to be hard to solve generally.
+(See [Daskalakis, Goldberg, Papadimitriou 2009](https://people.csail.mit.edu/costis/simplified.pdf) if
+curious.)
+
+Still, even though there isn't an efficient algorithm, there definitely is **an** algorithm.
+Let's define a function $$f$$, where $$f(p, team, S_A, S_B)$$ is the probability team $$A$$ wins if
+
+* The current player in is $$p$$.
+* The team deciding to who to send in is $$team$$ (the team that $$p$$ is **not** on).
+* $$S_A$$ is the set of players left on team A, ignoring player $$p$$.
+* $$S_B$$ is the set of players left on team B, ignoring player $$p$$.
+
+Such an $$f$$ can be defined recursively. Here are the base cases.
+
+* If $$team = A$$ and $$S_A$$ is empty, then $$f(p, team, S_A, S_B) = 0$$, since A has lost due to having 0 players left.
+* If $$team = B$$ and $$S_B$$ is empty, then $$f(p, team, S_A, S_B) = 1$$, since A has won due to B having 0 players left.
+
+(I got confused by this, so one clarification: if $$team = A$$, the crew battle is not over if $$S_B$$ is empty. If it's A's
+turn to pick, player $$p$$ must be from team B. An empty $$S_B$$ means B is on their last player, but they can still win
+if $$p$$ beats everyone left.)
+
+Here are the recursive cases.
+
+$$
+f(a_i, B, S_A, S_B) = \min_{j \in S_B} \Pr(a_i > b_j) f(a_i, B, S_A, S_B - \{b_j\}) + (1-\Pr(a_i > b_j)) f(b_j, A, S_A, S_B - \{b_j\})
+$$
+
+(It is Team B's turn. They want to play the player $$b_j$$ that minimizes the probability that team A wins.
+The current player will either stay as $$a_i$$ or change to $$b_j$$.)
+
+$$
+f(b_j, A, S_A, S_B) = \max_{i \in S_A} \Pr(a_i > b_j) f(a_i, B, S_A - \{a_i\}, S_B) + (1-\Pr(a_i > b_j)) f(b_j, A, S_A - \{a_i\}, S_B)
+$$
+
+(The reverse, where it's team A's turn and they want to maximize the probability A wins.)
+
+Computing this $$f$$ can be done with dynamic programming in $$O(n^22^n)$$ time. That's not going to work
+at big scales, but I only want to study teams of like, 3-5 players, so this is totally doable.
+
+One neat thing about crew battles is that after the first match, it turns into a turn-based perfect
+information game. Sure, the outcome of each match is random, but once it's your turn, the opposing team is locked
+into their player, and you can pick the exact optimal counter.
+
+The only time randomness is relevant to crew battles is in the very first match, where both
+teams pick simultaneously. This means we can reduce all the crew battle outcomes down to a single
+$$n x n$$ matrix, which I'll call the **crew battle matrix**. Each entry $$ij$$ in the crew battle
+matrix is the probability that team A wins the crew battle, if in the very first match A sends in $$a_i$$
+and B send in $$b_j$$. If $$C$$ is that matrix, then we have
+
+$$
+C_{ij} = \Pr(a_i > b_j) f(a_i, B, S_A - \{a_i\}, S_B - \{b_j\}) + (1-\Pr(a_i, b_j)) f(b_j, A, S_A - \{a_i\}, S_B - \{b_j\})
+$$
+
+with
+
+$$
+C =
+\begin{bmatrix}
+    C_{11} & C_{12} & \cdots & C_{1n} \\
+    C_{21} & C_{22} & \cdots & C_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    C_{n1} & C_{n2} & \cdots & C_{nn}
+\end{bmatrix}
+$$
+
+This turns our original more complicated problem into exactly a 1 round matrix game like
+[prisoner's dilemma](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma) or [stag hunt](https://en.wikipedia.org/wiki/Stag_hunt)...assuming
+we have $$f$$. But computing $$f$$ by hand is really annoying. It's likely there's no way to
+get $$f$$ computed for arbitrary crew battles unless we use code.
 
 
-Example: RPS Crew Battle
+So I Wrote Some Python Code to Compute f for Arbitrary Crew Battles
 ----------------------------------------------------------------------------
 
-Let's consider this rock-paper-scissors crew battle again.
+Let's consider the RPS crew battle again. Here's the matchup matrix:
 
-<table class="table-bordered">
-<tr><td></td><td><strong>B 1</strong></td><td><strong>B 2</strong></td><td><strong>B 3</strong></td></tr>
-  <tr>
-  <td><strong>A 1</strong></td>    <td>0.5</td>
-    <td>0</td>
-    <td>1</td>
-  </tr>
-  <tr>
-  <td><strong>A 2</strong></td>    <td>1</td>
-    <td>0.5</td>
-    <td>0</td>
-  </tr>
-  <tr>
-  <td><strong>A 3</strong></td>    <td>0</td>
-    <td>1</td>
-    <td>0.5</td>
-  </tr>
-</table>
+$$
+matchup: \begin{array}{c|ccc}
+    & \textbf{rock} & \textbf{paper} & \textbf{scissors} \\ \hline
+    \textbf{rock} & 0.5 & 0 & 1 \\
+    \textbf{paper} & 1 & 0.5 & 0 \\
+    \textbf{scissors} & 0 & 1 & 0.5
+\end{array}
+$$
 
-Each team has three players: rock, paper, and scissors. Rock beats paper, paper
-beats scissors, and scissors beats rock. Since retries aren't part of a crew
-battle, let's say that if both teams send out the same player, then the winner
-is random with 50% probability.
+and here's what my code outputs for the crew battle matrix, assuming optimal play.
 
-Just due to the symmetry, I'd expect the optimal strategy to be for each team
-to randomly pick who they send in first. That's what you're supposed to do
-in standard rock-paper-scissors. As an example, let's say team 1 sent in rock, team 2
-sent in scissors. Now what happens?
+$$
+crew battle: \begin{array}{c|ccc}
+    & \textbf{rock} & \textbf{paper} & \textbf{scissors} \\ \hline
+    \textbf{rock} & 0.5 & 0 & 1 \\
+    \textbf{paper} & 1 & 0.5 & 0 \\
+    \textbf{scissors} & 0 & 1 & 0.5
+\end{array}
+$$
 
-* Rock stays in, scissors is eliminated.
-* Team 2 can send in paper or rock.
-* If team 2 sends in paper, team 1 replies with scissors. Team 2 replies with rock. Team
-1 replies with paper, and the crew battle's over for team 1. So paper is a 100% losing
-move for team 2.
-* If team 2 sends in rock, and loses the 50-50, then team 2 loses 100% of the time again.
-(They'd have just paper left - which is strictly worse than having both paper + rock left.)
-* If team 2 wins the 50-50, then the game state looks like this:
+No, that's not a typo. The two are identical! Let's consider a crew battle of "noisy RPS", where
+rock is only favored to beat scissors, rather than 100% to win, and so on.
 
-team 1: paper, scissors
-team 2: rock (in play), paper
+$$
+matchup: \begin{array}{c|ccc}
+    & \textbf{rock} & \textbf{paper} & \textbf{scissors} \\ \hline
+    \textbf{rock} & 0.5 & 0.3 & 0.7 \\
+    \textbf{paper} & 0.7 & 0.5 & 0.3 \\
+    \textbf{scissors} & 0.3 & 0.7 & 0.5
+\end{array}
+$$
 
-Team 1 will send in paper (and win). Team 2 will send in paper and either win or lose. If they
-lose, it's over. If they win, team 1 can still send in scissors and guarantee the win.
+$$
+crew battle: \begin{array}{c|ccc}
+    & \textbf{rock} & \textbf{paper} & \textbf{scissors} \\ \hline
+        \textbf{rock} & 0.500 & 0.399 & 0.601 \\
+            \textbf{paper} & 0.601 & 0.500 & 0.399 \\
+                \textbf{scissors} & 0.399 & 0.601 & 0.500 \\
+                \end{array}
+                $$
 
-So in other words, the fate of team 2 was sealed as soon as they lost the first match. The problem
-is that once team 1 wins the first match, they're happy to just trade players 1-for-1 until team
-2 runs out of players, and team 2 doesn't enough wild card potential to make up the deficit.
+Intuitively, I feel it makes sense that this pulls towards the original RPS matrix - in some sense,
+the crew battle is like playing 3 rounds of RPS instead of 1, just with more complicated restrictions.
 
-Still, this does reveal an important point: **each team's strategy is dynamic, and depends on
-the current state of the game.** You could imagine a version of the game where each team
-secretly writes down an order of (rock, paper, scissors), they both reveal their player order, and
-they follow it to the end. It's a valid strategy but it loses the power of a dynamic order.
-(From a control theory perspective, it's the differencee between an open-loop controller that
-never re-plans and a closed-loop controller that does.)
+Here's the log of a sample game.
 
+<pre>
+Game start, A = rock B = scissors
+Win prob for A is 0.601
+A = rock beats B = scissors
+If B sends in paper: A wins 0.729
+If B sends in rock: A wins 0.776
+B sends in paper
+A = rock beats B = paper
+If B sends in rock: A wins 0.895
+B sends in rock
+A = rock beats B = rock
+B has no more players
+A wins
+</pre>
 
-Okay Time to Generalize
---------------------------------------------------------------------------
-
-Earlier I argued there probably wasn't an efficient algorithm for solving crew battles. How
-about inefficient ones?
-
-Let's say there's some function $$f$$ that computes the win probability for team 1, assuming
-both teams play optimally. After the first match, the state of a crew battle is:
-
-* The current player $$a_{i}$$ or $$b_{j}$$.
-* The set of players left for teams A and B, $$S_A$$ and $$S_B$$. These sets do not include the current player.
-* Whose turn it is to send in a player, $$team_A$$ or $$team_B$$. (Technically this is redundant,
-since the current player defines whose turn it is, but it'll be easier to explain this way.)
-
-Such an $$f$$ can be defined recursively. We have the following base cases.
-
-(EDIT THIS TO INCLUDE CURRENT TEAM)
-
-* $$f(a_i, S_A, \emptyset) = 1$$. (Team A wins if team B has no players left and the player left is from team A.)
-* $$f(b_j, \emptyset, S_B) = 0$$. (The reverse.)
-
-We then have these recursive cases:
-
-* $$f(a_i, S_A, S_B) = \min_{j \in S_B} p_{ij} f(a_i, S_A, S_B - \{b_j\}) + (1-p_{ij}) f(b_j, S_A, S_B - \{b_j\})
-(It is Team B's turn. They want to play the player $$b_j$$ that minimizes the probability that team A wins.
-The current player will either stay $$a_i$$ or change to $$b_j$$, depending on how the match goes.)
-* $$f(b_j, S_A, S_B) = \max_{i \in S_A} p_{ij} f(a_i, S_A - \{a_i\}, S_B) + (1-p_{ij}) f(b_j, S_A - \{a_i\}, S_B)
-(The reverse, where it's team A's turn and they want to maximize win probability.)
-
-One question you may have is that this definition assumes each player acts deterministically.
-The important distinction is that after the 1st match, each player takes turns picking a player, and there's
-no hidden information. The full state is perfectly known.
-In such a perfect information turn-based scenario, it's always optimal to act deterministically. To make this
-more concrete, say we have three players left. We compute that if we send in player 1, then everyone plays
-perfectly afterwards, then we have a 30% chance. Sending in player 2 gives a 40% chance, and player 3 gives
-a 50% chance. Then we should just always send in player 3. Randomly sending in player 1 or 2 does nothing
-except bleed win probability.
-
-The only time randomness is relevant is when deciding which player to send in at the start. Assuming
-both players know the values of $$f$$ for all possible states, we can reduce the original matrix into
-a pure 1-round win-probability matrix.
-
-MATRIX
-
-Thus, our game that initially looked more complicated that a payoff matrix can be turned into a
-payoff matrix, as long as you can compute $$f$$. Computing $$f$$ is a different story, but based on the
-equations above it can be done with dynamic programming in $$O(n^22^n)$$. It's not going to work at big scales,
-but if teams are like, 3-5 players, this is totally doable.
-
-
-Simulating Crew Battles
---------------------------------------------------------------------------
-
-Following the definitions above, I wrote a solver to take the individual player matchups,
-and compute the crew battle match-up matrix. For each choice of starting player, I computed
-the win probability for team A assuming each taem sends in players optimally.
-
-For example, here's the one for the rock-paper-scissors crew battle.
-
-MATRIX
-
-No, that's not a bug. It turns out the RPS crew battle is identical to an individual RPS game.
-But let's consider this version, where instead of rock beating scissors 100% of the time, it's
-only favored to win.
-
-MATRIX
-
-Here's the log of an example game.
-
-LOG
+Bad beat for team B here, getting entirely swept by rock.
 
 For good measure, here's a random matchup matrix and the corresponding game matrix.
 
-MATRIX
+$$
+matchup: \begin{array}{c|ccc}
+    & \textbf{b}_1 & \textbf{b}_2 & \textbf{b}_3 \\ \hline
+        \textbf{a}_1 & 0.733 & 0.666 & 0.751 \\
+            \textbf{a}_2 & 0.946 & 0.325 & 0.076 \\
+                \textbf{a}_3 & 0.886 & 0.903 & 0.089 \\
+                \end{array}
+$$
 
-MATRIX
+$$
+crew battle: \begin{array}{c|ccc}
+    & \textbf{b}_1 & \textbf{b}_2 & \textbf{b}_3 \\ \hline
+        \textbf{a}_1 & 0.449 & 0.459 & 0.757 \\
+            \textbf{a}_2 & 0.748 & 0.631 & 0.722 \\
+                \textbf{a}_3 & 0.610 & 0.746 & 0.535 \\
+                \end{array}
+$$
 
-Alright. Let's try something new. What if all player matchups are transitive?
-There are no rock-paper-scissor triangles. Instead,
-each player has a certain power level $$p$$, and if players of power levels $$p$$ and $$q$$
-fight, the win probability is $$p/(p+q)$$.
+Alright. Let's try something new. What if all player matchups are transitive? Suppose each
+player has a certain power level $$p$$, and if players of power levels $$p$$ and $$q$$
+fight, the power level $$p$$ player wins $$p/(p+q)$$ of the time. Let's run this again.
+I've sorted the players such that $$a_1$$ and $$b_1$$ are weakest, while $$a_5$$ and $$b_5$$
+are strongest. Since the matchup matrix is the win probability of A, the values go down
+when reading across a row (fighting better B players), and up when going down a column
+(figher better A players)
 
-Here's an example random matchup chart.
+$$
+matchup: \begin{array}{c|ccc}
+    & \textbf{b}_1 & \textbf{b}_2 & \textbf{b}_3 \\ \hline
+        \textbf{a}_1 & 0.289 & 0.199 & 0.142 \\
+            \textbf{a}_2 & 0.585 & 0.462 & 0.365 \\
+                \textbf{a}_3 & 0.683 & 0.568 & 0.468 \\
+                \end{array}
+$$
 
-MATRIX
+$$
+crew battle: \begin{array}{c|ccc}
+    & \textbf{b}_1 & \textbf{b}_2 & \textbf{b}_3 \\ \hline
+        \textbf{a}_1 & 0.385 & 0.385 & 0.385 \\
+            \textbf{a}_2 & 0.385 & 0.385 & 0.385 \\
+                \textbf{a}_3 & 0.385 & 0.385 & 0.385 \\
+                \end{array}
+$$
 
-And here's the crew battle outcome matrix
+...Huh. This suggests *it doesn't matter who each team sends out first*. The probability
+of winning the crew battle is the same. Trying this with several random 3x3s reveals the same pattern.
 
-MATRIX
+Maybe this is just because 3-player crew battles are weird? Let's try this on a 5-player crew battle.
 
-Hang on. This implies that *it doesn't matter who each team sends out first*. The probability
-of winning the crew battle is the same. (Trying this with several random 3x3s reveals the same pattern.)
+$$
+matchup:
+\begin{array}{c|ccccc}
+    & \textbf{b}_1 & \textbf{b}_2 & \textbf{b}_3 & \textbf{b}_4 & \textbf{b}_5 \\ \hline
+        \textbf{a}_1 & 0.715 & 0.706 & 0.564 & 0.491 & 0.340 \\
+            \textbf{a}_2 & 0.732 & 0.723 & 0.584 & 0.511 & 0.358 \\
+                \textbf{a}_3 & 0.790 & 0.782 & 0.659 & 0.591 & 0.435 \\
+                    \textbf{a}_4 & 0.801 & 0.794 & 0.675 & 0.608 & 0.453 \\
+                        \textbf{a}_5 & 0.807 & 0.800 & 0.682 & 0.616 & 0.461 \\
+                        \end{array}
 
-Maybe this is a property of 3-player teams? Let's try this on something bigger, like 5-player teams
+                        $$
 
-MATRIX
+$$
+crew battle:
+\begin{array}{c|ccccc}
+    & \textbf{b}_1 & \textbf{b}_2 & \textbf{b}_3 & \textbf{b}_4 & \textbf{b}_5 \\ \hline
+        \textbf{a}_1 & 0.731 & 0.731 & 0.731 & 0.731 & 0.731 \\
+            \textbf{a}_2 & 0.731 & 0.731 & 0.731 & 0.731 & 0.731 \\
+                \textbf{a}_3 & 0.731 & 0.731 & 0.731 & 0.731 & 0.731 \\
+                    \textbf{a}_4 & 0.731 & 0.731 & 0.731 & 0.731 & 0.731 \\
+                        \textbf{a}_5 & 0.731 & 0.731 & 0.731 & 0.731 & 0.731 \\
+                        \end{array}
+$$
 
-MATRIX
+Same thing occurs! Let's play a sample game. Even if the win probability is the same no matter
+who starts, surely the choice of who to send out in the future matches matter.
 
-Huh. Well, let's play a sample game. Surely the choices of who to send out against who matter?
+<pre>
+Game start, A = 1 B = 2
+Win prob for A is 0.731
+A = 1 beats B = 2
+If B sends in 0: A wins 0.804
+If B sends in 1: A wins 0.804
+If B sends in 3: A wins 0.804
+If B sends in 4: A wins 0.804
+B sends in 0
+A = 1 beats B = 0
+If B sends in 1: A wins 0.836
+If B sends in 3: A wins 0.836
+If B sends in 4: A wins 0.836
+B sends in 1
+A = 1 loses B = 1
+If A sends in 0: A wins 0.759
+If A sends in 2: A wins 0.759
+If A sends in 3: A wins 0.759
+If A sends in 4: A wins 0.759
+A sends in 0
+A = 0 beats B = 1
+If B sends in 4: A wins 0.800
+If B sends in 3: A wins 0.800
+B sends in 4
+A = 0 beats B = 4
+If B sends in 3: A wins 0.969
+B sends in 3
+A = 0 beats B = 3
+B has no more players
+A wins
+</pre>
 
-LOG
+The probability of A winning the crew battles shifts as matches are decided in favor of A or B, but the
+win probability *does not change* for any of the choices.
 
-I found this pretty surprising! Like, I assumed that you'd want to at least make some decision based on
-how generically good your opponent is. Yet these results suggest it doesn't matter at all.
-
-Just to verify, what if only one team follows power levels, and the other does not? Imagine a team
-of all Foxes against a bunch of other characters with varying Fox matchups. Here's what that would look like - in this example, team B is all the same character.
-
-MATRIX
-
-MATRIX
-
-Now the ordering matters again.
+I found this pretty surprising! Going into this I assumed there would be some rule of thumb
+tied to difference in skill level. I certainly didn't expect it to not matter at all.
+This result does depend on how we've modeled skill, that player with skill $$p$$ beats player with skill $$q$$ with probability $$p/(p+q)$$.
+However, this model is very common. It's called the [Bradley-Terry model](https://en.wikipedia.org/wiki/Bradley%E2%80%93Terry_model) and
+is the basis of both Elo and RLHF of AI chatbot responses.
 
 Let's write up this observation more formally.
 
-**Conjecture:** Suppose you have an $$N$$ player crew battle, with players $$A = \{a_1, a_2, \cdots, a_N\}$$ and $$B = \{b_1, b_2, \cdots, b_N\}$$. A team is transitive if there is a way to order players on that team by strength. More formally, there's an ordering $$\{a_1, a_2, \cdots, a_N\}$$ such that for all pairs $$i,j$$, if $$i > j$$, then $$Pr(a_i > b) \ge Pr(a_j > b)$$ for any opponent $$b$$. If both teams A and B are transitive, then the probability
-of winning the crew battle does not depend on strategy.
+**Conjecture:** Suppose you have an $$N$$ player crew battle, with players $$A = \{a_1, a_2, \cdots, a_N\}$$ and $$B = \{b_1, b_2, \cdots, b_N\}$$. Further suppose each
+player has a non-negative skill level $$p$$, and every matchup follows $$\Pr(a_i > b_j) = p_{a_i} / (p_{a_i} + p_{b_j})$$. Then the probability of
+winning the crew battle does not depend on strategy.
 
-I haven't proved this myself, but it feels very provable. (My first instinct would be a proof by induction on the number of remaining players.)
-I'll leave it up to someone else to carry out the details.
-
-Assuming this conjecture is true, what does that imply about real crew battles? I believe it means **you should entirely
-ignore player strength when picking players, and should only focus on counter-picks**. If your anchor has a good counter-pick,
-don't save them for last, just send them out there. Of course, there are all sorts of psychological factors at play. Maybe your
-best player does have the best nerves of steel, and should still be saved for last because anyone else there would get worse with
-pressure. And, although the math suggests it doesn't matter to send your weakest player against their strongest player, you
-probably shouldn't just for morale reasons.
+I haven't proved this myself, but it feels very provable. Consider it an exercise to prove it yourself.
 
 
+So...What Does This Mean?
+------------------------------------------------------------------------
+
+Assuming this conjecture is true, I believe it means **you should entirely
+ignore player strength when picking players, and should only focus on factors that aren't tied to skill, like character matchups**.
+Fox is favored against Puff, so if you're playing against Hungrybox (the best Puff player of all time),
+then this suggests you should send in Generic Netplay Fox even though they'll most likely get wrecked.
+And conversely, it suggests a crew should *avoid* sending Hungrybox in if Generic Netplay Fox
+is in the ring, even though Hungrybox would probably win.
+
+Now, this is a pretty extreme conclusion. Psychologically, it's good for team morale if everyone can
+contribute, and sending people into matchups with a big mismatch in skill hurts that. But also, this
+suggests that crew battle strategy really isn't that important in the first place. At the top level, it's very
+rare to see very lopsided character matchups. Pro players tend to pick strong characters that have good
+matchups against most of the field. Given that the lopsided matchups are the only ways to get edges via
+strategy, the math suggests that team captains actually don't have much leverage over the outcome.
+The outcome is driven primarily by team strength. That's it.
+
+I think that's really the best outcome that could have come from all this. If your crew loses, you
+don't get to blame bad crew battle strategy. Your crew is just worse. Deal with it, take the L.
