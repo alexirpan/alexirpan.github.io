@@ -43,7 +43,7 @@ Puzzles are a collection of data, that has hidden patterns or structure, and
 solving a puzzle is about finding those structures.
 
 Solving puzzles quickly breaks down into three categories: generating good
-ideas about how a puzzle works, testing those ideas efficiently, and executing
+ideas about how a puzzle might work, quickly testing those ideas, and executing
 on the ideas that appear most correct.
 
 To generate more ideas, solve more puzzles to see what ideas have shown up in
@@ -79,7 +79,7 @@ how I approach puzzlehunts.
 Okay, on to the actual post.
 
 
-Part 1: Generating Ideas
+Generating Ideas
 ------------------------------------------------------------------------
 
 Puzzles are often described as having "a-has" or break-in points, where it
@@ -103,7 +103,7 @@ the first casualty. Sometimes, the parts you destroy are important to the puzzle
 So, try to make your sheet look as much like the puzzle as you can. Certain puzzles
 can make this hard or annoying (I am always annoyed at puzzles that use a hex grid).
 In those scenarios, do your best, but remember to look at the original puzzle if
-you've been stuck for a while.
+you've been stuck for a while. I like to add a note in the spreadsheet to "see original puzzle" if I can't transcribe something exactly.
 
 
 2. Take bad ideas seriously.
@@ -114,4 +114,72 @@ avoid concluding an idea is totally right. Very often, you can have 90% of the r
 idea but be missing the crucial 10% needed for extraction.
 
 
-3. 
+3. Count things!
+
+Off the top of my head, this is something I do more than other puzzle-people I know,
+and I have usually not regretted it.
+
+Puzzle solving often involves relating one part of the puzzle to another part.
+These relations often follow whole number ratios, so if you find two parts that
+have matching counts, it can imply those two parts connect together. Or if you
+find clues with counts in a 2:1 ratio, it suggests you want to pair up 2 clues
+from one side with 1 clue on the other.
+
+A very simple example is [Not Quite a Polka](https://www.puzzlesaremagic.com/puzzle/not-quite-a-polka.html) from Puzzles are Magic. There's two sections of clues, and 13 clues
+in each section, so the puzzle is likely about solving both and combining the two
+somehow.
+
+Another example is [Oxford Children's Dictionary](https://puzzles.mit.edu/2022/puzzle/oxford-childrens-dictionary/) from MITMH 2022. We see there are an equal number
+of clues in the Standard Dictionary Definitions column, and the Oxford Children's
+Dictionary Definitions column (19 of each), so the two are likely related.
+Each clue has a blank, meaning 38 blanks total. The grid below the clues has 38 words in
+it, so this suggests we want to fill each blank with a word.
+
+A more complicated example is [Cryptic Command](https://2018.galacticpuzzlehunt.com/puzzle/cryptic-command.html) from GPH 2018.
+There are many steps to the puzzle, but we can start by noticing that for each
+card, the number of cryptics on that card matches the number of circles in the
+top right of that card. So we can start by solving the cryptics, and finding
+some way to relate each cryptic to a circle. (If we know enough about the
+Magic: the Gathering reference to know what appears in those circles on a real
+card, it's a pretty helpful hint for the next step.)
+
+Note that we can make all these guesses before doing any clue solving! In fact
+this is how we solved Oxford Children's Dictionary during the actual hunt, it
+took us 10 minutes to get a single clue solved but we correctly guessed all
+the mechanics of the puzzle before doing so.
+
+If you do decide to count things, make sure to follow through. When testsolving
+[Light Show](https://2021.teammatehunt.com/puzzles/light-show) from Teammate Hunt 2021,
+I decided to commit to counting every square, and broke in on finding there were
+exactly 133 squares, which was exactly 7 * 19, and there happened to be a set of
+19 7-long objects [elsewhere](https://2021.teammatehunt.com/puzzles/tumbled-tower).
+
+4. Monospace and spreadsheet conventions are your friend.
+
+A lot of puzzles will use length as part of the structure. For example, ADD EXAMPLES HERE.
+Whenever you have a list of clues, I'd recommend putting the corresponding "answer"
+column in monospace, to make it more visually clear if answers are the same length,
+are all of unique length, etc.
+
+The team I hunt with (teammate) goes a bit further with their spreadsheet conventions,
+which are:
+
+* Clues in non-monospace, answers in monospace, to keep it clearer which is which.
+* Use bold or highlighting to indicates answers you think are important
+* Answers in uppercase by default.
+* Write answers in lowercase or add a question mark if you aren't confident in
+the answer.
+* Arrange items of the same "type" (clue, answer, etc.) in columns to make it
+easier to sort by them later.
+
+I don't *fully* agree with these conventions. (I prefer keeping everything in monospace,
+on occasion lengths within clues are relevant and I broke into the last step
+of [Sheep](https://puzzles.mit.edu/2020/puzzle/sheep/) from MITMH 2020 this way.)
+However, they are generally helpful to have, since it makes the mental state of
+the puzzle more visually apparent. If some clue answers are marked as uncertain,
+you can feel more confident ignoring them when trying to generate ideas of how
+extraction works.
+
+
+Testing Ideas Efficiently
+------------------------------------------------------------------------
