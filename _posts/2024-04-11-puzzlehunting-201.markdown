@@ -43,8 +43,8 @@ Puzzles are a collection of data, that has hidden patterns or structure, and
 solving a puzzle is about finding those structures.
 
 Solving puzzles quickly breaks down into three categories: generating good
-ideas about how a puzzle might work, quickly testing those ideas, and executing
-on the ideas that appear most correct.
+ideas about how a puzzle might work, quickly testing those ideas to check how
+well they fit, and executing well on the correct ideas.
 
 To generate more ideas, solve more puzzles to see what ideas have shown up in
 past puzzles.
@@ -52,7 +52,8 @@ past puzzles.
 To test ideas faster, solve more puzzles to see what lets you conclude an
 idea is wrong, and try to shortcut to that on the next puzzle.
 
-To execute better, practice by solving more puzzles.
+To execute better, practice by solving more puzzles, ideally with other
+people so you can copy their tricks.
 
 
 Wait This Seems Too Simple
@@ -60,74 +61,99 @@ Wait This Seems Too Simple
 
 Nah that's pretty much it.
 
-The very common lesson, is that if you want to get good at a skill, just do
-it a bunch. Like, go literally solve 100 puzzles. Yes, literally 100.
+The very common story is that if you want to get good at a skill, just do
+it a bunch. Like, go solve 100 puzzles. No I don't mean 10. Do literally 100 puzzles.
 You will learn things. You will get better. It'll just happen. It's part of the
 magic of the human brain.
 
-This is a very specific example, but I play this platforming game called Dustforce,
-and one level in the game has this really annoying part called the Tera section.
-It's almost exactly in the middle and is easily the hardest part to beat consistently.
+This is a very specific example, but I play this platforming game called Dustforce.
+I was trying to beat one very hard level, which has a part called the Tera section.
+It's almost exactly in the middle, has the tightest timing window, and is easily
+the least favorite part of the level.
 
-I complained about this in the Discord and was told to go beat the 100 Teras
-custom map for practice. So I did, twice. And then I stopped complaining.
+I complained about this in the Discord and was pointed to the meme map of "100 Teras",
+a custom map that copy-pastes the section 100 times in a row. "Go beat 100 Teras."
+So I did, twice. And then I stopped complaining.
 
-Like, I'm not going to just stop here. I will say more things! Still there's a
-lot you can learn by just doing more puzzles. That's where I learned most of
-how I approach puzzlehunts.
+If you go solve 100 puzzles you may not need this post. I'm still going to write it
+anyways, but puzzle solving is really an activity where you learn more by doing than
+reading.
 
 Okay, on to the actual post.
 
 
-Generating Ideas
+
+Starting a Puzzle - Generating Ideas
 ------------------------------------------------------------------------
 
 Puzzles are often described as having "a-has" or break-in points, where it
 suddenly becomes clear what you should do. How do you come up with a-has?
 How do you break-in?
 
-This really is genuinely the hardest part to give advice about. If it was
+This is genuinely the hardest part to give advice about. If it was
 easy to come up with good ideas, we wouldn't have puzzles in the first place!
-The best advice I can give is to describe the conditions that promote
-idea generation.
+So I've decided to interpret the question differently: how do you create
+the best conditions that cause good ideas to arise?
 
 
-1. Transcribe puzzle content faithfully. Refer to the original even if you think
-you did.
+1. Use monospace
+
+A lot of puzzles will use length as part of the structure. For example, [Human Pyramid](https://2021.teammatehunt.com/puzzles/human-pyramid) from Teammate Hunt 2021.
+Patterns in length (matching length, exactly one letter longer, etc.)
+are easy to subconsciously notice if you put content in monospace, so if you put your spreadsheet
+in monospace by default, you'll spot those patterns faster.
+
+(In fact, the monospace font
+in Human Pyramid was added during testsolving to push solvers to consider length. A similar trick
+was used in [Pestered](https://puzzles.mit.edu/2018/full/puzzle/pestered.html) from MIT Mystery Hunt 2018.)
+
+Personally I like to put literally everything in monospace, but I know some solvers
+who prefer only putting clue answers in monospace and leaving clues in sans serif,
+to create a subconscious visual boundary between clue and answer. You can pick which one
+works for you.
+
+
+2. Transcribe puzzle content faithfully. Refer to the original puzzle even if the sheet
+looks complete.
 
 Before you have broken into a puzzle, any part of the puzzle could be relevant
 information. The act of transcribing a puzzle from a website or PDF into a
-spreadsheet is often slightly destructive. Coloring, styling, or spacing is often
-the first casualty. Sometimes, the parts you destroy are important to the puzzle.
+spreadsheet is often slightly destructive. Text styling and spacing are often
+the first casualties. Usually this is fine, but every now and then the parts lost during
+transcription are important to breaking in.
 
 So, try to make your sheet look as much like the puzzle as you can. Certain puzzles
-can make this hard or annoying (I am always annoyed at puzzles that use a hex grid).
-In those scenarios, do your best, but remember to look at the original puzzle if
-you've been stuck for a while. I like to add a note in the spreadsheet to "see original puzzle" if I can't transcribe something exactly.
+can make this hard (shoutouts to every puzzle with a triangular or hex grid).
+In those scenarios, do your best, but add a note to "see original puzzle" in the spreadsheet.
+And remember to look at the original puzzle if
+you've been stuck for a while, to see if there's something about the presentation you
+missed.
 
 
-2. Take bad ideas seriously.
+3. Speak your bad ideas aloud and take them seriously
 
-In general, try to follow the ["yes, and..."](https://en.wikipedia.org/wiki/Yes,_and...) rule-of-thumb from improv comedy. It's okay to conclude that an idea seems unlikely
-given the evidence, but avoid concluding an idea is totally wrong. Similarly,
-avoid concluding an idea is totally right. Very often, you can have 90% of the right
-idea but be missing the crucial 10% needed for extraction.
+Puzzle solving is a collaborative activity, and people won't know what ideas you have if you
+don't speak up. It's okay to caveat that your idea is bad if you say it anyways.
+In general, try to follow the ["yes, and..."](https://en.wikipedia.org/wiki/Yes,_and...) rule-of-thumb from improv comedy,
+and avoid entirely ruling out ideas. Just mentally mark them as unlikely.
+Sometimes you will have 90% of the right idea and be missing the last 10%. Other
+times you will have the half-baked 10% of the right idea, and someone else will have the 90%.
+To get to 100% of the idea, one person needs to communicate, and you want to have a culture
+where the 10% person is willing to volunteer ideas.
 
 
-3. Count things!
+4. Count things!
 
-Off the top of my head, this is something I do more than other puzzle-people I know,
-and I have usually not regretted it.
+Off the top of my head, I do this a ton, I feel I do this more than most puzzle-people, and I
+haven't regretted it.
 
-Puzzle solving often involves relating one part of the puzzle to another part.
-These relations often follow whole number ratios, so if you find two parts that
-have matching counts, it can imply those two parts connect together. Or if you
-find clues with counts in a 2:1 ratio, it suggests you want to pair up 2 clues
-from one side with 1 clue on the other.
+Puzzle solving often involves relating two parts of the puzzle together.
+These relations often follow whole number ratios. If there are N items in both parts,
+it suggests matching between those parts. If there's N items in one and 2N in another,
+that could mean matching 1 item from the first part with 2 items from the second.
 
 A very simple example is [Not Quite a Polka](https://www.puzzlesaremagic.com/puzzle/not-quite-a-polka.html) from Puzzles are Magic. There's two sections of clues, and 13 clues
-in each section, so the puzzle is likely about solving both and combining the two
-somehow.
+in each section, so the puzzle is likely about solving both and combining the two.
 
 Another example is [Oxford Children's Dictionary](https://puzzles.mit.edu/2022/puzzle/oxford-childrens-dictionary/) from MITMH 2022. We see there are an equal number
 of clues in the Standard Dictionary Definitions column, and the Oxford Children's
@@ -144,41 +170,38 @@ Magic: the Gathering reference to know what appears in those circles on a real
 card, it's a pretty helpful hint for the next step.)
 
 Note that we can make all these guesses before doing any clue solving! In fact
-this is how we solved Oxford Children's Dictionary during the actual hunt, it
-took us 10 minutes to get a single clue solved but we correctly guessed all
+this is how we solved Oxford Children's Dictionary during the actual hunt. It
+took us 10 minutes to get a single clue solved, but we correctly guessed all
 the mechanics of the puzzle before doing so.
 
-If you do decide to count things, make sure to follow through. When testsolving
+Counts can also let you draw negative conclusions. If you have 7 clues in one
+part and 10 clues in the other, you are not going to do a 1:1 matching, so you can
+immediately discard puzzle ideas along those lines.
+
+I'd call this the numerology of the puzzle. At the start of a puzzle,
+quickly count the most salient parts of the puzzle, and keep any interesting
+correspondences in mind. This can be surprisingly powerful.
+When testsolving
 [Light Show](https://2021.teammatehunt.com/puzzles/light-show) from Teammate Hunt 2021,
-I decided to commit to counting every square, and broke in on finding there were
-exactly 133 squares, which was exactly 7 * 19, and there happened to be a set of
-19 7-long objects [elsewhere](https://2021.teammatehunt.com/puzzles/tumbled-tower).
+we knew it corresponded to [Tumbled Tower](https://2021.teammatehunt.com/puzzles/tumbled-tower)
+in some way, but weren't sure on the rules for how it'd do so. So after we did
+some work I decided to commit to counting every square in the Light Show grid,
+found there were 133 of them, noted this equaled 7 * 19, and there were 19 septaminos
+in Tumbled Tower. This let us conclude not only that we should try using those
+septaminos, it also let us know we shouldn't allow overlaps or gaps.
 
-4. Monospace and spreadsheet conventions are your friend.
 
-A lot of puzzles will use length as part of the structure. For example, ADD EXAMPLES HERE.
-Whenever you have a list of clues, I'd recommend putting the corresponding "answer"
-column in monospace, to make it more visually clear if answers are the same length,
-are all of unique length, etc.
+5. Search everything
 
-The team I hunt with (teammate) goes a bit further with their spreadsheet conventions,
-which are:
+Honestly, a lot of puzzle solving is about taking random parts of the puzzle and throwing it
+into a search engine. Search the flavor text. Search just half of the flavor text. Add quotation
+marks to do exact phrase searches. Pick one key word from each part of the puzzle, search that, and
+if that fails randomly drop out some words and try again.
 
-* Clues in non-monospace, answers in monospace, to keep it clearer which is which.
-* Use bold or highlighting to indicates answers you think are important
-* Answers in uppercase by default.
-* Write answers in lowercase or add a question mark if you aren't confident in
-the answer.
-* Arrange items of the same "type" (clue, answer, etc.) in columns to make it
-easier to sort by them later.
-
-I don't *fully* agree with these conventions. (I prefer keeping everything in monospace,
-on occasion lengths within clues are relevant and I broke into the last step
-of [Sheep](https://puzzles.mit.edu/2020/puzzle/sheep/) from MITMH 2020 this way.)
-However, they are generally helpful to have, since it makes the mental state of
-the puzzle more visually apparent. If some clue answers are marked as uncertain,
-you can feel more confident ignoring them when trying to generate ideas of how
-extraction works.
+There are a lot of variables you can tweak in your search engine queries, and the heuristic I use is
+that if there aren't obvious starting points, I will search the puzzle title, the flavortext, all proper nouns, and
+anything that doesn't read like typical English. I'll also mix the theme of the puzzlehunt into search queries if
+I think it could turn up something new.
 
 
 Evaluating and Testing Ideas
@@ -270,7 +293,38 @@ because they're easy with a search engine, and are just a little more likely to 
 the constructor to use a proper noun.
 
 
-4. Look for pieces of confirmation early.
+Middle of a Puzzle - Moving Faster
+----------------------------------------------------------------------
+
+By this point, we have some idea of how the puzzle works, and are in the phase of answering clues and making
+deductions. Our goal is to get enough data to do the next step of the puzzle. This section is about
+the mechanics of how to progress through clues quickly.
+
+
+1. Look for the next step early.
+
+In my opinion this is the major thing that separates experienced puzzlehunters from new ones.
+New puzzlers tend to solve puzzles in a waterfall style. They fully solve the current step, then figure out the next steps.
+Whereas experienced puzzlers lookahead more, thinking about what to do next while solving the current step.
+
+I don't want to imply new puzzlers are wrong to solve this way. It's hard to lookahead if you don't have
+the experience to know how puzzles tend to work. But in general, I think it's helpful to consider *what you're aiming for*
+when you have enough data to potentially figure it out. My rough heuristic is look into this after having 50% of the work
+done, but this depends a lot on how much I know about the structure of the puzzle from my initial counting.
+
+The reason it's worth looking for the next step early is because sometimes it gives you extra constraints that helps you
+solve clues. It's a bit like backsolving a metapuzzle, but at smaller scale. Sometimes you can entirely skip clues if
+you figure out extraction early enough to get the answer to show up in nutrimatic or Qat. One way to solve puzzles
+faster is to just do less work to solve them.
+
+I should also mention that you don't *have* to do this. I know some very strong solvers who will 100% puzzles
+by default. They'll still look ahead, but will solve all the clues before doing the next step they figured out
+10 minutes ago. Several puzzle solvers derive enjoyment from seeing how it all comes together, with
+emphasis on the **all**. Personally, I only do this if I'm having a ton of fun with the puzzle, otherwise I'll
+move on.
+
+
+2. Look for pieces of confirmation early
 
 In sudoku puzzles, there's this idea called "the deadly pattern".
 
@@ -283,33 +337,34 @@ to solve a logic puzzle, but assuming there is one can act as a guardrail.
 (There are exceptions - see this [sudoku featured on Cracking the Cryptic](https://www.youtube.com/watch?v=qJliK881Leo).)
 
 There's analogue in puzzlehunting too. A common convention in puzzles is to have answers be in alphabetical order.
-Usually I will check if data's consistent with alphabetical order *very* early (when ~20% of clues are solved), because knowing this early
-speeds up the solve.
+Usually I will check if data's consistent with alphabetical order *very* early (when ~20% of clues are solved), because
+knowing this early speeds up the solve.
 
 To draw an analogy to transportation, traffic lights and rules don't exist to slow you down, they exist to speed you up.
-Guardrails are there to make your solve more streamlined - find them and use them!
+Guardrails are there to make your solve more streamlined - search them out and use them!
 
 
-Executing Faster
-----------------------------------------------------------------------
+3. Use tools to automate common actions
 
-1. Look for the next step early.
 
-In my opinion this is the major thing that separates experienced puzzlehunters from new ones.
-New puzzlers tend to solve puzzles in a waterfall style. They solve all the clues, then figure out the next steps.
-Whereas experienced puzzlers tend to lookahead more, thinking about what to do next or how to extract pretty early.
+2. 
 
-I don't want to imply new puzzlers are wrong to solve this way. It's hard to lookahead if you don't have
-the experience to know how puzzles tend to work. But in general, I think it's helpful to consider *what you're doing*
-when you have enough data to potentially figure it out. My rough heuristic is to try doing this after doing 50%-70%
-of the work, although this will adjust depending on how much error correction is possible.
+PUT THIS SOMEWHERE
+The team I hunt with (teammate) goes a bit further with their spreadsheet conventions,
+which are:
 
-The reason it's worth checking early is because sometimes it gives you extra constraints that helps you
-solve clues. It's a bit like backsolving a metapuzzle, but at smaller scale. Sometimes you can entirely skip clues if
-you figure out extraction early enough to get the answer to show up in nutrimatic or Qat. One way to solve puzzles
-faster is to just do less work to solve them.
+* Clues in non-monospace, answers in monospace, to keep it clearer which is which.
+* Use bold or highlighting to indicates answers you think are important
+* Answers in uppercase by default.
+* Write answers in lowercase or add a question mark if you aren't confident in
+the answer.
+* Arrange items of the same "type" (clue, answer, etc.) in columns to make it
+easier to sort by them later.
 
-I should also mention that you don't *have* to do this. I know some very strong solvers who will 100% puzzles
-by default. They'll still look ahead, but will solve all the clues before doing the next step they figured out
-10 minutes ago. A lot of the time, puzzle solvers derive enjoyment from seeing how it all comes together, with
-emphasis on the **all**. I do too!
+I don't *fully* agree with these conventions. (I prefer keeping everything in monospace,
+on occasion lengths within clues are relevant and I broke into the last step
+of [Sheep](https://puzzles.mit.edu/2020/puzzle/sheep/) from MITMH 2020 this way.)
+However, they are generally helpful to have, since it makes the mental state of
+the puzzle more visually apparent. If some clue answers are marked as uncertain,
+you can feel more confident ignoring them when trying to generate ideas of how
+extraction works.
