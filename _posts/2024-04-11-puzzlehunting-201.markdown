@@ -204,43 +204,7 @@ anything that doesn't read like typical English. I'll also mix the theme of the 
 I think it could turn up something new.
 
 
-Evaluating and Testing Ideas
-------------------------------------------------------------------------
-
-Although I've separated the sections into idea generation and idea testing, in most
-solve experiences you are doing both at the same time. Generally it's easier to figure out
-what to do if you have more data, and it's very fine to do work (solve clues) without
-knowing exactly what you're looking for, on faith that you will figure out the next step
-later.
-
-ADD DIAGRAM FOR THIS
-
-1. If you can't extract, look for unused information
-
-Not all puzzles will use all channels of information they present to you. This is true of
-good puzzles too! But many puzzles will *try* to use all information presented, because puzzles
-that do so tend to be higher quality with cleaner solve paths.
-
-So when trying to understand what the puzzle's asking you to do, it can help to take a step back
-and consider if you haven't used some part of the puzzle yet.
-
-2. If you can't extract, look for missing information
-
-To me, this is slightly distinct from unused information. Unused information is when you know there
-are aspects of the puzzle dataset you haven't used yet. Missing information is when the information
-you need doesn't even exist in your spreadsheet, and needs an a-ha to figure out. An example would be if,
-say, you needed to realize that every paragraph of text was secretly referencing a movie from pop-culture.
-
-If you're having trouble getting something to extract, then it's likely you're missing something that's
-needed for extraction. The longer you're stuck, the more likely it is that's true. This is where tools like
-qhex's extraction helper, spreadsheet formulas, and code can help a lot. Once you transcribe the dataset once,
-using formulas for indexing makes it easy to try many permutations or variants of indexing (index column B
-instead of A, reverse the ordering, etc). And that makes it easier to exhaust the possibility space, which
-brings you to the "we need to find something new" step faster.
-
-
-
-2. Overconstrained
+6. Ask if an idea's overconstrained
 
 This is a concept that's common to a lot of mindsports: **puzzles do not arrive spontaneously,
 they are created by people to have a solution.** As you come up with ideas on how a puzzle
@@ -276,39 +240,23 @@ a message only using letters from A to I, and that just seemed impossible, so we
 to interpret the values as indices instead.
 
 
-3. Prioritize important clues
-
-If you see an extraction like ?N?WE???????, many solvers I know will assume the first 6 letters are going to spell
-ANSWER, they're on the right track, and will stop work extracting any of the first 6 letters unless they get stuck.
-
-This is a special case of trying to find the "high information" letters. If I see an extraction like ?????I?G,
-I'll usually assume it's going to end "-ing" and skip extracting the blank between the I and G. This can be especially
-powerful when combined with word search tools like Qat or nutrimatic. In general, long runs of blanks lead to
-more valid words, so it's good to target letters near the middle of long runs. (This also means that if I run into
-trouble solving a given blank, I'm *very* likely to immediately jump to the next blank, since I trust nutrimatic to
-wheel-of-fortune around that missing letter most of the time.)
-
-One more specific thing I like to do is that when I see a crossword puzzle, I'll try to solve the proper nouns first,
-because they're easy with a search engine, and are just a little more likely to involve constrained letters that forced
-the constructor to use a proper noun.
-
-
 Middle of a Puzzle - Moving Faster
 ----------------------------------------------------------------------
 
 By this point, we have some idea of how the puzzle works, and are in the phase of answering clues and making
-deductions. Our goal is to get enough data to do the next step of the puzzle. This section is about
+deductions. Our goal is to get enough data to continue the puzzle. This section is about
 the mechanics of how to progress through clues quickly.
 
 
-1. Look for the next step early.
+1. Consider extraction or the next step early.
 
 In my opinion this is the major thing that separates experienced puzzlehunters from new ones.
-New puzzlers tend to solve puzzles in a waterfall style. They fully solve the current step, then figure out the next steps.
-Whereas experienced puzzlers lookahead more, thinking about what to do next while solving the current step.
+New puzzlers tend to solve puzzles in a waterfall style. When given a list of clues, they fully solve the clues, then
+start thinking about what to do with those answers.
+Whereas experienced puzzlers lookahead more, thinking about what to do next while solving the clues.
 
 I don't want to imply new puzzlers are wrong to solve this way. It's hard to lookahead if you don't have
-the experience to know how puzzles tend to work. But in general, I think it's helpful to consider *what you're aiming for*
+experience to know how puzzles tend to work. But in general, I think it's helpful to consider *what you're aiming for*
 when you have enough data to potentially figure it out. My rough heuristic is look into this after having 50% of the work
 done, but this depends a lot on how much I know about the structure of the puzzle from my initial counting.
 
@@ -344,27 +292,191 @@ To draw an analogy to transportation, traffic lights and rules don't exist to sl
 Guardrails are there to make your solve more streamlined - search them out and use them!
 
 
-3. Use tools to automate common actions
+3. Do the easy parts first.
+
+When I see a crossword puzzle, I like to solve the proper nouns first. With a search engine, these are usually both
+easy and unambiguous. Some parts of a puzzle will yield more easily than others, and it's usually worth doing a quick
+once-over of a puzzle to see if anything stands out.
+
+(In fact, many puzzles are constructed to have a foothold like this, empirically it's more fun if solvers can make some
+progress before breaking in.)
 
 
-2. 
+4. Prioritize important clues
 
-PUT THIS SOMEWHERE
-The team I hunt with (teammate) goes a bit further with their spreadsheet conventions,
-which are:
+If you see an extraction like ?N?WE???????, many solvers I know will assume the first 6 letters are going to spell
+ANSWER and will stop extracting any of the first 6 letters unless they get stuck.
 
-* Clues in non-monospace, answers in monospace, to keep it clearer which is which.
-* Use bold or highlighting to indicates answers you think are important
-* Answers in uppercase by default.
-* Write answers in lowercase or add a question mark if you aren't confident in
-the answer.
-* Arrange items of the same "type" (clue, answer, etc.) in columns to make it
-easier to sort by them later.
+This is a special case of trying to direct work towards the "high information" areas. Some general wheel-of-fortune
+skills are helpful here: if I see an extraction like ?????I?G, I'll usually assume it's going to end "-ing" and skip extracting the blank between the I and G.
+This can be especially
+powerful when combined with word search tools like Qat or nutrimatic. In general, these tools have trouble with
+long runs of blanks, but are very good at filling short gaps, so if you know what order things will extract, it's
+good to target letters towards the middle of long runs of blanks.
 
-I don't *fully* agree with these conventions. (I prefer keeping everything in monospace,
-on occasion lengths within clues are relevant and I broke into the last step
-of [Sheep](https://puzzles.mit.edu/2020/puzzle/sheep/) from MITMH 2020 this way.)
-However, they are generally helpful to have, since it makes the mental state of
-the puzzle more visually apparent. If some clue answers are marked as uncertain,
-you can feel more confident ignoring them when trying to generate ideas of how
-extraction works.
+There are a lot of downstream effects of this idea. For example, after breaking into a puzzle, I'll often declare
+that I'll work from the bottom, because most people will start from the top, and it's better to distribute work
+throughout a cluephrase rather than concentrate it all at the start. Similarly, if I get stuck on a clue,
+I'm very willing to skip it for the next one, trusting nutrimatic or Qat will fill in the blank.
+
+Importantly, **you can't tell which parts of a puzzle are important unless you have guesses on how you're going to use them**. Which
+is another reason I value looking ahead on extraction so highly - you need to do some of it to priotize in the first place.
+
+
+5. Use spreadsheet formulas for extraction
+
+I spent a very long period of my puzzling career indexing entries by hand. Eventually I decided to learn spreadsheet
+formulas and now I can't go back.
+
+Spreadsheet formulas have several advantages:
+
+* They're consistent. You can't mess up a count or typo a letter. (You can typo a spreadsheet formula, but usually spreadsheet formula typos lead to errors rather than incorrect letters.)
+* They're automatic. Once you have extraction driven by spreadsheet formula, you can stay in a flow of IDing and
+solving without detouring into extracting, reducing time lost to context switching.
+* Due to being automatic, they can show you partial cluephrases you weren't looking for.
+
+Also, being good at spreadsheet formulas is by far the most transferrable skill to real life.
+The business world runs on Excel. The very basic actions you'll do over and over in puzzlehunts:
+
+* `=MID(A1, k, 1)` takes the $k$th letter of A1
+* `=REGEXREPLACE(A1, "[^A-Za-z]", "")` removes all non A-Z characters.
+* `=CHAR(A1 + 64)` will convert 1 to 26 into A to Z.
+* `=CODE(A1) - 64` will convert A to Z into 1 to 26.
+    * If you can't remember 64, you can do `CODE('A') - 1` instead
+
+It's also worth understanding relative references vs absolute references. If I typed
+`=MID(A1, B1, 1)` into cell C3, this is a relative reference. Internally, the spreadsheet
+stores `=MID(the cell 2 left + 2 up, the cell 1 left + 2 up, 1)`. Dragging a formula will
+copy-paste that logic to every cell, but will visually display the cell it refers to in
+the highlighted cell.
+
+IMAGE
+
+and drag the formula down, it will auto adjust for each row.
+
+ANIMATION
+
+If you want a formulate to always refer to a specific cell, you can use $ to indicate an absolute
+reference. This can be applied to either the column, row, or both.
+
+Examples:
+
+Indexing many columns with the same indices: `=MID(A1, $B1, 1)`. When dragged, this always uses
+column B for indexing, but will allow the row to change.
+
+ANIMATION
+
+Indexing the same word with many indices: `=MID($A$1, B1, 1)`.
+
+ANIMATION
+
+The spreadsheet rabbit hole goes very deep. I recommend
+[You Suck at Excel](https://www.bilibili.com/video/BV1734y187KS/) by Joel Spolsky as a classic
+spreadsheet introduction, and [Yet Another Puzzlehunt Spreadsheet Tutorial](https://docs.google.com/spreadsheets/d/1-KmLvmcydguI_RBJJqHihbewZmssmdNtlWFJIJZVXLk/edit#gid=0)
+by betaveros for a more puzzlehunt-focused guide. (You Suck at Excel recently disappeared off
+YouTube - the link above is a bilibili mirror.)
+
+
+6. Use code for more complicated extraction.
+
+(If you can't program, ignore this.)
+
+Sometimes, you hit the limits of what spreadsheets can do. In these scenarios, it can be pretty
+helpful to write code trying more complex extractions or searches. If you know how to program,
+I recommend downloading a wordlist (Scrabble dictionary is a good target), and writing some basic
+functions for A1-Z26, morse, and so on. I have a codebook where I save all code snippets I've
+written from past hunts that I think could be reused later, but if you're new to puzzlehunt
+coding a good starting place is [solvertools](https://github.com/rspeer/solvertools).
+
+You won't need to pull out Python to do A1-Z26 conversion if you know spreadsheet formulas,
+but the power of having basic encodings implemented in code is that **it makes it possible
+to write brute force searches**. Once, I was solving a metapuzzle from a now-offline hunt.
+Based on flavor, we were very confident it was going to be about Morse code, each of our feeder
+answers would be a dot or dash, and we'd read out a message from doing so. We couldn't figure
+out how to do so, but the round had 7 puzzles, so I decided to write a script to brute force
+the Morse for all 2^7 = 128 possibilities. This worked.
+
+One advantage of code is that although it's higher up-front cost, if you write code that
+exhaustively checks all possibilities, and it still fails to extract the puzzle, then you
+know for sure that your extraction idea is wrong and it's time to try something else.
+
+
+Getting Unstuck
+------------------------------------------------------------------------
+
+Everyone gets stuck on puzzles. The question is what to do about it.
+
+
+1. Do a different puzzle.
+
+There's no shame in abandoning a puzzle for now and coming back to it later. It's very
+easy to tunnel vision too hard on a problem.
+
+However, there is a certain art to this. Puzzles are normally done in teams. If you abandon
+a puzzle, it's good to make a clean copy of the sheet, where you organize and explain the work
+done so far. In this clean copy, you should try to remove all the speculative half-baked ideas
+you had. Given that you're stuck, it's more likely you're in the wrong rabbit hole, and you should
+try to avoid biasing future solvers into the same rabbit hole. If those future solvers come to the
+same conclusions you did, then you can treat it as evidence you're on the right track.
+
+2. Check your work.
+
+I have seen so, *so* many times where a puzzle was stuck because of a silly mistake. **Check your
+work.** Cannot overstate this enough.
+
+3. Look for unused information
+
+Not all puzzles will use all channels of information, but most puzzles will try to do so.
+Try enumerating everything that has and hasn't been used yet.
+
+4. Look for missing information.
+
+To me, this is slightly distinct from unused information. Unused information is when you know there
+are aspects of the puzzle dataset you haven't used yet. Missing information is when the information
+you need doesn't even exist in your spreadsheet, and needs an a-ha to figure out.
+
+The longer a sheet stays unextracted, the more likely it is that the sheet is fundamentally missing
+the information needed to extract. I'm a big fan of [qhex's extraction basher](https://tools.qhex.org/),
+which will try a wide battery of indexing and ordering mechanisms. It's not that robust to errors, but
+it's a good way to check the likelihood your spreadsheet is missing a column. If you're confident your
+sheet is clean, without errors, and qhex doesn't extract it, you're missing a column of info.
+
+
+5. Consider what would be thematic
+
+Puzzlehunts usually have a theme, and although most puzzles will not rely on that theme for their a-ha,
+some of them will. Consider ideas in line with the title or theme of the hunt.
+
+
+5. Assume a few errors
+
+To err is to be human. If you don't like a few letters, you can always pretend those were solved wrong
+and switch them to wildcards in nutrimatic.
+
+It's important not to overdo this, but getting good at error correction can really take you quite far.
+This can extend past the single letter case as well. Sometimes I Caeser shift gibberish text to check
+if our indices are all off-by-one.
+
+
+6. Cheese
+
+For the uninitiated, cheesing a puzzle means to solve it through an unintended path. This comes from
+video game slang, where it usually means you're breaking the game's design or intended play experience.
+
+This can be a little controversial...it's a bit subversive, and in my opinion hardening a puzzle
+against cheese can sometimes make it worse. I view it the same as backsolving - it's a ton of fun
+if it works, but it wouldn't be nearly so fun if it worked all the time.
+
+Here are common cheese tactics:
+
+* If you don't know how to order, you can try random anagramming. (too many to name)
+* If you have an ordered list of words, but don't know the indices, you can construct a regular expression
+to take one letter from each word and see what possibilitiese show up in nutrimatic.
+(2020 coding puzzle)
+* Similarly, if you have an ordered list of indices, know what words you're indexing, but don't know how they
+match up, you can also construct a regex. If the index is (3), you make a regex of every 3rd letter among your set.
+(shard hunt) (I broke [Mouth Mash](https://2020.teammatehunt.com/puzzles/mouth-mash) this way in testsolving
+and the puzzle was redesigned to make that harder.)
+* If enumerations are given for a multi-word phrase, sometimes the enumeration itself is enough to constrain
+the phrase. You can use OneLook or nutrimatic to check for this.
+For example, (2 2 2 3 2 2 4 2 3 8) only has [one notable match](https://nutrimatic.org/2024/?q=%22AA+AA+AA+AAA+AA+AA+AAAA+AA+AAA+AAAAAAAA%22&go=Go).
