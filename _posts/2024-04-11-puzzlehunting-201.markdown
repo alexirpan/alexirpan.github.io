@@ -11,49 +11,48 @@ Hunt team (twice), and most recently was on the 2nd place team for the
 [Who Killed Ickey?](https://ickeytreasurehunt.com/leaderboard) treasure hunt.
 
 Now, I have some misgivings about casting puzzlehunts as about the competition.
-I feel they're much more about testing what you can do and having fun than about
-trying to be first. There's really not much if any money in puzzlehunting.
-From a community standpoint, I suspect people like it this way. Still, competition
-can be fun. At minimum, solving puzzles to progress in a hunt is fun. After doing
+I feel puzzles are much more about testing creativity, promoting curiosity,
+and having fun than about trying to finish the fastest. Competition is more a way
+to turn it into an event and encourage people to take them seriously.
+There's really not much money in puzzlehunting and I suspect people like it this way.
+
+Still, competition is fun and at minimum most people will have more fun if they
+solve puzzles than if they don't. After doing
 puzzlehunts for well over a decade, I've picked up some habits that could be
 useful to share.
 
 **If you are new to puzzlehunts, you are not the target audience.** I mean, feel
 free to keep reading! But I will be assuming a bunch of background knowledge and
-won't be trying to explain what a puzzle is or what a meta is and so forth. I
-recommend these posts (TODO) as better initial reading.
+won't be trying to explain what a puzzle is or what a meta is and so forth. If
+you're new, I recommend [Introduction to Puzzlehunts](https://blog.vero.site/post/puzzlehunts)
+instead.
 
 **If you've done many puzzlehunts, not everything I say here will work for you.**
 Puzzlehunting systems are a little like productivity systems: everyone's is
-different, not all pieces of them will click with you, and none of them are
-clearly dominant. Your best bet is to try things out, take the parts that work,
-and don't feel bad if some of them don't.
+different, not all pieces of them will click with you, and people can be very opinionated
+about them even if they all share common themes. Your best bet is to try things out, take the parts that work,
+and ignore the parts that don't.
 
-Last note: **this will have spoilers for some puzzles.** I've tried to keep
-the spoilers light, but it's much easier to give examples than to construct
-new puzzles just for the sake of this post. Imagine if this was all seeded
-content for a puzzlehunt. Boy would that make this post hard to write!
-(Seriously though, it isn't. Don't try looking for it.)
+**This will spoil a few puzzles.** I've tried to keep the spoilers as light as needed,
+but it's much easier to give real-life examples than to construct new puzzles just for
+the sake of this post. (Then again, imagine if this post was written entirely to seed content
+for an upcoming puzzlehunt. Boy would that be interesting! Seriously though, it's not. Don't
+try looking for it.)
 
 
 The "If I Had One Minute Version"
 -------------------------------------------------------------------
 
-Puzzles are a collection of data, that has hidden patterns or structure, and
-solving a puzzle is about finding those structures.
+Puzzles are usually a collection of data that has hidden patterns and structure.
+Solving a puzzle is about exploring the data to find those structures.
 
-Solving puzzles quickly breaks down into three categories: generating good
-ideas about how a puzzle might work, quickly testing those ideas to check how
-well they fit, and executing well on the correct ideas.
+Puzzle solving can be divided into generating ideas for how a puzzle works,
+and executing well on those ideas.
 
-To generate more ideas, solve more puzzles to see what ideas have shown up in
+To generate more ideas, solve more puzzles to see what's shown up in
 past puzzles.
 
-To test ideas faster, solve more puzzles to see what lets you conclude an
-idea is wrong, and try to shortcut to that on the next puzzle.
-
-To execute better, practice by solving more puzzles, ideally with other
-people so you can copy their tricks.
+To execute better, practice by solving more puzzles.
 
 
 Wait This Seems Too Simple
@@ -62,22 +61,24 @@ Wait This Seems Too Simple
 Nah that's pretty much it.
 
 The very common story is that if you want to get good at a skill, just do
-it a bunch. Like, go solve 100 puzzles. No I don't mean 10. Do literally 100 puzzles.
+it a bunch. Like, go solve 100 puzzles. No, I don't mean 10, or 20. Stop reading and
+go solve literally 100 puzzles.
 You will learn things. You will get better. It'll just happen. It's part of the
 magic of the human brain.
 
-This is a very specific example, but I play this platforming game called Dustforce.
-I was trying to beat one very hard level, which has a part called the Tera section.
-It's almost exactly in the middle, has the tightest timing window, and is easily
-the least favorite part of the level.
+This is a very specific anecdote, but I play a platforming game called Dustforce.
+There's one very hard level in the game which has a part called the Tera section.
+It's almost exactly in the middle of the level, has a 2 frame window in a 60 FPS game,
+and is easily the most difficult part of the level to beat consistently.
 
-I complained about this in the Discord and was pointed to the meme map of "100 Teras",
-a custom map that copy-pastes the section 100 times in a row. "Go beat 100 Teras."
-So I did, twice. And then I stopped complaining.
+I complained about this in the Discord and was told that yes, it's awful, but then
+shared "100 Teras", a custom map that's just 100 copies of the Tera section with a checkpoint between each one.
+"If you're really having trouble, go beat 100 Teras". So I did, twice. And then I stopped
+complaining.
 
-If you go solve 100 puzzles you may not need this post. I'm still going to write it
-anyways, but puzzle solving is really an activity where you learn more by doing than
-reading.
+If you go solve 100 puzzles, you may not need this post. I'm still going to explain the
+solve strategies I've picked up, but puzzle solving is really an activity where you
+learn by doing.
 
 Okay, on to the actual post.
 
@@ -86,7 +87,7 @@ Okay, on to the actual post.
 Starting a Puzzle - Generating Ideas
 ------------------------------------------------------------------------
 
-Puzzles are often described as having "a-has" or break-in points, where it
+Puzzles are often described as having "a-has" or break-ins, where it
 suddenly becomes clear what you should do. How do you come up with a-has?
 How do you break-in?
 
@@ -95,26 +96,23 @@ easy to come up with good ideas, we wouldn't have puzzles in the first place!
 So I've decided to interpret the question differently: how do you create
 the best conditions that cause good ideas to arise?
 
-
-1. Use monospace
+#### Use monospace
 
 A lot of puzzles will use length as part of the structure. For example, [Human Pyramid](https://2021.teammatehunt.com/puzzles/human-pyramid) from Teammate Hunt 2021.
 Patterns in length (matching length, exactly one letter longer, etc.)
 are easy to subconsciously notice if you put content in monospace, so if you put your spreadsheet
-in monospace by default, you'll spot those patterns faster.
+in monospace, you'll break-in on these patterns faster.
 
 (In fact, the monospace font
 in Human Pyramid was added during testsolving to push solvers to consider length. A similar trick
 was used in [Pestered](https://puzzles.mit.edu/2018/full/puzzle/pestered.html) from MIT Mystery Hunt 2018.)
 
-Personally I like to put literally everything in monospace, but I know some solvers
-who prefer only putting clue answers in monospace and leaving clues in sans serif,
-to create a subconscious visual boundary between clue and answer. You can pick which one
-works for you.
+Personally I like to put everything in monospace, but I know some solvers
+who prefer only putting clue answers in monospace and leaving clues in sans serif, since
+they value the visual boundary between clue and answer. Pick whichever works for you.
 
 
-2. Transcribe puzzle content faithfully. Refer to the original puzzle even if the sheet
-looks complete.
+#### Transcribe puzzle content faithfully
 
 Before you have broken into a puzzle, any part of the puzzle could be relevant
 information. The act of transcribing a puzzle from a website or PDF into a
@@ -248,7 +246,7 @@ deductions. Our goal is to get enough data to continue the puzzle. This section 
 the mechanics of how to progress through clues quickly.
 
 
-1. Consider extraction or the next step early.
+1. Look ahead to extraction or the next step early.
 
 In my opinion this is the major thing that separates experienced puzzlehunters from new ones.
 New puzzlers tend to solve puzzles in a waterfall style. When given a list of clues, they fully solve the clues, then
@@ -399,6 +397,7 @@ the Morse for all 2^7 = 128 possibilities. This worked.
 One advantage of code is that although it's higher up-front cost, if you write code that
 exhaustively checks all possibilities, and it still fails to extract the puzzle, then you
 know for sure that your extraction idea is wrong and it's time to try something else.
+Another advantage is that code can be carried between hunts.
 
 
 Getting Unstuck
@@ -441,13 +440,6 @@ which will try a wide battery of indexing and ordering mechanisms. It's not that
 it's a good way to check the likelihood your spreadsheet is missing a column. If you're confident your
 sheet is clean, without errors, and qhex doesn't extract it, you're missing a column of info.
 
-
-5. Consider what would be thematic
-
-Puzzlehunts usually have a theme, and although most puzzles will not rely on that theme for their a-ha,
-some of them will. Consider ideas in line with the title or theme of the hunt.
-
-
 5. Assume a few errors
 
 To err is to be human. If you don't like a few letters, you can always pretend those were solved wrong
@@ -459,6 +451,17 @@ if our indices are all off-by-one.
 
 
 6. Cheese
+
+> A game designer painstakingly carves a beautiful sculpture out of wood, first chiselling it out of a
+> raw block, and then gradually rounding off any rough edges, making sure it works when it's viewed from
+> any angle.
+>
+> The speedrunner takes that sculpture and they look it over carefully, from top to bottom, from every angle, and
+> deeply understand it. They appreciate all the work that went into the design, all the strengths or the weak points, and then, having understood it perfectly, they
+> break it over their knee.
+
+[Getting Over it Developer Reacts to speedrun of Getting Over It](https://www.youtube.com/watch?v=dGU5_UUalPA)
+{: .centered }
 
 For the uninitiated, cheesing a puzzle means to solve it through an unintended path. This comes from
 video game slang, where it usually means you're breaking the game's design or intended play experience.
@@ -480,3 +483,172 @@ and the puzzle was redesigned to make that harder.)
 * If enumerations are given for a multi-word phrase, sometimes the enumeration itself is enough to constrain
 the phrase. You can use OneLook or nutrimatic to check for this.
 For example, (2 2 2 3 2 2 4 2 3 8) only has [one notable match](https://nutrimatic.org/2024/?q=%22AA+AA+AA+AAA+AA+AA+AAAA+AA+AAA+AAAAAAAA%22&go=Go).
+
+
+7. Get in the constructor's mindset
+
+If you get really stuck, it can help to ask why a puzzle was constructed the way it is. Why was this information
+provided to you? Why is this clue phrased the way it is?
+
+A very recent top-of-mind example is [Goodreads](https://www.brownpuzzlehunt.com/puzzle/goodreads) from Brown
+Puzzlehunt 2024. There is a point in the puzzle where you extract a bunch of numeric library classifications (i.e. Language = 400 in Dewey Decimal).
+Except, we were confused on whether to extract using "Language" or "400". One clue 
+Except, one comes with a note saying "in base 63". We were pretty confused on how to use this, and on whether
+we were supposed to use "Language" or "400" in extraction. The eventual argument made was:
+
+> Saying "base 63" is so random. This has to only exist because they couldn't make extraction work with
+standard library classes. So we should leave this as "400" instead of "Language".
+
+How much this helps you will depend on how well you understand typical puzzle design, and this is one reason
+people who write puzzles tend to get better at solving them. Like, maybe the reason Galactic Trendsetters is so
+strong is because parts of their team have been writing hunts every year for 7 years.
+
+
+Bringing This Together
+---------------------------------------------------------------------------------------------------
+
+To show this coming together, here is a puzzle I remember speedrunning especially quickly: [The Three Little Pigs](https://hunt20.com/puzzle/three-little-pigs.html)
+from Hunt 20 2.1 Puzzle Hunt. This hunt was designed to be on the easier side, so this made it more susceptible to
+speedrunning. I've reproduced the solve path based on Google Sheets history.
+
+**The Three Little Pigs**
+
+<main>
+
+    <p class="flavor">It's all about 3</p>
+
+<div><p><i>This puzzle uses cryptic clues. If you are new to cryptic clues, <a href="https://puzzling.stackexchange.com/questions/45984/cryptic-clue-guide" target="_blank" class="link">a guide such as this</a> may help.</i></p></div>
+
+<div style="width:100%"><div style="float:left;width:50%;padding-right:15px"><p>
+Nice hug in deity (4)<br>
+Break small round pan (4)<br>
+Shatter quick for pancakes? (9)<br>
+Head of public relations takes primate document (5)<br>
+Little matter from master weight (6)<br>
+Among a hubbub blessing, spheres (7)<br>
+Plain vehicle turns everything and one (7)<br>
+Southern team leader's uncooked fodder  (5)<br>
+Cease the odd sets of pi (4)<br></p></div><div style="float:left:width:45%"><p>
+Bachelor's around Astley blocks (6)<br>
+Cisgender in Social Security, or small tools (8)<br>
+Diamond inside a meal (6)<br>
+Flower mob coming back around failure (7)<br>
+Particle misuses one turn (7)<br>
+Soda bubble result (3)<br>
+Sweet delayed after cold homecoming (9)<br>
+Turn an official list of bread (4)<br>
+Unpleasant drug lyrics within (4)
+</p></div></div>
+</main>
+
+(counting)
+
+There are 9 clues in each half.
+
+(look ahead)
+
+The puzzle is very strongly hinting 3, so my guess is that either we
+will form 3 groups of 3 from each column, or we'll pair the columns and use 3 some other way.
+
+(look for confirmation)
+
+Clues in the second half are ordered alphabetically, clues in the first half are not.
+We'll probably pair and order by the 1st half.
+
+(prioritize useful information)
+Since it seems likely we'll do pairing, let's solve a few from both columns,
+that'll make it more likely we find a pair first.
+
+<div style="width:100%"><div style="float:left;width:50%;padding-right:15px"><p>
+Nice hug in deity (4)<br>
+Break small round pan (4) = `SNAP`<br>
+Shatter quick for pancakes? (9)<br>
+Head of public relations takes primate document (5)<br>
+Little matter from master weight (6)<br>
+Among a hubbub blessing, spheres (7)<br>
+Plain vehicle turns everything and one (7)<br>
+Southern team leader's uncooked fodder  (5)<br>
+Cease the odd sets of pi (4) = `STOP`<br></p></div><div style="float:left:width:45%"><p>
+Bachelor's around Astley blocks (6)<br>
+Cisgender in Social Security, or small tools (8)<br>
+Diamond inside a meal (6)<br>
+Flower mob coming back around failure (7)<br>
+Particle misuses one turn (7)<br>
+Soda bubble result (3) = `POP`<br>
+Sweet delayed after cold homecoming (9)<br>
+Turn an official list of bread (4)<br>
+Unpleasant drug lyrics within (4)
+</p></div></div>
+
+Hey, SNAP and POP could get groupd with CRACKLE. Perhaps this is how we use 3 - we get clues for two parts
+of a set of 3. STOP could be the start of STOP DROP ROLL, so let's see if we can find ROLL in the right column, and
+otherwise focus on solving the left column since that provides ordering.
+
+<div style="width:100%"><div style="float:left;width:50%;padding-right:15px"><p>
+Nice hug in deity (4)<br>
+Break small round pan (4) = `SNAP`<br>
+Shatter quick for pancakes? (9) = `BREAKFAST`<br>
+Head of public relations takes primate document (5)<br>
+Little matter from master weight (6)<br>
+Among a hubbub blessing, spheres (7)<br>
+Plain vehicle turns everything and one (7)<br>
+Southern team leader's uncooked fodder  (5)<br>
+Cease the odd sets of pi (4) = `STOP`<br></p></div><div style="float:left:width:45%"><p>
+Bachelor's around Astley blocks (6) = `BRICKS`<br>
+Cisgender in Social Security, or small tools (8)<br>
+Diamond inside a meal (6)<br>
+Flower mob coming back around failure (7)<br>
+Particle misuses one turn (7)<br>
+Soda bubble result (3) = `POP`<br>
+Sweet delayed after cold homecoming (9)<br>
+Turn an official list of bread (4) = `ROLL?`<br>
+Unpleasant drug lyrics within (4)
+</p></div></div>
+
+With BREAKFAST on the right, we should try to find LUNCH or DINNER, and with BRICKS on right we should try to
+find STRAW or STICKS on the left.
+
+<div style="width:100%"><div style="float:left;width:50%;padding-right:15px"><p>
+Nice hug in deity (4)<br>
+Break small round pan (4) = `SNAP`<br>
+Shatter quick for pancakes? (9) = `BREAKFAST`<br>
+Head of public relations takes primate document (5)<br>
+Little matter from master weight (6)<br>
+Among a hubbub blessing, spheres (7)<br>
+Plain vehicle turns everything and one (7)<br>
+Southern team leader's uncooked fodder  (5) = `STRAW`<br>
+Cease the odd sets of pi (4) = `STOP`<br></p></div><div style="float:left:width:45%"><p>
+Bachelor's around Astley blocks (6) = `BRICKS`<br>
+Cisgender in Social Security, or small tools (8)<br>
+Diamond inside a meal (6) = `DINNER?`<br>
+Flower mob coming back around failure (7)<br>
+Particle misuses one turn (7)<br>
+Soda bubble result (3) = `POP`<br>
+Sweet delayed after cold homecoming (9)<br>
+Turn an official list of bread (4) = `ROLL?`<br>
+Unpleasant drug lyrics within (4)
+</p></div></div>
+
+For the middle words, we have
+
+```
+???
+CRACKLE
+LUNCH
+???
+???
+???
+???
+STICKS
+DROP
+```
+
+Having 4/9 is enough to try nutrimatic. First letters doesn't look good (ending in SD is rough).
+There's no other indices around, but given all the 3s around, let's try indexing with 3.
+
+https://nutrimatic.org/2024/?q=AanAAAAio&go=Go
+
+Scrolling down the list a bit, we see DANCE TRIO. Now there's a lot of reasonable phrases here, but
+"trio" suggests 3 strongly enough that it's worth trying. This was in fact the answer.
+
+
