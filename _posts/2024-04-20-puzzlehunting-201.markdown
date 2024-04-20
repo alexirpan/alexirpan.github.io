@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Puzzlehunt 201"
-date:   2024-03-07 01:41:00 -0700
+date:   2024-04-20 01:41:00 -0700
 ---
 
 I'm good at puzzlehunts. I thought about equivocating this, saying I think I'm
