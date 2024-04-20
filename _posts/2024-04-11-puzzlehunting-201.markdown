@@ -276,13 +276,9 @@ try to extract earlier to save myself from having to do more work.)
 The reason it's worth looking ahead is that knowing the next step often gives you extra constraints.
 It's a bit like backsolving a metapuzzle, but at smaller scale. Sometimes this lets you skip large chunks of
 a puzzle too, if you figure out extraction early enough to get the answer to show up in nutrimatic or Qat.
-One way to solve puzzles faster is to just do less work.
-
-I should also mention that you don't *have* to do this. I know some very strong solvers who will 100% puzzles
-by default. They'll still look ahead, but will solve all the clues before doing the next step they figured out
-10 minutes ago. Puzzle solvers tend to derive enjoyment from understanding how the puzzle comes together, and
-sometimes that means seeing how it *all* comes together. Personally, I only do this if I'm having a ton of fun
-with the puzzle, otherwise I'll move on.
+One way to solve puzzles faster is to just do less work. I know some very strong solvers who can solve quickly
+while 100%ing puzzles, but it's undeniably true that you don't need to 100% puzzles to finish them.
+Personally, I only 100% a puzzle if I'm having a ton of fun, otherwise I'll move on.
 
 
 #### Look for pieces of confirmation
@@ -359,10 +355,11 @@ it easier to priotize.
 Also, being good at spreadsheet formulas is by far the most transferrable skill to real life.
 The business world runs on Excel. The very basic actions you'll do over and over in puzzlehunts:
 
-* `=MID(A1, k, 1)` takes the $$k$$th letter of A1
+* `=MID(A1, k, 1)` takes the $$k$$th letter of A1.
 * `=REGEXREPLACE(A1, "[^A-Za-z]", "")` removes all non A-Z characters from A1.
+* `=LEN(A1)` gives the length of the word in A1.
 * `=CHAR(A1 + 64)` will convert 1 to 26 into A to Z.
-    * If you can't remember 64, you can do `=CHAR(A1 - 1 + CODE('A'))` instead
+    * If you can't remember 64, you can do `=CHAR(A1 - 1 + CODE('A'))` instead.
 * `=CODE(A1) - 64` will convert A to Z into 1 to 26.
 
 It's also worth understanding relative references vs absolute references. Consider this
@@ -375,7 +372,7 @@ The `=MID(B2, C2, 1)` in cell D2 here is a relative reference. Although the cell
 Dragging a formula will copy-paste that relative offset to each cell, which is usually exactly what we want.
 
 <div class="centered">
-<video width="640" controls muted autoplay>
+<video width="640" controls muted>
     <source src="/public/puzzlehunting-201/drag1.mp4">
     Your browser does not support .mp4 files.
 </video>
@@ -391,7 +388,7 @@ Indexing multiple columns of indices: `=MID($A1, B1, 1)` locks the word to alway
 column A.
 
 <div class="centered">
-<video width="640" controls muted autoplay>
+<video width="640" controls muted>
     <source src="/public/puzzlehunting-201/drag2.mp4">
     Your browser does not support .mp4 files.
 </video>
@@ -400,11 +397,15 @@ column A.
 Indexing a single word many times: `=MID($A$1, B1, 1)`.
 
 <div class="centered">
-<video width="640" controls muted autoplay>
+<video width="640" controls muted>
     <source src="/public/puzzlehunting-201/drag3.mp4">
     Your browser does not support .mp4 files.
 </video>
 </div>
+
+As I've become more fluent in spreadsheets, I've started using them in ways besides. For example, if the clues for a puzzle include enumeration, I'll quickly add
+`=LEN(REGEXREPLACE(A1, "[^A-Za-z]", ""))` next to each answer column, to make it easier
+to verify our words are matching the given lengths.
 
 The spreadsheet rabbit hole goes very deep. I recommend
 [You Suck at Excel](https://www.bilibili.com/video/BV1734y187KS/) by Joel Spolsky as a classic
@@ -447,30 +448,30 @@ Getting Unstuck
 
 Everyone gets stuck on puzzles. The question is what to do about it.
 
+#### Check your work.
 
-1. Do a different puzzle.
+I have seen so, *so* many times where a puzzle was stuck because of a silly mistake. **Check your
+work.** Cannot overstate this enough. I know one friend who's joked that their puzzle
+solving tips guide would just be "check your work" repeated 50 times.
+
+#### Do a different puzzle.
 
 There's no shame in abandoning a puzzle for now and coming back to it later. It's very
 easy to tunnel vision too hard on a problem.
 
 However, there is a certain art to this. Puzzles are normally done in teams. If you abandon
-a puzzle, it's good to make a clean copy of the sheet, where you organize and explain the work
-done so far. In this clean copy, you should try to remove all the speculative half-baked ideas
-you had. Given that you're stuck, it's more likely you're in the wrong rabbit hole, and you should
-try to avoid biasing future solvers into the same rabbit hole. If those future solvers come to the
-same conclusions you did, then you can treat it as evidence you're on the right track.
+a puzzle, it's good to make a clean copy of your sheet first. Keep your scratch work as is, but
+in the clean copy, organize your work and explain what you've found. Importantly, *remove all the speculative half-baked ideas you had.*
+Given that you're stuck on the puzzle, it's more likely you're half-baked ideas are wrong, and you
+should avoid biasing future solvers into the same rabbit hole.
 
-2. Check your work.
+#### Look for unused information
 
-I have seen so, *so* many times where a puzzle was stuck because of a silly mistake. **Check your
-work.** Cannot overstate this enough.
-
-3. Look for unused information
-
-Not all puzzles will use all channels of information, but most puzzles will try to do so.
+Most puzzles will try to use all channels of information they can, and will not have extraneous info.
+That doesn't mean every puzzle will use 100% of its info, but it's the first place to look.
 Try enumerating everything that has and hasn't been used yet.
 
-4. Look for missing information.
+#### Look for missing information
 
 To me, this is slightly distinct from unused information. Unused information is when you know there
 are aspects of the puzzle dataset you haven't used yet. Missing information is when the information
@@ -478,21 +479,21 @@ you need doesn't even exist in your spreadsheet, and needs an a-ha to figure out
 
 The longer a sheet stays unextracted, the more likely it is that the sheet is fundamentally missing
 the information needed to extract. I'm a big fan of [qhex's extraction basher](https://tools.qhex.org/),
-which will try a wide battery of indexing and ordering mechanisms. It's not that robust to errors, but
-it's a good way to check the likelihood your spreadsheet is missing a column. If you're confident your
-sheet is clean, without errors, and qhex doesn't extract it, you're missing a column of info.
+which will try a wide battery of indexing and ordering mechanisms. It doesn't actually work that often
+in my experience, but when I see it fail, it does encourage me to consider if there's a way to derive
+another column of data we could be extracting from.
 
-5. Assume a few errors
+#### Assume a few errors
 
 To err is to be human. If you don't like a few letters, you can always pretend those were solved wrong
 and switch them to wildcards in nutrimatic.
 
 It's important not to overdo this, but getting good at error correction can really take you quite far.
-This can extend past the single letter case as well. Sometimes I Caeser shift gibberish text to check
-if our indices are all off-by-one.
+This extends to other forms of errors as well. For example, sometimes I'll assume our indices were
+derived incorrectly, and try Caeser shifting by all values in case they're all off by one.
 
 
-6. Cheese
+#### Cheese
 
 > A game designer painstakingly carves a beautiful sculpture out of wood, first chiselling it out of a
 > raw block, and then gradually rounding off any rough edges, making sure it works when it's viewed from
@@ -505,44 +506,67 @@ if our indices are all off-by-one.
 [Getting Over it Developer Reacts to speedrun of Getting Over It](https://www.youtube.com/watch?v=dGU5_UUalPA)
 {: .centered }
 
-For the uninitiated, cheesing a puzzle means to solve it through an unintended path. This comes from
-video game slang, where it usually means you're breaking the game's design or intended play experience.
+For the uninitiated, cheesing a puzzle means to solve it through an unintended path, and comes from video
+game slang.
 
-This can be a little controversial...it's a bit subversive, and in my opinion hardening a puzzle
-against cheese can sometimes make it worse. I view it the same as backsolving - it's a ton of fun
-if it works, but it wouldn't be nearly so fun if it worked all the time.
+Cheesing can be a little controversial...it's a bit subversive, and as tools for cheesing have gotten stronger,
+puzzle design has had to adapt in ways that sometimes makes a puzzle worse. Hardening a puzzle against
+nutrimatic sometimes makes it less friendly to new solvers who don't know how to exploit nutrimatic.
+
+I view cheesing the same as backsolving - it's a ton of fun if it works, but it wouldn't be nearly so fun if it worked all the time.
 
 Here are common cheese tactics:
 
-* If you don't know how to order, you can try random anagramming. (too many to name)
+* If you don't know how to order, you can try random anagramming.
 * If you have an ordered list of words, but don't know the indices, you can construct a regular expression
-to take one letter from each word and see what possibilitiese show up in nutrimatic.
-(2020 coding puzzle)
-* Similarly, if you have an ordered list of indices, know what words you're indexing, but don't know how they
-match up, you can also construct a regex. If the index is (3), you make a regex of every 3rd letter among your set.
-(shard hunt) (I broke [Mouth Mash](https://2020.teammatehunt.com/puzzles/mouth-mash) this way in testsolving
-and the puzzle was redesigned to make that harder.)
-* If enumerations are given for a multi-word phrase, sometimes the enumeration itself is enough to constrain
+to take one letter from each word and see what possibilities show up in nutrimatic. For example, this works on the list of words
+in the spreadsheet video earlier up.
+
+![Nutrimatic results for extracting from WOW, WHAT, EXCITING, WORDS, VERY, and WONDERFUL](/public/puzzlehunting-201/nutrimatic_results.png)
+{: .centered }
+
+    Another puzzle where I remember it working was [Hackin' the Beanstalk](https://puzzles.mit.edu/2020/puzzle/hackin_the_beanstalk/) from MIT Mystery Hunt 2020.
+
+* If you have an ordered list of indices, know what words you're indexing, but don't know how they
+match up, you can also construct a regex. If the index is (3), and we know the word we'd index is one of CAT, DOG, or HORSE,
+then we know that letter can only be `[tgr]`.
+This was how our team solved the [Flexibility](https://shardhunt.com/puzzle/flexibility.html) meta from
+Shardhunt. We understood the last section was forming a path going back and forth between six 6-letter words, indexing
+the face seen at each step of the path, but we couldn't figure out the interpretation. So we tried a cheese, and it worked
+(albeit with having to move to page 2 of nutrimatic results).
+
+![Shardhunt sheet](/public/puzzlehunting-201/shardhunt.png)
+{: .centered }
+
+    In testsolving, I solved [Mouth Mash](https://2020.teammatehunt.com/puzzles/mouth-mash) this way as well, and the puzzle
+was redesigned to make that harder.
+
+* If enumerations are given for a multi-word phrase, and the phrase is long enough, sometimes the enumeration itself is enough to constrain
 the phrase. You can use OneLook or nutrimatic to check for this.
 For example, (2 2 2 3 2 2 4 2 3 8) only has [one notable match](https://nutrimatic.org/2024/?q=%22AA+AA+AA+AAA+AA+AA+AAAA+AA+AAA+AAAAAAAA%22&go=Go).
+This cheese is usually better done in OneLook, since it has fewer phrases but those phrases are more valid as puzzle answers.
+
+To draw an analogy to [engineering solutions to high school math contest problems](https://cjquines.com/files/engineering.pdf), these
+tricks do not substitute for actually getting better at puzzles, but they can be effective. If you cheese a puzzle you should at least go
+read how it was supposed to work after solutions are released.
 
 
-7. Get in the constructor's mindset
+#### Get in the constructor's mindset
 
 If you get really stuck, it can help to ask why a puzzle was constructed the way it is. Why was this information
 provided to you? Why is this clue phrased the way it is?
 
 A very recent top-of-mind example is [Goodreads](https://www.brownpuzzlehunt.com/puzzle/goodreads) from Brown
 Puzzlehunt 2024. There is a point in the puzzle where you extract a bunch of numeric library classifications (i.e. Language = 400 in Dewey Decimal).
-Except, we were confused on whether to extract using "Language" or "400". One clue 
-Except, one comes with a note saying "in base 63". We were pretty confused on how to use this, and on whether
-we were supposed to use "Language" or "400" in extraction. The eventual argument made was:
+We were confused on whether to extract using "Language" or "400". One clue comes with a note saying "in base 63", so
+the eventual argument made was:
 
 > Saying "base 63" is so random. This has to only exist because they couldn't make extraction work with
-standard library classes. So we should leave this as "400" instead of "Language".
+> standard library classes. So we should leave the class as the number, since there's no great way to interpret
+> base 63 otherwise.
 
 How much this helps you will depend on how well you understand typical puzzle design, and this is one reason
-people who write puzzles tend to get better at solving them. Like, maybe the reason Galactic Trendsetters is so
+people who write puzzles tend to get better at solving them. Like, maybe the reason ✈✈✈Galactic Trendsetters✈✈✈ is so
 strong is because parts of their team have been writing hunts every year for 7 years.
 
 
@@ -551,13 +575,14 @@ Bringing This Together
 
 To show this coming together, here is a puzzle I remember speedrunning especially quickly: [The Three Little Pigs](https://hunt20.com/puzzle/three-little-pigs.html)
 from Hunt 20 2.1 Puzzle Hunt. This hunt was designed to be on the easier side, so this made it more susceptible to
-speedrunning. I've reproduced the solve path based on Google Sheets history.
+speedrunning.
 
 **The Three Little Pigs**
+{: .centered }
 
 <main>
 
-    <p class="flavor">It's all about 3</p>
+<p class="centered"><i>It's all about 3</i></p>
 
 <div><p><i>This puzzle uses cryptic clues. If you are new to cryptic clues, <a href="https://puzzling.stackexchange.com/questions/45984/cryptic-clue-guide" target="_blank" class="link">a guide such as this</a> may help.</i></p></div>
 
@@ -583,67 +608,71 @@ Unpleasant drug lyrics within (4)
 </p></div></div>
 </main>
 
-(counting)
+Below is a reproduction of the solve path based on Google Sheets history, annotated
+with strategies mentioned earlier.
 
-There are 9 clues in each half.
+<hr/>
+<br/>
 
-(look ahead)
+There are 9 clues in each half **(counting)**.
 
 The puzzle is very strongly hinting 3, so my guess is that either we
-will form 3 groups of 3 from each column, or we'll pair the columns and use 3 some other way.
+will form 3 groups of 3 from each column, or we'll pair the columns and use 3 some other way
+**(looking ahead)**.
 
-(look for confirmation)
+Clues in the right column are ordered alphabetically, clues in the left column are not
+**(looking for confirmation)**.
+That suggests ordering by the left column. If only one column is oredred, that also suggests
+pairing between columns, because **(constructor mindset)** it wouldn't make sense to change
+the ordering between columns if each column was used identically.
 
-Clues in the second half are ordered alphabetically, clues in the first half are not.
-We'll probably pair and order by the 1st half.
-
-(prioritize useful information)
 Since it seems likely we'll do pairing, let's solve a few from both columns,
-that'll make it more likely we find a pair first.
+that'll make it more likely we find a pair first
+**(prioritize important clues)**.
 
 <div style="width:100%"><div style="float:left;width:50%;padding-right:15px"><p>
 Nice hug in deity (4)<br>
-Break small round pan (4) = `SNAP`<br>
+Break small round pan (4) = SNAP<br>
 Shatter quick for pancakes? (9)<br>
 Head of public relations takes primate document (5)<br>
 Little matter from master weight (6)<br>
 Among a hubbub blessing, spheres (7)<br>
 Plain vehicle turns everything and one (7)<br>
 Southern team leader's uncooked fodder  (5)<br>
-Cease the odd sets of pi (4) = `STOP`<br></p></div><div style="float:left:width:45%"><p>
+Cease the odd sets of pi (4) = STOP<br></p></div><div style="float:left:width:45%"><p>
 Bachelor's around Astley blocks (6)<br>
 Cisgender in Social Security, or small tools (8)<br>
 Diamond inside a meal (6)<br>
 Flower mob coming back around failure (7)<br>
 Particle misuses one turn (7)<br>
-Soda bubble result (3) = `POP`<br>
+Soda bubble result (3) = POP<br>
 Sweet delayed after cold homecoming (9)<br>
 Turn an official list of bread (4)<br>
 Unpleasant drug lyrics within (4)
 </p></div></div>
 
-Hey, SNAP and POP could get groupd with CRACKLE. Perhaps this is how we use 3 - we get clues for two parts
+Hey, SNAP and POP could form a group with CRACKLE. Perhaps this is how we use 3 - we get clues for two parts
 of a set of 3. STOP could be the start of STOP DROP ROLL, so let's see if we can find ROLL in the right column, and
 otherwise focus on solving the left column since that provides ordering.
 
 <div style="width:100%"><div style="float:left;width:50%;padding-right:15px"><p>
 Nice hug in deity (4)<br>
-Break small round pan (4) = `SNAP`<br>
-Shatter quick for pancakes? (9) = `BREAKFAST`<br>
+Break small round pan (4) = SNAP<br>
+Shatter quick for pancakes? (9) = BREAKFAST<br>
 Head of public relations takes primate document (5)<br>
 Little matter from master weight (6)<br>
 Among a hubbub blessing, spheres (7)<br>
 Plain vehicle turns everything and one (7)<br>
 Southern team leader's uncooked fodder  (5)<br>
-Cease the odd sets of pi (4) = `STOP`<br></p></div><div style="float:left:width:45%"><p>
-Bachelor's around Astley blocks (6) = `BRICKS`<br>
+Cease the odd sets of pi (4) = STOP<br></p></div><div style="float:left:width:45%"><p>
+Bachelor's around Astley blocks (6) = BRICKS<br>
 Cisgender in Social Security, or small tools (8)<br>
 Diamond inside a meal (6)<br>
 Flower mob coming back around failure (7)<br>
 Particle misuses one turn (7)<br>
-Soda bubble result (3) = `POP`<br>
+Soda bubble result (3) = POP<br>
 Sweet delayed after cold homecoming (9)<br>
-Turn an official list of bread (4) = `ROLL?`<br>
+Turn an official list of bread (4) = ROLL?<br>
 Unpleasant drug lyrics within (4)
 </p></div></div>
 
@@ -652,26 +681,27 @@ find STRAW or STICKS on the left.
 
 <div style="width:100%"><div style="float:left;width:50%;padding-right:15px"><p>
 Nice hug in deity (4)<br>
-Break small round pan (4) = `SNAP`<br>
-Shatter quick for pancakes? (9) = `BREAKFAST`<br>
+Break small round pan (4) = SNAP<br>
+Shatter quick for pancakes? (9) = BREAKFAST<br>
 Head of public relations takes primate document (5)<br>
 Little matter from master weight (6)<br>
 Among a hubbub blessing, spheres (7)<br>
 Plain vehicle turns everything and one (7)<br>
-Southern team leader's uncooked fodder  (5) = `STRAW`<br>
-Cease the odd sets of pi (4) = `STOP`<br></p></div><div style="float:left:width:45%"><p>
-Bachelor's around Astley blocks (6) = `BRICKS`<br>
+Southern team leader's uncooked fodder  (5) = STRAW<br>
+Cease the odd sets of pi (4) = STOP<br></p></div><div style="float:left:width:45%"><p>
+Bachelor's around Astley blocks (6) = BRICKS<br>
 Cisgender in Social Security, or small tools (8)<br>
-Diamond inside a meal (6) = `DINNER?`<br>
+Diamond inside a meal (6) = DINNER?<br>
 Flower mob coming back around failure (7)<br>
 Particle misuses one turn (7)<br>
-Soda bubble result (3) = `POP`<br>
+Soda bubble result (3) = POP<br>
 Sweet delayed after cold homecoming (9)<br>
-Turn an official list of bread (4) = `ROLL?`<br>
+Turn an official list of bread (4) = ROLL?<br>
 Unpleasant drug lyrics within (4)
 </p></div></div>
 
-For the middle words, we have
+<br>
+Let's try extracting from the missing words for each group of 3. So far, we have:
 
 ```
 ???
@@ -685,12 +715,10 @@ STICKS
 DROP
 ```
 
-Having 4/9 is enough to try nutrimatic. First letters doesn't look good (ending in SD is rough).
-There's no other indices around, but given all the 3s around, let's try indexing with 3.
+Having 4/9 is enough to try nutrimatic. First instinct is to read first letteres, but ending in
+SD seems bad. So let's try taking the 3rd letter of each, since that would be thematic. If we
+scroll down [the list](https://nutrimatic.org/2024/?q=AanAAAAio&go=Go) a bit, we see `DANCE
+TRIO`, which was the answer.
 
-https://nutrimatic.org/2024/?q=AanAAAAio&go=Go
-
-Scrolling down the list a bit, we see DANCE TRIO. Now there's a lot of reasonable phrases here, but
-"trio" suggests 3 strongly enough that it's worth trying. This was in fact the answer.
-
-
+During the hunt, some teams solved this puzzle in 5 minutes. My team didn't match that speed, but you can
+see how applying a few tricks let us focus directly in on the solve path and reduced unnecessary effort.
