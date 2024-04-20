@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Puzzlehunt 201"
+title:  "Puzzlehunting 201"
 date:   2024-04-20 01:41:00 -0700
 ---
 
