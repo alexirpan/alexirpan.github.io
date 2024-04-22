@@ -4,11 +4,14 @@ title:  "Puzzlehunting 201"
 date:   2024-04-20 01:41:00 -0700
 ---
 
-I'm good at puzzlehunts. I thought about equivocating this, saying I think I'm
+I'm good at puzzlehunts. I thought about equivocating this, saying I *think* I'm
 good at puzzlehunts, or relatively strong at puzzlehunts, but, no, I'm just good
 at them. I've been on the winning MIT Mystery
 Hunt team (twice), and most recently was on the 2nd place team for the
 [Who Killed Ickey?](https://ickeytreasurehunt.com/leaderboard) treasure hunt.
+Those cover the spectrum between hunts where the winner is the one with fastest
+break-ins (Mystery Hunt), and ones where it's more about pure execution speed (Ickey).
+Empirically, I'm good at both.
 
 Now, I have some misgivings about casting puzzlehunts as about the competition.
 I feel puzzles are much more about testing creativity, promoting curiosity,
