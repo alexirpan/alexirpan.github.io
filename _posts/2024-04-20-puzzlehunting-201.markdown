@@ -546,8 +546,8 @@ Here are common cheese tactics:
 to take one letter from each word and see what possibilities show up in nutrimatic. For example, this works on the list of words
 in the spreadsheet video earlier up.
 
-![Nutrimatic results for extracting from WOW, WHAT, EXCITING, WORDS, VERY, and WONDERFUL](/public/puzzlehunting-201/nutrimatic_results.png)
-{: .centered }
+    ![Nutrimatic results for extracting from WOW, WHAT, EXCITING, WORDS, VERY, and WONDERFUL](/public/puzzlehunting-201/nutrimatic_results.png)
+    {: .centered }
 
     Another puzzle where I remember it working was [Hackin' the Beanstalk](https://puzzles.mit.edu/2020/puzzle/hackin_the_beanstalk/) from MIT Mystery Hunt 2020.
 
@@ -556,14 +556,14 @@ match up, you can also construct a regex. If the index is (3), and we know the w
 then we know that letter can only be `[tgr]`.
 This was how our team solved the [Flexibility](https://shardhunt.com/puzzle/flexibility.html) meta from
 Shardhunt. We understood the last section was forming a path going back and forth between six 6-letter words, indexing
-the face seen at each step of the path, but we couldn't figure out the interpretation. So we tried a cheese, and it worked
-(albeit with having to move to page 2 of nutrimatic results).
+the face seen at each step of the path, but we couldn't figure out the interpretation. So we tried a cheese in hopes we could
+skip that step, and it worked. (Albeit with having to look at page 2 of nutrimatic results.)
 
-![Shardhunt sheet](/public/puzzlehunting-201/shardhunt.png)
-{: .centered }
+    ![Shardhunt sheet](/public/puzzlehunting-201/shardhunt.png)
+    {: .centered }
 
     In testsolving, I solved [Mouth Mash](https://2020.teammatehunt.com/puzzles/mouth-mash) this way as well, and the puzzle
-was redesigned to make that harder.
+    was redesigned to make that harder.
 
 * If enumerations are given for a multi-word phrase, and the phrase is long enough, sometimes the enumeration itself is enough to constrain
 the phrase. You can use OneLook or nutrimatic to check for this.
@@ -601,10 +601,9 @@ To show this coming together, here is a puzzle I remember speedrunning especiall
 from Hunt 20 2.1 Puzzle Hunt. This hunt was designed to be on the easier side, so this made it more susceptible to
 speedrunning.
 
-**The Three Little Pigs**
+<div class="shaded" markdown="1">
+#### The Three Little Pigs
 {: .centered }
-
-<main>
 
 <p class="centered"><i>It's all about 3</i></p>
 
@@ -630,7 +629,8 @@ Sweet delayed after cold homecoming (9)<br>
 Turn an official list of bread (4)<br>
 Unpleasant drug lyrics within (4)
 </p></div></div>
-</main>
+<br>
+</div>
 
 Below is a reproduction of the solve path based on Google Sheets history, annotated
 with strategies mentioned earlier.
@@ -654,6 +654,7 @@ Since it seems likely we'll do pairing, let's solve a few from both columns,
 that'll make it more likely we find a pair first
 **(prioritize important clues)**.
 
+<div class="shaded" markdown="1">
 <div style="width:100%"><div style="float:left;width:50%;padding-right:15px"><p>
 Nice hug in deity (4)<br>
 Break small round pan (4) = SNAP<br>
@@ -674,11 +675,14 @@ Sweet delayed after cold homecoming (9)<br>
 Turn an official list of bread (4)<br>
 Unpleasant drug lyrics within (4)
 </p></div></div>
+<br>
+</div>
 
 Hey, SNAP and POP could form a group with CRACKLE. Perhaps this is how we use 3 - we get clues for two parts
 of a set of 3. STOP could be the start of STOP DROP ROLL, so let's see if we can find ROLL in the right column, and
 otherwise focus on solving the left column since that provides ordering.
 
+<div class="shaded" markdown="1">
 <div style="width:100%"><div style="float:left;width:50%;padding-right:15px"><p>
 Nice hug in deity (4)<br>
 Break small round pan (4) = SNAP<br>
@@ -699,10 +703,13 @@ Sweet delayed after cold homecoming (9)<br>
 Turn an official list of bread (4) = ROLL?<br>
 Unpleasant drug lyrics within (4)
 </p></div></div>
+<br>
+</div>
 
 With BREAKFAST on the right, we should try to find LUNCH or DINNER, and with BRICKS on right we should try to
 find STRAW or STICKS on the left.
 
+<div class="shaded" markdown="1">
 <div style="width:100%"><div style="float:left;width:50%;padding-right:15px"><p>
 Nice hug in deity (4)<br>
 Break small round pan (4) = SNAP<br>
@@ -723,6 +730,8 @@ Sweet delayed after cold homecoming (9)<br>
 Turn an official list of bread (4) = ROLL?<br>
 Unpleasant drug lyrics within (4)
 </p></div></div>
+<br>
+</div>
 
 <br>
 Let's try extracting from the missing words for each group of 3. So far, we have:
