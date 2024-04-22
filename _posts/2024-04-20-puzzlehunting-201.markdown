@@ -33,6 +33,12 @@ different, not all pieces of them will click with you, and people can be very op
 about them even if they all share common themes. Your best bet is to try things out, take the parts that work,
 and ignore the parts that don't.
 
+**You don't have to get faster at puzzles.**
+There's a balance between speed and fun. I like going fast
+because I've solved enough puzzles that I want to just race to the next a-ha, and find
+it fun to see how little information I can get away with when solving a puzzle. But that is
+not a universal opinion.
+
 **This will spoil a few puzzles.** I've tried to keep the spoilers as light as needed,
 but it's much easier to give real-life examples than to construct new puzzles just for
 the sake of this post. (Then again, imagine if this post was written entirely to seed content
@@ -144,7 +150,7 @@ missed.
 #### Speak your bad ideas aloud
 
 Puzzle solving is a collaborative activity, and people won't know what ideas you have if you
-don't speak up. It's okay to caveat that your idea is bad, but say it anyways,
+don't speak up. It's okay to caveat that your idea is bad, but say it anyway,
 and try to follow the ["yes, and..."](https://en.wikipedia.org/wiki/Yes,_and...) rule-of-thumb from improv.
 Sometimes you will have 90% of the right idea and be missing the last 10%. Other
 times you will have the half-baked 10% of the right idea, and someone else will have the 90%.
@@ -185,7 +191,7 @@ before doing so.
 
 Counts can also let you draw negative conclusions. If you have 7 clues in one
 part and 10 clues in the other, you are not going to do a 1:1 matching, so you can
-immediately discard trying a 1:1 match and think of doing something eese.
+immediately discard trying a 1:1 match and think of doing something else.
 
 I'd call this the numerology of the puzzle. At the start of a puzzle,
 quickly count the most salient parts of the puzzle, and keep any interesting
@@ -206,18 +212,17 @@ Honestly, a lot of puzzle solving is about taking random parts of the puzzle and
 into a search engine. Search the flavor text. Search just half of the flavor text. Add quotation
 marks to do exact phrase searches. Search all your answers together and see if something shows up.
 Randomly drop out words from all of the previous searches and try again. I haven't tried asking an
-LLM to find patterns in the same way yet - my guess is that it's usually bad due to the typical
-rate of hallunications? But maybe that'll get better.
+LLM to find patterns in the same way yet - it tends to make up patterns where patterns don't exist.
 
 There are a lot of variables you can tweak in your search engine queries. The heuristic I use is
 that if there aren't obvious starting points, I will search the puzzle title, the flavortext, all proper nouns, and
-any phrases that doesn't read like typical English. I'll also mix the theme of the puzzlehunt into
+any phrases that don't read like typical English. I'll also mix the theme of the puzzlehunt into
 search queries if I think it could turn up something new.
 
 
 #### Ask if an idea's overconstrained
 
-Puzzles do not arrive spontaneously, they are created by people to have a solution.
+Puzzles do not arise spontaneously, they are created by people to have a solution.
 As you come up with ideas on how a puzzle
 works, each of those ideas applies a constraint to the puzzle. For example, if we see a
 rows garden puzzle, it's a safe bet that answers for the roses are 6 letters long.
@@ -234,7 +239,7 @@ definitely overconstrained, because after YELLOW you really don't have many opti
 
 The logic goes like this:
 
-* The puzzle is constructable, because I'm looking at it.
+* The puzzle is constructible, because I'm looking at it.
 * If this overconstrained theory X is how the puzzle works, it would not be possible to construct this puzzle.
 * Therefore, X can't be how the puzzle works.
 
@@ -332,6 +337,9 @@ and it's better to distribute work throughout a cluephrase.
 
 Importantly, **you can't tell what to priotize if you haven't tried extracting yet**, which is why I value looking
 ahead on extraction so highly.
+
+At the hunt-wide level, this also means trying to push solves in rounds where you think it'll be important to get
+more solves, either to unlock the meta or get more data for a meta.
 
 
 #### Automate or find tools for common operations
@@ -443,18 +451,31 @@ try something else. (Once again, this has burned me before, when I concluded an 
 wrong because the answer didn't appear in my local wordlist. Proceed with caution!)
 
 
+#### When picking what to work on, check what's underinvested
+
+Most people solve puzzlehunts in a team, and it's usually not good for everyone on the team to pile onto
+one puzzle. Instead it's better for people to spread out. When looking for a puzzle to work on, it can
+therefore be helpful to check what puzzles need help, and which ones have enough people to push it
+to the finish without you.
+
+In general, puzzles with big lists of clues (e.g. crosswords) can absorb lots of people, and puzzles with many serial
+a-has (e.g. logic puzzles) see diminishing returns when people join the puzzle. It's not always clear
+if a puzzle is more serial or parallel. One quick hack is to **just ask the people working on the puzzle** if
+they want help or think they have it under control.
+
+
 Getting Unstuck
 ------------------------------------------------------------------------
 
 Everyone gets stuck on puzzles. The question is what to do about it.
 
-#### Check your work.
+#### Check your work
 
 I have seen so, *so* many times where a puzzle was stuck because of a silly mistake. **Check your
 work.** Cannot overstate this enough. I know one friend who's joked that their puzzle
 solving tips guide would just be "check your work" repeated 50 times.
 
-#### Do a different puzzle.
+#### Do a different puzzle
 
 There's no shame in abandoning a puzzle for now and coming back to it later. It's very
 easy to tunnel vision too hard on a problem.
