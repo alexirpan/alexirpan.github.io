@@ -384,7 +384,7 @@ Dragging a formula will copy-paste that relative offset to each cell, which is u
 
 <div class="centered">
 <video width="640" controls muted>
-    <source src="/public/puzzlehunting-201/drag1.mp4">
+    <source src="/public/puzzlehunting-201/drag1_muted.mp4">
     Your browser does not support .mp4 files.
 </video>
 </div>
@@ -400,7 +400,7 @@ column A.
 
 <div class="centered">
 <video width="640" controls muted>
-    <source src="/public/puzzlehunting-201/drag2.mp4">
+    <source src="/public/puzzlehunting-201/drag2_muted.mp4">
     Your browser does not support .mp4 files.
 </video>
 </div>
@@ -409,7 +409,7 @@ Indexing a single word many times: `=MID($A$1, B1, 1)`.
 
 <div class="centered">
 <video width="640" controls muted>
-    <source src="/public/puzzlehunting-201/drag3.mp4">
+    <source src="/public/puzzlehunting-201/drag3_muted.mp4">
     Your browser does not support .mp4 files.
 </video>
 </div>
