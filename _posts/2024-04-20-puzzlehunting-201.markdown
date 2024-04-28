@@ -12,17 +12,8 @@ Hunt team (twice), and most recently was on the 2nd place team for the
 Those cover the spectrum between hunts where the winner is the one with fastest
 break-ins (Mystery Hunt), and ones where it's more about pure execution speed (Ickey).
 Empirically, I'm good at both.
-
-Now, I have some misgivings about casting puzzlehunts as about the competition.
-I feel puzzles are much more about testing creativity, promoting curiosity,
-and having fun than about trying to finish the fastest. Competition is more a way
-to turn it into an event and encourage people to take them seriously.
-There's really not much money in puzzlehunting and I suspect people like it this way.
-
-Still, competition is fun and at minimum most people will have more fun if they
-solve puzzles than if they don't. After doing
-puzzlehunts for well over a decade, I've picked up some habits that could be
-useful to share.
+After doing puzzlehunts for well over a decade, I've picked up some habits I'd like
+to share.
 
 **If you are new to puzzlehunts, you are not the target audience.** I mean, feel
 free to keep reading! But I will be assuming a bunch of background knowledge and
@@ -32,15 +23,19 @@ instead.
 
 **If you've done many puzzlehunts, not everything I say here will work for you.**
 Puzzlehunting systems are a little like productivity systems: everyone's is
-different, not all pieces of them will click with you, and people can be very opinionated
+different, and people can be very opinionated
 about them even if they all share common themes. Your best bet is to try things out, take the parts that work,
 and ignore the parts that don't.
 
 **You don't have to get faster at puzzles.**
-There's a balance between speed and fun. I like going fast
-because I've solved enough puzzles that I want to just race to the next a-ha, and find
-it fun to see how little information I can get away with when solving a puzzle. But that is
-not a universal opinion.
+I like going fast because I've solved enough puzzles that I want to quickly get through
+grunt work to see the next a-ha.
+To a lesser extent, I find
+it fun to see how little information I can get away with when solving a puzzle.
+But that's not a universal opinion.
+Most people will have
+more fun if they solve puzzles than if they don't, but you don't have to solve puzzles
+*quickly* to have fun.
 
 **This will spoil a few puzzles.** I've tried to keep the spoilers as light as needed,
 but it's much easier to give real-life examples than to construct new puzzles just for
@@ -52,9 +47,6 @@ try looking for it.)
 The One Minute Version
 -------------------------------------------------------------------
 
-Puzzles are usually a collection of data that has hidden patterns and structure.
-Solving a puzzle is about exploring the data to find those structures.
-
 Puzzle solving can be divided into generating ideas for how a puzzle works,
 and executing well on those ideas.
 
@@ -64,10 +56,10 @@ past puzzles.
 To execute better, practice by solving more puzzles.
 
 
-Wait This Seems Too Simple
+Wait, This Seems Too Simple
 -----------------------------------------------------------------
 
-Nah that's pretty much it.
+Nah, that's pretty much it.
 
 The very common story is that if you want to get good at a skill, just do
 it a bunch. Like, go solve 100 puzzles. No, I don't mean 10, or 20. Stop reading and
@@ -78,15 +70,15 @@ magic of the human brain.
 This is a very specific anecdote, but I play a platforming game called Dustforce.
 There's one very hard level in the game which has a part called the Tera section.
 It's almost exactly in the middle of the level, has a 2 frame window in a 60 FPS game,
-and is easily the most difficult part of the level to beat consistently.
+and is easily the most difficult part of the level.
 
-I complained about this in the Discord and was told that yes, it's awful, but then
-shared "100 Teras", a custom map that's just 100 copies of the Tera section with a checkpoint between each one.
+I complained about this in the Discord and was told that yes, it's awful, but was
+then directed to "100 Teras", a custom map that's just 100 copies of the Tera section with a checkpoint between each one.
 "If you're really having trouble, go beat 100 Teras". So I did, twice. And then I stopped
 complaining.
 
 If you go solve 100 puzzles, you may not need this post. I'm still going to explain the
-solve strategies I've picked up, but puzzle solving is really an activity where you
+solving strategies I've learned, but puzzle solving is really an activity where you
 learn by doing.
 
 Okay, on to the real post.
@@ -102,7 +94,8 @@ How do you break-in?
 This is genuinely the hardest part to give advice about. If it was
 easy to break-in, we wouldn't have puzzles in the first place!
 So I've decided to interpret the question differently: how do you create
-conditions that cause good ideas to arise?
+conditions that cause good ideas to arise? And how do you decide if those
+ideas are actually good?
 
 #### Keep clean spreadsheets
 
@@ -118,15 +111,16 @@ means is never the same person-to-person.
 The bare minimum that I think is unobjectionable is:
 
 * Put info of the same type in the same locations
-* Use monospace
+* Use a monospace font
 
-A lot of puzzles will use length as part of the structure. For example, [Human Pyramid](https://2021.teammatehunt.com/puzzles/human-pyramid) from Teammate Hunt 2021.
+The first is just common sense.
+As for monospace, A lot of puzzles will use word length as part of the structure. For example, [Human Pyramid](https://2021.teammatehunt.com/puzzles/human-pyramid) from Teammate Hunt 2021.
 Patterns in length (matching length, exactly one letter longer, etc.)
-are easy to subconsciously notice if you put content in monospace, so if you put your spreadsheet
-in monospace, you'll break-in on these patterns faster.
+are easier to notice if you put content in monospace, so using those fonts can help you
+break-in on those patterns faster.
 
 (In fact, the monospace font
-in Human Pyramid was added during testsolving to push solvers to consider length. A similar trick
+in Human Pyramid was added during testsolving to encourage solvers to consider length. A similar trick
 was used in [Pestered](https://puzzles.mit.edu/2018/full/puzzle/pestered.html) from MIT Mystery Hunt 2018.)
 
 Personally I like to put everything in monospace, but I know some solvers
@@ -153,8 +147,8 @@ missed.
 #### Speak your bad ideas aloud
 
 Puzzle solving is a collaborative activity, and people won't know what ideas you have if you
-don't speak up. It's okay to caveat that your idea is bad, but say it anyway,
-and try to follow the ["yes, and..."](https://en.wikipedia.org/wiki/Yes,_and...) rule-of-thumb from improv.
+don't speak up. It's okay to caveat that your idea is bad, but say it anyway.
+Try to follow the ["yes, and..."](https://en.wikipedia.org/wiki/Yes,_and...) rule-of-thumb from improv.
 Sometimes you will have 90% of the right idea and be missing the last 10%. Other
 times you will have the half-baked 10% of the right idea, and someone else will have the 90%.
 To get to 100% of the idea, one person needs to communicate, and you want to have a culture
@@ -196,26 +190,25 @@ Counts can also let you draw negative conclusions. If you have 7 clues in one
 part and 10 clues in the other, you are not going to do a 1:1 matching, so you can
 immediately discard trying a 1:1 match and think of doing something else.
 
-I'd call this the numerology of the puzzle. At the start of a puzzle,
+I like to call this the numerology of the puzzle. At the start of a puzzle,
 quickly count the most salient parts of the puzzle, and keep any interesting
 correspondences in mind.
 When testsolving
 [Light Show](https://2021.teammatehunt.com/puzzles/light-show) from Teammate Hunt 2021,
 we knew it corresponded to [Tumbled Tower](https://2021.teammatehunt.com/puzzles/tumbled-tower)
-in some way, but weren't sure on the rules for how it'd do so. So after we did
-some work, I decided to count every square in the Light Show grid,
-found there were 133 of them, and noted this equaled 7 * 19. There were 19 septaminos
-in Tumbled Tower. We already suspected we'd use the septaminos in some way, but counting let
+in some way, but weren't sure on the rules for how it would work. So
+I decided to count every square in the Light Show grid.
+There were 133 of them, which was 7 * 19, matching the 19 [heptominos](https://en.wikipedia.org/wiki/Heptomino)
+in Tumbled Tower. We already suspected we'd use the heptominos in some way, but counting let
 us conclude that they should fit exactly with no overlaps or gaps.
 
 
 #### Search everything
 
-Honestly, a lot of puzzle solving is about taking random parts of the puzzle and throwing it
+Honestly, a lot of puzzle solving is about taking random parts of the puzzle and throwing them
 into a search engine. Search the flavor text. Search just half of the flavor text. Add quotation
 marks to do exact phrase searches. Search all your answers together and see if something shows up.
-Randomly drop out words from all of the previous searches and try again. I haven't tried asking an
-LLM to find patterns in the same way yet - it tends to make up patterns where patterns don't exist.
+Randomly drop out words from all of the previous searches and try again.
 
 There are a lot of variables you can tweak in your search engine queries. The heuristic I use is
 that if there aren't obvious starting points, I will search the puzzle title, the flavortext, all proper nouns, and
@@ -228,7 +221,7 @@ search queries if I think it could turn up something new.
 Puzzles do not arise spontaneously, they are created by people to have a solution.
 As you come up with ideas on how a puzzle
 works, each of those ideas applies a constraint to the puzzle. For example, if we see a
-rows garden puzzle, it's a safe bet that answers for the roses are 6 letters long.
+rows garden puzzle, it's a safe bet that answers for the blooms (the colored hexagons) are 6 letters long.
 
 ![Rows garden grid](/public/puzzlehunting-201/rows-garden.png)
 {: .centered }
@@ -259,7 +252,7 @@ this with caution - sometimes a constructor is just insane and figures out how t
 work.
 
 
-Middle of a Puzzle - Moving Faster
+Executing Faster
 ----------------------------------------------------------------------
 
 By this point, we have some idea of how the puzzle works, and are in the phase of answering clues and making
@@ -274,7 +267,7 @@ New puzzlers tend to solve puzzles in a waterfall style. When given a list of cl
 start thinking about what to do with those answers.
 Whereas experienced puzzlers look ahead more, thinking about what to do next while solving the clues.
 
-I don't want to imply new puzzlers are wrong to solve this way. It's hard to look ahead if you don't have the
+I don't think new puzzlers are wrong to solve this way. It's hard to look ahead if you don't have the
 experience to know how puzzles tend to work. But in general, knowing what you're aiming for can make
 it easier to solve the step you're currently on, and will let you jump ahead faster.
 My rough heuristic is consider how the puzzle will work at the start of the puzzle, then again at about the
@@ -391,7 +384,7 @@ Dragging a formula will copy-paste that relative offset to each cell, which is u
 
 In some cases, you will want to refer to a fixed position, which you can do by prepending $. This can
 be applied to the column, row, or both. `$B2` is an absolute ref to column A and a relative ref to row 2,
-wherease `B$2` is a relative ref to column B nad an absolute ref to row 2.
+whereas `B$2` is a relative ref to column B nad an absolute ref to row 2.
 
 Examples:
 
@@ -434,7 +427,7 @@ helpful to write code trying more complex extractions or searches.
 I recommend downloading a wordlist (Scrabble dictionary is a good target), and writing some basic
 functions for A1-Z26, morse, and so on. Any time you write one-off code, check if you think it'll
 be useful for a future hunt, and save it somewhere. A good starting place is
-[solvertools](https://github.com/rspeer/solvertools).
+[solvertools](https://github.com/rspeer/solvertools) for generic operations and [grilops](https://github.com/obijywk/grilops) for logic puzzles.
 
 The power of having basic encodings implemented in code is that **it makes it possible
 to write brute force searches**. Once, I was solving a metapuzzle from a now-offline hunt.
@@ -449,9 +442,9 @@ so out of despair I decided to brute force what we'd extract with all those phra
 the output until something like the answer popped out.
 
 One advantage of code is that if you have code that exhaustively checks all possibilities, and it still
-fails to extract the puzzle, then you know for sure your extraction idea is wrong and you should
-try something else. (Once again, this has burned me before, when I concluded an extraction method was
-wrong because the answer didn't appear in my local wordlist. Proceed with caution!)
+fails to extract the puzzle, then you know you should try something different from the extraction
+you attempted, rather than checking for errors. (Once again, this has burned me before, when I
+concluded an extraction method was wrong because the answer didn't appear in my local wordlist. Proceed with caution!)
 
 
 #### When picking what to work on, check what's underinvested
@@ -465,6 +458,8 @@ In general, puzzles with big lists of clues (e.g. crosswords) can absorb lots of
 a-has (e.g. logic puzzles) see diminishing returns when people join the puzzle. It's not always clear
 if a puzzle is more serial or parallel. One quick hack is to **just ask the people working on the puzzle** if
 they want help or think they have it under control.
+
+In especially big hunts (i.e. Mystery Hunt), you can also strategize at the round level, picking rounds based on how many people are working in that round and how many solves they've gotten so far.
 
 
 Getting Unstuck
@@ -501,7 +496,7 @@ To me, this is slightly distinct from unused information. Unused information is 
 are aspects of the puzzle dataset you haven't used yet. Missing information is when the information
 you need doesn't even exist in your spreadsheet, and needs an a-ha to figure out.
 
-The longer a sheet stays unextracted, the more likely it is that the sheet is fundamentally missing
+The longer a spreadsheet stays unextracted, the more likely it is that the spreadsheet is fundamentally missing
 the information needed to extract. I'm a big fan of [qhex's extraction basher](https://tools.qhex.org/),
 which will try a wide battery of indexing and ordering mechanisms. It doesn't actually work that often
 in my experience, but when I see it fail, it does encourage me to consider if there's a way to derive
@@ -509,12 +504,12 @@ another column of data we could be extracting from.
 
 #### Assume a few errors
 
-To err is to be human. If you don't like a few letters, you can always pretend those were solved wrong
+To err is human. If you don't like a few letters, you can always pretend those were solved wrong
 and switch them to wildcards in nutrimatic.
 
 It's important not to overdo this, but getting good at error correction can really take you quite far.
 This extends to other forms of errors as well. For example, sometimes I'll assume our indices were
-derived incorrectly, and try Caeser shifting by all values in case they're all off by one.
+derived incorrectly, and try Caesar shifting by all values in case they're all off by one.
 
 
 #### Cheese
@@ -589,7 +584,15 @@ the eventual argument made was:
 > standard library classes. So we should leave the class as the number, since there's no great way to interpret
 > base 63 otherwise.
 
-How much this helps you will depend on how well you understand typical puzzle design, and this is one reason
+In general, weird, strange, or obscure clues tend to indicate that there's a very specific reason
+that clue *had* to be weird, strange, or obscure, and you should consider what that reason is.
+To give a non-puzzle example, in the board game Codenames, you are trying to clue words for your team
+and not the opposing team. If I get a clue like "TOMATO: 2", and
+see RED and FRUIT on the board, I'll mention RED and FRUIT fits, but I'll also start wondering why we got
+"TOMATO" as a clue instead of a more typical red fruit like APPLE, CHERRY, or STRAWBERRY. Perhaps
+a word like ICE CREAM is on the board, and they were trying to avoid it.
+
+How much getting into the constructor's mindset helps you will depend on how well you understand typical puzzle design. This is one reason
 people who write puzzles tend to get better at solving them. Like, maybe the reason ✈✈✈Galactic Trendsetters✈✈✈ is so
 strong is because parts of their team have been writing hunts every year for 7 years.
 
@@ -646,7 +649,7 @@ will form 3 groups of 3 from each column, or we'll pair the columns and use 3 so
 
 Clues in the right column are ordered alphabetically, clues in the left column are not
 **(looking for confirmation)**.
-That suggests ordering by the left column. If only one column is oredred, that also suggests
+That suggests ordering by the left column. If only one column is ordered, that also suggests
 pairing between columns, because **(constructor mindset)** it wouldn't make sense to change
 the ordering between columns if each column was used identically.
 
@@ -748,10 +751,12 @@ STICKS
 DROP
 ```
 
-Having 4/9 is enough to try nutrimatic. First instinct is to read first letteres, but ending in
+Having 4/9 is enough to try nutrimatic. First instinct is to read first letters, but ending in
 SD seems bad. So let's try taking the 3rd letter of each, since that would be thematic. If we
 scroll down [the list](https://nutrimatic.org/2024/?q=AanAAAAio&go=Go) a bit, we see `DANCE
 TRIO`, which was the answer.
 
 During the hunt, some teams solved this puzzle in 5 minutes. My team didn't match that speed, but you can
 see how applying a few tricks let us focus directly in on the solve path and reduced unnecessary effort.
+
+*Thanks to Eugene C., Evan Chen, Jacqui Fashimpaur, Cameron Montag, Nishant Pappireddi for giving feedback on earlier drafts of this post.*
