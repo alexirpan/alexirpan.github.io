@@ -341,8 +341,8 @@ more solves, either to unlock the meta or get more data for a meta.
 #### Automate or find tools for common operations
 
 Solve logic puzzles with [Noq](https://www.noq.solutions/). Use browser extensions that make it easy to take screenshots
-and search images by right click (there are a few of them). Wordplays is a solid crossword clue searcher. There are too
-many tools to list all of them, but the one on [puzzlehunt.net](https://www.puzzlehunt.net/tools) is a solid list.
+and search images by right click (there are a few of them, I use [Search by Image](https://chromewebstore.google.com/detail/search-by-image/cnojnbdhbhnkbcieeekonklommdnndci?pli=1)). [Wordplays](https://www.wordplays.com/crossword-solver/) is a solid crossword clue searcher. There are too
+many tools to list all of them, but the one on [puzzlehunt.net](https://www.puzzlehunt.net/tools) is pretty good.
 
 One I would highlight is **spreadsheet formulas**.
 I spent a very long period of my puzzling career not using formulas. Eventually I decided to learn spreadsheet
@@ -361,10 +361,12 @@ The business world runs on Excel. The very basic actions you'll do over and over
 
 * `=MID(A1, k, 1)` takes the $$k$$th letter of A1.
 * `=REGEXREPLACE(A1, "[^A-Za-z]", "")` removes all non A-Z characters from A1.
+    * If you only want to ignore spaces to worry about, `=REGEXREPLACE(A1, " ", "")` or `=SUBSTITUTE(A1, " ", "")` may be easier to remember. You usually do not need the full power of regular expressions.
 * `=LEN(A1)` gives the length of the word in A1.
 * `=CHAR(A1 + 64)` will convert 1 to 26 into A to Z.
     * If you can't remember 64, you can do `=CHAR(A1 - 1 + CODE('A'))` instead.
 * `=CODE(A1) - 64` will convert A to Z into 1 to 26.
+* `=UPPER(A1)` will put the contents in uppercase.
 
 It's also worth understanding relative references vs absolute references. Consider this
 example I just made up.
@@ -525,8 +527,7 @@ derived incorrectly, and try Caesar shifting by all values in case they're all o
 [Getting Over it Developer Reacts to speedrun of Getting Over It](https://www.youtube.com/watch?v=dGU5_UUalPA)
 {: .centered }
 
-For the uninitiated, cheesing a puzzle means to solve it through an unintended path, and comes from video
-game slang.
+For the uninitiated, cheesing a puzzle means to solve it through an unintended path. It comes from video game slang, and usually implies solving with less work than intended.
 
 Cheesing can be a little controversial...it's a bit subversive, and as tools for cheesing have gotten stronger,
 puzzle design has had to adapt in ways that sometimes makes a puzzle worse. Hardening a puzzle against
@@ -565,9 +566,14 @@ the phrase. You can use OneLook or nutrimatic to check for this.
 For example, (2 2 2 3 2 2 4 2 3 8) only has [one notable match](https://nutrimatic.org/2024/?q=%22AA+AA+AA+AAA+AA+AA+AAAA+AA+AAA+AAAAAAAA%22&go=Go).
 This cheese is usually better done in OneLook, since it has fewer phrases but those phrases are more valid as puzzle answers.
 
-To draw an analogy to [engineering solutions to high school math contest problems](https://cjquines.com/files/engineering.pdf), these
-tricks do not substitute for actually getting better at puzzles, but they can be effective. If you cheese a puzzle you should at least go
-read how it was supposed to work after solutions are released.
+To draw an analogy to [engineering solutions to high school math contest problems](https://cjquines.com/files/engineering.pdf), cheesing is not a replacement to learning how to solve puzzles,
+but it can be very effective. If you cheese a puzzle, you should go read how it was supposed
+to work after solutions are released, or try to reverse engineer the extraction from the puzzle
+answer.
+
+You should also make sure the other solvers are okay with you cheesing a puzzle
+before trying to do so. Cheesing is a way to skip ahead of the struggle, but
+sometimes people in the struggle are having lots of fun. (The same applies to backsolving.)
 
 
 #### Get in the constructor's mindset
@@ -759,4 +765,4 @@ TRIO`, which was the answer.
 During the hunt, some teams solved this puzzle in 5 minutes. My team didn't match that speed, but you can
 see how applying a few tricks let us focus directly in on the solve path and reduced unnecessary effort.
 
-*Thanks to Eugene C., Evan Chen, Jacqui Fashimpaur, Cameron Montag, Nishant Pappireddi for giving feedback on earlier drafts of this post.*
+*Thanks to Eugene C., Evan Chen, Jacqui Fashimpaur, Cameron Montag, Nishant Pappireddi, Olga Vinogradova for giving feedback on earlier drafts of this post.*
