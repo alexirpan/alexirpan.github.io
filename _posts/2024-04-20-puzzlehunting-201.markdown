@@ -8,9 +8,10 @@ I'm good at puzzlehunts. I thought about equivocating this, saying I *think* I'm
 good at puzzlehunts, or relatively good at puzzlehunts, but I've been on a winning
 MIT Mystery Hunt team twice and recently was on the 2nd place team for the
 [Who Killed Ickey?](https://ickeytreasurehunt.com/leaderboard) treasure hunt.
-These were definitely team efforts, but I know I made significant contributions in both,
-and those hunts
-cover the spectrum between puzzlehunts where the winner is the one with fastest
+These were definitely team efforts, but I know I made significant contributions to both.
+
+Those hunts
+cover the spectrum between puzzlehunts where the bottleneck is
 break-ins (Mystery Hunt), and ones where it's more about pure execution speed (Ickey).
 After doing puzzlehunts for well over a decade, I've picked up some habits I'd like
 to share.
@@ -40,8 +41,8 @@ more fun if they solve puzzles than if they don't, but you don't have to solve p
 **This will spoil a few puzzles.** I've tried to keep the spoilers as light as needed,
 but it's much easier to give real-life examples than to construct new puzzles just for
 the sake of this post. (Then again, imagine if this post was written entirely to seed content
-for an upcoming puzzlehunt. Boy would that be interesting! Seriously though, it's not. Don't
-try looking for it.)
+for an upcoming puzzlehunt. Boy would that be interesting! Seriously though, it's not.
+You're welcome to look, but you won't find anything.)
 
 
 The One Minute Version
@@ -51,12 +52,12 @@ Puzzle solving can be divided into generating ideas for how a puzzle works,
 and executing well on those ideas.
 
 To generate more ideas, solve more puzzles to see what's shown up in
-past puzzles.
+past puzzles, and try similar things.
 
 To execute better, practice by solving more puzzles.
 
 
-Wait, This Seems Too Simple
+Wait, This Seems Too Simple
 -----------------------------------------------------------------
 
 Nah, that's pretty much it.
@@ -69,7 +70,7 @@ magic of the human brain.
 
 This is a very specific anecdote, but I play a platforming game called *Dustforce*.
 There's one very hard level in the game which has a part called the Tera section.
-It's almost exactly in the middle of the level, and is easily the most difficult part.
+It's almost exactly in the middle of the level, and is easily the most difficult part to clear.
 
 I complained about this in the Discord and was told that yes, it's awful, but was
 then directed to "100 Teras", a custom map that's just 100 copies of the Tera section with a checkpoint between each one.
@@ -104,7 +105,8 @@ puzzlehunting. Please use them.
 #### Keep clean spreadsheets
 
 We're going to immediately start with a point of contention, because what "clean"
-means is never the same person-to-person.
+means is never the same person-to-person, and people can be very opinionated on
+sheet hygiene.
 
 ![xkcd comic about mess](/public/puzzlehunting-201/mess.png)
 {: .centered }
@@ -137,7 +139,7 @@ they value the visual boundary between clue and answer. Pick whichever works for
 
 Before you have broken into a puzzle, any part of the puzzle could be relevant
 information. The act of transcribing a puzzle from a website or PDF into a
-spreadsheet is often slightly destructive. Text styling and spacing are often
+spreadsheet is slightly destructive. Text styling and spacing are often
 the first casualties. Usually this is fine, but every now and then the parts lost during
 transcription are important to breaking in.
 
@@ -169,7 +171,7 @@ Puzzle solving often involves relating two parts of the puzzle together.
 These relations often follow whole number ratios. If there are N items in both parts,
 it suggests matching between those parts. If there's N items in one and 2N in another,
 that could mean matching 1 item from the first part with 2 items from the second.
-If there's 26 of something, it could mean A1Z26.
+If there's 26 of something, it could mean A1-Z26.
 
 A very simple example is [Not Quite a Polka](https://www.puzzlesaremagic.com/puzzle/not-quite-a-polka.html) from Puzzles are Magic. There's two sections of clues, and 13 clues
 in each section, so the puzzle is likely about solving both and combining the two.
@@ -213,8 +215,8 @@ us conclude that they should fit exactly with no overlaps or gaps.
 Honestly, a lot of puzzle solving is about taking random parts of the puzzle and throwing them
 into a search engine. Search the flavor text. Search just half of the flavor text. Add quotation
 marks to do exact phrase searches. Search all your answers together and see if something shows up.
-Randomly drop out words from all of the previous searches and try again. Try more than one tool - anecdotally,
-I've found LLMs are amazing at pop culture ID but give garbage for other puzzle searches.
+Randomly drop out words from all of the previous searches and try again. Experiment with more than one tool - anecdotally,
+I've found LLMs are amazing at pop culture ID, despite the hallucinations.
 
 There are a lot of variables you can tweak in your search engine queries. The heuristic I use is
 that if there aren't obvious starting points, I will search the puzzle title, the flavortext, all proper nouns, and
@@ -232,11 +234,11 @@ rows garden puzzle, it's a safe bet that answers for the blooms (the colored hex
 ![Rows garden grid](/public/puzzlehunting-201/rows-garden.png)
 {: .centered }
 
-(This might not be the case if the puzzle is doing something funny for extraction, but let's ignore that for now.)
+(This might not be the case if the puzzle is doing something funny for extraction, but let's ignore that.)
 
-We say an idea is overconstrained if it would be impossible or very difficult to construct a puzzle
+We say an idea is *overconstrained* if it would be impossible or very difficult to construct a puzzle
 that worked that way. All answers being 6 letters is easy. All answers being 6 letter words for colors
-is harder, but maybe possible. If they all had to be 6 letter words of colors that start with Y, that's
+is harder, but maybe possible. If all answers had to be 6 letter words of colors that start with Y, that's
 definitely overconstrained, because after YELLOW you really don't have many options.
 
 The logic goes like this:
@@ -245,14 +247,14 @@ The logic goes like this:
 * If this overconstrained theory X is how the puzzle works, it would not be possible to construct this puzzle.
 * Therefore, X can't be how the puzzle works.
 
-Applying this can speed up your solves by letting you avoid spending time checking ideas that are implausible.
+Applying this can speed up your solves by letting you skip checking ideas that are implausible.
 
-Now, sometimes this bites you badly, if you assume a construction is impossible when it isn't, or vice versa.
+Now, sometimes this bites you badly, if you assume a construction is impossible when it isn't.
 This happened to my team when solving [Highway Patrol](https://darocaro.github.io/puzzles/highwaypetrol/highwaypetrol)
 from the DaroCaro hunt. In this puzzle, you solve a Sudoku puzzle, and eventually get to the cluephrase MIDDLES.
 This suggests using the middle cells of each 3x3, and we failed to extract from this for a long time. It turned
-out the answer was to convert each middle number using A=1 Z=26. The reason our team got stuck here was that
-we all assumed that was impossible, as doing A1Z26 on Sudoku digits forces your cluephrase to only use letters A-I,
+out the answer was to convert each middle number using A1-Z26. The reason our team got stuck here was that
+we all assumed that was impossible, as doing A1-Z26 on Sudoku digits forces your cluephrase to only use letters from A to I,
 and surely there's no way you could do something with that, right? We kept trying to index things instead. Apply
 this with caution - sometimes a constructor is just insane and figures out how to make a very constrained construction
 work.
@@ -268,7 +270,7 @@ the mechanics of how to progress through clues quickly.
 
 #### Look ahead to how the next step will work
 
-In my opinion this is *the* major thing that separates experienced puzzlehunters from new ones.
+In my opinion this is **the** major thing that separates experienced puzzlehunters from new ones.
 New puzzlers tend to solve puzzles in a waterfall style. When given a list of clues, they fully solve the clues, then
 start thinking about what to do with those answers.
 Whereas experienced puzzlers look ahead more, thinking about what to do next while solving the clues.
@@ -280,9 +282,9 @@ My rough heuristic is to consider how the puzzle will work at the start of the p
 50% mark. (Although, I will adjust depending on how much fun I'm having. If I'm not having fun I will definitely
 try to extract earlier to save myself from having to do more work.)
 
-The reason it's worth looking ahead is that knowing the next step often gives you extra constraints.
+The reason it's worth looking ahead is that knowing the next step often gives you extra constraints that can make clue solving easier.
 It's a bit like backsolving a metapuzzle, but at a smaller scale. Sometimes this lets you skip large chunks of
-a puzzle too, if you figure out extraction early enough to get the answer to show up in [nutrimatic](https://nutrimatic.org) or [Qat](https://www.quinapalus.com/qat.html).
+a puzzle, if you figure out extraction early enough to get the answer to show up in [nutrimatic](https://nutrimatic.org) or [Qat](https://www.quinapalus.com/qat.html).
 One way to solve puzzles faster is to just do less work. I know some very strong solvers who can solve quickly
 while 100%ing puzzles, but it's undeniably true that you don't need to 100% puzzles to finish them.
 Personally, I only 100% a puzzle if I'm having a ton of fun, otherwise I'll move on.
@@ -301,8 +303,8 @@ In sudoku puzzles, there's this idea called "the deadly pattern".
 Consider the red rectangle above. The corners of the rectangle are 59-95 or 95-59. Both are valid solutions, no
 matter what gets placed in the rest of the grid, as switching between the two does not change the set of digits in
 any of the affected rows, columns, or 3x3 boxes. Since Sudoku puzzles are constructed to have a unique solution,
-if we ever see the deadly pattern, we know we've made a mistake and should backtrack. You usually do not need to
-assume uniqueness to solve a logic puzzle, but assuming uniqueness acts as a guardrail to correct you.
+if we ever see the deadly pattern, we know we've made a mistake and should backtrack.
+You usually do not need to assume uniqueness to solve a logic puzzle, but assuming uniqueness can give you a guardrail.
 
 The same is true in puzzlehunting. Answers are often alphabetical as a confirmation step, and I will usually
 check alpha order *very* early (when ~20% of the clues have been solved), since knowing this early can speed up
@@ -315,25 +317,26 @@ Guardrails are there to make your solve more streamlined - search them out and u
 #### Do the easy parts first
 
 When I see a crossword puzzle, I like to solve the proper nouns first. With a search engine, these are usually both
-easy and unambiguous. Some parts of a puzzle will yield more easily than others, and it's usually worth doing a quick
+easy and unambiguous.
+Clue difficulty is not uniform, and
+sometimes constructors will deliberately create an easy clue to provide a foothold for the puzzle.
+It's usually worth doing a quick
 once-over of a puzzle to see if anything stands out. If I get stuck on a clue, I will immediately jump to the next one
-and only come back to it if needed, rather than forcing myself to do it.
-Sometimes constructors will deliberately create an easy clue to provide a foothold on the puzzle, although this
-depends on the author.
+and only revisit the trickier clue if needed, rather than forcing myself to do it.
 
 
 #### Prioritize important clues
 
-If you see an extraction like ?N?WE???????, many solvers I know will assume the first 6 letters are going to spell
-ANSWER and will stop extracting any of the first 6 letters unless they get stuck.
+If you see an extraction like `?N?WE???????`, many solvers I know will assume the first 6 letters are going to spell
+`ANSWER` and will stop extracting any of the first 6 letters unless they get stuck.
 
 This is a special case of trying to direct work towards the "high information" areas. Some general wheel-of-fortune
-skills are helpful here: if I see an extraction like ?????I?G, I'll usually assume it's going to end "-ing" and skip
-solving the clue for the blank between the I and G.
+skills are helpful here: if I see an extraction like `?????I?G`, I'll usually assume it's going to end `-ing` and skip
+solving the clue for the blank between the `I` and `G`.
 
 When combined with word search tools like Qat or nutrimatic, this can be ridiculously strong.
 In general, word search tools have trouble with long runs of blanks, but are very good at filling short gaps. If I know
-ordering I'll often jump around to solving clues that reduce runs of blanks, rather than going in order.
+ordering, I'll often jump around to solving clues that reduce runs of blanks, rather than going in order.
 Or, I'll declare that I'm working from the bottom when solving with a group, because most people start from the top
 and it's better to distribute work throughout a cluephrase.
 
@@ -356,16 +359,16 @@ formulas and now I can't go back.
 
 Spreadsheet formulas have several advantages:
 
-* They're consistent. You can't mess up a count or typo a letter. (You can typo a spreadsheet formula, but usually spreadsheet formula typos lead to errors rather than incorrect letters.)
+* They're consistent. You can't miscount or typo a letter. (You can typo a spreadsheet formula, but usually spreadsheet formula typos lead to errors rather than incorrect letters.)
 * They're automatic. Once you have extraction driven by spreadsheet formula, you can stay in a flow of IDing and
 solving without detouring into extracting, reducing time lost to context switching.
 * Due to being automatic, you can see exactly how much partial progress you've made on extraction, which makes
-it easier to prioritize.
+it easier to prioritize clues and check if an extraction looks promising.
 
 Also, being good at spreadsheet formulas is by far the most transferable skill to real life.
 The business world runs on Excel. The very basic actions you'll do over and over in puzzlehunts:
 
-* `=MID(A1, k, 1)` takes the *k*th letter of A1.
+* `=MID(A1, k, 1)` takes the *k*-th letter of A1.
 * `=REGEXREPLACE(A1, "[^A-Za-z]", "")` removes all non A-Z characters from A1.
     * If you only want to ignore spaces to worry about, `=REGEXREPLACE(A1, " ", "")` or `=SUBSTITUTE(A1, " ", "")` may be easier to remember. You usually do not need the full power of regular expressions.
 * `=LEN(A1)` gives the length of the word in A1.
@@ -378,6 +381,7 @@ It's also worth understanding relative references vs absolute references. Consid
 example I just made up.
 
 ![Sheets example](/public/puzzlehunting-201/sheets1.png)
+{: .centered }
 
 The `=MID(B2, C2, 1)` in cell D2 here is a relative reference. Although the cell displays
 `=MID(B2, C2, 1)`, what is actually stored internally is `=MID(2 cells left, 1 cell left, 1)`.
@@ -390,14 +394,15 @@ Dragging a formula will copy-paste that relative offset to each cell, which is u
 </video>
 </div>
 
-In some cases, you will want to refer to a fixed position, which you can do by prepending $. This can
-be applied to the column, row, or both. `$B2` is an absolute ref to column A and a relative ref to row 2,
-whereas `B$2` is a relative ref to column B nad an absolute ref to row 2.
+In some cases, you will want to refer to a fixed position. This is called an absolute reference,
+and you can do so by prepending $ to the column, row, or both.
+`$B2` is an absolute ref to column B and a relative ref to row 2,
+whereas `B$2` is a relative ref to column B and an absolute ref to row 2.
 
 Examples:
 
 Indexing multiple columns of indices: `=MID($A1, B1, 1)` locks the word to always be
-column A.
+from column A, while letting the word change per row.
 
 <div class="centered">
 <video width="640" controls muted>
@@ -406,7 +411,7 @@ column A.
 </video>
 </div>
 
-Indexing a single word many times: `=MID($A$1, B1, 1)`.
+Indexing a single word many times: `=MID($A$1, B1, 1)` locks the indexed word to be a specific cell.
 
 <div class="centered">
 <video width="640" controls muted>
@@ -415,9 +420,10 @@ Indexing a single word many times: `=MID($A$1, B1, 1)`.
 </video>
 </div>
 
-As I've become more fluent in spreadsheets, I've started using them in ways besides. For example, if the clues for a puzzle include enumeration, I'll quickly add
+As I've become more fluent in spreadsheets, I've started using them in more complex ways. For example, if the clues for a puzzle include enumeration, I'll quickly add
 `=LEN(REGEXREPLACE(A1, "[^A-Za-z]", ""))` next to each answer column, to make it easier
-to verify our words are matching the given lengths. If you find you use a formula often,
+to verify our words are matching the given lengths.
+If you find you use a formula often,
 you can use [named functions](https://support.google.com/docs/answer/12504534?hl=en)
 to save them and import them elsewhere. (Although I confess I always forget to
 set this up.)
@@ -443,8 +449,8 @@ be useful for a future hunt, and save it somewhere. A good starting place is
 The power of having basic encodings implemented in code is that **it makes it possible
 to write brute force searches**. Once, I was solving a metapuzzle from a now-offline hunt.
 Based on flavor, we were very confident it was going to be about Morse code, each of our feeder
-answers would convert to a dot or dash, and we'd read out a message from doing so. We couldn't figure
-out how to do so, but the round only had 7 puzzles, so I decided to write a script to brute force
+answers would convert to a dot or dash, and we'd read out a message. We couldn't figure
+out how to do the conversion, but the round only had 7 puzzles, so I decided to write a script to brute force
 the Morse for all $$2^7 = 128$$ possibilities. This worked. I did something similar for the
 [Silph Puzzle Hunt metameta](https://silphpuzzlehunt.com/puzzle/a-turn-for-the-worse). We solved the
 first and last group, but couldn't figure out the answer to the (4 7) group in the middle. Doing a word
@@ -452,7 +458,7 @@ search in my phrase list, I found there were around 2500 reasonable phrases of e
 so out of despair I decided to brute force a list of all possible extractions and scrolled through it until
 I noticed something that looked like the answer.
 
-One advantage of code is that if you have code that exhaustively checks all possibilities, and it still
+One advantage of code is that if it exhaustively checks all possibilities, and it still
 fails to extract the puzzle, then you know you should try something different from the extraction
 you attempted, rather than checking for errors. (Once again, this has burned me before, when I
 concluded an extraction method was wrong because the answer didn't appear in my local wordlist. Proceed with caution!)
@@ -461,12 +467,11 @@ concluded an extraction method was wrong because the answer didn't appear in my 
 #### When picking what to work on, check what's underinvested
 
 Most people solve puzzlehunts in a team, and it's usually not good for everyone on the team to pile onto
-one puzzle. Instead it's better for people to spread out. When looking for a puzzle to work on, it can
-therefore be helpful to check what puzzles need help, and which ones have enough people to push it
-to the finish without you.
+one puzzle. Instead it's better for people to spread out. When looking for a puzzle to work on, it can be helpful to check which ones have enough people to push it to the finish without you,
+and which ones need assistance.
 
 In general, puzzles with big lists of clues (e.g. crosswords) can absorb lots of people, and puzzles with many serial
-a-has (e.g. logic puzzles) see diminishing returns when people join the puzzle. It's not always clear
+a-has (e.g. logic puzzles) see diminishing returns. It's not always clear
 if a puzzle is more serial or parallel. One quick hack is to **just ask the people working on the puzzle** if
 they want help or think they have it under control.
 
@@ -492,14 +497,14 @@ easy to tunnel vision too hard on a problem.
 However, there is a certain art to this. Puzzles are normally done in teams. If you abandon
 a puzzle, it's good to make a clean copy of your sheet first. Keep your scratch work as is, but
 in the clean copy, organize your work and explain what you've found. Importantly, *remove all the speculative half-baked ideas you had.*
-Given that you're stuck on the puzzle, it's more likely you're half-baked ideas are wrong, and you
+Given that you're stuck on the puzzle, it's more likely your half-baked ideas are wrong, and you
 should avoid biasing future solvers into the same rabbit hole.
 
 #### Look for unused information
 
 Most puzzles will try to use all channels of information they can, and will not have extraneous info.
-That doesn't mean every puzzle will use 100% of its info, but it's the first place to look.
-Try enumerating everything that has and hasn't been used yet.
+That doesn't mean every puzzle will use 100% of its info, but extra info is the first place to look.
+Try listing everything that has and hasn't been used yet.
 
 #### Look for missing information
 
@@ -520,7 +525,7 @@ and switch them to wildcards in nutrimatic.
 
 It's important not to overdo this, but getting good at error correction can really take you quite far.
 This extends to other forms of errors as well. For example, sometimes I'll assume our indices were
-derived incorrectly, and try Caesar shifting by all values in case they're all off by one.
+derived incorrectly, and try Caesar shifting in case they're all off by one.
 
 
 #### Cheese
@@ -567,22 +572,21 @@ skip that step, and it worked. (Albeit with having to look at page 2 of nutrimat
     ![Shardhunt sheet](/public/puzzlehunting-201/shardhunt.png)
     {: .centered }
 
-    In testsolving, I solved [Mouth Mash](https://2020.teammatehunt.com/puzzles/mouth-mash) this way as well, and the puzzle
-    was redesigned to make that harder.
+    In testsolving, I solved [Mouth Mash](https://2020.teammatehunt.com/puzzles/mouth-mash) from Teammate Hunt 2020 this way as well, and the puzzle was redesigned to make this cheese less effective.
 
 * If enumerations are given for a multi-word phrase, and the phrase is long enough, sometimes the enumeration itself is enough to constrain
 the phrase. You can use OneLook or nutrimatic to check for this.
 For example, (2 2 2 3 2 2 4 2 3 8) only has [one notable match](https://nutrimatic.org/2024/?q=%22AA+AA+AA+AAA+AA+AA+AAAA+AA+AAA+AAAAAAAA%22&go=Go).
-This cheese is usually better done in OneLook, since it has fewer phrases but those phrases are more valid as puzzle answers.
+This cheese is usually better done in OneLook, since it has fewer phrases and a higher fraction are valid puzzle answers.
 
 To draw an analogy to [engineering solutions to high school math contest problems](https://cjquines.com/files/engineering.pdf), cheesing is not a replacement to learning how to solve puzzles,
 but it can be very effective. If you cheese a puzzle, you should go read how it was supposed
 to work after solutions are released, or try to reverse engineer the extraction from the puzzle
 answer.
 
-You should also make sure the other solvers are okay with you cheesing a puzzle
+You should also make sure other solvers are okay with you cheesing a puzzle
 before trying to do so. Cheesing is a way to skip ahead of the struggle, but
-sometimes people in the struggle are having lots of fun. (The same applies to backsolving.)
+sometimes people in the struggle are having lots of fun.
 
 
 #### Get in the constructor's mindset
@@ -601,11 +605,13 @@ the eventual argument made was:
 
 In general, weird, strange, or obscure clues tend to indicate that there's a very specific reason
 that clue *had* to be weird, strange, or obscure, and you should consider what that reason is.
+For example, I once wrote a puzzle where I needed to clue [EOGANACHTA](https://en.wikipedia.org/wiki/E%C3%B3ganachta), which was a travesty, but it was the most reasonable option that fit the letter constraints I needed.
+A sharp-eyed solver that got that clue should be immediately suspicious that future extraction will be based on syntax rather than semantics.
 To give a non-puzzle example, in the board game Codenames, you are trying to clue words for your team
 and not the opposing team. If I get a clue like "TOMATO: 2", and
 see RED and FRUIT on the board, I'll mention RED and FRUIT fits, but I'll also start wondering why we got
 "TOMATO" as a clue instead of a more typical red fruit like APPLE, CHERRY, or STRAWBERRY. Perhaps
-a word like ICE CREAM is on the board, and they were trying to avoid it.
+a word like PIE is on the board, and they were trying to avoid it.
 
 How much getting into the constructor's mindset helps you will depend on how well you understand typical puzzle design. This is one reason
 people who write puzzles tend to get better at solving them. Like, maybe the reason ✈✈✈Galactic Trendsetters✈✈✈ is so
@@ -615,7 +621,7 @@ strong is because parts of their team have been writing hunts every year for 7 y
 Bringing This Together
 ---------------------------------------------------------------------------------------------------
 
-To show this coming together, here is a puzzle I remember speedrunning especially quickly: [The Three Little Pigs](https://hunt20.com/puzzle/three-little-pigs.html)
+To showcase these strategies together, here is a puzzle I remember speedrunning especially quickly: [The Three Little Pigs](https://hunt20.com/puzzle/three-little-pigs.html)
 from Hunt 20 2.1 Puzzle Hunt. This hunt was designed to be on the easier side, so this made it more susceptible to
 speedrunning.
 
@@ -669,7 +675,7 @@ pairing between columns, because **(constructor mindset)** it wouldn't make sens
 the ordering between columns if each column was used identically.
 
 Since it seems likely we'll do pairing, let's solve a few from both columns,
-that'll make it more likely we find a pair first
+since having progress on both will make it easier to find a pair
 **(prioritize important clues)**.
 
 <div class="shaded" markdown="1">
@@ -697,8 +703,8 @@ Unpleasant drug lyrics within (4)
 </div>
 
 Hey, SNAP and POP could form a group with CRACKLE. Perhaps this is how we use 3 - we get clues for two parts
-of a set of 3. STOP could be the start of STOP DROP ROLL, so let's see if we can find ROLL in the right column, and
-otherwise focus on solving the left column since that provides ordering.
+of a set of 3. STOP could be the start of STOP DROP ROLL, so let's see if we can find DROP or ROLL in the right column, and
+otherwise focus on solving the left column since that provides ordering **(prioritize important clues)**.
 
 <div class="shaded" markdown="1">
 <div style="width:100%"><div style="float:left;width:50%;padding-right:15px"><p>
@@ -724,8 +730,8 @@ Unpleasant drug lyrics within (4)
 <br>
 </div>
 
-With BREAKFAST on the right, we should try to find LUNCH or DINNER, and with BRICKS on right we should try to
-find STRAW or STICKS on the left.
+With BREAKFAST on the left, we should try to find LUNCH or DINNER, and with BRICKS on the right, we should try to find STRAW or STICKS. At this point, we can provisionally pair those target words to cryptics by just looking for a definition that matches **(cheese)**. In the real solve, we did
+do the wordplay, but only after we knew what word we wanted it to resolve to.
 
 <div class="shaded" markdown="1">
 <div style="width:100%"><div style="float:left;width:50%;padding-right:15px"><p>
@@ -752,7 +758,7 @@ Unpleasant drug lyrics within (4)
 </div>
 
 <br>
-Let's try extracting from the missing words for each group of 3. So far, we have:
+Let's try extracting from the missing words for each group of 3 **(looking ahead)**. So far, we have:
 
 ```
 ???
@@ -767,11 +773,14 @@ DROP
 ```
 
 Having 4/9 is enough to try nutrimatic. First instinct is to read first letters, but ending in
-SD seems bad. So let's try taking the 3rd letter of each, since that would be thematic. If we
-scroll down [the list](https://nutrimatic.org/2024/?q=AanAAAAio&go=Go) a bit, we see `DANCE
+SD seems bad. If I were making this puzzle **(constructor mindset)**, I'd want to put the theme of
+3 everywhere, so let's try indexing the 3rd letter.
+
+This gives `.an....io`, and if we
+scroll down [the list](https://nutrimatic.org/2024/?q=AanAAAAio&go=Go) of nutrimatic results a bit, we see `DANCE
 TRIO`, which was the answer.
 
-During the hunt, some teams solved this puzzle in 5 minutes. My team didn't match that speed, but you can
-see how applying a few tricks let us focus directly on the solve path and reduced unnecessary effort.
+During the hunt, some teams solved this puzzle in 5 minutes. My team was not that fast (13 minutes), but you can
+see how applying a few tricks let us focus directly on the solve path and reduced unnecessary effort. This solve was a very extreme case, and the tricks I've described are usually not *this* effective, but try them out sometime.
 
 *Thanks to Eugene C., Evan Chen, Jacqui Fashimpaur, Cameron Montag, Nishant Pappireddi, Olga Vinogradova for giving feedback on earlier drafts of this post.*
