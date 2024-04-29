@@ -5,17 +5,17 @@ date:   2024-04-20 01:41:00 -0700
 ---
 
 I'm good at puzzlehunts. I thought about equivocating this, saying I *think* I'm
-good at puzzlehunts, or relatively strong at puzzlehunts, but, no, I'm just good
-at them. I've been on the winning MIT Mystery
-Hunt team (twice), and most recently was on the 2nd place team for the
+good at puzzlehunts, or relatively good at puzzlehunts, but I've been on a winning
+MIT Mystery Hunt team twice and recently was on the 2nd place team for the
 [Who Killed Ickey?](https://ickeytreasurehunt.com/leaderboard) treasure hunt.
-Those cover the spectrum between hunts where the winner is the one with fastest
+These were definitely team efforts, but I know I made significant contributions in both,
+and those hunts
+cover the spectrum between puzzlehunts where the winner is the one with fastest
 break-ins (Mystery Hunt), and ones where it's more about pure execution speed (Ickey).
-Empirically, I'm good at both.
 After doing puzzlehunts for well over a decade, I've picked up some habits I'd like
 to share.
 
-**If you are new to puzzlehunts, you are not the target audience.** I mean, feel
+**If you are new to puzzlehunts, you are not the target audience of this post.** I mean, feel
 free to keep reading! But I will be assuming a bunch of background knowledge and
 won't be trying to explain what a puzzle is or what a meta is and so forth. If
 you're new, I recommend [Introduction to Puzzlehunts](https://blog.vero.site/post/puzzlehunts)
@@ -32,7 +32,7 @@ I like going fast because I've solved enough puzzles that I want to quickly get 
 grunt work to see the next a-ha.
 To a lesser extent, I find
 it fun to see how little information I can get away with when solving a puzzle.
-But that's not a universal opinion.
+That's not a universal opinion.
 Most people will have
 more fun if they solve puzzles than if they don't, but you don't have to solve puzzles
 *quickly* to have fun.
@@ -67,10 +67,9 @@ go solve literally 100 puzzles.
 You will learn things. You will get better. It'll just happen. It's part of the
 magic of the human brain.
 
-This is a very specific anecdote, but I play a platforming game called Dustforce.
+This is a very specific anecdote, but I play a platforming game called *Dustforce*.
 There's one very hard level in the game which has a part called the Tera section.
-It's almost exactly in the middle of the level, has a 2 frame window in a 60 FPS game,
-and is easily the most difficult part of the level.
+It's almost exactly in the middle of the level, and is easily the most difficult part.
 
 I complained about this in the Discord and was told that yes, it's awful, but was
 then directed to "100 Teras", a custom map that's just 100 copies of the Tera section with a checkpoint between each one.
@@ -97,6 +96,11 @@ So I've decided to interpret the question differently: how do you create
 conditions that cause good ideas to arise? And how do you decide if those
 ideas are actually good?
 
+#### Use spreadsheets
+
+Collaboratively editable spreadsheets (typically Google Sheets) are the lingua fraca of
+puzzlehunting. Please use them.
+
 #### Keep clean spreadsheets
 
 We're going to immediately start with a point of contention, because what "clean"
@@ -110,20 +114,21 @@ means is never the same person-to-person.
 
 The bare minimum that I think is unobjectionable is:
 
+* Make a new sheet for each puzzle
 * Put info of the same type in the same locations
 * Use a monospace font
 
-The first is just common sense.
-As for monospace, A lot of puzzles will use word length as part of the structure. For example, [Human Pyramid](https://2021.teammatehunt.com/puzzles/human-pyramid) from Teammate Hunt 2021.
+The first two are just common sense.
+As for monospace, a lot of puzzles will use word length as part of the structure. [Human Pyramid](https://2021.teammatehunt.com/puzzles/human-pyramid) from Teammate Hunt 2021 is
+a good example of this.
 Patterns in length (matching length, exactly one letter longer, etc.)
 are easier to notice if you put content in monospace, so using those fonts can help you
 break-in on those patterns faster.
 
-(In fact, the monospace font
-in Human Pyramid was added during testsolving to encourage solvers to consider length. A similar trick
-was used in [Pestered](https://puzzles.mit.edu/2018/full/puzzle/pestered.html) from MIT Mystery Hunt 2018.)
+(As an aside, Human Pyramid is displayed in monospace font specifically to encourage solvers to consider length. A similar trick
+is used in [Pestered](https://puzzles.mit.edu/2018/full/puzzle/pestered.html) from MIT Mystery Hunt 2018.)
 
-Personally I like to put everything in monospace, but I know some solvers
+Personally, I like to put everything in monospace, but I know some solvers
 who prefer only putting clue answers in monospace and leaving clues in sans serif, since
 they value the visual boundary between clue and answer. Pick whichever works for you.
 
@@ -144,15 +149,15 @@ you've been stuck for a while, to see if there's something about the presentatio
 missed.
 
 
-#### Speak your bad ideas aloud
+#### Share your bad ideas
 
 Puzzle solving is a collaborative activity, and people won't know what ideas you have if you
-don't speak up. It's okay to caveat that your idea is bad, but say it anyway.
+don't share them. It's okay to caveat that your idea is bad, but share it anyway.
 Try to follow the ["yes, and..."](https://en.wikipedia.org/wiki/Yes,_and...) rule-of-thumb from improv.
 Sometimes you will have 90% of the right idea and be missing the last 10%. Other
 times you will have the half-baked 10% of the right idea, and someone else will have the 90%.
 To get to 100% of the idea, one person needs to communicate, and you want to have a culture
-where both the 10% person and 90% person can be the one who talks first.
+where both the 10% person and 90% person can be the one who communicates first.
 
 
 #### Count things!
@@ -190,7 +195,7 @@ Counts can also let you draw negative conclusions. If you have 7 clues in one
 part and 10 clues in the other, you are not going to do a 1:1 matching, so you can
 immediately discard trying a 1:1 match and think of doing something else.
 
-I like to call this the numerology of the puzzle. At the start of a puzzle,
+I call this the numerology of the puzzle. At the start of a puzzle,
 quickly count the most salient parts of the puzzle, and keep any interesting
 correspondences in mind.
 When testsolving
@@ -208,7 +213,8 @@ us conclude that they should fit exactly with no overlaps or gaps.
 Honestly, a lot of puzzle solving is about taking random parts of the puzzle and throwing them
 into a search engine. Search the flavor text. Search just half of the flavor text. Add quotation
 marks to do exact phrase searches. Search all your answers together and see if something shows up.
-Randomly drop out words from all of the previous searches and try again.
+Randomly drop out words from all of the previous searches and try again. Try more than one tool - anecdotally,
+I've found LLMs are amazing at pop culture ID but give garbage for other puzzle searches.
 
 There are a lot of variables you can tweak in your search engine queries. The heuristic I use is
 that if there aren't obvious starting points, I will search the puzzle title, the flavortext, all proper nouns, and
@@ -270,13 +276,13 @@ Whereas experienced puzzlers look ahead more, thinking about what to do next whi
 I don't think new puzzlers are wrong to solve this way. It's hard to look ahead if you don't have the
 experience to know how puzzles tend to work. But in general, knowing what you're aiming for can make
 it easier to solve the step you're currently on, and will let you jump ahead faster.
-My rough heuristic is consider how the puzzle will work at the start of the puzzle, then again at about the
+My rough heuristic is to consider how the puzzle will work at the start of the puzzle, then again at about the
 50% mark. (Although, I will adjust depending on how much fun I'm having. If I'm not having fun I will definitely
 try to extract earlier to save myself from having to do more work.)
 
 The reason it's worth looking ahead is that knowing the next step often gives you extra constraints.
-It's a bit like backsolving a metapuzzle, but at smaller scale. Sometimes this lets you skip large chunks of
-a puzzle too, if you figure out extraction early enough to get the answer to show up in nutrimatic or Qat.
+It's a bit like backsolving a metapuzzle, but at a smaller scale. Sometimes this lets you skip large chunks of
+a puzzle too, if you figure out extraction early enough to get the answer to show up in [nutrimatic](https://nutrimatic.org) or [Qat](https://www.quinapalus.com/qat.html).
 One way to solve puzzles faster is to just do less work. I know some very strong solvers who can solve quickly
 while 100%ing puzzles, but it's undeniably true that you don't need to 100% puzzles to finish them.
 Personally, I only 100% a puzzle if I'm having a ton of fun, otherwise I'll move on.
@@ -331,7 +337,7 @@ ordering I'll often jump around to solving clues that reduce runs of blanks, rat
 Or, I'll declare that I'm working from the bottom when solving with a group, because most people start from the top
 and it's better to distribute work throughout a cluephrase.
 
-Importantly, **you can't tell what to priotize if you haven't tried extracting yet**, which is why I value looking
+Importantly, **you can't tell what to prioritize if you haven't tried extracting yet**, which is why I value looking
 ahead on extraction so highly.
 
 At the hunt-wide level, this also means trying to push solves in rounds where you think it'll be important to get
@@ -354,12 +360,12 @@ Spreadsheet formulas have several advantages:
 * They're automatic. Once you have extraction driven by spreadsheet formula, you can stay in a flow of IDing and
 solving without detouring into extracting, reducing time lost to context switching.
 * Due to being automatic, you can see exactly how much partial progress you've made on extraction, which makes
-it easier to priotize.
+it easier to prioritize.
 
-Also, being good at spreadsheet formulas is by far the most transferrable skill to real life.
+Also, being good at spreadsheet formulas is by far the most transferable skill to real life.
 The business world runs on Excel. The very basic actions you'll do over and over in puzzlehunts:
 
-* `=MID(A1, k, 1)` takes the $$k$$th letter of A1.
+* `=MID(A1, k, 1)` takes the *k*th letter of A1.
 * `=REGEXREPLACE(A1, "[^A-Za-z]", "")` removes all non A-Z characters from A1.
     * If you only want to ignore spaces to worry about, `=REGEXREPLACE(A1, " ", "")` or `=SUBSTITUTE(A1, " ", "")` may be easier to remember. You usually do not need the full power of regular expressions.
 * `=LEN(A1)` gives the length of the word in A1.
@@ -411,7 +417,10 @@ Indexing a single word many times: `=MID($A$1, B1, 1)`.
 
 As I've become more fluent in spreadsheets, I've started using them in ways besides. For example, if the clues for a puzzle include enumeration, I'll quickly add
 `=LEN(REGEXREPLACE(A1, "[^A-Za-z]", ""))` next to each answer column, to make it easier
-to verify our words are matching the given lengths.
+to verify our words are matching the given lengths. If you find you use a formula often,
+you can use [named functions](https://support.google.com/docs/answer/12504534?hl=en)
+to save them and import them elsewhere. (Although I confess I always forget to
+set this up.)
 
 The spreadsheet rabbit hole goes very deep. I recommend
 [You Suck at Excel](https://www.bilibili.com/video/BV1734y187KS/) by Joel Spolsky as a classic
@@ -436,12 +445,12 @@ to write brute force searches**. Once, I was solving a metapuzzle from a now-off
 Based on flavor, we were very confident it was going to be about Morse code, each of our feeder
 answers would convert to a dot or dash, and we'd read out a message from doing so. We couldn't figure
 out how to do so, but the round only had 7 puzzles, so I decided to write a script to brute force
-the Morse for all 2^7 = 128 possibilities. This worked. I did something similar for the
+the Morse for all $$2^7 = 128$$ possibilities. This worked. I did something similar for the
 [Silph Puzzle Hunt metameta](https://silphpuzzlehunt.com/puzzle/a-turn-for-the-worse). We solved the
-first and last group, but didn't know the answer to the (4 7) group in the middle. Doing a word
-search in phrase list, I found there were around 2500 reasonable phrases of enumeration (4 7) in it,
-so out of despair I decided to brute force what we'd extract with all those phrases and scrolled through
-the output until something like the answer popped out.
+first and last group, but couldn't figure out the answer to the (4 7) group in the middle. Doing a word
+search in my phrase list, I found there were around 2500 reasonable phrases of enumeration (4 7) in it,
+so out of despair I decided to brute force a list of all possible extractions and scrolled through it until
+I noticed something that looked like the answer.
 
 One advantage of code is that if you have code that exhaustively checks all possibilities, and it still
 fails to extract the puzzle, then you know you should try something different from the extraction
@@ -763,6 +772,6 @@ scroll down [the list](https://nutrimatic.org/2024/?q=AanAAAAio&go=Go) a bit, we
 TRIO`, which was the answer.
 
 During the hunt, some teams solved this puzzle in 5 minutes. My team didn't match that speed, but you can
-see how applying a few tricks let us focus directly in on the solve path and reduced unnecessary effort.
+see how applying a few tricks let us focus directly on the solve path and reduced unnecessary effort.
 
 *Thanks to Eugene C., Evan Chen, Jacqui Fashimpaur, Cameron Montag, Nishant Pappireddi, Olga Vinogradova for giving feedback on earlier drafts of this post.*
