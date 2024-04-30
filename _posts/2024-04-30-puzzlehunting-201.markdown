@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Puzzlehunting 201"
-date:   2024-04-30 00:00:30 -0700
+date:   2024-04-30 09:29:30 -0700
 ---
 
 I'm good at puzzlehunts. I thought about equivocating this, but I've been on a winning
@@ -639,10 +639,9 @@ Very often, the way a meta uses its answer will lead to it not backsolving very 
 In my experience, it is actually pretty rare that you can backsolve a puzzle *entirely* from the
 meta constraints. The more common strategy is that forward solving the puzzle gives
 some information about the answer, the meta provides other information, and only the combination
-of both is enough to constrain the backsolve.
-
-During MIT Mystery Hunt 2019, teammate was one
-of the teams that got told off for attempting backsolves too aggressively, so we cooled down our guesses. But later in the hunt, we did end up backsolving 2 puzzles from [Thanksgiving Town/​President’s Day Town](https://puzzles.mit.edu/2019/problem/thanksgiving_presidents_day.html) without any incorrect guesses, because the theme of a few puzzles matched incredibly well with some candidate answers.
+of both is enough to constrain the backsolve. In the Department Store Puzzlehunt from Puzzlehunt CMU, we only backsolved [Karkar's Very Fun Crossword](https://puzzlehunt.club.cc.cmu.edu/puzzle/25013/) because we had forward solved enough to know we'd like the answer to be a compound word.
+In MIT Mystery Hunt 2019, teammate backsolved 2 puzzles from [Thanksgiving Town/​President’s Day Town](https://puzzles.mit.edu/2019/problem/thanksgiving_presidents_day.html)
+by noticing the themes of those puzzles matched incredibly well with some candidate answers.
 
 Before attempting a backsolve, read through each puzzle to refresh yourself on the theme of the puzzle, or see if there's any hints about the length of that puzzle's answer, like the number of clues or given blanks.
 If you don't know the length of the answer, one trick in nutrimatic is that it supports `&` for "match both sides", and `A{a,b}` will match exactly $$a$$ to $$b$$ letters (i.e. `A{3,6}` = 3 to 6 letters). So you can do searches like `AAAxA*&A{7,10}`, which means "an answer whose 4th letter is X and is 7 to 10 letters long". This comes up in forward solving, but is more useful in backsolving.
