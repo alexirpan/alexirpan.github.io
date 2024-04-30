@@ -40,9 +40,9 @@ more fun if they solve puzzles than if they don't, but you don't have to solve p
 
 **This will spoil a few puzzles.** I've tried to keep the spoilers as light as needed,
 but it's much easier to give real-life examples than to construct new puzzles just for
-the sake of this post. (Then again, imagine if this post was written entirely to seed content
+the sake of this post. Then again, imagine if this post was written entirely to seed content
 for an upcoming puzzlehunt. Boy would that be interesting! Seriously though, it's not.
-You're welcome to look, but you won't find anything.)
+You're welcome to look, but you won't find anything.
 
 
 The One Minute Version
