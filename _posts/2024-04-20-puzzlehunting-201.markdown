@@ -4,8 +4,7 @@ title:  "Puzzlehunting 201"
 date:   2024-04-20 01:41:00 -0700
 ---
 
-I'm good at puzzlehunts. I thought about equivocating this, saying I *think* I'm
-good at puzzlehunts, or relatively good at puzzlehunts, but I've been on a winning
+I'm good at puzzlehunts. I thought about equivocating this, but I've been on a winning
 MIT Mystery Hunt team twice and recently was on the 2nd place team for the
 [Who Killed Ickey?](https://ickeytreasurehunt.com/leaderboard) treasure hunt.
 These were definitely team efforts, but I know I made significant contributions to both.
@@ -13,8 +12,9 @@ These were definitely team efforts, but I know I made significant contributions 
 Those hunts
 cover the spectrum between puzzlehunts where the bottleneck is
 break-ins (Mystery Hunt), and ones where it's more about pure execution speed (Ickey).
-After doing puzzlehunts for well over a decade, I've picked up some habits I'd like
-to share.
+I've noticed there isn't a lot of advanced puzzlehunting content on the Internet,
+and I've been doing hunts for well over a decade, so I decided to write up some of the
+habits I've learned along the way.
 
 **If you are new to puzzlehunts, you are not the target audience of this post.** I mean, feel
 free to keep reading! But I will be assuming a bunch of background knowledge and
@@ -32,7 +32,7 @@ and ignore the parts that don't.
 I like going fast because I've solved enough puzzles that I want to quickly get through
 grunt work to see the next a-ha.
 To a lesser extent, I find
-it fun to see how little information I can get away with when solving a puzzle.
+it fun to see how much information I can shortcut when solving a puzzle.
 That's not a universal opinion.
 Most people will have
 more fun if they solve puzzles than if they don't, but you don't have to solve puzzles
@@ -84,15 +84,15 @@ learn by doing.
 Okay, on to the real post.
 
 
-Starting a Puzzle - Generating Ideas
+Generating Ideas
 ------------------------------------------------------------------------
 
 Puzzles are often described as having "a-has" or break-ins, where it
 suddenly becomes clear what you should do. How do you come up with a-has?
-How do you break-in?
+How do you break in?
 
 This is genuinely the hardest part to give advice about. If it was
-easy to break-in, we wouldn't have puzzles in the first place!
+easy to break in, we wouldn't have puzzles in the first place!
 So I've decided to interpret the question differently: how do you create
 conditions that cause good ideas to arise? And how do you decide if those
 ideas are actually good?
@@ -117,7 +117,7 @@ sheet hygiene.
 The bare minimum that I think is unobjectionable is:
 
 * Make a new sheet for each puzzle
-* Put info of the same type in the same locations
+* Put related information close to each other (answers next to clues)
 * Use a monospace font
 
 The first two are just common sense.
@@ -226,10 +226,10 @@ search queries if I think it could turn up something new.
 
 #### Ask if an idea's overconstrained
 
-Puzzles do not arise spontaneously, they are created by people to have a solution.
+Puzzles do not arise spontaneously. They are created by people to have a solution.
 As you come up with ideas on how a puzzle
 works, each of those ideas applies a constraint to the puzzle. For example, if we see a
-rows garden puzzle, it's a safe bet that answers for the blooms (the colored hexagons) are 6 letters long.
+rows garden puzzle (see below), it's a safe bet that answers for the blooms (the colored hexagons) are 6 letters long.
 
 ![Rows garden grid](/public/puzzlehunting-201/rows-garden.png)
 {: .centered }
@@ -247,7 +247,7 @@ The logic goes like this:
 * If this overconstrained theory X is how the puzzle works, it would not be possible to construct this puzzle.
 * Therefore, X can't be how the puzzle works.
 
-Applying this can speed up your solves by letting you skip checking ideas that are implausible.
+This can speed up your solves by letting you skip checking ideas that are implausible.
 
 Now, sometimes this bites you badly, if you assume a construction is impossible when it isn't.
 This happened to my team when solving [Highway Patrol](https://darocaro.github.io/puzzles/highwaypetrol/highwaypetrol)
@@ -256,7 +256,7 @@ This suggests using the middle cells of each 3x3, and we failed to extract from 
 out the answer was to convert each middle number using A1-Z26. The reason our team got stuck here was that
 we all assumed that was impossible, as doing A1-Z26 on Sudoku digits forces your cluephrase to only use letters from A to I,
 and surely there's no way you could do something with that, right? We kept trying to index things instead. Apply
-this with caution - sometimes a constructor is just insane and figures out how to make a very constrained construction
+with caution - sometimes a constructor is just insane and figures out how to make a very constrained construction
 work.
 
 
@@ -282,12 +282,15 @@ My rough heuristic is to consider how the puzzle will work at the start of the p
 50% mark. (Although, I will adjust depending on how much fun I'm having. If I'm not having fun I will definitely
 try to extract earlier to save myself from having to do more work.)
 
-The reason it's worth looking ahead is that knowing the next step often gives you extra constraints that can make clue solving easier.
-It's a bit like backsolving a metapuzzle, but at a smaller scale. Sometimes this lets you skip large chunks of
+The reason it's worth looking ahead is that knowing the next step often gives you extra constraints that can make clue solving easier, or even possible.
+It's pretty common for a puzzle to have deliberately ambiguous clues, that only become unambiguous after you notice a common property shared by all answers.
+It's a bit like backsolving a metapuzzle, but at a smaller scale.
+
+Correctly looking ahead can sometimes let you skip large chunks of
 a puzzle, if you figure out extraction early enough to get the answer to show up in [nutrimatic](https://nutrimatic.org) or [Qat](https://www.quinapalus.com/qat.html).
 One way to solve puzzles faster is to just do less work. I know some very strong solvers who can solve quickly
 while 100%ing puzzles, but it's undeniably true that you don't need to 100% puzzles to finish them.
-Personally, I only 100% a puzzle if I'm having a ton of fun, otherwise I'll move on.
+Personally, I only 100% a puzzle if I'm having a ton of fun, otherwise I'll move on after we get the answer.
 
 
 #### Look for pieces of confirmation
@@ -308,9 +311,9 @@ You usually do not need to assume uniqueness to solve a logic puzzle, but assumi
 
 The same is true in puzzlehunting. Answers are often alphabetical as a confirmation step, and I will usually
 check alpha order *very* early (when ~20% of the clues have been solved), since knowing this early can speed up
-clue answering and fix mistakes for later extraction.
+clue solving and let you catch mistakes as soon as they break alpha order.
 
-To draw a transportation analogy, traffic lights and rules don't exist to slow you down, they exist to speed you up.
+To draw a transportation analogy, traffic lights and rules don't exist to slow you down, they exist to speed you up by letting you drive through intersections without having to negotiate right of way.
 Guardrails are there to make your solve more streamlined - search them out and use them!
 
 
@@ -350,8 +353,9 @@ more solves, either to unlock the meta or get more data for a meta.
 #### Automate or find tools for common operations
 
 Solve logic puzzles with [Noq](https://www.noq.solutions/). Use browser extensions that make it easy to take screenshots
-and search images by right click (there are a few of them, I use [Search by Image](https://chromewebstore.google.com/detail/search-by-image/cnojnbdhbhnkbcieeekonklommdnndci?pli=1)). [Wordplays](https://www.wordplays.com/crossword-solver/) is a solid crossword clue searcher. There are too
-many tools to list all of them, but the one on [puzzlehunt.net](https://www.puzzlehunt.net/tools) is pretty good.
+and search images by right click (there are a few of them, I use [Search by Image](https://chromewebstore.google.com/detail/search-by-image/cnojnbdhbhnkbcieeekonklommdnndci?pli=1)). [Wordplays](https://www.wordplays.com/crossword-solver/) is a solid crossword clue searcher, and
+[npinsker's Crossword Parser](http://www.npinsker.me/puzzles/crossword/) is a good crossword grid sheet creator (albeit one you need to supervise, the image detection isn't perfect).
+There are too many tools to list all of them, but the one on [puzzlehunt.net](https://www.puzzlehunt.net/tools) is pretty good.
 
 One I would highlight is **spreadsheet formulas**.
 I spent a very long period of my puzzling career not using formulas. Eventually I decided to learn spreadsheet
@@ -426,13 +430,14 @@ to verify our words are matching the given lengths.
 If you find you use a formula often,
 you can use [named functions](https://support.google.com/docs/answer/12504534?hl=en)
 to save them and import them elsewhere. (Although I confess I always forget to
-set this up.)
+set this up before a hunt, so I don't use them very often.)
 
 The spreadsheet rabbit hole goes very deep. I recommend
 [You Suck at Excel](https://www.bilibili.com/video/BV1734y187KS/) by Joel Spolsky as a classic
-spreadsheet introduction, and [Yet Another Puzzlehunt Spreadsheet Tutorial](https://docs.google.com/spreadsheets/d/1-KmLvmcydguI_RBJJqHihbewZmssmdNtlWFJIJZVXLk/edit#gid=0)
-by betaveros for a more puzzlehunt-focused guide. (You Suck at Excel recently disappeared off
-YouTube - the link above is a bilibili mirror.)
+spreadsheet introduction.
+(You Suck at Excel recently disappeared off YouTube - the link above is a bilibili mirror.)
+For more puzzlehunt-focused guides, see [Yet Another Puzzlehunt Spreadsheet Tutorial](https://docs.google.com/spreadsheets/d/1-KmLvmcydguI_RBJJqHihbewZmssmdNtlWFJIJZVXLk/edit#gid=0)
+by betaveros and [Google Sheets Puzzle Tricks](https://docs.google.com/spreadsheets/d/1mTVD0KtjbU6-wp1mvYU_abrjdCmnP9focRa1qp36rrY/edit#gid=547492841) by Jonah Ostroff.
 
 
 #### Use code for more complicated extractions or searches
@@ -460,7 +465,7 @@ I noticed something that looked like the answer.
 
 One advantage of code is that if it exhaustively checks all possibilities, and it still
 fails to extract the puzzle, then you know you should try something different from the extraction
-you attempted, rather than checking for errors. (Once again, this has burned me before, when I
+you attempted, assuming you trust your code and the inputs you're giving it. (Once again, this has burned me before, when I
 concluded an extraction method was wrong because the answer didn't appear in my local wordlist. Proceed with caution!)
 
 
@@ -521,7 +526,7 @@ another column of data we could be extracting from.
 #### Assume a few errors
 
 To err is human. If you don't like a few letters, you can always pretend those were solved wrong
-and switch them to wildcards in nutrimatic.
+and switch them to wildcards in nutrimatic. I've also been pointed to [util.in](https://util.in/solver), which I haven't used before but supports "probably correct" letters.
 
 It's important not to overdo this, but getting good at error correction can really take you quite far.
 This extends to other forms of errors as well. For example, sometimes I'll assume our indices were
@@ -538,7 +543,7 @@ derived incorrectly, and try Caesar shifting in case they're all off by one.
 > deeply understand it. They appreciate all the work that went into the design, all the strengths or the weak points, and then, having understood it perfectly, they
 > break it over their knee.
 
-[Getting Over it Developer Reacts to speedrun of Getting Over It](https://www.youtube.com/watch?v=dGU5_UUalPA)
+[Getting Over it Developer Reacts to 1 Minute 24 Second Speedrun](https://www.youtube.com/watch?v=dGU5_UUalPA)
 {: .centered }
 
 For the uninitiated, cheesing a puzzle means to solve it through an unintended path. It comes from video game slang, and usually implies solving with less work than intended.
@@ -577,7 +582,7 @@ skip that step, and it worked. (Albeit with having to look at page 2 of nutrimat
 * If enumerations are given for a multi-word phrase, and the phrase is long enough, sometimes the enumeration itself is enough to constrain
 the phrase. You can use OneLook or nutrimatic to check for this.
 For example, (2 2 2 3 2 2 4 2 3 8) only has [one notable match](https://nutrimatic.org/2024/?q=%22AA+AA+AA+AAA+AA+AA+AAAA+AA+AAA+AAAAAAAA%22&go=Go).
-This cheese is usually better done in OneLook, since it has fewer phrases and a higher fraction are valid puzzle answers.
+This cheese is usually better done in OneLook, since the phrases in its dictionary are all only "real" phrases that could be puzzle answers.
 
 To draw an analogy to [engineering solutions to high school math contest problems](https://cjquines.com/files/engineering.pdf), cheesing is not a replacement to learning how to solve puzzles,
 but it can be very effective. If you cheese a puzzle, you should go read how it was supposed
@@ -606,8 +611,9 @@ the eventual argument made was:
 In general, weird, strange, or obscure clues tend to indicate that there's a very specific reason
 that clue *had* to be weird, strange, or obscure, and you should consider what that reason is.
 For example, I once wrote a puzzle where I needed to clue [EOGANACHTA](https://en.wikipedia.org/wiki/E%C3%B3ganachta), which was a travesty, but it was the most reasonable option that fit the letter constraints I needed.
-A sharp-eyed solver that got that clue should be immediately suspicious that future extraction will be based on syntax rather than semantics.
-To give a non-puzzle example, in the board game Codenames, you are trying to clue words for your team
+A sharp-eyed solver that got that clue should be immediately suspicious that future extraction will be based on the letters used rather than its meaning.
+
+To give a non-puzzle example, in the board game *Codenames*, you are trying to clue words for your team
 and not the opposing team. If I get a clue like "TOMATO: 2", and
 see RED and FRUIT on the board, I'll mention RED and FRUIT fits, but I'll also start wondering why we got
 "TOMATO" as a clue instead of a more typical red fruit like APPLE, CHERRY, or STRAWBERRY. Perhaps
@@ -618,12 +624,36 @@ people who write puzzles tend to get better at solving them. Like, maybe the rea
 strong is because parts of their team have been writing hunts every year for 7 years.
 
 
+Backsolving
+---------------------------------------------------------------------------------------------
+
+Let's say we've solved a meta, or understand the constraints it will place on our answers, and want to backsolve a puzzle. How do we do so?
+
+#### Verify it's possible
+
+Very often, the way a meta uses its answer will lead to it not backsolving very easily. If it only uses
+1 letter from the feeder answer, you basically have no hope and should just move on.
+
+#### Read through the progress on each unsolved puzzle
+
+In my experience, it is actually pretty rare that you can backsolve a puzzle *entirely* from the
+meta constraints. The more common strategy is that forward solving the puzzle gives
+some information about the answer, the meta provides other information, and only the combination
+of both is enough to constrain the backsolve.
+
+During MIT Mystery Hunt 2019, teammate was one
+of the teams that got told off for attempting backsolves too aggressively, so we cooled down our guesses. But later in the hunt, we did end up backsolving 2 puzzles from [Thanksgiving Town/​President’s Day Town](https://puzzles.mit.edu/2019/problem/thanksgiving_presidents_day.html) without any incorrect guesses, because the theme of a few puzzles matched incredibly well with some candidate answers.
+
+Before attempting a backsolve, read through each puzzle to refresh yourself on the theme of the puzzle, or see if there's any hints about the length of that puzzle's answer, like the number of clues or given blanks.
+If you don't know the length of the answer, one trick in nutrimatic is that it supports `&` for "match both sides", and `A{a,b}` will match exactly $$a$$ to $$b$$ letters (i.e. `A{3,6}` = 3 to 6 letters). So you can do searches like `AAAxA*&A{7,10}`, which means "an answer whose 4th letter is X and is 7 to 10 letters long". This comes up in forward solving, but is more useful in backsolving.
+
+
 Bringing This Together
 ---------------------------------------------------------------------------------------------------
 
 To showcase these strategies together, here is a puzzle I remember speedrunning especially quickly: [The Three Little Pigs](https://hunt20.com/puzzle/three-little-pigs.html)
 from Hunt 20 2.1 Puzzle Hunt. This hunt was designed to be on the easier side, so this made it more susceptible to
-speedrunning.
+speedrunning. I've reproduced the puzzle content below.
 
 <div class="shaded" markdown="1">
 #### The Three Little Pigs
@@ -656,11 +686,10 @@ Unpleasant drug lyrics within (4)
 <br>
 </div>
 
-Below is a reproduction of the solve path based on Google Sheets history, annotated
-with strategies mentioned earlier.
+Here's how my team did that hunt, as reconstructed from Google Sheets history, and
+annotated with the strategies mentioned earlier.
 
-<hr/>
-<br/>
+<hr style="margin-bottom:15px;" />
 
 There are 9 clues in each half **(counting)**.
 
@@ -757,7 +786,6 @@ Unpleasant drug lyrics within (4)
 <br>
 </div>
 
-<br>
 Let's try extracting from the missing words for each group of 3 **(looking ahead)**. So far, we have:
 
 ```
@@ -781,6 +809,8 @@ scroll down [the list](https://nutrimatic.org/2024/?q=AanAAAAio&go=Go) of nutrim
 TRIO`, which was the answer.
 
 During the hunt, some teams solved this puzzle in 5 minutes. My team was not that fast (13 minutes), but you can
-see how applying a few tricks let us focus directly on the solve path and reduced unnecessary effort. This solve was a very extreme case, and the tricks I've described are usually not *this* effective, but try them out sometime.
+see how applying a few tricks let us focus directly on the solve path and reduced unnecessary effort. This solve was a very extreme case, and the tricks I've described are usually not *this* effective, but try them out sometime. I expect them to be of use.
 
-*Thanks to Eugene C., Evan Chen, Jacqui Fashimpaur, Cameron Montag, Nishant Pappireddi, Olga Vinogradova for giving feedback on earlier drafts of this post.*
+*Thanks to Eugene C., Evan Chen,
+Nicholai Dimov,
+Jacqui Fashimpaur, Cameron Montag, Nishant Pappireddi, Olga Vinogradova, and Patrick Xia for giving feedback on earlier drafts of this post.*
