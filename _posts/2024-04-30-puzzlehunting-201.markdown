@@ -4,10 +4,7 @@ title:  "Puzzlehunting 201"
 date:   2024-04-30 09:29:30 -0700
 ---
 
-I'm good at puzzlehunts. I thought about equivocating this, but I've been on a winning
-MIT Mystery Hunt team twice and recently was on the 2nd place team for the
-[Who Killed Ickey?](https://ickeytreasurehunt.com/leaderboard) treasure hunt.
-These were definitely team efforts, but I know I made significant contributions to both.
+I'm good at puzzlehunts. I thought about equivocating this, but I've been on a winning MIT Mystery Hunt team twice and recently was on the 2nd place team for the [Who Killed Ickey?](https://ickeytreasurehunt.com/leaderboard) treasure hunt. These were definitely team efforts, but I know I made significant contributions to both.
 
 Those hunts
 cover the spectrum between puzzlehunts where the bottleneck is
