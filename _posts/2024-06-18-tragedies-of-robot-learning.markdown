@@ -12,41 +12,90 @@ One person there declared they'd kill robotics. I don't remember what they saved
 I have two counterclaims:
 
 * The reason it looks like nothing happens in robot learning is because you can't do anything without directly tackling the hard problems.
-* The hard problems of robotics are not unique to robotics. They are universal to real-world agents in general, and if you're aiming in that direction, they're coming for you.
+* The hard problems of robotics are not unique to robotics, and they're coming for you.
 
+One of the very common refrains in robotics is "reality is messy".
+My version is a bit longer: **reality is complicated, relative to code, and in robotics you're often pushing
+a messy reality into an abstraction nice enough for code to act on it**.
+As a field, computer science has spent decades creating abstraction
+layers to let code drive electricity to your hard drive, processor,
+and monitor in the way the code says. These abstraction layers are reliable enough
+that you usually don't even think about them.
 
-What Makes Robotics Hard?
------------------------------------
+![xkcd comic](/public/tragedies-of-robot-learning/abstraction.png)
+{: .centered }
 
-There are a few perpetual pain points.
-
-1. Robots are embedded in the real world.
-
+There's a lot of benefit to doing this!
 Code and digital data is incredibly replicable. I have copies of the file
 representing the draft of this blog post synced across 3 devices, and don't even
-think about it. As a field, computer science has spent decades creating abstraction
-layers that let you manipulate logical constructs with code, with enough
-reliability that you normally don't need to consider the hardware that lies underneath.
+think about it. I do not have the expertise to debug hardware errors, and usually just hope
+a restart fixes them.
 
-Robotics has a nasty habit of piercing those veils. To quote Joel Spolsky,
-[all abstractions are leaky to some degree](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions),
-but the leaks tend to be bigger in robotics.
+However, to quote Joel Spolsky,
+[all abstractions are leaky to some degree](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions), and I've found those leaks tend to be bigger in robotics. There are many
+ways for things to go wrong that have nothing to do with the correctness of your code.
 
-Is that because of something fundamental to the subject? Well, maybe. A lot of robot
-hardware is a lot more experimental than a smooth-edged Macbook or well worn
-Linux server, and "experimental" tends to mean "weird failure states". But,
-I don't think this is the primary driver of friction.
+Is that because of something fundamental to the subject? Sort of? A lot of robot
+hardware is more experimental than a smooth-edged Macbook or well worn
+Linux server, since consumer robots aren't as big an industry yet. "Experimental" tends to mean "weird, more frequent failure states".
 
-To me, the friction is that **reality is complicated, and you're trying to push
-it into an abstraction nice enough for code to act on it**. Like, it just is. One
-common defense of cartoons as a medium is that because cartoons are a more abstract
-medium, it is easier for people to project themselves in the work.
+But, I don't think the hardware is the primary driver of friction. It's **reality** that's
+the friction. Benjamin Holson put it really well in his ["Mythical Non-Roboticist"](https://generalrobots.substack.com/p/the-mythical-non-roboticist) post:
 
-IMAGE
+> The first kind of hard part is that robots deal with the real-world, imperfectly sensed and imperfectly actuated. Global mutable state is bad programming style because it's really hard to deal with, but to robot software the entire physical world is global mutable state, and you only get to unreliably observe it and hope your actions approximate what you wanted to achieve.
 
-And one of the common replies to this is that cartoons are great at bombastic
-emotion, but are bad at subtle emotion. Asking a good actor to portray this is much
-easier than
+**Nothing about this is specific to robotics.** Any software that measures reality will have imperfect sensing. Any software that tries to affect real world change has to deal with the global mutable state of the real world. Any software whose actions depend on what's going on in reality is inviting
+an entirely new type of noise and complexity.
+
+There's been a recent wave of hype around LLMs - what they can do, where they can apply. Implicit in all of this is the belief that LLMs can make significant changes to how people interface with technology, in their work and in their free time. In other words, *that LLMs will change our reality*.
+I'm actually on board this hype wave, but that means all those pain points of reality are coming
+for a field that historically does a bad job at considering reality.
+
+At the same ML conference where this person said robotics was a waste of resources, I mentioned
+that [we were experimenting with foundation models in real robots](https://robotics-transformer2.github.io/). I was told this seemed a bit scary, and after pointing out it was a research prototype,
+I asked why they thought LLMs generating and executing code wasn't scary. Silicon Valley types
+have a bit of a paradox them. They both believe that software can power amazing transformational startups, and that *their* software doesn't merit contemplation or introspection.
+
+I've
+noticed (with some schadenfreude) that LLM practitioners keep discovering pain points that would fit right in a roboticist's mouth. "We can't reproduce these training runs because it's too capital-intensive." Yeah, welcome to not having the same robot platform. "I can't get [Bing to gaslight me about Avatar 2's release date](https://x.com/MovingToTheSun/status/1625156575202537474), since it keeps pulling up news article written about the gaslighting and self-corrects." Welcome to the globally mutable state of text on the Internet.
+
+It's never been easier to get access to cutting-edge research, or understand what an LLM demo is attempting to do. But there's a reason the saying is "all robot demos lie". All LLM demos lie to. What's important is evaluating the type, size, and importance of the lie.
+Correctly evaluating hype videos is often an exercise in being an asshole. Did they show how it could generalize? If they didn't, it probably can't. Did they mention how cherry-picked the examples were? You're probably looking at the top 10% of its behavior if they didn't.
+Not every top 10% behavior can be promoted to a behvior that occurs all the time. Not every sign
+of life leads to actual life. (At some level, research is about proving which signs of life
+are real and which is fake.)
+
+Being this relentless isn't always correct. It's like saying [Lionel Messi's hadn't proven he was good because he hadn't done it on a cold rainy night in Stoke](https://onefootball.com/en/news/origins-of-can-they-do-it-on-a-cold-rainy-night-in-stoke-38867246). At some point you concede the man's proven himself, or the model's proven itself.
+
+As LLMs get better, as AI becomes more common in daily life - we, as a society, will need to get
+increasingly good at deciding if the model's proven itself. One of my main worries about the future is
+that we get bad at evaluating if the model's proven itself. So if anything, I expect roboticists
+to be ahead of the curve. We were complaining about evaluation 4 years before everyone agreed evaluating LLMs were hard. We were trying to get enough data to capture the long tail of self-driving long
+before "we need data for rare use cases" became the rallying cry of foundation model pretraining teams. All of us are running into the same walls of reality that robotics has tried to fight through for years and years. Welcome to the pain.
+
+
+One of the common
+defenses of comics as a medium is that because they are drawn in a more abstract style,
+it is easier for people to project a bit of themselves into the work, giving them more
+appeal than more photorealistic works.
+
+![A side-by-side comparison of a cartoon version of the author, and a photorealistic author](/public/tragedies-of-robot-learning/36last2.png)
+{: .centered }
+
+From *Understanding Comics*, by Scott McCloud
+{: .centered }
+
+A similar principle holds true in applying ML / AI methods. The fewer assumptions they make,
+the more generally they can apply, but the harder your problems are.
+In practice, ML tends to make many *implicit* assumptions.
+Sometimes you can ignore latency, because you're acting in a turn based environment. Sometimes you
+can assume nothing outside your camera's field of view exist, because object permanence isn't a requirement.
+
+
+Sometimes your dataset is biased towards a certain demographic. When evaluating a paper, the common
+question you should ask yourself is what assumptions the paper is making, and when evaluating
+a demo, you should ask yourself what assumptions the demo is hiding. There's a reason the saying
+is "all robot demos lie".
 
 
 
