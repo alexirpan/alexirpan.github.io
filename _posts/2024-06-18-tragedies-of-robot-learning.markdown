@@ -15,6 +15,45 @@ I have two counterclaims:
 * The hard problems of robotics are not unique to robotics. They are universal to real-world agents in general, and if you're aiming in that direction, they're coming for you.
 
 
+What Makes Robotics Hard?
+-----------------------------------
+
+There are a few perpetual pain points.
+
+1. Robots are embedded in the real world.
+
+Code and digital data is incredibly replicable. I have copies of the file
+representing the draft of this blog post synced across 3 devices, and don't even
+think about it. As a field, computer science has spent decades creating abstraction
+layers that let you manipulate logical constructs with code, with enough
+reliability that you normally don't need to consider the hardware that lies underneath.
+
+Robotics has a nasty habit of piercing those veils. To quote Joel Spolsky,
+[all abstractions are leaky to some degree](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions),
+but the leaks tend to be bigger in robotics.
+
+Is that because of something fundamental to the subject? Well, maybe. A lot of robot
+hardware is a lot more experimental than a smooth-edged Macbook or well worn
+Linux server, and "experimental" tends to mean "weird failure states". But,
+I don't think this is the primary driver of friction.
+
+To me, the friction is that **reality is complicated, and you're trying to push
+it into an abstraction nice enough for code to act on it**. Like, it just is. One
+common defense of cartoons as a medium is that because cartoons are a more abstract
+medium, it is easier for people to project themselves in the work.
+
+IMAGE
+
+And one of the common replies to this is that cartoons are great at bombastic
+emotion, but are bad at subtle emotion. Asking a good actor to portray this is much
+easier than
+
+
+
+backing across 3 different
+devices
+
+
 The Default Does Not Reproduce
 -----------------------------------
 
