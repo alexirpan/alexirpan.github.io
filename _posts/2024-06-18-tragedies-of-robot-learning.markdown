@@ -27,6 +27,9 @@ about them.
 ![xkcd comic](/public/tragedies-of-robot-learning/abstraction.png)
 {: .centered }
 
+[From xkcd](https://xkcd.com/676/)
+{: .centered }
+
 There's a lot of benefit to doing this! Once you've done the hard work, and moved your
 progress towards acting in abstract logical space, everything's easier.
 Code and data is incredibly replicable. I have copies of the file
