@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Tragedies of Reality Are Coming for You"
-date:   2024-06-18 22:11:00 -0700
+date:   2024-07-08 10:15:00 -0700
 ---
 
 In 2023, I was at an ML conference. The night was young, the drinks were flowing, and the topic turned to a question: "if you could take any machine learning subfield, and give all their
@@ -24,7 +24,7 @@ layers between hardware and software. Code describes how to drive electricity to
 hard drive, processor, and monitor, reliably enough that I don't have to even think
 about it.
 
-![xkcd comic](/public/tragedies-of-robot-learning/abstraction.png)
+![xkcd comic](/public/tragedies-of-reality/abstraction.png)
 {: .centered }
 
 [From xkcd](https://xkcd.com/676/)
@@ -74,7 +74,7 @@ techniques found a strategy legible enough for humans to reproduce.
 Meanwhile, a few years ago OpenAI created a system that defeated the reigning world champions at
 Dota 2. After making the system available to the public to test its robustness, [a team engineered a strategy that achieved a 10 game win streak](https://web.archive.org/web/20200306003104/https://arena.openai.com/#/results).
 
-![OpenAI Five leaderboard](/public/tragedies-of-robot-learning/dota.png)
+![OpenAI Five leaderboard](/public/tragedies-of-reality/dota.png)
 {: .centered }
 
 Based on this, one pessimistic view you could hold is that connecting even a simple "reality" of a 19 x 19 Go board or Dota 2 is enough additional complexity to make robust behavior challenging.
