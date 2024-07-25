@@ -91,7 +91,13 @@ are already suspected to be hard to solve generally.
 (See [Daskalakis, Goldberg, Papadimitriou 2009](https://people.csail.mit.edu/costis/simplified.pdf) if
 curious.)
 
-Still, even though there isn't an efficient algorithm, there definitely is **an** algorithm.
+(July 2024 correction: This isn't exactly relevant. The Daskalakis result is about general matrix payoffs, but
+crew battles are zero-sum. The Nash equilibria in zero-sum games are efficiently computable via linear programming in time
+polynomial in the number of actions. Thanks [Jon Schneider](https://jschnei.github.io/) for the correction. Both he and I
+believe crew battles are still hard in general, but more because of the exponentially large action space than matrix payoff
+hardness.)
+
+Even though there isn't an efficient algorithm, there definitely is **an** algorithm.
 Let's define a function $$f$$, where $$f(p, team, S_A, S_B)$$ is the probability team $$A$$ wins if
 
 * The player who just won is $$p$$.
@@ -383,3 +389,11 @@ strategy, the math suggests that team captains actually don't have much leverage
 the crew battle.
 
 If your crew loses, you don't get to blame bad crew battle strategy. Your crew is just worse. Deal with it, take the L.
+
+July 2024 edit: [Jon Schneider](https://jschnei.github.io/) reached out to let me know the conjecture above is true and is
+a folklore result in some math circles. To prove it, you can model fights as independent exponential random variables,
+where each player starts with a lifespan sampled from their distribution, and expend life until one player runs out.
+If two players sample lifespans from exponentials with mean $$\mu_1, \mu_2$$, then the probability player 1 wins is $$\mu_1 / (\mu_1+\mu_2)$$.
+The result then follows from the memoryless property of exponentials - the expected lifespan of a player is always the same no matter
+how long they've been fighting. From here you can show that the win probability is the probability team A's total lifespan exceeds
+team B's total lifespan, and memoryless properties guarantee that total doesn't depend on ordering.

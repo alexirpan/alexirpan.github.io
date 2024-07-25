@@ -472,6 +472,12 @@ most likely theory to me.
 Unfortunately, knowing the price is likely manipulated doesn't mean I can do anything about it. The free
 market's a scam, but it's the only game in town.
 
+(July 2024 EDIT: I've since learned that although Cosmic Dome and Dome of the Deep have even drop rates, the
+Frost Arena does not. Either intentionally or unintentionally, the Frost Arena does not drop any Eo Codestones, instead dropping 2x as many Main and
+Mag codestones instead. I just never tested this. Looking at JellyNeo prices, those are the two cheapest tan and red codestones respectivly. So, there doesn't have to be a market manipulation conspiracy. Instead, the high price of Eos can be explained if most active players fight the Snowager instead of easier enemies.
+With the [change to allow infinite rerolling of Training School quests](https://www.jellyneo.net/?comments=14838), the prices of codestones should flatten, and none of this will matter.)
+
+
 # Wishing Well
 
 The Wishing Well is a place where you toss in Neopoints to make wishes. If you're lucky, your wish will be granted!
