@@ -4,82 +4,97 @@ title:  "I'm Switching Into AI Safety"
 date:   2024-07-08 10:15:00 -0700
 ---
 
-Well, you can read the title. As of last month, I've been winding down my existing robotics projects,
-and have switched to the AI safety team.
+You can read the title. As of last month, I've been winding down my existing robotics projects,
+and have switched to the AI safety team within Google DeepMind.
 
-I have been slightly dreading writing this post, because my feelings on AI safety are complicated and take effort to
-work through, but it is a big enough life update that I *have* to write this post. Such is the life of a blogger.
+It took me a while to start writing this post, because my feelings on AI safety are complicated and take effort to
+work through, but changing jobs is a big enough life update that I *have* to write this post. Such is the life of a blogger.
 
 
 The Boring Reasons
 -------------------------------------------
 
 I've been working on the robotics team for 8 years now, and I just felt like I needed to mix it up.
-It was a little unsettling to realize that I had quietly become one of the most senior members of the team,
+It was a little unsettling to realize I had quietly become one of the most senior members of the team,
 and that I had been in robotics longer than my manager, and my manager before that, and the one before *that*.
-Really, this is something I thought about switching up back in 2021, but then my puzzlehunt team won MIT Mystery Hunt,
-meaning we had to write next year's hunt. Writing it took up all of my 2022 and recovering from it took up much of my 2023.
+Really, this is something I thought about doing three years ago, but then my puzzlehunt team won MIT Mystery Hunt,
+meaning we had to write next year's Mystery Hunt. Writing that hunt took up all of my 2022, and recovering from it took up much of my 2023.
 (That and *Tears of the Kingdom*, but let's not talk about that.)
 
-Still, such a change-up doesn't require changing research fields too. Why do that? Well, part of me is just curious
-to see if I can do this. I've always found the SMBC ["Seven Years"](https://www.smbc-comics.com/index.php?db=comics&id=2722#comic) comic inspiring, albeit a bit preachy.
+Making a change doesn't require changing research fields. Why do that? Well, part of me is just curious
+to see if I can. I've always found the SMBC ["Seven Years"](https://www.smbc-comics.com/index.php?db=comics&id=2722#comic) comic inspiring, albeit a bit preachy.
 
-IMAGE
+![TODO](/public/switching-into-safety/smbc.gif)
+{: .centered }
+
+(Edited from original comic)
+{: .centered }
 
 When discussing careers with someone else, he said the reason he *wasn't* switching fields was
-because capitalism rewards specialization, research especially so, and robotics was specialized enough to make
-his comparative advantages better. Which is all true, and pushes against this line of argument, but
-as I've argued [before]({% post_url 2024-07-08-tragedies-of-reality %}), I expect some of the
-my experience dealing with challenges in robotics to transfer to challenges other fields are facing.
-I'm not starting from zero, and am aiming to work on projects that leverage my past expertise while
-learning new things.
+because capitalism rewards specialization, research especially so. Robotics was specialized enough
+to make his comparative advantages better. I agree with this, and it does push against
+switching fields. However,
+as I've argued [before]({% post_url 2024-07-08-tragedies-of-reality %}), I expect my experience with
+robotics to transfer to challenges that other parts of machine learning are now facing.
+I'm also not starting completely from zero, with the goal of working on projects that can leverage
+my past expertise.
 
 
 The Slightly Spicier Research Interests Reasons
 --------------------------------------------------
 
-The way that agents are learned in robotics can broadly be grouped into classical control theory, imitation learning,
+The way robot agents are trained can broadly be grouped into classical control theory, imitation learning,
 and reinforcement learning. Of those, I am a fan of reinforcement learning the most, due to its generality
 and potential to exceed human ability.
 
-Reinforcement learning was originally a dominant paradigm in robot learning research, but has had more of its
-lunch eaten by imitation learning in the past few years. I don't hate imitation learning, I've happily worked
-on several imitation learning projects, it's just not the thing I'm *most* interested in. Meanwhile, there are some
-interesting applications of RL-style ideas to LLMs right now, from its use in RLHF to training value functions
-for search-based methods like AlphaProof.
+Exceeding human ability is not the current bottleneck of robot learning.
 
-When I got started in machine
+Reinforcement learning was originally a dominant paradigm in robot learning research, since it led
+to the highest success rates.
+Over the years, most of its lunch has been eaten by imitation learning methods that are easier
+to debug.
+I don't hate imitation learning, I've happily worked
+on several imitation learning projects, it's just not the thing I'm *most* interested in.
+Meanwhile, there are some
+interesting applications of RL-style ideas to LLMs right now, from its use in RLHF to training value functions
+for search-based methods like [AlphaProof](https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/).
+
+When I started machine
 learning research, it was because I found learning and guiding agent behavior to be really interesting.
-It just so happened that I got started in a robotics lab, but I always cared more about the agents than
+The work I did was in a robotics lab, but I always cared more about the agents than
 the robots, the software more than the hardware.
 The thing that kept me in robotics despite this was that in robotics, you cannot cheat the real world. It's gotta work
-on the real hardware, and I appreciated the way this focused research onto things that actually had real
+on the real hardware. This really focused research onto things that actually had real
 world impact, rather than impact in a benchmark too artificial to be useful.
 
-In any future where robot agents work, software-only agents will have started working
-before the robots did.
-If multimodal LLMs are going to start having agentic
-behaviors, then I'd rather work on those software-only use cases for quality of life reasons.
-As robotics becomes more real, I see a future where more of my time is spent learning the weaknesses and strengths
-of the software-hardware boundary, rather than improving the higher-level reasoning of the agent, and I'm more
-interested in the latter.
+Over the past few years, software-only agents have started looming. This became an important
+decision point for me - where will the real-world agents arrive first? Game playing AIs have
+been around forever, but games aren't real. These LLM driven systems...those were more real.
+In any world where general robot agents exist, software-only agents will have started working
+first.
+I saw a future where more of my time was spent learning the weaknesses and strengths
+of the software-hardware boundary, rather than improving the higher-level reasoning of the agent,
+and decided I'd rather work on the latter.
+If multimodal LLMs are going to start having agentic behaviors, moving away from hardware would
+have several quality of life benefits.
 
-The vision I have of the next few years is that AI companies will differentiate themselves by the
-quality and specificity of their data. Eric Jang has expressed this view in his [All Roads Lead to Rome](https://evjang.com/2022/04/25/rome.html)
-post. Companies are either creating data moats to train their own models, or licensing their data to the
-companies that can. A corollary of this is that the best work will be done by those with the deepest domain expertise,
-because they'll have the best context on whether the data they're curating is good. LLMs are great at breadth of knowledge,
-but bad at depth of understanding. The good work will be in places that LLMs are worse at.
+One view (from Ilya Sutskever, secondhand relayed by Eric Jang) is that
+["All Successful Tech Companies Will be AGI Companies"](https://evjang.com/2022/04/25/rome.html).
+It's provocative, but if LLMs are coming to eat low-level knowledge work, the valuable work
+will be in deep domain expertise, to give feedback on whether datasets have the right information
+and whether the AI's outputs are good.
+If I'm serious about switching, I should do so when it's early, because it'll take time to
+build expertise back up. The right time to have max impact is always earlier than the general
+public thinks it is.
 
-IMAGE
+And, well, I talk a big game about impact, but I don't think I should need to do so to justify
+myself. I'm not
+sitting here crunching the numbers of my impact or utility.
+"How do we create agents that take the right actions" is just a problem I'm really interested in.
+I think it's neat.
 
-Now is a good time for me to get
-better aligned with the parts of research I'd like to do deeper dives into. "How do we create agents that
-take the right actions" is just a problem I'm really interested in. I don't feel like I should need a deeper reason than
-that. I'm not trying to calculate the impact of AI safety instead of deworming or malaria bed nets, I'm trying out
-AI safety because I think it's neat.
-
-SIMPSONS MEME
+![TODO](/public/switching-safety/neat.jpg)
+{: .centered }
 
 The Full Spice "Why Safety" Reasons
 ----------------------------------------------------
