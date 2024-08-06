@@ -90,10 +90,9 @@ public thinks it is.
 And, well, I talk a big game about impact, but I don't think I should need to do so to justify
 myself. I'm not
 sitting here crunching the numbers of my impact or utility.
-"How do we create agents that take the right actions" is just a problem I'm really interested in.
-I think it's neat.
+"How do we create agents that choose good actions" is just a problem I'm really interested in.
 
-![TODO](/public/switching-safety/neat.jpg)
+![TODO](/public/switching-into-safety/neat.jpg)
 {: .centered }
 
 The Full Spice "Why Safety" Reasons
@@ -102,28 +101,23 @@ The Full Spice "Why Safety" Reasons
 Hm, okay, where do I start.
 
 There are a lot of different views on what AI safety is, as well as conflations between AI safety the research
-field and AI safety the community. It is common for people to say they are attacking the field but actually attack
-the community, yet that's not *totally unreasonable* because of how linked the two are. Let's tackle the community first.
+field and AI safety the community. It is common for people to say they are attacking the field
+when they are actually attacking the community.
+The two are not the same, but are linked enough that it's not *totally* unreasonable to conflate them. Let's tackle the community first.
 
-I find interacting with the AI safety community to be worthwhile, *in moderation*. It's a thing I like wading in, but not
-diving into. I don't have a LessWrong account but have read posts sent to me from LessWrong. I don't read Scott Alexander
-regularly but have read a few essays he's written.
-I don't have much interaction with the AI Alignment Forum, although that's been increasing recently for obvious
-reasons.
-
-I also don't go to much of the Bay Area rationalist / effective altruism / accelerationist / tech bro / whatever it's called now scene.
-I've been to some of it, but that is mostly because I had a phase where I was pretty into effective altruism around 2015-2018,
-and then kept in touch with some people from there afterwards. At the time, I saw it as a movement I wasn't part of, but which I wanted to support.
-Now I see it more as a movement that I know exists, where I don't feel much affinity towards it or hatred against it.
-"EA has problems" is a statement I think even EAs would agree with. "Bay Area rationalism has problems" is something I assume
-rationalists would agree with too.
+I find interacting with the AI safety community to be worthwhile, *in moderation*. It's a thing I like wading into, but not
+diving into. I don't have a LessWrong account but have read posts sent to me from LessWrong. I don't read Scott Alexander but have read a few essays he's written.
+I don't have much interaction with the AI Alignment Forum, but have been reading more of it recently.
+I don't go to much of the Bay Area rationalist / effective altruism / accelerationist / tech bro / whatever it's called now scene, but I have been to some of it, mostly because I had a phase where I was pretty into effective altruism around 2015-2018. At the time, I saw it as a movement I wasn't part of, but which I wanted to support.
+Now I see it as a movement that I know exists, where I don't feel much affinity towards it or hatred against it.
+"EA has problems" is a statement I think even EAs would agree with, and "Bay Area rationalism has problems" is something rationalists would agree with too.
 
 The reason AI safety the research topic is linked so much to that scene is because a lot of writing about the risks of AGI and
 superintelligence originate from those rationalist and effective altruist spaces. And so approving of one can be seen as approving the other.
 I don't like that I have to spill this much digital ink spelling it out, but me thinking AI safety is important is
 not an endorsement for or against anything else in the broader meme space it came from.
 
-Is that clear? I hope so. Let's get to the other half: why I think it's worth working on.
+Is that clear? I hope so. Let's get to the other half: why I think safety is worth working on.
 
 \* \* \*
 {: .centered }
@@ -140,6 +134,8 @@ to inspect eval metrics, try small examples, reason about how trustworthy the ev
 4. I'm not sold the current tooling scales to better systems, especially superhuman systems.
 5. I'm not sold superhuman systems will do the right thing without better supervision than we can currently provide.
 6. I expect superhuman AI in my lifetime.
+7. There's a low chance the current paradigm gets all the way there...but it's higher than
+I'm comfortable with.
 
 There's a lot of other stuff surrounding it, but that's the core for me.
 
@@ -157,41 +153,60 @@ how likely is it to be successful, and so on. I ended up with around 2%. I am ju
 ability to mitigate a 2% risk and that it's worth looking at risks of that size.
 
 Anecdotally, my [AI timelines]({% post_url 2024-01-10-ai-timelines-2024 %}) are faster than the general public,
-and slower than people working in AI. People have told me "10% chance in 5 years" is crazy, in both directions! And I think there
+and slower than the people directly working on frontier LLMs. People have told me "10% chance in 5 years" is crazy, in both directions! And I think there
 is a chance that alignment is overblown, existing common sense in LLMs will scale up, and OSHA / FDA style regulations will
 slow down deploying AGI in high-risk scenarios. I also think there is a chance that doesn't happen. There are scenarios where you
-want to allow some rule bending for the sake of innovation, but to me AI is special enough that I'm hesitant to support that.
-I originally expected that most alignment problems would get solved by market forces, by companies needing to make their AI trustworthy
-enough for their customers to use. Now that I have seen the AI hype of 2023, seen Twitter comments declaring "alignment is solved" because
-of one process supervision paper on one dataset...I no longer believe this. Instead I now expect companies to do the bare minimum
-of alignment work needed, and skip the hard parts.
+want to allow some rule bending for the sake of innovation, but to me AI is a special enough technology
+that I'm hesitant to support that.
+I also don't think we have to get all the way to AGI for AI to be transformative. This is mostly
+because I'm sympathetic to an argument from [Holden Karnofsky](https://www.cold-takes.com/ai-could-defeat-all-of-us-combined/), that if a lab has the resources to train an AI, it has the resources to run millions of copies of that AI at inference time, enough to outnumber naive human supervision.
+(His post claims "several hundred millions of copies" - I think this is an overestimate, but the
+core thesis is correct.)
+
+So far, a number of alignment problems have been solved by market forces. Companies need their
+AIs to follow user preferences enough for their customers to use them. I used to have the view
+that the best thing for alignment would be getting AI products into customer's hands in low stakes
+scenarios, to get more data while making sure no one mistake was too dangerous. This happened
+with ChatGPT, and as I've watched the space evolve, I...wish there was more safety research
+than there has been.
+Capitalism is great at solving the blockers to
+profitability, but it's also very willing to define economic niches that ignore the hard
+problems.
+People are too [hungry]({% post_url 2024-07-19-ml-hurry %}) for the best models to do due
+diligence. The level of paranoia I want people to have about LLMs is not
+the level of paranoia the market has.
 
 One of the original reasons I was less interested in AI safety was that the existing work on it looked incredibly theoretical.
 It was very complexity theory style, studying the behavior of bounded Turing machines, analyzing
 [AIXI](https://en.wikipedia.org/wiki/AIXI), and so on. That stuff is my jam, but I was quite pessimistic on any of it
 mattering. I would like someone to be trying the theory angle, but I'm not looking for that someone to be me. There is now a lot
 of non-theory work going on in AI safety, which better fits my skill set. You can argue whether that work is actually making
-progress on aligning superhuman systems, but I think it is. Meanwhile, there was interesting work going on in the Fairness for
-Machine Learning side, but it somehow didn't call to me as much. A lot of existing literature focuses on fairness in
-classification problems, like algorithmic bias in recidivism predictors and bank loan models. Important work, but it didn't
-have enough actions, RL, or agent-like things to call to me.
+progress on aligning superhuman systems, but I think it is. I considered the
+Fairness for Machine Learning side too, but a lot of existing literature focuses on fairness in
+classification problems, like algorithmic bias in recidivism predictors and bank loan models.
+Important work, but it didn't have enough actions, RL, or agent-like things to appeal to me.
+The claims of a schism between the fairness and alignment communities feel overblown to me.
+The average person I've met from either is not interested in trying to make a person "switch
+sides", they're just happy someone's joining to make the field larger, because there is just
+*so much* work to do.
+Even if the sociology is quite different, at the fundamentals level both areas are about
+when optimization goes wrong.
 
-I'm aware of the arguments that historically, most AI safety work has just pushed people to build AI faster. Scaling laws came from
-safety-motivated people and have encouraged investing more money. RLHF developments inspired ChatGPT. Even the recent wave
-of representation engineering has been adopted most enthusiastically by the open-source community, who use them to develop better
-[jailbreaks via intervening on layer activations](https://arxiv.org/abs/2401.06824).
-But...what do these arguments mean? Like, you can claim people are insincere and confused
-about anything. I think aiming for safety while being confused is better than not aiming for it
-at all.
+I'm aware of the arguments that historically, most AI safety work has not been that different from
+broader AI work. Scaling laws came from safety-motivated people and are the core of current frontier
+models. RLHF developments led to ChatGPT. Better evaluation datasets led to better hill climbing
+of models without corresponding safety gains.
+Even the recent wave of representation engineering came from interpretability, but
+has been adopted most enthusiastically by the open-source community, due to its ability
+to develop better [jailbreaks via intervening on layer activations](https://arxiv.org/abs/2401.06824).
+People who don't think safety matters brands this as [typical Silicon Valley grandstanding](https://www.youtube.com/watch?v=B8C5sjjhsso) to pretend they're not trying to make money.
+People who care about safety a lot call this [safetywashing](https://arxiv.org/abs/2407.21792):
+the stapling of "safety" to work that does not advance safety.
+But...like, you can claim people are insincere and confused about anything. It's hard to convince
+people you aren't these things. I don't know, I think most people I talk about safety with
+are confused rather than insincere, and aiming for safety while confused is better than not
+aiming at all.
 
-I'm also aware of the claims that work on longterm AI safety is distracting from work on near-term
-harms. First of all, I'm not that longtermist of a person. Second, I'm not sure that's actually true.
-It might be true of the conversation surrounding AI, but when it comes to the actual work, I think
-some people are just more interested in some kinds of questions than other ones. The average person working on fairness or alignment is not interested in trying to make a person "switch sides" from one to the other. They want people
-to join and make the field larger, because there is just *so much* work to do in both, and not
-a lot of people doing it.
-At the fundamentals level, both areas are about when optimization goes wrong, even if the sociology
-above it is quite different.
-
-I'm not treating AI safety as a permanent move. It's a move I'm making because of the current climate and potential.
-If the potential of LLMs does not pan out, if we end up in another winter, if progress looks to be far away, then I'll reconsider.
+So, that's what I'm doing. It may not be permanent move, but it feels right based on the current
+climate. If that climate turns to AI winter, then I'll reconsider. Right now, it is sunny
+as all hell.
