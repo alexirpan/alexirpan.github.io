@@ -16,7 +16,7 @@ The Boring Personal Reasons
 
 I've been working on the robotics team for 8 years now, and I just felt like I needed to mix it up.
 It was a little unsettling to realize I had quietly become one of the most senior members of the team,
-and that I had been in robotics longer than my manager, my manager before that, and my manager before *that*.
+and that I had been there longer than my manager, my manager before that, and my manager before *that*.
 Really, this is something I thought about doing three years ago, but then my puzzlehunt team won MIT Mystery Hunt,
 meaning we had to write next year's Mystery Hunt. Writing Mystery Hunt took up all of my 2022, and recovering from it took up much of my 2023.
 (That and *Tears of the Kingdom*, but let's not talk about that.)
@@ -97,7 +97,7 @@ sitting here crunching the numbers of my expected utility.
 ![An edit of Marge saying "I Just Think AI Safety's Neat"](/public/switching-into-safety/neat.jpg)
 {: .centered }
 
-(I tried to get an LLM to make this for me and it failed. Surely this is possible with the right prompt, but it's not worth the time it'd take me to do so.)
+(I tried to get an LLM to make this for me and it failed. Surely this is possible with the right prompt, but it's not worth the time I'd spend debugging it.)
 {: .centered }
 
 The Full Spice "Why Safety" Reasons
@@ -136,7 +136,7 @@ optimize a proxy objective (negative log likelihood vs 0-1 classification accura
 describe. People run into this all the time.
 2. It's easy to have a system that generalizes poorly because you weren't aware of some edge case of its behavior, due to insufficient eval coverage, poor model probing, not asking the right questions,
 or more. This can either be because the system doesn't know how to handle a weird input, or because your data is not sufficient to define the intended solution.
-3. The way people solve this right now is to just...pay close attention to what the model's doing, using humans in the loop
+3. The way people solve this right now is to just...pay close attention to what the model's doing, use humans in the loop
 to inspect eval metrics, try small examples, reason about how trustworthy the eval metrics are, etc.
 4. I'm not sold our current tooling scales to better systems, especially superhuman systems that are
 hard to judge, or high volume systems spewing millions of reviewable items per second.
@@ -144,8 +144,6 @@ hard to judge, or high volume systems spewing millions of reviewable items per s
 6. I expect superhuman AI in my lifetime.
 7. The nearest-term outcomes rely on the current paradigm making it to superhuman AI. There's a low chance the current paradigm gets all the way there. The chance is still higher than
 I'm comfortable with.
-
-Many smaller arguments surround this, but that's the core for me.
 
 In so far as intelligence can be defined as the ability to notice patterns, pull together disparate pieces of information,
 and overall have the ability to get shit done, there is definitely room to be better than people. Evolution promotes things
@@ -174,10 +172,10 @@ than effectiveness.
 (His post claims "several hundred millions of copies" - I think this is an overestimate, but the
 core thesis is correct.)
 
-So far, a number of alignment problems have been solved by market forces. Companies need their
+So far, a number of alignment problems have been solved by capitalism. Companies need their
 AIs to follow user preferences enough for their customers to use them. I used to have the view
 that the best thing for alignment would be getting AI products into customer's hands in low stakes
-scenarios, to get more data while making sure no mistake was too dangerous. This happened
+scenarios, to get more data in regimes where no mistake was too dangerous. This happened
 with ChatGPT, and as I've watched the space evolve, I...wish there was more safety research
 than there has been.
 Capitalism is great at solving the blockers to
@@ -213,18 +211,17 @@ models. RLHF developments led to InstructGPT, then ChatGPT. Better evaluation da
 models led to faster hill climbing of models without corresponding safety guarantees.
 Most recently, there's been hype about representation engineering, an interpretability
 method that's
-been adopted most enthusiastically...by the open-source community, because it enables
-[better jailbreaks](https://arxiv.org/abs/2401.06824).
-People who don't think safety matters brands this as [typical Silicon Valley grandstanding](https://www.youtube.com/watch?v=B8C5sjjhsso) to pretend they're not trying to make money.
-People who care about safety a lot call this [safetywashing](https://arxiv.org/abs/2407.21792):
+been adopted enthusiastically...by the open-source community, because it enables
+[better jailbreaks](https://arxiv.org/abs/2401.06824) at cheaper cost.
+Those who don't think safety matters brands this as [typical Silicon Valley grandstanding](https://www.youtube.com/watch?v=B8C5sjjhsso), where people pretend they're not trying to make money.
+Those who care about safety a lot call this [safetywashing](https://arxiv.org/abs/2407.21792),
 the stapling of "safety" to work that does not advance safety.
 But...look, you can claim people are insincere and confused about anything. It is a nuclear
-weapon of an argument, because you can't convince people it's wrong in the moment. It can only
-be judged by the actions you take afterwards.
+weapon of an argument, because you can't convince people it's wrong in the moment, you just continue
+to call them insincere or confused. It can only be judged by the actions you take afterwards.
 I don't know, I think most people I talk about safety with
 are either genuine, or confused rather than insincere.
 Aiming for safety while confused is better than not aiming at all.
 
 So, that's what I'm doing. Aiming for safety. It may not be a permanent move, but it feels right based on the current
-climate. The climate may turn to AI winter, and if it does I will reconsider. Right now, it is *very* sunny
-and I'd like it if we didn't get burned.
+climate. The climate may turn to AI winter, and if it does I will reconsider. Right now, it is *very* sunny. I'd like it if we didn't get burned.
