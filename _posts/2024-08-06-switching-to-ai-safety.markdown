@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "I'm Switching Into AI Safety"
-date:   2024-07-08 10:15:00 -0700
+date:   2024-08-06 08:30:00 -0700
 ---
 
 You can read the title. As of last month, I've been winding down my existing robotics projects,
