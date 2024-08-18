@@ -9,27 +9,28 @@ date:   2024-08-18 11:19:01 -0700
 # Highlights
 
 I took a break from writing puzzles this year.
-The main reason I've had more free time is that I stopped writing puzzles.
+That's led to a lot more free time.
 Puzzle writing has been one of my main recent hobbies, but I've found the problem
 is that I can't do low key puzzlehunt writing. I either go all-in or I don't,
-and when I go all-in, it takes up enough headspace that I struggle to do other
-things. This year was a year I needed to do other things. I wanted to change things
+and when I go all-in, it takes up enough headspace that I have trouble making any other
+major life decisions.
+This year was a year where I needed to do other things. I wanted to change things
 up.
 
-And I did do change things up! Some of it was silent backend migrations
+And I did change things up! Some of it was silent backend migrations
 (both Universal Analytics and my time tracker got deprecated this year), but the
 most notable change is that I [switched career trajectories to AI safety]({% post_url 2024-08-06-switching-to-ai-safety %}).
 
 I try to keep my Twitter / X usage low, but I retweet all posts whenever I write
 them, and I've noticed my switch into AI safety post has had significantly more
-Twitter engagement than my other posts. I've chalked this up to "the alignment mafia" - a distributed
+Twitter engagement than my other posts. I chalk this up to "the alignment mafia" - a distributed
 set of people who reshare and promote anything supporting their views on AGI.
 Listen, I appreciate the support, but I haven't done anything yet! Chill.
 
 The time it took me to navigate my career change was much less than the time I've
 spent on puzzle writing in the past.
 I expected to fill that void with more blog writing,
-but that's not what happened. So what filled the void in its place?
+but that's not what happened. So, what filled the void in its place?
 
 Video games. It was video games. A quick review of some of them:
 
@@ -42,11 +43,11 @@ and is filled with fantastic set pieces.
 ## Islands of Insight
 
 Islands of Insight is...fine? It pitched itself as a puzzle-based MMO, where the
-highlight is a huge set of handmade Nikoli logic puzzles in an explorable world.
+highlight is a huge set of handmade Nikoli-style logic puzzles in an explorable world.
 The puzzles are good, but the game is poorly optimized, the social MMO aspects
 are pretty minimal, and the huge skill tree and unlockables feel like they're just there
-to encourage higher engagement, rather than being more fun. The puzzles are great, the
-rest is just sorta there. If you like puzzles, I had a lot of fun with those.
+to encourage higher engagement, rather than being more fun. The puzzles are great though,
+and if that's good enough for you, I had fun with that.
 
 ## Undertale Yellow
 
@@ -64,14 +65,14 @@ to play the first one. I pushed up to
 Epilogue, all weapon aspects, and 21 heat before setting it down. At some point, it does get easy to
 fall into the builds you know are overpowered, but that's the fate of every roguelike.
 What Hades 1 does well is make you feel overpowered when you get a good run going - and
-then killing you regardless if you don't respect the bosses enough.
+then killing you regardless if you don't respect the bosses enough. It just does a lot of things right.
 I don't like how grindy the story progression gets by the end, where you're just waiting for a character
 to provide a dialogue option, but most players will not reach that point.
 
 ## Incremental Games
 
 Incremental games were a mistake, do not recommend.
-If you're unfamiliar with the genre, *Cookie Clicker* is the
+If you're unfamiliar with the genre, Cookie Clicker is the
 prototypical example. You start with a small number of resources, then achieve
 exponentially larger resources through increasingly complicated progression and
 automation systems. I tried one of the highly recommended ones, and no joke, it took
@@ -79,7 +80,9 @@ up *4 months* of my life. If you are the kind of person who likes theorycrafting
 stat builds to maximize damage throughput, incremental games are a game where
 you only do that. Except, instead of maximizing damage, you're minimizing
 time-to-unlock the next progression layer. I was spending 3 hours a day to push
-my game to a state where I could maximize my overnight stat gain. It felt a lot
+my game to a state where I could minimize how much time I'd need to wait to unlock the next layer,
+and if I didn't spend those 3 hours I would have had to wait days for progress instead.
+It felt a lot
 like machine learning work, where you try to get everything done so that you can
 let the model train overnight and inspect it next morning. The experience was
 interesting, but I wouldn't go through it again.
