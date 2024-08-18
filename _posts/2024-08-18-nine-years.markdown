@@ -17,74 +17,72 @@ is that I can't do low key puzzlehunt writing. I either go all-in or I don't,
 and when I go all-in, it takes up enough headspace that I struggle to do other
 things. This year was a year I needed to do other things.
 
-And I did do other things! There are some silent migrations I did in the background
-(both Google Analytics and my time tracker got deprecated this year), but the most
-notable new thing is that I switched career trajectories. We'll see how that
-plays out.
+And I did do other things! There are some silent changes I did in the backend
+(both Google Analytics and my time tracker got deprecated this year), but the
+most notable change is that I [switched career trajectories to AI safety]({% post_url 2024-08-06-switching-to-ai-safety %}).
 
-Overall though, these decisions did not take as much time as puzzlehunting did,
-and instead of writing...I mostly played games. Incremental games were a mistake,
-do not recommend. If you're unfamiliar with the genre, *Cookie Clicker* is the
+I try to keep my Twitter / X usage low, but I retweet all posts whenever I write
+them, and I've noticed my switch into AI safety post has had significantly more
+Twitter engagement than my other posts. I've chalked this up to "the alignment mafia" - a distributed
+set of people who reshare and promote anything supporting their views on AGI.
+Listen, I appreciate the support, but I haven't done anything yet! Chill.
+
+The time it took me to navigate my career change was much less than the time I
+spent writing puzzles last year. So what did I fill the void with in its place?
+
+...Video games. It was video games. Pardon me, while I go into a quick review:
+
+* Hi-Fi Rush starts slow but gets great once you unlock all the battle mechanics.
+It's colorful and joyous, filled with fantastic set pieces.
+* Islands of Insight is...fine? It pitched itself as a puzzle-based MMO, where its
+highlight is a huge set of handmade Nikoli logic puzzles in an explorable world.
+The puzzles are good, but the game is poorly optimized, the social MMO aspects
+are pretty minimal, and there's a huge pile of skill trees that feels like it's
+just there to encourage higher engagement, rather than being more fun. I am down
+on a lot of the game, but the puzzles are great.
+* Undertale Yellow is a fantastic fan game, that's been in development for 7 years
+and comes out feeling like a canon entry made by Toby Fox. I have small nitpicks
+about the lack of variety in pacifist boss strategies, but the overall package
+works. I would have gladly paid money for this, but it's free, if you liked Undertale
+check it out.
+* Hades 2 came out, which was a great excuse to play Hades 1. I bought Hades 1 three
+years ago and never installed it. I got around to playing it and pushed up to
+Epilogue, all weapon aspects, and 21 heat before setting it down. At some point, it does get easy to
+fall into the builds you know are overpowered, but that's the fate of every roguelike.
+What Hades 1 does well is make you feel overpowered when you get a good run going - and
+then killing you regardless if you don't respect the bosses enough.
+The part I don't like is how grindy the story progression gets by the end, but most
+players will not reach that point.
+* Incremental games were a mistake, do not recommend.
+If you're unfamiliar with the genre, *Cookie Clicker* is the
 prototypical example. You start with a small number of resources, then achieve
-exponentially larger resources through increasingly complicated progression systems.
+exponentially larger resources through increasingly complicated progression and
+automation systems. I tried one of the highly recommended ones, and no joke, it took
+up *4 months* of my life. If you are the kind of person who likes theorycrafting
+stat builds to maximize damage throughput, incremental games are a game where
+you only do that. Except, instead of maximizing damage, you're minimizing
+time-to-unlock the next progression layer. I was spending 3 hours a day to get
+my game to a state where I could maximize my overnight stat gain. It felt a lot
+like machine learning work, where you try to get everything done so that you can
+let the model train overnight and inspect it next morning. The experience was
+interesting, but it wasn't worth the cost.
 
-
-I did a bunch of backend migration
-This wNew job, new
-
-One of my main recent hobbies is puzzlehunt writing. I deliberately took a
-break from that this year.
-
-deliberately wanted to take a break from that this year, so that I could fo
-
-I turned down some puzzle
-
-I'm done with writing MIT Mystery Hunt! Freedom!
-
-The [post]({% post_url 2023-04-21-mh-2023 %}) about it was pretty rewarding
-to write, although "post" may be the wrong word. Credit to CJ for noting that the post
-was long enough to pass [NaNoWriMo](https://en.wikipedia.org/wiki/National_Novel_Writing_Month).
-
-Did it need to be that long? Eh, probably not, but I kept having ideas I wanted to put in.
-I also knew I was not in a mood to revise
-it to be shorter. The revisions I did were focused on grammar, word choice,
-and overall flow, rather than deciding if an idea should be cut. (Feel free to
-draw a comparison to the Hunt itself if you want.)
-
-To be honest, I do not expect to write a post of that length again. I started
-working on that post right after Mystery Hunt 2023 finished, and hardcore
-focused on getting it out ASAP. "As soon as possible" turned out to be 3 months,
-ending right when planning for [ABCDE:FG](https://archives.mitmh2023.com/2023/abcde.puzzlefactory.place/about) ramped up. The end result was that I was
-exerting "write Mystery Hunt" levels of effort (10-20 hrs/week) for 1.5 years
-straight. That was just too much, and I burned out on doing anything with my
-free time besides vegetating.
-
-My burnout lined up almost
-*exactly* with getting a copy of The Legend of Zelda: Tears of the Kingdom.
-Let's say my escapism into TotK was especially therapeutic. I'm done with the
-game now, and am still adjusting to not having a "default" action taking up
-mindshare.
-"I should write a puzzle", "I should write about writing puzzles", or
-"I should go find more Koroks" have been like, the only three thoughts I've had outside
-of work since last year. Gotta have more thoughts than those!
 
 # Statistics
 
 ## Posts
 
-I wrote 6 posts this year, down from 7 last year. In my defense, this is
-a bit misleading, especially if I pull up the time stats.
+I wrote 9 posts this year, up from 6 last year.
 
 ## Time Spent
 
-I spent **189 hours, 45 minutes** writing for my blog this year, around 1.9x as
-long as last year.
-
-Around 170 hours of that was on the [Mystery Hunt retrospective]({% post_url 2023-04-21-mh-2023 %}) post.
+TODO
 
 ## View Counts
 
-These are view counts from August 18, 2022 to today.
+These are view counts from August 18, 2023 to today.
+
+TODO
 
 {% highlight python %}
 259  2022-08-18-seven-years.markdown  
@@ -97,39 +95,25 @@ These are view counts from August 18, 2022 to today.
 
 # Posts in Limbo
 
-**Post about Dominion Online:**
+You know, looking back, I did end up writing a lot of the posts I was thinking
+of writing.
+
+**Post about Dominion:**
 
 Odds of writing this year: 5%  
-Odds of writing eventually: 25%
+Odds of writing eventually: 10%
 
-My priorities are moving away from Dominion. This may be the first year I skip the yearly championship, I'm not too interested in grinding my skill level back up. Still, I can't let go of writing this eventually.
+I haven't touched my draft of this in a long, long time. I'm realizing it's the kind
+of thing that could form a good Youtube essay (I liked the [early history of Yu-Gi-Oh]
+video a lot), but, that is not my skill set and I'm not interested in making
+longform video content.
 
 **Post about Dustforce:**
 
 Odds of writing this year: 20%  
 Odds of writing eventually: 60%
 
-I still think Dustforce is one of the best platformers of all time. I've been playing a
-lot more Celeste recently thanks to [Strawberry Jam](https://gamebanana.com/mods/424541),
-but Dustforce still does some things that no one else has replicated in a satisfying way.
-
-**Post about puzzlehunting 201:**
-
-Odds of writing this year: 50%  
-Odds of writing eventually: 90%
-
-This is a post I've been considering for a while. There are [introduction to puzzlehunt](https://blog.vero.site/post/puzzlehunts) posts, a so-called "puzzlehunt 101", but there is no
-"puzzlehunting 201" for people familiar with the basics and interested in solving faster.
-I was going to write this last year,
-embedding puzzle content in it for Mystery Hunt, but didn't have a solid puzzle idea
-and got too busy. Now I'm less busy.
-
-**Post about AI timelines:**
-
-Odds of writing this year: 90%  
-Odds of writing eventually: 99%
-
-I'm not planning a big update to the last timelines [post]({% post_url 2020-08-18-ai-timelines %}). I just think it's time to review what I wrote last time, given that it's been 3 years.
-(And selfishly, because I think I called a lot of things correctly and want to
-brag about that.)
-
+Okay, I have also been playing Dustforce less, but this isn't because I've found
+the game less fun. It's because my laptop's keyboard started developing ghosting
+issues that randomly eat my jump and attack inputs. This laptop's getting old enough
+that I need to replace it, but I still think this game is criminally underrated.
