@@ -1,24 +1,23 @@
 ---
 layout: post
 title:  "Nine Years Later"
-date:   2023-08-18 00:00:01 -0700
+date:   2024-08-18 11:19:01 -0700
 ---
 
 *Sorta Insightful* turns nine years old today!
 
 # Highlights
 
-I was expecting to have more free time for writing this year. I did have more
-free time, but I ended up spending it on other things.
-
+I took a break from writing puzzles this year.
 The main reason I've had more free time is that I stopped writing puzzles.
 Puzzle writing has been one of my main recent hobbies, but I've found the problem
 is that I can't do low key puzzlehunt writing. I either go all-in or I don't,
 and when I go all-in, it takes up enough headspace that I struggle to do other
-things. This year was a year I needed to do other things.
+things. This year was a year I needed to do other things. I wanted to change things
+up.
 
-And I did do other things! There are some silent changes I did in the backend
-(both Google Analytics and my time tracker got deprecated this year), but the
+And I did do change things up! Some of it was silent backend migrations
+(both Universal Analytics and my time tracker got deprecated this year), but the
 most notable change is that I [switched career trajectories to AI safety]({% post_url 2024-08-06-switching-to-ai-safety %}).
 
 I try to keep my Twitter / X usage low, but I retweet all posts whenever I write
@@ -27,33 +26,51 @@ Twitter engagement than my other posts. I've chalked this up to "the alignment m
 set of people who reshare and promote anything supporting their views on AGI.
 Listen, I appreciate the support, but I haven't done anything yet! Chill.
 
-The time it took me to navigate my career change was much less than the time I
-spent writing puzzles last year. So what did I fill the void with in its place?
+The time it took me to navigate my career change was much less than the time I've
+spent on puzzle writing in the past.
+I expected to fill that void with more blog writing,
+but that's not what happened. So what filled the void in its place?
 
-...Video games. It was video games. Pardon me, while I go into a quick review:
+Video games. It was video games. A quick review of some of them:
 
-* Hi-Fi Rush starts slow but gets great once you unlock all the battle mechanics.
-It's colorful and joyous, filled with fantastic set pieces.
-* Islands of Insight is...fine? It pitched itself as a puzzle-based MMO, where its
+## Hi-Fi Rush
+
+Hi-Fi Rush starts simple but gets great once you unlock all the battle mechanics and
+get into the rhythm based flow. It's very colorful, never takes itself that seriously,
+and is filled with fantastic set pieces.
+
+## Islands of Insight
+
+Islands of Insight is...fine? It pitched itself as a puzzle-based MMO, where the
 highlight is a huge set of handmade Nikoli logic puzzles in an explorable world.
 The puzzles are good, but the game is poorly optimized, the social MMO aspects
-are pretty minimal, and there's a huge pile of skill trees that feels like it's
-just there to encourage higher engagement, rather than being more fun. I am down
-on a lot of the game, but the puzzles are great.
-* Undertale Yellow is a fantastic fan game, that's been in development for 7 years
+are pretty minimal, and the huge skill tree and unlockables feel like they're just there
+to encourage higher engagement, rather than being more fun. The puzzles are great, the
+rest is just sorta there. If you like puzzles, I had a lot of fun with those.
+
+## Undertale Yellow
+
+Undertale Yellow is a fantastic fan game, that's been in development for 7 years
 and comes out feeling like a canon entry made by Toby Fox. I have small nitpicks
-about the lack of variety in pacifist boss strategies, but the overall package
-works. I would have gladly paid money for this, but it's free, if you liked Undertale
+about the plot and lack of variety in pacifist boss strategies, but the overall package
+works. I would have gladly paid money for this, but it's free. If you liked Undertale
 check it out.
-* Hades 2 came out, which was a great excuse to play Hades 1. I bought Hades 1 three
-years ago and never installed it. I got around to playing it and pushed up to
+
+## Hades 1
+
+I bought the first Hades three
+years ago and never installed it. When Hades 2 went into early access, it was a great excuse
+to play the first one. I pushed up to
 Epilogue, all weapon aspects, and 21 heat before setting it down. At some point, it does get easy to
 fall into the builds you know are overpowered, but that's the fate of every roguelike.
 What Hades 1 does well is make you feel overpowered when you get a good run going - and
 then killing you regardless if you don't respect the bosses enough.
-The part I don't like is how grindy the story progression gets by the end, but most
-players will not reach that point.
-* Incremental games were a mistake, do not recommend.
+I don't like how grindy the story progression gets by the end, where you're just waiting for a character
+to provide a dialogue option, but most players will not reach that point.
+
+## Incremental Games
+
+Incremental games were a mistake, do not recommend.
 If you're unfamiliar with the genre, *Cookie Clicker* is the
 prototypical example. You start with a small number of resources, then achieve
 exponentially larger resources through increasingly complicated progression and
@@ -61,11 +78,11 @@ automation systems. I tried one of the highly recommended ones, and no joke, it 
 up *4 months* of my life. If you are the kind of person who likes theorycrafting
 stat builds to maximize damage throughput, incremental games are a game where
 you only do that. Except, instead of maximizing damage, you're minimizing
-time-to-unlock the next progression layer. I was spending 3 hours a day to get
+time-to-unlock the next progression layer. I was spending 3 hours a day to push
 my game to a state where I could maximize my overnight stat gain. It felt a lot
 like machine learning work, where you try to get everything done so that you can
 let the model train overnight and inspect it next morning. The experience was
-interesting, but it wasn't worth the cost.
+interesting, but I wouldn't go through it again.
 
 
 # Statistics
@@ -95,22 +112,23 @@ These are view counts from August 18, 2023 to today.
 3923  2024-08-06-switching-to-ai-safety.markdown  
 {% endhighlight %}
 
-This continues to be a reminder that my view counts can be heavily driven by who reshares
-things. I expected the AI related posts to be popular, and know they got reshared by
-more prominent people, but the post on [the math of Smash Bros. crew battles]({% post_url 2024-03-23-crew-battle %}) is a big outlier. On a retrospective, I shared it to the Smash subreddit,
-which led to it getting shared on Hacker News, and that's why it has so many views.
+This continues to be a reminder that my view counts are heavily driven by who reshares
+things. I expected the AI related posts to be popular, but the post on
+[the math of Smash Bros. crew battles]({% post_url 2024-03-23-crew-battle %}) is a big outlier.
+I shared it to the Smash subreddit, someone from there shared it to Hacker News, and that's why
+it has so many views. (By the way, I've made some minor edits since that post went live, including
+a proof sketch for the final conjecture. Check it out if you missed it.)
 
-(I can also use this to see that there's a 6% clickthrough rate from my tweet saying
-I was joining an AI safety team to people actually reading the blog.)
+Based on Twitter views, I can also see there's a 6% clickthrough rate from my tweet saying
+I was joining an AI safety team to people actually reading the blog post.
 
 # Posts in Limbo
 
 Is this a good time to confess that I never look back at the list of in-progress posts
-I write each year? I just write up the list, never read it, then go "oh yeah, that idea!" when
-I reread last year's anniversary post.
+I write each year? I just write up the list, never read it, then go "oh yeah, that" when
+I reread my old posts to prepare the next anniversary post.
 
-I'm no longer sure I get any value from sharing half-baked ideas, and may cut this from future
-anniversary posts.
+I'm no longer sure I get any value from sharing half-baked ideas, and may cut this in the future.
 
 **Post about Dominion:**
 
@@ -127,14 +145,14 @@ Odds of writing this year: 20%
 Odds of writing eventually: 60%
 
 One hypothesis of the world is that positive and negative reinforcement plays a much larger
-role in behavior than people think it does. I'm partial to this, because I've been playing
-less Dustforce recently, and this lines up almost exactly with my personal laptop developing sticky
-key issues that make it *just a bit* more annoying to play. Anyways, the game is still great,
-but it's not a game you want to play with a keyboard that eats 5% of your jump inputs at
-random. It's also affected my blogging motivation - imagine trying to write longform text when
+role in behavior than people think it does. I'm partial to this, because I can tell I've played
+less Dustforce recently, almost entirely because of my personal laptop developing sticky
+key issues that make it *just a bit* more annoying to play. The game is still great,
+but it's not a game you want to play with a keyboard that eats 5% of your jumps at random.
+This also affected my blogging motivation. Imagine trying to write longform text when
 your E key randomly sends 0 E presses or 2 E presses each time you touch it.
-So far, blogging has been saved by either writing on work laptop or plugging in an external keyboard.
-Neither of those solutions work for Dustforce, since I'm principled enough to not install it on
+So far, blogging has been saved by either writing on my work laptop or plugging in an external keyboard.
+Neither of those solutions work for Dustforce, since I won't install it on
 my work laptop, and my external keyboards have [key ghosting issues](https://www.microsoft.com/applied-sciences/projects/anti-ghosting-demo).
 
 My personal laptop is getting pretty worn down, and I'm going to need to replace it before I travel
