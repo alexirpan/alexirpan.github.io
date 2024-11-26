@@ -1,18 +1,24 @@
 ---
 layout: post
-title:  "o1 Takes That Are Better Late Than Never"
+title:  "OpenAI o1 Takes That Are Better Late Than Never"
 date:   2024-11-17 11:19:01 -0700
 ---
 
-Before o1 got announced, there were rumors going around that OpenAI's next model would follow
-a fundamentally different paradigm. For once, the rumors live up to the hype. Even now, there isn't
-quite a public model that does things the same way o1 does. But is that important?
+I realize how late this is, but for various reasons, I didn't get a post out while o1 was "fresh",
+and one advantage of cold takes is that you get to see which hot takes have held up.
 
-The big thing that sets o1 apart is its "thinking" or "reasoning" tokens. As explained in the
-[launch post](https://openai.com/index/learning-to-reason-with-llms/), OpenAI o1 is deliberately
-trained to spend time generating long, internal chains of thought before responding. This means
-it takes much longer to generate an answer compared to other models, but it is better able to
-handle complex queries.
+OpenAI o1 is a model release widely believed (but not confirmed) to be a post-trained version
+of the GPT-4o checkpoint. It is directly trained to spend more time generating long, internal
+chains of thought before responding.
+
+Why would you do this? Some questions may fundamentally require more partial work or "thinking time"
+to arrive at the correct answer. This is considered especially true for domains like math and
+automated research. So, if you train a model to specifically use tokens for thinking, it may be able
+to reach a higher ceiling of performance, at the cost of taking longer to generate an answer.
+
+Based on the [launch post](https://openai.com/index/learning-to-reason-with-llms/), system card,
+uses later, etc., this has been the case. OpenAI-o1 is not preferred over typical LLMs on simple
+queries, but is able to solve queries that other models aren't able to do.
 
 
 # The Compute View
@@ -39,11 +45,34 @@ compute at test-time, it can do better than just rolling out an equivalent GPT-4
 
 (CHART SHOWING THAT HERE)
 
-Expect to see more hunting for things like this: modifications that increase the affordances
-of where compute can be pushed into the LLM, and then push compute into those affordances.
+In many ways this is a fundamentally different paradigm from prior models, because it places
+more focus on test-time compute. Is that new paradigm a good one? When
+LLMs first entered public consciousness, one big advantage was how *fast* they generated text that
+a human would have trouble generating. Attention spans tend to only go down. Creating a paradigm
+where you ask users to wait longer is certainly a bold choice.
+
+I think it is an important paradigm shift, but probably not one the average user will appreciate
+or need for some time. You can view o1 as increasing the affordances of where compute can be pushed
+into the LLM. If you believe compute is the bottleneck of LLMs, then you ought to be looking for
+all the places where compute could impact model capabilities, and then push compute into those
+places. Methods that enable using test-time compute better are now just another example of that.
 
 
 # Scaling Laws View
+
+In May 2024, Noam Brown from OpenAI gave a talk at the University of Washington on the power of planning and search algorithms
+in AI, covering his work on expert-level systems playing Texas Hold'em and Diplomacy. Notably,
+most talks in the lecture series have their recordings uploaded within a few days. This one
+was not uploaded until September, after o1's release. The current guess is that Noam or OpenAI
+asked and got a press embargo. If treu, that makes this video especially useful for understanding
+OpenAI o1, and reasoning LLMs in general.
+
+https://www.youtube.com/watch?v=eaAonE58sLU
+
+unlike many talks in the lecture series, the video was not uploaded until several months later
+post o1 release
+
+One of the 
 
 Mentally, I bucket deep learning
 developments into a few eras:
@@ -63,8 +92,7 @@ anymore. Chinchilla laws were derived assuming a fixed compute budget, where you
 evaluate it once. In our current world, a given model will be deployed to millions of users. So instead of
 your eval being negligible, your model inference is now a meaningful fraction of your compute
 budget. Now, at a mechanical level, I don't know what that does to the empirical solutions for model sizing and
-training times. I'm not in pretraining. But I bring it up because it's the kind of optimization you only
-do when you are no longer doing things for science's sake, and have to eke out performance in a real,
-practical compute budget.
+training times. I'm not in pretraining. But I bring it up because it's an example of an idea changing
+the model under which you try to fit your empirical curves.
 
-To me, test-time compute feels similar.
+To me, test-time compute feels similar. Before
