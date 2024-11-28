@@ -64,13 +64,72 @@ In May 2024, Noam Brown from OpenAI gave a talk at the University of Washington 
 in AI, covering his work on expert-level systems playing Texas Hold'em and Diplomacy. Notably,
 most talks in the lecture series have their recordings uploaded within a few days. This one
 was not uploaded until September, after o1's release. The current guess is that Noam or OpenAI
-asked and got a press embargo. If treu, that makes this video especially useful for understanding
+asked and got a press embargo. If true, that makes this video especially useful for understanding
 OpenAI o1, and reasoning LLMs in general.
 
 https://www.youtube.com/watch?v=eaAonE58sLU
 
-unlike many talks in the lecture series, the video was not uploaded until several months later
-post o1 release
+In this talk, Noam mentions an old paper on [Scaling Laws in Board Games](https://arxiv.org/abs/2104.03113). This
+paper was from a hobbyist (Andy Jones), studying scaling laws in toy environments. I remember reading this paper when it came out,
+and I liked it. I then proceeded to not *fully* roll out the implications. Which I suppose is part of why I'm talking about o1 rather
+than building o1.
+
+Among other results, Jones found that there was a log-linear trade-off between train time compute and
+test time compute. To achieve a given fixed Elo target, each 10x of train-time compute could be exchanged for 15x test-time compute.
+(Of course, the best model would use both.)
+
+CHART HERE
+
+This is a nice chart and all, it's a cool relationship. Now let's rescale this such that they both start at 0 instead
+
+CHART
+
+See, if you're going to spend a ton of FLOPS training a model...then allocating 0.0000001% of that budget to running the model
+more at test time to simulate getting 10x more training FLOPS is just totally worth it. Especially if you change this from FLOPS to dollars.
+Compute isn't exactly linear in dollars (there are big fixed costs), but, I would totally pay an extra 1 cent per inference call to save
+$XXX. (Get the real numbers here)
+
+The ratios for real problems are a good deal worse than this (see https://arxiv.org/pdf/2408.03314), but when cast this way,
+it is just so obvious that spending time on search is the correct strategy to max out the performance of an LLM.
+
+But do people actually need that?
+
+# User View
+
+I am not the best at leveraging LLMs for productivity. I tend to underestimate the things I can offload to a model, and
+treat LLMs as a way to get quick lossy answers to certain types of questions, when in reality they are probably less
+lossy than I think they are.
+
+Now, that's relevant because the way I use LLMs is heavily biased to speed. I just want an answer now to stick into my
+existing workflow - I am not trying to get the LLM to do as well as it can without human assistance. And for most of my
+use cases, the leading Gemini / Claude / ChatGPT checkpoints are good enough. I haven't needed the potential power of
+reasoning models yet.
+
+Based on the released stats, this is true in user testing as well, where o1 is only preferred on certain kinds of queries.
+
+CHART
+
+My guess is that the average person doesn't care too much about chasing the absolute frontier of models. They're okay with
+something that's good enough. They would be willing to pay 1 cent less per inference call because they don't need more than that.
+I have no firsthand experience with Character.AI models, but my vague impression was that a lot of users don't need their AI
+characters to have a ton of reasoning power, or ability to do research across many disciplines. They just want good roleplay and
+good conversation - and LLMs crossed that point a while ago. Based on the AMA on the r/chatgpt subreddit, most users just want
+bigger context windows rather than more intelligence.
+
+This ties into a concept from Dario's Machines of Loving Grace essay: that as AI becomes better, we need to think in terms of
+marginal returns on intelligence. There's plenty of domains where the marginal returns flatten out pretty quick!
+
+
+
+CUT CONTENT
+-------------------------------------------------------
+
+This paper 
+
+specifically Hex. This was a toy
+environment where an AlphaZero algorithm was used to train an agent to play games, controlling for
+the amount of compute used to train the policy, and the compute used to do search. 
+
 
 One of the 
 
