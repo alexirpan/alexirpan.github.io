@@ -119,7 +119,13 @@ bigger context windows rather than more intelligence.
 This ties into a concept from Dario's Machines of Loving Grace essay: that as AI becomes better, we need to think in terms of
 marginal returns on intelligence. There's plenty of domains where the marginal returns flatten out pretty quick!
 
+# Safety View
 
+>     We seem to have been given lots of gifts⁠(opens in a new window) relative to what we expected earlier: for example, it seems like creating AGI will require huge amounts of compute and thus the world will know who is working on it, it seems like the original conception of hyper-evolved RL agents competing with each other and evolving intelligence in a way we can’t really observe is less likely than it originally seemed, almost no one predicted we’d make this much progress on pre-trained language models that can learn from the collective preferences and output of humanity, etc.
+
+https://openai.com/index/planning-for-agi-and-beyond/
+
+I am now working on safety, so it feels like my duty to comment on the safety implications.
 
 CUT CONTENT
 -------------------------------------------------------
@@ -155,3 +161,14 @@ training times. I'm not in pretraining. But I bring it up because it's an exampl
 the model under which you try to fit your empirical curves.
 
 To me, test-time compute feels similar. Before
+
+In general, the current models for AI are that an industry company spends a long time training a model, then sells access to run it on their GPUs or TPUs. Meanwhile, a hobbyist can use an open source model running on their local hardware
+if they don't want to trust big companies, want to control everything themselves, etc.
+If test-time computation becomes more necessary to achieving best performance, the rigs needed to run local models may
+become increasingly impractical.
+
+After reflecting on it, I don't think that consideration is too important. The trendline has already been for
+local models to become harder to run.
+
+A refrain common in the safety community is that we don't really understand the process LLMs use to generate tokens. We can describe the loss function, and the distribution over tokens, but we don't have as good a handle on
+the inner computations that lead to those next-token distributions.
