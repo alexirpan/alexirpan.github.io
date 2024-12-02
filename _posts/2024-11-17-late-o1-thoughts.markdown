@@ -121,11 +121,45 @@ marginal returns on intelligence. There's plenty of domains where the marginal r
 
 # Safety View
 
->     We seem to have been given lots of gifts⁠(opens in a new window) relative to what we expected earlier: for example, it seems like creating AGI will require huge amounts of compute and thus the world will know who is working on it, it seems like the original conception of hyper-evolved RL agents competing with each other and evolving intelligence in a way we can’t really observe is less likely than it originally seemed, almost no one predicted we’d make this much progress on pre-trained language models that can learn from the collective preferences and output of humanity, etc.
+Now that I work on an AI Safety team, I feel slightly more qualified to speculate on the safety implications.
 
-https://openai.com/index/planning-for-agi-and-beyond/
+One of the early refrains about LLMs was that they were easier to align than people thought.
+The way they act is a good deal less alien than people expected models of their caliber to be.
 
-I am now working on safety, so it feels like my duty to comment on the safety implications.
+> We seem to have been given lots of [gifts](https://aligned.substack.com/p/alignment-optimism) relative to what we expected earlier: for example, it seems like creating AGI will require huge amounts of compute and thus the world will know who is working on it, it seems like the original conception of hyper-evolved RL agents competing with each other and evolving intelligence in a way we can’t really observe is less likely than it originally seemed, almost no one predicted we’d make this much progress on pre-trained language models that can learn from the collective preferences and output of humanity, etc.
+
+(Footnote from [Planning for AGI and Beyond](https://openai.com/index/planning-for-agi-and-beyond/))
+
+LLMs are not totally aligned, in ways that I think require new developments besides generating better
+input-output pairs. But, let's say you magically had two systems, both at AGI level, both with equal capability, trained
+in two ways:
+
+* A system primarily using supervised learning, then smeared with some RL at the end.
+* A system with a small amount of supervised learning, then large fractions of RL afterward.
+
+I'd say the first system is, like, 5x more likely to be aligned than the second. (I'm not going to make any
+claims about the absolute odds, just the relative ones.) For this post I only need a narrower version of that
+claim: that the first system is much more likely to be *supervisable* than the second. In general, LLM text
+that is more imitative of human text doesn't mean it processes things the same way humans do, but I believe
+it implies greater correlation / similarity to human methods. See
+["The Case for CoT Unfaithfulness is Overstated"](https://www.lesswrong.com/posts/HQyWGE2BummDCc2Cx/the-case-for-cot-unfaithfulness-is-overstated)
+for further thoughts on this line. (Side note: one thing I've learned is that if you work on an AI Safety team,
+links to LessWrong posts will come to you whether or not you actively seek them.)
+
+Whereas if you do RL, then, man who knows, you are putting a lot of faith into the sturdiness of your reward function.
+(Yes I know DPO-style implicit reward functions are the new hotness, I don't think this changes the difficulty of the problem.)
+In my mind the reason a lot of RLHF has worked is because the KL regularization to a supervised learning baseline
+is really effective at keeping things on rails, and so far we've only needed to guide LLMs in shallow ways.
+Basically I broadly agree with the [Andrej Karpathy rant that RLHF is barely RL](https://x.com/karpathy/status/1821277264996352246).
+
+SCREENSHOT OF IT?
+
+So, when I see o1's chain of thought look nothing like human reasoning chains, I get a little worried. Soon
+after release, there were [reports of weird tokens appearing in the summarized chain-of-thought](https://www.reddit.com/r/ChatGPT/comments/1ffdz5g/weird_message_appearing_in_the_thoughts_of/),
+stuff like random pivots into Chinese or Sanskrit, before going back to normal.
+
+https://www.telegraph.co.uk/technology/2017/08/01/facebook-shuts-robots-invent-language/
+
 
 CUT CONTENT
 -------------------------------------------------------
