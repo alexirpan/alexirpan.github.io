@@ -67,9 +67,12 @@ was not uploaded until September, after o1's release. The current guess is that 
 asked and got a press embargo. If true, that makes this video especially useful for understanding
 OpenAI o1, and reasoning LLMs in general.
 
-https://www.youtube.com/watch?v=eaAonE58sLU
+<div class="centered">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eaAonE58sLU?si=2vzeWHTZ3xWRRVx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>(It is uniquely dangerous to link an hour long research talk in the middle of a blog post, because you may watch it instead of reading the rest. It is good though, and desrves a link. Do me a favor, watch it later?)</p>
+</div>
 
-In this talk, Noam mentions an old paper on [Scaling Laws in Board Games](https://arxiv.org/abs/2104.03113). This
+In this, Noam mentions an old paper on [Scaling Laws in Board Games](https://arxiv.org/abs/2104.03113). This
 paper was from a hobbyist (Andy Jones), studying scaling laws in toy environments. I remember reading this paper when it came out,
 and I liked it. I then proceeded to not *fully* roll out the implications. Which I suppose is part of why I'm talking about o1 rather
 than building o1.
@@ -128,7 +131,7 @@ The way they act is a good deal less alien than people expected models of their 
 
 > We seem to have been given lots of [gifts](https://aligned.substack.com/p/alignment-optimism) relative to what we expected earlier: for example, it seems like creating AGI will require huge amounts of compute and thus the world will know who is working on it, it seems like the original conception of hyper-evolved RL agents competing with each other and evolving intelligence in a way we can’t really observe is less likely than it originally seemed, almost no one predicted we’d make this much progress on pre-trained language models that can learn from the collective preferences and output of humanity, etc.
 
-(Footnote from [Planning for AGI and Beyond](https://openai.com/index/planning-for-agi-and-beyond/))
+(Footnote from [Planning for AGI and Beyond](https://openai.com/index/planning-for-agi-and-beyond/), Feb 2023)
 
 LLMs are not totally aligned, in ways that I think require new developments besides generating better
 input-output pairs. But, let's say you magically had two systems, both at AGI level, both with equal capability, trained
@@ -158,7 +161,66 @@ So, when I see o1's chain of thought look nothing like human reasoning chains, I
 after release, there were [reports of weird tokens appearing in the summarized chain-of-thought](https://www.reddit.com/r/ChatGPT/comments/1ffdz5g/weird_message_appearing_in_the_thoughts_of/),
 stuff like random pivots into Chinese or Sanskrit, before going back to normal.
 
+It reminded me of one of the old-school AI scares. Back in 2017, a group from Facebook AI Research
+published a paper on end-to-end negotiation dialogues. Research blog post about it [here](https://engineering.fb.com/2017/06/14/ml-applications/deal-or-no-deal-training-ai-bots-to-negotiate).
+They landed on an item division task. There is a pool of items, to be divided between the two agents. Each agent
+has a different value function on the items, and they need to use natural language to agree on a division.
+To train this, they collected a dataset of human dialogues using Mechanical Turk, trained a supervised learning
+baseline from those dialogues for both agents, then used RL to tune the dialogue to maximize reward. A
+remarkably 2024-style paper, written 7 years ago. Never let anyone tell you language-agents are a new idea.
+
+![MTurk interface](/public/late-o1-thoughts/turker.png)
+{: .centered }
+
+Now, unfortunately no one remembers the paper for this. As part of the paper, the authors noted that
+if they let the agents do RL against each other, they would devolve into outputting garbage text.
+
+![Nonsense text](/public/late-o1-thoguhts/nonsense.png)
+{: .centered }
+
+This made sense: nothing about the reward function encouraged maintaining human readable text, and alternative adversarial RL is notoriously brittle. Eventually, the text diverged from human readability.
+The authors stopped that run and switched to a less aggressive RL strategy instead.
+
+> We gave some AI systems a goal to achieve, which required them to communicate with each other. While they were initially trained to communicate in English, in some initial experiments we only reward them for achieving their goal, not for using good English. This meant that after thousands of conversations with each other, they started using words in ways that people wouldn’t. In some sense, they had a simple language that they could use to communicate with each other, but was hard for people to understand. This was not important or particularly surprising, and in future experiments we used some established techniques to reward them for using English correctly.
+
+Mike Lewis, lead author of the paper
+{: .centered }
+
+Pop science news outlets ran the story as ["Facebook's AI robots shut down after they start talking to each other in their own language"](https://www.independent.co.uk/life-style/facebook-artificial-intelligence-ai-chatbot-new-language-research-openai-google-a7869706.html) and it spread from newspaper to newspaper like wildfire.
+It got so bad that Snopes has an article [debunking these claims](https://www.snopes.com/fact-check/facebook-ai-developed-own-language/). The whole story was very laughable and silly then, and was
+mostly a lesson in what stories go viral rather than anything else.
+
+...I feel it is a bit less silly when o1 does it. Because o1 is a significantly more powerful model,
+with a *much* stronger natural language bias, presumably not trained adversarially. So where are these weird
+codeword-style tokens coming from? What's pushing the RL to *not* use natural language?
+
+> You can tell the RL is done properly when the models cease to speak English in their chain of thought
+
+[(Andrej Karpathy tweet)](https://x.com/karpathy/status/1835561952258723930)
+{: .centered }
+
+One of the things that worries me is that RL and search are, like, uniquely awful at finding holes
+in your evaluation function. It's more of an empirical observation than anything else: that when you
+use enough `max(list_of_choices)`, it's easy for incorrect overestimations to persist throughout
+the process. This makes them powerful but tricky. Powerful because you can give them anything, and
+tricky because they can give you anything back.
+
+In this LLM-driven age, we have so far lived with models that are surprisingly amenable to interpretation.
+I think it's possible this is because we've only done these barely-RL versions of RLHF. So now, with things
+trending towards more RL, maybe we'll lose that. Maybe we lose these "gifts" we observed in the first versions
+of ChatGPT, if things go too far down the evolving RL end, and odds are a lot of people won't care as long as
+the end result looks good.
+
+In Noam's talk, he 
+There is not an easy way to sum up the mindset of safety-conscious people, but one I'd pick is a deep,
+persistent skepticism that it's sufficient to obser
+
+
+They used Mechanical Turk to collect a bunch of 
+
 https://www.telegraph.co.uk/technology/2017/08/01/facebook-shuts-robots-invent-language/
+
+https://arxiv.org/abs/1910.11424
 
 
 CUT CONTENT
