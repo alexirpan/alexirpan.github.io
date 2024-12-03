@@ -207,64 +207,14 @@ tricky because they can give you anything back.
 
 In this LLM-driven age, we have so far lived with models that are surprisingly amenable to interpretation.
 I think it's possible this is because we've only done these barely-RL versions of RLHF. So now, with things
-trending towards more RL, maybe we'll lose that. Maybe we lose these "gifts" we observed in the first versions
+trending towards actual RL, maybe we'll lose that. Maybe we lose these "gifts" we observed in the first versions
 of ChatGPT, if things go too far down the evolving RL end, and odds are a lot of people won't care as long as
 the end result looks good.
 
-In Noam's talk, he 
-There is not an easy way to sum up the mindset of safety-conscious people, but one I'd pick is a deep,
-persistent skepticism that it's sufficient to obser
-
-
-They used Mechanical Turk to collect a bunch of 
-
-https://www.telegraph.co.uk/technology/2017/08/01/facebook-shuts-robots-invent-language/
-
-https://arxiv.org/abs/1910.11424
-
-
-CUT CONTENT
--------------------------------------------------------
-
-This paper 
-
-specifically Hex. This was a toy
-environment where an AlphaZero algorithm was used to train an agent to play games, controlling for
-the amount of compute used to train the policy, and the compute used to do search. 
-
-
-One of the 
-
-Mentally, I bucket deep learning
-developments into a few eras:
-
-1. The Wild West Era, where people just made whatever models they could fit in their GPUs. This
-is where you get ResNet-50. It isn't 50 layers because that's the correct compute-efficient number to pick.
-It's 50 layers because that's a nice round number.
-2. The Early Scaling Laws Era, where people started fitting curves of model performance given a fixed
-parameter, data, or compute budget, but when the models were not doing any useful work. Metrics focused on
-things like the pretraining loss curve, often assuming you were only going to run a model eval once.
-3. The Current Scaling Laws Era, where the models are actually getting used in products, real-world
-usage shapes the scaling research, and people fit curves to as many aspects of the system they can
-reasonably measure.
-
-So, for example: no pretraining team directly follows the Chinchilla recommendations
-anymore. Chinchilla laws were derived assuming a fixed compute budget, where you'd run a long model training run then
-evaluate it once. In our current world, a given model will be deployed to millions of users. So instead of
-your eval being negligible, your model inference is now a meaningful fraction of your compute
-budget. Now, at a mechanical level, I don't know what that does to the empirical solutions for model sizing and
-training times. I'm not in pretraining. But I bring it up because it's an example of an idea changing
-the model under which you try to fit your empirical curves.
-
-To me, test-time compute feels similar. Before
-
-In general, the current models for AI are that an industry company spends a long time training a model, then sells access to run it on their GPUs or TPUs. Meanwhile, a hobbyist can use an open source model running on their local hardware
-if they don't want to trust big companies, want to control everything themselves, etc.
-If test-time computation becomes more necessary to achieving best performance, the rigs needed to run local models may
-become increasingly impractical.
-
-After reflecting on it, I don't think that consideration is too important. The trendline has already been for
-local models to become harder to run.
-
-A refrain common in the safety community is that we don't really understand the process LLMs use to generate tokens. We can describe the loss function, and the distribution over tokens, but we don't have as good a handle on
-the inner computations that lead to those next-token distributions.
+It is too early to declare that will come to pass. But o1 made me feel more likely it could.
+As the field purses better autonomy and AI agents, I'd appreciate if people remembered that methods
+used for benchmark chasing are not alignment-agnostic. I'm not even asking for hard numbers here.
+Just...think about what's more or less likely to promote unintended goals. On any axis, you can
+be positive or negative, but it's usually *really* hard to land on exactly zero, and declaring the
+answer is zero is, in my opinion, another way of saying you don't want to form an opinion.
+That's a totally valid choice to make. Just be clear that you're making it intentionally.
