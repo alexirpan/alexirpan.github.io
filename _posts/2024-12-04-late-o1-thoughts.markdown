@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Late Takes on OpenAI o1"
+title:  "OpenAI o1 Takes That Are Better Late Than Never"
 date:   2024-12-04 09:58:01 -0700
 ---
 
