@@ -4,8 +4,7 @@ title:  "OpenAI o1 Takes That Are Better Late Than Never"
 date:   2024-11-17 11:19:01 -0700
 ---
 
-I realize how late this is, but I didn't get a post out while o1 was fresh, and still feel like writing one despite
-it being cold. One advantage of cold takes is that you get to see how the hot takes have aged.
+I realize how late this is, but I didn't get a post out while o1 was fresh, and still feel like writing one despite it being cold. (Also, [OpenAI just announced they're going to ship new stuff starting tomorrow](https://x.com/openai/status/1864328928267259941) so it's now or never to say something.)
 
 OpenAI o1 is a model release widely believed (but not confirmed) to be a post-trained version
 of GPT-4o. It is directly trained to spend more time generating and exploring long, internal
@@ -37,8 +36,8 @@ were viewed as a thing you used if you had too much compute and didn't know what
 I think this view is a bit too simple. The [Switch Transformers paper](https://arxiv.org/abs/2101.03961)
 showed MoE models had different scaling properties and could be more compute efficient.
 But, broadly, I'd say this is true. If you think of compute as water filling a bowl, mixture
-models are a way to add a dimension to how you store water. Instead of building a bigger bowl, just
-use more bowls!
+models are a way to add a dimension to how you store water. The argument for them is that
+instead of building a bigger bowl, you should just use more bowls.
 
 o1 feels similar to me. The analogy stops working here, but the dimension is the amount of compute
 you use at test-time - how many response tokens you generate for each user query. One way to describe o1 is that it may not be as good if you gave it the same 1-shot budget as a standard LLM, but
@@ -63,17 +62,16 @@ OpenAI o1.
 
 <div class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eaAonE58sLU?si=2vzeWHTZ3xWRRVx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<p>(It is uniquely dangerous to link an hour long research talk in the middle of a blog post, because you may watch it instead of reading the rest. It is good though, and desrves a link. Do me a favor, watch it later?)</p>
+<p>(It is uniquely dangerous to link an hour-long research talk in the middle of a blog post, because you may watch it instead of reading the post. It is good though. Do me a favor, watch it later?)</p>
 </div>
 
 In this talk, Noam mentions an old paper on [Scaling Laws in Board Games](https://arxiv.org/abs/2104.03113). This
 paper was from a hobbyist (Andy Jones), studying scaling laws in toy environments. I remember reading this paper when it came out,
 and I liked it. I then proceeded to not *fully* roll out the implications. Which I suppose is part of why I'm talking about o1 rather than building o1.
 
-> I think looking back, it's really easy now to say, like, well, why didn't people work on planning
-> in poker before? I mean, clearly, it was such a huge win. And I think it's really hard to put yourself in the mindset of - everything's obvious in retrospect. But at the time, it was not obvious this would work so well.
+> I think it's really hard to put yourself in the mindset of - everything's obvious in retrospect. But at the time, it was not obvious this would work so well.
 
-(Noam on why it took so long for computers to beat human pros at Texas Hold'Em)
+(Noam on computer poker, and other planning-based methods.)
 {: .centered }
 
 Among other results, the board games scaling law paper found a log-linear trade-off between train time compute and
@@ -92,8 +90,8 @@ exactly linear in dollars (there are big fixed costs), but it's approximately li
 See, there's a 10^8 difference between the two axes. It's like asking for a million dollars in training when you could spend 1 more cent per inference call instead. It's just so obviously worth it to
 do more test-time compute instead of pushing up a log curve.
 
-The plot above is an ideal case, where you have a ground truth objective function. Two-player perfect information games have been known to be especially amenable to search for decades. Once you move to real, messier problems, the conversion factors are significantly worse.
-But, in the face of something that's literally millions of times cheaper...you should at least check how true that is for your use case, right?
+The plot above is an ideal case, where you have a ground truth objective function. Two-player perfect information games have been known to be especially amenable to search for decades. Once you move to real, messier problems, the conversion factors are worse, I suspect by several orders of magnitude.
+But, in the face of something that's literally millions of times cheaper...you should at least check how much worse it is for your use case, right?
 
 Any researcher who believes in scaling but has not already poked at this after o1's release is not a serious person.
 
@@ -103,7 +101,7 @@ Any researcher who believes in scaling but has not already poked at this after o
 The paradigm of more test-time compute is new, but is it good?
 Do people actually need what o1 provides?
 
-I read through the AMA with OpenAI executives on [r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1ggixzy/ama_with_openais_sam_altman_kevin_weil_srinivas/),
+I read through a recent AMA with OpenAI executives on [r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1ggixzy/ama_with_openais_sam_altman_kevin_weil_srinivas/),
 and it struck me how much people didn't really ask about benchmarks. Most questions were
 about context windows, better image support, opening access to Sora, and more.
 I have no firsthand experience with Character.AI models, but my vague impression was that a lot of their users are similar. They don't need their AI
@@ -112,7 +110,7 @@ characters to have a ton of reasoning power, or ability to do research across ma
 Only weirdos care about how smart the models are. Most people just want new features and
 nicer UX.
 
-This is a bit reductive, because a lot of existing features come *from* how smart the models are,
+This is very reductive, because a lot of features come *from* how smart the models are,
 but I feel it's still an important perspective.
 When LLMs first entered public consciousness, one big selling point was how *fast* they generated text that
 a human would have trouble generating. People marveled at essays and code written in seconds,
@@ -123,8 +121,8 @@ where you ask users to wait longer is certainly a bold choice.
 That said, it's not *that* much slower. Inference has come a long way since 2023, and I think people
 will normalize to the longer response times if they have questions that are at the frontier of
 model capabilities.
-I'm personally pretty bad at leveraging LLMs for productivity (my mental models for what questions
-are worth asking is about 6 months out of date), so I'm often not at the frontier and asking questions that could have been answered by like, ChatGPT-3.5.
+I'm personally pretty bad at leveraging LLMs for productivity (my mental model for what questions
+are worth asking is about 6 months out of date), so I'm often not at the frontier and asking questions that could have been answered by weaker and faster models.
 
 This ties into a concept from Dario's [Machines of Loving Grace](https://darioamodei.com/machines-of-loving-grace) essay: that as AI becomes better, we need to think in terms of
 marginal returns on intelligence. AI labs are incentivized to find domains where the marginal returns are high. I think those domains exist (research comes to mind), but there's plenty of domains where the marginal returns flatten out pretty quick!
@@ -142,8 +140,8 @@ The way they act is somewhat alien, but not as alien as they could be.
 (Footnote from [Planning for AGI and Beyond](https://openai.com/index/planning-for-agi-and-beyond/), Feb 2023)
 {: .centered }
 
-Alignment is not solved (that is why I'm on a safety team now), but some things have been
-surprisingly fine. Let's extend this gifts line of thought.
+Alignment is not solved (that's why I'm working on safety), but some things have been
+surprisingly fine. Let's extend this "gifts" line of thought.
 Say you magically had two systems, both at AGI level, with equal capability, trained
 in two ways:
 
@@ -154,16 +152,16 @@ I'd say the first system is, like, 5x-50x more likely to be aligned than the sec
 claims about the absolute odds, just the relative ones.) For this post I only need a narrower version of that
 claim: that the first system is much more likely to be *supervisable* than the second. In general, LLM text
 that is more imitative of human text doesn't mean it processes things the same way humans do, but I'd
-believe it's more correlated or similar to human methods. See
+believe it's more correlated or similar to human decision making. See
 ["The Case for CoT Unfaithfulness is Overstated"](https://www.lesswrong.com/posts/HQyWGE2BummDCc2Cx/the-case-for-cot-unfaithfulness-is-overstated)
 for further thoughts on this line. Chain-of-thoughts can be fake, but right now they're not too
 fake.
 
-In contrast, if your system is mostly  RL based, then, man, who knows. You are putting a lot of faith into the sturdiness of your reward function.
+In contrast, if your system is mostly  RL based, then, man, who knows. You are putting a lot of faith into the sturdiness of your reward function and your data fully specifying your intentions.
 (Yes I know DPO-style implicit reward functions are a thing, I don't think they change the difficulty of the problem.)
 In my mind, the reason a lot of RLHF has worked is because the KL regularization to a supervised learning baseline
 is really effective at keeping things on rails, and so far we've only needed to guide LLMs in shallow ways.
-Basically I broadly agree with the [Andrej Karpathy rant that RLHF is barely RL](https://x.com/karpathy/status/1821277264996352246).
+I broadly agree with the [Andrej Karpathy rant that RLHF is barely RL](https://x.com/karpathy/status/1821277264996352246).
 
 So, although o1 is exciting, I find it exciting in a slightly worrying way.
 This was exacerbated after anecdotal [reports of weird tokens appearing in the summarized chain-of-thought](https://www.reddit.com/r/ChatGPT/comments/1ffdz5g/weird_message_appearing_in_the_thoughts_of/),
@@ -174,16 +172,16 @@ stuff like random pivots into Chinese or Sanskrit.
 
 It was all reminiscent of an old AI scare. In 2017, a group from Facebook AI Research
 published a paper on end-to-end negotiation dialogues. (Research blog post [here](https://engineering.fb.com/2017/06/14/ml-applications/deal-or-no-deal-training-ai-bots-to-negotiate).)
-They landed on an item division task. There is a pool of items, to be divided between the two agents. Each agent
+To study this, they used an item division task. There is a pool of items, to be divided between the two agents. Each agent
 has a different, hidden value function on the items. They need to negotiate using natural language to agree on a division of the items.
-To train this, they collected a dataset of human dialogues using Mechanical Turk in the same scenario, trained a supervised learning
-baseline from those dialogues, then used RL to tune the dialogues to maximize reward. A
+To train this, they collected a dataset of human dialogues using Mechanical Turk, trained a supervised learning
+baseline from those dialogues, then used RL to tune the dialogues to maximize reward of the hidden value function. A
 remarkably 2024-style paper, written 7 years ago. Never let anyone tell you language-agents are a new idea.
 
 ![MTurk interface](/public/late-o1-thoughts/turker.png)
 {: .centered }
 
-Unfortunately no one remembers this paper for behind ahead of the times. As part of the paper,
+Unfortunately no one remembers this paper for being ahead of its time. As part of the paper,
 the authors noted found that letting the agents do RL against each other too much would
 devolve into garbage text.
 
@@ -195,11 +193,18 @@ The authors stopped that run and switched to a less aggressive RL strategy.
 
 > We gave some AI systems a goal to achieve, which required them to communicate with each other. While they were initially trained to communicate in English, in some initial experiments we only reward them for achieving their goal, not for using good English. This meant that after thousands of conversations with each other, they started using words in ways that people wouldn’t. In some sense, they had a simple language that they could use to communicate with each other, but was hard for people to understand. This was not important or particularly surprising, and in future experiments we used some established techniques to reward them for using English correctly.
 
-Mike Lewis, lead author of the paper
+(Mike Lewis, lead author of the paper)
 {: .centered }
 
 Pop science news outlets ran the story as ["Facebook's AI robots shut down after they start talking to each other in their own language"](https://www.independent.co.uk/life-style/facebook-artificial-intelligence-ai-chatbot-new-language-research-openai-google-a7869706.html) and it spread from newspaper to newspaper like wildfire.
-It got so bad that Snopes has an article [debunking these claims](https://www.snopes.com/fact-check/facebook-ai-developed-own-language/). The whole story was very laughable and silly then, and was
+
+![Headline](/public/late-o1-thoughts/headline.png)
+{: .centered }
+
+(One of many, many headlines.)
+{: .centered }
+
+It got so bad that there are multiple counter-articles debunking it, including one from [Snopes](https://www.snopes.com/fact-check/facebook-ai-developed-own-language/). The whole story was very laughable and silly then, and was
 mostly a lesson in what stories go viral rather than anything else.
 
 I feel it's less silly when o1 does it. Because o1 is a significantly more powerful model,
@@ -217,18 +222,18 @@ One theory of language is that its structure is driven by the limitations of our
 {: .centered }
 
 In this example, suppose you wanted to communicate a specific object, like "red circle". There are
-two constraints: how many bits it takes to communicate a message, and how much memory you have.
-One choice is to ignore the structure, treat every object as disconnected and store 25 different concepts in your head. For the sake of an example, let's say these mapped to letters A, B, C, D, ..., Y.
-You can use a single letter to describe an object, as long as you remember the meanings of 25 words.
+two constraints: how much memory you have for concepts, and how much bandwidth you have to communicate a message.
+One choice is to ignore the structure, treat every object as disconnected, and store 25 different concepts. For the sake of an example, let's say those concepts map to letters A, B, C, D, ..., Y.
+To communicate an object, you only need to use 1 letter.
 
-Alternatively, you could remember 10 concepts: 5 for the colors, and 5 for the shapes. Let's say colors are A, B, C, D, E and shapes are 1, 2, 3, 4, 5. Now our memory requirements are lower, we only
-need to know 10 words. But we now have to a letter and a number (like A3 or D2) to specify a space.
-We need to communicate more to make up for the decreased memory. There is a fundamental tradeoff between the two.
+What if we can't remember 25 things? We can alternatively remember 10 concepts: 5 for the colors, and 5 for the shapes. Let's say colors are A, B, C, D, E and shapes are 1, 2, 3, 4, 5. Now our memory requirements are lower, we only
+need to know 10 things. But our communication needs are higher: we have to use 1 letter + 1 number to specify an object.
+There's the fundamental tradeoff between memory and bandwidth.
 
 o1 is incentivized to get all its thinking done within the thinking budget.
-That means compressing information into fewer tokens. The speculation (again, this is specualtion) is that the RL is doing its job properly, responding to the pressure to encode information, and that
-occasionally leads to weird, less human-readable chains of thought. Which isn't great for
-auditing or supervision!
+That means compressing information into fewer tokens. The speculation (again, this is speculation) is that the RL is doing its job properly, responding to the pressure for conciseness, and that
+occasionally causes encoding of information into strings outside human readability.
+Which isn't great for auditing or supervision!
 
 RL and search are uniquely awful at learning the wrong goal, or finding holes in evaluation functions. They are necessary tools, but the tools have sharp edges.
 They are powerful because you can give them anything, and they're tricky
@@ -240,11 +245,11 @@ trending towards actual RL, maybe we'll lose that. Maybe we lose these "gifts" w
 of ChatGPT. That would suck a lot!
 
 It is too early to declare that will come to pass. But o1 made me feel more likely it could.
-As the field purses better autonomy and AI agents, I'd appreciate if people remembered that methods
+As the field pursues better autonomy and AI agents, I'd appreciate if people remembered that methods
 used for benchmark chasing are not alignment-agnostic.
 On any axis, you can be positive or negative, but it's *really* hard to land on exactly zero.
 Declaring the answer is zero is usually just a shorthand of saying you don't want to spend effort
 on figuring out the direction. That's a totally valid choice! In other contexts, I make it all
 the time. I just think that when it comes to alignment, it'd be nice if people thought about
-whether their work would make alignment harder or easier ahead of time. If your plan is to make
-models for the AI safety teams to align, please be considerate when you make our lives harder.
+whether their work would make alignment harder or easier ahead of time. If your plan is to let
+the AI safety teams handle it, please be considerate when you make our lives harder.
