@@ -227,7 +227,7 @@ One choice is to ignore the structure, treat every object as disconnected, and s
 To communicate an object, you only need to use 1 letter.
 
 What if we can't remember 25 things? We can alternatively remember 10 concepts: 5 for the colors, and 5 for the shapes. Let's say colors are A, B, C, D, E and shapes are 1, 2, 3, 4, 5. Now our memory requirements are lower, we only
-need to know 10 things. But our communication needs are higher: we have to use 1 letter + 1 number to specify an object.
+need to know 10 things. But our communication needs to specify an object are higher. We have to 2 pieces, a letter and a number.
 There's the fundamental tradeoff between memory and bandwidth.
 
 o1 is incentivized to get all its thinking done within the thinking budget.
