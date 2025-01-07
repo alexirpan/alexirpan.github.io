@@ -8,20 +8,23 @@ I have blogged about Neopets before, but a quick refresher: Neopets is a web gam
 from the early 2000s, which is still around today, with a small audience of millennials
 who remember playing the game from childhood. It's a bit tricky to sum up the appeal of
 Neopets, but I like the combination of Web 1.0 nostalgia and long-running progression systems.
-
-To expand on the latter, there are a ton of intersecting achievement tracks you can go for,
+There are a ton of intersecting achievement tracks you can go for,
 some of which are exceedingly hard to 100%. There's books, pet training, stamp collecting,
-rare foods, Kadoaties, and more, but the one I've been chasing the past few years is avatars.
+rare foods, Kadoaties, and more.
 
-Neopets has its own onsite forum, the Neoboards, where you can pick among a list of unlockable
-avatars. But really, it's most important for "number goes up" reasons. They're a quantification of how
-much investment you've put into Neopets, and in my opinion, avatars are the best one to chase
-because they cover a wide cross-section of the site. There's a reason they get listed first in your
+The one I've been chasing the past few years is avatars.
+Neopets has an onsite forum called the Neoboards, but you aren't allowed to use custom avatars due to
+moderation reasons. So instead, you can only use avatars that have been created by TNT. Some are free
+but most have unlock requirements. The number of avatars someone has is a quantification of how
+much investment they've put into Neopets.
+In my opinion, avatars are the best achievement track to chase, because their unlocks cover the widest
+cross-section of the site. To get all the avatars, you'll need to do site events, collect stamps, play
+games, do dailies, and more. There's a reason they get listed first in your
 profile summary!
 
 IMAGE
 
-Avatars start easy, but can quickly become fiendishly difficult. To give a sense of how far they can go, let me
+Avatars start easy, but can become fiendishly difficult. To give a sense of how far they can go, let me
 quote a post I wrote before.
 
 > The Hidden Tower Grimoires are books, and unlike the other Hidden Tower
@@ -44,152 +47,207 @@ quote a post I wrote before.
 > Grimoire for the avatar is just pure conspicuous consumption. [...] They target the
 > top 1% by creating a new status symbol.
 
-I don't consider myself the Neopets top 1%, but since writing that post, I've bought
-all 3 Hidden Tower books just for the avatars...so yeah, they got me.
+I don't consider myself the Neopets top 1%, but since writing that post, I've bought all 3 Hidden Tower
+books just to get the avatars...so yeah, they got me.
 
-Although some avatars are literally pay-to-win, many of them are not. The main ones I've
-been chasing recently are the game avatars. Each one has the same format: "get at least X points in this game".
-The thresholds were picked 15-20 years ago, and some of them are ruthless.
+Avatars can be divided by category, and one big category is Flash games. These avatars all have the same
+format: "get at least X points in this game." Most of their thresholds are *evil*, picked based on high-score tables
+from 15-20 years ago, and require a mix of mastery and luck to achieve.
 
-However, one I've always had an eye on is the Destruct-o-Match avatar.
+Of these avatars, I've been trying to get the Destruct-o-Match avatar for a long time.
 
-IMAGE
+![Destruct o match avatar](/public/destruct-o-match/dom_ava.gif)
+{: .centered }
 
-I played this game a lot as a kid, and genuinely like it as a game. In Destruct-o-Match, you're given
-a grid of blocks, and can clear any group of 2 or more connected blocks of the same color. Each time you
-do, the rest of the blocks fall down. Your goal is to clear as many blocks as you can, earning points for
-the size of the groups you clear and how many singleton blocks you have left when you finish the level.
+I played this a lot as a kid, and genuinely like it as a game. Destruct-o-Match is a block clearing game.
+Given a starting grid, you can clear any group of 2 or more connected blocks of the same color. Each time
+you do so, every other block falls according to gravity. Your goal is to clear as many blocks as possible.
+You earn more points for clearing large groups at once, and having fewer blocks leftover when you run out
+of moves.
 
 IMAGE?
 
-My best score as a kid was XXXX points. The avatar score is 2500.
+My best score as a kid was 1198 points. The avatar score is 2500.
 
 Part of the reason this has always been a white whale for me is that there's no timer on the game and
 it's almost entirely deterministic. You could, in theory, figure out the optimal sequence of moves for each
-level to maximize your score. Actually doing so would take forever, but you *could*.
+level to maximize your score. Actually doing so would take forever, but you *could*. There's RNG in the starting
+layout, but there's also a heavy skill component.
 
-Fast forward to current year, and Destruct-o-Match starts looking like an ideal application of game AI.
-If we can be superhuman at chess and Go, surely we can get to sort-of-expert level in this much simpler
-game if we try.
+Now that I'm an adult with AI experience, Destruct-o-Match starts looking like an ideal place to use game AI.
+It is a turn based game, with no time pressure, and no randomness. That puts it in the camp of games like Chess
+and Go, which we know AI is superhuman at. Surely we can get to sort-of-expert level in the much simpler game
+of Destruct-o-Match if we try?
 
-This is the story of the attempt to write a Destruct-o-Match game AI.
+This is the story of me trying.
+
+(Note: I assume some people reading this will know AI but not Neopets, and some will know Neopets but not AI,
+so I will be explaining in greater detail than usual.)
 
 
-Step 0: Is This Against Neopets Rules?
+Step 0: Is Making a Destruct-o-Match AI Against Neopets Rules?
 -------------------------------------------------------------------------------
 
-There's a bit of gray area for what tools are allowed on Neopets, and which ones are considered cheating.
+There's a gray area for what tools are allowed on Neopets.
 *In general*, any bot or browser extension that does game actions or browser requests for you is 100% cheating.
-Things that are quality-of-life improvements are mostly fine. Anything in-between that's considered game
-assistance is against the rules, but what counts as "assitance" is hard to define.
+Things that are quality-of-life improvements are mostly fine. Anything in-between may cross the line from quality-of-life
+to excessive game assistance, but the line is hard to define.
 
-For Destruct-o-Match at least, I believe I'm in the clear. There is a long precedent of off-site tools
-being allowed for Flash games. The anagram solver for [Castle of Eliv Thade](https://www.jellyneo.net/?go=castle_of_eliv_thade#:~:text=Anagram Solver)
-is considered legal. The [Mysterious Negg Cave Puzzle Solver](https://thedailyneopets.com/articles/negg-solver) is
-also fine, along with using a Sudoku solver to get fast [Roodoku](https://www.jellyneo.net/?go=roodoku) times.
-So I can't make a bot that will interact with the browser for me, but it should be kosher for me to transcribe
-the game state to the AI, have it recommend a move, then relay the click myself.
+For Destruct-o-Match, I believe it is okay to make an AI. There is a long precedent of off-site tools
+being allowed for Flash games. Solvers exist for a number of existing games, such as an anagram solver for
+[Castle of Eliv Thade](https://www.jellyneo.net/?go=castle_of_eliv_thade#:~:text=Anagram Solver),
+Sudoku solvers for [Roodoku](https://www.jellyneo.net/?go=roodoku), and a [Mysterious Negg Cave Puzzle Solver](https://thedailyneopets.com/articles/negg-solver)
+if you cannot solve that puzzle. None of these solvers input things into the game for you, but they are all
+considered fair game.
+
+This means I can't make a bot that will click things in game for me, but I can write an AI that recommends
+moves, and enter those moves manually.
 
 
 Step 1: Rules Engine
 ------------------------------------------------------------------------------
 
-Like many AI applications, the AI is the easy part, and engineering everything around it is the hard part. To
-write a game AI, we first need to implement the rules of the game in code. For doing this, we'll be using the
-HTML5 version of the game, since it's easier to get a higher score in that version.
+Like most AI applications, the AI is the easy part, and engineering everything around it is the hard part. To
+write a game AI, we first need to implement the rules of the game in code. We'll be implementing the HTML5
+version of the game, since it has a few changes from the Flash version that make it much easier to get a high
+score. The most important one is that you can earn points in Zen Mode, which lets you always play to the end,
+rather than causing a Game Over if you don't get enough points.
 
-Any game environment is typically
-divided into 4 pieces: the state, the possible actions, the reward for each action, and the future state if
-each action is taken.
+Most games can be described as a **Markov decision process (MDP)**. A Markov decision process is made of 4
+components:
 
-In Destruct-o-Match, the state is the color of each block. The possible actions are the different groups
-of matching color. The reward is how many points are earned for clearing that group, and the future state is
-where the blocks will be after that group is removed and the remaining blocks fall.
+* The state space, covering all possible states of the game.
+* The action space, covering all possible actions from a given state.
+* The transition dynamics. Given a state and an action, what is our next state?
+* The reward, how much we get rewarded for taking an action. We assume that reward depends only on the current state and action.
 
-The core logic of finding the possible actions can be done by repeatedly
-applying the [flood-fill](https://en.wikipedia.org/wiki/Flood_fill) algorithm, to partition the board into
-different pieces of matching color. The run time is linear in the number of vertices and edges, and for a 2D
-grid that's the same as the number of total squares. However, it's not quite that simple, thanks to one part
-of Destruct-o-Match: powerups.
+Translating Destruct-o-Match in these terms,
 
-During the game, random power-ups can appear in the grid. These affect scoring, so it's important to model
-them accurately. Going through them in order:
+* The state space is the shape of the grid and the color of each block in that grid.
+* The possible actions are the different groups of matching color.
+* The transition dynamics are where blocks will be after removing a group and applying gravity.
+* The reward is the number of points the removed group is worth, and the end score bonus if no more moves are possible.
 
-(Add images here?)
+The reward is the easiest, and follows this scoring table.
 
-* The *Timer* Boulder counts down from 15 seconds, and becomes unclearable if not removed before then.
-* The *Fill* Boulder will add an extra line of blocks on top when cleared. This introduces randomness, because we
-don't know what blocks will be added until we clear it.
-* The *Explode* Boulder is its own color, but can always be clicked. When clicked, it removes all adjacent boulders, including diagonally adjacent.
-* The *Overkill* Boulder destroys all boulder of matching color when cleared, but only providing points for the boulders in the group containing the Overkill.
-* The *Multiplier* Boulder multiples the score of the group it's in by 3x.
-* The *Morph* Boulder switches between boulder colors every few seconds.
-* The *Wild* Boulder matches any color. In the game, when you click a boulder, it highlights the group of
-connected boulders of matching color. A Wild boulder is never clickable, but is highlighted if you click any of
-its neighbors. (IMAGE?)
-* The *Shuffle* Boulder gives you a one-shot use to shuffle boulders randomly. The shape will stay the same,
-but the colors will be rearranged among them. This is most useful when you're near the end of a level, have cleared
-almost all blocks, and figure a random point will be worth more points than what you have left.
-You can save up to 1 Shuffle usage and it carries over across levels. (IMAGE?)
-* The *Undo* Boulder gives a one-shot use to undo the last move you made, as long as that move did not involve
-a power-up. (Unique to the HTML5 version, you keep points if you undo a move, so you can earn extra points by
-constructing a high-scoring move, then undoing it and doing it again.) You can save up to 1 Undo and it carries
-over across levels.
+| Boulders Cleared | Points per Boulder | Bonus Points |
+|------------------|--------------------|--------------|
+| 2-4              | 1                  | -            |
+| 5-6              | 1                  | 1            |
+| 7                | 1                  | 2            |
+| 8-9              | 1                  | 3            |
+| 10               | 1                  | 4            |
+| 11               | 1                  | 6            |
+| 12-13            | 1                  | 7            |
+| 14               | 1                  | 8            |
+| 15               | 1                  | 9            |
+| 16+              | 2                  | -            |
 
-To simplify the game and keep the game fully deterministic, I decided to ignore Timer, Fill, Shuffle, and Undo
-in my implementation of the game. Ignoring Timer lets me ignore time pressure. Ignoring Fill and Shuffle lets me
-ignore randomness, since those are the only two powers that involve RNG. Undos could be handled, but requires
-maintaining state on the previous action taken and whether an Undo is available, which is more complexity than
-I wanted to deal with.
+The end level bonus is 100 points, minus 10 points for every leftover boulder.
 
-Ignoring all those power-ups is fine, because when I play the game for real, I can simply clear the Timer and Fill blocks
-on my own, then delegate back to the AI. As for shuffles and undos, I still plan to use them, because they help earn more
-points, but I'll use them according to my own judgment. This simplification means my AI will be earning fewer points than
-it could, but that's fine. Remember, we're not targeting perfect play, we're targeting "good enough" play to hit the avatar score.
+| Boulders Remaining | Bonus Points |
+|------------------|--------------------|
+| 0              | 100 |
+| 1              | 90 |
+| 2              | 80 |
+| 3              | 70 |
+| 4              | 60 |
+| 5              | 50 |
+| 6              | 40 |
+| 7              | 30 |
+| 8       | 20 |
+| 9              | 10 |
+| 10+              | 0 |
 
-With these powers removed, there are still some small details to handle for the flood-fill. Consider the overkill powerup.
+Gravity is also not too hard to implement. The most complicated and expensive logic is on identifying the possible
+actions. To identify the groups of connected colors, we can repeatedly
+apply the [flood-fill](https://en.wikipedia.org/wiki/Flood_fill) algorithm, until all boulders are grouped.
+This runs in time proportional to the size of the board. However, it's not quite that simple, thanks to one important
+part of Destruct-o-Match: powerups.
 
-Overkill
+## Powerups
 
-If I click the group with the Overkill powerup, it will remove other disconnected blocks. But if I click those blocks,
-it won't clear the Overkill group. So, for every group we identify via flood-fill, we need to track an *also-removed* set,
-for blocks that aren't connected but will be removed if this action is taken. This is enough to capture the Explode case too.
-We also need to support single blocks being part of multiple different groups, thanks to how Wilds work.
+Powerups are very important to scoring in Destruct-o-Match, so we need to model them accurately. Going through them
+in order:
 
-For the reward, we can use two tables from JellyNeo, the one for points per group size, and the one for end scoring.
 
-TABLES
+<table>
+<tr>
+<td><img src="/public/destruct-o-match/dom3_boulder_timer.jpg"/></td>
+<td>The <strong>Timer</strong> Boulder counts down from 15 seconds, and becomes unclearable if not removed before then.</td>
+</tr>
+<tr>
+<td><img src="/public/destruct-o-match/dom3_boulder_fill.jpg"/></td>
+<td>The <strong>Fill</strong> Boulder will add an extra line of blocks on top when cleared.</td>
+</tr>
+<tr>
+<td><img src="/public/destruct-o-match/dom3_boulder_explode.jpg"/></td>
+<td>The <strong>Explode</strong> Boulder is its own color and is always a valid move. When clicked, it and all adjacent boulders (including diagonals) are removed, scoring no points.</td>
+</tr>
+<tr>
+<td><img src="/public/destruct-o-match/dom3_boulder_overkill.jpg"/></td>
+<td>The <strong>Overkill</strong> Boulder destroys all boulder of matching color when cleared, but you only get points for the group containing the Overkill.</td>
+</tr>
+<tr>
+<td><img src="/public/destruct-o-match/dom3_boulder_multiplier.jpg"/></td>
+<td>The <strong>Multiplier</strong> Boulder multiples the score of the group it's in by 3x.</td>
+</tr>
+<tr>
+<td><img src="/public/destruct-o-match/dom3_boulder_morph.jpg"/></td>
+<td>The <strong>Morph</strong> Boulder cycles between boulder colors every few seconds.</td>
+</tr>
+<tr>
+<td><img src="/public/destruct-o-match/dom3_boulder_wildcard.jpg"/></td>
+<td>The <strong>Wild</strong> Boulder matches any color, meaning it can be part of multiple valid moves.</td>
+</tr>
+<tr>
+<td><img src="/public/destruct-o-match/dom3_boulder_shuffle.jpg"/></td>
+<td>The <strong>Shuffle</strong> Boulder gives a one-shot use of shuffling boulder colors randomly. The grid shape will stay fixed. You can bank 1 shuffle use at a time, and it carries across levels.</td>
+</tr>
+<tr>
+<td><img src="/public/destruct-o-match/dom3_boulder_undo.jpg"/></td>
+<td>
+The <strong>Undo</strong> Boulder gives a one-shot use of undoing your last move, as long as it did not involve a power-up. Similar to shuffles, you can bank 1 use at a time and it carries across levels. Unique to the HTML5 version, you keep all points from the undone move,
+so you want to build up a large group of boulders, clear it for a bunch of points, then undo it so you can clear it again.
+</td>
+</tr>
+</table>
 
-You get more points if you assemble bigger groups, and every block you fail to clear costs you 10 points at the end (up to a limit
-of 10 penalities.) Ideally you both form large groups and clear every block to get the 100 bonus, but that may not be possible.
+We can keep the game simpler by ignoring the Shuffle and Undo powerups. These are worth points, but Shuffle would require implementing randomness, which tends to be harder for AI to handle, and Undo requires maintaining whether we have access to an undo across levels, which I'd rather not do so that we can optimize each level independently. I can use
+these powerups manually when I think they're worth it.
+Remember, we're not targeting perfect play, we're targeting "good enough" play to hit the avatar score, so introducing some slack is okay if we make up for it later.
 
-Finally, the block falling is pretty straightforward. Each column falls on its own, and if any column is now empty, the columns
-slide together to fill the extra space.
+Then, to avoid introducing time pressure, we can ignore the Timer powerup, as long as we commit to
+immediately removing the Timer Boulder before inputting the state into the AI. Similarly, we can ignore the Fill powerup if we commit to immediately removing it as well, which lets us avoid randomness in what blocks get added.
+
+This leaves Explode, Overkill, Multiplier, Morph, and Wild. Morph can be treated as identical to Wild, as long as we wait long enough for the Morph boulder to become whatever color we want it to be.
+So we only have to implement 4 powerups. The complexity these powers add is that after identifying
+a connected group, we may remove boulders outside that group. A group of blue boulders with an Overkill needs to remove every other blue boulder. So, for every group identified via flood-fill, we also
+need to track an "also-removed" set. (There were then a lot of annoying edge-cases, of which my favorite was bugs that occurred only when two Explode blocks were next to each other.)
+
+With that, we're done with the rules engine!
+
+...Almost done.
 
 
 Step 2: Initial State
 -----------------------------------------------------------------------------------------------------
 
-The rules engine is now complete. However, there's one important bit of randomness that I can't pretend does not exist: the
-initial distribution of powerup boulders.
+Although I tried to remove all randomness, one source of randomness I can't ignore is how powerups are initially distributed.
 
-Powerups are *critical* to achieving high scoring runs, so I want to model them accurately, but I couldn't find any information
-about them on the fan sites. So I did what any reasonable person would do, and made a spreadsheet of power-up appearances over
-50 levels I played myself.
+Of the powerups, the Multiplier Boulder is clearly very valuable. Multiplying score by 3x can be worth a lot, and avatar runs are typically decided by how many Multipliers you see that run. So for my AI to be useful, I need to know how often each powerup appears.
 
-LINK (or table?)
+I couldn't find any information about this on the fan sites, so I did what any reasonable person would do and created a spreadsheet to track powerup appearances across 65 random levels.
 
-Based on this data, I hypothesized that power-ups worked like so:
+![Spreadsheet of results](/public/destruct-o-match/spreadsheet.png)
+{: .centered }
 
-* **The game first selects a number of 0-3 for how many powerups to play on the board.** I never observed more than 3 power-ups.
-If power-ups were selected by some fixed probability per block, we would expect to see a smooth bell-curve of outcomes, but we don't.
-I observed 0 powerups 3% of the time, 1 powerup 23% of the time, 2 powerups 34% of the time, and 3 powerups 40% of the time. I rounded this to
-0 = 5%, 1 = 20%, 2 = 35%, 3 = 40%, since I suspect it's more likely the original programmers picked nice round numbers.
-* **All powerups except Fill, Explode, and Multiplier are equally likely**. I observed 15 +/- 2 occurrences of each.
-* **Explodes are 2x as likely, Fill is 2/3rd as likely, and Multiplier is 1/3rd as likely**. I observed 35 occurrences of
-Explode, 2.33x more than the base rate of 15 occurrences for the other powerups, but here I'm applying "nice number bias" again.
-The symmetry of 2x more explodes getting offset by less likely Fills and Multipliers feels elegant enough that I can see the original
-programmer making that choice.
+Based on this data, I believe Destruct-o-Match first randomly picks a number from 0-3 for how many
+powerups will be on the board. If powerups were randomly selected per block, I would have seen more than 3 powerups at some point. I observed 0 powerups 3% of the time, 1 powerup 23% of the time, 2 powerups 34% of the time, and 3 powerups 40% of the time. For reverse engineering, I'm applying "programmer's bias" - someone made this game, and it's more likely they picked round, "nice" numbers.
+In my implementation of Destruct-o-Match, I use 0 = 5%, 1 = 20%, 2 = 35%, 3 = 40% for powerup counts.
+
+Looking at the counts of each powerup, Explode clearly appears the most and Multiplier appears the least. Again applying some nice number bias, I assume that Explodes are 2x more likely, Fills are 2/3rd as likely, and Multipliers are 1/3rd as likely.
+
 
 
 Step 3: Sanity Check
