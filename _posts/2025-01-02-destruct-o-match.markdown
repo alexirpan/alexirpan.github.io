@@ -321,4 +321,24 @@ it should be possible to do a search for the matching image in the overall image
 
 IMAGE
 
-This is, theoretically, pretty straightforward. Unfortunately, I kept messsing it up
+This is, theoretically, pretty straightforward. Unfortunately, I kept messsing it up. I debugged it for a while, but then quickly realized it would be faster for me to input it by hand, given that
+I would likely only need to play the game 1-2 times.
+
+To make it interactive, I set up a Jupyter Notebook, to display the board after I input all the
+colors. This was to let me quickly verify if I'd made any mistakes in data entry. After manual
+corrections from there, I ran my AI in the depth 3 expand 6 configuration, having it pause after each move to give me time to enter it.
+
+The end result?
+
+IMAGE
+
+An avatar score! Hooray!
+
+Some final commentary, based on studying games played by the AI:
+
+* *Most points are earned by getting near-perfect clears on early levels.* At depth 3, the AI frequently clears the first few levels with 0-3 blocks left, earning a ton of points. In later levels,
+the AI ends with more than 10 missing blocks and gets no clear bonus.
+* *Early fill powerups are bad.* Although Fill powerups give you more boulders to clear, they primarily cause you to end games with more blocks left over, and losing 10 points per block is not worth the extra group. So fill powerups are only good when you don't expect to get any clear bonus.
+* *Early undos are very strong.* I reset until I saw a Multiplier powerup in level 1, but what reall y made my run was getting 2 undos in level 2. The AI is very consistent at assembling groups of 16+ boulders. Groups of that size are worth 2 points per boulder, so an undo can often be cashed in for 32-44 points.
+* *Whoever designed the Flash game was a monster.* In the original Flash game, you only get to proceeed to the next level if you earn enough points, with the point thresholds increasing each level. But it actually gets *harder* to earn points as you go through the levels. Although you get more blocks to work with, the added colors make it hard to form the large groups required for points. My AI averages 203 points in level 7, which needs 220 points to clear. In level 9 it averages 185 points, when 260 points are needed to beat it.
+* *The AI is nowhere near the ceiling of human play.* Top scores on the Flash game are often in the 2900+ range. The absolute highest score I've seen my AI achieve over 100 games is 2606. I have no interest in pushing farther on this now that I've gotten the avatar, but someone with more free time may be interested.
