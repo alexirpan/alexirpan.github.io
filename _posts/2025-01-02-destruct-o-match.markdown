@@ -248,6 +248,7 @@ In my implementation of Destruct-o-Match, I use 0 = 5%, 1 = 20%, 2 = 35%, 3 = 40
 
 Looking at the counts of each powerup, Explode clearly appears the most and Multiplier appears the least. Again applying some nice number bias, I assume that Explodes are 2x more likely, Fills are 2/3rd as likely, and Multipliers are 1/3rd as likely.
 
+Two asides here. One, my rules engine does not implement some powerups. If those powerups are picked, I pretend the block has no powerup. Two, the powerup logic differs between the HTML5 and Flash version. In a few levels of the Flash version, I've seen more than 3 powerups appear.
 
 
 Step 3: Sanity Check
