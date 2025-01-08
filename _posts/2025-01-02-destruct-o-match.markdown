@@ -81,9 +81,6 @@ of Destruct-o-Match if we try?
 
 This is the story of me trying.
 
-(Note: I assume some people reading this will know AI but not Neopets, and some will know Neopets but not AI,
-so I will be explaining in greater detail than usual.)
-
 
 Step 0: Is Making a Destruct-o-Match AI Against Neopets Rules?
 -------------------------------------------------------------------------------
@@ -248,116 +245,174 @@ In my implementation of Destruct-o-Match, I use 0 = 5%, 1 = 20%, 2 = 35%, 3 = 40
 
 Looking at the counts of each powerup, Explode clearly appears the most and Multiplier appears the least. Again applying some nice number bias, I assume that Explodes are 2x more likely, Fills are 2/3rd as likely, and Multipliers are 1/3rd as likely.
 
-Two asides here. One, my rules engine does not implement some powerups. If those powerups are picked, I pretend the block has no powerup. Two, the powerup logic differs between the HTML5 and Flash version. In a few levels of the Flash version, I've seen more than 3 powerups appear.
+An aside here: in testing on the Flash version, I've seen more than 3 powerups appear, so the algorithm used there differs in some way.
 
 
 Step 3: Sanity Check
 ------------------------------------------------------------------------------------------------------
 
-Before going too fan down the rabbit hole, let's check if skill has much impact on Destruct-o-Match scores. If it doesn't,
-then trying to write an AI for it wouldn't matter.
+Before going too far down the rabbit hole, let's check how much impact skill has on Destruct-o-Match scores. If the scores are mostly driven by RNG, it's not worth developing the AI more.
 
-To check this, I implemented 3 basic strategies:
+I implemented 3 basic strategies:
 
-* Random. Removes a random block.
-* Top-Down, Left-Right. This removes the top-most group, breaking ties by the left-most group.
-* Bottom-up, Right-Left. This removes the bottom-most group, breaking ties on the right.
+* **Random:** Removes a random block.
+* **Top-Down, Left-Right:** This removes the top-most group, breaking ties by the left-most group.
+* **Bottom-up, Right-Left:** This removes the bottom-most group, breaking ties on the right.
 
-The idea with these strategies is that random is a simple baseline, that maps to a human player spamming clicks without thinking. (I have done this many, many times when I'm sick of playing.) Top-down and bottom-up are two strategies from the JellyNeo fan page. Top-down biases towards clearing known groups over trying to create groups by making other boulders fall down, and bottom-up biases towards trying to make new groups from other falling boulders. 
+The idea with these strategies is that random is a simple baseline, that maps to a human player spamming clicks without thinking. (I have done this many, many times when I'm sick of playing.) Top-down and bottom-up are two suggested strategies from the JellyNeo fan page. Top-down will usually clear most currently available groups, but tends to not create new groups.
+Bottom-up can create groups by causing more blocks to fall, but it can also break apart existing larger groups, which hurts bonus points.
 
-For each strategy, I simulated 100 random games and plotted the distribution of results.
+For each strategy, I simulated 100 random games and plotted the distribution of scores.
 
-IMAGE
+![Baseline distribution scores](/public/destruct-o-match/baseline_distributions.png)
+{: .centered }
 
-The good news is that yes, strategies make a lot of difference, and there's value to gain from building an AI.
-Bottom-up is worse than random, and top-down is better. In practice, this lets us know that **usually, disrupting existing groups is bad**, and it's better to take the guaranteed points.
+The good news is that yep, there's a lot of difference to be had from skill. The average score already differs by 100 for these different strategies. This also lets us know that **usually, disrupting  existing groups is bad**. It's better to take the guaranteed points and not cause excessive block
+falls unless you have a good reason to.
 
-Now, one last recommended human strategy is to remove blocks in order of color. If you remove all the blue blocks first, the remaining groups will connect more often and be bigger in size, earning more points.
-We can try this strategy, picking by color first, then tiebreaking with the top-down left-right heuristic.
+One last recommended human strategy is to remove blocks in order of color. The idea is that the reamining groups will connect more often, giving you more bonus points from removing large groups at once. We can try this strategy too, removing groups in color order, tiebreaking with the top-down left-right heuristic.
 
-IMAGE
+![Baseline distribution scores 2](/public/destruct-o-match/baseline_distributions2.png)
+{: .centered }
 
-Using color let's us eke out another 100 points on average. My target before using this for real is to average around 2400 points. I figure I can make up the remaining 100 point difference to the avatar by using undos and shuffles, as well as aggressive resets for good scores on the first level.
+Introduce color gives us another 100 points on average. We can try one more idea: if bottom-up is bad because it breaks apart large groups, maybe it'd be good to remove large groups first. Let's remove groups first in order of color, then in order of size, then in order of which is on top.
+
+![Baselines 3](/public/destruct-o-match/baseline_distributions3.png)
+{: .centered }
+
+This doesn't seem to improve things, so let's not use it.
+
+These baselines are all quite far from the avatar score of 2500. Even the luckiest game out of 100 attempts only gets to 2100 points. It is now finally time for the AI.
 
 
 Step 4: The AI
 -------------------------------------------------------------------------------------
 
-If I were trying to max out score, I would do the AlphaZero or MuZero thing. I'd run a very large number of simulated games,
-to train a neural net to predict the value of boards, that would be further refined by extra self-play.
+I estimate that between resetting for a good level 1 and using shuffles + undos, I can get an extra 100 points, so my target is to average 2400 points in my Destruct-o-Match engine before playing for
+real.
 
-I don't want to invest that much compute into this project, so instead we're using handcoded heuristics. The value of a board
-can be conservatively estimated as the value of every group within the board, plus the end-level points we get for the number of remaining boulders. This assumes that we will never form new groups
-during the removal of old groups, and that there's a way to order the groups such that removing one doesn't impact any of the future ones.
-This is true *most* of the time. There are some edge cases where that isn't true, such as this double-C example.
+To truly max out score, it would be best to follow the example of AlphaZero or MuZero. Those methods
+work by running a very large number of simulated games with MCTS, training a neural net to predict the value of boards, that would be iteratively refined by playing billions of games against itself.
+
+I don't want to invest that much compute or time, so instead we're going to use something closer to the first chess AIs: search with a handcoded value function. We're going to evalute what's typically called the Q-value. Given the current state $$s$$ and a possible action $$a$$, the Q-value $$Q(s,a)$$ is defined as
+
+$$
+    Q(s,a) = reward(a) + Value(\text{next state})
+$$
+
+We then take the action $$a$$ that has largest Q-value.
+
+As mentioned earlier, the reward in Destruct-o-Match is the points earned from the removed block.
+How about the value? We can conservatively estimate a board's value as the sum of points we'd get from
+every group that exists within it, plus the end-level bonus for every boulder that isn't in one of
+those groups. This corresponds to removing every existing group and assuming no new groups will be
+formed by the remaining blocks. Doing so should be hypothetically possible on most boards, if we
+order the groups such that a group is removed only after every group above it has been removed.
 
 IMAGE
 
-For the purposes of the AI though, the value estimate doesn't have to be perfect. It just needs to be "good enough" to not
-mislead the rest of the search. Computing this value is easy, because we already have to find every clearable group when finding the
-list of actions, so we can just reuse that logic.
+There are some edge cases where this isn't possible, such as this double-C example, where groups
+depend on each other in a cycle.
+
+IMAGE
+
+Additionally, this value function overestimates value when wilds are on the board, because the wild
+will appear in multiple groups, but can only be removed once.
+
+IMAGE
+
+For the purposes of the AI though, the value estimate estimate just has to be "good enough" to not
+mislead the search, so we'll just ignore these issues. Computing this value is easy, because we
+already have to find every clearable group when finding the list of actions,
+
+$$
+    Value(state) = \sum_{\text{a possible}} reward(a)
+$$
 
 So, here is our new method for choosing actions.
 
 1. From the current state, compute every possible action.
-2. For each action, find the reward and value of the resulting state.
-3. Pick the action with best reward + value.
-4. In cases of a tie, pick according to the color then top-most heuristic that's worked best before.
+2. For each action, find the Q-value $$Q(s,a)$$.
+3. Pick the action with best Q-value.
+4. Break ties with the color then top-most heuristic that did best earlier.
 
-Even this 1-step lookahead is quite effective. By like, a **lot**.
+Even though this only looks 1 move ahead, it's quite effective. By like, a **lot**.
 
-IMAGE
+![Search performance](/public/destruct-o-match/search.png)
+{: .centered }
 
-This one step search is enough to bring the average from 1850 to 2250, a 400 point boost. In fact
-it's big enough that I tried playing a game with the 1-step lookahead. After reseting for a good
-level 1, I got tantalizing close to a winning score.
+This is enough to give a **400** point boost on its own. This gain was big enough that I decided to
+try playing a game with this AI, and I actually got pretty close to winning on my first try, with 2433 points.
 
-IMAGE
+![Score 1](/public/destruct-o-match/score1.png)
+{: .centered }
 
-To get the rest of the way there, we need to crank up the search. Instead of only looking 1 move
-ahead, let's look multiple moves ahead.
+The reason I got so many points is because something is buggy in the logic for end-level bonuses. I don't know how, but I got an extra 50 points in levels 3 and 4 that I should not have gotten. This is likely tied to a second beneficial bug, where levels 3 and 4 are only 12 x 15 instead of 13 x 15.
+
+Still, this means we only need to crank out 70 more points! If we can get this close with looking 1 move ahead, let's do more.
+
+
+Step 5: Just Go Harder
+------------------------------------------------------------------------------------------
+
+Early, we defined the Q-value as
+
+$$
+    Q(s,a) = reward(a) + Value(\text{next state})
+$$
+
+This is sometimes called the 1-step Q-value, because we check the value after doing 1 timestep.
+We can generalize this to the n-step Q-value by defining it as
+
+$$
+    Q(s,a_1,a_2,\cdots,a_n) = r_1 + r_2 + \cdots + r_n + Value(\text{state after n moves})
+$$
+
+where each reward $$r_i$$ is the points we get from doing action $$a_i$$. We take the max over
+all sequences of n actions, run the 1st action in the best sequence, then repeat.
+
+One natural question to ask here is, why are we only running the 1st action from the best sequence? Why not run all n actions from that sequence? The reason is because our value estimate is only an
+approximation of the true value. The further we project out, the more likely it is that our projected values are wrong. Taking just the 1st action and replanning from there mitigates this.
+
+Unfortunately, doing an exhaustive search of 2 moves ahead is already too slow for my engine.
+This is partly my fault, for doing it in single-threaded Python, but Destruct-o-Match is genuinely a rough game for exhausive search. The branching factor $$b$$ of a game is the number of valid moves
+available per state. It's important because a depth $$d$$ lookahead will require considering
+$$b^d$$ sequences of actions, which is exponential in $$b$$.
+
+As a comparison point, the branching factor of Chess averages 31 to 35 legal moves.
+Destruct-o-Match has an average branching factor of 34 moves. **Destruct-o-Match is as expensive to search as Chess.** This is actually so crazy to me, and makes me feel less bad about
+spending a week on this project. If people can dedicate their life to Chess, I can dedicate a week
+to a Neopets flash game.
+
+To make things worse, the value function I'm using runs in $$O(b)$$ time, since I need to compute every group, so the run time is more like $$O(b^{d+1})$$. To get around this, we can use search tree
+pruning. Instead of considering every possible action, at each timestep, we should consider only the $$k$$ most promising actions. This
+will miss some potentially high reward sequences, but makes it more practical to search deeper,
+which is often a worthwhile trade-off.
+
+(Quick aside: the reason I jumped to pruning first is because I've seen it work before.
+In college, I once went to a coding competition where we split into groups, and
+had to code the best [Ntris](https://www.youtube.com/watch?v=hSp4E6EYA74) bot in 4 hours.
+I handled game logic, while a teammate handled the search, and their pruned search
+tree algorithm destroyed everyone. We won $500 in gift cards, it was pretty cool.)
+
+Here's the new algorithm, assuming we prune all but the top $$k$$ actions.
 
 1. From the current state, compute every possible action.
-2. For each action, find the reward and next state.
-3. For each of those future states, compute the possible next actions and rewards.
-4. (Repeat steps 2 and 3 N times.)
-5. At the end, compute the total reward of the N actions, and the value of the state after doing the N actions.
-6. Pick the 1st action of the best scoring sequence, with the same tiebreak as before.
+2. For each action, find its 1-step Q-value, $$r + Value$$.
+3. Sort the Q-values and discard all but the top $$k$$ actions $$a_1, a_2, \cdots, a_k$$.
+4. Repeat steps 1-3, only considering sequences that start with actions $$a_1$$ to $$a_k$$.
+For each future state, evaluate all $$b$$ possible actions then take just the top $$k$$.
+5. When we get to max depth $$d$$, stop, and take the first action of the best sequence.
 
-Doing so quickly runs into problems. In search, the branching factor of a game is the number of
-average actions available from a given start position. The branching factor is important because the size of the search tree grows exponentially with depth, and the exponential is faster if the branching factor is higher. (Given a branching factor of $$b$$, a depth $$d$$ tree is $$O(b \cdot b^{d-1})$$ in size.)
+There are now only $$k^d$$ different possible sequences, with $$k$$ choosable by us. The main choices now are how to set the number of expansions $$k$$ and max depth $$d$$ while still being efficient enough to be usable.
 
-In Destruct-o-Match, this starts at an
-average of 34, which is actually on-par with Chess's branching factor of 31 to 35 legal moves.
-If people can dedicate their life to Chess, surely I can dedicate a week to Destruct-o-Match.
-My game engine is not particularly fast (this is what I get for doing it in Python), so fully
-expanding the search tree for larger depth quickly makes it too difficult to evaluate.
+To understand the trade-off better, I did 3 runs. One with `Depth=2, Expand=3`, one with
+`Depth=2, Expand=9`, and one with `Depth=3, Expand=3`. The first is to verify there are gains from
+increasing search depth at all, and the second two are 2 compute-equivalent configurations,
+one searching wider and the other searching deeper.
 
-To get around this, we can use search tree pruning. This is an approximation to exhaustive depth-N search,
-where instead of expanding every possible action, we only expand the most promising actions and prune (discard) the rest. This
-remove the guarantee that you'll identify the best action, but the hope is that looking further ahead
-makes up for overlooking other promising action. There are strong similarties between this and beam search, the method that used to dominate language generation (before LLMs got powerful enough for beam search to be more of a hindrance than a benefit. See XXX.)
-
-(Quick aside: the reason I jumped to this is because I've seen it work before. In college, I once
-went to a coding competition where we split into groups of 3-4, and had to code the best Tetris
-bot we could in 4 hours. I handled game logic while a teammate handled the search, and their pruned search
-tree destroyed everyone. We won $500 in gift cards, it was pretty cool.)
-
-Here's the new algorithm, assuming we prune all but the top $$p$$ actions.
-
-1. From the current state, compute every possible action.
-2. For each action, find the reward, next state, and value of the next state.
-3. Sort and find the $$p$$ best actions so far, discarding the rest.
-4. For each of the $$p$$ future states, repeat steps 1-3. When doing so, we maintain history of the rewards seen so far, so that we can sort by $$r_1 + r_2 + ... + r_t + V$$.
-5. At the end, compute the total reward of each search tree path.
-6. Pick the 1st action of the best scoring sequence.
-
-Given a branching factor of $$b$$, depth $$d$$, and pruning factor $$p$$, this runs in time $$O(b\cdot p^{d-1})$$. The search tree is of size $$O(p^d)$$ and there are $$b$$ actions to evaluate for each
-node in the tree.
-
-This introduces an extra hyperparameter (choice): how much pruning to do, and what depth to search for. To understand the trade-off better, I did 3 runs. One with `Depth=2, Expand=3`, one with `Depth=2, Expand=9`, and one with `Depth=3, Expand=3`. The first is to verify there are gains from increasing search depth at all, and the second two are 2 compute-equivalent variants training depth for larger expansion factor.
-
-IMAGE
+![Final Search Distributions](/public/destruct-o-match/final_search_distributions.png)
+{: .centered }
 
 The gains are getting harder to spot, so here are more exact averages.
 
@@ -366,38 +421,38 @@ Depth 2, Expand 3: 2318.32
 Depth 2, Expand 9: 2343.34  
 Depth 3, Expand 3: 2373.37  
 
-Increasing depth is a bit more effective than increasing width, with a gain of 140 points.
+From this, I concluded that searching deeper was better than searching wider, and we've gotten a gain
+of 140 points compared to the original Depth 1 model. This should be enough for an avatar score! It's also near the limit of what I can reasonably evaluate. The plot above took 7 hours to simulate.
 
-This started to hit the limit of what I can reasonably evaluate (the last run took 3 hours to simulate), but it's close enough to the 2400 target that I felt comfortable running it for real. For the final real run, I cranked up the expansion factor to 6. At depth 3 expand 6, it takes around 1.5 seconds to pick an action on my laptop, which is right at the edge of an annoying wait time.
+For the final real run, I decided to use a $$k$$ of 6 instead of 3. In local testing, Depth 3 Expand 6 took 1.5 seconds on average to pick an action on my laptop, which was short enough for my manual
+inputting of the move to be the bottleneck, and this would be strictly better.
 
+After setting it up, I played a game over the course of 3 hours, of which about 2 hours 45 minutes was entering boards into my script and 15 minutes was CPU processing time.
 
-Step 5: Board Input
-----------------------------------------------------------------------------------------
-
-My original plan for transcribing the board to my AI was to use basic computer vision. There are
-only 10 different boulder colors that can appear, and each boulder uses the same image, so in theory,
-it should be possible to do a search for the matching image in the overall image.
-
-IMAGE
-
-This is, theoretically, pretty straightforward. Unfortunately, I kept messsing it up. I debugged it for a while, but then quickly realized it would be faster for me to input it by hand, given that
-I would likely only need to play the game 1-2 times.
-
-To make it interactive, I set up a Jupyter Notebook, to display the board after I input all the
-colors. This was to let me quickly verify if I'd made any mistakes in data entry. After manual
-corrections from there, I ran my AI in the depth 3 expand 6 configuration, having it pause after each move to give me time to enter it.
-
-The end result?
-
-IMAGE
+![Score 2](/public/destruct-o-match/score2.png)
+{: .centered }
 
 An avatar score! Hooray!
 
+
+Outtakes and Final Thoughts
+----------------------------------------------------------------------------------------
+
+You may have noticed most of my time was spent on transcribing the board state. My original plan was to use computer vision to auto-translate
+a screenshot of the webpage into the game state. I know this is possible, but unfortunately
+I messed something up in my logic and haven't been able to debug it. I eventually decided that
+fixing it would take more time than entering boards by hand.
+
+After I got the avatar, I ran a full evaluation of the $$depth = 3, k = 6$$ configuration overnight.
+It averages 2426.84 points, another 53 points over the $$depth = 3, k = 3$$ setup I evaluated earlier.
+Based on this, you could definitely squeeze more juice out of more search compute, but I have no interest in doing so. I'm just here for the avatar.
+
 Some final commentary, based on studying games played by the AI:
 
-* *Most points are earned by getting near-perfect clears on early levels.* At depth 3, the AI frequently clears the first few levels with 0-3 blocks left, earning a ton of points. In later levels,
-the AI ends with more than 10 missing blocks and gets no clear bonus.
-* *Early fill powerups are bad.* Although Fill powerups give you more boulders to clear, they primarily cause you to end games with more blocks left over, and losing 10 points per block is not worth the extra group. So fill powerups are only good when you don't expect to get any clear bonus.
-* *Early undos are very strong.* I reset until I saw a Multiplier powerup in level 1, but what reall y made my run was getting 2 undos in level 2. The AI is very consistent at assembling groups of 16+ boulders. Groups of that size are worth 2 points per boulder, so an undo can often be cashed in for 32-44 points.
-* *Whoever designed the Flash game was a monster.* In the original Flash game, you only get to proceeed to the next level if you earn enough points, with the point thresholds increasing each level. But it actually gets *harder* to earn points as you go through the levels. Although you get more blocks to work with, the added colors make it hard to form the large groups required for points. My AI averages 203 points in level 7, which needs 220 points to clear. In level 9 it averages 185 points, when 260 points are needed to beat it.
-* *The AI is nowhere near the ceiling of human play.* Top scores on the Flash game are often in the 2900+ range. The absolute highest score I've seen my AI achieve over 100 games is 2606. I have no interest in pushing farther on this now that I've gotten the avatar, but someone with more free time may be interested.
+* **Most points are earned by getting near-perfect clears on early levels.** The AI frequently clears the first few levels with 0-3 blocks left, earning a ton of points. The AI fails to get any clear bonus by around level 5. Based on this, I suspect **early Fill powerups are bad**, because although
+you could get more points due to having more boulders, it doesn't make up for losing 10 points per uncleared block.
+* The AI jumps all over the board, constantly switching between colors, clearing groups near the top, and clearing groups near the bottom. Imitating it with human play would require doing continual group size calculations, which is definitely possible but seems very annoying.
+* The AI consistenly assembles groups of 16+ boulders in the early levels. **This makes early undos very strong**, since they are easily worth 32-40 points. My winning run was partly from a Multiplier in level 1, but was really carried by getting 2 Undos in level 2.
+* **Whoever designed the Flash game was a monster.** In the original Flash game, you only get to proceeed to the next level if you earn enough points, with the point thresholds increasing each level.
+But it actually gets *harder* to earn points as you go through the levels.
+My AI averages 203 points in level 7 and 185 points in level 9. If the point thresholds were enforced in the HTML5 version, the AI would regularly fail at level 7 or 8.
