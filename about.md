@@ -4,18 +4,22 @@ title: About
 permalink: /about/
 ---
 
-*Last updated August 4, 2023.*
+*Last updated January 8, 2025.*
 
-I currently work as a Research
-Scientist on the Robotics@Google team, which is part of Google DeepMind. The views expressed on this blog are
+I currently work as a Senior Research
+Scientist on the AGI Safety and Alignment team at Google DeepMind.
+The views expressed on this blog are
 personal opinions, and do not reflect the opinions of my employer.
 
-My main research interest is deep reinforcement learning and imitation learning, as
-applied to robotics.
-In general, I like thinking about what's necessary to make robot learning work
-for real-world problems. Much of my work has been based on how to most efficiently
-use real robot time, how to leverage external data sources that aren't bottlenecked
-by real robot hardware, and the challenges of longterm agent-centric data collection.
+I'm somewhat new to directly working on alignment, so my exact work is going to
+shift a lot as I figure out what parts of the problem I'm best at tackling.
+(See [this post]({% post_url 2024-08-06-switching-to-ai-safety %}) if you're curious for why I decided to work on AI safety.)
+In general, my research interests are deep reinforcement learning and agents.
+Prior to working on safety, I did research in robotics, focusing on
+the bottlenecks of robot learning in real-world problems. Common themes of that work
+were more efficiently using real robot time, leveraging external data sources that
+weren't bottlenecked on real robot hardware, and handling longterm agent-centric
+data collection.
 
 I graduated from the UC Berkeley Computer Science program in 2016, doing undergraduate
 research in the [Berkeley Artificial Intelligence

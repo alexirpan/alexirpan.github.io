@@ -4,9 +4,13 @@ title: Research
 permalink: /research/
 ---
 
-*Last updated July 8, 2024.*
+*Last updated January 8, 2025.*
 
-My current main research interest is robot learning, via imitation learning or offline reinforcement learning. My work has generally focused on using robots in real environments, reducing real-world data used, improving real robot data collection, and studying the feedback loops between data collection and model improvement in agent-based setups.
+My current main research interest is better alignment algorithms for LLMs that
+go beyond only input-output examples that treat the LLM as a black-box optimizer.
+Prior to switching to alignment, my research was in imitation learning and offline
+reinforcement learning for robotics.
+This work generally focused on using robots in real environments, reducing real-world data used, improving real robot data collection, and studying the feedback loops between data collection and model improvement in agent-based setups.
 
 Asterisks indicate equal contribution.
 
