@@ -67,11 +67,23 @@ I played this a lot as a kid, and genuinely like it as a game. Destruct-o-Match 
 Given a starting board, you can clear any group of 2 or more connected blocks of the same color. Each time
 you do so, every other block falls according to gravity. Your goal is to clear as many blocks as possible.
 You earn more points for clearing large groups at once, and having fewer blocks leftover when you run out
-of moves. The game is made of 10 levels, starts with a 12 x 14 grid of 4 colors and ending with a 16 x 18 grid of 10 colors.
+of moves. The game is made of 10 levels, starts with a 12 x 14 grid of 4 colors and ending with a 16 x 18 grid of 90 colors.
 
-![Initial grid](/public/destruct-o-match/blocks_before.png)
-![while clearing](/public/destruct-o-match/blocks_during.png)
-![After clear](/public/destruct-o-match/blocks_after.png)
+<div style="width:100%; display:flex; margin-bottom:15px;">
+    <div style="width:30%">
+        <img src="/public/destruct-o-match/blocks_before.png" alt="Initial grid">
+    </div>
+    <div style="width:4%">
+    </div>
+    <div style="width:30%">
+        <img src="/public/destruct-o-match/blocks_during.png" alt="While clearing">
+    </div>
+    <div style="width:4%">
+    </div>
+    <div style="width:30%">
+        <img src="/public/destruct-o-match/blocks_after.png" alt="After clear">
+    </div>
+</div>
 
 My best score as a kid was 1198 points. The avatar score is 2500.
 
@@ -133,34 +145,124 @@ Translating Destruct-o-Match in these terms,
 
 The reward is the easiest, and follows this scoring table.
 
-| Boulders Cleared | Points per Boulder | Bonus Points |
-|------------------|--------------------|--------------|
-| 2-4              | 1                  | -            |
-| 5-6              | 1                  | 1            |
-| 7                | 1                  | 2            |
-| 8-9              | 1                  | 3            |
-| 10               | 1                  | 4            |
-| 11               | 1                  | 6            |
-| 12-13            | 1                  | 7            |
-| 14               | 1                  | 8            |
-| 15               | 1                  | 9            |
-| 16+              | 2                  | -            |
+<table class="centered-table" style="margin-bottom:15px;">
+  <thead>
+    <tr>
+      <th style="padding:0 10px 10px 10px">Boulders Cleared</th>
+      <th style="padding:0 10px 10px 10px">Points per Boulder</th>
+      <th style="padding:0 10px 10px 10px">Bonus Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2-4</td>
+      <td>1</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>5-6</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>8-9</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>12-13</td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>1</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>16+</td>
+      <td>2</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 The end level bonus is 100 points, minus 10 points for every leftover boulder.
 
-| Boulders Remaining | Bonus Points |
-|------------------|--------------------|
-| 0              | 100 |
-| 1              | 90 |
-| 2              | 80 |
-| 3              | 70 |
-| 4              | 60 |
-| 5              | 50 |
-| 6              | 40 |
-| 7              | 30 |
-| 8       | 20 |
-| 9              | 10 |
-| 10+              | 0 |
+<table class="centered-table" style="margin-bottom:15px;">
+  <thead>
+    <tr>
+      <th style="padding:0 10px 10px 10px;">Boulders Remaining</th>
+      <th style="padding:0 10px 10px 10px;">Bonus Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>10+</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 Gravity is also not too hard to implement. The most complicated and expensive logic is on identifying the possible
 actions. To identify the groups of connected colors, we can repeatedly
@@ -176,39 +278,39 @@ in order:
 
 <table>
 <tr>
-<td><img src="/public/destruct-o-match/dom3_boulder_timer.jpg"/></td>
+<td style="width:70px; padding-right:5px;"><img src="/public/destruct-o-match/dom3_boulder_timer.jpg"/></td>
 <td>The <strong>Timer</strong> Boulder counts down from 15 seconds, and becomes unclearable if not removed before then.</td>
 </tr>
 <tr>
-<td><img src="/public/destruct-o-match/dom3_boulder_fill.jpg"/></td>
+<td style="width:70px; padding-right:5px;"><img src="/public/destruct-o-match/dom3_boulder_fill.jpg"/></td>
 <td>The <strong>Fill</strong> Boulder will add an extra line of blocks on top when cleared.</td>
 </tr>
 <tr>
-<td><img src="/public/destruct-o-match/dom3_boulder_explode.jpg"/></td>
+<td style="width:70px; padding-right:5px;"><img src="/public/destruct-o-match/dom3_boulder_explode.jpg"/></td>
 <td>The <strong>Explode</strong> Boulder is its own color and is always a valid move. When clicked, it and all adjacent boulders (including diagonals) are removed, scoring no points.</td>
 </tr>
 <tr>
-<td><img src="/public/destruct-o-match/dom3_boulder_overkill.jpg"/></td>
+<td style="width:70px; padding-right:5px;"><img src="/public/destruct-o-match/dom3_boulder_overkill.jpg"/></td>
 <td>The <strong>Overkill</strong> Boulder destroys all boulder of matching color when cleared, but you only get points for the group containing the Overkill.</td>
 </tr>
 <tr>
-<td><img src="/public/destruct-o-match/dom3_boulder_multiplier.jpg"/></td>
+<td style="width:70px; padding-right:5px;"><img src="/public/destruct-o-match/dom3_boulder_multiplier.jpg"/></td>
 <td>The <strong>Multiplier</strong> Boulder multiples the score of the group it's in by 3x.</td>
 </tr>
 <tr>
-<td><img src="/public/destruct-o-match/dom3_boulder_morph.jpg"/></td>
+<td style="width:70px; padding-right:5px;"><img src="/public/destruct-o-match/dom3_boulder_morph.jpg"/></td>
 <td>The <strong>Morph</strong> Boulder cycles between boulder colors every few seconds.</td>
 </tr>
 <tr>
-<td><img src="/public/destruct-o-match/dom3_boulder_wildcard.jpg"/></td>
+<td style="width:70px; padding-right:5px;"><img src="/public/destruct-o-match/dom3_boulder_wildcard.jpg"/></td>
 <td>The <strong>Wild</strong> Boulder matches any color, meaning it can be part of multiple valid moves.</td>
 </tr>
 <tr>
-<td><img src="/public/destruct-o-match/dom3_boulder_shuffle.jpg"/></td>
+<td style="width:70px; padding-right:5px;"><img src="/public/destruct-o-match/dom3_boulder_shuffle.jpg"/></td>
 <td>The <strong>Shuffle</strong> Boulder gives a one-shot use of shuffling boulder colors randomly. The grid shape will stay fixed. You can bank 1 shuffle use at a time, and it carries across levels.</td>
 </tr>
 <tr>
-<td><img src="/public/destruct-o-match/dom3_boulder_undo.jpg"/></td>
+<td style="width:70px; padding-right:5px;"><img src="/public/destruct-o-match/dom3_boulder_undo.jpg"/></td>
 <td>
 The <strong>Undo</strong> Boulder gives a one-shot use of undoing your last move, as long as it did not involve a power-up. Similar to shuffles, you can bank 1 use at a time and it carries across levels. Unique to the HTML5 version, you keep all points from the undone move,
 so you want to build up a large group of boulders, clear it for a bunch of points, then undo it so you can clear it again.
