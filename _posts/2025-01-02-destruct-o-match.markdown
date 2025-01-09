@@ -22,7 +22,11 @@ cross-section of the site. To get all the avatars, you'll need to do site events
 games, do dailies, and more. There's a reason they get listed first in your
 profile summary!
 
-IMAGE
+![Profile summary](/public/destruct-o-match/profile.png)
+{: .centered }
+
+(The avatar I'm using right now literally took me 5 years to get. I'm very glad that I have it.)
+{: .centered }
 
 Avatars start easy, but can become fiendishly difficult. To give a sense of how far they can go, let me
 quote a post I wrote before.
@@ -60,12 +64,14 @@ Of these avatars, I've been trying to get the Destruct-o-Match avatar for a long
 {: .centered }
 
 I played this a lot as a kid, and genuinely like it as a game. Destruct-o-Match is a block clearing game.
-Given a starting grid, you can clear any group of 2 or more connected blocks of the same color. Each time
+Given a starting board, you can clear any group of 2 or more connected blocks of the same color. Each time
 you do so, every other block falls according to gravity. Your goal is to clear as many blocks as possible.
 You earn more points for clearing large groups at once, and having fewer blocks leftover when you run out
-of moves.
+of moves. The game is made of 10 levels, starts with a 12 x 14 grid of 4 colors and ending with a 16 x 18 grid of 10 colors.
 
-IMAGE?
+![Initial grid](/public/destruct-o-match/blocks_before.png)
+![while clearing](/public/destruct-o-match/blocks_during.png)
+![After clear](/public/destruct-o-match/blocks_after.png)
 
 My best score as a kid was 1198 points. The avatar score is 2500.
 
