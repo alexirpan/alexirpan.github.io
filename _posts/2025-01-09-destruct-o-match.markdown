@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using AI to Get the Neopets Destruct-o-Match Avatar"
-date:   2025-01-02 09:58:01 -0700
+date:   2025-01-09 22:05:01 -0700
 ---
 
 I have blogged about Neopets before, but a quick refresher. Neopets is a web game
