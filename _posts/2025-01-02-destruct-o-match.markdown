@@ -4,13 +4,13 @@ title:  "Using AI to Get the Neopets Destruct-o-Match Avatar"
 date:   2025-01-02 09:58:01 -0700
 ---
 
-I have blogged about Neopets before, but a quick refresher: Neopets is a web game
+I have blogged about Neopets before, but a quick refresher. Neopets is a web game
 from the early 2000s, which recently celebrated its 25th anniversary and maintains a small audience of
 adult millennials.
 It's a bit tricky to sum up the appeal of
 Neopets, but I like the combination of Web 1.0 nostalgia and long-running progression systems.
 There are many intersecting achievement tracks you can go for,
-some of which are exceedingly hard to complete. There's books, pet training, stamp collecting,
+some of which are exceedingly hard to complete. Among them are books, pet training, stamp collecting,
 gourmet foods, Kadoaties, and more.
 
 The one I've been chasing the past few years is avatars.
@@ -68,7 +68,7 @@ Destruct-o-Match is a block clearing game that I genuinely find fun.
 Given a starting board, you can clear any group of 2 or more connected blocks of the same color. Each time
 you do so, every other block falls according to gravity. Your goal is to clear as many blocks as possible.
 You earn more points for clearing large groups at once, and having fewer blocks leftover when you run out
-of moves. The game is made of 10 levels, starts with a 12 x 14 grid of 4 colors and ending with a 16 x 18 grid of 9 colors.
+of moves. The game is made of 10 levels, starting with a 12 x 14 grid of 4 colors and ending with a 16 x 18 grid of 9 colors.
 
 <div style="width:100%; display:flex; margin-bottom:15px;">
     <div style="width:30%">
@@ -92,7 +92,7 @@ Part of the reason this has always been a white whale for me is that it's almost
 level to maximize your score. Actually doing so would take forever, but you *could*. There's RNG, but there's skill too.
 
 Destruct-o-Match can be viewed as a turn based game, where your moves are deciding what boulders to remove. That puts it in the camp of games like Chess and Go,
-games where AI developers have created bots that play at a superhuman level. If AI can be superhuman
+where AI developers have created bots that play at a superhuman level. If AI can be superhuman
 at Go, surely AI can be slightly-worse-than-experts at Destruct-o-Match if we try?
 
 This is the story of me trying.
@@ -286,7 +286,7 @@ in order:
 </tr>
 <tr>
 <td style="width:70px; padding-right:5px;"><img src="/public/destruct-o-match/dom3_boulder_overkill.jpg"/></td>
-<td>The <strong>Overkill</strong> Boulder destroys all boulder of matching color when cleared, but you only get points for the group containing the Overkill.</td>
+<td>The <strong>Overkill</strong> Boulder destroys all boulders of matching color when cleared, but you only get points for the group containing the Overkill.</td>
 </tr>
 <tr>
 <td style="width:70px; padding-right:5px;"><img src="/public/destruct-o-match/dom3_boulder_multiplier.jpg"/></td>
@@ -312,11 +312,11 @@ The <strong>Undo</strong> Boulder gives a one-shot use of undoing your last move
 </tr>
 </table>
 
-We can keep the game simpler by ignoring the Shuffle and Undo powerups. These both assist on earning points, but they introduce problems. Shuffle would require implementing randomness. This would be harder for the AI to handle, because we'd have to average over the many possible future states to estimate the value of each action. It's possible, just expensive. Meanwhile, Undos force carrying around history as extra state, which I just don't want to deal with.
+We can keep the game simpler by ignoring the Shuffle and Undo powerups. These both assist in earning points, but they introduce problems. Shuffle would require implementing randomness. This would be harder for the AI to handle, because we'd have to average over the many possible future states to estimate the value of each action. It's possible, just expensive. Meanwhile, Undos require carrying around history in the state, which I just don't want to deal with.
 So, I'll have my rules engine pretend these powerups don't exist. This will give up some points, but remember, we're not targeting perfect play. We just want "good enough" play to hit the avatar score of 2500. Introducing slack is okay if we make up for it later.
 (I can always use the Shuffle or Undo myself if I spot a good opportunity to do so later.)
 
-In similar veins, I will ignore the Fill powerup because it adds randomness on what blocks get added, and will ignore the Timer powerup because I want to treat the game as a turn-based game. These are harder to ignore.
+Along similar lines, I will ignore the Fill powerup because it adds randomness on what blocks get added, and will ignore the Timer powerup because I want to treat the game as a turn-based game. These are harder to ignore.
 My plan is to commit to clearing Timer boulders and Fill boulders as soon as I start the level. Then I'll transcribe the resulting grid into the AI and let it take over from there.
 
 This leaves Explode, Overkill, Multiplier, Morph, and Wild. Morph can be treated as identical to Wild, since we can wait for the Morph boulder to become whatever color we want it to be.
@@ -375,7 +375,7 @@ The good news is that strategy makes a significant difference. Even a simple top
 makes sense: bottom-up strategies introduce chaos, it's hard to make large groups of the same color in chaos, and we want large groups for the bonus points. **For human play, this suggests it's better to remove groups near the top unless we have a reason not to.**
 
 One last recommended human strategy is to remove blocks in order of color. The idea is that if you
-leave fewer colors on the board, the reamining groups will connect into large groups more often, giving you more bonus points. We can try this strategy too, removing groups in color order, tiebreaking with the top-down heuristic that did well earlier.
+leave fewer colors on the board, the remaining groups will connect into large groups more often, giving you more bonus points. We can try this strategy too, removing groups in color order, tiebreaking with the top-down heuristic that did well earlier.
 
 ![Baseline distribution scores 2](/public/destruct-o-match/baseline_distributions2.png)
 {: .centered }
@@ -393,7 +393,7 @@ These baselines are all quite far from the avatar score of 2500. Even the luckie
 Step 4: The AI
 -------------------------------------------------------------------------------------
 
-To truly max out score, it would be best to follow the example of AlphaZero or MuZero. Those methods
+To truly max the AI's score, it would be best to follow the example of AlphaZero or MuZero. Those methods
 work by running a very large number of simulated games with MCTS, training a neural net to predict the value of boards from billions of games of data, and using that neural net to train itself with billions more games.
 
 I don't want to invest that much compute or time, so instead we're going to use something closer to the first chess AIs: search with a handcoded value function. The value of a state $$s$$ is usually denoted as $$V(s)$$, and is the estimated total reward if we play the game to completion starting from state $$s$$. If we have a value function $$V(s)$$, then we can find the best action by computing what's known as the Q-value. The Q-value $$Q(s,a)$$ is the total reward we'll achieve if we start in state $$s$$ and perform action $$a$$, and can be defined as.
@@ -402,8 +402,7 @@ $$
     Q(s,a) = reward(a) + Value(\text{next state}) = r + V(s')
 $$
 
-Here $$s'$$ is the common notation for "next state". The action $$a$$ with largest Q-value is then
-the action we should have our AI output.
+Here $$s'$$ is the common notation for "next state". The action $$a$$ with largest Q-value is the action the AI believes is best.
 
 So how do we estimate the value? We can conservatively estimate a board's value as the sum of points we'd get from
 every group that exists within it, plus the end-level bonus for every boulder that isn't in one of
@@ -477,7 +476,7 @@ Why not run all $$n$$ actions from that sequence? The reason is because our valu
 approximation of the true value. The sequence we found may be the best one according to that approximation, but that doesn't make it the *actual* best sequence. By replanning every action, the AI can be more reactive to the true rewards it gets from the game.
 
 This is all fine theoretically, but unfortunately an exhaustive search of 2 moves ahead is already
-annoying expensive in my engine. This is what I get for prioritizing ease of implementation over
+a bit slow in my engine. This is what I get for prioritizing ease of implementation over
 speed, and doing everything in single-threaded Python. It is not *entirely* my fault though.
 Destruct-o-Match is genuinely a rough game for exhaustive search. The branching factor $$b$$ of a game is the number of valid moves
 available per state. A depth $$d$$ search will require considering $$b^d$$ sequences of actions, exponential in the branching factor, so $$b$$ is often considered a proxy for search difficulty.
@@ -529,7 +528,7 @@ The gains are getting harder to spot, so here are more exact averages.
 **Depth 2, Expand 9:** 2343.34  
 **Depth 3, Expand 3:** 2373.37  
 
-Search deeper does help, searching deeper is better than searching wider, and the `Depth 3, Expand 3` configuration is 140 points better than the original depth 1 search.
+Searching deeper does help, it is better than searching wider, and the `Depth 3, Expand 3` configuration is 140 points better than the original depth 1 search.
 This should be enough for an avatar score. This search is also near the limit of what I can reasonably evaluate. Due to its exponential nature, it's very easy for search to become expensive to run. The plot above took 7 hours to simulate.
 
 For the final real game, I decided to use `Depth 3, Expand 6`. There's no eval numbers for this, but increasing the number of considered moves can only help. In local testing, Depth 3 Expand 6 took 1.5 seconds on average to pick an action on my laptop, which was just long enough to feel annoying, but short enough to not be *that* annoying.
@@ -553,16 +552,16 @@ fixing it would take more time than entering boards by hand, given that I was on
 
 After I got the avatar, I ran a full evaluation of the `Depth 3, Expand 6` configuration overnight.
 It averages 2426.84 points, another 53 points over the `Depth 3, Expand 3` setting evaluated earlier.
-Based on this, you could definitely squeeze more juice out of search compute if you wanted to.
+Based on this, you could definitely squeeze more juice out of search if you were willing to wait longer.
 
 Some final commentary, based on studying games played by the AI:
 
 * **Search gains many points via near-perfect clears on early levels.** The AI frequently clears the first few levels with 0-3 blocks left, which adds up to a 200-300 point bonus relative to baselines that fail to perfect clear. However, it starts failing to get clear bonuses by around level 6.
 Based on this, I suspect **Fill powerups are mostly bad until late game**. Although Fills give you more material to score points with, it's not worth it if you end with even a single extra leftover boulder that costs you 10 points later. It is only worth it once you expect to end levels with > 10 blocks left.
 * The AI jumps all over the board, constantly switching between colors and groups near the top or bottom. This suggests there are a lot of intentional moves you can make to get boulders of the same color grouped together, if you're willing to calculate it.
-* The AI consistenly assembles groups of 16+ boulders in the early levels. **This makes early undos very strong**, since they are easily worth 32-40 points each. My winning run was partly from a Multiplier in level 1, but was really carried by getting two Undos in level 2.
-* **Whoever designed the Flash game was a monster.** In the original Flash game, you only get to proceeed to the next level if you earn enough points within the current level, with the point thresholds increasing the further you get.
-But the AI actually earns *fewer* points per level as the game progress.
+* The AI consistently assembles groups of 16+ boulders in the early levels. **This makes early undos very strong**, since they are easily worth 32-40 points each. My winning run was partly from a Multiplier in level 1, but was really carried by getting two Undos in level 2.
+* **Whoever designed the Flash game was a monster.** In the original Flash game, you only get to proceed to the next level if you earn enough points within the current level, with the point thresholds increasing the further you get.
+But the AI actually earns *fewer* points per level as the game progresses.
 My AI averages 203 points in level 7 and 185 points in level 9. If the point thresholds were enforced in the HTML5 version, the AI would regularly fail by level 7 or 8.
 
 I do wonder if I could have gotten the avatar faster by
