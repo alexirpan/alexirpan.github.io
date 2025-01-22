@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "MIT Mystery Hunt 2025"
+date:   2024-01-21 01:41:00 -0700
+---
+
+*This has spoilers for MIT Mystery Hunt 2025. Spoilers are not labeled. I will add puzzle
+links once there's a stable link to them.*
+
+Puzzles touched:
+
+XOXO
+Jewelry Store
+Art Gallery
+Boardwalk
+Casino
+Battle Factory
+Downright Backwards, a bit
+Copypasta, a bit
+Search Cube emoji
+Zing it Again
+Be Kind, Rewind
+On the Corner
+The Ultimate Insult
+Control Room (just spectating)
+Fight Night at Mo's
+Some Assembly Required (just for commentary)
+A Sudoku? (more commentary)
+Men's at My Nose (much much later)
+Chinatown
+Shells
+Do The manual Calculations
+Give This Grid a Shake
