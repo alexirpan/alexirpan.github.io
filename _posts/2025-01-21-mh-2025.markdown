@@ -7,6 +7,59 @@ date:   2024-01-21 01:41:00 -0700
 *This has spoilers for MIT Mystery Hunt 2025. Spoilers are not labeled. I will add puzzle
 links once there's a stable link to them.*
 
+I feel like I have less time to write my yearly Mystery Hunt post than usual. I don't
+actually have less time, there are no deadlines here, but last year I got my post out by
+the 21st, before TTBNL's AMA. Meanwhile I am starting this post on the 21st, and Death & Mayhem have
+already ran their AMA.
+To spoil the answer to this puzzle, MLK day was 5 days later than it was in 2024, and Death & Mayhem
+have been impressively on top of things, running their AMA within a few days of Hunt end.
+
+This year's Hunt was really solid, I enjoyed it more than
+their 2018 Hunt which is commonly cited as an all-timer. In part that's because I was remote in 2018, so I missed some of the physical puzzle nonsense from that year, but I do think the rounds
+in 2025 rivaled some of the concepts from 2018. One of the hypest things you can do in a puzzlehunt
+is backsolve a meta, so of course I would like the hunt where we backsolved 5 of them.
+
+It did make me a little wistful about writing 2023's Mystery Hunt. A lot of 2023's writing goals
+were to write something analogous to 2018 (fewer puzzles, more involved meta structures, go all-in on what teammate values). I know it's stupid and doesn't make sense, but throughout the weekend I
+was thinking "dang, this is what could have been if we'd executed better".
+
+During wrap-up, Death & Mayhem said they were "a little bit capital E Extra in everything we do", and, yes, that came through, it was great 10/10, very strong theater kid energy, like they had charged up 7 years of power level and went nuts once they got another chance to write Hunt.
+
+![Penny being very extra](/public/mh-2025/penny.png)
+{: .centered }
+
+From [Paranatural](https://www.paranatural.net/comic/archive)
+{: .centered }
+
+
+High-Level Thoughts
+----------------------------------------------------------------------
+
+Hunt was won at a reasonable time (Sunday 11 AM, hooray!) I would actually prefer it getting pushed even more towards the shorter end, given that Cardinality was a few hours ahead of 2nd place.
+
+The decision to give every team a radio was insane, very cool, and probably should not be repeated
+unless your team has the requisite experience. I did not do any radio puzzles besides listening to
+the weather (more on that later), but even during the weekend we broke our radio by just trying to charge it. We got it fixed pretty quickly, but at a high level glance it seemed like a huge headache to support.
+
+The Gala made a lot of sense in-story, and I would echo that it was great to run into hunters from
+other teams during the few times I visited. I'm not sure how many people it took to staff, but I would like something like it to come back.
+
+Story-wise, I think it's just hard to tell a story within a puzzlehunt. You have much more success
+if you instead focus on conveying a certain vibe or aesthetic, and then let that aesthetic carry
+the plot for people interested in following that. In that respect I feel this hunt delivered the crime noir aesthetic really well.
+
+The choose-your-own-adventure unlock system, I have mixed feelings about. Yes, it's neat that you
+can do a bunch of strategizing, and choose whether you want to go all-in on one round or chip away at each individually. It is nice that every puzzle will get worked on to some extent, rather than the last feeder in a round getting shafted.
+However, I feel it does require more diligence on the testsolving end. The open-world nature of Breath of the Wild was brought up as inspiration, but that invites the main criticism of Breath of the Wild: that in order to make every shrine a valid next shrine to attempt, all the shrines need to be "flat" in difficulty and complexity. There's not as much room for variance if it's possible for a team
+to pick a puzzle that's harder than expected (looking at you, Do the Manual Calculations).
+
+Personally, I thought the choose your own unlocks worked out a lot better than I expected them to.
+It did make hunt ops go "oh no how do we handle this" though. (IDK, what am I trying to say here.)
+
+Some overarching thoughts, before going into 
+
+Maybe I am just getting old, but I feel I have less time to write
+
 Puzzles touched:
 
 XOXO
