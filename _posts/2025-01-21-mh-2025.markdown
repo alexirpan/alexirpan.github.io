@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MIT Mystery Hunt 2025"
-date:   2024-01-21 01:41:00 -0700
+date:   2025-01-21 01:41:00 -0700
 ---
 
 *This has spoilers for MIT Mystery Hunt 2025. Spoilers are not labeled. I will add puzzle
@@ -90,9 +90,13 @@ in my carry-on. The solution was to be *stylish* and wear it on the plane there
 and back.
 
 In my free time pre-Hunt, I went to Puzzled Pint, where I tried to all-brain
-a logic puzzle (solve it without writing anything). This failed miserably and I
-went back to using pencil like a normal person.
+a logic puzzle (solve it without writing anything), and got involved in a heated argument
+about vegetables in the teammate Discord. It would be too silly to re-litigate, but
+my takeaways are that eating salads is a bad way to be vegetarian, people like vegetables
+more if they're cooked (shocker), and "screw zodiac signs, [what vegetable are you?](https://sophie006liu.github.io/vegetal/)"
 
+![Pho](/public/mh-2025/pho.png)
+{: .centered }
 
 
 Friday
@@ -120,42 +124,59 @@ metas.
 
 The last was decided on the latest and was by far the most controversial. As we
 went through the Hunt, exciting sounding puzzles would sit there, being
-unlockable if we cashed in the clue we had. This got worse when Hunt ops
+unlockable if we cashed in the clue we had. This got worse when hunt ops
 decided to stockpile 3 keys after the Illegal Search meta was unlocked.
 The reason they did so was because they strongly suspected more puzzles were
-gated behind Papa's Bookcase (because of course there should be a hidden room
-behind the books of an escape room). So they wanted to make sure puzzles could
-be unlocked once the meta was solved - but this
+gated behind Papa's Bookcase ("clearly there is a hidden room behind this bookcase").
+They wanted to make sure those puzzles could be unlocked once the meta was solved. This
+was a correct prediction, but they didn't tell everyone this was the plan,
+so a bunch of us just saw 3 keys that weren't getting used...
 
-they would unlock more puzzles after solving the
-they strongly suspected more puzzles would
-unlock
+I never felt like I ran out of puzzles to work on, but I did notice that we never really
+had a puzzle that had sat untouched for a long time like I'd seen in past Mystery Hunts.
+Based on informal polling,
 
-Hunt ops believed teammate didn't need more than a width of 12 puzzles to productively
-make progress, and wanted to reserve some nukes for endgame in case we were in danger of not finishing.
+* teammate turned 1 clue into keys
+* Cardinality turned 2 clues into keys
+* Galactic turned 3 clues in keys, but in retrospect converted 1 too many.
+* Providence turned 3 clues into keys, and also thought they converted 1 too many.
+* TSBI turned 2 clues into keys.
+* UE turned 3 clues into keys, and regretted it
 
-
-
-The eventual
-
-The system teammate converged to
-The eventual
-
-teammate historically has a hunt ops team, and if there is drama, it usually comes
-downstream of hunt strategy decisions.
-
+It is pretty clear to me that everyone who converted 3+ clues regretted it, with 2 clues
+as the typical no regret option.
 
 Puzzles touched:
 
-XOXO
+[**XOXO**](https://www.two-pi-noir.agency/puzzles/xoxo) - This was our first solve of the Hunt (hooray for the Activity Log to make checking this easy). I will always be proud that we outraced the logic puzzlers working on [Unreal Islands](https://www.two-pi-noir.agency/puzzles/unreal_islands). I identified two pairs then focused on transcribing pairs into the grid.
+
+[**Downright Backwards**](https://www.two-pi-noir.agency/puzzles/downright_backwards) - By the time I got to this puzzle, the entire grid had been filled out, and my one contribution was asking if
+we should try the opposite interpretation of the z-direction (which was correct).
+
+[**Battle Factory**](https://www.two-pi-noir.agency/puzzles/battle_factory) - I have been watching
+some Gen III Battle Factory speedruns recently, and luckily this puzzle got solved faster than those
+speedruns. This is a cute idea, I'm surprised I haven't seen it before.
+
+[**📑🍝**](https://www.two-pi-noir.agency/puzzles/%F0%9F%93%91%F0%9F%8D%9D) - I did not work on this puzzle, but got many confusing messages from friends until I understood why they were sending them.
+This ended up being an interesting litmus test for seeing how other teams were doing, based on when
+the 🍝 request came in.
+
+[**🔎🧊**](https://www.two-pi-noir.agency/puzzles/%F0%9F%94%8E%F0%9F%A7%8A) - A little annoyed with the final extraction step of this puzzle (really wanted it to be only adjacent letters, rather than any pair), but I liked everything before it.
+This was the first puzzle I did coding for, to brute force finding the words. There was a clean way
+to implement it, and the way I did it (7 nested for loops).
+
+[**Zing it Again**](https://www.two-pi-noir.agency/puzzles/zing_it_again) - The first set we found
+was Weird Al (as expected). We found the Bob's Burgers set pretty soon afterwards, but could not find
+the HM set for a *long* time. I was pretty happy about breaking into that one, definitely enjoyed the B-B-B-BAD TO THE CHROME rebus.
+
+[**Be Kind, Rewind**](https://www.two-pi-noir.agency/puzzles/be_kind_rewind) - This puzzle definitely reminded me of the similar one from Puzzle University, but that puzzle was fun and so was this one.
+I was originally drawn to this puzzle for the movie ID, but then it turned into more than that.
+Luckily, everyone working on the puzzle knew what Blockbuster was. I don't need to feel any older from Mystery HUnt
+
 Jewelry Store
 Art Gallery
 Boardwalk
 Casino
-Battle Factory
-Downright Backwards, a bit
-Copypasta, a bit
-Search Cube emoji
 Zing it Again
 Be Kind, Rewind
 No Notes (for the backsolve story)
