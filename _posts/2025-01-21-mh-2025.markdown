@@ -60,6 +60,90 @@ It did make hunt ops go "oh no how do we handle this" though. (IDK, what am I tr
 Pre-Hunt
 ---------------------------------------------------------------------------
 
+Our story begins with the Gala invitation.
+
+IMAGE HERE
+
+In previous years, teammate has tried to "solve" puzzles from pre-Hunt material.
+Every time, it was not a puzzle. After doing this for 5 years, we've stopped
+trying. The general thinking was that the Gala invitation was a puzzle, but it
+wouldn't be solvable without shell from the main Hunt.
+
+When we eventually did unlock the invitation puzzle, and found it had no shell,
+we were surprised. But we had brought the invitation from where it was shipped,
+so we didn't have to print it and solved it from the original. Supposedly
+Cardinality partly pre-solved the puzzle because "teammate is definitely going to pre-solve it and if we don't we'll be behind". Sorry to let you down? Embarassingly this
+also meant we failed to pre-solve the Dan Katz Puzzle Corner.
+
+Ignoring the puzzles for a bit (shocker), it recommended showing up to the
+event in cocktail attire. This was *very* convenient for me, since I was
+attending a wedding in the area before Hunt. (The couple specifically picked the
+week before Hunt because many of their friends are puzzle people.) That made it
+incredibly low effort to show up to kick-off dressed up, although teammate did
+do a group order of bowties. (Did you know you can buy boxes of 40 bowties for
+$25? It was surprisingly cheap to follow through.)
+
+BOWTIE IMAGE
+
+I did have to figure out how to get my blazer to Boston without wrinkling it
+in my carry-on. The solution was to be *stylish* and wear it on the plane there
+and back.
+
+In my free time pre-Hunt, I went to Puzzled Pint, where I tried to all-brain
+a logic puzzle (solve it without writing anything). This failed miserably and I
+went back to using pencil like a normal person.
+
+
+
+Friday
+-------------------------------------------------------------
+
+After kickoff finished, we went to our on-campus classroom to read the radio and
+how the key system worked.
+
+The first reaction of our hunt ops crew was "this is going to be a disaster",
+because at first glance the keys were going to create *so many decisions* and
+make controlling round prioritization a mess. They immediately first asked that
+no one outside hunt ops use any keys, then spent the start of Hunt figuring out
+what system to use.
+
+Eventually, they landed on this:
+* Whenever a new puzzle was discovered, a Discord alert would be fired by our
+Hunt management software.
+* Team members asynchronously vote on puzzles they wanted to work on, only voting
+on puzzles where they would actually work on it (rather than watch other people
+work on it).
+* Hunt ops would spend keys based on the votes. Round prioritization overrode
+votes, but votes within a round would be helpful.
+* Hunt ops would convert 1 clue to keys then keep the rest to push the final
+metas.
+
+The last was decided on the latest and was by far the most controversial. As we
+went through the Hunt, exciting sounding puzzles would sit there, being
+unlockable if we cashed in the clue we had. This got worse when Hunt ops
+decided to stockpile 3 keys after the Illegal Search meta was unlocked.
+The reason they did so was because they strongly suspected more puzzles were
+gated behind Papa's Bookcase (because of course there should be a hidden room
+behind the books of an escape room). So they wanted to make sure puzzles could
+be unlocked once the meta was solved - but this
+
+they would unlock more puzzles after solving the
+they strongly suspected more puzzles would
+unlock
+
+Hunt ops believed teammate didn't need more than a width of 12 puzzles to productively
+make progress, and wanted to reserve some nukes for endgame in case we were in danger of not finishing.
+
+
+
+The eventual
+
+The system teammate converged to
+The eventual
+
+teammate historically has a hunt ops team, and if there is drama, it usually comes
+downstream of hunt strategy decisions.
+
 
 Puzzles touched:
 
