@@ -7,25 +7,27 @@ date:   2025-01-21 01:41:00 -0700
 *This has spoilers for MIT Mystery Hunt 2025. Spoilers are not labeled. I will add puzzle
 links once there's a stable link to them.*
 
-I feel like I have less time to write my yearly Mystery Hunt post than usual. I don't
-actually have less time, there are no deadlines here, but last year I got my post out by
-the 21st, before TTBNL's AMA. Meanwhile I am starting this post on the 21st, and Death & Mayhem have
-already ran their AMA.
-To spoil the answer to this puzzle, MLK day was 5 days later than it was in 2024, and Death & Mayhem
-have been impressively on top of things, running their AMA within a few days of Hunt end.
+This year, I feel like I have less time to write my Mystery Hunt post than usual. I don't
+actually have less time, there are no deadlines here, but last year I got my post done before
+TTBNL's AMA, and I only *started* on this post by the time Death & Mayhem did theirs.
 
-This year's Hunt was really solid, I enjoyed it more than
-their 2018 Hunt which is commonly cited as an all-timer. In part that's because I was remote in 2018, so I missed some of the physical puzzle nonsense from that year, but I do think the rounds
-in 2025 rivaled some of the concepts from 2018. One of the hypest things you can do in a puzzlehunt
-is backsolve a meta, so of course I would like the hunt where we backsolved 5 of them.
+To spoil the answer to this puzzle, Death & Mayhem
+have been impressively on top of things, hosting their AMA the Wednesday after Hunt, and that
+was just a running theme.
+This year's Hunt was really solid, I enjoyed it more than their 2018 Hunt,
+which is commonly cited as an all-time good Mystery Hunt. In part that's because I was remote in 2018, so I missed all the in-person energy from that year, but I do think the rounds from
+2025 rivaled some of the concepts from 2018.
+One of the hypest things you can do in a puzzlehunt
+is backsolve a meta, so of course I would like the hunt where we backsolved five of them.
+(And they weren't even all Shell metas!)
 
 It did make me a little wistful about writing 2023's Mystery Hunt. A lot of 2023's writing goals
-were to write something analogous to 2018 (fewer puzzles, more involved meta structures, go all-in on what teammate values). I know it's stupid and doesn't make sense, but throughout the weekend I
+were to write something analogous to 2018 (fewer puzzles, weird and difficult metas, go all-in on what teammate values, scale down puzzle count). I know it's stupid and doesn't make sense, but throughout the weekend I
 was thinking "dang, this is what could have been if we'd executed better".
 
-During wrap-up, Death & Mayhem said they were "a little bit capital E Extra in everything we do", and, yes, that came through, it was great 10/10, very strong theater kid energy, like they had charged up 7 years of power level and went nuts once they got another chance to write Hunt.
+During wrap-up, Death & Mayhem said they were "a little bit capital E Extra in everything we do", and, yes, that came through. It was great, 10/10, very strong theater kid energy, like Death & Mayhem had charged up 7 years of power level and went nuts once they got to write Hunt again.
 
-![Penny being very extra](/public/mh-2025/penny.png)
+![Penny from Paranatural being very extra](/public/mh-2025/penny.png)
 {: .centered }
 
 From [Paranatural](https://www.paranatural.net/comic/archive)
@@ -35,26 +37,82 @@ From [Paranatural](https://www.paranatural.net/comic/archive)
 High-Level Thoughts
 ----------------------------------------------------------------------
 
-Hunt was won at a reasonable time (Sunday 11 AM, hooray!) I would actually prefer it getting pushed even more towards the shorter end, given that Cardinality was a few hours ahead of 2nd place.
+Hunt was won at a reasonable time. Sunday 11:47 AM, hooray! That being said, it still felt long
+because Cardinality won so far ahead of everyone else. Would definitely have preferred Hunt go shorter
+by another few hours, but can't complain too much.
 
 The decision to give every team a radio was insane, very cool, and probably should not be repeated
 unless your team has the requisite experience. I did not do any radio puzzles besides listening to
-the weather (more on that later), but even during the weekend we broke our radio by just trying to charge it. We got it fixed pretty quickly, but at a high level glance it seemed like a huge headache to support.
+the weather (more on that later), but we did break our radio when we plugged it into charging
+while the radio was still on. We got it fixed, but it was indicative of how much of a headache
+it looked like to support.
 
 The Gala made a lot of sense in-story, and I would echo that it was great to run into hunters from
-other teams during the few times I visited. I'm not sure how many people it took to staff, but I would like something like it to come back.
+other teams during the few times I visited. I'm not sure how many people it took to staff, but I would like something similar to come back.
 
 Story-wise, I think it's just hard to tell a story within a puzzlehunt. You have much more success
 if you instead focus on conveying a certain vibe or aesthetic, and then let that aesthetic carry
-the plot for people interested in following that. In that respect I feel this hunt delivered the crime noir aesthetic really well.
+the plot for people interested in the story. In that respect, I feel this hunt delivered the crime noir aesthetic really well, even if I didn't fully remember everyone's name or secret.
 
-The choose-your-own-adventure unlock system, I have mixed feelings about. Yes, it's neat that you
-can do a bunch of strategizing, and choose whether you want to go all-in on one round or chip away at each individually. It is nice that every puzzle will get worked on to some extent, rather than the last feeder in a round getting shafted.
-However, I feel it does require more diligence on the testsolving end. The open-world nature of Breath of the Wild was brought up as inspiration, but that invites the main criticism of Breath of the Wild: that in order to make every shrine a valid next shrine to attempt, all the shrines need to be "flat" in difficulty and complexity. There's not as much room for variance if it's possible for a team
-to pick a puzzle that's harder than expected (looking at you, Do the Manual Calculations).
+And now....
 
-Personally, I thought the choose your own unlocks worked out a lot better than I expected them to.
-It did make hunt ops go "oh no how do we handle this" though. (IDK, what am I trying to say here.)
+Choose-Your-Own-Adventure
+----------------------------------------------------------------------------
+
+I think if you want to do a choose-your-own adventure unlock system. this Hunt was a good
+implementation of it, and showcased its strengths. The choices are informed, and it enables a
+lot of strategizing on whether to go all-in on one round or spread out. It is much more likely
+that every puzzle is worked on by many teams, rather than the final feeders in unlock order
+getting shafted.
+
+The open-world nature of Breath of the Wild was brought up as inspiration, but that invites the main criticism of Breath of the Wild: in order to make every shrine a valid next shrine to attempt,
+most shrines need to be flat in difficulty, complexity, and reward. This was less true for
+puzzles, where the value of a round feeder can shift, and sometimes you open
+a puzzle that's harder than expected (looking at you, Do the Manual Calculations).
+
+I had a lot of fun with the choose your own unlocks. I am not sure if our
+hunt ops team felt the same way? To borrow a metaphor from Defunctland's FastPass video,
+some people enjoy meticulously *planning* their trip to Disney World, and some people just
+want to *go* to Disney World. My experience was much closer to the "go to Disney World" side.
+I saw puzzles get unlocked, with no idea what round they were in, and I just worked on them,
+because I assumed hunt ops was only unlocking puzzles that helped Hunt progression.
+Meanwhile, the first reaction of our hunt ops to the
+keys was "this is going to be a disaster", since it added lots of tiny decisions on top of their
+existing large scale decisions.
+
+The eventual teammate key system was this:
+
+* Hunt ops owns all the keys and clues. No one else gets to use them unless hunt ops says it's okay.
+* The manager of our Hunt management system modified their bot to send a Discord alert
+whenever we revealed a new puzzle.
+* Team members asynchronously vote on puzzles they want to work on, where a vote means
+you will actually work on it, rather than want to watch other people work on it.
+* Keys will be spent based on votes made, taking round prioritization into account. Ping hunt
+ops if keys haven't been used in a while.
+* Hunt ops planned to convert the 1st clue to keys, then reassess.
+
+This was all pretty uncontroversial. Where it got controversial was when we got out 2nd clue,
+ops did a discussion, and declared that we would be saving all future clues for endgame puzzles.
+As we progressed through the Hunt, exciting sounding puzzles would sit there, being
+unlockable if we cashed in clues. This was exacerbated when hunt ops decided to stockpile
+3 keys after the Illegal Search meta was unlocked.
+The reason they did so was because they strongly suspected more puzzles were
+gated behind Papa's Bookcase ("clearly the bookcase of an escape room will hide another room").
+They wanted to make sure that if puzzles were gated behind the bookcase, they could immediately
+unlock them to avoid stalling out the round. This was a correct prediction, and getting an instant
+3 unlocks post-Bookcase definitely contributed to us doing well this Hunt. The one problem was
+that they didn't tell everybody this was the plan. So a number of people saw that we had 3 keys,
+and weren't using them, when hype sounding puzzles like The 10000-Sheet Excel File weren't
+getting unlocked...
+
+Personally, I never felt like I ran out of puzzles to work on. There was always something in motion
+that I could contribute to. However, I did notice that we never really had a puzzle that sat untouched
+for a long time, like I'd seen in past Mystery Hunts. Based on asking other teams, teammate was
+on the low end for clue to key conversion. We converted 1, Cardinality converted 2,
+Galactic converted 3 and regretted converting the 3rd, UE converted 3 and also regretted it,
+Providence converted 3 and *didn't* regret it, TSBI converted 3, Setec converted 4.
+It worked out for us, but I can totally see how it may have been more fun to just unlock all the
+things.
 
 
 Pre-Hunt
@@ -468,5 +526,24 @@ the calls for a Morse code nutrimatic. I'm guessing someone did implement one by
 
 ## Endgame
 
-The Killer
+As explained in the wrap-up, in the runaround, teams ended up at the Finster vault. The door was
+locked with an audio lock installed by Sidecar. To open the lock, we needed to do [Foley](https://en.wikipedia.org/wiki/Foley_(filmmaking)) for a 3 minute silent movie. Only one person could
+see the movie through a hole in the vault door. The room would first play the movie in the door,
+recording all audio, then it would play the movie (with audio) on a big projector.
 
+The audio in wrap-up explaining this was a bit muted, so, for your viewing pleasure, here is our
+first attempt.
+
+VIDEO
+
+Yeah, turns out using audio cues during Foley doesn't actually work. A few of us initially planned
+to refer to the recording, but D&M came over and quickly gave some in-universe speech about how
+it was impossible for us to have such compact video cameras in this day and age, to indicate
+using recordings for timing was banned. We did it properly the second time (or more accurately, we
+spent so long coordinating that D&M told us "the lock's not *that* sensitive" so that they could
+get us out of the vault for the next runaround.)
+
+After this finished, we went back to HQ. I helped clean up, then went with a few others to
+the MIT DDR room
+
+IMAGES
