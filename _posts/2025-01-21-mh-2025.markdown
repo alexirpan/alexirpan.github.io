@@ -54,65 +54,75 @@ Story-wise, I think it's just hard to tell a story within a puzzlehunt. You have
 if you instead focus on conveying a certain vibe or aesthetic, and then let that aesthetic carry
 the plot for people interested in the story. In that respect, I feel this hunt delivered the crime noir aesthetic really well, even if I didn't fully remember everyone's name or secret.
 
-And now....
+As for the unlocks...
+
 
 Choose-Your-Own-Adventure
 ----------------------------------------------------------------------------
 
 I think if you want to do a choose-your-own adventure unlock system. this Hunt was a good
-implementation of it, and showcased its strengths. The choices are informed, and it enables a
+implementation of it, and showcased its strengths. The choices were informed, so teams could solve
+the puzzles that sounded exciting to them. It enabled a
 lot of strategizing on whether to go all-in on one round or spread out. It is much more likely
 that every puzzle is worked on by many teams, rather than the final feeders in unlock order
 getting shafted.
 
 The open-world nature of Breath of the Wild was brought up as inspiration, but that invites the main criticism of Breath of the Wild: in order to make every shrine a valid next shrine to attempt,
-most shrines need to be flat in difficulty, complexity, and reward. This was less true for
-puzzles, where the value of a round feeder can shift, and sometimes you open
-a puzzle that's harder than expected (looking at you, Do the Manual Calculations).
+most shrines are flat in difficulty, complexity, and reward. It is much more interesting to find
+a shrine than to complete it. In puzzles this is reversed, where the act of unlocking is easy
+but the value and difficulty of a feeder varies.
+Sometimes you open a puzzle that's harder than expected and just go down 1 width. (Looking at you,
+Do the Manual Calculations.)
 
 I had a lot of fun with the choose your own unlocks. I am not sure if our
 hunt ops team felt the same way? To borrow a metaphor from Defunctland's FastPass video,
-some people enjoy meticulously *planning* their trip to Disney World, and some people just
+some people enjoy *planning* their trip to Disney World, and some people just
 want to *go* to Disney World. My experience was much closer to the "go to Disney World" side.
-I saw puzzles get unlocked, with no idea what round they were in, and I just worked on them,
+I saw puzzles get unlocked, with no idea what round they were in, and I worked on them
 because I assumed hunt ops was only unlocking puzzles that helped Hunt progression.
 Meanwhile, the first reaction of our hunt ops to the
 keys was "this is going to be a disaster", since it added lots of tiny decisions on top of their
-existing large scale decisions.
+existing large scale decisions. I do hope it was a fun disaster, rather than a real disaster.
 
 The eventual teammate key system was this:
 
 * Hunt ops owns all the keys and clues. No one else gets to use them unless hunt ops says it's okay.
-* The manager of our Hunt management system modified their bot to send a Discord alert
+* The owner of our Hunt management system modified their bot to send a Discord alert
 whenever we revealed a new puzzle.
 * Team members asynchronously vote on puzzles they want to work on, where a vote means
-you will actually work on it, rather than want to watch other people work on it.
+you will actually work on it, rather than watch other people work on it.
 * Keys will be spent based on votes made, taking round prioritization into account. Ping hunt
 ops if keys haven't been used in a while.
 * Hunt ops planned to convert the 1st clue to keys, then reassess.
 
-This was all pretty uncontroversial. Where it got controversial was when we got out 2nd clue,
-ops did a discussion, and declared that we would be saving all future clues for endgame puzzles.
+This was all pretty uncontroversial. Where it got controversial was when we got our 2nd clue,
+hunt ops did a discussion, and declared that we would be saving all future clues to push feeders
+on endgame metas.
 As we progressed through the Hunt, exciting sounding puzzles would sit there, being
 unlockable if we cashed in clues. This was exacerbated when hunt ops decided to stockpile
-3 keys after the Illegal Search meta was unlocked.
+3 keys after we'd made some progress on the Illegal Search meta.
 The reason they did so was because they strongly suspected more puzzles were
 gated behind Papa's Bookcase ("clearly the bookcase of an escape room will hide another room").
 They wanted to make sure that if puzzles were gated behind the bookcase, they could immediately
 unlock them to avoid stalling out the round. This was a correct prediction, and getting an instant
-3 unlocks post-Bookcase definitely contributed to us doing well this Hunt. The one problem was
-that they didn't tell everybody this was the plan. So a number of people saw that we had 3 keys,
-and weren't using them, when hype sounding puzzles like The 10000-Sheet Excel File weren't
+3 unlocks post-Bookcase definitely contributed to us doing well there. The problem was
+that they didn't tell everybody this was the plan. So multiple people saw that we had keys,
+and weren't using them even on reminder ping, when hype puzzles like The 10000-Sheet Excel File weren't
 getting unlocked...
 
 Personally, I never felt like I ran out of puzzles to work on. There was always something in motion
 that I could contribute to. However, I did notice that we never really had a puzzle that sat untouched
 for a long time, like I'd seen in past Mystery Hunts. Based on asking other teams, teammate was
 on the low end for clue to key conversion. We converted 1, Cardinality converted 2,
-Galactic converted 3 and regretted converting the 3rd, UE converted 3 and also regretted it,
+Galactic converted 3 and regretted converting the 3rd, Unicode Equivalence converted 3 and also regretted it,
 Providence converted 3 and *didn't* regret it, TSBI converted 3, Setec converted 4.
-It worked out for us, but I can totally see how it may have been more fun to just unlock all the
+It worked out for us, but I can totally see how it would have been more fun to just unlock all the
 things.
+
+Choose-your-own-unlocks have had two good showings this year and in 2018, but I'd be hesitant
+to say that's evidence for it as the default. The data is not that it works, it's that it works
+if you're Death & Mayhem and have 100+ people helping out the weekend of Hunt. I have enjoyed
+all the Huntinalities, so I trust Cardinality whatever they choose.
 
 
 Pre-Hunt
@@ -120,37 +130,40 @@ Pre-Hunt
 
 Our story begins with the Gala invitation.
 
-IMAGE HERE
+![Gala invitation](/public/mh-2025/invite.png)
+{: .centered }
 
-In previous years, teammate has tried to "solve" puzzles from pre-Hunt material.
-Every time, it was not a puzzle. After doing this for 5 years, we've stopped
+In previous years, teammate has tried to solve puzzles from pre-Hunt material.
+Every time, they were not a puzzle. After doing this for 5 years, we've stopped
 trying. The general thinking was that the Gala invitation was a puzzle, but it
 wouldn't be solvable without shell from the main Hunt.
 
 When we eventually did unlock the invitation puzzle, and found it had no shell,
-we were surprised. But we had brought the invitation from where it was shipped,
-so we didn't have to print it and solved it from the original. Supposedly
-Cardinality partly pre-solved the puzzle because "teammate is definitely going to pre-solve it and if we don't we'll be behind". Sorry to let you down? Embarassingly this
-also meant we failed to pre-solve the Dan Katz Puzzle Corner.
+we were surprised.
+Supposedly
+Cardinality partly pre-solved the puzzle because "teammate is definitely going to pre-solve it and if we don't we'll be behind". Sorry to let you down?
+We also failed to pre-solve the Dan Katz Puzzle Corner.
 
-Ignoring the puzzles for a bit (shocker), it recommended showing up to the
-event in cocktail attire. This was *very* convenient for me, since I was
-attending a wedding in the area before Hunt. (The couple specifically picked the
+Ignoring the puzzles for a bit, the invite suggested cocktail attire.
+This was *very* convenient for me, since I was
+attending a wedding before Hunt. (The couple specifically picked the
 week before Hunt because many of their friends are puzzle people.) That made it
-incredibly low effort to show up to kick-off dressed up, although teammate did
-do a group order of bowties. (Did you know you can buy boxes of 40 bowties for
-$25? It was surprisingly cheap to follow through.)
+incredibly low effort to show up to kick-off dressed up. teammate also did do a
+group order of bowties. Did you know you can buy boxes of 40 bowties for
+$25 on Amazon? It was surprisingly cheap to play along.
 
-BOWTIE IMAGE
+![Bowtie with MATE pin and 2 Pi Noir pin](/public/mh-2025/bowtie.jpg)
+{: .centered }
 
 I did have to figure out how to get my blazer to Boston without wrinkling it
-in my carry-on. The solution was to be *stylish* and wear it on the plane there
-and back.
+in my carry-on. The solution was to be *stylish* and wear it on my person, which meant
+I also dressed up at wrap-up and in the airport.
 
 In my free time pre-Hunt, I went to Puzzled Pint, where I tried to all-brain
-a logic puzzle (solve it without writing anything), and got involved in a heated argument
+a logic puzzle (solve it without writing anything). This was a terrible idea.
+I also went to some museums in the area, and got involved in a heated argument
 about vegetables in the teammate Discord. It is not worth re-litigating, but
-my takeaways are that eating salads is a bad way to be vegetarian, people like vegetables
+my takeaways are that some vegetarians dislike salads, people like vegetables
 more if they're cooked (shocker), and "screw zodiac signs, [what vegetable are you?](https://sophie006liu.github.io/vegetal/)"
 
 ![Pho](/public/mh-2025/pho.png)
@@ -160,84 +173,46 @@ more if they're cooked (shocker), and "screw zodiac signs, [what vegetable are y
 Friday
 -------------------------------------------------------------
 
-After kickoff finished, we went to our on-campus classroom to read the radio and
-how the key system worked.
+After kickoff finished, we went to our on-campus classrooms, and puzzle release
+went off without a hitch. Honestly, I'm not sure why no team has thought of "don't refresh
+the page, let it live update" before. It's just such a straightforwardly good idea.
 
-The first reaction of our hunt ops crew was "this is going to be a disaster",
-because at first glance the keys were going to create *so many decisions* and
-make controlling round prioritization a mess. They immediately first asked that
-no one outside hunt ops use any keys, then spent the start of Hunt figuring out
-what system to use.
-
-Eventually, they landed on this:
-* Whenever a new puzzle was discovered, a Discord alert would be fired by our
-Hunt management software.
-* Team members asynchronously vote on puzzles they wanted to work on, only voting
-on puzzles where they would actually work on it (rather than watch other people
-work on it).
-* Hunt ops would spend keys based on the votes. Round prioritization overrode
-votes, but votes within a round would be helpful.
-* Hunt ops would convert 1 clue to keys then keep the rest to push the final
-metas.
-
-The last was decided on the latest and was by far the most controversial. As we
-went through the Hunt, exciting sounding puzzles would sit there, being
-unlockable if we cashed in the clue we had. This got worse when hunt ops
-decided to stockpile 3 keys after the Illegal Search meta was unlocked.
-The reason they did so was because they strongly suspected more puzzles were
-gated behind Papa's Bookcase ("clearly there is a hidden room behind this bookcase").
-They wanted to make sure those puzzles could be unlocked once the meta was solved. This
-was a correct prediction, but they didn't tell everyone this was the plan,
-so a bunch of us just saw 3 keys that weren't getting used...
-
-I never felt like I ran out of puzzles to work on, but I did notice that we never really
-had a puzzle that had sat untouched for a long time like I'd seen in past Mystery Hunts.
-Based on informal polling,
-
-* teammate turned 1 clue into keys
-* Cardinality turned 2 clues into keys
-* Galactic turned 3 clues in keys, but in retrospect regretted this and would have preferred
-using 2 keys.
-* Providence turned 3 clues into keys, and didn't regret it.
-* TSBI turned 2 clues into keys.
-* UE turned 3 clues into keys, and regretted it, saying they overestimated progress from
-Stakeout puzzles
-* Setec Astornomy turned 4 clues into keys
-
-So we were definitely on the low end.
-
-Puzzles touched:
 
 ## Missing Diamond
 
-[**XOXO**](https://www.two-pi-noir.agency/puzzles/xoxo) - This was our first solve of the Hunt (hooray for the Activity Log to make checking this easy). I will always be proud that we outraced the logic puzzlers working on [Unreal Islands](https://www.two-pi-noir.agency/puzzles/unreal_islands). I identified two pairs then focused on transcribing pairs into the grid.
+[**XOXO**](https://www.two-pi-noir.agency/puzzles/xoxo) - This was our first solve of the Hunt (hooray for the Activity Log to make checking this easy). I will always be proud that we outraced the logic puzzlers working on [Unreal Islands](https://www.two-pi-noir.agency/puzzles/unreal_islands).
+Identified two pairs then focused on transcribing pairs into the grid for extraction.
 
 [**Downright Backwards**](https://www.two-pi-noir.agency/puzzles/downright_backwards) - By the time I got to this puzzle, the entire grid had been filled out, and my one contribution was asking if
 we should try the opposite interpretation of the z-direction (which was correct).
 
 [**Battle Factory**](https://www.two-pi-noir.agency/puzzles/battle_factory) - I have been watching
-some Gen III Battle Factory speedruns recently, and luckily this puzzle got solved faster than those
-speedruns. This is a cute idea, I'm surprised I haven't seen it before.
+some Gen III Battle Factory speedruns recently. Luckily this puzzle got solved faster than those
+speedruns, with much less RNG. This is a cute idea, I'm surprised I haven't seen it before.
 
-[**📑🍝**](https://www.two-pi-noir.agency/puzzles/%F0%9F%93%91%F0%9F%8D%9D) - I did not work on this puzzle, but got many confusing messages from friends until I understood why they were sending them.
-This ended up being an interesting litmus test for seeing how other teams were doing, based on when
-the 🍝 request came in.
+[**📑🍝**](https://www.two-pi-noir.agency/puzzles/%F0%9F%93%91%F0%9F%8D%9D) - I did not work on this puzzle, but got many confusing DMs until I understood what was going on.
+This turned into an interesting litmus test for how other teams were doing, based on when
+they asked for 🍝.
 
 [**🔎🧊**](https://www.two-pi-noir.agency/puzzles/%F0%9F%94%8E%F0%9F%A7%8A) - A little annoyed with the final extraction step of this puzzle (really wanted it to be only adjacent letters, rather than any pair), but I liked everything before it.
-This was the first puzzle I did coding for, to brute force finding the words. There was a clean way
-to implement it, and the way I did it (7 nested for loops).
+This was the first puzzle I did coding for this Hunt, to brute force finding the words.
+There was a clean way to implement it, and the way I did it (7 nested for loops).
 
 [**Zing it Again**](https://www.two-pi-noir.agency/puzzles/zing_it_again) - The first set we found
 was Weird Al (as expected). We found the Bob's Burgers set pretty soon afterwards, but could not find
 the HM set for a *long* time. I was pretty happy about breaking into that one, definitely enjoyed the B-B-B-BAD TO THE CHROME rebus.
 
-[**The Boardwalk**](https://www.two-pi-noir.agency/puzzles/the_boardwalk) - I decided to work on most of the metas in Missing Diamond, because, well, I like working on metas. I didn't come up with
-any of the extraction ideas for this meta, instead I did more advocating that the ideas others proposed were correct.
-It did take us an embarrassing amount of time to find THE BEATLES space, because we didn't realize The Beatles Collectors Edition could have a space for THE BEATLES. We also expected letters to get extracted from the other half of the board. Luckily one person decided to submit the letters we'd extracted from the 5/5 feeders we had instead of speculating on what more feeders we'd get.
+[**The Boardwalk**](https://www.two-pi-noir.agency/puzzles/the_boardwalk) - I worked on all the metas
+in Missing Diamond, because, well, I like working on metas. I didn't come up with
+any of the extraction ideas for this meta, instead I did advocating of the ideas I liked.
+It did take us longer than it should have to find THE BEATLES, because we didn't realize The Beatles Collectors Edition could have a space for THE BEATLES. We also expected letters to get extracted from the entire board, and assumed we were missing feeders since all our letters were only in one
+half. Luckily, one person decided to submit exactly what was in the sheet from the 5/5 feeders
+we had.
 
-Also, I don't think anyone else has mentioned this: it's kinda insane Death & Mayhem implemented 3 minigames for the Boardwalk interaction just for the story? Like, what? I tapped into my God Gamer genes and won all of them. They don't seem to be replayable, hope they make it to the archive!
+Also, I don't think anyone else has mentioned this: it's kinda insane Death & Mayhem implemented 3 minigames just for the Boardwalk story interaction? Like, what? I tapped into my God Gamer genes and won all of them. They don't seem to be replayable, hope they make it to the archive!
 
-[**The Jewelry Store**](https://www.two-pi-noir.agency/puzzles/the_jewelry_store) - The meta crew next looked at The Jewelry Store, breaking in on the idea pretty quickly. Interestingly, when we broke in, we had 5/7 feeders and all the feeders we did have were adjacent in the chain. That was pretty unlikely (about 1/6th if I'm doing the math right), and hurt the wheel of fortune attempts, we needed a 6th feeder to solve it. I thought the backsolve would be pretty easy, but the constraints were surprisingly loose and we ended up forward solving our final feeder.
+[**The Jewelry Store**](https://www.two-pi-noir.agency/puzzles/the_jewelry_store) - The meta crew next looked at The Jewelry Store, breaking in pretty quickly. Interestingly, when we broke in, all our 5/7 feeders were adjacent in the chain. That was pretty unlikely (about 1/6th if I'm doing the math right), and hurt the wheel of fortune attempts, we needed a 6th feeder to solve it. I thought the backsolve would be easy, but there was a surprisingly large set of valid answers and we ended
+up forward solving the last feeder.
 
 [**The Art Gallery**](https://www.two-pi-noir.agency/puzzles/the_art_gallery) - When I started looked at this meta, we'd already IDed the Crayola and RGB steps. Another teammate did a sort by length,
 and I noticed the UNICODES partial. From there it still took us a while. I refuse to believe there's a good canonical source for this, we tried both Wikipedia and the Crayola fandom page and they gave conflicting data. At one point, I decided the most canonical source would be to use
