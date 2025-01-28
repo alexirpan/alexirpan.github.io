@@ -28,7 +28,7 @@ Here are some Mystery Hunt related things I've written:
     * [2022]({% post_url 2022-01-22-mh-2022 %})
     * [2023]({% post_url 2023-04-21-mh-2023 %})
     * [2024]({% post_url 2024-01-21-mh-2024 %})
-    * [2025]({% post_url 2025-01-27-mh-2025 %})
+    * [2025]({% post_url 2025-01-28-mh-2025 %})
 
 I've also written some puzzles.
 My more recent puzzles are better than my old ones, but I'm including everything for
