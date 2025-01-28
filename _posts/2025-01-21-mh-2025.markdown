@@ -4,8 +4,7 @@ title:  "MIT Mystery Hunt 2025"
 date:   2025-01-21 01:41:00 -0700
 ---
 
-*This has spoilers for MIT Mystery Hunt 2025. Spoilers are not labeled. I will add puzzle
-links once there's a stable link to them.*
+*This has spoilers for MIT Mystery Hunt 2025. Spoilers are not labeled or hidden.*
 
 I feel I have been slower about this year's post than last year's.
 There are no deadlines here, but last year I got my post done before

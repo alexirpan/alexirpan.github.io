@@ -4,8 +4,7 @@ title:  "MIT Mystery Hunt 2024"
 date:   2024-01-21 01:41:00 -0700
 ---
 
-*This has spoilers for MIT Mystery Hunt 2024. Spoilers are not labeled. I will add puzzle
-links once there's a stable link to them.*
+*This has spoilers for MIT Mystery Hunt 2024. Spoilers are not labeled.*
 
 I hunted with teammate again this year, because there is nothing quite like writing a Mystery Hunt to forge friends through fire.
 
@@ -209,7 +208,7 @@ With the site fixed, it's time to get into the puzzles proper.
 
 ## The Throne Room
 
-**Herc-U-Lease** - Ah, the scavenger hunt! Technically not in this round but I'll put it here since
+[**Herc-U-Lease**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/herc-u-lease) - Ah, the scavenger hunt! Technically not in this round but I'll put it here since
 I didn't do anything in this aside from getting nowhere on Annual International Fictionary Night.
 
 We did a few tasks, but on doing a cost-benefit analysis, we decided the effort
@@ -238,15 +237,15 @@ Everyone knew that tangerine was going to hit someone.
 This round was released via Google Docs to teams, using phone callbacks.
 I don't really miss them but it was a fun throwback.
 
-**Badges Badges Badges** - The first puzzle I worked on while waiting for puzzle release. Honestly I'm surprised this is the first time someone made
+[**Badges Badges Badges**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/badges) - The first puzzle I worked on while waiting for puzzle release. Honestly I'm surprised this is the first time someone made
 the nametags a puzzle, but they *have* only been a thing for 3 years. I quickly recognized mine was NATO, but by the
 time I figured out what "echo" is, someone else has already solved the full badge. Then I got sidetracked into tech debugging.
 
-**Roguelikes with a K** - Listen, I'm always down to try a roguelike. I quickly learn I'm bad at
+[**Roguelikes with a K**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/roguelikes-with-a-k) - Listen, I'm always down to try a roguelike. I quickly learn I'm bad at
 roguelikes relative to teammate, and busy myself with organizing the sheet instead. We submit (well, call-in) what we think is the final answer, but realize the next step before TTBNL calls us back.
 I still have objections to some of the interpretations, they felt a bit loose. We considered Wordle to have resource management, since you had a limited number of guesses, but figured out it needed to be "false" during our error correction tweaking. Overall, cool idea, just wish it was tighter.
 
-**Dating Stars** - The solvers of this puzzle had figured out the Chinese zodiac, but not anything
+[**Dating Stars**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/dating-stars) - The solvers of this puzzle had figured out the Chinese zodiac, but not anything
 else in the virgin vs chad memes. They were convinced the Western zodiac would be
 relevant, and in an increasingly desperate attempt, they asked a Homestuck consultant (me) to check if
 anything lined up with the trolls.
@@ -255,12 +254,12 @@ I read over the puzzle and said "definitely not, also what in this puzzle would 
 ![chads](/public/mh-2024/chads.png)
 {: .centered }
 
-**Judges of the Underworld (meta)** - Two of us (including me) were convinced that the heights of the pillars on the round page would be important for ordering, and got confused why it was reading so poorly, right up until someone resorted the sheet. We definitely did not need all the feeders to
+[**Judges of the Underworld (meta)**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/judges-of-the-underworld) - Two of us (including me) were convinced that the heights of the pillars on the round page would be important for ordering, and got confused why it was reading so poorly, right up until someone resorted the sheet. We definitely did not need all the feeders to
 solve this meta, but those are the rules.
 
 ## Rivers of the Dead
 
-**Why the Romans Never Invented Logic Puzzles** - This idea was both cursed and a lot of fun. Three of us were working on a grid, slowly making deductions and backtracking through mistakes,
+[**Why the Romans Never Invented Logic Puzzles**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/why-the-romans-never-invented-logic-puzzles) - This idea was both cursed and a lot of fun. Three of us were working on a grid, slowly making deductions and backtracking through mistakes,
 and then Lumia says "okay, I've solved the logic puzzle" and drops the completed grid into the spreadsheet.
 This has happened to me enough times that I've stopped questioning it.
 
@@ -269,12 +268,12 @@ and solve it from there.
 I get annoyed enough at the puzzle to start writing code to bash the finale, but the puzzle
 is finished before I get my code going.
 
-**Two Outs, Two Strikes, and...** - I didn't work on this puzzle, but want to call it out as very funny.
+[**Two Outs, Two Strikes, and...**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/two-outs-two-strikes-and) - I didn't work on this puzzle, but want to call it out as very funny.
 
-**temporary name** - We solve the answer matching pretty quickly. I volunteer to enter it into the site. It fails to do anything, and I announce we're missing something.
+[**temporary name**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/temporary-name) - We solve the answer matching pretty quickly. I volunteer to enter it into the site. It fails to do anything, and I announce we're missing something.
 Around 10 minutes later, someone else resubmits the same answers to the website and it works, unlocking part 2. I guess I filled out the form wrong? Oops.
 
-**Do You Like Wordle?** - This was a very infamous puzzle to me, because it was our last feeder in all the Underworld rounds. We initially ignored
+[**Do You Like Wordle?**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/do-you-like-wordle) - This was a very infamous puzzle to me, because it was our last feeder in all the Underworld rounds. We initially ignored
 the puzzle due to the warning notice in errata. That meant that when we got back to it, we had very little progress on it, and effectively the entire team was forced to play Wordle due to
 our losecomm policies of forwardsolving everything.
 We split into two rough teams. One team played a bunch of Wordle games and shared screenshots into Discord, while the second team studied the screenshots to try to determine when a game would solve to a blue square or green square.
@@ -321,7 +320,7 @@ puzzles in between Overworld puzzles.
 It also meant I did almost none of this round. Oops! At least I'll have a lot of things to go back
 to.
 
-**Streams of Numbers** - I worked on this puzzle before we knew the round was supposed to be easy.
+[**Streams of Numbers**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/streams-of-numbers) - I worked on this puzzle before we knew the round was supposed to be easy.
 That is my excuse for everything that went wrong.
 
 After the initial ID of the numbers, we got very stuck on extraction.
@@ -406,7 +405,7 @@ were hard to backsolve anyways.
 
 ## Minneapolis-Saint Paul, MN
 
-**Triangles** - Oh boy, this puzzle. We started the puzzle on the D&D side, except I had no
+[**Triangles**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/triangles) - Oh boy, this puzzle. We started the puzzle on the D&D side, except I had no
 appetite to search up D&D rules, so instead I looked into the wordplay clues. We knew we wanted
 groups of 5 assembling a D20 from the beginning, but making it work was pretty tricky given
 the (intentional) ambiguity. Still, we were able to break in on some easier categories like
@@ -428,7 +427,7 @@ of the solve was rewarding enough.
 
 ## Yellowstone, WY
 
-**The 10,000 Commit Git Repository** -
+[**The 10,000 Commit Git Repository**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/the-10000-commit-git-repository) -
 
 \*puzzle unlocks\*
 
@@ -444,7 +443,7 @@ I missed this entire round. The bits and pieces I saw looked cool, I'll have to 
 
 ## Las Vegas, NV
 
-**The Strat** - An amusing early morning solve. Came in, solved some clues, wrote a small code
+[**The Strat**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/the-strat) - An amusing early morning solve. Came in, solved some clues, wrote a small code
 snippet to help assist in building the word ladders, and broke-in on the central joke of the puzzle.
 We then got stuck on extraction for a long, long time. We managed to solve it eventually by shitposting
 enough memes about the subject to notice a few key words, saving the people who were studying
@@ -454,10 +453,10 @@ I feel like this puzzle would have worked if the enumerations were either remove
 be total length ignoring spaces. They helped confirm things once we knew what we were doing, but were quite
 misleading beforehand. We spent a long time looking at the "breakpoints" implied by the enumerations.
 
-**Luxor** - did some IDing, but quickly left when I realized I was not interested in researching the
+[**Luxor**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/luxor) - did some IDing, but quickly left when I realized I was not interested in researching the
 subject matter.
 
-**Mandalay Bay** -
+[**Mandalay Bay**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/mandalay-bay) -
 
 ![Gambling](/public/mh-2024/gambling.png)
 {: .centered }
@@ -475,7 +474,7 @@ Our main objection at the time was the lack of a "roll 10x" or roll 100x" button
 like [Thrifty/Thrifty](https://2020.galacticpuzzlehunt.com/puzzle/thrifty-thrifty). I suppose
 it wasn't a huge deal though, we didn't need as many rolls to break-in as that puzzle.
 
-**Planet Hollywood** - I helped on the clue solving and ordering. For the extraction, right before
+[**Planet Hollywood**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/planet-hollywood) - I helped on the clue solving and ordering. For the extraction, right before
 Mystery Hunt we had run an internal puzzle event with an identical "connect the dots" mechanic as this one. That one clued spots in a specific shopping mall, and we initially thought we needed to find the
 locations of each restaurant within the Planet Hollywood resort.
 I bailed, but looking back I see the extraction was less painful than I thought.
@@ -485,19 +484,19 @@ I bailed, but looking back I see the extraction was less painful than I thought.
 Oh boy, we really overcomplicated the Hydra meta and almost full-solved the round before
 finishing it. This was when we started using our free answers to strategically direct solves towards specific metas.
 
-**How to Quadruple Your Money in Hollywood** - Originally, I thought this puzzle was going to
+[**How to Quadruple Your Money in Hollywood**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/how-to-quadruple-your-money-in-hollywood) - Originally, I thought this puzzle was going to
 be a joke about Hollywood perpetually remaking movies, recycling plots to sell the same idea
 multiple times. I still don't understand why the 2nd last entry is formatted like letters rather
 than email - is this supposed to be because the movie for this clue predated widespread email?
 
-**Isle of Misfit Puzzles** - The minipuzzles I did (East Stony Mountaion, Kitchen Island, CrXXXXgrXm Island) were fun, although I did spend a bunch of time meticulously coloring cells in Sheets
+[**Isle of Misfit Puzzles**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/isle-of-misfit-puzzles) - The minipuzzles I did (East Stony Mountaion, Kitchen Island, CrXXXXgrXm Island) were fun, although I did spend a bunch of time meticulously coloring cells in Sheets
 to match the Clue board and then saw it get unused in extraction. If it got used in numeral
 extraction, we skipped that for most minipuzzles. We were confident enough in the Hashi idea that
 most minis only had 2-3 possible numerals, and we brute-forced the numbers via the answer
 checker. I generally appreciated partial confirms but think this was one case that went too
 far. Final step was still cool though.
 
-**The Champion** - I keep doing puzzles thinking they'll be Magic: the Gathering puzzles, and
+[**The Champion**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/the-champion) - I keep doing puzzles thinking they'll be Magic: the Gathering puzzles, and
 then get baited into doing something else. We started by IDing the combat tricks. I am still embarrassed
 that our last ID was Gods Willing, I literally play that card in [competitive](https://www.channelfireball.com/article/Boros-Heroic-is-Still-the-Best-Budget-Deck-in-Pioneer-MTG/f7be7c49-2b84-4493-be48-857f67ebe4df/).
 
@@ -514,7 +513,7 @@ to the Student Center
 > "what are you doing?"  
 > "fact checking the iliad"
 
-**Nero Says** - I have done Mystery Hunt for over 10 years and this is the first time I've
+[**Nero Says**](https://puzzles.mit.edu/2024/mythstoryhunt.world/solutions/directions-event) - I have done Mystery Hunt for over 10 years and this is the first time I've
 done an event. Exciting! Normally I skip events for puzzles, but this year I wanted to try
 something new.
 
@@ -537,11 +536,11 @@ to do extraction (cute cluephrase), and we finished the puzzle. We were *very* t
 this puzzle got solved. This is one of those puzzles where I would have hated it
 if we got stuck, but didn't because we didn't.
 
-**5050 Matchups** - Every few puzzlehunts, I assume something is RPS-101 when it isn't. This
+[**5050 Matchups**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/hydra-head/39) - Every few puzzlehunts, I assume something is RPS-101 when it isn't. This
 time it actually was RPS-101! The consequence is that I ended up solving, like, ten copies of
 5050 Matchups, while taking breaks from...
 
-**Sumantle** - This puzzle was cool at the beginning, but I have no idea what model got used for
+[**Sumantle**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/sumantle) - This puzzle was cool at the beginning, but I have no idea what model got used for
 this, the scoring was incredibly weird. Our guess was that it was a pretty lightweight model,
 because the semantic scoring seemed worse than state-of-the-art.
 For many words in the first layer of the bracket, we had a ton of guesses in the 2-20 range without landing on the exact target word.
@@ -558,7 +557,7 @@ near the target word. Having one would have reduced frustration and probably cut
 
 ## Mississippi River
 
-**The Hermit Crab** - We needed a hint to understand what to do (trying to break-in from the last
+[**The Hermit Crab**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/the-hermit-crab) - We needed a hint to understand what to do (trying to break-in from the last
 one was a mistake), but this was a cool way to use previous Mystery Hunt puzzles once
 we understood what we were doing. Was very funny when we figured out how to use Random Hall.
 I ended up solving Story 1, 2, 3, and 4, although I had to recruit
@@ -567,25 +566,25 @@ initial break-in, but needed help on extract. Personally not a fan of classifyin
 We also needed a hint on how to reuse the final shell - I think it was fair but would
 have taken us a while to figure out.
 
-**99% of Mystery Hunt Teams Cannot Solve This** - LOL that this puzzle unlocked while our
+[**99% of Mystery Hunt Teams Cannot Solve This**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/99-percent-of-mystery-hunt-teams-cannot-solve-this) - LOL that this puzzle unlocked while our
 [math olympiad coach](https://web.evanchen.cc/) was eating dinner. That is all.
 
 ## Newport, RI
 
-**Najaf to...** - teammate has a few geography fans, who write puzzles like [First You Visit MIT](https://archives.mitmh2023.com/2023/abcde.puzzlefactory.place/puzzles/first-you-visit-mit)
+[**Najaf to...**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/najaf-to) - teammate has a few geography fans, who write puzzles like [First You Visit MIT](https://archives.mitmh2023.com/2023/abcde.puzzlefactory.place/puzzles/first-you-visit-mit)
 and play GeoGuessr Duels. Many times in this Hunt, the "Geovengers" assembled and disassembled
 as puzzles that looked like geography turned into not-geo puzzles. This was the puzzle that
 finally made the Geovengers stick together for a puzzle.
 
 How does it work? Oh I have no idea. I didn't work on it.
 
-**Augmented Raility** - video game puzzle video game puzzle video game puzzle.
+[**Augmented Raility**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/augmented-raility) - video game puzzle video game puzzle video game puzzle.
 
 teammate is the kind of team that takes this puzzle and identifies all the games and 80% of the maps in the games in 5 minutes without using search engines.
 Finding the exact positions took longer, but not too long, and we nutrimatic-ed the answer at
 5/10 letters. I wonder if choosing Streets for GoldenEye 64 was a reference to [Streets 1:12](https://www.youtube.com/watch?v=oYmqJl4MoNI) (slightly NSFW due to language).
 
-**Von Schweetz's Big Question** - We did the first step, which reminded me a lot of [Anthropology](https://www.puzzlesaremagic.com/puzzle/anthropology) from Puzzles are Magic, and then
+[**Von Schweetz's Big Question**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/von-schweetzs-big-question) - We did the first step, which reminded me a lot of [Anthropology](https://www.puzzlesaremagic.com/puzzle/anthropology) from Puzzles are Magic, and then
 started the second step, which also reminded me of Anthropology from Puzzles are Magic - not
 mechanically, more that
 I suspected the 1st step was an artificial excuse to make indices more interesting for the 2nd step.
@@ -593,10 +592,10 @@ Unfortunately we didn't finish this one since the meta for the round was solved 
 
 ## Nashville, TN
 
-**Sorry Not Sorry** - Incredible puzzle idea. Not sure I like that it's such a sparse
+[**Sorry Not Sorry**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/sorry-not-sorry) - Incredible puzzle idea. Not sure I like that it's such a sparse
 "diagramless" but we were cackling for most of the solve.
 
-**Duet (meta)** - We understood the round structure of Nashville, and that there was likely
+[**Duet (meta)**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/duet) - We understood the round structure of Nashville, and that there was likely
 something after Duet,
 but that didn't make doing so easy. There was pretty significant despair at the midway
 point of this puzzle, which we got to at like Monday 5 AM. The people working on this meta
@@ -606,7 +605,7 @@ transcript.
 ## Oahu, HI
 
 I did not work on this round. My impression of this round was entirely colored by
-Fren Amis unlocking, and every cryptics person leaving their puzzle to join the Brazilian
+[Fren Amis](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/fren-amis) unlocking, and every cryptics person leaving their puzzle to join the Brazilian
 cashewfruit rabbit hole for 12 hours.
 
 > "help i am trapped in a foreign language cryptic and it is eating me like a sad cold blob of paneer"
@@ -623,18 +622,18 @@ This is something that Mystery Hunt 2024 was worse at. (As a side note, I was al
 there was no activity log, but we skipped implementing it in the 2023 codebase for time, so I
 guess I can only blame myself.)
 
-**A More 6 ∪ 28 ∪ 496 ∪ …** - Featured my favorite hint response:
+[**A More 6 ∪ 28 ∪ 496 ∪ …**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/a-more-6-28-496) - Featured my favorite hint response:
 
 > The puzzle is not about chemistry. It is about the US government.
 
-**Intelligence Collection** - Codenames is always a good time. We found the assassins pretty
+[**Intelligence Collection**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/intelligence-collection) - Codenames is always a good time. We found the assassins pretty
 early, and initially thought it would be a do-it-again using the clue words to make a new
 Codenames grid.
 This felt unlikely, since it threw away a lot of information, so that part of the sheet
 was labeled "copium meta". I had to explain what "copium" meant to someone unfamiliar with the
 word. This was a definite lowlight in my journey of realizing where I fall on the degeneracy scale. At least we figured out the colors from the copium meta!
 
-**Queen Marchesa to g4** - Two Magic: the Gathering puzzles in one puzzlehunt? Surely this is
+[**Queen Marchesa to g4**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/queen-marchesa-to-g4) - Two Magic: the Gathering puzzles in one puzzlehunt? Surely this is
 illegal. Well, I won't complain. I was hopelessly lost on most of the chess steps and mostly played
 MTG rules consulting and identification of the high-level objective. I was quite proud of
 figuring out the correct interpretation of the Time Walk puzzle, but this definitely paled to
@@ -643,7 +642,7 @@ I felt it justified itself.
 
 ## Olympic Park, WA
 
-**Oil Paintings** -
+[**Oil Paintings**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/oil-paintings) -
 
 <p class="centered">
     <img src="/public/mh-2024/peanut.jpg" style="max-width:50%" alt="An image that is definitely of Mr. Peanut, not the Boston Celtics leprechaun">
@@ -651,11 +650,11 @@ I felt it justified itself.
 
 Yeah IDK I'm still pretty confident this is Mr. Peanut.
 
-**Transylvanian Math** - This is the kind of puzzle that on its surface could be really annoying
+[**Transylvanian Math**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/transylvanian-math) - This is the kind of puzzle that on its surface could be really annoying
 to solve, but ended up being really fun because the source material was so good. I'm curious,
 did anyone else break-in by finding a 2003 forum post written by a fan of Britney Spears?
 
-**ENNEAGRAM** - I was recruited to help unstick this puzzle. As preparation,
+[**ENNEAGRAM**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/enneagram) - I was recruited to help unstick this puzzle. As preparation,
 they made a clean version of the sheet, excluding exactly the part of the dataset that was
 needed to extract, hence I didn't get anywhere. If you're new, don't worry, this happens
 all the time. Shoutouts to this flyer many of us saw when walking back to hotels.
@@ -664,7 +663,7 @@ all the time. Shoutouts to this flyer many of us saw when walking back to hotels
     <img src="/public/mh-2024/enneagram.jpg" style="max-width:50%" alt="A flyer for an enneagram class">
 </p>
 
-**Gaia (meta)** - This was by far the most memorable meta solve of Hunt for me, so, strap in,
+[**Gaia (meta)**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/gaia) - This was by far the most memorable meta solve of Hunt for me, so, strap in,
 this'll take a while.
 
 On opening the puzzle, we dragged a few stars around, noted some things, and identified the
@@ -761,12 +760,12 @@ and others as "working rooms", shuffling people around depending on desire and a
 stay awake. I didn't come to Mystery Hunt planning to pull an all-nighter, but with us being in reaching
 distance of an ending, I decided to stay up.
 
-**Halloween TV Guide** - I keep telling people that My Little Pony is a smaller part of my life now,
+[**Halloween TV Guide**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/halloween-tv-guide) - I keep telling people that My Little Pony is a smaller part of my life now,
 but the first clue I solved was the MLP reference. I am never beating the brony allegations. I
 left this puzzle after the "octal-dec" break-in since I didn't want to grind TV show identification,
 but I did successfully use Claude to identify some TV shows from short descriptions.
 
-**Appease the Minotaur (meta)** - It was nice to see a metapuzzle unlock from the start of the
+[**Appease the Minotaur (meta)**](https://puzzles.mit.edu/2024/mythstoryhunt.world/puzzles/appease-the-minotaur) - It was nice to see a metapuzzle unlock from the start of the
 round. I broke in on beef grades, helped transcribe the maze borders into Sheets, then dozed off
 in the way you do when your body wants to sleep but you're trying not to. We knew what we were doing
 the whole time, so we decided to drop it and work on other metas, waiting for free answers to
