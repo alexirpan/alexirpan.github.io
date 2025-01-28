@@ -1,0 +1,649 @@
+---
+layout: post
+title:  "MIT Mystery Hunt 2025"
+date:   2025-01-28 00:32:00 -0700
+---
+
+*This has spoilers for MIT Mystery Hunt 2025. Spoilers are not labeled or hidden.*
+
+I feel I have been slower about this year's post than last year's.
+There are no deadlines here, but last year I got my post done before
+TTBNL's AMA, and I only *started* on this post by the time Death & Mayhem did theirs.
+
+To spoil the answer to this puzzle, Death & Mayhem
+have been impressively on top of things, hosting their AMA the Wednesday after Hunt, and being
+on top of things was just a running theme.
+This year's Hunt was really solid. I enjoyed it more than their 2018 Hunt,
+which is commonly cited as an all-time good Mystery Hunt. In part that's because I was remote in 2018, so I missed all the in-person energy from that year, but I do think the rounds from
+2025 rivaled some of the concepts from 2018.
+One of the hypest things you can do in a puzzlehunt
+is backsolve a meta, so of course I would like the hunt where we backsolved five of them.
+(And they weren't even all Shell metas!)
+
+It did make me a little wistful about writing 2023's Mystery Hunt. A lot of 2023's writing goals
+were to write something analogous to 2018 (fewer puzzles, weird and difficult metas, go all-in on what teammate values, scale down Hunt). I know it's stupid and doesn't make sense, but throughout the weekend I
+was thinking "dang, this is what could have been if we'd executed better".
+
+During wrap-up, Death & Mayhem said they were "a little bit capital E Extra in everything we do", and, yes, that came through. It was great, 10/10, very strong theater kid energy, like Death & Mayhem had charged up 7 years of power level and went nuts once they got to write Hunt again.
+
+![Penny from Paranatural being very extra](/public/mh-2025/penny.png)
+{: .centered }
+
+From [Paranatural](https://www.paranatural.net/comic/archive)
+{: .centered }
+
+
+# High-Level Thoughts
+
+Hunt was won at a reasonable time. Sunday 11:47 AM, hooray! That being said, it still felt long
+because Cardinality won so far ahead of everyone else. Would definitely have preferred Hunt go shorter
+by another few hours, but can't complain too much.
+
+The decision to give every team a radio was insane, very cool, and probably should not be repeated.
+I did not do any radio puzzles besides listening to
+the weather (more on that later), but we did break our radio when we plugged it into charging
+while the radio was still on. We got it fixed, but it was indicative of how much of a headache
+it looked like to support.
+
+The Gala made a lot of sense in-story, and I would echo that it was great to run into hunters from
+other teams during the few times I visited. I'm not sure how many people it took to staff, but I would like something similar to come back.
+
+Story-wise, I think it's just hard to tell a story within a puzzlehunt. You have much more success
+if you instead focus on conveying a certain vibe or aesthetic, and then let that aesthetic carry
+the plot for people interested in the story. In that respect, I feel this hunt delivered the crime noir aesthetic really well, even if I didn't fully remember everyone's name or secret.
+
+As for the unlocks...
+
+
+# Choose-Your-Own-Adventure
+
+I think if you want to do a choose-your-own adventure unlock system, this Hunt was a good
+implementation of it, and showcased its strengths. The choices were informed, so teams could solve
+the puzzles that sounded exciting to them. It enabled a
+lot of strategizing on whether to go all-in on one round or spread out. It is much more likely
+that every puzzle is worked on by many teams, rather than the final feeders in unlock order
+getting shafted.
+
+The open-world nature of Breath of the Wild was brought up as inspiration, but that invites the main criticism of Breath of the Wild. Since there is little guarantee on shrine order, most shrines
+in Breath of the Wild are flat in difficulty, complexity, and reward. It is much more interesting to find
+a shrine than to complete it. In this Mystery Hunt it was reversed, where the act of unlocking is easy
+but the value and difficulty of a feeder varied.
+Sometimes you open a puzzle that's harder than expected and just go down 1 width. (Looking at you,
+Do the Manual Calculations.)
+
+I had a lot of fun with the choose-your-own-unlocks. I am not sure if our
+hunt ops team felt the same way? To borrow a metaphor from Defunctland's FastPass video,
+some people enjoy *planning* their trip to Disney World, and some people just
+want to *go* to Disney World. My experience was much closer to the "go to Disney World" side.
+I saw puzzles get unlocked, with no idea what round they were in, and I worked on them
+because I assumed hunt ops was only unlocking puzzles that helped Hunt progression.
+Meanwhile, the first reaction of our hunt ops to the
+key system was "this is going to be a disaster", since it added lots of tiny decisions on top of their
+existing large scale decisions. I do hope it was a fun disaster, rather than a real disaster.
+
+The eventual teammate key system was this:
+
+* Hunt ops owns all the keys and clues. No one else gets to use them unless hunt ops says it's okay.
+* The owner of our Hunt management system modified their bot to send a Discord alert
+whenever we revealed a new puzzle.
+* Team members asynchronously vote on puzzles they want to work on, where a vote means
+you will actually work on it, rather than watch other people work on it.
+* Keys will be spent based on votes made, taking round prioritization into account. Ping hunt
+ops if keys haven't been used in a while.
+* Hunt ops planned to convert the 1st clue to keys, then reassess.
+
+This was all pretty uncontroversial. Where it got controversial was when we got our 2nd clue,
+hunt ops did a discussion, and declared that we would be saving all future clues to push feeders
+in endgame metas. After failing to finish last year, we were pretty determined to finish this year,
+and optimized for that outcome.
+As we progressed through the Hunt, exciting sounding puzzles would sit there, being
+unlockable if we cashed in clues. This was exacerbated when hunt ops decided to stockpile
+3 keys after we'd made some progress on the Illegal Search meta.
+The reason they did so was because they strongly suspected more puzzles were
+gated behind Papa's Bookcase ("clearly the bookcase of an escape room will hide another room"),
+and stockpiling would let us immediately push further progression in the round and avoid
+stalling out.
+This was a correct prediction, and getting an instant
+3 unlocks post-Bookcase definitely contributed to us finishing that round early. The problem was
+that they didn't tell everybody this was the plan. So multiple people saw that we had keys,
+and weren't using them even on reminder ping, when hype puzzles like The 10000-Sheet Excel File weren't
+getting unlocked...
+
+Personally, I never felt like I ran out of puzzles to work on. There was always something in motion
+that I could contribute to, and puzzles were big enough that 4+ people could work on them
+productively. However, I did notice that we never really had a puzzle that sat untouched
+for a long time, like I'd seen in past Mystery Hunts. Based on asking other teams, teammate was
+on the low end for clue to key conversion. We converted 1, Cardinality converted 2,
+Galactic converted 3 and regretted converting the 3rd, Unicode Equivalence converted 3 and also regretted it,
+Providence converted 3 and *didn't* regret it, TSBI converted 3, Setec converted 4.
+It worked out for us, but I can totally see how it would have been more fun to just unlock all the
+things.
+
+Choose-your-own-unlocks have had two good showings this year and in 2018, but I'd be hesitant
+to say that's evidence for it as the default. The data is not that it works, it's that it works
+if you're Death & Mayhem and have 100+ people helping out on the week of Hunt. I have enjoyed
+all the Huntinalities, so I trust Cardinality whatever they choose.
+
+
+# Pre-Hunt
+
+Our story begins with the Gala invitation.
+
+![Gala invitation](/public/mh-2025/invite.png)
+{: .centered }
+
+In previous years, teammate has tried to solve puzzles from pre-Hunt material.
+Every time, they were not a puzzle. After doing this for 5 years, we've stopped
+trying. The general thinking was that the Gala invitation was a puzzle, but it
+wouldn't be solvable without shell from the main Hunt.
+
+When we eventually did unlock the invitation puzzle, and found it had no shell,
+we were surprised.
+Supposedly
+Cardinality pre-solved the puzzle because "teammate is definitely going to pre-solve it and if we don't we'll be behind". Sorry to let you down?
+We also failed to pre-solve the Dan Katz Puzzle Corner.
+
+Ignoring the puzzles for a bit, the invite suggested cocktail attire.
+This was *very* convenient for me, since I was
+attending a wedding before Hunt. (The couple specifically picked the
+week before Hunt because many of their friends are puzzle people.) That made it
+incredibly low effort to show up to kick-off dressed up. teammate did a
+group order of bowties as well. Did you know you can buy boxes of 40 bowties for
+$25 on Amazon? It was surprisingly cheap to play along.
+
+![Bowtie with MATE pin and 2 Pi Noir pin](/public/mh-2025/bowtie.jpg)
+{: .centered }
+
+![Bowtie around Wyrm and Tame Meat](/public/mh-2025/bowtie2.jpg)
+{: .centered }
+
+I did have to figure out how to get my blazer to Boston without wrinkling it
+in my carry-on. The solution was to be *stylish* and wear it on my person, which meant
+I also dressed up at wrap-up and in the airport.
+
+In my free time pre-Hunt, I went to Puzzled Pint, where I tried to all-brain
+a logic puzzle (solve it without writing anything). This was a terrible idea.
+I also went to some museums in the area, and got involved in a heated argument
+about vegetables in the teammate Discord. It is not worth re-litigating, but
+my takeaways are that some vegetarians dislike salads, people like vegetables
+more if they're cooked (shocker), and "screw zodiac signs, [what vegetable are you?](https://sophie006liu.github.io/vegetal/)"
+
+![Wait, you can't eat pho without basil and bean sprouts. Several people are typing...](/public/mh-2025/pho.png)
+{: .centered }
+
+
+# Friday
+
+After kickoff finished, we went to our on-campus classrooms, and puzzle release
+went off without a hitch. Honestly, I'm not sure why no team has thought of "don't refresh
+the page, let it live update" before. It's such a good idea.
+
+
+## Missing Diamond
+
+[**XOXO**](https://www.two-pi-noir.agency/puzzles/xoxo) - This was our first solve of the Hunt (hooray for the Activity Log to make checking this easy). I will always be proud that we outraced the logic puzzlers working on [Unreal Islands](https://www.two-pi-noir.agency/puzzles/unreal_islands).
+Identified two pairs then focused on transcribing pairs into the grid for extraction.
+
+[**Downright Backwards**](https://www.two-pi-noir.agency/puzzles/downright_backwards) - By the time I got to this puzzle, the entire grid had been filled out, and my one contribution was asking if
+we should try the opposite interpretation of the z-direction (which was correct).
+
+[**Battle Factory**](https://www.two-pi-noir.agency/puzzles/battle_factory) - I have been watching
+some Gen III Battle Factory speedruns recently. Luckily this puzzle got solved faster than those
+speedruns, with much less RNG. This is a cute idea, I'm surprised I haven't seen it before.
+
+[**📑🍝**](https://www.two-pi-noir.agency/puzzles/%F0%9F%93%91%F0%9F%8D%9D) - I did not work on this puzzle, but got many confusing DMs until I understood what was going on.
+This turned into an interesting litmus test for how other teams were doing, based on when
+they asked for 🍝.
+
+[**🔎🧊**](https://www.two-pi-noir.agency/puzzles/%F0%9F%94%8E%F0%9F%A7%8A) - A little annoyed with the final extraction step of this puzzle (really wanted it to be only adjacent letters, rather than any pair), but I liked everything before it.
+This was the first puzzle I did coding for this Hunt, to brute force finding the words.
+There was a clean way to implement it, and the way I did it (8 nested for loops).
+
+[**Zing it Again**](https://www.two-pi-noir.agency/puzzles/zing_it_again) - The first set we found
+was Weird Al (as expected). We found the Bob's Burgers set pretty soon afterwards, but could not find
+the HM set for a *long* time. I was pretty happy about breaking into that one, definitely enjoyed the B-B-B-BAD TO THE CHROME rebus.
+
+[**The Boardwalk**](https://www.two-pi-noir.agency/puzzles/the_boardwalk) - I worked on all the metas
+in Missing Diamond, because, well, I like working on metas. I didn't come up with
+any of the extraction ideas for this meta, instead I did advocating for the ideas I did like.
+Took us longer than it should have to find THE BEATLES, because we didn't realize The Beatles Collectors Edition could have a space for THE BEATLES. We also expected letters to get extracted from the entire board, and assumed we were missing feeders since all our letters were only in one
+half. Luckily, one person decided to submit exactly what was in the sheet from the 5/5 feeders
+we had.
+
+Also, I don't think anyone else has mentioned this: it's kinda insane Death & Mayhem implemented 3 minigames just for the Boardwalk story interaction? Like, what? I tapped into my God Gamer genes and won all of them. They don't seem to be replayable, hope they make it to the archive!
+
+[**The Jewelry Store**](https://www.two-pi-noir.agency/puzzles/the_jewelry_store) - The meta crew next looked at The Jewelry Store, breaking in pretty quickly. Interestingly, when we broke in, all of our 5/7 feeders were adjacent in the chain. That hurt the wheel of fortune attempts, and we needed a 6th feeder to solve it. I thought the backsolve would be easy, but there was a surprisingly large set of valid answers and we ended up forward solving the last feeder.
+
+[**The Art Gallery**](https://www.two-pi-noir.agency/puzzles/the_art_gallery) - When I started looking at this meta, we'd already IDed the Crayola and RGB steps. Another teammate did a sort by length,
+and I noticed the UNICODES partial. From there it still took us a while. I refuse to believe there's a good canonical source for this, we tried both Wikipedia and the Crayola fandom page and they gave conflicting data. At one point, I decided the most canonical source would be to use
+an eyedropper tool on colors from the crayola.com website, but then that was inconsistent too and not the one used for the puzzle! (At least for Flamingo Pink.)
+Our solve relied on putting all the options into different spreadsheet tabs and squinting until an answer came out.
+
+(Aside: for the Art Gallery interaction, we were asked to investigate Papa's secret, which was in either his wallet, his office, his car, or his study. It was set up as a forced choice, where only one option would progress the story. I know this because we voted for every other option first.
+I want it on the record that I voted for the correct option every time, *who keeps their deepest secrets in their car, why did so many people vote for that.*)
+
+[**On the Corner**](https://www.two-pi-noir.agency/puzzles/on_the_corner) - We knew this puzzle went to Art Gallery, which we'd solved. The backsolve had failed, and eventually we said "how hard can it be to forward solve a puzzle?"
+My contribution was 1) working on the Tech Corner puzzles while 2) not noticing that all 4 Tech Corner puzzles had already been solved in another tab.
+I assumed Dan Katz was in on it and it's *so funny* he wasn't.
+
+[**The Casino**](https://www.two-pi-noir.agency/puzzles/the_casino) - We were down to our final Missing Diamond meta. I noticed all our feeders contained a card value, started with a suit letter (C/D/H/S), and ended with a suit letter (C/D/H/S). From this, we concluded that each answer defined two hole cards. One was the number + suit from the last letter. The second was an undetermined number + suit of first letter, and we would find that number based on what worked for the given hands.
+
+Now, that's not exactly how the meta works...we had 5/7 feeders and it *just so happened* that we were missing the two feeders that would have broken the pattern. After failing to solve, we decided
+to go get another feeder.
+
+[**Be Kind, Rewind**](https://www.two-pi-noir.agency/puzzles/be_kind_rewind) - This puzzle definitely reminded me of the similar one from Puzzle University, but that puzzle was fun and so was this one.
+I was drawn to this puzzle for the movie ID, but then it turned into more than that. I am very
+thankful that although teammate is young, they are still old enough to know what Blockbuster was.
+I don't need to feel any older from Mystery Hunt.
+
+**The Casino, Revisited** - Now that we had an answer breaking the pattern, we thought more about how to use the cards. Looking at the most constrained hand (10♠/A♠ or 9♠/10♠), I noticed we had both of 10♠ and A♠ in our answers, and had no diamonds (which was good for uniqueness of the first hand). I proposed
+the correct idea and we solved pretty quickly, backsolving No Notes to clean up the round.
+At wrap-up, we wondered why our team wasn't in the team photo montage, and that would be because we backsolved the submission puzzle for it. Oops.
+
+[**The Thief**](https://www.two-pi-noir.agency/puzzles/the_thief) - Paraphrased version of our solve: two people go out with the radio, returning an hour later.
+
+"Yeah, we've followed the entire path but don't really know what to do with it."
+
+"You know about the grid on the round page and all the witness statements we've been collecting in the spreadsheet, right?"
+
+"...What?"
+
+
+## Stakeout
+
+I spent most of my Hunt working on the tougher, meatier puzzles, so I did not spend much time in the
+Stakeout round. Stakeout width was deliberately kept low (around 1-2 until meta unlock, then 0
+after Chinatown unlocked).
+I joked that we were practicing sustainable fishing.
+
+[**The Ultimate Insult**](https://www.two-pi-noir.agency/puzzles/the_ultimate_insult) - Man, I opened this puzzle a few minutes after it had unlocked and it was already done. I'd like to think our 6 minute solve was the fastest, but I bet some other video gaming team did it in 5.
+
+[**Fight Night at Mo's**](https://www.two-pi-noir.agency/puzzles/fight_night_at_mos) - This puzzle felt a little weird. Once we broke in, we started unrolling the bracket, but then realized all the extraction notes were either in round 1 or the finals, meaning you could ignore almost all the matches. I initially thought this would be about Moe's Tavern, but nope, that was a different puzzle.
+
+[**Control Room**](https://www.two-pi-noir.agency/puzzles/control_room) - I stopped by this puzzle to
+spectate the madness. We assumed "rotate the camera" was going to be meaner than it was.
+Our expectation was that our remote camera view would rotate by 180 degrees, and we'd have to do
+all future directions from an upside-down camera feed.
+
+[**Some Assembly Required**](https://www.two-pi-noir.agency/puzzles/some_assembly_required) - I see we've continued the meme of having a puzzle named "Some Assembly Required", from 2023 to 2024 and
+now 2025. I'm looking forward to solving "No Assembly Required" in Mystery Hunt 2026, a puzzle that gives you the answer for no work.
+
+
+## Background Check (Friday)
+
+[**He Shouldn't Have Eaten The Apple**](https://www.two-pi-noir.agency/puzzles/he_shouldnt_have_eaten_the_apple) - When solving this puzzle, the first location we IDed was [Adam's Peak](https://en.wikipedia.org/wiki/Adam%27s_Peak), which inspired many Adam conspiracies, like trying to make [Tomb of Adham Khan](https://en.wikipedia.org/wiki/Tomb_of_Adham_Khan) work. We eventually got out of this rabbit hole by finding the UNESCO connection. We skipped the step of putting the locations on the map,
+by guessing the correct sort order.
+I will say, it took us a long time to get the joke of "they are all ruins", it felt pretty unmotivated before that and only tenuously motivated after that. Still, if you have an in with Adam Conover, you gotta use it.
+
+## Paper Trail (Friday)
+
+[**World's Largest Crossword Puzzle**](https://www.two-pi-noir.agency/puzzles/worlds_largest_crossword_puzzle) - Author of
+[World's Largest Logic Puzzle](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/worlds-largest-logic-puzzle): "I feel like
+if I don't work on this puzzle, I will have committed a crime."
+
+My contributions were 1) pointing out the clues for "Zero" and
+"One" were bolded, clearly indicating how input worked, 2) solving both clues incorrectly with NULLED and UNIQUE, and 3) leaving for another puzzle, making my contribution worse than useless.
+
+At some point during the solve, the author of WLLP shot down an idea saying
+"It can't be that, because when I tried constructing that idea, it was impossible." Just a truly
+deranged solve. teammate solved this in 2 hours, and I am pretty confident that will be fastest solve once more detailed stats are out.
+
+## Illegal Escape (Friday)
+
+By the time I understood the round gimmick, we'd already applied all the operations.
+It's a cool concept for a round, that I mostly missed, but you can't see
+every cool thing during Mystery Hunt weekend.
+
+[**(A Puzzle of the Dead)**](https://www.two-pi-noir.agency/puzzles/a_puzzle_of_the_dead) - This puzzle
+was annoying to transcribe data for, but quite solid all the way through.
+Each section takes 40 seconds to display, and there are 8 sections to see, which added up.
+Once we got the message for the first destruction's encoding,
+I failed to find the online decoder for it, using a jank Python script I found instead. "What could go wrong with executing arbitrary code from the Internet?"
+
+Once we got to the rhyme scheme step, I suggested that it could work like [Reflections on a Milky Steed Who's Quite Amphibious, Indeed](https://puzzles.mit.edu/2009/puzzles/reflections_on_a_milky_steed_whos_quite_amphibious_indeed/PUZZLE/). With
+the comment that "15 years is long enough to reuse an idea", two of us put in the letters, getting
+excited that we'd hit exactly 26 rhymes. Unfortunately, we had some data errors. We flailed
+until the Saturday 1 AM cutoff, and I took a look in my hotel room for a bit before going to bed.
+It got solved the next morning when someone checked our work. It's not until I read the
+author's notes that I realized the poems were constrained to not use the letters U or O. Props
+on the construction, that sounds so painful.
+
+## Murder in MITropolis (Friday)
+
+[**esTIMation dot jpg**](https://www.two-pi-noir.agency/puzzles/estimation_dot_jpg) - It was interesting to break into this
+overnight. But first, let me backup a bit.
+
+At time of unlock, we had time to send 2 groups, one at 11 PM and one at midnight.
+Our first group got wrecked due to lack of MIT knowledge, so we remade our second group to have more
+former MIT students and they did better.
+They also said the Friday midnight esTIMation was *incredibly* lit - I heard
+someone got engaged 15 minutes before the interaction? Wild.
+
+Overnight, some images from esTIMation were posted to our #crowdsource channel. I was working on
+(A Puzzle of the Dead) at the time, but took a look and successfully IDed two of them. This baited
+me into doing another hour of image searches, but I didn't find any more matches.
+
+
+# Saturday
+
+## Murder in MITropolis (Saturday)
+
+**esTIMation dot jpg** - We sent two more groups of people, at 8 AM and 9 AM. These were considerably
+less lit than the midnight run.
+With 2 more visits of data, and more fresh eyes, we successfully nutrimaticed the answer from 6/17
+letters, right before our 10 AM group went for round 5.
+
+[**Give This Grid a Shake**](https://www.two-pi-noir.agency/puzzles/give_this_grid_a_shake) - As we
+solved the crossword clues, I looked in my folder of past puzzlehunting scripts, and found a file
+called `boggle_bash.py`. While other teammates worked on building the Boggle board by hand, I
+did code archaeology to investigate what this script did.
+After reading, I determined my script constructed 4x4 Boggle grids from a list of contained words,
+which was exactly what we needed. I put in the constraints, it output the correct 4x4
+grid in 25 seconds, and I put it in the sheet.
+I was told I absolutely had to tell this story in my blog post, so there you go.
+(The epilogue no one else knows is that I then tried to modify it to solve the full 6x6 board, but
+it got handsolved before I could make all the required changes.)
+
+At the time, I didn't know why I had this script, but now I do. Four years ago, we suspected
+a metapuzzle worked via Boggle, so I wrote this script to try to generate all possible boards
+given some missing feeders. The script didn't work, because the meta wasn't Boggle based.
+I'm glad my work was useful 4 years later!
+
+[**We Can Do This All Day**](https://www.two-pi-noir.agency/puzzles/we_can_do_this_all_day) - It was
+not until wrap-up that I learned this was not intended to be the obligatory scavenger hunt.
+Before then, I'd discussed it with a teammate as an interesting innovation on how
+to make the scavenger hunt less grindy, while maintaining the seat-of-your-pants bullshitting that
+makes the scavenger hunt fun.
+
+I am overall ambivalent on the
+scavenger hunt, I think it's fun but it's always fighting the tightrope of taking too much
+time to prepare entries for. We solved this by prerecording each task at multiple locations
+before calling Death & Mayhem for our 2nd attempt.
+
+[**Engagements and Other Crimes**](https://www.two-pi-noir.agency/puzzles/engagements_and_other_crimes) - As mentioned earlier, we did not presolve this puzzle, but we did bring the original invitation
+keepsake, so we didn't have to print it. Which was good, because our access to printing
+was pretty low this year, given many MIT students had aged out and were now just alumni.
+We did end up printing another copy anyways.
+
+![Folded bird from wedding invitation](/public/mh-2025/bird.png)
+{: .centered }
+
+[**What Do They Call You?**](https://www.two-pi-noir.agency/puzzles/what_do_they_call_you)
+
+![Discussion about teammate naming themselves Updog](/public/mh-2025/updog.png)
+{: .centered }
+
+[**A Map and a Shade (or Four)**](https://www.two-pi-noir.agency/puzzles/a_map_and_a_shade_or_four) - On initial unlock, the person who spent the key said "oh no, this was a scam". I took a look and
+said it wasn't obviously a scam,
+since it was definitely something with US states and four coloring.
+We sat down and started making some derivations. Then, Jargon got unlocked.
+
+## Illegal Escape (Saturday)
+
+[**Jargon**](https://www.two-pi-noir.agency/puzzles/jargon) - Literally everyone at my table
+said "LINGO PUZZLE" and left me to the geography wolves.
+I decided I could not defeat the geography wolves on my own, and bravely retreated to Jargon
+as well. This got started by like 10 people simultaneously - most of my contribution was repeatedly
+pinging people to come to our table instead, since we'd had the most progress and relaying
+info in the sheet was way less efficient than crowding around 1 computer.
+
+During this, A Map and a Shade (or Four) had gotten picked up by another group. Once we'd finished
+Jargon, I
+decided that actually I didn't need to work on a US geography logic puzzle, and moved to something else.
+
+## Murder in MITropolis (Saturday, Part 2)
+
+[**Beyond a Shadow of a Doubt**](https://www.two-pi-noir.agency/puzzles/beyond_a_shadow_of_a_doubt) - This one was nice. The main idea comes together pretty elegantly, but the actual grinding
+is really non-trivial even if you know what you're doing. Potentially we could have jumped to the final
+dropquote and solved around the missing info, but we ended up solving it sequentially and
+I proposed the final correct idea for how to use the colors.
+
+[**The Killer**](https://www.two-pi-noir.agency/puzzles/the_killer) - I helped on IDing a few pages
+(the ones for Wonderland and Berkeley), but then moved to other puzzles. Only now do I understand
+the calls for a Morse code nutrimatic. I'm guessing someone did implement one by Hunt end.
+
+
+## Background Check (Saturday)
+
+[**The Tunnels Beneath the Institute**](https://www.two-pi-noir.agency/puzzles/the_tunnels_beneath_the_institute) - This was, just, like, the weirdest dataset. Finding the AC Installation Tutorial
+genuinely broke me. We did not go far enough to get to the central a-ha, as I was instead baiting into searching a different cursed dataset from...
+
+[**Story Vision Contest**](https://www.two-pi-noir.agency/puzzles/story_vision_contest) - This puzzle was pretty fun, it's surprising how much overlap there is between the two datasets.
+My introduction to this puzzle was "here's a clue that talks about churning butter, which you'd think would be from
+a fairy tale, but is actually from [Poland's 2014 Eurovision song](https://www.youtube.com/watch?v=VJ920cN2HmA) where a sexy model
+churns butter in the choreography."
+We sped up a lot of the song ID by guessing the puzzle would use the most famous or popular performances from each country.
+The motif IDing afterward was a bit less fun, but we got through it before it got stale.
+
+[**Alias**](https://www.two-pi-noir.agency/puzzles/alias) - I didn't do anything for this metameta.
+I just wanted to mention that teammate backsolved The Mark, then guessed the correct metameta pun from 2/3
+pieces on the first try. Background Check meta team was cracked.
+
+
+## Paper Trail (Saturday)
+
+Of the later rounds, I spent the most time on this one, both on feeders and the metas.
+
+[**Do The Manual Calculations (Don't Try Monte Carlo)**](https://www.two-pi-noir.agency/puzzles/do_the_manual_calculations_dont_try_monte_carlo) - I ran
+far, far away from this puzzle. We filled up two blackboards with calculations, getting to the
+CORRECT partial on Friday, but did not solve until Saturday. Long story short,
+there was a mistake in an earlier board that still extracted the right letter for the CORRECT
+checksum, so much of Friday was spent with an incorrect grid that didn't work for the puzzle. This
+took a long time to notice and fix.
+
+![A blackboard filled entirely with Markov Chain chess math](/public/mh-2025/chess.jpg)
+{: .centered }
+
+[**Follow the Rules**](https://www.two-pi-noir.agency/puzzles/follow_the_rules) - I jumped onto this puzzle because I had just come
+off doing a bunch of research puzzles and wanted to poke a black box. We got 7 of the rules, but couldn't find
+a consistent explanation for the last 2. To handle this, we turned to brute force with code, since
+$$3^9$$ is plenty small enough.
+
+Ignoring the two missing rules, there were 38 solutions. Four of us split up the work manually checking
+which one solved the puzzle, by which I mean, one of us said "oh, I got it" on the first
+solution they tried, and the rest of us checked another 15 solutions to convince ourselves
+the solution was unique. It was unique, that person was just insanely lucky.
+
+We still didn't know the last two rules, but one person pushed for generating all trigram constraints
+for each section, assuming it used ternary. The first section extracted CAL and they were adamant
+it would continue LIN for CALL IN and so forth.
+I thought this would be too messy to do (you'd get 40 trigrams per set for some ugly regex),
+but then they pointed out you could verify each section on the website even if you don't understand
+all the rules, as long as you mentally apply the permutation on the website's output. That was
+enough to finish the puzzle.
+
+[**Star Crossed**](https://www.two-pi-noir.agency/puzzles/star_crossed) - We got through the first step of the puzzle
+without too much issue, although we were stuck on "SHTBYELEVEN" for a bit, trying to turn it into a final cluephrase (SHOT BY?).
+As one of us left to go talk with hunt ops, they said "this can't just be a word search, that would be lame". I realized it could be "SHIFT BY" instead. That was confirmed by the answer checker, so we kept going.
+
+The policy on confirming partials has become more lenient over years of Mystery Hunt.
+This is partly because
+of the shift to automated answer checking, but it's also likely driven by broad
+trends in the adjacent field of escape room design. Rooms have moved
+from advertising their low finish % to advertising how fun they are. People prefer confirmation
+on their partial progress more than the abstract idea of only submitting answers when you
+are confident you are done. I think this is fine? Partials
+getting confirmed haven't stopped people from writing good puzzles.
+
+We did the shift, did the next step, got the "find names of Venus" message, and then got stuck.
+The only names we'd be able to find were ISHTAR and VESPER. Although we suspected the puzzle would continue to use
+6-long names of Venus, we just could not find more. In a bid to try to make more famous options like APHRODITE work, I created a
+conditional formatting version of the grid with APHRODITE letters colored, which was...not so helpful.
+
+![Star Crossed grid with bad formatting](/public/mh-2025/starcrossed.png)
+{: .centered }
+
+We abandoned the puzzle, with notes to try finding more names of Venus, and some fresh eyes did
+the grunt work for the solve a few hours later.
+
+[**A Weathered Note**](https://www.two-pi-noir.agency/puzzles/a_weathered_note) - Throughout Hunt, we had written down the weather reports coming in, but we had done a really half-assed job of it
+since there was always something more pressing. (We includes me here, my scrawl for Stockholm was unreadable.)
+I was hyped to finally use the weather data, but our data was low enough quality that it was better to
+begin from scratch.
+This turned the start of the puzzle into the world's goofiest Pomodoro - 25 minutes of research about
+weather telegram codes from the late 1880s, then short breaks to transcribe the weather.
+Every time the weather came in, we would shout "WEATHER!" to get the room to be quiet. Unfortunately, the puzzle solve jingle was louder than the weather broadcast...
+
+<div class="centered">
+<audio controls preload="auto">
+ <source src="/public/mh-2025/weather.mp3" type="audio/mpeg">
+ Your browser does not support the audio element.
+</audio>
+</div>
+
+![Discord message asking people to not submit puzzles until the weather broadcast is done](/public/mh-2025/weather.png)
+{: .centered }
+
+Fortunately (unfortunately?), the time it took us to find and understand the 1887 War Department Weather
+Code was long enough that we were never bottlenecked on weather reports. Our bottleneck
+was what you'd call a "skill issue".
+We got up to the last step, but failed to figure out the correct interpretation of "retiring after
+this last transmission" and got stuck.
+When the Shell Corporations got unlocked, I abandoned the weather in favor of those shells.
+We solved the puzzle on Sunday after getting a hint.
+
+Despite getting stuck, I think the cluing was fair and this was one of my favorite puzzles from Hunt. In an absurdist way, it was so fun to tell people "SHUT UP I REALLY NEED TO KNOW ABOUT THE WEATHER", and the relevant documents were just the right level of obscure.
+
+(I think there's actually a small mistake in the solution too? For Los Angeles, the river is rising
+at -1', 6 tenths. I translated this as JAY rather than JAMES. My interpretation of the pg 65 river
+report table is that for negative values, you should read each section backwards, lines after the bolded
+-N foot header are for -(N-1) K tenths. This is consistent with the height of the
+river ascending as you go down the page, and makes JAY be -1' 6 tenths with JAMES as -0' 6 tenths.
+The reason I believe this interpretation is because the alternate one makes it impossible to encode -0' 6 tenths. This mistake didn't really affect solvability, we solved that clue correctly with JAY.)
+
+**Shell Corporations** - In conjunction with the metameta, these were definitely the highlight of my Mystery Hunt. Soon after we unlocked
+the shells, Death & Mayhem came by for a team check-up, asking about our meta progress in particular. We delightfully told them our progress on The Killer was "54 PDFs".
+The narrator for the weather was part of the check-up team, and we jokingly asked if we could hear
+the weather in Los Angeles.
+
+"Sorry, there are union rules. I can only give you the weather at *very* particular times."
+
+"We'll pay you triple your rate!"
+
+"I get paid $0, so that's not a lot."
+
+"...Your union needs to negotiate better."
+
+The people working on The Killer debated what they could ask about their work,
+but we were quickly told that we were absolutely not getting hints on anything,
+which let us know we were doing well. We continued work on the shells, solving Shell 1 forward
+and solving Shell 3 with 0 feeders via a Vigenere brute-force, but failed to progress further.
+Late in the night, we broke into the mechanic for Shell 6, and I spent my hotel room evening
+trying to construct cryptics without much success.
+
+# Sunday
+
+I would end up spending my entire Sunday on Paper Trail, because once we broke into the
+shells, it was too exciting to do anything else.
+
+## Paper Trail (Sunday)
+
+**Shell Corporations** - When I arrived, we were very confident *something* weird was
+up, but weren't sure exactly what. The metas just felt too much like spaghetti,
+reminiscent of Pokemon and Sci-Fi metas written around tight constraints. I even
+looked at [AllSpark](http://puzzles.mit.edu/2018/full/puzzle/allspark.html) in hopes it
+would help us solve Shell 5.
+
+Our leading guess was something like, "there is a backsolved feeder we can't submit
+like Safari Adventure, and also feeders go to multiple shells", based on the feeder count
+and us really liking PENROSE for Shell 1 but not succeeding on any backsolve. Meanwhile,
+all our Shell 6 work was on the wrong track thanks to an early guess on RANGE that was
+entirely incorrect.
+
+At this time, HQ called us and said we could now ask for hints. We knew Cardinality was
+about to finish thanks to seeing literally their entire team in the Gala, so I took the
+opportunity to get the hint we desperately needed for A Weathered Note and came back in
+hopes the extra answer would let us break in on a new Shell.
+
+By now, we had divided our HQ into two rooms. One room was "The Shells room", and the
+other was "The Everything Else room". We gave a runthrough to some people who'd joined
+the Shells rooms, and one person asked a pivotal question:
+shouldn't shell corporations contain other shell corporations?
+
+With this prompting, we realized Shell 3's answer could be excellent for Shell 4,
+and asked across the room if anyone else's shell wanted Shell 1's answer. The Shell 2 group
+said it worked for them, and the entire room perked up. Realizing we should now attempt
+backsolving metas, we backsolved Shell 7, re-forward solved it to get the answer for Shell 4,
+and then things got loud as everyone shouted desired constraints and backsolves across
+the room. While re-forward solving Shell 4, Papa's Stash got solved, unlocking
+the blacklight puzzles.
+
+## Illegal Search (Sunday)
+
+[**Jargon (Under Blacklight)**](https://www.two-pi-noir.agency/puzzles/jargon_blacklight) - Can't
+believe the Lingo people left me to the wolves again!!! Rude.
+They barged into the Shell room (as the person who had all progress was working on Shells),
+went straight to our Lingo re-solve, re-solved the puzzle, and then immediately went back
+to the Everything Else room.
+
+## Paper Trail (Sunday, Part 2)
+
+Looking back at Shell 4, we understood the feeder constraints, but not how to forward-solve
+the puzzle, and moved on to other metas.
+The rest of our solve path was a backsolve of Shell 6, a side-solve of Shell 2, a forward solve of Shell 8, a partial forward solve of Shell 5 (enough to understand the feeders it used), then a backsolve of Shell 5 before we finished the forward solve to unlock Shell Game.
+
+[**The Shell Game**](https://www.two-pi-noir.agency/puzzles/the_shell_game) - The majority of the Shells room was asked to finish forward solving Shell 6 to resolve the graph, while a smaller group of around 8 of us double-checked the shell graph and debated metameta mechanics.
+I verified that yes, that shell does go to itself, we'd put it in as a "fuck it we ball"
+placeholder and now that we had 100% info I confirmed it as "yep we do ball".
+
+The rough idea from the mechanics team was to draw paths using our feeders, but the edge counts
+didn't line up the way we wanted (number of unique letters was off in an unhelpful way). To fix
+this, our team tried writing feeder answer letters out of order, which felt unsatisfying.
+As Shell 6 got cleaned up (including the "what the fuck" update to our graph), I volunteered to go to
+the Gala to verify we weren't totally off track. At this time, it was 5 PM, hints were free-for-all,
+and we really wanted to make sure we got to do the runaround.
+
+On my way to the Gala, I ran into a huge contingent of Providence solvers in the hallway, and reported that Providence was likely about to finish.
+I got confirmation that our graph was correct, and that our idea was mostly correct, with
+a nudge to "consider the entire corporate structure". This was *just* big enough for
+me to get the correct idea, which I messaged ahead as I walked back. When I entered the Shells
+room, there was only chaos.
+The Killer had been solved on my walk back, so everyone had migrated to the Shells room. There were 4 working
+copies of the puzzle (2 on blackboards, 1 in Excalidraw, and another in someone's solo program),
+and we decided not to consolidate them, instead treating each as a redundant backup in case others hit a contradiction.
+I decided I literally would not be able to get close enough to the blackboard to contribute
+to the graph, and spent my time discussing meta puns instead. Our solve went through a bit after
+6 PM, and to celebrate, we mass-unlocked our remaining Stakeout puzzles to chew on while waiting
+for our endgame interactions.
+I contributed a bit to [Men's at My Nose](https://www.two-pi-noir.agency/puzzles/mens_at_my_nose), but mostly helped on cleaning up our HQ.
+
+
+## Endgame
+
+As explained in the wrap-up, in the runaround, teams ended up at the Finster vault. The door was
+locked with an audio lock installed by Sidecar. To open the lock, we needed to do [Foley sounds](https://en.wikipedia.org/wiki/Foley_(filmmaking)) for a 3 minute silent movie. Only one person could
+see the movie through a hole in the vault door. The room would record audio as the movie played,
+then it would play back the movie (with recorded audio) on a big projector.
+
+The audio in wrap-up explaining this was a bit muted, so, for your viewing pleasure, here is our
+first attempt.
+
+<p class="centered">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qGuQqTlA2kw?si=naHic00sBlfWL5Z3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+
+Yeah, in retrospect, using *audio* cues to signal people during sound recording was a bad idea.
+Others and I recorded this with the plan of referring to the recording for the 2nd attempt, but
+Death & Mayhem quickly came over and gave an in-universe speech about how it was impossible for
+us to have such compact video cameras in this day and age, and that we should only look at
+recordings later. We did it properly the second time. Or more accurately, we
+spent so long writing down and planning our coordination that Death & Mayhem told us "the lock's not *that* sensitive", so that they could clear the vault for the next runaround. We opened the lock,
+and finished Hunt.
+
+I helped clean up HQ, then walked through the snow with a few others to the MIT rhythm game room to fumble on DDR,
+get confused about the knobs on Super Voltex, and play exactly 1 song of CHUNITHM.
+
+![Snow](/public/mh-2025/snow.jpg)
+<p>
+<div style="display:flex; width:100%">
+    <img style="width:50%" src="/public/mh-2025/soundvoltex.jpg" alt="Sound Voltex">
+    <img style="width:50%" src="/public/mh-2025/chunithm.jpg" alt="CHUNITHM">
+</div>
+</p>
+
+This post ended up being a lot longer than I expected it to...but that is how all my Mystery Hunt
+posts go. This is my 10th post about Mystery Hunt, a milestone I find slightly disquieting. I never
+went to MIT, but after over 10 weekends of attending, there are campus corridors I recognize by heart. I feel privileged that I get to
+experience this narrow and biased slice of MIT culture every year, and I'm looking forward to seeing people next year.
+
+![MATE on whiteboard](/public/mh-2025/mate.jpg)
