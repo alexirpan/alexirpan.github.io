@@ -7,8 +7,8 @@ date:   2025-01-21 01:41:00 -0700
 *This has spoilers for MIT Mystery Hunt 2025. Spoilers are not labeled. I will add puzzle
 links once there's a stable link to them.*
 
-This year, I feel like I have less time to write my Mystery Hunt post than usual. I don't
-actually have less time, there are no deadlines here, but last year I got my post done before
+I feel I have been slower about this year's post than last year's.
+There are no deadlines here, but last year I got my post done before
 TTBNL's AMA, and I only *started* on this post by the time Death & Mayhem did theirs.
 
 To spoil the answer to this puzzle, Death & Mayhem
@@ -391,9 +391,6 @@ as well. This got started by like 10 people simultaneously - most of my contribu
 pinging people to come to our table instead, since we'd had the most progress and relaying
 info in the sheet was way less efficient than crowding around 1 computer.
 
-[**Jargon (Blacklight)**](https://www.two-pi-noir.agency/puzzles/jargon_blacklight) - They left me to the wolves again!!! At least this time the detour was short.
-
-
 During the solve, A Map and a Shade (or Four) had gotten picked up by another group, and I
 decided that actually, I didn't need to work on a US geography logic puzzle, and I'd work on something else.
 
@@ -442,126 +439,205 @@ took a long time to notice and fix.
 
 [**Follow the Rules**](https://www.two-pi-noir.agency/puzzles/follow_the_rules) - I jumped onto this puzzle because I had just come
 off doing a bunch of research puzzles and wanted to poke a black box. We got 7 of the rules, but couldn't find
-a consistent explanation for the last 2. To handle this, one of us wrote a brute forcer, since $$3^9$$ is really not
-that many options. Ignoring the two missing rules, there were 38 solutions, so the four of us started trying solutions to narrow
-down the options. Then one person "oh, I got it" immediately after we split up. They had randomly picked the 1 correct solution
-for their first attempt. This was sketchy enough that we then tested another 15 solutions, in case there was more than 1 valid
-setting. There wasn't, the solution was unique and they were just insanely lucky.
+a consistent explanation for the last 2. To handle this, we turned to brute force with code, since
+$$3^9$$ is plenty small enough.
 
-One person on the team then proposed using the brute forcer to generate all the trigram constraints for the revealed extraction,
-assuming it worked from ternary. They noted the original puzzle extracted CAL and were adamant that the next would extract LIN
-and so forth. I thought this would be too messy to do (you'd get 40 trigrams per set), but then LIN was in the 2nd set and
-continuing this way definitely faster than trying to figure out the last two rules.
+Ignoring the two missing rules, there were 38 solutions. Four of us split up the work manually checking
+which one solved the puzzle, or more accurately, one of us said "oh, I got it" on the first
+solution they tried. This was so unbelievable that we then tested another 15 solutions, in
+case the solution was not unique. They didn't work, that person was just insanely lucky.
+
+We still didn't know the last two rules, but one person pushed for generating all trigram constraints
+for each section, assuming it used ternary. The first section extracted CAL and they were adamant
+it would continue LIN for CALL IN and so forth.
+I thought this would be too messy to do (you'd get 40 trigrams per set for some ugly regex),
+but then they pointed out you could verify each section on the website even if you don't understand
+all the rules, as long as you mentally apply the permutation on the website's output. That was
+enough to finish the puzzle.
 
 [**Star Crossed**](https://www.two-pi-noir.agency/puzzles/star_crossed) - We got through the first step of the puzzle
 without too much issue, although we were stuck on "SHTBYELEVEN" for a bit, trying to turn it into a final cluephrase (SHOT BY?).
-One person said "this can't just be a word search, that would be lame", and I realized it might be "SHIFT BY" instead.
-That was confirmed by the answer checker, so we kept going.
+As one of us left to go talk with hunt ops, they said "this can't just be a word search, that would be lame". I realized it could be "SHIFT BY" instead. That was confirmed by the answer checker, so we kept going.
 
-I think the policy on confirming partials has become more lenient over years of Mystery Hunt. This may partly be because
-of the shift to automated answer checking, but it's also likely driven by broad trends in escape rooms, where rooms
-have moved from advertising their low finish % to advertising how fun they are. People prefer confirmation on their
-partial progress more than the abstract idea of only submitting answers when you are confident you are done.
+The policy on confirming partials has become more lenient over years of Mystery Hunt.
+This is partly because
+of the shift to automated answer checking, but it's also likely driven by broad
+trends in escape room design. Rooms have moved
+from advertising their low finish % to advertising how fun they are. People prefer confirmation
+on their partial progress more than the abstract idea of only submitting answers when you
+are confident you are done. I think this is fine? Partials
+getting confirmed haven't stopped people from writing good puzzles.
 
-With the partial confirmed, we did the shift, did the next step, got the "find names of Venus" message, and then got stuck.
+We did the shift, did the next step, got the "find names of Venus" message, and then got stuck.
 The only names we'd be able to find were ISHTAR and VESPER. Although we suspected the puzzle would continue to only use
-6-long names of Venus, we had trouble finding more compelling ones. In a bid to try to make APHRODITE work, I created a
+6-long names of Venus, we just could not find more. In a bid to try to make APHRODITE work, I created a
 conditional formatting version of the grid with APHRODITE letters colored, which was...not so helpful.
 
 ![Star Crossed grid with bad formatting](/public/mh-2025/starcrossed.png)
 {: .centered }
 
-We abandoned the puzzle, with notes that we just needed more names of Venus, and it got picked up + solved by some other team members a few horus later.
+We abandoned the puzzle, with notes to try finding more names of Venus, and some fresh eyes did
+the grunt work for the solve a few hours later.
 
-[**A Weathered Note**](https://www.two-pi-noir.agency/puzzles/a_weathered_note) - Throughout hunt, we had noted the weather reports coming in, but we had done a really half-assed job of tracking the data. I was pretty hype to finally use the weather data, but was stymied by the low quality of our transcriptions.
+[**A Weathered Note**](https://www.two-pi-noir.agency/puzzles/a_weathered_note) - Throughout hunt, we had written down the weather reports coming in, but we had done a really half-assed job of it
+since there was always something more pressing.
+I was hyped to finally use the weather data, but our data was low enough quality that it was
+almost useless.
 This turned the start of the puzzle into the world's goofiest Pomodoro - 25 minutes of research about
 weather telegram codes from the late 1880s, then short breaks to transcribe the weather.
-Every time the weather came in, we would shout "WEATHER!" to get the room to be quiet. Unfortunately, there were 2 rooms, and
-the puzzle solve jingle was louder than the weather broadcast...
+Every time the weather came in, we would shout "WEATHER!" to get the room to be quiet. Unfortunately, the puzzle solve jingle was louder than the weather broadcast...
+
+<audio controls preload="auto">
+ <source src="/public/mh-2025/weather.mp3" type="audio/mpeg">
+ Your browser does not support the audio element.
+</audio>
 
 ![Better alt text](/public/mh-2025/weather.png)
 {: .centered }
 
 Fortunately (unfortunately?), the time it took us to find and understand the 1887 War Department Weather
-Code meant we were never bottlenecked on weather reports. We were bottlenecked on what you'd call
-a "skill issue", we did not figure out the correct interpretation of "retiring after this
-last transmission" and kept trying to use rivers instead of the correct idea. When the
-Shell Corporations got unlocked soon after we got stuck, I abandoned the weather puzzle in favor of
-metas.
+Code was long enough that we were never bottlenecked on weather reports. Our bottleneck
+was what you'd call a "skill issue".
+We got up to the last step, but failed to figure out the correct intepretation of "retiring after
+this last transmission" and got stuck.
+When the Shell Corporations got unlocked, I abandoned the weather in favor of those shells.
+We solved it on Sunday after getting a hint.
 
-[**Shell Corporations**] - These were definitely the highlight of the round. Soon after we unlocked
-them, D&M came by doing a team check-up, asking about our meta progress in particular. We jokingly
-asked if we could hear the weather in Los Angeles. "We'll pay you triple your pay!" "Well, I got paid $0, so this isn't a good deal." Meta-wise, at this point we had newly unlocked Shells, had some
-grinding ID work done on The Killer, had solved 1/3 metas in Background Check, and good progress
-on Papa's Bookcase.
+(I think there's actually a small mistake in the solution too? For Los Angeles, the river is rising
+at -1', 6 tenths. I translated this as JAY rather than JAMES. My interpretation of the pg 65 river
+report table is that for negative values, you should read each section backwards, lines after the bolded
+-N foot header are for -(N-1) K tenths. This is consistent with height of the
+river ascending as you go down the page), and makes JAY be -1' 6 tenths with JAMES as -0' 6 tenths.
+The reason I believe this interpretation is because the alternate one makes it impossible to encode -0' 6 tenths. This mistake didn't really affect solvability, we solved that clue correctly anyways.)
 
-> "Tell me about what you have on the meta."
-> "We have...54 PDFs."
+Despite getting stuck, I think the cluing was fair and this was one of my favorite puzzles from Hunt. In an absurdist way, it was so fun to tell people "SHUT UP I REALLY NEED TO KNOW ABOUT THE WEATHER", and the relevant documents were just the right level of obscure.
+
+**Shell Corporations** - In conjunction with the metameta, these were definitely the highlight of the round. Soon after we unlocked
+the shells, Death & Mayhem came by for a team check-up, asking about our meta progress in particular. We delightfully told them our progress on The Killer was "54 PDFs".
+The narrator for the weather was part of the check-up team, and we jokingly asked if we could hear
+the weather in Los Angeles.
+
+> "Sorry, there are union rules. I can only give you the weather at *very* particular times."
+>
+> "We'll pay you triple your rate!"
+>
+> "I get paid $0, so that's not a lot."
+>
+> "...Your union needs to negotiate better."
 
 The people working on The Killer debated what they could ask about their work,
 but we were quickly told that we were absolutely not getting hints on anything,
-which let us know we were doing well.
+which let us know we were doing well. We continued work on the shells, solving Shell 1 forward
+and solving Shell 3 with 0 feeders via a Vigenere brute-force, but failed to progress further.
+Late in the night, we broke into the mechanic for Shell 6, and I spent my hotel room evening
+trying to construct cryptics without much success.
 
-Our path through the shells went as designed. We solved Shell 1 forward, slowly building backsolve
-constraints on PENROSE. We solved Shell 3 with 0 feeders via brute-forcing the last step,
-using that to figure out how the feeders worked. I didn't like the feeder mechanism, calling it jank,
-but then I remember how jank some of the submets of Sci-Fi Round and Pokemon Round were and let it go.
-From there, we were stuck, and bounced between guesses like "there's a backsolved feeder we don't have like Safari", "every puzzle is used in exactly 2 metas", and so on. Although we'd broken into
-the idea for Shell 6, all our partial work was wrong due to making an early guess on RANGE that proved to be incorrect, and I spent my Sunday 2 AM trying to construct more cryptics without much luck.
+# Sunday
 
-The next morning, we got a call saying we could ask for hints on puzzles if we went to the Gala.
-Hunt ops says this was because Cardinality was about to finish (they had seen their entire team in the
-Gala). I took the opportunity to get A Weathered Note past the finish line, hoping the extra answer would unstick Shells. It didn't for the metas I was working on, but when we showed them to fresh eyes,
-they asked a pivotal question: shouldn't shell corporations contain other shell corporations?
+I would end up spending my entire Sunday on Paper Trail, because once we broke into the
+shells, it was too exciting to do anything else.
 
-By this point, we had organized our HQ into two rooms. One room was "The Shells room", and the other was "the everything else room". Each table was working on a different set of shells, with my table
-working on Shells 4 and 7. We had the a-ha that Shell 3's answer would be excellent for Shell 4,
-and asked across the room if anyone else's shell wanted to use Shell 1's answer. The table for
-Shell 2 said it could work for them, and you could feel the energy in the room spike up.
-We backsolved Shell 7, re-forward solved it, used it to backsolve Shell 4, and then the room became
-very loud as everyone shouted constraints they wanted and potential backsolve answers.
-Our remaining solve path was a backsolve of Shell 6, a side-solve of Shell 2, a forward solve of Shell 8, and a partial forward solve of Shell 5 (enough to understand the feeders it used). Then a backsolve of Shell 5 finished faster than the forward solve, unlocking Shell Game. (We never figured out Shell 4 extract.)
+## Paper Trail (Sunday)
 
-[**The Shell Game**](https://www.two-pi-noir.agency/puzzles/the_shell_game) - The majority of the Shells room was asked to finish forward solving Shell 6 to resolve the graph, while a smaller group of around 8
-worked on the metameta mechanics and checked past work. I verified that yes, that shell does go to itself, we'd put it in as
-a "fuck it we ball" placeholder and I upgraded it to "yes we do ball".
+**Shell Corporations** - When I arrived, we were very confident *something* weird was
+up, but weren't sure exactly what. The metas just felt too much like spaghetti,
+reminiscient of Pokemon and Sci-Fi metas written around tight constraints.
 
-The rough idea from the mechanics team was to draw paths using our feeders, but the edge counts weren't exactly lining up (the number of unique letters was a bit off in an unhelpful way). To fix
-this, our team tried to make it work by using feeder answer letters out of order, which felt unsatisfying to me but I wasn't sure what else to do.
-As Shell 6 got cleaned up (including the "what the fuck" update to our graph), I volunteered to go to the Gala to verify we weren't totally off track. It was around 5 PM by this point, hints were free-for-all, and we extra wanted to make sure we hit runaround before 10 PM.
+Our leading guess was something like, "there is a backsolved feeder we can't submit
+like Safari Adventure, and also feeders go to multiple shells", based on the feeder count
+and us really liking PENROSE for Shell 1 but not succeeding on any backsolve. Meanwhile,
+all our Shell 6 work was on the wrong track thanks to an early guess on RANGE that was
+entirely incorrect.
 
-On the way over, I ran into a huge contingent of Providence solvers in the hallway, and reported that Providence was likely on runaround.
+At this time, HQ called us and said we could now ask for hints. We knew Cardinality was
+about to finish thanks to seeing literally their entire team in the Gala, so I took the
+opportunity to get the hint we desperately needed for A Weathered Note and came back in
+hopes the extra answer would let us break in on a new Shell.
+
+By now, we had divided our HQ into two rooms. One room was "The Shells room", and the
+other was "The Everything Else room". We gave a runthrough to some people who'd filed
+into the Shells rooms, and one person asked a pivotal question:
+shouldn't shell corporations contain other shell corporations?
+
+With this prompting, we realized Shell 3's answer could be excellent for Shell 4,
+and asked across the room if anyone else's shell wanted Shell 1's answer. The Shell 2 group
+said it worked for them, and the entire room perked up. Realizing we should now attempt
+backsolving metas, we backsolved Shell 7, re-forward solved it to get the answer for Shell 4,
+and then things got loud as everyone shouted desired constraints and backsolves across
+the room. We worked on re-forward solving Shell 4, and then Papa's Stash got solved, unlocking
+the blacklight puzzles.
+
+## Illegal Search (Sunday)
+
+[**Jargon (Under Blacklight)**](https://www.two-pi-noir.agency/puzzles/jargon_blacklight) - Can't
+believe they left me to the wolves again!!! Rude. Someone from the Everything Else room
+barged into the Shell room, did the Lingo re-solve with us, then went back to their room.
+
+## Paper Trail (Sunday)
+
+Looking back at Shell 4, we understood the feeder constraints, but not how to forward-solve
+the puzzle, and moved on to other metas.
+The rest of our solve path was a backsolve of Shell 6, a side-solve of Shell 2, a forward solve of Shell 8, a partial forward solve of Shell 5 (enough to understand the feeders it used), then a backsolve of Shell 5 before we finished the forward solve to unlock Shell Game.
+
+[**The Shell Game**](https://www.two-pi-noir.agency/puzzles/the_shell_game) - The majority of the Shells room was asked to finish forward solving Shell 6 to resolve the graph, while a smaller group of around 8 of us double-checked the shell graph and debated metameta mechanics.
+I verified that yes, that shell does go to itself, we'd put it in as a "fuck it we ball"
+placeholder and now that we had 100% info I confirmed it as "yep we do ball".
+
+The rough idea from the mechanics team was to draw paths using our feeders, but the edge counts
+didn't line up the way we wanted (number of unique letters was off in an unhelpful way). To fix
+this, our team tried writing feeder answer letters out of order, which felt unsatisfying.
+As Shell 6 got cleaned up (including the "what the fuck" update to our graph), I volunteered to go to
+the Gala to verify we weren't totally off track. At this time, it was 5 PM, hints were free-for-all,
+and we really wanted to make sure we got to do the runaround.
+
+On my way to the Gala, I ran into a huge contingent of Providence solvers in the hallway, and reported that Providence was likely about to finish.
 At the Gala, I got confirmation that our graph was correct, and that our idea was mostly correct, with
 a nudge to "consider the entire corporate structure". This was *just* big enough for
-me to get the correct idea through Discord, and by the time I got back, there was only chaos.
-The Killer had been solved in the interim, so everyone was in the Shells room. There were 4 copies
-of the puzzle getting solved (2 on whiteboards, 2 online), each racing / acting as backup in case
-one copy hit a contradiction. With all feeders for Paper Trail solved or bought with clues, there
-wasn't really anything to do besides aspirational nutrimatic guesses and waiting, with a final solvea bit past 6 PM.
-
-We got scheduled for a 7 PM run of endgame, and to celebrate we mass-unlocked all our remaining Stakeout puzzles. I contributed a bit to [Men's at My Nose](https://www.two-pi-noir.agency/puzzles/mens_at_my_nose), but mostly helped on cleaning up our HQ.
+me to get the correct idea, and by the time I got back, there was only chaos.
+The Killer had been solved, so everyone was in the Shells room now. There were 4 working
+copies of the puzzle (2 on blackboards, 1 in Excalidraw, and another in someone's solo program),
+and we decided not to consolidate them and treat each one as a backup if others hit a contradiction.
+I decided I literally would not be able to force myself close enough to the blackboard to contribute
+to the graph, and just worked on guessing meta puns instead. Our solve went through a bit after
+6 PM, and to celebrate, we mass-unlocked our remaining Stakeout puzzles to chew on while waiting
+for our endgame interactions.
+I contributed a bit to [Men's at My Nose](https://www.two-pi-noir.agency/puzzles/mens_at_my_nose), but mostly helped on cleaning up our HQ.
 
 
 ## Endgame
 
 As explained in the wrap-up, in the runaround, teams ended up at the Finster vault. The door was
-locked with an audio lock installed by Sidecar. To open the lock, we needed to do [Foley](https://en.wikipedia.org/wiki/Foley_(filmmaking)) for a 3 minute silent movie. Only one person could
-see the movie through a hole in the vault door. The room would first play the movie in the door,
-recording all audio, then it would play the movie (with audio) on a big projector.
+locked with an audio lock installed by Sidecar. To open the lock, we needed to do [Foley sounds](https://en.wikipedia.org/wiki/Foley_(filmmaking)) for a 3 minute silent movie. Only one person could
+see the movie through a hole in the vault door. The room would record audio as the movie played,
+then it would play back the movie (with recorded audio) on a big projector.
 
 The audio in wrap-up explaining this was a bit muted, so, for your viewing pleasure, here is our
 first attempt.
 
-VIDEO
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qGuQqTlA2kw?si=naHic00sBlfWL5Z3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Yeah, turns out using audio cues during Foley doesn't actually work. A few of us initially planned
-to refer to the recording, but D&M came over and quickly gave some in-universe speech about how
-it was impossible for us to have such compact video cameras in this day and age, to indicate
-using recordings for timing was banned. We did it properly the second time (or more accurately, we
-spent so long coordinating that D&M told us "the lock's not *that* sensitive" so that they could
-get us out of the vault for the next runaround.)
+Yeah, in retrospect, using *audio* cues to signal people during sound recording was a bad idea.
+Me and others recorded this with the plan of referring to the recording for the 2nd attempt, but
+Death & Mayhem quickly came over and gave an in-universe speech about how it was impossible for
+us to have such compact video cameras in this day and age, and that we should only look at
+recordings later. We did it properly the second time. Or more accurately, we
+spent so long writing down and coordinating sounds that Death & Mayhem told us "the lock's not *that* sensitive" so that they could clear the vault for the next runaround. And with that, we finished
+Hunt.
 
-After this finished, we went back to HQ. I helped clean up, then went with a few others to
-the MIT DDR room
+I helped clean up HQ, then walked through the snow with a few others to the MIT rhythm game room to fumble on DDR,
+get confused about the knobs on Super Voltex, and play exactly 1 song on CHUNITHM.
 
-IMAGES
+![Snow](/public/mh-2025/snow.jpg)
+<p>
+<div style="display:flex; width:100%">
+    <img style="width:50%" src="/public/mh-2025/soundvoltex.jpg" alt="Sound Voltex">
+    <img style="width:50%" src="/public/mh-2025/chunithm.jpg" alt="CHUNITHM">
+</div>
+</p>
+
+This post ended up being a lot longer than I expected it to...but that is how all my Mystery Hunt
+posts go. This is my 10th post about Mystery Hunt, a milestone I find slightly disquieting. I never
+went to MIT, but there are campus corridors I recognize by heart. I feel privileged that I get to
+experience this narrow and biased slice of MIT culture every year, and I'm looking forward to seeing people next year.
+
+![MATE on whiteboard](/public/mh-2025/mate.jpg)
