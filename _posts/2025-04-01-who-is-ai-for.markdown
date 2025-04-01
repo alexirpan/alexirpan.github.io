@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Who is AI For?"
-date:   2025-04-01 01:29:00 -0800
+date:   2025-04-01 09:20:00 -0700
 ---
 
 Who is AI for right now?
@@ -12,7 +12,7 @@ captioning, and text-to-speech for grinding out TikTok videos that read Reddit c
 to farm engagement.
 But also...math contest solving? Science Olympiad questions? Who is that for?
 
-I think the easy answer to this question, is that right now AI is for the AI developers.
+I think the easy answer to this question is that right now, AI is for the AI developers.
 People working in AI respect math and science contests, doing well on them is high status,
 so they test LLMs on those contests, even if most people do not care.
 It's why so many LLM developers are focusing on code. It's why we get announcement posts
