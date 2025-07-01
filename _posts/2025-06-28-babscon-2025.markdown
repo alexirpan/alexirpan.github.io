@@ -1,0 +1,139 @@
+---
+layout: post
+title:  "BABSCon 2025, Or, Brony Musicians Seize The Means of Production"
+date:   2025-06-28 22:49:00 -0700
+---
+
+The point of pointless stories is to tell them.
+
+First, some background. Bronies are older fans of My Little Pony: Friendship is Magic,
+typically teenager age or older, predominantly male. At least that's how it used to be,
+the ratios have shifted to be more female over time. It had a moment in the early 2010s,
+spawning a bunch of MLP fan conventions, or brony conventions. Many of these cons are now
+dead, but some still run, and the dedicated core fan community still attends enough of them
+to keep it sustainable. At their peak, attendance would be in the thousands. These days
+it's around 200-800.
+
+BABSCon, short for Bay Area Brony Spectacular, was one such event. They first ran in 2014,
+and quickly became one of the mainstays (manestays?) of the brony convention circuit.
+My first BABSCon was in 2016, and I attended most years ever since. I never did
+a great job at actually making long-lasting friends from these conventions, but they were
+fun. For me, they evolved from "OMG, everything is new and amazing" to "oh, I recognize
+this vendor from last year, and I've been to this panel before, and I've heard this
+story before", and so on. As I left BABSCon 2024, I decided I was no longer attending BABSCon.
+I'd gotten my fill, I was running out of merch I wanted to buy, and it just didn't
+feel worth my time anymore.
+
+Then at closing ceremonies, they announced that BABSCon 2025 would be the *final* BABSCon.
+The organizing staff wanted to move on. I may have fallen out of the con scene, but
+*of course* I had to go.
+
+What transpired turned into an almost perfect cross-section of my life. And we haven't even
+gotten to the music yet.
+
+\* \* \*
+{: .centered }
+
+A brony convention can very broadly be sliced into these pieces:
+
+* Panels, where official MLP voice actors and writers answer questions, or fans present a
+pony-adjacent topic.
+* Vendor halls and artist alleys, where fans sell art prints and fan merch.
+* Gaming rooms (with board gaming, video gaming, and card gaming all represented).
+* A concert area in the evenings.
+
+For the final BABSCon, I felt I should give back the community that had brought so much
+entertainment and joy to me over the years. On a whim, I filled out a panel application titled
+"Ponies and Puzzles". In it, I pitched a two-part panel. The first would cover puzzle
+design, and rank the puzzles and riddles which appeared in My Little Pony. (There are
+a surprisingly large number of these, since the show has homaged both detective fiction
+and adventure fiction.) The second would be an introduction to puzzlehunts. I explained why
+I wanted to run this panel, pointed to academic talks I'd given before as evidence of
+public speaking experience, and linked [Puzzles are Magic](https://www.puzzlesaremagic.com/),
+the MLP-themed puzzlehunt I led the design for back in 2020. I am the most puzzle-pilled
+brony in the world, this is the talk I was made for.
+
+The panel was accepted! Which left me the task of preparing a 90 minute talk. Oops. Still,
+wasn't this what I signed up for? As I worked on sourcing episode clips and deciding what to
+keep and what to cut, I got an email from the events coordinator of BABSCon.
+
+> Hello,
+>
+> If you are receiving this email then you were accepted to be a panelist at BABSCon 2025.
+>
+> tl;dr I'm hosting open calls to talk about the schedule.
+
+Panelists were expected to attend one of the open calls, to discuss their audiovisual (AV) requirements,
+desired time slots, room constraints, and so on. The way it worked was that the events coordinator
+would host a Zoom call, panelists would drop in whenever they were free, and would be called on in
+order to chat for 2-5 minutes to find what time worked for them. Figuring that panel slots would be
+taken in a first-come first-served basis, I went to the first one I could make, the tail-end of the
+Friday evening timeslot. By the time I got in the call, I was around 8th in line. The first thing I heard
+was "I normally host this panel under a stairway, since I haven't gotten to run it officially yet",
+so we were off to a great start.
+
+When I was 3rd in line, the host said they had to take a call. Alright, no problem. They then said
+that the situation had evolved into an emergency, and they'd need to cut the call early. Unfortunate,
+but understandable. The next open call would be tomorrow, on Saturday.
+
+On Saturday morning, I see the following email.
+
+> Hi all,
+>
+> Thank you everyone that came yesterday, I found it very successful and have a much better grasp on panelist needs.
+>
+> I regret to inform you that due to the ongoing situation I will need to cancel the schedule forum today. 
+>
+> I believe everyone involved tried to do what they thought was best and it is more than unfortunate this conflict came to head in the way it did, when it did. 
+>
+> We are moving forward with what we have, and despite the circumstances, compared to a week ago I am more confident in our ability to pull things off now than I was then. I will wait for an official statement to be decided before speaking on that further.
+>
+> This in no way affects the evaluation of any panel and I likewise completely understand anyone who needs to cancel. Obviously there may be changes to the schedule in the next few days. I will plan to resume with forum calls on Sunday (tomorrow) and will send an earlier notification than this if the situation changes.
+
+??????
+
+I have **no idea** what this is referencing. All I know is that there is drama and it's escalated *hard*.
+I am not on Pony Twitter (because I'm not on Twitter in general), but I am in the BABSCon Discord. So
+I open it for the first time in a long while.
+
+
+The Strike
+-----------------------------------------------------------------------------
+
+Hm...how do I explain this.
+
+The brony music scene is a pretty tight-knit group of people.
+Imagine you have a favorite indie rock band, that goes on tour at different venues. Now imagine that
+instead of indie rock, it's My Little Pony inspired EDM and metal, and the different venues are My Little Pony conventions.
+That's pretty much how it works. One view of conventions is that they let people experience things
+they normally wouldn't, and attending a music concert is one of those things. Even if it's actually
+held in a hotel meeting room.
+
+Most brony musicians upload their songs to Bandcamp, Soundcloud,
+or YouTube. Smaller artists submit to the compilation collective labels, of which the largest is
+[Ponies at Dawn](https://poniesatdawn.bandcamp.com). Usually, some of the "big" artists will submit
+there too, but it depends on the person. I was less into this scene a while back.
+Then I wrote a puzzle about the brony music scene for My Little Pony: Puzzles are Magic, which
+required doing a deepdive on the subject, and I came out of it a fan.
+
+The hype of BABSCon 2025 being the last BABSCon made the concert lineup *stacked*. People like
+Odyssey and 4everfreebrony go to a bunch of events, but BABSCon also had people who hadn't
+performed live in ages, like ponyphonic and Vylet Pony. I was especially hype for Vylet Pony,
+because she quickly turned into my favorite brony musician after I found her music, and she
+basically never goes to conventions. I got into Vylet's work through 4everfree's cover of
+[Little Dreams](https://www.youtube.com/watch?v=rA8ZjlPHlaU),
+but by far her most famous song
+is ANTONYMPH. Its music video (a love letter to the Internet of the late 2000s/early 2010s)
+became massively popular and practically spawned its own subfandom on its own.
+
+EMBED HERE
+
+I am partial to the [lyra.horse](https://lyra.horse/antonymph/) version, which pulls some crazy
+browser shenanigans and is made by a trans horse infosec researcher. Nothing about that sentence
+is surprising if you've spent enough time online.
+
+I don't want this post to turn into the "why you should listen to Vylet Pony post", but the short
+version is that her music covers a very wide range of styles and often slaps. My favorite album is
+[can opener's notebook: fish whisperer](https://vyletpony.bandcamp.com/album/can-openers-notebook-fish-whisperer)
+(yak song my beloved), but I'd also recommend Creature City and Potion Seller from Girls Who Are Wizards,
+and PLAY DEAD! PLAY DEAD! and The Wallflower Equation from Monarch of Monsters.
