@@ -97,7 +97,7 @@ I am not on Pony Twitter (because I'm not on Twitter in general), but I am in th
 I open it for the first time in a long while.
 
 
-The Strike
+The Firing
 -----------------------------------------------------------------------------
 
 Pinkaboo was the music concert coordinator for BABSCon. She has been involved in organizing previous
@@ -123,7 +123,7 @@ Based on this, what do you think Pinkaboo did?
 
 From my perspective, *I had no freaking idea*, because the first 75% of the statement was trying to
 defend against bad things Pinkaboo said, without explicitly saying what those things were? Like, I had
-to infer basically everything. This is not a good news update.
+to infer the actions that could lead to these statements, which isn't what a public statement ought to be doing.
 
 Based on what got discussed in the Discord afterwards, here's my best understanding of the situation.
 
@@ -133,51 +133,58 @@ promotion, logistics, and so on. Pinkaboo also did not get along with parts of B
 is no proof of this, but my guess is that Pinkaboo continually argued for a larger and larger share of the
 budget to attract talent, and staff did not give her as much as she asked for. As she ramped up criticism for how
 BABSCon head of staff was running things, it boiled over until the BABSCon head decided it would be
-easier to fire Pinkaboo than deal with her anymore. It's not clear what Pinkaboo specifically twisted the
-truth on, but it reminds me very strongly of the OpenAI board drama where Sam "was not consistently
-candid with the board", and then the board failed to clarify this in any way that improved public opinion.
-Member of con staff later claimed that some of Pinkaboo's misrepresentations caused them to fall
-several weeks behind schedule. To me, this reads like Pinkaboo making overoptimistic promises,
-or forgetting some detail, rather than something trying to grab power or sabotage the con.
+easier to fire Pinkaboo than deal with her anymore.
 
-(I should remind people that is about a My Little Pony convention. Just, in case people forgot.)
+The strongest statement I could find re: Pinkaboo's wrongdoings that someone was willing to say publicly
+was from a member of con staff saying Pinkaboo's misrepresentation of the state of the concert put
+them several weeks behind schedule. To me this sounds most like Pinkaboo forgot some detail or made
+an overoptimistic promise, rather than a fireable offense.
 
 In a game of he said she said, what matters the most is trustworthiness. The brony musicians strongly trust
-Pinkaboo, and strongly distrust BABSCon staff. Many of the music acts have worked with Pinkaboo before,
-for years and years. She has never been fired this way, ever. She has helped run music events for other
-MLP conventions, not just the Bay Area one. Given her track record, the burden of proof for the
-musicians to agree with Pinkaboo's firing is *very* high, and the con staff has failed to meet it in
-every way.
+Pinkaboo, and strongly distrust BABSCon staff. Many of them have worked with Pinkaboo before. Many other
+*conventions* have worked with Pinkaboo before. And, from a cost-benefit perspective, since BABSCon 2025
+was the final BABSCon, if the con head is sick of working with Pinkaboo, they could have just waited 3 weeks
+and never interacted with her again.
 
-The brony musicians get into an emergency Discord call, and discussed
-their options. In general, the musicians trust Pinkaboo, and don't trust BABSCon stuff, and given they've
-worked with Pinkaboo for years this is pretty understandable. They decide to all go on strike and pull
-out of the concert. It is 3 weeks before the convention is supposed to run.
-
-Normally, music artists sign contracts with the con to have in writing what they will be provided,
-penalties they will pay for not performing, and so on. So those penalties should come into effect,
-except the musicians argue that because the contracts were made by Pinkaboo, those contracts are now voided.
-BABSCon staff disagrees, arguing in Discord that any common sense interpretation would have the contracts
-be made by Pinkaboo on behalf of BABSCon, and that they still hold to BABSCon even if Pinkaboo is fired.
-I am not going to opine on the legal details here, especially because I don't have any of the contract
-texts, but how it resolves doesn't matter. Regardless of the law, BABSCon has lost their entire music
-lineup.
-
-This quickly bubbles over, with other conventions tweeting in support of the brony musicians, and airing
-out dirty laundry and grievances about BABSCon. I will say that I assume all conventions have internal drama
-by default, because logistics is hell and hell is a pressure cooker. So I'm not surprised that people
-have complaints now that it's publicly acceptable to dunk on BABSCon.
-
-Con staff puts out their first statement at this time.
+In short, the burden of proof to justify Pinkaboo's firing is *very* high, and the con staff has failed to
+meet it. The closest analogue I can think of is the OpenAI Sam Altman drama, where the board said he was
+"not consistently candid with the board", and then never gave a satisfying answer, causing the
+company to revolt against them.
 
 
-Now, I have fudged the order of things. I actually read this statement first, before knowing anything about
-what Pinkaboo did or did not do.
-
-Based on this statement
+The Reaction
+------------------------------------------------------------------------
 
 
+The brony musicians get into an emergency Discord call, and discuss their options.
+They decide to form a unified front, and all go on strike, pulling out of the concert. It is 3 weeks until
+the convention.
 
+Normally, music artists sign contracts with the con to get agreements on what will be provided, and
+these contracts include penalities if they back out of performing. Those penalties should come into
+effect now, but after going over their contracts, the musicians argue the contracts were made with
+Pinkaboo rather than BABSCon. Now that Pinkaboo is not part of BABSCon, they believe the contracts
+no longer hold.
+
+BABSCon staff disagrees, arguing that any common sense interpretation is that the contract implies they
+are from Pinkaboo on behalf of BABSCon rather than Pinkaboo individually. This could go to small claims
+court, but that wouldn't fix the situation of losing all their music talent, so far as I know the staff
+has just agreed to let the contracts go.
+
+Other conventions start tweeting in support of the brony musicians. Some individuals start airing out
+dirty laundry and grievances from previous BABSCon iterations, alleging BABSCon has a history of treating
+talent poorly. My opinion is basically not moved by this at all.
+I assume all conventions have internal drama by default, because logistics is hell and hell is a
+pressure cooker. You must make fast decisions with imperfect info to make your con run.
+Any longrunning convention will, eventually, ban an innocent person for sexual harassment. That's just
+where the bar has to be to create the appropriate environment. So, I'm not surprised that people
+have bad things to say about BABSCon, now that it's
+publicly acceptable to dunk on them.
+
+A turf war begins in the BABSCon Discord, but it is heavily, heavily biased in favor of the brony
+musicians. And, to be clear, I think that was correct based on the available facts. Notably,
+even many people on BABSCon staff disagree with the decision. But, they are committed to running the
+con, and acknowledging that the BABSCon head has authority.
 
 Con staff and the former BABSCon music lineup go into negotiation, to see if there's any way forward.
 The musicians' conditions are:
@@ -186,23 +193,20 @@ The musicians' conditions are:
 * BABSCon head of staff must step down
 
 BABSCon staff refuses. Now in my opinion, firing your music lead 3 weeks before con is dumb, but
-firing your head of staff is just suicidal, and there is no way BABSCon was going to agree to those
-demands. So with that 
+firing your head of staff 3 weeks before con is just suicidal. There is no way BABSCon was going to
+agree to those demands. The strike is on.
 
+IMAGE
 
-all conventions have
-internal drama, and so that fact that people have complaints about BABSCon is not surprising to me.
+However, it does end up being a pretty weak strike. Many of the brony musicians have brony artist
+friends, who are relying on selling at the con for their livelihood. Everyone (everypony?) that
+is striking is still encouraging people to attend BABSCon. I'm sure they also understand that
+the concert is just one evening event of the con, and plenty of convention attendees do not
+plan to go to the concert.
 
-All 
+Unfortunately for me, I did really want to go to the concert
 
-According to
-Pinkaboo, she did not get along with BABSCon head of staff. The differences grew over time, but she
-tried to stay professional and focus on making the concert as good as it could be. According
-
-The specific 
-
-
-Hm...how do I explain this.
+(then segue into the other parts of this)
 
 The brony music scene is a pretty tight-knit group of people.
 Imagine you have a favorite indie rock band, that goes on tour at different venues. Now imagine that
@@ -239,5 +243,6 @@ version is that her music covers a very wide range of styles and often slaps. My
 [can opener's notebook: fish whisperer](https://vyletpony.bandcamp.com/album/can-openers-notebook-fish-whisperer)
 (yak song my beloved), but I'd also recommend Creature City and Potion Seller from Girls Who Are Wizards,
 and PLAY DEAD! PLAY DEAD! and The Wallflower Equation from Monarch of Monsters.
+
 
 
