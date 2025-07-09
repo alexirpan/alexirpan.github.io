@@ -28,9 +28,6 @@ Then at closing ceremonies, they announced that BABSCon 2025 would be the *final
 The organizing staff wanted to move on. I may have fallen out of the con scene, but
 *of course* I had to go.
 
-What transpired turned into an almost perfect cross-section of my life. And we haven't even
-gotten to the music yet.
-
 \* \* \*
 {: .centered }
 
@@ -40,7 +37,9 @@ A brony convention can very broadly be sliced into these pieces:
 pony-adjacent topic.
 * Vendor halls and artist alleys, where fans sell art prints and fan merch.
 * Gaming rooms (with board gaming, video gaming, and card gaming all represented).
-* A concert area in the evenings.
+* Parties run out of hotel rooms (often negotiated with the hotel to satisfy noise
+restrictions.)
+* A music concert in the evenings, typically with EDM or rock music by brony musicians.
 
 For the final BABSCon, I felt I should give back the community that had brought so much
 entertainment and joy to me over the years. On a whim, I filled out a panel application titled
@@ -168,7 +167,7 @@ Sam Altman was not consistently candid without providing examples. Yeah, it didn
 
 Here is my most charitable interpretation. Pinkaboo did not get along with BABSCon leadership. I suspect
 she asked for increasingly large shares of BABSCon money, in the bid to incentivize brony musicians
-to make the final BABSCon concert the best one ever. In this she was **massively** successful,
+to make the final BABSCon concert the best one ever. In this, she was **massively** successful,
 because the concert lineup is incredibly stacked. There are musicians who have made famous brony songs
 but never performed them live. There are musicians who haven't performed live in over 5 years. But
 making this happen was expensive. It seems like Pinkaboo and BABSCon didn't work well together, with more of a
@@ -234,33 +233,36 @@ the concert, they consistently ask people to still attend the convention. Many o
 with brony artists that rely on cons for personal income. Everyone (or rather everypony) still
 wants the rest of the convention to be great.
 
-Unfortunately for me, the concert really was the highlight of the con for me.
+Unfortunately for me, the concert really was the highlight of the con for me. I was mildly into brony
+music pre-2020, and then fell deep, deep into the rabbit hole as a side effect of writing the
+puzzle [Recommendations](https://www.puzzlesaremagic.com/puzzle/recommendations.html) for
+Puzzles are Magic. I have to try to explain *why*, since brony music is really, really not accessible.
+It has evolved from
+"haha mild remix of song from MLP episodes" to ["metal song based on character from
+an MLP AU that last updated 10 years ago"](https://www.youtube.com/watch?v=44ugTb3nZec). This was
+one of the *bigger* songs of the year.
 
-(then segue into the other parts of this)
+I think the best explanation I have for how this all "works" is that if you're a fan of My Little Pony,
+you automatically give some slack to music made by other fans of My Little Pony, because clearly
+they have good taste. Then the music recommendation algorithms hijack the existing fandom
+social fabric to introduce you to new artists. Pretty soon you're radicalized into getting emotional
+over a song about [a neurodivergent unicorn that whispers to fish](https://www.youtube.com/watch?v=H-u9O2eG8qQ).
+That's life.
 
-The brony music scene is a pretty tight-knit group of people.
+Concerts at MLP conventions fit into this because that's where the target audience for the music is.
 Imagine you have a favorite indie rock band, that goes on tour at different venues. Now imagine that
-instead of indie rock, it's My Little Pony inspired EDM and metal, and the different venues are My Little Pony conventions.
-That's pretty much how it works. One view of conventions is that they let people experience things
-they normally wouldn't, and attending a music concert is one of those things. Even if it's actually
-held in a hotel meeting room.
-
-Most brony musicians upload their songs to Bandcamp, Soundcloud,
-or YouTube. Smaller artists submit to the compilation collective labels, of which the largest is
-[Ponies at Dawn](https://poniesatdawn.bandcamp.com). Usually, some of the "big" artists will submit
-there too, but it depends on the person. I was less into this scene a while back.
-Then I wrote a puzzle about the brony music scene for My Little Pony: Puzzles are Magic, which
-required doing a deepdive on the subject, and I came out of it a fan.
+instead of indie rock, it's MLP EDM. One view of conventions is that they let people experience things
+they normally wouldn't, and the concert is one of those things. Even if it's actually held in a hotel meeting room.
 
 The hype of BABSCon 2025 being the last BABSCon made the concert lineup *stacked*. People like
 Odyssey and 4everfreebrony go to a bunch of events, but BABSCon also had people who hadn't
 performed live in ages, like ponyphonic and Vylet Pony. I was especially hype for Vylet Pony,
-because she quickly turned into my favorite brony musician after I found her music, and she
-basically never goes to conventions. I got into Vylet's work through 4everfree's cover of
+because she quickly turned into my favorite brony musician after I found her music, and Vylet
+*never* goes to conventions. I got into Vylet's work through 4everfree's cover of
 [Little Dreams](https://www.youtube.com/watch?v=rA8ZjlPHlaU),
 but by far her most famous song
 is ANTONYMPH. Its music video (a love letter to the Internet of the late 2000s/early 2010s)
-became massively popular and practically spawned its own subfandom on its own.
+became very popular, and still has a subfandom of its own.
 
 EMBED HERE
 
@@ -268,15 +270,18 @@ I am partial to the [lyra.horse](https://lyra.horse/antonymph/) version, which p
 browser shenanigans and is made by a trans horse infosec researcher. Nothing about that sentence
 is surprising if you've spent enough time online.
 
-I don't want this post to turn into the "why you should listen to Vylet Pony post", but the short
-version is that her music covers a very wide range of styles and often slaps. My favorite album is
-[can opener's notebook: fish whisperer](https://vyletpony.bandcamp.com/album/can-openers-notebook-fish-whisperer)
-(yak song my beloved), but I'd also recommend Creature City and Potion Seller from Girls Who Are Wizards,
-and PLAY DEAD! PLAY DEAD! and The Wallflower Equation from Monarch of Monsters.
+Vylet was one of the musicians most outspoken about how she only agreed to perform at BABSCon
+because she trusted Pinkaboo to keep everything together. So, knowing the main artist I wanted to
+see wouldn't be there sucked quite a bit.
 
-
-
+EMBED
 
 https://www.youtube.com/watch?v=nWU-CZozypw
 
 https://www.youtube.com/watch?v=2OHUhzXyVlY
+
+But, maybe there'd be a way to make it happen anyways.
+
+
+Crowdfunding
+-----------------------------------------------------------------------------------------------
