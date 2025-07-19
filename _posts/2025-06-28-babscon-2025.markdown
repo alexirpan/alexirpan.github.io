@@ -373,101 +373,145 @@ Meanwhile: BABSCon
 ---------------------------------------------------------------------------------------------------
 
 BABSCon chairs have successfully pulled together a new official concert, headlined by Mystery Skulls.
-This is pretty impressive, since Mystery Skulls is a "real" (i.e. professional) music artist. The
-connection to brony fandom is that they own a lot of their popularity to the Mystery Skulls Animated
-series by MysteryBen27, an animator from the early 2010s brony scene. Mystery Skulls Animated is good,
-it's the kind of series that raises more questions than it answers, with animation where you can notice new
-things on your 4th viewing. [Go watch it!](https://www.youtube.com/watch?v=YlEb3L1PIco)
+This is pretty impressive, since Mystery Skulls is a "real" (professional) music artist. Their
+connection to brony fandom is that they owe a lot of their popularity to the Mystery Skulls Animated
+series by MysteryBen27, an animator from the early 2010s brony scene. Mystery Skulls Animated is good.
+It's the kind of series that raises more questions than it answers, with animation where you notice new
+details on your 4th viewing. [Go watch it!](https://www.youtube.com/watch?v=YlEb3L1PIco)
 
 Mystery Skulls was scheduled to perform at BABSCon 2020, before it was shut down due to COVID.
+So they already had a working relationship with BABSCon. In some ways, this is arguably a make-up set
+for the one they should have played 5 years ago.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Excited to announce I will be performing at <a href="https://twitter.com/BABSCon?ref_src=twsrc%5Etfw">@BABSCon</a><br>this year!! <br>go to <a href="https://t.co/k5NeRt6wFc">https://t.co/k5NeRt6wFc</a> to get your badge! Use the code “SKULLS” and receive 15% off either a one day or three day badge! See you there ! !! ! <a href="https://twitter.com/hashtag/Mysteryskulls?src=hash&amp;ref_src=twsrc%5Etfw">#Mysteryskulls</a></p>&mdash; Mystery Skulls (@MysterySkulls) <a href="https://twitter.com/MysterySkulls/status/1230154228523339777?ref_src=twsrc%5Etfw">February 19, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-So they already had a working relationship with BABSCon, and as someone connected to but outside of the fandom,
-they're not breaking the strike in the same way that a brony musician would. I mean, they are breaking the
-strike, but that implies the strikers want to come back. They don't. So, whatever.
+As someone connected to but outside of the fandom, they're not seen as a strikebreaker in the way that
+a brony musician would be viewed. I mean, they are breaking the strike, but that implies the strikers
+have any intention to come back. They don't. So, whatever.
 
-With this, a few people point out that against all odds, the situation has led to a better attendee
-experience. If you wanted a concert, now you have two concerts. The official BABSCon concert (now called
-Burning Mare) is now significantly shorter, and the slack in the schedule is used to move many panels to
+With this, a few people point out that somehow, everyone's gotten what they wanted.
+BABSCon doesn't have to deal with Pinkaboo. The brony musicians don't have to deal with BABSCon.
+If you wanted to see a concert, now you have two concerts. The official BABSCon concert (now called
+Burning Mare) is much shorter, and the slack in the schedule is used to move many panels to
 larger rooms. My panel benefits from this - I get upgraded from a side room further away from the main hub
 to one of the three main panel rooms. There are still hard feelings, but the average con experience
-really did get better for people uninvolved. The breakup is bad but the divorce is clean.
+really did get better for people that weren't directly involved. The breakup is bad, but the divorce is clean.
 
-When I get to the con, I immediately line up for the con store, because I'm pretty confident they will run out
-of some items by tomorrow. I come out with a BABSCon 2025 T-shirt and a coin from leftover BABSCon 2024 merch.
-The T-shirts run out by Friday, my call was correct. I pick up a printed out conbook, and perhaps it's
-just my imagination, but the page advertising Mystery Skulls feels like noticably different paperstock.
+Now that the drama is resolved, I focus on finishing up the rest of my panel, so that I can play my (small)
+part in making the con what it is.
+
+
+One Last Time
+---------------------------------------------------------------------------------------------------
+
+When I get to the con, I ask if panelists get a special badge. They don't, so I just pick up a regular badge
+and the official conbook. It may just be
+my imagination, but the page advertising Mystery Skulls feels like it is made of noticably different paperstock.
+
+I immediately head to the con store, because I'm pretty confident they will run out
+by tomorrow. I come out with a BABSCon 2025 T-shirt and a coin from leftover BABSCon 2024 merch.
+The T-shirts run out later that day.
 
 There isn't too much to comment on for the rest of the con. As I said, I've been to enough of these to know what
-to expect, and when I walk into the vendor hall, I don't even want to buy that many things, because I recognize
-the faces of at least 2/3rds of the vendors from previous pony conventions. I end up buying some prints from
-one of the MLP comics artists that's attending BABS for the first and final time, and some tiny wood burned
-pony arts that were 25 cents each at a gacha setup. The one thing I'm surprised to not see are resellers
-of the Kayou MLP cards that are popular in China. I figured at least one vendor would be trying to doing to
-some arbitrage with them.
+to expect. When I walk into the vendor hall, I don't even want to buy that many things, because I recognize
+the wares of almost all the vendors from previous pony conventions. I end up buying some prints from
+one of the MLP comics artists that's attending BABS for the first and final time, and some tiny laser-burned
+wooden pony pieces that were 25 cents each from a gachapon setup.
+The one thing I'm surprised to not see are resellers of the Kayou MLP cards that are popular in China. I figured at least
+one vendor would be trying to profit off them, but I suppose the demand for non-English merch is just low.
 
-When it gets close to the time for my panel, I head to the room. I'm not sure if I set it up myself or if someone
-from the con will help organize. When no one else comes for a bit, I set it up myself. From my standpoint, the panel
-goes well. I have to live-debug fixing computer audio in the middle,
-but people are engaged the whole time and have good follow-up questions about puzzle design at the end. We get through
-the [Power](https://deusovi.github.io/puzzlefiles/zelda-minihunt.pdf) puzzle
-from Deusovi's Zelda Minihunt, a runthrough of [Art of the Dress](https://www.puzzlesaremagic.com/puzzle/art-of-the-dress.html) from
-Puzzles are Magic, and get partway through a group solve of [Cross Eyed](https://www.puzzlesaremagic.com/puzzle/cross-eyed.html)
-in overtime before the next panel takes the stage.
+There is a brief protest for Pinkaboo, but it is very brief.
+A bunch of people in fursuits carry a "We Support Pinkaboo!" flag, pose for a photo op, then disperse.
 
-The food is predictably overpriced, and the gaming area is predictably fun. One of my favorite BABSCon memories is
-playing 3 hours of Smash 64 against someone continuously salting about how bullshit Kirby is while wearing Trixie cosplay.
-Unfortunately, the gaming demographics have shifted heavily to Smash Ultimate and a little bit of Them's Fightin' Herds, neither of
-which I got that into. The panels are fun. One that is a livecasting of a modded WWE game, changing all the
-wrestlers to look like MLP characters. Another goes through a leaked internal Hasbro document circa 2013, that analyzed
-brony fandom and culture for the purposes of helping their marketing teams decide what to do about it.
+![Pinkaboo protest](/public/babscon-2025/pinkaboo_protest.jpg)
+{: .centered }
 
-At the British themed room party, I meet one of the organizers of
-[PonyCon Holland](https://ponyconholland.com/), who complains that me going to London doesn't count as visiting the UK.
-I ask what would count - he says "anywhere but London". We talk a bit about pony cons outside the US, and the
+The food is overpriced, but the gaming area is fun. One of my favorite BABSCon memories from past years is playing 3 hours of Smash 64 against someone continuously salting about how bullshit Kirby is while wearing Trixie cosplay.
+Just, 10/10 no notes.
+Unfortunately, the gaming has shifted heavily to Smash Ultimate and Them's Fightin' Herds, neither of
+which I got very into.
+
+The panels are fun. One is a livecast of a modded WWE game, changing all the wrestlers to look like MLP
+characters. Another goes through a leaked [Hasbro document](https://www.equestriadaily.com/2025/02/what-did-hasbro-think-of-us-in-early.html)
+from *very* early brony fandom, presumably written to help people internally get up to speed on the fandom.
+Now it unintentionally acts as a 2011 time capsule. They have a whole section for
+Steven Magnet. When's the last time anyone's thought about Steven Magnet? Or used
+this meme template?
+
+![A Yo Dawg meme about Big Mac](/public/babscon-2025/big_mac_meme.png)
+{: .centered }
+
+When it gets close to the time for *my* panel, I head over to my room early for setup. I'm not sure if con staff will be there to assist me
+or not. When I see no one there, I set it up myself. I'm somewhat nervous, but I shift into "presenter mode" and as
+I talk the nerves go away. From my standpoint, the panel goes well. I have to live-debug fixing computer audio in the middle,
+but people are engaged the whole time, and have good questions at the end about puzzle design. I do my analysis of the
+two in-universe escape rooms (yes, there are two of them), verify that no one in the room knows what a puzzlehunt is,
+then do a solve along of [Bottom Lines](https://dp.puzzlehunt.net/puzzle/bottom-lines.html) from DP Puzzle Hunt,
+[Power](https://deusovi.github.io/puzzlefiles/zelda-minihunt.pdf) puzzle from Deusovi's Zelda Minihunt, and [Art of the Dress](https://www.puzzlesaremagic.com/puzzle/art-of-the-dress.html) from Puzzles are Magic. We go a bit over time, but it's 30 minutes until the next panel, so I end up
+livestreaming a group solve of [Cross Eyed](https://www.puzzlesaremagic.com/puzzle/cross-eyed.html) from Puzzles are Magic
+until we are kicked out.
+
+With that, there is pretty much nothing left for me to do, besides going to room parties and waiting for
+Mystery Skulls. At many MLP conventions, there is an officially sanctioned room party floor. Many people go
+to an MLP con to get DRUNK, *super* drunk, so to control this there are official parties where con staff
+can make sure everyone's ID is getting checked, no one's breaking open container laws, and no one's
+becoming a danger to themselves or others. I stop by the British themed room party, where I
+meet a life-size cutout of King Charles, eat a bunch of snacks they've brought over from the UK, and
+chat with one of the organizers of [PonyCon Holland](https://ponyconholland.com/). He is on a mission to
+convince people to travel to the EU pony circuit. I mention that I was just in London a few months ago,
+and he complains that visiting London only means you've been to London. It doesn't mean you've been to the UK.
+I ask what would count as the UK - he says "anywhere but London".
+
+We talk a bit about pony cons outside the US, and the
 recent explosion of the Chinese bronycon scene. I don't follow Chinese brony fandom much, but have
-learned some slang like 虹林檎 and 稀有苹果. My Little Pony is massive over there; it feels like China
+My Little Pony is massive over there; it feels like China
 is 10 years behind the US, and they are living through the 2015-2016 peak of MLP popularity, with new conventions
-appearing every year. In the US, this was followed by a contraction, as the less well run cons died off.
+appearing every year. In the US, this was followed by a contraction where cons died off.
 Hopefully that doesn't happen to the Chinese scene, but it'll depend how much staying power MLP has.
-Someone there speculates that Hasbro will prepare a marketing push for the Year of the Horse in 2026. We'll see.
+I hope to see debates over 虹林檎 vs 稀有苹果 for many more years.
 
-The final BABSCon wraps up with its charity auction, which I am quickly priced out of. The charity auction does go
-over time, so as closing ceremonies begin, a few people start boarding the shuttles that have arrived for Pinkaboo's
-Neighhem. I am not enough of a hater or pony music person to skip the literal final BABSCon closing ceremony,
-but it does have an odd sense of not-quite-finality to it. A *lot* of people are going to Pinkaboo's Neighhem.
+
+The final BABSCon wraps up with its charity auction, which I am quickly priced out of.
+As closing ceremonies begin, a few people start boarding the shuttles that have arrived to take people to
+Pinkaboo's Neighhem. I am not enough of a pony music person to skip the literal final BABSCon closing ceremony,
+but it does have an odd sense of penultimateness to it. The real finale's in Redwood City.
 
 
 Pinkaboo's Neighhem
 ----------------------------------------------------------------------------------------
 
-IMAGE HERE
+![Pinkaboo's Neighhem, on a sign](/public/babscon-2025/neighhem.jpg)
+{: .centered }
 
-To borrow a saying from the youth, the vibes are immaculate.
+To borrow a saying from the youth, the vibes are immaculate. The entire concert
+feels like one huge after party, complete with a custom drinks menu at the bar. According to the organizers, Pinkaboo's Neighhem got over 1000 signups on their Eventbrite, compared to 2000 registrations for BABSCon 2025.
+It's unclear how many people actually showed up, but half the convention looks
+accurate to me.
+Pretty good turnout for a relatively last minute event.
 
-The entire concert is an after party, complete with a custom drinks menu at the bar. According to
-the organizers, they got over 1000 signups on their Eventbrite. It's not clear how many of those people showed
-up in person, but I'd say about half the convention has shown up. Pretty good turnout for a
-relatively last minute event, especially given that some people are flying out on Sunday evening.
+The Mystery Skulls set at BABSCon was fun, but Neighhem is beating it on all dimensions.
+The venue is nicer. The concert setup is more elaborate, with a larger stage
+and more audiovisuals. The performer callouts are more specific to MLP fandom,
+and it feels more like a *pony* rave rather than just a rave.
+Turns out you *can* just move a concert if everypony wants to make it happen.
 
-The venue is
-fancier. And the concert setup is significantly more elaborate, with a larger stage and more audiovisual setup.
-It turns out you *can* just move a concert if everyone (everypony) involved decides to transplant
-their existing work.
-
-I stick around until the schedule gets to an act I think I can skip, and get dinner at a ramen place.
+I stick around until the schedule gets to an act I'm less excited about, and leave
+to get dinner at Marufuku. (Another upside: being close to good food.)
 As I walk back to the venue, boba in hand, security stops me and tells me no outside drinks are allowed.
-So I drink my boba outside, suddenly feeling a bit self-conscious about wearing an MLP hoodie and jersey
-in public. I remember a comment from a Youtube video essay about ANTONYMPH:
+So I drink my boba outside, suddenly feeling self-conscious about the MLP hoodie and jersey I am still wearing.
+But this fades quickly when I remember that cringe is defeated by both
+safety in numbers and not giving a shit.
+in public.
 
 > When I wore my fursuit on my college campus for Halloween I had many peers who thought they were a spectator to the cringe show that I was, and they’d record me or look and talk about me from far away in their groups- unaware of how good my head’s visibility is. When I noticed someone recording or jeering, I waved and I posed, and they’d either immediately look away or act like it was not me they were recording. They didn’t realize the show was interactive! We have this kind of drive to cringe at and feel better than others, assuming they are static and detached from us, but in reality (especially as we see it now) the “other” might be starkly aware of you.
 
+(Comment by @riff__rafferty, on [The Brony Song That Makes Me Cry](https://www.youtube.com/watch?v=7pt-hsvuakM))
+{: .centered }
+
 In the crowd outside, I spot someone who I remember gave a talk about MLP generative AI at a previous
 BABSCon, and I say hi. In retrospect, I realize I did not introduce myself at all, and, oops that
-made things awkward. We briefly talk about rationalists - it turns out you cannot escape rationalist
-discussion if you are in the Bay Area and talk about AI, even outside of a My Little Pony
-concert.
+made things awkward. We briefly talk about the state of rationalist discourse. It turns out you cannot escape rationalist
+discussion if you are in the Bay Area and talk about AI, even outside of a My Little Pony concert.
 
 I go back into the concert area, picking up a poster since T-shirts in my size are sold out. By the end
 of the night, Neighhem will have sold literally all merch they made.
@@ -479,21 +523,27 @@ As far as I know, the person who fell was just clumsy and got too excited, but o
 the bar cuts off alcohol for the night. (Which unfortunately means I never get to try "The Pinkaboo"
 or "The Eurobeat Brony" cocktails.)
 
-Concert staff release balloons into the crowd, and for the next few hours, there is a longstanding minigame
+Concert staff release balloons into the crowd, and for the next few hours, there is a minigame
 of "keep the balloon in the air". People start filing out as the concert runs later, but I am committed to
-seeing the Vylet and Odyssey sets, which are running back-to-back from midnight to 2 AM.
+seeing the Vylet Pony and Odyssey sets, which are running back-to-back from midnight to 2 AM.
 
-IMAGES (captain hoers)
+![Neighhem sketches](/public/babscon-2025/neighhem_sketches.jpg)
+{: .centered }
+
+([Source](https://askthesunjackers.tumblr.com/post/781578405476974592/a-few-doodles-based-on-my-experience-at-neighhem))
+{: .centered }
 
 The Vylet set doesn't include anything from Monarch of Monsters, but I wasn't really expecting it to -
-it's not a particularly good "dancing" album and the subject matter is heavy. I am happy to recognize some
-songs from Paradise Valley, as well as [Creature City](https://www.youtube.com/watch?v=eJr-_KWPRNc),
-one of my songs of the year from 2024. Based on the volume of the cheers, it is very obvious that
-Vylet's post-2020 work is more well-known, but I catch some references to Super Pony World. Of course,
-ANTONYMPH gets the loudest cheers, but the song truly is fire.
+it's not a particularly good "dancing" album.
 
-Odyssey goes up, and like always her stage presence is enormous. When it gets to Luna and Discord,
-the crowd shouts out the lyrics, because yes, here everyone knows the lyrics by heart. Part of me wonders
+Based on the volume of the cheers, it is very obvious that
+Vylet's post-2020 work is more well-known and everyone is hype when ANTONYMPH
+finally drops at the end, but I'm happy to catch references to Super Pony World,
+I Was The Loner of Paradise Valley,
+and [Creature City](https://www.youtube.com/watch?v=eJr-_KWPRNc), one of my favorite songs from 2024.
+
+Odyssey goes up, and like always, her stage presence is great. When it gets to Luna and Discord,
+the crowd shouts out the lyrics, because yes, here everyone knows the lyrics. Part of me wonders
 how much Odyssey likes playing songs from over a decade ago, compared to her new work, but those are the
 songs that pay the bills, cultural touchstones in a fandom that's been buffeted and weathered but somehow
 never quite died. BABSCon is over for good, but the people are still here.
@@ -502,17 +552,30 @@ never quite died. BABSCon is over for good, but the people are still here.
 Coda
 ---------------------------------------------------------------------------------------------
 
-The BABSCon Discord is now mostly dormant, having turned into yet another MLP chatting Discord but with
-a Bay Area lean.
+The BABSCon Discord is now mostly dormant, having turned into yet another MLP chatting Discord but with a Bay Area lean.
 
 The musicians go back from whence they came. Some are still active in the MLP music scene, while others
 have either stopped making music or work professionally under other aliases. Vylet Pony releases her
-new album [Love & Ponystep](https://www.youtube.com/watch?v=HKpsl3tJmIU) in July. It's a banger. So far,
-"Wonka x Howl" is my favorite.
+new album [Love & Ponystep](https://www.youtube.com/watch?v=HKpsl3tJmIU) in July. To quote a review, it is "fearlessly cringe", and I love it. The album punches you
+in the head with zero subtlety on its inspirations, and that makes it feel real.
+Fan of "Peace, Love, Glalie", "Wonka X Howl", and "Falling in Love With a Corporate Illustration" so far.
 
-The Pinkaboo Neighhem Discord is similar, acting as another MLP music Discord. Several months later,
-Pinkaboo announces that after paying musicians and staff their fees, Neighhem had $1500 left over, which
-was donated to the music program at [New Horizon School](https://www.newhorizonschool.info/), a school for
-students with learning disabilities.
+The Pinkaboo Neighhem Discord also goes dormant, now functioning as another
+MLP music Discord. Several months later, Pinkaboo announces that after paying musicians and staff their fees, Neighhem had $1500 left over, which
+was donated to the music program at [New Horizon School](https://www.newhorizonschool.info/), a school for students with learning disabilities. She teases a new
+non-convention concert, but so far, it's just that, a teaser.
 
-And in the distance is a rumbling of hoofsteps.
+Recently, as my blogging profile has grown, I've wondered how much time to spend
+on stories like these, rather than more "professional" ones. But when I started
+writing publicly, I did it for one reason, to write what I wanted to write about
+and not write what I didn't want to write about. So, screw it, this post is going up.
+It's okay to do things for you, even and especially if they aren't legible to others.
+
+As for My Little Pony, it continues to chug on. There's speculation that Hasbro
+will leverage their Chinese popularity to do a big marketing push for the Year of
+the Horse in 2026. And as of last week, Variety's reported that [a live-action
+MLP movie](https://variety.com/2025/film/news/my-little-pony-movie-live-action-amazon-mgm-hasbro-1236461858/) is in the works. No one is excited by this news, the track
+record of live-action reboots is really not good, but I remember when Friendship is
+Magic was written off as a trash cash-in cartoon. Then it started airing, and now
+Twilight Sparkle is a cultural icon. I hope the movie's good. For now, all there is
+to do is celebrate what we have and wait for what's new.
