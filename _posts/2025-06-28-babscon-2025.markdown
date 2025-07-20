@@ -1,68 +1,63 @@
 ---
 layout: post
-title:  "BABSCon 2025, Or, Brony Musicians Seize The Means of Production"
+title:  "BABSCon 2025, Or, My Eyewitness Account of Brony Musicians Seizing The Means of Production"
 date:   2025-06-28 22:49:00 -0700
 ---
 
-This is a really pointless story, but the point of pointless stories is to tell them.
+Bronies are older fans of *My Little Pony: Friendship is Magic*. They are mostly male, typically in 20s-30s age wise, and have been
+trending older and more female over time. (A lot of girls in the original target
+demographic grew up, and a lot of men in the fandom realized they were trans.)
 
-First, some background. Bronies are older fans of My Little Pony: Friendship is Magic.
-They are typically teenage age or older,
-and predominantly men. At least, that's how it used to be. By 2025, a lot of those
-men realized they were transgender, so although the demographics are still mostly male,
-it's become more female shifted over time.
-
-Friendship is Magic had a moment in the early 2010s, spawning a bunch of brony conventions.
-Many of these cons are now dead, but some still run. The core fan group still attends enough
-of them to keep the cons sustainable. At their peak, con attendance would be in the thousands,
+Brony conventions are cons for the MLP fandom. Most have their roots
+in the peak hype of the early 2010s, but many cons from that era are now defunct.
+However, the core fan group attends enough to keep cons sustainable. At their peak,
+con attendance would be in the thousands,
 but these days attendance in the hundreds is more accurate.
 
-BABSCon is one of those cons. Short for Bay Area Brony Spectacular, it first ran in 2014,
+BABSCon is one such convention. Short for Bay Area Brony Spectacular, it first ran in 2014,
 and quickly became one of the mainstays (manestays?) of the brony convention circuit.
-My first BABSCon was in 2016, and I've attended most years since. I never did
-a great job at making long-lasting friends from these conventions, but they were
-fun. For me, cons evolved from "OMG, everything is new and amazing" to "oh, I recognize this
-panel and vendor from last year", so pony conventions in general have become less
-interesting to me as they became less novel. By the time of BABSCon 2024, I was leaving the
-con early with no plans to go to future BABS. I'd gotten my fill, I'd bought all the merch I wanted
-to buy, and it just didn't feel worth my time.
+My first BABSCon was in 2016, and I've attended most years since. They've
+been fun, but my interest has fallen over time.
+The panels have started to repeat, the vendors have had less new merch,
+and it's all just gotten less novel each year.
+By BABSCon 2024, I had decided I wasn't going to any future iterations.
+I'd gotten my fill.
 
-Checking social media afterwards, I saw that at closing ceremonies, con
-staff announced that next year's BABSCon, BABSCon 2025, would be the *final* BABSCon.
-The organization was moving on.
+Checking the news afterwards, I learn that con staff were ready to hang things up.
+Next year's BABSCon, BABSCon 2025, would be the final one.
 
 I may have fallen out of the con scene, but *of course* I had to go.
 
 
-Okay But What Does a My Little Pony Convention Have
+Okay But What Do You Do At My Little Pony Conventions
 -------------------------------------------------------------
 
 MLP conventions follow a similar template.
 
-* Panels, where official MLP voice actors and writers answer questions, or fans present a
-pony-adjacent topic.
+* Panels, where official MLP voice actors and writers answer questions, or fans present a pony or pony-adjacent topic.
 * Vendor halls and artist alleys, where people sell art prints and fan merch.
 * Gaming rooms, where people play video games, board games, or the defunct MLP CCG.
-* Parties run out of hotel suites (negotiated with the hotel in advance to satisfy noise
-restrictions)
-* A music concert in the evenings, typically with EDM or rock music made by brony musicians.
+* Parties run out of hotel suites, to socialize while drinking cheap booze.
+* A music concert in the evenings, typically set up as a rave with EDM or rock music made by brony musicians.
 
-For the final BABSCon, I felt I should give back to the community that had brought so much
+I've been to many of these conventions as a rando. For the final BABSCon, I felt I should give back to the community that had brought so much
 entertainment over the years. So on a whim, I filled out a panel application titled
 "Ponies and Puzzles".
-I pitched a two-part panel. The first would analyze puzzles and riddles in My Little Pony from the
-standpoint of puzzle design. The second would present pony-themed puzzles. I explained
-why I wanted to run the panel, pointed to academic talks as evidence of my public speaking
+I pitched a two-part panel. The first would analyze the design of the puzzles and riddles in My Little Pony. The second would be a solve-along of pony-themed puzzles
+from puzzlehunts.
+I explained why I wanted to run the panel, cited academic talks as evidence of my public speaking
 experience, and linked [Puzzles are Magic](https://www.puzzlesaremagic.com/),
 the MLP-themed puzzlehunt I led the design for back in 2020. This was all to convince
-BABSCon that I am the most puzzle-pilled brony in the world and this was the talk I was made to
-give, despite never running it before. I figured competition would be high to present at the
-final BABSCon.
+BABSCon that I am the most puzzle-pilled brony in the world and this was the talk I was *made* to
+give, despite never giving it before. I thought competition to present at the final
+BABSCon would be high, and wanted to put forward my best shot.
 
-My panel was accepted! Which left me the task of actually, uh, writing it.
-Still, wasn't this what I signed up for?
+My panel was accepted! Which left me the task of actually, uh, writing and
+preparing a 90 minute presentation.
+Still, wasn't this what I signed up for? I procrastinate working on it, then start
+grinding through the slides in the weeks leading up to BABSCon.
 
-Three weeks before the official BABSCon date, I get an email from the events coordinator of BABSCon.
+Three weeks before the official date, I get an email from the events coordinator of BABSCon.
 
 > Hello,
 >
@@ -70,21 +65,23 @@ Three weeks before the official BABSCon date, I get an email from the events coo
 >
 > tl;dr I'm hosting open calls to talk about the schedule.
 
-Panelists were expected to attend one of these calls to share their AV requirements and desired time
-slots. In particular, if there were events we knew we wanted to attend, they could shuffle the
-schedule to make sure our panel wouldn't conflict with those events. Somehow, I've never realized
-this is how con scheduling works.
+Panelists were expected to attend one of these calls to coordinate a desired
+panel time.
+In particular, if there were other panels we knew we wanted to attend, they could shuffle the
+schedule to make sure our panel wouldn't conflict with those panels. Somehow, I've never realized
+this is how con scheduling works. At academic conferences, the schedule is
+decided for you.
 
 I figured that panel spots would be first-come first-served, so I went to the first time I could
-make, the end of the Friday 4-6 PM time slot. I didn't join the call until 5:50 PM, which meant I
-was 8th in line. Luckily, the host was willing to run late until they got to everyone.
-It was neat to learn a bit about the behind-the-scenes of a pony convention. The first thing I heard
-in the call was "Normally I run this panel in a stairwell at night, you guys are the first time I've gotten
-to run it officially", so we're off to a great start.
+make, the end of the Friday 4-6 PM call. I wasn't free until late, but
+luckily, the host was willing to stay until they got to everyone.
+The first thing I heard in the call was about a panel that was normally
+held under a stairwell at night, so we were off to a great start.
 
-Before they got to me, the host said they had to take a call. Alright, no problem. I go back to tuning
-up the slides for my panel. At 6:05 PM, the host comes back saying the situation has evolved into an emergency,
-and they'll need to stop the call early. Annoying, but I get that event organizing can be hectic.
+Before they got to my place in line, the host said they had to take another call. Alright, no problem. I go back to working on
+the slides for my panel. At 6:05 PM, the host comes back, says that other call
+has evolved into an emergency, and they'll need to stop today's panel call early.
+Annoying, but I get that event organizing can be hectic.
 I pencil in joining the next open call on Saturday.
 
 Saturday morning arrives. I check my email, and:
@@ -106,7 +103,7 @@ Saturday morning arrives. I check my email, and:
 Sorry, what?
 
 I don't read brony social media, so I have no idea what drama is going down. But it's clear that *something* is
-going on, it's escalated hard, and it's hit the point where I obviously know what the "ongoing situation" is.
+going on, it's escalated hard, and it's hit the point where con staff assumes everyone obviously knows what the "ongoing situation" is.
 Except I don't. So...what?
 
 With some trepidation, I open the BABSCon Discord, and there is a fire, burning bright.
@@ -116,20 +113,14 @@ The Situation
 -----------------------------------------------------------------------------
 
 I've decided not to name anyone besides Pinkaboo, the central figure of the story. The names are easy
-to find if you look for them.
+to find if you really need to know.
 
-Pinkaboo was the music concert coordinator for BABSCon. She has been involved in organizing previous
+Pinkaboo was the music concert coordinator for BABSCon. She has been involved in organizing
 pony music concerts for several years, for both BABSCon and other pony conventions.
-Because of this, she is widely liked by the brony musician community, but not widely known outside
-of people who perform at cons, due to playing more of a background role.
+Because of this, she is widely liked by the brony musician community, but not well known outside of that group, due to playing more of a background logistics role.
 
-General tasks for the music coordinator include finding musicians, convincing them to attend with perks
-like free rooms, planning the concert schedule, coordinating AV, coordinating logistics, and so on. Each con
-names their concert after a different horse pun. BABSCon's concert is called NEIGHhem.
-
-On Friday 6:18 PM, the musicians get an email saying Pinkaboo was fired from BABSCon. This is 13 minutes
-after the "emergency" from the panel call. It's possible the musicians were told earlier, but I believe this
-email is the first they hear of it.
+On Friday 6:18 PM, the musicians get an email saying Pinkaboo was fired from BABSCon. (This is 13 minutes after the panel call was cut short, for those keeping track.)
+It's possible some knew earlier, but I believe this email is the first time the musicians learn of her firing.
 
 > Hello everyone,
 > We wanted to inform you directly that the BABSCon Chairs have made the decision to reorganize
@@ -155,14 +146,16 @@ of the story. They quickly decide the BABSCon Chairs are talking out of their as
 and make a coordinated social media blast announcing they are all dropping out of the concert in
 protest.
 
-It is 3 weeks until the convention and one of the major evening activities no longer exists.
+It is 3 weeks before the last BABSCon, and one of the major evening activities no longer exists.
 
-This continues blowing up the Discord from Friday into Saturday. The con chairs occasionally reply to
-angry people in Discord, but the con itself has not put out an official statement on what happened.
-This makes it hard to find exactly why Pinkaboo was fired. A rumor goes around that it
-was because Pinkaboo made a passive-aggressive tweet when BABSCon staff tweeted out the
-wrong draft of a marketing video for the concert. This was never directly confirmed, and I failed to
-find said tweet. If it ever existed, it was deleted before anyone could archive it.
+This continues blowing up the Discord into Saturday, with no official statement
+from the con chairs. (Although some con chairs directly reply to angry attendees
+in Discord, for some reason.)
+This makes it hard to find exactly why Pinkaboo was fired. A rumor goes around
+that Pinkaboo was fired
+for sending a passive-aggressive tweet reply when BABSCon staff shared the
+wrong draft of a concert marketing video on social media. This was never directly
+confirmed, I've yet to find any evidence of this, and if it ever existed, it was deleted before anyone could archive it.
 
 On Saturday night, the BABSCon chairs put out their first statement.
 
@@ -177,45 +170,56 @@ On Saturday night, the BABSCon chairs put out their first statement.
 >
 > This leads to the core of the matter – the Chairs have repeatedly seen Pinkaboo twist the truth and serve as an unreliable narrator within our staff team. This issue only grew worse with time, and with three weeks until the convention, it had become an issue we could no longer work around. Part of operating as a team is being able to trust your teammates to accurately and truthfully present information. Pinkaboo lost that trust, and she was removed from staff.
 
-I'd like to point out how little this actually explains the situation if you had no context,
-and how little it explains the firing if you did have context. It's just weird all around.
+This says a lot of things, while not clearing up anything.
 Saying Pinkaboo was an unreliable narrator without providing examples is like the OpenAI board saying
-Sam Altman was not consistently candid. Sure, there's some element of truth, but you have to give
-more than that. Similar to that situation, this statement doesn't convince anyone.
+Sam Altman was not consistently candid without specifying how. Sure, there's
+some element of truth, but you have to give more than that. Similar to that
+situation, this statement doesn't bring anyone to BABSCon's side.
 
-Here is my most charitable interpretation, based on a lot of guess work. Pinkaboo did not get along with BABSCon leadership.
-I suspect she asked for increasingly large shares of BABSCon money, in the bid to incentivize brony musicians
-to make the final BABSCon concert the best one ever. In this, she was **massively** successful,
-because the concert lineup is incredibly stacked. There are musicians who have made famous brony songs
-but never performed them live. There are musicians who haven't performed in over 5 years. I'd say half the
-lineup could be a headliner at an average brony concert. (Yes, there are enough of them for "average brony
-concert" to mean something.) Making this happen was likely expensive, and I get the impression Pinkaboo
-has more of a begrudging relationship with BABSCon rather than one with constructive criticism. On
-Friday, Pinkaboo messed up *something*. Leadership took the opportunity to snowball that mistake into
-an excuse to fire her, thinking this would remove a headache from their lives. I've seen this happen before
-in professional circles.
+
+My View
+-----------------------------------------------------------------------
+
+In general, I assume social media hate mobs aren't fair to the people they're
+hating on. So here's my most charitable interpretation of what happened.
+
+In a bid to incentivize brony musicians to show up for the last BABSCon, I'd
+guess Pinkaboo spent a lot of the budget allocated to her, and pushed BABSCon
+for more. These incentives were **massively** successful, because the concert lineup
+is stacked, with many who haven't performed their music live in years.
+Half the lineup could be the headliner at an average brony concert.
+Making this happen was likely expensive, and I get the impression Pinkaboo
+has more of a begrudging relationship with BABSCon rather than one with constructive criticism.
+
+On Friday, Pinkaboo messed up *something*. In normal circumstances, it would
+be resolved internally, but leadership was sick of working with her. So
+they took the opportunity to snowball that mistake into
+an excuse to fire her, thinking this would remove a headache from their lives.
+This backfired horribly.
 
 Now, as con chairs, they have the authority to fire anybody. No one says they *can't* fire their
 music head. Everyone's saying it's dumb they *did*. It's the final BABSCon!
 If the chairs are sick of working with Pinkaboo, is working 3 more weeks before never having to work with
-her again really so impossible? Let her finish her job, then blame her after the con if the concert goes poorly
-and say nothing if it goes well. How is this so hard.
+her again really so impossible? Let her finish her job. If the concert goes
+wrong, you even get to blame her in the end, since it's her responsiblity.
+And if it goes well, you don't have to air any dirty laundry. How is this so hard?
 
-The musicians are pissed off in particular because they know who Pinkaboo is, and are directly aware of the
+The musicians in particular are pissed off because they know who Pinkaboo is, and are directly aware of the
 work she's done to support them. Firing someone from the concert they've been planning for months, *and
 then saying they can still perform in it if they want*, is just a crazy level of tone-deafness over what
-brony concerts mean to the people performing in them.
+these concerts mean to the musicians performing in them.
 
-This is not lost on the general BABSCon public. In the end, it's all people, but the situation pattern
-matches very strongly to the story of a big bad corporation (BABSCon) firing a productive worker (Pinkaboo)
-and giving nothing but platitidues for their years of service. And, like most terminally online
-fandoms, MLP fans are *very* leftist on average.
+This is not lost on the general BABSCon public. In the end, it's all people, but the situation is very similar
+to the story of a big corporation (BABSCon) firing a productive worker (Pinkaboo)
+the moments things go slightly wrong, ignoring their years of service.
+And, like most terminally online fandoms, MLP fans are *very* leftist, so they
+quickly support the musicians' strike.
 
 <p class="centered">
 <img alt="Socialist MLP stickers" src="/public/babscon-2025/socialist_stickers.jpg" style="max-width: 60%"/>
 </p>
 
-In a game of he said she said, what matters is reputation. Pinkaboo has it. The con does not.
+I come out of everything agreeing with them. In a game of he said she said, what matters is reputation. Pinkaboo has it. The con does not.
 
 
 Fallout
@@ -224,140 +228,127 @@ Fallout
 Normally, music artists sign contracts with the con to get agreements on what the con will give
 the musicians. (For example, Odyssey said she's contractually obligated to
 play [Discord](https://www.youtube.com/watch?v=jDMGv3hNMes) at her sets, which - understandable.)
-With the musicians on strike, any penalties in those contracts should trigger.
-However, on a reread, the musicians argue the contracts were made with Pinkaboo, rather than BABSCon,
-so the contracts don't apply to them now that Pinkaboo's been fired.
+Before deciding to strike, the musicians reread their contracts. They argue
+that all the contracts are signed with Pinkaboo rather than BABSCon, so
+the terms of those contracts no longer apply after Pinkaboo's firing.
 
 BABSCon staff disagrees, saying that any common sense interpretation is that the contracts
 are from Pinkaboo on behalf of BABSCon, rather than Pinkaboo individually. I take BABSCon's side of this
-dispute, but they never pursue this because it doesn't fix the fundamental problem of losing their
-music show.
+dispute, but they never pursue collecting on those contracts because it won't
+fix their fundamental problem of losing all their music talent.
 
 Other conventions start tweeting in support of the brony musicians, with no one taking BABSCon's side.
 Some individuals start airing out dirty laundry from previous BABSCon iterations, alleging BABSCon has a history of treating
-talent poorly. On reading this, my opinion is basically not moved at all.
+talent poorly. My opinion is not moved by that laundry.
 I assume all conventions have internal drama by default, because logistics is hell and hell is a
 pressure cooker. To make a convention happen, you must make fast decisions with imperfect info.
-Any longrunning convention will, eventually, ban an innocent person for sexual harassment, fail to
-screen a stalker for a visiting celebrity, or something else. That's just
-where the bar has to be to create the appropriate environment. So, I'm not surprised that people
-have bad things to say about BABSCon, now that it's publicly acceptable to dunk on them.
+Any longrunning convention will, eventually, ban an innocent person for sexual harassment. Or fail to screen a stalker for a visiting celebrity, or something else.
+I'm not surprised that people have bad things to say about BABSCon, now that
+it's publicly acceptable to dunk on them.
 
 Con staff and the former BABSCon musicians go into negotiation, to see if there's any way forward.
 The musicians' give their conditions for performing again:
 
 * Pinkaboo must be reinstated as concert head.
 * BABSCon head of staff must step down.
-* No compromise on either of those points.
 
 BABSCon staff refuses. Now, in my opinion, firing your music lead 3 weeks before con is dumb.
 Firing your head of staff 3 weeks before con is just suicidal. As angry as the musicians are about
-the concert, they consistently ask people to still attend BABSCon. Many are friends with fan artists
-that rely on cons for personal income. Everyone (everypony) still wants the rest of the convention to be great.
+the concert, they consistently tell people to still attend BABSCon. Many are friends with artists in the community, who rely on con attendees for
+personal income. Everyone (everypony) still wants the rest of the convention to be great.
 
 Unfortunately for me, the concert really was the main thing I was looking forward to. I was mildly
 into brony music pre-2020, and then fell deep, deep into the rabbit hole as a side effect of writing
 [Recommendations](https://www.puzzlesaremagic.com/puzzle/recommendations.html) for
-Puzzles are Magic. It's hard to me to explain *why* MLP fan music so entertaining, because brony music
+Puzzles are Magic. It's hard to me to explain *why* I like MLP fan music, because brony music
 is really not accessible. The scene has evolved from "haha mild remix of song from MLP episodes" to
 ["metal song about Sweetiebot from the Friendship is Witchcraft AU that last updated 10 years ago"](https://www.youtube.com/watch?v=44ugTb3nZec).
 That was one of the *bigger* songs of the year. These days an MLP song is likely to have minimal pony
-references, only implying a side story that happens to have ponies in it, or have no story at all.
+references, only implying a side story that happens to have ponies in it.
 
-I think the best explanation I have for how this all "works" is that if you're a fan of My Little Pony,
-you automatically give some slack to music made by other fans of My Little Pony, because clearly
-they have good taste. Then the music recommendation algorithms hijack the existing fandom
-social fabric to introduce you to new artists, that all build off each other's work in a small reference
-pool. Pretty soon you're radicalized into getting emotional over a song about [a unicorn that rediscovers
-her love of music by whispering to fish](https://www.youtube.com/watch?v=H-u9O2eG8qQ). Now that's
-a story about life.
+The best explanation I have for how this all "works" is that if you're a fan of My Little Pony,
+you automatically give some slack to music made by other fans of My Little Pony, because they clearly
+have good taste. Then the music recommendation algorithms hijack the existing fandom
+social fabric to introduce you to new artists, that all build off each other's work in a small reference pool that lets you feel like you're in something special.
+Pretty soon you're radicalized into getting emotional over a song about [a unicorn that rediscovers
+her love of music by whispering to fish](https://www.youtube.com/watch?v=H-u9O2eG8qQ). Now that's a story about life.
 
-Imagine you have a favorite indie rock band, that goes on tour at different venues. Now imagine that
-instead of indie rock, it's MLP EDM and the venues are hotel meeting rooms. That's pretty much it - a
-reason to experience something you normally wouldn't, around an excuse that brings people to the same
-spot at the same time.
-
-I like a lot of the artists in the cancelled BABSCon 2025 lineup, but the one I was most looking forward
-to was Vylet Pony (the creator of one of the songs linked above). I was introduced to Vylet through
-4everfreebrony's cover of [Little Dreams](https://www.youtube.com/watch?v=rA8ZjlPHlaU), then went down
-the discography from there. Out of her older work, I really like [Overrun](https://www.youtube.com/watch?v=reavAI1hqrM),
-but by far her most famous song is ANTONYMPH. Its music video, a love letter to the Internet of the late early 2010s,
-was popular enough that it spawned its own subfandom, and you will usually see at least one
-Fluttgirshy cosplay at MLP fan conventions.
+Of the artists in the cancelled BABSCon 2025 lineup, the one I was most looking forward
+to was Vylet Pony. I was introduced to Vylet through
+4everfreebrony's cover of [Little Dreams](https://www.youtube.com/watch?v=rA8ZjlPHlaU), then went down her discography from there. Out of her older work, I really like [Overrun](https://www.youtube.com/watch?v=reavAI1hqrM),
+but by far her most famous song is ANTONYMPH. Its music video, a love letter to the Internet of the early 2010s, is a tour de force of nostalgia that kicked off its own
+subfandom. You'll usually see at least one Fluttgirshy cosplay at any MLP con.
 
 <p class="centered">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CNPdO5TZ1DQ?si=fGikC8UZhAk4T9zm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </p>
 
-I am partial to the [lyra.horse](https://lyra.horse/antonymph/) version, which pulls some crazy
-browser shenanigans and is made by a trans horse infosec researcher. Nothing about that sentence
-is surprising if you've spent enough time online, which I unfortunately have. In the years since, Vylet
-Pony has amassed an eclectic fanbase around the themes of "don't be afraid to like what you like", and
-being so unabashed of your inspirations that it circles to being endearing. There is no subtlety
-going on: everything is *here* and you gotta take it. In practice, this means I often *really* like
-the first half of a Vylet Pony song and then don't get the second, but it also means that when a song
-hits on all cylinders for me, it hits very hard.
+I am partial to the [lyra.horse](https://lyra.horse/antonymph/) version, an in-browser audiovisual experience made by a trans horse infosec researcher. Nothing about that sentence
+is surprising if you've spent enough time online, which I unfortunately have.
 
-Vylet Pony also basically never performs at conventions. She was one of the musicians most outspoken
+In the years since, Vylet
+Pony has amassed an eclectic diehard fanbase. Common themes in her work
+are "don't be afraid to like what you like" and loving yourself. I'd include
+myself as a fan. Her work is so unabashed of its inspirations that it circles
+to being endearing. There is no subtlety: everything is *here* and you gotta take it. In practice, this means I often *really* like
+half of a Vylet Pony song and then hate the other half, but it also means that
+when a song hits on all cylinders for me, it hits very hard.
+
+Vylet Pony also basically never performs at conventions, having last performed
+at the final BronyCon in 2019. She was one of the musicians most outspoken
 about how she only agreed to perform at BABSCon because she trusted Pinkaboo to keep everything together.
-I also suspected she only agreed to BABSCon because she originally grew up in the Bay Area. So my guess was
-that this would be the one and only live Vylet Pony performance. And now it's gone.
+I also suspected she only agreed to BABSCon because she originally grew up in the Bay Area, and wanted to revisit the area to reflect on how she's changed.
+So I was assuming this was the one and only live Vylet Pony performance I'd get
+to see, and now it's gone.
 
-Well, maybe it's gone.
+Well, *maybe* it's gone.
 
 
 Asgard Is Not A Place
 -----------------------------------------------------------------------------------------------
 
-All the brony musicians who were going to perform are still flying into Bay Area for the BABSCon weekend.
-They've already paid for flights, after all. If everypony's going to be in the same place at the same time,
-who says the concert has to be official?
+All the brony musicians who were going to perform are still flying into Bay Area for the BABSCon weekend. If everypony's going to be in the same place at the same time,
+who says they can't perform somewhere else?
 
-On its face, it is insane to find, plan, and move a concert to an entirely new venue in 3 weeks with no
-financial backing. However, is this any more insane than BABSCon trying to replace all their music talent
-in 3 weeks against a hostile crowd? Not really, and the musicians are the ones with the most power to
-redirect social media outrage.
+On its face, it is insane to move a concert to an entirely new venue in 3 weeks.
+However, is this any more insane than BABSCon trying to replace all their music talent
+in 3 weeks against a hostile crowd? Not really, and the musicians are the ones with the means of production.
 
 Real traction begins when 15 comes out of hibernation to offer up to $5000 towards running a new concert.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;ll pay at least like $5,000 to help secure a new location for the concert if it&#39;s still happening (seriously), I was looking really forward to it 😔 <a href="https://t.co/1gisC5VE0E">https://t.co/1gisC5VE0E</a></p>&mdash; 15 🔜 TrotCon (@fifteenai) <a href="https://twitter.com/fifteenai/status/1905882472845627529?ref_src=twsrc%5Etfw">March 29, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-A bit of lore: 15.ai was a site run by an anonymous AI researcher who went by the name 15. They worked on voice generation
-before it was cool (aka pre-Transformers). 15.ai let you generate voice clips of My Little Pony characters
-saying anything you wanted, for free. In my opinion, when the site launched in 2020, their model was arguably
+A bit of lore: 15.ai is a free MLP voice generation site run by an anonymous AI researcher who went by the name 15. They worked on voice generation
+before it was cool, and in my opinion, when the site launched in 2020, their model was arguably
 the highest quality audio generation model in the world. Like, better quality than the models trained by
-Google. 15 credited this to the very high quality annotations on MLP speech data by the Pony Preservation
-Project from 4chan, which I suspect was the deciding factor over algorithmic improvements. Running 15.ai
-was expensive, given how much GPU time it was burning, so giving access for free made them a
-celebrity in the fandom - "horse famous", as it were. These days, AI voice generation is a lot more
-serious and controversial, but multiple AI voice generation startups credit 15.ai for creating the target
-market that they now compete over. (See [the 15.ai Wikipedia page](https://en.wikipedia.org/wiki/15.ai)
+Google. 15 credited this to the very high quality annotations of MLP speech data by the Pony Preservation
+Project from 4chan. Running 15.ai was expensive, given how much GPU time it was burning, but they never compromised on keeping the site free.
+This made then a celebrity in the fandom - "horse famous", as it were. These days, AI voice generation is a lot more
+serious and controversial, but multiple modern AI voice generation startups credit 15.ai for creating the market they now compete over. (See [the 15.ai Wikipedia page](https://en.wikipedia.org/wiki/15.ai)
 if you want to learn more.)
 
-15.ai had been dead for years, and 15 themselves is known for being reclusive and going radio silent for
-months. Breaking their silence for the BABSCon situation was a big, big deal.
-
+15 is known for being reclusive, so breaking their silence for the BABSCon situation was a big, big deal.
 Over the weekend, the idea gained momentum, and soon turned from idea to official project.
 Brony musicians began advertising the alternative concert in the BABSCon Discord, calling it "Pinkaboo's Neighhem".
-The name is not an accident. It is a proverbial middle finger to their feelings that BABSCon was trying
-to silence Pinkaboo's involvement, and a reclaiming of a name that they feel the con no longer owns.
+The name is not an accident. It is a proverbial middle finger to BABSCon,
+and a reclaiming of a name that they feel the con no longer deserves.
 
-This sparks a bit of infighting in the Discord. BABSCon staff has a lot of volunteers, many of whom disagree
-with how Pinkaboo was handled. They are respecting the authority of the con chairs, but aren't necessarily
-happy about it. So the reactions range from wanting to shut down all discussion of Pinkaboo's Neighhem,
-to advertising it to all attendees. They eventually decide to create a
-#neighhem-planning containment channel, and move all discussion there, understanding that it is impossible
-to stop people from talking about Pinkaboo. Her story is now woven into the story of BABSCon.
+This sparks some infighting among BABSCon staff.
+BABSCon staff has a lot of volunteers, many of whom disagree
+with how Pinkaboo was handled. They are respecting the authority of the con chairs, but they aren't happy about it.
+At the same time, Pinkaboo haters understand that her story is now woven into the
+story of BABSCon, and they cannot silence it, so they end up creating
+a #neighhem-planning containment channel in the Discord and ignore it the best
+they can.
 
 Through a mix of outreach, GoFundMe, and a desire to make everything so far not be for nothing,
-Pinkaboo's Neighhem comes together and is officially announced within a few days.
+Pinkaboo's Neighhem reaches its funding goal and is officially announced a few days later.
 
 * It will be held on Sunday evening, at the Fox Theatre in downtown Redwood City. This deliberately starts
 after BABSCon's scheduled closing ceremony on Sunday afternoon, to avoid competing with the con.
 * Neighhem will be free, even for people who didn't register for BABSCon. Donations are welcome to help cover costs.
-A limited amount of concert merch will be on sale, along with an artist alley (but not one as big as
-BABSCon.)
-* The music schedule will be heavily compressed, but most musicians from the original
+A limited amount of concert merch will be on sale, along with a small artist alley.
+* The music schedule will be heavily compressed, but most of the original
 lineup will still perform, including Vylet Pony.
 * Thanks to sponsors, there will be free shuttle buses taking people from the BABSCon hotel to the
 Fox Theatre and back.
@@ -369,15 +360,17 @@ GO TO THE BUCKING CONCERT!
 {: .centered }
 
 
-Meanwhile: BABSCon
+Meanwhile: What's BABSCon Doing?
 ---------------------------------------------------------------------------------------------------
 
-BABSCon chairs have successfully pulled together a new official concert, headlined by Mystery Skulls.
-This is pretty impressive, since Mystery Skulls is a "real" (professional) music artist. Their
-connection to brony fandom is that they owe a lot of their popularity to the Mystery Skulls Animated
-series by MysteryBen27, an animator from the early 2010s brony scene. Mystery Skulls Animated is good.
-It's the kind of series that raises more questions than it answers, with animation where you notice new
-details on your 4th viewing. [Go watch it!](https://www.youtube.com/watch?v=YlEb3L1PIco)
+BABSCon chairs successfully pull together a new set of evening activities,
+headlined by one shorter set by Mystery Skulls.
+This is pretty impressive, since Mystery Skulls is a "real" (professional) music artist that goes on tour. Their
+connection to brony fandom is via owing a lot of their popularity to the Mystery Skulls Animated
+series by MysteryBen27, an animator from the early 2010s brony scene. Mystery Skulls Animated is good, if you haven't seen it.
+It's the kind of series that raises more questions than it answers, with smooth
+animation filled with details you only notice on your 3rd viewing.
+[Go watch it!](https://www.youtube.com/playlist?list=PL0fvOtjetDLFH_avalzdmSLL91rvwiE07)
 
 Mystery Skulls was scheduled to perform at BABSCon 2020, before it was shut down due to COVID.
 So they already had a working relationship with BABSCon. In some ways, this is arguably a make-up set
@@ -389,19 +382,20 @@ As someone connected to but outside of the fandom, they're not seen as a strikeb
 a brony musician would be viewed. I mean, they are breaking the strike, but that implies the strikers
 have any intention to come back. They don't. So, whatever.
 
-With this, a few people point out that somehow, everyone's gotten what they wanted.
+With this, people point out that somehow, everyone's gotten what they wanted.
 BABSCon doesn't have to deal with Pinkaboo. The brony musicians don't have to deal with BABSCon.
 If you wanted to see a concert, now you have two concerts. The official BABSCon concert (now called
 Burning Mare) is much shorter, and the slack in the schedule is used to move many panels to
 larger rooms. My panel benefits from this - I get upgraded from a side room further away from the main hub
-to one of the three main panel rooms. There are still hard feelings, but the average con experience
-really did get better for people that weren't directly involved. The breakup is bad, but the divorce is clean.
+to one of the three main panel rooms. There are still hard feelings, but the average con goer experience
+really did get better. The breakup is bad, but the divorce is clean.
 
-Now that the drama is resolved, I focus on finishing up the rest of my panel, so that I can play my (small)
-part in making the con what it is.
+With the drama resolved, I can stop doomscrolling the BABSCon Discord, and focus on
+what's important: making my panel the best it can be, to play my part in making
+the con what it is.
 
 
-One Last Time
+BABSCon, One Last Time
 ---------------------------------------------------------------------------------------------------
 
 When I get to the con, I ask if panelists get a special badge. They don't, so I just pick up a regular badge
@@ -409,16 +403,13 @@ and the official conbook. It may just be
 my imagination, but the page advertising Mystery Skulls feels like it is made of noticably different paperstock.
 
 I immediately head to the con store, because I'm pretty confident they will run out
-by tomorrow. I come out with a BABSCon 2025 T-shirt and a coin from leftover BABSCon 2024 merch.
-The T-shirts run out later that day.
+if I wait. I come out with a BABSCon 2025 T-shirt and a coin from leftover BABSCon 2024 merch. My call is correct: the T-shirts sell out by the end of the first day.
 
 There isn't too much to comment on for the rest of the con. As I said, I've been to enough of these to know what
-to expect. When I walk into the vendor hall, I don't even want to buy that many things, because I recognize
-the wares of almost all the vendors from previous pony conventions. I end up buying some prints from
-one of the MLP comics artists that's attending BABS for the first and final time, and some tiny laser-burned
+to expect. When I walk into the vendor hall, I do a quick once over, confirm I've seen
+most the vendors before, and skip most of the booths. I do end up buying some prints from
+one of the MLP comics artists that's attending BABSCon for the first and final time, and some tiny laser-burned
 wooden pony pieces that were 25 cents each from a gachapon setup.
-The one thing I'm surprised to not see are resellers of the Kayou MLP cards that are popular in China. I figured at least
-one vendor would be trying to profit off them, but I suppose the demand for non-English merch is just low.
 
 There is a brief protest for Pinkaboo, but it is very brief.
 A bunch of people in fursuits carry a "We Support Pinkaboo!" flag, pose for a photo op, then disperse.
@@ -433,7 +424,7 @@ which I got very into.
 
 The panels are fun. One is a livecast of a modded WWE game, changing all the wrestlers to look like MLP
 characters. Another goes through a leaked [Hasbro document](https://www.equestriadaily.com/2025/02/what-did-hasbro-think-of-us-in-early.html)
-from *very* early brony fandom, presumably written to help people internally get up to speed on the fandom.
+from early brony fandom, written to help internal employees get up to speed on the fandom.
 Now it unintentionally acts as a 2011 time capsule. They have a whole section for
 Steven Magnet. When's the last time anyone's thought about Steven Magnet? Or used
 this meme template?
@@ -441,32 +432,34 @@ this meme template?
 ![A Yo Dawg meme about Big Mac](/public/babscon-2025/big_mac_meme.png)
 {: .centered }
 
-When it gets close to the time for *my* panel, I head over to my room early for setup. I'm not sure if con staff will be there to assist me
-or not. When I see no one there, I set it up myself. I'm somewhat nervous, but I shift into "presenter mode" and as
-I talk the nerves go away. From my standpoint, the panel goes well. I have to live-debug fixing computer audio in the middle,
-but people are engaged the whole time, and have good questions at the end about puzzle design. I do my analysis of the
-two in-universe escape rooms (yes, there are two of them), verify that no one in the room knows what a puzzlehunt is,
-then do a solve along of [Bottom Lines](https://dp.puzzlehunt.net/puzzle/bottom-lines.html) from DP Puzzle Hunt,
+When it gets close to the time for my panel, I head over early for setup. I'm not sure if con staff will be there to assist me
+or not. When I see no one there, I set it up myself. I'm a bit nervous, but as the panel starts I shift into "presenter mode" and the nerves go away.
+From my standpoint, the panel goes well. I have to live-debug fixing computer audio in the middle,
+but people are engaged the whole time, and have good questions at the end about puzzle design. After my analysis of the two in-universe My Little Pony
+escape rooms (yes, there are two of them),
+I run a solve along of [Bottom Lines](https://dp.puzzlehunt.net/puzzle/bottom-lines.html) from DP Puzzle Hunt,
 [Power](https://deusovi.github.io/puzzlefiles/zelda-minihunt.pdf) puzzle from Deusovi's Zelda Minihunt, and [Art of the Dress](https://www.puzzlesaremagic.com/puzzle/art-of-the-dress.html) from Puzzles are Magic. We go a bit over time, but it's 30 minutes until the next panel, so I end up
-livestreaming a group solve of [Cross Eyed](https://www.puzzlesaremagic.com/puzzle/cross-eyed.html) from Puzzles are Magic
-until we are kicked out.
+livestreaming a group crossword solve of [Cross Eyed](https://www.puzzlesaremagic.com/puzzle/cross-eyed.html) from Puzzles are Magic
+until we are kicked out. Hopefully I've converted at least one person to
+puzzlehunts.
 
 With that, there is pretty much nothing left for me to do, besides going to room parties and waiting for
-Mystery Skulls. At many MLP conventions, there is an officially sanctioned room party floor. Many people go
-to an MLP con to get DRUNK, *super* drunk, so to control this there are official parties where con staff
-can make sure everyone's ID is getting checked, no one's breaking open container laws, and no one's
-becoming a danger to themselves or others. I stop by the British themed room party, where I
-meet a life-size cutout of King Charles, eat a bunch of snacks they've brought over from the UK, and
+Mystery Skulls. I stop by the British themed room party, where I
+meet a life-size cardboard cutout of King Charles, eat a bunch of snacks they've brought from the UK just for the bit, and
 chat with one of the organizers of [PonyCon Holland](https://ponyconholland.com/). He is on a mission to
 convince people to travel to the EU pony circuit. I mention that I was just in London a few months ago,
-and he complains that visiting London only means you've been to London. It doesn't mean you've been to the UK.
-I ask what would count as the UK - he says "anywhere but London".
+and he complains that visiting London only means you've been to London. It doesn't mean I've been to Britain. I ask what would count as visiting Britain - he says "anywhere but London".
 
 We talk a bit about pony cons outside the US, and the
 recent explosion of the Chinese bronycon scene. I don't follow Chinese brony fandom much, but have
 My Little Pony is massive over there; it feels like China
 is 10 years behind the US, and they are living through the 2015-2016 peak of MLP popularity, with new conventions
-appearing every year. In the US, this was followed by a contraction where cons died off.
+appearing every year.
+Most new merch these days is made for China first, and I'm surprised there aren't
+many resellers at the vendor hall. I figured at least
+one person would be trying to profit off them. I guess the demand for non-English merch is just too low.
+
+In the US, the massive growth of MLP was followed by a contraction where cons died off.
 Hopefully that doesn't happen to the Chinese scene, but it'll depend how much staying power MLP has.
 I hope to see debates over 虹林檎 vs 稀有苹果 for many more years.
 
@@ -487,13 +480,13 @@ To borrow a saying from the youth, the vibes are immaculate. The entire concert
 feels like one huge after party, complete with a custom drinks menu at the bar. According to the organizers, Pinkaboo's Neighhem got over 1000 signups on their Eventbrite, compared to 2000 registrations for BABSCon 2025.
 It's unclear how many people actually showed up, but half the convention looks
 accurate to me.
-Pretty good turnout for a relatively last minute event.
+It's pretty good turnout for a last minute unofficial event.
+Turns out you *can* just move a concert if everypony wants to make it happen.
 
 The Mystery Skulls set at BABSCon was fun, but Neighhem is beating it on all dimensions.
 The venue is nicer. The concert setup is more elaborate, with a larger stage
-and more audiovisuals. The performer callouts are more specific to MLP fandom,
-and it feels more like a *pony* rave rather than just a rave.
-Turns out you *can* just move a concert if everypony wants to make it happen.
+and more audiovisuals. The performer callouts are more specific to MLP fandom.
+It feels more like a *pony* rave rather than just a rave.
 
 I stick around until the schedule gets to an act I'm less excited about, and leave
 to get dinner at Marufuku. (Another upside: being close to good food.)
@@ -517,15 +510,16 @@ I go back into the concert area, picking up a poster since T-shirts in my size a
 of the night, Neighhem will have sold literally all merch they made.
 I alternate between the dance floor area and the cool-down balcony on the top floor.
 
-Midway through one of the sets, there's a medical emergency, where someone falls down and dislocates their
-knee. EMTs are on-site, and organizers stop the set to allow the medical professionals to attend to them.
+![Pinkaboo Neighhem concert images](/public/babscon-2025/concert_visuals.png)
+{: .centered }
+
+Midway through one of the sets, there's a medical emergency, where someone dislocates their knee and can't get back up. EMTs are on-site, and organizers stop the set to allow the medical professionals to attend to them.
 As far as I know, the person who fell was just clumsy and got too excited, but out of an abundance of caution
-the bar cuts off alcohol for the night. (Which unfortunately means I never get to try "The Pinkaboo"
-or "The Eurobeat Brony" cocktails.)
+the bar cuts off alcohol for the night. Which unfortunately means I never get to try the custom "Pinkaboo" or "Eurobeat Brony" cocktails.)
 
 Concert staff release balloons into the crowd, and for the next few hours, there is a minigame
-of "keep the balloon in the air". People start filing out as the concert runs later, but I am committed to
-seeing the Vylet Pony and Odyssey sets, which are running back-to-back from midnight to 2 AM.
+of "keep the balloon in the air". People start leaving as the night continues, but I am committed to seeing the Vylet Pony and Odyssey sets, even if it wrecks my
+sleep schedule.
 
 ![Neighhem sketches](/public/babscon-2025/neighhem_sketches.jpg)
 {: .centered }
@@ -533,20 +527,20 @@ seeing the Vylet Pony and Odyssey sets, which are running back-to-back from midn
 ([Source](https://askthesunjackers.tumblr.com/post/781578405476974592/a-few-doodles-based-on-my-experience-at-neighhem))
 {: .centered }
 
-The Vylet set doesn't include anything from Monarch of Monsters, but I wasn't really expecting it to -
+At midnight, Vylet Pony takes the stage to much cheering. Her set doesn't include anything from Monarch of Monsters, but I wasn't really expecting it to -
 it's not a particularly good "dancing" album.
-
-Based on the volume of the cheers, it is very obvious that
-Vylet's post-2020 work is more well-known and everyone is hype when ANTONYMPH
-finally drops at the end, but I'm happy to catch references to Super Pony World,
+Based on crowd reactions, it is very obvious that most people are here
+for ANTONYMPH, but I'm happy to recognize songs from Super Pony World,
 I Was The Loner of Paradise Valley,
-and [Creature City](https://www.youtube.com/watch?v=eJr-_KWPRNc), one of my favorite songs from 2024.
+and [Creature City](https://www.youtube.com/watch?v=eJr-_KWPRNc), one of my favorite songs from 2024. Shelly the Android Lobster forever.
 
-Odyssey goes up, and like always, her stage presence is great. When it gets to Luna and Discord,
+That leaves the final set of Odyssey. Like always, her stage presence is great, and
+the venue is still packed at 1 AM.
+When it gets to Luna and Discord,
 the crowd shouts out the lyrics, because yes, here everyone knows the lyrics. Part of me wonders
-how much Odyssey likes playing songs from over a decade ago, compared to her new work, but those are the
-songs that pay the bills, cultural touchstones in a fandom that's been buffeted and weathered but somehow
-never quite died. BABSCon is over for good, but the people are still here.
+how much Odyssey likes playing songs from over a decade ago, compared to her new work with way fewer views. But the old brony songs are the
+ones that pay the bills, cultural touchstones in a fandom that's been buffeted and weathered but somehow
+never quite died. BABSCon is over for good, but pony fandom continues.
 
 
 Coda
@@ -555,13 +549,14 @@ Coda
 The BABSCon Discord is now mostly dormant, having turned into yet another MLP chatting Discord but with a Bay Area lean.
 
 The musicians go back from whence they came. Some are still active in the MLP music scene, while others
-have either stopped making music or work professionally under other aliases. Vylet Pony releases her
-new album [Love & Ponystep](https://www.youtube.com/watch?v=HKpsl3tJmIU) in July. To quote a review, it is "fearlessly cringe", and I love it. The album punches you
-in the head with zero subtlety on its inspirations, and that makes it feel real.
+have either stopped making music or work professionally under other aliases. A
+few months after BABSCon, Vylet Pony releases her
+new album, [Love & Ponystep](https://www.youtube.com/watch?v=HKpsl3tJmIU). To quote a review, it is "fearlessly cringe", and I love it. The album beats you over
+the head with its inspirations, and that makes it feel real.
 Fan of "Peace, Love, Glalie", "Wonka X Howl", and "Falling in Love With a Corporate Illustration" so far.
 
 The Pinkaboo Neighhem Discord also goes dormant, now functioning as another
-MLP music Discord. Several months later, Pinkaboo announces that after paying musicians and staff their fees, Neighhem had $1500 left over, which
+MLP music discussion space. Several months later, Pinkaboo announces that after paying musicians and staff their fees, Neighhem had $1500 left over, which
 was donated to the music program at [New Horizon School](https://www.newhorizonschool.info/), a school for students with learning disabilities. She teases a new
 non-convention concert, but so far, it's just that, a teaser.
 
@@ -569,6 +564,7 @@ Recently, as my blogging profile has grown, I've wondered how much time to spend
 on stories like these, rather than more "professional" ones. But when I started
 writing publicly, I did it for one reason, to write what I wanted to write about
 and not write what I didn't want to write about. So, screw it, this post is going up.
+The point of pointless stories is to tell them.
 It's okay to do things for you, even and especially if they aren't legible to others.
 
 As for My Little Pony, it continues to chug on. There's speculation that Hasbro
