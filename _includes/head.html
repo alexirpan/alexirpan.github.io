@@ -17,10 +17,15 @@
 <meta property="og:locale" content="en_US" />
 {% if page.share_image %}
 <meta property="og:image" content="{{ page.share_image | prepend: site.url }}" />
+<meta property="twitter:image" content="{{ page.share_image | prepend: site.url }}" />
 {% endif %}
 
 <!-- Twitter -->
+{% if page.share_image %}
+<meta property="twitter:card" content="summary_large_image" />
+{% else %}
 <meta property="twitter:card" content="summary" />
+{% endif %}
 <meta property="twitter:site" content="@alexirpan" />
 
 <!-- Google tag (gtag.js) -->
