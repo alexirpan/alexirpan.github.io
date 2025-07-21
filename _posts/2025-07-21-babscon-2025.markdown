@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "BABSCon 2025, Or, My Eyewitness Account to Brony Musicians Seizing The Means of Production"
+title:  "Brony Musicians Seize The Means of Production: My Eyewitness Account to BABSCon 2025"
 date:   2025-07-21 09:00:00 -0700
 share_image: "/public/babscon-2025/socialist_stickers.jpg"
 ---
