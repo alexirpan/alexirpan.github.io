@@ -13,7 +13,7 @@ in the peak hype of the early 2010s, but many cons from that era are now defunct
 However, a few conventions still exist, thanks to a core diehard fan group that
 attends reliably enough to keep conventions sustainable.
 At their peak, thousands of people would go to each convention, but these days
-hundreds is more typical.
+hundreds is more accurate.
 
 BABSCon is one such convention. Short for Bay Area Brony Spectacular, it first ran in 2014,
 and quickly became one of the mainstays (manestays?) of the brony convention circuit.
@@ -25,7 +25,7 @@ By BABSCon 2024, I had decided I wasn't going to any future iterations, and
 left early to attend a board gaming event. I'd gotten my fill.
 
 Checking the news afterwards, I learned that con staff announced they were
-ready to hang things up. Next year, BABSCon 2025, would be the final BABSCon.
+ready to hang things up. Next year, BABSCon 2025, will be the final BABSCon.
 
 I may have fallen out of the con scene, but *of course* I had to go.
 
@@ -82,7 +82,7 @@ at night. So, we were already off to an interesting start.
 As I wait for my turn, I keep working my slides. Before they get to me, the events
 coordinator
 has to take another call. Alright, no problem. We wait, and at 6:05 PM, they
-comes back, saying that other call has evolved into an emergency. They're very
+come back, saying they're very
 sorry, but they'll need to stop the panel call early.
 Annoying, but I get that event organizing can be hectic.
 I pencil in joining the Saturday time slot.
@@ -133,7 +133,7 @@ It's possible some were told earlier, but I believe this email is the first time
 > is no longer a member of BABSCon staff; her status as a musician remains unchanged.
 >
 > To be clear, this decision does not impact the existing plans for Neighhem: The set schedule will
-> remain as planned. Musician benefits will remains as previously agreed upon, including the gratis
+> remain as planned. Musician benefits will remain as previously agreed upon, including the gratis
 > party suite rooms, which continue to be under Pinkaboo's purview as private guest rooms.
 >
 > Moving forward, for official convention business, we have created a channel for Concert's exclusive
@@ -278,7 +278,7 @@ personal income. Everyone (everypony) still wants the rest of the convention to 
 Unfortunately for me, the concert was close to the only thing I wanted to see at BABSCon. I was mildly
 into brony music pre-2020, and then fell deep, deep into the rabbit hole as a side effect of writing the puzzle
 [Recommendations](https://www.puzzlesaremagic.com/puzzle/recommendations.html) for
-Puzzles are Magic. It's hard to me to explain *why* I like MLP fan music, because brony music
+Puzzles are Magic. It's hard for me to explain *why* I like MLP fan music, because brony music
 really isn't accessible. The scene has evolved from "haha mild remix of song from MLP episodes" to
 ["metal song about Sweetiebot from the Friendship is Witchcraft AU that last updated 10 years ago"](https://www.youtube.com/watch?v=44ugTb3nZec).
 That was one of the *bigger* songs of 2023. These days, an MLP song is likely to have minimal pony
@@ -289,7 +289,7 @@ music artist has a pony OC.
 The best explanation I have for how this all "works" is that if you're a fan of My Little Pony,
 you automatically give some slack to music made by other fans of My Little Pony, because they clearly
 have good taste. Then the music recommendation algorithms hijack the existing fandom
-social fabric to introduce you to new artists. Pony musicians build off each other's work in a small reference pool, that lets you feel like you're part of the in-group.
+social fabric to introduce you to new artists. Pony musicians build off each other's work in a small reference pool, which lets you feel like you're part of the in-group.
 Pretty soon you're radicalized into getting emotional over a song about [a unicorn that rediscovers
 her love of music by whispering to fish](https://www.youtube.com/watch?v=H-u9O2eG8qQ). Now that's a story about life.
 
@@ -329,7 +329,7 @@ Well, *maybe* it's gone.
 Asgard Is Not A Place
 -----------------------------------------------------------------------------------------------
 
-All the brony musicians who were going to perform are still flying into Bay Area for the BABSCon weekend. If everypony's going to be in the same place at the same time,
+All the brony musicians who were going to perform are still flying into the Bay Area for the BABSCon weekend. If everypony's going to be in the same place at the same time,
 there's no rule saying they can't perform somewhere else.
 
 On its face, moving a concert to a new venue in 3 weeks is insane.
@@ -347,12 +347,12 @@ the highest quality voice generation model in the world. Like, better quality th
 Google. 15 credited this to the very high quality annotations of MLP speech data by the Pony Preservation
 Project from 4chan. Running 15.ai was expensive, often costing thousands a month
 in GPU credits, but they never compromised on keeping the site free.
-This made then a celebrity in the fandom - "horse famous", as it were. These days, AI voice generation is more
+This made them a celebrity in the fandom - "horse famous", as it were. These days, AI voice generation is more
 serious and controversial, but multiple startups credit 15.ai for creating the market they now compete in. (See [the 15.ai Wikipedia page](https://en.wikipedia.org/wiki/15.ai)
 if you want to learn more.)
 
 15 is known for being reclusive, so breaking their silence for the BABSCon situation was a big, big deal.
-Over the weekend, the idea gained momentum, tuning from idea to official project.
+Over the weekend, the idea gained momentum, turning from idea to official project.
 Brony musicians began advertising the alternative concert in the BABSCon Discord, calling it "Pinkaboo's Neighhem".
 The name is not an accident. It is a proverbial middle finger to BABSCon,
 and a reclaiming of a name that the con no longer deserves.
@@ -389,7 +389,7 @@ Meanwhile: What's BABSCon Doing?
 
 BABSCon chairs manage to pull together a new set of evening activities,
 headlined by a music set from Mystery Skulls.
-This is an impressive get, since Mystery Skulls is a "real" (professional) music artist.
+This is an impressive pickup, since Mystery Skulls is a "real" (professional) music artist.
 Their
 connection to brony fandom is due to owing a lot of their popularity to the Mystery Skulls Animated
 series by MysteryBen27, an animator from the early 2010s brony scene.
@@ -413,8 +413,8 @@ for the set they should have played 5 years ago.
 Also, [money](https://www.youtube.com/watch?v=lhjk5x54bsE). You can get higher talent if you only
 have to pay 1 person rather than 15-20.
 As someone connected to but outside of the fandom, Mystery Skulls isn't seen as a strikebreaker in the way that
-a brony musician would be viewed. I mean, they are breaking the strike, but that implies the strikers
-have any intention to come back. They don't. So, whatever.
+a brony musician would be viewed. I mean, they are breaking the strike, but strikebreaking implies the strikers have any intention to come back. They don't.
+So, whatever.
 
 With this, people point out that against all odds, everyone's gotten what they wanted.
 BABSCon doesn't have to deal with Pinkaboo. The brony musicians don't have to deal with BABSCon.
@@ -434,10 +434,10 @@ BABSCon, One Last Time
 
 When I arrive on con weekend, I ask if panelists get a special badge. They don't, so I just pick up a regular badge
 and the official conbook. It may just be
-my imagination, but the page advertising Mystery Skulls feels like it is made of noticably cheaper, last-minute paperstock.
+my imagination, but the page advertising Mystery Skulls feels like it is made of noticeably cheaper last-minute paper stock.
 
 I immediately head to the con store, because I'm pretty confident they will run out
-if I wait. I come out with a BABSCon 2025 T-shirt and a coin from leftover BABSCon 2024 merch. My call is correct: the T-shirts sell out by the end of the first day.
+if I wait. I leave with a BABSCon 2025 T-shirt and a coin from leftover BABSCon 2024 merch. My call is correct: the T-shirts sell out by the end of the first day.
 
 There isn't too much to comment on for the rest of the con. As I said, I've been to enough of these to know what
 to expect. When I walk into the vendor hall, I do a quick once over, confirm I've seen
@@ -474,7 +474,7 @@ After my analysis of the two in-universe My Little Pony
 escape rooms (yes, there are two of them),
 I run a solve along of [Bottom Lines](https://dp.puzzlehunt.net/puzzle/bottom-lines.html) from DP Puzzle Hunt,
 [Power](https://deusovi.github.io/puzzlefiles/zelda-minihunt.pdf) from Deusovi's Zelda Minihunt, and [Art of the Dress](https://www.puzzlesaremagic.com/puzzle/art-of-the-dress.html) from Puzzles are Magic. We go a bit over time, but it's 30 minutes until the next panel, so I end up
-livestreaming a group crossword solve of [Cross Eyed](https://www.puzzlesaremagic.com/puzzle/cross-eyed.html) from Puzzles are Magic
+livestreaming a group solve of the [Cross Eyed](https://www.puzzlesaremagic.com/puzzle/cross-eyed.html) crossword from Puzzles are Magic
 until we are kicked out. Hopefully I've converted at least one person to
 puzzlehunts.
 
@@ -486,7 +486,7 @@ convince people to travel to the EU pony circuit. I mention that I was just in L
 and he complains that visiting London only means I've been to London. It doesn't mean I've been to Britain. I ask what would count as visiting Britain - he says "anywhere but London".
 
 We talk a bit about pony cons outside the US, and the
-recent explosion of the Chinese bronycon scene. I don't follow Chinese brony fandom much, but know
+recent explosion of the Chinese bronycon scene. I don't follow the Chinese brony fandom, but I know
 My Little Pony is massive over there. It feels like China
 is 10 years behind the US's hype cycle, and they are living through our 2015-2016 peak of MLP popularity.
 There are a ton of Chinese MLP conventions and
@@ -520,7 +520,7 @@ accurate to me.
 Pretty good turnout for a last minute unofficial event.
 Turns out you *can* just move a concert if everypony wants to make it happen.
 
-The Mystery Skulls set at BABSCon was fun, but Neighhem is beating it on all dimensions.
+The Mystery Skulls set at BABSCon was fun, but Neighhem is beating it in all dimensions.
 The venue is nicer. The concert setup is more elaborate, with a larger stage
 and more audiovisuals. The performer callouts are more specific to MLP fandom.
 It feels more like a *pony* rave rather than just a rave.
@@ -591,9 +591,9 @@ was donated to the music program at [New Horizon School](https://www.newhorizons
 
 The musicians go back from whence they came. Some are still active, while others
 have either stopped or work professionally under other aliases. A
-few months after BABSCon, Vylet Pony releases a
-new album, [Love & Ponystep](https://www.youtube.com/watch?v=HKpsl3tJmIU). To quote a review, it is "fearlessly cringe", and I love it. The album beats you over
-the head with its inspirations, and that makes it feel real.
+few months after BABSCon, Vylet Pony releases her
+new album, [Love & Ponystep](https://www.youtube.com/watch?v=HKpsl3tJmIU). To quote a review, it is "fearlessly cringe", and I love it. The album blasts
+you with its inspirations, and that makes it feel real.
 Fan of "Peace, Love, Glalie", "Wonka X Howl", and "Falling in Love With a Corporate Illustration" so far.
 
 Recently, as my blogging profile has grown, I've wondered how much time to spend
@@ -605,9 +605,10 @@ It's okay to do things for you, even and especially if they aren't legible to ot
 
 As for My Little Pony, the world continues to spin. There's speculation that Hasbro
 will leverage their Chinese popularity to do a big marketing push for the Year of
-the Horse in 2026. And as of last week, Variety's reported that [a live-action
-MLP movie](https://variety.com/2025/film/news/my-little-pony-movie-live-action-amazon-mgm-hasbro-1236461858/) is in the works. No one is excited by this news, the track
+the Horse in 2026. And as of last week, Variety reports that [a live-action
+MLP movie](https://variety.com/2025/film/news/my-little-pony-movie-live-action-amazon-mgm-hasbro-1236461858/) is in the works. No one is excited by this news. The track
 record of live-action reboots is really not good. But I remember when Friendship is
-Magic was written off as a trash cash-in cartoon. Then it started airing, and now
+Magic was written off as a trash cash-in cartoon before it started airing.
+Then people watched it, and now
 Twilight Sparkle is a cultural icon. I hope the movie's good. For now, all there is
 to do is celebrate what we have and wait for what's new.
