@@ -15,6 +15,9 @@
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 50 }}{% else %}{{ site.description }}{% endif %}" />
 <meta property="og:sitename" content="{{ site.title }}" />
 <meta property="og:locale" content="en_US" />
+{% if page.share_image %}
+<meta property="og:image" content="{{ page.share_image | prepend: site.url }}" />
+{% endif %}
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary" />
