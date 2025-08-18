@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ten Years Later"
-date:   2025-08-18 11:19:01 -0700
+date:   2025-08-18 09:19:01 -0700
 ---
 
 My blog turns ten years old today. The big 1-0. Thanks for reading!
@@ -14,17 +14,16 @@ but not the full story.
 What feels closer is that a long time ago, I was looking for outlets
 to express myself creatively. Drawing didn't appeal to me, coding weird
 digital toys didn't either, and that left longform writing as one of the natural
-options. I had already written some long Facebook comments (back in the day where
+options. I had already written some long Facebook posts (back in the day where
 using your Facebook as a blog was a thing people did), so the jump was
-straightforward. And I found once I got started, it was easier to keep going
-than to step. (If anything, I think I have a harder time stopping
-things than starting things.)
+obvious. And I found once I got started, it was easier to keep going.
+(If anything, I think I have a harder time stopping things than starting things.)
 
 Maybe that's why it doesn't feel like a big deal to cross the ten year mark.
 Like, I celebrate the milestones, but it doesn't feel like an accomplishment.
 It's more like, blogging is a thing I do which I want to keep doing. Why
-would it feel special to do something I like doing for 10 years? I like doing it,
-and in life I try to keep doing things I enjoy. It's just good policy.
+would it feel special to do something I like doing for 10 years?
+In life, I try to keep doing the things I find fun. It's just good policy.
 
 I think it also helps that I take this blog *profoundly* unseriously. When
 I wrote my last post, about [brony musicians seizing the means of production]({% post_url 2025-07-21-babscon-2025 %}),
@@ -38,8 +37,8 @@ harsh in its criticism, and it told me:
 
 On reflection, it wasn't *wrong* that the post would be better if it were
 streamlined, without all the little frills I'd written into it. But I *wanted* the
-frills. So I took half its advice, ignored the rest, and that's part of the reason
-why it's got the worst view-to-effort ratio of my entire blog. The upside and downside
+frills. So I took half its advice, ignored the rest, and that's partly
+why it's got the worst view-to-effort ratio of my entire blog. That's the upside and downside
 of being your own editor.
 
 But do I regret writing it? No, not at all. In a world of Substacks and Mediums, it feels good to have this corner of
@@ -49,7 +48,7 @@ about My Little Pony and not feel bad about it. So, really, thanks.
 # Stats
 
 I spent 93 hours, 7 minutes writing 6 posts this year, which is down from 139 hours + 9 posts from last year.
-That's another reason I'm not celebrating with more gusto. I know I've been writing
+That's another reason I'm not celebrating 10 years with more gusto, I know I've been writing
 less.
 
 Once again, I wish I could say I had a good reason for this, but the reality
@@ -68,23 +67,24 @@ to try something new.
 
 Lighthaven, the rationalist aligned event space in Berkeley, is hosting a [blogging
 residency named Inkhaven](https://www.inkhaven.blog/). If you sign up, you pay
-$2000 plus housing, to live in their space during the month of November, committing to
+$2000 plus housing, to live there during the month of November, committing to
 writing at least a 500 word blog post each day. If you don't, you're kicked out.
-They're doing this because they think writing is good for the world, and want more
-people to write regularly. On one hand, the hosts are biased, since
-anyone familiar with rationalist culture knows that longform maybe-overthinking-it
-essays are the lifeblood of their community. Of course they have a high opinion
+They're doing this because they think writing is good for the world, and want
+to get more people to write regularly. On one hand, the hosts are biased.
+Anyone familiar with rationalist culture knows that longform maybe-overthinking-it
+essays are the lifeblood of their community. *Of course* they have a high opinion
 on writing's value. On the other hand, anyone familiar with the *influence* of those
 maybe-overthinking-it essays should find it hard to take the opposite position.
 
 Am I going to do Inkhaven? No, they're asking
-for full-time commitment and I can't do that right now. And I'm not looking to spend
-money to become full-time Professional Writer Man. Did I think about it? Yes.
+for full-time commitment and I both can't and don't want to do that right now.
+I'm not looking to spend money to become full-time Professional Writer Man.
+Did I think about it? Yes.
 
-If the idea of paying to commit to writing appeals to you, you should definitely consider applying,
+If the idea of paying to commit to a writing bootcamp appeals to you, you should definitely consider applying,
 if only because I bet you'll find your people. Personally, I may do a post-a-day
-challenge anyways. I did one in 2016, and although I think most of those posts were trash,
-it was nice to prove I could do it.
+challenge anyways. I did one in [2016]({% post_url 2016-05-01-blogging-gauntlet-may-1 %}),
+and although most of the posts were trash, it was nice to prove I could do it.
 
 ## View Counts
 
@@ -105,7 +105,8 @@ Look, if Xbox Game Pass took over 3 months of my life, I at least get to review 
 I have to shill it.
 A great game if you're a person who's played a lot of video games. If you're new? Start somewhere else.
 There's a very particular thing going on in playing through the catalogue of a fictional video game
-studio, that makes you appreciate the evolution of game design all the more. There are many games I've barely even
+studio, that makes you appreciate the evolution of game design all the more, but it works best if you've
+got the shared history. There are many games I've barely even
 tried, but I still have so many hours in the ones I did. Mini & Max is GOATed and worth the
 price of admission on its own.
 
@@ -121,15 +122,16 @@ instead of play.
 Circle was just fun all the way through. I got surprisingly invested in the story, it's voiced well,
 and the gameplay has a nice balance of exploration, puzzle solving, stealth, and frantically using
 your whip on Nazis when the stealth inevitably goes wrong. My one complaint is that the hand-to-hand
-combat feels like the worst part of the game, so of course a bunch of sidequests are gated behind
+combat feels like the worst part of the game, so of course they put a bunch of upgrades behind
 learning parry timings you'll never use later.
 
 **Another Crab's Treasure**: The devs of Another Crab's Treasure are now most famous for Peak, their
 small side project which is now their main project after it sold 5 million copies. I have not tried
 Peak, but Another Crab's Treasure was really good and is worth playing if you're interested in
-a Souls-like. I've been told it's easier than other Souls-likes, but what really carries it is the
-game's humor and story. In between the typical Dark Souls story of a dying world is a series of jabs
-against pollution and capitalism privatizing profits while socializing losses.
+a Souls-like. I've been told it's easier than other Souls-likes, but I still found it tricky.
+What really carries it is the
+game's humor and story. In between the typical Dark Souls story of a dying world are real character
+arcs and jabs against capitalism privatizing profits while socializing losses.
 
 **Chants of Sennar**: A short language-based puzzle game themed after the Tower of Babel, where you
 need to learn how to translate between languages to help people communicate with each other and
@@ -150,11 +152,10 @@ as is going through something, but that doesn't mean you are. Another game I don
 but which I'm glad I played for free.
 
 **Powerwash Simulator**: I tried it and just don't get the appeal. It's satisfying to slowly bring
-a scene from messy to clean, but the last few % are really annoying. I get equivalent joy with
-less monotony by solving logic puzzles.
+a scene from messy to clean, but I get equivalent joy with less monotony by solving logic puzzles.
 
 **Unpacking**: In contrast, Unpacking is a banger. Behind the surface level gameplay is a really
-cool narrative experience of seeing the protagonist grow up, as viewed through the items they keep,
+cool narrative experience of seeing the protagonist grow up, as viewed only through the items they keep,
 the items they throw away, and the places they move to. There is a moment shortly after the
 college level where most people go "ohhhhhhhh man", and it's conveyed through finding where to unpack
 stuff. Just super neat. Unfortunately, also quite short.
