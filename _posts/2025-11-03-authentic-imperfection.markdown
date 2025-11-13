@@ -4,43 +4,103 @@ title:  "Authentic Imperfection"
 date:   2025-11-03 09:19:01 -0700
 ---
 
-Autotune is great. I used to be ambivalent about this, but got turned this way
-by a video from [Sideways](https://www.youtube.com/watch?v=05hTQC1CZko). It's a
-nice video, but I will give the quick version.
+Auto-Tune is great.
 
-* Autotune is a pitch correction tool that entered public consicuosness when
-artists like T-Pain used deliberately extreme Autotune as an audio effect. Ever
-since, T-Pain has been accused of not being a real singer (even when there are
-multiple examples of T-Pain singing insanely well).
-* If you can tell Autotune is there, it's getting used wrong. You shouldn't be able to tell.
-* Almost every music artist uses Autotune, because audience expectations for music
-production have escalated so much that you need to do so.
-* Many live concerts use Autotune too, because it's possible to pitch correct in real-time,
-and, once again, people can't tell if you do it right.
-* No one will ever acknowledge this, because of the stigma around Autotune and people believing
-performers who use Autotune don't have real vocal talent.
-* This has led to an interesting place: the public likes performances that sound perfect, *or*
-performances that sound a bit off from perfect. The former because it's perfect, and the
-latter because it proves that you did it "for real". You can't be using pitch correction
-tools because you wouldn't correct yourself to be slightly off-pitch.
+I used to be ambivalent on this, but got radicalized by a video from [Sideways](https://www.youtube.com/watch?v=05hTQC1CZko).
+It's a nice video, but I will give the quick version.
 
-This video is from 2020. Three years later, ChatGPT and DALL-E 2 came out and we speedran this whole discussion
-for text and images. Now we're starting to hit it for video.
+Auto-Tune is one of many pitch correction tools that can be used to tighten up
+slightly off-key vocals. Although intended to be used silently, it entered public
+consicousness when artists like Cher and T-Pain used it deliberately as an audio
+effect. Ever since, they have been accused of not being real singers, even when there
+are many recordings of T-Pain singing live incredibly well.
 
-I can spot some AI images, but have definitely been fooled by some. The same is true for text.
-A naive use of generative AI will have quick, obvious artifacts, but a careful or lightly edited
-use of generative AI is very hard to spot. (See the ACX post testing how well people can spot
-AI art from real art. A few people are AI spotting savants, but only a few.)
+A ton of music artists use Auto-Tune, because audience expectations around music
+production have escalated rapidly, causing the baseline of "good singer" to rise.
+These tools have advanced to the point where pitch correction can be done live
+in real-time, and once again, most people can't tell it's happening.
 
-So that's where we are. The average person cannot spot good pitch correction, or LLM editing,
-or AI image touch-ups, but they can tell when it's done badly or deliberately, and these deliberate
-instances are enough to poison the well. By now I have read multiple thinkpieces begging people
-to not use LLMs, to write imperfectly, to draw imperfectly, because they are tired of reading and
-seeing AI content. Because if it's imperfect, it must be real.
+Despite this, no one will ever acknowledge this, because the public stigma around
+Auto-Tune is too strong, and no professional wants to be accused of lacking vocal
+talent. This has led to an interesting place: either your music performance needs to
+be perfectly pitch corrected, or it needs to be *slightly off* from perfect. The latter is implicitly
+considered a sign of authenticity: no one would tune themselves to sound wrong.
 
-The average person cannot tell something is pitch corrected. In the same way, the average person
-can't recognize AI writing or AI art. But humans have a lot of variance, are never average at everything,
-and so they *can* tell when generative AI has been used. Often enough to confirm their suspicions, but
-not all the time, which causes people to keep using gen AI.
+Sideways' channel is specifically about movie musicals, so the video segues into
+movie performances that are clearly off-key, but still acclaimed due to the physical
+acting side of things, and how this isn't good if you care primarily about the quality
+of the music rather than the cohesive whole.
 
-In the wake of this
+This video is from 2020. Within three years, ChatGPT and DALL-E came out, and we speedran
+this discussion all over again.
+
+\* \* \*
+{: .centered }
+
+I've been thinking about the anger surrounding generative AI. There are common themes.
+It uses too much energy, it violates too many copyrights, the content isn't even good.
+
+As models have gotten better, the last point has changed. What does it even mean for content to be good?
+It's a very fuzzy, subjective thing. I can spot some AI images, but have definitely been fooled
+by some. When Astral Codex Ten ran an [AI art Turing test](https://www.astralcodexten.com/p/how-did-you-do-on-the-ai-art-turing),
+he found a median score of 60% identification. And, interestingly, when asked which picture was
+their favorite, the top two pictures were AI generated, even among people who said they hated
+AI art.
+
+To me, the resolution of this dilemma is obvious. In the test linked above, Scott Alexander
+decided to take the best human artists and best AI prompters. If you give a basic prompt,
+generative image models will give you something in their default style. Maybe in isolation that
+would be fine, but we are overexposed to these default styles, making them obviously artificial.
+But when prompted very carefully, and iterated until no hands have six fingers, it's harder to tell.
+
+Like Auto-Tune, there was originally a novel effect to the artificiality, and now it's just wrong.
+It's annoying when Claude Code says ["you're absolutely right!"](https://absolutelyright.lol/).
+It's weird when LLMs use em dashes, to
+[the consternation of writers who wish they could use them without getting confused for AI](https://www.theringer.com/2025/08/20/pop-culture/em-dash-use-ai-artificial-intelligence-chatgpt-google-gemini).
+
+> There are two reasons why this [em dash] discourse must be stopped: The first has to do with the way generative AI works; the second has to do with the fate of the human soul.
+
+
+and sounds wrong. But, importantly, you can make people forgive the artificiality if you *try*.
+We've seen this happen in all forms: AI text, AI music, older forms of computer generated content
+like CGI. One of the big press stories about Mad Max: Fury Road was its practical effects, and how
+that made it better, even when Fury Road used [digital VFX in nearly every shot](https://textualvariations.substack.com/p/fury-fx-furiosa).
+But if you call it "digital VFX" rather than CGI, no one cares! One is the boring phrase and
+one is the bad phrase. CGI implies less work than raw human effort, even when the digital VFX
+industry is notorious for its long hours, poor pay, and unreasonable deadlines.
+
+IMAGE from https://www.youtube.com/watch?v=exK_fVmY8Jk goes here.
+
+I think people are really responding to taste. In many forms of art, we care about the person
+behind the curtain. We care what they are trying to say, we interpret idiosyncracies and failings
+as style. When you learn something was generated artificially, this implicit contract is broken.
+
+![A 4chan thread about a badly drawn Sonic the Hedgehog. Posters originally say the image has soul and is better than AI trash, until OP reveals it was generated by Midjourney](/public/auth-imp/jvwyyqn7776a1.jpg)
+{: .centered }
+
+Your
+LLM is my LLM, and the idiosyncracies of AI are too correlated to be charming.
+
+However, it is possible for intent to shine through even when mediated by AI. A few years ago,
+
+There are thus two kinds of art: the kind where we care about the person behind the curtain,
+and the kind where we don't. Steam the gaming platform now requires developers to disclose
+how AI was used in developing their game. There is a lot of AI slop on Steam, but I've also seen
+hate on games for people using AI art generators to generate things like grass textures. How important
+is the artistry in that?
+Your art needs to suck a bit, so that we can tell you suffered.
+But people mistake suffering for virtue, or don't understand that you can make AI look like trash
+too.
+
+4chan sonic image here.
+
+If someone spends hours crafting the perfect prompt, adjusting based on the output, according
+to their taste, isn't that a *good* thing? That they have a certain vision of what they want,
+and are poking the magic box until it conforms, out of their sense of perfection? I find this
+compelling. I want to see good taste, "finally, some good f\*\*\*ing food", and think I can spot
+this even when mediated through AI. These tools increase the scope of what we *can* do, and
+what I find annoying is the deluge of phoning-it-in content, rather than the content itself.
+
+I'm not saying it doesn't matter. I confess to spending minutes carefully aligning slides
+pixel-perfectly, because that polish matters to me. But I feel like this kind of hate has become
+too militant.
