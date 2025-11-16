@@ -7,28 +7,35 @@ date:   2025-11-03 09:19:01 -0700
 Auto-Tune is great.
 
 I used to be ambivalent on this, but got radicalized by a video from [Sideways](https://www.youtube.com/watch?v=05hTQC1CZko).
-It's a nice video, but I will give the quick version.
+I will give the quick version.
 
 Auto-Tune is one of many pitch correction tools that can be used to tighten up
-slightly off-key vocals. Although intended to be used silently, it entered public
-consicousness when artists like Cher and T-Pain used it deliberately as an audio
-effect. Ever since, they have been accused of not being real singers, even when there
-are many recordings of T-Pain singing live incredibly well.
+slightly off-key vocals. Its intended use was to reduce time spent getting the perfect
+take, by doing light adjustments to an existing performance.
+
+Although intended to be a background tool, it entered public
+consicousness when artists like Cher and T-Pain deliberately used it to an extreme degree
+to create an audio effect. This was special at the time, but ever since,
+they have been accused of not being real singers. T-Pain especially, even when there
+are many recordings of T-Pain singing live.
 
 A ton of music artists use Auto-Tune, because audience expectations around music
 production have escalated rapidly, causing the baseline of "good singer" to rise.
-These tools have advanced to the point where pitch correction can be done live
-in real-time, and once again, most people can't tell it's happening.
+From a purely musical standpoint, we get more music - cool!
 
-Despite this, no one will ever acknowledge this, because the public stigma around
-Auto-Tune is too strong, and no professional wants to be accused of lacking vocal
-talent. This has led to an interesting place: either your music performance needs to
+These tools have advanced to the point where pitch correction can be done live
+in real-time, and once again, most people can't tell it's happening. And this is
+also nice, because it makes concerts sound better, but *no one will ever acknowledge this*,
+thanks to the public stigma around Auto-Tune, and the assumption that if you can hear
+the artificiality, it means the singer doesn't have real talent.
+
+This has led to an interesting place. Either your music performance needs to
 be perfectly pitch corrected, or it needs to be *slightly off* from perfect. The latter is implicitly
 considered a sign of authenticity: no one would tune themselves to sound wrong.
 
 Sideways' channel is specifically about movie musicals, so the video segues into
-movie performances that are clearly off-key, but still acclaimed due to the physical
-acting side of things, and how this isn't good if you care primarily about the quality
+how the music from the Les Miserables movie is really bad, but there's something novel
+here. We want "pure" music, but only some kinds of music production count as pure.
 of the music rather than the cohesive whole.
 
 This video is from 2020. Within three years, ChatGPT and DALL-E came out, and we speedran
@@ -40,63 +47,90 @@ this discussion all over again.
 I've been thinking about the anger surrounding generative AI. There are common themes.
 It uses too much energy, it violates too many copyrights, the content isn't even good.
 
-As models have gotten better, the last point has changed. What does it even mean for content to be good?
-It's a very fuzzy, subjective thing. I can spot some AI images, but have definitely been fooled
-by some. When Astral Codex Ten ran an [AI art Turing test](https://www.astralcodexten.com/p/how-did-you-do-on-the-ai-art-turing),
-he found a median score of 60% identification. And, interestingly, when asked which picture was
-their favorite, the top two pictures were AI generated, even among people who said they hated
-AI art.
+I think the last point was easier to argue before and has gotten harder over time.
+What does it even mean for content to be good? It's a very fuzzy, subjective thing, and
+there are recent surveys suggesting even the AI haters can't tell all the time.
+Last year, Scott Alexander of Astral Codex Ten ran an [AI art Turing test](https://www.astralcodexten.com/p/how-did-you-do-on-the-ai-art-turing)
+survey. To keep things fair, he took the best human images and best AI images, meaning
+human art from famous artists, and AI art from prompters skilled at removing obvious
+tells of image generation.
 
-To me, the resolution of this dilemma is obvious. In the test linked above, Scott Alexander
-decided to take the best human artists and best AI prompters. If you give a basic prompt,
-generative image models will give you something in their default style. Maybe in isolation that
-would be fine, but we are overexposed to these default styles, making them obviously artificial.
-But when prompted very carefully, and iterated until no hands have six fingers, it's harder to tell.
+The median responder only identified 60% of images correctly, not much above chance.
+And, interestingly, when asked which picture was their favorite, the top two pictures were AI generated, even
+among people who said they hated AI art.
+
+So what's going on here?
+
+When people complain about AI slop, I see it as a complaint against the deluge of
+default style AI images. First, it was the memes about hands with the wrong number of fingers.
+Then it was the overproduced lighting common to DALL-E and Midjourney outputs. Then it
+was the Studio Ghibli style and vaguely yellow filter common to ChatGPT generations. But these aren't
+the only things image models can do. They're just what you get if you try the quickest, trendiest
+thing. The thing that becomes trendy enough to become obviously artificial by sheer volume.
+
+> I’ve spent a very large amount of time overall with Nano Banana and although it has a lot of promise, some may ask why I am writing about how to use it to create highly-specific high-quality images during a time where generative AI has threatened creative jobs. The reason is that information asymmetry between what generative image AI can and can’t do has only grown in recent months: many still think that ChatGPT is the only way to generate images and that all AI-generated images are wavy AI slop with a piss yellow filter. The only way to counter this perception is though evidence and reproducibility.
+[From minimaxir](https://minimaxir.com/2025/11/nano-banana-prompts/)
 
 Like Auto-Tune, there was originally a novel effect to the artificiality, and now it's just wrong.
 It's annoying when Claude Code says ["you're absolutely right!"](https://absolutelyright.lol/).
 It's weird when LLMs use em dashes, to
-[the consternation of writers who wish they could use them without getting confused for AI](https://www.theringer.com/2025/08/20/pop-culture/em-dash-use-ai-artificial-intelligence-chatgpt-google-gemini).
+[the consternation of writers who wish they could use them without getting accussed of AI](https://www.theringer.com/2025/08/20/pop-culture/em-dash-use-ai-artificial-intelligence-chatgpt-google-gemini).
 
 > There are two reasons why this [em dash] discourse must be stopped: The first has to do with the way generative AI works; the second has to do with the fate of the human soul.
 
-
-and sounds wrong. But, importantly, you can make people forgive the artificiality if you *try*.
+But, importantly, you can make people forgive the artificiality if you *try*.
 We've seen this happen in all forms: AI text, AI music, older forms of computer generated content
-like CGI. One of the big press stories about Mad Max: Fury Road was its practical effects, and how
-that made it better, even when Fury Road used [digital VFX in nearly every shot](https://textualvariations.substack.com/p/fury-fx-furiosa).
-But if you call it "digital VFX" rather than CGI, no one cares! One is the boring phrase and
+like CGI. Mad Max: Fury Road is one of my favorite movies, and one press story about
+the movie was its heavy use of practical effects. This was said with the air of "practical is better",
+even when Fury Road used [digital VFX in nearly every shot](https://textualvariations.substack.com/p/fury-fx-furiosa).
+But if you call it digital VFX instead of CGI, no one cares! One is the boring phrase and
 one is the bad phrase. CGI implies less work than raw human effort, even when the digital VFX
 industry is notorious for its long hours, poor pay, and unreasonable deadlines.
 
-IMAGE from https://www.youtube.com/watch?v=exK_fVmY8Jk goes here.
+![A side-by-side comparison of a shot from Mad Max: Fury Road, before and after VFX](/public/auth-imp/madmax.png)
+{: .centered }
 
-I think people are really responding to taste. In many forms of art, we care about the person
-behind the curtain. We care what they are trying to say, we interpret idiosyncracies and failings
-as style. When you learn something was generated artificially, this implicit contract is broken.
+[Comparison by Matt Brown from Toronto International Film Festival](https://www.youtube.com/watch?v=exK_fVmY8Jk)
+{: .centered }
+
+I don't think people really care about AI or not. They care about whether they can see a
+vision, taste, or curating eye.
+We want to see the people behind the curtain.
+We care what they are trying to say, we interpret idiosyncracies and failings
+as style. When you learn something was generated artificially, this implicit contract breaks. The
+idiosyncracies of AI are too correlated to be charming.
 
 ![A 4chan thread about a badly drawn Sonic the Hedgehog. Posters originally say the image has soul and is better than AI trash, until OP reveals it was generated by Midjourney](/public/auth-imp/jvwyyqn7776a1.jpg)
 {: .centered }
 
-Your
-LLM is my LLM, and the idiosyncracies of AI are too correlated to be charming.
+I want to go back to the Fury Road image for a bit. Obviously, the main difference is the addition of the truck
+and the color correction, but did you notice the rock added to diguise the ramp the car jumped off of? (Look under the back
+tire if you didn't.) I know this is CGI table stakes, everyone does it, but it's the kind of attention to detail that means something to me.
+Intent of that form can shine even when mediated by AI. I've seen too much AI due to being a highly
+online person, but I had a lot of fun with the [AI Presidents discuss their top 5 anime](https://www.youtube.com/watch?v=IkaAZE_UGMo)
+video that metastasized into a trend of AI Presidents discussing nerd culture.
+There was something honest in its absurdity, where the AI layer was generating the voices and
+the taste layer was deciding which president would take which role.
+And yet, if you told me the script was written by an LLM, it would lose some of its magic.
 
-However, it is possible for intent to shine through even when mediated by AI. A few years ago,
+As much as we celebrate [imperfection](https://www.youtube.com/watch?v=KbCxNOOXrts),
+digital imperfection is a step too far. We see AI in the lens of automation. People don't want
+tools that give them more ways to fail, they want agents that make failure impossible.
 
-There are thus two kinds of art: the kind where we care about the person behind the curtain,
-and the kind where we don't. Steam the gaming platform now requires developers to disclose
-how AI was used in developing their game. There is a lot of AI slop on Steam, but I've also seen
-hate on games for people using AI art generators to generate things like grass textures. How important
-is the artistry in that?
-Your art needs to suck a bit, so that we can tell you suffered.
-But people mistake suffering for virtue, or don't understand that you can make AI look like trash
-too.
+Right now, the public does not recognize prompting as a skill. I mean, we know there are tricks,
+and some people are better at finding these tricks, but this doesn't cross into talent. It doesn't
+feel like something you could sink your life into, in the way that you could for drawing or
+programming or game design.
 
-4chan sonic image here.
-
-If someone spends hours crafting the perfect prompt, adjusting based on the output, according
+have so much data! We drown in it, and we want 
+, they want agents that
+make choices for them, that do things for them.
+AI tools increase the scope of what we can do, and yet, it feels like it is limiting 
+If someone spends hours crafting the perfect prompt, adjusting according
 to their taste, isn't that a *good* thing? That they have a certain vision of what they want,
-and are poking the magic box until it conforms, out of their sense of perfection? I find this
+and are poking the magic box until it conforms, out of their sense of perfection?
+
+I find this
 compelling. I want to see good taste, "finally, some good f\*\*\*ing food", and think I can spot
 this even when mediated through AI. These tools increase the scope of what we *can* do, and
 what I find annoying is the deluge of phoning-it-in content, rather than the content itself.
