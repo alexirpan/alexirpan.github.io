@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Authentic Imperfection"
-date:   2025-11-03 09:19:01 -0700
+date:   2025-11-16 01:16:01 -0800
 ---
 
 Auto-Tune is great.
