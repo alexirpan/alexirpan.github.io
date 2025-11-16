@@ -115,26 +115,5 @@ And yet, if you told me the script was written by an LLM, it would lose some of 
 
 As much as we celebrate [imperfection](https://www.youtube.com/watch?v=KbCxNOOXrts),
 digital imperfection is a step too far. We see AI in the lens of automation. People don't want
-tools that give them more ways to fail, they want agents that make failure impossible.
-
-Right now, the public does not recognize prompting as a skill. I mean, we know there are tricks,
-and some people are better at finding these tricks, but this doesn't cross into talent. It doesn't
-feel like something you could sink your life into, in the way that you could for drawing or
-programming or game design.
-
-have so much data! We drown in it, and we want 
-, they want agents that
-make choices for them, that do things for them.
-AI tools increase the scope of what we can do, and yet, it feels like it is limiting 
-If someone spends hours crafting the perfect prompt, adjusting according
-to their taste, isn't that a *good* thing? That they have a certain vision of what they want,
-and are poking the magic box until it conforms, out of their sense of perfection?
-
-I find this
-compelling. I want to see good taste, "finally, some good f\*\*\*ing food", and think I can spot
-this even when mediated through AI. These tools increase the scope of what we *can* do, and
-what I find annoying is the deluge of phoning-it-in content, rather than the content itself.
-
-I'm not saying it doesn't matter. I confess to spending minutes carefully aligning slides
-pixel-perfectly, because that polish matters to me. But I feel like this kind of hate has become
-too militant.
+tools that give them more ways to fail, they want agents that make failure impossible, and we
+don't have them yet. Until then, in the uncanny valley of competence, everyone can be king.
