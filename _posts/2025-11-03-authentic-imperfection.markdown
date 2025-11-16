@@ -59,6 +59,10 @@ The median responder only identified 60% of images correctly, not much above cha
 And, interestingly, when asked which picture was their favorite, the top two pictures were AI generated, even
 among people who said they hated AI art.
 
+![Example side-by-side comparison of AI vs human image](/public/auth-imp/teaser_image.jpg)
+
+{: .centered }
+
 So what's going on here?
 
 When people complain about AI slop, I see it as a complaint against the deluge of
@@ -69,7 +73,9 @@ the only things image models can do. They're just what you get if you try the qu
 thing. The thing that becomes trendy enough to become obviously artificial by sheer volume.
 
 > I’ve spent a very large amount of time overall with Nano Banana and although it has a lot of promise, some may ask why I am writing about how to use it to create highly-specific high-quality images during a time where generative AI has threatened creative jobs. The reason is that information asymmetry between what generative image AI can and can’t do has only grown in recent months: many still think that ChatGPT is the only way to generate images and that all AI-generated images are wavy AI slop with a piss yellow filter. The only way to counter this perception is though evidence and reproducibility.
+
 [From minimaxir](https://minimaxir.com/2025/11/nano-banana-prompts/)
+{: .centered }
 
 Like Auto-Tune, there was originally a novel effect to the artificiality, and now it's just wrong.
 It's annoying when Claude Code says ["you're absolutely right!"](https://absolutelyright.lol/).
@@ -106,7 +112,9 @@ idiosyncracies of AI are too correlated to be charming.
 I want to go back to the Fury Road image for a bit. Obviously, the main difference is the addition of the truck
 and the color correction, but did you notice the rock added to diguise the ramp the car jumped off of? (Look under the back
 tire if you didn't.) I know this is CGI table stakes, everyone does it, but it's the kind of attention to detail that means something to me.
-Intent of that form can shine even when mediated by AI. I've seen too much AI due to being a highly
+Intent of that form can shine even when mediated by AI.
+
+I've seen too much AI due to being a highly
 online person, but I had a lot of fun with the [AI Presidents discuss their top 5 anime](https://www.youtube.com/watch?v=IkaAZE_UGMo)
 video that metastasized into a trend of AI Presidents discussing nerd culture.
 There was something honest in its absurdity, where the AI layer was generating the voices and
