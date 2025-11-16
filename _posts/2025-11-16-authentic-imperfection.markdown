@@ -2,6 +2,7 @@
 layout: post
 title:  "Authentic Imperfection"
 date:   2025-11-16 01:16:01 -0800
+share_image: "/public/auth-imp/madmax.png"
 ---
 
 Auto-Tune is great.
@@ -53,12 +54,12 @@ survey. To keep things fair, he took the best human images and best AI images, m
 human art from famous artists, and AI art from prompters skilled at removing obvious
 tells of image generation.
 
+![Example side-by-side comparison of AI vs human image](/public/auth-imp/teaser_image.jpg)
+{: .centered }
+
 The median responder only identified 60% of images correctly, not much above chance.
 And, interestingly, when asked which picture was their favorite, the top two pictures were AI generated, even
 among people who said they hated AI art.
-
-![Example side-by-side comparison of AI vs human image](/public/auth-imp/teaser_image.jpg)
-{: .centered }
 
 So what's going on here?
 
