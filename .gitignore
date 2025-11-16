@@ -10,3 +10,5 @@ _site
 *.exe.stackdump
 feedback
 Gemfile.lock
+# weird WSL stuff
+*Zone.Identifier
