@@ -16,7 +16,7 @@ take, by doing light adjustments to an existing performance.
 
 Although intended as a background tool, it entered public
 consicousness when artists like Cher and T-Pain deliberately used it to an extreme degree
-because they liked the effect. This was special at the time, but ever since,
+because they liked the audio effect. This was special at the time, but ever since,
 they have been accused of not being real singers. T-Pain especially, even when there
 are many recordings of T-Pain singing live.
 
@@ -27,7 +27,7 @@ From just a musical standpoint, we get better music - cool! From an overall stan
 These tools have advanced to the point where pitch correction can be done live
 in real-time, and once again, most people can't tell it's happening.
 Concerts sound better, but *no one will ever acknowledge this*,
-thanks to the public stigma around Auto-Tune, and the assumption that if use it, you don't have talent.
+thanks to the public stigma around Auto-Tune, and the assumption that if you use it, you don't have talent.
 
 This has led to an interesting place. Either your music performance needs to
 be perfectly pitch corrected, or it needs to be *slightly off* from perfect. The latter is implicitly
@@ -49,8 +49,7 @@ It uses too much energy, it violates too many copyrights, the content isn't even
 I think the last point was easier to argue in the past and has gotten harder over time.
 What does it even mean for content to be good? It's a very fuzzy, subjective thing, and
 there are recent surveys suggesting even the AI haters can't tell all the time.
-Last year, Scott Alexander of Astral Codex Ten ran an [AI art Turing test](https://www.astralcodexten.com/p/how-did-you-do-on-the-ai-art-turing)
-survey. To keep things fair, he took the best human images and best AI images, meaning
+Last year, Scott Alexander of Astral Codex Ten ran an [AI art Turing test](https://www.astralcodexten.com/p/how-did-you-do-on-the-ai-art-turing). To keep things fair, he took the best human images and best AI images, meaning
 human art from famous artists, and AI art from prompters skilled at removing obvious
 tells of image generation.
 
