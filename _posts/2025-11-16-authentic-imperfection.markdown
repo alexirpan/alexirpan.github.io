@@ -118,7 +118,7 @@ idiosyncracies of AI are too correlated to be charming.
 I've seen a lot AI due to being a highly
 online person who works in AI, and don't like most of it, but I had a lot of fun with the [AI Presidents discuss their top 5 anime](https://www.youtube.com/watch?v=IkaAZE_UGMo)
 video that metastasized into a trend of AI Presidents discussing nerd culture.
-There was something honest in its absurdity, where the AI layer was generating the voices, the taste layer was deciding which president which take which role, and it comes together beautifully. Yet I'd admit
+There was something honest in its absurdity, where the AI layer was generating the voices, the taste layer was deciding which president would take which role, and it comes together beautifully. Yet I'd admit
 that if I learned the script was written by an LLM, it would lose some of its magic.
 
 As much as we celebrate [imperfection](https://www.youtube.com/watch?v=KbCxNOOXrts),
