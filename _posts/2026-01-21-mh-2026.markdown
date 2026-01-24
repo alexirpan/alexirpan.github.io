@@ -1,0 +1,193 @@
+---
+layout: post
+title:  "MIT Mystery Hunt 2026"
+date:   2026-01-21 00:32:00 -0800
+---
+
+*This has spoilers for MIT Mystery Hunt 2026. Spoilers are not labeled or hidden.*
+
+Mystery Hunt is a funny time of year. You explain to your friends why you're
+traveling to Boston in the winter. You try to convey the scale of the event
+you're attending, while knowing your friends don't quite understand. And although
+it ostensibly takes place over one weekend, the prep work and wind-down makes it
+really last for two weeks.
+
+As part of that wind-down, I've realized I need to write this post quickly, otherwise
+I'm not going to get any work done this week.
+
+# Pre-Hunt
+
+The time running up to Hunt was more stressful than usual...very briefly, I typically
+hunt with teammate. This year, some people on teammate were interested in splitting
+into a new team. This got messy, but I share the opinion that a split was never
+going to be clean. I joined the split, and here we are.
+
+The new team, christened Level 1 Spicy, was 33 people,
+so I had little expectation of finishing Hunt. However, I did think it was
+*possible*, since I knew how strong some of those people were. Teams like Unicode
+Equivalence have finished Hunt before, and combined with rumors that Cardinality
+was targeting a shorter hunt, I thought we had a shot.
+
+This was somewhat tempered once we got into Hunt proper, and started hitting
+hard puzzle walls. It certaintly wasn't the hardest Hunt I've done, but things
+got pretty crazy (in a good way). When Cardinality stopped by our HQ Saturday afternoon saying
+we had a shot at finishing, I did not believe them, and my hopes continued dropping
+when the Coin hadn't been found by Sunday noon. In the end, we got there, thanks
+to aggressive endgame hinting (which I'll discuss later).
+
+Why Level 1 Spicy?
+
+Uhhhhhhhhhhhhhh
+
+Okay, so, first there was a team name proposing process, run with approval voting,
+followed by a final poll that completely failed to generate consensus. The entries
+with most support also had a few very strong haters, which seemed bad for something
+trying to unify the team. That poll was declared invalid, and then little progress
+happened for 6 weeks.
+
+Seeing this, I self-appointed myself as voting commissioner, for the sake of
+picking *something* as a team name. No one should have let me
+do this, because it eventually led to a pretty overcooked 3 stage voting process.
+First there was an approval voting stage, with unilateral vetos, followed by
+an instant runoff vote which selected Level X Spicy by literally 1 vote, followed by one last approval
+vote to decide X = 1.
+
+I wrote a two page document analyzing why the properties of this voting system
+were reasonable, and no, none of you get to read it. We locked in the team name
+the weekend before Hunt.
+
+The other important part of pre-Hunt this year was sushi. You see, there's this
+restaurant chain called Kura Revolving Sushi, that does collabs, and, they're running
+one with Kirby.
+
+KIRBY IMAGE
+
+The blanket collab started the Wednesday before Hunt, so me and a few people
+from original teammate did a Kura sushi run, counting exactly how many plates we
+needed to eat to get to 3 blankets worth of spend. While there, it was clear that
+literally every party was there for the Kirby blanket, so the promotion definitely worked.
+I saw the group across from us had brought a Rainbow Dash plushie. I considered
+complimenting them on it, but unfortunately I am not socially brave enough to
+walk up to a stranger at a revolving sushi bar restaurant. Alas, so it goes.
+After stuffing myself like Kirby, I was rewarded appropriately.
+
+BLANKET IMAGE
+
+After dinner, I was asked if we were doing [Mystery Hunt Bingo](https://www.alexirpan.com/mystery-hunt-bingo/)
+this year. I didn't see any reason not to, so I pushed some edits to the phrase list
+to swap D&M entries for Cardinality entries. Along the way, I noticed someone
+had filed a [pull request](https://github.com/alexirpan/mystery-hunt-bingo/pull/1)
+to add "Puzzle about 6 7" to the phrase list. I, a man of the people, obviously
+accepted the PR.
+
+Having decided on a team name of Level 1 Spicy, a bunch of us went to [Level99](https://www.level99.com/)
+the Thursday before Hunt.
+We also met up with [Level 51](https://levelfiftyone.wordpress.com/) after coming back,
+so really we spanned the entire range of levels there. I'm glad we finished
+some of the new rooms at Level99, even if I am now 0 for 15 at getting a clear of
+Magician's Assistant. I also did one of the Boxaroo live events with some other
+people on the team, definitely fun even if we rushed through it pretty fast.
+For dinner, we went to Yume Wo Katare, where the cook was offering a Carolina
+Reaper challenge to the front row. Finish one Carolina Reaper over the course of dinner,
+and your next 5 bowls of Ramen would be free. We did not take this challenge,
+but one guest did. Little did we know this would not be our last encounter with
+very hot peppers this weekend.
+
+
+# Friday
+
+I started my Friday by getting breakfast at Verveine, but this was breakfast at 8am,
+so it was long before any crowds come in. On the walk over, Ivan asked me if I
+had a spare server to host a meme. I did not, but he eventually found one
+to deploy [levelxspicy.cooking](levelxspicy.cooking). This site was connected to
+a Discord bot in our server, where anyone could `/cook` or `/uncook`
+to update how much the team was cooking or getting cooked.
+
+We got to 10-250 early to make sure we got seats, but someone from Cardinality said a
+seminar (?) was going on, and we wouldn't be allowed in until close to Hunt start.
+Only as I write this do I realized that maybe this was an in-universe seminar
+for the CRYPTIC conference. I did do the pre-Hunt, but it was so long ago that
+I'd completely forgotten the theme.
+
+I had high hopes for Cardinality's Mystery Hunt, because I know I'm in the same
+generation of Internet culture, and I was not disappointed by the PuzzMon. It
+was interesting to hunt on a team that fit in a single classroom, rather than
+shuffling people between two rooms like we did before. It certainly made
+coordination easier.
+
+Several of us were curious what Cardinality meant by team coordination over limited
+resources being important (the leading team meme was that we'd be playing Farmville).
+This year, Hunt used a Research Points (RP) system. Small scavenger hunt style
+tasks would give RP, which could be spent to unlock puzzles or rounds. In the early round (the Kingdom), RP was the only way to unlock puzzles, with a hard cap on the number
+of open puzzles at once. Later, we would unlock Dimensions rounds, which had
+more typical Hunt unlocks where new puzzles were driven by round progression.
+
+The RP system was pretty complex, but I think all the pieces worked. I liked the
+way it distributed scavenger hunt tasks over the entire weekend, rather than one
+big concentrated chore.
+The way it was phrased made it feel like we needed to be really aggressive
+on earning RP, and we didn't realize how generous the RP was until midway through Friday,
+when we saw we had way more RP than we'd need given the pace of Hunt unlocks. Still,
+it's better for teams to be too rich rather than too poor.
+
+I could see the RP system being especially good at giving newer solvers a thing
+to do if they were intimidated by the puzzles, but for our team in particular,
+it was very hard to justify sending a marginal person off on a long Research Task,
+so we gradually shifted to only doing the tasks that seemed super fast and ignored
+the rest. I think this is the same as a typical Scavenger hunt, where you aren't
+going to do every entry in the list, but it felt different when the tasks
+were dripfed one at a time, rather than given all at once.
+
+Speaking of Research Tasks, there was also MonQuest, an interactive overworld
+where you could find PuzzMon and solve small puzzles for RP. I tried doing this
+for a bit, before realizing I was only discovering things that someone had already
+discovered. I ended up doing zero MonQuest after the opening round, but I did
+work on...
+
+[**Feather Forecast:**](https://puzzmon.world/research_tasks/feather_forecast)
+A puzzle that worked the way we thought it would, although I submitted RETURN
+first despite that being impossible. In my defense, I had Pokemon on my mind,
+and Return is a good attacking move.
+
+[**Mountain Cave:**](https://puzzmon.world/research_tasks/mountain_cave)
+I found where this was, transcribed the data, and then must have inputted it
+wrong. It got solved by others later.
+
+That would be the last time I opened MonQuest for the rest of Hunt.
+
+[**Jumping to Conclusions:**](https://puzzmon.world/puzzles/jumping_to_conclusions)
+Man, I solved so few puzzles in Kingdom this Hunt. After Land of No Name unlocked,
+I got sucked into Dimensions nonsense and barely left...Anyways, this puzzle was
+a bunch of fun. I'm a big fan of trying to cheese puzzles and I think the
+"intended" solve path of each is signposted well enough if you've done enough
+prior puzzles. I wrote a script to bash Skyscrapers, then worked on a script to bash
+the final extraction. Scanning the output, I saw OMI???D in the output, and
+suggested a thematic answer that could be correct. I explained that I wasn't
+sure we should submit it, given this letter pattern was one of hundreds of
+possibilities, and then someone else submitted it and solved the puzzle.
+
+[**Somebody:**](https://puzzmon.world/puzzles/somebody)
+Our solve of this was pretty smooth once we found the right site to look up
+historical playlists. Got most of the songs, figured out the a-ha via searching
+a bunch at once, then finally realized why somebody told us these things.
+
+[**Bringing Up Baby Shark (Capstone):**](https://puzzmon.world/puzzles/bringing_up_baby_shark)
+To be honest, I did not notice the descriptions were labeled "Herring description"
+rather than "Red herring description". The text was just clearly puzzly enough
+for it to override my "is this a red herring" detectors.
+
+There's no better place to discuss it, so 
+
+[**🍓🏔️🎮:**](https://puzzmon.world/puzzles/2871)
+Solving Baby Shark unlocked Land of No Name, and that was the last time I did
+anything meaningful in Kingdom. The Land of No Name was a gimmicked round of
+26 puzzles. Each puzzle started with all letters redacted, and solving a puzzle
+would un-redact a specific letter across the entire round. After you solved 2-3
+of them, you could be confident about what letter each puzzle would unlock,
+which turned the solve process into one big prioritization game of deciding when
+you had enough info to solve a puzzle, and which puzzles would give the most
+useful letters.
+
+If it wasn't clear, this round was super cool, and by the time we finished it
+there were other Dimensions round nonsense going on, so I ended up losing track
+of Kingdom rounds and never really caught back up.
