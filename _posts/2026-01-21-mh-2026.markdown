@@ -91,7 +91,7 @@ For dinner, we went to Yume Wo Katare, where the cook was offering a Carolina
 Reaper challenge to the front row. Finish one Carolina Reaper over the course of dinner,
 and your next 5 bowls of Ramen would be free. We did not take this challenge,
 but one guest did. Little did we know this would not be our last encounter with
-very hot peppers this weekend.
+hot peppers this weekend.
 
 
 # Friday
@@ -176,9 +176,21 @@ To be honest, I did not notice the descriptions were labeled "Herring descriptio
 rather than "Red herring description". The text was just clearly puzzly enough
 for it to override my "is this a red herring" detectors.
 
-There's no better place to discuss it, so 
+The way capstones in this round worked was that every puzzle solve unlocked
+information about PuzzMon in your PokeDex (sorry, MonArch), and each capstone could
+be solved independent of puzzle answers. All answers in Kingdom then went into
+one big meta matching pool at the end. I thought this was pretty clever.
+This structure let Cardinality order all Kingdom puzzles arbitrarily, without
+needing to worry about grouping unlocks of a single meta together. Typically,
+the downside of meta matching structure is that you don't get to solve a meta
+until after you solve enough feeders to match things together, but the
+capstones act as a milestone of progress before you hit that point.
 
-[**🍓🏔️🎮:**](https://puzzmon.world/puzzles/2871)
+I do think this had downsides later though, where we put less priority on capstones
+as we unlocked more Dimensions and Artifacts. We understood that capstones
+needed to be solved, but didn't *understand* the level of importance they had
+on unlock structure.
+
 Solving Baby Shark unlocked Land of No Name, and that was the last time I did
 anything meaningful in Kingdom. The Land of No Name was a gimmicked round of
 26 puzzles. Each puzzle started with all letters redacted, and solving a puzzle
@@ -191,3 +203,217 @@ useful letters.
 If it wasn't clear, this round was super cool, and by the time we finished it
 there were other Dimensions round nonsense going on, so I ended up losing track
 of Kingdom rounds and never really caught back up.
+
+[**🍓🏔️🎮:**](https://puzzmon.world/puzzles/2871)
+I have around 200 hours across Celeste and the Strawberry Jam mod. Of course
+I was doing the Celeste puzzle.
+No idea how accessible it was for people who didn't play Celeste, but I appreciated
+the deep cuts on Celeste lore. I was especially proud of casually breaking in on
+the 👩🏻‍🦰💀section, although I was more impressed with teammates that broke
+in on the meaning of #1👣[3] and why #9§⊃(🚦■'🌈=💙🌈) needed to be clarified.
+
+Our final Land of No Name solve order was ZMJQAOFNIXUHYSCKWDVRBTELPGmeta, and
+funnily enough the Z solve was actually useful to our M solve, by giving us
+?-Z↑ which let us guess it'd turn into A-Z↑. It's not every day where getting 1
+of 2 letters in a puzzle speeds up a solve.
+
+[**🍳 Emoji Kitchen:**](https://puzzmon.world/puzzles/1906)
+After finishing Celeste, our group rotated to other puzzles in the round, to
+see what was tractable. Emoji Kitchen had 3/5 nonograms done, so we started
+looking at extraction while the last 2 nonograms got finished. We didn't really
+know what to do with the base emojis, but eventually went with the time-honored
+strategy of "just color everything relevant and trust it'll work out". And it
+did! Always nice when that happens. I'm certainly glad we didn't need to decompose the entire grid.
+
+[**Nine Lives (Capstone):**](https://puzzmon.world/puzzles/nine_lives)
+I am still upset I didn't get the Aladdin character, but not as upset as the people
+who figured out who the rest of the "blue people" were.
+
+[**Game, ???, Match:**](https://puzzmon.world/puzzles/8402)
+The people working on this had IDed most games, and just needed help finding sets.
+I helped find a few, enough to parse out the cluephrase. Seeing the conditions of "trains, uses dice, 8 letters", I suggested Monopoly. This was shot down for not being sufficiently about trains, but the
+Monopoly believers pointed out a valid answer for the rest of the cluephrase. It
+wasn't like we had another game in mind
+anyways, so we submitted it and it was right.
+
+[**Almost:**](https://puzzmon.world/puzzles/6714)
+I broke in on THE QUICK BROWN ... off the enum + the 3 letters we had, and then it
+was mostly a struggle to the finish.
+I liked that the pangrams were based on
+real ones, but slightly altered to still require some reasoning about letters.
+Still have no idea what possessed someone to write a Genshin clue.
+
+Continuing the theme of the previous puzzle, I solved the second
+clue to B, this got shot down for giving a bad cluephrase start, UBE\*. I didn't
+disagree, but was really confident B was the only good extract. We
+resolved it by splitting into "find a way to continue UBE\*" vs "find a better
+answer to the 2nd clue". I won >:)
+
+[**Stray Child:**](https://puzzmon.world/puzzles/stray_child)
+This was a starting puzzle in the Hyperbolic Space round, and it completely wrecked us.
+Over Hunt, we noticed the general unlock format was to start each Dimensions
+round with difficult puzzles, and ease up difficulty towards the end. I think
+there are merits to this. Dimensions rounds come with a puzzle width increase,
+and starting with harder puzzles can help temper this. Putting the hard puzzles
+at the end means they mostly get skipped. If you want the Hunt winner to be decided
+by how teams perform on the hardest content, then it's fine to frontload hard
+feeders with medium difficulty metapuzzles, and force teams to engage with the
+hard feeders, rather than using very hard metas like 2025 did.
+
+I'd say both difficulty orderings are reasonable, but the effect on our team was
+to get stuck on all starting Hyperbolic puzzles and become deathly afraid of
+our Hunt progress through the rest of the Dimensions rounds. Between Land of
+No Name and Hyperbolic Space, we started running the Kingdom with only 5-6 PuzzMon
+unlocked, because we just did not have the manpower to run Kingdom at 8 PuzzMon,
+and wanted to leave some easier Kingdom puzzles available through Sunday.
+
+Stray Child! I clocked the puzzle as being about ~~weeb~~ Japanese culture pretty
+quickly, and worked on the initial grid fill with others. The part we got stuck
+at was resolving the weird, puzzly parts of the grid fill. I think we were circling
+the correct idea for a long time, but gave up before ever fixing the grid fill
+and eventually backsolved it.
+
+[**Pursuit of Liberty:**](https://puzzmon.world/puzzles/pursuit_of_liberty)
+I proposed a puzzle that would have worked exactly like
+this one in 2023. Same extraction and everything. I didn't go forward with it
+because I don't actually play Go, I just know the rules. During Hunt I looked at
+it briefly, failed to solve a Go problem, and ignored it until it got backsolved,
+so it's really for the best I didn't write this.
+
+[**Nominative Determinism:**](https://puzzmon.world/puzzles/nominative_determinism)
+I didn't solve this during Hunt, I just think everyone should try the quiz. We
+postsolved it with a council of four and it was magical to get a perfect score
+on our first try.
+
+[**Odd One Out:**](https://puzzmon.world/puzzles/2843)
+I can only describe this puzzle as a complete shitpost in the best way, and
+am proud to announce I found 1/3 of the extract letters.
+
+[**Imaginary Factorizations:**](https://puzzmon.world/puzzles/8063)
+We did the first step of the puzzle, got completely hardstuck on noticing the
+$$\lfloor b/100 \rfloor$$ step, and eventually backsolved the puzzle.
+
+Before Hunt, there was some speculation about how much people would try using
+AI to solve the puzzles. We did not use LLMs outside of trying them if dumping
+things into Google failed to find anything, but, they *do* sometimes work if you
+know what you're doing. On Manifold, people tried a few text-only puzzles after
+the fact, and GPT 5.2 Pro managed to zero-shot both this puzzle
+(https://chatgpt.com/share/696aebb1-2a48-8000-a2e0-3575d9998bc8)
+and Six Shifts given 5 letters (https://chatgpt.com/share/696afc2f-d1f4-8000-b520-3e2195ea032c).
+Sure, it took 41 minutes and 16 minutes respectively, and probably cost ~$30
+in API credits for just those questions, but it *worked* and could have given us
+a solve if we were more LLM inclined.
+
+[**Puzzmon: The Card Game:**](https://puzzmon.world/puzzles/puzzmon_the_card_game)
+Our team has a few card game sickos and I am one of them. Viewing it just as a game,
+all of us agreed it seemed super snowbally. We did not try playing the game for real,
+but our read of the rules is that the winner is really advantaged the next round
+since you get to keep your Puzzmons and Stat-Ups, while your opponent has to lose one.
+Maybe in practice, the effects of the Commanders are swingy enough to overcome
+the snowball.
+
+As a puzzle, I primarily did quote look-up, then rule look-up. We got around 75% of the way through
+without knowing how to extract, which made it hard to decide what to record
+each round. After about an hour, I finally noticed first letters, and this
+caused us to ragequit the puzzle until Saturday morning. In retrospect, I should
+have pushed harder for just doing the extraction, but I too was getting baited
+by puzzles like...
+
+[**Triple Threat:**](https://puzzmon.world/puzzles/8904)
+I had identified some of the horse Triple Crowns from 3-4 letters earlier (I know that dataset
+way too well). By time we'd come back from the card game, there were enough letters
+to get all the baseball Triple Crowns. As intended, I noticed the hyphen could
+be a minus sign, added a column for the extract, and read out "INKIGAYO". This
+near-instantly triggered a lecture from the K-pop fans on our team on what it
+was and what to do. I was so thankful the Wikipedia entries for this show were
+so organized, and we finished the puzzle pretty quickly with one last request
+for Korean readers to look at our grid.
+
+Said K-pop fans pointed out that this was the 3rd Mystery Hunt puzzle which
+extracted by drawing Hangul
+to clue a word related to rain, after [Fountain](https://puzzles.mit.edu/2023/puzzlefactory.place/puzzles/fountain)
+from MITMH 2023 and [Fountain Show](https://puzzles.mit.edu/2020/puzzle/fountain_show/)
+from MITMH 2020. Keep an eye out for 2029, K-pop fans.
+
+[**Mass Confusion:**](https://puzzmon.world/puzzles/5823)
+Opened the puzzle, identified MEYER, added a column for MAYOR before we'd broken
+in on the a-ha, left the puzzle immediately after, but all my contributions
+were still in the sheet at time of solve. I'm helping!
+
+Around this time, we came up to the Saturday 1 AM boundary, and started heading
+to hotels. This year, most of Level 1 Spicy was at the Marriott rather than Le
+Meridien, but a few people were around to gather in my hotel room, as I planned
+to stay up for at least another hour. Or two, or three...
+
+[**Skilldrasil:**](https://puzzmon.world/puzzles/6592)
+I had solo-started this puzzle before leaving our classroom, identifying
+6/8 skills and expressed that the puzzle was basically solved. I then got
+completely stuck, roped someone else into checking my data, and got them completely stuck too.
+I'm not sure why I didn't search all the colored skills together, put them all into a cleaner list, or search the puzzle title once we'd parsed it. Somehow I thought they had been fully used, and were
+picked to be easy to identify from partial info, rather than carrying more extraction information within them.
+Eventually fresh eyes solved it on Saturday afternoon.
+
+[**Word Compression:**](https://puzzmon.world/puzzles/word_compression)
+The overnight guidance from our Hunt ops team was to either work on Hyperbolic
+Space puzzles, or spend unlocks in Eland Islands, the newly opened Kingdom region.
+People tried to get me to solve [Multidimensional Crossword](https://puzzmon.world/puzzles/multidimensional_crossword), but I was like, "that's bait at 1 AM, I need a win after failing to
+do Skilldrasil, I'm doing Kingdom puzzles".
+I opened Word Compression instead, and pair-solved it in 12 minutes. IDK, it just
+worked.
+
+[**The Quaking Earth:**](https://puzzmon.world/puzzles/the_quaking_earth)
+We next opened The Quaking Earth, which looked like a standard Mangled Clues
+puzzle. Some people from the Marriott joined our VC, saying they were here to
+turn our 1 hour solve into a 15 minute solve. Our combined group then took just
+over an hour to finish, so certainly an optimistic take. After solve, it was
+late enough for me to kick people out of my room, and try to get some sleep.
+
+[**Keep Going:**](https://puzzmon.world/puzzles/keep_going)
+
+> okay the ansewr [sic] is stop and I just guessed it - jerry
+>
+> wut
+>
+> insane
+>
+> AHAHAHAHAA
+>
+> god tier
+>
+> I just wanted to stop and I guess it worked...
+>
+> loading puzzle all over again
+
+# Saturday
+
+This year, I resolved to get a reasonable amount of sleep, which meant 5-6
+hours and waking up to groggily look at [**Hidden Numbers**](https://puzzmon.world/puzzles/hidden_numbers), which really did not need my help. Having solved this, I filled out my
+lunch order from the hotel room before I forgot, then walked to our room.
+
+[**Devilish Devilries:**](https://puzzmon.world/puzzles/devilish_devilries)
+This was the perfect puzzle to solve just after waking up, because it involved
+shouting sus phrases across the room and getting people to wonder just what kind
+of puzzle we were working on. The innocent person who asked what some of the phrases
+meant will be kept anonymous for their protection.
+
+[**MIT Dropquotes:**](https://puzzmon.world/puzzles/3175)
+We were close to the end of the Alphabet round now, and focusing on unlocking
+the meta. By this point of the round, we'd solved enough puzzles to make the
+unknown letters pretty constrained, and solvable in the standard nutrimatic way.
+Well, as long as there wasn't user error...
+
+> why did I just type my nutrimatic query into WolframAlpha
+
+IMAGE
+
+[**The Alphabet (meta):**](https://puzzmon.world/puzzles/7182)
+Dropquotes gave us enough letters to look at the meta, which immediately looked
+programming-y. The usual suspects took a look. Parsing the flavor text as
+"Rewrite L-system to depth five", our theory was that we would need to take the
+string LSYSTEM, rewrite it with our letter -> word mapping, and the given
+numbers were a checksum on where letters A to Z existed in the expanded version
+of LSYSTEM, to give a way to solve the puzzle from partial info.
+
+Only parts of that were how the puzzle really worked. From what I heard,
+this meta solved much harder than it did in testing, and almost every team
+outside the top few were given a hint by Cardinality to get through it. 
