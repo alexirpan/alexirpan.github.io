@@ -406,14 +406,441 @@ Well, as long as there wasn't user error...
 
 IMAGE
 
-[**The Alphabet (meta):**](https://puzzmon.world/puzzles/7182)
+[**The Alphabet (meta), part 1:**](https://puzzmon.world/puzzles/7182)
 Dropquotes gave us enough letters to look at the meta, which immediately looked
 programming-y. The usual suspects took a look. Parsing the flavor text as
 "Rewrite L-system to depth five", our theory was that we would need to take the
 string LSYSTEM, rewrite it with our letter -> word mapping, and the given
 numbers were a checksum on where letters A to Z existed in the expanded version
-of LSYSTEM, to give a way to solve the puzzle from partial info.
+of LSYSTEM, to give a way to solve the puzzle from partial info. Given how
+many letters we were missing, we all concluded we needed to solve more feeders
+to make the meta tractable, and decamped for that.
 
-Only parts of that were how the puzzle really worked. From what I heard,
-this meta solved much harder than it did in testing, and almost every team
-outside the top few were given a hint by Cardinality to get through it. 
+[**Da' Bomb:**](https://puzzmon.world/puzzles/da_bomb)
+🌶️ PEPPER ALERT 🌶️ PEPPER ALERT 🌶️ PEPPER ALERT 🌶️
+It was mandatory for our team to work on this puzzle. I did ID of the guests
+being interviewed and words bleeped out. Our first instinct was the ID the
+hot sauce used in the part of the episode the clip was from. This wasn't
+super defined for some clips that came from the introduction, but we rounded
+it to using the first hot sauce.
+
+We had the right broad idea of "identify the ingredients in each hot sauce",
+but the first group failed to realize we should actually try and ID the hot
+sauces we were given. I tried the chili oil ("yep, that's chili oil"), then
+the one labeled 10 ("yep, that spice is still going"). I realized that I was
+no help on actually solving the puzzle, and was just tasting hot sauce for
+the fun of it, so I worked on something else. I never ended up tasting Da' Bomb
+and regret it (we threw out the samples overnight after finishing the puzzle).
+
+There are scientific studies showing that [people would rather electrically
+shock themselves than sit in a room doing nothing](https://www.science.org/content/article/people-would-rather-be-electrically-shocked-left-alone-their-thoughts), and I
+thought this puzzle was made for those people.
+
+[**Atlas of Mosaics:**](https://puzzmon.world/rounds/atlas_of_mosaics)
+This round was so hype and also so insane from a tech perspective. I don't want
+to think about how long it took to set this up. This unlocked while we were
+stuck on Alphabet meta, and as much as I tried to keep thinking about alphabets,
+I decided it'd be better to take a break on a collaborative crossword instead.
+
+Within Crossing the Unknown, I worked on the first Orientation grid, then Valuation,
+Interpretation, and Integration. Still can't believe that clue solved to HIGH
+CARDINALITY. And then within Interpretation, I was pretty happy with figuring out
+the 🤖🚕 and 🪶🖊️ parts of the grid.
+
+Once solved, I did the starting jigsaws for Case of the Superhero Dinner Party,
+and the initial placement of Pokemon tiles in Inconsequential Chase, before
+moving back to Alphabet. I regret spoiling myself on Dinner Party, it looks
+fun to forward solve.
+
+[**The Alphabet (meta), part 2:**](https://puzzmon.world/puzzles/7182)
+We now had 24/26 letters, thanks to a solve of the E puzzle. (I brought
+a copy of Bananagrams to Hunt in case we ended up playing board games. We didn't
+but I'm glad it came in clutch.) By this point, we'd noticed the first and last
+letter constraints, and Brian wrote some Sheets formula magic to derive backsolve
+constraints for our missing feeders, assuming the LSYSTEM expansion idea. Meanwhile,
+a few of us were implementing the expansion in code to support turtle movements
+later.
+
+Brian successfully got a backsolve out of his sheets, and at this point I should
+clarify that our idea for how the given numbers worked was *completely fake*.
+The numbers were not indices in one long string, they were lengths of single letters
+when expanded out. So somehow, we just got super lucky on whatever constraints
+the sheet was giving. By now we had 25/26 letters, so the last one fell to a
+bruteforced dictionary search.
+
+Each number now mapped to a single letter. If we treated the first number as A,
+and the last number as Z, this gave a substitution cipher that we could apply.
+Or alternatively, we could treat it as a cycle. The given letter order started
+WFETUR, and if you follow the chain of edges formed by A->W, B->F, C->E, ...,
+it gives a full cycle. This is a 1/26 probability for a random permutation,
+which made it seem important.
+
+Neither of this is how the puzzle works. We continued to flail, and ended up
+dispersing for other work.
+
+
+[**Fate's Thread Casino:**](https://puzzmon.world/rounds/fates_thread_casino)
+I don't play gacha games. However, I have played my share of games that use
+gacha tactics of daily quests, random drops with pity systems, etc. Maybe this
+makes me a gacha player in spirit, but I would argue that I am not a gacha player
+by choice. Rather, the effectiveness of gacha mechanics has creeped into video
+game design as a whole.
+Although we can carve out our own regions of sanity, at some time we must all
+become gacha players.
+
+Sorry, what was I talking about? Right, puzzles. The structure of the unlocks
+was pretty cool - all puzzles had unlocks from one shared pool of chips. Solving
+quests would give you chips to spend pulling individual clues for the banner of
+your choice. Quests acted like knowledge checks or hints for the meaning of clues,
+rewarding you with more chips for pulls. It was possible to pull clues you've
+already seen, which added an element of randomness to what to pull.
+
+Although we (correctly) suspected the unlocks were fully rigged,
+this did not stop us from coping about which banners to pull to open up quests.
+At one point, the people working on one banner had the pulls from their quests
+siphoned to another banner, and demanded getting paid back with interest. All
+very funny. The puzzles in this round were all really big (30+ clues for each one),
+but since the clues were drip-fed one at a time, it made it feel more manageable
+than one big puzzle page would be.
+
+My introduction to the round was solving cryptics for [As the Fly Crows](https://puzzmon.world/puzzles/as_the_fly_crows). I contributed to the gimmick a-ha, although we
+incorrectly assumed the cryptics for the other puzzle were fully ungimmicked.
+I don't consider myself the biggest cryptic fan, so I left the bulk of those
+puzzles for others.
+
+
+[**Atlas of Mosaics, part 2:**]
+Looking back at the Atlas, I saw that Inconsequential Chase had gotten stuck
+on Years. Every tile was placed, but the grid wasn't solving, so some of 45
+hexagons were in the wrong spot. People understandably did not want to fact check
+this, and were trying to solve around it by going the other way. I briefly
+tried to find the problem, failed, and looked at The Tortured Programmers
+Department instead.
+
+By this time, all the programming people had abandoned Alphabet, so we were
+free to take a look at this puzzle. We quickly clocked it as some variant
+of Befunge that worked on hex grids. I found the documentation for Hexagony,
+and then played the moral support side of pair programming, saying
+"that looks good" or "that looks bad" to those actually working on the
+control flow. I appreciated that you could really handwave (vibe-hex?)
+your way around the exact program structure, by placing the high-level
+mirrors and then shuffling the last few pieces until it solved.
+
+Cardinality came to visit our HQ shortly after we'd solved MEAN and
+MIRRORBALL. This was Saturday evening, and they said we were potentially on
+track to finish and could give hints on majorly stuck puzzles to help us get
+there.
+
+[**The Alphabet (meta), part 3:**]
+We gave Cardinality our information so far, and they said all the substitution
+cipher and cycle stuff should be ignored. Instead, we should treat it as just
+an ordering of the letters, and they suggested we look at both the turtle path
+and grid at once. This pushed us enough to finish the meta.
+
+I talked about it with people after the Hunt, and I think the main issue is
+a big lack of checks after you get the original letter ordering. On top of the
+cycle things we were stuck on, we had ambiguities on:
+
+* Whether to follow the WFETUR... directions one after the other, or reset
+after each letter.
+* Multiple ideas based on extracting when the turtle wandered in the region
+each letter labeled, rather than the intended mechanic.
+* In our long string, whether to treat a single letter as a direction, or
+convert an entire word like FIREBRAND into one FD command (effectively an
+off-by-one on how to convert the depth 5 string into directions.
+* Similarly, whether to treat FIREBRAND as one FD, or nine FD (to match length),
+or seven FD (to match length of things within the FD.
+
+I don't think all of those ideas were justified, but they were plausible enough
+for us to try implementing. The compounding nature of the 50-50 interpretations
+made it hard to conclude a given solve path wouldn't work.
+We had independently tried visualizing the turtle paths without the grid,
+and checked if the translation offsets of single letters matched offsets between
+letters in the grid, but we had never tried visualizing the turtle paths on top
+of the grid until hinted that way.
+
+[**Atlas of Mosaics, part 3:**]
+We finished up the rest of Tortured Programmer's Department without too much
+issue, with me doing the song ID + word transform side, getting all the data
+just in time to plug into the programming output that had been done in parallel.
+This opened up a bunch of logic puzzles for the logic puzzle fans, and I moved
+to working on Casino clues instead.
+
+During that, we crossed the Sunday 1 AM boundary. This time there'd be no late
+night solving party from my room, which I was secretly thankful for, as I was
+aiming to sleep earlier that night, after a bit more Casino grinding.
+
+[**Plots / Graphs:**]
+I really like Plots and Graphs in theory. In practice, we made some progress but
+didn't get to the finish due to how many images there were, and the minimal
+footholds on searching images if you did not catch the reference. This is a kind
+of fake criticism though - the point of the puzzle is how abstractly it clues
+its ideas, and you can't really design around it.
+
+I was pretty happy at breaking in on the nested stories and alternate timeline
+formats. As for US presidents, I have to admit we were AI assisted here. I tried
+to search the answer to Quest 14, failed to get anywhere, and tried tossing it
+into Gemini 3 out of exasperation.
+
+IMAGE HERE
+
+To my surprise, it solved it and that let us break in on two other quests. I
+identified a few more Graphs, then idly poked at our Casino answers so far and
+noticed the interleaving property that was meta relevant. I shared it in the
+chat in hopes it would enable backsolves, but my understanding is that the
+constraints were pretty weak.
+
+While I was bumbling around Atlas and the Casino, the rest of the team had
+finished all the Kingdom capstones and unlocked Connect the Clans at 2 AM.
+That would be a tomorrow morning problem.
+
+
+# Sunday
+
+When I woke up, the coin hadn't been found yet. This was concerning for us:
+based on our estimation of team strength, it seemed unlikely for us to finish
+if the coin hadn't been found by Sunday morning.
+
+I was recruited to take a look at [Meme Scenes](https://puzzmon.world/puzzles/meme_scenes), which had the most ID work and was stuck on extraction.
+My first instinct for how to solve the puzzle was identical to what was in
+our sheet. Without other ideas, we decided to send in a hint request, and were
+told we had the right idea, we just needed to clean up our data.
+
+Our guess was that we'd open the Casino meta at 7/10 solves, so we needed to
+pick which of meme art, cultured art, or graphs to work on. Both Meme Scenes
+and Common Scenes had all the a-has and needed grinding, while Graphs was making
+more progress but had an unknown number of a-has ahead. Based on that, and
+assurance that Common Scenes was going to solve soon, we abandoned the rest
+to focus on other parts of Hunt progression.
+
+That ended up being Atlas for me, and Connect the Clans for others. There was
+some Penny Park related trauma to Connect the Clans...in 2020, teammate infamously
+got stuck on the Penny Park pennies for 6 hours, and the tokens just looked
+too much like the pennies. We broke in on the mechanics, and did everything
+correct, except for rotating the tokens such that the arrow pointed to the
+next seat rather than pointing due north. So that puzzle also got stuck
+until we got rescued by a hint.
+
+Hunt ops speculated that we were no longer going to get any new Dimensions
+rounds. I still think this argument was cope. It wasn't invalid reasoning, but
+it was a lot more complicated than "we are missing 2 whole rounds because
+top teams are much further ahead of us."
+
+IMAGE
+
+In defense of Hunt ops, it was really not clear to us that Connect the Clans
+in Kingdom could be acting as a bottleneck on Dimensions round unlocks. There
+is a difference between noting that Dimensions often unlocked after capstones
+were solved, and fully believing in this enough to roll out the implications
+on Hunt strategy while all sorts of other puzzles are flying. This does seem to
+be a common theme in comments I've been reading: there was good signposting of
+parts of the unlock logic, but unlocks as a whole were a bit opaque, just
+due to the complexity of the systems.
+
+
+[**Terminus (part 1):**](https://puzzmon.world/rounds/terminus)
+My experience with this round was incredibly bizarre. I opened the round,
+tried guessing a number of things, and immediately understood it would be
+top priority to understand the Terminus black box enough to do the latter
+half of the round. So, a small crew including me worked solely on exploring the
+black box, while the minipuzzles were getting unlocked and solved under us.
+Poking the universe box was a full-time job, so I went from round start to
+Terminus metameta unlock knowing almost nothing about the puzzles we
+was unlocking. We were just telling people to go work on metas we'd opened
+and moving to the next unlock.
+
+We broke in on the formats for Dichotomies and Layers first, with a clutch a-ha
+of "what if it's this poem" very early on. (I tried to one-shot it with I HAVE
+EATEN THE PLUMS IN THE ICEBOX, don't ask me why.)
+The travel log was very helpful, with a lot of tiny features that matched what
+we needed at different stages of solving. In case it wasn't clear, I found the
+tech and hunt site UX impressive throughout the Hunt.
+
+The first "full star" we opened was Dichotomies, followed by Crossword (this was shortly after
+understanding what conversion meant, with those two being the easiest ones to
+directly query). I think everything was signposted well enough, but still have
+a complaint about Layers unlock. We understood the logic that single puzzles
+were unlocked based on the number of matching words, but weren't sure how to
+turn that into a meta unlock. Three people independently tried the intended
+solution, not gotten it to work, and moved on. Eventually we gave up, sent a
+hint, and were effectively told to try again. It turned out we'd all failed to
+strip punctuation properly, with my attempt changing THERE'S to THERE S instead
+of THERES. And like...man. I think the intended solution is already
+not a great fit for the mechanic (given that it's technically a special case
+of the 6+ category), but fair is fair, we all decided to try it so it was
+definitely fine. The checking just needed to be more lenient.
+
+While we were puzzling over Psychology options, Providence found the Coin, and
+we unlocked our last Dimensions round, The Glitch. I had a brief moment of fear
+that we'd need to redo the entire Kingdom, before reading the map more closely
+and seeing it'd "just" be 9 puzzles.
+
+Cardinality contacted our HQ to let us know hints would be more available if we
+wanted them. This prompted an impromptu team vote, on whether to try to rush
+for a Sunday 8 PM finish to guarantee a runaround slot, or take it more chill.
+Hunt ops estimates were that we'd finish on Monday and miss runaround if we
+took it chill, and maybe make 8 PM if we rushed. Somehow all vote decisions
+on Level 1 Spicy end up close to 50-50, but rushing won out. We started hinting
+very aggressively from then on.
+
+[**Psychology:**](https://puzzmon.world/puzzles/psychology)
+This is the one part of Terminus I saw during Hunt. I don't know how, but
+Terminus meta crew decided it'd be faster to reconstruct the minipuzzles
+from sheets rather than ask the people who worked on them. More surprisingly,
+this was correct.
+
+[**Mixed Media:**](https://puzzmon.world/puzzles/mixed_media)
+We made partial progress in our first hour on the puzzle, but didn't get anything
+solid. A hint led us to our first ??? entry, and we finished with no hints
+from there. We proooooobably would have gotten there hintless, but I think it
+would have only happened after 2 extra hours of staring. I still don't understand
+why this theme was picked in particular, but liked the puzzle outside of that.
+
+With a Terminus solve, the only thing left was Glitch. I didn't really know what
+was going on in any feeder of Glitch, so I instead marshalled a group to gather
+meta information about the glitches until a new feeder unlocked. (We could have
+done Sportsball, but we asked Cardinality what we should focus on to finish
+Hunt, and they warned us Sportsball was long and scary.)
+
+[**Find M(at)e:**](https://puzzmon.world/puzzles/find_mate)
+Man, I suck at chess puzzles. I was totally useless at doing chess. You know
+what I'm not useless at though? Setting up extraction spreadsheet formulas.
+We did have a pretty tragic guess log, fueled by me trying to snipe the puzzle
+before more chess happened.
+
+IMAGE
+
+Our timeout was...pretty long on our last guess, and we asked for a confirm
+on our last letter from Cardinality to avoid a 10+ minute lockout on failure.
+(I want it on the record that we were unanimous on what
+to guess, and it would have been correct if we YOLOed, but it just wasn't worth
+the risk to be wrong.) I'm sure we won't get burned by a high timeout again!
+
+[**snalC ehT tcennoC:**](https://puzzmon.world/puzzles/snalc_eht_tcennoc)
+Can you have too many cooks on a puzzle? Absolutely. But at least half the
+cooks could be distracted by updating our "Are we cooking?" meter.
+
+IMAGE
+
+The glitch phase passed fast enough that I didn't have time to parse what
+was going on, but I knew enough to know our Connect the Clans map would be
+helpful, and pulled it up early so I could start reading out extract locations
+when we got to it. I was completely blindsided by the revelation
+we weren't finished with MonQuest yet, and thought it was a cute finale
+in the way it called back the capstone using MonArch + meta using feeders
+part of the Kingdom. Just really neat design.
+
+# Runaround!
+
+We finished at about 9 PM Sunday, which didn't guarantee we'd get to do runaround,
+but we got squeezed in for 11:30 PM Sunday. I was thankful we wouldn't have to
+wake up early for a Monday slot.
+
+As [To The Edge](https://puzzmon.world/puzzles/to_the_edge) indicates, we were
+directed to The Borderline tunnels. We were directed to download Artivive to give
+AR information, which I dutifully did. Once I got there, I got the Dactylinion
+feeder...which used the mural right in front of our faces and didn't require any AR component. Oh well!
+
+We got to the room for [At the Close](https://puzzmon.world/puzzles/at_the_close),
+which was "a real puzzle", to quote people working on the hyperbolic path. I
+helped on the Dactylinion and Pointdexter feeder, did some of the crossword
+clues, then sat back and watched. There was a limit to how many people could
+crowd around our heptagons, so we found other ways to amuse ourselves.
+
+IMAGE
+
+We only brought one laptop, zoomed in far enough to make the color clues
+visible. This caused the glitchy flavortext to stay off-screen for most of the
+solve, and Cardinality needed to hint us to get us back on track. Since it
+was the last runaround slot of the night, Cardinality offered to let us check our
+answer with them before submitting, to make sure we didn't get timed out on the
+puzzle.
+
+Unfortunately, some people got very excited and submitted before they could
+stop us...
+
+IMAGE
+
+By now we were alternating between projecting the puzzle page and projecting
+levelxspicy.cooking, and the room *immediately* uncooked to the negatives.
+I think the best way to describe the vibes is that poor Cardinality is
+in this classroom at 1 AM, running one last runaround tonight out of the goodness
+of their hearts,
+and we replied with "You're not cooking us, we're cooking you".
+They manually reset our rate limit to free us and we finished the Hunt.
+
+IMAGE
+
+
+# Spicy Takes
+
+I would normally put this at the start of my Hunt post, but decided to put it at
+the end to reward people who got this far.
+
+I, at broad strokes, agree with [Dan Katz](https://puzzlvaria.wordpress.com/2026/01/19/2026-mit-mystery-hunt/)
+that hinting has gotten very effective if you are trying to finish Hunt after
+the Coin is found. Our vibes-based guess is that our aggressive hint posture
+cut 8 hours off our finish time. Although, I don't think I would characterize it as
+a metagame of talking your way to the information. In all of 2024, 2025, and
+2026, the organizing team just asked us "what would make Hunt more fun for
+you, now that the Coin is found?", and we chose what we wanted appropriately,
+so it was less a charisma skill check and more picking what we wanted out
+of an offered buffet. I would also like to see a Hunt where 10 teams finish without
+hints, but I don't think such a Hunt can exist unless we adjust expectations to
+having 30+ teams finish. Maybe we should!
+
+More often than not, I've been on a team that finishes Hunt. I consider finishing
+Hunt to be a privilege rather than a right. I'm pretty glad we got there, but
+I continue to think a lot of people's disappointments around Hunt are tied to
+picking milestones that can wildly vary each year. The difficulty of Hunt, where
+the first meta is, where the first major HQ interaction is - these are all
+things that drift each year in response to Hunt feedback, and it's near impossible
+to accurately predict which will be in range of your team's solving abilities.
+You can hope, and you can try, but it just isn't always going to happen.
+
+That being said, I'd still prefer Hunt to be shorter. I said this last year too,
+where we also finished, this isn't sour grapes or anything.
+
+MIT Mystery Hunt is a long-running tradition, but to me, the tradition is its
+existence rather than its form. The rise of online hunts has created a community
+of solvers who do Mystery Hunt-tier difficulty puzzles throughout the calendar
+year. These online hunts have always been around, but before there was like,
+1-2 noteworthy events per year. Now there are enough that I can't do all of them.
+Just last year, I did GPH 2025, LN Hunt 2025, Teammate Hunt 2025, Microsoft Hunt 2025, and Silph Puzzle Hunt 2025,
+all of which had significant 3+ hour solve puzzles. I didn't even do
+Brown Puzzlehunt or Vertex Hunt or the fall CMU Hunt...there's just a lot out
+there these days. Mystery Hunt has evolved against that to be increasingly high
+production value each year.
+
+It's starting to
+feel like there's a divide between people who only do Mystery Hunt each year, and
+people who grind all the puzzles available to them. This has caused corresponding
+divides in hunt norms. Personally, using hints early
+has been beaten into me by online hunts. They often underestimate difficulty,
+and using hints before you're hardstuck is the only way I can finish them before
+the work week starts. Social media has accelerated this, in the way it's accelerated
+all changes in culture. The 18 year old crack solvers who've spent formative
+years reading devjoe's archive are now finding each other on Discord and
+shitposting their way to victory.
+
+To me, the crux is whether Mystery Hunt is broken, or Mystery Hunt is fine.
+It's really not obvious to me which is true. I suspect people's answers
+depend on whether they feel they are in the in-group or the out-group.
+I am still on the train for general puzzles,
+but decidedly off the train for subgenres like logic puzzles. An intro round
+logic puzzle is now typically a complete killer for me, and this is even when
+I do a few logic puzzles in spare time! There's levels to this.
+
+I continue to be confused by people saying teams of 100-150+ are needed
+to win. Team size has never been a good measure of solving strength and winning
+teams have usually been on the < 100 people side rather than the > 100 people
+side. The team size stats are all public, why do people keep believing this?
+
+
+While working on this post, I was reminded that I'm becoming one of the old-timers
+now. I've participated in Hunt every year in one way or another since 2012, I've
+actually seen a lot. I'm in my 30s now,
+trying to keep up with the youth online and only partly succeeding. I've already
+crossed the threshold where coming to Hunt is significantly about seeing friends
+rather than solving puzzles. I'm looking forward to seeing what Providence
+pulls off next year.
