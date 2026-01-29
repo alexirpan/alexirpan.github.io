@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MIT Mystery Hunt 2026"
-date:   2026-01-21 00:32:00 -0800
+date:   2026-01-29 01:42:00 -0800
 ---
 
 *This has spoilers for MIT Mystery Hunt 2026. Spoilers are not labeled or hidden.*
