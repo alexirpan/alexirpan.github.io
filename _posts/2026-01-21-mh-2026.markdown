@@ -13,13 +13,13 @@ it, and how much time goes into creating it. Although Hunt ostensibly takes plac
 over a weekend, I find it takes up mindshare for more like 2-3 weeks instead.
 
 I tried to write this post quickly, so that I could stop thinking about Hunt
-and start thinking about work, but like always this post became really long.
+and start thinking about work, but like always, this post became really long.
 
 # Pre-Hunt
 
 The time running up to Hunt was more stressful than usual...very briefly, I typically
 hunt with teammate. This year, some people on teammate were interested in splitting
-into a new team. There were different reasons for this, but enough people wanted
+off for a new team. There were different reasons for this, but enough people wanted
 to split to make it happen for real. I joined the split, and here we are.
 
 The new team, christened Level 1 Spicy, was 33 people, mostly in-person. It was
@@ -40,9 +40,9 @@ Uhhhhhhhhhhhhhh
 
 People split off from teammate before deciding on a team name.
 Initially, we had a team name proposing process, run with approval voting,
-followed by a final poll among top entrie. This completely failed to generate
+followed by a final poll among top entries. This completely failed to generate
 consensus. The entries with most support also had a few very strong haters,
-which was bad for a team name that was supposed to unify the team. So, team
+which was bad for a team name that was supposed to unify the team. Team
 name got punted to a TBD, and then little progress happened for 6 weeks.
 
 In the name of pushing *something* through, I self-appointed myself as voting
@@ -70,17 +70,18 @@ were better than the alternatives, and no, none of you get to read it.
 In my doc resolving the instant-runoff, I had to flip a coin to choose who would
 be eliminated between the last and second-last candidates, as both had a completely identical number of
 votes for 1st, 2nd, 3rd, 4th, and 5th. This coin flip had absolutely no bearing on
-the winner of the election, it only decided who was last place, but I was briefly accused of rigging the coin flip. This was
+the winner of the election, it only decided who was last place, but I was still
+briefly accused of impropriety,
 despite including timestamp logs and a link where you could [request an audit](https://verify.random.org/integer-widget) from the online service I used to flip the coin. Am I going to
 have to pull out the secure computation and verifiable randomness protocols I
 learned in my theoretical cryptography class? I *will* do this if I have to,
-don't test me. I literally wrote a post about it [10 years ago]({% post_url 2016-02-11-secure-computation %}). We can drown in commitment schemes together.
+don't test me. I literally wrote a post about them [10 years ago]({% post_url 2016-02-11-secure-computation %}). We can drown in commitment schemes together.
 </div>
 
-I procrastinated booking my flights into Boston, such that it was net cheaper
-to fly in a earlier and stay at a hotel for longer than fly in closer to Hunt
-weekend. I spent the days before Hunt doing two very important things. The first
-was eat sushi.
+I procrastinated booking my flights into Boston, such that it was cheaper
+to fly in earlier and stay an extra night.
+I spent the days before Hunt doing two very important things. The first
+was to eat sushi.
 You see, there's this restaurant chain called Kura Revolving Sushi, which does
 conveyor belt sushi. They do collabs to give away items, and the on-going one
 is...
@@ -99,7 +100,7 @@ This is how they get you, with monetized cuteness.
 
 The group across from us had brought a Rainbow Dash plushie to sushi. I considered
 complimenting them, but unfortunately I am not socially brave enough to walk up
-to or shout across a conveyor belt to strangers to talk about My Little Pony.
+to strangers in a restaurant.
 Alas, so it goes. We stuffed ourselves with the exact number of plates needed to
 get 3 blankets, and left with our rewards.
 
@@ -132,11 +133,12 @@ hot peppers this weekend.
 # Friday
 
 I started my Friday by getting breakfast at Verveine. This was breakfast at 8am,
-so it was long before any crowds come in. On the walk to MIT, Ivan asked me if I
+so it was long before any crowds came in. On the walk to MIT, Ivan asked me if I
 had a spare server to host a meme. I did not, but he eventually found one
 to deploy [levelxspicy.cooking](https://levelxspicy.cooking). This site was connected to
 a Discord bot in our server, where anyone could `/cook` or `/uncook` to toggle
-if we were cooking🧑‍🍳🌶️ or cooked🔥.
+if we were cooking🧑‍🍳🌶️ or cooked🔥. We used it a lot, a worthwhile use
+of $30 to register the domain.
 
 We got to 10-250 early to make sure we got seats, but someone from Cardinality said a
 seminar (?) was going on, and we wouldn't be allowed in until close to Hunt start.
@@ -146,9 +148,10 @@ was so long ago I'd completely forgotten the theme.
 
 I had high hopes for Cardinality's Mystery Hunt, because I know I'm in the same
 generation of Internet culture, and I was not disappointed by PuzzMon. Our room
-was pretty close by (right underneath Galactic). It was interesting to hunt on a
+was pretty close to kick-off, so we had plenty of time to browse the site and
+try to solve the badges puzzle. It was interesting to hunt on a
 team that fit in a single classroom, rather than splitting people across two rooms
-like teammate normally has to. It made coordination a bit easier, but the most
+like teammate normally needs to. It made coordination a bit easier, but the most
 notable change was that you always got to hear every solve that was going on.
 
 Several of us were curious what Cardinality meant by team coordination over limited
@@ -192,8 +195,9 @@ I found where this was, transcribed the data, and then must have messed up
 something because it didn't work for me. Got solved by others later.
 
 [**Jumping to Conclusions:**](https://puzzmon.world/puzzles/jumping_to_conclusions)
-The first puzzle I did this Hunt. Man, I solved so few puzzles in Kingdom. After
-Land of No Name unlocked, I mostly worked on Dimensions. This puzzle was
+The first puzzle I did this Hunt, and one of the few I did in Kingdom, before
+getting sucked into Dimensions puzzles.
+This was
 a bunch of fun. I'm a big fan of trying to cheese puzzles, and I think the
 "intended" solve path of each is signposted well enough if you've done enough
 puzzles from past hunts. Probably not friendly for newer solvers but Hunt is big
@@ -225,7 +229,7 @@ progress before you hit the critical threshold needed for meta matching. I'm
 curious if smaller teams felt accomplishment from capstones, or if they really
 needed metas using feeders to get that accomplishment.
 
-I do think capstones felt lesser in a way that had repurcussions later. As we
+I do think capstones felt lesser in a way that had repercussions later. As we
 unlocked Dimensions and Artifacts, we worked on capstones less. We understood
 they needed to be solved, and noted rounds tended to open based on capstones,
 but didn't fully understand the level of importance they had on unlock
@@ -253,7 +257,7 @@ in on the meaning of #1👣[3] and why #9§⊃(🚦■'🌈=💙🌈) needed to 
 This was our second Land of No Name solve (our solve order was
 ZMJQAOFNIXUHYSCKWDVRBTELPGmeta), and
 funnily enough the Z solve was actually useful to our M solve. By giving us
-�-Z↑, we were able to guess A-Z↑ and realize that header was cluing alpha order.
+�-Z↑, we were able to guess A-Z↑ and realize that section's header was cluing alpha order.
 It's not every day where getting Z is helpful.
 
 [**🍳 Emoji Kitchen:**](https://puzzmon.world/puzzles/1906)
@@ -279,10 +283,11 @@ It wasn't like we had another game in mind anyways, so we submitted it and it wa
 
 [**Almost:**](https://puzzmon.world/puzzles/6714)
 I broke in on THE QUICK BROWN ... off the enum + the 3 letters we had, and then it
-was a struggle to the finish.
-I liked that the pangrams were based on
-real ones, but slightly altered to still require some reasoning about letters.
-Still have no idea what possessed someone to write a Genshin clue.
+was a struggle to the finish, where we'd come back every letter solve to try to
+squeeze out another clue.
+I liked that the pangrams were based on real searchable pangrams, but slightly altered to still require some reasoning about letters.
+No idea what possessed someone to write a Genshin clue though. Everything I know
+about Genshin has been learned against my will.
 
 Continuing the theme of the previous puzzle, I solved the second
 clue to B, and it got shot down because they didn't want the cluephrase to start UBE\*.
@@ -321,7 +326,7 @@ because I don't actually play Go, I just know the rules, which isn't great for
 constructing a satisfying puzzle.
 During Hunt I looked at
 this briefly, then failed to solve a Go problem, then left until it got backsolved.
-Really, it's for the best I didn't write this puzzle.
+Really, it's for the best that I didn't write this puzzle.
 
 [**Nominative Determinism:**](https://puzzmon.world/puzzles/nominative_determinism)
 I didn't solve this during Hunt, I just think everyone should try it. We
@@ -341,7 +346,7 @@ AI to solve the puzzles. We used LLMs a bit, mostly as another thing to try
 after dumping
 everything into Google. If you know what you're doing, verify you aren't getting
 hallucinated, and focus on things LLMs are good at, they *are* helpful. I don't
-think it was a major impact on our solve time, but it was definitely non-zero.
+think they had a major impact on our solve time, but the impact was definitely non-zero.
 
 On Manifold, people tried a few text-only puzzles after
 the fact, and GPT 5.2 Pro managed to zero-shot both this puzzle
@@ -363,7 +368,7 @@ but our read is that the winner is really advantaged the next round,
 since you get to keep your PuzzMons and Stat-Ups, while your opponent has to lose one.
 Maybe in practice, the effects of individual cards are swingy enough to overcome
 the snowball, and it is a game of deciding when to deploy your haymakers and when
-to sandbag, but we did not try enough to learn the metagame.
+to sandbag, but we did not try playing it enough to feel out the metagame.
 
 As a puzzle, I primarily did quote look-up, then rule look-up. We got around 75% of the way through
 without knowing how to extract, which made it hard to decide what to record
@@ -376,7 +381,7 @@ new puzzle unlocks.
 
 [**Triple Threat:**](https://puzzmon.world/puzzles/8904)
 Earlier, I had identified some of the horse Triple Crowns from 3-4 letters (I know that dataset
-way too well). By time we came back from the card game, there were enough letters
+way too well). By the time we came back from the card game, we had enough letters
 to get all the baseball Triple Crowns. As intended, I noticed the hyphen could
 be a minus sign, added a column for the extract, and read out "INKIGAYO". This
 near-instantly triggered a lecture from the K-pop fans on our team on what Inkigayo
@@ -489,9 +494,10 @@ hot sauce used in the part of the episode the clip was from. This wasn't
 super defined for some clips that came from the introduction, but we rounded
 it to using the first hot sauce.
 
-We had the right broad idea of "identify the ingredients in each hot sauce",
-but the first group failed to realize we should actually taste and ID the hot
-sauces we were given. Once we fixed this, I tried the chili oil ("yep, that's chili oil"), then
+We had the right idea of "identify the ingredients in each hot sauce",
+but the first group failed to realize we should actually, uh, ID the hot
+sauces Cardinality gave us. Oops.
+Once we fixed this, I tried the chili oil ("yep, that's chili oil"), then
 the one labeled 10 ("yep, I can't tell what I'm tasting besides heat").
 
 I realized that I was
@@ -548,7 +554,7 @@ WFETUR, and if you follow the chain of edges formed by A->W, B->F, C->E, ...,
 it forms one big cycle rather than multiple small ones. Given a random permutation,
 this was a 1/26 = 3.8% probability, which made it seem important. Our broad
 suspicion was that we would build one long series of instructions, and extract
-based on when the turtle visited regions indicated by the letteres on the grid.
+based on when the turtle visited regions indicated by the letters on the grid.
 
 Neither of those was how the puzzle worked either. We continued brainstorming
 along those lines, didn't get anywhere, and decided to work on other things
@@ -593,7 +599,8 @@ Looking back at the Atlas, I saw that Inconsequential Chase had gotten stuck
 on Years. Every tile was placed, but the grid wasn't solving, so an unknown
 region of the 45
 hexagons were in the wrong spot. People understandably did not want to fact check
-this, and were trying to solve around it by going the other way. I briefly
+this, and were trying to solve around it by solving every other grid instead.
+I briefly
 tried to factcheck Years, then gave up to look at
 **The Tortured Programmers Department** instead.
 
@@ -639,20 +646,21 @@ and checked if the translation offsets of single letters matched offsets between
 letters in the grid, but never combined the two until hinted that way.
 
 I actually think both Land of No Name and Hyperbolic Space would have been fine
-to not have a meta, and mark themselves as complete when you got all their
-answers, but Mystery Hunters aren't ready for that conversation.
+to have a token meta, or not have a meta at all. Just mark themselves as complete
+when you got all their answers. But Mystery Hunters aren't ready for that conversation.
 
-[**Atlas of Mosaics, part 3:**]
+[**Atlas of Mosaics, part 3:**](https://puzzmon.world/rounds/atlas_of_mosaics)
 We finished up the rest of Tortured Programmer's Department without too much
 issue, with me doing the shell just in time to plug into the programming output
-that'd been done in parallel.
+that'd been done in parallel. We finished a bit before the Sunday 1 AM boundary
+kicking us out of our room.
 
-During that, we crossed the Sunday 1 AM boundary. This time there'd be no late
-night solving party from my room, which I was secretly thankful for, as I was
+This time there'd be no late
+night solving party from my hotel, which I was secretly thankful for. I was
 aiming to sleep earlier that night, after a bit more Casino grinding.
 
-[**Plots / Graphs:**]
-In theory, I like lots and Graphs. In practice, we made some progress but
+[**Charts:**](https://puzzmon.world/rounds/fates_thread_casino/gallery?banner=charts)
+In theory, I like Charts. In practice, we made some progress but
 didn't get to the finish due to how many images there were, and the minimal
 footholds on searching images if you did not catch the reference. This is a kind
 of fake criticism though - the point of the puzzle is how abstractly it clues
@@ -667,7 +675,7 @@ tossing it into Gemini 3 out of exasperation.
 {: .centered }
 
 To my surprise, Gemini figured it out and that let us break in on two other quests. I
-identified a few more Graphs, then idly poked at our Casino answers so far and
+identified a few more graphs, then idly poked at our Casino answers so far and
 noticed the interleaving property that was used in the meta. I shared it in the
 chat in hopes it would enable backsolves, but my understanding is that it only
 helped a bit to know this before meta unlock.
@@ -680,7 +688,7 @@ That would be a tomorrow morning problem.
 # Sunday
 
 When I woke up, the coin hadn't been found yet. This was concerning for us:
-based on our estimation of team strength, if people hadn't finished yet, it'd
+based on our estimation of team strength, if the first place team hadn't finished yet, it'd
 be hard for us to finish.
 
 I was recruited to take a look at [**Meme Scenes**](https://puzzmon.world/puzzles/meme_scenes), which had the most ID work and was stuck on extraction.
@@ -705,16 +713,15 @@ next seat rather than pointing due north. So that puzzle also got stuck, until
 we got rescued by a hint.
 
 Overnight, Hunt ops speculated that there were only 4 Dimensions rounds, and the
-remaining Keepers would come from endgame capstones, and the bottom part of the
+missing Keepers could be explained by endgame capstones, and the bottom part of the
 round art would just not be filled out. I still think this argument was
-cope to avoid acknolwedging the simpler explanation that it was just 1 Keeper
-per round and we were 2 whole rounds behind leading teams.
+cope, compared to the simpler one of having 2 more rounds to finish.
 
 ![A message saying they think it is unlikely we have no new rounds unlocking, before a new round is unlocked a few hours later](/public/mh-2026/lol.png)
 {: .centered }
 
 In defense of Hunt ops, it wasn't clear to us that Connect the Clans in Kingdom
-could be acting as an unlock bottleck on Dimensions.
+could be acting as an unlock bottleneck on Dimensions.
 There
 is a difference between noting that Dimensions often unlocked after capstones
 were solved, and fully believing in this enough to roll out the implications
@@ -723,7 +730,7 @@ be a common theme in comments I've been reading: parts of unlock logic were
 signposted, but unlocks as a whole were a bit opaque, due to the complexity
 of the systems.
 
-[**Terminus (part 1):**](https://puzzmon.world/rounds/terminus)
+[**Terminus:**](https://puzzmon.world/rounds/terminus)
 My experience with this round was incredibly bizarre. I opened the round,
 tried exploring different universes, and immediately understood it would be
 top priority to understand the Terminus black box to do later parts of the
@@ -745,7 +752,7 @@ tech UX impressive throughout the Hunt.
 The first "full star" we opened was Dichotomies, followed by Crossword (this was shortly after
 understanding what conversion meant, with those two being the easiest ones to
 directly query). As for Layers, we needed a hint.
-I do have a complaint on that. We understood the logic that single puzzles
+I do have a complaint there. We understood the logic that single puzzles
 were unlocked based on the number of matching words, but weren't sure how to
 turn that into a meta unlock. Three people independently tried the intended
 solution, found it didn't work, and moved on. When the hint told us to try again,
@@ -766,7 +773,7 @@ that we'd need to redo the entire Kingdom, before reading the map more closely
 and seeing it'd "just" be 9 puzzles.
 
 Cardinality contacted our HQ to let us know hints would be more open if we
-wanted them. This prompted an impromptu team vote, on whether to try to rush
+wanted them. This prompted an impromptu team vote on whether to try to rush
 for a Sunday 8 PM finish to guarantee a runaround slot, or take it more chill.
 Hunt ops estimates were that we'd finish if we took it chill, but would likely
 miss runaround, whereas if we rushed we'd maybe make 8 PM.
@@ -822,7 +829,7 @@ Can you have too many cooks on a puzzle? Absolutely. But at least half the
 cooks could be distracted by pushing our "Are we cooking?" meter to 10+.
 
 My contribution was pulling up our Connect the Clans map and reading out
-letter locations. I was completely blindsided by the revelation
+letter locations. I was completely blindsided by the revelation that
 we weren't finished with MonQuest yet, and thought it was a cute finale
 that called back nicely to how capstones used MonArch and metas used
 feeders. Just really neat design. Our snalC ehT tcennoC solve came in
@@ -874,7 +881,11 @@ and we replied with "You're not cooking us, we're cooking you". Luckily they
 were able to reset our rate limit and we could finish and let them go to bed.
 
 On Monday, I did the now traditional go to wrap-up -> loiter a way -> eat late
-lunch -> get on a plane journey. Unfortunately, this year my plane was delayed
+lunch -> get on a plane journey. I told my parents we'd finished 11th, to which
+my dad's first reaction was "what a disaster", since I hadn't explained the
+team split and that finishing at all was actually insanely good.
+
+Unfortunately, this year my plane was delayed
 by 3 hours, meaning I didn't get back until 2 AM West Coast time, which,
 chronologically, was later than I'd stayed up during any day of this year's
 Mystery Hunt.
