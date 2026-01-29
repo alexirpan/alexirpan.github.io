@@ -13,7 +13,8 @@ it, and how much time goes into creating it. Although Hunt ostensibly takes plac
 over a weekend, I find it takes up mindshare for more like 2-3 weeks instead.
 
 I tried to write this post quickly, so that I could stop thinking about Hunt
-and start thinking about work, but like always, this post became really long.
+and start thinking about work. Like always, this post kept growing longer, and that
+didn't go to plan.
 
 # Pre-Hunt
 
@@ -350,8 +351,9 @@ think they had a major impact on our solve time, but the impact was definitely n
 
 On Manifold, people tried a few text-only puzzles after
 the fact, and GPT 5.2 Pro managed to zero-shot both this puzzle
-(https://chatgpt.com/share/696aebb1-2a48-8000-a2e0-3575d9998bc8)
-and [**Six Shifts**](https://puzzmon.world/puzzles/3842) given 5 letters (https://chatgpt.com/share/696afc2f-d1f4-8000-b520-3e2195ea032c).
+([https://chatgpt.com/share/696aebb1-2a48-8000-a2e0-3575d9998bc8](https://chatgpt.com/share/696aebb1-2a48-8000-a2e0-3575d9998bc8))
+and [**Six Shifts**](https://puzzmon.world/puzzles/3842) given 5 letters
+([https://chatgpt.com/share/696afc2f-d1f4-8000-b520-3e2195ea032c](https://chatgpt.com/share/696afc2f-d1f4-8000-b520-3e2195ea032c)).
 Sure, it took 41 minutes and 16 minutes respectively, and they were asked on
 questions close to math and coding, and it probably cost $20 in API
 credits, but it *worked* and could have given us a forward solve we missed.
@@ -784,7 +786,7 @@ In [Dan Katz's post for the year](https://puzzlvaria.wordpress.com/2026/01/19/20
 he speculated that maybe finishing teams are succeeding because they are more
 willing to take hints. This year, that was definitely true for us. But, I mean,
 we had 33 people, cut us some slack. The word of the day was timeboxing, where we
-committed to taking hints if we didn't make progress for 30 minutes or an hour.
+committed to taking hints if we didn't make progress for 30-60 minutes.
 
 [**Psychology:**](https://puzzmon.world/puzzles/psychology)
 This is the one Terminus feeder I looked at during Hunt. I don't know how, but
@@ -826,7 +828,7 @@ At least that's the last time guess timeouts can burn us this Hunt!
 
 [**snalC ehT tcennoC:**](https://puzzmon.world/puzzles/snalc_eht_tcennoc)
 Can you have too many cooks on a puzzle? Absolutely. But at least half the
-cooks could be distracted by pushing our "Are we cooking?" meter to 10+.
+cooks could be distracted by pushing our ["Are we cooking?"](https://levelxspicy.cooking) meter to 10+.
 
 My contribution was pulling up our Connect the Clans map and reading out
 letter locations. I was completely blindsided by the revelation that
@@ -847,9 +849,9 @@ feeder...which used no AR information. Oh well.
 
 We were then led to a classroom for [At the Close](https://puzzmon.world/puzzles/at_the_close),
 which was "a real puzzle", to quote people working on the hyperbolic path. I
-helped on the Dactylinion and Pointdexter feeder, did some of the crossword
-clues, then sat back and watched. There was a limit to how many people could
-crowd around our heptagons, so we found other ways to amuse ourselves.
+helped on the Dactylinion and Pointdexter feeder, did my pulls, solved some of
+the crossword clues, then sat back and watched. There was a limit to how many people could
+crowd around our tiles, so we found other ways to amuse ourselves.
 
 ![Drawings of snails on a blackbord](/public/mh-2026/IMG_4929.webp)
 {: .centered }
@@ -862,7 +864,7 @@ the back of the room. Unfortunately this meant the glitchy flavortext was off
 screen for most of the solve, and Cardinality needed to hint us to
 get back on track. Some of the shitposting extended to the guess log, which
 once again caused our answer timeout to rise pretty quickly.
-This was the last runaround slot of the night, so
+In the name of speed,
 Cardinality offered to let us check our
 answer with them before submitting, to make sure we didn't get timed out on the
 puzzle.
@@ -873,20 +875,22 @@ submitted before Cardinality could stop them...
 ![An incorrect guess of COINDECRYPTOOLOGY](/public/mh-2026/runaround_guess_log.png)
 {: .centered }
 
-The room *immediately* uncooked from the highs of 🌶️🌶️🌶️ to the lows of 🔥🔥🔥.
+This blocked us from submitting for the next 5 minutes,
+and the room *immediately* uncooked from the highs of 🌶️🌶️🌶️ to the lows of 🔥🔥🔥.
 I'd say the best way to describe the vibes is that poor Cardinality is
 in this classroom at 1 AM, running one last runaround tonight out of the goodness
 of their hearts,
 and we replied with "You're not cooking us, we're cooking you". Luckily they
 were able to reset our rate limit and we could finish and let them go to bed.
 
-On Monday, I did the now traditional go to wrap-up -> loiter a way -> eat late
+On Monday, I did the now traditional go to wrap-up -> loiter catching up with
+other teams -> eat late
 lunch -> get on a plane journey. I told my parents we'd finished 11th, to which
 my dad's first reaction was "what a disaster", since I hadn't explained the
-team split and that finishing at all was actually insanely good.
+team split and that it was great we'd finished at all.
 
 Unfortunately, this year my plane was delayed
-by 3 hours, meaning I didn't get back until 2 AM West Coast time, which,
+by 3 hours, meaning I didn't get land until 2 AM West Coast time, which,
 chronologically, was later than I'd stayed up during any day of this year's
 Mystery Hunt.
 But JetBlue did at least give me a $12 voucher, so I got a free milkshake to
@@ -903,12 +907,12 @@ I, at broad strokes, agree with [Dan Katz](https://puzzlvaria.wordpress.com/2026
 that hinting has gotten very effective if you are trying to finish Hunt after
 the Coin is found. Our vibes-based guess is that our aggressive hint posture
 cut 8 hours off our finish time. However, I don't think I would characterize it as
-a metagame of talking your way to the right information. In all of 2024, 2025, and
+a test of talking your way to the right information. In all of 2024, 2025, and
 2026, the organizing team just asked us "what would make Hunt more fun for
 you, now that the Coin is found?", and we chose what we wanted.
-It was less a charisma skill check and more picking what we wanted out
-of an offered buffet. I think it is fine for a team to have a higher threshold
-for taking hints, but hints are pretty clearly a net fun thing.
+It was less a speech skill check and more picking what we wanted out
+of an offered buffet. Hints are pretty clearly a net fun thing and I don't think
+it makes sense to try to roll them back, compared to just making Hunt easier.
 
 More often than not, I've been on a team that finishes Hunt. I consider finishing
 Hunt to be a privilege rather than a right. I'm pretty glad we got there, but
@@ -935,7 +939,7 @@ There is a real divide between people who only do Mystery Hunt each year, and
 people who grind all the puzzles available to them.
 The 18 year old crack solvers who've spent formative
 years reading devjoe's archive are now finding each other on Discord and
-shitposting their way to victory. I can only imagine how weird it must be for
+shitposting their way to victory. I can only imagine how weird this must be for
 people less online.
 
 There is this longstanding myth where people believe teams of 100-150+ are
@@ -943,7 +947,8 @@ needed to win, or becoming more common, and the
 [stats](https://www.reddit.com/r/mysteryhunt/comments/1qn7hdh/comment/o1xlmyo/)
 suggest leading team sizes really haven't changed much between 2016 to now.
 People regularize on their own. There are just twice as many teams, so the 10th
-best team is a lot better than it used to be.
+best team is a lot better than it used to be. The competition of Hunt
+intrinsically favors teams that can no-life it.
 
 To me, the crux is whether Mystery Hunt is broken, or Mystery Hunt is fine.
 I think it's fine, but I suspect people's answers
@@ -951,10 +956,11 @@ depend on whether they feel they are in the in-group or the out-group.
 I am still on the train for general puzzles,
 but decidedly fell off the train for subgenres like logic puzzles, where I
 feel like even intro round logic puzzles can kill me these days. And this is
-even when I do some logic puzzles in spare time! There's levels to this.
+even when I do a few logic puzzles in spare time! There's levels to this.
 
-Despite it all, despite thinking that Hunt is fine, and hints are fine, and
-online teams are fine, and the MITness of Mystery Hunt is fine - despite all
+Despite it all, despite thinking that the length of Hunt is fine, and hints are fine, and
+online teams are fine, and the MITness of Mystery Hunt is not in danger of
+disappearing - despite all
 of it, I'd be okay with a shorter Hunt. I said this last year too.
 While working on this post, I was reminded that I'm becoming one of the old-timers.
 I've participated in Hunt every year in one way or another since 2012, I've
@@ -963,7 +969,7 @@ Now I'm in my 30s, trying to keep up with the youth online
 and only partly succeeding. I've crossed that threshold
 where a lot of Hunt is about solving with friends rather than solving many
 puzzles.
-I no longer need an extremely intense experience. A normally intense
+I no longer need an extremely intense experience. A normal intense
 experience would be fine.
 
 ![Photo of the team](/public/mh-2026/team_photo.webp)
@@ -971,6 +977,8 @@ experience would be fine.
 
 I suspect a shorter
 Hunt where 10 teams finish without hints would have something like 30+ teams
-finish in total, and people would complain about that too, but you really can't
-please everyone in an event this big. You just have to pick what to aim for.
-I'm looking forward to seeing what choices Providence makes.
+finish in total, and people would complain about that too, that Mystery Hunt
+was not the Mount Everest it could have been. But you really can't
+please everyone in an event this big. You just have to pick what to aim for
+and what you'd be proud of.
+I'm looking forward to seeing the choices Providence makes.
