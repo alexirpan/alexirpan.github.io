@@ -965,6 +965,10 @@ where a lot of Hunt is about solving with friends rather than solving many
 puzzles.
 I no longer need an extremely intense experience. A normally intense
 experience would be fine.
+
+![Photo of the team](/public/mh-2026/team_photo.webp)
+{: .centered }
+
 I suspect a shorter
 Hunt where 10 teams finish without hints would have something like 30+ teams
 finish in total, and people would complain about that too, but you really can't
