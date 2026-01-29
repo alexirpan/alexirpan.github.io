@@ -23,8 +23,8 @@ hunt with teammate. This year, some people on teammate were interested in splitt
 off for a new team. There were different reasons for this, but enough people wanted
 to split to make it happen for real. I joined the split, and here we are.
 
-The new team, christened Level 1 Spicy, was 33 people, mostly in-person. It was
-33 experienced + strong solvers who were all planning to go hard for Hunt, so
+The new team, christened Level 1 Spicy, was 32 people, mostly in-person. It was
+32 experienced + strong solvers who were all planning to go hard for Hunt, so
 I thought we had a *chance* of finishing Hunt, but I had little expectation of
 actually doing so.
 
@@ -359,7 +359,7 @@ questions close to math and coding, and it probably cost $20 in API
 credits, but it *worked* and could have given us a forward solve we missed.
 
 I personally would prefer LLMs be banned from puzzlehunts, and don't reach for
-them unless I don't think it would be fun, but so far this hasn't really mattered
+them unless I'm not having fun, but so far this hasn't really mattered
 because they weren't helpful enough. I'll just say the landscape is starting to
 shift and leave it at that.
 
@@ -785,7 +785,7 @@ by a small margin.
 In [Dan Katz's post for the year](https://puzzlvaria.wordpress.com/2026/01/19/2026-mit-mystery-hunt/),
 he speculated that maybe finishing teams are succeeding because they are more
 willing to take hints. This year, that was definitely true for us. But, I mean,
-we had 33 people, cut us some slack. The word of the day was timeboxing, where we
+we had 32 people, cut us some slack. The word of the day was timeboxing, where we
 committed to taking hints if we didn't make progress for 30-60 minutes.
 
 [**Psychology:**](https://puzzmon.world/puzzles/psychology)
