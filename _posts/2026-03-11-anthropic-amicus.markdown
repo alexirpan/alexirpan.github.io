@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why I Signed The Amicus Brief for Anthropic v Department of War"
-date:   2026-03-11 03:19:00 -0800
+date:   2026-03-11 03:37:00 -0800
 ---
 
 On Monday, Anthropic filed a lawsuit against the Department of War,
@@ -12,7 +12,7 @@ See coverage [here](https://www.wired.com/story/openai-deepmind-employees-file-a
 and the brief itself [here](https://www.courtlistener.com/docket/72379655/24/1/anthropic-pbc-v-us-department-of-war/).
 To emphasize, everyone
 who signed did so in a personal capacity.
-There's also an [amicus brief](https://www.courtlistener.com/docket/72379655/24/1/anthropic-pbc-v-us-department-of-war/)
+There's also an [amicus brief](https://storage.courtlistener.com/recap/gov.uscourts.cand.465515/gov.uscourts.cand.465515.34.1.pdf)
 filed on behalf of Microsoft.
 That one *is* speaking for the company, focusing on a temporary restraining
 order of the supply chain risk designation.
@@ -49,19 +49,20 @@ of preserving civil liberties, rather than dumb reasons like outdated software.
 As for fully autonomous weapons, I don't want them
 to exist at all. But even if you assume they should exist (and this is a big
 assumption), the reliability of AI is not high enough for them. The only exception
-I can think of right now is situations where a missile is already in the air
-and your options are to autonomously shoot it down or fail to react at all.
+I can think of right now is situations where a missile is already in the air,
+and your options are to autonomously shoot it down or fail to react in time
+at all.
 
 Separate from the debate you can have over how AI should be used, I also understand that the
-US government the right to decide the contracts it agrees to, drop them if they
-no longer fit, and that usage restrictions which hypothetically cede operational
+US government has the right to decide the contracts it agrees to, drop them if they
+no longer fit, and that usage restrictions which could hypothetically cede operational
 control may not be something the government wants. See Dean Ball's thoughts
 on the subject [here](https://www.hyperdimensional.co/p/clawed), the relevant point being:
 
 > The Department of War’s rational response here would have been to cancel Anthropic’s contract and make clear, in public, that such policy limitations are unacceptable.
 
-The step of declaring Anthropic a supply chain risk was not rational, way too
-big of an overreach, and is what caused Anthropic to file a lawsuit at all.
+Exiting the contract was fine, but the step of declaring Anthropic a supply chain risk was irrational and way too
+big of an overreach.
 It's
 just an exceptionally retributive action which helps nobody. Not the military,
 not Anthropic, and not the people. By making this move, the Department of War claims
@@ -72,7 +73,10 @@ and meddle in the free market against a US AI company on the other.
 
 Generally, I'm not wired for political debates. I don't
 relish it in the way that Twitter people do. I'm also aware this could have
-repurcussions on either my career or the potential future paths open to me. In
+repercussions on either my career or the potential future paths open to me. (To
+be clear, I don't expect it to affect much of either, but it was something
+I considered.)
+In
 general, I am a fan of building career capital and preserving optionality. But
 if you never spend it on things you believe in, what's the point?
 
