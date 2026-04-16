@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-*Last updated January 8, 2025.*
+*Last updated April 16, 2026.*
 
 My current main research interest is better alignment algorithms for LLMs that
 go beyond only input-output examples that treat the LLM as a black-box optimizer.
@@ -23,6 +23,37 @@ Papers:
 ---------------------------------------------
 
 <p></p>
+
+### Consistency Training Helps Stop Sycophancy and Jailbreaks
+
+*Alex Irpan\*, Alexander Matt Turner\*, Mark Kurzeja, David K. Elson, Rohin Shah*
+
+Paper: [here](https://arxiv.org/abs/2510.27062)
+
+
+### STEER: Flexible Robotic Manipulation via Dense Language Grounding
+
+*Laura Smith, Alex Irpan, Montserrat Gonzalez Arenas, Sean Kirmani, Dmitry Kalashnikov, Dhruv Shah, Ted Xiao*
+
+Paper: [here](https://arxiv.org/abs/2411.03409)
+
+*ICRA 2025*
+
+### An Approach to Technical AGI Safety and Security
+
+*Rohin Shah, Alex Irpan, Alexander Matt Turner, Anna Wang, Arthur Conmy, David Lindner, Jonah Brown-Cohen, Lewis Ho, Neel Nanda, Raluca Ada Popa, Rishub Jain, Rory Greig, Samuel Albanie, Scott Emmons, Sebastian Farquhar, Sébastien Krier, Senthooran Rajamanoharan, Sophie Bridgers, Tobi Ijitoye, Tom Everitt, Victoria Krakovna, Vikrant Varma, Vladimir Mikulik, Zachary Kenton, Dave Orr, Shane Legg, Noah Goodman, Allan Dafoe, Four Flynn, Anca Dragan*
+
+Paper: [here](https://arxiv.org/abs/2504.01849)
+
+Blog post: [here](https://deepmind.google/blog/taking-a-responsible-path-to-agi/)
+
+### Generating Robot Constitutions & Benchmarks for Semantic Safety
+
+*Pierre Sermanet, Anirudha Majumdar, Alex Irpan, Dmitry Kalashnikov and Vikas Sindhwani*
+
+Paper: [here](https://openreview.net/forum?id=9HwVDqndnv#discussion)
+
+*CoRL 2025*
 
 ### Stop Regressing: Training Value Functions via Classification for Scalable Deep RL
 
