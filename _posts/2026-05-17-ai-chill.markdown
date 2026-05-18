@@ -1,0 +1,87 @@
+---
+layout: post
+title:  "AI Will Not Make Your Job Chill"
+date:   2026-05-17 18:10:00 -0700
+---
+
+People keep talking about how AI will make their job easy, and I don't really understand why.
+
+In the Industrial Revolution, textiles were broadly automated. A single person's labor could now produce much more cloth than before. It turned out people like having nice clothes, demand for shirts went up, and now I own several novelty T-shirts that I wear once a year. I assume the factory job producing this was still hard work.
+
+Richard Gatling, inventor of the gatling gun, invented the first machine gun.
+According to a [letter he wrote to a friend](https://www.history.com/articles/gatling-gun#:~:text=In%20a%20letter%20to%20a%20friend%20written%20in%201877), he was motivated
+by reducing the size of armies.
+
+> It occurred to me that if I could invent a machine—a gun—which could by rapidity of fire, enable one man to do as much battle duty as a hundred, that it would, to a great extent, supersede the necessity of large armies, and consequently, exposure to battle and disease be greatly diminished.
+
+In practice, the appetite for war was quite big (war being zero-sum), so armies
+were still big during WW1 and WW2. Soldiers in those wars did not have an easy time
+despite their better tech.
+
+The thing I'm gesturing to here is that something being easier to produce
+doesn't lead to people doing the same work in less time. There is instead
+a complicated relationship of how much new demand is unlocked, the best ways to
+get people to fill that new demand, and the resulting equilibrium typically still involves
+hard work.
+
+With the rise of coding agents in particular, I find I have less downtime than
+before. It feels like if I am not sending an agent on an adventure, I'm not
+doing all that I could. And, this is not an unfamiliar feeling. ML work was like
+this too. If you aren't running an experiment training a model overnight, what
+are you doing?
+
+![I just need to run an experiment](/public/ai-chill/experiment.jpeg)
+{: .centered }
+
+[Source](https://x.com/sashadoubov/status/1954412465145471411/photo/1)
+{: .centered }
+
+As coding has become more commoditized, there is a growing divide between people
+who liked building software, and people who liked writing code. I was one of the
+weirdos who liked the latter, who got into coding via algorithms and found
+tech interviews fun. Writing code was my downtime between conceptual work. Now
+this is gone, because it's irresponsible to write code from scratch. Writing
+code from scratch is for free time now.
+
+I don't think AI has made *my* job chill, and I feel like I am front-line
+compared to much of the economy. My expectation is that although more slices of
+my job as a researcher will be automated, the remaining work will just expand to
+fill the remaining time, and there won't be any top-level agreement that all
+AI researchers will agree to only work 20 hours a week. The pressures of
+competitive capitalism will push too hard on maximizing output.
+
+Amazon warehouses are another good case study for this. If you had to
+pick a single company that speedruns capitalism, Amazon is top of the list.
+It's not widely known, but transportation and warehousing has the highest rate of
+nonfatal work injuries in the US. Based on the [Bureau of Labor Statistics](https://www.bls.gov/charts/injuries-and-illnesses/number-and-rate-of-nonfatal-work-injuries-and-illnesses-by-industry.htm), the 2024 rate was 4.4 injuries and illnesses per 100 full-time
+workers.
+
+![Accident rates 2024 based on U.S. Bureau of Labor Statistics](/public/ai-chill/accident_rates_2024.png)
+{: .centered }
+
+[Source](https://www.bls.gov/charts/injuries-and-illnesses/number-and-rate-of-nonfatal-work-injuries-and-illnesses-by-industry.htm)
+{: .centered }
+
+How do Amazon warehouses in particular compare? The results are not great.
+[Based on reports from labor unions](https://thesoc.org/wp-content/uploads/sites/342/The-Injury-Machine_How-Amazons-Production-System-Hurts-Workers-1.pdf), Amazon warehouses
+were 7.7 injuries per 100 FTEs in 2021. For fulfillment centers, warehouses with
+robotic facilities see *more* injuries per worker, not fewer. This is attributed
+to two factors:
+
+1. Quotas at facilities with robots are set higher, increasing from 100 items per hour
+to 300-400 items per hour. This increased speed puts more pressure on workers.
+2. To satisfy the robot systems, workers do narrower ranges of motion more often, which
+increases RSI issues.
+
+It's hard to deny this works as a consumer. My Amazon packages arrive on time. Still, the automation sure didn't make fulfillment center jobs be chill, safer, or
+more relaxing. Do LLM improvements make skilled labor more similar to fulfillment
+center work, or less?
+
+Projecting the future is notoriously hard, but here is my best guess. LLMs will get better at an increasing range of skills. For a while, this will not lead to any job loss, because increasing abundance will lead to higher demand. But the nature of those jobs will become either more tiring, or more boring, or both. They will still be rewarding, or better than they were before if you're a fan of high intensity work. It certainly won't be chill.
+
+And then, slowly then all at once, certain jobs will have 100% of their required skills be completable by LLMs, and those jobs won't exist anymore.
+
+P.S: Certain jobs disappearing doesn't say anything about the overall labor
+market. It's very possible employment stays the same as alternate kinds of
+jobs arise. However, I think it's important that people typically argue that
+either employment will go down, or employment will stay the same. No one says employment will go *up.* I don't feel informed about the question of employment, so my uninformed guess is to take the average and say it'd go down.
