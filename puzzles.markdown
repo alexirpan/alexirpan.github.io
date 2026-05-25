@@ -4,7 +4,7 @@ title: Puzzles
 permalink: /puzzles/
 ---
 
-*Last updated January 29, 2026.*
+*Last updated May 25, 2026.*
 
 One of my main hobbies is puzzlehunts. They're a little hard to describe,
 but generally, a puzzlehunt puzzle is some data that usually
@@ -34,6 +34,12 @@ Here are some Mystery Hunt related things I've written:
 I've also written some puzzles.
 My more recent puzzles are better than my old ones, but I'm including everything for
 completeness.
+
+# 2026
+
+* Enigmarch 2026
+    * Enigmarch is a yearly puzzle challenge to write one puzzle every day of March based on a single word prompt. I succeeded at this, and ran the puzzles as a one day event.
+    * The puzzles can be found [here](https://enigmarch.alexirpan.com).
 
 # 2023
 
