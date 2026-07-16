@@ -13,18 +13,53 @@ asked Satya Nadella what he understood about DotA 2. To which he said:
 
 [Source](https://www.pcgamer.com/software/ai/elon-musk-sam-altman-and-the-worlds-billionaires-are-terrified-of-the-google-ai-genius-behind-a-25-year-old-computer-game-because-they-think-he-might-actually-end-up-controlling-god/)
 
-Despite saying he's not a gamer, Satya was aware of what DotA 2 was, and the distribution
-platform of Steam, which is definitely more than nothing. I'd rate it a 5/10.
+I will give props that Satya knows what DotA 2 is and what Steam is, but you heard the man.
+He is not a gamer.
 
-There has always been a healthy overlap between tech workers and gamers, probably due to spending
-more time on computers in general. Satya having to testify his gamer cred was ridiculous enough
-that I had to check how he rated to his peers. And so: this.
+There has always been a healthy overlap between tech workers and gamers, just due to overlap in
+computer time. Reading Satya testifying about his gamer cred was ridiculous enough to inspire
+a dumb project: researching which tech CEOs were gamers. How does Satya rate to his peers?
+
+As a gaming project, it seems most appropriate to organize CEOs into a tier list. I will be
+rating them among four tiers:
+
+* Gamer
+* Gamer but Cringe
+* Casual Gamer
+* Not a Gamer
+
+You'll see why we need the second category. Tiers are unordered.
+
+(Make this graphic later)
+
+Gamer:
+Demis
+Dario
+Sam Altman
+
+Gamer but Cringe:
+Mark
+Elon
+
+Casual Gamer:
+Sundar Pichai
+Bill Gates
+
+Not a Gamer:
+Satya
+Steve Jobs
+Larry Page
+Sergey Brin
+Tim Cook
+Jeff
+Reed Hastings
 
 
 Sam Altman, Elon Musk
 --------------------------------------------------------------------
 
-Let's start with the other people in the lawsuit.
+Let's start with the other people in the lawsuit. Sam is the former president of Y Combinator and current
+CEO of OpenAI. Elon is...you know who Elon is.
 
 To put things mildly, these two are no longer on good terms. However, in the past they were friendlier.
 In the Before Times, Y Combinator actually uploaded a clip of the two discussing video games, back
@@ -53,10 +88,89 @@ I would rate Sam's gamer cred as 7/10, and Elon's as 6/10, where Elon's would be
 weren't so weird about trying to prove he's good at them.
 
 
+Larry Page, Sergey Brin
+-------------------------------------------------------------------------------------------------------
+
+Larry and Sergey are the co-founders of Google.
+I did not find any mention of either playing video games.
+There is one [NYT article](https://www.nytimes.com/2023/12/03/technology/ai-openai-musk-page-altman.html)
+that mentions Elon Musk used to crash at Larry Page's place after playing video games, but it never says if Page played
+video games.
+
+
+Sundar Pichai
+---------------------------------------------------------------------------------------------------
+
+Sundar is the current CEO of Google. Although there is little reporting on the video games Sundar has played,
+he has mentioned some. Games Developer Conference (GDC) is a yearly conference for the video games industry.
+At GDC 2019, Sundar took the stage to announce Google Stadia, an upcoming platform where you could stream
+video games over the cloud.
+
+He started his talk by saying he wasn't a big gamer, but he did play two games: FIFA 19, and Ashes Cricket.
+["If you don't know what cricket is, it's kind of like baseball, but better."](https://www.youtube.com/watch?v=nUih5C5rOrA)
+
+To quote the YouTube comments, saying you aren't a big gamer before debuting a product targeting gamers was
+certainly a choice. There's nothing wrong with playing sports games, but there's certainly some stigma
+against people who only play those games.
+
+Stadia would be shut down a few years later.
+
+
+Steve Jobs
+---------------------------------------------------------------------------------------------------
+
+Steve Jobs is the former CEO of Apple. The main video game related story Steve is tied to is the Atari
+Breakout debacle, which you probably already know. I'll repeat it anyways.
+
+Before starting Apple, Steve Jobs was a computer technician at Atari. He was assigned to create a circuit
+board for the game Breakout in as few chips as possible to reduce cost. Atari offered a bonus of $100 per
+chip saved. Steve Jobs took the problem to his friend Steve Wozniak, who managed to fit Breakout into
+many, many fewer chips than anyone at Atari expected. Accordingly, they paid Steve Jobs $5,000. Jobs then
+lied to Steve Wozniak, saying the bonus was $750, and paid Wozniak $375 while keeping the rest. Wozniak
+did not learn about the lie until 10 years later.
+
+This has long since become part of Silicon Valley folklore. It's easy to see why, it's got everything.
+Deception, salesman taking credit for the work of engineers, and the quiet realization that the salesman
+is the reason anyone cares. I expect the OpenAI board drama of 2023 to become equally folklorish, assuming
+we live that long.
+
+
+Tim Cook
+---------------------------------------------------------------------------------------------------------
+
+Tim Cook is the current CEO of Apple, although he will step down in September of this year.
+
+I don't think Tim Cook is much of a gamer. In 2017, he did a whistle-stop tour around Europe, and during that
+trip he visited ustwo
+a software consulting studio that entered mobile gaming in 2011. Their breakout hit was [Monument Valley](https://en.wikipedia.org/wiki/Monument_Valley_(video_game)),
+an iOS puzzle game based on manipulating optical illusions. It's since sold over 26 million copies.
+
+When interviewed by [The Independent](https://www.the-independent.com/tech/apple-tim-cook-boss-brexit-uk-theresa-may-number-10-interview-ustwo-a7574086.html),
+Tim had this to say.
+
+> *Are you a fan of ustwo and Monument Valley?*
+>
+> I love what they’re doing. It’s unique. Most games are shoot-em-up or that kind of stuff. This one feels like there’s more of a core purpose kind of game. I was thinking about the arc of the story, it feels like a Disney story it has that kind of a pull on the heart string. It clearly appeals to a non-gamer.
+
+One imagines Tim counted himself among that group.
+
+
+Jeff Bezos
+------------------------------------------------------------
+
+Jeff Bezos in the former CEO of Amazon. There's little direct mention of him playing any games, but during his tenure,
+he started an Amazon Games Studio and acquired the livestreaming site Twitch. In a call with CNBC,
+Kevin Lin (co-founder of Twitch) said that [Jeff Bezos played some games, but he wouldn't call him a gamer](https://www.cnbc.com/2018/05/01/jeff-bezos-is-a-gamer-if-you-count-flying-rockets-twitch-co-founder.html). He has also historically invested in Second Life and the flash games
+portal Kongregate, according to a 2008 [market intelligence article by Parks Associates](https://www.parksassociates.com/index.php/blogs/digital-media-and-content-distribution/jeff-bezos-a-gamer-at-heart--1). I disagree with the article's claim that investing in gaming makes you a gamer
+at heart. That's like saying Pokemon card scalpers are Pokemon fans at heart. There's overlap but they don't imply
+each other.
+
+The story is similar with Andy Jassy, the current CEO of Amazon. He posts in support of Amazon's gaming efforts
+but there is little reporting of him playing any games.
+
+
 Demis Hassabis
 ------------------------------------------------------------------------
-
-This isn't normally relevant, but disclaimer that I work at Google DeepMind right now.
 
 Demis's life story is tied to games in many ways, although it initially started with chess rather
 than video games. People usually mean video games when they talk about gamers, even if many video
@@ -245,24 +359,18 @@ More recently, Bill Gates talked about video games when doing a book review of [
 > But when I was younger, I loved arcade games and got very good at Tetris. And in recent years, I have started playing a lot of online bridge and games like Spelling Bee and a bunch of the Wordle variants. The definition of a gamer is becoming a lot broader and more inclusive, and it might be fair to start calling me one.
 
 
-Larry Page, Sergey Brin
--------------------------------------------------------------------------------------------------------
+Dario Amodei
+-----------------------------------------------------------------
 
-I did not find any mention of either playing video games.
-There is one [NYT article](https://www.nytimes.com/2023/12/03/technology/ai-openai-musk-page-altman.html)
-that mentions Elon Musk used to crash at Larry Page's place after playing video games, but it never says if Page played
-video games.
+Dario Amodei is the CEO of Anthropic. Given how new his rise to tech CEO celebrity-ism is, you'd think there
+wouldn't be much information about his video game habits out there, but somehow, there is.
+In 2025, The Sunday Times did an interview with several members of the Anthropic founding team, then started
+their article with this banger of an opening.
 
+> Most Sunday nights, Dario Amodei heads over to his younger sister Daniela’s house to play their favourite video game, *Final Fantasy VII Remake*, set in a dystopian world where the goal is to stop an all-powerful corporation from plundering the planet’s resources.
+>
+> Then, on Mondays, they show up at the headquarters of Anthropic, the $60 billion rival to OpenAI they co-founded, to develop artificial intelligence (AI), which they believe will soon replace swathes of human work and, in the process, probably transform their start-up into one of the megacorporations of tomorrow.
 
-Tim Cook
----------------------------------------------------------------------------------------------------------
+[Source](https://web.archive.org/web/20260117131040/https://www.thetimes.com/business/technology/article/anthropic-chief-by-next-year-ai-could-be-smarter-than-all-humans-crslqn90n)
 
-https://www.the-independent.com/tech/apple-tim-cook-boss-brexit-uk-theresa-may-number-10-interview-ustwo-a7574086.html
-
-
-Sundar Pichai
----------------------------------------------------------------------------------------------------
-
-https://www.businessinsider.com/google-ceo-sundar-pichai-favorite-games-fifa-2019-ashes-cricket-2019-3
-
-https://www.youtube.com/watch?v=nUih5C5rOrA
+I will not comment further, but I think we can agree that playing FF7 Remake makes you a gamer.
