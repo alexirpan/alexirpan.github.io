@@ -33,26 +33,26 @@ You'll see why we need the second category. Tiers are unordered.
 (Make this graphic later)
 
 Gamer:
-Demis
-Dario
-Sam Altman
+Demis *
+Dario *
+Sam Altman *
 
 Gamer but Cringe:
-Mark
-Elon
+Mark *
+Elon *
 
 Casual Gamer:
-Sundar Pichai
-Bill Gates
+Sundar Pichai *
+Bill Gates *
 
 Not a Gamer:
-Satya
-Steve Jobs
-Larry Page
-Sergey Brin
-Tim Cook
-Jeff
-Reed Hastings
+Satya *
+Steve Jobs *
+Larry Page *
+Sergey Brin *
+Tim Cook *
+Jeff *
+Reed Hastings *
 
 
 Sam Altman, Elon Musk
@@ -95,7 +95,7 @@ Larry and Sergey are the co-founders of Google.
 I did not find any mention of either playing video games.
 There is one [NYT article](https://www.nytimes.com/2023/12/03/technology/ai-openai-musk-page-altman.html)
 that mentions Elon Musk used to crash at Larry Page's place after playing video games, but it never says if Page played
-video games.
+video games, so I will play it safe and say neither are gamers.
 
 
 Sundar Pichai
@@ -160,7 +160,7 @@ Jeff Bezos
 
 Jeff Bezos in the former CEO of Amazon. There's little direct mention of him playing any games, but during his tenure,
 he started an Amazon Games Studio and acquired the livestreaming site Twitch. In a call with CNBC,
-Kevin Lin (co-founder of Twitch) said that [Jeff Bezos played some games, but he wouldn't call him a gamer](https://www.cnbc.com/2018/05/01/jeff-bezos-is-a-gamer-if-you-count-flying-rockets-twitch-co-founder.html). He has also historically invested in Second Life and the flash games
+Kevin Lin (co-founder of Twitch) said that [Jeff Bezos played some games, but he wouldn't call him a gamer](https://www.cnbc.com/2018/05/01/jeff-bezos-is-a-gamer-if-you-count-flying-rockets-twitch-co-founder.html). Without any specific citations I'm not willing to count this. He has also historically invested in Second Life and the flash games
 portal Kongregate, according to a 2008 [market intelligence article by Parks Associates](https://www.parksassociates.com/index.php/blogs/digital-media-and-content-distribution/jeff-bezos-a-gamer-at-heart--1). I disagree with the article's claim that investing in gaming makes you a gamer
 at heart. That's like saying Pokemon card scalpers are Pokemon fans at heart. There's overlap but they don't imply
 each other.
