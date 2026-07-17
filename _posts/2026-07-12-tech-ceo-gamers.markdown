@@ -28,31 +28,10 @@ rating them among four tiers:
 * Casual Gamer
 * Not a Gamer
 
-You'll see why we need the second category. Tiers are unordered.
+You'll see why we need the second category.
 
-(Make this graphic later)
-
-Gamer:
-Demis *
-Dario *
-Sam Altman *
-
-Gamer but Cringe:
-Mark *
-Elon *
-
-Casual Gamer:
-Sundar Pichai *
-Bill Gates *
-
-Not a Gamer:
-Satya *
-Steve Jobs *
-Larry Page *
-Sergey Brin *
-Tim Cook *
-Jeff *
-Reed Hastings *
+![Tier list 1](/public/tech-ceo-gamers/my-image.png)
+{: .centered }
 
 
 Sam Altman, Elon Musk
@@ -87,6 +66,9 @@ I can't begin to get into this, I just can't.
 I would rate Sam's gamer cred as 7/10, and Elon's as 6/10, where Elon's would be much higher if he
 weren't so weird about trying to prove he's good at them.
 
+![Tier list 2](/public/tech-ceo-gamers/my-image-1.png)
+{: .centered }
+
 
 Larry Page, Sergey Brin
 -------------------------------------------------------------------------------------------------------
@@ -96,6 +78,9 @@ I did not find any mention of either playing video games.
 There is one [NYT article](https://www.nytimes.com/2023/12/03/technology/ai-openai-musk-page-altman.html)
 that mentions Elon Musk used to crash at Larry Page's place after playing video games, but it never says if Page played
 video games, so I will play it safe and say neither are gamers.
+
+![Tier list 3](/public/tech-ceo-gamers/my-image-2.png)
+{: .centered }
 
 
 Sundar Pichai
@@ -115,6 +100,9 @@ against people who only play those games.
 
 Stadia would be shut down a few years later.
 
+![Tier list 4](/public/tech-ceo-gamers/my-image-3.png)
+{: .centered }
+
 
 Steve Jobs
 ---------------------------------------------------------------------------------------------------
@@ -133,6 +121,9 @@ This has long since become part of Silicon Valley folklore. It's easy to see why
 Deception, salesman taking credit for the work of engineers, and the quiet realization that the salesman
 is the reason anyone cares. I expect the OpenAI board drama of 2023 to become equally folklorish, assuming
 we live that long.
+
+![Tier list 5](/public/tech-ceo-gamers/my-image-4.png)
+{: .centered }
 
 
 Tim Cook
@@ -154,6 +145,9 @@ Tim had this to say.
 
 One imagines Tim counted himself among that group.
 
+![Tier list 6](/public/tech-ceo-gamers/my-image-5.png)
+{: .centered }
+
 
 Jeff Bezos
 ------------------------------------------------------------
@@ -167,6 +161,9 @@ each other.
 
 The story is similar with Andy Jassy, the current CEO of Amazon. He posts in support of Amazon's gaming efforts
 but there is little reporting of him playing any games.
+
+![Tier list 7](/public/tech-ceo-gamers/my-image-6.png)
+{: .centered }
 
 
 Demis Hassabis
@@ -190,6 +187,9 @@ games on Lex Fridman's podcast, he names [Civilization I and II](https://www.you
 which are both over 30 years old. But, let's just say you don't go into the games industry unless you like
 video games. It's an infamously bad industry to work in, because like many entertainment industries, enough
 people want to work there that you get underpaid and overworked.
+
+![Tier list 8](/public/tech-ceo-gamers/my-image-7.png)
+{: .centered }
 
 
 Mark Zuckerberg
@@ -283,6 +283,9 @@ beats Mark at board games on the flight back and he accuses her of cheating.
 She then says that Mark had tunnel visioned on winning Longest Road and would have won if he'd made
 some different plays on his last turn.
 
+![Tier list 9](/public/tech-ceo-gamers/my-image-8.png)
+{: .centered }
+
 
 Reed Hastings
 -----------------------------------------------------------
@@ -311,6 +314,9 @@ this drives.
 
 I haven't been able to find any articles saying he's played video games himself, so I think he sees them
 as a vehicle of screentime rather than something to actually play.
+
+![Tier list 10](/public/tech-ceo-gamers/my-image-9.png)
+{: .centered }
 
 
 Bill Gates
@@ -358,6 +364,9 @@ More recently, Bill Gates talked about video games when doing a book review of [
 >
 > But when I was younger, I loved arcade games and got very good at Tetris. And in recent years, I have started playing a lot of online bridge and games like Spelling Bee and a bunch of the Wordle variants. The definition of a gamer is becoming a lot broader and more inclusive, and it might be fair to start calling me one.
 
+![Tier list 11](/public/tech-ceo-gamers/my-image-10.png)
+{: .centered }
+
 
 Dario Amodei
 -----------------------------------------------------------------
@@ -374,3 +383,6 @@ their article with this banger of an opening.
 [Source](https://web.archive.org/web/20260117131040/https://www.thetimes.com/business/technology/article/anthropic-chief-by-next-year-ai-could-be-smarter-than-all-humans-crslqn90n)
 
 I will not comment further, but I think we can agree that playing FF7 Remake makes you a gamer.
+
+![Tier list 12](/public/tech-ceo-gamers/my-image-11.png)
+{: .centered }
