@@ -2,6 +2,7 @@
 layout: post
 title:  "Which Tech CEOs Are Gamers?"
 date:   2026-07-17 00:45:00 -0700
+excerpt: In a court of law, Satya Nadella said he is not a gamer.
 ---
 
 In a court of law, Satya Nadella said he is not a gamer.
@@ -21,7 +22,7 @@ Satya Nadella is not a gamer. In the face of potential perjury, he admitted it.
 
 There has always been a healthy overlap between tech workers and gamers.
 Reading Satya testifying about his gamer cred was ridiculous enough to inspire
-a dumb idea: which tech CEOs are gemers? How does Satya rate to his peers?
+a dumb idea: which tech CEOs are gamers? How does Satya measure up against his peers?
 
 As a gaming project, it seems most appropriate to organize CEOs into a tier list. I will be
 rating them among four tiers:
@@ -61,7 +62,7 @@ If you don't want to watch,
 
 The video then turns to a discussion about how older games with weaker graphics had to
 rely on storytelling to fill the gaps. I'd rate this somewhat true - storytelling has gotten
-significantly easier with graphics if you care about it. Then Sam comes in saying old Mario games had incredible story, which I find very weird. When you think of a good
+significantly easier with graphics if you care about it. Then Sam comes in saying old Mario games had incredible stories, which I find very weird. When you think of a good
 story-based game, Mario is far, far down the list. (Although the Mario RPG
 stories are often good.)
 
@@ -75,7 +76,7 @@ He later acknowledged that [he had paid for an account booster to play the game 
 every high ranked player does it. This is, uh, not true? I can't begin to get
 into this, I just can't.
 
-Sam makes it to the Gamer tier, I must put Elon in the Gamer but Cringe tier. I wouldn't have any self-respect if I didn't.
+Sam makes it to the Gamer tier, but out of self-respect I must put Elon in the Gamer but Cringe tier.
 
 ![Tier list 2](/public/tech-ceo-gamers/my-image-1.png)
 {: .centered }
@@ -144,8 +145,7 @@ Tim Cook
 Tim Cook is the current CEO of Apple, although he will step down in September of this year.
 
 I don't think Tim Cook is much of a gamer. In 2017, he did a whistle-stop tour around Europe, and during that
-trip he visited ustwo
-a software consulting studio that entered mobile gaming in 2011. Their breakout hit was [Monument Valley](https://en.wikipedia.org/wiki/Monument_Valley_(video_game)),
+trip he visited ustwo, a software consulting studio that entered mobile gaming in 2011. Their breakout hit was [Monument Valley](https://en.wikipedia.org/wiki/Monument_Valley_(video_game)),
 an iOS puzzle game based on manipulating optical illusions. It's since sold over 26 million copies.
 
 When interviewed by [The Independent](https://www.the-independent.com/tech/apple-tim-cook-boss-brexit-uk-theresa-may-number-10-interview-ustwo-a7574086.html),
@@ -153,7 +153,7 @@ Tim had this to say.
 
 > *Are you a fan of ustwo and Monument Valley?*
 >
-> I love what they’re doing. It’s unique. Most games are shoot-em-up or that kind of stuff. This one feels like there’s more of a core purpose kind of game. I was thinking about the arc of the story, it feels like a Disney story it has that kind of a pull on the heart string. It clearly appeals to a non-gamer.
+> I love what they’re doing. It’s unique. Most games are shoot-em-up or that kind of stuff. This one feels like there’s more of a core purpose kind of game. I was thinking about the arc of the story, it feels like a Disney story. It has that kind of a pull on the heart string. It clearly appeals to a non-gamer.
 
 One imagines Tim counted himself among that group.
 
@@ -164,7 +164,7 @@ One imagines Tim counted himself among that group.
 Jeff Bezos
 ------------------------------------------------------------
 
-Jeff Bezos in the former CEO of Amazon. There's little direct mention of him playing any games, but during his tenure,
+Jeff Bezos is the former CEO of Amazon. There's little direct mention of him playing any games, but during his tenure,
 he started an Amazon Games Studio and acquired the livestreaming site Twitch. In a call with CNBC,
 Kevin Lin (co-founder of Twitch) said that [Jeff Bezos played some games, but he wouldn't call him a gamer](https://www.cnbc.com/2018/05/01/jeff-bezos-is-a-gamer-if-you-count-flying-rockets-twitch-co-founder.html). Without any specific citations I'm not willing to count this. He has also historically invested in Second Life and the flash games
 portal Kongregate, according to a 2008 [market intelligence article by Parks Associates](https://www.parksassociates.com/index.php/blogs/digital-media-and-content-distribution/jeff-bezos-a-gamer-at-heart--1). I disagree with the article's claim that investing in gaming makes you a gamer
@@ -247,7 +247,7 @@ is that Sarah's account tends to downplay her role in events, and include some
 light embellishment, but the broad strokes of the stories are true. Which makes
 the Settlers of Catan story *extra* wild.
 
-Sarah claims that at a company retreat, she particpated in a six player game of Settlers of Catan.
+Sarah claims that at a company retreat, she participated in a six player game of Settlers of Catan.
 As the game continues, she believes the other players are deliberately throwing to make sure Mark
 Zuckerberg wins.
 
@@ -288,7 +288,7 @@ said Mark did win the game, but he wasn't trying to throw for Mark.
 This was posted to where else but
 [Threads](https://www.threads.com/@dexhuntertorricke/post/DHCUpnssuuw).
 I find this statement very confusing. Catan is *really not* the kind of game where you can "eliminate the weaker players". It is a Eurogame
-with no direct player elimination where all player's economies grow over time.
+with no direct player elimination where all players' economies grow over time.
 You can indirectly fight when racing to the good locations, but it is almost always
 better to focus on your economy rather than try to deliberately attack someone else's.
 This strategy of beating up the weaker players sucks ass.
@@ -298,7 +298,7 @@ Mark cheated at the game with out-of-gamesmanship, and he's been telling
 this story "for years".
 I'm inclined to believe one of two
 things: Dex was trying to throw and is covering his ass badly, or Dex was
-earnesly trying to win and is just terrible at Catan strategy. I think the second
+earnestly trying to win and is just terrible at Catan strategy. I think the second
 is funnier, so I'm going with that. Get better at board games Dex!!!
 
 His rebuttal does confirm that this Settlers of Catan game was real, so I believe Sarah when she says Mark accuses her of cheating after she beats him at Ticket to Ride.
