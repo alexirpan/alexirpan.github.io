@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Eleven Years Later"
-date:   2026-08-17 09:19:01 -0700
+date:   2026-08-18 00:43:01 -0700
 ---
 
 > \> Check the calendar.
