@@ -1,0 +1,470 @@
+---
+layout: post
+title:  "\"Oh No, I'm Illiterate\" - The P&KU3（中）Experience"
+date:   2026-08-18 00:43:01 -0700
+---
+
+I'm an ABC, meaning an American-born Chinese. On one hand, this is a technical
+label, for a Chinese person born in the US. But the full story is more
+complicated, with other identities and cultures attached. I'm not planning to
+get into it more, but I'd say that I am tangentially aware of the Chinese
+language and culture, but don't consider myself well-versed
+in it and have to use Google Translate for just about everything.
+
+P&KU3 is the 3rd puzzlehunt run by alumni of Peking University (PKU), one of the top universities in China and the world. Like other puzzlehunts, there are puzzles
+where the instructions aren't directly given, and everything resolves to an
+answer. Unlike typical English puzzlehunts, most text will be in Chinese, and
+the answer could be too (although some English-only puzzles exist too).
+
+A few of us decided to try solving this hunt. Although no one was fully illiterate,
+the span of literacy went from 2nd grade level, to 2 fully literate people who
+were only available for the start of hunt.
+Although it obviously would have been helpful for all of us to be literate, it
+wasn't totally necessary. It was kind of like solving GPH 2019, where the
+puzzles involved a conlang, except it's an actual language with existing translation
+and dictionary search tools. All puzzlehunts involve some level of research
+into unfamiliar subject matter, and usually we didn't get stuck on not knowing
+Chinese culture.
+
+We did not finish, but we got far enough in to
+appreciate a lot of the construction. I would consider this hunt to be in the
+same ballpark of structure and polish as the Galactic and Teammate Hunts. There
+were plenty of interesting turns, jokes, and hard, hard puzzles. This is our story.
+
+
+Warning
+----------------------------------------------
+
+Like most of my hunt writeups, this will freely spoil puzzles, but I will be describing their solve paths in much more detail.
+This is becasue I suspect people reading this are less likely to give Chinese
+puzzlehunts a chance, and so I want to try conveying the hunt experience more
+than I otherwise would.
+
+
+Prelude
+----------------------------------------------
+
+The full name of the hunt is Puzzle & Key Universe 3（中）, where 中 translates
+to "middle". This is because this in the 2nd hunt in a planned trilogy of puzzlehunts,
+starting with P&KU3（上）from 2024. It's an ambitious choice, where each hunt is
+self-contained, but the overarching story is told across 3 hunts. To be honest,
+I did not really understand the plot, even with Google Translate. I think it's
+a doomed yuri plot? For our purposes, it's enough to know P&KU3（中）follows a girl named
+Yu Die, and is broadly butterfly themed.
+
+This hunt was *long*. Team size limit was 6, and the first finishing team finished
+in 52 hours, 57 minutes, which makes it longer than even the harder-than-normal
+GPH 2025. Puzzles ranged from super short puzzles in the style of
+GPH 2024, to very long Mystery Hunt length puzzles, split across 6 rounds.
+
+Broadly, I'd say there were a few differences in P&KU3 compared to English hunts
+I've done.
+
+First, like English hunts, there are metapuzzles that represent
+the ending of a set of puzzles. Unlike English hunts, many of these metapuzzles
+did not use feeder puzzles as answers, instead treating them as summaries or
+capstones of their individual puzzles. They usually still felt thematically correct.
+
+Second, puzzles in this hunt were significantly more pictographic.
+I think this is a downstream consequence of the Chinese language being logographic,
+where characters are made of one of more radicals arranged in different ways.
+While English carries information in what letters are in a word, Chinese carries
+information by what radicals are in a character *and* how they are spatially
+arranged. This means you can write a lot of puzzles based around those spatial
+relationships.
+
+Third, hinting was much more open. P&KU3 used a mixed of canned hints and freeform
+hints. Each minute, teams would earn 10 attention points (we started calling
+these hint points.) Each puzzle would include some canned hints of varying cost,
+that would only be revealed after enough time had passed. For some puzzles, these
+canned hints were sledgehammers. As an example, one puzzle in a later round was
+a Chinese dropquote. This puzzle was based on ideographic description characters,
+used to describe how Chinese characters are laid out. For example, ⿰口犬 = 吠
+and ⿴囗人 = 囚. The puzzle was based on resolving dropquotes with these ideographic
+description characters to assemble readable phrases.
+
+IMAGE
+
+This just step 1 of the puzzle. Each dropquote then needed to be interpreted
+in a cryptic-style way to get another character. The only one we solved was
+左右共同插入受. Directly translating gives "Insert the receiver from both the left
+and right sides", which is garbage. The correct intrepretation is this:
+
+* "共同" means "common", so "左右共同" means "what is common between 左 and 右",
+which is 𠂇
+* "插入" means "insert", so add this within 受 to make 爱, the answer (translation: love).
+
+There were 12 of these and we were not getting the rest. But! One of the canned
+hints for the puzzle was "we don't want to do this, can we just have the answer".
+This cost 6000 points (so 600 minutes or 10 hours of hint time), and we ended up
+taking it. Not every puzzle was as drastic as this one with its hinting, this
+is more to convey what is in-range of the canned hints.
+
+As for the freeform hints, while the hunt was live, you could send a question
+to the hunt organizers. Like the Mystery Hunt system, there were infinite hints,
+but only 1 could be open at a time. Unlike the Mystery Hunt system, the hunt
+organizers would reply describing the response you'd get, then gate it behind
+spending more points. I'm not sure how custom the hint costs were, since we didn't
+use this feature much due to not wanting to write Chinese hints as much. My guess
+is that it was somewhat dynamic based on team progress, and was a way for them
+to give canned hints where even revealing the question you'd ask would be too
+much of a spoiler.
+
+
+蛹 (Translation: Pupa)
+------------------------------------------
+
+The first round of the hunt was themed around the start of a butterfly's journey.
+Mechanically, this round was split into different regions, each with a weird
+puzzle structure. For example, one subround was 4 metas that each took answers of
+the other 3 metas as inputs.
+
+IMAGE
+
+Another was made of 4 feeders and 4 metas. In the course of solving, you learned
+that the 4 feeder answers were the four classical elements of earth, water, air,
+and fire. Each meta uses exactly 1 feeder, but some would accept multiple elements.
+The overarching puzzle was to find the element <--> meta pairing that made every meta solvable.
+
+IMAGE
+
+Keep in mind this is the first round! Things did not start chill. To finish the
+round, every meta needed to be solved, and the hardest (yet most interesting) one
+was the 占星术 (translation: astrology) subround. Each puzzle in the round was
+a picture that had been chopped up, then rearranged.
+
+IMAGE
+
+IMAGE
+
+First, you needed to understand this aspect of the round structure, then figure
+out the matching. In this example, the puzzle is about phases of the moon. The
+Chinese character for moon is 月, and the word for new moon is 朔. So we can interpret
+the compressed dark moon as "right half of 朔 is 月". The answer to this is the
+character for full moon, 望, which is consistent with the top-right being a 月.
+
+Meanwhile, the other puzzle is an English puzzle. 星 translates to STAR, and
+after some time, we realized the cut-off character could be 艺, meaning ART.
+This means the answer is the translation of START, 始.
+
+Except, this isn't actually the answer. The key break-in is to realize that
+*the puzzles have been divided according to the character they solve to*. So the
+answer submittable to Meta: 星夜 is the bottom half of 望 above the top-right
+corner of 始, which is 丢.
+
+This also meant we couldn't submit any answers until we had mix-and-matched a
+few of the base puzzles. But once we knew what we were doing, we could use
+ideograph searching tools to search by radical placement, like [⿱⿰女口？](https://zi.tools/?secondary=ids&seq=%E2%BF%B1%E2%BF%B0%E5%A5%B3%E5%8F%A3%EF%BC%9F).
+The guess limit on regular puzzles in this hunt was a 1 minute timeout on the
+first wrong guess, then 2 minutes, 3 minutes, etc., so we couldn't do a ton of
+spamming, but we could do enough.
+
+This concluded in a capstone that was entirely blank. Each base puzzle was incomplete,
+with one section that should have been there. Anagramming all the leftover radicals
+into a valid character gave the final answer.
+
+I think the puzzle would have been much smoother for us if we'd known Chinese
+better, but the underlying mechanic was just really cool and something that
+leveraged the Chinese language well.
+
+
+镜湖 (Translation: Mirror Lake)
+--------------------------
+
+This was the 2nd round of the hunt, unlocking after we'd made enough progress in 蛹.
+It was made of two subrounds, both based on the theme of mirroring.
+
+Each round begins with a story section, that lightly clues the mechanics of the
+round. This one had a special disclaimer:
+
+> 本区部分题目标题neta了《杀戮尖塔》中的卡牌名，与P&KU3（中）流程无关
+
+Translation: "The titles of puzzles in this section reference card names from
+*Slay the Spire*. This is not relevant to solving P&KU3（中）"
+
+
+湖边小径 (Translation: Lakeside Path)
+------------------------------------------------------------------------
+
+This round opened with many short puzzles. Here's the first one, 洞见 (translation: Insight).
+
+IMAGE
+
+The character for rice is 米, the one for 10 is 十, and the one for down is 下.
+Imagine an 8 pointed star. Each character is what you'd get if you drew a line from the center
+to every box along the border. The ? character is the answer, 木, which means wood.
+This was literally a 1 minute solve for us. We at least knew that much Chinese.
+
+The next one we solved was 偏差认知 (translation: Biased Cognition).
+
+IMAGE
+
+The character for must is 必, and the one for seven is 七. For continent, the
+single character translation is 洲, and river can be translated as 川. Although
+河 is the one that comes to my mind first, we want 川 because it completes the
+pattern. Each character loses 1 dot per red arrow to form a new character. The
+answer is 米 minus 2 dots, or 木.
+
+Here's a third one, 循环 (translation: Loop).
+
+IMAGE
+
+It's a Slitherlink! It solves to this.
+
+IMAGE
+
+The answer is 木.
+
+At this point, we started getting suspicious, and guessed 木 to a puzzle we hadn't
+opened yet. It was correct.
+
+The gimmick of the round was that it had 80 feeder puzzles which all solved to
+木. They wrote 80 feeder extractions entirely for the bit. It was insane.
+
+Solving enough of these puzzles unlocks a set of 5 metas. These are the "real"
+puzzles of the round. Each either uses 木 in a different way, or takes a varying
+number of 木 as input. We'll start with the last one, 迷篱 (translation: Hedge Maze)
+
+IMAGE
+
+The puzzle came with the following instructions:
+
+> 从起点走到终点，格子不能重复经过，要求路径经过的图案恰好与属于本元谜题的答案们一一对应。
+提取走到每一个小题答案对应的符号后，紧接着走到的下一格中的字母（如果下一格中没有字母，就不用提取）。
+
+Translation: Travel from the start to the end without revisting any cells. The path
+must cross through a sequence of symbols that matches exactly to the answers of
+the feeder puzzles. After reaching a symbol corresponding to a puzzle answer,
+extract the letter in the very next cell (if there is no letter, extract nothing).
+
+The trick is that this maze has multiple solutions, which each cut a different
+number of trees while forming a valid English word. So this maze isn't solvable
+until you make enough progress on the other metas to know exactly how many
+feeders are allocated to the maze meta, acting as a meta-meta of sorts.
+
+The other puzzles then used 木 in different ways.
+慧眼识才 was a word search where 木 radicals needed to be inserted into the word
+search. 提笔成文 used
+the stroke order of writing 木 to clue characters, requiring you to find the
+boundaries between characters in the way similar to finding boundaries between
+Morse code letters in a sequence of dots and dashes.
+我的变形术 was a cursed Minecraft puzzle based on items craftable with wood. And
+多样性 was a meta-matching puzzle with known feeder bank, inside a meta-matching
+round of matching 80 木s.
+
+
+湖心岛 (Translation: Island in the Lake's Center)
+-------------------------------------------------------------------
+
+This was the 2nd subround of Mirror Lake, and our first reaction was "oh no". The
+round was made of 500 feeders. Luckily, the puzzle content for each was short,
+but they were short in a "we need to break in way". For example, one puzzle
+was just the text "本题答案是一个 D 开头的四字母单词。" (Translation: the answer is a 4 letter word that starts with D.)
+Among these 500 feeders, puzzles repeated multiple times, with 3 copies of
+the 4 letter D word puzzle, and 94 copies of a "the answer is a body part" puzzle.
+In fact there were 2 such body part puzzles, with 35 copies and 94 copies respectively.
+We started our solve by cataloguing all the puzzles.
+
+This then formed another meta matching round, this time with 4 feeders. The
+intended solve path was to use the meta contents to decide what feeder answers
+should be. Our break-in was 理性与实践 (translation: Reason and Practice).
+
+Here's an example clue from the puzzle
+
+IMAGE
+
+One of our feeder puzzles was "本题答案是一个希腊人。" (Translation: The answer to this question is a Greek person.)
+The diagram is of Zeno's Paradox, which is also known as Achilles and the tortoise.
+So the answer to this puzzle was ACHILLES, and the answer to another puzzle was
+TURTLE (the answer needed to be 6 letters to fit extraction). Continuing in this
+vein, this image
+
+IMAGE
+
+was in fact cluing the Monty Hall problem. It takes 3 feeders with answer DOOR,
+2 with answer GOAT, and 1 with answer CAR. This is why feeders were duplicated
+within our round. Each image in the puzzle was cluing a different thought
+experiment or math problem, like "infinite monkeys with a typewriter will reproduce Shakespeare",
+and we had just a ton of copies of the puzzle that solved to MONKEY.
+or [the 17-animal inheritance problem](https://en.wikipedia.org/wiki/17-animal_inheritance_puzzle).
+Solving the puzzle required cross-checking answer counts and types, and often
+the count was important to finding the reference. None of us had heard of the
+17 animal problem before, and we only found it by searching for thought experiments
+that could use 17 HORSEs from our feeders. Similar searches helped us figure out
+why we had so many body parts; one image was referencing a classic
+problem in Sunzi Suanjing, a math textbook from 4th century China.
+"If there are 35 heads and 94 feet, how many roosters and rabbits do you have?"
+
+
+This round included a meta called 世界上最大的仙人指路 (translation: World's Largest Yajilin).
+The feeders included many copies of two Yajilin puzzles, red and blue. Each
+puzzle asked "how many solutions does this Yajilin have?", which we'd solved as
+1 by just guessing.
+
+The meta was based on arbitrarily large grids formed by copies of these Yajilins.
+To solve, we needed to find how many solutions an $$a x b$$ grid of Yajilins
+would have, for arbitrary $$a$$ and $$b$$.
+
+IMAGEs
+
+We...did not have the brain to do this. Luckily, for this meta (and this meta alone),
+there was a canned hint saying "I don't want to do logic puzzles. Please just give me the equation for s(a,b)",
+which cost 9000 points (15 hours). We made some progress on our own before giving
+up and taking the hint, which massively simplified the problem.
+
+My favorite moment of the round was 世界上最小的元谜题 (translation: World's Smallest Metapuzzle).
+The page was made of a single 6x6 pixel image. Here's a version of it blown up
+to scale.
+
+IMAGE
+
+Our expectation for this puzzle was that we would have six leftover feeders of
+length 6, put them in the grid, then read the red squares. As we solved more,
+we kept assigning all copies of our feeders to other metas, and did not have
+many more 6-length answers left. At this point, I suddenly realized that the number
+of monkeys that went to the thought experiment puzzle was unbounded, (infinite - 6)
+monkeys was still infinite monkeys, and proposed the meta just solved to MONEY.
+It did, and after wrapping up World's Largest Yajilin, we finished the round.
+
+As one final closing note, we held off on submitting answers to all copies of
+the feeders. This was because of some text suggesting that answer timeouts in
+the round increased the more feeders you solved. With all metas done, we were
+free to farm leaderboard points by submitting all the filler solves to get +500
+solves.
+
+One difference in P&KU 3 is that it is incredibly laissez faire on automation.
+Any usage of an LLM was allowed, inspecting source code was allowed, and writing
+code to interact with the website was allowed too. The only rules were that
+your script needed to interact with the website the same way a person would
+(i.e. no constructing manual API requests), and your script acted no faster than
+a person would. I spent 20 minutes making a computer macro to load and submit
+every unsolved feeder, to run while doing my day job.
+
+As for LLM usage, we used it a bunch, to do steps which we knew a fluent
+solver could do, but which would be unreasonable without fluency, such as
+finding phrases in a word search. The only alternative would have been to
+Google an exponential number of phrases to see if they had enough answer phrase
+energy. It's made me reconsider the English hunt stance of discouraging LLM
+usage, as I hadn't considered the accessibility aspects of the technology.
+I think this may be an interstitial moment of LLM strength though, rather than
+a status quo.
+
+
+布道谷 (Translation: Preacher's Valley)
+----------------------------------------------------------------------
+
+This seemingly normal round was themed around a murder mystery. The story
+was that before Yu Die arrived, eighteen people had been murdered (corresponding
+to the 18 feeder puzzles). Yu Die needed to solve the mystery of how they'd been
+murdered.
+
+In practice, this meant entirely normal feeder puzzles. We started with 玲珑心 (translation: Exquisite Heart),
+the rare puzzle where we got an English buff rather than a Chinese nerf. The
+puzzle had entirely English clues and answers. I then got completely destroyed by
+球形统计图 (translation: Spherical Statistics Chart)
+
+IMAGE
+
+My thinking was that this was about Earth geophysics, since the background looked
+like the cross section of Earth I've seen in textbooks. By weight, the most
+common elements in Earth's crust are O, Si, Al, Fe, and Mg. Arranging the letters
+as shown gives ASOCIAL, which was wrong. I got very confused and left.
+Around 5 hours later, I learned that "A. SOCIAL" meant "Answer: SOCIAL".
+I will chalk this up to some Chinese cultural convention diff and stop thinking
+about it.
+
+Other memorable puzzles in the round were 0还是1 (translation: 0 or 1), a puzzle
+that would have fit into any English hunt if the flavor text were translated, and
+■异常 (translation: ■ Anomaly), a set of minipuzzles where each color has been
+changed to a different one. We accidentally broke into that mechanic when
+someone with partial color blindness thought purple was blue.
+
+For example puzzles that leveraged Chinese language more, there was 递归字谜 (translation: Recursive Word Puzzle).
+
+IMAGE
+
+We needed literacy to bootstrap this one. Chinese characters come in two styles:
+traditional, the style that's existed for centuries, and simplified, a version
+pushed by the modern Chinese government to promote literacy. Fluent readers are
+typically able to switch between both without issue, since simplifications
+are often intuitive or derivable from context. If you learn Chinese in the US,
+you will usually be taught Simplified, but will be given enough awareness of
+Traditional to recognize it.
+
+So, taking an example, 面 means noodle, and is the simplification of 麵.
+Hypothetically, since 麵=面, we can substitute 麵 into the right half of
+麵. If we recue this infinitely, we end up with an infinite series of the
+left radical.
+
+IMAGE
+
+For each infinitely recurring radical series, the puzzle is to find what
+Simplified Chinese character can be inserted such that it forms itself in Traditional
+Chinese. This is just a really cool dataset! There are several pages online
+cataloging Simplified vs Traditional differences, but it's still tricky to find
+the correct character since you're only ever given one of its radicals in the given.
+
+Other cool puzzles were 点寻 (translation: Point Search), a Chinese word search
+that used its grid in an interesting way, and 在骨牌游戏玩叠叠乐是否搞错了什么 (translation: Is Something Wrong With Playing Jenga With Dominoes),
+a Chengyu puzzle. Chengyu, or 成语, are four character Chinese idioms. Some have
+existed since ancient China, and some are modern.
+They're a big part of Chinese linguistics,
+with their own [online dictionaries](https://chengyu.qianp.com/), making them good
+puzzle fodder.
+
+IMAGE
+
+This puzzle in particular was about Chengyu with numbers. The intended break-in
+is to see 穷 in the diagram on a red-blue domino. A red-blue domino must have
+a red one (一) and blue two (二). The only Chengyu that starts 一穷二 is 一穷二白.
+This idiom comes from
+a Mao Zedong speech, but for our purposes it's enough to know that 白 means white
+and matches the ⬜ emoji. From this we see the puzzle is to place the emoji and dominoes
+in the grid such that every domino forms a Chengyu, and overlapping dominoes agree
+on their emoji.
+
+After solving enough feeders, we unlocked the first meta, which is where the
+structure of the round got revealed.
+
+IMAGE
+
+Throughout the round, a few puzzles had parts ripped out of them. We didn't make
+much note of it at the time, since we always solved around them and they were
+pretty minor. There were five such puzzles, and each ripped out piece could be
+interpreted as some classic hunt encoding (Braille, semaphore, etc.)
+
+On solving this meta, we unlocked six more. Each meta worked in a similar way.
+Instead of using answers to feeder puzzles, each used some aspect of the puzzle's
+presentation.
+For example, 兼爱众生的布道者 (translation: A Preacher that Loves All Things)
+was a meta about individual clues of puzzles that had solved to LOVE, 爱 (translation: love), or 心 (translation: heart).
+
+IMAGE
+
+Solving requires finding the five love clues across the entire round (although in
+practice we solved it with three).
+
+There was also 求知若渴的布道者 (translation: A Preacher With an Insatiable Thirst for Knowledge),
+whose flavor text hinted that it was about appearnces of flowers or 花.
+I mention it because the meta answer to it was YURI, to which I will just quote
+the Author's Notes.
+
+> 编写本题的时候，就觉得“花心”的实现方式应该是每道谜题都不一样的。后来CALS和lini老师各自在他们的谜题里给出了非常有趣的藏花的方案，真是太好了！
+>
+> 顺带一提，因为驭蝶没有接触过合格的相关教育。所以她很容易就做出了这道题，没把这题往那个隐晦的主题去思考。
+
+Translation: When I was designing this puzzle, I felt that the implementation of the "flower" element should be unique to each puzzle. Later, CALS and lini came up with some truly fascinating ways to hide the flowers in their own puzzles—it was fantastic!
+
+Incidentally, since Yu Die hasn't received any formal training in this specific area, she was able to solve the puzzle easily without getting sidetracked by that obscure underlying theme.
+
+The last of these metas I will talk about is 有容乃大的布道者 (translation: A Preacher Whose Tolerance is a Virtue).
+
+IMAGE
+
+The flavor text of this puzzle was
+> 在饿的时候，人可以把所有东西看成吃的。
+
+Translation: When hungry, a person can view everything as food.
+
+
+based on 
