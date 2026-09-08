@@ -40,6 +40,10 @@ This is becasue I suspect people reading this are less likely to give Chinese
 puzzlehunts a chance, and so I want to try conveying the hunt experience more
 than I otherwise would.
 
+That being said, for now the hunt website is fully functional if you set up a
+team. So if you have plans to post-solve the hunt, come back to this post
+afterwards. (You know who you are.)
+
 
 Prelude
 ----------------------------------------------
@@ -549,9 +553,9 @@ The area comprises 176 puzzles in total, each bearing a unique identification nu
 Puzzles with different ID numbers have different answers.
 For any given puzzle, there is never more than one valid answer.
 Occasionally, a puzzle may reference the answer to another; such puzzles contain a box displaying the ID number of the puzzle whose answer is being referenced.
-To escape this place, please ensure you understand the rules above, submit the answers for each puzzle in the designated fields, and solve the final puzzle. The answer to this final puzzle is: "Entangled with us forever until the very end."
+To escape this place, please ensure you understand the rules above, submit the answers for each puzzle in the designated fields, and solve the final puzzle. The answer to this puzzle is:
+"与我们永远纠缠直至终结." (translation: Entangled with us forever until the very end)
 Enjoy the game.
-与我们永远纠缠直至终结
 
 To elaborate on this: the 176 puzzles in Hanging Spider Web were split into
 multiple themed rounds. Each round is made of puzzles that reference each other,
@@ -589,9 +593,6 @@ For the rest of the round, 8 = 日 is interchangable. In puzzle 5, there are 2 o
 I won't go through all the gimmicks, as there were a lot of them, but here's
 a selection of ideas that came up.
 
-* Puzzles with ID "X" where the puzzle said "The answer is the answer to puzzle X",
-and they had to be backsolved from where X was used elsewhere.
-* Puzzles based on redacting different halves of each other.
 * An emoji round where you are told up front that all answers in the subround are
 emoji, and to use the Apple rendering of emojis if sources differ. Then emoji
 were used in wild ways, like this.
@@ -620,3 +621,192 @@ IMAGE
 "answer is itself" puzzle. We want to complete what looks like an R at the right,
 but how?
 
+IMAGE
+
+That's how. The answer is 🍺.
+
+In later rounds, puzzles started using boxes in increasingly cursed ways. To quote
+the authors,
+
+> 直到前一章都是比较“正统”的章节，而本章开始则是比较“邪道”的章节，充满了各种诡计。
+
+Translation: The earlier sections were relatively "orthodox". This section marks
+the beginning of a more "unorthodox" phase with many tricks and schemes.
+
+This trickery began with iterated boxes. Take this initial example.
+
+IMAGE
+
+Earlier, we had solved puzzle 4 to minus sign, -. But it's double-boxed. We should
+now substitute again with the answer to puzzle 一, which was U. This escalated
+further, into puzzles like "the answer to puzzle シ is シ in 200 boxes".
+
+IMAGE
+
+This continued into puzzles where you were supposed to keep boxes, or where answers
+contained their own boxes. Here is one I felt very proud of when I solved it
+in a puzzle haze at 1 AM. 
+
+IMAGE.
+
+This uses two puzzles, a light blue and light green box, but neither of these
+are used anywhere else in the round, so this puzzle is the only constraining factor.
+
+On some Google searching, we learned that 贞观 is the era name of Taizong, the
+2nd emperor of the Tang dynasty. In Chinese, that's 唐太宗. From other puzzles
+in the round, we knew the vertical lines were equal symbols, indicating that
+the answer was an X such that 唐X宗 was the name of an emperor. There are only so
+many of these, so we could try all of them and confirm the answer was 玄, for 唐玄宗.
+
+唐玄宗 had 3 era names: 先天, 开元, and 天宝. And this pile of boxes has to resolve
+to one of them.
+
+IMAGE?
+
+Looking at the image, I noticed that the extra long box really ought to resolve
+to 2 characters. Within our past puzzles, one of them had the answer 开口, which
+was tantalizing close to 开元. So here's how the logic works.
+
+* 开口 is the answer to puzzle xv. The image has light blue within 2 boxes, with
+the larger as the outer one. If light blue solved to "xv", then the 1st box would
+give xv, and the 2nd box would convert xv to 开口.
+the 开.
+* The right hand half is "light green in 2 boxes". The 口 in 开口 is now *another
+box*, and we want an answer such that "light green, 3 boxes" = 元. This was possible,
+since 元 was the answer to puzzle 11, which is rendered as || due to the font,
+and || is the answer to puzzle vii. So light green's answer is vii.
+
+IMAGE
+
+Finally, I'll describe the endgame of the round. The 2nd to last subround says
+that on solving 165 of the 175 puzzles so far, the 176th puzzle will be revealed.
+Here is that last puzzle.
+
+IMAGE
+
+> 本区域存在《规则介绍》里提到的 “最终谜题”吗?
+用“ケ”或“否”作答。
+
+Translation: Does the final puzzle mentioned in the "Rules Overview" exist in this
+area? Answer "the answer to ケ" or "no".
+
+The answer to puzzle ケ is 是, or "yes". However, we can't submit this, because
+it's the answer to a prior puzzle, and no two puzzles can have the same answer.
+So the answer must be 否, "no".
+
+Here we bring in "the lavender conspiracy". While solving an earlier round where
+all puzzle IDs were differently colored squares, I remembered that the rules text
+had been contained in a box.
+
+IMAGE
+
+With the benefit of the rest of the round, we'd solved a puzzle whose ID was the
+exact color of the rules background, lavendar. It was time to go back.
+
+Applying lavendar's answer to the rules text does
+something interesting. It crosses out multiple characters of the text. The text
+is worded such that usually, the removed characters are filler words, the equivalent
+of "of" or "this" in English. The exception was one line, which changed
+
+> For any given puzzle, there is never more than one valid answer.
+
+to
+
+> For any given puzzle, there may be more than one valid answer.
+
+Uh ohhhhhhhhh.
+
+My first instinct was to try finding a 2nd answer to ケ. This would let us
+submit that 2nd answer to ケ, then submit 是 (yes) to the last puzzle. There
+wasn't a great way to execute this idea though, and we ended up needing a hint
+for what to do.
+
+In the 2nd to last round of puzzles, there was a cycle-of-7 puzzle whose answer
+was REDO.
+
+IMAGE
+
+This was a hint to consider the previous time a cycle-of-7 had appeared: the
+Japanese days of the week puzzle from the 1st round.
+
+IMAGE
+
+The REDO puzzle was based on the solfege round, where each arrow went from
+puzzle ID to puzzle answer. Now, instead of treating arrows as days of the
+week, we needed to find a cycle of 7 puzzle IDs and answers (starting with 8 = 日).
+
+In our current set of answers, we had,
+
+* 8 -> 3
+* 3 -> = (or 二)
+* 二 -> 甲
+* 甲 -> 离
+* 离 -> 灼
+
+and here the chain broke, since there's no puzzle with ID 灼, but going backward,
+we have
+
+* 6 -> 日 (or 8)
+* 五 -> 6
+
+So this strongly suggests that we want to change 离's answer to 五.
+
+Puzzle 离 was one puzzle of a pair. Each pair needed to have its answers
+confirmed simultaneously, so we needed to find an alternate answer to its
+partner, 坎.
+
+IMAGE IMAGE
+
+Let me explain how this puzzle originally worked for a bit. After some research,
+we found this was referencing Water Margin (水浒传), a classic Chinese novel.
+The right hand side matches a character name from Water Margin. Since 坎 is
+double-boxed on the left, we needed 坎 to solve to an existing ID, and that puzzle
+needed to solve to someone in the list of Water Margin names. There was only one
+option, 坎->ウ->威. This then let us solve for 离.
+
+Now that 离 needed to be 五, applying the process backward gave "坎 in 2 boxes = 罪".
+But 罪 isn't one of our puzzle answers. The puzzle itself is hinting the next trick:
+罪 is made of a 四 on top of a 非. This is similar to the 3rd row in the forward solve,
+where 16 solved to 正 and we constructed 罡.
+
+The a-ha is that 四 and 非 are both answers in our round! We need to apply the
+box trickery taught to use in the previous round, where 坎's answer creates the
+boxes we need to solve. The puzzle ID for answer 四 is ツ, the puzzle ID for answer
+非 is 八, so we needed to put ツ above 八 while making two boxes. Which can be
+done with one more line:
+
+IMAGE
+
+五 and 兴 correctly re-solves the pair. With the chain complete, we can re-solve
+the cycle-of-7 puzzle. Now cascading again, this puzzle was referenced in the
+lavendar puzzle. So now we have a *different* solution to lavendar, which gives
+a different redaction on the rules text.
+
+IMAGE
+
+This changes:
+
+> To escape this place, please ensure you understand the rules above, submit the answers for each puzzle in the designated fields, and solve the final puzzle. The answer to this puzzle is:
+> "与我们永远纠缠直至终结." (translation: Entangled with us forever until the very end)
+
+into
+
+> To escape this place, please submit "终结" (translation: Terminate)
+
+and this finally completes the round.
+
+To quote from the Author's Notes,
+
+> 与日谜里常见的一句话顿悟的诡计不同，这个阶段的蛛网是我一直想出的那种动机驱动、抽丝剥茧、伏线千里的诡计。
+
+Translation: Unlike the "a-ha" moment often found in puzzles, Hanging Spider Web represents
+the kind of puzzle I've always wanted to make - one where it carefully unravels
+many layers of long-laid foreshadowing.
+
+And there certainly are many layers. First, the rules text is set up. Then the
+cycle-of-7 in the first round. Over the round, you are shown tricks with boxes
+and alternate interpretations of arrows, and once you finally get to the "puzzles
+have more than one answer" moment from the lavendar puzzle, it eventually cascades
+to creating a 2nd answer *for the lavendar puzzle that told you there'd be 2 answers". It's a very "return with new rewards" moment from the Hero's Journey, similar to many puzzle games I've played.
+Upon finishing, a team member said that Hanging Spider Web could be a standalone
+puzzle game in the style of Lingo, and feel like a complete experience.
