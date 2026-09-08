@@ -12,3 +12,5 @@ feedback
 Gemfile.lock
 # weird WSL stuff
 *Zone.Identifier
+# OSX stuff
+.DS_Store

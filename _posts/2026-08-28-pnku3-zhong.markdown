@@ -111,6 +111,17 @@ to give canned hints where even revealing the question you'd ask would be too
 much of a spoiler.
 
 
+Day 0
+---------------------------------
+
+The first puzzle came from the hunt's story. After a big introduction, the text
+ended with "submit PUZZLE & KEY UNIVERSE 3". If you do this, it's incorrect,
+but then you're given some feedback.
+
+> You may have noticed this is 
+> This is an example
+The first puzzle started with cute
+
 蛹 (Translation: Pupa)
 ------------------------------------------
 
@@ -350,7 +361,7 @@ I think this may be an interstitial moment of LLM strength though, rather than
 a status quo.
 
 
-布道谷 (Translation: Preacher's Valley)
+布道谷 (Translation: Preacher Valley)
 ----------------------------------------------------------------------
 
 This seemingly normal round was themed around a murder mystery. The story
@@ -466,5 +477,146 @@ The flavor text of this puzzle was
 
 Translation: When hungry, a person can view everything as food.
 
+In the given, the left column translates to "keywords". The 3rd last one,
+连锁, translates to "chain". Thinking of this in a food context, we remembered
+the Chengyu dominos puzzle used dominoes where the ones were red and blues
+were two. Hmmm, a red-one blue-two domino...
 
-based on 
+LOGO
+
+The best kind of pizza, surprise pizza. The first clue, 意大利语, translates to
+"Italian language", and through this we learned "latte" is transliterated as
+LA TIE. Taken literally, it means "grab iron", corresponding to the Earth
+composition puzzle. And sandwich translates to 三明治. If read as three 明治,
+it paired up with a feeder based on 3 minipuzzles about the Meiji era (明治 era).
+
+Once we'd solved all of the Preacher metas, we unlocked one last preacher metameta,
+布道谷的布道者 (translation: The Preacher of Preacher Valley)
+This one was made of a single line of flavor.
+
+> 以爱为名的布道者，结出了一切原罪。
+
+Translation: the preacer acting in the name of love bore the fruit of every original sin.
+
+One piece of information which we'd tracked but not used yet was which puzzles went
+to each meta. Considering the flavortext of the metameta, we noticed that the
+flavortext of each Preacher meta references one of the seven deadly sins. The
+food meta more obviously references gluttony, while the love meta references wrath.
+Then, the number of feeders each meta used matched the length of the sin. This
+gives a way for each meta to assign letters to each of its input feeders.
+
+In addition, each meta uses its feeders in an ordered way. So this gives a way
+to map input feeders to letters, by matching them 1:1 with the sin. Most feeders
+went to one meta, some went to two, and exactly one was used in every meta.
+With some fuzzing to account for feeder-meta connections we hadn't found yet, that
+feeder took the letters REALITY, giving our final answer.
+
+IMAGE
+
+Nothing about this structure uses feeder answers in any way, which made me a little
+annoyed at some last steps that felt extraneous, but overall it was a pretty
+big set of puzzle feeder constraints. I'm unsure how much was done forward and
+how much was done backward, but it was cool either way.
+
+
+空悬蛛网 (Translation: Hanging Spider Web)
+-------------------------------------------------------------
+
+In my mind, this round and the next one were the highlights of P&KU 3, and were
+a big reason I wanted to write this post.
+
+Hanging Spider Web was a set of puzzles in the Japanese *nazotoki* style.
+To quote Deusovi,
+
+> Literally, the word means "mystery solving" or "riddle solving", but it has recently become adopted by English-speaking puzzlers to refer to a particular style of puzzle - a playful style often focusing on one or two bits of wordplay or other trickery.
+
+[Source](https://deusovi.github.io/white-day/intro.html)
+{: .centered }
+
+I would add that often, the answer is a little ambiguous, and it's totally normal
+to require multiple guesses to solve a puzzle. Correspondingly, answer timeouts
+in this round were capped at 1 minute. But to avoid full spamming, answer timeouts
+were global - a wrong answer locked the entire Web *round* for 1 minute.
+
+Here is the first puzzle of the round, describing the rules
+
+IMAGE
+
+Translation: Congratulations on your unfortunate arrival in this forgotten realm known as the "Hanging Spider Web."
+Here, every being can only leave a trace—and thus secure a sliver of a chance at survival—by repeatedly referencing one another.
+Failure to depart within a certain timeframe results in a drastic depletion of one's life force. Since all puzzles are formed from the remnants of beings who have not yet perished, their total number does not grow infinitely.
+The area comprises 176 puzzles in total, each bearing a unique identification number.
+Puzzles with different ID numbers have different answers.
+For any given puzzle, there is never more than one valid answer.
+Occasionally, a puzzle may reference the answer to another; such puzzles contain a box displaying the ID number of the puzzle whose answer is being referenced.
+To escape this place, please ensure you understand the rules above, submit the answers for each puzzle in the designated fields, and solve the final puzzle. The answer to this final puzzle is: "Entangled with us forever until the very end."
+Enjoy the game.
+与我们永远纠缠直至终结
+
+To elaborate on this: the 176 puzzles in Hanging Spider Web were split into
+multiple themed rounds. Each round is made of puzzles that reference each other,
+sometimes in circular ways, and you need to bootstrap into understanding enough
+to solve around 80% of each round, to unlock the next one.
+
+EXAMPLE
+
+answer of 己 is 可 
+
+IMAGE
+
+here's the wheel except the boxed 己 is replaced with its answer. You could solve
+this forward, or you could guess that the most reasonable character to fit the
+blank is 可 to form 可以 (translation: can). Then you can backsolve 己 and try
+to understand how that solves to backsolve 甲.
+
+For this specific puzzle, the text translates to "What word is formed by the content connected by the dashed line?". This ended up being a reference puzzle to the Japanese names for days
+of the week. These go 日，月，火，水，木，金，土, giving answer 水土.
+
+(MENTIONT GOOGLE LENS SOMEWHERE)
+
+Sometimes, solving one puzzle in a round would contain hints for other puzzles
+in that round. Future puzzles in this round set also used Japanese names of days,
+meaning solving one could let you break in on several others.
+
+As the rounds continue, the ways boxes get used got more complex. Starting in the
+second set, boxes could rotate and start including deliberate ambiguity
+
+ROUND IMAGE
+
+Here, we see that in the font used, puzzle 8 looks the same as the 日 character.
+For the rest of the round, 8 = 日 is interchangable. In puzzle 5, there are 2 overlapping boxes, which could either be two 3s (with one rotated 180 degrees), or two 2s stacked on top of each other. Later on, we'd unlock a round of puzzles named 一，二，三，四, ..., which then meant any 1 in a box could mean a rotated 一， or vice versa.
+
+I won't go through all the gimmicks, as there were a lot of them, but here's
+a selection of ideas that came up.
+
+* Puzzles with ID "X" where the puzzle said "The answer is the answer to puzzle X",
+and they had to be backsolved from where X was used elsewhere.
+* Puzzles based on redacting different halves of each other.
+* An emoji round where you are told up front that all answers in the subround are
+emoji, and to use the Apple rendering of emojis if sources differ. Then emoji
+were used in wild ways, like this.
+
+IMAGE
+
+The instructions in this puzzle says to construct a magic square, placing digits
+1-9 such that each row, column, and diagonal sums to 15. The given emoji disambiguate
+the rotation, with 3 on A and 4 on M. Puzzle 4️⃣8️⃣ is a puzzle whose text is "the answer
+is the answer to puzzle 4️⃣8️⃣."
+That's fine, since obviously it's going to be an infinity symbol to give a rotated
+8, and
+
+> ♾️ is not the answer to puzzle 4️⃣8️⃣
+
+Uh, what? Eventually, we figured it out. The trick is that the 3 and 4 in the example are on a purple background.
+Looking at emojis with purple backgrounds, the emoji we actually wanted was
+♋, which rotates to 69 (nice). Converting this to letters gives CD, so the answer
+is 💿.
+
+Here's another one.
+
+IMAGE
+
+4️⃣7️⃣ is once again a
+"answer is itself" puzzle. We want to complete what looks like an R at the right,
+but how?
+
